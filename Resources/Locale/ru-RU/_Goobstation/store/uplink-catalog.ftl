@@ -141,7 +141,7 @@ uplink-sarin-gas-grenade-desc = Жестокий нейротоксиновый 
 uplink-mech-teleporter-heavy-name = Тяжелый Мех "Маулер"
 uplink-mech-teleporter-heavy-desc = Содержит тяжелобронированного меха Cybersun со встроенным цепным мечом, Ultra AC-2, LBX AC 10 «Scattershot», ракетной стойкой BRM-6 и пушкой P-X Tesla.
 
-uplink-mech-teleporter-assault-name = Штурмовой Мех "Тёмный Гигакс"
+uplink-mech-teleporter-assault-name = Штурмовой Мех "Тёмный Гойдакс"
 uplink-mech-teleporter-assault-desc = Содержит легкобронированный мех Cybersun со встроенным цепным мечом, дробовиком LBX AC 10, Ракетомет SRM-8 и пушку Tesla P-X..
 
 # Chemicals

@@ -1,5 +1,5 @@
-ent-CrateCybersunDarkGygaxBundle = набор Cybersun Гигакс
-    .desc = Содержит набор лёгкого бронированого меха Cybersun Гигакс.
+ent-CrateCybersunDarkGygaxBundle = набор Cybersun Гойдакс
+    .desc = Содержит набор лёгкого бронированого меха Cybersun Гойдакс.
     .suffix = Filled
 ent-CrateCybersunMaulerBundle = набор Cybersun Маулер
     .desc = Содержит набор тяжелого бронированного меха Cybersun Маулер.

@@ -47,7 +47,7 @@ gs-balanceui-gift-value-tooltip = Количество гойдакоинов к
 gs-balanceui-shop-label = Гойда магазин
 gs-balanceui-shop-empty = Раскупленно!
 gs-balanceui-shop-buy = Загойдить
-gs-balanceui-shop-footer = ⚠ Напишите в гойдапомощь чтобы активировать ваш гойдатокен.
+gs-balanceui-shop-footer = ⚠ Напишите в гойдАХелп чтобы активировать ваш гойдатокен.
 
 gs-balanceui-shop-token-label = Гойдатокен
 gs-balanceui-shop-tittle-label = Гойданазвания
