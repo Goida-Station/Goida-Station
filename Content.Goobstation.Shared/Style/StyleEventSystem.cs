@@ -19,7 +19,7 @@ namespace Content.Goobstation.Shared.Style
         {
             base.Initialize();
 
-            SubscribeLocalEvent<MeleeHitEvent>(OnMeleeHit);
+            SubscribeLocalEvent<StyleCounterComponent, MeleeHitEvent>(OnMeleeHit);
             SubscribeLocalEvent<StyleCounterComponent, GunShotBodyEvent>(OnGunShot);
             SubscribeLocalEvent<StyleCounterComponent, SlipAttemptEvent>(OnSlipAttempt);
         }
@@ -33,11 +33,9 @@ namespace Content.Goobstation.Shared.Style
             return (currentTime - lastTime).TotalSeconds >= 0.1; // cooldown between detecting events because predictions.
         }
 
-        private void OnMeleeHit(MeleeHitEvent args)
+        private void OnMeleeHit(EntityUid uid, StyleCounterComponent styleComp, MeleeHitEvent args)
         {
-            if (_gameTiming.ApplyingState) return;
-
-            if (!TryComp<StyleCounterComponent>(args.User, out var styleComp))
+            if (_gameTiming.ApplyingState)
                 return;
 
             if (!CanRegisterEvent(args.User))
