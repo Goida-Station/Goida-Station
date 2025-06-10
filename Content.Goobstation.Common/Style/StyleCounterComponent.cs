@@ -3,7 +3,7 @@ using Robust.Shared.GameStates;
 namespace Content.Goobstation.Common.Style
 {
     [RegisterComponent, NetworkedComponent]
-    public sealed partial class StyleCounterComponent : Robust.Shared.GameObjects.Component
+    public sealed partial class StyleCounterComponent : Component
     {
         [ViewVariables]
         public StyleRank Rank = StyleRank.D;

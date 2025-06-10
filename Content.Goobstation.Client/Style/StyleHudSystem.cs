@@ -42,7 +42,7 @@ public sealed class StyleHudSystem : EntitySystem
 
     private void OnPlayerAttached(PlayerAttachedEvent ev)
     {
-        if (HasComp<Common.Style.StyleCounterComponent>(ev.Entity))
+        if (HasComp<StyleCounterComponent>(ev.Entity))
         {
             _currentEntity = ev.Entity;
             EnsureOverlay();
@@ -81,12 +81,12 @@ public sealed class StyleHudSystem : EntitySystem
         base.Update(frameTime);
 
         var player = _player.LocalEntity;
-        if (player != null && _currentEntity != player && HasComp<Common.Style.StyleCounterComponent>(player.Value))
+        if (player != null && _currentEntity != player && HasComp<StyleCounterComponent>(player.Value))
         {
             _currentEntity = player.Value;
             EnsureOverlay();
         }
-        else if ((player == null || !HasComp<Common.Style.StyleCounterComponent>(player.Value)) && _currentEntity != null)
+        else if ((player == null || !HasComp<StyleCounterComponent>(player.Value)) && _currentEntity != null)
         {
             _currentEntity = null;
             RemoveOverlay();

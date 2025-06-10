@@ -1,7 +1,5 @@
-using System.Linq;
 using Content.Goobstation.Common.Style;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 
 namespace Content.Goobstation.Shared.Style
@@ -11,7 +9,6 @@ namespace Content.Goobstation.Shared.Style
     {
         [Dependency] private readonly IGameTiming _timing = default!;
         [Dependency] private readonly IPrototypeManager _proto = default!;
-        private readonly Dictionary<(EntityUid, string), TimeSpan> _cooldowns = new();
 
         public override void Initialize()
         {
@@ -22,11 +19,6 @@ namespace Content.Goobstation.Shared.Style
         private void OnMapInit(EntityUid uid, StyleCounterComponent component, MapInitEvent args)
         {
             UpdateRank(uid, component);
-        }
-
-        private void OnStyleEvent(EntityUid uid, StyleCounterComponent component, StyleEventMessage args)
-        {
-            AddStyleEvent(uid, args.EventId, component);
         }
 
         public override void Update(float frameTime)
@@ -48,14 +40,12 @@ namespace Content.Goobstation.Shared.Style
             }
         }
 
-        public void AddStyleEvent(EntityUid uid, string eventText, StyleCounterComponent? component = null)
+        public void AddStyleEvent(EntityUid? uid, string eventText, StyleCounterComponent? component = null)
         {
-            if (!Resolve(uid, ref component))
+            if (uid == null || !Resolve(uid.Value, ref component))
                 return;
 
-            component.LastEventTime = _timing.CurTime;
             component.RecentEvents.Add(eventText);
-
             if (component.RecentEvents.Count > 8)
                 component.RecentEvents.RemoveAt(0);
         }
@@ -68,9 +58,6 @@ namespace Content.Goobstation.Shared.Style
 
             foreach (var rankProto in _proto.EnumeratePrototypes<StyleRankPrototype>())
             {
-                if (rankProto == null)
-                    continue;
-
                 if (Enum.TryParse<StyleRank>(rankProto.ID, out var rank) &&
                     style.CurrentPoints >= rankProto.PointsRequired &&
                     rank > highestRank)
@@ -91,7 +78,7 @@ namespace Content.Goobstation.Shared.Style
                     oldRank,
                     newRank,
                     style.CurrentMultiplier,
-                    new List<string>(style.RecentEvents)));
+                    style.RecentEvents));
             }
         }
 
@@ -110,17 +97,6 @@ namespace Content.Goobstation.Shared.Style
                 StyleRank.F => 0.5f,
                 _ => 1.0f
             };
-        }
-
-        [Serializable, NetSerializable]
-        public sealed class StyleEventMessage : EntityEventArgs
-        {
-            public string EventId { get; }
-
-            public StyleEventMessage(string eventId)
-            {
-                EventId = eventId;
-            }
         }
     }
 }

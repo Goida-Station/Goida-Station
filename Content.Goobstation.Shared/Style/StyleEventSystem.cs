@@ -1,68 +1,74 @@
 using Content.Goobstation.Common.Style;
-using Content.Shared._Shitmed.Weapons.Ranged.Events;
+using Content.Shared.Mobs;
+using Content.Shared.Mobs.Components;
+using Content.Shared.Projectiles;
 using Content.Shared.Slippery;
 using Content.Shared.Weapons.Melee.Events;
-using Content.Shared.Weapons.Ranged.Systems;
+using Content.Shared.Weapons.Ranged.Events;
 using Robust.Shared.Timing;
 
 // i hate hardcode, but there is no other way of making this work otherwise.
 namespace Content.Goobstation.Shared.Style
-{
+{ // todo: make the decay rate smaller
     public sealed class StyleEventSystem : EntitySystem
     {
         [Dependency] private readonly StyleSystem _styleSystem = default!;
         [Dependency] private readonly IGameTiming _gameTiming = default!;
 
-        private readonly Dictionary<EntityUid, TimeSpan> _lastEventTimes = new();
-
         public override void Initialize()
         {
             base.Initialize();
 
-            SubscribeLocalEvent<StyleCounterComponent, MeleeHitEvent>(OnMeleeHit);
-            SubscribeLocalEvent<StyleCounterComponent, GunShotBodyEvent>(OnGunShot);
+            SubscribeLocalEvent<StyleCounterComponent, MeleeAttackEvent>(OnMeleeHit);
+            SubscribeLocalEvent<StyleProjectileComponent, ProjectileHitEvent>(OnProjectileHit);
             SubscribeLocalEvent<StyleCounterComponent, SlipAttemptEvent>(OnSlipAttempt);
+            SubscribeLocalEvent<StyleCounterComponent, SelfBeforeGunShotEvent>(OnGoida);
         }
 
-        private bool CanRegisterEvent(EntityUid uid)
+        private void OnMeleeHit(EntityUid uid, StyleCounterComponent styleComp, MeleeAttackEvent args)
         {
-            if (!_lastEventTimes.TryGetValue(uid, out var lastTime))
-                return true;
 
-            var currentTime = _gameTiming.CurTime;
-            return (currentTime - lastTime).TotalSeconds >= 0.1; // cooldown between detecting events because predictions.
+            if (!_gameTiming.IsFirstTimePredicted)
+                return;
+
+            _styleSystem.AddStyleEvent(uid, "+HIT", styleComp);
+            styleComp.CurrentPoints += 300;
         }
 
-        private void OnMeleeHit(EntityUid uid, StyleCounterComponent styleComp, MeleeHitEvent args)
+        private void OnProjectileHit(Entity<StyleProjectileComponent> ent, ref ProjectileHitEvent args)
         {
-            if (_gameTiming.ApplyingState)
+            if (!TryComp<MobStateComponent> (args.Target, out var mobState)
+                || mobState.CurrentState != MobState.Alive
+                || ent.Comp.Component == null)
                 return;
 
-            if (!CanRegisterEvent(args.User))
-                return;
-
-            _lastEventTimes[args.User] = _gameTiming.CurTime;
-            _styleSystem.AddStyleEvent(args.User, "+HIT", styleComp);
-            styleComp.CurrentPoints += 50;
+            _styleSystem.AddStyleEvent(args.Shooter, "+BULLET HIT");
+            ent.Comp.Component.CurrentPoints += 300;
         }
 
-        private void OnGunShot(EntityUid uid, StyleCounterComponent styleComp, GunShotBodyEvent args)
+        private void OnGoida(Entity<StyleCounterComponent> ent, ref SelfBeforeGunShotEvent args) // todo
         {
-            if (!CanRegisterEvent(uid))
+            if (!_gameTiming.IsFirstTimePredicted)
                 return;
 
-            _lastEventTimes[uid] = _gameTiming.CurTime;
-            _styleSystem.AddStyleEvent(uid, "+BULLET HIT", styleComp);
-            styleComp.CurrentPoints += 100;
+            foreach (var projectile in args.Ammo)
+            {
+                var entity = projectile.Entity;
+                if (entity == null)
+                    continue;
+
+                var comp = EnsureComp<StyleProjectileComponent>(entity.Value);
+                comp.Component = ent.Comp;
+                Dirty(entity.Value, comp);
+            }
         }
 
         private void OnSlipAttempt(EntityUid uid, StyleCounterComponent styleComp, SlipAttemptEvent args)
         {
-            if (!CanRegisterEvent(uid))
+            if (!_gameTiming.IsFirstTimePredicted)
                 return;
 
-            _lastEventTimes[uid] = _gameTiming.CurTime;
-            styleComp.CurrentPoints = Math.Max(0, styleComp.CurrentPoints - 50);
+            styleComp.CurrentPoints = Math.Max(0, styleComp.CurrentPoints - -500);
             _styleSystem.AddStyleEvent(uid, "-SLIP", styleComp);
         }
     }

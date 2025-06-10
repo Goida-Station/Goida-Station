@@ -6,7 +6,6 @@ using Robust.Client.Graphics;
 using Robust.Client.Player;
 using Robust.Client.ResourceManagement;
 using Robust.Shared.Enums;
-using Robust.Shared.Maths;
 using Robust.Shared.Prototypes;
 
 namespace Content.Goobstation.Client.Style;
@@ -76,7 +75,7 @@ protected override void Draw(in OverlayDrawArgs args)
         var eventsPos = new Vector2(boxLeft + boxWidth * 0.05f, boxTop + boxHeight * 0.3f);
         for (int i = 0; i < Math.Min(8, style.RecentEvents.Count); i++)
         {
-            handle.DrawString(font, eventsPos + new Vector2(0, i * fontSize * 1.5f),
+            handle.DrawString(font,eventsPos + new Vector2(0, i * fontSize * 1.5f),
                 style.RecentEvents[i],
                 Color.Yellow);
         }

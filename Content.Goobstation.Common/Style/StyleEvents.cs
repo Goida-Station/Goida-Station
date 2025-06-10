@@ -1,5 +1,3 @@
-using Content.Goobstation.Common.Style;
-using Robust.Shared.GameObjects;
 using Robust.Shared.Serialization;
 
 namespace Content.Goobstation.Common.Style
@@ -34,6 +32,16 @@ namespace Content.Goobstation.Common.Style
             NewRank = newRank;
             NewMultiplier = newMultiplier;
             RecentEvents = recentEvents;
+        }
+    }
+    [Serializable, NetSerializable]
+    public sealed class StyleEventMessage : EntityEventArgs
+    {
+        public string EventId { get; }
+
+        public StyleEventMessage(string eventId)
+        {
+            EventId = eventId;
         }
     }
 }
