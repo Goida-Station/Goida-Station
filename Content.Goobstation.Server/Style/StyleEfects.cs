@@ -1,4 +1,5 @@
 using Content.Goobstation.Common.Style;
+using Content.Goobstation.Shared.Style;
 using Content.Shared.Abilities;
 
 namespace Content.Goobstation.Server.Style

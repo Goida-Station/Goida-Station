@@ -44,4 +44,16 @@ namespace Content.Goobstation.Common.Style
             EventId = eventId;
         }
     }
+    public enum StyleRank
+    {
+        F,
+        D,
+        C,
+        B,
+        A,
+        S,
+        SS,
+        SSS,
+        R
+    }
 }

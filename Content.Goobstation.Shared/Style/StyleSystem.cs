@@ -15,12 +15,6 @@ namespace Content.Goobstation.Shared.Style
             base.Initialize();
             SubscribeLocalEvent<StyleCounterComponent, MapInitEvent>(OnMapInit);
         }
-
-        private void OnMapInit(EntityUid uid, StyleCounterComponent component, MapInitEvent args)
-        {
-            UpdateRank(uid, component);
-        }
-
         public override void Update(float frameTime)
         {
             base.Update(frameTime);
@@ -31,13 +25,18 @@ namespace Content.Goobstation.Shared.Style
                 style.CurrentPoints = Math.Max(0, style.CurrentPoints -
                                                   (style.BaseDecayPerSecond * style.CurrentMultiplier * frameTime));
 
-                if (_timing.CurTime - style.LastEventTime > TimeSpan.FromSeconds(10))
+                if (_timing.CurTime - style.LastEventTime > style.TimeToClear)
                 {
                     style.RecentEvents.Clear();
                 }
 
                 UpdateRank(uid, style);
             }
+        }
+
+        private void OnMapInit(EntityUid uid, StyleCounterComponent component, MapInitEvent args)
+        {
+            UpdateRank(uid, component);
         }
 
         public void AddStyleEvent(EntityUid? uid, string eventText, StyleCounterComponent? component = null)
@@ -55,6 +54,7 @@ namespace Content.Goobstation.Shared.Style
         {
             StyleRank newRank = StyleRank.F;
             var highestRank = StyleRank.F;
+            float highestMultiplier = 1.0f;
 
             foreach (var rankProto in _proto.EnumeratePrototypes<StyleRankPrototype>())
             {
@@ -64,6 +64,7 @@ namespace Content.Goobstation.Shared.Style
                 {
                     highestRank = rank;
                     newRank = rank;
+                    highestMultiplier = rankProto.Multiplier;
                 }
             }
 
@@ -71,7 +72,7 @@ namespace Content.Goobstation.Shared.Style
             {
                 var oldRank = style.Rank;
                 style.Rank = newRank;
-                style.CurrentMultiplier = GetRankMultiplier(newRank);
+                style.CurrentMultiplier = highestMultiplier;
 
                 RaiseLocalEvent(new StyleRankChangedEvent(
                     GetNetEntity(uid),
@@ -80,23 +81,6 @@ namespace Content.Goobstation.Shared.Style
                     style.CurrentMultiplier,
                     style.RecentEvents));
             }
-        }
-
-        private float GetRankMultiplier(StyleRank rank)
-        {
-            return rank switch
-            {
-                StyleRank.R => 8.0f,
-                StyleRank.SSS => 6.0f,
-                StyleRank.SS => 4.0f,
-                StyleRank.S => 3.0f,
-                StyleRank.A => 2.0f,
-                StyleRank.B => 1.5f,
-                StyleRank.C => 1.25f,
-                StyleRank.D => 1.0f,
-                StyleRank.F => 0.5f,
-                _ => 1.0f
-            };
         }
     }
 }

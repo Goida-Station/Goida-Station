@@ -58,7 +58,7 @@ public sealed class StyleHudSystem : EntitySystem
         }
     }
 
-    private void OnStartup(EntityUid uid, Common.Style.StyleCounterComponent component, ComponentStartup args)
+    private void OnStartup(EntityUid uid, StyleCounterComponent component, ComponentStartup args)
     {
         if (_player.LocalEntity == uid)
         {
@@ -67,7 +67,7 @@ public sealed class StyleHudSystem : EntitySystem
         }
     }
 
-    private void OnShutdown(EntityUid uid, Common.Style.StyleCounterComponent component, ComponentShutdown args)
+    private void OnShutdown(EntityUid uid, StyleCounterComponent component, ComponentShutdown args)
     {
         if (_player.LocalEntity == uid)
         {

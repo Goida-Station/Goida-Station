@@ -15,4 +15,7 @@ public sealed class StyleRankPrototype : IPrototype
 
     [DataField]
     public float PointsRequired { get; } = 0f;
+
+    [DataField]
+    public float Multiplier { get; } = 1.0f;
 }
