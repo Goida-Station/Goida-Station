@@ -55,8 +55,6 @@
             }
             private void OnGunShot(EntityUid uid, StyleCounterComponent component, UserShotAmmoEvent args)
             {
-                if (args.FiredProjectiles.Count == 0)
-                    return;
 
                 foreach (var projectile in args.FiredProjectiles)
                 {

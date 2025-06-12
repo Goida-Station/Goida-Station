@@ -68,9 +68,19 @@ namespace Content.Goobstation.Shared.Style
             if (uid == null || !Resolve(uid.Value, ref component))
                 return;
 
+            // only like 5 same events to prevent spam
+            var similarEvents = component.RecentEvents
+                .Where(e => e.Contains(eventText))
+                .Count();
+
+            if (similarEvents >= 5 && // todo: maybe unhardcode this.
+                _timing.CurTime - component.LastEventTime < TimeSpan.FromSeconds(1))
+            {
+                return;
+            }
             if (component.RecentEvents.Count > 0 &&
                 component.RecentEvents.Last().Contains(eventText) &&
-                _timing.CurTime - component.LastEventTime < TimeSpan.FromSeconds(0.5))
+                _timing.CurTime - component.LastEventTime < TimeSpan.FromSeconds(0.1))
             {
                 return;
             }
