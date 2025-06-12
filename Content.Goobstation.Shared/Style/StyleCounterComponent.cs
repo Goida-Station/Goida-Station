@@ -16,7 +16,7 @@ namespace Content.Goobstation.Shared.Style
         public float CurrentMultiplier = 1.0f;
 
         [ViewVariables(VVAccess.ReadWrite)]
-        public float BaseDecayPerSecond = 5.0f;
+        public float BaseDecayPerSecond = 10.0f;
 
         [ViewVariables]
         public TimeSpan LastEventTime;
