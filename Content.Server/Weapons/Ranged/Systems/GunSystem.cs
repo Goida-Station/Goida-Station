@@ -143,6 +143,8 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Robust.Shared.Containers;
 using Content.Shared._Lavaland.Weapons.Ranged.Events; // Lavaland Change
+using Content.Goobstation.Common.Style; // Goidastation change
+using Content.Goobstation.Shared.Style; // Goidastation change
 
 namespace Content.Server.Weapons.Ranged.Systems;
 
@@ -241,6 +243,16 @@ public sealed partial class GunSystem : SharedGunSystem
                         {
                             FiredProjectiles = shotProjectiles
                         });
+                        // Goidastation start - style
+                        if (user != null && HasComp<StyleCounterComponent>(user.Value))
+                        {
+                            var netProjectiles = shotProjectiles.Select(x => GetNetEntity(x)).ToList();
+                            RaiseLocalEvent(gunUid, new StyleAmmoShotEvent()
+                            {
+                                FiredStyledProjectiles = netProjectiles
+                            });
+                        }
+                        // Goidastation end
 
                         SetCartridgeSpent(ent.Value, cartridge, true);
 

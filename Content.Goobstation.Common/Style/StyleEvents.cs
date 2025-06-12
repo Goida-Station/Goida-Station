@@ -44,6 +44,27 @@ namespace Content.Goobstation.Common.Style
             EventId = eventId;
         }
     }
+
+    [Serializable]
+    public sealed class UpdateStyleEvent : EntityEventArgs
+    {
+    }
+
+    [Serializable, NetSerializable]
+    public sealed class StyleAmmoShotEvent : EntityEventArgs
+    {
+        public List<NetEntity> FiredStyledProjectiles;
+
+        public StyleAmmoShotEvent()
+        {
+            FiredStyledProjectiles = new();
+        }
+
+        public StyleAmmoShotEvent(List<NetEntity> firedStyledProjectiles)
+        {
+            FiredStyledProjectiles = firedStyledProjectiles;
+        }
+    }
     public enum StyleRank
     {
         F,

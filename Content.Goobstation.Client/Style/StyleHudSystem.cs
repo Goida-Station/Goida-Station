@@ -38,6 +38,7 @@ public sealed class StyleHudSystem : EntitySystem
         style.Rank = ev.Rank;
         style.CurrentMultiplier = ev.Multiplier;
         style.RecentEvents = new List<string>(ev.RecentEvents);
+        Dirty(player, style);
     }
 
     private void OnPlayerAttached(PlayerAttachedEvent ev)

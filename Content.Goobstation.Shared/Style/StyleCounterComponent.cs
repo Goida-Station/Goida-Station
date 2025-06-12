@@ -24,7 +24,7 @@ namespace Content.Goobstation.Shared.Style
         [ViewVariables(VVAccess.ReadWrite)]
         public TimeSpan TimeToClear = TimeSpan.FromSeconds(5);
 
-        [ViewVariables, AutoNetworkedField]
+        [ViewVariables]
         public List<string> RecentEvents = new();
 
         [DataField("startingPoints")]
