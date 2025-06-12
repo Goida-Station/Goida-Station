@@ -46,13 +46,12 @@
                     || ent.Comp.User == null)
                     return;
 
-                ent.Comp.Component.CurrentPoints += 300;
-
                 if (_net.IsServer)
                 {
                     _styleSystem.AddStyleEvent(ent.Comp.User.Value, "+BULLET HIT", ent.Comp.Component, Color.BlueViolet);
-                    RaiseLocalEvent(ent.Comp.User.Value, new UpdateStyleEvent());
+                    ent.Comp.Component.CurrentPoints += 300;
                 }
+                RaiseLocalEvent(ent.Comp.User.Value, new UpdateStyleEvent());
             }
             private void OnGunShot(EntityUid uid, StyleCounterComponent component, UserShotAmmoEvent args)
             {
