@@ -243,16 +243,6 @@ public sealed partial class GunSystem : SharedGunSystem
                         {
                             FiredProjectiles = shotProjectiles
                         });
-                        // Goidastation start - style
-                        if (user != null && HasComp<StyleCounterComponent>(user.Value))
-                        {
-                            var netProjectiles = shotProjectiles.Select(x => GetNetEntity(x)).ToList();
-                            RaiseLocalEvent(gunUid, new StyleAmmoShotEvent()
-                            {
-                                FiredStyledProjectiles = netProjectiles
-                            });
-                        }
-                        // Goidastation end
 
                         SetCartridgeSpent(ent.Value, cartridge, true);
 
@@ -395,6 +385,13 @@ public sealed partial class GunSystem : SharedGunSystem
             FiredProjectiles = shotProjectiles,
         });
 
+        // Goidastation start
+        if (user != null)
+        {
+            var netProjectiles = shotProjectiles.Select(p => GetNetEntity(p)).ToList();
+            RaiseLocalEvent(user.Value, new UserShotAmmoEvent(netProjectiles));
+        }
+        // Goidastation end
         void CreateAndFireProjectiles(EntityUid ammoEnt, AmmoComponent ammoComp)
         {
             if (TryComp<ProjectileSpreadComponent>(ammoEnt, out var ammoSpreadComp))

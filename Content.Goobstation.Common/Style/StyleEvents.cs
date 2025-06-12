@@ -51,18 +51,13 @@ namespace Content.Goobstation.Common.Style
     }
 
     [Serializable, NetSerializable]
-    public sealed class StyleAmmoShotEvent : EntityEventArgs
+    public sealed class UserShotAmmoEvent : EntityEventArgs
     {
-        public List<NetEntity> FiredStyledProjectiles;
+        public List<NetEntity> FiredProjectiles { get; }
 
-        public StyleAmmoShotEvent()
+        public UserShotAmmoEvent(List<NetEntity> firedProjectiles)
         {
-            FiredStyledProjectiles = new();
-        }
-
-        public StyleAmmoShotEvent(List<NetEntity> firedStyledProjectiles)
-        {
-            FiredStyledProjectiles = firedStyledProjectiles;
+            FiredProjectiles = firedProjectiles;
         }
     }
     public enum StyleRank

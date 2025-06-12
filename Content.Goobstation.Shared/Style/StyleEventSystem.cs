@@ -26,7 +26,7 @@
                 SubscribeLocalEvent<StyleCounterComponent, MeleeAttackEvent>(OnMeleeHit);
                 SubscribeLocalEvent<StyleProjectileComponent, ProjectileHitEvent>(OnProjectileHit);
                 SubscribeLocalEvent<StyleCounterComponent, SlipAttemptEvent>(OnSlipAttempt);
-                SubscribeLocalEvent<GunComponent, StyleAmmoShotEvent>(НаГойде);
+                SubscribeLocalEvent<StyleCounterComponent, UserShotAmmoEvent>(OnGunShot);
             }
 
             private void OnMeleeHit(EntityUid uid, StyleCounterComponent styleComp, MeleeAttackEvent args)
@@ -41,42 +41,32 @@
             private void OnProjectileHit(Entity<StyleProjectileComponent> ent, ref ProjectileHitEvent args)
             {
                 if (!TryComp<MobStateComponent>(args.Target, out var mobState)
-                    || mobState.CurrentState != MobState.Alive
+                    || mobState.CurrentState != MobState.Alive // if the guy is not alive, no points.
                     || ent.Comp.Component == null
                     || ent.Comp.User == null)
                     return;
 
                 ent.Comp.Component.CurrentPoints += 300;
 
-                // force a rank update check
-                RaiseLocalEvent(ent.Comp.User.Value, new UpdateStyleEvent());
-
                 if (_net.IsServer)
                 {
                     _styleSystem.AddStyleEvent(ent.Comp.User.Value, "+BULLET HIT", ent.Comp.Component, Color.BlueViolet);
+                    RaiseLocalEvent(ent.Comp.User.Value, new UpdateStyleEvent());
                 }
             }
-            private void НаГойде(EntityUid uid, GunComponent component, ref StyleAmmoShotEvent args)
+            private void OnGunShot(EntityUid uid, StyleCounterComponent component, UserShotAmmoEvent args)
             {
-                var shooter = Transform(uid).ParentUid;
-
-                if (!TryComp<StyleCounterComponent>(shooter, out var styleComp))
+                if (args.FiredProjectiles.Count == 0)
                     return;
 
-                var netProjectiles = new List<NetEntity>();
-
-                foreach (var projectile in args.FiredStyledProjectiles)
+                foreach (var projectile in args.FiredProjectiles)
                 {
                     var projectileUid = GetEntity(projectile);
-                    netProjectiles.Add(projectile);
                     var comp = EnsureComp<StyleProjectileComponent>(projectileUid);
-                    comp.Component = styleComp;
-                    comp.User = shooter;
+                    comp.Component = component;
+                    comp.User = uid;
                 }
-
-                args.FiredStyledProjectiles = netProjectiles;
             }
-
 
             private void OnSlipAttempt(EntityUid uid, StyleCounterComponent styleComp, SlipAttemptEvent args)
             {
