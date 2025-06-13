@@ -2,11 +2,14 @@ using System.Linq;
 using Content.Goobstation.Common.Events;
 using Content.Goobstation.Common.Style;
 using Content.Shared.Damage;
+using Content.Shared.Electrocution;
 using Content.Shared.Hands.Components;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Projectiles;
+using Content.Shared.Rejuvenate;
 using Content.Shared.Slippery;
+using Content.Shared.Throwing;
 using Content.Shared.Weapons.Melee;
 using Content.Shared.Weapons.Melee.Events;
 using Content.Shared.Weapons.Ranged.Components;
@@ -27,11 +30,50 @@ namespace Content.Goobstation.Shared.Style
         {
             base.Initialize();
 
+            // starwars intro wannabe
             SubscribeLocalEvent<StyleCounterComponent, MeleeAttackEvent>(OnMeleeAttack);
             SubscribeLocalEvent<StyleCounterComponent, DamageChangedEvent>(OnDamageDealt);
             SubscribeLocalEvent<StyleProjectileComponent, ProjectileHitEvent>(OnProjectileHit);
             SubscribeLocalEvent<StyleCounterComponent, SlipAttemptEvent>(OnSlipAttempt);
             SubscribeLocalEvent<StyleCounterComponent, UserShotAmmoEvent>(OnGunShot);
+            SubscribeLocalEvent<StyleCounterComponent, ThrowHitByEvent>(OnThrowHitBy);
+            SubscribeLocalEvent<StyleCounterComponent, ElectrocutedEvent>(OnElectrocuted);
+            SubscribeLocalEvent<StyleCounterComponent, RejuvenateEvent>(OnRejuvenate);
+        }
+        private void OnElectrocuted(EntityUid uid, StyleCounterComponent styleComp, ElectrocutedEvent args)
+        {
+            if (!_gameTiming.IsFirstTimePredicted) // <------------------------------------ \
+                return; //                                                                  |
+            //                                                                              |
+            if (args.ShockDamage.HasValue && args.ShockDamage > 0) // todo: put this here   |
+            {
+                _styleSystem.AddStyleEvent(uid, "-SHOCK", styleComp, Color.Red);
+                styleComp.CurrentPoints -= 250; // massive skill issue
+                RaiseLocalEvent(uid, new UpdateStyleEvent());
+            }
+        }
+
+        private void OnRejuvenate(EntityUid uid, StyleCounterComponent styleComp, RejuvenateEvent args) // because i can.
+        {
+            if (!_gameTiming.IsFirstTimePredicted)
+                return;
+
+            _styleSystem.AddStyleEvent(uid, "+ADMEMED", styleComp, Color.Green);
+            styleComp.CurrentPoints += 65;
+            RaiseLocalEvent(uid, new UpdateStyleEvent());
+        }
+        private void OnThrowHitBy(EntityUid uid, StyleCounterComponent styleComp, ThrowHitByEvent args)
+        {
+            if (!_gameTiming.IsFirstTimePredicted)
+                return;
+
+            if (TryComp<MobStateComponent>(uid, out var mobState) && mobState.CurrentState == MobState.Alive)
+            {
+                _styleSystem.AddStyleEvent(uid, "-OWNED", styleComp, Color.OrangeRed); // lmao
+                styleComp.CurrentPoints -= 400;
+                RaiseLocalEvent(uid, new UpdateStyleEvent());
+            }
+            RaiseLocalEvent(uid, new UpdateStyleEvent());
         }
 
         private void OnMeleeAttack(EntityUid uid, StyleCounterComponent styleComp, MeleeAttackEvent args)
@@ -58,7 +100,7 @@ namespace Content.Goobstation.Shared.Style
 
             var totalDamage = args.DamageDelta.GetTotal();
 
-            // Skip if damage is less than 5
+            // Skip if damage is less than 2
             if (totalDamage < 2)
                 return;
 
