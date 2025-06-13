@@ -1,9 +1,12 @@
     using System.Linq;
     using Content.Goobstation.Common.Style;
+    using Content.Shared.Damage;
+    using Content.Shared.Hands.Components;
     using Content.Shared.Mobs;
     using Content.Shared.Mobs.Components;
     using Content.Shared.Projectiles;
     using Content.Shared.Slippery;
+    using Content.Shared.Weapons.Melee;
     using Content.Shared.Weapons.Melee.Events;
     using Content.Shared.Weapons.Ranged.Components;
     using Content.Shared.Weapons.Ranged.Events;
@@ -23,19 +26,31 @@
             {
                 base.Initialize();
 
-                SubscribeLocalEvent<StyleCounterComponent, MeleeAttackEvent>(OnMeleeHit);
+                SubscribeLocalEvent<StyleCounterComponent, MeleeHitEvent>(OnMeleeHit);
                 SubscribeLocalEvent<StyleProjectileComponent, ProjectileHitEvent>(OnProjectileHit);
                 SubscribeLocalEvent<StyleCounterComponent, SlipAttemptEvent>(OnSlipAttempt);
                 SubscribeLocalEvent<StyleCounterComponent, UserShotAmmoEvent>(OnGunShot);
             }
 
-            private void OnMeleeHit(EntityUid uid, StyleCounterComponent styleComp, MeleeAttackEvent args)
+            private void OnMeleeHit(EntityUid uid, StyleCounterComponent styleComp, MeleeHitEvent args)
             {
-                if (!_gameTiming.IsFirstTimePredicted)
+                if (!_gameTiming.IsFirstTimePredicted
+                    || !args.IsHit
+                    || args.HitEntities.Count == 0)
                     return;
 
-                _styleSystem.AddStyleEvent(uid, "+HIT", styleComp, Color.Aqua);
-                styleComp.CurrentPoints += 50;
+                // check for bare fist punch (no weapon)
+                if (args.Weapon == args.User)
+                {
+                    _styleSystem.AddStyleEvent(uid, "+DISRESPECT", styleComp, Color.Orange);
+                    styleComp.CurrentPoints += 50;
+                }
+                else
+                {
+                    _styleSystem.AddStyleEvent(uid, "+HIT", styleComp, Color.Aqua);
+                    styleComp.CurrentPoints += 50;
+                }
+                RaiseLocalEvent(uid, new UpdateStyleEvent());
             }
 
             private void OnProjectileHit(Entity<StyleProjectileComponent> ent, ref ProjectileHitEvent args)
