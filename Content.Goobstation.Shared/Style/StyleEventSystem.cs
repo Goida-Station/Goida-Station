@@ -26,33 +26,66 @@
             {
                 base.Initialize();
 
-                SubscribeLocalEvent<StyleCounterComponent, MeleeHitEvent>(OnMeleeHit);
+                SubscribeLocalEvent<StyleCounterComponent, MeleeAttackEvent>(OnMeleeHit);
+                SubscribeLocalEvent<StyleCounterComponent, DamageChangedEvent>(OnDamageDealt);
                 SubscribeLocalEvent<StyleProjectileComponent, ProjectileHitEvent>(OnProjectileHit);
                 SubscribeLocalEvent<StyleCounterComponent, SlipAttemptEvent>(OnSlipAttempt);
                 SubscribeLocalEvent<StyleCounterComponent, UserShotAmmoEvent>(OnGunShot);
             }
-
-            private void OnMeleeHit(EntityUid uid, StyleCounterComponent styleComp, MeleeHitEvent args)
+            private void OnMeleeHit(EntityUid uid, StyleCounterComponent styleComp, MeleeAttackEvent args)
             {
                 if (!_gameTiming.IsFirstTimePredicted
-                    || !args.IsHit
                     || args.HitEntities.Count == 0)
-                    return;
+                    return; // СПИДВАГОН РЕФЕРЕНС ОМАУШАДАУДАУ
 
-                // check for bare fist punch (no weapon)
-                if (args.Weapon == args.User)
+                var validHits = 0;
+                foreach (var hit in args.HitEntities)
                 {
-                    _styleSystem.AddStyleEvent(uid, "+DISRESPECT", styleComp, Color.Orange);
-                    styleComp.CurrentPoints += 50;
+                    // Only count alive mobs
+                    if (TryComp<MobStateComponent>(hit, out var mobState) &&
+                        mobState.CurrentState == MobState.Alive)
+                    {
+                        validHits++; // thanks rider
+                    }
                 }
-                else
-                {
-                    _styleSystem.AddStyleEvent(uid, "+HIT", styleComp, Color.Aqua);
-                    styleComp.CurrentPoints += 50;
-                }
+
+                if (validHits == 0)
+                    return;
+                _styleSystem.AddStyleEvent(uid, "+MELEE HIT", styleComp, Color.LightGreen);
+                styleComp.CurrentPoints += 75;
+
                 RaiseLocalEvent(uid, new UpdateStyleEvent());
             }
 
+            private void OnDamageDealt(EntityUid uid, StyleCounterComponent styleComp, DamageChangedEvent args)
+            {
+                if (!_gameTiming.IsFirstTimePredicted
+                    || args.DamageDelta == null)
+                    return;
+                var totalDamage = args.DamageDelta.GetTotal();
+                if (totalDamage <= 5)
+                {
+                    _styleSystem.AddStyleEvent(uid, "-DAMAGE", styleComp, Color.LightYellow);
+                    styleComp.CurrentPoints -= 50;
+                }
+                else if (totalDamage <= 12)
+                {
+                    _styleSystem.AddStyleEvent(uid, "-DAMAGE", styleComp, Color.Yellow);
+                    styleComp.CurrentPoints -= 100;
+                }
+                else if (totalDamage <= 20)
+                {
+                    _styleSystem.AddStyleEvent(uid, "-MAJOR DAMAGE", styleComp, Color.Orange);
+                    styleComp.CurrentPoints -= 150;
+                }
+                else
+                {
+                    _styleSystem.AddStyleEvent(uid, "-MAJOR DAMAGE", styleComp, Color.Red);
+                    styleComp.CurrentPoints -= 300;
+                }
+
+                RaiseLocalEvent(uid, new UpdateStyleEvent());
+            }
             private void OnProjectileHit(Entity<StyleProjectileComponent> ent, ref ProjectileHitEvent args)
             {
                 if (!TryComp<MobStateComponent>(args.Target, out var mobState)

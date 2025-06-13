@@ -7,7 +7,7 @@ namespace Content.Goobstation.Shared.Style
     public sealed partial class StyleCounterComponent : Component
     {
         [ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
-        public StyleRank Rank = StyleRank.D;
+        public StyleRank Rank = StyleRank.F;
 
         [ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
         public float CurrentPoints;
