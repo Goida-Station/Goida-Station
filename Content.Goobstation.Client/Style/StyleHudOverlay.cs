@@ -31,8 +31,8 @@ public sealed class StyleHudOverlay : Overlay
         var handle = args.ScreenHandle;
         var playerEntity = _player.LocalEntity;
 
-        if (playerEntity == null ||
-            !_entityManager.TryGetComponent(playerEntity.Value, out StyleCounterComponent? style))
+        if (playerEntity == null
+            || !_entityManager.TryGetComponent(playerEntity.Value, out StyleCounterComponent? style))
             return;
 
         var rankProto = _prototypeManager.Index<StyleRankPrototype>(style.Rank.ToString());

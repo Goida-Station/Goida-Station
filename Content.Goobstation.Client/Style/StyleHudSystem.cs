@@ -7,7 +7,6 @@ using Robust.Shared.Player;
 
 namespace Content.Goobstation.Client.Style;
 
-[Virtual]
 public sealed class StyleHudSystem : EntitySystem
 {
     [Dependency] private readonly IOverlayManager _overlays = default!;

@@ -143,8 +143,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Robust.Shared.Containers;
 using Content.Shared._Lavaland.Weapons.Ranged.Events; // Lavaland Change
-using Content.Goobstation.Common.Style; // Goidastation change
-using Content.Goobstation.Shared.Style; // Goidastation change
+using Content.Goobstation.Common.Events; // Goidastation change
 
 namespace Content.Server.Weapons.Ranged.Systems;
 

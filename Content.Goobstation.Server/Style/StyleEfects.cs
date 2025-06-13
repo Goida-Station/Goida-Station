@@ -4,7 +4,6 @@ using Content.Shared.Abilities;
 
 namespace Content.Goobstation.Server.Style
 {
-    [Virtual]
     public sealed class StyleEffectsSystem : EntitySystem
     {
         public override void Initialize()

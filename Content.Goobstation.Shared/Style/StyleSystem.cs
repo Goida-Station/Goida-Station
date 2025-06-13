@@ -7,7 +7,6 @@ using Robust.Shared.Timing;
 
 namespace Content.Goobstation.Shared.Style
 {
-    [Virtual]
     public sealed class StyleSystem : EntitySystem
     {
         [Dependency] private readonly IGameTiming _timing = default!;

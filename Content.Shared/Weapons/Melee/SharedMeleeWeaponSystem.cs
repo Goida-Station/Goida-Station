@@ -512,7 +512,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
                     return false;
                 break;
             default:
-                if (!weapon.CanHeavyAttack)
+                if (!weapon.CanHeavyAttack) // Goidastation
                     return false;
 
                 if (!Blocker.CanAttack(user, weapon: (weaponUid, weapon)))
@@ -566,7 +566,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
                 case DisarmAttackEvent disarm:
                     DoDisarm(user, disarm, weaponUid, weapon, session); // Goob edit
 
-                    animation = weapon.DisarmAnimation;
+                    animation = weapon.DisarmAnimation;// goida edit
                     DoLungeAnimation(user, weaponUid, weapon.Angle, TransformSystem.ToMapCoordinates(GetCoordinates(attack.Coordinates)), weapon.Range, animation, spriteRotation, weapon.FlipAnimation); // Goida edit
                     break;
                 case HeavyAttackEvent heavy:
