@@ -61,7 +61,7 @@ public sealed class StyleHudOverlay : Overlay
         DrawBorder(handle, box, rankColor);
 
         var fontSize = Math.Max(12, screenSize.Y / 60);
-        var font = _resourceCache.GetFont("/Fonts/_Goidastation/VCR_OSD_MONO_1.001.ttf", fontSize);
+        var font = _resourceCache.GetFont("/Fonts/_Goida/VCR_OSD_MONO_1.001.ttf", fontSize);
 
         // rank text
         var rankPos = new Vector2(boxLeft + boxWidth * 0.05f, boxTop + boxHeight * 0.1f);

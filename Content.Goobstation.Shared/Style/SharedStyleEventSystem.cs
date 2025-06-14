@@ -2,7 +2,9 @@ using System.Linq;
 using Content.Goobstation.Common.Events;
 using Content.Goobstation.Common.Style;
 using Content.Goobstation.Shared.Dash;
+using Content.Shared.CombatMode;
 using Content.Shared.Damage;
+using Content.Shared.Damage.Events;
 using Content.Shared.Electrocution;
 using Content.Shared.Guardian;
 using Content.Shared.Mobs;
@@ -10,6 +12,7 @@ using Content.Shared.Mobs.Components;
 using Content.Shared.Projectiles;
 using Content.Shared.Rejuvenate;
 using Content.Shared.Slippery;
+using Content.Shared.Stunnable;
 using Content.Shared.Throwing;
 using Content.Shared.Weapons.Melee.Events;
 using Robust.Shared.Network;
@@ -38,6 +41,26 @@ namespace Content.Goobstation.Shared.Style
             SubscribeLocalEvent<StyleCounterComponent, RejuvenateEvent>(OnRejuvenate);
             SubscribeLocalEvent<StyleCounterComponent, GuardianToggleActionEvent>(OnJojoReference);
             SubscribeLocalEvent<StyleCounterComponent, DashActionEvent>(On65);
+            SubscribeLocalEvent<StyleCounterComponent, DisarmedEvent>(OnSkillIssue);
+            SubscribeLocalEvent<StyleCounterComponent, TakeStaminaDamageEvent>(OnStunned);
+        }
+
+        private void OnStunned(EntityUid uid, StyleCounterComponent component, TakeStaminaDamageEvent args)
+        {
+            if (!_gameTiming.IsFirstTimePredicted)
+                return;
+            component.CurrentPoints -= 100;
+            RaiseLocalEvent(uid, new UpdateStyleEvent());
+            _styleSystem.AddStyleEvent(uid, "-STUN DAMAGE", component, Color.Purple);
+        }
+
+        private void OnSkillIssue(EntityUid uid, StyleCounterComponent component, DisarmedEvent args)
+        {
+            if (!_gameTiming.IsFirstTimePredicted)
+                return;
+            component.CurrentPoints -= 200;
+            RaiseLocalEvent(uid, new UpdateStyleEvent());
+            _styleSystem.AddStyleEvent(uid, "-DISARMED", component, Color.Purple);
         }
 
         private void On65(EntityUid uid, StyleCounterComponent styleComp, DashActionEvent args)
