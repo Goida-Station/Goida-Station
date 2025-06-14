@@ -42,14 +42,14 @@ namespace Content.Goobstation.Shared.Style
         }
         private void OnElectrocuted(EntityUid uid, StyleCounterComponent styleComp, ElectrocutedEvent args)
         {
-            if (!_gameTiming.IsFirstTimePredicted) // <------------------------------------ \
-                return; //                                                                  |
-            //                                                                              |
-            if (args.ShockDamage.HasValue && args.ShockDamage > 0) // todo: put this here   |
+            if (!_gameTiming.IsFirstTimePredicted || args.ShockDamage < 0 || !args.ShockDamage.HasValue)
+                return;
+
+            if (_net.IsServer)
             {
-                _styleSystem.AddStyleEvent(uid, "-SHOCK", styleComp, Color.Red);
                 styleComp.CurrentPoints -= 250; // massive skill issue
                 RaiseLocalEvent(uid, new UpdateStyleEvent());
+                _styleSystem.AddStyleEvent(uid, "-SHOCK", styleComp, Color.Red);
             }
         }
 
@@ -58,22 +58,22 @@ namespace Content.Goobstation.Shared.Style
             if (!_gameTiming.IsFirstTimePredicted)
                 return;
 
-            _styleSystem.AddStyleEvent(uid, "+ADMEMED", styleComp, Color.Green);
-            styleComp.CurrentPoints += 65;
+            styleComp.CurrentPoints += 200;
             RaiseLocalEvent(uid, new UpdateStyleEvent());
+            _styleSystem.AddStyleEvent(uid, "+CHEATS", styleComp, Color.Green);
         }
         private void OnThrowHitBy(EntityUid uid, StyleCounterComponent styleComp, ThrowHitByEvent args)
         {
-            if (!_gameTiming.IsFirstTimePredicted)
+            if (!_gameTiming.IsFirstTimePredicted
+                || TryComp<MobStateComponent>(uid, out var mobState))
                 return;
 
-            if (TryComp<MobStateComponent>(uid, out var mobState) && mobState.CurrentState == MobState.Alive)
+            if (mobState != null && mobState.CurrentState == MobState.Alive)
             {
-                _styleSystem.AddStyleEvent(uid, "-OWNED", styleComp, Color.OrangeRed); // lmao
                 styleComp.CurrentPoints -= 400;
                 RaiseLocalEvent(uid, new UpdateStyleEvent());
+                _styleSystem.AddStyleEvent(uid, "-OWNED", styleComp, Color.OrangeRed); // lmao
             }
-            RaiseLocalEvent(uid, new UpdateStyleEvent());
         }
 
         private void OnMeleeAttack(EntityUid uid, StyleCounterComponent styleComp, MeleeAttackEvent args)
@@ -87,9 +87,9 @@ namespace Content.Goobstation.Shared.Style
             if (validHits == 0)
                 return;
 
-            _styleSystem.AddStyleEvent(uid, "+MELEE HIT", styleComp, Color.LightGreen);
             styleComp.CurrentPoints += 75;
             RaiseLocalEvent(uid, new UpdateStyleEvent());
+            _styleSystem.AddStyleEvent(uid, "+MELEE HIT", styleComp, Color.LightGreen);
         }
 
         private void OnDamageDealt(EntityUid uid, StyleCounterComponent styleComp, DamageChangedEvent args)
@@ -106,21 +106,22 @@ namespace Content.Goobstation.Shared.Style
 
             if (totalDamage <= 12)
             {
-                _styleSystem.AddStyleEvent(uid, "-DAMAGE", styleComp, Color.Yellow);
                 styleComp.CurrentPoints -= 100;
+                RaiseLocalEvent(uid, new UpdateStyleEvent());
+                _styleSystem.AddStyleEvent(uid, "-DAMAGE", styleComp, Color.Yellow);
             }
             else if (totalDamage <= 20)
             {
-                _styleSystem.AddStyleEvent(uid, "-MAJOR DAMAGE", styleComp, Color.Orange);
                 styleComp.CurrentPoints -= 150;
+                RaiseLocalEvent(uid, new UpdateStyleEvent());
+                _styleSystem.AddStyleEvent(uid, "-MAJOR DAMAGE", styleComp, Color.Orange);
             }
             else
             {
-                _styleSystem.AddStyleEvent(uid, "-MAJOR DAMAGE", styleComp, Color.Red);
                 styleComp.CurrentPoints -= 300;
+                RaiseLocalEvent(uid, new UpdateStyleEvent());
+                _styleSystem.AddStyleEvent(uid, "-MAJOR DAMAGE", styleComp, Color.Red);
             }
-
-            RaiseLocalEvent(uid, new UpdateStyleEvent());
         }
 
         private void OnProjectileHit(Entity<StyleProjectileComponent> ent, ref ProjectileHitEvent args)
@@ -134,7 +135,7 @@ namespace Content.Goobstation.Shared.Style
             if (_net.IsServer)
             {
                 _styleSystem.AddStyleEvent(ent.Comp.User.Value, "+BULLET HIT", ent.Comp.Component, Color.BlueViolet);
-                ent.Comp.Component.CurrentPoints += 300;
+                ent.Comp.Component.CurrentPoints += 125;
             }
             RaiseLocalEvent(ent.Comp.User.Value, new UpdateStyleEvent());
         }
@@ -155,7 +156,7 @@ namespace Content.Goobstation.Shared.Style
             if (!_gameTiming.IsFirstTimePredicted)
                 return;
 
-            styleComp.CurrentPoints = Math.Max(0, styleComp.CurrentPoints -= 400);
+            styleComp.CurrentPoints -= 400;
             _styleSystem.AddStyleEvent(uid, "-SLIP", styleComp, Color.Red);
         }
     }

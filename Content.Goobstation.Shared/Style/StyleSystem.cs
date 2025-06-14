@@ -122,16 +122,17 @@ namespace Content.Goobstation.Shared.Style
 
             if (newRank != style.Rank)
             {
-                var oldRank = style.Rank;
                 style.Rank = newRank;
                 style.CurrentMultiplier = highestMultiplier;
 
-                RaiseLocalEvent(new StyleRankChangedEvent(
-                    GetNetEntity(uid),
-                    oldRank,
-                    newRank,
-                    style.CurrentMultiplier,
-                    style.RecentEvents));
+                if (_net.IsServer)
+                {
+                    RaiseNetworkEvent(new StyleHudUpdateEvent(
+                            style.Rank,
+                            style.CurrentMultiplier,
+                            style.RecentEvents.ToList()),
+                        Filter.Entities(uid));
+                }
                 Dirty(uid, style);
             }
         }
