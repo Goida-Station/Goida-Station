@@ -472,6 +472,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
     private bool AttemptAttack(EntityUid user, EntityUid weaponUid, MeleeWeaponComponent weapon, AttackEvent attack, ICommonSession? session)
     {
         var curTime = Timing.CurTime;
+        var hitEntities = new List<EntityUid>(); // Goidastation
 
         if (weapon.NextAttack > curTime)
             return false;
@@ -511,7 +512,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
                     return false;
                 break;
             default:
-                if (!weapon.CanHeavyAttack) // Goobstation
+                if (!weapon.CanHeavyAttack) // Goidastation
                     return false;
 
                 if (!Blocker.CanAttack(user, weapon: (weaponUid, weapon)))
@@ -554,27 +555,27 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         // Attack confirmed
         for (var i = 0; i < swings; i++)
         {
-            EntProtoId animation; // Goobstation - Edit
+            EntProtoId animation;// goida edit
             var spriteRotation = weapon.AnimationRotation;
 
             switch (attack)
             {
                 case LightAttackEvent light:
-                    DoLightAttack(user, light, weaponUid, weapon, session);
+                    DoLightAttack(user, light, weaponUid, weapon, session, hitEntities);// goida edit
                     break;
                 case DisarmAttackEvent disarm:
                     DoDisarm(user, disarm, weaponUid, weapon, session); // Goob edit
 
-                    animation = weapon.DisarmAnimation; // WWDP
-                    DoLungeAnimation(user, weaponUid, weapon.Angle, TransformSystem.ToMapCoordinates(GetCoordinates(attack.Coordinates)), weapon.Range, animation, spriteRotation, weapon.FlipAnimation); // Goobstation - Edit
+                    animation = weapon.DisarmAnimation;// goida edit
+                    DoLungeAnimation(user, weaponUid, weapon.Angle, TransformSystem.ToMapCoordinates(GetCoordinates(attack.Coordinates)), weapon.Range, animation, spriteRotation, weapon.FlipAnimation); // Goida edit
                     break;
                 case HeavyAttackEvent heavy:
-                    if (!DoHeavyAttack(user, heavy, weaponUid, weapon, session))
+                    if (!DoHeavyAttack(user, heavy, weaponUid, weapon, session, hitEntities)) // Goida edit
                         return false;
 
                     animation = weapon.WideAnimation;
                     spriteRotation = weapon.WideAnimationRotation;
-                    DoLungeAnimation(user, weaponUid, weapon.Angle, TransformSystem.ToMapCoordinates(GetCoordinates(attack.Coordinates)), weapon.Range, animation, spriteRotation, weapon.FlipAnimation); // Goobstation - Edit
+                    DoLungeAnimation(user, weaponUid, weapon.Angle, TransformSystem.ToMapCoordinates(GetCoordinates(attack.Coordinates)), weapon.Range, animation, spriteRotation, weapon.FlipAnimation); // Goida edit
                     break;
                 default:
                     throw new NotImplementedException();
@@ -582,7 +583,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
 
         }
 
-        var attackEv = new MeleeAttackEvent(weaponUid);
+        var attackEv = new MeleeAttackEvent(weaponUid, hitEntities); // Goida edit
         RaiseLocalEvent(user, ref attackEv);
 
         weapon.Attacking = true;
@@ -593,7 +594,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
     protected abstract bool InRange(EntityUid user, EntityUid target, float range, ICommonSession? session);
 
     // Goob edit
-    public virtual void DoLightAttack(EntityUid user, LightAttackEvent ev, EntityUid meleeUid, MeleeWeaponComponent component, ICommonSession? session) // Goobstation - Edit
+    public virtual void DoLightAttack(EntityUid user, LightAttackEvent ev, EntityUid meleeUid, MeleeWeaponComponent component, ICommonSession? session, List<EntityUid> hitEntities) // Goobstation & Goida - Edit
     {
         // If I do not come back later to fix Light Attacks being Heavy Attacks you can throw me in the spider pit -Errant
         var damage = GetDamage(meleeUid, user, component) * GetHeavyDamageModifier(meleeUid, user, component);
@@ -642,7 +643,8 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         // Sawmill.Debug($"Melee damage is {damage.Total} out of {component.Damage.Total}");
 
         // Raise event before doing damage so we can cancel damage if the event is handled
-        var hitEvent = new MeleeHitEvent(new List<EntityUid> { target.Value }, user, meleeUid, damage, null, GetCoordinates(ev.Coordinates)); // Goob edit
+        hitEntities.Add(target.Value); // Goidastation
+        var hitEvent = new MeleeHitEvent(hitEntities, user, meleeUid, damage, null, GetCoordinates(ev.Coordinates)); // Goob edit
         RaiseLocalEvent(meleeUid, hitEvent);
 
 
@@ -704,7 +706,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
 
     protected abstract void DoDamageEffect(List<EntityUid> targets, EntityUid? user,  TransformComponent targetXform);
 
-    private bool DoHeavyAttack(EntityUid user, HeavyAttackEvent ev, EntityUid meleeUid, MeleeWeaponComponent component, ICommonSession? session)
+    private bool DoHeavyAttack(EntityUid user, HeavyAttackEvent ev, EntityUid meleeUid, MeleeWeaponComponent component, ICommonSession? session, List<EntityUid> hitEntities) // Goida edit
     {
         // TODO: This is copy-paste as fuck with DoPreciseAttack
         if (!TryComp(user, out TransformComponent? userXform))
@@ -792,7 +794,8 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         // Sawmill.Debug($"Melee damage is {damage.Total} out of {component.Damage.Total}");
 
         // Raise event before doing damage so we can cancel damage if the event is handled
-        var hitEvent = new MeleeHitEvent(targets, user, meleeUid, damage, direction, GetCoordinates(ev.Coordinates)); // Goob edit
+        hitEntities.AddRange(targets); // Goidastation
+        var hitEvent = new MeleeHitEvent(hitEntities, user, meleeUid, damage, direction, GetCoordinates(ev.Coordinates)); // Goob edit
         RaiseLocalEvent(meleeUid, hitEvent);
 
         if (hitEvent.Handled)
