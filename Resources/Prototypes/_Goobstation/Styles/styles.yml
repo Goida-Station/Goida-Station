@@ -1,13 +1,3 @@
-
-- type: entity # todo: delete these
-  id: glassesdebughud
-  parent: ClothingEyesGlassesSecurity
-  components:
-  - type: ClothingGrantComponent
-    component:
-    - type: StyleCounter
-    - type: StyleHudVisuals
-
 - type: styleRank
   id: F
   text: "FLUKIE"
