@@ -2,6 +2,7 @@ using System.Linq;
 using Content.Goobstation.Common.Events;
 using Content.Goobstation.Common.Style;
 using Content.Goobstation.Shared.Dash;
+using Content.Goobstation.Shared.Emoting;
 using Content.Shared.CombatMode;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Events;
@@ -43,6 +44,14 @@ namespace Content.Goobstation.Shared.Style
             SubscribeLocalEvent<StyleCounterComponent, DashActionEvent>(On65);
             SubscribeLocalEvent<StyleCounterComponent, DisarmedEvent>(OnSkillIssue);
             SubscribeLocalEvent<StyleCounterComponent, TakeStaminaDamageEvent>(OnStunned);
+            SubscribeLocalEvent<StyleCounterComponent, AnimationFlipEmoteEvent>(OnFlip);
+        }
+
+        private void OnFlip(EntityUid uid, StyleCounterComponent component, AnimationFlipEmoteEvent args)
+        {
+            component.CurrentPoints += 75;
+            RaiseLocalEvent(uid, new UpdateStyleEvent());
+            _styleSystem.AddStyleEvent(uid, "+FLIP", component, Color.Purple);
         }
 
         private void OnStunned(EntityUid uid, StyleCounterComponent component, TakeStaminaDamageEvent args)
