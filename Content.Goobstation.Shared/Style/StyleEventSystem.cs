@@ -3,6 +3,7 @@ using Content.Goobstation.Common.Events;
 using Content.Goobstation.Common.Style;
 using Content.Shared.Damage;
 using Content.Shared.Electrocution;
+using Content.Shared.Guardian;
 using Content.Shared.Hands.Components;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
@@ -39,7 +40,19 @@ namespace Content.Goobstation.Shared.Style
             SubscribeLocalEvent<StyleCounterComponent, ThrowHitByEvent>(OnThrowHitBy);
             SubscribeLocalEvent<StyleCounterComponent, ElectrocutedEvent>(OnElectrocuted);
             SubscribeLocalEvent<StyleCounterComponent, RejuvenateEvent>(OnRejuvenate);
+            SubscribeLocalEvent<StyleCounterComponent, GuardianToggleActionEvent>(OnJojoReference);
         }
+
+        private void OnJojoReference(EntityUid uid, StyleCounterComponent styleComp, GuardianToggleActionEvent args)
+        {
+            if (!_gameTiming.IsFirstTimePredicted)
+                return;
+
+            styleComp.CurrentPoints += 50;
+            RaiseLocalEvent(uid, new UpdateStyleEvent());
+            _styleSystem.AddStyleEvent(uid, "+JOJO REFERENCE", styleComp, Color.Purple);
+        }
+
         private void OnElectrocuted(EntityUid uid, StyleCounterComponent styleComp, ElectrocutedEvent args)
         {
             if (!_gameTiming.IsFirstTimePredicted || args.ShockDamage < 0 || !args.ShockDamage.HasValue)
