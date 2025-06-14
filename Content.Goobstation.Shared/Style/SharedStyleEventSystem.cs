@@ -1,27 +1,23 @@
 using System.Linq;
 using Content.Goobstation.Common.Events;
 using Content.Goobstation.Common.Style;
+using Content.Goobstation.Shared.Dash;
 using Content.Shared.Damage;
 using Content.Shared.Electrocution;
 using Content.Shared.Guardian;
-using Content.Shared.Hands.Components;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Projectiles;
 using Content.Shared.Rejuvenate;
 using Content.Shared.Slippery;
 using Content.Shared.Throwing;
-using Content.Shared.Weapons.Melee;
 using Content.Shared.Weapons.Melee.Events;
-using Content.Shared.Weapons.Ranged.Components;
-using Content.Shared.Weapons.Ranged.Events;
 using Robust.Shared.Network;
-using Robust.Shared.Player;
 using Robust.Shared.Timing;
 
 namespace Content.Goobstation.Shared.Style
 {
-    public sealed class StyleEventSystem : EntitySystem
+    public sealed class SharedStyleEventSystem : EntitySystem
     {
         [Dependency] private readonly StyleSystem _styleSystem = default!;
         [Dependency] private readonly IGameTiming _gameTiming = default!;
@@ -41,6 +37,17 @@ namespace Content.Goobstation.Shared.Style
             SubscribeLocalEvent<StyleCounterComponent, ElectrocutedEvent>(OnElectrocuted);
             SubscribeLocalEvent<StyleCounterComponent, RejuvenateEvent>(OnRejuvenate);
             SubscribeLocalEvent<StyleCounterComponent, GuardianToggleActionEvent>(OnJojoReference);
+            SubscribeLocalEvent<StyleCounterComponent, DashActionEvent>(On65);
+        }
+
+        private void On65(EntityUid uid, StyleCounterComponent styleComp, DashActionEvent args)
+        {
+            if (!_gameTiming.IsFirstTimePredicted)
+                return;
+
+            styleComp.CurrentPoints += 65;
+            RaiseLocalEvent(uid, new UpdateStyleEvent());
+            _styleSystem.AddStyleEvent(uid, "+DASH", styleComp, Color.Purple);
         }
 
         private void OnJojoReference(EntityUid uid, StyleCounterComponent styleComp, GuardianToggleActionEvent args)
@@ -50,7 +57,7 @@ namespace Content.Goobstation.Shared.Style
 
             styleComp.CurrentPoints += 50;
             RaiseLocalEvent(uid, new UpdateStyleEvent());
-            _styleSystem.AddStyleEvent(uid, "+JOJO REFERENCE", styleComp, Color.Purple);
+            _styleSystem.AddStyleEvent(uid, "+JOJO REFERENCE", styleComp, Color.Purple); // Speedwagon foundation is proud
         }
 
         private void OnElectrocuted(EntityUid uid, StyleCounterComponent styleComp, ElectrocutedEvent args)
@@ -61,7 +68,7 @@ namespace Content.Goobstation.Shared.Style
             if (_net.IsServer)
             {
                 styleComp.CurrentPoints -= 250; // massive skill issue
-                RaiseLocalEvent(uid, new UpdateStyleEvent());
+                RaiseLocalEvent(uid, new UpdateStyleEvent()); // ХУЛИ ОНО НАХУЙ НЕ РАБОТАЕТ СУКААААААААААААААААААААААААА
                 _styleSystem.AddStyleEvent(uid, "-SHOCK", styleComp, Color.Red);
             }
         }
