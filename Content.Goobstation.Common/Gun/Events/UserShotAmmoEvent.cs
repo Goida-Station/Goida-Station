@@ -1,6 +1,6 @@
 using Robust.Shared.Serialization;
 
-namespace Content.Goobstation.Common.Events;
+namespace Content.Goobstation.Common.Gun.Events;
 
 /// <summary>
 /// Raised when entity shoots a gun.
@@ -9,9 +9,11 @@ namespace Content.Goobstation.Common.Events;
 public sealed class UserShotAmmoEvent : EntityEventArgs
 {
     public List<NetEntity> FiredProjectiles { get; }
+    public NetEntity Gun { get; }
 
-    public UserShotAmmoEvent(List<NetEntity> firedProjectiles)
+    public UserShotAmmoEvent(List<NetEntity> firedProjectiles, NetEntity gun)
     {
         FiredProjectiles = firedProjectiles;
+        Gun = gun;
     }
 }

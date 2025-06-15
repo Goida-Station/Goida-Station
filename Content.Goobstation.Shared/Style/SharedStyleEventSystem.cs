@@ -1,5 +1,5 @@
 using System.Linq;
-using Content.Goobstation.Common.Events;
+using Content.Goobstation.Common.Gun.Events;
 using Content.Goobstation.Common.Style;
 using Content.Goobstation.Shared.Dash;
 using Content.Goobstation.Shared.Emoting;
