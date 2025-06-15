@@ -3,6 +3,7 @@ using Content.Goobstation.Common.Gun.Events;
 using Content.Goobstation.Common.Style;
 using Content.Goobstation.Shared.Dash;
 using Content.Goobstation.Shared.Emoting;
+using Content.Goobstation.Shared.Sandevistan;
 using Content.Shared.CombatMode;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Events;
@@ -43,8 +44,16 @@ namespace Content.Goobstation.Shared.Style
             SubscribeLocalEvent<StyleCounterComponent, GuardianToggleActionEvent>(OnJojoReference);
             SubscribeLocalEvent<StyleCounterComponent, DashActionEvent>(On65);
             SubscribeLocalEvent<StyleCounterComponent, DisarmedEvent>(OnSkillIssue);
-            SubscribeLocalEvent<StyleCounterComponent, TakeStaminaDamageEvent>(OnStunned);
+            SubscribeLocalEvent<StyleCounterComponent, TakeStaminaDamageEvent>(OnStaminaDamage);
             SubscribeLocalEvent<StyleCounterComponent, AnimationFlipEmoteEvent>(OnFlip);
+            SubscribeLocalEvent<StyleCounterComponent, ToggleSandevistanEvent>(OnSandevistan);
+        }
+
+        private void OnSandevistan(EntityUid uid, StyleCounterComponent component, ToggleSandevistanEvent args)
+        {
+            component.CurrentPoints += 150;
+            RaiseLocalEvent(uid, new UpdateStyleEvent());
+            _styleSystem.AddStyleEvent(uid, "+FAST AF", component, Color.DarkGoldenrod);
         }
 
         private void OnFlip(EntityUid uid, StyleCounterComponent component, AnimationFlipEmoteEvent args)
@@ -54,7 +63,7 @@ namespace Content.Goobstation.Shared.Style
             _styleSystem.AddStyleEvent(uid, "+FLIP", component, Color.Purple);
         }
 
-        private void OnStunned(EntityUid uid, StyleCounterComponent component, TakeStaminaDamageEvent args)
+        private void OnStaminaDamage(EntityUid uid, StyleCounterComponent component, TakeStaminaDamageEvent args)
         {
             if (!_gameTiming.IsFirstTimePredicted)
                 return;
