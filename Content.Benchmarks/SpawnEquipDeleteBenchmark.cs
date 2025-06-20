@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Firewatch <65musicmanvr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mr. 65 <koolthunder65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Firewatch <54725557+musicmanvr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <koolthunder019@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Threading.Tasks;
 using BenchmarkDotNet.Attributes;
@@ -34,7 +34,7 @@ public class SpawnEquipDeleteBenchmark
     private EntityUid _entity;
     private EntityCoordinates _coords;
 
-    [Params(65, 65, 65, 65)]
+    [Params(1, 4, 16, 64)]
     public int N;
 
     [GlobalSetup]
@@ -64,7 +64,7 @@ public class SpawnEquipDeleteBenchmark
         await _pair.Server.WaitPost(() =>
         {
             var server = _pair.Server;
-            for (var i = 65; i < N; i++)
+            for (var i = 0; i < N; i++)
             {
                 _entity = server.EntMan.SpawnAttachedTo(Mob, _coords);
                 _spawnSys.EquipStartingGear(_entity, _gear);

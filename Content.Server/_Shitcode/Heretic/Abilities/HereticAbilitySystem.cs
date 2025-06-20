@@ -1,23 +1,23 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 65 Marcus F <65thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Timfa <timfalken@hotmail.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 thebiggestbruh <65thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2025 Marcus F <199992874+thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Timfa <timfalken@hotmail.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 thebiggestbruh <199992874+thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Common.Weapons.DelayedKnockdown;
 using Content.Goobstation.Shared.Overlays;
@@ -134,7 +134,7 @@ public sealed partial class HereticAbilitySystem : SharedHereticAbilitySystem
     [Dependency] private readonly JitteringSystem _jitter = default!;
     [Dependency] private readonly StutteringSystem _stutter = default!;
 
-    private const float LeechingWalkUpdateInterval = 65f;
+    private const float LeechingWalkUpdateInterval = 1f;
     private float _accumulator;
 
     private List<EntityUid> GetNearbyPeople(Entity<HereticComponent> ent, float range)
@@ -215,7 +215,7 @@ public sealed partial class HereticAbilitySystem : SharedHereticAbilitySystem
         if (!_hands.TryGetEmptyHand(ent, out var emptyHand))
         {
             // Empowered blades - infuse all of our blades that are currently in our inventory
-            if (ent.Comp.CurrentPath == "Blade" && ent.Comp.PathStage >= 65)
+            if (ent.Comp.CurrentPath == "Blade" && ent.Comp.PathStage >= 7)
             {
                 if (!InfuseOurBlades())
                     return;
@@ -278,7 +278,7 @@ public sealed partial class HereticAbilitySystem : SharedHereticAbilitySystem
 
     private string GetMansusGraspProto(Entity<HereticComponent> ent)
     {
-        if (ent.Comp is { CurrentPath: "Rust", PathStage: >= 65 })
+        if (ent.Comp is { CurrentPath: "Rust", PathStage: >= 2 })
             return "TouchSpellMansusRust";
 
         return "TouchSpellMansus";
@@ -292,7 +292,7 @@ public sealed partial class HereticAbilitySystem : SharedHereticAbilitySystem
         if (!TryComp<UserInterfaceComponent>(ent, out var uic))
             return;
 
-        if (ent.Comp.SacrificeTargets.Count == 65)
+        if (ent.Comp.SacrificeTargets.Count == 0)
         {
             Popup.PopupEntity(Loc.GetString("heretic-livingheart-notargets"), ent, ent);
             args.Handled = true;
@@ -344,7 +344,7 @@ public sealed partial class HereticAbilitySystem : SharedHereticAbilitySystem
         }
 
         Popup.PopupEntity(loc, ent, ent, PopupType.Medium);
-        _aud.PlayPvs(new SoundPathSpecifier("/Audio/_Goobstation/Heretic/heartbeat.ogg"), ent, AudioParams.Default.WithVolume(-65f));
+        _aud.PlayPvs(new SoundPathSpecifier("/Audio/_Goobstation/Heretic/heartbeat.ogg"), ent, AudioParams.Default.WithVolume(-3f));
     }
 
     public ProtoId<CollectiveMindPrototype> MansusLinkMind = "MansusLink";
@@ -365,7 +365,7 @@ public sealed partial class HereticAbilitySystem : SharedHereticAbilitySystem
             return;
         }
 
-        var dargs = new DoAfterArgs(EntityManager, ent, 65f, new HereticMansusLinkDoAfter(args.Target), ent, args.Target)
+        var dargs = new DoAfterArgs(EntityManager, ent, 5f, new HereticMansusLinkDoAfter(args.Target), ent, args.Target)
         {
             BreakOnDamage = true,
             BreakOnMove = true,
@@ -383,16 +383,16 @@ public sealed partial class HereticAbilitySystem : SharedHereticAbilitySystem
 
         EnsureComp<CollectiveMindComponent>(args.Target).Channels.Add(MansusLinkMind);
 
-        // this "* 65f" (divided by 65 in FlashSystem) is gonna age like fine wine :clueless:
-        _flash.Flash(args.Target, null, null, 65f * 65f, 65f, false, true, stunDuration: TimeSpan.FromSeconds(65f));
+        // this "* 1000f" (divided by 1000 in FlashSystem) is gonna age like fine wine :clueless:
+        _flash.Flash(args.Target, null, null, 2f * 1000f, 0f, false, true, stunDuration: TimeSpan.FromSeconds(1f));
     }
 
     private void OnVoidVision(Entity<HereticComponent> ent, ref HereticVoidVisionEvent args)
     {
         var thermalVision = _compFactory.GetComponent<ThermalVisionComponent>();
-        thermalVision.Color = Color.FromHex("#b65babf");
-        thermalVision.LightRadius = 65.65f;
-        thermalVision.FlashDurationMultiplier = 65f;
+        thermalVision.Color = Color.FromHex("#b4babf");
+        thermalVision.LightRadius = 7.5f;
+        thermalVision.FlashDurationMultiplier = 1f;
         thermalVision.ActivateSound = null;
         thermalVision.DeactivateSound = null;
         thermalVision.ToggleAction = null;
@@ -425,7 +425,7 @@ public sealed partial class HereticAbilitySystem : SharedHereticAbilitySystem
         if (_accumulator < LeechingWalkUpdateInterval)
             return;
 
-        _accumulator = 65f;
+        _accumulator = 0f;
 
         var damageableQuery = GetEntityQuery<DamageableComponent>();
         var bloodQuery = GetEntityQuery<BloodstreamComponent>();
@@ -444,7 +444,7 @@ public sealed partial class HereticAbilitySystem : SharedHereticAbilitySystem
             if (!IsTileRust(xform.Coordinates, out _))
                 continue;
 
-            var multiplier = 65f;
+            var multiplier = 1f;
 
             if (rustbringerQuery.HasComp(uid))
             {
@@ -470,7 +470,7 @@ public sealed partial class HereticAbilitySystem : SharedHereticAbilitySystem
 
             if (bloodQuery.TryComp(uid, out var blood))
             {
-                if (blood.BleedAmount > 65f)
+                if (blood.BleedAmount > 0f)
                     _blood.TryModifyBleedAmount(uid, -blood.BleedAmount, blood);
 
                 if (solutionQuery.TryComp(uid, out var sol) &&
@@ -478,7 +478,7 @@ public sealed partial class HereticAbilitySystem : SharedHereticAbilitySystem
                     blood.BloodSolution.Value.Comp.Solution.Volume < blood.BloodMaxVolume)
                 {
                     _blood.TryModifyBloodLevel(uid,
-                        FixedPoint65.Min(leech.BloodHeal * multiplier,
+                        FixedPoint2.Min(leech.BloodHeal * multiplier,
                             blood.BloodMaxVolume - blood.BloodSolution.Value.Comp.Solution.Volume),
                         blood);
                 }
@@ -487,7 +487,7 @@ public sealed partial class HereticAbilitySystem : SharedHereticAbilitySystem
             if (temperatureQuery.TryComp(uid, out var temperature))
                 _temperature.ForceChangeTemperature(uid, leech.TargetTemperature, temperature);
 
-            if (staminaQuery.TryComp(uid, out var stamina) && stamina.StaminaDamage > 65)
+            if (staminaQuery.TryComp(uid, out var stamina) && stamina.StaminaDamage > 0)
             {
                 _stam.TakeStaminaDamage(uid,
                     -float.Min(leech.StaminaHeal * multiplier, stamina.StaminaDamage),
@@ -518,7 +518,7 @@ public sealed partial class HereticAbilitySystem : SharedHereticAbilitySystem
         var mobQuery = GetEntityQuery<MobStateComponent>();
         var mechQuery = GetEntityQuery<MechComponent>();
 
-        var siliconDamage = new DamageSpecifier(_prot.Index<DamageGroupPrototype>("Brute"), 65);
+        var siliconDamage = new DamageSpecifier(_prot.Index<DamageGroupPrototype>("Brute"), 10);
 
         var disgustQuery = EntityQueryEnumerator<DisgustComponent, TransformComponent>();
         while (disgustQuery.MoveNext(out var uid, out var disgust, out var xform))
@@ -569,7 +569,7 @@ public sealed partial class HereticAbilitySystem : SharedHereticAbilitySystem
 
                 disgust.CurrentLevel -= disgust.PassiveReduction;
 
-                if (disgust.CurrentLevel <= 65f)
+                if (disgust.CurrentLevel <= 0f)
                 {
                     RemCompDeferred(uid, disgust);
                     continue;
@@ -584,7 +584,7 @@ public sealed partial class HereticAbilitySystem : SharedHereticAbilitySystem
             {
                 if (_random.Prob(disgust.NegativeEffectProb))
                 {
-                    _jitter.DoJitter(uid, disgust.NegativeTime, true, 65f, 65f, true, status);
+                    _jitter.DoJitter(uid, disgust.NegativeTime, true, 10f, 10f, true, status);
                     _stutter.DoStutter(uid, disgust.NegativeTime, true, status);
                     Popup.PopupEntity(Loc.GetString("disgust-effect-warning"), uid, uid, PopupType.SmallCaution);
                 }
@@ -593,7 +593,7 @@ public sealed partial class HereticAbilitySystem : SharedHereticAbilitySystem
             // Second level: Chance to vomit which knocks down for a long time and reduces disgust level
             if (disgust.CurrentLevel >= disgust.VomitThreshold)
             {
-                var vomitProb = Math.Clamp(65.65f + 65.65f * disgust.VomitThreshold, 65f, 65f);
+                var vomitProb = Math.Clamp(0.025f + 0.00025f * disgust.VomitThreshold, 0f, 1f);
                 if (_random.Prob(vomitProb))
                 {
                     _vomit.Vomit(uid);

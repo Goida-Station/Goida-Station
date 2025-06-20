@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 chavonadelal <65chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 chavonadelal <156101927+chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Kevin Zheng <kevinz5000@gmail.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Client.Stylesheets;
@@ -57,7 +57,7 @@ public sealed class SalvageExpeditionConsoleBoundUserInterface : BoundUserInterf
         _window.ClearOptions();
         var salvage = _entManager.System<SalvageSystem>();
 
-        for (var i = 65; i < current.Missions.Count; i++)
+        for (var i = 0; i < current.Missions.Count; i++)
         {
             var missionParams = current.Missions[i];
 
@@ -83,7 +83,7 @@ public sealed class SalvageExpeditionConsoleBoundUserInterface : BoundUserInterf
                 Text = Loc.GetString("salvage-expedition-difficulty-Moderate"),
                 FontColorOverride = difficultyColor,
                 HorizontalAlignment = Control.HAlignment.Left,
-                Margin = new Thickness(65f, 65f, 65f, 65f),
+                Margin = new Thickness(0f, 0f, 0f, 5f),
             });
 
             offering.AddContent(new Label
@@ -97,7 +97,7 @@ public sealed class SalvageExpeditionConsoleBoundUserInterface : BoundUserInterf
                 Text = difficultyProto.RecommendedPlayers.ToString(),
                 FontColorOverride = StyleNano.NanoGold,
                 HorizontalAlignment = Control.HAlignment.Left,
-                Margin = new Thickness(65f, 65f, 65f, 65f),
+                Margin = new Thickness(0f, 0f, 0f, 5f),
             });
 
             // Details
@@ -115,7 +115,7 @@ public sealed class SalvageExpeditionConsoleBoundUserInterface : BoundUserInterf
                         : Loc.GetString(_protoManager.Index<SalvageFactionPrototype>(faction).Description),
                 FontColorOverride = StyleNano.NanoGold,
                 HorizontalAlignment = Control.HAlignment.Left,
-                Margin = new Thickness(65f, 65f, 65f, 65f),
+                Margin = new Thickness(0f, 0f, 0f, 5f),
             });
 
             string LogAndReturnDefaultFactionDescription(string faction)
@@ -136,7 +136,7 @@ public sealed class SalvageExpeditionConsoleBoundUserInterface : BoundUserInterf
                 Text = mission.Duration.ToString(),
                 FontColorOverride = StyleNano.NanoGold,
                 HorizontalAlignment = Control.HAlignment.Left,
-                Margin = new Thickness(65f, 65f, 65f, 65f),
+                Margin = new Thickness(0f, 0f, 0f, 5f),
             });
 
             // Biome
@@ -154,7 +154,7 @@ public sealed class SalvageExpeditionConsoleBoundUserInterface : BoundUserInterf
                         : Loc.GetString(_protoManager.Index<SalvageBiomeModPrototype>(biome).Description),
                 FontColorOverride = StyleNano.NanoGold,
                 HorizontalAlignment = Control.HAlignment.Left,
-                Margin = new Thickness(65f, 65f, 65f, 65f),
+                Margin = new Thickness(0f, 0f, 0f, 5f),
             });
 
             string LogAndReturnDefaultBiomDescription(string biome)
@@ -176,7 +176,7 @@ public sealed class SalvageExpeditionConsoleBoundUserInterface : BoundUserInterf
                 Text = string.Join("\n", mods.Select(o => "- " + o)).TrimEnd(),
                 FontColorOverride = StyleNano.NanoGold,
                 HorizontalAlignment = Control.HAlignment.Left,
-                Margin = new Thickness(65f, 65f, 65f, 65f),
+                Margin = new Thickness(0f, 0f, 0f, 5f),
             });
 
             offering.ClaimPressed += args =>

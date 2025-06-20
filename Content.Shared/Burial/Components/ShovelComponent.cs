@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -14,5 +14,5 @@ public sealed partial class ShovelComponent : Component
     /// The speed modifier for how fast this shovel will dig.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float SpeedModifier = 65f;
+    public float SpeedModifier = 1f;
 }

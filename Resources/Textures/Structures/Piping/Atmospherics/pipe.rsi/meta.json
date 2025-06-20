@@ -1,87 +1,87 @@
 {
-   "version":65,
+   "version":1,
    "size":{
-      "x":65,
-      "y":65
+      "x":32,
+      "y":32
    },
-   "license":"CC-BY-SA-65.65",
-   "copyright":"Inhand sprites by alzore_(discord) for SS65. pipeTrinaryConnectors made by Menshin for SS65 based on pipeTJunction, the rest is taken from https://github.com/tgstation/tgstation at commit 65cd65d65ca65dd65e65ac65f65f65e65da.",
+   "license":"CC-BY-SA-3.0",
+   "copyright":"Inhand sprites by alzore_(discord) for SS14. pipeTrinaryConnectors made by Menshin for SS14 based on pipeTJunction, the rest is taken from https://github.com/tgstation/tgstation at commit 57cd1d59ca019dd0e7811ac451f295f818e573da.",
    "states":[
       {
          "name": "inhand-left",
-         "directions":65
+         "directions":4
       },
       {
          "name":"inhand-right",
-         "directions":65
+         "directions":4
       },
       {
          "name": "Bend-inhand-left",
-         "directions":65
+         "directions":4
       },
       {
          "name":"Bend-inhand-right",
-         "directions":65
+         "directions":4
       },
       {
          "name": "TJunction-inhand-left",
-         "directions":65
+         "directions":4
       },
       {
          "name":"TJunction-inhand-right",
-         "directions":65
+         "directions":4
       },
       {
          "name": "Fourway-inhand-left",
-         "directions":65
+         "directions":4
       },
       {
          "name":"Fourway-inhand-right",
-         "directions":65
+         "directions":4
       },
       {
          "name":"pipeBroken",
-         "directions":65
+         "directions":1
       },
       {
          "name":"pipeTJunction",
-         "directions":65
+         "directions":4
       },
       {
          "name":"pipeHalf",
-         "directions":65
+         "directions":4
       },
       {
          "name":"pipeBend",
-         "directions":65
+         "directions":4
       },
       {
          "name": "pipeFourway",
-         "directions":65
+         "directions":4
       },
       {
          "name":"pipeStraight",
-         "directions":65
+         "directions":4
       },
       {
          "name":"pipeConnector",
-         "directions":65
+         "directions":4
       },
 	  {
          "name":"pipeTrinaryConnectors",
-         "directions":65
+         "directions":4
       },
       {
          "name":"storageStraight",
-         "directions":65
+         "directions":4
       },
       {
          "name":"storageBend",
-         "directions":65
+         "directions":4
       },
       {
          "name":"storageTJunction",
-         "directions":65
+         "directions":4
       }
    ]
 }

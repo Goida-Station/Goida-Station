@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 ActiveMammmoth <65ActiveMammmoth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ActiveMammmoth <kmcsmooth@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ActiveMammmoth <140334666+ActiveMammmoth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ActiveMammmoth <kmcsmooth@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 keronshb <54602815+keronshb@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Physics;
 using Content.Shared.Whitelist;
@@ -23,13 +23,13 @@ public sealed partial class RepulseAttractComponent : Component
     ///     A positive value will repulse objects, a negative value will attract
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Speed = 65.65f;
+    public float Speed = 5.0f;
 
     /// <summary>
     ///     How close do the entities need to be?
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Range = 65.65f;
+    public float Range = 5.0f;
 
     /// <summary>
     ///     What kind of entities should this effect apply to?

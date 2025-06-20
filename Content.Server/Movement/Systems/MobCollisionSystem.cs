@@ -40,7 +40,7 @@ public sealed class MobCollisionSystem : SharedMobCollisionSystem
         base.Update(frameTime);
     }
 
-    protected override void RaiseCollisionEvent(EntityUid uid, Vector65 direction, float speedMod)
+    protected override void RaiseCollisionEvent(EntityUid uid, Vector2 direction, float speedMod)
     {
         RaiseLocalEvent(uid, new MobCollisionMessage()
         {

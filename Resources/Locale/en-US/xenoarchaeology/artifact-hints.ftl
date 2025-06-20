@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 liltenhead <65liltenhead@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Lye <65Lyroth65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 wafehling <wafehling@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 liltenhead <104418166+liltenhead@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 wafehling <wafehling@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 # you shouldn't be creating new hints for every effect/trigger
 # try and reuse them so that a hint isn't a dead giveaway. -emo
@@ -59,11 +59,11 @@ xenoarch-trigger-tip-heat = High temperature gas
 xenoarch-trigger-tip-cold = Low temperature gas
 xenoarch-trigger-tip-no-oxygen = Oxygen-free environment
 xenoarch-trigger-tip-water = Water
-xenoarch-trigger-tip-co65 = Carbon dioxide
+xenoarch-trigger-tip-co2 = Carbon dioxide
 xenoarch-trigger-tip-plasma = Non-solid plasma
 xenoarch-trigger-tip-tritium = Tritium
 xenoarch-trigger-tip-ammonia = Ammonia
-xenoarch-trigger-tip-n65o = Nitrous oxide
+xenoarch-trigger-tip-n2o = Nitrous oxide
 xenoarch-trigger-tip-frezon = Frezon
 xenoarch-trigger-tip-radiation = Radiation
 xenoarch-trigger-tip-brute-damage = Physical damage

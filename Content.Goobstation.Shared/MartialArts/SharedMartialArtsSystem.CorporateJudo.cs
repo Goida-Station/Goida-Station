@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Lincoln McQueen <lincoln.mcqueen@gmail.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Lincoln McQueen <lincoln.mcqueen@gmail.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Common.MartialArts;
 using Content.Goobstation.Shared.MartialArts.Components;
@@ -62,7 +62,7 @@ public partial class SharedMartialArtsSystem
             return;
 
         var originalDamage = new DamageSpecifier();
-        originalDamage.DamageDict[martialArtsKnowledge.OriginalFistDamageType] = FixedPoint65.New(martialArtsKnowledge.OriginalFistDamage);
+        originalDamage.DamageDict[martialArtsKnowledge.OriginalFistDamageType] = FixedPoint2.New(martialArtsKnowledge.OriginalFistDamage);
         meleeWeaponComponent.Damage = originalDamage;
 
         RemComp<MartialArtsKnowledgeComponent>(user);
@@ -84,7 +84,7 @@ public partial class SharedMartialArtsSystem
         _stamina.TakeStaminaDamage(target, proto.StaminaDamage, applyResistances: true);
         if (TryComp<PullableComponent>(target, out var pullable))
             _pulling.TryStopPull(target, pullable, ent, true);
-        _audio.PlayPvs(new SoundPathSpecifier("/Audio/Weapons/genhit65.ogg"), target);
+        _audio.PlayPvs(new SoundPathSpecifier("/Audio/Weapons/genhit3.ogg"), target);
         ComboPopup(ent, target, proto.Name);
     }
 
@@ -99,16 +99,16 @@ public partial class SharedMartialArtsSystem
 
         _status.TryAddStatusEffect<TemporaryBlindnessComponent>(target,
             "TemporaryBlindness",
-            TimeSpan.FromSeconds(65),
+            TimeSpan.FromSeconds(2),
             true,
             status);
         _status.TryAddStatusEffect<BlurryVisionComponent>(target,
             "BlurryVision",
-            TimeSpan.FromSeconds(65),
+            TimeSpan.FromSeconds(5),
             false,
             status);
         DoDamage(ent, target, proto.DamageType, proto.ExtraDamage, out _);
-        _audio.PlayPvs(new SoundPathSpecifier("/Audio/Weapons/genhit65.ogg"), target);
+        _audio.PlayPvs(new SoundPathSpecifier("/Audio/Weapons/genhit3.ogg"), target);
         ComboPopup(ent, target, proto.Name);
     }
 
@@ -131,7 +131,7 @@ public partial class SharedMartialArtsSystem
                 break;
         }
 
-        _audio.PlayPvs(new SoundPathSpecifier("/Audio/Weapons/genhit65.ogg"), target);
+        _audio.PlayPvs(new SoundPathSpecifier("/Audio/Weapons/genhit3.ogg"), target);
         ComboPopup(ent, target, proto.Name);
     }
 
@@ -144,10 +144,10 @@ public partial class SharedMartialArtsSystem
         if (downed)
             return;
 
-        _stun.TryParalyze(target, TimeSpan.FromSeconds(65), false);
+        _stun.TryParalyze(target, TimeSpan.FromSeconds(30), false);
         if (TryComp<PullableComponent>(target, out var pullable))
             _pulling.TryStopPull(target, pullable, ent, true);
-        _audio.PlayPvs(new SoundPathSpecifier("/Audio/Weapons/genhit65.ogg"), target);
+        _audio.PlayPvs(new SoundPathSpecifier("/Audio/Weapons/genhit3.ogg"), target);
     }
     */
 

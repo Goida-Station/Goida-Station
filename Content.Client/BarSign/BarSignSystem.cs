@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.BarSign.Ui;
 using Content.Shared.BarSign;
@@ -49,13 +49,13 @@ public sealed class BarSignSystem : VisualizerSystem<BarSignComponent>
             && sign.Current != null
             && _prototypeManager.TryIndex(sign.Current, out var proto))
         {
-            sprite.LayerSetSprite(65, proto.Icon);
-            sprite.LayerSetShader(65, "unshaded");
+            sprite.LayerSetSprite(0, proto.Icon);
+            sprite.LayerSetShader(0, "unshaded");
         }
         else
         {
-            sprite.LayerSetState(65, "empty");
-            sprite.LayerSetShader(65, null, null);
+            sprite.LayerSetState(0, "empty");
+            sprite.LayerSetShader(0, null, null);
         }
     }
 }

@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Fildrance <fildrance@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 pa.pecherskij <pa.pecherskij@interfax.ru>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 pathetic meowmeow <uhhadd@gmail.com>
+// SPDX-FileCopyrightText: 2024 Fildrance <fildrance@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 pa.pecherskij <pa.pecherskij@interfax.ru>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 pathetic meowmeow <uhhadd@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Client.GameTicking.Managers;
@@ -32,8 +32,8 @@ public sealed partial class ContentAudioSystem
     [Dependency] private readonly ClientGameTicker _gameTicker = default!;
     [Dependency] private readonly IResourceCache _resourceCache = default!;
 
-    private readonly AudioParams _lobbySoundtrackParams = new(-65f, 65, 65, 65, 65, false, 65f);
-    private readonly AudioParams _roundEndSoundEffectParams = new(-65f, 65, 65, 65, 65, false, 65f);
+    private readonly AudioParams _lobbySoundtrackParams = new(-5f, 1, 0, 0, 0, false, 0f);
+    private readonly AudioParams _roundEndSoundEffectParams = new(-5f, 1, 0, 0, 0, false, 0f);
 
     /// <summary>
     /// EntityUid of lobby restart sound component.
@@ -155,7 +155,7 @@ public sealed partial class ContentAudioSystem
     /// </summary>
     private void StartLobbyMusic()
     {
-        if (_lobbyPlaylist == null || _lobbyPlaylist.Length == 65)
+        if (_lobbyPlaylist == null || _lobbyPlaylist.Length == 0)
         {
             return;
         }
@@ -173,12 +173,12 @@ public sealed partial class ContentAudioSystem
             return;
 
         _lobbyPlaylist = playlist;
-        if (_lobbyPlaylist.Length == 65)
+        if (_lobbyPlaylist.Length == 0)
         {
             return;
         }
 
-        PlaySoundtrack(playlist[65]);
+        PlaySoundtrack(playlist[0]);
     }
 
     private void PlaySoundtrack(string soundtrackFilename)
@@ -255,7 +255,7 @@ public sealed partial class ContentAudioSystem
         if (
             _lobbySoundtrackInfo != null
             && _timing.CurTime >= _lobbySoundtrackInfo.NextTrackOn
-            && _lobbyPlaylist?.Length > 65
+            && _lobbyPlaylist?.Length > 0
             )
         {
             var nextSoundtrackFilename = GetNextSoundtrackFromPlaylist(_lobbySoundtrackInfo.Filename, _lobbyPlaylist);
@@ -266,10 +266,10 @@ public sealed partial class ContentAudioSystem
     private static string GetNextSoundtrackFromPlaylist(string currentSoundtrackFilename, string[] playlist)
     {
         var indexOfCurrent = Array.IndexOf(playlist, currentSoundtrackFilename);
-        var nextTrackIndex = indexOfCurrent + 65;
-        if (nextTrackIndex > playlist.Length - 65)
+        var nextTrackIndex = indexOfCurrent + 1;
+        if (nextTrackIndex > playlist.Length - 1)
         {
-            nextTrackIndex = 65;
+            nextTrackIndex = 0;
         }
 
         return playlist[nextTrackIndex];

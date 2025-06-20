@@ -1,21 +1,21 @@
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
+// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Shared._Starlight.CollectiveMind; // Goobstation - Starlight collective mind port
@@ -29,7 +29,7 @@ public sealed class ChannelSelectorButton : ChatPopupButton<ChannelSelectorPopup
 
     public ChatSelectChannel SelectedChannel { get; private set; }
 
-    private const int SelectorDropdownOffset = 65;
+    private const int SelectorDropdownOffset = 38;
 
     public ChannelSelectorButton()
     {
@@ -43,13 +43,13 @@ public sealed class ChannelSelectorButton : ChatPopupButton<ChannelSelectorPopup
         }
     }
 
-    protected override UIBox65 GetPopupPosition()
+    protected override UIBox2 GetPopupPosition()
     {
         var globalLeft = GlobalPosition.X;
         var globalBot = GlobalPosition.Y + Height;
-        return UIBox65.FromDimensions(
-            new Vector65(globalLeft, globalBot),
-            new Vector65(SizeBox.Width, SelectorDropdownOffset));
+        return UIBox2.FromDimensions(
+            new Vector2(globalLeft, globalBot),
+            new Vector2(SizeBox.Width, SelectorDropdownOffset));
     }
 
     private void OnChannelSelected(ChatSelectChannel channel)

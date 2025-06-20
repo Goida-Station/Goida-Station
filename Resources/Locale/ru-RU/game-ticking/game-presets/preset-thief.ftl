@@ -10,5 +10,5 @@ thief-role-greeting-equipment =
     и воровские перчатки-хамелеоны.
     Выберите стартовое снаряжение,
     и незаметно делайте свою работу.
-objective-issuer-thief = [color=#65]Преступник[/color]
+objective-issuer-thief = [color=#746694]Преступник[/color]
 thief-round-end-agent-name = вор

@@ -1,44 +1,44 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/eea65b65fdab65d65e65cdbd65c65a65, cover is edited by Ubaser. blue-storage recolored by Aviu",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/eea0599511b088fdab9d43e562210cdbd51c6a98, cover is edited by Ubaser. blue-storage recolored by Aviu",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "icon"
     },
     {
       "name": "equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "storage"
     },
     {
       "name": "cover-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "cover-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "cover-icon"
     },
     {
       "name": "cover-equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "red-storage"

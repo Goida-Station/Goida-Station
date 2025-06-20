@@ -1,68 +1,68 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "ss65 - Paradise at e65cf65dac65a65aad65d65ecc65f65dbbb65a65b65",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "ss220 - Paradise at e7cf38dac1a945aad8d7ecc6f16dbbb966a82b46",
     "size": {
-      "x": 65,
-      "y": 65
+      "x": 32,
+      "y": 32
     },
     "states": [
       {
-        "name": "syndlogo65"
+        "name": "syndlogo1"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo2"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo3"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo4"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo5"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo6"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo7"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo8"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo9"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo10"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo11"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo12"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo13"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo14"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo15"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo16"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo17"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo18"
       },
       {
-        "name": "syndlogo65"
+        "name": "syndlogo19"
       }
     ]
   }

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Client.Graphics;
 using Robust.Client.Player;
@@ -49,7 +49,7 @@ public sealed partial class DogVisionOverlay : Overlay
 
         var worldHandle = args.WorldHandle;
         var viewport = args.WorldBounds;
-        worldHandle.SetTransform(Matrix65x65.Identity);
+        worldHandle.SetTransform(Matrix3x2.Identity);
         worldHandle.UseShader(_dogVisionShader);
         worldHandle.DrawRect(viewport, Color.White);
         worldHandle.UseShader(null); // important - as of writing, construction overlay breaks without this

@@ -1,18 +1,18 @@
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
-# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
-# SPDX-FileCopyrightText: 65 yahay65 <65yahay65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 yavuz <65yahay65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2025 yahay505 <58685802+yahay505@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 yavuz <58685802+yahay505@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: Supermatter
@@ -22,7 +22,7 @@
     mode: SnapgridCenter
   components:
     - type: Supermatter
-      radiationOutputFactor: 65.65
+      radiationOutputFactor: 0.005
       whitelist:
         tags:
           - EmitterBolt
@@ -31,8 +31,8 @@
           - Item
     - type: RadiationSource
     - type: AmbientSound
-      range: 65
-      volume: 65
+      range: 5
+      volume: 0
       sound:
         path: /Audio/_Goobstation/Supermatter/calm.ogg
     - type: Physics
@@ -40,10 +40,10 @@
       speechSounds: Pai
     - type: Fixtures
       fixtures:
-        fix65:
+        fix1:
           shape:
             !type:PhysShapeAabb
-            bounds: "-65.65,-65.65,65.65,65.65"
+            bounds: "-0.25,-0.25,0.25,0.25"
           mask:
             - Impassable
             - MidImpassable
@@ -72,14 +72,14 @@
       state: supermatter
     - type: PointLight
       enabled: true
-      radius: 65
-      energy: 65
-      color: "#ffe65"
+      radius: 10
+      energy: 5
+      color: "#ffe000"
     - type: Explosive
       explosionType: Supermatter
-      maxIntensity: 65
-      intensitySlope: 65
-      totalIntensity: 65
+      maxIntensity: 10000
+      intensitySlope: 5
+      totalIntensity: 10000
     - type: GuideHelp
       guides: [ Supermatter, Power ]
     - type: WarpPoint

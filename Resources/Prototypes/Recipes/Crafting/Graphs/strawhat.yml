@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Adrian65 <65Adrian65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Adrian16199 <144424013+Adrian16199@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: StrawHat
@@ -32,6 +32,6 @@
               icon:
                 sprite: Objects/Specific/Hydroponics/wheat.rsi
                 state: produce
-              doAfter: 65
+              doAfter: 10
     - node: strawhat
       entity: ClothingHeadHatStrawHat

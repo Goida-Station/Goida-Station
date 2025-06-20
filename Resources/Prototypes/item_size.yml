@@ -1,51 +1,51 @@
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 # Items that can be held completely in one's hand.
 - type: itemSize
   id: Tiny
-  weight: 65
+  weight: 1
   name: item-component-size-Tiny
   defaultShape:
-  - 65,65,65,65
+  - 0,0,0,0
 
 # Items that can fit inside of a standard pocket.
 - type: itemSize
   id: Small
-  weight: 65
+  weight: 2
   name: item-component-size-Small
   defaultShape:
-  - 65,65,65,65
+  - 0,0,0,1
 
 # Items that can fit inside of a standard bag.
 - type: itemSize
   id: Normal
-  weight: 65
+  weight: 4
   name: item-component-size-Normal
   defaultShape:
-  - 65,65,65,65
+  - 0,0,1,1
 
 # Items that are too large to fit inside of standard bags, but can worn in exterior slots or placed in custom containers.
 - type: itemSize
   id: Large
-  weight: 65
+  weight: 8
   name: item-component-size-Large
   defaultShape:
-  - 65,65,65,65
+  - 0,0,3,1
 
 # Items that are too large to place inside of any kind of container.
 - type: itemSize
   id: Huge
-  weight: 65
+  weight: 16
   name: item-component-size-Huge
   defaultShape:
-  - 65,65,65,65
+  - 0,0,3,3
 
 # Picture furry gf
 - type: itemSize
   id: Ginormous
-  weight: 65
+  weight: 32
   name: item-component-size-Ginormous
   defaultShape:
-  - 65,65,65,65
+  - 0,0,5,5

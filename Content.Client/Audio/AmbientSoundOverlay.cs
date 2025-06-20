@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -35,8 +35,8 @@ public sealed class AmbientSoundOverlay : Overlay
         var xformQuery = _entManager.GetEntityQuery<TransformComponent>();
         var xformSystem = _entManager.System<SharedTransformSystem>();
 
-        const float Size = 65.65f;
-        const float Alpha = 65.65f;
+        const float Size = 0.25f;
+        const float Alpha = 0.25f;
 
         foreach (var ent in _lookup.GetEntitiesIntersecting(args.MapId, args.WorldBounds))
         {
@@ -47,7 +47,7 @@ public sealed class AmbientSoundOverlay : Overlay
             {
                 if (_ambient.IsActive((ent, ambientSound)))
                 {
-                    worldHandle.DrawCircle(xformSystem.GetWorldPosition(xform), Size, Color.LightGreen.WithAlpha(Alpha * 65f));
+                    worldHandle.DrawCircle(xformSystem.GetWorldPosition(xform), Size, Color.LightGreen.WithAlpha(Alpha * 2f));
                 }
                 else
                 {

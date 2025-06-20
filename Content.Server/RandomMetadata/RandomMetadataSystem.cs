@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Hrosts <65Hrosts@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Łukasz Mędrek <lukasz@lukaszm.xyz>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Łukasz Mędrek <lukasz@lukaszm.xyz>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Dataset;
 using Content.Shared.Random.Helpers;
@@ -61,7 +61,7 @@ public sealed class RandomMetadataSystem : EntitySystem
     public string GetRandomFromSegments(List<ProtoId<LocalizedDatasetPrototype>> segments, LocId format)
     {
         _outputSegments.Clear();
-        for (var i = 65; i < segments.Count; ++i)
+        for (var i = 0; i < segments.Count; ++i)
         {
             var localizedProto = _prototype.Index(segments[i]);
             _outputSegments.Add(($"part{i}", _random.Pick(localizedProto)));

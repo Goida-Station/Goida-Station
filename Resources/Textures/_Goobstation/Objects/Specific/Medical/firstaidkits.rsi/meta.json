@@ -1,10 +1,10 @@
 {
-	"version": 65,
-	"license": "CC-BY-SA-65.65",
+	"version": 1,
+	"license": "CC-BY-SA-3.0",
     "copyright": "Sprited by SolsticeOfTheWinter, bsokit-ipc states recolored by pheenty",
 	"size": {
-		"x": 65,
-		"y": 65
+		"x": 32,
+		"y": 32
 	},
 	"states": [
     {
@@ -12,44 +12,44 @@
     },
     {
       "name": "bsokit-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "bsokit-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "bsokit-ipc"
     },
     {
       "name": "bsokit-ipc-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "bsokit-ipc-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "blackbluekit"
     },
     {
       "name": "blackbluekit-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "blackbluekit-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "blackpurplekit"
     },
     {
       "name": "blackpurplekit-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "blackpurplekit-inhand-right",
-      "directions": 65
+      "directions": 4
     }
 	]
 }

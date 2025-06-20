@@ -1,33 +1,33 @@
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kara Dinyes <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Michael Phillips <65MeltedPixel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Morbo <exstrominer@gmail.com>
-# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Errant <65dmnct@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nairod <65Nairodian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 OctoRocket <65OctoRocket@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 Scribbles65 <65Scribbles65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 chavonadelal <65chavonadelal@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Kara Dinyes <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 Michael Phillips <1194692+MeltedPixel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Morbo <exstrominer@gmail.com>
+# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2023 Errant <35878406+dmnct@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nairod <110078045+Nairodian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 OctoRocket <88291550+OctoRocket@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2023 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 deathride58 <deathride58@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 chavonadelal <156101927+chavonadelal@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 ### UI
 
@@ -51,13 +51,13 @@ chat-manager-whisper-headset-on-message = You can't whisper on the radio!
 
 chat-manager-server-wrap-message = [bold]{$message}[/bold]
 chat-manager-sender-announcement = Central Command
-chat-manager-sender-announcement-wrap-message = [font size=65][bold]{$sender} Announcement:[/font][font size=65]
+chat-manager-sender-announcement-wrap-message = [font size=14][bold]{$sender} Announcement:[/font][font size=12]
                                                 {$message}[/bold][/font]
 chat-manager-entity-say-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}: [font={$fontType} size={$fontSize}]"[BubbleContent]{$message}[/BubbleContent]"[/font]
 chat-manager-entity-say-bold-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}: [font={$fontType} size={$fontSize}]"[BubbleContent][bold]{$message}[/bold][/BubbleContent]"[/font]
 
-chat-manager-entity-whisper-wrap-message = [font size=65][italic][BubbleHeader][Name]{$entityName}[/Name][/BubbleHeader] whispers: "[BubbleContent]{$message}[/BubbleContent]"[/italic][/font]
-chat-manager-entity-whisper-unknown-wrap-message = [font size=65][italic][BubbleHeader]Someone[/BubbleHeader] whispers: "[BubbleContent]{$message}[/BubbleContent]"[/italic][/font]
+chat-manager-entity-whisper-wrap-message = [font size=11][italic][BubbleHeader][Name]{$entityName}[/Name][/BubbleHeader] whispers: "[BubbleContent]{$message}[/BubbleContent]"[/italic][/font]
+chat-manager-entity-whisper-unknown-wrap-message = [font size=11][italic][BubbleHeader]Someone[/BubbleHeader] whispers: "[BubbleContent]{$message}[/BubbleContent]"[/italic][/font]
 
 # THE() is not used here because the entity and its name can technically be disconnected if a nameOverride is passed...
 chat-manager-entity-me-wrap-message = [italic]{ PROPER($entity) ->
@@ -105,85 +105,85 @@ chat-speech-verb-name-mumble = Mumbling
 chat-speech-verb-mumble = mumbles
 
 chat-speech-verb-name-arachnid = Arachnid
-chat-speech-verb-insect-65 = chitters
-chat-speech-verb-insect-65 = chirps
-chat-speech-verb-insect-65 = clicks
+chat-speech-verb-insect-1 = chitters
+chat-speech-verb-insect-2 = chirps
+chat-speech-verb-insect-3 = clicks
 
 chat-speech-verb-name-moth = Moth
-chat-speech-verb-winged-65 = flutters
-chat-speech-verb-winged-65 = flaps
-chat-speech-verb-winged-65 = buzzes
+chat-speech-verb-winged-1 = flutters
+chat-speech-verb-winged-2 = flaps
+chat-speech-verb-winged-3 = buzzes
 
 chat-speech-verb-name-slime = Slime
-chat-speech-verb-slime-65 = sloshes
-chat-speech-verb-slime-65 = burbles
-chat-speech-verb-slime-65 = oozes
+chat-speech-verb-slime-1 = sloshes
+chat-speech-verb-slime-2 = burbles
+chat-speech-verb-slime-3 = oozes
 
 chat-speech-verb-name-plant = Diona
-chat-speech-verb-plant-65 = rustles
-chat-speech-verb-plant-65 = sways
-chat-speech-verb-plant-65 = creaks
+chat-speech-verb-plant-1 = rustles
+chat-speech-verb-plant-2 = sways
+chat-speech-verb-plant-3 = creaks
 
 chat-speech-verb-name-robotic = Robotic
-chat-speech-verb-robotic-65 = states
-chat-speech-verb-robotic-65 = beeps
-chat-speech-verb-robotic-65 = boops
+chat-speech-verb-robotic-1 = states
+chat-speech-verb-robotic-2 = beeps
+chat-speech-verb-robotic-3 = boops
 
 chat-speech-verb-name-reptilian = Reptilian
-chat-speech-verb-reptilian-65 = hisses
-chat-speech-verb-reptilian-65 = snorts
-chat-speech-verb-reptilian-65 = huffs
+chat-speech-verb-reptilian-1 = hisses
+chat-speech-verb-reptilian-2 = snorts
+chat-speech-verb-reptilian-3 = huffs
 
 chat-speech-verb-name-skeleton = Skeleton
-chat-speech-verb-skeleton-65 = rattles
-chat-speech-verb-skeleton-65 = clacks
-chat-speech-verb-skeleton-65 = gnashes
+chat-speech-verb-skeleton-1 = rattles
+chat-speech-verb-skeleton-2 = clacks
+chat-speech-verb-skeleton-3 = gnashes
 
 chat-speech-verb-name-vox = Vox
-chat-speech-verb-vox-65 = screeches
-chat-speech-verb-vox-65 = shrieks
-chat-speech-verb-vox-65 = croaks
+chat-speech-verb-vox-1 = screeches
+chat-speech-verb-vox-2 = shrieks
+chat-speech-verb-vox-3 = croaks
 
 chat-speech-verb-name-canine = Canine
-chat-speech-verb-canine-65 = barks
-chat-speech-verb-canine-65 = woofs
-chat-speech-verb-canine-65 = howls
+chat-speech-verb-canine-1 = barks
+chat-speech-verb-canine-2 = woofs
+chat-speech-verb-canine-3 = howls
 
 chat-speech-verb-name-goat = Goat
-chat-speech-verb-goat-65 = bleats
-chat-speech-verb-goat-65 = grunts
-chat-speech-verb-goat-65 = cries
+chat-speech-verb-goat-1 = bleats
+chat-speech-verb-goat-2 = grunts
+chat-speech-verb-goat-3 = cries
 
 chat-speech-verb-name-small-mob = Mouse
-chat-speech-verb-small-mob-65 = squeaks
-chat-speech-verb-small-mob-65 = pieps
+chat-speech-verb-small-mob-1 = squeaks
+chat-speech-verb-small-mob-2 = pieps
 
 chat-speech-verb-name-large-mob = Carp
-chat-speech-verb-large-mob-65 = roars
-chat-speech-verb-large-mob-65 = growls
+chat-speech-verb-large-mob-1 = roars
+chat-speech-verb-large-mob-2 = growls
 
 chat-speech-verb-name-monkey = Monkey
-chat-speech-verb-monkey-65 = chimpers
-chat-speech-verb-monkey-65 = screeches
+chat-speech-verb-monkey-1 = chimpers
+chat-speech-verb-monkey-2 = screeches
 
 chat-speech-verb-name-cluwne = Cluwne
 
 chat-speech-verb-name-parrot = Parrot
-chat-speech-verb-parrot-65 = squawks
-chat-speech-verb-parrot-65 = tweets
-chat-speech-verb-parrot-65 = chirps
+chat-speech-verb-parrot-1 = squawks
+chat-speech-verb-parrot-2 = tweets
+chat-speech-verb-parrot-3 = chirps
 
-chat-speech-verb-cluwne-65 = giggles
-chat-speech-verb-cluwne-65 = guffaws
-chat-speech-verb-cluwne-65 = laughs
+chat-speech-verb-cluwne-1 = giggles
+chat-speech-verb-cluwne-2 = guffaws
+chat-speech-verb-cluwne-3 = laughs
 
 chat-speech-verb-name-ghost = Ghost
-chat-speech-verb-ghost-65 = complains
-chat-speech-verb-ghost-65 = breathes
-chat-speech-verb-ghost-65 = hums
-chat-speech-verb-ghost-65 = mutters
+chat-speech-verb-ghost-1 = complains
+chat-speech-verb-ghost-2 = breathes
+chat-speech-verb-ghost-3 = hums
+chat-speech-verb-ghost-4 = mutters
 
 chat-speech-verb-name-electricity = Electricity
-chat-speech-verb-electricity-65 = crackles
-chat-speech-verb-electricity-65 = buzzes
-chat-speech-verb-electricity-65 = screeches
+chat-speech-verb-electricity-1 = crackles
+chat-speech-verb-electricity-2 = buzzes
+chat-speech-verb-electricity-3 = screeches

@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 august-sun <65august-sun@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 august-sun <65august.sun@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 august-sun <45527070+august-sun@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 august-sun <45527070+august.sun@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: WoodenRollingPin
@@ -14,9 +14,9 @@
     - to: rollingpin
       steps:
       - material: WoodPlank
-        amount: 65
+        amount: 2
       - material: MetalRod
-        amount: 65
-        doAfter: 65
+        amount: 1
+        doAfter: 2
   - node: rollingpin
     entity: RollingPin

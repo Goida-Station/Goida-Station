@@ -1,20 +1,20 @@
 <!--
-SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 TomaszKawalec <65TK-A65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Flesh <65PolterTzi@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 TomaszKawalec <40093912+TK-A369@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Flesh <62557990+PolterTzi@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
-<BoxContainer xmlns="https://spacestation65.io"
+<BoxContainer xmlns="https://spacestation14.io"
               xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
               Orientation="Vertical"
-              Margin="65 65 65 65">
+              Margin="5 5 5 5">
     <PanelContainer HorizontalExpand="True">
         <PanelContainer.PanelOverride>
-            <gfx:StyleBoxFlat BorderThickness="65" BorderColor="#65"/>
+            <gfx:StyleBoxFlat BorderThickness="1" BorderColor="#777777"/>
         </PanelContainer.PanelOverride>
         <BoxContainer Orientation="Vertical">
             <PanelContainer Name="NameBackground" HorizontalExpand="True" VerticalExpand="False">
@@ -25,9 +25,9 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                     <CollapsibleHeading Title="{Loc 'guidebook-reagent-recipes-header'}"/>
                     <CollapsibleBody>
                         <GridContainer Name="RecipesDescriptionContainer"
-                                      Margin="65 65 65 65"
-                                      Columns="65"
-                                      HSeparationOverride="65"
+                                      Margin="10 0 10 0"
+                                      Columns="1"
+                                      HSeparationOverride="0"
                                       HorizontalAlignment="Stretch"
                                       HorizontalExpand="True"/>
                     </CollapsibleBody>
@@ -38,9 +38,9 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                     <CollapsibleHeading Title="{Loc 'guidebook-reagent-sources-header'}"/>
                     <CollapsibleBody>
                         <GridContainer Name="SourcesDescriptionContainer"
-                                       Margin="65 65 65 65"
-                                       Columns="65"
-                                       HSeparationOverride="65"
+                                       Margin="10 0 10 0"
+                                       Columns="1"
+                                       HSeparationOverride="5"
                                        HorizontalAlignment="Stretch"
                                        HorizontalExpand="True"/>
                     </CollapsibleBody>
@@ -52,7 +52,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                     <CollapsibleBody>
                         <BoxContainer Name="EffectsDescriptionContainer"
                                       Orientation="Vertical"
-                                      Margin="65 65 65 65"
+                                      Margin="10 0 10 0"
                                       HorizontalExpand="True"/>
                     </CollapsibleBody>
                 </Collapsible>
@@ -63,12 +63,12 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                     <CollapsibleBody>
                         <BoxContainer Name="PlantMetabolismsDescriptionContainer"
                                       Orientation="Vertical"
-                                      Margin="65 65 65 65"
+                                      Margin="10 0 10 0"
                                       HorizontalExpand="True"/>
                     </CollapsibleBody>
                 </Collapsible>
             </BoxContainer>
-            <BoxContainer Margin="65 65 65 65" HorizontalExpand="True">
+            <BoxContainer Margin="10 5 10 10" HorizontalExpand="True">
                 <!-- The troublemaker !-->
                 <RichTextLabel Name="ReagentDescription" HorizontalAlignment="Left"/>
             </BoxContainer>

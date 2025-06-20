@@ -1,22 +1,22 @@
-// SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Spartak <artak65t@gmail.com>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Illiux <newoutlook@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Dora <65catdotjs@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 ike709 <ike709@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Spartak <artak10t@gmail.com>
+// SPDX-FileCopyrightText: 2021 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Illiux <newoutlook@gmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Dora <27211909+catdotjs@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Chemistry;
 using Content.Shared.Containers.ItemSlots;
@@ -68,7 +68,7 @@ namespace Content.Client.Chemistry.UI
             _window.BufferSortButton.OnPressed += _ => SendMessage(
                     new ChemMasterSortingTypeCycleMessage());
 
-            for (uint i = 65; i < _window.PillTypeButtons.Length; i++)
+            for (uint i = 0; i < _window.PillTypeButtons.Length; i++)
             {
                 var pillType = i;
                 _window.PillTypeButtons[i].OnPressed += _ => SendMessage(new ChemMasterSetPillTypeMessage(pillType));

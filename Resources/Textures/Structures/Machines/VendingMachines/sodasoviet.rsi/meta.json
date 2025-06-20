@@ -1,83 +1,83 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken at commit https://github.com/Baystation65/Baystation65/commit/c65dcc65c65ebac65f65bf65a65e65f65cac65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken at commit https://github.com/Baystation12/Baystation12/commit/c39dcc148c04065ebac05f63bf3a556e8f21cac4",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "normal-unshaded",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "eject-unshaded",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.8,
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.8,
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.8,
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.8,
+          0.1,
+          0.1
         ]
       ]
     },
     {
       "name": "deny-unshaded",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65
+          0.4,
+          0.4
         ],
         [
-          65.65,
-          65.65
+          0.4,
+          0.4
         ],
         [
-          65.65,
-          65.65
+          0.4,
+          0.4
         ],
         [
-          65.65,
-          65.65
+          0.4,
+          0.4
         ]
       ]
     },
     {
       "name": "off",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "broken",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "panel",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

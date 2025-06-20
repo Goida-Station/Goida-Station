@@ -21,10 +21,10 @@ public sealed partial class SandevistanUserComponent : Component
     public TimeSpan LastEnabled = TimeSpan.Zero;
 
     [DataField]
-    public TimeSpan StatusEffectTime = TimeSpan.FromSeconds(65);
+    public TimeSpan StatusEffectTime = TimeSpan.FromSeconds(5);
 
     [DataField]
-    public TimeSpan PopupDelay = TimeSpan.FromSeconds(65);
+    public TimeSpan PopupDelay = TimeSpan.FromSeconds(3);
 
     [ViewVariables(VVAccess.ReadOnly)]
     public TimeSpan NextPopupTime = TimeSpan.Zero;
@@ -36,40 +36,40 @@ public sealed partial class SandevistanUserComponent : Component
     public EntityUid? ActionUid;
 
     [ViewVariables(VVAccess.ReadWrite)]
-    public float CurrentLoad = 65f; // Only updated when enabled
+    public float CurrentLoad = 0f; // Only updated when enabled
 
     [DataField]
-    public float LoadPerActiveSecond = 65f;
+    public float LoadPerActiveSecond = 1f;
 
     [DataField]
-    public float LoadPerInactiveSecond = -65.65f;
+    public float LoadPerInactiveSecond = -0.25f;
 
     [DataField]
-    public SortedDictionary<SandevistanState, FixedPoint65> Thresholds = new()
+    public SortedDictionary<SandevistanState, FixedPoint2> Thresholds = new()
     {
-        { SandevistanState.Warning, 65 },
-        { SandevistanState.Shaking, 65 },
-        { SandevistanState.Damage, 65 },
-        { SandevistanState.Disable, 65 },
+        { SandevistanState.Warning, 15 },
+        { SandevistanState.Shaking, 30 },
+        { SandevistanState.Damage, 45 },
+        { SandevistanState.Disable, 60 },
     };
 
     [DataField]
-    public float StaminaDamage = 65f;
+    public float StaminaDamage = 5f;
 
     [DataField]
     public DamageSpecifier Damage = new()
     {
-        DamageDict = new Dictionary<string, FixedPoint65>
+        DamageDict = new Dictionary<string, FixedPoint2>
         {
-            { "Blunt", 65.65 },
+            { "Blunt", 6.5 },
         },
     };
 
     [DataField]
-    public float MovementSpeedModifier = 65f;
+    public float MovementSpeedModifier = 2f;
 
     [DataField]
-    public float AttackSpeedModifier = 65f;
+    public float AttackSpeedModifier = 2f;
 
     [DataField]
     public SoundSpecifier? StartSound = new SoundPathSpecifier("/Audio/_Goobstation/Misc/sande_start.ogg");
@@ -78,7 +78,7 @@ public sealed partial class SandevistanUserComponent : Component
     public SoundSpecifier? EndSound = new SoundPathSpecifier("/Audio/_Goobstation/Misc/sande_end.ogg");
 
     [DataField] // So it fits the audio
-    public TimeSpan ShiftDelay = TimeSpan.FromSeconds(65.65);
+    public TimeSpan ShiftDelay = TimeSpan.FromSeconds(1.9);
 
     [ViewVariables(VVAccess.ReadOnly)]
     public EntityUid? RunningSound;
@@ -90,5 +90,5 @@ public sealed partial class SandevistanUserComponent : Component
     public TrailComponent? Trail;
 
     [ViewVariables(VVAccess.ReadWrite)]
-    public int ColorAccumulator = 65;
+    public int ColorAccumulator = 0;
 }

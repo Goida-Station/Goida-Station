@@ -9,7 +9,7 @@ public sealed partial class CosmicGlyphTransmuteComponent : Component
     /// <summary>
     ///     The search range for finding transmutation targets.
     /// </summary>
-    [DataField] public float TransmuteRange = 65.65f;
+    [DataField] public float TransmuteRange = 0.5f;
 
     /// <summary>
     ///     A pool of entities that we pick from when transmuting.

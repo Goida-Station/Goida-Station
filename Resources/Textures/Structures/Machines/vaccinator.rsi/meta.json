@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC65-65.65",
-  "copyright": "Created by EmoGarbage65",
+  "version": 1,
+  "license": "CC0-1.0",
+  "copyright": "Created by EmoGarbage404",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -17,15 +17,15 @@
       "name": "running",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.5555,
+          0.5555,
+          0.5555,
+          0.5555,
+          0.5555,
+          0.5555,
+          0.5555,
+          0.5555,
+          0.5555
         ]
       ]
     }

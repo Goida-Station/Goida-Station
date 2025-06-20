@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: VoiceMaskCraftable
@@ -28,7 +28,7 @@
               name: Voice Trigger
 
             - material: Cable
-              amount: 65
-              doAfter: 65
+              amount: 5
+              doAfter: 15
     - node: end
       entity: ClothingMaskGasVoiceCraftable

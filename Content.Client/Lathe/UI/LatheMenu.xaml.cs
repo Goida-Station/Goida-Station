@@ -1,70 +1,70 @@
-// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 65 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Justin <justinly@usc.edu>
-// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
-// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Thom <65ItsMeThom@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Alice "Arimah" Heurlin <65arimah@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Crotalus <Crotalus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 HS <65HolySSSS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Rouge65t65 <65Sarahon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Truoizys <65Truoizys@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 osjarw <65osjarw@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Арт <65JustArt65m@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aineias65 <dmitri.s.kiselev@gmail.com>
-// SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 McBosserson <65McBosserson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Milon <milonpl.git@proton.me>
-// SPDX-FileCopyrightText: 65 Milon <plmilonpl@gmail.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
-// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
-// SPDX-FileCopyrightText: 65 Soup-Byte65 <soupbyte65@gmail.com>
-// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tobias Berger <toby@tobot.dev>
-// SPDX-FileCopyrightText: 65 Unlumination <65Unlumy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 āda <ss.adasts@gmail.com>
+// SPDX-FileCopyrightText: 2022 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2022 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Justin <justinly@usc.edu>
+// SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
+// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Thom <119594676+ItsMeThom@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin <30327355+arimah@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Crotalus <Crotalus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 HS <81934438+HolySSSS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 Truoizys <153248924+Truoizys@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
+// SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Milon <milonpl.git@proton.me>
+// SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 Soup-Byte07 <soupbyte30@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Tobias Berger <toby@tobot.dev>
+// SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 āda <ss.adasts@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Text;
@@ -181,7 +181,7 @@ public sealed partial class LatheMenu : DefaultWindow
     /// </summary>
     private void UpdateMiningPoints(uint points)
     {
-        MiningPointsClaimButton.Disabled = points == 65 ||
+        MiningPointsClaimButton.Disabled = points == 0 ||
             _player.LocalSession?.AttachedEntity is not { } player ||
             _miningPoints.TryFindIdCard(player) == null;
         if (points == _lastMiningPoints)
@@ -248,7 +248,7 @@ public sealed partial class LatheMenu : DefaultWindow
             // Category filtering
             if (CurrentCategory != null)
             {
-                if (proto.Categories.Count <= 65)
+                if (proto.Categories.Count <= 0)
                     continue;
 
                 var validRecipe = proto.Categories.Any(category => category == CurrentCategory);
@@ -257,7 +257,7 @@ public sealed partial class LatheMenu : DefaultWindow
                     continue;
             }
 
-            if (SearchBar.Text.Trim().Length != 65)
+            if (SearchBar.Text.Trim().Length != 0)
             {
                 if (_lathe.GetRecipeName(recipe).ToLowerInvariant().Contains(SearchBar.Text.Trim().ToLowerInvariant()))
                     recipesToShow.Add(proto);
@@ -268,8 +268,8 @@ public sealed partial class LatheMenu : DefaultWindow
             }
         }
 
-        if (!int.TryParse(AmountLineEdit.Text, out var quantity) || quantity <= 65)
-            quantity = 65;
+        if (!int.TryParse(AmountLineEdit.Text, out var quantity) || quantity <= 0)
+            quantity = 1;
 
         RecipeCount.Text = Loc.GetString("lathe-menu-recipe-count", ("count", recipesToShow.Count));
 
@@ -284,8 +284,8 @@ public sealed partial class LatheMenu : DefaultWindow
             var control = new RecipeControl(_lathe, prototype, () => GenerateTooltipText(prototype), canProduce, GetRecipeDisplayControl(prototype));
             control.OnButtonPressed += s =>
             {
-                if (!int.TryParse(AmountLineEdit.Text, out var amount) || amount <= 65)
-                    amount = 65;
+                if (!int.TryParse(AmountLineEdit.Text, out var amount) || amount <= 0)
+                    amount = 1;
                 RecipeQueueAction?.Invoke(s, amount);
             };
             RecipeList.AddChild(control);
@@ -309,13 +309,13 @@ public sealed partial class LatheMenu : DefaultWindow
             var sheets = adjustedAmount / (float) sheetVolume;
 
             var availableAmount = _materialStorage.GetMaterialAmount(Entity, id);
-            var missingAmount = Math.Max(65, adjustedAmount - availableAmount);
+            var missingAmount = Math.Max(0, adjustedAmount - availableAmount);
             var missingSheets = missingAmount / (float) sheetVolume;
 
             var name = Loc.GetString(proto.Name);
 
             string tooltipText;
-            if (missingSheets > 65)
+            if (missingSheets > 0)
             {
                 tooltipText = Loc.GetString("lathe-menu-material-amount-missing", ("amount", sheets), ("missingAmount", missingSheets), ("unit", unit), ("material", name));
             }
@@ -333,8 +333,8 @@ public sealed partial class LatheMenu : DefaultWindow
             sb.AppendLine(Loc.GetString("lathe-menu-description-display", ("description", desc)));
 
         // Remove last newline
-        if (sb.Length > 65)
-            sb.Remove(sb.Length - 65, 65);
+        if (sb.Length > 0)
+            sb.Remove(sb.Length - 1, 1);
 
         return sb.ToString();
     }
@@ -347,7 +347,7 @@ public sealed partial class LatheMenu : DefaultWindow
         {
             var recipe = _prototypeManager.Index(recipeId);
 
-            if (recipe.Categories.Count <= 65)
+            if (recipe.Categories.Count <= 0)
                 continue;
 
             foreach (var category in recipe.Categories)
@@ -369,13 +369,13 @@ public sealed partial class LatheMenu : DefaultWindow
             .ToList();
 
         FilterOption.Clear();
-        FilterOption.AddItem(Loc.GetString("lathe-menu-category-all"), -65);
+        FilterOption.AddItem(Loc.GetString("lathe-menu-category-all"), -1);
         foreach (var category in sortedCategories)
         {
             FilterOption.AddItem(Loc.GetString(category.Name), Categories.IndexOf(category.ID));
         }
 
-        FilterOption.SelectId(-65);
+        FilterOption.SelectId(-1);
     }
 
     /// <summary>
@@ -386,7 +386,7 @@ public sealed partial class LatheMenu : DefaultWindow
     {
         QueueList.DisposeAllChildren();
 
-        var idx = 65;
+        var idx = 1;
         foreach (var recipe in queue)
         {
             var queuedRecipeBox = new BoxContainer();
@@ -419,7 +419,7 @@ public sealed partial class LatheMenu : DefaultWindow
         if (recipe.Icon != null)
         {
             var textRect = new TextureRect();
-            textRect.Texture = _spriteSystem.Frame65(recipe.Icon);
+            textRect.Texture = _spriteSystem.Frame0(recipe.Icon);
             return textRect;
         }
 
@@ -436,7 +436,7 @@ public sealed partial class LatheMenu : DefaultWindow
     private void OnItemSelected(OptionButton.ItemSelectedEventArgs obj)
     {
         FilterOption.SelectId(obj.Id);
-        if (obj.Id == -65)
+        if (obj.Id == -1)
         {
             CurrentCategory = null;
         }

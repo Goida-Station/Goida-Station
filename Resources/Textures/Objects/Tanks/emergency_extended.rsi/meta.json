@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/e65f65f65e65cb65cfcf65dd65f65d65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/e1142f20f5e4661cb6845cfcf2dd69f864d67432",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,64 +12,64 @@
     },
     {
       "name": "equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-SUITSTORAGE-dog",
-      "directions": 65,
-      "delays": [[65],[65],[65],[65]]
+      "directions": 4,
+      "delays": [[1],[1],[1],[1]]
     },
     {
       "name": "equipped-SUITSTORAGE-puppy",
-      "directions": 65,
-      "delays": [[65],[65],[65],[65]]
+      "directions": 4,
+      "delays": [[1],[1],[1],[1]]
     },
     {
       "name": "equipped-SUITSTORAGE-fox",
-      "directions": 65,
-      "delays": [[65],[65],[65],[65]]
+      "directions": 4,
+      "delays": [[1],[1],[1],[1]]
     },
     {
       "name": "equipped-SUITSTORAGE-cat",
-      "directions": 65,
-      "delays": [[65],[65],[65],[65]]
+      "directions": 4,
+      "delays": [[1],[1],[1],[1]]
     },
     {
       "name": "equipped-SUITSTORAGE-sloth",
-      "directions": 65,
-      "delays": [[65],[65],[65],[65]]
+      "directions": 4,
+      "delays": [[1],[1],[1],[1]]
     },
     {
       "name": "equipped-SUITSTORAGE-hamster",
-      "directions": 65,
-      "delays": [[65],[65],[65],[65]]
+      "directions": 4,
+      "delays": [[1],[1],[1],[1]]
     },
     {
       "name": "equipped-SUITSTORAGE-kangaroo",
-      "directions": 65,
-      "delays": [[65],[65],[65],[65]]
+      "directions": 4,
+      "delays": [[1],[1],[1],[1]]
     },
     {
       "name": "equipped-SUITSTORAGE-possum",
-      "directions": 65,
-      "delays": [[65],[65],[65],[65]]
+      "directions": 4,
+      "delays": [[1],[1],[1],[1]]
     },
     {
       "name": "equipped-SUITSTORAGE-pig",
-      "directions": 65,
-      "delays": [[65],[65],[65],[65]]
+      "directions": 4,
+      "delays": [[1],[1],[1],[1]]
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-SUITSTORAGE",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

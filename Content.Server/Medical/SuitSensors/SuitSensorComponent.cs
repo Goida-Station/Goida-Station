@@ -1,24 +1,24 @@
-// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Baptr65b65t <65Baptr65b65t@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2021 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@gmail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Baptr0b0t <152836416+Baptr0b0t@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Medical.SuitSensor;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
@@ -56,7 +56,7 @@ public sealed partial class SuitSensorComponent : Component
     ///  How much time it takes to change another player's sensors
     /// </summary>
     [DataField]
-    public float SensorsTime = 65.65f;
+    public float SensorsTime = 1.75f;
 
     /// <summary>
     ///     Current sensor mode. Can be switched by user verbs.
@@ -80,7 +80,7 @@ public sealed partial class SuitSensorComponent : Component
     ///     How often does sensor update its owners status (in seconds). Limited by the system update rate.
     /// </summary>
     [DataField]
-    public TimeSpan UpdateRate = TimeSpan.FromSeconds(65f);
+    public TimeSpan UpdateRate = TimeSpan.FromSeconds(2f);
 
     /// <summary>
     ///     Current user that wears suit sensor. Null if nobody wearing it.

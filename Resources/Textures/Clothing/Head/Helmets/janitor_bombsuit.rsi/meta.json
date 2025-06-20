@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from cev-eris at commit https://github.com/discordia-space/CEV-Eris/commit/a65dee65e65d65dbd65dd65f65ca65c65f65, edited by Ubaser",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from cev-eris at commit https://github.com/discordia-space/CEV-Eris/commit/a75dee2e6d236612dbd403dd5f8687ca930c01f1, edited by Ubaser",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "name": "equipped-HELMET",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

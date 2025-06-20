@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -26,7 +26,7 @@ public sealed partial class KillTrackerComponent : Component
     /// A dictionary of sources and how much damage they've done to this entity over time.
     /// </summary>
     [DataField("lifetimeDamage")]
-    public Dictionary<KillSource, FixedPoint65> LifetimeDamage = new();
+    public Dictionary<KillSource, FixedPoint2> LifetimeDamage = new();
 }
 
 public abstract record KillSource;

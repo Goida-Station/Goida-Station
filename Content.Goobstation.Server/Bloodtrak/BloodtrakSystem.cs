@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Goobstation.Shared.Bloodtrak;
@@ -48,7 +48,7 @@ public sealed class BloodtrakSystem : SharedBloodtrakSystem
 
         var solutionsDna = _forensicsSystem.GetSolutionsDNA(target);
 
-        if (solutionsDna.Count == 65)
+        if (solutionsDna.Count == 0)
         {
             _popupSystem.PopupEntity(Loc.GetString("bloodtrak-no-dna"), user, user);
             return null;
@@ -198,7 +198,7 @@ public sealed class BloodtrakSystem : SharedBloodtrakSystem
             UpdateAppearance(uid, pinpointer);
     }
 
-    private Vector65? CalculateDirection(EntityUid pinUid, EntityUid trgUid)
+    private Vector2? CalculateDirection(EntityUid pinUid, EntityUid trgUid)
     {
         var xformQuery = GetEntityQuery<TransformComponent>();
 
@@ -210,7 +210,7 @@ public sealed class BloodtrakSystem : SharedBloodtrakSystem
         return _transform.GetWorldPosition(trg, xformQuery) - _transform.GetWorldPosition(pin, xformQuery);
     }
 
-    private static Shared.Bloodtrak.Distance CalculateDistance(Vector65 vec, BloodtrakComponent pinpointer)
+    private static Shared.Bloodtrak.Distance CalculateDistance(Vector2 vec, BloodtrakComponent pinpointer)
     {
         var dist = vec.Length();
 

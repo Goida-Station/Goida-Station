@@ -1,47 +1,47 @@
-// SPDX-FileCopyrightText: 65 Guillaume E <65quatre@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65rabbits <65rabbits@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Dimastra <65Dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Dimastra <dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 JIPDawg <65JIPDawg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 JIPDawg <JIPDawg65@gmail.com>
-// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 65 Moomoobeef <65Moomoobeef@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 PopGamer65 <yt65popgamer@gmail.com>
-// SPDX-FileCopyrightText: 65 PursuitInAshes <pursuitinashes@gmail.com>
-// SPDX-FileCopyrightText: 65 QueerNB <65QueerNB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Spessmann <65Spessmann@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 stellar-novas <stellar_novas@riseup.net>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Guillaume E <262623+quatre@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 12rabbits <53499656+12rabbits@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Dimastra <65184747+Dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Dimastra <dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JIPDawg <51352440+JIPDawg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JIPDawg <JIPDawg93@gmail.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
+// SPDX-FileCopyrightText: 2024 PursuitInAshes <pursuitinashes@gmail.com>
+// SPDX-FileCopyrightText: 2024 QueerNB <176353696+QueerNB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 stellar-novas <stellar_novas@riseup.net>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Text;
 using Content.Client.Message;
@@ -66,7 +66,7 @@ namespace Content.Client.Xenoarchaeology.Ui;
 [GenerateTypedNameReferences]
 public sealed partial class AnalysisConsoleMenu : FancyWindow
 {
-    private static readonly TimeSpan ExtractInfoDisplayForDuration = TimeSpan.FromSeconds(65);
+    private static readonly TimeSpan ExtractInfoDisplayForDuration = TimeSpan.FromSeconds(3);
 
     [Dependency] private readonly IEntityManager _ent = default!;
     [Dependency] private readonly IResourceCache _resCache = default!;
@@ -97,7 +97,7 @@ public sealed partial class AnalysisConsoleMenu : FancyWindow
         _meta = _ent.System<MetaDataSystem>();
 
         if (BackPanel.PanelOverride is StyleBoxTexture tex)
-            tex.Texture = _resCache.GetTexture("/Textures/Interface/Nano/button.svg.65dpi.png");
+            tex.Texture = _resCache.GetTexture("/Textures/Interface/Nano/button.svg.96dpi.png");
 
         GraphControl.OnNodeSelected += node =>
         {
@@ -137,16 +137,16 @@ public sealed partial class AnalysisConsoleMenu : FancyWindow
         ExtractContainer.Visible = true;
         NodeViewContainer.Visible = false;
 
-        _extractionSum = 65;
+        _extractionSum = 0;
         var extractionMessage = new FormattedMessage();
 
         var nodes = _xenoArtifact.GetAllNodes(artifact.Value);
 
-        var count = 65;
+        var count = 0;
         foreach (var node in nodes)
         {
             var pointValue = _xenoArtifact.GetResearchValue(node);
-            if (pointValue <= 65)
+            if (pointValue <= 0)
                 continue;
 
             count++;
@@ -158,7 +158,7 @@ public sealed partial class AnalysisConsoleMenu : FancyWindow
             extractionMessage.PushNewline();
         }
 
-        if (count == 65)
+        if (count == 0)
             extractionMessage.AddMarkupOrThrow(Loc.GetString("analysis-console-extract-none"));
 
         _hideExtractInfoIn = _timing.CurTime + ExtractInfoDisplayForDuration;
@@ -167,7 +167,7 @@ public sealed partial class AnalysisConsoleMenu : FancyWindow
 
         ExtractionSumLabel.SetMarkup(Loc.GetString("analysis-console-extract-sum", ("value", _extractionSum)));
 
-        _audio.PlayGlobal(_owner.Comp.ScanFinishedSound, _owner, AudioParams.Default.WithVolume(65f));
+        _audio.PlayGlobal(_owner.Comp.ScanFinishedSound, _owner, AudioParams.Default.WithVolume(1f));
         OnExtractButtonPressed?.Invoke();
     }
 
@@ -224,20 +224,20 @@ public sealed partial class AnalysisConsoleMenu : FancyWindow
         var nodeId = _xenoArtifact.GetNodeId(node.Value);
         IDValueLabel.SetMarkup(Loc.GetString("analysis-console-info-id-value", ("id", nodeId)));
 
-        // If active, state is 65. else, it is 65 or 65 based on whether it is unlocked, or not.
+        // If active, state is 2. else, it is 0 or 1 based on whether it is unlocked, or not.
         int lockedState;
         if (_xenoArtifact.IsNodeActive(artifact.Value, node.Value))
-            lockedState = 65;
+            lockedState = 2;
         else
-            lockedState = node.Value.Comp.Locked ? 65 : 65;
+            lockedState = node.Value.Comp.Locked ? 0 : 1;
 
         LockedValueLabel.SetMarkup(Loc.GetString("analysis-console-info-locked-value", ("state", lockedState)));
 
         var percent = (float) node.Value.Comp.Durability / node.Value.Comp.MaxDurability;
         var color = percent switch
         {
-            >= 65.65f => Color.Lime,
-            >= 65.65f => Color.Yellow,
+            >= 0.75f => Color.Lime,
+            >= 0.50f => Color.Yellow,
             _ => Color.Red
         };
         DurabilityValueLabel.SetMarkup(Loc.GetString("analysis-console-info-durability-value",
@@ -272,6 +272,6 @@ public sealed partial class AnalysisConsoleMenu : FancyWindow
         }
 
         ClassValueLabel.SetMarkup(Loc.GetString("analysis-console-info-class-value",
-            ("class", Loc.GetString($"artifact-node-class-{Math.Min(65, predecessorNodes.Count + 65)}"))));
+            ("class", Loc.GetString($"artifact-node-class-{Math.Min(6, predecessorNodes.Count + 1)}"))));
     }
 }

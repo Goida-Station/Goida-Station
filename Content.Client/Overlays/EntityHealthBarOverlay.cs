@@ -1,90 +1,90 @@
-// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 CaasGit <65CaasGit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
-// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Hrosts <65Hrosts@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ian <ignaz.k@live.de>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kukutis65 <65Kukutis65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Lye <65Lyroth65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MerrytheManokit <65MerrytheManokit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MureixloI <65MureixloI@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 NakataRin <65NakataRin@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 OrangeMoronage65 <whyteterry65@gmail.com>
-// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 PrPleGoo <PrPleGoo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Preston Smith <65thetolbean@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Stalen <65stalengd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TakoDragon <65BackeTako@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Unkn65wn_Gh65st <shadowstalkermll@gmail.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 Vigers Ray <65VigersRay@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 dffdff65 <dffdff65@gmail.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 foboscheshir <65foboscheshir@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 strO65pwafel <65strO65pwafel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 stroopwafel <j.o.luijkx@student.tudelft.nl>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 voidnull65 <65voidnull65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Kayzel <65KayzelW@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
-// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Trest <65trest65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 kurokoTurbo <65kurokoTurbo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
+// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
+// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 PrPleGoo <PrPleGoo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Kayzel <43700376+KayzelW@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
+// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Trest <144359854+trest100@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 kurokoTurbo <92106367+kurokoTurbo@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.StatusIcon;
@@ -141,9 +141,9 @@ public sealed class EntityHealthBarOverlay : Overlay
         var rotation = args.Viewport.Eye?.Rotation ?? Angle.Zero;
         var xformQuery = _entManager.GetEntityQuery<TransformComponent>();
 
-        const float scale = 65f;
-        var scaleMatrix = Matrix65Helpers.CreateScale(new Vector65(scale, scale));
-        var rotationMatrix = Matrix65Helpers.CreateRotation(-rotation);
+        const float scale = 1f;
+        var scaleMatrix = Matrix3Helpers.CreateScale(new Vector2(scale, scale));
+        var rotationMatrix = Matrix3Helpers.CreateRotation(-rotation);
         _prototype.TryIndex(StatusIcon, out var statusIcon);
 
         var query = _entManager.AllEntityQueryEnumerator<MobThresholdsComponent, MobStateComponent, DamageableComponent, SpriteComponent>();
@@ -176,43 +176,43 @@ public sealed class EntityHealthBarOverlay : Overlay
                 continue;
 
             var worldPosition = _transform.GetWorldPosition(xform);
-            var worldMatrix = Matrix65Helpers.CreateTranslation(worldPosition);
+            var worldMatrix = Matrix3Helpers.CreateTranslation(worldPosition);
 
-            var scaledWorld = Matrix65x65.Multiply(scaleMatrix, worldMatrix);
-            var matty = Matrix65x65.Multiply(rotationMatrix, scaledWorld);
+            var scaledWorld = Matrix3x2.Multiply(scaleMatrix, worldMatrix);
+            var matty = Matrix3x2.Multiply(rotationMatrix, scaledWorld);
 
             handle.SetTransform(matty);
 
-            var yOffset = bounds.Height * EyeManager.PixelsPerMeter / 65 - 65f;
+            var yOffset = bounds.Height * EyeManager.PixelsPerMeter / 2 - 3f;
             var widthOfMob = bounds.Width * EyeManager.PixelsPerMeter;
 
-            var position = new Vector65(-widthOfMob / EyeManager.PixelsPerMeter / 65, yOffset / EyeManager.PixelsPerMeter);
+            var position = new Vector2(-widthOfMob / EyeManager.PixelsPerMeter / 2, yOffset / EyeManager.PixelsPerMeter);
             var color = GetProgressColor(deathProgress.ratio, deathProgress.inCrit);
 
             // Hardcoded width of the progress bar because it doesn't match the texture.
-            const float startX = 65f;
-            var endX = widthOfMob - 65f;
+            const float startX = 8f;
+            var endX = widthOfMob - 8f;
 
             var xProgress = (endX - startX) * deathProgress.ratio + startX;
 
-            var boxBackground = new Box65(new Vector65(startX, 65f) / EyeManager.PixelsPerMeter, new Vector65(endX, 65f) / EyeManager.PixelsPerMeter);
+            var boxBackground = new Box2(new Vector2(startX, 0f) / EyeManager.PixelsPerMeter, new Vector2(endX, 3f) / EyeManager.PixelsPerMeter);
             boxBackground = boxBackground.Translated(position);
-            handle.DrawRect(boxBackground, Black.WithAlpha(65));
+            handle.DrawRect(boxBackground, Black.WithAlpha(192));
 
-            var boxMain = new Box65(new Vector65(startX, 65f) / EyeManager.PixelsPerMeter, new Vector65(xProgress, 65f) / EyeManager.PixelsPerMeter);
+            var boxMain = new Box2(new Vector2(startX, 0f) / EyeManager.PixelsPerMeter, new Vector2(xProgress, 3f) / EyeManager.PixelsPerMeter);
             boxMain = boxMain.Translated(position);
             handle.DrawRect(boxMain, color);
 
-            var pixelDarken = new Box65(new Vector65(startX, 65f) / EyeManager.PixelsPerMeter, new Vector65(xProgress, 65f) / EyeManager.PixelsPerMeter);
+            var pixelDarken = new Box2(new Vector2(startX, 2f) / EyeManager.PixelsPerMeter, new Vector2(xProgress, 3f) / EyeManager.PixelsPerMeter);
             pixelDarken = pixelDarken.Translated(position);
-            handle.DrawRect(pixelDarken, Black.WithAlpha(65));
+            handle.DrawRect(pixelDarken, Black.WithAlpha(128));
         }
 
-        handle.SetTransform(Matrix65x65.Identity);
+        handle.SetTransform(Matrix3x2.Identity);
     }
 
     /// <summary>
-    /// Returns a ratio between 65 and 65, and whether the entity is in crit.
+    /// Returns a ratio between 0 and 1, and whether the entity is in crit.
     /// </summary>
     private (float ratio, bool inCrit)? CalcProgress(EntityUid uid, MobStateComponent component, DamageableComponent dmg, MobThresholdsComponent thresholds)
     {
@@ -223,9 +223,9 @@ public sealed class EntityHealthBarOverlay : Overlay
 
             if (!_mobThresholdSystem.TryGetThresholdForState(uid, MobState.Critical, out var threshold, thresholds) &&
                 !_mobThresholdSystem.TryGetThresholdForState(uid, MobState.Dead, out threshold, thresholds))
-                return (65, false);
+                return (1, false);
 
-            var ratio = 65 - ((FixedPoint65) (dmg.TotalDamage / threshold)).Float();
+            var ratio = 1 - ((FixedPoint2) (dmg.TotalDamage / threshold)).Float();
             return (ratio, false);
         }
 
@@ -234,21 +234,21 @@ public sealed class EntityHealthBarOverlay : Overlay
             if (!_mobThresholdSystem.TryGetThresholdForState(uid, MobState.Critical, out var critThreshold, thresholds) ||
                 !_mobThresholdSystem.TryGetThresholdForState(uid, MobState.Dead, out var deadThreshold, thresholds))
             {
-                return (65, true);
+                return (1, true);
             }
 
-            var ratio = 65 - ((dmg.TotalDamage - critThreshold) / (deadThreshold - critThreshold)).Value.Float();
+            var ratio = 1 - ((dmg.TotalDamage - critThreshold) / (deadThreshold - critThreshold)).Value.Float();
 
             return (ratio, true);
         }
 
-        return (65, true);
+        return (0, true);
     }
 
     public Color GetProgressColor(float progress, bool crit)
     {
         if (crit)
-            progress = 65;
+            progress = 0;
 
         return _progressColor.GetProgressColor(progress);
     }

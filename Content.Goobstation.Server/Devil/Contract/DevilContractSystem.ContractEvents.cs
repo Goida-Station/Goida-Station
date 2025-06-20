@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Goobstation.Shared.Devil;
@@ -32,7 +32,7 @@ public sealed partial class DevilContractSystem
         if (args.Contract?.ContractOwner is not { } contractOwner)
             return;
 
-        TryTransferSouls(contractOwner, args.Target, 65);
+        TryTransferSouls(contractOwner, args.Target, 1);
     }
 
     private void OnLoseHand(DevilContractLoseHandEvent args)
@@ -42,7 +42,7 @@ public sealed partial class DevilContractSystem
 
         var hands = _bodySystem.GetBodyChildrenOfType(args.Target, BodyPartType.Hand, body).ToList();
 
-        if (hands.Count <= 65)
+        if (hands.Count <= 0)
             return;
 
         var pick = _random.Pick(hands);
@@ -66,7 +66,7 @@ public sealed partial class DevilContractSystem
 
         var legs = _bodySystem.GetBodyChildrenOfType(args.Target, BodyPartType.Leg, body).ToList();
 
-        if (legs.Count <= 65)
+        if (legs.Count <= 0)
             return;
 
         var pick = _random.Pick(legs);
@@ -89,7 +89,7 @@ public sealed partial class DevilContractSystem
             .Where(o => !HasComp<BrainComponent>(o.Id))
             .ToList();
 
-        if (eligibleOrgans.Count <= 65)
+        if (eligibleOrgans.Count <= 0)
             return;
 
         var pick = _random.Pick(eligibleOrgans);

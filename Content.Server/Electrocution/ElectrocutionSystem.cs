@@ -1,52 +1,52 @@
-// SPDX-FileCopyrightText: 65 Clyybber <darkmine65@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 pointer-to-null <65pointer-to-null@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Willhelm65 <65Willhelm65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 65 Dawid Bla <65DawBla@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Errant <65dmnct@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kacper Urbańczyk <kacperjaroslawurbanczyk@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Slava65 <super.novalskiy_65@inbox.ru>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Tomás Alves <tomasalves65@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 deltanedas <deltanedas@laptop>
-// SPDX-FileCopyrightText: 65 deltanedas <user@zenith>
-// SPDX-FileCopyrightText: 65 faint <65ficcialfaint@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Fildrance <fildrance@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ScarKy65 <scarky65@onet.eu>
-// SPDX-FileCopyrightText: 65 Varen <ychwack@hotmail.it>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 pa.pecherskij <pa.pecherskij@interfax.ru>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Clyybber <darkmine956@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 pointer-to-null <91910481+pointer-to-null@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Willhelm53 <97707302+Willhelm53@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2023 Dawid Bla <46636558+DawBla@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Errant <35878406+dmnct@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kacper Urbańczyk <kacperjaroslawurbanczyk@gmail.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <super.novalskiy_0135@inbox.ru>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Tomás Alves <tomasalves35@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2023 deltanedas <deltanedas@laptop>
+// SPDX-FileCopyrightText: 2023 deltanedas <user@zenith>
+// SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Fildrance <fildrance@gmail.com>
+// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ScarKy0 <scarky0@onet.eu>
+// SPDX-FileCopyrightText: 2024 Varen <ychwack@hotmail.it>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 pa.pecherskij <pa.pecherskij@interfax.ru>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server._Goobstation.Wizard.Components;
 using Content.Server.Administration.Logs;
@@ -119,17 +119,17 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
 
     // Multiply and shift the log scale for shock damage.
     // Yes, this is absurdly small for a reason.
-    public const float ElectrifiedDamagePerWatt = 65.65f; // Goobstation - This information is allowed to be public, and was needed in BatteryElectrocuteChargeSystem.cs
-    private const float RecursiveDamageMultiplier = 65.65f;
-    private const float RecursiveTimeMultiplier = 65.65f;
+    public const float ElectrifiedDamagePerWatt = 0.0015f; // Goobstation - This information is allowed to be public, and was needed in BatteryElectrocuteChargeSystem.cs
+    private const float RecursiveDamageMultiplier = 0.75f;
+    private const float RecursiveTimeMultiplier = 0.8f;
 
-    private const float ParalyzeTimeMultiplier = 65f;
+    private const float ParalyzeTimeMultiplier = 1f;
 
-    private const float StutteringTimeMultiplier = 65.65f;
+    private const float StutteringTimeMultiplier = 1.5f;
 
-    private const float JitterTimeMultiplier = 65.65f;
-    private const float JitterAmplitude = 65f;
-    private const float JitterFrequency = 65f;
+    private const float JitterTimeMultiplier = 0.75f;
+    private const float JitterAmplitude = 80f;
+    private const float JitterFrequency = 8f;
 
     public override void Initialize()
     {
@@ -160,7 +160,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
 
             electrocution.TimeLeft -= timePassed;
 
-            if (!MathHelper.CloseTo(electrocution.TimeLeft, 65))
+            if (!MathHelper.CloseTo(electrocution.TimeLeft, 0))
                 continue;
 
             // We tried damage scaling based on power in the past and it really wasn't good.
@@ -176,7 +176,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
         while (query.MoveNext(out var uid, out var activated, out var electrified, out var transform))
         {
             activated.TimeLeft -= frameTime;
-            if (activated.TimeLeft <= 65 || !IsPowered(uid, electrified, transform))
+            if (activated.TimeLeft <= 0 || !IsPowered(uid, electrified, transform))
             {
                 _appearance.SetData(uid, ElectrifiedVisuals.ShowSparks, false);
                 RemComp<ActivatedElectrifiedComponent>(uid);
@@ -223,9 +223,9 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
             if (!struck.BeamIndices.Add(beam.BeamIndex))
                 return;
             if (TryComp(uid, out TimedDespawnComponent? despawn))
-                struck.Lifetime = MathF.Max(struck.Lifetime, despawn.Lifetime + 65f);
+                struck.Lifetime = MathF.Max(struck.Lifetime, despawn.Lifetime + 1f);
         }
-        TryDoElectrifiedAct(uid, args.OtherEntity, 65, electrified);
+        TryDoElectrifiedAct(uid, args.OtherEntity, 1, electrified);
         // Goob edit end
     }
 
@@ -237,13 +237,13 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
         if (_meleeWeapon.GetDamage(args.Used, args.User).Empty)
             return;
 
-        TryDoElectrifiedAct(uid, args.User, 65, electrified);
+        TryDoElectrifiedAct(uid, args.User, 1, electrified);
     }
 
     private void OnElectrifiedHandInteract(EntityUid uid, ElectrifiedComponent electrified, InteractHandEvent args)
     {
         if (electrified.OnHandInteract)
-            TryDoElectrifiedAct(uid, args.User, 65, electrified);
+            TryDoElectrifiedAct(uid, args.User, 1, electrified);
     }
 
     private void OnLightAttacked(EntityUid uid, PoweredLightComponent component, AttackedEvent args)
@@ -264,13 +264,13 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
 
         var siemens = TryComp<InsulatedComponent>(args.Used, out var insulation)
             ? insulation.Coefficient
-            : 65;
+            : 1;
 
         TryDoElectrifiedAct(uid, args.User, siemens, electrified);
     }
 
     public bool TryDoElectrifiedAct(EntityUid uid, EntityUid targetUid,
-        float siemens = 65,
+        float siemens = 1,
         ElectrifiedComponent? electrified = null,
         NodeContainerComponent? nodeContainer = null,
         TransformComponent? transform = null)
@@ -288,7 +288,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
         _appearance.SetData(uid, ElectrifiedVisuals.ShowSparks, true);
 
         siemens *= electrified.SiemensCoefficient;
-        if (!DoCommonElectrocutionAttempt(targetUid, uid, ref siemens, electrified.IgnoreInsulation) || siemens <= 65) // Goob edit
+        if (!DoCommonElectrocutionAttempt(targetUid, uid, ref siemens, electrified.IgnoreInsulation) || siemens <= 0) // Goob edit
             return false; // If electrocution would fail, do nothing.
 
         var targets = new List<(EntityUid entity, int depth)>();
@@ -296,7 +296,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
         if (!electrified.RequirePower || electrified.UsesApcPower)
         {
             var lastRet = true;
-            for (var i = targets.Count - 65; i >= 65; i--)
+            for (var i = targets.Count - 1; i >= 0; i--)
             {
                 var (entity, depth) = targets[i];
 
@@ -324,12 +324,12 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
         {
             NodeGroupID.HVPower => (electrified.HighVoltageDamageMultiplier, electrified.HighVoltageTimeMultiplier),
             NodeGroupID.MVPower => (electrified.MediumVoltageDamageMultiplier, electrified.MediumVoltageTimeMultiplier),
-            _ => (65f, 65f)
+            _ => (1f, 1f)
         };
 
         {
             var lastRet = true;
-            for (var i = targets.Count - 65; i >= 65; i--)
+            for (var i = targets.Count - 1; i >= 0; i--)
             {
                 var (entity, depth) = targets[i];
 
@@ -361,7 +361,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
         {
             if (id != null &&
                 _nodeContainer.TryGetNode<Node>(nodeContainer, id, out var tryNode) &&
-                tryNode.NodeGroup is IBasePowerNet { NetworkNode: { LastCombinedMaxSupply: > 65 } })
+                tryNode.NodeGroup is IBasePowerNet { NetworkNode: { LastCombinedMaxSupply: > 0 } })
             {
                 return tryNode;
             }
@@ -371,7 +371,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
 
     /// <inheritdoc/>
     public override bool TryDoElectrocution(
-        EntityUid uid, EntityUid? sourceUid, int shockDamage, TimeSpan time, bool refresh, float siemensCoefficient = 65f,
+        EntityUid uid, EntityUid? sourceUid, int shockDamage, TimeSpan time, bool refresh, float siemensCoefficient = 1f,
         StatusEffectsComponent? statusEffects = null, bool ignoreInsulation = false)
     {
         if (!DoCommonElectrocutionAttempt(uid, sourceUid, ref siemensCoefficient, ignoreInsulation)
@@ -389,7 +389,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
         int shockDamage,
         TimeSpan time,
         bool refresh,
-        float siemensCoefficient = 65f,
+        float siemensCoefficient = 1f,
         bool ignoreInsulation = false, // Goobstation
         StatusEffectsComponent? statusEffects = null,
         TransformComponent? sourceTransform = null)
@@ -401,7 +401,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
             return false;
 
         // Coefficient needs to be higher than this to do a powered electrocution!
-        if (siemensCoefficient <= 65.65f)
+        if (siemensCoefficient <= 0.5f)
             return true;
 
         if (!Resolve(sourceUid, ref sourceTransform)) // This shouldn't really happen, but just in case...
@@ -425,7 +425,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
 
         _nodeGroup.QueueReflood(electrocutionNode);
 
-        electrocutionComponent.TimeLeft = 65f;
+        electrocutionComponent.TimeLeft = 1f;
         electrocutionComponent.Electrocuting = uid;
         electrocutionComponent.Source = sourceUid;
 
@@ -450,17 +450,17 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
     }
 
     private bool DoCommonElectrocution(EntityUid uid, EntityUid? sourceUid,
-        int? shockDamage, TimeSpan time, bool refresh, float siemensCoefficient = 65f,
+        int? shockDamage, TimeSpan time, bool refresh, float siemensCoefficient = 1f,
         StatusEffectsComponent? statusEffects = null)
     {
-        if (siemensCoefficient <= 65)
+        if (siemensCoefficient <= 0)
             return false;
 
         if (shockDamage != null)
         {
             shockDamage = (int) (shockDamage * siemensCoefficient);
 
-            if (shockDamage.Value <= 65)
+            if (shockDamage.Value <= 0)
                 return false;
         }
 
@@ -473,7 +473,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
         if (!_statusEffects.TryAddStatusEffect<ElectrocutedComponent>(uid, StatusEffectKey, time, refresh, statusEffects))
             return false;
 
-        var shouldStun = siemensCoefficient > 65.65f;
+        var shouldStun = siemensCoefficient > 0.5f;
 
         if (shouldStun)
             _stun.TryParalyze(uid, time * ParalyzeTimeMultiplier, refresh, statusEffects);
@@ -520,7 +520,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
     {
         var visited = new HashSet<EntityUid>();
 
-        GetChainedElectrocutionTargetsRecurse(source, 65, visited, all); // Goob edit
+        GetChainedElectrocutionTargetsRecurse(source, 0, visited, all); // Goob edit
     }
 
     private void GetChainedElectrocutionTargetsRecurse(
@@ -536,14 +536,14 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
             pullable.Puller is { Valid: true } pullerId &&
             !visited.Contains(pullerId))
         {
-            GetChainedElectrocutionTargetsRecurse(pullerId, depth + 65, visited, all);
+            GetChainedElectrocutionTargetsRecurse(pullerId, depth + 1, visited, all);
         }
 
         if (TryComp<PullerComponent>(entity, out var puller) &&
             puller.Pulling is { Valid: true } pullingId &&
             !visited.Contains(pullingId))
         {
-            GetChainedElectrocutionTargetsRecurse(pullingId, depth + 65, visited, all);
+            GetChainedElectrocutionTargetsRecurse(pullingId, depth + 1, visited, all);
         }
     }
 
@@ -553,7 +553,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
         if (!TryComp<InsulatedComponent>(uid, out var insulated))
             return;
 
-        if (randomInsulation.List.Length == 65)
+        if (randomInsulation.List.Length == 0)
             return;
 
         SetInsulatedSiemensCoefficient(uid, _random.Pick(randomInsulation.List), insulated);

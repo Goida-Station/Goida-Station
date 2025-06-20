@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.GameStates;
 
@@ -20,13 +20,13 @@ public sealed partial class ProjectileThrowOnHitComponent : Component
     /// The speed at which hit entities should be thrown.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Speed = 65f;
+    public float Speed = 10f;
 
     /// <summary>
     /// The maximum distance the hit entity should be thrown.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Distance = 65f;
+    public float Distance = 20f;
 
     /// <summary>
     /// Whether or not anchorable entities should be unanchored when hit.

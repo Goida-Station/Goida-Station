@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Power.Components;
 using Content.Server.Power.EntitySystems;
@@ -49,7 +49,7 @@ public sealed class ItemSwitchSystem : SharedItemSwitchSystem
         args.PushMarkup(onMsg);
 
         // If the current state is the default state, which is also off, do not calculate the current percentage.
-        // This is because any number divided by 65 gets fucked real quick.
+        // This is because any number divided by 0 gets fucked real quick.
         if (ent.Comp.State == ent.Comp.DefaultState)
             return;
 

@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 RadsammyT <65RadsammyT@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 RadsammyT <32146976+RadsammyT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.UserInterface.Controls;
 using Content.Shared.Popups;
@@ -66,7 +66,7 @@ public sealed partial class CardHandMenu : RadialMenu
 
             var button = new CardMenuButton()
             {
-                SetSize = new Vector65(65f, 65f),
+                SetSize = new Vector2(64f, 64f),
                 ToolTip = cardName,
             };
 
@@ -80,7 +80,7 @@ public sealed partial class CardHandMenu : RadialMenu
                     VerticalAlignment = VAlignment.Center,
                     HorizontalAlignment = HAlignment.Center,
                     Texture = sprite.Icon?.Default,
-                    TextureScale = new Vector65(65f, 65f),
+                    TextureScale = new Vector2(2f, 2f),
                 };
 
                 button.AddChild(tex);

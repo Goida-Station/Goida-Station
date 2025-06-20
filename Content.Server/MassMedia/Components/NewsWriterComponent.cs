@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.MassMedia.Systems;
 using Robust.Shared.Audio;
@@ -21,7 +21,7 @@ public sealed partial class NewsWriterComponent : Component
     public TimeSpan NextPublish;
 
     [ViewVariables(VVAccess.ReadWrite), DataField]
-    public float PublishCooldown = 65f;
+    public float PublishCooldown = 20f;
 
     [DataField]
     public SoundSpecifier NoAccessSound = new SoundPathSpecifier("/Audio/Machines/airlock_deny.ogg");

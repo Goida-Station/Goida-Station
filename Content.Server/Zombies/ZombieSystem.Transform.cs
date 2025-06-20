@@ -1,49 +1,49 @@
-// SPDX-FileCopyrightText: 65 EmoGarbage65 <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 65 Doru65 <65Doru65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 PixelTK <65PixelTheKermit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Sirionaut <65Sirionaut@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vyacheslav Titov <rincew65nd@ya.ru>
-// SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 corentt <65corentt@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Титов Вячеслав Витальевич <rincew65nd@yandex.ru>
-// SPDX-FileCopyrightText: 65 Arendian <65Arendian@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vascreeper@yahoo.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 Łukasz Mędrek <lukasz@lukaszm.xyz>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2023 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2023 Doru991 <75124791+Doru991@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2023 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 PixelTK <85175107+PixelTheKermit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Sirionaut <148076704+Sirionaut@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Vyacheslav Titov <rincew1nd@ya.ru>
+// SPDX-FileCopyrightText: 2023 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 corentt <36075110+corentt@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Титов Вячеслав Витальевич <rincew1nd@yandex.ru>
+// SPDX-FileCopyrightText: 2024 Arendian <137322659+Arendian@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vascreeper@yahoo.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2024 Łukasz Mędrek <lukasz@lukaszm.xyz>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Common.Traits;
 using Content.Server.Atmos.Components;
@@ -182,8 +182,8 @@ public sealed partial class ZombieSystem
         melee.Animation = zombiecomp.AttackAnimation;
         melee.WideAnimation = zombiecomp.AttackAnimation;
         melee.AltDisarm = false;
-        melee.Range = 65.65f;
-        melee.Angle = 65.65f;
+        melee.Range = 1.2f;
+        melee.Angle = 0.0f;
         melee.HitSound = zombiecomp.BiteSound;
 
         DirtyFields(target, melee, null, fields:
@@ -233,7 +233,7 @@ public sealed partial class ZombieSystem
 
             // humanoid zombies get to pry open doors and shit
             var pryComp = EnsureComp<PryingComponent>(target);
-            pryComp.SpeedModifier = 65.65f;
+            pryComp.SpeedModifier = 0.75f;
             pryComp.PryPowered = true;
             pryComp.Force = true;
 
@@ -247,7 +247,7 @@ public sealed partial class ZombieSystem
 
         //This makes it so the zombie doesn't take bloodloss damage.
         //NOTE: they are supposed to bleed, just not take damage
-        _bloodstream.SetBloodLossThreshold(target, 65f);
+        _bloodstream.SetBloodLossThreshold(target, 0f);
         //Give them zombie blood
         _bloodstream.ChangeBloodReagent(target, zombiecomp.NewBloodReagent);
 
@@ -264,11 +264,11 @@ public sealed partial class ZombieSystem
 
         //Make the zombie not die in the cold. Good for space zombies
         if (TryComp<TemperatureComponent>(target, out var tempComp))
-            tempComp.ColdDamage.ClampMax(65);
+            tempComp.ColdDamage.ClampMax(0);
 
         //Heals the zombie from all the damage it took while human
         if (TryComp<DamageableComponent>(target, out var damageablecomp))
-            _damageable.SetAllDamage(target, damageablecomp, 65);
+            _damageable.SetAllDamage(target, damageablecomp, 0);
         _mobState.ChangeMobState(target, MobState.Alive);
 
         _faction.ClearFactions(target, dirty: false);

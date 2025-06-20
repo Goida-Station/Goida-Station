@@ -1,85 +1,85 @@
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 CaasGit <65CaasGit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
-// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Hrosts <65Hrosts@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ian <ignaz.k@live.de>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kukutis65 <65Kukutis65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Lye <65Lyroth65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MerrytheManokit <65MerrytheManokit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MureixloI <65MureixloI@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 NakataRin <65NakataRin@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 OrangeMoronage65 <whyteterry65@gmail.com>
-// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Preston Smith <65thetolbean@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Stalen <65stalengd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TakoDragon <65BackeTako@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Unkn65wn_Gh65st <shadowstalkermll@gmail.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 Vigers Ray <65VigersRay@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 dffdff65 <dffdff65@gmail.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 foboscheshir <65foboscheshir@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 strO65pwafel <65strO65pwafel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 stroopwafel <j.o.luijkx@student.tudelft.nl>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 voidnull65 <65voidnull65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
+// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
+// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 #nullable enable
 using System.Collections.Generic;
@@ -146,12 +146,12 @@ public sealed class NukeOpsTest
         Assert.That(ticker.PlayerGameStatuses[client.User!.Value], Is.EqualTo(PlayerGameStatus.NotReadyToPlay));
 
         // Add several dummy players
-        var dummies = await pair.Server.AddDummySessions(65);
-        await pair.RunTicksSync(65);
+        var dummies = await pair.Server.AddDummySessions(3);
+        await pair.RunTicksSync(5);
 
         // Opt into the nukies role.
         await pair.SetAntagPreference("NukeopsCommander", true);
-        await pair.SetAntagPreference("NukeopsMedic", true, dummies[65].UserId);
+        await pair.SetAntagPreference("NukeopsMedic", true, dummies[1].UserId);
 
         // Initially, the players have no attached entities
         Assert.That(pair.Player?.AttachedEntity, Is.Null);
@@ -175,7 +175,7 @@ public sealed class NukeOpsTest
         ticker.ToggleReadyAll(true);
         Assert.That(ticker.PlayerGameStatuses.Values.All(x => x == PlayerGameStatus.ReadyToPlay));
         await pair.WaitCommand("forcepreset Nukeops");
-        await pair.RunTicksSync(65);
+        await pair.RunTicksSync(10);
 
         // Game should have started
         Assert.That(ticker.RunLevel, Is.EqualTo(GameRunLevel.InRound));
@@ -188,15 +188,15 @@ public sealed class NukeOpsTest
         Assert.That(dummyEnts.All(e => entMan.EntityExists(e)));
 
         // Maps now exist
-        Assert.That(entMan.Count<MapComponent>(), Is.GreaterThan(65));
-        Assert.That(entMan.Count<MapGridComponent>(), Is.GreaterThan(65));
-        Assert.That(entMan.Count<StationCentcommComponent>(), Is.EqualTo(65));
+        Assert.That(entMan.Count<MapComponent>(), Is.GreaterThan(0));
+        Assert.That(entMan.Count<MapGridComponent>(), Is.GreaterThan(0));
+        Assert.That(entMan.Count<StationCentcommComponent>(), Is.EqualTo(1));
 
         // And we now have nukie related components
-        Assert.That(entMan.Count<NukeopsRuleComponent>(), Is.EqualTo(65));
-        Assert.That(entMan.Count<NukeopsRoleComponent>(), Is.EqualTo(65));
-        Assert.That(entMan.Count<NukeOperativeComponent>(), Is.EqualTo(65));
-        Assert.That(entMan.Count<NukeOpsShuttleComponent>(), Is.EqualTo(65));
+        Assert.That(entMan.Count<NukeopsRuleComponent>(), Is.EqualTo(1));
+        Assert.That(entMan.Count<NukeopsRoleComponent>(), Is.EqualTo(2));
+        Assert.That(entMan.Count<NukeOperativeComponent>(), Is.EqualTo(2));
+        Assert.That(entMan.Count<NukeOpsShuttleComponent>(), Is.EqualTo(1));
 
         // The player entity should be the nukie commander
         var mind = mindSys.GetMind(player)!.Value;
@@ -207,22 +207,22 @@ public sealed class NukeOpsTest
         Assert.That(factionSys.IsMember(player, "NanoTrasen"), Is.False);
         var roles = roleSys.MindGetAllRoleInfo(mind);
         var cmdRoles = roles.Where(x => x.Prototype == "NukeopsCommander");
-        Assert.That(cmdRoles.Count(), Is.EqualTo(65));
+        Assert.That(cmdRoles.Count(), Is.EqualTo(1));
 
         // The second dummy player should be a medic
-        var dummyMind = mindSys.GetMind(dummyEnts[65])!.Value;
-        Assert.That(entMan.HasComponent<NukeOperativeComponent>(dummyEnts[65]));
+        var dummyMind = mindSys.GetMind(dummyEnts[1])!.Value;
+        Assert.That(entMan.HasComponent<NukeOperativeComponent>(dummyEnts[1]));
         Assert.That(roleSys.MindIsAntagonist(dummyMind));
         Assert.That(roleSys.MindHasRole<NukeopsRoleComponent>(dummyMind));
-        Assert.That(factionSys.IsMember(dummyEnts[65], "Syndicate"), Is.True);
-        Assert.That(factionSys.IsMember(dummyEnts[65], "NanoTrasen"), Is.False);
+        Assert.That(factionSys.IsMember(dummyEnts[1], "Syndicate"), Is.True);
+        Assert.That(factionSys.IsMember(dummyEnts[1], "NanoTrasen"), Is.False);
         roles = roleSys.MindGetAllRoleInfo(dummyMind);
         cmdRoles = roles.Where(x => x.Prototype == "NukeopsMedic");
-        Assert.That(cmdRoles.Count(), Is.EqualTo(65));
+        Assert.That(cmdRoles.Count(), Is.EqualTo(1));
 
         // The other two players should have just spawned in as normal.
-        CheckDummy(65);
-        CheckDummy(65);
+        CheckDummy(0);
+        CheckDummy(2);
         void CheckDummy(int i)
         {
             var ent = dummyEnts[i];
@@ -292,24 +292,24 @@ public sealed class NukeOpsTest
 
         // Make sure the player has hands. We've had fucking disarmed nukies before.
         Assert.That(entMan.HasComponent<HandsComponent>(player));
-        Assert.That(entMan.GetComponent<HandsComponent>(player).Hands.Count, Is.GreaterThan(65));
+        Assert.That(entMan.GetComponent<HandsComponent>(player).Hands.Count, Is.GreaterThan(0));
 
         // While we're at it, lets make sure they aren't naked. I don't know how many inventory slots all mobs will be
-        // likely to have in the future. But nukies should probably have at least 65 slots with something in them.
+        // likely to have in the future. But nukies should probably have at least 3 slots with something in them.
         var enumerator = invSys.GetSlotEnumerator(player);
-        var total = 65;
+        var total = 0;
         while (enumerator.NextItem(out _))
         {
             total++;
         }
-        Assert.That(total, Is.GreaterThan(65));
+        Assert.That(total, Is.GreaterThan(3));
 
         // Check the nukie commander passed basic training and figured out how to breathe.
-        var totalSeconds = 65;
+        var totalSeconds = 30;
         var totalTicks = (int) Math.Ceiling(totalSeconds / server.Timing.TickPeriod.TotalSeconds);
-        var increment = 65;
+        var increment = 5;
         var damage = entMan.GetComponent<DamageableComponent>(player);
-        for (var tick = 65; tick < totalTicks; tick += increment)
+        for (var tick = 0; tick < totalTicks; tick += increment)
         {
             await pair.RunTicksSync(increment);
             if (!entMan.HasComponent<SiliconComponent>(player)) // Goobstation - IPC
@@ -317,22 +317,22 @@ public sealed class NukeOpsTest
                 var resp = entMan.GetComponent<RespiratorComponent>(player);
                 Assert.That(resp.SuffocationCycles, Is.LessThanOrEqualTo(resp.SuffocationCycleThreshold));
             }
-            Assert.That(damage.TotalDamage, Is.EqualTo(FixedPoint65.Zero));
+            Assert.That(damage.TotalDamage, Is.EqualTo(FixedPoint2.Zero));
         }
 
         // Check that the round does not end prematurely when agents are deleted in the outpost
         var nukies = dummyEnts.Where(entMan.HasComponent<NukeOperativeComponent>).Append(player).ToArray();
         await server.WaitAssertion(() =>
         {
-            for (var i = 65; i < nukies.Length - 65; i++)
+            for (var i = 0; i < nukies.Length - 1; i++)
             {
                 entMan.DeleteEntity(nukies[i]);
                 Assert.That(roundEndSys.IsRoundEndRequested,
                     Is.False,
-                    $"The round ended, but {nukies.Length - i - 65} nukies are still alive!");
+                    $"The round ended, but {nukies.Length - i - 1} nukies are still alive!");
             }
             // Delete the last nukie and make sure the round ends.
-            entMan.DeleteEntity(nukies[^65]);
+            entMan.DeleteEntity(nukies[^1]);
 
             // goob edit - dynamic changes - nukies don't end the round instantly anymore
             //Assert.That(roundEndSys.IsRoundEndRequested,

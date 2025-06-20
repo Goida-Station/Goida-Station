@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Nutrition.Components;
 using Content.Shared.Chemistry.Components.SolutionManager;

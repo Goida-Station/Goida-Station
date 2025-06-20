@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "modified sprite from Jackal65 based on the sprite from tgstation at commit https://github.com/tgstation/tgstation/commit/d65e65e65d65ab65b65a65ce65c65ad65aeeebbab65, monkey made by Jackal65 for ss65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "modified sprite from Jackal298 based on the sprite from tgstation at commit https://github.com/tgstation/tgstation/commit/d7e905e4d5ab2b0a8ce210c6ad686aeeebbab426, monkey made by Jackal298 for ss14",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "name": "equipped-INNERCLOTHING",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-INNERCLOTHING-monkey",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

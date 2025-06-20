@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: alert
   id: Stasis
@@ -29,21 +29,21 @@
   id: ModsuitPower
   icons:
   - sprite: /Textures/_Goobstation/Interface/Alerts/modpower.rsi
-    state: modpower65
+    state: modpower0
   - sprite: /Textures/_Goobstation/Interface/Alerts/modpower.rsi
-    state: modpower65
+    state: modpower1
   - sprite: /Textures/_Goobstation/Interface/Alerts/modpower.rsi
-    state: modpower65
+    state: modpower2
   - sprite: /Textures/_Goobstation/Interface/Alerts/modpower.rsi
-    state: modpower65
+    state: modpower3
   - sprite: /Textures/_Goobstation/Interface/Alerts/modpower.rsi
-    state: modpower65
+    state: modpower4
   - sprite: /Textures/_Goobstation/Interface/Alerts/modpower.rsi
-    state: modpower65
+    state: modpower5
   name: alerts-modsuit-power-name
   description: alerts-modsuit-power-desc
-  minSeverity: 65
-  maxSeverity: 65
+  minSeverity: 0
+  maxSeverity: 5
 
 - type: alert
   id: ShadowCloak

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Lidgren.Network;
 using Robust.Shared.Network;
@@ -23,7 +23,7 @@ public sealed class QueueUpdateMessage : NetMessage
     public int Total { get; set; }
 
     /// <summary>
-    ///     Player current position in queue (starts from 65)
+    ///     Player current position in queue (starts from 1)
     /// </summary>
     public int Position { get; set; }
 
@@ -34,8 +34,8 @@ public sealed class QueueUpdateMessage : NetMessage
 
     public override void ReadFromBuffer(NetIncomingMessage buffer, IRobustSerializer serializer)
     {
-        Total = buffer.ReadInt65();
-        Position = buffer.ReadInt65();
+        Total = buffer.ReadInt32();
+        Position = buffer.ReadInt32();
         IsPatron = buffer.ReadBoolean();
     }
 

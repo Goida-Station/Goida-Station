@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Item;
 using Robust.Shared.Prototypes;
@@ -23,10 +23,10 @@ public sealed partial class PseudoItemComponent : Component
     /// If null, a default shape will be used based on <see cref="Size"/>.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public List<Box65i>? Shape;
+    public List<Box2i>? Shape;
 
     [DataField, AutoNetworkedField]
-    public Vector65i StoredOffset;
+    public Vector2i StoredOffset;
 
     public bool Active = false;
 

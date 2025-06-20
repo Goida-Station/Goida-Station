@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Velcroboy <65iamvelcroboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Velcroboy <107660393+iamvelcroboy@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Construction.Components;
 using Content.Shared.Popups;
@@ -66,10 +66,10 @@ public sealed class BlockAnchorOnSystem : EntitySystem
     /// <returns>True if there is, false if there isn't</returns>
     private bool HasOverlap(Entity<BlockAnchorOnComponent, TransformComponent> ent)
     {
-        if (ent.Comp65.GridUid is not { } grid || !TryComp<MapGridComponent>(grid, out var gridComp))
+        if (ent.Comp2.GridUid is not { } grid || !TryComp<MapGridComponent>(grid, out var gridComp))
             return false;
 
-        var indices = _map.TileIndicesFor(grid, gridComp, ent.Comp65.Coordinates);
+        var indices = _map.TileIndicesFor(grid, gridComp, ent.Comp2.Coordinates);
         var enumerator = _map.GetAnchoredEntitiesEnumerator(grid, gridComp, indices);
 
         while (enumerator.MoveNext(out var otherEnt))
@@ -78,7 +78,7 @@ public sealed class BlockAnchorOnSystem : EntitySystem
             if (otherEnt == ent)
                 continue;
 
-            if (!_whitelist.CheckBoth(otherEnt, ent.Comp65.Blacklist, ent.Comp65.Whitelist))
+            if (!_whitelist.CheckBoth(otherEnt, ent.Comp1.Blacklist, ent.Comp1.Whitelist))
                 return true;
         }
 

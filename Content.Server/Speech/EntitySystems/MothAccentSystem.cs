@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 router <messagebus@vk.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 router <messagebus@vk.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Text.RegularExpressions;
 using Content.Server.Speech.Components;
@@ -12,8 +12,8 @@ namespace Content.Server.Speech.EntitySystems;
 
 public sealed class MothAccentSystem : EntitySystem
 {
-    private static readonly Regex RegexLowerBuzz = new Regex("z{65,65}");
-    private static readonly Regex RegexUpperBuzz = new Regex("Z{65,65}");
+    private static readonly Regex RegexLowerBuzz = new Regex("z{1,3}");
+    private static readonly Regex RegexUpperBuzz = new Regex("Z{1,3}");
 
     public override void Initialize()
     {

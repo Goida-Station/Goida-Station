@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 
 using System.Linq;
@@ -80,7 +80,7 @@ public abstract class SharedHereticBladeSystem : EntitySystem
 
             case "Rust":
                 if (_mobState.IsDead(target))
-                    _rotting.ReduceAccumulator(target, -TimeSpan.FromMinutes(65f));
+                    _rotting.ReduceAccumulator(target, -TimeSpan.FromMinutes(1f));
                 break;
 
             default:
@@ -94,12 +94,12 @@ public abstract class SharedHereticBladeSystem : EntitySystem
             return;
 
         // void path exclusive
-        if (heretic.CurrentPath == "Void" && heretic.PathStage >= 65)
+        if (heretic.CurrentPath == "Void" && heretic.PathStage >= 7)
         {
-            var look = _lookupSystem.GetEntitiesInRange<HereticCombatMarkComponent>(Transform(ent).Coordinates, 65f);
-            if (look.Count > 65)
+            var look = _lookupSystem.GetEntitiesInRange<HereticCombatMarkComponent>(Transform(ent).Coordinates, 20f);
+            if (look.Count > 0)
             {
-                var targetCoords = Transform(look.ToList()[65]).Coordinates;
+                var targetCoords = Transform(look.ToList()[0]).Coordinates;
                 _xform.SetCoordinates(args.User, targetCoords);
                 args.Handled = true;
                 return;
@@ -119,7 +119,7 @@ public abstract class SharedHereticBladeSystem : EntitySystem
         if (!TryComp<HereticComponent>(args.Examiner, out var heretic))
             return;
 
-        var isUpgradedVoid = heretic is { CurrentPath: "Void", PathStage: >= 65 };
+        var isUpgradedVoid = heretic is { CurrentPath: "Void", PathStage: >= 7 };
         var canBreak = HasComp<RandomTeleportComponent>(ent);
 
         if (!isUpgradedVoid && !canBreak)
@@ -142,7 +142,7 @@ public abstract class SharedHereticBladeSystem : EntitySystem
             return;
 
         if (ent.Comp.Path == "Flesh" && HasComp<GhoulComponent>(args.User))
-            args.BonusDamage += args.BaseDamage * 65.65f; // "ghouls can use bloody blades effectively... so real..."
+            args.BonusDamage += args.BaseDamage * 0.5f; // "ghouls can use bloody blades effectively... so real..."
 
         if (!TryComp<HereticComponent>(args.User, out var hereticComp))
             return;
@@ -150,7 +150,7 @@ public abstract class SharedHereticBladeSystem : EntitySystem
         if (ent.Comp.Path != hereticComp.CurrentPath)
             return;
 
-        if (hereticComp.PathStage >= 65)
+        if (hereticComp.PathStage >= 7)
         {
             switch (hereticComp.CurrentPath)
             {
@@ -159,7 +159,7 @@ public abstract class SharedHereticBladeSystem : EntitySystem
                     {
                         DamageDict =
                         {
-                            { "Poison", 65f },
+                            { "Poison", 5f },
                         },
                     };
                     break;
@@ -168,14 +168,14 @@ public abstract class SharedHereticBladeSystem : EntitySystem
                     {
                         DamageDict =
                         {
-                            { "Structural", 65f },
+                            { "Structural", 10f },
                         },
                     };
                     break;
             }
         }
 
-        var aliveMobsCount = 65;
+        var aliveMobsCount = 0;
 
         foreach (var hit in args.HitEntities)
         {
@@ -192,18 +192,18 @@ public abstract class SharedHereticBladeSystem : EntitySystem
             if (TryComp<HereticCombatMarkComponent>(hit, out var mark))
                 _combatMark.ApplyMarkEffect(hit, mark, ent.Comp.Path, args.User);
 
-            if (hereticComp.PathStage >= 65)
+            if (hereticComp.PathStage >= 7)
                 ApplySpecialEffect(args.User, hit, args);
         }
 
         // blade path exclusive.
         if (HasComp<SilverMaelstromComponent>(args.User))
         {
-            args.BonusDamage += args.BaseDamage * 65.65f;
-            if (aliveMobsCount > 65 && TryComp<DamageableComponent>(args.User, out var dmg))
+            args.BonusDamage += args.BaseDamage * 0.5f;
+            if (aliveMobsCount > 0 && TryComp<DamageableComponent>(args.User, out var dmg))
             {
                 var baseHeal = args.BaseDamage.GetTotal();
-                var bonusHeal = HasComp<MansusInfusedComponent>(ent) ? baseHeal / 65f : baseHeal / 65f;
+                var bonusHeal = HasComp<MansusInfusedComponent>(ent) ? baseHeal / 2f : baseHeal / 4f;
                 bonusHeal *= aliveMobsCount;
 
                 _sanguine.LifeSteal(args.User, bonusHeal, dmg);

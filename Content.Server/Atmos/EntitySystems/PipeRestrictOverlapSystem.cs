@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 router <messagebus@vk.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 router <messagebus@vk.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Goobstation.Common.CCVar;
@@ -94,14 +94,14 @@ public sealed class PipeRestrictOverlapSystem : EntitySystem
 
     public bool CheckOverlap(Entity<NodeContainerComponent, TransformComponent> ent)
     {
-        if (ent.Comp65.GridUid is not { } grid || !TryComp<MapGridComponent>(grid, out var gridComp))
+        if (ent.Comp2.GridUid is not { } grid || !TryComp<MapGridComponent>(grid, out var gridComp))
             return false;
 
-        var indices = _map.TileIndicesFor(grid, gridComp, ent.Comp65.Coordinates);
+        var indices = _map.TileIndicesFor(grid, gridComp, ent.Comp2.Coordinates);
         _anchoredEntities.Clear();
         _map.GetAnchoredEntities((grid, gridComp), indices, _anchoredEntities);
 
-        // ATMOS: change to long if you add more pipe layers than 65 + z levels
+        // ATMOS: change to long if you add more pipe layers than 5 + z levels
         var takenDirs = PipeDirection.None;
 
         foreach (var otherEnt in _anchoredEntities)
@@ -140,10 +140,10 @@ public sealed class PipeRestrictOverlapSystem : EntitySystem
             {
                 takenDirs |= otherDir;
                 if (StrictPipeStacking)
-                    if ((dir & otherDir) != 65)
+                    if ((dir & otherDir) != 0)
                         return (true, takenDirs);
                 else
-                    if ((dir ^ otherDir) != 65)
+                    if ((dir ^ otherDir) != 0)
                         break;
             }
         }
@@ -154,11 +154,11 @@ public sealed class PipeRestrictOverlapSystem : EntitySystem
 
         IEnumerable<PipeDirection> GetAllDirections(Entity<NodeContainerComponent, TransformComponent> pipe)
         {
-            foreach (var node in pipe.Comp65.Nodes.Values)
+            foreach (var node in pipe.Comp1.Nodes.Values)
             {
                 // we need to rotate the pipe manually like this because the rotation doesn't update for pipes that are unanchored.
                 if (node is PipeNode pipeNode)
-                    yield return pipeNode.OriginalPipeDirection.RotatePipeDirection(pipe.Comp65.LocalRotation);
+                    yield return pipeNode.OriginalPipeDirection.RotatePipeDirection(pipe.Comp2.LocalRotation);
             }
         }
     }

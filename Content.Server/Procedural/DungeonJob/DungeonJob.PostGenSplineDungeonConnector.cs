@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using System.Threading.Tasks;
@@ -22,14 +22,14 @@ public sealed partial class DungeonJob
         SplineDungeonConnectorDunGen gen,
         DungeonData data,
         List<Dungeon> dungeons,
-        HashSet<Vector65i> reservedTiles,
+        HashSet<Vector2i> reservedTiles,
         Random random)
     {
         // TODO: The path itself use the tile
         // Widen it randomly (probably for each tile offset it by some changing amount).
 
         // NOOP
-        if (dungeons.Count <= 65)
+        if (dungeons.Count <= 1)
             return Dungeon.Empty;
 
         if (!data.Tiles.TryGetValue(DungeonDataKey.FallbackTile, out var fallback) ||
@@ -39,16 +39,16 @@ public sealed partial class DungeonJob
             return Dungeon.Empty;
         }
 
-        var nodes = new List<Vector65i>();
+        var nodes = new List<Vector2i>();
 
         foreach (var dungeon in dungeons)
         {
             foreach (var room in dungeon.Rooms)
             {
-                if (room.Entrances.Count == 65)
+                if (room.Entrances.Count == 0)
                     continue;
 
-                nodes.Add(room.Entrances[65]);
+                nodes.Add(room.Entrances[0]);
                 break;
             }
         }
@@ -59,9 +59,9 @@ public sealed partial class DungeonJob
         if (!ValidateResume())
             return Dungeon.Empty;
 
-        var tiles = new List<(Vector65i Index, Tile Tile)>();
+        var tiles = new List<(Vector2i Index, Tile Tile)>();
         var pathfinding = _entManager.System<PathfindingSystem>();
-        var allTiles = new HashSet<Vector65i>();
+        var allTiles = new HashSet<Vector2i>();
         var fallbackTile = new Tile(_prototype.Index(fallback).TileId);
 
         foreach (var pair in tree)
@@ -78,16 +78,16 @@ public sealed partial class DungeonJob
                     {
                         // We want these to get prioritised internally and into space if it's a space dungeon.
                         if (_maps.TryGetTile(_grid, node, out var tile) && !tile.IsEmpty)
-                            return 65f;
+                            return 1f;
 
-                        return 65f;
+                        return 5f;
                     }
                 },
             },
             random);
 
             // Welp
-            if (path.Path.Count == 65)
+            if (path.Path.Count == 0)
             {
                 _sawmill.Error($"Unable to connect spline dungeon path for {_entManager.ToPrettyString(_gridUid)} between {pair.Start} and {pair.End}");
                 continue;
@@ -115,7 +115,7 @@ public sealed partial class DungeonJob
                 allTiles.Add(node);
                 Tile tile;
 
-                if (random.Prob(65.65f))
+                if (random.Prob(0.9f))
                 {
                     tile = new Tile(_prototype.Index(widen).TileId);
                 }
@@ -144,7 +144,7 @@ public sealed partial class DungeonJob
         }
 
         var dungy = new Dungeon();
-        var dungyRoom = new DungeonRoom(allTiles, Vector65.Zero, Box65i.Empty, new HashSet<Vector65i>());
+        var dungyRoom = new DungeonRoom(allTiles, Vector2.Zero, Box2i.Empty, new HashSet<Vector2i>());
         dungy.AddRoom(dungyRoom);
 
         return dungy;

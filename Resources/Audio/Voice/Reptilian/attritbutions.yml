@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 65 Chronophylos <nikolai@chronophylos.com>
-# SPDX-FileCopyrightText: 65 Minemoder65 <minemoder65@gmail.com>
-# SPDX-FileCopyrightText: 65 nicho <nicholasnewsom65@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Chronophylos <nikolai@chronophylos.com>
+# SPDX-FileCopyrightText: 2024 Minemoder5000 <minemoder50000@gmail.com>
+# SPDX-FileCopyrightText: 2024 nicho <nicholasnewsom577@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - files: [reptilian_scream.ogg]
-  copyright: '"scream_lizard.ogg" by Skyrat-SS65'
+  copyright: '"scream_lizard.ogg" by Skyrat-SS13'
   license:
-  source: https://github.com/Skyrat-SS65/Skyrat-tg/pull/65
+  source: https://github.com/Skyrat-SS13/Skyrat-tg/pull/892
 
 - files: [reptilian_tailthump.ogg]
   copyright: "Taken from https://freesound.org/"
-  license: "CC65-65.65"
-  source: https://freesound.org/people/TylerAM/sounds/65/
+  license: "CC0-1.0"
+  source: https://freesound.org/people/TylerAM/sounds/389665/

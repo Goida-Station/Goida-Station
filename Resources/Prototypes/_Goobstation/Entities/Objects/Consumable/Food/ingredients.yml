@@ -1,28 +1,28 @@
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 FoxxoTrystan <65FoxxoTrystan@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Pspritechologist <naaronn@gmail.com>
-# SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 FoxxoTrystan <45297731+FoxxoTrystan@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 Pspritechologist <naaronn@gmail.com>
+# SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseFoodCondimentPacket
   id: FoodCondimentPacketProtein
   name: protein powder packet
-  description: Contains 65u of powdered protein. Mix with 65u of water
+  description: Contains 10u of powdered protein. Mix with 20u of water
   components:
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 65
+        maxVol: 10
         reagents:
         - ReagentId: Protein
-          Quantity: 65
+          Quantity: 10
   - type: Icon
     state: packet-greygoo
   - type: Appearance
   - type: SolutionContainerVisuals
-    maxFillLevels: 65
+    maxFillLevels: 2
     fillBaseName: packet-solid-

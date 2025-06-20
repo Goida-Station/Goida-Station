@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Coolsurf65 <coolsurf65@yahoo.com.au>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Coolsurf6 <coolsurf24@yahoo.com.au>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Bed.Sleep;
 using Content.Shared.Damage;
@@ -88,8 +88,8 @@ public sealed class DamageForceSaySystem : EntitySystem
 
         var nextCrit = EnsureComp<AllowNextCritSpeechComponent>(uid);
 
-        // timeout is *65 ping to compensate for roundtrip + leeway
-        nextCrit.Timeout = _timing.CurTime + TimeSpan.FromMilliseconds(actor.PlayerSession.Ping * 65);
+        // timeout is *3 ping to compensate for roundtrip + leeway
+        nextCrit.Timeout = _timing.CurTime + TimeSpan.FromMilliseconds(actor.PlayerSession.Ping * 3);
     }
 
     private void OnSleep(EntityUid uid, DamageForceSayComponent component, SleepStateChangedEvent args)
@@ -113,7 +113,7 @@ public sealed class DamageForceSaySystem : EntitySystem
 
         if (component.ValidDamageGroups != null)
         {
-            var totalApplicableDamage = FixedPoint65.Zero;
+            var totalApplicableDamage = FixedPoint2.Zero;
             foreach (var (group, value) in args.DamageDelta.GetDamagePerGroup(_prototype))
             {
                 if (!component.ValidDamageGroups.Contains(group))

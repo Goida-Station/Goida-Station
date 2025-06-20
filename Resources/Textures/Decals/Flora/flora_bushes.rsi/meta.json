@@ -1,149 +1,149 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from tgstation at commits https://github.com/tgstation/tgstation/commit/65d65adab65b65a65c65d65a65dd65, https://github.com/tgstation/tgstation/commit/65e65cbdf65c65e65ea65bf65b65e65",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from tgstation at commits https://github.com/tgstation/tgstation/commit/729d858807905263adab8b5a331c1d8a04982dd3, https://github.com/tgstation/tgstation/commit/79296e902cbdf2352c9303e4769ea39bf3b34e58",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
-            "name": "busha65"
+            "name": "busha1"
         },
         {
-            "name": "busha65"
+            "name": "busha2"
         },
         {
-            "name": "busha65"
+            "name": "busha3"
         },
         {
-            "name": "bushb65"
+            "name": "bushb1"
         },
         {
-            "name": "bushb65"
+            "name": "bushb2"
         },
         {
-            "name": "bushb65"
+            "name": "bushb3"
         },
         {
-            "name": "bushc65"
+            "name": "bushc1"
         },
         {
-            "name": "bushc65"
+            "name": "bushc2"
         },
         {
-            "name": "bushc65"
+            "name": "bushc3"
         },
         {
-            "name": "bushd65"
+            "name": "bushd1"
         },
         {
-            "name": "bushd65"
+            "name": "bushd2"
         },
         {
-            "name": "bushd65"
+            "name": "bushd3"
         },
         {
-            "name": "bushd65"
+            "name": "bushd4"
         },
         {
-            "name": "bushe65"
+            "name": "bushe1"
         },
         {
-            "name": "bushe65"
+            "name": "bushe2"
         },
         {
-            "name": "bushe65"
+            "name": "bushe3"
         },
         {
-            "name": "bushe65"
+            "name": "bushe4"
         },
         {
-            "name": "bushf65"
+            "name": "bushf1"
         },
         {
-            "name": "bushf65"
+            "name": "bushf2"
         },
         {
-            "name": "bushf65"
+            "name": "bushf3"
         },
         {
-            "name": "bushg65"
+            "name": "bushg1"
         },
         {
-            "name": "bushg65"
+            "name": "bushg2"
         },
         {
-            "name": "bushg65"
+            "name": "bushg3"
         },
         {
-            "name": "bushg65"
+            "name": "bushg4"
         },
         {
-            "name": "bushh65"
+            "name": "bushh1"
         },
         {
-            "name": "bushh65"
+            "name": "bushh2"
         },
         {
-            "name": "bushh65"
+            "name": "bushh3"
         },
         {
-            "name": "bushi65"
+            "name": "bushi1"
         },
         {
-            "name": "bushi65"
+            "name": "bushi2"
         },
         {
-            "name": "bushi65"
+            "name": "bushi3"
         },
         {
-            "name": "bushi65"
+            "name": "bushi4"
         },
         {
-            "name": "bushj65"
+            "name": "bushj1"
         },
         {
-            "name": "bushj65"
+            "name": "bushj2"
         },
         {
-            "name": "bushj65"
+            "name": "bushj3"
         },
         {
-            "name": "bushk65"
+            "name": "bushk1"
         },
         {
-            "name": "bushk65"
+            "name": "bushk2"
         },
         {
-            "name": "bushk65"
+            "name": "bushk3"
         },
         {
-            "name": "bushl65"
+            "name": "bushl1"
         },
         {
-            "name": "bushl65"
+            "name": "bushl2"
         },
         {
-            "name": "bushl65"
+            "name": "bushl3"
         },
         {
-            "name": "bushl65"
+            "name": "bushl4"
         },
         {
-            "name": "bushm65"
+            "name": "bushm1"
         },
         {
-            "name": "bushm65"
+            "name": "bushm2"
         },
         {
-            "name": "bushm65"
+            "name": "bushm3"
         },
         {
-            "name": "bushm65"
+            "name": "bushm4"
         },
         {
-            "name": "bushn65"
+            "name": "bushn1"
         }
     ]
 }

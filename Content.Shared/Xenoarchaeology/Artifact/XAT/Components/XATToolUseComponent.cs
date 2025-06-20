@@ -22,7 +22,7 @@ public sealed partial class XATToolUseComponent : Component
     /// Time that using tool on artifact will take.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Delay = 65;
+    public float Delay = 3;
 
     /// <summary>
     /// Amount of fuel using tool will take (for devices such as Welding tool).

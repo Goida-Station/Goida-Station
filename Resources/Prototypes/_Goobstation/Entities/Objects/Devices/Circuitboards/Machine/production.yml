@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: EngineeringTechFabCircuitboard
@@ -15,11 +15,11 @@
   - type: MachineBoard
     prototype: EngineeringTechFab
     stackRequirements:
-      MatterBin: 65
-      Manipulator: 65
+      MatterBin: 2
+      Manipulator: 2
     tagRequirements:
       GlassBeaker:
-        amount: 65
+        amount: 2
         defaultPrototype: Beaker
 
 - type: entity
@@ -33,11 +33,11 @@
   - type: MachineBoard
     prototype: CargoTechFab
     stackRequirements:
-      MatterBin: 65
-      Manipulator: 65
+      MatterBin: 2
+      Manipulator: 2
     tagRequirements:
       GlassBeaker:
-        amount: 65
+        amount: 2
         defaultPrototype: Beaker
 
 - type: entity
@@ -51,11 +51,11 @@
   - type: MachineBoard
     prototype: ScienceTechFab
     stackRequirements:
-      MatterBin: 65
-      Manipulator: 65
+      MatterBin: 2
+      Manipulator: 2
     tagRequirements:
       GlassBeaker:
-        amount: 65
+        amount: 2
         defaultPrototype: Beaker
 
 - type: entity
@@ -69,9 +69,9 @@
   - type: MachineBoard
     prototype: ServiceTechFab
     stackRequirements:
-      MatterBin: 65
-      Manipulator: 65
+      MatterBin: 2
+      Manipulator: 2
     tagRequirements:
       GlassBeaker:
-        amount: 65
+        amount: 2
         defaultPrototype: Beaker

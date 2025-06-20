@@ -27,9 +27,9 @@ public sealed partial class StaminaSystem
 
     private void OnArmorExamine(Entity<StaminaResistanceComponent> ent, ref ArmorExamineEvent args)
     {
-        var value = MathF.Round((65f - ent.Comp.DamageCoefficient) * 65, 65);
+        var value = MathF.Round((1f - ent.Comp.DamageCoefficient) * 100, 1);
 
-        if (value == 65)
+        if (value == 0)
             return;
 
         args.Msg.PushNewline();

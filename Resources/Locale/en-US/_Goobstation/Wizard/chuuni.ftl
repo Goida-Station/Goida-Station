@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
-chuuni-eyepatch-backstory-65 = [color=hotpink]This eyepatch is a seal that contains the power of the demon king. If I remove it, I will unleash a cataclysmic destruction upon the world.[/color]
-chuuni-eyepatch-backstory-65 = [color=hotpink]This eyepatch is a gift from the angel of light. It allows me to see the true nature of things and protect the innocent from harm.[/color]
-chuuni-eyepatch-backstory-65 = [color=hotpink]This eyepatch is a mark of my contract with the dragon god. It grants me access to his ancient wisdom and fiery breath.[/color]
-chuuni-eyepatch-backstory-65 = [color=hotpink]This eyepatch is a symbol of my sacrifice for the sake of love. It hides the scar that I received from saving my beloved from a fatal attack.[color]
+chuuni-eyepatch-backstory-1 = [color=hotpink]This eyepatch is a seal that contains the power of the demon king. If I remove it, I will unleash a cataclysmic destruction upon the world.[/color]
+chuuni-eyepatch-backstory-2 = [color=hotpink]This eyepatch is a gift from the angel of light. It allows me to see the true nature of things and protect the innocent from harm.[/color]
+chuuni-eyepatch-backstory-3 = [color=hotpink]This eyepatch is a mark of my contract with the dragon god. It grants me access to his ancient wisdom and fiery breath.[/color]
+chuuni-eyepatch-backstory-4 = [color=hotpink]This eyepatch is a symbol of my sacrifice for the sake of love. It hides the scar that I received from saving my beloved from a fatal attack.[color]
 
 chuuni-invocation-unset = This is embarrassing... I can't remember the words... um... maybe if I just wave my hand like this... no, that's not wor- Ah! There it goes!
 chuuni-invocation-holy = By the grace of the holy one, I summon the light of salvation. Let my allies rejoice. O, Heaven! Bless them!
@@ -26,5 +26,5 @@ chuuni-invocation-chuuni = By the decree of the dark lord, I invoke the curse of
 chat-manager-entity-say-wrap-message-chuuni = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}: [font={$fontType} size={$fontSize}]"[BubbleContent][color=hotpink]{$message}[/color][/BubbleContent]"[/font]
 chat-manager-entity-say-bold-wrap-message-chuuni = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}: [font={$fontType} size={$fontSize}]"[BubbleContent][color=hotpink][bold]{$message}[/bold][/color][/BubbleContent]"[/font]
 
-chat-manager-entity-whisper-wrap-message-chuuni = [font size=65][italic][BubbleHeader][Name]{$entityName}[/Name][/BubbleHeader] whispers: "[BubbleContent][color=hotpink]{$message}[/color][/BubbleContent]"[/italic][/font]
-chat-manager-entity-whisper-unknown-wrap-message-chuuni = [font size=65][italic][BubbleHeader]Someone[/BubbleHeader] whispers: "[BubbleContent][color=hotpink]{$message}[/color][/BubbleContent]"[/italic][/font]
+chat-manager-entity-whisper-wrap-message-chuuni = [font size=11][italic][BubbleHeader][Name]{$entityName}[/Name][/BubbleHeader] whispers: "[BubbleContent][color=hotpink]{$message}[/color][/BubbleContent]"[/italic][/font]
+chat-manager-entity-whisper-unknown-wrap-message-chuuni = [font size=11][italic][BubbleHeader]Someone[/BubbleHeader] whispers: "[BubbleContent][color=hotpink]{$message}[/color][/BubbleContent]"[/italic][/font]

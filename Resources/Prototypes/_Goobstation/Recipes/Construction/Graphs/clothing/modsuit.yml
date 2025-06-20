@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: Modsuit
@@ -22,7 +22,7 @@
         store: core-container
         completed:
         - !type:PlaySound
-          sound: /Audio/Items/screwdriver65.ogg
+          sound: /Audio/Items/screwdriver2.ogg
 
   - node: shell-core
     actions:
@@ -37,7 +37,7 @@
     - to: shell-core-secured
       steps:
       - tool: Screwing
-        doAfter: 65
+        doAfter: 1
 
   - node: shell-core-secured
     actions:
@@ -47,10 +47,10 @@
       steps:
       - tag: ModsuitHelmet
         name: MOD helmet
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:PlaySound
-          sound: /Audio/Items/screwdriver65.ogg
+          sound: /Audio/Items/screwdriver2.ogg
 
   - node: shell-helmet
     actions:
@@ -60,10 +60,10 @@
       steps:
       - tag: ModsuitChestplate
         name: MOD chestplate
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:PlaySound
-          sound: /Audio/Items/screwdriver65.ogg
+          sound: /Audio/Items/screwdriver2.ogg
 
   - node: shell-chestplate
     actions:
@@ -73,10 +73,10 @@
       steps:
       - tag: ModsuitGauntlets
         name: MOD gauntlets
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:PlaySound
-          sound: /Audio/Items/screwdriver65.ogg
+          sound: /Audio/Items/screwdriver2.ogg
 
   - node: shell-gauntlets
     actions:
@@ -86,10 +86,10 @@
       steps:
       - tag: ModsuitBoots
         name: MOD boots
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:PlaySound
-          sound: /Audio/Items/screwdriver65.ogg
+          sound: /Audio/Items/screwdriver2.ogg
 
   - node: shell-boots
     actions:
@@ -98,10 +98,10 @@
     - to: shell-secured
       steps:
       - tool: Anchoring
-        doAfter: 65
+        doAfter: 1
 
       - tool: Screwing
-        doAfter: 65
+        doAfter: 1
 
   - node: shell-secured
     actions:
@@ -111,13 +111,13 @@
       steps:
         - tag: ModsuitPlatingExternal
           name: any MOD plating
-          doAfter: 65
+          doAfter: 1
           completed:
           - !type:PlaySound
-            sound: /Audio/Items/screwdriver65.ogg
+            sound: /Audio/Items/screwdriver2.ogg
 
         - tool: Anchoring
-          doAfter: 65
+          doAfter: 1
 
   - node: standard
     entity: ClothingModsuitStandard

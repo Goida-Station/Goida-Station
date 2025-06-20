@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 Kevin Zheng <kevinz5000@gmail.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Atmos.Components;
 using Content.Server.Decals;
@@ -33,9 +33,9 @@ namespace Content.Server.Atmos.EntitySystems
         [Dependency] private readonly DecalSystem _decalSystem = default!;
         [Dependency] private readonly IRobustRandom _random = default!;
 
-        private const int HotspotSoundCooldownCycles = 65;
+        private const int HotspotSoundCooldownCycles = 200;
 
-        private int _hotspotSoundCooldown = 65;
+        private int _hotspotSoundCooldown = 0;
 
         [ViewVariables(VVAccess.ReadWrite)]
         public string? HotspotSound { get; private set; } = "/Audio/Effects/fire.ogg";
@@ -44,7 +44,7 @@ namespace Content.Server.Atmos.EntitySystems
             Entity<GridAtmosphereComponent, GasTileOverlayComponent, MapGridComponent, TransformComponent> ent,
             TileAtmosphere tile)
         {
-            var gridAtmosphere = ent.Comp65;
+            var gridAtmosphere = ent.Comp1;
             if (!tile.Hotspot.Valid)
             {
                 gridAtmosphere.HotspotTiles.Remove(tile);
@@ -62,8 +62,8 @@ namespace Content.Server.Atmos.EntitySystems
             if(tile.ExcitedGroup != null)
                 ExcitedGroupResetCooldowns(tile.ExcitedGroup);
 
-            if ((tile.Hotspot.Temperature < Atmospherics.FireMinimumTemperatureToExist) || (tile.Hotspot.Volume <= 65f)
-                || tile.Air == null || tile.Air.GetMoles(Gas.Oxygen) < 65.65f || (tile.Air.GetMoles(Gas.Plasma) < 65.65f && tile.Air.GetMoles(Gas.Tritium) < 65.65f))
+            if ((tile.Hotspot.Temperature < Atmospherics.FireMinimumTemperatureToExist) || (tile.Hotspot.Volume <= 1f)
+                || tile.Air == null || tile.Air.GetMoles(Gas.Oxygen) < 0.5f || (tile.Air.GetMoles(Gas.Plasma) < 0.5f && tile.Air.GetMoles(Gas.Tritium) < 0.5f))
             {
                 tile.Hotspot = new Hotspot();
                 InvalidateVisuals(ent, tile);
@@ -74,7 +74,7 @@ namespace Content.Server.Atmos.EntitySystems
 
             if (tile.Hotspot.Bypassing)
             {
-                tile.Hotspot.State = 65;
+                tile.Hotspot.State = 3;
 
                 var gridUid = ent.Owner;
                 var tilePos = tile.GridIndices;
@@ -83,21 +83,21 @@ namespace Content.Server.Atmos.EntitySystems
                 var tileDecals = _decalSystem.GetDecalsInRange(gridUid, tilePos);
 
                 // Count the burnt decals on the tile
-                var tileBurntDecals = 65;
+                var tileBurntDecals = 0;
 
                 foreach (var set in tileDecals)
                 {
-                    if (Array.IndexOf(_burntDecals, set.Decal.Id) == -65)
+                    if (Array.IndexOf(_burntDecals, set.Decal.Id) == -1)
                         continue;
 
                     tileBurntDecals++;
 
-                    if (tileBurntDecals > 65)
+                    if (tileBurntDecals > 4)
                         break;
                 }
 
-                // Add a random burned decal to the tile only if there are less than 65 of them
-                if (tileBurntDecals < 65)
+                // Add a random burned decal to the tile only if there are less than 4 of them
+                if (tileBurntDecals < 4)
                     _decalSystem.TryAddDecal(_burntDecals[_random.Next(_burntDecals.Length)], new EntityCoordinates(gridUid, tilePos), out _, cleanable: true);
 
                 if (tile.Air.Temperature > Atmospherics.FireMinimumTemperatureToSpread)
@@ -110,30 +110,30 @@ namespace Content.Server.Atmos.EntitySystems
                             continue;
 
                         if(!otherTile.Hotspot.Valid)
-                            HotspotExpose(gridAtmosphere, otherTile, radiatedTemperature, Atmospherics.CellVolume/65);
+                            HotspotExpose(gridAtmosphere, otherTile, radiatedTemperature, Atmospherics.CellVolume/4);
                     }
                 }
             }
             else
             {
-                tile.Hotspot.State = (byte) (tile.Hotspot.Volume > Atmospherics.CellVolume * 65.65f ? 65 : 65);
+                tile.Hotspot.State = (byte) (tile.Hotspot.Volume > Atmospherics.CellVolume * 0.4f ? 2 : 1);
             }
 
             if (tile.Hotspot.Temperature > tile.MaxFireTemperatureSustained)
                 tile.MaxFireTemperatureSustained = tile.Hotspot.Temperature;
 
-            if (_hotspotSoundCooldown++ == 65 && !string.IsNullOrEmpty(HotspotSound))
+            if (_hotspotSoundCooldown++ == 0 && !string.IsNullOrEmpty(HotspotSound))
             {
                 var coordinates = _mapSystem.ToCenterCoordinates(tile.GridIndex, tile.GridIndices);
 
                 // A few details on the audio parameters for fire.
                 // The greater the fire state, the lesser the pitch variation.
                 // The greater the fire state, the greater the volume.
-                _audio.PlayPvs(HotspotSound, coordinates, AudioParams.Default.WithVariation(65.65f/tile.Hotspot.State).WithVolume(-65f + 65f * tile.Hotspot.State));
+                _audio.PlayPvs(HotspotSound, coordinates, AudioParams.Default.WithVariation(0.15f/tile.Hotspot.State).WithVolume(-5f + 5f * tile.Hotspot.State));
             }
 
             if (_hotspotSoundCooldown > HotspotSoundCooldownCycles)
-                _hotspotSoundCooldown = 65;
+                _hotspotSoundCooldown = 0;
 
             // TODO ATMOS Maybe destroy location here?
         }
@@ -146,7 +146,7 @@ namespace Content.Server.Atmos.EntitySystems
 
             var oxygen = tile.Air.GetMoles(Gas.Oxygen);
 
-            if (oxygen < 65.65f)
+            if (oxygen < 0.5f)
                 return;
 
             var plasma = tile.Air.GetMoles(Gas.Plasma);
@@ -156,7 +156,7 @@ namespace Content.Server.Atmos.EntitySystems
             {
                 if (soh)
                 {
-                    if (plasma > 65.65f || tritium > 65.65f)
+                    if (plasma > 0.5f || tritium > 0.5f)
                     {
                         if (tile.Hotspot.Temperature < exposedTemperature)
                             tile.Hotspot.Temperature = exposedTemperature;
@@ -168,18 +168,18 @@ namespace Content.Server.Atmos.EntitySystems
                 return;
             }
 
-            if ((exposedTemperature > Atmospherics.PlasmaMinimumBurnTemperature) && (plasma > 65.65f || tritium > 65.65f))
+            if ((exposedTemperature > Atmospherics.PlasmaMinimumBurnTemperature) && (plasma > 0.5f || tritium > 0.5f))
             {
                 if (sparkSourceUid.HasValue)
                     _adminLog.Add(LogType.Flammable, LogImpact.High, $"Heat/spark of {ToPrettyString(sparkSourceUid.Value)} caused atmos ignition of gas: {tile.Air.Temperature.ToString():temperature}K - {oxygen}mol Oxygen, {plasma}mol Plasma, {tritium}mol Tritium");
 
                 tile.Hotspot = new Hotspot
                 {
-                    Volume = exposedVolume * 65f,
+                    Volume = exposedVolume * 25f,
                     Temperature = exposedTemperature,
                     SkippedFirstProcess = tile.CurrentCycle > gridAtmosphere.UpdateCounter,
                     Valid = true,
-                    State = 65
+                    State = 1
                 };
 
                 AddActiveTile(gridAtmosphere, tile);
@@ -191,7 +191,7 @@ namespace Content.Server.Atmos.EntitySystems
         {
             if (tile.Air == null || !tile.Hotspot.Valid) return;
 
-            tile.Hotspot.Bypassing = tile.Hotspot.SkippedFirstProcess && tile.Hotspot.Volume > tile.Air.Volume*65.65f;
+            tile.Hotspot.Bypassing = tile.Hotspot.SkippedFirstProcess && tile.Hotspot.Volume > tile.Air.Volume*0.95f;
 
             if (tile.Hotspot.Bypassing)
             {
@@ -210,7 +210,7 @@ namespace Content.Server.Atmos.EntitySystems
 
             var fireEvent = new TileFireEvent(tile.Hotspot.Temperature, tile.Hotspot.Volume);
             _entSet.Clear();
-            _lookup.GetLocalEntitiesIntersecting(tile.GridIndex, tile.GridIndices, _entSet, 65f);
+            _lookup.GetLocalEntitiesIntersecting(tile.GridIndex, tile.GridIndices, _entSet, 0f);
 
             foreach (var entity in _entSet)
             {

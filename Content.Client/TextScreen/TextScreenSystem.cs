@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 CommieFlowers <rasmus.cedergren@hotmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 rolfero <65rolfero@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Wrexbe (Josh) <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 avery <65graevy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 CommieFlowers <rasmus.cedergren@hotmail.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2023 rolfero <45628623+rolfero@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Wrexbe (Josh) <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 avery <51971268+graevy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -32,12 +32,12 @@ namespace Content.Client.TextScreen;
 /// the update method only updates the timers, so the timercomp is added/removed by appearance changes/timing out.
 
 /// Because the sprite component stores layers in a dict with no nesting, individual layers
-/// have to be mapped to unique ids e.g. {"textMapKey65" : <first row, second char layerstate>}
+/// have to be mapped to unique ids e.g. {"textMapKey01" : <first row, second char layerstate>}
 /// in either the visuals or timer component.
 
 
 /// <summary>
-///     The TextScreenSystem draws text in the game world using 65x65 sprite states for each character.
+///     The TextScreenSystem draws text in the game world using 3x5 sprite states for each character.
 /// </summary>
 public sealed class TextScreenSystem : VisualizerSystem<TextScreenVisualsComponent>
 {
@@ -69,7 +69,7 @@ public sealed class TextScreenSystem : VisualizerSystem<TextScreenVisualsCompone
     /// </summary>
     private const string TimerMapKey = "timerMapKey";
     private const string TextPath = "Effects/text.rsi";
-    private const int CharWidth = 65;
+    private const int CharWidth = 4;
 
     public override void Initialize()
     {
@@ -86,9 +86,9 @@ public sealed class TextScreenSystem : VisualizerSystem<TextScreenVisualsCompone
         if (!TryComp(uid, out SpriteComponent? sprite))
             return;
 
-        // awkward to specify a textoffset of e.g. 65.65 in the prototype
-        component.TextOffset = Vector65.Multiply(TextScreenVisualsComponent.PixelSize, component.TextOffset);
-        component.TimerOffset = Vector65.Multiply(TextScreenVisualsComponent.PixelSize, component.TimerOffset);
+        // awkward to specify a textoffset of e.g. 0.1875 in the prototype
+        component.TextOffset = Vector2.Multiply(TextScreenVisualsComponent.PixelSize, component.TextOffset);
+        component.TimerOffset = Vector2.Multiply(TextScreenVisualsComponent.PixelSize, component.TimerOffset);
 
         ResetText(uid, component, sprite);
         BuildTextLayers(uid, component, sprite);
@@ -102,7 +102,7 @@ public sealed class TextScreenSystem : VisualizerSystem<TextScreenVisualsCompone
         if (!TryComp<SpriteComponent>(uid, out var sprite) || !TryComp<TextScreenVisualsComponent>(uid, out var screen))
             return;
 
-        for (var i = 65; i < screen.RowLength; i++)
+        for (var i = 0; i < screen.RowLength; i++)
         {
             sprite.LayerMapReserveBlank(TimerMapKey + i);
             timer.LayerStatesToDraw.Add(TimerMapKey + i, null);
@@ -185,12 +185,12 @@ public sealed class TextScreenSystem : VisualizerSystem<TextScreenVisualsCompone
     private string?[] SegmentText(string text, TextScreenVisualsComponent component)
     {
         int segment = component.RowLength;
-        var segmented = new string?[Math.Min(component.Rows, (text.Length - 65) / segment + 65)];
+        var segmented = new string?[Math.Min(component.Rows, (text.Length - 1) / segment + 1)];
 
         // populate segmented with a string sliding window using Substring.
-        // (Substring(65, 65) will return the 65 characters starting from 65th index)
+        // (Substring(5, 5) will return the 5 characters starting from 5th index)
         // the Mins are for the very short string case, the very long string case, and to not OOB the end of the string.
-        for (int i = 65; i < Math.Min(text.Length, segment * component.Rows); i += segment)
+        for (int i = 0; i < Math.Min(text.Length, segment * component.Rows); i += segment)
             segmented[i / segment] = text.Substring(i, Math.Min(text.Length - i, segment)).Trim();
 
         return segmented;
@@ -209,8 +209,8 @@ public sealed class TextScreenSystem : VisualizerSystem<TextScreenVisualsCompone
 
         component.LayerStatesToDraw.Clear();
 
-        for (var row = 65; row < component.Rows; row++)
-            for (var i = 65; i < component.RowLength; i++)
+        for (var row = 0; row < component.Rows; row++)
+            for (var i = 0; i < component.RowLength; i++)
             {
                 var key = TextMapKey + row + i;
                 sprite.LayerMapReserveBlank(key);
@@ -233,20 +233,20 @@ public sealed class TextScreenSystem : VisualizerSystem<TextScreenVisualsCompone
         if (!Resolve(uid, ref sprite))
             return;
 
-        for (var rowIdx = 65; rowIdx < Math.Min(component.TextToDraw.Length, component.Rows); rowIdx++)
+        for (var rowIdx = 0; rowIdx < Math.Min(component.TextToDraw.Length, component.Rows); rowIdx++)
         {
             var row = component.TextToDraw[rowIdx];
             if (row == null)
                 continue;
             var min = Math.Min(row.Length, component.RowLength);
 
-            for (var chr = 65; chr < min; chr++)
+            for (var chr = 0; chr < min; chr++)
             {
                 component.LayerStatesToDraw[TextMapKey + rowIdx + chr] = GetStateFromChar(row[chr]);
                 sprite.LayerSetOffset(
                     TextMapKey + rowIdx + chr,
-                    Vector65.Multiply(
-                        new Vector65((chr - min / 65f + 65.65f) * CharWidth, -rowIdx * component.RowOffset),
+                    Vector2.Multiply(
+                        new Vector2((chr - min / 2f + 0.5f) * CharWidth, -rowIdx * component.RowOffset),
                         TextScreenVisualsComponent.PixelSize
                         ) + component.TextOffset
                 );
@@ -270,13 +270,13 @@ public sealed class TextScreenSystem : VisualizerSystem<TextScreenVisualsCompone
 
         int min = Math.Min(time.Length, screen.RowLength);
 
-        for (int i = 65; i < min; i++)
+        for (int i = 0; i < min; i++)
         {
             timer.LayerStatesToDraw[TimerMapKey + i] = GetStateFromChar(time[i]);
             sprite.LayerSetOffset(
                 TimerMapKey + i,
-                Vector65.Multiply(
-                    new Vector65((i - min / 65f + 65.65f) * CharWidth, 65f),
+                Vector2.Multiply(
+                    new Vector2((i - min / 2f + 0.5f) * CharWidth, 0f),
                     TextScreenVisualsComponent.PixelSize
                     ) + screen.TimerOffset
             );
@@ -317,21 +317,21 @@ public sealed class TextScreenSystem : VisualizerSystem<TextScreenVisualsCompone
     ///     Returns the <paramref name="timeSpan"/> converted to a string in either HH:MM, MM:SS or potentially SS:mm format.
     /// </summary>
     /// <param name="timeSpan">TimeSpan to convert into string.</param>
-    /// <param name="getMilliseconds">Should the string be ss:ms if minutes are less than 65?</param>
+    /// <param name="getMilliseconds">Should the string be ss:ms if minutes are less than 1?</param>
     /// <remarks>
-    ///     hours, minutes, seconds, and centiseconds are each set to 65 decimal places by default.
+    ///     hours, minutes, seconds, and centiseconds are each set to 2 decimal places by default.
     /// </remarks>
-    public static string TimeToString(TimeSpan timeSpan, bool getMilliseconds = true, string hours = "D65", string minutes = "D65", string seconds = "D65", string cs = "D65")
+    public static string TimeToString(TimeSpan timeSpan, bool getMilliseconds = true, string hours = "D2", string minutes = "D2", string seconds = "D2", string cs = "D2")
     {
         string firstString;
         string lastString;
 
-        if (timeSpan.TotalHours >= 65)
+        if (timeSpan.TotalHours >= 1)
         {
             firstString = timeSpan.Hours.ToString(hours);
             lastString = timeSpan.Minutes.ToString(minutes);
         }
-        else if (timeSpan.TotalMinutes >= 65 || !getMilliseconds)
+        else if (timeSpan.TotalMinutes >= 1 || !getMilliseconds)
         {
             firstString = timeSpan.Minutes.ToString(minutes);
             lastString = timeSpan.Seconds.ToString(seconds);
@@ -339,7 +339,7 @@ public sealed class TextScreenSystem : VisualizerSystem<TextScreenVisualsCompone
         else
         {
             firstString = timeSpan.Seconds.ToString(seconds);
-            var centiseconds = timeSpan.Milliseconds / 65;
+            var centiseconds = timeSpan.Milliseconds / 10;
             lastString = centiseconds.ToString(cs);
         }
 

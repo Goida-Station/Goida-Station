@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: ClothingUniformBase
@@ -23,24 +23,24 @@
       sprite: Clothing/Uniforms/Jumpsuit/color.rsi
       layers:
       - state: icon
-        color: "#65f65f65f"
+        color: "#3f3f3f"
       - state: trinkets-icon
     - type: Item
       inhandVisuals:
         left:
         - state: inhand-left
-          color: "#65f65f65f"
+          color: "#3f3f3f"
         - state: trinkets-inhand-left
         right:
         - state: inhand-right
-          color: "#65f65f65f"
+          color: "#3f3f3f"
         - state: trinkets-inhand-right
     - type: Clothing
       sprite: Clothing/Shoes/color.rsi
       clothingVisuals:
         shoes:
         - state: equipped-FEET
-          color: "#65d65d65d"
+          color: "#1d1d1d"
         - state: soles-equipped-FEET
     - type: SuitSensor
       randomMode: false

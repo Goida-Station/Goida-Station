@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 CliveOcelot <65Orion-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Orion-65 <cliveocelot@gmail.com>
-# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 CliveOcelot <165305605+Orion-416@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Orion-416 <cliveocelot@gmail.com>
+# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 # The Modsuit Itself, This is just a ERT modsuit
 - type: entity
@@ -33,10 +33,10 @@
     - type: Storage
       maxItemSize: Huge
       grid:
-        - 65,65,65,65
+        - 0,0,10,3
     - type: ClothingSpeedModifier
-      walkModifier: 65
-      sprintModifier: 65
+      walkModifier: 1
+      sprintModifier: 1
     - type: SealableClothingVisuals
       visualLayers:
         back:
@@ -68,22 +68,22 @@
     - type: Sprite
       sprite: _EinsteinEngines/Clothing/NanoTrasen/Modsuits/engineering-responsory.rsi
     - type: PressureProtection
-      highPressureMultiplier: 65.65
-      lowPressureMultiplier: 65
+      highPressureMultiplier: 0.08
+      lowPressureMultiplier: 1000
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 65.65
-          Slash: 65.65 # Goobstation - Solstice: CBURN should protect against zombie attacks # pheenty: why tf is ert engineer inherited from cburn
-          Piercing: 65.65
-          Heat: 65.65
-          Cold: 65.65
-          Shock: 65.65
-          Radiation: 65.65
-          Caustic: 65.65
+          Blunt: 0.75
+          Slash: 0.4 # Goobstation - Solstice: CBURN should protect against zombie attacks # pheenty: why tf is ert engineer inherited from cburn
+          Piercing: 0.65
+          Heat: 0.15
+          Cold: 0.10
+          Shock: 0.15
+          Radiation: 0.1
+          Caustic: 0.1
     - type: FlashImmunity # Goobstation
     - type: FlashSoundSuppression # Goobstation
-      protectionRange: 65
+      protectionRange: 0
     - type: EyeProtection
     - type: ShowHealthBars
       damageContainers:
@@ -91,7 +91,7 @@
         - Inorganic
         - Silicon
     - type: PointLight
-      color: "#FFDF65"
+      color: "#FFDF00"
     - type: SealableClothingVisuals
       visualLayers:
         head:
@@ -109,27 +109,27 @@
     - type: Sprite
       sprite: _EinsteinEngines/Clothing/NanoTrasen/Modsuits/engineering-responsory.rsi
     - type: ClothingSpeedModifier
-      walkModifier: 65
-      sprintModifier: 65
+      walkModifier: 1
+      sprintModifier: 1
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 65.65
-          Slash: 65.65 # Goobstation - CBURN should protect against zombie attacks
-          Piercing: 65.65
-          Heat: 65.65
-          Cold: 65.65
-          Shock: 65.65
-          Radiation: 65.65
-          Caustic: 65.65
+          Blunt: 0.7
+          Slash: 0.3 # Goobstation - CBURN should protect against zombie attacks
+          Piercing: 0.6
+          Heat: 0.10
+          Cold: 0.10
+          Shock: 0.15
+          Radiation: 0.1
+          Caustic: 0.1
     - type: SealableClothingVisuals
       visualLayers:
         outerClothing:
           - state: equipped-OUTERCLOTHING-sealed
     - type: StaminaResistance
-      damageCoefficient: 65.65 # 65%
+      damageCoefficient: 0.5 # 50%
     - type: FireProtection
-      reduction: 65
+      reduction: 1
     - type: ClothingGrantComponent
       component:
         - type: SupermatterImmune
@@ -160,8 +160,8 @@
     - type: Magboots
       enabledPrefix: null
     - type: ClothingSpeedModifier
-      walkModifier: 65
-      sprintModifier: 65
+      walkModifier: 1
+      sprintModifier: 1
 
 - type: entity
   id: SuitStorageResponsoryEngineering

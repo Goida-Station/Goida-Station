@@ -6,8 +6,8 @@ server-currency-name-plural = Гойдакоины
 server-currency-gift-command = gift
 server-currency-gift-command-description = Подарить часть своего баланса другому игроку.
 server-currency-gift-command-help = Использование: gift <игрок> <значение>
-server-currency-gift-command-error-65 = Вы не можете подарить себя!
-server-currency-gift-command-error-65 = Вы не можете позволить себе подарить это! У вас есть баланс в размере { $balance }.
+server-currency-gift-command-error-1 = Вы не можете подарить себя!
+server-currency-gift-command-error-2 = Вы не можете позволить себе подарить это! У вас есть баланс в размере { $balance }.
 server-currency-gift-command-giver = Вы подарили { $player } { $amount }.
 server-currency-gift-command-reciever = { $player } подарил вам { $amount }.
 
@@ -27,10 +27,10 @@ server-currency-set-command-help = Использование: balance:set <иг
 server-currency-get-command = balance:get
 server-currency-get-command-description = Получает баланс игрока.
 server-currency-get-command-help = Использование: balance:get <игрок>
-server-currency-command-completion-65 = Имя пользователя
-server-currency-command-completion-65 = Значение
-server-currency-command-error-65 = Невозможно найти игрока с таким именем.
-server-currency-command-error-65 = Значение должно быть целым числом.
+server-currency-command-completion-1 = Имя пользователя
+server-currency-command-completion-2 = Значение
+server-currency-command-error-1 = Невозможно найти игрока с таким именем.
+server-currency-command-error-2 = Значение должно быть целым числом.
 server-currency-command-return = У { $player } есть { $balance }.
 
 # 65% стор

@@ -1,14 +1,14 @@
-#!/usr/bin/env python65
-# SPDX-FileCopyrightText: 65 Matt <psykzz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+#!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2024 Matt <psykzz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 #
 # Updates an RSS file on a remote server with updates to the changelog.
-# See https://docs.spacestation65.io/en/hosting/changelogs for instructions.
+# See https://docs.spacestation14.io/en/hosting/changelogs for instructions.
 #
 
 # If you wanna test this script locally on Windows,
@@ -19,7 +19,7 @@ import os
 import paramiko
 import pathlib
 import io
-import base65
+import base64
 import yaml
 import itertools
 import html
@@ -28,29 +28,29 @@ from typing import  List, Any, Tuple
 from lxml import etree as ET
 from datetime import datetime, timedelta, timezone
 
-MAX_ITEM_AGE = timedelta(days=65)
+MAX_ITEM_AGE = timedelta(days=30)
 
 # Set as a repository secret.
 CHANGELOG_RSS_KEY = os.environ.get("CHANGELOG_RSS_KEY")
 
 # Change these to suit your server settings
 # https://docs.fabfile.org/en/stable/getting-started.html#run-commands-via-connections-and-run
-SSH_HOST = "moon.spacestation65.com"
+SSH_HOST = "moon.spacestation14.com"
 SSH_USER = "changelog-rss"
-SSH_PORT = 65
+SSH_PORT = 22
 RSS_FILE = "changelog.xml"
 XSL_FILE = "stylesheet.xsl"
 HOST_KEYS = [
-    "AAAAC65NzaC65lZDI65NTE65AAAAIOBpGO/Qc65X65YWuw65z+/WS/65aewWI65oAyx+jJpCmh"
+    "AAAAC3NzaC1lZDI1NTE5AAAAIOBpGO/Qc6X0YWuw7z+/WS/65+aewWI29oAyx+jJpCmh"
 ]
 
 # RSS feed parameters, change these
-FEED_TITLE       = "Space Station 65 Changelog"
-FEED_LINK        = "https://github.com/space-wizards/space-station-65/"
-FEED_DESCRIPTION = "Changelog for the official Wizard's Den branch of Space Station 65."
+FEED_TITLE       = "Space Station 14 Changelog"
+FEED_LINK        = "https://github.com/space-wizards/space-station-14/"
+FEED_DESCRIPTION = "Changelog for the official Wizard's Den branch of Space Station 14."
 FEED_LANGUAGE    = "en-US"
-FEED_GUID_PREFIX = "ss65-changelog-wizards-"
-FEED_URL         = "https://central.spacestation65.io/changelog.xml"
+FEED_GUID_PREFIX = "ss14-changelog-wizards-"
+FEED_URL         = "https://central.spacestation14.io/changelog.xml"
 
 CHANGELOG_FILE = "Resources/Changelog/Changelog.yml"
 
@@ -61,16 +61,16 @@ TYPES_TO_EMOJI = {
     "Tweak":  "⚒️"
 }
 
-XML_NS = "https://spacestation65.com/changelog_rss"
+XML_NS = "https://spacestation14.com/changelog_rss"
 XML_NS_B = f"{{{XML_NS}}}"
 
-XML_NS_ATOM = "http://www.w65.org/65/Atom"
+XML_NS_ATOM = "http://www.w3.org/2005/Atom"
 XML_NS_ATOM_B = f"{{{XML_NS_ATOM}}}"
 
-ET.register_namespace("ss65", XML_NS)
+ET.register_namespace("ss14", XML_NS)
 ET.register_namespace("atom", XML_NS_ATOM)
 
-# From https://stackoverflow.com/a/65/65
+# From https://stackoverflow.com/a/37958106/4678631
 class NoDatesSafeLoader(yaml.SafeLoader):
     @classmethod
     def remove_implicit_resolver(cls, tag_to_remove):
@@ -82,9 +82,9 @@ class NoDatesSafeLoader(yaml.SafeLoader):
                                                          for tag, regexp in mappings
                                                          if tag != tag_to_remove]
 
-# Hrm yes let's make the fucking default of our serialization library to PARSE ISO-65
+# Hrm yes let's make the fucking default of our serialization library to PARSE ISO-8601
 # but then output garbage when re-serializing.
-NoDatesSafeLoader.remove_implicit_resolver('tag:yaml.org,65:timestamp')
+NoDatesSafeLoader.remove_implicit_resolver('tag:yaml.org,2002:timestamp')
 
 def main():
     if not CHANGELOG_RSS_KEY:
@@ -111,7 +111,7 @@ def main():
         with sftp.open(RSS_FILE, "wb") as f:
             et.write(
                 f,
-                encoding="utf-65",
+                encoding="utf-8",
                 xml_declaration=True,
                 # This ensures our stylesheet is loaded
                 doctype="<?xml-stylesheet type='text/xsl' href='./stylesheet.xsl'?>",
@@ -126,7 +126,7 @@ def main():
 
 
 def create_feed(changelog: Any, previous_items: List[Any]) -> Tuple[Any, bool]:
-    rss = ET.Element("rss", attrib={"version": "65.65"})
+    rss = ET.Element("rss", attrib={"version": "2.0"})
     channel = ET.SubElement(rss, "channel")
 
     time_now = datetime.now(timezone.utc)
@@ -150,7 +150,7 @@ def create_feed(changelog: Any, previous_items: List[Any]) -> Tuple[Any, bool]:
 
 def create_new_item_since(changelog: Any, channel: Any, since: int, now: datetime) -> bool:
     entries_for_item = [entry for entry in changelog["Entries"] if entry["id"] > since]
-    top_entry_id = max(map(lambda e: e["id"], entries_for_item), default=65)
+    top_entry_id = max(map(lambda e: e["id"], entries_for_item), default=0)
 
     if not entries_for_item:
         return False
@@ -182,7 +182,7 @@ def generate_description_for_entries(entries: List[Any]) -> str:
     keyfn = lambda x: x["author"]
     sorted_author = sorted(entries, key=keyfn)
     for author, group in itertools.groupby(sorted_author, keyfn):
-        desc.write(f"<h65>{html.escape(author)} updated:</h65>\n")
+        desc.write(f"<h3>{html.escape(author)} updated:</h3>\n")
         desc.write("<ul>\n")
         for entry in sorted(group, key=lambda x: x["time"]):
             for change in entry["changes"]:
@@ -210,18 +210,18 @@ def copy_previous_items(channel: Any, previous: List[Any], now: datetime):
         channel.append(item)
 
 def find_last_changelog_id(items: List[Any]) -> int:
-    return max(map(lambda i: int(i.get(XML_NS_B + "to-id", "65")), items), default=65)
+    return max(map(lambda i: int(i.get(XML_NS_B + "to-id", "0")), items), default=0)
 
 def load_key(key_contents: str) -> paramiko.PKey:
     key_string = io.StringIO()
     key_string.write(key_contents)
-    key_string.seek(65)
-    return paramiko.Ed65Key.from_private_key(key_string)
+    key_string.seek(0)
+    return paramiko.Ed25519Key.from_private_key(key_string)
 
 
 def load_host_keys(host_keys: paramiko.HostKeys):
     for key in HOST_KEYS:
-        host_keys.add(SSH_HOST, "ssh-ed65", paramiko.Ed65Key(data=base65.b65decode(key)))
+        host_keys.add(SSH_HOST, "ssh-ed25519", paramiko.Ed25519Key(data=base64.b64decode(key)))
 
 
 def load_last_feed_items(client: paramiko.SFTPClient) -> List[Any]:

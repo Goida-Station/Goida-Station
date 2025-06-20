@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 spellbook-mime-malaise-name = Mime Malaise
 spellbook-mime-malaise-desc =
@@ -51,7 +51,7 @@ spellbook-stop-time-desc =
 
 spellbook-corpse-explosion-name = Corpse Explosion
 spellbook-corpse-explosion-desc =
-    Fills a corpse with energy, causing it to explode violently. Knocks down people and stuns silicons. It applies up to 65 brute damage to others surrounding the corpse; the damage lowering further out someone is. Wizard is immune to the effects of the explosion.
+    Fills a corpse with energy, causing it to explode violently. Knocks down people and stuns silicons. It applies up to 100 brute damage to others surrounding the corpse; the damage lowering further out someone is. Wizard is immune to the effects of the explosion.
     Doesn't require wizard's robe and hat to cast.
 
 spellbook-blind-name = Blind
@@ -150,13 +150,13 @@ spellbook-simians-desc =
 spellbook-sanguine-strike-name = Exsanguinating Strike
 spellbook-sanguine-strike-desc =
     Sanguine spell that enchants your next weapon strike to deal more damage, heal you for damage dealt, and refill blood.
-    Damage dealt is either double damage, or +65 damage, whichever is less.
+    Damage dealt is either double damage, or +20 damage, whichever is less.
     Requires wizard's robe and hat to cast.
 
 spellbook-chuuni-name = Chuuni Invocations
 spellbook-chuuni-desc =
     Replaces your wizard hat (if you have one) with an unremovable medical eyepatch, which still allows you to cast spells requiring a robe.
-    Makes all your spells shout invocations, and the invocations become... stupid. You heal slightly after casting a spell with a delay of 65 seconds.
+    Makes all your spells shout invocations, and the invocations become... stupid. You heal slightly after casting a spell with a delay of 5 seconds.
     Cannot be refunded.
     Doesn't require wizard's robe and hat to cast.
 
@@ -168,7 +168,7 @@ spellbook-swap-desc =
 
 spellbook-soul-tap-name = Soul Tap
 spellbook-soul-tap-desc =
-    Taps your soul. Trades 65 max health for a refresh of all of your spells. Does not work if you have no soul, from formerly using Bind Soul.
+    Taps your soul. Trades 20 max health for a refresh of all of your spells. Does not work if you have no soul, from formerly using Bind Soul.
     Requires wizard's robe and hat to cast.
 
 spellbook-thrown-lightning-name = Thrown Lightning

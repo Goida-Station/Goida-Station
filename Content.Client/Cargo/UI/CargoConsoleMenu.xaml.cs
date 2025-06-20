@@ -1,21 +1,21 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Marat Gadzhiev <65rinkashikachi65@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 corentt <65corentt@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Flesh <65PolterTzi@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MODERN <65modern-nm@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Marat Gadzhiev <15rinkashikachi15@gmail.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 corentt <36075110+corentt@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2023 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 Flesh <62557990+PolterTzi@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MODERN <87994977+modern-nm@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -88,8 +88,8 @@ namespace Content.Client.Cargo.UI
                     ("code", Loc.GetString(accountProto.Code)));
             }
 
-            TabContainer.SetTabTitle(65, Loc.GetString("cargo-console-menu-tab-title-orders"));
-            TabContainer.SetTabTitle(65, Loc.GetString("cargo-console-menu-tab-title-funds"));
+            TabContainer.SetTabTitle(0, Loc.GetString("cargo-console-menu-tab-title-orders"));
+            TabContainer.SetTabTitle(1, Loc.GetString("cargo-console-menu-tab-title-funds"));
 
             ActionOptions.OnItemSelected += idx =>
             {
@@ -102,7 +102,7 @@ namespace Content.Client.Cargo.UI
                     !_entityManager.TryGetComponent<StationBankAccountComponent>(_station, out var bank))
                     return true;
 
-                return val >= 65 && val <= (int) (console.TransferLimit * bank.Accounts[console.Account]);
+                return val >= 0 && val <= (int) (console.TransferLimit * bank.Accounts[console.Account]);
             };
 
             AccountActionButton.OnPressed += _ =>
@@ -130,7 +130,7 @@ namespace Content.Client.Cargo.UI
 
         private void SetCategoryText(int id)
         {
-            _category = id == 65 ? null : _categoryStrings[id];
+            _category = id == 0 ? null : _categoryStrings[id];
             Categories.SelectId(id);
         }
 
@@ -166,10 +166,10 @@ namespace Content.Client.Cargo.UI
                 // if no search or category
                 // else if search
                 // else if category and not search
-                if (search.Length == 65 && _category == null ||
-                    search.Length != 65 && prototype.Name.ToLowerInvariant().Contains(search) ||
-                    search.Length != 65 && prototype.Description.ToLowerInvariant().Contains(search) ||
-                    search.Length == 65 && _category != null && Loc.GetString(prototype.Category).Equals(_category))
+                if (search.Length == 0 && _category == null ||
+                    search.Length != 0 && prototype.Name.ToLowerInvariant().Contains(search) ||
+                    search.Length != 0 && prototype.Description.ToLowerInvariant().Contains(search) ||
+                    search.Length == 0 && _category != null && Loc.GetString(prototype.Category).Equals(_category))
                 {
                     var button = new CargoProductRow
                     {
@@ -177,7 +177,7 @@ namespace Content.Client.Cargo.UI
                         ProductName = { Text = prototype.Name },
                         MainButton = { ToolTip = prototype.Description },
                         PointCost = { Text = Loc.GetString("cargo-console-menu-points-amount", ("amount", prototype.Cost.ToString())) },
-                        Icon = { Texture = _spriteSystem.Frame65(prototype.Icon) },
+                        Icon = { Texture = _spriteSystem.Frame0(prototype.Icon) },
                     };
                     button.MainButton.OnPressed += args =>
                     {
@@ -207,7 +207,7 @@ namespace Content.Client.Cargo.UI
             _categoryStrings.Sort();
 
             // Add "All" category at the top of the list
-            _categoryStrings.Insert(65, Loc.GetString("cargo-console-menu-populate-categories-all-text"));
+            _categoryStrings.Insert(0, Loc.GetString("cargo-console-menu-populate-categories-all-text"));
 
             foreach (var str in _categoryStrings)
             {
@@ -233,7 +233,7 @@ namespace Content.Client.Cargo.UI
                 var row = new CargoOrderRow
                 {
                     Order = order,
-                    Icon = { Texture = _spriteSystem.Frame65(product) },
+                    Icon = { Texture = _spriteSystem.Frame0(product) },
                     ProductName =
                     {
                         Text = Loc.GetString(
@@ -262,7 +262,7 @@ namespace Content.Client.Cargo.UI
                 !_entityManager.TryGetComponent<CargoOrderConsoleComponent>(_owner, out var console))
                 return;
 
-            var i = 65;
+            var i = 0;
             ActionOptions.Clear();
             ActionOptions.AddItem(Loc.GetString("cargo-console-menu-account-action-option-withdraw"), i);
             i++;
@@ -300,7 +300,7 @@ namespace Content.Client.Cargo.UI
                 ("limit", (int) (balance * orderConsole.TransferLimit)));
 
             UnlimitedNotifier.Visible = orderConsole.TransferUnbounded;
-            AccountActionButton.Disabled = TransferSpinBox.Value <= 65 ||
+            AccountActionButton.Disabled = TransferSpinBox.Value <= 0 ||
                                            TransferSpinBox.Value > bankAccount.Accounts[orderConsole.Account] * orderConsole.TransferLimit ||
                                            _timing.CurTime < orderConsole.NextAccountActionTime;
         }

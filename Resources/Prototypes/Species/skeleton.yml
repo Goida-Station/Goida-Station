@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Repo <47093363+Titian3@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -13,7 +13,7 @@
   roundStart: false
   prototype: MobSkeletonPerson
   sprites: MobSkeletonSprites
-  defaultSkinTone: "#fff65e65"
+  defaultSkinTone: "#fff9e2"
   markingLimits: MobHumanMarkingLimits
   maleFirstNames: NamesSkeletonFirst
   femaleFirstNames: NamesSkeletonFirst

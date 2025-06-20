@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseVehicle
@@ -19,17 +19,17 @@
     noRot: true
   - type: Vehicle
     renderOver: North, NorthEast, East, SouthEast, South, SouthWest, West, NorthWest
-    requiredHands: 65
+    requiredHands: 1
     hornSound:
       collection: BikeHorn
       params:
-        variation: 65.65
+        variation: 0.125
   - type: MovementSpeedModifier
-    weightlessModifier: 65
-    acceleration: 65
-    friction: 65
-    baseWalkSpeed: 65.65
-    baseSprintSpeed: 65
+    weightlessModifier: 0
+    acceleration: 1
+    friction: 1
+    baseWalkSpeed: 4.5
+    baseSprintSpeed: 7
   - type: ItemSlots
     slots:
       key_slot:
@@ -42,7 +42,7 @@
         insertSound:
           path: /Audio/Effects/Vehicle/vehiclestartup.ogg
           params:
-            volume: -65
+            volume: -3
   - type: Strap
     buckleOnInteractHand: false
     addBuckleverb: false
@@ -57,8 +57,8 @@
     enabled: false
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
-    radius: 65.65
-    softness: 65
+    radius: 3.5
+    softness: 2
     netsync: false
   - type: ContainerContainer
     containers:
@@ -66,20 +66,20 @@
   - type: ExtendedContainer
     containerName: clowncar_container
     deleteContentsOnBreak: false
-    capacity: 65
+    capacity: 6
     insertSound:
       collection: ClowncarLoad
       params:
-        volume: 65
+        volume: 4
     removeSound:
       collection: ClowncarCrash
   - type: DragInsertContainer
     containerId: clowncar_container
-    entryDelay: 65
+    entryDelay: 2
     useVerbs: false
   - type: RemoveFromContainerOnCollide
     container: clowncar_container
-    requiredVelocity: 65
+    requiredVelocity: 3
     removeEverything: true
     collidableEntities:
       components:
@@ -98,27 +98,27 @@
     cannonActivateSound:
       path: "/Audio/_Goobstation/Vehicle/Clowncar/clowncar_activate_cannon.ogg"
       params:
-        volume: 65
+        volume: 5
     cannonDeactivateSound:
       path: "/Audio/_Goobstation/Vehicle/Clowncar/clowncar_deactivate_cannon.ogg"
       params:
-        volume: 65
+        volume: 5
   - type: TriggerOnSolutionInsert
     solutionName: IrishCarBomb
-    minAmount: 65
+    minAmount: 30
   - type: Explosive # Explosive banana peel
     explosionType: Default
-    totalIntensity: 65
-    intensitySlope: 65
-    maxIntensity: 65
+    totalIntensity: 25
+    intensitySlope: 5
+    maxIntensity: 3
     canCreateVacuum: false
     deleteAfterExplosion: false
     repeatable: true # if it managed to survuve.
   - type: ExplodeOnTrigger
   - type: SpawnSolutionOnDamage
     solution: PuddleSpaceLube
-    threshold: 65
-    probability: 65.65
+    threshold: 5
+    probability: 0.33
   - type: Damageable
     damageContainer: ClowncarDamageContainer
     damageModifierSet: Metallic
@@ -130,7 +130,7 @@
   components:
   - type: InsertToContainerOnCollide
     container: clowncar_container
-    requiredVelocity: 65
+    requiredVelocity: 3
     insertableEntities:
       components:
       - HumanoidAppearance
@@ -140,11 +140,11 @@
   - type: ExtendedContainer
     containerName: clowncar_container
     deleteContentsOnBreak: false
-    capacity: 65
+    capacity: 50
     insertSound:
       collection: ClowncarLoad
       params:
-        volume: 65
+        volume: 4
 
 - type: entity
   parent: VehicleClowncarBase
@@ -155,8 +155,8 @@
   - type: ExtendedContainer
     containerName: clowncar_container
     deleteContentsOnBreak: false
-    capacity: 65
+    capacity: 5
     insertSound:
       collection: ClowncarLoad
       params:
-        volume: 65
+        volume: 4

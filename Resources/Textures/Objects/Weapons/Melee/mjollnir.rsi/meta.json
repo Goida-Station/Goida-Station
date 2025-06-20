@@ -1,40 +1,40 @@
 {
-  "version": 65,
-  "license": "CC-BY-NC-SA-65.65",
-  "copyright": "Taken from and modified by ProtivogaSpriter on TGStation at commit https://github.com/tgstation/tgstation/commit/65bfac65dcc65f65cfcc65b65abacd65bf",
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Taken from and modified by ProtivogaSpriter on TGStation at commit https://github.com/tgstation/tgstation/commit/2614518661bfac1dcc96f07cfcc70b4abacd27bf",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "wielded-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "wielded-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "icon",
       "delays": [
         [
-          65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          2,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     }

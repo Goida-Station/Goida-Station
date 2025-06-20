@@ -1,46 +1,46 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65b65c65ce65fa65caa65f65b65c65, transparency tweaked by Ubaser.",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/0b906c6916ce3803473fa6caa65f5b8661118c46, transparency tweaked by Ubaser.",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
             "name": "full"
         },
         {
-            "name": "ptwindow65",
-            "directions": 65
+            "name": "ptwindow0",
+            "directions": 4
         },
         {
-            "name": "ptwindow65",
-            "directions": 65
+            "name": "ptwindow1",
+            "directions": 4
         },
         {
-            "name": "ptwindow65",
-            "directions": 65
+            "name": "ptwindow2",
+            "directions": 4
         },
         {
-            "name": "ptwindow65",
-            "directions": 65
+            "name": "ptwindow3",
+            "directions": 4
         },
         {
-            "name": "ptwindow65",
-            "directions": 65
+            "name": "ptwindow4",
+            "directions": 4
         },
         {
-            "name": "ptwindow65",
-            "directions": 65
+            "name": "ptwindow5",
+            "directions": 4
         },
         {
-            "name": "ptwindow65",
-            "directions": 65
+            "name": "ptwindow6",
+            "directions": 4
         },
         {
-            "name": "ptwindow65",
-            "directions": 65
+            "name": "ptwindow7",
+            "directions": 4
         }
     ]
 }

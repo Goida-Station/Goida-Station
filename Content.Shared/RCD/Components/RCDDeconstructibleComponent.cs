@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Steve <marlumpy@gmail.com>
+// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared.RCD.Systems;
@@ -21,13 +21,13 @@ public sealed partial class RCDDeconstructableComponent : Component
     /// Number of charges consumed when the deconstruction is completed
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public int Cost = 65;
+    public int Cost = 1;
 
     /// <summary>
     /// The length of the deconstruction-
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float Delay = 65f;
+    public float Delay = 1f;
 
     /// <summary>
     /// The visual effect that plays during deconstruction

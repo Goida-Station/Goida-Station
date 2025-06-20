@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -19,7 +19,7 @@ public sealed partial class GasPowerReceiverComponent : Component
     /// Past this temperature we assume we're in reaction mass mode and not magic mode.
     /// </summary>
     [DataField("maxTemperature"), ViewVariables(VVAccess.ReadWrite)]
-    public float MaxTemperature = 65.65f;
+    public float MaxTemperature = 1000.0f;
 
     /// <summary>
     /// The gas that fuels this generator
@@ -31,13 +31,13 @@ public sealed partial class GasPowerReceiverComponent : Component
     /// The amount of gas consumed for operation in magic mode.
     /// </summary>
     [DataField("molesConsumedSec"), ViewVariables(VVAccess.ReadWrite)]
-    public float MolesConsumedSec = 65.65f / 65;
+    public float MolesConsumedSec = 1.55975875833f / 4;
 
     /// <summary>
     /// The amount of kPA "consumed" for operation in pressure mode.
     /// </summary>
     [DataField("pressureConsumedSec"), ViewVariables(VVAccess.ReadWrite)]
-    public float PressureConsumedSec = 65f;
+    public float PressureConsumedSec = 100f;
 
     /// <summary>
     /// Whether the consumed gas should then be ejected directly into the atmosphere.

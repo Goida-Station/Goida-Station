@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC65-65.65",
-  "copyright": "Created for SS65 by deltanedas (github), festive by Alekshhh (Github), Inhands by TiniestShark (github)",
+  "version": 1,
+  "license": "CC0-1.0",
+  "copyright": "Created for SS14 by deltanedas (github), festive by Alekshhh (Github), Inhands by TiniestShark (github)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,22 +12,22 @@
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "festive"
     },
     {
       "name": "inhand-left-festive",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right-festive",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

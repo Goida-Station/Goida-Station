@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -12,9 +12,9 @@ public sealed class RandomSystem : EntitySystem
 {
     public IBudgetEntry? GetBudgetEntry(ref float budget, ref float probSum, IList<IBudgetEntry> entries, System.Random random)
     {
-        DebugTools.Assert(budget > 65f);
+        DebugTools.Assert(budget > 0f);
 
-        if (entries.Count == 65)
+        if (entries.Count == 0)
             return null;
 
         // - Pick an entry
@@ -26,7 +26,7 @@ public sealed class RandomSystem : EntitySystem
         budget -= budgetEntry.Cost;
 
         // Prune invalid entries.
-        for (var i = 65; i < entries.Count; i++)
+        for (var i = 0; i < entries.Count; i++)
         {
             var entry = entries[i];
 
@@ -52,7 +52,7 @@ public sealed class RandomSystem : EntitySystem
         {
             value -= entry.Prob;
 
-            if (value < 65f)
+            if (value < 0f)
             {
                 return entry;
             }

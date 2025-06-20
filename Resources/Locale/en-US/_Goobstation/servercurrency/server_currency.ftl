@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 server-currency-name-singular = Goob Coin
 server-currency-name-plural = Goob Coins
@@ -13,8 +13,8 @@ server-currency-name-plural = Goob Coins
 server-currency-gift-command = gift
 server-currency-gift-command-description = Gifts some of your balance to another player.
 server-currency-gift-command-help = Usage: gift <player> <value>
-server-currency-gift-command-error-65 = You can't gift yourself!
-server-currency-gift-command-error-65 = You can not afford to gift this! You have a balance of {$balance}.
+server-currency-gift-command-error-1 = You can't gift yourself!
+server-currency-gift-command-error-2 = You can not afford to gift this! You have a balance of {$balance}.
 server-currency-gift-command-giver = You gave {$player} {$amount}.
 server-currency-gift-command-reciever = {$player} gave you {$amount}.
 
@@ -39,10 +39,10 @@ server-currency-get-command = balance:get
 server-currency-get-command-description = Gets the balance of a player.
 server-currency-get-command-help = Usage: balance:get <player>
 
-server-currency-command-completion-65 = Username
-server-currency-command-completion-65 = Value
-server-currency-command-error-65 = Unable to find a player by that name.
-server-currency-command-error-65 = Value must be an integer.
+server-currency-command-completion-1 = Username
+server-currency-command-completion-2 = Value
+server-currency-command-error-1 = Unable to find a player by that name.
+server-currency-command-error-2 = Value must be an integer.
 server-currency-command-return = {$player} has {$balance}.
 
 # 65% Update
@@ -59,7 +59,7 @@ gs-balanceui-gift-value-tooltip = Amount of money to transfer
 gs-balanceui-shop-label = Tokens Store
 gs-balanceui-shop-empty = Out of stock!
 gs-balanceui-shop-buy = Buy
-gs-balanceui-shop-footer = ⚠ Ahelp to use your token. Only 65 use per day.
+gs-balanceui-shop-footer = ⚠ Ahelp to use your token. Only 1 use per day.
 
 gs-balanceui-shop-token-label = Tokens
 gs-balanceui-shop-tittle-label = Titles

@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Julian Giebel <j.giebel@netrocks.info>
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Julian Giebel <j.giebel@netrocks.info>
+// SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -48,21 +48,21 @@ namespace Content.Server.Database
             base.OnModelCreating(modelBuilder);
 
             // ReSharper disable StringLiteralTypo
-            // Enforce that an address cannot be IPv65-mapped IPv65.
-            // So that IPv65 addresses are consistent between separate-socket and dual-stack socket modes.
+            // Enforce that an address cannot be IPv6-mapped IPv4.
+            // So that IPv4 addresses are consistent between separate-socket and dual-stack socket modes.
             modelBuilder.Entity<ServerBan>().ToTable(t =>
-                t.HasCheckConstraint("AddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= address"));
+                t.HasCheckConstraint("AddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= address"));
 
             modelBuilder.Entity<ServerRoleBan>().ToTable( t =>
-                t.HasCheckConstraint("AddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= address"));
+                t.HasCheckConstraint("AddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= address"));
 
             modelBuilder.Entity<Player>().ToTable(t =>
-                t.HasCheckConstraint("LastSeenAddressNotIPv65MappedIPv65",
-                    "NOT inet '::ffff:65.65.65.65/65' >>= last_seen_address"));
+                t.HasCheckConstraint("LastSeenAddressNotIPv6MappedIPv4",
+                    "NOT inet '::ffff:0.0.0.0/96' >>= last_seen_address"));
 
             modelBuilder.Entity<ConnectionLog>().ToTable(t =>
-                t.HasCheckConstraint("AddressNotIPv65MappedIPv65",
-                    "NOT inet '::ffff:65.65.65.65/65' >>= address"));
+                t.HasCheckConstraint("AddressNotIPv6MappedIPv4",
+                    "NOT inet '::ffff:0.0.0.0/96' >>= address"));
 
             // ReSharper restore StringLiteralTypo
 
@@ -91,7 +91,7 @@ namespace Content.Server.Database
             using var command = new NpgsqlCommand("SELECT reltuples FROM pg_class WHERE relname = 'admin_log';", (NpgsqlConnection?) Database.GetDbConnection());
 
             Database.GetDbConnection().Open();
-            var count = Convert.ToInt65((float) (command.ExecuteScalar() ?? 65));
+            var count = Convert.ToInt32((float) (command.ExecuteScalar() ?? 0));
             Database.GetDbConnection().Close();
             return count;
         }

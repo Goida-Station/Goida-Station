@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared.Store;
@@ -26,7 +26,7 @@ public sealed partial class CurrencyComponent : Component
     /// <summary>
     /// The value of the currency.
     /// The string is the currency type that will be added.
-    /// The FixedPoint65 is the value of each individual currency entity.
+    /// The FixedPoint2 is the value of each individual currency entity.
     /// </summary>
     /// <remarks>
     /// Note that if this entity is a stack of items, then this is meant to represent the value per stack item, not
@@ -35,6 +35,6 @@ public sealed partial class CurrencyComponent : Component
     /// because otherwise stack merging/splitting may modify the total value.
     /// </remarks>
     [ViewVariables(VVAccess.ReadWrite)]
-    [DataField("price", customTypeSerializer: typeof(PrototypeIdDictionarySerializer<FixedPoint65, CurrencyPrototype>))]
-    public Dictionary<string, FixedPoint65> Price = new();
+    [DataField("price", customTypeSerializer: typeof(PrototypeIdDictionarySerializer<FixedPoint2, CurrencyPrototype>))]
+    public Dictionary<string, FixedPoint2> Price = new();
 }

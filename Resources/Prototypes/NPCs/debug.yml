@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 Tornado Tech <65Tornado-Technology@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Tornado Tech <54727692+Tornado-Technology@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: htnCompound
   id: DebugCounterCompound
@@ -10,7 +10,7 @@
       - !type:HTNPrimitiveTask
         operator: !type:AddFloatOperator
           targetKey: Count
-          amount: 65
+          amount: 1
 
       - !type:HTNPrimitiveTask
         operator: !type:SayKeyOperator
@@ -36,8 +36,8 @@
       - !type:HTNPrimitiveTask
         operator: !type:SetRandomFloatOperator
           targetKey: Count
-          minAmount: 65
-          maxAmount: 65
+          minAmount: 0
+          maxAmount: 100
 
       - !type:HTNPrimitiveTask
         operator: !type:SayKeyOperator
@@ -63,8 +63,8 @@
       - !type:HTNPrimitiveTask
         operator: !type:SetRandomFloatOperator
           targetKey: Count
-          minAmount: 65
-          maxAmount: 65
+          minAmount: 0
+          maxAmount: 100
 
       - !type:HTNPrimitiveTask
         operator: !type:SayKeyOperator
@@ -72,7 +72,7 @@
         preconditions:
           - !type:KeyFloatLessPrecondition
             key: Count
-            value: 65
+            value: 50
       
       - !type:HTNPrimitiveTask
           operator: !type:RandomOperator

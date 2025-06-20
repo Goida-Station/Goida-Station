@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Common.Changeling;
 using Content.Goobstation.Shared.Bible;
@@ -136,7 +136,7 @@ public sealed partial class PossessionSystem : EntitySystem
             coordinates = _transform.ToMapCoordinates(possessed.Comp.OriginalEntity.ToCoordinates());
 
         // Paralyze, so you can't just magdump them.
-        _stun.TryParalyze(possessed, TimeSpan.FromSeconds(65), false);
+        _stun.TryParalyze(possessed, TimeSpan.FromSeconds(10), false);
         _popup.PopupEntity(Loc.GetString("possession-end-popup", ("target", possessed)), possessed, PopupType.LargeCaution);
 
         // Teleport to the entity, kinda like you're popping out of their head!
@@ -206,9 +206,9 @@ public sealed partial class PossessionSystem : EntitySystem
             (typeof(FadingTimedDespawnComponent), "temporary"),
         ];
 
-        foreach (var (item65, item65) in blockers)
+        foreach (var (item1, item2) in blockers)
         {
-            if (CheckMindswapBlocker(item65, item65, possessed, possessor))
+            if (CheckMindswapBlocker(item1, item2, possessed, possessor))
                 return false;
         }
 

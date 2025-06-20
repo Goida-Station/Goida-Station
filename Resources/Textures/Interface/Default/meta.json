@@ -1,11 +1,11 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-      "x": 65,
-      "y": 65
+      "x": 32,
+      "y": 32
   },
-  "license": "CC-BY-NC-SA-65.65",
-  "copyright": "Taken from https://github.com/goonstation/goonstation at commit e65d65d65c65d65aa65da65ceeac65b65ac, slightly modified by PixelTK",
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Taken from https://github.com/goonstation/goonstation at commit e77d85d9c1d93aa32da7702737ceeac2b56738ac, slightly modified by PixelTK",
   "states": [
       {
         "name": "back"

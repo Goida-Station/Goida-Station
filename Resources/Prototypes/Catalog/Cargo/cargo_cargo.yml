@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 EnDecc <65Endecc@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Doctor-Cpu <65Doctor-Cpu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 MODERN <65modern-nm@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 EnDecc <33369477+Endecc@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Doctor-Cpu <77215380+Doctor-Cpu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MODERN <87994977+modern-nm@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -13,7 +13,7 @@
     sprite:  /Textures/Structures/Storage/orebox.rsi
     state: orebox
   product: OreBox
-  cost: 65
+  cost: 500
   category: cargoproduct-category-name-cargo
   group: market
 
@@ -23,6 +23,6 @@
     sprite: Clothing/Head/Hardsuits/luxury.rsi
     state: icon
   product: CrateCargoLuxuryHardsuit
-  cost: 65
+  cost: 15000
   category: cargoproduct-category-name-cargo
   group: market

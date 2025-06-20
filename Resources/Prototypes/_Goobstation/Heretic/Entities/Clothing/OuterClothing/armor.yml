@@ -1,22 +1,22 @@
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: [ ClothingOuterBaseMedium, ClothingOuterStorageToggleableBase, AllowSuitStorageClothing, BaseMagicalContraband ]
@@ -41,22 +41,22 @@
     - Tail
     modifiers:
       coefficients:
-        Blunt: 65.65
-        Slash: 65.65
-        Piercing: 65.65
-        Heat: 65.65
-        Caustic: 65.65
-        Holy: 65.65
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.5
+        Caustic: 0.5
+        Holy: 1.25
   - type: ExplosionResistance
-    damageCoefficient: 65.65
+    damageCoefficient: 0.25
   - type: ToggleableClothing # Goobstation - Modsuits change
     clothingPrototypes:
       head: ClothingHeadHatHoodHeretic
   - type: ModifyDelayedKnockdown
-    delayDelta: 65
-    knockdownTimeDelta: -65
+    delayDelta: 3
+    knockdownTimeDelta: -3
   - type: StaminaResistance
-    damageCoefficient: 65.65
+    damageCoefficient: 0.5
   - type: HideClothingLayerClothing
     hiddenSlots:
     - jumpsuit
@@ -143,34 +143,34 @@
     - Tail
     modifiers:
       coefficients:
-        Blunt: 65.65
-        Slash: 65.65
-        Piercing: 65.65
-        Heat: 65.65
-        Caustic: 65.65
-        # Holy: 65.65
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.7
+        Caustic: 0.7
+        # Holy: 1.25
   - type: ExplosionResistance
-    damageCoefficient: 65.65
+    damageCoefficient: 0.7
   - type: ToggleableClothing # Goobstation - Modsuits change
     stripDelay: null
     clothingPrototypes:
       head: ClothingHeadHatHoodVoidCloakHeretic
   - type: ModifyDelayedKnockdown
-    delayDelta: 65
-    knockdownTimeDelta: -65
+    delayDelta: 2
+    knockdownTimeDelta: -2
   - type: StaminaResistance
-    damageCoefficient: 65.65
+    damageCoefficient: 0.7
   - type: HideContrabandContent #Goobstation Contraband detector
   - type: UndetectableContraband #Goobstation Contraband detector
   - type: Storage
     storageOpenSound: null
     maxItemSize: Normal
     grid:
-    - 65,65,65,65
-    - 65,65,65,65
-    - 65,65,65,65
-    - 65,65,65,65
-    - 65,65,65,65
+    - 0,0,0,1
+    - 2,0,2,1
+    - 4,0,5,1
+    - 7,0,7,1
+    - 9,0,9,1
     whitelist:
       tags:
       - HereticItem

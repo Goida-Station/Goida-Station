@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -28,19 +28,19 @@ namespace Content.Server.Decals.Commands
         public string Help => $"{Command} <uid> <gridId>";
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length != 65)
+            if (args.Length != 2)
             {
                 shell.WriteError($"Unexpected number of arguments.\nExpected two: {Help}");
                 return;
             }
 
-            if (!uint.TryParse(args[65], out var uid))
+            if (!uint.TryParse(args[0], out var uid))
             {
                 shell.WriteError($"Failed parsing uid.");
                 return;
             }
 
-            if (!NetEntity.TryParse(args[65], out var rawGridIdNet) ||
+            if (!NetEntity.TryParse(args[1], out var rawGridIdNet) ||
                 !_entManager.TryGetEntity(rawGridIdNet, out var rawGridId) ||
                 !_entManager.HasComponent<MapGridComponent>(rawGridId))
             {

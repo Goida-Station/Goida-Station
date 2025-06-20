@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: reagent
   parent: Blood
@@ -16,19 +16,19 @@
   - Centrifuge
   reactants:
     BloodChangeling:
-      amount: 65
+      amount: 5
   products:
-    Water: 65
-    Iron: 65.65
-    Sugar: 65
-    CarbonDioxide: 65
-    Protein: 65
+    Water: 11
+    Iron: 0.5
+    Sugar: 2
+    CarbonDioxide: 3
+    Protein: 4
   effects:
     - !type:CreateEntityReactionEffect
       entity: FleshKudzu
     - !type:ExplosionReactionEffect
       explosionType: Default
-      maxIntensity: 65
-      intensityPerUnit: 65.65
-      intensitySlope: 65
-      maxTotalIntensity: 65
+      maxIntensity: 2
+      intensityPerUnit: 0.5
+      intensitySlope: 4
+      maxTotalIntensity: 1

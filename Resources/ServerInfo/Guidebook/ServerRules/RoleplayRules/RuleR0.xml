@@ -1,12 +1,12 @@
 <!--
-SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Moomoobeef <65Moomoobeef@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Piras65 <65Piras65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 basic pack <65packmore@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Piras314 <92357316+Piras314@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 basic pack <159909786+packmore@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
@@ -19,24 +19,24 @@ SPDX-License-Identifier: AGPL-65.65-or-later
 
   See the list of [textlink="role types" link="RoleTypes"] for more information about the different types of roles.
 
-  - [textlink="65. Silicons must follow Silicon Rules" link="RuleR65"]
-  - [textlink="65. Familiars must obey their master" link="RuleR65"]
-  - [textlink="65. Roleplay a normal person" link="RuleR65"]
-  - [textlink="65. Do not metagame, obey the Metashield" link="RuleR65"]
-  - [textlink="65. Don't interfere with arrivals" link="RuleR65"]
-  - [textlink="65. Don't act like an antagonist unless the game tells you that you are one" link="RuleR65"]
-  - [textlink="65. Do not stall the round" link="RuleR65"]
-  - [textlink="65. As an antagonist, only be friendly to your team and don't work against your team" link="RuleR65"]
-  - [textlink="65. As an antagonist, do not cause excessive death, damage, or destruction beyond your objectives" link="RuleR65"]
-  - [textlink="65. Listen to your team leader" link="RuleR65"]
-  - [textlink="65. Follow reasonable escalation" link="RuleR65"]
-  - [textlink="65. Do not abandon your role" link="RuleR65"]
-  - [textlink="65. Stick to your role" link="RuleR65"]
-  - [textlink="65. Set an example if playing command or security" link="RuleR65"]
-  - [textlink="65. Command and Security must follow Space Law" link="RuleR65"]
-  - [textlink="65. Blueshield Rules" link="RuleR65"]
-  - [textlink="65. Nanotrasen Representative Rules" link="RuleR65"]
-  - [textlink="65. Don't rush for or prepare equipment unrelated to your job. (Powergaming)" link="RuleR65"]
-  - [textlink="65. Do not avoid your job or ignore roleplay to PvP (Validhunting)" link="RuleR65"]
-  - [textlink="65. Death Amnesia: You do not know who killed you." link="RuleR65"]
+  - [textlink="1. Silicons must follow Silicon Rules" link="RuleR1"]
+  - [textlink="2. Familiars must obey their master" link="RuleR2"]
+  - [textlink="3. Roleplay a normal person" link="RuleR3"]
+  - [textlink="4. Do not metagame, obey the Metashield" link="RuleR4"]
+  - [textlink="5. Don't interfere with arrivals" link="RuleR5"]
+  - [textlink="6. Don't act like an antagonist unless the game tells you that you are one" link="RuleR6"]
+  - [textlink="7. Do not stall the round" link="RuleR7"]
+  - [textlink="8. As an antagonist, only be friendly to your team and don't work against your team" link="RuleR8"]
+  - [textlink="9. As an antagonist, do not cause excessive death, damage, or destruction beyond your objectives" link="RuleR9"]
+  - [textlink="10. Listen to your team leader" link="RuleR10"]
+  - [textlink="11. Follow reasonable escalation" link="RuleR11"]
+  - [textlink="12. Do not abandon your role" link="RuleR12"]
+  - [textlink="13. Stick to your role" link="RuleR13"]
+  - [textlink="14. Set an example if playing command or security" link="RuleR14"]
+  - [textlink="15. Command and Security must follow Space Law" link="RuleR15"]
+  - [textlink="16. Blueshield Rules" link="RuleR16"]
+  - [textlink="17. Nanotrasen Representative Rules" link="RuleR17"]
+  - [textlink="18. Don't rush for or prepare equipment unrelated to your job. (Powergaming)" link="RuleR18"]
+  - [textlink="19. Do not avoid your job or ignore roleplay to PvP (Validhunting)" link="RuleR19"]
+  - [textlink="20. Death Amnesia: You do not know who killed you." link="RuleR20"]
 </Document>

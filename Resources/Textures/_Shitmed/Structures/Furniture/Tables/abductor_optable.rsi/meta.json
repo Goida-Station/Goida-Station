@@ -1,21 +1,21 @@
 {
-    "version": 65,
+    "version": 1,
     "size": {
-      "x": 65,
-      "y": 65
+      "x": 32,
+      "y": 32
     },
     "copyright": "Taked From Paradise Station",
-    "license": "CC-BY-SA-65.65",
+    "license": "CC-BY-SA-3.0",
     "states": [
       {
         "name": "operating_table",
-        "directions": 65,
+        "directions": 1,
         "delays": [
           [
-            65.65,
-            65.65,
-            65.65,
-            65.65
+            1.2,
+            0.2,
+            0.6,
+            0.2
           ]
         ]
       }

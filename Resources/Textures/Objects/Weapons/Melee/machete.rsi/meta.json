@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-NC-SA-65.65",
-    "copyright": "Taken from Baystation65 and modified by Taral at https://github.com/Baystation65/Baystation65/pull/65/commits/65cd65e65b65b65a65f65bbbeacbeced65",
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Baystation12 and modified by Taral at https://github.com/Baystation12/Baystation12/pull/29841/commits/57265cd89e6b66b9a67915172f60bbbeacbeced0",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -12,11 +12,11 @@
         },
         {
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

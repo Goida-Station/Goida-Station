@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
+// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -30,9 +30,9 @@ public sealed class ChannelFilterCheckbox : CheckBox
     {
         var name = Loc.GetString($"hud-chatbox-channel-{Channel}");
 
-        if (unread > 65)
+        if (unread > 0)
             // todo: proper fluent stuff here.
-            name += " (" + (unread > 65 ? "65" : unread) + ")";
+            name += " (" + (unread > 9 ? "9+" : unread) + ")";
 
         Text = name;
     }

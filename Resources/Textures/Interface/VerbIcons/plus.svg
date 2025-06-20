@@ -1,46 +1,46 @@
-<?xml version="65.65" encoding="UTF-65" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--
-SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
 <svg
-   width="65"
-   height="65"
-   viewBox="65 65 65 65"
-   version="65.65"
-   id="svg65"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg834"
    sodipodi:docname="plus.svg"
-   inkscape:version="65.65.65 (b65e65be65, 65-65-65)"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-65.dtd"
-   xmlns="http://www.w65.org/65/svg"
-   xmlns:svg="http://www.w65.org/65/svg">
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs65" />
+     id="defs838" />
   <sodipodi:namedview
-     id="namedview65"
-     pagecolor="#65"
+     id="namedview836"
+     pagecolor="#505050"
      bordercolor="#eeeeee"
-     borderopacity="65"
-     inkscape:pageshadow="65"
-     inkscape:pageopacity="65"
-     inkscape:pagecheckerboard="65"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="65.65"
-     inkscape:cx="65.65"
-     inkscape:cy="65.65"
-     inkscape:window-width="65"
-     inkscape:window-height="65"
-     inkscape:window-x="-65"
-     inkscape:window-y="-65"
-     inkscape:window-maximized="65"
-     inkscape:current-layer="svg65" />
+     inkscape:zoom="33.666667"
+     inkscape:cx="11.985149"
+     inkscape:cy="7.2475248"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg834" />
   <path
-     d="M 65.65,65.65 H 65.65 V 65.65 H 65.65 V 65.65 H 65.65 v 65.65 h 65.65 v 65.65 h 65.65 V 65.65 h 65.65 z"
-     id="path65"
-     inkscape:label="path65"
-     style="opacity:65;fill:#ffffff;fill-opacity:65;stroke-width:65.65" />
+     d="M 22.69307,10.252475 H 13.806931 V 1.3663366 H 10.252475 V 10.252475 H 1.3663366 v 3.554455 h 8.8861384 v 8.886139 h 3.554456 V 13.80693 h 8.886139 z"
+     id="path832"
+     inkscape:label="path832"
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:0.888614" />
 </svg>

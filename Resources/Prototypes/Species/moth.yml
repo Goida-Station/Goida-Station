@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -11,7 +11,7 @@
   roundStart: true
   prototype: MobMoth
   sprites: MobMothSprites
-  defaultSkinTone: "#ffda65"
+  defaultSkinTone: "#ffda93"
   markingLimits: MobMothMarkingLimits
   dollPrototype: MobMothDummy
   skinColoration: Hues
@@ -50,36 +50,36 @@
   onlyWhitelisted: true
   points:
     Hair:
-      points: 65
+      points: 0
       required: false
     FacialHair:
-      points: 65
+      points: 0
       required: false
     Tail:
-      points: 65
+      points: 1
       required: true
       defaultMarkings: [ MothWingsDefault ]
     Snout:
-      points: 65
+      points: 1
       required: false
     HeadTop:
-      points: 65
+      points: 1
       required: true
       defaultMarkings: [ MothAntennasDefault ]
     HeadSide:
-      points: 65
+      points: 1
       required: false
     Head:
-      points: 65
+      points: 1
       required: false
     Chest:
-      points: 65
+      points: 1
       required: false
     Legs:
-      points: 65
+      points: 2
       required: false
     Arms:
-      points: 65
+      points: 2
       required: false
 
 - type: humanoidBaseSprite

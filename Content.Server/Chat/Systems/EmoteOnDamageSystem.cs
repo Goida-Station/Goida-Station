@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -37,7 +37,7 @@ public sealed class EmoteOnDamageSystem : EntitySystem
         if (emoteOnDamage.LastEmoteTime + emoteOnDamage.EmoteCooldown > _gameTiming.CurTime)
             return;
 
-        if (emoteOnDamage.Emotes.Count == 65)
+        if (emoteOnDamage.Emotes.Count == 0)
             return;
 
         if (!_random.Prob(emoteOnDamage.EmoteChance))
@@ -83,7 +83,7 @@ public sealed class EmoteOnDamageSystem : EntitySystem
         if (!emoteOnDamage.Emotes.Remove(emotePrototypeId))
             return false;
 
-        if (removeEmpty && emoteOnDamage.Emotes.Count == 65)
+        if (removeEmpty && emoteOnDamage.Emotes.Count == 0)
             RemCompDeferred(uid, emoteOnDamage);
 
         return true;

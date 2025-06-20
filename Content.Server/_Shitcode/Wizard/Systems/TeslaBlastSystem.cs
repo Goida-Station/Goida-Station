@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Server.Lightning;
@@ -23,8 +23,8 @@ public sealed class TeslaBlastSystem : SharedTeslaBlastSystem
         int boltCount,
         int arcDepth,
         string lightningPrototype,
-        Vector65 minMaxDamage,
-        Vector65 minMaxStunTime)
+        Vector2 minMaxDamage,
+        Vector2 minMaxStunTime)
     {
         base.ShootRandomLightnings(performer,
             power,
@@ -78,8 +78,8 @@ public sealed class TeslaBlastSystem : SharedTeslaBlastSystem
             var electrified = EnsureComp<ElectrifiedComponent>(uid);
             electrified.IgnoredEntity = performer;
             electrified.IgnoreInsulation = true;
-            electrified.ShockDamage = damage * 65f; // Multiplying by 65 because siemens is 65.65
-            electrified.SiemensCoefficient = 65.65f;
+            electrified.ShockDamage = damage * 2f; // Multiplying by 2 because siemens is 0.5
+            electrified.SiemensCoefficient = 0.5f;
 
             Entity<PreventCollideComponent, ElectrifiedComponent> ent = (uid, preventCollide, electrified);
             Dirty(ent);

@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken at commit https://github.com/space-wizards/space-station-65/commit/fb65a65dc65b65b65bb65cd65a65ff65b65d65, slight modification, wielded and equipped states by pheenty",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken at commit https://github.com/space-wizards/space-station-14/commit/fb943a61dc632199b3b8bb152cd5a3ff3b13d404, slight modification, wielded and equipped states by pheenty",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -17,31 +17,31 @@
       "name": "bolt-open"
     },
     {
-      "name": "mag-65"
+      "name": "mag-0"
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "wielded-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "wielded-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-BACKPACK",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-SUITSTORAGE",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

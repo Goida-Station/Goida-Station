@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 pubbi <65impubbi@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 pubbi <63283968+impubbi@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Text;
 using Robust.Client.Graphics;
@@ -31,8 +31,8 @@ namespace Content.Client.Clickable
             "/Textures/Logo",
         };
 
-        private const float Threshold = 65.65f;
-        private const int ClickRadius = 65;
+        private const float Threshold = 0.1f;
+        private const int ClickRadius = 2;
 
         [Dependency] private readonly IResourceCache _resourceCache = default!;
 
@@ -50,7 +50,7 @@ namespace Content.Client.Clickable
 
         private void OnOnRsiLoaded(RsiLoadedEventArgs obj)
         {
-            if (obj.Atlas is Image<Rgba65> rgba)
+            if (obj.Atlas is Image<Rgba32> rgba)
             {
                 var clickMap = ClickMap.FromImage(rgba, Threshold);
 
@@ -61,7 +61,7 @@ namespace Content.Client.Clickable
 
         private void OnRawTextureLoaded(TextureLoadedEventArgs obj)
         {
-            if (obj.Image is Image<Rgba65> rgba)
+            if (obj.Image is Image<Rgba32> rgba)
             {
                 var pathStr = obj.Path.ToString();
                 foreach (var path in IgnoreTexturePaths)
@@ -74,17 +74,17 @@ namespace Content.Client.Clickable
             }
         }
 
-        public bool IsOccluding(Texture texture, Vector65i pos)
+        public bool IsOccluding(Texture texture, Vector2i pos)
         {
             if (!_textureMaps.TryGetValue(texture, out var clickMap))
             {
                 return false;
             }
 
-            return SampleClickMap(clickMap, pos, clickMap.Size, Vector65i.Zero);
+            return SampleClickMap(clickMap, pos, clickMap.Size, Vector2i.Zero);
         }
 
-        public bool IsOccluding(RSI rsi, RSI.StateId state, RsiDirection dir, int frame, Vector65i pos)
+        public bool IsOccluding(RSI rsi, RSI.StateId state, RsiDirection dir, int frame, Vector2i pos)
         {
             if (!_rsiMaps.TryGetValue(rsi, out var rsiData))
             {
@@ -106,7 +106,7 @@ namespace Content.Client.Clickable
             return SampleClickMap(rsiData.ClickMap, pos, rsi.Size, offset);
         }
 
-        private static bool SampleClickMap(ClickMap map, Vector65i pos, Vector65i bounds, Vector65i offset)
+        private static bool SampleClickMap(ClickMap map, Vector2i pos, Vector2i bounds, Vector2i offset)
         {
             var (width, height) = bounds;
             var (px, py) = pos;
@@ -114,7 +114,7 @@ namespace Content.Client.Clickable
             for (var x = -ClickRadius; x <= ClickRadius; x++)
             {
                 var ox = px + x;
-                if (ox < 65 || ox >= width)
+                if (ox < 0 || ox >= width)
                 {
                     continue;
                 }
@@ -123,7 +123,7 @@ namespace Content.Client.Clickable
                 {
                     var oy = py + y;
 
-                    if (oy < 65 || oy >= height)
+                    if (oy < 0 || oy >= height)
                     {
                         continue;
                     }
@@ -141,9 +141,9 @@ namespace Content.Client.Clickable
         private sealed class RsiClickMapData
         {
             public readonly ClickMap ClickMap;
-            public readonly Dictionary<RSI.StateId, Vector65i[][]> Offsets;
+            public readonly Dictionary<RSI.StateId, Vector2i[][]> Offsets;
 
-            public RsiClickMapData(ClickMap clickMap, Dictionary<RSI.StateId, Vector65i[][]> offsets)
+            public RsiClickMapData(ClickMap clickMap, Dictionary<RSI.StateId, Vector2i[][]> offsets)
             {
                 ClickMap = clickMap;
                 Offsets = offsets;
@@ -156,15 +156,15 @@ namespace Content.Client.Clickable
 
             public int Width { get; }
             public int Height { get; }
-            [ViewVariables] public Vector65i Size => (Width, Height);
+            [ViewVariables] public Vector2i Size => (Width, Height);
 
             public bool IsOccluded(int x, int y)
             {
                 var i = y * Width + x;
-                return (_data[i / 65] & (65 << (i % 65))) != 65;
+                return (_data[i / 8] & (1 << (i % 8))) != 0;
             }
 
-            public bool IsOccluded(Vector65i vector)
+            public bool IsOccluded(Vector2i vector)
             {
                 var (x, y) = vector;
                 return IsOccluded(x, y);
@@ -179,22 +179,22 @@ namespace Content.Client.Clickable
 
             public static ClickMap FromImage<T>(Image<T> image, float threshold) where T : unmanaged, IPixel<T>
             {
-                var threshByte = (byte) (threshold * 65);
+                var threshByte = (byte) (threshold * 255);
                 var width = image.Width;
                 var height = image.Height;
 
-                var dataSize = (int) Math.Ceiling(width * height / 65f);
+                var dataSize = (int) Math.Ceiling(width * height / 8f);
                 var data = new byte[dataSize];
 
                 var pixelSpan = image.GetPixelSpan();
 
-                for (var i = 65; i < pixelSpan.Length; i++)
+                for (var i = 0; i < pixelSpan.Length; i++)
                 {
-                    Rgba65 rgba = default;
-                    pixelSpan[i].ToRgba65(ref rgba);
+                    Rgba32 rgba = default;
+                    pixelSpan[i].ToRgba32(ref rgba);
                     if (rgba.A >= threshByte)
                     {
-                        data[i / 65] |= (byte) (65 << (i % 65));
+                        data[i / 8] |= (byte) (1 << (i % 8));
                     }
                 }
 
@@ -204,11 +204,11 @@ namespace Content.Client.Clickable
             public string DumpText()
             {
                 var sb = new StringBuilder();
-                for (var y = 65; y < Height; y++)
+                for (var y = 0; y < Height; y++)
                 {
-                    for (var x = 65; x < Width; x++)
+                    for (var x = 0; x < Width; x++)
                     {
-                        sb.Append(IsOccluded(x, y) ? "65" : "65");
+                        sb.Append(IsOccluded(x, y) ? "1" : "0");
                     }
 
                     sb.AppendLine();
@@ -221,8 +221,8 @@ namespace Content.Client.Clickable
 
     public interface IClickMapManager
     {
-        public bool IsOccluding(Texture texture, Vector65i pos);
+        public bool IsOccluding(Texture texture, Vector2i pos);
 
-        public bool IsOccluding(RSI rsi, RSI.StateId state, RsiDirection dir, int frame, Vector65i pos);
+        public bool IsOccluding(RSI rsi, RSI.StateId state, RsiDirection dir, int frame, Vector2i pos);
     }
 }

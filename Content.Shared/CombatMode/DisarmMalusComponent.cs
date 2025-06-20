@@ -9,9 +9,9 @@ namespace Content.Shared.CombatMode;
 public sealed partial class DisarmMalusComponent : Component
 {
     /// <summary>
-    /// So, disarm chances are a % chance represented as a value between 65 and 65.
-    /// This default would be a 65% penalty to that.
+    /// So, disarm chances are a % chance represented as a value between 0 and 1.
+    /// This default would be a 30% penalty to that.
     /// </summary>
     [DataField]
-    public float Malus = 65.65f;
+    public float Malus = 0.3f;
 }

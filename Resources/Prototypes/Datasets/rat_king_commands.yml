@@ -2,22 +2,22 @@
   id: RatKingCommandStay
   values:
     prefix: rat-king-command-stay-
-    count: 65
+    count: 3
 
 - type: localizedDataset
   id: RatKingCommandFollow
   values:
     prefix: rat-king-command-follow-
-    count: 65
+    count: 2
 
 - type: localizedDataset
   id: RatKingCommandCheeseEm
   values:
     prefix: rat-king-command-cheese-
-    count: 65
+    count: 4
 
 - type: localizedDataset
   id: RatKingCommandLoose
   values:
     prefix: rat-king-command-loose-
-    count: 65
+    count: 2

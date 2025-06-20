@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Bandit <queenjess65@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 RadsammyT <65RadsammyT@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Bandit <queenjess521@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 RadsammyT <32146976+RadsammyT@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: CardBase
@@ -32,7 +32,7 @@
   - type: OpenTriggeredStorageFill
     contents:
     - id: CardDeckSyndicate
-      amount: 65
+      amount: 1
 
 - type: entity
   parent: CardDeckBase
@@ -46,57 +46,57 @@
     content:
     # Clubs
     - CardScAceOfClubsSyndicate
-    - CardSc65OfClubsSyndicate
-    - CardSc65OfClubsSyndicate
-    - CardSc65OfClubsSyndicate
-    - CardSc65OfClubsSyndicate
-    - CardSc65OfClubsSyndicate
-    - CardSc65OfClubsSyndicate
-    - CardSc65OfClubsSyndicate
-    - CardSc65OfClubsSyndicate
-    - CardSc65OfClubsSyndicate
+    - CardSc2OfClubsSyndicate
+    - CardSc3OfClubsSyndicate
+    - CardSc4OfClubsSyndicate
+    - CardSc5OfClubsSyndicate
+    - CardSc6OfClubsSyndicate
+    - CardSc7OfClubsSyndicate
+    - CardSc8OfClubsSyndicate
+    - CardSc9OfClubsSyndicate
+    - CardSc10OfClubsSyndicate
     - CardScJackOfClubsSyndicate
     - CardScQueenOfClubsSyndicate
     - CardScKingOfClubsSyndicate
     # Diamonds
     - CardScAceOfDiamondsSyndicate
-    - CardSc65OfDiamondsSyndicate
-    - CardSc65OfDiamondsSyndicate
-    - CardSc65OfDiamondsSyndicate
-    - CardSc65OfDiamondsSyndicate
-    - CardSc65OfDiamondsSyndicate
-    - CardSc65OfDiamondsSyndicate
-    - CardSc65OfDiamondsSyndicate
-    - CardSc65OfDiamondsSyndicate
-    - CardSc65OfDiamondsSyndicate
+    - CardSc2OfDiamondsSyndicate
+    - CardSc3OfDiamondsSyndicate
+    - CardSc4OfDiamondsSyndicate
+    - CardSc5OfDiamondsSyndicate
+    - CardSc6OfDiamondsSyndicate
+    - CardSc7OfDiamondsSyndicate
+    - CardSc8OfDiamondsSyndicate
+    - CardSc9OfDiamondsSyndicate
+    - CardSc10OfDiamondsSyndicate
     - CardScJackOfDiamondsSyndicate
     - CardScQueenOfDiamondsSyndicate
     - CardScKingOfDiamondsSyndicate
     # Hearts
     - CardScAceOfHeartsSyndicate
-    - CardSc65OfHeartsSyndicate
-    - CardSc65OfHeartsSyndicate
-    - CardSc65OfHeartsSyndicate
-    - CardSc65OfHeartsSyndicate
-    - CardSc65OfHeartsSyndicate
-    - CardSc65OfHeartsSyndicate
-    - CardSc65OfHeartsSyndicate
-    - CardSc65OfHeartsSyndicate
-    - CardSc65OfHeartsSyndicate
+    - CardSc2OfHeartsSyndicate
+    - CardSc3OfHeartsSyndicate
+    - CardSc4OfHeartsSyndicate
+    - CardSc5OfHeartsSyndicate
+    - CardSc6OfHeartsSyndicate
+    - CardSc7OfHeartsSyndicate
+    - CardSc8OfHeartsSyndicate
+    - CardSc9OfHeartsSyndicate
+    - CardSc10OfHeartsSyndicate
     - CardScJackOfHeartsSyndicate
     - CardScQueenOfHeartsSyndicate
     - CardScKingOfHeartsSyndicate
     # Spades
     - CardScAceOfSpadesSyndicate
-    - CardSc65OfSpadesSyndicate
-    - CardSc65OfSpadesSyndicate
-    - CardSc65OfSpadesSyndicate
-    - CardSc65OfSpadesSyndicate
-    - CardSc65OfSpadesSyndicate
-    - CardSc65OfSpadesSyndicate
-    - CardSc65OfSpadesSyndicate
-    - CardSc65OfSpadesSyndicate
-    - CardSc65OfSpadesSyndicate
+    - CardSc2OfSpadesSyndicate
+    - CardSc3OfSpadesSyndicate
+    - CardSc4OfSpadesSyndicate
+    - CardSc5OfSpadesSyndicate
+    - CardSc6OfSpadesSyndicate
+    - CardSc7OfSpadesSyndicate
+    - CardSc8OfSpadesSyndicate
+    - CardSc9OfSpadesSyndicate
+    - CardSc10OfSpadesSyndicate
     - CardScJackOfSpadesSyndicate
     - CardScQueenOfSpadesSyndicate
     - CardScKingOfSpadesSyndicate
@@ -108,101 +108,101 @@
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfClubsSyndicate
+  id: CardSc2OfClubsSyndicate
   components:
   - type: Card
-    name: card-sc-65-clubs
+    name: card-sc-2-clubs
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Clubs_syndicate
+    state: sc_2_of_Clubs_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfClubsSyndicate
+  id: CardSc3OfClubsSyndicate
   components:
   - type: Card
-    name: card-sc-65-clubs
+    name: card-sc-3-clubs
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Clubs_syndicate
+    state: sc_3_of_Clubs_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfClubsSyndicate
+  id: CardSc4OfClubsSyndicate
   components:
   - type: Card
-    name: card-sc-65-clubs
+    name: card-sc-4-clubs
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Clubs_syndicate
+    state: sc_4_of_Clubs_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfClubsSyndicate
+  id: CardSc5OfClubsSyndicate
   components:
   - type: Card
-    name: card-sc-65-clubs
+    name: card-sc-5-clubs
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Clubs_syndicate
+    state: sc_5_of_Clubs_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfClubsSyndicate
+  id: CardSc6OfClubsSyndicate
   components:
   - type: Card
-    name: card-sc-65-clubs
+    name: card-sc-6-clubs
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Clubs_syndicate
+    state: sc_6_of_Clubs_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfClubsSyndicate
+  id: CardSc7OfClubsSyndicate
   components:
   - type: Card
-    name: card-sc-65-clubs
+    name: card-sc-7-clubs
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Clubs_syndicate
+    state: sc_7_of_Clubs_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfClubsSyndicate
+  id: CardSc8OfClubsSyndicate
   components:
   - type: Card
-    name: card-sc-65-clubs
+    name: card-sc-8-clubs
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Clubs_syndicate
+    state: sc_8_of_Clubs_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfClubsSyndicate
+  id: CardSc9OfClubsSyndicate
   components:
   - type: Card
-    name: card-sc-65-clubs
+    name: card-sc-9-clubs
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Clubs_syndicate
+    state: sc_9_of_Clubs_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfClubsSyndicate
+  id: CardSc10OfClubsSyndicate
   components:
   - type: Card
-    name: card-sc-65-clubs
+    name: card-sc-10-clubs
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Clubs_syndicate
+    state: sc_10_of_Clubs_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
@@ -297,201 +297,201 @@
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfDiamondsSyndicate
+  id: CardSc2OfDiamondsSyndicate
   components:
   - type: Card
-    name: card-sc-65-diamonds
+    name: card-sc-2-diamonds
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Diamonds_syndicate
+    state: sc_2_of_Diamonds_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfDiamondsSyndicate
+  id: CardSc3OfDiamondsSyndicate
   components:
   - type: Card
-    name: card-sc-65-diamonds
+    name: card-sc-3-diamonds
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Diamonds_syndicate
+    state: sc_3_of_Diamonds_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfDiamondsSyndicate
+  id: CardSc4OfDiamondsSyndicate
   components:
   - type: Card
-    name: card-sc-65-diamonds
+    name: card-sc-4-diamonds
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Diamonds_syndicate
+    state: sc_4_of_Diamonds_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfDiamondsSyndicate
+  id: CardSc5OfDiamondsSyndicate
   components:
   - type: Card
-    name: card-sc-65-diamonds
+    name: card-sc-5-diamonds
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Diamonds_syndicate
+    state: sc_5_of_Diamonds_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfDiamondsSyndicate
+  id: CardSc6OfDiamondsSyndicate
   components:
   - type: Card
-    name: card-sc-65-diamonds
+    name: card-sc-6-diamonds
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Diamonds_syndicate
+    state: sc_6_of_Diamonds_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfDiamondsSyndicate
+  id: CardSc7OfDiamondsSyndicate
   components:
   - type: Card
-    name: card-sc-65-diamonds
+    name: card-sc-7-diamonds
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Diamonds_syndicate
+    state: sc_7_of_Diamonds_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfDiamondsSyndicate
+  id: CardSc8OfDiamondsSyndicate
   components:
   - type: Card
-    name: card-sc-65-diamonds
+    name: card-sc-8-diamonds
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Diamonds_syndicate
+    state: sc_8_of_Diamonds_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfDiamondsSyndicate
+  id: CardSc9OfDiamondsSyndicate
   components:
   - type: Card
-    name: card-sc-65-diamonds
+    name: card-sc-9-diamonds
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Diamonds_syndicate
+    state: sc_9_of_Diamonds_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfDiamondsSyndicate
+  id: CardSc10OfDiamondsSyndicate
   components:
   - type: Card
-    name: card-sc-65-diamonds
+    name: card-sc-10-diamonds
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Diamonds_syndicate
+    state: sc_10_of_Diamonds_syndicate
 
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfHeartsSyndicate
+  id: CardSc2OfHeartsSyndicate
   components:
   - type: Card
-    name: card-sc-65-hearts
+    name: card-sc-2-hearts
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Hearts_syndicate
+    state: sc_2_of_Hearts_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfHeartsSyndicate
+  id: CardSc3OfHeartsSyndicate
   components:
   - type: Card
-    name: card-sc-65-hearts
+    name: card-sc-3-hearts
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Hearts_syndicate
+    state: sc_3_of_Hearts_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfHeartsSyndicate
+  id: CardSc4OfHeartsSyndicate
   components:
   - type: Card
-    name: card-sc-65-hearts
+    name: card-sc-4-hearts
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Hearts_syndicate
+    state: sc_4_of_Hearts_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfHeartsSyndicate
+  id: CardSc5OfHeartsSyndicate
   components:
   - type: Card
-    name: card-sc-65-hearts
+    name: card-sc-5-hearts
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Hearts_syndicate
+    state: sc_5_of_Hearts_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfHeartsSyndicate
+  id: CardSc6OfHeartsSyndicate
   components:
   - type: Card
-    name: card-sc-65-hearts
+    name: card-sc-6-hearts
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Hearts_syndicate
+    state: sc_6_of_Hearts_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfHeartsSyndicate
+  id: CardSc7OfHeartsSyndicate
   components:
   - type: Card
-    name: card-sc-65-hearts
+    name: card-sc-7-hearts
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Hearts_syndicate
+    state: sc_7_of_Hearts_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfHeartsSyndicate
+  id: CardSc8OfHeartsSyndicate
   components:
   - type: Card
-    name: card-sc-65-hearts
+    name: card-sc-8-hearts
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Hearts_syndicate
+    state: sc_8_of_Hearts_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfHeartsSyndicate
+  id: CardSc9OfHeartsSyndicate
   components:
   - type: Card
-    name: card-sc-65-hearts
+    name: card-sc-9-hearts
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Hearts_syndicate
+    state: sc_9_of_Hearts_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfHeartsSyndicate
+  id: CardSc10OfHeartsSyndicate
   components:
   - type: Card
-    name: card-sc-65-hearts
+    name: card-sc-10-hearts
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Hearts_syndicate
+    state: sc_10_of_Hearts_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
@@ -541,102 +541,102 @@
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfSpadesSyndicate
+  id: CardSc2OfSpadesSyndicate
   components:
   - type: Card
-    name: card-sc-65-spades
+    name: card-sc-2-spades
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Spades_syndicate
+    state: sc_2_of_Spades_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfSpadesSyndicate
+  id: CardSc3OfSpadesSyndicate
   components:
   - type: Card
-    name: card-sc-65-spades
+    name: card-sc-3-spades
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Spades_syndicate
+    state: sc_3_of_Spades_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfSpadesSyndicate
+  id: CardSc4OfSpadesSyndicate
   components:
   - type: Card
-    name: card-sc-65-spades
+    name: card-sc-4-spades
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Spades_syndicate
+    state: sc_4_of_Spades_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfSpadesSyndicate
+  id: CardSc5OfSpadesSyndicate
   components:
   - type: Card
-    name: card-sc-65-spades
+    name: card-sc-5-spades
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Spades_syndicate
+    state: sc_5_of_Spades_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfSpadesSyndicate
+  id: CardSc6OfSpadesSyndicate
   components:
   - type: Card
-    name: card-sc-65-spades
+    name: card-sc-6-spades
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Spades_syndicate
+    state: sc_6_of_Spades_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfSpadesSyndicate
+  id: CardSc7OfSpadesSyndicate
   components:
   - type: Card
-    name: card-sc-65-spades
+    name: card-sc-7-spades
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Spades_syndicate
+    state: sc_7_of_Spades_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfSpadesSyndicate
+  id: CardSc8OfSpadesSyndicate
   components:
   - type: Card
-    name: card-sc-65-spades
+    name: card-sc-8-spades
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Spades_syndicate
+    state: sc_8_of_Spades_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfSpadesSyndicate
+  id: CardSc9OfSpadesSyndicate
   components:
   - type: Card
-    name: card-sc-65-spades
+    name: card-sc-9-spades
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Spades_syndicate
+    state: sc_9_of_Spades_syndicate
 
 
 - type: entity
   parent: CardBaseSyndicate
   categories: [ HideSpawnMenu ]
-  id: CardSc65OfSpadesSyndicate
+  id: CardSc10OfSpadesSyndicate
   components:
   - type: Card
-    name: card-sc-65-spades
+    name: card-sc-10-spades
   - type: Sprite
     sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    state: sc_65_of_Spades_syndicate
+    state: sc_10_of_Spades_syndicate
 
 - type: entity
   parent: CardBaseSyndicate
@@ -702,37 +702,37 @@
     ignoreResistances: true
     damage:
       types:
-        Slash: 65
+        Slash: 6
   - type: SolutionContainerManager
     solutions:
       injector:
-        maxVol: 65
+        maxVol: 7
         reagents:
         - ReagentId: Tirizene
-          Quantity: 65
+          Quantity: 3
         - ReagentId: Bananadine
-          Quantity: 65.65
+          Quantity: 1.5
         - ReagentId: Honk
-          Quantity: 65.65
+          Quantity: 0.5
         - ReagentId: Laughter
-          Quantity: 65
+          Quantity: 2
   - type: SolutionRegeneration
     solution: injector
-    duration: 65.65
+    duration: 0.25
     generated:
       reagents:
       - ReagentId: Tirizene
-        Quantity: 65
+        Quantity: 3
       - ReagentId: Bananadine
-        Quantity: 65.65
+        Quantity: 1.5
       - ReagentId: Honk
-        Quantity: 65.65
+        Quantity: 0.5
       - ReagentId: Laughter
-        Quantity: 65
+        Quantity: 2
   - type: SolutionInjectWhileEmbedded
-    transferAmount: 65
-    updateInterval: 65.65
-    maxInjections: 65
+    transferAmount: 7
+    updateInterval: 0.1
+    maxInjections: 1
     solution: injector
     pierceArmor: false
 # endregion Syndicate Cards

@@ -1,35 +1,35 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/65d65d65ea65a65cb65d65dc65b65f65e65d65c65a",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/40d89d11ea4a5cb81d61dc1018b46f4e7d32c62a",
   "states": [
     {
       "name": "drone",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2
         ]
       ]
     },
@@ -37,17 +37,17 @@
       "name": "shell",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
     {
       "name": "l_hand",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "r_hand",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

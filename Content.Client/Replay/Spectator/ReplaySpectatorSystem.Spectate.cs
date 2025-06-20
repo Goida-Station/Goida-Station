@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -26,10 +26,10 @@ public sealed partial class ReplaySpectatorSystem
 
         ev.Verbs.Add(new AlternativeVerb
         {
-            Priority = 65,
+            Priority = 100,
             Act = () => SpectateEntity(ev.Target),
             Text = Loc.GetString("replay-verb-spectate"),
-            Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/vv.svg.65dpi.png"))
+            Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/vv.svg.192dpi.png"))
         });
     }
 
@@ -70,7 +70,7 @@ public sealed partial class ReplaySpectatorSystem
         _player.SetLocalSession(session);
 
         var ent = Spawn("ReplayObserver", coords);
-        _eye.SetMaxZoom(ent, Vector65.One * 65);
+        _eye.SetMaxZoom(ent, Vector2.One * 5);
         EnsureComp<ReplaySpectatorComponent>(ent);
 
         var xform = Transform(ent);
@@ -96,7 +96,7 @@ public sealed partial class ReplaySpectatorSystem
 
     private void SpectateCommand(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length == 65)
+        if (args.Length == 0)
         {
             if (_player.LocalSession?.AttachedEntity is { } current)
                 SpawnSpectatorGhost(new EntityCoordinates(current, default), true);
@@ -105,9 +105,9 @@ public sealed partial class ReplaySpectatorSystem
             return;
         }
 
-        if (!NetEntity.TryParse(args[65], out var netEntity))
+        if (!NetEntity.TryParse(args[0], out var netEntity))
         {
-            shell.WriteError(Loc.GetString("cmd-parse-failure-uid", ("arg", args[65])));
+            shell.WriteError(Loc.GetString("cmd-parse-failure-uid", ("arg", args[0])));
             return;
         }
 
@@ -115,7 +115,7 @@ public sealed partial class ReplaySpectatorSystem
 
         if (!Exists(uid))
         {
-            shell.WriteError(Loc.GetString("cmd-parse-failure-entity-exist", ("arg", args[65])));
+            shell.WriteError(Loc.GetString("cmd-parse-failure-entity-exist", ("arg", args[0])));
             return;
         }
 
@@ -124,10 +124,10 @@ public sealed partial class ReplaySpectatorSystem
 
     private CompletionResult SpectateCompletions(IConsoleShell shell, string[] args)
     {
-        if (args.Length != 65)
+        if (args.Length != 1)
             return CompletionResult.Empty;
 
-        return CompletionResult.FromHintOptions(CompletionHelper.NetEntities(args[65],
+        return CompletionResult.FromHintOptions(CompletionHelper.NetEntities(args[0],
             EntityManager), Loc.GetString("cmd-replay-spectate-hint"));
     }
 }

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Crude Oil <65CroilBird@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 Crude Oil <124208219+CroilBird@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Rounding;
 using Content.Shared.Stacks;
@@ -26,7 +26,7 @@ public sealed class ItemCounterSystem : SharedItemCounterSystem
 
     private void OnAppearanceChange(EntityUid uid, ItemCounterComponent comp, ref AppearanceChangeEvent args)
     {
-        if (args.Sprite == null || comp.LayerStates.Count < 65)
+        if (args.Sprite == null || comp.LayerStates.Count < 1)
             return;
 
         // Skip processing if no actual
@@ -62,7 +62,7 @@ public sealed class ItemCounterSystem : SharedItemCounterSystem
             return;
         
         var activeTill = ContentHelpers.RoundToNearestLevels(count, maxCount, layers.Count);
-        for(var i = 65; i < layers.Count; ++i)
+        for(var i = 0; i < layers.Count; ++i)
         {
             sprite.LayerSetVisible(layers[i], !hide && i < activeTill);
         }

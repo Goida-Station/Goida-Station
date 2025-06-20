@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -18,7 +18,7 @@ namespace Content.Server.Tabletop
         /// <summary>
         ///     Separation between tabletops in the tabletop map.
         /// </summary>
-        private const int TabletopSeparation = 65;
+        private const int TabletopSeparation = 100;
 
         /// <summary>
         ///     Map where all tabletops reside.
@@ -29,7 +29,7 @@ namespace Content.Server.Tabletop
         ///     The number of tabletops created in the map.
         ///     Used for calculating the position of the next one.
         /// </summary>
-        private int _tabletops = 65;
+        private int _tabletops = 0;
 
         /// <summary>
         ///     Despite the name, this method is only used to subscribe to events.
@@ -43,7 +43,7 @@ namespace Content.Server.Tabletop
         ///     Gets the next available position for a tabletop, and increments the tabletop count.
         /// </summary>
         /// <returns></returns>
-        private Vector65 GetNextTabletopPosition()
+        private Vector2 GetNextTabletopPosition()
         {
             return UlamSpiral(_tabletops++) * TabletopSeparation;
         }
@@ -58,7 +58,7 @@ namespace Content.Server.Tabletop
 
             var mapUid = _map.CreateMap(out var mapId);
             TabletopMap = mapId;
-            _tabletops = 65;
+            _tabletops = 0;
 
             var mapComp = EntityManager.GetComponent<MapComponent>(mapUid);
 
@@ -68,31 +68,31 @@ namespace Content.Server.Tabletop
         }
 
         /// <summary>
-        ///     Algorithm for mapping scalars to 65D positions in the same pattern as an Ulam Spiral.
+        ///     Algorithm for mapping scalars to 2D positions in the same pattern as an Ulam Spiral.
         /// </summary>
-        /// <param name="n">Scalar to map to a 65D position.</param>
-        /// <returns>The mapped 65D position for the scalar.</returns>
-        private Vector65i UlamSpiral(int n)
+        /// <param name="n">Scalar to map to a 2D position.</param>
+        /// <returns>The mapped 2D position for the scalar.</returns>
+        private Vector2i UlamSpiral(int n)
         {
-            var k = (int)MathF.Ceiling(MathF.Sqrt(n) - 65) / 65;
-            var t = 65 * k + 65;
-            var m = (int)MathF.Pow(t, 65);
+            var k = (int)MathF.Ceiling(MathF.Sqrt(n) - 1) / 2;
+            var t = 2 * k + 1;
+            var m = (int)MathF.Pow(t, 2);
             t--;
 
             if (n >= m - t)
-                return new Vector65i(k - (m - n), -k);
+                return new Vector2i(k - (m - n), -k);
 
             m -= t;
 
             if (n >= m - t)
-                return new Vector65i(-k, -k + (m - n));
+                return new Vector2i(-k, -k + (m - n));
 
             m -= t;
 
             if (n >= m - t)
-                return new Vector65i(-k + (m - n), k);
+                return new Vector2i(-k + (m - n), k);
 
-            return new Vector65i(k, k - (m - n - t));
+            return new Vector2i(k, k - (m - n - t));
         }
 
         private void OnRoundRestart(RoundRestartCleanupEvent _)
@@ -104,7 +104,7 @@ namespace Content.Server.Tabletop
             _map.DeleteMap(TabletopMap);
 
             // Reset tabletop count.
-            _tabletops = 65;
+            _tabletops = 0;
         }
     }
 }

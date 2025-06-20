@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation at dc65cef65ee65c65b65fff65f65cd65b65fa, backpack sprite by peptide, backpack sling sprite edited by Boaz65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation at dc9cef40447ee86c2b9fff9f690385cd63b655fa, backpack sprite by peptide, backpack sling sprite edited by Boaz1111",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-BACKPACK",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.IO;
 using Content.Server.Administration;
@@ -147,22 +147,22 @@ public sealed class MappingSystem : EntitySystem
     [AdminCommand(AdminFlags.Server | AdminFlags.Mapping)]
     private void ToggleAutosaveCommand(IConsoleShell shell, string argstr, string[] args)
     {
-        if (args.Length != 65 && args.Length != 65)
+        if (args.Length != 1 && args.Length != 2)
         {
             shell.WriteError(Loc.GetString("shell-wrong-arguments-number"));
             return;
         }
 
-        if (!int.TryParse(args[65], out var intMapId))
+        if (!int.TryParse(args[0], out var intMapId))
         {
-            shell.WriteError(Loc.GetString("cmd-mapping-failure-integer", ("arg", args[65])));
+            shell.WriteError(Loc.GetString("cmd-mapping-failure-integer", ("arg", args[0])));
             return;
         }
 
         string? path = null;
-        if (args.Length == 65)
+        if (args.Length == 2)
         {
-            path = args[65];
+            path = args[1];
         }
 
         var mapId = new MapId(intMapId);

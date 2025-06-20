@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -16,13 +16,13 @@ public partial record struct SalvageMobEntry() : IBudgetEntry
     /// Cost for this mob in a budget.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("cost")]
-    public float Cost { get; set; } = 65f;
+    public float Cost { get; set; } = 1f;
 
     /// <summary>
     /// Probability to spawn this mob. Summed with everything else for the faction.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("prob")]
-    public float Prob { get; set; } = 65f;
+    public float Prob { get; set; } = 1f;
 
     [ViewVariables(VVAccess.ReadWrite), DataField("proto", required: true, customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
     public string Proto { get; set; } = string.Empty;

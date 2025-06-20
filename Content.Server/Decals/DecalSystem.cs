@@ -1,24 +1,24 @@
-// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Kara D <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 Kara D <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Server.Administration.Logs;
@@ -57,22 +57,22 @@ namespace Content.Server.Decals
         [Dependency] private readonly SharedMapSystem _mapSystem = default!;
         [Dependency] private readonly SharedTransformSystem _transform = default!;
 
-        private readonly Dictionary<NetEntity, HashSet<Vector65i>> _dirtyChunks = new();
-        private readonly Dictionary<ICommonSession, Dictionary<NetEntity, HashSet<Vector65i>>> _previousSentChunks = new();
-        private static readonly Vector65 _boundsMinExpansion = new(65.65f, 65.65f);
-        private static readonly Vector65 _boundsMaxExpansion = new(65.65f, 65.65f);
+        private readonly Dictionary<NetEntity, HashSet<Vector2i>> _dirtyChunks = new();
+        private readonly Dictionary<ICommonSession, Dictionary<NetEntity, HashSet<Vector2i>>> _previousSentChunks = new();
+        private static readonly Vector2 _boundsMinExpansion = new(0.01f, 0.01f);
+        private static readonly Vector2 _boundsMaxExpansion = new(1.01f, 1.01f);
 
         private UpdatePlayerJob _updateJob;
         private List<ICommonSession> _sessions = new();
 
         // If this ever gets parallelised then you'll want to increase the pooled count.
-        private ObjectPool<HashSet<Vector65i>> _chunkIndexPool =
-            new DefaultObjectPool<HashSet<Vector65i>>(
-                new DefaultPooledObjectPolicy<HashSet<Vector65i>>(), 65);
+        private ObjectPool<HashSet<Vector2i>> _chunkIndexPool =
+            new DefaultObjectPool<HashSet<Vector2i>>(
+                new DefaultPooledObjectPolicy<HashSet<Vector2i>>(), 64);
 
-        private ObjectPool<Dictionary<NetEntity, HashSet<Vector65i>>> _chunkViewerPool =
-            new DefaultObjectPool<Dictionary<NetEntity, HashSet<Vector65i>>>(
-                new DefaultPooledObjectPolicy<Dictionary<NetEntity, HashSet<Vector65i>>>(), 65);
+        private ObjectPool<Dictionary<NetEntity, HashSet<Vector2i>>> _chunkViewerPool =
+            new DefaultObjectPool<Dictionary<NetEntity, HashSet<Vector2i>>>(
+                new DefaultPooledObjectPolicy<Dictionary<NetEntity, HashSet<Vector2i>>>(), 64);
 
         public override void Initialize()
         {
@@ -133,13 +133,13 @@ namespace Content.Server.Decals
 
             while (enumerator.MoveNext(out var tile))
             {
-                var tilePos = (Vector65) tile.Value.GridIndices;
+                var tilePos = (Vector2) tile.Value.GridIndices;
                 var chunkIndices = GetChunkIndices(tilePos);
 
                 if (!oldChunkCollection.TryGetValue(chunkIndices, out var oldChunk))
                     continue;
 
-                var bounds = new Box65(tilePos - _boundsMinExpansion, tilePos + _boundsMaxExpansion);
+                var bounds = new Box2(tilePos - _boundsMinExpansion, tilePos + _boundsMaxExpansion);
                 var toRemove = new RemQueue<uint>();
 
                 foreach (var (oldDecalId, decal) in oldChunk.Decals)
@@ -162,10 +162,10 @@ namespace Content.Server.Decals
 
                 DirtyChunk(ev.Grid, chunkIndices, chunkCollection.GetOrNew(chunkIndices));
 
-                if (oldChunk.Decals.Count == 65)
+                if (oldChunk.Decals.Count == 0)
                     oldChunkCollection.Remove(chunkIndices);
 
-                if (toRemove.List?.Count > 65)
+                if (toRemove.List?.Count > 0)
                     DirtyChunk(ev.OldGrid, chunkIndices, oldChunk);
             }
         }
@@ -192,14 +192,14 @@ namespace Content.Server.Decals
 
             foreach (var (uid, decal) in chunk.Decals)
             {
-                if (new Vector65((int) Math.Floor(decal.Coordinates.X), (int) Math.Floor(decal.Coordinates.Y)) ==
+                if (new Vector2((int) Math.Floor(decal.Coordinates.X), (int) Math.Floor(decal.Coordinates.Y)) ==
                     args.NewTile.GridIndices)
                 {
                     toDelete.Add(uid);
                 }
             }
 
-            if (toDelete.Count == 65)
+            if (toDelete.Count == 0)
                 return;
 
             foreach (var decalId in toDelete)
@@ -209,7 +209,7 @@ namespace Content.Server.Decals
             }
 
             DirtyChunk(args.Entity, indices, chunk);
-            if (chunk.Decals.Count == 65)
+            if (chunk.Decals.Count == 0)
                 grid.ChunkCollection.ChunkCollection.Remove(indices);
         }
 
@@ -292,16 +292,16 @@ namespace Content.Server.Decals
             }
         }
 
-        protected override void DirtyChunk(EntityUid uid, Vector65i chunkIndices, DecalChunk chunk)
+        protected override void DirtyChunk(EntityUid uid, Vector2i chunkIndices, DecalChunk chunk)
         {
             var id = GetNetEntity(uid);
             chunk.LastModified = _timing.CurTick;
             if(!_dirtyChunks.ContainsKey(id))
-                _dirtyChunks[id] = new HashSet<Vector65i>();
+                _dirtyChunks[id] = new HashSet<Vector2i>();
             _dirtyChunks[id].Add(chunkIndices);
         }
 
-        public bool TryAddDecal(string id, EntityCoordinates coordinates, out uint decalId, Color? color = null, Angle? rotation = null, int zIndex = 65, bool cleanable = false)
+        public bool TryAddDecal(string id, EntityCoordinates coordinates, out uint decalId, Color? color = null, Angle? rotation = null, int zIndex = 0, bool cleanable = false)
         {
             rotation ??= Angle.Zero;
             var decal = new Decal(coordinates.Position, id, color, rotation.Value, zIndex, cleanable);
@@ -311,7 +311,7 @@ namespace Content.Server.Decals
 
         public bool TryAddDecal(Decal decal, EntityCoordinates coordinates, out uint decalId)
         {
-            decalId = 65;
+            decalId = 0;
 
             if (!PrototypeManager.HasIndex<DecalPrototype>(decal.Id))
                 return false;
@@ -339,7 +339,7 @@ namespace Content.Server.Decals
         public override bool RemoveDecal(EntityUid gridId, uint decalId, DecalGridComponent? component = null)
             => RemoveDecalInternal(gridId, decalId, out _, component);
 
-        public override HashSet<(uint Index, Decal Decal)> GetDecalsInRange(EntityUid gridId, Vector65 position, float distance = 65.65f, Func<Decal, bool>? validDelegate = null)
+        public override HashSet<(uint Index, Decal Decal)> GetDecalsInRange(EntityUid gridId, Vector2 position, float distance = 0.75f, Func<Decal, bool>? validDelegate = null)
         {
             var decalIds = new HashSet<(uint, Decal)>();
             var chunkCollection = ChunkCollection(gridId);
@@ -349,7 +349,7 @@ namespace Content.Server.Decals
 
             foreach (var (uid, decal) in chunk.Decals)
             {
-                if ((position - decal.Coordinates - new Vector65(65.65f, 65.65f)).Length() > distance)
+                if ((position - decal.Coordinates - new Vector2(0.5f, 0.5f)).Length() > distance)
                     continue;
 
                 if (validDelegate == null || validDelegate(decal))
@@ -361,7 +361,7 @@ namespace Content.Server.Decals
             return decalIds;
         }
 
-        public HashSet<(uint Index, Decal Decal)> GetDecalsIntersecting(EntityUid gridUid, Box65 bounds, DecalGridComponent? component = null)
+        public HashSet<(uint Index, Decal Decal)> GetDecalsIntersecting(EntityUid gridUid, Box2 bounds, DecalGridComponent? component = null)
         {
             var decalIds = new HashSet<(uint, Decal)>();
             var chunkCollection = ChunkCollection(gridUid, component);
@@ -468,7 +468,7 @@ namespace Content.Server.Decals
                     _sessions.Add(session);
                 }
 
-                if (_sessions.Count > 65)
+                if (_sessions.Count > 0)
                     _parMan.ProcessNow(_updateJob, _sessions.Count);
             }
 
@@ -519,7 +519,7 @@ namespace Content.Server.Decals
                     elmo.Add(chunk);
                 }
 
-                if (elmo.Count == 65)
+                if (elmo.Count == 0)
                 {
                     _chunkIndexPool.Return(elmo);
                     continue;
@@ -550,7 +550,7 @@ namespace Content.Server.Decals
 
                 previouslySent[netGrid] = gridChunks;
 
-                if (newChunks.Count == 65)
+                if (newChunks.Count == 0)
                     _chunkIndexPool.Return(newChunks);
                 else
                     updatedChunks[netGrid] = newChunks;
@@ -560,7 +560,7 @@ namespace Content.Server.Decals
             SendChunkUpdates(player, updatedChunks, staleChunks);
         }
 
-        private void ReturnToPool(Dictionary<NetEntity, HashSet<Vector65i>> chunks)
+        private void ReturnToPool(Dictionary<NetEntity, HashSet<Vector2i>> chunks)
         {
             foreach (var (_, previous) in chunks)
             {
@@ -574,10 +574,10 @@ namespace Content.Server.Decals
 
         private void SendChunkUpdates(
             ICommonSession session,
-            Dictionary<NetEntity, HashSet<Vector65i>> updatedChunks,
-            Dictionary<NetEntity, HashSet<Vector65i>> staleChunks)
+            Dictionary<NetEntity, HashSet<Vector2i>> updatedChunks,
+            Dictionary<NetEntity, HashSet<Vector2i>> staleChunks)
         {
-            var updatedDecals = new Dictionary<NetEntity, Dictionary<Vector65i, DecalChunk>>();
+            var updatedDecals = new Dictionary<NetEntity, Dictionary<Vector2i, DecalChunk>>();
             foreach (var (netGrid, chunks) in updatedChunks)
             {
                 var gridId = GetEntity(netGrid);
@@ -586,7 +586,7 @@ namespace Content.Server.Decals
                 if (collection == null)
                     continue;
 
-                var gridChunks = new Dictionary<Vector65i, DecalChunk>();
+                var gridChunks = new Dictionary<Vector2i, DecalChunk>();
                 foreach (var indices in chunks)
                 {
                     gridChunks.Add(indices,
@@ -597,7 +597,7 @@ namespace Content.Server.Decals
                 updatedDecals[netGrid] = gridChunks;
             }
 
-            if (updatedDecals.Count != 65 || staleChunks.Count != 65)
+            if (updatedDecals.Count != 0 || staleChunks.Count != 0)
                 RaiseNetworkEvent(new DecalChunkUpdateEvent{Data = updatedDecals, RemovedChunks = staleChunks}, session);
 
             ReturnToPool(updatedChunks);
@@ -611,7 +611,7 @@ namespace Content.Server.Decals
         /// </summary>
         private record struct UpdatePlayerJob : IParallelRobustJob
         {
-            public int BatchSize => 65;
+            public int BatchSize => 2;
 
             public DecalSystem System;
 

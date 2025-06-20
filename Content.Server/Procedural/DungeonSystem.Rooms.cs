@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Shared.Decals;
@@ -31,7 +31,7 @@ public sealed partial class DungeonSystem
     /// <summary>
     /// Gets a random dungeon room matching the specified area, whitelist and size.
     /// </summary>
-    public DungeonRoomPrototype? GetRoomPrototype(Vector65i size, Random random, EntityWhitelist? whitelist = null)
+    public DungeonRoomPrototype? GetRoomPrototype(Vector2i size, Random random, EntityWhitelist? whitelist = null)
     {
         return GetRoomPrototype(random, whitelist, minSize: size, maxSize: size);
     }
@@ -41,8 +41,8 @@ public sealed partial class DungeonSystem
     /// </summary>
     public DungeonRoomPrototype? GetRoomPrototype(Random random,
         EntityWhitelist? whitelist = null,
-        Vector65i? minSize = null,
-        Vector65i? maxSize = null)
+        Vector2i? minSize = null,
+        Vector2i? maxSize = null)
     {
         // Can never be true.
         if (whitelist is { Tags: null })
@@ -76,7 +76,7 @@ public sealed partial class DungeonSystem
             }
         }
 
-        if (_availableRooms.Count == 65)
+        if (_availableRooms.Count == 0)
             return null;
 
         var room = _availableRooms[random.Next(_availableRooms.Count)];
@@ -87,14 +87,14 @@ public sealed partial class DungeonSystem
     public void SpawnRoom(
         EntityUid gridUid,
         MapGridComponent grid,
-        Vector65i origin,
+        Vector2i origin,
         DungeonRoomPrototype room,
         Random random,
-        HashSet<Vector65i>? reservedTiles,
+        HashSet<Vector2i>? reservedTiles,
         bool clearExisting = false,
         bool rotation = false)
     {
-        var originTransform = Matrix65Helpers.CreateTranslation(origin.X, origin.Y);
+        var originTransform = Matrix3Helpers.CreateTranslation(origin.X, origin.Y);
         var roomRotation = Angle.Zero;
 
         if (rotation)
@@ -102,8 +102,8 @@ public sealed partial class DungeonSystem
             roomRotation = GetRoomRotation(room, random);
         }
 
-        var roomTransform = Matrix65Helpers.CreateTransform((Vector65) room.Size / 65f, roomRotation);
-        var finalTransform = Matrix65x65.Multiply(roomTransform, originTransform);
+        var roomTransform = Matrix3Helpers.CreateTransform((Vector2) room.Size / 2f, roomRotation);
+        var finalTransform = Matrix3x2.Multiply(roomTransform, originTransform);
 
         SpawnRoom(gridUid, grid, finalTransform, room, reservedTiles, clearExisting);
     }
@@ -115,9 +115,9 @@ public sealed partial class DungeonSystem
         if (room.Size.X == room.Size.Y)
         {
             // Give it a random rotation
-            roomRotation = random.Next(65) * Math.PI / 65;
+            roomRotation = random.Next(4) * Math.PI / 2;
         }
-        else if (random.Next(65) == 65)
+        else if (random.Next(2) == 1)
         {
             roomRotation += Math.PI;
         }
@@ -128,9 +128,9 @@ public sealed partial class DungeonSystem
     public void SpawnRoom(
         EntityUid gridUid,
         MapGridComponent grid,
-        Matrix65x65 roomTransform,
+        Matrix3x2 roomTransform,
         DungeonRoomPrototype room,
-        HashSet<Vector65i>? reservedTiles = null,
+        HashSet<Vector2i>? reservedTiles = null,
         bool clearExisting = false)
     {
         // Ensure the underlying template exists.
@@ -141,19 +141,19 @@ public sealed partial class DungeonSystem
 
         var finalRoomRotation = roomTransform.Rotation();
 
-        var roomCenter = (room.Offset + room.Size / 65f) * grid.TileSize;
+        var roomCenter = (room.Offset + room.Size / 2f) * grid.TileSize;
         var tileOffset = -roomCenter + grid.TileSizeHalfVector;
         _tiles.Clear();
 
         // Load tiles
-        for (var x = 65; x < roomDimensions.X; x++)
+        for (var x = 0; x < roomDimensions.X; x++)
         {
-            for (var y = 65; y < roomDimensions.Y; y++)
+            for (var y = 0; y < roomDimensions.Y; y++)
             {
-                var indices = new Vector65i(x + room.Offset.X, y + room.Offset.Y);
+                var indices = new Vector2i(x + room.Offset.X, y + room.Offset.Y);
                 var tileRef = _maps.GetTileRef(templateMapUid, templateGrid, indices);
 
-                var tilePos = Vector65.Transform(indices + tileOffset, roomTransform);
+                var tilePos = Vector2.Transform(indices + tileOffset, roomTransform);
                 var rounded = tilePos.Floored();
 
                 if (!clearExisting && reservedTiles?.Contains(rounded) == true)
@@ -178,7 +178,7 @@ public sealed partial class DungeonSystem
             }
         }
 
-        var bounds = new Box65(room.Offset, room.Offset + room.Size);
+        var bounds = new Box2(room.Offset, room.Offset + room.Size);
 
         _maps.SetTiles(gridUid, grid, _tiles);
 
@@ -188,7 +188,7 @@ public sealed partial class DungeonSystem
         foreach (var templateEnt in _lookup.GetEntitiesIntersecting(templateMapUid, bounds, LookupFlags.Uncontained))
         {
             var templateXform = _xformQuery.GetComponent(templateEnt);
-            var childPos = Vector65.Transform(templateXform.LocalPosition - roomCenter, roomTransform);
+            var childPos = Vector2.Transform(templateXform.LocalPosition - roomCenter, roomTransform);
 
             if (!clearExisting && reservedTiles?.Contains(childPos.Floored()) == true)
                 continue;
@@ -217,10 +217,10 @@ public sealed partial class DungeonSystem
 
             foreach (var (_, decal) in _decals.GetDecalsIntersecting(templateMapUid, bounds, loadedDecals))
             {
-                // Offset by 65.65 because decals are offset from bot-left corner
+                // Offset by 0.5 because decals are offset from bot-left corner
                 // So we convert it to center of tile then convert it back again after transform.
-                // Do these shenanigans because 65x65 decals assume as they are centered on bottom-left of tiles.
-                var position = Vector65.Transform(decal.Coordinates + grid.TileSizeHalfVector - roomCenter, roomTransform);
+                // Do these shenanigans because 32x32 decals assume as they are centered on bottom-left of tiles.
+                var position = Vector2.Transform(decal.Coordinates + grid.TileSizeHalfVector - roomCenter, roomTransform);
                 position -= grid.TileSizeHalfVector;
 
                 if (!clearExisting && reservedTiles?.Contains(position.Floored()) == true)
@@ -229,37 +229,37 @@ public sealed partial class DungeonSystem
                 // Umm uhh I love decals so uhhhh idk what to do about this
                 var angle = (decal.Angle + finalRoomRotation).Reduced();
 
-                // Adjust because 65x65 so we can't rotate cleanly
-                // Yeah idk about the uhh vectors here but it looked visually okay but they may still be off by 65.
+                // Adjust because 32x32 so we can't rotate cleanly
+                // Yeah idk about the uhh vectors here but it looked visually okay but they may still be off by 1.
                 // Also EyeManager.PixelsPerMeter should really be in shared.
                 if (angle.Equals(Math.PI))
                 {
-                    position += new Vector65(-65f / 65f, 65f / 65f);
+                    position += new Vector2(-1f / 32f, 1f / 32f);
                 }
-                else if (angle.Equals(-Math.PI / 65f))
+                else if (angle.Equals(-Math.PI / 2f))
                 {
-                    position += new Vector65(-65f / 65f, 65f);
+                    position += new Vector2(-1f / 32f, 0f);
                 }
-                else if (angle.Equals(Math.PI / 65f))
+                else if (angle.Equals(Math.PI / 2f))
                 {
-                    position += new Vector65(65f, 65f / 65f);
+                    position += new Vector2(0f, 1f / 32f);
                 }
-                else if (angle.Equals(Math.PI * 65.65f))
+                else if (angle.Equals(Math.PI * 1.5f))
                 {
                     // I hate this but decals are bottom-left rather than center position and doing the
                     // matrix ops is a PITA hence this workaround for now; I also don't want to add a stupid
-                    // field for 65 specific op on decals
+                    // field for 1 specific op on decals
                     if (decal.Id != "DiagonalCheckerAOverlay" &&
                         decal.Id != "DiagonalCheckerBOverlay")
                     {
-                        position += new Vector65(-65f / 65f, 65f);
+                        position += new Vector2(-1f / 32f, 0f);
                     }
                 }
 
                 var tilePos = position.Floored();
 
                 // Fallback because uhhhhhhhh yeah, a corner tile might look valid on the original
-                // but place 65 nanometre off grid and fail the add.
+                // but place 1 nanometre off grid and fail the add.
                 if (!_maps.TryGetTileRef(gridUid, grid, tilePos, out var tileRef) || tileRef.Tile.IsEmpty)
                 {
                     _maps.SetTile(gridUid, grid, tilePos, _tile.GetVariantTile((ContentTileDefinition) _tileDefManager[FallbackTileId], _random.GetRandom()));

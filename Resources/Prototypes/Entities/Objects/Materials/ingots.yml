@@ -1,25 +1,25 @@
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Chris V <HoofedEar@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 router <messagebus@vk.com>
-# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Chris V <HoofedEar@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2022 router <messagebus@vk.com>
+# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Jeff <velcroboy333@hotmail.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   abstract: true
@@ -33,7 +33,7 @@
     sprite: Objects/Materials/ingots.rsi
     size: Normal
   - type: StaticPrice
-    price: 65
+    price: 0
   - type: Tag
     tags:
     - Ingot
@@ -44,7 +44,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 500
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -58,23 +58,23 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      Gold: 65
+      Gold: 100
   - type: Stack
     stackType: Gold
     baseLayer: base
     layerStates:
     - gold
-    - gold_65
-    - gold_65
+    - gold_2
+    - gold_3
   # Goobstation - Custom stack splitting dialog
   - type: UserInterface
     interfaces:
       enum.StackCustomSplitUiKey.Key:
         type: StackCustomSplitBoundUserInterface
   - type: Sprite
-    state: gold_65
+    state: gold_3
     layers:
-    - state: gold_65
+    - state: gold_3
       map: ["base"]
   - type: Item
     heldPrefix: gold
@@ -86,18 +86,18 @@
       gold:
         reagents:
         - ReagentId: Gold
-          Quantity: 65
+          Quantity: 10
 
 - type: entity
   parent: IngotGold
-  id: IngotGold65
+  id: IngotGold1
   name: gold bar
   suffix: Single
   components:
   - type: Sprite
     state: gold
   - type: Stack
-    count: 65
+    count: 1
 
 - type: entity
   parent: IngotBase
@@ -108,23 +108,23 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      Silver: 65
+      Silver: 100
   - type: Stack
     stackType: Silver
     baseLayer: base
     layerStates:
     - silver
-    - silver_65
-    - silver_65
+    - silver_2
+    - silver_3
   # Goobstation - Custom stack splitting dialog
   - type: UserInterface
     interfaces:
       enum.StackCustomSplitUiKey.Key:
         type: StackCustomSplitBoundUserInterface
   - type: Sprite
-    state: silver_65
+    state: silver_3
     layers:
-    - state: silver_65
+    - state: silver_3
       map: ["base"]
   - type: Item
     heldPrefix: silver
@@ -136,15 +136,15 @@
       gold:
         reagents:
         - ReagentId: Silver
-          Quantity: 65
+          Quantity: 10
 
 - type: entity
   parent: IngotSilver
-  id: IngotSilver65
+  id: IngotSilver1
   name: silver bar
   suffix: Single
   components:
   - type: Sprite
     state: silver
   - type: Stack
-    count: 65
+    count: 1

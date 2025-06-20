@@ -1,57 +1,57 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Dorragon <65Dorragon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-# SPDX-FileCopyrightText: 65 PursuitInAshes <65PursuitInAshes@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 TakoDragon <65BackeTako@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 centcomofficer65 <theo65cg@gmail.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Dorragon <101672978+Dorragon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Julian Giebel <juliangiebel@live.de>
+# SPDX-FileCopyrightText: 2025 PursuitInAshes <91865152+PursuitInAshes@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 TakoDragon <69509841+BackeTako@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 centcomofficer24 <theo75cg@gmail.com>
+# SPDX-FileCopyrightText: 2025 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: vendingMachineInventory
   id: PrideDrobeInventory
   startingInventory:
-    ClothingNeckLGBTPin: 65
-    ClothingNeckAllyPin: 65
-    ClothingNeckAromanticPin: 65
-    ClothingNeckAsexualPin: 65
-    ClothingNeckAroacePin: 65
-    ClothingNeckBisexualPin: 65
-    ClothingNeckGayPin: 65
-    ClothingNeckIntersexPin: 65
-    ClothingNeckLesbianPin: 65
-    ClothingNeckNonBinaryPin: 65
-    ClothingNeckPansexualPin: 65
-    ClothingNeckPluralPin: 65
-    ClothingNeckOmnisexualPin: 65
-    ClothingNeckGenderqueerPin: 65
-    ClothingNeckGenderfluidPin: 65
-    ClothingNeckTransPin: 65
-    ClothingNeckAutismPin: 65
-    # ClothingNeckGoldAutismPin: 65 # somehow we don't have this one in goob so I'm commenting this out
-    PlushieSharkBlue: 65
-    PlushieSharkPink: 65
-    PlushieSharkGrey: 65
-    ClothingNeckScarfStripedAce: 65
-    ClothingNeckScarfStripedAro: 65
-    ClothingNeckScarfStripedAroace: 65
-    ClothingNeckScarfStripedBiSexual: 65
-    ClothingNeckScarfStripedGay: 65
-    ClothingNeckScarfStripedInter: 65
-    ClothingNeckScarfStripedLesbian: 65
-    ClothingNeckScarfStripedPan: 65
-    ClothingNeckScarfStripedNonBinary: 65
-    ClothingNeckScarfStripedRainbow: 65
-    ClothingNeckScarfStripedTrans: 65
-    ClothingHeadHatXmasCrown: 65
-    BedsheetRainbow: 65
-    ClothingNeckHeadphones: 65
-    ClothingHeadHatFlowerWreath: 65
-    ClothingUniformColorRainbow: 65
-    ClothingUnderSocksCoder: 65
-    ClothingUnderSocksBee: 65
+    ClothingNeckLGBTPin: 3
+    ClothingNeckAllyPin: 3
+    ClothingNeckAromanticPin: 3
+    ClothingNeckAsexualPin: 3
+    ClothingNeckAroacePin: 3
+    ClothingNeckBisexualPin: 3
+    ClothingNeckGayPin: 3
+    ClothingNeckIntersexPin: 3
+    ClothingNeckLesbianPin: 3
+    ClothingNeckNonBinaryPin: 3
+    ClothingNeckPansexualPin: 3
+    ClothingNeckPluralPin: 3
+    ClothingNeckOmnisexualPin: 3
+    ClothingNeckGenderqueerPin: 3
+    ClothingNeckGenderfluidPin: 3
+    ClothingNeckTransPin: 3
+    ClothingNeckAutismPin: 3
+    # ClothingNeckGoldAutismPin: 3 # somehow we don't have this one in goob so I'm commenting this out
+    PlushieSharkBlue: 2
+    PlushieSharkPink: 2
+    PlushieSharkGrey: 2
+    ClothingNeckScarfStripedAce: 2
+    ClothingNeckScarfStripedAro: 2
+    ClothingNeckScarfStripedAroace: 2
+    ClothingNeckScarfStripedBiSexual: 2
+    ClothingNeckScarfStripedGay: 2
+    ClothingNeckScarfStripedInter: 2
+    ClothingNeckScarfStripedLesbian: 2
+    ClothingNeckScarfStripedPan: 2
+    ClothingNeckScarfStripedNonBinary: 2
+    ClothingNeckScarfStripedRainbow: 2
+    ClothingNeckScarfStripedTrans: 2
+    ClothingHeadHatXmasCrown: 2
+    BedsheetRainbow: 2
+    ClothingNeckHeadphones: 2
+    ClothingHeadHatFlowerWreath: 2
+    ClothingUniformColorRainbow: 2
+    ClothingUnderSocksCoder: 2
+    ClothingUnderSocksBee: 2
   contrabandInventory:
-    ClothingNeckScarfStripedLesbianLong: 65
+    ClothingNeckScarfStripedLesbianLong: 2

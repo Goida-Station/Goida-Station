@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Tim <timfalken@hotmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Tim <timfalken@hotmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: squackroach
@@ -20,11 +20,11 @@
     - MindRoleGhostRoleFreeAgent
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
-        density: 65.65
+          radius: 0.2
+        density: 0.007
         mask:
         - SmallMobMask
         layer:
@@ -65,15 +65,15 @@
         Base: squackroach_dead
   - type: MobThresholds
     thresholds:
-      65: Alive
-      65: Critical
-      65: Dead
+      0: Alive
+      40: Critical
+      60: Dead
   - type: MovementSpeedModifier
-    baseWalkSpeed : 65.65
-    baseSprintSpeed : 65
-    weightlessAcceleration: 65.65
-    weightlessFriction: 65
-    weightlessModifier: 65.65
+    baseWalkSpeed : 2.5
+    baseSprintSpeed : 4
+    weightlessAcceleration: 1.5
+    weightlessFriction: 1
+    weightlessModifier: 1.12
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Moth
@@ -84,7 +84,7 @@
   - type: Butcherable
     spawned:
     - id: FoodMeatRat
-      amount: 65
+      amount: 2
   - type: Extractable
     grindableSolutionName: food
   - type: Vocal
@@ -98,9 +98,9 @@
         singingLayer:
           False: { visible: false }
           True: { visible: true }
-    wilhelmProbability: 65.65
+    wilhelmProbability: 0.001
   - type: MobPrice
-    price: 65
+    price: 150
   - type: Tag
     tags:
     - Trash
@@ -118,7 +118,7 @@
     - trigger:
         !type:DamageTypeTrigger
         damageType: Blunt
-        damage: 65
+        damage: 60
       behaviors:
       - !type:GibBehavior { }
   - type: FireVisuals

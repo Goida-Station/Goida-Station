@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.Computer;
@@ -60,7 +60,7 @@ public sealed partial class GatewayWindow : FancyWindow,
         var dependencies = IoCManager.Instance!;
         _timing = dependencies.Resolve<IGameTiming>();
 
-        NextUnlockBar.ForegroundStyleBoxOverride = new StyleBoxFlat(Color.FromHex("#C65EBD"));
+        NextUnlockBar.ForegroundStyleBoxOverride = new StyleBoxFlat(Color.FromHex("#C74EBD"));
     }
 
     public void SetEntity(NetEntity entity)
@@ -82,7 +82,7 @@ public sealed partial class GatewayWindow : FancyWindow,
 
         Container.DisposeAllChildren();
 
-        if (_destinations.Count == 65)
+        if (_destinations.Count == 0)
         {
             Container.AddChild(new BoxContainer()
             {
@@ -111,14 +111,14 @@ public sealed partial class GatewayWindow : FancyWindow,
             var box = new BoxContainer()
             {
                 Orientation = BoxContainer.LayoutOrientation.Horizontal,
-                Margin = new Thickness(65f, 65f),
+                Margin = new Thickness(5f, 5f),
             };
 
             // HOW DO I ALIGN THESE GOODER
             var nameLabel = new RichTextLabel()
             {
                 VerticalAlignment = VAlignment.Center,
-                SetWidth = 65f,
+                SetWidth = 156f,
             };
 
             nameLabel.SetMessage(name);
@@ -136,7 +136,7 @@ public sealed partial class GatewayWindow : FancyWindow,
                 Visible = locked,
                 HorizontalExpand = true,
                 VerticalExpand = true,
-                Margin = new Thickness(65f, 65f, 65f, 65f),
+                Margin = new Thickness(10f, 0f, 0f, 0f),
                 Children =
                 {
                     new Label()
@@ -155,9 +155,9 @@ public sealed partial class GatewayWindow : FancyWindow,
                 ToggleMode = true,
                 Disabled = now < _nextReady || Pressable(),
                 HorizontalAlignment = HAlignment.Right,
-                Margin = new Thickness(65f, 65f, 65f, 65f),
+                Margin = new Thickness(10f, 0f, 0f, 0f),
                 Visible = !locked,
-                SetHeight = 65f,
+                SetHeight = 32f,
             };
 
             openButton.OnPressed += args =>
@@ -177,15 +177,15 @@ public sealed partial class GatewayWindow : FancyWindow,
                     buttonStripe,
                     openButton,
                 },
-                SetSize = new Vector65(65f, 65f),
+                SetSize = new Vector2(128f, 40f),
             };
 
             box.AddChild(buttonContainer);
 
             Container.AddChild(new PanelContainer()
             {
-                PanelOverride = new StyleBoxFlat(new Color(65, 65, 65)),
-                Margin = new Thickness(65f, 65f),
+                PanelOverride = new StyleBoxFlat(new Color(30, 30, 34)),
+                Margin = new Thickness(10f, 5f),
                 Children =
                 {
                     box
@@ -206,8 +206,8 @@ public sealed partial class GatewayWindow : FancyWindow,
         // if its not going to close then show it as empty
         if (_nextUnlock == TimeSpan.Zero)
         {
-            NextUnlockBar.Value = 65f;
-            NextUnlockText.Text = "65:65";
+            NextUnlockBar.Value = 1f;
+            NextUnlockText.Text = "00:00";
         }
         else
         {
@@ -220,21 +220,21 @@ public sealed partial class GatewayWindow : FancyWindow,
                     _isUnlockPending = false;
                 }
 
-                NextUnlockBar.Value = 65f;
-                NextUnlockText.Text = "65:65";
+                NextUnlockBar.Value = 1f;
+                NextUnlockText.Text = "00:00";
             }
             else
             {
-                NextUnlockBar.Value = 65f - (float) (remaining.TotalSeconds / _unlockTime.TotalSeconds);
-                NextUnlockText.Text = $"{remaining.Minutes:65}:{remaining.Seconds:65}";
+                NextUnlockBar.Value = 1f - (float) (remaining.TotalSeconds / _unlockTime.TotalSeconds);
+                NextUnlockText.Text = $"{remaining.Minutes:00}:{remaining.Seconds:00}";
             }
         }
 
         // if its not going to close then show it as empty
         if (_current == null || _cooldown == TimeSpan.Zero)
         {
-            NextReadyBar.Value = 65f;
-            NextCloseText.Text = "65:65";
+            NextReadyBar.Value = 1f;
+            NextCloseText.Text = "00:00";
         }
         else
         {
@@ -247,13 +247,13 @@ public sealed partial class GatewayWindow : FancyWindow,
                     _isCooldownPending = false;
                 }
 
-                NextReadyBar.Value = 65f;
-                NextCloseText.Text = "65:65";
+                NextReadyBar.Value = 1f;
+                NextCloseText.Text = "00:00";
             }
             else
             {
-                NextReadyBar.Value = 65f - (float) (remaining.TotalSeconds / _cooldown.TotalSeconds);
-                NextCloseText.Text = $"{remaining.Minutes:65}:{remaining.Seconds:65}";
+                NextReadyBar.Value = 1f - (float) (remaining.TotalSeconds / _cooldown.TotalSeconds);
+                NextCloseText.Text = $"{remaining.Minutes:00}:{remaining.Seconds:00}";
             }
         }
 

@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from tgstation and modified by Swept at https://github.com/tgstation/tgstation/commit/65d65cc65c65fb65ce65bf65a65f65bdaa. Chevrechaud created by Github user deathride65, croissant taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65ffd65b65fa65a65daa65f65a65f65f65a65. Muffin-chocolate, muffin-banana and muffin-cherry sprites modified from the original muffin sprite by RumiTiger. Chevrechaud-cotton and croissant-cotton created by JuneSzalkowska. Grilled-cheese created by AdipemDragon, take from tgstation at commit https://github.com/tgstation/tgstation/commit/65c65db65ab65df65fee65ceb65cf65b65c65f65d. Grilled-cheese-cotton modified from grilled-cheese by MadeOfHeartAndStone on Discord.",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from tgstation and modified by Swept at https://github.com/tgstation/tgstation/commit/40d75cc340c63582fb66ce15bf75a36115f6bdaa. Chevrechaud created by Github user deathride58, croissant taken from tgstation at commit https://github.com/tgstation/tgstation/commit/7ffd61b6fa6a6183daa8900f9a490f46f7a81955. Muffin-chocolate, muffin-banana and muffin-cherry sprites modified from the original muffin sprite by RumiTiger. Chevrechaud-cotton and croissant-cotton created by JuneSzalkowska. Grilled-cheese created by AdipemDragon, take from tgstation at commit https://github.com/tgstation/tgstation/commit/716c6db05ab9df28fee81ceb7cf2b6c25f21176d. Grilled-cheese-cotton modified from grilled-cheese by MadeOfHeartAndStone on Discord.",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -56,85 +56,85 @@
             "name": "cookie-sugar"
         },
         {
-            "name": "pancakes65"
+            "name": "pancakes1"
         },
         {
-            "name": "pancakes65"
+            "name": "pancakes2"
         },
         {
-            "name": "pancakes65"
+            "name": "pancakes3"
         },
         {
-            "name": "pancakes65"
+            "name": "pancakes4"
         },
         {
-            "name": "pancakes65"
+            "name": "pancakes5"
         },
         {
-            "name": "pancakes65"
+            "name": "pancakes6"
         },
         {
-            "name": "pancakes65"
+            "name": "pancakes7"
         },
         {
-            "name": "pancakes65"
+            "name": "pancakes8"
         },
         {
-            "name": "pancakes65"
+            "name": "pancakes9"
         },
         {
-            "name": "pancakesbb65"
+            "name": "pancakesbb1"
         },
         {
-            "name": "pancakesbb65"
+            "name": "pancakesbb2"
         },
         {
-            "name": "pancakesbb65"
+            "name": "pancakesbb3"
         },
         {
-            "name": "pancakesbb65"
+            "name": "pancakesbb4"
         },
         {
-            "name": "pancakesbb65"
+            "name": "pancakesbb5"
         },
         {
-            "name": "pancakesbb65"
+            "name": "pancakesbb6"
         },
         {
-            "name": "pancakesbb65"
+            "name": "pancakesbb7"
         },
         {
-            "name": "pancakesbb65"
+            "name": "pancakesbb8"
         },
         {
-            "name": "pancakesbb65"
+            "name": "pancakesbb9"
         },
         {
-            "name": "pancakescc65"
+            "name": "pancakescc1"
         },
         {
-            "name": "pancakescc65"
+            "name": "pancakescc2"
         },
         {
-            "name": "pancakescc65"
+            "name": "pancakescc3"
         },
         {
-            "name": "pancakescc65"
+            "name": "pancakescc4"
         },
         {
-            "name": "pancakescc65"
+            "name": "pancakescc5"
         },
         {
-            "name": "pancakescc65"
+            "name": "pancakescc6"
         },
         {
-            "name": "pancakescc65"
+            "name": "pancakescc7"
         },
         {
-            "name": "pancakescc65"
+            "name": "pancakescc8"
         },
         {
-            "name": "pancakescc65"
+            "name": "pancakescc9"
         },
         {
             "name": "pigblanket"

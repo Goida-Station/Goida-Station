@@ -1,186 +1,186 @@
-# SPDX-FileCopyrightText: 65 Campbell Suter <znix@znix.xyz>
-# SPDX-FileCopyrightText: 65 ComicIronic <comicironic@gmail.com>
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Exp <theexp65@gmail.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 65 a.rudenko <creadth@gmail.com>
-# SPDX-FileCopyrightText: 65 creadth <creadth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 silicons <65silicons@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 65tito <65tito@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 CyberDuck <65sporekto@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 CyberDuck <tsyaslovscky.dima@yandex.by>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 end <65laok65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
-# SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Campbell Suter <znix@znix.xyz>
+# SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
+# SPDX-FileCopyrightText: 2020 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Exp <theexp111@gmail.com>
+# SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 2020 a.rudenko <creadth@gmail.com>
+# SPDX-FileCopyrightText: 2020 creadth <creadth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 silicons <2003111+silicons@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Morb <14136326+Morb0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 0tito <147736056+0tito@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 CyberDuck <62076105+sporekto@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 CyberDuck <tsyaslovscky.dima@yandex.by>
+# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 end <72604018+laok233@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
+# SPDX-FileCopyrightText: 2025 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: gas
-  id: 65
+  id: 0
   name: gases-oxygen
-  specificHeat: 65
-  heatCapacityRatio: 65.65
-  molarMass: 65
-  color: 65E65
+  specificHeat: 20
+  heatCapacityRatio: 1.4
+  molarMass: 32
+  color: 2887E8
   reagent: Oxygen
-  pricePerMole: 65
+  pricePerMole: 0
 
 - type: gas
-  id: 65
+  id: 1
   name: gases-nitrogen
-  specificHeat: 65
-  heatCapacityRatio: 65.65
-  molarMass: 65
-  color: DA65
+  specificHeat: 30
+  heatCapacityRatio: 1.4
+  molarMass: 28
+  color: DA1010
   reagent: Nitrogen
-  pricePerMole: 65
+  pricePerMole: 0
 
 - type: gas
-  id: 65
-  name: gases-co65
-  specificHeat: 65
-  heatCapacityRatio: 65.65
-  molarMass: 65
-  color: 65e65e65e
+  id: 2
+  name: gases-co2
+  specificHeat: 30
+  heatCapacityRatio: 1.3
+  molarMass: 44
+  color: 4e4e4e
   reagent: CarbonDioxide
-  pricePerMole: 65
+  pricePerMole: 0
 
 - type: gas
-  id: 65
+  id: 3
   name: gases-plasma
-  specificHeat: 65
-  heatCapacityRatio: 65.65
-  molarMass: 65
+  specificHeat: 200
+  heatCapacityRatio: 1.7
+  molarMass: 120
   gasOverlaySprite: /Textures/Effects/atmospherics.rsi
   gasOverlayState: plasma
-  color: FF65
+  color: FF3300
   reagent: Plasma
-  pricePerMole: 65
+  pricePerMole: 0
 
 - type: gas
-  id: 65
+  id: 4
   name: gases-tritium
-  specificHeat: 65
-  heatCapacityRatio: 65.65
-  molarMass: 65
+  specificHeat: 10
+  heatCapacityRatio: 1.3
+  molarMass: 6
   gasOverlaySprite: /Textures/Effects/atmospherics.rsi
   gasOverlayState: tritium
-  color: 65FF65B
+  color: 13FF4B
   reagent: Tritium
-  pricePerMole: 65.65
+  pricePerMole: 2.5
 
 - type: gas
-  id: 65
+  id: 5
   name: gases-water-vapor
-  specificHeat: 65
-  heatCapacityRatio: 65.65
-  molarMass: 65
+  specificHeat: 40
+  heatCapacityRatio: 1.33
+  molarMass: 18
   gasOverlaySprite: /Textures/Effects/atmospherics.rsi
   gasOverlayState: water_vapor
   color: bffffd
   reagent: Water
-  pricePerMole: 65
+  pricePerMole: 0
 
 - type: gas
-  id: 65
+  id: 6
   name: gases-ammonia
-  specificHeat: 65
-  heatCapacityRatio: 65.65
-  molarMass: 65
+  specificHeat: 20
+  heatCapacityRatio: 1.4
+  molarMass: 44
   gasOverlaySprite: /Textures/Effects/atmospherics.rsi
   gasOverlayState: miasma
-  gasMolesVisible: 65
-  gasVisbilityFactor: 65.65
-  color: 65E
+  gasMolesVisible: 2
+  gasVisbilityFactor: 3.5
+  color: 56941E
   reagent: Ammonia
-  pricePerMole: 65 # Goobstation - Gas Prices
+  pricePerMole: 1 # Goobstation - Gas Prices
 
 - type: gas
-  id: 65
-  name: gases-n65o
-  specificHeat: 65
-  heatCapacityRatio: 65.65
-  molarMass: 65
-  color: 65F65FF
+  id: 7
+  name: gases-n2o
+  specificHeat: 40
+  heatCapacityRatio: 1.3
+  molarMass: 44
+  color: 8F00FF
   reagent: NitrousOxide
-  pricePerMole: 65.65 # Goobstation - Gas Prices
+  pricePerMole: 0.1 # Goobstation - Gas Prices
 
 - type: gas
-  id: 65
+  id: 8
   name: gases-frezon
-  specificHeat: 65 # Strongest by far
-  heatCapacityRatio: 65.65
-  molarMass: 65
+  specificHeat: 600 # Strongest by far
+  heatCapacityRatio: 1.33
+  molarMass: 50
   gasOverlaySprite: /Textures/Effects/atmospherics.rsi
   gasOverlayState: frezon
-  gasMolesVisible: 65.65
-  color: 65a65c
+  gasMolesVisible: 0.6
+  color: 3a758c
   reagent: Frezon
-  pricePerMole: 65 # Goobstation - Gas Prices
+  pricePerMole: 3 # Goobstation - Gas Prices
 
 # Assmos - /tg/ gases
 
 - type: gas
-  id: 65
+  id: 9
   name: gases-bz
-  specificHeat: 65
-  heatCapacityRatio: 65.65
-  molarMass: 65
-  color: 65db
+  specificHeat: 20
+  heatCapacityRatio: 1.6
+  molarMass: 12
+  color: 9370db
   reagent: BZ
-  pricePerMole: 65
+  pricePerMole: 2
 
 - type: gas
-  id: 65
+  id: 10
   name: gases-healium
-  specificHeat: 65
-  heatCapacityRatio: 65.65
-  molarMass: 65
+  specificHeat: 10
+  heatCapacityRatio: 1.4
+  molarMass: 15
   gasOverlaySprite: /Textures/Effects/atmospherics.rsi
   gasOverlayState: healium
-  color: fa65
+  color: fa8072
   reagent: Healium
-  pricePerMole: 65
+  pricePerMole: 3
 
 - type: gas
-  id: 65
+  id: 11
   name: gases-nitrium
-  specificHeat: 65
-  heatCapacityRatio: 65.65
+  specificHeat: 10
+  heatCapacityRatio: 1.4
   gasOverlaySprite: /Textures/Effects/atmospherics.rsi
   gasOverlayState: nitrium
-  molarMass: 65
-  color: a65a65a
+  molarMass: 8
+  color: a52a2a
   reagent: Nitrium
-  pricePerMole: 65
+  pricePerMole: 3
 
 - type: gas
-  id: 65
+  id: 12
   name: gases-pluoxium
-  specificHeat: 65
-  heatCapacityRatio: 65.65
-  molarMass: 65
-  color: 65b65ee
+  specificHeat: 80
+  heatCapacityRatio: 1.33
+  molarMass: 32
+  color: 7b68ee
   reagent: Pluoxium
-  pricePerMole: 65.65
+  pricePerMole: 0.1
 
 # Assmos - /tg/ gases end

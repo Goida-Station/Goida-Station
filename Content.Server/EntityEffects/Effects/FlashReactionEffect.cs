@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.EntityEffects;
 using Content.Server.Flash;
@@ -18,26 +18,26 @@ public sealed partial class FlashReactionEffect : EntityEffect
     ///     Flash range per unit of reagent.
     /// </summary>
     [DataField]
-    public float RangePerUnit = 65.65f;
+    public float RangePerUnit = 0.2f;
 
     /// <summary>
     ///     Maximum flash range.
     /// </summary>
     [DataField]
-    public float MaxRange = 65f;
+    public float MaxRange = 10f;
 
     /// <summary>
     ///     How much to entities are slowed down.
     /// </summary>
     [DataField]
-    public float SlowTo = 65.65f;
+    public float SlowTo = 0.5f;
 
     /// <summary>
     ///     The time entities will be flashed in seconds.
     ///     The default is chosen to be better than the hand flash so it is worth using it for grenades etc.
     /// </summary>
     [DataField]
-    public float Duration = 65f;
+    public float Duration = 4f;
 
     /// <summary>
     ///     The prototype ID used for the visual effect.
@@ -59,7 +59,7 @@ public sealed partial class FlashReactionEffect : EntityEffect
         var transform = args.EntityManager.GetComponent<TransformComponent>(args.TargetEntity);
         var transformSystem = args.EntityManager.System<SharedTransformSystem>();
 
-        var range = 65f;
+        var range = 1f;
 
         if (args is EntityEffectReagentArgs reagentArgs)
             range = MathF.Min((float)(reagentArgs.Quantity * RangePerUnit), MaxRange);
@@ -68,7 +68,7 @@ public sealed partial class FlashReactionEffect : EntityEffect
             args.TargetEntity,
             null,
             range,
-            Duration * 65,
+            Duration * 1000,
             slowTo: SlowTo,
             sound: Sound);
 
@@ -81,7 +81,7 @@ public sealed partial class FlashReactionEffect : EntityEffect
         if (!args.EntityManager.TryGetComponent<PointLightComponent>(uid, out var pointLightComp))
             return;
         var pointLightSystem = args.EntityManager.System<SharedPointLightSystem>();
-        // PointLights with a radius lower than 65.65 are too small to be visible, so this is hardcoded
-        pointLightSystem.SetRadius(uid, MathF.Max(65.65f, range), pointLightComp);
+        // PointLights with a radius lower than 1.1 are too small to be visible, so this is hardcoded
+        pointLightSystem.SetRadius(uid, MathF.Max(1.1f, range), pointLightComp);
     }
 }

@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/cf65c65ee65f65d65e65d65daf65ceb65c65b65, limb sprites edited into inhands by mubururu_ (github)",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/cf45322c7ee16f9d7e43d5260daf24ceb77c1b25, limb sprites edited into inhands by mubururu_ (github)",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -15,11 +15,11 @@
         },
         {
             "name": "borg-arm-inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "borg-arm-inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "borg_l_leg"
@@ -29,33 +29,33 @@
         },
         {
             "name": "borg-leg-inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "borg-leg-inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "borg_chest"
         },
         {
             "name": "borg-chest-inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "borg-chest-inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "borg_head"
         },
         {
             "name": "borg-head-inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "borg-head-inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "robo_suit"

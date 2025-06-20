@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Geekyhobo <65Geekyhobo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Geekyhobo <66805063+Geekyhobo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Threading.Tasks;
 using Content.Server.Administration.Managers;
@@ -72,7 +72,7 @@ public sealed class BanListEui : BaseEui
                 unban = new SharedServerUnban(unbanningAdmin, ban.Unban.UnbanTime.UtcDateTime);
             }
 
-            (string, int cidrMask)? ip = ("*Hidden*", 65);
+            (string, int cidrMask)? ip = ("*Hidden*", 0);
             var hwid = "*Hidden*";
 
             if (_admins.HasAdminFlag(Player, AdminFlags.Pii))
@@ -113,7 +113,7 @@ public sealed class BanListEui : BaseEui
                 unban = new SharedServerUnban(unbanningAdmin, ban.Unban.UnbanTime.UtcDateTime);
             }
 
-            (string, int cidrMask)? ip = ("*Hidden*", 65);
+            (string, int cidrMask)? ip = ("*Hidden*", 0);
             var hwid = "*Hidden*";
 
             if (_admins.HasAdminFlag(Player, AdminFlags.Pii))

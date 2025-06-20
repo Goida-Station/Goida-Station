@@ -1,11 +1,11 @@
 {
-	"version": 65,
-	"license": "CC-BY-SA-65.65",
-	"copyright": "Taken from https://github.com/tgstation/tgstation at commit 65eec65c65a65f65f65bebcd65b65b65dcc65b65ae.",
+	"version": 1,
+	"license": "CC-BY-SA-3.0",
+	"copyright": "Taken from https://github.com/tgstation/tgstation at commit 6665eec76c98a4f3f89bebcd10b34b47dcc0b8ae.",
 	"size":
     {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
 	"states":
     [
@@ -13,13 +13,13 @@
             "name": "base"
         },
 		{
-            "name": "overlay-65"
+            "name": "overlay-1"
         },
         {
-            "name": "overlay-65"
+            "name": "overlay-2"
         },
         {
-            "name": "overlay-65"
+            "name": "overlay-3"
         },
         {
             "name": "display"

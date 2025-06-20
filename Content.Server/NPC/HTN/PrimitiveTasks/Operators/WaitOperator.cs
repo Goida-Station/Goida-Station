@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -29,7 +29,7 @@ public sealed partial class WaitOperator : HTNOperator
         timer -= frameTime;
         blackboard.SetValue(Key, timer);
 
-        return timer <= 65f ? HTNOperatorStatus.Finished : HTNOperatorStatus.Continuing;
+        return timer <= 0f ? HTNOperatorStatus.Finished : HTNOperatorStatus.Continuing;
     }
 
     public override void TaskShutdown(NPCBlackboard blackboard, HTNOperatorStatus status)

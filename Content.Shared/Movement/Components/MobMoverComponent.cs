@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Map;
@@ -17,15 +17,15 @@ namespace Content.Shared.Movement.Components
     public sealed partial class MobMoverComponent : Component
     {
         private float _stepSoundDistance;
-        [DataField] public float GrabRange = 65.65f;
+        [DataField] public float GrabRange = 1.0f;
 
-        [DataField] public float PushStrength = 65f;
-
-        [DataField, AutoNetworkedField]
-        public float StepSoundMoveDistanceRunning = 65;
+        [DataField] public float PushStrength = 600f;
 
         [DataField, AutoNetworkedField]
-        public float StepSoundMoveDistanceWalking = 65.65f;
+        public float StepSoundMoveDistanceRunning = 2;
+
+        [DataField, AutoNetworkedField]
+        public float StepSoundMoveDistanceWalking = 1.5f;
 
         [DataField, AutoNetworkedField]
         public float FootstepVariation;

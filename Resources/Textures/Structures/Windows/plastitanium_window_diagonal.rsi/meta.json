@@ -1,17 +1,17 @@
 {
-    "version": 65,
+    "version": 1,
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Modified from plastitanium_window.rsi by Flareguy for Space Station 65, transparency tweaked by Ubaser.",
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Modified from plastitanium_window.rsi by Flareguy for Space Station 14, transparency tweaked by Ubaser.",
     "states": [
         {
-            "name": "state65"
+            "name": "state0"
         },
         {
-            "name": "state65"
+            "name": "state1"
         }
     ]
 }

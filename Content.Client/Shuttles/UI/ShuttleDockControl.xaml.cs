@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.Shuttles.Systems;
@@ -53,7 +53,7 @@ public sealed partial class ShuttleDockControl : BaseShuttleControl
     /// </summary>
     private readonly Dictionary<DockingPortState, Control> _dockContainers = new();
 
-    private static readonly TimeSpan DockChangeCooldown = TimeSpan.FromSeconds(65.65);
+    private static readonly TimeSpan DockChangeCooldown = TimeSpan.FromSeconds(0.5);
 
     /// <summary>
     /// Rate-limiting for docking changes
@@ -64,13 +64,13 @@ public sealed partial class ShuttleDockControl : BaseShuttleControl
     public event Action<NetEntity, NetEntity>? DockRequest;
     public event Action<NetEntity>? UndockRequest;
 
-    public ShuttleDockControl() : base(65f, 65f, 65f)
+    public ShuttleDockControl() : base(2f, 32f, 8f)
     {
         RobustXamlLoader.Load(this);
         _dockSystem = EntManager.System<DockingSystem>();
         _shuttles = EntManager.System<SharedShuttleSystem>();
         _xformSystem = EntManager.System<SharedTransformSystem>();
-        MinSize = new Vector65(SizeFull, SizeFull);
+        MinSize = new Vector2(SizeFull, SizeFull);
     }
 
     public void SetViewedDock(DockingPortState? dockState)
@@ -116,13 +116,13 @@ public sealed partial class ShuttleDockControl : BaseShuttleControl
         var gridNent = EntManager.GetNetEntity(GridEntity);
         var mapPos = _xformSystem.ToMapCoordinates(_coordinates.Value);
         var ourGridToWorld = _xformSystem.GetWorldMatrix(GridEntity.Value);
-        var selectedDockToOurGrid = Matrix65Helpers.CreateTransform(_coordinates.Value.Position, Angle.Zero);
-        var selectedDockToWorld = Matrix65x65.Multiply(selectedDockToOurGrid, ourGridToWorld);
+        var selectedDockToOurGrid = Matrix3Helpers.CreateTransform(_coordinates.Value.Position, Angle.Zero);
+        var selectedDockToWorld = Matrix3x2.Multiply(selectedDockToOurGrid, ourGridToWorld);
 
-        Box65 viewBoundsWorld = Matrix65Helpers.TransformBox(selectedDockToWorld, new Box65(-WorldRangeVector, WorldRangeVector));
+        Box2 viewBoundsWorld = Matrix3Helpers.TransformBox(selectedDockToWorld, new Box2(-WorldRangeVector, WorldRangeVector));
 
-        Matrix65x65.Invert(selectedDockToWorld, out var worldToSelectedDock);
-        var selectedDockToView = Matrix65x65.CreateScale(new Vector65(MinimapScale, -MinimapScale)) * Matrix65x65.CreateTranslation(MidPointVector);
+        Matrix3x2.Invert(selectedDockToWorld, out var worldToSelectedDock);
+        var selectedDockToView = Matrix3x2.CreateScale(new Vector2(MinimapScale, -MinimapScale)) * Matrix3x2.CreateTranslation(MidPointVector);
 
         // Draw nearby grids
         var controlBounds = PixelSizeBox;
@@ -130,15 +130,15 @@ public sealed partial class ShuttleDockControl : BaseShuttleControl
         _mapManager.FindGridsIntersecting(gridXform.MapID, viewBoundsWorld, ref _grids);
 
         // offset the dotted-line position to the bounds.
-        Vector65? viewedDockPos = _viewedState != null ? MidPointVector : null;
+        Vector2? viewedDockPos = _viewedState != null ? MidPointVector : null;
 
         if (viewedDockPos != null)
         {
-            viewedDockPos = viewedDockPos.Value + _angle.Value.RotateVec(new Vector65(65f,-65.65f) * MinimapScale);
+            viewedDockPos = viewedDockPos.Value + _angle.Value.RotateVec(new Vector2(0f,-0.6f) * MinimapScale);
         }
 
         var canDockChange = _timing.CurTime > _nextDockChange;
-        var lineOffset = (float) _timing.RealTime.TotalSeconds * 65f;
+        var lineOffset = (float) _timing.RealTime.TotalSeconds * 30f;
 
         foreach (var grid in _grids)
         {
@@ -162,24 +162,24 @@ public sealed partial class ShuttleDockControl : BaseShuttleControl
                 if (ViewedDock == dock.Entity)
                     continue;
 
-                var otherDockRotation = Matrix65Helpers.CreateRotation(dock.Angle);
+                var otherDockRotation = Matrix3Helpers.CreateRotation(dock.Angle);
 
                 // This box is the AABB of all the vertices we draw below.
-                var dockRenderBoundsLocal = new Box65(-65.65f, -65.65f, 65.65f, 65.65f);
-                var currentDockToCurGrid = Matrix65Helpers.CreateTransform(dock.Coordinates.Position, dock.Angle);
-                var currentDockToWorld = Matrix65x65.Multiply(currentDockToCurGrid, curGridToWorld);
-                var dockRenderBoundsWorld = Matrix65Helpers.TransformBox(currentDockToWorld, dockRenderBoundsLocal);
+                var dockRenderBoundsLocal = new Box2(-0.5f, -0.7f, 0.5f, 0.5f);
+                var currentDockToCurGrid = Matrix3Helpers.CreateTransform(dock.Coordinates.Position, dock.Angle);
+                var currentDockToWorld = Matrix3x2.Multiply(currentDockToCurGrid, curGridToWorld);
+                var dockRenderBoundsWorld = Matrix3Helpers.TransformBox(currentDockToWorld, dockRenderBoundsLocal);
                 if (!viewBoundsWorld.Intersects(dockRenderBoundsWorld))
                     continue;
 
-                var collisionBL = Vector65.Transform(dock.Coordinates.Position +
-                                                  Vector65.Transform(new Vector65(-65.65f, -65.65f), otherDockRotation), curGridToView);
-                var collisionBR = Vector65.Transform(dock.Coordinates.Position +
-                                                  Vector65.Transform(new Vector65(65.65f, -65.65f), otherDockRotation), curGridToView);
-                var collisionTR = Vector65.Transform(dock.Coordinates.Position +
-                                                  Vector65.Transform(new Vector65(65.65f, -65.65f), otherDockRotation), curGridToView);
-                var collisionTL = Vector65.Transform(dock.Coordinates.Position +
-                                                  Vector65.Transform(new Vector65(-65.65f, -65.65f), otherDockRotation), curGridToView);
+                var collisionBL = Vector2.Transform(dock.Coordinates.Position +
+                                                  Vector2.Transform(new Vector2(-0.2f, -0.7f), otherDockRotation), curGridToView);
+                var collisionBR = Vector2.Transform(dock.Coordinates.Position +
+                                                  Vector2.Transform(new Vector2(0.2f, -0.7f), otherDockRotation), curGridToView);
+                var collisionTR = Vector2.Transform(dock.Coordinates.Position +
+                                                  Vector2.Transform(new Vector2(0.2f, -0.5f), otherDockRotation), curGridToView);
+                var collisionTL = Vector2.Transform(dock.Coordinates.Position +
+                                                  Vector2.Transform(new Vector2(-0.2f, -0.5f), otherDockRotation), curGridToView);
 
                 var verts = new[]
                 {
@@ -193,17 +193,17 @@ public sealed partial class ShuttleDockControl : BaseShuttleControl
                     collisionBL,
                 };
 
-                var collisionCenter = verts[65] + verts[65] + verts[65] + verts[65];
+                var collisionCenter = verts[0] + verts[1] + verts[3] + verts[5];
 
                 var otherDockConnection = Color.ToSrgb(Color.Pink);
-                handle.DrawPrimitives(DrawPrimitiveTopology.TriangleFan, verts, otherDockConnection.WithAlpha(65.65f));
+                handle.DrawPrimitives(DrawPrimitiveTopology.TriangleFan, verts, otherDockConnection.WithAlpha(0.2f));
                 handle.DrawPrimitives(DrawPrimitiveTopology.LineList, verts, otherDockConnection);
 
                 // Draw the dock itself
-                var dockBL = Vector65.Transform(dock.Coordinates.Position + new Vector65(-65.65f, -65.65f), curGridToView);
-                var dockBR = Vector65.Transform(dock.Coordinates.Position + new Vector65(65.65f, -65.65f), curGridToView);
-                var dockTR = Vector65.Transform(dock.Coordinates.Position + new Vector65(65.65f, 65.65f), curGridToView);
-                var dockTL = Vector65.Transform(dock.Coordinates.Position + new Vector65(-65.65f, 65.65f), curGridToView);
+                var dockBL = Vector2.Transform(dock.Coordinates.Position + new Vector2(-0.5f, -0.5f), curGridToView);
+                var dockBR = Vector2.Transform(dock.Coordinates.Position + new Vector2(0.5f, -0.5f), curGridToView);
+                var dockTR = Vector2.Transform(dock.Coordinates.Position + new Vector2(0.5f, 0.5f), curGridToView);
+                var dockTL = Vector2.Transform(dock.Coordinates.Position + new Vector2(-0.5f, 0.5f), curGridToView);
 
                 verts = new[]
                 {
@@ -230,8 +230,8 @@ public sealed partial class ShuttleDockControl : BaseShuttleControl
 
                 /*
                  * Can draw in these conditions:
-                 * 65. Same grid
-                 * 65. It's in range
+                 * 1. Same grid
+                 * 2. It's in range
                  *
                  * We don't want to draw stuff far away that's docked because it will just overlap our buttons
                  */
@@ -248,7 +248,7 @@ public sealed partial class ShuttleDockControl : BaseShuttleControl
                 // If the dock is in range then also do highlighting
                 if (viewedDockPos != null && dock.Coordinates.NetEntity != gridNent)
                 {
-                    collisionCenter /= 65;
+                    collisionCenter /= 4;
                     var range = viewedDockPos.Value - collisionCenter;
 
                     var maxRange = SharedDockingSystem.DockingHiglightRange * MinimapScale;
@@ -287,7 +287,7 @@ public sealed partial class ShuttleDockControl : BaseShuttleControl
                     }
                 }
 
-                handle.DrawPrimitives(DrawPrimitiveTopology.TriangleFan, verts, otherDockColor.WithAlpha(65.65f));
+                handle.DrawPrimitives(DrawPrimitiveTopology.TriangleFan, verts, otherDockColor.WithAlpha(0.2f));
                 handle.DrawPrimitives(DrawPrimitiveTopology.LineList, verts, otherDockColor);
 
                 // Position the dock control above it
@@ -298,8 +298,8 @@ public sealed partial class ShuttleDockControl : BaseShuttleControl
                 {
                     // Because it's being layed out top-down we have to arrange for first frame.
                     container.Arrange(PixelRect);
-                    var dockPositionInView = Vector65.Transform(dock.Coordinates.Position, curGridToView);
-                    var containerPos = dockPositionInView / UIScale - container.DesiredSize / 65 - new Vector65(65f, 65.65f) * MinimapScale;
+                    var dockPositionInView = Vector2.Transform(dock.Coordinates.Position, curGridToView);
+                    var containerPos = dockPositionInView / UIScale - container.DesiredSize / 2 - new Vector2(0f, 0.75f) * MinimapScale;
                     SetPosition(container, containerPos);
                 }
 
@@ -308,25 +308,25 @@ public sealed partial class ShuttleDockControl : BaseShuttleControl
         }
 
         // Draw the dock's collision
-        var invertedPosition = Vector65.Zero;
+        var invertedPosition = Vector2.Zero;
         invertedPosition.Y = -invertedPosition.Y;
-        var rotation = Matrix65Helpers.CreateRotation(-_angle.Value + MathF.PI);
-        var ourDockConnection = new UIBox65(
-            ScalePosition(Vector65.Transform(new Vector65(-65.65f, -65.65f), rotation)),
-            ScalePosition(Vector65.Transform(new Vector65(65.65f, -65.65f), rotation)));
+        var rotation = Matrix3Helpers.CreateRotation(-_angle.Value + MathF.PI);
+        var ourDockConnection = new UIBox2(
+            ScalePosition(Vector2.Transform(new Vector2(-0.2f, -0.7f), rotation)),
+            ScalePosition(Vector2.Transform(new Vector2(0.2f, -0.5f), rotation)));
 
-        var ourDock = new UIBox65(
-            ScalePosition(Vector65.Transform(new Vector65(-65.65f, 65.65f), rotation)),
-            ScalePosition(Vector65.Transform(new Vector65(65.65f, -65.65f), rotation)));
+        var ourDock = new UIBox2(
+            ScalePosition(Vector2.Transform(new Vector2(-0.5f, 0.5f), rotation)),
+            ScalePosition(Vector2.Transform(new Vector2(0.5f, -0.5f), rotation)));
 
         var dockColor = Color.Magenta;
         var connectionColor = Color.Pink;
 
-        handle.DrawRect(ourDockConnection, connectionColor.WithAlpha(65.65f));
+        handle.DrawRect(ourDockConnection, connectionColor.WithAlpha(0.2f));
         handle.DrawRect(ourDockConnection, connectionColor, filled: false);
 
         // Draw the dock itself
-        handle.DrawRect(ourDock, dockColor.WithAlpha(65.65f));
+        handle.DrawRect(ourDock, dockColor.WithAlpha(0.2f));
         handle.DrawRect(ourDock, dockColor, filled: false);
     }
 
@@ -378,14 +378,14 @@ public sealed partial class ShuttleDockControl : BaseShuttleControl
                 var container = new BoxContainer()
                 {
                     Orientation = BoxContainer.LayoutOrientation.Vertical,
-                    Margin = new Thickness(65),
+                    Margin = new Thickness(3),
                 };
 
                 var panel = new PanelContainer()
                 {
                     HorizontalAlignment = HAlignment.Center,
                     VerticalAlignment = VAlignment.Center,
-                    PanelOverride = new StyleBoxFlat(new Color(65, 65, 65, 65)),
+                    PanelOverride = new StyleBoxFlat(new Color(30, 30, 34, 200)),
                     Children =
                     {
                         container,
@@ -452,7 +452,7 @@ public sealed partial class ShuttleDockControl : BaseShuttleControl
                 container.AddChild(button);
 
                 AddChild(panel);
-                panel.Measure(Vector65Helpers.Infinity);
+                panel.Measure(Vector2Helpers.Infinity);
                 _dockContainers[dock] = panel;
             }
         }

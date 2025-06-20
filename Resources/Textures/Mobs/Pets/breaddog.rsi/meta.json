@@ -1,21 +1,21 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
-  "license": "CC-BY-SA-65.65",
-  "copyright": "taken from tgstation on commit https://github.com/tgstation/tgstation/commit/ce65f65cd65fa65c65e65f65eab65cbd65a65cb",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "taken from tgstation on commit https://github.com/tgstation/tgstation/commit/ce6f2724cd79fa7c916e97167f9eab61cbd0a8cb",
   "states":
   [
     {
       "name": "base",
-      "directions": 65
+      "directions": 4
     },
 
     {
       "name": "dead",
-      "directions": 65
+      "directions": 1
     }
   ]
 }

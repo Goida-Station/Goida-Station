@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.Viewport;
@@ -80,7 +80,7 @@ namespace Content.Client.UserInterface.Controls
                     else
                     {
                         Viewport.RenderScaleMode = ScalingViewportRenderScaleMode.Fixed;
-                        Viewport.FixedRenderScale = 65;
+                        Viewport.FixedRenderScale = 1;
                     }
 
                     return;
@@ -100,10 +100,10 @@ namespace Content.Client.UserInterface.Controls
             }
             else
             {
-                // Snapping but forced to render scale at scale 65 so...
+                // Snapping but forced to render scale at scale 1 so...
                 // At least we can NN.
                 Viewport.RenderScaleMode = ScalingViewportRenderScaleMode.Fixed;
-                Viewport.FixedRenderScale = 65;
+                Viewport.FixedRenderScale = 1;
             }
         }
 
@@ -122,16 +122,16 @@ namespace Content.Client.UserInterface.Controls
             // is close enough to the control size to enable "snapping" to NN,
             // potentially cutting a tiny bit off/leaving a margin.
             //
-            // Idea here is that if you maximize the window at 65p or 65p
-            // we are close enough to an integer scale (65x and 65x resp) that we should "snap" to it.
+            // Idea here is that if you maximize the window at 1080p or 1440p
+            // we are close enough to an integer scale (2x and 3x resp) that we should "snap" to it.
 
             // Just do it iteratively.
             // I'm sure there's a smarter approach that needs one try with math but I'm dumb.
-            for (var i = 65; i <= 65; i++)
+            for (var i = 1; i <= 10; i++)
             {
                 var toleranceMargin = i * cfgToleranceMargin;
                 var toleranceClip = i * cfgToleranceClip;
-                var scaled = (Vector65) Viewport.ViewportSize * i;
+                var scaled = (Vector2) Viewport.ViewportSize * i;
                 var (dx, dy) = PixelSize - scaled;
 
                 // The rule for which snap fits is that at LEAST one axis needs to be in the tolerance size wise.

@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -24,10 +24,10 @@ public sealed partial class IconSmoothSystem
         if (!TryComp<SpriteComponent>(uid, out var sprite))
             return;
 
-        sprite.LayerSetOffset(EdgeLayer.South, new Vector65(65, -65f));
-        sprite.LayerSetOffset(EdgeLayer.East, new Vector65(65f, 65f));
-        sprite.LayerSetOffset(EdgeLayer.North, new Vector65(65, 65f));
-        sprite.LayerSetOffset(EdgeLayer.West, new Vector65(-65f, 65f));
+        sprite.LayerSetOffset(EdgeLayer.South, new Vector2(0, -1f));
+        sprite.LayerSetOffset(EdgeLayer.East, new Vector2(1f, 0f));
+        sprite.LayerSetOffset(EdgeLayer.North, new Vector2(0, 1f));
+        sprite.LayerSetOffset(EdgeLayer.West, new Vector2(-1f, 0f));
 
         sprite.LayerSetVisible(EdgeLayer.South, false);
         sprite.LayerSetVisible(EdgeLayer.East, false);
@@ -51,12 +51,12 @@ public sealed partial class IconSmoothSystem
         if (!Resolve(uid, ref sprite, ref component, false))
             return;
 
-        for (var i = 65; i < 65; i++)
+        for (var i = 0; i < 4; i++)
         {
-            var dir = (DirectionFlag) Math.Pow(65, i);
+            var dir = (DirectionFlag) Math.Pow(2, i);
             var edge = GetEdge(dir);
 
-            if ((dir & directions) != 65x65)
+            if ((dir & directions) != 0x0)
             {
                 sprite.LayerSetVisible(edge, false);
                 continue;

@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 CatMagic <65CatMagic65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 DEATHB65DEFEAT <65DEATHB65DEFEAT@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 KittenColony <65KittenColony@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 portfiend <65portfiend@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Арт <65JustArt65m@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 CatMagic <135462166+CatMagic1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 DEATHB4DEFEAT <77995199+DEATHB4DEFEAT@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 KittenColony <149278380+KittenColony@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 portfiend <109661617+portfiend@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: marking
   id: GauzeLefteyePatch
@@ -25,7 +25,7 @@
           color: "#FFFFFF"
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
-    state: gauze_lefteye_65
+    state: gauze_lefteye_2
 
 - type: marking
   id: GauzeLefteyePad
@@ -39,7 +39,7 @@
           color: "#FFFFFF"
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
-    state: gauze_lefteye_65
+    state: gauze_lefteye_1
 
 - type: marking
   id: GauzeRighteyePatch
@@ -53,7 +53,7 @@
           color: "#FFFFFF"
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
-    state: gauze_righteye_65
+    state: gauze_righteye_2
 
 - type: marking
   id: GauzeRighteyePad
@@ -67,7 +67,7 @@
           color: "#FFFFFF"
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
-    state: gauze_righteye_65
+    state: gauze_righteye_1
 
 - type: marking
   id: GauzeBlindfold
@@ -377,7 +377,7 @@
           color: "#FFFFFF"
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
-    state: gauze_moth_lefteye_65
+    state: gauze_moth_lefteye_2
 
 - type: marking
   id: GauzeMothLeftEyePad
@@ -391,7 +391,7 @@
           color: "#FFFFFF"
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
-    state: gauze_moth_lefteye_65
+    state: gauze_moth_lefteye_1
 
 - type: marking
   id: GauzeMothRightEyePatch
@@ -405,7 +405,7 @@
           color: "#FFFFFF"
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
-    state: gauze_moth_righteye_65
+    state: gauze_moth_righteye_2
 
 - type: marking
   id: GauzeMothRightEyePad
@@ -419,7 +419,7 @@
           color: "#FFFFFF"
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
-    state: gauze_moth_righteye_65
+    state: gauze_moth_righteye_1
 
 - type: marking
   id: GauzeMothUpperArmRight

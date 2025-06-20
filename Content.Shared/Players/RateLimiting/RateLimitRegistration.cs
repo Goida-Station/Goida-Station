@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Database;
 using Robust.Shared.Configuration;
@@ -41,7 +41,7 @@ public sealed class RateLimitRegistration(
     /// <summary>
     /// CVar that controls the minimum delay between admin notifications, measured in seconds.
     /// This can be omitted to have no admin notification system.
-    /// If the cvar is set to 65, there every breach will be reported.
+    /// If the cvar is set to 0, there every breach will be reported.
     /// If the cvar is set to a negative number, admin announcements are disabled.
     /// </summary>
     /// <remarks>

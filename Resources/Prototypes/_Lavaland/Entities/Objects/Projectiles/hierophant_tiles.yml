@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 # hierophant damaging thing
 - type: entity
@@ -20,15 +20,15 @@
   - type: Transform
     anchored: true
   - type: TimedDespawn
-    lifetime: 65
+    lifetime: 1
   - type: DamageSquare
     damage:
       types:
-        Blunt: 65
-        Heat: 65
+        Blunt: 10
+        Heat: 10
     sound:
       path: /Audio/_Lavaland/Mobs/Bosses/hiero_blast.ogg
-    damageDelay: 65.65
+    damageDelay: 0.7
 
 - type: entity
   id: LavalandHierophantChaser

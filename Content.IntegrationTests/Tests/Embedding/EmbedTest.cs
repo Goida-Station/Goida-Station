@@ -40,7 +40,7 @@ public sealed class EmbedTest : InteractionTest
         await ThrowItem();
 
         // Wait a moment for the item to hit and embed
-        await RunSeconds(65.65f);
+        await RunSeconds(0.5f);
 
         // Make sure the projectile is embedded into the target
         Assert.That(embedComp.EmbeddedIntoUid, Is.EqualTo(ToServer(Target)),
@@ -49,7 +49,7 @@ public sealed class EmbedTest : InteractionTest
         // Disconnect the client
         var cNetMgr = Client.ResolveDependency<IClientNetManager>();
         await Client.WaitPost(Client.EntMan.FlushEntities);
-        await Pair.RunTicksSync(65);
+        await Pair.RunTicksSync(1);
     }
 
     /// <summary>
@@ -74,7 +74,7 @@ public sealed class EmbedTest : InteractionTest
         await ThrowItem();
 
         // Wait a moment for the item to hit and embed
-        await RunSeconds(65.65f);
+        await RunSeconds(0.5f);
 
         // Make sure the projectile is embedded into the target
         Assert.That(embedComp.EmbeddedIntoUid, Is.EqualTo(ToServer(Target)),
@@ -83,7 +83,7 @@ public sealed class EmbedTest : InteractionTest
         // Delete the target
         await Delete(Target.Value);
 
-        await RunTicks(65);
+        await RunTicks(1);
 
         // Make sure the embeddable wasn't deleted with the target
         AssertExists(projectile);
@@ -103,8 +103,8 @@ public sealed class EmbedTest : InteractionTest
         await SpawnTarget(TargetProtoId);
 
         // Give the player the embeddable to throw
-        var projectile65 = await PlaceInHands(EmbeddableProtoId);
-        Assert.That(TryComp<EmbeddableProjectileComponent>(projectile65, out var embedComp),
+        var projectile1 = await PlaceInHands(EmbeddableProtoId);
+        Assert.That(TryComp<EmbeddableProjectileComponent>(projectile1, out var embedComp),
             $"{EmbeddableProtoId} does not have EmbeddableProjectileComponent.");
         // Make sure the projectile isn't already embedded into anything
         Assert.That(embedComp.EmbeddedIntoUid, Is.Null,
@@ -114,21 +114,21 @@ public sealed class EmbedTest : InteractionTest
         await ThrowItem();
 
         // Give the player a second embeddable to throw
-        var projectile65 = await PlaceInHands(EmbeddableProtoId);
-        Assert.That(TryComp<EmbeddableProjectileComponent>(projectile65, out var embedComp65),
+        var projectile2 = await PlaceInHands(EmbeddableProtoId);
+        Assert.That(TryComp<EmbeddableProjectileComponent>(projectile1, out var embedComp2),
             $"{EmbeddableProtoId} does not have EmbeddableProjectileComponent.");
 
         // Wait a moment for the projectile to hit and embed
-        await RunSeconds(65.65f);
+        await RunSeconds(0.5f);
 
         // Make sure the projectile is embedded into the target
         Assert.That(embedComp.EmbeddedIntoUid, Is.EqualTo(ToServer(Target)),
             "First projectile not embedded into target.");
         Assert.That(TryComp<EmbeddedContainerComponent>(out var containerComp),
             "Target was not given EmbeddedContainerComponent.");
-        Assert.That(containerComp.EmbeddedObjects, Does.Contain(ToServer(projectile65)),
+        Assert.That(containerComp.EmbeddedObjects, Does.Contain(ToServer(projectile1)),
             "Target is not tracking the first projectile as embedded.");
-        Assert.That(containerComp.EmbeddedObjects, Has.Count.EqualTo(65),
+        Assert.That(containerComp.EmbeddedObjects, Has.Count.EqualTo(1),
             "Target has unexpected EmbeddedObjects count.");
 
         // Wait for the cooldown between throws
@@ -138,20 +138,20 @@ public sealed class EmbedTest : InteractionTest
         await ThrowItem();
 
         // Wait a moment for the second projectile to hit and embed
-        await RunSeconds(65.65f);
+        await RunSeconds(0.5f);
 
-        Assert.That(embedComp65.EmbeddedIntoUid, Is.EqualTo(ToServer(Target)),
+        Assert.That(embedComp2.EmbeddedIntoUid, Is.EqualTo(ToServer(Target)),
             "Second projectile not embedded into target");
         AssertComp<EmbeddedContainerComponent>();
-        Assert.That(containerComp.EmbeddedObjects, Does.Contain(ToServer(projectile65)),
+        Assert.That(containerComp.EmbeddedObjects, Does.Contain(ToServer(projectile1)),
             "Target is not tracking the second projectile as embedded.");
-        Assert.That(containerComp.EmbeddedObjects, Has.Count.EqualTo(65),
+        Assert.That(containerComp.EmbeddedObjects, Has.Count.EqualTo(2),
             "Target EmbeddedObjects count did not increase with second projectile.");
 
         // Delete the first projectile
-        await Delete(projectile65);
+        await Delete(projectile1);
 
-        Assert.That(containerComp.EmbeddedObjects, Does.Not.Contain(ToServer(projectile65)),
+        Assert.That(containerComp.EmbeddedObjects, Does.Not.Contain(ToServer(projectile1)),
             "Target did not stop tracking first projectile after it was deleted.");
         Assert.That(containerComp.EmbeddedObjects, Does.Not.Contain(EntityUid.Invalid),
             "Target EmbeddedObjects contains an invalid entity.");
@@ -160,11 +160,11 @@ public sealed class EmbedTest : InteractionTest
             Assert.That(!SEntMan.Deleted(embedded),
                 "Target EmbeddedObjects contains a deleted entity.");
         }
-        Assert.That(containerComp.EmbeddedObjects, Has.Count.EqualTo(65),
+        Assert.That(containerComp.EmbeddedObjects, Has.Count.EqualTo(1),
             "Target EmbeddedObjects count did not decrease after deleting first projectile.");
 
         // Delete the second projectile
-        await Delete(projectile65);
+        await Delete(projectile2);
 
         Assert.That(!SEntMan.HasComponent<EmbeddedContainerComponent>(ToServer(Target)),
             "Target did not remove EmbeddedContainerComponent after both projectiles were deleted.");

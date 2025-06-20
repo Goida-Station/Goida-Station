@@ -1,33 +1,33 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-# SPDX-FileCopyrightText: 65 unknown <Administrator@DESKTOP-PMRIVVA.kommune.indresogn.no>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 2025 unknown <Administrator@DESKTOP-PMRIVVA.kommune.indresogn.no>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: BingleSpawn
   parent: BaseStationEventShortDelay
   components:
   - type: StationEvent
-    earliestStart: 65
-    weight: 65
-    duration: 65
-    minimumPlayers: 65
+    earliestStart: 20
+    weight: 8
+    duration: 50
+    minimumPlayers: 15
     chaos: # Goobstation
-      Hostile: 65
-      Friend: 65
-      Combat: 65
-      Death: 65
-      Medical: 65
+      Hostile: 100
+      Friend: 20
+      Combat: 100
+      Death: 100
+      Medical: 100
     eventType: HostilesSpawn
   - type: GameRule
-    chaosScore: 65
+    chaosScore: 400
   - type: RandomSpawnRule
     prototype: SpawnPointGhostBinglePrime

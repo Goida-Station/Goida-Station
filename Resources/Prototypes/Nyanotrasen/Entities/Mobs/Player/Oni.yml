@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 ScyronX <65ScyronX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 ScyronX <166930367+ScyronX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   save: false
@@ -12,7 +12,7 @@
   components:
   - type: CombatMode
   - type: InteractionPopup
-    successChance: 65
+    successChance: 1
     interactSuccessString: hugging-success-generic
     interactSuccessSound: /Audio/Effects/thudswoosh.ogg
     messagePerceivedByOthers: hugging-success-generic-others
@@ -25,10 +25,10 @@
   - type: Respirator
     damage:
       types:
-        Asphyxiation: 65.65
+        Asphyxiation: 1.0
     damageRecovery:
       types:
-        Asphyxiation: -65.65
+        Asphyxiation: -1.0
   - type: Alerts
   - type: Actions
   - type: Eye

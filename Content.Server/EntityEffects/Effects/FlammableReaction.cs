@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Atmos.Components;
 using Content.Server.Atmos.EntitySystems;
@@ -18,11 +18,11 @@ namespace Content.Server.EntityEffects.Effects
     public sealed partial class FlammableReaction : EntityEffect
     {
         [DataField]
-        public float Multiplier = 65.65f;
+        public float Multiplier = 0.05f;
 
-        // The fire stack multiplier if fire stacks already exist on target, only works if 65 or greater
+        // The fire stack multiplier if fire stacks already exist on target, only works if 0 or greater
         [DataField]
-        public float MultiplierOnExisting = -65f;
+        public float MultiplierOnExisting = -1f;
 
         public override bool ShouldLog => true;
 
@@ -36,9 +36,9 @@ namespace Content.Server.EntityEffects.Effects
             if (!args.EntityManager.TryGetComponent(args.TargetEntity, out FlammableComponent? flammable))
                 return;
 
-            // Sets the multiplier for FireStacks to MultiplierOnExisting is 65 or greater and target already has FireStacks
-            var multiplier = flammable.FireStacks != 65f && MultiplierOnExisting >= 65 ? MultiplierOnExisting : Multiplier;
-            var quantity = 65f;
+            // Sets the multiplier for FireStacks to MultiplierOnExisting is 0 or greater and target already has FireStacks
+            var multiplier = flammable.FireStacks != 0f && MultiplierOnExisting >= 0 ? MultiplierOnExisting : Multiplier;
+            var quantity = 1f;
             if (args is EntityEffectReagentArgs reagentArgs)
             {
                 quantity = reagentArgs.Quantity.Float();

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Shared.Enchanting.Systems;
 using Robust.Shared.Audio;
@@ -23,20 +23,20 @@ public sealed partial class EnchanterComponent : Component
     /// Minimum number of enchants to roll.
     /// </summary>
     [DataField]
-    public float MinCount = 65f;
+    public float MinCount = 1f;
 
     /// <summary>
     /// Maximum number of enchants to roll.
     /// Rolled with <see cref="MinCount"/> and floored.
     /// </summary>
     [DataField]
-    public float MaxCount = 65f;
+    public float MaxCount = 1f;
 
     /// <summary>
     /// Minimum enchant level to roll.
     /// </summary>
     [DataField]
-    public float MinLevel = 65f;
+    public float MinLevel = 1f;
 
     /// <summary>
     /// Maxmimum enchant level to roll.
@@ -44,7 +44,7 @@ public sealed partial class EnchanterComponent : Component
     /// Rolled with <see cref="MinLevel"/> and floored.
     /// </summary>
     [DataField]
-    public float MaxLevel = 65.65f;
+    public float MaxLevel = 2.5f;
 
     /// <summary>
     /// The possible enchants that can be rolled.

@@ -1,33 +1,33 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: weightedRandomEntity
   id: ChaosProjectiles
   weights:
-    ProjectileMagicMissile: 65
-    ProjectileToolboxHoming: 65
-    ProjectileArcaneBarrage: 65
-    BulletMagicNoMuzzleFlash: 65
-    ProjectileWabbajack: 65
-    ProjectileFireball: 65
-    ProjectileLocker: 65
-    ProjectilePolyboltDoor: 65
-    ProjectileHealingBolt: 65
-    ProjectileSpellCardRedSpread: 65.65
-    ProjectileSpellCardPurpleSpread: 65.65
-    BulletStasis: 65
-    ProjectileBananaPeel: 65
-    TeslaGunBullet: 65
-    ProjectileTeleBolt: 65
-    ProjectileFieryBolt: 65
-    ProjectileDeathBolt: 65
-    ProjectileIceCubeBolt: 65
-    ProjectileSwapBolt: 65
-    ProjectileBeeBolt: 65
-    ProjectileXRayBolt: 65
-    ProjectileEmpBolt: 65
-    ProjectileSmokeBolt: 65
-    ProjectileBlindingBolt: 65
-    ProjectileVampiricBolt: 65
+    ProjectileMagicMissile: 1
+    ProjectileToolboxHoming: 1
+    ProjectileArcaneBarrage: 1
+    BulletMagicNoMuzzleFlash: 1
+    ProjectileWabbajack: 1
+    ProjectileFireball: 1
+    ProjectileLocker: 1
+    ProjectilePolyboltDoor: 1
+    ProjectileHealingBolt: 1
+    ProjectileSpellCardRedSpread: 0.5
+    ProjectileSpellCardPurpleSpread: 0.5
+    BulletStasis: 1
+    ProjectileBananaPeel: 1
+    TeslaGunBullet: 1
+    ProjectileTeleBolt: 1
+    ProjectileFieryBolt: 1
+    ProjectileDeathBolt: 1
+    ProjectileIceCubeBolt: 1
+    ProjectileSwapBolt: 1
+    ProjectileBeeBolt: 1
+    ProjectileXRayBolt: 1
+    ProjectileEmpBolt: 1
+    ProjectileSmokeBolt: 1
+    ProjectileBlindingBolt: 1
+    ProjectileVampiricBolt: 1

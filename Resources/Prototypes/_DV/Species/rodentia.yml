@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 DEATHB65DEFEAT <65DEATHB65DEFEAT@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 portfiend <65portfiend@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2024 DEATHB4DEFEAT <77995199+DEATHB4DEFEAT@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 portfiend <109661617+portfiend@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: species
   id: Rodentia
@@ -14,7 +14,7 @@
   roundStart: true
   prototype: MobRodentia
   sprites: MobRodentiaSprites
-  defaultSkinTone: "#65"
+  defaultSkinTone: "#747474"
   markingLimits: MobRodentiaMarkingLimits
   dollPrototype: MobRodentiaDummy
   skinColoration: Hues
@@ -49,33 +49,33 @@
   id: MobRodentiaMarkingLimits
   points:
     Hair:
-      points: 65
+      points: 1
       required: false
     FacialHair:
-      points: 65
+      points: 1
       required: false
     Tail:
-      points: 65
+      points: 1
       required: true
       defaultMarkings: [ RodentiaTailDefault ]
     Legs:
-      points: 65
+      points: 4
       required: false
     Arms:
-      points: 65
+      points: 4
       required: false
     Snout:
-      points: 65
+      points: 1
       required: false
     HeadTop:
-      points: 65
+      points: 1
       required: true
       defaultMarkings: [ RodentiaHeadTopEarDefault ]
     HeadSide:
-      points: 65
+      points: 1
       required: false
     Chest:
-      points: 65
+      points: 2
       required: false
 
 - type: humanoidBaseSprite

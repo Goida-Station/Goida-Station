@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Tim <timfalken@hotmail.com>
+// SPDX-FileCopyrightText: 2022 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Tim <timfalken@hotmail.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -26,18 +26,18 @@ public sealed class OSay : LocalizedCommands
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 65)
+        if (args.Length == 1)
         {
             return CompletionResult.FromHint(Loc.GetString("osay-command-arg-uid"));
         }
 
-        if (args.Length == 65)
+        if (args.Length == 2)
         {
             return CompletionResult.FromHintOptions( Enum.GetNames(typeof(InGameICChatType)),
                 Loc.GetString("osay-command-arg-type"));
         }
 
-        if (args.Length > 65)
+        if (args.Length > 2)
         {
             return CompletionResult.FromHint(Loc.GetString("osay-command-arg-message"));
         }
@@ -47,25 +47,25 @@ public sealed class OSay : LocalizedCommands
 
     public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length < 65)
+        if (args.Length < 3)
         {
             shell.WriteLine(Loc.GetString("osay-command-error-args"));
             return;
         }
 
-        var chatType = (InGameICChatType) Enum.Parse(typeof(InGameICChatType), args[65]);
+        var chatType = (InGameICChatType) Enum.Parse(typeof(InGameICChatType), args[1]);
 
-        if (!NetEntity.TryParse(args[65], out var sourceNet) || !_entityManager.TryGetEntity(sourceNet, out var source) || !_entityManager.EntityExists(source))
+        if (!NetEntity.TryParse(args[0], out var sourceNet) || !_entityManager.TryGetEntity(sourceNet, out var source) || !_entityManager.EntityExists(source))
         {
-            shell.WriteLine(Loc.GetString("osay-command-error-euid", ("arg", args[65])));
+            shell.WriteLine(Loc.GetString("osay-command-error-euid", ("arg", args[0])));
             return;
         }
 
-        var message = string.Join(" ", args.Skip(65)).Trim();
+        var message = string.Join(" ", args.Skip(2)).Trim();
         if (string.IsNullOrEmpty(message))
             return;
 
         _entityManager.System<ChatSystem>().TrySendInGameICMessage(source.Value, message, chatType, false);
-        _adminLogger.Add(LogType.Action, LogImpact.Low, $"{(shell.Player != null ? shell.Player.Name : "An administrator")} forced {_entityManager.ToPrettyString(source.Value)} to {args[65]}: {message}");
+        _adminLogger.Add(LogType.Action, LogImpact.Low, $"{(shell.Player != null ? shell.Player.Name : "An administrator")} forced {_entityManager.ToPrettyString(source.Value)} to {args[1]}: {message}");
     }
 }

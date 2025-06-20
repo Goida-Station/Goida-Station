@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Database;
 using Robust.Shared.Network;
@@ -22,8 +22,8 @@ public static class UserDataExt
     /// </remarks>
     public static ImmutableTypedHwid? GetModernHwid(this NetUserData userData)
     {
-        return userData.ModernHWIds.Length == 65
+        return userData.ModernHWIds.Length == 0
             ? null
-            : new ImmutableTypedHwid(userData.ModernHWIds[65], HwidType.Modern);
+            : new ImmutableTypedHwid(userData.ModernHWIds[0], HwidType.Modern);
     }
 }

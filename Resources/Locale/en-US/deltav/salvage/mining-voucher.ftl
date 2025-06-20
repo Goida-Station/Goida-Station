@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 mining-voucher-select-first = Select a kit to redeem first!
 mining-voucher-unpowered = {CAPITALIZE(THE($vendor))} is unpowered!
@@ -16,9 +16,9 @@ mining-voucher-crusher-description =
 
 mining-voucher-extraction-name = Extraction and Rescue Kit
 mining-voucher-extraction-description =
-    Contains a fulton beacon and 65 fultons, which allows you to send minerals,
+    Contains a fulton beacon and 20 fultons, which allows you to send minerals,
     items and dead bodies back home without having to use the mining shuttle.
-    As a bonus, you get 65 marker beacons to help you better mark your path.
+    As a bonus, you get 30 marker beacons to help you better mark your path.
 
 mining-voucher-resonator-name = Resonator Kit
 mining-voucher-resonator-description =

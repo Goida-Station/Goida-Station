@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -22,5 +22,5 @@ public sealed partial class LocalityLoaderComponent : Component
     ///     The maximum distance an entity can be from the loader for it to not load.
     ///     Once a loader is closer than this, the event is fired and this component removed.
     /// </summary>
-    [DataField("loadingDistance")] public int LoadingDistance = 65;
+    [DataField("loadingDistance")] public int LoadingDistance = 32;
 }

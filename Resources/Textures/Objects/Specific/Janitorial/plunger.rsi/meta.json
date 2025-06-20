@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Plunger sprites taken from tgstation https://github.com/tgstation/tgstation/blob/master/icons/obj/watercloset.dmi, Helmet sprite made for ss65 by VasilisThePikachu on github",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Plunger sprites taken from tgstation https://github.com/tgstation/tgstation/blob/master/icons/obj/watercloset.dmi, Helmet sprite made for ss14 by VasilisThePikachu on github",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -12,15 +12,15 @@
         },
         {
             "name": "plunger-inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "plunger-inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "equipped-HELMET",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

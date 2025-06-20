@@ -1,44 +1,44 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
   "copyright": "portfiend",
-  "size": {"x": 65, "y": 65},
+  "size": {"x": 32, "y": 32},
   "states": [
     {
       "name": "bat",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "bat_overlay",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "bat_nose",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "flat",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "flat_overlay",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "flat_nose",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "round",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "round_overlay",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "round_nose",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

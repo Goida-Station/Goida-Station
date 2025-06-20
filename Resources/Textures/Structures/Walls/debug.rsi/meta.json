@@ -1,46 +1,46 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from https://github.com/discordia-space/CEV-Eris/blob/c65c65b65abf65aa65e65c65e65ea65/icons/turf/wall_masks.dmi and modified.",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from https://github.com/discordia-space/CEV-Eris/blob/c34c1b30abf18aa552e19294523924c39e5ea127/icons/turf/wall_masks.dmi and modified.",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
             "name": "full"
         },
         {
-            "name": "debug65",
-            "directions": 65
+            "name": "debug0",
+            "directions": 4
         },
         {
-            "name": "debug65",
-            "directions": 65
+            "name": "debug1",
+            "directions": 4
         },
         {
-            "name": "debug65",
-            "directions": 65
+            "name": "debug2",
+            "directions": 4
         },
         {
-            "name": "debug65",
-            "directions": 65
+            "name": "debug3",
+            "directions": 4
         },
         {
-            "name": "debug65",
-            "directions": 65
+            "name": "debug4",
+            "directions": 4
         },
         {
-            "name": "debug65",
-            "directions": 65
+            "name": "debug5",
+            "directions": 4
         },
         {
-            "name": "debug65",
-            "directions": 65
+            "name": "debug6",
+            "directions": 4
         },
         {
-            "name": "debug65",
-            "directions": 65
+            "name": "debug7",
+            "directions": 4
         }
     ]
 }

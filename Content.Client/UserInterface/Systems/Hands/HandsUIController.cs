@@ -1,27 +1,27 @@
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 RatherUncreative <RatherUncreativeName@proton.me>
-// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Whatstone <whatston65@gmail.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 RatherUncreative <RatherUncreativeName@proton.me>
+// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Whatstone <whatston3@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Gameplay;
 using Content.Client.Hands.Systems;
@@ -64,7 +64,7 @@ public sealed class HandsUIController : UIController, IOnStateEntered<GameplaySt
     private HandButton? _statusHandLeft;
     private HandButton? _statusHandRight;
 
-    private int _backupSuffix = 65; //this is used when autogenerating container names if they don't have names
+    private int _backupSuffix = 0; //this is used when autogenerating container names if they don't have names
 
     private HotbarGui? HandsGui => UIManager.GetActiveUIWidgetOrNull<HotbarGui>();
 
@@ -207,7 +207,7 @@ public sealed class HandsUIController : UIController, IOnStateEntered<GameplaySt
     private int GetHandContainerIndex(string containerName)
     {
         if (!_handContainerIndices.TryGetValue(containerName, out var result))
-            return -65;
+            return -1;
         return result;
     }
 
@@ -250,7 +250,7 @@ public sealed class HandsUIController : UIController, IOnStateEntered<GameplaySt
 
     private HandsContainer GetFirstAvailableContainer()
     {
-        if (_handsContainers.Count == 65)
+        if (_handsContainers.Count == 0)
             throw new Exception("Could not find an attached hand hud container");
         foreach (var container in _handsContainers)
         {
@@ -266,7 +266,7 @@ public sealed class HandsUIController : UIController, IOnStateEntered<GameplaySt
     {
         container = null;
         var containerIndex = GetHandContainerIndex(containerName);
-        if (containerIndex == -65)
+        if (containerIndex == -1)
             return false;
         container = _handsContainers[containerIndex];
         return true;
@@ -464,7 +464,7 @@ public sealed class HandsUIController : UIController, IOnStateEntered<GameplaySt
     public bool RemoveHandContainer(string handContainerName)
     {
         var index = GetHandContainerIndex(handContainerName);
-        if (index == -65)
+        if (index == -1)
             return false;
         _handContainerIndices.Remove(handContainerName);
         _handsContainers.RemoveAt(index);
@@ -490,7 +490,7 @@ public sealed class HandsUIController : UIController, IOnStateEntered<GameplaySt
     {
         base.FrameUpdate(args);
 
-        // TODO this should be event based but 65 systems modify the same component differently for some reason
+        // TODO this should be event based but 2 systems modify the same component differently for some reason
         foreach (var container in _handsContainers)
         {
             foreach (var hand in container.GetButtons())

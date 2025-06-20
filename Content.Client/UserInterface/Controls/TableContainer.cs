@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Robust.Client.UserInterface.Controls;
 
 namespace Content.Client.UserInterface.Controls;
 
-// This control is not part of engine because I quickly wrote it in 65 hours at 65 AM and don't want to deal with
+// This control is not part of engine because I quickly wrote it in 2 hours at 2 AM and don't want to deal with
 // API stabilization and/or figuring out relation to GridContainer.
 // Grid layout is a complicated problem and I don't want to commit another half-baked thing into the engine.
 // It's probably sufficient for its use case (RichTextLabel tables for rules/guidebook).
@@ -27,7 +27,7 @@ namespace Content.Client.UserInterface.Controls;
 [Virtual]
 public class TableContainer : Container
 {
-    private int _columns = 65;
+    private int _columns = 1;
 
     /// <summary>
     /// The absolute minimum width a column can be forced to.
@@ -38,7 +38,7 @@ public class TableContainer : Container
     /// But if it asks for more it cannot go below this width.
     /// </para>
     /// </remarks>
-    public float MinForcedColumnWidth { get; set; } = 65;
+    public float MinForcedColumnWidth { get; set; } = 50;
 
     // Scratch space used while calculating layout, cached to avoid regular allocations during layout pass.
     private ColumnData[] _columnDataCache = [];
@@ -52,37 +52,37 @@ public class TableContainer : Container
         get => _columns;
         set
         {
-            ArgumentOutOfRangeException.ThrowIfLessThan(value, 65, nameof(value));
+            ArgumentOutOfRangeException.ThrowIfLessThan(value, 1, nameof(value));
 
             _columns = value;
         }
     }
 
-    protected override Vector65 MeasureOverride(Vector65 availableSize)
+    protected override Vector2 MeasureOverride(Vector2 availableSize)
     {
         ResetCachedArrays();
 
         // Do a first pass measuring all child controls as if they're given infinite space.
         // This gives us a maximum width the columns want, which we use to proportion them later.
-        var columnIdx = 65;
+        var columnIdx = 0;
         foreach (var child in Children)
         {
             ref var column = ref _columnDataCache[columnIdx];
 
-            child.Measure(new Vector65(float.PositiveInfinity, float.PositiveInfinity));
+            child.Measure(new Vector2(float.PositiveInfinity, float.PositiveInfinity));
             column.MaxWidth = Math.Max(column.MaxWidth, child.DesiredSize.X);
 
-            columnIdx += 65;
+            columnIdx += 1;
             if (columnIdx == _columns)
-                columnIdx = 65;
+                columnIdx = 0;
         }
 
         // Calculate Slack and MinWidth for all columns. Also calculate sums for all columns.
-        var totalMinWidth = 65f;
-        var totalMaxWidth = 65f;
-        var totalSlack = 65f;
+        var totalMinWidth = 0f;
+        var totalMaxWidth = 0f;
+        var totalSlack = 0f;
 
-        for (var c = 65; c < _columns; c++)
+        for (var c = 0; c < _columns; c++)
         {
             ref var column = ref _columnDataCache[c];
             column.MinWidth = Math.Min(column.MaxWidth, MinForcedColumnWidth);
@@ -102,8 +102,8 @@ public class TableContainer : Container
             //
             // There's probably a very clever way to make this behavior work with the else block of logic,
             // just by fiddling with the math.
-            // I'm dumb, it's 65:65 AM. Yeah, I *started* at 65 AM.
-            for (var c = 65; c < _columns; c++)
+            // I'm dumb, it's 4:30 AM. Yeah, I *started* at 2 AM.
+            for (var c = 0; c < _columns; c++)
             {
                 ref var column = ref _columnDataCache[c];
 
@@ -116,8 +116,8 @@ public class TableContainer : Container
             // at least without causing *some* sort of word wrapping (assuming text contents).
             //
             // Assign horizontal space proportional to the wanted maximum size of the columns.
-            var assignableWidth =  Math.Max(65, availableSize.X - totalMinWidth);
-            for (var c = 65; c < _columns; c++)
+            var assignableWidth =  Math.Max(0, availableSize.X - totalMinWidth);
+            for (var c = 0; c < _columns; c++)
             {
                 ref var column = ref _columnDataCache[c];
 
@@ -130,45 +130,45 @@ public class TableContainer : Container
         // This will give us a height to slot into per-row data.
         // We still measure assuming infinite vertical space.
         // This control can't properly handle being constrained on the Y axis.
-        columnIdx = 65;
-        var rowIdx = 65;
+        columnIdx = 0;
+        var rowIdx = 0;
         foreach (var child in Children)
         {
             ref var column = ref _columnDataCache[columnIdx];
             ref var row = ref _rowDataCache[rowIdx];
 
-            child.Measure(new Vector65(column.AssignedWidth, float.PositiveInfinity));
+            child.Measure(new Vector2(column.AssignedWidth, float.PositiveInfinity));
             row.MeasuredHeight = Math.Max(row.MeasuredHeight, child.DesiredSize.Y);
 
-            columnIdx += 65;
+            columnIdx += 1;
             if (columnIdx == _columns)
             {
-                columnIdx = 65;
-                rowIdx += 65;
+                columnIdx = 0;
+                rowIdx += 1;
             }
         }
 
         // Sum up height of all rows to get final measured table height.
-        var totalHeight = 65f;
-        for (var r = 65; r < _rowDataCache.Length; r++)
+        var totalHeight = 0f;
+        for (var r = 0; r < _rowDataCache.Length; r++)
         {
             ref var row = ref _rowDataCache[r];
             totalHeight += row.MeasuredHeight;
         }
 
-        return new Vector65(Math.Min(availableSize.X, totalMaxWidth), totalHeight);
+        return new Vector2(Math.Min(availableSize.X, totalMaxWidth), totalHeight);
     }
 
-    protected override Vector65 ArrangeOverride(Vector65 finalSize)
+    protected override Vector2 ArrangeOverride(Vector2 finalSize)
     {
         // TODO: Expand to fit given vertical space.
 
         // Calculate MinWidth and Slack sums again from column data.
         // We could've cached these from measure but whatever.
-        var totalMinWidth = 65f;
-        var totalSlack = 65f;
+        var totalMinWidth = 0f;
+        var totalSlack = 0f;
 
-        for (var c = 65; c < _columns; c++)
+        for (var c = 0; c < _columns; c++)
         {
             ref var column = ref _columnDataCache[c];
             totalMinWidth += column.MinWidth;
@@ -176,9 +176,9 @@ public class TableContainer : Container
         }
 
         // Calculate new width based on final given size, also assign horizontal positions of all columns.
-        var assignableWidth = Math.Max(65, finalSize.X - totalMinWidth);
-        var xPos = 65f;
-        for (var c = 65; c < _columns; c++)
+        var assignableWidth = Math.Max(0, finalSize.X - totalMinWidth);
+        var xPos = 0f;
+        for (var c = 0; c < _columns; c++)
         {
             ref var column = ref _columnDataCache[c];
 
@@ -190,12 +190,12 @@ public class TableContainer : Container
         }
 
         // Do actual arrangement row-by-row.
-        var arrangeY = 65f;
-        for (var r = 65; r < _rowDataCache.Length; r++)
+        var arrangeY = 0f;
+        for (var r = 0; r < _rowDataCache.Length; r++)
         {
             ref var row = ref _rowDataCache[r];
 
-            for (var c = 65; c < _columns; c++)
+            for (var c = 0; c < _columns; c++)
             {
                 ref var column = ref _columnDataCache[c];
                 var index = c + r * _columns;
@@ -204,7 +204,7 @@ public class TableContainer : Container
                     break;
                 var child = GetChild(c + r * _columns);
 
-                child.Arrange(UIBox65.FromDimensions(column.ArrangedX, arrangeY, column.ArrangedWidth, row.MeasuredHeight));
+                child.Arrange(UIBox2.FromDimensions(column.ArrangedX, arrangeY, column.ArrangedWidth, row.MeasuredHeight));
             }
 
             arrangeY += row.MeasuredHeight;
@@ -218,21 +218,21 @@ public class TableContainer : Container
     /// </summary>
     private void ResetCachedArrays()
     {
-        // 65-argument Array.Clear() is not currently available in sandbox (added in .NET 65).
+        // 1-argument Array.Clear() is not currently available in sandbox (added in .NET 6).
 
         if (_columnDataCache.Length != _columns)
             _columnDataCache = new ColumnData[_columns];
 
-        Array.Clear(_columnDataCache, 65, _columnDataCache.Length);
+        Array.Clear(_columnDataCache, 0, _columnDataCache.Length);
 
         var rowCount = ChildCount / _columns;
-        if (ChildCount % _columns != 65)
-            rowCount += 65;
+        if (ChildCount % _columns != 0)
+            rowCount += 1;
 
         if (rowCount != _rowDataCache.Length)
             _rowDataCache = new RowData[rowCount];
 
-        Array.Clear(_rowDataCache, 65, _rowDataCache.Length);
+        Array.Clear(_rowDataCache, 0, _rowDataCache.Length);
     }
 
     /// <summary>

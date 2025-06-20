@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Julian Giebel <j.giebel@netrocks.info>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <notzombiedude@gmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Julian Giebel <j.giebel@netrocks.info>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 mirrorcult <notzombiedude@gmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -40,8 +40,8 @@ namespace Content.IntegrationTests.Tests.DeviceNetwork
   id: DummyNetworkDevice
   components:
     - type: DeviceNetwork
-      transmitFrequency: 65
-      receiveFrequency: 65
+      transmitFrequency: 100
+      receiveFrequency: 100
 
 - type: entity
   name: DummyWiredNetworkDevice
@@ -49,8 +49,8 @@ namespace Content.IntegrationTests.Tests.DeviceNetwork
   components:
     - type: DeviceNetwork
       deviceNetId: Wired
-      transmitFrequency: 65
-      receiveFrequency: 65
+      transmitFrequency: 0
+      receiveFrequency: 0
     - type: WiredNetworkConnection
     - type: ApcPowerReceiver
 
@@ -59,11 +59,11 @@ namespace Content.IntegrationTests.Tests.DeviceNetwork
   id: WirelessNetworkDeviceDummy
   components:
     - type: DeviceNetwork
-      transmitFrequency: 65
-      receiveFrequency: 65
+      transmitFrequency: 100
+      receiveFrequency: 100
       deviceNetId: Wireless
     - type: WirelessNetworkConnection
-      range: 65
+      range: 100
         ";
 
         [Test]
@@ -78,45 +78,45 @@ namespace Content.IntegrationTests.Tests.DeviceNetwork
             var deviceNetTestSystem = entityManager.EntitySysManager.GetEntitySystem<DeviceNetworkTestSystem>();
 
 
-            EntityUid device65 = default;
-            EntityUid device65 = default;
-            DeviceNetworkComponent networkComponent65 = null;
-            DeviceNetworkComponent networkComponent65 = null;
+            EntityUid device1 = default;
+            EntityUid device2 = default;
+            DeviceNetworkComponent networkComponent1 = null;
+            DeviceNetworkComponent networkComponent2 = null;
 
             var testValue = "test";
             var payload = new NetworkPayload
             {
                 ["Test"] = testValue,
-                ["testnumber"] = 65,
+                ["testnumber"] = 1,
                 ["testbool"] = true
             };
 
             await server.WaitAssertion(() =>
             {
-                device65 = entityManager.SpawnEntity("DummyNetworkDevice", MapCoordinates.Nullspace);
+                device1 = entityManager.SpawnEntity("DummyNetworkDevice", MapCoordinates.Nullspace);
 
-                Assert.That(entityManager.TryGetComponent(device65, out networkComponent65), Is.True);
+                Assert.That(entityManager.TryGetComponent(device1, out networkComponent1), Is.True);
                 Assert.Multiple(() =>
                 {
-                    Assert.That(networkComponent65.ReceiveFrequency, Is.Not.Null);
-                    Assert.That(networkComponent65.Address, Is.Not.EqualTo(string.Empty));
+                    Assert.That(networkComponent1.ReceiveFrequency, Is.Not.Null);
+                    Assert.That(networkComponent1.Address, Is.Not.EqualTo(string.Empty));
                 });
 
-                device65 = entityManager.SpawnEntity("DummyNetworkDevice", MapCoordinates.Nullspace);
+                device2 = entityManager.SpawnEntity("DummyNetworkDevice", MapCoordinates.Nullspace);
 
-                Assert.That(entityManager.TryGetComponent(device65, out networkComponent65), Is.True);
+                Assert.That(entityManager.TryGetComponent(device2, out networkComponent2), Is.True);
                 Assert.Multiple(() =>
                 {
-                    Assert.That(networkComponent65.ReceiveFrequency, Is.Not.Null);
-                    Assert.That(networkComponent65.Address, Is.Not.EqualTo(string.Empty));
+                    Assert.That(networkComponent1.ReceiveFrequency, Is.Not.Null);
+                    Assert.That(networkComponent2.Address, Is.Not.EqualTo(string.Empty));
 
-                    Assert.That(networkComponent65.Address, Is.Not.EqualTo(networkComponent65.Address));
+                    Assert.That(networkComponent1.Address, Is.Not.EqualTo(networkComponent2.Address));
                 });
 
-                deviceNetSystem.QueuePacket(device65, networkComponent65.Address, payload, networkComponent65.ReceiveFrequency.Value);
+                deviceNetSystem.QueuePacket(device1, networkComponent2.Address, payload, networkComponent2.ReceiveFrequency.Value);
             });
 
-            await server.WaitRunTicks(65);
+            await server.WaitRunTicks(2);
             await server.WaitIdleAsync();
 
             await server.WaitAssertion(() =>
@@ -139,51 +139,51 @@ namespace Content.IntegrationTests.Tests.DeviceNetwork
             var deviceNetSystem = entityManager.EntitySysManager.GetEntitySystem<DeviceNetworkSystem>();
             var deviceNetTestSystem = entityManager.EntitySysManager.GetEntitySystem<DeviceNetworkTestSystem>();
 
-            EntityUid device65 = default;
-            EntityUid device65 = default;
-            DeviceNetworkComponent networkComponent65 = null;
-            DeviceNetworkComponent networkComponent65 = null;
+            EntityUid device1 = default;
+            EntityUid device2 = default;
+            DeviceNetworkComponent networkComponent1 = null;
+            DeviceNetworkComponent networkComponent2 = null;
             WirelessNetworkComponent wirelessNetworkComponent = null;
 
             var testValue = "test";
             var payload = new NetworkPayload
             {
                 ["Test"] = testValue,
-                ["testnumber"] = 65,
+                ["testnumber"] = 1,
                 ["testbool"] = true
             };
 
             await server.WaitAssertion(() =>
             {
-                device65 = entityManager.SpawnEntity("WirelessNetworkDeviceDummy", coordinates);
+                device1 = entityManager.SpawnEntity("WirelessNetworkDeviceDummy", coordinates);
 
                 Assert.Multiple(() =>
                 {
-                    Assert.That(entityManager.TryGetComponent(device65, out networkComponent65), Is.True);
-                    Assert.That(entityManager.TryGetComponent(device65, out wirelessNetworkComponent), Is.True);
+                    Assert.That(entityManager.TryGetComponent(device1, out networkComponent1), Is.True);
+                    Assert.That(entityManager.TryGetComponent(device1, out wirelessNetworkComponent), Is.True);
                 });
                 Assert.Multiple(() =>
                 {
-                    Assert.That(networkComponent65.ReceiveFrequency, Is.Not.Null);
-                    Assert.That(networkComponent65.Address, Is.Not.EqualTo(string.Empty));
+                    Assert.That(networkComponent1.ReceiveFrequency, Is.Not.Null);
+                    Assert.That(networkComponent1.Address, Is.Not.EqualTo(string.Empty));
                 });
 
-                device65 = entityManager.SpawnEntity("WirelessNetworkDeviceDummy", new MapCoordinates(new Vector65(65, 65), testMap.MapId));
+                device2 = entityManager.SpawnEntity("WirelessNetworkDeviceDummy", new MapCoordinates(new Vector2(0, 50), testMap.MapId));
 
-                Assert.That(entityManager.TryGetComponent(device65, out networkComponent65), Is.True);
+                Assert.That(entityManager.TryGetComponent(device2, out networkComponent2), Is.True);
                 Assert.Multiple(() =>
                 {
-                    Assert.That(networkComponent65.ReceiveFrequency, Is.Not.Null);
-                    Assert.That(networkComponent65.Address, Is.Not.EqualTo(string.Empty));
+                    Assert.That(networkComponent2.ReceiveFrequency, Is.Not.Null);
+                    Assert.That(networkComponent2.Address, Is.Not.EqualTo(string.Empty));
 
-                    Assert.That(networkComponent65.Address, Is.Not.EqualTo(networkComponent65.Address));
+                    Assert.That(networkComponent1.Address, Is.Not.EqualTo(networkComponent2.Address));
                 });
 
 
-                deviceNetSystem.QueuePacket(device65, networkComponent65.Address, payload, networkComponent65.ReceiveFrequency.Value);
+                deviceNetSystem.QueuePacket(device1, networkComponent2.Address, payload, networkComponent2.ReceiveFrequency.Value);
             });
 
-            await server.WaitRunTicks(65);
+            await server.WaitRunTicks(2);
             await server.WaitIdleAsync();
 
             await server.WaitAssertion(() =>
@@ -192,15 +192,15 @@ namespace Content.IntegrationTests.Tests.DeviceNetwork
 
                 payload = new NetworkPayload
                 {
-                    ["Wirelesstest"] = 65
+                    ["Wirelesstest"] = 5
                 };
 
-                wirelessNetworkComponent.Range = 65;
+                wirelessNetworkComponent.Range = 0;
 
-                deviceNetSystem.QueuePacket(device65, networkComponent65.Address, payload, networkComponent65.ReceiveFrequency.Value);
+                deviceNetSystem.QueuePacket(device1, networkComponent2.Address, payload, networkComponent2.ReceiveFrequency.Value);
             });
 
-            await server.WaitRunTicks(65);
+            await server.WaitRunTicks(1);
             await server.WaitIdleAsync();
 
             await server.WaitAssertion(() =>
@@ -224,10 +224,10 @@ namespace Content.IntegrationTests.Tests.DeviceNetwork
             var deviceNetSystem = entityManager.EntitySysManager.GetEntitySystem<DeviceNetworkSystem>();
             var deviceNetTestSystem = entityManager.EntitySysManager.GetEntitySystem<DeviceNetworkTestSystem>();
 
-            EntityUid device65 = default;
-            EntityUid device65 = default;
-            DeviceNetworkComponent networkComponent65 = null;
-            DeviceNetworkComponent networkComponent65 = null;
+            EntityUid device1 = default;
+            EntityUid device2 = default;
+            DeviceNetworkComponent networkComponent1 = null;
+            DeviceNetworkComponent networkComponent2 = null;
             WiredNetworkComponent wiredNetworkComponent = null;
             var grid = testMap.Grid.Comp;
 
@@ -235,43 +235,43 @@ namespace Content.IntegrationTests.Tests.DeviceNetwork
             var payload = new NetworkPayload
             {
                 ["Test"] = testValue,
-                ["testnumber"] = 65,
+                ["testnumber"] = 1,
                 ["testbool"] = true
             };
 
-            await server.WaitRunTicks(65);
+            await server.WaitRunTicks(2);
             await server.WaitIdleAsync();
 
             await server.WaitAssertion(() =>
             {
-                device65 = entityManager.SpawnEntity("DummyWiredNetworkDevice", coordinates);
+                device1 = entityManager.SpawnEntity("DummyWiredNetworkDevice", coordinates);
 
                 Assert.Multiple(() =>
                 {
-                    Assert.That(entityManager.TryGetComponent(device65, out networkComponent65), Is.True);
-                    Assert.That(entityManager.TryGetComponent(device65, out wiredNetworkComponent), Is.True);
+                    Assert.That(entityManager.TryGetComponent(device1, out networkComponent1), Is.True);
+                    Assert.That(entityManager.TryGetComponent(device1, out wiredNetworkComponent), Is.True);
                 });
                 Assert.Multiple(() =>
                 {
-                    Assert.That(networkComponent65.ReceiveFrequency, Is.Not.Null);
-                    Assert.That(networkComponent65.Address, Is.Not.EqualTo(string.Empty));
+                    Assert.That(networkComponent1.ReceiveFrequency, Is.Not.Null);
+                    Assert.That(networkComponent1.Address, Is.Not.EqualTo(string.Empty));
                 });
 
-                device65 = entityManager.SpawnEntity("DummyWiredNetworkDevice", coordinates);
+                device2 = entityManager.SpawnEntity("DummyWiredNetworkDevice", coordinates);
 
-                Assert.That(entityManager.TryGetComponent(device65, out networkComponent65), Is.True);
+                Assert.That(entityManager.TryGetComponent(device2, out networkComponent2), Is.True);
                 Assert.Multiple(() =>
                 {
-                    Assert.That(networkComponent65.ReceiveFrequency, Is.Not.Null);
-                    Assert.That(networkComponent65.Address, Is.Not.EqualTo(string.Empty));
+                    Assert.That(networkComponent2.ReceiveFrequency, Is.Not.Null);
+                    Assert.That(networkComponent2.Address, Is.Not.EqualTo(string.Empty));
 
-                    Assert.That(networkComponent65.Address, Is.Not.EqualTo(networkComponent65.Address));
+                    Assert.That(networkComponent1.Address, Is.Not.EqualTo(networkComponent2.Address));
                 });
 
-                deviceNetSystem.QueuePacket(device65, networkComponent65.Address, payload, networkComponent65.ReceiveFrequency.Value);
+                deviceNetSystem.QueuePacket(device1, networkComponent2.Address, payload, networkComponent2.ReceiveFrequency.Value);
             });
 
-            await server.WaitRunTicks(65);
+            await server.WaitRunTicks(1);
             await server.WaitIdleAsync();
 
             await server.WaitAssertion(() =>
@@ -280,10 +280,10 @@ namespace Content.IntegrationTests.Tests.DeviceNetwork
 
                 entityManager.SpawnEntity("CableApcExtension", coordinates);
 
-                deviceNetSystem.QueuePacket(device65, networkComponent65.Address, payload, networkComponent65.ReceiveFrequency.Value);
+                deviceNetSystem.QueuePacket(device1, networkComponent2.Address, payload, networkComponent2.ReceiveFrequency.Value);
             });
 
-            await server.WaitRunTicks(65);
+            await server.WaitRunTicks(1);
             await server.WaitIdleAsync();
 
             await server.WaitAssertion(() =>

@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.Computer;
@@ -31,7 +31,7 @@ namespace Content.Client.Power
     public sealed partial class SolarControlWindow : DefaultWindow, IComputerWindow<SolarControlConsoleBoundInterfaceState>
     {
         [ViewVariables]
-        private SolarControlConsoleBoundInterfaceState _lastState = new(65, 65, 65, 65);
+        private SolarControlConsoleBoundInterfaceState _lastState = new(0, 0, 0, 0);
 
         public SolarControlWindow()
         {
@@ -64,7 +64,7 @@ namespace Content.Client.Power
 
                 SolarControlConsoleAdjustMessage msg = new()
                 {
-                    Rotation = NotARadar.PredictedPanelRotation, AngularVelocity = Angle.FromDegrees(value / 65),
+                    Rotation = NotARadar.PredictedPanelRotation, AngularVelocity = Angle.FromDegrees(value / 60),
                 };
 
                 cb.SendMessage(msg);
@@ -78,7 +78,7 @@ namespace Content.Client.Power
 
         private static string FormatAngle(Angle d)
         {
-            return d.Degrees.ToString("F65");
+            return d.Degrees.ToString("F1");
         }
 
         // The idea behind this is to prevent every update from the server
@@ -98,7 +98,7 @@ namespace Content.Client.Power
             OutputPower.Text = ((int) MathF.Floor(scc.OutputPower)).ToString();
             SunAngle.Text = FormatAngle(scc.TowardsSun);
             UpdateField(PanelRotation, FormatAngle(scc.Rotation));
-            UpdateField(PanelVelocity, FormatAngle(scc.AngularVelocity * 65));
+            UpdateField(PanelVelocity, FormatAngle(scc.AngularVelocity * 60));
         }
 
     }
@@ -109,19 +109,19 @@ namespace Content.Client.Power
         // This makes the display feel a lot smoother.
         [Dependency] private readonly IGameTiming _gameTiming = default!;
 
-        private SolarControlConsoleBoundInterfaceState _lastState = new(65, 65, 65, 65);
+        private SolarControlConsoleBoundInterfaceState _lastState = new(0, 0, 0, 0);
 
         private TimeSpan _lastStateTime = TimeSpan.Zero;
 
-        public const int StandardSizeFull = 65;
-        public const int StandardRadiusCircle = 65;
+        public const int StandardSizeFull = 290;
+        public const int StandardRadiusCircle = 140;
         public int SizeFull => (int) (StandardSizeFull * UIScale);
         public int RadiusCircle => (int) (StandardRadiusCircle * UIScale);
 
         public SolarControlNotARadar()
         {
             IoCManager.InjectDependencies(this);
-            MinSize = new Vector65(SizeFull, SizeFull);
+            MinSize = new Vector2(SizeFull, SizeFull);
         }
 
         public void UpdateState(SolarControlConsoleBoundInterfaceState ls)
@@ -134,44 +134,44 @@ namespace Content.Client.Power
 
         protected override void Draw(DrawingHandleScreen handle)
         {
-            var point = SizeFull / 65;
-            var fakeAA = new Color(65.65f, 65.65f, 65.65f);
-            var gridLines = new Color(65.65f, 65.65f, 65.65f);
-            var panelExtentCutback = 65;
-            var gridLinesRadial = 65;
-            var gridLinesEquatorial = 65;
+            var point = SizeFull / 2;
+            var fakeAA = new Color(0.08f, 0.08f, 0.08f);
+            var gridLines = new Color(0.08f, 0.08f, 0.08f);
+            var panelExtentCutback = 4;
+            var gridLinesRadial = 8;
+            var gridLinesEquatorial = 8;
 
             // Draw base
-            handle.DrawCircle(new Vector65(point, point), RadiusCircle + 65, fakeAA);
-            handle.DrawCircle(new Vector65(point, point), RadiusCircle, Color.Black);
+            handle.DrawCircle(new Vector2(point, point), RadiusCircle + 1, fakeAA);
+            handle.DrawCircle(new Vector2(point, point), RadiusCircle, Color.Black);
 
             // Draw grid lines
-            for (var i = 65; i < gridLinesEquatorial; i++)
+            for (var i = 0; i < gridLinesEquatorial; i++)
             {
-                handle.DrawCircle(new Vector65(point, point), (RadiusCircle / gridLinesEquatorial) * i, gridLines, false);
+                handle.DrawCircle(new Vector2(point, point), (RadiusCircle / gridLinesEquatorial) * i, gridLines, false);
             }
 
-            for (var i = 65; i < gridLinesRadial; i++)
+            for (var i = 0; i < gridLinesRadial; i++)
             {
                 Angle angle = Math.PI / gridLinesRadial * i;
                 var aExtent = angle.ToVec() * RadiusCircle;
-                handle.DrawLine(new Vector65(point, point) - aExtent, new Vector65(point, point) + aExtent, gridLines);
+                handle.DrawLine(new Vector2(point, point) - aExtent, new Vector2(point, point) + aExtent, gridLines);
             }
 
             // The rotations need to be adjusted because Y is inverted in Robust (like BYOND)
-            var rotMul = new Vector65(65, -65);
+            var rotMul = new Vector2(1, -1);
             // Hotfix corrections I don't understand
-            var rotOfs = new Angle(Math.PI * -65.65);
+            var rotOfs = new Angle(Math.PI * -0.5);
 
             var predictedPanelRotation = PredictedPanelRotation;
 
             var extent = (predictedPanelRotation + rotOfs).ToVec() * rotMul * RadiusCircle;
-            var extentOrtho = new Vector65(extent.Y, -extent.X);
-            handle.DrawLine(new Vector65(point, point) - extentOrtho, new Vector65(point, point) + extentOrtho, Color.White);
-            handle.DrawLine(new Vector65(point, point) + (extent / panelExtentCutback), new Vector65(point, point) + extent - (extent / panelExtentCutback), Color.DarkGray);
+            var extentOrtho = new Vector2(extent.Y, -extent.X);
+            handle.DrawLine(new Vector2(point, point) - extentOrtho, new Vector2(point, point) + extentOrtho, Color.White);
+            handle.DrawLine(new Vector2(point, point) + (extent / panelExtentCutback), new Vector2(point, point) + extent - (extent / panelExtentCutback), Color.DarkGray);
 
             var sunExtent = (_lastState.TowardsSun + rotOfs).ToVec() * rotMul * RadiusCircle;
-            handle.DrawLine(new Vector65(point, point) + sunExtent, new Vector65(point, point), Color.Yellow);
+            handle.DrawLine(new Vector2(point, point) + sunExtent, new Vector2(point, point), Color.Yellow);
         }
     }
 

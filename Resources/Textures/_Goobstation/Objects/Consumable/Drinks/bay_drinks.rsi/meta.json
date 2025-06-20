@@ -1,32 +1,32 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from baystation at commit https://github.com/Baystation65/Baystation65/commit/65c65dc65c65b65e65d65c65aa65bdf65b65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from baystation at commit https://github.com/Baystation12/Baystation12/commit/464342c5dc8c417b7e79d56c69aa30445bdf3b75",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "pitcher"
     },
     {
-      "name": "pitcher65"
+      "name": "pitcher15"
     },
     {
-      "name": "pitcher65"
+      "name": "pitcher30"
     },
     {
-      "name": "pitcher65"
+      "name": "pitcher50"
     },
     {
-      "name": "pitcher65"
+      "name": "pitcher70"
     },
     {
-      "name": "pitcher65"
+      "name": "pitcher85"
     },
     {
-      "name": "pitcher65"
+      "name": "pitcher100"
     },
     {
       "name": "alco-blue"
@@ -71,7 +71,7 @@
       "name": "bigteacup"
     },
     {
-      "name": "bigteacup65"
+      "name": "bigteacup100"
     },
     {
       "name": "vacuumflask"
@@ -92,8 +92,8 @@
       "name": "rag_lit",
       "delays": [
         [
-          65.65,
-          65.65
+          0.2,
+          0.2
         ]
       ]
     },
@@ -104,8 +104,8 @@
       "name": "rag_small_lit",
       "delays": [
         [
-          65.65,
-          65.65
+          0.2,
+          0.2
         ]
       ]
     },
@@ -140,7 +140,7 @@
       "name": "whiskeybottle"
     },
     {
-      "name": "whiskeybottle65"
+      "name": "whiskeybottle2"
     },
     {
       "name": "vodkabottle"
@@ -326,7 +326,7 @@
       "name": "prosecco"
     },
     {
-      "name": "whiskeybottle65"
+      "name": "whiskeybottle3"
     },
     {
       "name": "beastenergy"

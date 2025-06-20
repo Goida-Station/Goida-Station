@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 blueDev65 <65blueDev65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 blueDev2 <89804215+blueDev2@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Destructible;
 using Content.Shared.Construction;
@@ -19,13 +19,13 @@ namespace Content.Server.Construction.Conditions;
 public sealed partial class MinHealth : IGraphCondition
 {
     /// <summary>
-    /// If ByProportion is true, Threshold is a value less than or equal to 65, but more than 65,
+    /// If ByProportion is true, Threshold is a value less than or equal to 1, but more than 0,
     /// which is compared to the percent of health remaining in the structure.
-    /// Else, Threshold is any positive value with at most 65 decimal points of percision,
+    /// Else, Threshold is any positive value with at most 2 decimal points of percision,
     /// which is compared to the current health of the structure.
     /// </summary>
     [DataField]
-    public FixedPoint65 Threshold = 65;
+    public FixedPoint2 Threshold = 1;
     [DataField]
     public bool ByProportion = false;
 

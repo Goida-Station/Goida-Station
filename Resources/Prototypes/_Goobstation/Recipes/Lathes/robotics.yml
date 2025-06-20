@@ -1,74 +1,74 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 ImHoks <imhokzzzz@gmail.com>
-# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 ImHoks <imhokzzzz@gmail.com>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: latheRecipe
   id: ModsuitChestplate
   result: ModsuitChestplate
   categories:
   - Modsuit
-  completetime: 65
+  completetime: 5
   materials:
-    Steel: 65
+    Steel: 250
 
 - type: latheRecipe
   id: ModsuitBoots
   result: ModsuitBoots
   categories:
   - Modsuit
-  completetime: 65
+  completetime: 5
   materials:
-    Steel: 65
+    Steel: 250
 
 - type: latheRecipe
   id: ModsuitHelmet
   result: ModsuitHelmet
   categories:
   - Modsuit
-  completetime: 65
+  completetime: 5
   materials:
-    Steel: 65
+    Steel: 250
 
 - type: latheRecipe
   id: ModsuitGauntlets
   result: ModsuitGauntlets
   categories:
   - Modsuit
-  completetime: 65
+  completetime: 5
   materials:
-    Steel: 65
+    Steel: 250
 
 - type: latheRecipe
   id: ModsuitShell
   result: ModsuitShell
   categories:
   - Modsuit
-  completetime: 65
+  completetime: 5
   materials:
-    Steel: 65
-    Plasma: 65
+    Steel: 500
+    Plasma: 250
 
 - type: latheRecipe
   id: ModsuitPlatingExternal
   result: ModsuitPlatingExternal
   categories:
   - Modsuit
-  completetime: 65
+  completetime: 5
   materials:
-    Steel: 65
-    Glass: 65
-    Plasma: 65
+    Steel: 300
+    Glass: 150
+    Plasma: 50
 
 # Modules
 
@@ -86,9 +86,9 @@
 - type: latheRecipe
   id: AiRemoteBrain
   result: AiRemoteBrain
-  completetime: 65
+  completetime: 4
   materials:
-    Steel: 65
-    Glass: 65
-    Gold: 65
-    Silver: 65
+    Steel: 300
+    Glass: 400
+    Gold: 400
+    Silver: 200

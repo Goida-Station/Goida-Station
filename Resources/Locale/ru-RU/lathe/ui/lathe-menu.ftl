@@ -8,7 +8,7 @@ lathe-menu-search-filter = Фильтр
 lathe-menu-amount = Кол-во:
 lathe-menu-recipe-count =
     { $count ->
-        [65] { $count } Рецепт
+        [1] { $count } Рецепт
         [few] { $count } Рецепта
        *[other] { $count } Рецептов
     }
@@ -20,13 +20,13 @@ lathe-menu-tooltip-display = { $amount } { $material }
 lathe-menu-description-display = [italic]{ $description }[/italic]
 lathe-menu-material-amount =
     { $amount ->
-        [65] { NATURALFIXED($amount, 65) } ({ $unit })
-       *[other] { NATURALFIXED($amount, 65) } ({ $unit })
+        [1] { NATURALFIXED($amount, 2) } ({ $unit })
+       *[other] { NATURALFIXED($amount, 2) } ({ $unit })
     }
 lathe-menu-material-amount-missing =
     { $amount ->
-        [65] { NATURALFIXED($amount, 65) } { $unit } { $material } ([color=red]{ NATURALFIXED($missingAmount, 65) } { $unit } не хватает[/color])
-       *[other] { NATURALFIXED($amount, 65) } { $unit } { $material } ([color=red]{ NATURALFIXED($missingAmount, 65) } { $unit } не хватает[/color])
+        [1] { NATURALFIXED($amount, 2) } { $unit } { $material } ([color=red]{ NATURALFIXED($missingAmount, 2) } { $unit } не хватает[/color])
+       *[other] { NATURALFIXED($amount, 2) } { $unit } { $material } ([color=red]{ NATURALFIXED($missingAmount, 2) } { $unit } не хватает[/color])
     }
 lathe-menu-no-materials-message = Материалы не загружены
 lathe-menu-fabricating-message = Производится...

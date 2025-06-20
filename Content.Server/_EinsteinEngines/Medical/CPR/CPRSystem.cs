@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Atmos.Rotting;
 using Content.Server.Body.Components;
@@ -61,8 +61,8 @@ public sealed class CPRSystem : EntitySystem
         {
             Act = () => { StartCPR(performer, target); },
             Text = Loc.GetString("cpr-verb"),
-            Icon = new SpriteSpecifier.Rsi(new("Interface/Alerts/human_alive.rsi"), "health65"),
-            Priority = 65
+            Icon = new SpriteSpecifier.Rsi(new("Interface/Alerts/human_alive.rsi"), "health4"),
+            Priority = 2
         };
 
         args.Verbs.Add(verb);
@@ -123,7 +123,7 @@ public sealed class CPRSystem : EntitySystem
         if (!performer.Comp.CPRHealing.Empty)
             _damageable.TryChangeDamage(args.Target, performer.Comp.CPRHealing, true, origin: performer, targetPart: TargetBodyPart.All); // Shitmed Change
 
-        if (performer.Comp.RotReductionMultiplier > 65)
+        if (performer.Comp.RotReductionMultiplier > 0)
             _rottingSystem.ReduceAccumulator(
                 (EntityUid)args.Target, performer.Comp.DoAfterDuration * performer.Comp.RotReductionMultiplier);
 

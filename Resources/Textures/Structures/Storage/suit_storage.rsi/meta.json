@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from /tg/station commit https://github.com/tgstation/tgstation/commit/af65b65df65f65a65b65a65d65a65cda65 and resprited by Alekshhh, welded state drawn by Flareguy for Space Station 65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from /tg/station commit https://github.com/tgstation/tgstation/commit/af7b7043df593807f7a98b7a07880d7a977cda14 and resprited by Alekshhh, welded state drawn by Flareguy for Space Station 14",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {

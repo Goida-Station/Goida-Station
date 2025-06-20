@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "tgstation at 65ddd65e65bbcf65f65e65a65b65e65b65c, Inhand sprites by onesch",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "tgstation at 3ddd840268e33bbcf316f242e6a972b84e6b773c, Inhand sprites by onesch",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -12,28 +12,28 @@
         },
         {
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "active",
             "delays": [
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
                 ]
             ]
         }

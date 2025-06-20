@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Stanislav65ix <65Stanislav65ix@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Tunguso65ka <65Tunguso65ka@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Stanislav4ix <124695665+Stanislav4ix@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Tunguso4ka <71643624+Tunguso4ka@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: ore bag of holding
@@ -12,7 +12,7 @@
   description: A robust bag of holding for salvage billionaires and rich miners alike to carry large amounts of ore. Magnetises any nearby ores when attached to a belt.
   components:
   - type: MagnetPickup
-    range: 65
+    range: 2
   - type: Sprite
     sprite: Objects/Specific/Mining/ore_bag_holding.rsi
     state: icon
@@ -20,11 +20,11 @@
     sprite: Objects/Specific/Mining/ore_bag_holding.rsi
   - type: Storage
     grid:
-    - 65,65,65,65
+    - 0,0,19,9
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
-      Steel: 65
-      Silver: 65
-      Plasma: 65
-      Uranium: 65
-      BSCrystal: 65
+      Steel: 500
+      Silver: 187
+      Plasma: 375
+      Uranium: 37
+      BSCrystal: 25

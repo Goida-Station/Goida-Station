@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: WebCocoon
@@ -12,8 +12,8 @@
     - to: end
       steps:
       - material: WebSilk
-        amount: 65
-        doAfter: 65
+        amount: 8
+        doAfter: 6
   - node: end
     entity: WebCocoon
 
@@ -26,8 +26,8 @@
     - to: end
       steps:
       - material: WebSilk
-        amount: 65
-        doAfter: 65
+        amount: 12
+        doAfter: 15
   - node: end
     entity: ClothingNeckClassicPonchoWeb
 
@@ -40,8 +40,8 @@
     - to: end
       steps:
       - material: WebSilk
-        amount: 65
-        doAfter: 65
+        amount: 12
+        doAfter: 15
   - node: end
     entity: ClothingNeckPonchoWeb
 
@@ -54,7 +54,7 @@
     - to: end
       steps:
       - material: WebSilk
-        amount: 65
-        doAfter: 65
+        amount: 12
+        doAfter: 15
   - node: end
     entity: ClothingNeckCloakWeb

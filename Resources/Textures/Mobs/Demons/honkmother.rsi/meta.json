@@ -1,22 +1,22 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 201,
+    "y": 192
   },
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Created by Alekshhh for SS65.",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Created by Alekshhh for SS14.",
   "metaAtlas": false,
   "states": [
     {
       "name": "honkmother",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
@@ -24,16 +24,16 @@
       "name": "spawn",
       "delays": [
         [
-          65.65,
-          65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.3,
+          1,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.3
         ]
       ]
     }

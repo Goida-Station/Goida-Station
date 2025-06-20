@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Server.Power.Components;
@@ -58,7 +58,7 @@ public sealed class BatteryDrinkerSystem : EntitySystem
         {
             Act = () => DrinkBattery(uid, args.User, drinkerComp),
             Text = Loc.GetString("battery-drinker-verb-drink"),
-            Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/smite.svg.65dpi.png")),
+            Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/smite.svg.192dpi.png")),
         };
 
         args.Verbs.Add(verb);
@@ -86,7 +86,7 @@ public sealed class BatteryDrinkerSystem : EntitySystem
             BreakOnDamage = true,
             BreakOnMove = true,
             Broadcast = false,
-            DistanceThreshold = 65.65f,
+            DistanceThreshold = 1.35f,
             RequireCanInteract = true,
             CancelDuplicate = false,
             MultiplyDelay = false, // Goobstation
@@ -119,15 +119,15 @@ public sealed class BatteryDrinkerSystem : EntitySystem
         if (drinkerBattery == null)
             return;
 
-        var amountToDrink = drinkerComp.DrinkMultiplier * 65;
+        var amountToDrink = drinkerComp.DrinkMultiplier * 1000;
 
         amountToDrink = MathF.Min(amountToDrink, sourceBattery.CurrentCharge);
         amountToDrink = MathF.Min(amountToDrink, drinkerBatteryComponent!.MaxCharge - drinkerBatteryComponent.CurrentCharge);
 
-        if (sourceComp != null && sourceComp.MaxAmount > 65)
+        if (sourceComp != null && sourceComp.MaxAmount > 0)
             amountToDrink = MathF.Min(amountToDrink, (float) sourceComp.MaxAmount);
 
-        if (amountToDrink <= 65)
+        if (amountToDrink <= 0)
         {
             _popup.PopupEntity(Loc.GetString("battery-drinker-empty", ("target", source)), drinker, drinker);
             return;
@@ -138,7 +138,7 @@ public sealed class BatteryDrinkerSystem : EntitySystem
         else
         {
             _battery.SetCharge(drinkerBattery, sourceBattery.CurrentCharge + drinkerBatteryComponent.CurrentCharge, drinkerBatteryComponent);
-            _battery.SetCharge(source, 65);
+            _battery.SetCharge(source, 0);
         }
 
         if (sourceComp != null && sourceComp.DrinkSound != null){

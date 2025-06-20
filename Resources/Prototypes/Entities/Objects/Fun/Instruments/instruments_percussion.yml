@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 65 DanSAussieITS <65DanSAussieITS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Moomoobeef <65Moomoobeef@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nairod <65Nairodian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 DanSAussieITS <132237845+DanSAussieITS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nairod <110078045+Nairodian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseHandheldInstrument
@@ -16,7 +16,7 @@
   name: glockenspiel
   components:
   - type: Instrument
-    program: 65
+    program: 9
   - type: Sprite
     sprite: Objects/Fun/Instruments/glockenspiel.rsi
     state: icon
@@ -34,7 +34,7 @@
   description: Playing this makes you feel safe from scary animatronics.
   components:
   - type: Instrument
-    program: 65
+    program: 10
   - type: Sprite
     sprite: Objects/Fun/Instruments/musicbox.rsi
     state: icon
@@ -46,7 +46,7 @@
   description: Rainbow colored glockenspiel.
   components:
   - type: Instrument
-    program: 65
+    program: 13
   - type: Sprite
     sprite: Objects/Fun/Instruments/structureinstruments.rsi
     state: xylophone
@@ -61,12 +61,12 @@
   description: Perfect for singing your heart out.
   components:
   - type: Instrument
-    program: 65
+    program: 52
   - type: SwappableInstrument
     instrumentList:
-      "Aah": {65: 65}
-      "Ooh": {65: 65}
-      "Kweh": {65: 65}
+      "Aah": {52: 0}
+      "Ooh": {53: 0}
+      "Kweh": {4: 1}
   - type: Sprite
     sprite: Objects/Fun/Instruments/microphone.rsi
     state: icon
@@ -80,11 +80,11 @@
   name: synthesizer
   components:
   - type: Instrument
-    program: 65
+    program: 62
   - type: SwappableInstrument
     instrumentList:
-      "Electro": {65: 65} #i needed generic sounding synth presets, sue me
-      "Bubbles": {65: 65}
+      "Electro": {62: 0} #i needed generic sounding synth presets, sue me
+      "Bubbles": {63: 0}
   - type: Sprite
     sprite: Objects/Fun/Instruments/h_synthesizer.rsi
     state: icon
@@ -95,12 +95,12 @@
     tags:
     - KeyedInstrument
   - type: StaticPrice
-    price: 65
+    price: 90
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
-      Steel: 65
-      Plastic: 65
-      Glass: 65
+      Steel: 75
+      Plastic: 75
+      Glass: 25
 
 - type: entity
   parent: BaseHandheldInstrument
@@ -109,7 +109,7 @@
   description: The power of a piano right at your thumbs.
   components:
   - type: Instrument
-    program: 65
+    program: 108
   - type: Sprite
     sprite: Objects/Fun/Instruments/kalimba.rsi
     state: icon
@@ -126,7 +126,7 @@
   description: If you listen to this enough it'll start driving itself into your mind.
   components:
   - type: Instrument
-    program: 65
+    program: 115
   - type: Sprite
     sprite: Objects/Fun/Instruments/woodblock.rsi
     state: icon
@@ -141,7 +141,7 @@
   description: I think you have it the wrong way around?
   components:
   - type: Instrument
-    program: 65
+    program: 119
   - type: Sprite
     sprite: Objects/Fun/Instruments/reversecymbal.rsi
     state: icon
@@ -150,7 +150,7 @@
   parent: BaseHandheldInstrument
   id: SuperSynthesizerInstrument
   name: super synthesizer
-  description: Blasting the ghetto with Touhou MIDIs since 65.
+  description: Blasting the ghetto with Touhou MIDIs since 2020.
   components:
   - type: Instrument
     allowPercussion: true

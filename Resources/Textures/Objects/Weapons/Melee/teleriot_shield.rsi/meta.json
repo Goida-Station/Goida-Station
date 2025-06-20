@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from https://github.com/Citadel-Station-65/Citadel-Station-65/commit/65c65f65caf65a65f65c65f65bc65a65cdc65c65e65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/commit/84223c65f5caf667a84f3c0f49bc2a41cdc6c4e3",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,22 +12,22 @@
     },
     {
       "name": "teleriot-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "teleriot-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "teleriot-on"
     },
     {
       "name": "shield-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "shield-inhand-left",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

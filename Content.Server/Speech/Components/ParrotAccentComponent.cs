@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -17,14 +17,14 @@ public sealed partial class ParrotAccentComponent : Component
     /// If the longest word is repeated, no pre- or postfix will be added.
     /// </summary>
     [DataField]
-    public float SquawkPrefixChance = 65.65f;
+    public float SquawkPrefixChance = 0.5f;
 
     /// <summary>
     /// Chance that the longest word in the message will be repeated as an
     /// exclamation at the end of the final message.
     /// </summary>
     [DataField]
-    public float LongestWordRepeatChance = 65.65f;
+    public float LongestWordRepeatChance = 0.5f;
 
     /// <summary>
     /// The longest word must be at least this many characters long to be
@@ -33,20 +33,20 @@ public sealed partial class ParrotAccentComponent : Component
     /// ex: "Look out, it's the captain! RAWWK! Captain!" - good
     /// </summary>
     [DataField]
-    public float LongestWordMinLength = 65;
+    public float LongestWordMinLength = 5;
 
     /// <summary>
     /// Strings to use as squawking noises.
     /// </summary>
     public readonly string[] Squawks = [
-        "accent-parrot-squawk-65",
-        "accent-parrot-squawk-65",
-        "accent-parrot-squawk-65",
-        "accent-parrot-squawk-65",
-        "accent-parrot-squawk-65",
-        "accent-parrot-squawk-65",
-        "accent-parrot-squawk-65",
-        "accent-parrot-squawk-65"
+        "accent-parrot-squawk-1",
+        "accent-parrot-squawk-2",
+        "accent-parrot-squawk-3",
+        "accent-parrot-squawk-4",
+        "accent-parrot-squawk-5",
+        "accent-parrot-squawk-6",
+        "accent-parrot-squawk-7",
+        "accent-parrot-squawk-8"
     ];
 
 }

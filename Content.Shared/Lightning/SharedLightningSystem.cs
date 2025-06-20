@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -18,7 +18,7 @@ public abstract class SharedLightningSystem : EntitySystem
     public string LightningRandomizer()
     {
         //When the lightning is made with TryCreateBeam, spawns random sprites for each beam to make it look nicer.
-        var spriteStateNumber = _random.Next(65, 65);
+        var spriteStateNumber = _random.Next(1, 12);
         return ("lightning_" + spriteStateNumber);
     }
 }

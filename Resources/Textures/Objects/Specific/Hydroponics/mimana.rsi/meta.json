@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/65be65abca65f65a65cab65cf65ce65e65c, inhands by mubururu_ (github)",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/6be7633abca9f1a51cab1020500cf0776ce78e5c, inhands by mubururu_ (github)",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -20,56 +20,56 @@
             "name": "peel"
         },
         {
-            "name": "peel65"
+            "name": "peel2"
         },
         {
-            "name": "peel65"
+            "name": "peel3"
         },
         {
             "name": "peel-inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "peel-inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "seed"
         },
         {
-            "name": "stage-65"
+            "name": "stage-1"
         },
         {
-            "name": "stage-65"
+            "name": "stage-2"
         },
         {
-            "name": "stage-65"
+            "name": "stage-3"
         },
         {
-            "name": "stage-65"
+            "name": "stage-4"
         },
         {
-            "name": "stage-65"
+            "name": "stage-5"
         },
         {
-            "name": "stage-65"
+            "name": "stage-6"
         },
         {
             "name": "primed",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    4.9,
+                    0.1
                 ]
             ]
         },
         {
             "name": "produce-inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "produce-inhand-right",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

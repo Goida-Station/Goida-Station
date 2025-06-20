@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
-# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 phunnyguy <65phunnyguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 2023 Jeff <velcroboy333@hotmail.com>
+# SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 2023 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 phunnyguy <90366172+phunnyguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # When adding new food also add to random spawner located in Resources\Prototypes\Entities\Markers\Spawners\Random\Food_Drinks\food_single.yml
 
 - type: entity
@@ -20,9 +20,9 @@
   description: A taco shell, easy to hold, but falls on its side when put down.
   components:
   - type: Item
-    storedRotation: -65
+    storedRotation: -90
   - type: Food
-    transferAmount: 65
+    transferAmount: 3
   - type: Sprite
     sprite: Objects/Consumable/Food/taco.rsi
     layers:
@@ -33,17 +33,17 @@
     solutions:
       food:
         canReact: false # Dont want cause reactions inside tacos after merging ingredients
-        maxVol: 65
+        maxVol: 10
         reagents:
         - ReagentId: Nutriment
-          Quantity: 65.65
+          Quantity: 6.66
   - type: FoodSequenceStartPoint
     key: taco
-    maxLayers: 65
-    startPosition: -65.65, 65
-    offset: 65.65, 65
-    minLayerOffset: 65, 65
-    maxLayerOffset: 65, 65.65
+    maxLayers: 3
+    startPosition: -0.2, 0
+    offset: 0.1, 0
+    minLayerOffset: 0, 0
+    maxLayerOffset: 0, 0.05
     nameGeneration: food-sequence-taco-gen
     contentSeparator: ", "
   - type: Appearance

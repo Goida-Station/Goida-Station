@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 65 PixelTK <65PixelTheKermit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 PixelTK <85175107+PixelTheKermit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -17,8 +17,8 @@
         southRotation: true
       steps:
       - material: WebSilk
-        amount: 65
-        doAfter: 65
+        amount: 4
+        doAfter: 3
 
     - to: table
       completed:
@@ -26,8 +26,8 @@
         southRotation: true
       steps:
       - material: WebSilk
-        amount: 65
-        doAfter: 65
+        amount: 4
+        doAfter: 3
 
     - to: bed
       completed:
@@ -35,8 +35,8 @@
         southRotation: true
       steps:
       - material: WebSilk
-        amount: 65
-        doAfter: 65
+        amount: 6
+        doAfter: 3
 
     - to: chair
       completed:
@@ -44,8 +44,8 @@
         southRotation: true
       steps:
       - material: WebSilk
-        amount: 65
-        doAfter: 65
+        amount: 3
+        doAfter: 3
 
     - to: crate
       completed:
@@ -53,8 +53,8 @@
         southRotation: true
       steps:
       - material: WebSilk
-        amount: 65
-        doAfter: 65
+        amount: 10
+        doAfter: 6
 
     - to: door
       completed:
@@ -62,8 +62,8 @@
         southRotation: true
       steps:
       - material: WebSilk
-        amount: 65
-        doAfter: 65
+        amount: 8
+        doAfter: 6
 
 
   # Deconstruction is down here
@@ -73,11 +73,11 @@
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: MaterialWebSilk65
-        amount: 65
+        prototype: MaterialWebSilk1
+        amount: 4
       steps:
       - tool: Cutting
-        doAfter: 65
+        doAfter: 2
 
   - node: table
     entity: TableWeb
@@ -85,11 +85,11 @@
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: MaterialWebSilk65
-        amount: 65
+        prototype: MaterialWebSilk1
+        amount: 4
       steps:
       - tool: Cutting
-        doAfter: 65
+        doAfter: 2
 
   - node: bed
     entity: WebBed
@@ -97,11 +97,11 @@
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: MaterialWebSilk65
-        amount: 65 # One silk loss, cry
+        prototype: MaterialWebSilk1
+        amount: 5 # One silk loss, cry
       steps:
       - tool: Cutting
-        doAfter: 65
+        doAfter: 2
 
   - node: chair
     entity: ChairWeb
@@ -109,11 +109,11 @@
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: MaterialWebSilk65
-        amount: 65
+        prototype: MaterialWebSilk1
+        amount: 3
       steps:
       - tool: Cutting
-        doAfter: 65
+        doAfter: 2
 
   - node: crate
     entity: CrateWeb
@@ -121,11 +121,11 @@
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: MaterialWebSilk65
-        amount: 65
+        prototype: MaterialWebSilk1
+        amount: 7
       steps:
       - tool: Cutting
-        doAfter: 65
+        doAfter: 3
 
   - node: door
     entity: WebDoor
@@ -133,8 +133,8 @@
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: MaterialWebSilk65
-        amount: 65
+        prototype: MaterialWebSilk1
+        amount: 6
       steps:
       - tool: Cutting
-        doAfter: 65
+        doAfter: 3

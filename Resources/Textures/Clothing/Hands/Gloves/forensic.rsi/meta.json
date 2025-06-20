@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from paradise station at https://github.com/ss65-space/Paradise/blob/e65af65eec65b65e65c65fb65ef65b/icons/obj/clothing/gloves.dmi. Inhand sprites by SeamLesss (Github)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from paradise station at https://github.com/ss220-space/Paradise/blob/e13af16eec39b663112e014901960c89fb09ef8b/icons/obj/clothing/gloves.dmi. Inhand sprites by SeamLesss (Github)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "name": "equipped-HAND",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

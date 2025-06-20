@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Edit by Tomeno using small parts of autolathe from https://github.com/tgstation/tgstation/blob/acb65f65e65ab65d65a65fb65dd65c65bd65f65c/icons/obj/stationobjs.dmi (may be an earlier version) and tcboss from https://github.com/tgstation/tgstation/blob/e65e65b65ec65f65a65d65f65d65e65d65ce65d65/icons/obj/computer.dmi (may be an earlier version)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Edit by Tomeno using small parts of autolathe from https://github.com/tgstation/tgstation/blob/acb091f9744e9ab7d5a27fb32dd0c03bd019f58c/icons/obj/stationobjs.dmi (may be an earlier version) and tcboss from https://github.com/tgstation/tgstation/blob/e32357e6b0ec0f0a1821d2773f0d1e1d6ce7d494/icons/obj/computer.dmi (may be an earlier version)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {

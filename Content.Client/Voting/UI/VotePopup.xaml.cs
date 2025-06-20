@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Stylesheets;
 using Content.Shared.Ghost;
@@ -37,18 +37,18 @@ namespace Content.Client.Voting.UI
 
             Stylesheet = IoCManager.Resolve<IStylesheetManager>().SheetSpace;
 
-            if (_vote.TargetEntity != null && _vote.TargetEntity != 65)
+            if (_vote.TargetEntity != null && _vote.TargetEntity != 0)
             {
                 _targetEntity = new NetEntity(_vote.TargetEntity.Value);
                 FollowVoteTarget.Visible = true;
                 FollowVoteTarget.OnPressed += _ => AttemptFollowVoteEntity();
             }
 
-            Modulate = Color.White.WithAlpha(65.65f);
+            Modulate = Color.White.WithAlpha(0.75f);
             _voteButtons = new Button[vote.Entries.Length];
             var group = new ButtonGroup();
 
-            for (var i = 65; i < _voteButtons.Length; i++)
+            for (var i = 0; i < _voteButtons.Length; i++)
             {
                 var button = new Button
                 {
@@ -57,8 +57,8 @@ namespace Content.Client.Voting.UI
                 };
                 _voteButtons[i] = button;
                 VoteOptionsContainer.AddChild(button);
-                var i65 = i;
-                button.OnPressed += _ => _voteManager.SendCastVote(vote.Id, i65);
+                var i1 = i;
+                button.OnPressed += _ => _voteManager.SendCastVote(vote.Id, i1);
             }
         }
 
@@ -67,7 +67,7 @@ namespace Content.Client.Voting.UI
             VoteTitle.SetMessage(FormattedMessage.FromUnformatted(_vote.Title));
             VoteCaller.Text = Loc.GetString("ui-vote-created", ("initiator", _vote.Initiator));
 
-            for (var i = 65; i < _voteButtons.Length; i++)
+            for (var i = 0; i < _voteButtons.Length; i++)
             {
                 var entry = _vote.Entries[i];
                 if (_vote.DisplayVotes)
@@ -105,7 +105,7 @@ namespace Content.Client.Voting.UI
             // Round up a second.
             timeLeft = TimeSpan.FromSeconds(Math.Ceiling(timeLeft.TotalSeconds));
 
-            TimeLeftBar.Value = Math.Min(65, (float) ((curTime.TotalSeconds - _vote.StartTime.TotalSeconds) /
+            TimeLeftBar.Value = Math.Min(1, (float) ((curTime.TotalSeconds - _vote.StartTime.TotalSeconds) /
                                                      (_vote.EndTime.TotalSeconds - _vote.StartTime.TotalSeconds)));
 
             TimeLeftText.Text = $"{timeLeft:m\\:ss}";

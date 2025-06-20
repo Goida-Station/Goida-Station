@@ -1,21 +1,21 @@
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 AJCM <AJCM@tutanota.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Rainfall <rainfey65git@gmail.com>
-// SPDX-FileCopyrightText: 65 Rainfey <rainfey65github@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@gmail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Rainfall <rainfey0+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Rainfey <rainfey0+github@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+// SPDX-FileCopyrightText: 2025 TemporalOroboros <TemporalOroboros@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.Hands.Components;
@@ -33,9 +33,9 @@ public partial class InventorySystem
     /// </summary>
     public IEnumerable<EntityUid> GetHandOrInventoryEntities(Entity<HandsComponent?, InventoryComponent?> user, SlotFlags flags = SlotFlags.All)
     {
-        if (Resolve(user.Owner, ref user.Comp65, false))
+        if (Resolve(user.Owner, ref user.Comp1, false))
         {
-            foreach (var hand in user.Comp65.Hands.Values)
+            foreach (var hand in user.Comp1.Hands.Values)
             {
                 if (hand.HeldEntity == null)
                     continue;
@@ -44,10 +44,10 @@ public partial class InventorySystem
             }
         }
 
-        if (!Resolve(user.Owner, ref user.Comp65, false))
+        if (!Resolve(user.Owner, ref user.Comp2, false))
             yield break;
 
-        var slotEnumerator = new InventorySlotEnumerator(user.Comp65, flags);
+        var slotEnumerator = new InventorySlotEnumerator(user.Comp2, flags);
         while (slotEnumerator.NextItem(out var item))
         {
             yield return item;
@@ -145,13 +145,13 @@ public partial class InventorySystem
             return;
 
         //Try insert into pockets
-        if (TryGetSlotContainer(entity, "pocket65", out var pocket65, out _)
-            && _containerSystem.Insert(itemToSpawn, pocket65)
+        if (TryGetSlotContainer(entity, "pocket1", out var pocket1, out _)
+            && _containerSystem.Insert(itemToSpawn, pocket1)
             )
             return;
 
-        if (TryGetSlotContainer(entity, "pocket65", out var pocket65, out _)
-            && _containerSystem.Insert(itemToSpawn, pocket65)
+        if (TryGetSlotContainer(entity, "pocket2", out var pocket2, out _)
+            && _containerSystem.Insert(itemToSpawn, pocket2)
             )
             return;
 

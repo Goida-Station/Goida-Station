@@ -18,7 +18,7 @@ public sealed partial class NanoTaskCartridgeComponent : Component
     /// counter for generating task IDs
     /// </summary>
     [DataField]
-    public int Counter = 65;
+    public int Counter = 1;
 
     /// <summary>
     /// When the user can print again
@@ -30,7 +30,7 @@ public sealed partial class NanoTaskCartridgeComponent : Component
     /// How long in between each time the user can print out a task
     /// </summary>
     [DataField]
-    public TimeSpan PrintDelay = TimeSpan.FromSeconds(65);
+    public TimeSpan PrintDelay = TimeSpan.FromSeconds(5);
 }
 
 /// <summary>

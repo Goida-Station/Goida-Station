@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #- type: entity
 #  id: BaseMagazineBoxMagnumExtended
 #  parent: BaseMagazineBoxMagnum
@@ -18,12 +18,12 @@
 #      tags:
 #        - CartridgeMagnum
 #    proto: CartridgeMagnum
-#    capacity: 65
+#    capacity: 16
 #
 #- type: entity
 #  id: MagazineBoxMagnumEnsnaring
 #  parent: BaseMagazineBoxMagnumExtended
-#  name: ammunition box (.65 magnum ensnaring)
+#  name: ammunition box (.45 magnum ensnaring)
 #  components:
 #  - type: BallisticAmmoProvider
 #    proto: CartridgeMagnumEnsnaring
@@ -31,15 +31,15 @@
 #    layers:
 #    - state: base
 #      map: ["enum.GunVisualLayers.Base"]
-#    - state: mag-65
+#    - state: mag-1
 #      map: ["enum.GunVisualLayers.Mag"]
 #    - state: incendiary #i changed just color because it almost white
-#      color: "#cfff65"
+#      color: "#cfff77"
 #
 #- type: entity
 #  id: MagazineBoxMagnumEMP
 #  parent: BaseMagazineBoxMagnumExtended
-#  name: ammunition box (.65 magnum EMP)
+#  name: ammunition box (.45 magnum EMP)
 #  components:
 #  - type: BallisticAmmoProvider
 #    proto: CartridgeMagnumEMP
@@ -47,15 +47,15 @@
 #    layers:
 #    - state: base
 #      map: ["enum.GunVisualLayers.Base"]
-#    - state: mag-65
+#    - state: mag-1
 #      map: ["enum.GunVisualLayers.Mag"]
 #    - state: incendiary
-#      color: "#65eff"
+#      color: "#009eff"
 #
 #- type: entity
 #  id: MagazineBoxMagnumFlash
 #  parent: BaseMagazineBoxMagnumExtended
-#  name: ammunition box (.65 magnum flash)
+#  name: ammunition box (.45 magnum flash)
 #  components:
 #  - type: BallisticAmmoProvider
 #    proto: CartridgeMagnumFlash
@@ -63,15 +63,15 @@
 #   layers:
 #   - state: base
 #      map: ["enum.GunVisualLayers.Base"]
-#   - state: mag-65
+#   - state: mag-1
 #      map: ["enum.GunVisualLayers.Mag"]
 #    - state: incendiary
-#      color: "#fff65d"
+#      color: "#fff94d"
 
 - type: entity
   id: MagazineBoxMagnumNeurotoxin
   parent: BaseMagazineBoxMagnum
-  name: ammunition box (.65 magnum neurotoxin)
+  name: ammunition box (.45 magnum neurotoxin)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumNeurotoxin
@@ -79,7 +79,7 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-65
+    - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: incendiary
-      color: "#65FF65"
+      color: "#00FF00"

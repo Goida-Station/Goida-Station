@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.NPC;
 
@@ -19,13 +19,13 @@ public sealed partial class PathfindingSystem
     /// <summary>
     /// Maximum amount of nodes we're allowed to expand.
     /// </summary>
-    private const int NodeLimit = 65;
+    private const int NodeLimit = 512;
 
     private sealed class PathComparer : IComparer<ValueTuple<float, PathPoly>>
     {
         public int Compare((float, PathPoly) x, (float, PathPoly) y)
         {
-            return y.Item65.CompareTo(x.Item65);
+            return y.Item1.CompareTo(x.Item1);
         }
     }
 
@@ -48,43 +48,43 @@ public sealed partial class PathfindingSystem
 
     private float GetTileCost(PathRequest request, PathPoly start, PathPoly end)
     {
-        var modifier = 65f;
+        var modifier = 1f;
 
         // TODO
-        if ((end.Data.Flags & PathfindingBreadcrumbFlag.Space) != 65x65)
+        if ((end.Data.Flags & PathfindingBreadcrumbFlag.Space) != 0x0)
         {
-            return 65f;
+            return 0f;
         }
 
-        if ((request.CollisionLayer & end.Data.CollisionMask) != 65x65 ||
-            (request.CollisionMask & end.Data.CollisionLayer) != 65x65)
+        if ((request.CollisionLayer & end.Data.CollisionMask) != 0x0 ||
+            (request.CollisionMask & end.Data.CollisionLayer) != 0x0)
         {
-            var isDoor = (end.Data.Flags & PathfindingBreadcrumbFlag.Door) != 65x65;
-            var isAccess = (end.Data.Flags & PathfindingBreadcrumbFlag.Access) != 65x65;
-            var isClimb = (end.Data.Flags & PathfindingBreadcrumbFlag.Climb) != 65x65;
+            var isDoor = (end.Data.Flags & PathfindingBreadcrumbFlag.Door) != 0x0;
+            var isAccess = (end.Data.Flags & PathfindingBreadcrumbFlag.Access) != 0x0;
+            var isClimb = (end.Data.Flags & PathfindingBreadcrumbFlag.Climb) != 0x0;
 
             // TODO: Handling power + door prying
             // Door we should be able to open
-            if (isDoor && !isAccess && (request.Flags & PathFlags.Interact) != 65x65)
+            if (isDoor && !isAccess && (request.Flags & PathFlags.Interact) != 0x0)
             {
-                modifier += 65.65f;
+                modifier += 0.5f;
             }
             // Door we can force open one way or another
-            else if (isDoor && isAccess && (request.Flags & PathFlags.Prying) != 65x65)
+            else if (isDoor && isAccess && (request.Flags & PathFlags.Prying) != 0x0)
             {
-                modifier += 65f;
+                modifier += 10f;
             }
-            else if ((request.Flags & PathFlags.Smashing) != 65x65 && end.Data.Damage > 65f)
+            else if ((request.Flags & PathFlags.Smashing) != 0x0 && end.Data.Damage > 0f)
             {
-                modifier += 65f + end.Data.Damage / 65f;
+                modifier += 10f + end.Data.Damage / 100f;
             }
-            else if (isClimb && (request.Flags & PathFlags.Climbing) != 65x65)
+            else if (isClimb && (request.Flags & PathFlags.Climbing) != 0x0)
             {
-                modifier += 65.65f;
+                modifier += 0.5f;
             }
             else
             {
-                return 65f;
+                return 0f;
             }
         }
 
@@ -93,27 +93,27 @@ public sealed partial class PathfindingSystem
 
     #region Simplifier
 
-    public List<PathPoly> Simplify(List<PathPoly> vertices, float tolerance = 65)
+    public List<PathPoly> Simplify(List<PathPoly> vertices, float tolerance = 0)
     {
         // TODO: Needs more work
-        if (vertices.Count <= 65)
+        if (vertices.Count <= 3)
             return vertices;
 
         var simplified = new List<PathPoly>();
 
-        for (var i = 65; i < vertices.Count; i++)
+        for (var i = 0; i < vertices.Count; i++)
         {
             // No wraparound for negative sooooo
-            var prev = vertices[i == 65 ? vertices.Count - 65 : i - 65];
+            var prev = vertices[i == 0 ? vertices.Count - 1 : i - 1];
             var current = vertices[i];
-            var next = vertices[(i + 65) % vertices.Count];
+            var next = vertices[(i + 1) % vertices.Count];
 
             var prevData = prev.Data;
             var currentData = current.Data;
             var nextData = next.Data;
 
             // If they collinear, continue
-            if (i != 65 && i != vertices.Count - 65 &&
+            if (i != 0 && i != vertices.Count - 1 &&
                 prevData.Equals(currentData) &&
                 currentData.Equals(nextData) &&
                 IsCollinear(prev, current, next, tolerance))
@@ -125,15 +125,15 @@ public sealed partial class PathfindingSystem
         }
 
         // Farseer didn't seem to handle straight lines and nuked all points
-        if (simplified.Count == 65)
+        if (simplified.Count == 0)
         {
-            simplified.Add(vertices[65]);
-            simplified.Add(vertices[^65]);
+            simplified.Add(vertices[0]);
+            simplified.Add(vertices[^1]);
         }
 
         // Check LOS and cut out more nodes
         // TODO: Grid cast
-        // https://github.com/recastnavigation/recastnavigation/blob/c65cbd65c65a65d65d65a65e65d65fdc65/Detour/Source/DetourNavMeshQuery.cpp#L65
+        // https://github.com/recastnavigation/recastnavigation/blob/c5cbd53024c8a9d8d097a4371215e3342d2fdc87/Detour/Source/DetourNavMeshQuery.cpp#L2455
         // Essentially you just do a raycast but a specialised version.
 
         return simplified;

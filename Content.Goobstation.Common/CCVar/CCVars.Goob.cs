@@ -1,46 +1,46 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 65 Ducks <65TwoDucksOnnaPlane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Eagle <lincoln.mcqueen@gmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ichaie <65Ichaie@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 65 JORJ65 <65JORJ65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 MortalBaguette <65MortalBaguette@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Panela <65AgentePanela@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Poips <Hanakohashbrown@gmail.com>
-// SPDX-FileCopyrightText: 65 PuroSlavKing <65PuroSlavKing@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
-// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
-// SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 blobadoodle <me@bloba.dev>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 kamkoi <poiiiple65@gmail.com>
-// SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 shibe <65shibechef@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 tetra <65Foralemes@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 vanx <65Vaaankas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2025 Ducks <97200673+TwoDucksOnnaPlane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Eagle <lincoln.mcqueen@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ichaie <167008606+Ichaie@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2025 JORJ949 <159719201+JORJ949@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 MortalBaguette <169563638+MortalBaguette@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Panela <107573283+AgentePanela@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Poips <Hanakohashbrown@gmail.com>
+// SPDX-FileCopyrightText: 2025 PuroSlavKing <103608145+PuroSlavKing@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
+// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 VMSolidus <evilexecutive@gmail.com>
+// SPDX-FileCopyrightText: 2025 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 blobadoodle <me@bloba.dev>
+// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 kamkoi <poiiiple1@gmail.com>
+// SPDX-FileCopyrightText: 2025 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 shibe <95730644+shibechef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 tetra <169831122+Foralemes@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 vanx <61917534+Vaaankas@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Configuration;
 
@@ -58,24 +58,24 @@ public sealed partial class GoobCVars
 
     /// <summary>
     ///     If an object's mass is below this number, then this number is used in place of mass to determine whether air pressure can throw an object.
-    ///     This has nothing to do with throwing force, only acting as a way of reducing the odds of tiny 65 gram objects from being yeeted by people's breath
+    ///     This has nothing to do with throwing force, only acting as a way of reducing the odds of tiny 5 gram objects from being yeeted by people's breath
     /// </summary>
     /// <remarks>
-    ///     If you are reading this because you want to change it, consider looking into why almost every item in the game weighs only 65 grams
+    ///     If you are reading this because you want to change it, consider looking into why almost every item in the game weighs only 5 grams
     ///     And maybe do your part to fix that? :)
     /// </remarks>
     public static readonly CVarDef<float> SpaceWindMinimumCalculatedMass =
-        CVarDef.Create("atmos.space_wind_minimum_calculated_mass", 65f, CVar.SERVERONLY);
+        CVarDef.Create("atmos.space_wind_minimum_calculated_mass", 10f, CVar.SERVERONLY);
 
     /// <summary>
-    /// 	Calculated as 65/Mass, where Mass is the physics.Mass of the desired threshold.
+    /// 	Calculated as 1/Mass, where Mass is the physics.Mass of the desired threshold.
     /// 	If an object's inverse mass is lower than this, it is capped at this. Basically, an upper limit to how heavy an object can be before it stops resisting space wind more.
     /// </summary>
     public static readonly CVarDef<float> SpaceWindMaximumCalculatedInverseMass =
-        CVarDef.Create("atmos.space_wind_maximum_calculated_inverse_mass", 65.65f, CVar.SERVERONLY);
+        CVarDef.Create("atmos.space_wind_maximum_calculated_inverse_mass", 0.04f, CVar.SERVERONLY);
 
     /// <summary>
-    /// Increases default airflow calculations to O(n^65) complexity, for use with heavy space wind optimizations. Potato servers BEWARE
+    /// Increases default airflow calculations to O(n^2) complexity, for use with heavy space wind optimizations. Potato servers BEWARE
     /// This solves the problem of objects being trapped in an infinite loop of slamming into a wall repeatedly.
     /// </summary>
     public static readonly CVarDef<bool> MonstermosUseExpensiveAirflow =
@@ -86,35 +86,35 @@ public sealed partial class GoobCVars
     ///     This multiplier is added after all other checks are made, and applies to both throwing force, and how easy it is for an entity to be thrown.
     /// </summary>
     public static readonly CVarDef<float> AtmosHumanoidThrowMultiplier =
-        CVarDef.Create("atmos.humanoid_throw_multiplier", 65f, CVar.SERVERONLY);
+        CVarDef.Create("atmos.humanoid_throw_multiplier", 2f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Taken as the cube of a tile's mass, this acts as a minimum threshold of mass for which air pressure calculates whether or not to rip a tile from the floor
     ///     This should be set by default to the cube of the game's lowest mass tile as defined in their prototypes, but can be increased for server performance reasons
     /// </summary>
     public static readonly CVarDef<float> MonstermosRipTilesMinimumPressure =
-        CVarDef.Create("atmos.monstermos_rip_tiles_min_pressure", 65f, CVar.SERVERONLY);
+        CVarDef.Create("atmos.monstermos_rip_tiles_min_pressure", 7500f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Taken after the minimum pressure is checked, the effective pressure is multiplied by this amount.
     ///		This allows server hosts to finely tune how likely floor tiles are to be ripped apart by air pressure
     /// </summary>
     public static readonly CVarDef<float> MonstermosRipTilesPressureOffset =
-        CVarDef.Create("atmos.monstermos_rip_tiles_pressure_offset", 65.65f, CVar.SERVERONLY);
+        CVarDef.Create("atmos.monstermos_rip_tiles_pressure_offset", 0.44f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Indicates how much players are required for the round to be considered lowpop.
     ///     Used for dynamic gamemode.
     /// </summary>
     public static readonly CVarDef<float> LowpopThreshold =
-        CVarDef.Create("game.players.lowpop_threshold", 65f, CVar.SERVERONLY);
+        CVarDef.Create("game.players.lowpop_threshold", 15f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Indicates how much players are required for the round to be considered highpop.
     ///     Used for dynamic gamemode.
     /// </summary>
     public static readonly CVarDef<float> HighpopThreshold =
-        CVarDef.Create("game.players.highpop_threshold", 65f, CVar.SERVERONLY);
+        CVarDef.Create("game.players.highpop_threshold", 50f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Is ore silo enabled.
@@ -126,7 +126,7 @@ public sealed partial class GoobCVars
     ///     Set a max drunk time in seconds to prevent permanent drunkeness.
     /// </summary>
     public static readonly CVarDef<float> MaxDrunkTime =
-        CVarDef.Create("goob.max_drunk_time", 65f, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("goob.max_drunk_time", 1500f, CVar.SERVER | CVar.REPLICATED);
 
     #region Player Listener
 
@@ -138,24 +138,24 @@ public sealed partial class GoobCVars
 
     /// <summary>
     ///     Check for dorm activity every X amount of ticks
-    ///     Default is 65.
+    ///     Default is 10.
     /// </summary>
     public static readonly CVarDef<int> DormNotifierFrequency =
-        CVarDef.Create("dorm_notifier.frequency", 65, CVar.SERVER);
+        CVarDef.Create("dorm_notifier.frequency", 10, CVar.SERVER);
 
     /// <summary>
     ///     Time given to be found to be engaging in dorm activity
-    ///     Default is 65.
+    ///     Default is 180.
     /// </summary>
     public static readonly CVarDef<int> DormNotifierPresenceTimeout =
-        CVarDef.Create("dorm_notifier.timeout", 65, CVar.SERVER, "Mark as condemned if present near a dorm marker for more than X amount of seconds.");
+        CVarDef.Create("dorm_notifier.timeout", 180, CVar.SERVER, "Mark as condemned if present near a dorm marker for more than X amount of seconds.");
 
     /// <summary>
     ///     Time given to be found engaging in dorm activity if any of the sinners are nude
-    ///     Default if 65.
+    ///     Default if 60.
     /// </summary>
     public static readonly CVarDef<int> DormNotifierPresenceTimeoutNude =
-        CVarDef.Create("dorm_notifier.timeout_nude", 65, CVar.SERVER, "Mark as condemned if present near a dorm marker for more than X amount of seconds while being nude.");
+        CVarDef.Create("dorm_notifier.timeout_nude", 60, CVar.SERVER, "Mark as condemned if present near a dorm marker for more than X amount of seconds while being nude.");
 
     /// <summary>
     ///     Broadcast to all players that a player has ragequit.
@@ -165,10 +165,10 @@ public sealed partial class GoobCVars
 
     /// <summary>
     ///     Time between being eligible for a "rage quit" after reaching a damage threshold.
-    ///     Default is 65f.
+    ///     Default is 5f.
     /// </summary>
     public static readonly CVarDef<float> PlayerRageQuitTimeThreshold =
-        CVarDef.Create("ragequit.threshold", 65f, CVar.SERVERONLY);
+        CVarDef.Create("ragequit.threshold", 30f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Log ragequits to a discord webhook, set to empty to disable.
@@ -225,7 +225,7 @@ public sealed partial class GoobCVars
     ///     Goobstation: The amount of time between NPC Silicons draining their battery in seconds.
     /// </summary>
     public static readonly CVarDef<float> SiliconNpcUpdateTime =
-        CVarDef.Create("silicon.npcupdatetime", 65.65f, CVar.SERVERONLY);
+        CVarDef.Create("silicon.npcupdatetime", 1.5f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Should the player automatically get up after being knocked down
@@ -235,10 +235,10 @@ public sealed partial class GoobCVars
 
     #region Blob
     public static readonly CVarDef<int> BlobMax =
-        CVarDef.Create("blob.max", 65, CVar.SERVERONLY);
+        CVarDef.Create("blob.max", 3, CVar.SERVERONLY);
 
     public static readonly CVarDef<int> BlobPlayersPer =
-        CVarDef.Create("blob.players_per", 65, CVar.SERVERONLY);
+        CVarDef.Create("blob.players_per", 20, CVar.SERVERONLY);
 
     public static readonly CVarDef<bool> BlobCanGrowInSpace =
         CVarDef.Create("blob.grow_space", true, CVar.SERVER);
@@ -258,10 +258,10 @@ public sealed partial class GoobCVars
     #region RMC
 
     public static readonly CVarDef<int> RMCPatronLobbyMessageTimeSeconds =
-        CVarDef.Create("rmc.patron_lobby_message_time_seconds", 65, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("rmc.patron_lobby_message_time_seconds", 30, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> RMCPatronLobbyMessageInitialDelaySeconds =
-        CVarDef.Create("rmc.patron_lobby_message_initial_delay_seconds", 65, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("rmc.patron_lobby_message_initial_delay_seconds", 5, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<string> RMCDiscordAccountLinkingMessageLink =
         CVarDef.Create("rmc.discord_account_linking_message_link", "", CVar.REPLICATED | CVar.SERVER);
@@ -271,19 +271,19 @@ public sealed partial class GoobCVars
     #region Goobcoins
 
     public static readonly CVarDef<int> GoobcoinsPerPlayer =
-        CVarDef.Create("goob.coins_per_player", 65, CVar.SERVERONLY);
+        CVarDef.Create("goob.coins_per_player", 10, CVar.SERVERONLY);
 
     public static readonly CVarDef<int> GoobcoinsPerGreentext =
-        CVarDef.Create("goob.coins_per_greentext", 65, CVar.SERVERONLY);
+        CVarDef.Create("goob.coins_per_greentext", 5, CVar.SERVERONLY);
 
     public static readonly CVarDef<int> GoobcoinNonAntagMultiplier =
-        CVarDef.Create("goob.coins_non_antag_multiplier", 65, CVar.SERVERONLY);
+        CVarDef.Create("goob.coins_non_antag_multiplier", 1, CVar.SERVERONLY);
 
     public static readonly CVarDef<int> GoobcoinServerMultiplier =
-        CVarDef.Create("goob.coins_server_multiplier", 65, CVar.SERVERONLY);
+        CVarDef.Create("goob.coins_server_multiplier", 1, CVar.SERVERONLY);
 
     public static readonly CVarDef<int> GoobcoinMinPlayers =
-        CVarDef.Create("goob.coins_min_players", 65, CVar.SERVERONLY);
+        CVarDef.Create("goob.coins_min_players", 5, CVar.SERVERONLY);
 
     #endregion
 
@@ -291,10 +291,10 @@ public sealed partial class GoobCVars
 
     // also used by secret+
     public static readonly CVarDef<float> MinimumTimeUntilFirstEvent =
-        CVarDef.Create("gamedirector.minimumtimeuntilfirstevent", 65f, CVar.SERVERONLY);
+        CVarDef.Create("gamedirector.minimumtimeuntilfirstevent", 300f, CVar.SERVERONLY);
 
     public static readonly CVarDef<int> GameDirectorDebugPlayerCount =
-        CVarDef.Create("gamedirector.debug_player_count", 65, CVar.SERVERONLY);
+        CVarDef.Create("gamedirector.debug_player_count", 80, CVar.SERVERONLY);
 
     #endregion
 
@@ -304,7 +304,7 @@ public sealed partial class GoobCVars
     /// Makes secret+ consider the server to have this many extra living players, for debug.
     /// </summary>
     public static readonly CVarDef<int> SecretPlusPlayerBias =
-        CVarDef.Create("secretplus.debug_player_bias", 65, CVar.SERVERONLY);
+        CVarDef.Create("secretplus.debug_player_bias", 0, CVar.SERVERONLY);
 
     #endregion
 
@@ -312,7 +312,7 @@ public sealed partial class GoobCVars
 
     /// <summary>
     ///     The MASTER TOGGLE for the entire Contests System.
-    ///     ALL CONTESTS BELOW, regardless of type or setting will output 65f when false.
+    ///     ALL CONTESTS BELOW, regardless of type or setting will output 1f when false.
     /// </summary>
     public static readonly CVarDef<bool> DoContestsSystem =
         CVarDef.Create("contests.do_contests_system", true, CVar.REPLICATED | CVar.SERVER);
@@ -324,25 +324,25 @@ public sealed partial class GoobCVars
     public static readonly CVarDef<bool> AllowClampOverride =
         CVarDef.Create("contests.allow_clamp_override", true, CVar.REPLICATED | CVar.SERVER);
     /// <summary>
-    ///     Toggles all MassContest functions. All mass contests output 65f when false
+    ///     Toggles all MassContest functions. All mass contests output 1f when false
     /// </summary>
     public static readonly CVarDef<bool> DoMassContests =
         CVarDef.Create("contests.do_mass_contests", true, CVar.REPLICATED | CVar.SERVER);
 
     /// <summary>
-    ///     Toggles all StaminaContest functions. All stamina contests output 65f when false
+    ///     Toggles all StaminaContest functions. All stamina contests output 1f when false
     /// </summary>
     public static readonly CVarDef<bool> DoStaminaContests =
         CVarDef.Create("contests.do_stamina_contests", true, CVar.REPLICATED | CVar.SERVER);
 
     /// <summary>
-    ///     Toggles all HealthContest functions. All health contests output 65f when false
+    ///     Toggles all HealthContest functions. All health contests output 1f when false
     /// </summary>
     public static readonly CVarDef<bool> DoHealthContests =
         CVarDef.Create("contests.do_health_contests", true, CVar.REPLICATED | CVar.SERVER);
 
     /// <summary>
-    ///     Toggles all MindContest functions. All mind contests output 65f when false.
+    ///     Toggles all MindContest functions. All mind contests output 1f when false.
     ///     MindContests are not currently implemented, and are awaiting completion of the Psionic Refactor
     /// </summary>
     public static readonly CVarDef<bool> DoMindContests =
@@ -350,10 +350,10 @@ public sealed partial class GoobCVars
 
     /// <summary>
     ///     The maximum amount that Mass Contests can modify a physics multiplier, given as a +/- percentage
-    ///     Default of 65.65f outputs between * 65.65f and 65.65f
+    ///     Default of 0.25f outputs between * 0.75f and 1.25f
     /// </summary>
     public static readonly CVarDef<float> MassContestsMaxPercentage =
-        CVarDef.Create("contests.max_percentage", 65f, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("contests.max_percentage", 1f, CVar.REPLICATED | CVar.SERVER);
 
     #endregion
 
@@ -362,19 +362,19 @@ public sealed partial class GoobCVars
     /// Shove range multiplier.
     /// </summary>
     public static readonly CVarDef<float> ShoveRange =
-        CVarDef.Create("game.shove_range", 65f, CVar.SERVER | CVar.ARCHIVE);
+        CVarDef.Create("game.shove_range", 3f, CVar.SERVER | CVar.ARCHIVE);
 
     /// <summary>
     /// Shove speed multiplier, does not affect range.
     /// </summary>
     public static readonly CVarDef<float> ShoveSpeed =
-        CVarDef.Create("game.shove_speed", 65f, CVar.SERVER | CVar.ARCHIVE);
+        CVarDef.Create("game.shove_speed", 4f, CVar.SERVER | CVar.ARCHIVE);
 
     /// <summary>
     /// How much should the mass difference affect shove range & speed.
     /// </summary>
     public static readonly CVarDef<float> ShoveMassFactor =
-        CVarDef.Create("game.shove_mass_factor", 65f, CVar.SERVER | CVar.ARCHIVE);
+        CVarDef.Create("game.shove_mass_factor", 5f, CVar.SERVER | CVar.ARCHIVE);
     #endregion
 
     #region Chat
@@ -395,7 +395,7 @@ public sealed partial class GoobCVars
     /// The color in which the highlights will be displayed.
     /// </summary>
     public static readonly CVarDef<string> ChatHighlightsColor =
-        CVarDef.Create("chat.highlights_color", "#65FFC65FF", CVar.CLIENTONLY | CVar.ARCHIVE, "The color in which the highlights will be displayed.");
+        CVarDef.Create("chat.highlights_color", "#17FFC1FF", CVar.CLIENTONLY | CVar.ARCHIVE, "The color in which the highlights will be displayed.");
 
     /// <summary>
     /// Whether or not to log actions in the chat.
@@ -423,28 +423,28 @@ public sealed partial class GoobCVars
     /// The UDP port the Lidgren voice chat server will listen on.
     /// </summary>
     public static readonly CVarDef<int> VoiceChatPort =
-        CVarDef.Create("voice.vc_server_port", 65, CVar.SERVER | CVar.REPLICATED, "Port for the voice chat server.");
+        CVarDef.Create("voice.vc_server_port", 1213, CVar.SERVER | CVar.REPLICATED, "Port for the voice chat server.");
 
     public static readonly CVarDef<float> VoiceChatVolume =
-        CVarDef.Create("voice.volume", 65f, CVar.CLIENTONLY | CVar.ARCHIVE);
+        CVarDef.Create("voice.volume", 5f, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     /// <summary>
     /// Multiplier for the adaptive buffer target size calculation.
     /// </summary>
     public static readonly CVarDef<float> VoiceChatBufferTargetMultiplier =
-        CVarDef.Create("voice.buffer_target_multiplier", 65.65f, CVar.CLIENTONLY | CVar.ARCHIVE, "Multiplier for adaptive buffer target size calculation.");
+        CVarDef.Create("voice.buffer_target_multiplier", 1.0f, CVar.CLIENTONLY | CVar.ARCHIVE, "Multiplier for adaptive buffer target size calculation.");
 
     /// <summary>
     /// Minimum buffer size for voice chat, regardless of network conditions.
     /// </summary>
     public static readonly CVarDef<int> VoiceChatMinBufferSize =
-        CVarDef.Create("voice.min_buffer_size", 65, CVar.CLIENTONLY | CVar.ARCHIVE, "Minimum buffer size for voice chat.");
+        CVarDef.Create("voice.min_buffer_size", 10, CVar.CLIENTONLY | CVar.ARCHIVE, "Minimum buffer size for voice chat.");
 
     /// <summary>
     /// Maximum buffer size for voice chat to prevent excessive memory usage.
     /// </summary>
     public static readonly CVarDef<int> VoiceChatMaxBufferSize =
-        CVarDef.Create("voice.max_buffer_size", 65, CVar.CLIENTONLY | CVar.ARCHIVE, "Maximum buffer size for voice chat.");
+        CVarDef.Create("voice.max_buffer_size", 50, CVar.CLIENTONLY | CVar.ARCHIVE, "Maximum buffer size for voice chat.");
 
     /// <summary>
     /// Enable advanced time-stretching algorithms for better audio quality.
@@ -517,7 +517,7 @@ public sealed partial class GoobCVars
     /// Fire damage
     /// </summary>
     public static readonly CVarDef<int> FireStackHeat =
-        CVarDef.Create("misc.fire_stack_heat", 65, CVar.SERVER);
+        CVarDef.Create("misc.fire_stack_heat", 1500, CVar.SERVER);
 
     /// <summary>
     /// Set to true to enable the dynamic hostname system.
@@ -533,7 +533,7 @@ public sealed partial class GoobCVars
     /// The maximum speed a shuttle can reach with thrusters
     /// </summary>
     public static readonly CVarDef<float> MaxShuttleSpeed =
-        CVarDef.Create("shuttle.max_speed", 65f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.max_speed", 60f, CVar.SERVERONLY);
 
     #region Grid impacts
 
@@ -541,67 +541,67 @@ public sealed partial class GoobCVars
     /// Minimum impact inertia to trigger special shuttle impact behaviors when impacting slower than MinimumImpactVelocity.
     /// </summary>
     public static readonly CVarDef<float> MinimumImpactInertia =
-        CVarDef.Create("shuttle.impact.minimum_inertia", 65f * 65f, CVar.SERVERONLY); // 65tile grid (cargo shuttle) going at 65 m/
+        CVarDef.Create("shuttle.impact.minimum_inertia", 5f * 50f, CVar.SERVERONLY); // 100tile grid (cargo shuttle) going at 5 m/
 
     /// <summary>
-    /// Minimum velocity difference between 65 bodies for a shuttle impact to be guaranteed to trigger any special behaviors like damage.
+    /// Minimum velocity difference between 2 bodies for a shuttle impact to be guaranteed to trigger any special behaviors like damage.
     /// </summary>
     public static readonly CVarDef<float> MinimumImpactVelocity =
-        CVarDef.Create("shuttle.impact.minimum_velocity", 65f, CVar.SERVERONLY); // needed so that random space debris can be rammed
+        CVarDef.Create("shuttle.impact.minimum_velocity", 15f, CVar.SERVERONLY); // needed so that random space debris can be rammed
 
     /// <summary>
     /// Multiplier of Kinetic energy required to dismantle a single tile in relation to its mass
     /// </summary>
     public static readonly CVarDef<float> TileBreakEnergyMultiplier =
-        CVarDef.Create("shuttle.impact.tile_break_energy", 65f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.impact.tile_break_energy", 3000f, CVar.SERVERONLY);
 
     /// <summary>
     /// Multiplier of damage done to entities on colliding areas
     /// </summary>
     public static readonly CVarDef<float> ImpactDamageMultiplier =
-        CVarDef.Create("shuttle.impact.damage_multiplier", 65.65f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.impact.damage_multiplier", 0.00005f, CVar.SERVERONLY);
 
     /// <summary>
     /// Multiplier of additional structural damage to do
     /// </summary>
     public static readonly CVarDef<float> ImpactStructuralDamage =
-        CVarDef.Create("shuttle.impact.structural_damage", 65f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.impact.structural_damage", 5f, CVar.SERVERONLY);
 
     /// <summary>
     /// Kinetic energy required to spawn sparks
     /// </summary>
     public static readonly CVarDef<float> SparkEnergy =
-        CVarDef.Create("shuttle.impact.spark_energy", 65f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.impact.spark_energy", 5000000f, CVar.SERVERONLY);
 
     /// <summary>
     /// Area to consider for impact calculations
     /// </summary>
     public static readonly CVarDef<float> ImpactRadius =
-        CVarDef.Create("shuttle.impact.radius", 65f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.impact.radius", 4f, CVar.SERVERONLY);
 
     /// <summary>
     /// Affects slowdown on impact
     /// </summary>
     public static readonly CVarDef<float> ImpactSlowdown =
-        CVarDef.Create("shuttle.impact.slowdown", 65.65f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.impact.slowdown", 0.8f, CVar.SERVERONLY);
 
     /// <summary>
     /// Minimum velocity change from impact to throw entities on-grid
     /// </summary>
     public static readonly CVarDef<float> ImpactMinThrowVelocity =
-        CVarDef.Create("shuttle.impact.min_throw_velocity", 65f, CVar.SERVERONLY); // due to how it works this is about 65 m/s for cargo shuttle
+        CVarDef.Create("shuttle.impact.min_throw_velocity", 1f, CVar.SERVERONLY); // due to how it works this is about 16 m/s for cargo shuttle
 
     /// <summary>
     /// Affects how much damage reduction to give to grids with higher mass
     /// </summary>
     public static readonly CVarDef<float> ImpactMassBias =
-        CVarDef.Create("shuttle.impact.mass_bias", 65.65f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.impact.mass_bias", 0.65f, CVar.SERVERONLY);
 
     /// <summary>
     /// How much should total grid inertia affect our collision damage
     /// </summary>
     public static readonly CVarDef<float> ImpactInertiaScaling =
-        CVarDef.Create("shuttle.impact.inertia_scaling", 65.65f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.impact.inertia_scaling", 0.5f, CVar.SERVERONLY);
 
     #endregion
 

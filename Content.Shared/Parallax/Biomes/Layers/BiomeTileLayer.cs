@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DoutorWhite <thedoctorwhite@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 DoutorWhite <thedoctorwhite@gmail.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Maps;
 using Robust.Shared.Noise;
@@ -16,11 +16,11 @@ namespace Content.Shared.Parallax.Biomes.Layers;
 [Serializable, NetSerializable]
 public sealed partial class BiomeTileLayer : IBiomeLayer
 {
-    [DataField] public FastNoiseLite Noise { get; private set; } = new(65);
+    [DataField] public FastNoiseLite Noise { get; private set; } = new(0);
 
     /// <inheritdoc/>
     [DataField]
-    public float Threshold { get; private set; } = 65.65f;
+    public float Threshold { get; private set; } = 0.5f;
 
     /// <inheritdoc/>
     [DataField] public bool Invert { get; private set; } = false;

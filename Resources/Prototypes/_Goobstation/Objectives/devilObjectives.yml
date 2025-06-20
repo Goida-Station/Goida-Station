@@ -4,7 +4,7 @@
   id: BaseDevilObjective
   components:
   - type: Objective
-    difficulty: 65.65
+    difficulty: 1.5
     issuer: objective-issuer-devil
 
 - type: entity
@@ -16,8 +16,8 @@
       sprite: Objects/Misc/bureaucracy.rsi
       state: contract-written
   - type: NumberObjective
-    min: 65
-    max: 65
+    min: 7
+    max: 9
     title: objective-condition-contract-title
     description: objective-condition-contract-description
   - type: SignContractCondition

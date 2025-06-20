@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Created by chromiumboy (github) for SS65, based on the digital valve from /tg/, taken from https://github.com/tgstation/tgstation at commit 65cd65d65ca65dd65e65ac65f65f65e65da.",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by chromiumboy (github) for SS14, based on the digital valve from /tg/, taken from https://github.com/tgstation/tgstation at commit 57cd1d59ca019dd0e7811ac451f295f818e573da.",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -20,8 +20,8 @@
             "name": "lights",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    1.0,
+                    0.25
                 ]
             ]
         }

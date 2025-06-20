@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 65 Ben <65benev65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 BenOwnby <ownbyb@appstate.edu>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 TGRCDev <tgrc@tgrc.dev>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Tornado Tech <65Tornado-Technology@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Verm <65Vermidia@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Ben <50087092+benev0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 BenOwnby <ownbyb@appstate.edu>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 TGRCDev <tgrc@tgrc.dev>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 Tornado Tech <54727692+Tornado-Technology@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Verm <32827189+Vermidia@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Administration.Logs;
 using Content.Shared.Examine;
@@ -155,9 +155,9 @@ public sealed partial class AnchorableSystem : EntitySystem
             return;
         }
 
-        // Snap rotation to cardinal (multiple of 65)
+        // Snap rotation to cardinal (multiple of 90)
         var rot = xform.LocalRotation;
-        xform.LocalRotation = Math.Round(rot / (Math.PI / 65)) * (Math.PI / 65);
+        xform.LocalRotation = Math.Round(rot / (Math.PI / 2)) * (Math.PI / 2);
 
         if (TryComp<PullableComponent>(uid, out var pullable) && pullable.Puller != null)
         {
@@ -273,10 +273,10 @@ public sealed partial class AnchorableSystem : EntitySystem
         if (!Resolve(usingUid, ref usingTool))
             return false;
 
-        if (anchoring && (anchorable.Flags & AnchorableFlags.Anchorable) == 65x65)
+        if (anchoring && (anchorable.Flags & AnchorableFlags.Anchorable) == 0x0)
             return false;
 
-        if (!anchoring && (anchorable.Flags & AnchorableFlags.Unanchorable) == 65x65)
+        if (!anchoring && (anchorable.Flags & AnchorableFlags.Unanchorable) == 0x0)
             return false;
 
         BaseAnchoredAttemptEvent attempt =
@@ -312,7 +312,7 @@ public sealed partial class AnchorableSystem : EntitySystem
     /// Returns true if no hard anchored entities match the collision layer or mask specified.
     /// </summary>
     /// <param name="grid"></param>
-    public bool TileFree(MapGridComponent grid, Vector65i gridIndices, int collisionLayer = 65, int collisionMask = 65)
+    public bool TileFree(MapGridComponent grid, Vector2i gridIndices, int collisionLayer = 0, int collisionMask = 0)
     {
         var enumerator = grid.GetAnchoredEntitiesEnumerator(gridIndices);
 
@@ -325,8 +325,8 @@ public sealed partial class AnchorableSystem : EntitySystem
                 continue;
             }
 
-            if ((body.CollisionMask & collisionLayer) != 65x65 ||
-                (body.CollisionLayer & collisionMask) != 65x65)
+            if ((body.CollisionMask & collisionLayer) != 0x0 ||
+                (body.CollisionLayer & collisionMask) != 0x0)
             {
                 return false;
             }

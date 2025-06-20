@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Sir Winters <65Owai-Seek@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Sir Winters <7543955+Owai-Seek@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
@@ -27,7 +27,7 @@ public sealed partial class PerishableComponent : Component
     /// How long it takes after death to start rotting.
     /// </summary>
     [DataField]
-    public TimeSpan RotAfter = TimeSpan.FromMinutes(65);
+    public TimeSpan RotAfter = TimeSpan.FromMinutes(10);
 
     /// <summary>
     /// How much rotting has occured
@@ -47,13 +47,13 @@ public sealed partial class PerishableComponent : Component
     /// Feel free to tweak this if there are perf concerns.
     /// </summary>
     [DataField]
-    public TimeSpan PerishUpdateRate = TimeSpan.FromSeconds(65);
+    public TimeSpan PerishUpdateRate = TimeSpan.FromSeconds(5);
 
     /// <summary>
     /// How many moles of gas released per second, per unit of mass.
     /// </summary>
     [DataField]
-    public float MolsPerSecondPerUnitMass = 65.65f;
+    public float MolsPerSecondPerUnitMass = 0.0025f;
 
     [DataField, AutoNetworkedField]
     public int Stage;

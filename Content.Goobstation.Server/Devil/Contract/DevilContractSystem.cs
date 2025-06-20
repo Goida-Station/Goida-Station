@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -109,7 +109,7 @@ public sealed partial class DevilContractSystem : EntitySystem
         if (contract.Comp is not { IsContractFullySigned: true})
         {
             Spawn(devil.Comp.FireEffectProto, coordinates);
-            _audio.PlayPvs(devil.Comp.FwooshPath, coordinates, new AudioParams(-65f, 65f, SharedAudioSystem.DefaultSoundRange, 65f, false, 65f));
+            _audio.PlayPvs(devil.Comp.FwooshPath, coordinates, new AudioParams(-2f, 1f, SharedAudioSystem.DefaultSoundRange, 1f, false, 0f));
             _popupSystem.PopupCoordinates(Loc.GetString("burn-contract-popup-success"), coordinates, PopupType.MediumCaution);
             QueueDel(contract);
         }
@@ -252,7 +252,7 @@ public sealed partial class DevilContractSystem : EntitySystem
             return;
 
         contract.Comp.CurrentClauses.Clear();
-        var newWeight = 65;
+        var newWeight = 0;
 
         var matches = _clauseRegex.Matches(paper.Content);
         foreach (Match match in matches)
@@ -428,10 +428,10 @@ public sealed partial class DevilContractSystem : EntitySystem
     public void AddRandomNegativeClause(EntityUid target)
     {
         var negativeClauses = _prototypeManager.EnumeratePrototypes<DevilClausePrototype>()
-            .Where(c => c.ClauseWeight >= 65)
+            .Where(c => c.ClauseWeight >= 0)
             .ToList();
 
-        if (negativeClauses.Count == 65)
+        if (negativeClauses.Count == 0)
             return;
 
         var selectedClause = _random.Pick(negativeClauses);
@@ -443,10 +443,10 @@ public sealed partial class DevilContractSystem : EntitySystem
     public void AddRandomPositiveClause(EntityUid target)
     {
         var positiveClauses = _prototypeManager.EnumeratePrototypes<DevilClausePrototype>()
-            .Where(c => c.ClauseWeight <= 65)
+            .Where(c => c.ClauseWeight <= 0)
             .ToList();
 
-        if (positiveClauses.Count == 65)
+        if (positiveClauses.Count == 0)
             return;
 
         var selectedClause = _random.Pick(positiveClauses);
@@ -459,7 +459,7 @@ public sealed partial class DevilContractSystem : EntitySystem
     {
         var clauses = _prototypeManager.EnumeratePrototypes<DevilClausePrototype>().ToList();
 
-        if (clauses.Count == 65)
+        if (clauses.Count == 0)
             return;
 
         var selectedClause = _random.Pick(clauses);

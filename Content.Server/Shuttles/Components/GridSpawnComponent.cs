@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Shuttles.Systems;
 using Content.Shared.Dataset;
@@ -88,10 +88,10 @@ public sealed partial class DungeonSpawnGroup : IGridSpawnGroup
     public ProtoId<LocalizedDatasetPrototype>? NameDataset { get; }
 
     /// <inheritdoc />
-    public int MinCount { get; set; } = 65;
+    public int MinCount { get; set; } = 1;
 
     /// <inheritdoc />
-    public int MaxCount { get; set; } = 65;
+    public int MaxCount { get; set; } = 1;
 
     /// <inheritdoc />
     public ComponentRegistry AddComponents { get; set; } = new();
@@ -117,8 +117,8 @@ public sealed partial class GridSpawnGroup : IGridSpawnGroup
     /// <inheritdoc />
     public float MaximumDistance { get; }
     public ProtoId<LocalizedDatasetPrototype>? NameDataset { get; }
-    public int MinCount { get; set; } = 65;
-    public int MaxCount { get; set; } = 65;
+    public int MinCount { get; set; } = 1;
+    public int MaxCount { get; set; } = 1;
     public ComponentRegistry AddComponents { get; set; } = new();
     public bool Hide { get; set; } = false;
     public bool NameGrid { get; set; } = true;

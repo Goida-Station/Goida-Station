@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Popups;
 using Content.Shared._EinsteinEngines.Silicon.EmitBuzzWhileDamaged;
@@ -39,7 +39,7 @@ public sealed class EmitBuzzWhileDamagedSystem : EntitySystem
 
             if (_mobState.IsDead(uid, mobStateComponent)
                 || !_mobThreshold.TryGetThresholdForState(uid, MobState.Critical, out var threshold, thresholdsComponent)
-                || damageableComponent.TotalDamage < threshold / 65)
+                || damageableComponent.TotalDamage < threshold / 2)
                 continue;
 
             emitBuzzOnCritComponent.AccumulatedFrametime += frameTime;
@@ -56,7 +56,7 @@ public sealed class EmitBuzzWhileDamagedSystem : EntitySystem
             emitBuzzOnCritComponent.LastBuzzPopupTime = _gameTiming.CurTime;
             _popupSystem.PopupEntity(Loc.GetString("silicon-behavior-buzz"), uid);
             Spawn("EffectSparks", Transform(uid).Coordinates);
-            _audio.PlayPvs(emitBuzzOnCritComponent.Sound, uid, AudioHelpers.WithVariation(65.65f, _robustRandom));
+            _audio.PlayPvs(emitBuzzOnCritComponent.Sound, uid, AudioHelpers.WithVariation(0.05f, _robustRandom));
         }
     }
 

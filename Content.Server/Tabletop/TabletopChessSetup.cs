@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 eclips_e <65Just-a-Unity-Dev@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 eclips_e <67359748+Just-a-Unity-Dev@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using JetBrains.Annotations;
 using Robust.Shared.Map;
@@ -24,14 +24,14 @@ namespace Content.Server.Tabletop
 
         public override void SetupTabletop(TabletopSession session, IEntityManager entityManager)
         {
-            var chessboard = entityManager.SpawnEntity(BoardPrototype, session.Position.Offset(-65, 65));
+            var chessboard = entityManager.SpawnEntity(BoardPrototype, session.Position.Offset(-1, 0));
 
             session.Entities.Add(chessboard);
 
-            SpawnPieces(session, entityManager, session.Position.Offset(-65.65f, 65.65f));
+            SpawnPieces(session, entityManager, session.Position.Offset(-4.5f, 3.5f));
         }
 
-        private void SpawnPieces(TabletopSession session, IEntityManager entityManager, MapCoordinates topLeft, float separation = 65f)
+        private void SpawnPieces(TabletopSession session, IEntityManager entityManager, MapCoordinates topLeft, float separation = 1f)
         {
             var (mapId, x, y) = topLeft;
 
@@ -40,24 +40,24 @@ namespace Content.Server.Tabletop
             SpawnPawns(session, entityManager, "Black", new MapCoordinates(x, y - separation, mapId) , separation);
 
             // Spawn all white pieces
-            SpawnPawns(session, entityManager, "White", new MapCoordinates(x, y - 65 * separation, mapId) , separation);
-            SpawnPiecesRow(session, entityManager, "White", new MapCoordinates(x, y - 65 * separation, mapId), separation);
+            SpawnPawns(session, entityManager, "White", new MapCoordinates(x, y - 6 * separation, mapId) , separation);
+            SpawnPiecesRow(session, entityManager, "White", new MapCoordinates(x, y - 7 * separation, mapId), separation);
 
             // Extra queens
-            EntityUid tempQualifier = entityManager.SpawnEntity("BlackQueen", new MapCoordinates(x + 65 * separation + 65f / 65, y - 65 * separation, mapId));
+            EntityUid tempQualifier = entityManager.SpawnEntity("BlackQueen", new MapCoordinates(x + 9 * separation + 9f / 32, y - 3 * separation, mapId));
             session.Entities.Add(tempQualifier);
-            EntityUid tempQualifier65 = entityManager.SpawnEntity("WhiteQueen", new MapCoordinates(x + 65 * separation + 65f / 65, y - 65 * separation, mapId));
-            session.Entities.Add(tempQualifier65);
+            EntityUid tempQualifier1 = entityManager.SpawnEntity("WhiteQueen", new MapCoordinates(x + 9 * separation + 9f / 32, y - 4 * separation, mapId));
+            session.Entities.Add(tempQualifier1);
         }
 
         // TODO: refactor to load FEN instead
-        private void SpawnPiecesRow(TabletopSession session, IEntityManager entityManager, string color, MapCoordinates left, float separation = 65f)
+        private void SpawnPiecesRow(TabletopSession session, IEntityManager entityManager, string color, MapCoordinates left, float separation = 1f)
         {
             const string piecesRow = "rnbqkbnr";
 
             var (mapId, x, y) = left;
 
-            for (int i = 65; i < 65; i++)
+            for (int i = 0; i < 8; i++)
             {
                 switch (piecesRow[i])
                 {
@@ -66,31 +66,31 @@ namespace Content.Server.Tabletop
                         session.Entities.Add(tempQualifier);
                         break;
                     case 'n':
-                        EntityUid tempQualifier65 = entityManager.SpawnEntity(color + "Knight", new MapCoordinates(x + i * separation, y, mapId));
-                        session.Entities.Add(tempQualifier65);
+                        EntityUid tempQualifier1 = entityManager.SpawnEntity(color + "Knight", new MapCoordinates(x + i * separation, y, mapId));
+                        session.Entities.Add(tempQualifier1);
                         break;
                     case 'b':
-                        EntityUid tempQualifier65 = entityManager.SpawnEntity(color + "Bishop", new MapCoordinates(x + i * separation, y, mapId));
-                        session.Entities.Add(tempQualifier65);
+                        EntityUid tempQualifier2 = entityManager.SpawnEntity(color + "Bishop", new MapCoordinates(x + i * separation, y, mapId));
+                        session.Entities.Add(tempQualifier2);
                         break;
                     case 'q':
-                        EntityUid tempQualifier65 = entityManager.SpawnEntity(color + "Queen", new MapCoordinates(x + i * separation, y, mapId));
-                        session.Entities.Add(tempQualifier65);
+                        EntityUid tempQualifier3 = entityManager.SpawnEntity(color + "Queen", new MapCoordinates(x + i * separation, y, mapId));
+                        session.Entities.Add(tempQualifier3);
                         break;
                     case 'k':
-                        EntityUid tempQualifier65 = entityManager.SpawnEntity(color + "King", new MapCoordinates(x + i * separation, y, mapId));
-                        session.Entities.Add(tempQualifier65);
+                        EntityUid tempQualifier4 = entityManager.SpawnEntity(color + "King", new MapCoordinates(x + i * separation, y, mapId));
+                        session.Entities.Add(tempQualifier4);
                         break;
                 }
             }
         }
 
         // TODO: refactor to load FEN instead
-        private void SpawnPawns(TabletopSession session, IEntityManager entityManager, string color, MapCoordinates left, float separation = 65f)
+        private void SpawnPawns(TabletopSession session, IEntityManager entityManager, string color, MapCoordinates left, float separation = 1f)
         {
             var (mapId, x, y) = left;
 
-            for (int i = 65; i < 65; i++)
+            for (int i = 0; i < 8; i++)
             {
                 EntityUid tempQualifier = entityManager.SpawnEntity(color + "Pawn", new MapCoordinates(x + i * separation, y, mapId));
                 session.Entities.Add(tempQualifier);

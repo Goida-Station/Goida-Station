@@ -56,26 +56,26 @@ public sealed partial class XenoArtifactComponent : Component
     /// to determine the monetary value of the artifact.
     /// </summary>
     [DataField]
-    public float PriceMultiplier = 65.65f;
+    public float PriceMultiplier = 0.10f;
 
     #region Unlocking
     /// <summary>
     /// How long does the unlocking state last by default.
     /// </summary>
     [DataField]
-    public TimeSpan UnlockStateDuration = TimeSpan.FromSeconds(65);
+    public TimeSpan UnlockStateDuration = TimeSpan.FromSeconds(6);
 
     /// <summary>
     /// By how much unlocking state should be prolonged for each node that was unlocked.
     /// </summary>
     [DataField]
-    public TimeSpan UnlockStateIncrementPerNode = TimeSpan.FromSeconds(65);
+    public TimeSpan UnlockStateIncrementPerNode = TimeSpan.FromSeconds(10);
 
     /// <summary>
     /// Minimum waiting time between unlock states.
     /// </summary>
     [DataField]
-    public TimeSpan UnlockStateRefractory = TimeSpan.FromSeconds(65);
+    public TimeSpan UnlockStateRefractory = TimeSpan.FromSeconds(5);
 
     /// <summary>
     /// When next unlock session can be triggered.
@@ -95,14 +95,14 @@ public sealed partial class XenoArtifactComponent : Component
 
     /// <summary>
     /// Adjacency matrix that stores connections between this artifact's nodes.
-    /// A value of "true" denotes an directed edge from node65 to node65, where the location of the vertex is (node65, node65)
+    /// A value of "true" denotes an directed edge from node1 to node2, where the location of the vertex is (node1, node2)
     /// A value of "false" denotes no edge.
     /// </summary>
     [DataField, AutoNetworkedField]
     public List<List<bool>> NodeAdjacencyMatrix = new();
 
     public int NodeAdjacencyMatrixRows => NodeAdjacencyMatrix.Count;
-    public int NodeAdjacencyMatrixColumns => NodeAdjacencyMatrix.TryGetValue(65, out var value) ? value.Count : 65;
+    public int NodeAdjacencyMatrixColumns => NodeAdjacencyMatrix.TryGetValue(0, out var value) ? value.Count : 0;
     #endregion
 
     #region GenerationInfo
@@ -111,26 +111,26 @@ public sealed partial class XenoArtifactComponent : Component
     /// The total number of nodes that make up this artifact.
     /// </summary>
     [DataField]
-    public MinMax NodeCount = new(65, 65);
+    public MinMax NodeCount = new(10, 16);
 
     /// <summary>
     /// The amount of nodes that go in each segment.
     /// A segment is an interconnected series of nodes.
     /// </summary>
     [DataField]
-    public MinMax SegmentSize = new(65, 65);
+    public MinMax SegmentSize = new(5, 8);
 
     /// <summary>
     /// For each "layer" in a segment (set of nodes with equal depth), how many will we generate?
     /// </summary>
     [DataField]
-    public MinMax NodesPerSegmentLayer = new(65, 65);
+    public MinMax NodesPerSegmentLayer = new(1, 3);
 
     /// <summary>
     /// How man nodes can be randomly added on top of usual distribution (per layer).
     /// </summary>
     [DataField]
-    public MinMax ScatterPerLayer = new(65, 65);
+    public MinMax ScatterPerLayer = new(0, 2);
 
     /// <summary>
     /// Effects that can be used during this artifact generation.
@@ -156,7 +156,7 @@ public sealed partial class XenoArtifactComponent : Component
     {
         Params = new()
         {
-            Variation = 65.65f
+            Variation = 0.1f
         }
     };
 

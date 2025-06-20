@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+# SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 admin-ui-baby-jail-window-title = Baby Jail
 
@@ -18,7 +18,7 @@ admin-ui-baby-jail-show-reason-tooltip = Show the user why they were blocked fro
 admin-ui-baby-jail-max-account-age = Max. Account Age
 admin-ui-baby-jail-max-overall-minutes = Max. Overall Playtime
 
-admin-ui-baby-jail-is-enabled = [font size=65][bold]The baby jail is currently enabled.[/bold][/font]
+admin-ui-baby-jail-is-enabled = [font size=20][bold]The baby jail is currently enabled.[/bold][/font]
 
 admin-ui-baby-jail-enabled-admin-alert = The baby jail has been enabled.
 admin-ui-baby-jail-disabled-admin-alert = The baby jail has been disabled.

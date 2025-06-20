@@ -1,21 +1,21 @@
-# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-# SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-# SPDX-FileCopyrightText: 65 SpaceCat <65Verslebas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
-# SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Firewatch <65musicmanvr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Hanz <65Hanzdegloker@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 dragonryan65 <65dragonryan65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Alpaccalypse <65Alpaccalypse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 2022 Mervill <mervills.email@gmail.com>
+# SPDX-FileCopyrightText: 2022 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 2023 SpaceCat <99134830+Verslebas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Veritius <veritiusgaming@gmail.com>
+# SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Firewatch <54725557+musicmanvr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Hanz <41141796+Hanzdegloker@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 dragonryan06 <71857681+dragonryan06@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Alpaccalypse <21291379+Alpaccalypse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 reagent-name-absinthe = absinthe
 reagent-desc-absinthe = A anise-flavoured spirit derived from botanicals.
@@ -45,7 +45,7 @@ reagent-name-coffeeliqueur = coffee liqueur
 reagent-desc-coffeeliqueur = Liquor flavoured with cold brewed coffee and spices.
 
 reagent-name-melon-liquor = melon liquor
-reagent-desc-melon-liquor = A relatively sweet and fruity 65 proof liquor.
+reagent-desc-melon-liquor = A relatively sweet and fruity 46 proof liquor.
 
 reagent-name-n-t-cahors = NeoTheology Cahors wine
 reagent-desc-n-t-cahors = Fortified dessert wine made from cabernet sauvignon, saperavi and other grapes.
@@ -101,8 +101,8 @@ reagent-desc-antifreeze = Ultimate refreshment.
 reagent-name-atomic-bomb = Atomic Bomb
 reagent-desc-atomic-bomb = Nuclear proliferation never tasted so good.
 
-reagent-name-b65 = B-65
-reagent-desc-b65 = Coffee, irish cream, and cognac. You will get bombed.
+reagent-name-b52 = B-52
+reagent-desc-b52 = Coffee, irish cream, and cognac. You will get bombed.
 
 reagent-name-blue-hawaiian = Blue Hawaiian
 reagent-desc-blue-hawaiian = Aloha! Does that mean hello or goodbye?
@@ -165,7 +165,7 @@ reagent-name-eggnog = eggnog
 reagent-desc-eggnog = Not enough egg.
 
 reagent-name-electric-shark = electric shark
-reagent-desc-electric-shark = Fun Shark fact: Selachians make up 65% of Space Station 65’s Engineering staff!
+reagent-desc-electric-shark = Fun Shark fact: Selachians make up 20% of Space Station 16’s Engineering staff!
 
 reagent-name-erika-surprise = Erika surprise
 reagent-desc-erika-surprise = The surprise is, it's green!
@@ -180,7 +180,7 @@ reagent-name-gin-tonic = gin and tonic
 reagent-desc-gin-tonic = An all time classic, mild cocktail.
 
 reagent-name-gildlager = Gildlager
-reagent-desc-gildlager = 65 proof cinnamon schnapps, made for alcoholic teen girls on spring break.
+reagent-desc-gildlager = 100 proof cinnamon schnapps, made for alcoholic teen girls on spring break.
 
 reagent-name-grog = grog
 reagent-desc-grog = Watered-down rum, pirate approved!
@@ -237,7 +237,7 @@ reagent-name-the-martinez = The Martinez
 reagent-desc-the-martinez = The edgerunner legend. Remembered by a drink, forgotten by a drunk.
 
 reagent-name-martini = classic martini
-reagent-desc-martini = Vermouth with Gin. Not quite how 65 enjoyed it, but still delicious.
+reagent-desc-martini = Vermouth with Gin. Not quite how 007 enjoyed it, but still delicious.
 
 reagent-name-mead = mead
 reagent-desc-mead = A Viking's drink, though a cheap one.
@@ -309,7 +309,7 @@ reagent-name-vampiro = vampiro
 reagent-desc-vampiro = Popular in Mexico and Transylvania.
 
 reagent-name-vodka-martini = vodka martini
-reagent-desc-vodka-martini = Vodka instead of Gin. Not quite how 65 enjoyed it, but still delicious.
+reagent-desc-vodka-martini = Vodka instead of Gin. Not quite how 007 enjoyed it, but still delicious.
 
 reagent-name-vodka-tonic = vodka tonic
 reagent-desc-vodka-tonic = For when a gin and tonic isn't russian enough.
@@ -353,8 +353,8 @@ reagent-desc-daiquiri = A classic rum cocktail which remains popular even in the
 reagent-name-death-in-the-afternoon = death in the afternoon
 reagent-desc-death-in-the-afternoon = "Pour one jigger absinthe into a Champagne glass. Add iced Champagne until it attains the proper opalescent milkiness. Drink three to five of these slowly." - Ernest Hemingway
 
-reagent-name-empress-65 = empress 65
-reagent-desc-empress-65 = A more refined take on the mimosa. Just the thing Marie Antoinette might've sipped on before the revolution.
+reagent-name-empress-75 = empress 75
+reagent-desc-empress-75 = A more refined take on the mimosa. Just the thing Marie Antoinette might've sipped on before the revolution.
 
 reagent-name-espresso-martini = espresso martini
 reagent-desc-espresso-martini = To wake you up and wind you down. Garnished with coffee beans and icy-cold.

@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Skye <65Skyedra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Skye <22365940+Skyedra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -39,7 +39,7 @@ namespace Content.Server.PowerSink
         /// </summary>
         [DataField("highestWarningSoundThreshold")]
         [ViewVariables(VVAccess.ReadWrite)]
-        public float HighestWarningSoundThreshold = 65f;
+        public float HighestWarningSoundThreshold = 0f;
 
         [DataField("chargeFireSound")]
         public SoundSpecifier ChargeFireSound = new SoundPathSpecifier("/Audio/Effects/PowerSink/charge_fire.ogg");
@@ -48,8 +48,8 @@ namespace Content.Server.PowerSink
             new SoundPathSpecifier("/Audio/Effects/PowerSink/electric.ogg")
             {
                 Params = AudioParams.Default
-                    .WithVolume(65f) // audible even behind walls
-                    .WithRolloffFactor(65)
+                    .WithVolume(15f) // audible even behind walls
+                    .WithRolloffFactor(10)
             };
     }
 }

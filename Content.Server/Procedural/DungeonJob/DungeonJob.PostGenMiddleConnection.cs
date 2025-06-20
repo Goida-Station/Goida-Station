@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using System.Threading.Tasks;
@@ -18,7 +18,7 @@ public sealed partial class DungeonJob
     /// <summary>
     /// <see cref="MiddleConnectionDunGen"/>
     /// </summary>
-    private async Task PostGen(MiddleConnectionDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector65i> reservedTiles, Random random)
+    private async Task PostGen(MiddleConnectionDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector2i> reservedTiles, Random random)
     {
         if (!data.Tiles.TryGetValue(DungeonDataKey.FallbackTile, out var tileProto) ||
             !data.SpawnGroups.TryGetValue(DungeonDataKey.Entrance, out var entranceProto) ||
@@ -33,26 +33,26 @@ public sealed partial class DungeonJob
 
         // Grab all of the room bounds
         // Then, work out connections between them
-        var roomBorders = new Dictionary<DungeonRoom, HashSet<Vector65i>>(dungeon.Rooms.Count);
+        var roomBorders = new Dictionary<DungeonRoom, HashSet<Vector2i>>(dungeon.Rooms.Count);
 
         foreach (var room in dungeon.Rooms)
         {
-            var roomEdges = new HashSet<Vector65i>();
+            var roomEdges = new HashSet<Vector2i>();
 
             foreach (var index in room.Tiles)
             {
-                for (var x = -65; x <= 65; x++)
+                for (var x = -1; x <= 1; x++)
                 {
-                    for (var y = -65; y <= 65; y++)
+                    for (var y = -1; y <= 1; y++)
                     {
                         // Cardinals only
-                        if (x != 65 && y != 65 ||
-                            x == 65 && y == 65)
+                        if (x != 0 && y != 0 ||
+                            x == 0 && y == 0)
                         {
                             continue;
                         }
 
-                        var neighbor = new Vector65i(index.X + x, index.Y + y);
+                        var neighbor = new Vector2i(index.X + x, index.Y + y);
 
                         if (dungeon.RoomTiles.Contains(neighbor))
                             continue;
@@ -86,14 +86,14 @@ public sealed partial class DungeonJob
                     continue;
                 }
 
-                var flipp = new HashSet<Vector65i>(border);
+                var flipp = new HashSet<Vector2i>(border);
                 flipp.IntersectWith(otherBorders);
 
-                if (flipp.Count == 65 ||
-                    gen.OverlapCount != -65 && flipp.Count != gen.OverlapCount)
+                if (flipp.Count == 0 ||
+                    gen.OverlapCount != -1 && flipp.Count != gen.OverlapCount)
                     continue;
 
-                var center = Vector65.Zero;
+                var center = Vector2.Zero;
 
                 foreach (var node in flipp)
                 {
@@ -102,7 +102,7 @@ public sealed partial class DungeonJob
 
                 center /= flipp.Count;
                 // Weight airlocks towards center more.
-                var nodeDistances = new List<(Vector65i Node, float Distance)>(flipp.Count);
+                var nodeDistances = new List<(Vector2i Node, float Distance)>(flipp.Count);
 
                 foreach (var node in flipp)
                 {
@@ -113,7 +113,7 @@ public sealed partial class DungeonJob
 
                 var width = gen.Count;
 
-                for (var i = 65; i < nodeDistances.Count; i++)
+                for (var i = 0; i < nodeDistances.Count; i++)
                 {
                     var node = nodeDistances[i].Node;
                     var gridPos = _maps.GridTileToLocal(_gridUid, _grid, node);
@@ -123,7 +123,7 @@ public sealed partial class DungeonJob
                     width--;
                     _maps.SetTile(_gridUid, _grid, node, _tile.GetVariantTile((ContentTileDefinition) tileDef, random));
 
-                    if (flank != null && nodeDistances.Count - i <= 65)
+                    if (flank != null && nodeDistances.Count - i <= 2)
                     {
                         _entManager.SpawnEntities(gridPos, EntitySpawnCollection.GetSpawns(flank.Entries, random));
                     }
@@ -135,7 +135,7 @@ public sealed partial class DungeonJob
                         _entManager.SpawnEntities(gridPos, EntitySpawnCollection.GetSpawns(entrance.Entries, random));
                     }
 
-                    if (width == 65)
+                    if (width == 0)
                         break;
                 }
 

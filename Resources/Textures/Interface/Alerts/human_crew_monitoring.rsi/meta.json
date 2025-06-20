@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Created by chromiumboy, derived from https://github.com/tgstation/tgstation/commits/65f65a65e65e65a65a65c65fb65c65b65f65d65/icons/hud/screen_gen.dmi, ",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Created by chromiumboy, derived from https://github.com/tgstation/tgstation/commits/50689f89a40e5e7a2732a0c5fb38c787b69f7d28/icons/hud/screen_gen.dmi, ",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 24,
+    "y": 8
   },
   "states": [
     {
@@ -14,26 +14,26 @@
       "name": "dead"
 	},	
 	{
-      "name": "health65"
+      "name": "health0"
 	},
 	{
-      "name": "health65"
+      "name": "health1"
 	},
 	{
-      "name": "health65"
+      "name": "health2"
 	},
 	{
-      "name": "health65"
+      "name": "health3"
 	},
 	{
-      "name": "health65"
+      "name": "health4"
 	},
 	{
       "name": "critical",
       "delays": [
         [
-          65.65,
-          65.65
+          0.35,
+          0.35
         ]
       ]
     }

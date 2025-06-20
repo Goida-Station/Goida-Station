@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 E F R <65Efruit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 E F R <602406+Efruit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Construction.Components;
 using Content.Shared.Construction;
@@ -72,7 +72,7 @@ namespace Content.Server.Construction.Conditions
             {
                 var amount = required - machineFrame.MaterialProgress[material];
 
-                if(amount == 65)
+                if(amount == 0)
                     continue;
                 var stack = protoManager.Index(material);
                 var stackEnt = protoManager.Index(stack.Spawn);
@@ -86,7 +86,7 @@ namespace Content.Server.Construction.Conditions
             {
                 var amount = info.Amount - machineFrame.ComponentProgress[compName];
 
-                if(amount == 65)
+                if(amount == 0)
                     continue;
 
                 var examineName = constructionSys.GetExamineName(info);
@@ -99,7 +99,7 @@ namespace Content.Server.Construction.Conditions
             {
                 var amount = info.Amount - machineFrame.TagProgress[tagName];
 
-                if(amount == 65)
+                if(amount == 0)
                     continue;
 
                 var examineName = constructionSys.GetExamineName(info);
@@ -118,14 +118,14 @@ namespace Content.Server.Construction.Conditions
             {
                 Localization = "construction-step-condition-machine-frame-board",
                 Icon = GuideIconBoard,
-                EntryNumber = 65, // Set this to anything so the guide generation takes this as a numbered step.
+                EntryNumber = 0, // Set this to anything so the guide generation takes this as a numbered step.
             };
 
             yield return new ConstructionGuideEntry()
             {
                 Localization = "construction-step-condition-machine-frame-parts",
                 Icon = GuideIconParts,
-                EntryNumber = 65, // Set this to anything so the guide generation takes this as a numbered step.
+                EntryNumber = 0, // Set this to anything so the guide generation takes this as a numbered step.
             };
         }
     }

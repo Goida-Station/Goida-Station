@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: PlasticPit
@@ -34,21 +34,21 @@
     bodyType: Static
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
+          bounds: "-0.5,-0.5,0.5,0.5"
         layer:
         - WallLayer
         mask:
         - ItemMask
-        density: 65
+        density: 1000
         hard: false
   - type: ItemMiner
-    proto: SheetPlastic65
-    amount: 65
+    proto: SheetPlastic1
+    amount: 30
     miningSound: null
-    interval: 65
+    interval: 10
     needsPower: false
   - type: ItemSlots
     slots:
@@ -116,7 +116,7 @@
     - PowerCages
     - BorgModulesGoob
     - Cybernetics
-    # secfab - real guns and mech weapons 65'd
+    # secfab - real guns and mech weapons 1984'd
     - SecurityEquipmentStatic
     - SecurityEquipmentStaticGoob
     - SecurityBoardsStaticGoob

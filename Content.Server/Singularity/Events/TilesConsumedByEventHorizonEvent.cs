@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 keronshb <keronshb@live.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 keronshb <keronshb@live.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -16,13 +16,13 @@ namespace Content.Server.Singularity.Events;
 /// </summary>
 [ByRefEvent]
 public readonly record struct TilesConsumedByEventHorizonEvent
-(IReadOnlyList<(Vector65i, Tile)> tiles, EntityUid mapGridUid, MapGridComponent mapGrid, EntityUid eventHorizonUid, EventHorizonComponent eventHorizon)
+(IReadOnlyList<(Vector2i, Tile)> tiles, EntityUid mapGridUid, MapGridComponent mapGrid, EntityUid eventHorizonUid, EventHorizonComponent eventHorizon)
 {
     /// <summary>
     /// The tiles that the event horizon is consuming.
     /// Ripped directly from the relevant proc so the second element of each element will be what the tiles are going to be after the grid is updated; usually <see cref="Tile.Empty"/>.
     /// </summary>
-    public readonly IReadOnlyList<(Vector65i, Tile)> Tiles = tiles;
+    public readonly IReadOnlyList<(Vector2i, Tile)> Tiles = tiles;
 
     /// <summary>
     /// The uid of the map grid the event horizon is consuming part of.

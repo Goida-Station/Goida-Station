@@ -1,12 +1,12 @@
 <!--
-SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 DEATHB65DEFEAT <65DEATHB65DEFEAT@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 DEATHB4DEFEAT <77995199+DEATHB4DEFEAT@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<BoxContainer xmlns="https://spacestation65.io"
+<BoxContainer xmlns="https://spacestation14.io"
               Orientation="Vertical"
               HorizontalExpand="True"
               VerticalExpand="True">
@@ -21,12 +21,12 @@ SPDX-License-Identifier: MIT
 
     <!-- Item list -->
     <BoxContainer Name="MarkingSelectorContainer" Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True">
-        <ScrollContainer MinHeight="65" VerticalExpand="True" HorizontalExpand="True">
+        <ScrollContainer MinHeight="500" VerticalExpand="True" HorizontalExpand="True">
             <ItemList Name="MarkingList" VerticalExpand="True" />
         </ScrollContainer>
 
         <!-- Color sliders -->
-        <ScrollContainer MinHeight="65" HorizontalExpand="True">
+        <ScrollContainer MinHeight="200" HorizontalExpand="True">
             <BoxContainer Name="ColorSelectorContainer" HorizontalExpand="True" />
         </ScrollContainer>
     </BoxContainer>

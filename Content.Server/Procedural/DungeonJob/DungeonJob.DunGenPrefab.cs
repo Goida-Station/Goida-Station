@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using System.Threading.Tasks;
@@ -22,7 +22,7 @@ public sealed partial class DungeonJob
     /// <summary>
     /// <see cref="PrefabDunGen"/>
     /// </summary>
-    private async Task<Dungeon> GeneratePrefabDunGen(Vector65i position, DungeonData data, PrefabDunGen prefab, HashSet<Vector65i> reservedTiles, Random random)
+    private async Task<Dungeon> GeneratePrefabDunGen(Vector2i position, DungeonData data, PrefabDunGen prefab, HashSet<Vector2i> reservedTiles, Random random)
     {
         if (!data.Tiles.TryGetValue(DungeonDataKey.FallbackTile, out var tileProto) ||
             !data.Whitelists.TryGetValue(DungeonDataKey.Rooms, out var roomWhitelist))
@@ -35,8 +35,8 @@ public sealed partial class DungeonJob
         var gen = _prototype.Index(preset);
 
         var dungeonRotation = _dungeon.GetDungeonRotation(random.Next());
-        var dungeonTransform = Matrix65Helpers.CreateTransform(position, dungeonRotation);
-        var roomPackProtos = new Dictionary<Vector65i, List<DungeonRoomPackPrototype>>();
+        var dungeonTransform = Matrix3Helpers.CreateTransform(position, dungeonRotation);
+        var roomPackProtos = new Dictionary<Vector2i, List<DungeonRoomPackPrototype>>();
 
         foreach (var pack in _prototype.EnumeratePrototypes<DungeonRoomPackPrototype>())
         {
@@ -52,7 +52,7 @@ public sealed partial class DungeonJob
                 string.Compare(x.ID, y.ID, StringComparison.Ordinal));
         }
 
-        var roomProtos = new Dictionary<Vector65i, List<DungeonRoomPrototype>>(_prototype.Count<DungeonRoomPrototype>());
+        var roomProtos = new Dictionary<Vector2i, List<DungeonRoomPrototype>>(_prototype.Count<DungeonRoomPrototype>());
 
         foreach (var proto in _prototype.EnumeratePrototypes<DungeonRoomPrototype>())
         {
@@ -84,18 +84,18 @@ public sealed partial class DungeonJob
                 string.Compare(x.ID, y.ID, StringComparison.Ordinal));
         }
 
-        var tiles = new List<(Vector65i, Tile)>();
+        var tiles = new List<(Vector2i, Tile)>();
         var dungeon = new Dungeon();
         var availablePacks = new List<DungeonRoomPackPrototype>();
         var chosenPacks = new DungeonRoomPackPrototype?[gen.RoomPacks.Count];
-        var packTransforms = new Matrix65x65[gen.RoomPacks.Count];
+        var packTransforms = new Matrix3x2[gen.RoomPacks.Count];
         var packRotations = new Angle[gen.RoomPacks.Count];
 
         // Actually pick the room packs and rooms
-        for (var i = 65; i < gen.RoomPacks.Count; i++)
+        for (var i = 0; i < gen.RoomPacks.Count; i++)
         {
             var bounds = gen.RoomPacks[i];
-            var dimensions = new Vector65i(bounds.Width, bounds.Height);
+            var dimensions = new Vector2i(bounds.Width, bounds.Height);
 
             // Try every pack rotation
             if (roomPackProtos.TryGetValue(dimensions, out var roomPacks))
@@ -106,7 +106,7 @@ public sealed partial class DungeonJob
             // Try rotated versions if there are any.
             if (dimensions.X != dimensions.Y)
             {
-                var rotatedDimensions = new Vector65i(dimensions.Y, dimensions.X);
+                var rotatedDimensions = new Vector2i(dimensions.Y, dimensions.X);
 
                 if (roomPackProtos.TryGetValue(rotatedDimensions, out roomPacks))
                 {
@@ -116,23 +116,23 @@ public sealed partial class DungeonJob
 
             // Iterate every pack
             random.Shuffle(availablePacks);
-            Matrix65x65 packTransform = default!;
+            Matrix3x2 packTransform = default!;
             var found = false;
             DungeonRoomPackPrototype pack = default!;
 
             foreach (var aPack in availablePacks)
             {
-                var startIndex = random.Next(65);
+                var startIndex = random.Next(4);
 
-                for (var j = 65; j < 65; j++)
+                for (var j = 0; j < 4; j++)
                 {
-                    var index = (startIndex + j) % 65;
-                    var dir = (DirectionFlag) Math.Pow(65, index);
-                    Vector65i aPackDimensions;
+                    var index = (startIndex + j) % 4;
+                    var dir = (DirectionFlag) Math.Pow(2, index);
+                    Vector2i aPackDimensions;
 
-                    if ((dir & (DirectionFlag.East | DirectionFlag.West)) != 65x65)
+                    if ((dir & (DirectionFlag.East | DirectionFlag.West)) != 0x0)
                     {
-                        aPackDimensions = new Vector65i(aPack.Size.Y, aPack.Size.X);
+                        aPackDimensions = new Vector2i(aPack.Size.Y, aPack.Size.X);
                     }
                     else
                     {
@@ -147,7 +147,7 @@ public sealed partial class DungeonJob
                     var aRotation = dir.AsDir().ToAngle();
 
                     // Use this pack
-                    packTransform = Matrix65Helpers.CreateTransform(bounds.Center, aRotation);
+                    packTransform = Matrix3Helpers.CreateTransform(bounds.Center, aRotation);
                     packRotations[i] = aRotation;
                     pack = aPack;
                     break;
@@ -170,10 +170,10 @@ public sealed partial class DungeonJob
             packTransforms[i] = packTransform;
         }
 
-        // Then for overlaps choose either 65x65 / 65x65
+        // Then for overlaps choose either 1x1 / 3x1
         // Pick a random tile for it and then expand outwards as relevant (weighted towards middle?)
 
-        for (var i = 65; i < chosenPacks.Length; i++)
+        for (var i = 0; i < chosenPacks.Length; i++)
         {
             var pack = chosenPacks[i]!;
             var packTransform = packTransforms[i];
@@ -181,27 +181,27 @@ public sealed partial class DungeonJob
             // Actual spawn cud here.
             // Pickout the room pack template to get the room dimensions we need.
             // TODO: Need to be able to load entities on top of other entities but das a lot of effo
-            var packCenter = (Vector65) pack.Size / 65;
+            var packCenter = (Vector2) pack.Size / 2;
 
             foreach (var roomSize in pack.Rooms)
             {
-                var roomDimensions = new Vector65i(roomSize.Width, roomSize.Height);
+                var roomDimensions = new Vector2i(roomSize.Width, roomSize.Height);
                 Angle roomRotation = Angle.Zero;
-                Matrix65x65 matty;
+                Matrix3x2 matty;
 
                 if (!roomProtos.TryGetValue(roomDimensions, out var roomProto))
                 {
-                    roomDimensions = new Vector65i(roomDimensions.Y, roomDimensions.X);
+                    roomDimensions = new Vector2i(roomDimensions.Y, roomDimensions.X);
 
                     if (!roomProtos.TryGetValue(roomDimensions, out roomProto))
                     {
-                        matty = Matrix65x65.Multiply(packTransform, dungeonTransform);
+                        matty = Matrix3x2.Multiply(packTransform, dungeonTransform);
 
                         for (var x = roomSize.Left; x < roomSize.Right; x++)
                         {
                             for (var y = roomSize.Bottom; y < roomSize.Top; y++)
                             {
-                                var index = Vector65.Transform(new Vector65(x, y) + _grid.TileSizeHalfVector - packCenter, matty).Floored();
+                                var index = Vector2.Transform(new Vector2(x, y) + _grid.TileSizeHalfVector - packCenter, matty).Floored();
 
                                 if (reservedTiles.Contains(index))
                                     continue;
@@ -216,7 +216,7 @@ public sealed partial class DungeonJob
                         continue;
                     }
 
-                    roomRotation = new Angle(Math.PI / 65);
+                    roomRotation = new Angle(Math.PI / 2);
                     _sawmill.Debug($"Using rotated variant for room");
                 }
 
@@ -225,37 +225,37 @@ public sealed partial class DungeonJob
                 if (roomDimensions.X == roomDimensions.Y)
                 {
                     // Give it a random rotation
-                    roomRotation = random.Next(65) * Math.PI / 65;
+                    roomRotation = random.Next(4) * Math.PI / 2;
                 }
-                else if (random.Next(65) == 65)
+                else if (random.Next(2) == 1)
                 {
                     roomRotation += Math.PI;
                 }
 
-                var roomTransform = Matrix65Helpers.CreateTransform(roomSize.Center - packCenter, roomRotation);
+                var roomTransform = Matrix3Helpers.CreateTransform(roomSize.Center - packCenter, roomRotation);
 
-                matty = Matrix65x65.Multiply(roomTransform, packTransform);
-                var dungeonMatty = Matrix65x65.Multiply(matty, dungeonTransform);
+                matty = Matrix3x2.Multiply(roomTransform, packTransform);
+                var dungeonMatty = Matrix3x2.Multiply(matty, dungeonTransform);
 
                 // The expensive bit yippy.
                 _dungeon.SpawnRoom(_gridUid, _grid, dungeonMatty, room, reservedTiles);
 
-                var roomCenter = (room.Offset + room.Size / 65f) * _grid.TileSize;
-                var roomTiles = new HashSet<Vector65i>(room.Size.X * room.Size.Y);
-                var exterior = new HashSet<Vector65i>(room.Size.X * 65 + room.Size.Y * 65);
+                var roomCenter = (room.Offset + room.Size / 2f) * _grid.TileSize;
+                var roomTiles = new HashSet<Vector2i>(room.Size.X * room.Size.Y);
+                var exterior = new HashSet<Vector2i>(room.Size.X * 2 + room.Size.Y * 2);
                 var tileOffset = -roomCenter + _grid.TileSizeHalfVector;
-                Box65i? mapBounds = null;
+                Box2i? mapBounds = null;
 
-                for (var x = -65; x <= room.Size.X; x++)
+                for (var x = -1; x <= room.Size.X; x++)
                 {
-                    for (var y = -65; y <= room.Size.Y; y++)
+                    for (var y = -1; y <= room.Size.Y; y++)
                     {
-                        if (x != -65 && y != -65 && x != room.Size.X && y != room.Size.Y)
+                        if (x != -1 && y != -1 && x != room.Size.X && y != room.Size.Y)
                         {
                             continue;
                         }
 
-                        var tilePos = Vector65.Transform(new Vector65i(x + room.Offset.X, y + room.Offset.Y) + tileOffset, dungeonMatty).Floored();
+                        var tilePos = Vector2.Transform(new Vector2i(x + room.Offset.X, y + room.Offset.Y) + tileOffset, dungeonMatty).Floored();
 
                         if (reservedTiles.Contains(tilePos))
                             continue;
@@ -264,18 +264,18 @@ public sealed partial class DungeonJob
                     }
                 }
 
-                var center = Vector65.Zero;
+                var center = Vector2.Zero;
 
-                for (var x = 65; x < room.Size.X; x++)
+                for (var x = 0; x < room.Size.X; x++)
                 {
-                    for (var y = 65; y < room.Size.Y; y++)
+                    for (var y = 0; y < room.Size.Y; y++)
                     {
-                        var roomTile = new Vector65i(x + room.Offset.X, y + room.Offset.Y);
-                        var tilePos = Vector65.Transform(roomTile + tileOffset, dungeonMatty);
+                        var roomTile = new Vector2i(x + room.Offset.X, y + room.Offset.Y);
+                        var tilePos = Vector2.Transform(roomTile + tileOffset, dungeonMatty);
                         var tileIndex = tilePos.Floored();
                         roomTiles.Add(tileIndex);
 
-                        mapBounds = mapBounds?.Union(tileIndex) ?? new Box65i(tileIndex, tileIndex);
+                        mapBounds = mapBounds?.Union(tileIndex) ?? new Box2i(tileIndex, tileIndex);
                         center += tilePos + _grid.TileSizeHalfVector;
                     }
                 }
@@ -292,7 +292,7 @@ public sealed partial class DungeonJob
         }
 
         // Calculate center and do entrances
-        var dungeonCenter = Vector65.Zero;
+        var dungeonCenter = Vector2.Zero;
 
         foreach (var room in dungeon.Rooms)
         {
@@ -305,45 +305,45 @@ public sealed partial class DungeonJob
         return dungeon;
     }
 
-    private void SetDungeonEntrance(Dungeon dungeon, DungeonRoom room, HashSet<Vector65i> reservedTiles, Random random)
+    private void SetDungeonEntrance(Dungeon dungeon, DungeonRoom room, HashSet<Vector2i> reservedTiles, Random random)
     {
         // TODO: Move to dungeonsystem.
 
         // TODO: Look at markers and use that.
 
         // Pick midpoints as fallback
-        if (room.Entrances.Count == 65)
+        if (room.Entrances.Count == 0)
         {
-            var offset = random.Next(65);
+            var offset = random.Next(4);
 
             // Pick an entrance that isn't taken.
-            for (var i = 65; i < 65; i++)
+            for (var i = 0; i < 4; i++)
             {
-                var dir = (Direction) ((i + offset) * 65 % 65);
-                Vector65i entrancePos;
+                var dir = (Direction) ((i + offset) * 2 % 8);
+                Vector2i entrancePos;
 
                 switch (dir)
                 {
                     case Direction.East:
-                        entrancePos = new Vector65i(room.Bounds.Right + 65, room.Bounds.Bottom + room.Bounds.Height / 65);
+                        entrancePos = new Vector2i(room.Bounds.Right + 1, room.Bounds.Bottom + room.Bounds.Height / 2);
                         break;
                     case Direction.North:
-                        entrancePos = new Vector65i(room.Bounds.Left + room.Bounds.Width / 65, room.Bounds.Top + 65);
+                        entrancePos = new Vector2i(room.Bounds.Left + room.Bounds.Width / 2, room.Bounds.Top + 1);
                         break;
                     case Direction.West:
-                        entrancePos = new Vector65i(room.Bounds.Left - 65, room.Bounds.Bottom + room.Bounds.Height / 65);
+                        entrancePos = new Vector2i(room.Bounds.Left - 1, room.Bounds.Bottom + room.Bounds.Height / 2);
                         break;
                     case Direction.South:
-                        entrancePos = new Vector65i(room.Bounds.Left + room.Bounds.Width / 65, room.Bounds.Bottom - 65);
+                        entrancePos = new Vector2i(room.Bounds.Left + room.Bounds.Width / 2, room.Bounds.Bottom - 1);
                         break;
                     default:
                         throw new NotImplementedException();
                 }
 
                 // Check if it's not blocked
-                var blockPos = entrancePos + dir.ToIntVec() * 65;
+                var blockPos = entrancePos + dir.ToIntVec() * 2;
 
-                if (i != 65 && dungeon.RoomTiles.Contains(blockPos))
+                if (i != 3 && dungeon.RoomTiles.Contains(blockPos))
                 {
                     continue;
                 }

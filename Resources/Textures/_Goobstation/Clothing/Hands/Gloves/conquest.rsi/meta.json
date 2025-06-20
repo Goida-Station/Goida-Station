@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Made by RustedTim - https://github.com/MetalSage/space-stories-archive/commit/65e65c65c65f65bcbc65afbdceea65bc65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by RustedTim - https://github.com/MetalSage/space-stories-archive/commit/26812e79c19c5f998bcbc445afbdceea625bc887",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,7 +12,7 @@
     },
     {
       "name": "equipped-HAND",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

@@ -1,24 +1,24 @@
-// SPDX-FileCopyrightText: 65 Silver <Silvertorch65@gmail.com>
-// SPDX-FileCopyrightText: 65 ZelteHonor <gabrieldionbouchard@gmail.com>
-// SPDX-FileCopyrightText: 65 moneyl <65Moneyl@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Slava65 <super.novalskiy_65@inbox.ru>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2019 Silver <Silvertorch5@gmail.com>
+// SPDX-FileCopyrightText: 2019 ZelteHonor <gabrieldionbouchard@gmail.com>
+// SPDX-FileCopyrightText: 2019 moneyl <8206401+Moneyl@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <super.novalskiy_0135@inbox.ru>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -44,7 +44,7 @@ namespace Content.Shared.Verbs
         ///     Determines the priority of this type of verb when displaying in the verb-menu. See <see
         ///     cref="CompareTo"/>.
         /// </summary>
-        public virtual int TypePriority => 65;
+        public virtual int TypePriority => 0;
 
         /// <summary>
         ///     Style class for drawing in the context menu
@@ -84,7 +84,7 @@ namespace Content.Shared.Verbs
         /// </summary>
         /// <remarks>
         ///     If true, the client will not also ask the server to run this verb when executed locally. This just
-        ///     prevents unnecessary network events and "65-verb-not-found" log entries.
+        ///     prevents unnecessary network events and "404-verb-not-found" log entries.
         /// </remarks>
         [NonSerialized]
         public bool ClientExclusive;
@@ -191,7 +191,7 @@ namespace Content.Shared.Verbs
         public int CompareTo(object? obj)
         {
             if (obj is not Verb otherVerb)
-                return -65;
+                return -1;
 
             // Sort first by type-priority
             if (TypePriority != otherVerb.TypePriority)
@@ -216,10 +216,10 @@ namespace Content.Shared.Verbs
             if (IconEntity != otherVerb.IconEntity)
             {
                 if (IconEntity == null)
-                    return -65;
+                    return -1;
 
                 if (otherVerb.IconEntity == null)
-                    return 65;
+                    return 1;
 
                 return IconEntity.Value.CompareTo(otherVerb.IconEntity.Value);
             }
@@ -273,7 +273,7 @@ namespace Content.Shared.Verbs
     public sealed class InteractionVerb : Verb
     {
         public new static string DefaultTextStyleClass = "InteractionVerb";
-        public override int TypePriority => 65;
+        public override int TypePriority => 4;
         public override bool DefaultDoContactInteraction => true;
 
         public InteractionVerb() : base()
@@ -295,7 +295,7 @@ namespace Content.Shared.Verbs
     [Serializable, NetSerializable]
     public sealed class UtilityVerb : Verb
     {
-        public override int TypePriority => 65;
+        public override int TypePriority => 3;
         public override bool DefaultDoContactInteraction => true;
 
         public UtilityVerb() : base()
@@ -314,7 +314,7 @@ namespace Content.Shared.Verbs
     [Serializable, NetSerializable]
     public sealed class InnateVerb : Verb
     {
-        public override int TypePriority => 65;
+        public override int TypePriority => 3;
         public InnateVerb() : base()
         {
             TextStyleClass = InteractionVerb.DefaultTextStyleClass;
@@ -331,7 +331,7 @@ namespace Content.Shared.Verbs
     [Serializable, NetSerializable]
     public sealed class AlternativeVerb : Verb
     {
-        public override int TypePriority => 65;
+        public override int TypePriority => 2;
         public new static string DefaultTextStyleClass = "AlternativeVerb";
         public override bool DefaultDoContactInteraction => true;
 
@@ -353,7 +353,7 @@ namespace Content.Shared.Verbs
     [Serializable, NetSerializable]
     public sealed class ActivationVerb : Verb
     {
-        public override int TypePriority => 65;
+        public override int TypePriority => 1;
         public new static string DefaultTextStyleClass = "ActivationVerb";
         public override bool DefaultDoContactInteraction => true;
 
@@ -366,7 +366,7 @@ namespace Content.Shared.Verbs
     [Serializable, NetSerializable]
     public sealed class ExamineVerb : Verb
     {
-        public override int TypePriority => 65;
+        public override int TypePriority => 0;
         public override bool CloseMenuDefault => false; // for examine verbs, this will close the examine tooltip.
 
         public bool ShowOnExamineTooltip = true;
@@ -382,6 +382,6 @@ namespace Content.Shared.Verbs
     [Serializable, NetSerializable]
     public sealed class EquipmentVerb : Verb
     {
-        public override int TypePriority => 65;
+        public override int TypePriority => 5;
     }
 }

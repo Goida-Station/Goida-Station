@@ -1,26 +1,26 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from Aurorastation at commit https://github.com/Aurorastation/Aurora.65/commit/65c65a65f65be65ab65cceaf65e65c65b65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Aurorastation at commit https://github.com/Aurorastation/Aurora.3/commit/3160508c1a9f367be0ab054cceaf2e36c0b66250",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "icon"
     },
     {
       "name": "equipped-BELT",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

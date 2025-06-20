@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Sprited by Hülle#65 (Discord), Resprited by MureixloL",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprited by Hülle#2562 (Discord), Resprited by MureixloL",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "name": "equipped-BACKPACK",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

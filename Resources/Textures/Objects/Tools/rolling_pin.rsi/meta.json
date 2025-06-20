@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "icon.png taken from https://github.com/DesertRose65/desertrose/blob/65c65f65b65cb65d65df65ba65b65b65b65f/icons/obj/kitchen.dmi. Inhand sprites created by deltanedas (github) for SS65. Belt sprite taken from unknown file in tgstation at commit https://github.com/tgstation/tgstation/commit/dc65ef65bd65d65d65d65c65da65da65b65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "icon.png taken from https://github.com/DesertRose2/desertrose/blob/0348c98f8343b5cb82d87df12411ba647b2b1b4f/icons/obj/kitchen.dmi. Inhand sprites created by deltanedas (github) for SS14. Belt sprite taken from unknown file in tgstation at commit https://github.com/tgstation/tgstation/commit/dc89ef0239830774bd3d9d7d6c8da2856da2b869",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-BELT",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

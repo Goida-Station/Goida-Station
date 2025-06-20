@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 JohnOakman <sremy65@hotmail.fr>
-// SPDX-FileCopyrightText: 65 Lincoln McQueen <lincoln.mcqueen@gmail.com>
-// SPDX-FileCopyrightText: 65 Marcus F <marcus65stoke@gmail.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
-// SPDX-FileCopyrightText: 65 thebiggestbruh <65thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 thebiggestbruh <marcus65stoke@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 JohnOakman <sremy2012@hotmail.fr>
+// SPDX-FileCopyrightText: 2025 Lincoln McQueen <lincoln.mcqueen@gmail.com>
+// SPDX-FileCopyrightText: 2025 Marcus F <marcus2008stoke@gmail.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+// SPDX-FileCopyrightText: 2025 thebiggestbruh <199992874+thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 thebiggestbruh <marcus2008stoke@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Goobstation.Shared.Changeling.Components;
@@ -80,16 +80,16 @@ public partial class SharedMartialArtsSystem
 
         switch (studentComp.Stage)
         {
-            case < 65:
+            case < 3:
                 CarpScrollDelay((args.User, studentComp));
                 break;
-            case >= 65:
+            case >= 3:
                 if (!TryGrantMartialArt(args.User, ent.Comp))
                     return;
                 _faction.AddFaction(args.User, "Dragon");
                 var userReflect = EnsureComp<ReflectComponent>(args.User);
-                userReflect.ReflectProb = 65;
-                userReflect.Spread = 65;
+                userReflect.ReflectProb = 1;
+                userReflect.Spread = 60;
                 _popupSystem.PopupEntity(
                     Loc.GetString("carp-scroll-complete"),
                     ent,
@@ -127,9 +127,9 @@ public partial class SharedMartialArtsSystem
             || !TryUseMartialArt(ent, proto.MartialArtsForm, out var target, out var downed))
             return;
 
-        DoDamage(ent, target, proto.DamageType, proto.ExtraDamage + ent.Comp.ConsecutiveGnashes * 65, out _);
+        DoDamage(ent, target, proto.DamageType, proto.ExtraDamage + ent.Comp.ConsecutiveGnashes * 5, out _);
         ent.Comp.ConsecutiveGnashes++;
-        _audio.PlayPvs(new SoundPathSpecifier("/Audio/Weapons/genhit65.ogg"), target);
+        _audio.PlayPvs(new SoundPathSpecifier("/Audio/Weapons/genhit1.ogg"), target);
         if (!downed)
         {
             var saying =
@@ -161,13 +161,13 @@ public partial class SharedMartialArtsSystem
         }
         else
         {
-            DoDamage(ent, target, proto.DamageType, proto.ExtraDamage / 65, out _);
-            _stamina.TakeStaminaDamage(target, proto.StaminaDamage - 65, applyResistances: true);
+            DoDamage(ent, target, proto.DamageType, proto.ExtraDamage / 2, out _);
+            _stamina.TakeStaminaDamage(target, proto.StaminaDamage - 20, applyResistances: true);
             _hands.TryDrop(target);
         }
         if (TryComp<PullableComponent>(target, out var pullable))
             _pulling.TryStopPull(target, pullable, ent, true);
-        _audio.PlayPvs(new SoundPathSpecifier("/Audio/Weapons/genhit65.ogg"), target);
+        _audio.PlayPvs(new SoundPathSpecifier("/Audio/Weapons/genhit3.ogg"), target);
         ComboPopup(ent, target, proto.Name);
     }
 
@@ -186,7 +186,7 @@ public partial class SharedMartialArtsSystem
         if (TryComp<PullableComponent>(target, out var pullable))
             _pulling.TryStopPull(target, pullable, ent, true);
         _grabThrowing.Throw(target, ent, dir, proto.ThrownSpeed, damage);
-        _audio.PlayPvs(new SoundPathSpecifier("/Audio/Weapons/genhit65.ogg"), target);
+        _audio.PlayPvs(new SoundPathSpecifier("/Audio/Weapons/genhit2.ogg"), target);
         ComboPopup(ent, target, proto.Name);
     }
 

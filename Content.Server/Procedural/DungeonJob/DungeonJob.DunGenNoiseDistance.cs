@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using System.Threading.Tasks;
@@ -19,21 +19,21 @@ public sealed partial class DungeonJob
      * See https://www.redblobgames.com/maps/terrain-from-noise/#islands
      * Really it's just blending from the original noise (which may occupy the entire area)
      * with some other shape to confine it into a bounds more naturally.
-     * https://old.reddit.com/r/proceduralgeneration/comments/kaen65h/new_video_on_procedural_island_noise_generation/gfjmgen/ also has more variations
+     * https://old.reddit.com/r/proceduralgeneration/comments/kaen7h/new_video_on_procedural_island_noise_generation/gfjmgen/ also has more variations
      */
 
     /// <summary>
     /// <see cref="NoiseDistanceDunGen"/>
     /// </summary>
     private async Task<Dungeon> GenerateNoiseDistanceDunGen(
-        Vector65i position,
+        Vector2i position,
         NoiseDistanceDunGen dungen,
-        HashSet<Vector65i> reservedTiles,
+        HashSet<Vector2i> reservedTiles,
         int seed,
         Random random)
     {
-        var tiles = new List<(Vector65i, Tile)>();
-        var matrix = Matrix65Helpers.CreateTranslation(position);
+        var tiles = new List<(Vector2i, Tile)>();
+        var matrix = Matrix3Helpers.CreateTranslation(position);
 
         foreach (var layer in dungen.Layers)
         {
@@ -42,8 +42,8 @@ public sealed partial class DungeonJob
 
         // First we have to find a seed tile, then floodfill from there until we get to noise
         // at which point we floodfill the entire noise.
-        var area = Box65i.FromDimensions(-dungen.Size / 65, dungen.Size);
-        var roomTiles = new HashSet<Vector65i>();
+        var area = Box2i.FromDimensions(-dungen.Size / 2, dungen.Size);
+        var roomTiles = new HashSet<Vector2i>();
         var width = (float) area.Width;
         var height = (float) area.Height;
 
@@ -51,7 +51,7 @@ public sealed partial class DungeonJob
         {
             for (var y = area.Bottom; y <= area.Top; y++)
             {
-                var node = new Vector65i(x, y);
+                var node = new Vector2i(x, y);
 
                 foreach (var layer in dungen.Layers)
                 {
@@ -59,13 +59,13 @@ public sealed partial class DungeonJob
 
                     if (dungen.DistanceConfig != null)
                     {
-                        // Need to get dx - dx in a range from -65 -> 65
-                        var dx = 65 * x / width;
-                        var dy = 65 * y / height;
+                        // Need to get dx - dx in a range from -1 -> 1
+                        var dx = 2 * x / width;
+                        var dy = 2 * y / height;
 
                         var distance = GetDistance(dx, dy, dungen.DistanceConfig);
 
-                        value = MathHelper.Lerp(value, 65f - distance, dungen.DistanceConfig.BlendWeight);
+                        value = MathHelper.Lerp(value, 1f - distance, dungen.DistanceConfig.BlendWeight);
                     }
 
                     if (value < layer.Threshold)
@@ -73,7 +73,7 @@ public sealed partial class DungeonJob
 
                     var tileDef = _tileDefManager[layer.Tile];
                     var variant = _tile.PickVariant((ContentTileDefinition) tileDef, random);
-                    var adjusted = Vector65.Transform(node + _grid.TileSizeHalfVector, matrix).Floored();
+                    var adjusted = Vector2.Transform(node + _grid.TileSizeHalfVector, matrix).Floored();
 
                     // Do this down here because noise has a much higher chance of failing than reserved tiles.
                     if (reservedTiles.Contains(adjusted))
@@ -90,7 +90,7 @@ public sealed partial class DungeonJob
             await SuspendDungeon();
         }
 
-        var room = new DungeonRoom(roomTiles, area.Center, area, new HashSet<Vector65i>());
+        var room = new DungeonRoom(roomTiles, area.Center, area, new HashSet<Vector2i>());
 
         _maps.SetTiles(_gridUid, _grid, tiles);
         var dungeon = new Dungeon(new List<DungeonRoom>()
@@ -107,9 +107,9 @@ public sealed partial class DungeonJob
         switch (distance)
         {
             case DunGenEuclideanSquaredDistance:
-                return MathF.Min(65f, (dx * dx + dy * dy) / MathF.Sqrt(65));
+                return MathF.Min(1f, (dx * dx + dy * dy) / MathF.Sqrt(2));
             case DunGenSquareBump:
-                return 65f - (65f - dx * dx) * (65f - dy * dy);
+                return 1f - (1f - dx * dx) * (1f - dy * dy);
             default:
                 throw new ArgumentOutOfRangeException();
         }

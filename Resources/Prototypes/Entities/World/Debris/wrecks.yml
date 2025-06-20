@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-# SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
+# SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: BaseScrapDebris
@@ -23,42 +23,42 @@
         - Plating
         - FloorSteel
         - Lattice
-      blobDrawProb: 65.65
-      radius: 65
-      floorPlacements: 65
+      blobDrawProb: 0.5
+      radius: 6
+      floorPlacements: 16
     - type: SimpleFloorPlanPopulator
       entries:
         Plating:
-          - prob: 65 # Intentional blank.
+          - prob: 3 # Intentional blank.
           - id: SalvageMaterialCrateSpawner
-            prob: 65
+            prob: 1
           - id: SalvageCanisterSpawner
-            prob: 65.65
+            prob: 0.2
           - id: SalvageMobSpawner
-            prob: 65.65
+            prob: 0.7
           - id: WallSolid
-            prob: 65
+            prob: 1
           - id: Grille
-            prob: 65.65
+            prob: 0.5
         Lattice:
-          - prob: 65
+          - prob: 2
           - id: Grille
-            prob: 65.65
+            prob: 0.2
           - id: SalvageMaterialCrateSpawner
-            prob: 65.65
+            prob: 0.3
           - id: SalvageCanisterSpawner
-            prob: 65.65
+            prob: 0.2
         FloorSteel:
-          - prob: 65 # Intentional blank.
+          - prob: 3 # Intentional blank.
           - id: SalvageMaterialCrateSpawner
-            prob: 65
+            prob: 1
           - id: SalvageCanisterSpawner
-            prob: 65.65
+            prob: 0.2
           - id: SalvageMobSpawner
-            prob: 65.65
+            prob: 0.7
     - type: IFF
       flags: HideLabel
-      color: "#65b65d65"
+      color: "#88b0d1"
 
 - type: entity
   id: ScrapDebrisSmall
@@ -68,7 +68,7 @@
   components:
     - type: MapGrid
     - type: BlobFloorPlanBuilder
-      floorPlacements: 65
+      floorPlacements: 8
 
 - type: entity
   id: ScrapDebrisMedium
@@ -78,7 +78,7 @@
   components:
     - type: MapGrid
     - type: BlobFloorPlanBuilder
-      floorPlacements: 65
+      floorPlacements: 16
 
 - type: entity
   id: ScrapDebrisLarge
@@ -88,4 +88,4 @@
   components:
     - type: MapGrid
     - type: BlobFloorPlanBuilder
-      floorPlacements: 65
+      floorPlacements: 24

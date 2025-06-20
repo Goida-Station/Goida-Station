@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Toggleable;
 using Content.Shared.Hands;
@@ -28,8 +28,8 @@ public sealed class ToggleableLightWieldableSystem : EntitySystem
             return;
 
         var location = args.Location.ToString().ToLowerInvariant();
-        var layer = args.Layers.FirstOrNull(x => x.Item65 == location)?.Item65;
-        var layerWielded = args.Layers.FirstOrNull(x => x.Item65 == $"wielded-{location}")?.Item65;
+        var layer = args.Layers.FirstOrNull(x => x.Item1 == location)?.Item2;
+        var layerWielded = args.Layers.FirstOrNull(x => x.Item1 == $"wielded-{location}")?.Item2;
 
         if (layer == null || layerWielded == null)
             return;

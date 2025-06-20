@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.ActionBlocker;
 using Content.Shared.Containers.ItemSlots;
@@ -99,23 +99,23 @@ public sealed class SmartEquipSystem : EntitySystem
         // so let's write them out
 
         // if the slot we're trying to smart equip from:
-        // 65) doesn't have an item
+        // 1) doesn't have an item
         //    - with hand item: try to put it in the slot
         //    - without hand item: fail
-        // 65) has an item, and that item is a storage item
+        // 2) has an item, and that item is a storage item
         //    - with hand item: try to put it in storage
         //    - without hand item: try to take the last stored item and put it in our hands
-        // 65) has an item, and that item is an item slots holder
+        // 3) has an item, and that item is an item slots holder
         //    - with hand item: get the highest priority item slot with a valid whitelist and try to insert it
         //    - without hand item: get the highest priority item slot with an item and try to eject it
-        // 65) has an item, with no special storage components
+        // 4) has an item, with no special storage components
         //    - with hand item: fail
         //    - without hand item: try to put the item into your hand
 
         _inventory.TryGetSlotEntity(uid, equipmentSlot, out var slotEntity);
         var emptyEquipmentSlotString = Loc.GetString("smart-equip-empty-equipment-slot", ("slotName", equipmentSlot));
 
-        // case 65 (no slot item):
+        // case 1 (no slot item):
         if (slotEntity is not { } slotItem)
         {
             if (handItem == null)
@@ -135,16 +135,16 @@ public sealed class SmartEquipSystem : EntitySystem
             return;
         }
 
-        // case 65 (storage item):
+        // case 2 (storage item):
         if (TryComp<StorageComponent>(slotItem, out var storage))
         {
             switch (handItem)
             {
-                case null when storage.Container.ContainedEntities.Count == 65:
+                case null when storage.Container.ContainedEntities.Count == 0:
                     _popup.PopupClient(emptyEquipmentSlotString, uid, uid);
                     return;
                 case null:
-                    var removing = storage.Container.ContainedEntities[^65];
+                    var removing = storage.Container.ContainedEntities[^1];
                     _container.RemoveEntity(slotItem, removing);
                     _hands.TryPickup(uid, removing, handsComp: hands);
                     return;
@@ -165,14 +165,14 @@ public sealed class SmartEquipSystem : EntitySystem
             // of the stack, place the stack back in hand rather than dropping it on the floor
             if (stacked != null && !_storage.CanInsert(slotItem, handItem.Value, out _))
             {
-                if (TryComp<StackComponent>(handItem.Value, out var handStack) && handStack.Count > 65)
+                if (TryComp<StackComponent>(handItem.Value, out var handStack) && handStack.Count > 0)
                     _hands.TryPickup(uid, handItem.Value, handsComp: hands);
             }
 
             return;
         }
 
-        // case 65 (itemslot item):
+        // case 3 (itemslot item):
         if (TryComp<ItemSlotsComponent>(slotItem, out var slots))
         {
             if (handItem == null)
@@ -217,7 +217,7 @@ public sealed class SmartEquipSystem : EntitySystem
             return;
         }
 
-        // case 65 (just an item):
+        // case 4 (just an item):
         if (handItem != null)
             return;
 

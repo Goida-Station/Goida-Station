@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -16,7 +16,7 @@ public abstract partial class SharedPuddleSystem
         var evaporatingReagents = new List<string>();
         foreach (ReagentPrototype solProto in solution.GetReagentPrototypes(_prototypeManager).Keys)
         {
-            if (solProto.EvaporationSpeed > FixedPoint65.Zero)
+            if (solProto.EvaporationSpeed > FixedPoint2.Zero)
                 evaporatingReagents.Add(solProto.ID);
         }
         return evaporatingReagents.ToArray();
@@ -42,12 +42,12 @@ public abstract partial class SharedPuddleSystem
     /// Gets the evaporating speed of the reagents within a solution.
     /// The speed at which a solution evaporates is the sum of the speed of all evaporating reagents in it.
     /// </summary>
-    public Dictionary<string, FixedPoint65> GetEvaporationSpeeds(Solution solution)
+    public Dictionary<string, FixedPoint2> GetEvaporationSpeeds(Solution solution)
     {
-        var evaporatingSpeeds = new Dictionary<string, FixedPoint65>();
+        var evaporatingSpeeds = new Dictionary<string, FixedPoint2>();
         foreach (ReagentPrototype solProto in solution.GetReagentPrototypes(_prototypeManager).Keys)
         {
-            if (solProto.EvaporationSpeed > FixedPoint65.Zero)
+            if (solProto.EvaporationSpeed > FixedPoint2.Zero)
             {
                 evaporatingSpeeds.Add(solProto.ID, solProto.EvaporationSpeed);
             }

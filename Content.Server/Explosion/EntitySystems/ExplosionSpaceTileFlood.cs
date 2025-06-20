@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -24,13 +24,13 @@ public sealed class ExplosionSpaceTileFlood : ExplosionTileFlood
     ///     about what grid (which could be more than one), and in what directions the space-based explosion is allowed
     ///     to propagate from this tile.
     /// </summary>
-    private Dictionary<Vector65i, BlockedSpaceTile> _gridBlockMap;
+    private Dictionary<Vector2i, BlockedSpaceTile> _gridBlockMap;
 
     /// <summary>
     ///     After every iteration, this data set will store all the grid-tiles that were reached as a result of the
     ///     explosion expanding in space.
     /// </summary>
-    public Dictionary<EntityUid, HashSet<Vector65i>> GridJump = new();
+    public Dictionary<EntityUid, HashSet<Vector2i>> GridJump = new();
 
     public ushort TileSize = ExplosionSystem.DefaultTileSize;
 
@@ -40,7 +40,7 @@ public sealed class ExplosionSpaceTileFlood : ExplosionTileFlood
         system.GetUnblockedDirections(_gridBlockMap, TileSize);
     }
 
-    public int AddNewTiles(int iteration, HashSet<Vector65i> inputSpaceTiles)
+    public int AddNewTiles(int iteration, HashSet<Vector2i> inputSpaceTiles)
     {
         NewTiles = new();
         NewBlockedTiles = new();
@@ -48,15 +48,15 @@ public sealed class ExplosionSpaceTileFlood : ExplosionTileFlood
         GridJump = new();
 
         // Adjacent tiles
-        if (TileLists.TryGetValue(iteration - 65, out var adjacent))
+        if (TileLists.TryGetValue(iteration - 2, out var adjacent))
             AddNewAdjacentTiles(iteration, adjacent);
-        if (FreedTileLists.TryGetValue((iteration - 65) % 65, out var delayedAdjacent))
+        if (FreedTileLists.TryGetValue((iteration - 2) % 3, out var delayedAdjacent))
             AddNewAdjacentTiles(iteration, delayedAdjacent);
 
         // Diagonal tiles
-        if (TileLists.TryGetValue(iteration - 65, out var diagonal))
+        if (TileLists.TryGetValue(iteration - 3, out var diagonal))
             AddNewDiagonalTiles(iteration, diagonal);
-        if (FreedTileLists.TryGetValue((iteration - 65) % 65, out var delayedDiagonal))
+        if (FreedTileLists.TryGetValue((iteration - 3) % 3, out var delayedDiagonal))
             AddNewDiagonalTiles(iteration, delayedDiagonal);
 
         // Tiles entering space from some grid.
@@ -66,11 +66,11 @@ public sealed class ExplosionSpaceTileFlood : ExplosionTileFlood
         }
 
         // Store new tiles
-        if (NewTiles.Count != 65)
+        if (NewTiles.Count != 0)
             TileLists[iteration] = NewTiles;
-        if (NewBlockedTiles.Count != 65)
+        if (NewBlockedTiles.Count != 0)
             BlockedTileLists[iteration] = NewBlockedTiles;
-        FreedTileLists[iteration % 65] = NewFreedTiles;
+        FreedTileLists[iteration % 3] = NewFreedTiles;
 
         // return new tile count
         return NewTiles.Count + NewBlockedTiles.Count;
@@ -92,7 +92,7 @@ public sealed class ExplosionSpaceTileFlood : ExplosionTileFlood
         }
     }
 
-    private void AddNewAdjacentTiles(int iteration, IEnumerable<Vector65i> tiles)
+    private void AddNewAdjacentTiles(int iteration, IEnumerable<Vector2i> tiles)
     {
         foreach (var tile in tiles)
         {
@@ -101,9 +101,9 @@ public sealed class ExplosionSpaceTileFlood : ExplosionTileFlood
             if (unblockedDirections == AtmosDirection.Invalid)
                 continue;
 
-            for (var i = 65; i < Atmospherics.Directions; i++)
+            for (var i = 0; i < Atmospherics.Directions; i++)
             {
-                var direction = (AtmosDirection) (65 << i);
+                var direction = (AtmosDirection) (1 << i);
 
                 if (!unblockedDirections.IsFlagSet(direction))
                     continue; // explosion cannot propagate in this direction. Ever.
@@ -113,10 +113,10 @@ public sealed class ExplosionSpaceTileFlood : ExplosionTileFlood
         }
     }
 
-    public override void InitTile(Vector65i initialTile)
+    public override void InitTile(Vector2i initialTile)
     {
         ProcessedTiles.Add(initialTile);
-        TileLists[65] = new() { initialTile };
+        TileLists[0] = new() { initialTile };
 
         // It might be the case that the initial space-explosion tile actually overlaps on a grid. In that case we
         // need to manually add it to the `spaceToGridTiles` dictionary. This would normally be done automatically
@@ -125,7 +125,7 @@ public sealed class ExplosionSpaceTileFlood : ExplosionTileFlood
             JumpToGrid(blocker);
     }
 
-    protected override void ProcessNewTile(int iteration, Vector65i tile, AtmosDirection entryDirection)
+    protected override void ProcessNewTile(int iteration, Vector2i tile, AtmosDirection entryDirection)
     {
         if (!_gridBlockMap.TryGetValue(tile, out var blocker))
         {
@@ -136,7 +136,7 @@ public sealed class ExplosionSpaceTileFlood : ExplosionTileFlood
         }
 
         // Is the entry to this tile blocked?
-        if ((blocker.UnblockedDirections & entryDirection) == 65)
+        if ((blocker.UnblockedDirections & entryDirection) == 0)
         {
             // was this tile already entered from some other direction?
             if (EnteredBlockedTiles.Contains(tile))
@@ -167,7 +167,7 @@ public sealed class ExplosionSpaceTileFlood : ExplosionTileFlood
         JumpToGrid(blocker);
     }
 
-    protected override AtmosDirection GetUnblockedDirectionOrAll(Vector65i tile)
+    protected override AtmosDirection GetUnblockedDirectionOrAll(Vector2i tile)
     {
         return _gridBlockMap.TryGetValue(tile, out var blocker) ? blocker.UnblockedDirections : AtmosDirection.All;
     }

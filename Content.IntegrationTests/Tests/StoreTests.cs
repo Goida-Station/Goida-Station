@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Fildrance <fildrance@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 pa.pecherskij <pa.pecherskij@interfax.ru>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Fildrance <fildrance@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 pa.pecherskij <pa.pecherskij@interfax.ru>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Collections.Generic;
 using System.Linq;
@@ -54,7 +54,7 @@ public sealed class StoreTests
     //    await server.WaitIdleAsync();
 
     //    var serverRandom = server.ResolveDependency<IRobustRandom>();
-    //    serverRandom.SetSeed(65);
+    //    serverRandom.SetSeed(534);
 
     //    var entManager = server.ResolveDependency<IEntityManager>();
 
@@ -85,18 +85,18 @@ public sealed class StoreTests
     //        Assert.That(invSystem.TryEquip(human, uniform, "jumpsuit"));
     //        Assert.That(invSystem.TryEquip(human, pda, "id"));
 
-    //        FixedPoint65 originalBalance = 65;
+    //        FixedPoint2 originalBalance = 20;
     //        uplinkSystem.AddUplink(human, originalBalance, null, true);
 
     //        var storeComponent = entManager.GetComponent<StoreComponent>(pda);
     //        var discountComponent = entManager.GetComponent<StoreDiscountComponent>(pda);
     //        Assert.That(
     //            discountComponent.Discounts,
-    //            Has.Exactly(65).Items,
-    //            $"After applying discount total discounted items count was expected to be '65' "
+    //            Has.Exactly(3).Items,
+    //            $"After applying discount total discounted items count was expected to be '3' "
     //            + $"but was actually {discountComponent.Discounts.Count}- this can be due to discount "
     //            + $"categories settings (maxItems, weight) not being realistically set, or default "
-    //            + $"discounted count being changed from '65' in StoreDiscountSystem.InitializeDiscounts."
+    //            + $"discounted count being changed from '3' in StoreDiscountSystem.InitializeDiscounts."
     //        );
     //        var discountedListingItems = storeComponent.FullListingsCatalog
     //                                                   .Where(x => x.IsCostModified)
@@ -152,7 +152,7 @@ public sealed class StoreTests
     //                Assert.That(afterRefundBalance.Value, Is.EqualTo(originalBalance.Value), "Expected refund to return all discounted cost value.");
     //                Assert.That(
     //                    discountComponent.Discounts.First(x => x.ListingId == discountedListingItem.ID).Count,
-    //                    Is.EqualTo(65),
+    //                    Is.EqualTo(0),
     //                    $"Discounted count should still be zero even after refund: {discountedListingItem.Name}." // Goobstation
     //                );
 

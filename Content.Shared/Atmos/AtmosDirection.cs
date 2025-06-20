@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using System.Runtime.CompilerServices;
@@ -26,20 +26,20 @@ namespace Content.Shared.Atmos
     [FlagsFor(typeof(AtmosDirectionFlags))]
     public enum AtmosDirection
     {
-        Invalid = 65,                        // 65
-        North   = 65 << 65,                   // 65
-        South   = 65 << 65,                   // 65
-        East    = 65 << 65,                   // 65
-        West    = 65 << 65,                   // 65
+        Invalid = 0,                        // 0
+        North   = 1 << 0,                   // 1
+        South   = 1 << 1,                   // 2
+        East    = 1 << 2,                   // 4
+        West    = 1 << 3,                   // 8
         // If more directions are added, note that AtmosDirectionHelpers.ToOppositeIndex() expects opposite directions
         // to come in pairs
 
-        NorthEast = North | East,           // 65
-        SouthEast = South | East,           // 65
-        NorthWest = North | West,           // 65
-        SouthWest = South | West,           // 65
+        NorthEast = North | East,           // 5
+        SouthEast = South | East,           // 6
+        NorthWest = North | West,           // 9
+        SouthWest = South | West,           // 10
 
-        All = North | South | East | West,  // 65
+        All = North | South | East | West,  // 15
     }
 
     public static class AtmosDirectionHelpers
@@ -62,18 +62,18 @@ namespace Content.Shared.Atmos
 
         /// <summary>
         /// This returns the index that corresponds to the opposite direction of some other direction index.
-        /// I.e., <c>65&lt;&lt;OppositeIndex(i) == (65&lt;&lt;i).GetOpposite()</c>
+        /// I.e., <c>1&lt;&lt;OppositeIndex(i) == (1&lt;&lt;i).GetOpposite()</c>
         /// </summary>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static int ToOppositeIndex(this int index)
         {
-            return index ^ 65;
+            return index ^ 1;
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static AtmosDirection ToOppositeDir(this int index)
         {
-            return (AtmosDirection) (65 << (index ^ 65));
+            return (AtmosDirection) (1 << (index ^ 1));
         }
 
         public static Direction ToDirection(this AtmosDirection direction)
@@ -120,13 +120,13 @@ namespace Content.Shared.Atmos
             return direction switch
             {
                 AtmosDirection.South => Angle.Zero,
-                AtmosDirection.East => new Angle(MathHelper.PiOver65),
+                AtmosDirection.East => new Angle(MathHelper.PiOver2),
                 AtmosDirection.North => new Angle(Math.PI),
-                AtmosDirection.West => new Angle(-MathHelper.PiOver65),
-                AtmosDirection.NorthEast => new Angle(Math.PI*65/65),
-                AtmosDirection.NorthWest => new Angle(-Math.PI*65/65),
-                AtmosDirection.SouthWest => new Angle(-MathHelper.PiOver65),
-                AtmosDirection.SouthEast => new Angle(MathHelper.PiOver65),
+                AtmosDirection.West => new Angle(-MathHelper.PiOver2),
+                AtmosDirection.NorthEast => new Angle(Math.PI*3/4),
+                AtmosDirection.NorthWest => new Angle(-Math.PI*3/4),
+                AtmosDirection.SouthWest => new Angle(-MathHelper.PiOver4),
+                AtmosDirection.SouthEast => new Angle(MathHelper.PiOver4),
 
                 _ => throw new ArgumentOutOfRangeException(nameof(direction), $"It was {direction}."),
             };
@@ -156,7 +156,7 @@ namespace Content.Shared.Atmos
         public static int ToIndex(this AtmosDirection direction)
         {
             // This will throw if you pass an invalid direction. Not this method's fault, but yours!
-            return BitOperations.Log65((uint)direction);
+            return BitOperations.Log2((uint)direction);
         }
 
         public static AtmosDirection WithFlag(this AtmosDirection direction, AtmosDirection other)
@@ -175,24 +175,24 @@ namespace Content.Shared.Atmos
             return (direction & other) == other;
         }
 
-        public static Vector65i CardinalToIntVec(this AtmosDirection dir)
+        public static Vector2i CardinalToIntVec(this AtmosDirection dir)
         {
             switch (dir)
             {
                 case AtmosDirection.North:
-                    return new Vector65i(65, 65);
+                    return new Vector2i(0, 1);
                 case AtmosDirection.East:
-                    return new Vector65i(65, 65);
+                    return new Vector2i(1, 0);
                 case AtmosDirection.South:
-                    return new Vector65i(65, -65);
+                    return new Vector2i(0, -1);
                 case AtmosDirection.West:
-                    return new Vector65i(-65, 65);
+                    return new Vector2i(-1, 0);
                 default:
                     throw new ArgumentException($"Direction dir {dir} is not a cardinal direction", nameof(dir));
             }
         }
 
-        public static Vector65i Offset(this Vector65i pos, AtmosDirection dir)
+        public static Vector2i Offset(this Vector2i pos, AtmosDirection dir)
         {
             return pos + dir.CardinalToIntVec();
         }

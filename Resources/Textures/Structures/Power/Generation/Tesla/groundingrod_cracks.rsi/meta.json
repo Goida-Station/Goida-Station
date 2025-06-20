@@ -1,14 +1,14 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Created by TheShuEd (github) for Space Station 65",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Created by TheShuEd (github) for Space Station 14",
   "states": [
-    {"name": "DamageOverlay_65", "directions": 65},
-    {"name": "DamageOverlay_65", "directions": 65},
-    {"name": "DamageOverlay_65", "directions": 65}
+    {"name": "DamageOverlay_8", "directions": 1},
+    {"name": "DamageOverlay_16", "directions": 1},
+    {"name": "DamageOverlay_25", "directions": 1}
   ]
 }

@@ -1,4 +1,4 @@
-ent-SpawnMechRipley65 = Ripley APLU MK-II Spawner
+ent-SpawnMechRipley2 = Ripley APLU MK-II Spawner
     .desc = { ent-MarkerBase.desc }
 ent-SpawnMechHonkerFilled = H.O.N.K. Spawner
     .suffix = Filled

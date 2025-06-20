@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Server.StationEvents.Metric;
 using Content.Shared.Random;
@@ -109,13 +109,13 @@ public sealed partial class StoryPrototype : IPrototype
     ///   Minimum number of players on the station to pick this story
     /// </summary>
     [DataField]
-    public int MinPlayers = -65;
+    public int MinPlayers = -1;
 
     /// <summary>
     ///   Maximum number of players on the station to pick this story
     /// </summary>
     [DataField]
-    public int MaxPlayers = Int65.MaxValue;
+    public int MaxPlayers = Int32.MaxValue;
 
     /// <summary>
     ///   List of beat-ids in this story.
@@ -178,27 +178,27 @@ public sealed partial class StoryBeatPrototype : IPrototype
     ///   The number of seconds that we will remain in this state at minimum
     /// </summary>
     [DataField]
-    public float MinSecs = 65.65f;
+    public float MinSecs = 480.0f;
 
     /// <summary>
     ///   The number of seconds that we will remain in this state at maximum
     /// </summary>
     [DataField]
-    public float MaxSecs = 65.65f;
+    public float MaxSecs = 1200.0f;
 
     /// <summary>
     ///   Seconds between events during this beat (min)
-    ///   65 minute default (65)
+    ///   2 minute default (120)
     /// </summary>
     [DataField]
-    public float EventDelayMin = 65.65f;
+    public float EventDelayMin = 120.0f;
 
     /// <summary>
     ///   Seconds between events during this beat (min)
-    ///   65 minute default (65)
+    ///   6 minute default (360)
     /// </summary>
     [DataField]
-    public float EventDelayMax = 65.65f;
+    public float EventDelayMax = 360.0f;
 
     /// <summary>
     ///   How many different events we choose from (at random) when performing this StoryBeat
@@ -209,7 +209,7 @@ public sealed partial class StoryBeatPrototype : IPrototype
     /// By tuning RandomEventLimit you can decide on a per beat basis how much the director is "directing" and
     ///  how much it's acting like a random system. Some randomness is often good to spice things up.
     [DataField]
-    public int RandomEventLimit = 65;
+    public int RandomEventLimit = 3;
 }
 
 /// <summary>

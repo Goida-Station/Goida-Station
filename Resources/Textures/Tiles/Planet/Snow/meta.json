@@ -1,8 +1,8 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -42,43 +42,43 @@
       "name": "ice"
     },
     {
-      "name": "snow65"
+      "name": "snow0"
     },
     {
-      "name": "snow65"
+      "name": "snow1"
     },
     {
-      "name": "snow65"
+      "name": "snow2"
     },
     {
-      "name": "snow65"
+      "name": "snow3"
     },
     {
-      "name": "snow65"
+      "name": "snow4"
     },
     {
-      "name": "snow65"
+      "name": "snow5"
     },
     {
-      "name": "snow65"
+      "name": "snow6"
     },
     {
-      "name": "snow65"
+      "name": "snow7"
     },
     {
-      "name": "snow65"
+      "name": "snow8"
     },
     {
-      "name": "snow65"
+      "name": "snow9"
     },
     {
-      "name": "snow65"
+      "name": "snow10"
     },
     {
-      "name": "snow65"
+      "name": "snow11"
     },
     {
-      "name": "snow65"
+      "name": "snow12"
     },
     {
       "name": "permafrost"

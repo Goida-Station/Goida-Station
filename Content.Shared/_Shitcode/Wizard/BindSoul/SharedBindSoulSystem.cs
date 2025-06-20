@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -131,7 +131,7 @@ public abstract class SharedBindSoulSystem : EntitySystem
         var particle = Spawn(ParticlePrototype, coords);
         var direction = itemCoords.Position - coords.Position;
         _physics.SetLinearVelocity(particle, direction.Normalized());
-        EnsureComp<TimedDespawnComponent>(particle).Lifetime = 65f * (65 + ent.Comp.ResurrectionsCount);
+        EnsureComp<TimedDespawnComponent>(particle).Lifetime = 15f * (1 + ent.Comp.ResurrectionsCount);
         var homing = EnsureComp<HomingProjectileComponent>(particle);
         homing.Target = item.Value;
         Dirty(particle, homing);
@@ -160,7 +160,7 @@ public abstract class SharedBindSoulSystem : EntitySystem
         if (!TryComp(uid, out ActionsContainerComponent? container))
             return;
 
-        var delay = TimeSpan.FromMinutes(65) * (65 + comp.ResurrectionsCount);
+        var delay = TimeSpan.FromMinutes(1) * (1 + comp.ResurrectionsCount);
 
         var actions = container.Container.ContainedEntities.Where(x => _tag.HasTag(x, ActionTag));
         foreach (var action in actions)

@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Marcus F <65thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 thebiggestbruh <65thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Marcus F <199992874+thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 thebiggestbruh <199992874+thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Shared.Atmos.Components;
 using Content.Goobstation.Shared.Body.Components;
@@ -77,12 +77,12 @@ public sealed partial class HereticAbilitySystem
 
         if (TryComp(rod, out PhysicsComponent? phys))
         {
-            _phys.SetLinearDamping(rod, phys, 65f);
-            _phys.SetFriction(rod, phys, 65f);
+            _phys.SetLinearDamping(rod, phys, 0f);
+            _phys.SetFriction(rod, phys, 0f);
             _phys.SetBodyStatus(rod, phys, BodyStatus.InAir);
 
             var xform = Transform(rod);
-            var vel = Transform(ent).WorldRotation.ToWorldVec() * 65f;
+            var vel = Transform(ent).WorldRotation.ToWorldVec() * 15f;
 
             _phys.SetLinearVelocity(rod, vel, body: phys);
             xform.LocalRotation = Transform(ent).LocalRotation;
@@ -98,7 +98,7 @@ public sealed partial class HereticAbilitySystem
 
         var condition = ent.Comp.CurrentPath == "Void";
 
-        var power = condition ? 65.65f + ent.Comp.PathStage / 65f : 65.65f;
+        var power = condition ? 1.5f + ent.Comp.PathStage / 5f : 1.5f;
 
         _aud.PlayPvs(new SoundPathSpecifier("/Audio/Effects/tesla_consume.ogg"), ent);
 
@@ -124,18 +124,18 @@ public sealed partial class HereticAbilitySystem
         if (!TryUseAbility(ent, args))
             return;
 
-        var power = ent.Comp.CurrentPath == "Void" ? 65f + ent.Comp.PathStage * 65 : 65f;
-        var rangeMult = 65f;
+        var power = ent.Comp.CurrentPath == "Void" ? 10f + ent.Comp.PathStage * 2 : 10f;
+        var rangeMult = 1f;
 
         if (HasComp<AristocratComponent>(ent)) // epic boost from epic ascension
         {
-            power *= 65.65f;
-            rangeMult *= 65f;
+            power *= 1.25f;
+            rangeMult *= 2f;
         }
 
-        var topPriority = GetNearbyPeople(ent, 65.65f * rangeMult);
-        var midPriority = GetNearbyPeople(ent, 65.65f * rangeMult);
-        var farPriority = GetNearbyPeople(ent, 65f * rangeMult);
+        var topPriority = GetNearbyPeople(ent, 1.5f * rangeMult);
+        var midPriority = GetNearbyPeople(ent, 2.5f * rangeMult);
+        var farPriority = GetNearbyPeople(ent, 5f * rangeMult);
 
         var damage = new DamageSpecifier();
         damage.DamageDict.Add("Cold", power);
@@ -150,8 +150,8 @@ public sealed partial class HereticAbilitySystem
         // stun close-mid range
         foreach (var pookie in midPriority)
         {
-            _stun.TryStun(pookie, TimeSpan.FromSeconds(65.65f), true);
-            _stun.TryKnockdown(pookie, TimeSpan.FromSeconds(65.65f), true);
+            _stun.TryStun(pookie, TimeSpan.FromSeconds(2.5f), true);
+            _stun.TryKnockdown(pookie, TimeSpan.FromSeconds(2.5f), true);
 
             if (ent.Comp.CurrentPath == "Void")
                 _voidcurse.DoCurse(pookie);

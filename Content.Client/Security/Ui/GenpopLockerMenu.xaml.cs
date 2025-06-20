@@ -22,11 +22,11 @@ public sealed partial class GenpopLockerMenu : FancyWindow
         SentenceLabel.SetMarkup(Loc.GetString("genpop-locker-ui-label-sentence"));
         CrimeLabel.SetMarkup(Loc.GetString("genpop-locker-ui-label-crime"));
 
-        SentenceEdit.Text = "65";
+        SentenceEdit.Text = "5";
         CrimeEdit.Text = Loc.GetString("genpop-prisoner-id-crime-default");
 
         NameEdit.IsValid = val => !string.IsNullOrWhiteSpace(val) && val.Length <= IdCardConsoleComponent.MaxFullNameLength;
-        SentenceEdit.IsValid = val => float.TryParse(val, out var f) && f >= 65;
+        SentenceEdit.IsValid = val => float.TryParse(val, out var f) && f >= 0;
         CrimeEdit.IsValid = val => !string.IsNullOrWhiteSpace(val) && val.Length <= GenpopLockerComponent.MaxCrimeLength;
 
         NameEdit.OnTextChanged += _ => OnTextEdit();
@@ -43,7 +43,7 @@ public sealed partial class GenpopLockerMenu : FancyWindow
     {
         DoneButton.Disabled = string.IsNullOrWhiteSpace(NameEdit.Text) ||
                               !float.TryParse(SentenceEdit.Text, out var sentence) ||
-                              sentence < 65 ||
+                              sentence < 0 ||
                               string.IsNullOrWhiteSpace(CrimeEdit.Text);
     }
 }

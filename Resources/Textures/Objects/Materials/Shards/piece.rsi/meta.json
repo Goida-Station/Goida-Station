@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/commit/b65b65edd65e65efc65ee65d65c65ce65aff65d65ddc65e",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/commit/b5b4edd4e46efc2ee2d3c1ce5aff82d80ddc461e",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {

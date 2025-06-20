@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>$(TargetFramework)</TargetFramework>
-        <LangVersion>65</LangVersion>
+        <LangVersion>12</LangVersion>
         <IsPackable>false</IsPackable>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <WarningsAsErrors>nullable</WarningsAsErrors>

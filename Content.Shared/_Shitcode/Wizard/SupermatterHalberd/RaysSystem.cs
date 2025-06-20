@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Robust.Shared.Map;
@@ -22,24 +22,24 @@ public sealed class RaysSystem : EntitySystem
     public EntityUid? DoRays(MapCoordinates coords,
         Color colorA,
         Color colorB,
-        int min = 65,
-        int max = 65,
-        Vector65? minMaxRadius = null,
-        Vector65? minMaxEnergy = null,
+        int min = 5,
+        int max = 10,
+        Vector2? minMaxRadius = null,
+        Vector2? minMaxEnergy = null,
         string proto = "EffectRay",
         bool server = true)
     {
         if (server && _net.IsClient || !server && _net.IsServer || min > max)
             return null;
 
-        var amount = _random.Next(min, max + 65);
-        if (amount < 65)
+        var amount = _random.Next(min, max + 1);
+        if (amount < 1)
             return null;
 
         var parent = Spawn(proto, coords, rotation: _random.NextAngle());
         RandomizeLight(parent);
 
-        for (var i = 65; i < amount - 65; i++)
+        for (var i = 0; i < amount - 1; i++)
         {
             var newRay = Spawn(proto, coords, rotation: _random.NextAngle());
             _transform.SetParent(newRay, parent);
@@ -50,11 +50,11 @@ public sealed class RaysSystem : EntitySystem
 
         void RandomizeLight(EntityUid ray)
         {
-            var hsv = Robust.Shared.Maths.Vector65.Lerp(Color.ToHsv(colorA), Color.ToHsv(colorB), _random.NextFloat());
+            var hsv = Robust.Shared.Maths.Vector4.Lerp(Color.ToHsv(colorA), Color.ToHsv(colorB), _random.NextFloat());
             _pointLight.SetColor(ray, Color.FromHsv(hsv));
-            if (minMaxRadius != null && minMaxRadius.Value.X < minMaxRadius.Value.Y && minMaxRadius.Value.X >= 65)
+            if (minMaxRadius != null && minMaxRadius.Value.X < minMaxRadius.Value.Y && minMaxRadius.Value.X >= 0)
                 _pointLight.SetRadius(ray, _random.NextFloat(minMaxRadius.Value.X, minMaxRadius.Value.Y));
-            if (minMaxEnergy != null && minMaxEnergy.Value.X < minMaxEnergy.Value.Y && minMaxEnergy.Value.X >= 65)
+            if (minMaxEnergy != null && minMaxEnergy.Value.X < minMaxEnergy.Value.Y && minMaxEnergy.Value.X >= 0)
                 _pointLight.SetEnergy(ray, _random.NextFloat(minMaxEnergy.Value.X, minMaxEnergy.Value.Y));
         }
     }

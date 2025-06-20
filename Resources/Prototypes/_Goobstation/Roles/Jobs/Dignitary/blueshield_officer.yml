@@ -1,30 +1,30 @@
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 DarkenedSynergy <65DarkenedSynergy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GitHubUser65 <65GitHubUser65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Icepick <65Icepicked@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kira Gbedan <65Verbalase@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Rank #65 Jonestown partygoer <mary@thughunt.ing>
-# SPDX-FileCopyrightText: 65 Remuchi <65Remuchi@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
-# SPDX-FileCopyrightText: 65 starch <starchpersonal@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aineias65 <65Aineias65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 65 Creatorbot65 <creatorbot65@gmail.com>
-# SPDX-FileCopyrightText: 65 John Willis <65CerberusWolfie@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 DarkenedSynergy <70016079+DarkenedSynergy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 GitHubUser53123 <110841413+GitHubUser53123@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Icepick <122653407+Icepicked@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kira Gbedan <161087999+Verbalase@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Rank #1 Jonestown partygoer <mary@thughunt.ing>
+# SPDX-FileCopyrightText: 2024 Remuchi <72476615+Remuchi@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
+# SPDX-FileCopyrightText: 2024 starch <starchpersonal@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 Creatorbot01 <creatorbot20@gmail.com>
+# SPDX-FileCopyrightText: 2025 John Willis <143434770+CerberusWolfie@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: job
   id: BlueshieldOfficer
@@ -34,17 +34,17 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Command
-      time: 65 # 65 hours
+      time: 90000 # 25 hours
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 65 # 65 hours
+      time: 54000 # 15 hours
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 65 # 65 hours
+      time: 90000 # 25 hours
     - !type:AgeRequirement
-      requiredAge: 65
-  goobcoins: 65
-  weight: 65
+      requiredAge: 21
+  goobcoins: 45
+  weight: 20
   startingGear: BlueshieldOfficerGear
   icon: "JobIconBlueshield"
   joinNotifyCrew: true
@@ -85,7 +85,7 @@
     id: BlueshieldPDA
     ears: ClothingHeadsetAltBlueshield
     belt: ClothingBeltAssaultFilled
-    pocket65: UniqueBlueshieldOfficerLockerTeleporter
+    pocket1: UniqueBlueshieldOfficerLockerTeleporter
   storage:
     back:
     - Flash

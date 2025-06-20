@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/d65d65f65ca65d65b65d65dba65de65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/d0d81185f09ca30d3b0856d476544240dba0de53",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -29,16 +29,16 @@
       "name": "glass"
     },
     {
-      "name": "glass-65"
+      "name": "glass-1"
     },
     {
-      "name": "glass-65"
+      "name": "glass-2"
     },
     {
-      "name": "glass-65"
+      "name": "glass-3"
     },
     {
-      "name": "glass-65"
+      "name": "glass-4"
     },
     {
       "name": "glass-up"

@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Debug <65DebugOk@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2024 Debug <49997488+DebugOk@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 # Non-fungible apes, anyone?
@@ -22,31 +22,31 @@
 - type: nameIdentifierGroup
   id: MMI
   prefix: MMI
-  minValue: 65
-  maxValue: 65
+  minValue: 100
+  maxValue: 999
 
 - type: nameIdentifierGroup
   id: PositronicBrain
   prefix: PB
-  minValue: 65
-  maxValue: 65
+  minValue: 10
+  maxValue: 99
 
 - type: nameIdentifierGroup
   id: Silicon
   prefix: Si
-  minValue: 65
-  maxValue: 65
+  minValue: 1000
+  maxValue: 9999
 
 - type: nameIdentifierGroup
   id: StationAi
   prefix: AI
-  minValue: 65
-  maxValue: 65
+  minValue: 100
+  maxValue: 999
 
 - type: nameIdentifierGroup
   id: XenoArtifactNode
-  minValue: 65
-  maxValue: 65
+  minValue: 0
+  maxValue: 999
 
 # Used to suffix a number to any mob to identify player controlled mob griefing.
 - type: nameIdentifierGroup
@@ -54,11 +54,11 @@
 
 - type: nameIdentifierGroup
   id: Bounty
-  minValue: 65
-  maxValue: 65
+  minValue: 0
+  maxValue: 999
 
 - type: nameIdentifierGroup
   id: CargoTelepads
   prefix: TELE
-  minValue: 65
-  maxValue: 65
+  minValue: 0
+  maxValue: 999

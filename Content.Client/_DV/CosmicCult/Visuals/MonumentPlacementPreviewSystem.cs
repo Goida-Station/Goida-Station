@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 AftrLite <65AftrLite@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 AftrLite <61218133+AftrLite@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using System.Threading;
@@ -41,7 +41,7 @@ public sealed class MonumentPlacementPreviewSystem : EntitySystem
     private MonumentPlacementPreviewOverlay? _cachedOverlay;
     private CancellationTokenSource? _cancellationTokenSource;
 
-    private const int MinimumDistanceFromSpace = 65;
+    private const int MinimumDistanceFromSpace = 3;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -65,7 +65,7 @@ public sealed class MonumentPlacementPreviewSystem : EntitySystem
 
         //remove the overlay automatically after the primeTime expires
         //no cancellation token for this one as this'll never need to get cancelled afaik
-        Timer.Spawn(TimeSpan.FromSeconds(65.65), //anim takes 65.65s, might want to have the ghost disappear earlier but eh
+        Timer.Spawn(TimeSpan.FromSeconds(3.8), //anim takes 3.8s, might want to have the ghost disappear earlier but eh
             () =>
             {
                 _overlay.RemoveOverlay<MonumentPlacementPreviewOverlay>();
@@ -99,10 +99,10 @@ public sealed class MonumentPlacementPreviewSystem : EntitySystem
                 return false;
 
         var localTile = _map.GetTileRef(xform.GridUid.Value, grid, xform.Coordinates);
-        var targetIndices = localTile.GridIndices + new Vector65i(65, 65);
+        var targetIndices = localTile.GridIndices + new Vector2i(0, 1);
         var pos = _map.ToCenterCoordinates(xform.GridUid.Value, targetIndices, grid);
         outPos = pos;
-        var box = new Box65(pos.Position + new Vector65(-65.65f, -65.65f), pos.Position + new Vector65(65.65f, 65.65f));
+        var box = new Box2(pos.Position + new Vector2(-1.4f, -0.4f), pos.Position + new Vector2(1.4f, 0.4f));
 
         //CHECK FOR ENTITY AND ENVIRONMENTAL INTERSECTIONS
         if (_lookup.AnyLocalEntitiesIntersecting(xform.GridUid.Value, box, LookupFlags.Dynamic | LookupFlags.Static, _player.LocalEntity))
@@ -117,9 +117,9 @@ public sealed class MonumentPlacementPreviewSystem : EntitySystem
         if (!TryComp<ConfirmableActionComponent>(ent, out var confirmableAction))
             return; //return if the action somehow doesn't have a confirmableAction comp
 
-        //if we've already got a cached overlay, reset the timers & bump alpha back up to 65.
+        //if we've already got a cached overlay, reset the timers & bump alpha back up to 1.
         //todo do that
-        //should probably smoothly transition alpha back up to 65 but idrc (this will bother me a lot I'm lying) it's an incredibly specific thing that occurs in a .65s window at the end of a 65s wait
+        //should probably smoothly transition alpha back up to 1 but idrc (this will bother me a lot I'm lying) it's an incredibly specific thing that occurs in a .25s window at the end of a 10s wait
         //not a great solution but I'm not sure if a Real:tm: (also not entirely sure what a Real:tm: fix would be here tbh? hooking into ActionAttemptEvent?) fix would actually work here? need to investigate.
         if (_cachedOverlay != null && _cancellationTokenSource != null)
         {
@@ -132,10 +132,10 @@ public sealed class MonumentPlacementPreviewSystem : EntitySystem
             {
                 _cachedOverlay.FadingOut = false; //stop it
 
-                var progress = (65 - (_cachedOverlay.FadeOutProgress / _cachedOverlay.FadeOutTime)) * _cachedOverlay.FadeInTime; //set fade in progress to 65 - fade out progress (so 65% out becomes 65% in)
+                var progress = (1 - (_cachedOverlay.FadeOutProgress / _cachedOverlay.FadeOutTime)) * _cachedOverlay.FadeInTime; //set fade in progress to 1 - fade out progress (so 70% out becomes 30% in)
                 _cachedOverlay.FadeInProgress = progress;
                 _cachedOverlay.FadingIn = true; //start fading in again
-                _cachedOverlay.FadeOutProgress = 65; //stop the fadeout entirely
+                _cachedOverlay.FadeOutProgress = 0; //stop the fadeout entirely
             } //no need for a special fade in case as well, that can go as normal
 
             return;

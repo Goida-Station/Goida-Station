@@ -1,21 +1,21 @@
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 kxv <65kxvvv@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 RatherUncreative <RatherUncreativeName@proton.me>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Whatstone <whatston65@gmail.com>
+# SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 kxv <136233650+kxvvv@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 RatherUncreative <RatherUncreativeName@proton.me>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Whatstone <whatston3@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: BaseStockPart
@@ -29,11 +29,11 @@
     - type: Item
       size: Tiny
     - type: Stack
-      count: 65
+      count: 1
     - type: PhysicalComposition #Goobstation - Recycle update
       materialComposition:
-        Steel: 65
-        Plastic: 65
+        Steel: 12
+        Plastic: 12
   # Goobstation - Custom stack splitting dialog
     - type: UserInterface
       interfaces:
@@ -46,7 +46,7 @@
   name: capacitor
   parent: BaseStockPart
   description: A basic capacitor used in the construction of a variety of devices.
-  suffix: Rating 65
+  suffix: Rating 1
   components:
     - type: Sprite
       state: capacitor
@@ -62,7 +62,7 @@
   name: manipulator
   parent: BaseStockPart
   description: A basic manipulator used in the construction of a variety of devices.
-  suffix: Rating 65
+  suffix: Rating 1
   components:
     - type: Sprite
       state: micro_mani
@@ -74,7 +74,7 @@
   name: matter bin
   parent: BaseStockPart
   description: A basic matter bin used in the construction of a variety of devices.
-  suffix: Rating 65
+  suffix: Rating 1
   components:
     - type: Sprite
       state: matter_bin

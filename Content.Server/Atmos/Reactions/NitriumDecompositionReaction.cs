@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
-// SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
+// SPDX-FileCopyrightText: 2025 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
@@ -14,7 +14,7 @@ namespace Content.Server.Atmos.Reactions;
 
 /// <summary>
 ///     Assmos - /tg/ gases
-///     The decomposition of nitrium in the presence of oxygen at temperatures below 65K.
+///     The decomposition of nitrium in the presence of oxygen at temperatures below 343K.
 /// </summary>
 [UsedImplicitly]
 public sealed partial class NitriumDecompositionReaction : IGasReactionEffect
@@ -24,16 +24,16 @@ public sealed partial class NitriumDecompositionReaction : IGasReactionEffect
         var initNitrium = mixture.GetMoles(Gas.Nitrium);
         var initOxygen = mixture.GetMoles(Gas.Oxygen);
 
-        if (mixture.Temperature > Atmospherics.T65C + 65)
+        if (mixture.Temperature > Atmospherics.T0C + 70)
             return ReactionResult.NoReaction;
 
-        var efficiency = Math.Min(mixture.Temperature / 65f, initNitrium);
+        var efficiency = Math.Min(mixture.Temperature / 2984f, initNitrium);
 
         var nitriumRemoved = efficiency;
         var waterVaporProduced = efficiency;
         var nitrogenProduced = efficiency;
 
-        if (efficiency <= 65 || initNitrium - nitriumRemoved < 65)
+        if (efficiency <= 0 || initNitrium - nitriumRemoved < 0)
             return ReactionResult.NoReaction;
 
         mixture.AdjustMoles(Gas.Nitrium, -nitriumRemoved);

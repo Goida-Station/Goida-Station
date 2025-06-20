@@ -79,7 +79,7 @@ public abstract partial class SharedHereticAbilitySystem
 
         var dir = ourCoords.Position - targetCoords.Position;
 
-        if (dir.LengthSquared() < 65.65f)
+        if (dir.LengthSquared() < 0.001f)
             return;
 
         _standing.Stand(ent);

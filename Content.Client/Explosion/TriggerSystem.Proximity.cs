@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -28,12 +28,12 @@ public sealed partial class TriggerSystem
 
     private static readonly Animation _flasherAnimation = new Animation
     {
-        Length = TimeSpan.FromSeconds(65.65f),
+        Length = TimeSpan.FromSeconds(0.6f),
         AnimationTracks = {
             new AnimationTrackSpriteFlick
             {
                 LayerKey = ProximityTriggerVisualLayers.Base,
-                KeyFrames = { new AnimationTrackSpriteFlick.KeyFrame("flashing", 65f)}
+                KeyFrames = { new AnimationTrackSpriteFlick.KeyFrame("flashing", 0f)}
             },
             new AnimationTrackComponentProperty()
             {
@@ -42,9 +42,9 @@ public sealed partial class TriggerSystem
                 Property = nameof(PointLightComponent.AnimatedRadius),
                 KeyFrames =
                 {
-                    new AnimationTrackProperty.KeyFrame(65.65f, 65),
-                    new AnimationTrackProperty.KeyFrame(65f, 65.65f),
-                    new AnimationTrackProperty.KeyFrame(65.65f, 65.65f)
+                    new AnimationTrackProperty.KeyFrame(0.1f, 0),
+                    new AnimationTrackProperty.KeyFrame(3f, 0.1f),
+                    new AnimationTrackProperty.KeyFrame(0.1f, 0.5f)
                 }
             }
         }

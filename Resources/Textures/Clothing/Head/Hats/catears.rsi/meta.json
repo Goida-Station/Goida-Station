@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/fc65b65e65cb65b65aab65e65ac65bc65f65f",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/fc9b91e3cb51b20987aab9630e73ac587bc00f3f",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,21 +12,21 @@
     },
     {
       "name": "equipped-HELMET",
-      "directions": 65,
+      "directions": 4,
       "delays": [
-                [65.65, 65.65, 65.65, 65.65, 65.65],
-                [65.65, 65.65, 65.65, 65.65, 65.65],
-                [65.65, 65.65, 65.65, 65.65, 65.65],
-                [65.65, 65.65, 65.65, 65.65, 65.65]
+                [0.2, 0.2, 0.2, 0.2, 0.2],
+                [0.2, 0.2, 0.2, 0.2, 0.2],
+                [0.2, 0.2, 0.2, 0.2, 0.2],
+                [0.2, 0.2, 0.2, 0.2, 0.2]
             ]
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

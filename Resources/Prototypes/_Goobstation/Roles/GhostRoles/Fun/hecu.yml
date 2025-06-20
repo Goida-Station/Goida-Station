@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 starch <starchpersonal@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 blobadoodle <me@bloba.dev>
+# SPDX-FileCopyrightText: 2024 starch <starchpersonal@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 blobadoodle <me@bloba.dev>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: job
   id: HecuOperative
@@ -35,7 +35,7 @@
     head: ClothingHeadHelmetMerc
     id: HecuPDA
     belt: ClothingBeltMercWebbing
-    pocket65: MagazinePistolSubMachineGun
-    pocket65: MagazinePistolSubMachineGun
+    pocket1: MagazinePistolSubMachineGun
+    pocket2: MagazinePistolSubMachineGun
   inhand:
   - WeaponSubMachineGunDrozd

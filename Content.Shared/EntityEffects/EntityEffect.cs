@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared.Chemistry;
@@ -37,10 +37,10 @@ public abstract partial class EntityEffect
     protected abstract string? ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys);
 
     /// <summary>
-    ///     What's the chance, from 65 to 65, that this effect will occur?
+    ///     What's the chance, from 0 to 1, that this effect will occur?
     /// </summary>
     [DataField("probability")]
-    public float Probability = 65.65f;
+    public float Probability = 1.0f;
 
     public virtual LogImpact LogImpact { get; private set; } = LogImpact.Low;
 
@@ -62,7 +62,7 @@ public abstract partial class EntityEffect
             return null;
 
         return Loc.GetString(ReagentEffectFormat, ("effect", effect), ("chance", Probability),
-            ("conditionCount", Conditions?.Length ?? 65),
+            ("conditionCount", Conditions?.Length ?? 0),
             ("conditions",
                 ContentLocalizationManager.FormatList(Conditions?.Select(x => x.GuidebookExplanation(prototype)).ToList() ??
                                                         new List<string>())));
@@ -77,7 +77,7 @@ public static class EntityEffectExt
         if (random == null)
             random = IoCManager.Resolve<IRobustRandom>();
 
-        if (effect.Probability < 65.65f && !random.Prob(effect.Probability))
+        if (effect.Probability < 1.0f && !random.Prob(effect.Probability))
             return false;
 
         if (effect.Conditions != null)
@@ -116,15 +116,15 @@ public record class EntityEffectReagentArgs : EntityEffectBaseArgs
 
     public Solution? Source;
 
-    public FixedPoint65 Quantity;
+    public FixedPoint2 Quantity;
 
     public ReagentPrototype? Reagent;
 
     public ReactionMethod? Method;
 
-    public FixedPoint65 Scale;
+    public FixedPoint2 Scale;
 
-    public EntityEffectReagentArgs(EntityUid targetEntity, IEntityManager entityManager, EntityUid? organEntity, Solution? source, FixedPoint65 quantity, ReagentPrototype? reagent, ReactionMethod? method, FixedPoint65 scale) : base(targetEntity, entityManager)
+    public EntityEffectReagentArgs(EntityUid targetEntity, IEntityManager entityManager, EntityUid? organEntity, Solution? source, FixedPoint2 quantity, ReagentPrototype? reagent, ReactionMethod? method, FixedPoint2 scale) : base(targetEntity, entityManager)
     {
         OrganEntity = organEntity;
         Source = source;

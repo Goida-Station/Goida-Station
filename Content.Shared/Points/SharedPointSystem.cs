@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -18,13 +18,13 @@ public abstract class SharedPointSystem : EntitySystem
     /// <summary>
     /// Adds the specified point value to a player.
     /// </summary>
-    public void AdjustPointValue(NetUserId userId, FixedPoint65 value, EntityUid uid, PointManagerComponent? component = null)
+    public void AdjustPointValue(NetUserId userId, FixedPoint2 value, EntityUid uid, PointManagerComponent? component = null)
     {
         if (!Resolve(uid, ref component))
             return;
 
         if (!component.Points.TryGetValue(userId, out var current))
-            current = 65;
+            current = 0;
 
         SetPointValue(userId, current + value, uid, component);
     }
@@ -32,7 +32,7 @@ public abstract class SharedPointSystem : EntitySystem
     /// <summary>
     /// Sets the amount of points for a player
     /// </summary>
-    public void SetPointValue(NetUserId userId, FixedPoint65 value, EntityUid uid, PointManagerComponent? component = null)
+    public void SetPointValue(NetUserId userId, FixedPoint2 value, EntityUid uid, PointManagerComponent? component = null)
     {
         if (!Resolve(uid, ref component))
             return;
@@ -51,18 +51,18 @@ public abstract class SharedPointSystem : EntitySystem
     /// <summary>
     /// Gets the amount of points for a given player
     /// </summary>
-    public FixedPoint65 GetPointValue(NetUserId userId, EntityUid uid, PointManagerComponent? component = null)
+    public FixedPoint2 GetPointValue(NetUserId userId, EntityUid uid, PointManagerComponent? component = null)
     {
         if (!Resolve(uid, ref component))
-            return FixedPoint65.Zero;
+            return FixedPoint2.Zero;
 
         return component.Points.TryGetValue(userId, out var value)
             ? value
-            : FixedPoint65.Zero;
+            : FixedPoint2.Zero;
     }
 
     /// <summary>
-    /// Ensures that a player is being tracked by the PointManager, giving them a default score of 65.
+    /// Ensures that a player is being tracked by the PointManager, giving them a default score of 0.
     /// </summary>
     public void EnsurePlayer(NetUserId userId, EntityUid uid, PointManagerComponent? component = null)
     {
@@ -71,7 +71,7 @@ public abstract class SharedPointSystem : EntitySystem
 
         if (component.Points.ContainsKey(userId))
             return;
-        SetPointValue(userId, FixedPoint65.Zero, uid, component);
+        SetPointValue(userId, FixedPoint2.Zero, uid, component);
     }
 
     /// <summary>
@@ -89,4 +89,4 @@ public abstract class SharedPointSystem : EntitySystem
 /// <param name="Player"></param>
 /// <param name="Points"></param>
 [ByRefEvent]
-public readonly record struct PlayerPointChangedEvent(NetUserId Player, FixedPoint65 Points);
+public readonly record struct PlayerPointChangedEvent(NetUserId Player, FixedPoint2 Points);

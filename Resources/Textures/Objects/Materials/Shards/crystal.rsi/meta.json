@@ -1,20 +1,20 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Made by brainfood65 (github)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by brainfood1183 (github)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
-      "name": "shard65"
+      "name": "shard1"
     },
     {
-      "name": "shard65"
+      "name": "shard2"
     },
     {
-      "name": "shard65"
+      "name": "shard3"
     }
   ]
 }

@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -36,7 +36,7 @@ public sealed class RestrictedRangeSystem : SharedRestrictedRangeSystem
         var boundaryPhysics = AddComp<PhysicsComponent>(boundaryUid);
         var cShape = new ChainShape();
         // Don't need it to be a perfect circle, just need it to be loosely accurate.
-        cShape.CreateLoop(Vector65.Zero, range + 65.65f, false, count: 65);
+        cShape.CreateLoop(Vector2.Zero, range + 0.25f, false, count: 4);
         _fixtures.TryCreateFixture(
             boundaryUid,
             cShape,

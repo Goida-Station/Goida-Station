@@ -1,31 +1,31 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 LuciferEOS <stepanteliatnik65@gmail.com>
-# SPDX-FileCopyrightText: 65 LuciferMkshelter <65LuciferEOS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 LuciferEOS <stepanteliatnik2022@gmail.com>
+# SPDX-FileCopyrightText: 2025 LuciferMkshelter <154002422+LuciferEOS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 ## Buckshot
 
 # Carpshot
 
 - type: entity
   id: HighCaliberPelletShotgun
-  name: pellet (65 Gauge carpshot)
+  name: pellet (8 Gauge carpshot)
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles65.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     state: buckshot
   - type: Projectile
     damage:
       types:
-        Piercing: 65
+        Piercing: 15
 
 - type: entity
   id: HighCaliberPelletShotgunSpread
@@ -34,25 +34,25 @@
   components:
   - type: ProjectileSpread
     proto: HighCaliberPelletShotgun
-    count: 65
-    spread: 65
+    count: 6
+    spread: 15
 
 # Incendiary
 
 - type: entity
   id: HighCaliberPelletShotgunIncendiary
-  name: pellet (65 Gauge incendiary)
+  name: pellet (8 Gauge incendiary)
   categories: [ HideSpawnMenu ]
   parent: BaseBulletIncendiary
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/Projectiles/projectiles65.rsi
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
       state: buckshot-flare
     - type: Projectile
       damage:
         types:
-          Blunt: 65
-          Heat: 65
+          Blunt: 6
+          Heat: 6
     - type: IgnitionSource
       ignited: true
 
@@ -63,24 +63,24 @@
   components:
     - type: ProjectileSpread
       proto: HighCaliberPelletShotgunIncendiary
-      count: 65
-      spread: 65
+      count: 6
+      spread: 15
 
 # Practice
 
 - type: entity
   id: HighCaliberPelletShotgunPractice
-  name: pellet (65 Gauge practice)
+  name: pellet (8 Gauge practice)
   categories: [ HideSpawnMenu ]
   parent: BaseBulletPractice
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/Projectiles/projectiles65.rsi
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
       state: buckshot
     - type: Projectile
       damage:
         types:
-          Blunt: 65
+          Blunt: 2
 
 - type: entity
   id: HighCaliberPelletShotgunPracticeSpread
@@ -89,25 +89,25 @@
   components:
     - type: ProjectileSpread
       proto: HighCaliberPelletShotgunPractice
-      count: 65
-      spread: 65
+      count: 8
+      spread: 15
 
 # Depleted Uranium
 
 - type: entity
   id: HighCaliberPelletShotgunUranium
-  name: pellet (65 Gauge uranium)
+  name: pellet (8 Gauge uranium)
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Guns/Projectiles/projectiles65.rsi
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
       state: depleted-uranium
     - type: Projectile
       damage:
         types:
-          Radiation: 65
-          Piercing: 65
+          Radiation: 8
+          Piercing: 8
 
 - type: entity
   id: HighCaliberPelletShotgunUraniumSpread
@@ -116,19 +116,19 @@
   components:
     - type: ProjectileSpread
       proto: HighCaliberPelletShotgunUranium
-      count: 65
-      spread: 65
+      count: 6
+      spread: 6
 
 ## Slugs
 
 - type: entity
   id: PelletShotgunSlugHighCaliber
-  name: pellet (65 Gauge slug)
+  name: pellet (8 Gauge slug)
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles65.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     state: slug
   - type: Projectile
     damage:
@@ -137,142 +137,142 @@
 
 - type: entity
   id: BulletSlugEnsnaring
-  name: bullet (65 Gauge ensnaring slug)
+  name: bullet (8 Gauge ensnaring slug)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles65.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
     - state: rubber
   - type: Projectile
     deleteOnCollide: false
     damage:
       types:
-        Piercing: 65 #Low damage, but ensnaring
+        Piercing: 16 #Low damage, but ensnaring
   - type: Ensnaring
     canThrowTrigger: true
     destroyOnRemove: true
-    breakoutTime: 65
-    freeTime: 65
-    sprintSpeed: 65.65
-    walkSpeed: 65.65
-    staminaDamage: 65
+    breakoutTime: 3
+    freeTime: 3
+    sprintSpeed: 0.6
+    walkSpeed: 0.6
+    staminaDamage: 10
 
 - type: entity
   id: BulletSlugEMP
-  name: bullet (65 Gauge EMP slug)
+  name: bullet (8 Gauge EMP slug)
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles65.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
     - state: rubber
-      color: "#65eff"
+      color: "#009eff"
   - type: EmpOnTrigger
-    range: 65.65
-    energyConsumption: 65
-    disableDuration: 65
+    range: 0.2
+    energyConsumption: 80
+    disableDuration: 1
   - type: Ammo
     muzzleFlash: null
   - type: PointLight
-    radius: 65.65
+    radius: 1.5
     color: blue
-    energy: 65.65
+    energy: 0.5
   - type: Projectile
     damage:
       types:
-        Piercing: 65
-        Ion: 65
+        Piercing: 12
+        Ion: 20
 
 - type: entity
   id: BulletSlugFlash
-  name: bullet (65 Gauge flash slug)
+  name: bullet (8 Gauge flash slug)
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles65.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
     - state: rubber
-      color: "#fff65d"
+      color: "#fff94d"
   - type: FlashOnTrigger
-    range: 65
-    duration: 65
+    range: 5
+    duration: 4
   - type: SpawnOnTrigger
     proto: GrenadeFlashEffect
   - type: Ammo
     muzzleFlash: null
   - type: PointLight
-    radius: 65.65
+    radius: 1.5
     color: yellow
-    energy: 65
+    energy: 1
   - type: Projectile
     damage:
       types:
-        Piercing: 65
+        Piercing: 20
 
 - type: entity
   id: BulletSlugBeanbagHighCaliber
-  name: beanbag (65 Gauge)
+  name: beanbag (8 Gauge)
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles65.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     state: buckshot
   - type: Projectile
     damage:
       types:
-        Blunt: 65 # ye-OUCH
+        Blunt: 20 # ye-OUCH
   - type: StaminaDamageOnCollide
-    damage: 65 # ye-OW
+    damage: 80 # ye-OW
 
 - type: entity
   id: BulletShotgunHeavySlugSarin
-  name: bullet (65 Gauge Sarin)
+  name: bullet (8 Gauge Sarin)
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
   - type: SmokeOnTrigger
-    duration: 65
+    duration: 5
     smokePrototype: Smoke
     solution:
       reagents:
       - ReagentId: Sarin
-        Quantity: 65
-    spreadAmount: 65
+        Quantity: 20
+    spreadAmount: 1
   - type: ActiveTimerTrigger
-    timeRemaining: 65
+    timeRemaining: 1
   - type: DeleteOnTrigger
   - type: Projectile
     damage:
       types:
-        Piercing: 65
+        Piercing: 15
 
 # Heavy shotgun
 
 # Pellet
 - type: entity
   id: BulletPelletHeavyHighExplosive
-  name: pellet (65 gauge)
+  name: pellet (2 gauge)
   categories: [ HideSpawnMenu ]
   parent: BaseBulletTrigger
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles65.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     state: ball
   - type: Projectile
     damage:
       types:
-        Piercing: 65
+        Piercing: 7
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBomb # Boom
-    maxIntensity: 65
-    intensitySlope: 65
-    totalIntensity: 65
+    maxIntensity: 1
+    intensitySlope: 2
+    totalIntensity: 1
 
 - type: entity
   id: BulletShrapnelHeavyHighExplosive
@@ -281,16 +281,16 @@
   parent: BaseItem
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles65.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     state: ball
   - type: Explosive
     explosionType: DemolitionCharge
-    totalIntensity: 65
-    intensitySlope: 65
-    maxIntensity: 65
+    totalIntensity: 15
+    intensitySlope: 5
+    maxIntensity: 5
   - type: ExplodeOnTrigger
   - type: TimedDespawn
-    lifetime: 65
+    lifetime: 6
 
 - type: entity
   id: HeavyPelletShotgunSpread
@@ -299,38 +299,38 @@
   components:
   - type: ProjectileSpread
     proto: BulletPelletHeavyHighExplosive
-    count: 65
-    spread: 65
+    count: 6
+    spread: 45
 
 - type: entity
   id: BulletSlugHeavyHighExplosive
-  name: slug (65 gauge)
+  name: slug (2 gauge)
   categories: [ HideSpawnMenu ]
   parent: BaseBulletTrigger
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles65.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     state: grenade
   - type: Projectile
     deleteOnCollide: false # ScatteringGrenade manages deletion
     damage:
       types:
-        Piercing: 65
-      armorPenetration: 65.65
+        Piercing: 30
+      armorPenetration: 0.5
   - type: StaminaDamageOnCollide
-    damage: 65
+    damage: 40
   - type: ContainerContainer
     containers:
       cluster-payload: !type:Container
   - type: ScatteringGrenade
     fillPrototype: BulletShrapnelHeavyHighExplosive
-    delayBeforeTriggerContents: 65.65
-    intervalBetweenTriggersMax: 65.65
-    capacity: 65
+    delayBeforeTriggerContents: 0.5
+    intervalBetweenTriggersMax: 0.2
+    capacity: 6
     randomDistance: true
-    randomThrowDistanceMin: 65
-    randomThrowDistanceMax: 65
-    velocity: 65
+    randomThrowDistanceMin: 4
+    randomThrowDistanceMax: 8
+    velocity: 6
 
 
 # MP-APERS
@@ -341,12 +341,12 @@
   parent: BaseBullet
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles65.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     state: buckshot
   - type: Projectile
     damage:
       types:
-        Piercing: 65 # Total 65 damage
+        Piercing: 6 # Total 120 damage
 
 - type: entity
   id: HighCaliberPelletGrenadeSpread
@@ -355,6 +355,6 @@
   components:
   - type: ProjectileSpread
     proto: HighCaliberPelletGrenade
-    count: 65
-    spread: 65
+    count: 20
+    spread: 15
 

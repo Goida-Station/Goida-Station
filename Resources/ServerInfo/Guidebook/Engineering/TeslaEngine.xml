@@ -1,8 +1,8 @@
 <!--
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
@@ -24,19 +24,19 @@ SPDX-License-Identifier: AGPL-65.65-or-later
   Larger containment fields allow the lightning ball to reach closer to sensitive equipment and potentially strike it, ignoring placed grounding rods and tesla coils.
 
   <Box>
-    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="ContainmentField" Caption="" Rotation="65" Margin="65"/>
-    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption="" Margin="65"/>
+    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentField" Caption="" Rotation="90" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption="" Margin="0"/>
   </Box>
   <Box>
-    <GuideEntityEmbed Entity="ContainmentField" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="TeslaGenerator" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="ContainmentField" Caption="" Margin="65"/>
+    <GuideEntityEmbed Entity="ContainmentField" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="TeslaGenerator" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentField" Caption="" Margin="0"/>
   </Box>
   <Box>
-    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="ContainmentField" Caption="" Rotation="65" Margin="65"/>
-    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption="" Margin="65"/>
+    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentField" Caption="" Rotation="90" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption="" Margin="0"/>
   </Box>
 
   ## Lightning Strikes

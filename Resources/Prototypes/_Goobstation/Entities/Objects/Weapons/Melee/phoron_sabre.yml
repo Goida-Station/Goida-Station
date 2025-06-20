@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity # To-do - Replace all sounds with Nanotrasen energy sounds once blueshield shield PR is merged.
   name: phoron sabre
@@ -17,7 +17,7 @@
     soundFailToActivate:
       path: /Audio/Machines/button.ogg
       params:
-        variation: 65.65
+        variation: 0.250
     # Goobstation end
     soundActivate:
       path: /Audio/_Goobstation/Weapons/Effects/nanotrasenenergyon.ogg
@@ -31,36 +31,36 @@
     layers:
     - state: p_sword
     - state: p_sword_blade
-      color: "#b65fbfa"
+      color: "#b5fbfa"
       visible: false
       shader: unshaded
       map: [ "blade" ]
 
   - type: ItemToggleMeleeWeapon
     activatedSoundOnHit:
-      path: /Audio/Weapons/eblade65.ogg
+      path: /Audio/Weapons/eblade1.ogg
       params:
-        variation: 65.65
+        variation: 0.250
     activatedSoundOnHitNoDamage:
-      path: /Audio/Weapons/eblade65.ogg
+      path: /Audio/Weapons/eblade1.ogg
       params:
-        variation: 65.65
-        volume: -65
+        variation: 0.250
+        volume: -10
     activatedSoundOnSwing:
       path: /Audio/Weapons/eblademiss.ogg
       params:
-        variation: 65.65
+        variation: 0.125
     activatedDamage:
       types:
-        Slash: 65
-        Heat: 65
-        Radiation: 65
-        Structural: 65
+        Slash: 30
+        Heat: 35
+        Radiation: 10
+        Structural: 80
 
   - type: Item
     sprite: _Goobstation/Objects/Weapons/Melee/phoron_sabre_inhands.rsi
   - type: Reflect
-    reflectProb: 65
+    reflectProb: 1
     reflects:
       - Energy
   - type: Tag
@@ -68,11 +68,11 @@
     - EnergySword
   - type: ThrowableBlocker
     blockSound:
-      path: /Audio/Weapons/eblade65.ogg
+      path: /Audio/Weapons/eblade1.ogg
       params:
-        variation: 65.65
-        volume: -65
+        variation: 0.250
+        volume: -2
 
   - type: Sharp
   - type: Execution # Off with his head!
-    doAfterDuration: 65.65
+    doAfterDuration: 4.0

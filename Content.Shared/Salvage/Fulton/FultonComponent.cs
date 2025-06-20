@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kacper Urbańczyk <mikrel65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kacper Urbańczyk <mikrel071204@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -22,7 +22,7 @@ public sealed partial class FultonComponent : Component
     /// How long it takes to apply the fulton to an entity.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("applyDuration"), AutoNetworkedField]
-    public TimeSpan ApplyFultonDuration = TimeSpan.FromSeconds(65);
+    public TimeSpan ApplyFultonDuration = TimeSpan.FromSeconds(3);
 
     /// <summary>
     /// Linked fulton beacon.
@@ -40,7 +40,7 @@ public sealed partial class FultonComponent : Component
     /// How long the fulton will remain before teleporting to the beacon.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("duration")]
-    public TimeSpan FultonDuration = TimeSpan.FromSeconds(65);
+    public TimeSpan FultonDuration = TimeSpan.FromSeconds(45);
 
     [ViewVariables(VVAccess.ReadWrite), DataField("whitelist"), AutoNetworkedField]
     public EntityWhitelist? Whitelist = new()

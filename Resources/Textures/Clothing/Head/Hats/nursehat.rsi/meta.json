@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from TGstation github https://github.com/tgstation/tgstation/commit/65f65be65dee65a65d65e65fbb65d65d65a65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from TGstation github https://github.com/tgstation/tgstation/commit/988f795be2dee02a8252d3e584fbb94d43d4a965",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "name": "equipped-HELMET",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-HELMET-hamster",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

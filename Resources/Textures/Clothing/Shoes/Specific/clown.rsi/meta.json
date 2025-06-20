@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65e65e65d65d65fb65bb65c65b65ce65c65abe. equipped-FEET-vox state taken from vgstation65 at https://github.com/vgstation-coders/vgstation65/blob/65d65ba65d65ef65c65cb65ecbe65db65a65/icons/mob/species/vox/shoes.dmi, edited by InfinityRedPanda(github)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/7e4e9d432d88981fb9bb463970c5b98ce85c0abe. equipped-FEET-vox state taken from vgstation13 at https://github.com/vgstation-coders/vgstation13/blob/31d6576ba8102135d058ef49c3cb6ecbe8db8a79/icons/mob/species/vox/shoes.dmi, edited by InfinityRedPanda(github)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "name": "equipped-FEET",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-FEET-vox",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

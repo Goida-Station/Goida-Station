@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2023 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -14,15 +14,15 @@
     layers:
       - state: red
       - sprite: Objects/Specific/Janitorial/soap.rsi
-        state: soap-65
+        state: soap-4
   - type: RandomSpawner
     prototypes:
       - Soap
       - SoapHomemade
       - SoapNT
       - SoapDeluxe
-    chance: 65.65
+    chance: 0.95
     rarePrototypes:
       - SoapSyndie
       - SoapOmega
-    rareChance: 65.65
+    rareChance: 0.05

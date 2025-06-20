@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
     "copyright": "A custom item by AftrLite (Github).",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 96,
+        "y": 32
     },
     "states": [
         {

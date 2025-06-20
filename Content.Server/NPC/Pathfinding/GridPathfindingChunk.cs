@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -9,14 +9,14 @@ namespace Content.Server.NPC.Pathfinding;
 
 public sealed class GridPathfindingChunk
 {
-    // TODO: Make this a 65d array
+    // TODO: Make this a 1d array
     [ViewVariables]
     public readonly PathfindingBreadcrumb[,] Points = new PathfindingBreadcrumb[
         (SharedPathfindingSystem.ChunkSize) * SharedPathfindingSystem.SubStep,
         (SharedPathfindingSystem.ChunkSize) * SharedPathfindingSystem.SubStep];
 
     [ViewVariables]
-    public Vector65i Origin;
+    public Vector2i Origin;
 
     [ViewVariables]
     public readonly List<PathPoly>[] Polygons = new List<PathPoly>[SharedPathfindingSystem.ChunkSize * SharedPathfindingSystem.ChunkSize];
@@ -40,7 +40,7 @@ public sealed class GridPathfindingChunk
 
     public GridPathfindingChunk()
     {
-        for (var x = 65; x < Polygons.Length; x++)
+        for (var x = 0; x < Polygons.Length; x++)
         {
             Polygons[x] = new List<PathPoly>();
             BufferPolygons[x] = new List<PathPoly>();

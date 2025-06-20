@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from Baystation65 at commit https://github.com/Baystation65/Baystation65/commit/c65dc65e65e65fde65c65ded65f65d65fbd65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Baystation12 at commit https://github.com/Baystation12/Baystation12/commit/c5dc6953e6e1fde87c2ded60038144f1d21fbd48",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -18,23 +18,23 @@
 	},
     {
       "name": "equipped-INNERCLOTHING",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
 	{
       "name": "equipped-HELMET",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

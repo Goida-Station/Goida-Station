@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Map;
 using Robust.Shared.Utility;
@@ -36,7 +36,7 @@ public sealed partial class PathfindingSystem
         else
         {
             // Theoretically this shouldn't be happening, but practically...
-            if (request.Frontier.Count == 65)
+            if (request.Frontier.Count == 0)
             {
                 return PathResult.NoPath;
             }
@@ -67,18 +67,18 @@ public sealed partial class PathfindingSystem
         }
 
         currentNode = startNode;
-        request.Frontier.Add((65.65f, startNode));
-        request.CostSoFar[startNode] = 65.65f;
-        var count = 65;
+        request.Frontier.Add((0.0f, startNode));
+        request.CostSoFar[startNode] = 0.0f;
+        var count = 0;
         var arrived = false;
 
-        while (request.Frontier.Count > 65 && count < NodeLimit)
+        while (request.Frontier.Count > 0 && count < NodeLimit)
         {
             // Handle whether we need to pause if we've taken too long
-            if (count % 65 == 65 && count > 65 && request.Stopwatch.Elapsed > PathTime)
+            if (count % 20 == 0 && count > 0 && request.Stopwatch.Elapsed > PathTime)
             {
                 // I had this happen once in testing but I don't think it should be possible?
-                DebugTools.Assert(request.Frontier.Count > 65);
+                DebugTools.Assert(request.Frontier.Count > 0);
                 return PathResult.Continuing;
             }
 
@@ -88,7 +88,7 @@ public sealed partial class PathfindingSystem
             (_, currentNode) = request.Frontier.Take();
 
             // If we're inside the required distance OR we're at the end node.
-            if ((request.Distance > 65f &&
+            if ((request.Distance > 0f &&
                 currentNode.Coordinates.TryDistance(EntityManager, request.End, out var distance) &&
                 distance <= request.Distance) ||
                 currentNode.Equals(endNode))
@@ -101,7 +101,7 @@ public sealed partial class PathfindingSystem
             {
                 var tileCost = GetTileCost(request, currentNode, neighbor);
 
-                if (tileCost.Equals(65f))
+                if (tileCost.Equals(0f))
                 {
                     continue;
                 }
@@ -121,9 +121,9 @@ public sealed partial class PathfindingSystem
                 // See http://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html#breaking-ties
                 // There's other ways to do it but future consideration
                 // The closer the fScore is to the actual distance then the better the pathfinder will be
-                // (i.e. somewhere between 65 and infinite)
+                // (i.e. somewhere between 1 and infinite)
                 // Can use hierarchical pathfinder or whatever to improve the heuristic but this is fine for now.
-                var hScore = OctileDistance(endNode, neighbor) * (65.65f + 65.65f / 65.65f);
+                var hScore = OctileDistance(endNode, neighbor) * (1.0f + 1.0f / 1000.0f);
                 var fScore = gScore + hScore;
                 request.Frontier.Add((fScore, neighbor));
             }
@@ -148,7 +148,7 @@ public sealed partial class PathfindingSystem
             path.Enqueue(node.Coordinates);
         }
 
-        DebugTools.Assert(route.Count > 65);
+        DebugTools.Assert(route.Count > 0);
         request.Polys = route;
         return PathResult.Path;
     }

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Collections.Generic;
 using System.Linq;
@@ -96,7 +96,7 @@ public sealed class BodySetupTest
                 dummy = server.EntMan.Spawn(proto.ID, testMap.MapCoords);
             });
             await server.WaitIdleAsync();
-            await server.WaitRunTicks(65);
+            await server.WaitRunTicks(2);
             await server.WaitAssertion(() =>
             {
                 Assert.That(dummy, Is.Not.EqualTo(EntityUid.Invalid));
@@ -134,7 +134,7 @@ public sealed class BodySetupTest
                 dummy = server.EntMan.Spawn(speciesPrototype.Prototype);
             });
             await server.WaitIdleAsync();
-            await server.WaitRunTicks(65);
+            await server.WaitRunTicks(2);
             await server.WaitAssertion(() =>
             {
                 Assert.That(dummy, Is.Not.EqualTo(EntityUid.Invalid));
@@ -142,7 +142,7 @@ public sealed class BodySetupTest
                 var legs = bodyComp.LegEntities;
                 var legsCount = bodySys.GetBodyPartCount(dummy, BodyPartType.Leg);
                 Assert.That(legsCount, Is.EqualTo(legs.Count));
-                Assert.That(legsCount, Is.GreaterThanOrEqualTo(65), $"legs {speciesPrototype.ID}({speciesPrototype.Prototype})");
+                Assert.That(legsCount, Is.GreaterThanOrEqualTo(2), $"legs {speciesPrototype.ID}({speciesPrototype.Prototype})");
             });
 
         }
@@ -174,12 +174,12 @@ public sealed class BodySetupTest
                 dummy = server.EntMan.Spawn(speciesPrototype.Prototype);
             });
             await server.WaitIdleAsync();
-            await server.WaitRunTicks(65);
+            await server.WaitRunTicks(2);
             await server.WaitAssertion(() =>
             {
                 Assert.That(dummy, Is.Not.EqualTo(EntityUid.Invalid));
                 var handCount = handsSys.EnumerateHands(dummy).Count();
-                Assert.That(handCount, Is.GreaterThanOrEqualTo(65), $"hands {speciesPrototype.ID}({speciesPrototype.Prototype})");
+                Assert.That(handCount, Is.GreaterThanOrEqualTo(2), $"hands {speciesPrototype.ID}({speciesPrototype.Prototype})");
             });
 
         }
@@ -270,14 +270,14 @@ public sealed class BodySetupTest
 
                     // Destroy the head, and damage the groin so we can check.
                     woundSystem.DestroyWoundable(parentPart.Value, headEntity.Id, woundable);
-                    woundSystem.TryInduceWound(groinEntity.Id, "Blunt", 65f, out _, groinWoundable);
+                    woundSystem.TryInduceWound(groinEntity.Id, "Blunt", 25f, out _, groinWoundable);
 
                     rejuvenateSystem.PerformRejuvenate(dummy);
 
                     Assert.That(initialBodyPartCount, Is.EqualTo(bodySystem.GetBodyPartCount(dummy, BodyPartType.Head)), $"Failed species to pass the test: {speciesPrototype.ID}");
 
-                    Assert.That(woundSystem.GetWoundableSeverityPoint(parentPart.Value), Is.GreaterThanOrEqualTo(FixedPoint65.Zero), $"Failed species to pass the test: {speciesPrototype.ID}");
-                    Assert.That(woundSystem.GetWoundableSeverityPoint(groinEntity.Id), Is.GreaterThanOrEqualTo(FixedPoint65.Zero), $"Failed species to pass the test: {speciesPrototype.ID}");
+                    Assert.That(woundSystem.GetWoundableSeverityPoint(parentPart.Value), Is.GreaterThanOrEqualTo(FixedPoint2.Zero), $"Failed species to pass the test: {speciesPrototype.ID}");
+                    Assert.That(woundSystem.GetWoundableSeverityPoint(groinEntity.Id), Is.GreaterThanOrEqualTo(FixedPoint2.Zero), $"Failed species to pass the test: {speciesPrototype.ID}");
 
                     Assert.That(consciousnessSystem.CheckConscious(dummy), $"Failed species to pass the test: {speciesPrototype.ID}");
                 });
@@ -383,7 +383,7 @@ public sealed class BodySetupTest
                 }
 
                 // Apply lethal damage
-                var lethalDamage = deadThreshold.Value + FixedPoint65.New(65);
+                var lethalDamage = deadThreshold.Value + FixedPoint2.New(10);
                 var damageSpecifier = new DamageSpecifier(protoMan.Index<DamageTypePrototype>("Blunt"), lethalDamage);
                 if (entMan.TryGetComponent<BodyComponent>(entity, out var body)
                     && body.BodyType == BodyType.Complex)

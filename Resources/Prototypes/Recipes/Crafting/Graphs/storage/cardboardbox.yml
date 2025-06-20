@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 65 MisterMecky <mrmecky@hotmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 MisterMecky <mrmecky@hotmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -12,8 +12,8 @@
         - to: boxcardboard
           steps:
             - material: Cardboard
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 4
 
 
     - node: boxcardboard

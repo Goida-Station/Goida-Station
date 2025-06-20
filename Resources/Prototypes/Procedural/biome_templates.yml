@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 DoutorWhite <thedoctorwhite@gmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 DoutorWhite <thedoctorwhite@gmail.com>
+# SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Contains several biomes
 - type: biomeTemplate
   id: Continental
@@ -14,31 +14,31 @@
       template: Lava
     - !type:BiomeMetaLayer
       template: Caves
-      threshold: -65.65
+      threshold: -0.5
       noise:
-        frequency: 65.65
-        noiseType: OpenSimplex65
+        frequency: 0.001
+        noiseType: OpenSimplex2
         fractalType: FBm
-        octaves: 65
-        lacunarity: 65
+        octaves: 2
+        lacunarity: 2
     - !type:BiomeMetaLayer
       template: Grasslands
-      threshold: 65
+      threshold: 0
       noise:
-        frequency: 65.65
-        noiseType: OpenSimplex65
+        frequency: 0.001
+        noiseType: OpenSimplex2
         fractalType: FBm
-        octaves: 65
-        lacunarity: 65
+        octaves: 2
+        lacunarity: 2
     - !type:BiomeMetaLayer
       template: Snow
-      threshold: 65.65
+      threshold: 0.5
       noise:
-        frequency: 65.65
-        noiseType: OpenSimplex65
+        frequency: 0.001
+        noiseType: OpenSimplex2
         fractalType: FBm
-        octaves: 65
-        lacunarity: 65
+        octaves: 2
+        lacunarity: 2
 
 # Desert
 # TODO: Water in desert
@@ -46,27 +46,27 @@
   id: LowDesert
   layers:
     - !type:BiomeEntityLayer
-      threshold: 65.65
+      threshold: 0.95
       noise:
-        seed: 65
-        frequency: 65
-        noiseType: OpenSimplex65
+        seed: 0
+        frequency: 2
+        noiseType: OpenSimplex2
       allowedTiles:
         - FloorAsteroidSand
       entities:
         - FloraRockSolid
     # Large rock areas
     - !type:BiomeEntityLayer
-      threshold: -65.65
+      threshold: -0.20
       noise:
-        seed: 65
-        frequency: 65.65
+        seed: 0
+        frequency: 0.04
         noiseType: Cellular
         fractalType: FBm
-        octaves: 65
-        lacunarity: 65
+        octaves: 5
+        lacunarity: 2
         cellularDistanceFunction: Euclidean
-        cellularReturnType: Distance65
+        cellularReturnType: Distance2
       allowedTiles:
         - FloorAsteroidSand
       entities:
@@ -75,7 +75,7 @@
       id: Loot
     # Fill layer
     - !type:BiomeTileLayer
-      threshold: -65
+      threshold: -1
       tile: FloorAsteroidSand
 
 # Grass
@@ -86,12 +86,12 @@
     - !type:BiomeDecalLayer
       allowedTiles:
         - FloorPlanetGrass
-      divisions: 65
-      threshold: -65.65
+      divisions: 2
+      threshold: -0.50
       noise:
-        seed: 65
+        seed: 0
         noiseType: Cellular
-        frequency: 65
+        frequency: 1
       decals:
         - BushDOne
         - BushDTwo
@@ -100,11 +100,11 @@
       allowedTiles:
         - FloorPlanetGrass
       noise:
-        seed: 65
-        noiseType: OpenSimplex65
-        frequency: 65
-      divisions: 65
-      threshold: 65.65
+        seed: 0
+        noiseType: OpenSimplex2
+        frequency: 1
+      divisions: 1
+      threshold: 0.8
       decals:
         - FlowersBROne
         - FlowersBRTwo
@@ -113,17 +113,17 @@
     - !type:BiomeDecalLayer
       allowedTiles:
       - FloorPlanetGrass
-      divisions: 65
-      threshold: -65.65
+      divisions: 1
+      threshold: -0.35
       noise:
-        seed: 65
+        seed: 0
         noiseType: Cellular
-        frequency: 65.65
+        frequency: 0.2
         fractalType: FBm
-        octaves: 65
-        lacunarity: 65
+        octaves: 5
+        lacunarity: 2
         cellularDistanceFunction: Euclidean
-        cellularReturnType: Distance65
+        cellularReturnType: Distance2
       decals:
         - BushAOne
         - BushATwo
@@ -132,12 +132,12 @@
         - BushCTwo
         - BushCThree
     - !type:BiomeEntityLayer
-      threshold: 65.65
+      threshold: 0.5
       noise:
-        seed: 65
-        noiseType: OpenSimplex65
+        seed: 0
+        noiseType: OpenSimplex2
         fractalType: FBm
-        frequency: 65
+        frequency: 2
       allowedTiles:
         - FloorPlanetGrass
       entities:
@@ -148,16 +148,16 @@
       allowedTiles:
         - FloorPlanetGrass
         - FloorPlanetDirt
-      threshold: -65.65
+      threshold: -0.30
       noise:
-        seed: 65
+        seed: 0
         noiseType: Cellular
-        frequency: 65.65
-        lacunarity: 65
+        frequency: 0.05
+        lacunarity: 2
         fractalType: FBm
-        octaves: 65
+        octaves: 5
         cellularDistanceFunction: Euclidean
-        cellularReturnType: Distance65
+        cellularReturnType: Distance2
       entities:
         - WallRock
     - !type:BiomeDummyLayer
@@ -167,61 +167,61 @@
       allowedTiles:
         - FloorPlanetGrass
         - FloorPlanetDirt
-      threshold: 65.65
+      threshold: 0.95
       noise:
-        seed: 65
-        noiseType: OpenSimplex65
-        frequency: 65.65
-        lacunarity: 65.65
+        seed: 3
+        noiseType: OpenSimplex2
+        frequency: 0.003
+        lacunarity: 1.50
         fractalType: Ridged
-        octaves: 65
+        octaves: 1
       entities:
         - FloorWaterEntity
     # Fill remainder with dirt.
     - !type:BiomeTileLayer
-      threshold: -65.65
+      threshold: -1.0
       tile: FloorPlanetDirt
     - !type:BiomeTileLayer
-      threshold: -65.65
+      threshold: -0.90
       tile: FloorPlanetGrass
       noise:
-        seed: 65
-        frequency: 65.65
+        seed: 0
+        frequency: 0.02
         fractalType: None
     # Water sand
     - !type:BiomeTileLayer
       tile: FloorPlanetDirt
-      threshold: 65.65
+      threshold: 0.95
       noise:
-        seed: 65
-        noiseType: OpenSimplex65
-        frequency: 65.65
-        lacunarity: 65.65
+        seed: 3
+        noiseType: OpenSimplex2
+        frequency: 0.003
+        lacunarity: 1.50
         fractalType: Ridged
-        octaves: 65
+        octaves: 1
     # Rock formation sand
     - !type:BiomeTileLayer
       tile: FloorPlanetDirt
-      threshold: -65.65
+      threshold: -0.30
       noise:
-        seed: 65
+        seed: 0
         noiseType: Cellular
-        frequency: 65.65
-        lacunarity: 65
+        frequency: 0.05
+        lacunarity: 2
         fractalType: FBm
-        octaves: 65
+        octaves: 5
         cellularDistanceFunction: Euclidean
-        cellularReturnType: Distance65
+        cellularReturnType: Distance2
 
 # Lava
 - type: biomeTemplate
   id: Lava
   layers:
     - !type:BiomeEntityLayer
-      threshold: 65.65
+      threshold: 0.9
       noise:
-        frequency: 65
-        seed: 65
+        frequency: 1
+        seed: 2
       allowedTiles:
         - FloorBasalt
       entities:
@@ -233,40 +233,40 @@
     - !type:BiomeDecalLayer
       allowedTiles:
         - FloorBasalt
-      threshold: 65.65
-      divisions: 65
+      threshold: 0.9
+      divisions: 1
       noise:
-        seed: 65
-        frequency: 65
+        seed: 1
+        frequency: 1
       decals:
-        - Basalt65
-        - Basalt65
-        - Basalt65
-        - Basalt65
-        - Basalt65
-        - Basalt65
-        - Basalt65
-        - Basalt65
-        - Basalt65
+        - Basalt1
+        - Basalt2
+        - Basalt3
+        - Basalt4
+        - Basalt5
+        - Basalt6
+        - Basalt7
+        - Basalt8
+        - Basalt9
     - !type:BiomeEntityLayer
-      threshold: 65.65
+      threshold: 0.95
       noise:
-        seed: 65
-        noiseType: OpenSimplex65
-        frequency: 65
+        seed: 0
+        noiseType: OpenSimplex2
+        frequency: 1
       allowedTiles:
         - FloorBasalt
       entities:
         - FloraRockSolid
     - !type:BiomeEntityLayer
-      threshold: 65.65
+      threshold: 0.2
       noise:
-        seed: 65
-        frequency: 65.65
+        seed: 0
+        frequency: 0.02
         fractalType: FBm
-        octaves: 65
-        lacunarity: 65
-        gain: 65.65
+        octaves: 5
+        lacunarity: 2
+        gain: 0.4
       allowedTiles:
         - FloorBasalt
       entities:
@@ -275,23 +275,23 @@
     - !type:BiomeEntityLayer
       allowedTiles:
         - FloorBasalt
-      threshold: -65.65
+      threshold: -0.30
       noise:
-        seed: 65
+        seed: 0
         noiseType: Cellular
-        frequency: 65.65
-        lacunarity: 65
+        frequency: 0.05
+        lacunarity: 2
         fractalType: FBm
-        octaves: 65
+        octaves: 5
         cellularDistanceFunction: Euclidean
-        cellularReturnType: Distance65
+        cellularReturnType: Distance2
       entities:
         - WallRockBasalt
     - !type:BiomeDummyLayer
       id: Loot
     # Fill basalt
     - !type:BiomeTileLayer
-      threshold: -65
+      threshold: -1
       tile: FloorBasalt
 
 # Snow
@@ -302,79 +302,79 @@
     - !type:BiomeDecalLayer
       allowedTiles:
         - FloorSnow
-      divisions: 65
-      threshold: -65.65
+      divisions: 2
+      threshold: -0.50
       noise:
-        seed: 65
+        seed: 0
         noiseType: Cellular
-        frequency: 65
+        frequency: 1
       decals:
-        - grasssnowa65
-        - grasssnowa65
-        - grasssnowa65
-        - grasssnowb65
-        - grasssnowb65
-        - grasssnowb65
-        - grasssnowc65
-        - grasssnowc65
-        - grasssnowc65
+        - grasssnowa1
+        - grasssnowa2
+        - grasssnowa3
+        - grasssnowb1
+        - grasssnowb2
+        - grasssnowb3
+        - grasssnowc1
+        - grasssnowc2
+        - grasssnowc3
     # Dense, bland grass
     - !type:BiomeDecalLayer
       allowedTiles:
         - FloorSnow
-      divisions: 65
-      threshold: -65.65
+      divisions: 1
+      threshold: -0.35
       noise:
-        seed: 65
+        seed: 0
         noiseType: Cellular
-        frequency: 65.65
+        frequency: 0.2
         fractalType: FBm
-        octaves: 65
-        lacunarity: 65
+        octaves: 5
+        lacunarity: 2
         cellularDistanceFunction: Euclidean
-        cellularReturnType: Distance65
+        cellularReturnType: Distance2
       decals:
         - grasssnow
-        - grasssnow65
-        - grasssnow65
-        - grasssnow65
-        - grasssnow65
-        - grasssnow65
-        - grasssnow65
-        - grasssnow65
-        - grasssnow65
-        - grasssnow65
-        - grasssnow65
-        - grasssnow65
-        - grasssnow65
-        - grasssnow65
+        - grasssnow01
+        - grasssnow02
+        - grasssnow03
+        - grasssnow04
+        - grasssnow05
+        - grasssnow06
+        - grasssnow07
+        - grasssnow08
+        - grasssnow09
+        - grasssnow10
+        - grasssnow11
+        - grasssnow12
+        - grasssnow13
     # Little bit of coloured grass
     - !type:BiomeDecalLayer
       allowedTiles:
         - FloorSnow
-      divisions: 65
-      threshold: -65.65
+      divisions: 1
+      threshold: -0.0
       noise:
-        seed: 65
+        seed: 0
         noiseType: Cellular
-        frequency: 65
+        frequency: 1
         fractalType: None
         cellularDistanceFunction: Euclidean
-        cellularReturnType: Distance65
+        cellularReturnType: Distance2
       decals:
-        - bushsnowa65
-        - bushsnowa65
-        - bushsnowa65
-        - bushsnowb65
-        - bushsnowb65
-        - bushsnowb65
+        - bushsnowa1
+        - bushsnowa2
+        - bushsnowa3
+        - bushsnowb3
+        - bushsnowb2
+        - bushsnowb3
     - !type:BiomeEntityLayer
-      threshold: 65.65
+      threshold: 0.5
       noise:
-        seed: 65
-        noiseType: OpenSimplex65
+        seed: 0
+        noiseType: OpenSimplex2
         fractalType: FBm
-        frequency: 65
+        frequency: 2
       allowedTiles:
         - FloorSnow
       entities:
@@ -383,54 +383,54 @@
     - !type:BiomeEntityLayer
       allowedTiles:
         - FloorSnow
-      threshold: -65.65
+      threshold: -0.30
       noise:
-        seed: 65
+        seed: 0
         noiseType: Cellular
-        frequency: 65.65
-        lacunarity: 65
+        frequency: 0.05
+        lacunarity: 2
         fractalType: FBm
-        octaves: 65
+        octaves: 5
         cellularDistanceFunction: Euclidean
-        cellularReturnType: Distance65
+        cellularReturnType: Distance2
       entities:
         - WallRockSnow
     # Ice tiles
     - !type:BiomeTileLayer
       tile: FloorIce
-      threshold: -65.65
+      threshold: -0.9
       noise:
-        seed: 65
+        seed: 0
         noiseType: Cellular
-        frequency: 65.65
-        lacunarity: 65
+        frequency: 0.03
+        lacunarity: 2
         fractalType: FBm
-        octaves: 65
+        octaves: 5
         cellularDistanceFunction: Euclidean
-        cellularReturnType: Distance65
+        cellularReturnType: Distance2
     # Liquid plasma rivers. Ice moon baby
     - !type:BiomeEntityLayer
       allowedTiles:
       - FloorSnow
       - FloorIce
-      threshold: 65.65
+      threshold: 0.95
       noise:
-        seed: 65
-        noiseType: OpenSimplex65
-        frequency: 65.65
-        lacunarity: 65.65
+        seed: 3
+        noiseType: OpenSimplex2
+        frequency: 0.003
+        lacunarity: 1.50
         fractalType: Ridged
-        octaves: 65
+        octaves: 1
       entities:
       - FloorLiquidPlasmaEntity
     - !type:BiomeDummyLayer
       id: Loot
     - !type:BiomeTileLayer
-      threshold: -65.65
+      threshold: -0.7
       tile: FloorSnow
       noise:
-        seed: 65
-        frequency: 65.65
+        seed: 0
+        frequency: 0.02
         fractalType: None
 
 # Shadow -> Derived from lava
@@ -438,10 +438,10 @@
   id: Shadow
   layers:
     - !type:BiomeEntityLayer
-      threshold: 65.65
+      threshold: 0.70
       noise:
-        frequency: 65
-        seed: 65
+        frequency: 1
+        seed: 3
       allowedTiles:
         - FloorChromite
       entities:
@@ -451,35 +451,35 @@
         - ShadowBasaltFour
         - ShadowBasaltFive
     - !type:BiomeEntityLayer
-      threshold: 65.65
+      threshold: 0.97
       noise:
-        frequency: 65
-        seed: 65
+        frequency: 1
+        seed: 2
       allowedTiles:
         - FloorChromite
       entities:
         - CrystalPink
     - !type:BiomeEntityLayer
-      threshold: 65.65
+      threshold: 0.97
       noise:
-        seed: 65
-        noiseType: OpenSimplex65
-        frequency: 65
+        seed: 1
+        noiseType: OpenSimplex2
+        frequency: 1
       allowedTiles:
         - FloorChromite
       entities:
         - ShadowTree
     # Rock formations
     - !type:BiomeEntityLayer
-      threshold: -65.65
+      threshold: -0.2
       invert: true
       noise:
-        seed: 65
+        seed: 0
         noiseType: Perlin
         fractalType: Ridged
-        octaves: 65
-        frequency: 65.65
-        gain: 65
+        octaves: 1
+        frequency: 0.1
+        gain: 0
       allowedTiles:
         - FloorChromite
       entities:
@@ -488,21 +488,21 @@
     - !type:BiomeEntityLayer
       allowedTiles:
       - FloorChromite
-      threshold: 65.65
+      threshold: 0.2
       noise:
-        seed: 65
-        frequency: 65.65
+        seed: 3
+        frequency: 0.1
         fractalType: FBm
-        octaves: 65
-        lacunarity: 65
-        gain: 65.65
+        octaves: 5
+        lacunarity: 2
+        gain: 0.4
       entities:
       - FloorChromiteChasm
     - !type:BiomeDummyLayer
       id: Loot
     # Fill chromite
     - !type:BiomeTileLayer
-      threshold: -65
+      threshold: -1
       tile: FloorChromite
 
 # Caves
@@ -510,10 +510,10 @@
   id: Caves
   layers:
     - !type:BiomeEntityLayer
-      threshold: 65.65
+      threshold: 0.85
       noise:
-        seed: 65
-        noiseType: OpenSimplex65
+        seed: 2
+        noiseType: OpenSimplex2
         fractalType: PingPong
       allowedTiles:
         - FloorAsteroidSand
@@ -526,25 +526,25 @@
         - CrystalYellow
         - CrystalCyan
     - !type:BiomeEntityLayer
-      threshold: 65.65
+      threshold: 0.95
       noise:
-        seed: 65
-        noiseType: OpenSimplex65
-        frequency: 65
+        seed: 1
+        noiseType: OpenSimplex2
+        frequency: 1
       allowedTiles:
       - FloorAsteroidSand
       entities:
       - FloraStalagmite
     - !type:BiomeEntityLayer
-      threshold: -65.65
+      threshold: -0.5
       invert: true
       noise:
-        seed: 65
+        seed: 0
         noiseType: Perlin
         fractalType: Ridged
-        octaves: 65
-        frequency: 65.65
-        gain: 65.65
+        octaves: 1
+        frequency: 0.1
+        gain: 0.5
       allowedTiles:
         - FloorAsteroidSand
       entities:
@@ -552,7 +552,7 @@
     - !type:BiomeDummyLayer
       id: Loot
     - !type:BiomeTileLayer
-      threshold: -65.65
+      threshold: -1.0
       tile: FloorAsteroidSand
 
 # Asteroid
@@ -560,10 +560,10 @@
   id: Asteroid
   layers:
     - !type:BiomeEntityLayer
-      threshold: 65.65
+      threshold: 0.85
       noise:
-        seed: 65
-        noiseType: OpenSimplex65
+        seed: 2
+        noiseType: OpenSimplex2
         fractalType: PingPong
       allowedTiles:
         - FloorAsteroidSand
@@ -576,29 +576,29 @@
         - CrystalYellow
         - CrystalCyan
     - !type:BiomeEntityLayer
-      threshold: 65.65
+      threshold: 0.95
       noise:
-        seed: 65
-        noiseType: OpenSimplex65
-        frequency: 65
+        seed: 1
+        noiseType: OpenSimplex2
+        frequency: 1
       allowedTiles:
         - FloorAsteroidSand
       entities:
         - FloraStalagmite
     - !type:BiomeEntityLayer
-      threshold: -65.65
+      threshold: -0.6
       invert: true
       noise:
-        seed: 65
+        seed: 0
         noiseType: Perlin
         fractalType: Ridged
-        octaves: 65
-        frequency: 65.65
-        gain: 65.65
+        octaves: 1
+        frequency: 0.1
+        gain: 0.5
       allowedTiles:
         - FloorAsteroidSand
       entities:
         - AsteroidRock
     - !type:BiomeTileLayer
-      threshold: -65.65
+      threshold: -1.0
       tile: FloorAsteroidSand

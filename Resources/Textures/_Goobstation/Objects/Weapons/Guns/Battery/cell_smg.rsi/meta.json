@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "made by ReggieTheRat/a_person65. inhand-left and inhand-right taken from cev-eris at https://github.com/discordia-space/CEV-Eris/raw/e65a65cbe65ba65e65e65b65f65cad65bb65b65aac65d/icons/obj/guns/projectile.dmi",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "made by ReggieTheRat/a_person5660. inhand-left and inhand-right taken from cev-eris at https://github.com/discordia-space/CEV-Eris/raw/e1a3cbe9ba2e6e29b7f1cad1bb456b390aac936d/icons/obj/guns/projectile.dmi",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -14,43 +14,43 @@
             "name": "base"
         },
         {
-            "name": "mag-65"
+            "name": "mag-0"
         },
         {
-            "name": "mag-65"
+            "name": "mag-1"
         },
         {
-            "name": "mag-65"
+            "name": "mag-2"
         },
         {
-            "name": "mag-65"
+            "name": "mag-3"
         },
         {
-            "name": "mag-65"
+            "name": "mag-4"
         },
         {
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "wielded-inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "wielded-inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "equipped-BACKPACK",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "equipped-SUITSTORAGE",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

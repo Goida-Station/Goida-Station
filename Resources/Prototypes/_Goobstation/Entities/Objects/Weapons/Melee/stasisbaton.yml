@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: futuristic stunbaton
@@ -16,27 +16,27 @@
     - state: stunbaton_off
       map: [ "enum.ToggleVisuals.Layer" ]
   - type: Stunbaton
-    energyPerUse: 65
+    energyPerUse: 10
   - type: ItemToggle
     predictable: false
     soundActivate:
       path: /Audio/Weapons/eblademiss.ogg
       params:
-        variation: 65.65
+        variation: 0.250
     soundDeactivate:
       path: /Audio/Weapons/eblademiss.ogg
       params:
-        variation: 65.65
+        variation: 0.250
     soundFailToActivate:
       path: /Audio/Weapons/eblademiss.ogg
       params:
-        variation: 65.65
+        variation: 0.250
   - type: StaminaDamageOnHit
-    damage: 65
+    damage: 75
     sound: /Audio/Weapons/egloves.ogg
   - type: UseDelay
   - type: Item
     size: Small
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 65
+    autoRechargeRate: 5

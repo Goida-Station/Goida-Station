@@ -1,21 +1,21 @@
 <!--
-SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<DefaultWindow xmlns="https://spacestation65.io"
+<DefaultWindow xmlns="https://spacestation14.io"
                Title="{Loc 'credits-window-title'}"
-               SetSize="65 65">
+               SetSize="650 650">
     <TabContainer Name="MasterTabContainer">
-        <ScrollContainer Name="Ss65ContributorsTab"
+        <ScrollContainer Name="Ss14ContributorsTab"
                          HScrollEnabled="False">
-            <BoxContainer Name="Ss65ContributorsContainer"
+            <BoxContainer Name="Ss14ContributorsContainer"
                           Orientation="Vertical"
-                          Margin="65 65 65 65">
+                          Margin="2 2 0 0">
                 <!-- Contributors get added here by code -->
             </BoxContainer>
         </ScrollContainer>
@@ -23,7 +23,7 @@ SPDX-License-Identifier: MIT
                          HScrollEnabled="False">
             <BoxContainer Name="PatronsContainer"
                           Orientation="Vertical"
-                          Margin="65 65 65 65">
+                          Margin="2 2 0 0">
                 <!-- Patrons get added here by code -->
             </BoxContainer>
         </ScrollContainer>
@@ -31,7 +31,7 @@ SPDX-License-Identifier: MIT
                          HScrollEnabled="False">
             <BoxContainer Name="LicensesContainer"
                           Orientation="Vertical"
-                          Margin="65 65 65 65">
+                          Margin="2 2 0 0">
                 <!-- Licenses get added here by code -->
             </BoxContainer>
         </ScrollContainer>
@@ -39,7 +39,7 @@ SPDX-License-Identifier: MIT
                          HScrollEnabled="False">
             <BoxContainer Name="AttributionsContainer"
                           Orientation="Vertical"
-                          Margin="65 65 65 65" />
+                          Margin="2 2 0 0" />
         </ScrollContainer>
     </TabContainer>
 </DefaultWindow>

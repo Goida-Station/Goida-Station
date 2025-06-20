@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: BaseBlob
@@ -30,10 +30,10 @@
         Flammable: [Touch]
         Extinguish: [Touch]
     - type: ExplosionResistance
-      damageCoefficient: 65.65
+      damageCoefficient: 0.3
     - type: FireVisuals
       sprite: Effects/fire.rsi
-      normalState: 65
+      normalState: 1
     - type: Damageable
       damageContainer: Blob
       damageModifierSet: BaseBlob
@@ -44,13 +44,13 @@
       anchored: true
     - type: Fixtures
       fixtures:
-        fix65:
+        fix1:
           shape:
             !type:PhysShapeAabb
-            bounds: "-65.65,-65.65,65.65,65.65"
+            bounds: "-0.5,-0.5,0.5,0.5"
           layer:
             - BlobTileLayer
-          density: 65
+          density: 1000
     - type: GuideHelp
       guides:
       - Blob

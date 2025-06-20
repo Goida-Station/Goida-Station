@@ -1,313 +1,313 @@
-# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 # Rooms
 # Large
-# - 65x65
+# - 17x5
 - type: dungeonRoom
-  id: Haunted65x65a
-  size: 65,65
+  id: Haunted17x5a
+  size: 17,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 0,0
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65b
-  size: 65,65
+  id: Haunted17x5b
+  size: 17,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 18,0
   tags:
     - Haunted
 
-# - 65x65
+# - 7x7
 - type: dungeonRoom
-  id: Haunted65x65a
-  size: 65,65
+  id: Haunted7x7a
+  size: 7,7
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
-  tags:
-    - Haunted
-
-- type: dungeonRoom
-  id: Haunted65x65b
-  size: 65,65
-  atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 0,42
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65c
-  size: 65,65
+  id: Haunted7x7b
+  size: 7,7
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 8,42
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65d
-  size: 65,65
+  id: Haunted7x7c
+  size: 7,7
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 16,42
+  tags:
+    - Haunted
+
+- type: dungeonRoom
+  id: Haunted7x7d
+  size: 7,7
+  atlas: /Maps/Dungeon/haunted.yml
+  offset: 24,42
   tags:
     - Haunted
 
 # Medium
-# - 65x65
+# - 11x5
 - type: dungeonRoom
-  id: Haunted65x65a
-  size: 65,65
+  id: Haunted11x5a
+  size: 11,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 0,6
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65b
-  size: 65,65
+  id: Haunted11x5b
+  size: 11,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 12,6
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65c
-  size: 65,65
+  id: Haunted11x5c
+  size: 11,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 24,6
   tags:
     - Haunted
 
-# - 65x65
+# - 7x5
 - type: dungeonRoom
-  id: Haunted65x65a
-  size: 65,65
+  id: Haunted7x5a
+  size: 7,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
-  tags:
-    - Haunted
-
-- type: dungeonRoom
-  id: Haunted65x65b
-  size: 65,65
-  atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 0,12
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65c
-  size: 65,65
+  id: Haunted7x5b
+  size: 7,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 8,12
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65d
-  size: 65,65
+  id: Haunted7x5c
+  size: 7,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
-  tags:
-    - Haunted
-
-# - 65x65
-- type: dungeonRoom
-  id: Haunted65x65a
-  size: 65,65
-  atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 16,12
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65b
-  size: 65,65
+  id: Haunted7x5d
+  size: 7,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 24,12
   tags:
     - Haunted
 
-# - 65x65
+# - 13x3
 - type: dungeonRoom
-  id: Haunted65x65a
-  size: 65,65
+  id: Haunted13x3a
+  size: 13,3
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
-  tags:
-    - Haunted
-
-- type: dungeonRoom
-  id: Haunted65x65b
-  size: 65,65
-  atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 0,30
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65c
-  size: 65,65
+  id: Haunted13x3b
+  size: 13,3
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 14,30
   tags:
     - Haunted
 
-# - 65x65
+# - 11x3
 - type: dungeonRoom
-  id: Haunted65x65a
-  size: 65,65
+  id: Haunted11x3a
+  size: 11,3
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
-  tags:
-    - Haunted
-
-- type: dungeonRoom
-  id: Haunted65x65b
-  size: 65,65
-  atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 0,34
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65c
-  size: 65,65
+  id: Haunted11x3b
+  size: 11,3
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 12,34
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65d
-  size: 65,65
+  id: Haunted11x3c
+  size: 11,3
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 24,34
+  tags:
+    - Haunted
+
+# - 7x3
+- type: dungeonRoom
+  id: Haunted7x3a
+  size: 7,3
+  atlas: /Maps/Dungeon/haunted.yml
+  offset: 0,38
+  tags:
+    - Haunted
+
+- type: dungeonRoom
+  id: Haunted7x3b
+  size: 7,3
+  atlas: /Maps/Dungeon/haunted.yml
+  offset: 8,38
+  tags:
+    - Haunted
+
+- type: dungeonRoom
+  id: Haunted7x3c
+  size: 7,3
+  atlas: /Maps/Dungeon/haunted.yml
+  offset: 16,38
+  tags:
+    - Haunted
+
+- type: dungeonRoom
+  id: Haunted7x3d
+  size: 7,3
+  atlas: /Maps/Dungeon/haunted.yml
+  offset: 24,38
   tags:
     - Haunted
 
 # Small
-# - 65x65
+# - 5x5
 - type: dungeonRoom
-  id: Haunted65x65a
-  size: 65,65
+  id: Haunted5x5a
+  size: 5,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 0,18
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65b
-  size: 65,65
+  id: Haunted5x5b
+  size: 5,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 6,18
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65c
-  size: 65,65
+  id: Haunted5x5c
+  size: 5,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 12,18
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65d
-  size: 65,65
+  id: Haunted5x5d
+  size: 5,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 18,18
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65e
-  size: 65,65
+  id: Haunted5x5e
+  size: 5,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 24,18
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65f
-  size: 65,65
+  id: Haunted5x5f
+  size: 5,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 30,18
   tags:
     - Haunted
 
-# - 65x65
+# - 3x5
 - type: dungeonRoom
-  id: Haunted65x65a
-  size: 65,65
+  id: Haunted3x5a
+  size: 3,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
-  tags:
-    - Haunted
-
-- type: dungeonRoom
-  id: Haunted65x65b
-  size: 65,65
-  atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 0,24
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65c
-  size: 65,65
+  id: Haunted3x5b
+  size: 3,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 4,24
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65d
-  size: 65,65
+  id: Haunted3x5c
+  size: 3,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 8,24
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65e
-  size: 65,65
+  id: Haunted3x5d
+  size: 3,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 12,24
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65f
-  size: 65,65
+  id: Haunted3x5e
+  size: 3,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 16,24
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65g
-  size: 65,65
+  id: Haunted3x5f
+  size: 3,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 20,24
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65h
-  size: 65,65
+  id: Haunted3x5g
+  size: 3,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 24,24
   tags:
     - Haunted
 
 - type: dungeonRoom
-  id: Haunted65x65i
-  size: 65,65
+  id: Haunted3x5h
+  size: 3,5
   atlas: /Maps/Dungeon/haunted.yml
-  offset: 65,65
+  offset: 28,24
+  tags:
+    - Haunted
+
+- type: dungeonRoom
+  id: Haunted3x5i
+  size: 3,5
+  atlas: /Maps/Dungeon/haunted.yml
+  offset: 32,24
   tags:
     - Haunted

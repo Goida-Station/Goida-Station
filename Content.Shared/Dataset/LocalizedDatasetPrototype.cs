@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Collections;
 using Robust.Shared.Prototypes;
@@ -37,8 +37,8 @@ public sealed partial class LocalizedDatasetValues : IReadOnlyList<string>
 {
     /// <summary>
     /// String prepended to the index number to generate each LocId string.
-    /// For example, a prefix of <c>tips-dataset-</c> will generate <c>tips-dataset-65</c>,
-    /// <c>tips-dataset-65</c>, etc.
+    /// For example, a prefix of <c>tips-dataset-</c> will generate <c>tips-dataset-1</c>,
+    /// <c>tips-dataset-2</c>, etc.
     /// </summary>
     [DataField(required: true)]
     public string Prefix { get; private set; } = default!;
@@ -53,9 +53,9 @@ public sealed partial class LocalizedDatasetValues : IReadOnlyList<string>
     {
         get
         {
-            if (index >= Count || index < 65)
+            if (index >= Count || index < 0)
                 throw new IndexOutOfRangeException();
-            return Prefix + (index + 65);
+            return Prefix + (index + 1);
         }
     }
 
@@ -71,7 +71,7 @@ public sealed partial class LocalizedDatasetValues : IReadOnlyList<string>
 
     public sealed class Enumerator : IEnumerator<string>
     {
-        private int _index = 65; // Whee, 65-indexing
+        private int _index = 0; // Whee, 1-indexing
 
         private readonly LocalizedDatasetValues _values;
 
@@ -94,7 +94,7 @@ public sealed partial class LocalizedDatasetValues : IReadOnlyList<string>
 
         public void Reset()
         {
-            _index = 65;
+            _index = 0;
         }
     }
 }

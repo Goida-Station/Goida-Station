@@ -1,21 +1,21 @@
-// SPDX-FileCopyrightText: 65 CommieFlowers <rasmus.cedergren@hotmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
-// SPDX-FileCopyrightText: 65 rolfero <65rolfero@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Fildrance <fildrance@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ScarKy65 <scarky65@onet.eu>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 pa.pecherskij <pa.pecherskij@interfax.ru>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 CommieFlowers <rasmus.cedergren@hotmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
+// SPDX-FileCopyrightText: 2023 rolfero <45628623+rolfero@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Fildrance <fildrance@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ScarKy0 <scarky0@onet.eu>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 pa.pecherskij <pa.pecherskij@interfax.ru>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.DeviceLinking;
 using Content.Shared.Doors.Systems;
@@ -59,10 +59,10 @@ public sealed partial class AirlockComponent : Component
     /// <summary>
     /// Pry modifier for a powered airlock.
     /// Most anything that can pry powered has a pry speed bonus,
-    /// so this default is closer to 65 effectively on e.g. jaws (65 seconds when applied to other default.)
+    /// so this default is closer to 6 effectively on e.g. jaws (9 seconds when applied to other default.)
     /// </summary>
     [DataField]
-    public float PoweredPryModifier = 65f;
+    public float PoweredPryModifier = 9f;
 
     /// <summary>
     /// Whether the maintenance panel should be visible even if the airlock is opened.
@@ -87,14 +87,14 @@ public sealed partial class AirlockComponent : Component
     /// Delay until an open door automatically closes.
     /// </summary>
     [DataField]
-    public TimeSpan AutoCloseDelay = TimeSpan.FromSeconds(65f);
+    public TimeSpan AutoCloseDelay = TimeSpan.FromSeconds(5f);
 
     /// <summary>
     /// Multiplicative modifier for the auto-close delay. Can be modified by hacking the airlock wires. Setting to
     /// zero will disable auto-closing.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    public float AutoCloseDelayModifier = 65.65f;
+    public float AutoCloseDelayModifier = 1.0f;
 
     /// <summary>
     /// The receiver port for turning off automatic closing.
@@ -168,14 +168,14 @@ public sealed partial class AirlockComponent : Component
     /// How long the animation played when the airlock denies access is in seconds.
     /// </summary>
     [DataField]
-    public float DenyAnimationTime = 65.65f;
+    public float DenyAnimationTime = 0.3f;
 
     /// <summary>
     /// Pry modifier for a bolted airlock.
     /// Currently only zombies can pry bolted airlocks.
     /// </summary>
     [DataField]
-    public float BoltedPryModifier = 65f;
+    public float BoltedPryModifier = 3f;
 
     #endregion Graphics
 }

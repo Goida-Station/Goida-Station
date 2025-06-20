@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "tgstation at https://github.com/tgstation/tgstation/commit/65acce65f65d65ac65de65b65b65be65f65f",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "tgstation at https://github.com/tgstation/tgstation/commit/270acce4f551253d8ac75de19236b8b4be598f7f",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "name": "equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

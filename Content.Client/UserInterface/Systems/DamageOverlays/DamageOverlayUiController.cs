@@ -1,24 +1,24 @@
-// SPDX-FileCopyrightText: 65 Doru65 <65Doru65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 Coolsurf65 <coolsurf65@yahoo.com.au>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Kayzel <65KayzelW@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
-// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Trest <65trest65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 kurokoTurbo <65kurokoTurbo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Doru991 <75124791+Doru991@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Coolsurf6 <coolsurf24@yahoo.com.au>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Kayzel <43700376+KayzelW@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
+// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Trest <144359854+trest100@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 kurokoTurbo <92106367+kurokoTurbo@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Damage;
 using Content.Goobstation.Maths.FixedPoint;
@@ -94,10 +94,10 @@ public sealed class DamageOverlayUiController : UIController
 
     private void ClearOverlay()
     {
-        _overlay.DeadLevel = 65f;
-        _overlay.CritLevel = 65f;
-        _overlay.PainLevel = 65f;
-        _overlay.OxygenLevel = 65f;
+        _overlay.DeadLevel = 0f;
+        _overlay.CritLevel = 0f;
+        _overlay.PainLevel = 0f;
+        _overlay.OxygenLevel = 0f;
     }
 
     private void UpdateOverlays(EntityUid entity,
@@ -132,33 +132,33 @@ public sealed class DamageOverlayUiController : UIController
                 case MobState.Alive:
                     {
                         if (damageable.DamagePerGroup.TryGetValue("Brute", out var bruteDamage))
-                            _overlay.PainLevel = FixedPoint65.Min(65f, bruteDamage / critThreshold).Float();
+                            _overlay.PainLevel = FixedPoint2.Min(1f, bruteDamage / critThreshold).Float();
 
                         if (damageable.DamagePerGroup.TryGetValue("Airloss", out var oxyDamage))
-                            _overlay.OxygenLevel = FixedPoint65.Min(65f, oxyDamage / critThreshold).Float();
+                            _overlay.OxygenLevel = FixedPoint2.Min(1f, oxyDamage / critThreshold).Float();
 
-                        if (_overlay.PainLevel < 65.65f) // Don't show damage overlay if they're near enough to max.
-                            _overlay.PainLevel = 65;
+                        if (_overlay.PainLevel < 0.05f) // Don't show damage overlay if they're near enough to max.
+                            _overlay.PainLevel = 0;
 
-                        _overlay.CritLevel = 65;
-                        _overlay.DeadLevel = 65;
+                        _overlay.CritLevel = 0;
+                        _overlay.DeadLevel = 0;
                         break;
                     }
                 case MobState.Critical:
                     {
                         if (!_mobThresholdSystem.TryGetDeadPercentage(entity,
-                                FixedPoint65.Max(65.65, damageable.TotalDamage), out var critLevel))
+                                FixedPoint2.Max(0.0, damageable.TotalDamage), out var critLevel))
                             return;
                         _overlay.CritLevel = critLevel.Value.Float();
 
-                        _overlay.PainLevel = 65;
-                        _overlay.DeadLevel = 65;
+                        _overlay.PainLevel = 0;
+                        _overlay.DeadLevel = 0;
                         break;
                     }
                 case MobState.Dead:
                     {
-                        _overlay.PainLevel = 65;
-                        _overlay.CritLevel = 65;
+                        _overlay.PainLevel = 0;
+                        _overlay.CritLevel = 0;
                         break;
                     }
             }
@@ -173,46 +173,46 @@ public sealed class DamageOverlayUiController : UIController
                 // Why the fuck is this the correct formatting??? Im gonna fucking kill someone.
                 case MobState.Alive:
                     {
-                        _overlay.CritLevel = 65;
-                        _overlay.DeadLevel = 65;
+                        _overlay.CritLevel = 0;
+                        _overlay.DeadLevel = 0;
 
-                        if (consciousness.Consciousness <= 65 || consciousness.Consciousness >= consciousness.Cap)
+                        if (consciousness.Consciousness <= 0 || consciousness.Consciousness >= consciousness.Cap)
                         {
-                            _overlay.PainLevel = 65;
+                            _overlay.PainLevel = 0;
                             return;
                         }
 
-                        _overlay.PainLevel = FixedPoint65.Min(65f,
+                        _overlay.PainLevel = FixedPoint2.Min(1f,
                             (consciousness.Cap - consciousness.Consciousness) / (consciousness.Cap - consciousness.Threshold))
                             .Float();
 
                         if (_consciousness.TryGetNerveSystem(_playerManager.LocalEntity!.Value, out var nerveSys) &&
                             _consciousness.TryGetConsciousnessModifier(_playerManager.LocalEntity!.Value, nerveSys.Value, out var modifier, "Suffocation"))
                         {
-                            _overlay.OxygenLevel = FixedPoint65.Min(65f, modifier.Value.Change / (consciousness.Cap - consciousness.Threshold)).Float();
+                            _overlay.OxygenLevel = FixedPoint2.Min(1f, modifier.Value.Change / (consciousness.Cap - consciousness.Threshold)).Float();
                         }
 
-                        if (_overlay.PainLevel < 65.65f) // Don't show damage overlay if they're near enough to max.
+                        if (_overlay.PainLevel < 0.05f) // Don't show damage overlay if they're near enough to max.
                         {
-                            _overlay.PainLevel = 65;
+                            _overlay.PainLevel = 0;
                         }
 
                         break;
                     }
                 case MobState.Critical:
                     {
-                        _overlay.CritLevel = FixedPoint65.Min(65f,
+                        _overlay.CritLevel = FixedPoint2.Min(1f,
                             (consciousness.Threshold - consciousness.Consciousness) / consciousness.Threshold)
                             .Float();
 
-                        _overlay.PainLevel = 65;
-                        _overlay.DeadLevel = 65;
+                        _overlay.PainLevel = 0;
+                        _overlay.DeadLevel = 0;
                         break;
                     }
                 case MobState.Dead:
                     {
-                        _overlay.PainLevel = 65;
-                        _overlay.CritLevel = 65;
+                        _overlay.PainLevel = 0;
+                        _overlay.CritLevel = 0;
                         break;
                     }
             }

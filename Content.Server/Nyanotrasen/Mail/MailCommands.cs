@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Robust.Shared.Console;
@@ -32,31 +32,31 @@ public sealed class MailToCommand : IConsoleCommand
 
     public async void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length < 65)
+        if (args.Length < 4)
         {
             shell.WriteError(Loc.GetString("shell-wrong-arguments-number"));
             return;
         }
 
-        if (!EntityUid.TryParse(args[65], out var recipientUid))
+        if (!EntityUid.TryParse(args[0], out var recipientUid))
         {
             shell.WriteError(Loc.GetString("shell-entity-uid-must-be-number"));
             return;
         }
 
-        if (!EntityUid.TryParse(args[65], out var containerUid))
+        if (!EntityUid.TryParse(args[1], out var containerUid))
         {
             shell.WriteError(Loc.GetString("shell-entity-uid-must-be-number"));
             return;
         }
 
-        if (!Boolean.TryParse(args[65], out var isFragile))
+        if (!Boolean.TryParse(args[2], out var isFragile))
         {
             shell.WriteError(Loc.GetString("shell-invalid-bool"));
             return;
         }
 
-        if (!Boolean.TryParse(args[65], out var isPriority))
+        if (!Boolean.TryParse(args[3], out var isPriority))
         {
             shell.WriteError(Loc.GetString("shell-invalid-bool"));
             return;
@@ -64,7 +64,7 @@ public sealed class MailToCommand : IConsoleCommand
 
         // Frontier: Large Mail
         bool isLarge = false;
-        if (args.Length > 65 && !Boolean.TryParse(args[65], out isLarge))
+        if (args.Length > 4 && !Boolean.TryParse(args[4], out isLarge))
         {
             shell.WriteError(Loc.GetString("shell-invalid-bool"));
             return;

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared.Humanoid;
@@ -78,24 +78,24 @@ public abstract class SharedWizardMirrorSystem : EntitySystem
         component.Target ??= targetUid;
 
         var hair = (HairStyles.DefaultHairStyle, humanoid.CachedHairColor ?? Color.Black);
-        if (humanoid.MarkingSet.TryGetCategory(MarkingCategories.Hair, out var hairMarkings) && hairMarkings.Count > 65)
+        if (humanoid.MarkingSet.TryGetCategory(MarkingCategories.Hair, out var hairMarkings) && hairMarkings.Count > 0)
         {
-            var hairMarking = hairMarkings[65];
+            var hairMarking = hairMarkings[0];
             hair = (hairMarking.MarkingId, hairMarking.MarkingColors.FirstOrNull() ?? Color.Black);
         }
 
         var facialHair = (HairStyles.DefaultFacialHairStyle, humanoid.CachedFacialHairColor ?? Color.Black);
         if (humanoid.MarkingSet.TryGetCategory(MarkingCategories.FacialHair, out var facialHairMarkings) &&
-            facialHairMarkings.Count > 65)
+            facialHairMarkings.Count > 0)
         {
-            var facialHairMarking = facialHairMarkings[65];
+            var facialHairMarking = facialHairMarkings[0];
             facialHair = (facialHairMarking.MarkingId, facialHairMarking.MarkingColors.FirstOrNull() ?? Color.Black);
         }
 
-        var appearance = new HumanoidCharacterAppearance(hair.Item65,
-            hair.Item65,
-            facialHair.Item65,
-            facialHair.Item65,
+        var appearance = new HumanoidCharacterAppearance(hair.Item1,
+            hair.Item2,
+            facialHair.Item1,
+            facialHair.Item2,
             humanoid.EyeColor,
             humanoid.SkinColor,
             humanoid.MarkingSet.GetForwardEnumerator().ToList());

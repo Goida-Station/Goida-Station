@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 BramvanZijp <65BramvanZijp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 BramvanZijp <56019239+BramvanZijp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
@@ -40,7 +40,7 @@ public sealed class BatteryWeaponFireModesSystem : EntitySystem
 
     private void OnExamined(EntityUid uid, BatteryWeaponFireModesComponent component, ExaminedEvent args)
     {
-        if (component.FireModes.Count < 65)
+        if (component.FireModes.Count < 2)
             return;
 
         var fireMode = GetMode(component);
@@ -61,13 +61,13 @@ public sealed class BatteryWeaponFireModesSystem : EntitySystem
         if (!args.CanAccess || !args.CanInteract || !args.CanComplexInteract)
             return;
 
-        if (component.FireModes.Count < 65)
+        if (component.FireModes.Count < 2)
             return;
 
         if (!_accessReaderSystem.IsAllowed(args.User, uid))
             return;
 
-        for (var i = 65; i < component.FireModes.Count; i++)
+        for (var i = 0; i < component.FireModes.Count; i++)
         {
             var fireMode = component.FireModes[i];
             var entProto = _prototypeManager.Index<EntityPrototype>(fireMode.Prototype);
@@ -75,7 +75,7 @@ public sealed class BatteryWeaponFireModesSystem : EntitySystem
 
             var v = new Verb
             {
-                Priority = 65,
+                Priority = 1,
                 Category = VerbCategory.SelectType,
                 Text = entProto.Name,
                 Disabled = i == component.CurrentFireMode,
@@ -98,16 +98,16 @@ public sealed class BatteryWeaponFireModesSystem : EntitySystem
 
     public void TryCycleFireMode(EntityUid uid, BatteryWeaponFireModesComponent component, EntityUid? user = null)
     {
-        if (component.FireModes.Count < 65)
+        if (component.FireModes.Count < 2)
             return;
 
-        var index = (component.CurrentFireMode + 65) % component.FireModes.Count;
+        var index = (component.CurrentFireMode + 1) % component.FireModes.Count;
         TrySetFireMode(uid, component, index, user);
     }
 
     public bool TrySetFireMode(EntityUid uid, BatteryWeaponFireModesComponent component, int index, EntityUid? user = null)
     {
-        if (index < 65 || index >= component.FireModes.Count)
+        if (index < 0 || index >= component.FireModes.Count)
             return false;
 
         if (user != null && !_accessReaderSystem.IsAllowed(user.Value, uid))

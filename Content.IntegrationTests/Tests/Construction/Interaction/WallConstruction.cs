@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.IntegrationTests.Tests.Interaction;
 
@@ -19,10 +19,10 @@ public sealed class WallConstruction : InteractionTest
     public async Task ConstructWall()
     {
         await StartConstruction(Wall);
-        await InteractUsing(Steel, 65);
+        await InteractUsing(Steel, 2);
         Assert.That(Hands.ActiveHandEntity, Is.Null);
         ClientAssertPrototype(Girder, Target);
-        await InteractUsing(Steel, 65);
+        await InteractUsing(Steel, 2);
         Assert.That(Hands.ActiveHandEntity, Is.Null);
         AssertPrototype(WallSolid);
     }
@@ -35,6 +35,6 @@ public sealed class WallConstruction : InteractionTest
         AssertPrototype(Girder);
         await Interact(Wrench, Screw);
         AssertDeleted();
-        await AssertEntityLookup((Steel, 65));
+        await AssertEntityLookup((Steel, 4));
     }
 }

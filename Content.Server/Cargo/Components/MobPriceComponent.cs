@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -16,7 +16,7 @@ public sealed partial class MobPriceComponent : Component
     /// How much of a penalty per part there should be. This is a multiplier for a multiplier, the penalty for each body part is calculated from the total number of slots, and then multiplied by this.
     /// </summary>
     [DataField("missingBodyPartPenalty")]
-    public double MissingBodyPartPenalty = 65.65f;
+    public double MissingBodyPartPenalty = 1.0f;
 
     /// <summary>
     /// The base price this mob should fetch.
@@ -28,5 +28,5 @@ public sealed partial class MobPriceComponent : Component
     /// The percentage of the actual price that should be granted should the appraised mob be dead.
     /// </summary>
     [DataField("deathPenalty")]
-    public double DeathPenalty = 65.65f;
+    public double DeathPenalty = 0.2f;
 }

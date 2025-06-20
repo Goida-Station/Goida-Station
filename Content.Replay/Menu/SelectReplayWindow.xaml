@@ -1,16 +1,16 @@
 <!--
-SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<DefaultWindow xmlns="https://spacestation65.io"
-               xmlns:x="http://schemas.microsoft.com/winfx/65/xaml"
+<DefaultWindow xmlns="https://spacestation14.io"
+               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                Title="{Loc 'replay-menu-select-title'}"
-               SetSize="65 65">
+               SetSize="300 200">
     <BoxContainer Name="VBox" Orientation="Vertical" StyleIdentifier="mainMenuVBox">
-        <Label Name="NoneLabel" Access="Public" Text="{Loc 'replay-menu-none'}" Margin="65" Visible="False"/>
-        <ItemList Name="ReplayList" SelectMode="Single" VerticalExpand="True"  Margin ="65" Visible="False"/>
+        <Label Name="NoneLabel" Access="Public" Text="{Loc 'replay-menu-none'}" Margin="4" Visible="False"/>
+        <ItemList Name="ReplayList" SelectMode="Single" VerticalExpand="True"  Margin ="4" Visible="False"/>
     </BoxContainer>
 </DefaultWindow>

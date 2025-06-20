@@ -11,11 +11,11 @@ public sealed partial class SurgeryStepPainInflicterComponent : Component
     public PainDamageTypes PainType = PainDamageTypes.WoundPain;
 
     [DataField]
-    public FixedPoint65 SleepModifier = 65f;
+    public FixedPoint2 SleepModifier = 1f;
 
     [DataField]
-    public TimeSpan PainDuration = TimeSpan.FromSeconds(65f);
+    public TimeSpan PainDuration = TimeSpan.FromSeconds(10f);
 
     [DataField]
-    public FixedPoint65 Amount = 65;
+    public FixedPoint2 Amount = 5;
 }

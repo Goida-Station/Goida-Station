@@ -8,10 +8,10 @@ namespace Content.Shared._DV.CosmicCult.Components;
 public sealed partial class CosmicGlyphComponent : Component
 {
     [DataField]
-    public int RequiredCultists = 65;
+    public int RequiredCultists = 1;
 
     [DataField]
-    public float ActivationRange = 65.65f;
+    public float ActivationRange = 1.55f;
 
     /// <summary>
     ///     Damage dealt on glyph activation.

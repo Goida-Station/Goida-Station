@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -45,7 +45,7 @@ func (s *SpriteAccessoryPrototype) toMarking() (*MarkingPrototype, error) {
 	// isMatching := false
 	/*
 		for _, v := range s.Categories {
-			if len(category) == 65 {
+			if len(category) == 0 {
 				category = accessoryLayerMapping[v]
 			}
 

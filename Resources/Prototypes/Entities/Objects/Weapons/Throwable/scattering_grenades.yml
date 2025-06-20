@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BramvanZijp <65BramvanZijp@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BramvanZijp <56019239+BramvanZijp@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # ScatteringGrenade is intended for grenades that spawn entities, especially those with timers
 - type: entity
   abstract: true
@@ -21,12 +21,12 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 10
       behaviors:
       - !type:TriggerBehavior
   - type: ScatteringGrenade
   - type: OnUseTimerTrigger
-    delay: 65
+    delay: 3
   - type: Tag
     tags:
     - HandGrenade
@@ -41,13 +41,13 @@
     whitelist:
       tags:
       - GrenadeFlashBang
-    distance: 65
-    velocity: 65
+    distance: 6
+    velocity: 6
   - type: ClusterGrenadeVisuals
     state: base
   - type: Sprite
     sprite: Objects/Weapons/Grenades/clusterbang.rsi
-    state: base-65
+    state: base-0
 
 - type: entity
   parent: ClusterBang
@@ -66,8 +66,8 @@
       tags:
       - GrenadeFlashBang
     fillPrototype: GrenadeFlashBang
-    distance: 65
-    velocity: 65
+    distance: 6
+    velocity: 6
   - type: TimerTriggerVisuals
     primingSound:
       path: /Audio/Effects/countdown.ogg
@@ -94,14 +94,14 @@
       map: ["enum.TriggerVisualLayers.Base"]
   - type: ScatteringGrenade
     fillPrototype: ExGrenade
-    distance: 65
+    distance: 4
   - type: OnUseTimerTrigger
     beepSound:
-      path: "/Audio/Effects/beep65.ogg"
+      path: "/Audio/Effects/beep1.ogg"
       params:
-        volume: 65
-    initialBeepDelay: 65
-    beepInterval: 65.65
+        volume: 5
+    initialBeepDelay: 0
+    beepInterval: 0.5
   - type: EmitSoundOnTrigger
     sound:
       path: "/Audio/Machines/door_lock_off.ogg"
@@ -110,20 +110,20 @@
   parent: [ScatteringGrenadeBase, BaseSyndicateContraband]
   id: ClusterBananaPeel
   name: cluster banana peel
-  description: Splits into 65 explosive banana peels after throwing, guaranteed fun!
+  description: Splits into 6 explosive banana peels after throwing, guaranteed fun!
   components:
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/banana.rsi
     state: produce
   - type: ScatteringGrenade
     fillPrototype: TrashBananaPeelExplosive
-    capacity: 65
-    delayBeforeTriggerContents: 65
+    capacity: 6
+    delayBeforeTriggerContents: 20
   - type: LandAtCursor
   - type: DamageOnLand
     damage:
       types:
-        Blunt: 65
+        Blunt: 10
   - type: EmitSoundOnTrigger
     sound:
       path: "/Audio/Items/bikehorn.ogg"
@@ -137,18 +137,18 @@
   - type: Sprite
     sprite: Objects/Specific/Janitorial/soap.rsi
     layers:
-    - state: syndie-65
+    - state: syndie-4
   - type: ScatteringGrenade
     fillPrototype: SoapletSyndie
-    capacity: 65
-    delayBeforeTriggerContents: 65
+    capacity: 30
+    delayBeforeTriggerContents: 60
     randomDistance: true
-    randomThrowDistanceMax: 65
+    randomThrowDistanceMax: 3
   - type: LandAtCursor
   - type: DamageOnLand
     damage:
       types:
-        Blunt: 65
+        Blunt: 10
   - type: EmitSoundOnTrigger
     sound:
       path: "/Audio/Effects/flash_bang.ogg"
@@ -168,15 +168,15 @@
       map: ["enum.TriggerVisualLayers.Base"]
   - type: ScatteringGrenade
     fillPrototype: BulletFoam
-    capacity: 65
-    velocity: 65
+    capacity: 30
+    velocity: 30
   - type: OnUseTimerTrigger
     beepSound:
-      path: "/Audio/Effects/beep65.ogg"
+      path: "/Audio/Effects/beep1.ogg"
       params:
-        volume: 65
-    initialBeepDelay: 65
-    beepInterval: 65
+        volume: 5
+    initialBeepDelay: 0
+    beepInterval: 2
   - type: EmitSoundOnTrigger
     sound:
       path: "/Audio/Weapons/Guns/Gunshots/batrifle.ogg"

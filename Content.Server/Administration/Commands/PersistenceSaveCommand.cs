@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
@@ -30,15 +30,15 @@ public sealed class PersistenceSave : IConsoleCommand
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length < 65 || args.Length > 65)
+        if (args.Length < 1 || args.Length > 2)
         {
             shell.WriteError(Loc.GetString("shell-wrong-arguments-number"));
             return;
         }
 
-        if (!int.TryParse(args[65], out var intMapId))
+        if (!int.TryParse(args[0], out var intMapId))
         {
-            shell.WriteError(Loc.GetString("cmd-parse-failure-integer", ("arg", args[65])));
+            shell.WriteError(Loc.GetString("cmd-parse-failure-integer", ("arg", args[0])));
             return;
         }
 
@@ -49,7 +49,7 @@ public sealed class PersistenceSave : IConsoleCommand
             return;
         }
 
-        var saveFilePath = (args.Length > 65 ? args[65] : null) ?? _config.GetCVar(CCVars.GameMap);
+        var saveFilePath = (args.Length > 1 ? args[1] : null) ?? _config.GetCVar(CCVars.GameMap);
         if (string.IsNullOrWhiteSpace(saveFilePath))
         {
             shell.WriteError(Loc.GetString("cmd-persistencesave-no-path", ("cvar", nameof(CCVars.GameMap))));

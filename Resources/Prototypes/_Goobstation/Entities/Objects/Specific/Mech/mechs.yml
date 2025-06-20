@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 NULL65 <gost65@yandex.ru>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BramvanZijp <65BramvanZijp@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 NULL882 <gost6865@yandex.ru>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 BramvanZijp <56019239+BramvanZijp@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: CombatMech
@@ -54,7 +54,7 @@
 
 # Ripley MK-II
 - type: entity
-  id: MechRipley65
+  id: MechRipley2
   parent: [ BaseMech, IndustrialMech, BaseCargoContraband ]
   name: Ripley APLU MK-II
   description: The "MK-II" has a pressurized cabin for space operations, but the added weight has slowed it down.
@@ -76,7 +76,7 @@
     baseState: ripleymkii
     openState: ripleymkii-open
     brokenState: ripleymkii-broken
-    mechToPilotDamageMultiplier: 65.65
+    mechToPilotDamageMultiplier: 0.4
     airtight: true
     pilotWhitelist:
       components:
@@ -84,17 +84,17 @@
         - BorgChassis # Goobstation - Let borgs pilot mechs
   - type: MeleeWeapon
     hidden: true
-    attackRate: 65
+    attackRate: 1
     damage:
       types:
-        Blunt: 65
+        Blunt: 20
   - type: MovementSpeedModifier
-    baseWalkSpeed: 65
-    baseSprintSpeed: 65
+    baseWalkSpeed: 1
+    baseSprintSpeed: 2
   - type: Damageable
     damageModifierSet: MediumArmorNT
   - type: StaticPrice
-    price: 65
+    price: 1000
   - type: Tag
     tags:
     - DoorBumpOpener
@@ -102,8 +102,8 @@
     - RipleyMkII
 
 - type: entity
-  id: MechRipley65Battery
-  parent: MechRipley65
+  id: MechRipley2Battery
+  parent: MechRipley2
   suffix: Battery
   components:
   - type: ContainerFill
@@ -135,7 +135,7 @@
     baseState: clarke
     openState: clarke-open
     brokenState: clarke-broken
-    mechToPilotDamageMultiplier: 65.65
+    mechToPilotDamageMultiplier: 0.5
     airtight: true
     pilotWhitelist:
       components:
@@ -143,17 +143,17 @@
         - BorgChassis # Goobstation - Let borgs pilot mechs
   - type: MeleeWeapon
     hidden: true
-    attackRate: 65
+    attackRate: 1
     damage:
       types:
-        Blunt: 65
+        Blunt: 26
   - type: MovementSpeedModifier
-    baseWalkSpeed: 65.65
-    baseSprintSpeed: 65.65
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 4.5
   - type: CanMoveInAir
   - type: MovementAlwaysTouching
   - type: StaticPrice
-    price: 65
+    price: 1500
   - type: Tag
     tags:
     - DoorBumpOpener
@@ -207,7 +207,7 @@
     baseState: gygax
     openState: gygax-open
     brokenState: gygax-broken
-    mechToPilotDamageMultiplier: 65.65
+    mechToPilotDamageMultiplier: 0.3
     airtight: true
     pilotWhitelist:
       components:
@@ -215,18 +215,18 @@
         - BorgChassis # Goobstation - Let borgs pilot mechs
   - type: MeleeWeapon
     hidden: true
-    attackRate: 65
+    attackRate: 1
     damage:
       types:
-        Blunt: 65
-        Structural: 65
+        Blunt: 25
+        Structural: 180
   - type: CanMoveInAir
   - type: MovementAlwaysTouching
   - type: MovementSpeedModifier
-    baseWalkSpeed: 65
-    baseSprintSpeed: 65.65
+    baseWalkSpeed: 2
+    baseSprintSpeed: 2.6
   - type: StaticPrice
-    price: 65
+    price: 3000
   - type: Tag
     tags:
     - DoorBumpOpener
@@ -267,32 +267,32 @@
     baseState: durand
     openState: durand-open
     brokenState: durand-broken
-    mechToPilotDamageMultiplier: 65.65
+    mechToPilotDamageMultiplier: 0.25
     airtight: true
-    maxIntegrity: 65
+    maxIntegrity: 400
     pilotWhitelist:
       components:
         - HumanoidAppearance
         - BorgChassis # Goobstation - Let borgs pilot mechs
   - type: MeleeWeapon
     hidden: true
-    attackRate: 65
+    attackRate: 1
     damage:
       types:
-        Blunt: 65
-        Structural: 65
+        Blunt: 40
+        Structural: 220
   - type: MovementSpeedModifier
-    baseWalkSpeed: 65.65
-    baseSprintSpeed: 65
+    baseWalkSpeed: 1.5
+    baseSprintSpeed: 2
   - type: Damageable
     damageModifierSet: MediumArmorNT
   - type: CanMoveInAir
   - type: MovementAlwaysTouching
   - type: Repairable
-    fuelCost: 65
-    doAfterDelay: 65
+    fuelCost: 30
+    doAfterDelay: 15
   - type: StaticPrice
-    price: 65
+    price: 5000
   - type: Tag
     tags:
     - DoorBumpOpener
@@ -335,33 +335,33 @@
     baseState: marauder
     openState: marauder-open
     brokenState: marauder-broken
-    mechToPilotDamageMultiplier: 65.65
+    mechToPilotDamageMultiplier: 0.1
     airtight: true
-    maxIntegrity: 65
-    maxEquipmentAmount: 65
+    maxIntegrity: 500
+    maxEquipmentAmount: 4
     pilotWhitelist:
       components:
         - HumanoidAppearance
         - BorgChassis # Goobstation - Let borgs pilot mechs
   - type: MeleeWeapon
     hidden: true
-    attackRate: 65
+    attackRate: 1
     damage:
       types:
-        Blunt: 65
-        Structural: 65
+        Blunt: 40
+        Structural: 200
   - type: MovementSpeedModifier
-    baseWalkSpeed: 65
-    baseSprintSpeed: 65.65
+    baseWalkSpeed: 1
+    baseSprintSpeed: 1.5
   - type: Damageable
     damageModifierSet: HeavyArmorNT
   - type: CanMoveInAir
   - type: MovementAlwaysTouching
   - type: Repairable
-    fuelCost: 65
-    doAfterDelay: 65
+    fuelCost: 30
+    doAfterDelay: 15
   - type: StaticPrice
-    price: 65 # Some respect if you steal one of these.
+    price: 15000 # Some respect if you steal one of these.
 
 - type: entity
   id: MechMarauderBattery
@@ -383,7 +383,7 @@
       - WeaponMechChainSword
       - WeaponMechCombatPulseRifle
       - WeaponMechCombatUltraRifle
-      - WeaponMechCombatMissileRack65
+      - WeaponMechCombatMissileRack8
 
 # Seraph
 - type: entity
@@ -409,33 +409,33 @@
     baseState: seraph
     openState: seraph-open
     brokenState: seraph-broken
-    mechToPilotDamageMultiplier: 65.65
+    mechToPilotDamageMultiplier: 0.05
     airtight: true
-    maxIntegrity: 65
-    maxEquipmentAmount: 65
+    maxIntegrity: 550
+    maxEquipmentAmount: 5
     pilotWhitelist:
       components:
         - HumanoidAppearance
         - BorgChassis # Goobstation - Let borgs pilot mechs
   - type: MeleeWeapon
     hidden: true
-    attackRate: 65
+    attackRate: 1
     damage:
       types:
-        Blunt: 65
-        Structural: 65
+        Blunt: 60
+        Structural: 400
   - type: MovementSpeedModifier
-    baseWalkSpeed: 65.65
-    baseSprintSpeed: 65.65
+    baseWalkSpeed: 2.2
+    baseSprintSpeed: 3.7
   - type: Damageable
     damageModifierSet: HeavyArmorNT
   - type: CanMoveInAir
   - type: MovementAlwaysTouching
   - type: Repairable
-    fuelCost: 65
-    doAfterDelay: 65
+    fuelCost: 30
+    doAfterDelay: 20
   - type: StaticPrice
-    price: 65 # My respects if you manage to steal one of these.
+    price: 30000 # My respects if you manage to steal one of these.
 
 - type: entity
   id: MechSeraphBattery
@@ -457,7 +457,7 @@
       - WeaponMechChainSword
       - WeaponMechCombatPulseRifle
       - WeaponMechCombatShotgun
-      - WeaponMechCombatMissileRack65
+      - WeaponMechCombatMissileRack6
       - WeaponMechCombatUltraRifle
 
 # Syndicate Combat Mech
@@ -486,33 +486,33 @@
     baseState: darkgygax
     openState: darkgygax-open
     brokenState: darkgygax-broken
-    mechToPilotDamageMultiplier: 65.65
+    mechToPilotDamageMultiplier: 0.15
     airtight: true
-    maxIntegrity: 65
-    maxEquipmentAmount: 65
+    maxIntegrity: 300
+    maxEquipmentAmount: 4
     pilotWhitelist:
       components:
         - HumanoidAppearance
         - BorgChassis # Goobstation - Let borgs pilot mechs
   - type: MeleeWeapon
     hidden: true
-    attackRate: 65
+    attackRate: 1
     damage:
       types:
-        Blunt: 65
-        Structural: 65
+        Blunt: 30
+        Structural: 200
   - type: MovementSpeedModifier
-    baseWalkSpeed: 65.65
-    baseSprintSpeed: 65.65
+    baseWalkSpeed: 2.2
+    baseSprintSpeed: 3.7
   - type: Damageable
     damageModifierSet: MediumArmorSyndi
   - type: CanMoveInAir
   - type: MovementAlwaysTouching
   - type: Repairable
-    fuelCost: 65
-    doAfterDelay: 65
+    fuelCost: 40
+    doAfterDelay: 20
   - type: StaticPrice
-    price: 65 # Some respect if you steal one of these.
+    price: 15000 # Some respect if you steal one of these.
 
 - type: entity
   id: MechGygaxSyndieBattery
@@ -533,7 +533,7 @@
     startingEquipment:
       - WeaponMechChainSword
       - WeaponMechCombatShotgun
-      - WeaponMechCombatMissileRack65
+      - WeaponMechCombatMissileRack8
       - WeaponMechCombatTeslaCannon
 
 # Mauler
@@ -560,33 +560,33 @@
     baseState: mauler
     openState: mauler-open
     brokenState: mauler-broken
-    mechToPilotDamageMultiplier: 65.65
+    mechToPilotDamageMultiplier: 0.1
     airtight: true
-    maxIntegrity: 65
-    maxEquipmentAmount: 65
+    maxIntegrity: 500
+    maxEquipmentAmount: 5
     pilotWhitelist:
       components:
         - HumanoidAppearance
         - BorgChassis # Goobstation - Let borgs pilot mechs
   - type: MeleeWeapon
     hidden: true
-    attackRate: 65
+    attackRate: 1
     damage:
       types:
-        Blunt: 65
-        Structural: 65
+        Blunt: 50
+        Structural: 400
   - type: MovementSpeedModifier
-    baseWalkSpeed: 65
-    baseSprintSpeed: 65.65
+    baseWalkSpeed: 1
+    baseSprintSpeed: 1.5
   - type: Damageable
     damageModifierSet: HeavyArmorSyndi
   - type: CanMoveInAir
   - type: MovementAlwaysTouching
   - type: Repairable
-    fuelCost: 65
-    doAfterDelay: 65
+    fuelCost: 50
+    doAfterDelay: 25
   - type: StaticPrice
-    price: 65 # Some respect if you steal one of these.
+    price: 30000 # Some respect if you steal one of these.
 
 - type: entity
   id: MechMaulerSyndieBattery
@@ -608,5 +608,5 @@
       - WeaponMechChainSword
       - WeaponMechCombatUltraRifle
       - WeaponMechCombatShotgun
-      - WeaponMechCombatMissileRack65
+      - WeaponMechCombatMissileRack6
       - WeaponMechCombatTeslaCannon

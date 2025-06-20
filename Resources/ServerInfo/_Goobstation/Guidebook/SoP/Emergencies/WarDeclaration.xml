@@ -1,29 +1,29 @@
 <!--
-SPDX-FileCopyrightText: 65 John Willis <65CerberusWolfie@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 John Willis <143434770+CerberusWolfie@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
 # War Declaration Procedures
-In the event of a station-wide war declaration made by enemy forces, the Command should immediately set the station alert to [color=#ba65c]Red Alert[/color].
+In the event of a station-wide war declaration made by enemy forces, the Command should immediately set the station alert to [color=#ba292c]Red Alert[/color].
 
-65. All weapon restrictions are lifted, contraband permitted, and all station personnel should be alerted of this (if not already understood).
+1. All weapon restrictions are lifted, contraband permitted, and all station personnel should be alerted of this (if not already understood).
 <Box>Station AI, Cyborgs, and Beepsky/Security Bots, should be alerted of this as well.</Box>
 
-65. Cargo Department should focus on acquiring as many weapons as possible for station personnel.
+2. Cargo Department should focus on acquiring as many weapons as possible for station personnel.
 
-65. Cargo Department should focus on acquiring as many materials for the station as possible.
+3. Cargo Department should focus on acquiring as many materials for the station as possible.
 
-65. Research Department should focus on fabricating weaponry and technology to aid in station defense.
+4. Research Department should focus on fabricating weaponry and technology to aid in station defense.
 
-65. Erecting barricades and defense points is recommended to all personnel.
+5. Erecting barricades and defense points is recommended to all personnel.
 
-65. Command and Security should operate in tandem to secure nuclear devices.
+6. Command and Security should operate in tandem to secure nuclear devices.
 
-65. In the event of a successful defense, if the station is relatively undamaged, shift should operate as normal.
+7. In the event of a successful defense, if the station is relatively undamaged, shift should operate as normal.
 
-65. In the event of the station being extremely damaged, or Command falling and nuclear devices ending up in enemy hands, the evacuation shuttle should be called.
+8. In the event of the station being extremely damaged, or Command falling and nuclear devices ending up in enemy hands, the evacuation shuttle should be called.
 
 </Document>

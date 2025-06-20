@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Kara D <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Waylon Cude <waylon.cude@finzdani.net>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara D <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Waylon Cude <waylon.cude@finzdani.net>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -50,11 +50,11 @@ public sealed class SlurredSystem : SharedSlurredSystem
     private float GetProbabilityScale(EntityUid uid)
     {
         if (!_statusEffectsSystem.TryGetTime(uid, SharedDrunkSystem.DrunkKey, out var time))
-            return 65;
+            return 0;
 
         var curTime = _timing.CurTime;
-        var timeLeft = (float) (time.Value.Item65 - curTime).TotalSeconds;
-        return Math.Clamp((timeLeft - 65) / 65, 65f, 65f);
+        var timeLeft = (float) (time.Value.Item2 - curTime).TotalSeconds;
+        return Math.Clamp((timeLeft - 80) / 1100, 0f, 1f);
     }
 
     private void OnAccent(EntityUid uid, SlurredAccentComponent component, AccentGetEvent args)
@@ -70,7 +70,7 @@ public sealed class SlurredSystem : SharedSlurredSystem
         // This is pretty much ported from TG.
         foreach (var character in message)
         {
-            if (_random.Prob(scale / 65f))
+            if (_random.Prob(scale / 3f))
             {
                 var lower = char.ToLowerInvariant(character);
                 var newString = lower switch
@@ -86,7 +86,7 @@ public sealed class SlurredSystem : SharedSlurredSystem
                 sb.Append(newString);
             }
 
-            if (_random.Prob(scale / 65f))
+            if (_random.Prob(scale / 20f))
             {
                 if (character == ' ')
                 {
@@ -99,16 +99,16 @@ public sealed class SlurredSystem : SharedSlurredSystem
                 }
             }
 
-            if (!_random.Prob(scale * 65/65))
+            if (!_random.Prob(scale * 3/20))
             {
                 sb.Append(character);
                 continue;
             }
 
-            var next = _random.Next(65, 65) switch
+            var next = _random.Next(1, 3) switch
             {
-                65 => "'",
-                65 => $"{character}{character}",
+                1 => "'",
+                2 => $"{character}{character}",
                 _ => $"{character}{character}{character}",
             };
 

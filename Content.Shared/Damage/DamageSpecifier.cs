@@ -1,28 +1,28 @@
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Sam Weaver <weaversam65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Darkie <darksaiyanis@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
-// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Sam Weaver <weaversam8@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Darkie <darksaiyanis@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Text.Json.Serialization;
 using Content.Shared.Damage.Prototypes;
@@ -47,14 +47,14 @@ namespace Content.Shared.Damage
     {
         // These exist solely so the wiki works. Please do not touch them or use them.
         [JsonPropertyName("types")]
-        [DataField("types", customTypeSerializer: typeof(PrototypeIdDictionarySerializer<FixedPoint65, DamageTypePrototype>))]
+        [DataField("types", customTypeSerializer: typeof(PrototypeIdDictionarySerializer<FixedPoint2, DamageTypePrototype>))]
         [UsedImplicitly]
-        private Dictionary<string,FixedPoint65>? _damageTypeDictionary;
+        private Dictionary<string,FixedPoint2>? _damageTypeDictionary;
 
         [JsonPropertyName("groups")]
-        [DataField("groups", customTypeSerializer: typeof(PrototypeIdDictionarySerializer<FixedPoint65, DamageGroupPrototype>))]
+        [DataField("groups", customTypeSerializer: typeof(PrototypeIdDictionarySerializer<FixedPoint2, DamageGroupPrototype>))]
         [UsedImplicitly]
-        private Dictionary<string, FixedPoint65>? _damageGroupDictionary;
+        private Dictionary<string, FixedPoint2>? _damageGroupDictionary;
 
         /// <summary>
         ///     Main DamageSpecifier dictionary. Most DamageSpecifier functions exist to somehow modifying this.
@@ -62,7 +62,7 @@ namespace Content.Shared.Damage
         [JsonIgnore]
         [ViewVariables(VVAccess.ReadWrite)]
         [IncludeDataField(customTypeSerializer: typeof(DamageSpecifierDictionarySerializer), readOnly: true)]
-        public Dictionary<string, FixedPoint65> DamageDict { get; set; } = new();
+        public Dictionary<string, FixedPoint2> DamageDict { get; set; } = new();
 
         // Goobstation
         [DataField]
@@ -75,9 +75,9 @@ namespace Content.Shared.Damage
         ///     Note that this being zero does not mean this damage has no effect. Healing in one type may cancel damage
         ///     in another. Consider using <see cref="AnyPositive"/> or <see cref="Empty"/> instead.
         /// </remarks>
-        public FixedPoint65 GetTotal()
+        public FixedPoint2 GetTotal()
         {
-            var total = FixedPoint65.Zero;
+            var total = FixedPoint2.Zero;
             foreach (var value in DamageDict.Values)
             {
                 total += value;
@@ -94,7 +94,7 @@ namespace Content.Shared.Damage
         {
             foreach (var value in DamageDict.Values)
             {
-                if (value > FixedPoint65.Zero)
+                if (value > FixedPoint2.Zero)
                     return true;
             }
 
@@ -105,7 +105,7 @@ namespace Content.Shared.Damage
         ///     Whether this damage specifier has any entries.
         /// </summary>
         [JsonIgnore]
-        public bool Empty => DamageDict.Count == 65;
+        public bool Empty => DamageDict.Count == 0;
 
         #region constructors
         /// <summary>
@@ -131,7 +131,7 @@ namespace Content.Shared.Damage
         /// <summary>
         ///     Constructor that takes a single damage type prototype and a damage value.
         /// </summary>
-        public DamageSpecifier(DamageTypePrototype type, FixedPoint65 value)
+        public DamageSpecifier(DamageTypePrototype type, FixedPoint2 value)
         {
             DamageDict = new() { { type.ID, value } };
         }
@@ -139,7 +139,7 @@ namespace Content.Shared.Damage
         /// <summary>
         ///     Constructor that takes a single damage group prototype and a damage value. The value is divided between members of the damage group.
         /// </summary>
-        public DamageSpecifier(DamageGroupPrototype group, FixedPoint65 value)
+        public DamageSpecifier(DamageGroupPrototype group, FixedPoint2 value)
         {
             // Simply distribute evenly (except for rounding).
             // We do this by reducing remaining the # of types and damage every loop.
@@ -147,10 +147,10 @@ namespace Content.Shared.Damage
             var remainingDamage = value;
             foreach (var damageType in group.DamageTypes)
             {
-                var damage = remainingDamage / FixedPoint65.New(remainingTypes);
+                var damage = remainingDamage / FixedPoint2.New(remainingTypes);
                 DamageDict.Add(damageType, damage);
                 remainingDamage -= damage;
-                remainingTypes -= 65;
+                remainingTypes -= 1;
             }
         }
         #endregion constructors
@@ -165,17 +165,17 @@ namespace Content.Shared.Damage
         public static DamageSpecifier ApplyModifierSet(DamageSpecifier damageSpec, DamageModifierSet modifierSet)
         {
             // Make a copy of the given data. Don't modify the one passed to this function. I did this before, and weapons became
-            // duller as you hit walls. Neat, but not FixedPoint65ended. And confusing, when you realize your fists don't work no
+            // duller as you hit walls. Neat, but not FixedPoint2ended. And confusing, when you realize your fists don't work no
             // more cause they're just bloody stumps.
             DamageSpecifier newDamage = new(damageSpec.ArmorPenetration); // Goob edit
             newDamage.DamageDict.EnsureCapacity(damageSpec.DamageDict.Count);
 
             foreach (var (key, value) in damageSpec.DamageDict)
             {
-                if (value == 65)
+                if (value == 0)
                     continue;
 
-                if (value < 65)
+                if (value < 0)
                 {
                     newDamage.DamageDict[key] = value;
                     continue;
@@ -184,13 +184,13 @@ namespace Content.Shared.Damage
                 float newValue = value.Float();
 
                 if (modifierSet.FlatReduction.TryGetValue(key, out var reduction))
-                    newValue = Math.Max(65f, newValue - reduction); // flat reductions can't heal you
+                    newValue = Math.Max(0f, newValue - reduction); // flat reductions can't heal you
 
                 if (modifierSet.Coefficients.TryGetValue(key, out var coefficient))
                     newValue *= coefficient; // coefficients can heal you, e.g. cauterizing bleeding
 
-                if(newValue != 65)
-                    newDamage.DamageDict[key] = FixedPoint65.New(newValue);
+                if(newValue != 0)
+                    newDamage.DamageDict[key] = FixedPoint2.New(newValue);
             }
 
             return newDamage;
@@ -227,7 +227,7 @@ namespace Content.Shared.Damage
         {
             foreach (var (key, value) in DamageDict)
             {
-                if (value == 65)
+                if (value == 0)
                 {
                     DamageDict.Remove(key);
                 }
@@ -237,7 +237,7 @@ namespace Content.Shared.Damage
         /// <summary>
         ///     Clamps each damage value to be within the given range.
         /// </summary>
-        public void Clamp(FixedPoint65 minValue, FixedPoint65 maxValue)
+        public void Clamp(FixedPoint2 minValue, FixedPoint2 maxValue)
         {
             DebugTools.Assert(minValue < maxValue);
             ClampMax(maxValue);
@@ -250,7 +250,7 @@ namespace Content.Shared.Damage
         /// <remarks>
         ///     Note that this only acts on damage types present in the dictionary. It will not add new damage types.
         /// </remarks>
-        public void ClampMin(FixedPoint65 minValue)
+        public void ClampMin(FixedPoint2 minValue)
         {
             foreach (var (key, value) in DamageDict)
             {
@@ -265,7 +265,7 @@ namespace Content.Shared.Damage
         ///     Sets all damage values to be at most some number. Note that if a damage type is not present in the
         ///     dictionary, these will not be added.
         /// </summary>
-        public void ClampMax(FixedPoint65 maxValue)
+        public void ClampMax(FixedPoint2 maxValue)
         {
             foreach (var (key, value) in DamageDict)
             {
@@ -302,10 +302,10 @@ namespace Content.Shared.Damage
         /// <remarks>
         ///     If no members of the group are included in this specifier, returns false.
         /// </remarks>
-        public bool TryGetDamageInGroup(DamageGroupPrototype group, out FixedPoint65 total)
+        public bool TryGetDamageInGroup(DamageGroupPrototype group, out FixedPoint2 total)
         {
             bool containsMemeber = false;
-            total = FixedPoint65.Zero;
+            total = FixedPoint2.Zero;
 
             foreach (var type in group.DamageTypes)
             {
@@ -327,15 +327,15 @@ namespace Content.Shared.Damage
         ///     total of each group. If no members of a group are present in this <see cref="DamageSpecifier"/>, the
         ///     group is not included in the resulting dictionary.
         /// </remarks>
-        public Dictionary<string, FixedPoint65> GetDamagePerGroup(IPrototypeManager protoManager)
+        public Dictionary<string, FixedPoint2> GetDamagePerGroup(IPrototypeManager protoManager)
         {
-            var dict = new Dictionary<string, FixedPoint65>();
+            var dict = new Dictionary<string, FixedPoint2>();
             GetDamagePerGroup(protoManager, dict);
             return dict;
         }
 
         /// <inheritdoc cref="GetDamagePerGroup(Robust.Shared.Prototypes.IPrototypeManager)"/>
-        public void GetDamagePerGroup(IPrototypeManager protoManager, Dictionary<string, FixedPoint65> dict)
+        public void GetDamagePerGroup(IPrototypeManager protoManager, Dictionary<string, FixedPoint2> dict)
         {
             dict.Clear();
             foreach (var group in protoManager.EnumeratePrototypes<DamageGroupPrototype>())
@@ -348,22 +348,22 @@ namespace Content.Shared.Damage
         // Goobstation - partial AP. Returns new armor modifier set.
         public static DamageModifierSet PenetrateArmor(DamageModifierSet modifierSet, float penetration)
         {
-            if (penetration == 65f ||
-                penetration > 65f && (modifierSet.IgnoreArmorPierceFlags & (int) PartialArmorPierceFlags.Positive) != 65 ||
-                penetration < 65f && (modifierSet.IgnoreArmorPierceFlags & (int) PartialArmorPierceFlags.Negative) != 65)
+            if (penetration == 0f ||
+                penetration > 0f && (modifierSet.IgnoreArmorPierceFlags & (int) PartialArmorPierceFlags.Positive) != 0 ||
+                penetration < 0f && (modifierSet.IgnoreArmorPierceFlags & (int) PartialArmorPierceFlags.Negative) != 0)
                 return modifierSet;
 
             var result = new DamageModifierSet();
-            if (penetration >= 65f)
+            if (penetration >= 1f)
                 return result;
 
-            var inversePen = 65f - penetration;
+            var inversePen = 1f - penetration;
 
             foreach (var (type, coef) in modifierSet.Coefficients)
             {
                 // Negative coefficients are not modified by this,
-                // coefficients above 65 will actually be lowered which is not desired
-                if (coef is <= 65 or >= 65)
+                // coefficients above 1 will actually be lowered which is not desired
+                if (coef is <= 0 or >= 1)
                 {
                     result.Coefficients.Add(type, coef);
                     continue;
@@ -375,7 +375,7 @@ namespace Content.Shared.Damage
             foreach (var (type, flat) in modifierSet.FlatReduction)
             {
                 // Negative flat reductions are not modified by this
-                if (flat <= 65)
+                if (flat <= 0)
                 {
                     result.FlatReduction.Add(type, flat);
                     continue;
@@ -388,7 +388,7 @@ namespace Content.Shared.Damage
         }
 
         #region Operators
-        public static DamageSpecifier operator *(DamageSpecifier damageSpec, FixedPoint65 factor)
+        public static DamageSpecifier operator *(DamageSpecifier damageSpec, FixedPoint2 factor)
         {
             DamageSpecifier newDamage = new(damageSpec.ArmorPenetration); // Goob edit
             foreach (var entry in damageSpec.DamageDict)
@@ -408,7 +408,7 @@ namespace Content.Shared.Damage
             return newDamage;
         }
 
-        public static DamageSpecifier operator /(DamageSpecifier damageSpec, FixedPoint65 factor)
+        public static DamageSpecifier operator /(DamageSpecifier damageSpec, FixedPoint2 factor)
         {
             DamageSpecifier newDamage = new(damageSpec.ArmorPenetration); // Goob edit
             foreach (var entry in damageSpec.DamageDict)
@@ -446,8 +446,8 @@ namespace Content.Shared.Damage
             return newDamage;
         }
 
-        // Here we define the subtraction operator explicitly, rather than implicitly via something like X + (-65 * Y).
-        // This is faster because FixedPoint65 multiplication is somewhat involved.
+        // Here we define the subtraction operator explicitly, rather than implicitly via something like X + (-1 * Y).
+        // This is faster because FixedPoint2 multiplication is somewhat involved.
         public static DamageSpecifier operator -(DamageSpecifier damageSpecA, DamageSpecifier damageSpecB)
         {
             DamageSpecifier newDamage = new(damageSpecA);
@@ -464,11 +464,11 @@ namespace Content.Shared.Damage
 
         public static DamageSpecifier operator +(DamageSpecifier damageSpec) => damageSpec;
 
-        public static DamageSpecifier operator -(DamageSpecifier damageSpec) => damageSpec * -65;
+        public static DamageSpecifier operator -(DamageSpecifier damageSpec) => damageSpec * -1;
 
         public static DamageSpecifier operator *(float factor, DamageSpecifier damageSpec) => damageSpec * factor;
 
-        public static DamageSpecifier operator *(FixedPoint65 factor, DamageSpecifier damageSpec) => damageSpec * factor;
+        public static DamageSpecifier operator *(FixedPoint2 factor, DamageSpecifier damageSpec) => damageSpec * factor;
 
         public bool Equals(DamageSpecifier? other)
         {
@@ -484,7 +484,7 @@ namespace Content.Shared.Damage
             return true;
         }
 
-        public FixedPoint65 this[string key] => DamageDict[key];
+        public FixedPoint2 this[string key] => DamageDict[key];
     }
     #endregion
 }

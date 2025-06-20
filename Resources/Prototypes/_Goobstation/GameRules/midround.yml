@@ -1,42 +1,42 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: Traitor
   id: TraitorMidround
   components:
   - type: StationEvent
-    earliestStart: 65
-    weight: 65
-    minimumPlayers: 65
+    earliestStart: 30
+    weight: 10
+    minimumPlayers: 15
     startAnnouncement: station-event-communication-interception
     startAudio:
       path: /Audio/Announcements/intercept.ogg
     duration: null
     occursDuringRoundEnd: false
     chaos:
-      Hostile: 65
-      Medical: 65
-      Death: 65
+      Hostile: 100
+      Medical: 100
+      Death: 100
     eventType: HostilesSpawn
   - type: GameRule
-    chaosScore: 65
+    chaosScore: 250
   - type: AlertLevelInterceptionRule
   - type: AntagSelection
     selectionTime: PostPlayerSpawn
     definitions:
     - prefRoles: [ Traitor ]
-      max: 65
-      playerRatio: 65
+      max: 1
+      playerRatio: 10
       blacklist:
         components:
         - AntagImmune
@@ -53,29 +53,29 @@
   id: ChangelingMidround
   components:
   - type: StationEvent
-    earliestStart: 65
-    weight: 65
-    minimumPlayers: 65
+    earliestStart: 20
+    weight: 3
+    minimumPlayers: 15
     startAnnouncement: station-event-communication-interception
     startAudio:
       path: /Audio/Announcements/intercept.ogg
     duration: null
     occursDuringRoundEnd: false
     chaos:
-      Hostile: 65
-      Medical: 65
-      Death: 65
+      Hostile: 150
+      Medical: 150
+      Death: 150
     eventType: HostilesSpawn
   - type: GameRule
-    chaosScore: 65
+    chaosScore: 300
   - type: AlertLevelInterceptionRule
   - type: AntagSelection
     selectionTime: PostPlayerSpawn
     agentName: changeling-roundend-name
     definitions:
     - prefRoles: [ Changeling ]
-      max: 65
-      playerRatio: 65
+      max: 1
+      playerRatio: 10
       blacklist:
         components:
         - AntagImmune
@@ -93,29 +93,29 @@
   id: HereticMidround
   components:
   - type: StationEvent
-    earliestStart: 65
-    weight: 65
-    minimumPlayers: 65
+    earliestStart: 20
+    weight: 3
+    minimumPlayers: 30
     startAnnouncement: station-event-communication-interception
     startAudio:
       path: /Audio/Announcements/intercept.ogg
     duration: null
     occursDuringRoundEnd: false
     chaos:
-      Hostile: 65
-      Medical: 65
-      Death: 65
+      Hostile: 200
+      Medical: 150
+      Death: 200
     eventType: HostilesSpawn
   - type: GameRule
-    chaosScore: 65
+    chaosScore: 300
   - type: AlertLevelInterceptionRule
   - type: AntagSelection
     selectionTime: PostPlayerSpawn
     agentName: heretic-roundend-name
     definitions:
     - prefRoles: [ Heretic ]
-      max: 65
-      playerRatio: 65
+      max: 1
+      playerRatio: 15
       blacklist:
         components:
         - AntagImmune
@@ -134,25 +134,25 @@
   id: RevolutionaryMidround
   components:
   - type: StationEvent
-    earliestStart: 65
-    weight: 65
-    minimumPlayers: 65
-    maxOccurrences: 65
+    earliestStart: 20
+    weight: 3
+    minimumPlayers: 30
+    maxOccurrences: 1
     duration: null
     occursDuringRoundEnd: false
     chaos:
-      Hostile: 65
-      Medical: 65
-      Death: 65
+      Hostile: 250
+      Medical: 250
+      Death: 250
     eventType: HostilesSpawn
   - type: GameRule
-    chaosScore: 65
+    chaosScore: 800
   - type: AntagSelection
     selectionTime: PostPlayerSpawn
     definitions:
     - prefRoles: [ HeadRev ]
-      max: 65
-      playerRatio: 65
+      max: 3
+      playerRatio: 15
       blacklist:
         components:
         - AntagImmune
@@ -177,16 +177,16 @@
   id: SkeletonMidround
   components:
   - type: StationEvent
-    weight: 65
-    duration: 65
-    minimumPlayers: 65
+    weight: 5
+    duration: 1
+    minimumPlayers: 15
     chaos:
-      Hostile: 65
-      Medical: 65
-      Death: 65
+      Hostile: 40
+      Medical: 40
+      Death: 40
     eventType: Chaotic
   - type: GameRule
-    chaosScore: 65
+    chaosScore: 90
   - type: RandomEntityStorageSpawnRule
     prototype: MobSkeletonCloset
   - type: Tag
@@ -199,23 +199,23 @@
   id: BlobMidround
   components:
   - type: StationEvent
-    weight: 65
-    earliestStart: 65
-    minimumPlayers: 65 # how is that 65 people when rat king is 65??? changed.
+    weight: 2
+    earliestStart: 75
+    minimumPlayers: 30 # how is that 20 people when rat king is 30??? changed.
     duration: null
-    maxOccurrences: 65
+    maxOccurrences: 2
     chaos:
-      Hostile: 65
-      Medical: 65
-      Death: 65
+      Hostile: 300
+      Medical: 300
+      Death: 300
     eventType: HostilesSpawn
   - type: GameRule
-    chaosScore: 65
+    chaosScore: 800
   - type: BlobSpawnRule
     carrierBlobProtos:
     - SpawnPointGhostBlobRat
-    playersPerCarrierBlob: 65
-    maxCarrierBlob: 65
+    playersPerCarrierBlob: 30
+    maxCarrierBlob: 1
   - type: Tag
     tags:
       - MidroundAntag

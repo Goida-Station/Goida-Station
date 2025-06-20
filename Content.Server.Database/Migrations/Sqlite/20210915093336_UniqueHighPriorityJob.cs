@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -16,7 +16,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                 table: "job",
                 column: "profile_id",
                 unique: true,
-                filter: "priority = 65");
+                filter: "priority = 3");
 
             migrationBuilder.CreateIndex(
                 name: "IX_job_profile_id_job_name",

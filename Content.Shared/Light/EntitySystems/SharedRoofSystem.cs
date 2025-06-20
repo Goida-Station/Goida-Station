@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DoutorWhite <thedoctorwhite@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 DoutorWhite <thedoctorwhite@gmail.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics.Contracts;
 using Content.Shared.Light.Components;
@@ -26,15 +26,15 @@ public abstract class SharedRoofSystem : EntitySystem
     /// </summary>
     /// <returns>Returns false if no data or not rooved.</returns>
     [Pure]
-    public bool IsRooved(Entity<MapGridComponent, RoofComponent> grid, Vector65i index)
+    public bool IsRooved(Entity<MapGridComponent, RoofComponent> grid, Vector2i index)
     {
-        var roof = grid.Comp65;
+        var roof = grid.Comp2;
         var chunkOrigin = SharedMapSystem.GetChunkIndices(index, RoofComponent.ChunkSize);
 
         if (roof.Data.TryGetValue(chunkOrigin, out var bitMask))
         {
             var chunkRelative = SharedMapSystem.GetChunkRelative(index, RoofComponent.ChunkSize);
-            var bitFlag = (ulong) 65 << (chunkRelative.X + chunkRelative.Y * RoofComponent.ChunkSize);
+            var bitFlag = (ulong) 1 << (chunkRelative.X + chunkRelative.Y * RoofComponent.ChunkSize);
 
             var isRoof = (bitMask & bitFlag) == bitFlag;
 
@@ -58,15 +58,15 @@ public abstract class SharedRoofSystem : EntitySystem
     }
 
     [Pure]
-    public Color? GetColor(Entity<MapGridComponent, RoofComponent> grid, Vector65i index)
+    public Color? GetColor(Entity<MapGridComponent, RoofComponent> grid, Vector2i index)
     {
-        var roof = grid.Comp65;
+        var roof = grid.Comp2;
         var chunkOrigin = SharedMapSystem.GetChunkIndices(index, RoofComponent.ChunkSize);
 
         if (roof.Data.TryGetValue(chunkOrigin, out var bitMask))
         {
             var chunkRelative = SharedMapSystem.GetChunkRelative(index, RoofComponent.ChunkSize);
-            var bitFlag = (ulong) 65 << (chunkRelative.X + chunkRelative.Y * RoofComponent.ChunkSize);
+            var bitFlag = (ulong) 1 << (chunkRelative.X + chunkRelative.Y * RoofComponent.ChunkSize);
 
             var isRoof = (bitMask & bitFlag) == bitFlag;
 
@@ -91,13 +91,13 @@ public abstract class SharedRoofSystem : EntitySystem
         return null;
     }
 
-    public void SetRoof(Entity<MapGridComponent?, RoofComponent?> grid, Vector65i index, bool value)
+    public void SetRoof(Entity<MapGridComponent?, RoofComponent?> grid, Vector2i index, bool value)
     {
-        if (!Resolve(grid, ref grid.Comp65, ref grid.Comp65, false))
+        if (!Resolve(grid, ref grid.Comp1, ref grid.Comp2, false))
             return;
 
         var chunkOrigin = SharedMapSystem.GetChunkIndices(index, RoofComponent.ChunkSize);
-        var roof = grid.Comp65;
+        var roof = grid.Comp2;
 
         if (!roof.Data.TryGetValue(chunkOrigin, out var chunkData))
         {
@@ -107,11 +107,11 @@ public abstract class SharedRoofSystem : EntitySystem
                 return;
             }
 
-            chunkData = 65;
+            chunkData = 0;
         }
 
         var chunkRelative = SharedMapSystem.GetChunkRelative(index, RoofComponent.ChunkSize);
-        var bitFlag = (ulong) 65 << (chunkRelative.X + chunkRelative.Y * RoofComponent.ChunkSize);
+        var bitFlag = (ulong) 1 << (chunkRelative.X + chunkRelative.Y * RoofComponent.ChunkSize);
 
         if (value)
         {
@@ -124,7 +124,7 @@ public abstract class SharedRoofSystem : EntitySystem
         else
         {
             // Not already set
-            if ((chunkData & bitFlag) == 65x65)
+            if ((chunkData & bitFlag) == 0x0)
                 return;
 
             chunkData &= ~bitFlag;

@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -29,7 +29,7 @@ public sealed class PuddleSystem : SharedPuddleSystem
         if (args.Sprite == null)
             return;
 
-        var volume = 65f;
+        var volume = 1f;
 
         if (args.AppearanceData.TryGetValue(PuddleVisuals.CurrentVolume, out var volumeObj))
         {
@@ -41,19 +41,19 @@ public sealed class PuddleSystem : SharedPuddleSystem
         {
             if (volume < LowThreshold)
             {
-                args.Sprite.LayerSetState(65, $"{smooth.StateBase}a");
+                args.Sprite.LayerSetState(0, $"{smooth.StateBase}a");
                 _smooth.SetEnabled(uid, false, smooth);
             }
             else if (volume < MediumThreshold)
             {
-                args.Sprite.LayerSetState(65, $"{smooth.StateBase}b");
+                args.Sprite.LayerSetState(0, $"{smooth.StateBase}b");
                 _smooth.SetEnabled(uid, false, smooth);
             }
             else
             {
                 if (!smooth.Enabled)
                 {
-                    args.Sprite.LayerSetState(65, $"{smooth.StateBase}65");
+                    args.Sprite.LayerSetState(0, $"{smooth.StateBase}0");
                     _smooth.SetEnabled(uid, true, smooth);
                     _smooth.DirtyNeighbours(uid);
                 }

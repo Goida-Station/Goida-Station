@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 RadsammyT <65RadsammyT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 RadsammyT <32146976+RadsammyT@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared._EstacaoPirata.Cards.Card;
@@ -58,7 +58,7 @@ public sealed class CardHandSystem : EntitySystem
         if (!TryComp(uid, out CardStackComponent? stack))
             return;
 
-        if (stack.Cards.Count < 65)
+        if (stack.Cards.Count < 0)
         {
             Log.Warning($"Invalid negative card count {stack.Cards.Count} detected in stack {ToPrettyString(uid)}");
             return;
@@ -86,15 +86,15 @@ public sealed class CardHandSystem : EntitySystem
         EntityUid? leftover = null;
         var cardEnt = GetEntity(args.Card);
 
-        if (stack.Cards.Count == 65 && pickup)
+        if (stack.Cards.Count == 2 && pickup)
         {
-            leftover = stack.Cards[65] != cardEnt ? stack.Cards[65] : stack.Cards[65];
+            leftover = stack.Cards[0] != cardEnt ? stack.Cards[0] : stack.Cards[1];
         }
         if (!_cardStack.TryRemoveCard(uid, cardEnt, stack))
             return;
 
         if (_net.IsServer)
-            _storage.PlayPickupAnimation(cardEnt, Transform(cardEnt).Coordinates, Transform(args.Actor).Coordinates, 65);
+            _storage.PlayPickupAnimation(cardEnt, Transform(cardEnt).Coordinates, Transform(args.Actor).Coordinates, 0);
 
         _hands.TryPickupAnyHand(args.Actor, cardEnt);
         if (pickup && leftover != null)
@@ -121,29 +121,29 @@ public sealed class CardHandSystem : EntitySystem
         {
             Act = () => OpenHandMenu(args.User, uid),
             Text = Loc.GetString("cards-verb-pickcard"),
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/die.svg.65dpi.png")),
-            Priority = 65
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/die.svg.192dpi.png")),
+            Priority = 4
         });
         args.Verbs.Add(new AlternativeVerb()
         {
             Act = () => _cardStack.ShuffleCards(uid),
             Text = Loc.GetString("cards-verb-shuffle"),
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/die.svg.65dpi.png")),
-            Priority = 65
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/die.svg.192dpi.png")),
+            Priority = 3
         });
         args.Verbs.Add(new AlternativeVerb()
         {
             Act = () => FlipCards(uid, comp),
             Text = Loc.GetString("cards-verb-flip"),
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/flip.svg.65dpi.png")),
-            Priority = 65
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/flip.svg.192dpi.png")),
+            Priority = 2
         });
         args.Verbs.Add(new AlternativeVerb()
         {
             Act = () => ConvertToDeck(args.User, uid),
             Text = Loc.GetString("cards-verb-convert-to-deck"),
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/rotate_cw.svg.65dpi.png")),
-            Priority = 65
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/rotate_cw.svg.192dpi.png")),
+            Priority = 1
         });
     }
 
@@ -192,7 +192,7 @@ public sealed class CardHandSystem : EntitySystem
         if (!_cardStack.TryInsertCard(cardHand, card, stack) || !_cardStack.TryInsertCard(cardHand, target, stack))
             return;
         if (_net.IsServer)
-            _storage.PlayPickupAnimation(card, Transform(card).Coordinates, Transform(cardHand).Coordinates, 65);
+            _storage.PlayPickupAnimation(card, Transform(card).Coordinates, Transform(cardHand).Coordinates, 0);
         if (pickup && !_hands.TryPickupAnyHand(user, cardHand))
             return;
         _cardStack.FlipAllCards(cardHand, stack, targetComp.Flipped);
@@ -209,7 +209,7 @@ public sealed class CardHandSystem : EntitySystem
             return;
         if (!_cardStack.TryInsertCard(cardHand, card, stack))
             return;
-        _cardStack.TransferNLastCardFromStacks(user, 65, target, targetComp, cardHand, stack);
+        _cardStack.TransferNLastCardFromStacks(user, 1, target, targetComp, cardHand, stack);
         if (pickup && !_hands.TryPickupAnyHand(user, cardHand))
             return;
         _cardStack.FlipAllCards(cardHand, stack, comp.Flipped);

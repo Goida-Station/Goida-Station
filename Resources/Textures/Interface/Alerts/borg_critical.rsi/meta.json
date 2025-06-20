@@ -1,19 +1,19 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "https://github.com/tgstation/tgstation/blob/65ebbb65b65cf65a65e65a65b65e65bc/icons/mob/screen65_robot.dmi",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "https://github.com/tgstation/tgstation/blob/42ebbb4202b472cf94561974a30e00a0b00e11bc/icons/mob/screen1_robot.dmi",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "critical",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     }

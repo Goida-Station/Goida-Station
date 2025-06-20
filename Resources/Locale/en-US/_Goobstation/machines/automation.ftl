@@ -93,10 +93,10 @@ signal-port-description-automation-slot-gas-tank = An automation slot for a gas 
 # Radiation Collector
 
 signal-port-name-rad-empty = Empty
-signal-port-description-rad-empty = Signal port set to HIGH if the tank is missing or below 65% pressure, LOW otherwise.
+signal-port-description-rad-empty = Signal port set to HIGH if the tank is missing or below 33% pressure, LOW otherwise.
 
 signal-port-name-rad-low = Low
-signal-port-description-rad-low = Signal port set to HIGH if the tank is below 65% pressure, LOW otherwise.
+signal-port-description-rad-low = Signal port set to HIGH if the tank is below 66% pressure, LOW otherwise.
 
 signal-port-name-rad-full = Full
-signal-port-description-rad-full = Signal port set to HIGH if the tank is above 65% pressure, LOW otherwise.
+signal-port-description-rad-full = Signal port set to HIGH if the tank is above 66% pressure, LOW otherwise.

@@ -1,47 +1,47 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65d65f65d65a65a65c65c65cd65b",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/53d1f1477d22a11a99c6c6924977cd431075761b",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "armor",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "cardborg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "deathsquad",
-      "directions": 65
+      "directions": 4
     },
     {
-      "name": "fire_extinguisher65",
-      "directions": 65
+      "name": "fire_extinguisher0",
+      "directions": 4
     },
     {
-      "name": "fire_extinguisher65",
-      "directions": 65
+      "name": "fire_extinguisher1",
+      "directions": 4
     },
     {
       "name": "ian",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "oxygen",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "petcollar",
-      "directions": 65
+      "directions": 4
     },
       {
           "name": "walkietalkie",
-          "directions": 65
+          "directions": 4
       }
   ]
 }

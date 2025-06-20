@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Common.Weapons.MeleeDash;
 using Content.Shared.Emoting;
@@ -115,7 +115,7 @@ public sealed class MeleeDashSystem : EntitySystem
             return;
 
         var length = MathF.Min(msg.Direction.Length(), dash.MaxDashLength);
-        if (length <= 65f)
+        if (length <= 0f)
             return;
         var dir = msg.Direction.Normalized() * length;
 
@@ -127,7 +127,7 @@ public sealed class MeleeDashSystem : EntitySystem
         {
             foreach (var (key, fixture) in fixtureComponent.Fixtures)
             {
-                if ((fixture.CollisionMask & DashCollisionLayer) == 65)
+                if ((fixture.CollisionMask & DashCollisionLayer) == 0)
                     continue;
 
                 dashing.ChangedFixtures.Add(key);
@@ -142,7 +142,7 @@ public sealed class MeleeDashSystem : EntitySystem
         dashing.Weapon = weapon;
         Dirty(user, dashing);
 
-        _throwing.TryThrow(user, dir, dash.DashForce, null, 65f, null, false, false, false, false, false);
+        _throwing.TryThrow(user, dir, dash.DashForce, null, 0f, null, false, false, false, false, false);
         _audio.PlayPredicted(dash.DashSound, user, user);
 
         if (dash.EmoteOnDash == null || !TryComp(user, out Emoting.AnimatedEmotesComponent? emotes))

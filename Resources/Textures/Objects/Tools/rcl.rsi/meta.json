@@ -1,39 +1,39 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65a65f65b65a65f65f65b65be65f65cc65a65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/77608a9f46b06a46f0f6b1be061755f68cc255a3",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "rcle-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "rcle-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "rcl-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "rcl-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
-      "name": "rcl-65"
+      "name": "rcl-0"
     },
     {
-      "name": "rcl-65"
+      "name": "rcl-10"
     },
     {
-      "name": "rcl-65"
+      "name": "rcl-20"
     },
     {
-      "name": "rcl-65"
+      "name": "rcl-30"
     }
   ]
 }

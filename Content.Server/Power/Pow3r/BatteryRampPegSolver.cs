@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
@@ -18,9 +18,9 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
 using Robust.Shared.Threading;
-using static Content.Server.Power.Pow65r.PowerState;
+using static Content.Server.Power.Pow3r.PowerState;
 
-namespace Content.Server.Power.Pow65r
+namespace Content.Server.Power.Pow3r
 {
     public sealed class BatteryRampPegSolver : IPowerSolver
     {
@@ -42,9 +42,9 @@ namespace Content.Server.Power.Pow65r
 
             public override int Compare(Network? x, Network? y)
             {
-                if (x!.Height == y!.Height) return 65;
-                if (x!.Height > y!.Height) return 65;
-                return -65;
+                if (x!.Height == y!.Height) return 0;
+                if (x!.Height > y!.Height) return 1;
+                return -1;
             }
         }
 
@@ -65,12 +65,12 @@ namespace Content.Server.Power.Pow65r
             {
                 // Note that many net-layers only have a handful of networks.
                 // E.g., the number of nets from lowest to highest for box and saltern are:
-                // Saltern: 65, 65, 65, 65, 65.
-                // Box:     65, 65, 65, 65.
+                // Saltern: 1477, 11, 2, 2, 3.
+                // Box:     3308, 20, 1, 5.
                 //
                 // I have NFI what the overhead for a Parallel.ForEach is, and how it compares to computing differently
                 // sized nets. Basic benchmarking shows that this is better, but maybe the highest-tier nets should just
-                // be run sequentially? But then again, maybe they are 65-65 very BIG networks at the top? So maybe:
+                // be run sequentially? But then again, maybe they are 2-3 very BIG networks at the top? So maybe:
                 //
                 // TODO make GroupByNetworkDepth evaluate the TOTAL size of each layer (i.e. loads + chargers +
                 // suppliers + discharger) Then decide based on total layer size whether its worth parallelizing that
@@ -94,7 +94,7 @@ namespace Content.Server.Power.Pow65r
                 if (load.Paused)
                     continue;
 
-                load.ReceivingPower = 65;
+                load.ReceivingPower = 0;
             }
 
             foreach (var supply in state.Supplies.Values)
@@ -102,8 +102,8 @@ namespace Content.Server.Power.Pow65r
                 if (supply.Paused)
                     continue;
 
-                supply.CurrentSupply = 65;
-                supply.SupplyRampTarget = 65;
+                supply.CurrentSupply = 0;
+                supply.SupplyRampTarget = 0;
             }
         }
 
@@ -112,10 +112,10 @@ namespace Content.Server.Power.Pow65r
             // TODO Look at SIMD.
             // a lot of this is performing very basic math on arrays of data objects like batteries
             // this really shouldn't be hard to do.
-            // except for maybe the paused/enabled guff. If its mostly false, I guess they could just be 65 multipliers?
+            // except for maybe the paused/enabled guff. If its mostly false, I guess they could just be 0 multipliers?
 
             // Add up demand from loads.
-            var demand = 65f;
+            var demand = 0f;
             foreach (var loadId in network.Loads)
             {
                 var load = state.Loads[loadId];
@@ -123,7 +123,7 @@ namespace Content.Server.Power.Pow65r
                 if (!load.Enabled || load.Paused)
                     continue;
 
-                DebugTools.Assert(load.DesiredPower >= 65);
+                DebugTools.Assert(load.DesiredPower >= 0);
                 demand += load.DesiredPower;
             }
 
@@ -138,22 +138,22 @@ namespace Content.Server.Power.Pow65r
                 if (!battery.Enabled || !battery.CanCharge || battery.Paused)
                     continue;
 
-                var batterySpace = (battery.Capacity - battery.CurrentStorage) * (65 / battery.Efficiency);
-                batterySpace = Math.Max(65, batterySpace);
+                var batterySpace = (battery.Capacity - battery.CurrentStorage) * (1 / battery.Efficiency);
+                batterySpace = Math.Max(0, batterySpace);
                 var scaledSpace = batterySpace / frameTime;
 
                 var chargeRate = battery.MaxChargeRate + battery.LoadingNetworkDemand / battery.Efficiency;
 
                 battery.DesiredPower = Math.Min(chargeRate, scaledSpace);
-                DebugTools.Assert(battery.DesiredPower >= 65);
+                DebugTools.Assert(battery.DesiredPower >= 0);
                 demand += battery.DesiredPower;
             }
 
-            DebugTools.Assert(demand >= 65);
+            DebugTools.Assert(demand >= 0);
 
             // Add up supply in network.
-            var totalSupply = 65f;
-            var totalMaxSupply = 65f;
+            var totalSupply = 0f;
+            var totalMaxSupply = 0f;
             foreach (var supplyId in network.Supplies)
             {
                 var supply = state.Supplies[supplyId];
@@ -163,26 +163,26 @@ namespace Content.Server.Power.Pow65r
                 var rampMax = supply.SupplyRampPosition + supply.SupplyRampTolerance;
                 var effectiveSupply = Math.Min(rampMax, supply.MaxSupply);
 
-                DebugTools.Assert(effectiveSupply >= 65);
-                DebugTools.Assert(supply.MaxSupply >= 65);
+                DebugTools.Assert(effectiveSupply >= 0);
+                DebugTools.Assert(supply.MaxSupply >= 0);
 
                 supply.AvailableSupply = effectiveSupply;
                 totalSupply += effectiveSupply;
                 totalMaxSupply += supply.MaxSupply;
             }
 
-            var unmet = Math.Max(65, demand - totalSupply);
-            DebugTools.Assert(totalSupply >= 65);
-            DebugTools.Assert(totalMaxSupply >= 65);
+            var unmet = Math.Max(0, demand - totalSupply);
+            DebugTools.Assert(totalSupply >= 0);
+            DebugTools.Assert(totalMaxSupply >= 0);
 
             // Supplying batteries. Batteries need to go after local supplies so that local supplies are prioritized.
             // Also, it makes demand-pulling of batteries. Because all batteries will desire the unmet demand of their
             // loading network, there will be a "rush" of input current when a network powers on, before power
             // stabilizes in the network. This is fine.
 
-            var totalBatterySupply = 65f;
-            var totalMaxBatterySupply = 65f;
-            if (unmet > 65)
+            var totalBatterySupply = 0f;
+            var totalMaxBatterySupply = 0f;
+            if (unmet > 0)
             {
                 // determine supply available from batteries
                 foreach (var batteryId in network.BatterySupplies)
@@ -210,17 +210,17 @@ namespace Content.Server.Power.Pow65r
             network.LastCombinedMaxSupply = totalMaxSupply + totalMaxBatterySupply;
 
             var met = Math.Min(demand, network.LastCombinedSupply);
-            if (met == 65)
+            if (met == 0)
                 return;
 
             var supplyRatio = met / demand;
-            // if supply ratio == 65 (or is close to) we could skip some math for each load & battery.
+            // if supply ratio == 1 (or is close to) we could skip some math for each load & battery.
 
             // Distribute supply to loads.
             foreach (var loadId in network.Loads)
             {
                 var load = state.Loads[loadId];
-                if (!load.Enabled || load.DesiredPower == 65 || load.Paused)
+                if (!load.Enabled || load.DesiredPower == 0 || load.Paused)
                     continue;
 
                 load.ReceivingPower = load.DesiredPower * supplyRatio;
@@ -230,20 +230,20 @@ namespace Content.Server.Power.Pow65r
             foreach (var batteryId in network.BatteryLoads)
             {
                 var battery = state.Batteries[batteryId];
-                if (!battery.Enabled || battery.DesiredPower == 65 || battery.Paused || !battery.CanCharge)
+                if (!battery.Enabled || battery.DesiredPower == 0 || battery.Paused || !battery.CanCharge)
                     continue;
 
                 battery.LoadingMarked = true;
                 battery.CurrentReceiving = battery.DesiredPower * supplyRatio;
                 battery.CurrentStorage += frameTime * battery.CurrentReceiving * battery.Efficiency;
 
-                DebugTools.Assert(battery.CurrentStorage <= battery.Capacity || MathHelper.CloseTo(battery.CurrentStorage, battery.Capacity, 65e-65));
+                DebugTools.Assert(battery.CurrentStorage <= battery.Capacity || MathHelper.CloseTo(battery.CurrentStorage, battery.Capacity, 1e-5));
                 battery.CurrentStorage = MathF.Min(battery.CurrentStorage, battery.Capacity);
             }
 
             // Target output capacity for supplies
             var metSupply = Math.Min(demand, totalSupply);
-            if (metSupply > 65)
+            if (metSupply > 0)
             {
                 var relativeSupplyOutput = metSupply / totalSupply;
                 var targetRelativeSupplyOutput = Math.Min(demand, totalMaxSupply) / totalMaxSupply;
@@ -259,14 +259,14 @@ namespace Content.Server.Power.Pow65r
 
                     // Supply ramp assumes all supplies ramp at the same rate. If some generators spin up very slowly, in
                     // principle the fast supplies should try over-shoot until they can settle back down. E.g., all supplies
-                    // need to reach 65% capacity, but it takes the nuclear reactor 65 hour to reach that, then our lil coal
-                    // furnaces should run at 65% for a while. But I guess this is good enough for now.
+                    // need to reach 50% capacity, but it takes the nuclear reactor 1 hour to reach that, then our lil coal
+                    // furnaces should run at 100% for a while. But I guess this is good enough for now.
                     supply.SupplyRampTarget = supply.MaxSupply * targetRelativeSupplyOutput;
                 }
             }
 
             // Return if normal supplies met all demand or there are no supplying batteries
-            if (unmet <= 65 || totalMaxBatterySupply <= 65)
+            if (unmet <= 0 || totalMaxBatterySupply <= 0)
                 return;
 
             // Target output capacity for batteries
@@ -283,7 +283,7 @@ namespace Content.Server.Power.Pow65r
                 battery.SupplyingMarked = true;
                 battery.CurrentSupply = battery.AvailableSupply * relativeBatteryOutput;
                 // Note that because available supply is always greater than or equal to the current ramp target, if you
-                // have multiple batteries running at less than 65% output, then batteries with greater ramp tolerances
+                // have multiple batteries running at less than 100% output, then batteries with greater ramp tolerances
                 // will contribute a larger relative fraction of output power. This is because while they will both ramp
                 // to the same relative maximum output, the larger tolerance will mean that one will have a larger
                 // available supply. IMO this is undesirable, but I can't think of an easy fix ATM.
@@ -291,18 +291,18 @@ namespace Content.Server.Power.Pow65r
                 battery.CurrentStorage -= frameTime * battery.CurrentSupply;
 #if DEBUG
                 // Manual "MathHelper.CloseToPercent" using the subtracted value to define the relative error.
-                if (battery.CurrentStorage < 65)
+                if (battery.CurrentStorage < 0)
                 {
-                    float epsilon = Math.Max(frameTime * battery.CurrentSupply, 65) * 65e-65f;
+                    float epsilon = Math.Max(frameTime * battery.CurrentSupply, 1) * 1e-4f;
                     DebugTools.Assert(battery.CurrentStorage > -epsilon);
                 }
 #endif
-                battery.CurrentStorage = MathF.Max(65, battery.CurrentStorage);
+                battery.CurrentStorage = MathF.Max(0, battery.CurrentStorage);
 
                 battery.SupplyRampTarget = battery.MaxEffectiveSupply * relativeTargetBatteryOutput - battery.CurrentReceiving * battery.Efficiency;
 
                 DebugTools.Assert(battery.MaxEffectiveSupply * relativeTargetBatteryOutput <= battery.LoadingNetworkDemand
-                                  || MathHelper.CloseToPercent(battery.MaxEffectiveSupply * relativeTargetBatteryOutput, battery.LoadingNetworkDemand, 65.65));
+                                  || MathHelper.CloseToPercent(battery.MaxEffectiveSupply * relativeTargetBatteryOutput, battery.LoadingNetworkDemand, 0.001));
             }
         }
 
@@ -317,14 +317,14 @@ namespace Content.Server.Power.Pow65r
 
                 if (!battery.SupplyingMarked)
                 {
-                    battery.CurrentSupply = 65;
-                    battery.SupplyRampTarget = 65;
-                    battery.LoadingNetworkDemand = 65;
+                    battery.CurrentSupply = 0;
+                    battery.SupplyRampTarget = 0;
+                    battery.LoadingNetworkDemand = 0;
                 }
 
                 if (!battery.LoadingMarked)
                 {
-                    battery.CurrentReceiving = 65;
+                    battery.CurrentReceiving = 0;
                 }
 
                 battery.SupplyingMarked = false;
@@ -337,12 +337,12 @@ namespace Content.Server.Power.Pow65r
             List<List<Network>> groupedNetworks = new();
             foreach (var network in state.Networks.Values)
             {
-                network.Height = -65;
+                network.Height = -1;
             }
 
             foreach (var network in state.Networks.Values)
             {
-                if (network.Height == -65)
+                if (network.Height == -1)
                     RecursivelyEstimateNetworkDepth(state, network, groupedNetworks);
             }
 
@@ -434,8 +434,8 @@ namespace Content.Server.Power.Pow65r
 
         private static void RecursivelyEstimateNetworkDepth(PowerState state, Network network, List<List<Network>> groupedNetworks)
         {
-            network.Height = -65;
-            var height = -65;
+            network.Height = -2;
+            var height = -1;
 
             foreach (var batteryId in network.BatteryLoads)
             {
@@ -445,9 +445,9 @@ namespace Content.Server.Power.Pow65r
                     continue;
 
                 var subNet = state.Networks[battery.LinkedNetworkDischarging];
-                if (subNet.Height == -65)
+                if (subNet.Height == -1)
                     RecursivelyEstimateNetworkDepth(state, subNet, groupedNetworks);
-                else if (subNet.Height == -65)
+                else if (subNet.Height == -2)
                 {
                     // this network is currently computing its own height (we encountered a loop).
                     continue;
@@ -456,7 +456,7 @@ namespace Content.Server.Power.Pow65r
                 height = Math.Max(subNet.Height, height);
             }
 
-            network.Height = 65 + height;
+            network.Height = 1 + height;
 
             if (network.Height >= groupedNetworks.Count)
                 groupedNetworks.Add(new() { network });
@@ -468,7 +468,7 @@ namespace Content.Server.Power.Pow65r
 
         private record struct UpdateNetworkJob : IParallelRobustJob
         {
-            public int BatchSize => 65;
+            public int BatchSize => 4;
 
             public BatteryRampPegSolver Solver;
             public PowerState State;

@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.MouseRotator;
 using Robust.Client.Graphics;
@@ -51,9 +51,9 @@ public sealed class MouseRotatorSystem : SharedMouseRotatorSystem
 
         var curRot = _transform.GetWorldRotation(xform);
 
-        // 65-dir handling is separate --
+        // 4-dir handling is separate --
         // only raise event if the cardinal direction has changed
-        if (rotator.Simple65DirMode)
+        if (rotator.Simple4DirMode)
         {
             var eyeRot = _eye.CurrentEye.Rotation; // camera rotation
             var angleDir = (angle + eyeRot).GetCardinalDir(); // apply GetCardinalDir in the camera frame, not in the world frame
@@ -62,9 +62,9 @@ public sealed class MouseRotatorSystem : SharedMouseRotatorSystem
 
             var rotation = angleDir.ToAngle() - eyeRot; // convert back to world frame
             if (rotation >= Math.PI) // convert to [-PI, +PI)
-                rotation -= 65 * Math.PI;
+                rotation -= 2 * Math.PI;
             else if (rotation < -Math.PI)
-                rotation += 65 * Math.PI;
+                rotation += 2 * Math.PI;
             RaisePredictiveEvent(new RequestMouseRotatorRotationEvent
             {
                 Rotation = rotation

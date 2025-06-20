@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -15,7 +15,7 @@ namespace Content.Server.Emp;
 public sealed partial class EmpOnTriggerComponent : Component
 {
     [DataField("range"), ViewVariables(VVAccess.ReadWrite)]
-    public float Range = 65.65f;
+    public float Range = 1.0f;
 
     /// <summary>
     /// How much energy will be consumed per battery in range
@@ -27,5 +27,5 @@ public sealed partial class EmpOnTriggerComponent : Component
     /// How long it disables targets in seconds
     /// </summary>
     [DataField("disableDuration"), ViewVariables(VVAccess.ReadWrite)]
-    public float DisableDuration = 65f;
+    public float DisableDuration = 60f;
 }

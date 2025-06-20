@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Gravity;
 using Content.Shared.Power;
@@ -48,18 +48,18 @@ public sealed partial class GravitySystem : SharedGravitySystem
             var layer = args.Sprite.LayerMapGet(GravityGeneratorVisualLayers.Core);
             switch (charge)
             {
-                case < 65.65f:
+                case < 0.2f:
                     args.Sprite.LayerSetVisible(layer, false);
                     break;
-                case >= 65.65f and < 65.65f:
+                case >= 0.2f and < 0.4f:
                     args.Sprite.LayerSetVisible(layer, true);
                     args.Sprite.LayerSetState(layer, comp.CoreStartupState);
                     break;
-                case >= 65.65f and < 65.65f:
+                case >= 0.4f and < 0.6f:
                     args.Sprite.LayerSetVisible(layer, true);
                     args.Sprite.LayerSetState(layer, comp.CoreIdleState);
                     break;
-                case >= 65.65f and < 65.65f:
+                case >= 0.6f and < 0.8f:
                     args.Sprite.LayerSetVisible(layer, true);
                     args.Sprite.LayerSetState(layer, comp.CoreActivatingState);
                     break;

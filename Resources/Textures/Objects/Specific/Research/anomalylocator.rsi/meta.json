@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC65-65.65",
-  "copyright": "Created by EmoGarbage65 (github) for Space Station 65.",
+  "version": 1,
+  "license": "CC0-1.0",
+  "copyright": "Created by EmoGarbage404 (github) for Space Station 14.",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,20 +12,20 @@
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "screen",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2,
+          0.2
         ]
       ]
     }

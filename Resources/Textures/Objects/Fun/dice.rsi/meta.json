@@ -1,221 +1,221 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from vgstation at https://github.com/vgstation-coders/vgstation65/commit/65cdfb65cc65d65ba65fa65d65f65aa65f65ad65d. Edited by ElectroSR.",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from vgstation at https://github.com/vgstation-coders/vgstation13/commit/1cdfb0230cc96d0ba751fa002d04f8aa2f25ad7d. Edited by ElectroSR.",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
-      "name": "percentile_65"
+      "name": "percentile_10"
     },
     {
-      "name": "percentile_65"
+      "name": "percentile_0"
     },
     {
-      "name": "percentile_65"
+      "name": "percentile_20"
     },
     {
-      "name": "percentile_65"
+      "name": "percentile_30"
     },
     {
-      "name": "percentile_65"
+      "name": "percentile_40"
     },
     {
-      "name": "percentile_65"
+      "name": "percentile_50"
     },
     {
-      "name": "percentile_65"
+      "name": "percentile_60"
     },
     {
-      "name": "percentile_65"
+      "name": "percentile_70"
     },
     {
-      "name": "percentile_65"
+      "name": "percentile_80"
     },
     {
-      "name": "percentile_65"
+      "name": "percentile_90"
     },
     {
-      "name": "d65_65"
+      "name": "d10_0"
     },
     {
-      "name": "d65_65"
+      "name": "d10_1"
     },
     {
-      "name": "d65_65"
+      "name": "d10_2"
     },
     {
-      "name": "d65_65"
+      "name": "d10_3"
     },
     {
-      "name": "d65_65"
+      "name": "d10_4"
     },
     {
-      "name": "d65_65"
+      "name": "d10_5"
     },
     {
-      "name": "d65_65"
+      "name": "d10_6"
     },
     {
-      "name": "d65_65"
+      "name": "d10_7"
     },
     {
-      "name": "d65_65"
+      "name": "d10_8"
     },
     {
-      "name": "d65_65"
+      "name": "d10_9"
     },
     {
-      "name": "d65_65"
+      "name": "d12_1"
     },
     {
-      "name": "d65_65"
+      "name": "d12_10"
     },
     {
-      "name": "d65_65"
+      "name": "d12_11"
     },
     {
-      "name": "d65_65"
+      "name": "d12_12"
     },
     {
-      "name": "d65_65"
+      "name": "d12_2"
     },
     {
-      "name": "d65_65"
+      "name": "d12_3"
     },
     {
-      "name": "d65_65"
+      "name": "d12_4"
     },
     {
-      "name": "d65_65"
+      "name": "d12_5"
     },
     {
-      "name": "d65_65"
+      "name": "d12_6"
     },
     {
-      "name": "d65_65"
+      "name": "d12_7"
     },
     {
-      "name": "d65_65"
+      "name": "d12_8"
     },
     {
-      "name": "d65_65"
+      "name": "d12_9"
     },
     {
-      "name": "d65_65"
+      "name": "d20_1"
     },
     {
-      "name": "d65_65"
+      "name": "d20_10"
     },
     {
-      "name": "d65_65"
+      "name": "d20_11"
     },
     {
-      "name": "d65_65"
+      "name": "d20_12"
     },
     {
-      "name": "d65_65"
+      "name": "d20_13"
     },
     {
-      "name": "d65_65"
+      "name": "d20_14"
     },
     {
-      "name": "d65_65"
+      "name": "d20_15"
     },
     {
-      "name": "d65_65"
+      "name": "d20_16"
     },
     {
-      "name": "d65_65"
+      "name": "d20_17"
     },
     {
-      "name": "d65_65"
+      "name": "d20_18"
     },
     {
-      "name": "d65_65"
+      "name": "d20_19"
     },
     {
-      "name": "d65_65"
+      "name": "d20_2"
     },
     {
-      "name": "d65_65"
+      "name": "d20_20"
     },
     {
-      "name": "d65_65"
+      "name": "d20_3"
     },
     {
-      "name": "d65_65"
+      "name": "d20_4"
     },
     {
-      "name": "d65_65"
+      "name": "d20_5"
     },
     {
-      "name": "d65_65"
+      "name": "d20_6"
     },
     {
-      "name": "d65_65"
+      "name": "d20_7"
     },
     {
-      "name": "d65_65"
+      "name": "d20_8"
     },
     {
-      "name": "d65_65"
+      "name": "d20_9"
     },
     {
-      "name": "d65_65"
+      "name": "d4_1"
     },
     {
-      "name": "d65_65"
+      "name": "d4_2"
     },
     {
-      "name": "d65_65"
+      "name": "d4_3"
     },
     {
-      "name": "d65_65"
+      "name": "d4_4"
     },
     {
-      "name": "d65_65"
+      "name": "d6_1"
     },
     {
-      "name": "d65_65"
+      "name": "d6_2"
     },
     {
-      "name": "d65_65"
+      "name": "d6_3"
     },
     {
-      "name": "d65_65"
+      "name": "d6_4"
     },
     {
-      "name": "d65_65"
+      "name": "d6_5"
     },
     {
-      "name": "d65_65"
+      "name": "d6_6"
     },
     {
-      "name": "d65_65"
+      "name": "d8_1"
     },
     {
-      "name": "d65_65"
+      "name": "d8_2"
     },
     {
-      "name": "d65_65"
+      "name": "d8_3"
     },
     {
-      "name": "d65_65"
+      "name": "d8_4"
     },
     {
-      "name": "d65_65"
+      "name": "d8_5"
     },
     {
-      "name": "d65_65"
+      "name": "d8_6"
     },
     {
-      "name": "d65_65"
+      "name": "d8_7"
     },
     {
-      "name": "d65_65"
+      "name": "d8_8"
     },
     {
       "name": "dicebag"

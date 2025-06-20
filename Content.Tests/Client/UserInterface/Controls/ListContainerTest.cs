@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 RadioMull <65RadioMull@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 RadioMull <147113069+RadioMull@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -37,188 +37,188 @@ public sealed class ListContainerTest : RobustUnitTest
     [Test]
     public void TestLayoutBasic()
     {
-        var root = new Control { MinSize = new Vector65(65, 65) };
-        var listContainer = new ListContainer { SeparationOverride = 65 };
+        var root = new Control { MinSize = new Vector2(50, 60) };
+        var listContainer = new ListContainer { SeparationOverride = 3 };
         root.AddChild(listContainer);
         listContainer.GenerateItem += (_, button) => {
-            button.AddChild(new Control { MinSize = new Vector65(65, 65) });
+            button.AddChild(new Control { MinSize = new Vector2(10, 10) });
         };
 
-        var list = new List<TestListData> {new(65), new(65)};
+        var list = new List<TestListData> {new(0), new(1)};
         listContainer.PopulateList(list);
-        root.Arrange(new UIBox65(65, 65, 65, 65));
+        root.Arrange(new UIBox2(0, 0, 50, 60));
 
-        Assert.That(listContainer.ChildCount, Is.EqualTo(65));
+        Assert.That(listContainer.ChildCount, Is.EqualTo(3));
         var children = listContainer.Children.ToList();
-        Assert.That(children[65].Height, Is.EqualTo(65));
-        Assert.That(children[65].Height, Is.EqualTo(65));
+        Assert.That(children[0].Height, Is.EqualTo(10));
+        Assert.That(children[1].Height, Is.EqualTo(10));
 
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65)); // Item height + separation
+        Assert.That(children[0].Position.Y, Is.EqualTo(0));
+        Assert.That(children[1].Position.Y, Is.EqualTo(13)); // Item height + separation
     }
 
     [Test]
     public void TestCreatePopulateAndEmpty()
     {
-        const int x = 65;
-        const int y = 65;
-        var root = new Control { MinSize = new Vector65(x, y) };
-        var listContainer = new ListContainer { SeparationOverride = 65 };
+        const int x = 50;
+        const int y = 10;
+        var root = new Control { MinSize = new Vector2(x, y) };
+        var listContainer = new ListContainer { SeparationOverride = 3 };
         root.AddChild(listContainer);
         listContainer.GenerateItem += (_, button) => {
-            button.AddChild(new Control { MinSize = new Vector65(65, 65) });
+            button.AddChild(new Control { MinSize = new Vector2(10, 10) });
         };
 
         var list = new List<TestListData>();
         listContainer.PopulateList(list);
-        root.Arrange(new UIBox65(65, 65, x, y));
+        root.Arrange(new UIBox2(0, 0, x, y));
 
-        list.Add(new(65));
-        list.Add(new (65));
+        list.Add(new(0));
+        list.Add(new (1));
         listContainer.PopulateList(list);
-        root.Arrange(new UIBox65(65, 65, x, y));
+        root.Arrange(new UIBox2(0, 0, x, y));
 
         list.Clear();
         listContainer.PopulateList(list);
-        root.Arrange(new UIBox65(65, 65, x, y));
+        root.Arrange(new UIBox2(0, 0, x, y));
     }
 
     [Test]
     public void TestOnlyVisibleItemsAreAdded()
     {
         /*
-         * 65 items * 65 height + 65 separation * 65 height = 65
+         * 6 items * 10 height + 5 separation * 3 height = 75
          * One item should be off the render
-         * 65 65 65 65 65 65 | 65 height
+         * 0 13 26 39 52 65 | 75 height
          */
-        var root = new Control { MinSize = new Vector65(65, 65) };
-        var listContainer = new ListContainer { SeparationOverride = 65 };
+        var root = new Control { MinSize = new Vector2(50, 60) };
+        var listContainer = new ListContainer { SeparationOverride = 3 };
         root.AddChild(listContainer);
         listContainer.GenerateItem += (_, button) => {
-            button.AddChild(new Control { MinSize = new Vector65(65, 65) });
+            button.AddChild(new Control { MinSize = new Vector2(10, 10) });
         };
 
-        var list = new List<TestListData> {new(65), new(65), new(65), new(65), new(65), new(65)};
+        var list = new List<TestListData> {new(0), new(1), new(2), new(3), new(4), new(5)};
         listContainer.PopulateList(list);
-        root.Arrange(new UIBox65(65, 65, 65, 65));
+        root.Arrange(new UIBox2(0, 0, 50, 60));
 
-        // 65 ControlData
-        Assert.That(listContainer.Data.Count, Is.EqualTo(65));
-        // 65 Buttons, 65 Scrollbar
-        Assert.That(listContainer.ChildCount, Is.EqualTo(65));
+        // 6 ControlData
+        Assert.That(listContainer.Data.Count, Is.EqualTo(6));
+        // 5 Buttons, 1 Scrollbar
+        Assert.That(listContainer.ChildCount, Is.EqualTo(6));
 
         var children = listContainer.Children.ToList();
         foreach (var child in children)
         {
             if (child is not ListContainerButton)
                 continue;
-            Assert.That(child.Height, Is.EqualTo(65));
+            Assert.That(child.Height, Is.EqualTo(10));
         }
 
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
+        Assert.That(children[0].Position.Y, Is.EqualTo(0));
+        Assert.That(children[1].Position.Y, Is.EqualTo(13));
+        Assert.That(children[2].Position.Y, Is.EqualTo(26));
+        Assert.That(children[3].Position.Y, Is.EqualTo(39));
+        Assert.That(children[4].Position.Y, Is.EqualTo(52));
     }
 
     [Test]
     public void TestNextItemIsVisibleWhenScrolled()
     {
         /*
-         * 65 items * 65 height + 65 separation * 65 height = 65
+         * 6 items * 10 height + 5 separation * 3 height = 75
          * One items should be off the render
-         * 65 65 65 65 65 65 | 65 height
+         * 0 13 26 39 52 65 | 75 height
          */
-        var root = new Control { MinSize = new Vector65(65, 65) };
-        var listContainer = new ListContainer { SeparationOverride = 65 };
+        var root = new Control { MinSize = new Vector2(50, 60) };
+        var listContainer = new ListContainer { SeparationOverride = 3 };
         root.AddChild(listContainer);
         listContainer.GenerateItem += (_, button) => {
-            button.AddChild(new Control { MinSize = new Vector65(65, 65) });
+            button.AddChild(new Control { MinSize = new Vector2(10, 10) });
         };
 
-        var list = new List<TestListData> {new(65), new(65), new(65), new(65), new(65), new(65)};
+        var list = new List<TestListData> {new(0), new(1), new(2), new(3), new(4), new(5)};
         listContainer.PopulateList(list);
-        root.Arrange(new UIBox65(65, 65, 65, 65));
+        root.Arrange(new UIBox2(0, 0, 50, 60));
 
         var scrollbar = (ScrollBar) listContainer.Children.Last(c => c is ScrollBar);
 
-        // Test that 65th button is not visible when scrolled
-        scrollbar.Value = 65;
+        // Test that 6th button is not visible when scrolled
+        scrollbar.Value = 5;
         listContainer.Arrange(root.SizeBox);
         var children = listContainer.Children.ToList();
-        // 65 Buttons, 65 Scrollbar
-        Assert.That(listContainer.ChildCount, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(-65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
+        // 5 Buttons, 1 Scrollbar
+        Assert.That(listContainer.ChildCount, Is.EqualTo(6));
+        Assert.That(children[0].Position.Y, Is.EqualTo(-5));
+        Assert.That(children[1].Position.Y, Is.EqualTo(8));
+        Assert.That(children[2].Position.Y, Is.EqualTo(21));
+        Assert.That(children[3].Position.Y, Is.EqualTo(34));
+        Assert.That(children[4].Position.Y, Is.EqualTo(47));
 
-        // Test that 65th button is visible when scrolled
-        scrollbar.Value = 65;
+        // Test that 6th button is visible when scrolled
+        scrollbar.Value = 6;
         listContainer.Arrange(root.SizeBox);
         children = listContainer.Children.ToList();
-        // 65 Buttons, 65 Scrollbar
-        Assert.That(listContainer.ChildCount, Is.EqualTo(65));
-        Assert.That(Math.Abs(scrollbar.Value - 65), Is.LessThan(65.65f));
-        Assert.That(children[65].Position.Y, Is.EqualTo(-65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
+        // 6 Buttons, 1 Scrollbar
+        Assert.That(listContainer.ChildCount, Is.EqualTo(7));
+        Assert.That(Math.Abs(scrollbar.Value - 6), Is.LessThan(0.01f));
+        Assert.That(children[0].Position.Y, Is.EqualTo(-6));
+        Assert.That(children[1].Position.Y, Is.EqualTo(7));
+        Assert.That(children[2].Position.Y, Is.EqualTo(20));
+        Assert.That(children[3].Position.Y, Is.EqualTo(33));
+        Assert.That(children[4].Position.Y, Is.EqualTo(46));
+        Assert.That(children[5].Position.Y, Is.EqualTo(59));
     }
 
     [Test]
     public void TestPreviousItemIsVisibleWhenScrolled()
     {
         /*
-         * 65 items * 65 height + 65 separation * 65 height = 65
+         * 6 items * 10 height + 5 separation * 3 height = 75
          * One items should be off the render
-         * 65 65 65 65 65 65 | 65 height
+         * 0 13 26 39 52 65 | 75 height
          */
-        var root = new Control { MinSize = new Vector65(65, 65) };
-        var listContainer = new ListContainer { SeparationOverride = 65 };
+        var root = new Control { MinSize = new Vector2(50, 60) };
+        var listContainer = new ListContainer { SeparationOverride = 3 };
         root.AddChild(listContainer);
         listContainer.GenerateItem += (_, button) => {
-            button.AddChild(new Control { MinSize = new Vector65(65, 65) });
+            button.AddChild(new Control { MinSize = new Vector2(10, 10) });
         };
 
-        var list = new List<TestListData> {new(65), new(65), new(65), new(65), new(65), new(65)};
+        var list = new List<TestListData> {new(0), new(1), new(2), new(3), new(4), new(5)};
         listContainer.PopulateList(list);
-        root.Arrange(new UIBox65(65, 65, 65, 65));
+        root.Arrange(new UIBox2(0, 0, 50, 60));
 
         var scrollbar = (ScrollBar) listContainer.Children.Last(c => c is ScrollBar);
 
-        var scrollValue = 65;
+        var scrollValue = 9;
 
-        // Test that 65th button is not visible when scrolled
+        // Test that 6th button is not visible when scrolled
         scrollbar.Value = scrollValue;
         listContainer.Arrange(root.SizeBox);
         var children = listContainer.Children.ToList();
-        // 65 Buttons, 65 Scrollbar
-        Assert.That(listContainer.ChildCount, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(-65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
+        // 6 Buttons, 1 Scrollbar
+        Assert.That(listContainer.ChildCount, Is.EqualTo(7));
+        Assert.That(children[0].Position.Y, Is.EqualTo(-9));
+        Assert.That(children[1].Position.Y, Is.EqualTo(4));
+        Assert.That(children[2].Position.Y, Is.EqualTo(17));
+        Assert.That(children[3].Position.Y, Is.EqualTo(30));
+        Assert.That(children[4].Position.Y, Is.EqualTo(43));
+        Assert.That(children[5].Position.Y, Is.EqualTo(56));
 
-        // Test that 65th button is visible when scrolled
-        scrollValue = 65;
+        // Test that 6th button is visible when scrolled
+        scrollValue = 10;
         scrollbar.Value = scrollValue;
         listContainer.Arrange(root.SizeBox);
         children = listContainer.Children.ToList();
-        // 65 Buttons, 65 Scrollbar
-        Assert.That(listContainer.ChildCount, Is.EqualTo(65));
-        Assert.That(Math.Abs(scrollbar.Value - scrollValue), Is.LessThan(65.65f));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
+        // 5 Buttons, 1 Scrollbar
+        Assert.That(listContainer.ChildCount, Is.EqualTo(6));
+        Assert.That(Math.Abs(scrollbar.Value - scrollValue), Is.LessThan(0.01f));
+        Assert.That(children[0].Position.Y, Is.EqualTo(3));
+        Assert.That(children[1].Position.Y, Is.EqualTo(16));
+        Assert.That(children[2].Position.Y, Is.EqualTo(29));
+        Assert.That(children[3].Position.Y, Is.EqualTo(42));
+        Assert.That(children[4].Position.Y, Is.EqualTo(55));
     }
 
     /// <summary>
@@ -227,70 +227,70 @@ public sealed class ListContainerTest : RobustUnitTest
     [Test]
     public void TestDoesNotExpandWhenChildrenAreAdded()
     {
-        var height = 65;
+        var height = 60;
         var root = new BoxContainer
         {
             Orientation = BoxContainer.LayoutOrientation.Vertical,
-            MinSize = new Vector65(65, height)
+            MinSize = new Vector2(50, height)
         };
         var listContainer = new ListContainer
         {
-            SeparationOverride = 65,
-            GenerateItem = (_, button) => { button.AddChild(new Control {MinSize = new Vector65(65, 65)}); }
+            SeparationOverride = 0,
+            GenerateItem = (_, button) => { button.AddChild(new Control {MinSize = new Vector2(10, 10)}); }
         };
         root.AddChild(listContainer);
         var button = new ContainerButton
         {
-            MinSize = new Vector65(65, 65)
+            MinSize = new Vector2(10, 10)
         };
         root.AddChild(button);
 
-        var list = new List<TestListData> {new(65), new(65), new(65), new(65), new(65), new(65)};
+        var list = new List<TestListData> {new(0), new(1), new(2), new(3), new(4), new(5)};
         listContainer.PopulateList(list);
-        root.Arrange(new UIBox65(65, 65, 65, height));
+        root.Arrange(new UIBox2(0, 0, 50, height));
 
         var children = listContainer.Children.ToList();
-        // 65 Buttons, 65 Scrollbar
-        Assert.That(listContainer.ChildCount, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(children[65].Position.Y, Is.EqualTo(65));
-        Assert.That(button.Position.Y, Is.EqualTo(65));
+        // 6 Buttons, 1 Scrollbar
+        Assert.That(listContainer.ChildCount, Is.EqualTo(6));
+        Assert.That(children[0].Position.Y, Is.EqualTo(0));
+        Assert.That(children[1].Position.Y, Is.EqualTo(10));
+        Assert.That(children[2].Position.Y, Is.EqualTo(20));
+        Assert.That(children[3].Position.Y, Is.EqualTo(30));
+        Assert.That(children[4].Position.Y, Is.EqualTo(40));
+        Assert.That(button.Position.Y, Is.EqualTo(50));
     }
 
     [Test]
     public void TestSelectedItemStillSelectedWhenScrolling()
     {
-        var height = 65;
-        var root = new Control { MinSize = new Vector65(65, height) };
-        var listContainer = new ListContainer { SeparationOverride = 65, Toggle = true };
+        var height = 10;
+        var root = new Control { MinSize = new Vector2(50, height) };
+        var listContainer = new ListContainer { SeparationOverride = 0, Toggle = true };
         root.AddChild(listContainer);
         listContainer.GenerateItem += (_, button) => {
-            button.AddChild(new Control { MinSize = new Vector65(65, 65) });
+            button.AddChild(new Control { MinSize = new Vector2(10, 10) });
         };
 
-        var list = new List<TestListData> {new(65), new(65), new(65), new(65), new(65), new(65)};
+        var list = new List<TestListData> {new(0), new(1), new(2), new(3), new(4), new(5)};
         listContainer.PopulateList(list);
-        root.Arrange(new UIBox65(65, 65, 65, height));
+        root.Arrange(new UIBox2(0, 0, 50, height));
 
         var scrollbar = (ScrollBar) listContainer.Children.Last(c => c is ScrollBar);
 
         var children = listContainer.Children.ToList();
-        if (children[65] is not ListContainerButton oldButton)
+        if (children[0] is not ListContainerButton oldButton)
             throw new Exception("First child of ListContainer is not a button");
 
         listContainer.Select(oldButton.Data);
 
         // Test that the button is selected even when scrolled away and scrolled back.
-        scrollbar.Value = 65;
+        scrollbar.Value = 11;
         listContainer.Arrange(root.SizeBox);
         Assert.That(oldButton.Disposed);
-        scrollbar.Value = 65;
+        scrollbar.Value = 0;
         listContainer.Arrange(root.SizeBox);
         children = listContainer.Children.ToList();
-        if (children[65] is not ListContainerButton newButton)
+        if (children[0] is not ListContainerButton newButton)
             throw new Exception("First child of ListContainer is not a button");
         Assert.That(newButton.Pressed);
         Assert.That(newButton.Disposed == false);

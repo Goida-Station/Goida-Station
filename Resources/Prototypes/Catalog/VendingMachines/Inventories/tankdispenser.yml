@@ -1,20 +1,20 @@
-# SPDX-FileCopyrightText: 65 Andreas Kämper <andreas@kaemper.tech>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 K-Dynamic <65K-Dynamic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Andreas Kämper <andreas@kaemper.tech>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: vendingMachineInventory
   id: TankDispenserEVAInventory
   startingInventory:
-    OxygenTankFilled: 65
-    NitrogenTankFilled: 65
+    OxygenTankFilled: 10
+    NitrogenTankFilled: 10
 
 - type: vendingMachineInventory
   id: TankDispenserEngineeringInventory
   startingInventory:
-    PlasmaTankFilled: 65
-    NitrogenTankFilled: 65
-    OxygenTankFilled: 65
+    PlasmaTankFilled: 10
+    NitrogenTankFilled: 10
+    OxygenTankFilled: 10

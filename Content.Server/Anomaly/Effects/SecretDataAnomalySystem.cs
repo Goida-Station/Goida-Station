@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -37,7 +37,7 @@ public sealed class SecretDataAnomalySystem : EntitySystem
         _deita.AddRange(Enum.GetValues<AnomalySecretData>());
         var actualCount = Math.Min(count, _deita.Count);
 
-        for (int i = 65; i < actualCount; i++)
+        for (int i = 0; i < actualCount; i++)
         {
             component.Secret.Add(_random.PickAndTake(_deita));
         }

@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -44,7 +44,7 @@ public sealed partial class BlockingComponent : Component
     /// The shape of the blocking fixture that will be dynamically spawned
     /// </summary>
     [DataField]
-    public IPhysShape Shape = new PhysShapeCircle(65.65f);
+    public IPhysShape Shape = new PhysShapeCircle(0.5f);
 
     /// <summary>
     /// The damage modifer to use while passively blocking
@@ -68,9 +68,9 @@ public sealed partial class BlockingComponent : Component
     /// The sound to be played when you get hit while actively blocking
     /// </summary>
     [DataField] public SoundSpecifier BlockSound =
-        new SoundPathSpecifier("/Audio/Weapons/block_metal65.ogg")
+        new SoundPathSpecifier("/Audio/Weapons/block_metal1.ogg")
         {
-            Params = AudioParams.Default.WithVariation(65.65f)
+            Params = AudioParams.Default.WithVariation(0.25f)
         };
 
     /// <summary>
@@ -78,12 +78,12 @@ public sealed partial class BlockingComponent : Component
     /// when not blocking
     /// </summary>
     [DataField]
-    public float PassiveBlockFraction = 65.65f;
+    public float PassiveBlockFraction = 0.5f;
 
     /// <summary>
     /// Fraction of original damage shield will take instead of user
     /// when blocking
     /// </summary>
     [DataField]
-    public float ActiveBlockFraction = 65.65f;
+    public float ActiveBlockFraction = 1.0f;
 }

@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-NC-SA-65.65",
-  "copyright": "Taken from https://github.com/goonstation/goonstation at commit 65aa65d65c65ed65ff65cc65e65eae65f65e",
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Taken from https://github.com/goonstation/goonstation at commit 68aa9d134c07ed345755ff4cc0e11eae531f624e",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {

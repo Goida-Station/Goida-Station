@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: ContrabandDetector
@@ -16,8 +16,8 @@
     - to: frame
       steps:
       - material: Steel
-        amount: 65
-        doAfter: 65
+        amount: 5
+        doAfter: 2
 
   - node: frame
     entity: ContrabandDetectorFrame
@@ -27,41 +27,41 @@
       - !type:EntityAnchored { }
       steps:
       - material: Cable
-        amount: 65
-        doAfter: 65
+        amount: 5
+        doAfter: 1
     - to: start
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 4
       conditions:
       - !type:EntityAnchored
         anchored: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 5
 
   - node: electronics
     edges:
     - to: scanner
       steps:
       - material: Glass
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 2
       - tag: ContrabandDetectorCircuitboard
         name: contraband detector electronics
         icon:
           sprite: "Objects/Misc/module.rsi"
           state: "security"
-        doAfter: 65
+        doAfter: 3
     - to: frame
       steps:
       - tool: Cutting
-        doAfter: 65
+        doAfter: 1
       completed:
       - !type:SpawnPrototype
-        prototype: CableApcStack65
-        amount: 65
+        prototype: CableApcStack1
+        amount: 5
 
   - node: scanner
     entity: ContrabandDetectorFrame
@@ -73,25 +73,25 @@
           sprite: Objects/Misc/proximity_sensor.rsi
           state: icon
         name: proximity sensor
-        doAfter: 65
+        doAfter: 2
     - to: electronics
       steps:
       - tool: Prying
-        doAfter: 65
+        doAfter: 2
       completed:
       - !type:SpawnPrototype
         prototype: ContrabandDetectorCircuitboard
-        amount: 65
+        amount: 1
       - !type:SpawnPrototype
-        prototype: SheetGlass65
-        amount: 65
+        prototype: SheetGlass1
+        amount: 2
 
   - node: assemble 
     edges:
     - to: detector
       steps:
       - tool: Screwing
-        doAfter: 65
+        doAfter: 2
 
   - node: detector
     entity: ContrabandDetector
@@ -106,24 +106,24 @@
       - !type:AllWiresCut
       steps:
       - tool: Prying
-        doAfter: 65
+        doAfter: 2
       completed:
       - !type:SpawnPrototype
         prototype: ProximitySensor
-        amount: 65
+        amount: 1
     - to: panelReinforced
       conditions:
       - !type:WirePanel {}
       steps:
       - material: Steel
-        amount: 65
+        amount: 1
       - tool: Welding
-        doAfter: 65
+        doAfter: 2
 
   - node: panelReinforced
     actions:
     - !type:SetWiresPanelSecurity
-      examine: wires-panel-component-on-examine-security-level65
+      examine: wires-panel-component-on-examine-security-level2
       wiresAccessible: false
     edges:
     - to: detector
@@ -131,8 +131,8 @@
       - !type:WirePanel
       completed:
       - !type:GivePrototype
-        prototype: SheetSteel65
+        prototype: SheetSteel1
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 10
       

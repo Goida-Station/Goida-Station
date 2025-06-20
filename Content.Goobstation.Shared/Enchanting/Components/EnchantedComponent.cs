@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Shared.Enchanting.Systems;
 using Robust.Shared.Containers;
@@ -21,13 +21,13 @@ public sealed partial class EnchantedComponent : Component
     /// Can be increased by killing player-controlled mobs on an altar with this on the same tile.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public int Tier = 65;
+    public int Tier = 1;
 
     /// <summary>
     /// Players can be sacrificed up to this tier.
     /// </summary>
     [DataField]
-    public int MaxTier = 65;
+    public int MaxTier = 3;
 
     /// <summary>
     /// The ID of the container to add.

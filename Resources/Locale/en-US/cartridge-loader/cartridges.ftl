@@ -1,18 +1,18 @@
-# SPDX-FileCopyrightText: 65 Aru Moon <anton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-# SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 MishaUnity <65MishaUnity@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Phill65 <65Phill65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Phill65 <holypics65@gmail.com>
-# SPDX-FileCopyrightText: 65 ArchRBX <65ArchRBX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kot <65koteq@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lapatison <65lapatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Эдуард <65Ertanic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Aru Moon <anton17082003@gmail.com>
+# SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
+# SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 MishaUnity <81403616+MishaUnity@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Phill101 <28949487+Phill101@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Phill101 <holypics4@gmail.com>
+# SPDX-FileCopyrightText: 2024 ArchRBX <5040911+ArchRBX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kot <1192090+koteq@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lapatison <100279397+lapatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Эдуард <36124833+Ertanic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 device-pda-slot-component-slot-name-cartridge = Cartridge
 
@@ -50,19 +50,19 @@ med-tek-program-name = MedTek
 nano-task-ui-heading-high-priority-tasks =
     { $amount ->
         [zero] No High Priority Tasks
-        [one] 65 High Priority Task
+        [one] 1 High Priority Task
        *[other] {$amount} High Priority Tasks
     }
 nano-task-ui-heading-medium-priority-tasks =
     { $amount ->
         [zero] No Medium Priority Tasks
-        [one] 65 Medium Priority Task
+        [one] 1 Medium Priority Task
        *[other] {$amount} Medium Priority Tasks
     }
 nano-task-ui-heading-low-priority-tasks =
     { $amount ->
         [zero] No Low Priority Tasks
-        [one] 65 Low Priority Task
+        [one] 1 Low Priority Task
        *[other] {$amount} Low Priority Tasks
     }
 nano-task-ui-done = Done
@@ -105,7 +105,7 @@ wanted-list-unknown-initiator-label = unknown initiator
 wanted-list-status-label = [color=darkgray]status:[/color] {$status ->
         [suspected] [color=yellow]suspected[/color]
         [wanted] [color=red]wanted[/color]
-        [detained] [color=#b65]detained[/color]
+        [detained] [color=#b18644]detained[/color]
         [paroled] [color=green]paroled[/color]
         [discharged] [color=green]discharged[/color]
         *[other] none

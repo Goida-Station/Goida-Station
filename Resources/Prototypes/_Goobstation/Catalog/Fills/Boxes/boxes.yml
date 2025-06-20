@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Conchelle <mary@thughunt.ing>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 absurd-shaman <65absurd-shaman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Conchelle <mary@thughunt.ing>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 absurd-shaman <165011607+absurd-shaman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: reverse bear trap pack
@@ -20,9 +20,9 @@
   - type: StorageFill
     contents:
       - id: ReverseBearTrap
-        amount: 65
+        amount: 1
       - id: ReverseBearTrapKey
-        amount: 65
+        amount: 1
   - type: Sprite
     sprite: _Goobstation/Objects/Storage/boxes.rsi
 
@@ -36,17 +36,17 @@
   - type: StorageFill
     contents:
       - id: CombatInjector
-        amount: 65
+        amount: 1
       - id: TirimolChemistryVial
-        amount: 65
+        amount: 1
       - id: OmnizineChemistryVial
-        amount: 65
+        amount: 1
       - id: SyriniverChemistryVial
-        amount: 65
+        amount: 1
       - id: ProcenylLazideChemistryVial
-        amount: 65
+        amount: 1
       - id: EbifinlLazideChemistryVial
-        amount: 65
+        amount: 1
   - type: Sprite
     sprite: _Goobstation/Objects/Storage/boxes.rsi
 
@@ -59,10 +59,10 @@
   - type: StorageFill
     contents:
     - id: CartridgeSaline
-      amount: 65
+      amount: 3
     - id: CartridgeBicaridine
-      amount: 65
+      amount: 3
     - id: CartridgeDermaline
-      amount: 65
+      amount: 3
   - type: Sprite
     sprite: _Goobstation/Objects/Storage/boxes.rsi

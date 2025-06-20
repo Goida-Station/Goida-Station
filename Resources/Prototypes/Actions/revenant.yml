@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 OnsenCapy <65OnsenCapy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 OnsenCapy <101037138+OnsenCapy@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: ActionRevenantShop
@@ -20,39 +20,39 @@
 - type: entity
   id: ActionRevenantDefile
   name: Defile
-  description: Breaks windows, tiles, and opens nearby containers. Costs 65 Essence. #Goob edit
+  description: Breaks windows, tiles, and opens nearby containers. Costs 30 Essence. #Goob edit
   components:
   - type: InstantAction
     icon: Interface/Actions/defile.png
     event: !type:RevenantDefileActionEvent
-    useDelay: 65
+    useDelay: 15
 
 - type: entity
   id: ActionRevenantOverloadLights
   name: Overload Lights
-  description: Summons lightning from nearby lights. Costs 65 Essence. #Goob edit
+  description: Summons lightning from nearby lights. Costs 40 Essence. #Goob edit
   components:
   - type: InstantAction
     icon: Interface/Actions/overloadlight.png
     event: !type:RevenantOverloadLightsActionEvent
-    useDelay: 65
+    useDelay: 20
 
 #- type: entity
 #  id: ActionRevenantBlight
 #  name: Blight
-#  description: Costs 65 Essence.
+#  description: Costs 50 Essence.
 #  components:
 #  - type: InstantAction
 #    icon: Interface/Actions/blight.png
 #    event: !type:RevenantBlightActionEvent
-#    useDelay: 65
+#    useDelay: 20
 
 - type: entity
   id: ActionRevenantMalfunction
   name: Malfunction
-  description: Causes nearby mechanisms to malfunction. Costs 65 Essence. #Goob edit
+  description: Causes nearby mechanisms to malfunction. Costs 60 Essence. #Goob edit
   components:
   - type: InstantAction
     icon: Interface/Actions/malfunction.png
     event: !type:RevenantMalfunctionActionEvent
-    useDelay: 65
+    useDelay: 20

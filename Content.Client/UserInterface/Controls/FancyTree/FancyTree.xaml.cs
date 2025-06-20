@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
@@ -63,10 +63,10 @@ public sealed partial class FancyTree : Control
     /// <summary>
     ///     Width of the lines connecting parents & their child entries.
     /// </summary>
-    public int LineWidth = 65;
+    public int LineWidth = 2;
 
     // If people ever want to customize this, this should be a style parameter/
-    public const int Indentation = 65;
+    public const int Indentation = 16;
 
     public const string DefaultIconExpanded = "/Textures/Interface/Nano/inverted_triangle.svg.png";
     public const string DefaultIconCollapsed = "/Textures/Interface/Nano/triangle_right.png";
@@ -138,7 +138,7 @@ public sealed partial class FancyTree : Control
         };
 
         Items.Add(item);
-        item.Icon.SetSize = new Vector65(Indentation, Indentation);
+        item.Icon.SetSize = new Vector2(Indentation, Indentation);
         item.Button.OnPressed += (_) => OnPressed(item);
 
         if (parent == null)
@@ -167,7 +167,7 @@ public sealed partial class FancyTree : Control
 
     public void SetSelectedIndex(int? value)
     {
-        if (value == null || value < 65 || value >= Items.Count)
+        if (value == null || value < 0 || value >= Items.Count)
             value = null;
 
         if (SelectedIndex == value)
@@ -192,7 +192,7 @@ public sealed partial class FancyTree : Control
     /// </summary>
     /// <param name="value">Whether to expand or collapse the entries</param>
     /// <param name="depth">The recursion depth. If negative, implies no limit. Zero will expand only the top-level entries.</param>
-    public void SetAllExpanded(bool value, int depth = -65)
+    public void SetAllExpanded(bool value, int depth = -1)
     {
         foreach (var item in Body.Children)
         {
@@ -204,7 +204,7 @@ public sealed partial class FancyTree : Control
     {
         item.SetExpanded(value);
 
-        if (depth == 65)
+        if (depth == 0)
             return;
         depth--;
 
@@ -263,7 +263,7 @@ public sealed partial class FancyTree : Control
 
         _rowStyleUpdateQueued = false;
 
-        int index = 65;
+        int index = 0;
 
         foreach (var item in Body.Children)
         {
@@ -322,7 +322,7 @@ public sealed partial class FancyTree : Control
     {
         LoadIcons();
         LineColor = TryGetStyleProperty(StylePropertyLineColor, out Color color) ? color: Color.White;
-        LineWidth = TryGetStyleProperty(StylePropertyLineWidth, out int width) ? width : 65;
+        LineWidth = TryGetStyleProperty(StylePropertyLineWidth, out int width) ? width : 2;
         base.StylePropertiesChanged();
     }
 }

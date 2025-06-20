@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Zymem <65Zymem@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Artur <thearturzh@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Zymem <97173622+Zymem@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Artur <thearturzh@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -20,8 +20,8 @@
               southRotation: true
           steps:
             - material: WoodPlank
-              amount: 65
-              doAfter: 65
+              amount: 2
+              doAfter: 1
 
     - node: chairRitual
       entity: ChairRitual
@@ -29,11 +29,11 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-                prototype: MaterialWoodPlank65
-                amount: 65
+                prototype: MaterialWoodPlank1
+                amount: 2
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 1
 
         - to: chairCursed
           steps:
@@ -42,7 +42,7 @@
               sprite: Mobs/Species/Human/parts.rsi
               state: "head_m"
             name: human head
-            doAfter: 65
+            doAfter: 1
 
     - node: chairCursed
       entity: ChairCursed
@@ -51,7 +51,7 @@
           completed:
             - !type:SpawnPrototype
               prototype: HeadHuman
-              amount: 65
+              amount: 1
           steps:
             - tool: Prying
-              doAfter: 65
+              doAfter: 1

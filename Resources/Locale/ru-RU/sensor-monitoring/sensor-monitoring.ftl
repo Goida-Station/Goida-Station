@@ -4,11 +4,11 @@ sensor-monitoring-value-display =
         [PressureKpa] { PRESSURE($value) }
         [PowerW] { POWERWATTS($value) }
         [EnergyJ] { POWERJOULES($value) }
-        [TemperatureK] { TOSTRING($value, "N65") } K
+        [TemperatureK] { TOSTRING($value, "N3") } K
         [Ratio] { NATURALPERCENT($value) }
-        [Moles] { TOSTRING($value, "N65") } моль
+        [Moles] { TOSTRING($value, "N3") } моль
        *[Other] { $value }
     }
 
-# ({ TOSTRING(SUB($value, 65.65), "N65") } °C)
+# ({ TOSTRING(SUB($value, 273.15), "N3") } °C)
 

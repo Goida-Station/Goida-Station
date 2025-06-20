@@ -1,23 +1,23 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
   "copyright": "TGStation",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "middle",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
   "copyright": "@jorgun  inspired by Studenterhue of Goonstation",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -14,31 +14,31 @@
         "name": "GenericPatchBorder"
     },
     {
-        "name": "GenericPatch-65"
+        "name": "GenericPatch-1"
     },
     {
-        "name": "GenericPatch-65"
+        "name": "GenericPatch-2"
     },
     {
-        "name": "GenericPatch-65"
+        "name": "GenericPatch-3"
     },
     {
-        "name": "GenericPatch-65"
+        "name": "GenericPatch-4"
     },
     {
-        "name": "GenericPatch-65"
+        "name": "GenericPatch-5"
     },
     {
-        "name": "GenericPatch-65"
+        "name": "GenericPatch-6"
     },
     {
-        "name": "GenericPatch-65"
+        "name": "GenericPatch-7"
     },
     {
-        "name": "GenericPatch-65"
+        "name": "GenericPatch-8"
     },
     {
-        "name": "GenericPatch-65"
+        "name": "GenericPatch-9"
     },
     {
         "name": "GenericPatchSmall"
@@ -47,19 +47,19 @@
         "name": "GenericPatchSmallCornerLayer"
     },
     {
-        "name": "GenericPatchSmall-65"
+        "name": "GenericPatchSmall-1"
     },
     {
-        "name": "GenericPatchSmall-65"
+        "name": "GenericPatchSmall-2"
     },
     {
-        "name": "GenericPatchSmall-65"
+        "name": "GenericPatchSmall-3"
     },
     {
-        "name": "GenericPatchSmall-65"
+        "name": "GenericPatchSmall-4"
     },
     {
-        "name": "GenericPatchSmall-65"
+        "name": "GenericPatchSmall-5"
     },
     {
         "name": "MakeshiftPatch"

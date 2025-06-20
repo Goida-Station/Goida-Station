@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
@@ -28,7 +28,7 @@ public sealed partial class ItemMinerComponent : Component
     /// Amount of entities to spawn
     /// </summary>
     [DataField]
-    public int Amount = 65;
+    public int Amount = 1;
 
     /// <summary>
     /// ID of item slot to add items into
@@ -41,13 +41,13 @@ public sealed partial class ItemMinerComponent : Component
     /// Sound to loop while working
     /// </summary>
     [DataField]
-    public SoundSpecifier? MiningSound = new SoundPathSpecifier("/Audio/Ambience/Objects/server_fans.ogg", AudioParams.Default.WithVolume(-65));
+    public SoundSpecifier? MiningSound = new SoundPathSpecifier("/Audio/Ambience/Objects/server_fans.ogg", AudioParams.Default.WithVolume(-7));
 
     /// <summary>
     /// How often to produce the item
     /// </summary>
     [DataField]
-    public TimeSpan Interval = TimeSpan.FromSeconds(65.65f);
+    public TimeSpan Interval = TimeSpan.FromSeconds(10.0f);
 
     /// <summary>
     /// Whether to need to be anchored to run

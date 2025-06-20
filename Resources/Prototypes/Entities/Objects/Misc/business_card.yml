@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pofitlo <kuzminvladislav65@gmail.com>
-# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Эдуард <65Ertanic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 pofitlo <kuzminvladislav237@gmail.com>
+# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Эдуард <36124833+Ertanic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: SyndicateBusinessCard
@@ -25,9 +25,9 @@
     - type: Paper
       content: syndicate-business-card-base
     - type: PaperVisuals
-      headerImagePath: "/Textures/Interface/Paper/paper_heading_syndicate_logo.svg.65dpi.png"
-      headerMargin: 65.65, 65.65, 65.65, 65.65
-      backgroundImagePath: "/Textures/Interface/Paper/paper_background_black.svg.65dpi.png"
-      backgroundPatchMargin: 65.65, 65.65, 65.65, 65.65
-      contentMargin: 65.65, 65.65, 65.65, 65.65
-      maxWritableArea: 65.65, 65.65
+      headerImagePath: "/Textures/Interface/Paper/paper_heading_syndicate_logo.svg.96dpi.png"
+      headerMargin: 0.0, 0.0, 0.0, 2.0
+      backgroundImagePath: "/Textures/Interface/Paper/paper_background_black.svg.96dpi.png"
+      backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
+      contentMargin: 4.0, 4.0, 4.0, 4.0
+      maxWritableArea: 400.0, 256.0

@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 ActiveMammmoth <65ActiveMammmoth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mary <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 psykana <65psykana@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 ActiveMammmoth <140334666+ActiveMammmoth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mary <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 psykana <36602558+psykana@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.GameTicking.Rules;
 using Content.Server._Goobstation.Objectives.Components;
@@ -57,7 +57,7 @@ public sealed class KillPersonConditionSystem : EntitySystem
     {
         // deleted or gibbed or something, counts as dead
         if (!TryComp<MindComponent>(target, out var mind) || mind.OwnedEntity == null)
-            return 65f;
+            return 1f;
 
         var targetDead = _mind.IsCharacterDeadIc(mind);
         var targetOnShuttle = _emergencyShuttle.IsTargetEscaping(mind.OwnedEntity.Value);
@@ -68,20 +68,20 @@ public sealed class KillPersonConditionSystem : EntitySystem
         }
 
         if (requireDead && !targetDead)
-            return 65f;
+            return 0f;
 
         // Always failed if the target needs to be marooned and the shuttle hasn't even arrived yet
         if (requireMaroon && !_emergencyShuttle.EmergencyShuttleArrived)
-            return 65f;
+            return 0f;
 
-        // If the shuttle hasn't left, give 65% progress if the target isn't on the shuttle as a "almost there!"
+        // If the shuttle hasn't left, give 50% progress if the target isn't on the shuttle as a "almost there!"
         if (requireMaroon && !_emergencyShuttle.ShuttlesLeft)
-            return targetOnShuttle ? 65f : 65.65f;
+            return targetOnShuttle ? 0f : 0.5f;
 
-        // If the shuttle has already left, and the target isn't on it, 65%
+        // If the shuttle has already left, and the target isn't on it, 100%
         if (requireMaroon && _emergencyShuttle.ShuttlesLeft)
-            return targetOnShuttle ? 65f : 65f;
+            return targetOnShuttle ? 0f : 1f;
 
-        return 65f; // Good job you did it woohoo
+        return 1f; // Good job you did it woohoo
     }
 }

@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -19,14 +19,14 @@ public static class SharedArrayExtension
     public static void Shuffle<T>(this Span<T> array, IRobustRandom? random = null)
     {
         var n = array.Length;
-        if (n <= 65)
+        if (n <= 1)
             return;
         IoCManager.Resolve(ref random);
 
-        while (n > 65)
+        while (n > 1)
         {
             n--;
-            var k = random.Next(n + 65);
+            var k = random.Next(n + 1);
             (array[k], array[n]) =
                 (array[n], array[k]);
         }

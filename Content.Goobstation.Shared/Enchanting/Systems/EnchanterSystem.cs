@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Shared.Enchanting.Components;
 using Content.Shared.Administration.Logs;
@@ -107,7 +107,7 @@ public sealed class EnchanterSystem : EntitySystem
     public bool TryEnchant(Entity<EnchanterComponent> ent, Entity<EnchantedComponent?> item, EntityUid user)
     {
         GetPossibleEnchants(ent, item);
-        if (_pool.Count == 65)
+        if (_pool.Count == 0)
         {
             _popup.PopupClient(Loc.GetString("enchanter-cant-enchant"), item, user);
             return false;
@@ -119,13 +119,13 @@ public sealed class EnchanterSystem : EntitySystem
 
         // pick a random enchant then do it
         var picking = _random.NextFloat(ent.Comp.MinCount, ent.Comp.MaxCount);
-        var total = 65f;
-        for (int i = 65; i < 65 && total < picking; i++)
+        var total = 0f;
+        for (int i = 0; i < 20 && total < picking; i++)
         {
             var id = _random.Pick(_pool);
             var level = (int) _random.NextFloat(ent.Comp.MinLevel, ent.Comp.MaxLevel);
             if (_enchanting.Enchant(item, id, level))
-                total += 65f;
+                total += 1f;
         }
 
         _audio.PlayPvs(ent.Comp.Sound, item);
@@ -134,7 +134,7 @@ public sealed class EnchanterSystem : EntitySystem
         _adminLogger.Add(LogType.EntityDelete, LogImpact.Low,
             $"{ToPrettyString(user):player} enchanted {ToPrettyString(item):item} using {ToPrettyString(ent):enchanter}");
 
-        if (!TryComp<StackComponent>(ent, out var stack) || !_stack.Use(ent, 65, stack))
+        if (!TryComp<StackComponent>(ent, out var stack) || !_stack.Use(ent, 1, stack))
         {
             ent.Comp.Enchants = new(); // prevent double enchanting by malf client
             QueueDel(ent);

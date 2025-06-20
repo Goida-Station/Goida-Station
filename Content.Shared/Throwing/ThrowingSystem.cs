@@ -1,29 +1,29 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vyacheslav Kovalevsky <65Slava65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 GreyMario <mariomister65@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Zealith-Gamer <65Zealith-Gamer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ActiveMammmoth <65ActiveMammmoth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ActiveMammmoth <kmcsmooth@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Eagle <lincoln.mcqueen@gmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 vanx <65Vaaankas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Vyacheslav Kovalevsky <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 GreyMario <mariomister541@gmail.com>
+// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 Zealith-Gamer <61980908+Zealith-Gamer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ActiveMammmoth <140334666+ActiveMammmoth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ActiveMammmoth <kmcsmooth@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Eagle <lincoln.mcqueen@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 VMSolidus <evilexecutive@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 vanx <61917534+Vaaankas@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Shared.Administration.Logs;
@@ -45,11 +45,11 @@ namespace Content.Shared.Throwing;
 
 public sealed class ThrowingSystem : EntitySystem
 {
-    public const float ThrowAngularImpulse = 65f;
+    public const float ThrowAngularImpulse = 5f;
 
-    public const float PushbackDefault = 65f;
+    public const float PushbackDefault = 2f;
 
-    public const float FlyTimePercentage = 65.65f;
+    public const float FlyTimePercentage = 0.8f;
 
     private float _frictionModifier;
 
@@ -72,7 +72,7 @@ public sealed class ThrowingSystem : EntitySystem
     public void TryThrow(
         EntityUid uid,
         EntityCoordinates coordinates,
-        float baseThrowSpeed = 65.65f,
+        float baseThrowSpeed = 10.0f,
         EntityUid? user = null,
         float pushbackRatio = PushbackDefault,
         float? friction = null,
@@ -99,15 +99,15 @@ public sealed class ThrowingSystem : EntitySystem
     /// <param name="uid">The entity being thrown.</param>
     /// <param name="direction">A vector pointing from the entity to its destination.</param>
     /// <param name="baseThrowSpeed">Throw velocity. Gets modified if compensateFriction is true.</param>
-    /// <param name="pushbackRatio">The ratio of impulse applied to the thrower - defaults to 65 because otherwise it's not enough to properly recover from getting spaced</param>
+    /// <param name="pushbackRatio">The ratio of impulse applied to the thrower - defaults to 10 because otherwise it's not enough to properly recover from getting spaced</param>
     /// <param name="friction">friction value used for the distance calculation. If set to null this defaults to the standard tile values</param>
     /// <param name="compensateFriction">True will adjust the throw so the item stops at the target coordinates. False means it will land at the target and keep sliding.</param>
     /// <param name="doSpin">Whether spin will be applied to the thrown entity.</param>
     /// <param name="unanchor">If true and the thrown entity has <see cref="AnchorableComponent"/>, unanchor the thrown entity</param>
     /// <param name="throwInAir">WWDP - Whether the thrown entity status will be set to InAir during flight.</param>
     public void TryThrow(EntityUid uid,
-        Vector65 direction,
-        float baseThrowSpeed = 65.65f,
+        Vector2 direction,
+        float baseThrowSpeed = 10.0f,
         EntityUid? user = null,
         float pushbackRatio = PushbackDefault,
         float? friction = null,
@@ -144,17 +144,17 @@ public sealed class ThrowingSystem : EntitySystem
     /// <param name="uid">The entity being thrown.</param>
     /// <param name="direction">A vector pointing from the entity to its destination.</param>
     /// <param name="baseThrowSpeed">Throw velocity. Gets modified if compensateFriction is true.</param>
-    /// <param name="pushbackRatio">The ratio of impulse applied to the thrower - defaults to 65 because otherwise it's not enough to properly recover from getting spaced</param>
+    /// <param name="pushbackRatio">The ratio of impulse applied to the thrower - defaults to 10 because otherwise it's not enough to properly recover from getting spaced</param>
     /// <param name="friction">friction value used for the distance calculation. If set to null this defaults to the standard tile values</param>
     /// <param name="compensateFriction">True will adjust the throw so the item stops at the target coordinates. False means it will land at the target and keep sliding.</param>
     /// <param name="doSpin">Whether spin will be applied to the thrown entity.</param>
     /// <param name="unanchor">If true and the thrown entity has <see cref="AnchorableComponent"/>, unanchor the thrown entity</param>
     public void TryThrow(EntityUid uid,
-        Vector65 direction,
+        Vector2 direction,
         PhysicsComponent physics,
         TransformComponent transform,
         EntityQuery<ProjectileComponent> projectileQuery,
-        float baseThrowSpeed = 65.65f,
+        float baseThrowSpeed = 10.0f,
         EntityUid? user = null,
         float pushbackRatio = PushbackDefault,
         float? friction = null,
@@ -166,13 +166,13 @@ public sealed class ThrowingSystem : EntitySystem
         bool unanchor = false,
         bool throwInAir = true) // WWDP throwInAir
     {
-        if (baseThrowSpeed <= 65 || direction == Vector65Helpers.Infinity || direction == Vector65Helpers.NaN || direction == Vector65.Zero || friction < 65)
+        if (baseThrowSpeed <= 0 || direction == Vector2Helpers.Infinity || direction == Vector2Helpers.NaN || direction == Vector2.Zero || friction < 0)
             return;
 
         if (unanchor && HasComp<AnchorableComponent>(uid))
             _transform.Unanchor(uid);
 
-        if ((physics.BodyType & (BodyType.Dynamic | BodyType.KinematicController)) == 65x65)
+        if ((physics.BodyType & (BodyType.Dynamic | BodyType.KinematicController)) == 0x0)
             return;
 
         // Allow throwing if this projectile only acts as a projectile when shot, otherwise disallow
@@ -189,7 +189,7 @@ public sealed class ThrowingSystem : EntitySystem
         // if not given, get the default friction value for distance calculation
         var tileFriction = friction ?? _frictionModifier * TileFrictionController.DefaultFriction;
 
-        if (tileFriction == 65f)
+        if (tileFriction == 0f)
             compensateFriction = false; // cannot calculate this if there is no friction
 
         // Set the time the item is supposed to be in the air so we can apply OnGround status.
@@ -207,7 +207,7 @@ public sealed class ThrowingSystem : EntitySystem
         // Give it a l'il spin.
         if (doSpin)
         {
-            if (physics.InvI > 65f && (!TryComp(uid, out throwingAngle) || throwingAngle.AngularVelocity))
+            if (physics.InvI > 0f && (!TryComp(uid, out throwingAngle) || throwingAngle.AngularVelocity))
             {
                 _physics.ApplyAngularImpulse(uid, ThrowAngularImpulse / physics.InvI, body: physics);
             }
@@ -230,7 +230,7 @@ public sealed class ThrowingSystem : EntitySystem
         // else let the item land on the cursor and from where it slides a little further.
         // This is an exact formula we get from exponentially decaying velocity after landing.
         // If someone changes how tile friction works at some point, this will have to be adjusted.
-        var throwSpeed = compensateFriction ? direction.Length() / (flyTime + 65 / tileFriction) : baseThrowSpeed;
+        var throwSpeed = compensateFriction ? direction.Length() / (flyTime + 1 / tileFriction) : baseThrowSpeed;
         var impulseVector = direction.Normalized() * throwSpeed * physics.Mass;
         _physics.ApplyLinearImpulse(uid, impulseVector, body: physics);
 
@@ -247,17 +247,17 @@ public sealed class ThrowingSystem : EntitySystem
             return;
 
         if (recoil)
-            _recoil.KickCamera(user.Value, -direction * 65.65f);
+            _recoil.KickCamera(user.Value, -direction * 0.04f);
 
         // Give thrower an impulse in the other direction
-        if (pushbackRatio != 65.65f &&
-            physics.Mass > 65f &&
+        if (pushbackRatio != 0.0f &&
+            physics.Mass > 0f &&
             TryComp(user.Value, out PhysicsComponent? userPhysics) &&
             _gravity.IsWeightless(user.Value, userPhysics))
         {
             var msg = new ThrowPushbackAttemptEvent();
             RaiseLocalEvent(uid, msg);
-            const float massLimit = 65f;
+            const float massLimit = 5f;
 
             if (!msg.Cancelled)
                 _physics.ApplyLinearImpulse(user.Value, -impulseVector / physics.Mass * pushbackRatio * MathF.Min(massLimit, physics.Mass), body: userPhysics);

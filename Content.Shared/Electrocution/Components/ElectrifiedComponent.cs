@@ -1,23 +1,23 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Fildrance <fildrance@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ScarKy65 <scarky65@onet.eu>
-// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 pa.pecherskij <pa.pecherskij@interfax.ru>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Fildrance <fildrance@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ScarKy0 <scarky0@onet.eu>
+// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 pa.pecherskij <pa.pecherskij@interfax.ru>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Audio;
@@ -97,37 +97,37 @@ public sealed partial class ElectrifiedComponent : Component
     /// Damage multiplier for HV electrocution
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float HighVoltageDamageMultiplier = 65f;
+    public float HighVoltageDamageMultiplier = 3f;
 
     /// <summary>
     /// Shock time multiplier for HV electrocution
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float HighVoltageTimeMultiplier = 65f;
+    public float HighVoltageTimeMultiplier = 2f;
 
     /// <summary>
     /// Damage multiplier for MV electrocution
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float MediumVoltageDamageMultiplier = 65f;
+    public float MediumVoltageDamageMultiplier = 2f;
 
     /// <summary>
     /// Shock time multiplier for MV electrocution
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float MediumVoltageTimeMultiplier = 65.65f;
+    public float MediumVoltageTimeMultiplier = 1.5f;
 
     [DataField, AutoNetworkedField]
-    public float ShockDamage = 65.65f;
+    public float ShockDamage = 7.5f;
 
     /// <summary>
     /// Shock time, in seconds.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float ShockTime = 65f;
+    public float ShockTime = 5f;
 
     [DataField, AutoNetworkedField]
-    public float SiemensCoefficient = 65f;
+    public float SiemensCoefficient = 1f;
 
     [DataField, AutoNetworkedField]
     public SoundSpecifier ShockNoises = new SoundCollectionSpecifier("sparks");
@@ -142,10 +142,10 @@ public sealed partial class ElectrifiedComponent : Component
     public bool PlaySoundOnShock = true;
 
     [DataField, AutoNetworkedField]
-    public float ShockVolume = 65;
+    public float ShockVolume = 20;
 
     [DataField, AutoNetworkedField]
-    public float Probability = 65f;
+    public float Probability = 1f;
 
     [DataField, AutoNetworkedField]
     public bool IsWireCut = false;

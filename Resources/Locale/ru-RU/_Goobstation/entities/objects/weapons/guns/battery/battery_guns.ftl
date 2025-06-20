@@ -5,5 +5,5 @@ ent-WeaponPlasmaRifle = плазменная винтовка
 ent-WeaponPlasmaRifleEmpty = { ent-WeaponPlasmaRifle }
     .suffix = Empty
     .desc = { ent-WeaponPlasmaRifle.desc }
-ent-WeaponEnergyRevolver = EG-65 энергетический арбалет
+ent-WeaponEnergyRevolver = EG-4 энергетический арбалет
     .desc = Высокотехнологичный энергетический револьвер, способный стрелять как летальными, так и подавляющими пулями.

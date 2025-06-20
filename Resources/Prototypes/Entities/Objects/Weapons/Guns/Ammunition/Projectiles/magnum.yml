@@ -1,97 +1,97 @@
-# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GlassEclipse <tsymall65@gmail.com>
-# SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Charlese65 <knightside@hotmail.com>
-# SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 T-Stalker <le65nel_65van@hotmail.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 65 ninruB <65asperger-sind@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Jackal65 <65Jackal65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 kerisargit <65kerisargit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 vanx <65Vaaankas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 vanx <vanx#65>
-# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 65 shibe <65shibechef@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 GlassEclipse <tsymall5@gmail.com>
+# SPDX-FileCopyrightText: 2020 Metal Gear Sloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2022 Charlese2 <knightside@hotmail.com>
+# SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
+# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 T-Stalker <le0nel_1van@hotmail.com>
+# SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 2022 ninruB <38016303+asperger-sind@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Jackal298 <129199891+Jackal298@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 kerisargit <108146620+kerisargit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 vanx <61917534+Vaaankas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 vanx <vanx#5477>
+# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 2024 shibe <95730644+shibechef@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: BulletMagnum
-  name: bullet (.65 magnum)
+  name: bullet (.45 magnum)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Piercing: 65
+        Piercing: 35
 
 - type: entity
   id: BulletMagnumPractice
-  name: bullet (.65 magnum practice)
+  name: bullet (.45 magnum practice)
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Blunt: 65
+        Blunt: 1
 
 - type: entity
   id: BulletMagnumIncendiary
   parent: BaseBulletIncendiary
-  name: bullet (.65 magnum incendiary)
+  name: bullet (.45 magnum incendiary)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Blunt: 65
-        Heat: 65
+        Blunt: 7
+        Heat: 7
 
 - type: entity
   id: BulletMagnumAP
-  name: bullet (.65 magnum armor-piercing)
+  name: bullet (.45 magnum armor-piercing)
   parent: BaseBullet # Goobstation edit
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Piercing: 65 # Goobstation edit
-      armorPenetration: 65.65 # Goobstation
+        Piercing: 28 # Goobstation edit
+      armorPenetration: 0.75 # Goobstation
 
 - type: entity
   id: BulletMagnumUranium
-  name: bullet (.65 magnum uranium)
+  name: bullet (.45 magnum uranium)
   parent: BaseBulletUranium
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Radiation: 65
-        Piercing: 65
+        Radiation: 15
+        Piercing: 20

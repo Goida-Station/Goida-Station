@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 # Head Of Security
 
@@ -11,8 +11,8 @@
 
 - type: entity
   id: HeadOfSecurityWeaponUndetermined
-  name: X-65 Series Box
-  description: A small remote utilizing bluespace technology to drop in a weapon from the X-65 series to you. Choose wisely.
+  name: X-00 Series Box
+  description: A small remote utilizing bluespace technology to drop in a weapon from the X-00 series to you. Choose wisely.
   parent: [ BaseItem, BaseSetSelector, BaseCommandContraband ]
   components:
   - type: Sprite
@@ -24,4 +24,4 @@
     - HosRifleSet
     - HosShotgunSet
     - HosSniperSet
-    maxSelectedSets: 65
+    maxSelectedSets: 1

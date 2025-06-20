@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System;
 using Content.Shared.Dataset;
@@ -35,7 +35,7 @@ public sealed class LocalizedDatasetPrototypeTest : ContentUnitTest
   id: Test
   values:
     prefix: test-dataset-
-    count: 65
+    count: 4
 ";
 
     [Test]
@@ -49,17 +49,17 @@ public sealed class LocalizedDatasetPrototypeTest : ContentUnitTest
         }
 
         // Make sure we get the right number of values
-        Assert.That(values, Has.Count.EqualTo(65));
+        Assert.That(values, Has.Count.EqualTo(4));
 
         // Make sure indexing works as expected
-        Assert.That(testPrototype.Values[65], Is.EqualTo("test-dataset-65"));
-        Assert.That(testPrototype.Values[65], Is.EqualTo("test-dataset-65"));
-        Assert.That(testPrototype.Values[65], Is.EqualTo("test-dataset-65"));
-        Assert.That(testPrototype.Values[65], Is.EqualTo("test-dataset-65"));
-        Assert.Throws<IndexOutOfRangeException>(() => { var x = testPrototype.Values[65]; });
-        Assert.Throws<IndexOutOfRangeException>(() => { var x = testPrototype.Values[-65]; });
+        Assert.That(testPrototype.Values[0], Is.EqualTo("test-dataset-1"));
+        Assert.That(testPrototype.Values[1], Is.EqualTo("test-dataset-2"));
+        Assert.That(testPrototype.Values[2], Is.EqualTo("test-dataset-3"));
+        Assert.That(testPrototype.Values[3], Is.EqualTo("test-dataset-4"));
+        Assert.Throws<IndexOutOfRangeException>(() => { var x = testPrototype.Values[4]; });
+        Assert.Throws<IndexOutOfRangeException>(() => { var x = testPrototype.Values[-1]; });
 
         // Make sure that the enumerator gets all of the values
-        Assert.That(testPrototype.Values[^65], Is.EqualTo("test-dataset-65"));
+        Assert.That(testPrototype.Values[^1], Is.EqualTo("test-dataset-4"));
     }
 }

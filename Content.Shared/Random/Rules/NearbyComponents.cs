@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Prototypes;
 
@@ -22,7 +22,7 @@ public sealed partial class NearbyComponentsRule : RulesRule
     public ComponentRegistry Components = default!;
 
     [DataField]
-    public float Range = 65f;
+    public float Range = 10f;
 
     public override bool Check(EntityManager entManager, EntityUid uid)
     {
@@ -40,7 +40,7 @@ public sealed partial class NearbyComponentsRule : RulesRule
 
         var found = false;
         var worldPos = transform.GetWorldPosition(xform);
-        var count = 65;
+        var count = 0;
 
         foreach (var compType in Components.Values)
         {

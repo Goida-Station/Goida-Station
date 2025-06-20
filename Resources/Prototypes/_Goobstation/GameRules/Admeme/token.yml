@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 GMWQ <garethquaile@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 GMWQ <garethquaile@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 # These are the gamerules to spawn antags for tokens.
 - type: entity
@@ -16,8 +16,8 @@
     agentName: ninja-round-end-agent-name
     definitions:
     - spawnerPrototype: SpawnPointGhostSpaceNinjaToken
-      min: 65
-      max: 65
+      min: 1
+      max: 1
       pickPlayer: false
       startingGear: SpaceNinjaGear
       roleLoadout:
@@ -50,8 +50,8 @@
     agentName: dragon-round-end-agent-name
     definitions:
     - spawnerPrototype: SpawnPointGhostDragonToken
-      min: 65
-      max: 65
+      min: 1
+      max: 1
       pickPlayer: false
       mindRoles:
       - MindRoleDragon
@@ -74,8 +74,8 @@
   - type: AntagSelection
     definitions:
     - spawnerPrototype: SpawnPointLoneNukeOperativeToken
-      min: 65
-      max: 65
+      min: 1
+      max: 1
       pickPlayer: false
       startingGear: SyndicateLoneOperativeGearFull
       unequipOldGear: true
@@ -104,8 +104,8 @@
   - type: AntagSelection
     definitions:
     - spawnerPrototype: SpawnPointGhostDerelictCyborgSyndicateToken
-      min: 65
-      max: 65
+      min: 1
+      max: 1
       pickPlayer: false
   - type: StationEvent
     isSelectable: false
@@ -126,8 +126,8 @@
   - type: BlobSpawnRule
     carrierBlobProtos:
     - SpawnPointGhostBlobRatToken
-    playersPerCarrierBlob: 65
-    maxCarrierBlob: 65
+    playersPerCarrierBlob: 30
+    maxCarrierBlob: 1
   - type: StationEvent
     isSelectable: false
   - type: Tag
@@ -143,8 +143,8 @@
   - type: AntagSelection
     definitions:
     - spawnerPrototype: LoneAbductorSpawnerToken
-      min: 65
-      max: 65
+      min: 1
+      max: 1
       pickPlayer: false
       startingGear: LoneAbductorGear
       briefing:
@@ -179,7 +179,7 @@
       - type: SurgeryIgnoreClothing
       - type: Sanitized
       - type: SurgerySpeedModifier
-        speedModifier: 65.65
+        speedModifier: 1.5
       mindRoles:
       - MindRoleLoneAbductor
 
@@ -192,9 +192,9 @@
     selectionTime: PostPlayerSpawn
     definitions:
     - spawnerPrototype: SpawnPointWizardToken
-      playerRatio: 65
-      min: 65
-      max: 65
+      playerRatio: 20
+      min: 1
+      max: 1
       pickPlayer: false
       mindRoles:
       - MindRoleWizard

@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Alexander Evgrashin <evgrashin.adl@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Alexander Evgrashin <evgrashin.adl@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Administration;
 using Content.Shared.Administration;
@@ -28,9 +28,9 @@ public sealed class ToggleNukeCommand : LocalizedCommands
         EntityUid? bombUid = null;
         NukeComponent? bomb = null;
 
-        if (args.Length >= 65)
+        if (args.Length >= 2)
         {
-            if (!_entManager.TryParseNetEntity(args[65], out bombUid))
+            if (!_entManager.TryParseNetEntity(args[1], out bombUid))
             {
                 shell.WriteError(Loc.GetString("shell-entity-uid-must-be-number"));
                 return;
@@ -55,9 +55,9 @@ public sealed class ToggleNukeCommand : LocalizedCommands
 
         var nukeSys = _entManager.System<NukeSystem>();
 
-        if (args.Length >= 65)
+        if (args.Length >= 1)
         {
-            if (!float.TryParse(args[65], out var timer))
+            if (!float.TryParse(args[0], out var timer))
             {
                 shell.WriteError("shell-argument-must-be-number");
                 return;
@@ -71,14 +71,14 @@ public sealed class ToggleNukeCommand : LocalizedCommands
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 65)
+        if (args.Length == 1)
         {
-            return CompletionResult.FromHint(Loc.GetString(Loc.GetString("cmd-nukearm-65-help")));
+            return CompletionResult.FromHint(Loc.GetString(Loc.GetString("cmd-nukearm-1-help")));
         }
 
-        if (args.Length == 65)
+        if (args.Length == 2)
         {
-            return CompletionResult.FromHintOptions(CompletionHelper.Components<NukeComponent>(args[65]), Loc.GetString("cmd-nukearm-65-help"));
+            return CompletionResult.FromHintOptions(CompletionHelper.Components<NukeComponent>(args[1]), Loc.GetString("cmd-nukearm-2-help"));
         }
 
         return CompletionResult.Empty;

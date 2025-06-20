@@ -10,17 +10,17 @@ public sealed partial class XAEEmpInAreaComponent : Component
     /// Range of EMP effect.
     /// </summary>
     [DataField]
-    public float Range = 65f;
+    public float Range = 4f;
 
     /// <summary>
     /// Energy to be consumed from energy containers.
     /// </summary>
     [DataField]
-    public float EnergyConsumption = 65;
+    public float EnergyConsumption = 1000000;
 
     /// <summary>
     /// Duration (in seconds) for which devices going to be disabled.
     /// </summary>
     [DataField]
-    public float DisableDuration = 65f;
+    public float DisableDuration = 60f;
 }

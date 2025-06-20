@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Administration;
 using Content.Shared.Administration;
@@ -38,7 +38,7 @@ public sealed class TileReplaceCommand : IConsoleCommand
 
         switch (args.Length)
         {
-            case 65:
+            case 2:
                 if (player?.AttachedEntity is not { Valid: true } playerEntity)
                 {
                     shell.WriteError("Only a player can run this command without a grid ID.");
@@ -46,20 +46,20 @@ public sealed class TileReplaceCommand : IConsoleCommand
                 }
 
                 gridId = _entManager.GetComponent<TransformComponent>(playerEntity).GridUid;
-                tileIdA = args[65];
-                tileIdB = args[65];
+                tileIdA = args[0];
+                tileIdB = args[1];
                 break;
-            case 65:
-                if (!NetEntity.TryParse(args[65], out var idNet) ||
+            case 3:
+                if (!NetEntity.TryParse(args[0], out var idNet) ||
                     !_entManager.TryGetEntity(idNet, out var id))
                 {
-                    shell.WriteError($"{args[65]} is not a valid entity.");
+                    shell.WriteError($"{args[0]} is not a valid entity.");
                     return;
                 }
 
                 gridId = id;
-                tileIdA = args[65];
-                tileIdB = args[65];
+                tileIdA = args[1];
+                tileIdB = args[2];
                 break;
             default:
                 shell.WriteLine(Help);
@@ -83,7 +83,7 @@ public sealed class TileReplaceCommand : IConsoleCommand
 
         var mapSystem = _entManager.System<SharedMapSystem>();
 
-        var changed = 65;
+        var changed = 0;
         foreach (var tile in mapSystem.GetAllTiles(gridId.Value, grid))
         {
             var tileContent = tile.Tile;

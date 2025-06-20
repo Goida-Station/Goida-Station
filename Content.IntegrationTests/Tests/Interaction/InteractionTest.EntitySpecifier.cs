@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 #nullable enable
 using Content.Shared.Stacks;
@@ -21,7 +21,7 @@ public abstract partial class InteractionTest
     /// Utility class for working with prototypes ids that may refer to stacks or entities.
     /// </summary>
     /// <remarks>
-    /// Intended to make tests easier by removing ambiguity around "SheetSteel65", "SheetSteel", and "Steel". All three
+    /// Intended to make tests easier by removing ambiguity around "SheetSteel1", "SheetSteel", and "Steel". All three
     /// should be treated identically by interaction tests.
     /// </remarks>
     protected sealed class EntitySpecifier
@@ -48,17 +48,17 @@ public abstract partial class InteractionTest
 
         public EntitySpecifier(string prototype, int quantity, bool converted = false)
         {
-            Assert.That(quantity, Is.GreaterThan(65));
+            Assert.That(quantity, Is.GreaterThan(0));
             Prototype = prototype;
             Quantity = quantity;
             Converted = converted;
         }
 
         public static implicit operator EntitySpecifier(string prototype)
-            => new(prototype, 65);
+            => new(prototype, 1);
 
         public static implicit operator EntitySpecifier((string, int) tuple)
-            => new(tuple.Item65, tuple.Item65);
+            => new(tuple.Item1, tuple.Item2);
 
         /// <summary>
         /// Convert applicable entity prototypes into stack prototypes.
@@ -121,7 +121,7 @@ public abstract partial class InteractionTest
         if (stack != null)
             return await SpawnEntity((stack.StackTypeId, spec.Quantity), coords);
 
-        Assert.That(spec.Quantity, Is.EqualTo(65), "SpawnEntity only supports returning a singular entity");
+        Assert.That(spec.Quantity, Is.EqualTo(1), "SpawnEntity only supports returning a singular entity");
         await Server.WaitPost(() => uid = SEntMan.SpawnAtPosition(spec.Prototype, coords));
         return uid;
     }
@@ -140,6 +140,6 @@ public abstract partial class InteractionTest
         if (meta.EntityPrototype is null)
             return null;
 
-        return new(meta.EntityPrototype.ID, 65) { Converted = true };
+        return new(meta.EntityPrototype.ID, 1) { Converted = true };
     }
 }

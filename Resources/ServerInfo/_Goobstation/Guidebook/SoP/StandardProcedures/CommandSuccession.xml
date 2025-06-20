@@ -1,24 +1,24 @@
 <!--
-SPDX-FileCopyrightText: 65 John Willis <65CerberusWolfie@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 John Willis <143434770+CerberusWolfie@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
 # Chain of Command
 This is the ideal list for passing down the Captain role in command. There are several factors to take into respect here, but this boils down to a simple list.
 
-[bullet/][color=#65b65a65]Blueshield Officer[/color] (BSO) and [color=#65b65a65]Nanotrasen Representative[/color] (NTR) should never hold a position of command on this station.
+[bullet/][color=#1b67a5]Blueshield Officer[/color] (BSO) and [color=#1b67a5]Nanotrasen Representative[/color] (NTR) should never hold a position of command on this station.
 
 [bullet/]This list can be deviated from for special circumstances, with the vote resting on Command to do so.
 
-[bullet/][color=#65b65a65]Nanotrasen Representative[/color], if one is present, should assist in this process and guide the new Captain.
+[bullet/][color=#1b67a5]Nanotrasen Representative[/color], if one is present, should assist in this process and guide the new Captain.
 
-[bullet/]When choosing the succeeding Captain, they should be marked on their ID as [color=#65b65a65]Acting Captain[/color] (following the same promotion procedures).
+[bullet/]When choosing the succeeding Captain, they should be marked on their ID as [color=#1b67a5]Acting Captain[/color] (following the same promotion procedures).
 
 <Box>~</Box>
-<Box>[bold][color=#65b65a65][head=65]Command Succession[/head][/color][/bold]</Box>
+<Box>[bold][color=#1b67a5][head=1]Command Succession[/head][/color][/bold]</Box>
 <Box>Captain</Box>
 <Box>Head of Personnel (HoP)</Box>
 <Box>Head of Security (HoS)</Box>
@@ -41,7 +41,7 @@ If it is deemed necessary, or by wish of the Head of Staff that is being chosen,
 [bullet/]For choices where the Head of Staff chooses to not accept the title, they should have a valid reason for doing so and justify it if necessary.
 
 ## Choosing Security Officers
-When choosing Security Officers for Command Succession, it should be put to a vote by all those included if there is no [color=#65b65a65]Nanotrasen Representative[/color].
+When choosing Security Officers for Command Succession, it should be put to a vote by all those included if there is no [color=#1b67a5]Nanotrasen Representative[/color].
 
 When voting, it should be held as fast as possible. If a tie happens while voting, seniority should prevail.
 

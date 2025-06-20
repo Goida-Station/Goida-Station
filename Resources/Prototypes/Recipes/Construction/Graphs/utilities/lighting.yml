@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Justice League <the.justice.league.of.canada@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Justice League <the.justice.league.of.canada@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: CyanLight
@@ -14,15 +14,15 @@
         - to: icon
           steps:
             - material: Glass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
             - tag: CrystalCyan
               name: cyan crystal shard
               icon:
                 sprite: Objects/Materials/Shards/crystal.rsi
-                state: shard65
-                color: #65ff65
-              doAfter: 65
+                state: shard1
+                color: #52ff39
+              doAfter: 1
     - node: icon
       entity: LightTubeCrystalCyan
 
@@ -35,14 +35,14 @@
         - to: icon
           steps:
             - material: Glass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
             - tag: CrystalBlue
               name: blue crystal shard
               icon:
                 sprite: Objects/Materials/Shards/crystal.rsi
-                state: shard65
-              doAfter: 65
+                state: shard1
+              doAfter: 1
     - node: icon
       entity: LightTubeCrystalBlue
 
@@ -55,14 +55,14 @@
         - to: icon
           steps:
             - material: Glass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
             - tag: CrystalYellow
               name: yellow crystal shard
               icon:
                 sprite: Objects/Materials/Shards/crystal.rsi
-                state: shard65
-              doAfter: 65
+                state: shard1
+              doAfter: 1
     - node: icon
       entity: LightTubeCrystalYellow
 
@@ -75,14 +75,14 @@
         - to: icon
           steps:
             - material: Glass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
             - tag: CrystalPink
               name: pink crystal shard
               icon:
                 sprite: Objects/Materials/Shards/crystal.rsi
-                state: shard65
-              doAfter: 65
+                state: shard1
+              doAfter: 1
     - node: icon
       entity: LightTubeCrystalPink
 
@@ -95,14 +95,14 @@
         - to: icon
           steps:
             - material: Glass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
             - tag: CrystalOrange
               name: orange crystal shard
               icon:
                 sprite: Objects/Materials/Shards/crystal.rsi
-                state: shard65
-              doAfter: 65
+                state: shard1
+              doAfter: 1
     - node: icon
       entity: LightTubeCrystalOrange
 
@@ -115,14 +115,14 @@
         - to: icon
           steps:
             - material: Glass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
             - tag: CrystalBlack
               name: black crystal shard
               icon:
                 sprite: Objects/Materials/Shards/crystal.rsi
-                state: shard65
-              doAfter: 65
+                state: shard1
+              doAfter: 1
     - node: icon
       entity: LightTubeCrystalBlack
 
@@ -135,14 +135,14 @@
         - to: icon
           steps:
             - material: Glass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
             - tag: CrystalRed
               name: red crystal shard
               icon:
                 sprite: Objects/Materials/Shards/crystal.rsi
-                state: shard65
-              doAfter: 65
+                state: shard1
+              doAfter: 1
     - node: icon
       entity: LightTubeCrystalRed
 
@@ -155,14 +155,14 @@
         - to: icon
           steps:
             - material: Glass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
             - tag: CrystalGreen
               name: green crystal shard
               icon:
                 sprite: Objects/Materials/Shards/crystal.rsi
-                state: shard65
-              doAfter: 65
+                state: shard1
+              doAfter: 1
     - node: icon
       entity: LightTubeCrystalGreen
 
@@ -175,15 +175,15 @@
     - to: icon
       steps:
       - material: Glass
-        amount: 65
-        doAfter: 65
+        amount: 1
+        doAfter: 1
       - tag: CrystalCyan
         name: cyan crystal shard
         icon:
           sprite: Objects/Materials/Shards/crystal.rsi
-          state: shard65
-          color: #65ff65
-        doAfter: 65
+          state: shard1
+          color: #52ff39
+        doAfter: 1
   - node: icon
     entity: LightBulbCrystalCyan
 
@@ -196,14 +196,14 @@
     - to: icon
       steps:
       - material: Glass
-        amount: 65
-        doAfter: 65
+        amount: 1
+        doAfter: 1
       - tag: CrystalBlue
         name: blue crystal shard
         icon:
           sprite: Objects/Materials/Shards/crystal.rsi
-          state: shard65
-        doAfter: 65
+          state: shard1
+        doAfter: 1
   - node: icon
     entity: LightBulbCrystalBlue
 
@@ -216,14 +216,14 @@
     - to: icon
       steps:
       - material: Glass
-        amount: 65
-        doAfter: 65
+        amount: 1
+        doAfter: 1
       - tag: CrystalYellow
         name: yellow crystal shard
         icon:
           sprite: Objects/Materials/Shards/crystal.rsi
-          state: shard65
-        doAfter: 65
+          state: shard1
+        doAfter: 1
   - node: icon
     entity: LightBulbCrystalYellow
 
@@ -236,14 +236,14 @@
     - to: icon
       steps:
       - material: Glass
-        amount: 65
-        doAfter: 65
+        amount: 1
+        doAfter: 1
       - tag: CrystalPink
         name: pink crystal shard
         icon:
           sprite: Objects/Materials/Shards/crystal.rsi
-          state: shard65
-        doAfter: 65
+          state: shard1
+        doAfter: 1
   - node: icon
     entity: LightBulbCrystalPink
 
@@ -256,14 +256,14 @@
     - to: icon
       steps:
       - material: Glass
-        amount: 65
-        doAfter: 65
+        amount: 1
+        doAfter: 1
       - tag: CrystalOrange
         name: orange crystal shard
         icon:
           sprite: Objects/Materials/Shards/crystal.rsi
-          state: shard65
-        doAfter: 65
+          state: shard1
+        doAfter: 1
   - node: icon
     entity: LightBulbCrystalOrange
 
@@ -276,14 +276,14 @@
     - to: icon
       steps:
       - material: Glass
-        amount: 65
-        doAfter: 65
+        amount: 1
+        doAfter: 1
       - tag: CrystalBlack
         name: black crystal shard
         icon:
           sprite: Objects/Materials/Shards/crystal.rsi
-          state: shard65
-        doAfter: 65
+          state: shard1
+        doAfter: 1
   - node: icon
     entity: LightBulbCrystalBlack
 
@@ -296,14 +296,14 @@
     - to: icon
       steps:
       - material: Glass
-        amount: 65
-        doAfter: 65
+        amount: 1
+        doAfter: 1
       - tag: CrystalRed
         name: red crystal shard
         icon:
           sprite: Objects/Materials/Shards/crystal.rsi
-          state: shard65
-        doAfter: 65
+          state: shard1
+        doAfter: 1
   - node: icon
     entity: LightBulbCrystalRed
 
@@ -316,13 +316,13 @@
     - to: icon
       steps:
       - material: Glass
-        amount: 65
-        doAfter: 65
+        amount: 1
+        doAfter: 1
       - tag: CrystalGreen
         name: green crystal shard
         icon:
           sprite: Objects/Materials/Shards/crystal.rsi
-          state: shard65
-        doAfter: 65
+          state: shard1
+        doAfter: 1
   - node: icon
     entity: LightBulbCrystalGreen

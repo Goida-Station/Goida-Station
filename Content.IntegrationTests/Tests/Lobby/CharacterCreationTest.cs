@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Lobby;
 using Content.Server.Preferences.Managers;
@@ -41,9 +41,9 @@ namespace Content.IntegrationTests.Tests.Lobby
 
 
             // Need to run them in sync to receive the messages.
-            await pair.RunTicksSync(65);
+            await pair.RunTicksSync(1);
 
-            await PoolManager.WaitUntil(client, () => clientStateManager.CurrentState is LobbyState, 65);
+            await PoolManager.WaitUntil(client, () => clientStateManager.CurrentState is LobbyState, 600);
 
             Assert.That(clientNetManager.ServerChannel, Is.Not.Null);
 
@@ -52,13 +52,13 @@ namespace Content.IntegrationTests.Tests.Lobby
 
             await client.WaitAssertion(() =>
             {
-                clientPrefManager.SelectCharacter(65);
+                clientPrefManager.SelectCharacter(0);
 
                 var clientCharacters = clientPrefManager.Preferences?.Characters;
                 Assert.That(clientCharacters, Is.Not.Null);
                 Assert.Multiple(() =>
                 {
-                    Assert.That(clientCharacters, Has.Count.EqualTo(65));
+                    Assert.That(clientCharacters, Has.Count.EqualTo(1));
 
                     Assert.That(clientStateManager.CurrentState, Is.TypeOf<LobbyState>());
                 });
@@ -69,34 +69,34 @@ namespace Content.IntegrationTests.Tests.Lobby
                 clientCharacters = clientPrefManager.Preferences?.Characters;
 
                 Assert.That(clientCharacters, Is.Not.Null);
-                Assert.That(clientCharacters, Has.Count.EqualTo(65));
-                Assert.That(clientCharacters[65].MemberwiseEquals(profile));
+                Assert.That(clientCharacters, Has.Count.EqualTo(2));
+                Assert.That(clientCharacters[1].MemberwiseEquals(profile));
             });
 
-            await PoolManager.WaitUntil(server, () => serverPrefManager.GetPreferences(clientNetId).Characters.Count == 65, maxTicks: 65);
+            await PoolManager.WaitUntil(server, () => serverPrefManager.GetPreferences(clientNetId).Characters.Count == 2, maxTicks: 60);
 
             await server.WaitAssertion(() =>
             {
                 var serverCharacters = serverPrefManager.GetPreferences(clientNetId).Characters;
 
-                Assert.That(serverCharacters, Has.Count.EqualTo(65));
-                Assert.That(serverCharacters[65].MemberwiseEquals(profile));
+                Assert.That(serverCharacters, Has.Count.EqualTo(2));
+                Assert.That(serverCharacters[1].MemberwiseEquals(profile));
             });
 
             await client.WaitAssertion(() =>
             {
-                clientPrefManager.DeleteCharacter(65);
+                clientPrefManager.DeleteCharacter(1);
 
                 var clientCharacters = clientPrefManager.Preferences?.Characters.Count;
-                Assert.That(clientCharacters, Is.EqualTo(65));
+                Assert.That(clientCharacters, Is.EqualTo(1));
             });
 
-            await PoolManager.WaitUntil(server, () => serverPrefManager.GetPreferences(clientNetId).Characters.Count == 65, maxTicks: 65);
+            await PoolManager.WaitUntil(server, () => serverPrefManager.GetPreferences(clientNetId).Characters.Count == 1, maxTicks: 60);
 
             await server.WaitAssertion(() =>
             {
                 var serverCharacters = serverPrefManager.GetPreferences(clientNetId).Characters.Count;
-                Assert.That(serverCharacters, Is.EqualTo(65));
+                Assert.That(serverCharacters, Is.EqualTo(1));
             });
 
             await client.WaitIdleAsync();
@@ -110,18 +110,18 @@ namespace Content.IntegrationTests.Tests.Lobby
                 var clientCharacters = clientPrefManager.Preferences?.Characters;
 
                 Assert.That(clientCharacters, Is.Not.Null);
-                Assert.That(clientCharacters, Has.Count.EqualTo(65));
-                Assert.That(clientCharacters[65].MemberwiseEquals(profile));
+                Assert.That(clientCharacters, Has.Count.EqualTo(2));
+                Assert.That(clientCharacters[1].MemberwiseEquals(profile));
             });
 
-            await PoolManager.WaitUntil(server, () => serverPrefManager.GetPreferences(clientNetId).Characters.Count == 65, maxTicks: 65);
+            await PoolManager.WaitUntil(server, () => serverPrefManager.GetPreferences(clientNetId).Characters.Count == 2, maxTicks: 60);
 
             await server.WaitAssertion(() =>
             {
                 var serverCharacters = serverPrefManager.GetPreferences(clientNetId).Characters;
 
-                Assert.That(serverCharacters, Has.Count.EqualTo(65));
-                Assert.That(serverCharacters[65].MemberwiseEquals(profile));
+                Assert.That(serverCharacters, Has.Count.EqualTo(2));
+                Assert.That(serverCharacters[1].MemberwiseEquals(profile));
             });
             await pair.CleanReturnAsync();
         }

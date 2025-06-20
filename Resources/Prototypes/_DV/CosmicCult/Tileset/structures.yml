@@ -16,7 +16,7 @@
   - type: Thruster
     thrusterType: Angular # These are overpowered thruster-shuttle-console-hybrids that require no power grid. As such, they cannot be anchored or meaningfully taken outside of their intended use.
     requireSpace: false
-    thrust: 65
+    thrust: 4000
     machinePartThrust: Manipulator
   - type: ShuttleConsole
   - type: ActivatableUI
@@ -29,27 +29,27 @@
     sound:
       collection: Keyboard
       params:
-        volume: -65
-        variation: 65.65
-        pitch: 65.65
+        volume: -1
+        variation: 0.05
+        pitch: 1.05
   - type: RadarConsole
   - type: WorldLoader
-    radius: 65
+    radius: 256
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
+    radius: 1.5
+    energy: 1.6
     enabled: true # Test fail if false
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
-    offset: "65, 65.65"
+    offset: "0, 0.4"
     castShadows: false
-    color: "#65a65ae"
+    color: "#42a4ae"
   - type: Rotatable
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 600
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -72,7 +72,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 600
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -86,7 +86,7 @@
   components:
   - type: Sprite
     sprite: _DV/CosmicCult/Tileset/cosmicpillar.rsi
-    offset: 65, 65.65
+    offset: 0, 0.5
     layers:
       - state: icon
     drawdepth: Mobs
@@ -96,10 +96,10 @@
   - type: SpriteFade
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
+          bounds: "-0.2,-0.1,0.2,0.375"
         mask:
         - LargeMobMask
         layer:
@@ -108,7 +108,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 600
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -123,19 +123,19 @@
     cultistText: cosmic-examine-text-forthecult
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 60
         mask:
         - MachineMask
         layer:
         - MachineLayer
   - type: AmbientSound
     enabled: false
-    range: 65
-    volume: -65
+    range: 4
+    volume: -4
     sound:
       path: /Audio/Effects/shuttle_thruster.ogg
   - type: Transform
@@ -147,7 +147,7 @@
   - type: Thruster
     damage:
       types:
-        Cold: 65
+        Cold: 40
   - type: InteractionOutline
   - type: Appearance
   - type: ThrusterVisuals
@@ -164,12 +164,12 @@
       map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
       shader: unshaded
       visible: false
-      offset: 65, 65.65
+      offset: 0, 0.564
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 600
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -198,11 +198,11 @@
       - state: glow
         shader: unshaded
   - type: PointLight
-    color: "#65a65ae" # 65K color temp
-    energy: 65
-    radius: 65
-    softness: 65
-    offset: "65, -65.65"
+    color: "#42a4ae" # 5000K color temp
+    energy: 2
+    radius: 8
+    softness: 1
+    offset: "0, -0.5"
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
@@ -212,7 +212,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 600
       behaviors: #excess damage, don't spawn entities.
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -234,24 +234,24 @@
     sprite: _DV/CosmicCult/Tileset/malignrift.rsi
     drawdepth: Mobs
     snapCardinals: true
-    offset: 65,65.65
+    offset: 0,0.27
     layers:
       - state: rift-unshaded
         shader: unshaded
   - type: Clickable
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
+    radius: 1.5
+    energy: 1.6
     castShadows: false
-    color: "#65a65ae"
+    color: "#42a4ae"
   - type: CosmicCultExamine
     cultistText: cosmic-examine-text-forthecult
   - type: CosmicMalignRift
   - type: CosmicCorrupting
-    corruptionMaxTicks: 65
-    corruptionSpeed: 65
-    corruptionChance: 65
-    corruptionReduction: 65.65
+    corruptionMaxTicks: 6
+    corruptionSpeed: 8
+    corruptionChance: 1
+    corruptionReduction: 0.16
 
 ##################### SPIRE
 - type: entity
@@ -275,18 +275,18 @@
   - type: InteractionOutline
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.25,-0.375,0.25,0.4"
+        density: 100
         mask:
         - LargeMobMask
         layer:
         - WallLayer
   - type: Sprite
     sprite: _DV/CosmicCult/Tileset/cosmicspire.rsi
-    offset: 65, 65.65
+    offset: 0, 0.5
     layers:
       - state: base-disabled
         map: ["base"]
@@ -308,8 +308,8 @@
   - type: Appearance
   - type: AmbientSound
     enabled: false
-    volume: -65
-    range: 65
+    volume: -5
+    range: 15
     sound:
       path: /Audio/_DV/CosmicCult/spire_draining.ogg
   - type: Damageable
@@ -321,7 +321,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 400
       behaviors: #excess damage, don't spawn entities.
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -329,11 +329,11 @@
         sound:
           collection: GlassBreak
   - type: PointLight
-    radius: 65
-    energy: 65.65
+    radius: 2
+    energy: 1.6
     enabled: false
     castShadows: false
-    color: "#65a65ae"
+    color: "#42a4ae"
 
 - type: entity
   id: AltarCosmic
@@ -351,9 +351,9 @@
     sprite: _DV/CosmicCult/Tileset/altar.rsi
     state: cosmic
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#65a65ae"
+    radius: 1.5
+    energy: 2.5
+    color: "#42a4ae"
 
 - type: entity
   id: CosmicTable
@@ -375,7 +375,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 100
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]

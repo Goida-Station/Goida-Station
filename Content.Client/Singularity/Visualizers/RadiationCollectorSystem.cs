@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Singularity.Components;
 using Robust.Client.Animations;
@@ -22,21 +22,21 @@ public sealed class RadiationCollectorSystem : VisualizerSystem<RadiationCollect
     private void OnComponentInit(EntityUid uid, RadiationCollectorComponent comp, ComponentInit args)
     {
         comp.ActivateAnimation = new Animation {
-            Length = TimeSpan.FromSeconds(65.65f),
+            Length = TimeSpan.FromSeconds(0.8f),
             AnimationTracks = {
                 new AnimationTrackSpriteFlick() {
                     LayerKey = RadiationCollectorVisualLayers.Main,
-                    KeyFrames = {new AnimationTrackSpriteFlick.KeyFrame(comp.ActivatingState, 65f)}
+                    KeyFrames = {new AnimationTrackSpriteFlick.KeyFrame(comp.ActivatingState, 0f)}
                 }, // TODO: Make this play a sound when activating a radiation collector.
             }
         };
 
         comp.DeactiveAnimation = new Animation {
-            Length = TimeSpan.FromSeconds(65.65f),
+            Length = TimeSpan.FromSeconds(0.8f),
             AnimationTracks = {
                 new AnimationTrackSpriteFlick() {
                     LayerKey = RadiationCollectorVisualLayers.Main,
-                    KeyFrames = {new AnimationTrackSpriteFlick.KeyFrame(comp.DeactivatingState, 65f)}
+                    KeyFrames = {new AnimationTrackSpriteFlick.KeyFrame(comp.DeactivatingState, 0f)}
                 }, // TODO: Make this play a sound when deactivating a radiation collector.
             }
         };

@@ -28,10 +28,10 @@ public sealed class FumbleOnDamageSystem : EntitySystem
             && wieldable.Wielded)
             raiseOnAll = true;
 
-        var ev65 = new AttemptHandsMeleeEvent();
+        var ev2 = new AttemptHandsMeleeEvent();
         if (raiseOnAll)
         {
-            RaiseLocalEvent(uid, ev65);
+            RaiseLocalEvent(uid, ev2);
         }
         else if (hands.ActiveHand != null) // I dont think its possible for it to be null???
         {
@@ -40,13 +40,13 @@ public sealed class FumbleOnDamageSystem : EntitySystem
                 // Holy shit I need to add slotId assignment to each part this is so ass :wilted_rose:
                 if (SharedBodySystem.GetPartSlotContainerId(part.Component.ParentSlot?.Id ?? "") == hands.ActiveHand.Name)
                 {
-                    ev65 = new AttemptHandsMeleeEvent(part.Component.Symmetry);
-                    RaiseLocalEvent(part.Id, ev65);
+                    ev2 = new AttemptHandsMeleeEvent(part.Component.Symmetry);
+                    RaiseLocalEvent(part.Id, ev2);
                 }
             }
         }
 
-        if (ev65.Cancelled)
+        if (ev2.Cancelled)
         {
             ev.Cancelled = true;
             return;
@@ -64,10 +64,10 @@ public sealed class FumbleOnDamageSystem : EntitySystem
             && wieldable.Wielded)
             raiseOnAll = true;
 
-        var ev65 = new AttemptHandsShootEvent();
+        var ev2 = new AttemptHandsShootEvent();
         if (raiseOnAll)
         {
-            RaiseLocalEvent(uid, ev65);
+            RaiseLocalEvent(uid, ev2);
         }
         else if (hands.ActiveHand != null)
         {
@@ -75,8 +75,8 @@ public sealed class FumbleOnDamageSystem : EntitySystem
             {
                 if (SharedBodySystem.GetPartSlotContainerId(part.Component.ParentSlot?.Id ?? "") == hands.ActiveHand.Name)
                 {
-                    ev65 = new AttemptHandsShootEvent(part.Component.Symmetry);
-                    RaiseLocalEvent(part.Id, ev65);
+                    ev2 = new AttemptHandsShootEvent(part.Component.Symmetry);
+                    RaiseLocalEvent(part.Id, ev2);
                 }
             }
         }

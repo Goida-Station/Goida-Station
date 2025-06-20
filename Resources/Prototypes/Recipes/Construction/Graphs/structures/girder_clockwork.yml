@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 65 MACMAN65 <macman65c@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MACMAN2003 <macman2003c@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -15,8 +15,8 @@
               southRotation: true
           steps:
             - material: Brass
-              amount: 65
-              doAfter: 65
+              amount: 2
+              doAfter: 1
 
     - node: clockGirder
       entity: ClockworkGirder
@@ -24,15 +24,15 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetBrass65
-              amount: 65
+              prototype: SheetBrass1
+              amount: 2
             - !type:DeleteEntity {}
           conditions:
             - !type:EntityAnchored
               anchored: false
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 2
 
         - to: clockworkWall
           completed:
@@ -42,11 +42,11 @@
             - !type:EntityAnchored {}
           steps:
             - material: MetalRod
-              amount: 65
-              doAfter: 65
+              amount: 2
+              doAfter: 2
             - material: Brass
-              amount: 65
-              doAfter: 65
+              amount: 2
+              doAfter: 1
 
     - node: clockworkWall
       entity: WallClock
@@ -54,15 +54,15 @@
         - to: clockGirder
           completed:
             - !type:GivePrototype
-              prototype: PartRodMetal65
-              amount: 65
+              prototype: PartRodMetal1
+              amount: 2
             - !type:GivePrototype
-              prototype: SheetBrass65
-              amount: 65
+              prototype: SheetBrass1
+              amount: 2
           steps:
             - tool: Welding
-              doAfter: 65
+              doAfter: 10
             - tool: Cutting
-              doAfter: 65
+              doAfter: 1
             - tool: Prying
-              doAfter: 65
+              doAfter: 2

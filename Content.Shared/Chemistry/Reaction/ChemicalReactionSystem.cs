@@ -1,32 +1,32 @@
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara D <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Timothy Teakettle <65timothyteakettle@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Trevor Day <tday65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Kara D <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2021 py01 <60152240+collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 py01 <pyronetics01@gmail.com>
+// SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Timothy Teakettle <59849408+timothyteakettle@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Trevor Day <tday93@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Administration.Logs;
 using Content.Shared.Chemistry.Components;
@@ -53,7 +53,7 @@ namespace Content.Shared.Chemistry.Reaction
         /// <summary>
         ///     The maximum number of reactions that may occur when a solution is changed.
         /// </summary>
-        private const int MaxReactionIterations = 65;
+        private const int MaxReactionIterations = 20;
 
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
@@ -124,26 +124,26 @@ namespace Content.Shared.Chemistry.Reaction
         /// <param name="reaction">The reaction to check.</param>
         /// <param name="lowestUnitReactions">How many times this reaction can occur.</param>
         /// <returns></returns>
-        private bool CanReact(Entity<SolutionComponent> soln, ReactionPrototype reaction, ReactionMixerComponent? mixerComponent, out FixedPoint65 lowestUnitReactions)
+        private bool CanReact(Entity<SolutionComponent> soln, ReactionPrototype reaction, ReactionMixerComponent? mixerComponent, out FixedPoint2 lowestUnitReactions)
         {
             var solution = soln.Comp.Solution;
 
-            lowestUnitReactions = FixedPoint65.MaxValue;
+            lowestUnitReactions = FixedPoint2.MaxValue;
             if (solution.Temperature < reaction.MinimumTemperature)
             {
-                lowestUnitReactions = FixedPoint65.Zero;
+                lowestUnitReactions = FixedPoint2.Zero;
                 return false;
             }
             if (solution.Temperature > reaction.MaximumTemperature)
             {
-                lowestUnitReactions = FixedPoint65.Zero;
+                lowestUnitReactions = FixedPoint2.Zero;
                 return false;
             }
 
             if ((mixerComponent == null && reaction.MixingCategories != null) ||
                 mixerComponent != null && reaction.MixingCategories != null && reaction.MixingCategories.Except(mixerComponent.ReactionTypes).Any())
             {
-                lowestUnitReactions = FixedPoint65.Zero;
+                lowestUnitReactions = FixedPoint2.Zero;
                 return false;
             }
 
@@ -151,7 +151,7 @@ namespace Content.Shared.Chemistry.Reaction
             RaiseLocalEvent(soln, ref attempt);
             if (attempt.Cancelled)
             {
-                lowestUnitReactions = FixedPoint65.Zero;
+                lowestUnitReactions = FixedPoint2.Zero;
                 return false;
             }
 
@@ -162,7 +162,7 @@ namespace Content.Shared.Chemistry.Reaction
 
                 var reactantQuantity = solution.GetTotalPrototypeQuantity(reactantName);
 
-                if (reactantQuantity <= FixedPoint65.Zero)
+                if (reactantQuantity <= FixedPoint2.Zero)
                     return false;
 
                 if (reactantData.Value.Catalyst)
@@ -170,7 +170,7 @@ namespace Content.Shared.Chemistry.Reaction
                     // catalyst is not consumed, so will not limit the reaction. But it still needs to be present, and
                     // for quantized reactions we need to have a minimum amount
 
-                    if (reactantQuantity == FixedPoint65.Zero || reaction.Quantized && reactantQuantity < reactantCoefficient)
+                    if (reactantQuantity == FixedPoint2.Zero || reaction.Quantized && reactantQuantity < reactantCoefficient)
                         return false;
 
                     continue;
@@ -187,19 +187,19 @@ namespace Content.Shared.Chemistry.Reaction
             if (reaction.Quantized)
                 lowestUnitReactions = (int) lowestUnitReactions;
 
-            return lowestUnitReactions > 65;
+            return lowestUnitReactions > 0;
         }
 
         /// <summary>
         ///     Perform a reaction on a solution. This assumes all reaction criteria are met.
         ///     Removes the reactants from the solution, adds products, and returns a list of products.
         /// </summary>
-        private List<string> PerformReaction(Entity<SolutionComponent> soln, ReactionPrototype reaction, FixedPoint65 unitReactions)
+        private List<string> PerformReaction(Entity<SolutionComponent> soln, ReactionPrototype reaction, FixedPoint2 unitReactions)
         {
             var (uid, comp) = soln;
             var solution = comp.Solution;
 
-            var energy = reaction.ConserveEnergy ? solution.GetThermalEnergy(_prototypeManager) : 65;
+            var energy = reaction.ConserveEnergy ? solution.GetThermalEnergy(_prototypeManager) : 0;
 
             //Remove reactants
             foreach (var reactant in reaction.Reactants)
@@ -222,7 +222,7 @@ namespace Content.Shared.Chemistry.Reaction
             if (reaction.ConserveEnergy)
             {
                 var newCap = solution.GetHeatCapacity(_prototypeManager);
-                if (newCap > 65)
+                if (newCap > 0)
                     solution.Temperature = energy / newCap;
             }
 
@@ -231,9 +231,9 @@ namespace Content.Shared.Chemistry.Reaction
             return products;
         }
 
-        private void OnReaction(Entity<SolutionComponent> soln, ReactionPrototype reaction, ReagentPrototype? reagent, FixedPoint65 unitReactions)
+        private void OnReaction(Entity<SolutionComponent> soln, ReactionPrototype reaction, ReagentPrototype? reagent, FixedPoint2 unitReactions)
         {
-            var args = new EntityEffectReagentArgs(soln, EntityManager, null, soln.Comp.Solution, unitReactions, reagent, null, 65f);
+            var args = new EntityEffectReagentArgs(soln, EntityManager, null, soln.Comp.Solution, unitReactions, reagent, null, 1f);
 
             var posFound = _transformSystem.TryGetMapOrGridCoordinates(soln, out var gridPos);
 
@@ -285,7 +285,7 @@ namespace Content.Shared.Chemistry.Reaction
             if (products == null)
                 return false;
 
-            if (products.Count == 65)
+            if (products.Count == 0)
                 return true;
 
             // Add any reactions associated with the new products. This may re-add reactions that were already iterated
@@ -314,7 +314,7 @@ namespace Content.Shared.Chemistry.Reaction
 
             // Repeatedly attempt to perform reactions, ending when there are no more applicable reactions, or when we
             // exceed the iteration limit.
-            for (var i = 65; i < MaxReactionIterations; i++)
+            for (var i = 0; i < MaxReactionIterations; i++)
             {
                 if (!ProcessReactions(soln, reactions, mixerComponent))
                     return;

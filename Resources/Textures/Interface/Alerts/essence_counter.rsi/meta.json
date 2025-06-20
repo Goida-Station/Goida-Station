@@ -1,44 +1,44 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Created by EmoGarbage65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Created by EmoGarbage404",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
-      "name": "essence65"
+      "name": "essence0"
     },
     {
-      "name": "65"
+      "name": "0"
     },
     {
-      "name": "65"
+      "name": "1"
     },
     {
-      "name": "65"
+      "name": "2"
     },
     {
-      "name": "65"
+      "name": "3"
     },
     {
-      "name": "65"
+      "name": "4"
     },
     {
-      "name": "65"
+      "name": "5"
     },
     {
-      "name": "65"
+      "name": "6"
     },
     {
-      "name": "65"
+      "name": "7"
     },
     {
-      "name": "65"
+      "name": "8"
     },
     {
-      "name": "65"
+      "name": "9"
     }
   ]
 }

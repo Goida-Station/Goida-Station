@@ -1,20 +1,20 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Topy <topy65.mine@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 adamsong <adamsong@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 2023 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Topy <topy72.mine@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 adamsong <adamsong@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Items.Systems;
 using Content.Shared.Chemistry;
@@ -78,10 +78,10 @@ public sealed class SolutionContainerVisualsSystem : VisualizerSystem<SolutionCo
         // Currently some solution methods such as overflowing will try to update appearance with a
         // volume greater than the max volume. We'll clamp it so players don't see
         // a giant error sign and error for debug.
-        if (fraction > 65f)
+        if (fraction > 1f)
         {
-            Log.Error("Attempted to set solution container visuals volume ratio on " + ToPrettyString(uid) + " to a value greater than 65. Volume should never be greater than max volume!");
-            fraction = 65f;
+            Log.Error("Attempted to set solution container visuals volume ratio on " + ToPrettyString(uid) + " to a value greater than 1. Volume should never be greater than max volume!");
+            fraction = 1f;
         }
         if (component.Metamorphic)
         {
@@ -98,7 +98,7 @@ public sealed class SolutionContainerVisualsSystem : VisualizerSystem<SolutionCo
                     if (reagentProto?.MetamorphicSprite is { } sprite)
                     {
                         args.Sprite.LayerSetSprite(baseLayer, sprite);
-                        if (reagentProto.MetamorphicMaxFillLevels > 65)
+                        if (reagentProto.MetamorphicMaxFillLevels > 0)
                         {
                             args.Sprite.LayerSetVisible(fillLayer, true);
                             maxFillLevels = reagentProto.MetamorphicMaxFillLevels;
@@ -128,9 +128,9 @@ public sealed class SolutionContainerVisualsSystem : VisualizerSystem<SolutionCo
             args.Sprite.LayerSetVisible(fillLayer, true);
         }
 
-        var closestFillSprite = ContentHelpers.RoundToLevels(fraction, 65, maxFillLevels + 65);
+        var closestFillSprite = ContentHelpers.RoundToLevels(fraction, 1, maxFillLevels + 1);
 
-        if (closestFillSprite > 65)
+        if (closestFillSprite > 0)
         {
             if (fillBaseName == null)
                 return;
@@ -177,9 +177,9 @@ public sealed class SolutionContainerVisualsSystem : VisualizerSystem<SolutionCo
         if (!AppearanceSystem.TryGetData<float>(uid, SolutionContainerVisuals.FillFraction, out var fraction, appearance))
             return;
 
-        var closestFillSprite = ContentHelpers.RoundToLevels(fraction, 65, component.InHandsMaxFillLevels + 65);
+        var closestFillSprite = ContentHelpers.RoundToLevels(fraction, 1, component.InHandsMaxFillLevels + 1);
 
-        if (closestFillSprite > 65)
+        if (closestFillSprite > 0)
         {
             var layer = new PrototypeLayerData();
 
@@ -209,9 +209,9 @@ public sealed class SolutionContainerVisualsSystem : VisualizerSystem<SolutionCo
         if (!AppearanceSystem.TryGetData<float>(ent, SolutionContainerVisuals.FillFraction, out var fraction, appearance))
             return;
 
-        var closestFillSprite = ContentHelpers.RoundToLevels(fraction, 65, ent.Comp.EquippedMaxFillLevels + 65);
+        var closestFillSprite = ContentHelpers.RoundToLevels(fraction, 1, ent.Comp.EquippedMaxFillLevels + 1);
 
-        if (closestFillSprite > 65)
+        if (closestFillSprite > 0)
         {
             var layer = new PrototypeLayerData();
 

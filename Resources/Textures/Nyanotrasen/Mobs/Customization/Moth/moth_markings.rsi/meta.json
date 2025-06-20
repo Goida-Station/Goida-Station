@@ -1,323 +1,323 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/be65e65efdf65b65e65d65dcb65eff65b65a65d65b65e65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/be0e6efdf6b18e953d3dcb1eff584b66a9d3b9e3",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "deathshead-head",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "deathshead-chest",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "deathshead-rightarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "deathshead-leftarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "deathshead-rightleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "deathshead-leftleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "firewatch-head",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "firewatch-chest",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "firewatch-rightarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "firewatch-leftarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "firewatch-rightleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "firewatch-leftleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "gothic-head",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "gothic-chest",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "gothic-rightarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "gothic-leftarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "gothic-rightleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "gothic-leftleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "jungle-head",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "jungle-chest",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "jungle-rightarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "jungle-leftarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "jungle-rightleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "jungle-leftleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "lovers-head",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "lovers-chest",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "lovers-rightarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "lovers-leftarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "lovers-rightleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "lovers-leftleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "moonfly-head",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "moonfly-chest",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "moonfly-rightarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "moonfly-leftarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "moonfly-rightleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "moonfly-leftleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "oakworm-head",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "oakworm-chest",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "oakworm-rightarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "oakworm-leftarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "oakworm-rightleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "oakworm-leftleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "poison-head",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "poison-chest",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "poison-rightarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "poison-leftarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "poison-rightleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "poison-leftleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "ragged-head",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "ragged-chest",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "ragged-rightarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "ragged-leftarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "ragged-rightleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "ragged-leftleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "reddish-head",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "reddish-chest",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "reddish-rightarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "reddish-leftarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "reddish-rightleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "reddish-leftleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "royal-head",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "royal-chest",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "royal-rightarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "royal-leftarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "royal-rightleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "royal-leftleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "whitefly-head",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "whitefly-chest",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "whitefly-rightarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "whitefly-leftarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "whitefly-rightleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "whitefly-leftleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "witchking-head",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "witchking-chest",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "witchking-rightarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "witchking-leftarm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "witchking-rightleg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "witchking-leftleg",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

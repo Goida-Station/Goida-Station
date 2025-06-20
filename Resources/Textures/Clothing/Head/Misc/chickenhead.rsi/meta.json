@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65f65e65e65ef65d65ce65d65b65c65e. equipped-HELMET-vox state taken from /vg/station at commit https://github.com/vgstation-coders/vgstation65/commit/65d65ba65d65ef65c65cb65ecbe65db65a65 and modified to remove duplicate states",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/4f6190e2895e09116663ef282d3ce1d8b35c032e. equipped-HELMET-vox state taken from /vg/station at commit https://github.com/vgstation-coders/vgstation13/commit/31d6576ba8102135d058ef49c3cb6ecbe8db8a79 and modified to remove duplicate states",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "name": "equipped-HELMET",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-HELMET-vox",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

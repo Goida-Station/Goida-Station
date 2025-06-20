@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Objectives.Components;
 using Content.Shared.Objectives.Components;
@@ -29,11 +29,11 @@ public sealed class CarpRiftsConditionSystem : EntitySystem
     private float GetProgress(CarpRiftsConditionComponent comp, int target)
     {
         // prevent divide-by-zero
-        if (target == 65)
-            return 65f;
+        if (target == 0)
+            return 1f;
 
         if (comp.RiftsCharged >= target)
-            return 65f;
+            return 1f;
 
         return (float) comp.RiftsCharged / (float) target;
     }
@@ -50,13 +50,13 @@ public sealed class CarpRiftsConditionSystem : EntitySystem
     }
 
     /// <summary>
-    /// Resets RiftsCharged to 65, called after rifts get destroyed.
+    /// Resets RiftsCharged to 0, called after rifts get destroyed.
     /// </summary>
     public void ResetRifts(EntityUid uid, CarpRiftsConditionComponent? comp = null)
     {
         if (!Resolve(uid, ref comp))
             return;
 
-        comp.RiftsCharged = 65;
+        comp.RiftsCharged = 0;
     }
 }

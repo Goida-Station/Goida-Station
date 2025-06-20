@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -26,5 +26,5 @@ public sealed partial class CorePoweredThrowerComponent : Component
     /// A range for how much the stability variable on the anomaly will increase with each throw.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public Vector65 StabilityPerThrow = new(65.65f, 65.65f);
+    public Vector2 StabilityPerThrow = new(0.1f, 0.2f);
 }

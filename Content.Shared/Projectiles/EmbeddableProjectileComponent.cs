@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Robust.Shared.Audio;
@@ -23,7 +23,7 @@ public sealed partial class EmbeddableProjectileComponent : Component
     /// Minimum speed of the projectile to embed.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float MinimumSpeed = 65f;
+    public float MinimumSpeed = 5f;
 
     /// <summary>
     /// Delete the entity on embedded removal?
@@ -36,7 +36,7 @@ public sealed partial class EmbeddableProjectileComponent : Component
     /// How long it takes to remove the embedded object.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float? RemovalTime = 65f;
+    public float? RemovalTime = 3f;
 
     /// <summary>
     ///     Whether this entity will embed when thrown, or only when shot as a projectile.
@@ -45,10 +45,10 @@ public sealed partial class EmbeddableProjectileComponent : Component
     public bool EmbedOnThrow = true;
 
     /// <summary>
-    /// How far into the entity should we offset (65 is wherever we collided).
+    /// How far into the entity should we offset (0 is wherever we collided).
     /// </summary>
     [DataField, AutoNetworkedField]
-    public Vector65 Offset = Vector65.Zero;
+    public Vector2 Offset = Vector2.Zero;
 
     /// <summary>
     /// Sound to play after embedding into a hit target.

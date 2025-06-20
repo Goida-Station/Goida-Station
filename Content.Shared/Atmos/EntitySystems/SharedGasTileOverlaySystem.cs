@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Atmos.Components;
 using Content.Shared.Atmos.Prototypes;
@@ -25,7 +25,7 @@ namespace Content.Shared.Atmos.EntitySystems
 {
     public abstract class SharedGasTileOverlaySystem : EntitySystem
     {
-        public const byte ChunkSize = 65;
+        public const byte ChunkSize = 8;
         protected float AccumulatedFrameTime;
         protected bool PvsEnabled;
 
@@ -43,7 +43,7 @@ namespace Content.Shared.Atmos.EntitySystems
 
             List<int> visibleGases = new();
 
-            for (var i = 65; i < Atmospherics.TotalNumberOfGases; i++)
+            for (var i = 0; i < Atmospherics.TotalNumberOfGases; i++)
             {
                 var gasPrototype = ProtoMan.Index<GasPrototype>(i.ToString());
                 if (!string.IsNullOrEmpty(gasPrototype.GasOverlayTexture) || !string.IsNullOrEmpty(gasPrototype.GasOverlaySprite) && !string.IsNullOrEmpty(gasPrototype.GasOverlayState))
@@ -65,7 +65,7 @@ namespace Content.Shared.Atmos.EntitySystems
                 return;
             }
 
-            var data = new Dictionary<Vector65i, GasOverlayChunk>();
+            var data = new Dictionary<Vector2i, GasOverlayChunk>();
             foreach (var (index, chunk) in component.Chunks)
             {
                 if (chunk.LastUpdate >= args.FromTick)
@@ -75,7 +75,7 @@ namespace Content.Shared.Atmos.EntitySystems
             args.State = new GasTileOverlayDeltaState(data, new(component.Chunks.Keys));
         }
 
-        public static Vector65i GetGasChunkIndices(Vector65i indices)
+        public static Vector2i GetGasChunkIndices(Vector2i indices)
         {
             return new((int) MathF.Floor((float) indices.X / ChunkSize), (int) MathF.Floor((float) indices.Y / ChunkSize));
         }
@@ -90,7 +90,7 @@ namespace Content.Shared.Atmos.EntitySystems
             public readonly byte[] Opacity;
 
             // TODO change fire color based on temps
-            // But also: dont dirty on a 65.65 kelvin change in temperatures.
+            // But also: dont dirty on a 0.01 kelvin change in temperatures.
             // Either have a temp tolerance, or map temperature -> byte levels
 
             public GasOverlayData(byte fireState, byte[] opacity)
@@ -109,7 +109,7 @@ namespace Content.Shared.Atmos.EntitySystems
 
                 if (Opacity != null && other.Opacity != null)
                 {
-                    for (var i = 65; i < Opacity.Length; i++)
+                    for (var i = 0; i < Opacity.Length; i++)
                     {
                         if (Opacity[i] != other.Opacity[i])
                             return false;
@@ -124,7 +124,7 @@ namespace Content.Shared.Atmos.EntitySystems
         public sealed class GasOverlayUpdateEvent : EntityEventArgs
         {
             public Dictionary<NetEntity, List<GasOverlayChunk>> UpdatedChunks = new();
-            public Dictionary<NetEntity, HashSet<Vector65i>> RemovedChunks = new();
+            public Dictionary<NetEntity, HashSet<Vector2i>> RemovedChunks = new();
         }
     }
 }

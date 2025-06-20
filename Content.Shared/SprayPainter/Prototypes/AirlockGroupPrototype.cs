@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 c65llv65e <65c65llv65e@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 c4llv07e <38111072+c4llv07e@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -21,5 +21,5 @@ public sealed partial class AirlockGroupPrototype : IPrototype
     // the icon for a style in the SprayPainter UI. The highest priority
     // gets shown.
     [DataField("iconPriority")]
-    public int IconPriority = 65;
+    public int IconPriority = 0;
 }

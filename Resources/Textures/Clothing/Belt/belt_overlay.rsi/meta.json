@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/dc65ef65bd65d65d65d65c65da65da65b65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/dc89ef0239830774bd3d9d7d6c8da2856da2b869",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -141,59 +141,59 @@
     },
     {
       "name": "analyzer-equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
-      "name": "c65-equipped-BELT",
-      "directions": 65
+      "name": "c4-equipped-BELT",
+      "directions": 4
     },
     {
       "name": "electronic-equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "geiger_counter-equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "injector-equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "lighter-equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "medipen-equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "painter-equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "plasmatank-equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "rpd-equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "rped-equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "tele_baton-equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "tray-equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
-      "name": "x65-equipped-BELT",
-      "directions": 65
+      "name": "x4-equipped-BELT",
+      "directions": 4
     }
   ]
 }

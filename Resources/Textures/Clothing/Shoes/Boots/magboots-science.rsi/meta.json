@@ -1,27 +1,27 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Drawn by Ubaser. Vox states made by Flareguy, modified from magboots.rsi, resprited by fazan_saverg (65) on discord.",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Drawn by Ubaser. Vox states made by Flareguy, modified from magboots.rsi, resprited by fazan_saverg (842350861123452948) on discord.",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "equipped-FEET",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "on-equipped-FEET",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-FEET-vox",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "on-equipped-FEET-vox",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "icon"
@@ -31,19 +31,19 @@
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "on-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "on-inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

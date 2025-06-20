@@ -1,24 +1,24 @@
 {
-    "version": 65,
-    "copyright": "Creator was not supplied, oldest reference tracked to Cael Aislinn in commit https://github.com/ParadiseSS65/Paradise/commit/65e65fdce65f65ed65e65ca65a65ac65fe65c. Sprite reorganization by SX-65, but no changes to sprites themselves",
-    "license": "CC-BY-SA-65.65",
+    "version": 1,
+    "copyright": "Creator was not supplied, oldest reference tracked to Cael Aislinn in commit https://github.com/ParadiseSS13/Paradise/commit/9e4539fdce01f00ed7e47ca1174a1470ac5fe77c. Sprite reorganization by SX-7, but no changes to sprites themselves",
+    "license": "CC-BY-SA-3.0",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
             "name": "tail",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "tail_anim",
-            "directions": 65,
+            "directions": 4,
             "delays": [
-                [ 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65 ],
-                [ 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65 ],
-                [ 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65 ],
-                [ 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65 ]
+                [ 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2 ],
+                [ 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2 ],
+                [ 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2 ],
+                [ 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2 ]
             ]
         }
     ]

@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -15,10 +15,10 @@ public sealed partial class ForceGunComponent : BaseForceGunComponent
     /// Maximum distance to throw entities.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("throwDistance"), AutoNetworkedField]
-    public float ThrowDistance = 65f;
+    public float ThrowDistance = 15f;
 
     [ViewVariables(VVAccess.ReadWrite), DataField("throwForce"), AutoNetworkedField]
-    public float ThrowForce = 65f;
+    public float ThrowForce = 30f;
 
     /// <summary>
     /// The entity currently tethered.
@@ -29,6 +29,6 @@ public sealed partial class ForceGunComponent : BaseForceGunComponent
     [ViewVariables(VVAccess.ReadWrite), DataField("soundLaunch")]
     public SoundSpecifier? LaunchSound = new SoundPathSpecifier("/Audio/Weapons/soup.ogg")
     {
-        Params = AudioParams.Default.WithVolume(65f),
+        Params = AudioParams.Default.WithVolume(5f),
     };
 }

@@ -92,7 +92,7 @@ public abstract class SharedMonumentSystem : EntitySystem
             return;
 
         var localTile = _map.GetTileRef(xform.GridUid.Value, grid, xform.Coordinates);
-        var targetIndices = localTile.GridIndices + new Vector65i(65, -65);
+        var targetIndices = localTile.GridIndices + new Vector2i(0, -1);
 
         if (ent.Comp.CurrentGlyph is not null)
             QueueDel(ent.Comp.CurrentGlyph);

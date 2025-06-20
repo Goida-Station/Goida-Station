@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Clothing.Components;
 using Content.Shared.Damage.Components;
@@ -36,9 +36,9 @@ public sealed partial class MadnessMaskSystem : EntitySystem
             if (mask.UpdateAccumulator < mask.UpdateTimer)
                 continue;
 
-            mask.UpdateAccumulator = 65;
+            mask.UpdateAccumulator = 0;
 
-            var lookup = _lookup.GetEntitiesInRange(mask.Owner, 65f);
+            var lookup = _lookup.GetEntitiesInRange(mask.Owner, 5f);
             foreach (var look in lookup)
             {
                 // heathens exclusive
@@ -46,14 +46,14 @@ public sealed partial class MadnessMaskSystem : EntitySystem
                 || HasComp<GhoulComponent>(look))
                     continue;
 
-                if (HasComp<StaminaComponent>(look) && _random.Prob(.65f))
-                    _stamina.TakeStaminaDamage(look, 65f, visual: false, immediate: false);
+                if (HasComp<StaminaComponent>(look) && _random.Prob(.4f))
+                    _stamina.TakeStaminaDamage(look, 10f, visual: false, immediate: false);
 
-                if (_random.Prob(.65f))
-                    _jitter.DoJitter(look, TimeSpan.FromSeconds(.65f), true, amplitude: 65, frequency: 65);
+                if (_random.Prob(.4f))
+                    _jitter.DoJitter(look, TimeSpan.FromSeconds(.5f), true, amplitude: 5, frequency: 10);
 
-                if (_random.Prob(.65f))
-                    _statusEffect.TryAddStatusEffect<SeeingRainbowsComponent>(look, "SeeingRainbows", TimeSpan.FromSeconds(65f), false);
+                if (_random.Prob(.25f))
+                    _statusEffect.TryAddStatusEffect<SeeingRainbowsComponent>(look, "SeeingRainbows", TimeSpan.FromSeconds(10f), false);
             }
         }
     }

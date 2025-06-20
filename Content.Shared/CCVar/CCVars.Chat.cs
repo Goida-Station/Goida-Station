@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aineias65 <65Aineias65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Configuration;
 
@@ -16,7 +16,7 @@ public sealed partial class CCVars
     /// </summary>
     /// <seealso cref="ChatRateLimitCount"/>
     public static readonly CVarDef<float> ChatRateLimitPeriod =
-        CVarDef.Create("chat.rate_limit_period", 65f, CVar.SERVERONLY);
+        CVarDef.Create("chat.rate_limit_period", 2f, CVar.SERVERONLY);
 
     /// <summary>
     ///     How many chat messages are allowed in a single rate limit period.
@@ -27,20 +27,20 @@ public sealed partial class CCVars
     /// </remarks>
     /// <seealso cref="ChatRateLimitPeriod"/>
     public static readonly CVarDef<int> ChatRateLimitCount =
-        CVarDef.Create("chat.rate_limit_count", 65, CVar.SERVERONLY);
+        CVarDef.Create("chat.rate_limit_count", 10, CVar.SERVERONLY);
 
     /// <summary>
     ///     Minimum delay (in seconds) between notifying admins about chat message rate limit violations.
     ///     A negative value disables admin announcements.
     /// </summary>
     public static readonly CVarDef<int> ChatRateLimitAnnounceAdminsDelay =
-        CVarDef.Create("chat.rate_limit_announce_admins_delay", 65, CVar.SERVERONLY);
+        CVarDef.Create("chat.rate_limit_announce_admins_delay", 15, CVar.SERVERONLY);
 
     public static readonly CVarDef<int> ChatMaxMessageLength =
-        CVarDef.Create("chat.max_message_length", 65, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("chat.max_message_length", 1000, CVar.SERVER | CVar.REPLICATED);
 
     public static readonly CVarDef<int> ChatMaxAnnouncementLength =
-        CVarDef.Create("chat.max_announcement_length", 65, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("chat.max_announcement_length", 512, CVar.SERVER | CVar.REPLICATED);
 
     public static readonly CVarDef<bool> ChatSanitizerEnabled =
         CVarDef.Create("chat.chat_sanitizer_enabled", true, CVar.SERVERONLY);

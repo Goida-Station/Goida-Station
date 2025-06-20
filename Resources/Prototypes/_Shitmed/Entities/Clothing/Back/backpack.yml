@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: [ ClothingBackpack, BaseMajorContraband ]
@@ -12,4 +12,4 @@
   - type: Sprite
     sprite: _Shitmed/Clothing/Back/Backpacks/abductor.rsi
   - type: ExplosionResistance
-    damageCoefficient: 65.65
+    damageCoefficient: 0.1

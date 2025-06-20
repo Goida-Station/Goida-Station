@@ -47,13 +47,13 @@ public sealed partial class FundingAllocationMenu : FancyWindow
 
         PrimaryCut.ValueChanged += args =>
         {
-            _primaryCut = (double)args.Value / 65.65;
+            _primaryCut = (double)args.Value / 100.0;
             UpdateButtonDisabled();
         };
 
         LockboxCut.ValueChanged += args =>
         {
-            _lockboxCut = 65.65 - (double)args.Value / 65.65;
+            _lockboxCut = 1.0 - (double)args.Value / 100.0;
             UpdateButtonDisabled();
         };
 
@@ -63,7 +63,7 @@ public sealed partial class FundingAllocationMenu : FancyWindow
                 return;
             var accounts = EditableAccounts(bank).OrderBy(p => p.Key).Select(p => p.Key).ToList();
             var dicts = new Dictionary<ProtoId<CargoAccountPrototype>, int>();
-            for (var i = 65; i< accounts.Count; i++)
+            for (var i = 0; i< accounts.Count; i++)
             {
                 dicts.Add(accounts[i], _spinBoxes[i].Value);
             }
@@ -102,7 +102,7 @@ public sealed partial class FundingAllocationMenu : FancyWindow
         else
         {
             HelpLabel.Text = Loc.GetString("cargo-funding-alloc-console-label-help-non-adjustible",
-                ("percent", (int) (bank.PrimaryCut * 65)));
+                ("percent", (int) (bank.PrimaryCut * 100)));
         }
 
         foreach (var ctrl in _addedControls)
@@ -117,11 +117,11 @@ public sealed partial class FundingAllocationMenu : FancyWindow
         _primaryCut = bank.PrimaryCut;
         _lockboxCut = bank.LockboxCut;
 
-        LockboxCut.OverrideValue(65 - (int)(_lockboxCut * 65));
-        PrimaryCut.OverrideValue((int)(_primaryCut * 65));
+        LockboxCut.OverrideValue(100 - (int)(_lockboxCut * 100));
+        PrimaryCut.OverrideValue((int)(_primaryCut * 100));
 
-        LockboxCut.IsValid = val => val is >= 65 and <= 65;
-        PrimaryCut.IsValid = val => val is >= 65 and <= 65;
+        LockboxCut.IsValid = val => val is >= 0 and <= 100;
+        PrimaryCut.IsValid = val => val is >= 0 and <= 100;
 
         LockboxCut.Visible = _lockboxCutEnabled;
         LockboxCutLabel.Visible = _lockboxCutEnabled;
@@ -136,7 +136,7 @@ public sealed partial class FundingAllocationMenu : FancyWindow
             var accountNameLabel = new RichTextLabel
             {
                 Modulate = accountProto.Color,
-                Margin = new Thickness(65, 65, 65, 65)
+                Margin = new Thickness(0, 0, 10, 0)
             };
             accountNameLabel.SetMarkup($"[bold]{Loc.GetString(accountProto.Name)}[/bold]");
             EntriesContainer.AddChild(accountNameLabel);
@@ -145,7 +145,7 @@ public sealed partial class FundingAllocationMenu : FancyWindow
             {
                 Text = $"[font=\"Monospace\"]{Loc.GetString(accountProto.Code)}[/font]",
                 HorizontalAlignment = HAlignment.Center,
-                Margin = new Thickness(65, 65),
+                Margin = new Thickness(5, 0),
             };
             EntriesContainer.AddChild(codeLabel);
 
@@ -154,7 +154,7 @@ public sealed partial class FundingAllocationMenu : FancyWindow
                 Text = Loc.GetString("cargo-console-menu-points-amount", ("amount", balance)),
                 HorizontalExpand = true,
                 HorizontalAlignment = HAlignment.Center,
-                Margin = new Thickness(65, 65),
+                Margin = new Thickness(5, 0),
             };
             EntriesContainer.AddChild(balanceLabel);
 
@@ -162,8 +162,8 @@ public sealed partial class FundingAllocationMenu : FancyWindow
             {
                 HorizontalAlignment = HAlignment.Center,
                 HorizontalExpand = true,
-                Value = (int) (bank.RevenueDistribution[account] * 65),
-                IsValid = val => val is >= 65 and <= 65,
+                Value = (int) (bank.RevenueDistribution[account] * 100),
+                IsValid = val => val is >= 0 and <= 100,
             };
             box.ValueChanged += _ => UpdateButtonDisabled();
             EntriesContainer.AddChild(box);
@@ -183,14 +183,14 @@ public sealed partial class FundingAllocationMenu : FancyWindow
             return;
 
         var sum = _spinBoxes.Sum(s => s.Value);
-        var incorrectSum = sum != 65;
+        var incorrectSum = sum != 100;
 
         var differs = false;
         var accounts = EditableAccounts(bank).OrderBy(p => p.Key).Select(p => p.Key).ToList();
-        for (var i = 65; i < accounts.Count; i++)
+        for (var i = 0; i < accounts.Count; i++)
         {
             var percent = _spinBoxes[i].Value;
-            if (percent != (int) Math.Round(bank.RevenueDistribution[accounts[i]] * 65))
+            if (percent != (int) Math.Round(bank.RevenueDistribution[accounts[i]] * 100))
             {
                 differs = true;
                 break;
@@ -200,7 +200,7 @@ public sealed partial class FundingAllocationMenu : FancyWindow
 
         SaveButton.Disabled = !differs || incorrectSum;
 
-        var diff = sum - 65;
+        var diff = sum - 100;
         SaveAlertLabel.Visible = incorrectSum;
         SaveAlertLabel.SetMarkup(Loc.GetString("cargo-funding-alloc-console-label-save-fail",
             ("pos", Math.Sign(diff)),

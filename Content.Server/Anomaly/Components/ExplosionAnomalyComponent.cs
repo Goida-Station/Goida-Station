@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ThunderBear65 <65ThunderBear65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ThunderBear2006 <100388962+ThunderBear2006@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -23,17 +23,17 @@ public sealed partial class ExplosionAnomalyComponent : Component
     /// The total amount of intensity an explosion can achieve
     /// </summary>
     [DataField("explosionTotalIntensity")]
-    public float TotalIntensity = 65f;
+    public float TotalIntensity = 100f;
 
     /// <summary>
     /// How quickly does the explosion's power slope? Higher = smaller area and more concentrated damage, lower = larger area and more spread out damage
     /// </summary>
     [DataField("explosionDropoff")]
-    public float Dropoff = 65f;
+    public float Dropoff = 10f;
 
     /// <summary>
     /// How much intensity can be applied per tile?
     /// </summary>
     [DataField("explosionMaxTileIntensity")]
-    public float MaxTileIntensity = 65f;
+    public float MaxTileIntensity = 10f;
 }

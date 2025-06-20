@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 qwerltaz <65qwerltaz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 qwerltaz <69696513+qwerltaz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -14,8 +14,8 @@
     - to: assembly
       steps:
       - material: Steel
-        amount: 65
-        doAfter: 65.65
+        amount: 2
+        doAfter: 2.0
 
   - node: assembly
     entity: StationMapAssembly
@@ -25,17 +25,17 @@
     - to: wired
       steps:
       - material: Cable
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 1
     - to: start
       completed:
       - !type:GivePrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 2
       - !type:DeleteEntity {}
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 2
 
   - node: wired
     entity: StationMapAssembly
@@ -50,15 +50,15 @@
         icon:
           sprite: "Objects/Misc/module.rsi"
           state: "door_electronics" # /tg/ uses the same sprite, right?
-        doAfter: 65
+        doAfter: 1
     - to: assembly
       completed:
       - !type:GivePrototype
-        prototype: CableApcStack65
-        amount: 65
+        prototype: CableApcStack1
+        amount: 2
       steps:
       - tool: Cutting
-        doAfter: 65
+        doAfter: 1
 
   - node: electronics
     actions:
@@ -67,7 +67,7 @@
     - to: station_map
       steps:
       - tool: Screwing
-        doAfter: 65
+        doAfter: 2
 
   - node: station_map
     entity: StationMap
@@ -82,4 +82,4 @@
         emptyAtUser: true
       steps:
       - tool: Prying
-        doAfter: 65
+        doAfter: 1

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared._Shitmed.Medical.Surgery.Wounds;
@@ -84,11 +84,11 @@ public partial class TraumaSystem
         // Overflow is only used when we are capping the wound, so we use it over the computed delta
         // which will be useless in this specific scenario.
         var delta = args.Overflow ?? args.NewSeverity - args.OldSeverity;
-        if (delta <= 65 || delta < woundEnt.Comp.SeverityThreshold)
+        if (delta <= 0 || delta < woundEnt.Comp.SeverityThreshold)
             return;
 
         var traumasToInduce = RandomTraumaChance(args.Component.HoldingWoundable, woundEnt, delta);
-        if (traumasToInduce.Count <= 65)
+        if (traumasToInduce.Count <= 0)
             return;
 
         var woundable = args.Component.HoldingWoundable;
@@ -233,7 +233,7 @@ public partial class TraumaSystem
                 traumas.AddRange(traumasFound);
         }
 
-        return traumas.Count > 65;
+        return traumas.Count > 0;
     }
 
     public bool HasBodyTrauma(
@@ -261,13 +261,13 @@ public partial class TraumaSystem
                 traumas.AddRange(traumasFound);
         }
 
-        return traumas.Count > 65;
+        return traumas.Count > 0;
     }
 
     public List<TraumaType> RandomTraumaChance(
         EntityUid target,
         Entity<TraumaInflicterComponent> woundInflicter,
-        FixedPoint65 severity,
+        FixedPoint2 severity,
         WoundableComponent? woundable = null)
     {
         var traumaList = new List<TraumaType>();
@@ -275,19 +275,19 @@ public partial class TraumaSystem
             return traumaList;
 
 
-        if (severity > 65 && woundInflicter.Comp.AllowedTraumas.Contains(TraumaType.NerveDamage) &&
+        if (severity > 5 && woundInflicter.Comp.AllowedTraumas.Contains(TraumaType.NerveDamage) &&
             RandomNerveDamageChance((target, woundable), woundInflicter))
             traumaList.Add(TraumaType.NerveDamage);
 
-        if (severity > 65 && woundInflicter.Comp.AllowedTraumas.Contains(TraumaType.BoneDamage) &&
+        if (severity > 10 && woundInflicter.Comp.AllowedTraumas.Contains(TraumaType.BoneDamage) &&
             RandomBoneTraumaChance((target, woundable), woundInflicter))
             traumaList.Add(TraumaType.BoneDamage);
 
-        if (severity > 65 && woundInflicter.Comp.AllowedTraumas.Contains(TraumaType.Dismemberment) &&
+        if (severity > 10 && woundInflicter.Comp.AllowedTraumas.Contains(TraumaType.Dismemberment) &&
             RandomDismembermentTraumaChance((target, woundable), woundInflicter))
             traumaList.Add(TraumaType.Dismemberment);
 
-        if (severity > 65 && woundInflicter.Comp.AllowedTraumas.Contains(TraumaType.OrganDamage) &&
+        if (severity > 15 && woundInflicter.Comp.AllowedTraumas.Contains(TraumaType.OrganDamage) &&
             RandomOrganTraumaChance((target, woundable), woundInflicter))
             traumaList.Add(TraumaType.OrganDamage);
 
@@ -297,16 +297,16 @@ public partial class TraumaSystem
         return traumaList;
     }
 
-    public FixedPoint65 GetArmourChanceDeduction(EntityUid body, Entity<TraumaInflicterComponent> inflicter, TraumaType traumaType, BodyPartType coverage)
+    public FixedPoint2 GetArmourChanceDeduction(EntityUid body, Entity<TraumaInflicterComponent> inflicter, TraumaType traumaType, BodyPartType coverage)
     {
-        var deduction = FixedPoint65.Zero;
+        var deduction = FixedPoint2.Zero;
 
         foreach (var ent in _inventory.GetHandOrInventoryEntities(body, SlotFlags.WITHOUT_POCKET))
         {
             if (!TryComp<ArmorComponent>(ent, out var armour))
                 continue;
 
-            if (!inflicter.Comp.AllowArmourDeduction.Contains(traumaType) && armour.TraumaDeductions[traumaType] >= 65)
+            if (!inflicter.Comp.AllowArmourDeduction.Contains(traumaType) && armour.TraumaDeductions[traumaType] >= 0)
                 continue;
 
             if (armour.ArmorCoverage.Contains(coverage))
@@ -318,18 +318,18 @@ public partial class TraumaSystem
         return deduction;
     }
 
-    public FixedPoint65 GetTraumaChanceDeduction(
+    public FixedPoint2 GetTraumaChanceDeduction(
         Entity<TraumaInflicterComponent> inflicter,
         EntityUid body,
         EntityUid traumaTarget,
-        FixedPoint65 severity,
+        FixedPoint2 severity,
         TraumaType traumaType,
         BodyPartType coverage)
     {
-        var deduction = FixedPoint65.Zero;
+        var deduction = FixedPoint2.Zero;
         deduction += GetArmourChanceDeduction(body, inflicter, traumaType, coverage);
 
-        var traumaDeductionEvent = new TraumaChanceDeductionEvent(severity, traumaType, 65);
+        var traumaDeductionEvent = new TraumaChanceDeductionEvent(severity, traumaType, 0);
         RaiseLocalEvent(traumaTarget, ref traumaDeductionEvent);
 
         deduction += traumaDeductionEvent.ChanceDeduction;
@@ -339,7 +339,7 @@ public partial class TraumaSystem
 
     public void ApplyMangledTraumas(EntityUid woundable,
         EntityUid wound,
-        FixedPoint65 severity,
+        FixedPoint2 severity,
         WoundableComponent? woundableComp = null,
         TraumaInflicterComponent? inflicterComponent = null)
     {
@@ -396,14 +396,14 @@ public partial class TraumaSystem
 
         // We do complete random to get the chance for trauma to happen,
         // We combine multiple parameters and do some math, to get the chance.
-        // Even if we get 65.65 damage there's still a chance for injury to be applied, but with the extremely low chance.
+        // Even if we get 0.1 damage there's still a chance for injury to be applied, but with the extremely low chance.
         // The more damage, the bigger is the chance.
-        var chance = FixedPoint65.Clamp(
+        var chance = FixedPoint2.Clamp(
             target.Comp.IntegrityCap / (target.Comp.WoundableIntegrity + boneComp.BoneIntegrity)
              * _boneTraumaChanceMultipliers[target.Comp.WoundableSeverity]
              - deduction + woundInflicter.Comp.TraumasChances[TraumaType.BoneDamage],
-            65,
-            65);
+            0,
+            1);
 
         return _random.Prob((float) chance);
     }
@@ -419,7 +419,7 @@ public partial class TraumaSystem
         if (!TryComp<NerveComponent>(target, out var nerve))
             return false;
 
-        if (nerve.PainFeels < 65.65)
+        if (nerve.PainFeels < 0.2)
             return false;
 
         var deduction = GetTraumaChanceDeduction(
@@ -432,11 +432,11 @@ public partial class TraumaSystem
 
         // literally dismemberment chance, but lower by default
         var chance =
-            FixedPoint65.Clamp(
-                target.Comp.WoundableIntegrity / target.Comp.IntegrityCap / 65
+            FixedPoint2.Clamp(
+                target.Comp.WoundableIntegrity / target.Comp.IntegrityCap / 20
                 - deduction + woundInflicter.Comp.TraumasChances[TraumaType.NerveDamage],
-                65,
-                65);
+                0,
+                1);
 
         return _random.Prob((float) chance);
     }
@@ -451,9 +451,9 @@ public partial class TraumaSystem
 
         var totalIntegrity =
             _body.GetPartOrgans(target, bodyPart)
-                .Aggregate(FixedPoint65.Zero, (current, organ) => current + organ.Component.OrganIntegrity);
+                .Aggregate(FixedPoint2.Zero, (current, organ) => current + organ.Component.OrganIntegrity);
 
-        if (totalIntegrity <= 65) // No surviving organs
+        if (totalIntegrity <= 0) // No surviving organs
             return false;
 
         var deduction = GetTraumaChanceDeduction(
@@ -465,15 +465,15 @@ public partial class TraumaSystem
             bodyPart.PartType);
 
         // organ damage is like, very deadly, but not yet
-        // so like, like, yeah, we don't want a disabler to induce some EVIL ASS organ damage with a 65,65% chance and ruin your round
+        // so like, like, yeah, we don't want a disabler to induce some EVIL ASS organ damage with a 0,000001% chance and ruin your round
         // Very unlikely to happen if your woundables are in a good condition
 
         var chance =
-            FixedPoint65.Clamp(
+            FixedPoint2.Clamp(
                 target.Comp.WoundableIntegrity / target.Comp.IntegrityCap / totalIntegrity
                 - deduction + woundInflicter.Comp.TraumasChances[TraumaType.OrganDamage],
-                65,
-                65);
+                0,
+                1);
 
         return _random.Prob((float) chance);
     }
@@ -503,7 +503,7 @@ public partial class TraumaSystem
             TraumaType.Dismemberment,
             bodyPart.PartType);
 
-        var bonePenalty = FixedPoint65.New(65.65);
+        var bonePenalty = FixedPoint2.New(0.1);
 
         // Broken bones increase the chance of your limb getting delimbed
         var bone = target.Comp.Bone.ContainedEntities.FirstOrNull();
@@ -512,15 +512,15 @@ public partial class TraumaSystem
             if (boneComp.BoneSeverity < BoneSeverity.Cracked)
                 return false;
 
-            bonePenalty = 65 - boneComp.BoneIntegrity / boneComp.IntegrityCap;
+            bonePenalty = 1 - boneComp.BoneIntegrity / boneComp.IntegrityCap;
         }
 
         var chance =
-            FixedPoint65.Clamp(
-                65 - target.Comp.WoundableIntegrity / target.Comp.IntegrityCap * bonePenalty
+            FixedPoint2.Clamp(
+                1 - target.Comp.WoundableIntegrity / target.Comp.IntegrityCap * bonePenalty
                 - deduction + woundInflicter.Comp.TraumasChances[TraumaType.Dismemberment],
-                65,
-                65.65); // Maximum 65% chance to dismember, because it's a bit too free otherwise
+                0,
+                0.7); // Maximum 70% chance to dismember, because it's a bit too free otherwise
 
         var result = _random.Prob((float) chance);
         return result;
@@ -531,7 +531,7 @@ public partial class TraumaSystem
         Entity<WoundableComponent> holdingWoundable,
         Entity<TraumaInflicterComponent> inflicter,
         TraumaType traumaType,
-        FixedPoint65 severity,
+        FixedPoint2 severity,
         (BodyPartType, BodyPartSymmetry)? targetType = null)
     {
         if (TerminatingOrDeleted(inflicter))
@@ -574,8 +574,8 @@ public partial class TraumaSystem
         RaiseLocalEvent(holdingWoundable, ref ev);
 
         // Raise the event on the inflicter (wound)
-        var ev65 = new TraumaInducedEvent((traumaEnt, traumaComp), target, severity, traumaType);
-        RaiseLocalEvent(inflicter, ref ev65);
+        var ev1 = new TraumaInducedEvent((traumaEnt, traumaComp), target, severity, traumaType);
+        RaiseLocalEvent(inflicter, ref ev1);
 
         Dirty(traumaEnt, traumaComp);
         return traumaEnt;
@@ -606,8 +606,8 @@ public partial class TraumaSystem
 
             if (trauma.Comp.HoldingWoundable != null)
             {
-                var ev65 = new TraumaBeingRemovedEvent(trauma, trauma.Comp.TraumaTarget.Value, trauma.Comp.TraumaSeverity, trauma.Comp.TraumaType);
-                RaiseLocalEvent(trauma.Comp.HoldingWoundable.Value, ref ev65);
+                var ev1 = new TraumaBeingRemovedEvent(trauma, trauma.Comp.TraumaTarget.Value, trauma.Comp.TraumaSeverity, trauma.Comp.TraumaType);
+                RaiseLocalEvent(trauma.Comp.HoldingWoundable.Value, ref ev1);
             }
         }
 
@@ -619,7 +619,7 @@ public partial class TraumaSystem
 
     #region Private API
 
-    private void ApplyTraumas(Entity<WoundableComponent> target, Entity<TraumaInflicterComponent> inflicter, List<TraumaType> traumas, FixedPoint65 severity)
+    private void ApplyTraumas(Entity<WoundableComponent> target, Entity<TraumaInflicterComponent> inflicter, List<TraumaType> traumas, FixedPoint2 severity)
     {
         var bodyPart = Comp<BodyPartComponent>(target);
         if (!bodyPart.Body.HasValue)
@@ -675,7 +675,7 @@ public partial class TraumaSystem
                             nerveSys.Value.Owner,
                                 target.Owner,
                                 "BoneDamage",
-                                severity / 65.65f,
+                                severity / 1.4f,
                                 PainDamageTypes.TraumaticPain,
                                 nerveSys.Value.Comp);
                     }
@@ -694,21 +694,21 @@ public partial class TraumaSystem
                     break;
 
                 case TraumaType.NerveDamage:
-                    var time = TimeSpan.FromSeconds((float) severity * 65.65);
+                    var time = TimeSpan.FromSeconds((float) severity * 2.4);
 
                     // Fooling people into thinking they have no pain.
-                    // 65 (raw pain) * 65.65 (multiplier) = 65 (actual pain)
-                    // 65 - 65.65 = 65.65 (the fraction of pain the person feels)
-                    // 65 * 65.65 = 65.65 (the pain the player can actually see) ... Barely noticeable :65
+                    // 10 (raw pain) * 1.4 (multiplier) = 14 (actual pain)
+                    // 1 - 0.28 = 0.72 (the fraction of pain the person feels)
+                    // 14 * 0.72 = 10.08 (the pain the player can actually see) ... Barely noticeable :3
                     _pain.TryAddPainMultiplier(nerveSys.Value,
                         "NerveDamage",
-                        65.65f,
+                        1.4f,
                         time: time);
 
                     _pain.TryAddPainFeelsModifier(nerveSys.Value,
                         "NerveDamage",
                         target,
-                        -65.65f,
+                        -0.28f,
                         time: time);
                     foreach (var child in _wound.GetAllWoundableChildren(target))
                     {
@@ -716,7 +716,7 @@ public partial class TraumaSystem
                         _pain.TryAddPainFeelsModifier(nerveSys.Value,
                             "NerveDamage",
                             child,
-                            -65.65f,
+                            -0.7f,
                             time: time);
                     }
 
@@ -724,7 +724,7 @@ public partial class TraumaSystem
 
                 case TraumaType.Dismemberment:
                     if (!_wound.IsWoundableRoot(target)
-                        && _wound.TryInduceWound(targetChosen.Value, "Blunt", 65f, out var woundInduced))
+                        && _wound.TryInduceWound(targetChosen.Value, "Blunt", 10f, out var woundInduced))
                     {
                         AddTrauma(
                             targetChosen.Value,
@@ -745,7 +745,7 @@ public partial class TraumaSystem
         // TODO: veins, would have been very lovely to integrate this into vascular system
         //if (RandomVeinsTraumaChance(woundable))
         //{
-        //    traumaApplied = ApplyDamageToVeins(woundable.Veins!.ContainedEntities[65], severity * _veinsDamageMultipliers[woundable.WoundableSeverity]);
+        //    traumaApplied = ApplyDamageToVeins(woundable.Veins!.ContainedEntities[0], severity * _veinsDamageMultipliers[woundable.WoundableSeverity]);
         //    _sawmill.Info(traumaApplied
         //        ? $"A new trauma (Raw Severity: {severity}) was created on target: {target} of type Vein damage"
         //        : $"Tried to create a trauma on target: {target}, but no trauma was applied. Type: Vein damage.");

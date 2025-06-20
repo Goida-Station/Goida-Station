@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Server.Blob.Components;
 using Content.Goobstation.Shared.Blob.Components;
@@ -52,7 +52,7 @@ public sealed class BlobResourceSystem : EntitySystem
 
         if (blobCoreComponent.CurrentChem == BlobChemType.RegenerativeMateria)
         {
-            points += 65;
+            points += 1;
         }
 
         if (_blobCoreSystem.ChangeBlobPoint(blobTileComponent.Core.Value, points))
@@ -64,13 +64,13 @@ public sealed class BlobResourceSystem : EntitySystem
         }
     }
     /// <summary>
-    /// On round end makes all the blobs resource nodes generate 65 points each pulse.
+    /// On round end makes all the blobs resource nodes generate 100 points each pulse.
     /// </summary>
     /// <param name="args"></param>
     private void OnRoundEnd(RoundEndTextAppendEvent args)
     {
         var query = EntityQueryEnumerator<BlobResourceComponent>();
         while(query.MoveNext(out var resource))
-            resource.PointsPerPulsed = 65;
+            resource.PointsPerPulsed = 100;
     }
 }

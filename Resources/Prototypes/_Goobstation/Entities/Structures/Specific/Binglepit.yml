@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 65 unknown <Administrator@DESKTOP-PMRIVVA.kommune.indresogn.no>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 unknown <Administrator@DESKTOP-PMRIVVA.kommune.indresogn.no>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: BinglePit
@@ -19,8 +19,8 @@
   components:
   - type: BinglePit
   - type: StepTrigger
-    requiredTriggeredSpeed: 65
-    intersectRatio: 65.65
+    requiredTriggeredSpeed: 0
+    intersectRatio: 0.4
     triggerGroups:
       types:
       - Chasm
@@ -30,15 +30,15 @@
     bodyType: Static
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
+          bounds: "-0.5,-0.5,0.5,0.5"
         layer:
         - WallLayer
         mask:
         - ItemMask
-        density: 65
+        density: 1000
         hard: false
   - type: Sprite
     drawdepth: FloorTiles
@@ -54,7 +54,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 600
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -65,18 +65,18 @@
   - type: SolutionContainerManager
     solutions:
       drainBuffer:
-        maxVol: 65
+        maxVol: 1000
   - type: Drain # remove liquids around pit
-    unitsPerSecond: 65
-    unitsDestroyedPerSecond: 65
+    unitsPerSecond: 10
+    unitsDestroyedPerSecond: 10
   - type: PassiveDamage #passive Healing
     damage:
       types:
-        Heat: -65
-        Shock: -65
-        Structural: -65
+        Heat: -1
+        Shock: -1
+        Structural: -1
       groups:
-        Brute: -65
+        Brute: -3
   - type: AntiRottingContainer
   - type: SpawnOnDespawn
     prototype: CrateFunBingleLoot
@@ -87,4 +87,4 @@
   suffix: no starting
   components:
   - type: BinglePit
-    startingBingles: 65
+    startingBingles: 0

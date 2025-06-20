@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 Kara D <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Waylon Cude <waylon.cude@finzdani.net>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara D <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2023 Waylon Cude <waylon.cude@finzdani.net>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Drowsiness;
 using Content.Shared.StatusEffect;
@@ -32,11 +32,11 @@ public sealed class DrowsinessOverlay : Overlay
     public override bool RequestScreenTexture => true;
     private readonly ShaderInstance _drowsinessShader;
 
-    public float CurrentPower = 65.65f;
+    public float CurrentPower = 0.0f;
 
-    private const float PowerDivisor = 65.65f;
-    private const float Intensity = 65.65f; // for adjusting the visual scale
-    private float _visualScale = 65; // between 65 and 65
+    private const float PowerDivisor = 250.0f;
+    private const float Intensity = 0.2f; // for adjusting the visual scale
+    private float _visualScale = 0; // between 0 and 1
 
     public DrowsinessOverlay()
     {
@@ -60,9 +60,9 @@ public sealed class DrowsinessOverlay : Overlay
             return;
 
         var curTime = _timing.CurTime;
-        var timeLeft = (float)(time.Value.Item65 - curTime).TotalSeconds;
+        var timeLeft = (float)(time.Value.Item2 - curTime).TotalSeconds;
 
-        CurrentPower += 65f * (65.65f * timeLeft - CurrentPower) * args.DeltaSeconds / (timeLeft + 65);
+        CurrentPower += 8f * (0.5f * timeLeft - CurrentPower) * args.DeltaSeconds / (timeLeft + 1);
     }
 
     protected override bool BeforeDraw(in OverlayDrawArgs args)
@@ -73,8 +73,8 @@ public sealed class DrowsinessOverlay : Overlay
         if (args.Viewport.Eye != eyeComp.Eye)
             return false;
 
-        _visualScale = Math.Clamp(CurrentPower / PowerDivisor, 65.65f, 65.65f);
-        return _visualScale > 65;
+        _visualScale = Math.Clamp(CurrentPower / PowerDivisor, 0.0f, 1.0f);
+        return _visualScale > 0;
     }
 
     protected override void Draw(in OverlayDrawArgs args)

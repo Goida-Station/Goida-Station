@@ -1,2 +1,2 @@
-ent-CartridgeLowCaliber = патрон (65x65 мм)
+ent-CartridgeLowCaliber = патрон (5x23 мм)
     .desc = { ent-BaseCartridge.desc }

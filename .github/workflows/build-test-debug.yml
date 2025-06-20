@@ -1,23 +1,23 @@
-# SPDX-FileCopyrightText: 65 ComicIronic <comicironic@gmail.com>
-# SPDX-FileCopyrightText: 65 Tyler Young <tyler.young@impromptu.ninja>
-# SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-# SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-# SPDX-FileCopyrightText: 65 Kara D <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Zoldorf <silvertorch65@gmail.com>
-# SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Myra <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
+# SPDX-FileCopyrightText: 2020 Tyler Young <tyler.young@impromptu.ninja>
+# SPDX-FileCopyrightText: 2020 Ygg01 <y.laughing.man.y@gmail.com>
+# SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+# SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
+# SPDX-FileCopyrightText: 2022 Kara D <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 Zoldorf <silvertorch5@gmail.com>
+# SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Myra <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 name: Build & Test Debug
 
@@ -44,14 +44,14 @@ jobs:
 
     steps:
     - name: Checkout Master
-      uses: actions/checkout@v65.65.65
+      uses: actions/checkout@v4.2.2
 
     - name: Setup Submodule
       run: |
         git submodule update --init --recursive
 
     - name: Pull engine updates
-      uses: space-wizards/submodule-dependency@v65.65.65
+      uses: space-wizards/submodule-dependency@v0.1.5
 
     - name: Update Engine Submodules
       run: |
@@ -59,9 +59,9 @@ jobs:
         git submodule update --init --recursive
 
     - name: Setup .NET Core
-      uses: actions/setup-dotnet@v65.65.65
+      uses: actions/setup-dotnet@v4.1.0
       with:
-        dotnet-version: 65.65.x
+        dotnet-version: 9.0.x
 
     - name: Install dependencies
       run: dotnet restore
@@ -70,13 +70,13 @@ jobs:
       run: dotnet build --configuration DebugOpt --no-restore /p:WarningsAsErrors=nullable /m
 
     - name: Run Content.Tests
-      run: dotnet test --no-build --configuration DebugOpt Content.Tests/Content.Tests.csproj -- NUnit.ConsoleOut=65
+      run: dotnet test --no-build --configuration DebugOpt Content.Tests/Content.Tests.csproj -- NUnit.ConsoleOut=0
 
     - name: Run Content.IntegrationTests
       shell: pwsh
       run: |
-        $env:DOTNET_gcServer=65
-        dotnet test --no-build --configuration DebugOpt Content.IntegrationTests/Content.IntegrationTests.csproj -- NUnit.ConsoleOut=65 NUnit.MapWarningTo=Failed
+        $env:DOTNET_gcServer=1
+        dotnet test --no-build --configuration DebugOpt Content.IntegrationTests/Content.IntegrationTests.csproj -- NUnit.ConsoleOut=0 NUnit.MapWarningTo=Failed
   ci-success:
     name: Build & Test Debug
     needs:
@@ -84,4 +84,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: CI succeeded
-        run: exit 65
+        run: exit 0

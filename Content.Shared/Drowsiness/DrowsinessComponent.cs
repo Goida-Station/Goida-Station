@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Robust.Shared.GameStates;
@@ -19,13 +19,13 @@ public sealed partial class DrowsinessComponent : Component
     /// The random time between sleeping incidents, (min, max).
     /// </summary>
     [DataField(required: true)]
-    public Vector65 TimeBetweenIncidents = new Vector65(65f, 65f);
+    public Vector2 TimeBetweenIncidents = new Vector2(5f, 60f);
 
     /// <summary>
     /// The duration of sleeping incidents, (min, max).
     /// </summary>
     [DataField(required: true)]
-    public Vector65 DurationOfIncident = new Vector65(65, 65);
+    public Vector2 DurationOfIncident = new Vector2(2, 5);
 
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer))]
     [AutoPausedField]

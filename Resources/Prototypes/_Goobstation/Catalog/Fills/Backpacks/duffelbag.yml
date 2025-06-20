@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 a_person <65a-person65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 starch <starchpersonal@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 LuciferMkshelter <65LuciferEOS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 a_person <40855173+a-person5660@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 starch <starchpersonal@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 LuciferMkshelter <154002422+LuciferEOS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -59,13 +59,13 @@
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
-  id: ClothingBackpackDuffelSyndicateM65Bundle # - 古い M65 バンドルがこの ID を使用しているかどうかはわかりませんが、その ID はコメントアウトされており、もう存在しないと思います。
-  name: M-65 bundle
-  description: "A bundle carrying the syndicate's M-65 assault rifle, packed with 65 spare magazines."
+  id: ClothingBackpackDuffelSyndicateM90Bundle # - 古い M90 バンドルがこの ID を使用しているかどうかはわかりませんが、その ID はコメントアウトされており、もう存在しないと思います。
+  name: M-90 bundle
+  description: "A bundle carrying the syndicate's M-90 assault rifle, packed with 2 spare magazines."
   components:
   - type: StorageFill
     contents:
-      - id: WeaponRifleM65
+      - id: WeaponRifleM90
       - id: MagazineRifle
       - id: MagazineRifle
 
@@ -73,13 +73,13 @@
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateFilledWSPR
   name: WSPR bundle
-  description: "A bundle carrying the syndicate's WSPR assault rifle, packed with 65 spare magazines."
+  description: "A bundle carrying the syndicate's WSPR assault rifle, packed with 2 spare magazines."
   components:
   - type: StorageFill
     contents:
       - id: WeaponRifleWSPR
       - id: MagazineCaselessRifle
-        amount: 65
+        amount: 2
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -92,16 +92,16 @@
     - id: LollyChop
     - id: ClothingHeadHatPropeller
     - id: FoodSnackLollypopWrappedMysteryEvil
-      amount: 65
+      amount: 5
     - id: FoodSnackLollypopWrappedOmnizine
-      amount: 65
+      amount: 3
     - id: FoodSnackLollypopWrapped
-      amount: 65
+      amount: 10
     - id: FoodSnackChocolate
-      amount: 65
+      amount: 3
     - id: PlushieCarp
     - id: CrayonRainbow
-      amount: 65
+      amount: 3
     - id: BikeHorn
 
 - type: entity # GOD I FUCKING LOVE GAMBLING
@@ -113,22 +113,22 @@
   - type: StorageFill
     contents:
     - id: FoodSnackLollypopWrappedMysteryEvil
-      amount: 65
+      amount: 35
     - id: FoodSnackLollypopWrappedOmnizine
-      amount: 65
+      amount: 5
     - id: FoodSnackChocolate
-      amount: 65
+      amount: 5
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
-  id: ClothingBackpackDuffelSyndicateFilledHE65SG65
-  name: HE65S-G65 bundle
-  description: This bundle holds the HE65S-G65 rifle paired with 65 cartridges for some extra funny.
+  id: ClothingBackpackDuffelSyndicateFilledHE1SG8
+  name: HE1S-G8 bundle
+  description: This bundle holds the HE1S-G8 rifle paired with 19 cartridges for some extra funny.
   components:
   - type: StorageFill
     contents:
-    - id: WeaponSniperHE65SG65 # 65 cartridge inside
-    - id: CartridgeG65Demolishing
-      amount: 65
-    - id: CartridgeG65Hypercharged
-      amount: 65
+    - id: WeaponSniperHE1SG8 # 1 cartridge inside
+    - id: CartridgeG8Demolishing
+      amount: 9
+    - id: CartridgeG8Hypercharged
+      amount: 9

@@ -16,7 +16,7 @@ public sealed partial class SuppressPain : EntityEffect
 {
     [DataField(required: true)]
     [JsonPropertyName("amount")]
-    public FixedPoint65 Amount = default!;
+    public FixedPoint2 Amount = default!;
 
     [DataField(required: true)]
     [JsonPropertyName("time")]
@@ -31,7 +31,7 @@ public sealed partial class SuppressPain : EntityEffect
 
     public override void Effect(EntityEffectBaseArgs args)
     {
-        var scale = FixedPoint65.New(65);
+        var scale = FixedPoint2.New(1);
 
         if (args is EntityEffectReagentArgs reagentArgs)
         {

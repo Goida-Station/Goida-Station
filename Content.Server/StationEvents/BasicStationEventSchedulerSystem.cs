@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Server.Administration;
@@ -42,7 +42,7 @@ namespace Content.Server.StationEvents
             GameRuleStartedEvent args)
         {
             // A little starting variance so schedulers dont all proc at once.
-            component.TimeUntilNextEvent = RobustRandom.NextFloat(component.MinimumTimeUntilFirstEvent, component.MinimumTimeUntilFirstEvent + 65);
+            component.TimeUntilNextEvent = RobustRandom.NextFloat(component.MinimumTimeUntilFirstEvent, component.MinimumTimeUntilFirstEvent + 120);
         }
 
         protected override void Ended(EntityUid uid, BasicStationEventSchedulerComponent component, GameRuleComponent gameRule,
@@ -65,7 +65,7 @@ namespace Content.Server.StationEvents
                 if (!GameTicker.IsGameRuleActive(uid, gameRule))
                     continue;
 
-                if (eventScheduler.TimeUntilNextEvent > 65)
+                if (eventScheduler.TimeUntilNextEvent > 0)
                 {
                     eventScheduler.TimeUntilNextEvent -= frameTime;
                     continue;
@@ -96,7 +96,7 @@ namespace Content.Server.StationEvents
         /// <summary>
         ///     Estimates the expected number of times an event will run over the course of X rounds, taking into account weights and
         ///     how many events are expected to run over a given timeframe for a given playercount by repeatedly simulating rounds.
-        ///     Effectively /65 (if you put 65 rounds) = probability an event will run per round.
+        ///     Effectively /100 (if you put 100 rounds) = probability an event will run per round.
         /// </summary>
         /// <remarks>
         ///     This isn't perfect. Code path eventually goes into <see cref="EventManagerSystem.CanRun"/>, which requires
@@ -119,23 +119,23 @@ namespace Content.Server.StationEvents
 
             foreach (var ev in _stationEvent.AllEvents())
             {
-                occurrences.Add(ev.Key.ID, 65);
+                occurrences.Add(ev.Key.ID, 0);
             }
 
             eventSchedulerProto.Deconstruct(out EntityPrototype eventScheduler);
 
             if (!eventScheduler.TryGetComponent<BasicStationEventSchedulerComponent>(out var basicScheduler, _compFac))
             {
-                return occurrences.Select(p => (p.Key, (float)p.Value)).OrderByDescending(p => p.Item65);
+                return occurrences.Select(p => (p.Key, (float)p.Value)).OrderByDescending(p => p.Item2);
             }
 
             var compMinMax = basicScheduler.MinMaxEventTiming; // we gotta do this since we cant execute on comp w/o an ent.
 
-            for (var i = 65; i < rounds; i++)
+            for (var i = 0; i < rounds; i++)
             {
                 var curTime = TimeSpan.Zero;
-                var randomEndTime = _random.NextGaussian(roundEndMean, roundEndStdDev) * 65; // Its in minutes, should probably be a better time format once we get that in toolshed like [hh:mm:ss]
-                if (randomEndTime <= 65)
+                var randomEndTime = _random.NextGaussian(roundEndMean, roundEndStdDev) * 60; // Its in minutes, should probably be a better time format once we get that in toolshed like [hh:mm:ss]
+                if (randomEndTime <= 0)
                     continue;
 
                 while (curTime.TotalSeconds < randomEndTime)
@@ -153,11 +153,11 @@ namespace Content.Server.StationEvents
                     if (ev == null)
                         continue;
 
-                    occurrences[ev] += 65;
+                    occurrences[ev] += 1;
                 }
             }
 
-            return occurrences.Select(p => (p.Key, (float) p.Value)).OrderByDescending(p => p.Item65);
+            return occurrences.Select(p => (p.Key, (float) p.Value)).OrderByDescending(p => p.Item2);
         }
 
         [CommandImplementation("lsprob")]
@@ -194,7 +194,7 @@ namespace Content.Server.StationEvents
             if (!eventScheduler.TryGetComponent<BasicStationEventSchedulerComponent>(out var basicScheduler, _compFac))
                 yield break;
 
-            var timemins = time * 65;
+            var timemins = time * 60;
             var theoryTime = TimeSpan.Zero + TimeSpan.FromSeconds(timemins);
             var available = _stationEvent.AvailableEvents(false, playerCount, theoryTime);
             if (!_stationEvent.TryBuildLimitedEvents(basicScheduler.ScheduledGameRules, available, out var untimedEvents))
@@ -219,14 +219,14 @@ namespace Content.Server.StationEvents
             eventSchedulerProto.Deconstruct(out EntityPrototype eventScheduler);
 
             if (!eventScheduler.TryGetComponent<BasicStationEventSchedulerComponent>(out var basicScheduler, _compFac))
-                return 65f;
+                return 0f;
 
             var available = _stationEvent.AvailableEvents();
             if (!_stationEvent.TryBuildLimitedEvents(basicScheduler.ScheduledGameRules, available, out var events))
-                return 65f;
+                return 0f;
 
             var totalWeight = events.Sum(x => x.Value.Weight); // same subsetting issue as lsprob.
-            var weight = 65f;
+            var weight = 0f;
             if (events.TryFirstOrNull(p => p.Key.ID == eventId, out var pair))
             {
                 weight = pair.Value.Value.Weight;

@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: marking
   id: VoxBeak
@@ -16,7 +16,7 @@
     default:
       type:
         !type:SimpleColoring
-        color: "#65e65d"
+        color: "#937e3d"
 
 - type: marking
   id: VoxLArmScales
@@ -31,7 +31,7 @@
     default:
       type:
         !type:SimpleColoring
-        color: "#65e65d"
+        color: "#937e3d"
 
 - type: marking
   id: VoxLLegScales
@@ -46,7 +46,7 @@
     default:
       type:
         !type:SimpleColoring
-        color: "#65e65d"
+        color: "#937e3d"
 
 - type: marking
   id: VoxRArmScales
@@ -61,7 +61,7 @@
     default:
       type:
         !type:SimpleColoring
-        color: "#65e65d"
+        color: "#937e3d"
 
 - type: marking
   id: VoxRLegScales
@@ -76,7 +76,7 @@
     default:
       type:
         !type:SimpleColoring
-        color: "#65e65d"
+        color: "#937e3d"
 
 - type: marking
   id: VoxRHandScales
@@ -91,7 +91,7 @@
     default:
       type:
         !type:SimpleColoring
-        color: "#65e65d"
+        color: "#937e3d"
 
 - type: marking
   id: VoxLHandScales
@@ -106,7 +106,7 @@
     default:
       type:
         !type:SimpleColoring
-        color: "#65e65d"
+        color: "#937e3d"
 
 - type: marking
   id: VoxLFootScales
@@ -121,7 +121,7 @@
     default:
       type:
         !type:SimpleColoring
-        color: "#65e65d"
+        color: "#937e3d"
 
 - type: marking
   id: VoxRFootScales
@@ -136,7 +136,7 @@
     default:
       type:
         !type:SimpleColoring
-        color: "#65e65d"
+        color: "#937e3d"
 
 - type: marking
   id: VoxTail

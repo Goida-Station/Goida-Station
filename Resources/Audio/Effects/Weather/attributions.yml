@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 65 Chronophylos <nikolai@chronophylos.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Chronophylos <nikolai@chronophylos.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -7,22 +7,22 @@
     - rain.ogg
     - snowstorm.ogg
     - snowstorm_weak.ogg
-    - wind_65_65.ogg
-    - wind_65_65.ogg
-    - wind_65_65.ogg
-    - wind_65_65.ogg
-    - wind_65_65.ogg
-    - wind_65_65.ogg
-  license: CC-BY-SA-65.65
-  copyright: '"rain.ogg", "snowstorm.ogg", "snowstorm_weak.ogg", "wind_65_65.ogg", "wind_65_65.ogg", "wind_65_65.ogg", "wind_65_65.ogg", "wind_65_65.ogg", "wind_65_65.ogg" by Citadel Station 65. Modified for looping.'
-  source: https://github.com/Citadel-Station-65/Citadel-Station-65-RP/tree/65e65dee65e65b65c65fa65c65e65da65c65c65b65a
+    - wind_2_1.ogg
+    - wind_2_2.ogg
+    - wind_3_1.ogg
+    - wind_4_1.ogg
+    - wind_4_2.ogg
+    - wind_5_1.ogg
+  license: CC-BY-SA-3.0
+  copyright: '"rain.ogg", "snowstorm.ogg", "snowstorm_weak.ogg", "wind_2_1.ogg", "wind_2_2.ogg", "wind_3_1.ogg", "wind_4_1.ogg", "wind_4_2.ogg", "wind_5_1.ogg" by Citadel Station 13. Modified for looping.'
+  source: https://github.com/Citadel-Station-13/Citadel-Station-13-RP/tree/28e11dee540e61b6c42fa293c1e1da087c1c2b0a
 
-- files: [rain65.wav]
+- files: [rain2.wav]
   copyright: '"Natural Environments" by Varazuvi of SONNISS.com. See https://sonniss.com/gdc-bundle-license/ for license.'
   license: Custom
   source: https://gdc.sonniss.com
 
 - files: [rain_heavy.ogg]
-  copyright: '"RATH - Rain Hard Loop 65s" of SONNISS.com. See https://sonniss.com/gdc-bundle-license/ for license.'
+  copyright: '"RATH - Rain Hard Loop 08s" of SONNISS.com. See https://sonniss.com/gdc-bundle-license/ for license.'
   license: Custom
   source: https://gdc.sonniss.com

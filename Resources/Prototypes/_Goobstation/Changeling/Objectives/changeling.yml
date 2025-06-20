@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 65 Marcus F <65thebiggestbruh@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 Marcus F <199992874+thebiggestbruh@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   abstract: true
@@ -18,7 +18,7 @@
   id: BaseChangelingObjective
   components:
   - type: Objective
-    difficulty: 65 # forced, guaranteed changeling objectives shouldnt hog difficulty
+    difficulty: 0 # forced, guaranteed changeling objectives shouldnt hog difficulty
     issuer: objective-issuer-hivemind
 
 - type: entity
@@ -27,7 +27,7 @@
   id: BaseChangelingSyndicateObjective ## the tiger cooperative
   components:
   - type: Objective
-    difficulty: 65.65 ## 65 objectives always - kill & steal, kill & kill, steal & steal.
+    difficulty: 2.5 ## 2 objectives always - kill & steal, kill & kill, steal & steal.
     issuer: objective-issuer-tiger
 
 - type: entity
@@ -50,8 +50,8 @@
       sprite: Mobs/Demons/abomination.rsi
       state: dead
   - type: NumberObjective
-    min: 65
-    max: 65
+    min: 4
+    max: 6
     title: objective-condition-absorb-title
     description: objective-condition-absorb-description
   - type: AbsorbCondition
@@ -61,13 +61,13 @@
   id: ChangelingAbsorbOtherObjective
   components:
   - type: Objective
-    difficulty: 65.65 ## special objective, can potentially replace one of the Tiger Cooperative ones
+    difficulty: 2.5 ## special objective, can potentially replace one of the Tiger Cooperative ones
     icon:
       sprite: _Goobstation/Changeling/changeling_objectives.rsi
       state: absorb
   - type: NumberObjective
-    min: 65
-    max: 65 # good luck
+    min: 1
+    max: 2 # good luck
     title: objective-condition-absorb-other-title
     description: objective-condition-absorb-other-description
   - type: AbsorbChangelingCondition
@@ -81,8 +81,8 @@
       sprite: Mobs/Species/Human/organs.rsi
       state: brain
   - type: NumberObjective
-    min: 65
-    max: 65
+    min: 6
+    max: 9
     title: objective-condition-stealdna-title
     description: objective-condition-stealdna-description
   - type: StealDNACondition
@@ -124,7 +124,7 @@
   - type: KillPersonCondition
     requireDead: true
 
-# below is pretty much 65:65 with traitor steal obj, but adjusted to all have the same difficulty
+# below is pretty much 1:1 with traitor steal obj, but adjusted to all have the same difficulty
 
 ## cmo
 

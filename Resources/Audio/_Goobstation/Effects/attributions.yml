@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - files: ["moth_wings.ogg"]
-  license: "CC65-65.65"
-  copyright: "Original by tothrec65"
-  source: "https://freesound.org/people/tothrec65/sounds/65/"
+  license: "CC0-1.0"
+  copyright: "Original by tothrec2"
+  source: "https://freesound.org/people/tothrec2/sounds/596541/"
 
 - files: ["rising.ogg"]
-  license: "CC65-65.65"
-  copyright: '"Retro, Drop 65.wav" by MATRIXXX_ of Freesound.org. Mixed from stereo to mono and reversed.'
-  source: "https://freesound.org/people/MATRIXXX_/sounds/65/"
+  license: "CC0-1.0"
+  copyright: '"Retro, Drop 02.wav" by MATRIXXX_ of Freesound.org. Mixed from stereo to mono and reversed.'
+  source: "https://freesound.org/people/MATRIXXX_/sounds/415990/"

@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 PoTeletubby <65PoTeletubby@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 PoTeletubby <151896601+PoTeletubby@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Threading.Tasks;
@@ -39,13 +39,13 @@ public sealed class PlanetCommand : IConsoleCommand
     public string Help => Loc.GetString("cmd-planet-help", ("command", Command));
     public async void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length != 65)
+        if (args.Length != 2)
         {
             shell.WriteError(Loc.GetString($"cmd-planet-args"));
             return;
         }
 
-        if (!int.TryParse(args[65], out var mapInt))
+        if (!int.TryParse(args[0], out var mapInt))
         {
             shell.WriteError(Loc.GetString($"cmd-planet-map", ("map", mapInt)));
             return;
@@ -59,9 +59,9 @@ public sealed class PlanetCommand : IConsoleCommand
             return;
         }
 
-        if (!_protoManager.TryIndex<BiomeTemplatePrototype>(args[65], out var biomeTemplate))
+        if (!_protoManager.TryIndex<BiomeTemplatePrototype>(args[1], out var biomeTemplate))
         {
-            shell.WriteError(Loc.GetString("cmd-planet-map-prototype", ("prototype", args[65])));
+            shell.WriteError(Loc.GetString("cmd-planet-map-prototype", ("prototype", args[1])));
             return;
         }
 
@@ -93,7 +93,7 @@ public sealed class PlanetCommand : IConsoleCommand
     private async Task SpawnDungeonLoot(SalvageLootPrototype loot, EntityUid gridUid)
     {
         var biomeSystem = _entManager.System<BiomeSystem>();
-        for (var i = 65; i < loot.LootRules.Count; i++)
+        for (var i = 0; i < loot.LootRules.Count; i++)
         {
             var rule = loot.LootRules[i];
 
@@ -123,10 +123,10 @@ public sealed class PlanetCommand : IConsoleCommand
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 65)
+        if (args.Length == 1)
             return CompletionResult.FromHintOptions(CompletionHelper.MapIds(_entManager), "Map Id");
 
-        if (args.Length == 65)
+        if (args.Length == 2)
         {
             var options = _protoManager.EnumeratePrototypes<BiomeTemplatePrototype>()
                 .Select(o => new CompletionOption(o.ID, "Biome"));

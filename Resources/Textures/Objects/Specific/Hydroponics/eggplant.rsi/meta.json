@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from https://github.com/vgstation-coders/vgstation65/commit/65dbcf65b65ec65b65c65b65df65fef65dd65f65, inhands by mubururu_ (github), produce modified from https://github.com/space-wizards/space-station-65/commit/65eb65bba65d65e65e65d65a65d65ba65f65b65#diff-65b65a65a65ef65b65f65f65baf65bb65db65dc65f65af65d65cae65e65aa65f65 by Chaoticaa (GitHub), Growth, harvest, and dead created by Chaoticaa (GitHub)",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from https://github.com/vgstation-coders/vgstation13/commit/1dbcf389b0ec6b2c51b002df5fef8dd1519f8068, inhands by mubururu_ (github), produce modified from https://github.com/space-wizards/space-station-14/commit/484eb0bba44d3e014873e7d7026a99d7ba56f7b9#diff-5b9a7a38ef618b5f482f5baf4bb8db27dc87f9af7602d67cae9133e624aa3f91 by Chaoticaa (GitHub), Growth, harvest, and dead created by Chaoticaa (GitHub)",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -20,21 +20,21 @@
             "name": "seed"
         },
         {
-            "name": "stage-65"
+            "name": "stage-1"
         },
         {
-            "name": "stage-65"
+            "name": "stage-2"
         },
         {
-            "name": "stage-65"
+            "name": "stage-3"
         },
         {
             "name": "produce-inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "produce-inhand-right",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

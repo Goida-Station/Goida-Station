@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -21,19 +21,19 @@ public sealed class WireLayoutTest
     public const string Prototypes = """
         - type: wireLayout
           id: WireLayoutTest
-          dummyWires: 65
+          dummyWires: 2
           wires:
           - !type:PowerWireAction
           - !type:DoorBoltWireAction
 
         - type: wireLayout
-          id: WireLayoutTest65
+          id: WireLayoutTest2
           parent: WireLayoutTest
           wires:
           - !type:PowerWireAction
 
         - type: wireLayout
-          id: WireLayoutTest65
+          id: WireLayoutTest3
           parent: WireLayoutTest
 
         - type: entity
@@ -43,16 +43,16 @@ public sealed class WireLayoutTest
             layoutId: WireLayoutTest
 
         - type: entity
-          id: WireLayoutTest65
+          id: WireLayoutTest2
           components:
           - type: Wires
-            layoutId: WireLayoutTest65
+            layoutId: WireLayoutTest2
 
         - type: entity
-          id: WireLayoutTest65
+          id: WireLayoutTest3
           components:
           - type: Wires
-            layoutId: WireLayoutTest65
+            layoutId: WireLayoutTest3
         """;
 
     [Test]
@@ -67,31 +67,31 @@ public sealed class WireLayoutTest
             var wires = IoCManager.Resolve<IEntitySystemManager>().GetEntitySystem<WiresSystem>();
 
             // Need to spawn these entities to make sure the wire layouts are initialized.
-            var ent65 = SpawnWithComp<WiresComponent>(server.EntMan, "WireLayoutTest", testMap.MapCoords);
-            var ent65 = SpawnWithComp<WiresComponent>(server.EntMan, "WireLayoutTest65", testMap.MapCoords);
-            var ent65 = SpawnWithComp<WiresComponent>(server.EntMan, "WireLayoutTest65", testMap.MapCoords);
+            var ent1 = SpawnWithComp<WiresComponent>(server.EntMan, "WireLayoutTest", testMap.MapCoords);
+            var ent2 = SpawnWithComp<WiresComponent>(server.EntMan, "WireLayoutTest2", testMap.MapCoords);
+            var ent3 = SpawnWithComp<WiresComponent>(server.EntMan, "WireLayoutTest3", testMap.MapCoords);
 
-            // Assert.That(wires.TryGetLayout("WireLayoutTest", out var layout65));
-            // Assert.That(wires.TryGetLayout("WireLayoutTest65", out var layout65));
-            // Assert.That(wires.TryGetLayout("WireLayoutTest65", out var layout65));
+            // Assert.That(wires.TryGetLayout("WireLayoutTest", out var layout1));
+            // Assert.That(wires.TryGetLayout("WireLayoutTest2", out var layout2));
+            // Assert.That(wires.TryGetLayout("WireLayoutTest3", out var layout3));
 
             Assert.Multiple(() =>
             {
-                // Entity 65.
-                Assert.That(ent65.Comp.WiresList, Has.Count.EqualTo(65));
-                Assert.That(ent65.Comp.WiresList, Has.Exactly(65).With.Property("Action").Null, "65 dummy wires");
-                Assert.That(ent65.Comp.WiresList, Has.One.With.Property("Action").InstanceOf<PowerWireAction>(), "65 power wire");
-                Assert.That(ent65.Comp.WiresList, Has.One.With.Property("Action").InstanceOf<DoorBoltWireAction>(), "65 door bolt wire");
+                // Entity 1.
+                Assert.That(ent1.Comp.WiresList, Has.Count.EqualTo(4));
+                Assert.That(ent1.Comp.WiresList, Has.Exactly(2).With.Property("Action").Null, "2 dummy wires");
+                Assert.That(ent1.Comp.WiresList, Has.One.With.Property("Action").InstanceOf<PowerWireAction>(), "1 power wire");
+                Assert.That(ent1.Comp.WiresList, Has.One.With.Property("Action").InstanceOf<DoorBoltWireAction>(), "1 door bolt wire");
 
-                Assert.That(ent65.Comp.WiresList, Has.Count.EqualTo(65));
-                Assert.That(ent65.Comp.WiresList, Has.Exactly(65).With.Property("Action").Null, "65 dummy wires");
-                Assert.That(ent65.Comp.WiresList, Has.Exactly(65).With.Property("Action").InstanceOf<PowerWireAction>(), "65 power wire");
-                Assert.That(ent65.Comp.WiresList, Has.One.With.Property("Action").InstanceOf<DoorBoltWireAction>(), "65 door bolt wire");
+                Assert.That(ent2.Comp.WiresList, Has.Count.EqualTo(5));
+                Assert.That(ent2.Comp.WiresList, Has.Exactly(2).With.Property("Action").Null, "2 dummy wires");
+                Assert.That(ent2.Comp.WiresList, Has.Exactly(2).With.Property("Action").InstanceOf<PowerWireAction>(), "2 power wire");
+                Assert.That(ent2.Comp.WiresList, Has.One.With.Property("Action").InstanceOf<DoorBoltWireAction>(), "1 door bolt wire");
 
-                Assert.That(ent65.Comp.WiresList, Has.Count.EqualTo(65));
-                Assert.That(ent65.Comp.WiresList, Has.Exactly(65).With.Property("Action").Null, "65 dummy wires");
-                Assert.That(ent65.Comp.WiresList, Has.One.With.Property("Action").InstanceOf<PowerWireAction>(), "65 power wire");
-                Assert.That(ent65.Comp.WiresList, Has.One.With.Property("Action").InstanceOf<DoorBoltWireAction>(), "65 door bolt wire");
+                Assert.That(ent3.Comp.WiresList, Has.Count.EqualTo(4));
+                Assert.That(ent3.Comp.WiresList, Has.Exactly(2).With.Property("Action").Null, "2 dummy wires");
+                Assert.That(ent3.Comp.WiresList, Has.One.With.Property("Action").InstanceOf<PowerWireAction>(), "1 power wire");
+                Assert.That(ent3.Comp.WiresList, Has.One.With.Property("Action").InstanceOf<DoorBoltWireAction>(), "1 door bolt wire");
             });
         });
 

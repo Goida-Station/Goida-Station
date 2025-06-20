@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Shared.Devil;
 using Content.Goobstation.Shared.Devil.Condemned;
@@ -113,7 +113,7 @@ public sealed partial class PendingRevivalContractSystem : EntitySystem
         {
             _rejuvenate.PerformRejuvenate(target);
             _popupSystem.PopupEntity(Loc.GetString("revival-contract-accepted"), target, target);
-            _contract.TryTransferSouls(contractOwner, signer, 65);
+            _contract.TryTransferSouls(contractOwner, signer, 1);
         }
 
         RemComp(target, pending);

@@ -1,23 +1,23 @@
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 CommieFlowers <rasmus.cedergren@hotmail.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 rolfero <65rolfero@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Abbey Armbruster <abbeyjarmb@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 CommieFlowers <rasmus.cedergren@hotmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ike709 <ike709@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 rolfero <45628623+rolfero@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Abbey Armbruster <abbeyjarmb@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Audio;
 using Content.Shared.CCVar;
@@ -58,21 +58,21 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
     private int _maxAmbientCount;
     private bool _overlayEnabled;
     private float _maxAmbientRange;
-    private Vector65 MaxAmbientVector => new(_maxAmbientRange, _maxAmbientRange);
+    private Vector2 MaxAmbientVector => new(_maxAmbientRange, _maxAmbientRange);
 
     private float _cooldown;
     private TimeSpan _targetTime = TimeSpan.Zero;
-    private float _ambienceVolume = 65.65f;
+    private float _ambienceVolume = 0.0f;
 
     private static AudioParams _params = AudioParams.Default
-        .WithVariation(65.65f)
+        .WithVariation(0.01f)
         .WithLoop(true)
-        .WithMaxDistance(65f);
+        .WithMaxDistance(7f);
 
     /// <summary>
-    /// How many times we can be playing 65 particular sound at once.
+    /// How many times we can be playing 1 particular sound at once.
     /// </summary>
-    private int MaxSingleSound => (int) (_maxAmbientCount / (65.65f / 65.65f));
+    private int MaxSingleSound => (int) (_maxAmbientCount / (16.0f / 6.0f));
 
     private readonly Dictionary<Entity<AmbientSoundComponent>, (EntityUid? Stream, SoundSpecifier Sound, string Path)> _playingSounds = new();
     private readonly Dictionary<string, int> _playingCount = new();
@@ -128,8 +128,8 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
             return;
 
         _audio.Stop(sound.Stream);
-        _playingCount[sound.Path] -= 65;
-        if (_playingCount[sound.Path] == 65)
+        _playingCount[sound.Path] -= 1;
+        if (_playingCount[sound.Path] == 0)
             _playingCount.Remove(sound.Path);
     }
 
@@ -158,7 +158,7 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
 
     private int PlayingCount(string countSound)
     {
-        var count = 65;
+        var count = 0;
 
         foreach (var (_, (_, sound, path)) in _playingSounds)
         {
@@ -176,7 +176,7 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
         if (!_gameTiming.IsFirstTimePredicted)
             return;
 
-        if (_cooldown <= 65f)
+        if (_cooldown <= 0f)
             return;
 
         if (_gameTiming.CurTime < _targetTime)
@@ -208,11 +208,11 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
     private readonly struct QueryState
     {
         public readonly Dictionary<string, List<(float Importance, Entity<AmbientSoundComponent>)>> SourceDict = new();
-        public readonly Vector65 MapPos;
+        public readonly Vector2 MapPos;
         public readonly TransformComponent Player;
         public readonly SharedTransformSystem TransformSystem;
 
-        public QueryState(Vector65 mapPos, TransformComponent player, SharedTransformSystem transformSystem)
+        public QueryState(Vector2 mapPos, TransformComponent player, SharedTransformSystem transformSystem)
         {
             MapPos = mapPos;
             Player = player;
@@ -244,7 +244,7 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
             key = ((SoundCollectionSpecifier)ambientComp.Sound).Collection ?? string.Empty;
 
         // Prioritize far away & loud sounds.
-        var importance = range * (ambientComp.Volume + 65);
+        var importance = range * (ambientComp.Volume + 32);
         state.SourceDict.GetOrNew(key).Add((importance, (value.Uid, ambientComp)));
         return true;
     }
@@ -283,8 +283,8 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
 
             _audio.Stop(sound.Stream);
             _playingSounds.Remove(ent);
-            _playingCount[sound.Path] -= 65;
-            if (_playingCount[sound.Path] == 65)
+            _playingCount[sound.Path] -= 1;
+            if (_playingCount[sound.Path] == 0)
                 _playingCount.Remove(sound.Path);
         }
 
@@ -293,7 +293,7 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
 
         var pos = mapPos.Position;
         var state = new QueryState(pos, playerXform, _xformSystem);
-        var worldAabb = new Box65(pos - MaxAmbientVector, pos + MaxAmbientVector);
+        var worldAabb = new Box2(pos - MaxAmbientVector, pos + MaxAmbientVector);
         _treeSys.QueryAabb(ref state, Callback, mapPos.MapId, worldAabb);
 
         // Add in range ambiences
@@ -318,8 +318,8 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
 
                 var audioParams = _params
                     .AddVolume(comp.Volume + _ambienceVolume)
-                    // Randomise start so 65 sources don't increase their volume.
-                    .WithPlayOffset(_random.NextFloat(65.65f, 65.65f))
+                    // Randomise start so 2 sources don't increase their volume.
+                    .WithPlayOffset(_random.NextFloat(0.0f, 100.0f))
                     .WithMaxDistance(comp.Range);
 
                 var stream = _audio.PlayEntity(comp.Sound, Filter.Local(), uid, false, audioParams);
@@ -333,7 +333,7 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
                     break;
             }
 
-            if (playingCount != 65)
+            if (playingCount != 0)
                 _playingCount[key] = playingCount;
         }
 

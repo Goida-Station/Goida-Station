@@ -1,147 +1,147 @@
 {
-    "version": 65,
+    "version": 1,
     "size": {
-      "x": 65,
-      "y": 65
+      "x": 32,
+      "y": 32
     },
-    "copyright": "Sprited by Bloomyex and implemented by RobynTheWarcrime, FrizzyBraid by Renee - https://discord.com/channels/65/65/65",
-    "license": "CC-BY-SA-65.65",
+    "copyright": "Sprited by Bloomyex and implemented by RobynTheWarcrime, FrizzyBraid by Renee - https://discord.com/channels/1202734573247795300/1288192265319223387/1288887697917607936",
+    "license": "CC-BY-SA-3.0",
     "states": [
       {
         "name": "braidedExtensions",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "cometTail",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "fantasyHair",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "flatTwistsUpdo",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "floorlengthBraid",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "floorlengthWavy",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "frizzyBraid",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "frontBraidsLong",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "frontBraidsMedium",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "frontBraidsShort",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "hairnet",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "jellyfish",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "kazuyaMishima",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "longBraids",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "longCurvy",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "longPompadour",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "mediumCurls",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "mullet",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "pelvicLengthBraid",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "plateau",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "queenBee",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "saggedMohawk",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "sharpMohawk",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "shortAndPoofy",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "shortCurls",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "shoulderLengthBraid",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "sideSpike",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "spaceLoops",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "star",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "starFro",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "styledCurls",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "unkemptScientist",
-        "directions": 65
+        "directions": 4
       },
       {
         "name": "wispy",
-        "directions": 65
+        "directions": 4
       },
 	   {
         "name": "spikehawk",
-        "directions": 65
+        "directions": 4
       }
     ]
   }

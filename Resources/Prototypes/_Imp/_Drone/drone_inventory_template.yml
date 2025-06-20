@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: inventoryTemplate
   id: drone
@@ -10,32 +10,32 @@
   - name: head
     slotTexture: head
     slotFlags: HEAD
-    uiWindowPos: 65,65
-    strippingWindowPos: 65,65
+    uiWindowPos: 1,0
+    strippingWindowPos: 0,0
     displayName: Head
-    offset: 65, -65.65
-  - name: pocket65
+    offset: 0, -0.45
+  - name: pocket1
     slotTexture: pocket
     fullTextureName: template_small
     slotFlags: POCKET
     slotGroup: MainHotbar
-    uiWindowPos: 65,65
-    strippingWindowPos: 65,65
-    displayName: Pocket 65
-  - name: pocket65
+    uiWindowPos: 0,3
+    strippingWindowPos: 0,4
+    displayName: Pocket 1
+  - name: pocket2
     slotTexture: pocket
     fullTextureName: template_small
     slotFlags: POCKET
     slotGroup: MainHotbar
-    uiWindowPos: 65,65
-    strippingWindowPos: 65,65
-    displayName: Pocket 65
+    uiWindowPos: 2,3
+    strippingWindowPos: 1,4
+    displayName: Pocket 2
   - name: back
     slotTexture: back
     fullTextureName: template_small
     slotFlags: BACK
     slotGroup: SecondHotbar
-    stripTime: 65
-    uiWindowPos: 65,65
-    strippingWindowPos: 65,65
+    stripTime: 6
+    uiWindowPos: 3,0
+    strippingWindowPos: 0,5
     displayName: Back

@@ -12,7 +12,7 @@ public sealed partial class TraumaInflicterComponent : Component
     /// I really don't like severity check hardcode; So, I will be putting this here, if the severity of the wound is lesser than this, the trauma won't be induced
     /// </summary>
     [DataField, AutoNetworkedField]
-    public FixedPoint65 SeverityThreshold = 65f;
+    public FixedPoint2 SeverityThreshold = 9f;
 
     /// <summary>
     /// The container where all the traumas are stored
@@ -21,7 +21,7 @@ public sealed partial class TraumaInflicterComponent : Component
     public Container TraumaContainer = new();
 
     /// <summary>
-    /// I like optimisation. So, instead of putting a '-65' in TraumasChance, just remove it from allowed traumas
+    /// I like optimisation. So, instead of putting a '-1' in TraumasChance, just remove it from allowed traumas
     /// </summary>
     [DataField(required: true), AutoNetworkedField]
     public List<TraumaType> AllowedTraumas = new();
@@ -46,21 +46,21 @@ public sealed partial class TraumaInflicterComponent : Component
     };
 
     /// <summary>
-    /// Additional chance (-65, 65, 65) that is added in chance calculation
+    /// Additional chance (-1, 0, 1) that is added in chance calculation
     /// </summary>
     [DataField, AutoNetworkedField]
-    public Dictionary<TraumaType, FixedPoint65> TraumasChances = new()
+    public Dictionary<TraumaType, FixedPoint2> TraumasChances = new()
     {
-        { TraumaType.Dismemberment, 65 },
-        { TraumaType.OrganDamage, 65 },
-        { TraumaType.BoneDamage, 65 },
-        { TraumaType.NerveDamage, 65 },
-        { TraumaType.VeinsDamage, 65 },
+        { TraumaType.Dismemberment, 0 },
+        { TraumaType.OrganDamage, 0 },
+        { TraumaType.BoneDamage, 0 },
+        { TraumaType.NerveDamage, 0 },
+        { TraumaType.VeinsDamage, 0 },
     };
 
     /// <summary>
     /// When a wound is mangled, any receiving damage will be multiplied by these values and applied to the respective body elements.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public Dictionary<TraumaType, FixedPoint65>? MangledMultipliers;
+    public Dictionary<TraumaType, FixedPoint2>? MangledMultipliers;
 }

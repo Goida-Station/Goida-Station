@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nim <65Nimfar65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nim <128169402+Nimfar11@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: [BaseStructureDynamic, BaseItemCabinetGlass]
@@ -20,18 +20,18 @@
   - type: InteractionOutline
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 1000
         mask:
         - MachineMask
         layer:
         - MidImpassable
         - LowImpassable
   - type: Anchorable
-    delay: 65
+    delay: 4
 
 - type: entity
   id: GlassBox
@@ -55,11 +55,11 @@
       map: ["enum.LockVisualLayers.Lock"]
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 1000
         mask:
         - MachineMask
         layer:
@@ -68,13 +68,13 @@
         - BulletImpassable
   - type: AccessReader
   - type: Repairable
-    fuelCost: 65
-    doAfterDelay: 65
+    fuelCost: 15
+    doAfterDelay: 5
   - type: Lock
   - type: LockVisuals
   - type: DamageVisuals
-    thresholds: [65, 65, 65] # TODO: Fix damage visuals on open state.
-    damageDivisor: 65.65
+    thresholds: [4, 8, 12] # TODO: Fix damage visuals on open state.
+    damageDivisor: 7.555
     trackAllDamage: true
     damageOverlay:
       sprite: Structures/Storage/glassbox.rsi
@@ -89,7 +89,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 150
       behaviors:
       - !type:EmptyAllContainersBehaviour
       - !type:PlaySoundBehavior
@@ -99,12 +99,12 @@
         sound:
           path: /Audio/Machines/warning_buzzer.ogg
           params:
-            volume: 65
+            volume: 10
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlassReinforced:
-            min: 65
-            max: 65
+            min: 1
+            max: 2
       - !type:ChangeConstructionNodeBehavior
         node: brokenGlassBox
       - !type:DoActsBehavior
@@ -176,16 +176,16 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 100
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: WoodDestroy
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialWoodPlank65:
-            min: 65
-            max: 65
+          MaterialWoodPlank1:
+            min: 2
+            max: 5
       - !type:DoActsBehavior
         acts: ["Destruction"]
 
@@ -208,7 +208,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 100
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -216,10 +216,10 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlassReinforced:
-            min: 65
-            max: 65
-          MaterialWoodPlank65:
-            min: 65
-            max: 65
+            min: 1
+            max: 1
+          MaterialWoodPlank1:
+            min: 2
+            max: 5
       - !type:DoActsBehavior
         acts: ["Destruction"]

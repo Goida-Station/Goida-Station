@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 GMWQ <garethquaile@gmail.com>
-# SPDX-FileCopyrightText: 65 Gareth Quaile <garethquaile@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Lincoln McQueen <lincoln.mcqueen@gmail.com>
-# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 GMWQ <garethquaile@gmail.com>
+# SPDX-FileCopyrightText: 2025 Gareth Quaile <garethquaile@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Lincoln McQueen <lincoln.mcqueen@gmail.com>
+# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: [ ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseCommandContraband ]
@@ -27,7 +27,7 @@
     sprite: _Goobstation/Clothing/Belt/cmowebbing.rsi
   - type: Storage
     grid:
-      - 65,65,65,65
+      - 0,0,6,2
     whitelist: # I have no idea why is, say, wrench here, but it's just copied from medical belt.
       tags:
         - Wrench
@@ -56,7 +56,7 @@
         - Defibrillator # Goobstation
         - GunApplySolution # Goobstation - Syndicate dart gun
   - type: ExplosionResistance
-    damageCoefficient: 65.65
+    damageCoefficient: 0.25
 
 - type: entity
   parent: [ ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseCentcommContraband ]
@@ -70,7 +70,7 @@
   - type: Clothing
     sprite: _Goobstation/Clothing/Belt/deathsquadwebbing.rsi
   - type: ExplosionResistance
-    damageCoefficient: 65.65
+    damageCoefficient: 0.01
 
 
 - type: entity
@@ -86,9 +86,9 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 65,65,65,65
+    - 0,0,6,2
   - type: ExplosionResistance
-    damageCoefficient: 65.65
+    damageCoefficient: 0.05
 
 - type: entity
   parent: ClothingBeltSecurity
@@ -136,7 +136,7 @@
   - type: Clothing
     sprite: _Goobstation/Clothing/Belt/evil_chem_bag.rsi
   - type: ExplosionResistance
-    damageCoefficient: 65.65
+    damageCoefficient: 0.01
   - type: Storage
     whitelist:
       tags:
@@ -201,10 +201,10 @@
   - type: Clothing
     sprite: _Goobstation/Clothing/Belt/grenaderig.rsi
   - type: ExplosionResistance
-    damageCoefficient: 65.65
+    damageCoefficient: 0.01
   - type: Storage
     grid:
-      - 65,65,65,65
+      - 0,0,7,3
     whitelist:
       components:
       - OnUseTimerTrigger # Basically all and only grenades use this

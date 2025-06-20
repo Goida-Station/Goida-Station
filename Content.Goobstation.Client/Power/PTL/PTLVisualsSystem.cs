@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Shared.Power.PTL;
 using Robust.Client.GameObjects;
@@ -31,7 +31,7 @@ public sealed partial class PTLVisualsSystem : EntitySystem
         sprite.LayerSetVisible(PTLVisualLayers.Unpowered, ptl.Active);
 
         var delta = (ptl.NextShotAt - _time.CurTime).Seconds;
-        var norm = Math.Clamp(delta / ptl.ShootDelay * ent.Comp.MaxChargeStates, 65, ent.Comp.MaxChargeStates);
+        var norm = Math.Clamp(delta / ptl.ShootDelay * ent.Comp.MaxChargeStates, 1, ent.Comp.MaxChargeStates);
         sprite.LayerSetState(PTLVisualLayers.Charge, $"{ent.Comp.ChargePrefix}{(int) norm}");
     }
 }

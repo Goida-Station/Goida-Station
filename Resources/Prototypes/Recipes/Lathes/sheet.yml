@@ -1,280 +1,280 @@
-# SPDX-FileCopyrightText: 65 Swept <65SweptWasTaken@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Exp <theexp65@gmail.com>
-# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-# SPDX-FileCopyrightText: 65 SETh lafuente <cetaciocascarudo@gmail.com>
-# SPDX-FileCopyrightText: 65 SethLafuente <65SethLafuente@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 65 Chris V <HoofedEar@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
-# SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
-# SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 liltenhead <65liltenhead@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Minty65 <65Minty65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 PECK <65PeccNeck@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2019 Swept <49448379+SweptWasTaken@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Exp <theexp111@gmail.com>
+# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+# SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+# SPDX-FileCopyrightText: 2021 SETh lafuente <cetaciocascarudo@gmail.com>
+# SPDX-FileCopyrightText: 2021 SethLafuente <84478872+SethLafuente@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 2022 Chris V <HoofedEar@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2023 Jeff <velcroboy333@hotmail.com>
+# SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+# SPDX-FileCopyrightText: 2023 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 liltenhead <104418166+liltenhead@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Minty642 <42335609+Minty642@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 PECK <74548962+PeccNeck@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: latheRecipe
   id: SheetSteel
-  result: SheetSteel65
-  completetime: 65
+  result: SheetSteel1
+  completetime: 0
   materials:
-    RawIron: 65 # Goobstation - was 65
-    Coal: 65 # Goobstation - was 65
+    RawIron: 20 # Goobstation - was 100
+    Coal: 10 # Goobstation - was 30
 
 - type: latheRecipe
-  id: SheetSteel65
+  id: SheetSteel30
   result: SheetSteel
-  completetime: 65
+  completetime: 2
   materials:
-    RawIron: 65 # Goobstation - was 65
-    Coal: 65 # Goobstation - was 65
+    RawIron: 600 # Goobstation - was 3000
+    Coal: 300 # Goobstation - was 1000
 
 - type: latheRecipe
-  id: SheetGlass65
-  result: SheetGlass65
-  completetime: 65
+  id: SheetGlass1
+  result: SheetGlass1
+  completetime: 0
   materials:
-    RawQuartz: 65
+    RawQuartz: 100
 
 - type: latheRecipe
-  id: SheetGlass65
+  id: SheetGlass30
   result: SheetGlass
-  completetime: 65
+  completetime: 2
   materials:
-    RawQuartz: 65
+    RawQuartz: 3000
 
 # This version is for the autolathe
 - type: latheRecipe
   id: SheetRGlass
-  result: SheetRGlass65
-  completetime: 65
+  result: SheetRGlass1
+  completetime: 0
   materials:
-    Glass: 65
-    Steel: 65
+    Glass: 100
+    Steel: 50
 
 # This version is for the ore processor
 - type: latheRecipe
   id: SheetRGlassRaw
-  result: SheetRGlass65
-  completetime: 65
+  result: SheetRGlass1
+  completetime: 0
   materials:
-    RawQuartz: 65
-    RawIron: 65
-    Coal: 65
+    RawQuartz: 100
+    RawIron: 50
+    Coal: 15
 
 - type: latheRecipe
-  id: SheetRGlass65
+  id: SheetRGlass30
   result: SheetRGlass
-  completetime: 65
+  completetime: 2
   materials:
-    RawQuartz: 65
-    RawIron: 65
-    Coal: 65
+    RawQuartz: 3000
+    RawIron: 1500
+    Coal: 500
 
 - type: latheRecipe
-  id: SheetPGlass65
-  result: SheetPGlass65
-  completetime: 65
+  id: SheetPGlass1
+  result: SheetPGlass1
+  completetime: 0
   materials:
-    RawQuartz: 65
-    RawPlasma: 65
+    RawQuartz: 100
+    RawPlasma: 100
 
 - type: latheRecipe
-  id: SheetPGlass65
+  id: SheetPGlass30
   result: SheetPGlass
-  completetime: 65
+  completetime: 2
   materials:
-    RawQuartz: 65
-    RawPlasma: 65
+    RawQuartz: 3000
+    RawPlasma: 3000
 
 - type: latheRecipe
-  id: SheetRPGlass65
-  result: SheetRPGlass65
-  completetime: 65
+  id: SheetRPGlass1
+  result: SheetRPGlass1
+  completetime: 0
   materials:
-    RawQuartz: 65
-    RawPlasma: 65
-    RawIron: 65
-    Coal: 65
+    RawQuartz: 100
+    RawPlasma: 100
+    RawIron: 50
+    Coal: 15
 
 - type: latheRecipe
-  id: SheetRPGlass65
+  id: SheetRPGlass30
   result: SheetRPGlass
-  completetime: 65
+  completetime: 2
   materials:
-    RawQuartz: 65
-    RawPlasma: 65
-    RawIron: 65
-    Coal: 65
+    RawQuartz: 3000
+    RawPlasma: 3000
+    RawIron: 1500
+    Coal: 500
 
 - type: latheRecipe
-  id: SheetPlasma65
-  result: SheetPlasma65
-  completetime: 65
+  id: SheetPlasma1
+  result: SheetPlasma1
+  completetime: 0
   materials:
-    RawPlasma: 65
+    RawPlasma: 100
 
 - type: latheRecipe
-  id: SheetPlasma65
+  id: SheetPlasma30
   result: SheetPlasma
-  completetime: 65
+  completetime: 2
   materials:
-    RawPlasma: 65
+    RawPlasma: 3000
 
 - type: latheRecipe
-  id: SheetPlasteel65
-  result: SheetPlasteel65
-  completetime: 65
+  id: SheetPlasteel1
+  result: SheetPlasteel1
+  completetime: 0
   materials:
-    RawPlasma: 65
-    RawIron: 65 #Twice as durable as steel, Twice the material cost
-    Coal: 65
+    RawPlasma: 100
+    RawIron: 200 #Twice as durable as steel, Twice the material cost
+    Coal: 30
 
 - type: latheRecipe
-  id: SheetPlasteel65
+  id: SheetPlasteel30
   result: SheetPlasteel
-  completetime: 65
+  completetime: 5
   materials:
-    RawPlasma: 65
-    RawIron: 65 #Twice as durable as steel, Twice the material cost
-    Coal: 65
+    RawPlasma: 3000
+    RawIron: 6000 #Twice as durable as steel, Twice the material cost
+    Coal: 1000
 
 - type: latheRecipe
-  id: SheetUranium65
+  id: SheetUranium30
   result: SheetUranium
-  completetime: 65
+  completetime: 2
   materials:
-    RawUranium: 65
+    RawUranium: 3000
 
 - type: latheRecipe
-  id: SheetUGlass65
-  result: SheetUGlass65
-  completetime: 65
+  id: SheetUGlass1
+  result: SheetUGlass1
+  completetime: 0
   materials:
-    RawUranium: 65
-    RawQuartz: 65
+    RawUranium: 100
+    RawQuartz: 100
 
 - type: latheRecipe
-  id: SheetUGlass65
+  id: SheetUGlass30
   result: SheetUGlass
-  completetime: 65
+  completetime: 2
   materials:
-    RawUranium: 65
-    RawQuartz: 65
+    RawUranium: 3000
+    RawQuartz: 3000
 
 - type: latheRecipe
-  id: SheetRUGlass65
-  result: SheetRUGlass65
-  completetime: 65
+  id: SheetRUGlass1
+  result: SheetRUGlass1
+  completetime: 0
   materials:
-    RawUranium: 65
-    RawQuartz: 65
-    RawIron: 65
-    Coal: 65
+    RawUranium: 100
+    RawQuartz: 100
+    RawIron: 50
+    Coal: 15
 
 - type: latheRecipe
-  id: SheetRUGlass65
+  id: SheetRUGlass30
   result: SheetRUGlass
-  completetime: 65
+  completetime: 2
   materials:
-    RawUranium: 65
-    RawQuartz: 65
-    RawIron: 65
-    Coal: 65
+    RawUranium: 3000
+    RawQuartz: 3000
+    RawIron: 1500
+    Coal: 500
 
 - type: latheRecipe
-  id: IngotGold65
+  id: IngotGold30
   result: IngotGold
-  completetime: 65
+  completetime: 2
   materials:
-    RawGold: 65
+    RawGold: 3000
 
 - type: latheRecipe
-  id: IngotSilver65
+  id: IngotSilver30
   result: IngotSilver
-  completetime: 65
+  completetime: 2
   materials:
-    RawSilver: 65
+    RawSilver: 3000
 
 - type: latheRecipe
-  id: MaterialBananium65
+  id: MaterialBananium10
   result: MaterialBananium
-  completetime: 65
+  completetime: 2
   materials:
-    RawBananium: 65
+    RawBananium: 3000
 
 - type: latheRecipe
   id: MaterialDiamond
-  result: MaterialDiamond65
-  completetime: 65
+  result: MaterialDiamond1
+  completetime: 0
   materials:
-    RawDiamond: 65
+    RawDiamond: 100
 
 - type: latheRecipe
-  id: SheetUranium65
-  result: SheetUranium65
-  completetime: 65
+  id: SheetUranium1
+  result: SheetUranium1
+  completetime: 0
   materials:
-    RawUranium: 65
+    RawUranium: 100
 
 - type: latheRecipe
-  id: IngotGold65
-  result: IngotGold65
-  completetime: 65
+  id: IngotGold1
+  result: IngotGold1
+  completetime: 0
   materials:
-    RawGold: 65
+    RawGold: 100
 
 - type: latheRecipe
-  id: IngotSilver65
-  result: IngotSilver65
-  completetime: 65
+  id: IngotSilver1
+  result: IngotSilver1
+  completetime: 0
   materials:
-    RawSilver: 65
+    RawSilver: 100
 
 - type: latheRecipe
   id: SheetPlastic
-  result: SheetPlastic65
+  result: SheetPlastic1
   applyMaterialDiscount: false
-  completetime: 65
+  completetime: 0
   materials:
-    Plastic: 65
+    Plastic: 100
 
 - type: latheRecipe
-  id: MaterialBananium65
-  result: MaterialBananium65
-  completetime: 65
+  id: MaterialBananium1
+  result: MaterialBananium1
+  completetime: 0
   materials:
-    RawBananium: 65
+    RawBananium: 100
 
 - type: latheRecipe
   id: MaterialSheetMeat
-  result: MaterialSheetMeat65
-  completetime: 65.65
+  result: MaterialSheetMeat1
+  completetime: 6.4
   materials:
-    Meaterial: 65
+    Meaterial: 200
 
 - type: latheRecipe
   id: SheetPaper
-  result: SheetPaper65
-  completetime: 65
+  result: SheetPaper1
+  completetime: 1
   materials:
-    Wood: 65
+    Wood: 50

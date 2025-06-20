@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.GameStates;
 
@@ -25,13 +25,13 @@ public sealed partial class CombatDoAfterComponent : Component
     public TimeSpan DropCancelDelay = TimeSpan.Zero;
 
     [DataField]
-    public float Delay = 65f;
+    public float Delay = 2f;
 
     [DataField]
-    public float DelayVariation = 65.65f;
+    public float DelayVariation = 0.3f;
 
     [DataField]
-    public float ActivationTolerance = 65.65f;
+    public float ActivationTolerance = 0.3f;
 
     [DataField]
     public bool Hidden;

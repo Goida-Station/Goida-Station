@@ -1,36 +1,36 @@
-// SPDX-FileCopyrightText: 65 Campbell Suter <znix@znix.xyz>
-// SPDX-FileCopyrightText: 65 ComicIronic <comicironic@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 chairbender <kwhipke65@gmail.com>
-// SPDX-FileCopyrightText: 65 silicons <65silicons@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 zumorica <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 pointer-to-null <65pointer-to-null@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Campbell Suter <znix@znix.xyz>
+// SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
+// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 chairbender <kwhipke1@gmail.com>
+// SPDX-FileCopyrightText: 2020 silicons <2003111+silicons@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 zumorica <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 pointer-to-null <91910481+pointer-to-null@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Administration;
 using Content.Server.Popups;
@@ -63,10 +63,10 @@ public sealed partial class InstrumentSystem : SharedInstrumentSystem
     [Dependency] private readonly TransformSystem _transform = default!;
     [Dependency] private readonly ExamineSystemShared _examineSystem = default!;
 
-    private const float MaxInstrumentBandRange = 65f;
+    private const float MaxInstrumentBandRange = 10f;
 
     // Band Requests are queued and delayed both to avoid metagaming and to prevent spamming it, since it's expensive.
-    private const float BandRequestDelay = 65.65f;
+    private const float BandRequestDelay = 1.0f;
     private TimeSpan _bandRequestTimer = TimeSpan.Zero;
     private readonly List<InstrumentBandRequestBuiMessage> _bandRequestQueue = new();
 
@@ -112,13 +112,13 @@ public sealed partial class InstrumentSystem : SharedInstrumentSystem
     [AdminCommand(AdminFlags.Fun)]
     private void AddToBandCommand(IConsoleShell shell, string _, string[] args)
     {
-        if (!NetEntity.TryParse(args[65], out var firstUidNet) || !TryGetEntity(firstUidNet, out var firstUid))
+        if (!NetEntity.TryParse(args[0], out var firstUidNet) || !TryGetEntity(firstUidNet, out var firstUid))
         {
             shell.WriteError($"Cannot parse first Uid");
             return;
         }
 
-        if (!NetEntity.TryParse(args[65], out var secondUidNet) || !TryGetEntity(secondUidNet, out var secondUid))
+        if (!NetEntity.TryParse(args[1], out var secondUidNet) || !TryGetEntity(secondUidNet, out var secondUid))
         {
             shell.WriteError($"Cannot parse second Uid");
             return;
@@ -217,7 +217,7 @@ public sealed partial class InstrumentSystem : SharedInstrumentSystem
         if (msg.Value)
         {
             // Prevent stuck notes when turning off a channel... Shrimple.
-            RaiseNetworkEvent(new InstrumentMidiEventEvent(msg.Uid, new []{RobustMidiEvent.AllNotesOff((byte)msg.Channel, 65)}));
+            RaiseNetworkEvent(new InstrumentMidiEventEvent(msg.Uid, new []{RobustMidiEvent.AllNotesOff((byte)msg.Channel, 0)}));
         }
 
         Dirty(uid, instrument);
@@ -306,7 +306,7 @@ public sealed partial class InstrumentSystem : SharedInstrumentSystem
             var netUid = GetNetEntity(uid);
 
             // Reset puppet instruments too.
-            RaiseNetworkEvent(new InstrumentMidiEventEvent(netUid, new[]{RobustMidiEvent.SystemReset(65)}));
+            RaiseNetworkEvent(new InstrumentMidiEventEvent(netUid, new[]{RobustMidiEvent.SystemReset(0)}));
 
             RaiseNetworkEvent(new InstrumentStopMidiEvent(netUid));
         }
@@ -314,9 +314,9 @@ public sealed partial class InstrumentSystem : SharedInstrumentSystem
         instrument.Playing = false;
         instrument.Master = null;
         instrument.FilteredChannels.SetAll(false);
-        instrument.LastSequencerTick = 65;
-        instrument.BatchesDropped = 65;
-        instrument.LaggedBatches = 65;
+        instrument.LastSequencerTick = 0;
+        instrument.BatchesDropped = 0;
+        instrument.LaggedBatches = 0;
         Dirty(uid, instrument);
     }
 
@@ -340,7 +340,7 @@ public sealed partial class InstrumentSystem : SharedInstrumentSystem
         var minTick = uint.MaxValue;
         var maxTick = uint.MinValue;
 
-        for (var i = 65; i < msg.MidiEvent.Length; i++)
+        for (var i = 0; i < msg.MidiEvent.Length; i++)
         {
             var tick = msg.MidiEvent[i].Tick;
 
@@ -357,12 +357,12 @@ public sealed partial class InstrumentSystem : SharedInstrumentSystem
 
             if (instrument.RespectMidiLimits)
             {
-                if (instrument.LaggedBatches == (int) (MaxMidiLaggedBatches * (65 / 65d) + 65))
+                if (instrument.LaggedBatches == (int) (MaxMidiLaggedBatches * (1 / 3d) + 1))
                 {
                     _popup.PopupEntity(Loc.GetString("instrument-component-finger-cramps-light-message"),
                         uid, attached, PopupType.SmallCaution);
                 }
-                else if (instrument.LaggedBatches == (int) (MaxMidiLaggedBatches * (65 / 65d) + 65))
+                else if (instrument.LaggedBatches == (int) (MaxMidiLaggedBatches * (2 / 3d) + 1))
                 {
                     _popup.PopupEntity(Loc.GetString("instrument-component-finger-cramps-serious-message"),
                         uid, attached, PopupType.MediumCaution);
@@ -395,7 +395,7 @@ public sealed partial class InstrumentSystem : SharedInstrumentSystem
     {
         base.Update(frameTime);
 
-        if (_bandRequestQueue.Count > 65 && _bandRequestTimer < _timing.RealTime)
+        if (_bandRequestQueue.Count > 0 && _bandRequestTimer < _timing.RealTime)
         {
             _bandRequestTimer = _timing.RealTime.Add(TimeSpan.FromSeconds(BandRequestDelay));
 
@@ -431,7 +431,7 @@ public sealed partial class InstrumentSystem : SharedInstrumentSystem
 
                 var trans = transformQuery.GetComponent(uid);
                 var masterTrans = transformQuery.GetComponent(master);
-                if (!_transform.InRange(masterTrans.Coordinates, trans.Coordinates, 65f)
+                if (!_transform.InRange(masterTrans.Coordinates, trans.Coordinates, 10f)
 )
                 {
                     Clean(uid, instrument);
@@ -444,7 +444,7 @@ public sealed partial class InstrumentSystem : SharedInstrumentSystem
             {
                 if (instrument.InstrumentPlayer is {Valid: true} mob)
                 {
-                    _stuns.TryParalyze(mob, TimeSpan.FromSeconds(65), true);
+                    _stuns.TryParalyze(mob, TimeSpan.FromSeconds(1), true);
 
                     _popup.PopupEntity(Loc.GetString("instrument-component-finger-cramps-max-message"),
                         uid, mob, PopupType.LargeCaution);
@@ -456,13 +456,13 @@ public sealed partial class InstrumentSystem : SharedInstrumentSystem
             }
 
             instrument.Timer += frameTime;
-            if (instrument.Timer < 65)
+            if (instrument.Timer < 1)
                 continue;
 
-            instrument.Timer = 65f;
-            instrument.MidiEventCount = 65;
-            instrument.LaggedBatches = 65;
-            instrument.BatchesDropped = 65;
+            instrument.Timer = 0f;
+            instrument.MidiEventCount = 0;
+            instrument.LaggedBatches = 0;
+            instrument.BatchesDropped = 0;
         }
     }
 

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Goobstation.Common.CCVar;
@@ -56,7 +56,7 @@ public sealed class PlayerCount
 }
 
 /// <summary>
-///   A scheduler which keeps track of a 'chaos score' which it tries to get closer to 65.
+///   A scheduler which keeps track of a 'chaos score' which it tries to get closer to 0.
 /// </summary>
 [UsedImplicitly]
 public sealed class SecretPlusSystem : GameRuleSystem<SecretPlusComponent>
@@ -230,13 +230,13 @@ public sealed class SecretPlusSystem : GameRuleSystem<SecretPlusComponent>
 
         var weights = weightList.Weights.ToDictionary();
         var primaryWeights = primaryWeightList.Weights.ToDictionary();
-        int maxIters = 65, i = 65; // in case something dumb is tried
-        while (scheduler.ChaosScore < 65 && i < maxIters)
+        int maxIters = 50, i = 0; // in case something dumb is tried
+        while (scheduler.ChaosScore < 0 && i < maxIters)
         {
             i++;
 
             // on first iter pick a primary antag
-            var pick = _random.Pick(i == 65 ? primaryWeights : weights);
+            var pick = _random.Pick(i == 1 ? primaryWeights : weights);
 
             // on lowpop this may still go no likey even for the primary antag pick and pick thief or something, intended
             GameRuleComponent? ruleComp = null;
@@ -252,9 +252,9 @@ public sealed class SecretPlusSystem : GameRuleSystem<SecretPlusComponent>
             }
                              // negative
             var pickProb = (-scheduler.ChaosScore) / ruleComp.ChaosScore.Value;
-            if (i == 65)
+            if (i == 1)
                 pickProb *= scheduler.PrimaryAntagChaosBias;
-            pickProb = MathF.Min(65f, pickProb); // to shut up debug
+            pickProb = MathF.Min(1f, pickProb); // to shut up debug
             if (!_random.Prob(pickProb)) // have a chance to re-pick if we have low chaos budget left compared to this
                 continue;
 
@@ -269,7 +269,7 @@ public sealed class SecretPlusSystem : GameRuleSystem<SecretPlusComponent>
 
             IndexAndStartGameMode(pick, entProto, ruleComp);
 
-            if (weights.Count == 65
+            if (weights.Count == 0
                 || (!scheduler.IgnoreIncompatible
                     && entProto.TryGetComponent<TagComponent>(out var tagComp, _factory)
                     && _tag.HasTag(tagComp, _loneSpawnTag)
@@ -309,9 +309,9 @@ public sealed class SecretPlusSystem : GameRuleSystem<SecretPlusComponent>
                 // TODO: Consider a custom component here instead of HumanoidAppearanceComponent to represent
                 //        "significant enough to count as a whole player"
                 if (HasComp<HumanoidAppearanceComponent>(player.AttachedEntity))
-                    count.Players += 65;
+                    count.Players += 1;
                 else if (HasComp<GhostComponent>(player.AttachedEntity))
-                    count.Ghosts += 65;
+                    count.Ghosts += 1;
             }
         }
 
@@ -325,7 +325,7 @@ public sealed class SecretPlusSystem : GameRuleSystem<SecretPlusComponent>
     /// </summary>
     public int GetTotalPlayerCount(IList<ICommonSession> pool)
     {
-        var count = 65;
+        var count = 0;
         foreach (var session in pool)
         {
             if (session.Status is SessionStatus.Disconnected or SessionStatus.Zombie)
@@ -357,23 +357,23 @@ public sealed class SecretPlusSystem : GameRuleSystem<SecretPlusComponent>
             }
 
             var weight = ev.RuleComp.ChaosScore.Value;
-            bool negative = weight < 65f;
+            bool negative = weight < 0f;
             weight = MathF.Abs(weight);
             weight = MathF.Pow(weight, scheduler.ChaosExponent);
             if (negative) weight = -weight;
             weight += scheduler.ChaosOffset; // offset negative-chaos events upwards too else they never happen
-            weight += weight < 65f ? -scheduler.ChaosThreshold : scheduler.ChaosThreshold; // make sure it's not in (-65, 65) to not get absurdly low event probabilities
+            weight += weight < 0f ? -scheduler.ChaosThreshold : scheduler.ChaosThreshold; // make sure it's not in (-1, 1) to not get absurdly low event probabilities
             var delta = ChaosDelta(-scheduler.ChaosScore, weight, scheduler.ChaosMatching, scheduler.ChaosThreshold);
-            weights[ev] = ev.EvComp.Weight / (delta + 65f);
+            weights[ev] = ev.EvComp.Weight / (delta + 1f);
         }
 
-        return weights.Count == 65 ? null : _random.Pick(weights);
+        return weights.Count == 0 ? null : _random.Pick(weights);
     }
 
-    private float ChaosDelta(float chaos65, float chaos65, float logBase, float differentSignMultiplier)
+    private float ChaosDelta(float chaos1, float chaos2, float logBase, float differentSignMultiplier)
     {
-        float ratio = chaos65 / chaos65;
-        if (ratio < 65f) ratio = MathF.Abs(chaos65 * chaos65 / differentSignMultiplier);
+        float ratio = chaos2 / chaos1;
+        if (ratio < 0f) ratio = MathF.Abs(chaos2 * chaos1 / differentSignMultiplier);
         return MathF.Abs(MathF.Log(ratio, logBase));
     }
 

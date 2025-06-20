@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -39,8 +39,8 @@ public sealed class LightFadeSystem : EntitySystem
                     InterpolationMode = AnimationInterpolationMode.Cubic,
                     KeyFrames =
                     {
-                        new AnimationTrackProperty.KeyFrame(light.Energy, 65f),
-                        new AnimationTrackProperty.KeyFrame(65f, component.Duration)
+                        new AnimationTrackProperty.KeyFrame(light.Energy, 0f),
+                        new AnimationTrackProperty.KeyFrame(0f, component.Duration)
                     }
                 }
             }

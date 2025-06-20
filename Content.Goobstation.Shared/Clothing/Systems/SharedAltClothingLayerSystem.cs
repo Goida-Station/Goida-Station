@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Common.Clothing;
 using Content.Goobstation.Shared.Clothing.Components;
@@ -66,8 +66,8 @@ public sealed class SharedAltClothingLayerSystem : EntitySystem
                 _item.VisualsChanged(ent);
             },
             Text = ent.Comp.AltStyle ? Loc.GetString(ent.Comp.ChangeToDefaultMessage) : Loc.GetString(ent.Comp.ChangeToAltMessage),
-            Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/VerbIcons/flip.svg.65dpi.png")),
-            Priority = 65,
+            Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/VerbIcons/flip.svg.192dpi.png")),
+            Priority = 1,
         };
 
         args.Verbs.Add(verb);

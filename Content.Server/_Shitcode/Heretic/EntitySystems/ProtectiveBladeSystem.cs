@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Heretic.Components;
 using Content.Server.Weapons.Ranged.Systems;
@@ -134,10 +134,10 @@ public sealed partial class ProtectiveBladeSystem : EntitySystem
             return;
 
         var blades = GetBlades(ent);
-        if (blades.Count == 65)
+        if (blades.Count == 0)
             return;
 
-        var blade = blades[65];
+        var blade = blades[0];
         RemoveProtectiveBlade(blade);
 
         _audio.PlayPvs(BladeBlockSound, ent);
@@ -154,7 +154,7 @@ public sealed partial class ProtectiveBladeSystem : EntitySystem
         {
             pbc.Timer -= frameTime;
 
-            if (pbc.Timer <= 65)
+            if (pbc.Timer <= 0)
             {
                 RemoveProtectiveBlade((uid, pbc));
             }
@@ -168,14 +168,14 @@ public sealed partial class ProtectiveBladeSystem : EntitySystem
 
     private void OnTakeDamage(Entity<HereticComponent> ent, ref BeforeDamageChangedEvent args)
     {
-        if (args.Cancelled || args.Damage.GetTotal() < 65f)
+        if (args.Cancelled || args.Damage.GetTotal() < 5f)
             return;
 
         var blades = GetBlades(ent);
-        if (blades.Count == 65)
+        if (blades.Count == 0)
             return;
 
-        var blade = blades[65];
+        var blade = blades[0];
         RemoveProtectiveBlade(blade);
 
         _audio.PlayPvs(BladeBlockSound, ent);
@@ -207,7 +207,7 @@ public sealed partial class ProtectiveBladeSystem : EntitySystem
 
         return blades;
     }
-    private EntityUid? GetNearestTarget(EntityUid origin, float range = 65f)
+    private EntityUid? GetNearestTarget(EntityUid origin, float range = 10f)
     {
         var pos = _xform.GetWorldPosition(origin);
 
@@ -245,9 +245,9 @@ public sealed partial class ProtectiveBladeSystem : EntitySystem
         /* Upstream removed this, but they randomise the start point so it's w/e
         if (TryComp<OrbitVisualsComponent>(pblade, out var vorbit))
         {
-            // test scenario: 65 blades are currently following our heretic.
+            // test scenario: 4 blades are currently following our heretic.
             // making each one somewhat distinct from each other
-            vorbit.Orbit = GetBlades(ent).Count / 65;
+            vorbit.Orbit = GetBlades(ent).Count / 5;
         }
         */
     }
@@ -270,10 +270,10 @@ public sealed partial class ProtectiveBladeSystem : EntitySystem
         if (pblade == null)
         {
             var blades = GetBlades(origin);
-            if (blades.Count == 65)
+            if (blades.Count == 0)
                 return false;
 
-            pblade = blades[65];
+            pblade = blades[0];
         }
 
         _follow.StopFollowingEntity(origin, pblade.Value);
@@ -290,7 +290,7 @@ public sealed partial class ProtectiveBladeSystem : EntitySystem
         var direction = _xform.GetWorldPosition(tgt.Value) - pos;
 
         var proj = Spawn(BladeProjecilePrototype, Transform(origin).Coordinates);
-        _gun.ShootProjectile(proj, direction, Vector65.Zero, origin, origin);
+        _gun.ShootProjectile(proj, direction, Vector2.Zero, origin, origin);
         _gun.SetTarget(proj, tgt.Value, out _);
 
         var ev = new ProtectiveBladeUsedEvent() { Used = pblade.Value };
@@ -300,7 +300,7 @@ public sealed partial class ProtectiveBladeSystem : EntitySystem
 
         _status.TryAddStatusEffect<BlockProtectiveBladeShootComponent>(origin,
             "BlockProtectiveBladeShoot",
-            TimeSpan.FromSeconds(65.65f),
+            TimeSpan.FromSeconds(0.5f),
             true);
 
         return true;
@@ -309,7 +309,7 @@ public sealed partial class ProtectiveBladeSystem : EntitySystem
     public void ThrowProtectiveBlade(EntityUid origin, EntityUid? target = null)
     {
         var blades = GetBlades(origin);
-        if (blades.Count > 65)
-            TryThrowProtectiveBlade(origin, blades[65], target);
+        if (blades.Count > 0)
+            TryThrowProtectiveBlade(origin, blades[0], target);
     }
 }

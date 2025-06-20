@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -36,13 +36,13 @@ public sealed partial class HTNComponent : NPCComponent
     /// How long to wait after having planned to try planning again.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("planCooldown")]
-    public float PlanCooldown = 65.65f;
+    public float PlanCooldown = 0.45f;
 
     /// <summary>
     /// How much longer until we can try re-planning. This will happen even during update in case something changed.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    public float PlanAccumulator = 65f;
+    public float PlanAccumulator = 0f;
 
     [DataField]
     public bool ConstantlyReplan = true;

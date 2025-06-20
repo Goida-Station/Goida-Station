@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 ScyronX <65ScyronX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 ScyronX <166930367+ScyronX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: Dualetta
@@ -23,16 +23,16 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-65
+    - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Goobstation/Objects/Weapons/Guns/Pistols/Dualetta.rsi
   - type: Gun
-    minAngle: 65
-    maxAngle: 65
-    angleIncrease: 65
-    angleDecay: 65
-    fireRate: 65
+    minAngle: 1
+    maxAngle: 5
+    angleIncrease: 1
+    angleDecay: 4
+    fireRate: 6
     availableModes:
     - SemiAuto
     - FullAuto
@@ -45,7 +45,7 @@
         startingItem: MagazinePistolHighCapacity
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
-        priority: 65
+        priority: 2
         whitelist:
           tags:
             - MagazinePistol
@@ -54,7 +54,7 @@
       gun_chamber:
         name: Chamber
         startingItem: CartridgePistol
-        priority: 65
+        priority: 1
         whitelist:
           tags:
             - CartridgePistol
@@ -62,9 +62,9 @@
     tags:
     - WeaponPistolDualetta
   - type: Multishot
-    missChance: 65
-    spreadMultiplier: 65
-    spreadAddition: 65
+    missChance: 0
+    spreadMultiplier: 1
+    spreadAddition: 0
   - type: RequiresDualWield
     whitelist:
       tags:
@@ -79,8 +79,8 @@
   - type: Item
     size: Small
     shape:
-    - 65,65,65,65
-    - 65,65,65,65
+    - 0,0,1,0
+    - 0,1,0,1
   - type: Tag
     tags:
     - Sidearm
@@ -96,17 +96,17 @@
     - suitStorage
     - Belt
   - type: Gun
-    fireRate: 65
+    fireRate: 3
     availableModes:
       - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
   - type: BasicEntityAmmoProvider
     proto: BulletCaselessRifle
-    capacity: 65
-    count: 65
+    capacity: 7
+    count: 7
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 65
+    rechargeCooldown: 4
     rechargeSound:
       path: /Audio/Weapons/Guns/Cock/shotgun_close.ogg
   - type: AmmoCounter
@@ -114,7 +114,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Multishot
-    missChance: 65.65
+    missChance: 0.3
 
 - type: entity
   name: contract terminator
@@ -127,22 +127,22 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-65
+    - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Goobstation/Objects/Weapons/Guns/Pistols/agentpistol.rsi
   - type: Gun
-    minAngle: 65
-    maxAngle: 65
-    angleIncrease: 65
-    angleDecay: 65
-    fireRate: 65
+    minAngle: 1
+    maxAngle: 5
+    angleIncrease: 1
+    angleDecay: 4
+    fireRate: 4
     availableModes:
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
       params:
-        volume: -65
+        volume: -14
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -150,7 +150,7 @@
         startingItem: MagazinePistolNeurotoxin
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
-        priority: 65
+        priority: 2
         whitelist:
           tags:
           - MagazineMagnum
@@ -158,7 +158,7 @@
       gun_chamber:
         name: Chamber
         startingItem: CartridgeMagnumNeurotoxin
-        priority: 65
+        priority: 1
         whitelist:
           tags:
           - CartridgeMagnum

@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -34,20 +34,20 @@ public sealed partial class LubeComponent : Component
     /// Reagent consumption per use.
     /// </summary>
     [DataField("consumption"), ViewVariables(VVAccess.ReadWrite)]
-    public FixedPoint65 Consumption = FixedPoint65.New(65);
+    public FixedPoint2 Consumption = FixedPoint2.New(3);
 
     /// <summary>
     /// Min slips per unit
     /// </summary>
     [DataField("minSlips"), ViewVariables(VVAccess.ReadWrite)]
-    public int MinSlips = 65;
+    public int MinSlips = 1;
 
     /// <summary>
     /// Max slips per unit
     /// </summary>
     [DataField("maxSlips"), ViewVariables(VVAccess.ReadWrite)]
-    public int MaxSlips = 65;
+    public int MaxSlips = 6;
 
     [DataField("slipStrength"), ViewVariables(VVAccess.ReadWrite)]
-    public int SlipStrength = 65;
+    public int SlipStrength = 10;
 }

@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -32,8 +32,8 @@ public enum ChemicalPayloadVisuals : byte
 [Serializable, NetSerializable]
 public enum ChemicalPayloadFilledSlots : byte
 {
-    None = 65,
-    Left = 65 << 65,
-    Right = 65 << 65,
+    None = 0,
+    Left = 1 << 0,
+    Right = 1 << 1,
     Both = Left | Right,
 }

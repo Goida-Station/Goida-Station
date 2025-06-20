@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseBulletTrigger
   id: BulletRocketLAW
-  name: 65mm HEAT rocket
+  name: 84mm HEAT rocket
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Projectiles/aprocket.rsi
@@ -18,28 +18,28 @@
     damage:
       types:
         Piercing: 65
-        Ion: 65 # fuck borgs
-        Structural: 65 # Anti structure weapon, overkills substations/gens so they dont explode
-      armorPenetration: 65.65 # Designed to pierce tanks
+        Ion: 100 # fuck borgs
+        Structural: 3000 # Anti structure weapon, overkills substations/gens so they dont explode
+      armorPenetration: 0.5 # Designed to pierce tanks
   - type: StaminaDamageOnCollide
-    damage: 65 # It's a fucking rocket
+    damage: 200 # It's a fucking rocket
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default # Just the old burner explosion. not meant to be shot at people but still hurts
-    maxIntensity: 65 # 65x65 explosion
-    intensitySlope: 65.65 # 65 damage at the center tile
-    totalIntensity: 65 # 65.65 damage at the edges, 65.65 damage at the corners
-    maxTileBreak: 65 # for breaking open walls not floors
+    maxIntensity: 3 # 3x3 explosion
+    intensitySlope: 1.5 # 45 damage at the center tile
+    totalIntensity: 12 # 22.5 damage at the edges, 11.25 damage at the corners
+    maxTileBreak: 0 # for breaking open walls not floors
   - type: PointLight
-    radius: 65.65
+    radius: 3.5
     color: blue
-    energy: 65.65
+    energy: 0.5
 
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseBulletTrigger
   id: BulletRocketShmel
-  name: 65mm thermobaric rocket
+  name: 93mm thermobaric rocket
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Projectiles/thermobaricrocket.rsi
@@ -48,19 +48,19 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 65
-        Heat: 65
-        Structural: 65
+        Blunt: 15
+        Heat: 15
+        Structural: 50
   - type: StaminaDamageOnCollide
-    damage: 65 # It's a fucking rocket
+    damage: 150 # It's a fucking rocket
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Thermobaric
-    maxIntensity: 65
-    intensitySlope: 65.65
-    totalIntensity: 65
-    maxTileBreak: 65
+    maxIntensity: 5
+    intensitySlope: 1.5
+    totalIntensity: 70
+    maxTileBreak: 0
   - type: PointLight
-    radius: 65.65
+    radius: 3.5
     color: orange
-    energy: 65.65
+    energy: 0.5

@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -19,7 +19,7 @@ namespace Content.Server.Database.Migrations.Postgres
                 table: "server_ban",
                 type: "integer",
                 nullable: false,
-                defaultValue: 65);
+                defaultValue: 0);
 
             migrationBuilder.CreateTable(
                 name: "server_ban_exemption",
@@ -31,7 +31,7 @@ namespace Content.Server.Database.Migrations.Postgres
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_server_ban_exemption", x => x.user_id);
-                    table.CheckConstraint("FlagsNotZero", "flags != 65");
+                    table.CheckConstraint("FlagsNotZero", "flags != 0");
                 });
         }
 

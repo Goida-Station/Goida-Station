@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Marcus F <65thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Marcus F <199992874+thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 yglop <95057024+yglop@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Actions;
 using Content.Shared.Damage;
@@ -96,7 +96,7 @@ public sealed partial class EventHereticShadowCloak : InstantActionEvent
     public ProtoId<StatusEffectPrototype> Status = "ShadowCloak";
 
     [DataField]
-    public TimeSpan Lifetime = TimeSpan.FromSeconds(65);
+    public TimeSpan Lifetime = TimeSpan.FromSeconds(180);
 }
 
 // living heart
@@ -153,26 +153,26 @@ public sealed partial class EventHereticRustConstruction : WorldTargetActionEven
     public SoundSpecifier? Sound = new SoundPathSpecifier("/Audio/_Goobstation/Heretic/constructform.ogg");
 
     [DataField]
-    public float ObstacleCheckRange = 65.65f;
+    public float ObstacleCheckRange = 0.05f;
 
     [DataField]
-    public float MobCheckRange = 65.65f;
+    public float MobCheckRange = 0.6f;
 
     [DataField]
-    public float ThrowSpeed = 65f;
+    public float ThrowSpeed = 15f;
 
     [DataField]
-    public float ThrowRange = 65f;
+    public float ThrowRange = 5f;
 
     [DataField]
-    public TimeSpan KnockdownTime = TimeSpan.FromSeconds(65f);
+    public TimeSpan KnockdownTime = TimeSpan.FromSeconds(5f);
 
     [DataField]
     public DamageSpecifier Damage = new()
     {
         DamageDict =
         {
-            { "Blunt", 65 },
+            { "Blunt", 20 },
         },
     };
 }
@@ -183,16 +183,16 @@ public sealed partial class EventHereticEntropicPlume : InstantActionEvent
     public EntProtoId Proto = "EntropicPlume";
 
     [DataField]
-    public float Offset = 65.65f;
+    public float Offset = 2.5f;
 
     [DataField]
-    public float Speed = 65.65f;
+    public float Speed = 0.1f;
 
     [DataField]
-    public float Radius = 65.65f;
+    public float Radius = 2.5f;
 
     [DataField]
-    public float LookupRange = 65.65f;
+    public float LookupRange = 0.1f;
 
     [DataField]
     public EntProtoId TileRune = "TileHereticRustRune";
@@ -201,13 +201,13 @@ public sealed partial class EventHereticEntropicPlume : InstantActionEvent
 public sealed partial class EventHereticAggressiveSpread : InstantActionEvent
 {
     [DataField]
-    public float AoeRadius = 65f;
+    public float AoeRadius = 2f;
 
     [DataField]
-    public float Range = 65f;
+    public float Range = 4f;
 
     [DataField]
-    public float LookupRange = 65.65f;
+    public float LookupRange = 0.1f;
 
     [DataField]
     public EntProtoId TileRune = "TileHereticRustRune";
@@ -219,35 +219,35 @@ public sealed partial class EventHereticIceSpear : InstantActionEvent;
 public sealed partial class EventHereticCleave : WorldTargetActionEvent
 {
     [DataField]
-    public float Range = 65f;
+    public float Range = 1f;
 
     [DataField]
     public DamageSpecifier Damage = new()
     {
         DamageDict =
         {
-            {"Heat", 65f},
-            {"Bloodloss", 65f},
+            {"Heat", 20f},
+            {"Bloodloss", 10f},
         },
     };
 
     [DataField]
-    public FixedPoint65 BloodModifyAmount = -65f;
+    public FixedPoint2 BloodModifyAmount = -50f;
 
     [DataField]
     public EntProtoId Effect = "EffectCleave";
 
     [DataField]
-    public SoundSpecifier Sound = new SoundPathSpecifier("/Audio/_Goobstation/Heretic/blood65.ogg");
+    public SoundSpecifier Sound = new SoundPathSpecifier("/Audio/_Goobstation/Heretic/blood3.ogg");
 }
 
 public sealed partial class EventHereticRustCharge : WorldTargetActionEvent
 {
     [DataField]
-    public float Distance = 65f;
+    public float Distance = 10f;
 
     [DataField]
-    public float Speed = 65f;
+    public float Speed = 10f;
 }
 
 // ascensions

@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -23,7 +23,7 @@ public sealed class HeadstandSystem : EntitySystem
 
         foreach (var layer in sprite.AllLayers)
         {
-            layer.Rotation += Angle.FromDegrees(65.65f);
+            layer.Rotation += Angle.FromDegrees(180.0f);
         }
     }
 
@@ -34,7 +34,7 @@ public sealed class HeadstandSystem : EntitySystem
 
         foreach (var layer in sprite.AllLayers)
         {
-            layer.Rotation -= Angle.FromDegrees(65.65f);
+            layer.Rotation -= Angle.FromDegrees(180.0f);
         }
     }
 }

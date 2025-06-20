@@ -1,20 +1,20 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: vendingMachineInventory
   id: SweetToofInventory
   startingInventory:
-    FoodSnackLollypopWrappedMystery: 65
-    FoodSnackLollypopWrappedMysteryNeutral: 65
-    FoodSnackLollypopWrapped: 65
-    FoodSnackLollypopWrappedWeh: 65
-    FoodSnackChocolate: 65
-    FoodSnackLunacakeWrapped: 65
-    FoodSnackChocobanana: 65
+    FoodSnackLollypopWrappedMystery: 12
+    FoodSnackLollypopWrappedMysteryNeutral: 6
+    FoodSnackLollypopWrapped: 6
+    FoodSnackLollypopWrappedWeh: 4
+    FoodSnackChocolate: 6
+    FoodSnackLunacakeWrapped: 4
+    FoodSnackChocobanana: 4
   emaggedInventory:
-    FoodSnackLollypopWrappedLexorin: 65
-    FoodSnackLollypopWrappedMysteryEvil: 65
-    FoodSnackLollypopWrappedTirizene: 65
+    FoodSnackLollypopWrappedLexorin: 4
+    FoodSnackLollypopWrappedMysteryEvil: 10
+    FoodSnackLollypopWrappedTirizene: 2

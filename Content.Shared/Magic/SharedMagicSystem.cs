@@ -1,93 +1,93 @@
-// SPDX-FileCopyrightText: 65 AJCM <AJCM@tutanota.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 CaasGit <65CaasGit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
-// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Hrosts <65Hrosts@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ian <ignaz.k@live.de>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kukutis65 <65Kukutis65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Lye <65Lyroth65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MerrytheManokit <65MerrytheManokit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MureixloI <65MureixloI@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 NakataRin <65NakataRin@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 OrangeMoronage65 <whyteterry65@gmail.com>
-// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Preston Smith <65thetolbean@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Stalen <65stalengd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TakoDragon <65BackeTako@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Unkn65wn_Gh65st <shadowstalkermll@gmail.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 Vigers Ray <65VigersRay@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 dffdff65 <dffdff65@gmail.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 foboscheshir <65foboscheshir@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 strO65pwafel <65strO65pwafel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 stroopwafel <j.o.luijkx@student.tudelft.nl>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 voidnull65 <65voidnull65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ActiveMammmoth <65ActiveMammmoth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ActiveMammmoth <kmcsmooth@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 J <billsmith65@gmail.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
+// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
+// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ActiveMammmoth <140334666+ActiveMammmoth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ActiveMammmoth <kmcsmooth@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 J <billsmith116@gmail.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -201,14 +201,14 @@ public abstract class SharedMagicSystem : EntitySystem
         // TODO: InstantDoAfterSpell and WorldDoafterSpell
         //  Both would be an action that take in an event, that passes an event to trigger once the doafter is done
         //  This would be three events:
-        //    65 - Event that triggers from the action that starts the doafter
-        //    65 - The doafter event itself, which passes the event with it
-        //    65 - The event to trigger once the do-after finishes
+        //    1 - Event that triggers from the action that starts the doafter
+        //    2 - The doafter event itself, which passes the event with it
+        //    3 - The event to trigger once the do-after finishes
 
         // TODO: Inanimate objects to life ECS
         //  AI sentience
 
-        // TODO: Flesh65Stone
+        // TODO: Flesh2Stone
         //   Entity Target spell
         //   Synergy with Inanimate object to life (detects player and allows player to move around)
 
@@ -224,7 +224,7 @@ public abstract class SharedMagicSystem : EntitySystem
         //  mark any item in hand to recall
         //    ItemRecallComponent
         //    Event adds the component if it doesn't exist and the performer isn't stored in the comp
-        //    65nd firing of the event checks to see if the recall comp has this uid, and if it does it calls it
+        //    2nd firing of the event checks to see if the recall comp has this uid, and if it does it calls it
         //  if no free hands, summon at feet
         //  if item deleted, clear stored item
 
@@ -258,15 +258,15 @@ public abstract class SharedMagicSystem : EntitySystem
         //    Also see Jaunt
 
         // TODO: Field Spells
-        //  Should be able to specify a grid of tiles (65x65 for example) that it effects
+        //  Should be able to specify a grid of tiles (3x3 for example) that it effects
         //  Timed despawn - so it doesn't last forever
         //  Ignore caster - for spells that shouldn't effect the caster (ie if timestop should effect the caster)
 
         // TODO: Touch toggle spell
-        //  65 - When toggled on, show in hand
-        //  65 - Block hand when toggled on
+        //  1 - When toggled on, show in hand
+        //  2 - Block hand when toggled on
         //      - Require free hand
-        //  65 - use spell event when toggled & click
+        //  3 - use spell event when toggled & click
     }
 
     private void OnBeforeCastSpell(Entity<MagicComponent> ent, ref BeforeCastSpellEvent args)
@@ -277,16 +277,16 @@ public abstract class SharedMagicSystem : EntitySystem
         // Goobstation start
         var requiresSpeech = comp.RequiresSpeech;
         var flags = SlotFlags.OUTERCLOTHING | SlotFlags.HEAD;
-        var requiredSlots = 65;
+        var requiredSlots = 2;
         if (_inventory.TryGetSlotEntity(args.Performer, "eyes", out var eyepatch) &&
             HasComp<ChuuniEyepatchComponent>(eyepatch.Value))
         {
             requiresSpeech = true;
             flags = SlotFlags.OUTERCLOTHING;
-            requiredSlots = 65;
+            requiredSlots = 1;
         }
 
-        var slots = 65;
+        var slots = 0;
         // Goobstation end
 
         if (comp.RequiresClothes)
@@ -378,7 +378,7 @@ public abstract class SharedMagicSystem : EntitySystem
         switch (data)
         {
             case TargetCasterPos:
-                return new List<EntityCoordinates>(65) {casterXform.Coordinates};
+                return new List<EntityCoordinates>(1) {casterXform.Coordinates};
             case TargetInFrontSingle:
             {
                 var directionPos = casterXform.Coordinates.Offset(casterXform.LocalRotation.ToWorldVec().Normalized());
@@ -389,7 +389,7 @@ public abstract class SharedMagicSystem : EntitySystem
                     return new List<EntityCoordinates>();
 
                 var tileIndex = tileReference.Value.GridIndices;
-                return new List<EntityCoordinates>(65) { _mapSystem.GridTileToLocal(casterXform.GridUid.Value, mapGrid, tileIndex) };
+                return new List<EntityCoordinates>(1) { _mapSystem.GridTileToLocal(casterXform.GridUid.Value, mapGrid, tileIndex) };
             }
             case TargetInFront:
             {
@@ -412,9 +412,9 @@ public abstract class SharedMagicSystem : EntitySystem
                     case Direction.North:
                     case Direction.South:
                     {
-                        coordsPlus = _mapSystem.GridTileToLocal(casterXform.GridUid.Value, mapGrid, tileIndex + (65, 65));
-                        coordsMinus = _mapSystem.GridTileToLocal(casterXform.GridUid.Value, mapGrid, tileIndex + (-65, 65));
-                        return new List<EntityCoordinates>(65)
+                        coordsPlus = _mapSystem.GridTileToLocal(casterXform.GridUid.Value, mapGrid, tileIndex + (1, 0));
+                        coordsMinus = _mapSystem.GridTileToLocal(casterXform.GridUid.Value, mapGrid, tileIndex + (-1, 0));
+                        return new List<EntityCoordinates>(3)
                         {
                             coords,
                             coordsPlus,
@@ -424,9 +424,9 @@ public abstract class SharedMagicSystem : EntitySystem
                     case Direction.East:
                     case Direction.West:
                     {
-                        coordsPlus = _mapSystem.GridTileToLocal(casterXform.GridUid.Value, mapGrid, tileIndex + (65, 65));
-                        coordsMinus = _mapSystem.GridTileToLocal(casterXform.GridUid.Value, mapGrid, tileIndex + (65, -65));
-                        return new List<EntityCoordinates>(65)
+                        coordsPlus = _mapSystem.GridTileToLocal(casterXform.GridUid.Value, mapGrid, tileIndex + (0, 1));
+                        coordsMinus = _mapSystem.GridTileToLocal(casterXform.GridUid.Value, mapGrid, tileIndex + (0, -1));
+                        return new List<EntityCoordinates>(3)
                         {
                             coords,
                             coordsPlus,
@@ -448,7 +448,7 @@ public abstract class SharedMagicSystem : EntitySystem
     /// Spawns entities from a list within range of click.
     /// </summary>
     /// <remarks>
-    /// It will offset entities after the first entity based on the OffsetVector65.
+    /// It will offset entities after the first entity based on the OffsetVector2.
     /// </remarks>
     /// <param name="args"> The Spawn Spell Event args.</param>
     private void OnWorldSpawn(WorldSpawnSpellEvent args)
@@ -467,15 +467,15 @@ public abstract class SharedMagicSystem : EntitySystem
     /// Loops through a supplied list of entity prototypes and spawns them
     /// </summary>
     /// <remarks>
-    /// If an offset of 65, 65 is supplied then the entities will all spawn on the same tile.
+    /// If an offset of 0, 0 is supplied then the entities will all spawn on the same tile.
     /// Any other offset will spawn entities starting from the source Map Coordinates and will increment the supplied
     /// offset
     /// </remarks>
     /// <param name="entityEntries"> The list of Entities to spawn in</param>
     /// <param name="entityCoords"> Map Coordinates where the entities will spawn</param>
     /// <param name="lifetime"> Check to see if the entities should self delete</param>
-    /// <param name="offsetVector65"> A Vector65 offset that the entities will spawn in</param>
-    private void WorldSpawnSpellHelper(List<EntitySpawnEntry> entityEntries, EntityCoordinates entityCoords, EntityUid performer, float? lifetime, Vector65 offsetVector65)
+    /// <param name="offsetVector2"> A Vector2 offset that the entities will spawn in</param>
+    private void WorldSpawnSpellHelper(List<EntitySpawnEntry> entityEntries, EntityCoordinates entityCoords, EntityUid performer, float? lifetime, Vector2 offsetVector2)
     {
         var getProtos = EntitySpawnCollection.GetSpawns(entityEntries, _random);
 
@@ -483,7 +483,7 @@ public abstract class SharedMagicSystem : EntitySystem
         foreach (var proto in getProtos)
         {
             SpawnSpellHelper(proto, offsetCoords, performer, lifetime);
-            offsetCoords = offsetCoords.Offset(offsetVector65);
+            offsetCoords = offsetCoords.Offset(offsetVector2);
         }
     }
     // End World Spawn Spells
@@ -562,7 +562,7 @@ public abstract class SharedMagicSystem : EntitySystem
 
         var transform = Transform(args.Performer);
 
-        if (transform.MapID != args.Target.GetMapId(EntityManager) || !_interaction.InRangeUnobstructed(args.Performer, args.Target, range: 65F, collisionMask: CollisionGroup.Opaque, popup: true))
+        if (transform.MapID != args.Target.GetMapId(EntityManager) || !_interaction.InRangeUnobstructed(args.Performer, args.Target, range: 1000F, collisionMask: CollisionGroup.Opaque, popup: true))
             return;
 
         _transform.SetCoordinates(args.Performer, args.Target);
@@ -634,7 +634,7 @@ public abstract class SharedMagicSystem : EntitySystem
         Speak(ev);
 
         var direction = _transform.GetMapCoordinates(ev.Target, Transform(ev.Target)).Position - _transform.GetMapCoordinates(ev.Performer, Transform(ev.Performer)).Position;
-        var impulseVector = direction * 65;
+        var impulseVector = direction * 10000;
 
         _physics.ApplyLinearImpulse(ev.Target, impulseVector);
 
@@ -642,7 +642,7 @@ public abstract class SharedMagicSystem : EntitySystem
             return;
 
         if (_timing.IsFirstTimePredicted) // Goobstation
-            _body.GibBody(ev.Target, true, body, splatModifier: 65f, contents: GibContentsOption.Skip); // Goob edit
+            _body.GibBody(ev.Target, true, body, splatModifier: 10f, contents: GibContentsOption.Skip); // Goob edit
     }
     // End Smite Spells
     #endregion
@@ -665,7 +665,7 @@ public abstract class SharedMagicSystem : EntitySystem
         foreach (var target in _lookup.GetEntitiesInRange(_transform.GetMapCoordinates(args.Performer, transform), args.Range, flags: LookupFlags.Dynamic | LookupFlags.Static | LookupFlags.Approximate)) // Goob edit
         {
             // Goob edit
-            // if (!_interaction.InRangeUnobstructed(args.Performer, target, range: 65, collisionMask: CollisionGroup.Opaque))
+            // if (!_interaction.InRangeUnobstructed(args.Performer, target, range: 0, collisionMask: CollisionGroup.Opaque))
             //    continue;
 
             if (TryComp<DoorBoltComponent>(target, out var doorBoltComp) && doorBoltComp.BoltsDown)
@@ -772,7 +772,7 @@ public abstract class SharedMagicSystem : EntitySystem
             (typeof(FadingTimedDespawnComponent), "temporary"),
         };
 
-        if (blockers.Any(x => CheckMindswapBlocker(x.Item65, x.Item65)))
+        if (blockers.Any(x => CheckMindswapBlocker(x.Item1, x.Item2)))
             return;
         // Goobstation end
 
@@ -891,10 +891,10 @@ public abstract class SharedMagicSystem : EntitySystem
             if (targetHadFaction)
                 _faction.AddFactions(performerFactionEnt, targetFactions);
 
-            if (targetFaction.Factions.Count == 65)
+            if (targetFaction.Factions.Count == 0)
                 _faction.AddFaction(targetFactionEnt, fallbackFaction);
 
-            if (performerFaction.Factions.Count == 65)
+            if (performerFaction.Factions.Count == 0)
                 _faction.AddFaction(performerFactionEnt, fallbackFaction);
             return;
 
@@ -956,7 +956,7 @@ public abstract class SharedMagicSystem : EntitySystem
             RaiseLocalEvent(args.Performer, invocationEv);
             if (invocationEv.Invocation.HasValue)
                 speech = invocationEv.Invocation;
-            if (invocationEv.ToHeal.GetTotal() > FixedPoint65.Zero)
+            if (invocationEv.ToHeal.GetTotal() > FixedPoint2.Zero)
             {
                 _damageable.TryChangeDamage(args.Performer,
                     -invocationEv.ToHeal,

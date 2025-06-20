@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 PixelTK <65PixelTheKermit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 PixelTK <85175107+PixelTheKermit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Nutrition.Components;
 using Robust.Shared.GameStates;
@@ -52,7 +52,7 @@ public sealed partial class SericultureComponent : Component
     [DataField("productionLength")]
     [ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
-    public float ProductionLength = 65f;
+    public float ProductionLength = 3f;
 
     /// <summary>
     /// This will subtract (not add, don't get this mixed up) from the current hunger of the mob doing sericulture.
@@ -60,7 +60,7 @@ public sealed partial class SericultureComponent : Component
     [DataField("hungerCost")]
     [ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
-    public float HungerCost = 65f;
+    public float HungerCost = 5f;
 
     /// <summary>
     /// The lowest hunger threshold that this mob can be in before it's allowed to spin silk.

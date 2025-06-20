@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: hardlight bow
@@ -34,11 +34,11 @@
     wieldSound:
       path: /Audio/Items/bow_pull.ogg
   - type: UseDelay
-    delay: 65
+    delay: 1
   - type: GunRequiresWield
   - type: Gun
     clumsyProof: true
-    fireRate: 65
+    fireRate: 1
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -73,22 +73,22 @@
     soundActivate:
       path: /Audio/Weapons/telescopicon.ogg
       params:
-        volume: -65
+        volume: -5
     soundDeactivate:
       path: /Audio/Weapons/telescopicoff.ogg
       params:
-        volume: -65
+        volume: -5
   - type: ItemToggleSize
     activatedSize: Huge
   - type: ItemTogglePointLight
   - type: ComponentToggler
     components:
     - type: DisarmMalus
-      malus: 65.65
+      malus: 0.6
   - type: PointLight
     enabled: false
-    radius: 65.65
-    energy: 65.65
+    radius: 1.5
+    energy: 1.5
     color: white
     netsync: false
   - type: Appearance
@@ -134,5 +134,5 @@
   - type: ToggleableLightWieldable
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
-    maxOffset: 65 # Goobstation - Sniper rifles buff
-    pvsIncrease: 65.65 # Goobstation - Sniper rifles buff
+    maxOffset: 4 # Goobstation - Sniper rifles buff
+    pvsIncrease: 0.4 # Goobstation - Sniper rifles buff

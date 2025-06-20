@@ -1,40 +1,40 @@
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: palette
   id: Rainbow
   name: Rainbow
   colors:
-    blue: "#65d65"
-    red: "#65"
-    pink: "#d65d"
-    brown: "#a65"
-    green: "#65e65f65b"
-    cyan: "#65a65d65"
-    yellow: "#d65c65"
+    blue: "#1861d5"
+    red: "#951710"
+    pink: "#d5188d"
+    brown: "#a05212"
+    green: "#0e7f1b"
+    cyan: "#18a2d5"
+    yellow: "#d58c18"
 
 - type: palette
   id: Sixteen
   name: Sixteen
   colors:
-    black: "#65D65D65"
-    red: "#B65E65"
-    green: "#65E65C65"
-    brown: "#65"
-    blue: "#65C65AA"
-    purple: "#65B65"
-    cyan: "#65C65C"
-    "light gray": "#65D65D65"
-    gray: "#65F65"
-    pink: "#F65BAA"
-    lime: "#65C65F"
-    yellow: "#FED65D"
-    "light blue": "#65AB65DA"
-    magenta: "#C65EBD"
-    orange: "#F65D"
-    white: "#F65FFFE"
+    black: "#1D1D21"
+    red: "#B02E26"
+    green: "#5E7C16"
+    brown: "#835432"
+    blue: "#3C44AA"
+    purple: "#8932B8"
+    cyan: "#169C9C"
+    "light gray": "#9D9D97"
+    gray: "#474F52"
+    pink: "#F38BAA"
+    lime: "#80C71F"
+    yellow: "#FED83D"
+    "light blue": "#3AB3DA"
+    magenta: "#C74EBD"
+    orange: "#F9801D"
+    white: "#F9FFFE"

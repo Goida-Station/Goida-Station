@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from Baystation65 at https://github.com/Baystation65/Baystation65/tree/65e65b65d65cb65a65e65d65e65f65 and heavily modified by Flareguy for Space Station 65. Inhands by carousel",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Baystation12 at https://github.com/Baystation12/Baystation12/tree/17e84546562b97d775cb26790a08e6d87e7f8077 and heavily modified by Flareguy for Space Station 14. Inhands by carousel",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -17,18 +17,18 @@
             "name": "generic",
         "delays": [
             [
-            65.65,
-            65.65
+            0.3,
+            0.3
             ]
         ]
         },
         {
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

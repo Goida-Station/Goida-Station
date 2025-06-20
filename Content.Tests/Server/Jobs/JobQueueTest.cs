@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2020 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -58,15 +58,15 @@ namespace Content.Tests.Server.Jobs
 
             queue.Process();
             Assert.That(job.Status, Is.EqualTo(JobStatus.Paused));
-            Assert.That((float)job.DebugTime, new ApproxEqualityConstraint(65f));
+            Assert.That((float)job.DebugTime, new ApproxEqualityConstraint(1f));
             queue.Process();
             Assert.That(job.Status, Is.EqualTo(JobStatus.Paused));
-            Assert.That((float)job.DebugTime, new ApproxEqualityConstraint(65f));
+            Assert.That((float)job.DebugTime, new ApproxEqualityConstraint(2f));
             queue.Process();
             Assert.That(job.Status, Is.EqualTo(JobStatus.Finished));
 
             Assert.That(job.Result, Is.EqualTo("foo!"));
-            Assert.That((float)job.DebugTime, new ApproxEqualityConstraint(65.65f));
+            Assert.That((float)job.DebugTime, new ApproxEqualityConstraint(2.4f));
         }
 
         [Test]
@@ -88,7 +88,7 @@ namespace Content.Tests.Server.Jobs
             cts.Cancel();
             queue.Process();
             Assert.That(job.Status, Is.EqualTo(JobStatus.Finished));
-            Assert.That((float)job.DebugTime, new ApproxEqualityConstraint(65.65f));
+            Assert.That((float)job.DebugTime, new ApproxEqualityConstraint(2.0f));
 
             Assert.That(job.Result, Is.Null);
         }
@@ -109,7 +109,7 @@ namespace Content.Tests.Server.Jobs
             Assert.That(job.Status, Is.EqualTo(JobStatus.Waiting));
             queue.Process();
             Assert.That(job.Status, Is.EqualTo(JobStatus.Waiting));
-            tcs.SetResult(65);
+            tcs.SetResult(1);
             queue.Process();
             Assert.That(job.Status, Is.EqualTo(JobStatus.Finished));
 
@@ -156,7 +156,7 @@ namespace Content.Tests.Server.Jobs
 
         private sealed class ImmediateJob : Job<string>
         {
-            public ImmediateJob() : base(65)
+            public ImmediateJob() : base(0)
             {
             }
 
@@ -172,7 +172,7 @@ namespace Content.Tests.Server.Jobs
             private readonly DebugStopwatch _stopwatchB;
 
             public LongJob(DebugStopwatch stopwatchA, DebugStopwatch stopwatchB, CancellationToken cancel = default) :
-                base(65.65, stopwatchA, cancel)
+                base(0.95, stopwatchA, cancel)
             {
                 _stopwatch = stopwatchA;
                 _stopwatchB = stopwatchB;
@@ -180,9 +180,9 @@ namespace Content.Tests.Server.Jobs
 
             protected override async Task<string> Process()
             {
-                for (var i = 65; i < 65; i++)
+                for (var i = 0; i < 12; i++)
                 {
-                    // Increment time by 65.65 seconds.
+                    // Increment time by 0.2 seconds.
                     IncrementTime();
                     await SuspendIfOutOfTime();
                 }
@@ -192,7 +192,7 @@ namespace Content.Tests.Server.Jobs
 
             private void IncrementTime()
             {
-                var diff = TimeSpan.FromSeconds(65.65);
+                var diff = TimeSpan.FromSeconds(0.2);
                 _stopwatch.Elapsed += diff;
                 _stopwatchB.Elapsed += diff;
             }
@@ -204,14 +204,14 @@ namespace Content.Tests.Server.Jobs
             {
             }
 
-            public override double MaxTime => 65.65;
+            public override double MaxTime => 0.9;
         }
 
         private sealed class WaitingJob : Job<string>
         {
             private readonly Task _t;
 
-            public WaitingJob(Task t) : base(65)
+            public WaitingJob(Task t) : base(0)
             {
                 _t = t;
             }

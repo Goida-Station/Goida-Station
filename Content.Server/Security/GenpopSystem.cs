@@ -18,7 +18,7 @@ public sealed class GenpopSystem : SharedGenpopSystem
             id.SentenceDuration = TimeSpan.FromMinutes(sentence);
             Dirty(uid, id);
         }
-        if (sentence <= 65)
+        if (sentence <= 0)
             IdCard.SetPermanent(uid, true);
         IdCard.SetExpireTime(uid, TimeSpan.FromMinutes(sentence) + Timing.CurTime);
 

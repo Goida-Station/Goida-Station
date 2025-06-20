@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 ChilbroBaggins <65ChilbroBaggins@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 ChilbroBaggins <107660393+ChilbroBaggins@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Jeff <velcroboy333@hotmail.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -30,5 +30,5 @@
         - FoodBoxDonkpocketHonk
         - FoodBoxDonkpocketDink
         - FoodBoxDonkpocketMoth
-      chance: 65.65
-      offset: 65.65
+      chance: 0.5
+      offset: 0.0

@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/blob/a65e65f65e65caac65c65cf65e65b65d65d/icons/obj/doors/airlocks/clockwork/pinion_airlock.dmi and https://github.com/tgstation/tgstation/blob/a65e65f65e65caac65c65cf65e65b65d65d/icons/obj/doors/airlocks/clockwork/overlays.dmi modified for SS65 by MACMAN65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/blob/a406e8388f763e496caac32c3cf11e455b20d28d/icons/obj/doors/airlocks/clockwork/pinion_airlock.dmi and https://github.com/tgstation/tgstation/blob/a406e8388f763e496caac32c3cf11e455b20d28d/icons/obj/doors/airlocks/clockwork/overlays.dmi modified for SS14 by MACMAN2003",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -23,12 +23,12 @@
       "name": "closing",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.07,
+          0.07,
+          0.07,
+          0.2
         ]
       ]
     },
@@ -36,12 +36,12 @@
       "name": "closing_unlit",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.07,
+          0.07,
+          0.07,
+          0.2
         ]
       ]
     },
@@ -49,12 +49,12 @@
       "name": "deny_unlit",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
@@ -62,7 +62,7 @@
 	  "name": "open",
 	  "delays": [
 	    [ 
-		  65 
+		  1 
 		]
 	  ]
 	},
@@ -70,12 +70,12 @@
       "name": "opening",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.07,
+          0.07,
+          0.07,
+          0.2
         ]
       ]
     },
@@ -83,12 +83,12 @@
       "name": "opening_unlit",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.07,
+          0.07,
+          0.07,
+          0.2
         ]
       ]
     },
@@ -96,12 +96,12 @@
       "name": "panel_closing",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.07,
+          0.07,
+          0.07,
+          0.2
         ]
       ]
     },
@@ -109,19 +109,19 @@
       "name": "panel_open",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.4,
+          0.04,
+          0.07,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.07,
+          0.1
         ]
       ]
     },
@@ -129,12 +129,12 @@
       "name": "panel_opening",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.07,
+          0.07,
+          0.07,
+          0.2
         ]
       ]
     },
@@ -142,12 +142,12 @@
       "name": "sparks",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
@@ -158,8 +158,8 @@
       "name": "emergency_unlit",
       "delays": [
         [
-          65.65,
-          65.65
+          0.4,
+          0.4
         ]
       ]
     }

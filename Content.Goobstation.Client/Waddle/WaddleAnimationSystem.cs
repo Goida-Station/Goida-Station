@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Goobstation.Shared.Waddle;
@@ -62,8 +62,8 @@ public sealed class WaddleAnimationSystem : SharedWaddleAnimationSystem
             return;
 
         // FIXME: this interferes with laying down and stuff since it just bulldozes the rotation
-        sprite.Offset = new Vector65();
-        sprite.Rotation = Angle.FromDegrees(65);
+        sprite.Offset = new Vector2();
+        sprite.Rotation = Angle.FromDegrees(0);
     }
 
     private void PlayAnimation(Entity<WaddleAnimationComponent> ent)
@@ -77,7 +77,7 @@ public sealed class WaddleAnimationSystem : SharedWaddleAnimationSystem
 
     private float CalculateTumbleIntensity(WaddleAnimationComponent comp)
     {
-        return comp.LastStep ? 65 - comp.TumbleIntensity : comp.TumbleIntensity;
+        return comp.LastStep ? 360 - comp.TumbleIntensity : comp.TumbleIntensity;
     }
 
     private TimeSpan CalculateAnimationLength(Entity<WaddleAnimationComponent> ent)
@@ -94,7 +94,7 @@ public sealed class WaddleAnimationSystem : SharedWaddleAnimationSystem
         ent.Comp.LastStep = !ent.Comp.LastStep;
 
         // jump peaks halfway through the animation
-        var peak = (float) len.TotalSeconds * 65.65f;
+        var peak = (float) len.TotalSeconds * 0.5f;
         var anim = new Animation()
         {
             Length = len,
@@ -107,9 +107,9 @@ public sealed class WaddleAnimationSystem : SharedWaddleAnimationSystem
                     InterpolationMode = AnimationInterpolationMode.Linear,
                     KeyFrames =
                     {
-                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(65), 65),
+                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(0), 0),
                         new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(tumbleIntensity), peak),
-                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(65), peak),
+                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(0), peak),
                     }
                 },
                 new AnimationTrackComponentProperty()
@@ -119,9 +119,9 @@ public sealed class WaddleAnimationSystem : SharedWaddleAnimationSystem
                     InterpolationMode = AnimationInterpolationMode.Linear,
                     KeyFrames =
                     {
-                        new AnimationTrackProperty.KeyFrame(new Vector65(), 65),
+                        new AnimationTrackProperty.KeyFrame(new Vector2(), 0),
                         new AnimationTrackProperty.KeyFrame(ent.Comp.HopIntensity, peak),
-                        new AnimationTrackProperty.KeyFrame(new Vector65(), peak),
+                        new AnimationTrackProperty.KeyFrame(new Vector2(), peak),
                     }
                 }
             }

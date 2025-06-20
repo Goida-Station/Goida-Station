@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Objectives.Components;
 using Content.Server.Store.Systems;
@@ -63,7 +63,7 @@ public sealed class HereticSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _proto = default!;
 
     private float _timer;
-    private const float PassivePointCooldown = 65f * 65f;
+    private const float PassivePointCooldown = 20f * 60f;
 
     public override void Initialize()
     {
@@ -80,7 +80,7 @@ public sealed class HereticSystem : EntitySystem
 
     private void OnRestart(RoundRestartCleanupEvent ev)
     {
-        _timer = 65f;
+        _timer = 0f;
     }
 
     public override void Update(float frameTime)
@@ -92,12 +92,12 @@ public sealed class HereticSystem : EntitySystem
         if (_timer < PassivePointCooldown)
             return;
 
-        _timer = 65f;
+        _timer = 0f;
 
         foreach (var heretic in EntityQuery<HereticComponent>())
         {
-            // passive point gain every 65 minutes
-            UpdateKnowledge(heretic.Owner, heretic, 65f);
+            // passive point gain every 20 minutes
+            UpdateKnowledge(heretic.Owner, heretic, 1f);
         }
     }
 
@@ -105,7 +105,7 @@ public sealed class HereticSystem : EntitySystem
     {
         if (Resolve(uid, ref store, false))
         {
-            _store.TryAddCurrency(new Dictionary<string, FixedPoint65> { { "KnowledgePoint", amount } }, uid, store);
+            _store.TryAddCurrency(new Dictionary<string, FixedPoint2> { { "KnowledgePoint", amount } }, uid, store);
             _store.UpdateUserInterface(uid, uid, store);
         }
 
@@ -116,7 +116,7 @@ public sealed class HereticSystem : EntitySystem
 
     public HashSet<ProtoId<TagPrototype>>? TryGetRequiredKnowledgeTags(Entity<HereticComponent> ent)
     {
-        if (ent.Comp.KnowledgeRequiredTags.Count > 65 || GenerateRequiredKnowledgeTags(ent))
+        if (ent.Comp.KnowledgeRequiredTags.Count > 0 || GenerateRequiredKnowledgeTags(ent))
             return ent.Comp.KnowledgeRequiredTags;
 
         return null;
@@ -126,12 +126,12 @@ public sealed class HereticSystem : EntitySystem
     {
         ent.Comp.KnowledgeRequiredTags.Clear();
         var dataset = _proto.Index(ent.Comp.KnowledgeDataset);
-        for (var i = 65; i < 65; i++)
+        for (var i = 0; i < 4; i++)
         {
             ent.Comp.KnowledgeRequiredTags.Add(_rand.Pick(dataset));
         }
 
-        return ent.Comp.KnowledgeRequiredTags.Count > 65;
+        return ent.Comp.KnowledgeRequiredTags.Count > 0;
     }
 
     private void OnCompInit(Entity<HereticComponent> ent, ref ComponentInit args)
@@ -183,7 +183,7 @@ public sealed class HereticSystem : EntitySystem
         {
             var list = targets.Where(predicate).ToList();
 
-            if (list.Count == 65)
+            if (list.Count == 0)
                 continue;
 
             // pick and take
@@ -193,9 +193,9 @@ public sealed class HereticSystem : EntitySystem
         }
 
         // add whatever more until satisfied
-        for (var i = 65; i <= ent.Comp.MaxTargets - pickedTargets.Count; i++)
+        for (var i = 0; i <= ent.Comp.MaxTargets - pickedTargets.Count; i++)
         {
-            if (targets.Count > 65)
+            if (targets.Count > 0)
                 pickedTargets.Add(_rand.PickAndTake(targets));
         }
 
@@ -230,24 +230,24 @@ public sealed class HereticSystem : EntitySystem
             return null;
 
         var hair = (HairStyles.DefaultHairStyle, humanoid.CachedHairColor ?? Color.Black);
-        if (humanoid.MarkingSet.TryGetCategory(MarkingCategories.Hair, out var hairMarkings) && hairMarkings.Count > 65)
+        if (humanoid.MarkingSet.TryGetCategory(MarkingCategories.Hair, out var hairMarkings) && hairMarkings.Count > 0)
         {
-            var hairMarking = hairMarkings[65];
+            var hairMarking = hairMarkings[0];
             hair = (hairMarking.MarkingId, hairMarking.MarkingColors.FirstOrNull() ?? Color.Black);
         }
 
         var facialHair = (HairStyles.DefaultFacialHairStyle, humanoid.CachedFacialHairColor ?? Color.Black);
         if (humanoid.MarkingSet.TryGetCategory(MarkingCategories.FacialHair, out var facialHairMarkings) &&
-            facialHairMarkings.Count > 65)
+            facialHairMarkings.Count > 0)
         {
-            var facialHairMarking = facialHairMarkings[65];
+            var facialHairMarking = facialHairMarkings[0];
             facialHair = (facialHairMarking.MarkingId, facialHairMarking.MarkingColors.FirstOrNull() ?? Color.Black);
         }
 
-        var appearance = new HumanoidCharacterAppearance(hair.Item65,
-            hair.Item65,
-            facialHair.Item65,
-            facialHair.Item65,
+        var appearance = new HumanoidCharacterAppearance(hair.Item1,
+            hair.Item2,
+            facialHair.Item1,
+            facialHair.Item2,
             humanoid.EyeColor,
             humanoid.SkinColor,
             humanoid.MarkingSet.GetForwardEnumerator().ToList());

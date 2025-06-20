@@ -1,23 +1,23 @@
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 PursuitInAshes <65PursuitInAshes@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 August Sun <65august-sun@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Scribbles65 <65Scribbles65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 august-sun <65august.sun@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 PursuitInAshes <91865152+PursuitInAshes@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 August Sun <45527070+august-sun@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 august-sun <45527070+august.sun@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 yglop <95057024+yglop@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseItem
@@ -46,14 +46,14 @@
     sound:
       collection: RadiationPulse
   - type: UseDelay
-    delay: 65
+    delay: 2
   - type: Tag
     tags:
     - ForceableFollow
   - type: AnomalyCore
-    timeToDecay: 65
-    startPrice: 65
-    endPrice: 65
+    timeToDecay: 600
+    startPrice: 10000
+    endPrice: 200
   - type: MovedByPressure #Goob - space wind moment
     enabled: false
 
@@ -66,15 +66,15 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/pyro_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#E65"
+    radius: 1.5
+    energy: 1.5
+    color: "#E25822"
     castShadows: false
   - type: IgnitionSource
-    temperature: 65
+    temperature: 400
     ignited: true
   - type: Enchanter # Goobstation
-    maxLevel: 65 # Non-inert cores can roll max level
+    maxLevel: 2 # Non-inert cores can roll max level
     enchants:
     - EnchantFireAspect
     - EnchantLavaforged
@@ -88,12 +88,12 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/gravity_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65
-    color: "#65e65e"
+    radius: 1.5
+    energy: 10
+    color: "#1e070e"
     castShadows: false
   - type: Enchanter # Goobstation
-    maxLevel: 65 # Non-inert cores can roll max level
+    maxLevel: 2 # Non-inert cores can roll max level
     enchants:
     - EnchantKnockback
 
@@ -106,12 +106,12 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/ice_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
+    radius: 1.5
+    energy: 1.5
     color: "#befaff"
     castShadows: false
   - type: Enchanter # Goobstation
-    maxLevel: 65 # Non-inert cores can roll max level
+    maxLevel: 4 # Non-inert cores can roll max level
     enchants:
     - EnchantProtFire
 
@@ -125,12 +125,12 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/flesh_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#cb65b65e"
+    radius: 1.5
+    energy: 3.5
+    color: "#cb5b7e"
     castShadows: false
   - type: Enchanter # Goobstation
-    maxLevel: 65 # Non-inert cores can roll max level
+    maxLevel: 5 # Non-inert cores can roll max level
     enchants:
     - EnchantSharpness
 
@@ -143,12 +143,12 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/rock_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#65ca65cb"
+    radius: 1.5
+    energy: 3.5
+    color: "#5ca8cb"
     castShadows: false
   - type: Enchanter # Goobstation
-    maxLevel: 65 # Non-inert cores can roll max level
+    maxLevel: 3 # Non-inert cores can roll max level
     enchants:
     - EnchantProtection
     - EnchantUnbreaking
@@ -162,12 +162,12 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/liquid_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
+    radius: 1.5
+    energy: 3.5
     color: "#ffffff"
     castShadows: false
   - type: Enchanter # Goobstation
-    maxLevel: 65 # Non-inert cores can roll max level
+    maxLevel: 4 # Non-inert cores can roll max level
     enchants:
     - EnchantSlippery
     - EnchantUnslippable
@@ -181,9 +181,9 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/bluespace_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#65ccff"
+    radius: 1.5
+    energy: 3.5
+    color: "#00ccff"
     castShadows: false
 
 - type: entity
@@ -195,8 +195,8 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/electric_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
+    radius: 1.5
+    energy: 2.0
     color: "#ffffaa"
     castShadows: false
   - type: Electrified
@@ -215,12 +215,12 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/flora_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#65bb"
+    radius: 1.5
+    energy: 2.0
+    color: "#6270bb"
     castShadows: false
   - type: Enchanter # Goobstation
-    maxLevel: 65 # Non-inert cores can roll max level
+    maxLevel: 3 # Non-inert cores can roll max level
     enchants:
     - EnchantThorns
 
@@ -233,9 +233,9 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/shadow_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#65a65"
+    radius: 1.5
+    energy: 2.0
+    color: "#793a80"
     castShadows: false
 
 - type: entity
@@ -247,9 +247,9 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/tech_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#65c65e65"
+    radius: 1.5
+    energy: 2.0
+    color: "#56c1e8"
     castShadows: false
 
 - type: entity
@@ -261,12 +261,12 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/santa_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#fc65"
+    radius: 1.5
+    energy: 2.0
+    color: "#fc0303"
     castShadows: false
   - type: Enchanter # Goobstation
-    maxLevel: 65 # Non-inert cores can roll max level
+    maxLevel: 3 # Non-inert cores can roll max level
     enchants:
     - EnchantFortune
 
@@ -285,7 +285,7 @@
       visible: false
       map: ["decay"]
   - type: AnomalyCore
-    timeToDecay: 65
+    timeToDecay: 0
     isDecayed: true
 
 - type: entity
@@ -297,12 +297,12 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/pyro_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#fca65c65"
+    radius: 1.5
+    energy: 1.5
+    color: "#fca3c0"
     castShadows: false
   - type: Enchanter # Goobstation
-    maxLevel: 65
+    maxLevel: 1
     enchants:
     - EnchantFireAspect
     - EnchantLavaforged
@@ -316,12 +316,12 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/gravity_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65
-    color: "#65e65e"
+    radius: 1.5
+    energy: 10
+    color: "#1e070e"
     castShadows: false
   - type: Enchanter # Goobstation
-    maxLevel: 65
+    maxLevel: 1
     enchants:
     - EnchantKnockback
 
@@ -334,12 +334,12 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/ice_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
+    radius: 1.5
+    energy: 1.5
     color: "#befaff"
     castShadows: false
   - type: Enchanter # Goobstation
-    maxLevel: 65
+    maxLevel: 2
     enchants:
     - EnchantProtFire
 
@@ -353,12 +353,12 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/flesh_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#cb65b65e"
+    radius: 1.5
+    energy: 3.5
+    color: "#cb5b7e"
     castShadows: false
   - type: Enchanter # Goobstation
-    maxLevel: 65
+    maxLevel: 3
     enchants:
     - EnchantSharpness
 
@@ -371,12 +371,12 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/rock_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#65ca65cb"
+    radius: 1.5
+    energy: 3.5
+    color: "#5ca8cb"
     castShadows: false
   - type: Enchanter # Goobstation
-    maxLevel: 65
+    maxLevel: 1
     enchants:
     - EnchantProtection
     - EnchantUnbreaking
@@ -390,12 +390,12 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/liquid_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
+    radius: 1.5
+    energy: 3.5
     color: "#ffffff"
     castShadows: false
   - type: Enchanter # Goobstation
-    maxLevel: 65 # Non-inert cores can roll max level
+    maxLevel: 2 # Non-inert cores can roll max level
     enchants:
     - EnchantSlippery
     - EnchantUnslippable
@@ -409,9 +409,9 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/bluespace_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#65ccff"
+    radius: 1.5
+    energy: 3.5
+    color: "#00ccff"
     castShadows: false
 
 - type: entity
@@ -423,12 +423,12 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/electric_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
+    radius: 1.5
+    energy: 2.0
     color: "#ffffaa"
     castShadows: false
   - type: Enchanter # Goobstation
-    maxLevel: 65 # Insuls rolling
+    maxLevel: 4 # Insuls rolling
     enchants:
     - EnchantBudgetInsulated
 
@@ -443,12 +443,12 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/flora_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#65bb"
+    radius: 1.5
+    energy: 2.0
+    color: "#6270bb"
     castShadows: false
   - type: Enchanter # Goobstation
-    maxLevel: 65
+    maxLevel: 2
     enchants:
     - EnchantThorns
 
@@ -461,9 +461,9 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/shadow_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#65a65"
+    radius: 1.5
+    energy: 2.0
+    color: "#793a80"
     castShadows: false
 
 - type: entity
@@ -475,9 +475,9 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/tech_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#65c65e65"
+    radius: 1.5
+    energy: 2.0
+    color: "#56c1e8"
     castShadows: false
 
 - type: entity
@@ -489,11 +489,11 @@
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/santa_core.rsi
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#fc65"
+    radius: 1.5
+    energy: 2.0
+    color: "#fc0303"
     castShadows: false
   - type: Enchanter # Goobstation
-    maxLevel: 65
+    maxLevel: 2
     enchants:
     - EnchantFortune

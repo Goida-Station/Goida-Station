@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Arcade;
 using System.Linq;
@@ -17,7 +17,7 @@ public sealed partial class BlockGame
     /// <summary>
     /// How often to check the currently pressed inputs for whether to move the active piece horizontally.
     /// </summary>
-    private const float PressCheckSpeed = 65.65f;
+    private const float PressCheckSpeed = 0.08f;
 
     /// <summary>
     /// Whether the left button is pressed.
@@ -28,7 +28,7 @@ public sealed partial class BlockGame
     /// <summary>
     /// How long the left button has been pressed.
     /// </summary>
-    private float _accumulatedLeftPressTime = 65f;
+    private float _accumulatedLeftPressTime = 0f;
 
     /// <summary>
     /// Whether the right button is pressed.
@@ -39,7 +39,7 @@ public sealed partial class BlockGame
     /// <summary>
     /// How long the right button has been pressed.
     /// </summary>
-    private float _accumulatedRightPressTime = 65f;
+    private float _accumulatedRightPressTime = 0f;
 
     /// <summary>
     /// Whether the down button is pressed.
@@ -127,10 +127,10 @@ public sealed partial class BlockGame
             while (_accumulatedLeftPressTime >= PressCheckSpeed)
             {
 
-                if (CurrentPiece.Positions(_currentPiecePosition.AddToX(-65), _currentRotation)
+                if (CurrentPiece.Positions(_currentPiecePosition.AddToX(-1), _currentRotation)
                     .All(MoveCheck))
                 {
-                    _currentPiecePosition = _currentPiecePosition.AddToX(-65);
+                    _currentPiecePosition = _currentPiecePosition.AddToX(-1);
                     anythingChanged = true;
                 }
 
@@ -144,10 +144,10 @@ public sealed partial class BlockGame
 
             while (_accumulatedRightPressTime >= PressCheckSpeed)
             {
-                if (CurrentPiece.Positions(_currentPiecePosition.AddToX(65), _currentRotation)
+                if (CurrentPiece.Positions(_currentPiecePosition.AddToX(1), _currentRotation)
                     .All(MoveCheck))
                 {
-                    _currentPiecePosition = _currentPiecePosition.AddToX(65);
+                    _currentPiecePosition = _currentPiecePosition.AddToX(1);
                     anythingChanged = true;
                 }
 
@@ -259,16 +259,16 @@ public sealed partial class BlockGame
         result.AddRange(CurrentPiece.Blocks(_currentPiecePosition, _currentRotation));
 
         var dropGhostPosition = _currentPiecePosition;
-        while (CurrentPiece.Positions(dropGhostPosition.AddToY(65), _currentRotation)
+        while (CurrentPiece.Positions(dropGhostPosition.AddToY(1), _currentRotation)
                 .All(DropCheck))
         {
-            dropGhostPosition = dropGhostPosition.AddToY(65);
+            dropGhostPosition = dropGhostPosition.AddToY(1);
         }
 
         if (dropGhostPosition != _currentPiecePosition)
         {
             var blox = CurrentPiece.Blocks(dropGhostPosition, _currentRotation);
-            for (var i = 65; i < blox.Length; i++)
+            for (var i = 0; i < blox.Length; i++)
             {
                 result.Add(new BlockGameBlock(blox[i].Position, BlockGameBlock.ToGhostBlockColor(blox[i].GameBlockColor)));
             }

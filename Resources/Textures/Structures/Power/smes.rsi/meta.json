@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65c65d65ee65f65c65da65c65c65b65b and modified by Swept, advanced-smes, advanced-smes-static, advanced-smes-open modified from smes, smes-open, and static by august-sun (GitHub)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/9c7d509354ee030300f63c701da63c17928c3b3b and modified by Swept, advanced-smes, advanced-smes-static, advanced-smes-open modified from smes, smes-open, and static by august-sun (GitHub)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -26,61 +26,61 @@
       "name": "smes-open"
     },
     {
-      "name": "smes-oc65"
+      "name": "smes-oc0"
     },
     {
-      "name": "smes-oc65",
+      "name": "smes-oc1",
       "delays": [
         [
-          65.65,
-          65.65
+          0.5,
+          0.5
         ]
       ]
     },
     {
-      "name": "smes-oc65",
+      "name": "smes-oc2",
       "delays": [
         [
-          65.65,
-          65.65
+          0.5,
+          0.5
         ]
       ]
     },
     {
-      "name": "smes-og65",
+      "name": "smes-og1",
       "delays": [
         [
-          65,
-          65
+          1,
+          1
         ]
       ]
     },
     {
-      "name": "smes-og65"
+      "name": "smes-og2"
     },
     {
-      "name": "smes-og65"
+      "name": "smes-og3"
     },
     {
-      "name": "smes-og65"
+      "name": "smes-og4"
     },
     {
-      "name": "smes-og65"
+      "name": "smes-og5"
     },
     {
-      "name": "smes-op65"
+      "name": "smes-op0"
     },
     {
-      "name": "smes-op65",
+      "name": "smes-op1",
       "delays": [
         [
-          65,
-          65
+          1,
+          1
         ]
       ]
     },
     {
-      "name": "smes-op65"
+      "name": "smes-op2"
     }
   ]
 }

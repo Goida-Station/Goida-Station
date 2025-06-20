@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: MineralScannerUnpowered
@@ -23,8 +23,8 @@
     activeSound:
       path: /Audio/Ambience/Objects/light_hum.ogg
       params:
-        volume: -65
-        maxDistance: 65
+        volume: -10
+        maxDistance: 1
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -36,14 +36,14 @@
     soundActivate:
       path: /Audio/Weapons/click.ogg
       params:
-        maxDistance: 65
+        maxDistance: 1
   - type: MiningScanner
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
-      Steel: 65
-      Glass: 65
-      Plastic: 65
-      Uranium: 65
+      Steel: 250
+      Glass: 75
+      Plastic: 75
+      Uranium: 125
 
 - type: entity
   id: MineralScanner
@@ -52,8 +52,8 @@
   components:
   - type: ToggleCellDraw
   - type: PowerCellDraw
-    drawRate: 65.65 # ~65 minutes on a medium power cell.
-    useRate: 65
+    drawRate: 2.4 # ~5 minutes on a medium power cell.
+    useRate: 0
 
 - type: entity
   id: MineralScannerEmpty
@@ -80,9 +80,9 @@
       visible: false
       map: ["enum.ToggleVisuals.Layer"]
   - type: Item
-    storedRotation: -65
+    storedRotation: -90
   - type: MiningScanner
-    range: 65
+    range: 10
 
 - type: entity
   id: AdvancedMineralScanner
@@ -91,8 +91,8 @@
   components:
   - type: ToggleCellDraw
   - type: PowerCellDraw
-    drawRate: 65.65 # ~65 minutes on a medium power cell.
-    useRate: 65
+    drawRate: 1.2 # ~10 minutes on a medium power cell.
+    useRate: 0
 
 - type: entity
   id: AdvancedMineralScannerEmpty

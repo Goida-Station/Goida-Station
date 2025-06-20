@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Created by IProduceWidgets (github) to make the style of desertrose at https://github.com/DesertRose65/desertrose/commit/65e65d65f65a65e65a65c65e65f65e65, https://github.com/DesertRose65/desertrose/blob/master/icons/obj/guns/projectile.dmi",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by IProduceWidgets (github) to make the style of desertrose at https://github.com/DesertRose2/desertrose/commit/120961e254d7f83a6e00a02c76e734f9e5019345, https://github.com/DesertRose2/desertrose/blob/master/icons/obj/guns/projectile.dmi",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -17,23 +17,23 @@
             "name": "bolt-open"
         },
         {
-            "name": "mag-65"
+            "name": "mag-0"
         },
         {
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "equipped-BELT",
-            "directions": 65
+            "directions": 4
         },
 		{
             "name": "equipped-SUITSTORAGE",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

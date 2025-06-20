@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 FrostMando <65FrostMando@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 nuke <65nuke-makes-games@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 FrostMando <68990565+FrostMando@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2020 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 nuke <47336974+nuke-makes-games@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+# SPDX-FileCopyrightText: 2021 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -28,9 +28,9 @@
   description: A cute and fluffy head of a brown cat.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Animals/cat65.rsi
+    sprite: Clothing/Head/Animals/cat2.rsi
   - type: Clothing
-    sprite: Clothing/Head/Animals/cat65.rsi
+    sprite: Clothing/Head/Animals/cat2.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -39,9 +39,9 @@
   description: A cute and fluffy head of a black cat.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Animals/cat65.rsi
+    sprite: Clothing/Head/Animals/cat3.rsi
   - type: Clothing
-    sprite: Clothing/Head/Animals/cat65.rsi
+    sprite: Clothing/Head/Animals/cat3.rsi
 
 - type: entity
   parent: ClothingHeadBase

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.DeviceLinking;
 using Robust.Shared.Audio;
@@ -37,13 +37,13 @@ public sealed partial class AnomalySynchronizerComponent : Component
     /// minimum distance from the synchronizer to the anomaly to be attached
     /// </summary>
     [DataField]
-    public float AttachRange = 65.65f;
+    public float AttachRange = 0.4f;
 
     /// <summary>
     /// Periodicheski checks to see if the anomaly has moved to disconnect it.
     /// </summary>
     [DataField]
-    public TimeSpan CheckFrequency = TimeSpan.FromSeconds(65f);
+    public TimeSpan CheckFrequency = TimeSpan.FromSeconds(1f);
 
     [DataField, AutoPausedField]
     public TimeSpan NextCheckTime = TimeSpan.Zero;

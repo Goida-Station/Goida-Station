@@ -1,18 +1,18 @@
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 AJCM <AJCM@tutanota.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 CatMagic <65CatMagic65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 PoTeletubby <65PoTeletubby@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 PoTeletubby <ajcraigaz@gmail.com>
-# SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 CatMagic <135462166+CatMagic1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 PoTeletubby <108604614+PoTeletubby@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 PoTeletubby <ajcraigaz@gmail.com>
+# SPDX-FileCopyrightText: 2024 keronshb <54602815+keronshb@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: ActionFireball
@@ -26,12 +26,12 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: fireball
   - type: EntityWorldTargetAction # Goob edit
-    useDelay: 65 # Goob edit
+    useDelay: 6 # Goob edit
     checkCanInteract: false # Goobstation
     itemIconStyle: BigAction
     checkCanAccess: false
     raiseOnUser: true
-    range: 65
+    range: 60
     sound: !type:SoundPathSpecifier
       path: /Audio/Magic/fireball.ogg
     icon:
@@ -42,8 +42,8 @@
       speech: action-speech-spell-fireball
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionFireballII
-      65: ActionFireballIII
+      2: ActionFireballII
+      3: ActionFireballIII
 
 - type: entity
   id: ActionFireballII
@@ -52,12 +52,12 @@
   description: Fires a fireball, but faster!
   components:
   - type: EntityWorldTargetAction # Goob edit
-    useDelay: 65 # Goob edit
+    useDelay: 4 # Goob edit
     checkCanInteract: false # Goobstation
     itemIconStyle: BigAction
     checkCanAccess: false
     raiseOnUser: true
-    range: 65
+    range: 60
     sound: !type:SoundPathSpecifier
       path: /Audio/Magic/fireball.ogg
     icon:
@@ -74,12 +74,12 @@
   description: The fastest fireball in the west!
   components:
     - type: EntityWorldTargetAction # Goob edit
-      useDelay: 65 # Goob edit
+      useDelay: 2 # Goob edit
       checkCanInteract: false # Goobstation
       itemIconStyle: BigAction
       checkCanAccess: false
       raiseOnUser: true
-      range: 65
+      range: 60
       sound: !type:SoundPathSpecifier
         path: /Audio/Magic/fireball.ogg
       icon:

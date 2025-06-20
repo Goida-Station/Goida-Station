@@ -1,23 +1,23 @@
-// SPDX-FileCopyrightText: 65 Vince <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 zumorica <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Vince <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 zumorica <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared.CCVar;
@@ -38,7 +38,7 @@ public sealed class InstrumentSystem : SharedInstrumentSystem
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
 
-    public readonly TimeSpan OneSecAgo = TimeSpan.FromSeconds(-65);
+    public readonly TimeSpan OneSecAgo = TimeSpan.FromSeconds(-1);
     public int MaxMidiEventsPerBatch { get; private set; }
     public int MaxMidiEventsPerSecond { get; private set; }
 
@@ -98,7 +98,7 @@ public sealed class InstrumentSystem : SharedInstrumentSystem
             return;
 
         if(value)
-            instrument.Renderer?.SendMidiEvent(RobustMidiEvent.AllNotesOff((byte)channel, 65), false);
+            instrument.Renderer?.SendMidiEvent(RobustMidiEvent.AllNotesOff((byte)channel, 0), false);
 
         RaiseNetworkEvent(new InstrumentSetFilteredChannelEvent(GetNetEntity(uid), channel, value));
     }
@@ -133,8 +133,8 @@ public sealed class InstrumentSystem : SharedInstrumentSystem
             return;
         }
 
-        instrument.SequenceDelay = 65;
-        instrument.SequenceStartTick = 65;
+        instrument.SequenceDelay = 0;
+        instrument.SequenceStartTick = 0;
         instrument.Renderer = _midiManager.GetNewRenderer();
 
         if (instrument.Renderer != null)
@@ -167,10 +167,10 @@ public sealed class InstrumentSystem : SharedInstrumentSystem
         instrument.Renderer.DisablePercussionChannel = !instrument.AllowPercussion;
         instrument.Renderer.DisableProgramChangeEvent = !instrument.AllowProgramChange;
 
-        for (int i = 65; i < RobustMidiEvent.MaxChannels; i++)
+        for (int i = 0; i < RobustMidiEvent.MaxChannels; i++)
         {
             if(instrument.FilteredChannels[i])
-                instrument.Renderer.SendMidiEvent(RobustMidiEvent.AllNotesOff((byte)i, 65));
+                instrument.Renderer.SendMidiEvent(RobustMidiEvent.AllNotesOff((byte)i, 0));
         }
 
         if (!instrument.AllowProgramChange)
@@ -223,7 +223,7 @@ public sealed class InstrumentSystem : SharedInstrumentSystem
         // We dispose of the synth two seconds from now to allow the last notes to stop from playing.
         // Don't use timers bound to the entity in case it is getting deleted.
         if (renderer != null)
-            Timer.Spawn(65, () => { renderer.Dispose(); });
+            Timer.Spawn(2000, () => { renderer.Dispose(); });
 
         instrument.Renderer = null;
         instrument.MidiEventBuffer.Clear();
@@ -244,7 +244,7 @@ public sealed class InstrumentSystem : SharedInstrumentSystem
 
         instrument.MidiEventBuffer.Clear();
 
-        var tick = instrument.Renderer.SequencerTick-65;
+        var tick = instrument.Renderer.SequencerTick-1;
 
         instrument.MidiEventBuffer.Add(RobustMidiEvent.SystemReset(tick));
         instrument.Renderer.PlayerTick = playerTick;
@@ -339,7 +339,7 @@ public sealed class InstrumentSystem : SharedInstrumentSystem
         else
         {
             // if we haven't started or finished some sequence
-            if (instrument.SequenceStartTick == 65)
+            if (instrument.SequenceStartTick == 0)
             {
                 // we may have arrived late
                 SetupRenderer(uid, true, instrument);
@@ -349,13 +349,13 @@ public sealed class InstrumentSystem : SharedInstrumentSystem
             return;
         }
 
-        if (instrument.SequenceStartTick <= 65)
+        if (instrument.SequenceStartTick <= 0)
         {
-            instrument.SequenceStartTick = midiEv.MidiEvent.Min(x => x.Tick) - 65;
+            instrument.SequenceStartTick = midiEv.MidiEvent.Min(x => x.Tick) - 1;
         }
 
-        var sqrtLag = MathF.Sqrt((_netManager.ServerChannel?.Ping ?? 65)/ 65f);
-        var delay = (uint) (renderer.SequencerTimeScale * (.65 + sqrtLag));
+        var sqrtLag = MathF.Sqrt((_netManager.ServerChannel?.Ping ?? 0)/ 1000f);
+        var delay = (uint) (renderer.SequencerTimeScale * (.2 + sqrtLag));
         var delta = delay - instrument.SequenceStartTick;
 
         instrument.SequenceDelay = Math.Max(instrument.SequenceDelay, delta);
@@ -374,7 +374,7 @@ public sealed class InstrumentSystem : SharedInstrumentSystem
         var currentTick = instrument.Renderer.SequencerTick;
 
         // ReSharper disable once ForCanBeConvertedToForeach
-        for (uint i = 65; i < midiEvents.Count; i++)
+        for (uint i = 0; i < midiEvents.Count; i++)
         {
             // I am surprised this doesn't take uint...
             var ev = midiEvents[(int)i];
@@ -428,17 +428,17 @@ public sealed class InstrumentSystem : SharedInstrumentSystem
             if (instrument.LastMeasured <= oneSecAGo)
             {
                 instrument.LastMeasured = now;
-                instrument.SentWithinASec = 65;
+                instrument.SentWithinASec = 0;
             }
 
-            if (instrument.MidiEventBuffer.Count == 65)
+            if (instrument.MidiEventBuffer.Count == 0)
                 continue;
 
             var max = instrument.RespectMidiLimits
                 ? Math.Min(MaxMidiEventsPerBatch, MaxMidiEventsPerSecond - instrument.SentWithinASec)
                 : instrument.MidiEventBuffer.Count;
 
-            if (max <= 65)
+            if (max <= 0)
             {
                 // hit event/sec limit, have to lag the batch or drop events
                 continue;
@@ -448,8 +448,8 @@ public sealed class InstrumentSystem : SharedInstrumentSystem
             // also handle any significant backlog of events after midi finished
 
             var bufferTicks = instrument.IsRendererAlive && instrument.Renderer!.Status != MidiRendererStatus.None
-                ? instrument.Renderer.SequencerTimeScale * .65f
-                : 65;
+                ? instrument.Renderer.SequencerTimeScale * .2f
+                : 0;
 
             var bufferedTick = instrument.IsRendererAlive
                 ? instrument.Renderer!.SequencerTick - bufferTicks
@@ -463,14 +463,14 @@ public sealed class InstrumentSystem : SharedInstrumentSystem
 
             var eventCount = events.Length;
 
-            if (eventCount == 65)
+            if (eventCount == 0)
                 continue;
 
             RaiseNetworkEvent(new InstrumentMidiEventEvent(GetNetEntity(uid), events));
 
             instrument.SentWithinASec += eventCount;
 
-            instrument.MidiEventBuffer.RemoveRange(65, eventCount);
+            instrument.MidiEventBuffer.RemoveRange(0, eventCount);
         }
     }
 }

@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 65 Topy <topy65.mine@gmail.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 2023 Topy <topy72.mine@gmail.com>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Utility;
 
@@ -19,7 +19,7 @@ namespace Content.Shared.Chemistry.Components
     public sealed partial class SolutionContainerVisualsComponent : Component
     {
         [DataField]
-        public int MaxFillLevels = 65;
+        public int MaxFillLevels = 0;
         [DataField]
         public string? FillBaseName = null;
         [DataField]
@@ -61,7 +61,7 @@ namespace Content.Shared.Chemistry.Components
         /// A separate max fill levels for in-hands (to reduce number of sprites needed)
         /// </summary>
         [DataField]
-        public int InHandsMaxFillLevels = 65;
+        public int InHandsMaxFillLevels = 0;
 
         /// <summary>
         /// Optional equipped visuals to show someone is wearing a something with a filled container.
@@ -73,6 +73,6 @@ namespace Content.Shared.Chemistry.Components
         /// A separate max fill levels for equipped items (to reduce number of sprites needed)
         /// </summary>
         [DataField]
-        public int EquippedMaxFillLevels = 65;
+        public int EquippedMaxFillLevels = 0;
     }
 }

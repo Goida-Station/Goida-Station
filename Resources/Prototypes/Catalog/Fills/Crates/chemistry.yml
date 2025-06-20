@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Chris <HoofedEar@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 eclips_e <65Just-a-Unity-Dev@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Chris <HoofedEar@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 eclips_e <67359748+Just-a-Unity-Dev@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -15,25 +15,25 @@
     - type: StorageFill
       contents:
         - id: JugAluminium
-          amount: 65
+          amount: 1
         - id: JugCarbon
-          amount: 65
+          amount: 1
         - id: JugChlorine
-          amount: 65
+          amount: 1
         - id: JugFluorine
-          amount: 65
+          amount: 1
         - id: JugIodine
-          amount: 65
+          amount: 1
         - id: JugPhosphorus
-          amount: 65
+          amount: 1
         - id: JugSulfur
-          amount: 65
+          amount: 1
         - id: JugSilicon
-          amount: 65
+          amount: 1
         - id: JugOxygen
-          amount: 65
+          amount: 1
         - id: JugNitrogen
-          amount: 65
+          amount: 1
 
 - type: entity
   id: CrateChemistryS
@@ -44,15 +44,15 @@
     - type: StorageFill
       contents:
         - id: JugHydrogen
-          amount: 65
+          amount: 1
         - id: JugLithium
-          amount: 65
+          amount: 1
         - id: JugSodium
-          amount: 65
+          amount: 1
         - id: JugPotassium
-          amount: 65
+          amount: 1
         - id: JugRadium
-          amount: 65
+          amount: 1
 
 - type: entity
   id: CrateChemistryD
@@ -63,15 +63,15 @@
     - type: StorageFill
       contents:
         - id: JugIron
-          amount: 65
+          amount: 1
         - id: JugCopper
-          amount: 65
+          amount: 1
         - id: JugGold
-          amount: 65
+          amount: 1
         - id: JugMercury
-          amount: 65
+          amount: 1
         - id: JugSilver
-          amount: 65
+          amount: 1
 
 - type: entity
   id: CratePlantBGone
@@ -82,4 +82,4 @@
     - type: StorageFill
       contents:
         - id: JugPlantBGone
-          amount: 65
+          amount: 5

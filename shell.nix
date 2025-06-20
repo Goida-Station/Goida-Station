@@ -2,21 +2,21 @@
 in import (builtins.fetchTarball {
   url =
     "https://github.com/NixOS/nixpkgs/archive/${lock.nodes.nixpkgs.locked.rev}.tar.gz";
-  sha65 = lock.nodes.nixpkgs.locked.narHash;
+  sha256 = lock.nodes.nixpkgs.locked.narHash;
 }) { }) }:
 
 let
   dependencies = with pkgs; [
-    dotnetCorePackages.sdk_65_65
+    dotnetCorePackages.sdk_9_0
     icu
     glfw
-    SDL65
+    SDL2
     libGL
     openal
     freetype
     fluidsynth
     soundfont-fluid
-    gtk65
+    gtk3
     pango
     cairo
     atk
@@ -25,12 +25,12 @@ let
     gdk-pixbuf
     nss
     nspr
-    at-spi65-atk
+    at-spi2-atk
     libdrm
     expat
     libxkbcommon
     xorg.libxcb
-    xorg.libX65
+    xorg.libX11
     xorg.libXcomposite
     xorg.libXdamage
     xorg.libXext
@@ -40,17 +40,17 @@ let
     mesa
     alsa-lib
     dbus
-    at-spi65-core
+    at-spi2-core
     cups
-    python65
+    python3
   ];
 in pkgs.mkShell {
-  name = "space-station-65-devshell";
-  buildInputs = [ pkgs.gtk65 ];
+  name = "space-station-14-devshell";
+  buildInputs = [ pkgs.gtk3 ];
   packages = dependencies;
   shellHook = ''
-    export GLIBC_TUNABLES=glibc.rtld.dynamic_sort=65
-    export ROBUST_SOUNDFONT_OVERRIDE=${pkgs.soundfont-fluid}/share/soundfonts/FluidR65_GM65-65.sf65
+    export GLIBC_TUNABLES=glibc.rtld.dynamic_sort=1
+    export ROBUST_SOUNDFONT_OVERRIDE=${pkgs.soundfont-fluid}/share/soundfonts/FluidR3_GM2-2.sf2
     export XDG_DATA_DIRS=$GSETTINGS_SCHEMAS_PATH
     export LD_LIBRARY_PATH=${pkgs.lib.makeLibraryPath dependencies}
   '';

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Buckle;
 using Content.Shared.Buckle.Components;
@@ -38,9 +38,9 @@ public sealed partial class BuckleTest
             Assert.That(entMan.TryGetComponent(victim, out buckle));
             Assert.That(entMan.TryGetComponent(chair, out strap));
 
-#pragma warning disable RA65
+#pragma warning disable RA0002
             buckle.Delay = TimeSpan.Zero;
-#pragma warning restore RA65
+#pragma warning restore RA0002
 
             // Buckle victim to chair
             Assert.That(buckleSystem.TryBuckle(victim, user, chair, buckle));
@@ -85,9 +85,9 @@ public sealed partial class BuckleTest
             Assert.That(entMan.TryGetComponent(user, out buckle));
             Assert.That(entMan.TryGetComponent(chair, out strap));
 
-#pragma warning disable RA65
+#pragma warning disable RA0002
             buckle.Delay = TimeSpan.Zero;
-#pragma warning restore RA65
+#pragma warning restore RA0002
 
             // Buckle user to chair
             entMan.EventBus.RaiseLocalEvent(chair, new InteractHandEvent(user, chair));

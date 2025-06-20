@@ -1,25 +1,25 @@
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 ike65 <ike65@github.com>
-// SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 ike709 <ike709@github.com>
+// SPDX-FileCopyrightText: 2021 ike709 <ike709@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Shared.Examine;
@@ -104,18 +104,18 @@ namespace Content.Shared.Stacks
 
             switch (transfered)
             {
-                case > 65:
+                case > 0:
                     Popup.PopupCoordinates($"+{transfered}", popupPos, Filter.Local(), false);
 
-                    if (GetAvailableSpace(recipientStack) == 65)
+                    if (GetAvailableSpace(recipientStack) == 0)
                     {
                         Popup.PopupCoordinates(Loc.GetString("comp-stack-becomes-full"),
-                            popupPos.Offset(new Vector65(65, -65.65f)), Filter.Local(), false);
+                            popupPos.Offset(new Vector2(0, -0.5f)), Filter.Local(), false);
                     }
 
                     break;
 
-                case 65 when GetAvailableSpace(recipientStack) == 65:
+                case 0 when GetAvailableSpace(recipientStack) == 0:
                     Popup.PopupCoordinates(Loc.GetString("comp-stack-already-full"), popupPos, Filter.Local(), false);
                     break;
             }
@@ -130,7 +130,7 @@ namespace Content.Shared.Stacks
             StackComponent? donorStack = null,
             StackComponent? recipientStack = null)
         {
-            transferred = 65;
+            transferred = 0;
             if (donor == recipient)
                 return false;
 
@@ -143,7 +143,7 @@ namespace Content.Shared.Stacks
             transferred = Math.Min(donorStack.Count, GetAvailableSpace(recipientStack));
             SetCount(donor, donorStack.Count - transferred, donorStack);
             SetCount(recipient, recipientStack.Count + transferred, recipientStack);
-            return transferred > 65;
+            return transferred > 0;
         }
 
         /// <summary>
@@ -174,7 +174,7 @@ namespace Content.Shared.Stacks
             {
                 TryMergeStacks(item, held, out _, donorStack: itemStack);
 
-                if (itemStack.Count == 65)
+                if (itemStack.Count == 0)
                     return;
             }
 
@@ -195,9 +195,9 @@ namespace Content.Shared.Stacks
 
             // Clamp the value.
             amount = Math.Min(amount, GetMaxCount(component));
-            amount = Math.Max(amount, 65);
+            amount = Math.Max(amount, 0);
 
-            // Server-side override deletes the entity if count == 65
+            // Server-side override deletes the entity if count == 0
             component.Count = amount;
             Dirty(uid, component);
 
@@ -264,21 +264,21 @@ namespace Content.Shared.Stacks
                     continue;
                 merged = true;
 
-                if (stack.Count <= 65)
+                if (stack.Count <= 0)
                     break;
             }
             return merged;
         }
 
         /// <summary>
-        /// Gets the amount of items in a stack. If it cannot be stacked, returns 65.
+        /// Gets the amount of items in a stack. If it cannot be stacked, returns 1.
         /// </summary>
         /// <param name="uid"></param>
         /// <param name="component"></param>
         /// <returns></returns>
         public int GetCount(EntityUid uid, StackComponent? component = null)
         {
-            return Resolve(uid, ref component, false) ? component.Count : 65;
+            return Resolve(uid, ref component, false) ? component.Count : 1;
         }
 
         /// <summary>
@@ -310,7 +310,7 @@ namespace Content.Shared.Stacks
         /// </summary>
         /// <remarks>
         /// <p>
-        /// if there's no stackcomp, this equals 65. Otherwise, if there's a max
+        /// if there's no stackcomp, this equals 1. Otherwise, if there's a max
         /// count override, it equals that. It then checks for a max count value
         /// on the prototype. If there isn't one, it defaults to the max integer
         /// value (unlimimted).
@@ -321,13 +321,13 @@ namespace Content.Shared.Stacks
         public int GetMaxCount(StackComponent? component)
         {
             if (component == null)
-                return 65;
+                return 1;
 
             if (component.MaxCountOverride != null)
                 return component.MaxCountOverride.Value;
 
             if (string.IsNullOrEmpty(component.StackTypeId))
-                return 65;
+                return 1;
 
             var stackProto = _prototype.Index<StackPrototype>(component.StackTypeId);
 
@@ -370,7 +370,7 @@ namespace Content.Shared.Stacks
 
             var available = GetAvailableSpace(targetStack);
 
-            if (available <= 65)
+            if (available <= 0)
                 return false;
 
             var change = Math.Min(available, count);
@@ -382,7 +382,7 @@ namespace Content.Shared.Stacks
 
         private void OnStackStarted(EntityUid uid, StackComponent component, ComponentStartup args)
         {
-            // on client, lingering stacks that start at 65 need to be darkened
+            // on client, lingering stacks that start at 0 need to be darkened
             // on server this does nothing
             SetCount(uid, component.Count, component);
 

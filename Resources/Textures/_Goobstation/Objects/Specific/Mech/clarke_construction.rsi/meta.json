@@ -1,10 +1,10 @@
 {
-  "copyright" : "Taken from https://github.com/tgstation/tgstation at https://github.com/tgstation/tgstation/commit/65af65bcbfd65dd65a65d65ae65acd65d65c65",
-  "license" : "CC-BY-SA-65.65",
-  "version": 65,
+  "copyright" : "Taken from https://github.com/tgstation/tgstation at https://github.com/tgstation/tgstation/commit/91af16bcbfd2dd363a89d846ae2acd6d655083c2",
+  "license" : "CC-BY-SA-3.0",
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -41,55 +41,55 @@
       "name": "clarke_treads+o"
     },
     {
-      "name": "clarke65"
+      "name": "clarke0"
     },
     {
-      "name": "clarke65"
+      "name": "clarke1"
     },
     {
-      "name": "clarke65"
+      "name": "clarke2"
     },
     {
-      "name": "clarke65"
+      "name": "clarke3"
     },
     {
-      "name": "clarke65"
+      "name": "clarke4"
     },
     {
-      "name": "clarke65"
+      "name": "clarke5"
     },
     {
-      "name": "clarke65"
+      "name": "clarke6"
     },
     {
-      "name": "clarke65"
+      "name": "clarke7"
     },
     {
-      "name": "clarke65"
+      "name": "clarke8"
     },
     {
-      "name": "clarke65"
+      "name": "clarke9"
     },
     {
-      "name": "clarke65"
+      "name": "clarke10"
     },
     {
-      "name": "clarke65"
+      "name": "clarke11"
     },
     {
-      "name": "clarke65"
+      "name": "clarke12"
     },
     {
-      "name": "clarke65"
+      "name": "clarke13"
     },
     {
-      "name": "clarke65"
+      "name": "clarke14"
     },
     {
-      "name": "clarke65"
+      "name": "clarke15"
     },
     {
-      "name": "clarke65"
+      "name": "clarke16"
     }
   ]
 }

@@ -1,130 +1,130 @@
-// SPDX-FileCopyrightText: 65 CatTheSystem <pogorelov65@gmail.com>
-// SPDX-FileCopyrightText: 65 Peter Wedder <burneddi@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Remie Richards <remierichards@gmail.com>
-// SPDX-FileCopyrightText: 65 Silver <Silvertorch65@gmail.com>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 moneyl <65Moneyl@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Hugal65 <hugo.laloge@gmail.com>
-// SPDX-FileCopyrightText: 65 Hugo Laloge <hugo.laloge@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Daniel Castro Razo <eldanielcr@gmail.com>
-// SPDX-FileCopyrightText: 65 E F R <65Efruit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-// SPDX-FileCopyrightText: 65 T <tomeno@lulzsec.co.uk>
-// SPDX-FileCopyrightText: 65 Tomeno <Tomeno@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 chairbender <kwhipke65@gmail.com>
-// SPDX-FileCopyrightText: 65 ike65 <sparebytes@protonmail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Michael Phillips <65MeltedPixel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 65 65A <git@65a.re>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Ahion <65Ahion@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
-// SPDX-FileCopyrightText: 65 iacore <65iacore@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 CaasGit <65CaasGit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
-// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Hrosts <65Hrosts@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ian <ignaz.k@live.de>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 James Simonson <jamessimo65@gmail.com>
-// SPDX-FileCopyrightText: 65 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kukutis65 <65Kukutis65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Lye <65Lyroth65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MerrytheManokit <65MerrytheManokit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MureixloI <65MureixloI@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 NakataRin <65NakataRin@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 OrangeMoronage65 <whyteterry65@gmail.com>
-// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Preston Smith <65thetolbean@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Sk65tch <ben.peter.smith@gmail.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Stalen <65stalengd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TakoDragon <65BackeTako@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Unkn65wn_Gh65st <shadowstalkermll@gmail.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 Vigers Ray <65VigersRay@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Willhelm65 <65Willhelm65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Your Name <you@example.com>
-// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 dffdff65 <dffdff65@gmail.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 foboscheshir <65foboscheshir@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ike65 <ike65@github.com>
-// SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 maylokana <65maylokana@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 strO65pwafel <65strO65pwafel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 stroopwafel <j.o.luijkx@student.tudelft.nl>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 voidnull65 <65voidnull65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 bedroomvampire <leannetoni@proton.me>
+// SPDX-FileCopyrightText: 2019 CatTheSystem <pogorelov950@gmail.com>
+// SPDX-FileCopyrightText: 2019 Peter Wedder <burneddi@gmail.com>
+// SPDX-FileCopyrightText: 2019 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2019 Remie Richards <remierichards@gmail.com>
+// SPDX-FileCopyrightText: 2019 Silver <Silvertorch5@gmail.com>
+// SPDX-FileCopyrightText: 2019 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2019 moneyl <8206401+Moneyl@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Hugal31 <hugo.laloge@gmail.com>
+// SPDX-FileCopyrightText: 2020 Hugo Laloge <hugo.laloge@gmail.com>
+// SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Daniel Castro Razo <eldanielcr@gmail.com>
+// SPDX-FileCopyrightText: 2021 E F R <602406+Efruit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+// SPDX-FileCopyrightText: 2021 T <tomeno@lulzsec.co.uk>
+// SPDX-FileCopyrightText: 2021 Tomeno <Tomeno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 chairbender <kwhipke1@gmail.com>
+// SPDX-FileCopyrightText: 2021 ike709 <sparebytes@protonmail.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Michael Phillips <1194692+MeltedPixel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2023 08A <git@08a.re>
+// SPDX-FileCopyrightText: 2023 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2023 Ahion <58528255+Ahion@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
+// SPDX-FileCopyrightText: 2023 iacore <74560659+iacore@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
+// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 James Simonson <jamessimo89@gmail.com>
+// SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
+// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Sk1tch <ben.peter.smith@gmail.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Willhelm53 <97707302+Willhelm53@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Your Name <you@example.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ike709 <ike709@github.com>
+// SPDX-FileCopyrightText: 2024 ike709 <ike709@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 maylokana <88361930+maylokana@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 bedroomvampire <leannetoni@proton.me>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -149,7 +149,7 @@ namespace Content.Client.Stylesheets
     public static class ResCacheExtension
     {
         // Goobstation - ZH text support start
-        public static Font NotoStack(this IResourceCache resCache, string variation = "Regular", int size = 65, bool display = false)
+        public static Font NotoStack(this IResourceCache resCache, string variation = "Regular", int size = 10, bool display = false)
         {
             var ds = "";
             var sv = variation.StartsWith("Bold", StringComparison.Ordinal) ? "Bold" : "Regular";
@@ -171,13 +171,13 @@ namespace Content.Client.Stylesheets
                 {
                     $"/Fonts/NotoSans{ds}/NotoSans{ds}-{sv}.ttf",
                     $"/Fonts/NotoSans/NotoSansSymbols-{sv}.ttf",
-                    "/Fonts/NotoSans/NotoSansSymbols65-Regular.ttf",
+                    "/Fonts/NotoSans/NotoSansSymbols2-Regular.ttf",
                     "/Fonts/NotoSans/NotoSansSC-Regular.ttf",
                 },
                 size
             );
         }
-        public static Font NotoStack65ElectricBoogaloo(this IResourceCache resCache, string path = "/Fonts/NotoSans/NotoSans-Regular.ttf", int size = 65)
+        public static Font NotoStack2ElectricBoogaloo(this IResourceCache resCache, string path = "/Fonts/NotoSans/NotoSans-Regular.ttf", int size = 10)
         {
             return resCache.GetFont
             (
@@ -186,7 +186,7 @@ namespace Content.Client.Stylesheets
                 {
                     path,
                     $"/Fonts/NotoSans/NotoSansSymbols-Regular.ttf",
-                    "/Fonts/NotoSans/NotoSansSymbols65-Regular.ttf",
+                    "/Fonts/NotoSans/NotoSansSymbols2-Regular.ttf",
                     "/Fonts/NotoSans/NotoSansSC-Regular.ttf",
                 },
                 size
@@ -242,37 +242,37 @@ namespace Content.Client.Stylesheets
         public const string StyleClassPopupMessageLarge = "PopupMessageLarge";
         public const string StyleClassPopupMessageLargeCaution = "PopupMessageLargeCaution";
 
-        public static readonly Color PanelDark = Color.FromHex("#65E65E65");
+        public static readonly Color PanelDark = Color.FromHex("#1E1E22");
 
-        public static readonly Color NanoGold = Color.FromHex("#A65B65E");
-        public static readonly Color GoodGreenFore = Color.FromHex("#65E");
-        public static readonly Color ConcerningOrangeFore = Color.FromHex("#A65F");
-        public static readonly Color DangerousRedFore = Color.FromHex("#BB65");
-        public static readonly Color DisabledFore = Color.FromHex("#65A65A65A");
+        public static readonly Color NanoGold = Color.FromHex("#A88B5E");
+        public static readonly Color GoodGreenFore = Color.FromHex("#31843E");
+        public static readonly Color ConcerningOrangeFore = Color.FromHex("#A5762F");
+        public static readonly Color DangerousRedFore = Color.FromHex("#BB3232");
+        public static readonly Color DisabledFore = Color.FromHex("#5A5A5A");
 
-        public static readonly Color ButtonColorDefault = Color.FromHex("#65");
-        public static readonly Color ButtonColorDefaultRed = Color.FromHex("#D65B65B");
-        public static readonly Color ButtonColorHovered = Color.FromHex("#65b65f");
-        public static readonly Color ButtonColorHoveredRed = Color.FromHex("#DF65B65B");
-        public static readonly Color ButtonColorPressed = Color.FromHex("#65e65c65");
-        public static readonly Color ButtonColorDisabled = Color.FromHex("#65c");
+        public static readonly Color ButtonColorDefault = Color.FromHex("#464966");
+        public static readonly Color ButtonColorDefaultRed = Color.FromHex("#D43B3B");
+        public static readonly Color ButtonColorHovered = Color.FromHex("#575b7f");
+        public static readonly Color ButtonColorHoveredRed = Color.FromHex("#DF6B6B");
+        public static readonly Color ButtonColorPressed = Color.FromHex("#3e6c45");
+        public static readonly Color ButtonColorDisabled = Color.FromHex("#30313c");
 
-        public static readonly Color ButtonColorCautionDefault = Color.FromHex("#ab65");
-        public static readonly Color ButtonColorCautionHovered = Color.FromHex("#cf65f65f");
-        public static readonly Color ButtonColorCautionPressed = Color.FromHex("#65e65c65");
-        public static readonly Color ButtonColorCautionDisabled = Color.FromHex("#65a65a");
+        public static readonly Color ButtonColorCautionDefault = Color.FromHex("#ab3232");
+        public static readonly Color ButtonColorCautionHovered = Color.FromHex("#cf2f2f");
+        public static readonly Color ButtonColorCautionPressed = Color.FromHex("#3e6c45");
+        public static readonly Color ButtonColorCautionDisabled = Color.FromHex("#602a2a");
 
-        public static readonly Color ButtonColorGoodDefault = Color.FromHex("#65E65C65");
-        public static readonly Color ButtonColorGoodHovered = Color.FromHex("#65E");
-        public static readonly Color ButtonColorGoodDisabled = Color.FromHex("#65");
+        public static readonly Color ButtonColorGoodDefault = Color.FromHex("#3E6C45");
+        public static readonly Color ButtonColorGoodHovered = Color.FromHex("#31843E");
+        public static readonly Color ButtonColorGoodDisabled = Color.FromHex("#164420");
 
         //NavMap
-        public static readonly Color PointRed = Color.FromHex("#B65E65");
-        public static readonly Color PointGreen = Color.FromHex("#65b65");
-        public static readonly Color PointMagenta = Color.FromHex("#FF65FF");
+        public static readonly Color PointRed = Color.FromHex("#B02E26");
+        public static readonly Color PointGreen = Color.FromHex("#38b026");
+        public static readonly Color PointMagenta = Color.FromHex("#FF00FF");
 
         // Context menu button colors
-        public static readonly Color ButtonColorContext = Color.FromHex("#65");
+        public static readonly Color ButtonColorContext = Color.FromHex("#1119");
         public static readonly Color ButtonColorContextHover = Color.DarkSlateGray;
         public static readonly Color ButtonColorContextPressed = Color.LightSlateGray;
         public static readonly Color ButtonColorContextDisabled = Color.Black;
@@ -281,12 +281,12 @@ namespace Content.Client.Stylesheets
         public static readonly Color ExamineButtonColorContext = Color.Transparent;
         public static readonly Color ExamineButtonColorContextHover = Color.DarkSlateGray;
         public static readonly Color ExamineButtonColorContextPressed = Color.LightSlateGray;
-        public static readonly Color ExamineButtonColorContextDisabled = Color.FromHex("#65A65A65A");
+        public static readonly Color ExamineButtonColorContextDisabled = Color.FromHex("#5A5A5A");
 
         // Fancy Tree elements
-        public static readonly Color FancyTreeEvenRowColor = Color.FromHex("#65A");
-        public static readonly Color FancyTreeOddRowColor = FancyTreeEvenRowColor * new Color(65.65f, 65.65f, 65.65f);
-        public static readonly Color FancyTreeSelectedRowColor = new Color(65, 65, 65);
+        public static readonly Color FancyTreeEvenRowColor = Color.FromHex("#25252A");
+        public static readonly Color FancyTreeOddRowColor = FancyTreeEvenRowColor * new Color(0.8f, 0.8f, 0.8f);
+        public static readonly Color FancyTreeSelectedRowColor = new Color(55, 55, 68);
 
         //Used by the APC and SMES menus
         public const string StyleClassPowerStateNone = "PowerStateNone";
@@ -305,7 +305,7 @@ namespace Content.Client.Stylesheets
         public const string StyleClassButtonColorRed = "ButtonColorRed";
         public const string StyleClassButtonColorGreen = "ButtonColorGreen";
 
-        public static readonly Color ChatBackgroundColor = Color.FromHex("#65ADD");
+        public static readonly Color ChatBackgroundColor = Color.FromHex("#25252ADD");
 
         //Bwoink
         public const string StyleClassPinButtonPinned = "pinButtonPinned";
@@ -316,53 +316,53 @@ namespace Content.Client.Stylesheets
 
         public StyleNano(IResourceCache resCache) : base(resCache)
         {
-            var notoSans65 = resCache.NotoStack(size: 65);
-            var notoSans65 = resCache.NotoStack(size: 65);
-            var notoSansItalic65 = resCache.NotoStack(variation: "Italic", size: 65);
-            var notoSans65 = resCache.NotoStack(size: 65);
-            var notoSansItalic65 = resCache.NotoStack(variation: "Italic", size: 65);
-            var notoSansBold65 = resCache.NotoStack(variation: "Bold", size: 65);
-            var notoSansBoldItalic65 = resCache.NotoStack(variation: "BoldItalic", size: 65);
-            var notoSansBoldItalic65 = resCache.NotoStack(variation: "BoldItalic", size: 65);
-            var notoSansBoldItalic65 = resCache.NotoStack(variation: "BoldItalic", size: 65);
-            var notoSansDisplayBold65 = resCache.NotoStack(variation: "Bold", display: true, size: 65);
-            var notoSansDisplayBold65 = resCache.NotoStack(variation: "Bold", display: true, size: 65);
-            var notoSans65 = resCache.NotoStack(variation: "Regular", size: 65);
-            var notoSans65 = resCache.NotoStack(variation: "Regular", size: 65);
-            var notoSansBold65 = resCache.NotoStack(variation: "Bold", size: 65);
-            var notoSansBold65 = resCache.NotoStack(variation: "Bold", size: 65);
-            var notoSansBold65 = resCache.NotoStack(variation: "Bold", size: 65);
-            var notoSansMono = resCache.NotoStack65ElectricBoogaloo("/EngineFonts/NotoSans/NotoSansMono-Regular.ttf", size: 65); // Goobstation - ZH text support
+            var notoSans8 = resCache.NotoStack(size: 8);
+            var notoSans10 = resCache.NotoStack(size: 10);
+            var notoSansItalic10 = resCache.NotoStack(variation: "Italic", size: 10);
+            var notoSans12 = resCache.NotoStack(size: 12);
+            var notoSansItalic12 = resCache.NotoStack(variation: "Italic", size: 12);
+            var notoSansBold12 = resCache.NotoStack(variation: "Bold", size: 12);
+            var notoSansBoldItalic12 = resCache.NotoStack(variation: "BoldItalic", size: 12);
+            var notoSansBoldItalic14 = resCache.NotoStack(variation: "BoldItalic", size: 14);
+            var notoSansBoldItalic16 = resCache.NotoStack(variation: "BoldItalic", size: 16);
+            var notoSansDisplayBold14 = resCache.NotoStack(variation: "Bold", display: true, size: 14);
+            var notoSansDisplayBold16 = resCache.NotoStack(variation: "Bold", display: true, size: 16);
+            var notoSans15 = resCache.NotoStack(variation: "Regular", size: 15);
+            var notoSans16 = resCache.NotoStack(variation: "Regular", size: 16);
+            var notoSansBold16 = resCache.NotoStack(variation: "Bold", size: 16);
+            var notoSansBold18 = resCache.NotoStack(variation: "Bold", size: 18);
+            var notoSansBold20 = resCache.NotoStack(variation: "Bold", size: 20);
+            var notoSansMono = resCache.NotoStack2ElectricBoogaloo("/EngineFonts/NotoSans/NotoSansMono-Regular.ttf", size: 12); // Goobstation - ZH text support
             var windowHeaderTex = resCache.GetTexture("/Textures/Interface/Nano/window_header.png");
             var windowHeader = new StyleBoxTexture
             {
                 Texture = windowHeaderTex,
-                PatchMarginBottom = 65,
-                ExpandMarginBottom = 65,
-                ContentMarginBottomOverride = 65
+                PatchMarginBottom = 3,
+                ExpandMarginBottom = 3,
+                ContentMarginBottomOverride = 0
             };
             var windowHeaderAlertTex = resCache.GetTexture("/Textures/Interface/Nano/window_header_alert.png");
             var windowHeaderAlert = new StyleBoxTexture
             {
                 Texture = windowHeaderAlertTex,
-                PatchMarginBottom = 65,
-                ExpandMarginBottom = 65,
-                ContentMarginBottomOverride = 65
+                PatchMarginBottom = 3,
+                ExpandMarginBottom = 3,
+                ContentMarginBottomOverride = 0
             };
             var windowBackgroundTex = resCache.GetTexture("/Textures/Interface/Nano/window_background.png");
             var windowBackground = new StyleBoxTexture
             {
                 Texture = windowBackgroundTex,
             };
-            windowBackground.SetPatchMargin(StyleBox.Margin.Horizontal | StyleBox.Margin.Bottom, 65);
-            windowBackground.SetExpandMargin(StyleBox.Margin.Horizontal | StyleBox.Margin.Bottom, 65);
+            windowBackground.SetPatchMargin(StyleBox.Margin.Horizontal | StyleBox.Margin.Bottom, 2);
+            windowBackground.SetExpandMargin(StyleBox.Margin.Horizontal | StyleBox.Margin.Bottom, 2);
 
             var borderedWindowBackgroundTex = resCache.GetTexture("/Textures/Interface/Nano/window_background_bordered.png");
             var borderedWindowBackground = new StyleBoxTexture
             {
                 Texture = borderedWindowBackgroundTex,
             };
-            borderedWindowBackground.SetPatchMargin(StyleBox.Margin.All, 65);
+            borderedWindowBackground.SetPatchMargin(StyleBox.Margin.All, 2);
 
             var contextMenuBackground = new StyleBoxTexture
             {
@@ -375,35 +375,35 @@ namespace Content.Client.Stylesheets
             {
                 Texture = invSlotBgTex,
             };
-            invSlotBg.SetPatchMargin(StyleBox.Margin.All, 65);
-            invSlotBg.SetContentMarginOverride(StyleBox.Margin.All, 65);
+            invSlotBg.SetPatchMargin(StyleBox.Margin.All, 2);
+            invSlotBg.SetContentMarginOverride(StyleBox.Margin.All, 0);
 
             var handSlotHighlightTex = resCache.GetTexture("/Textures/Interface/Inventory/hand_slot_highlight.png");
             var handSlotHighlight = new StyleBoxTexture
             {
                 Texture = handSlotHighlightTex,
             };
-            handSlotHighlight.SetPatchMargin(StyleBox.Margin.All, 65);
+            handSlotHighlight.SetPatchMargin(StyleBox.Margin.All, 2);
 
             var borderedTransparentWindowBackgroundTex = resCache.GetTexture("/Textures/Interface/Nano/transparent_window_background_bordered.png");
             var borderedTransparentWindowBackground = new StyleBoxTexture
             {
                 Texture = borderedTransparentWindowBackgroundTex,
             };
-            borderedTransparentWindowBackground.SetPatchMargin(StyleBox.Margin.All, 65);
+            borderedTransparentWindowBackground.SetPatchMargin(StyleBox.Margin.All, 2);
 
             var hotbarBackground = new StyleBoxTexture
             {
                 Texture = borderedWindowBackgroundTex,
             };
-            hotbarBackground.SetPatchMargin(StyleBox.Margin.All, 65);
-            hotbarBackground.SetExpandMargin(StyleBox.Margin.All, 65);
+            hotbarBackground.SetPatchMargin(StyleBox.Margin.All, 2);
+            hotbarBackground.SetExpandMargin(StyleBox.Margin.All, 4);
 
             var buttonStorage = new StyleBoxTexture(BaseButton);
-            buttonStorage.SetPatchMargin(StyleBox.Margin.All, 65);
-            buttonStorage.SetPadding(StyleBox.Margin.All, 65);
-            buttonStorage.SetContentMarginOverride(StyleBox.Margin.Vertical, 65);
-            buttonStorage.SetContentMarginOverride(StyleBox.Margin.Horizontal, 65);
+            buttonStorage.SetPatchMargin(StyleBox.Margin.All, 10);
+            buttonStorage.SetPadding(StyleBox.Margin.All, 0);
+            buttonStorage.SetContentMarginOverride(StyleBox.Margin.Vertical, 0);
+            buttonStorage.SetContentMarginOverride(StyleBox.Margin.Horizontal, 4);
 
             var buttonContext = new StyleBoxTexture { Texture = Texture.White };
 
@@ -412,10 +412,10 @@ namespace Content.Client.Stylesheets
             {
                 Texture = buttonRectTex
             };
-            buttonRect.SetPatchMargin(StyleBox.Margin.All, 65);
-            buttonRect.SetPadding(StyleBox.Margin.All, 65);
-            buttonRect.SetContentMarginOverride(StyleBox.Margin.Vertical, 65);
-            buttonRect.SetContentMarginOverride(StyleBox.Margin.Horizontal, 65);
+            buttonRect.SetPatchMargin(StyleBox.Margin.All, 2);
+            buttonRect.SetPadding(StyleBox.Margin.All, 2);
+            buttonRect.SetContentMarginOverride(StyleBox.Margin.Vertical, 2);
+            buttonRect.SetContentMarginOverride(StyleBox.Margin.Horizontal, 2);
 
             var buttonRectHover = new StyleBoxTexture(buttonRect)
             {
@@ -438,10 +438,10 @@ namespace Content.Client.Stylesheets
             {
                 Texture = buttonRectActionMenuItemTex
             };
-            buttonRectActionMenuItem.SetPatchMargin(StyleBox.Margin.All, 65);
-            buttonRectActionMenuItem.SetPadding(StyleBox.Margin.All, 65);
-            buttonRectActionMenuItem.SetContentMarginOverride(StyleBox.Margin.Vertical, 65);
-            buttonRectActionMenuItem.SetContentMarginOverride(StyleBox.Margin.Horizontal, 65);
+            buttonRectActionMenuItem.SetPatchMargin(StyleBox.Margin.All, 2);
+            buttonRectActionMenuItem.SetPadding(StyleBox.Margin.All, 2);
+            buttonRectActionMenuItem.SetContentMarginOverride(StyleBox.Margin.Vertical, 2);
+            buttonRectActionMenuItem.SetContentMarginOverride(StyleBox.Margin.Horizontal, 2);
             var buttonRectActionMenuItemRevoked = new StyleBoxTexture(buttonRectActionMenuItem)
             {
                 Texture = buttonRectActionMenuRevokedItemTex
@@ -455,60 +455,60 @@ namespace Content.Client.Stylesheets
                 Modulate = ButtonColorPressed
             };
 
-            var buttonTex = resCache.GetTexture("/Textures/Interface/Nano/button.svg.65dpi.png");
+            var buttonTex = resCache.GetTexture("/Textures/Interface/Nano/button.svg.96dpi.png");
             var topButtonBase = new StyleBoxTexture
             {
                 Texture = buttonTex,
             };
-            topButtonBase.SetPatchMargin(StyleBox.Margin.All, 65);
-            topButtonBase.SetPadding(StyleBox.Margin.All, 65);
-            topButtonBase.SetContentMarginOverride(StyleBox.Margin.All, 65);
+            topButtonBase.SetPatchMargin(StyleBox.Margin.All, 10);
+            topButtonBase.SetPadding(StyleBox.Margin.All, 0);
+            topButtonBase.SetContentMarginOverride(StyleBox.Margin.All, 0);
 
             var topButtonOpenRight = new StyleBoxTexture(topButtonBase)
             {
-                Texture = new AtlasTexture(buttonTex, UIBox65.FromDimensions(new Vector65(65, 65), new Vector65(65, 65))),
+                Texture = new AtlasTexture(buttonTex, UIBox2.FromDimensions(new Vector2(0, 0), new Vector2(14, 24))),
             };
-            topButtonOpenRight.SetPatchMargin(StyleBox.Margin.Right, 65);
+            topButtonOpenRight.SetPatchMargin(StyleBox.Margin.Right, 0);
 
             var topButtonOpenLeft = new StyleBoxTexture(topButtonBase)
             {
-                Texture = new AtlasTexture(buttonTex, UIBox65.FromDimensions(new Vector65(65, 65), new Vector65(65, 65))),
+                Texture = new AtlasTexture(buttonTex, UIBox2.FromDimensions(new Vector2(10, 0), new Vector2(14, 24))),
             };
-            topButtonOpenLeft.SetPatchMargin(StyleBox.Margin.Left, 65);
+            topButtonOpenLeft.SetPatchMargin(StyleBox.Margin.Left, 0);
 
             var topButtonSquare = new StyleBoxTexture(topButtonBase)
             {
-                Texture = new AtlasTexture(buttonTex, UIBox65.FromDimensions(new Vector65(65, 65), new Vector65(65, 65))),
+                Texture = new AtlasTexture(buttonTex, UIBox2.FromDimensions(new Vector2(10, 0), new Vector2(3, 24))),
             };
-            topButtonSquare.SetPatchMargin(StyleBox.Margin.Horizontal, 65);
+            topButtonSquare.SetPatchMargin(StyleBox.Margin.Horizontal, 0);
 
-            var chatChannelButtonTex = resCache.GetTexture("/Textures/Interface/Nano/rounded_button.svg.65dpi.png");
+            var chatChannelButtonTex = resCache.GetTexture("/Textures/Interface/Nano/rounded_button.svg.96dpi.png");
             var chatChannelButton = new StyleBoxTexture
             {
                 Texture = chatChannelButtonTex,
             };
-            chatChannelButton.SetPatchMargin(StyleBox.Margin.All, 65);
-            chatChannelButton.SetPadding(StyleBox.Margin.All, 65);
+            chatChannelButton.SetPatchMargin(StyleBox.Margin.All, 5);
+            chatChannelButton.SetPadding(StyleBox.Margin.All, 2);
 
-            var chatFilterButtonTex = resCache.GetTexture("/Textures/Interface/Nano/rounded_button_bordered.svg.65dpi.png");
+            var chatFilterButtonTex = resCache.GetTexture("/Textures/Interface/Nano/rounded_button_bordered.svg.96dpi.png");
             var chatFilterButton = new StyleBoxTexture
             {
                 Texture = chatFilterButtonTex,
             };
-            chatFilterButton.SetPatchMargin(StyleBox.Margin.All, 65);
-            chatFilterButton.SetPadding(StyleBox.Margin.All, 65);
+            chatFilterButton.SetPatchMargin(StyleBox.Margin.All, 5);
+            chatFilterButton.SetPadding(StyleBox.Margin.All, 2);
 
-            var outputPanelScrollDownButtonTex = resCache.GetTexture("/Textures/Interface/Nano/rounded_button_half_bordered.svg.65dpi.png");
+            var outputPanelScrollDownButtonTex = resCache.GetTexture("/Textures/Interface/Nano/rounded_button_half_bordered.svg.96dpi.png");
             var outputPanelScrollDownButton = new StyleBoxTexture
             {
                 Texture = outputPanelScrollDownButtonTex,
             };
-            outputPanelScrollDownButton.SetPatchMargin(StyleBox.Margin.All, 65);
-            outputPanelScrollDownButton.SetPadding(StyleBox.Margin.All, 65);
-            outputPanelScrollDownButton.SetPadding(StyleBox.Margin.Top, 65);
-            outputPanelScrollDownButton.SetPadding(StyleBox.Margin.Bottom, 65);
+            outputPanelScrollDownButton.SetPatchMargin(StyleBox.Margin.All, 5);
+            outputPanelScrollDownButton.SetPadding(StyleBox.Margin.All, 2);
+            outputPanelScrollDownButton.SetPadding(StyleBox.Margin.Top, 0);
+            outputPanelScrollDownButton.SetPadding(StyleBox.Margin.Bottom, 0);
 
-            var smallButtonTex = resCache.GetTexture("/Textures/Interface/Nano/button_small.svg.65dpi.png");
+            var smallButtonTex = resCache.GetTexture("/Textures/Interface/Nano/button_small.svg.96dpi.png");
             var smallButtonBase = new StyleBoxTexture
             {
                 Texture = smallButtonTex,
@@ -521,8 +521,8 @@ namespace Content.Client.Stylesheets
             {
                 Texture = lineEditTex,
             };
-            lineEdit.SetPatchMargin(StyleBox.Margin.All, 65);
-            lineEdit.SetContentMarginOverride(StyleBox.Margin.Horizontal, 65);
+            lineEdit.SetPatchMargin(StyleBox.Margin.All, 3);
+            lineEdit.SetContentMarginOverride(StyleBox.Margin.Horizontal, 5);
 
             var chatBg = new StyleBoxFlat
             {
@@ -533,43 +533,43 @@ namespace Content.Client.Stylesheets
             {
                 BackgroundColor = ChatBackgroundColor,
             };
-            chatSubBg.SetContentMarginOverride(StyleBox.Margin.All, 65);
+            chatSubBg.SetContentMarginOverride(StyleBox.Margin.All, 2);
 
             var actionSearchBoxTex = resCache.GetTexture("/Textures/Interface/Nano/black_panel_dark_thin_border.png");
             var actionSearchBox = new StyleBoxTexture
             {
                 Texture = actionSearchBoxTex,
             };
-            actionSearchBox.SetPatchMargin(StyleBox.Margin.All, 65);
-            actionSearchBox.SetContentMarginOverride(StyleBox.Margin.Horizontal, 65);
+            actionSearchBox.SetPatchMargin(StyleBox.Margin.All, 3);
+            actionSearchBox.SetContentMarginOverride(StyleBox.Margin.Horizontal, 5);
 
             var tabContainerPanelTex = resCache.GetTexture("/Textures/Interface/Nano/tabcontainer_panel.png");
             var tabContainerPanel = new StyleBoxTexture
             {
                 Texture = tabContainerPanelTex,
             };
-            tabContainerPanel.SetPatchMargin(StyleBox.Margin.All, 65);
+            tabContainerPanel.SetPatchMargin(StyleBox.Margin.All, 2);
 
-            var tabContainerBoxActive = new StyleBoxFlat { BackgroundColor = new Color(65, 65, 65) };
-            tabContainerBoxActive.SetContentMarginOverride(StyleBox.Margin.Horizontal, 65);
-            var tabContainerBoxInactive = new StyleBoxFlat { BackgroundColor = new Color(65, 65, 65) };
-            tabContainerBoxInactive.SetContentMarginOverride(StyleBox.Margin.Horizontal, 65);
+            var tabContainerBoxActive = new StyleBoxFlat { BackgroundColor = new Color(64, 64, 64) };
+            tabContainerBoxActive.SetContentMarginOverride(StyleBox.Margin.Horizontal, 5);
+            var tabContainerBoxInactive = new StyleBoxFlat { BackgroundColor = new Color(32, 32, 32) };
+            tabContainerBoxInactive.SetContentMarginOverride(StyleBox.Margin.Horizontal, 5);
 
             var progressBarBackground = new StyleBoxFlat
             {
-                BackgroundColor = new Color(65.65f, 65.65f, 65.65f)
+                BackgroundColor = new Color(0.25f, 0.25f, 0.25f)
             };
-            progressBarBackground.SetContentMarginOverride(StyleBox.Margin.Vertical, 65.65f);
+            progressBarBackground.SetContentMarginOverride(StyleBox.Margin.Vertical, 14.5f);
 
             var progressBarForeground = new StyleBoxFlat
             {
-                BackgroundColor = new Color(65.65f, 65.65f, 65.65f)
+                BackgroundColor = new Color(0.25f, 0.50f, 0.25f)
             };
-            progressBarForeground.SetContentMarginOverride(StyleBox.Margin.Vertical, 65.65f);
+            progressBarForeground.SetContentMarginOverride(StyleBox.Margin.Vertical, 14.5f);
 
             // CheckBox
-            var checkBoxTextureChecked = resCache.GetTexture("/Textures/Interface/Nano/checkbox_checked.svg.65dpi.png");
-            var checkBoxTextureUnchecked = resCache.GetTexture("/Textures/Interface/Nano/checkbox_unchecked.svg.65dpi.png");
+            var checkBoxTextureChecked = resCache.GetTexture("/Textures/Interface/Nano/checkbox_checked.svg.96dpi.png");
+            var checkBoxTextureUnchecked = resCache.GetTexture("/Textures/Interface/Nano/checkbox_unchecked.svg.96dpi.png");
 
             // Tooltip box
             var tooltipTexture = resCache.GetTexture("/Textures/Interface/Nano/tooltip.png");
@@ -577,8 +577,8 @@ namespace Content.Client.Stylesheets
             {
                 Texture = tooltipTexture,
             };
-            tooltipBox.SetPatchMargin(StyleBox.Margin.All, 65);
-            tooltipBox.SetContentMarginOverride(StyleBox.Margin.Horizontal, 65);
+            tooltipBox.SetPatchMargin(StyleBox.Margin.All, 2);
+            tooltipBox.SetContentMarginOverride(StyleBox.Margin.Horizontal, 7);
 
             // Whisper box
             var whisperTexture = resCache.GetTexture("/Textures/Interface/Nano/whisper.png");
@@ -586,52 +586,52 @@ namespace Content.Client.Stylesheets
             {
                 Texture = whisperTexture,
             };
-            whisperBox.SetPatchMargin(StyleBox.Margin.All, 65);
-            whisperBox.SetContentMarginOverride(StyleBox.Margin.Horizontal, 65);
+            whisperBox.SetPatchMargin(StyleBox.Margin.All, 2);
+            whisperBox.SetContentMarginOverride(StyleBox.Margin.Horizontal, 7);
 
             // Placeholder
             var placeholderTexture = resCache.GetTexture("/Textures/Interface/Nano/placeholder.png");
             var placeholder = new StyleBoxTexture { Texture = placeholderTexture };
-            placeholder.SetPatchMargin(StyleBox.Margin.All, 65);
-            placeholder.SetExpandMargin(StyleBox.Margin.All, -65);
+            placeholder.SetPatchMargin(StyleBox.Margin.All, 19);
+            placeholder.SetExpandMargin(StyleBox.Margin.All, -5);
             placeholder.Mode = StyleBoxTexture.StretchMode.Tile;
 
-            var itemListBackgroundSelected = new StyleBoxFlat { BackgroundColor = new Color(65, 65, 65) };
-            itemListBackgroundSelected.SetContentMarginOverride(StyleBox.Margin.Vertical, 65);
-            itemListBackgroundSelected.SetContentMarginOverride(StyleBox.Margin.Horizontal, 65);
-            var itemListItemBackgroundDisabled = new StyleBoxFlat { BackgroundColor = new Color(65, 65, 65) };
-            itemListItemBackgroundDisabled.SetContentMarginOverride(StyleBox.Margin.Vertical, 65);
-            itemListItemBackgroundDisabled.SetContentMarginOverride(StyleBox.Margin.Horizontal, 65);
-            var itemListItemBackground = new StyleBoxFlat { BackgroundColor = new Color(65, 65, 65) };
-            itemListItemBackground.SetContentMarginOverride(StyleBox.Margin.Vertical, 65);
-            itemListItemBackground.SetContentMarginOverride(StyleBox.Margin.Horizontal, 65);
+            var itemListBackgroundSelected = new StyleBoxFlat { BackgroundColor = new Color(75, 75, 86) };
+            itemListBackgroundSelected.SetContentMarginOverride(StyleBox.Margin.Vertical, 2);
+            itemListBackgroundSelected.SetContentMarginOverride(StyleBox.Margin.Horizontal, 4);
+            var itemListItemBackgroundDisabled = new StyleBoxFlat { BackgroundColor = new Color(10, 10, 12) };
+            itemListItemBackgroundDisabled.SetContentMarginOverride(StyleBox.Margin.Vertical, 2);
+            itemListItemBackgroundDisabled.SetContentMarginOverride(StyleBox.Margin.Horizontal, 4);
+            var itemListItemBackground = new StyleBoxFlat { BackgroundColor = new Color(55, 55, 68) };
+            itemListItemBackground.SetContentMarginOverride(StyleBox.Margin.Vertical, 2);
+            itemListItemBackground.SetContentMarginOverride(StyleBox.Margin.Horizontal, 4);
             var itemListItemBackgroundTransparent = new StyleBoxFlat { BackgroundColor = Color.Transparent };
-            itemListItemBackgroundTransparent.SetContentMarginOverride(StyleBox.Margin.Vertical, 65);
-            itemListItemBackgroundTransparent.SetContentMarginOverride(StyleBox.Margin.Horizontal, 65);
+            itemListItemBackgroundTransparent.SetContentMarginOverride(StyleBox.Margin.Vertical, 2);
+            itemListItemBackgroundTransparent.SetContentMarginOverride(StyleBox.Margin.Horizontal, 4);
 
             var squareTex = resCache.GetTexture("/Textures/Interface/Nano/square.png");
             var listContainerButton = new StyleBoxTexture
             {
                 Texture = squareTex,
-                ContentMarginLeftOverride = 65
+                ContentMarginLeftOverride = 10
             };
 
             // NanoHeading
-            var nanoHeadingTex = resCache.GetTexture("/Textures/Interface/Nano/nanoheading.svg.65dpi.png");
+            var nanoHeadingTex = resCache.GetTexture("/Textures/Interface/Nano/nanoheading.svg.96dpi.png");
             var nanoHeadingBox = new StyleBoxTexture
             {
                 Texture = nanoHeadingTex,
-                PatchMarginRight = 65,
-                PatchMarginTop = 65,
-                ContentMarginTopOverride = 65,
-                ContentMarginLeftOverride = 65,
-                PaddingTop = 65
+                PatchMarginRight = 10,
+                PatchMarginTop = 10,
+                ContentMarginTopOverride = 2,
+                ContentMarginLeftOverride = 10,
+                PaddingTop = 4
             };
 
-            nanoHeadingBox.SetPatchMargin(StyleBox.Margin.Left | StyleBox.Margin.Bottom, 65);
+            nanoHeadingBox.SetPatchMargin(StyleBox.Margin.Left | StyleBox.Margin.Bottom, 2);
 
             // Stripe background
-            var stripeBackTex = resCache.GetTexture("/Textures/Interface/Nano/stripeback.svg.65dpi.png");
+            var stripeBackTex = resCache.GetTexture("/Textures/Interface/Nano/stripeback.svg.96dpi.png");
             var stripeBack = new StyleBoxTexture
             {
                 Texture = stripeBackTex,
@@ -639,14 +639,14 @@ namespace Content.Client.Stylesheets
             };
 
             // Slider
-            var sliderOutlineTex = resCache.GetTexture("/Textures/Interface/Nano/slider_outline.svg.65dpi.png");
-            var sliderFillTex = resCache.GetTexture("/Textures/Interface/Nano/slider_fill.svg.65dpi.png");
-            var sliderGrabTex = resCache.GetTexture("/Textures/Interface/Nano/slider_grabber.svg.65dpi.png");
+            var sliderOutlineTex = resCache.GetTexture("/Textures/Interface/Nano/slider_outline.svg.96dpi.png");
+            var sliderFillTex = resCache.GetTexture("/Textures/Interface/Nano/slider_fill.svg.96dpi.png");
+            var sliderGrabTex = resCache.GetTexture("/Textures/Interface/Nano/slider_grabber.svg.96dpi.png");
 
             var sliderFillBox = new StyleBoxTexture
             {
                 Texture = sliderFillTex,
-                Modulate = Color.FromHex("#65E65C65")
+                Modulate = Color.FromHex("#3E6C45")
             };
 
             var sliderBackBox = new StyleBoxTexture
@@ -658,7 +658,7 @@ namespace Content.Client.Stylesheets
             var sliderForeBox = new StyleBoxTexture
             {
                 Texture = sliderOutlineTex,
-                Modulate = Color.FromHex("#65")
+                Modulate = Color.FromHex("#494949")
             };
 
             var sliderGrabBox = new StyleBoxTexture
@@ -666,40 +666,40 @@ namespace Content.Client.Stylesheets
                 Texture = sliderGrabTex,
             };
 
-            sliderFillBox.SetPatchMargin(StyleBox.Margin.All, 65);
-            sliderBackBox.SetPatchMargin(StyleBox.Margin.All, 65);
-            sliderForeBox.SetPatchMargin(StyleBox.Margin.All, 65);
-            sliderGrabBox.SetPatchMargin(StyleBox.Margin.All, 65);
+            sliderFillBox.SetPatchMargin(StyleBox.Margin.All, 12);
+            sliderBackBox.SetPatchMargin(StyleBox.Margin.All, 12);
+            sliderForeBox.SetPatchMargin(StyleBox.Margin.All, 12);
+            sliderGrabBox.SetPatchMargin(StyleBox.Margin.All, 12);
 
             var sliderFillGreen = new StyleBoxTexture(sliderFillBox) { Modulate = Color.LimeGreen };
             var sliderFillRed = new StyleBoxTexture(sliderFillBox) { Modulate = Color.Red };
             var sliderFillBlue = new StyleBoxTexture(sliderFillBox) { Modulate = Color.Blue };
             var sliderFillWhite = new StyleBoxTexture(sliderFillBox) { Modulate = Color.White };
 
-            var boxFont65 = resCache.NotoStack65ElectricBoogaloo("/Fonts/Boxfont-round/Boxfont Round.ttf", 65); // Goobstation - ZH text support
+            var boxFont13 = resCache.NotoStack2ElectricBoogaloo("/Fonts/Boxfont-round/Boxfont Round.ttf", 13); // Goobstation - ZH text support
 
             var insetBack = new StyleBoxTexture
             {
                 Texture = buttonTex,
-                Modulate = Color.FromHex("#65"),
+                Modulate = Color.FromHex("#202023"),
             };
-            insetBack.SetPatchMargin(StyleBox.Margin.All, 65);
+            insetBack.SetPatchMargin(StyleBox.Margin.All, 10);
 
             // Default paper background:
             var paperBackground = new StyleBoxTexture
             {
-                Texture = resCache.GetTexture("/Textures/Interface/Paper/paper_background_default.svg.65dpi.png"),
+                Texture = resCache.GetTexture("/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"),
                 Modulate = Color.FromHex("#eaedde"), // A light cream
             };
-            paperBackground.SetPatchMargin(StyleBox.Margin.All, 65.65f);
+            paperBackground.SetPatchMargin(StyleBox.Margin.All, 16.0f);
 
-            var contextMenuExpansionTexture = resCache.GetTexture("/Textures/Interface/VerbIcons/group.svg.65dpi.png");
-            var verbMenuConfirmationTexture = resCache.GetTexture("/Textures/Interface/VerbIcons/group.svg.65dpi.png");
+            var contextMenuExpansionTexture = resCache.GetTexture("/Textures/Interface/VerbIcons/group.svg.192dpi.png");
+            var verbMenuConfirmationTexture = resCache.GetTexture("/Textures/Interface/VerbIcons/group.svg.192dpi.png");
 
             // south-facing arrow:
-            var directionIconArrowTex = resCache.GetTexture("/Textures/Interface/VerbIcons/drop.svg.65dpi.png");
-            var directionIconQuestionTex = resCache.GetTexture("/Textures/Interface/VerbIcons/information.svg.65dpi.png");
-            var directionIconHereTex = resCache.GetTexture("/Textures/Interface/VerbIcons/dot.svg.65dpi.png");
+            var directionIconArrowTex = resCache.GetTexture("/Textures/Interface/VerbIcons/drop.svg.192dpi.png");
+            var directionIconQuestionTex = resCache.GetTexture("/Textures/Interface/VerbIcons/information.svg.192dpi.png");
+            var directionIconHereTex = resCache.GetTexture("/Textures/Interface/VerbIcons/dot.svg.192dpi.png");
 
             Stylesheet = new Stylesheet(BaseRules.Concat(new[]
             {
@@ -711,7 +711,7 @@ namespace Content.Client.Stylesheets
                     new[]
                     {
                         new StyleProperty(Label.StylePropertyFontColor, NanoGold),
-                        new StyleProperty(Label.StylePropertyFont, notoSansDisplayBold65),
+                        new StyleProperty(Label.StylePropertyFont, notoSansDisplayBold14),
                     }),
                 // Alert (white) window title.
                 new StyleRule(
@@ -719,7 +719,7 @@ namespace Content.Client.Stylesheets
                     new[]
                     {
                         new StyleProperty(Label.StylePropertyFontColor, Color.White),
-                        new StyleProperty(Label.StylePropertyFont, notoSansDisplayBold65),
+                        new StyleProperty(Label.StylePropertyFont, notoSansDisplayBold14),
                     }),
                 // Window background.
                 new StyleRule(
@@ -857,20 +857,20 @@ namespace Content.Client.Stylesheets
                     new SelectorElement(typeof(Label), null, null, null)),
                     new[]
                     {
-                        new StyleProperty("font-color", Color.FromHex("#E65E65E65")),
+                        new StyleProperty("font-color", Color.FromHex("#E5E5E581")),
                     }),
 
                 // ItemStatus for hands
                 Element()
                     .Class(StyleClassItemStatusNotHeld)
-                    .Prop("font", notoSansItalic65)
+                    .Prop("font", notoSansItalic10)
                     .Prop("font-color", ItemStatusNotHeldColor)
-                    .Prop(nameof(Control.Margin), new Thickness(65, 65, 65, 65)),
+                    .Prop(nameof(Control.Margin), new Thickness(4, 0, 0, 2)),
 
                 Element()
                     .Class(StyleClassItemStatus)
-                    .Prop(nameof(RichTextLabel.LineHeightScale), 65.65f)
-                    .Prop(nameof(Control.Margin), new Thickness(65, 65, 65, 65)),
+                    .Prop(nameof(RichTextLabel.LineHeightScale), 0.7f)
+                    .Prop(nameof(Control.Margin), new Thickness(4, 0, 0, 2)),
 
                 // Context Menu window
                 Element<PanelContainer>().Class(ContextMenuPopup.StyleClassContextMenuPopup)
@@ -898,16 +898,16 @@ namespace Content.Client.Stylesheets
 
                 // Context Menu Labels
                 Element<RichTextLabel>().Class(InteractionVerb.DefaultTextStyleClass)
-                    .Prop(Label.StylePropertyFont, notoSansBoldItalic65),
+                    .Prop(Label.StylePropertyFont, notoSansBoldItalic12),
 
                 Element<RichTextLabel>().Class(ActivationVerb.DefaultTextStyleClass)
-                    .Prop(Label.StylePropertyFont, notoSansBold65),
+                    .Prop(Label.StylePropertyFont, notoSansBold12),
 
                 Element<RichTextLabel>().Class(AlternativeVerb.DefaultTextStyleClass)
-                    .Prop(Label.StylePropertyFont, notoSansItalic65),
+                    .Prop(Label.StylePropertyFont, notoSansItalic12),
 
                 Element<RichTextLabel>().Class(Verb.DefaultTextStyleClass)
-                    .Prop(Label.StylePropertyFont, notoSans65),
+                    .Prop(Label.StylePropertyFont, notoSans12),
 
                 Element<TextureRect>().Class(ContextMenuElement.StyleClassContextMenuExpansionTexture)
                     .Prop(TextureRect.StylePropertyTexture, contextMenuExpansionTexture),
@@ -990,19 +990,19 @@ namespace Content.Client.Stylesheets
 
                 Element<ContainerButton>().Class(ListContainer.StyleClassListContainerButton)
                     .Pseudo(ContainerButton.StylePseudoClassNormal)
-                    .Prop(Control.StylePropertyModulateSelf, new Color(65, 65, 65)),
+                    .Prop(Control.StylePropertyModulateSelf, new Color(55, 55, 68)),
 
                 Element<ContainerButton>().Class(ListContainer.StyleClassListContainerButton)
                     .Pseudo(ContainerButton.StylePseudoClassHover)
-                    .Prop(Control.StylePropertyModulateSelf, new Color(65, 65, 65)),
+                    .Prop(Control.StylePropertyModulateSelf, new Color(75, 75, 86)),
 
                 Element<ContainerButton>().Class(ListContainer.StyleClassListContainerButton)
                     .Pseudo(ContainerButton.StylePseudoClassPressed)
-                    .Prop(Control.StylePropertyModulateSelf, new Color(65, 65, 65)),
+                    .Prop(Control.StylePropertyModulateSelf, new Color(75, 75, 86)),
 
                 Element<ContainerButton>().Class(ListContainer.StyleClassListContainerButton)
                     .Pseudo(ContainerButton.StylePseudoClassDisabled)
-                    .Prop(Control.StylePropertyModulateSelf, new Color(65, 65, 65)),
+                    .Prop(Control.StylePropertyModulateSelf, new Color(10, 10, 12)),
 
                 // Main menu: Make those buttons bigger.
                 new StyleRule(new SelectorChild(
@@ -1010,14 +1010,14 @@ namespace Content.Client.Stylesheets
                     new SelectorElement(typeof(Label), null, null, null)),
                     new[]
                     {
-                        new StyleProperty("font", notoSansBold65),
+                        new StyleProperty("font", notoSansBold16),
                     }),
 
                 // Main menu: also make those buttons slightly more separated.
                 new StyleRule(new SelectorElement(typeof(BoxContainer), null, "mainMenuVBox", null),
                     new[]
                     {
-                        new StyleProperty(BoxContainer.StylePropertySeparation, 65),
+                        new StyleProperty(BoxContainer.StylePropertySeparation, 2),
                     }),
 
                 // Fancy LineEdit
@@ -1031,7 +1031,7 @@ namespace Content.Client.Stylesheets
                     new SelectorElement(typeof(LineEdit), new[] {LineEdit.StyleClassLineEditNotEditable}, null, null),
                     new[]
                     {
-                        new StyleProperty("font-color", new Color(65, 65, 65)),
+                        new StyleProperty("font-color", new Color(192, 192, 192)),
                     }),
 
                 new StyleRule(
@@ -1096,7 +1096,7 @@ namespace Content.Client.Stylesheets
 
                 new StyleRule(new SelectorElement(typeof(BoxContainer), new [] { CheckBox.StyleClassCheckBox }, null, null), new[]
                 {
-                    new StyleProperty(BoxContainer.StylePropertySeparation, 65),
+                    new StyleProperty(BoxContainer.StylePropertySeparation, 10),
                 }),
 
                 // Tooltip
@@ -1125,7 +1125,7 @@ namespace Content.Client.Stylesheets
                     new SelectorElement(typeof(RichTextLabel), new[] {"bubbleContent"}, null, null)),
                     new[]
                 {
-                    new StyleProperty("font", notoSansItalic65),
+                    new StyleProperty("font", notoSansItalic12),
                 }),
 
                 new StyleRule(new SelectorChild(
@@ -1133,62 +1133,62 @@ namespace Content.Client.Stylesheets
                     new SelectorElement(typeof(RichTextLabel), null, null, null)),
                     new[]
                 {
-                    new StyleProperty("font", notoSansItalic65),
+                    new StyleProperty("font", notoSansItalic12),
                 }),
 
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassLabelKeyText}, null, null), new[]
                 {
-                    new StyleProperty(Label.StylePropertyFont, notoSansBold65),
+                    new StyleProperty(Label.StylePropertyFont, notoSansBold12),
                     new StyleProperty( Control.StylePropertyModulateSelf, NanoGold)
                 }),
 
                 // alert tooltip
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassTooltipAlertTitle}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSansBold65)
+                    new StyleProperty("font", notoSansBold18)
                 }),
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassTooltipAlertDescription}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSans65)
+                    new StyleProperty("font", notoSans16)
                 }),
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassTooltipAlertCooldown}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSans65)
+                    new StyleProperty("font", notoSans16)
                 }),
 
                 // action tooltip
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassTooltipActionTitle}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSansBold65)
+                    new StyleProperty("font", notoSansBold16)
                 }),
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassTooltipActionDescription}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSans65)
+                    new StyleProperty("font", notoSans15)
                 }),
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassTooltipActionCooldown}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSans65)
+                    new StyleProperty("font", notoSans15)
                 }),
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassTooltipActionRequirements}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSans65)
+                    new StyleProperty("font", notoSans15)
                 }),
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassTooltipActionCharges}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSans65)
+                    new StyleProperty("font", notoSans15)
                 }),
 
                 // small number for the entity counter in the entity menu
                 new StyleRule(new SelectorElement(typeof(Label), new[] {ContextMenuElement.StyleClassEntityMenuIconLabel}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSans65),
+                    new StyleProperty("font", notoSans10),
                     new StyleProperty(Label.StylePropertyAlignMode, Label.AlignMode.Right),
                 }),
 
                 // hotbar slot
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassHotbarSlotNumber}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSansDisplayBold65)
+                    new StyleProperty("font", notoSansDisplayBold16)
                 }),
 
                 // Entity tooltip
@@ -1203,7 +1203,7 @@ namespace Content.Client.Stylesheets
                 new StyleRule(new SelectorElement(typeof(ItemList), null, null, null), new[]
                 {
                     new StyleProperty(ItemList.StylePropertyBackground,
-                        new StyleBoxFlat {BackgroundColor = new Color(65, 65, 65)}),
+                        new StyleBoxFlat {BackgroundColor = new Color(32, 32, 40)}),
                     new StyleProperty(ItemList.StylePropertyItemBackground,
                         itemListItemBackground),
                     new StyleProperty(ItemList.StylePropertyDisabledItemBackground,
@@ -1240,11 +1240,11 @@ namespace Content.Client.Stylesheets
                 new StyleRule(new SelectorElement(typeof(Tree), null, null, null), new[]
                 {
                     new StyleProperty(Tree.StylePropertyBackground,
-                        new StyleBoxFlat {BackgroundColor = new Color(65, 65, 65)}),
+                        new StyleBoxFlat {BackgroundColor = new Color(32, 32, 40)}),
                     new StyleProperty(Tree.StylePropertyItemBoxSelected, new StyleBoxFlat
                     {
-                        BackgroundColor = new Color(65, 65, 65),
-                        ContentMarginLeftOverride = 65
+                        BackgroundColor = new Color(55, 55, 68),
+                        ContentMarginLeftOverride = 4
                     })
                 }),
 
@@ -1257,14 +1257,14 @@ namespace Content.Client.Stylesheets
                 new StyleRule(
                     new SelectorElement(typeof(Label), new[] {Placeholder.StyleClassPlaceholderText}, null, null), new[]
                     {
-                        new StyleProperty(Label.StylePropertyFont, notoSans65),
-                        new StyleProperty(Label.StylePropertyFontColor, new Color(65, 65, 65, 65)),
+                        new StyleProperty(Label.StylePropertyFont, notoSans16),
+                        new StyleProperty(Label.StylePropertyFontColor, new Color(103, 103, 103, 128)),
                     }),
 
                 // Big Label
                 new StyleRule(new SelectorElement(typeof(Label), new[] {StyleClassLabelHeading}, null, null), new[]
                 {
-                    new StyleProperty(Label.StylePropertyFont, notoSansBold65),
+                    new StyleProperty(Label.StylePropertyFont, notoSansBold16),
                     new StyleProperty(Label.StylePropertyFontColor, NanoGold),
                 }),
 
@@ -1272,28 +1272,28 @@ namespace Content.Client.Stylesheets
                 new StyleRule(new SelectorElement(typeof(Label), new[] {StyleClassLabelHeadingBigger}, null, null),
                     new[]
                     {
-                        new StyleProperty(Label.StylePropertyFont, notoSansBold65),
+                        new StyleProperty(Label.StylePropertyFont, notoSansBold20),
                         new StyleProperty(Label.StylePropertyFontColor, NanoGold),
                     }),
 
                 // Small Label
                 new StyleRule(new SelectorElement(typeof(Label), new[] {StyleClassLabelSubText}, null, null), new[]
                 {
-                    new StyleProperty(Label.StylePropertyFont, notoSans65),
+                    new StyleProperty(Label.StylePropertyFont, notoSans10),
                     new StyleProperty(Label.StylePropertyFontColor, Color.DarkGray),
                 }),
 
                 // Label Key
                 new StyleRule(new SelectorElement(typeof(Label), new[] {StyleClassLabelKeyText}, null, null), new[]
                 {
-                    new StyleProperty(Label.StylePropertyFont, notoSansBold65),
+                    new StyleProperty(Label.StylePropertyFont, notoSansBold12),
                     new StyleProperty(Label.StylePropertyFontColor, NanoGold)
                 }),
 
                 new StyleRule(new SelectorElement(typeof(Label), new[] {StyleClassLabelSecondaryColor}, null, null),
                     new[]
                     {
-                        new StyleProperty(Label.StylePropertyFont, notoSans65),
+                        new StyleProperty(Label.StylePropertyFont, notoSans12),
                         new StyleProperty(Label.StylePropertyFontColor, Color.DarkGray),
                     }),
 
@@ -1303,23 +1303,23 @@ namespace Content.Client.Stylesheets
                     new SelectorElement(typeof(Label), null, null, null)),
                     new[]
                     {
-                        new StyleProperty("font", notoSans65)
+                        new StyleProperty("font", notoSans16)
                     }),
 
                 //APC and SMES power state label colors
                 new StyleRule(new SelectorElement(typeof(Label), new[] {StyleClassPowerStateNone}, null, null), new[]
                 {
-                    new StyleProperty(Label.StylePropertyFontColor, new Color(65.65f, 65.65f, 65.65f))
+                    new StyleProperty(Label.StylePropertyFontColor, new Color(0.8f, 0.0f, 0.0f))
                 }),
 
                 new StyleRule(new SelectorElement(typeof(Label), new[] {StyleClassPowerStateLow}, null, null), new[]
                 {
-                    new StyleProperty(Label.StylePropertyFontColor, new Color(65.65f, 65.65f, 65.65f))
+                    new StyleProperty(Label.StylePropertyFontColor, new Color(0.9f, 0.36f, 0.0f))
                 }),
 
                 new StyleRule(new SelectorElement(typeof(Label), new[] {StyleClassPowerStateGood}, null, null), new[]
                 {
-                    new StyleProperty(Label.StylePropertyFontColor, new Color(65.65f, 65.65f, 65.65f))
+                    new StyleProperty(Label.StylePropertyFontColor, new Color(0.024f, 0.8f, 0.0f))
                 }),
 
                 // Those top menu buttons.
@@ -1393,7 +1393,7 @@ namespace Content.Client.Stylesheets
                     new SelectorElement(typeof(Label), new[] {MenuButton.StyleClassLabelTopButton}, null, null),
                     new[]
                     {
-                        new StyleProperty(Label.StylePropertyFont, notoSansDisplayBold65),
+                        new StyleProperty(Label.StylePropertyFont, notoSansDisplayBold14),
                     }),
 
                 // NanoHeading
@@ -1418,18 +1418,18 @@ namespace Content.Client.Stylesheets
                 // StyleClassItemStatus
                 new StyleRule(SelectorElement.Class(StyleClassItemStatus), new[]
                 {
-                    new StyleProperty("font", notoSans65),
+                    new StyleProperty("font", notoSans10),
                 }),
 
                 Element()
                     .Class(StyleClassItemStatusNotHeld)
-                    .Prop("font", notoSansItalic65)
+                    .Prop("font", notoSansItalic10)
                     .Prop("font-color", ItemStatusNotHeldColor),
 
                 Element<RichTextLabel>()
                     .Class(StyleClassItemStatus)
-                    .Prop(nameof(RichTextLabel.LineHeightScale), 65.65f)
-                    .Prop(nameof(Control.Margin), new Thickness(65, 65, 65, -65)),
+                    .Prop(nameof(RichTextLabel.LineHeightScale), 0.7f)
+                    .Prop(nameof(Control.Margin), new Thickness(0, 0, 0, -6)),
 
                 // Slider
                 new StyleRule(SelectorElement.Type(typeof(Slider)), new []
@@ -1533,56 +1533,56 @@ namespace Content.Client.Stylesheets
                 }),
 
                 Element<PanelContainer>().Class(OptionButton.StyleClassOptionsBackground)
-                    .Prop(PanelContainer.StylePropertyPanel, new StyleBoxFlat(Color.FromHex("#65A"))),
+                    .Prop(PanelContainer.StylePropertyPanel, new StyleBoxFlat(Color.FromHex("#25252A"))),
 
                 new StyleRule(new SelectorElement(typeof(PanelContainer), new []{ ClassHighDivider}, null, null), new []
                 {
-                    new StyleProperty(PanelContainer.StylePropertyPanel, new StyleBoxFlat { BackgroundColor = NanoGold, ContentMarginBottomOverride = 65, ContentMarginLeftOverride = 65}),
+                    new StyleProperty(PanelContainer.StylePropertyPanel, new StyleBoxFlat { BackgroundColor = NanoGold, ContentMarginBottomOverride = 2, ContentMarginLeftOverride = 2}),
                 }),
 
                 Element<TextureButton>()
                     .Class(StyleClassButtonHelp)
-                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/Interface/VerbIcons/information.svg.65dpi.png")),
+                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/Interface/VerbIcons/information.svg.192dpi.png")),
 
                 // Labels ---
                 Element<Label>().Class(StyleClassLabelBig)
-                    .Prop(Label.StylePropertyFont, notoSans65),
+                    .Prop(Label.StylePropertyFont, notoSans16),
 
                 Element<Label>().Class(StyleClassLabelSmall)
-                 .Prop(Label.StylePropertyFont, notoSans65),
+                 .Prop(Label.StylePropertyFont, notoSans10),
                 // ---
 
                 // Different Background shapes ---
                 Element<PanelContainer>().Class(ClassAngleRect)
                     .Prop(PanelContainer.StylePropertyPanel, BaseAngleRect)
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#65A")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#25252A")),
 
                 Element<PanelContainer>().Class("BackgroundOpenRight")
                     .Prop(PanelContainer.StylePropertyPanel, BaseButtonOpenRight)
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#65A")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#25252A")),
 
                 Element<PanelContainer>().Class("BackgroundOpenLeft")
                     .Prop(PanelContainer.StylePropertyPanel, BaseButtonOpenLeft)
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#65A")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#25252A")),
                 // ---
 
                 // Dividers
                 Element<PanelContainer>().Class(ClassLowDivider)
                     .Prop(PanelContainer.StylePropertyPanel, new StyleBoxFlat
                     {
-                        BackgroundColor = Color.FromHex("#65"),
-                        ContentMarginLeftOverride = 65,
-                        ContentMarginBottomOverride = 65
+                        BackgroundColor = Color.FromHex("#444"),
+                        ContentMarginLeftOverride = 2,
+                        ContentMarginBottomOverride = 2
                     }),
 
                 // Window Headers
                 Element<Label>().Class("FancyWindowTitle")
-                    .Prop("font", boxFont65)
+                    .Prop("font", boxFont13)
                     .Prop("font-color", NanoGold),
 
                 Element<PanelContainer>().Class("WindowHeadingBackground")
                     .Prop("panel", new StyleBoxTexture(BaseButtonOpenLeft) { Padding = default })
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#65F65F65")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#1F1F23")),
 
                 Element<PanelContainer>().Class("WindowHeadingBackgroundLight")
                     .Prop("panel", new StyleBoxTexture(BaseButtonOpenLeft) { Padding = default }),
@@ -1590,31 +1590,31 @@ namespace Content.Client.Stylesheets
                 // Window Header Help Button
                 Element<TextureButton>().Class(FancyWindow.StyleClassWindowHelpButton)
                     .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/Interface/Nano/help.png"))
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#65B65A")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#4B596A")),
 
                 Element<TextureButton>().Class(FancyWindow.StyleClassWindowHelpButton).Pseudo(ContainerButton.StylePseudoClassHover)
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#65F65")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#7F3636")),
 
                 Element<TextureButton>().Class(FancyWindow.StyleClassWindowHelpButton).Pseudo(ContainerButton.StylePseudoClassPressed)
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#65")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#753131")),
 
                 //The lengths you have to go through to change a background color smh
                 Element<PanelContainer>().Class("PanelBackgroundBaseDark")
                     .Prop("panel", new StyleBoxTexture(BaseButtonOpenBoth) { Padding = default })
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#65F65F65")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#1F1F23")),
 
                 Element<PanelContainer>().Class("PanelBackgroundLight")
                     .Prop("panel", new StyleBoxTexture(BaseButtonOpenBoth) { Padding = default })
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#65F65F65B")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#2F2F3B")),
 
                 // Window Footer
                 Element<TextureRect>().Class("NTLogoDark")
                     .Prop(TextureRect.StylePropertyTexture, resCache.GetTexture("/Textures/Interface/Nano/ntlogo.svg.png"))
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#65")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#757575")),
 
                 Element<Label>().Class("WindowFooterText")
-                    .Prop(Label.StylePropertyFont, notoSans65)
-                    .Prop(Label.StylePropertyFontColor, Color.FromHex("#65")),
+                    .Prop(Label.StylePropertyFont, notoSans8)
+                    .Prop(Label.StylePropertyFontColor, Color.FromHex("#757575")),
 
                 // X Texture button ---
                 Element<TextureButton>().Class("CrossButtonRed")
@@ -1622,29 +1622,29 @@ namespace Content.Client.Stylesheets
                     .Prop(Control.StylePropertyModulateSelf, DangerousRedFore),
 
                 Element<TextureButton>().Class("CrossButtonRed").Pseudo(TextureButton.StylePseudoClassHover)
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#65F65")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#7F3636")),
 
                 Element<TextureButton>().Class("CrossButtonRed").Pseudo(TextureButton.StylePseudoClassHover)
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#65")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#753131")),
                 // ---
 
                 // Profile Editor
                 Element<TextureButton>().Class("SpeciesInfoDefault")
-                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/Interface/VerbIcons/information.svg.65dpi.png")),
+                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/Interface/VerbIcons/information.svg.192dpi.png")),
 
                 Element<TextureButton>().Class("SpeciesInfoWarning")
-                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/Interface/info.svg.65dpi.png"))
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#eeee65")),
+                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/Interface/info.svg.192dpi.png"))
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#eeee11")),
 
                 // The default look of paper in UIs. Pages can have components which override this
                 Element<PanelContainer>().Class("PaperDefaultBorder")
                     .Prop(PanelContainer.StylePropertyPanel, paperBackground),
                 Element<RichTextLabel>().Class("PaperWrittenText")
-                    .Prop(Label.StylePropertyFont, notoSans65)
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#65")),
+                    .Prop(Label.StylePropertyFont, notoSans12)
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#111111")),
 
                 Element<RichTextLabel>().Class("LabelSubText")
-                    .Prop(Label.StylePropertyFont, notoSans65)
+                    .Prop(Label.StylePropertyFont, notoSans10)
                     .Prop(Label.StylePropertyFontColor, Color.DarkGray),
 
                 Element<LineEdit>().Class("PaperLineEdit")
@@ -1692,7 +1692,7 @@ namespace Content.Client.Stylesheets
 
                 Child().Parent(Element<Button>().Class("ButtonSmall"))
                     .Child(Element<Label>())
-                    .Prop(Label.StylePropertyFont, notoSans65),
+                    .Prop(Label.StylePropertyFont, notoSans8),
                 // ---
 
                 Element<Label>().Class("StatusFieldTitle")
@@ -1732,21 +1732,21 @@ namespace Content.Client.Stylesheets
                 //PDA - Backgrounds
                 Element<PanelContainer>().Class("PdaContentBackground")
                     .Prop(PanelContainer.StylePropertyPanel, BaseButtonOpenBoth)
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#65a")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#25252a")),
 
                 Element<PanelContainer>().Class("PdaBackground")
                     .Prop(PanelContainer.StylePropertyPanel, BaseButtonOpenBoth)
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#65")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#000000")),
 
                 Element<PanelContainer>().Class("PdaBackgroundRect")
                     .Prop(PanelContainer.StylePropertyPanel, BaseAngleRect)
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#65")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#717059")),
 
                 Element<PanelContainer>().Class("PdaBorderRect")
                     .Prop(PanelContainer.StylePropertyPanel, AngleBorderRect),
 
                 Element<PanelContainer>().Class("BackgroundDark")
-                    .Prop(PanelContainer.StylePropertyPanel, new StyleBoxFlat(Color.FromHex("#65A"))),
+                    .Prop(PanelContainer.StylePropertyPanel, new StyleBoxFlat(Color.FromHex("#25252A"))),
 
                 //PDA - Buttons
                 Element<PdaSettingsButton>().Pseudo(ContainerButton.StylePseudoClassNormal)
@@ -1776,12 +1776,12 @@ namespace Content.Client.Stylesheets
 
                 //PDA - Text
                 Element<Label>().Class("PdaContentFooterText")
-                    .Prop(Label.StylePropertyFont, notoSans65)
-                    .Prop(Label.StylePropertyFontColor, Color.FromHex("#65")),
+                    .Prop(Label.StylePropertyFont, notoSans10)
+                    .Prop(Label.StylePropertyFontColor, Color.FromHex("#757575")),
 
                 Element<Label>().Class("PdaWindowFooterText")
-                    .Prop(Label.StylePropertyFont, notoSans65)
-                    .Prop(Label.StylePropertyFontColor, Color.FromHex("#65d65b")),
+                    .Prop(Label.StylePropertyFont, notoSans10)
+                    .Prop(Label.StylePropertyFontColor, Color.FromHex("#333d3b")),
 
                 // Fancy Tree
                 Element<ContainerButton>().Identifier(TreeItem.StyleIdentifierTreeButton)

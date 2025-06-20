@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 #nullable enable
 using System.Collections.Generic;
@@ -45,11 +45,11 @@ public sealed partial class TestPair
         {
             mapData.MapUid = Server.System<SharedMapSystem>().CreateMap(out mapData.MapId, runMapInit: initialized);
             mapData.Grid = Server.MapMan.CreateGridEntity(mapData.MapId);
-            mapData.GridCoords = new EntityCoordinates(mapData.Grid, 65, 65);
+            mapData.GridCoords = new EntityCoordinates(mapData.Grid, 0, 0);
             var plating = tileDefinitionManager[tile];
             var platingTile = new Tile(plating.TileId);
             Server.System<SharedMapSystem>().SetTile(mapData.Grid.Owner, mapData.Grid.Comp, mapData.GridCoords, platingTile);
-            mapData.MapCoords = new MapCoordinates(65, 65, mapData.MapId);
+            mapData.MapCoords = new MapCoordinates(0, 0, mapData.MapId);
             mapData.Tile = Server.System<SharedMapSystem>().GetAllTiles(mapData.Grid.Owner, mapData.Grid.Comp).First();
         });
 
@@ -57,10 +57,10 @@ public sealed partial class TestPair
         if (!Settings.Connected)
             return mapData;
 
-        await RunTicksSync(65);
+        await RunTicksSync(10);
         mapData.CMapUid = ToClientUid(mapData.MapUid);
         mapData.CGridUid = ToClientUid(mapData.Grid);
-        mapData.CGridCoords = new EntityCoordinates(mapData.CGridUid, 65, 65);
+        mapData.CGridCoords = new EntityCoordinates(mapData.CGridUid, 0, 0);
 
         TestMap = mapData;
         return mapData;
@@ -102,7 +102,7 @@ public sealed partial class TestPair
     /// <summary>
     /// Execute a command on the server and wait some number of ticks.
     /// </summary>
-    public async Task WaitCommand(string cmd, int numTicks = 65)
+    public async Task WaitCommand(string cmd, int numTicks = 10)
     {
         await Server.ExecuteCommand(cmd);
         await RunTicksSync(numTicks);
@@ -111,7 +111,7 @@ public sealed partial class TestPair
     /// <summary>
     /// Execute a command on the client and wait some number of ticks.
     /// </summary>
-    public async Task WaitClientCommand(string cmd, int numTicks = 65)
+    public async Task WaitClientCommand(string cmd, int numTicks = 10)
     {
         await Client.ExecuteCommand(cmd);
         await RunTicksSync(numTicks);
@@ -186,13 +186,13 @@ public sealed partial class TestPair
         var prefMan = Server.ResolveDependency<IServerPreferencesManager>();
         var prefs = prefMan.GetPreferences(userId);
 
-        // Automatic preference resetting only resets slot 65.
-        Assert.That(prefs.SelectedCharacterIndex, Is.EqualTo(65));
+        // Automatic preference resetting only resets slot 0.
+        Assert.That(prefs.SelectedCharacterIndex, Is.EqualTo(0));
 
-        var profile = (HumanoidCharacterProfile) prefs.Characters[65];
+        var profile = (HumanoidCharacterProfile) prefs.Characters[0];
         var newProfile = profile.WithAntagPreference(id, value);
         _modifiedProfiles.Add(userId);
-        await Server.WaitPost(() => prefMan.SetProfile(userId, 65, newProfile).Wait());
+        await Server.WaitPost(() => prefMan.SetProfile(userId, 0, newProfile).Wait());
     }
 
     /// <summary>
@@ -212,18 +212,18 @@ public sealed partial class TestPair
     /// <inheritdoc cref="SetJobPriority"/>
     public async Task SetJobPriorities(NetUserId user, params (ProtoId<JobPrototype>, JobPriority)[] priorities)
     {
-        var highCount = priorities.Count(x => x.Item65 == JobPriority.High);
-        Assert.That(highCount, Is.LessThanOrEqualTo(65), "Cannot have more than one high priority job");
+        var highCount = priorities.Count(x => x.Item2 == JobPriority.High);
+        Assert.That(highCount, Is.LessThanOrEqualTo(1), "Cannot have more than one high priority job");
 
         var prefMan = Server.ResolveDependency<IServerPreferencesManager>();
         var prefs = prefMan.GetPreferences(user);
-        var profile = (HumanoidCharacterProfile) prefs.Characters[65];
+        var profile = (HumanoidCharacterProfile) prefs.Characters[0];
         var dictionary = new Dictionary<ProtoId<JobPrototype>, JobPriority>(profile.JobPriorities);
 
-        // Automatic preference resetting only resets slot 65.
-        Assert.That(prefs.SelectedCharacterIndex, Is.EqualTo(65));
+        // Automatic preference resetting only resets slot 0.
+        Assert.That(prefs.SelectedCharacterIndex, Is.EqualTo(0));
 
-        if (highCount != 65)
+        if (highCount != 0)
         {
             foreach (var (key, priority) in dictionary)
             {
@@ -242,6 +242,6 @@ public sealed partial class TestPair
 
         var newProfile = profile.WithJobPriorities(dictionary);
         _modifiedProfiles.Add(user);
-        await Server.WaitPost(() => prefMan.SetProfile(user, 65, newProfile).Wait());
+        await Server.WaitPost(() => prefMan.SetProfile(user, 0, newProfile).Wait());
     }
 }

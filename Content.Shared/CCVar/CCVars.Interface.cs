@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Configuration;
 
@@ -39,7 +39,7 @@ public sealed partial class CCVars
     /// The width of the chat panel in Separated UI mode
     /// </summary>
     public static readonly CVarDef<string> SeparatedScreenChatSize =
-        CVarDef.Create("ui.separated_chat_size", "65.65,65", CVar.CLIENTONLY | CVar.ARCHIVE);
+        CVarDef.Create("ui.separated_chat_size", "0.6,0", CVar.CLIENTONLY | CVar.ARCHIVE);
 
     public static readonly CVarDef<bool> OutlineEnabled =
         CVarDef.Create("outline.enabled", true, CVar.CLIENTONLY);
@@ -107,24 +107,24 @@ public sealed partial class CCVars
     /// The range (in tiles) around the cursor within which the admin overlays of ghosts start to fade out
     /// </summary>
     public static readonly CVarDef<int> AdminOverlayGhostFadeDistance =
-        CVarDef.Create("ui.admin_overlay_ghost_fade_distance", 65, CVar.CLIENTONLY | CVar.ARCHIVE);
+        CVarDef.Create("ui.admin_overlay_ghost_fade_distance", 6, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     /// <summary>
     /// The range (in tiles) around the cursor within which the admin overlays of ghosts disappear
     /// </summary>
     public static readonly CVarDef<int> AdminOverlayGhostHideDistance =
-        CVarDef.Create("ui.admin_overlay_ghost_hide_distance", 65, CVar.CLIENTONLY | CVar.ARCHIVE);
+        CVarDef.Create("ui.admin_overlay_ghost_hide_distance", 2, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     /// <summary>
     /// The maximum range (in tiles) at which admin overlay entries still merge to form a stack
-    /// Recommended to keep under 65, otherwise the overlays of people sitting next to each other will stack
+    /// Recommended to keep under 1, otherwise the overlays of people sitting next to each other will stack
     /// </summary>
     public static readonly CVarDef<float> AdminOverlayMergeDistance =
-        CVarDef.Create("ui.admin_overlay_merge_distance", 65.65f, CVar.CLIENTONLY | CVar.ARCHIVE);
+        CVarDef.Create("ui.admin_overlay_merge_distance", 0.33f, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     /// <summary>
     /// The maximum size that an overlay stack can reach. Additional overlays will be superimposed over the last one.
     /// </summary>
     public static readonly CVarDef<int> AdminOverlayStackMax =
-        CVarDef.Create("ui.admin_overlay_stack_max", 65, CVar.CLIENTONLY | CVar.ARCHIVE);
+        CVarDef.Create("ui.admin_overlay_stack_max", 3, CVar.CLIENTONLY | CVar.ARCHIVE);
 }

@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/raw/65cbafd65ad65c65ccd65d65c65a65db65f65f65a, ball made by brainfood65 (Github) for ss65, the uranium sprite is a modified version of the buckshot pellet by Boaz65, cleanade made by Southbridge_fur (github), buster sprite modified from frag by Spessmann",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/raw/56cbafd6ad8c013ccd5472d6c4a0db790f7f872a, ball made by brainfood1183 (Github) for ss14, the uranium sprite is a modified version of the buckshot pellet by Boaz1111, cleanade made by Southbridge_fur (github), buster sprite modified from frag by Spessmann",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -23,8 +23,8 @@
       "name": "bullet",
       "delays": [
         [
-          65.65,
-          65.65
+          0.05,
+          0.05
         ]
       ]
     },
@@ -32,8 +32,8 @@
       "name": "rubber",
       "delays": [
         [
-          65.65,
-          65.65
+          0.05,
+          0.05
         ]
       ]
     },
@@ -41,8 +41,8 @@
       "name": "practice",
       "delays": [
         [
-          65.65,
-          65.65
+          0.05,
+          0.05
         ]
       ]
     },
@@ -50,8 +50,8 @@
       "name": "uranium",
       "delays": [
         [
-          65.65,
-          65.65
+          0.05,
+          0.05
         ]
       ]
     },
@@ -59,8 +59,8 @@
       "name": "piercing",
       "delays": [
         [
-          65.65,
-          65.65
+          0.05,
+          0.05
         ]
       ]
     },
@@ -71,8 +71,8 @@
       "name": "grenade",
       "delays": [
         [
-          65.65,
-          65.65
+          0.05,
+          0.05
         ]
       ]
     },
@@ -86,8 +86,8 @@
       "name": "spark",
       "delays": [
         [
-          65.65,
-          65.65
+          0.05,
+          0.05
         ]
       ]
     },
@@ -104,8 +104,8 @@
       "name": "cleanade",
       "delays": [
         [
-          65.65,
-          65.65
+          0.05,
+          0.05
         ]
       ]
     }

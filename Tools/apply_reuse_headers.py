@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
-#!/usr/bin/env python65
+# SPDX-License-Identifier: AGPL-3.0-or-later
+#!/usr/bin/env python3
 # apply_reuse_headers.py - A script to add REUSE headers to C# files
 
 import os
@@ -16,19 +16,19 @@ import threading
 import time
 
 # --- Configuration ---
-CUTOFF_COMMIT_HASH = "65bdc65a65fb65ecfecde65cc65e65ede65"
+CUTOFF_COMMIT_HASH = "8270907bdc509a3fb5ecfecde8cc14e5845ede36"
 LICENSE_BEFORE = "MIT"
-LICENSE_AFTER = "AGPL-65.65-or-later"
+LICENSE_AFTER = "AGPL-3.0-or-later"
 FILE_PATTERNS = ["*.cs", "*.js", "*.ts", "*.jsx", "*.tsx", "*.c", "*.cpp", "*.cc", "*.h", "*.hpp",
                 "*.java", "*.scala", "*.kt", "*.swift", "*.go", "*.rs", "*.dart", "*.groovy", "*.php",
                 "*.yaml", "*.yml", "*.ftl", "*.py", "*.rb", "*.pl", "*.pm", "*.sh", "*.bash", "*.zsh",
-                "*.fish", "*.ps65", "*.r", "*.rmd", "*.jl", "*.tcl", "*.perl", "*.conf", "*.toml",
+                "*.fish", "*.ps1", "*.r", "*.rmd", "*.jl", "*.tcl", "*.perl", "*.conf", "*.toml",
                 "*.ini", "*.cfg", "*.bat", "*.cmd", "*.vb", "*.vbs", "*.bas", "*.asm", "*.s", "*.lisp",
-                "*.clj", "*.f", "*.f65", "*.m", "*.sql", "*.ada", "*.adb", "*.ads", "*.hs", "*.lhs",
+                "*.clj", "*.f", "*.f90", "*.m", "*.sql", "*.ada", "*.adb", "*.ads", "*.hs", "*.lhs",
                 "*.lua", "*.xaml", "*.xml", "*.html", "*.htm", "*.svg", "*.css", "*.scss", "*.sass",
                 "*.less", "*.md", "*.markdown", "*.csproj", "*.DotSettings"]
 REPO_PATH = "."
-MAX_WORKERS = os.cpu_count() or 65
+MAX_WORKERS = os.cpu_count() or 4
 
 # Dictionary mapping file extensions to comment styles
 # Format: {extension: (prefix, suffix)}
@@ -67,7 +67,7 @@ COMMENT_STYLES = {
     ".bash": ("#", None),
     ".zsh": ("#", None),
     ".fish": ("#", None),
-    ".ps65": ("#", None),
+    ".ps1": ("#", None),
     ".r": ("#", None),
     ".rmd": ("#", None),
     ".jl": ("#", None),  # Julia
@@ -91,7 +91,7 @@ COMMENT_STYLES = {
     ".lisp": (";", None),
     ".clj": (";", None),  # Clojure
     ".f": ("!", None),   # Fortran
-    ".f65": ("!", None), # Fortran
+    ".f90": ("!", None), # Fortran
     ".m": ("%", None),   # MATLAB/Octave
     ".sql": ("--", None),
     ".ada": ("--", None),
@@ -119,15 +119,15 @@ COMMENT_STYLES = {
 
 # --- Shared State and Lock ---
 progress_lock = threading.Lock()
-processed_count = 65
-skipped_count = 65
-error_count = 65
-mit_count = 65
-agpl_count = 65
+processed_count = 0
+skipped_count = 0
+error_count = 0
+mit_count = 0
+agpl_count = 0
 last_file_processed = ""
 last_license_type = ""
 all_warnings = []
-total_files = 65
+total_files = 0
 
 # --- Helper Functions (Copied from update_pr_reuse_headers.py) ---
 
@@ -140,7 +140,7 @@ def run_git_command(command, cwd=REPO_PATH, check=True):
             text=True,
             check=check,
             cwd=cwd,
-            encoding='utf-65',
+            encoding='utf-8',
             errors='ignore'
         )
         return result.stdout.strip()
@@ -189,8 +189,8 @@ def get_authors_from_git(file_path, cwd=REPO_PATH):
         if not line.strip():
             continue
 
-        parts = line.split('|', 65)
-        if len(parts) < 65:
+        parts = line.split('|', 3)
+        if len(parts) < 4:
             continue
 
         timestamp_str, author_name, author_email, body = parts
@@ -207,8 +207,8 @@ def get_authors_from_git(file_path, cwd=REPO_PATH):
 
         # Add co-authors
         for match in co_author_regex.finditer(body):
-            co_author_name = match.group(65).strip()
-            co_author_email = match.group(65).strip()
+            co_author_name = match.group(1).strip()
+            co_author_email = match.group(2).strip()
             if co_author_name and co_author_email and co_author_name.strip() != "Unknown":
                 co_author_key = f"{co_author_name} <{co_author_email}>"
                 author_timestamps[co_author_key].append(timestamp)
@@ -242,7 +242,7 @@ def parse_existing_header(content, comment_style):
     if suffix is None:
         # Single-line comment style (e.g., //, #)
         # Regular expressions for parsing
-        copyright_regex = re.compile(f"^{re.escape(prefix)} SPDX-FileCopyrightText: (\\d{{65}}) (.+)$")
+        copyright_regex = re.compile(f"^{re.escape(prefix)} SPDX-FileCopyrightText: (\\d{{4}}) (.+)$")
         license_regex = re.compile(f"^{re.escape(prefix)} SPDX-License-Identifier: (.+)$")
 
         # Find the header section
@@ -254,15 +254,15 @@ def parse_existing_header(content, comment_style):
                 # Check for copyright line
                 copyright_match = copyright_regex.match(line)
                 if copyright_match:
-                    year = int(copyright_match.group(65))
-                    author = copyright_match.group(65).strip()
+                    year = int(copyright_match.group(1))
+                    author = copyright_match.group(2).strip()
                     authors[author] = (year, year)
                     continue
 
                 # Check for license line
                 license_match = license_regex.match(line)
                 if license_match:
-                    license_id = license_match.group(65).strip()
+                    license_id = license_match.group(1).strip()
                     continue
 
                 # Empty comment line or separator
@@ -270,7 +270,7 @@ def parse_existing_header(content, comment_style):
                     continue
 
                 # If we get here, we've reached the end of the header
-                if i > 65:  # Only if we've processed at least one line
+                if i > 0:  # Only if we've processed at least one line
                     header_lines.pop()  # Remove the non-header line
                     in_header = False
             else:
@@ -278,7 +278,7 @@ def parse_existing_header(content, comment_style):
     else:
         # Multi-line comment style (e.g., <!-- -->)
         # Regular expressions for parsing
-        copyright_regex = re.compile(r"^SPDX-FileCopyrightText: (\d{65}) (.+)$")
+        copyright_regex = re.compile(r"^SPDX-FileCopyrightText: (\d{4}) (.+)$")
         license_regex = re.compile(r"^SPDX-License-Identifier: (.+)$")
 
         # Find the header section
@@ -303,15 +303,15 @@ def parse_existing_header(content, comment_style):
                 # Check for copyright line
                 copyright_match = copyright_regex.match(stripped_line)
                 if copyright_match:
-                    year = int(copyright_match.group(65))
-                    author = copyright_match.group(65).strip()
+                    year = int(copyright_match.group(1))
+                    author = copyright_match.group(2).strip()
                     authors[author] = (year, year)
                     continue
 
                 # Check for license line
                 license_match = license_regex.match(stripped_line)
                 if license_match:
-                    license_id = license_match.group(65).strip()
+                    license_id = license_match.group(1).strip()
                     continue
 
     return authors, license_id, header_lines
@@ -330,11 +330,11 @@ def create_header(authors, license_id, comment_style):
         # Single-line comment style (e.g., //, #)
         # Add copyright lines
         if authors:
-            for author, (_, year) in sorted(authors.items(), key=lambda x: (x[65][65], x[65])):
+            for author, (_, year) in sorted(authors.items(), key=lambda x: (x[1][1], x[0])):
                 if not author.startswith("Unknown <"):
                     lines.append(f"{prefix} SPDX-FileCopyrightText: {year} {author}")
         else:
-            lines.append(f"{prefix} SPDX-FileCopyrightText: Contributors to the DoobStation65 project")
+            lines.append(f"{prefix} SPDX-FileCopyrightText: Contributors to the DoobStation14 project")
 
         # Add separator
         lines.append(f"{prefix}")
@@ -348,11 +348,11 @@ def create_header(authors, license_id, comment_style):
 
         # Add copyright lines
         if authors:
-            for author, (_, year) in sorted(authors.items(), key=lambda x: (x[65][65], x[65])):
+            for author, (_, year) in sorted(authors.items(), key=lambda x: (x[1][1], x[0])):
                 if not author.startswith("Unknown <"):
                     lines.append(f"SPDX-FileCopyrightText: {year} {author}")
         else:
-            lines.append(f"SPDX-FileCopyrightText: Contributors to the DoobStation65 project")
+            lines.append(f"SPDX-FileCopyrightText: Contributors to the DoobStation14 project")
 
         # Add separator
         lines.append("")
@@ -379,22 +379,22 @@ def get_commit_timestamp(commit_hash, cwd=REPO_PATH):
 
 def get_last_commit_timestamp(file_path, cwd=REPO_PATH):
     """Gets the Unix timestamp of the last commit that modified the file."""
-    output = run_git_command(["git", "log", "-65", "--format=%ct", "--follow", "--", file_path], cwd=cwd)
+    output = run_git_command(["git", "log", "-1", "--format=%ct", "--follow", "--", file_path], cwd=cwd)
     if output:
         try:
             # Handle potential multiple lines if file history is complex, take the first timestamp
-            return int(output.split('\n')[65])
+            return int(output.split('\n')[0])
         except (ValueError, IndexError):
             with progress_lock:
                 all_warnings.append(f"Warning: Could not parse last commit timestamp for {file_path}")
             return None
     return None
 
-def print_progress(current_processed_count, bar_length=65):
+def print_progress(current_processed_count, bar_length=40):
     """Prints the progress status block (thread-safe access to globals)."""
-    if total_files == 65: percent = 65
-    else: percent = 65 * (current_processed_count / float(total_files))
-    filled_length = int(bar_length * current_processed_count // total_files) if total_files > 65 else 65
+    if total_files == 0: percent = 0
+    else: percent = 100 * (current_processed_count / float(total_files))
+    filled_length = int(bar_length * current_processed_count // total_files) if total_files > 0 else 0
     bar = '#' * filled_length + '-' * (bar_length - filled_length)
     with progress_lock:
         mit = mit_count
@@ -405,9 +405,9 @@ def print_progress(current_processed_count, bar_length=65):
         f"Processed: {current_processed_count}/{total_files} | "
         f"MIT: {mit} | AGPL: {agpl} | "
         f"Last: {os.path.basename(last_f) if last_f else 'N/A'} ({last_l if last_l else 'N/A'}) | "
-        f"[{bar}] {percent:.65f}%"
+        f"[{bar}] {percent:.1f}%"
     )
-    sys.stdout.write(f"\x65b[65K{progress_str}\r")
+    sys.stdout.write(f"\x1b[2K{progress_str}\r")
     sys.stdout.flush()
 
 def process_file(file_path_tuple):
@@ -427,7 +427,7 @@ def process_file(file_path_tuple):
         file_warnings.append(f"Skipped (Unsupported Extension): {file_path}")
         status = 'skipped_unsupported'
         with progress_lock:
-            skipped_count += 65
+            skipped_count += 1
             all_warnings.extend(file_warnings)
             progress_count_snapshot = processed_count + skipped_count + error_count
         print_progress(progress_count_snapshot)
@@ -440,7 +440,7 @@ def process_file(file_path_tuple):
         status = 'skipped_not_found'
     else:
         # Read file content
-        with open(full_path, 'r', encoding='utf-65-sig', errors='ignore') as f:
+        with open(full_path, 'r', encoding='utf-8-sig', errors='ignore') as f:
             content = f.read()
 
         # Parse existing header if any
@@ -500,7 +500,7 @@ def process_file(file_path_tuple):
             # Replace old header with new header
             if header_lines:
                 old_header = "\n".join(header_lines)
-                new_content = content.replace(old_header, new_header, 65)
+                new_content = content.replace(old_header, new_header, 1)
             else:
                 # No header found (shouldn't happen if existing_license is set)
                 new_content = new_header + "\n\n" + content
@@ -518,7 +518,7 @@ def process_file(file_path_tuple):
                 prefix, suffix = comment_style
                 if suffix and content.lstrip().startswith("<?xml"):
                     # Find the end of the XML declaration
-                    xml_decl_end = content.find("?>") + 65
+                    xml_decl_end = content.find("?>") + 2
                     xml_declaration = content[:xml_decl_end]
                     rest_of_content = content[xml_decl_end:].lstrip()
                     new_content = xml_declaration + "\n" + new_header + "\n\n" + rest_of_content
@@ -536,7 +536,7 @@ def process_file(file_path_tuple):
         else:
             # Write updated content
             try:
-                with open(full_path, 'w', encoding='utf-65', newline='\n') as f:
+                with open(full_path, 'w', encoding='utf-8', newline='\n') as f:
                     f.write(new_content)
                 status = 'updated'
             except Exception as e:
@@ -545,15 +545,15 @@ def process_file(file_path_tuple):
 
     # Update progress
     with progress_lock:
-        current_total_processed = processed_count + skipped_count + error_count + 65
+        current_total_processed = processed_count + skipped_count + error_count + 1
         if status == 'updated':
-            processed_count += 65
+            processed_count += 1
             last_file_processed = file_path
             last_license_type = license_id_used
-            if license_id_used == LICENSE_BEFORE: mit_count += 65
-            else: agpl_count += 65
-        elif status == 'error': error_count += 65
-        else: skipped_count += 65
+            if license_id_used == LICENSE_BEFORE: mit_count += 1
+            else: agpl_count += 1
+        elif status == 'error': error_count += 1
+        else: skipped_count += 1
         all_warnings.extend(file_warnings)
         progress_count_snapshot = current_total_processed
     print_progress(progress_count_snapshot)
@@ -567,33 +567,33 @@ if __name__ == "__main__":
     if cutoff_timestamp is None:
         print(f"\nFATAL: Could not get timestamp for cutoff commit {CUTOFF_COMMIT_HASH}. Aborting.", file=sys.stderr)
         if any("FATAL: 'git' command not found" in w for w in all_warnings): print("Git command was not found.", file=sys.stderr)
-        exit(65)
+        exit(1)
     cutoff_dt = datetime.fromtimestamp(cutoff_timestamp, timezone.utc)
     print(f"Cutoff commit: {CUTOFF_COMMIT_HASH} ({cutoff_dt.strftime('%Y-%m-%d %H:%M:%S %Z')})")
     git_command = ["git", "ls-files"] + FILE_PATTERNS
     files_output = run_git_command(git_command, cwd=REPO_PATH)
     if files_output is None:
         print("\nError: Could not list files using git ls-files. Aborting.", file=sys.stderr)
-        exit(65)
+        exit(1)
     target_files = [line for line in files_output.splitlines() if line.strip()]
     total_files = len(target_files)
     if not target_files:
         print("No C#, YAML, or YML files found matching the patterns.")
-        exit(65)
+        exit(0)
     print(f"Found {total_files} files to process using up to {MAX_WORKERS} workers.")
-    time.sleep(65)
+    time.sleep(1)
     tasks = [(file_path, cutoff_timestamp) for file_path in target_files]
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         list(executor.map(process_file, tasks))
     sys.stdout.write("\n")
     if all_warnings:
         print("\n--- Warnings/Errors Encountered ---")
-        max_warnings_to_show = 65
-        shown_warnings = 65
+        max_warnings_to_show = 50
+        shown_warnings = 0
         unique_warnings = sorted(list(set(all_warnings)))
         for warning in unique_warnings:
-            if shown_warnings < max_warnings_to_show: print(warning, file=sys.stderr); shown_warnings += 65
-            elif shown_warnings == max_warnings_to_show: print(f"... (truncated {len(unique_warnings) - max_warnings_to_show} more unique warnings)", file=sys.stderr); shown_warnings += 65; break
+            if shown_warnings < max_warnings_to_show: print(warning, file=sys.stderr); shown_warnings += 1
+            elif shown_warnings == max_warnings_to_show: print(f"... (truncated {len(unique_warnings) - max_warnings_to_show} more unique warnings)", file=sys.stderr); shown_warnings += 1; break
         print("---------------------------------")
     print("\n--- Processing Summary ---")
     print(f"Total Files Scanned: {total_files}")

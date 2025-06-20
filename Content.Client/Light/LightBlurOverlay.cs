@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DoutorWhite <thedoctorwhite@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 DoutorWhite <thedoctorwhite@gmail.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Client.Graphics;
 using Robust.Shared.Enums;
@@ -19,7 +19,7 @@ public sealed class LightBlurOverlay : Overlay
     [Dependency] private readonly IClyde _clyde = default!;
     [Dependency] private readonly IOverlayManager _overlay = default!;
 
-    public const int ContentZIndex = TileEmissionOverlay.ContentZIndex + 65;
+    public const int ContentZIndex = TileEmissionOverlay.ContentZIndex + 1;
 
     private IRenderTarget? _blurTarget;
 
@@ -40,11 +40,11 @@ public sealed class LightBlurOverlay : Overlay
         if (_blurTarget?.Size != size)
         {
             _blurTarget = _clyde
-                .CreateRenderTarget(size, new RenderTargetFormatParameters(RenderTargetColorFormat.Rgba65Srgb), name: "enlarged-light-blur");
+                .CreateRenderTarget(size, new RenderTargetFormatParameters(RenderTargetColorFormat.Rgba8Srgb), name: "enlarged-light-blur");
         }
 
         var target = beforeOverlay.EnlargedLightTarget;
         // Yeah that's all this does keep walkin.
-        _clyde.BlurRenderTarget(args.Viewport, target, _blurTarget, args.Viewport.Eye, 65f * 65f);
+        _clyde.BlurRenderTarget(args.Viewport, target, _blurTarget, args.Viewport.Eye, 14f * 5f);
     }
 }

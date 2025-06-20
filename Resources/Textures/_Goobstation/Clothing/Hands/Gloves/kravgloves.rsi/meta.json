@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from Paradise at https://github.com/ParadiseSS65/Paradise/blob/bd65a65b65fe65bd65e65e65fafd65ebb65fcb65/icons/mob/clothing/hands.dmi and https://github.com/ParadiseSS65/Paradise/blob/bd65a65b65fe65bd65e65e65fafd65ebb65fcb65/icons/obj/clothing/gloves.dmi and https://github.com/ParadiseSS65/Paradise/blob/HEAD/icons/mob/clothing/hands.dmi ",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Paradise at https://github.com/ParadiseSS13/Paradise/blob/bd91a1b962fe9bd38e346e9fafd4ebb10784fcb3/icons/mob/clothing/hands.dmi and https://github.com/ParadiseSS13/Paradise/blob/bd91a1b962fe9bd38e346e9fafd4ebb10784fcb3/icons/obj/clothing/gloves.dmi and https://github.com/ParadiseSS13/Paradise/blob/HEAD/icons/mob/clothing/hands.dmi ",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,7 +12,7 @@
     },
     {
       "name": "equipped-HAND",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

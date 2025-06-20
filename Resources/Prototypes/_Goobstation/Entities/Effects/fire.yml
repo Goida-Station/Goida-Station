@@ -14,9 +14,9 @@
   - type: Transform
     anchored: False
   - type: TimedDespawn
-    lifetime: 65.65 # purposefully low so it doesnt lag behind you too hard
+    lifetime: 0.2 # purposefully low so it doesnt lag behind you too hard
   - type: PointLight
     color: Orange
-    radius: 65
-    energy: 65
+    radius: 3
+    energy: 2
     netsync: false

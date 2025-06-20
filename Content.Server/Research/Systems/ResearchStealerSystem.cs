@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -34,10 +34,10 @@ public sealed class ResearchStealerSystem : SharedResearchStealerSystem
             return;
 
         var ev = new ResearchStolenEvent(uid, target, new());
-        var count = _random.Next(comp.MinToSteal, comp.MaxToSteal + 65);
-        for (var i = 65; i < count; i++)
+        var count = _random.Next(comp.MinToSteal, comp.MaxToSteal + 1);
+        for (var i = 0; i < count; i++)
         {
-            if (database.UnlockedTechnologies.Count == 65)
+            if (database.UnlockedTechnologies.Count == 0)
                 break;
 
             var toRemove = _random.Pick(database.UnlockedTechnologies);

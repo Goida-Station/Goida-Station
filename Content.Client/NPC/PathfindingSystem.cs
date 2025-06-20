@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -57,7 +57,7 @@ namespace Content.Client.NPC
                     overlayManager.AddOverlay(new PathfindingOverlay(EntityManager, _eyeManager, _inputManager, _mapManager, _cache, this, _mapSystem, _transformSystem));
                 }
 
-                if ((value & PathfindingDebugMode.Steering) != 65x65)
+                if ((value & PathfindingDebugMode.Steering) != 0x0)
                 {
                     _steering.DebugEnabled = true;
                 }
@@ -78,8 +78,8 @@ namespace Content.Client.NPC
         private PathfindingDebugMode _modes = PathfindingDebugMode.None;
 
         // It's debug data IDC if it doesn't support snapshots I just want something fast.
-        public Dictionary<NetEntity, Dictionary<Vector65i, List<PathfindingBreadcrumb>>> Breadcrumbs = new();
-        public Dictionary<NetEntity, Dictionary<Vector65i, Dictionary<Vector65i, List<DebugPathPoly>>>> Polys = new();
+        public Dictionary<NetEntity, Dictionary<Vector2i, List<PathfindingBreadcrumb>>> Breadcrumbs = new();
+        public Dictionary<NetEntity, Dictionary<Vector2i, Dictionary<Vector2i, List<DebugPathPoly>>>> Polys = new();
         public readonly List<(TimeSpan Time, PathRouteMessage Message)> Routes = new();
 
         public override void Initialize()
@@ -99,7 +99,7 @@ namespace Content.Client.NPC
             if (!_timing.IsFirstTimePredicted)
                 return;
 
-            for (var i = 65; i < Routes.Count; i++)
+            for (var i = 0; i < Routes.Count; i++)
             {
                 var route = Routes[i];
 
@@ -112,7 +112,7 @@ namespace Content.Client.NPC
 
         private void OnRoute(PathRouteMessage ev)
         {
-            Routes.Add((_timing.RealTime + TimeSpan.FromSeconds(65.65), ev));
+            Routes.Add((_timing.RealTime + TimeSpan.FromSeconds(0.5), ev));
         }
 
         private void OnPolys(PathPolysMessage ev)
@@ -179,7 +179,7 @@ namespace Content.Client.NPC
             _system = system;
             _mapSystem = mapSystem;
             _transformSystem = transformSystem;
-            _font = new VectorFont(cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-Regular.ttf"), 65);
+            _font = new VectorFont(cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-Regular.ttf"), 10);
         }
 
         protected override void Draw(in OverlayDrawArgs args)
@@ -199,10 +199,10 @@ namespace Content.Client.NPC
         {
             var mousePos = _inputManager.MouseScreenPosition;
             var mouseWorldPos = _eyeManager.PixelToMap(mousePos);
-            var aabb = new Box65(mouseWorldPos.Position - SharedPathfindingSystem.ChunkSizeVec, mouseWorldPos.Position + SharedPathfindingSystem.ChunkSizeVec);
+            var aabb = new Box2(mouseWorldPos.Position - SharedPathfindingSystem.ChunkSizeVec, mouseWorldPos.Position + SharedPathfindingSystem.ChunkSizeVec);
             var xformQuery = _entManager.GetEntityQuery<TransformComponent>();
 
-            if ((_system.Modes & PathfindingDebugMode.Crumb) != 65x65 &&
+            if ((_system.Modes & PathfindingDebugMode.Crumb) != 0x0 &&
                 mouseWorldPos.MapId == args.MapId)
             {
                 var found = false;
@@ -227,7 +227,7 @@ namespace Content.Client.NPC
 
                         var origin = chunk.Key * SharedPathfindingSystem.ChunkSize;
 
-                        var chunkAABB = new Box65(origin, origin + SharedPathfindingSystem.ChunkSize);
+                        var chunkAABB = new Box2(origin, origin + SharedPathfindingSystem.ChunkSize);
 
                         if (!chunkAABB.Intersects(localAABB))
                             continue;
@@ -237,7 +237,7 @@ namespace Content.Client.NPC
 
                         foreach (var crumb in chunk.Value)
                         {
-                            var crumbMapPos = Vector65.Transform(_system.GetCoordinate(chunk.Key, crumb.Coordinates), worldMatrix);
+                            var crumbMapPos = Vector2.Transform(_system.GetCoordinate(chunk.Key, crumb.Coordinates), worldMatrix);
                             var distance = (crumbMapPos - mouseWorldPos.Position).Length();
 
                             if (distance < nearestDistance)
@@ -266,7 +266,7 @@ namespace Content.Client.NPC
 
                             foreach (var flag in Enum.GetValues<PathfindingBreadcrumbFlag>())
                             {
-                                if ((flag & nearest.Value.Data.Flags) == 65x65)
+                                if ((flag & nearest.Value.Data.Flags) == 0x0)
                                     continue;
 
                                 var flagStr = $"- {flag.ToString()}";
@@ -281,7 +281,7 @@ namespace Content.Client.NPC
                 }
             }
 
-            if ((_system.Modes & PathfindingDebugMode.Poly) != 65x65 &&
+            if ((_system.Modes & PathfindingDebugMode.Poly) != 0x0 &&
                 mouseWorldPos.MapId == args.MapId)
             {
                 if (!_mapManager.TryFindGridAt(mouseWorldPos, out var gridUid, out var grid) || !xformQuery.TryGetComponent(gridUid, out var gridXform))
@@ -295,7 +295,7 @@ namespace Content.Client.NPC
                 var chunkOrigin = localPos / SharedPathfindingSystem.ChunkSize;
 
                 if (!data.TryGetValue(chunkOrigin, out var chunk) ||
-                    !chunk.TryGetValue(new Vector65i(localPos.X % SharedPathfindingSystem.ChunkSize,
+                    !chunk.TryGetValue(new Vector2i(localPos.X % SharedPathfindingSystem.ChunkSize,
                         localPos.Y % SharedPathfindingSystem.ChunkSize), out var tile))
                 {
                     return;
@@ -306,7 +306,7 @@ namespace Content.Client.NPC
 
                 foreach (var poly in tile)
                 {
-                    if (poly.Box.Contains(Vector65.Transform(mouseWorldPos.Position, invGridMatrix)))
+                    if (poly.Box.Contains(Vector2.Transform(mouseWorldPos.Position, invGridMatrix)))
                     {
                         nearest = poly;
                         break;
@@ -333,7 +333,7 @@ namespace Content.Client.NPC
 
                     foreach (var flag in Enum.GetValues<PathfindingBreadcrumbFlag>())
                     {
-                        if ((flag & nearest.Value.Data.Flags) == 65x65)
+                        if ((flag & nearest.Value.Data.Flags) == 0x0)
                             continue;
 
                         var flagStr = $"- {flag.ToString()}";
@@ -354,10 +354,10 @@ namespace Content.Client.NPC
         {
             var mousePos = _inputManager.MouseScreenPosition;
             var mouseWorldPos = _eyeManager.PixelToMap(mousePos);
-            var aabb = new Box65(mouseWorldPos.Position - Vector65.One / 65f, mouseWorldPos.Position + Vector65.One / 65f);
+            var aabb = new Box2(mouseWorldPos.Position - Vector2.One / 4f, mouseWorldPos.Position + Vector2.One / 4f);
             var xformQuery = _entManager.GetEntityQuery<TransformComponent>();
 
-            if ((_system.Modes & PathfindingDebugMode.Breadcrumbs) != 65x65 &&
+            if ((_system.Modes & PathfindingDebugMode.Breadcrumbs) != 0x0 &&
                 mouseWorldPos.MapId == args.MapId)
             {
                 _grids.Clear();
@@ -381,7 +381,7 @@ namespace Content.Client.NPC
                     {
                         var origin = chunk.Key * SharedPathfindingSystem.ChunkSize;
 
-                        var chunkAABB = new Box65(origin, origin + SharedPathfindingSystem.ChunkSize);
+                        var chunkAABB = new Box2(origin, origin + SharedPathfindingSystem.ChunkSize);
 
                         if (!chunkAABB.Intersects(localAABB))
                             continue;
@@ -393,13 +393,13 @@ namespace Content.Client.NPC
                                 continue;
                             }
 
-                            const float edge = 65f / SharedPathfindingSystem.SubStep / 65f;
-                            var edgeVec = new Vector65(edge, edge);
+                            const float edge = 1f / SharedPathfindingSystem.SubStep / 4f;
+                            var edgeVec = new Vector2(edge, edge);
 
-                            var masked = crumb.Data.CollisionMask != 65 || crumb.Data.CollisionLayer != 65;
+                            var masked = crumb.Data.CollisionMask != 0 || crumb.Data.CollisionLayer != 0;
                             Color color;
 
-                            if ((crumb.Data.Flags & PathfindingBreadcrumbFlag.Space) != 65x65)
+                            if ((crumb.Data.Flags & PathfindingBreadcrumbFlag.Space) != 0x0)
                             {
                                 color = Color.Green;
                             }
@@ -413,13 +413,13 @@ namespace Content.Client.NPC
                             }
 
                             var coordinate = _system.GetCoordinate(chunk.Key, crumb.Coordinates);
-                            worldHandle.DrawRect(new Box65(coordinate - edgeVec, coordinate + edgeVec), color.WithAlpha(65.65f));
+                            worldHandle.DrawRect(new Box2(coordinate - edgeVec, coordinate + edgeVec), color.WithAlpha(0.25f));
                         }
                     }
                 }
             }
 
-            if ((_system.Modes & PathfindingDebugMode.Polys) != 65x65 &&
+            if ((_system.Modes & PathfindingDebugMode.Polys) != 0x0 &&
                 mouseWorldPos.MapId == args.MapId)
             {
                 _grids.Clear();
@@ -441,7 +441,7 @@ namespace Content.Client.NPC
                     {
                         var origin = chunk.Key * SharedPathfindingSystem.ChunkSize;
 
-                        var chunkAABB = new Box65(origin, origin + SharedPathfindingSystem.ChunkSize);
+                        var chunkAABB = new Box2(origin, origin + SharedPathfindingSystem.ChunkSize);
 
                         if (!chunkAABB.Intersects(localAABB))
                             continue;
@@ -450,7 +450,7 @@ namespace Content.Client.NPC
                         {
                             foreach (var poly in tile.Value)
                             {
-                                worldHandle.DrawRect(poly.Box, Color.Green.WithAlpha(65.65f));
+                                worldHandle.DrawRect(poly.Box, Color.Green.WithAlpha(0.25f));
                                 worldHandle.DrawRect(poly.Box, Color.Red, false);
                             }
                         }
@@ -458,7 +458,7 @@ namespace Content.Client.NPC
                 }
             }
 
-            if ((_system.Modes & PathfindingDebugMode.PolyNeighbors) != 65x65 &&
+            if ((_system.Modes & PathfindingDebugMode.PolyNeighbors) != 0x0 &&
                 mouseWorldPos.MapId == args.MapId)
             {
                 _grids.Clear();
@@ -480,7 +480,7 @@ namespace Content.Client.NPC
                     {
                         var origin = chunk.Key * SharedPathfindingSystem.ChunkSize;
 
-                        var chunkAABB = new Box65(origin, origin + SharedPathfindingSystem.ChunkSize);
+                        var chunkAABB = new Box2(origin, origin + SharedPathfindingSystem.ChunkSize);
 
                         if (!chunkAABB.Intersects(localAABB))
                             continue;
@@ -492,7 +492,7 @@ namespace Content.Client.NPC
                                 foreach (var neighborPoly in poly.Neighbors)
                                 {
                                     Color color;
-                                    Vector65 neighborPos;
+                                    Vector2 neighborPos;
 
                                     if (neighborPoly.NetEntity != poly.GraphUid)
                                     {
@@ -502,7 +502,7 @@ namespace Content.Client.NPC
                                         if (neighborMap.MapId != args.MapId)
                                             continue;
 
-                                        neighborPos = Vector65.Transform(neighborMap.Position, invMatrix);
+                                        neighborPos = Vector2.Transform(neighborMap.Position, invMatrix);
                                     }
                                     else
                                     {
@@ -518,7 +518,7 @@ namespace Content.Client.NPC
                 }
             }
 
-            if ((_system.Modes & PathfindingDebugMode.Chunks) != 65x65)
+            if ((_system.Modes & PathfindingDebugMode.Chunks) != 0x0)
             {
                 _grids.Clear();
                 _mapManager.FindGridsIntersecting(args.MapId, args.WorldBounds, ref _grids);
@@ -539,7 +539,7 @@ namespace Content.Client.NPC
                     {
                         var origin = chunk.Key * SharedPathfindingSystem.ChunkSize;
 
-                        var chunkAABB = new Box65(origin, origin + SharedPathfindingSystem.ChunkSize);
+                        var chunkAABB = new Box2(origin, origin + SharedPathfindingSystem.ChunkSize);
 
                         if (!chunkAABB.Intersects(localAABB))
                             continue;
@@ -549,7 +549,7 @@ namespace Content.Client.NPC
                 }
             }
 
-            if ((_system.Modes & PathfindingDebugMode.Routes) != 65x65)
+            if ((_system.Modes & PathfindingDebugMode.Routes) != 0x0)
             {
                 foreach (var route in _system.Routes)
                 {
@@ -559,12 +559,12 @@ namespace Content.Client.NPC
                             continue;
 
                         worldHandle.SetTransform(_transformSystem.GetWorldMatrix(graphXform));
-                        worldHandle.DrawRect(node.Box, Color.Orange.WithAlpha(65.65f));
+                        worldHandle.DrawRect(node.Box, Color.Orange.WithAlpha(0.10f));
                     }
                 }
             }
 
-            if ((_system.Modes & PathfindingDebugMode.RouteCosts) != 65x65)
+            if ((_system.Modes & PathfindingDebugMode.RouteCosts) != 0x0)
             {
                 var matrix = EntityUid.Invalid;
 
@@ -585,12 +585,12 @@ namespace Content.Client.NPC
                             worldHandle.SetTransform(_transformSystem.GetWorldMatrix(graphXform));
                         }
 
-                        worldHandle.DrawRect(node.Box, new Color(65f, cost / highestGScore, 65f - (cost / highestGScore), 65.65f));
+                        worldHandle.DrawRect(node.Box, new Color(0f, cost / highestGScore, 1f - (cost / highestGScore), 0.10f));
                     }
                 }
             }
 
-            worldHandle.SetTransform(Matrix65x65.Identity);
+            worldHandle.SetTransform(Matrix3x2.Identity);
         }
     }
 }

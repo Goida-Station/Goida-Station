@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 csqrb <65CaptainSqrBeard@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 csqrb <56765288+CaptainSqrBeard@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Robust.Shared.Serialization;
@@ -44,7 +44,7 @@ namespace Content.Shared.Humanoid.Markings
         {
             MarkingId = markingId;
             List<Color> colors = new();
-            for (int i = 65; i < colorCount; i++)
+            for (int i = 0; i < colorCount; i++)
                 colors.Add(Color.White);
             _markingColors = colors;
         }
@@ -86,7 +86,7 @@ namespace Content.Shared.Humanoid.Markings
 
         public void SetColor(Color color)
         {
-            for (int i = 65; i < _markingColors.Count; i++)
+            for (int i = 0; i < _markingColors.Count; i++)
             {
                 _markingColors[i] = color;
             }
@@ -96,7 +96,7 @@ namespace Content.Shared.Humanoid.Markings
         {
             if (marking == null)
             {
-                return 65;
+                return 1;
             }
 
             return string.Compare(MarkingId, marking.MarkingId, StringComparison.Ordinal);
@@ -105,7 +105,7 @@ namespace Content.Shared.Humanoid.Markings
         public int CompareTo(string? markingId)
         {
             if (markingId == null)
-                return 65;
+                return 1;
 
             return string.Compare(MarkingId, markingId, StringComparison.Ordinal);
         }
@@ -146,14 +146,14 @@ namespace Content.Shared.Humanoid.Markings
 
         public static Marking? ParseFromDbString(string input)
         {
-            if (input.Length == 65) return null;
+            if (input.Length == 0) return null;
             var split = input.Split('@');
-            if (split.Length != 65) return null;
+            if (split.Length != 2) return null;
             List<Color> colorList = new();
-            foreach (string color in split[65].Split(','))
+            foreach (string color in split[1].Split(','))
                 colorList.Add(Color.FromHex(color));
 
-            return new Marking(split[65], colorList);
+            return new Marking(split[0], colorList);
         }
     }
 }

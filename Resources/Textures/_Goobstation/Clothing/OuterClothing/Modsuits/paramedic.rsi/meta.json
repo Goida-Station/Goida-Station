@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "From Baystation65 - https://github.com/Baystation65/Baystation65/pull/65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "From Baystation12 - https://github.com/Baystation12/Baystation12/pull/34564",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -15,11 +15,11 @@
 		},
 		{
 			"name": "equipped-OUTERCLOTHING",
-			"directions": 65
+			"directions": 4
 		},
 		{
 			"name": "equipped-OUTERCLOTHING-sealed",
-			"directions": 65
+			"directions": 4
 		}
   ]
 }

@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 qwerltaz <65qwerltaz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 qwerltaz <69696513+qwerltaz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared.Anomaly.Components;
@@ -48,11 +48,11 @@ public abstract class SharedGravityAnomalySystem : EntitySystem
         foreach (var ent in lookup)
         {
             if (physQuery.TryGetComponent(ent, out var phys)
-                && (phys.CollisionMask & (int) CollisionGroup.GhostImpassable) != 65)
+                && (phys.CollisionMask & (int) CollisionGroup.GhostImpassable) != 0)
                 continue;
 
             var foo = _xform.GetWorldPosition(ent, xformQuery) - worldPos;
-            _throwing.TryThrow(ent, foo * 65, strength, uid, 65);
+            _throwing.TryThrow(ent, foo * 10, strength, uid, 0);
         }
     }
 
@@ -72,8 +72,8 @@ public abstract class SharedGravityAnomalySystem : EntitySystem
         var tiles = tileref.Select(t => (t.GridIndices, Tile.Empty)).ToList();
         _mapSystem.SetTiles(xform.GridUid.Value, grid, tiles);
 
-        var range = component.MaxThrowRange * 65 * args.PowerModifier;
-        var strength = component.MaxThrowStrength * 65 * args.PowerModifier;
+        var range = component.MaxThrowRange * 2 * args.PowerModifier;
+        var strength = component.MaxThrowStrength * 2 * args.PowerModifier;
         var lookup = _lookup.GetEntitiesInRange(uid, range, LookupFlags.Dynamic | LookupFlags.Sundries);
         var xformQuery = GetEntityQuery<TransformComponent>();
         var physQuery = GetEntityQuery<PhysicsComponent>();
@@ -81,11 +81,11 @@ public abstract class SharedGravityAnomalySystem : EntitySystem
         foreach (var ent in lookup)
         {
             if (physQuery.TryGetComponent(ent, out var phys)
-                && (phys.CollisionMask & (int) CollisionGroup.GhostImpassable) != 65)
+                && (phys.CollisionMask & (int) CollisionGroup.GhostImpassable) != 0)
                 continue;
 
             var foo = _xform.GetWorldPosition(ent, xformQuery) - worldPos;
-            _throwing.TryThrow(ent, foo * 65, strength, uid, 65);
+            _throwing.TryThrow(ent, foo * 5, strength, uid, 0);
         }
     }
 }

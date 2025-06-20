@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 ~DreamlyJack~ <65DreamlyJack@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 ~DreamlyJack~ <148849095+DreamlyJack@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Black elegant dress
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -14,21 +14,21 @@
     layers:
     - state: icon
     - state: icon-color
-      color: "#65"
+      color: "#212030"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65"
+        color: "#212030"
       right:
       - state: inhand-right
-        color: "#65"
+        color: "#212030"
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/elegantdress.rsi
     clothingVisuals:
       jumpsuit:
       - state: color-equipped-INNERCLOTHING
-        color: "#65"
+        color: "#212030"
       - state: equipped-INNERCLOTHING
 
 # Red elegant dress
@@ -43,21 +43,21 @@
     layers:
     - state: icon
     - state: icon-color
-      color: "#65d"
+      color: "#60171d"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65d"
+        color: "#60171d"
       right:
       - state: inhand-right
-        color: "#65d"
+        color: "#60171d"
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/elegantdress.rsi
     clothingVisuals:
       jumpsuit:
       - state: color-equipped-INNERCLOTHING
-        color: "#65d"
+        color: "#60171d"
       - state: equipped-INNERCLOTHING
 
 # Green elegant dress
@@ -72,21 +72,21 @@
     layers:
     - state: icon
     - state: icon-color
-      color: "#65e65"
+      color: "#0e6316"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65e65"
+        color: "#0e6316"
       right:
       - state: inhand-right
-        color: "#65e65"
+        color: "#0e6316"
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/elegantdress.rsi
     clothingVisuals:
       jumpsuit:
       - state: color-equipped-INNERCLOTHING
-        color: "#65e65"
+        color: "#0e6316"
       - state: equipped-INNERCLOTHING
 
 # Blue elegant dress
@@ -101,21 +101,21 @@
     layers:
     - state: icon
     - state: icon-color
-      color: "#65"
+      color: "#076183"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65"
+        color: "#076183"
       right:
       - state: inhand-right
-        color: "#65"
+        color: "#076183"
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/elegantdress.rsi
     clothingVisuals:
       jumpsuit:
       - state: color-equipped-INNERCLOTHING
-        color: "#65"
+        color: "#076183"
       - state: equipped-INNERCLOTHING
 
 # Purple elegant dress
@@ -130,21 +130,21 @@
     layers:
     - state: icon
     - state: icon-color
-      color: "#65"
+      color: "#630767"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65"
+        color: "#630767"
       right:
       - state: inhand-right
-        color: "#65"
+        color: "#630767"
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/elegantdress.rsi
     clothingVisuals:
       jumpsuit:
       - state: color-equipped-INNERCLOTHING
-        color: "#65"
+        color: "#630767"
       - state: equipped-INNERCLOTHING
 
 # Cyan striped dress
@@ -159,21 +159,21 @@
     layers:
     - state: icon
     - state: icon-color
-      color: "#65a65a"
+      color: "#009a9a"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65a65a"
+        color: "#009a9a"
       right:
       - state: inhand-right
-        color: "#65a65a"
+        color: "#009a9a"
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/stripeddress.rsi
     clothingVisuals:
       jumpsuit:
       - state: color-equipped-INNERCLOTHING
-        color: "#65a65a"
+        color: "#009a9a"
       - state: equipped-INNERCLOTHING
 
 # Red striped dress
@@ -188,21 +188,21 @@
     layers:
     - state: icon
     - state: icon-color
-      color: "#a65"
+      color: "#a40000"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#a65"
+        color: "#a40000"
       right:
       - state: inhand-right
-        color: "#a65"
+        color: "#a40000"
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/stripeddress.rsi
     clothingVisuals:
       jumpsuit:
       - state: color-equipped-INNERCLOTHING
-        color: "#a65"
+        color: "#a40000"
       - state: equipped-INNERCLOTHING
 
 # Green striped dress
@@ -217,21 +217,21 @@
     layers:
     - state: icon
     - state: icon-color
-      color: "#65c65f"
+      color: "#008c1f"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65c65f"
+        color: "#008c1f"
       right:
       - state: inhand-right
-        color: "#65c65f"
+        color: "#008c1f"
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/stripeddress.rsi
     clothingVisuals:
       jumpsuit:
       - state: color-equipped-INNERCLOTHING
-        color: "#65c65f"
+        color: "#008c1f"
       - state: equipped-INNERCLOTHING
 
 
@@ -247,21 +247,21 @@
     layers:
     - state: icon
     - state: icon-color
-      color: "#a65"
+      color: "#a40086"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#a65"
+        color: "#a40086"
       right:
       - state: inhand-right
-        color: "#a65"
+        color: "#a40086"
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/stripeddress.rsi
     clothingVisuals:
       jumpsuit:
       - state: color-equipped-INNERCLOTHING
-        color: "#a65"
+        color: "#a40086"
       - state: equipped-INNERCLOTHING
 
 # Orange striped dress
@@ -276,21 +276,21 @@
     layers:
     - state: icon
     - state: icon-color
-      color: "#65d65"
+      color: "#9d4000"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65d65"
+        color: "#9d4000"
       right:
       - state: inhand-right
-        color: "#65d65"
+        color: "#9d4000"
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/stripeddress.rsi
     clothingVisuals:
       jumpsuit:
       - state: color-equipped-INNERCLOTHING
-        color: "#65d65"
+        color: "#9d4000"
       - state: equipped-INNERCLOTHING
 
 # Purple turtleneck dress
@@ -305,21 +305,21 @@
     layers:
     - state: icon
     - state: icon-color
-      color: "#65"
+      color: "#341255"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65"
+        color: "#341255"
       right:
       - state: inhand-right
-        color: "#65"
+        color: "#341255"
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/turtledress.rsi
     clothingVisuals:
       jumpsuit:
       - state: color-equipped-INNERCLOTHING
-        color: "#65"
+        color: "#341255"
       - state: equipped-INNERCLOTHING
 
 # Red turtleneck dress
@@ -334,21 +334,21 @@
     layers:
     - state: icon
     - state: icon-color
-      color: "#65"
+      color: "#730404"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65"
+        color: "#730404"
       right:
       - state: inhand-right
-        color: "#65"
+        color: "#730404"
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/turtledress.rsi
     clothingVisuals:
       jumpsuit:
       - state: color-equipped-INNERCLOTHING
-        color: "#65"
+        color: "#730404"
       - state: equipped-INNERCLOTHING
 
 # Green turtleneck dress
@@ -363,21 +363,21 @@
     layers:
     - state: icon
     - state: icon-color
-      color: "#65e65"
+      color: "#0e6316"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65e65"
+        color: "#0e6316"
       right:
       - state: inhand-right
-        color: "#65e65"
+        color: "#0e6316"
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/turtledress.rsi
     clothingVisuals:
       jumpsuit:
       - state: color-equipped-INNERCLOTHING
-        color: "#65e65"
+        color: "#0e6316"
       - state: equipped-INNERCLOTHING
 
 # Blue turtleneck dress
@@ -392,21 +392,21 @@
     layers:
     - state: icon
     - state: icon-color
-      color: "#65f65"
+      color: "#193f68"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65f65"
+        color: "#193f68"
       right:
       - state: inhand-right
-        color: "#65f65"
+        color: "#193f68"
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/turtledress.rsi
     clothingVisuals:
       jumpsuit:
       - state: color-equipped-INNERCLOTHING
-        color: "#65f65"
+        color: "#193f68"
       - state: equipped-INNERCLOTHING
 
 # Yellow turtleneck dress
@@ -421,21 +421,21 @@
     layers:
     - state: icon
     - state: icon-color
-      color: "#65"
+      color: "#684519"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65"
+        color: "#684519"
       right:
       - state: inhand-right
-        color: "#65"
+        color: "#684519"
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/turtledress.rsi
     clothingVisuals:
       jumpsuit:
       - state: color-equipped-INNERCLOTHING
-        color: "#65"
+        color: "#684519"
       - state: equipped-INNERCLOTHING
 
 # Yellow old dress

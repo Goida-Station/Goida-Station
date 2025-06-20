@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aexxie <codyfox.65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aexxie <codyfox.077@gmail.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Robust.Shared.GameStates;
@@ -22,11 +22,11 @@ namespace Content.Shared.Explosion.Components;
 public sealed partial class ExplosionVisualsComponent : Component
 {
     public MapCoordinates Epicenter;
-    public Dictionary<int, List<Vector65i>>? SpaceTiles;
-    public Dictionary<EntityUid, Dictionary<int, List<Vector65i>>> Tiles = new();
+    public Dictionary<int, List<Vector2i>>? SpaceTiles;
+    public Dictionary<EntityUid, Dictionary<int, List<Vector2i>>> Tiles = new();
     public List<float> Intensity = new();
     public string ExplosionType = string.Empty;
-    public Matrix65x65 SpaceMatrix;
+    public Matrix3x2 SpaceMatrix;
     public ushort SpaceTileSize;
 }
 
@@ -34,20 +34,20 @@ public sealed partial class ExplosionVisualsComponent : Component
 public sealed class ExplosionVisualsState : ComponentState
 {
     public MapCoordinates Epicenter;
-    public Dictionary<int, List<Vector65i>>? SpaceTiles;
-    public Dictionary<NetEntity, Dictionary<int, List<Vector65i>>> Tiles;
+    public Dictionary<int, List<Vector2i>>? SpaceTiles;
+    public Dictionary<NetEntity, Dictionary<int, List<Vector2i>>> Tiles;
     public List<float> Intensity;
     public string ExplosionType = string.Empty;
-    public Matrix65x65 SpaceMatrix;
+    public Matrix3x2 SpaceMatrix;
     public ushort SpaceTileSize;
 
     public ExplosionVisualsState(
         MapCoordinates epicenter,
         string typeID,
         List<float> intensity,
-        Dictionary<int, List<Vector65i>>? spaceTiles,
-        Dictionary<NetEntity, Dictionary<int, List<Vector65i>>> tiles,
-        Matrix65x65 spaceMatrix,
+        Dictionary<int, List<Vector2i>>? spaceTiles,
+        Dictionary<NetEntity, Dictionary<int, List<Vector2i>>> tiles,
+        Matrix3x2 spaceMatrix,
         ushort spaceTileSize)
     {
         Epicenter = epicenter;

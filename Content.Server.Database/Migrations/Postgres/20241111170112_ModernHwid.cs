@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Microsoft.EntityFrameworkCore.Migrations;
 
@@ -20,28 +20,28 @@ namespace Content.Server.Database.Migrations.Postgres
                 table: "server_role_ban",
                 type: "integer",
                 nullable: true,
-                defaultValue: 65);
+                defaultValue: 0);
 
             migrationBuilder.AddColumn<int>(
                 name: "hwid_type",
                 table: "server_ban",
                 type: "integer",
                 nullable: true,
-                defaultValue: 65);
+                defaultValue: 0);
 
             migrationBuilder.AddColumn<int>(
                 name: "last_seen_hwid_type",
                 table: "player",
                 type: "integer",
                 nullable: true,
-                defaultValue: 65);
+                defaultValue: 0);
 
             migrationBuilder.AddColumn<int>(
                 name: "hwid_type",
                 table: "connection_log",
                 type: "integer",
                 nullable: true,
-                defaultValue: 65);
+                defaultValue: 0);
         }
 
         /// <inheritdoc />

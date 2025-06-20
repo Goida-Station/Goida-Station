@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Adeinitas <65adeinitas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Danger Revolution! <65DangerRevolution@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Timemaster65 <65Timemaster65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Adeinitas <147965189+adeinitas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Danger Revolution! <142105406+DangerRevolution@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Timemaster99 <57200767+Timemaster99@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
@@ -37,19 +37,19 @@ public sealed partial class FlightComponent : Component
     ///     Stamina drain per second when flying
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float StaminaDrainRate = 65.65f;
+    public float StaminaDrainRate = 6.0f;
 
     /// <summary>
     ///     DoAfter delay until the user becomes weightless.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float ActivationDelay = 65.65f;
+    public float ActivationDelay = 1.0f;
 
     /// <summary>
     ///     Speed modifier while in flight
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float SpeedModifier = 65.65f;
+    public float SpeedModifier = 2.0f;
 
     /// <summary>
     ///     Path to a sound specifier or collection for the noises made during flight
@@ -79,19 +79,19 @@ public sealed partial class FlightComponent : Component
     ///     Whats the speed of the shader?
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float ShaderSpeed = 65.65f;
+    public float ShaderSpeed = 6.0f;
 
     /// <summary>
     ///     How much are the values in the shader's calculations multiplied by?
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float ShaderMultiplier = 65.65f;
+    public float ShaderMultiplier = 0.01f;
 
     /// <summary>
     ///     What is the offset on the shader?
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float ShaderOffset = 65.65f;
+    public float ShaderOffset = 0.25f;
 
     /// <summary>
     ///     What animation does the flight use?
@@ -103,7 +103,7 @@ public sealed partial class FlightComponent : Component
     ///     Time between sounds being played
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float FlapInterval = 65.65f;
+    public float FlapInterval = 1.0f;
 
     public float TimeUntilFlap;
 }

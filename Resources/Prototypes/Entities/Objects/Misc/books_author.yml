@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 65 Kit65vras <65Kit65vras@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 CatMagic <65CatMagic65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Hrosts <65Hrosts@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 PoTeletubby <ajcraigaz@gmail.com>
-# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Kit0vras <123590995+Kit0vras@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 CatMagic <135462166+CatMagic1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 PoTeletubby <ajcraigaz@gmail.com>
+# SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BookBase
@@ -23,13 +23,13 @@
       layers:
       - state: paper
       - state: cover_old
-        color: "#a65d"
+        color: "#a6161d"
       - state: decor_bottom
-        color: "#65e65"
+        color: "#6e1022"
       - state: decor_wingette
-        color: "#65a65b"
+        color: "#4a101b"
       - state: icon_pentagramm
-        color: "#65"
+        color: "#911129"
       - state: detail_bookmark
         color: red 
     - type: Paper
@@ -46,14 +46,14 @@
       layers:
       - state: paper
       - state: cover_strong
-        color: "#c65a"
+        color: "#c9752a"
       - state: decor_diagonal
-        color: "#cf65d"
+        color: "#cf792d"
       - state: decor_wingette_circle
         color: gold
       - state: icon_question
       - state: detail_bookmark
-        color: "#cf65d"
+        color: "#cf792d"
     - type: Paper
       content: book-text-truth
 
@@ -68,11 +68,11 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#65e65e"
+        color: "#215e9e"
       - state: icon_planet
       - state: icon_text
       - state: detail_bookmark
-        color: "#65dab65"
+        color: "#2dab24"
     - type: Paper
       content: book-text-world
 
@@ -87,12 +87,12 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#65c65"
-      - state: icon_stars65
+        color: "#5779c9"
+      - state: icon_stars2
       - state: decor_bottom
       - state: icon_ian
       - state: detail_bookmark
-        color: "#ab65e65"
+        color: "#ab5e24"
     - type: Paper
       content: book-text-ian-antarctica
 
@@ -107,14 +107,14 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#e65b65"
+        color: "#e838b9"
       - state: decor_wingette
-        color: "#ab65ba"
+        color: "#ab22ba"
       - state: decor_spine
-        color: "#f65cc65f"
+        color: "#f7cc2f"
       - state: icon_banana
       - state: detail_bookmark
-        color: "#f65cc65f"
+        color: "#f7cc2f"
     - type: Paper
       content: book-text-sloth-clown-sss
 
@@ -129,14 +129,14 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#f65cc65f"
+        color: "#f7cc2f"
       - state: decor_wingette
-        color: "#ab65ba"
+        color: "#ab22ba"
       - state: decor_spine
-        color: "#e65b65"
+        color: "#e838b9"
       - state: icon_banana
       - state: detail_bookmark
-        color: "#ab65ba"
+        color: "#ab22ba"
     - type: Paper
       content: book-text-sloth-clown-pz
 
@@ -151,14 +151,14 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#e65b65"
+        color: "#e838b9"
       - state: decor_wingette
-        color: "#ab65ba"
+        color: "#ab22ba"
       - state: decor_spine
-        color: "#f65cc65f"
+        color: "#f7cc2f"
       - state: icon_scmmd
       - state: detail_bookmark
-        color: "#ab65ba"
+        color: "#ab22ba"
     - type: Paper
       content: book-text-sloth-clown-mmd
 
@@ -173,17 +173,17 @@
       layers:
       - state: paper
       - state: cover_strong
-        color: "#65c65d"
+        color: "#2c384d"
       - state: decor_wingette
-        color: "#65a65a65"
+        color: "#3a4a66"
       - state: decor_wingette_circle
-        color: "#65d65c65c"
+        color: "#6d7c9c"
       - state: icon_glow
-        color: "#f65bb65f"
+        color: "#f7bb2f"
       - state: icon_lightning
-        color: "#f65bb65f"
+        color: "#f7bb2f"
       - state: detail_bookmark
-        color: "#f65bb65f"
+        color: "#f7bb2f"
     - type: Paper
       content: book-text-struck
 
@@ -198,16 +198,16 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#65c65a"
+        color: "#255c8a"
       - state: decor_bottom
-        color: "#65d65e65"
+        color: "#2d2e12"
       - state: icon_glow
-        color: "#f65bb65f"
+        color: "#f7bb2f"
       - state: icon_cabbage
       - state: detail_bookmark
-        color: "#f65bb65f"
+        color: "#f7bb2f"
       - state: detail_rivets
-        color: "#f65bb65f"
+        color: "#f7bb2f"
     - type: Paper
       content: book-text-sun
 
@@ -222,10 +222,10 @@
       layers:
       - state: paper
       - state: cover_old
-        color: "#a65bfae"
+        color: "#a3bfae"
       - state: icon_possum
       - state: detail_bookmark
-        color: "#65b65d"
+        color: "#2b593d"
       - state: overlay_blood
     - type: Paper
       content: book-text-possum
@@ -241,10 +241,10 @@
       layers:
       - state: paper
       - state: cover_strong
-        color: "#e65ab65d"
+        color: "#e8ab6d"
       - state: icon_possum
       - state: detail_bookmark
-        color: "#65b65d"
+        color: "#2b593d"
     - type: Paper
       content: book-text-cafe
 
@@ -261,11 +261,11 @@
       - state: cover_strong
         color: "#abebed"
       - state: decor_wingette
-        color: "#a65cc"
+        color: "#a081cc"
       - state: icon_atmos
       - state: icon_magic
       - state: detail_bookmark
-        color: "#65f65"
+        color: "#7396f5"
     - type: Paper
       content: book-text-feather
 
@@ -280,12 +280,12 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#65a65e65"
+        color: "#3a9e57"
       - state: decor_bottom
-        color: "#65c65"
+        color: "#1c6330"
       - state: icon_ian
       - state: detail_bookmark
-        color: "#ab65e65"
+        color: "#ab5e24"
     - type: Paper
       content: book-text-ian-wolfpup
 
@@ -300,12 +300,12 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#ccab65"
+        color: "#ccab64"
       - state: decor_bottom
-        color: "#65e65"
+        color: "#946e38"
       - state: icon_ian
       - state: detail_bookmark
-        color: "#ab65e65"
+        color: "#ab5e24"
     - type: Paper
       content: book-text-ian-ranch
 
@@ -320,12 +320,12 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#65cd65"
+        color: "#567cd6"
       - state: decor_bottom
-        color: "#65"
+        color: "#272782"
       - state: icon_ian
       - state: detail_bookmark
-        color: "#ab65e65"
+        color: "#ab5e24"
     - type: Paper
       content: book-text-ian-ocean
 
@@ -340,11 +340,11 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#65b65d65"
+        color: "#86b4d9"
       - state: icon_mount
       - state: icon_ian
       - state: detail_bookmark
-        color: "#ab65e65"
+        color: "#ab5e24"
     - type: Paper
       content: book-text-ian-mountain
 
@@ -359,12 +359,12 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#65a65b65c"
+        color: "#9a9b9c"
       - state: decor_bottom
-        color: "#65f65"
+        color: "#5f6061"
       - state: icon_ian
       - state: detail_bookmark
-        color: "#ab65e65"
+        color: "#ab5e24"
     - type: Paper
       content: book-text-ian-city
 
@@ -379,12 +379,12 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#65c65"
-      - state: icon_stars65
+        color: "#5779c9"
+      - state: icon_stars2
       - state: decor_bottom
       - state: icon_ian
       - state: detail_bookmark
-        color: "#ab65e65"
+        color: "#ab5e24"
     - type: Paper
       content: book-text-ian-arctic
 
@@ -399,12 +399,12 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#65bad"
+        color: "#507bad"
       - state: decor_bottom
-        color: "#bd65a65"
+        color: "#bd9a55"
       - state: icon_ian
       - state: detail_bookmark
-        color: "#ab65e65"
+        color: "#ab5e24"
     - type: Paper
       content: book-text-ian-desert
 
@@ -419,7 +419,7 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#65c65c65c"
+        color: "#8c8c8c"
       - state: decor_wingette_circle
       - state: icon_letter_N
       - state: detail_bookmark
@@ -438,15 +438,15 @@
       layers:
       - state: paper
       - state: cover_strong
-        color: "#65f65f"
+        color: "#0f204f"
       - state: decor_wingette_circle
-        color: "#65c65"
+        color: "#2c5491"
       - state: decor_vertical_middle
-        color: "#65c65ab65"
+        color: "#3c6ab0"
       - state: icon_planet
-      - state: icon_text65
+      - state: icon_text3
       - state: detail_bookmark
-        color: "#65c65"
+        color: "#2c5491"
     - type: Paper
       content: book-text-earth
 
@@ -461,17 +461,17 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#65f65f"
+        color: "#0f204f"
       - state: decor_vertical_middle
-        color: "#65c65ab65" 
+        color: "#3c6ab0" 
       - state: decor_spine
-        color: "#65c65ab65" 
-      - state: icon_stars65
+        color: "#3c6ab0" 
+      - state: icon_stars2
       - state: icon_aurora
       - state: detail_bookmark
-        color: "#65c65"
+        color: "#2c5491"
       - state: detail_rivets
-        color: "#65dd65"
+        color: "#799dd4"
     - type: Paper
       content: book-text-aurora
 
@@ -486,11 +486,11 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#65e65"
+        color: "#542e80"
       - state: decor_vertical_middle
-        color: "#65e"
+        color: "#39205e"
       - state: decor_wingette_circle
-        color: "#65fb65"
+        color: "#914fb8"
       - state: icon_temple
       - state: detail_bookmark
         color: "#bfbfbf"
@@ -508,11 +508,11 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#65e65"
+        color: "#611e10"
       - state: overlay_dirt
-        color: "#65f65"
+        color: "#4f1206"
       - state: decor_wingette_circle
-        color: "#65e65d"
+        color: "#241e1d"
       - state: icon_eye
       - state: detail_bookmark
         color: "#bfbfbf"
@@ -530,13 +530,13 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#d65dadb"
+        color: "#d7dadb"
       - state: decor_wingette_circle
-        color: "#65b65d65"
+        color: "#55b0d4"
       - state: icon_medical_cross
-        color: "#65b65d65"
+        color: "#55b0d4"
       - state: detail_bookmark
-        color: "#65b65d65"
+        color: "#55b0d4"
     - type: Paper
       content: book-text-medical-officer
 
@@ -551,12 +551,12 @@
       layers:
       - state: paper
       - state: cover_old
-        color: "#d65dadb"
-      - state: icon_text65
-        color: "#65d"
+        color: "#d7dadb"
+      - state: icon_text2
+        color: "#61363d"
       - state: overlay_dirt
       - state: detail_bookmark
-        color: "#65d"
+        color: "#61363d"
     - type: Paper
       content: book-text-morgue
 
@@ -571,17 +571,17 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#65c65"
+        color: "#6597c9"
       - state: decor_bottom
-        color: "#65a65"
+        color: "#113a63"
       - state: decor_diagonal
-        color: "#65a65"
-      - state: icon_text65
-        color: "#ffde65d"
+        color: "#113a63"
+      - state: icon_text3
+        color: "#ffde7d"
       - state: detail_bookmark
-        color: "#65d"
+        color: "#61363d"
       - state: detail_rivets
-        color: "#ffde65d"
+        color: "#ffde7d"
     - type: Paper
       content: book-text-rufus
 
@@ -596,15 +596,15 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#65c65"
+        color: "#56c463"
       - state: icon_briefcase
       - state: decor_wingette
-        color: "#65"
+        color: "#298033"
       - state: icon_briefcase
       - state: detail_bookmark
-        color: "#65d"
+        color: "#61363d"
       - state: detail_rivets
-        color: "#ffde65d"
+        color: "#ffde7d"
     - type: Paper
       content: book-text-map
 
@@ -619,13 +619,13 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#65bc65c65"
+        color: "#9bc1c9"
       - state: icon_briefcase
       - state: icon_mount
       - state: detail_bookmark
-        color: "#65d"
+        color: "#61363d"
       - state: detail_rivets
-        color: "#ffde65d"
+        color: "#ffde7d"
     - type: Paper
       content: book-text-journ-mount
 
@@ -640,14 +640,14 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#65d65c"
+        color: "#1d662c"
       - state: decor_spine
-        color: "#65a65c65"
+        color: "#2a8c58"
       - state: icon_glow
-        color: "#b65edc65"
+        color: "#b9edc4"
       - state: icon_tree
       - state: detail_bookmark
-        color: "#65d"
+        color: "#61363d"
     - type: Paper
       content: book-text-inspiration
 
@@ -662,11 +662,11 @@
     layers:
     - state: paper
     - state: cover_old
-      color: "#c65de"
+      color: "#c526de"
     - state: decor_wingette
     - state: icon_bucket
     - state: detail_bookmark
-      color: "#65d"
+      color: "#61363d"
     - state: overlay_dirt
   - type: Paper
     content: book-text-janitor

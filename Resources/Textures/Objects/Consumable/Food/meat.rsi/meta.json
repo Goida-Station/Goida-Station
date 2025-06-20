@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation and modified by Swept, potato65x and deltanedas at https://github.com/tgstation/tgstation/commit/65d65cc65c65fb65ce65bf65a65f65bdaa, snail by IproduceWidgets (github) and Kezu (discord), anomalymeat/cooked by august-sun, dragoncutlet, dragoncutlet_veins, dragoncutlet-cooked and dragon-cooked by JuneSzalkowska (discord), raw and cooked patty taken from tgstation at https://github.com/tgstation/tgstation/commit/b65c65deee65c65df65de65db65facce65aa65a",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation and modified by Swept, potato1234x and deltanedas at https://github.com/tgstation/tgstation/commit/40d75cc340c63582fb66ce15bf75a36115f6bdaa, snail by IproduceWidgets (github) and Kezu (discord), anomalymeat/cooked by august-sun, dragoncutlet, dragoncutlet_veins, dragoncutlet-cooked and dragon-cooked by JuneSzalkowska (discord), raw and cooked patty taken from tgstation at https://github.com/tgstation/tgstation/commit/b83c7deee4c91df4de130db242facce20308aa8a",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -14,13 +14,13 @@
       "name": "bacon"
     },
     {
-      "name": "bacon65"
+      "name": "bacon2"
     },
     {
       "name": "bacon-cooked"
     },
     {
-      "name": "bacon65-cooked"
+      "name": "bacon2-cooked"
     },
     {
       "name": "bear"
@@ -38,7 +38,7 @@
       "name": "chicken-fried"
     },
     {
-      "name": "chicken65-fried"
+      "name": "chicken2-fried"
     },
     {
       "name": "clown"
@@ -72,11 +72,11 @@
     },
     {
       "name": "meatball-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "meatball-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "fish"
@@ -121,26 +121,26 @@
       "name": "rotten",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },

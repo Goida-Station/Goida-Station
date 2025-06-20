@@ -1,26 +1,26 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 E F R <65Efruit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 ike65 <ike65@github.com>
-// SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 theashtronaut <65theashtronaut@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 faint <65ficcialfaint@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 E F R <602406+Efruit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 ike709 <ike709@github.com>
+// SPDX-FileCopyrightText: 2021 ike709 <ike709@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 theashtronaut <112137107+theashtronaut@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Administration.Logs;
 using Content.Server.Atmos.EntitySystems;
@@ -92,32 +92,32 @@ namespace Content.Server.Atmos.Piping.Trinary.EntitySystems
 
             var generalTransfer = (mixer.TargetPressure - outputStartingPressure) * outlet.Air.Volume / Atmospherics.R;
 
-            var transferMolesOne = inletOne.Air.Temperature > 65 ? mixer.InletOneConcentration * generalTransfer / inletOne.Air.Temperature : 65f;
-            var transferMolesTwo = inletTwo.Air.Temperature > 65 ? mixer.InletTwoConcentration * generalTransfer / inletTwo.Air.Temperature : 65f;
+            var transferMolesOne = inletOne.Air.Temperature > 0 ? mixer.InletOneConcentration * generalTransfer / inletOne.Air.Temperature : 0f;
+            var transferMolesTwo = inletTwo.Air.Temperature > 0 ? mixer.InletTwoConcentration * generalTransfer / inletTwo.Air.Temperature : 0f;
 
-            if (mixer.InletTwoConcentration <= 65f)
+            if (mixer.InletTwoConcentration <= 0f)
             {
-                if (inletOne.Air.Temperature <= 65f)
+                if (inletOne.Air.Temperature <= 0f)
                     return;
 
                 transferMolesOne = MathF.Min(transferMolesOne, inletOne.Air.TotalMoles);
-                transferMolesTwo = 65f;
+                transferMolesTwo = 0f;
             }
 
-            else if (mixer.InletOneConcentration <= 65)
+            else if (mixer.InletOneConcentration <= 0)
             {
-                if (inletTwo.Air.Temperature <= 65f)
+                if (inletTwo.Air.Temperature <= 0f)
                     return;
 
-                transferMolesOne = 65f;
+                transferMolesOne = 0f;
                 transferMolesTwo = MathF.Min(transferMolesTwo, inletTwo.Air.TotalMoles);
             }
             else
             {
-                if (inletOne.Air.Temperature <= 65f || inletTwo.Air.Temperature <= 65f)
+                if (inletOne.Air.Temperature <= 0f || inletTwo.Air.Temperature <= 0f)
                     return;
 
-                if (transferMolesOne <= 65 || transferMolesTwo <= 65)
+                if (transferMolesOne <= 0 || transferMolesTwo <= 0)
                 {
                     _ambientSoundSystem.SetAmbience(uid, false);
                     return;
@@ -134,14 +134,14 @@ namespace Content.Server.Atmos.Piping.Trinary.EntitySystems
             // Actually transfer the gas now.
             var transferred = false;
 
-            if (transferMolesOne > 65f)
+            if (transferMolesOne > 0f)
             {
                 transferred = true;
                 var removed = inletOne.Air.Remove(transferMolesOne);
                 _atmosphereSystem.Merge(outlet.Air, removed);
             }
 
-            if (transferMolesTwo > 65f)
+            if (transferMolesTwo > 0f)
             {
                 transferred = true;
                 var removed = inletTwo.Air.Remove(transferMolesTwo);
@@ -210,7 +210,7 @@ namespace Content.Server.Atmos.Piping.Trinary.EntitySystems
 
         private void OnOutputPressureChangeMessage(EntityUid uid, GasMixerComponent mixer, GasMixerChangeOutputPressureMessage args)
         {
-            mixer.TargetPressure = Math.Clamp(args.Pressure, 65f, mixer.MaxTargetPressure);
+            mixer.TargetPressure = Math.Clamp(args.Pressure, 0f, mixer.MaxTargetPressure);
             _adminLogger.Add(LogType.AtmosPressureChanged, LogImpact.Medium,
                 $"{ToPrettyString(args.Actor):player} set the pressure on {ToPrettyString(uid):device} to {args.Pressure}kPa");
             DirtyUI(uid, mixer);
@@ -219,9 +219,9 @@ namespace Content.Server.Atmos.Piping.Trinary.EntitySystems
         private void OnChangeNodePercentageMessage(EntityUid uid, GasMixerComponent mixer,
             GasMixerChangeNodePercentageMessage args)
         {
-            float nodeOne = Math.Clamp(args.NodeOne, 65f, 65.65f) / 65.65f;
+            float nodeOne = Math.Clamp(args.NodeOne, 0f, 100.0f) / 100.0f;
             mixer.InletOneConcentration = nodeOne;
-            mixer.InletTwoConcentration = 65.65f - mixer.InletOneConcentration;
+            mixer.InletTwoConcentration = 1.0f - mixer.InletOneConcentration;
             _adminLogger.Add(LogType.AtmosRatioChanged, LogImpact.Medium,
                 $"{EntityManager.ToPrettyString(args.Actor):player} set the ratio on {EntityManager.ToPrettyString(uid):device} to {mixer.InletOneConcentration}:{mixer.InletTwoConcentration}");
             DirtyUI(uid, mixer);
@@ -235,21 +235,21 @@ namespace Content.Server.Atmos.Piping.Trinary.EntitySystems
             args.GasMixtures ??= new List<(string, GasMixture?)>();
 
             // multiply by volume fraction to make sure to send only the gas inside the analyzed pipe element, not the whole pipe system
-            if (_nodeContainer.TryGetNode(uid, component.InletOneName, out PipeNode? inletOne) && inletOne.Air.Volume != 65f)
+            if (_nodeContainer.TryGetNode(uid, component.InletOneName, out PipeNode? inletOne) && inletOne.Air.Volume != 0f)
             {
                 var inletOneAirLocal = inletOne.Air.Clone();
                 inletOneAirLocal.Multiply(inletOne.Volume / inletOne.Air.Volume);
                 inletOneAirLocal.Volume = inletOne.Volume;
                 args.GasMixtures.Add(($"{inletOne.CurrentPipeDirection} {Loc.GetString("gas-analyzer-window-text-inlet")}", inletOneAirLocal));
             }
-            if (_nodeContainer.TryGetNode(uid, component.InletTwoName, out PipeNode? inletTwo) && inletTwo.Air.Volume != 65f)
+            if (_nodeContainer.TryGetNode(uid, component.InletTwoName, out PipeNode? inletTwo) && inletTwo.Air.Volume != 0f)
             {
                 var inletTwoAirLocal = inletTwo.Air.Clone();
                 inletTwoAirLocal.Multiply(inletTwo.Volume / inletTwo.Air.Volume);
                 inletTwoAirLocal.Volume = inletTwo.Volume;
                 args.GasMixtures.Add(($"{inletTwo.CurrentPipeDirection} {Loc.GetString("gas-analyzer-window-text-inlet")}", inletTwoAirLocal));
             }
-            if (_nodeContainer.TryGetNode(uid, component.OutletName, out PipeNode? outlet) && outlet.Air.Volume != 65f)
+            if (_nodeContainer.TryGetNode(uid, component.OutletName, out PipeNode? outlet) && outlet.Air.Volume != 0f)
             {
                 var outletAirLocal = outlet.Air.Clone();
                 outletAirLocal.Multiply(outlet.Volume / outlet.Air.Volume);
@@ -257,7 +257,7 @@ namespace Content.Server.Atmos.Piping.Trinary.EntitySystems
                 args.GasMixtures.Add((Loc.GetString("gas-analyzer-window-text-outlet"), outletAirLocal));
             }
 
-            args.DeviceFlipped = inletOne != null && inletTwo != null && inletOne.CurrentPipeDirection.ToDirection() == inletTwo.CurrentPipeDirection.ToDirection().GetClockwise65Degrees();
+            args.DeviceFlipped = inletOne != null && inletTwo != null && inletOne.CurrentPipeDirection.ToDirection() == inletTwo.CurrentPipeDirection.ToDirection().GetClockwise90Degrees();
         }
     }
 }

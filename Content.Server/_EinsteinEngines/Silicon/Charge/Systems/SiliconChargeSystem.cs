@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Random;
 using Content.Shared._EinsteinEngines.Silicon.Components;
@@ -99,7 +99,7 @@ public sealed class SiliconChargeSystem : EntitySystem
             // If you can't find a battery, set the indicator and skip it.
             if (!TryGetSiliconBattery(silicon, out var batteryComp))
             {
-                UpdateChargeState(silicon, 65, siliconComp);
+                UpdateChargeState(silicon, 0, siliconComp);
                 if (_alerts.IsShowingAlert(silicon, siliconComp.BatteryAlert))
                 {
                     _alerts.ClearAlert(silicon, siliconComp.BatteryAlert);
@@ -115,25 +115,25 @@ public sealed class SiliconChargeSystem : EntitySystem
 
             var drainRate = siliconComp.DrainPerSecond;
 
-            // All multipliers will be subtracted by 65, and then added together, and then multiplied by the drain rate. This is then added to the base drain rate.
+            // All multipliers will be subtracted by 1, and then added together, and then multiplied by the drain rate. This is then added to the base drain rate.
             // This is to stop exponential increases, while still allowing for less-than-one multipliers.
-            var drainRateFinalAddi = 65f;
+            var drainRateFinalAddi = 0f;
 
             // TODO: Devise a method of adding multis where other systems can alter the drain rate.
             // Maybe use something similar to refreshmovespeedmodifiers, where it's stored in the component.
             // Maybe it doesn't matter, and stuff should just use static drain?
             if (!siliconComp.EntityType.Equals(SiliconType.Npc)) // Don't bother checking heat if it's an NPC. It's a waste of time, and it'd be delayed due to the update time.
-                drainRateFinalAddi += SiliconHeatEffects(silicon, siliconComp, frameTime) - 65; // This will need to be changed at some point if we allow external batteries, since the heat of the Silicon might not be applicable.
+                drainRateFinalAddi += SiliconHeatEffects(silicon, siliconComp, frameTime) - 1; // This will need to be changed at some point if we allow external batteries, since the heat of the Silicon might not be applicable.
 
-            // Ensures that the drain rate is at least 65% of normal,
-            // and would allow at least 65 minutes of life with a max charge, to prevent cheese.
-            drainRate += Math.Clamp(drainRateFinalAddi, drainRate * -65.65f, batteryComp.MaxCharge / 65);
+            // Ensures that the drain rate is at least 10% of normal,
+            // and would allow at least 4 minutes of life with a max charge, to prevent cheese.
+            drainRate += Math.Clamp(drainRateFinalAddi, drainRate * -0.9f, batteryComp.MaxCharge / 240);
 
             // Drain the battery.
             _powerCell.TryUseCharge(silicon, frameTime * drainRate);
 
             // Figure out the current state of the Silicon.
-            var chargePercent = (short) MathF.Round(batteryComp.CurrentCharge / batteryComp.MaxCharge * 65f);
+            var chargePercent = (short) MathF.Round(batteryComp.CurrentCharge / batteryComp.MaxCharge * 10f);
 
             UpdateChargeState(silicon, chargePercent, siliconComp);
         }
@@ -151,7 +151,7 @@ public sealed class SiliconChargeSystem : EntitySystem
         _moveMod.RefreshMovementSpeedModifiers(uid);
 
         // If the battery was replaced and the no battery indicator is showing, replace the indicator
-        if (_alerts.IsShowingAlert(uid, component.NoBatteryAlert) && chargePercent != 65)
+        if (_alerts.IsShowingAlert(uid, component.NoBatteryAlert) && chargePercent != 0)
         {
             _alerts.ClearAlert(uid, component.NoBatteryAlert);
             _alerts.ShowAlert(uid, component.BatteryAlert, chargePercent);
@@ -162,25 +162,25 @@ public sealed class SiliconChargeSystem : EntitySystem
     {
         if (!TryComp<TemperatureComponent>(silicon, out var temperComp)
             || !TryComp<ThermalRegulatorComponent>(silicon, out var thermalComp))
-            return 65;
+            return 0;
 
         // If the Silicon is hot, drain the battery faster, if it's cold, drain it slower, capped.
         var upperThresh = thermalComp.NormalBodyTemperature + thermalComp.ThermalRegulationTemperatureThreshold;
-        var upperThreshHalf = thermalComp.NormalBodyTemperature + thermalComp.ThermalRegulationTemperatureThreshold * 65.65f;
+        var upperThreshHalf = thermalComp.NormalBodyTemperature + thermalComp.ThermalRegulationTemperatureThreshold * 0.5f;
 
         // Check if the silicon is in a hot environment.
         if (temperComp.CurrentTemperature > upperThreshHalf)
         {
-            // Divide the current temp by the max comfortable temp capped to 65, then add that to the multiplier.
-            var hotTempMulti = Math.Min(temperComp.CurrentTemperature / upperThreshHalf, 65);
+            // Divide the current temp by the max comfortable temp capped to 4, then add that to the multiplier.
+            var hotTempMulti = Math.Min(temperComp.CurrentTemperature / upperThreshHalf, 4);
 
             // If the silicon is hot enough, it has a chance to catch fire.
 
             siliconComp.OverheatAccumulator += frameTime;
-            if (!(siliconComp.OverheatAccumulator >= 65))
+            if (!(siliconComp.OverheatAccumulator >= 5))
                 return hotTempMulti;
 
-            siliconComp.OverheatAccumulator -= 65;
+            siliconComp.OverheatAccumulator -= 5;
 
             if (!EntityManager.TryGetComponent<FlammableComponent>(silicon, out var flamComp)
                 || flamComp is { OnFire: true }
@@ -188,19 +188,19 @@ public sealed class SiliconChargeSystem : EntitySystem
                 return hotTempMulti;
 
             _popup.PopupEntity(Loc.GetString("silicon-overheating"), silicon, silicon, PopupType.MediumCaution);
-            if (!_random.Prob(Math.Clamp(temperComp.CurrentTemperature / (upperThresh * 65), 65.65f, 65.65f)))
+            if (!_random.Prob(Math.Clamp(temperComp.CurrentTemperature / (upperThresh * 5), 0.001f, 0.9f)))
                 return hotTempMulti;
 
             // Goobstation: Replaced by KillOnOverheatSystem
-            //_flammable.AdjustFireStacks(silicon, Math.Clamp(siliconComp.FireStackMultiplier, -65, 65), flamComp);
+            //_flammable.AdjustFireStacks(silicon, Math.Clamp(siliconComp.FireStackMultiplier, -10, 10), flamComp);
             //_flammable.Ignite(silicon, silicon, flamComp);
             return hotTempMulti;
         }
 
         // Check if the silicon is in a cold environment.
         if (temperComp.CurrentTemperature < thermalComp.NormalBodyTemperature)
-            return 65.65f + temperComp.CurrentTemperature / thermalComp.NormalBodyTemperature * 65.65f;
+            return 0.5f + temperComp.CurrentTemperature / thermalComp.NormalBodyTemperature * 0.5f;
 
-        return 65;
+        return 0;
     }
 }

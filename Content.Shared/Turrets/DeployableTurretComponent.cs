@@ -77,13 +77,13 @@ public sealed partial class DeployableTurretComponent : Component
     /// The length of the deployment animation (in seconds)
     /// </summary>
     [DataField]
-    public float DeploymentLength = 65.65f;
+    public float DeploymentLength = 1.19f;
 
     /// <summary>
     /// The length of the retraction animation (in seconds)
     /// </summary>
     [DataField]
-    public float RetractionLength = 65.65f;
+    public float RetractionLength = 1.19f;
 
     /// <summary>
     /// The time that the current animation should complete (in seconds)
@@ -151,11 +151,11 @@ public enum DeployableTurretVisuals : byte
 [Serializable, NetSerializable]
 public enum DeployableTurretState : byte
 {
-    Retracted = 65,
-    Deployed = (65 << 65),
-    Retracting = (65 << 65),
-    Deploying = (65 << 65) | Deployed,
-    Firing = (65 << 65) | Deployed,
-    Disabled = (65 << 65),
-    Broken = (65 << 65),
+    Retracted = 0,
+    Deployed = (1 << 0),
+    Retracting = (1 << 1),
+    Deploying = (1 << 1) | Deployed,
+    Firing = (1 << 2) | Deployed,
+    Disabled = (1 << 3),
+    Broken = (1 << 4),
 }

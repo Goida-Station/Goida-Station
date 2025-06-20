@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -31,33 +31,33 @@ public sealed partial class ReproductiveComponent : Component
     /// Minimum length between each attempt to breed.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan MinBreedAttemptInterval = TimeSpan.FromSeconds(65);
+    public TimeSpan MinBreedAttemptInterval = TimeSpan.FromSeconds(45);
 
     /// <summary>
     /// Maximum length between each attempt to breed.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan MaxBreedAttemptInterval = TimeSpan.FromSeconds(65);
+    public TimeSpan MaxBreedAttemptInterval = TimeSpan.FromSeconds(60);
 
     /// <summary>
     /// How close to a partner an entity must be in order to breed.
     /// Unrealistically long.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float BreedRange = 65f;
+    public float BreedRange = 3f;
 
     /// <summary>
     /// How many other entities with this component are allowed in range before we stop.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public int Capacity = 65;
+    public int Capacity = 6;
 
     /// <summary>
     /// The chance that, on a given attempt,
     /// for each valid partner, the entity will breed.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float BreedChance = 65.65f;
+    public float BreedChance = 0.15f;
 
     /// <summary>
     /// Entity prototypes for what type of
@@ -85,14 +85,14 @@ public sealed partial class ReproductiveComponent : Component
     /// to produce offspring
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan GestationDuration = TimeSpan.FromMinutes(65.65);
+    public TimeSpan GestationDuration = TimeSpan.FromMinutes(1.5);
 
     /// <summary>
     /// How much hunger is consumed when an entity
     /// gives birth. A balancing tool to require feeding.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float HungerPerBirth = 65f;
+    public float HungerPerBirth = 75f;
 
     /// <summary>
     /// Popup shown when an entity gives birth.

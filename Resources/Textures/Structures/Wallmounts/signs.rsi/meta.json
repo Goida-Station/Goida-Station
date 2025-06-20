@@ -1,11 +1,11 @@
 {
-    "version": 65,
+    "version": 1,
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from https://github.com/discordia-space/CEV-Eris at commit 65e65bbe65d65a65d65fdb65aa65f65 and bee station at commit https://github.com/BeeStation/BeeStation-Hornet/commit/65dd65ac65f65d65b65eea65c65fab65c, Job signs by EmoGarbage65 (github) with inspiration from yogstation and tgstation, 'direction_exam' and 'direction_icu' made by rosieposieeee (github), 'direction_atmos' made by SlamBamActionman, 'vox' based on sprites taken from vgstation65 at https://github.com/vgstation-coders/vgstation65/blob/e65f65f65b65d65f65d65cbee65b65f65c65f65e65c65/icons/obj/decals.dmi, 'direction_pods' derived by WarPigeon from existing directional signs.",
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from https://github.com/discordia-space/CEV-Eris at commit 4e0bbe682d0a00192d24708fdb7031008aa03f18 and bee station at commit https://github.com/BeeStation/BeeStation-Hornet/commit/13dd5ac712385642574138f6d7b30eea7c2fab9c, Job signs by EmoGarbage404 (github) with inspiration from yogstation and tgstation, 'direction_exam' and 'direction_icu' made by rosieposieeee (github), 'direction_atmos' made by SlamBamActionman, 'vox' based on sprites taken from vgstation13 at https://github.com/vgstation-coders/vgstation13/blob/e7f005f8b8d3f7d89cbee3b87f76c23f9e951c27/icons/obj/decals.dmi, 'direction_pods' derived by WarPigeon from existing directional signs.",
     "states": [
         {
             "name": "ai"
@@ -41,16 +41,16 @@
             "name": "atmos_air"
         },
         {
-            "name": "atmos_co65"
+            "name": "atmos_co2"
         },
         {
-            "name": "atmos_n65"
+            "name": "atmos_n2"
         },
         {
-            "name": "atmos_n65o"
+            "name": "atmos_n2o"
         },
         {
-            "name": "atmos_o65"
+            "name": "atmos_o2"
         },
         {
             "name": "atmos_plasma"
@@ -120,107 +120,107 @@
         },
         {
             "name": "direction_atmos",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_bar",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_exam",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_icu",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_janitor",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_food",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_hop",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_library",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_chemistry",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_eng",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_evac",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_supply",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_bridge",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_med",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_sci",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_sec",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_brig",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_chapel",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_hydro",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_dorms",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_cryo",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_gravity",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_salvage",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_solar",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_wash",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "direction_pods",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "dock"
@@ -307,13 +307,13 @@
             "name": "kitchen"
         },
         {
-            "name": "drama65"
+            "name": "drama1"
         },
         {
-            "name": "drama65"
+            "name": "drama2"
         },
         {
-            "name": "drama65"
+            "name": "drama3"
         },
         {
             "name": "restroom"
@@ -322,7 +322,7 @@
             "name": "nosmoking"
         },
         {
-            "name": "nosmoking65"
+            "name": "nosmoking2"
         },
         {
             "name": "surgery"
@@ -376,10 +376,10 @@
             "name": "shock"
         },
         {
-            "name": "something-old65"
+            "name": "something-old1"
         },
         {
-            "name": "something-old65"
+            "name": "something-old2"
         },
         {
             "name": "space"
@@ -460,19 +460,19 @@
             "name": "cryo"
         },
         {
-            "name": "nanotrasen_sign65"
+            "name": "nanotrasen_sign1"
         },
         {
-            "name": "nanotrasen_sign65"
+            "name": "nanotrasen_sign2"
         },
         {
-            "name": "nanotrasen_sign65"
+            "name": "nanotrasen_sign3"
         },
         {
-            "name": "nanotrasen_sign65"
+            "name": "nanotrasen_sign4"
         },
         {
-            "name": "nanotrasen_sign65"
+            "name": "nanotrasen_sign5"
         },
         {
             "name": "one"

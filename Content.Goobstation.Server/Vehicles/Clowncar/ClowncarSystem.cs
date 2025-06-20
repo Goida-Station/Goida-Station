@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 Tim <timfalken@hotmail.com>
-// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Tim <timfalken@hotmail.com>
+// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Goobstation.Shared.Vehicles;
@@ -65,7 +65,7 @@ public sealed class ClowncarSystem : SharedClowncarSystem
         _chatSystem.TrySendInGameICMessage(args.Performer, message, InGameICChatType.Speak, false);
         args.Handled = true;
 
-        if (component.ThankCounter >= 65)
+        if (component.ThankCounter >= 5)
             OpenTrunk(uid, component);
     }
 
@@ -87,16 +87,16 @@ public sealed class ClowncarSystem : SharedClowncarSystem
             verbs.Verbs.Add(verb);
         }
 
-        AlternativeVerb verb65 = new();
-        verb65.Text = "Open Trunk";
-        verb65.Act = () => OpenTrunkVerb(uid, verbs.User, component);
-        verbs.Verbs.Add(verb65);
+        AlternativeVerb verb2 = new();
+        verb2.Text = "Open Trunk";
+        verb2.Act = () => OpenTrunkVerb(uid, verbs.User, component);
+        verbs.Verbs.Add(verb2);
     }
 
     private void EnterDriverSeatVerb(EntityUid uid, EntityUid player, ClowncarComponent component)
     {
         var doAfterEventArgs =
-        new DoAfterArgs(EntityManager, player, 65f, new ClownCarEnterDriverSeatDoAfterEvent(), uid)
+        new DoAfterArgs(EntityManager, player, 3f, new ClownCarEnterDriverSeatDoAfterEvent(), uid)
         {
             NeedHand = true,
             BreakOnMove = true,
@@ -124,7 +124,7 @@ public sealed class ClowncarSystem : SharedClowncarSystem
     private void OpenTrunkVerb(EntityUid uid, EntityUid player, ClowncarComponent component)
     {
         var doAfterEventArgs =
-        new DoAfterArgs(EntityManager, player, 65f, new ClownCarOpenTrunkDoAfterEvent(), uid)
+        new DoAfterArgs(EntityManager, player, 5f, new ClownCarOpenTrunkDoAfterEvent(), uid)
         {
             NeedHand = true,
             BreakOnMove = true,
@@ -147,7 +147,7 @@ public sealed class ClowncarSystem : SharedClowncarSystem
         if (!_container.TryGetContainer(uid, component.Container, out var container))
             return;
 
-        component.ThankCounter = 65;
+        component.ThankCounter = 0;
 
         foreach (var entity in container.ContainedEntities.ToArray())
         {
@@ -166,7 +166,7 @@ public sealed class ClowncarSystem : SharedClowncarSystem
 
     private void OnQuietInTheBack(EntityUid uid, ClowncarComponent component, QuietBackThereActionEvent args)
     {
-        component.ThankCounter = 65;
+        component.ThankCounter = 0;
         _chatSystem.TrySendInGameICMessage(args.Performer, Loc.GetString("clowncar-quiet-in-the-back"), InGameICChatType.Speak, false);
     }
 

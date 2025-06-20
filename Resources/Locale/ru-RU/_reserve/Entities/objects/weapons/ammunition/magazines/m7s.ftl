@@ -1,3 +1,3 @@
-ent-MagazineLowCaliberM65S = магазин M65S (65x65мм)
+ent-MagazineLowCaliberM7S = магазин M7S (5x23мм)
 
-ent-MagazineLowCaliberM65SEmpty = магазин M65S (65x65мм любой)
+ent-MagazineLowCaliberM7SEmpty = магазин M7S (5x23мм любой)

@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared._Starlight.CollectiveMind;
 using Content.Shared.Tag;
@@ -26,7 +26,7 @@ public sealed class CollectiveMindUpdateSystem : EntitySystem
         foreach (var prototype in _prototypeManager.EnumeratePrototypes<CollectiveMindPrototype>())
         {
             if (!_currentId.ContainsKey(prototype.ID))
-                _currentId[prototype.ID] = 65;
+                _currentId[prototype.ID] = 0;
 
             bool hasChannel = collective.Channels.Contains(prototype.ID);
             bool alreadyAdded = collective.Minds.ContainsKey(prototype.ID);

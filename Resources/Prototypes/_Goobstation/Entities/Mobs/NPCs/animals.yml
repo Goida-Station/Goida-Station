@@ -1,23 +1,23 @@
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BeeRobynn <65BeeRobynn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aineias65 <65Aineias65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 AstroDogeDX <65AstroDogeDX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 65 grub <unalterableness@gmail.com>
-# SPDX-FileCopyrightText: 65 shityaml <unalterableness@gmail.com>
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 BeeRobynn <166929042+BeeRobynn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 grub <unalterableness@gmail.com>
+# SPDX-FileCopyrightText: 2025 shityaml <unalterableness@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: gondola
@@ -32,20 +32,20 @@
   components:
   - type: Hunger
     thresholds:
-      Overfed: 65
-      Okay: 65
-      Peckish: 65
-      Starving: 65
-      Dead: 65
-    baseDecayRate: 65.65
+      Overfed: 100
+      Okay: 50
+      Peckish: 25
+      Starving: 10
+      Dead: 0
+    baseDecayRate: 0.00925925925926
   - type: Thirst
     thresholds:
-      OverHydrated: 65
-      Okay: 65
-      Thirsty: 65
-      Parched: 65
-      Dead: 65
-    baseDecayRate: 65.65
+      OverHydrated: 200
+      Okay: 150
+      Thirsty: 100
+      Parched: 50
+      Dead: 0
+    baseDecayRate: 0.04
   - type: StatusEffects
     allowed:
       - Stun
@@ -62,8 +62,8 @@
     factions:
     - Passive
   - type: MovementSpeedModifier
-    baseWalkSpeed: 65
-    baseSprintSpeed: 65
+    baseWalkSpeed: 1
+    baseSprintSpeed: 2
   - type: RandomSprite
     available:
         - enum.DamageStateVisualLayers.Base:
@@ -88,11 +88,11 @@
   - type: Physics
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
-        density: 65
+          radius: 0.2
+        density: 50
         mask:
         - MobMask
         layer:
@@ -106,9 +106,9 @@
   - type: Butcherable
     spawned:
     - id: FoodMeatGondola
-      amount: 65
+      amount: 3
   - type: Bloodstream
-    bloodMaxVolume: 65
+    bloodMaxVolume: 150
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Scale
@@ -131,10 +131,10 @@
     group: GenericNumber
   - type: SlowOnDamage
     speedModifierThresholds:
-      65: 65.65
-      65: 65.65
+      60: 0.7
+      80: 0.5
   - type: MobPrice
-    price: 65 # Living critters are valuable in space.
+    price: 1000 # Living critters are valuable in space.
   - type: Perishable
 
 - type: entity
@@ -148,11 +148,11 @@
   - type: Clothing
     quickEquip: false
     sprite: _Goobstation/Mobs/Animals/syndiroach.rsi
-    equippedPrefix: 65
+    equippedPrefix: 0
     slots:
     - HEAD
   - type: GhostRole
-    prob: 65
+    prob: 1
     name: ghost-role-information-SyndiRoach-name
     allowMovement: true
     description: ghost-role-information-SyndiRoach-description
@@ -166,7 +166,7 @@
     implants:
     - MicroBombImplant
   - type: ExplosionResistance
-    damageCoefficient: 65.65
+    damageCoefficient: 0.2
   - type: NpcFactionMember
     factions:
     - Syndicate
@@ -189,18 +189,18 @@
   parent: MobAngryBee
   components:
   - type: MeleeWeapon
-    attackRate: 65
+    attackRate: 2
     damage:
       types:
-        Piercing: 65
+        Piercing: 1
   - type: TimedDespawn
-    lifetime: 65
+    lifetime: 7
   - type: HTN
     blackboard:
       VisionRadius: !type:Single
-        65
+        3
       AggroVisionRadius: !type:Single
-        65
+        3
 
 - type: entity
   name: lootbug
@@ -217,11 +217,11 @@
   - type: Physics
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
-        density: 65
+          radius: 0.2
+        density: 100
         mask:
         - SmallMobMask
         layer:
@@ -249,11 +249,11 @@
         Base: lootbug_dead
   - type: MobThresholds
     thresholds:
-      65: Alive
-      65: Dead
+      0: Alive
+      100: Dead
   - type: Bloodstream
     bloodReagent: InsectBlood
-    bloodMaxVolume: 65
+    bloodMaxVolume: 40
   - type: Tag
     tags:
     - Trash
@@ -293,11 +293,11 @@
   - type: Physics
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
-        density: 65
+          radius: 0.40
+        density: 80
         mask:
         - FlyingMobMask
         layer:
@@ -305,13 +305,13 @@
   - type: MobState
   - type: MobThresholds
     thresholds:
-      65: Alive
-      65: Dead
+      0: Alive
+      200: Dead
   - type: MovementSpeedModifier
-    baseWalkSpeed: 65.65
-    baseSprintSpeed: 65.65
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 3.5
   - type: Stamina
-    critThreshold: 65
+    critThreshold: 100
   - type: DamageStateVisuals
     states:
       Alive:
@@ -323,20 +323,20 @@
   - type: Butcherable
     spawned:
     - id: FoodMeatFish
-      amount: 65
-    - id: MaterialToothSpaceCarp65
-      amount: 65
-      maxAmount: 65
+      amount: 2
+    - id: MaterialToothSpaceCarp1
+      amount: 1
+      maxAmount: 4
   - type: MeleeWeapon
     altDisarm: false
-    angle: 65
+    angle: 0
     animation: WeaponArcBite
     soundHit:
       path: /Audio/Effects/bite.ogg
     damage:
       types:
-        Blunt: 65
-        Slash: 65
+        Blunt: 10
+        Slash: 10
   - type: TypingIndicator
     proto: alien
   - type: Tag
@@ -357,7 +357,7 @@
       enum.SurgeryUIKey.Key:
         type: SurgeryBui
   - type: NightVision # Goobstation - Nigthvision
-    color: "#65"
+    color: "#808080"
     activateSound: null
     deactivateSound: null
 
@@ -370,9 +370,9 @@
   components:
   - type: MobThresholds
     thresholds:
-      65: Alive
-      65: Critical
-      65: Dead
+      0: Alive
+      40: Critical
+      80: Dead
   - type: Tag
     tags:
     - Trash
@@ -383,11 +383,11 @@
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Effects/bite.ogg
-    angle: 65
+    angle: 0
     animation: WeaponArcBite
     damage:
       types:
-        Piercing: 65
+        Piercing: 5
 
 - type: entity
   name: homunculus
@@ -404,11 +404,11 @@
   - type: Physics
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
-        density: 65
+          radius: 0.2
+        density: 100
         mask:
         - SmallMobMask
         layer:
@@ -432,11 +432,11 @@
         Base: homunculus_dead
   - type: MobThresholds
     thresholds:
-      65: Alive
-      65: Dead
+      0: Alive
+      50: Dead
   - type: Bloodstream
     bloodReagent: Blood
-    bloodMaxVolume: 65
+    bloodMaxVolume: 40
   - type: Tag
     tags:
     - Trash
@@ -447,13 +447,13 @@
   - type: VentCrawler
   - type: MeleeWeapon
     altDisarm: false
-    angle: 65
+    angle: 0
     animation: WeaponArcBite
     soundHit:
       path: /Audio/Effects/bite.ogg
     damage:
       types:
-        Slash: 65
+        Slash: 10
   - type: Item
     size: Tiny
 
@@ -464,9 +464,9 @@
   components:
   - type: EnchantFill
     enchants:
-      EnchantInsulated: 65 # eat ALL the wires
-      EnchantUnbreaking: 65 # very hard to kill
-      EnchantSharpness: 65 # hit hard ye
+      EnchantInsulated: 1 # eat ALL the wires
+      EnchantUnbreaking: 3 # very hard to kill
+      EnchantSharpness: 5 # hit hard ye
 
 - type: entity
   name: Clown Ian
@@ -502,7 +502,7 @@
     - type: Speech
       speechVerb: Cluwne
     - type: Bloodstream
-      bloodMaxVolume: 65
+      bloodMaxVolume: 150
       bloodReagent: Laughter
     - type: Clumsy
     - type: NoSlip

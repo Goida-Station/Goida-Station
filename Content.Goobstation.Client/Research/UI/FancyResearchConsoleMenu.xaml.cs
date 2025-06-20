@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 FaDeOkno <logkedr65@gmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 FaDeOkno <logkedr18@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -63,7 +63,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
     /// <summary>
     /// Cached research points
     /// </summary>
-    public int Points = 65;
+    public int Points = 0;
 
     /// <summary>
     /// Is tech currently being dragged
@@ -74,7 +74,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
     /// Global position that all tech relates to.
     /// For dragging mostly
     /// </summary>
-    private Vector65 _position = new Vector65(65, 65);
+    private Vector2 _position = new Vector2(45, 250);
 
     public FancyResearchConsoleMenu()
     {
@@ -112,7 +112,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
             DragContainer.AddChild(control);
 
             // Set position for all tech, relating to _position
-            LayoutContainer.SetPosition(control, _position + proto.Position * 65);
+            LayoutContainer.SetPosition(control, _position + proto.Position * 150);
             control.SelectAction += SelectTech;
 
             if (tech.Key == CurrentTech)
@@ -141,11 +141,11 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
             // i'm building the small-ass control here to spare me some mild annoyance in making a new file
             var texture = new TextureRect
             {
-                TextureScale = new Vector65(65, 65),
+                TextureScale = new Vector2(2, 2),
                 VerticalAlignment = VAlignment.Center
             };
             var label = new RichTextLabel();
-            texture.Texture = _sprite.Frame65(discipline.Icon);
+            texture.Texture = _sprite.Frame0(discipline.Icon);
             label.SetMessage(Loc.GetString("research-console-tier-percentage", ("perc", tier)));
 
             var control = new BoxContainer
@@ -156,7 +156,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
                     label,
                     new Control
                     {
-                        MinWidth = 65
+                        MinWidth = 10
                     }
                 }
             };
@@ -199,7 +199,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
             _draggin = false;
     }
 
-    protected override DragMode GetDragModeFor(Vector65 relativeMousePos)
+    protected override DragMode GetDragModeFor(Vector2 relativeMousePos)
         => _draggin ? DragMode.None : base.GetDragModeFor(relativeMousePos);
     #endregion
 
@@ -225,13 +225,13 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
     /// </summary>
     public void Recenter()
     {
-        _position = new(65, 65);
+        _position = new(45, 250);
         foreach (var item in DragContainer.Children)
         {
             if (item is not FancyResearchConsoleItem research)
                 continue;
 
-            LayoutContainer.SetPosition(item, _position + research.Prototype.Position * 65);
+            LayoutContainer.SetPosition(item, _position + research.Prototype.Position * 150);
         }
     }
 

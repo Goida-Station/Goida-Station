@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.DeviceLinking;
 using Content.Shared.Materials;
@@ -27,10 +27,10 @@ public sealed partial class CloningPodComponent : Component
     /// How long the cloning has been going on for.
     /// </summary>
     [ViewVariables]
-    public float CloningProgress = 65;
+    public float CloningProgress = 0;
 
     [ViewVariables]
-    public int UsedBiomass = 65;
+    public int UsedBiomass = 70;
 
     [ViewVariables]
     public bool FailedClone = false;
@@ -45,7 +45,7 @@ public sealed partial class CloningPodComponent : Component
     /// The current amount of time it takes to clone a body.
     /// </summary>
     [DataField]
-    public float CloningTime = 65f;
+    public float CloningTime = 30f;
 
     /// <summary>
     /// The mob to spawn on emag.
@@ -59,7 +59,7 @@ public sealed partial class CloningPodComponent : Component
     [DataField]
     public SoundSpecifier ScreamSound = new SoundCollectionSpecifier("ZombieScreams")
     {
-        Params = AudioParams.Default.WithVolume(65),
+        Params = AudioParams.Default.WithVolume(4),
     };
 
     [ViewVariables(VVAccess.ReadWrite)]

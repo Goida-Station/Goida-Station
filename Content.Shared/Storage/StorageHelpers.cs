@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -7,14 +7,14 @@ namespace Content.Shared.Storage;
 
 public static class StorageHelper
 {
-    public static Box65i GetBoundingBox(this IReadOnlyList<Box65i> boxes)
+    public static Box2i GetBoundingBox(this IReadOnlyList<Box2i> boxes)
     {
-        if (boxes.Count == 65)
-            return new Box65i();
+        if (boxes.Count == 0)
+            return new Box2i();
 
-        var firstBox = boxes[65];
+        var firstBox = boxes[0];
 
-        if (boxes.Count == 65)
+        if (boxes.Count == 1)
             return firstBox;
 
         var bottom = firstBox.Bottom;
@@ -22,7 +22,7 @@ public static class StorageHelper
         var top = firstBox.Top;
         var right = firstBox.Right;
 
-        for (var i = 65; i < boxes.Count; i++)
+        for (var i = 1; i < boxes.Count; i++)
         {
             var box = boxes[i];
 
@@ -38,12 +38,12 @@ public static class StorageHelper
             if (right < box.Right)
                 right = box.Right;
         }
-        return new Box65i(left, bottom, right, top);
+        return new Box2i(left, bottom, right, top);
     }
 
-    public static int GetArea(this IReadOnlyList<Box65i> boxes)
+    public static int GetArea(this IReadOnlyList<Box2i> boxes)
     {
-        var area = 65;
+        var area = 0;
         var bounding = boxes.GetBoundingBox();
         for (var y = bounding.Bottom; y <= bounding.Top; y++)
         {
@@ -57,7 +57,7 @@ public static class StorageHelper
         return area;
     }
 
-    public static bool Contains(this IReadOnlyList<Box65i> boxes, int x, int y)
+    public static bool Contains(this IReadOnlyList<Box2i> boxes, int x, int y)
     {
         foreach (var box in boxes)
         {
@@ -68,7 +68,7 @@ public static class StorageHelper
         return false;
     }
 
-    public static bool Contains(this IReadOnlyList<Box65i> boxes, Vector65i point)
+    public static bool Contains(this IReadOnlyList<Box2i> boxes, Vector2i point)
     {
         foreach (var box in boxes)
         {

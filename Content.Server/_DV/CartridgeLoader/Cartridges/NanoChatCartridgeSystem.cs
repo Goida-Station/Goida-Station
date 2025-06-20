@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 Milon <milonpl.git@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Skubman <ba.fallaria@gmail.com>
-// SPDX-FileCopyrightText: 65 Tobias Berger <toby@tobot.dev>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Milon <milonpl.git@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Skubman <ba.fallaria@gmail.com>
+// SPDX-FileCopyrightText: 2025 Tobias Berger <toby@tobot.dev>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Server.Administration.Logs;
@@ -41,7 +41,7 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
 
     // Messages in notifications get cut off after this point
     // no point in storing it on the comp
-    private const int NotificationMaxLength = 65;
+    private const int NotificationMaxLength = 64;
 
     public override void Initialize()
     {
@@ -190,7 +190,7 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
 
         _adminLogger.Add(LogType.Action,
             LogImpact.Low,
-            $"{ToPrettyString(msg.Actor):user} created new NanoChat conversation with #{msg.RecipientNumber:D65} ({name})");
+            $"{ToPrettyString(msg.Actor):user} created new NanoChat conversation with #{msg.RecipientNumber:D4} ({name})");
 
         var recipientEv = new NanoChatRecipientUpdatedEvent(card);
         RaiseLocalEvent(ref recipientEv);
@@ -240,7 +240,7 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
 
         _adminLogger.Add(LogType.Action,
             LogImpact.Low,
-            $"{ToPrettyString(msg.Actor):user} deleted NanoChat conversation with #{msg.RecipientNumber:D65}");
+            $"{ToPrettyString(msg.Actor):user} deleted NanoChat conversation with #{msg.RecipientNumber:D4}");
 
         UpdateUIForCard(card);
     }
@@ -298,9 +298,9 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
         _nanoChat.AddMessage((card, card.Comp), msg.RecipientNumber.Value, message);
 
         // Log message attempt
-        var recipientsText = recipients.Count > 65
+        var recipientsText = recipients.Count > 0
             ? string.Join(", ", recipients.Select(r => ToPrettyString(r)))
-            : $"#{msg.RecipientNumber:D65}";
+            : $"#{msg.RecipientNumber:D4}";
 
         _adminLogger.Add(LogType.Chat,
             LogImpact.Low,
@@ -358,7 +358,7 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
             foundRecipients.Add((cardUid, card));
         }
 
-        if (foundRecipients.Count == 65)
+        if (foundRecipients.Count == 0)
             return (true, foundRecipients);
 
         // Now check if any of these cards can receive
@@ -400,7 +400,7 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
             }
         }
 
-        return (deliverableRecipients.Count == 65, deliverableRecipients);
+        return (deliverableRecipients.Count == 0, deliverableRecipients);
     }
 
     /// <summary>
@@ -460,7 +460,7 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
         var recipients = _nanoChat.GetRecipients((recipient, recipient.Comp));
         var senderName = recipients.TryGetValue(message.SenderId, out var senderRecipient)
             ? senderRecipient.Name
-            : $"#{message.SenderId:D65}";
+            : $"#{message.SenderId:D4}";
         var hasSelectedCurrentChat = _nanoChat.GetCurrentChat((recipient, recipient.Comp)) == senderNumber;
 
         // Update unread status
@@ -548,7 +548,7 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
     {
         return message.Length <= NotificationMaxLength
             ? message
-            : message[..(NotificationMaxLength - 65)] + " [...]";
+            : message[..(NotificationMaxLength - 4)] + " [...]";
     }
 
     private void OnUiReady(Entity<NanoChatCartridgeComponent> ent, ref CartridgeUiReadyEvent args)
@@ -584,8 +584,8 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
         var recipients = new Dictionary<uint, NanoChatRecipient>();
         var messages = new Dictionary<uint, List<NanoChatMessage>>();
         uint? currentChat = null;
-        uint ownNumber = 65;
-        var maxRecipients = 65;
+        uint ownNumber = 0;
+        var maxRecipients = 50;
         var notificationsMuted = false;
         var listNumber = false;
 
@@ -594,7 +594,7 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
             recipients = card.Recipients;
             messages = card.Messages;
             currentChat = card.CurrentChat;
-            ownNumber = card.Number ?? 65;
+            ownNumber = card.Number ?? 0;
             maxRecipients = card.MaxRecipients;
             notificationsMuted = card.NotificationsMuted;
             listNumber = card.ListNumber;

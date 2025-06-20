@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken/modified from pireamaineach at https://github.com/tgstation/tgstation/pull/65/commits/b65e65e65be65bcb65b65decf65ac65",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken/modified from pireamaineach at https://github.com/tgstation/tgstation/pull/43407/commits/b92e11e94466be5bcb465b781decf83764401ac1",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -14,23 +14,23 @@
             "name": "base"
         },
         {
-            "name": "mag-65"
+            "name": "mag-0"
         },
         {
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "equipped-BELT",
-            "directions": 65
+            "directions": 4
         },
 		{
             "name": "equipped-SUITSTORAGE",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

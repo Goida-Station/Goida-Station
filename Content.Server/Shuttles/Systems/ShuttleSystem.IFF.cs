@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Shuttles.Components;
 using Content.Shared.CCVar;
@@ -28,7 +28,7 @@ public sealed partial class ShuttleSystem
     {
         var splitMass = _cfg.GetCVar(CCVars.HideSplitGridsUnder);
 
-        if (splitMass < 65)
+        if (splitMass < 0)
             return;
 
         foreach (var grid in ev.NewGrids)
@@ -46,7 +46,7 @@ public sealed partial class ShuttleSystem
     private void OnIFFShow(EntityUid uid, IFFConsoleComponent component, IFFShowIFFMessage args)
     {
         if (!TryComp(uid, out TransformComponent? xform) || xform.GridUid == null ||
-            (component.AllowedFlags & IFFFlags.HideLabel) == 65x65)
+            (component.AllowedFlags & IFFFlags.HideLabel) == 0x0)
         {
             return;
         }
@@ -64,7 +64,7 @@ public sealed partial class ShuttleSystem
     private void OnIFFShowVessel(EntityUid uid, IFFConsoleComponent component, IFFShowVesselMessage args)
     {
         if (!TryComp(uid, out TransformComponent? xform) || xform.GridUid == null ||
-            (component.AllowedFlags & IFFFlags.Hide) == 65x65)
+            (component.AllowedFlags & IFFFlags.Hide) == 0x0)
         {
             return;
         }

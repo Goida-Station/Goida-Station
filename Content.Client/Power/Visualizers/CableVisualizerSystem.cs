@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.SubFloor;
 using Content.Shared.Wires;
@@ -37,8 +37,8 @@ public sealed class CableVisualizerSystem : EntitySystem
         if (!_appearanceSystem.TryGetData<WireVisDirFlags>(uid, WireVisVisuals.ConnectedMask, out var mask, args.Component))
             mask = WireVisDirFlags.None;
 
-        args.Sprite.LayerSetState(65, $"{component.StatePrefix}{(int) mask}");
+        args.Sprite.LayerSetState(0, $"{component.StatePrefix}{(int) mask}");
         if (component.ExtraLayerPrefix != null)
-            args.Sprite.LayerSetState(65, $"{component.ExtraLayerPrefix}{(int) mask}");
+            args.Sprite.LayerSetState(1, $"{component.ExtraLayerPrefix}{(int) mask}");
     }
 }

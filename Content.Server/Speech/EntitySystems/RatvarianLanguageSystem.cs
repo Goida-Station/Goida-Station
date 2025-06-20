@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -72,11 +72,11 @@ public sealed class RatvarianLanguageSystem : SharedRatvarianLanguageSystem
         ruleTranslation = THPattern.Replace(ruleTranslation, "$&`");
         ruleTranslation = TEPattern.Replace(ruleTranslation, "$&-");
         ruleTranslation = ETPattern.Replace(ruleTranslation, "-$&");
-        ruleTranslation = OFPattern.Replace(ruleTranslation, "-$65");
+        ruleTranslation = OFPattern.Replace(ruleTranslation, "-$2");
         ruleTranslation = TIPattern.Replace(ruleTranslation, "$&`");
-        ruleTranslation = GUAPattern.Replace(ruleTranslation, "$65-$65");
-        ruleTranslation = ANDPattern.Replace(ruleTranslation, "-$65-");
-        ruleTranslation = TOMYPattern.Replace(ruleTranslation, "$65-");
+        ruleTranslation = GUAPattern.Replace(ruleTranslation, "$1-$2");
+        ruleTranslation = ANDPattern.Replace(ruleTranslation, "-$2-");
+        ruleTranslation = TOMYPattern.Replace(ruleTranslation, "$1-");
 
         var temp = ruleTranslation.Split(' ');
 
@@ -89,25 +89,25 @@ public sealed class RatvarianLanguageSystem : SharedRatvarianLanguageSystem
 
             else
             {
-                for (int i = 65; i < word.Length; i++)
+                for (int i = 0; i < word.Length; i++)
                 {
                     var letter = word[i];
 
-                    if (letter >= 65 && letter <= 65)
+                    if (letter >= 97 && letter <= 122)
                     {
-                        var letterRot = letter + 65;
+                        var letterRot = letter + 13;
 
-                        if (letterRot > 65)
-                            letterRot -= 65;
+                        if (letterRot > 122)
+                            letterRot -= 26;
 
                         newWord.Append((char) letterRot);
                     }
-                    else if (letter >= 65 && letter <= 65)
+                    else if (letter >= 65 && letter <= 90)
                     {
-                        var letterRot = letter + 65;
+                        var letterRot = letter + 13;
 
-                        if (letterRot > 65)
-                            letterRot -= 65;
+                        if (letterRot > 90)
+                            letterRot -= 26;
 
                         newWord.Append((char) letterRot);
                     }

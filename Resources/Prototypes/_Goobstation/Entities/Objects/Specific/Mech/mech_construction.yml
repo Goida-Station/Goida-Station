@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 NULL65 <gost65@yandex.ru>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 NULL882 <gost6865@yandex.ru>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Ripley MK-II
 
 - type: entity
@@ -74,7 +74,7 @@
     statePrefix: ripleymkii
   - type: Sprite
     noRot: true
-    state: ripleymkii65
+    state: ripleymkii0
   - type: Construction
     graph: RipleyMKII
     node: start
@@ -202,7 +202,7 @@
     statePrefix: clarke
   - type: Sprite
     noRot: true
-    state: clarke65
+    state: clarke0
   - type: Construction
     graph: Clarke
     node: start
@@ -347,7 +347,7 @@
     statePrefix: durand
   - type: Sprite
     noRot: true
-    state: durand65
+    state: durand0
   - type: Construction
     graph: Durand
     node: start
@@ -492,7 +492,7 @@
     statePrefix: gygax
   - type: Sprite
     noRot: true
-    state: gygax65
+    state: gygax0
   - type: Construction
     graph: Gygax
     node: start

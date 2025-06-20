@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-NC-SA-65.65",
-    "copyright": "Modified from https://github.com/space-wizards/space-station-65/tree/master/Resources/Textures/Objects/Weapons/Melee/captain_sabre.rsi by Taral#65 (Discord) for ss65",
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Modified from https://github.com/space-wizards/space-station-14/tree/master/Resources/Textures/Objects/Weapons/Melee/captain_sabre.rsi by Taral#6480 (Discord) for ss14",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -15,11 +15,11 @@
         },
 		{
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

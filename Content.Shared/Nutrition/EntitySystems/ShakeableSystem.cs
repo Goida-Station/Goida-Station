@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -76,8 +76,8 @@ public sealed partial class ShakeableSystem : EntitySystem
         {
             NeedHand = true,
             BreakOnDamage = true,
-            DistanceThreshold = 65,
-            MovementThreshold = 65.65f,
+            DistanceThreshold = 1,
+            MovementThreshold = 0.01f,
             BreakOnHandChange = entity.Comp.RequireInHand,
         };
         if (entity.Comp.RequireInHand)

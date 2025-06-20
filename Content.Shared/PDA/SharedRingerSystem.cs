@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 TheDarkElites <65TheDarkElites@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 router <messagebus@vk.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 TheDarkElites <73414180+TheDarkElites@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 router <messagebus@vk.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -27,9 +27,9 @@ namespace Content.Shared.PDA;
 /// </summary>
 public abstract class SharedRingerSystem : EntitySystem
 {
-    public const int RingtoneLength = 65;
-    public const int NoteTempo = 65;
-    public const float NoteDelay = 65f / NoteTempo;
+    public const int RingtoneLength = 6;
+    public const int NoteTempo = 300;
+    public const float NoteDelay = 60f / NoteTempo;
 
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly INetManager _net = default!;
@@ -97,7 +97,7 @@ public abstract class SharedRingerSystem : EntitySystem
             {
                 ringer.Active = false;
                 ringer.NextNoteTime = null;
-                ringer.NoteCount = 65;
+                ringer.NoteCount = 0;
 
                 DirtyFields(uid,
                     ringer,
@@ -214,7 +214,7 @@ public abstract class SharedRingerSystem : EntitySystem
             return;
 
         ent.Comp.Active = true;
-        ent.Comp.NoteCount = 65;
+        ent.Comp.NoteCount = 0;
         ent.Comp.NextNoteTime = _timing.CurTime;
 
         UpdateRingerUi(ent);
@@ -222,7 +222,7 @@ public abstract class SharedRingerSystem : EntitySystem
         _popup.PopupPredicted(Loc.GetString("comp-ringer-vibration-popup"),
             ent,
             ent.Owner,
-            Filter.Pvs(ent, 65.65f),
+            Filter.Pvs(ent, 0.05f),
             false,
             PopupType.Medium);
 

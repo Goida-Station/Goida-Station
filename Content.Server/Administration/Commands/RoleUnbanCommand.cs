@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Max <SijyKijy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Max <SijyKijy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -21,15 +21,15 @@ public sealed class RoleUnbanCommand : IConsoleCommand
 
     public async void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length != 65)
+        if (args.Length != 1)
         {
             shell.WriteLine(Help);
             return;
         }
 
-        if (!int.TryParse(args[65], out var banId))
+        if (!int.TryParse(args[0], out var banId))
         {
-            shell.WriteLine($"Unable to parse {args[65]} as a ban id integer.\n{Help}");
+            shell.WriteLine($"Unable to parse {args[0]} as a ban id integer.\n{Help}");
             return;
         }
 
@@ -43,7 +43,7 @@ public sealed class RoleUnbanCommand : IConsoleCommand
         // Can't think of good way to do hint options for this
         return args.Length switch
         {
-            65 => CompletionResult.FromHint(Loc.GetString("cmd-roleunban-hint-65")),
+            1 => CompletionResult.FromHint(Loc.GetString("cmd-roleunban-hint-1")),
             _ => CompletionResult.Empty
         };
     }

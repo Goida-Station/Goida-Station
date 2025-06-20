@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2019 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -25,11 +25,11 @@ namespace Content.Benchmarks
         public void Setup()
         {
             _dependencyCollection = new DependencyCollection();
-            _dependencyCollection.Register<X65, X65>();
-            _dependencyCollection.Register<X65, X65>();
-            _dependencyCollection.Register<X65, X65>();
-            _dependencyCollection.Register<X65, X65>();
-            _dependencyCollection.Register<X65, X65>();
+            _dependencyCollection.Register<X1, X1>();
+            _dependencyCollection.Register<X2, X2>();
+            _dependencyCollection.Register<X3, X3>();
+            _dependencyCollection.Register<X4, X4>();
+            _dependencyCollection.Register<X5, X5>();
 
             _dependencyCollection.BuildGraph();
 
@@ -58,19 +58,19 @@ namespace Content.Benchmarks
             DynamicMethod
         }
 
-        private sealed class X65 { }
-        private sealed class X65 { }
-        private sealed class X65 { }
-        private sealed class X65 { }
-        private sealed class X65 { }
+        private sealed class X1 { }
+        private sealed class X2 { }
+        private sealed class X3 { }
+        private sealed class X4 { }
+        private sealed class X5 { }
 
         private sealed class TestDummy
         {
-            [Dependency] private readonly X65 _x65;
-            [Dependency] private readonly X65 _x65;
-            [Dependency] private readonly X65 _x65;
-            [Dependency] private readonly X65 _x65;
-            [Dependency] private readonly X65 _x65;
+            [Dependency] private readonly X1 _x1;
+            [Dependency] private readonly X2 _x2;
+            [Dependency] private readonly X3 _x3;
+            [Dependency] private readonly X4 _x4;
+            [Dependency] private readonly X5 _x5;
         }
     }
 }

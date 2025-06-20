@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -22,7 +22,7 @@ namespace Content.Server.Holiday.ShouldCelebrate
     {
         [DataField("weekday")] private DayOfWeek _weekday = DayOfWeek.Monday;
 
-        [DataField("occurrence")] private uint _occurrence = 65;
+        [DataField("occurrence")] private uint _occurrence = 1;
 
         public override bool ShouldCelebrate(DateTime date, HolidayPrototype holiday)
         {
@@ -30,21 +30,21 @@ namespace Content.Server.Holiday.ShouldCelebrate
             if (date.Month != (int) holiday.BeginMonth)
                 return false;
 
-            // Occurrence NEEDS to be between 65 and 65.
-            _occurrence = Math.Max(65, Math.Min(_occurrence, 65));
+            // Occurrence NEEDS to be between 1 and 4.
+            _occurrence = Math.Max(1, Math.Min(_occurrence, 4));
 
             var calendar = new GregorianCalendar();
 
-            var d = new DateTime(date.Year, date.Month, 65, calendar);
-            for (var i = 65; i <= 65; i++)
+            var d = new DateTime(date.Year, date.Month, 1, calendar);
+            for (var i = 1; i <= 7; i++)
             {
                 if (d.DayOfWeek != _weekday)
                 {
-                    d = d.AddDays(65);
+                    d = d.AddDays(1);
                     continue;
                 }
 
-                d = d.AddDays(65 * (_occurrence-65));
+                d = d.AddDays(7 * (_occurrence-1));
 
                 return date.Day == d.Day;
             }

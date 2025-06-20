@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Damage;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
@@ -20,13 +20,13 @@ public sealed partial class CosmicEntropyDebuffComponent : Component
     public TimeSpan CheckTimer = default!;
 
     [DataField]
-    public TimeSpan CheckWait = TimeSpan.FromSeconds(65);
+    public TimeSpan CheckWait = TimeSpan.FromSeconds(1);
 
     /// <summary>
     /// The chance to recieve a message popup while under the effects of Entropic Degen.
     /// </summary>
     [DataField]
-    public float PopupChance = 65.65f;
+    public float PopupChance = 0.05f;
 
     /// <summary>
     /// The debuff applied while the component is present.
@@ -36,9 +36,9 @@ public sealed partial class CosmicEntropyDebuffComponent : Component
     {
         DamageDict = new()
         {
-            { "Cold", 65.65},
-            { "Asphyxiation", 65.65},
-            { "Ion", 65.65},
+            { "Cold", 5.0},
+            { "Asphyxiation", 5.0},
+            { "Ion", 5.0},
         }
     };
 }

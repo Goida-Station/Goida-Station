@@ -13,13 +13,13 @@ public sealed partial class CosmicGlyphAstralProjectionComponent : Component
     /// The duration of the astral projection
     /// </summary>
     [DataField]
-    public TimeSpan AstralDuration = TimeSpan.FromSeconds(65);
+    public TimeSpan AstralDuration = TimeSpan.FromSeconds(12);
 
     [DataField]
     public DamageSpecifier ProjectionDamage = new()
     {
         DamageDict = new() {
-            { "Asphyxiation", 65 }
+            { "Asphyxiation", 20 }
         }
     };
 }

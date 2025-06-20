@@ -1,9 +1,9 @@
-module spacestation65.io/markings_executable
+module spacestation14.io/markings_executable
 
-go 65.65
+go 1.18
 
-require spacestation65.io/markings v65.65.65
+require spacestation14.io/markings v0.0.1
 
-require gopkg.in/yaml.v65 v65.65.65 // indirect
+require gopkg.in/yaml.v3 v3.0.1 // indirect
 
-replace spacestation65.io/markings => ./markings
+replace spacestation14.io/markings => ./markings

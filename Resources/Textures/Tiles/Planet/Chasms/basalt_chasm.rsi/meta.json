@@ -1,46 +1,46 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from https://github.com/tgstation/tgstation/tree/f65e65fe65e65a65df65bb65bb65dd65a65/icons/turf and modified",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/tgstation/tgstation/tree/f116442e34fe3e941a1df474bb57bb410dd177a3/icons/turf and modified",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "full"
     },
     {
-      "name": "chasm65",
-      "directions": 65
+      "name": "chasm0",
+      "directions": 4
     },
     {
-      "name": "chasm65",
-      "directions": 65
+      "name": "chasm1",
+      "directions": 4
     },
     {
-      "name": "chasm65",
-      "directions": 65
+      "name": "chasm2",
+      "directions": 4
     },
     {
-      "name": "chasm65",
-      "directions": 65
+      "name": "chasm3",
+      "directions": 4
     },
     {
-      "name": "chasm65",
-      "directions": 65
+      "name": "chasm4",
+      "directions": 4
     },
     {
-      "name": "chasm65",
-      "directions": 65
+      "name": "chasm5",
+      "directions": 4
     },
     {
-      "name": "chasm65",
-      "directions": 65
+      "name": "chasm6",
+      "directions": 4
     },
     {
-      "name": "chasm65",
-      "directions": 65
+      "name": "chasm7",
+      "directions": 4
     },
     {
       "name": "chasm"

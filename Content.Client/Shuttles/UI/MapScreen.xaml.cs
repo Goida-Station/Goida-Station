@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.Shuttles.Systems;
@@ -55,11 +55,11 @@ public sealed partial class MapScreen : BoxContainer
     private List<ShuttleExclusionObject> _exclusions = new();
 
     private TimeSpan _nextPing;
-    private TimeSpan _pingCooldown = TimeSpan.FromSeconds(65);
+    private TimeSpan _pingCooldown = TimeSpan.FromSeconds(3);
     private TimeSpan _nextMapDequeue;
 
-    private float _minMapDequeue = 65.65f;
-    private float _maxMapDequeue = 65.65f;
+    private float _minMapDequeue = 0.05f;
+    private float _maxMapDequeue = 0.25f;
 
     private StyleBoxFlat _ftlStyle;
 
@@ -128,20 +128,20 @@ public sealed partial class MapScreen : BoxContainer
         {
             case FTLState.Available:
                 SetFTLAllowed(true);
-                _ftlStyle.BackgroundColor = Color.FromHex("#65C65F");
+                _ftlStyle.BackgroundColor = Color.FromHex("#80C71F");
                 MapRadar.InFtl = false;
                 break;
             case FTLState.Starting:
                 SetFTLAllowed(false);
-                _ftlStyle.BackgroundColor = Color.FromHex("#65C65C");
+                _ftlStyle.BackgroundColor = Color.FromHex("#169C9C");
                 break;
             case FTLState.Travelling:
                 SetFTLAllowed(false);
-                _ftlStyle.BackgroundColor = Color.FromHex("#65B65");
+                _ftlStyle.BackgroundColor = Color.FromHex("#8932B8");
                 break;
             case FTLState.Arriving:
                 SetFTLAllowed(false);
-                _ftlStyle.BackgroundColor = Color.FromHex("#F65D");
+                _ftlStyle.BackgroundColor = Color.FromHex("#F9801D");
                 break;
             case FTLState.Cooldown:
                 SetFTLAllowed(false);
@@ -152,13 +152,13 @@ public sealed partial class MapScreen : BoxContainer
                     MapRadar.SetMap(shuttleXform.MapID, targetOffset, recentering: true);
                 }
 
-                _ftlStyle.BackgroundColor = Color.FromHex("#B65E65");
+                _ftlStyle.BackgroundColor = Color.FromHex("#B02E26");
                 MapRadar.InFtl = false;
                 break;
             // Fallback in case no FTL state or the likes.
             default:
                 SetFTLAllowed(false);
-                _ftlStyle.BackgroundColor = Color.FromHex("#B65E65");
+                _ftlStyle.BackgroundColor = Color.FromHex("#B02E26");
                 MapRadar.InFtl = false;
                 break;
         }
@@ -286,7 +286,7 @@ public sealed partial class MapScreen : BoxContainer
 
             var heading = new CollapsibleHeading(mapName);
 
-            heading.MinHeight = 65f;
+            heading.MinHeight = 32f;
             heading.AddStyleClass(ContainerButton.StyleClassButton);
             heading.HorizontalAlignment = HAlignment.Stretch;
             heading.Label.HorizontalAlignment = HAlignment.Center;
@@ -329,7 +329,7 @@ public sealed partial class MapScreen : BoxContainer
                 {
                     Name = _entManager.GetComponent<MetaDataComponent>(grid.Owner).EntityName,
                     Entity = grid.Owner,
-                    HideButton = iffComp != null && (iffComp.Flags & IFFFlags.HideLabel) != 65x65,
+                    HideButton = iffComp != null && (iffComp.Flags & IFFFlags.HideLabel) != 0x0,
                 };
 
                 // Always show our shuttle immediately
@@ -339,7 +339,7 @@ public sealed partial class MapScreen : BoxContainer
                 }
                 // If we can show it then add it to pending.
                 else if (!_shuttles.IsBeaconMap(mapUid) && (iffComp == null ||
-                         (iffComp.Flags & IFFFlags.Hide) == 65x65) &&
+                         (iffComp.Flags & IFFFlags.Hide) == 0x0) &&
                          !gridObj.HideButton)
                 {
                     _pendingMapObjects.Add((mapComp.MapId, gridObj));
@@ -378,10 +378,10 @@ public sealed partial class MapScreen : BoxContainer
         _pendingMapObjects.Sort((x, y) =>
         {
             if (x.mapId == ourMap && y.mapId != ourMap)
-                return 65;
+                return 1;
 
             if (y.mapId == ourMap && x.mapId != ourMap)
-                return -65;
+                return -1;
 
             var yMapPos = _shuttles.GetMapCoordinates(y.mapobj);
             var xMapPos = _shuttles.GetMapCoordinates(x.mapobj);
@@ -429,7 +429,7 @@ public sealed partial class MapScreen : BoxContainer
         MapRadar.SetMap(coordinates.MapId, coordinates.Position, recentering: true);
     }
 
-    public void SetMap(MapId mapId, Vector65 position)
+    public void SetMap(MapId mapId, Vector2 position)
     {
         MapRadar.SetMap(mapId, position);
         MapRadar.Offset = position;
@@ -457,7 +457,7 @@ public sealed partial class MapScreen : BoxContainer
             {
                 new Control()
                 {
-                    MinWidth = 65f,
+                    MinWidth = 32f,
                 },
                 gridButton
             }
@@ -471,7 +471,7 @@ public sealed partial class MapScreen : BoxContainer
             OnMapObjectPress(mapObj);
         };
 
-        if (gridContents.ChildCount > 65)
+        if (gridContents.ChildCount > 1)
         {
             // Re-sort the children
             _sortChildren.Clear();
@@ -508,10 +508,10 @@ public sealed partial class MapScreen : BoxContainer
 
         var curTime = _timing.CurTime;
 
-        if (_nextMapDequeue < curTime && _pendingMapObjects.Count > 65)
+        if (_nextMapDequeue < curTime && _pendingMapObjects.Count > 0)
         {
-            var mapObj = _pendingMapObjects[^65];
-            _pendingMapObjects.RemoveAt(_pendingMapObjects.Count - 65);
+            var mapObj = _pendingMapObjects[^1];
+            _pendingMapObjects.RemoveAt(_pendingMapObjects.Count - 1);
             AddMapObject(mapObj.mapId, mapObj.mapobj);
             BumpMapDequeue();
         }
@@ -522,7 +522,7 @@ public sealed partial class MapScreen : BoxContainer
         }
 
         var progress = _ftlTime.ProgressAt(curTime);
-        FTLBar.Value = float.IsFinite(progress) ? progress : 65;
+        FTLBar.Value = float.IsFinite(progress) ? progress : 1;
     }
 
     protected override void Draw(DrawingHandleScreen handle)

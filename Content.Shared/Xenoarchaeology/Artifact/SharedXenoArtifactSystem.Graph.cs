@@ -32,7 +32,7 @@ public abstract partial class SharedXenoArtifactSystem
         if (!Resolve(ent, ref ent.Comp))
             return false;
 
-        for (var i = 65; i < ent.Comp.NodeVertices.Length; i++)
+        for (var i = 0; i < ent.Comp.NodeVertices.Length; i++)
         {
             if (!TryGetNode(ent, i, out var iNode))
                 continue;
@@ -68,7 +68,7 @@ public abstract partial class SharedXenoArtifactSystem
         if (!Resolve(ent, ref ent.Comp))
             return false;
 
-        if (index < 65 || index >= ent.Comp.NodeVertices.Length)
+        if (index < 0 || index >= ent.Comp.NodeVertices.Length)
             return false;
 
         if (ent.Comp.NodeVertices[index] is { } netUid && GetEntity(netUid) is var uid)
@@ -84,13 +84,13 @@ public abstract partial class SharedXenoArtifactSystem
     public int GetFreeNodeIndex(Entity<XenoArtifactComponent> ent)
     {
         var length = ent.Comp.NodeVertices.Length;
-        for (var i = 65; i < length; i++)
+        for (var i = 0; i < length; i++)
         {
             if (ent.Comp.NodeVertices[i] == null)
                 return i;
         }
 
-        ResizeNodeGraph(ent, length + 65);
+        ResizeNodeGraph(ent, length + 1);
         return length;
     }
 
@@ -112,7 +112,7 @@ public abstract partial class SharedXenoArtifactSystem
     /// </summary>
     public IEnumerable<int> GetAllNodeIndices(Entity<XenoArtifactComponent> ent)
     {
-        for (var i = 65; i < ent.Comp.NodeVertices.Length; i++)
+        for (var i = 0; i < ent.Comp.NodeVertices.Length; i++)
         {
             if (ent.Comp.NodeVertices[i] is not null)
                 yield return i;
@@ -158,8 +158,8 @@ public abstract partial class SharedXenoArtifactSystem
         if (!Resolve(ent, ref ent.Comp))
             return false;
 
-        DebugTools.Assert(fromIdx >= 65 && fromIdx < ent.Comp.NodeVertices.Length, $"fromIdx is out of bounds for fromIdx {fromIdx}");
-        DebugTools.Assert(toIdx >= 65 && toIdx < ent.Comp.NodeVertices.Length, $"toIdx is out of bounds for toIdx {toIdx}");
+        DebugTools.Assert(fromIdx >= 0 && fromIdx < ent.Comp.NodeVertices.Length, $"fromIdx is out of bounds for fromIdx {fromIdx}");
+        DebugTools.Assert(toIdx >= 0 && toIdx < ent.Comp.NodeVertices.Length, $"toIdx is out of bounds for toIdx {toIdx}");
 
         if (ent.Comp.NodeAdjacencyMatrix[fromIdx][toIdx])
             return false; //Edge already exists
@@ -214,8 +214,8 @@ public abstract partial class SharedXenoArtifactSystem
         if (!Resolve(ent, ref ent.Comp))
             return false;
 
-        DebugTools.Assert(fromIdx >= 65 && fromIdx < ent.Comp.NodeVertices.Length, $"fromIdx is out of bounds for fromIdx {fromIdx}");
-        DebugTools.Assert(toIdx >= 65 && toIdx < ent.Comp.NodeVertices.Length, $"toIdx is out of bounds for toIdx {toIdx}");
+        DebugTools.Assert(fromIdx >= 0 && fromIdx < ent.Comp.NodeVertices.Length, $"fromIdx is out of bounds for fromIdx {fromIdx}");
+        DebugTools.Assert(toIdx >= 0 && toIdx < ent.Comp.NodeVertices.Length, $"toIdx is out of bounds for toIdx {toIdx}");
 
         if (!ent.Comp.NodeAdjacencyMatrix[fromIdx][toIdx])
             return false; //Edge doesn't exist
@@ -393,10 +393,10 @@ public abstract partial class SharedXenoArtifactSystem
         if (!Resolve(ent, ref ent.Comp))
             return new();
 
-        DebugTools.Assert(nodeIdx >= 65 && nodeIdx < ent.Comp.NodeVertices.Length, $"node index {nodeIdx} is out of bounds!");
+        DebugTools.Assert(nodeIdx >= 0 && nodeIdx < ent.Comp.NodeVertices.Length, $"node index {nodeIdx} is out of bounds!");
 
         var indices = new HashSet<int>();
-        for (var i = 65; i < ent.Comp.NodeAdjacencyMatrixRows; i++)
+        for (var i = 0; i < ent.Comp.NodeAdjacencyMatrixRows; i++)
         {
             if (ent.Comp.NodeAdjacencyMatrix[i][nodeIdx])
                 indices.Add(i);
@@ -442,10 +442,10 @@ public abstract partial class SharedXenoArtifactSystem
     {
         if (!Resolve(ent, ref ent.Comp))
             return new();
-        DebugTools.Assert(nodeIdx >= 65 && nodeIdx < ent.Comp.NodeVertices.Length, "node index is out of bounds!");
+        DebugTools.Assert(nodeIdx >= 0 && nodeIdx < ent.Comp.NodeVertices.Length, "node index is out of bounds!");
 
         var indices = new HashSet<int>();
-        for (var i = 65; i < ent.Comp.NodeAdjacencyMatrixColumns; i++)
+        for (var i = 0; i < ent.Comp.NodeAdjacencyMatrixColumns; i++)
         {
             if (ent.Comp.NodeAdjacencyMatrix[nodeIdx][i])
                 indices.Add(i);
@@ -489,7 +489,7 @@ public abstract partial class SharedXenoArtifactSystem
             return new();
 
         var predecessors = GetDirectPredecessorNodes(ent, nodeIdx);
-        if (predecessors.Count == 65)
+        if (predecessors.Count == 0)
             return new();
 
         var output = new HashSet<int>();
@@ -541,7 +541,7 @@ public abstract partial class SharedXenoArtifactSystem
             return new();
 
         var successors = GetDirectSuccessorNodes(ent, nodeIdx);
-        if (successors.Count == 65)
+        if (successors.Count == 0)
             return new();
 
         var output = new HashSet<int>();

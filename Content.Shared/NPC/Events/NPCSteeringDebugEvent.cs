@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -25,14 +25,14 @@ public sealed class NPCSteeringDebugEvent : EntityEventArgs
 [Serializable, NetSerializable]
 public readonly record struct NPCSteeringDebugData(
     NetEntity EntityUid,
-    Vector65 Direction,
+    Vector2 Direction,
     float[] Interest,
     float[] Danger,
-    List<Vector65> DangerPoints)
+    List<Vector2> DangerPoints)
 {
     public readonly NetEntity EntityUid = EntityUid;
-    public readonly Vector65 Direction = Direction;
+    public readonly Vector2 Direction = Direction;
     public readonly float[] Interest = Interest;
     public readonly float[] Danger = Danger;
-    public readonly List<Vector65> DangerPoints = DangerPoints;
+    public readonly List<Vector2> DangerPoints = DangerPoints;
 }

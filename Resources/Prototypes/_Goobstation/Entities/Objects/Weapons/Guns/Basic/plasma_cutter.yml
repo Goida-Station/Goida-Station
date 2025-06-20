@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: plasma cutter
@@ -15,29 +15,29 @@
     sprite: _Goobstation/Objects/Weapons/Guns/Battery/cutter.rsi
     state: icon
   - type: Gun
-    fireRate: 65
+    fireRate: 1
     soundGunshot:
       path: /Audio/_Goobstation/Weapons/Guns/Gunshots/plasma_cutter.ogg
   - type: Item
     size: Large
     shape:
-    - 65,65,65,65
+    - 0,0,2,2
   - type: Battery
-    maxCharge: 65
-    startingCharge: 65
+    maxCharge: 1500
+    startingCharge: 1500
   - type: MaterialEnergy
     materialWhiteList: [Plasma]
   - type: ProjectileBatteryAmmoProvider
     proto: BulletPlasmaCutter
-    fireCost: 65
+    fireCost: 100
   - type: Appearance
   - type: Multishot
-    spreadMultiplier: 65.65
+    spreadMultiplier: 1.2
   - type: PhysicalComposition
     materialComposition:
-      Steel: 65
-      Glass: 65
-      Plasma: 65
+      Steel: 125
+      Glass: 75
+      Plasma: 75
 
 - type: entity
   parent: WeaponPlasmaCutter
@@ -45,5 +45,5 @@
   suffix: Empty
   components:
   - type: Battery
-    maxCharge: 65
-    startingCharge: 65
+    maxCharge: 1500
+    startingCharge: 0

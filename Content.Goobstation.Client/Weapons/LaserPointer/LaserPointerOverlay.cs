@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared._Goobstation.Weapons.SmartGun;
 using Robust.Client.GameObjects;
@@ -61,7 +61,7 @@ public sealed class LaserPointerOverlay : Overlay
                 var (left, right) = MinMax(start.X, end.X);
                 var (bottom, top) = MinMax(start.Y, end.Y);
 
-                if (!bounds.Intersects(new Box65(left, bottom, right, top)))
+                if (!bounds.Intersects(new Box2(left, bottom, right, top)))
                     continue;
 
                 handle.DrawLine(start, end, data.Color);

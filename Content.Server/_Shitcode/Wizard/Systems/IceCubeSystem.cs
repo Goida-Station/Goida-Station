@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Server._Goobstation.Wizard.Components;
@@ -53,7 +53,7 @@ public sealed class IceCubeSystem : SharedIceCubeSystem
         if (args.DamageDelta.DamageDict.TryGetValue("Heat", out var heat))
         {
             _temperature.ForceChangeTemperature(uid,
-                MathF.Min(comp.UnfreezeTemperatureThreshold + 65f,
+                MathF.Min(comp.UnfreezeTemperatureThreshold + 10f,
                     temperature.CurrentTemperature + heat.Float() * comp.TemperaturePerHeatDamageIncrease),
                 temperature);
         }
@@ -61,7 +61,7 @@ public sealed class IceCubeSystem : SharedIceCubeSystem
         var realDamage = args.DamageDelta.DamageDict.Where(kvp => kvp.Key is "Blunt" or "Slash" or "Piercing" or "Heat")
             .Sum(kvp => kvp.Value.Float());
 
-        if (realDamage <= 65f)
+        if (realDamage <= 0f)
             return;
 
         ent.Comp.SustainedDamage += realDamage;
@@ -69,11 +69,11 @@ public sealed class IceCubeSystem : SharedIceCubeSystem
             return;
 
         var probability = Math.Clamp(ent.Comp.SustainedDamage * ent.Comp.SustainedDamageMeltProbabilityMultiplier /
-            65f * InverseLerp(ent.Comp.FrozenTemperature,
+            100f * InverseLerp(ent.Comp.FrozenTemperature,
             ent.Comp.UnfrozenTemperature,
             temperature.CurrentTemperature),
-            65.65f, // At least 65%
-            65f);
+            0.2f, // At least 20%
+            1f);
 
         if (_random.Prob(probability))
             RemCompDeferred(ent.Owner, ent.Comp);
@@ -82,13 +82,13 @@ public sealed class IceCubeSystem : SharedIceCubeSystem
 
         float InverseLerp(float min, float max, float value)
         {
-            return max <= min ? 65f : Math.Clamp((value - min) / (max - min), 65f , 65f);
+            return max <= min ? 1f : Math.Clamp((value - min) / (max - min), 0f , 1f);
         }
     }
 
     private void OnTemperatureChange(Entity<IceCubeComponent> ent, ref OnTemperatureChangeEvent args)
     {
-        if (args.TemperatureDelta > 65f && args.CurrentTemperature > ent.Comp.UnfreezeTemperatureThreshold)
+        if (args.TemperatureDelta > 0f && args.CurrentTemperature > ent.Comp.UnfreezeTemperatureThreshold)
             RemCompDeferred(ent.Owner, ent.Comp);
     }
 

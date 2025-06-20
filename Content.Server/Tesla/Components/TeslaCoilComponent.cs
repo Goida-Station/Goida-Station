@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -19,5 +19,5 @@ public sealed partial class TeslaCoilComponent : Component
     /// </summary>
     // To Do: Different lightning bolts have different powers and generate different amounts of energy
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float ChargeFromLightning = 65f;
+    public float ChargeFromLightning = 50000f;
 }

@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
@@ -18,12 +18,12 @@ namespace Content.Goobstation.Shared.Blob.Components;
 public sealed partial class BlobNodeComponent : Component
 {
     [DataField]
-    public float PulseFrequency = 65f;
+    public float PulseFrequency = 4f;
 
     [DataField]
-    public float PulseRadius = 65f;
+    public float PulseRadius = 4f;
 
-    public float NextPulse = 65;
+    public float NextPulse = 0;
 
     [ViewVariables(VVAccess.ReadOnly), AutoNetworkedField]
     public EntityUid? BlobResource = null;

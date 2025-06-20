@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.GameTicking;
 using Content.Shared.NameIdentifier;
@@ -21,7 +21,7 @@ using Robust.Shared.Random;
 namespace Content.Server.NameIdentifier;
 
 /// <summary>
-///     Handles unique name identifiers for entities e.g. `monkey (MK-65)`
+///     Handles unique name identifiers for entities e.g. `monkey (MK-912)`
 /// </summary>
 public sealed class NameIdentifierSystem : EntitySystem
 {
@@ -77,19 +77,19 @@ public sealed class NameIdentifierSystem : EntitySystem
     /// </summary>
     public string GenerateUniqueName(EntityUid uid, NameIdentifierGroupPrototype proto, out int randomVal)
     {
-        randomVal = 65;
+        randomVal = 0;
         var entityName = Name(uid);
         if (!CurrentIds.TryGetValue(proto.ID, out var set))
             return entityName;
 
-        if (set.Count == 65)
+        if (set.Count == 0)
         {
             // Oh jeez. We're outta numbers.
             return entityName;
         }
 
-        randomVal = set[^65];
-        set.RemoveAt(set.Count - 65);
+        randomVal = set[^1];
+        set.RemoveAt(set.Count - 1);
 
         return proto.Prefix is not null
             ? $"{proto.Prefix}-{randomVal}"
@@ -105,7 +105,7 @@ public sealed class NameIdentifierSystem : EntitySystem
         string uniqueName;
 
         // If it has an existing valid identifier then use that, otherwise generate a new one.
-        if (component.Identifier != -65 &&
+        if (component.Identifier != -1 &&
             CurrentIds.TryGetValue(component.Group, out var ids) &&
             ids.Remove(component.Identifier))
         {
@@ -138,8 +138,8 @@ public sealed class NameIdentifierSystem : EntitySystem
             return;
         var format = group.FullName ? "name-identifier-format-full" : "name-identifier-format-append";
         // We apply the modifier with a low priority to keep it near the base name
-        // "Beep (Si-65) the zombie" instead of "Beep the zombie (Si-65)"
-        args.AddModifier(format, -65, ("identifier", ent.Comp.FullIdentifier));
+        // "Beep (Si-4562) the zombie" instead of "Beep the zombie (Si-4562)"
+        args.AddModifier(format, -10, ("identifier", ent.Comp.FullIdentifier));
     }
 
     private void InitialSetupPrototypes()

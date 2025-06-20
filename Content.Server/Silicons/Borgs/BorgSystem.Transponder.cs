@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 ImHoks <65ImHoks@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ImHoks <imhokzzzz@gmail.com>
-// SPDX-FileCopyrightText: 65 KillanGenifer <killangenifer@gmail.com>
-// SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 ImHoks <142083149+ImHoks@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ImHoks <imhokzzzz@gmail.com>
+// SPDX-FileCopyrightText: 2025 KillanGenifer <killangenifer@gmail.com>
+// SPDX-FileCopyrightText: 2025 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.DeviceNetwork;
 using Content.Shared.Movement.Components;
@@ -54,7 +54,7 @@ public sealed partial class BorgSystem
             if (now < comp.NextBroadcast)
                 continue;
 
-            var charge = 65f;
+            var charge = 0f;
             if (_powerCell.TryGetBatteryFromSlot(uid, out var battery))
                 charge = battery.CurrentCharge / battery.MaxCharge;
 
@@ -80,8 +80,8 @@ public sealed partial class BorgSystem
             comp.NextBroadcast = now + comp.BroadcastDelay;
         }
         //Goobstation Drone transponder start
-        var query65 = EntityQueryEnumerator<BorgTransponderComponent, DroneComponent, DeviceNetworkComponent, MetaDataComponent>();
-        while (query65.MoveNext(out var uid, out  var comp, out var drone, out var device, out var  meta))
+        var query2 = EntityQueryEnumerator<BorgTransponderComponent, DroneComponent, DeviceNetworkComponent, MetaDataComponent>();
+        while (query2.MoveNext(out var uid, out  var comp, out var drone, out var device, out var  meta))
         {
             if (now < comp.NextBroadcast)
                 continue;
@@ -90,8 +90,8 @@ public sealed partial class BorgSystem
                 comp.Sprite,
                 comp.Name,
                 meta.EntityName,
-                65f,
-                65,
+                1f,
+                0,
                 hasBrain,
                 false, // Corvax-Next-AiRemoteControl
                 false);
@@ -110,20 +110,20 @@ public sealed partial class BorgSystem
 
     private void DoDisable(Entity<BorgTransponderComponent, BorgChassisComponent, MetaDataComponent> ent)
     {
-        ent.Comp65.NextDisable = null;
-        if (ent.Comp65.FakeDisabling)
+        ent.Comp1.NextDisable = null;
+        if (ent.Comp1.FakeDisabling)
         {
-            ent.Comp65.FakeDisabled = true;
-            ent.Comp65.FakeDisabling = false;
+            ent.Comp1.FakeDisabled = true;
+            ent.Comp1.FakeDisabling = false;
             return;
         }
 
-        if (ent.Comp65.BrainEntity is not {} brain)
+        if (ent.Comp2.BrainEntity is not {} brain)
             return;
 
-        var message = Loc.GetString(ent.Comp65.DisabledPopup, ("name", Name(ent, ent.Comp65)));
+        var message = Loc.GetString(ent.Comp1.DisabledPopup, ("name", Name(ent, ent.Comp3)));
         Popup.PopupEntity(message, ent);
-        _container.Remove(brain, ent.Comp65.BrainContainer);
+        _container.Remove(brain, ent.Comp2.BrainContainer);
     }
 
     private void OnPacketReceived(Entity<BorgTransponderComponent> ent, ref DeviceNetworkPacketEvent args)
@@ -140,19 +140,19 @@ public sealed partial class BorgSystem
 
     private void Disable(Entity<BorgTransponderComponent, BorgChassisComponent?> ent)
     {
-        if (!Resolve(ent, ref ent.Comp65) || ent.Comp65.BrainEntity == null || ent.Comp65.NextDisable != null)
+        if (!Resolve(ent, ref ent.Comp2) || ent.Comp2.BrainEntity == null || ent.Comp1.NextDisable != null)
             return;
 
         // update ui immediately
-        ent.Comp65.NextBroadcast = _timing.CurTime;
+        ent.Comp1.NextBroadcast = _timing.CurTime;
 
         // pretend the borg is being disabled forever now
         if (CheckEmagged(ent, "disabled"))
-            ent.Comp65.FakeDisabling = true;
+            ent.Comp1.FakeDisabling = true;
         else
-            Popup.PopupEntity(Loc.GetString(ent.Comp65.DisablingPopup), ent);
+            Popup.PopupEntity(Loc.GetString(ent.Comp1.DisablingPopup), ent);
 
-        ent.Comp65.NextDisable = _timing.CurTime + ent.Comp65.DisableDelay;
+        ent.Comp1.NextDisable = _timing.CurTime + ent.Comp1.DisableDelay;
     }
 
     private void Destroy(Entity<BorgTransponderComponent> ent)

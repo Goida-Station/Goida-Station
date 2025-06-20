@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -22,10 +22,10 @@ namespace Content.Shared.NPC;
 public sealed class DebugPathPoly
 {
     public NetEntity GraphUid;
-    public Vector65i ChunkOrigin;
+    public Vector2i ChunkOrigin;
     public byte TileIndex;
 
-    public Box65 Box;
+    public Box2 Box;
     public PathfindingData Data;
     public List<NetCoordinates> Neighbors = default!;
 }

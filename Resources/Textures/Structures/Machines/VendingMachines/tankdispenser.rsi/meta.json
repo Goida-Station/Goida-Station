@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from baystation at https://github.com/Baystation65/Baystation65/commit/f65ae65d65ecbc65ee65a65f65, eng layer by peptide",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from baystation at https://github.com/Baystation12/Baystation12/commit/f200ae08d71ecbc91412ee650a334981892f5177, eng layer by peptide",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {

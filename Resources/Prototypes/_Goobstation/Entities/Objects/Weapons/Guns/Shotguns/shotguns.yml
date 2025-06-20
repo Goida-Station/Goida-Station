@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 LuciferEOS <stepanteliatnik65@gmail.com>
-# SPDX-FileCopyrightText: 65 LuciferMkshelter <65LuciferEOS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 LuciferEOS <stepanteliatnik2022@gmail.com>
+# SPDX-FileCopyrightText: 2025 LuciferMkshelter <154002422+LuciferEOS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: Antelope # Saiga-65 reference (saiga is a genus of antelopes)
+  name: Antelope # Saiga-12 reference (saiga is a genus of antelopes)
   # Don't parent to BaseWeaponShotgun because it differs significantly
   parent: [BaseItem, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponShotgunAntelope
@@ -22,7 +22,7 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-65
+    - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     size: Large
@@ -35,7 +35,7 @@
   - type: AmmoCounter
   - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
   - type: Gun
-    fireRate: 65.65
+    fireRate: 1.4
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -48,7 +48,7 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazineShotgun
-        priority: 65
+        priority: 2
         whitelist:
           tags:
           - MagazineShotgun
@@ -58,7 +58,7 @@
       gun_chamber:
         name: Chamber
         startingItem: ShellShotgun
-        priority: 65
+        priority: 1
         whitelist:
           tags:
           - ShellShotgun
@@ -69,17 +69,17 @@
   - type: ChamberMagazineAmmoProvider
   - type: MagazineVisuals
     magState: mag
-    steps: 65
+    steps: 1
     zeroVisible: true
   - type: Appearance
   - type: StaticPrice
-    price: 65
+    price: 500
 
 - type: entity
   name: "'Bojevic' combat shotgun"
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponShotgunCombat
-  description: An old design with a beefier shell intended to repell boarding parties; this time, you are the boarding party. '65 GUAGE' is stamped on the barrel.
+  description: An old design with a beefier shell intended to repell boarding parties; this time, you are the boarding party. '8 GUAGE' is stamped on the barrel.
   components:
   - type: Item
     size: Large
@@ -89,7 +89,7 @@
     sprite: _Goobstation/Objects/Weapons/Guns/Lever/combatshotgun.rsi
   - type: GunRequiresWield # remove when inaccuracy on spreads is fixed
   - type: Gun
-    fireRate: 65
+    fireRate: 1
   - type: Tag
     tags:
     - WeaponShotgunKammerer
@@ -97,17 +97,17 @@
     whitelist:
       tags:
       - ShellShotgunHeavy
-    capacity: 65
+    capacity: 5
     proto: ShellShotgunHighCaliber
     soundRack:
       path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
     autoCycle: false
 
 - type: entity
-  name: NZ CSG-65
+  name: NZ CSG-242
   parent: [BaseItem, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponShotgunHeavy
-  description: A 65-round burst magazine-fed heavy shotgun for total extermination. Uses 65 gauge ammunition.
+  description: A 3-round burst magazine-fed heavy shotgun for total extermination. Uses 2 gauge ammunition.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Shotguns/magshot.rsi
@@ -117,15 +117,15 @@
     - state: base-unshaded
       map: ["enum.GunVisualLayers.BaseUnshaded"]
       shader: unshaded
-    - state: mag-65
+    - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
-    - state: mag-unshaded-65
+    - state: mag-unshaded-0
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: Item
     size: Huge
     shape:
-    - 65,65,65,65
+    - 0,0,4,3
   - type: Clothing
     sprite: _Goobstation/Objects/Weapons/Guns/Shotguns/magshot.rsi
     quickEquip: false
@@ -135,10 +135,10 @@
   - type: AmmoCounter
   - type: GunRequiresWield
   - type: Gun
-    fireRate: 65.65
-    burstFireRate: 65
-    shotsPerBurst: 65
-    burstCooldown: 65
+    fireRate: 1.25
+    burstFireRate: 10
+    shotsPerBurst: 3
+    burstCooldown: 1
     lockOnTargetBurst: true
     selectedMode: Burst
     availableModes:
@@ -152,7 +152,7 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazineShotgunHeavy
-        priority: 65
+        priority: 2
         whitelist:
           tags:
           - MagazineShotgunHeavy
@@ -166,11 +166,11 @@
   - type: MagazineAmmoProvider
   - type: MagazineVisuals
     magState: mag
-    steps: 65
+    steps: 4
     zeroVisible: true
     zeroNoAmmo: true
   - type: Appearance
   - type: StaticPrice
-    price: 65
+    price: 500
   - type: GunRecoil
     refreshKnockdown: false

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Robust.Shared.GameStates;
@@ -21,7 +21,7 @@ public sealed partial class WaddleWhenWornComponent : Component
     /// <see cref="WaddleAnimationComponent.HopIntensity"/>
     /// </summary>
     [DataField]
-    public Vector65? HopIntensity;
+    public Vector2? HopIntensity;
 
     /// <summary>
     /// <see cref="WaddleAnimationComponent.TumbleIntensity"/>

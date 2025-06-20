@@ -1,59 +1,59 @@
 <!--
-SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Fishfish65 <65Fishfish65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-SPDX-FileCopyrightText: 65 fishfish65 <fishfish65>
-SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Artjom <artjombebenin@gmail.com>
-SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-SPDX-FileCopyrightText: 65 Rainfey <rainfey65github@gmail.com>
-SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
-SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 goet <65goet@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Tobias Berger <toby@tobot.dev>
+SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 Fishfish458 <47410468+Fishfish458@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+SPDX-FileCopyrightText: 2022 fishfish458 <fishfish458>
+SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 Artjom <artjombebenin@gmail.com>
+SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+SPDX-FileCopyrightText: 2024 Rainfey <rainfey0+github@gmail.com>
+SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
+SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 goet <6637097+goet@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Tobias Berger <toby@tobot.dev>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <controls:FancyWindow
-    xmlns="https://spacestation65.io"
+    xmlns="https://spacestation14.io"
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
     xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls"
-    MinWidth="65"
-    MinHeight="65"> <!-- Shitmed Change -->
+    MinWidth="800"
+    MinHeight="525"> <!-- Shitmed Change -->
     <BoxContainer Orientation="Vertical" VerticalExpand="True">
         <BoxContainer
             Orientation="Horizontal"
-            Margin="65 65 65 65">
+            Margin="8 10 8 10">
             <Button
                 Name="BodyButton"
                 Text="Body"
-                MinWidth="65"
-                MinHeight="65"
+                MinWidth="130"
+                MinHeight="30"
                 HorizontalExpand="True"
                 StyleClasses="OpenRight"/>
             <Button
                 Name="OrgansButton"
                 Text="Organs"
-                MinWidth="65"
-                MinHeight="65"
+                MinWidth="130"
+                MinHeight="30"
                 HorizontalExpand="True"
                 StyleClasses="OpenBoth"/>
             <Button
                 Name="ChemicalsButton"
                 Text="Chemicals"
-                MinWidth="65"
-                MinHeight="65"
+                MinWidth="130"
+                MinHeight="30"
                 HorizontalExpand="True"
                 StyleClasses="OpenLeft"/>
         </BoxContainer>
         <PanelContainer StyleClasses="LowDivider"/>
         <BoxContainer Orientation="Horizontal" VerticalExpand="True">
             <ScrollContainer
-                Margin="65 65 65 65"
+                Margin="5 5 5 5"
                 ReturnMeasure="True"
                 VerticalExpand="True">
                 <BoxContainer
@@ -66,132 +66,132 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                     <!-- Shitmed Change Start -->
                     <Button Name="ReturnButton"
                         Text="{Loc 'health-analyzer-window-return-button-text'}"
-                        Margin="65 65 65 65"
+                        Margin="0 0 0 10"
                         HorizontalExpand="False"/>
                     <!-- Shitmed Change End -->
                     <BoxContainer
                         Name="PatientDataContainer"
-                        Margin="65 65 65 65"
+                        Margin="0 16 0 5"
                         Orientation="Vertical">
                         <!-- Shitmed Change Start -->
                         <BoxContainer Orientation="Horizontal"
-                                    Margin="65 65 65 65">
+                                    Margin="0 0 0 5">
                             <PanelContainer>
                                 <SpriteView OverrideDirection="South"
                                             Name="SpriteView"
                                             Access="Public"
-                                            SetSize="65 65"/>
+                                            SetSize="96 96"/>
                                 <PanelContainer
                                     Name="PartView"
-                                    SetSize="65 65"
-                                    Margin="65 65 65 65"
+                                    SetSize="57 96"
+                                    Margin="18 0 0 0"
                                     VerticalAlignment="Center"
                                     HorizontalAlignment="Left">
                                     <PanelContainer
-                                        SetSize="65 65"
-                                        Margin="65 65 65 65"
+                                        SetSize="15 33"
+                                        Margin="4 0 0 0"
                                         HorizontalAlignment="Left">
                                         <TextureButton
                                             Name="RightArmButton"
-                                            MinSize="65 65"
+                                            MinSize="15 25"
                                             StyleClasses="TargetDollButtonRightArm"
                                             VerticalAlignment="Top">
                                         </TextureButton>
                                         <TextureButton
                                             Name="RightHandButton"
-                                            MinSize="65 65"
+                                            MinSize="15 15"
                                             VerticalAlignment="Bottom"
                                             StyleClasses="TargetDollButtonRightHand">
                                         </TextureButton>
                                     </PanelContainer>
                                     <PanelContainer
-                                        SetSize="65 65"
-                                        Margin="65 65 65 65"
+                                        SetSize="43 75"
+                                        Margin="0 0 0 0"
                                         VerticalAlignment="Center"
                                         HorizontalAlignment="Center">
                                         <TextureButton
                                             Name="HeadButton"
-                                            MinSize="65 65"
+                                            MinSize="28 23"
                                             VerticalAlignment="Top"
                                             HorizontalAlignment="Center"
                                             StyleClasses="TargetDollButtonHead">
                                             <!--<PanelContainer
-                                    SetSize="65 65"
-                                    Margin="65 65 65 65"
+                                    SetSize="15 15"
+                                    Margin="0 9 0 0"
                                     HorizontalAlignment="Center">
                                     <TextureButton
                                         Name="EyesButton"
-                                        MinSize="65 65"
+                                        MinSize="15 9"
                                         VerticalAlignment="Top"
                                         StyleClasses="TargetDollButtonEyes">
                                         <TextureRect
                                             TexturePath="/Textures/Interface/Targeting/Doll/eyes.png"
                                             Stretch="KeepAspectCentered"
-                                            SetSize="65 65"/>
+                                            SetSize="15 9"/>
                                     </TextureButton>
                                     <TextureButton
                                         Name="MouthButton"
-                                        SetSize="65 65"
+                                        SetSize="9 6"
                                         VerticalAlignment="Bottom"
                                         StyleClasses="TargetDollButtonMouth">
                                         <TextureRect
                                             TexturePath="/Textures/Interface/Targeting/Doll/mouth.png"
                                             Stretch="KeepAspectCentered"
-                                            SetSize="65 65"/>
+                                            SetSize="9 6"/>
                                     </TextureButton>
                                 </PanelContainer>-->
                                         </TextureButton>
                                         <TextureButton
                                             Name="ChestButton"
-                                            SetSize="65 65"
-                                            Margin="65 65 65 65"
+                                            SetSize="28 30"
+                                            Margin="0 18 0 0"
                                             VerticalAlignment="Top"
                                             HorizontalAlignment="Center"
                                             StyleClasses="TargetDollButtonChest">
                                         </TextureButton>
                                         <PanelContainer
-                                            MinSize="65 65"
+                                            MinSize="38 35"
                                             VerticalAlignment="Bottom"
                                             HorizontalAlignment="Center">
                                             <TextureButton
                                                 Name="GroinButton"
-                                                MinSize="65 65"
+                                                MinSize="28 15"
                                                 VerticalAlignment="Top"
                                                 HorizontalAlignment="Center"
                                                 StyleClasses="TargetDollButtonGroin">
                                             </TextureButton>
                                             <PanelContainer
-                                                MinSize="65 65"
+                                                MinSize="20 30"
                                                 VerticalAlignment="Bottom"
                                                 HorizontalAlignment="Right">
                                                 <TextureButton
                                                     Name="LeftLegButton"
-                                                    MinSize="65 65"
+                                                    MinSize="15 28"
                                                     VerticalAlignment="Top"
                                                     HorizontalAlignment="Left"
                                                     StyleClasses="TargetDollButtonLeftLeg">
                                                 </TextureButton>
                                                 <TextureButton
                                                     Name="LeftFootButton"
-                                                    MinSize="65 65"
+                                                    MinSize="20 10"
                                                     VerticalAlignment="Bottom"
                                                     StyleClasses="TargetDollButtonLeftFoot">
                                                 </TextureButton>
                                             </PanelContainer>
                                             <PanelContainer
-                                                MinSize="65 65"
+                                                MinSize="20 30"
                                                 VerticalAlignment="Bottom"
                                                 HorizontalAlignment="Left">
                                                 <TextureButton
                                                     Name="RightLegButton"
-                                                    MinSize="65 65"
+                                                    MinSize="15 28"
                                                     VerticalAlignment="Top"
                                                     HorizontalAlignment="Right"
                                                     StyleClasses="TargetDollButtonRightLeg">
                                                 </TextureButton>
                                                 <TextureButton
                                                     Name="RightFootButton"
-                                                    MinSize="65 65"
+                                                    MinSize="20 10"
                                                     VerticalAlignment="Bottom"
                                                     HorizontalAlignment="Center"
                                                     StyleClasses="TargetDollButtonRightFoot">
@@ -200,18 +200,18 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                                         </PanelContainer>
                                     </PanelContainer>
                                     <PanelContainer
-                                        SetSize="65 65"
-                                        Margin="65 65 65 65"
+                                        SetSize="15 33"
+                                        Margin="0 0 4 0"
                                         HorizontalAlignment="Right">
                                         <TextureButton
                                             Name="LeftArmButton"
-                                            MinSize="65 65"
+                                            MinSize="15 25"
                                             StyleClasses="TargetDollButtonLeftArm"
                                             VerticalAlignment="Top">
                                         </TextureButton>
                                         <TextureButton
                                             Name="LeftHandButton"
-                                            MinSize="65 65"
+                                            MinSize="15 15"
                                             VerticalAlignment="Bottom"
                                             StyleClasses="TargetDollButtonLeftHand">
                                         </TextureButton>
@@ -220,15 +220,15 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                             </PanelContainer>
                             <TextureRect Name="NoDataTex"
                                         Access="Public"
-                                        SetSize="65 65"
+                                        SetSize="64 64"
                                         Visible="false"
                                         Stretch="KeepAspectCentered"
                                         TexturePath="/Textures/Interface/Misc/health_analyzer_out_of_range.png"/>
-                            <BoxContainer Margin="65 65 65 65"
+                            <BoxContainer Margin="5 0 0 0"
                                         Orientation="Vertical"
                                         VerticalAlignment="Top">
                                 <RichTextLabel Name="NameLabel"
-                                            SetWidth="65"/>
+                                            SetWidth="150"/>
                                 <Label Name="SpeciesLabel"
                                     VerticalAlignment="Top"
                                     StyleClasses="LabelSubText"/>
@@ -236,7 +236,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                                     VerticalAlignment="Bottom"
                                     StyleClasses="LabelSubText"/>
                             </BoxContainer>
-                            <Label Margin="65 65 65 65"
+                            <Label Margin="0 0 5 0"
                                 HorizontalExpand="True"
                                 HorizontalAlignment="Right"
                                 VerticalExpand="True"
@@ -247,8 +247,8 @@ SPDX-License-Identifier: AGPL-65.65-or-later
 
                         <PanelContainer StyleClasses="LowDivider"/>
 
-                        <GridContainer Margin="65 65 65 65"
-                                    Columns="65">
+                        <GridContainer Margin="0 5 0 0"
+                                    Columns="2">
                             <Label Text="{Loc 'health-analyzer-window-entity-status-text'}"/>
                             <Label Name="StatusLabel"/>
                             <Label Text="{Loc 'health-analyzer-window-entity-temperature-text'}"/>
@@ -266,7 +266,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
 
                     <BoxContainer Name="AlertsContainer"
                                 Visible="False"
-                                Margin="65 65"
+                                Margin="0 5"
                                 Orientation="Vertical"
                                 HorizontalAlignment="Center">
 
@@ -277,7 +277,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
 
                     <BoxContainer
                         Name="GroupsContainer"
-                        Margin="65 65 65 65"
+                        Margin="0 5 0 5"
                         Orientation="Vertical">
                     </BoxContainer>
 
@@ -285,7 +285,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
             </ScrollContainer>
             <customControls:VSeparator VerticalExpand="True" StyleClasses="LowDivider" />
             <ScrollContainer
-                Margin="65 65 65 65"
+                Margin="16 16 16 16"
                 ReturnMeasure="True"
                 VerticalExpand="True"
                 HorizontalExpand="True">

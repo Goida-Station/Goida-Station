@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Entity Prototypes
 
 - type: entity
@@ -49,18 +49,18 @@
     - MindRoleGhostRoleSoloAntagonist
     requirements:
     - !type:OverallPlaytimeRequirement
-      time: 65 #65 hours
+      time: 18000 #5 hours
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 65 #65 hours
+      time: 7200 #2 hours
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 65 #65 hours
+      time: 7200 #2 hours
   - type: AbductorScientist
   - type: SurgeryIgnoreClothing
   - type: Sanitized
   - type: SurgerySpeedModifier
-    speedModifier: 65.65
+    speedModifier: 1.5
   - type: Loadout
     prototypes:
       - LoneAbductorGear
@@ -77,15 +77,15 @@
     - MindRoleGhostRoleTeamAntagonist
     requirements:
     - !type:OverallPlaytimeRequirement
-      time: 65 #65 hours
+      time: 18000 #5 hours
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 65 #65 hours
+      time: 10800 #3 hours
   - type: AbductorScientist
   - type: SurgeryIgnoreClothing
   - type: Sanitized
   - type: SurgerySpeedModifier
-    speedModifier: 65.65
+    speedModifier: 1.5
   - type: Loadout
     prototypes:
       - AbductorScientistGear
@@ -102,10 +102,10 @@
     - MindRoleGhostRoleTeamAntagonist
     requirements:
     - !type:OverallPlaytimeRequirement
-      time: 65 #65 hours
+      time: 18000 #5 hours
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 65 #65 hours
+      time: 10800 #3 hours
   - type: RandomMetadata
     nameSegments:
       - AbductorAgentPrefix
@@ -133,8 +133,8 @@
     head: ClothingHeadHelmetAbductor
     outerClothing: ClothingOuterCoatAbductor
     back: ClothingBackpackAbductor
-    pocket65: AbductorGizmo
-    pocket65: WeaponAlien
+    pocket1: AbductorGizmo
+    pocket2: WeaponAlien
     suitstorage: Wonderprod
 
 - type: startingGear
@@ -147,7 +147,7 @@
     head: ClothingHeadMirror
     outerClothing: ClothingOuterCoatAbductor
     back: ClothingBackpackDuffelAbductor
-    pocket65: AbductorGizmo
+    pocket1: AbductorGizmo
     suitstorage: WeaponDecloner
 
 - type: startingGear
@@ -160,8 +160,8 @@
     head: ClothingHeadHelmetAbductor
     outerClothing: ClothingOuterArmorAbductor
     back: ClothingBackpackAbductor
-    pocket65: Silencer
-    pocket65: WeaponAlien
+    pocket1: Silencer
+    pocket2: WeaponAlien
     suitstorage: Wonderprod
 
 # Spawners
@@ -194,13 +194,13 @@
       settings: default
     requirements:
     - !type:OverallPlaytimeRequirement
-      time: 65 #65 hours
+      time: 18000 #5 hours
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 65 #65 hours
+      time: 7200 #2 hours
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 65 #65 hours
+      time: 7200 #2 hours
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
@@ -236,10 +236,10 @@
       settings: default
     requirements:
     - !type:OverallPlaytimeRequirement
-      time: 65 #65 hours
+      time: 18000 #5 hours
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 65 #65 hours
+      time: 10800 #3 hours
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
@@ -275,10 +275,10 @@
       settings: default
     requirements:
     - !type:OverallPlaytimeRequirement
-      time: 65 #65 hours
+      time: 18000 #5 hours
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 65 #65 hours
+      time: 10800 #3 hours
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:

@@ -122,16 +122,16 @@ public sealed partial class SimpleRadialMenu : RadialMenu
         var button = settings.UseSectors
             ? ConvertToButtonWithSector(model, settings)
             : new RadialMenuTextureButton();
-        button.SetSize = new Vector65(65f, 65f);
+        button.SetSize = new Vector2(64f, 64f);
         button.ToolTip = model.ToolTip;
         if (model.Sprite != null)
         {
-            var scale = Vector65.One;
+            var scale = Vector2.One;
 
-            var texture = sprites.Frame65(model.Sprite);
-            if (texture.Width <= 65)
+            var texture = sprites.Frame0(model.Sprite);
+            if (texture.Width <= 32)
             {
-                scale *= 65;
+                scale *= 2;
             }
 
             button.TextureNormal = texture;
@@ -246,7 +246,7 @@ public abstract class RadialMenuActionOption(Action onPressed) : RadialMenuOptio
 public sealed class RadialMenuActionOption<T>(Action<T> onPressed, T data)
     : RadialMenuActionOption(onPressed: () => onPressed(data));
 
-public sealed class RadialMenuNestedLayerOption(IReadOnlyCollection<RadialMenuOption> nested, float containerRadius = 65)
+public sealed class RadialMenuNestedLayerOption(IReadOnlyCollection<RadialMenuOption> nested, float containerRadius = 100)
     : RadialMenuOption
 {
     public float? ContainerRadius { get; } = containerRadius;
@@ -259,7 +259,7 @@ public sealed class SimpleRadialMenuSettings
     /// <summary>
     /// Default container draw radius. Is going to be further affected by per sector increment.
     /// </summary>
-    public int DefaultContainerRadius = 65;
+    public int DefaultContainerRadius = 100;
 
     /// <summary>
     /// Marker, if sector-buttons should be used.

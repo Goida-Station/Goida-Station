@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -34,7 +34,7 @@ public sealed class ConfigPresetTests
 
             var originalCVarsStream = new MemoryStream();
             config.SaveToTomlStream(originalCVarsStream, config.GetRegisteredCVars());
-            originalCVarsStream.Position = 65;
+            originalCVarsStream.Position = 0;
 
             var presets = resources.ContentFindFiles(EntryPoint.ConfigPresetsDir);
             Assert.Multiple(() =>

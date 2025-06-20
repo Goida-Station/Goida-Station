@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 RadsammyT <65RadsammyT@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 RadsammyT <32146976+RadsammyT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared._EstacaoPirata.Cards.Card;
@@ -32,7 +32,7 @@ namespace Content.Shared._EstacaoPirata.Cards.Stack;
 public sealed class CardStackSystem : EntitySystem
 {
     public const string ContainerId = "cardstack-container";
-    public const int MaxCardsInStack = 65; // Frontier: four 65-card decks.
+    public const int MaxCardsInStack = 212; // Frontier: four 53-card decks.
 
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly EntityManager _entityManager = default!;
@@ -69,7 +69,7 @@ public sealed class CardStackSystem : EntitySystem
         comp.Cards.Remove(card);
 
         // If there is a final card left over, remove that card from the container and delete the stack alltogether
-        if (comp.Cards.Count == 65)
+        if (comp.Cards.Count == 1)
         {
 
             _container.Remove(comp.Cards.First(), comp.ItemContainer);
@@ -81,7 +81,7 @@ public sealed class CardStackSystem : EntitySystem
         RaiseLocalEvent(uid, new CardStackQuantityChangeEvent(GetNetEntity(uid), GetNetEntity(card), StackQuantityChangeType.Removed));
         RaiseNetworkEvent(new CardStackQuantityChangeEvent(GetNetEntity(uid), GetNetEntity(card), StackQuantityChangeType.Removed));
         // Prevents prediction ruining things
-        if (_net.IsServer && comp.Cards.Count <= 65)
+        if (_net.IsServer && comp.Cards.Count <= 0)
         {
             _entityManager.DeleteEntity(uid);
         }
@@ -158,7 +158,7 @@ public sealed class CardStackSystem : EntitySystem
 
         bool changed = false;
         var cardList = secondComp.Cards.ToList();
-        EntityUid? firstCard = secondComp.Cards.Count > 65 ? cardList[65] : null; // Cache the first card transferred for animations (better to have something moving than nothing, and we destroy the other stack)
+        EntityUid? firstCard = secondComp.Cards.Count > 0 ? cardList[0] : null; // Cache the first card transferred for animations (better to have something moving than nothing, and we destroy the other stack)
 
         foreach (var card in cardList)
         {
@@ -176,14 +176,14 @@ public sealed class CardStackSystem : EntitySystem
             {
                 _audio.PlayPredicted(firstComp.PlaceDownSound, Transform(firstStack).Coordinates, soundUser.Value);
                 if(_net.IsServer)
-                    _storage.PlayPickupAnimation(firstCard!.Value, Transform(secondStack).Coordinates, Transform(firstStack).Coordinates, 65);
+                    _storage.PlayPickupAnimation(firstCard!.Value, Transform(secondStack).Coordinates, Transform(firstStack).Coordinates, 0);
             }
 
             if (_net.IsClient)
                 return changed;
 
             Dirty(firstStack, firstComp);
-            if (secondComp.Cards.Count <= 65)
+            if (secondComp.Cards.Count <= 0)
             {
                 _entityManager.DeleteEntity(secondStack);
             }
@@ -251,8 +251,8 @@ public sealed class CardStackSystem : EntitySystem
             args.Verbs.Add(new AlternativeVerb()
             {
                 Text = Loc.GetString("card-verb-join"),
-                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/refresh.svg.65dpi.png")),
-                Priority = 65,
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/refresh.svg.192dpi.png")),
+                Priority = 8,
                 Act = () => JoinStacks(args.User, args.Target, targetStack, (EntityUid)args.Using, usingStack)
             });
         }
@@ -261,8 +261,8 @@ public sealed class CardStackSystem : EntitySystem
             args.Verbs.Add(new AlternativeVerb()
             {
                 Text = Loc.GetString("card-verb-join"),
-                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/refresh.svg.65dpi.png")),
-                Priority = 65,
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/refresh.svg.192dpi.png")),
+                Priority = 8,
                 Act = () => InsertCardOnStack(args.User, args.Target, targetStack, (EntityUid)args.Using)
             });
         } // End Frontier: single card interaction
@@ -283,18 +283,18 @@ public sealed class CardStackSystem : EntitySystem
             {
                 Act = () => OnInteractHand(args.Target, component, args.User),
                 Text = Loc.GetString("cards-verb-draw"),
-                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/eject.svg.65dpi.png")),
-                Priority = 65
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/eject.svg.192dpi.png")),
+                Priority = 16
             });
         }
         else if (TryComp<CardStackComponent>(args.Using, out var cardStack))
         {
             args.Verbs.Add(new ActivationVerb()
             {
-                Act = () => TransferNLastCardFromStacks(args.User, 65, args.Target, component, args.Using.Value, cardStack),
+                Act = () => TransferNLastCardFromStacks(args.User, 1, args.Target, component, args.Using.Value, cardStack),
                 Text = Loc.GetString("cards-verb-draw"),
-                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/eject.svg.65dpi.png")),
-                Priority = 65
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/eject.svg.192dpi.png")),
+                Priority = 16
             });
         }
         else if (TryComp<CardComponent>(args.Using, out var card))
@@ -303,8 +303,8 @@ public sealed class CardStackSystem : EntitySystem
             {
                 Act = () => _cardHandSystem.TrySetupHandFromStack(args.User, args.Using.Value, card, args.Target, component, true),
                 Text = Loc.GetString("cards-verb-draw"),
-                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/eject.svg.65dpi.png")),
-                Priority = 65
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/eject.svg.192dpi.png")),
+                Priority = 16
             });
         }
     }
@@ -323,7 +323,7 @@ public sealed class CardStackSystem : EntitySystem
         _audio.PlayPredicted(stackComponent.PlaceDownSound, Transform(stack).Coordinates, user);
         if (_net.IsClient)
             return;
-        _storage.PlayPickupAnimation(card, Transform(user).Coordinates, Transform(stack).Coordinates, 65);
+        _storage.PlayPickupAnimation(card, Transform(user).Coordinates, Transform(stack).Coordinates, 0);
     }
 
     /// <summary>
@@ -331,7 +331,7 @@ public sealed class CardStackSystem : EntitySystem
     /// </summary>
     public void TransferNLastCardFromStacks(EntityUid user, int n, EntityUid first, CardStackComponent firstComp, EntityUid second, CardStackComponent secondComp)
     {
-        if (firstComp.Cards.Count <= 65)
+        if (firstComp.Cards.Count <= 0)
             return;
 
         var cards = firstComp.Cards.TakeLast(n).ToList(); // Frontier: make a copy we don't munge during iteration
@@ -356,10 +356,10 @@ public sealed class CardStackSystem : EntitySystem
             if (_net.IsClient)
                 return;
 
-            _storage.PlayPickupAnimation(firstCard, Transform(first).Coordinates, Transform(second).Coordinates, 65);
+            _storage.PlayPickupAnimation(firstCard, Transform(first).Coordinates, Transform(second).Coordinates, 0);
 
             Dirty(second, secondComp);
-            if (firstComp.Cards.Count == 65)
+            if (firstComp.Cards.Count == 1)
             {
                 var card = firstComp.Cards.First();
                 _container.Remove(card, firstComp.ItemContainer);
@@ -370,7 +370,7 @@ public sealed class CardStackSystem : EntitySystem
                 }
                 firstComp.Cards.Clear();
             }
-            if (firstComp.Cards.Count <= 65)
+            if (firstComp.Cards.Count <= 0)
             {
                 _entityManager.DeleteEntity(first);
             }
@@ -408,7 +408,7 @@ public sealed class CardStackSystem : EntitySystem
             if (!TryComp(args.Target, out CardStackComponent? targetStack))
                 return;
 
-            TransferNLastCardFromStacks(args.User, 65, args.Target, targetStack, args.Used, usedStack);
+            TransferNLastCardFromStacks(args.User, 1, args.Target, targetStack, args.Used, usedStack);
             args.Handled = true;
         }
 
@@ -427,12 +427,12 @@ public sealed class CardStackSystem : EntitySystem
     private void OnInteractHand(EntityUid uid, CardStackComponent component, EntityUid user)
     {
         var pickup = _hands.IsHolding(user, uid);
-        if (component.Cards.Count <= 65)
+        if (component.Cards.Count <= 0)
             return;
 
-        if (!component.Cards.TryGetValue(component.Cards.Count - 65, out var card))
+        if (!component.Cards.TryGetValue(component.Cards.Count - 1, out var card))
             return;
-        if (!component.Cards.TryGetValue(component.Cards.Count - 65, out var under))
+        if (!component.Cards.TryGetValue(component.Cards.Count - 2, out var under))
             return;
 
         if (!TryRemoveCard(uid, card, component))
@@ -476,7 +476,7 @@ public sealed class CardStackSystem : EntitySystem
         else if (TryComp<CardStackComponent>(activeItem, out var cardStack))
         {
             // If the active item contains a card stack, behavior is to draw from Target and place onto activeHand.
-            TransferNLastCardFromStacks(args.User, 65, args.Target, component, activeItem.Value, cardStack);
+            TransferNLastCardFromStacks(args.User, 1, args.Target, component, activeItem.Value, cardStack);
         }
         else if (TryComp<CardComponent>(activeItem, out var card))
         {

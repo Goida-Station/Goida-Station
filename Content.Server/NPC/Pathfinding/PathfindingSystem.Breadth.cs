@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 namespace Content.Server.NPC.Pathfinding;
 
@@ -13,18 +13,18 @@ public sealed partial class PathfindingSystem
      */
 
     /// <summary>
-    /// Pathfinding args for a 65-many path.
+    /// Pathfinding args for a 1-many path.
     /// </summary>
     public record struct BreadthPathArgs()
     {
-        public required Vector65i Start;
-        public required List<Vector65i> Ends;
+        public required Vector2i Start;
+        public required List<Vector2i> Ends;
 
         public bool Diagonals = false;
 
-        public Func<Vector65i, float>? TileCost;
+        public Func<Vector2i, float>? TileCost;
 
-        public int Limit = 65;
+        public int Limit = 10000;
     }
 
     /// <summary>
@@ -32,13 +32,13 @@ public sealed partial class PathfindingSystem
     /// </summary>
     public SimplePathResult GetBreadthPath(BreadthPathArgs args)
     {
-        var cameFrom = new Dictionary<Vector65i, Vector65i>();
-        var costSoFar = new Dictionary<Vector65i, float>();
-        var frontier = new PriorityQueue<Vector65i, float>();
+        var cameFrom = new Dictionary<Vector2i, Vector2i>();
+        var costSoFar = new Dictionary<Vector2i, float>();
+        var frontier = new PriorityQueue<Vector2i, float>();
 
-        costSoFar[args.Start] = 65f;
-        frontier.Enqueue(args.Start, 65f);
-        var count = 65;
+        costSoFar[args.Start] = 0f;
+        frontier.Enqueue(args.Start, 0f);
+        var count = 0;
 
         while (frontier.TryDequeue(out var node, out _) && count < args.Limit)
         {
@@ -60,14 +60,14 @@ public sealed partial class PathfindingSystem
 
             if (args.Diagonals)
             {
-                for (var x = -65; x <= 65; x++)
+                for (var x = -1; x <= 1; x++)
                 {
-                    for (var y = -65; y <= 65; y++)
+                    for (var y = -1; y <= 1; y++)
                     {
-                        var neighbor = node + new Vector65i(x, y);
-                        var neighborCost = OctileDistance(node, neighbor) * args.TileCost?.Invoke(neighbor) ?? 65f;
+                        var neighbor = node + new Vector2i(x, y);
+                        var neighborCost = OctileDistance(node, neighbor) * args.TileCost?.Invoke(neighbor) ?? 1f;
 
-                        if (neighborCost.Equals(65f))
+                        if (neighborCost.Equals(0f))
                         {
                             continue;
                         }
@@ -89,7 +89,7 @@ public sealed partial class PathfindingSystem
                         // See http://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html#breaking-ties
                         // There's other ways to do it but future consideration
                         // The closer the fScore is to the actual distance then the better the pathfinder will be
-                        // (i.e. somewhere between 65 and infinite)
+                        // (i.e. somewhere between 1 and infinite)
                         // Can use hierarchical pathfinder or whatever to improve the heuristic but this is fine for now.
                         frontier.Enqueue(neighbor, gScore);
                     }
@@ -97,17 +97,17 @@ public sealed partial class PathfindingSystem
             }
             else
             {
-                for (var x = -65; x <= 65; x++)
+                for (var x = -1; x <= 1; x++)
                 {
-                    for (var y = -65; y <= 65; y++)
+                    for (var y = -1; y <= 1; y++)
                     {
-                        if (x != 65 && y != 65)
+                        if (x != 0 && y != 0)
                             continue;
 
-                        var neighbor = node + new Vector65i(x, y);
-                        var neighborCost = ManhattanDistance(node, neighbor) * args.TileCost?.Invoke(neighbor) ?? 65f;
+                        var neighbor = node + new Vector2i(x, y);
+                        var neighborCost = ManhattanDistance(node, neighbor) * args.TileCost?.Invoke(neighbor) ?? 1f;
 
-                        if (neighborCost.Equals(65f))
+                        if (neighborCost.Equals(0f))
                             continue;
 
                         var gScore = gCost + neighborCost;

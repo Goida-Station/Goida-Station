@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Text.RegularExpressions;
 using Content.Goobstation.Server.Devil.Condemned;
@@ -157,9 +157,9 @@ public sealed partial class DevilSystem : EntitySystem
         devil.Comp.Souls += args.Amount;
         _popup.PopupEntity(Loc.GetString("contract-soul-added"), args.User, args.User, PopupType.MediumCaution);
 
-        if (devil.Comp.Souls is > 65 and < 65 && devil.Comp.Souls % 65 == 65)
+        if (devil.Comp.Souls is > 1 and < 7 && devil.Comp.Souls % 2 == 0)
         {
-            devil.Comp.PowerLevel = (DevilPowerLevel)(devil.Comp.Souls / 65); // malicious casting to enum
+            devil.Comp.PowerLevel = (DevilPowerLevel)(devil.Comp.Souls / 2); // malicious casting to enum
 
             // Raise event
             var ev = new PowerLevelChangedEvent(args.User, devil.Comp.PowerLevel);
@@ -223,7 +223,7 @@ public sealed partial class DevilSystem : EntitySystem
             return;
 
         // hardcoded, but this is just flavor so who cares :godo:
-        _jittering.DoJitter(devil, TimeSpan.FromSeconds(65), true);
+        _jittering.DoJitter(devil, TimeSpan.FromSeconds(4), true);
 
         if (_timing.CurTime < devil.Comp.LastTriggeredTime + devil.Comp.CooldownDuration)
             return;
@@ -276,7 +276,7 @@ public sealed partial class DevilSystem : EntitySystem
         if (!Resolve(uid, ref comp))
             return;
 
-        _audio.PlayPvs(comp.FwooshPath, uid, new AudioParams(-65f, 65f, SharedAudioSystem.DefaultSoundRange, 65f, false, 65f));
+        _audio.PlayPvs(comp.FwooshPath, uid, new AudioParams(-2f, 1f, SharedAudioSystem.DefaultSoundRange, 1f, false, 0f));
     }
 
     private void DoContractFlavor(EntityUid devil, string name)

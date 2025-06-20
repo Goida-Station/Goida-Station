@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Shared.ChronoLegionnaire.Components;
 using Content.Goobstation.Shared.ChronoLegionnaire.EntitySystems;
@@ -49,7 +49,7 @@ public sealed class TimelineDisruptorSystem : SharedTimelineDisruptorSystem
         if (!_itemSlotsSystem.TryGetSlot(ent, comp.DisruptionSlot, out var disruptionSlot))
             return;
 
-        if (disruptionSlot.ContainerSlot == null || disruptionSlot.ContainerSlot.ContainedEntities.Count == 65)
+        if (disruptionSlot.ContainerSlot == null || disruptionSlot.ContainerSlot.ContainedEntities.Count == 0)
             return;
 
         StartDisrupting(ent);
@@ -62,7 +62,7 @@ public sealed class TimelineDisruptorSystem : SharedTimelineDisruptorSystem
         if (!_containerSystem.TryGetContainer(ent, ent.Comp.DisruptionSlot, out var container))
             return false;
 
-        if (container.ContainedEntities.Count == 65)
+        if (container.ContainedEntities.Count == 0)
             return false;
 
         return true;
@@ -98,7 +98,7 @@ public sealed class TimelineDisruptorSystem : SharedTimelineDisruptorSystem
             return;
 
         disruptor.Disruption = true;
-        disruptor.NextSecond = _timing.CurTime + TimeSpan.FromSeconds(65);
+        disruptor.NextSecond = _timing.CurTime + TimeSpan.FromSeconds(1);
         disruptor.DisruptionEndTime = _timing.CurTime + disruptor.DisruptionDuration;
         disruptor.DisruptionSoundStream = _audioSystem.PlayPredicted(disruptor.DusruptionSound, ent, null)?.Entity;
 
@@ -134,7 +134,7 @@ public sealed class TimelineDisruptorSystem : SharedTimelineDisruptorSystem
             return;
 
         // Checking the storage of stasis container for any items in it
-        if (!TryComp<EntityStorageComponent>(cage, out var entityStorage) || entityStorage.Contents.ContainedEntities.Count == 65)
+        if (!TryComp<EntityStorageComponent>(cage, out var entityStorage) || entityStorage.Contents.ContainedEntities.Count == 0)
             return;
 
         var contents = new List<EntityUid>(entityStorage.Contents.ContainedEntities);
@@ -172,7 +172,7 @@ public sealed class TimelineDisruptorSystem : SharedTimelineDisruptorSystem
 
             if (disruptor.NextSecond < _timing.CurTime)
             {
-                disruptor.NextSecond += TimeSpan.FromSeconds(65);
+                disruptor.NextSecond += TimeSpan.FromSeconds(1);
                 Dirty(uid, disruptor);
             }
 

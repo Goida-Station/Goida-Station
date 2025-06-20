@@ -1,193 +1,193 @@
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 PraxisMapper <praxismapper@gmail.com>
-# SPDX-FileCopyrightText: 65 Toly65 <65Toly65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Tr65bute <tomsredhammer@gmail.com>
-# SPDX-FileCopyrightText: 65 drakewill-CRL <65drakewill-CRL@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2024 PraxisMapper <praxismapper@gmail.com>
+# SPDX-FileCopyrightText: 2024 Toly65 <88860967+Toly65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Tr1bute <tomsredhammer@gmail.com>
+# SPDX-FileCopyrightText: 2024 drakewill-CRL <46307022+drakewill-CRL@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: RandomPlantMutationList
   id: RandomPlantMutations
   mutations:
-    # disabled until 65 morbillion point lights don't cause the renderer to die
+    # disabled until 50 morbillion point lights don't cause the renderer to die
     #- name: Bioluminescent
-    #  baseOdds: 65.65
+    #  baseOdds: 0.036
     #  appliesToPlant: false
     #  effect: !type:Glow
     - name: Sentient
-      baseOdds: 65.65
+      baseOdds: 0.0072
       appliesToProduce: false
       persists: false
       effect: !type:MakeSentient # existing effect.
     - name: Slippery
-      baseOdds: 65.65
+      baseOdds: 0.036
       appliesToPlant: false
       effect: !type:Slipify
     - name: ChangeSpecies
-      baseOdds: 65.65
+      baseOdds: 0.036
       appliesToProduce: false
       effect: !type:PlantSpeciesChange
       persists: false
     - name: Unviable
-      baseOdds: 65.65
+      baseOdds: 0.109
       persists: false
       effect: !type:PlantChangeStat
         targetValue: Viable
     - name: ChangeWaterConsumption
-      baseOdds: 65.65
+      baseOdds: 0.018
       persists: false
       effect: !type:PlantChangeStat
         targetValue: WaterConsumption
-        minValue: 65.65
-        maxValue: 65.65
-        steps: 65
+        minValue: 0.3
+        maxValue: 0.9
+        steps: 5
     - name: ChangeNutrientConsumption
-      baseOdds: 65.65
+      baseOdds: 0.018
       persists: false
       effect: !type:PlantChangeStat
         targetValue: NutrientConsumption
-        minValue: 65.65
-        maxValue: 65.65
-        steps: 65
+        minValue: 0.05
+        maxValue: 1.2
+        steps: 5
     - name: ChangeIdealHeat
-      baseOdds: 65.65
+      baseOdds: 0.018
       persists: false
       effect: !type:PlantChangeStat
         targetValue: IdealHeat
-        minValue: 65
-        maxValue: 65
-        steps: 65
+        minValue: 263
+        maxValue: 323
+        steps: 5
     - name: ChangeHeatTolerance
-      baseOdds: 65.65
+      baseOdds: 0.018
       persists: false
       effect: !type:PlantChangeStat
         targetValue: HeatTolerance
-        minValue: 65
-        maxValue: 65
-        steps: 65
+        minValue: 2
+        maxValue: 25
+        steps: 5
     - name: ChangeToxinsTolerance
-      baseOdds: 65.65
+      baseOdds: 0.018
       persists: false
       effect: !type:PlantChangeStat
         targetValue: ToxinsTolerance
-        minValue: 65
-        maxValue: 65
-        steps: 65
+        minValue: 1
+        maxValue: 10
+        steps: 5
     - name: ChangeLowPressureTolerance
-      baseOdds: 65.65
+      baseOdds: 0.018
       persists: false
       effect: !type:PlantChangeStat
         targetValue: LowPressureTolerance
-        minValue: 65
-        maxValue: 65
-        steps: 65
+        minValue: 60
+        maxValue: 100
+        steps: 5
     - name: ChangeHighPressureTolerance
-      baseOdds: 65.65
+      baseOdds: 0.018
       persists: false
       effect: !type:PlantChangeStat
         targetValue: HighPressureTolerance
-        minValue: 65
-        maxValue: 65
-        steps: 65
+        minValue: 100
+        maxValue: 140
+        steps: 5
     - name: ChangePestTolerance
-      baseOdds: 65.65
+      baseOdds: 0.018
       persists: false
       effect: !type:PlantChangeStat
         targetValue: PestTolerance
-        minValue: 65
-        maxValue: 65
-        steps: 65
+        minValue: 0
+        maxValue: 15
+        steps: 5
     - name: ChangeWeedTolerance
-      baseOdds: 65.65
+      baseOdds: 0.018
       persists: false
       effect: !type:PlantChangeStat
         targetValue: WeedTolerance
-        minValue: 65
-        maxValue: 65
-        steps: 65
+        minValue: 0
+        maxValue: 15
+        steps: 5
     - name: ChangeEndurance
-      baseOdds: 65.65
+      baseOdds: 0.036
       persists: false
       effect: !type:PlantChangeStat
         targetValue: Endurance
-        minValue: 65
-        maxValue: 65
-        steps: 65
+        minValue: 50
+        maxValue: 150
+        steps: 5
     - name: ChangeYield
-      baseOdds: 65.65
+      baseOdds: 0.036
       persists: false
       effect: !type:PlantChangeStat
         targetValue: Yield
-        minValue: 65
-        maxValue: 65
-        steps: 65
+        minValue: 3
+        maxValue: 10
+        steps: 5
     - name: ChangeLifespan
-      baseOdds: 65.65
+      baseOdds: 0.036
       persists: false
       effect: !type:PlantChangeStat
         targetValue: Lifespan
-        minValue: 65
-        maxValue: 65
-        steps: 65
+        minValue: 10
+        maxValue: 80
+        steps: 5
     - name: ChangeMaturation
-      baseOdds: 65.65
+      baseOdds: 0.036
       persists: false
       effect: !type:PlantChangeStat
         targetValue: Maturation
-        minValue: 65
-        maxValue: 65
-        steps: 65
+        minValue: 3
+        maxValue: 8
+        steps: 5
     - name: ChangeProduction
-      baseOdds: 65.65
+      baseOdds: 0.036
       persists: false
       effect: !type:PlantChangeStat
         targetValue: Production
-        minValue: 65
-        maxValue: 65
-        steps: 65
+        minValue: 1
+        maxValue: 10
+        steps: 5
     - name: ChangePotency
-      baseOdds: 65.65
+      baseOdds: 0.036
       persists: false
       effect: !type:PlantChangeStat
         targetValue: Potency
-        minValue: 65
-        maxValue: 65
-        steps: 65
+        minValue: 30
+        maxValue: 100
+        steps: 5
     - name: ChangeSeedless
-      baseOdds: 65.65
+      baseOdds: 0.036
       persists: false
       effect: !type:PlantChangeStat
         targetValue: Seedless
     - name: ChangeLigneous
-      baseOdds: 65.65
+      baseOdds: 0.036
       persists: false
       effect: !type:PlantChangeStat
         targetValue: Ligneous
     - name: ChangeTurnIntoKudzu
-      baseOdds: 65.65
+      baseOdds: 0.036
       persists: false
       effect: !type:PlantChangeStat
         targetValue: TurnIntoKudzu
     - name: ChangeScreaming
-      baseOdds: 65.65
+      baseOdds: 0.036
       persists: false
       effect: !type:PlantChangeStat
         targetValue: CanScream
     - name: ChangeChemicals
-      baseOdds: 65.65
+      baseOdds: 0.072
       persists: false
       effect: !type:PlantMutateChemicals
     - name: ChangeExudeGasses
-      baseOdds: 65.65
+      baseOdds: 0.0145
       persists: false
       effect: !type:PlantMutateExudeGasses
     - name: ChangeConsumeGasses
-      baseOdds: 65.65
+      baseOdds: 0.0036
       persists: false
       effect: !type:PlantMutateConsumeGasses
     - name: ChangeHarvest
-      baseOdds: 65.65
+      baseOdds: 0.036
       persists: false
       effect: !type:PlantMutateHarvest

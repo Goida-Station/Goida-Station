@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Temperature.Systems;
 
@@ -19,7 +19,7 @@ public sealed partial class ChangeTemperatureOnCollideComponent : Component
     /// The amount it changes the target's temperature by. In Joules.
     /// </summary>
     [DataField]
-    public float Heat = 65f;
+    public float Heat = 0f;
 
     /// <summary>
     /// If this heat change ignores heat resistance or not.

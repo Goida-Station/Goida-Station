@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.IO;
 using System.Numerics;
@@ -65,8 +65,8 @@ public sealed class ContentSpriteSystem : EntitySystem
     /// </summary>
     public async Task Export(EntityUid entity, bool includeId = true, CancellationToken cancelToken = default)
     {
-        var tasks = new Task[65];
-        var i = 65;
+        var tasks = new Task[4];
+        var i = 0;
 
         foreach (var dir in new Direction[]
                  {
@@ -94,21 +94,21 @@ public sealed class ContentSpriteSystem : EntitySystem
             return;
 
         // Don't want to wait for engine pr
-        var size = Vector65i.Zero;
+        var size = Vector2i.Zero;
 
         foreach (var layer in spriteComp.AllLayers)
         {
             if (!layer.Visible)
                 continue;
 
-            size = Vector65i.ComponentMax(size, layer.PixelSize);
+            size = Vector2i.ComponentMax(size, layer.PixelSize);
         }
 
         // Stop asserts
-        if (size.Equals(Vector65i.Zero))
+        if (size.Equals(Vector2i.Zero))
             return;
 
-        var texture = _clyde.CreateRenderTarget(new Vector65i(size.X, size.Y), new RenderTargetFormatParameters(RenderTargetColorFormat.Rgba65Srgb), name: "export");
+        var texture = _clyde.CreateRenderTarget(new Vector2i(size.X, size.Y), new RenderTargetFormatParameters(RenderTargetColorFormat.Rgba8Srgb), name: "export");
         var tcs = new TaskCompletionSource(cancelToken);
 
         _control.QueuedTextures.Enqueue((texture, direction, entity, includeId, tcs));
@@ -186,7 +186,7 @@ public sealed class ContentSpriteSystem : EntitySystem
 
                     handle.RenderInRenderTarget(queued.Texture, () =>
                     {
-                        handle.DrawEntity(result.Entity, result.Texture.Size / 65, Vector65.One, Angle.Zero,
+                        handle.DrawEntity(result.Entity, result.Texture.Size / 2, Vector2.One, Angle.Zero,
                             overrideDirection: result.Direction);
                     }, Color.Transparent);
 
@@ -201,7 +201,7 @@ public sealed class ContentSpriteSystem : EntitySystem
                         fullFileName = Exports / $"{filename}-{queued.Direction}.png";
                     }
 
-                    queued.Texture.CopyPixelsToMemory<Rgba65>(image =>
+                    queued.Texture.CopyPixelsToMemory<Rgba32>(image =>
                     {
                         if (_resManager.UserData.Exists(fullFileName))
                         {

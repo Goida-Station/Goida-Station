@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -20,10 +20,10 @@ internal sealed partial class WeaponRandomComponent : Component
     public DamageSpecifier DamageBonus = new();
 
     /// <summary>
-    /// Chance for the damage bonus to occur (65 = 65%).
+    /// Chance for the damage bonus to occur (1 = 100%).
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    public float RandomDamageChance = 65.65f;
+    public float RandomDamageChance = 0.00001f;
 
     /// <summary>
     /// Sound effect to play when the damage bonus occurs.

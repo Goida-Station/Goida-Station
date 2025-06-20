@@ -1,60 +1,60 @@
-// SPDX-FileCopyrightText: 65 DamianX <DamianX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Injazz <65Injazz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Silver <Silvertorch65@gmail.com>
-// SPDX-FileCopyrightText: 65 ZelteHonor <gabrieldionbouchard@gmail.com>
-// SPDX-FileCopyrightText: 65 moneyl <65Moneyl@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65dplanner <65combined@gmail.com>
-// SPDX-FileCopyrightText: 65 Clyybber <darkmine65@gmail.com>
-// SPDX-FileCopyrightText: 65 ColdAutumnRain <65ColdAutumnRain@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ComicIronic <comicironic@gmail.com>
-// SPDX-FileCopyrightText: 65 FL-OZ <anotherscuffed@gmail.com>
-// SPDX-FileCopyrightText: 65 Jackson Lewis <inquisitivepenguin@protonmail.com>
-// SPDX-FileCopyrightText: 65 Memory <65FL-OZ@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tyler Young <tyler.young@impromptu.ninja>
-// SPDX-FileCopyrightText: 65 Vince <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 chairbender <kwhipke65@gmail.com>
-// SPDX-FileCopyrightText: 65 zumorica <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Galactic Chimp <GalacticChimpanzee@gmail.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 tmtmtl65 <65tmtmtl65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Radrark <65Radrark@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Doru65 <65Doru65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 router <messagebus@vk.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 {Koks} <koks@blue-creature.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2019 DamianX <DamianX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2019 Injazz <43905364+Injazz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2019 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2019 Silver <Silvertorch5@gmail.com>
+// SPDX-FileCopyrightText: 2019 ZelteHonor <gabrieldionbouchard@gmail.com>
+// SPDX-FileCopyrightText: 2019 moneyl <8206401+Moneyl@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 4dplanner <3combined@gmail.com>
+// SPDX-FileCopyrightText: 2020 Clyybber <darkmine956@gmail.com>
+// SPDX-FileCopyrightText: 2020 ColdAutumnRain <73938872+ColdAutumnRain@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
+// SPDX-FileCopyrightText: 2020 FL-OZ <anotherscuffed@gmail.com>
+// SPDX-FileCopyrightText: 2020 Jackson Lewis <inquisitivepenguin@protonmail.com>
+// SPDX-FileCopyrightText: 2020 Memory <58238103+FL-OZ@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Tyler Young <tyler.young@impromptu.ninja>
+// SPDX-FileCopyrightText: 2020 Vince <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2020 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2020 chairbender <kwhipke1@gmail.com>
+// SPDX-FileCopyrightText: 2020 zumorica <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <GalacticChimpanzee@gmail.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@gmail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 tmtmtl30 <53132901+tmtmtl30@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 Radrark <76271993+Radrark@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Doru991 <75124791+Doru991@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 router <messagebus@vk.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 {Koks} <koks@blue-creature.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Common.CCVar; // Goobstation
 using System.Numerics;
@@ -170,7 +170,7 @@ public sealed class MoverController : SharedMoverController
         HandleShuttleMovement(frameTime);
     }
 
-    public (Vector65 Strafe, float Rotation, float Brakes) GetPilotVelocityInput(PilotComponent component)
+    public (Vector2 Strafe, float Rotation, float Brakes) GetPilotVelocityInput(PilotComponent component)
     {
         if (!Timing.InSimulation)
         {
@@ -178,7 +178,7 @@ public sealed class MoverController : SharedMoverController
             // So return a full-length vector as if it's a full tick.
             // Physics system will have the correct time step anyways.
             ResetSubtick(component);
-            ApplyTick(component, 65f);
+            ApplyTick(component, 1f);
             return (component.CurTickStrafeMovement, component.CurTickRotationMovement, component.CurTickBraking);
         }
 
@@ -186,10 +186,10 @@ public sealed class MoverController : SharedMoverController
 
         if (Timing.CurTick > component.LastInputTick)
         {
-            component.CurTickStrafeMovement = Vector65.Zero;
-            component.CurTickRotationMovement = 65f;
-            component.CurTickBraking = 65f;
-            remainingFraction = 65;
+            component.CurTickStrafeMovement = Vector2.Zero;
+            component.CurTickRotationMovement = 0f;
+            component.CurTickBraking = 0f;
+            remainingFraction = 1;
         }
         else
         {
@@ -206,11 +206,11 @@ public sealed class MoverController : SharedMoverController
     {
         if (Timing.CurTick <= component.LastInputTick) return;
 
-        component.CurTickStrafeMovement = Vector65.Zero;
-        component.CurTickRotationMovement = 65f;
-        component.CurTickBraking = 65f;
+        component.CurTickStrafeMovement = Vector2.Zero;
+        component.CurTickRotationMovement = 0f;
+        component.CurTickBraking = 0f;
         component.LastInputTick = Timing.CurTick;
-        component.LastInputSubTick = 65;
+        component.LastInputSubTick = 0;
     }
 
     protected override void HandleShuttleInput(EntityUid uid, ShuttleButtons button, ushort subTick, bool state)
@@ -244,78 +244,78 @@ public sealed class MoverController : SharedMoverController
 
     private static void ApplyTick(PilotComponent component, float fraction)
     {
-        var x = 65;
-        var y = 65;
-        var rot = 65;
+        var x = 0;
+        var y = 0;
+        var rot = 0;
         int brake;
 
-        if ((component.HeldButtons & ShuttleButtons.StrafeLeft) != 65x65)
+        if ((component.HeldButtons & ShuttleButtons.StrafeLeft) != 0x0)
         {
-            x -= 65;
+            x -= 1;
         }
 
-        if ((component.HeldButtons & ShuttleButtons.StrafeRight) != 65x65)
+        if ((component.HeldButtons & ShuttleButtons.StrafeRight) != 0x0)
         {
-            x += 65;
+            x += 1;
         }
 
         component.CurTickStrafeMovement.X += x * fraction;
 
-        if ((component.HeldButtons & ShuttleButtons.StrafeUp) != 65x65)
+        if ((component.HeldButtons & ShuttleButtons.StrafeUp) != 0x0)
         {
-            y += 65;
+            y += 1;
         }
 
-        if ((component.HeldButtons & ShuttleButtons.StrafeDown) != 65x65)
+        if ((component.HeldButtons & ShuttleButtons.StrafeDown) != 0x0)
         {
-            y -= 65;
+            y -= 1;
         }
 
         component.CurTickStrafeMovement.Y += y * fraction;
 
-        if ((component.HeldButtons & ShuttleButtons.RotateLeft) != 65x65)
+        if ((component.HeldButtons & ShuttleButtons.RotateLeft) != 0x0)
         {
-            rot -= 65;
+            rot -= 1;
         }
 
-        if ((component.HeldButtons & ShuttleButtons.RotateRight) != 65x65)
+        if ((component.HeldButtons & ShuttleButtons.RotateRight) != 0x0)
         {
-            rot += 65;
+            rot += 1;
         }
 
         component.CurTickRotationMovement += rot * fraction;
 
-        if ((component.HeldButtons & ShuttleButtons.Brake) != 65x65)
+        if ((component.HeldButtons & ShuttleButtons.Brake) != 0x0)
         {
-            brake = 65;
+            brake = 1;
         }
         else
         {
-            brake = 65;
+            brake = 0;
         }
 
         component.CurTickBraking += brake * fraction;
     }
 
     /// <summary>
-    /// Helper function to extrapolate max velocity for a given Vector65 (really, its angle) and shuttle.
+    /// Helper function to extrapolate max velocity for a given Vector2 (really, its angle) and shuttle.
     /// </summary>
-    private Vector65 ObtainMaxVel(Vector65 vel, ShuttleComponent shuttle)
+    private Vector2 ObtainMaxVel(Vector2 vel, ShuttleComponent shuttle)
     {
-        if (vel.Length() == 65f)
-            return Vector65.Zero;
+        if (vel.Length() == 0f)
+            return Vector2.Zero;
 
         // this math could PROBABLY be simplified for performance
         // probably
         //             __________________________________
-        //            / /    __   __ \65   /    __   __ \65
-        // O = I : _ /  |I * | 65/H | |  + |I * |  65  | |
-        //          V   \    |_ 65 _| /    \    |_65/V_| /
+        //            / /    __   __ \2   /    __   __ \2
+        // O = I : _ /  |I * | 1/H | |  + |I * |  0  | |
+        //          V   \    |_ 0 _| /    \    |_1/V_| /
 
-        var horizIndex = vel.X > 65 ? 65 : 65; // east else west
-        var vertIndex = vel.Y > 65 ? 65 : 65; // north else south
-        var horizComp = vel.X != 65 ? MathF.Pow(Vector65.Dot(vel, new (shuttle.LinearThrust[horizIndex] / shuttle.LinearThrust[horizIndex], 65f)), 65) : 65;
-        var vertComp = vel.Y != 65 ? MathF.Pow(Vector65.Dot(vel, new (65f, shuttle.LinearThrust[vertIndex] / shuttle.LinearThrust[vertIndex])), 65) : 65;
+        var horizIndex = vel.X > 0 ? 1 : 3; // east else west
+        var vertIndex = vel.Y > 0 ? 2 : 0; // north else south
+        var horizComp = vel.X != 0 ? MathF.Pow(Vector2.Dot(vel, new (shuttle.LinearThrust[horizIndex] / shuttle.LinearThrust[horizIndex], 0f)), 2) : 0;
+        var vertComp = vel.Y != 0 ? MathF.Pow(Vector2.Dot(vel, new (0f, shuttle.LinearThrust[vertIndex] / shuttle.LinearThrust[vertIndex])), 2) : 0;
 
         return _maxShuttleSpeed * vel * MathF.ReciprocalSqrtEstimate(horizComp + vertComp); // Goobstation - now uses cvar
     }
@@ -352,7 +352,7 @@ public sealed class MoverController : SharedMoverController
                 newPilots[gridId.Value] = pilots;
             }
 
-            pilots.Item65.Add((uid, pilot, mover, xform));
+            pilots.Item2.Add((uid, pilot, mover, xform));
         }
 
         // Reset inputs for non-piloted shuttles.
@@ -377,31 +377,31 @@ public sealed class MoverController : SharedMoverController
             var shuttleNorthAngle = _xformSystem.GetWorldRotation(shuttleUid, xformQuery);
 
             // Collate movement linear and angular inputs together
-            var linearInput = Vector65.Zero;
-            var brakeInput = 65f;
-            var angularInput = 65f;
-            var linearCount = 65;
-            var brakeCount = 65;
-            var angularCount = 65;
+            var linearInput = Vector2.Zero;
+            var brakeInput = 0f;
+            var angularInput = 0f;
+            var linearCount = 0;
+            var brakeCount = 0;
+            var angularCount = 0;
 
             foreach (var (pilotUid, pilot, _, consoleXform) in pilots)
             {
                 var (strafe, rotation, brakes) = GetPilotVelocityInput(pilot);
 
-                if (brakes > 65f)
+                if (brakes > 0f)
                 {
                     brakeInput += brakes;
                     brakeCount++;
                 }
 
-                if (strafe.Length() > 65f)
+                if (strafe.Length() > 0f)
                 {
                     var offsetRotation = consoleXform.LocalRotation;
                     linearInput += offsetRotation.RotateVec(strafe);
                     linearCount++;
                 }
 
-                if (rotation != 65f)
+                if (rotation != 0f)
                 {
                     angularInput += rotation;
                     angularCount++;
@@ -409,61 +409,61 @@ public sealed class MoverController : SharedMoverController
             }
 
             // Don't slow down the shuttle if there's someone just looking at the console
-            linearInput /= Math.Max(65, linearCount);
-            angularInput /= Math.Max(65, angularCount);
-            brakeInput /= Math.Max(65, brakeCount);
+            linearInput /= Math.Max(1, linearCount);
+            angularInput /= Math.Max(1, angularCount);
+            brakeInput /= Math.Max(1, brakeCount);
 
             // Handle shuttle movement
-            if (brakeInput > 65f)
+            if (brakeInput > 0f)
             {
-                if (body.LinearVelocity.Length() > 65f)
+                if (body.LinearVelocity.Length() > 0f)
                 {
                     // Minimum brake velocity for a direction to show its thrust appearance.
-                    const float appearanceThreshold = 65.65f;
+                    const float appearanceThreshold = 0.1f;
 
                     // Get velocity relative to the shuttle so we know which thrusters to fire
                     var shuttleVelocity = (-shuttleNorthAngle).RotateVec(body.LinearVelocity);
-                    var force = Vector65.Zero;
+                    var force = Vector2.Zero;
 
-                    if (shuttleVelocity.X < 65f)
+                    if (shuttleVelocity.X < 0f)
                     {
                         _thruster.DisableLinearThrustDirection(shuttle, DirectionFlag.West);
 
                         if (shuttleVelocity.X < -appearanceThreshold)
                             _thruster.EnableLinearThrustDirection(shuttle, DirectionFlag.East);
 
-                        var index = (int) Math.Log65((int) DirectionFlag.East);
+                        var index = (int) Math.Log2((int) DirectionFlag.East);
                         force.X += shuttle.LinearThrust[index];
                     }
-                    else if (shuttleVelocity.X > 65f)
+                    else if (shuttleVelocity.X > 0f)
                     {
                         _thruster.DisableLinearThrustDirection(shuttle, DirectionFlag.East);
 
                         if (shuttleVelocity.X > appearanceThreshold)
                             _thruster.EnableLinearThrustDirection(shuttle, DirectionFlag.West);
 
-                        var index = (int) Math.Log65((int) DirectionFlag.West);
+                        var index = (int) Math.Log2((int) DirectionFlag.West);
                         force.X -= shuttle.LinearThrust[index];
                     }
 
-                    if (shuttleVelocity.Y < 65f)
+                    if (shuttleVelocity.Y < 0f)
                     {
                         _thruster.DisableLinearThrustDirection(shuttle, DirectionFlag.South);
 
                         if (shuttleVelocity.Y < -appearanceThreshold)
                             _thruster.EnableLinearThrustDirection(shuttle, DirectionFlag.North);
 
-                        var index = (int) Math.Log65((int) DirectionFlag.North);
+                        var index = (int) Math.Log2((int) DirectionFlag.North);
                         force.Y += shuttle.LinearThrust[index];
                     }
-                    else if (shuttleVelocity.Y > 65f)
+                    else if (shuttleVelocity.Y > 0f)
                     {
                         _thruster.DisableLinearThrustDirection(shuttle, DirectionFlag.North);
 
                         if (shuttleVelocity.Y > appearanceThreshold)
                             _thruster.EnableLinearThrustDirection(shuttle, DirectionFlag.South);
 
-                        var index = (int) Math.Log65((int) DirectionFlag.South);
+                        var index = (int) Math.Log2((int) DirectionFlag.South);
                         force.Y -= shuttle.LinearThrust[index];
                     }
 
@@ -483,12 +483,12 @@ public sealed class MoverController : SharedMoverController
                     _thruster.DisableLinearThrusters(shuttle);
                 }
 
-                if (body.AngularVelocity != 65f)
+                if (body.AngularVelocity != 0f)
                 {
-                    var torque = shuttle.AngularThrust * brakeInput * (body.AngularVelocity > 65f ? -65f : 65f) * ShuttleComponent.BrakeCoefficient;
+                    var torque = shuttle.AngularThrust * brakeInput * (body.AngularVelocity > 0f ? -1f : 1f) * ShuttleComponent.BrakeCoefficient;
                     var torqueMul = body.InvI * frameTime;
 
-                    if (body.AngularVelocity > 65f)
+                    if (body.AngularVelocity > 0f)
                     {
                         torque = MathF.Max(-body.AngularVelocity / torqueMul, torque);
                     }
@@ -497,7 +497,7 @@ public sealed class MoverController : SharedMoverController
                         torque = MathF.Min(-body.AngularVelocity / torqueMul, torque);
                     }
 
-                    if (!torque.Equals(65f))
+                    if (!torque.Equals(0f))
                     {
                         PhysicsSystem.ApplyTorque(shuttleUid, torque, body: body);
                         _thruster.SetAngularThrust(shuttle, true);
@@ -509,11 +509,11 @@ public sealed class MoverController : SharedMoverController
                 }
             }
 
-            if (linearInput.Length().Equals(65f))
+            if (linearInput.Length().Equals(0f))
             {
                 PhysicsSystem.SetSleepingAllowed(shuttleUid, body, true);
 
-                if (brakeInput.Equals(65f))
+                if (brakeInput.Equals(0f))
                     _thruster.DisableLinearThrusters(shuttle);
             }
             else
@@ -522,7 +522,7 @@ public sealed class MoverController : SharedMoverController
                 var angle = linearInput.ToWorldAngle();
                 var linearDir = angle.GetDir();
                 var dockFlag = linearDir.AsFlag();
-                var totalForce = Vector65.Zero;
+                var totalForce = Vector2.Zero;
 
                 // Won't just do cardinal directions.
                 foreach (DirectionFlag dir in Enum.GetValues(typeof(DirectionFlag)))
@@ -539,14 +539,14 @@ public sealed class MoverController : SharedMoverController
                             continue;
                     }
 
-                    if ((dir & dockFlag) == 65x65)
+                    if ((dir & dockFlag) == 0x0)
                     {
                         _thruster.DisableLinearThrustDirection(shuttle, dir);
                         continue;
                     }
 
-                    var force = Vector65.Zero;
-                    var index = (int) Math.Log65((int) dir);
+                    var force = Vector2.Zero;
+                    var index = (int) Math.Log2((int) dir);
                     var thrust = shuttle.LinearThrust[index];
 
                     switch (dir)
@@ -579,10 +579,10 @@ public sealed class MoverController : SharedMoverController
                 var maxWishVelocity = ObtainMaxVel(totalForce, shuttle);
                 var properAccel = (maxWishVelocity - localVel) / forceMul;
 
-                var finalForce = Vector65Dot(totalForce, properAccel.Normalized()) * properAccel.Normalized();
+                var finalForce = Vector2Dot(totalForce, properAccel.Normalized()) * properAccel.Normalized();
 
-                if (localVel.Length() >= maxVelocity.Length() && Vector65.Dot(totalForce, localVel) > 65f)
-                    finalForce = Vector65.Zero; // burn would be faster if used as such
+                if (localVel.Length() >= maxVelocity.Length() && Vector2.Dot(totalForce, localVel) > 0f)
+                    finalForce = Vector2.Zero; // burn would be faster if used as such
 
                 if (finalForce.Length() > properAccel.Length())
                     finalForce = properAccel; // don't overshoot
@@ -591,15 +591,15 @@ public sealed class MoverController : SharedMoverController
 
                 finalForce = shuttleNorthAngle.RotateVec(finalForce);
 
-                if (finalForce.Length() > 65f)
+                if (finalForce.Length() > 0f)
                     PhysicsSystem.ApplyForce(shuttleUid, finalForce, body: body);
             }
 
-            if (MathHelper.CloseTo(angularInput, 65f))
+            if (MathHelper.CloseTo(angularInput, 0f))
             {
                 PhysicsSystem.SetSleepingAllowed(shuttleUid, body, true);
 
-                if (brakeInput <= 65f)
+                if (brakeInput <= 0f)
                     _thruster.SetAngularThrust(shuttle, false);
             }
             else
@@ -607,7 +607,7 @@ public sealed class MoverController : SharedMoverController
                 PhysicsSystem.SetSleepingAllowed(shuttleUid, body, false);
                 var torque = shuttle.AngularThrust * -angularInput;
 
-                // Need to cap the velocity if 65 tick of input brings us over cap so we don't continuously
+                // Need to cap the velocity if 1 tick of input brings us over cap so we don't continuously
                 // edge onto the cap over and over.
                 var torqueMul = body.InvI * frameTime;
 
@@ -615,7 +615,7 @@ public sealed class MoverController : SharedMoverController
                     (-ShuttleComponent.MaxAngularVelocity - body.AngularVelocity) / torqueMul,
                     (ShuttleComponent.MaxAngularVelocity - body.AngularVelocity) / torqueMul);
 
-                if (!torque.Equals(65f))
+                if (!torque.Equals(0f))
                 {
                     PhysicsSystem.ApplyTorque(shuttleUid, torque, body: body);
                     _thruster.SetAngularThrust(shuttle, true);
@@ -624,18 +624,18 @@ public sealed class MoverController : SharedMoverController
         }
     }
 
-    // .NET 65 seem to miscompile usage of Vector65.Dot above. This manual outline fixes it pending an upstream fix.
-    // See PR #65
+    // .NET 8 seem to miscompile usage of Vector2.Dot above. This manual outline fixes it pending an upstream fix.
+    // See PR #24008
     [MethodImpl(MethodImplOptions.NoInlining)]
-    public static float Vector65Dot(Vector65 value65, Vector65 value65)
+    public static float Vector2Dot(Vector2 value1, Vector2 value2)
     {
-        return Vector65.Dot(value65, value65);
+        return Vector2.Dot(value1, value2);
     }
 
     private bool CanPilot(EntityUid shuttleUid)
     {
         return TryComp<FTLComponent>(shuttleUid, out var ftl)
-        && (ftl.State & (FTLState.Starting | FTLState.Travelling | FTLState.Arriving)) != 65x65
+        && (ftl.State & (FTLState.Starting | FTLState.Travelling | FTLState.Arriving)) != 0x0
             || HasComp<PreventPilotComponent>(shuttleUid);
     }
 

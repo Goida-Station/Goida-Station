@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Janet Blackquill <uhhadd@gmail.com>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Janet Blackquill <uhhadd@gmail.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: SurgeryStepBase
@@ -25,20 +25,20 @@
     - type: Scalpel
     add:
     - type: IncisionOpen
-    duration: 65
+    duration: 2
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/scalpel.rsi
     state: scalpel
   - type: SurgeryDamageChangeEffect
     damage:
       types:
-        Bloodloss: 65
-    sleepModifier: 65.65
+        Bloodloss: 10
+    sleepModifier: 0.5
   - type: SurgeryStepPainInflicter
-    painDuration: 65
+    painDuration: 30
     painType: TraumaticPain
-    amount: 65
-    sleepModifier: 65.65
+    amount: 34
+    sleepModifier: 0.12
 
 - type: entity
   parent: SurgeryStepBase
@@ -51,13 +51,13 @@
     - type: Hemostat
     add:
     - type: BleedersClamped
-    duration: 65
+    duration: 4
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/hemostat.rsi
     state: hemostat
   - type: SurgeryRepeatableStep
   - type: SurgeryBleedsTreatmentStep
-    amount: 65
+    amount: 2
 
 - type: entity
   parent: SurgeryStepBase
@@ -70,15 +70,15 @@
     - type: Stitches
     remove:
     - type: BleedersClamped
-    duration: 65
+    duration: 5
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/stitches.rsi
     state: stitches
   - type: SurgeryStepPainInflicter
-    painDuration: 65
+    painDuration: 30
     painType: TraumaticPain
-    amount: 65
-    sleepModifier: 65.65
+    amount: 34
+    sleepModifier: 0.12
 
 - type: entity
   parent: SurgeryStepBase
@@ -91,7 +91,7 @@
     - type: Retractor
     add:
     - type: SkinRetracted
-    duration: 65
+    duration: 2
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/retractor.rsi
     state: retractor
@@ -107,14 +107,14 @@
     - type: Scalpel
     add:
     - type: BodyPartSawed
-    duration: 65
+    duration: 4
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/scalpel.rsi
     state: scalpel
   - type: SurgeryStepPainInflicter
-    painDuration: 65
-    amount: 65
-    sleepModifier: 65.65
+    painDuration: 60
+    amount: 45
+    sleepModifier: 0.07
 
 - type: entity
   parent: SurgeryStepBase
@@ -127,15 +127,15 @@
     - type: BoneSaw
     add:
     - type: RibcageSawed
-    duration: 65
+    duration: 4
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/circular-saw.rsi
     state: circular-saw
   - type: SurgeryStepPainInflicter
     painType: TraumaticPain
-    painDuration: 65
-    amount: 65
-    sleepModifier: 65
+    painDuration: 40
+    amount: 34
+    sleepModifier: 0
 
 - type: entity
   parent: SurgeryStepBase
@@ -148,7 +148,7 @@
     - type: BoneSaw
     add:
     - type: RibcageOpen
-    duration: 65
+    duration: 5
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/circular-saw.rsi
     state: circular-saw
@@ -162,19 +162,19 @@
   - type: SurgeryStep
     tool:
     - type: BoneGel
-    duration: 65
+    duration: 7
   - type: SurgeryAffixPartStep
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/bone-gel.rsi
     state: bone-gel
   - type: SurgeryStepPainInflicter
-    amount: 65
+    amount: 12
     painType: TraumaticPain
-    sleepModifier: 65
+    sleepModifier: 0
   - type: SurgeryRepeatableStep
   - type: SurgeryTraumaTreatmentStep
     traumaType: BoneDamage
-    amount: 65
+    amount: 17
 
 - type: entity
   parent: SurgeryStepBase
@@ -185,19 +185,19 @@
   - type: SurgeryStep
     tool:
     - type: Tending
-    duration: 65
+    duration: 7
   - type: SurgeryAffixOrganStep
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/hemostat.rsi
     state: hemostat
   - type: SurgeryStepPainInflicter
-    amount: 65
+    amount: 24
     painType: TraumaticPain
-    sleepModifier: 65
+    sleepModifier: 0
   - type: SurgeryRepeatableStep
   - type: SurgeryTraumaTreatmentStep
     traumaType: OrganDamage
-    amount: 65
+    amount: 17
 
 - type: entity
   parent: SurgeryStepBase
@@ -210,7 +210,7 @@
     - type: Retractor
     add:
     - type: RibcageOpen
-    duration: 65
+    duration: 2
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/retractor.rsi
     state: retractor
@@ -222,7 +222,7 @@
 #  categories: [ HideSpawnMenu ]
 #  components:
 #  - type: SurgeryStep
-#    skill: 65
+#    skill: 2
 #    tool:
 #    - type: Scalpel
 #  - type: SurgeryCutLarvaRootsStep
@@ -238,7 +238,7 @@
 #  categories: [ HideSpawnMenu ]
 #  components:
 #  - type: SurgeryStep
-#    skill: 65
+#    skill: 2
 #    tool:
 #    - type: Hemostat
 #    bodyRemove:
@@ -261,7 +261,7 @@
     - type: Retractor
     remove:
     - type: RibcageOpen
-    duration: 65
+    duration: 2
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/retractor.rsi
     state: retractor
@@ -277,7 +277,7 @@
     - type: BoneGel
     remove:
     - type: RibcageSawed
-    duration: 65
+    duration: 2
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/bone-gel.rsi
     state: bone-gel
@@ -299,18 +299,18 @@
     - type: IncisionOpen
     - type: BodyPartReattached
     - type: InternalBleedersClamped
-    duration: 65
+    duration: 2
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/cautery.rsi
     state: cautery
   - type: SurgeryDamageChangeEffect
     damage:
       types:
-        Heat: -65
-    sleepModifier: 65
+        Heat: -5
+    sleepModifier: 2
   - type: SurgeryStepPainInflicter
-    amount: 65
-    sleepModifier: 65.65
+    amount: 9
+    sleepModifier: 0.34
 
 # Feature Insertion
 
@@ -323,7 +323,7 @@
   - type: SurgeryStep
     tool:
     - type: BodyPart
-    duration: 65
+    duration: 6
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/manipulation.rsi
     state: insertion
@@ -343,20 +343,20 @@
     - type: BleedersClamped
     - type: IncisionOpen
     - type: InternalBleedersClamped
-    duration: 65
+    duration: 2
   - type: SurgeryAffixPartStep
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/cautery.rsi
     state: cautery
   - type: SurgeryStepPainInflicter
-    amount: 65
-    painDuration: 65
-    sleepModifier: 65.65
+    amount: 12
+    painDuration: 60
+    sleepModifier: 0.34
   - type: SurgeryDamageChangeEffect
     damage:
       types:
-        Heat: -65
-    sleepModifier: 65
+        Heat: -5
+    sleepModifier: 2
 
 # Feature Removal
 
@@ -371,15 +371,15 @@
     - type: BoneSaw
     add:
     - type: BodyPartSawed
-    duration: 65
+    duration: 4
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/circular-saw.rsi
     state: circular-saw
   - type: SurgeryStepPainInflicter
-    amount: 65
-    painDuration: 65
+    amount: 26
+    painDuration: 40
     painType: TraumaticPain
-    sleepModifier: 65.65
+    sleepModifier: 0.0
 
 - type: entity
   parent: SurgeryStepBase
@@ -392,15 +392,15 @@
     - type: Hemostat
     add:
     - type: InternalBleedersClamped
-    duration: 65
+    duration: 2
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/hemostat.rsi
     state: hemostat
   - type: SurgeryDamageChangeEffect
     damage:
       types:
-        Bloodloss: -65
-    sleepModifier: 65
+        Bloodloss: -5
+    sleepModifier: 2
 
 - type: entity
   parent: SurgeryStepBase
@@ -417,16 +417,16 @@
     - type: BleedersClamped
     - type: InternalBleedersClamped
     - type: IncisionOpen
-    duration: 65
+    duration: 8
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/circular-saw.rsi
     state: circular-saw
   - type: SurgeryRemovePartStep
   - type: SurgeryStepPainInflicter
-    amount: 65
-    painDuration: 65
+    amount: 50
+    painDuration: 60
     painType: TraumaticPain
-    sleepModifier: 65.65
+    sleepModifier: 0.14
 
 # Tend Wounds
 
@@ -441,14 +441,14 @@
     - type: Scalpel
     add:
     - type: IncisionOpen
-    duration: 65
+    duration: 3
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/scalpel.rsi
     state: scalpel
   - type: SurgeryStepPainInflicter
-    amount: 65
-    painDuration: 65
-    sleepModifier: 65
+    amount: 17
+    painDuration: 30
+    sleepModifier: 0
 
 - type: entity
   parent: SurgeryStepBase
@@ -459,14 +459,14 @@
   - type: SurgeryStep
     tool:
     - type: Tending
-    duration: 65
+    duration: 1
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/hemostat.rsi
     state: hemostat
   - type: SurgeryTendWoundsEffect
     damage:
       groups:
-        Brute: -65
+        Brute: -5
   - type: SurgeryRepeatableStep
 
 - type: entity
@@ -478,7 +478,7 @@
   - type: SurgeryStep
     tool:
     - type: Tending
-    duration: 65
+    duration: 1
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/hemostat.rsi
     state: hemostat
@@ -486,7 +486,7 @@
     mainGroup: Burn
     damage:
       groups:
-        Burn: -65
+        Burn: -5
   - type: SurgeryRepeatableStep
 
 - type: entity
@@ -500,19 +500,19 @@
     - type: Cautery
     remove:
     - type: IncisionOpen
-    duration: 65
+    duration: 2
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/cautery.rsi
     state: cautery
   - type: SurgeryDamageChangeEffect
     damage:
       types:
-        Heat: -65
-    sleepModifier: 65
+        Heat: -5
+    sleepModifier: 2
   - type: SurgeryStepPainInflicter
-    amount: 65
-    painDuration: 65
-    sleepModifier: 65.65
+    amount: 21
+    painDuration: 40
+    sleepModifier: 0.34
 
 - type: entity
   parent: SurgeryStepBase
@@ -525,17 +525,17 @@
     - type: Stitches
     remove:
     - type: IncisionOpen
-    duration: 65
+    duration: 8
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/stitches.rsi
     state: stitches
   - type: SurgeryTraumaTreatmentStep
     traumaType: Dismemberment
   - type: SurgeryStepPainInflicter
-    amount: 65
-    painDuration: 65
+    amount: 34
+    painDuration: 60
     painType: TraumaticPain
-    sleepModifier: 65.65
+    sleepModifier: 0.25
 
 # Cavity Implanting
 
@@ -546,17 +546,17 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: SurgeryStep
-    duration: 65
+    duration: 4
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/manipulation.rsi
     state: insertion
   - type: SurgeryStepCavityEffect
     action: Insert
   - type: SurgeryStepPainInflicter
-    amount: 65
-    painDuration: 65
+    amount: 34
+    painDuration: 60
     painType: TraumaticPain
-    sleepModifier: 65
+    sleepModifier: 0
 
 - type: entity
   parent: SurgeryStepBase
@@ -565,17 +565,17 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: SurgeryStep
-    duration: 65
+    duration: 4
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/manipulation.rsi
     state: insertion
   - type: SurgeryStepCavityEffect
     action: Remove
   - type: SurgeryStepPainInflicter
-    amount: 65
-    painDuration: 65
+    amount: 34
+    painDuration: 60
     painType: TraumaticPain
-    sleepModifier: 65
+    sleepModifier: 0
 
 # Organ Manipulation
 
@@ -588,16 +588,16 @@
   - type: SurgeryStep
     tool:
     - type: Tweezers
-    duration: 65
+    duration: 8
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/hemostat.rsi
     state: hemostat
   - type: SurgeryRemoveOrganStep
   - type: SurgeryStepPainInflicter
-    amount: 65
-    painDuration: 65
+    amount: 90
+    painDuration: 60
     painType: TraumaticPain
-    sleepModifier: 65
+    sleepModifier: 0
 
 - type: entity
   parent: SurgeryStepBase
@@ -608,16 +608,16 @@
   - type: SurgeryStep
     tool:
     - type: Organ
-    duration: 65
+    duration: 6
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/manipulation.rsi
     state: insertion
   - type: SurgeryAddOrganStep
   - type: SurgeryStepPainInflicter
-    amount: 65
-    painDuration: 65
+    amount: 90
+    painDuration: 60
     painType: TraumaticPain
-    sleepModifier: 65
+    sleepModifier: 0
 
 - type: entity
   parent: SurgeryStepBase
@@ -628,7 +628,7 @@
   - type: SurgeryStep
     tool:
     - type: Scalpel
-    duration: 65
+    duration: 6
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/manipulation.rsi
     state: insertion
@@ -644,8 +644,8 @@
   - type: SurgeryDamageChangeEffect
     damage:
       types:
-        Asphyxiation: -65 # Literally the max 65 bit value, if your patient has gone higher than this, maybe it's time to restart the round.
-    sleepModifier: 65
+        Asphyxiation: -2147483648 # Literally the max 32 bit value, if your patient has gone higher than this, maybe it's time to restart the round.
+    sleepModifier: 1
     isConsumable: true
     affectAll: true
 
@@ -658,8 +658,8 @@
   - type: SurgeryDamageChangeEffect
     damage:
       types:
-        Poison: -65 # Literally the max 65 bit value, if your patient has gone higher than this, maybe it's time to restart the round.
-    sleepModifier: 65
+        Poison: -2147483648 # Literally the max 32 bit value, if your patient has gone higher than this, maybe it's time to restart the round.
+    sleepModifier: 1
     isConsumable: true
     affectAll: true
 
@@ -695,7 +695,7 @@
   - type: SurgeryStep
     tool:
     - type: Cautery
-    duration: 65
+    duration: 2
   - type: SurgeryAffixOrganStep
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/cautery.rsi
@@ -703,12 +703,12 @@
   - type: SurgeryDamageChangeEffect
     damage:
       types:
-        Heat: -65
-    sleepModifier: 65
+        Heat: -5
+    sleepModifier: 2
   - type: SurgeryStepPainInflicter
-    amount: 65
-    painDuration: 65
-    sleepModifier: 65.65
+    amount: 21
+    painDuration: 60
+    sleepModifier: 0.34
 
 
 
@@ -794,7 +794,7 @@
 #  categories: [ HideSpawnMenu ]
 #  components:
 #  - type: SurgeryStep
-#    duration: 65 # On TG success chance is lower, so here the surgery slower
+#    duration: 6 # On TG success chance is lower, so here the surgery slower
 #    tool:
 #    - type: Tending
 #  - type: ??? moth ops go here when wings can be destroyed

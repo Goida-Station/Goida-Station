@@ -7,8 +7,8 @@ pirate-siphon-deactivated-announcement = Источник сигнала о кр
 
 pirate-siphon-examine = Сифон имеет [color=yellow]{$num}[/color] / [color=yellow]{$max_num} кредитов[/color] внутри.
 
-pirate-siphon-activate-65 = ШАТТЛ БУДЕТ ОСТАНОВЛЕН И ПОСТАВЛЕН НА ЯКОРЬ! Подтвердите действие.
-pirate-siphon-activate-65 = ВЕСЬ СЕКТОР БУДЕТ ОПОВЕЩЕН! Подтвердите действие.
+pirate-siphon-activate-1 = ШАТТЛ БУДЕТ ОСТАНОВЛЕН И ПОСТАВЛЕН НА ЯКОРЬ! Подтвердите действие.
+pirate-siphon-activate-2 = ВЕСЬ СЕКТОР БУДЕТ ОПОВЕЩЕН! Подтвердите действие.
 
 pirate-siphon-nosignal = Сигналов не обнаружено.
 pirate-siphon-weaksignal = Обнаружен слабый сигнал. Приближайтесь к источнику сигнала.

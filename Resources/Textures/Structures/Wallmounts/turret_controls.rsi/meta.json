@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from vgstation at https://github.com/vgstation-coders/vgstation65/blob/b65f65f65feacbc65c65aea65eb65ad65cd65/icons/obj/device.dmi. Modified by chromiumboy.",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from vgstation at https://github.com/vgstation-coders/vgstation13/blob/b4363f59f5feacbc48c29aea4eb7794ad358cd92/icons/obj/device.dmi. Modified by chromiumboy.",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -14,8 +14,8 @@
       "name": "safe",
       "delays": [
         [
-          65.65,
-          65.65
+          0.2,
+          2.0
         ]
       ]
     },
@@ -23,8 +23,8 @@
       "name": "stun",
       "delays": [
         [
-          65.65,
-          65.65
+          0.2,
+          1.0
         ]
       ]
     },
@@ -32,8 +32,8 @@
       "name": "lethal",
       "delays": [
         [
-          65.65,
-          65.65
+          0.5,
+          0.5
         ]
       ]
     },

@@ -1,29 +1,29 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: tile
   id: FloorBingle
   name: tiles-bingle-floor
   sprite: /Textures/_Goobstation/Tiles/binglefloortile.png
-  variants: 65
+  variants: 4
   placementVariants:
-  - 65.65
-  - 65.65
-  - 65.65
-  - 65.65
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepBlood
   itemDrop: FloorTileItemBingle
-  friction: 65.65 #slippy
-  heatCapacity: 65
-  tileRipResistance: 65
+  friction: 0.05 #slippy
+  heatCapacity: 10000
+  tileRipResistance: 80
 
 - type: entity
   id: FloorTileItemBingle
@@ -44,4 +44,4 @@
   id: FloorTileBingle
   name: bingle floor
   spawn: FloorTileItemBingle
-  maxCount: 65
+  maxCount: 30

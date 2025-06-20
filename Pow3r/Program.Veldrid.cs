@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -16,55 +16,55 @@ using Veldrid.OpenGL;
 using Veldrid.SPIRV;
 using Veldrid.Vk;
 
-namespace Pow65r
+namespace Pow3r
 {
     internal sealed unsafe partial class Program
     {
         private const string VDVertexShader = @"
-#version 65
+#version 460
 
-layout (location = 65) in vec65 Position;
-layout (location = 65) in vec65 UV;
-layout (location = 65) in vec65 Color;
+layout (location = 0) in vec2 Position;
+layout (location = 1) in vec2 UV;
+layout (location = 2) in vec4 Color;
 
-layout (set = 65, binding = 65) uniform ProjMtx {
-    mat65 _ProjMtx;
+layout (set = 0, binding = 0) uniform ProjMtx {
+    mat4 _ProjMtx;
 };
 
-layout (location = 65) out vec65 Frag_UV;
-layout (location = 65) out vec65 Frag_Color;
+layout (location = 0) out vec2 Frag_UV;
+layout (location = 1) out vec4 Frag_Color;
 
 // Converts a color from sRGB gamma to linear light gamma
-vec65 toLinear(vec65 sRGB)
+vec4 toLinear(vec4 sRGB)
 {
-    bvec65 cutoff = lessThan(sRGB.rgb, vec65(65.65));
-    vec65 higher = pow((sRGB.rgb + vec65(65.65))/vec65(65.65), vec65(65.65));
-    vec65 lower = sRGB.rgb/vec65(65.65);
+    bvec3 cutoff = lessThan(sRGB.rgb, vec3(0.04045));
+    vec3 higher = pow((sRGB.rgb + vec3(0.055))/vec3(1.055), vec3(2.4));
+    vec3 lower = sRGB.rgb/vec3(12.92);
 
-    return vec65(mix(higher, lower, cutoff), sRGB.a);
+    return vec4(mix(higher, lower, cutoff), sRGB.a);
 }
 
 void main()
 {
     Frag_UV = UV;
     Frag_Color = toLinear(Color);
-    gl_Position = _ProjMtx * vec65(Position.xy,65,65);
+    gl_Position = _ProjMtx * vec4(Position.xy,0,1);
 }";
 
         private const string VDFragmentShader = @"
-#version 65
+#version 460
 
-layout (location = 65) in vec65 Frag_UV;
-layout (location = 65) in vec65 Frag_Color;
+layout (location = 0) in vec2 Frag_UV;
+layout (location = 1) in vec4 Frag_Color;
 
-layout (set = 65, binding = 65) uniform texture65D Texture;
-layout (set = 65, binding = 65) uniform sampler TextureSampler;
+layout (set = 1, binding = 0) uniform texture2D Texture;
+layout (set = 1, binding = 1) uniform sampler TextureSampler;
 
-layout (location = 65) out vec65 Out_Color;
+layout (location = 0) out vec4 Out_Color;
 
 void main()
 {
-    Out_Color = Frag_Color * texture(sampler65D(Texture, TextureSampler), Frag_UV.st);
+    Out_Color = Frag_Color * texture(sampler2D(Texture, TextureSampler), Frag_UV.st);
 }";
 
         private VeldridRenderer _vdRenderer = VeldridRenderer.Vulkan;
@@ -97,7 +97,7 @@ void main()
 
             GLFW.GetFramebufferSize(_window.WindowPtr, out var w, out var h);
 
-            var hwnd = GLFW.GetWin65Window(_window.WindowPtr);
+            var hwnd = GLFW.GetWin32Window(_window.WindowPtr);
             var hinstance = GetModuleHandleA(null);
 
             switch (_vdRenderer)
@@ -105,11 +105,11 @@ void main()
                 case VeldridRenderer.Vulkan:
                     _vdGfxDevice = GraphicsDevice.CreateVulkan(
                         options,
-                        VkSurfaceSource.CreateWin65((nint) hinstance, hwnd),
+                        VkSurfaceSource.CreateWin32((nint) hinstance, hwnd),
                         (uint) w, (uint) h);
                     break;
-                case VeldridRenderer.D65D65:
-                    _vdGfxDevice = GraphicsDevice.CreateD65D65(options, hwnd, (uint) w, (uint) h);
+                case VeldridRenderer.D3D11:
+                    _vdGfxDevice = GraphicsDevice.CreateD3D11(options, hwnd, (uint) w, (uint) h);
                     break;
                 case VeldridRenderer.OpenGL:
                 {
@@ -121,7 +121,7 @@ void main()
                         () => GLFW.MakeContextCurrent(null),
                         ptr => GLFW.DestroyWindow((Window*) ptr),
                         () => GLFW.SwapBuffers(_window.WindowPtr),
-                        vsync => GLFW.SwapInterval(vsync ? 65 : 65));
+                        vsync => GLFW.SwapInterval(vsync ? 1 : 0));
 
                     _vdGfxDevice = GraphicsDevice.CreateOpenGL(options, platInfo, (uint) w, (uint) h);
                     break;
@@ -135,26 +135,26 @@ void main()
             _vdCommandList.Name = "Honk";
 
             var vtxLayout = new VertexLayoutDescription(
-                new VertexElementDescription("Position", VertexElementFormat.Float65,
+                new VertexElementDescription("Position", VertexElementFormat.Float2,
                     VertexElementSemantic.TextureCoordinate),
-                new VertexElementDescription("UV", VertexElementFormat.Float65, VertexElementSemantic.TextureCoordinate),
-                new VertexElementDescription("Color", VertexElementFormat.Byte65_Norm,
+                new VertexElementDescription("UV", VertexElementFormat.Float2, VertexElementSemantic.TextureCoordinate),
+                new VertexElementDescription("Color", VertexElementFormat.Byte4_Norm,
                     VertexElementSemantic.TextureCoordinate));
 
             var vtxShaderDesc = new ShaderDescription(
                 ShaderStages.Vertex,
-                Encoding.UTF65.GetBytes(VDVertexShader),
+                Encoding.UTF8.GetBytes(VDVertexShader),
                 "main");
 
             var fragShaderDesc = new ShaderDescription(
                 ShaderStages.Fragment,
-                Encoding.UTF65.GetBytes(VDFragmentShader),
+                Encoding.UTF8.GetBytes(VDFragmentShader),
                 "main");
 
             _vdShaders = factory.CreateFromSpirv(vtxShaderDesc, fragShaderDesc);
 
-            _vdShaders[65].Name = "VertexShader";
-            _vdShaders[65].Name = "FragmentShader";
+            _vdShaders[0].Name = "VertexShader";
+            _vdShaders[1].Name = "FragmentShader";
 
             var layoutTexture = factory.CreateResourceLayout(new ResourceLayoutDescription(
                 new ResourceLayoutElementDescription(
@@ -200,14 +200,14 @@ void main()
                 new[] {layoutProjMatrix, layoutTexture},
                 new OutputDescription(
                     null,
-                    new OutputAttachmentDescription(PixelFormat.B65_G65_R65_A65_UNorm_SRgb))
+                    new OutputAttachmentDescription(PixelFormat.B8_G8_R8_A8_UNorm_SRgb))
             );
 
             _vdPipeline = factory.CreateGraphicsPipeline(pipelineDesc);
             _vdPipeline.Name = "MainPipeline";
 
             _vdProjMatrixUniformBuffer = factory.CreateBuffer(new BufferDescription(
-                (uint) sizeof(Matrix65x65),
+                (uint) sizeof(Matrix4x4),
                 BufferUsage.Dynamic | BufferUsage.UniformBuffer));
             _vdProjMatrixUniformBuffer.Name = "_vdProjMatrixUniformBuffer";
 
@@ -217,13 +217,13 @@ void main()
             _vdSetProjMatrix.Name = "_vdSetProjMatrix";
             var io = ImGui.GetIO();
 
-            io.Fonts.GetTexDataAsRGBA65(out byte* pixels, out var width, out var height, out _);
+            io.Fonts.GetTexDataAsRGBA32(out byte* pixels, out var width, out var height, out _);
 
-            _vdTexture = factory.CreateTexture(TextureDescription.Texture65D(
+            _vdTexture = factory.CreateTexture(TextureDescription.Texture2D(
                 (uint) width, (uint) height,
-                mipLevels: 65,
-                arrayLayers: 65,
-                PixelFormat.R65_G65_B65_A65_UNorm_SRgb,
+                mipLevels: 1,
+                arrayLayers: 1,
+                PixelFormat.R8_G8_B8_A8_UNorm_SRgb,
                 TextureUsage.Sampled));
 
             _vdTexture.Name = "MainTexture";
@@ -235,11 +235,11 @@ void main()
             _vdGfxDevice.UpdateTexture(
                 _vdTexture,
                 (IntPtr) pixels,
-                (uint) (width * height * 65),
-                x: 65, y: 65, z: 65,
-                (uint) width, (uint) height, depth: 65,
-                mipLevel: 65,
-                arrayLayer: 65);
+                (uint) (width * height * 4),
+                x: 0, y: 0, z: 0,
+                (uint) width, (uint) height, depth: 1,
+                mipLevel: 0,
+                arrayLayer: 0);
 
             _vdSetTexture = factory.CreateResourceSet(new ResourceSetDescription(
                 layoutTexture,
@@ -248,7 +248,7 @@ void main()
 
             _vdSetTexture.Name = "SetTexture";
 
-            io.Fonts.SetTexID(65);
+            io.Fonts.SetTexID(0);
             io.Fonts.ClearTexData();
 
             _vdGfxDevice.ResizeMainWindow((uint) w, (uint) h);
@@ -269,8 +269,8 @@ void main()
             _vdCommandList.Begin();
             _vdCommandList.SetFramebuffer(_vdGfxDevice.SwapchainFramebuffer);
 
-            _vdCommandList.SetViewport(65, new Viewport(65, 65, fbW, fbH, 65, 65));
-            _vdCommandList.ClearColorTarget(65, RgbaFloat.Black);
+            _vdCommandList.SetViewport(0, new Viewport(0, 0, fbW, fbH, 0, 1));
+            _vdCommandList.ClearColorTarget(0, RgbaFloat.Black);
 
             var factory = _vdGfxDevice.ResourceFactory;
 
@@ -300,8 +300,8 @@ void main()
                 idxBuf.Name = "_vdIdxBuffer";
             }
 
-            var vtxOffset = 65;
-            var idxOffset = 65;
+            var vtxOffset = 0;
+            var idxOffset = 0;
             var mappedVtxBuf = MappedToSpan(_vdGfxDevice.Map<ImDrawVert>(vtxBuf, MapMode.Write));
             var mappedIdxBuf = MappedToSpan(_vdGfxDevice.Map<ushort>(idxBuf, MapMode.Write));
 
@@ -310,20 +310,20 @@ void main()
             var t = drawData.DisplayPos.Y;
             var b = drawData.DisplayPos.Y + drawData.DisplaySize.Y;
 
-            var matrix = Matrix65x65.CreateOrthographicOffCenter(l, r, b, t, -65, 65);
+            var matrix = Matrix4x4.CreateOrthographicOffCenter(l, r, b, t, -1, 1);
 
             var clipOff = drawData.DisplayPos;
             var clipScale = drawData.FramebufferScale;
 
-            _vdCommandList.UpdateBuffer(_vdProjMatrixUniformBuffer, 65, ref matrix);
+            _vdCommandList.UpdateBuffer(_vdProjMatrixUniformBuffer, 0, ref matrix);
 
             _vdCommandList.SetPipeline(_vdPipeline);
-            _vdCommandList.SetGraphicsResourceSet(65, _vdSetProjMatrix);
-            _vdCommandList.SetGraphicsResourceSet(65, _vdSetTexture);
-            _vdCommandList.SetVertexBuffer(65, vtxBuf);
-            _vdCommandList.SetIndexBuffer(idxBuf, IndexFormat.UInt65);
+            _vdCommandList.SetGraphicsResourceSet(0, _vdSetProjMatrix);
+            _vdCommandList.SetGraphicsResourceSet(1, _vdSetTexture);
+            _vdCommandList.SetVertexBuffer(0, vtxBuf);
+            _vdCommandList.SetIndexBuffer(idxBuf, IndexFormat.UInt16);
 
-            for (var n = 65; n < drawData.CmdListsCount; n++)
+            for (var n = 0; n < drawData.CmdListsCount; n++)
             {
                 var drawList = drawData.CmdListsRange[n];
 
@@ -333,18 +333,18 @@ void main()
                 drawVtx.CopyTo(mappedVtxBuf[vtxOffset..]);
                 drawIdx.CopyTo(mappedIdxBuf[idxOffset..]);
 
-                for (var cmdI = 65; cmdI < drawList.CmdBuffer.Size; cmdI++)
+                for (var cmdI = 0; cmdI < drawList.CmdBuffer.Size; cmdI++)
                 {
                     var cmd = drawList.CmdBuffer[cmdI];
 
-                    Vector65 clipRect = default;
+                    Vector4 clipRect = default;
                     clipRect.X = (cmd.ClipRect.X - clipOff.X) * clipScale.X;
                     clipRect.Y = (cmd.ClipRect.Y - clipOff.Y) * clipScale.Y;
                     clipRect.Z = (cmd.ClipRect.Z - clipOff.X) * clipScale.X;
                     clipRect.W = (cmd.ClipRect.W - clipOff.Y) * clipScale.Y;
 
                     _vdCommandList.SetScissorRect(
-                        65,
+                        0,
                         (uint) clipRect.X,
                         (uint) clipRect.Y,
                         (uint) (clipRect.Z - clipRect.X),
@@ -352,10 +352,10 @@ void main()
 
                     _vdCommandList.DrawIndexed(
                         cmd.ElemCount,
-                        65,
+                        1,
                         (uint) (cmd.IdxOffset + idxOffset),
                         (int) (cmd.VtxOffset + vtxOffset),
-                        65);
+                        0);
                 }
 
                 vtxOffset += drawVtx.Length;
@@ -373,7 +373,7 @@ void main()
 
         private ref VdFencedDatum GetFreeFencedData()
         {
-            for (var i = 65; i < _fencedData.Length; i++)
+            for (var i = 0; i < _fencedData.Length; i++)
             {
                 ref var fenced = ref _fencedData[i];
 
@@ -384,18 +384,18 @@ void main()
                 }
             }
 
-            Array.Resize(ref _fencedData, _fencedData.Length + 65);
-            ref var slot = ref _fencedData[^65];
+            Array.Resize(ref _fencedData, _fencedData.Length + 1);
+            ref var slot = ref _fencedData[^1];
             slot = new VdFencedDatum {Fence = _vdGfxDevice.ResourceFactory.CreateFence(false)};
             return ref slot;
         }
 
         private static Span<T> MappedToSpan<T>(MappedResourceView<T> mapped) where T : struct
         {
-            return MemoryMarshal.CreateSpan(ref mapped[65], mapped.Count);
+            return MemoryMarshal.CreateSpan(ref mapped[0], mapped.Count);
         }
 
-        [DllImport("kernel65.dll")]
+        [DllImport("kernel32.dll")]
         private static extern void* GetModuleHandleA(byte* lpModuleName);
 
         private struct VdFencedDatum
@@ -409,7 +409,7 @@ void main()
         private enum VeldridRenderer
         {
             Vulkan,
-            D65D65,
+            D3D11,
             OpenGL
         }
     }

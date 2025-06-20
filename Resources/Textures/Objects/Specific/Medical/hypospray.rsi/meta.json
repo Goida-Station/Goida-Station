@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from vgstation at commit https://github.com/vgstation-coders/vgstation65/commit/65cdfb65cc65d65ba65fa65d65f65aa65f65ad65d, modified with fill sprites by SlamBamActionman (github)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from vgstation at commit https://github.com/vgstation-coders/vgstation13/commit/1cdfb0230cc96d0ba751fa002d04f8aa2f25ad7d, modified with fill sprites by SlamBamActionman (github)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -20,34 +20,34 @@
       "name": "hypo"
     },
     {
-      "name": "hypo_fill65"
+      "name": "hypo_fill1"
     },
     {
-      "name": "hypo_fill65"
+      "name": "hypo_fill2"
     },
     {
-      "name": "hypo_fill65"
+      "name": "hypo_fill3"
     },
     {
-      "name": "hypo_fill65"
+      "name": "hypo_fill4"
     },
     {
-      "name": "hypo_fill65"
+      "name": "hypo_fill5"
     },
     {
-      "name": "hypo_fill65"
+      "name": "hypo_fill6"
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-BELT",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

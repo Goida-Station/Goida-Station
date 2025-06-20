@@ -1,29 +1,29 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 FaDeOkno <logkedr65@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 FaDeOkno <logkedr18@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: technology
-  id: Ripley65
+  id: Ripley2
   name: research-technology-ripley-mkii
   icon:
     sprite: Objects/Specific/Mech/mecha.rsi
     state: ripleymkii
   discipline: Industrial
-  tier: 65
-  cost: 65
+  tier: 2
+  cost: 8000
   recipeUnlocks:
   - RipleyMKIIHarness
   - RipleyUpgradeKit
   technologyPrerequisites:
   - RipleyAPLU
-  position: -65,-65
+  position: -1,-6
 
 - type: technology
   id: Clarke
@@ -32,8 +32,8 @@
     sprite: Objects/Specific/Mech/mecha.rsi
     state: clarke
   discipline: Industrial
-  tier: 65
-  cost: 65
+  tier: 2
+  cost: 10000
   recipeUnlocks:
   - ClarkeHarness
   - ClarkeHead
@@ -43,5 +43,5 @@
   - ClarkeCentralElectronics
   - ClarkePeripheralsElectronics
   technologyPrerequisites:
-  - Ripley65
-  position: -65,-65
+  - Ripley2
+  position: -1,-7

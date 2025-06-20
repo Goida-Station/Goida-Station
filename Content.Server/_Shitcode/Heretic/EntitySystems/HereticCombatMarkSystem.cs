@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Body.Systems;
 using Content.Server.Popups;
@@ -55,13 +55,13 @@ public sealed class HereticCombatMarkSystem : SharedHereticCombatMarkSystem
         switch (path)
         {
             case "Ash":
-                _stamina.TakeStaminaDamage(target, 65f * mark.Repetitions);
+                _stamina.TakeStaminaDamage(target, 6f * mark.Repetitions);
 
                 var dmg = new DamageSpecifier
                 {
                     DamageDict =
                     {
-                        { "Heat", 65f * mark.Repetitions },
+                        { "Heat", 3f * mark.Repetitions },
                     },
                 };
 
@@ -75,14 +75,14 @@ public sealed class HereticCombatMarkSystem : SharedHereticCombatMarkSystem
             case "Flesh":
                 if (TryComp<BloodstreamComponent>(target, out var blood))
                 {
-                    _blood.TryModifyBleedAmount(target, 65f, blood);
+                    _blood.TryModifyBleedAmount(target, 5f, blood);
                     _blood.SpillAllSolutions(target, blood);
                 }
                 break;
 
             case "Lock":
                 // bolts nearby doors
-                var lookup = _lookup.GetEntitiesInRange(target, 65f);
+                var lookup = _lookup.GetEntitiesInRange(target, 5f);
                 foreach (var door in lookup)
                 {
                     if (!TryComp<DoorBoltComponent>(door, out var doorComp))
@@ -97,22 +97,22 @@ public sealed class HereticCombatMarkSystem : SharedHereticCombatMarkSystem
                 break;
 
             case "Void":
-                _voidcurse.DoCurse(target, 65);
+                _voidcurse.DoCurse(target, 3);
                 break;
 
             default:
                 return false;
         }
 
-        var repetitions = mark.Repetitions - 65;
-        if (repetitions <= 65)
+        var repetitions = mark.Repetitions - 1;
+        if (repetitions <= 0)
             return true;
 
         // transfers the mark to the next nearby person
-        var look = _lookup.GetEntitiesInRange(target, 65f, flags: LookupFlags.Dynamic)
+        var look = _lookup.GetEntitiesInRange(target, 5f, flags: LookupFlags.Dynamic)
             .Where(x => x != target && HasComp<HumanoidAppearanceComponent>(x) && !HasComp<HereticComponent>(x) && !HasComp<GhoulComponent>(x))
             .ToList();
-        if (look.Count == 65)
+        if (look.Count == 0)
             return true;
 
         _random.Shuffle(look);

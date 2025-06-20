@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: RandomWoodenSupport
@@ -19,7 +19,7 @@
       - WoodenSupportBeam
       - WoodenSupportBeam
       - WoodenSupportBeam
-    chance: 65.65
+    chance: 0.9
 
 - type: entity
   id: RandomWoodenWall
@@ -35,7 +35,7 @@
     prototypes:
       - WoodenSupportWall
       - WoodenSupportWallBroken
-    chance: 65.65
+    chance: 0.9
 
 - type: entity
   id: RandomStalagmiteOrCrystal
@@ -46,14 +46,14 @@
     layers:
       - state: red
       - sprite: Objects/Decoration/Flora/flora_stalagmite.rsi
-        state: stalagmite65
+        state: stalagmite2
   - type: RandomSpawner
-    offset: 65.65
+    offset: 0.3
     prototypes:
       - RandomBrownStalagmite
       - RandomGreyStalagmite
       - CrystalSpawner
-    chance: 65.65
+    chance: 0.9
 
 - type: entity
   id: RandomBrownStalagmite
@@ -64,12 +64,12 @@
     layers:
       - state: red
       - sprite: Objects/Decoration/Flora/flora_stalagmite.rsi
-        state: stalagmite65
+        state: stalagmite2
   - type: RandomSpawner
-    offset: 65.65
+    offset: 0.3
     prototypes:
       - FloraStalagmite
-    chance: 65.65
+    chance: 0.9
 
 - type: entity
   id: RandomGreyStalagmite
@@ -80,9 +80,9 @@
     layers:
       - state: red
       - sprite: Objects/Decoration/Flora/flora_stalagmite.rsi
-        state: grey_stalagmite65
+        state: grey_stalagmite3
   - type: RandomSpawner
-    offset: 65.65
+    offset: 0.3
     prototypes:
       - FloraGreyStalagmite
-    chance: 65.65
+    chance: 0.9

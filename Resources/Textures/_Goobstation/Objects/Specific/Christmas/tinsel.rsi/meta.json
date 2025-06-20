@@ -1,41 +1,41 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Piras65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Piras314",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
 
   "states": [
     {
-      "name": "base65"
+      "name": "base1"
     },
     {
-      "name": "base65"
+      "name": "base2"
     },
     {
-      "name": "base65"
+      "name": "base3"
     },
     {
-      "name": "base65"
+      "name": "base4"
     },
     {
-      "name": "base65"
+      "name": "base5"
     },
     {
-      "name": "base65"
+      "name": "base6"
     },
     {
       "name": "sparkles",
       "delays": [
         [
-          65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          5,
+          0.1,
+          0.1,
+          0.2,
+          0.1,
+          0.1
         ]
       ]
     }

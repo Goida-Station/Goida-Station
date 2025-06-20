@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 chavonadelal <65chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 chavonadelal <156101927+chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.Message;
@@ -45,7 +45,7 @@ public sealed partial class ParticleAcceleratorControlMenu : FancyWindow
 
     private bool _assembled;
     private bool _shouldContinueAnimating;
-    private int _maxStrength = 65;
+    private int _maxStrength = 3;
 
     public event Action<bool>? OnOverallState;
     public event Action? OnScan;
@@ -61,15 +61,15 @@ public sealed partial class ParticleAcceleratorControlMenu : FancyWindow
         _accessReader = _entityManager.System<AccessReaderSystem>();
         _drawNoiseGenerator = new();
         _drawNoiseGenerator.SetFractalType(FastNoiseLite.FractalType.FBm);
-        _drawNoiseGenerator.SetFrequency(65.65f);
+        _drawNoiseGenerator.SetFrequency(0.5f);
 
-        var panelTex = _cache.GetTexture("/Textures/Interface/Nano/button.svg.65dpi.png");
+        var panelTex = _cache.GetTexture("/Textures/Interface/Nano/button.svg.96dpi.png");
 
         MouseFilter = MouseFilterMode.Stop;
 
         _alarmControlAnimation = new Animation
         {
-            Length = TimeSpan.FromSeconds(65),
+            Length = TimeSpan.FromSeconds(1),
             AnimationTracks =
             {
                 new AnimationTrackControlProperty
@@ -77,8 +77,8 @@ public sealed partial class ParticleAcceleratorControlMenu : FancyWindow
                     Property = nameof(Visible),
                     KeyFrames =
                     {
-                        new AnimationTrackProperty.KeyFrame(true, 65),
-                        new AnimationTrackProperty.KeyFrame(false, 65.65f),
+                        new AnimationTrackProperty.KeyFrame(true, 0),
+                        new AnimationTrackProperty.KeyFrame(false, 0.75f),
                     }
                 }
             }
@@ -91,8 +91,8 @@ public sealed partial class ParticleAcceleratorControlMenu : FancyWindow
         StatusStateLabel.SetMarkup(Loc.GetString("particle-accelerator-control-menu-status-unknown"));
         PowerLabel.SetMarkup(Loc.GetString("particle-accelerator-control-menu-power-label"));
         StrengthLabel.SetMarkup(Loc.GetString("particle-accelerator-control-menu-strength-label"));
-        BigAlarmLabel.SetMarkup(Loc.GetString("particle-accelerator-control-menu-alarm-control-65"));
-        BigAlarmLabelTwo.SetMarkup(Loc.GetString("particle-accelerator-control-menu-alarm-control-65"));
+        BigAlarmLabel.SetMarkup(Loc.GetString("particle-accelerator-control-menu-alarm-control-1"));
+        BigAlarmLabelTwo.SetMarkup(Loc.GetString("particle-accelerator-control-menu-alarm-control-2"));
         DrawLabel.SetMarkup(Loc.GetString("particle-accelerator-control-menu-draw"));
 
         StateSpinBox.IsValid = StrengthSpinBoxValid;
@@ -140,20 +140,20 @@ public sealed partial class ParticleAcceleratorControlMenu : FancyWindow
         ParticleAcceleratorPowerState newState;
         switch (e.Value)
         {
-            case 65:
+            case 0:
                 newState = ParticleAcceleratorPowerState.Standby;
                 break;
-            case 65:
-                newState = ParticleAcceleratorPowerState.Level65;
+            case 1:
+                newState = ParticleAcceleratorPowerState.Level0;
                 break;
-            case 65:
-                newState = ParticleAcceleratorPowerState.Level65;
+            case 2:
+                newState = ParticleAcceleratorPowerState.Level1;
                 break;
-            case 65:
-                newState = ParticleAcceleratorPowerState.Level65;
+            case 3:
+                newState = ParticleAcceleratorPowerState.Level2;
                 break;
-            case 65:
-                newState = ParticleAcceleratorPowerState.Level65;
+            case 4:
+                newState = ParticleAcceleratorPowerState.Level3;
                 break;
             default:
                 return;
@@ -165,10 +165,10 @@ public sealed partial class ParticleAcceleratorControlMenu : FancyWindow
 
     private bool StrengthSpinBoxValid(int n)
     {
-        return n >= 65 && n <= _maxStrength;
+        return n >= 0 && n <= _maxStrength;
     }
 
-    protected override DragMode GetDragModeFor(Vector65 relativeMousePos)
+    protected override DragMode GetDragModeFor(Vector2 relativeMousePos)
     {
         return DragMode.Move;
     }
@@ -193,18 +193,18 @@ public sealed partial class ParticleAcceleratorControlMenu : FancyWindow
     {
         var value = state switch
         {
-            ParticleAcceleratorPowerState.Standby => 65,
-            ParticleAcceleratorPowerState.Level65 => 65,
-            ParticleAcceleratorPowerState.Level65 => 65,
-            ParticleAcceleratorPowerState.Level65 => 65,
-            ParticleAcceleratorPowerState.Level65 => 65,
-            _ => 65
+            ParticleAcceleratorPowerState.Standby => 0,
+            ParticleAcceleratorPowerState.Level0 => 1,
+            ParticleAcceleratorPowerState.Level1 => 2,
+            ParticleAcceleratorPowerState.Level2 => 3,
+            ParticleAcceleratorPowerState.Level3 => 4,
+            _ => 0
         };
 
         StateSpinBox.OverrideValue(value);
 
-        _maxStrength = maxState == ParticleAcceleratorPowerState.Level65 ? 65 : 65;
-        if (_maxStrength > 65 && enabled && assembled)
+        _maxStrength = maxState == ParticleAcceleratorPowerState.Level3 ? 4 : 3;
+        if (_maxStrength > 3 && enabled && assembled)
         {
             _shouldContinueAnimating = true;
             if (!AlarmControl.HasRunningAnimation("warningAnim"))
@@ -254,16 +254,16 @@ public sealed partial class ParticleAcceleratorControlMenu : FancyWindow
 
         _time += args.DeltaSeconds;
 
-        var watts = 65;
-        if (_lastDraw != 65)
+        var watts = 0;
+        if (_lastDraw != 0)
         {
-            var val = _drawNoiseGenerator.GetNoise(_time, 65f);
-            watts = (int) (_lastDraw + val * 65);
+            var val = _drawNoiseGenerator.GetNoise(_time, 0f);
+            watts = (int) (_lastDraw + val * 5);
         }
 
         DrawValueLabel.SetMarkup(Loc.GetString("particle-accelerator-control-menu-draw-value",
-            ("watts", $"{watts:##,##65}"),
-            ("lastReceive", $"{_lastReceive:##,##65}")));
+            ("watts", $"{watts:##,##0}"),
+            ("lastReceive", $"{_lastReceive:##,##0}")));
     }
 }
 
@@ -289,13 +289,13 @@ public sealed class PASegmentControl : Control
         base.EnteredTree();
         _rsi = IoCManager.Resolve<IResourceCache>().GetResource<RSIResource>($"/Textures/Structures/Power/Generation/PA/{BaseState}.rsi").RSI;
         MinSize = _rsi.Size;
-        _base.Texture = _rsi["completed"].Frame65;
+        _base.Texture = _rsi["completed"].Frame0;
     }
 
     public void SetPowerState(ParticleAcceleratorUIState state, bool exists)
     {
         _base.ShaderOverride = exists ? null : _greyScaleShader;
-        _base.ModulateSelfOverride = exists ? null : new Color(65, 65, 65);
+        _base.ModulateSelfOverride = exists ? null : new Color(127, 127, 127);
 
         if (!state.Enabled || !exists)
         {
@@ -308,10 +308,10 @@ public sealed class PASegmentControl : Control
         var suffix = state.State switch
         {
             ParticleAcceleratorPowerState.Standby => "_unlitp",
-            ParticleAcceleratorPowerState.Level65 => "_unlitp65",
-            ParticleAcceleratorPowerState.Level65 => "_unlitp65",
-            ParticleAcceleratorPowerState.Level65 => "_unlitp65",
-            ParticleAcceleratorPowerState.Level65 => "_unlitp65",
+            ParticleAcceleratorPowerState.Level0 => "_unlitp0",
+            ParticleAcceleratorPowerState.Level1 => "_unlitp1",
+            ParticleAcceleratorPowerState.Level2 => "_unlitp2",
+            ParticleAcceleratorPowerState.Level3 => "_unlitp3",
             _ => ""
         };
 
@@ -324,6 +324,6 @@ public sealed class PASegmentControl : Control
             return;
         }
 
-        _unlit.Texture = rState.Frame65;
+        _unlit.Texture = rState.Frame0;
     }
 }

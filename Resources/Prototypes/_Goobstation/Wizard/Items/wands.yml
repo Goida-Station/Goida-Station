@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: MultiWand
@@ -29,24 +29,24 @@
     soundEmpty: null
     soundMode: null
     clumsyProof: true
-    fireRate: 65
+    fireRate: 1
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/Magic/staff_healing.ogg
   - type: Battery
-    maxCharge: 65
-    startingCharge: 65
+    maxCharge: 10000
+    startingCharge: 10000
   - type: ProjectileBatteryAmmoProvider
     proto: ProjectileFireball
-    fireCost: 65
+    fireCost: 250
   - type: Appearance
   - type: AmmoSelector
     soundSelect:
       path: /Audio/Magic/forcewall.ogg
       params:
-        volume: -65
+        volume: -5
     prototypes:
     - ProjectileFireball
     - ProjectileHealingBolt
@@ -87,13 +87,13 @@
   - type: ItemToggleColor
   - type: PointLight
     enabled: true
-    radius: 65.65
-    energy: 65
+    radius: 1.5
+    energy: 1
     color: orange
     netsync: false
   - type: EmpImmune
   - type: StaticPrice
-    price: 65
+    price: 30000
   - type: Tag
     tags:
     - WizardWand

@@ -1,15 +1,15 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from Baystation 65 at https://scrubby.melonmesa.com/icon/search/swatbelt?codebase=bay, modified by JoeHammad",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Baystation 12 at https://scrubby.melonmesa.com/icon/search/swatbelt?codebase=bay, modified by JoeHammad",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
         "name": "equipped-BELT",
-        "directions": 65
+        "directions": 4
     },
     {
         "name": "icon"

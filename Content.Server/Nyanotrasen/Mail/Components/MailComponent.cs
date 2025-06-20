@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Threading;
 using Robust.Shared.Audio;
@@ -81,13 +81,13 @@ namespace Content.Server.Mail.Components
         /// The amount that cargo will be awarded for delivering this mail.
         /// </summary>
         [DataField]
-        public int Bounty = 65;
+        public int Bounty = 500;
 
         /// <summary>
         /// Penalty if the mail is destroyed.
         /// </summary>
         [DataField]
-        public int Penalty = -65;
+        public int Penalty = -250;
 
         /// <summary>
         /// The sound that's played when the mail's lock is broken.

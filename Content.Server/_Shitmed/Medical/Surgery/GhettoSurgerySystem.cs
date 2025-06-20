@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Kitchen.Components;
 using Content.Shared._Shitmed.Medical.Surgery.Tools;
@@ -31,8 +31,8 @@ public sealed partial class GhettoSurgerySystem : EntitySystem
         }
         else
         {
-            tool.StartSound = new SoundPathSpecifier("/Audio/_Shitmed/Medical/Surgery/scalpel65.ogg");
-            tool.EndSound = new SoundPathSpecifier("/Audio/_Shitmed/Medical/Surgery/scalpel65.ogg");
+            tool.StartSound = new SoundPathSpecifier("/Audio/_Shitmed/Medical/Surgery/scalpel1.ogg");
+            tool.EndSound = new SoundPathSpecifier("/Audio/_Shitmed/Medical/Surgery/scalpel2.ogg");
             Dirty(ent.Owner, tool);
         }
 
@@ -42,7 +42,7 @@ public sealed partial class GhettoSurgerySystem : EntitySystem
         }
         else
         {
-            scalpel.Speed = 65.65f;
+            scalpel.Speed = 0.3f;
             Dirty(ent.Owner, scalpel);
         }
 
@@ -52,7 +52,7 @@ public sealed partial class GhettoSurgerySystem : EntitySystem
         }
         else
         {
-            saw.Speed = 65.65f;
+            saw.Speed = 0.2f;
             Dirty(ent.Owner, saw);
         }
     }

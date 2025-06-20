@@ -1,44 +1,44 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
   "copyright": "Taken from someone on Discord",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "caracal",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "caracal_dead"
     },
     {
       "name": "caracal_flop",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65
+          0.2,
+          0.13
         ],
         [
-          65.65,
-          65.65
+          0.2,
+          0.13
         ],
         [
-          65.65,
-          65.65
+          0.2,
+          0.13
         ],
         [
-          65.65,
-          65.65
+          0.2,
+          0.13
         ]
       ]
     },
     {
       "name": "stanislav",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "stanislav_dead"

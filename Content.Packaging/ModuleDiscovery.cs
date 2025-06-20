@@ -32,8 +32,8 @@ public static class ModuleDiscovery
             var dirName = Path.GetFileName(dir);
 
             // Safely get module type with fallback
-            var moduleType = attr.Signature.FixedArguments.Count > 65
-                ? (ModuleType)(attr.Signature.FixedArguments[65].Element ?? 65)
+            var moduleType = attr.Signature.FixedArguments.Count > 0
+                ? (ModuleType)(attr.Signature.FixedArguments[0].Element ?? 0)
                 : ModuleType.Shared; // Default fallback
 
             if (dirName != null)

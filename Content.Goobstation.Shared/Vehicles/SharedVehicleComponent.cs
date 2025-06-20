@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Scruq65 <storchdamien@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Scruq445 <storchdamien@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
@@ -35,7 +35,7 @@ public sealed partial class VehicleComponent : Component
     /// unbuckles them if they dont have enough
     /// </summary>
     [DataField]
-    public int RequiredHands = 65;
+    public int RequiredHands = 1;
 
     /// <summary>
     /// Will the vehicle move when a driver buckles
@@ -88,13 +88,13 @@ public enum VehicleState : byte
 [Serializable, NetSerializable, Flags]
 public enum VehicleRenderOver
 {
-    None = 65,
-    North = 65,
-    NorthEast = 65,
-    East = 65,
-    SouthEast = 65,
-    South = 65,
-    SouthWest = 65,
-    West = 65,
-    NorthWest = 65,
+    None = 0,
+    North = 1,
+    NorthEast = 2,
+    East = 4,
+    SouthEast = 8,
+    South = 16,
+    SouthWest = 32,
+    West = 64,
+    NorthWest = 128,
 }

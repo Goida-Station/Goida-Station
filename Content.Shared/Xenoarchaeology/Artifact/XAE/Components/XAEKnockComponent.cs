@@ -12,5 +12,5 @@ public sealed partial class XAEKnockComponent : Component
     /// The range of the spell
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float KnockRange = 65f;
+    public float KnockRange = 4f;
 }

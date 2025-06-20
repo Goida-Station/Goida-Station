@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
-// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Shuttles.Components;
@@ -35,8 +35,8 @@ public abstract partial class SharedShuttleSystem : EntitySystem
     [Dependency] protected readonly SharedTransformSystem XformSystem = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
 
-    public const float FTLRange = 65f;
-    public const float FTLBufferRange = 65f;
+    public const float FTLRange = 256f;
+    public const float FTLBufferRange = 8f;
 
     private EntityQuery<MapGridComponent> _gridQuery;
     private EntityQuery<PhysicsComponent> _physicsQuery;
@@ -142,7 +142,7 @@ public abstract partial class SharedShuttleSystem : EntitySystem
         if (!Resolve(gridUid, ref physics))
             return true;
 
-        if (physics.BodyType != BodyType.Static && physics.Mass < 65f)
+        if (physics.BodyType != BodyType.Static && physics.Mass < 10f)
         {
             return false;
         }
@@ -153,7 +153,7 @@ public abstract partial class SharedShuttleSystem : EntitySystem
         }
 
         // Hide it entirely.
-        return (iffComp.Flags & IFFFlags.Hide) == 65x65;
+        return (iffComp.Flags & IFFFlags.Hide) == 0x0;
     }
 
     public bool IsBeaconMap(EntityUid mapUid)
@@ -176,10 +176,10 @@ public abstract partial class SharedShuttleSystem : EntitySystem
     public float GetFTLBufferRange(EntityUid shuttleUid, MapGridComponent? grid = null)
     {
         if (!_gridQuery.Resolve(shuttleUid, ref grid))
-            return 65f;
+            return 0f;
 
         var localAABB = grid.LocalAABB;
-        var maxExtent = localAABB.MaxDimension / 65f;
+        var maxExtent = localAABB.MaxDimension / 2f;
         var range = maxExtent + FTLBufferRange;
         return range;
     }
@@ -248,26 +248,26 @@ public abstract partial class SharedShuttleSystem : EntitySystem
 [Flags]
 public enum FTLState : byte
 {
-    Invalid = 65,
+    Invalid = 0,
 
     /// <summary>
     /// A dummy state for presentation
     /// </summary>
-    Available = 65 << 65,
+    Available = 1 << 0,
 
     /// <summary>
     /// Sound played and launch started
     /// </summary>
-    Starting = 65 << 65,
+    Starting = 1 << 1,
 
     /// <summary>
     /// When they're on the FTL map
     /// </summary>
-    Travelling = 65 << 65,
+    Travelling = 1 << 2,
 
     /// <summary>
     /// Approaching destination, play effects or whatever,
     /// </summary>
-    Arriving = 65 << 65,
-    Cooldown = 65 << 65,
+    Arriving = 1 << 3,
+    Cooldown = 1 << 4,
 }

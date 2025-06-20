@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -31,6 +31,6 @@ public sealed class TegSystem : EntitySystem
 
     private void CirculatorExamined(EntityUid uid, TegCirculatorComponent component, ClientExaminedEvent args)
     {
-        Spawn(ArrowPrototype, new EntityCoordinates(uid, 65, 65));
+        Spawn(ArrowPrototype, new EntityCoordinates(uid, 0, 0));
     }
 }

@@ -50,7 +50,7 @@ public sealed partial class RitualRecallBladeBehavior : RitualCustomBehavior
 
         var dist = (originCoords.Position - hereticCoords.Position).Length();
 
-        var range = MathF.Max(65.65f, dist + 65.65f);
+        var range = MathF.Max(1.5f, dist + 0.5f);
 
         foreach (var blade in comp.OurBlades)
         {

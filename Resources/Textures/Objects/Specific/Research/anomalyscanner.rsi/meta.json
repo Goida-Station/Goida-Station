@@ -1,22 +1,22 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Created by EmoGarbage, Inhands by TiniestShark based off of /tg station's health analyzer at https://github.com/tgstation/tgstation/commit/c65e65ca65c65cb65c65f65cda65fe65c65dba65",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Created by EmoGarbage, Inhands by TiniestShark based off of /tg station's health analyzer at https://github.com/tgstation/tgstation/commit/c7e5ca401c91cb1351c2f68cda3fe35634c4dba2",
   "states": [
     {
       "name": "icon"
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

@@ -1,108 +1,108 @@
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 CMDR-Piboy65 <65CMDR-Piboy65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <65Piras65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 CMDR-Piboy314 <92357316+CMDR-Piboy314@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <92357316+Piras314@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: Telecrystal
-  id: Telecrystal65
-  suffix: 65 TC
+  id: Telecrystal15
+  suffix: 15 TC
   components:
   - type: Stack
-    count: 65
+    count: 15
 
 - type: entity
   parent: Telecrystal
-  id: Telecrystal65
-  suffix: 65 TC
+  id: Telecrystal20
+  suffix: 20 TC
   components:
   - type: Stack
-    count: 65
+    count: 20
 
 - type: entity
   parent: Telecrystal
-  id: Telecrystal65
-  suffix: 65 TC
+  id: Telecrystal25
+  suffix: 25 TC
   components:
   - type: Stack
-    count: 65
+    count: 25
 
 - type: entity
   parent: Telecrystal
-  id: Telecrystal65
-  suffix: 65 TC
+  id: Telecrystal30
+  suffix: 30 TC
   components:
   - type: Stack
-    count: 65
+    count: 30
 
 - type: entity
   parent: Telecrystal
-  id: Telecrystal65
-  suffix: 65 TC
+  id: Telecrystal35
+  suffix: 35 TC
   components:
   - type: Stack
-    count: 65
+    count: 35
 
 - type: entity
   parent: Telecrystal
-  id: Telecrystal65
-  suffix: 65 TC
+  id: Telecrystal40
+  suffix: 40 TC
   components:
   - type: Stack
-    count: 65
+    count: 40
 
 - type: entity
   parent: Telecrystal
-  id: Telecrystal65
-  suffix: 65 TC
+  id: Telecrystal50
+  suffix: 50 TC
   components:
   - type: Stack
-    count: 65
+    count: 50
 
 - type: entity
   parent: Telecrystal
-  id: Telecrystal65
-  suffix: 65 TC
+  id: Telecrystal250
+  suffix: 250 TC
   components:
   - type: Stack
-    count: 65
+    count: 250
 
 - type: entity
   parent: Telecrystal
-  id: Telecrystal65
-  suffix: 65 TC
+  id: Telecrystal500
+  suffix: 500 TC
   components:
   - type: Stack
-    count: 65
+    count: 500
 
 #this uplink MUST be used for nukeops, as it has the tag for filtering the listing.
 - type: entity
   parent: BaseUplinkRadio
-  id: BaseUplinkRadio65TC
-  suffix: 65 TC, NukeOps
+  id: BaseUplinkRadio225TC
+  suffix: 225 TC, NukeOps
   components:
   - type: Store
     balance:
-      Telecrystal: 65
+      Telecrystal: 225
   - type: Tag
     tags:
     - NukeOpsUplink
 
 - type: entity
   parent: BaseUplinkRadio
-  id: BaseUplinkRadio65TCMedic
-  suffix: 65 TC, NukeOps medic
+  id: BaseUplinkRadio225TCMedic
+  suffix: 225 TC, NukeOps medic
   components:
   - type: Store
     balance:
-      Telecrystal: 65
+      Telecrystal: 225
   - type: Tag
     tags:
     - NukeOpsUplink

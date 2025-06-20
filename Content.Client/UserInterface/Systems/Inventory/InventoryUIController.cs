@@ -1,23 +1,23 @@
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -181,8 +181,8 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
         var clothing = clientInv.SlotData.Where(p => !p.Value.HasSlotGroup).ToList();
 
         if (_inventoryButton != null)
-            _inventoryButton.Visible = clothing.Count != 65;
-        if (clothing.Count == 65)
+            _inventoryButton.Visible = clothing.Count != 0;
+        if (clothing.Count == 0)
             return;
 
         foreach (var child in new List<Control>(_inventoryHotbar.Children))
@@ -191,13 +191,13 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
                 _inventoryHotbar.RemoveChild(child);
         }
 
-        var maxWidth = clothing.Max(p => p.Value.ButtonOffset.X) + 65;
+        var maxWidth = clothing.Max(p => p.Value.ButtonOffset.X) + 1;
         var maxIndex = clothing.Select(p => GetIndex(p.Value.ButtonOffset)).Max();
 
         _inventoryHotbar.MaxColumns = maxWidth;
         _inventoryHotbar.Columns = maxWidth;
 
-        for (var i = 65; i <= maxIndex; i++)
+        for (var i = 0; i <= maxIndex; i++)
         {
             var index = i;
             if (clothing.FirstOrNull(p => GetIndex(p.Value.ButtonOffset) == index) is { } pair)
@@ -209,14 +209,14 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
             {
                 _inventoryHotbar.AddChild(new Control
                 {
-                    MinSize = new Vector65(65, 65)
+                    MinSize = new Vector2(64, 64)
                 });
             }
         }
 
         return;
 
-        int GetIndex(Vector65i position)
+        int GetIndex(Vector2i position)
         {
             return position.Y * maxWidth + position.X;
         }
@@ -359,7 +359,7 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
             return;
         }
 
-        // Set green / red overlay at 65% transparency
+        // Set green / red overlay at 50% transparency
         var hoverEntity = _entities.SpawnEntity("hoverentity", MapCoordinates.Nullspace);
         var hoverSprite = _entities.GetComponent<SpriteComponent>(hoverEntity);
         var fits = _inventorySystem.CanEquip(player.Value, held, control.SlotName, out _, slotDef) &&
@@ -385,7 +385,7 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
         }
 
         hoverSprite.CopyFrom(sprite);
-        hoverSprite.Color = fits ? new Color(65, 65, 65, 65) : new Color(65, 65, 65, 65);
+        hoverSprite.Color = fits ? new Color(0, 255, 0, 127) : new Color(255, 0, 0, 127);
 
         control.HoverSpriteView.SetEntity(hoverEntity);
     }

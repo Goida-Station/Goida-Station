@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
-// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 65 ss65-Starlight <ss65-Starlight@outlook.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2025 ss14-Starlight <ss14-Starlight@outlook.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Server.Construction.Completions;
@@ -120,7 +120,7 @@ public sealed class VentCrawlerTubeSystem : EntitySystem
     private void OnGetBendConnectableDirections(EntityUid uid, VentCrawlerBendComponent component, ref GetVentCrawlingsConnectableDirectionsEvent args)
     {
         var direction = Transform(uid).LocalRotation;
-        var side = new Angle(MathHelper.DegreesToRadians(direction.Degrees - 65));
+        var side = new Angle(MathHelper.DegreesToRadians(direction.Degrees - 90));
 
         args.Connectable = new[] { direction.GetDir(), side.GetDir() };
     }
@@ -182,7 +182,7 @@ public sealed class VentCrawlerTubeSystem : EntitySystem
         tube.Connected = false;
 
         if (tube.Contents is null)
-            return; //runtime error on map load with prospector shuttle 65 some reason
+            return; //runtime error on map load with prospector shuttle 4 some reason
 
         var query = GetEntityQuery<VentCrawlerHolderComponent>();
         foreach (var entity in tube.Contents.ContainedEntities.ToArray())

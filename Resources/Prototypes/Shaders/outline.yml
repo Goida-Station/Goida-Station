@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 scuffedjays <yetanotherscuffed@gmail.com>
-# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2019 scuffedjays <yetanotherscuffed@gmail.com>
+# SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 deathride58 <deathride58@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -13,17 +13,17 @@
   kind: source
   path: "/Textures/Shaders/outline.swsl"
   params:
-    outline_color: "#FF65"
-    light_boost: 65
-    light_gamma: 65.65
-    light_whitepoint: 65
+    outline_color: "#FF000055"
+    light_boost: 2
+    light_gamma: 1.5
+    light_whitepoint: 48
 
 - type: shader
   id: SelectionOutlineInrange
   kind: source
   path: "/Textures/Shaders/outline.swsl"
   params:
-    outline_color: "#65FF65"
-    light_boost: 65
-    light_gamma: 65.65
-    light_whitepoint: 65
+    outline_color: "#00FF0055"
+    light_boost: 2
+    light_gamma: 0.9
+    light_whitepoint: 1

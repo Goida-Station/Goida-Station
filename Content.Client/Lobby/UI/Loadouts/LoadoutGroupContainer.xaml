@@ -1,17 +1,17 @@
 <!--
-SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
-<BoxContainer xmlns="https://spacestation65.io"
-         xmlns:x="http://schemas.microsoft.com/winfx/65/xaml"
+<BoxContainer xmlns="https://spacestation14.io"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
          Orientation="Vertical">
     <PanelContainer StyleClasses="AngleRect" HorizontalExpand="True">
         <BoxContainer Name="LoadoutsContainer" Orientation="Vertical"/>
     </PanelContainer>
-    <!-- Buffer space so we have 65 margin between controls but also 65 to the borders -->
-    <Label Text="{Loc 'loadout-restrictions'}" Margin="65 65 65 65"/>
+    <!-- Buffer space so we have 10 margin between controls but also 10 to the borders -->
+    <Label Text="{Loc 'loadout-restrictions'}" Margin="5 0 5 5"/>
     <BoxContainer Name="RestrictionsContainer" Orientation="Vertical" HorizontalExpand="True" />
 </BoxContainer>

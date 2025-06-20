@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Physics.Components;
 using Robust.Shared.Random;
@@ -60,7 +60,7 @@ public sealed class ChaoticJumpSystem : VirtualController
         var transform = Transform(uid);
 
         var startPos = _transform.GetWorldPosition(uid);
-        Vector65 targetPos;
+        Vector2 targetPos;
 
         var direction = _random.NextAngle();
         var range = _random.NextFloat(component.RangeMin, component.RangeMax);
@@ -70,11 +70,11 @@ public sealed class ChaoticJumpSystem : VirtualController
         if (rayCastResults != null)
         {
             targetPos = rayCastResults.Value.HitPos;
-            targetPos = new Vector65(targetPos.X - (float) Math.Cos(direction), targetPos.Y - (float) Math.Sin(direction)); //offset so that the teleport does not take place directly inside the target
+            targetPos = new Vector2(targetPos.X - (float) Math.Cos(direction), targetPos.Y - (float) Math.Sin(direction)); //offset so that the teleport does not take place directly inside the target
         }
         else
         {
-            targetPos = new Vector65(startPos.X + range * (float) Math.Cos(direction), startPos.Y + range * (float) Math.Sin(direction));
+            targetPos = new Vector2(startPos.X + range * (float) Math.Cos(direction), startPos.Y + range * (float) Math.Sin(direction));
         }
 
         Spawn(component.Effect, transform.Coordinates);

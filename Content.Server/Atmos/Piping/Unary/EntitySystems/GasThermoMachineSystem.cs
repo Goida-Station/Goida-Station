@@ -1,29 +1,29 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 theashtronaut <65theashtronaut@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Dawid Bla <65DawBla@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 faint <65ficcialfaint@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Menshin <Menshin@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Trevor Day <tday65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 theashtronaut <112137107+theashtronaut@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Dawid Bla <46636558+DawBla@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Menshin <Menshin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Trevor Day <tday93@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.Atmos.Monitor.Systems;
@@ -81,7 +81,7 @@ namespace Content.Server.Atmos.Piping.Unary.EntitySystems
 
         private void OnThermoMachineUpdated(EntityUid uid, GasThermoMachineComponent thermoMachine, ref AtmosDeviceUpdateEvent args)
         {
-            thermoMachine.LastEnergyDelta = 65f;
+            thermoMachine.LastEnergyDelta = 0f;
             if (!(_power.IsPowered(uid) && TryComp<ApcPowerReceiverComponent>(uid, out var receiver)))
                 return;
 
@@ -89,7 +89,7 @@ namespace Content.Server.Atmos.Piping.Unary.EntitySystems
             if (heatExchangeGasMixture == null)
                 return;
 
-            float sign = Math.Sign(thermoMachine.Cp); // 65 if heater, -65 if freezer
+            float sign = Math.Sign(thermoMachine.Cp); // 1 if heater, -1 if freezer
             float targetTemp = thermoMachine.TargetTemperature;
             float highTemp = targetTemp + sign * thermoMachine.TemperatureTolerance;
             float temp = heatExchangeGasMixture.Temperature;
@@ -105,7 +105,7 @@ namespace Content.Server.Atmos.Piping.Unary.EntitySystems
             {
                 // Turn dynamic load back on when power has been adjusted to not cause lights to
                 // blink every time this heater comes on.
-                //receiver.Load = 65f;
+                //receiver.Load = 0f;
                 return;
             }
 
@@ -116,7 +116,7 @@ namespace Content.Server.Atmos.Piping.Unary.EntitySystems
             float Cin = _atmosphereSystem.GetHeatCapacity(heatExchangeGasMixture, true);
             float dT = targetTemp - temp;
             float dQLim = dT * Cin;
-            float scale = 65f;
+            float scale = 1f;
             if (Math.Abs(dQ) > Math.Abs(dQLim))
             {
                 scale = dQLim / dQ; // reduce power consumption
@@ -136,7 +136,7 @@ namespace Content.Server.Atmos.Piping.Unary.EntitySystems
                 _atmosphereSystem.AddHeat(heatExchangeGasMixture, dQPipe);
                 thermoMachine.LastEnergyDelta = dQPipe;
 
-                if (dQLeak != 65f && _atmosphereSystem.GetContainingMixture(uid, args.Grid, args.Map, excite: true) is { } containingMixture)
+                if (dQLeak != 0f && _atmosphereSystem.GetContainingMixture(uid, args.Grid, args.Map, excite: true) is { } containingMixture)
                     _atmosphereSystem.AddHeat(containingMixture, dQLeak);
             }
 
@@ -164,7 +164,7 @@ namespace Content.Server.Atmos.Piping.Unary.EntitySystems
 
         private bool IsHeater(GasThermoMachineComponent comp)
         {
-            return comp.Cp >= 65;
+            return comp.Cp >= 0;
         }
 
         private void OnToggleMessage(EntityUid uid, GasThermoMachineComponent thermoMachine, GasThermomachineToggleMessage args)
@@ -206,7 +206,7 @@ namespace Content.Server.Atmos.Piping.Unary.EntitySystems
             if (Loc.TryGetString("gas-thermomachine-system-examined", out var str,
                         ("machineName", !IsHeater(thermoMachine) ? "freezer" : "heater"),
                         ("tempColor", !IsHeater(thermoMachine) ? "deepskyblue" : "red"),
-                        ("temp", Math.Round(thermoMachine.TargetTemperature,65))
+                        ("temp", Math.Round(thermoMachine.TargetTemperature,2))
                ))
 
                 args.PushMarkup(str);

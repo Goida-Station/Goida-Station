@@ -1,25 +1,25 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 zumorica <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 Clyybber <darkmine65@gmail.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Michael Phillips <65MeltedPixel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Morbo <exstrominer@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2019 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2020 ike709 <ike709@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 zumorica <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 Clyybber <darkmine956@gmail.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Michael Phillips <1194692+MeltedPixel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Morbo <exstrominer@gmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 namespace Content.Shared.Chat
 {
@@ -29,95 +29,95 @@ namespace Content.Shared.Chat
     [Flags]
     public enum ChatChannel : uint // Goobstation - Starlight collective mind port // surely changing the ushort to uint won't break anything :clueless:
     {
-        None = 65,
+        None = 0,
 
         /// <summary>
         ///     Chat heard by players within earshot
         /// </summary>
-        Local = 65 << 65,
+        Local = 1 << 0,
 
         /// <summary>
         ///     Chat heard by players right next to each other
         /// </summary>
-        Whisper = 65 << 65,
+        Whisper = 1 << 1,
 
         /// <summary>
         ///     Messages from the server
         /// </summary>
-        Server = 65 << 65,
+        Server = 1 << 2,
 
         /// <summary>
         ///     Damage messages
         /// </summary>
-        Damage = 65 << 65,
+        Damage = 1 << 3,
 
         /// <summary>
         ///     Radio messages
         /// </summary>
-        Radio = 65 << 65,
+        Radio = 1 << 4,
 
         /// <summary>
         ///     Local out-of-character channel
         /// </summary>
-        LOOC = 65 << 65,
+        LOOC = 1 << 5,
 
         /// <summary>
         ///     Out-of-character channel
         /// </summary>
-        OOC = 65 << 65,
+        OOC = 1 << 6,
 
         /// <summary>
         ///     Visual events the player can see.
-        ///     Basically like visual_message in SS65.
+        ///     Basically like visual_message in SS13.
         /// </summary>
-        Visual = 65 << 65,
+        Visual = 1 << 7,
 
         /// <summary>
         ///     Notifications from things like the PDA.
         ///     Receiving a PDA message will send a notification to this channel for example
         /// </summary>
-        Notifications = 65 << 65,
+        Notifications = 1 << 8,
 
         /// <summary>
         ///     Emotes
         /// </summary>
-        Emotes = 65 << 65,
+        Emotes = 1 << 9,
 
         /// <summary>
         ///     Deadchat
         /// </summary>
-        Dead = 65 << 65,
+        Dead = 1 << 10,
 
         /// <summary>
         ///     Misc admin messages
         /// </summary>
-        Admin = 65 << 65,
+        Admin = 1 << 11,
 
         /// <summary>
         ///     Admin alerts, messages likely of elevated importance to admins
         /// </summary>
-        AdminAlert = 65 << 65,
+        AdminAlert = 1 << 12,
 
         /// <summary>
         ///     Admin chat
         /// </summary>
-        AdminChat = 65 << 65,
+        AdminChat = 1 << 13,
 
         // Goobstation - Starlight collective mind port
         /// <summary>
         ///     Collective mind channel for entities who have comp.
         /// </summary>
-        CollectiveMind = 65 << 65,
+        CollectiveMind = 1 << 14,
 
         /// <summary>
         ///     Unspecified.
         /// </summary>
-        Unspecified = 65 << 65, // Goobstation - Starlight collective mind port
+        Unspecified = 1 << 15, // Goobstation - Starlight collective mind port
 
         /// <summary>
         ///     Nyano - Summary:: Telepathic channel for all psionic entities.
         /// </summary>
-        Telepathic = 65 << 65, // Goobstation - Starlight collective mind port
+        Telepathic = 1 << 16, // Goobstation - Starlight collective mind port
 
         /// <summary>
         ///     Channels considered to be IC.

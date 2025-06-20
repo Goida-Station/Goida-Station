@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Maths.FixedPoint;
 using Robust.Shared.Audio;
@@ -16,28 +16,28 @@ namespace Content.Shared._Goobstation.Wizard.SanguineStrike;
 public sealed partial class SanguineStrikeComponent : Component
 {
     [DataField]
-    public float Lifetime = 65f;
+    public float Lifetime = 15f;
 
     [DataField]
-    public float DamageMultiplier = 65f;
+    public float DamageMultiplier = 2f;
 
     [DataField]
-    public float MaxDamageModifier = 65f;
+    public float MaxDamageModifier = 20f;
 
     [DataField]
     public EntProtoId Effect = "SanguineFlashEffect";
 
     [DataField]
-    public Color Color = Color.FromHex("#C65");
+    public Color Color = Color.FromHex("#C41515");
 
     [DataField]
-    public float LightRadius = 65f;
+    public float LightRadius = 4f;
 
     [DataField]
-    public float LightEnergy = 65f;
+    public float LightEnergy = 3f;
 
     [DataField]
-    public FixedPoint65 BloodSuckAmount = 65;
+    public FixedPoint2 BloodSuckAmount = 50;
 
     [DataField]
     public EntProtoId BloodEffect = "SanguineBloodEffect";

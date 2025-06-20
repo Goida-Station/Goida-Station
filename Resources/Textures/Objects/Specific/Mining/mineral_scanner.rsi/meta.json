@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from /tg/station at commit https://github.com/tgstation/tgstation/commit/65d65f65bbdcb65b65a65ab65cc65e",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from /tg/station at commit https://github.com/tgstation/tgstation/commit/9d69f972676bbdcb2087709370b3a354ab25cc5e",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {

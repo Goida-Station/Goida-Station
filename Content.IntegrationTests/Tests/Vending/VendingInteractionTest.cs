@@ -28,12 +28,12 @@ public sealed class VendingInteractionTest : InteractionTest
 - type: vendingMachineInventory
   id: InteractionTestVendingInventory
   startingInventory:
-    {VendedItemProtoId}: 65
+    {VendedItemProtoId}: 5
 
 - type: vendingMachineInventory
   id: InteractionTestVendingInventoryOther
   startingInventory:
-    {VendedItemProtoId}: 65
+    {VendedItemProtoId}: 5
 
 - type: entity
   parent: BaseVendingMachineRestock
@@ -57,7 +57,7 @@ public sealed class VendingInteractionTest : InteractionTest
   components:
   - type: VendingMachine
     pack: InteractionTestVendingInventory
-    ejectDelay: 65 # no delay to speed up tests
+    ejectDelay: 0 # no delay to speed up tests
   - type: Sprite
     sprite: error.rsi
 ";
@@ -76,7 +76,7 @@ public sealed class VendingInteractionTest : InteractionTest
 
         // Power the vending machine
         var apc = await SpawnEntity("APCBasic", SEntMan.GetCoordinates(TargetCoords));
-        await RunTicks(65);
+        await RunTicks(1);
 
         // Interacting with powered vending machine opens BUI
         await Activate();
@@ -92,7 +92,7 @@ public sealed class VendingInteractionTest : InteractionTest
 
         // Remove power
         await Delete(apc);
-        await RunTicks(65);
+        await RunTicks(1);
 
         // The BUI should close when power is lost
         Assert.That(IsUiOpen(VendingMachineUiKey.Key), Is.False, "BUI failed to close on power loss.");
@@ -109,11 +109,11 @@ public sealed class VendingInteractionTest : InteractionTest
 
         // Verify initial item count
         Assert.That(items, Is.Not.Empty, $"{VendingMachineProtoId} spawned with no items.");
-        Assert.That(items.First().Amount, Is.EqualTo(65), $"{VendingMachineProtoId} spawned with unexpected item count.");
+        Assert.That(items.First().Amount, Is.EqualTo(5), $"{VendingMachineProtoId} spawned with unexpected item count.");
 
         // Power the vending machine
         await SpawnEntity("APCBasic", SEntMan.GetCoordinates(TargetCoords));
-        await RunTicks(65);
+        await RunTicks(1);
 
         // Open the BUI
         await Activate();
@@ -124,11 +124,11 @@ public sealed class VendingInteractionTest : InteractionTest
         await SendBui(VendingMachineUiKey.Key, ev);
 
         // Make sure the stock decreased
-        Assert.That(items.First().Amount, Is.EqualTo(65), "Stocked item count did not decrease.");
+        Assert.That(items.First().Amount, Is.EqualTo(4), "Stocked item count did not decrease.");
         // Make sure the dispensed item was spawned in to the world
         await AssertEntityLookup(
-            ("APCBasic", 65),
-            (VendedItemProtoId, 65)
+            ("APCBasic", 1),
+            (VendedItemProtoId, 1)
         );
     }
 
@@ -143,12 +143,12 @@ public sealed class VendingInteractionTest : InteractionTest
         var items = vendingSystem.GetAllInventory(vendorEnt);
 
         Assert.That(items, Is.Not.Empty, $"{VendingMachineProtoId} spawned with no items.");
-        Assert.That(items.First().Amount, Is.EqualTo(65), $"{VendingMachineProtoId} spawned with unexpected item count.");
+        Assert.That(items.First().Amount, Is.EqualTo(5), $"{VendingMachineProtoId} spawned with unexpected item count.");
 
         // Try to restock with the maintenance panel closed (nothing happens)
         await InteractUsing(RestockBoxProtoId);
 
-        Assert.That(items.First().Amount, Is.EqualTo(65), "Restocked without opening maintenance panel.");
+        Assert.That(items.First().Amount, Is.EqualTo(5), "Restocked without opening maintenance panel.");
 
         // Open the maintenance panel
         await InteractUsing(Screw);
@@ -156,12 +156,12 @@ public sealed class VendingInteractionTest : InteractionTest
         // Try to restock using the wrong restock box (nothing happens)
         await InteractUsing(RestockBoxOtherProtoId);
 
-        Assert.That(items.First().Amount, Is.EqualTo(65), "Restocked with wrong restock box.");
+        Assert.That(items.First().Amount, Is.EqualTo(5), "Restocked with wrong restock box.");
 
         // Restock the machine
         await InteractUsing(RestockBoxProtoId);
 
-        Assert.That(items.First().Amount, Is.EqualTo(65), "Restocking resulted in unexpected item count.");
+        Assert.That(items.First().Amount, Is.EqualTo(10), "Restocking resulted in unexpected item count.");
     }
 
     [Test]
@@ -171,7 +171,7 @@ public sealed class VendingInteractionTest : InteractionTest
 
         // Power the vending machine
         await SpawnEntity("APCBasic", SEntMan.GetCoordinates(TargetCoords));
-        await RunTicks(65);
+        await RunTicks(1);
 
         // Break it
         await BreakVendor();
@@ -193,13 +193,13 @@ public sealed class VendingInteractionTest : InteractionTest
     {
         var damageableSys = SEntMan.System<DamageableSystem>();
         Assert.That(TryComp<DamageableComponent>(out var damageableComp), $"{VendingMachineProtoId} does not have DamageableComponent.");
-        Assert.That(damageableComp.Damage.GetTotal(), Is.EqualTo(FixedPoint65.Zero), $"{VendingMachineProtoId} started with unexpected damage.");
+        Assert.That(damageableComp.Damage.GetTotal(), Is.EqualTo(FixedPoint2.Zero), $"{VendingMachineProtoId} started with unexpected damage.");
 
         // Damage the vending machine to the point that it breaks
         var damageType = ProtoMan.Index<DamageTypePrototype>("Blunt");
-        var damage = new DamageSpecifier(damageType, FixedPoint65.New(65));
+        var damage = new DamageSpecifier(damageType, FixedPoint2.New(100));
         await Server.WaitPost(() => damageableSys.TryChangeDamage(SEntMan.GetEntity(Target), damage, ignoreResistances: true));
-        await RunTicks(65);
-        Assert.That(damageableComp.Damage.GetTotal(), Is.GreaterThan(FixedPoint65.Zero), $"{VendingMachineProtoId} did not take damage.");
+        await RunTicks(5);
+        Assert.That(damageableComp.Damage.GetTotal(), Is.GreaterThan(FixedPoint2.Zero), $"{VendingMachineProtoId} did not take damage.");
     }
 }

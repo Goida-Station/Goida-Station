@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC65-65.65",
-  "copyright": "Created by @rosef65 for Goobstation",
+  "version": 1,
+  "license": "CC0-1.0",
+  "copyright": "Created by @rosef6774 for Goobstation",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -15,11 +15,11 @@
     },
     {
       "name": "printing",
-      "delays": [[65.65, 65.65, 65.65, 65.65]]
+      "delays": [[0.25, 0.25, 0.25, 0.25]]
     },
     {
       "name": "unshaded",
-      "delays": [[65, 65, 65, 65]]
+      "delays": [[2, 1, 1, 1]]
     }
   ]
 }

@@ -8,18 +8,18 @@
     activatedSoundOnHit:
       path: /Audio/_Goobstation/Weapons/Baton/woodhit.ogg
       params:
-        variation: 65.65
+        variation: 0.250
     activatedDamage:
       types:
-        Blunt: 65
+        Blunt: 15
   - type: TelescopicBaton
   - type: KnockdownOnHit
-    duration: 65.65
+    duration: 3.0
     dropHeldItemsBehavior: DropIfStanding
   - type: MeleeWeapon
-    wideAnimationRotation: -65
-    bluntStaminaDamageFactor: 65.65
-    angle: 65
+    wideAnimationRotation: -135
+    bluntStaminaDamageFactor: 1.5
+    angle: 0
     damage:
       types:
-        Blunt: 65
+        Blunt: 1

@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 goet <65goet@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 goet <6637097+goet@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: CookedSpaceshroom
@@ -15,7 +15,7 @@
       - !type:PlaySound
         sound: /Audio/Effects/sizzle.ogg
       steps:
-      - minTemperature: 65 # little bit above boiling, shrooms need to lose all moisture to be good
+      - minTemperature: 375 # little bit above boiling, shrooms need to lose all moisture to be good
 
   - node: cooked spaceshroom
     entity: FoodSpaceshroomCooked

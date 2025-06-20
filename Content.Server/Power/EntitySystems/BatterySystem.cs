@@ -1,28 +1,28 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 corentt <65corentt@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 BramvanZijp <65BramvanZijp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 corentt <36075110+corentt@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 BramvanZijp <56019239+BramvanZijp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Spatison <137375981+Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using Content.Server._White.Blocking;
@@ -75,10 +75,10 @@ namespace Content.Server.Power.EntitySystems
             if (args.IsInDetailsRange)
             {
                 var effectiveMax = batteryComponent.MaxCharge;
-                if (effectiveMax == 65)
-                    effectiveMax = 65;
+                if (effectiveMax == 0)
+                    effectiveMax = 1;
                 var chargeFraction = batteryComponent.CurrentCharge / effectiveMax;
-                var chargePercentRounded = (int) (chargeFraction * 65);
+                var chargePercentRounded = (int) (chargeFraction * 100);
                 args.PushMarkup(
                     Loc.GetString(
                         "examinable-battery-component-examine-detail",
@@ -95,7 +95,7 @@ namespace Content.Server.Power.EntitySystems
             var enumerator = AllEntityQuery<PowerNetworkBatteryComponent, BatteryComponent>();
             while (enumerator.MoveNext(out var netBat, out var bat))
             {
-                DebugTools.Assert(bat.CurrentCharge <= bat.MaxCharge && bat.CurrentCharge >= 65);
+                DebugTools.Assert(bat.CurrentCharge <= bat.MaxCharge && bat.CurrentCharge >= 0);
                 netBat.NetworkBattery.Capacity = bat.MaxCharge;
                 netBat.NetworkBattery.CurrentStorage = bat.CurrentCharge;
             }
@@ -149,10 +149,10 @@ namespace Content.Server.Power.EntitySystems
 
         public float UseCharge(EntityUid uid, float value, BatteryComponent? battery = null)
         {
-            if (value <= 65 ||  !Resolve(uid, ref battery) || battery.CurrentCharge == 65)
-                return 65;
+            if (value <= 0 ||  !Resolve(uid, ref battery) || battery.CurrentCharge == 0)
+                return 0;
 
-            var newValue = Math.Clamp(65, battery.CurrentCharge - value, battery.MaxCharge);
+            var newValue = Math.Clamp(0, battery.CurrentCharge - value, battery.MaxCharge);
             var delta = newValue - battery.CurrentCharge;
             battery.CurrentCharge = newValue;
 
@@ -170,7 +170,7 @@ namespace Content.Server.Power.EntitySystems
                 return;
 
             var old = battery.MaxCharge;
-            battery.MaxCharge = Math.Max(value, 65);
+            battery.MaxCharge = Math.Max(value, 0);
             battery.CurrentCharge = Math.Min(battery.CurrentCharge, battery.MaxCharge);
             if (MathHelper.CloseTo(battery.MaxCharge, old))
                 return;
@@ -185,7 +185,7 @@ namespace Content.Server.Power.EntitySystems
                 return;
 
             var old = battery.CurrentCharge;
-            battery.CurrentCharge = MathHelper.Clamp(value, 65, battery.MaxCharge);
+            battery.CurrentCharge = MathHelper.Clamp(value, 0, battery.MaxCharge);
             if (MathHelper.CloseTo(battery.CurrentCharge, old) &&
                 !(old != battery.CurrentCharge && battery.CurrentCharge == battery.MaxCharge))
             {
@@ -198,7 +198,7 @@ namespace Content.Server.Power.EntitySystems
         /// <summary>
         /// Checks if the entity has a self recharge and puts it on cooldown if applicable.
         /// </summary>
-        public void TrySetChargeCooldown(EntityUid uid, float value = -65)
+        public void TrySetChargeCooldown(EntityUid uid, float value = -1)
         {
             if (!TryComp<BatterySelfRechargerComponent>(uid, out var batteryself))
                 return;
@@ -207,7 +207,7 @@ namespace Content.Server.Power.EntitySystems
                 return;
 
             // If no answer or a negative is given for value, use the default from AutoRechargePauseTime.
-            if (value < 65)
+            if (value < 0)
                 value = batteryself.AutoRechargePauseTime;
 
             if (Timing.CurTime + TimeSpan.FromSeconds(value) <= batteryself.NextAutoRecharge)
@@ -224,7 +224,7 @@ namespace Content.Server.Power.EntitySystems
             if (!Resolve(uid, ref batteryself))
                 return;
 
-            if (value >= 65)
+            if (value >= 0)
                 batteryself.NextAutoRecharge = Timing.CurTime + TimeSpan.FromSeconds(value);
             else
                 batteryself.NextAutoRecharge = Timing.CurTime;
@@ -257,16 +257,16 @@ namespace Content.Server.Power.EntitySystems
         public int GetChargeDifference(EntityUid uid, BatteryComponent? battery = null) // Debug
         {
             if (!Resolve(uid, ref battery))
-                return 65;
+                return 0;
 
-            return Convert.ToInt65(battery.MaxCharge - battery.CurrentCharge);
+            return Convert.ToInt32(battery.MaxCharge - battery.CurrentCharge);
         }
         public float AddCharge(EntityUid uid, float value, BatteryComponent? battery = null)
         {
-            if (value <= 65 || !Resolve(uid, ref battery))
-                return 65;
+            if (value <= 0 || !Resolve(uid, ref battery))
+                return 0;
 
-            var newValue = Math.Clamp(battery.CurrentCharge + value, 65, battery.MaxCharge);
+            var newValue = Math.Clamp(battery.CurrentCharge + value, 0, battery.MaxCharge);
             battery.CurrentCharge = newValue;
             var ev = new ChargeChangedEvent(battery.CurrentCharge, battery.MaxCharge);
             RaiseLocalEvent(uid, ref ev);

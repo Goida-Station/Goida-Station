@@ -1,15 +1,15 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
   "copyright": "https://gitlab.com/cmdevs/colonial-warfare/-/tree/dev/icons/mob/xenonids",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 48,
+    "y": 48
   },
   "states": [
     {
       "name": "running",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "sleeping"

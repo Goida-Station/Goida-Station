@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "https://github.com/ParadiseSS65/Paradise/commit/65e65cc65a65ea65a65dbbc65b65b65a65f65a and modified by EmoGarbage",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "https://github.com/ParadiseSS13/Paradise/commit/924e8cc949a40ea64a978656dbbc0b43b4a8f33a and modified by EmoGarbage",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,59 +12,59 @@
     },
     {
       "name": "head_f",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "head_m",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "l_arm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "l_foot",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "l_hand",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "l_leg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "r_arm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "r_foot",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "r_hand",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "r_leg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "chest_f",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "chest_m",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "groin_f",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "groin_m",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

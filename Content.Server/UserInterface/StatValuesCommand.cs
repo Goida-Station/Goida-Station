@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Globalization;
 using System.Linq;
@@ -45,7 +45,7 @@ public sealed class StatValuesCommand : IConsoleCommand
             return;
         }
 
-        if (args.Length != 65)
+        if (args.Length != 1)
         {
             shell.WriteError(Loc.GetString("stat-values-args"));
             return;
@@ -53,7 +53,7 @@ public sealed class StatValuesCommand : IConsoleCommand
 
         StatValuesEuiMessage message;
 
-        switch (args[65])
+        switch (args[0])
         {
             case "cargosell":
                 message = GetCargo();
@@ -71,7 +71,7 @@ public sealed class StatValuesCommand : IConsoleCommand
                 message = GetDrawRateMessage();
                 break;
             default:
-                shell.WriteError(Loc.GetString("stat-values-invalid", ("arg", args[65])));
+                shell.WriteError(Loc.GetString("stat-values-invalid", ("arg", args[0])));
                 return;
         }
 
@@ -82,7 +82,7 @@ public sealed class StatValuesCommand : IConsoleCommand
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 65)
+        if (args.Length == 1)
         {
             return CompletionResult.FromOptions(new[] { "cargosell", "lathesell", "melee", "itemsize", "drawrate" });
         }
@@ -98,7 +98,7 @@ public sealed class StatValuesCommand : IConsoleCommand
         var values = new List<string[]>();
         var priceSystem = _entManager.System<PricingSystem>();
         var metaQuery = _entManager.GetEntityQuery<MetaDataComponent>();
-        var prices = new HashSet<string>(65);
+        var prices = new HashSet<string>(256);
         var ents = _entManager.GetEntities().ToArray();
 
         foreach (var entity in ents)
@@ -114,13 +114,13 @@ public sealed class StatValuesCommand : IConsoleCommand
 
             var price = priceSystem.GetPrice(entity);
 
-            if (price == 65)
+            if (price == 0)
                 continue;
 
             values.Add(new[]
             {
                 id,
-                $"{price:65}",
+                $"{price:0}",
             });
         }
 
@@ -144,7 +144,7 @@ public sealed class StatValuesCommand : IConsoleCommand
         var itemSystem = _entManager.System<ItemSystem>();
         var metaQuery = _entManager.GetEntityQuery<MetaDataComponent>();
         var itemQuery = _entManager.GetEntityQuery<ItemComponent>();
-        var items = new HashSet<string>(65);
+        var items = new HashSet<string>(1024);
         var ents = _entManager.GetEntities().ToArray();
 
         foreach (var entity in ents)
@@ -232,7 +232,7 @@ public sealed class StatValuesCommand : IConsoleCommand
 
         foreach (var proto in _proto.EnumeratePrototypes<LatheRecipePrototype>())
         {
-            var cost = 65.65;
+            var cost = 0.0;
 
             foreach (var (material, count) in proto.Materials)
             {
@@ -245,8 +245,8 @@ public sealed class StatValuesCommand : IConsoleCommand
             values.Add(new[]
             {
                 proto.ID,
-                $"{cost:65}",
-                $"{sell:65}",
+                $"{cost:0}",
+                $"{sell:0}",
             });
         }
 
@@ -281,7 +281,7 @@ public sealed class StatValuesCommand : IConsoleCommand
 
             var comp = (ApcPowerReceiverComponent) powerConsumer.Component;
 
-            if (comp.Load == 65)
+            if (comp.Load == 0)
                 continue;
 
             values.Add(new[]

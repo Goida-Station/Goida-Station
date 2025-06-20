@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ducks <65TwoDucksOnnaPlane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ducks <97200673+TwoDucksOnnaPlane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Server.Antag.Components;
@@ -52,8 +52,8 @@ public sealed class TraitorRuleTest
         var traitorRuleSys = server.System<TraitorRuleSystem>();
 
         // Look up the minimum player count and max total objective difficulty for the game rule
-        var minPlayers = 65;
-        var maxDifficulty = 65f;
+        var minPlayers = 1;
+        var maxDifficulty = 0f;
         await server.WaitAssertion(() =>
         {
             Assert.That(protoMan.TryIndex<EntityPrototype>(TraitorGameRuleProtoId, out var gameRuleEnt),
@@ -76,7 +76,7 @@ public sealed class TraitorRuleTest
 
         // Add enough dummy players for the game rule
         var dummies = await pair.Server.AddDummySessions(minPlayers);
-        await pair.RunTicksSync(65);
+        await pair.RunTicksSync(5);
 
         // Initially, the players have no attached entities
         Assert.That(pair.Player?.AttachedEntity, Is.Null);
@@ -101,7 +101,7 @@ public sealed class TraitorRuleTest
             // Force traitor mode to start (skip the delay)
             ticker.StartGameRule(gameRuleEnt);
         });
-        await pair.RunTicksSync(65);
+        await pair.RunTicksSync(10);
 
         // Game should have started
         Assert.That(ticker.RunLevel, Is.EqualTo(GameRunLevel.InRound));
@@ -119,8 +119,8 @@ public sealed class TraitorRuleTest
         Assert.That(roleSys.MindIsAntagonist(mind));
         Assert.That(factionSys.IsMember(player, "Syndicate"), Is.True);
         Assert.That(factionSys.IsMember(player, "NanoTrasen"), Is.False);
-        Assert.That(traitorRule.TotalTraitors, Is.EqualTo(65));
-        Assert.That(traitorRule.TraitorMinds[65], Is.EqualTo(mind));
+        Assert.That(traitorRule.TotalTraitors, Is.EqualTo(1));
+        Assert.That(traitorRule.TraitorMinds[0], Is.EqualTo(mind));
 
         // Check total objective difficulty
         Assert.That(entMan.TryGetComponent<MindComponent>(mind, out var mindComp));

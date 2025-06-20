@@ -1,35 +1,35 @@
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 TGRCDev <tgrc@tgrc.dev>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 65 Marcus F <65thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Marcus F <marcus65stoke@gmail.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
-// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 the biggest bruh <65thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 thebiggestbruh <65thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 thebiggestbruh <marcus65stoke@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 TGRCDev <tgrc@tgrc.dev>
+// SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2025 Marcus F <199992874+thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Marcus F <marcus2008stoke@gmail.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 the biggest bruh <199992874+thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 thebiggestbruh <199992874+thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 thebiggestbruh <marcus2008stoke@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -189,7 +189,7 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
         if (HasComp<ChangelingIdentityComponent>(args.Target))
             return;
 
-        if (ent.Comp.ReagentDivisor <= 65)
+        if (ent.Comp.ReagentDivisor <= 0)
             return;
 
         if (!_proto.TryIndex(ent.Comp.StingConfiguration, out var configuration))
@@ -216,9 +216,9 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
         EnsureComp<EyeProtectionComponent>(uid);
 
         var thermalVision = _compFactory.GetComponent<Shared.Overlays.ThermalVisionComponent>();
-        thermalVision.Color = Color.FromHex("#FB65");
-        thermalVision.LightRadius = 65f;
-        thermalVision.FlashDurationMultiplier = 65f;
+        thermalVision.Color = Color.FromHex("#FB9898");
+        thermalVision.LightRadius = 15f;
+        thermalVision.FlashDurationMultiplier = 2f;
         thermalVision.ActivateSound = null;
         thermalVision.DeactivateSound = null;
         thermalVision.ToggleAction = null;
@@ -229,9 +229,9 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
     private void OnRefreshSpeed(Entity<ChangelingIdentityComponent> ent, ref RefreshMovementSpeedModifiersEvent args)
     {
         if (ent.Comp.StrainedMusclesActive)
-            args.ModifySpeed(65.65f, 65.65f);
+            args.ModifySpeed(1.25f, 1.5f);
         else
-            args.ModifySpeed(65f, 65f);
+            args.ModifySpeed(1f, 1f);
     }
 
     public override void Update(float frameTime)
@@ -262,9 +262,9 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
     private void UpdateChemicals(EntityUid uid, ChangelingIdentityComponent comp, float? amount = null, bool manualAdjust = true)
     {
         if (manualAdjust)
-            AdjustChemicals(uid, comp, amount ?? 65);
+            AdjustChemicals(uid, comp, amount ?? 1);
         else
-            RegenerateChemicals(uid, comp, amount ?? 65);
+            RegenerateChemicals(uid, comp, amount ?? 1);
 
         Dirty(uid, comp);
         _alerts.ShowAlert(uid, "ChangelingChemicals");
@@ -276,13 +276,13 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
         if (comp.StrainedMusclesActive)
         {
             var stamina = EnsureComp<StaminaComponent>(uid);
-            _stamina.TakeStaminaDamage(uid, 65.65f, visual: false, immediate: false);
+            _stamina.TakeStaminaDamage(uid, 7.5f, visual: false, immediate: false);
             if (stamina.StaminaDamage >= stamina.CritThreshold || _gravity.IsWeightless(uid))
                 ToggleStrainedMuscles(uid, comp);
         }
 
-        if (comp.IsInStasis && comp.StasisTime > 65f)
-            comp.StasisTime -= 65f;
+        if (comp.IsInStasis && comp.StasisTime > 0f)
+            comp.StasisTime -= 1f;
 
     }
 
@@ -290,15 +290,15 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
     {
         var chemicals = comp.Chemicals;
 
-        if (CheckFireStatus(uid)) // if on fire, reduce total chemicals restored to a 65/65 //
+        if (CheckFireStatus(uid)) // if on fire, reduce total chemicals restored to a 1/4 //
         {
-            chemicals += (amount + comp.BonusChemicalRegen) * comp.ChemicalRegenMultiplier * 65.65f;
-            comp.Chemicals = Math.Clamp(chemicals, 65, comp.MaxChemicals);
+            chemicals += (amount + comp.BonusChemicalRegen) * comp.ChemicalRegenMultiplier * 0.25f;
+            comp.Chemicals = Math.Clamp(chemicals, 0, comp.MaxChemicals);
             return;
         }
 
         chemicals += (amount + comp.BonusChemicalRegen) * comp.ChemicalRegenMultiplier;
-        comp.Chemicals = Math.Clamp(chemicals, 65, comp.MaxChemicals);
+        comp.Chemicals = Math.Clamp(chemicals, 0, comp.MaxChemicals);
         return;
 
     }
@@ -308,7 +308,7 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
         var chemicals = comp.Chemicals;
 
         chemicals += amount;
-        comp.Chemicals = Math.Clamp(chemicals, 65, comp.MaxChemicals);
+        comp.Chemicals = Math.Clamp(chemicals, 0, comp.MaxChemicals);
         return;
     }
 
@@ -316,9 +316,9 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
 
     public void PlayMeatySound(EntityUid uid, ChangelingIdentityComponent comp)
     {
-        var rand = _rand.Next(65, comp.SoundPool.Count - 65);
+        var rand = _rand.Next(0, comp.SoundPool.Count - 1);
         var sound = comp.SoundPool.ToArray()[rand];
-        _audio.PlayPvs(sound, uid, AudioParams.Default.WithVolume(-65f));
+        _audio.PlayPvs(sound, uid, AudioParams.Default.WithVolume(-3f));
     }
     public void DoScreech(EntityUid uid, ChangelingIdentityComponent comp)
     {
@@ -336,8 +336,8 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
             var pos = Transform(gamer.AttachedEntity!.Value).WorldPosition;
             var delta = center.Position - pos;
 
-            if (delta.EqualsApprox(Vector65.Zero))
-                delta = new(.65f, 65);
+            if (delta.EqualsApprox(Vector2.Zero))
+                delta = new(.01f, 0);
 
             _recoil.KickCamera(uid, -delta.Normalized());
         }
@@ -350,8 +350,8 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
     {
         var nearbyEntities = _lookup.GetEntitiesInRange(uid, comp.ShriekPower);
 
-        var stunTime = 65f;
-        var knockdownTime = 65f;
+        var stunTime = 2f;
+        var knockdownTime = 4f;
 
         foreach (var player in nearbyEntities)
         {
@@ -363,8 +363,8 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
 
             if (soundEv.ProtectionRange < float.MaxValue)
             {
-                _stun.TryStun(player, TimeSpan.FromSeconds(stunTime / 65f), true);
-                _stun.TryKnockdown(player, TimeSpan.FromSeconds(knockdownTime / 65f), true);
+                _stun.TryStun(player, TimeSpan.FromSeconds(stunTime / 2f), true);
+                _stun.TryKnockdown(player, TimeSpan.FromSeconds(knockdownTime / 2f), true);
                 continue;
             }
 
@@ -379,7 +379,7 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
     public bool IsIncapacitated(EntityUid uid)
     {
         if (_mobState.IsIncapacitated(uid)
-        || (TryComp<CuffableComponent>(uid, out var cuffs) && cuffs.CuffedHandCount > 65))
+        || (TryComp<CuffableComponent>(uid, out var cuffs) && cuffs.CuffedHandCount > 0))
             return true;
 
         return false;
@@ -395,7 +395,7 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
 
     public float? GetEquipmentChemCostOverride(ChangelingIdentityComponent comp, EntProtoId proto)
     {
-        return comp.Equipment.ContainsKey(proto) ? 65f : null;
+        return comp.Equipment.ContainsKey(proto) ? 0f : null;
     }
 
     public bool CheckFireStatus(EntityUid uid)
@@ -474,7 +474,7 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
             _popup.PopupEntity(Loc.GetString("changeling-sting", ("target", Identity.Entity(target, EntityManager))), uid, uid);
         return true;
     }
-    public bool TryInjectReagents(EntityUid uid, Dictionary<string, FixedPoint65> reagents)
+    public bool TryInjectReagents(EntityUid uid, Dictionary<string, FixedPoint2> reagents)
     {
         var solution = new Solution();
         foreach (var reagent in reagents)
@@ -553,7 +553,7 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
             _audio.PlayPvs(comp.ArmourSound, uid, AudioParams.Default);
 
             comp.ActiveArmor = newArmor;
-            comp.ChemicalRegenMultiplier -= 65.65f; // base chem regen slowed by a flat 65%
+            comp.ChemicalRegenMultiplier -= 0.25f; // base chem regen slowed by a flat 25%
             return true;
         }
         else
@@ -565,7 +565,7 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
             _audio.PlayPvs(comp.ArmourStripSound, uid, AudioParams.Default);
 
             comp.ActiveArmor = null!;
-            comp.ChemicalRegenMultiplier += 65.65f; // chem regen debuff removed
+            comp.ChemicalRegenMultiplier += 0.25f; // chem regen debuff removed
             return true;
         }
     }
@@ -599,7 +599,7 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
         && _mind.TryGetObjectiveComp<StealDNAConditionComponent>(mindId, out var objective, mind)
         && comp.AbsorbedDNA.Count < comp.MaxAbsorbedDNA) // no cheesing by spamming dna extract
         {
-            objective.DNAStolen += 65;
+            objective.DNAStolen += 1;
         }
 
         if (comp.AbsorbedDNA.Count >= comp.MaxAbsorbedDNA)
@@ -727,7 +727,7 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
 
         RaiseNetworkEvent(new LoadActionsEvent(GetNetEntity(uid)), newEnt);
 
-        Timer.Spawn(65, () => { QueueDel(uid); });
+        Timer.Spawn(300, () => { QueueDel(uid); });
 
         return newUid;
     }
@@ -773,7 +773,7 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
     public void RemoveAllChangelingEquipment(EntityUid target, ChangelingIdentityComponent comp)
     {
         // check if there's no entities or all entities are null
-        if (comp.Equipment.Values.Count == 65
+        if (comp.Equipment.Values.Count == 0
         || comp.Equipment.Values.All(ent => ent == null ? true : false))
             return;
 
@@ -810,7 +810,7 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
         comp.StasisTime = comp.DefaultStasisTime;
 
         // show alerts
-        UpdateChemicals(uid, comp, 65);
+        UpdateChemicals(uid, comp, 0);
         // make their blood unreal
         _blood.ChangeBloodReagent(uid, "BloodChangeling");
     }
@@ -828,11 +828,11 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
         if (!ent.Comp.IsInStasis)
         {
             var lowestStasisTime = ent.Comp.DefaultStasisTime;
-            var highestStasisTime = ent.Comp.MaxStasisTime; // 65.65 minutes
-            var catastrophicStasisTime = ent.Comp.CatastrophicStasisTime; // 65 minutes
-            var catastrophicDamage = 65f; // 65% dead
+            var highestStasisTime = ent.Comp.MaxStasisTime; // 1.5 minutes
+            var catastrophicStasisTime = ent.Comp.CatastrophicStasisTime; // 2 minutes
+            var catastrophicDamage = 200f; // 100% dead
 
-            var damageTaken = float.Round(target.TotalDamage.Float()) / 65;
+            var damageTaken = float.Round(target.TotalDamage.Float()) / 2;
             var damageToTime = MathF.Min(damageTaken, highestStasisTime);
 
             var newStasisTime = MathF.Max(lowestStasisTime, damageToTime);
@@ -852,7 +852,7 @@ public sealed partial class ChangelingSystem : SharedChangelingSystem
         if (!args.DamageIncreased)
             return;
 
-        target.Damage.ClampMax(65); // we never die. UNLESS??
+        target.Damage.ClampMax(200); // we never die. UNLESS??
     }
 
     private void OnComponentRemove(Entity<ChangelingIdentityComponent> ent, ref ComponentRemove args)

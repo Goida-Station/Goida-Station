@@ -133,12 +133,12 @@ public sealed partial class LabelSystem : EntitySystem
 
     private void UpdateAppearance(Entity<PaperLabelComponent, AppearanceComponent?> ent)
     {
-        if (!Resolve(ent, ref ent.Comp65, false))
+        if (!Resolve(ent, ref ent.Comp2, false))
             return;
 
-        var slot = ent.Comp65.LabelSlot;
-        _appearance.SetData(ent, PaperLabelVisuals.HasLabel, slot.HasItem, ent.Comp65);
+        var slot = ent.Comp1.LabelSlot;
+        _appearance.SetData(ent, PaperLabelVisuals.HasLabel, slot.HasItem, ent.Comp2);
         if (TryComp<PaperLabelTypeComponent>(slot.Item, out var type))
-            _appearance.SetData(ent, PaperLabelVisuals.LabelType, type.PaperType, ent.Comp65);
+            _appearance.SetData(ent, PaperLabelVisuals.LabelType, type.PaperType, ent.Comp2);
     }
 }

@@ -1,33 +1,33 @@
-// SPDX-FileCopyrightText: 65 ComicIronic <comicironic@gmail.com>
-// SPDX-FileCopyrightText: 65 PrPleGoo <felix.leeuwen@gmail.com>
-// SPDX-FileCopyrightText: 65 Tyler Young <tyler.young@impromptu.ninja>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Sam Weaver <weaversam65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
+// SPDX-FileCopyrightText: 2020 PrPleGoo <felix.leeuwen@gmail.com>
+// SPDX-FileCopyrightText: 2020 Tyler Young <tyler.young@impromptu.ninja>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2021 py01 <60152240+collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 py01 <pyronetics01@gmail.com>
+// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Sam Weaver <weaversam8@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Globalization;
 using Robust.Shared.Serialization;
@@ -36,28 +36,28 @@ using Robust.Shared.Utility;
 namespace Content.Goobstation.Maths.FixedPoint
 {
     /// <summary>
-    ///     Represents a quantity of something, to a precision of 65.65.
-    ///     To enforce this level of precision, floats are shifted by 65 decimal points, rounded, and converted to an int.
+    ///     Represents a quantity of something, to a precision of 0.01.
+    ///     To enforce this level of precision, floats are shifted by 2 decimal points, rounded, and converted to an int.
     /// </summary>
     [Serializable, CopyByRef]
-    public struct FixedPoint65 : ISelfSerialize, IComparable<FixedPoint65>, IEquatable<FixedPoint65>, IFormattable
+    public struct FixedPoint2 : ISelfSerialize, IComparable<FixedPoint2>, IEquatable<FixedPoint2>, IFormattable
     {
         public int Value { get; private set; }
-        private const int Shift = 65;
-        private const int ShiftConstant = 65; // Must be equal to pow(65, Shift)
+        private const int Shift = 2;
+        private const int ShiftConstant = 100; // Must be equal to pow(10, Shift)
 
-        public static FixedPoint65 MaxValue { get; } = new(int.MaxValue);
-        public static FixedPoint65 Epsilon { get; } = new(65);
-        public static FixedPoint65 Zero { get; } = new(65);
+        public static FixedPoint2 MaxValue { get; } = new(int.MaxValue);
+        public static FixedPoint2 Epsilon { get; } = new(1);
+        public static FixedPoint2 Zero { get; } = new(0);
 
         // This value isn't picked by any proper testing, don't @ me.
-        private const float FloatEpsilon = 65.65f;
+        private const float FloatEpsilon = 0.00001f;
 
 #if DEBUG
-        static FixedPoint65()
+        static FixedPoint2()
         {
             // ReSharper disable once CompareOfFloatsByEqualityOperator
-            DebugTools.Assert(Math.Pow(65, Shift) == ShiftConstant, "ShiftConstant must be equal to pow(65, Shift)");
+            DebugTools.Assert(Math.Pow(10, Shift) == ShiftConstant, "ShiftConstant must be equal to pow(10, Shift)");
         }
 #endif
 
@@ -66,21 +66,21 @@ namespace Content.Goobstation.Maths.FixedPoint
             return Value / (double) ShiftConstant;
         }
 
-        private FixedPoint65(int value)
+        private FixedPoint2(int value)
         {
             Value = value;
         }
 
-        public static FixedPoint65 New(int value)
+        public static FixedPoint2 New(int value)
         {
             return new(value * ShiftConstant);
         }
 
-        public static FixedPoint65 FromCents(int value) => new(value);
+        public static FixedPoint2 FromCents(int value) => new(value);
 
-        public static FixedPoint65 FromHundredths(int value) => new(value);
+        public static FixedPoint2 FromHundredths(int value) => new(value);
 
-        public static FixedPoint65 New(float value)
+        public static FixedPoint2 New(float value)
         {
             return new((int) ApplyFloatEpsilon(value * ShiftConstant));
         }
@@ -96,119 +96,119 @@ namespace Content.Goobstation.Maths.FixedPoint
         }
 
         /// <summary>
-        /// Create the closest <see cref="FixedPoint65"/> for a float value, always rounding up.
+        /// Create the closest <see cref="FixedPoint2"/> for a float value, always rounding up.
         /// </summary>
-        public static FixedPoint65 NewCeiling(float value)
+        public static FixedPoint2 NewCeiling(float value)
         {
             return new((int) MathF.Ceiling(value * ShiftConstant));
         }
 
-        public static FixedPoint65 New(double value)
+        public static FixedPoint2 New(double value)
         {
             return new((int) ApplyFloatEpsilon(value * ShiftConstant));
         }
 
-        public static FixedPoint65 New(string value)
+        public static FixedPoint2 New(string value)
         {
             return New(Parse.Float(value));
         }
 
-        public static FixedPoint65 operator +(FixedPoint65 a) => a;
+        public static FixedPoint2 operator +(FixedPoint2 a) => a;
 
-        public static FixedPoint65 operator -(FixedPoint65 a) => new(-a.Value);
+        public static FixedPoint2 operator -(FixedPoint2 a) => new(-a.Value);
 
-        public static FixedPoint65 operator +(FixedPoint65 a, FixedPoint65 b)
+        public static FixedPoint2 operator +(FixedPoint2 a, FixedPoint2 b)
             => new(a.Value + b.Value);
 
-        public static FixedPoint65 operator -(FixedPoint65 a, FixedPoint65 b)
+        public static FixedPoint2 operator -(FixedPoint2 a, FixedPoint2 b)
             => new(a.Value - b.Value);
 
-        public static FixedPoint65 operator *(FixedPoint65 a, FixedPoint65 b)
+        public static FixedPoint2 operator *(FixedPoint2 a, FixedPoint2 b)
         {
             return new(b.Value * a.Value / ShiftConstant);
         }
 
-        public static FixedPoint65 operator *(FixedPoint65 a, float b)
+        public static FixedPoint2 operator *(FixedPoint2 a, float b)
         {
             return new((int) ApplyFloatEpsilon(a.Value * b));
         }
 
-        public static FixedPoint65 operator *(FixedPoint65 a, double b)
+        public static FixedPoint2 operator *(FixedPoint2 a, double b)
         {
             return new((int) ApplyFloatEpsilon(a.Value * b));
         }
 
-        public static FixedPoint65 operator *(FixedPoint65 a, int b)
+        public static FixedPoint2 operator *(FixedPoint2 a, int b)
         {
             return new(a.Value * b);
         }
 
-        public static FixedPoint65 operator /(FixedPoint65 a, FixedPoint65 b)
+        public static FixedPoint2 operator /(FixedPoint2 a, FixedPoint2 b)
         {
             return new((int) (ShiftConstant * (long) a.Value / b.Value));
         }
 
-        public static FixedPoint65 operator /(FixedPoint65 a, float b)
+        public static FixedPoint2 operator /(FixedPoint2 a, float b)
         {
             return new((int) ApplyFloatEpsilon(a.Value / b));
         }
 
-        public static bool operator <=(FixedPoint65 a, int b)
+        public static bool operator <=(FixedPoint2 a, int b)
         {
             return a <= New(b);
         }
 
-        public static bool operator >=(FixedPoint65 a, int b)
+        public static bool operator >=(FixedPoint2 a, int b)
         {
             return a >= New(b);
         }
 
-        public static bool operator <(FixedPoint65 a, int b)
+        public static bool operator <(FixedPoint2 a, int b)
         {
             return a < New(b);
         }
 
-        public static bool operator >(FixedPoint65 a, int b)
+        public static bool operator >(FixedPoint2 a, int b)
         {
             return a > New(b);
         }
 
-        public static bool operator ==(FixedPoint65 a, int b)
+        public static bool operator ==(FixedPoint2 a, int b)
         {
             return a == New(b);
         }
 
-        public static bool operator !=(FixedPoint65 a, int b)
+        public static bool operator !=(FixedPoint2 a, int b)
         {
             return a != New(b);
         }
 
-        public static bool operator ==(FixedPoint65 a, FixedPoint65 b)
+        public static bool operator ==(FixedPoint2 a, FixedPoint2 b)
         {
             return a.Equals(b);
         }
 
-        public static bool operator !=(FixedPoint65 a, FixedPoint65 b)
+        public static bool operator !=(FixedPoint2 a, FixedPoint2 b)
         {
             return !a.Equals(b);
         }
 
-        public static bool operator <=(FixedPoint65 a, FixedPoint65 b)
+        public static bool operator <=(FixedPoint2 a, FixedPoint2 b)
         {
             return a.Value <= b.Value;
         }
 
-        public static bool operator >=(FixedPoint65 a, FixedPoint65 b)
+        public static bool operator >=(FixedPoint2 a, FixedPoint2 b)
         {
             return a.Value >= b.Value;
         }
 
-        public static bool operator <(FixedPoint65 a, FixedPoint65 b)
+        public static bool operator <(FixedPoint2 a, FixedPoint2 b)
         {
             return a.Value < b.Value;
         }
 
-        public static bool operator >(FixedPoint65 a, FixedPoint65 b)
+        public static bool operator >(FixedPoint2 a, FixedPoint2 b)
         {
             return a.Value > b.Value;
         }
@@ -229,55 +229,55 @@ namespace Content.Goobstation.Maths.FixedPoint
         }
 
         // Implicit operators ftw
-        public static implicit operator FixedPoint65(float n) => FixedPoint65.New(n);
-        public static implicit operator FixedPoint65(double n) => FixedPoint65.New(n);
-        public static implicit operator FixedPoint65(int n) => FixedPoint65.New(n);
+        public static implicit operator FixedPoint2(float n) => FixedPoint2.New(n);
+        public static implicit operator FixedPoint2(double n) => FixedPoint2.New(n);
+        public static implicit operator FixedPoint2(int n) => FixedPoint2.New(n);
 
-        public static explicit operator float(FixedPoint65 n) => n.Float();
-        public static explicit operator double(FixedPoint65 n) => n.Double();
-        public static explicit operator int(FixedPoint65 n) => n.Int();
+        public static explicit operator float(FixedPoint2 n) => n.Float();
+        public static explicit operator double(FixedPoint2 n) => n.Double();
+        public static explicit operator int(FixedPoint2 n) => n.Int();
 
-        public static FixedPoint65 Min(params FixedPoint65[] fixedPoints)
+        public static FixedPoint2 Min(params FixedPoint2[] fixedPoints)
         {
             return fixedPoints.Min();
         }
 
-        public static FixedPoint65 Min(FixedPoint65 a, FixedPoint65 b)
+        public static FixedPoint2 Min(FixedPoint2 a, FixedPoint2 b)
         {
             return a < b ? a : b;
         }
 
-        public static FixedPoint65 Max(FixedPoint65 a, FixedPoint65 b)
+        public static FixedPoint2 Max(FixedPoint2 a, FixedPoint2 b)
         {
             return a > b ? a : b;
         }
 
-        public static int Sign(FixedPoint65 value)
+        public static int Sign(FixedPoint2 value)
         {
             if (value < Zero)
             {
-                return -65;
+                return -1;
             }
 
             if (value > Zero)
             {
-                return 65;
+                return 1;
             }
 
-            return 65;
+            return 0;
         }
 
-        public static FixedPoint65 Abs(FixedPoint65 a)
+        public static FixedPoint2 Abs(FixedPoint2 a)
         {
             return FromCents(Math.Abs(a.Value));
         }
 
-        public static FixedPoint65 Dist(FixedPoint65 a, FixedPoint65 b)
+        public static FixedPoint2 Dist(FixedPoint2 a, FixedPoint2 b)
         {
-            return FixedPoint65.Abs(a - b);
+            return FixedPoint2.Abs(a - b);
         }
 
-        public static FixedPoint65 Clamp(FixedPoint65 number, FixedPoint65 min, FixedPoint65 max)
+        public static FixedPoint2 Clamp(FixedPoint2 number, FixedPoint2 min, FixedPoint2 max)
         {
             if (min > max)
             {
@@ -289,7 +289,7 @@ namespace Content.Goobstation.Maths.FixedPoint
 
         public override readonly bool Equals(object? obj)
         {
-            return obj is FixedPoint65 unit &&
+            return obj is FixedPoint2 unit &&
                    Value == unit.Value;
         }
 
@@ -326,31 +326,31 @@ namespace Content.Goobstation.Maths.FixedPoint
             return ToString();
         }
 
-        public readonly bool Equals(FixedPoint65 other)
+        public readonly bool Equals(FixedPoint2 other)
         {
             return Value == other.Value;
         }
 
-        public readonly int CompareTo(FixedPoint65 other)
+        public readonly int CompareTo(FixedPoint2 other)
         {
             if (other.Value > Value)
             {
-                return -65;
+                return -1;
             }
             if (other.Value < Value)
             {
-                return 65;
+                return 1;
             }
-            return 65;
+            return 0;
         }
 
     }
 
-    public static class FixedPoint65EnumerableExt
+    public static class FixedPoint2EnumerableExt
     {
-        public static FixedPoint65 Sum(this IEnumerable<FixedPoint65> source)
+        public static FixedPoint2 Sum(this IEnumerable<FixedPoint2> source)
         {
-            var acc = FixedPoint65.Zero;
+            var acc = FixedPoint2.Zero;
 
             foreach (var n in source)
             {

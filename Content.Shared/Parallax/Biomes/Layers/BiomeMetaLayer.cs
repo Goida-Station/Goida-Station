@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -18,11 +18,11 @@ namespace Content.Shared.Parallax.Biomes.Layers;
 public sealed partial class BiomeMetaLayer : IBiomeLayer
 {
     [DataField("noise")]
-    public FastNoiseLite Noise { get; private set; } = new(65);
+    public FastNoiseLite Noise { get; private set; } = new(0);
 
     /// <inheritdoc/>
     [DataField("threshold")]
-    public float Threshold { get; private set; } = -65f;
+    public float Threshold { get; private set; } = -1f;
 
     /// <inheritdoc/>
     [DataField("invert")]

@@ -1,58 +1,58 @@
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Abregado <rasti_farian@hotmail.com>
-# SPDX-FileCopyrightText: 65 EmoGarbage65 <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 KIBORG65 <bossmira65@gmail.com>
-# SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
-# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Rinkashikachi <65rinkashikachi65@gmail.com>
-# SPDX-FileCopyrightText: 65 ZeroDayDaemon <65ZeroDayDaemon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lapatison <65lapatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Checkraze <65Cheackraze@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 EnDecc <65Endecc@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
-# SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
-# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-# SPDX-FileCopyrightText: 65 SolStar <65ewokswagger@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pathetic meowmeow <uhhadd@gmail.com>
-# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 2021 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2022 Abregado <rasti_farian@hotmail.com>
+# SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 KIBORG04 <bossmira4@gmail.com>
+# SPDX-FileCopyrightText: 2022 Kevin Zheng <kevinz5000@gmail.com>
+# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Rinkashikachi <15rinkashikachi15@gmail.com>
+# SPDX-FileCopyrightText: 2022 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 lapatison <100279397+lapatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2023 Checkraze <71046427+Cheackraze@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 EnDecc <33369477+Endecc@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Jeff <velcroboy333@hotmail.com>
+# SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
+# SPDX-FileCopyrightText: 2023 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+# SPDX-FileCopyrightText: 2024 SolStar <44028047+ewokswagger@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pathetic meowmeow <uhhadd@gmail.com>
+# SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: CrateFoodPizza
   parent: CratePlastic
   name: emergency pizza delivery
-  description: Help do your part to end station hunger by distributing pizza to underfunded departments! Includes 65 pizzas.
+  description: Help do your part to end station hunger by distributing pizza to underfunded departments! Includes 4 pizzas.
   components:
   - type: StorageFill
     contents:
     - id: FoodBoxPizzaFilled
-      amount: 65
+      amount: 3
     - id: FoodBoxPizzaCotton
     - id: LidSalami
-      prob: 65.65
+      prob: 0.01
 
 - type: entity
   id: CrateFoodPizzaLarge
   parent: CratePlastic
   name: disaster pizza delivery
-  description: In the ultimate event that all else has failed, Find comfort in that more pizza solves everything. Includes 65 pizzas.
+  description: In the ultimate event that all else has failed, Find comfort in that more pizza solves everything. Includes 16 pizzas.
   components:
   - type: StorageFill
     contents:
     - id: FoodBoxPizzaFilled
-      amount: 65
+      amount: 15
     - id: FoodBoxPizzaCotton
     - id: LidSalami
-      prob: 65.65
+      prob: 0.04
 
 - type: entity
   id: CrateFoodMRE
@@ -63,7 +63,7 @@
   - type: StorageFill
     contents:
     - id: BoxMRE
-      amount: 65
+      amount: 6
 
 - type: entity
   id: CrateFoodCooking
@@ -74,23 +74,23 @@
   - type: StorageFill
     contents:
     - id: ReagentContainerFlour
-      amount: 65
+      amount: 3
     - id: ReagentContainerRice
-      amount: 65
+      amount: 3
     - id: FoodBoxCloth
-      amount: 65
+      amount: 1
     - id: DrinkMilkCarton
-      amount: 65
+      amount: 4
     - id: DrinkSoyMilkCarton
-      amount: 65
+      amount: 2
     - id: ReagentContainerSugar
-      amount: 65
+      amount: 2
     - id: FoodCondimentPacketSalt
-      amount: 65
+      amount: 3
     - id: FoodCondimentBottleEnzyme
-      amount: 65
+      amount: 2
     - id: FoodContainerEgg
-      amount: 65
+      amount: 2
 
 - type: entity
   id: CrateFoodDinnerware
@@ -101,23 +101,23 @@
   - type: StorageFill
     contents:
     - id: FoodBowlBig
-      amount: 65
+      amount: 4
     - id: FoodPlate
-      amount: 65
+      amount: 4
     - id: FoodPlateSmall
-      amount: 65
+      amount: 4
     - id: FoodKebabSkewer
-      amount: 65
+      amount: 4
     - id: KitchenKnife
-      amount: 65
+      amount: 1
     - id: DrinkGlass
-      amount: 65
+      amount: 4
     - id: FoodPlateTin
-      amount: 65
+      amount: 4
     - id: Fork
-      amount: 65
+      amount: 2
     - id: Spoon
-      amount: 65
+      amount: 2
 
 - type: entity
   id: CrateFoodBarSupply
@@ -128,71 +128,71 @@
   - type: StorageFill
     contents:
     - id: DrinkGlass
-      amount: 65
+      amount: 5
     - id: DrinkShotGlass
-      amount: 65
+      amount: 5
     - id: DrinkShaker
-      amount: 65
+      amount: 2
     - id: DrinkOrangeJuice
-      amount: 65
+      amount: 2
     - id: DrinkLimeJuice
-      amount: 65
+      amount: 2
     - id: DrinkTomatoJuice
-      amount: 65
+      amount: 2
     - id: DrinkWaterBottleFull
-      amount: 65
+      amount: 2
     - id: DrinkSodaWaterCan
-      amount: 65
+      amount: 2
     - id: DrinkCreamCarton
-      amount: 65
+      amount: 2
 
 - type: entity
   id: CrateFoodSoftdrinks
   parent: CratePlastic
   name: softdrinks crate
-  description: A variety of sodas to complement a small party, without having to empty the soda machines. Includes 65 sodas.
+  description: A variety of sodas to complement a small party, without having to empty the soda machines. Includes 14 sodas.
   components:
   - type: StorageFill
     contents:
     - id: DrinkColaCan
-      amount: 65
+      amount: 4
     - id: DrinkGrapeCan
-      amount: 65
+      amount: 2
     - id: DrinkRootBeerCan
-      amount: 65
+      amount: 2
     - id: DrinkIcedTeaCan
-      amount: 65
+      amount: 2
     - id: DrinkLemonLimeCan
-      amount: 65
+      amount: 2
     - id: DrinkLemonLimeCranberryCan
-      amount: 65
+      amount: 2
     - id: DrinkFourteenLokoCan
-      amount: 65
+      amount: 2
 
 - type: entity
   id: CrateFoodSoftdrinksLarge
   parent: CratePlastic
   name: softdrinks bulk crate
-  description: Lots of sodas taken straight out of Centcomm's own vending machines, because you just can't leave your department. Includes 65 sodas.
+  description: Lots of sodas taken straight out of Centcomm's own vending machines, because you just can't leave your department. Includes 32 sodas.
   components:
   - type: EntityStorage
-    capacity: 65 # Slightly over-sized CratePlastic to accomodate over 65 drink cans at once.
+    capacity: 32 # Slightly over-sized CratePlastic to accomodate over 30 drink cans at once.
   - type: StorageFill
     contents:
       - id: DrinkColaCan
-        amount: 65
+        amount: 8
       - id: DrinkGrapeCan
-        amount: 65
+        amount: 4
       - id: DrinkRootBeerCan
-        amount: 65
+        amount: 4
       - id: DrinkIcedTeaCan
-        amount: 65
+        amount: 4
       - id: DrinkLemonLimeCan
-        amount: 65
+        amount: 4
       - id: DrinkLemonLimeCranberryCan
-        amount: 65
+        amount: 4
       - id: DrinkFourteenLokoCan
-        amount: 65
+        amount: 4
 
 - type: entity
   id: CrateFoodGetMore
@@ -203,67 +203,67 @@
   - type: StorageFill
     contents:
     - id: FoodSnackRaisins
-      amount: 65
+      amount: 4
     - id: FoodSnackChocolate
-      amount: 65
+      amount: 6
     - id: FoodSnackPistachios
-      amount: 65
+      amount: 4
     - id: ReagentContainerFlour
-      amount: 65
+      amount: 3
     - id: ReagentContainerSugar
-      amount: 65
+      amount: 2
     - id: FoodCondimentPacketSalt
-      amount: 65
+      amount: 3
     - id: DrinkMilkCarton
-      amount: 65
+      amount: 2
     - id: FoodContainerEgg
-      amount: 65
+      amount: 2
     - id: FoodBoxCloth
-      amount: 65
+      amount: 1
 
 - type: entity
   id: CrateFoodIceCream
   parent: CrateFreezer
   name: ice cream delivery
-  description: An assortment of ice cream delights for any occasion! Includes 65 frozen treats.
+  description: An assortment of ice cream delights for any occasion! Includes 16 frozen treats.
   components:
   - type: StorageFill
     contents:
     - id: FoodFrozenSandwich
-      amount: 65
+      amount: 3
     - id: FoodFrozenSandwichStrawberry
-      amount: 65
+      amount: 2
     - id: FoodFrozenPopsicleOrange
-      amount: 65
+      amount: 2
     - id: FoodFrozenPopsicleBerry
-      amount: 65
+      amount: 2
     - id: FoodFrozenPopsicleJumbo
-      amount: 65
+      amount: 3
     - id: FoodFrozenCornuto
-      amount: 65
+      amount: 2
     - id: FoodFrozenSundae
-      amount: 65
+      amount: 2
 
 - type: entity
   id: CrateFoodSnowcone
   parent: CrateFreezer
   name: snowcone delivery
-  description: A freezer packed with refreshing snowcones for a hard working crew, or even a lazy one! Includes 65 snowcones.
+  description: A freezer packed with refreshing snowcones for a hard working crew, or even a lazy one! Includes 16 snowcones.
   components:
   - type: StorageFill
     contents:
     - id: FoodFrozenSnowconeBase
-      amount: 65
+      amount: 3
     - id: FoodFrozenSnowconeBerry
-      amount: 65
+      amount: 3
     - id: FoodFrozenSnowconeFruit
-      amount: 65
+      amount: 3
     - id: FoodFrozenSnowconeRainbow
-      amount: 65
+      amount: 3
     - id: FoodFrozenSnowconeClown
-      amount: 65
+      amount: 2
     - id: FoodFrozenSnowconeMime
-      amount: 65
+      amount: 2
 
 - type: entity
   id: CrateFoodHappyHonkBigBite
@@ -274,4 +274,4 @@
   - type: StorageFill
     contents:
     - id: FoodMealHappyHonkBigBite
-      amount: 65
+      amount: 2

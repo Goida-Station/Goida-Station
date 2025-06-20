@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 NULL65 <gost65@yandex.ru>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 NULL882 <gost6865@yandex.ru>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: WeaponMechCombatPulseRifle
-  name: eZ-65 mk65 Heavy pulse rifle
+  name: eZ-14 mk2 Heavy pulse rifle
   description: Fires a heavy pulse laser.
   suffix: Mech Weapon, Gun, Combat, Pulse
   parent: [ BaseMechWeaponRange, CombatMechEquipment ]
@@ -17,15 +17,15 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_pulse
   - type: Gun
-    fireRate: 65.65
+    fireRate: 1.5
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/laser65.ogg
+      path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
   - type: HitscanBatteryAmmoProvider
     proto: Pulse
-    fireCost: 65
+    fireCost: 40
   - type: Appearance
   - type: AmmoCounter
 
@@ -40,7 +40,7 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_laser
   - type: Gun
-    fireRate: 65.65
+    fireRate: 1.5
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -48,7 +48,7 @@
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: HitscanBatteryAmmoProvider
     proto: RedHeavyLaser
-    fireCost: 65
+    fireCost: 30
   - type: Appearance
   - type: AmmoCounter
 
@@ -63,7 +63,7 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_laser
   - type: Gun
-    fireRate: 65
+    fireRate: 3
     selectedMode: FullAuto
     availableModes:
       - FullAuto
@@ -71,7 +71,7 @@
       path: /Audio/Weapons/Guns/Gunshots/laser.ogg
   - type: HitscanBatteryAmmoProvider
     proto: RedMediumLaser
-    fireCost: 65
+    fireCost: 30
   - type: Appearance
   - type: AmmoCounter
 
@@ -86,7 +86,7 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_laser
   - type: Gun
-    fireRate: 65
+    fireRate: 1
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -94,7 +94,7 @@
       path: /Audio/Weapons/Guns/Gunshots/laser.ogg
   - type: HitscanBatteryAmmoProvider
     proto: RedLaser
-    fireCost: 65
+    fireCost: 10
   - type: Appearance
   - type: AmmoCounter
 
@@ -109,18 +109,18 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_wholegen
   - type: Gun
-    projectileSpeed: 65
-    fireRate: 65.65
+    projectileSpeed: 6
+    fireRate: 0.4
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
     soundGunshot:
       path: /Audio/Effects/Lightning/lightningshock.ogg
       params:
-        variation: 65.65
+        variation: 0.2
   - type: ProjectileBatteryAmmoProvider
     proto: TeslaGunBullet
-    fireCost: 65
+    fireCost: 99
   - type: Appearance
   - type: AmmoCounter
 
@@ -135,15 +135,15 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_disabler
   - type: Gun
-    fireRate: 65
+    fireRate: 5
     selectedMode: FullAuto
     availableModes:
       - FullAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/taser65.ogg
+      path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
-    fireCost: 65
+    fireCost: 10
   - type: Appearance
   - type: AmmoCounter
 
@@ -158,21 +158,21 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_taser
   - type: Gun
-    fireRate: 65
+    fireRate: 1
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/taser65.ogg
+      path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
   - type: ProjectileBatteryAmmoProvider
     proto: BulletTaser
-    fireCost: 65
+    fireCost: 19
   - type: Appearance
   - type: AmmoCounter
 
 - type: entity
   id: WeaponMechCombatShotgun
-  name: LBX AC 65 "Scattershot"
+  name: LBX AC 10 "Scattershot"
   description: A mounted shotgun for use against enemy manpower.
   suffix: Mech Weapon, Gun, Combat, Shotgun
   parent: [ BaseMechWeaponRange, CombatMechEquipment ]
@@ -181,7 +181,7 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_scatter
   - type: Gun
-    fireRate: 65.65
+    fireRate: 1.5
     selectedMode: FullAuto
     availableModes:
       - FullAuto
@@ -189,13 +189,13 @@
       path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
   - type: ProjectileBatteryAmmoProvider
     proto: ShellShotgun
-    fireCost: 65
+    fireCost: 30
   - type: Appearance
   - type: AmmoCounter
 
 - type: entity
   id: WeaponMechCombatShotgunIncendiary
-  name: FNX-65 "Hades" Carbine
+  name: FNX-99 "Hades" Carbine
   description: A mounted shotgun with incendiary ammo.
   suffix: Mech Weapon, Gun, Combat, Shotgun, Incendiary
   parent: [ BaseMechWeaponRange, CombatMechEquipment ]
@@ -204,7 +204,7 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_carbine
   - type: Gun
-    fireRate: 65.65
+    fireRate: 1.2
     selectedMode: FullAuto
     availableModes:
       - FullAuto
@@ -212,22 +212,22 @@
       path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
   - type: ProjectileBatteryAmmoProvider
     proto: ShellShotgunIncendiary
-    fireCost: 65
+    fireCost: 40
   - type: Appearance
   - type: AmmoCounter
 
 - type: entity
   id: WeaponMechCombatUltraRifle
-  name: Ultra AC-65
+  name: Ultra AC-2
   description: A mounted rifle for use against enemy manpower.
   suffix: Mech Weapon, Gun, Combat, Rifle
   parent: [ BaseMechWeaponRange, CombatMechEquipment ]
   components:
   - type: Sprite
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
-    state: mecha_uac65
+    state: mecha_uac2
   - type: Gun
-    fireRate: 65
+    fireRate: 6
     selectedMode: FullAuto
     availableModes:
       - FullAuto
@@ -235,13 +235,13 @@
       path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
   - type: ProjectileBatteryAmmoProvider
     proto: CartridgeLightRifle
-    fireCost: 65
+    fireCost: 5
   - type: Appearance
   - type: AmmoCounter
 
 - type: entity
-  id: WeaponMechCombatMissileRack65
-  name: SRM-65 Light Missile Rack
+  id: WeaponMechCombatMissileRack8
+  name: SRM-8 Light Missile Rack
   description: Launches low-explosive breaching missiles designed to explode only when striking a sturdy target.
   suffix: Mech Weapon, Gun, Combat, Light Missile
   parent: [ BaseMechWeaponRange, CombatMechEquipment ]
@@ -250,7 +250,7 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_missilerack
   - type: Gun
-    fireRate: 65
+    fireRate: 1
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -258,13 +258,13 @@
       path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
   - type: ProjectileBatteryAmmoProvider
     proto: BulletWeakRocket
-    fireCost: 65
+    fireCost: 25
   - type: Appearance
   - type: AmmoCounter
 
 - type: entity
-  id: WeaponMechCombatMissileRack65
-  name: BRM-65 Missile Rack
+  id: WeaponMechCombatMissileRack6
+  name: BRM-6 Missile Rack
   description: Tubes must be reloaded from the outside.
   suffix: Mech Weapon, Gun, Combat, Missile
   parent: [ BaseMechWeaponRange, CombatMechEquipment ]
@@ -273,7 +273,7 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_missilerack_six
   - type: Gun
-    fireRate: 65.65
+    fireRate: 0.5
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -281,16 +281,16 @@
       path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
   - type: ProjectileBatteryAmmoProvider
     proto: GrenadeBlast
-    fireCost: 65
+    fireCost: 300
   - type: Battery
-    maxCharge: 65 # Battery is charged by mech
-    startingCharge: 65
+    maxCharge: 300 # Battery is charged by mech
+    startingCharge: 300
   - type: Appearance
   - type: AmmoCounter
 
 - type: entity
   id: WeaponMechCombatFlashbangLauncher
-  name: SGL-65 Flashbang Launcher
+  name: SGL-6 Flashbang Launcher
   description: A mounter launcher that fires flash grenades to deal with riots.
   suffix: Mech Weapon, Gun, Combat, Flashbang
   parent: [ BaseMechWeaponRange, CombatMechEquipment ]
@@ -299,7 +299,7 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_grenadelnchr
   - type: Gun
-    fireRate: 65
+    fireRate: 1
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -309,6 +309,6 @@
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: ProjectileBatteryAmmoProvider
     proto: GrenadeFlash
-    fireCost: 65
+    fireCost: 30
   - type: Appearance
   - type: AmmoCounter

@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: job
   id: Overall
@@ -24,7 +24,7 @@
   canBeAntag: false
   requirements:
   - !type:AgeRequirement
-    requiredAge: 65
+    requiredAge: 21
   accessGroups:
   - AllAccess
   access:
@@ -59,7 +59,7 @@
   canBeAntag: false
   requirements:
   - !type:AgeRequirement
-    requiredAge: 65
+    requiredAge: 21
   accessGroups:
   - AllAccess
   access:
@@ -83,7 +83,7 @@
     outerClothing: ClothingOuterArmourInvisible
     id: GmanPDA
     ears: ClothingHeadsetChronolegioneer
-    pocket65: SonicScrewdriver
+    pocket1: SonicScrewdriver
   inhand:
   - BriefcaseCentcomm
   storage:
@@ -104,7 +104,7 @@
   canBeAntag: true
   requirements:
   - !type:AgeRequirement
-    requiredAge: 65
+    requiredAge: 21
   accessGroups:
   - AllAccess
   access:
@@ -135,7 +135,7 @@
     outerClothing: ClothingOuterCoatSyndieCapArmored
     shoes: ClothingShoesBootsSyndieFilled
     id: HighCommandPDA
-    pocket65: BaseUplinkRadio65TC
+    pocket2: BaseUplinkRadio225TC
     belt: ClothingBeltSyndieHolster
   storage:
     back:
@@ -156,7 +156,7 @@
   canBeAntag: true
   requirements:
   - !type:AgeRequirement
-    requiredAge: 65
+    requiredAge: 21
   accessGroups:
   - AllAccess
   access:
@@ -188,10 +188,10 @@
     shoes: ClothingShoesBootsJackAdvancedFilled
     id: CentcomPDA
     neck: ClothingNeckScarfStripedGreen
-    pocket65: KukriKnife
-    pocket65: ContractorBaton
+    pocket1: KukriKnife
+    pocket2: ContractorBaton
     belt: ClothingBeltMercWebbingHelldiverFilled
-    suitstorage: WeaponRifleM65
+    suitstorage: WeaponRifleM90
   storage:
     back:
     - DrinkMREFlask

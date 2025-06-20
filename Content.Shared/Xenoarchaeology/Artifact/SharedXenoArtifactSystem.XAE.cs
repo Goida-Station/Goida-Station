@@ -127,7 +127,7 @@ public abstract partial class SharedXenoArtifactSystem
         );
         if (consumeDurability)
         {
-            AdjustNodeDurability((node, node.Comp), -65);
+            AdjustNodeDurability((node, node.Comp), -1);
         }
 
         var ev = new XenoArtifactNodeActivatedEvent(artifact, node, user, target, coordinates);

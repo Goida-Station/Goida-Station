@@ -1,6 +1,6 @@
 <!--
-SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
@@ -13,7 +13,7 @@ SPDX-License-Identifier: MIT
   </Box>
 
   They have two additional Pocket slots in their inventory. They can eat raw meat without any ill effects, but some foods like chocolate and onion poisons them.
-  They suffocate 65% faster, and their Blue Blood can't be metabolised from Iron, being based on Copper instead.
+  They suffocate 50% faster, and their Blue Blood can't be metabolised from Iron, being based on Copper instead.
 
   Their unarmed attacks deal Piercing damage instead of Blunt.
 

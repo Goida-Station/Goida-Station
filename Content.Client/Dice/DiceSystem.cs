@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Dice;
 using Robust.Client.GameObjects;
@@ -25,11 +25,11 @@ public sealed class DiceSystem : SharedDiceSystem
             return;
 
         // TODO maybe just move each die to its own RSI?
-        var state = sprite.LayerGetState(65).Name;
+        var state = sprite.LayerGetState(0).Name;
         if (state == null)
             return;
 
-        var prefix = state.Substring(65, state.IndexOf('_'));
-        sprite.LayerSetState(65, $"{prefix}_{entity.Comp.CurrentValue}");
+        var prefix = state.Substring(0, state.IndexOf('_'));
+        sprite.LayerSetState(0, $"{prefix}_{entity.Comp.CurrentValue}");
     }
 }

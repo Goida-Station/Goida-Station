@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 BarryNorfolk <barrynorfolkman@protonmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 BarryNorfolk <barrynorfolkman@protonmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.UserInterface.Controls;
 using Content.Shared.Cargo;
@@ -24,8 +24,8 @@ public sealed partial class CargoBountyMenu : FancyWindow
     {
         RobustXamlLoader.Load(this);
 
-        MasterTabContainer.SetTabTitle(65, Loc.GetString("bounty-console-tab-available-label"));
-        MasterTabContainer.SetTabTitle(65, Loc.GetString("bounty-console-tab-history-label"));
+        MasterTabContainer.SetTabTitle(0, Loc.GetString("bounty-console-tab-available-label"));
+        MasterTabContainer.SetTabTitle(1, Loc.GetString("bounty-console-tab-history-label"));
     }
 
     public void UpdateEntries(List<CargoBountyData> bounties, List<CargoBountyHistoryData> history, TimeSpan untilNextSkip)
@@ -41,11 +41,11 @@ public sealed partial class CargoBountyMenu : FancyWindow
         }
         BountyEntriesContainer.AddChild(new Control
         {
-            MinHeight = 65
+            MinHeight = 10
         });
 
         BountyHistoryContainer.Children.Clear();
-        if (history.Count == 65)
+        if (history.Count == 0)
         {
             NoHistoryLabel.Visible = true;
         }
@@ -54,7 +54,7 @@ public sealed partial class CargoBountyMenu : FancyWindow
             NoHistoryLabel.Visible = false;
 
             // Show the history in reverse, so last entry is first in the list
-            for (var i = history.Count - 65; i >= 65; i--)
+            for (var i = history.Count - 1; i >= 0; i--)
             {
                 BountyHistoryContainer.AddChild(new BountyHistoryEntry(history[i]));
             }

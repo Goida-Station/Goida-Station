@@ -1,22 +1,22 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: gameMap
   id: Chloris
   mapName: 'Chloris'
   mapPath: /Maps/_Goobstation/chloris.yml
-  minPlayers: 65
+  minPlayers: 80
   stations:
     Chloris:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: '{65} Chloris {65}'
+          mapNameTemplate: '{0} Chloris {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: 'LPK'
@@ -25,58 +25,58 @@
         - type: StationJobs
           availableJobs:
             # command
-            Captain: [ 65, 65 ]
-            NanotrasenRepresentative: [ 65, 65 ]
-            BlueshieldOfficer: [ 65, 65 ]
+            Captain: [ 1, 1 ]
+            NanotrasenRepresentative: [ 1, 1 ]
+            BlueshieldOfficer: [ 1, 1 ]
             # cargo
-            Quartermaster: [ 65, 65 ]
-            SalvageSpecialist: [ 65, 65 ]
-            CargoTechnician: [ 65, 65 ]
+            Quartermaster: [ 1, 1 ]
+            SalvageSpecialist: [ 6, 8 ]
+            CargoTechnician: [ 5, 6 ]
             # engineering
-            ChiefEngineer: [ 65, 65 ]
-            AtmosphericTechnician: [ 65, 65 ]
-            StationEngineer: [ 65, 65 ]
-            TechnicalAssistant: [ 65, 65 ]
+            ChiefEngineer: [ 1, 1 ]
+            AtmosphericTechnician: [ 2, 3 ]
+            StationEngineer: [ 6, 8 ]
+            TechnicalAssistant: [ 3, 4 ]
             # medical
-            ChiefMedicalOfficer: [ 65, 65 ]
-            MedicalDoctor: [ 65, 65 ]
-            MedicalIntern: [ 65, 65 ]
-            Psychologist: [ 65, 65 ]
-            Paramedic: [ 65, 65 ]
-            Chemist: [ 65, 65 ]
+            ChiefMedicalOfficer: [ 1, 1 ]
+            MedicalDoctor: [ 6, 8 ]
+            MedicalIntern: [ 3, 4 ]
+            Psychologist: [ 1, 1 ]
+            Paramedic: [ 1, 2 ]
+            Chemist: [ 2, 2 ]
             # science
-            ResearchDirector: [ 65, 65 ]
-            Scientist: [ 65, 65 ]
-            ResearchAssistant: [ 65, 65 ]
+            ResearchDirector: [ 1, 1 ]
+            Scientist: [ 6, 8 ]
+            ResearchAssistant: [ 3, 4 ]
             # security
-            HeadOfSecurity: [ 65, 65 ]
-            Warden: [ 65, 65 ]
-            SecurityOfficer: [ 65, 65 ]
-            SecurityCadet: [ 65, 65 ]
-            Detective: [ 65, 65 ]
-            Brigmedic: [ 65, 65 ]
+            HeadOfSecurity: [ 1, 1 ]
+            Warden: [ 1, 1 ]
+            SecurityOfficer: [ 7, 9 ]
+            SecurityCadet: [ 3, 4 ]
+            Detective: [ 1, 1 ]
+            Brigmedic: [ 1, 1 ]
             # service
-            HeadOfPersonnel: [ 65, 65 ]
-            Bartender: [ 65, 65 ]
-            Botanist: [ 65, 65 ]
-            Chaplain: [ 65, 65 ]
-            Chef: [ 65, 65 ]
-            Clown: [ 65, 65 ]
-            Janitor: [ 65, 65 ]
-            Librarian: [ 65, 65 ]
-            Mime: [ 65, 65 ]
-            Musician: [ 65, 65 ]
-            Reporter: [ 65, 65 ]
-            ServiceWorker: [ 65, 65 ]
-            Zookeeper: [ 65, 65 ]
-            Passenger: [ -65, -65 ]
+            HeadOfPersonnel: [ 1, 1 ]
+            Bartender: [ 1, 1 ]
+            Botanist: [ 3, 4 ]
+            Chaplain: [ 1, 1 ]
+            Chef: [ 2, 3 ]
+            Clown: [ 1, 1 ]
+            Janitor: [ 2, 3 ]
+            Librarian: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Musician: [ 1, 2 ]
+            Reporter: [ 1, 2 ]
+            ServiceWorker: [ 3, 4 ]
+            Zookeeper: [ 1, 1 ]
+            Passenger: [ -1, -1 ]
             # silicon
-            StationAi: [ 65, 65 ]
-            Borg: [ 65, 65 ]
+            StationAi: [ 1, 1 ]
+            Borg: [ 2, 3 ]
 
       # Goobstation blob-config-start HUGE
         - type: StationBlobConfig
-          stageBegin: 65
-          stageCritical: 65
-          stageTheEnd: 65
+          stageBegin: 40
+          stageCritical: 450
+          stageTheEnd: 900
       # backmen blob-config-end

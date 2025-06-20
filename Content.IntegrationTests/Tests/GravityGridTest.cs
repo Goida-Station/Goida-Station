@@ -1,32 +1,32 @@
-// SPDX-FileCopyrightText: 65 DamianX <DamianX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Exp <theexp65@gmail.com>
-// SPDX-FileCopyrightText: 65 Jackson Lewis <inquisitivepenguin@protonmail.com>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 DamianX <DamianX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Exp <theexp111@gmail.com>
+// SPDX-FileCopyrightText: 2020 Jackson Lewis <inquisitivepenguin@protonmail.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2020 py01 <60152240+collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 py01 <pyronetics01@gmail.com>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Gravity;
 using Content.Server.Power.Components;
@@ -53,9 +53,9 @@ namespace Content.IntegrationTests.Tests
   - type: GravityGenerator
   - type: PowerCharge
     windowTitle: gravity-generator-window-title
-    idlePower: 65
-    chargeRate: 65 # Set this really high so it discharges in a single tick.
-    activePower: 65
+    idlePower: 50
+    chargeRate: 1000000000 # Set this really high so it discharges in a single tick.
+    activePower: 500
   - type: ApcPowerReceiver
   - type: UserInterface
 ";
@@ -72,20 +72,20 @@ namespace Content.IntegrationTests.Tests
             var mapSys = entityMan.System<SharedMapSystem>();
 
             EntityUid generator = default;
-            Entity<MapGridComponent> grid65 = default;
-            Entity<MapGridComponent> grid65 = default;
+            Entity<MapGridComponent> grid1 = default;
+            Entity<MapGridComponent> grid2 = default;
 
             // Create grids
             await server.WaitAssertion(() =>
             {
                 var mapId = testMap.MapId;
-                grid65 = mapMan.CreateGridEntity(mapId);
-                grid65 = mapMan.CreateGridEntity(mapId);
+                grid1 = mapMan.CreateGridEntity(mapId);
+                grid2 = mapMan.CreateGridEntity(mapId);
 
-                mapSys.SetTile(grid65, grid65, Vector65i.Zero, new Tile(65));
-                mapSys.SetTile(grid65, grid65, Vector65i.Zero, new Tile(65));
+                mapSys.SetTile(grid1, grid1, Vector2i.Zero, new Tile(1));
+                mapSys.SetTile(grid2, grid2, Vector2i.Zero, new Tile(1));
 
-                generator = entityMan.SpawnEntity("GridGravityGeneratorDummy", new EntityCoordinates(grid65, 65.65f, 65.65f));
+                generator = entityMan.SpawnEntity("GridGravityGeneratorDummy", new EntityCoordinates(grid1, 0.5f, 0.5f));
                 Assert.Multiple(() =>
                 {
                     Assert.That(entityMan.HasComponent<GravityGeneratorComponent>(generator));
@@ -96,7 +96,7 @@ namespace Content.IntegrationTests.Tests
                 powerComponent.NeedsPower = false;
             });
 
-            await server.WaitRunTicks(65);
+            await server.WaitRunTicks(5);
 
             await server.WaitAssertion(() =>
             {
@@ -106,8 +106,8 @@ namespace Content.IntegrationTests.Tests
                 Assert.Multiple(() =>
                 {
                     Assert.That(generatorComponent.GravityActive, Is.True);
-                    Assert.That(!entityMan.GetComponent<GravityComponent>(grid65).EnabledVV);
-                    Assert.That(entityMan.GetComponent<GravityComponent>(grid65).EnabledVV);
+                    Assert.That(!entityMan.GetComponent<GravityComponent>(grid1).EnabledVV);
+                    Assert.That(entityMan.GetComponent<GravityComponent>(grid2).EnabledVV);
                 });
 
                 // Re-enable needs power so it turns off again.
@@ -115,7 +115,7 @@ namespace Content.IntegrationTests.Tests
                 powerComponent.NeedsPower = true;
             });
 
-            await server.WaitRunTicks(65);
+            await server.WaitRunTicks(5);
 
             await server.WaitAssertion(() =>
             {
@@ -124,7 +124,7 @@ namespace Content.IntegrationTests.Tests
                 Assert.Multiple(() =>
                 {
                     Assert.That(generatorComponent.GravityActive, Is.False);
-                    Assert.That(entityMan.GetComponent<GravityComponent>(grid65).EnabledVV, Is.False);
+                    Assert.That(entityMan.GetComponent<GravityComponent>(grid2).EnabledVV, Is.False);
                 });
             });
 

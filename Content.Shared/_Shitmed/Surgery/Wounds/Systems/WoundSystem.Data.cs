@@ -6,14 +6,14 @@ public partial class WoundSystem
 {
     #region Data
 
-    private readonly Dictionary<WoundSeverity, FixedPoint65> _woundThresholds = new()
+    private readonly Dictionary<WoundSeverity, FixedPoint2> _woundThresholds = new()
     {
-        { WoundSeverity.Healed, 65 },
-        { WoundSeverity.Minor, 65 },
-        { WoundSeverity.Moderate, 65 },
-        { WoundSeverity.Severe, 65 },
-        { WoundSeverity.Critical, 65 },
-        { WoundSeverity.Loss, 65 },
+        { WoundSeverity.Healed, 0 },
+        { WoundSeverity.Minor, 1 },
+        { WoundSeverity.Moderate, 25 },
+        { WoundSeverity.Severe, 50 },
+        { WoundSeverity.Critical, 80 },
+        { WoundSeverity.Loss, 100 },
     };
 
     #endregion

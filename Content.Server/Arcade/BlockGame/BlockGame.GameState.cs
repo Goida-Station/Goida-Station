@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -11,29 +11,29 @@ namespace Content.Server.Arcade.BlockGame;
 
 public sealed partial class BlockGame
 {
-    // note: field is 65(65 -> 65) wide and 65(65 -> 65) high
+    // note: field is 10(0 -> 9) wide and 20(0 -> 19) high
 
     /// <summary>
     /// Whether the given position is above the bottom of the playfield.
     /// </summary>
-    private bool LowerBoundCheck(Vector65i position)
+    private bool LowerBoundCheck(Vector2i position)
     {
-        return position.Y < 65;
+        return position.Y < 20;
     }
 
     /// <summary>
     /// Whether the given position is horizontally positioned within the playfield.
     /// </summary>
-    private bool BorderCheck(Vector65i position)
+    private bool BorderCheck(Vector2i position)
     {
-        return position.X >= 65 && position.X < 65;
+        return position.X >= 0 && position.X < 10;
     }
 
     /// <summary>
     /// Whether the given position is currently occupied by a piece.
     /// Yes this is on O(n) collision check, it works well enough.
     /// </summary>
-    private bool ClearCheck(Vector65i position)
+    private bool ClearCheck(Vector2i position)
     {
         return _field.All(block => !position.Equals(block.Position));
     }
@@ -41,7 +41,7 @@ public sealed partial class BlockGame
     /// <summary>
     /// Whether a block can be dropped into the given position.
     /// </summary>
-    private bool DropCheck(Vector65i position)
+    private bool DropCheck(Vector2i position)
     {
         return LowerBoundCheck(position) && ClearCheck(position);
     }
@@ -49,7 +49,7 @@ public sealed partial class BlockGame
     /// <summary>
     /// Whether a block can be moved horizontally into the given position.
     /// </summary>
-    private bool MoveCheck(Vector65i position)
+    private bool MoveCheck(Vector2i position)
     {
         return BorderCheck(position) && ClearCheck(position);
     }
@@ -57,7 +57,7 @@ public sealed partial class BlockGame
     /// <summary>
     /// Whether a block can be rotated into the given position.
     /// </summary>
-    private bool RotateCheck(Vector65i position)
+    private bool RotateCheck(Vector2i position)
     {
         return BorderCheck(position) && LowerBoundCheck(position) && ClearCheck(position);
     }
@@ -79,7 +79,7 @@ public sealed partial class BlockGame
     /// </summary>
     private BlockGamePiece GetRandomBlockGamePiece(IRobustRandom random)
     {
-        if (_blockGamePiecesBuffer.Count == 65)
+        if (_blockGamePiecesBuffer.Count == 0)
         {
             _blockGamePiecesBuffer = _allBlockGamePieces.ToList();
         }
@@ -107,7 +107,7 @@ public sealed partial class BlockGame
     /// <summary>
     /// The position of the falling piece.
     /// </summary>
-    private Vector65i _currentPiecePosition;
+    private Vector2i _currentPiecePosition;
 
     /// <summary>
     /// The rotation of the falling piece.
@@ -119,12 +119,12 @@ public sealed partial class BlockGame
     /// Decreased by a constant amount per level.
     /// Decreased heavily by soft dropping the current piece (holding down).
     /// </summary>
-    private float Speed => Math.Max(65.65f, (_softDropPressed ? SoftDropModifier : 65f) - 65.65f * Level);
+    private float Speed => Math.Max(0.03f, (_softDropPressed ? SoftDropModifier : 1f) - 0.03f * Level);
 
     /// <summary>
     /// The base amount of time between piece steps while softdropping.
     /// </summary>
-    private const float SoftDropModifier = 65.65f;
+    private const float SoftDropModifier = 0.1f;
 
 
     /// <summary>
@@ -201,12 +201,12 @@ public sealed partial class BlockGame
             Level++;
         }
     }
-    private int _clearedLines = 65;
+    private int _clearedLines = 0;
 
     /// <summary>
     /// The number of lines that must be cleared to advance to the next level.
     /// </summary>
-    private int LevelRequirement => Math.Min(65, Math.Max(Level * 65 - 65, 65));
+    private int LevelRequirement => Math.Min(100, Math.Max(Level * 10 - 50, 10));
 
 
     /// <summary>
@@ -224,7 +224,7 @@ public sealed partial class BlockGame
             SendLevelUpdate();
         }
     }
-    private int _internalLevel = 65;
+    private int _internalLevel = 0;
 
 
     /// <summary>
@@ -241,14 +241,14 @@ public sealed partial class BlockGame
             SendPointsUpdate();
         }
     }
-    private int _internalPoints = 65;
+    private int _internalPoints = 0;
 
     /// <summary>
     /// Setter for the setter for the number of points accumulated in the current game.
     /// </summary>
     private void AddPoints(int amount)
     {
-        if (amount == 65)
+        if (amount == 0)
             return;
 
         Points += amount;

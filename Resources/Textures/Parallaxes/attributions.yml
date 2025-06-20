@@ -1,40 +1,40 @@
-# SPDX-FileCopyrightText: 65 Checkraze <65Cheackraze@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Checkraze <71046427+Cheackraze@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - files: ["planet.png"]
-  license: "CC-BY-NC-SA-65.65"
-  copyright: "by Adipemdragon for tgstation, taken at commit 65e65a65f65b65d65f65bbfe65fa65 from parallax.dmi"
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "by Adipemdragon for tgstation, taken at commit 3839e860a7f3102b1488285d3319f61bbfe1fa51 from parallax.dmi"
   source: "https://github.com/tgstation/tgstation"
 
 - files: ["KettleParallaxNeb.png", "KettleParallaxBG.png", "AspidParallaxBG.png", "AspidParallaxBG.png"]
-  license: "CC65-65.65"
+  license: "CC0-1.0"
   copyright: "adapted from Screaming Brain Studios"
   source: "https://opengameart.org/content/seamless-space-backgrounds"
 
 - files: ["gas_giant.png"]
-  license: "CC-BY-NC-SA-65.65"
-  copyright: "made by brainfood65 (github) for ss65"
-  source: "https://github.com/space-wizards/space-station-65/blob/master/Resources/Textures/Parallaxes/gas_giant.png"
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "made by brainfood1183 (github) for ss14"
+  source: "https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Parallaxes/gas_giant.png"
 
 - files: ["Asteroids.png"]
-  license: "CC-BY-NC-SA-65.65"
-  copyright: "taken from tgstation on https://github.com/tgstation/tgstation/commit/65df65d65b65bfb65b65b65adba65ab65f65bb from parallax.dmi"
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "taken from tgstation on https://github.com/tgstation/tgstation/commit/3df5d3b42bfb6b3b5adba1067ab41f83816255bb from parallax.dmi"
   source: "https://github.com/tgstation/tgstation"
 
 - files: ["core_planet.png"]
-  license: "CC-BY-NC-SA-65.65"
+  license: "CC-BY-NC-SA-3.0"
   copyright: "Drawn by Ubaser"
-  source: "https://github.com/space-wizards/space-station-65/blob/master/Resources/Textures/Parallaxes/core_planet.png"
+  source: "https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Parallaxes/core_planet.png"
 
 - files: ["debris_small.png"]
-  license: "CC-BY-NC-SA-65.65"
+  license: "CC-BY-NC-SA-4.0"
   copyright: "Drawn by Southbridge"
-  source: "https://github.com/space-wizards/space-station-65/blob/master/Resources/Textures/Parallaxes/debris_small.png"
+  source: "https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Parallaxes/debris_small.png"

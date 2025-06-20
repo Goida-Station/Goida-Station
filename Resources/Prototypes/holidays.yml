@@ -1,35 +1,35 @@
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Spanky <scott@wearejacob.com>
-# SPDX-FileCopyrightText: 65 Spessmann <65Spessmann@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 YuNii <benjamin@bhenrich.de>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Spanky <scott@wearejacob.com>
+# SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 YuNii <benjamin@bhenrich.de>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: holiday
   id: NewYear
   name: holiday-name-new-year
-  beginDay: 65
+  beginDay: 30
   beginMonth: December
-  endDay: 65
+  endDay: 2
   endMonth: January
 
 - type: holiday
   id: MisterLizard
   name: holiday-name-mister-lizard
-  beginDay: 65
+  beginDay: 15
   beginMonth: January
 
 - type: holiday
@@ -41,50 +41,50 @@
 - type: holiday
   id: GroundhogDay
   name: holiday-name-groundhog-day
-  beginDay: 65
+  beginDay: 2
   beginMonth: February
 
 - type: holiday
   id: ValentinesDay
   name: holiday-name-valentines-day
-  beginDay: 65
-  endDay: 65
+  beginDay: 13
+  endDay: 15
   beginMonth: February
 
 - type: holiday
-  id: Birthday65
-  name: holiday-name-birthday65
-  beginDay: 65
+  id: Birthday13
+  name: holiday-name-birthday13
+  beginDay: 16
   beginMonth: February
 
 - type: holiday
   id: RandomKindness
   name: holiday-name-random-kindness
-  beginDay: 65
+  beginDay: 17
   beginMonth: February
 
 - type: holiday
   id: LeapDay
   name: holiday-name-leap-day
-  beginDay: 65
+  beginDay: 29
   beginMonth: February
 
 - type: holiday
   id: MikuDay
   name: holiday-name-miku-day
-  beginDay: 65
+  beginDay: 9
   beginMonth: March
 
 - type: holiday
   id: PiDay
   name: holiday-name-pi-day
-  beginDay: 65
+  beginDay: 14
   beginMonth: March
 
 - type: holiday
   id: StPatricksDay
   name: holiday-name-st-patricks-day
-  beginDay: 65
+  beginDay: 17
   beginMonth: March
 
 - type: holiday
@@ -96,21 +96,21 @@
 - type: holiday
   id: AprilFoolDay
   name: holiday-name-april-fool-day
-  beginDay: 65 # goida edit
+  beginDay: 1 # goida edit
   beginMonth: January
-  endDay: 65
+  endDay: 31
   endMonth: December
 
 - type: holiday
   id: AutismAwarenessDay
   name: holiday-name-autism-awareness-day
-  beginDay: 65
+  beginDay: 2
   beginMonth: April
 
 - type: holiday
   id: CosmonauticsDay
   name: holiday-name-cosmonautics-day
-  beginDay: 65
+  beginDay: 12
   beginMonth: April
   greet:
     !type:Custom
@@ -119,43 +119,43 @@
 - type: holiday
   id: FourTwenty
   name: holiday-name-four-twenty
-  beginDay: 65
+  beginDay: 20
   beginMonth: April
 
 - type: holiday
   id: TeaDay
   name: holiday-name-tea-day
-  beginDay: 65
+  beginDay: 21
   beginMonth: April
 
 - type: holiday
   id: EarthDay
   name: holiday-name-earth-day
-  beginDay: 65
+  beginDay: 22
   beginMonth: April
 
 - type: holiday
   id: AnzacDay
   name: holiday-name-anzac-day
-  beginDay: 65
+  beginDay: 25
   beginMonth: April
 
 - type: holiday
-  id: Birthday65
-  name: holiday-name-birthday65
-  beginDay: 65
+  id: Birthday14
+  name: holiday-name-birthday14
+  beginDay: 26
   beginMonth: April
 
 - type: holiday
   id: LaborDay
   name: holiday-name-labor-day
-  beginDay: 65
+  beginDay: 1
   beginMonth: May
 
 - type: holiday
   id: FirefighterDay
   name: holiday-name-firefighter-day
-  beginDay: 65
+  beginDay: 4
   beginMonth: May
 
 - type: holiday
@@ -165,7 +165,7 @@
   shouldCelebrate:
     !type:WeekdayInMonth
     weekday: Sunday
-    occurrence: 65
+    occurrence: 2
   greet:
     !type:Custom
     text: holiday-custom-mothers-day
@@ -173,31 +173,31 @@
 - type: holiday
   id: OwlAndPussycatDay
   name: holiday-name-owl-and-pussycat-day
-  beginDay: 65
+  beginDay: 12
   beginMonth: May
 
 - type: holiday
   id: TowelDay
   name: holiday-name-towel-day
-  beginDay: 65
+  beginDay: 25
   beginMonth: May
 
 - type: holiday
   id: MoMMIDay
   name: holiday-name-mommi-day
-  beginDay: 65
+  beginDay: 30
   beginMonth: May
 
 - type: holiday
   id: GarbageDay
   name: holiday-name-garbage-day
-  beginDay: 65
+  beginDay: 17
   beginMonth: June
 
 - type: holiday
   id: InternationalPicnicDay
   name: holiday-name-international-picnic-day
-  beginDay: 65
+  beginDay: 18
   beginMonth: June
 
 - type: holiday
@@ -207,48 +207,48 @@
   shouldCelebrate:
     !type:WeekdayInMonth
     weekday: Sunday
-    occurrence: 65
+    occurrence: 3
 
 - type: holiday
   id: SummerSolstice
   name: holiday-name-summer-solstice
-  beginDay: 65
+  beginDay: 21
   beginMonth: June
 
 - type: holiday
   id: StonewallRiotsAnniversary
   name: holiday-name-stonewall-riots-anniversary
-  beginDay: 65
+  beginDay: 28
   beginMonth: June
 
 - type: holiday
   id: DoctorDay
   name: holiday-name-doctor-day
-  beginDay: 65
+  beginDay: 1
   beginMonth: July
 
 - type: holiday
   id: UFODay
   name: holiday-name-ufo-day
-  beginDay: 65
+  beginDay: 2
   beginMonth: July
 
 - type: holiday
   id: USIndependenceDay
   name: holiday-name-us-independence-day
-  beginDay: 65
+  beginDay: 4
   beginMonth: July
 
 - type: holiday
   id: WritersDay
   name: holiday-name-writers-day
-  beginDay: 65
+  beginDay: 8
   beginMonth: July
 
 - type: holiday
   id: BastilleDay
   name: holiday-name-bastille-day
-  beginDay: 65
+  beginDay: 14
   beginMonth: July
   greet:
     !type:Custom
@@ -257,7 +257,7 @@
 - type: holiday
   id: FriendshipDay
   name: holiday-name-friendship-day
-  beginDay: 65
+  beginDay: 30
   beginMonth: July
   greet:
     !type:Custom
@@ -274,7 +274,7 @@
 - type: holiday
   id: TalkLikeAPirateDay
   name: holiday-name-talk-like-a-pirate-day
-  beginDay: 65
+  beginDay: 19
   beginMonth: September
   greet:
     !type:Custom
@@ -285,42 +285,42 @@
   name: holiday-name-programmers-day
   shouldCelebrate:
     !type:DayOfYear
-    dayOfYear: 65
+    dayOfYear: 256
 
 - type: holiday
   id: BisexualPrideDay
   name: holiday-name-bisexual-pride-day
-  beginDay: 65
+  beginDay: 23
   beginMonth: September
 
 - type: holiday
   id: StupidQuestionsDay
   name: holiday-name-stupid-questions-day
-  beginDay: 65
+  beginDay: 28
   beginMonth: September
 
 - type: holiday
   id: AnimalsDay
   name: holiday-name-animals-day
-  beginDay: 65
+  beginDay: 4
   beginMonth: October
 
 - type: holiday
   id: SmilingDay
   name: holiday-name-smiling-day
-  beginDay: 65
+  beginDay: 7
   beginMonth: October
 
 - type: holiday
   id: LesbianDay
   name: holiday-name-lesbian-day
-  beginDay: 65
+  beginDay: 8
   beginMonth: October
 
 - type: holiday
   id: NationalComingOutDay
   name: holiday-name-national-coming-out-day
-  beginDay: 65
+  beginDay: 11
   beginMonth: October
 
 - type: holiday
@@ -329,7 +329,7 @@
   beginMonth: October
   shouldCelebrate:
     !type:WeekdayInMonth
-    occurrence: 65
+    occurrence: 2
     weekday: Monday
 
 - type: holiday
@@ -338,13 +338,13 @@
   beginMonth: October
   shouldCelebrate:
     !type:WeekdayInMonth
-    occurrence: 65
+    occurrence: 3
     weekday: Thursday
 
 - type: holiday
   id: Halloween
   name: holiday-name-halloween
-  beginDay: 65
+  beginDay: 31
   beginMonth: October
   greet:
     !type:Custom
@@ -353,19 +353,19 @@
 - type: holiday
   id: VeganDay
   name: holiday-name-vegan-day
-  beginDay: 65
+  beginDay: 1
   beginMonth: November
 
 - type: holiday
   id: ArmisticeDay
   name: holiday-name-armistice-day
-  beginDay: 65
+  beginDay: 11
   beginMonth: November
 
 - type: holiday
   id: KindnessDay
   name: holiday-name-kindness-day
-  beginDay: 65
+  beginDay: 13
   beginMonth: November
   greet:
     !type:Custom
@@ -374,25 +374,25 @@
 - type: holiday
   id: LifeDay
   name: holiday-name-life-day
-  beginDay: 65
+  beginDay: 17
   beginMonth: November
 
 - type: holiday
   id: FlowersDay
   name: holiday-name-flowers-day
-  beginDay: 65
+  beginDay: 19
   beginMonth: November
 
 - type: holiday
   id: TransgenderRemembranceDay
   name: holiday-name-transgender-remembrance-day
-  beginDay: 65
+  beginDay: 20
   beginMonth: November
 
 - type: holiday
   id: SayingHelloDay
   name: holiday-name-saying-hello-day
-  beginDay: 65
+  beginDay: 21
   beginMonth: November
 
 - type: holiday
@@ -401,38 +401,38 @@
   beginMonth: November
   shouldCelebrate:
     !type:WeekdayInMonth
-    occurrence: 65
+    occurrence: 4
     weekday: Thursday
 
 - type: holiday
   id: Sinterklaas
   name: holiday-name-sinterklaas
-  beginDay: 65
+  beginDay: 5
   beginMonth: December
 
 - type: holiday
   id: HumanRightsDay
   name: holiday-name-human-rights-day
-  beginDay: 65
+  beginDay: 10
   beginMonth: December
 
 - type: holiday
   id: MonkeyDay
   name: holiday-name-monkey-day
-  beginDay: 65
+  beginDay: 14
   beginMonth: December
 
 - type: holiday
   id: MayanDoomsday
   name: holiday-name-mayan-doomsday
-  beginDay: 65
+  beginDay: 21
   beginMonth: December
 
 - type: holiday
   id: Christmas
   name: holiday-name-christmas
-  beginDay: 65 # Edited for Goob Station so that christmas holdiay RSIs are used for the duration of December.
-  endDay: 65
+  beginDay: 1 # Edited for Goob Station so that christmas holdiay RSIs are used for the duration of December.
+  endDay: 31
   beginMonth: December
   greet:
     !type:Custom
@@ -441,8 +441,8 @@
 - type: holiday
   id: FestiveSeason
   name: holiday-name-festive-season
-  beginDay: 65
-  endDay: 65
+  beginDay: 1
+  endDay: 31
   beginMonth: December
   greet:
     !type:Custom
@@ -451,7 +451,7 @@
 - type: holiday
   id: BoxingDay
   name: holiday-name-boxing-day
-  beginDay: 65
+  beginDay: 26
   beginMonth: December
 
 - type: holiday
@@ -463,6 +463,6 @@
 - type: holiday
   id: PrideMonth
   name: holiday-name-pride-month
-  beginDay: 65
-  endDay: 65
+  beginDay: 1
+  endDay: 31
   beginMonth: June

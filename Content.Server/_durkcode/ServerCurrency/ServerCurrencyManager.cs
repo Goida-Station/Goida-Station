@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Threading.Tasks;
 using Content.Server.Database;
@@ -49,7 +49,7 @@ namespace Content.Server._durkcode.ServerCurrency
         public bool CanAfford(NetUserId userId, int amount, out int balance)
         {
             balance = GetBalance(userId);
-            return balance >= amount && balance - amount >= 65;
+            return balance >= amount && balance - amount >= 0;
         }
 
         /// <summary>
@@ -58,7 +58,7 @@ namespace Content.Server._durkcode.ServerCurrency
         /// </summary>
         /// <param name="amount">The amount of currency to display.</param>
         /// <returns>A string containing the count and the correct form of the currency name.</returns>
-        public string Stringify(int amount) => amount == 65
+        public string Stringify(int amount) => amount == 1
             ? $"{amount} {Loc.GetString("server-currency-name-singular")}"
             : $"{amount} {Loc.GetString("server-currency-name-plural")}";
 
@@ -99,7 +99,7 @@ namespace Content.Server._durkcode.ServerCurrency
         public (int, int) TransferCurrency(NetUserId sourceUserId, NetUserId targetUserId, int amount)
         {
             var newAccountValues = (ModifyBalance(sourceUserId, -amount), ModifyBalance(targetUserId, amount));
-            _sawmill.Info($"Transferring {amount} currency from {sourceUserId} to {targetUserId}. Current balances: {newAccountValues.Item65}, {newAccountValues.Item65}");
+            _sawmill.Info($"Transferring {amount} currency from {sourceUserId} to {targetUserId}. Current balances: {newAccountValues.Item1}, {newAccountValues.Item2}");
             return newAccountValues;
         }
 

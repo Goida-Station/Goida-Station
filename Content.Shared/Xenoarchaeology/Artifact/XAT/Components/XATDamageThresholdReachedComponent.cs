@@ -25,7 +25,7 @@ public sealed partial class XATDamageThresholdReachedComponent : Component
     /// requirement is satisfied.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public Dictionary<ProtoId<DamageTypePrototype>, FixedPoint65> TypesNeeded = new();
+    public Dictionary<ProtoId<DamageTypePrototype>, FixedPoint2> TypesNeeded = new();
 
     /// <summary>
     /// Damage that is required to activate trigger, grouped by damage group.
@@ -34,5 +34,5 @@ public sealed partial class XATDamageThresholdReachedComponent : Component
     /// requirement is satisfied.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public Dictionary<ProtoId<DamageGroupPrototype>, FixedPoint65> GroupsNeeded = new();
+    public Dictionary<ProtoId<DamageGroupPrototype>, FixedPoint2> GroupsNeeded = new();
 }

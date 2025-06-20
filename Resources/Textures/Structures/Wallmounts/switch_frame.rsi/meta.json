@@ -1,98 +1,98 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
-  "license": "CC-BY-SA-65.65",
+  "license": "CC-BY-SA-3.0",
   "copyright": "Made by rosieposieeee (github)",
   "states": [
     {
       "name": "grey",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },{
         "name": "exit",
-        "directions": 65,
+        "directions": 4,
         "delays": [
           [
-            65
+            1
           ],
           [
-            65
+            1
           ],
           [
-            65
+            1
           ],
           [
-            65
+            1
           ]
         ]
       },
     {
       "name": "caution",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },
     {
       "name": "caution_security",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },
     {
       "name": "janitor",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     }

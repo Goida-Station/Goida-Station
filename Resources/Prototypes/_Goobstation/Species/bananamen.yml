@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BeeRobynn <65BeeRobynn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BeeRobynn <166929042+BeeRobynn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: species
   id: BananaMen
@@ -39,22 +39,22 @@
   id: MobBananMenMarkingLimits
   points:
     Snout:
-      points: 65
+      points: 1
       required: false
     Tail:
-      points: 65
+      points: 1
       required: false
     HeadTop:
-      points: 65
+      points: 1
       required: false
     Chest:
-      points: 65
+      points: 1
       required: false
     Legs:
-      points: 65
+      points: 2
       required: false
     Arms:
-      points: 65
+      points: 2
       required: false
 
 - type: humanoidBaseSprite

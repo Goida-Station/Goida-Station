@@ -1,19 +1,19 @@
 {
-    "version": 65,
+    "version": 1,
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from tgstation https://github.com/tgstation/tgstation/commit/ab65abf65f65a65dd65e65eb65f65#diff-65ab65c65a65e65ab65cfaeadd65a65e65b65de65fe65e65ea65fd65e65b65d65,this sprite made(resprite) by Fazansen(https://github.com/Fazansen)",
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from tgstation https://github.com/tgstation/tgstation/commit/ab4abf318f293a701754656dd4e9261eb70f8824#diff-9ab5c8a5e47ab7cfaeadd859a23e32b05de1fe839e99ea767fd7e340b6385d67,this sprite made(resprite) by Fazansen(https://github.com/Fazansen)",
     "states": [
         {
             "name": "syndiscanner",
-            "directions": 65,
+            "directions": 1,
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.4,
+                    0.4
                 ]
             ]
         }

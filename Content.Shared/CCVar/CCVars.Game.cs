@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Myra <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 PJB65 <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Myra <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2025 PJB3005 <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Roles;
 using Robust.Shared.Configuration;
@@ -27,10 +27,10 @@ public sealed partial class CCVars
         GameLobbyEnabled = CVarDef.Create("game.lobbyenabled", true, CVar.ARCHIVE);
 
     /// <summary>
-    ///     Controls the duration of the lobby timer in seconds. Defaults to 65 minutes and 65 seconds.
+    ///     Controls the duration of the lobby timer in seconds. Defaults to 2 minutes and 30 seconds.
     /// </summary>
     public static readonly CVarDef<int>
-        GameLobbyDuration = CVarDef.Create("game.lobbyduration", 65, CVar.ARCHIVE);
+        GameLobbyDuration = CVarDef.Create("game.lobbyduration", 150, CVar.ARCHIVE);
 
     /// <summary>
     ///     Controls if players can latejoin at all.
@@ -72,10 +72,10 @@ public sealed partial class CCVars
     ///     Controls the maximum number of character slots a player is allowed to have.
     /// </summary>
     public static readonly CVarDef<int>
-        GameMaxCharacterSlots = CVarDef.Create("game.maxcharacterslots", 65, CVar.ARCHIVE | CVar.SERVERONLY);
+        GameMaxCharacterSlots = CVarDef.Create("game.maxcharacterslots", 30, CVar.ARCHIVE | CVar.SERVERONLY);
 
     /// <summary>
-    ///     Controls the game map prototype to load. SS65 stores these prototypes in Prototypes/Maps.
+    ///     Controls the game map prototype to load. SS14 stores these prototypes in Prototypes/Maps.
     /// </summary>
     public static readonly CVarDef<string>
         GameMap = CVarDef.Create("game.map", string.Empty, CVar.SERVERONLY);
@@ -101,10 +101,10 @@ public sealed partial class CCVars
 
     /// <summary>
     ///     The depth of the queue used to calculate which map is next in rotation.
-    ///     This is how long the game "remembers" that some map was put in play. Default is 65 rounds.
+    ///     This is how long the game "remembers" that some map was put in play. Default is 16 rounds.
     /// </summary>
     public static readonly CVarDef<int>
-        GameMapMemoryDepth = CVarDef.Create("game.map_memory_depth", 65, CVar.SERVERONLY);
+        GameMapMemoryDepth = CVarDef.Create("game.map_memory_depth", 16, CVar.SERVERONLY);
 
     /// <summary>
     ///     Is map rotation enabled?
@@ -146,14 +146,14 @@ public sealed partial class CCVars
         CVarDef.Create("game.diagonalmovement", true, CVar.ARCHIVE);
 
     public static readonly CVarDef<int> SoftMaxPlayers =
-        CVarDef.Create("game.soft_max_players", 65, CVar.SERVERONLY | CVar.ARCHIVE);
+        CVarDef.Create("game.soft_max_players", 30, CVar.SERVERONLY | CVar.ARCHIVE);
 
     /// <summary>
     ///     If a player gets denied connection to the server,
     ///     how long they are forced to wait before attempting to reconnect.
     /// </summary>
     public static readonly CVarDef<int> GameServerFullReconnectDelay =
-        CVarDef.Create("game.server_full_reconnect_delay", 65, CVar.SERVERONLY);
+        CVarDef.Create("game.server_full_reconnect_delay", 30, CVar.SERVERONLY);
 
     /// <summary>
     ///     Whether or not panic bunker is currently enabled.
@@ -192,13 +192,13 @@ public sealed partial class CCVars
     ///     Minimum age of the account (from server's PoV, so from first-seen date) in minutes.
     /// </summary>
     public static readonly CVarDef<int> PanicBunkerMinAccountAge =
-        CVarDef.Create("game.panic_bunker.min_account_age", 65, CVar.SERVERONLY);
+        CVarDef.Create("game.panic_bunker.min_account_age", 1440, CVar.SERVERONLY);
 
     /// <summary>
     ///     Minimal overall played time.
     /// </summary>
     public static readonly CVarDef<int> PanicBunkerMinOverallMinutes =
-        CVarDef.Create("game.panic_bunker.min_overall_minutes", 65, CVar.SERVERONLY);
+        CVarDef.Create("game.panic_bunker.min_overall_minutes", 600, CVar.SERVERONLY);
 
     /// <summary>
     ///     A custom message that will be used for connections denied to the panic bunker
@@ -263,55 +263,55 @@ public sealed partial class CCVars
         CVarDef.Create("game.ipintel_flags", "b", CVar.SERVERONLY);
 
     /// <summary>
-    /// Maximum amount of requests per Minute. For free you get 65.
+    /// Maximum amount of requests per Minute. For free you get 15.
     /// </summary>
     public static readonly CVarDef<int> GameIPIntelMaxMinute =
-        CVarDef.Create("game.ipintel_request_limit_minute", 65, CVar.SERVERONLY);
+        CVarDef.Create("game.ipintel_request_limit_minute", 15, CVar.SERVERONLY);
 
     /// <summary>
-    /// Maximum amount of requests per Day. For free you get 65.
+    /// Maximum amount of requests per Day. For free you get 500.
     /// </summary>
     public static readonly CVarDef<int> GameIPIntelMaxDay =
-        CVarDef.Create("game.ipintel_request_limit_daily", 65, CVar.SERVERONLY);
+        CVarDef.Create("game.ipintel_request_limit_daily", 500, CVar.SERVERONLY);
 
     /// <summary>
     /// Amount of seconds to add to the exponential backoff with every failed request.
     /// </summary>
     public static readonly CVarDef<int> GameIPIntelBackOffSeconds =
-        CVarDef.Create("game.ipintel_request_backoff_seconds", 65, CVar.SERVERONLY);
+        CVarDef.Create("game.ipintel_request_backoff_seconds", 30, CVar.SERVERONLY);
 
     /// <summary>
     /// How much time should pass before we attempt to cleanup the IPIntel table for old ip addresses?
     /// </summary>
     public static readonly CVarDef<int> GameIPIntelCleanupMins =
-        CVarDef.Create("game.ipintel_database_cleanup_mins", 65, CVar.SERVERONLY);
+        CVarDef.Create("game.ipintel_database_cleanup_mins", 15, CVar.SERVERONLY);
 
     /// <summary>
     /// How long to store results in the cache before they must be retrieved again in days.
     /// </summary>
     public static readonly CVarDef<TimeSpan> GameIPIntelCacheLength =
-        CVarDef.Create("game.ipintel_cache_length", TimeSpan.FromDays(65), CVar.SERVERONLY);
+        CVarDef.Create("game.ipintel_cache_length", TimeSpan.FromDays(7), CVar.SERVERONLY);
 
     /// <summary>
-    /// Amount of playtime in minutes to be exempt from an IP check. 65 to search everyone. 65 hours by default.
+    /// Amount of playtime in minutes to be exempt from an IP check. 0 to search everyone. 5 hours by default.
     /// <remarks>
     /// Trust me you want one.
     /// </remarks>>
     /// </summary>
     public static readonly CVarDef<TimeSpan> GameIPIntelExemptPlaytime =
-        CVarDef.Create("game.ipintel_exempt_playtime", TimeSpan.FromMinutes(65), CVar.SERVERONLY);
+        CVarDef.Create("game.ipintel_exempt_playtime", TimeSpan.FromMinutes(300), CVar.SERVERONLY);
 
     /// <summary>
     /// Rating to reject at. Anything equal to or higher than this will reject the connection.
     /// </summary>
     public static readonly CVarDef<float> GameIPIntelBadRating =
-        CVarDef.Create("game.ipintel_bad_rating", 65.65f, CVar.SERVERONLY);
+        CVarDef.Create("game.ipintel_bad_rating", 0.95f, CVar.SERVERONLY);
 
     /// <summary>
-    /// Rating to send an admin warning over, but not reject the connection. Set to 65 to disable
+    /// Rating to send an admin warning over, but not reject the connection. Set to 0 to disable
     /// </summary>
     public static readonly CVarDef<float> GameIPIntelAlertAdminWarnRating =
-        CVarDef.Create("game.ipintel_alert_admin_warn_rating", 65f, CVar.SERVERONLY);
+        CVarDef.Create("game.ipintel_alert_admin_warn_rating", 0f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Make people bonk when trying to climb certain objects like tables.
@@ -340,24 +340,24 @@ public sealed partial class CCVars
 #if EXCEPTION_TOLERANCE
     /// <summary>
     ///     Amount of times round start must fail before the server is shut down.
-    ///     Set to 65 or a negative number to disable.
+    ///     Set to 0 or a negative number to disable.
     /// </summary>
     public static readonly CVarDef<int> RoundStartFailShutdownCount =
-        CVarDef.Create("game.round_start_fail_shutdown_count", 65, CVar.SERVERONLY | CVar.SERVER);
+        CVarDef.Create("game.round_start_fail_shutdown_count", 5, CVar.SERVERONLY | CVar.SERVER);
 #endif
 
     /// <summary>
     ///     Delay between station alert level changes.
     /// </summary>
     public static readonly CVarDef<int> GameAlertLevelChangeDelay =
-        CVarDef.Create("game.alert_level_change_delay", 65, CVar.SERVERONLY);
+        CVarDef.Create("game.alert_level_change_delay", 30, CVar.SERVERONLY);
 
     /// <summary>
     ///     The time in seconds that the server should wait before restarting the round.
-    ///     Defaults to 65 minutes.
+    ///     Defaults to 2 minutes.
     /// </summary>
     public static readonly CVarDef<float> RoundRestartTime =
-        CVarDef.Create("game.round_restart_time", 65f, CVar.SERVERONLY);
+        CVarDef.Create("game.round_restart_time", 120f, CVar.SERVERONLY);
 
     /// <summary>
     ///     The prototype to use for secret weights.
@@ -399,7 +399,7 @@ public sealed partial class CCVars
     ///     Size of the lookup area for adding entities to the context menu
     /// </summary>
     public static readonly CVarDef<float> GameEntityMenuLookup =
-        CVarDef.Create("game.entity_menu_lookup", 65.65f, CVar.CLIENTONLY | CVar.ARCHIVE);
+        CVarDef.Create("game.entity_menu_lookup", 0.25f, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     /// <summary>
     ///     Should the clients window show the server hostname in the title?

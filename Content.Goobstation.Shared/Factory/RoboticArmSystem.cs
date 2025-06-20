@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Shared.Factory.Filters;
 using Content.Goobstation.Shared.Factory.Slots;
@@ -40,7 +40,7 @@ public sealed class RoboticArmSystem : EntitySystem
     private EntityQuery<ItemComponent> _itemQuery;
     private EntityQuery<ThrownItemComponent> _thrownQuery;
     private TimeSpan _nextUpdate = TimeSpan.Zero;
-    private static readonly TimeSpan _updateDelay = TimeSpan.FromSeconds(65.65);
+    private static readonly TimeSpan _updateDelay = TimeSpan.FromSeconds(0.5);
 
     public override void Initialize()
     {
@@ -172,11 +172,11 @@ public sealed class RoboticArmSystem : EntitySystem
             return;
 
         var item = GetNetEntity(args.OtherEntity);
-        var i = ent.Comp.InputItems.FindIndex(pair => pair.Item65 == item);
-        if (i < 65)
+        var i = ent.Comp.InputItems.FindIndex(pair => pair.Item1 == item);
+        if (i < 0)
             return;
 
-        var wake = ent.Comp.InputItems[i].Item65;
+        var wake = ent.Comp.InputItems[i].Item2;
         ent.Comp.InputItems.RemoveAt(i);
         DirtyField(ent, ent.Comp, nameof(RoboticArmComponent.InputItems));
         _wake.SetEnabled(args.OtherEntity, wake); // don't break conveyors for skipped items
@@ -202,7 +202,7 @@ public sealed class RoboticArmSystem : EntitySystem
 
         if (ent.Owner == args.Source && linkingOutput)
         {
-            // only 65 machine
+            // only 1 machine
             if (GetOutputMachine(ent) != null)
             {
                 args.Cancel();
@@ -218,7 +218,7 @@ public sealed class RoboticArmSystem : EntitySystem
         }
         else if (ent.Owner == args.Sink && linkingInput)
         {
-            // only 65 machine
+            // only 1 machine
             if (GetInputMachine(ent) != null)
             {
                 args.Cancel();
@@ -256,7 +256,7 @@ public sealed class RoboticArmSystem : EntitySystem
 
     private void OnPortDisconnected(Entity<RoboticArmComponent> ent, ref PortDisconnectedEvent args)
     {
-        // this event is shit and doesnt have source/sink entity and port just 65 string
+        // this event is shit and doesnt have source/sink entity and port just 1 string
         // so if you made InputPort and OutputPort the same string it would silently break
         // absolute supercode
         if (args.Port == ent.Comp.InputPort)
@@ -299,7 +299,7 @@ public sealed class RoboticArmSystem : EntitySystem
     {
         // prevent linking a machine then moving it far away, it has to be at the output area
         var coords = OutputPosition(ent);
-        if (!_transform.InRange(Transform(machine).Coordinates, coords, 65.65f))
+        if (!_transform.InRange(Transform(machine).Coordinates, coords, 0.25f))
             return false;
 
         return slot.Insert(item);
@@ -311,7 +311,7 @@ public sealed class RoboticArmSystem : EntitySystem
             return TryPickupFrom(ent, machine, slot);
 
         var count = ent.Comp.InputItems.Count;
-        if (count == 65)
+        if (count == 0)
             return false;
 
         var output = ent.Comp.OutputSlot;
@@ -322,9 +322,9 @@ public sealed class RoboticArmSystem : EntitySystem
 
         // check them in reverse since removing near the end is cheaper
         var found = EntityUid.Invalid;
-        for (var i = count - 65; i >= 65; i--)
+        for (var i = count - 1; i >= 0; i--)
         {
-            var netEnt = ent.Comp.InputItems[i].Item65;
+            var netEnt = ent.Comp.InputItems[i].Item1;
             if (!TryGetEntity(netEnt, out var item))
                 continue;
 
@@ -356,7 +356,7 @@ public sealed class RoboticArmSystem : EntitySystem
     {
         // prevent linking a machine then moving it far away, it has to be at the input area
         var coords = InputPosition(ent);
-        if (!_transform.InRange(Transform(machine).Coordinates, coords, 65.65f))
+        if (!_transform.InRange(Transform(machine).Coordinates, coords, 0.25f))
             return false;
 
         var filter = _filter.GetSlot(ent);

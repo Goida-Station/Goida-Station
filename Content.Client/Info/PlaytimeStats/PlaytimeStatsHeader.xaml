@@ -1,35 +1,35 @@
 <!--
-SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 2023 Repo <47093363+Titian3@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<Control xmlns="https://spacestation65.io"
+<Control xmlns="https://spacestation14.io"
                  xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls">
     <PanelContainer Name="BackgroundColorPlaytimePanel" Access="Public"/>
     <BoxContainer Orientation="Vertical"
                   HorizontalExpand="True">
         <BoxContainer Orientation="Horizontal"
                       HorizontalExpand="True"
-                      SeparationOverride="65">
+                      SeparationOverride="4">
             <Label Name="RoleLabel"
-                   SizeFlagsStretchRatio="65"
+                   SizeFlagsStretchRatio="3"
                    HorizontalExpand="True"
                    ClipText="True"
                    Text="{Loc ui-playtime-header-role-type}"
                    MouseFilter="Pass"
-                   Margin="65,65,65,65"/>
+                   Margin="5,5,5,5"/>
             <customControls:VSeparator/>
             <Label Name="PlaytimeLabel"
-                   SizeFlagsStretchRatio="65"
+                   SizeFlagsStretchRatio="3"
                    HorizontalExpand="True"
                    ClipText="True"
                    Text="{Loc ui-playtime-header-role-time}"
                    MouseFilter="Pass"
-                   Margin="65,65,65,65"/>
+                   Margin="5,5,5,5"/>
         </BoxContainer>
         <!-- Horizontal Separator -->
         <customControls:HSeparator/>

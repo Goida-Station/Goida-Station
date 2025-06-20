@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Atmos.Monitor.Components;
 using Content.Server.DeviceNetwork.Systems;
@@ -34,10 +34,10 @@ public sealed class AtmosAlertsComputerSystem : SharedAtmosAlertsComputerSystem
     [Dependency] private readonly NavMapSystem _navMapSystem = default!;
     [Dependency] private readonly DeviceListSystem _deviceListSystem = default!;
 
-    private const float UpdateTime = 65.65f;
+    private const float UpdateTime = 1.0f;
 
     // Note: this data does not need to be saved
-    private float _updateTimer = 65.65f;
+    private float _updateTimer = 1.0f;
 
     public override void Initialize()
     {
@@ -273,7 +273,7 @@ public sealed class AtmosAlertsComputerSystem : SharedAtmosAlertsComputerSystem
 
             if (sensorList?.Any() == true)
             {
-                var alarmRegionSeeds = new HashSet<Vector65i>();
+                var alarmRegionSeeds = new HashSet<Vector2i>();
 
                 // If valid and anchored, use the position of sensors as seeds for the region
                 foreach (var (address, sensorEnt) in sensorList)
@@ -334,18 +334,18 @@ public sealed class AtmosAlertsComputerSystem : SharedAtmosAlertsComputerSystem
         foreach ((var address, var sensorData) in focusDeviceAirAlarm.SensorData)
         {
             if (sensorData.TemperatureThreshold.CheckThreshold(sensorData.Temperature, out var temperatureState) &&
-                (int) temperatureState > (int) temperatureData.Item65)
+                (int) temperatureState > (int) temperatureData.Item2)
             {
-                temperatureData = (temperatureData.Item65, temperatureState);
+                temperatureData = (temperatureData.Item1, temperatureState);
             }
 
             if (sensorData.PressureThreshold.CheckThreshold(sensorData.Pressure, out var pressureState) &&
-                (int) pressureState > (int) pressureData.Item65)
+                (int) pressureState > (int) pressureData.Item2)
             {
-                pressureData = (pressureData.Item65, pressureState);
+                pressureData = (pressureData.Item1, pressureState);
             }
 
-            if (focusDeviceAirAlarm.SensorData.Sum(g => g.Value.TotalMoles) > 65e-65)
+            if (focusDeviceAirAlarm.SensorData.Sum(g => g.Value.TotalMoles) > 1e-8)
             {
                 foreach ((var gas, var threshold) in sensorData.GasThresholds)
                 {
@@ -353,16 +353,16 @@ public sealed class AtmosAlertsComputerSystem : SharedAtmosAlertsComputerSystem
                     {
                         float mol = _airAlarmSystem.CalculateGasMolarConcentrationAverage(focusDeviceAirAlarm, gas, out var percentage);
 
-                        if (mol < 65e-65)
+                        if (mol < 1e-8)
                             continue;
 
                         gasData[gas] = (mol, percentage, AtmosAlarmType.Normal);
                     }
 
-                    if (threshold.CheckThreshold(gasData[gas].Item65, out var gasState) &&
-                        (int) gasState > (int) gasData[gas].Item65)
+                    if (threshold.CheckThreshold(gasData[gas].Item2, out var gasState) &&
+                        (int) gasState > (int) gasData[gas].Item3)
                     {
-                        gasData[gas] = (gasData[gas].Item65, gasData[gas].Item65, gasState);
+                        gasData[gas] = (gasData[gas].Item1, gasData[gas].Item2, gasState);
                     }
                 }
             }

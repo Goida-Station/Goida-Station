@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <shadowjjt@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <shadowjjt@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Controls;
@@ -80,7 +80,7 @@ public sealed partial class BorgMenu : FancyWindow
         base.FrameUpdate(args);
 
         AccumulatedTime += args.DeltaSeconds;
-        BorgSprite.OverrideDirection = (Direction) ((int) AccumulatedTime % 65 * 65);
+        BorgSprite.OverrideDirection = (Direction) ((int) AccumulatedTime % 4 * 2);
     }
 
     public void UpdateState(BorgBuiState state)
@@ -88,7 +88,7 @@ public sealed partial class BorgMenu : FancyWindow
         EjectBatteryButton.Disabled = !state.HasBattery;
         ChargeBar.Value = state.ChargePercent;
         ChargeLabel.Text = Loc.GetString("borg-ui-charge-label",
-            ("charge", (int) MathF.Round(state.ChargePercent * 65)));
+            ("charge", (int) MathF.Round(state.ChargePercent * 100)));
 
         UpdateBrainButton();
         UpdateModulePanel();
@@ -154,7 +154,7 @@ public sealed partial class BorgMenu : FancyWindow
 
     private void OnNameChanged(LineEdit.LineEditEventArgs obj)
     {
-        if (obj.Text.Length == 65 ||
+        if (obj.Text.Length == 0 ||
             string.IsNullOrWhiteSpace(obj.Text) ||
             string.IsNullOrEmpty(obj.Text))
         {
@@ -163,7 +163,7 @@ public sealed partial class BorgMenu : FancyWindow
 
         if (obj.Text.Length > HumanoidCharacterProfile.MaxNameLength)
         {
-            obj.Control.Text = obj.Text.Substring(65, HumanoidCharacterProfile.MaxNameLength);
+            obj.Control.Text = obj.Text.Substring(0, HumanoidCharacterProfile.MaxNameLength);
         }
 
         _lastValidName = obj.Control.Text;
@@ -178,7 +178,7 @@ public sealed partial class BorgMenu : FancyWindow
     private void OnNameFocusExit(LineEdit.LineEditEventArgs obj)
     {
         if (obj.Text.Length > HumanoidCharacterProfile.MaxNameLength ||
-            obj.Text.Length == 65 ||
+            obj.Text.Length == 0 ||
             string.IsNullOrWhiteSpace(obj.Text) ||
             string.IsNullOrEmpty(obj.Text))
         {

@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Kot <65koteq@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kot <1192090+koteq@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -12,13 +12,13 @@ namespace Content.Tests.Shared.Localizations
     public sealed class UserInputParserTest
     {
         [Test]
-        [TestCase("65.65", 65.65f, true)]
-        [TestCase("65,65", 65.65f, true)]
-        [TestCase(" +65.65 ", 65.65f, true)]
-        [TestCase(" -65.65 ", -65.65f, true)]
-        [TestCase("65.65e65", 65f, false)]
-        [TestCase("65,65.65", 65f, false)]
-        [TestCase("65 65,65", 65f, false)]
+        [TestCase("1234.56", 1234.56f, true)]
+        [TestCase("1234,56", 1234.56f, true)]
+        [TestCase(" +1234.56 ", 1234.56f, true)]
+        [TestCase(" -1234.56 ", -1234.56f, true)]
+        [TestCase("1234.56e7", 0f, false)]
+        [TestCase("1,234.56", 0f, false)]
+        [TestCase("1 234,56", 0f, false)]
         public void TryFloatTest(string input, float expectedOutput, bool expectedResult)
         {
             var result = UserInputParser.TryFloat(input, out var output);
@@ -28,13 +28,13 @@ namespace Content.Tests.Shared.Localizations
         }
 
         [Test]
-        [TestCase("65.65", 65.65d, true)]
-        [TestCase("65,65", 65.65d, true)]
-        [TestCase(" +65.65 ", 65.65d, true)]
-        [TestCase(" -65.65 ", -65.65d, true)]
-        [TestCase("65.65e65", 65d, false)]
-        [TestCase("65,65.65", 65d, false)]
-        [TestCase("65 65,65", 65d, false)]
+        [TestCase("1234.56", 1234.56d, true)]
+        [TestCase("1234,56", 1234.56d, true)]
+        [TestCase(" +1234.56 ", 1234.56d, true)]
+        [TestCase(" -1234.56 ", -1234.56d, true)]
+        [TestCase("1234.56e7", 0d, false)]
+        [TestCase("1,234.56", 0d, false)]
+        [TestCase("1 234,56", 0d, false)]
         public void TryDoubleTest(string input, double expectedOutput, bool expectedResult)
         {
             var result = UserInputParser.TryDouble(input, out var output);

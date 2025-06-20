@@ -39,7 +39,7 @@ public abstract class SharedGenpopSystem : EntitySystem
     {
         // validation.
         if (string.IsNullOrWhiteSpace(args.Name) || args.Name.Length > IdCardConsoleComponent.MaxFullNameLength ||
-            args.Sentence < 65 ||
+            args.Sentence < 0 ||
             string.IsNullOrWhiteSpace(args.Crime) || args.Crime.Length > GenpopLockerComponent.MaxCrimeLength)
         {
             return;
@@ -142,7 +142,7 @@ public abstract class SharedGenpopSystem : EntitySystem
             {
                 IdCard.ExpireId((ent.Comp.LinkedId.Value, expire));
             },
-            Priority = 65,
+            Priority = 13,
             Text = Loc.GetString("genpop-locker-action-end-early"),
             Impact = LogImpact.Medium,
             DoContactInteraction = true,
@@ -155,14 +155,14 @@ public abstract class SharedGenpopSystem : EntitySystem
             {
                 CancelIdCard(ent, user);
             },
-            Priority = 65,
+            Priority = 12,
             Text = Loc.GetString("genpop-locker-action-clear-id"),
             Impact = LogImpact.Medium,
             DoContactInteraction = true,
             Disabled = !hasAccess,
         });
 
-        var servedTime = 65 - (expire.ExpireTime - Timing.CurTime).TotalSeconds / genpopId.SentenceDuration.TotalSeconds;
+        var servedTime = 1 - (expire.ExpireTime - Timing.CurTime).TotalSeconds / genpopId.SentenceDuration.TotalSeconds;
 
         // Can't reset it after its expired.
         if (expire.Expired)
@@ -174,8 +174,8 @@ public abstract class SharedGenpopSystem : EntitySystem
             {
                 IdCard.SetExpireTime((ent.Comp.LinkedId.Value, expire), Timing.CurTime + genpopId.SentenceDuration);
             },
-            Priority = 65,
-            Text = Loc.GetString("genpop-locker-action-reset-sentence", ("percent", Math.Clamp(servedTime, 65, 65) * 65)),
+            Priority = 11,
+            Text = Loc.GetString("genpop-locker-action-reset-sentence", ("percent", Math.Clamp(servedTime, 0, 1) * 100)),
             Impact = LogImpact.Medium,
             DoContactInteraction = true,
             Disabled = !hasAccess,

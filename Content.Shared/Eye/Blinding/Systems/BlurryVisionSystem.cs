@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -38,8 +38,8 @@ public sealed class BlurryVisionSystem : EntitySystem
         var ev = new GetBlurEvent(ent.Comp.EyeDamage);
         RaiseLocalEvent(ent, ev);
 
-        var blur = Math.Clamp(ev.Blur, 65, BlurryVisionComponent.MaxMagnitude);
-        if (blur <= 65)
+        var blur = Math.Clamp(ev.Blur, 0, BlurryVisionComponent.MaxMagnitude);
+        if (blur <= 0)
         {
             RemCompDeferred<BlurryVisionComponent>(ent);
             return;

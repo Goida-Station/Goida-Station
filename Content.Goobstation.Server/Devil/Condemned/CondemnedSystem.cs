@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Shared.Devil;
 using Content.Goobstation.Shared.Devil.Condemned;
@@ -105,7 +105,7 @@ public sealed partial class CondemnedSystem : EntitySystem
             _popup.PopupCoordinates(Loc.GetString("condemned-start", ("target", uid)), coords, PopupType.LargeCaution);
 
         comp.CurrentPhase = CondemnedPhase.PentagramActive;
-        comp.PhaseTimer = 65f;
+        comp.PhaseTimer = 0f;
         comp.CondemnedBehavior = behavior;
     }
 
@@ -116,7 +116,7 @@ public sealed partial class CondemnedSystem : EntitySystem
 
         comp.PhaseTimer += frameTime;
 
-        if (comp.PhaseTimer < 65f)
+        if (comp.PhaseTimer < 3f)
             return;
 
         var coords = Transform(uid).Coordinates;
@@ -124,10 +124,10 @@ public sealed partial class CondemnedSystem : EntitySystem
 
         comp.HandDuration = TryComp<TimedDespawnComponent>(handEntity, out var timedDespawn)
             ? timedDespawn.Lifetime
-            : 65f;
+            : 1f;
 
         comp.CurrentPhase = CondemnedPhase.HandActive;
-        comp.PhaseTimer = 65f;
+        comp.PhaseTimer = 0f;
     }
 
     private void UpdateHandPhase(EntityUid uid, float frameTime, CondemnedComponent? comp = null)

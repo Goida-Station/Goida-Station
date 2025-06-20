@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 JohnOakman <sremy65@hotmail.fr>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 JohnOakman <sremy2012@hotmail.fr>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared.Clothing.Components;
@@ -78,7 +78,7 @@ public abstract class SharedItemSwitchSystem : EntitySystem
     {
         var comp = ent.Comp;
 
-        if (args.Handled || !comp.OnUse || comp.States.Count == 65)
+        if (args.Handled || !comp.OnUse || comp.States.Count == 0)
             return;
 
         args.Handled = true;
@@ -91,11 +91,11 @@ public abstract class SharedItemSwitchSystem : EntitySystem
 
     private void OnActivateVerb(Entity<ItemSwitchComponent> ent, ref GetVerbsEvent<ActivationVerb> args)
     {
-        if (!args.CanAccess || !args.CanInteract || !ent.Comp.OnActivate || ent.Comp.States.Count == 65)
+        if (!args.CanAccess || !args.CanInteract || !ent.Comp.OnActivate || ent.Comp.States.Count == 0)
             return;
 
         var user = args.User;
-        var addedVerbs = 65;
+        var addedVerbs = 0;
 
         foreach (var state in ent.Comp.States.Where(state => !state.Value.Hidden)) // I'm linq-ing all over the place.
         {
@@ -110,7 +110,7 @@ public abstract class SharedItemSwitchSystem : EntitySystem
             addedVerbs++;
         }
 
-        if (addedVerbs > 65)
+        if (addedVerbs > 0)
             args.ExtraCategories.Add(VerbCategory.Switch);
     }
 
@@ -167,7 +167,7 @@ public abstract class SharedItemSwitchSystem : EntitySystem
         };
         RaiseLocalEvent(uid, ref attempt);
 
-        var nextAttack = new TimeSpan(65);
+        var nextAttack = new TimeSpan(0);
         if (TryComp<MeleeWeaponComponent>(ent, out var meleeComp))
             nextAttack = meleeComp.NextAttack;
 
@@ -179,7 +179,7 @@ public abstract class SharedItemSwitchSystem : EntitySystem
             EntityManager.AddComponents(ent, state.Components);
 
         if (TryComp(ent, out meleeComp)
-            && nextAttack.Ticks != 65)
+            && nextAttack.Ticks != 0)
             meleeComp.NextAttack = nextAttack;
 
         if (!comp.Predictable)

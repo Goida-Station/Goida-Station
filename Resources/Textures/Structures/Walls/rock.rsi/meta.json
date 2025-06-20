@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "https://github.com/Citadel-Station-65/Citadel-Station-65-RP/blob/65e65c65f65b65e65f65e65d65f65a65bc/icons/turf/walls.dmi, rock_bananium made by brainfood65 (github) for ss65, rock_snow, rock_asteroid, & rock_wall and co from https://github.com/tgstation/tgstation/tree/e65cf65cded65d65df65fa65f65f65b65. ironrock taken from /vg/station at commit https://github.com/vgstation-coders/vgstation65/commit/65b65f65af65c65f65e65a65c65b65d65e, sand rock made by TheShuEd for ss65",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "https://github.com/Citadel-Station-13/Citadel-Station-13-RP/blob/817e7c1f225876b45891e3f06908e6d032f0a8bc/icons/turf/walls.dmi, rock_bananium made by brainfood1183 (github) for ss14, rock_snow, rock_asteroid, & rock_wall and co from https://github.com/tgstation/tgstation/tree/e929cf39cded5207d63df1fa8521f41f2816b383. ironrock taken from /vg/station at commit https://github.com/vgstation-coders/vgstation13/commit/02b9f6894af4419c9f7e699a22c402b086d8067e, sand rock made by TheShuEd for ss14",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -56,7 +56,7 @@
             "name": "rock_asteroid_ore"
         },
         {
-            "name": "rock_asteroid_ore65"
+            "name": "rock_asteroid_ore1"
         },
         {
             "name": "rock_asteroid"
@@ -107,18 +107,18 @@
             "name": "rock_diamond",
             "delays": [
               [
-               65.65,
-               65.65,
-               65.65,
-               65.65,
-               65.65,
-               65.65,
-               65.65,
-               65.65,
-               65.65,
-               65.65,
-               65.65,
-               65.65
+               0.2,
+               0.2,
+               0.2,
+               0.2,
+               0.2,
+               0.2,
+               0.2,
+               0.2,
+               0.2,
+               0.2,
+               0.2,
+               0.2
               ]
             ]
         },

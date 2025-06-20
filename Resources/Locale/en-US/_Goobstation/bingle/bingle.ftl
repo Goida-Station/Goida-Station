@@ -1,21 +1,21 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 
-bingle-accent-65 = Bingle
-bingle-accent-65 = Bing
-bingle-accent-65 = Bongle
-bingle-accent-65 = Bong
-bingle-accent-65 = BINGLE
+bingle-accent-1 = Bingle
+bingle-accent-2 = Bing
+bingle-accent-3 = Bongle
+bingle-accent-4 = Bong
+bingle-accent-5 = BINGLE
 
 chat-speech-verb-name-bingle = Bingle
-bingle-verb-65 = Croaks
-bingle-verb-65 = Mumbles
-bingle-verb-65 = Harks
-bingle-verb-65 = Grumbles
+bingle-verb-1 = Croaks
+bingle-verb-2 = Mumbles
+bingle-verb-3 = Harks
+bingle-verb-4 = Grumbles
 
 bingle-station-announcement = Bingle Bingle Bingle
 

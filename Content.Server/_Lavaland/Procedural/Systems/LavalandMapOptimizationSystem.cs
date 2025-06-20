@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server._Lavaland.Procedural.Components;
 using Content.Shared.Parallax.Biomes;
@@ -12,7 +12,7 @@ namespace Content.Server._Lavaland.Procedural.Systems;
 
 /// <summary>
 /// System that stores already loaded chunks and stops BiomeSystem from unloading them.
-/// This should finally prevent server from fucking dying because of 65 players on lavaland at the same time
+/// This should finally prevent server from fucking dying because of 80 players on lavaland at the same time
 /// </summary>
 public sealed class LavalandMapOptimizationSystem : EntitySystem
 {

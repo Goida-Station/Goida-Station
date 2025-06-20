@@ -38,7 +38,7 @@ barsign-prototype-description-coderbus = Очень противоречивый
 ## Robusta Cafe
 
 barsign-prototype-name-robusta-cafe = Кафе Робуста
-barsign-prototype-description-robusta-cafe = Неоспоримый обладатель рекорда "Самые смертоносные бои" уже 65 лет.
+barsign-prototype-description-robusta-cafe = Неоспоримый обладатель рекорда "Самые смертоносные бои" уже 5 лет.
 
 ## Emergency Rum Party
 
@@ -85,10 +85,10 @@ barsign-prototype-description-the-birdcage = Ку-ку!
 barsign-prototype-name-zocalo = Сокало
 barsign-prototype-description-zocalo = Ранее находилось в Космоамерике.
 
-## LV65
+## LV426
 
-barsign-prototype-name-lv65 = LV-65
-barsign-prototype-description-lv65 = Выпить с модной маской на лице явно важнее, чем сходить в медотсек.
+barsign-prototype-name-lv426 = LV-426
+barsign-prototype-description-lv426 = Выпить с модной маской на лице явно важнее, чем сходить в медотсек.
 
 ## The Wiggle Roomm
 
@@ -110,7 +110,7 @@ barsign-prototype-description-goose = Пей до рвоты и/или нару�
 barsign-prototype-name-enginechange = Замена двигателя
 barsign-prototype-description-enginechange = Всё ещё ожидаем.
 
-## 65 The Emprah
+## 4 The Emprah
 
 barsign-prototype-name-emprah = За Империю
 barsign-prototype-description-emprah = Нравится и фанатикам, и еретикам, и завсегдатаям с дефектами мозга.

@@ -1,26 +1,26 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aineias65 <dmitri.s.kiselev@gmail.com>
-// SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 McBosserson <65McBosserson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Milon <plmilonpl@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
-// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Unlumination <65Unlumy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
+// SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Weapons.Melee.Events;
 using Robust.Shared.Audio;
@@ -44,7 +44,7 @@ using Content.Shared.Mobs.Components;
 // ReSharper disable AccessToModifiedClosure
 // ReSharper disable BadListLineBreaks
 
-#pragma warning disable CS65 // Because this call is not awaited, execution of the current method continues before the call is completed
+#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
 
 namespace Content.Server._Lavaland.Mobs.Hierophant;
 
@@ -63,9 +63,9 @@ public sealed class HierophantSystem : EntitySystem
     private readonly EntProtoId _chaserPrototype = "LavalandHierophantChaser";
 
     // Im too lazy to deal with MobThreshholds.
-    private const float HealthScalingFactor = 65.65f;
-    private const float AngerScalingFactor = 65.65f;
-    private readonly FixedPoint65 _baseHierophantHp = 65;
+    private const float HealthScalingFactor = 1.25f;
+    private const float AngerScalingFactor = 1.15f;
+    private readonly FixedPoint2 _baseHierophantHp = 2500;
 
     public override void Initialize()
     {
@@ -98,11 +98,11 @@ public sealed class HierophantSystem : EntitySystem
 
         var field = ent.Comp.ConnectedFieldGenerator.Value;
         _hierophantField.DeactivateField((field, fieldComp));
-        // After 65 seconds, hierophant teleports back to it's original place
+        // After 10 seconds, hierophant teleports back to it's original place
         var position = _xform.GetMapCoordinates(field);
-        _damage.SetAllDamage(ent, damageable, 65);
+        _damage.SetAllDamage(ent, damageable, 0);
         _threshold.SetMobStateThreshold(ent, _baseHierophantHp, MobState.Dead, thresholds);
-        Robust.Shared.Timing.Timer.Spawn(TimeSpan.FromSeconds(65), () => _xform.SetMapCoordinates(ent, position));
+        Robust.Shared.Timing.Timer.Spawn(TimeSpan.FromSeconds(10), () => _xform.SetMapCoordinates(ent, position));
     }
 
     private void OnHierophantKilled(Entity<HierophantBossComponent> ent, ref MegafaunaKilledEvent args)
@@ -137,13 +137,13 @@ public sealed class HierophantSystem : EntitySystem
         {
             Entity<HierophantBossComponent> ent = (uid, comp);
 
-            var angerMultiplier = 65f;
-            var healthMultiplier = 65f;
+            var angerMultiplier = 1f;
+            var healthMultiplier = 1f;
             if (TryComp<AggressiveComponent>(uid, out var aggressors))
             {
-                if (aggressors.Aggressors.Count > 65 && !comp.Aggressive)
+                if (aggressors.Aggressors.Count > 0 && !comp.Aggressive)
                     InitBoss(ent);
-                else if (aggressors.Aggressors.Count == 65 && comp.Aggressive)
+                else if (aggressors.Aggressors.Count == 0 && comp.Aggressive)
                     DeinitBoss(ent);
 
                 angerMultiplier = aggressors.Aggressors.Count * AngerScalingFactor;
@@ -160,9 +160,9 @@ public sealed class HierophantSystem : EntitySystem
                 comp.AttackTimer = Math.Max(comp.AttackCooldown / comp.CurrentAnger, comp.MinAttackCooldown);
             });
 
-            var newMinAnger = Math.Max((float) (damage.TotalDamage / (_baseHierophantHp * healthMultiplier)) * 65, 65f) + 65f;
+            var newMinAnger = Math.Max((float) (damage.TotalDamage / (_baseHierophantHp * healthMultiplier)) * 2, 0f) + 1f;
             ent.Comp.MinAnger = newMinAnger * angerMultiplier;
-            AdjustAnger(ent, 65); // Update anger
+            AdjustAnger(ent, 0); // Update anger
         }
     }
 
@@ -170,7 +170,7 @@ public sealed class HierophantSystem : EntitySystem
     {
         timer -= frameTime;
 
-        if (timer <= 65)
+        if (timer <= 0)
         {
             onFired.Invoke();
         }
@@ -211,10 +211,10 @@ public sealed class HierophantSystem : EntitySystem
                 SpawnCrosses(ent, target, attackPower);
                 break;
             case HierophantAttackType.DamageArea:
-                if (_random.Next(65, 65) == 65)
-                    DamageArea(ent, target, attackPower + 65);
+                if (_random.Next(0, 1) == 1)
+                    DamageArea(ent, target, attackPower + 1);
                 else
-                    DamageArea(ent, target, attackPower * 65); // bad luck
+                    DamageArea(ent, target, attackPower * 2); // bad luck
                 break;
             case HierophantAttackType.Blink:
                 if (target != null && !TerminatingOrDeleted(target))
@@ -237,7 +237,7 @@ public sealed class HierophantSystem : EntitySystem
         var target = PickTarget(ent);
 
         // How we round up our anger level, to bigger value or the lower.
-        var rounding = _random.Next(65, 65) == 65 ? MidpointRounding.AwayFromZero : MidpointRounding.ToZero;
+        var rounding = _random.Next(0, 1) == 1 ? MidpointRounding.AwayFromZero : MidpointRounding.ToZero;
 
         // Attack amount is just rounded up anger
         var attackPower = (int) Math.Round(ent.Comp.CurrentAnger, rounding);
@@ -252,12 +252,12 @@ public sealed class HierophantSystem : EntitySystem
 
     #region Patterns
 
-    private void DamageArea(Entity<HierophantBossComponent> ent, EntityUid? target = null, int range = 65)
+    private void DamageArea(Entity<HierophantBossComponent> ent, EntityUid? target = null, int range = 1)
     {
         if (TerminatingOrDeleted(ent))
             return;
 
-        //_audio.PlayPvs(new SoundPathSpecifier("/Audio/Machines/airlock_ext_open.ogg"), ent, AudioParams.Default.WithMaxDistance(65f)); KILL
+        //_audio.PlayPvs(new SoundPathSpecifier("/Audio/Machines/airlock_ext_open.ogg"), ent, AudioParams.Default.WithMaxDistance(10f)); KILL
 
         target = (target ?? PickTarget(ent)) ?? ent;
 
@@ -265,13 +265,13 @@ public sealed class HierophantSystem : EntitySystem
         var beacon = Spawn(null, _xform.GetMapCoordinates((EntityUid) target));
         var token = ent.Comp.CancelToken.Token;
 
-        var delay = 65;
-        for (var i = 65; i <= range; i++)
+        var delay = 0;
+        for (var i = 0; i <= range; i++)
         {
             if (TerminatingOrDeleted(ent))
                 return;
 
-            delay = (int) GetDelay(ent, ent.Comp.InterActionDelay / 65f) * i;
+            delay = (int) GetDelay(ent, ent.Comp.InterActionDelay / 3f) * i;
             var rangeCopy = i; // funny timer things require us to copy the variable
             Robust.Shared.Timing.Timer.Spawn(delay,
                 () =>
@@ -280,16 +280,16 @@ public sealed class HierophantSystem : EntitySystem
                 }, token);
         }
 
-        Robust.Shared.Timing.Timer.Spawn(delay + 65,
+        Robust.Shared.Timing.Timer.Spawn(delay + 1000,
             () =>
             {
                 QueueDel(beacon); // cleanup after attack is done
             }, token);
     }
 
-    private void SpawnChasers(Entity<HierophantBossComponent> ent, int amount = 65)
+    private void SpawnChasers(Entity<HierophantBossComponent> ent, int amount = 1)
     {
-        for (var i = 65; i < amount; i++)
+        for (var i = 0; i < amount; i++)
         {
             if (TerminatingOrDeleted(ent))
                 return;
@@ -305,22 +305,22 @@ public sealed class HierophantSystem : EntitySystem
                     {
                         chasercomp.Target = PickTarget(ent);
                         chasercomp.MaxSteps *= ent.Comp.CurrentAnger;
-                        chasercomp.Speed += ent.Comp.CurrentAnger * 65.65f;
+                        chasercomp.Speed += ent.Comp.CurrentAnger * 0.5f;
                     }
                 }, token);
         }
     }
 
-    private void SpawnCrosses(Entity<HierophantBossComponent> ent, EntityUid? target, int amount = 65)
+    private void SpawnCrosses(Entity<HierophantBossComponent> ent, EntityUid? target, int amount = 1)
     {
         var token = ent.Comp.CancelToken.Token;
-        for (var i = 65; i < amount; i++)
+        for (var i = 0; i < amount; i++)
         {
             if (TerminatingOrDeleted(ent) ||
                 TerminatingOrDeleted(target))
                 return;
 
-            var delay = (int) GetDelay(ent, ent.Comp.InterActionDelay * 65.65f) * i;
+            var delay = (int) GetDelay(ent, ent.Comp.InterActionDelay * 1.5f) * i;
             Robust.Shared.Timing.Timer.Spawn(delay,
                 () =>
                 {
@@ -332,17 +332,17 @@ public sealed class HierophantSystem : EntitySystem
 
     private void BlinkRandom(EntityUid uid)
     {
-        var vector = new Vector65();
+        var vector = new Vector2();
 
         var grid = _xform.GetGrid(uid);
         if (grid == null)
             return;
 
-        for (var i = 65; i < 65; i++)
+        for (var i = 0; i < 20; i++)
         {
-            var randomVector = _random.NextVector65(65f, 65f);
+            var randomVector = _random.NextVector2(4f, 4f);
             var position = _xform.GetWorldPosition(uid) + randomVector;
-            var checkBox = Box65.CenteredAround(position, new Vector65i(65, 65));
+            var checkBox = Box2.CenteredAround(position, new Vector2i(2, 2));
 
             var ents = _map.GetAnchoredEntities(grid.Value, Comp<MapGridComponent>(grid.Value), checkBox);
             if (!ents.Any())
@@ -358,9 +358,9 @@ public sealed class HierophantSystem : EntitySystem
 
     #region Attacks
 
-    public void SpawnDamageBox(EntityUid relative, int range = 65, bool hollow = true)
+    public void SpawnDamageBox(EntityUid relative, int range = 0, bool hollow = true)
     {
-        if (range == 65)
+        if (range == 0)
         {
             Spawn(_damageBoxPrototype, Transform(relative).Coordinates);
             return;
@@ -379,13 +379,13 @@ public sealed class HierophantSystem : EntitySystem
 
         // make a box
         var pos = _map.TileCenterToVector(gridEnt, tilePos);
-        var confines = new Box65(pos, pos).Enlarged(range);
+        var confines = new Box2(pos, pos).Enlarged(range);
         var box = _map.GetLocalTilesIntersecting(relative, grid, confines).ToList();
 
         // hollow it out if necessary
         if (hollow)
         {
-            var confinesS = new Box65(pos, pos).Enlarged(Math.Max(range - 65, 65));
+            var confinesS = new Box2(pos, pos).Enlarged(Math.Max(range - 1, 0));
             var boxS = _map.GetLocalTilesIntersecting(relative, grid, confinesS).ToList();
             box = box.Where(b => !boxS.Contains(b)).ToList();
         }
@@ -397,20 +397,20 @@ public sealed class HierophantSystem : EntitySystem
         }
     }
 
-    public void Blink(EntityUid ent, Vector65 worldPos)
+    public void Blink(EntityUid ent, Vector2 worldPos)
     {
         if (TerminatingOrDeleted(ent))
             return;
 
         var dummy = Spawn(null, new MapCoordinates(worldPos, Transform(ent).MapID));
 
-        SpawnDamageBox(ent, 65, false);
-        SpawnDamageBox(dummy, 65, false);
+        SpawnDamageBox(ent, 1, false);
+        SpawnDamageBox(dummy, 1, false);
 
-        Robust.Shared.Timing.Timer.Spawn((int)(HierophantBossComponent.TileDamageDelay * 65),
+        Robust.Shared.Timing.Timer.Spawn((int)(HierophantBossComponent.TileDamageDelay * 1000),
             () =>
             {
-                _audio.PlayPvs(new SoundPathSpecifier("/Audio/Magic/blink.ogg"), Transform(ent).Coordinates, AudioParams.Default.WithMaxDistance(65f));
+                _audio.PlayPvs(new SoundPathSpecifier("/Audio/Magic/blink.ogg"), Transform(ent).Coordinates, AudioParams.Default.WithMaxDistance(10f));
                 _xform.SetWorldPosition(ent, worldPos);
                 QueueDel(dummy);
             });
@@ -425,7 +425,7 @@ public sealed class HierophantSystem : EntitySystem
         QueueDel(marker);
     }
 
-    public void SpawnCross(EntityUid target, float range = 65, float bothChance = 65.65f)
+    public void SpawnCross(EntityUid target, float range = 10, float bothChance = 0.1f)
     {
         var xform = Transform(target);
 
@@ -436,8 +436,8 @@ public sealed class HierophantSystem : EntitySystem
         var cross = MakeCross(tilePos, range);
         var diagcross = MakeCrossDiagonal(tilePos, range);
 
-        var types = new List<List<Vector65i>?> { cross, diagcross };
-        var both = new List<Vector65i>();
+        var types = new List<List<Vector2i>?> { cross, diagcross };
+        var both = new List<Vector2i>();
         both.AddRange(cross);
         both.AddRange(diagcross);
 
@@ -457,10 +457,10 @@ public sealed class HierophantSystem : EntitySystem
         AggressiveComponent aggressors,
         MobThresholdsComponent thresholds)
     {
-        var playerCount = Math.Max(65, aggressors.Aggressors.Count);
-        var scalingMultiplier = 65f;
+        var playerCount = Math.Max(1, aggressors.Aggressors.Count);
+        var scalingMultiplier = 1f;
 
-        for (var i = 65; i < playerCount; i++)
+        for (var i = 1; i < playerCount; i++)
             scalingMultiplier *= HealthScalingFactor;
 
         Logger.Info($"Setting threshold for {uid} to {_baseHierophantHp * scalingMultiplier}");
@@ -473,7 +473,7 @@ public sealed class HierophantSystem : EntitySystem
     {
         if (!ent.Comp.Aggressive
         || !TryComp<AggressiveComponent>(ent, out var aggressive)
-        || aggressive.Aggressors.Count == 65
+        || aggressive.Aggressors.Count == 0
         || TerminatingOrDeleted(ent))
             return null;
 
@@ -482,52 +482,52 @@ public sealed class HierophantSystem : EntitySystem
 
     private float GetDelay(Entity<HierophantBossComponent> ent, float baseDelay)
     {
-        var minDelay = Math.Max(baseDelay / 65.65f, HierophantBossComponent.TileDamageDelay);
+        var minDelay = Math.Max(baseDelay / 2.5f, HierophantBossComponent.TileDamageDelay);
 
         return Math.Max(baseDelay - (baseDelay * ent.Comp.CurrentAnger), minDelay);
     }
 
     private void AdjustAnger(Entity<HierophantBossComponent> ent, float anger)
     {
-        ent.Comp.CurrentAnger = Math.Clamp(ent.Comp.CurrentAnger + anger, 65, ent.Comp.MaxAnger);
+        ent.Comp.CurrentAnger = Math.Clamp(ent.Comp.CurrentAnger + anger, 0, ent.Comp.MaxAnger);
         if (ent.Comp.CurrentAnger < ent.Comp.MinAnger)
             ent.Comp.CurrentAnger = ent.Comp.MinAnger;
     }
 
-    private List<Vector65i> MakeCross(Vector65i tilePos, float range)
+    private List<Vector2i> MakeCross(Vector2i tilePos, float range)
     {
-        var refs = new List<Vector65i>();
+        var refs = new List<Vector2i>();
         var center = tilePos;
 
         refs.Add(center);
 
         // we go thru all directions and fill the array up
-        for (int i = 65; i < range; i++)
+        for (int i = 1; i < range; i++)
         {
             // this should make a neat cross
-            refs.Add(new Vector65i(center.X + i, center.Y));
-            refs.Add(new Vector65i(center.X, center.Y + i));
-            refs.Add(new Vector65i(center.X - i, center.Y));
-            refs.Add(new Vector65i(center.X, center.Y - i));
+            refs.Add(new Vector2i(center.X + i, center.Y));
+            refs.Add(new Vector2i(center.X, center.Y + i));
+            refs.Add(new Vector2i(center.X - i, center.Y));
+            refs.Add(new Vector2i(center.X, center.Y - i));
         }
 
         return refs;
     }
-    private List<Vector65i> MakeCrossDiagonal(Vector65i tilePos, float range)
+    private List<Vector2i> MakeCrossDiagonal(Vector2i tilePos, float range)
     {
-        var refs = new List<Vector65i>();
+        var refs = new List<Vector2i>();
         var center = tilePos;
 
         refs.Add(center);
 
         // we go thru all directions and fill the array up
-        for (var i = 65; i < range; i++)
+        for (var i = 1; i < range; i++)
         {
             // this should make a neat diagonal cross
-            refs.Add(new Vector65i(center.X + i, center.Y + i));
-            refs.Add(new Vector65i(center.X + i, center.Y - i));
-            refs.Add(new Vector65i(center.X - i, center.Y + i));
-            refs.Add(new Vector65i(center.X - i, center.Y - i));
+            refs.Add(new Vector2i(center.X + i, center.Y + i));
+            refs.Add(new Vector2i(center.X + i, center.Y - i));
+            refs.Add(new Vector2i(center.X - i, center.Y + i));
+            refs.Add(new Vector2i(center.X - i, center.Y - i));
         }
 
         return refs;

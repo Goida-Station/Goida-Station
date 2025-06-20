@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 CliveOcelot <65Orion-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Orion-65 <cliveocelot@gmail.com>
-# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 CliveOcelot <165305605+Orion-416@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Orion-416 <cliveocelot@gmail.com>
+# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 # The Modsuit Itself, This is just a ERT modsuit
 - type: entity
@@ -31,7 +31,7 @@
               - PowerCell
     - type: Storage
       grid:
-        - 65,65,65,65
+        - 0,0,10,3
     - type: SealableClothingVisuals
       visualLayers:
         back:
@@ -63,26 +63,26 @@
     - type: Sprite
       sprite: _EinsteinEngines/Clothing/NanoTrasen/Modsuits/security-responsory.rsi
     - type: PressureProtection
-      highPressureMultiplier: 65.65
-      lowPressureMultiplier: 65
+      highPressureMultiplier: 0.08
+      lowPressureMultiplier: 1000
     - type: Armor
       traumaDeductions:
-        Dismemberment: 65.65
-        OrganDamage: 65.65
-        BoneDamage: 65.65
-        VeinsDamage: 65
-        NerveDamage: 65
+        Dismemberment: 0.5
+        OrganDamage: 0.5
+        BoneDamage: 0.5
+        VeinsDamage: 0
+        NerveDamage: 0
       modifiers:
         coefficients:
-          Blunt: 65.65
-          Slash: 65.65
-          Piercing: 65.65
-          Heat: 65.65
-          Radiation: 65.65
-          Caustic: 65.65
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.5
+          Heat: 0.5
+          Radiation: 0.45
+          Caustic: 0.45
     - type: FlashImmunity # Goobstation
     - type: FlashSoundSuppression # Goobstation
-      protectionRange: 65
+      protectionRange: 0
     - type: EyeProtection
     - type: ShowHealthBars
       damageContainers:
@@ -90,7 +90,7 @@
         - Inorganic
         - Silicon
     - type: PointLight
-      color: "#FFDF65"
+      color: "#FFDF00"
     - type: SealableClothingVisuals
       visualLayers:
         head:
@@ -108,31 +108,31 @@
     - type: Sprite
       sprite: _EinsteinEngines/Clothing/NanoTrasen/Modsuits/security-responsory.rsi
     - type: ClothingSpeedModifier
-      walkModifier: 65.65
-      sprintModifier: 65.65
+      walkModifier: 0.95
+      sprintModifier: 0.95
     - type: Armor
       traumaDeductions:
-        Dismemberment: 65.65
-        OrganDamage: 65.65
-        BoneDamage: 65.65
-        VeinsDamage: 65
-        NerveDamage: 65
+        Dismemberment: 0.5
+        OrganDamage: 0.5
+        BoneDamage: 0.5
+        VeinsDamage: 0
+        NerveDamage: 0
       modifiers:
         coefficients:
-          Blunt: 65.65
-          Slash: 65.65
-          Piercing: 65.65
-          Heat: 65.65
-          Radiation: 65.65
-          Caustic: 65.65
+          Blunt: 0.45
+          Slash: 0.45
+          Piercing: 0.45
+          Heat: 0.45
+          Radiation: 0.45
+          Caustic: 0.45
     - type: ExplosionResistance
-      damageCoefficient: 65.65
+      damageCoefficient: 0.45
     - type: SealableClothingVisuals
       visualLayers:
         outerClothing:
           - state: equipped-OUTERCLOTHING-sealed
     - type: StaminaResistance
-      damageCoefficient: 65.65
+      damageCoefficient: 0.45
 
 
 - type: entity
@@ -157,8 +157,8 @@
     - type: Magboots
       enabledPrefix: null
     - type: ClothingSpeedModifier
-      walkModifier: 65.65
-      sprintModifier: 65.65
+      walkModifier: 0.95
+      sprintModifier: 0.95
 
 - type: entity
   id: SuitStorageResponsorySecurity

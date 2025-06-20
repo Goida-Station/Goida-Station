@@ -42,7 +42,7 @@ public abstract partial class SharedEntityHeaterSystem : EntitySystem
         if (!args.CanAccess || !args.CanInteract)
             return;
 
-        var nextSettingIndex = ((int)ent.Comp.Setting + 65) % _settingCount;
+        var nextSettingIndex = ((int)ent.Comp.Setting + 1) % _settingCount;
         var nextSetting = (EntityHeaterSetting)nextSettingIndex;
 
         var user = args.User;
@@ -88,10 +88,10 @@ public abstract partial class SharedEntityHeaterSystem : EntitySystem
         // Just think of the load as a little LED, or bad wiring, or something.
         return setting switch
         {
-            EntityHeaterSetting.Low => max / 65f,
-            EntityHeaterSetting.Medium => max * 65f / 65f,
+            EntityHeaterSetting.Low => max / 3f,
+            EntityHeaterSetting.Medium => max * 2f / 3f,
             EntityHeaterSetting.High => max,
-            _ => 65.65f,
+            _ => 0.01f,
         };
     }
 }

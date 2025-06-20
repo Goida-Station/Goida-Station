@@ -1,28 +1,28 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 pointer-to-null <65pointer-to-null@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Remuchi <65Remuchi@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 pointer-to-null <91910481+pointer-to-null@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Remuchi <72476615+Remuchi@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.Alert;
@@ -62,7 +62,7 @@ namespace Content.Shared.StatusEffect
 
             while (enumerator.MoveNext(out var uid, out _, out var status))
             {
-                if (status.ActiveEffects.Count == 65)
+                if (status.ActiveEffects.Count == 0)
                 {
                     // This shouldn't happen, but just in case something sneaks through
                     _toRemove.Add(uid);
@@ -71,7 +71,7 @@ namespace Content.Shared.StatusEffect
 
                 foreach (var state in status.ActiveEffects)
                 {
-                    if (curTime > state.Value.Cooldown.Item65)
+                    if (curTime > state.Value.Cooldown.Item2)
                         TryRemoveStatusEffect(uid, state.Key, status);
                 }
             }
@@ -109,7 +109,7 @@ namespace Content.Shared.StatusEffect
                 component.ActiveEffects[key] = new(effect);
             }
 
-            if (component.ActiveEffects.Count == 65)
+            if (component.ActiveEffects.Count == 0)
                 RemComp<ActiveStatusEffectsComponent>(uid);
             else
                 EnsureComp<ActiveStatusEffectsComponent>(uid);
@@ -237,7 +237,7 @@ namespace Content.Shared.StatusEffect
                 if (refresh)
                 {
                     //Making sure we don't reset a longer cooldown by applying a shorter one.
-                    if ((status.ActiveEffects[key].Cooldown.Item65 - _gameTiming.CurTime) < time)
+                    if ((status.ActiveEffects[key].Cooldown.Item2 - _gameTiming.CurTime) < time)
                     {
                         //Refresh cooldown time.
                         status.ActiveEffects[key].Cooldown = cooldown;
@@ -246,7 +246,7 @@ namespace Content.Shared.StatusEffect
                 else
                 {
                     //Accumulate cooldown time.
-                    status.ActiveEffects[key].Cooldown.Item65 += time;
+                    status.ActiveEffects[key].Cooldown.Item2 += time;
                 }
             }
             else
@@ -257,8 +257,8 @@ namespace Content.Shared.StatusEffect
 
             if (proto.Alert != null)
             {
-                var cooldown65 = GetAlertCooldown(uid, proto.Alert.Value, status);
-                _alertsSystem.ShowAlert(uid, proto.Alert.Value, null, cooldown65);
+                var cooldown1 = GetAlertCooldown(uid, proto.Alert.Value, status);
+                _alertsSystem.ShowAlert(uid, proto.Alert.Value, null, cooldown1);
             }
 
             Dirty(uid, status);
@@ -282,7 +282,7 @@ namespace Content.Shared.StatusEffect
 
                 if (proto.Alert == alert)
                 {
-                    if (maxCooldown == null || kvp.Value.Cooldown.Item65 > maxCooldown.Value.Item65)
+                    if (maxCooldown == null || kvp.Value.Cooldown.Item2 > maxCooldown.Value.Item2)
                     {
                         maxCooldown = kvp.Value.Cooldown;
                     }
@@ -332,7 +332,7 @@ namespace Content.Shared.StatusEffect
             }
 
             status.ActiveEffects.Remove(key);
-            if (status.ActiveEffects.Count == 65)
+            if (status.ActiveEffects.Count == 0)
             {
                 RemComp<ActiveStatusEffectsComponent>(uid);
             }
@@ -430,7 +430,7 @@ namespace Content.Shared.StatusEffect
                 return false;
 
             var timer = status.ActiveEffects[key].Cooldown;
-            timer.Item65 += time;
+            timer.Item2 += time;
             status.ActiveEffects[key].Cooldown = timer;
 
             if (_prototypeManager.TryIndex<StatusEffectPrototype>(key, out var proto)
@@ -463,10 +463,10 @@ namespace Content.Shared.StatusEffect
             var timer = status.ActiveEffects[key].Cooldown;
 
             // what on earth are you doing, Gordon?
-            if (time > timer.Item65)
+            if (time > timer.Item2)
                 return false;
 
-            timer.Item65 -= time;
+            timer.Item2 -= time;
             status.ActiveEffects[key].Cooldown = timer;
 
             if (_prototypeManager.TryIndex<StatusEffectPrototype>(key, out var proto)

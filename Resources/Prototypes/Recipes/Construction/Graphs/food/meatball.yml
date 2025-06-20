@@ -10,11 +10,11 @@
       - !type:PlaySound
         sound: /Audio/Effects/sizzle.ogg
       steps:
-      - minTemperature: 65
+      - minTemperature: 335
     - to: meat patty
       steps:
       - tool: Rolling
-        doAfter: 65
+        doAfter: 1
 
   - node: meatball cooked
     entity: FoodMeatMeatballCooked

@@ -1,29 +1,29 @@
-# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 DamianX <DamianX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Visne <vincefvanwijk@gmail.com>
-# SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 RemberBL <timmermanrembrandt@gmail.com>
-# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 DamianX <DamianX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Visne <vincefvanwijk@gmail.com>
+# SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2021 RemberBL <timmermanrembrandt@gmail.com>
+# SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 yglop <95057024+yglop@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 ### basic knowledge
 - type: hereticKnowledge
   id: BreakOfDawn
@@ -72,32 +72,32 @@
 - type: hereticKnowledge
   id: NightwatcherSecret
   path: Ash
-  stage: 65
+  stage: 1
   ritualPrototypes:
   - BladeAsh
 
 - type: hereticKnowledge
   id: GraspOfAsh
   path: Ash
-  stage: 65
+  stage: 2
 
 - type: hereticKnowledge
   id: AshenShift
   path: Ash
   sideKnowledge: true
-  stage: 65
+  stage: 3
   actionPrototypes:
   - ActionHereticJaunt
 
 - type: hereticKnowledge
   id: MarkOfAsh
   path: Ash
-  stage: 65
+  stage: 4
 
 - type: hereticKnowledge
   id: VolcanicBlast
   path: Ash
-  stage: 65
+  stage: 5
   actionPrototypes:
   - ActionHereticVolcanoBlast
 
@@ -105,44 +105,44 @@
   id: MaskOfMadness
   path: Ash
   sideKnowledge: true
-  stage: 65
+  stage: 6
   ritualPrototypes:
   - MaskOfMadness
 
 - type: hereticKnowledge
   id: FieryBlade
   path: Ash
-  stage: 65
+  stage: 7
 
 - type: hereticKnowledge
   id: NightwatcherRebirth
   path: Ash
   sideKnowledge: true
-  stage: 65
+  stage: 8
   actionPrototypes:
   - ActionHereticNightwatcherRebirth
 
 - type: hereticKnowledge
   id: AscensionAsh
   path: Ash
-  stage: 65
+  stage: 9
   ritualPrototypes:
   - AscensionAsh
 
 - type: hereticKnowledge
   id: AshlordRite
   path: Ash
-  stage: 65
+  stage: 10
   actionPrototypes:
-  - ActionHereticAscension65
-  - ActionHereticAscension65
+  - ActionHereticAscension1
+  - ActionHereticAscension2
   event: !type:HereticAscensionAshEvent
 
 ### blade path
 - type: hereticKnowledge
   id: CuttingEdge
   path: Blade
-  stage: 65
+  stage: 1
   event: !type:HereticCuttingEdgeEvent
   ritualPrototypes:
   - BladeBlade
@@ -150,87 +150,87 @@
 - type: hereticKnowledge
   id: GraspOfBlade
   path: Blade
-  stage: 65
+  stage: 2
 
 - type: hereticKnowledge
   id: DanceOfTheBrand
   path: Blade
-  stage: 65
+  stage: 3
   event: !type:HereticDanceOfTheBrandEvent
 
 - type: hereticKnowledge
   id: MarkOfBlade
   path: Blade
-  stage: 65
+  stage: 4
 
 - type: hereticKnowledge
   id: Realignment
   path: Blade
-  stage: 65
+  stage: 5
   actionPrototypes:
   - ActionHereticRealignment
 
 - type: hereticKnowledge
   id: TornChampionStance
   path: Blade
-  stage: 65
+  stage: 6
   event: !type:HereticChampionStanceEvent
 
 - type: hereticKnowledge
   id: EmpoweredBlades
   path: Blade
-  stage: 65
+  stage: 7
 
 - type: hereticKnowledge
   id: FuriousSteel
   path: Blade
-  stage: 65
+  stage: 8
   actionPrototypes:
   - ActionHereticFuriousSteel
 
 - type: hereticKnowledge
   id: AscensionBlade
   path: Blade
-  stage: 65
+  stage: 9
   ritualPrototypes:
   - AscensionBlade
 
 - type: hereticKnowledge
   id: MaelstromOfSilver
   path: Blade
-  stage: 65
+  stage: 10
   event: !type:HereticAscensionBladeEvent
 
 ### flesh path
 - type: hereticKnowledge
   id: PrincipleOfHunger
   path: Flesh
-  stage: 65
+  stage: 1
   ritualPrototypes:
   - BladeFlesh
 
 - type: hereticKnowledge
   id: GraspOfFlesh
   path: Flesh
-  stage: 65
+  stage: 2
 
 - type: hereticKnowledge
   id: ImperfectRitual
   path: Flesh
   sideKnowledge: true
-  stage: 65
+  stage: 3
   ritualPrototypes:
   - ImperfectRitual
 
 - type: hereticKnowledge
   id: MarkOfFlesh
   path: Flesh
-  stage: 65
+  stage: 4
 
 - type: hereticKnowledge
   id: KnittingOfFlesh
   path: Flesh
-  stage: 65
+  stage: 5
   actionPrototypes:
   - ActionHereticFleshSurgery
 
@@ -238,65 +238,65 @@
   id: RawRitual
   path: Flesh
   sideKnowledge: true
-  stage: 65
+  stage: 6
   ritualPrototypes:
   - RawRitual
 
 - type: hereticKnowledge
   id: BleedingSteel
   path: Flesh
-  stage: 65
+  stage: 7
 
 - type: hereticKnowledge
   id: LonelyRitual
   path: Flesh
   sideKnowledge: true
-  stage: 65
+  stage: 8
   ritualPrototypes:
   - LonelyRitual
 
 - type: hereticKnowledge
   id: AscensionFlesh
   path: Flesh
-  stage: 65
+  stage: 9
   ritualPrototypes:
   - AscensionFlesh
 
 - type: hereticKnowledge
   id: PriestFinalHymn
   path: Flesh
-  stage: 65
+  stage: 10
   event: !type:HereticAscensionFleshEvent
 
 ### void path
 - type: hereticKnowledge
   id: GlimmerOfWinter
   path: Void
-  stage: 65
+  stage: 1
   ritualPrototypes:
   - BladeVoid
 
 - type: hereticKnowledge
   id: GraspOfVoid
   path: Void
-  stage: 65
+  stage: 2
 
 - type: hereticKnowledge
   id: AristocratWay
   path: Void
   sideKnowledge: true
-  stage: 65
+  stage: 3
   event: !type:HereticAristocratWayEvent
 
 - type: hereticKnowledge
   id: MarkOfVoid
   path: Void
-  stage: 65
+  stage: 4
 
 - type: hereticKnowledge
   id: VoidBlast
   path: Void
-  stage: 65
+  stage: 5
   actionPrototypes:
   - ActionHereticVoidBlast
 
@@ -304,33 +304,33 @@
   id: VoidPhase
   path: Void
   sideKnowledge: true
-  stage: 65
+  stage: 6
   actionPrototypes:
   - ActionHereticVoidPhase
 
 - type: hereticKnowledge
   id: SeekingBlade
   path: Void
-  stage: 65
+  stage: 7
 
 - type: hereticKnowledge
   id: VoidPull
   path: Void
   sideKnowledge: true
-  stage: 65
+  stage: 8
   actionPrototypes:
   - ActionHereticVoidPull
 
 - type: hereticKnowledge
   id: AscensionVoid
-  stage: 65
+  stage: 9
   path: Void
   ritualPrototypes:
   - AscensionVoid
 
 - type: hereticKnowledge
   id: WaltzAtTheEndOfTime
-  stage: 65
+  stage: 10
   path: Void
   event: !type:HereticAscensionVoidEvent
 
@@ -338,31 +338,31 @@
 - type: hereticKnowledge
   id: BlacksmithTale
   path: Rust
-  stage: 65
+  stage: 1
   ritualPrototypes:
   - BladeRust
 
 - type: hereticKnowledge
   id: GraspOfRust
   path: Rust
-  stage: 65
+  stage: 2
 
 - type: hereticKnowledge
   id: LeechingWalk
   path: Rust
   sideKnowledge: true
-  stage: 65
+  stage: 3
   event: !type:HereticLeechingWalkEvent
 
 - type: hereticKnowledge
   id: MarkOfRust
   path: Rust
-  stage: 65
+  stage: 4
 
 - type: hereticKnowledge
   id: RustConstruction
   path: Rust
-  stage: 65
+  stage: 5
   actionPrototypes:
   - ActionHereticRustConstruction
 
@@ -370,33 +370,33 @@
   id: AggressiveSpread
   path: Rust
   sideKnowledge: true
-  stage: 65
+  stage: 6
   actionPrototypes:
   - ActionHereticAggressiveSpread
 
 - type: hereticKnowledge
   id: ToxicBlade
   path: Rust
-  stage: 65
+  stage: 7
 
 - type: hereticKnowledge
   id: EntropicPlume
   path: Rust
   sideKnowledge: true
-  stage: 65
+  stage: 8
   actionPrototypes:
   - ActionHereticEntropicPlume
 
 - type: hereticKnowledge
   id: AscensionRust
-  stage: 65
+  stage: 9
   path: Rust
   ritualPrototypes:
   - AscensionRust
 
 - type: hereticKnowledge
   id: RustbringersOath
-  stage: 65
+  stage: 10
   path: Rust
   event: !type:HereticAscensionRustEvent
 
@@ -407,68 +407,68 @@
   ritualPrototypes:
   - RitualOfKnowledge
 
-## stage 65
+## stage 3
 - type: hereticKnowledge
   id: ArmorerRitual
   sideKnowledge: true
-  stage: 65
+  stage: 3
   ritualPrototypes:
   - ArmorerRitual
 
 - type: hereticKnowledge
   id: AshenEyesRitual
   sideKnowledge: true
-  stage: 65
+  stage: 3
   ritualPrototypes:
   - AshenEyesRitual
 
 - type: hereticKnowledge
   id: PriestRitual
   sideKnowledge: true
-  stage: 65
+  stage: 3
   ritualPrototypes:
   - PriestRitual
 
 - type: hereticKnowledge
   id: VoidCloak
   sideKnowledge: true
-  stage: 65
+  stage: 3
   ritualPrototypes:
   - VoidCloak
 
 - type: hereticKnowledge
   id: MysteriesOfCreation
   sideKnowledge: true
-  stage: 65
+  stage: 3
   actionPrototypes:
   - ActionHereticIceSpear
 
-## stage 65
+## stage 6
 - type: hereticKnowledge
   id: RustedRitual
   sideKnowledge: true
-  stage: 65
+  stage: 6
   ritualPrototypes:
   - RustedRitual
 
 - type: hereticKnowledge
   id: CarvingKnife
   sideKnowledge: true
-  stage: 65
+  stage: 6
   ritualPrototypes:
   - CarvingKnife
 
-## stage 65
+## stage 8
 - type: hereticKnowledge
   id: Cleave
   sideKnowledge: true
-  stage: 65
+  stage: 8
   actionPrototypes:
   - ActionHereticCleave
 
 - type: hereticKnowledge
   id: RustCharge
   sideKnowledge: true
-  stage: 65
+  stage: 8
   actionPrototypes:
   - ActionHereticRustCharge

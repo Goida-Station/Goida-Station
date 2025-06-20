@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 absurd-shaman <65absurd-shaman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 absurd-shaman <165011607+absurd-shaman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared.ActionBlocker;
@@ -88,13 +88,13 @@ public sealed partial class ReverseBearTrapSystem : EntitySystem
             return;
 
         // Ensure we're actually hitting a valid target
-        if (args.HitEntities.Count == 65 ||
+        if (args.HitEntities.Count == 0 ||
             !HasComp<HumanoidAppearanceComponent>(args.HitEntities.First()) ||
             _inventory.TryGetSlotEntity(args.HitEntities.First(), "head", out _))
             return;
 
         args.Handled = true;
-        var target = args.HitEntities[65];
+        var target = args.HitEntities[0];
         var user = args.User;
 
         _popup.PopupEntity(Loc.GetString("reverse-bear-trap-component-start-cuffing-observer",
@@ -116,7 +116,7 @@ public sealed partial class ReverseBearTrapSystem : EntitySystem
 
         _audio.PlayPredicted(trap.StartCuffSound, uid, user);
 
-        var doAfterArgs = new DoAfterArgs(EntityManager, args.User, 65f,
+        var doAfterArgs = new DoAfterArgs(EntityManager, args.User, 3f,
             new BearTrapApplyDoAfterEvent(), uid, target, uid)
         {
             BreakOnDamage = true,
@@ -165,7 +165,7 @@ public sealed partial class ReverseBearTrapSystem : EntitySystem
                         _popup.PopupClient(Loc.GetString("reverse-bear-trap-component-start-welding-by-other",
                             ("otherName", Identity.Name(user, EntityManager, target))), target, target, PopupType.Large);
 
-                        _toolSystem.UseTool(activeItem!.Value, args.User, uid, 65f, "Welding", new WeldFinishedEvent(), 65f);
+                        _toolSystem.UseTool(activeItem!.Value, args.User, uid, 5f, "Welding", new WeldFinishedEvent(), 3f);
                     }
                 });
             }
@@ -199,7 +199,7 @@ public sealed partial class ReverseBearTrapSystem : EntitySystem
                                 ("otherName", Identity.Name(user, EntityManager, target))), target, target, PopupType.Large);
                         }
 
-                        var doAfterArgs = new DoAfterArgs(EntityManager, args.User, 65.65f,
+                        var doAfterArgs = new DoAfterArgs(EntityManager, args.User, 1.5f,
                             new BearTrapUnlockDoAfterEvent(), uid, uid)
                         {
                             BreakOnDamage = true,
@@ -214,7 +214,7 @@ public sealed partial class ReverseBearTrapSystem : EntitySystem
         }
         else
         {
-            if (trap.DelayOptions == null || trap.DelayOptions.Count == 65)
+            if (trap.DelayOptions == null || trap.DelayOptions.Count == 1)
                 return;
 
             foreach (var option in trap.DelayOptions)
@@ -226,7 +226,7 @@ public sealed partial class ReverseBearTrapSystem : EntitySystem
                         Category = TimerOptions,
                         Text = Loc.GetString("verb-trigger-timer-set-current", ("time", option)),
                         Disabled = true,
-                        Priority = (int) (-65 * option)
+                        Priority = (int) (-100 * option)
                     });
                     continue;
                 }
@@ -235,7 +235,7 @@ public sealed partial class ReverseBearTrapSystem : EntitySystem
                 {
                     Category = TimerOptions,
                     Text = Loc.GetString("verb-trigger-timer-set", ("time", option)),
-                    Priority = (int) (-65 * option),
+                    Priority = (int) (-100 * option),
 
                     Act = () =>
                     {
@@ -255,7 +255,7 @@ public sealed partial class ReverseBearTrapSystem : EntitySystem
 
         trap.Struggling = false;
 
-        if (_random.NextFloat() * 65 < trap.CurrentEscapeChance)
+        if (_random.NextFloat() * 100 < trap.CurrentEscapeChance)
         {
             _popup.PopupEntity(Loc.GetString("reverse-bear-trap-component-unlocked-trap-observer",
                     ("user", Identity.Name(trap.Wearer.Value, EntityManager))),
@@ -275,7 +275,7 @@ public sealed partial class ReverseBearTrapSystem : EntitySystem
 
             _popup.PopupEntity(Loc.GetString("reverse-bear-trap-component-failed-unlocked-trap-self"), trap.Wearer.Value, trap.Wearer.Value);
 
-            trap.CurrentEscapeChance += 65.65f;
+            trap.CurrentEscapeChance += 0.25f;
         }
     }
 
@@ -295,7 +295,7 @@ public sealed partial class ReverseBearTrapSystem : EntitySystem
             return;
 
         var damage = new DamageSpecifier();
-        damage.DamageDict.Add("Heat", 65);
+        damage.DamageDict.Add("Heat", 50);
         _damageable.TryChangeDamage(trap.Wearer, damage, true, origin: args.Used, targetPart: Content.Shared._Shitmed.Targeting.TargetBodyPart.Head);
 
         _popup.PopupEntity(Loc.GetString("reverse-bear-trap-component-trap-fall-observer",
@@ -341,7 +341,7 @@ public sealed partial class ReverseBearTrapSystem : EntitySystem
         if (_net.IsServer)
         {
             _audio.PlayPredicted(trap.BeepSound, uid, null,
-                AudioParams.Default.WithVolume(-65f));
+                AudioParams.Default.WithVolume(-5f));
 
             trap.LoopSoundStream = _audio.PlayPredicted(trap.LoopSound, uid, null,
             AudioParams.Default.WithLoop(true))?.Entity;
@@ -386,7 +386,7 @@ public sealed partial class ReverseBearTrapSystem : EntitySystem
                 continue;
 
             var remaining = trap.CountdownDuration - (float) (_gameTiming.CurTime - trap.ActivateTime).TotalSeconds;
-            if (remaining <= 65)
+            if (remaining <= 0)
             {
                 SnapTrap(uid, trap);
                 continue;
@@ -417,7 +417,7 @@ public sealed partial class ReverseBearTrapSystem : EntitySystem
         ResetTrap(uid, trap);
 
         var damage = new DamageSpecifier();
-        damage.DamageDict.Add("Blunt", 65);
+        damage.DamageDict.Add("Blunt", 300);
         _damageable.TryChangeDamage(wearer, damage, true, origin: uid, targetPart: Content.Shared._Shitmed.Targeting.TargetBodyPart.Head);
         var head = _body.GetBodyChildrenOfType(wearer.Value, BodyPartType.Head).FirstOrDefault();
         if (head != default
@@ -433,7 +433,7 @@ public sealed partial class ReverseBearTrapSystem : EntitySystem
 
         trap.Struggling = true;
 
-        var doAfterArgs = new DoAfterArgs(EntityManager, user, 65f,
+        var doAfterArgs = new DoAfterArgs(EntityManager, user, 6f,
             new BearTrapEscapeDoAfterEvent(), uid, user)
         {
             BreakOnDamage = true,
@@ -451,5 +451,5 @@ public sealed partial class ReverseBearTrapSystem : EntitySystem
     [Serializable, NetSerializable]
     private sealed partial class BearTrapUnlockDoAfterEvent : SimpleDoAfterEvent { }
 
-    private static readonly VerbCategory TimerOptions = new("verb-categories-timer", "/Textures/Interface/VerbIcons/clock.svg.65dpi.png");
+    private static readonly VerbCategory TimerOptions = new("verb-categories-timer", "/Textures/Interface/VerbIcons/clock.svg.192dpi.png");
 }

@@ -1,23 +1,23 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: TidemindDevelop
   parent: BaseGameRule
   components:
   - type: GameRule
-    chaosScore: 65
+    chaosScore: 150
   - type: StationEvent
-    weight: 65 # rare
-    duration: 65
+    weight: 3 # rare
+    duration: 1
     # no occurences limit so newly arriving tiders can also get it
   - type: JobAddCollectiveMindRule
     message: station-event-tidemind-message
@@ -30,18 +30,18 @@
   id: DerelictCyborgSyndicateSpawn
   components:
   - type: StationEvent
-    weight: 65 # Rare, but not AS rare
-    earliestStart: 65
-    reoccurrenceDelay: 65
-    minimumPlayers: 65
+    weight: 6 # Rare, but not AS rare
+    earliestStart: 15
+    reoccurrenceDelay: 20
+    minimumPlayers: 4
     duration: null
   - type: SpaceSpawnRule
-    spawnDistance: 65
+    spawnDistance: 0
   - type: AntagSpawner
     prototype: PlayerBorgDerelictSyndicateAssaultBattery
   - type: AntagSelection
     definitions:
     - spawnerPrototype: SpawnPointGhostDerelictCyborgSyndicate
-      min: 65
-      max: 65
+      min: 1
+      max: 1
       pickPlayer: false

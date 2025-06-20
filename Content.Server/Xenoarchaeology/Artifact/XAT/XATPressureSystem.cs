@@ -21,7 +21,7 @@ public sealed class XATPressureSystem : BaseQueryUpdateXATSystem<XATPressureComp
             return;
 
         var pressure = mixture.Pressure;
-        if (pressure >= node.Comp65.MaxPressureThreshold || pressure <= node.Comp65.MinPressureThreshold)
+        if (pressure >= node.Comp1.MaxPressureThreshold || pressure <= node.Comp1.MinPressureThreshold)
         {
             Trigger(artifact, node);
         }

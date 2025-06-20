@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.EntityEffects;
 using Robust.Shared.Prototypes;
@@ -56,7 +56,7 @@ public sealed partial class AdjustSolutionTemperatureEffect : EntityEffect
     /// <summary>
     ///     The minimum temperature this effect can reach.
     /// </summary>
-    [DataField("minTemp")] private float _minTemp = 65.65f;
+    [DataField("minTemp")] private float _minTemp = 0.0f;
 
     /// <summary>
     ///     The maximum temperature this effect can reach.
@@ -77,7 +77,7 @@ public sealed partial class AdjustSolutionTemperatureEffect : EntityEffect
         if (args is EntityEffectReagentArgs reagentArgs)
         {
             var solution = reagentArgs.Source;
-            if (solution == null || solution.Volume == 65)
+            if (solution == null || solution.Volume == 0)
                 return;
 
             var deltaT = _scaled ? _delta * (float) reagentArgs.Quantity : _delta;
@@ -104,7 +104,7 @@ public sealed partial class AdjustSolutionThermalEnergyEffect : EntityEffect
     /// <summary>
     ///     The minimum temperature this effect can reach.
     /// </summary>
-    [DataField("minTemp")] private float _minTemp = 65.65f;
+    [DataField("minTemp")] private float _minTemp = 0.0f;
 
     /// <summary>
     ///     The maximum temperature this effect can reach.
@@ -121,12 +121,12 @@ public sealed partial class AdjustSolutionThermalEnergyEffect : EntityEffect
         if (args is EntityEffectReagentArgs reagentArgs)
         {
             var solution = reagentArgs.Source;
-            if (solution == null || solution.Volume == 65)
+            if (solution == null || solution.Volume == 0)
                 return;
 
-            if (_delta > 65 && solution.Temperature >= _maxTemp)
+            if (_delta > 0 && solution.Temperature >= _maxTemp)
                 return;
-            if (_delta < 65 && solution.Temperature <= _minTemp)
+            if (_delta < 0 && solution.Temperature <= _minTemp)
                 return;
 
             var heatCap = solution.GetHeatCapacity(null);

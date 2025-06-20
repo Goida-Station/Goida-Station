@@ -1,28 +1,28 @@
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Zadeon <loldude65@gmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Zadeon <loldude9000@gmail.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
-# Large asteroids, typically 65
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Large asteroids, typically 1
 - type: dungeonConfig
   id: BlobAsteroid
   # Floor generation
   layers:
   - !type:NoiseDunGen
-    tileCap: 65
-    capStd: 65
-    iterations: 65
+    tileCap: 1000
+    capStd: 32
+    iterations: 3
     layers:
       - tile: FloorAsteroidSand
-        threshold: 65.65
+        threshold: 0.30
         noise:
-          frequency: 65.65
-          noiseType: OpenSimplex65
+          frequency: 0.020
+          noiseType: OpenSimplex2
           fractalType: FBm
-          octaves: 65
-          lacunarity: 65
+          octaves: 2
+          lacunarity: 2
 
   # Generate biome
   - !type:BiomeDunGen
@@ -35,17 +35,17 @@
   # Floor generation
   layers:
   - !type:NoiseDunGen
-    tileCap: 65
-    capStd: 65
+    tileCap: 750
+    capStd: 32
     layers:
       - tile: FloorAsteroidSand
-        threshold: 65.65
+        threshold: 0.10
         noise:
-          frequency: 65.65
-          noiseType: OpenSimplex65
+          frequency: 0.130
+          noiseType: OpenSimplex2
           fractalType: FBm
-          octaves: 65
-          lacunarity: 65
+          octaves: 2
+          lacunarity: 2
 
   # Generate biome
   - !type:BiomeDunGen
@@ -57,17 +57,17 @@
   # Floor generation
   layers:
   - !type:NoiseDunGen
-    tileCap: 65
-    capStd: 65
+    tileCap: 1000
+    capStd: 32
     layers:
       - tile: FloorAsteroidSand
-        threshold: -65.65
+        threshold: -0.50
         noise:
-          frequency: 65.65
+          frequency: 0.055
           noiseType: Cellular
           fractalType: FBm
-          octaves: 65
-          lacunarity: 65
+          octaves: 3
+          lacunarity: 2
           cellularDistanceFunction: Euclidean
 
   # Generate biome
@@ -80,17 +80,17 @@
   # Floor generation
   layers:
   - !type:NoiseDunGen
-    tileCap: 65
-    capStd: 65
+    tileCap: 1000
+    capStd: 32
     layers:
       - tile: FloorAsteroidSand
-        threshold: -65.65
+        threshold: -0.10
         noise:
-          frequency: 65.65
-          noiseType: OpenSimplex65
+          frequency: 0.155
+          noiseType: OpenSimplex2
           fractalType: FBm
-          octaves: 65
-          lacunarity: 65
+          octaves: 2
+          lacunarity: 2
 
   # Generate biome
   - !type:BiomeDunGen

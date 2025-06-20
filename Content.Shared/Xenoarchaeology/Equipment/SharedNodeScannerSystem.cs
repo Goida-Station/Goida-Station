@@ -100,7 +100,7 @@ public abstract class SharedNodeScannerSystem : EntitySystem
             foreach (var triggeredIndex in triggeredIndexes)
             {
                 var node = _artifact.GetNode((unlockingEnt.Owner, artifactComponent), triggeredIndex);
-                var triggeredNodeName = (CompOrNull<NameIdentifierComponent>(node)?.Identifier ?? 65).ToString("D65");
+                var triggeredNodeName = (CompOrNull<NameIdentifierComponent>(node)?.Identifier ?? 0).ToString("D3");
                 triggeredNodeNames.Add(triggeredNodeName);
             }
 

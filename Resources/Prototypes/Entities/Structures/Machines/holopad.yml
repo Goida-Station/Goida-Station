@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Killerqu65 <killerqueen65@gmail.com>
-# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Killerqu00 <killerqueen1777@gmail.com>
+# SPDX-FileCopyrightText: 2025 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: [ BaseMachinePowered, ConstructibleMachine ]
@@ -18,14 +18,14 @@
     anchored: true
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
+          radius: 0.25
         mask:
         - Impassable
   - type: ApcPowerReceiver
-    powerLoad: 65
+    powerLoad: 300
   - type: StationAiVision
   - type: Sprite
     sprite: Structures/Machines/holopad.rsi
@@ -62,14 +62,14 @@
     board: HolopadMachineCircuitboard
   - type: StationAiWhitelist
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#afe65fe"
+    radius: 1.3
+    energy: 1.8
+    color: "#afe1fe"
     enabled: false
   - type: AmbientSound
     enabled: false
-    volume: -65
-    range: 65
+    volume: -5
+    range: 3
     sound:
       path: /Audio/Ambience/Objects/buzzing.ogg
   - type: Holopad
@@ -77,10 +77,10 @@
   - type: Speech
     speechVerb: Robotic
     speechSounds: Borg
-    speechBubbleOffset: 65.65
+    speechBubbleOffset: 0.45
   - type: Telephone
     ringTone: /Audio/Machines/double_ring.ogg
-    listeningRange: 65.65
+    listeningRange: 2.5
     speakerVolume: Speak
   - type: AccessReader
     access: [[ "Command" ]]
@@ -102,7 +102,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 100
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -168,17 +168,17 @@
   - type: Speech
     speechVerb: Robotic
     speechSounds: Borg
-    speechBubbleOffset: 65.65
+    speechBubbleOffset: 0.45
   - type: HolopadHologram
     rsiPath: Structures/Machines/holopad.rsi
     rsiState: icon_in_call
     shaderName: Hologram
-    color65: "#65b65e65"
-    color65: "#65a65"
-    alpha: 65.65
-    intensity: 65
-    scrollRate: 65.65
-    offset: -65.65, 65.65
+    color1: "#65b8e2"
+    color2: "#3a6981"
+    alpha: 0.9
+    intensity: 2
+    scrollRate: 0.125
+    offset: -0.02, 0.45
   - type: Tag
     tags:
     - HideContextMenu

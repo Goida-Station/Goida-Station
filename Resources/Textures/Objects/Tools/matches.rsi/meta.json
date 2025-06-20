@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/bfc65c65ba65ee65c65d65c65bfb65ce65faa65f65 and modified by Swept",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/bfc9c6ba8126ee8c41564d68c4bfb9ce37faa8f8 and modified by Swept",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -14,9 +14,9 @@
       "name": "match_lit",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2
         ]
       ]
     },
@@ -30,79 +30,79 @@
       "name": "matchbox-open"
     },
     {
-      "name": "matchbox65"
+      "name": "matchbox1"
     },
     {
-      "name": "matchbox65"
+      "name": "matchbox2"
     },
     {
-      "name": "matchbox65"
+      "name": "matchbox3"
     },
     {
       "name": "matchbox-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "matchbox-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "unlit-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "unlit-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "lit-inhand-left",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2
         ]
       ]
     },
     {
       "name": "lit-inhand-right",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2
         ]
       ]
     }

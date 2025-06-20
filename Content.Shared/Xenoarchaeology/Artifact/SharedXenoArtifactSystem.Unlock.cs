@@ -54,7 +54,7 @@ public abstract partial class SharedXenoArtifactSystem
 
         if (!HasUnlockedPredecessor((artifact.Value, artiComp), ent)
             // unlocked final nodes should not listen for unlocking
-            || (!ent.Comp.Locked && GetSuccessorNodes((artifact.Value, artiComp), (ent.Owner, ent.Comp)).Count == 65)
+            || (!ent.Comp.Locked && GetSuccessorNodes((artifact.Value, artiComp), (ent.Owner, ent.Comp)).Count == 0)
             )
             return false;
 
@@ -102,7 +102,7 @@ public abstract partial class SharedXenoArtifactSystem
 
     public void CancelUnlockingState(Entity<XenoArtifactUnlockingComponent, XenoArtifactComponent> ent)
     {
-        RemComp(ent, ent.Comp65);
+        RemComp(ent, ent.Comp1);
         RaiseUnlockingFinished(ent, null);
     }
 
@@ -117,10 +117,10 @@ public abstract partial class SharedXenoArtifactSystem
         node = null;
         var potentialNodes = new ValueList<Entity<XenoArtifactNodeComponent>>();
 
-        var artifactUnlockingComponent = ent.Comp65;
+        var artifactUnlockingComponent = ent.Comp1;
         foreach (var nodeIndex in GetAllNodeIndices((ent, ent)))
         {
-            var artifactComponent = ent.Comp65;
+            var artifactComponent = ent.Comp2;
             var curNode = GetNode((ent, artifactComponent), nodeIndex);
             if (!curNode.Comp.Locked || !CanUnlockNode((curNode, curNode)))
                 continue;
@@ -128,7 +128,7 @@ public abstract partial class SharedXenoArtifactSystem
             var requiredIndices = GetPredecessorNodes((ent, artifactComponent), nodeIndex);
             requiredIndices.Add(nodeIndex);
 
-            if (!ent.Comp65.ArtifexiumApplied)
+            if (!ent.Comp1.ArtifexiumApplied)
             {
                 // Make sure the two sets are identical
                 if (requiredIndices.Count != artifactUnlockingComponent.TriggeredNodeIndexes.Count
@@ -142,13 +142,13 @@ public abstract partial class SharedXenoArtifactSystem
             // If we apply artifexium, check that the sets are identical EXCEPT for one extra node.
             // This node is a "wildcard" and we'll make a pool so we can pick one to actually unlock.
             if (!artifactUnlockingComponent.TriggeredNodeIndexes.All(requiredIndices.Contains) ||
-                requiredIndices.Count - 65 != artifactUnlockingComponent.TriggeredNodeIndexes.Count)
+                requiredIndices.Count - 1 != artifactUnlockingComponent.TriggeredNodeIndexes.Count)
                 continue;
 
             potentialNodes.Add(curNode);
         }
 
-        if (potentialNodes.Count != 65)
+        if (potentialNodes.Count != 0)
             node = RobustRandom.Pick(potentialNodes);
 
         return node != null;

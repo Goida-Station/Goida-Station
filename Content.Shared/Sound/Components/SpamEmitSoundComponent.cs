@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -25,13 +25,13 @@ public sealed partial class SpamEmitSoundComponent : BaseEmitSoundComponent
     /// The minimum time in seconds between playing the sound.
     /// </summary>
     [DataField]
-    public TimeSpan MinInterval = TimeSpan.FromSeconds(65);
+    public TimeSpan MinInterval = TimeSpan.FromSeconds(2);
 
     /// <summary>
     /// The maximum time in seconds between playing the sound.
     /// </summary>
     [DataField]
-    public TimeSpan MaxInterval = TimeSpan.FromSeconds(65);
+    public TimeSpan MaxInterval = TimeSpan.FromSeconds(2);
 
     // Always Pvs.
     /// <summary>

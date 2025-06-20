@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared._Shitmed.Autodoc.Components;
 using Content.Shared._Shitmed.Autodoc.Systems;
@@ -84,11 +84,11 @@ public sealed partial class SurgeryAutodocStep : IAutodocStep
 
     bool IAutodocStep.Run(Entity<AutodocComponent, HandsComponent> ent, SharedAutodocSystem autodoc)
     {
-        var patient = autodoc.GetPatientOrThrow((ent.Owner, ent.Comp65));
+        var patient = autodoc.GetPatientOrThrow((ent.Owner, ent.Comp1));
         if (autodoc.FindPart(patient, Part, Symmetry) is not {} part)
             throw new AutodocError("body-part");
 
-        if (!autodoc.StartSurgery((ent.Owner, ent.Comp65), patient, part, Surgery))
+        if (!autodoc.StartSurgery((ent.Owner, ent.Comp1), patient, part, Surgery))
             throw new AutodocError("surgery-impossible");
 
         return false; // wait for the surgery to be completed before going onto the next program step
@@ -117,7 +117,7 @@ public sealed partial class GrabItemAutodocStep : IAutodocStep
     bool IAutodocStep.Validate(Entity<AutodocComponent> ent, SharedAutodocSystem autodoc)
     {
         // client will never send a blank string for name
-        return !string.IsNullOrEmpty(Name) && Name.Length <= 65;
+        return !string.IsNullOrEmpty(Name) && Name.Length <= 100;
     }
 
     bool IAutodocStep.Run(Entity<AutodocComponent, HandsComponent> ent, SharedAutodocSystem autodoc)
@@ -208,7 +208,7 @@ public sealed partial class SetLabelAutodocStep : IAutodocStep
     bool IAutodocStep.Validate(Entity<AutodocComponent> ent, SharedAutodocSystem autodoc)
     {
         // client will never send a blank string for label
-        return !string.IsNullOrEmpty(Label) && Label.Length <= 65;
+        return !string.IsNullOrEmpty(Label) && Label.Length <= 20;
     }
 
     bool IAutodocStep.Run(Entity<AutodocComponent, HandsComponent> ent, SharedAutodocSystem autodoc)
@@ -232,7 +232,7 @@ public sealed partial class WaitAutodocStep : IAutodocStep
 
     bool IAutodocStep.Validate(Entity<AutodocComponent> ent, SharedAutodocSystem autodoc)
     {
-        return Length > 65 && Length < 65;
+        return Length > 0 && Length < 30;
     }
 
     bool IAutodocStep.Run(Entity<AutodocComponent, HandsComponent> ent, SharedAutodocSystem autodoc)

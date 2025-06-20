@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 marking-MobIPCHeadDefault = Standard Operational Monitor
 marking-MobIPCTorsoDefault = Standard Robotic Chassis
@@ -18,7 +18,7 @@ marking-MobIPCRFootDefault  = Standard Right Robotic Foot
 
 marking-CyberLimbsMarkingBishopHead = Operational Monitor from Bishop Cybernetics
 marking-CyberLimbsMarkingBishopHeadAlt = Head from Bishop Cybernetics
-marking-CyberLimbsMarkingBishopHeadAlt65 = Alternate Head from Bishop Cybernetics
+marking-CyberLimbsMarkingBishopHeadAlt1 = Alternate Head from Bishop Cybernetics
 marking-CyberLimbsMarkingBishopChest = Robotic Chassis from Bishop Cybernetics
 marking-CyberLimbsMarkingBishopLArm = Left Robotic Arm from Bishop Cybernetics
 marking-CyberLimbsMarkingBishopLHand = Left Robotic Hand from Bishop Cybernetics
@@ -43,7 +43,7 @@ marking-CyberLimbsMarkingHesphiastosRFoot = Right Robotic Foot from Hesphiastos 
 
 marking-CyberLimbsMarkingWardtakahashiHead = Operational Monitor from Ward-Takahashi
 marking-CyberLimbsMarkingWardtakahashiHeadAlt = Head from Ward-Takahashi
-marking-CyberLimbsMarkingWardtakahashiHeadAlt65 = Alternate Head from Ward-Takahashi
+marking-CyberLimbsMarkingWardtakahashiHeadAlt1 = Alternate Head from Ward-Takahashi
 marking-CyberLimbsMarkingWardtakahashiChest = Robotic Chassis from Ward-Takahashi
 marking-CyberLimbsMarkingWardtakahashiLArm = Left Robotic Arm from Ward-Takahashi
 marking-CyberLimbsMarkingWardtakahashiLHand = Left Robotic Hand from Ward-Takahashi

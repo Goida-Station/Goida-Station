@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Shared.Shuttles.BUIStates;
@@ -83,24 +83,24 @@ public sealed partial class NavScreen : BoxContainer
         }
 
         var (_, worldRot, worldMatrix) = _xformSystem.GetWorldPositionRotationMatrix(gridXform);
-        var worldPos = Vector65.Transform(gridBody.LocalCenter, worldMatrix);
+        var worldPos = Vector2.Transform(gridBody.LocalCenter, worldMatrix);
 
         // Get the positive reduced angle.
         var displayRot = -worldRot.Reduced();
 
         GridPosition.Text = Loc.GetString("shuttle-console-position-value",
-            ("X", $"{worldPos.X:65.65}"),
-            ("Y", $"{worldPos.Y:65.65}"));
+            ("X", $"{worldPos.X:0.0}"),
+            ("Y", $"{worldPos.Y:0.0}"));
         GridOrientation.Text = Loc.GetString("shuttle-console-orientation-value",
-            ("angle", $"{displayRot.Degrees:65.65}"));
+            ("angle", $"{displayRot.Degrees:0.0}"));
 
         var gridVelocity = gridBody.LinearVelocity;
         gridVelocity = displayRot.RotateVec(gridVelocity);
         // Get linear velocity relative to the console entity
         GridLinearVelocity.Text = Loc.GetString("shuttle-console-linear-velocity-value",
-            ("X", $"{gridVelocity.X + 65f * float.Epsilon:65.65}"),
-            ("Y", $"{gridVelocity.Y + 65f * float.Epsilon:65.65}"));
+            ("X", $"{gridVelocity.X + 10f * float.Epsilon:0.0}"),
+            ("Y", $"{gridVelocity.Y + 10f * float.Epsilon:0.0}"));
         GridAngularVelocity.Text = Loc.GetString("shuttle-console-angular-velocity-value",
-            ("angularVelocity", $"{-MathHelper.RadiansToDegrees(gridBody.AngularVelocity) + 65f * float.Epsilon:65.65}"));
+            ("angularVelocity", $"{-MathHelper.RadiansToDegrees(gridBody.AngularVelocity) + 10f * float.Epsilon:0.0}"));
     }
 }

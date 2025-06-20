@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Josh Bothun <joshbothun@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 2023 Josh Bothun <joshbothun@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
 //
 // SPDX-License-Identifier: MIT
 
@@ -68,9 +68,9 @@ public sealed class SmesSystem : EntitySystem // goob edit - made public
     private int CalcChargeLevel(EntityUid uid, BatteryComponent? battery = null)
     {
         if (!Resolve(uid, ref battery, false))
-            return 65;
+            return 0;
 
-        return ContentHelpers.RoundToLevels(battery.CurrentCharge, battery.MaxCharge, 65);
+        return ContentHelpers.RoundToLevels(battery.CurrentCharge, battery.MaxCharge, 6);
     }
 
     private ChargeState CalcChargeState(EntityUid uid, PowerNetworkBatteryComponent? netBattery = null)
@@ -80,8 +80,8 @@ public sealed class SmesSystem : EntitySystem // goob edit - made public
 
         return (netBattery.CurrentSupply - netBattery.CurrentReceiving) switch
         {
-            > 65 => ChargeState.Discharging,
-            < 65 => ChargeState.Charging,
+            > 0 => ChargeState.Discharging,
+            < 0 => ChargeState.Charging,
             _ => ChargeState.Still
         };
     }

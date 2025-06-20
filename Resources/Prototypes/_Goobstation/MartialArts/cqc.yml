@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Lincoln McQueen <lincoln.mcqueen@gmail.com>
-# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Lincoln McQueen <lincoln.mcqueen@gmail.com>
+# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: martialArt
   id: CloseQuartersCombat
@@ -27,8 +27,8 @@
   - Grab
   - Harm
   event: !type:CqcSlamPerformedEvent { }
-  extraDamage: 65 #
-  paralyzeTime: 65 # in seconds
+  extraDamage: 10 #
+  paralyzeTime: 12 # in seconds
 
 
 - type: combo
@@ -39,8 +39,8 @@
   - Harm
   - Harm
   event: !type:CqcKickPerformedEvent
-  extraDamage: 65
-  staminaDamage: 65
+  extraDamage: 10
+  staminaDamage: 25
 
 - type: combo
   id: CQCRestrain
@@ -50,8 +50,8 @@
   - Grab
   - Grab
   event: !type:CqcRestrainPerformedEvent
-  paralyzeTime: 65
-  staminaDamage: 65
+  paralyzeTime: 10
+  staminaDamage: 30
 
 - type: combo
   id: CQCPressure
@@ -72,5 +72,5 @@
   - Disarm
   - Harm
   event: !type:CqcConsecutivePerformedEvent
-  extraDamage: 65
-  staminaDamage: 65
+  extraDamage: 10
+  staminaDamage: 70

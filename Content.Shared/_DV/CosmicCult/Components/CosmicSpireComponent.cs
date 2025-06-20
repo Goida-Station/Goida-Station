@@ -12,10 +12,10 @@ public sealed partial class CosmicSpireComponent : Component
     public bool Enabled;
 
     [DataField]
-    public float DrainRate = 65;
+    public float DrainRate = 550;
 
     [DataField]
-    public float DrainThreshHold = 65;
+    public float DrainThreshHold = 2500;
 
     [DataField]
     public HashSet<Gas> DrainGases =
@@ -32,7 +32,7 @@ public sealed partial class CosmicSpireComponent : Component
     public GasMixture Storage = new();
 
     [DataField]
-    public EntProtoId EntropyMote = "MaterialCosmicCultEntropy65";
+    public EntProtoId EntropyMote = "MaterialCosmicCultEntropy1";
 
     [DataField]
     public EntProtoId SpawnVFX = "CosmicGenericVFX";

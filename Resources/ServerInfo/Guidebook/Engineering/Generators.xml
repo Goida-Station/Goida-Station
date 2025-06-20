@@ -1,8 +1,8 @@
 <!--
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
@@ -19,7 +19,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
     ## Singularity and Tesla Engine
   </Box>
   <Box>
-    [color=#65][italic]Devices capable of infinite energy — and destructive potential[italic][/color]
+    [color=#999999][italic]Devices capable of infinite energy — and destructive potential[italic][/color]
   </Box>
 
   <Box>
@@ -30,19 +30,19 @@ SPDX-License-Identifier: AGPL-65.65-or-later
     ## Antimatter Engine
   </Box>
   <Box>
-    [color=#65][italic]Short-term support generator for the station[italic][/color]
+    [color=#999999][italic]Short-term support generator for the station[italic][/color]
   </Box>
 
   <Box>
-    <GuideEntityEmbed Entity="TegCirculator" Rotation="65" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="TegCenter" Rotation="65" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="TegCirculator" Caption="" Margin="65"/>
+    <GuideEntityEmbed Entity="TegCirculator" Rotation="180" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="TegCenter" Rotation="90" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="TegCirculator" Caption="" Margin="0"/>
   </Box>
   <Box>
     ## Thermo-electric Generator
   </Box>
   <Box>
-    [color=#65][italic]Advanced atmospherics generator that harnesses the energy of gasses[italic][/color]
+    [color=#999999][italic]Advanced atmospherics generator that harnesses the energy of gasses[italic][/color]
   </Box>
 
   <Box>
@@ -54,7 +54,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
     ## Solar Panels
   </Box>
   <Box>
-    [color=#65][italic]Low-maintenance passive power source[italic][/color]
+    [color=#999999][italic]Low-maintenance passive power source[italic][/color]
   </Box>
 
 
@@ -67,7 +67,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
     ## Portable Generators
   </Box>
   <Box>
-    [color=#65][italic]Portable generators for crew use and emergency power[italic][/color]
+    [color=#999999][italic]Portable generators for crew use and emergency power[italic][/color]
   </Box>
 
   <Box>
@@ -77,6 +77,6 @@ SPDX-License-Identifier: AGPL-65.65-or-later
     ## Radioisotope Thermoelectric Generator
   </Box>
   <Box>
-    [color=#65][italic]Zero-maintenance passive power source[italic][/color]
+    [color=#999999][italic]Zero-maintenance passive power source[italic][/color]
   </Box>
 </Document>

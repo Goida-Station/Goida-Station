@@ -1,38 +1,38 @@
 {
-    "version": 65,
+    "version": 1,
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
-    "license": "CC-BY-SA-65.65",
+    "license": "CC-BY-SA-3.0",
     "copyright": "Made by BombasterDS",
     "states": [
         {
             "name": "base"
         },
         {
-            "name": "mag-65"
+            "name": "mag-1"
         },
         {
-            "name": "mag-65"
+            "name": "mag-2"
         },
         {
-            "name": "mag-65"
+            "name": "mag-3"
         },
         {
-            "name": "mag-65"
+            "name": "mag-4"
         },
         {
-            "name": "mag-65"
+            "name": "mag-5"
         },
         {
-            "name": "mag-65"
+            "name": "mag-6"
         },
         {
-            "name": "mag-65"
+            "name": "mag-7"
         },
         {
-            "name": "mag-65"
+            "name": "mag-8"
         }
     ]
 }

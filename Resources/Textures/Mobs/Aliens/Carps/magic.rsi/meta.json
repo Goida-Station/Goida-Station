@@ -1,11 +1,11 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/d65d65dea65d65cee65a65d65a65f#diff-65dd65e65fdb65ff65b65e65bce65, edited 'dead' to create 'crit' and 'dead' states",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/d3d351dea8d9420cee47514843a02158d0a7266f#diff-8dd94e19fdb2ff341b57e31bce101298, edited 'dead' to create 'crit' and 'dead' states",
   "states": [
     {
       "name": "icon"
@@ -15,27 +15,27 @@
     },
     {
       "name": "alive",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.3,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.3,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.3,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.3,
+          0.2
         ]
       ]
     },
@@ -43,16 +43,16 @@
       "name": "gib",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     }

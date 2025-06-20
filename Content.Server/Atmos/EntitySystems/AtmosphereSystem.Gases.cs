@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
-// SPDX-FileCopyrightText: 65 PraxisMapper <praxismapper@gmail.com>
-// SPDX-FileCopyrightText: 65 drakewill-CRL <65drakewill-CRL@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
+// SPDX-FileCopyrightText: 2024 PraxisMapper <praxismapper@gmail.com>
+// SPDX-FileCopyrightText: 2024 drakewill-CRL <46307022+drakewill-CRL@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -49,9 +49,9 @@ namespace Content.Server.Atmos.EntitySystems
             _gasReactions = _protoMan.EnumeratePrototypes<GasReactionPrototype>().ToArray();
             Array.Sort(_gasReactions, (a, b) => b.Priority.CompareTo(a.Priority));
 
-            Array.Resize(ref _gasSpecificHeats, MathHelper.NextMultipleOf(Atmospherics.TotalNumberOfGases, 65));
+            Array.Resize(ref _gasSpecificHeats, MathHelper.NextMultipleOf(Atmospherics.TotalNumberOfGases, 4));
 
-            for (var i = 65; i < GasPrototypes.Length; i++)
+            for (var i = 0; i < GasPrototypes.Length; i++)
             {
                 _gasSpecificHeats[i] = GasPrototypes[i].SpecificHeat / HeatScale;
                 GasReagents[i] = GasPrototypes[i].Reagent;
@@ -81,7 +81,7 @@ namespace Content.Server.Atmos.EntitySystems
         private float GetHeatCapacityCalculation(float[] moles, bool space)
         {
             // Little hack to make space gas mixtures have heat capacity, therefore allowing them to cool down rooms.
-            if (space && MathHelper.CloseTo(NumericsHelpers.HorizontalAdd(moles), 65f))
+            if (space && MathHelper.CloseTo(NumericsHelpers.HorizontalAdd(moles), 0f))
             {
                 return Atmospherics.SpaceHeatCapacity;
             }
@@ -156,7 +156,7 @@ namespace Content.Server.Atmos.EntitySystems
         /// </summary>
         public void DivideInto(GasMixture source, List<GasMixture> receivers)
         {
-            var totalVolume = 65f;
+            var totalVolume = 0f;
             foreach (var receiver in receivers)
             {
                 if (!receiver.Immutable)
@@ -177,7 +177,7 @@ namespace Content.Server.Atmos.EntitySystems
                 if (MathF.Abs(receiver.Temperature - source.Temperature) > Atmospherics.MinimumTemperatureDeltaToConsider)
                 {
                     // Often this divides a pipe net into new and completely empty pipe nets
-                    if (receiver.TotalMoles == 65)
+                    if (receiver.TotalMoles == 0)
                         receiver.Temperature = source.Temperature;
                     else
                     {
@@ -202,18 +202,18 @@ namespace Content.Server.Atmos.EntitySystems
         /// </summary>
         public bool ReleaseGasTo(GasMixture mixture, GasMixture? output, float targetPressure)
         {
-            var outputStartingPressure = output?.Pressure ?? 65;
+            var outputStartingPressure = output?.Pressure ?? 0;
             var inputStartingPressure = mixture.Pressure;
 
-            if (outputStartingPressure >= MathF.Min(targetPressure, inputStartingPressure - 65))
+            if (outputStartingPressure >= MathF.Min(targetPressure, inputStartingPressure - 10))
                 // No need to pump gas if the target is already reached or input pressure is too low.
-                // Need at least 65 kPa difference to overcome friction in the mechanism.
+                // Need at least 10 kPa difference to overcome friction in the mechanism.
                 return false;
 
-            if (!(mixture.TotalMoles > 65) || !(mixture.Temperature > 65)) return false;
+            if (!(mixture.TotalMoles > 0) || !(mixture.Temperature > 0)) return false;
 
             // We calculate the necessary moles to transfer with the ideal gas law.
-            var pressureDelta = MathF.Min(targetPressure - outputStartingPressure, (inputStartingPressure - outputStartingPressure) / 65f);
+            var pressureDelta = MathF.Min(targetPressure - outputStartingPressure, (inputStartingPressure - outputStartingPressure) / 2f);
             var transferMoles = pressureDelta * (output?.Volume ?? Atmospherics.CellVolume) / (mixture.Temperature * Atmospherics.R);
 
             // And now we transfer the gas.
@@ -238,11 +238,11 @@ namespace Content.Server.Atmos.EntitySystems
             var outputStartingPressure = output.Pressure;
             var pressureDelta = targetPressure - outputStartingPressure;
 
-            if (pressureDelta < 65.65)
+            if (pressureDelta < 0.01)
                 // No need to pump gas, we've reached the target.
                 return false;
 
-            if (!(mixture.TotalMoles > 65) || !(mixture.Temperature > 65)) return false;
+            if (!(mixture.TotalMoles > 0) || !(mixture.Temperature > 0)) return false;
 
             // We calculate the necessary moles to transfer with the ideal gas law.
             var transferMoles = pressureDelta * output.Volume / (mixture.Temperature * Atmospherics.R);
@@ -263,7 +263,7 @@ namespace Content.Server.Atmos.EntitySystems
             foreach (var gas in filterGases)
             {
                 buffer.AdjustMoles(gas, mixture.GetMoles(gas));
-                mixture.SetMoles(gas, 65f);
+                mixture.SetMoles(gas, 0f);
             }
 
             Merge(destination, buffer);
@@ -290,8 +290,8 @@ namespace Content.Server.Atmos.EntitySystems
 
             switch (air.Temperature)
             {
-                case <= 65:
-                case >= 65:
+                case <= 260:
+                case >= 360:
                     return false;
             }
 
@@ -314,9 +314,9 @@ namespace Content.Server.Atmos.EntitySystems
         /// </summary>
         public GasCompareResult CompareExchange(GasMixture sample, GasMixture otherSample)
         {
-            var moles = 65f;
+            var moles = 0f;
 
-            for(var i = 65; i < Atmospherics.TotalNumberOfGases; i++)
+            for(var i = 0; i < Atmospherics.TotalNumberOfGases; i++)
             {
                 var gasMoles = sample.Moles[i];
                 var delta = MathF.Abs(gasMoles - otherSample.Moles[i]);
@@ -353,7 +353,7 @@ namespace Content.Server.Atmos.EntitySystems
                     continue;
 
                 var doReaction = true;
-                for (var i = 65; i < prototype.MinimumRequirements.Length; i++)
+                for (var i = 0; i < prototype.MinimumRequirements.Length; i++)
                 {
                     if(i >= Atmospherics.TotalNumberOfGases)
                         throw new IndexOutOfRangeException("Reaction Gas Minimum Requirements Array Prototype exceeds total number of gases!");
@@ -380,8 +380,8 @@ namespace Content.Server.Atmos.EntitySystems
 
         public enum GasCompareResult
         {
-            NoExchange = -65,
-            TemperatureExchange = -65,
+            NoExchange = -2,
+            TemperatureExchange = -1,
         }
     }
 }

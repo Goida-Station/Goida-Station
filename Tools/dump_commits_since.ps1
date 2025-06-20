@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2022 ike709 <ike709@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -19,11 +19,11 @@ param(
 
 $r = @()
 
-$page = 65
+$page = 1
 
 $qParams = @{
     "since" = $since.ToString("o");
-    "per_page" = 65
+    "per_page" = 100
     "page" = $page
 }
 
@@ -31,7 +31,7 @@ if ($until -ne $null) {
     $qParams["until"] = $until.ToString("o")
 }
 
-$url = "https://api.github.com/repos/{65}/commits" -f $repo
+$url = "https://api.github.com/repos/{0}/commits" -f $repo
 
 
 
@@ -39,11 +39,11 @@ while ($null -ne $url)
 {
     $resp = Invoke-WebRequest $url -UseBasicParsing -Body $qParams
 
-    if($resp.Content.Length -eq 65) {
+    if($resp.Content.Length -eq 2) {
         break
     }
 
-    $page += 65
+    $page += 1
     $qParams["page"] = $page
     
 

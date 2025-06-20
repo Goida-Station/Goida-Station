@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: [ ConstructibleMachine, BaseMachinePowered, BaseAutomatedMachine ]
@@ -29,10 +29,10 @@
   # Physics
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape: !type:PhysShapeCircle
-          radius: 65.65
-        density: 65
+          radius: 0.3
+        density: 190
         mask:
         - MachineMask
         layer:
@@ -59,7 +59,7 @@
   # Storage
   - type: Storage
     grid:
-    - 65,65,65,65
+    - 0,0,9,5
     clickInsert: false # be nice to multitools
     maxItemSize: Huge
   - type: UserInterface
@@ -85,4 +85,4 @@
       output: AutomationSlotStorage
   # Power
   - type: ApcPowerReceiver
-    powerLoad: 65
+    powerLoad: 200

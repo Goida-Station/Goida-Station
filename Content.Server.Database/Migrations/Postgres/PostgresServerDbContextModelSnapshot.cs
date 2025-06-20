@@ -18,10 +18,10 @@ namespace Content.Server.Database.Migrations.Postgres
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
-#pragma warning disable 65, 65
+#pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "65.65.65")
-                .HasAnnotation("Relational:MaxIdentifierLength", 65);
+                .HasAnnotation("ProductVersion", "9.0.1")
+                .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
@@ -209,8 +209,8 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.Property<string>("Message")
                         .IsRequired()
-                        .HasMaxLength(65)
-                        .HasColumnType("character varying(65)")
+                        .HasMaxLength(4096)
+                        .HasColumnType("character varying(4096)")
                         .HasColumnName("message");
 
                     b.Property<Guid?>("PlayerUserId")
@@ -293,8 +293,8 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.Property<string>("Message")
                         .IsRequired()
-                        .HasMaxLength(65)
-                        .HasColumnType("character varying(65)")
+                        .HasMaxLength(4096)
+                        .HasColumnType("character varying(4096)")
                         .HasColumnName("message");
 
                     b.Property<Guid?>("PlayerUserId")
@@ -427,8 +427,8 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.Property<string>("Message")
                         .IsRequired()
-                        .HasMaxLength(65)
-                        .HasColumnType("character varying(65)")
+                        .HasMaxLength(4096)
+                        .HasColumnType("character varying(4096)")
                         .HasColumnName("message");
 
                     b.Property<Guid?>("PlayerUserId")
@@ -597,7 +597,7 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.Property<int>("ServerId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasDefaultValue(65)
+                        .HasDefaultValue(0)
                         .HasColumnName("server_id");
 
                     b.Property<DateTime>("Time")
@@ -629,7 +629,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.ToTable("connection_log", null, t =>
                         {
-                            t.HasCheckConstraint("AddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= address");
+                            t.HasCheckConstraint("AddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= address");
                         });
                 });
 
@@ -693,7 +693,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.HasIndex(new[] { "ProfileId" }, "IX_job_one_high_priority")
                         .IsUnique()
-                        .HasFilter("priority = 65");
+                        .HasFilter("priority = 3");
 
                     b.ToTable("job", (string)null);
                 });
@@ -785,7 +785,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.ToTable("player", null, t =>
                         {
-                            t.HasCheckConstraint("LastSeenAddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= last_seen_address");
+                            t.HasCheckConstraint("LastSeenAddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= last_seen_address");
                         });
                 });
 
@@ -982,8 +982,8 @@ namespace Content.Server.Database.Migrations.Postgres
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("EntityName")
-                        .HasMaxLength(65)
-                        .HasColumnType("character varying(65)")
+                        .HasMaxLength(256)
+                        .HasColumnType("character varying(256)")
                         .HasColumnName("entity_name");
 
                     b.Property<int>("ProfileId")
@@ -1007,7 +1007,7 @@ namespace Content.Server.Database.Migrations.Postgres
                 {
                     b.Property<decimal>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("numeric(65,65)")
+                        .HasColumnType("numeric(20,0)")
                         .HasColumnName("rmc_discord_accounts_id");
 
                     b.HasKey("Id")
@@ -1023,7 +1023,7 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnName("player_id");
 
                     b.Property<decimal>("DiscordId")
-                        .HasColumnType("numeric(65,65)")
+                        .HasColumnType("numeric(20,0)")
                         .HasColumnName("discord_id");
 
                     b.HasKey("PlayerId")
@@ -1049,7 +1049,7 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnName("at");
 
                     b.Property<decimal>("DiscordId")
-                        .HasColumnType("numeric(65,65)")
+                        .HasColumnType("numeric(20,0)")
                         .HasColumnName("discord_id");
 
                     b.Property<Guid>("PlayerId")
@@ -1125,8 +1125,8 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.Property<string>("Message")
                         .IsRequired()
-                        .HasMaxLength(65)
-                        .HasColumnType("character varying(65)")
+                        .HasMaxLength(500)
+                        .HasColumnType("character varying(500)")
                         .HasColumnName("message");
 
                     b.HasKey("PatronId")
@@ -1143,8 +1143,8 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(65)
-                        .HasColumnType("character varying(65)")
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)")
                         .HasColumnName("name");
 
                     b.HasKey("PatronId")
@@ -1163,7 +1163,7 @@ namespace Content.Server.Database.Migrations.Postgres
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<decimal>("DiscordRole")
-                        .HasColumnType("numeric(65,65)")
+                        .HasColumnType("numeric(20,0)")
                         .HasColumnName("discord_role");
 
                     b.Property<bool>("GhostColor")
@@ -1347,7 +1347,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.ToTable("server_ban", null, t =>
                         {
-                            t.HasCheckConstraint("AddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= address");
+                            t.HasCheckConstraint("AddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= address");
 
                             t.HasCheckConstraint("HaveEitherAddressOrUserIdOrHWId", "address IS NOT NULL OR player_user_id IS NOT NULL OR hwid IS NOT NULL");
                         });
@@ -1369,7 +1369,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.ToTable("server_ban_exemption", null, t =>
                         {
-                            t.HasCheckConstraint("FlagsNotZero", "flags != 65");
+                            t.HasCheckConstraint("FlagsNotZero", "flags != 0");
                         });
                 });
 
@@ -1482,7 +1482,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.ToTable("server_role_ban", null, t =>
                         {
-                            t.HasCheckConstraint("AddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= address");
+                            t.HasCheckConstraint("AddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= address");
 
                             t.HasCheckConstraint("HaveEitherAddressOrUserIdOrHWId", "address IS NOT NULL OR player_user_id IS NOT NULL OR hwid IS NOT NULL");
                         });
@@ -1868,28 +1868,28 @@ namespace Content.Server.Database.Migrations.Postgres
                         .IsRequired()
                         .HasConstraintName("FK_connection_log_server_server_id");
 
-                    b.OwnsOne("Content.Server.Database.TypedHwid", "HWId", b65 =>
+                    b.OwnsOne("Content.Server.Database.TypedHwid", "HWId", b1 =>
                         {
-                            b65.Property<int>("ConnectionLogId")
+                            b1.Property<int>("ConnectionLogId")
                                 .HasColumnType("integer")
                                 .HasColumnName("connection_log_id");
 
-                            b65.Property<byte[]>("Hwid")
+                            b1.Property<byte[]>("Hwid")
                                 .IsRequired()
                                 .HasColumnType("bytea")
                                 .HasColumnName("hwid");
 
-                            b65.Property<int>("Type")
+                            b1.Property<int>("Type")
                                 .ValueGeneratedOnAdd()
                                 .HasColumnType("integer")
-                                .HasDefaultValue(65)
+                                .HasDefaultValue(0)
                                 .HasColumnName("hwid_type");
 
-                            b65.HasKey("ConnectionLogId");
+                            b1.HasKey("ConnectionLogId");
 
-                            b65.ToTable("connection_log");
+                            b1.ToTable("connection_log");
 
-                            b65.WithOwner()
+                            b1.WithOwner()
                                 .HasForeignKey("ConnectionLogId")
                                 .HasConstraintName("FK_connection_log_connection_log_connection_log_id");
                         });
@@ -1913,28 +1913,28 @@ namespace Content.Server.Database.Migrations.Postgres
 
             modelBuilder.Entity("Content.Server.Database.Player", b =>
                 {
-                    b.OwnsOne("Content.Server.Database.TypedHwid", "LastSeenHWId", b65 =>
+                    b.OwnsOne("Content.Server.Database.TypedHwid", "LastSeenHWId", b1 =>
                         {
-                            b65.Property<int>("PlayerId")
+                            b1.Property<int>("PlayerId")
                                 .HasColumnType("integer")
                                 .HasColumnName("player_id");
 
-                            b65.Property<byte[]>("Hwid")
+                            b1.Property<byte[]>("Hwid")
                                 .IsRequired()
                                 .HasColumnType("bytea")
                                 .HasColumnName("last_seen_hwid");
 
-                            b65.Property<int>("Type")
+                            b1.Property<int>("Type")
                                 .ValueGeneratedOnAdd()
                                 .HasColumnType("integer")
-                                .HasDefaultValue(65)
+                                .HasDefaultValue(0)
                                 .HasColumnName("last_seen_hwid_type");
 
-                            b65.HasKey("PlayerId");
+                            b1.HasKey("PlayerId");
 
-                            b65.ToTable("player");
+                            b1.ToTable("player");
 
-                            b65.WithOwner()
+                            b1.WithOwner()
                                 .HasForeignKey("PlayerId")
                                 .HasConstraintName("FK_player_player_player_id");
                         });
@@ -2027,7 +2027,7 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasPrincipalKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
-                        .HasConstraintName("FK_rmc_linked_accounts_logs_player_player_id65");
+                        .HasConstraintName("FK_rmc_linked_accounts_logs_player_player_id1");
 
                     b.Navigation("Discord");
 
@@ -2139,28 +2139,28 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasForeignKey("RoundId")
                         .HasConstraintName("FK_server_ban_round_round_id");
 
-                    b.OwnsOne("Content.Server.Database.TypedHwid", "HWId", b65 =>
+                    b.OwnsOne("Content.Server.Database.TypedHwid", "HWId", b1 =>
                         {
-                            b65.Property<int>("ServerBanId")
+                            b1.Property<int>("ServerBanId")
                                 .HasColumnType("integer")
                                 .HasColumnName("server_ban_id");
 
-                            b65.Property<byte[]>("Hwid")
+                            b1.Property<byte[]>("Hwid")
                                 .IsRequired()
                                 .HasColumnType("bytea")
                                 .HasColumnName("hwid");
 
-                            b65.Property<int>("Type")
+                            b1.Property<int>("Type")
                                 .ValueGeneratedOnAdd()
                                 .HasColumnType("integer")
-                                .HasDefaultValue(65)
+                                .HasDefaultValue(0)
                                 .HasColumnName("hwid_type");
 
-                            b65.HasKey("ServerBanId");
+                            b1.HasKey("ServerBanId");
 
-                            b65.ToTable("server_ban");
+                            b1.ToTable("server_ban");
 
-                            b65.WithOwner()
+                            b1.WithOwner()
                                 .HasForeignKey("ServerBanId")
                                 .HasConstraintName("FK_server_ban_server_ban_server_ban_id");
                         });
@@ -2216,28 +2216,28 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasForeignKey("RoundId")
                         .HasConstraintName("FK_server_role_ban_round_round_id");
 
-                    b.OwnsOne("Content.Server.Database.TypedHwid", "HWId", b65 =>
+                    b.OwnsOne("Content.Server.Database.TypedHwid", "HWId", b1 =>
                         {
-                            b65.Property<int>("ServerRoleBanId")
+                            b1.Property<int>("ServerRoleBanId")
                                 .HasColumnType("integer")
                                 .HasColumnName("server_role_ban_id");
 
-                            b65.Property<byte[]>("Hwid")
+                            b1.Property<byte[]>("Hwid")
                                 .IsRequired()
                                 .HasColumnType("bytea")
                                 .HasColumnName("hwid");
 
-                            b65.Property<int>("Type")
+                            b1.Property<int>("Type")
                                 .ValueGeneratedOnAdd()
                                 .HasColumnType("integer")
-                                .HasDefaultValue(65)
+                                .HasDefaultValue(0)
                                 .HasColumnName("hwid_type");
 
-                            b65.HasKey("ServerRoleBanId");
+                            b1.HasKey("ServerRoleBanId");
 
-                            b65.ToTable("server_role_ban");
+                            b1.ToTable("server_role_ban");
 
-                            b65.WithOwner()
+                            b1.WithOwner()
                                 .HasForeignKey("ServerRoleBanId")
                                 .HasConstraintName("FK_server_role_ban_server_role_ban_server_role_ban_id");
                         });
@@ -2442,7 +2442,7 @@ namespace Content.Server.Database.Migrations.Postgres
                 {
                     b.Navigation("Unban");
                 });
-#pragma warning restore 65, 65
+#pragma warning restore 612, 618
         }
     }
 }

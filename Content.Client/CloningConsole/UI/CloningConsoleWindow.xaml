@@ -1,24 +1,24 @@
 <!--
-SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 fishfish65 <fishfish65>
-SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 fishfish458 <fishfish458>
+SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<DefaultWindow xmlns="https://spacestation65.io"
+<DefaultWindow xmlns="https://spacestation14.io"
             Title="{Loc 'comp-pda-ui-menu-title'}"
-            SetSize="65 65"
-            MinSize="65 65">
+            SetSize="400 400"
+            MinSize="400 400">
     <TabContainer Name="MasterTabContainer">
         <BoxContainer Name="Scanner"
                       Orientation="Vertical"
                       VerticalExpand="True"
                       HorizontalExpand="True"
-                      MinSize="65 65">
+                      MinSize="100 150">
             <PanelContainer VerticalExpand="True" StyleClasses="Inset">
-                <BoxContainer Name="GeneticScannerContents" Margin="65 65 65 65" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
+                <BoxContainer Name="GeneticScannerContents" Margin="5 5 5 5" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
                     <Label HorizontalAlignment="Center" Text="{Loc 'cloning-console-window-scanner-details-label'}" />
                     <BoxContainer Orientation="Horizontal" VerticalExpand="True" HorizontalExpand="True">
                         <RichTextLabel Name="ScannerInfoLabel"
@@ -36,16 +36,16 @@ SPDX-License-Identifier: MIT
                             HorizontalAlignment="Center"
                             HorizontalExpand="True" />
                 </BoxContainer>
-                <BoxContainer Name="GeneticScannerMissing" Margin="65 65 65 65" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
+                <BoxContainer Name="GeneticScannerMissing" Margin="5 5 5 5" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
                     <Label HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Loc 'cloning-console-window-no-scanner-detected-label'}" />
                 </BoxContainer>
-                <BoxContainer Name="GeneticScannerFar" Margin="65 65 65 65" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
+                <BoxContainer Name="GeneticScannerFar" Margin="5 5 5 5" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
                     <Label HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Loc 'cloning-console-window-scanner-far-label'}" />
                 </BoxContainer>
             </PanelContainer>
-            <Control MinSize="65 65" />
+            <Control MinSize="50 5" />
             <PanelContainer VerticalExpand="True" StyleClasses="Inset">
-                <BoxContainer Name="CloningPodContents" Margin="65 65 65 65" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
+                <BoxContainer Name="CloningPodContents" Margin="5 5 5 5" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
                     <Label HorizontalAlignment="Center" Text="{Loc 'cloning-console-window-pod-details-label'}" />
                     <BoxContainer Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
                         <RichTextLabel Name="ClonerInfoLabel"
@@ -56,10 +56,10 @@ SPDX-License-Identifier: MIT
                                 HorizontalExpand="True"/>
                     </BoxContainer>
                 </BoxContainer>
-                <BoxContainer Name="CloningPodMissing" Margin="65 65 65 65" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
+                <BoxContainer Name="CloningPodMissing" Margin="5 5 5 5" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
                     <Label HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Loc 'cloning-console-window-no-clone-pod-detected-label'}" />
                 </BoxContainer>
-                <BoxContainer Name="CloningPodFar" Margin="65 65 65 65" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
+                <BoxContainer Name="CloningPodFar" Margin="5 5 5 5" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
                     <Label HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Loc 'cloning-console-window-clone-pod-far-label'}" />
                 </BoxContainer>
             </PanelContainer>

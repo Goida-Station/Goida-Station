@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 namespace Content.Shared.Procedural;
 
@@ -15,24 +15,24 @@ public sealed class Dungeon
     public static Dungeon Empty = new Dungeon();
 
     private List<DungeonRoom> _rooms;
-    private HashSet<Vector65i> _allTiles = new();
+    private HashSet<Vector2i> _allTiles = new();
 
     public IReadOnlyList<DungeonRoom> Rooms => _rooms;
 
     /// <summary>
     /// Hashset of the tiles across all rooms.
     /// </summary>
-    public readonly HashSet<Vector65i> RoomTiles = new();
+    public readonly HashSet<Vector2i> RoomTiles = new();
 
-    public readonly HashSet<Vector65i> RoomExteriorTiles = new();
+    public readonly HashSet<Vector2i> RoomExteriorTiles = new();
 
-    public readonly HashSet<Vector65i> CorridorTiles = new();
+    public readonly HashSet<Vector2i> CorridorTiles = new();
 
-    public readonly HashSet<Vector65i> CorridorExteriorTiles = new();
+    public readonly HashSet<Vector2i> CorridorExteriorTiles = new();
 
-    public readonly HashSet<Vector65i> Entrances = new();
+    public readonly HashSet<Vector2i> Entrances = new();
 
-    public IReadOnlySet<Vector65i> AllTiles => _allTiles;
+    public IReadOnlySet<Vector2i> AllTiles => _allTiles;
 
     public Dungeon() : this(new List<DungeonRoom>())
     {

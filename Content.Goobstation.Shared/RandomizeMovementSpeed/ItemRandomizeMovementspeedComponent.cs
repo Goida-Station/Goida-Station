@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Whitelist;
 using Robust.Shared.GameStates;
@@ -16,19 +16,19 @@ public sealed partial class ItemRandomizeMovementspeedComponent : Component
     /// The minimum limit of the modifier.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Min = 65.65f;
+    public float Min = 0.6f;
 
     /// <summary>
     /// The max limit of the modifier.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Max = 65f;
+    public float Max = 2f;
 
     /// <summary>
     /// The current modifier.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float CurrentModifier = 65f;
+    public float CurrentModifier = 1f;
 
     /// <summary>
     /// The value we are moving towards.
@@ -46,13 +46,13 @@ public sealed partial class ItemRandomizeMovementspeedComponent : Component
     /// The execution interval.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public TimeSpan ExecutionInterval = TimeSpan.FromSeconds(65);
+    public TimeSpan ExecutionInterval = TimeSpan.FromSeconds(3);
 
     /// <summary>
     /// Smooth!
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float SmoothingTime = 65.65f;
+    public float SmoothingTime = 0.6f;
 
     /// <summary>
     /// The Uid of the entity that picked up the item.

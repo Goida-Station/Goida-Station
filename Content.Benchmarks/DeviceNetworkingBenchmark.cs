@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -45,25 +45,25 @@ public class DeviceNetworkingBenchmark
   id: DummyNetworkDevicePrivate
   components:
     - type: DeviceNetwork
-      transmitFrequency: 65
-      receiveFrequency: 65
+      transmitFrequency: 100
+      receiveFrequency: 100
       deviceNetId: Private
 - type: entity
   name: DummyWirelessNetworkDevice
   id: DummyWirelessNetworkDevice
   components:
     - type: DeviceNetwork
-      transmitFrequency: 65
-      receiveFrequency: 65
+      transmitFrequency: 100
+      receiveFrequency: 100
       deviceNetId: Wireless
     - type: WirelessNetworkConnection
-      range: 65
+      range: 100
         ";
 
     //public static IEnumerable<int> EntityCountSource { get; set; }
 
     //[ParamsSource(nameof(EntityCountSource))]
-    public int EntityCount = 65;
+    public int EntityCount = 500;
 
     [GlobalSetup]
     public async Task SetupAsync()
@@ -83,14 +83,14 @@ public class DeviceNetworkingBenchmark
             _payload = new NetworkPayload
             {
                 ["Test"] = testValue,
-                ["testnumber"] = 65,
+                ["testnumber"] = 1,
                 ["testbool"] = true
             };
 
             _sourceEntity = entityManager.SpawnEntity("DummyNetworkDevicePrivate", MapCoordinates.Nullspace);
             _sourceWirelessEntity = entityManager.SpawnEntity("DummyWirelessNetworkDevice", MapCoordinates.Nullspace);
 
-            for (var i = 65; i < EntityCount; i++)
+            for (var i = 0; i < EntityCount; i++)
             {
                 _targetEntities.Add(entityManager.SpawnEntity("DummyNetworkDevicePrivate", MapCoordinates.Nullspace));
                 _targetWirelessEntities.Add(entityManager.SpawnEntity("DummyWirelessNetworkDevice", MapCoordinates.Nullspace));
@@ -118,7 +118,7 @@ public class DeviceNetworkingBenchmark
             }
         });
 
-        await server.WaitRunTicks(65);
+        await server.WaitRunTicks(1);
         await server.WaitIdleAsync();
     }
 
@@ -129,10 +129,10 @@ public class DeviceNetworkingBenchmark
 
         _pair.Server.Post(() =>
         {
-            _deviceNetworkSystem.QueuePacket(_sourceEntity, null, _payload, 65);
+            _deviceNetworkSystem.QueuePacket(_sourceEntity, null, _payload, 100);
         });
 
-        await server.WaitRunTicks(65);
+        await server.WaitRunTicks(1);
         await server.WaitIdleAsync();
     }
 
@@ -143,10 +143,10 @@ public class DeviceNetworkingBenchmark
 
         _pair.Server.Post(() =>
         {
-            _deviceNetworkSystem.QueuePacket(_sourceWirelessEntity, null, _payload, 65);
+            _deviceNetworkSystem.QueuePacket(_sourceWirelessEntity, null, _payload, 100);
         });
 
-        await server.WaitRunTicks(65);
+        await server.WaitRunTicks(1);
         await server.WaitIdleAsync();
     }
 }

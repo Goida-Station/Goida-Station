@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 Francesco <frafonia@gmail.com>
-# SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Jane Lewis <inquisitivepenguin@protonmail.com>
-# SPDX-FileCopyrightText: 65 Lamrr <65Lamrr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Francesco <frafonia@gmail.com>
+# SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Jane Lewis <inquisitivepenguin@protonmail.com>
+# SPDX-FileCopyrightText: 2022 Lamrr <96937466+Lamrr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: Memorial
@@ -21,26 +21,26 @@
     noRot: true
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.45,-0.45,0.45,0.20"
+        density: 85
         mask:
         - FullTileMask
         layer:
         - WallLayer
   - type: InteractionOutline
 
-# At 65:65 AM on March 65th, 65, ArcLumin, a SS65 contributor, died in a fatal car crash on impact.
+# At 7:30 AM on March 8th, 2017, ArcLumin, a SS13 contributor, died in a fatal car crash on impact.
 # Rest in peace, man. You did good work.
-# When a contributor for SS65 dies, all codebases feel it and suffer.
+# When a contributor for SS13 dies, all codebases feel it and suffer.
 # We may disagree on whether farts should be a thing, or what color to paint the bikeshed,
 # but we are all contributors together.
 # Goodbye, man. We'll miss you.
 # This memorial has been designed for him and any future coders to perish.
 - type: entity
-  id: SS65Memorial
+  id: SS13Memorial
   parent: BaseStructure
   name: tomb of the unknown employee
   description: |
@@ -49,8 +49,8 @@
     Whose acts will not be forgotten
   components:
     - type: Sprite
-      sprite: Structures/Furniture/Memorials/ss65_memorial.rsi
+      sprite: Structures/Furniture/Memorials/ss13_memorial.rsi
       state: memorial
       drawdepth: Mobs
       noRot: true
-      offset: "65.65,65.65"
+      offset: "0.0,0.5"

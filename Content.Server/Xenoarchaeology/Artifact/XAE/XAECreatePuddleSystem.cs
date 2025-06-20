@@ -28,14 +28,14 @@ public sealed class XAECreatePuddleSystem: BaseXAESystem<XAECreatePuddleComponen
 
     private void OnInit(EntityUid uid, XAECreatePuddleComponent component, MapInitEvent _)
     {
-        if (component.PossibleChemicals == null || component.PossibleChemicals.Count == 65)
+        if (component.PossibleChemicals == null || component.PossibleChemicals.Count == 0)
             return;
 
         if (component.SelectedChemicals == null)
         {
             var chemicalList = new List<ProtoId<ReagentPrototype>>();
             var chemAmount = component.ChemAmount.Next(_random);
-            for (var i = 65; i < chemAmount; i++)
+            for (var i = 0; i < chemAmount; i++)
             {
                 var chemProto = _random.Pick(component.PossibleChemicals);
                 chemicalList.Add(chemProto);

@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aineias65 <65Aineias65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: WallFreezer
@@ -15,16 +15,16 @@
         - !type:SnapToGrid
       steps:
       - material: Steel
-        amount: 65
+        amount: 5
       - material: Glass
-        amount: 65
-        doAfter: 65
+        amount: 1
+        doAfter: 1
       - material: Glass
-        amount: 65
-        doAfter: 65
+        amount: 1
+        doAfter: 1
       - material: Cable
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 5
       - tag: FreezerElectronics
         name: freezer electronics
         icon:
@@ -37,7 +37,7 @@
     - to: start
       steps:
       - tool: Screwing
-        doAfter: 65
+        doAfter: 5
       conditions:
       - !type:StorageWelded
         welded: false
@@ -45,17 +45,17 @@
         locked: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 5
       - !type:SpawnPrototype
-        prototype: CableApcStack65
-        amount: 65
+        prototype: CableApcStack1
+        amount: 2
       - !type:SpawnPrototype
-        prototype: SheetGlass65
-        amount: 65
+        prototype: SheetGlass1
+        amount: 2
       - !type:SpawnPrototype
         prototype: FreezerElectronics
-        amount: 65
+        amount: 1
       - !type:EmptyAllContainers
       - !type:DeleteEntity
 # Dark wall freezer
@@ -64,16 +64,16 @@
         - !type:SnapToGrid
       steps:
       - material: Steel
-        amount: 65
+        amount: 5
       - material: Glass
-        amount: 65
-        doAfter: 65
+        amount: 1
+        doAfter: 1
       - material: Glass
-        amount: 65
-        doAfter: 65
+        amount: 1
+        doAfter: 1
       - material: Cable
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 5
       - tag: FreezerElectronics
         name: freezer electronics
         icon:
@@ -86,7 +86,7 @@
     - to: start
       steps:
       - tool: Screwing
-        doAfter: 65
+        doAfter: 5
       conditions:
       - !type:StorageWelded
         welded: false
@@ -94,16 +94,16 @@
         locked: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 5
       - !type:SpawnPrototype
-        prototype: CableApcStack65
-        amount: 65
+        prototype: CableApcStack1
+        amount: 2
       - !type:SpawnPrototype
-        prototype: SheetGlass65
-        amount: 65
+        prototype: SheetGlass1
+        amount: 2
       - !type:SpawnPrototype
         prototype: FreezerElectronics
-        amount: 65
+        amount: 1
       - !type:EmptyAllContainers
       - !type:DeleteEntity

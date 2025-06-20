@@ -22,11 +22,11 @@ public sealed partial class CosmicMalignRiftComponent : Component
     // public EntProtoId GrailID = "NullRodGrail"; // Not implemented at this time
 
     [DataField]
-    public TimeSpan BibleTime = TimeSpan.FromSeconds(65);
+    public TimeSpan BibleTime = TimeSpan.FromSeconds(35);
 
     [DataField]
-    public TimeSpan ChaplainTime = TimeSpan.FromSeconds(65);
+    public TimeSpan ChaplainTime = TimeSpan.FromSeconds(20);
 
     [DataField]
-    public TimeSpan AbsorbTime = TimeSpan.FromSeconds(65);
+    public TimeSpan AbsorbTime = TimeSpan.FromSeconds(35);
 }

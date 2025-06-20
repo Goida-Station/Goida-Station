@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Administration.Logs;
 using Content.Shared.Atmos.Components;
@@ -66,11 +66,11 @@ public abstract class SharedGasPressurePumpSystem : EntitySystem
 
     private void UpdateAppearance(Entity<GasPressurePumpComponent, AppearanceComponent?> ent)
     {
-        if (!Resolve(ent, ref ent.Comp65, false))
+        if (!Resolve(ent, ref ent.Comp2, false))
             return;
 
-        var pumpOn = ent.Comp65.Enabled && _receiver.IsPowered(ent.Owner);
-        _appearance.SetData(ent, PumpVisuals.Enabled, pumpOn, ent.Comp65);
+        var pumpOn = ent.Comp1.Enabled && _receiver.IsPowered(ent.Owner);
+        _appearance.SetData(ent, PumpVisuals.Enabled, pumpOn, ent.Comp2);
     }
 
     private void OnToggleStatusMessage(Entity<GasPressurePumpComponent> ent, ref GasPressurePumpToggleStatusMessage args)
@@ -86,7 +86,7 @@ public abstract class SharedGasPressurePumpSystem : EntitySystem
 
     private void OnOutputPressureChangeMessage(Entity<GasPressurePumpComponent> ent, ref GasPressurePumpChangeOutputPressureMessage args)
     {
-        ent.Comp.TargetPressure = Math.Clamp(args.Pressure, 65f, Atmospherics.MaxOutputPressure);
+        ent.Comp.TargetPressure = Math.Clamp(args.Pressure, 0f, Atmospherics.MaxOutputPressure);
         _adminLogger.Add(LogType.AtmosPressureChanged,
             LogImpact.Medium,
             $"{ToPrettyString(args.Actor):player} set the pressure on {ToPrettyString(ent):device} to {args.Pressure}kPa");

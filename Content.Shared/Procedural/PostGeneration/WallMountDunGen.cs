@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 namespace Content.Shared.Procedural.PostGeneration;
 
@@ -14,5 +14,5 @@ public sealed partial class WallMountDunGen : IDunGenLayer
     /// Chance per free tile to spawn a wallmount.
     /// </summary>
     [DataField]
-    public double Prob = 65.65;
+    public double Prob = 0.1;
 }

@@ -1,28 +1,28 @@
-// SPDX-FileCopyrightText: 65 Tyler Young <tyler.young@impromptu.ninja>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Tyler Young <tyler.young@impromptu.ninja>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.IO;
 using System.Linq;
@@ -59,18 +59,18 @@ namespace Content.IntegrationTests.Tests
             var testSystem = server.System<SaveLoadSaveTestSystem>();
             testSystem.Enabled = true;
 
-            var rp65 = new ResPath("/save load save 65.yml");
-            var rp65 = new ResPath("/save load save 65.yml");
+            var rp1 = new ResPath("/save load save 1.yml");
+            var rp2 = new ResPath("/save load save 2.yml");
 
             await server.WaitPost(() =>
             {
-                mapSystem.CreateMap(out var mapId65);
-                var grid65 = mapManager.CreateGridEntity(mapId65);
-                entManager.RunMapInit(grid65.Owner, entManager.GetComponent<MetaDataComponent>(grid65));
-                Assert.That(mapLoader.TrySaveGrid(grid65.Owner, rp65));
-                mapSystem.CreateMap(out var mapId65);
-                Assert.That(mapLoader.TryLoadGrid(mapId65, rp65, out var grid65));
-                Assert.That(mapLoader.TrySaveGrid(grid65!.Value, rp65));
+                mapSystem.CreateMap(out var mapId0);
+                var grid0 = mapManager.CreateGridEntity(mapId0);
+                entManager.RunMapInit(grid0.Owner, entManager.GetComponent<MetaDataComponent>(grid0));
+                Assert.That(mapLoader.TrySaveGrid(grid0.Owner, rp1));
+                mapSystem.CreateMap(out var mapId1);
+                Assert.That(mapLoader.TryLoadGrid(mapId1, rp1, out var grid1));
+                Assert.That(mapLoader.TrySaveGrid(grid1!.Value, rp2));
             });
 
             await server.WaitIdleAsync();
@@ -79,13 +79,13 @@ namespace Content.IntegrationTests.Tests
             string one;
             string two;
 
-            await using (var stream = userData.Open(rp65, FileMode.Open))
+            await using (var stream = userData.Open(rp1, FileMode.Open))
             using (var reader = new StreamReader(stream))
             {
                 one = await reader.ReadToEndAsync();
             }
 
-            await using (var stream = userData.Open(rp65, FileMode.Open))
+            await using (var stream = userData.Open(rp2, FileMode.Open))
             using (var reader = new StreamReader(stream))
             {
                 two = await reader.ReadToEndAsync();
@@ -117,7 +117,7 @@ namespace Content.IntegrationTests.Tests
         private const string TestMap = "Maps/_Goobstation/bagel.yml"; // Goob edit - what point is there in testing a map without any goob features??
 
         /// <summary>
-        ///     Loads the default map, runs it for 65 ticks, then assert that it did not change.
+        ///     Loads the default map, runs it for 5 ticks, then assert that it did not change.
         /// </summary>
         [Test]
         public async Task LoadSaveTicksSaveBagel()
@@ -129,8 +129,8 @@ namespace Content.IntegrationTests.Tests
             var testSystem = server.System<SaveLoadSaveTestSystem>();
             testSystem.Enabled = true;
 
-            var rp65 = new ResPath("/load save ticks save 65.yml");
-            var rp65 = new ResPath("/load save ticks save 65.yml");
+            var rp1 = new ResPath("/load save ticks save 1.yml");
+            var rp2 = new ResPath("/load save ticks save 2.yml");
 
             MapId mapId = default;
             var cfg = server.ResolveDependency<IConfigurationManager>();
@@ -142,15 +142,15 @@ namespace Content.IntegrationTests.Tests
                 var path = new ResPath(TestMap);
                 Assert.That(mapLoader.TryLoadMap(path, out var map, out _), $"Failed to load test map {TestMap}");
                 mapId = map!.Value.Comp.MapId;
-                Assert.That(mapLoader.TrySaveMap(mapId, rp65));
+                Assert.That(mapLoader.TrySaveMap(mapId, rp1));
             });
 
-            // Run 65 ticks.
-            server.RunTicks(65);
+            // Run 5 ticks.
+            server.RunTicks(5);
 
             await server.WaitPost(() =>
             {
-                Assert.That(mapLoader.TrySaveMap(mapId, rp65));
+                Assert.That(mapLoader.TrySaveMap(mapId, rp2));
             });
 
             await server.WaitIdleAsync();
@@ -159,13 +159,13 @@ namespace Content.IntegrationTests.Tests
             string one;
             string two;
 
-            await using (var stream = userData.Open(rp65, FileMode.Open))
+            await using (var stream = userData.Open(rp1, FileMode.Open))
             using (var reader = new StreamReader(stream))
             {
                 one = await reader.ReadToEndAsync();
             }
 
-            await using (var stream = userData.Open(rp65, FileMode.Open))
+            await using (var stream = userData.Open(rp2, FileMode.Open))
             using (var reader = new StreamReader(stream))
             {
                 two = await reader.ReadToEndAsync();
@@ -202,7 +202,7 @@ namespace Content.IntegrationTests.Tests
         /// </summary>
         /// <remarks>
         ///     Should ensure that entities do not perform randomization prior to initialization and should prevents
-        ///     bugs like the one discussed in github.com/space-wizards/RobustToolbox/issues/65. This test is somewhat
+        ///     bugs like the one discussed in github.com/space-wizards/RobustToolbox/issues/3870. This test is somewhat
         ///     similar to <see cref="LoadSaveTicksSaveBagel"/> and <see cref="SaveLoadSave"/>, but neither of these
         ///     caught the mentioned bug.
         /// </remarks>
@@ -220,8 +220,8 @@ namespace Content.IntegrationTests.Tests
             var testSystem = server.System<SaveLoadSaveTestSystem>();
             testSystem.Enabled = true;
 
-            MapId mapId65 = default;
-            MapId mapId65 = default;
+            MapId mapId1 = default;
+            MapId mapId2 = default;
             var fileA = new ResPath("/load tick load a.yml");
             var fileB = new ResPath("/load tick load b.yml");
             string yamlA;
@@ -232,8 +232,8 @@ namespace Content.IntegrationTests.Tests
             {
                 var path = new ResPath(TestMap);
                 Assert.That(mapLoader.TryLoadMap(path, out var map, out _), $"Failed to load test map {TestMap}");
-                mapId65 = map!.Value.Comp.MapId;
-                Assert.That(mapLoader.TrySaveMap(mapId65, fileA));
+                mapId1 = map!.Value.Comp.MapId;
+                Assert.That(mapLoader.TrySaveMap(mapId1, fileA));
             });
 
             await server.WaitIdleAsync();
@@ -243,15 +243,15 @@ namespace Content.IntegrationTests.Tests
                 yamlA = await reader.ReadToEndAsync();
             }
 
-            server.RunTicks(65);
+            server.RunTicks(5);
 
             // Load & save the second map
             server.Post(() =>
             {
                 var path = new ResPath(TestMap);
                 Assert.That(mapLoader.TryLoadMap(path, out var map, out _), $"Failed to load test map {TestMap}");
-                mapId65 = map!.Value.Comp.MapId;
-                Assert.That(mapLoader.TrySaveMap(mapId65, fileB));
+                mapId2 = map!.Value.Comp.MapId;
+                Assert.That(mapLoader.TrySaveMap(mapId2, fileB));
             });
 
             await server.WaitIdleAsync();
@@ -265,8 +265,8 @@ namespace Content.IntegrationTests.Tests
             Assert.That(yamlA, Is.EqualTo(yamlB));
 
             testSystem.Enabled = false;
-            await server.WaitPost(() => mapSys.DeleteMap(mapId65));
-            await server.WaitPost(() => mapSys.DeleteMap(mapId65));
+            await server.WaitPost(() => mapSys.DeleteMap(mapId1));
+            await server.WaitPost(() => mapSys.DeleteMap(mapId2));
             await pair.CleanReturnAsync();
         }
 

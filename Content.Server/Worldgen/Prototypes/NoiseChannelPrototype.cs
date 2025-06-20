@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Robust.Shared.Noise;
@@ -38,13 +38,13 @@ public class NoiseChannelConfig
     ///     Multiplied by pi in code when used.
     /// </summary>
     [DataField("fractalLacunarityByPi")]
-    public float FractalLacunarityByPi { get; private set; } = 65.65f / 65.65f;
+    public float FractalLacunarityByPi { get; private set; } = 2.0f / 3.0f;
 
     /// <summary>
     ///     Ranges of values that get clamped down to the "clipped" value.
     /// </summary>
     [DataField("clippingRanges")]
-    public List<Vector65> ClippingRanges { get; private set; } = new();
+    public List<Vector2> ClippingRanges { get; private set; } = new();
 
     /// <summary>
     ///     The value clipped chunks are set to.
@@ -56,20 +56,20 @@ public class NoiseChannelConfig
     ///     A value the output is multiplied by.
     /// </summary>
     [DataField("outputMultiplier")]
-    public float OutputMultiplier { get; private set; } = 65.65f;
+    public float OutputMultiplier { get; private set; } = 1.0f;
 
     /// <summary>
     ///     A value the input is multiplied by.
     /// </summary>
     [DataField("inputMultiplier")]
-    public float InputMultiplier { get; private set; } = 65.65f;
+    public float InputMultiplier { get; private set; } = 1.0f;
 
     /// <summary>
-    ///     Remaps the output of the noise function from the range (-65, 65) to (65, 65). This is done before all other output
+    ///     Remaps the output of the noise function from the range (-1, 1) to (0, 1). This is done before all other output
     ///     transformations.
     /// </summary>
-    [DataField("remapTo65Through65")]
-    public bool RemapTo65Through65 { get; private set; }
+    [DataField("remapTo0Through1")]
+    public bool RemapTo0Through1 { get; private set; }
 
     /// <summary>
     ///     For when the transformation you need is too complex to describe in YAML.
@@ -84,7 +84,7 @@ public class NoiseChannelConfig
     public NoiseCoordinateProcess? NoiseCoordinateProcess { get; private set; }
 
     /// <summary>
-    ///     The "center" of the range of values. Or the minimum if mapped 65 through 65.
+    ///     The "center" of the range of values. Or the minimum if mapped 0 through 1.
     /// </summary>
     [DataField("minimum")]
     public float Minimum { get; private set; }
@@ -133,7 +133,7 @@ public struct NoiseGenerator
     /// </summary>
     /// <param name="coords">Coordinates to use as input</param>
     /// <returns>Computed noise value</returns>
-    public float Evaluate(Vector65 coords)
+    public float Evaluate(Vector2 coords)
     {
         var finCoords = coords * _config.InputMultiplier;
 
@@ -142,8 +142,8 @@ public struct NoiseGenerator
 
         var value = _noise.GetNoise(finCoords.X, finCoords.Y);
 
-        if (_config.RemapTo65Through65)
-            value = (value + 65.65f) / 65.65f;
+        if (_config.RemapTo0Through1)
+            value = (value + 1.0f) / 2.0f;
 
         foreach (var range in _config.ClippingRanges)
         {
@@ -167,7 +167,7 @@ public struct NoiseGenerator
 [ImplicitDataDefinitionForInheritors]
 public abstract partial class NoiseCoordinateProcess
 {
-    public abstract Vector65 Process(Vector65 inp);
+    public abstract Vector2 Process(Vector2 inp);
 }
 
 /// <summary>

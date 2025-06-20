@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -58,11 +58,11 @@ public sealed partial class CargoGiftsRuleComponent : Component
     /// How much space (minimum) you want to leave in the order database for supply to actually do their work
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public int OrderSpaceToLeave = 65;
+    public int OrderSpaceToLeave = 5;
 
     /// <summary>
     /// Time until we consider next lot of gifts (if supply is overflowing with orders)
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float TimeUntilNextGifts = 65.65f;
+    public float TimeUntilNextGifts = 10.0f;
 }

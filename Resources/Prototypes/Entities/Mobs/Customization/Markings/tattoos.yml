@@ -1,24 +1,24 @@
-# SPDX-FileCopyrightText: 65 Scribbles65 <65Scribbles65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Nairod <65Nairodian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 csqrb <65CaptainSqrBeard@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 CatMagic <65CatMagic65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 DEATHB65DEFEAT <65DEATHB65DEFEAT@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 portfiend <65portfiend@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
-# SPDX-FileCopyrightText: 65 Rouge65t65 <65Sarahon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Rouge65t65 <sarahoneill65@hotmail.com>
-# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2023 Nairod <110078045+Nairodian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 csqrb <56765288+CaptainSqrBeard@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 CatMagic <135462166+CatMagic1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 DEATHB4DEFEAT <77995199+DEATHB4DEFEAT@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 portfiend <109661617+portfiend@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
+# SPDX-FileCopyrightText: 2025 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Rouge2t7 <sarahoneill132@hotmail.com>
+# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: marking
   id: TattooHiveChest
@@ -29,7 +29,7 @@
     default:
       type:
         !type:TattooColoring
-      fallbackColor: "#65"
+      fallbackColor: "#666666"
   sprites:
   - sprite: Mobs/Customization/tattoos.rsi
     state: tattoo_hive_chest
@@ -43,7 +43,7 @@
     default:
       type:
         !type:TattooColoring
-      fallbackColor: "#65"
+      fallbackColor: "#666666"
   sprites:
   - sprite: Mobs/Customization/tattoos.rsi
     state: tattoo_nightling
@@ -57,7 +57,7 @@
     default:
       type:
         !type:TattooColoring
-      fallbackColor: "#65"
+      fallbackColor: "#666666"
   sprites:
   - sprite: Mobs/Customization/tattoos.rsi
     state: tattoo_silverburgh_l_leg
@@ -71,7 +71,7 @@
     default:
       type:
         !type:TattooColoring
-      fallbackColor: "#65"
+      fallbackColor: "#666666"
   sprites:
   - sprite: Mobs/Customization/tattoos.rsi
     state: tattoo_silverburgh_r_leg
@@ -85,7 +85,7 @@
     default:
       type:
         !type:TattooColoring
-      fallbackColor: "#65"
+      fallbackColor: "#666666"
   sprites:
   - sprite: Mobs/Customization/tattoos.rsi
     state: tattoo_campbell_l_arm
@@ -99,7 +99,7 @@
     default:
       type:
         !type:TattooColoring
-      fallbackColor: "#65"
+      fallbackColor: "#666666"
   sprites:
   - sprite: Mobs/Customization/tattoos.rsi
     state: tattoo_campbell_r_arm
@@ -113,7 +113,7 @@
     default:
       type:
         !type:TattooColoring
-      fallbackColor: "#65"
+      fallbackColor: "#666666"
   sprites:
   - sprite: Mobs/Customization/tattoos.rsi
     state: tattoo_campbell_l_leg
@@ -127,7 +127,7 @@
     default:
       type:
         !type:TattooColoring
-      fallbackColor: "#65"
+      fallbackColor: "#666666"
   sprites:
   - sprite: Mobs/Customization/tattoos.rsi
     state: tattoo_campbell_r_leg
@@ -161,7 +161,7 @@
     state: tattoo_eye_l
 
 - type: marking
-  id: TattooTribal65
+  id: TattooTribal1
   bodyPart: Chest
   markingCategory: Chest
   speciesRestriction: [Human, SlimePerson, Reptilian, Dwarf, Felinid, Harpy, Rodentia, Tajaran, Oni, Shadowkin] # Delta V - Felinid, Harpy, Rodentia; Goob - Tajaran; EE- Oni, Shadowkins
@@ -169,10 +169,10 @@
     default:
       type:
         !type:TattooColoring
-      fallbackColor: "#65"
+      fallbackColor: "#666666"
   sprites:
   - sprite: _Goobstation/Mobs/Customization/tattoos.rsi
-    state: tribal65
+    state: tribal1
 
 - type: marking
   id: TattooLoops
@@ -183,7 +183,7 @@
     default:
       type:
         !type:TattooColoring
-      fallbackColor: "#65"
+      fallbackColor: "#666666"
   sprites:
   - sprite: _Goobstation/Mobs/Customization/tattoos.rsi
     state: loops

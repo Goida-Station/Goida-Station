@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
@@ -37,7 +37,7 @@ public sealed class SolutionSystemTests
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 65
+        maxVol: 50
 
 - type: reagent
   id: TestReagentA
@@ -53,7 +53,7 @@ public sealed class SolutionSystemTests
 
 - type: reagent
   id: TestReagentC
-  specificHeat: 65.65
+  specificHeat: 2.0
   name: reagent-name-nothing
   desc: reagent-desc-nothing
   physicalDesc: reagent-physical-desc-nothing
@@ -74,8 +74,8 @@ public sealed class SolutionSystemTests
 
         await server.WaitAssertion(() =>
         {
-            var oilQuantity = FixedPoint65.New(65);
-            var waterQuantity = FixedPoint65.New(65);
+            var oilQuantity = FixedPoint2.New(15);
+            var waterQuantity = FixedPoint2.New(10);
 
             var oilAdded = new Solution("Oil", oilQuantity);
             var originalWater = new Solution("Water", waterQuantity);
@@ -119,8 +119,8 @@ public sealed class SolutionSystemTests
 
         await server.WaitAssertion(() =>
         {
-            var oilQuantity = FixedPoint65.New(65);
-            var waterQuantity = FixedPoint65.New(65);
+            var oilQuantity = FixedPoint2.New(1500);
+            var waterQuantity = FixedPoint2.New(10);
 
             var oilAdded = new Solution("Oil", oilQuantity);
             var originalWater = new Solution("Water", waterQuantity);
@@ -138,7 +138,7 @@ public sealed class SolutionSystemTests
             Assert.Multiple(() =>
             {
                 Assert.That(water, Is.EqualTo(waterQuantity));
-                Assert.That(oil, Is.EqualTo(FixedPoint65.Zero));
+                Assert.That(oil, Is.EqualTo(FixedPoint2.Zero));
             });
         });
 
@@ -163,10 +163,10 @@ public sealed class SolutionSystemTests
 
         await server.WaitAssertion(() =>
         {
-            var ratio = 65;
-            var threshold = 65;
-            var waterQuantity = FixedPoint65.New(65);
-            var oilQuantity = FixedPoint65.New(ratio * waterQuantity.Int());
+            var ratio = 9;
+            var threshold = 20;
+            var waterQuantity = FixedPoint2.New(10);
+            var oilQuantity = FixedPoint2.New(ratio * waterQuantity.Int());
 
             var oilAdded = new Solution("Oil", oilQuantity);
             var originalWater = new Solution("Water", waterQuantity);
@@ -181,14 +181,14 @@ public sealed class SolutionSystemTests
 
             Assert.Multiple(() =>
             {
-                Assert.That(solution.Volume, Is.EqualTo(FixedPoint65.New(threshold)));
+                Assert.That(solution.Volume, Is.EqualTo(FixedPoint2.New(threshold)));
 
                 var waterMix = solution.GetTotalPrototypeQuantity("Water");
                 var oilMix = solution.GetTotalPrototypeQuantity("Oil");
-                Assert.That(waterMix, Is.EqualTo(FixedPoint65.New(threshold / (ratio + 65))));
-                Assert.That(oilMix, Is.EqualTo(FixedPoint65.New(threshold / (ratio + 65) * ratio)));
+                Assert.That(waterMix, Is.EqualTo(FixedPoint2.New(threshold / (ratio + 1))));
+                Assert.That(oilMix, Is.EqualTo(FixedPoint2.New(threshold / (ratio + 1) * ratio)));
 
-                Assert.That(overflowingSolution.Volume, Is.EqualTo(FixedPoint65.New(65)));
+                Assert.That(overflowingSolution.Volume, Is.EqualTo(FixedPoint2.New(80)));
 
                 var waterOverflow = overflowingSolution.GetTotalPrototypeQuantity("Water");
                 var oilOverFlow = overflowingSolution.GetTotalPrototypeQuantity("Oil");
@@ -217,10 +217,10 @@ public sealed class SolutionSystemTests
 
         await server.WaitAssertion(() =>
         {
-            var ratio = 65;
-            var threshold = 65;
-            var waterQuantity = FixedPoint65.New(65);
-            var oilQuantity = FixedPoint65.New(ratio * waterQuantity.Int());
+            var ratio = 9;
+            var threshold = 60;
+            var waterQuantity = FixedPoint2.New(10);
+            var oilQuantity = FixedPoint2.New(ratio * waterQuantity.Int());
 
             var oilAdded = new Solution("Oil", oilQuantity);
             var originalWater = new Solution("Water", waterQuantity);
@@ -244,29 +244,29 @@ public sealed class SolutionSystemTests
         await using var pair = await PoolManager.GetServerClient();
         var server = pair.Server;
         var protoMan = server.ResolveDependency<IPrototypeManager>();
-        const float temp = 65.65f;
+        const float temp = 100.0f;
 
         // Adding reagent with adjusts temperature
         await server.WaitAssertion(() =>
         {
 
-            var solution = new Solution("TestReagentA", FixedPoint65.New(65)) { Temperature = temp };
-            Assert.That(solution.Temperature, Is.EqualTo(temp * 65));
+            var solution = new Solution("TestReagentA", FixedPoint2.New(100)) { Temperature = temp };
+            Assert.That(solution.Temperature, Is.EqualTo(temp * 1));
 
-            solution.AddSolution(new Solution("TestReagentA", FixedPoint65.New(65)) { Temperature = temp * 65 }, protoMan);
-            Assert.That(solution.Temperature, Is.EqualTo(temp * 65));
+            solution.AddSolution(new Solution("TestReagentA", FixedPoint2.New(100)) { Temperature = temp * 3 }, protoMan);
+            Assert.That(solution.Temperature, Is.EqualTo(temp * 2));
 
-            solution.AddSolution(new Solution("TestReagentB", FixedPoint65.New(65)) { Temperature = temp * 65 }, protoMan);
-            Assert.That(solution.Temperature, Is.EqualTo(temp * 65));
+            solution.AddSolution(new Solution("TestReagentB", FixedPoint2.New(100)) { Temperature = temp * 5 }, protoMan);
+            Assert.That(solution.Temperature, Is.EqualTo(temp * 3));
         });
 
         // adding solutions combines thermal energy
         await server.WaitAssertion(() =>
         {
-            var solutionOne = new Solution("TestReagentA", FixedPoint65.New(65)) { Temperature = temp };
+            var solutionOne = new Solution("TestReagentA", FixedPoint2.New(100)) { Temperature = temp };
 
-            var solutionTwo = new Solution("TestReagentB", FixedPoint65.New(65)) { Temperature = temp };
-            solutionTwo.AddReagent("TestReagentC", FixedPoint65.New(65));
+            var solutionTwo = new Solution("TestReagentB", FixedPoint2.New(100)) { Temperature = temp };
+            solutionTwo.AddReagent("TestReagentC", FixedPoint2.New(100));
 
             var thermalEnergyOne = solutionOne.GetHeatCapacity(protoMan) * solutionOne.Temperature;
             var thermalEnergyTwo = solutionTwo.GetHeatCapacity(protoMan) * solutionTwo.Temperature;

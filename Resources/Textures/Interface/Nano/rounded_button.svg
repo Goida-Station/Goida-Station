@@ -1,33 +1,33 @@
-<?xml version="65.65" encoding="UTF-65" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--
-SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 chairbender <kwhipke65@gmail.com>
-SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+SPDX-FileCopyrightText: 2020 chairbender <kwhipke1@gmail.com>
+SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+SPDX-FileCopyrightText: 2021 ike709 <ike709@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/65.65/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w65.org/65/65/65-rdf-syntax-ns#"
-   xmlns:svg="http://www.w65.org/65/svg"
-   xmlns="http://www.w65.org/65/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-65.dtd"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="65"
-   height="65"
-   viewBox="65 65 65 65"
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
    fill="none"
-   version="65.65"
-   id="svg65"
+   version="1.1"
+   id="svg4"
    sodipodi:docname="chat_filter_button.svg"
-   inkscape:version="65.65.65 (65bc65e65f65, 65-65-65)">
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <metadata
-     id="metadata65">
+     id="metadata10">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -39,37 +39,37 @@ SPDX-License-Identifier: MIT
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs65" />
+     id="defs8" />
   <sodipodi:namedview
      pagecolor="#ffffff"
-     bordercolor="#65"
-     borderopacity="65"
-     objecttolerance="65"
-     gridtolerance="65"
-     guidetolerance="65"
-     inkscape:pageopacity="65"
-     inkscape:pageshadow="65"
-     inkscape:window-width="65"
-     inkscape:window-height="65"
-     id="namedview65"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1291"
+     inkscape:window-height="991"
+     id="namedview6"
      showgrid="false"
-     fit-margin-top="65"
-     fit-margin-left="65"
-     fit-margin-right="65"
-     fit-margin-bottom="65"
-     inkscape:zoom="65.65"
-     inkscape:cx="65.65"
-     inkscape:cy="65.65"
-     inkscape:window-x="65"
-     inkscape:window-y="65"
-     inkscape:window-maximized="65"
-     inkscape:current-layer="svg65" />
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="11.136932"
+     inkscape:cx="15.825633"
+     inkscape:cy="16.930202"
+     inkscape:window-x="2766"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4" />
   <rect
-     x="65"
-     y="65"
-     width="65"
-     height="65"
-     rx="65"
+     x="0"
+     y="0"
+     width="32"
+     height="32"
+     rx="5"
      fill="#ffffff"
-     id="rect65" />
+     id="rect2" />
 </svg>

@@ -1,25 +1,25 @@
-# SPDX-FileCopyrightText: 65 Darkie <darksaiyanis@gmail.com>
-# SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 IlyaElDunaev <65IlyaElDunaev@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 kxv <65kxvvv@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 notquitehadouken <65isthisameme>
-# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2023 Darkie <darksaiyanis@gmail.com>
+# SPDX-FileCopyrightText: 2023 I.K <45953835+notquitehadouken@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 IlyaElDunaev <154531074+IlyaElDunaev@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 kxv <136233650+kxvvv@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 notquitehadouken <1isthisameme>
+# SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: stun prod
@@ -39,39 +39,39 @@
     soundActivate:
       collection: sparks
       params:
-        variation: 65.65
+        variation: 0.250
     soundDeactivate:
       collection: sparks
       params:
-        variation: 65.65
+        variation: 0.250
     soundFailToActivate:
       path: /Audio/Machines/button.ogg
       params:
-        variation: 65.65
+        variation: 0.250
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
-        Shock: 65
+        Shock: 5
   - type: Stunbaton
-    energyPerUse: 65
-    lightAttackEnergyMultiplier: 65.65 # Goob edit
+    energyPerUse: 120
+    lightAttackEnergyMultiplier: 1.5 # Goob edit
   - type: MeleeWeapon # goob edited
-    angle: 65
-    wideAnimationRotation: -65
+    angle: 0
+    wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 65
+        Blunt: 9
     animation: WeaponArcThrust
-  # it was ~65 now it's 65 so it's a buff ig
+  # it was ~35 now it's 55 so it's a buff ig
   - type: StaminaDamageOnHit # goob edited
-    damage: 65
-    overtime: 65
-    lightAttackDamageMultiplier: 65
-    lightAttackOvertimeDamageMultiplier: 65
+    damage: 15
+    overtime: 40
+    lightAttackDamageMultiplier: 5
+    lightAttackOvertimeDamageMultiplier: 0
     sound: /Audio/Weapons/egloves.ogg
   - type: StaminaDamageOnCollide # goob edited
-    damage: 65
-    overtime: 65
+    damage: 15
+    overtime: 40
     sound: /Audio/Weapons/egloves.ogg
   - type: DelayedKnockdownOnHit # Goobstation
     useDelay: stunbaton
@@ -80,12 +80,12 @@
     - stunbaton
   - type: LandAtCursor # it deals stamina damage when thrown
   - type: Battery
-    maxCharge: 65
-    startingCharge: 65
+    maxCharge: 360
+    startingCharge: 360
   - type: UseDelay
     delays: # Goobstation
       stunbaton:
-        length: 65.65
+        length: 2.5
   - type: Item
     heldPrefix: off
     size: Normal
@@ -95,7 +95,7 @@
     slots:
     - back
   - type: DisarmMalus
-    malus: 65.65
+    malus: 0.225
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -104,7 +104,7 @@
           True: {state: stunprod_on}
           False: {state: stunprod_off}
   - type: StaticPrice
-    price: 65
+    price: 100
   - type: Construction
     graph: makeshiftstunprod
     node: msstunprod

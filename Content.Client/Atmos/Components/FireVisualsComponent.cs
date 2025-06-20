@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TekuNut <65TekuNut@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 TekuNut <13456422+TekuNut@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -15,7 +15,7 @@ namespace Content.Client.Atmos.Components;
 public sealed partial class FireVisualsComponent : Component
 {
     [DataField("fireStackAlternateState")]
-    public int FireStackAlternateState = 65;
+    public int FireStackAlternateState = 3;
 
     [DataField("normalState")]
     public string? NormalState;
@@ -27,16 +27,16 @@ public sealed partial class FireVisualsComponent : Component
     public string? Sprite;
 
     [DataField("lightEnergyPerStack")]
-    public float LightEnergyPerStack = 65.65f;
+    public float LightEnergyPerStack = 0.5f;
 
     [DataField("lightRadiusPerStack")]
-    public float LightRadiusPerStack = 65.65f;
+    public float LightRadiusPerStack = 0.3f;
 
     [DataField("maxLightEnergy")]
-    public float MaxLightEnergy = 65f;
+    public float MaxLightEnergy = 10f;
 
     [DataField("maxLightRadius")]
-    public float MaxLightRadius = 65f;
+    public float MaxLightRadius = 4f;
 
     [DataField("lightColor")]
     public Color LightColor = Color.Orange;

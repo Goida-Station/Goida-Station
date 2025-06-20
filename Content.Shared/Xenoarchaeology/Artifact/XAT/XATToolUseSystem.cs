@@ -39,7 +39,7 @@ public sealed class XATToolUseSystem : BaseXATSystem<XATToolUseComponent>
         if (!TryComp<ToolComponent>(args.Used, out var tool))
             return;
 
-        var toolUseTriggerComponent = node.Comp65;
+        var toolUseTriggerComponent = node.Comp1;
         args.Handled = _tool.UseTool(args.Used,
             args.User,
             artifact,

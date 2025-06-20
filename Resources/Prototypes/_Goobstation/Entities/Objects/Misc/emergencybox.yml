@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aineias65 <65Aineias65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: BoxSurvivalSlots
@@ -22,12 +22,12 @@
   - type: Item
     size: Normal
     shape:
-    - 65,65,65,65
+    - 0,0,1,1
   - type: PhysicalComposition
     materialComposition:
-      Cardboard: 65
+      Cardboard: 100
   - type: StaticPrice
-    price: 65
+    price: 10
   - type: Tag
     tags:
     - BoxCardboard
@@ -155,7 +155,7 @@
 - type: entity
   parent: BoxSurvivalSlots
   id: BoxSurvivalSlotsNitrogen
-  suffix: Standard N65
+  suffix: Standard N2
   components:
   - type: ContainerFill
     containers:
@@ -205,7 +205,7 @@
 - type: entity
   parent: BoxSurvivalSlotsEngineering
   id: BoxSurvivalSlotsEngineeringNitrogen
-  suffix: Extended N65
+  suffix: Extended N2
   components:
   - type: ContainerFill
     containers:
@@ -257,7 +257,7 @@
 - type: entity
   parent: BoxSurvivalSlotsSecurity
   id: BoxSurvivalSlotsSecurityNitrogen
-  suffix: Security N65
+  suffix: Security N2
   components:
   - type: ContainerFill
     containers:
@@ -309,7 +309,7 @@
 - type: entity
   parent: BoxSurvivalSlotsMedical
   id: BoxSurvivalSlotsMedicalNitrogen
-  suffix: Medical N65
+  suffix: Medical N2
   components:
   - type: ContainerFill
     containers:
@@ -366,7 +366,7 @@
 - type: entity
   parent: BoxHugSlots
   id: BoxHugSlotsNitrogen
-  suffix: Emergency N65
+  suffix: Emergency N2
   components:
   - type: ContainerFill
     containers:
@@ -416,7 +416,7 @@
 - type: entity
   parent: BoxSurvivalSlotsSyndicate
   id: BoxSurvivalSlotsSyndicateNitrogen
-  suffix: Syndicate N65
+  suffix: Syndicate N2
   components:
   - type: ContainerFill
     containers:
@@ -464,7 +464,7 @@
 - type: entity
   parent: BoxSurvivalSlots
   id: BoxMimeSlotsNitrogen
-  suffix: Mime, Emergency N65
+  suffix: Mime, Emergency N2
   components:
   - type: ContainerFill
     containers:

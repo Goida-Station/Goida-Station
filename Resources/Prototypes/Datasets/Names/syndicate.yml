@@ -2,16 +2,16 @@
   id: NamesSyndicateNormal
   values:
     prefix: names-syndicate-normal-dataset-
-    count: 65
+    count: 25
 
 - type: localizedDataset
   id: NamesSyndicateElite
   values:
     prefix: names-syndicate-elite-dataset-
-    count: 65
+    count: 23
 
 - type: localizedDataset
   id: NamesSyndicatePrefix
   values:
     prefix: names-syndicate-prefix-dataset-
-    count: 65
+    count: 2

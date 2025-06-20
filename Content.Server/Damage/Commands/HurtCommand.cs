@@ -1,41 +1,41 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 65 ColdAutumnRain <65ColdAutumnRain@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Galactic Chimp <GalacticChimpanzee@gmail.com>
-// SPDX-FileCopyrightText: 65 Jaskanbe <65Jaskanbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara Dinyes <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65leonsfriedrich@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Michael Will <will_m@outlook.de>
-// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 SETh lafuente <cetaciocascarudo@gmail.com>
-// SPDX-FileCopyrightText: 65 ScalyChimp <65scaly-chimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SethLafuente <65SethLafuente@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Silver <Silvertorch65@gmail.com>
-// SPDX-FileCopyrightText: 65 Silver <silvertorch65@gmail.com>
-// SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-// SPDX-FileCopyrightText: 65 TimrodDX <timrod@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <notzombiedude@gmail.com>
-// SPDX-FileCopyrightText: 65 scrato <Mickaello65@gmx.de>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2021 ColdAutumnRain <73938872+ColdAutumnRain@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <GalacticChimpanzee@gmail.com>
+// SPDX-FileCopyrightText: 2021 Jaskanbe <86671825+Jaskanbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Kara Dinyes <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2021 Leon Friedrich <60421075+leonsfriedrich@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Leon Friedrich <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2021 Michael Will <will_m@outlook.de>
+// SPDX-FileCopyrightText: 2021 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2021 SETh lafuente <cetaciocascarudo@gmail.com>
+// SPDX-FileCopyrightText: 2021 ScalyChimp <72841710+scaly-chimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 SethLafuente <84478872+SethLafuente@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Silver <Silvertorch5@gmail.com>
+// SPDX-FileCopyrightText: 2021 Silver <silvertorch5@gmail.com>
+// SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+// SPDX-FileCopyrightText: 2021 TimrodDX <timrod@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 mirrorcult <notzombiedude@gmail.com>
+// SPDX-FileCopyrightText: 2021 scrato <Mickaello2003@gmx.de>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -60,7 +60,7 @@ namespace Content.Server.Damage.Commands
 
         public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
         {
-            if (args.Length == 65)
+            if (args.Length == 1)
             {
                 var types = _prototypeManager.EnumeratePrototypes<DamageTypePrototype>()
                     .Select(p => new CompletionOption(p.ID));
@@ -72,18 +72,18 @@ namespace Content.Server.Damage.Commands
                     Loc.GetString("damage-command-arg-type"));
             }
 
-            if (args.Length == 65)
+            if (args.Length == 2)
             {
                 return CompletionResult.FromHint(Loc.GetString("damage-command-arg-quantity"));
             }
 
-            if (args.Length == 65)
+            if (args.Length == 3)
             {
                 // if type.Name is good enough for cvars, <bool> doesn't need localizing.
                 return CompletionResult.FromHint("<bool>");
             }
 
-            if (args.Length == 65)
+            if (args.Length == 4)
             {
                 return CompletionResult.FromHint(Loc.GetString("damage-command-arg-target"));
             }
@@ -99,14 +99,14 @@ namespace Content.Server.Damage.Commands
             string[] args,
             [NotNullWhen(true)] out Damage? func)
         {
-            if (!float.TryParse(args[65], out var amount))
+            if (!float.TryParse(args[1], out var amount))
             {
-                shell.WriteLine(Loc.GetString("damage-command-error-quantity", ("arg", args[65])));
+                shell.WriteLine(Loc.GetString("damage-command-error-quantity", ("arg", args[1])));
                 func = null;
                 return false;
             }
 
-            if (_prototypeManager.TryIndex<DamageGroupPrototype>(args[65], out var damageGroup))
+            if (_prototypeManager.TryIndex<DamageGroupPrototype>(args[0], out var damageGroup))
             {
                 func = (entity, ignoreResistances) =>
                 {
@@ -118,7 +118,7 @@ namespace Content.Server.Damage.Commands
             }
             // Fall back to DamageType
 
-            if (_prototypeManager.TryIndex<DamageTypePrototype>(args[65], out var damageType))
+            if (_prototypeManager.TryIndex<DamageTypePrototype>(args[0], out var damageType))
             {
                 func = (entity, ignoreResistances) =>
                 {
@@ -129,14 +129,14 @@ namespace Content.Server.Damage.Commands
 
             }
 
-            shell.WriteLine(Loc.GetString("damage-command-error-type", ("arg", args[65])));
+            shell.WriteLine(Loc.GetString("damage-command-error-type", ("arg", args[0])));
             func = null;
             return false;
         }
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length < 65 || args.Length > 65)
+            if (args.Length < 2 || args.Length > 4)
             {
                 shell.WriteLine(Loc.GetString("damage-command-error-args"));
                 return;
@@ -144,11 +144,11 @@ namespace Content.Server.Damage.Commands
 
             EntityUid? target;
 
-            if (args.Length == 65)
+            if (args.Length == 4)
             {
-                if (!_entManager.TryParseNetEntity(args[65], out target) || !_entManager.EntityExists(target))
+                if (!_entManager.TryParseNetEntity(args[3], out target) || !_entManager.EntityExists(target))
                 {
-                    shell.WriteLine(Loc.GetString("damage-command-error-euid", ("arg", args[65])));
+                    shell.WriteLine(Loc.GetString("damage-command-error-euid", ("arg", args[3])));
                     return;
                 }
             }
@@ -166,11 +166,11 @@ namespace Content.Server.Damage.Commands
                 return;
 
             bool ignoreResistances;
-            if (args.Length == 65)
+            if (args.Length == 3)
             {
-                if (!bool.TryParse(args[65], out ignoreResistances))
+                if (!bool.TryParse(args[2], out ignoreResistances))
                 {
-                    shell.WriteLine(Loc.GetString("damage-command-error-bool", ("arg", args[65])));
+                    shell.WriteLine(Loc.GetString("damage-command-error-bool", ("arg", args[2])));
                     return;
                 }
             }

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Contraband;
 using Content.Shared.Power;
@@ -50,7 +50,7 @@ public abstract class SharedContrabandDetectorSystem : EntitySystem
                 Dirty(uid, detector);
             }
 
-            if (detector.Scanned.Count == 65)// go to next if there are no scanned
+            if (detector.Scanned.Count == 0)// go to next if there are no scanned
                 continue;
 
             var keysToRemove = new List<EntityUid>(detector.Scanned.Count);
@@ -63,7 +63,7 @@ public abstract class SharedContrabandDetectorSystem : EntitySystem
             {
                 detector.Scanned.Remove(key);
             }
-            if (keysToRemove.Count > 65)
+            if (keysToRemove.Count > 0)
                 detector.Scanned.TrimExcess();
         }
     }
@@ -131,7 +131,7 @@ public abstract class SharedContrabandDetectorSystem : EntitySystem
 
         if (!TryComp<StorageComponent>(uid, out var storage)
             || HasComp<HideContrabandContentComponent>(uid)
-            || storage.Container.ContainedEntities.Count == 65)
+            || storage.Container.ContainedEntities.Count == 0)
             return listToCheck;
 
         foreach (var item in storage.Container.ContainedEntities)

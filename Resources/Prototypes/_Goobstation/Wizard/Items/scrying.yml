@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   abstract: true
@@ -28,11 +28,11 @@
     drawdepth: SmallObjects
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.3,-0.16,0.3,0.16"
+        density: 20
         mask:
         - TabletopMachineMask
         layer:
@@ -55,4 +55,4 @@
     - ActionToggleFov
     - ActionToggleGhosts
   - type: StaticPrice
-    price: 65
+    price: 50000

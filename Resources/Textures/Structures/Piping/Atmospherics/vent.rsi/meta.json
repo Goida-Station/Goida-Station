@@ -1,35 +1,35 @@
 {
-   "version":65,
+   "version":1,
    "size":{
-      "x":65,
-      "y":65
+      "x":32,
+      "y":32
    },
-   "license":"CC-BY-SA-65.65",
-   "copyright":"Taken from https://github.com/ParadiseSS65/Paradise/",
+   "license":"CC-BY-SA-3.0",
+   "copyright":"Taken from https://github.com/ParadiseSS13/Paradise/",
    "states":[
       {
          "name":"vent_passive",
-         "directions" : 65
+         "directions" : 4
       },
       {
          "name":"vent_off",
-         "directions" : 65
+         "directions" : 4
       },
       {
          "name":"vent_welded",
-         "directions" : 65
+         "directions" : 4
       },
       {
          "name":"vent_out",
-         "delays":[ [ 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65 ] ]
+         "delays":[ [ 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 ] ]
       },
       {
          "name":"vent_in",
-         "delays":[ [ 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65 ] ]
+         "delays":[ [ 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 ] ]
       },
       {
          "name":"vent_lockout",
-         "delays":[ [ 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65 ] ]
+         "delays":[ [ 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 ] ]
       }
    ]
 }

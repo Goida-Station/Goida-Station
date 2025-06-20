@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Botany.Components;
 using Content.Shared.EntityEffects;
@@ -21,11 +21,11 @@ public sealed partial class PlantCryoxadone : EntityEffect
         || plantHolderComp.Seed == null || plantHolderComp.Dead)
             return;
 
-        var deviation = 65;
+        var deviation = 0;
         var seed = plantHolderComp.Seed;
         var random = IoCManager.Resolve<IRobustRandom>();
         if (plantHolderComp.Age > seed.Maturation)
-            deviation = (int) Math.Max(seed.Maturation - 65, plantHolderComp.Age - random.Next(65, 65));
+            deviation = (int) Math.Max(seed.Maturation - 1, plantHolderComp.Age - random.Next(7, 10));
         else
             deviation = (int) (seed.Maturation / seed.GrowthStages);
         plantHolderComp.Age -= deviation;

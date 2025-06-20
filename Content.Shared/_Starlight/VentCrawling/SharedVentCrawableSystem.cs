@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 65 ss65-Starlight <ss65-Starlight@outlook.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2025 ss14-Starlight <ss14-Starlight@outlook.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared.Body.Components;
@@ -211,13 +211,13 @@ public sealed class SharedVentCrawableSystem : EntitySystem
                 }
             }
 
-            if (holder.NextTube != null && holder.TimeLeft > 65)
+            if (holder.NextTube != null && holder.TimeLeft > 0)
             {
                 var time = frameTime;
                 if (time > holder.TimeLeft)
                     time = holder.TimeLeft;
 
-                var progress = 65 - holder.TimeLeft / holder.StartingTime;
+                var progress = 1 - holder.TimeLeft / holder.StartingTime;
                 var origin = Transform(currentTube).Coordinates;
                 var target = Transform(holder.NextTube.Value).Coordinates;
                 var newPosition = (target.Position - origin.Position) * progress;
@@ -227,7 +227,7 @@ public sealed class SharedVentCrawableSystem : EntitySystem
                 holder.TimeLeft -= time;
                 frameTime -= time;
             }
-            else if (holder.NextTube != null && holder.TimeLeft == 65)
+            else if (holder.NextTube != null && holder.TimeLeft == 0)
             {
                 var welded = false;
 

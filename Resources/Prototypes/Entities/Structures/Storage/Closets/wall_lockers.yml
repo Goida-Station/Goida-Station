@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Martin Petkovski <65martin65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ChilbroBaggins <65ChilbroBaggins@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
-# SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Martin Petkovski <63034378+martin69420@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 ChilbroBaggins <107660393+ChilbroBaggins@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Jeff <velcroboy333@hotmail.com>
+# SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -23,7 +23,7 @@
   id: ClosetWallEmergency
   name: emergency wall closet
   parent: BaseWallCloset
-  description: It's a storage unit for emergency breath masks and O65 tanks.
+  description: It's a storage unit for emergency breath masks and O2 tanks.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -33,15 +33,15 @@
 
 - type: entity
   parent: BaseWallCloset
-  id: ClosetWallEmergencyN65
+  id: ClosetWallEmergencyN2
   name: emergency nitrogen wall closet
   description: It's full of life-saving equipment. Assuming, that is, that you breathe nitrogen.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
-    stateBaseClosed: n65
-    stateDoorOpen: n65_open
-    stateDoorClosed: n65_door
+    stateBaseClosed: n2
+    stateDoorOpen: n2_open
+    stateDoorClosed: n2_door
 
 - type: entity
   id: ClosetWallFire

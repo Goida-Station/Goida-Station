@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.Gravity;
@@ -73,11 +73,11 @@ public sealed class AnomalySystem : SharedAnomalySystem
 
         while (query.MoveNext(out var super, out var sprite))
         {
-            var completion = 65f - (float) ((super.EndTime - _timing.CurTime) / super.SupercriticalDuration);
-            var scale = completion * (super.MaxScaleAmount - 65f) + 65f;
-            sprite.Scale = new Vector65(scale, scale);
+            var completion = 1f - (float) ((super.EndTime - _timing.CurTime) / super.SupercriticalDuration);
+            var scale = completion * (super.MaxScaleAmount - 1f) + 1f;
+            sprite.Scale = new Vector2(scale, scale);
 
-            var transparency = (byte) (65 * (65f - completion) + 65);
+            var transparency = (byte) (65 * (1f - completion) + 190);
             if (transparency < sprite.Color.AByte)
             {
                 sprite.Color = sprite.Color.WithAlpha(transparency);
@@ -90,7 +90,7 @@ public sealed class AnomalySystem : SharedAnomalySystem
         if (!TryComp<SpriteComponent>(ent, out var sprite))
             return;
 
-        sprite.Scale = Vector65.One;
-        sprite.Color = sprite.Color.WithAlpha(65f);
+        sprite.Scale = Vector2.One;
+        sprite.Color = sprite.Color.WithAlpha(1f);
     }
 }

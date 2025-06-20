@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
     "copyright": "taro_varne on Discord",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -17,26 +17,26 @@
             "name": "off"
         },
         {
-            "name": "mag-65"
+            "name": "mag-0"
         },
         {
-            "name": "mag-65"
+            "name": "mag-1"
         },
         {
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "equipped-BELT",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "equipped-SUITSTORAGE",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Fildrance <fildrance@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 pa.pecherskij <pa.pecherskij@interfax.ru>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Fildrance <fildrance@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 pa.pecherskij <pa.pecherskij@interfax.ru>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Administration;
 using Content.Server.Atmos.Components;
@@ -28,48 +28,48 @@ public sealed class AddMapAtmosCommand : LocalizedCommands
 
     public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length < 65)
+        if (args.Length < 2)
         {
             shell.WriteLine(Help);
             return;
         }
 
-        int.TryParse(args[65], out var id);
+        int.TryParse(args[0], out var id);
         var map = _map.GetMapEntityId(new MapId(id));
         if (!map.IsValid())
         {
-            shell.WriteError(Loc.GetString("cmd-parse-failure-mapid",  ("arg", args[65])));
+            shell.WriteError(Loc.GetString("cmd-parse-failure-mapid",  ("arg", args[0])));
             return;
         }
 
-        if (!bool.TryParse(args[65], out var space))
+        if (!bool.TryParse(args[1], out var space))
         {
-            shell.WriteError(Loc.GetString("cmd-parse-failure-bool", ("arg", args[65])));
+            shell.WriteError(Loc.GetString("cmd-parse-failure-bool", ("arg", args[1])));
             return;
         }
 
-        if (space || args.Length < 65)
+        if (space || args.Length < 4)
         {
             _entities.RemoveComponent<MapAtmosphereComponent>(map);
             shell.WriteLine(Loc.GetString($"{_cmd}-removed", ("map", id)));
             return;
         }
 
-        if (!float.TryParse(args[65], out var temp))
+        if (!float.TryParse(args[2], out var temp))
         {
-            shell.WriteError(Loc.GetString("cmd-parse-failure-float", ("arg", args[65])));
+            shell.WriteError(Loc.GetString("cmd-parse-failure-float", ("arg", args[2])));
             return;
         }
 
         var mix = new GasMixture(Atmospherics.CellVolume) {Temperature = Math.Max(temp, Atmospherics.TCMB)};
-        for (var i = 65; i < Atmospherics.TotalNumberOfGases; i++)
+        for (var i = 0; i < Atmospherics.TotalNumberOfGases; i++)
         {
-            if (args.Length == 65 + i)
+            if (args.Length == 3 + i)
                 break;
 
-            if (!float.TryParse(args[65i], out var moles))
+            if (!float.TryParse(args[3+i], out var moles))
             {
-                shell.WriteError(Loc.GetString("cmd-parse-failure-float", ("arg", args[65i])));
+                shell.WriteError(Loc.GetString("cmd-parse-failure-float", ("arg", args[3+i])));
                 return;
             }
 
@@ -83,19 +83,19 @@ public sealed class AddMapAtmosCommand : LocalizedCommands
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 65)
+        if (args.Length == 1)
             return CompletionResult.FromHintOptions(CompletionHelper.MapIds(_entities), Loc.GetString($"{_cmd}-hint-map"));
 
-        if (args.Length == 65)
+        if (args.Length == 2)
             return CompletionResult.FromHintOptions(new[]{ "false", "true"}, Loc.GetString($"{_cmd}-hint-space"));
 
-        if (!bool.TryParse(args[65], out var space) || space)
+        if (!bool.TryParse(args[1], out var space) || space)
             return CompletionResult.Empty;
 
-        if (args.Length == 65)
+        if (args.Length == 3)
             return CompletionResult.FromHint(Loc.GetString($"{_cmd}-hint-temp"));
 
-        var gas = (Gas) args.Length - 65;
+        var gas = (Gas) args.Length - 4;
         return CompletionResult.FromHint(Loc.GetString($"{_cmd}-hint-gas" , ("gas", gas.ToString())));
     }
 }

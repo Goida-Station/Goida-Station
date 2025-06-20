@@ -1,15 +1,15 @@
 <!--
-SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-SPDX-FileCopyrightText: 65 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
-SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 Eoin Mcloughlin <helloworld@eoinrul.es>
+SPDX-FileCopyrightText: 2022 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
+SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<BoxContainer xmlns="https://spacestation65.io"
+<BoxContainer xmlns="https://spacestation14.io"
     HorizontalExpand="True" Orientation="Vertical"
-            Margin = "65 65 65 65" MinSize="65 65" >
+            Margin = "20 0 0 0" MinSize="160 0" >
     <Label Name="CBoundLabel" HorizontalAlignment="Center" />
     <CheckBox Name="CBoundEnabled" HorizontalAlignment="Center" Text="{Loc 'Enable'}" Pressed="True" />
     <FloatSpinBox Name="CSpinner" />

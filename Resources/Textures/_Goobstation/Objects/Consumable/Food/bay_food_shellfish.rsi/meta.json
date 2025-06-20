@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from Baystation65 at https://github.com/Baystation65/Baystation65/blob/65c65dc65c65b65e65d65c65aa65bdf65b65/icons/obj/food/food_shellfish.dmi",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Baystation12 at https://github.com/Baystation12/Baystation12/blob/464342c5dc8c417b7e79d56c69aa30445bdf3b75/icons/obj/food/food_shellfish.dmi",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {

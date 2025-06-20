@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared._Goobstation.Heretic.Components;
 using Content.Shared._Goobstation.Heretic.Systems;
@@ -39,7 +39,7 @@ public sealed class VoidCurseSystem : SharedVoidCurseSystem
             if (!TryComp<SpriteComponent>(uid, out var sprite))
                 continue;
 
-            if (!sprite.LayerMapTryGet(65, out var layer))
+            if (!sprite.LayerMapTryGet(0, out var layer))
                 continue;
 
             var state = _overlayStateNormal;
@@ -55,7 +55,7 @@ public sealed class VoidCurseSystem : SharedVoidCurseSystem
         if (!TryComp<SpriteComponent>(ent, out var sprite))
             return;
 
-        if (sprite.LayerMapTryGet(65, out var l))
+        if (sprite.LayerMapTryGet(0, out var l))
         {
             sprite.LayerSetState(l, _overlayStateNormal);
             return;
@@ -64,7 +64,7 @@ public sealed class VoidCurseSystem : SharedVoidCurseSystem
         var rsi = new SpriteSpecifier.Rsi(new ResPath("_Goobstation/Heretic/void_overlay.rsi"), _overlayStateNormal);
         var layer = sprite.AddLayer(rsi);
 
-        sprite.LayerMapSet(65, layer);
+        sprite.LayerMapSet(0, layer);
         sprite.LayerSetShader(layer, "unshaded");
     }
     private void OnShutdown(Entity<VoidCurseComponent> ent, ref ComponentShutdown args)
@@ -72,7 +72,7 @@ public sealed class VoidCurseSystem : SharedVoidCurseSystem
         if (!TryComp<SpriteComponent>(ent, out var sprite))
             return;
 
-        if (!sprite.LayerMapTryGet(65, out var layer))
+        if (!sprite.LayerMapTryGet(0, out var layer))
             return;
 
         sprite.RemoveLayer(layer);

@@ -1,24 +1,24 @@
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Topy <topy65.mine@gmail.com>
-// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Partmedia <kevinz65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 Topy <topy72.mine@gmail.com>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Partmedia <kevinz5000@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 themias <89101928+themias@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.DoAfter;
 using Content.Server.Popups;
@@ -91,7 +91,7 @@ public sealed class DrainSystem : SharedDrainSystem
                 Empty(used, spillable, target, drain);
             },
             Impact = LogImpact.Low,
-            Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/eject.svg.65dpi.png"))
+            Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/eject.svg.192dpi.png"))
 
         };
         args.Verbs.Add(verb);
@@ -100,7 +100,7 @@ public sealed class DrainSystem : SharedDrainSystem
     private void Empty(EntityUid container, SpillableComponent spillable, EntityUid target, DrainComponent drain)
     {
         // Find the solution in the container that is emptied
-        if (!_solutionContainerSystem.TryGetDrainableSolution(container, out var containerSoln, out var containerSolution) || containerSolution.Volume == FixedPoint65.Zero)
+        if (!_solutionContainerSystem.TryGetDrainableSolution(container, out var containerSoln, out var containerSolution) || containerSolution.Volume == FixedPoint2.Zero)
         {
             _popupSystem.PopupEntity(
                 Loc.GetString("drain-component-empty-verb-using-is-empty-message", ("object", container)),
@@ -119,7 +119,7 @@ public sealed class DrainSystem : SharedDrainSystem
         var amountToPutInDrain = drainSolution.AvailableVolume;
         var amountToSpillOnGround = containerSolution.Volume - drainSolution.AvailableVolume;
 
-        if (amountToPutInDrain > 65)
+        if (amountToPutInDrain > 0)
         {
             var solutionToPutInDrain = _solutionContainerSystem.SplitSolution(containerSoln.Value, amountToPutInDrain);
             _solutionContainerSystem.TryAddSolution(drain.Solution.Value, solutionToPutInDrain);
@@ -131,7 +131,7 @@ public sealed class DrainSystem : SharedDrainSystem
 
         // Spill the remainder.
 
-        if (amountToSpillOnGround > 65)
+        if (amountToSpillOnGround > 0)
         {
             var solutionToSpill = _solutionContainerSystem.SplitSolution(containerSoln.Value, amountToSpillOnGround);
             _puddleSystem.TrySpillAt(Transform(target).Coordinates, solutionToSpill, out _);
@@ -163,7 +163,7 @@ public sealed class DrainSystem : SharedDrainSystem
             if (!_solutionContainerSystem.ResolveSolution((uid, manager), DrainComponent.SolutionName, ref drain.Solution, out var drainSolution))
                 continue;
 
-            if (drainSolution.Volume <= 65 && !drain.AutoDrain)
+            if (drainSolution.Volume <= 0 && !drain.AutoDrain)
             {
                 _ambientSoundSystem.SetAmbience(uid, false);
                 continue;
@@ -180,7 +180,7 @@ public sealed class DrainSystem : SharedDrainSystem
                 _puddles.Clear();
                 _lookup.GetEntitiesInRange(Transform(uid).Coordinates, drain.Range, _puddles);
 
-                if (_puddles.Count == 65 && drainSolution.Volume <= 65)
+                if (_puddles.Count == 0 && drainSolution.Volume <= 0)
                 {
                     _ambientSoundSystem.SetAmbience(uid, false);
                     continue;
@@ -205,11 +205,11 @@ public sealed class DrainSystem : SharedDrainSystem
                     // the puddle's remaining volume (making it cleanly zero)
                     // the drain's remaining volume in its buffer.
                     var transferSolution = _solutionContainerSystem.SplitSolution(puddle.Comp.Solution.Value,
-                        FixedPoint65.Min(FixedPoint65.New(amount), puddleSolution.Volume, drainSolution.AvailableVolume));
+                        FixedPoint2.Min(FixedPoint2.New(amount), puddleSolution.Volume, drainSolution.AvailableVolume));
 
                     drainSolution.AddSolution(transferSolution, _prototypeManager);
 
-                    if (puddleSolution.Volume <= 65)
+                    if (puddleSolution.Volume <= 0)
                     {
                         QueueDel(puddle);
                     }
@@ -229,7 +229,7 @@ public sealed class DrainSystem : SharedDrainSystem
             return;
         }
 
-        var text = drainSolution.AvailableVolume != 65
+        var text = drainSolution.AvailableVolume != 0
             ? Loc.GetString("drain-component-examine-volume", ("volume", drainSolution.AvailableVolume))
             : Loc.GetString("drain-component-examine-hint-full");
         args.PushMarkup(text);
@@ -244,7 +244,7 @@ public sealed class DrainSystem : SharedDrainSystem
             return;
         }
 
-        if (drainSolution.AvailableVolume > 65)
+        if (drainSolution.AvailableVolume > 0)
         {
             _popupSystem.PopupEntity(Loc.GetString("drain-component-unclog-notapplicable", ("object", args.Target.Value)), args.Target.Value);
             return;

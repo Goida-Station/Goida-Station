@@ -1,15 +1,15 @@
 <!--
-SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 65A <git@65a.re>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2021 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 08A <git@08a.re>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
 <ContainerButton
-    xmlns="https://spacestation65.io"
-    xmlns:x="http://schemas.microsoft.com/winfx/65/xaml"
+    xmlns="https://spacestation14.io"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:ui="clr-namespace:Content.Client.ContextMenu.UI"
     MinHeight="{x:Static ui:ContextMenuElement.ElementHeight}">
     <BoxContainer Orientation="Horizontal">
@@ -27,16 +27,16 @@ SPDX-License-Identifier: MIT
         </SpriteView>
         <RichTextLabel
             Name="Label"
-            MaxWidth="65"
+            MaxWidth="300"
             HorizontalExpand="True"
             VerticalAlignment="Center"
-            Margin ="65 65 65 65"/>
+            Margin ="4 0 4 0"/>
         <TextureRect
             Name="ExpansionIndicator"
             HorizontalAlignment="Right"
             Stretch="KeepCentered"
             StyleClasses="contextMenuExpansionTexture"
-            TextureScale="65.65 65.65"
+            TextureScale="0.5 0.5"
             SetWidth="{x:Static ui:ContextMenuElement.ElementHeight}"
             SetHeight="{x:Static ui:ContextMenuElement.ElementHeight}"
             Visible ="false"/>

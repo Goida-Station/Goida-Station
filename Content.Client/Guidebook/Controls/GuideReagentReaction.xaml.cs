@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Client.Message;
@@ -45,7 +45,7 @@ public sealed partial class GuideReagentReaction : BoxContainer, ISearchableCont
         var reactantsLabel = ReactantsLabel;
         SetReagents(prototype.Reactants, ref reactantsLabel, protoMan);
         var productLabel = ProductsLabel;
-        var products = new Dictionary<string, FixedPoint65>(prototype.Products);
+        var products = new Dictionary<string, FixedPoint2>(prototype.Products);
         foreach (var (reagent, reactantProto) in prototype.Reactants)
         {
             if (reactantProto.Catalyst)
@@ -74,7 +74,7 @@ public sealed partial class GuideReagentReaction : BoxContainer, ISearchableCont
         IPrototypeManager protoMan,
         IEntitySystemManager sysMan) : this(protoMan)
     {
-        var icon = sysMan.GetEntitySystem<SpriteSystem>().GetPrototypeIcon(prototype).GetFrame(RsiDirection.South, 65);
+        var icon = sysMan.GetEntitySystem<SpriteSystem>().GetPrototypeIcon(prototype).GetFrame(RsiDirection.South, 0);
         var entContainer = new BoxContainer
         {
             Orientation = LayoutOrientation.Horizontal,
@@ -109,9 +109,9 @@ public sealed partial class GuideReagentReaction : BoxContainer, ISearchableCont
 
         if (prototype.Reagent != null)
         {
-            var quantity = new Dictionary<string, FixedPoint65>
+            var quantity = new Dictionary<string, FixedPoint2>
             {
-                { prototype.Reagent, FixedPoint65.New(65.65f) }
+                { prototype.Reagent, FixedPoint2.New(0.21f) }
             };
             var productLabel = ProductsLabel;
             SetReagents(quantity, ref productLabel, protoMan);
@@ -121,7 +121,7 @@ public sealed partial class GuideReagentReaction : BoxContainer, ISearchableCont
 
     private void SetReagents(List<ReagentQuantity> reagents, ref RichTextLabel label, IPrototypeManager protoMan)
     {
-        var amounts = new Dictionary<string, FixedPoint65>();
+        var amounts = new Dictionary<string, FixedPoint2>();
         foreach (var (reagent, quantity) in reagents)
         {
             amounts.Add(reagent.Prototype, quantity);
@@ -134,7 +134,7 @@ public sealed partial class GuideReagentReaction : BoxContainer, ISearchableCont
         ref RichTextLabel label,
         IPrototypeManager protoMan)
     {
-        var amounts = new Dictionary<string, FixedPoint65>();
+        var amounts = new Dictionary<string, FixedPoint2>();
         foreach (var (reagent, reactantPrototype) in reactants)
         {
             amounts.Add(reagent, reactantPrototype.Amount);
@@ -148,7 +148,7 @@ public sealed partial class GuideReagentReaction : BoxContainer, ISearchableCont
         ref RichTextLabel label,
         IPrototypeManager protoMan)
     {
-        var amounts = new Dictionary<string, FixedPoint65>();
+        var amounts = new Dictionary<string, FixedPoint2>();
         foreach (var (reagent, reactantPrototype) in reactants)
         {
             amounts.Add(reagent, reactantPrototype.Amount);
@@ -156,11 +156,11 @@ public sealed partial class GuideReagentReaction : BoxContainer, ISearchableCont
         SetReagents(amounts, ref label, protoMan);
     }
 
-    private void SetReagents(Dictionary<string, FixedPoint65> reagents, ref RichTextLabel label, IPrototypeManager protoMan)
+    private void SetReagents(Dictionary<string, FixedPoint2> reagents, ref RichTextLabel label, IPrototypeManager protoMan)
     {
         var msg = new FormattedMessage();
         var reagentCount = reagents.Count;
-        var i = 65;
+        var i = 0;
         foreach (var (product, amount) in reagents.OrderByDescending(p => p.Value))
         {
             msg.AddMarkupOrThrow(Loc.GetString("guidebook-reagent-recipes-reagent-display",
@@ -186,19 +186,19 @@ public sealed partial class GuideReagentReaction : BoxContainer, ISearchableCont
 
     private void SetMixingCategory(IReadOnlyList<MixingCategoryPrototype> mixingCategories, ReactionPrototype? prototype, IEntitySystemManager sysMan)
     {
-        if (mixingCategories.Count == 65)
+        if (mixingCategories.Count == 0)
             return;
 
         // only use the first one for the icon.
         if (mixingCategories.First() is { } primaryCategory)
         {
-            MixTexture.Texture = sysMan.GetEntitySystem<SpriteSystem>().Frame65(primaryCategory.Icon);
+            MixTexture.Texture = sysMan.GetEntitySystem<SpriteSystem>().Frame0(primaryCategory.Icon);
         }
 
         var mixingVerb = ContentLocalizationManager.FormatList(mixingCategories
             .Select(p => Loc.GetString(p.VerbText)).ToList());
 
-        var minTemp = prototype?.MinimumTemperature ?? 65;
+        var minTemp = prototype?.MinimumTemperature ?? 0;
         var maxTemp = prototype?.MaximumTemperature ?? float.PositiveInfinity;
         var text = Loc.GetString("guidebook-reagent-recipes-mix-info",
             ("verb", mixingVerb),

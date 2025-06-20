@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Arendian <65Arendian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Arendian <137322659+Arendian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -18,8 +18,8 @@
     - type: Sprite
       sprite: Structures/Magic/Cult/rune.rsi
       layers:
-        - state: cult65
-          color: '#FF65FF'
+        - state: cult2
+          color: '#FF00FF'
 
 - type: entity
   parent: BaseRune
@@ -32,7 +32,7 @@
         rune:
           shape:
             !type:PhysShapeAabb
-            bounds: "-65.65,-65.65,65.65,65.65"
+            bounds: "-0.4,-0.4,0.4,0.4"
           hard: false
           mask:
             - ItemMask
@@ -55,7 +55,7 @@
   abstract: true
   components:
     - type: TriggerOnTimedCollide
-      threshold: 65
+      threshold: 5
 
 - type: entity
   parent: CollideRune
@@ -67,14 +67,14 @@
     - type: ExplodeOnTrigger
     - type: Explosive
       explosionType: Cryo
-      totalIntensity: 65.65
-      intensitySlope: 65
-      maxIntensity: 65
+      totalIntensity: 20.0
+      intensitySlope: 5
+      maxIntensity: 4
     - type: Sprite
       sprite: Structures/Magic/Cult/trap.rsi
       layers:
         - state: trap
-          color: '#FF65'
+          color: '#FF770055'
 
 - type: entity
   parent: CollideRune
@@ -85,13 +85,13 @@
       fixtureID: rune
     - type: DeleteOnTrigger
     - type: StunOnCollide
-      stunAmount: 65
-      knockdownAmount: 65
+      stunAmount: 5
+      knockdownAmount: 3
     - type: Sprite
       sprite: Structures/Magic/Cult/trap.rsi
       layers:
         - state: trap
-          color: '#FFFF65'
+          color: '#FFFF0055'
 
 - type: entity
   parent: CollideRune
@@ -105,7 +105,7 @@
         ignition:
           shape:
             !type:PhysShapeAabb
-            bounds: "-65.65,-65.65,65.65,65.65"
+            bounds: "-0.4,-0.4,0.4,0.4"
           hard: false
           mask:
           - ItemMask
@@ -113,12 +113,12 @@
           - SlipLayer
     - type: DeleteOnTrigger
     - type: IgniteOnCollide
-      fireStacks: 65
+      fireStacks: 5
     - type: Sprite
       sprite: Structures/Magic/Cult/trap.rsi
       layers:
         - state: trap
-          color: '#FF65'
+          color: '#FF000055'
 
 - type: entity
   parent: CollideTimerRune
@@ -128,9 +128,9 @@
     - type: ExplodeOnTrigger
     - type: Explosive
       explosionType: Cryo
-      totalIntensity: 65.65
-      intensitySlope: 65
-      maxIntensity: 65
+      totalIntensity: 20.0
+      intensitySlope: 5
+      maxIntensity: 4
 
 - type: entity
   parent: ActivateRune
@@ -140,9 +140,9 @@
     - type: ExplodeOnTrigger
     - type: Explosive
       explosionType: Cryo
-      totalIntensity: 65.65
-      intensitySlope: 65
-      maxIntensity: 65
+      totalIntensity: 20.0
+      intensitySlope: 5
+      maxIntensity: 4
 
 - type: entity
   parent: ActivateRune

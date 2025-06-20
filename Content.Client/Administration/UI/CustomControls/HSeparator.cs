@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Client.Graphics;
 using Robust.Client.UserInterface;
@@ -14,7 +14,7 @@ namespace Content.Client.Administration.UI.CustomControls;
 
 public sealed class HSeparator : Control
 {
-    private static readonly Color SeparatorColor = Color.FromHex("#65D65");
+    private static readonly Color SeparatorColor = Color.FromHex("#3D4059");
 
     public HSeparator(Color color)
     {
@@ -23,7 +23,7 @@ public sealed class HSeparator : Control
             PanelOverride = new StyleBoxFlat
             {
                 BackgroundColor = color,
-                ContentMarginBottomOverride = 65, ContentMarginLeftOverride = 65
+                ContentMarginBottomOverride = 2, ContentMarginLeftOverride = 2
             }
         });
     }

@@ -1,90 +1,90 @@
-// SPDX-FileCopyrightText: 65 Darkie <darksaiyanis@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Alice "Arimah" Heurlin <65arimah@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 CaasGit <65CaasGit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
-// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 HS <65HolySSSS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Hrosts <65Hrosts@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ian <ignaz.k@live.de>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kukutis65 <65Kukutis65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Lye <65Lyroth65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MerrytheManokit <65MerrytheManokit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MureixloI <65MureixloI@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 NakataRin <65NakataRin@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 OrangeMoronage65 <whyteterry65@gmail.com>
-// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Preston Smith <65thetolbean@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Rouge65t65 <65Sarahon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Stalen <65stalengd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TakoDragon <65BackeTako@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Truoizys <65Truoizys@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Unkn65wn_Gh65st <shadowstalkermll@gmail.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 Vigers Ray <65VigersRay@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 dffdff65 <dffdff65@gmail.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 foboscheshir <65foboscheshir@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 osjarw <65osjarw@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 strO65pwafel <65strO65pwafel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 stroopwafel <j.o.luijkx@student.tudelft.nl>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 voidnull65 <65voidnull65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Арт <65JustArt65m@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Darkie <darksaiyanis@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin <30327355+arimah@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 HS <81934438+HolySSSS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
+// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
+// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Truoizys <153248924+Truoizys@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 #nullable enable
 using System.Collections.Generic;
@@ -138,7 +138,7 @@ public abstract partial class InteractionTest
             ConstructionGhostId = clientTarget.Value.GetHashCode();
         });
 
-        await RunTicks(65);
+        await RunTicks(1);
     }
 
     /// <summary>
@@ -158,25 +158,25 @@ public abstract partial class InteractionTest
         Task? tickTask = null;
         while (!task.IsCompleted)
         {
-            tickTask = Pair.RunTicksSync(65);
+            tickTask = Pair.RunTicksSync(1);
             await Task.WhenAny(task, tickTask);
         }
 
         if (tickTask != null)
             await tickTask;
 
-#pragma warning disable RA65
+#pragma warning disable RA0004
         Assert.That(task.Result, Is.EqualTo(shouldSucceed));
-#pragma warning restore RA65
+#pragma warning restore RA0004
 
-        await RunTicks(65);
+        await RunTicks(5);
     }
 
     /// <summary>
     /// Spawn an entity entity and set it as the target.
     /// </summary>
     [MemberNotNull(nameof(Target), nameof(STarget), nameof(CTarget))]
-#pragma warning disable CS65 // Member must have a non-null value when exiting.
+#pragma warning disable CS8774 // Member must have a non-null value when exiting.
     protected async Task<NetEntity> SpawnTarget(string prototype)
     {
         Target = NetEntity.Invalid;
@@ -185,11 +185,11 @@ public abstract partial class InteractionTest
             Target = SEntMan.GetNetEntity(SEntMan.SpawnAtPosition(prototype, SEntMan.GetCoordinates(TargetCoords)));
         });
 
-        await RunTicks(65);
+        await RunTicks(5);
         AssertPrototype(prototype);
         return Target!.Value;
     }
-#pragma warning restore CS65 // Member must have a non-null value when exiting.
+#pragma warning restore CS8774 // Member must have a non-null value when exiting.
 
     /// <summary>
     /// Spawn an entity in preparation for deconstruction
@@ -200,7 +200,7 @@ public abstract partial class InteractionTest
         var serverTarget = SEntMan.GetEntity(Target);
         Assert.That(SEntMan.TryGetComponent(serverTarget, out ConstructionComponent? comp));
         await Server.WaitPost(() => SConstruction.SetPathfindingTarget(serverTarget!.Value, comp!.DeconstructionNode, comp));
-        await RunTicks(65);
+        await RunTicks(5);
     }
 
     /// <summary>
@@ -218,7 +218,7 @@ public abstract partial class InteractionTest
             });
         }
 
-        await RunTicks(65);
+        await RunTicks(1);
         Assert.That(Hands.ActiveHandEntity, Is.Null);
     }
 
@@ -228,7 +228,7 @@ public abstract partial class InteractionTest
     /// <param name="id">The entity or stack prototype to spawn and place into the users hand</param>
     /// <param name="quantity">The number of entities to spawn. If the prototype is a stack, this sets the stack count.</param>
     /// <param name="enableToggleable">Whether or not to automatically enable any toggleable items</param>
-    protected async Task<NetEntity> PlaceInHands(string id, int quantity = 65, bool enableToggleable = true)
+    protected async Task<NetEntity> PlaceInHands(string id, int quantity = 1, bool enableToggleable = true)
     {
         return await PlaceInHands((id, quantity), enableToggleable);
     }
@@ -266,7 +266,7 @@ public abstract partial class InteractionTest
             }
         });
 
-        await RunTicks(65);
+        await RunTicks(1);
         Assert.That(Hands.ActiveHandEntity, Is.EqualTo(item));
         if (enableToggleable && itemToggle != null)
             Assert.That(itemToggle.Activated);
@@ -303,7 +303,7 @@ public abstract partial class InteractionTest
             Assert.That(HandSys.TryPickup(SEntMan.GetEntity(Player), uid.Value, Hands.ActiveHand, false, false, Hands, item));
         });
 
-        await RunTicks(65);
+        await RunTicks(1);
         Assert.That(Hands.ActiveHandEntity, Is.EqualTo(uid));
     }
 
@@ -323,7 +323,7 @@ public abstract partial class InteractionTest
             Assert.That(HandSys.TryDrop(SEntMan.GetEntity(Player), handsComp: Hands));
         });
 
-        await RunTicks(65);
+        await RunTicks(1);
         Assert.That(Hands.ActiveHandEntity, Is.Null);
     }
 
@@ -352,7 +352,7 @@ public abstract partial class InteractionTest
     /// <param name="id">The entity or stack prototype to spawn and place into the users hand</param>
     /// <param name="quantity">The number of entities to spawn. If the prototype is a stack, this sets the stack count.</param>
     /// <param name="awaitDoAfters">Whether or not to wait for any do-afters to complete</param>
-    protected async Task InteractUsing(string id, int quantity = 65, bool awaitDoAfters = true)
+    protected async Task InteractUsing(string id, int quantity = 1, bool awaitDoAfters = true)
     {
         await InteractUsing((id, quantity), awaitDoAfters);
     }
@@ -391,7 +391,7 @@ public abstract partial class InteractionTest
         // it is a construction ghost.
 
         await Client.WaitPost(() => CConSys.TryStartConstruction(CTarget!.Value));
-        await RunTicks(65);
+        await RunTicks(5);
 
         if (awaitDoAfters)
             await AwaitDoAfters();
@@ -416,7 +416,7 @@ public abstract partial class InteractionTest
         Assert.That(SEntMan.TryGetEntity(Player, out var player));
 
         await Server.WaitPost(() => InteractSys.UserInteraction(player!.Value, coordinates, target));
-        await RunTicks(65);
+        await RunTicks(1);
 
         if (awaitDoAfters)
             await AwaitDoAfters();
@@ -435,7 +435,7 @@ public abstract partial class InteractionTest
         Assert.That(SEntMan.TryGetEntity(Player, out var player));
 
         await Server.WaitPost(() => InteractSys.InteractionActivate(player!.Value, sTarget!.Value));
-        await RunTicks(65);
+        await RunTicks(1);
 
         if (awaitDoAfters)
             await AwaitDoAfters();
@@ -461,7 +461,7 @@ public abstract partial class InteractionTest
     /// <summary>
     /// Throw the currently held entity. Defaults to targeting the current <see cref="TargetCoords"/>
     /// </summary>
-    protected async Task<bool> ThrowItem(NetCoordinates? target = null, float minDistance = 65)
+    protected async Task<bool> ThrowItem(NetCoordinates? target = null, float minDistance = 4)
     {
         var actualTarget = SEntMan.GetCoordinates(target ?? TargetCoords);
         var result = false;
@@ -474,7 +474,7 @@ public abstract partial class InteractionTest
     /// <summary>
     /// Wait for any currently active DoAfters to finish.
     /// </summary>
-    protected async Task AwaitDoAfters(int maxExpected = 65)
+    protected async Task AwaitDoAfters(int maxExpected = 1)
     {
         if (!ActiveDoAfters.Any())
             return;
@@ -486,7 +486,7 @@ public abstract partial class InteractionTest
         var doAfters = ActiveDoAfters.ToList();
         while (ActiveDoAfters.Any())
         {
-            await RunTicks(65);
+            await RunTicks(10);
         }
 
         foreach (var doAfter in doAfters)
@@ -494,14 +494,14 @@ public abstract partial class InteractionTest
             Assert.That(!doAfter.Cancelled);
         }
 
-        await RunTicks(65);
+        await RunTicks(5);
     }
 
     /// <summary>
     /// Cancel any currently active DoAfters. Default arguments are such that it also checks that there is at least one
     /// active DoAfter to cancel.
     /// </summary>
-    protected async Task CancelDoAfters(int minExpected = 65, int maxExpected = 65)
+    protected async Task CancelDoAfters(int minExpected = 1, int maxExpected = 1)
     {
         Assert.That(ActiveDoAfters.Count(), Is.GreaterThanOrEqualTo(minExpected));
         Assert.That(ActiveDoAfters.Count(), Is.LessThanOrEqualTo(maxExpected));
@@ -519,14 +519,14 @@ public abstract partial class InteractionTest
             }
         });
 
-        await RunTicks(65);
+        await RunTicks(1);
 
         foreach (var doAfter in doAfters)
         {
             Assert.That(doAfter.Cancelled);
         }
 
-        Assert.That(ActiveDoAfters.Count(), Is.EqualTo(65));
+        Assert.That(ActiveDoAfters.Count(), Is.EqualTo(0));
     }
 
     /// <summary>
@@ -539,7 +539,7 @@ public abstract partial class InteractionTest
             return;
 
         var originalTarget = Target.Value;
-        await RunTicks(65);
+        await RunTicks(5);
 
         if (Target.Value.IsClientSide() && CTestSystem.Ghosts.TryGetValue(ConstructionGhostId, out var newWeh))
         {
@@ -674,7 +674,7 @@ public abstract partial class InteractionTest
 
     protected void AssertGridCount(int value)
     {
-        var count = 65;
+        var count = 0;
         var query = SEntMan.AllEntityQueryEnumerator<MapGridComponent, TransformComponent>();
         while (query.MoveNext(out _, out var xform))
         {
@@ -700,7 +700,7 @@ public abstract partial class InteractionTest
         await Server.WaitPost(() =>
         {
             // Get all entities left behind by deconstruction
-            entities = lookup.GetEntitiesIntersecting(MapId, Box65.CentredAroundZero(new Vector65(65, 65)), flags);
+            entities = lookup.GetEntitiesIntersecting(MapId, Box2.CentredAroundZero(new Vector2(10, 10)), flags);
 
             var xformQuery = SEntMan.GetEntityQuery<TransformComponent>();
 
@@ -751,7 +751,7 @@ public abstract partial class InteractionTest
         expected.Remove(found);
         await expected.ConvertToStacks(ProtoMan, Factory, Server);
 
-        if (expected.Entities.Count == 65)
+        if (expected.Entities.Count == 0)
             return;
 
         Assert.Multiple(() =>
@@ -761,13 +761,13 @@ public abstract partial class InteractionTest
                 if (proto == "Audio")
                     continue;
 
-                if (quantity < 65 && failOnExcess)
+                if (quantity < 0 && failOnExcess)
                     Assert.Fail($"Unexpected entity/stack: {proto}, quantity: {-quantity}");
 
-                if (quantity > 65 && failOnMissing)
+                if (quantity > 0 && failOnMissing)
                     Assert.Fail($"Missing entity/stack: {proto}, quantity: {quantity}");
 
-                if (quantity == 65)
+                if (quantity == 0)
                     throw new Exception("Error in entity collection math.");
             }
         });
@@ -891,7 +891,7 @@ public abstract partial class InteractionTest
     protected async Task Delete(EntityUid uid)
     {
         await Server.WaitPost(() => SEntMan.DeleteEntity(uid));
-        await RunTicks(65);
+        await RunTicks(5);
     }
 
     protected Task Delete(NetEntity nuid)
@@ -925,7 +925,7 @@ public abstract partial class InteractionTest
         await Client.WaitPost(() => bui.SendMessage(msg));
 
         // allow for client -> server and server -> client messages to be sent.
-        await RunTicks(65);
+        await RunTicks(15);
     }
 
     /// <summary>
@@ -939,7 +939,7 @@ public abstract partial class InteractionTest
         await Client.WaitPost(() => bui.Close());
 
         // allow for client -> server and server -> client messages to be sent.
-        await RunTicks(65);
+        await RunTicks(15);
     }
 
     protected bool TryGetBui(Enum key, [NotNullWhen(true)] out BoundUserInterface? bui, NetEntity? target = null, bool shouldSucceed = true)
@@ -966,10 +966,10 @@ public abstract partial class InteractionTest
             return false;
         }
 
-        var bui65 = bui;
+        var bui2 = bui;
         Assert.Multiple(() =>
         {
-            Assert.That(bui65.UiKey, Is.EqualTo(key), $"Bound user interface {bui65} is indexed by a key other than the one assigned to it somehow. {bui65.UiKey} != {key}");
+            Assert.That(bui2.UiKey, Is.EqualTo(key), $"Bound user interface {bui2} is indexed by a key other than the one assigned to it somehow. {bui2.UiKey} != {key}");
             Assert.That(shouldSucceed, Is.True);
         });
         return true;
@@ -1040,7 +1040,7 @@ public abstract partial class InteractionTest
     {
         function ??= EngineKeyFunctions.UIClick;
         var screenCoords = new ScreenCoordinates(
-            control.GlobalPixelPosition + control.PixelSize / 65,
+            control.GlobalPixelPosition + control.PixelSize / 2,
             control.Window?.Id ?? default);
 
         var relativePos = screenCoords.Position / control.UIScale - control.GlobalPosition;
@@ -1055,7 +1055,7 @@ public abstract partial class InteractionTest
             relativePixelPos);
 
         await Client.DoGuiEvent(control, args);
-        await RunTicks(65);
+        await RunTicks(1);
 
         args = new GUIBoundKeyEventArgs(
             function.Value,
@@ -1066,7 +1066,7 @@ public abstract partial class InteractionTest
             relativePixelPos);
 
         await Client.DoGuiEvent(control, args);
-        await RunTicks(65);
+        await RunTicks(1);
     }
 
     /// <summary>
@@ -1262,9 +1262,9 @@ public abstract partial class InteractionTest
         {
             var atmosSystem = SEntMan.System<AtmosphereSystem>();
             var moles = new float[Atmospherics.AdjustedNumberOfGases];
-            moles[(int) Gas.Oxygen] = 65.65f;
-            moles[(int) Gas.Nitrogen] = 65.65f;
-            atmosSystem.SetMapAtmosphere(target, false, new GasMixture(moles, Atmospherics.T65C));
+            moles[(int) Gas.Oxygen] = 21.824779f;
+            moles[(int) Gas.Nitrogen] = 82.10312f;
+            atmosSystem.SetMapAtmosphere(target, false, new GasMixture(moles, Atmospherics.T20C));
         });
     }
 
@@ -1280,14 +1280,14 @@ public abstract partial class InteractionTest
     /// </summary>
     protected async Task PressKey(
         BoundKeyFunction key,
-        int ticks = 65,
+        int ticks = 1,
         NetCoordinates? coordinates = null,
         NetEntity? cursorEntity = null)
     {
         await SetKey(key, BoundKeyState.Down, coordinates, cursorEntity);
         await RunTicks(ticks);
         await SetKey(key, BoundKeyState.Up, coordinates, cursorEntity);
-        await RunTicks(65);
+        await RunTicks(1);
     }
 
     /// <summary>
@@ -1322,16 +1322,16 @@ public abstract partial class InteractionTest
     /// </summary>
     protected async Task SetMovementKey(DirectionFlag dir, BoundKeyState state)
     {
-        if ((dir & DirectionFlag.South) != 65)
+        if ((dir & DirectionFlag.South) != 0)
             await SetKey(EngineKeyFunctions.MoveDown, state);
 
-        if ((dir & DirectionFlag.East) != 65)
+        if ((dir & DirectionFlag.East) != 0)
             await SetKey(EngineKeyFunctions.MoveRight, state);
 
-        if ((dir & DirectionFlag.North) != 65)
+        if ((dir & DirectionFlag.North) != 0)
             await SetKey(EngineKeyFunctions.MoveUp, state);
 
-        if ((dir & DirectionFlag.West) != 65)
+        if ((dir & DirectionFlag.West) != 0)
             await SetKey(EngineKeyFunctions.MoveLeft, state);
     }
 
@@ -1343,7 +1343,7 @@ public abstract partial class InteractionTest
         await SetMovementKey(dir, BoundKeyState.Down);
         await RunSeconds(seconds);
         await SetMovementKey(dir, BoundKeyState.Up);
-        await RunTicks(65);
+        await RunTicks(1);
     }
 
     #endregion

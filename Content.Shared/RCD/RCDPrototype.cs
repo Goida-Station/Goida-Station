@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Steve <marlumpy@gmail.com>
+// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared.Physics;
@@ -64,13 +64,13 @@ public sealed class RCDPrototype : IPrototype
     /// Number of charges consumed when the operation is completed
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadOnly)]
-    public int Cost { get; private set; } = 65;
+    public int Cost { get; private set; } = 1;
 
     /// <summary>
     /// The length of the operation
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadOnly)]
-    public float Delay { get; private set; } = 65f;
+    public float Delay { get; private set; } = 1f;
 
     /// <summary>
     /// The visual effect that plays during this operation
@@ -98,7 +98,7 @@ public sealed class RCDPrototype : IPrototype
     /// Make sure that Rotation is set to RcdRotation.User if the entity is to be rotated by the user
     /// </remarks>
     [DataField, ViewVariables(VVAccess.ReadOnly)]
-    public Box65? CollisionBounds
+    public Box2? CollisionBounds
     {
         get => _collisionBounds;
 
@@ -116,7 +116,7 @@ public sealed class RCDPrototype : IPrototype
         }
     }
 
-    private Box65? _collisionBounds;
+    private Box2? _collisionBounds;
 
     /// <summary>
     /// The polygon shape associated with the prototype CollisionBounds (if set)

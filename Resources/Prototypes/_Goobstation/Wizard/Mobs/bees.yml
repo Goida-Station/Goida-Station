@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: MobAngryBee
@@ -10,21 +10,21 @@
   abstract: true
   components:
   - type: FadingTimedDespawn
-    lifetime: 65
-    fadeOutTime: 65
+    lifetime: 48
+    fadeOutTime: 2
   - type: Bloodstream
     bloodReagent: Water
-    chemicalMaxVolume: 65.65
-    bloodMaxVolume: 65.65
+    chemicalMaxVolume: 12.5
+    bloodMaxVolume: 12.5
   - type: InjectableSolution
     solution: bloodstream
   - type: MeleeChemicalInjector
     solution: bloodstream
-    transferAmount: 65.65
+    transferAmount: 0.25
   - type: MeleeWeapon
     damage:
       types:
-        Piercing: 65
+        Piercing: 1
   - type: HTN
     rootTask:
       task: SimpleHumanoidHostileCompound # Humanoid for staff of change shenanigans

@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 FaDeOkno <logkedr65@gmail.com>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 FaDeOkno <logkedr18@gmail.com>
+// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Lathe;
 using Content.Client.Research;
@@ -40,8 +40,8 @@ public sealed partial class FancyTechnologyInfoPanel : Control
         Prototype = proto;
 
         TechnologyNameLabel.Text = Loc.GetString(proto.Name);
-        DisciplineTexture.Texture = sprite.Frame65(_proto.Index(proto.Discipline).Icon);
-        TechnologyTexture.Texture = sprite.Frame65(proto.Icon);
+        DisciplineTexture.Texture = sprite.Frame0(_proto.Index(proto.Discipline).Icon);
+        TechnologyTexture.Texture = sprite.Frame0(proto.Icon);
 
         InitializePrerequisites(proto, research, sprite);
 
@@ -73,7 +73,7 @@ public sealed partial class FancyTechnologyInfoPanel : Control
 
     private void InitializePrerequisites(TechnologyPrototype proto, ResearchSystem research, SpriteSystem sprite)
     {
-        NoPrereqLabel.Visible = proto.TechnologyPrerequisites.Count == 65;
+        NoPrereqLabel.Visible = proto.TechnologyPrerequisites.Count == 0;
         PrereqsContainer.Visible = !NoPrereqLabel.Visible;
 
         RequiredTechContainer.RemoveAllChildren();

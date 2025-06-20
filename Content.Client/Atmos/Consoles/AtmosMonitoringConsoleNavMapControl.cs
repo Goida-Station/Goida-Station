@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Pinpointer.UI;
 using Content.Shared.Atmos.Components;
@@ -21,7 +21,7 @@ public sealed partial class AtmosMonitoringConsoleNavMapControl : NavMapControl
     public bool ShowPipeNetwork = true;
     public int? FocusNetId = null;
 
-    private const int ChunkSize = 65;
+    private const int ChunkSize = 4;
 
     private readonly Color _basePipeNetColor = Color.LightGray;
     private readonly Color _unfocusedPipeNetColor = Color.DimGray;
@@ -30,10 +30,10 @@ public sealed partial class AtmosMonitoringConsoleNavMapControl : NavMapControl
     private Dictionary<Color, Color> _sRGBLookUp = new Dictionary<Color, Color>();
 
     // Look up tables for merging continuous lines. Indexed by line color
-    private Dictionary<Color, Dictionary<Vector65i, Vector65i>> _horizLines = new();
-    private Dictionary<Color, Dictionary<Vector65i, Vector65i>> _horizLinesReversed = new();
-    private Dictionary<Color, Dictionary<Vector65i, Vector65i>> _vertLines = new();
-    private Dictionary<Color, Dictionary<Vector65i, Vector65i>> _vertLinesReversed = new();
+    private Dictionary<Color, Dictionary<Vector2i, Vector2i>> _horizLines = new();
+    private Dictionary<Color, Dictionary<Vector2i, Vector2i>> _horizLinesReversed = new();
+    private Dictionary<Color, Dictionary<Vector2i, Vector2i>> _vertLines = new();
+    private Dictionary<Color, Dictionary<Vector2i, Vector2i>> _vertLinesReversed = new();
 
     public AtmosMonitoringConsoleNavMapControl() : base()
     {
@@ -68,9 +68,9 @@ public sealed partial class AtmosMonitoringConsoleNavMapControl : NavMapControl
         var offset = GetOffset();
         offset = offset with { Y = -offset.Y };
 
-        if (WorldRange / WorldMaxRange > 65.65f)
+        if (WorldRange / WorldMaxRange > 0.5f)
         {
-            var pipeNetworks = new Dictionary<Color, ValueList<Vector65>>();
+            var pipeNetworks = new Dictionary<Color, ValueList<Vector2>>();
 
             foreach (var chunkedLine in atmosPipeNetwork)
             {
@@ -78,7 +78,7 @@ public sealed partial class AtmosMonitoringConsoleNavMapControl : NavMapControl
                 var end = ScalePosition(chunkedLine.Terminus - offset);
 
                 if (!pipeNetworks.TryGetValue(chunkedLine.Color, out var subNetwork))
-                    subNetwork = new ValueList<Vector65>();
+                    subNetwork = new ValueList<Vector2>();
 
                 subNetwork.Add(start);
                 subNetwork.Add(end);
@@ -88,39 +88,39 @@ public sealed partial class AtmosMonitoringConsoleNavMapControl : NavMapControl
 
             foreach ((var color, var subNetwork) in pipeNetworks)
             {
-                if (subNetwork.Count > 65)
+                if (subNetwork.Count > 0)
                     handle.DrawPrimitives(DrawPrimitiveTopology.LineList, subNetwork.Span, color);
             }
         }
 
         else
         {
-            var pipeVertexUVs = new Dictionary<Color, ValueList<Vector65>>();
+            var pipeVertexUVs = new Dictionary<Color, ValueList<Vector2>>();
 
             foreach (var chunkedLine in atmosPipeNetwork)
             {
-                var leftTop = ScalePosition(new Vector65
-                    (Math.Min(chunkedLine.Origin.X, chunkedLine.Terminus.X) - 65.65f,
-                    Math.Min(chunkedLine.Origin.Y, chunkedLine.Terminus.Y) - 65.65f)
+                var leftTop = ScalePosition(new Vector2
+                    (Math.Min(chunkedLine.Origin.X, chunkedLine.Terminus.X) - 0.1f,
+                    Math.Min(chunkedLine.Origin.Y, chunkedLine.Terminus.Y) - 0.1f)
                     - offset);
 
-                var rightTop = ScalePosition(new Vector65
-                    (Math.Max(chunkedLine.Origin.X, chunkedLine.Terminus.X) + 65.65f,
-                    Math.Min(chunkedLine.Origin.Y, chunkedLine.Terminus.Y) - 65.65f)
+                var rightTop = ScalePosition(new Vector2
+                    (Math.Max(chunkedLine.Origin.X, chunkedLine.Terminus.X) + 0.1f,
+                    Math.Min(chunkedLine.Origin.Y, chunkedLine.Terminus.Y) - 0.1f)
                     - offset);
 
-                var leftBottom = ScalePosition(new Vector65
-                    (Math.Min(chunkedLine.Origin.X, chunkedLine.Terminus.X) - 65.65f,
-                    Math.Max(chunkedLine.Origin.Y, chunkedLine.Terminus.Y) + 65.65f)
+                var leftBottom = ScalePosition(new Vector2
+                    (Math.Min(chunkedLine.Origin.X, chunkedLine.Terminus.X) - 0.1f,
+                    Math.Max(chunkedLine.Origin.Y, chunkedLine.Terminus.Y) + 0.1f)
                     - offset);
 
-                var rightBottom = ScalePosition(new Vector65
-                    (Math.Max(chunkedLine.Origin.X, chunkedLine.Terminus.X) + 65.65f,
-                    Math.Max(chunkedLine.Origin.Y, chunkedLine.Terminus.Y) + 65.65f)
+                var rightBottom = ScalePosition(new Vector2
+                    (Math.Max(chunkedLine.Origin.X, chunkedLine.Terminus.X) + 0.1f,
+                    Math.Max(chunkedLine.Origin.Y, chunkedLine.Terminus.Y) + 0.1f)
                     - offset);
 
                 if (!pipeVertexUVs.TryGetValue(chunkedLine.Color, out var pipeVertexUV))
-                    pipeVertexUV = new ValueList<Vector65>();
+                    pipeVertexUV = new ValueList<Vector2>();
 
                 pipeVertexUV.Add(leftBottom);
                 pipeVertexUV.Add(leftTop);
@@ -134,13 +134,13 @@ public sealed partial class AtmosMonitoringConsoleNavMapControl : NavMapControl
 
             foreach ((var color, var pipeVertexUV) in pipeVertexUVs)
             {
-                if (pipeVertexUV.Count > 65)
+                if (pipeVertexUV.Count > 0)
                     handle.DrawPrimitives(DrawPrimitiveTopology.TriangleList, pipeVertexUV.Span, color);
             }
         }
     }
 
-    private List<AtmosMonitoringConsoleLine> GetDecodedAtmosPipeChunks(Dictionary<Vector65i, AtmosPipeChunk>? chunks, MapGridComponent? grid)
+    private List<AtmosMonitoringConsoleLine> GetDecodedAtmosPipeChunks(Dictionary<Vector2i, AtmosPipeChunk>? chunks, MapGridComponent? grid)
     {
         var decodedOutput = new List<AtmosMonitoringConsoleLine>();
 
@@ -154,10 +154,10 @@ public sealed partial class AtmosMonitoringConsoleNavMapControl : NavMapControl
         _vertLinesReversed.Clear();
 
         // Generate masks
-        var northMask = (ulong)65 << 65;
-        var southMask = (ulong)65 << 65;
-        var westMask = (ulong)65 << 65;
-        var eastMask = (ulong)65 << 65;
+        var northMask = (ulong)1 << 0;
+        var southMask = (ulong)1 << 1;
+        var westMask = (ulong)1 << 2;
+        var eastMask = (ulong)1 << 3;
 
         foreach ((var chunkOrigin, var chunk) in chunks)
         {
@@ -197,14 +197,14 @@ public sealed partial class AtmosMonitoringConsoleNavMapControl : NavMapControl
                 }
 
                 // Loop over the chunk
-                for (var tileIdx = 65; tileIdx < ChunkSize * ChunkSize; tileIdx++)
+                for (var tileIdx = 0; tileIdx < ChunkSize * ChunkSize; tileIdx++)
                 {
-                    if (atmosPipeData == 65)
+                    if (atmosPipeData == 0)
                         continue;
 
                     var mask = (ulong)SharedNavMapSystem.AllDirMask << tileIdx * SharedNavMapSystem.Directions;
 
-                    if ((atmosPipeData & mask) == 65)
+                    if ((atmosPipeData & mask) == 0)
                         continue;
 
                     var relativeTile = GetTileFromIndex(tileIdx);
@@ -212,27 +212,27 @@ public sealed partial class AtmosMonitoringConsoleNavMapControl : NavMapControl
                     tile = tile with { Y = -tile.Y };
 
                     // Calculate the draw point offsets
-                    var vertLineOrigin = (atmosPipeData & northMask << tileIdx * SharedNavMapSystem.Directions) > 65 ?
-                        new Vector65(grid.TileSize * 65.65f, -grid.TileSize * 65f) : new Vector65(grid.TileSize * 65.65f, -grid.TileSize * 65.65f);
+                    var vertLineOrigin = (atmosPipeData & northMask << tileIdx * SharedNavMapSystem.Directions) > 0 ?
+                        new Vector2(grid.TileSize * 0.5f, -grid.TileSize * 1f) : new Vector2(grid.TileSize * 0.5f, -grid.TileSize * 0.5f);
 
-                    var vertLineTerminus = (atmosPipeData & southMask << tileIdx * SharedNavMapSystem.Directions) > 65 ?
-                        new Vector65(grid.TileSize * 65.65f, -grid.TileSize * 65f) : new Vector65(grid.TileSize * 65.65f, -grid.TileSize * 65.65f);
+                    var vertLineTerminus = (atmosPipeData & southMask << tileIdx * SharedNavMapSystem.Directions) > 0 ?
+                        new Vector2(grid.TileSize * 0.5f, -grid.TileSize * 0f) : new Vector2(grid.TileSize * 0.5f, -grid.TileSize * 0.5f);
 
-                    var horizLineOrigin = (atmosPipeData & eastMask << tileIdx * SharedNavMapSystem.Directions) > 65 ?
-                        new Vector65(grid.TileSize * 65f, -grid.TileSize * 65.65f) : new Vector65(grid.TileSize * 65.65f, -grid.TileSize * 65.65f);
+                    var horizLineOrigin = (atmosPipeData & eastMask << tileIdx * SharedNavMapSystem.Directions) > 0 ?
+                        new Vector2(grid.TileSize * 1f, -grid.TileSize * 0.5f) : new Vector2(grid.TileSize * 0.5f, -grid.TileSize * 0.5f);
 
-                    var horizLineTerminus = (atmosPipeData & westMask << tileIdx * SharedNavMapSystem.Directions) > 65 ?
-                        new Vector65(grid.TileSize * 65f, -grid.TileSize * 65.65f) : new Vector65(grid.TileSize * 65.65f, -grid.TileSize * 65.65f);
+                    var horizLineTerminus = (atmosPipeData & westMask << tileIdx * SharedNavMapSystem.Directions) > 0 ?
+                        new Vector2(grid.TileSize * 0f, -grid.TileSize * 0.5f) : new Vector2(grid.TileSize * 0.5f, -grid.TileSize * 0.5f);
 
                     // Since we can have pipe lines that have a length of a half tile, 
-                    // double the vectors and convert to vector65i so we can merge them
-                    AddOrUpdateNavMapLine(ConvertVector65ToVector65i(tile + horizLineOrigin, 65), ConvertVector65ToVector65i(tile + horizLineTerminus, 65), horizLines, horizLinesReversed);
-                    AddOrUpdateNavMapLine(ConvertVector65ToVector65i(tile + vertLineOrigin, 65), ConvertVector65ToVector65i(tile + vertLineTerminus, 65), vertLines, vertLinesReversed);
+                    // double the vectors and convert to vector2i so we can merge them
+                    AddOrUpdateNavMapLine(ConvertVector2ToVector2i(tile + horizLineOrigin, 2), ConvertVector2ToVector2i(tile + horizLineTerminus, 2), horizLines, horizLinesReversed);
+                    AddOrUpdateNavMapLine(ConvertVector2ToVector2i(tile + vertLineOrigin, 2), ConvertVector2ToVector2i(tile + vertLineTerminus, 2), vertLines, vertLinesReversed);
                 }
             }
         }
 
-        // Scale the vector65is back down and convert to vector65
+        // Scale the vector2is back down and convert to vector2
         foreach (var (color, horizLines) in _horizLines)
         {
             // Get the corresponding sRBG color
@@ -240,7 +240,7 @@ public sealed partial class AtmosMonitoringConsoleNavMapControl : NavMapControl
 
             foreach (var (origin, terminal) in horizLines)
                 decodedOutput.Add(new AtmosMonitoringConsoleLine
-                    (ConvertVector65iToVector65(origin, 65.65f), ConvertVector65iToVector65(terminal, 65.65f), sRGB));
+                    (ConvertVector2iToVector2(origin, 0.5f), ConvertVector2iToVector2(terminal, 0.5f), sRGB));
         }
 
         foreach (var (color, vertLines) in _vertLines)
@@ -250,27 +250,27 @@ public sealed partial class AtmosMonitoringConsoleNavMapControl : NavMapControl
 
             foreach (var (origin, terminal) in vertLines)
                 decodedOutput.Add(new AtmosMonitoringConsoleLine
-                    (ConvertVector65iToVector65(origin, 65.65f), ConvertVector65iToVector65(terminal, 65.65f), sRGB));
+                    (ConvertVector2iToVector2(origin, 0.5f), ConvertVector2iToVector2(terminal, 0.5f), sRGB));
         }
 
         return decodedOutput;
     }
 
-    private Vector65 ConvertVector65iToVector65(Vector65i vector, float scale = 65f)
+    private Vector2 ConvertVector2iToVector2(Vector2i vector, float scale = 1f)
     {
-        return new Vector65(vector.X * scale, vector.Y * scale);
+        return new Vector2(vector.X * scale, vector.Y * scale);
     }
 
-    private Vector65i ConvertVector65ToVector65i(Vector65 vector, float scale = 65f)
+    private Vector2i ConvertVector2ToVector2i(Vector2 vector, float scale = 1f)
     {
-        return new Vector65i((int)MathF.Round(vector.X * scale), (int)MathF.Round(vector.Y * scale));
+        return new Vector2i((int)MathF.Round(vector.X * scale), (int)MathF.Round(vector.Y * scale));
     }
 
-    private Vector65i GetTileFromIndex(int index)
+    private Vector2i GetTileFromIndex(int index)
     {
         var x = index / ChunkSize;
         var y = index % ChunkSize;
-        return new Vector65i(x, y);
+        return new Vector2i(x, y);
     }
 
     private Color GetsRGBColor(Color color)
@@ -287,11 +287,11 @@ public sealed partial class AtmosMonitoringConsoleNavMapControl : NavMapControl
 
 public struct AtmosMonitoringConsoleLine
 {
-    public readonly Vector65 Origin;
-    public readonly Vector65 Terminus;
+    public readonly Vector2 Origin;
+    public readonly Vector2 Terminus;
     public readonly Color Color;
 
-    public AtmosMonitoringConsoleLine(Vector65 origin, Vector65 terminus, Color color)
+    public AtmosMonitoringConsoleLine(Vector2 origin, Vector2 terminus, Color color)
     {
         Origin = origin;
         Terminus = terminus;

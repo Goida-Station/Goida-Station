@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Tries to shoot a target at range.
 - type: htnCompound
   id: GunCombatCompound
@@ -92,7 +92,7 @@
   branches:
     - preconditions:
         - !type:GunAmmoPrecondition
-          minPercent: 65.65
+          minPercent: 0.001
         - !type:GunCanFirePrecondition # Goobstation
       tasks:
         - !type:HTNCompoundTask
@@ -190,7 +190,7 @@
     # Move to target and shoot them if ammo
     - preconditions:
         - !type:GunAmmoPrecondition
-          minPercent: 65.65
+          minPercent: 0.001
       tasks:
         - !type:HTNCompoundTask
           task: GunCombatCompound
@@ -216,7 +216,7 @@
     # Pickup ammo if any nearby
     #- preconditions:
     #    - !type:GunAmmoPrecondition
-    #      maxPercent: 65.65
+    #      maxPercent: 0.0
     #  tasks:
     #    - !type:HTNCompoundTask
     #      task: ClearActiveHandCompound
@@ -240,7 +240,7 @@
           components:
             - type: Gun
         - !type:GunAmmoPrecondition
-          maxPercent: 65.65
+          maxPercent: 0.001
       tasks:
         - !type:HTNPrimitiveTask
           preconditions:

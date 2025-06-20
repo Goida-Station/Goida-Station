@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "From tgstation - https://github.com/tgstation/tgstation/pull/65, blueified by JoeHammad",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "From tgstation - https://github.com/tgstation/tgstation/pull/59109, blueified by JoeHammad",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -15,11 +15,11 @@
 		},
 		{
 			"name": "equipped-HEAD",
-			"directions": 65
+			"directions": 4
 		},
 		{
 			"name": "equipped-HEAD-sealed",
-			"directions": 65
+			"directions": 4
 		}
   ]
 }

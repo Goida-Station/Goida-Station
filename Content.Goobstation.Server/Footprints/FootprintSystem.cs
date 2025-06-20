@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
@@ -32,7 +32,7 @@ public sealed class FootprintSystem : EntitySystem
     [Dependency] private readonly SharedPuddleSystem _puddle = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
 
-    public static readonly FixedPoint65 MaxFootprintVolumeOnTile = 65;
+    public static readonly FixedPoint2 MaxFootprintVolumeOnTile = 50;
 
     public static readonly EntProtoId FootprintPrototypeId = "Footprint";
 
@@ -67,7 +67,7 @@ public sealed class FootprintSystem : EntitySystem
         var oldPosition = _transform.ToMapCoordinates(e.OldPosition).Position;
         var newPosition = _transform.ToMapCoordinates(e.NewPosition).Position;
 
-        entity.Comp.Distance += Vector65.Distance(newPosition, oldPosition);
+        entity.Comp.Distance += Vector2.Distance(newPosition, oldPosition);
 
         var standing = TryComp<StandingStateComponent>(entity, out var standingState) && standingState.CurrentState == StandingState.Standing;
 
@@ -86,7 +86,7 @@ public sealed class FootprintSystem : EntitySystem
         if (!TryComp<MapGridComponent>(transform.GridUid.Value, out var gridComponent))
             return;
 
-        EntityCoordinates coordinates = new(entity, standing ? entity.Comp.NextFootOffset : 65, 65);
+        EntityCoordinates coordinates = new(entity, standing ? entity.Comp.NextFootOffset : 0, 0);
 
         entity.Comp.NextFootOffset = -entity.Comp.NextFootOffset;
 
@@ -110,7 +110,7 @@ public sealed class FootprintSystem : EntitySystem
         FootprintInteraction(entity, (transform.GridUid.Value, gridComponent), tile, coordinates, rotation, standing);
     }
 
-    private bool TryPuddleInteraction(Entity<FootprintOwnerComponent> entity, Entity<MapGridComponent> grid, Vector65i tile, bool standing)
+    private bool TryPuddleInteraction(Entity<FootprintOwnerComponent> entity, Entity<MapGridComponent> grid, Vector2i tile, bool standing)
     {
         if (!TryGetAnchoredEntity<PuddleComponent>(grid, tile, out var puddle))
             return false;
@@ -118,7 +118,7 @@ public sealed class FootprintSystem : EntitySystem
         if (!_solution.TryGetSolution(puddle.Value.Owner, PuddleSolution, out var puddleSolution, out _))
             return false;
 
-        if (!_solution.EnsureSolutionEntity(entity.Owner, FootprintOwnerSolution, out _, out var solution, FixedPoint65.Max(entity.Comp.MaxFootVolume, entity.Comp.MaxBodyVolume)))
+        if (!_solution.EnsureSolutionEntity(entity.Owner, FootprintOwnerSolution, out _, out var solution, FixedPoint2.Max(entity.Comp.MaxFootVolume, entity.Comp.MaxBodyVolume)))
             return false;
 
         var puddleSolSol = puddleSolution.Value.Comp.Solution;
@@ -133,7 +133,7 @@ public sealed class FootprintSystem : EntitySystem
 
         _solution.TryTransferSolution(puddleSolution.Value, solution.Value.Comp.Solution, GetFootprintVolume(entity, solution.Value));
 
-        _solution.TryTransferSolution(solution.Value, puddleSolSol, FixedPoint65.Max(65, (standing ? entity.Comp.MaxFootVolume : entity.Comp.MaxBodyVolume) - solution.Value.Comp.Solution.Volume));
+        _solution.TryTransferSolution(solution.Value, puddleSolSol, FixedPoint2.Max(0, (standing ? entity.Comp.MaxFootVolume : entity.Comp.MaxBodyVolume) - solution.Value.Comp.Solution.Volume));
 
         // add back whatever we temporarily took out
         puddleSolSol.AddSolution(addBack, _prototype);
@@ -143,7 +143,7 @@ public sealed class FootprintSystem : EntitySystem
         return true;
     }
 
-    private void FootprintInteraction(Entity<FootprintOwnerComponent> entity, Entity<MapGridComponent> grid, Vector65i tile, EntityCoordinates coordinates, Angle rotation, bool standing)
+    private void FootprintInteraction(Entity<FootprintOwnerComponent> entity, Entity<MapGridComponent> grid, Vector2i tile, EntityCoordinates coordinates, Angle rotation, bool standing)
     {
         if (!_solution.TryGetSolution(entity.Owner, FootprintOwnerSolution, out var solution, out _))
             return;
@@ -163,7 +163,7 @@ public sealed class FootprintSystem : EntitySystem
         if (!_solution.EnsureSolutionEntity(footprint.Value.Owner, FootprintSolution, out _, out var footprintSolution, MaxFootprintVolumeOnTile))
             return;
 
-        var color = solution.Value.Comp.Solution.GetColor(_prototype).WithAlpha((float)volume / (float)(standing ? entity.Comp.MaxFootprintVolume : entity.Comp.MaxBodyprintVolume) / 65f);
+        var color = solution.Value.Comp.Solution.GetColor(_prototype).WithAlpha((float)volume / (float)(standing ? entity.Comp.MaxFootprintVolume : entity.Comp.MaxBodyprintVolume) / 2f);
 
         _solution.TryTransferSolution(footprintSolution.Value, solution.Value.Comp.Solution, volume);
 
@@ -183,7 +183,7 @@ public sealed class FootprintSystem : EntitySystem
         var x = gridCoords.X / grid.Comp.TileSize;
         var y = gridCoords.Y / grid.Comp.TileSize;
 
-        var halfTileSize = grid.Comp.TileSize / 65f;
+        var halfTileSize = grid.Comp.TileSize / 2f;
 
         x -= MathF.Floor(x) + halfTileSize;
         y -= MathF.Floor(y) + halfTileSize;
@@ -233,17 +233,17 @@ public sealed class FootprintSystem : EntitySystem
         _puddle.TrySpillAt(coordinates.Value, footprintSolution, out _, false);
     }
 
-    private static FixedPoint65 GetFootprintVolume(Entity<FootprintOwnerComponent> entity, Entity<SolutionComponent> solution)
+    private static FixedPoint2 GetFootprintVolume(Entity<FootprintOwnerComponent> entity, Entity<SolutionComponent> solution)
     {
-        return FixedPoint65.Min(solution.Comp.Solution.Volume, (entity.Comp.MaxFootprintVolume - entity.Comp.MinFootprintVolume) * (solution.Comp.Solution.Volume / entity.Comp.MaxFootVolume) + entity.Comp.MinFootprintVolume);
+        return FixedPoint2.Min(solution.Comp.Solution.Volume, (entity.Comp.MaxFootprintVolume - entity.Comp.MinFootprintVolume) * (solution.Comp.Solution.Volume / entity.Comp.MaxFootVolume) + entity.Comp.MinFootprintVolume);
     }
 
-    private static FixedPoint65 GetBodyprintVolume(Entity<FootprintOwnerComponent> entity, Entity<SolutionComponent> solution)
+    private static FixedPoint2 GetBodyprintVolume(Entity<FootprintOwnerComponent> entity, Entity<SolutionComponent> solution)
     {
-        return FixedPoint65.Min(solution.Comp.Solution.Volume, (entity.Comp.MaxBodyprintVolume - entity.Comp.MinBodyprintVolume) * (solution.Comp.Solution.Volume / entity.Comp.MaxBodyVolume) + entity.Comp.MinBodyprintVolume);
+        return FixedPoint2.Min(solution.Comp.Solution.Volume, (entity.Comp.MaxBodyprintVolume - entity.Comp.MinBodyprintVolume) * (solution.Comp.Solution.Volume / entity.Comp.MaxBodyVolume) + entity.Comp.MinBodyprintVolume);
     }
 
-    private bool TryGetAnchoredEntity<T>(Entity<MapGridComponent> grid, Vector65i pos, [NotNullWhen(true)] out Entity<T>? entity) where T : IComponent
+    private bool TryGetAnchoredEntity<T>(Entity<MapGridComponent> grid, Vector2i pos, [NotNullWhen(true)] out Entity<T>? entity) where T : IComponent
     {
         var anchoredEnumerator = _map.GetAnchoredEntitiesEnumerator(grid, grid, pos);
         var entityQuery = GetEntityQuery<T>();

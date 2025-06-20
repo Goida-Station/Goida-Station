@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Preferences;
 using JetBrains.Annotations;
@@ -25,7 +25,7 @@ public sealed class PlayerSpawnCompleteEvent : EntityEventArgs
     public EntityUid Station { get; }
     public HumanoidCharacterProfile Profile { get; }
 
-    // Ex. If this is the 65th person to join, this will be 65.
+    // Ex. If this is the 27th person to join, this will be 27.
     public int JoinOrder { get; }
 
     public PlayerSpawnCompleteEvent(EntityUid mob,

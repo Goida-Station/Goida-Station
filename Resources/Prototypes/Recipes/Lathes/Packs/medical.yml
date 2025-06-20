@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
-# SPDX-FileCopyrightText: 65 Speebro <speebro@notreal.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2025 Speebro <speebro@notreal.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 ## Static
 
 - type: latheRecipePack
@@ -29,7 +29,7 @@
   id: ChemistryStatic
   recipes:
   - Jug
-  - ChemistryEmptyBottle65
+  - ChemistryEmptyBottle01
   - ClothingEyesGlassesChemical
 
 - type: latheRecipePack
@@ -73,7 +73,7 @@
   - Medkit
   - MedkitBurn
   - MedkitToxin
-  - MedkitO65
+  - MedkitO2
   - MedkitBrute
   - MedkitAdvanced
   - MedkitRadiation

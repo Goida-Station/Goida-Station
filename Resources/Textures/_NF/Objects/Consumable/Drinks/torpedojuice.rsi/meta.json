@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-NC-SA-65.65",
+    "version": 1,
+    "license": "CC-BY-NC-SA-4.0",
     "copyright": "Made by ra.Y (Discord)",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 16
     },
     "states": [
         {
@@ -12,8 +12,8 @@
             "delays":
             [
                 [
-                    65.65,
-                    65.65
+                    1.0,
+                    1.0
                 ]
             ]
         },
@@ -22,68 +22,68 @@
             "delays":
             [
                 [
-                    65.65,
-                    65.65
+                    1.0,
+                    1.0
                 ]
             ]
         },
         {
-            "name": "fill-65",
+            "name": "fill-1",
             "delays":
             [
                 [
-                    65.65,
-                    65.65
+                    1.0,
+                    1.0
                 ]
             ]
         },
         {
-            "name": "fill-65",
+            "name": "fill-2",
             "delays":
             [
                 [
-                    65.65,
-                    65.65
+                    1.0,
+                    1.0
                 ]
             ]
         },
         {
-            "name": "fill-65",
+            "name": "fill-3",
             "delays":
             [
                 [
-                    65.65,
-                    65.65
+                    1.0,
+                    1.0
                 ]
             ]
         },
         {
-            "name": "fill-65",
+            "name": "fill-4",
             "delays":
             [
                 [
-                    65.65,
-                    65.65
+                    1.0,
+                    1.0
                 ]
             ]
         },
         {
-            "name": "fill-65",
+            "name": "fill-5",
             "delays":
             [
                 [
-                    65.65,
-                    65.65
+                    1.0,
+                    1.0
                 ]
             ]
         },
         {
-            "name": "fill-65",
+            "name": "fill-6",
             "delays":
             [
                 [
-                    65.65,
-                    65.65
+                    1.0,
+                    1.0
                 ]
             ]
         }

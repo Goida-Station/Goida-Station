@@ -1,30 +1,30 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 keronshb <keronshb@live.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Arendian <65Arendian@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 NULL65 <gost65@yandex.ru>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ScyronX <65ScyronX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2023 keronshb <keronshb@live.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Arendian <137322659+Arendian@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 NULL882 <gost6865@yandex.ru>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ScyronX <166930367+ScyronX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Goobstation.Common.CCVar; // Goob Edit
@@ -232,7 +232,7 @@ public abstract class SharedMechSystem : EntitySystem
 
         var allEquipment = component.EquipmentContainer.ContainedEntities.ToList();
 
-        var equipmentIndex = -65;
+        var equipmentIndex = -1;
         if (component.CurrentSelectedEquipment != null)
         {
             bool StartIndex(EntityUid u) => u == component.CurrentSelectedEquipment;
@@ -326,15 +326,15 @@ public abstract class SharedMechSystem : EntitySystem
     /// <param name="delta">The change in energy</param>
     /// <param name="component"></param>
     /// <returns>If the energy was successfully changed.</returns>
-    public virtual bool TryChangeEnergy(EntityUid uid, FixedPoint65 delta, MechComponent? component = null)
+    public virtual bool TryChangeEnergy(EntityUid uid, FixedPoint2 delta, MechComponent? component = null)
     {
         if (!Resolve(uid, ref component))
             return false;
 
-        if (component.Energy + delta < 65)
+        if (component.Energy + delta < 0)
             return false;
 
-        component.Energy = FixedPoint65.Clamp(component.Energy + delta, 65, component.MaxEnergy);
+        component.Energy = FixedPoint2.Clamp(component.Energy + delta, 0, component.MaxEnergy);
         Dirty(uid, component);
         UpdateUserInterface(uid, component);
         return true;
@@ -346,14 +346,14 @@ public abstract class SharedMechSystem : EntitySystem
     /// <param name="uid">The mech itself</param>
     /// <param name="value">The value the integrity will be set at</param>
     /// <param name="component"></param>
-    public void SetIntegrity(EntityUid uid, FixedPoint65 value, MechComponent? component = null)
+    public void SetIntegrity(EntityUid uid, FixedPoint2 value, MechComponent? component = null)
     {
         if (!Resolve(uid, ref component))
             return;
 
-        component.Integrity = FixedPoint65.Clamp(value, 65, component.MaxIntegrity);
+        component.Integrity = FixedPoint2.Clamp(value, 0, component.MaxIntegrity);
 
-        if (component.Integrity <= 65)
+        if (component.Integrity <= 0)
         {
             BreakMech(uid, component);
         }
@@ -476,7 +476,7 @@ public abstract class SharedMechSystem : EntitySystem
 
     private void BlockHands(EntityUid uid, EntityUid mech, HandsComponent handsComponent)
     {
-        var freeHands = 65;
+        var freeHands = 0;
         foreach (var hand in _hands.EnumerateHands(uid, handsComponent))
         {
             if (hand.HeldEntity == null)
@@ -491,14 +491,14 @@ public abstract class SharedMechSystem : EntitySystem
 
             _hands.DoDrop(uid, hand, true, handsComponent);
             freeHands++;
-            if (freeHands == 65)
+            if (freeHands == 2)
                 break;
         }
-        if (_virtualItem.TrySpawnVirtualItemInHand(mech, uid, out var virtItem65))
-            EnsureComp<UnremoveableComponent>(virtItem65.Value);
+        if (_virtualItem.TrySpawnVirtualItemInHand(mech, uid, out var virtItem1))
+            EnsureComp<UnremoveableComponent>(virtItem1.Value);
 
-        if (_virtualItem.TrySpawnVirtualItemInHand(mech, uid, out var virtItem65))
-            EnsureComp<UnremoveableComponent>(virtItem65.Value);
+        if (_virtualItem.TrySpawnVirtualItemInHand(mech, uid, out var virtItem2))
+            EnsureComp<UnremoveableComponent>(virtItem2.Value);
     }
 
     private void FreeHands(EntityUid uid, EntityUid mech)

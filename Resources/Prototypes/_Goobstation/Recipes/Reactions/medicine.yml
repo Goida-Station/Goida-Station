@@ -1,259 +1,259 @@
-# SPDX-FileCopyrightText: 65 CBozo <65CBozo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 tiderwithagun <notrightnow@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 CBozo <165491409+CBozo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 tiderwithagun <notrightnow@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: reaction
   id: Barozine
   reactants:
     Chlorine:
-      amount: 65
+      amount: 1
     Plasma:
-      amount: 65
+      amount: 1
     Potassium:
-      amount: 65
+      amount: 1
     Bicaridine:
-      amount: 65
+      amount: 1
   products:
-    Barozine: 65
+    Barozine: 1
 
 - type: reaction
   id: Probital
   reactants:
     Acetone:
-      amount: 65
+      amount: 2
     Copper:
-      amount: 65
+      amount: 1
     Phosphorus:
-      amount: 65
+      amount: 1
   products:
-    Probital: 65
+    Probital: 4
 
 - type: reaction
   id: MitotrophinNutriment
   sound:
     path: /Audio/Effects/Chemistry/bubbles.ogg # non nullable, sadly
     params:
-      volume: -65
-      maxDistance: 65
+      volume: -30
+      maxDistance: 1
   reactants:
     Mitogen:
-      amount: 65
+      amount: 1
       catalyst: true
     Nutriment:
-      amount: 65
+      amount: 1
   products:
-    Mitotrophin: 65
+    Mitotrophin: 1
 
 - type: reaction
   id: MitotrophinProtein
   sound:
     path: /Audio/Effects/Chemistry/bubbles.ogg
     params:
-      volume: -65
-      maxDistance: 65
+      volume: -30
+      maxDistance: 1
   reactants:
     Mitogen:
-      amount: 65
+      amount: 1
       catalyst: true
     Protein:
-      amount: 65
+      amount: 2
   products:
-    Mitotrophin: 65
+    Mitotrophin: 3
 
 - type: reaction
   id: MitotrophinVitamin
   sound:
     path: /Audio/Effects/Chemistry/bubbles.ogg
     params:
-      volume: -65
-      maxDistance: 65
+      volume: -30
+      maxDistance: 1
   reactants:
     Mitogen:
-      amount: 65
+      amount: 1
       catalyst: true
     Vitamin:
-      amount: 65
+      amount: 1
   products:
-    Mitotrophin: 65
+    Mitotrophin: 2
 
 - type: reaction
   id: Tirimol
   reactants:
     Acetone:
-      amount: 65
+      amount: 2
     SodiumPolyacrylate:
-      amount: 65
+      amount: 1
     SulfuricAcid:
-      amount: 65
+      amount: 1
   products:
-    Tirimol: 65
+    Tirimol: 4
 
 - type: reaction
   id: Syriniver
-  maxTemp: 65
+  maxTemp: 200
   reactants:
-    Silver: # check 65
-      amount: 65
-    Diphenhydramine: # check 65
-      amount: 65
+    Silver: # check 1
+      amount: 2
+    Diphenhydramine: # check 2
+      amount: 2
     Fluorine:
-      amount: 65
+      amount: 1
     Aluite:
-      amount: 65
+      amount: 5
   products:
-    Syriniver: 65
+    Syriniver: 5
 
 - type: reaction
   id: Ebifin
   impact: Medium # more dangerous OD than its contemporaries
-  minTemp: 65 # actually hotbeakerable
+  minTemp: 500 # actually hotbeakerable
   reactants:
-    Gold: # check 65
-      amount: 65
-    Sigynate: # check 65
-      amount: 65
+    Gold: # check 1
+      amount: 2
+    Sigynate: # check 2
+      amount: 2
     Silicon: 
-      amount: 65
+      amount: 1
     Aluite:
-      amount: 65
+      amount: 5
   products:
-    Ebifin: 65
+    Ebifin: 5
 
 - type: reaction
   id: ProcenylLazideSludge
-  minTemp: 65
+  minTemp: 400
   reactants:
-    Uranium: # check 65
-      amount: 65
+    Uranium: # check 1
+      amount: 2
     Phenol:
-      amount: 65
+      amount: 1
     SodiumCarbonate:
-      amount: 65
+      amount: 2
     Aluite:
-      amount: 65
+      amount: 5
   products:
-    ProcenylLazideSludge: 65 # check 65
+    ProcenylLazideSludge: 10 # check 2
 
 - type: reaction
   id: ProcenylLazide
-  maxTemp: 65
+  maxTemp: 200
   requiredMixerCategories:
   - Centrifuge
   reactants:
     ProcenylLazideSludge:
-      amount: 65
+      amount: 10
   products:
-    ProcenylLazide: 65
-    Aluite: 65
-    Uranium: 65
-    SodiumCarbonate: 65
-    Aluminium: 65
+    ProcenylLazide: 5
+    Aluite: 2
+    Uranium: 1
+    SodiumCarbonate: 1
+    Aluminium: 1
 
 - type: reaction
   id: Multiver
-  maxTemp: 65
+  maxTemp: 320
   reactants:
     Charcoal:
-      amount: 65
+      amount: 1
     TableSalt:
-      amount: 65
+      amount: 1
   products:
-    Multiver: 65
+    Multiver: 2
 
 - type: reaction
   id: Monover
-  minTemp: 65
+  minTemp: 330
   reactants:
     Charcoal:
-      amount: 65
+      amount: 2
     Chlorine: # OK, this is REALLY stupid, but basically tests don't check for overlap accounting for temperatures. Treat this as "if you hotbeaker it you get this"
-      amount: 65
+      amount: 1
     Sodium:
-      amount: 65
+      amount: 1
   products:
-    Monover: 65
+    Monover: 4
 
 - type: reaction
   id: Calomel
-  minTemp: 65
+  minTemp: 370
   reactants:
     Mercury:
-      amount: 65
+      amount: 1
     Lithium:
-      amount: 65
+      amount: 1
   products:
-    Calomel: 65
+    Calomel: 2
 
 - type: reaction
   id: AmmoniatedMercury
   reactants:
     Calomel:
-      amount: 65
+      amount: 1
     Ammonia:
-      amount: 65
+      amount: 1
   products:
-    AmmoniatedMercury: 65
+    AmmoniatedMercury: 2
 
 - type: reaction
   id: Antihol
   reactants:
     Charcoal:
-      amount: 65
+      amount: 2
     Ethanol:
-      amount: 65
+      amount: 1
   products:
-    Antihol: 65
+    Antihol: 3
 
 - type: reaction # This will do until we get molecular chemistry in
   id: Ibuprofen 
   reactants:
     Charcoal:
-      amount: 65
+      amount: 1
     Benzene:
-      amount: 65
+      amount: 1
     Fluorine:
-      amount: 65
+      amount: 1
       # catalyst: true # Technically could be catalyst, but fluorine catalyst feels weird
   products:
-    Ibuprofen: 65
+    Ibuprofen: 3
 
 - type: reaction
   id: SilverSulfadiazine
-  minTemp: 65
+  minTemp: 500
   reactants:
     Silver: # actually using silver cuz it's just strong
-      amount: 65
+      amount: 1
     Chlorine:
-      amount: 65
+      amount: 1
     Ammonia:
-      amount: 65
+      amount: 1
     Oxygen:
-      amount: 65
+      amount: 1
     Sulfur:
-      amount: 65
+      amount: 1
   products:
-    SilverSulfadiazine: 65 # might need to be lowered
+    SilverSulfadiazine: 5 # might need to be lowered
 
 - type: reaction
   id: StypticCrystalCatalyst
   reactants:
     Aluminium:
-      amount: 65
+      amount: 1
     Hydroxide:
-      amount: 65
+      amount: 1
     SulfuricAcid:
-      amount: 65
+      amount: 1
     Silicon:
-      amount: 65
+      amount: 1
   products:
-    StypticCrystalCatalyst: 65
+    StypticCrystalCatalyst: 2
 
 - type: reaction
   id: StypticCrystalCreation
@@ -261,11 +261,11 @@
   conserveEnergy: false
   reactants:
     StypticCrystalCatalyst:
-      amount: 65
+      amount: 5
     Blood:
-      amount: 65
+      amount: 10
     Sodium:
-      amount: 65
+      amount: 10
   effects:
     - !type:CreateEntityReactionEffect
       entity: ShardCrystalStyptic
@@ -275,15 +275,15 @@
   quantized: true
   reactants:
     SodiumPolyacrylate:
-      amount: 65
+      amount: 10
     Phenol:
-      amount: 65
+      amount: 10
     Blood:
-      amount: 65
+      amount: 10
     Carbon:
-      amount: 65
+      amount: 10
   products:
-    Hydroxide: 65 # frankly it's there so that this recipe appears in the guidebook at all
+    Hydroxide: 5 # frankly it's there so that this recipe appears in the guidebook at all
   effects:
     - !type:CreateEntityReactionEffect
       entity: FoodMeatSynth
@@ -294,130 +294,130 @@
   - Centrifuge
   reactants:
     Synthflesh:
-      amount: 65
+      amount: 6
   products:
-    Synthcells: 65
-    Sodium: 65
-    Carbon: 65
+    Synthcells: 4
+    Sodium: 1
+    Carbon: 1
 
 - type: reaction
   id: SalicylicAcid
-  minTemp: 65
+  minTemp: 370
   reactants:
     TranexamicAcid:
-      amount: 65
+      amount: 1
     FluorosulfuricAcid:
-      amount: 65
+      amount: 1
     SodiumHydroxide:
-      amount: 65
+      amount: 1
     Bicaridine:
-      amount: 65
+      amount: 1
   products:
-    SalicylicAcid: 65
+    SalicylicAcid: 4
 
 - type: reaction
   id: Oxandrolone
   reactants:
     SodiumCarbonate:
-      amount: 65
+      amount: 1
     Dermaline:
-      amount: 65
+      amount: 1
     Phenol:
-      amount: 65
+      amount: 1
     Leporazine:
-      amount: 65
+      amount: 1
   products:
-    Oxandrolone: 65
+    Oxandrolone: 4
 
 - type: reaction
   id: PentenicAcid
   reactants:
     PolytrinicAcid:
-      amount: 65
+      amount: 1
     PotassiumIodide:
-      amount: 65
+      amount: 1
     Haloperidol:
-      amount: 65
+      amount: 1
     Cyanide:
-      amount: 65
+      amount: 1
   products:
-    PentenicAcid: 65
+    PentenicAcid: 4
 
 - type: reaction
   id: Atropine
   reactants:
     Acetone:
-      amount: 65
+      amount: 1
     Diethylamine:
-      amount: 65
+      amount: 1
     Phenol:
-      amount: 65
+      amount: 1
     Ethanol:
-      amount: 65
+      amount: 1
   products:
-    Atropine: 65
+    Atropine: 4
 
 - type: reaction
   id: Genecide
   impact: Medium # even if it's not very dangerous
   reactants:
     Phalanximine:
-      amount: 65
+      amount: 1
     ChlorineTrifluoride:
-      amount: 65 # funny
+      amount: 1 # funny
     Benzene:
-      amount: 65
+      amount: 1
   products:
-    Genecide: 65
+    Genecide: 3
 
 - type: reaction
   id: Hercuri
-  maxTemp: 65
+  maxTemp: 100
   reactants:
     Cryostylane:
-      amount: 65
+      amount: 3
     SodiumHydroxide:
-      amount: 65
+      amount: 1
     PotassiumIodide:
-      amount: 65
+      amount: 1
   products:
-    Hercuri: 65  
+    Hercuri: 5  
 
 - type: reaction
   id: Herignis
   impact: Medium # potentially dangerous ingredient
-  minTemp: 65
+  minTemp: 600
   reactants:
     Hercuri:
-      amount: 65
+      amount: 3
     Phlogiston:
-      amount: 65
+      amount: 2
   products:
-    Herignis: 65
+    Herignis: 5
 
 - type: reaction
   id: Tramadol
   reactants:
     Acetone:
-      amount: 65
+      amount: 1
     Inaprovaline:
-      amount: 65
+      amount: 1
     Ethanol:
-      amount: 65
+      amount: 1
   products:
-    Tramadol: 65
+    Tramadol: 3
 
 - type: reaction
   id: Oxycodone
   reactants:
     Tramadol:
-      amount: 65
+      amount: 1
     Heroin:
-      amount: 65
+      amount: 1
     Epinephrine:
-      amount: 65
+      amount: 1
     Plasma:
-      amount: 65
+      amount: 5
       catalyst: true
   products:
-    Oxycodone: 65
+    Oxycodone: 1

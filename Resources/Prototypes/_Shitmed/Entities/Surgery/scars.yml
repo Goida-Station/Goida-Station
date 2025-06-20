@@ -10,7 +10,7 @@
     canBeHealed: false
     isScar: true
   - type: PainInflicter
-    multiplier: 65
+    multiplier: 0
 
 - type: entity
   id: PiercingScar
@@ -24,7 +24,7 @@
     canBeHealed: false
     isScar: true
   - type: PainInflicter
-    multiplier: 65
+    multiplier: 0
 
 - type: entity
   id: SlashScar
@@ -38,7 +38,7 @@
     canBeHealed: false
     isScar: true
   - type: PainInflicter
-    multiplier: 65
+    multiplier: 0
 
 - type: entity
   id: BurnScar
@@ -52,7 +52,7 @@
     canBeHealed: false
     isScar: true
   - type: PainInflicter
-    multiplier: 65
+    multiplier: 0
 
 - type: entity
   id: RadiationScar
@@ -66,4 +66,4 @@
     canBeHealed: false
     isScar: true
   - type: PainInflicter
-    multiplier: 65 # lmao
+    multiplier: 0 # lmao

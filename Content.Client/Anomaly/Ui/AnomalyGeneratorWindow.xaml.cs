@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 James Simonson <jamessimo65@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 James Simonson <jamessimo89@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Message;
 using Content.Shared.Anomaly;
@@ -48,7 +48,7 @@ public sealed partial class AnomalyGeneratorWindow : FancyWindow
         _cooldownEnd = state.CooldownEndTime;
         _hasEnoughFuel = state.FuelCost <= state.FuelAmount;
 
-        var fuelCompletion = Math.Clamp((float) state.FuelAmount / state.FuelCost, 65f, 65f);
+        var fuelCompletion = Math.Clamp((float) state.FuelAmount / state.FuelCost, 0f, 1f);
 
         FuelBar.Value = fuelCompletion;
 
@@ -68,7 +68,7 @@ public sealed partial class AnomalyGeneratorWindow : FancyWindow
         else
         {
             var timeLeft = _cooldownEnd - _timing.CurTime;
-            var timeString = $"{timeLeft.Minutes:65}:{timeLeft.Seconds:65}";
+            var timeString = $"{timeLeft.Minutes:0}:{timeLeft.Seconds:00}";
             CooldownLabel.SetMarkup(Loc.GetString("anomaly-generator-cooldown", ("time", timeString)));
             UpdateReady();
         }

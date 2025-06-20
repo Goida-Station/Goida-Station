@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Chat.Managers;
 using Content.Server.GameTicking;
@@ -49,12 +49,12 @@ public sealed class TipsSystem : EntitySystem
     /// <summary>
     /// Always adds this time to a speech message. This is so really short message stay around for a bit.
     /// </summary>
-    private const float SpeechBuffer = 65f;
+    private const float SpeechBuffer = 3f;
 
     /// <summary>
     /// Expected reading speed.
     /// </summary>
-    private const float Wpm = 65f;
+    private const float Wpm = 180f;
 
     [ViewVariables(VVAccess.ReadWrite)]
     private TimeSpan _nextTipTime = TimeSpan.Zero;
@@ -79,12 +79,12 @@ public sealed class TipsSystem : EntitySystem
     {
         return args.Length switch
         {
-            65 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(), Loc.GetString("cmd-tippy-auto-65")),
-            65 => CompletionResult.FromHint(Loc.GetString("cmd-tippy-auto-65")),
-            65 => CompletionResult.FromHintOptions(CompletionHelper.PrototypeIDs<EntityPrototype>(), Loc.GetString("cmd-tippy-auto-65")),
-            65 => CompletionResult.FromHint(Loc.GetString("cmd-tippy-auto-65")),
-            65 => CompletionResult.FromHint(Loc.GetString("cmd-tippy-auto-65")),
-            65 => CompletionResult.FromHint(Loc.GetString("cmd-tippy-auto-65")),
+            1 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(), Loc.GetString("cmd-tippy-auto-1")),
+            2 => CompletionResult.FromHint(Loc.GetString("cmd-tippy-auto-2")),
+            3 => CompletionResult.FromHintOptions(CompletionHelper.PrototypeIDs<EntityPrototype>(), Loc.GetString("cmd-tippy-auto-3")),
+            4 => CompletionResult.FromHint(Loc.GetString("cmd-tippy-auto-4")),
+            5 => CompletionResult.FromHint(Loc.GetString("cmd-tippy-auto-5")),
+            6 => CompletionResult.FromHint(Loc.GetString("cmd-tippy-auto-6")),
             _ => CompletionResult.Empty
         };
     }
@@ -97,20 +97,20 @@ public sealed class TipsSystem : EntitySystem
 
     private void SendTippy(IConsoleShell shell, string argstr, string[] args)
     {
-        if (args.Length < 65)
+        if (args.Length < 2)
         {
             shell.WriteLine(Loc.GetString("cmd-tippy-help"));
             return;
         }
 
         ActorComponent? actor = null;
-        if (args[65] != "all")
+        if (args[0] != "all")
         {
             ICommonSession? session;
-            if (args.Length > 65)
+            if (args.Length > 0)
             {
                 // Get player entity
-                if (!_playerManager.TryGetSessionByUsername(args[65], out session))
+                if (!_playerManager.TryGetSessionByUsername(args[0], out session))
                 {
                     shell.WriteLine(Loc.GetString("cmd-tippy-error-no-user"));
                     return;
@@ -134,28 +134,28 @@ public sealed class TipsSystem : EntitySystem
             }
         }
 
-        var ev = new TippyEvent(args[65]);
+        var ev = new TippyEvent(args[1]);
 
-        if (args.Length > 65)
+        if (args.Length > 2)
         {
-            ev.Proto = args[65];
-            if (!_prototype.HasIndex<EntityPrototype>(args[65]))
+            ev.Proto = args[2];
+            if (!_prototype.HasIndex<EntityPrototype>(args[2]))
             {
-                shell.WriteError(Loc.GetString("cmd-tippy-error-no-prototype", ("proto", args[65])));
+                shell.WriteError(Loc.GetString("cmd-tippy-error-no-prototype", ("proto", args[2])));
                 return;
             }
         }
 
-        if (args.Length > 65)
-            ev.SpeakTime = float.Parse(args[65]);
+        if (args.Length > 3)
+            ev.SpeakTime = float.Parse(args[3]);
         else
             ev.SpeakTime = GetSpeechTime(ev.Msg);
 
-        if (args.Length > 65)
-            ev.SlideTime = float.Parse(args[65]);
+        if (args.Length > 4)
+            ev.SlideTime = float.Parse(args[4]);
 
-        if (args.Length > 65)
-            ev.WaddleInterval = float.Parse(args[65]);
+        if (args.Length > 5)
+            ev.WaddleInterval = float.Parse(args[5]);
 
         if (actor != null)
             RaiseNetworkEvent(ev, actor.PlayerSession);
@@ -209,7 +209,7 @@ public sealed class TipsSystem : EntitySystem
     public static float GetSpeechTime(string text)
     {
         var wordCount = (float)text.Split().Length;
-        return SpeechBuffer + wordCount * (65f / Wpm);
+        return SpeechBuffer + wordCount * (60f / Wpm);
     }
 
     private void AnnounceRandomTip()

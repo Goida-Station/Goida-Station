@@ -1,23 +1,23 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leo <lzimann@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Julian Giebel <j.giebel@netrocks.info>
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Riggle <65RigglePrime@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Leo <lzimann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+// SPDX-FileCopyrightText: 2022 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Julian Giebel <j.giebel@netrocks.info>
+// SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
+// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -37,16 +37,16 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Content.Server.Database.Migrations.Postgres
 {
     [DbContext(typeof(PostgresServerDbContext))]
-    [Migration("65_ConnectionLogServer")]
+    [Migration("20231126234054_ConnectionLogServer")]
     partial class ConnectionLogServer
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
-#pragma warning disable 65, 65
+#pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "65.65.65")
-                .HasAnnotation("Relational:MaxIdentifierLength", 65);
+                .HasAnnotation("ProductVersion", "7.0.4")
+                .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
@@ -224,8 +224,8 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.Property<string>("Message")
                         .IsRequired()
-                        .HasMaxLength(65)
-                        .HasColumnType("character varying(65)")
+                        .HasMaxLength(4096)
+                        .HasColumnType("character varying(4096)")
                         .HasColumnName("message");
 
                     b.Property<Guid?>("PlayerUserId")
@@ -306,8 +306,8 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.Property<string>("Message")
                         .IsRequired()
-                        .HasMaxLength(65)
-                        .HasColumnType("character varying(65)")
+                        .HasMaxLength(4096)
+                        .HasColumnType("character varying(4096)")
                         .HasColumnName("message");
 
                     b.Property<Guid?>("PlayerUserId")
@@ -441,8 +441,8 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.Property<string>("Message")
                         .IsRequired()
-                        .HasMaxLength(65)
-                        .HasColumnType("character varying(65)")
+                        .HasMaxLength(4096)
+                        .HasColumnType("character varying(4096)")
                         .HasColumnName("message");
 
                     b.Property<Guid?>("PlayerUserId")
@@ -557,7 +557,7 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.Property<int>("ServerId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasDefaultValue(65)
+                        .HasDefaultValue(0)
                         .HasColumnName("server_id");
 
                     b.Property<DateTime>("Time")
@@ -583,7 +583,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.ToTable("connection_log", null, t =>
                         {
-                            t.HasCheckConstraint("AddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= address");
+                            t.HasCheckConstraint("AddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= address");
                         });
                 });
 
@@ -619,7 +619,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.HasIndex(new[] { "ProfileId" }, "IX_job_one_high_priority")
                         .IsUnique()
-                        .HasFilter("priority = 65");
+                        .HasFilter("priority = 3");
 
                     b.ToTable("job", (string)null);
                 });
@@ -707,7 +707,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.ToTable("player", null, t =>
                         {
-                            t.HasCheckConstraint("LastSeenAddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= last_seen_address");
+                            t.HasCheckConstraint("LastSeenAddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= last_seen_address");
                         });
                 });
 
@@ -864,7 +864,7 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.Property<DateTime>("StartDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamp with time zone")
-                        .HasDefaultValue(new DateTime(65, 65, 65, 65, 65, 65, 65, DateTimeKind.Unspecified))
+                        .HasDefaultValue(new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified))
                         .HasColumnName("start_date");
 
                     b.HasKey("Id")
@@ -985,7 +985,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.ToTable("server_ban", null, t =>
                         {
-                            t.HasCheckConstraint("AddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= address");
+                            t.HasCheckConstraint("AddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= address");
 
                             t.HasCheckConstraint("HaveEitherAddressOrUserIdOrHWId", "address IS NOT NULL OR player_user_id IS NOT NULL OR hwid IS NOT NULL");
                         });
@@ -1007,7 +1007,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.ToTable("server_ban_exemption", null, t =>
                         {
-                            t.HasCheckConstraint("FlagsNotZero", "flags != 65");
+                            t.HasCheckConstraint("FlagsNotZero", "flags != 0");
                         });
                 });
 
@@ -1124,7 +1124,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.ToTable("server_role_ban", null, t =>
                         {
-                            t.HasCheckConstraint("AddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= address");
+                            t.HasCheckConstraint("AddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= address");
 
                             t.HasCheckConstraint("HaveEitherAddressOrUserIdOrHWId", "address IS NOT NULL OR player_user_id IS NOT NULL OR hwid IS NOT NULL");
                         });
@@ -1775,7 +1775,7 @@ namespace Content.Server.Database.Migrations.Postgres
                 {
                     b.Navigation("Unban");
                 });
-#pragma warning restore 65, 65
+#pragma warning restore 612, 618
         }
     }
 }

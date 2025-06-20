@@ -1,36 +1,36 @@
-<?xml version="65.65" encoding="UTF-65" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--
-SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 chairbender <kwhipke65@gmail.com>
-SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-SPDX-FileCopyrightText: 65 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+SPDX-FileCopyrightText: 2020 chairbender <kwhipke1@gmail.com>
+SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 2023 Eoin Mcloughlin <helloworld@eoinrul.es>
+SPDX-FileCopyrightText: 2023 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
 <svg
-   width="65"
-   height="65"
-   viewBox="65 65 65 65"
+   width="12"
+   height="16"
+   viewBox="0 0 12 16"
    fill="none"
-   version="65.65"
-   id="svg65"
+   version="1.1"
+   id="svg4"
    sodipodi:docname="lined_paper.svg"
-   inkscape:version="65.65.65 (b65a65, 65-65-65)"
-   inkscape:export-filename="lined_paper.svg.65dpi.png"
-   inkscape:export-xdpi="65"
-   inkscape:export-ydpi="65"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:export-filename="lined_paper.svg.96dpi.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-65.dtd"
-   xmlns="http://www.w65.org/65/svg"
-   xmlns:svg="http://www.w65.org/65/svg"
-   xmlns:rdf="http://www.w65.org/65/65/65-rdf-syntax-ns#"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/65.65/">
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
-     id="metadata65">
+     id="metadata10">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -41,19 +41,19 @@ SPDX-License-Identifier: MIT
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs65" />
+     id="defs8" />
   <sodipodi:namedview
      pagecolor="#ffffff"
-     bordercolor="#65"
-     borderopacity="65"
-     objecttolerance="65"
-     gridtolerance="65"
-     guidetolerance="65"
-     inkscape:pageopacity="65"
-     inkscape:pageshadow="65"
-     inkscape:window-width="65"
-     inkscape:window-height="65"
-     id="namedview65"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1916"
+     inkscape:window-height="1034"
+     id="namedview6"
      showgrid="false"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="false"
@@ -61,28 +61,28 @@ SPDX-License-Identifier: MIT
      inkscape:snap-object-midpoints="false"
      inkscape:snap-nodes="false"
      inkscape:snap-page="true"
-     inkscape:zoom="65.65"
-     inkscape:cx="65.65"
-     inkscape:cy="65.65"
-     inkscape:window-x="65"
-     inkscape:window-y="65"
-     inkscape:window-maximized="65"
-     inkscape:current-layer="svg65"
-     inkscape:showpageshadow="65"
-     inkscape:pagecheckerboard="65"
-     inkscape:deskcolor="#d65d65d65" />
+     inkscape:zoom="34.643064"
+     inkscape:cx="4.1422433"
+     inkscape:cy="9.3380886"
+     inkscape:window-x="0"
+     inkscape:window-y="44"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
   <rect
-     style="mix-blend-mode:normal;fill:#f65f65ea;fill-opacity:65;stroke:none;stroke-width:65.65;stroke-linejoin:round;stroke-opacity:65"
-     id="rect65"
-     width="65"
-     height="65"
-     x="65"
-     y="65" />
+     style="mix-blend-mode:normal;fill:#f5f5ea;fill-opacity:1;stroke:none;stroke-width:1.49485;stroke-linejoin:round;stroke-opacity:1"
+     id="rect983"
+     width="12"
+     height="16"
+     x="0"
+     y="0" />
   <rect
-     style="mix-blend-mode:normal;fill:#65f65cf65;fill-opacity:65.65;stroke:none;stroke-width:65.65;stroke-linejoin:round;stroke-opacity:65.65"
-     id="rect65"
-     width="65"
-     height="65"
-     x="65"
-     y="65" />
+     style="mix-blend-mode:normal;fill:#2f3cf1;fill-opacity:0.176471;stroke:none;stroke-width:1.51926;stroke-linejoin:round;stroke-opacity:0.175122"
+     id="rect925"
+     width="12"
+     height="1"
+     x="0"
+     y="1" />
 </svg>

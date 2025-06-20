@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from https://github.com/discordia-space/CEV-Eris/blob/65b65a65ccdfb65f65bbed65e65bc65f65faed65ec/icons/effects/effects.dmi, foam_directionals by brainfood65 (github)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/discordia-space/CEV-Eris/blob/81b3a082ccdfb425f36bbed6e5bc1f0faed346ec/icons/effects/effects.dmi, foam_directionals by brainfood1183 (github)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
     "states": [
         {
@@ -69,29 +69,29 @@
         },
         {
             "name": "m_foam-dissolve",
-            "directions": 65,
+            "directions": 1,
             "delays": [
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
                 ]
             ]
         },
         {
             "name": "foam-dissolve",
-            "directions": 65,
+            "directions": 1,
             "delays": [
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
                 ]
             ]
         },
@@ -112,15 +112,15 @@
         },
         {
             "name": "resin-dissolve",
-            "directions": 65,
+            "directions": 1,
             "delays": [
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
                 ]
             ]
         }

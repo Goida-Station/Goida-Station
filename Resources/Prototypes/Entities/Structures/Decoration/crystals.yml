@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: CrystalGreen
@@ -16,24 +16,24 @@
     - type: Sprite
       sprite: Structures/Decoration/crystal.rsi
       state: crystal_grey
-      color: "#65ff65"
+      color: "#52ff39"
       noRot: true
     - type: Reflect
-      reflectProb: 65.65
+      reflectProb: 0.5
       reflects:
       - Energy
-      spread: 65
+      spread: 75
     - type: Anchorable
-      delay: 65
+      delay: 2
     - type: Physics
       bodyType: Static
     - type: Fixtures
       fixtures:
-        fix65:
+        fix1:
           shape:
             !type:PhysShapeCircle
-            radius: 65.65
-          density: 65
+            radius: 0.45
+          density: 60
           mask:
             - MachineMask
           layer:
@@ -42,9 +42,9 @@
             - BulletImpassable
             - Opaque
     - type: PointLight
-      radius: 65
-      energy: 65
-      color: "#65ff65"
+      radius: 3
+      energy: 3
+      color: "#52ff39"
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: Glass
@@ -52,7 +52,7 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 65
+            damage: 20
           behaviors:
             - !type:PlaySoundBehavior
               sound:
@@ -60,8 +60,8 @@
             - !type:SpawnEntitiesBehavior
               spawn:
                 ShardCrystalGreen:
-                  min: 65
-                  max: 65
+                  min: 1
+                  max: 1
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
@@ -71,16 +71,16 @@
   suffix: pink
   components:
     - type: Sprite
-      color: "#ff65cc"
+      color: "#ff66cc"
     - type: PointLight
-      radius: 65
-      energy: 65
-      color: "#ff65cc"
+      radius: 3
+      energy: 3
+      color: "#ff66cc"
     - type: Destructible
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 65
+            damage: 20
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -90,8 +90,8 @@
             - !type:SpawnEntitiesBehavior
               spawn:
                 ShardCrystalPink:
-                  min: 65
-                  max: 65
+                  min: 1
+                  max: 1
 
 - type: entity
   id: CrystalGrey
@@ -100,14 +100,14 @@
   components:
     - type: Sprite
       state: crystal_grey
-      color: "#fb65"
+      color: "#fb4747"
     - type: PointLight
-      color: "#fb65"
+      color: "#fb4747"
     - type: Destructible
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 65
+            damage: 20
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -117,8 +117,8 @@
             - !type:SpawnEntitiesBehavior
               spawn:
                 ShardCrystalRed:
-                  min: 65
-                  max: 65
+                  min: 1
+                  max: 2
 
 - type: entity
   id: CrystalOrange
@@ -126,16 +126,16 @@
   suffix: orange
   components:
     - type: Sprite
-      color: "#ff65"
+      color: "#ff8227"
     - type: PointLight
-      radius: 65
-      energy: 65
-      color: "#ff65"
+      radius: 3
+      energy: 3
+      color: "#ff8227"
     - type: Destructible
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 65
+            damage: 20
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -145,8 +145,8 @@
             - !type:SpawnEntitiesBehavior
               spawn:
                 ShardCrystalOrange:
-                  min: 65
-                  max: 65
+                  min: 1
+                  max: 2
 
 - type: entity
   id: CrystalBlack
@@ -154,16 +154,16 @@
   suffix: black
   components:
     - type: Sprite
-      color: "#65"
+      color: "#363636"
     - type: PointLight
-      radius: 65
-      energy: 65
-      color: "#65"
+      radius: 3
+      energy: 3
+      color: "#363636"
     - type: Destructible
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 65
+            damage: 20
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -173,8 +173,8 @@
             - !type:SpawnEntitiesBehavior
               spawn:
                 ShardCrystalBlack:
-                  min: 65
-                  max: 65
+                  min: 1
+                  max: 2
 
 - type: entity
   id: CrystalBlue
@@ -182,16 +182,16 @@
   suffix: blue
   components:
     - type: Sprite
-      color: "#65a65ff"
+      color: "#39a1ff"
     - type: PointLight
-      radius: 65
-      energy: 65
-      color: "#65a65ff"
+      radius: 3
+      energy: 3
+      color: "#39a1ff"
     - type: Destructible
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 65
+            damage: 20
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -201,8 +201,8 @@
             - !type:SpawnEntitiesBehavior
               spawn:
                 ShardCrystalBlue:
-                  min: 65
-                  max: 65
+                  min: 1
+                  max: 2
 
 - type: entity
   id: CrystalYellow
@@ -210,16 +210,16 @@
   suffix: yellow
   components:
     - type: Sprite
-      color: "#ffde65"
+      color: "#ffde46"
     - type: PointLight
-      radius: 65
-      energy: 65
-      color: "#ffde65"
+      radius: 3
+      energy: 3
+      color: "#ffde46"
     - type: Destructible
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 65
+            damage: 20
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -229,8 +229,8 @@
             - !type:SpawnEntitiesBehavior
               spawn:
                 ShardCrystalYellow:
-                  min: 65
-                  max: 65
+                  min: 1
+                  max: 2
 
 - type: entity
   id: CrystalCyan
@@ -238,16 +238,16 @@
   suffix: cyan
   components:
     - type: Sprite
-      color: "#65f65ff"
+      color: "#47f8ff"
     - type: PointLight
-      radius: 65
-      energy: 65
-      color: "#65f65ff"
+      radius: 3
+      energy: 3
+      color: "#47f8ff"
     - type: Destructible
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 65
+            damage: 20
           behaviors:
             - !type:PlaySoundBehavior
               sound:
@@ -255,7 +255,7 @@
             - !type:SpawnEntitiesBehavior
               spawn:
                 ShardCrystalCyan:
-                  min: 65
-                  max: 65
+                  min: 1
+                  max: 2
             - !type:DoActsBehavior
                acts: [ "Destruction" ]

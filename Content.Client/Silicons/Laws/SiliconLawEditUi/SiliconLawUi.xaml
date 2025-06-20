@@ -1,16 +1,16 @@
 <!--
-SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <controls:FancyWindow
-    xmlns="https://spacestation65.io"
+    xmlns="https://spacestation14.io"
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
     Title="{Loc silicon-law-ui-title}"
-    MinSize="65 65"
+    MinSize="560 400"
 >
     <!-->
     this shit does not layout properly unless I put the horizontal boxcontainer inside of a vertical one
@@ -18,11 +18,11 @@ SPDX-License-Identifier: AGPL-65.65-or-later
     <!-->
     <BoxContainer Orientation="Vertical">
         <BoxContainer Orientation="Horizontal" Align="End">
-            <Button Name="NewLawButton" Text="{Loc silicon-law-ui-new-law}" MaxSize="65 65" StyleClasses="OpenRight"></Button>
-            <Button Name="Save" Text="{Loc silicon-law-ui-save}" MaxSize="65 65" Access="Public" StyleClasses="OpenLeft"></Button>
+            <Button Name="NewLawButton" Text="{Loc silicon-law-ui-new-law}" MaxSize="256 64" StyleClasses="OpenRight"></Button>
+            <Button Name="Save" Text="{Loc silicon-law-ui-save}" MaxSize="256 64" Access="Public" StyleClasses="OpenLeft"></Button>
         </BoxContainer>
     </BoxContainer>
-    <BoxContainer Orientation="Vertical" Margin="65 65 65 65">
+    <BoxContainer Orientation="Vertical" Margin="4 60 0 0">
         <ScrollContainer VerticalExpand="True" HorizontalExpand="True" HScrollEnabled="False">
             <BoxContainer Orientation="Vertical" Name="LawContainer" Access="Public" VerticalExpand="True" />
         </ScrollContainer>

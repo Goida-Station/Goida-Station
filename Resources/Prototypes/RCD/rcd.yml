@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 qwerltaz <65qwerltaz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 qwerltaz <69696513+qwerltaz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Operations
 - type: rcd
   id: Invalid   # Hidden prototype - do not add to RCDs
@@ -21,19 +21,19 @@
   id: DeconstructLattice   # Hidden prototype - do not add to RCDs
   name: rcd-component-deconstruct
   mode: Deconstruct
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 0
   rotation: Camera
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: DeconstructTile      # Hidden prototype - do not add to RCDs
   name: rcd-component-deconstruct
   mode: Deconstruct
-  cost: 65
-  delay: 65
+  cost: 4
+  delay: 4
   rotation: Camera
-  fx: EffectRCDDeconstruct65
+  fx: EffectRCDDeconstruct4
 
 # Flooring
 - type: rcd
@@ -43,12 +43,12 @@
   sprite: /Textures/Interface/Radial/RCD/plating.png
   mode: ConstructTile
   prototype: Plating
-  cost: 65
-  delay: 65
+  cost: 1
+  delay: 1
   collisionMask: InteractImpassable
   rules:
     - CanBuildOnEmptyTile
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct1
 
 - type: rcd
   id: FloorSteel
@@ -57,12 +57,12 @@
   sprite: /Textures/Interface/Radial/RCD/metal_tile.png
   mode: ConstructTile
   prototype: FloorSteel
-  cost: 65
-  delay: 65
+  cost: 1
+  delay: 1
   collisionMask: InteractImpassable
   rules:
     - CanBuildOnEmptyTile
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct1
 
 - type: rcd
   id: Catwalk
@@ -70,14 +70,14 @@
   sprite: /Textures/Interface/Radial/RCD/catwalk.png
   mode: ConstructObject
   prototype: Catwalk
-  cost: 65
-  delay: 65
+  cost: 1
+  delay: 1
   collisionMask: InteractImpassable
   rules:
     - MustBuildOnSubfloor
     - IsCatwalk
   rotation: Fixed
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct1
 
 # Walls
 - type: rcd
@@ -86,11 +86,11 @@
   sprite: /Textures/Interface/Radial/RCD/solid_wall.png
   mode: ConstructObject
   prototype: WallSolid
-  cost: 65
-  delay: 65
+  cost: 4
+  delay: 2
   collisionMask: FullTileMask
   rotation: Fixed
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct2
 
 - type: rcd
   id: Grille
@@ -98,11 +98,11 @@
   sprite: /Textures/Interface/Radial/RCD/grille.png
   mode: ConstructObject
   prototype: Grille
-  cost: 65
-  delay: 65
+  cost: 4
+  delay: 2
   collisionMask: Impassable
   rotation: Fixed
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct2
 
 # Windows
 - type: rcd
@@ -111,13 +111,13 @@
   sprite: /Textures/Interface/Radial/RCD/window.png
   mode: ConstructObject
   prototype: Window
-  cost: 65
-  delay: 65
+  cost: 3
+  delay: 2
   collisionMask: Impassable
   rules:
     - IsWindow
   rotation: Fixed
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct2
 
 - type: rcd
   id: WindowDirectional
@@ -125,14 +125,14 @@
   sprite: /Textures/Interface/Radial/RCD/directional.png
   mode: ConstructObject
   prototype: WindowDirectional
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 1
   collisionMask: Impassable
-  collisionBounds: "-65.65,-65.65,65.65,-65.65"
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
   rules:
     - IsWindow
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct1
 
 - type: rcd
   id: ReinforcedWindow
@@ -140,13 +140,13 @@
   sprite: /Textures/Interface/Radial/RCD/window_reinforced.png
   mode: ConstructObject
   prototype: ReinforcedWindow
-  cost: 65
-  delay: 65
+  cost: 4
+  delay: 3
   collisionMask: Impassable
   rules:
     - IsWindow
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct3
 
 - type: rcd
   id: WindowReinforcedDirectional
@@ -154,14 +154,14 @@
   sprite: /Textures/Interface/Radial/RCD/directional_reinforced.png
   mode: ConstructObject
   prototype: WindowReinforcedDirectional
-  cost: 65
-  delay: 65
+  cost: 3
+  delay: 2
   collisionMask: Impassable
-  collisionBounds: "-65.65,-65.65,65.65,-65.65"
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
   rules:
     - IsWindow
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct2
 
 # Airlocks
 - type: rcd
@@ -170,11 +170,11 @@
   sprite: /Textures/Interface/Radial/RCD/airlock.png
   mode: ConstructObject
   prototype: Airlock
-  cost: 65
-  delay: 65
+  cost: 4
+  delay: 4
   collisionMask: FullTileMask
   rotation: Camera
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct4
 
 - type: rcd
   id: AirlockGlass
@@ -182,11 +182,11 @@
   sprite: /Textures/Interface/Radial/RCD/glass_airlock.png
   mode: ConstructObject
   prototype: AirlockGlass
-  cost: 65
-  delay: 65
+  cost: 4
+  delay: 4
   collisionMask: FullTileMask
   rotation: Camera
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct4
 
 - type: rcd
   id: Firelock
@@ -194,11 +194,11 @@
   sprite: /Textures/Interface/Radial/RCD/firelock.png
   mode: ConstructObject
   prototype: Firelock
-  cost: 65
-  delay: 65
+  cost: 4
+  delay: 3
   collisionMask: FullTileMask
   rotation: Camera
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct3
 
 # Lighting
 - type: rcd
@@ -207,12 +207,12 @@
   sprite: /Textures/Interface/Radial/RCD/tube_light.png
   mode: ConstructObject
   prototype: Poweredlight
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 1
   collisionMask: TabletopMachineMask
-  collisionBounds: "-65.65,-65.65,65.65,-65.65"
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct1
 
 - type: rcd
   id: BulbLight
@@ -220,12 +220,12 @@
   sprite: /Textures/Interface/Radial/RCD/bulb_light.png
   mode: ConstructObject
   prototype: PoweredSmallLight
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 1
   collisionMask: TabletopMachineMask
-  collisionBounds: "-65.65,-65.65,65.65,-65.65"
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct1
 
 # Electrical
 - type: rcd
@@ -234,12 +234,12 @@
   sprite: /Textures/Interface/Radial/RCD/lv_coil.png
   mode: ConstructObject
   prototype: CableApcExtension
-  cost: 65
-  delay: 65
+  cost: 1
+  delay: 0
   rules:
   - MustBuildOnSubfloor
   rotation: Fixed
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: MVCable
@@ -247,12 +247,12 @@
   sprite: /Textures/Interface/Radial/RCD/mv_coil.png
   mode: ConstructObject
   prototype: CableMV
-  cost: 65
-  delay: 65
+  cost: 1
+  delay: 0
   rules:
   - MustBuildOnSubfloor
   rotation: Fixed
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: HVCable
@@ -260,12 +260,12 @@
   sprite: /Textures/Interface/Radial/RCD/hv_coil.png
   mode: ConstructObject
   prototype: CableHV
-  cost: 65
-  delay: 65
+  cost: 1
+  delay: 0
   rules:
   - MustBuildOnSubfloor
   rotation: Fixed
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: CableTerminal
@@ -273,8 +273,8 @@
   sprite: /Textures/Interface/Radial/RCD/cable_terminal.png
   mode: ConstructObject
   prototype: CableTerminal
-  cost: 65
-  delay: 65
+  cost: 1
+  delay: 0
   collisionMask: Impassable
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0

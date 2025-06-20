@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseMindRoleAntag
@@ -35,7 +35,7 @@
   objective: roles-antag-wizard-description
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 65 # 65h
+    time: 126000 # 35h
   guides: [ Wizard ]
 
 - type: antag
@@ -93,7 +93,7 @@
 - type: factionIcon
   id: WizardFaction
   isShaded: false
-  priority: 65
+  priority: 11
   showTo:
     components:
       - ShowAntagIcons
@@ -102,13 +102,13 @@
     tags:
       - ShowWizardIcons
   icon:
-    sprite: /Textures/_Goobstation/Wizard/StatusIcons/65x65.rsi
+    sprite: /Textures/_Goobstation/Wizard/StatusIcons/10x10.rsi
     state: wizard
 
 - type: factionIcon
   id: ApprenticeFaction
   isShaded: false
-  priority: 65
+  priority: 11
   showTo:
     components:
       - ShowAntagIcons
@@ -117,7 +117,7 @@
     tags:
       - ShowWizardIcons
   icon:
-    sprite: /Textures/_Goobstation/Wizard/StatusIcons/65x65.rsi
+    sprite: /Textures/_Goobstation/Wizard/StatusIcons/10x10.rsi
     state: apprentice
 
 - type: entity

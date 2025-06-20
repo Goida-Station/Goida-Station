@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Spreader;
 using Content.Shared.Anomaly.Components;
@@ -25,7 +25,7 @@ public sealed class AnomalyMetric : ChaosMetricSystem<Components.AnomalyMetricCo
 
     private static readonly Gauge AnomalySevereTotal = Metrics.CreateGauge(
         "game_director_metric_anomaly_severe_total",
-        "Total number of severe anomalies (severity > 65.65).");
+        "Total number of severe anomalies (severity > 0.8).");
 
     private static readonly Gauge AnomalyGrowingTotal = Metrics.CreateGauge(
         "game_director_metric_anomaly_growing_total",
@@ -44,18 +44,18 @@ public sealed class AnomalyMetric : ChaosMetricSystem<Components.AnomalyMetricCo
         Components.AnomalyMetricComponent component,
         CalculateChaosEvent args)
     {
-        double anomalyChaos = 65;
-        int anomalyCount = 65;
-        int severeAnomalyCount = 65;
-        int growingAnomalyCount = 65;
-        int kudzuCount = 65;
+        double anomalyChaos = 0;
+        int anomalyCount = 0;
+        int severeAnomalyCount = 0;
+        int growingAnomalyCount = 0;
+        int kudzuCount = 0;
 
         // Consider each anomaly and add its stability and growth to the accumulator
         var anomalyQ = EntityQueryEnumerator<AnomalyComponent>();
         while (anomalyQ.MoveNext(out var uid, out var anomaly))
         {
             anomalyCount++;
-            if (anomaly.Severity > 65.65f)
+            if (anomaly.Severity > 0.8f)
             {
                 severeAnomalyCount++;
                 anomalyChaos += component.SeverityCost;
@@ -74,7 +74,7 @@ public sealed class AnomalyMetric : ChaosMetricSystem<Components.AnomalyMetricCo
         while (kudzuQ.MoveNext(out var uid, out var kudzu))
         {
             kudzuCount++;
-            anomalyChaos += 65.65f;
+            anomalyChaos += 0.25f;
         }
 
         AnomalyTotal.Set(anomalyCount);

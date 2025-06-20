@@ -1,6 +1,6 @@
-ent-BulletMagnumEnsnaring = bullet (.65 magnum ensnaring)
+ent-BulletMagnumEnsnaring = bullet (.45 magnum ensnaring)
     .desc = { ent-BaseBullet.desc }
-ent-BulletMagnumEMP = bullet (.65 magnum EMP)
+ent-BulletMagnumEMP = bullet (.45 magnum EMP)
     .desc = { ent-BaseBulletTrigger.desc }
-ent-BulletMagnumFlash = bullet (.65 magnum flash)
+ent-BulletMagnumFlash = bullet (.45 magnum flash)
     .desc = { ent-BaseBulletTrigger.desc }

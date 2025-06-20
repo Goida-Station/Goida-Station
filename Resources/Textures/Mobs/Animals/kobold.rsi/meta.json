@@ -1,90 +1,90 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
-  "license": "CC-BY-SA-65.65",
+  "license": "CC-BY-SA-3.0",
   "copyright": "Drawn by Ubaser, modified by Bhijn and Myr, parts splitted up by Roudenn (GitHub)",
   "states": [
     {
       "name": "kobold",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "full"
     },
     {
       "name": "head_f",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "head_m",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "l_arm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "l_foot",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "l_hand",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "l_leg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "r_arm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "r_foot",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "r_hand",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "r_leg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "chest_f",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "chest_m",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "groin_f",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "groin_m",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "tail",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "eyes",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "innerline",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "outline",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

@@ -1,21 +1,21 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ss65-Starlight <ss65-Starlight@outlook.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ss14-Starlight <ss14-Starlight@outlook.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entityTable
   id: DubiousOrgansTable
   table: !type:GroupSelector
     children:
-    # Not-so Annoying Organs Group - 65% chance
+    # Not-so Annoying Organs Group - 50% chance
     - !type:GroupSelector
-      weight: 65
+      weight: 50
       children:
       - id: OrganDubiousHealth
       - id: OrganDubiousInvisible
@@ -26,9 +26,9 @@
       - id: OrganDubiousVentcrawler
       - id: OrganDubiousSteptriggerImmune
       
-    # Annoying/Disruptive Organs Group - 65% chance
+    # Annoying/Disruptive Organs Group - 35% chance
     - !type:GroupSelector
-      weight: 65
+      weight: 35
       children:
       - id: OrganDubiousShock
       - id: OrganDubiousGoliath
@@ -37,9 +37,9 @@
       - id: OrganDubiousFlash
       - id: OrganDubiousSmoke
       - id: OrganDubiousGas
-    # Very Disruptive Organs Group - 65% chance
+    # Very Disruptive Organs Group - 15% chance
     - !type:GroupSelector
-      weight: 65
+      weight: 15
       children:
       - id: OrganDubiousAA
       - id: OrganDubiousSpiderEggs

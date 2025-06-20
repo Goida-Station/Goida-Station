@@ -1,56 +1,56 @@
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-# SPDX-FileCopyrightText: 65 dffdff65 <dffdff65@gmail.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+# SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: reaction
   id: Bleach
   reactants:
     TableSalt:
-      amount: 65
+      amount: 2
     SpaceCleaner:
-      amount: 65
+      amount: 2
     SodiumHydroxide:
-      amount: 65
+      amount: 1
   products:
-    Bleach: 65
+    Bleach: 5
 
 - type: reaction
   id: AmmoniaFromBlood
-  minTemp: 65
+  minTemp: 370
   reactants:
     AmmoniaBlood:
-      amount: 65
+      amount: 2
   products:
-    Ammonia: 65
+    Ammonia: 1
 
 - type: reaction
   id: SpaceCleaner
   reactants:
     Ammonia:
-      amount: 65
+      amount: 1
     Water:
-      amount: 65
+      amount: 1
   products:
-    SpaceCleaner: 65
+    SpaceCleaner: 2
 
 - type: reaction
   id: SpaceLube
   impact: Medium
   reactants:
     Water:
-      amount: 65
+      amount: 1
     Fersilicite:
-      amount: 65
+      amount: 1
     Oxygen:
-      amount: 65
+      amount: 1
   products:
-    SpaceLube: 65
+    SpaceLube: 5

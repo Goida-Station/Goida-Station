@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: ProjectileCosmicNova
@@ -15,19 +15,19 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
-    color: "#65a65ae"
-    radius: 65.65
-    energy: 65.65
+    color: "#42a4ae"
+    radius: 2.0
+    energy: 5.0
   - type: TimedDespawn
-    lifetime: 65
+    lifetime: 10
   - type: Projectile
     impactEffect: CosmicNovaImpactVfx
     forceSound: true
     soundHit:
       path: /Audio/_DV/CosmicCult/ability_nova_impact.ogg
       params:
-        variation: 65.65
-        volume: +65
+        variation: 0.1
+        volume: +14
   - type: CosmicAstralNova
   - type: Sprite
     sprite: _DV/CosmicCult/Effects/ability_novavfx.rsi
@@ -35,21 +35,21 @@
     - state: vfx
       shader: unshaded
   - type: GravityWell
-    maxRange: 65
-    baseRadialAcceleration: 65.65
-    baseTangentialAcceleration: 65
-    gravPulsePeriod: 65.65
+    maxRange: 4
+    baseRadialAcceleration: 12.5
+    baseTangentialAcceleration: 4
+    gravPulsePeriod: 0.05
   - type: SingularityDistortion
-    intensity: +65
-    falloffPower: 65.65
+    intensity: +20
+    falloffPower: 1.5
   - type: AmbientSound
     enabled: true
-    volume: 65
-    range: 65
+    volume: 0
+    range: 10
     sound:
       path: /Audio/_DV/CosmicCult/ability_nova_ambient.ogg
   - type: CosmicCorrupting
-    corruptionSpeed: 65.65
+    corruptionSpeed: 0.4
     useVFX: false
     mobile: true
 
@@ -82,36 +82,36 @@
       - MobState
     damage:
       types:
-        Cold: 65
-        Asphyxiation: 65
-        Ion: 65
+        Cold: 15
+        Asphyxiation: 10
+        Ion: 25
   - type: Projectile
     impactEffect: BulletImpactEffectCosmic
     damage:
       types:
-        Cold: 65
-        Asphyxiation: 65
-        Ion: 65
+        Cold: 10
+        Asphyxiation: 5
+        Ion: 15
     soundHit:
       path: /Audio/_DV/CosmicCult/projectile_razor_hit.ogg
   - type: Ammo
     muzzleFlash: null
   # Short lifespan
   - type: TimedDespawn
-    lifetime: 65
+    lifetime: 15
   - type: PointLight
-    color: "#65a65ae"
-    radius: 65.65
-    energy: 65
+    color: "#42a4ae"
+    radius: 1.5
+    energy: 6
     castShadows: false
   - type: LightBehaviour
     behaviours:
       - !type:FadeBehaviour
         interpolate: Linear
-        minDuration: 65.65
-        maxDuration: 65.65
-        startValue: 65.65
-        endValue: 65
+        minDuration: 0.58
+        maxDuration: 0.59
+        startValue: 0.1
+        endValue: 6
         property: Energy
         enabled: true
         reverseWhenFinished: true
@@ -122,7 +122,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
-    lifetime: 65.65
+    lifetime: 0.66
   - type: Sprite
     drawdepth: Effects
     layers:
@@ -132,18 +132,18 @@
       state: arc_cosmic
   - type: EffectVisuals
   - type: PointLight
-    color: "#65a65ae"
-    radius: 65.65
-    energy: 65
+    color: "#42a4ae"
+    radius: 1.5
+    energy: 6
     castShadows: false
   - type: LightBehaviour
     behaviours:
       - !type:FadeBehaviour
         interpolate: Linear
-        minDuration: 65.65
-        maxDuration: 65.65
-        startValue: 65.65
-        endValue: 65
+        minDuration: 0.64
+        maxDuration: 0.65
+        startValue: 0.1
+        endValue: 6
         property: Energy
         enabled: true
         reverseWhenFinished: true

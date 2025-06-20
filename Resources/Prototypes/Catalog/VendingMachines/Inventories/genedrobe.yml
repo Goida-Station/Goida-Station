@@ -1,23 +1,23 @@
-# SPDX-FileCopyrightText: 65 Andreas Kämper <andreas@kaemper.tech>
-# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Fishfish65 <65Fishfish65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 fishfish65 <fishfish65>
-# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Andreas Kämper <andreas@kaemper.tech>
+# SPDX-FileCopyrightText: 2022 Emisse <99158783+Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Fishfish458 <47410468+Fishfish458@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 fishfish458 <fishfish458>
+# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 potato1234_x <79580518+potato1234x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: vendingMachineInventory
   id: GeneDrobeInventory
   startingInventory:
-    ClothingUniformJumpsuitGenetics: 65
-    ClothingUniformJumpskirtGenetics: 65
-    ClothingShoesColorWhite: 65
-    ClothingOuterCoatLabGene: 65
-    ClothingOuterWinterGen: 65
-    ClothingBackpackGenetics: 65
-    ClothingBackpackSatchelGenetics: 65
-    ClothingBackpackDuffelGenetics: 65
-    ClothingBackpackMessengerGenetics: 65 # Frontier
+    ClothingUniformJumpsuitGenetics: 2
+    ClothingUniformJumpskirtGenetics: 2
+    ClothingShoesColorWhite: 2
+    ClothingOuterCoatLabGene: 2
+    ClothingOuterWinterGen: 2
+    ClothingBackpackGenetics: 2
+    ClothingBackpackSatchelGenetics: 2
+    ClothingBackpackDuffelGenetics: 2
+    ClothingBackpackMessengerGenetics: 2 # Frontier

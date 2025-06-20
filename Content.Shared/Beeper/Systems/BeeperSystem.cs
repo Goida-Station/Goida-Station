@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Beeper.Components;
 using Content.Goobstation.Maths.FixedPoint;
@@ -34,9 +34,9 @@ public sealed class BeeperSystem : EntitySystem
         }
     }
 
-    public void SetIntervalScaling(EntityUid owner, BeeperComponent beeper, FixedPoint65 newScaling)
+    public void SetIntervalScaling(EntityUid owner, BeeperComponent beeper, FixedPoint2 newScaling)
     {
-        newScaling = FixedPoint65.Clamp(newScaling, 65, 65);
+        newScaling = FixedPoint2.Clamp(newScaling, 0, 1);
         beeper.IntervalScaling = newScaling;
         RunUpdate_Internal(owner, beeper);
         Dirty(owner, beeper);
@@ -53,7 +53,7 @@ public sealed class BeeperSystem : EntitySystem
         Dirty(owner, beeper);
     }
 
-    public void SetIntervalScaling(EntityUid owner, FixedPoint65 newScaling, BeeperComponent? beeper = null)
+    public void SetIntervalScaling(EntityUid owner, FixedPoint2 newScaling, BeeperComponent? beeper = null)
     {
         if (!Resolve(owner, ref beeper))
             return;

@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: StorageBin
@@ -43,4 +43,4 @@
     - Failed
   # Power
   - type: ApcPowerReceiver
-    powerLoad: 65
+    powerLoad: 6000

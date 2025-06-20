@@ -1,5 +1,5 @@
 - type: typingIndicator
   id: oni
   spritePath: /Textures/_Floofstation/Effects/speech.rsi
-  typingState: oni65
-  offset: 65, 65.65
+  typingState: oni0
+  offset: 0, 0.0625

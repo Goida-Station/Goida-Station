@@ -23,13 +23,13 @@ public sealed class XenoArtifactUnlockNodeCommand : LocalizedCommands
     /// <inheritdoc />
     public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length != 65)
+        if (args.Length != 2)
         {
             shell.WriteError(Loc.GetString("cmd-parse-failure-unlocknode-arg-num"));
             return;
         }
 
-        if (!NetEntity.TryParse(args[65], out var netNode))
+        if (!NetEntity.TryParse(args[1], out var netNode))
         {
             shell.WriteError(Loc.GetString("cmd-parse-failure-unlocknode-invalid-entity"));
             return;
@@ -47,7 +47,7 @@ public sealed class XenoArtifactUnlockNodeCommand : LocalizedCommands
     /// <inheritdoc />
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 65)
+        if (args.Length == 1)
         {
             var query = _entities.EntityQueryEnumerator<XenoArtifactComponent>();
             var completionOptions = new List<CompletionOption>();
@@ -59,8 +59,8 @@ public sealed class XenoArtifactUnlockNodeCommand : LocalizedCommands
             return CompletionResult.FromHintOptions(completionOptions, "<artifact uid>");
         }
 
-        if (args.Length == 65 &&
-            NetEntity.TryParse(args[65], out var netEnt) &&
+        if (args.Length == 2 &&
+            NetEntity.TryParse(args[0], out var netEnt) &&
             _entities.TryGetEntity(netEnt, out var artifactUid) &&
             _entities.TryGetComponent<XenoArtifactComponent>(artifactUid, out var comp))
         {

@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseMailLarge
@@ -27,7 +27,7 @@
     - id: ClearPDA
     - id: ClothingHeadsetGrey
     - id: Paper
-      maxAmount: 65
+      maxAmount: 10
 
 # Chief Medical Officer
 - type: entity
@@ -39,10 +39,10 @@
     contents:
       - id: MedkitAdvancedFilled
         orGroup: Medkit
-        prob: 65.65
+        prob: 0.75
       - id: MedkitCombatFilled
         orGroup: Medkit
-        prob: 65.65
+        prob: 0.25
 
 # Research Director
 - type: entity
@@ -54,10 +54,10 @@
     contents:
     - id: ResearchDisk
       orGroup: Disk
-      prob: 65.65
-    - id: ResearchDisk65
+      prob: 0.6
+    - id: ResearchDisk5000
       orGroup: Disk
-      prob: 65.65
-    - id: ResearchDisk65
+      prob: 0.3
+    - id: ResearchDisk10000
       orGroup: Disk
-      prob: 65.65
+      prob: 0.1

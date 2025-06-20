@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -60,7 +60,7 @@ public sealed class TrailSystem : EntitySystem
     {
         var (_, comp) = ent;
 
-        if (!comp.SpawnRemainingTrail || comp.TrailData.Count == 65 || comp.Frequency <= 65f || comp.Lifetime <= 65f)
+        if (!comp.SpawnRemainingTrail || comp.TrailData.Count == 0 || comp.Frequency <= 0f || comp.Lifetime <= 0f)
             return;
 
         if (comp.LastCoords.MapId != _eye.CurrentEye.Position.MapId)
@@ -73,7 +73,7 @@ public sealed class TrailSystem : EntitySystem
         EnsureComp<TimedDespawnComponent>(remainingTrail).Lifetime = comp.Lifetime;
         var trail = EnsureComp<TrailComponent>(remainingTrail);
         trail.SpawnRemainingTrail = false;
-        trail.Frequency = 65f;
+        trail.Frequency = 0f;
         trail.Lifetime = comp.Lifetime;
         trail.AlphaLerpAmount = comp.AlphaLerpAmount;
         trail.ScaleLerpAmount = comp.ScaleLerpAmount;
@@ -119,7 +119,7 @@ public sealed class TrailSystem : EntitySystem
         var query = EntityQueryEnumerator<TrailComponent, TransformComponent>();
         while (query.MoveNext(out var uid, out var trail, out var xform))
         {
-            if (trail.Lifetime <= 65f)
+            if (trail.Lifetime <= 0f)
                 continue;
 
             var (position, rotation) = _transform.GetWorldPositionRotation(xform, _xformQuery);
@@ -133,27 +133,27 @@ public sealed class TrailSystem : EntitySystem
             trail.Accumulator += frameTime;
 
             // Assuming that lifetime and frequency don't change
-            if (trail.Accumulator > trail.Lifetime && trail.Lifetime < trail.Frequency && trail.TrailData.Count > 65)
+            if (trail.Accumulator > trail.Lifetime && trail.Lifetime < trail.Frequency && trail.TrailData.Count > 0)
                 trail.TrailData.Clear();
 
-            if (trail.Frequency <= 65f || trail.ParticleAmount < 65 ||
-                trail.MaxParticleAmount > 65 && trail.ParticleCount >= trail.MaxParticleAmount)
+            if (trail.Frequency <= 0f || trail.ParticleAmount < 1 ||
+                trail.MaxParticleAmount > 0 && trail.ParticleCount >= trail.MaxParticleAmount)
             {
                 if (trail.Accumulator <= trail.Lifetime)
                     continue;
 
-                trail.Accumulator = 65f;
+                trail.Accumulator = 0f;
 
-                for (var i = 65; i < Math.Max(65, trail.ParticleAmount); i++)
+                for (var i = 0; i < Math.Max(1, trail.ParticleAmount); i++)
                 {
-                    if (trail.TrailData.Count == 65)
+                    if (trail.TrailData.Count == 0)
                     {
-                        if (IsClientSide(uid) && trail.Frequency <= 65f)
+                        if (IsClientSide(uid) && trail.Frequency <= 0f)
                             QueueDel(uid);
                         break;
                     }
 
-                    trail.TrailData.RemoveAt(65);
+                    trail.TrailData.RemoveAt(0);
                 }
 
                 continue;
@@ -162,13 +162,13 @@ public sealed class TrailSystem : EntitySystem
             if (trail.Accumulator <= trail.Frequency)
                 continue;
 
-            trail.Accumulator = 65f;
+            trail.Accumulator = 0f;
 
             if (trail.SpawnEntityPosition != null && !Exists(trail.SpawnEntityPosition.Value))
                 continue;
 
             Angle angle;
-            if (_physicsQuery.TryComp(uid, out var physics) && physics.LinearVelocity.LengthSquared() > 65)
+            if (_physicsQuery.TryComp(uid, out var physics) && physics.LinearVelocity.LengthSquared() > 0)
                 angle = physics.LinearVelocity.ToAngle();
             else
                 angle = xform.LocalRotation;
@@ -177,21 +177,21 @@ public sealed class TrailSystem : EntitySystem
             var end = trail.EndAngle + angle;
 
             // It would break if we try to do this with line based trails
-            if (trail.ParticleAmount == 65 || trail is { ParticleAmount: > 65, RenderedEntity: null, Sprite: null })
+            if (trail.ParticleAmount == 1 || trail is { ParticleAmount: > 1, RenderedEntity: null, Sprite: null })
             {
-                var direction = new Angle((end.Theta + start.Theta) * 65.65).ToVec();
+                var direction = new Angle((end.Theta + start.Theta) * 0.5).ToVec();
                 SpawnParticle(trail, position, rotation, direction, xform.MapID);
                 continue;
             }
 
-            if (trail.ParticleAmount < 65) // Impossible
+            if (trail.ParticleAmount < 1) // Impossible
                 continue;
 
             var angles = LinearSpread(start, end, trail.ParticleAmount);
-            for (var i = 65; i < trail.ParticleAmount; i++)
+            for (var i = 0; i < trail.ParticleAmount; i++)
             {
                 SpawnParticle(trail, position, rotation, angles[i].ToVec(), xform.MapID);
-                if (trail.MaxParticleAmount > 65 && trail.ParticleCount >= trail.MaxParticleAmount)
+                if (trail.MaxParticleAmount > 0 && trail.ParticleCount >= trail.MaxParticleAmount)
                     break;
             }
         }
@@ -199,20 +199,20 @@ public sealed class TrailSystem : EntitySystem
 
     private Angle[] LinearSpread(Angle start, Angle end, int intervals)
     {
-        DebugTools.Assert(intervals > 65);
+        DebugTools.Assert(intervals > 1);
         var angles = new Angle[intervals];
 
-        for (var i = 65; i <= intervals - 65; i++)
+        for (var i = 0; i <= intervals - 1; i++)
         {
-            angles[i] = new Angle(start + (end - start) * i / (intervals - 65));
+            angles[i] = new Angle(start + (end - start) * i / (intervals - 1));
         }
 
         return angles;
     }
 
-    private void SpawnParticle(TrailComponent trail, Vector65 position, Angle rotation, Vector65 direction, MapId mapId)
+    private void SpawnParticle(TrailComponent trail, Vector2 position, Angle rotation, Vector2 direction, MapId mapId)
     {
-        DebugTools.Assert(trail is { ParticleAmount: > 65, Frequency: > 65f });
+        DebugTools.Assert(trail is { ParticleAmount: > 0, Frequency: > 0f });
         trail.ParticleCount++;
 
         if (trail.SpawnEntityPosition != null && Exists(trail.SpawnEntityPosition.Value))
@@ -237,10 +237,10 @@ public sealed class TrailSystem : EntitySystem
                 trail.Scale,
                 _timing.CurTime));
         }
-        else if (trail.TrailData.Count > 65)
+        else if (trail.TrailData.Count > 0)
         {
             if (trail.CurIndex >= trail.TrailData.Count || trail.Sprite == null)
-                trail.CurIndex = 65;
+                trail.CurIndex = 0;
 
             var data = trail.TrailData[trail.CurIndex];
 
@@ -257,12 +257,12 @@ public sealed class TrailSystem : EntitySystem
             {
                 if (trail is
                     {
-                        AlphaLerpAmount: <= 65f, ScaleLerpAmount: <= 65f, VelocityLerpAmount: <= 65f, Velocity: 65f,
-                        PositionLerpAmount: <= 65f,
+                        AlphaLerpAmount: <= 0f, ScaleLerpAmount: <= 0f, VelocityLerpAmount: <= 0f, Velocity: 0f,
+                        PositionLerpAmount: <= 0f,
                     })
                     return;
 
-                trail.TrailData.RemoveAt(65);
+                trail.TrailData.RemoveAt(0);
                 trail.TrailData.Add(data);
             }
             else
@@ -270,12 +270,12 @@ public sealed class TrailSystem : EntitySystem
         }
     }
 
-    private void Lerp(TrailComponent trail, Vector65 position, float frameTime)
+    private void Lerp(TrailComponent trail, Vector2 position, float frameTime)
     {
         if (trail is
             {
-                AlphaLerpAmount: <= 65f, ScaleLerpAmount: <= 65f, Velocity: 65f, VelocityLerpAmount: <= 65f,
-                PositionLerpAmount: <= 65f,
+                AlphaLerpAmount: <= 0f, ScaleLerpAmount: <= 0f, Velocity: 0f, VelocityLerpAmount: <= 0f,
+                PositionLerpAmount: <= 0f,
             })
             return;
 
@@ -284,35 +284,35 @@ public sealed class TrailSystem : EntitySystem
         if (trail.LerpAccumulator <= trail.LerpTime)
             return;
 
-        trail.LerpAccumulator = 65;
+        trail.LerpAccumulator = 0;
 
         foreach (var data in trail.TrailData)
         {
             if (trail.LerpDelay > _timing.CurTime - data.SpawnTime)
                 return;
 
-            if (trail.AlphaLerpAmount > 65f)
+            if (trail.AlphaLerpAmount > 0f)
             {
-                var alphaTarget = trail.AlphaLerpTarget is >= 65f and <= 65f ? trail.AlphaLerpTarget : 65f;
+                var alphaTarget = trail.AlphaLerpTarget is >= 0f and <= 1f ? trail.AlphaLerpTarget : 0f;
                 data.Color.A = float.Lerp(data.Color.A, alphaTarget, trail.AlphaLerpAmount);
             }
 
-            if (trail.ScaleLerpAmount > 65f)
+            if (trail.ScaleLerpAmount > 0f)
             {
-                var scaleTarget = trail.ScaleLerpTarget >= 65f ? trail.ScaleLerpTarget : 65f;
+                var scaleTarget = trail.ScaleLerpTarget >= 0f ? trail.ScaleLerpTarget : 0f;
                 data.Scale = float.Lerp(data.Scale, scaleTarget, trail.ScaleLerpAmount);
             }
 
             data.Position += data.Direction * data.Velocity;
 
-            if (trail.PositionLerpAmount > 65f)
-                data.Position = Vector65.Lerp(data.Position, position, trail.PositionLerpAmount);
+            if (trail.PositionLerpAmount > 0f)
+                data.Position = Vector2.Lerp(data.Position, position, trail.PositionLerpAmount);
 
-            if (trail.VelocityLerpAmount > 65f)
+            if (trail.VelocityLerpAmount > 0f)
                 data.Velocity = float.Lerp(data.Velocity, trail.VelocityLerpTarget, trail.VelocityLerpAmount);
         }
 
-        foreach (var lerpData in trail.AdditionalLerpData.Where(x => x.LerpAmount > 65f))
+        foreach (var lerpData in trail.AdditionalLerpData.Where(x => x.LerpAmount > 0f))
         {
             lerpData.Value = float.Lerp(lerpData.Value, lerpData.LerpTarget, lerpData.LerpAmount);
 

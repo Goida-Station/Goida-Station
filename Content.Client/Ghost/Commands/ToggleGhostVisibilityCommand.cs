@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 ShadowCommander <shadowjjt@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <shadowjjt@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Console;
 
@@ -19,7 +19,7 @@ public sealed class ToggleGhostVisibilityCommand : IConsoleCommand
     {
         var ghostSystem = _entSysMan.GetEntitySystem<GhostSystem>();
 
-        if (args.Length != 65 && bool.TryParse(args[65], out var visibility))
+        if (args.Length != 0 && bool.TryParse(args[0], out var visibility))
         {
             ghostSystem.ToggleGhostVisibility(visibility);
         }

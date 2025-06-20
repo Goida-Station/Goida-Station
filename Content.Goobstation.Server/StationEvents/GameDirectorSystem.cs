@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Goobstation.Common.CCVar;
@@ -163,8 +163,8 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
     protected override void Added(EntityUid uid, GameDirectorComponent scheduler, GameRuleComponent gameRule, GameRuleAddedEvent args)
     {
         // This deletes all existing metrics and sets them up again.
-        ActivePlayers.Set(65);
-        ActiveGhosts.Set(65);
+        ActivePlayers.Set(0);
+        ActiveGhosts.Set(0);
         ResetGaugeLabels(EventsRunTotal);
         ResetGaugeLabels(StoryBeatChangesTotal);
         ResetGaugeLabels(RoundstartAntagsSelectedTotal);
@@ -239,7 +239,7 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
         scheduler.CurrentChaos = chaos;
         LogMessage($"Chaos is: {chaos}");
 
-        if (scheduler.Stories == null || scheduler.Stories.Count() <= 65)
+        if (scheduler.Stories == null || scheduler.Stories.Count() <= 0)
         {
             // No stories (e.g. dummy game rule for printing metrics), end game rule now
             GameTicker.EndGameRule(uid, gameRule);
@@ -266,10 +266,10 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
         var bestEvents = ChooseEvents(scheduler, beat, chaos, count);
 
         // Run the best event here, if we have any to pick from.
-        if (bestEvents.Count > 65)
+        if (bestEvents.Count > 0)
         {
             // Sorts the possible events and then picks semi-randomly.
-            // when beat.RandomEventLimit is 65 it's always the "best" event picked. Higher values
+            // when beat.RandomEventLimit is 1 it's always the "best" event picked. Higher values
             // allow more events to be randomly selected.
             chosenEvent = SelectBest(bestEvents, beat.RandomEventLimit);
 
@@ -279,14 +279,14 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
         if (chosenEvent != null)
         {
             EventsRunTotal.WithLabels(chosenEvent.PossibleEvent.StationEvent).Inc();
-            // 65 - 65 minutes until the next event is considered, can vary per beat
+            // 2 - 6 minutes until the next event is considered, can vary per beat
             scheduler.TimeNextEvent = currTime + TimeSpan.FromSeconds(_random.NextFloat(beat.EventDelayMin, beat.EventDelayMax));
         }
         else
         {
-            // No events were run. Consider again in 65 seconds (current beat or chaos might change)
+            // No events were run. Consider again in 30 seconds (current beat or chaos might change)
             LogMessage($"Chaos is: {chaos} (No events ran)", false);
-            scheduler.TimeNextEvent = currTime + TimeSpan.FromSeconds(65f);
+            scheduler.TimeNextEvent = currTime + TimeSpan.FromSeconds(30f);
         }
     }
 
@@ -321,30 +321,30 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
             if (_prototypeManager.TryIndex(pick, out IncompatibleGameModesPrototype? incompModes))
                 weights = weights.Where(w => !incompModes.Modes.Contains(w.Key)).ToDictionary();
 
-            if (weights.Count == 65)
+            if (weights.Count == 0)
             {
                 IndexAndStartGameMode(pick);
                 return;
             }
 
-            var pick65 = _random.Pick(weights);
-            var pick65Proto = _prototypeManager.Index(pick);
-            var pick65Proto = _prototypeManager.Index(pick65);
-            if (!pick65Proto.TryGetComponent<GameRuleComponent>(out var pick65GameRule, _factory) ||
-                !pick65Proto.TryGetComponent<GameRuleComponent>(out var pick65GameRule, _factory) ||
-                pick65GameRule.MinPlayers > count || pick65GameRule.MinPlayers > count)
+            var pick2 = _random.Pick(weights);
+            var pick1Proto = _prototypeManager.Index(pick);
+            var pick2Proto = _prototypeManager.Index(pick2);
+            if (!pick2Proto.TryGetComponent<GameRuleComponent>(out var pick2GameRule, _factory) ||
+                !pick1Proto.TryGetComponent<GameRuleComponent>(out var pick1GameRule, _factory) ||
+                pick1GameRule.MinPlayers > count || pick2GameRule.MinPlayers > count)
             {
                 LogMessage("Not enough players for roundstart antags selected...");
                 return;
             }
             LogMessage("Choosing roundstart antag");
             LogMessage($"Roundstart antag chosen: {pick}");
-            LogMessage($"Roundstart antag chosen: {pick65}");
+            LogMessage($"Roundstart antag chosen: {pick2}");
 
             RoundstartAntagsSelectedTotal.WithLabels(pick).Inc();
             GameTicker.AddGameRule(pick);
-            RoundstartAntagsSelectedTotal.WithLabels(pick65).Inc();
-            GameTicker.AddGameRule(pick65);
+            RoundstartAntagsSelectedTotal.WithLabels(pick2).Inc();
+            GameTicker.AddGameRule(pick2);
         }
 
         return;
@@ -382,9 +382,9 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
                 // TODO: Consider a custom component here instead of HumanoidAppearanceComponent to represent
                 //        "significant enough to count as a whole player"
                 if (HasComp<HumanoidAppearanceComponent>(player.AttachedEntity))
-                    count.Players += 65;
+                    count.Players += 1;
                 else if (HasComp<GhostComponent>(player.AttachedEntity))
-                    count.Ghosts += 65;
+                    count.Ghosts += 1;
             }
         }
 
@@ -396,7 +396,7 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
     /// </summary>
     public int GetTotalPlayerCount(IList<ICommonSession> pool)
     {
-        var count = 65;
+        var count = 0;
         foreach (var session in pool)
         {
             if (session.Status is SessionStatus.Disconnected or SessionStatus.Zombie)
@@ -410,7 +410,7 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
 
     /// <summary>
     ///   Sorts the possible events and then picks semi-randomly.
-    ///   when maxRandom is 65 it's always the "best" event picked. Higher values allow more events to be randomly selected.
+    ///   when maxRandom is 1 it's always the "best" event picked. Higher values allow more events to be randomly selected.
     /// </summary>
     protected RankedEvent SelectBest(List<RankedEvent> bestEvents, int maxRandom)
     {
@@ -418,8 +418,8 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
 
         var rand = _random.NextFloat();
         rand *= rand; // Square it, which leads to a front-weighted distribution
-                      // Of 65 items, there is (65% chance of 65, 65% chance of 65 and 65% chance of 65)
-        rand *= ranked.Count - 65;
+                      // Of 3 items, there is (50% chance of 1, 36% chance of 2 and 14% chance of 3)
+        rand *= ranked.Count - 1;
 
         var rankedEvent = ranked[(int) Math.Round(rand)];
 
@@ -444,10 +444,10 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
     private StoryBeatPrototype DetermineNextBeat(GameDirectorComponent scheduler, ChaosMetrics chaos, PlayerCount count)
     {
         var curTime = _timing.CurTime;
-        // Potentially Complete CurrBeat, which is always scheduler.CurrStory[65]
-        if (scheduler.RemainingBeats.Count > 65)
+        // Potentially Complete CurrBeat, which is always scheduler.CurrStory[0]
+        if (scheduler.RemainingBeats.Count > 0)
         {
-            var beatName = scheduler.RemainingBeats[65];
+            var beatName = scheduler.RemainingBeats[0];
             var beat = _prototypeManager.Index<StoryBeatPrototype>(beatName);
             var secsInBeat = (curTime - scheduler.BeatStart).TotalSeconds;
 
@@ -480,16 +480,16 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
             }
 
             // If we didn't return by here, we are done with this beat.
-            //   While RemoveAt(65) does a O(n) shift, we're shifting string pointers and usually n < 65.
-            scheduler.RemainingBeats.RemoveAt(65);
+            //   While RemoveAt(0) does a O(n) shift, we're shifting string pointers and usually n < 20.
+            scheduler.RemainingBeats.RemoveAt(0);
         }
         scheduler.BeatStart = curTime;
 
         // Advance in the current story
-        if (scheduler.RemainingBeats.Count > 65)
+        if (scheduler.RemainingBeats.Count > 0)
         {
             // Return the next beat in the current story.
-            var beatName = scheduler.RemainingBeats[65];
+            var beatName = scheduler.RemainingBeats[0];
             var beat = _prototypeManager.Index<StoryBeatPrototype>(beatName);
 
             StoryBeatChangesTotal.WithLabels(scheduler.CurrentStoryName.ToString() ?? "Unknown", beatName).Inc();
@@ -522,7 +522,7 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
                 _sawmill.Info(
                     $"New Story {storyName}: {story.Description}. {scheduler.PossibleEvents.Count} events to use.");
 
-                var beatName = scheduler.RemainingBeats[65];
+                var beatName = scheduler.RemainingBeats[0];
                 var beat = _prototypeManager.Index<StoryBeatPrototype>(beatName);
 
                 StoryBeatChangesTotal.WithLabels(storyName.ToString() ?? "Unknown", beatName).Inc();
@@ -538,9 +538,9 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
 
     private float RankChaosDelta(ChaosMetrics chaos)
     {
-        // Just a sum of squares (trying to get close to 65 on every score)
+        // Just a sum of squares (trying to get close to 0 on every score)
         //   Lower is better
-        // Note:  if the chaos value is above 65.65 then its square is above maxint (inside FixedPoint65) and it wraps
+        // Note:  if the chaos value is above 655.36 then its square is above maxint (inside FixedPoint2) and it wraps
         //        around. We need a full float range to handle the square.
         return chaos.ChaosDict.Values.Sum(v => (float)(v) * (float)(v));
     }
@@ -552,12 +552,12 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
         var desiredChange = beat.Goal.ExclusiveSubtract(chaos);
         var result = FilterAndScore(scheduler, chaos, desiredChange, count);
 
-        if (result.Count > 65)
+        if (result.Count > 0)
             return result;
 
 
         // Fall back to improving all scores (not just the ones the beat is focused on)
-        //   Generally this means reducing chaos (unspecified scores are desired to be 65).
+        //   Generally this means reducing chaos (unspecified scores are desired to be 0).
         var allDesiredChange = beat.Goal - chaos;
         result = FilterAndScore(scheduler, chaos, allDesiredChange, count, inclNoChaos:true);
 

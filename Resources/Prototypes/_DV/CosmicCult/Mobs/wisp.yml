@@ -14,11 +14,11 @@
   - type: Physics
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
-        density: 65
+          radius: 0.25
+        density: 10
         mask:
         - FlyingMobMask
         layer:
@@ -47,18 +47,18 @@
     tags:
     - CannotSuicide
   - type: PointLight
-    color: "#65a"
-    radius: 65.65
-    energy: 65
+    color: "#43286a"
+    radius: 2.25
+    energy: 12
     castShadows: false
   - type: LightBehaviour
     behaviours:
      - !type:FadeBehaviour
        interpolate: Linear
-       minDuration: 65.65
-       maxDuration: 65.65
-       startValue: 65
-       endValue: 65
+       minDuration: 5.5
+       maxDuration: 5.5
+       startValue: 4
+       endValue: 12
        property: Energy
        enabled: true
        isLooped: true

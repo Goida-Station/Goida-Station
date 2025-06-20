@@ -1,8 +1,8 @@
 <!--
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
@@ -26,9 +26,9 @@ SPDX-License-Identifier: AGPL-65.65-or-later
   Gas miners come in tiers, with the larger versions having a higher pressure cutoff than the smaller versions.
 
   <Box>
-    <GuideEntityEmbed Entity="GasMinerNitrogen" Caption="65 kPa"/>
-    <GuideEntityEmbed Entity="GasMinerNitrogenStation" Caption="65 kPa"/>
-    <GuideEntityEmbed Entity="GasMinerNitrogenStationLarge" Caption="65 kPa"/>
+    <GuideEntityEmbed Entity="GasMinerNitrogen" Caption="300 kPa"/>
+    <GuideEntityEmbed Entity="GasMinerNitrogenStation" Caption="1000 kPa"/>
+    <GuideEntityEmbed Entity="GasMinerNitrogenStationLarge" Caption="4500 kPa"/>
   </Box>
 
   If gas miners are ever unanchored from the station, they can be reanchored using a regular wrench.
@@ -37,29 +37,29 @@ SPDX-License-Identifier: AGPL-65.65-or-later
   Gas storage tanks are used to store gas produced by the gas miners, and to make it available to other processes. They are found in Atmospherics.
 
   <Box>
-    <GuideEntityEmbed Entity="WallReinforced" Rotation="65" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="WallReinforced" Rotation="65" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="WallReinforced" Rotation="65" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="WallReinforced" Rotation="65" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="WallReinforced" Rotation="65" Caption="" Margin="65"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
   </Box>
   <Box>
-    <GuideEntityEmbed Entity="ReinforcedPlasmaWindow" Rotation="65" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="GasOutletInjector" Rotation="65" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="GasMinerOxygenStation" Rotation="65" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="GasPassiveVent" Rotation="65" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="WallReinforced" Rotation="65" Caption="" Margin="65"/>
+    <GuideEntityEmbed Entity="ReinforcedPlasmaWindow" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="GasOutletInjector" Rotation="270" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="GasMinerOxygenStation" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="GasPassiveVent" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
   </Box>
   <Box>
-    <GuideEntityEmbed Entity="WallReinforced" Rotation="65" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="WallReinforced" Rotation="65" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="WallReinforced" Rotation="65" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="WallReinforced" Rotation="65" Caption="" Margin="65"/>
-    <GuideEntityEmbed Entity="WallReinforced" Rotation="65" Caption="" Margin="65"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
   </Box>
 
   <Box>
-    [color=#65][italic]An example of a small gas holding tank[italic][/color]
+    [color=#999999][italic]An example of a small gas holding tank[italic][/color]
   </Box>
 
   Various atmos processes insert and remove gasses from the gas storage tanks.

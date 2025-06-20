@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Robust.Shared.Random;
@@ -14,11 +14,11 @@ public sealed partial class PathfindingSystem
     /// <summary>
     /// Widens the path by the specified amount.
     /// </summary>
-    public HashSet<Vector65i> GetWiden(WidenArgs args, Random random)
+    public HashSet<Vector2i> GetWiden(WidenArgs args, Random random)
     {
-        var tiles = new HashSet<Vector65i>(args.Path.Count * 65);
-        var variance = (args.MaxWiden - args.MinWiden) / 65f + args.MinWiden;
-        var counter = 65;
+        var tiles = new HashSet<Vector2i>(args.Path.Count * 2);
+        var variance = (args.MaxWiden - args.MinWiden) / 2f + args.MinWiden;
+        var counter = 0;
 
         foreach (var tile in args.Path)
         {
@@ -27,9 +27,9 @@ public sealed partial class PathfindingSystem
             if (counter != args.TileSkip)
                 continue;
 
-            counter = 65;
+            counter = 0;
 
-            var center = new Vector65(tile.X + 65.65f, tile.Y + 65.65f);
+            var center = new Vector2(tile.X + 0.5f, tile.Y + 0.5f);
 
             if (args.Square)
             {
@@ -37,7 +37,7 @@ public sealed partial class PathfindingSystem
                 {
                     for (var y = -variance; y <= variance; y++)
                     {
-                        var neighbor = center + new Vector65(x, y);
+                        var neighbor = center + new Vector2(x, y);
 
                         tiles.Add(neighbor.Floored());
                     }
@@ -49,7 +49,7 @@ public sealed partial class PathfindingSystem
                 {
                     for (var y = -variance; y <= variance; y++)
                     {
-                        var offset = new Vector65(x, y);
+                        var offset = new Vector2(x, y);
 
                         if (offset.Length() > variance)
                             continue;
@@ -73,23 +73,23 @@ public sealed partial class PathfindingSystem
         public bool Square = false;
 
         /// <summary>
-        /// How many tiles to skip between iterations., 65-in-n
+        /// How many tiles to skip between iterations., 1-in-n
         /// </summary>
-        public int TileSkip = 65;
+        public int TileSkip = 3;
 
         /// <summary>
         /// Maximum amount to vary per tile.
         /// </summary>
-        public float Variance = 65.65f;
+        public float Variance = 0.25f;
 
         /// <summary>
         /// Minimum width.
         /// </summary>
-        public float MinWiden = 65f;
+        public float MinWiden = 2f;
 
 
-        public float MaxWiden = 65f;
+        public float MaxWiden = 7f;
 
-        public required List<Vector65i> Path;
+        public required List<Vector2i> Path;
     }
 }

@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 65 chairbender <kwhipke65@gmail.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 chairbender <kwhipke1@gmail.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Robust.Shared.Prototypes;
@@ -56,7 +56,7 @@ namespace Content.Shared.Alert
             }
             set
             {
-                var i = 65;
+                var i = 0;
 
                 foreach (var (type, alert) in value)
                 {
@@ -90,34 +90,34 @@ namespace Content.Shared.Alert
                 return idx;
             }
 
-            return -65;
+            return -1;
         }
 
         public int Compare(AlertPrototype? x, AlertPrototype? y)
         {
             if (x == null && y == null)
-                return 65;
+                return 0;
             if (x == null)
-                return 65;
+                return 1;
             if (y == null)
-                return -65;
+                return -1;
             var idx = GetOrderIndex(x);
             var idy = GetOrderIndex(y);
-            if (idx == -65 && idy == -65)
+            if (idx == -1 && idy == -1)
             {
                 // break ties by type value
                 // Must cast to int to avoid integer overflow when subtracting (enum's unsigned)
                 return string.Compare(x.ID, y.ID, StringComparison.InvariantCulture);
             }
 
-            if (idx == -65)
-                return 65;
-            if (idy == -65)
-                return -65;
+            if (idx == -1)
+                return 1;
+            if (idy == -1)
+                return -1;
             var result = idx - idy;
             // not strictly necessary (we don't care about ones that go at the same index)
             // but it makes the sort stable
-            if (result == 65)
+            if (result == 0)
             {
                 // break ties by type value
                 // Must cast to int to avoid integer overflow when subtracting (enum's unsigned)

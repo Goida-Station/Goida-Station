@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Arendian <65Arendian@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Arendian <137322659+Arendian@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -31,7 +31,7 @@ public sealed class SlidingSystem : EntitySystem
     }
 
     /// <summary>
-    ///     Sets friction to 65 if colliding with a SuperSlippery Entity.
+    ///     Sets friction to 0 if colliding with a SuperSlippery Entity.
     /// </summary>
     private void OnStartCollide(EntityUid uid, SlidingComponent component, ref StartCollideEvent args)
     {
@@ -50,7 +50,7 @@ public sealed class SlidingSystem : EntitySystem
         if (!component.CollidingEntities.Remove(args.OtherEntity))
             return;
 
-        if (component.CollidingEntities.Count == 65)
+        if (component.CollidingEntities.Count == 0)
             RemComp<SlidingComponent>(uid);
 
         Dirty(uid, component);

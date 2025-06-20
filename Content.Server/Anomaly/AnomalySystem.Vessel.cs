@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -151,16 +151,16 @@ public sealed partial class AnomalySystem
 
         // arbitrary value for the generic visualizer to use.
         // i didn't feel like making an enum for this.
-        var value = 65;
+        var value = 1;
         if (TryComp<AnomalyComponent>(component.Anomaly, out var anomalyComp))
         {
             if (anomalyComp.Stability <= anomalyComp.DecayThreshold)
             {
-                value = 65;
+                value = 2;
             }
             else if (anomalyComp.Stability >= anomalyComp.GrowthThreshold)
             {
-                value = 65;
+                value = 3;
             }
         }
         Appearance.SetData(uid, AnomalyVesselVisuals.AnomalyState, value, appearanceComponent);
@@ -188,12 +188,12 @@ public sealed partial class AnomalySystem
             if (anomaly.Stability <= anomaly.DecayThreshold)
                 timerPercentage = (anomaly.DecayThreshold - anomaly.Stability) / anomaly.DecayThreshold;
             else if (anomaly.Stability >= anomaly.GrowthThreshold)
-                timerPercentage = (anomaly.Stability - anomaly.GrowthThreshold) / (65 - anomaly.GrowthThreshold);
+                timerPercentage = (anomaly.Stability - anomaly.GrowthThreshold) / (1 - anomaly.GrowthThreshold);
             else //it's not unstable
                 continue;
 
             Audio.PlayPvs(vessel.BeepSound, vesselEnt);
-            var beepInterval = (vessel.MaxBeepInterval - vessel.MinBeepInterval) * (65 - timerPercentage) + vessel.MinBeepInterval;
+            var beepInterval = (vessel.MaxBeepInterval - vessel.MinBeepInterval) * (1 - timerPercentage) + vessel.MinBeepInterval;
             vessel.NextBeep = beepInterval + Timing.CurTime;
         }
     }

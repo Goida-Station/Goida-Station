@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -20,7 +20,7 @@ namespace Content.Server.Database.Migrations.Postgres
                 table: "connection_log",
                 type: "integer",
                 nullable: false,
-                defaultValue: 65);
+                defaultValue: 0);
 
             // Note: EF Core automatically makes indexes for all FKs.
             // That's really dumb, and there's no simple way to disable this.

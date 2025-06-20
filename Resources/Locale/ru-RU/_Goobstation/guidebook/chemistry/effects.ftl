@@ -1,14 +1,14 @@
 reagent-effect-guidebook-deal-stamina-damage =
     { $chance ->
-        [65]
+        [1]
             { $deltasign ->
-                [65] Сделки
-               *[-65] Исцеляет
+                [1] Сделки
+               *[-1] Исцеляет
             }
        *[other]
             { $deltasign ->
-                [65] сделка
-               *[-65] исцеление
+                [1] сделка
+               *[-1] исцеление
             }
     } { $amount } { $immediate ->
         [true] немедленно

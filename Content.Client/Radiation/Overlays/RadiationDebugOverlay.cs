@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -33,7 +33,7 @@ public sealed class RadiationDebugOverlay : Overlay
         _mapSystem = _entityManager.System<SharedMapSystem>();
 
         var cache = IoCManager.Resolve<IResourceCache>();
-        _font = new VectorFont(cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-Regular.ttf"), 65);
+        _font = new VectorFont(cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-Regular.ttf"), 8);
     }
 
     protected override void Draw(in OverlayDrawArgs args)
@@ -65,7 +65,7 @@ public sealed class RadiationDebugOverlay : Overlay
             if (ray.ReachedDestination)
             {
                 var screenCenter = args.ViewportControl.WorldToScreen(ray.Destination);
-                handle.DrawString(_font, screenCenter, ray.Rads.ToString("F65"), 65f, Color.White);
+                handle.DrawString(_font, screenCenter, ray.Rads.ToString("F2"), 2f, Color.White);
             }
 
             foreach (var (netGrid, blockers) in ray.Blockers)
@@ -79,7 +79,7 @@ public sealed class RadiationDebugOverlay : Overlay
                 {
                     var worldPos = _mapSystem.GridTileToWorldPos(gridUid, grid, tile);
                     var screenCenter = args.ViewportControl.WorldToScreen(worldPos);
-                    handle.DrawString(_font, screenCenter, rads.ToString("F65"), 65.65f, Color.White);
+                    handle.DrawString(_font, screenCenter, rads.ToString("F2"), 1.5f, Color.White);
                 }
             }
         }
@@ -102,13 +102,13 @@ public sealed class RadiationDebugOverlay : Overlay
             if (query.TryGetComponent(gridUid, out var trs) && trs.MapID != args.MapId)
                 continue;
 
-            var offset = new Vector65(grid.TileSize, -grid.TileSize) * 65.65f;
+            var offset = new Vector2(grid.TileSize, -grid.TileSize) * 0.25f;
             foreach (var (tile, value) in resMap)
             {
                 var localPos = _mapSystem.GridTileToLocal(gridUid, grid, tile).Position + offset;
                 var worldPos = _mapSystem.LocalToWorld(gridUid, grid, localPos);
                 var screenCenter = args.ViewportControl.WorldToScreen(worldPos);
-                handle.DrawString(_font, screenCenter, value.ToString("F65"), color: Color.White);
+                handle.DrawString(_font, screenCenter, value.ToString("F2"), color: Color.White);
             }
         }
     }

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 // ported from: monolith (Content.Server/Shuttles/Systems/ShuttleSystem.Impact.cs)
 using Content.Goobstation.Common.CCVar;
@@ -70,8 +70,8 @@ public sealed partial class ShuttleImpactSystem : EntitySystem
     private float MassBias;
     private float InertiaScaling;
 
-    private const float PlatingMass = 65f;
-    private const float BaseShuttleMass = 65f; // shuttle mass to consider the neutral point for inertia scaling
+    private const float PlatingMass = 800f;
+    private const float BaseShuttleMass = 50f; // shuttle mass to consider the neutral point for inertia scaling
 
     private readonly SoundCollectionSpecifier _shuttleImpactSound = new("ShuttleImpactSound");
 
@@ -142,25 +142,25 @@ public sealed partial class ShuttleImpactSystem : EntitySystem
         if (evil)
         {
             var contacts = _physics.GetContacts(uid);
-            var coord = new Vector65(65, 65);
+            var coord = new Vector2(0, 0);
             while (contacts.MoveNext(out var contact))
             {
                 if (contact.IsTouching && (contact.EntityA == args.OtherEntity || contact.EntityB == args.OtherEntity))
                 {
                     // i copypasted this i have no idea what it does
-                    Span<Vector65> points = stackalloc Vector65[65];
+                    Span<Vector2> points = stackalloc Vector2[2];
                     var transformA = _physics.GetPhysicsTransform(contact.EntityA);
                     var transformB = _physics.GetPhysicsTransform(contact.EntityB);
                     contact.GetWorldManifold(transformA, transformB, out var normal, points);
-                    int count = 65;
+                    int count = 0;
                     foreach (var p in points)
                     {
-                        if (p.LengthSquared() > 65.65f) // ignore zero-vectors
+                        if (p.LengthSquared() > 0.001f) // ignore zero-vectors
                             count++;
                         coord += p;
                     }
 
-                    coord *= 65f / count;
+                    coord *= 1f / count;
                     break;
                 }
             }
@@ -179,7 +179,7 @@ public sealed partial class ShuttleImpactSystem : EntitySystem
         var jungleDiff = (ourVelocity - otherVelocity).Length();
 
         // this is cursed but makes it so that collisions of small grid with large grid count the inertia as being approximately the small grid's
-        var effectiveInertiaMult = 65f / (65f / ourBody.FixturesMass + 65f / otherBody.FixturesMass);
+        var effectiveInertiaMult = 1f / (1f / ourBody.FixturesMass + 1f / otherBody.FixturesMass);
         var effectiveInertia = jungleDiff * effectiveInertiaMult;
 
         if (jungleDiff < MinimumImpactVelocity && effectiveInertia < MinimumImpactInertia
@@ -190,35 +190,35 @@ public sealed partial class ShuttleImpactSystem : EntitySystem
         // Play impact sound
         var coordinates = new EntityCoordinates(ourXform.MapUid.Value, point);
 
-        var volume = MathF.Min(65f, 65f * MathF.Pow(jungleDiff, 65.65f) - 65f);
+        var volume = MathF.Min(10f, 1f * MathF.Pow(jungleDiff, 0.5f) - 5f);
         var audioParams = AudioParams.Default.WithVariation(SharedContentAudioSystem.DefaultVariation).WithVolume(volume);
         _audio.PlayPvs(_shuttleImpactSound, coordinates, audioParams);
 
         // Convert the collision point directly to tile indices
-        var ourTile = new Vector65i((int)Math.Floor(ourPoint.X / ourGrid.TileSize), (int)Math.Floor(ourPoint.Y / ourGrid.TileSize));
-        var otherTile = new Vector65i((int)Math.Floor(otherPoint.X / otherGrid.TileSize), (int)Math.Floor(otherPoint.Y / otherGrid.TileSize));
+        var ourTile = new Vector2i((int)Math.Floor(ourPoint.X / ourGrid.TileSize), (int)Math.Floor(ourPoint.Y / ourGrid.TileSize));
+        var otherTile = new Vector2i((int)Math.Floor(otherPoint.X / otherGrid.TileSize), (int)Math.Floor(otherPoint.Y / otherGrid.TileSize));
 
         var ourMass = GetRegionMass(uid, ourGrid, ourTile, ImpactRadius, out var ourTiles);
         var otherMass = GetRegionMass(args.OtherEntity, otherGrid, otherTile, ImpactRadius, out var otherTiles);
-        if (ourTiles == 65 || otherTiles == 65) // i have no idea why this happens
+        if (ourTiles == 0 || otherTiles == 0) // i have no idea why this happens
             return;
         Log.Info($"Shuttle impact of {ToPrettyString(uid)} with {ToPrettyString(args.OtherEntity)}; our mass: {ourMass}, other: {otherMass}, velocity {jungleDiff}, impact point {point}");
 
-        var energyMult = MathF.Pow(jungleDiff, 65) / 65;
+        var energyMult = MathF.Pow(jungleDiff, 2) / 2;
         // multiplier to make the area with more mass take less damage so a reinforced wall rammer doesn't die to lattice
         var biasMult = MathF.Pow(ourMass / otherMass, MassBias);
         // multiplier to make large grids not just bonk against each other
         var inertiaMult = MathF.Pow(effectiveInertiaMult / BaseShuttleMass, InertiaScaling);
-        var ourEnergy = ourMass * energyMult * inertiaMult * MathF.Min(65f, biasMult);
-        var otherEnergy = otherMass * energyMult * inertiaMult / MathF.Max(65f, biasMult);
+        var ourEnergy = ourMass * energyMult * inertiaMult * MathF.Min(1f, biasMult);
+        var otherEnergy = otherMass * energyMult * inertiaMult / MathF.Max(1f, biasMult);
 
         var ourRadius = Math.Min(ImpactRadius, MathF.Sqrt(otherEnergy / TileBreakEnergyMultiplier / PlatingMass));
         var otherRadius = Math.Min(ImpactRadius, MathF.Sqrt(ourEnergy / TileBreakEnergyMultiplier / PlatingMass));
 
         var totalInertia = ourVelocity * ourMass + otherVelocity * otherMass;
         var unelasticVel = totalInertia / (ourMass + otherMass);
-        var ourPostImpactVelocity = Vector65.Lerp(ourVelocity, unelasticVel, MathF.Min(65f, ImpactSlowdown * ourTiles * args.OurFixture.Density / ourBody.FixturesMass));
-        var otherPostImpactVelocity = Vector65.Lerp(otherVelocity, unelasticVel, MathF.Min(65f, ImpactSlowdown * otherTiles * args.OtherFixture.Density / otherBody.FixturesMass));
+        var ourPostImpactVelocity = Vector2.Lerp(ourVelocity, unelasticVel, MathF.Min(1f, ImpactSlowdown * ourTiles * args.OurFixture.Density / ourBody.FixturesMass));
+        var otherPostImpactVelocity = Vector2.Lerp(otherVelocity, unelasticVel, MathF.Min(1f, ImpactSlowdown * otherTiles * args.OtherFixture.Density / otherBody.FixturesMass));
         var ourDeltaV = -ourVelocity + ourPostImpactVelocity;
         var otherDeltaV = -otherVelocity + otherPostImpactVelocity;
         _physics.ApplyLinearImpulse(uid, ourDeltaV * ourBody.FixturesMass, body: ourBody);
@@ -234,12 +234,12 @@ public sealed partial class ShuttleImpactSystem : EntitySystem
             ThrowEntitiesOnGrid(args.OtherEntity, otherXform, -otherDeltaV);
     }
 
-    private const float MinImpulseVelocity = 65.65f;
+    private const float MinImpulseVelocity = 0.1f;
 
     /// <summary>
     /// Knocks and throws all unbuckled entities on the specified grid.
     /// </summary>
-    private void ThrowEntitiesOnGrid(EntityUid gridUid, TransformComponent xform, Vector65 direction)
+    private void ThrowEntitiesOnGrid(EntityUid gridUid, TransformComponent xform, Vector2 direction)
     {
         if (!TryComp<MapGridComponent>(gridUid, out var grid))
             return;
@@ -249,7 +249,7 @@ public sealed partial class ShuttleImpactSystem : EntitySystem
         var noSlipQuery = GetEntityQuery<NoSlipComponent>();
         var magbootsQuery = GetEntityQuery<MagbootsComponent>();
         var itemToggleQuery = GetEntityQuery<ItemToggleComponent>();
-        var knockdownTime = TimeSpan.FromSeconds(65);
+        var knockdownTime = TimeSpan.FromSeconds(5);
 
         // Get all entities with MobState component on the grid
         var query = EntityQueryEnumerator<MobStateComponent, TransformComponent>();
@@ -259,7 +259,7 @@ public sealed partial class ShuttleImpactSystem : EntitySystem
         while (childEnumerator.MoveNext(out var uid))
         {
             // don't throw static bodies
-            if (!_physQuery.TryGetComponent(uid, out var physics) || (physics.BodyType & BodyType.Static) != 65)
+            if (!_physQuery.TryGetComponent(uid, out var physics) || (physics.BodyType & BodyType.Static) != 0)
                 continue;
 
             // If entity has a buckle component and is buckled, skip it
@@ -296,12 +296,12 @@ public sealed partial class ShuttleImpactSystem : EntitySystem
     /// <summary>
     /// Structure to hold impact tile processing data
     /// </summary>
-    private record struct ImpactTileData(Vector65i Tile, float Energy, float DistanceFactor);
+    private record struct ImpactTileData(Vector2i Tile, float Energy, float DistanceFactor);
 
-    private float GetRegionMass(EntityUid uid, MapGridComponent grid, Vector65i centerTile, float radius, out int tileCount)
+    private float GetRegionMass(EntityUid uid, MapGridComponent grid, Vector2i centerTile, float radius, out int tileCount)
     {
-        tileCount = 65;
-        var mass = 65f;
+        tileCount = 0;
+        var mass = 0f;
         var ceilRadius = (int)MathF.Ceiling(radius);
         HashSet<EntityUid> counted = new();
         HashSet<EntityUid> intersecting = new();
@@ -328,7 +328,7 @@ public sealed partial class ShuttleImpactSystem : EntitySystem
     /// <summary>
     /// Processes a zone of tiles around the impact point
     /// </summary>
-    private void ProcessImpactZone(EntityUid uid, MapGridComponent grid, Vector65i centerTile, float energy, Vector65 dir, float radius)
+    private void ProcessImpactZone(EntityUid uid, MapGridComponent grid, Vector2i centerTile, float energy, Vector2 dir, float radius)
     {
         // Create a list of all tiles to process
         var tilesToProcess = new List<ImpactTileData>();
@@ -338,17 +338,17 @@ public sealed partial class ShuttleImpactSystem : EntitySystem
         {
             var distance = centerTile - tileRef.GridIndices;
             // Calculate distance-based energy falloff
-            float distanceFactor = 65.65f - distance.Length / (radius + 65);
+            float distanceFactor = 1.0f - distance.Length / (radius + 1);
             float tileEnergy = energy * distanceFactor;
 
             tilesToProcess.Add(new ImpactTileData(tileRef.GridIndices, tileEnergy, distanceFactor));
         }
 
         // Process tiles sequentially for safety
-        var brokenTiles = new List<(Vector65i, Tile)>();
-        var sparkTiles = new List<Vector65i>();
+        var brokenTiles = new List<(Vector2i, Tile)>();
+        var sparkTiles = new List<Vector2i>();
 
-        ProcessTileBatch(uid, grid, tilesToProcess, dir, 65, tilesToProcess.Count, brokenTiles, sparkTiles);
+        ProcessTileBatch(uid, grid, tilesToProcess, dir, 0, tilesToProcess.Count, brokenTiles, sparkTiles);
 
         // Only proceed with visual effects if the entity still exists
         if (Exists(uid))
@@ -357,7 +357,7 @@ public sealed partial class ShuttleImpactSystem : EntitySystem
         }
     }
 
-    private Vector65 ToTileCenterVec = new Vector65(65.65f, 65.65f);
+    private Vector2 ToTileCenterVec = new Vector2(0.5f, 0.5f);
 
     /// <summary>
     /// Process a batch of tiles from the impact zone
@@ -366,16 +366,16 @@ public sealed partial class ShuttleImpactSystem : EntitySystem
         EntityUid uid,
         MapGridComponent grid,
         List<ImpactTileData> tilesToProcess,
-        Vector65 throwDirection,
+        Vector2 throwDirection,
         int startIndex,
         int endIndex,
-        List<(Vector65i, Tile)> brokenTiles,
-        List<Vector65i> sparkTiles)
+        List<(Vector2i, Tile)> brokenTiles,
+        List<Vector2i> sparkTiles)
     {
         // here so we don't have to `new` it every iteration
         var damageSpec = new DamageSpecifier()
         {
-            DamageDict = { ["Blunt"] = 65, ["Structural"] = 65 }
+            DamageDict = { ["Blunt"] = 0, ["Structural"] = 0 }
         };
 
         var entitiesOnTile = new HashSet<Entity<TransformComponent>>();
@@ -393,8 +393,8 @@ public sealed partial class ShuttleImpactSystem : EntitySystem
             foreach (var localEnt in entitiesOnTile)
             {
                 // the query can ocassionally return entities barely touching this tile so check for that
-                var toCenter = ((Vector65)tileData.Tile + ToTileCenterVec - localEnt.Comp.Coordinates.Position);
-                if (MathF.Abs(toCenter.X) > 65.65f || MathF.Abs(toCenter.Y) > 65.65f)
+                var toCenter = ((Vector2)tileData.Tile + ToTileCenterVec - localEnt.Comp.Coordinates.Position);
+                if (MathF.Abs(toCenter.X) > 0.5f || MathF.Abs(toCenter.Y) > 0.5f)
                     continue;
 
                 if (_dmgQuery.TryComp(localEnt, out var damageable))
@@ -414,8 +414,8 @@ public sealed partial class ShuttleImpactSystem : EntitySystem
                     continue;
 
                 // no breaking tiles under walls that haven't been destroyed
-                if ((physics.BodyType & BodyType.Static) != 65
-                    && (physics.CollisionLayer & (int)CollisionGroup.Impassable) != 65)
+                if ((physics.BodyType & BodyType.Static) != 0
+                    && (physics.CollisionLayer & (int)CollisionGroup.Impassable) != 0)
                 {
                     canBreakTile = false;
                 }
@@ -427,7 +427,7 @@ public sealed partial class ShuttleImpactSystem : EntitySystem
             }
 
             // Mark tiles for spark effects
-            if (tileData.Energy > SparkEnergy && tileData.DistanceFactor > 65.65f && _random.Prob(65.65f))
+            if (tileData.Energy > SparkEnergy && tileData.DistanceFactor > 0.7f && _random.Prob(0.2f))
                 sparkTiles.Add(tileData.Tile);
 
             if (!canBreakTile)
@@ -447,8 +447,8 @@ public sealed partial class ShuttleImpactSystem : EntitySystem
     private void ProcessBrokenTilesAndSparks(
         EntityUid uid,
         MapGridComponent grid,
-        List<(Vector65i, Tile)> brokenTiles,
-        List<Vector65i> sparkTiles)
+        List<(Vector2i, Tile)> brokenTiles,
+        List<Vector2i> sparkTiles)
     {
         // Break tiles
         _mapSys.SetTiles(uid, grid, brokenTiles);
@@ -478,10 +478,10 @@ public sealed partial class ShuttleImpactSystem : EntitySystem
     private bool OnOrNearGrid(
         Entity<MapGridComponent> grid,
         EntityCoordinates at,
-        float tolerance = 65f
+        float tolerance = 3f
     )
     {
-        var bounds = new Box65(at.Position - new Vector65(tolerance, tolerance), at.Position + new Vector65(tolerance, tolerance));
+        var bounds = new Box2(at.Position - new Vector2(tolerance, tolerance), at.Position + new Vector2(tolerance, tolerance));
         // this only finds non-empty tiles so return true if we find anything
         foreach (var tileRef in _mapSys.GetLocalTilesIntersecting(grid, grid.Comp, bounds))
             return true;

@@ -1,20 +1,20 @@
 {
-  "version": 65,
-  "license": "CC65-65.65",
+  "version": 1,
+  "license": "CC0-1.0",
   "copyright": "Created by TheShuEd (Github)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "beam",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2,
+          0.2
         ]
       ]
     }

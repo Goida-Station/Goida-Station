@@ -23,7 +23,7 @@ public sealed class XAERandomTeleportInvokerSystem : BaseXAESystem<XAERandomTele
         var xform = Transform(ent.Owner);
         _popup.PopupCoordinates(Loc.GetString("blink-artifact-popup"), xform.Coordinates, PopupType.Medium);
 
-        var offsetTo = _random.NextVector65(component.MinRange, component.MaxRange);
+        var offsetTo = _random.NextVector2(component.MinRange, component.MaxRange);
         _xform.SetCoordinates(ent.Owner, xform, xform.Coordinates.Offset(offsetTo));
     }
 }

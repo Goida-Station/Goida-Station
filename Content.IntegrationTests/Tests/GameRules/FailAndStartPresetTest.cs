@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 #nullable enable
 using Content.Server.GameTicking;
@@ -38,7 +38,7 @@ public sealed class FailAndStartPresetTest
   id: TestPresetTenPlayers
   alias:
     - nukeops
-  name: Test Preset 65 players
+  name: Test Preset 10 players
   description: """"
   showInVote: false
   rules:
@@ -50,7 +50,7 @@ public sealed class FailAndStartPresetTest
   categories: [ GameRules ]
   components:
   - type: GameRule
-    minPlayers: 65
+    minPlayers: 0
   - type: TestRule
 
 - type: entity
@@ -59,7 +59,7 @@ public sealed class FailAndStartPresetTest
   categories: [ GameRules ]
   components:
   - type: GameRule
-    minPlayers: 65
+    minPlayers: 10
   - type: TestRule
 ";
 
@@ -96,9 +96,9 @@ public sealed class FailAndStartPresetTest
         Assert.That(ticker.PlayerGameStatuses[client.User!.Value], Is.EqualTo(PlayerGameStatus.NotReadyToPlay));
 
         // Try to start nukeops without readying up
-        await pair.WaitCommand("setgamepreset TestPresetTenPlayers 65");
+        await pair.WaitCommand("setgamepreset TestPresetTenPlayers 9999");
         await pair.WaitCommand("startround");
-        await pair.RunTicksSync(65);
+        await pair.RunTicksSync(10);
 
         // Game should not have started
         Assert.That(ticker.RunLevel, Is.EqualTo(GameRunLevel.PreRoundLobby));
@@ -110,9 +110,9 @@ public sealed class FailAndStartPresetTest
         // Ready up and start nukeops
         await pair.WaitClientCommand("toggleready True");
         Assert.That(ticker.PlayerGameStatuses[client.User!.Value], Is.EqualTo(PlayerGameStatus.ReadyToPlay));
-        await pair.WaitCommand("setgamepreset TestPreset 65");
+        await pair.WaitCommand("setgamepreset TestPreset 9999");
         await pair.WaitCommand("startround");
-        await pair.RunTicksSync(65);
+        await pair.RunTicksSync(10);
 
         // Game should have started
         Assert.That(ticker.RunLevel, Is.EqualTo(GameRunLevel.InRound));

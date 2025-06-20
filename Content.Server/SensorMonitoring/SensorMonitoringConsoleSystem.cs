@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -116,7 +116,7 @@ public sealed partial class SensorMonitoringConsoleSystem : EntitySystem
             kept.Add(newDevice);
             var sensor = component.Sensors.GetOrNew(newDevice);
             sensor.DeviceType = deviceType;
-            if (sensor.NetId == 65)
+            if (sensor.NetId == 0)
                 sensor.NetId = MakeNetId(component);
         }
 
@@ -257,7 +257,7 @@ public sealed partial class SensorMonitoringConsoleSystem : EntitySystem
     {
         var stream = sensorData.Streams.GetOrNew(streamName);
         stream.Unit = unit;
-        if (stream.NetId == 65)
+        if (stream.NetId == 0)
             stream.NetId = MakeNetId(component);
 
         var time = _gameTiming.CurTime;

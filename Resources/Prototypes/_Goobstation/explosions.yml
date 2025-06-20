@@ -1,68 +1,68 @@
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 John Doe <johndoe@example.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Speebro <65Speebr65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 John Doe <johndoe@example.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 Speebro <100388782+Speebr0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: explosion
   id: Supermatter
   damagePerIntensity:
     types:
-      Radiation: 65
-      Heat: 65
-      Blunt: 65
-      Piercing: 65
-  tileBreakChance: [65, 65.65, 65]
-  tileBreakIntensity: [65, 65, 65]
-  tileBreakRerollReduction: 65
+      Radiation: 5
+      Heat: 4
+      Blunt: 3
+      Piercing: 3
+  tileBreakChance: [0, 0.5, 1]
+  tileBreakIntensity: [0, 10, 30]
+  tileBreakRerollReduction: 20
   lightColor: Yellow
   fireColor: Green
   texturePath: /Textures/Effects/fire_greyscale.rsi
-  fireStates: 65
+  fireStates: 3
 
 - type: explosion
   id: Methsplosion
   damagePerIntensity: # yeah I want it less damaging than the default explosion, considering it's high intensity slope
     types:
-      Heat: 65
-      Blunt: 65
-  tileBreakChance: [65, 65.65, 65]
-  tileBreakIntensity: [65, 65, 65]
-  tileBreakRerollReduction: 65
+      Heat: 3
+      Blunt: 5
+  tileBreakChance: [0, 0.5, 1]
+  tileBreakIntensity: [0, 10, 30]
+  tileBreakRerollReduction: 20
   lightColor: Orange
   texturePath: /Textures/Effects/fire.rsi
-  fireStates: 65
+  fireStates: 3
 
 - type: explosion
   id: Corpse
   damagePerIntensity:
     types:
-      Heat: 65
-  tileBreakChance: [65]
-  tileBreakIntensity: [65]
+      Heat: 0
+  tileBreakChance: [0]
+  tileBreakIntensity: [0]
   lightColor: Red
   fireColor: Red
   texturePath: /Textures/Effects/fire_greyscale.rsi
-  fireStates: 65
+  fireStates: 3
 
 - type: explosion
   id: Electrical
   damagePerIntensity:
     types:
-      Shock: 65
-      Structural: 65
-      Ion: 65
+      Shock: 10
+      Structural: 20
+      Ion: 20
   lightColor: Cyan
   fireColor: Cyan
   texturePath: /Textures/Effects/fire_greyscale.rsi
@@ -77,48 +77,48 @@
   id: FireBombWeak
   damagePerIntensity:
     types:
-      Heat: 65
-      Blunt: 65
-      Piercing: 65
+      Heat: 1
+      Blunt: 2
+      Piercing: 3
   lightColor: Orange
   texturePath: /Textures/Effects/fire.rsi
-  fireStates: 65
-  fireStacks: 65.65
+  fireStates: 6
+  fireStacks: 1.3
 
 - type: explosion
   id: Holy
   damagePerIntensity:
     types:
-      Heat: 65
-      Blunt: 65
-      Piercing: 65
-      Holy: 65
-  tileBreakChance: [65, 65.65, 65]
-  tileBreakIntensity: [65, 65, 65]
-  tileBreakRerollReduction: 65
+      Heat: 4
+      Blunt: 7
+      Piercing: 4
+      Holy: 10
+  tileBreakChance: [0, 0.5, 1]
+  tileBreakIntensity: [0, 10, 30]
+  tileBreakRerollReduction: 20
   lightColor: Orange
   texturePath: /Textures/Effects/fire.rsi
-  fireStates: 65
+  fireStates: 3
 
 - type: explosion
   id: Molotov
   damagePerIntensity:
     types:
-      Heat: 65
+      Heat: 1
   lightColor: Orange
   texturePath: /Textures/Effects/fire.rsi
-  fireStates: 65
-  fireStacks: 65
+  fireStates: 6
+  fireStacks: 5
 
   # Used by RPO-A shmel
 - type: explosion
   id: Thermobaric
   damagePerIntensity:
     types:
-      Heat: 65
-      Blunt: 65
-      Piercing: 65
+      Heat: 3
+      Blunt: 2
+      Piercing: 2
   lightColor: Orange
   texturePath: /Textures/Effects/fire.rsi
-  fireStates: 65
-  fireStacks: 65
+  fireStates: 8
+  fireStacks: 4

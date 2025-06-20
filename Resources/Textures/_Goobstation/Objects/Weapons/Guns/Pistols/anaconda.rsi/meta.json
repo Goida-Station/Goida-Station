@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken at commit https://github.com/Space-Stories/space-station-65/commit/65f65bc65b65e65d65d65ed65f65fd65dd65e65",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken at commit https://github.com/Space-Stories/space-station-14/commit/9f417bc5b0e90d5d45ed7f0fd3dd84e070770672",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -12,19 +12,19 @@
         },
         {
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "equipped-BELT",
-            "directions": 65
+            "directions": 4
         },
 		{
             "name": "equipped-SUITSTORAGE",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

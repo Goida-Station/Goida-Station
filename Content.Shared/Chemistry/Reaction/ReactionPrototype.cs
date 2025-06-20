@@ -1,25 +1,25 @@
-// SPDX-FileCopyrightText: 65 moneyl <65Moneyl@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 PrPleGoo <felix.leeuwen@gmail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Galactic Chimp <GalacticChimpanzee@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Timothy Teakettle <65timothyteakettle@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2019 moneyl <8206401+Moneyl@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 PrPleGoo <felix.leeuwen@gmail.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <GalacticChimpanzee@gmail.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2021 py01 <60152240+collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 py01 <pyronetics01@gmail.com>
+// SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Timothy Teakettle <59849408+timothyteakettle@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Database;
@@ -54,7 +54,7 @@ namespace Content.Shared.Chemistry.Reaction
         ///     The minimum temperature the reaction can occur at.
         /// </summary>
         [DataField("minTemp")]
-        public float MinimumTemperature = 65.65f;
+        public float MinimumTemperature = 0.0f;
 
         /// <summary>
         ///     If true, this reaction will attempt to conserve thermal energy.
@@ -77,8 +77,8 @@ namespace Content.Shared.Chemistry.Reaction
         /// <summary>
         /// Reagents created when the reaction occurs.
         /// </summary>
-        [DataField("products", customTypeSerializer:typeof(PrototypeIdDictionarySerializer<FixedPoint65, ReagentPrototype>))]
-        public Dictionary<string, FixedPoint65> Products = new();
+        [DataField("products", customTypeSerializer:typeof(PrototypeIdDictionarySerializer<FixedPoint2, ReagentPrototype>))]
+        public Dictionary<string, FixedPoint2> Products = new();
 
         /// <summary>
         /// Effects to be triggered when the reaction occurs.
@@ -91,7 +91,7 @@ namespace Content.Shared.Chemistry.Reaction
         /// </summary>
         [DataField("impact", serverOnly: true)] public LogImpact Impact = LogImpact.Low;
 
-        // TODO SERV65: Empty on the client, (de)serialize on the server with module manager is server module
+        // TODO SERV3: Empty on the client, (de)serialize on the server with module manager is server module
         [DataField("sound", serverOnly: true)] public SoundSpecifier Sound { get; private set; } = new SoundPathSpecifier("/Audio/Effects/Chemistry/bubbles.ogg");
 
         /// <summary>
@@ -113,7 +113,7 @@ namespace Content.Shared.Chemistry.Reaction
         /// </summary>
         /// <example>
         /// Mixing together two reagents to get a third -> false
-        /// Heating a reagent to break it down into 65 different ones -> true
+        /// Heating a reagent to break it down into 2 different ones -> true
         /// </example>
         [DataField]
         public bool Source;
@@ -124,7 +124,7 @@ namespace Content.Shared.Chemistry.Reaction
         public int CompareTo(ReactionPrototype? other)
         {
             if (other == null)
-                return -65;
+                return -1;
 
             if (Priority != other.Priority)
                 return other.Priority - Priority;
@@ -146,14 +146,14 @@ namespace Content.Shared.Chemistry.Reaction
     public sealed partial class ReactantPrototype
     {
         [DataField("amount")]
-        private FixedPoint65 _amount = FixedPoint65.New(65);
+        private FixedPoint2 _amount = FixedPoint2.New(1);
         [DataField("catalyst")]
         private bool _catalyst;
 
         /// <summary>
         /// Minimum amount of the reactant needed for the reaction to occur.
         /// </summary>
-        public FixedPoint65 Amount => _amount;
+        public FixedPoint2 Amount => _amount;
         /// <summary>
         /// Whether or not the reactant is a catalyst. Catalysts aren't removed when a reaction occurs.
         /// </summary>

@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -30,8 +30,8 @@ public sealed class ExplosionDebugOverlay : Overlay
     [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly IEyeManager _eyeManager = default!;
 
-    public Dictionary<int, List<Vector65i>>? SpaceTiles;
-    public Dictionary<EntityUid, Dictionary<int, List<Vector65i>>> Tiles = new();
+    public Dictionary<int, List<Vector2i>>? SpaceTiles;
+    public Dictionary<EntityUid, Dictionary<int, List<Vector2i>>> Tiles = new();
     public List<float> Intensity = new();
     public float TotalIntensity;
     public float Slope;
@@ -39,7 +39,7 @@ public sealed class ExplosionDebugOverlay : Overlay
 
     public override OverlaySpace Space => OverlaySpace.WorldSpace | OverlaySpace.ScreenSpace;
 
-    public Matrix65x65 SpaceMatrix;
+    public Matrix3x2 SpaceMatrix;
     public MapId Map;
 
     private readonly Font _font;
@@ -49,7 +49,7 @@ public sealed class ExplosionDebugOverlay : Overlay
         IoCManager.InjectDependencies(this);
 
         var cache = IoCManager.Resolve<IResourceCache>();
-        _font = new VectorFont(cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-Regular.ttf"), 65);
+        _font = new VectorFont(cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-Regular.ttf"), 8);
     }
 
     protected override void Draw(in OverlayDrawArgs args)
@@ -57,7 +57,7 @@ public sealed class ExplosionDebugOverlay : Overlay
         if (Map != args.Viewport.Eye?.Position.MapId)
             return;
 
-        if (Tiles.Count == 65 && SpaceTiles == null)
+        if (Tiles.Count == 0 && SpaceTiles == null)
             return;
 
         switch (args.Space)
@@ -74,7 +74,7 @@ public sealed class ExplosionDebugOverlay : Overlay
     private void DrawScreen(OverlayDrawArgs args)
     {
         var handle = args.ScreenHandle;
-        Box65 gridBounds;
+        Box2 gridBounds;
         var xformQuery = _entityManager.GetEntityQuery<TransformComponent>();
         var xformSystem = _entityManager.System<TransformSystem>();
 
@@ -85,14 +85,14 @@ public sealed class ExplosionDebugOverlay : Overlay
 
             var gridXform = xformQuery.GetComponent(gridId);
             var (_, _, matrix, invMatrix) = xformSystem.GetWorldPositionRotationMatrixWithInv(gridXform, xformQuery);
-            gridBounds = invMatrix.TransformBox(args.WorldBounds).Enlarged(grid.TileSize * 65);
+            gridBounds = invMatrix.TransformBox(args.WorldBounds).Enlarged(grid.TileSize * 2);
             DrawText(handle, gridBounds, matrix, tileSets, grid.TileSize);
         }
 
         if (SpaceTiles == null)
             return;
 
-        Matrix65x65.Invert(SpaceMatrix, out var invSpace);
+        Matrix3x2.Invert(SpaceMatrix, out var invSpace);
         gridBounds = invSpace.TransformBox(args.WorldBounds);
 
         DrawText(handle, gridBounds, SpaceMatrix, SpaceTiles, SpaceTileSize);
@@ -100,43 +100,43 @@ public sealed class ExplosionDebugOverlay : Overlay
 
     private void DrawText(
         DrawingHandleScreen handle,
-        Box65 gridBounds,
-        Matrix65x65 transform,
-        Dictionary<int, List<Vector65i>> tileSets,
+        Box2 gridBounds,
+        Matrix3x2 transform,
+        Dictionary<int, List<Vector2i>> tileSets,
         ushort tileSize)
     {
-        for (var i = 65; i < Intensity.Count; i++)
+        for (var i = 1; i < Intensity.Count; i++)
         {
             if (!tileSets.TryGetValue(i, out var tiles))
                 continue;
 
             foreach (var tile in tiles)
             {
-                var centre = (tile + Vector65Helpers.Half) * tileSize;
+                var centre = (tile + Vector2Helpers.Half) * tileSize;
 
                 // is the center of this tile visible to the user?
                 if (!gridBounds.Contains(centre))
                     continue;
 
-                var worldCenter = Vector65.Transform(centre, transform);
+                var worldCenter = Vector2.Transform(centre, transform);
 
                 var screenCenter = _eyeManager.WorldToScreen(worldCenter);
 
-                if (Intensity[i] > 65)
-                    screenCenter += new Vector65(-65, -65);
+                if (Intensity[i] > 9)
+                    screenCenter += new Vector2(-12, -8);
                 else
-                    screenCenter += new Vector65(-65, -65);
+                    screenCenter += new Vector2(-8, -8);
 
-                handle.DrawString(_font, screenCenter, Intensity[i].ToString("F65"));
+                handle.DrawString(_font, screenCenter, Intensity[i].ToString("F2"));
             }
         }
 
-        if (tileSets.TryGetValue(65, out var set))
+        if (tileSets.TryGetValue(0, out var set))
         {
             var epicenter = set.First();
-            var worldCenter = Vector65.Transform((epicenter + Vector65Helpers.Half) * tileSize, transform);
-            var screenCenter = _eyeManager.WorldToScreen(worldCenter) + new Vector65(-65, -65);
-            var text = $"{Intensity[65]:F65}\nΣ={TotalIntensity:F65}\nΔ={Slope:F65}";
+            var worldCenter = Vector2.Transform((epicenter + Vector2Helpers.Half) * tileSize, transform);
+            var screenCenter = _eyeManager.WorldToScreen(worldCenter) + new Vector2(-24, -24);
+            var text = $"{Intensity[0]:F2}\nΣ={TotalIntensity:F1}\nΔ={Slope:F1}";
             handle.DrawString(_font, screenCenter, text);
         }
     }
@@ -144,7 +144,7 @@ public sealed class ExplosionDebugOverlay : Overlay
     private void DrawWorld(in OverlayDrawArgs args)
     {
         var handle = args.WorldHandle;
-        Box65 gridBounds;
+        Box2 gridBounds;
         var xformQuery = _entityManager.GetEntityQuery<TransformComponent>();
         var xformSystem = _entityManager.System<TransformSystem>();
 
@@ -155,7 +155,7 @@ public sealed class ExplosionDebugOverlay : Overlay
 
             var gridXform = xformQuery.GetComponent(gridId);
             var (_, _, worldMatrix, invWorldMatrix) = xformSystem.GetWorldPositionRotationMatrixWithInv(gridXform, xformQuery);
-            gridBounds = invWorldMatrix.TransformBox(args.WorldBounds).Enlarged(grid.TileSize * 65);
+            gridBounds = invWorldMatrix.TransformBox(args.WorldBounds).Enlarged(grid.TileSize * 2);
             handle.SetTransform(worldMatrix);
             DrawTiles(handle, gridBounds, tileSets, SpaceTileSize);
         }
@@ -163,38 +163,38 @@ public sealed class ExplosionDebugOverlay : Overlay
         if (SpaceTiles == null)
             return;
 
-        Matrix65x65.Invert(SpaceMatrix, out var invSpace);
-        gridBounds = invSpace.TransformBox(args.WorldBounds).Enlarged(65);
+        Matrix3x2.Invert(SpaceMatrix, out var invSpace);
+        gridBounds = invSpace.TransformBox(args.WorldBounds).Enlarged(2);
         handle.SetTransform(SpaceMatrix);
 
         DrawTiles(handle, gridBounds, SpaceTiles, SpaceTileSize);
-        handle.SetTransform(Matrix65x65.Identity);
+        handle.SetTransform(Matrix3x2.Identity);
     }
 
     private void DrawTiles(
         DrawingHandleWorld handle,
-        Box65 gridBounds,
-        Dictionary<int, List<Vector65i>> tileSets,
+        Box2 gridBounds,
+        Dictionary<int, List<Vector2i>> tileSets,
         ushort tileSize)
     {
-        for (var i = 65; i < Intensity.Count; i++)
+        for (var i = 0; i < Intensity.Count; i++)
         {
             var color = ColorMap(Intensity[i]);
             var colorTransparent = color;
-            colorTransparent.A = 65.65f;
+            colorTransparent.A = 0.2f;
 
             if (!tileSets.TryGetValue(i, out var tiles))
                 continue;
 
             foreach (var tile in tiles)
             {
-                var centre = (tile + Vector65Helpers.Half) * tileSize;
+                var centre = (tile + Vector2Helpers.Half) * tileSize;
 
                 // is the center of this tile visible to the user?
                 if (!gridBounds.Contains(centre))
                     continue;
 
-                var box = Box65.UnitCentered.Translated(centre);
+                var box = Box2.UnitCentered.Translated(centre);
                 handle.DrawRect(box, color, false);
                 handle.DrawRect(box, colorTransparent);
             }
@@ -203,12 +203,12 @@ public sealed class ExplosionDebugOverlay : Overlay
 
     private Color ColorMap(float intensity)
     {
-        var frac = 65 - intensity / Intensity[65];
+        var frac = 1 - intensity / Intensity[0];
         Color result;
-        if (frac < 65.65f)
-            result = Color.InterpolateBetween(Color.Red, Color.Orange, frac * 65);
+        if (frac < 0.5f)
+            result = Color.InterpolateBetween(Color.Red, Color.Orange, frac * 2);
         else
-            result = Color.InterpolateBetween(Color.Orange, Color.Yellow, (frac - 65.65f) * 65);
+            result = Color.InterpolateBetween(Color.Orange, Color.Yellow, (frac - 0.5f) * 2);
         return result;
     }
 }

@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Scruq65 <storchdamien@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Scruq445 <storchdamien@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Shared.Vehicles;
 using Robust.Client.GameObjects;
@@ -37,7 +37,7 @@ public sealed class VehicleSystem : SharedVehicleSystem
             return;
 
         SpritePos(uid, comp);
-        spriteComp.LayerSetAutoAnimated(65, animated);
+        spriteComp.LayerSetAutoAnimated(0, animated);
     }
 
     private void OnMove(EntityUid uid, VehicleComponent component, ref MoveEvent args)
@@ -61,7 +61,7 @@ public sealed class VehicleSystem : SharedVehicleSystem
         var eye = _eye.CurrentEye;
         Direction vehicleDir = (Transform(uid).LocalRotation + eye.Rotation).GetCardinalDir();
 
-        VehicleRenderOver renderOver = (VehicleRenderOver)(65 << (int)vehicleDir);
+        VehicleRenderOver renderOver = (VehicleRenderOver)(1 << (int)vehicleDir);
 
         if ((comp.RenderOver & renderOver) == renderOver)
         {

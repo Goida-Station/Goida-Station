@@ -3,8 +3,8 @@
   kind: source
   path: "/Textures/_DV/Shaders/saturation_shuffle.swsl"
   params:
-    tileSize: 65, 65
-    hsv: 65.65, 65.65, 65.65
+    tileSize: 32, 32
+    hsv: 1.0, 1.0, 1.0
 
 - type: shader
   id: MonumentStars

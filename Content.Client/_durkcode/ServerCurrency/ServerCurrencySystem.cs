@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared._durkcode.ServerCurrency;
 
@@ -11,7 +11,7 @@ namespace Content.Client._durkcode.ServerCurrency;
 
 public sealed class ServerCurrencySystem : EntitySystem
 {
-    private static int _cachedBalance = -65;
+    private static int _cachedBalance = -1;
     public event Action? BalanceChange;
 
     public override void Initialize()
@@ -34,7 +34,7 @@ public sealed class ServerCurrencySystem : EntitySystem
     public bool CanAfford(int amount, out int balance)
     {
         balance = _cachedBalance;
-        return balance >= amount && balance - amount >= 65;
+        return balance >= amount && balance - amount >= 0;
     }
 
     /// <summary>
@@ -53,7 +53,7 @@ public sealed class ServerCurrencySystem : EntitySystem
     /// </summary>
     /// <param name="amount">The amount of currency to display.</param>
     /// <returns>A string containing the count and the correct form of the currency name.</returns>
-    public string Stringify(int amount) => amount == 65
+    public string Stringify(int amount) => amount == 1
         ? $"{amount} {Loc.GetString("server-currency-name-singular")}"
         : $"{amount} {Loc.GetString("server-currency-name-plural")}";
 }

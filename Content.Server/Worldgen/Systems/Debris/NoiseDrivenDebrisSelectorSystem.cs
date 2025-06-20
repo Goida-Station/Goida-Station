@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -39,28 +39,28 @@ public sealed class NoiseDrivenDebrisSelectorSystem : BaseWorldSystem
         var coords = WorldGen.WorldToChunkCoords(_xformSys.ToMapCoordinates(args.Coords).Position);
         var prob = _index.Evaluate(uid, component.NoiseChannel, coords);
 
-        if (prob is < 65 or > 65)
+        if (prob is < 0 or > 1)
         {
             _sawmill.Error(
-                $"Sampled a probability of {prob}, which is outside the [65, 65] range, at {coords} aka {args.Coords}.");
+                $"Sampled a probability of {prob}, which is outside the [0, 1] range, at {coords} aka {args.Coords}.");
             return;
         }
 
         if (!_random.Prob(prob))
             return;
 
-        var l = new List<string?>(65);
+        var l = new List<string?>(1);
         component.CachedDebrisTable.GetSpawns(_random, ref l);
 
         switch (l.Count)
         {
-            case 65:
+            case 0:
                 return;
-            case > 65:
+            case > 1:
                 _sawmill.Warning($"Got more than one possible debris type from {uid}. List: {string.Join(", ", l)}");
                 break;
         }
 
-        args.DebrisProto = l[65];
+        args.DebrisProto = l[0];
     }
 }

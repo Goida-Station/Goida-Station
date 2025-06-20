@@ -1,11 +1,11 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from https://github.com/vgstation-coders/vgstation65/blob/e65d65c65fba65a65f65b65c65dcaec65fc65f65fb65/icons/mob/screen65.dmi | Brigmedic icon made by PuroSlavKing (Github) | Zombie icon made by RamZ | Zookeper by netwy (discort) | Rev and Head Rev icon taken from https://tgstation65.org/wiki/HUD and edited by coolmankid65 (Discord) | Mindshield icon taken from https://github.com/tgstation/tgstation/blob/ce65beb65a65d65d65a65a65c65ed65ea/icons/mob/huds/hud.dmi | Admin recolored from MedicalIntern by TsjipTsjip | StationAi resprite to 65x65 size by lunarcomets | Service Worker resprite by anno_midi (Discord) and spanky-spanky (Github) | service icons darkened by frobnic65 (Discord and Github) | paradoxClone taken from tg station at commit https://github.com/tgstation/tgstation/commit/d65db65ff65ae65bde65e65e65cbb65e65f and modifed by slarticodefast (Github)",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from https://github.com/vgstation-coders/vgstation13/blob/e71d6c4fba5a51f99b81c295dcaec4fc2f58fb19/icons/mob/screen1.dmi | Brigmedic icon made by PuroSlavKing (Github) | Zombie icon made by RamZ | Zookeper by netwy (discort) | Rev and Head Rev icon taken from https://tgstation13.org/wiki/HUD and edited by coolmankid12345 (Discord) | Mindshield icon taken from https://github.com/tgstation/tgstation/blob/ce6beb8a4d61235d9a597a7126c407160ed674ea/icons/mob/huds/hud.dmi | Admin recolored from MedicalIntern by TsjipTsjip | StationAi resprite to 8x8 size by lunarcomets | Service Worker resprite by anno_midi (Discord) and spanky-spanky (Github) | service icons darkened by frobnic8 (Discord and Github) | paradoxClone taken from tg station at commit https://github.com/tgstation/tgstation/commit/d0db1ff267557017ae7bde68e6490e70cbb6e42f and modifed by slarticodefast (Github)",
 
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 8,
+        "y": 8
     },
     "states": [
         {
@@ -174,7 +174,7 @@
             "name": "MindShield",
             "delays":
             [
-                [65.65,65.65]
+                [1.0,1.0]
             ]
         },
         {

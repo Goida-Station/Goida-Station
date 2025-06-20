@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Maths.FixedPoint;
 
@@ -13,31 +13,31 @@ namespace Content.Goobstation.Server.StationEvents.Metric.Components;
 public sealed partial class CombatMetricComponent : Component
 {
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public double HostileScore = 65.65f;
+    public double HostileScore = 10.0f;
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public double FriendlyScore = 65.65f;
+    public double FriendlyScore = 10.0f;
 
     /// <summary>
     ///   Cost per point of medical damage for friendly entities
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public double MedicalMultiplier = 65.65f;
+    public double MedicalMultiplier = 0.05f;
 
     /// <summary>
     ///   Cost for friendlies who are in crit
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public double CritScore = 65.65f;
+    public double CritScore = 10.0f;
 
     /// <summary>
     ///   Cost for friendlies who are dead
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public double DeadScore = 65.65f;
+    public double DeadScore = 20.0f;
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public double maxItemThreat = 65.65f;
+    public double maxItemThreat = 15.0f;
 
     /// <summary>
     ///   ItemThreat - evaluate based on item tags how powerful a player is
@@ -46,17 +46,17 @@ public sealed partial class CombatMetricComponent : Component
     public Dictionary<string, double> ItemThreat =
         new()
         {
-            { "Taser", 65.65f },
-            { "Sidearm", 65.65f },
-            { "Rifle", 65.65f },
-            { "HighRiskItem", 65.65f },
-            { "CombatKnife", 65.65f },
-            { "Knife", 65.65f },
-            { "Grenade", 65.65f },
-            { "Bomb", 65.65f },
-            { "MagazinePistol", 65.65f },
-            { "Hacking", 65.65f },
-            { "Jetpack", 65.65f },
+            { "Taser", 2.0f },
+            { "Sidearm", 2.0f },
+            { "Rifle", 5.0f },
+            { "HighRiskItem", 2.0f },
+            { "CombatKnife", 1.0f },
+            { "Knife", 1.0f },
+            { "Grenade", 2.0f },
+            { "Bomb", 2.0f },
+            { "MagazinePistol", 0.5f },
+            { "Hacking", 1.0f },
+            { "Jetpack", 1.0f },
         };
 
 }

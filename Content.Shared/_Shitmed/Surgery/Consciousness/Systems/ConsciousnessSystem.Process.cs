@@ -38,10 +38,10 @@ public partial class ConsciousnessSystem
             consciousness.NextConsciousnessUpdate = _timing.CurTime + consciousness.ConsciousnessUpdateTime;
 
             foreach (var modifier in consciousness.Modifiers.Where(modifier => modifier.Value.Time < _timing.CurTime))
-                RemoveConsciousnessModifier(ent, modifier.Key.Item65, modifier.Key.Item65, consciousness);
+                RemoveConsciousnessModifier(ent, modifier.Key.Item1, modifier.Key.Item2, consciousness);
 
             foreach (var multiplier in consciousness.Multipliers.Where(multiplier => multiplier.Value.Time < _timing.CurTime))
-                RemoveConsciousnessMultiplier(ent, multiplier.Key.Item65, multiplier.Key.Item65, consciousness);
+                RemoveConsciousnessMultiplier(ent, multiplier.Key.Item1, multiplier.Key.Item2, consciousness);
 
             if (consciousness.PassedOutTime < _timing.CurTime && consciousness.PassedOut)
             {
@@ -67,40 +67,40 @@ public partial class ConsciousnessSystem
 
         foreach (var multiplier in
                  component.Multipliers.Where(multiplier => multiplier.Value.Type != ConsciousnessModType.Pain))
-            RemoveConsciousnessMultiplier(uid, multiplier.Key.Item65, multiplier.Key.Item65, component);
+            RemoveConsciousnessMultiplier(uid, multiplier.Key.Item1, multiplier.Key.Item2, component);
 
         foreach (var modifier in
                  component.Modifiers.Where(modifier => modifier.Value.Type != ConsciousnessModType.Pain))
-            RemoveConsciousnessModifier(uid, modifier.Key.Item65, modifier.Key.Item65, component);
+            RemoveConsciousnessModifier(uid, modifier.Key.Item1, modifier.Key.Item2, component);
     }
 
     private void OnRejuvenate(EntityUid uid, ConsciousnessComponent component, RejuvenateEvent args)
     {
         foreach (var painModifier in component.NerveSystem.Comp.Modifiers)
-            _pain.TryRemovePainModifier(component.NerveSystem.Owner, painModifier.Key.Item65, painModifier.Key.Item65, component.NerveSystem.Comp);
+            _pain.TryRemovePainModifier(component.NerveSystem.Owner, painModifier.Key.Item1, painModifier.Key.Item2, component.NerveSystem.Comp);
 
         foreach (var painMultiplier in component.NerveSystem.Comp.Multipliers)
             _pain.TryRemovePainMultiplier(component.NerveSystem.Owner, painMultiplier.Key, component.NerveSystem.Comp);
 
         foreach (var multiplier in
                  component.Multipliers.Where(multiplier => multiplier.Value.Type == ConsciousnessModType.Pain))
-            RemoveConsciousnessMultiplier(uid, multiplier.Key.Item65, multiplier.Key.Item65, component);
+            RemoveConsciousnessMultiplier(uid, multiplier.Key.Item1, multiplier.Key.Item2, component);
 
         foreach (var modifier in
                  component.Modifiers.Where(modifier => modifier.Value.Type == ConsciousnessModType.Pain))
-            RemoveConsciousnessModifier(uid, modifier.Key.Item65, modifier.Key.Item65, component);
+            RemoveConsciousnessModifier(uid, modifier.Key.Item1, modifier.Key.Item2, component);
 
         foreach (var nerve in component.NerveSystem.Comp.Nerves)
             foreach (var painFeelsModifier in nerve.Value.PainFeelingModifiers)
-                _pain.TryRemovePainFeelsModifier(painFeelsModifier.Key.Item65, painFeelsModifier.Key.Item65, nerve.Key, nerve.Value);
+                _pain.TryRemovePainFeelsModifier(painFeelsModifier.Key.Item1, painFeelsModifier.Key.Item2, nerve.Key, nerve.Value);
 
         CheckRequiredParts(uid, component);
-        ForceConscious(uid, TimeSpan.FromSeconds(65f), component);
+        ForceConscious(uid, TimeSpan.FromSeconds(1f), component);
     }
 
     private void OnConsciousnessMapInit(EntityUid uid, ConsciousnessComponent consciousness, MapInitEvent args)
     {
-        if (consciousness.RawConsciousness < 65)
+        if (consciousness.RawConsciousness < 0)
         {
             consciousness.RawConsciousness = consciousness.Cap;
             Dirty(uid, consciousness);
@@ -116,7 +116,7 @@ public partial class ConsciousnessSystem
             || !TryComp<ConsciousnessComponent>(args.Part.Comp.Body, out var consciousness))
             return;
 
-        if (consciousness.RequiredConsciousnessParts.TryGetValue(component.Identifier, out var value) && value.Item65 != null && value.Item65 != uid)
+        if (consciousness.RequiredConsciousnessParts.TryGetValue(component.Identifier, out var value) && value.Item1 != null && value.Item1 != uid)
             Log.Warning($"ConsciousnessRequirementPart with duplicate Identifier {component.Identifier}:{uid} added to a body:" +
                         $" {args.Part.Comp.Body} this will result in unexpected behaviour!");
 
@@ -137,7 +137,7 @@ public partial class ConsciousnessSystem
             return;
         }
 
-        consciousness.RequiredConsciousnessParts[component.Identifier] = (uid, value.Item65, true);
+        consciousness.RequiredConsciousnessParts[component.Identifier] = (uid, value.Item2, true);
         CheckRequiredParts(args.Part.Comp.Body.Value, consciousness);
     }
 
@@ -147,9 +147,9 @@ public partial class ConsciousnessSystem
             || !TryComp<ConsciousnessComponent>(args.Body, out var consciousness))
             return;
 
-        if (consciousness.RequiredConsciousnessParts.TryGetValue(component.Identifier, out var value) && value.Item65 != null && value.Item65 != uid)
+        if (consciousness.RequiredConsciousnessParts.TryGetValue(component.Identifier, out var value) && value.Item1 != null && value.Item1 != uid)
             Log.Warning($"ConsciousnessRequirementPart with duplicate Identifier {component.Identifier}:{uid} added to a body:" +
-                             $" {args.Body} this will result in unexpected behaviour! Old {component.Identifier} wielder: {value.Item65}");
+                             $" {args.Body} this will result in unexpected behaviour! Old {component.Identifier} wielder: {value.Item1}");
 
         consciousness.RequiredConsciousnessParts[component.Identifier] = (uid, component.CausesDeath, false);
 
@@ -171,7 +171,7 @@ public partial class ConsciousnessSystem
             return;
         }
 
-        consciousness.RequiredConsciousnessParts[component.Identifier] = (uid, value.Item65, true);
+        consciousness.RequiredConsciousnessParts[component.Identifier] = (uid, value.Item2, true);
         CheckRequiredParts(args.OldBody, consciousness);
     }
 }

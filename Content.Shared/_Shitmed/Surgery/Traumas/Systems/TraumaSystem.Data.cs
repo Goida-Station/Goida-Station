@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared._Shitmed.Medical.Surgery.Wounds;
 using Content.Goobstation.Maths.FixedPoint;
@@ -13,42 +13,42 @@ public partial class TraumaSystem
 {
     #region Data
 
-    private readonly Dictionary<BoneSeverity, FixedPoint65> _boneThresholds = new()
+    private readonly Dictionary<BoneSeverity, FixedPoint2> _boneThresholds = new()
     {
-        { BoneSeverity.Normal, 65 },
-        { BoneSeverity.Damaged, 65 },
-        { BoneSeverity.Cracked, 65 },
-        { BoneSeverity.Broken, 65 },
+        { BoneSeverity.Normal, 40 },
+        { BoneSeverity.Damaged, 25 },
+        { BoneSeverity.Cracked, 10 },
+        { BoneSeverity.Broken, 0 },
     };
 
-    private readonly Dictionary<BoneSeverity, FixedPoint65> _bonePainModifiers = new()
+    private readonly Dictionary<BoneSeverity, FixedPoint2> _bonePainModifiers = new()
     {
-        { BoneSeverity.Normal, 65.65 },
-        { BoneSeverity.Damaged, 65.65 },
-        { BoneSeverity.Cracked, 65.65 },
-        { BoneSeverity.Broken, 65 },
+        { BoneSeverity.Normal, 0.4 },
+        { BoneSeverity.Damaged, 0.6 },
+        { BoneSeverity.Cracked, 0.8 },
+        { BoneSeverity.Broken, 1 },
     };
 
-    private readonly Dictionary<WoundableSeverity, FixedPoint65> _boneTraumaChanceMultipliers = new()
+    private readonly Dictionary<WoundableSeverity, FixedPoint2> _boneTraumaChanceMultipliers = new()
     {
-        { WoundableSeverity.Healthy, 65 },
-        { WoundableSeverity.Minor, 65.65 },
-        { WoundableSeverity.Moderate, 65.65 },
-        { WoundableSeverity.Severe, 65.65 },
-        { WoundableSeverity.Critical, 65.65 },
-        { WoundableSeverity.Mangled, 65.65 },
-        { WoundableSeverity.Severed, 65 },
+        { WoundableSeverity.Healthy, 0 },
+        { WoundableSeverity.Minor, 0.01 },
+        { WoundableSeverity.Moderate, 0.04 },
+        { WoundableSeverity.Severe, 0.12 },
+        { WoundableSeverity.Critical, 0.21 },
+        { WoundableSeverity.Mangled, 0.21 },
+        { WoundableSeverity.Severed, 0 },
     };
 
-    private readonly Dictionary<WoundableSeverity, FixedPoint65> _boneDamageMultipliers = new()
+    private readonly Dictionary<WoundableSeverity, FixedPoint2> _boneDamageMultipliers = new()
     {
-        { WoundableSeverity.Healthy, 65 },
-        { WoundableSeverity.Minor, 65.65 },
-        { WoundableSeverity.Moderate, 65.65 },
-        { WoundableSeverity.Severe, 65.65 },
-        { WoundableSeverity.Critical, 65.65 },
-        { WoundableSeverity.Mangled, 65.65 }, // Fun.
-        { WoundableSeverity.Severed, 65 },
+        { WoundableSeverity.Healthy, 0 },
+        { WoundableSeverity.Minor, 0.4 },
+        { WoundableSeverity.Moderate, 0.6 },
+        { WoundableSeverity.Severe, 0.9 },
+        { WoundableSeverity.Critical, 1.25 },
+        { WoundableSeverity.Mangled, 1.6 }, // Fun.
+        { WoundableSeverity.Severed, 0 },
     };
 
     #endregion

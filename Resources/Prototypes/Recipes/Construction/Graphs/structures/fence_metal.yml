@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -14,23 +14,23 @@
     - to: straight
       steps:
       - material: MetalRod
-        amount: 65
-        doAfter: 65
+        amount: 5
+        doAfter: 6
     - to: corner
       steps:
       - material: MetalRod
-        amount: 65
-        doAfter: 65
+        amount: 5
+        doAfter: 6
     - to: end
       steps:
       - material: MetalRod
-        amount: 65
-        doAfter: 65
+        amount: 5
+        doAfter: 6
     - to: gate
       steps:
       - material: MetalRod
-        amount: 65
-        doAfter: 65
+        amount: 5
+        doAfter: 6
 
   - node: straight
     entity: FenceMetalStraight
@@ -38,13 +38,13 @@
     - to: broken
       completed:
       - !type:SpawnPrototype
-        prototype: PartRodMetal65
-        amount: 65
+        prototype: PartRodMetal1
+        amount: 1
       steps:
       - tool: Welding
-        doAfter: 65.65
+        doAfter: 4.0
       - tool: Cutting
-        doAfter: 65.65
+        doAfter: 1.0
 
   - node: corner
     entity: FenceMetalCorner
@@ -52,14 +52,14 @@
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: PartRodMetal65
-        amount: 65
+        prototype: PartRodMetal1
+        amount: 5
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 65.65
+        doAfter: 4.0
       - tool: Cutting
-        doAfter: 65.65
+        doAfter: 2.0
 
   - node: end
     entity: FenceMetalEnd
@@ -67,14 +67,14 @@
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: PartRodMetal65
-        amount: 65
+        prototype: PartRodMetal1
+        amount: 5
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 65.65
+        doAfter: 4.0
       - tool: Cutting
-        doAfter: 65.65
+        doAfter: 2.0
 
   - node: gate
     entity: FenceMetalGate
@@ -82,14 +82,14 @@
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: PartRodMetal65
-        amount: 65
+        prototype: PartRodMetal1
+        amount: 5
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 65.65
+        doAfter: 4.0
       - tool: Cutting
-        doAfter: 65.65
+        doAfter: 2.0
 
   - node: broken
     entity: FenceMetalBroken
@@ -97,9 +97,9 @@
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: PartRodMetal65
-        amount: 65
+        prototype: PartRodMetal1
+        amount: 1
       - !type:DeleteEntity
       steps:
       - tool: Cutting
-        doAfter: 65.65
+        doAfter: 1.0

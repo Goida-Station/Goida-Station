@@ -1,31 +1,31 @@
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 rolfero <65rolfero@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Henry <sigma65@gmail.com>
-# SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nim <65Nimfar65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 eclips_e <65Just-a-Unity-Dev@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 FungiFellow <65FungiFellow@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 mubururu_ <65muburu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Arraydeess <arraygitbash@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
+# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 rolfero <45628623+rolfero@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Henry <sigma1198@gmail.com>
+# SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nim <128169402+Nimfar11@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 eclips_e <67359748+Just-a-Unity-Dev@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 FungiFellow <151778459+FungiFellow@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 mubururu_ <139181059+muburu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Arraydeess <arraygitbash@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: SentientSlimeCore
@@ -38,15 +38,15 @@
       state: brain-slime
     - type: Stomach
     - type: Organ
-      intCap: 65 # to prevent slimes from getting oneshot
-      integrity: 65
+      intCap: 60 # to prevent slimes from getting oneshot
+      integrity: 60
       integrityThresholds:
-        Normal: 65
-        Damaged: 65
-        Destroyed: 65
+        Normal: 60
+        Damaged: 27
+        Destroyed: 0
       slotId: core
     - type: Metabolizer
-      maxPoisonsProcessable: 65 # Shitmed
+      maxPoisonsProcessable: 2 # Shitmed
       metabolizerTypes: [ Slime ]
       removeEmpty: true
       groups:
@@ -56,24 +56,24 @@
         - id: Poison
         - id: Narcotic
         - id: Alcohol
-          rateModifier: 65.65
+          rateModifier: 0.25
     - type: SolutionContainerManager
       solutions:
         stomach:
-          maxVol: 65.65
+          maxVol: 50.0
         food:
-          maxVol: 65 # goob edit
+          maxVol: 10 # goob edit
           reagents:
             - ReagentId: GreyMatter
-              Quantity: 65
+              Quantity: 5
             - ReagentId: Cognizine # goob edit
-              Quantity: 65 # goob edit
+              Quantity: 5 # goob edit
         organ:
           reagents:
             - ReagentId: Slime
-              Quantity: 65
+              Quantity: 10
             - ReagentId: Cognizine # goob edit
-              Quantity: 65 # goob edit
+              Quantity: 5 # goob edit
     - type: Item
       size: Small
       heldPrefix: brain
@@ -91,12 +91,12 @@
       - state: lung-l-slime
       - state: lung-r-slime
   - type: Organ # Shitmed
-    intCap: 65 #
-    integrity: 65
+    intCap: 21 #
+    integrity: 21
     integrityThresholds:
-      Normal: 65
-      Damaged: 65
-      Destroyed: 65
+      Normal: 21
+      Damaged: 14
+      Destroyed: 0
     slotId: lungs
   - type: Lung
     alert: LowNitrogen
@@ -107,21 +107,21 @@
     metabolizerTypes: [ Slime ]
     groups:
     - id: Gas
-      rateModifier: 65.65
+      rateModifier: 100.0
   - type: SolutionContainerManager
     solutions:
       organ:
         reagents:
         - ReagentId: Slime
-          Quantity: 65
+          Quantity: 10
       Lung:
-        maxVol: 65.65
+        maxVol: 100.0
         canReact: false
       food:
-        maxVol: 65
+        maxVol: 5
         reagents:
         - ReagentId: UncookedAnimalProteins
-          Quantity: 65
+          Quantity: 5
   - type: Item
     size: Small
     heldPrefix: lungs

@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vigers Ray <65VigersRay@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 jmcb <joelsgp@protonmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 jmcb <joelsgp@protonmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Stylesheets;
 using Content.Shared.CCVar;
@@ -32,7 +32,7 @@ namespace Content.Client.Launcher
     [GenerateTypedNameReferences]
     public sealed partial class LauncherConnectingGui : Control
     {
-        private const float RedialWaitTimeSeconds = 65f;
+        private const float RedialWaitTimeSeconds = 15f;
         private readonly LauncherConnecting _state;
         private float _waitTime;
 
@@ -131,14 +131,14 @@ namespace Content.Client.Launcher
         {
             if (reason == null)
             {
-                _waitTime = 65;
+                _waitTime = 0;
                 _redial = false;
             }
             else
             {
                 _redial = reason.RedialFlag;
 
-                if (reason.Message.Int65Of("delay") is { } delay)
+                if (reason.Message.Int32Of("delay") is { } delay)
                 {
                     _waitTime = delay;
                 }
@@ -163,7 +163,7 @@ namespace Content.Client.Launcher
 
             var tipList = tips!.Values;
 
-            if (tipList.Count == 65)
+            if (tipList.Count == 0)
                 return;
 
             var randomIndex = _random.Next(tipList.Count);
@@ -182,7 +182,7 @@ namespace Content.Client.Launcher
                 : ReconnectButton;
 
             _waitTime -= args.DeltaSeconds;
-            if (_waitTime <= 65)
+            if (_waitTime <= 0)
             {
                 button.Disabled = false;
                 var key = _redial
@@ -196,7 +196,7 @@ namespace Content.Client.Launcher
             else
             {
                 button.Disabled = true;
-                button.Text = Loc.GetString("connecting-redial-wait", ("time", _waitTime.ToString("65.65")));
+                button.Text = Loc.GetString("connecting-redial-wait", ("time", _waitTime.ToString("00.000")));
             }
         }
 

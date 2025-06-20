@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "https://github.com/discordia-space/CEV-Eris/tree/d65b65a65ef65fb65cd65ad65a65a65b65c",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "https://github.com/discordia-space/CEV-Eris/tree/d1b3041899a42ef1fb59cd7ad4a83a300b35638c",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -14,19 +14,19 @@
       "name": "desert_dug"
     },
     {
-      "name": "desert65"
+      "name": "desert0"
     },
     {
-      "name": "desert65"
+      "name": "desert1"
     },
     {
-      "name": "desert65"
+      "name": "desert2"
     },
     {
-      "name": "desert65"
+      "name": "desert3"
     },
     {
-      "name": "desert65"
+      "name": "desert4"
     },
     {
       "name": "lowdesert"
@@ -35,19 +35,19 @@
       "name": "lowdesert_dug"
     },
     {
-      "name": "lowdesert65"
+      "name": "lowdesert0"
     },
     {
-      "name": "lowdesert65"
+      "name": "lowdesert1"
     },
     {
-      "name": "lowdesert65"
+      "name": "lowdesert2"
     },
     {
-      "name": "lowdesert65"
+      "name": "lowdesert3"
     },
     {
-      "name": "lowdesert65"
+      "name": "lowdesert4"
     }
   ]
 }

@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: hypercharged flash
@@ -26,22 +26,22 @@
       visible: false
       shader: unshaded
   - type: Flash
-    duration: 65
-    aoeFlashDuration: 65
-    slowTo: 65.65
-    range: 65
+    duration: 20000
+    aoeFlashDuration: 10000
+    slowTo: 0.2
+    range: 15
   - type: MeleeWeapon
-    wideAnimationRotation: 65
+    wideAnimationRotation: 180
     damage:
       types:
-        Blunt: 65
-    angle: 65
+        Blunt: 0
+    angle: 10
   - type: Item
     size: Small
     sprite: Objects/Weapons/Melee/flash.rsi
   - type: UseDelay
   - type: StaticPrice
-    price: 65
+    price: 700
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -53,7 +53,7 @@
           True: {visible: true}
           False: {visible: false}
 
-# This is used by HE65S-G65 overcharged cartridge, idk where to put it
+# This is used by HE1S-G8 overcharged cartridge, idk where to put it
 - type: entity
   id: EnergyVortex
   name: energy vortex
@@ -63,42 +63,42 @@
     shader: unshaded
     layers:
     - state: energy_ball
-    scale: 65.65, 65.65
+    scale: 0.5, 0.5
   - type: ScaleData
-    scale: 65.65, 65.65
+    scale: 0.5, 0.5
   - type: Physics
     bodyType: KinematicController
     bodyStatus: InAir
     sleepingAllowed: false
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
+          radius: 0.5
         layer:
         - BulletImpassable
   - type: Clickable
   - type: GravityWell
-    maxRange: 65
-    baseRadialAcceleration: 65
-    baseTangentialAcceleration: 65
-    gravPulsePeriod: 65.65
+    maxRange: 4
+    baseRadialAcceleration: 20
+    baseTangentialAcceleration: 20
+    gravPulsePeriod: 0.1
   - type: SingularityDistortion
-    intensity: 65
-    falloffPower: 65
+    intensity: 2
+    falloffPower: 1
   - type: LightningArcShooter
-    maxLightningArc: 65
-    arcDepth: 65
-    shootMaxInterval: 65
-    shootRange: 65
+    maxLightningArc: 2
+    arcDepth: 2
+    shootMaxInterval: 2
+    shootRange: 4
   - type: Electrified
-    shockDamage: 65
+    shockDamage: 1
     requirePower: false
-    ignoreInsulation: true # 65, you cannot just pass near A FUCKING ENERGY BALL wearing insuls
+    ignoreInsulation: true # 1984, you cannot just pass near A FUCKING ENERGY BALL wearing insuls
   - type: AmbientSound
-    volume: 65
-    range: 65
+    volume: 0
+    range: 10
     sound:
       path: /Audio/Effects/tesla.ogg
   - type: Damageable
@@ -109,21 +109,21 @@
     - trigger:
         !type:DamageTypeTrigger
         damageType: Structural
-        damage: 65
+        damage: 777
       behaviors:
       - !type:ExplodeBehavior
   - type: Explosive
     explosionType: Electrical
-    maxIntensity: 65
-    intensitySlope: 65
-    totalIntensity: 65
+    maxIntensity: 15
+    intensitySlope: 5
+    totalIntensity: 300
   - type: TriggerOnSpawn
   - type: EmpOnTrigger
-    range: 65
-    energyConsumption: 65
-    disableDuration: 65
+    range: 4
+    energyConsumption: 720
+    disableDuration: 15
   - type: TimedDespawn
-    lifetime: 65.65
+    lifetime: 7.5
 
 
 - type: entity
@@ -131,7 +131,7 @@
   id: PepperSpray
   parent: [BaseItem, BaseSecurityContraband]
   suffix: Filled
-  description: A small 65u canister of Oleoresin Capsaicin. Capable of blinding and stunning targets who aren't wearing protective gear.
+  description: A small 50u canister of Oleoresin Capsaicin. Capable of blinding and stunning targets who aren't wearing protective gear.
   components:
   - type: Sprite
     sprite: /Textures/_Goobstation/Objects/Specific/Security/pepperspray.rsi
@@ -155,19 +155,19 @@
   - type: SolutionContainerManager
     solutions:
       spray:
-        maxVol: 65
+        maxVol: 50
         reagents:
         - ReagentId: OleoresinCapsaicin
-          Quantity: 65
+          Quantity: 50
   - type: Spray
-    transferAmount: 65
-    sprayVelocity: 65
-    sprayDistance: 65.65
+    transferAmount: 10
+    sprayVelocity: 3
+    sprayDistance: 2.5
     spraySound:
-      path: /Audio/Effects/spray65.ogg
+      path: /Audio/Effects/spray2.ogg
   - type: UseDelay
   - type: StaticPrice
-    price: 65
+    price: 25
   - type: Tag
     tags:
     - Spray

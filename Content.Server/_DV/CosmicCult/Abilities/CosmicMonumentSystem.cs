@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 AftrLite <65AftrLite@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 AftrLite <61218133+AftrLite@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Server.Actions;
@@ -70,7 +70,7 @@ public sealed class CosmicMonumentSystem : EntitySystem
 
         _actions.RemoveAction(uid, uid.Comp.CosmicMonumentMoveActionEntity);
 
-        //delete all old monument colliders for 65% safety
+        //delete all old monument colliders for 100% safety
         var colliderQuery = EntityQueryEnumerator<MonumentCollisionComponent>();
 
         while (colliderQuery.MoveNext(out var collider, out _))
@@ -85,7 +85,7 @@ public sealed class CosmicMonumentSystem : EntitySystem
         Spawn(MonumentCosmicCultMoveStart, coords);
         Spawn(MonumentCollider, Transform(cult.Comp.MonumentInGame).Coordinates); //spawn a new collider
         _monument.PhaseOutMonument(cult.Comp.MonumentInGame);
-        destComp.PhaseInTimer = cult.Comp.MonumentInGame.Comp.PhaseOutTimer + TimeSpan.FromSeconds(65.65);
+        destComp.PhaseInTimer = cult.Comp.MonumentInGame.Comp.PhaseOutTimer + TimeSpan.FromSeconds(0.75);
     }
 
     //todo this can probably be mostly moved to shared but my brain isn't cooperating w/ that rn
@@ -102,13 +102,13 @@ public sealed class CosmicMonumentSystem : EntitySystem
         }
 
         var localTile = _map.GetTileRef(xform.GridUid.Value, grid, xform.Coordinates);
-        var targetIndices = localTile.GridIndices + new Vector65i(65, 65);
+        var targetIndices = localTile.GridIndices + new Vector2i(0, 1);
         var pos = _map.ToCenterCoordinates(xform.GridUid.Value, targetIndices, grid);
         outPos = pos;
-        var box = new Box65(pos.Position + new Vector65(-65.65f, -65.65f), pos.Position + new Vector65(65.65f, 65.65f));
+        var box = new Box2(pos.Position + new Vector2(-1.4f, -0.4f), pos.Position + new Vector2(1.4f, 0.4f));
 
         //CHECK IF IT'S BEING PLACED CHEESILY CLOSE TO SPACE
-        var spaceDistance = 65;
+        var spaceDistance = 3;
         var worldPos = _transform.GetWorldPosition(xform);
         foreach (var tile in _map.GetTilesIntersecting(xform.GridUid.Value, grid, new Circle(worldPos, spaceDistance)))
         {

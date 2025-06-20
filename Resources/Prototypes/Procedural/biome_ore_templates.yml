@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
-# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Weide <65Lyacs@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Zadeon <loldude65@gmail.com>
-# SPDX-FileCopyrightText: 65 lanse65 <cloudability.ez@gmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Jeff <velcroboy333@hotmail.com>
+# SPDX-FileCopyrightText: 2023 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 Weide <64257676+Lyacs@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Zadeon <loldude9000@gmail.com>
+# SPDX-FileCopyrightText: 2024 lanse12 <cloudability.ez@gmail.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Low value
 - type: biomeMarkerLayer
   id: OreIron
@@ -21,10 +21,10 @@
     WallRockChromite: WallRockChromiteTin
     WallRockSand: WallRockSandTin
     WallRockSnow: WallRockSnowTin
-  maxCount: 65
-  minGroupSize: 65
-  maxGroupSize: 65
-  radius: 65
+  maxCount: 30
+  minGroupSize: 8
+  maxGroupSize: 20
+  radius: 4
 
 - type: biomeMarkerLayer
   id: OreQuartz
@@ -34,10 +34,10 @@
     WallRockBasalt: WallRockBasaltQuartz
     WallRockChromite: WallRockChromiteQuartz
     WallRockSnow: WallRockSnowQuartz
-  maxCount: 65
-  minGroupSize: 65
-  maxGroupSize: 65
-  radius: 65
+  maxCount: 30
+  minGroupSize: 8
+  maxGroupSize: 20
+  radius: 4
 
 - type: biomeMarkerLayer
   id: OreCoal
@@ -48,10 +48,10 @@
     WallRockChromite: WallRockChromiteCoal
     WallRockSand: WallRockSandCoal
     WallRockSnow: WallRockSnowCoal
-  maxCount: 65
-  minGroupSize: 65
-  maxGroupSize: 65
-  radius: 65
+  maxCount: 30
+  minGroupSize: 8
+  maxGroupSize: 20
+  radius: 4
 
 - type: biomeMarkerLayer
   id: OreSalt
@@ -62,10 +62,10 @@
     WallRockChromite: WallRockChromiteSalt
     WallRockSand: WallRockSandSalt
     WallRockSnow: WallRockSnowSalt
-  maxCount: 65
-  minGroupSize: 65
-  maxGroupSize: 65
-  radius: 65
+  maxCount: 30
+  minGroupSize: 8
+  maxGroupSize: 12
+  radius: 4
 
 # Medium value
 # Gold
@@ -78,10 +78,10 @@
     WallRockChromite: WallRockChromiteGold
     WallRockSand: WallRockSandGold
     WallRockSnow: WallRockSnowGold
-  maxCount: 65
-  minGroupSize: 65
-  maxGroupSize: 65
-  radius: 65
+  maxCount: 30
+  minGroupSize: 5
+  maxGroupSize: 10
+  radius: 4
 
 # Silver
 - type: biomeMarkerLayer
@@ -93,10 +93,10 @@
     WallRockChromite: WallRockChromiteSilver
     WallRockSand: WallRockSandSilver
     WallRockSnow: WallRockSnowSilver
-  maxCount: 65
-  minGroupSize: 65
-  maxGroupSize: 65
-  radius: 65
+  maxCount: 30
+  minGroupSize: 5
+  maxGroupSize: 10
+  radius: 4
 
 # High value
 # Plasma
@@ -109,10 +109,10 @@
     WallRockChromite: WallRockChromitePlasma
     WallRockSand: WallRockSandPlasma
     WallRockSnow: WallRockSnowPlasma
-  maxCount: 65
-  minGroupSize: 65
-  maxGroupSize: 65
-  radius: 65
+  maxCount: 12
+  minGroupSize: 5
+  maxGroupSize: 10
+  radius: 4
 
 # Uranium
 - type: biomeMarkerLayer
@@ -124,10 +124,10 @@
     WallRockChromite: WallRockChromiteUranium
     WallRockSand: WallRockSandUranium
     WallRockSnow: WallRockSnowUranium
-  maxCount: 65
-  minGroupSize: 65
-  maxGroupSize: 65
-  radius: 65
+  maxCount: 12
+  minGroupSize: 5
+  maxGroupSize: 10
+  radius: 4
 
 - type: biomeMarkerLayer
   id: OreDiamond
@@ -138,10 +138,10 @@
     WallRockChromite: WallRockChromiteDiamond
     WallRockSand: WallRockSandDiamond
     WallRockSnow: WallRockSnowDiamond
-  maxCount: 65
-  minGroupSize: 65
-  maxGroupSize: 65
-  radius: 65
+  maxCount: 6
+  minGroupSize: 1
+  maxGroupSize: 2
+  radius: 4
 
 # Artifact Fragment
 - type: biomeMarkerLayer
@@ -153,7 +153,7 @@
     WallRockChromite: WallRockChromiteArtifactFragment
     WallRockSand: WallRockSandArtifactFragment
     WallRockSnow: WallRockSnowArtifactFragment
-  maxCount: 65
-  minGroupSize: 65
-  maxGroupSize: 65
-  radius: 65
+  maxCount: 6
+  minGroupSize: 1
+  maxGroupSize: 2
+  radius: 4

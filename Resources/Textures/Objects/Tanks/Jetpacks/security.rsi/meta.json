@@ -1,57 +1,57 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65a65e65d65eec65a65b65a65d65a65f65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/1592a112e3d33eec4a0704b518a138d5a976f455",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "icon",
-      "directions": 65
+      "directions": 1
     },
     {
       "name": "icon-on",
-      "directions": 65,
+      "directions": 1,
       "delays": [
         [
-          65.65,
-          65.65
+          0.2,
+          0.2
         ]
       ]
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-BACKPACK",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "on-equipped-BACKPACK",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65
+          0.2,
+          0.2
         ]
       ]
     }

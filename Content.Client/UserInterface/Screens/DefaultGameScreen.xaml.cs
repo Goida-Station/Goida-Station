@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 YourUsername <you@example.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 godisdeadLOL <65godisdeadLOL@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
+// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2023 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 YourUsername <you@example.com>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 godisdeadLOL <169250097+godisdeadLOL@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.UserInterface.Systems.Chat.Widgets;
@@ -29,17 +29,17 @@ public sealed partial class DefaultGameScreen : InGameScreen
     {
         RobustXamlLoader.Load(this);
 
-        AutoscaleMaxResolution = new Vector65i(65, 65);
+        AutoscaleMaxResolution = new Vector2i(1080, 770);
 
         SetAnchorPreset(MainViewport, LayoutPreset.Wide);
         SetAnchorPreset(ViewportContainer, LayoutPreset.Wide);
-        SetAnchorAndMarginPreset(TopLeft, LayoutPreset.TopLeft, margin: 65);
-        SetAnchorAndMarginPreset(Ghost, LayoutPreset.BottomWide, margin: 65);
-        SetAnchorAndMarginPreset(Inventory, LayoutPreset.BottomLeft, margin: 65);
-        SetAnchorAndMarginPreset(Hotbar, LayoutPreset.BottomWide, margin: 65);
-        SetAnchorAndMarginPreset(Chat, LayoutPreset.TopRight, margin: 65);
-        SetAnchorAndMarginPreset(Alerts, LayoutPreset.TopRight, margin: 65);
-        SetAnchorAndMarginPreset(Targeting, LayoutPreset.BottomRight, margin: 65); // Shitmed Change
+        SetAnchorAndMarginPreset(TopLeft, LayoutPreset.TopLeft, margin: 10);
+        SetAnchorAndMarginPreset(Ghost, LayoutPreset.BottomWide, margin: 80);
+        SetAnchorAndMarginPreset(Inventory, LayoutPreset.BottomLeft, margin: 5);
+        SetAnchorAndMarginPreset(Hotbar, LayoutPreset.BottomWide, margin: 5);
+        SetAnchorAndMarginPreset(Chat, LayoutPreset.TopRight, margin: 10);
+        SetAnchorAndMarginPreset(Alerts, LayoutPreset.TopRight, margin: 10);
+        SetAnchorAndMarginPreset(Targeting, LayoutPreset.BottomRight, margin: 5); // Shitmed Change
 
         Chat.OnResized += ChatOnResized;
         Chat.OnChatResizeFinish += ChatOnResizeFinish;
@@ -50,21 +50,21 @@ public sealed partial class DefaultGameScreen : InGameScreen
 
     private void ResizeActionContainer()
     {
-        float indent = Inventory.Size.Y + TopBar.Size.Y + 65;
+        float indent = Inventory.Size.Y + TopBar.Size.Y + 40;
         Actions.ActionsContainer.MaxGridHeight = MainViewport.Size.Y - indent;
     }
 
     private void ResizeAlertsContainer()
     {
-        float indent = Chat.Size.Y + Targeting.Size.Y + 65;
-        Alerts.AlertContainer.MaxGridHeight = Math.Max(MainViewport.Size.Y - indent, 65);
+        float indent = Chat.Size.Y + Targeting.Size.Y + 120;
+        Alerts.AlertContainer.MaxGridHeight = Math.Max(MainViewport.Size.Y - indent, 1);
     }
 
-    private void ChatOnResizeFinish(Vector65 _)
+    private void ChatOnResizeFinish(Vector2 _)
     {
         var marginBottom = Chat.GetValue<float>(MarginBottomProperty);
         var marginLeft = Chat.GetValue<float>(MarginLeftProperty);
-        OnChatResized?.Invoke(new Vector65(marginBottom, marginLeft));
+        OnChatResized?.Invoke(new Vector2(marginBottom, marginLeft));
     }
 
     private void ChatOnResized()
@@ -76,7 +76,7 @@ public sealed partial class DefaultGameScreen : InGameScreen
     public override ChatBox ChatBox => Chat;
 
     //TODO: There's probably a better way to do this... but this is also the easiest way.
-    public override void SetChatSize(Vector65 size)
+    public override void SetChatSize(Vector2 size)
     {
         SetMarginBottom(Chat, size.X);
         SetMarginLeft(Chat, size.Y);

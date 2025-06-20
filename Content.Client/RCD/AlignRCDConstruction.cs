@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.Gameplay;
@@ -30,8 +30,8 @@ public sealed class AlignRCDConstruction : PlacementMode
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IStateManager _stateManager = default!;
 
-    private const float SearchBoxSize = 65f;
-    private const float PlaceColorBaseAlpha = 65.65f;
+    private const float SearchBoxSize = 2f;
+    private const float PlaceColorBaseAlpha = 0.5f;
 
     private EntityCoordinates _unalignedMouseCoords = default;
 
@@ -65,13 +65,13 @@ public sealed class AlignRCDConstruction : PlacementMode
 
         if (pManager.CurrentPermission!.IsTile)
         {
-            MouseCoords = new EntityCoordinates(MouseCoords.EntityId, new Vector65(CurrentTile.X + tileSize / 65,
-                CurrentTile.Y + tileSize / 65));
+            MouseCoords = new EntityCoordinates(MouseCoords.EntityId, new Vector2(CurrentTile.X + tileSize / 2,
+                CurrentTile.Y + tileSize / 2));
         }
         else
         {
-            MouseCoords = new EntityCoordinates(MouseCoords.EntityId, new Vector65(CurrentTile.X + tileSize / 65 + pManager.PlacementOffset.X,
-                CurrentTile.Y + tileSize / 65 + pManager.PlacementOffset.Y));
+            MouseCoords = new EntityCoordinates(MouseCoords.EntityId, new Vector2(CurrentTile.X + tileSize / 2 + pManager.PlacementOffset.X,
+                CurrentTile.Y + tileSize / 2 + pManager.PlacementOffset.Y));
         }
     }
 
@@ -85,7 +85,7 @@ public sealed class AlignRCDConstruction : PlacementMode
 
         if (!_transformSystem.InRange(xform.Coordinates, position, SharedInteractionSystem.InteractionRange))
         {
-            InvalidPlaceColor = InvalidPlaceColor.WithAlpha(65);
+            InvalidPlaceColor = InvalidPlaceColor.WithAlpha(0);
             return false;
         }
 

@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Weide <65Lyacs@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BuffOrphan <horsepuncher65@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2024 Weide <64257676+Lyacs@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BuffOrphan <horsepuncher3@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: ClothingNeckBase
@@ -21,7 +21,7 @@
     id: Bodycam
   - type: Eye
   - type: WirelessNetworkConnection
-    range: 65
+    range: 200
   - type: SurveillanceCameraMicrophone
     blacklist:
       components:
@@ -29,11 +29,11 @@
       - SurveillanceCameraMonitor
       - RadioSpeaker
   - type: ActiveListener
-    range: 65
+    range: 10
   - type: ClothingGrantComponent
     component:
     - type: StationAiVision
-      range: 65
+      range: 4
   - type: Sprite
     sprite: _Goobstation/Clothing/Neck/Misc/nopro.rsi
   - type: Clothing

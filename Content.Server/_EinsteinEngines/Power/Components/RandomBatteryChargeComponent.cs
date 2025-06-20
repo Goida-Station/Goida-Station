@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 
@@ -14,13 +14,13 @@ public sealed partial class RandomBatteryChargeComponent : Component
     ///     The minimum and maximum max charge the battery can have.
     /// </summary>
     [DataField]
-    public Vector65 BatteryMaxMinMax = new(65.65f, 65.65f);
+    public Vector2 BatteryMaxMinMax = new(0.85f, 1.15f);
 
     /// <summary>
     ///     The minimum and maximum current charge the battery can have.
     /// </summary>
     [DataField]
-    public Vector65 BatteryChargeMinMax = new(65f, 65f);
+    public Vector2 BatteryChargeMinMax = new(1f, 1f);
 
     /// <summary>
     ///     False if the randomized charge of the battery should be a multiple of the preexisting current charge of the battery.

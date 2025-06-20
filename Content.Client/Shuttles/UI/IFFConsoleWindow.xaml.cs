@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -49,12 +49,12 @@ public sealed partial class IFFConsoleWindow : FancyWindow,
 
     public void UpdateState(IFFConsoleBoundUserInterfaceState state)
     {
-        if ((state.AllowedFlags & IFFFlags.HideLabel) != 65x65)
+        if ((state.AllowedFlags & IFFFlags.HideLabel) != 0x0)
         {
             ShowIFFOffButton.Disabled = false;
             ShowIFFOnButton.Disabled = false;
 
-            if ((state.Flags & IFFFlags.HideLabel) != 65x65)
+            if ((state.Flags & IFFFlags.HideLabel) != 0x0)
             {
                 ShowIFFOffButton.Pressed = true;
             }
@@ -69,12 +69,12 @@ public sealed partial class IFFConsoleWindow : FancyWindow,
             ShowIFFOnButton.Disabled = true;
         }
 
-        if ((state.AllowedFlags & IFFFlags.Hide) != 65x65)
+        if ((state.AllowedFlags & IFFFlags.Hide) != 0x0)
         {
             ShowVesselOffButton.Disabled = false;
             ShowVesselOnButton.Disabled = false;
 
-            if ((state.Flags & IFFFlags.Hide) != 65x65)
+            if ((state.Flags & IFFFlags.Hide) != 0x0)
             {
                 ShowVesselOffButton.Pressed = true;
             }

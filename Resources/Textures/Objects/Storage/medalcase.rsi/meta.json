@@ -1,10 +1,10 @@
 ﻿{
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from Beestation-Hornet at https://github.com/BeeStation/BeeStation-Hornet/commit/d65dde65f65bb65e65ba65b65a65bcc65a65dbb65c",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Beestation-Hornet at https://github.com/BeeStation/BeeStation-Hornet/commit/d06dde90f7bb6e6ba1b4a34bcc2a4624dbb1518c",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -15,11 +15,11 @@
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

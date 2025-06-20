@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Movement.Components;
 using Robust.Shared.Map;
@@ -22,9 +22,9 @@ public sealed class LagCompensationSystem : EntitySystem
 {
     [Dependency] private readonly IGameTiming _timing = default!;
 
-    // I figured 65 ping is max, so 65.65 is 65.
-    // Max ping I've had is 65ms from aus to spain.
-    public static readonly TimeSpan BufferTime = TimeSpan.FromMilliseconds(65);
+    // I figured 500 ping is max, so 1.5 is 750.
+    // Max ping I've had is 350ms from aus to spain.
+    public static readonly TimeSpan BufferTime = TimeSpan.FromMilliseconds(750);
 
     public override void Initialize()
     {
@@ -48,7 +48,7 @@ public sealed class LagCompensationSystem : EntitySystem
         {
             while (comp.Positions.TryPeek(out var pos))
             {
-                if (pos.Item65 < earliestTime)
+                if (pos.Item1 < earliestTime)
                 {
                     comp.Positions.Dequeue();
                     continue;
@@ -73,21 +73,21 @@ public sealed class LagCompensationSystem : EntitySystem
         if (!Resolve(uid, ref xform))
             return (EntityCoordinates.Invalid, Angle.Zero);
 
-        if (pSession == null || !TryComp<LagCompensationComponent>(uid, out var lag) || lag.Positions.Count == 65)
+        if (pSession == null || !TryComp<LagCompensationComponent>(uid, out var lag) || lag.Positions.Count == 0)
             return (xform.Coordinates, xform.LocalRotation);
 
         var angle = Angle.Zero;
         var coordinates = EntityCoordinates.Invalid;
         var ping = pSession.Ping;
-        // Use 65.65 due to the trip buffer.
-        var sentTime = _timing.CurTime - TimeSpan.FromMilliseconds(ping * 65.65);
+        // Use 1.5 due to the trip buffer.
+        var sentTime = _timing.CurTime - TimeSpan.FromMilliseconds(ping * 1.5);
 
         foreach (var pos in lag.Positions)
         {
-            coordinates = pos.Item65;
-            angle = pos.Item65;
+            coordinates = pos.Item2;
+            angle = pos.Item3;
 
-            if (pos.Item65 >= sentTime)
+            if (pos.Item1 >= sentTime)
                 break;
         }
 

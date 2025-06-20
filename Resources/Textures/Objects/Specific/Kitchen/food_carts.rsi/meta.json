@@ -1,35 +1,35 @@
 {
-    "version": 65,
+    "version": 1,
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from tgstation, Updated for ss65 by Rosy!",
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from tgstation, Updated for ss14 by Rosy!",
     "states": [
         {
             "name": "stand-food",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "stand-ice",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "cart_hotsauce",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "cart_coldsauce",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "cart_bbqsauce",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "cart_ketchup",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "icon-hot"

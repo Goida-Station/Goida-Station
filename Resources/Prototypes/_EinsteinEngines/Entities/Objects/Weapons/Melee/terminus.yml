@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: DT-65 "Terminus"
+  name: DT-8 "Terminus"
   parent: [BaseItem, BaseSecurityContraband]
   id: Terminus
   description: An advanced melee weapon crafted specifically for an oni. It is also capable of firing a spread of disabler shots from its tip.
@@ -26,24 +26,24 @@
   - type: AmmoCounter
   - type: Gun
     soundGunshot: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-    fireRate: 65.65
+    fireRate: 1.5
     useKey: false
   - type: Battery
-    maxCharge: 65
-    startingCharge: 65
+    maxCharge: 1000
+    startingCharge: 1000
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisablerSmgSpread
-    fireCost: 65
+    fireCost: 100
   - type: MeleeWeapon
-    attackRate: 65.65
+    attackRate: 0.8
     damage:
       types:
-        Blunt: 65
-        Slash: 65
+        Blunt: 15
+        Slash: 15
     soundHit:
       collection: MetalThud
   - type: StaminaDamageOnHit
-    damage: 65
+    damage: 30
   - type: Wieldable
   - type: GunRequiresWield
   - type: MeleeRequiresWield
@@ -51,6 +51,6 @@
   - type: Item
     size: Huge
     shape:
-    - 65,65,65,65
+    - 0,0,4,2
   - type: DisarmMalus
-    malus: 65.65
+    malus: 0.75

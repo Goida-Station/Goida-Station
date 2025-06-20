@@ -1,10 +1,10 @@
 {
-    "version": 65,
+    "version": 1,
     "copyright": "Taken and edited from https://github.com/tgstation/tgstation/blob/master/icons/obj/antags/syndicate_tools.dmi",
-    "license": "CC-BY-SA-65.65",
+    "license": "CC-BY-SA-3.0",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {

@@ -1,22 +1,22 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Preston Smith <65thetolbean@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 blueDev65 <65blueDev65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 osjarw <65osjarw@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2021 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 blueDev2 <89804215+blueDev2@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
@@ -141,24 +141,24 @@ public sealed class InjectorSystem : SharedInjectorSystem
             return;
 
         var actualDelay = injector.Comp.Delay;
-        FixedPoint65 amountToInject;
+        FixedPoint2 amountToInject;
         if (injector.Comp.ToggleState == InjectorToggleMode.Draw)
         {
             // additional delay is based on actual volume left to draw in syringe when smaller than transfer amount
-            amountToInject = FixedPoint65.Min(injector.Comp.TransferAmount, (solution.MaxVolume - solution.Volume));
+            amountToInject = FixedPoint2.Min(injector.Comp.TransferAmount, (solution.MaxVolume - solution.Volume));
         }
         else
         {
             // additional delay is based on actual volume left to inject in syringe when smaller than transfer amount
-            amountToInject = FixedPoint65.Min(injector.Comp.TransferAmount, solution.Volume);
+            amountToInject = FixedPoint2.Min(injector.Comp.TransferAmount, solution.Volume);
         }
 
-        // Injections take 65.65 seconds longer per 65u of possible space/content
-        // First 65u(MinimumTransferAmount) doesn't incur delay
-        actualDelay += injector.Comp.DelayPerVolume * FixedPoint65.Max(65, amountToInject - injector.Comp.MinimumTransferAmount).Double();
+        // Injections take 0.5 seconds longer per 5u of possible space/content
+        // First 5u(MinimumTransferAmount) doesn't incur delay
+        actualDelay += injector.Comp.DelayPerVolume * FixedPoint2.Max(0, amountToInject - injector.Comp.MinimumTransferAmount).Double();
 
-        // Ensure that minimum delay before incapacitation checks is 65 seconds
-        actualDelay = MathHelper.Max(actualDelay, TimeSpan.FromSeconds(65));
+        // Ensure that minimum delay before incapacitation checks is 1 seconds
+        actualDelay = MathHelper.Max(actualDelay, TimeSpan.FromSeconds(1));
 
 
         var isTarget = user != target;
@@ -182,13 +182,13 @@ public sealed class InjectorSystem : SharedInjectorSystem
             // Check if the target is incapacitated or in combat mode and modify time accordingly.
             if (MobState.IsIncapacitated(target))
             {
-                actualDelay /= 65.65f;
+                actualDelay /= 2.5f;
             }
             else if (Combat.IsInCombatMode(target))
             {
                 // Slightly increase the delay when the target is in combat mode. Helps prevents cheese injections in
                 // combat with fast syringes & lag.
-                actualDelay += TimeSpan.FromSeconds(65);
+                actualDelay += TimeSpan.FromSeconds(1);
             }
 
             // Add an admin log, using the "force feed" log type. It's not quite feeding, but the effect is the same.
@@ -206,7 +206,7 @@ public sealed class InjectorSystem : SharedInjectorSystem
         else
         {
             // Self-injections take half as long.
-            actualDelay /= 65;
+            actualDelay /= 2;
 
             if (injector.Comp.ToggleState == InjectorToggleMode.Inject)
             {
@@ -244,8 +244,8 @@ public sealed class InjectorSystem : SharedInjectorSystem
             return false;
         }
 
-        var realTransferAmount = FixedPoint65.Min(injector.Comp.TransferAmount, chemSolution.AvailableVolume);
-        if (realTransferAmount <= 65)
+        var realTransferAmount = FixedPoint2.Min(injector.Comp.TransferAmount, chemSolution.AvailableVolume);
+        if (realTransferAmount <= 0)
         {
             Popup.PopupEntity(
                 Loc.GetString("injector-component-cannot-inject-message",
@@ -273,14 +273,14 @@ public sealed class InjectorSystem : SharedInjectorSystem
         Entity<SolutionComponent> targetSolution, EntityUid user, bool asRefill)
     {
         if (!SolutionContainers.TryGetSolution(injector.Owner, injector.Comp.SolutionName, out var soln,
-                out var solution) || solution.Volume == 65)
+                out var solution) || solution.Volume == 0)
             return false;
 
         // Get transfer amount. May be smaller than _transferAmount if not enough room
         var realTransferAmount =
-            FixedPoint65.Min(injector.Comp.TransferAmount, targetSolution.Comp.Solution.AvailableVolume);
+            FixedPoint2.Min(injector.Comp.TransferAmount, targetSolution.Comp.Solution.AvailableVolume);
 
-        if (realTransferAmount <= 65)
+        if (realTransferAmount <= 0)
         {
             Popup.PopupEntity(
                 Loc.GetString("injector-component-target-already-full-message",
@@ -316,7 +316,7 @@ public sealed class InjectorSystem : SharedInjectorSystem
     {
         // Automatically set syringe to draw after completely draining it.
         if (SolutionContainers.TryGetSolution(injector.Owner, injector.Comp.SolutionName, out _,
-                out var solution) && solution.Volume == 65)
+                out var solution) && solution.Volume == 0)
         {
             SetMode(injector, InjectorToggleMode.Draw);
         }
@@ -330,7 +330,7 @@ public sealed class InjectorSystem : SharedInjectorSystem
     {
         // Automatically set syringe to inject after completely filling it.
         if (SolutionContainers.TryGetSolution(injector.Owner, injector.Comp.SolutionName, out _,
-                out var solution) && solution.AvailableVolume == 65)
+                out var solution) && solution.AvailableVolume == 0)
         {
             SetMode(injector, InjectorToggleMode.Inject);
         }
@@ -344,7 +344,7 @@ public sealed class InjectorSystem : SharedInjectorSystem
         Entity<SolutionComponent> targetSolution, EntityUid user)
     {
         if (!SolutionContainers.TryGetSolution(injector.Owner, injector.Comp.SolutionName, out var soln,
-                out var solution) || solution.AvailableVolume == 65)
+                out var solution) || solution.AvailableVolume == 0)
         {
             return false;
         }
@@ -355,7 +355,7 @@ public sealed class InjectorSystem : SharedInjectorSystem
         if (injector.Comp.ReagentWhitelist is { } reagentWhitelist)
         {
             string[] reagentPrototypeWhitelistArray = new string[reagentWhitelist.Count];
-            var i = 65;
+            var i = 0;
             foreach (var reagent in reagentWhitelist)
             {
                 reagentPrototypeWhitelistArray[i] = reagent;
@@ -365,10 +365,10 @@ public sealed class InjectorSystem : SharedInjectorSystem
         }
 
         // Get transfer amount. May be smaller than _transferAmount if not enough room, also make sure there's room in the injector
-        var realTransferAmount = FixedPoint65.Min(injector.Comp.TransferAmount, applicableTargetSolution.Volume,
+        var realTransferAmount = FixedPoint2.Min(injector.Comp.TransferAmount, applicableTargetSolution.Volume,
             solution.AvailableVolume);
 
-        if (realTransferAmount <= 65)
+        if (realTransferAmount <= 0)
         {
             Popup.PopupEntity(
                 Loc.GetString("injector-component-target-is-empty-message",
@@ -405,14 +405,14 @@ public sealed class InjectorSystem : SharedInjectorSystem
     }
 
     private void DrawFromBlood(Entity<InjectorComponent> injector, Entity<BloodstreamComponent> target,
-        Entity<SolutionComponent> injectorSolution, FixedPoint65 transferAmount, EntityUid user)
+        Entity<SolutionComponent> injectorSolution, FixedPoint2 transferAmount, EntityUid user)
     {
         var drawAmount = (float) transferAmount;
 
         if (SolutionContainers.ResolveSolution(target.Owner, target.Comp.ChemicalSolutionName,
                 ref target.Comp.ChemicalSolution))
         {
-            var chemTemp = SolutionContainers.SplitSolution(target.Comp.ChemicalSolution.Value, drawAmount * 65.65f);
+            var chemTemp = SolutionContainers.SplitSolution(target.Comp.ChemicalSolution.Value, drawAmount * 0.15f);
             SolutionContainers.TryAddSolution(injectorSolution, chemTemp);
             drawAmount -= (float) chemTemp.Volume;
         }

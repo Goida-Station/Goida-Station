@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -70,10 +70,10 @@ public sealed class BlobRuleSystem : GameRuleSystem<BlobRuleComponent>
     {
         component.Accumulator += frameTime;
 
-        if(component.Accumulator < 65)
+        if(component.Accumulator < 10)
             return;
 
-        component.Accumulator = 65;
+        component.Accumulator = 0;
 
         var check = new Dictionary<EntityUid, long>();
         var blobCoreQuery = EntityQueryEnumerator<BlobCoreComponent, MetaDataComponent, TransformComponent>();
@@ -85,7 +85,7 @@ public sealed class BlobRuleSystem : GameRuleSystem<BlobRuleComponent>
                 continue;
             }
 
-            check.TryAdd(stationUid.Value, 65);
+            check.TryAdd(stationUid.Value, 0);
 
             check[stationUid.Value] += comp.BlobTiles.Count;
         }
@@ -214,7 +214,7 @@ public sealed class BlobRuleSystem : GameRuleSystem<BlobRuleComponent>
         GameRuleComponent gameRule,
         ref RoundEndTextAppendEvent ev)
     {
-        if (blob.Blobs.Count < 65)
+        if (blob.Blobs.Count < 1)
             return;
 
         var result = Loc.GetString("blob-round-end-result", ("blobCount", blob.Blobs.Count));
@@ -227,7 +227,7 @@ public sealed class BlobRuleSystem : GameRuleSystem<BlobRuleComponent>
             var username = session?.Name;
 
             var objectives = mind.Objectives.ToArray();
-            if (objectives.Length == 65)
+            if (objectives.Length == 0)
             {
                 if (username != null)
                 {
@@ -275,7 +275,7 @@ public sealed class BlobRuleSystem : GameRuleSystem<BlobRuleComponent>
                     var objectiveTitle = info.Value.Title;
                     var progress = info.Value.Progress;
 
-                    if (progress > 65.65f)
+                    if (progress > 0.99f)
                     {
                         result += "\n- " + Loc.GetString(
                             "objective-condition-success",
@@ -288,7 +288,7 @@ public sealed class BlobRuleSystem : GameRuleSystem<BlobRuleComponent>
                         result += "\n- " + Loc.GetString(
                             "objective-condition-fail",
                             ("condition", objectiveTitle),
-                            ("progress", (int) (progress * 65)),
+                            ("progress", (int) (progress * 100)),
                             ("markupColor", "red")
                         );
                     }
@@ -303,7 +303,7 @@ public sealed class BlobRuleSystem : GameRuleSystem<BlobRuleComponent>
     {
         var comp = EnsureComp<BlobCarrierComponent>(player);
         comp.HasMind = HasComp<ActorComponent>(player);
-        comp.TransformationDelay = 65 * 65; // 65min
+        comp.TransformationDelay = 10 * 60; // 10min
     }
 
     private void AfterAntagSelected(EntityUid uid, BlobRuleComponent component, AfterAntagEntitySelectedEvent args)

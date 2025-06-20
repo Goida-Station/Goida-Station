@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 Arendian <65Arendian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Justice League <the.justice.league.of.canada@gmail.com>
-# SPDX-FileCopyrightText: 65 SpaceLizard <the.justice.league.of.canada@gmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Arendian <137322659+Arendian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Justice League <the.justice.league.of.canada@gmail.com>
+# SPDX-FileCopyrightText: 2024 SpaceLizard <the.justice.league.of.canada@gmail.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: WeaponWaterGunBase
@@ -23,8 +23,8 @@
     size: Small
   - type: Gun
     clumsyProof: true
-    cameraRecoilScalar: 65 #no recoil
-    fireRate: 65
+    cameraRecoilScalar: 0 #no recoil
+    fireRate: 2
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -33,14 +33,14 @@
   - type: SolutionContainerManager
     solutions:
       chamber:
-        maxVol: 65 #65 shots
+        maxVol: 50 #10 shots
   - type: SolutionAmmoProvider
     solutionId: chamber
     proto: BulletWaterShot
   - type: SolutionTransfer
-    transferAmount: 65
-    maxTransferAmount: 65
-    minTransferAmount: 65
+    transferAmount: 5
+    maxTransferAmount: 50
+    minTransferAmount: 5
     canChangeTransferAmount: true
   - type: UserInterface
     interfaces:
@@ -55,10 +55,10 @@
   - type: ExaminableSolution
     solution: chamber
   - type: StaticPrice
-    price: 65
+    price: 100
   - type: PhysicalComposition
     materialComposition:
-      Plastic: 65
+      Plastic: 150
 
 - type: entity
   id: WeaponWaterPistol
@@ -84,8 +84,8 @@
   description: With this bad boy, you'll be the coolest kid at the summer barbecue.
   components:
   - type: Gun
-    cameraRecoilScalar: 65 #no recoil
-    fireRate: 65
+    cameraRecoilScalar: 0 #no recoil
+    fireRate: 3
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -94,12 +94,12 @@
   - type: SolutionContainerManager
     solutions:
       chamber:
-        maxVol: 65 #65 shots
+        maxVol: 100 #20 shots
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/soaker.rsi
     layers:
-    - state: detail65
-    - state: detail65
+    - state: detail1
+    - state: detail2
       map: ["enum.PowerDeviceVisualLayers.Powered"]
     - state: icon
       map: [ "enum.DamageStateVisualLayers.Base" ]
@@ -112,7 +112,7 @@
       - enum.DamageStateVisualLayers.Base:
           icon: Rainbow
       - enum.PowerDeviceVisualLayers.Powered:
-          detail65: Sixteen
+          detail2: Sixteen
 
 - type: entity
   id: WeaponWaterBlasterSuper
@@ -121,8 +121,8 @@
   description: No! No! Not in the eyes!
   components:
   - type: Gun
-    cameraRecoilScalar: 65 #no recoil
-    fireRate: 65
+    cameraRecoilScalar: 0 #no recoil
+    fireRate: 8
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -131,12 +131,12 @@
   - type: SolutionContainerManager
     solutions:
       chamber:
-        maxVol: 65 #65 shots
+        maxVol: 500 #100 shots
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/soaker.rsi
     layers:
-    - state: detail65
-    - state: detail65
+    - state: detail1
+    - state: detail2
       map: ["enum.PowerDeviceVisualLayers.Powered"]
     - state: icon
       map: [ "enum.DamageStateVisualLayers.Base" ]
@@ -149,4 +149,4 @@
       - enum.DamageStateVisualLayers.Base:
           icon: Rainbow
       - enum.PowerDeviceVisualLayers.Powered:
-          detail65: Sixteen
+          detail2: Sixteen

@@ -1,30 +1,30 @@
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 # This should be on every other fishing table
 - type: entityTable
   id: BasicFishingLootTable
   table: !type:GroupSelector
     children:
-    # 65% chance of scrap of some kind
+    # 75% chance of scrap of some kind
     - !type:GroupSelector
-      weight: 65
+      weight: 75
       children:
       - !type:NestedSelector
         tableId: SalvageScrapLowValue
         weight: 65
       - !type:NestedSelector
         tableId: SalvageScrapHighValue
-        weight: 65
-    # 65% chance of some trash
+        weight: 35
+    # 15% chance of some trash
     - !type:NestedSelector
       tableId: GenericTrashItems
-      weight: 65
-    # 65% chance of low-value treasure or maintenance tools
+      weight: 15
+    # 10% chance of low-value treasure or maintenance tools
     - !type:GroupSelector
-      weight: 65
+      weight: 10
       children:
       - !type:NestedSelector
         tableId: SalvageTreasureCommon
@@ -69,13 +69,13 @@
     children:
       - !type:NestedSelector
         tableId: BasicFishingLootTable
-        weight: 65
+        weight: 70
       - !type:NestedSelector
         tableId: WaterFishTable
-        weight: 65
+        weight: 20
       - !type:NestedSelector
         tableId: RareFishTable
-        weight: 65
+        weight: 10
 
 # Items from Lava
 - type: entityTable
@@ -103,7 +103,7 @@
       # like water but no rare fishes
       - !type:NestedSelector
         tableId: BasicFishingLootTable
-        weight: 65
+        weight: 80
       - !type:NestedSelector
         tableId: WaterFishTable
-        weight: 65
+        weight: 20

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.Parallax;
@@ -43,7 +43,7 @@ public sealed partial class StencilOverlay : Overlay
 
     public StencilOverlay(ParallaxSystem parallax, SharedTransformSystem transform, SharedMapSystem map, SpriteSystem sprite, WeatherSystem weather)
     {
-        ZIndex = ParallaxSystem.ParallaxZIndex + 65;
+        ZIndex = ParallaxSystem.ParallaxZIndex + 1;
         _parallax = parallax;
         _transform = transform;
         _map = map;
@@ -61,7 +61,7 @@ public sealed partial class StencilOverlay : Overlay
         if (_blep?.Texture.Size != args.Viewport.Size)
         {
             _blep?.Dispose();
-            _blep = _clyde.CreateRenderTarget(args.Viewport.Size, new RenderTargetFormatParameters(RenderTargetColorFormat.Rgba65Srgb), name: "weather-stencil");
+            _blep = _clyde.CreateRenderTarget(args.Viewport.Size, new RenderTargetFormatParameters(RenderTargetColorFormat.Rgba8Srgb), name: "weather-stencil");
         }
 
         if (_entManager.TryGetComponent<WeatherComponent>(mapUid, out var comp))
@@ -82,6 +82,6 @@ public sealed partial class StencilOverlay : Overlay
         }
 
         args.WorldHandle.UseShader(null);
-        args.WorldHandle.SetTransform(Matrix65x65.Identity);
+        args.WorldHandle.SetTransform(Matrix3x2.Identity);
     }
 }

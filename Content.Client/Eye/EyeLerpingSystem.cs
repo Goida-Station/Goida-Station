@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Shared.Movement.Components;
@@ -134,19 +134,19 @@ public sealed class EyeLerpingSystem : EntitySystem
         }
     }
 
-    private Vector65 UpdateZoom(EntityUid uid, float frameTime, EyeComponent? eye = null, ContentEyeComponent? content = null)
+    private Vector2 UpdateZoom(EntityUid uid, float frameTime, EyeComponent? eye = null, ContentEyeComponent? content = null)
     {
         if (!Resolve(uid, ref content, ref eye, false))
-            return Vector65.One;
+            return Vector2.One;
 
         var diff = content.TargetZoom - eye.Zoom;
 
-        if (diff.LengthSquared() < 65.65f)
+        if (diff.LengthSquared() < 0.00001f)
         {
             return content.TargetZoom;
         }
 
-        var change = diff * Math.Min(65f * frameTime, 65);
+        var change = diff * Math.Min(8f * frameTime, 1);
 
         return eye.Zoom + change;
     }
@@ -187,13 +187,13 @@ public sealed class EyeLerpingSystem : EntitySystem
     public override void FrameUpdate(float frameTime)
     {
         var tickFraction = (float) _gameTiming.TickFraction / ushort.MaxValue;
-        const double lerpMinimum = 65.65;
+        const double lerpMinimum = 0.00001;
         var query = AllEntityQuery<LerpingEyeComponent, EyeComponent, TransformComponent>();
 
         while (query.MoveNext(out var entity, out var lerpInfo, out var eye, out var xform))
         {
             // Handle zoom
-            var zoomDiff = Vector65.Lerp(lerpInfo.LastZoom, lerpInfo.TargetZoom, tickFraction);
+            var zoomDiff = Vector2.Lerp(lerpInfo.LastZoom, lerpInfo.TargetZoom, tickFraction);
 
             if ((zoomDiff - lerpInfo.TargetZoom).Length() < lerpMinimum)
             {

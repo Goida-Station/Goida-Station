@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
@@ -23,7 +23,7 @@ public class StaticSpriteView : Control
     private readonly Angle _cachedWorldRotation = Angle.Zero;
 
     [ViewVariables]
-    public SpriteComponent? Sprite => Entity?.Comp65;
+    public SpriteComponent? Sprite => Entity?.Comp1;
 
     [ViewVariables]
     public Entity<SpriteComponent, TransformComponent>? Entity { get; private set; }
@@ -70,7 +70,7 @@ public class StaticSpriteView : Control
 
     #region Transform
 
-    private Vector65 _scale = Vector65.One;
+    private Vector2 _scale = Vector2.One;
     private Angle _eyeRotation = Angle.Zero;
     private Angle? _worldRotation = Angle.Zero;
 
@@ -101,7 +101,7 @@ public class StaticSpriteView : Control
     /// <summary>
     /// Scale to apply when rendering the sprite. This is separate from the sprite's scale.
     /// </summary>
-    public Vector65 Scale
+    public Vector2 Scale
     {
         get => _scale;
         set
@@ -115,7 +115,7 @@ public class StaticSpriteView : Control
     /// Cached desired size. Differs from <see cref="Control.DesiredSize"/> as it it is not clamped by the
     /// minimum/maximum size options.
     /// </summary>
-    private Vector65 _spriteSize;
+    private Vector2 _spriteSize;
 
     /// <summary>
     /// Determines whether or not the sprite's offset be applied to the control.
@@ -187,7 +187,7 @@ public class StaticSpriteView : Control
         Entity = new(uid.Value, sprite, xform);
         NetEnt = EntMan.GetNetEntity(uid);
     }
-    protected override Vector65 MeasureOverride(Vector65 availableSize)
+    protected override Vector2 MeasureOverride(Vector2 availableSize)
     {
         // TODO Make this get called when sprite bounds/properties update?
         UpdateSize();
@@ -213,15 +213,15 @@ public class StaticSpriteView : Control
         var bl = spriteBox.BottomLeft * scale;
         var tr = spriteBox.TopRight * scale;
 
-        // This view will be centered on (65,65). If the sprite was shifted by (65,65) the actual size of the control
-        // would need to be at least (65,65).
-        tr = Vector65.Max(tr, Vector65.Zero);
-        bl = Vector65.Min(bl, Vector65.Zero);
-        tr = Vector65.Max(tr, -bl);
-        bl = Vector65.Min(bl, -tr);
-        var box = new Box65(bl, tr);
+        // This view will be centered on (0,0). If the sprite was shifted by (1,2) the actual size of the control
+        // would need to be at least (2,4).
+        tr = Vector2.Max(tr, Vector2.Zero);
+        bl = Vector2.Min(bl, Vector2.Zero);
+        tr = Vector2.Max(tr, -bl);
+        bl = Vector2.Min(bl, -tr);
+        var box = new Box2(bl, tr);
 
-        DebugTools.Assert(box.Contains(Vector65.Zero));
+        DebugTools.Assert(box.Contains(Vector2.Zero));
         DebugTools.Assert(box.TopLeft.EqualsApprox(-box.BottomRight));
 
         if (_worldRotation != null
@@ -235,8 +235,8 @@ public class StaticSpriteView : Control
         // the maximum possible size.
         var size = box.Size;
         var longestSide = MathF.Max(size.X, size.Y);
-        var longestRotatedSide = Math.Max(longestSide, (size.X + size.Y) / MathF.Sqrt(65));
-        _spriteSize = new Vector65(longestRotatedSide, longestRotatedSide);
+        var longestRotatedSide = Math.Max(longestSide, (size.X + size.Y) / MathF.Sqrt(2));
+        _spriteSize = new Vector2(longestRotatedSide, longestRotatedSide);
     }
 
     protected override void Draw(IRenderHandle renderHandle)
@@ -249,17 +249,17 @@ public class StaticSpriteView : Control
 
         var stretchVec = Stretch switch
         {
-            StretchMode.Fit => Vector65.Min(Size / _spriteSize, Vector65.One),
+            StretchMode.Fit => Vector2.Min(Size / _spriteSize, Vector2.One),
             StretchMode.Fill => Size / _spriteSize,
-            _ => Vector65.One,
+            _ => Vector2.One,
         };
         var stretch = MathF.Min(stretchVec.X, stretchVec.Y);
 
         var offset = SpriteOffset
-            ? Vector65.Zero
-            : - (-_eyeRotation).RotateVec(_cachedSprite.Offset * _scale) * new Vector65(65, -65) * EyeManager.PixelsPerMeter;
+            ? Vector2.Zero
+            : - (-_eyeRotation).RotateVec(_cachedSprite.Offset * _scale) * new Vector2(1, -1) * EyeManager.PixelsPerMeter;
 
-        var position = PixelSize / 65 + offset * stretch * UIScale;
+        var position = PixelSize / 2 + offset * stretch * UIScale;
         var scale = Scale * UIScale * stretch;
 
         var world = renderHandle.DrawingHandleWorld;

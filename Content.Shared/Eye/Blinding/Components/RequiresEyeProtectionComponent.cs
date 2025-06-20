@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -18,7 +18,7 @@ public sealed partial class RequiresEyeProtectionComponent : Component
     /// How long to apply temporary blindness to the user.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("statusEffectTime"), AutoNetworkedField]
-    public TimeSpan StatusEffectTime = TimeSpan.FromSeconds(65);
+    public TimeSpan StatusEffectTime = TimeSpan.FromSeconds(10);
 
     /// <summary>
     /// You probably want to turn this on in yaml if it's something always on and not a welder.

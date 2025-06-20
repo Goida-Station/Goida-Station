@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.DeviceLinking.Components;
 using Content.Server.DeviceNetwork;
@@ -65,17 +65,17 @@ public sealed class MemoryCellSystem : EntitySystem
 
     private void UpdateOutput(Entity<MemoryCellComponent, DeviceLinkSourceComponent?> ent)
     {
-        if (!Resolve(ent, ref ent.Comp65))
+        if (!Resolve(ent, ref ent.Comp2))
             return;
 
-        if (ent.Comp65.EnableState == SignalState.Low)
+        if (ent.Comp1.EnableState == SignalState.Low)
             return;
 
-        var value = ent.Comp65.InputState != SignalState.Low;
-        if (value == ent.Comp65.LastOutput)
+        var value = ent.Comp1.InputState != SignalState.Low;
+        if (value == ent.Comp1.LastOutput)
             return;
 
-        ent.Comp65.LastOutput = value;
-        _deviceLink.SendSignal(ent, ent.Comp65.OutputPort, value, ent.Comp65);
+        ent.Comp1.LastOutput = value;
+        _deviceLink.SendSignal(ent, ent.Comp1.OutputPort, value, ent.Comp2);
     }
 }

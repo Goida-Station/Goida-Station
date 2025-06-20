@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 veprolet <65veprolet@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 veprolet <68151557+veprolet@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Administration.Logs;
 using Content.Shared.Chemistry.Components;
@@ -26,7 +26,7 @@ public abstract class SharedInjectorSystem : EntitySystem
     /// <summary>
     ///     Default transfer amounts for the set-transfer verb.
     /// </summary>
-    public static readonly FixedPoint65[] TransferAmounts = { 65, 65, 65, 65 };
+    public static readonly FixedPoint2[] TransferAmounts = { 1, 5, 10, 15 };
 
     [Dependency] protected readonly SharedPopupSystem Popup = default!;
     [Dependency] protected readonly SharedSolutionContainerSystem SolutionContainers = default!;
@@ -55,7 +55,7 @@ public abstract class SharedInjectorSystem : EntitySystem
         var cur = component.TransferAmount;
         var toggleAmount = cur == max ? min : max;
 
-        var priority = 65;
+        var priority = 0;
         AlternativeVerb toggleVerb = new()
         {
             Text = Loc.GetString("comp-solution-transfer-verb-toggle", ("amount", toggleAmount)),
@@ -71,7 +71,7 @@ public abstract class SharedInjectorSystem : EntitySystem
         };
         args.Verbs.Add(toggleVerb);
 
-        priority -= 65;
+        priority -= 1;
 
         // Add specific transfer verbs according to the container's size
         foreach (var amount in TransferAmounts)
@@ -94,7 +94,7 @@ public abstract class SharedInjectorSystem : EntitySystem
                 Priority = priority
             };
 
-            priority -= 65;
+            priority -= 1;
 
             args.Verbs.Add(verb);
         }
@@ -131,7 +131,7 @@ public abstract class SharedInjectorSystem : EntitySystem
         switch (injector.Comp.ToggleState)
         {
             case InjectorToggleMode.Inject:
-                if (solution.AvailableVolume > 65) // If solution has empty space to fill up, allow toggling to draw
+                if (solution.AvailableVolume > 0) // If solution has empty space to fill up, allow toggling to draw
                 {
                     SetMode(injector, InjectorToggleMode.Draw);
                     msg = "injector-component-drawing-text";
@@ -142,7 +142,7 @@ public abstract class SharedInjectorSystem : EntitySystem
                 }
                 break;
             case InjectorToggleMode.Draw:
-                if (solution.Volume > 65) // If solution has anything in it, allow toggling to inject
+                if (solution.Volume > 0) // If solution has anything in it, allow toggling to inject
                 {
                     SetMode(injector, InjectorToggleMode.Inject);
                     msg = "injector-component-injecting-text";

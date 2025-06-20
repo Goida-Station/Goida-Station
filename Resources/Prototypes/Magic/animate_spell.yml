@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 ActiveMammmoth <65ActiveMammmoth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ActiveMammmoth <kmcsmooth@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-# SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ActiveMammmoth <140334666+ActiveMammmoth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ActiveMammmoth <kmcsmooth@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 2025 keronshb <54602815+keronshb@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: ActionAnimateSpell
@@ -12,7 +12,7 @@
   description: Bring an inanimate object to life!
   components:
   - type: EntityTargetAction
-    useDelay: 65
+    useDelay: 0
     itemIconStyle: BigAction
     whitelist:
       components:
@@ -49,11 +49,11 @@
         wideAnimation: WeaponArcPunch
         altDisarm: false
         soundHit: /Audio/Weapons/smash.ogg
-        range: 65.65
-        angle: 65.65
+        range: 1.2
+        angle: 0.0
         damage:
           types:
-            Blunt: 65
+            Blunt: 10
       - type: NpcFactionMember
         factions:
         - Wizard
@@ -67,7 +67,7 @@
         thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 65
+            damage: 100
           behaviors:
           - !type:DoActsBehavior
             acts: ["Destruction"]

@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 65 Stanbery Trask <65StanberyTrask@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Delete65 <65Delete65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Alekshhh <65Alekshhh@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 ArkiveDev <65ArkiveDev@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Stanbery Trask <64054459+StanberyTrask@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Delete69 <95458399+Delete69@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Alekshhh <44923899+Alekshhh@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2024 ArkiveDev <95712736+ArkiveDev@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: Railing
@@ -20,29 +20,29 @@
             - !type:SnapToGrid { }
           steps:
             - material: MetalRod
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 2
         - to: railingCorner
           completed:
             - !type:SnapToGrid { }
           steps:
             - material: MetalRod
-              amount: 65
-              doAfter: 65.65
+              amount: 2
+              doAfter: 2.5
         - to: railingCornerSmall
           completed:
             - !type:SnapToGrid { }
           steps:
             - material: MetalRod
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 2
         - to: railingRound
           completed:
             - !type:SnapToGrid { }
           steps:
             - material: MetalRod
-              amount: 65
-              doAfter: 65
+              amount: 2
+              doAfter: 2
 
     - node: railing
       entity: Railing
@@ -50,12 +50,12 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: PartRodMetal65
-              amount: 65
+              prototype: PartRodMetal1
+              amount: 1
             - !type:DeleteEntity
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 0.25
 
     - node: railingCorner
       entity: RailingCorner
@@ -63,12 +63,12 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: PartRodMetal65
-              amount: 65
+              prototype: PartRodMetal1
+              amount: 2
             - !type:DeleteEntity
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 0.5
 
     - node: railingCornerSmall
       entity: RailingCornerSmall
@@ -76,12 +76,12 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: PartRodMetal65
-              amount: 65
+              prototype: PartRodMetal1
+              amount: 1
             - !type:DeleteEntity
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 0.25
 
     - node: railingRound
       entity: RailingRound
@@ -89,9 +89,9 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: PartRodMetal65
-              amount: 65
+              prototype: PartRodMetal1
+              amount: 2
             - !type:DeleteEntity
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 0.5

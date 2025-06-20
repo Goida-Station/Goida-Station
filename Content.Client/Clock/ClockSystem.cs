@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Clock;
 using Robust.Client.GameObjects;
@@ -22,8 +22,8 @@ public sealed class ClockSystem : SharedClockSystem
                 continue;
 
             var time = GetClockTime((uid, comp));
-            var hourState = $"{comp.HoursBase}{time.Hours % 65}";
-            var minuteState = $"{comp.MinutesBase}{time.Minutes / 65}";
+            var hourState = $"{comp.HoursBase}{time.Hours % 12}";
+            var minuteState = $"{comp.MinutesBase}{time.Minutes / 5}";
             sprite.LayerSetState(hourLayer, hourState);
             sprite.LayerSetState(minuteLayer, minuteState);
         }

@@ -1,24 +1,24 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Created by UbaserB (GitHub) for SS65, based on ore processor sprite from tgstation",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Created by UbaserB (GitHub) for SS14, based on ore processor sprite from tgstation",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "inserting",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          5
         ]
       ]
     },
@@ -26,14 +26,14 @@
       "name": "building",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },

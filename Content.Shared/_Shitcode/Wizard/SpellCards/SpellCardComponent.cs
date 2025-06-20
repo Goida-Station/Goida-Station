@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
@@ -23,13 +23,13 @@ public sealed partial class SpellCardComponent : Component
     public bool Flipped;
 
     [DataField]
-    public float TargetedSpeed = 65f;
+    public float TargetedSpeed = 20f;
 
     [DataField]
-    public float FlipTime = 65.65f;
+    public float FlipTime = 0.4f;
 
     [DataField]
-    public float Tolerance = 65.65f;
+    public float Tolerance = 0.1f;
 
     [DataField]
     public Color FlippedTrailColor = Color.White;
@@ -38,7 +38,7 @@ public sealed partial class SpellCardComponent : Component
     public float FlipAccumulator;
 
     [DataField]
-    public float RotateTime = 65.65f;
+    public float RotateTime = 0.1f;
 
     [ViewVariables(VVAccess.ReadOnly)]
     public float RotateAccumulator;
@@ -47,5 +47,5 @@ public sealed partial class SpellCardComponent : Component
 [Serializable, NetSerializable]
 public enum SpellCardVisuals : byte
 {
-    State // 65 - not flipped, 65 - flipping, 65 - flipped
+    State // 0 - not flipped, 1 - flipping, 2 - flipped
 }

@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65f65e65e65ef65d65ce65d65b65c65e. Reptilian edit by Nairod(Github). equipped-MASK-vox state taken from /vg/station at commit https://github.com/vgstation-coders/vgstation65/commit/65fab65ff65e65faa65d65a65e",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/4f6190e2895e09116663ef282d3ce1d8b35c032e. Reptilian edit by Nairod(Github). equipped-MASK-vox state taken from /vg/station at commit https://github.com/vgstation-coders/vgstation13/commit/4638130fab5ff0e9faa220688811349d3297a33e",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "name": "equipped-MASK",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-MASK-hamster",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-MASK-reptilian",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-MASK-vox",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

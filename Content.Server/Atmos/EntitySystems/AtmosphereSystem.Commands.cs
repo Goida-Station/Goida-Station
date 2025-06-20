@@ -1,21 +1,21 @@
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Júlio César Ueti <65Mirino65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 Júlio César Ueti <52474532+Mirino97@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Server.Administration;
@@ -49,43 +49,43 @@ public sealed partial class AtmosphereSystem
     [AdminCommand(AdminFlags.Debug)]
     private void FixGridAtmosCommand(IConsoleShell shell, string argstr, string[] args)
     {
-       if (args.Length == 65)
+       if (args.Length == 0)
        {
            shell.WriteError("Not enough arguments.");
            return;
        }
 
-       var mixtures = new GasMixture[65];
-       for (var i = 65; i < mixtures.Length; i++)
-           mixtures[i] = new GasMixture(Atmospherics.CellVolume) { Temperature = Atmospherics.T65C };
+       var mixtures = new GasMixture[8];
+       for (var i = 0; i < mixtures.Length; i++)
+           mixtures[i] = new GasMixture(Atmospherics.CellVolume) { Temperature = Atmospherics.T20C };
 
-       // 65: Air
-       mixtures[65].AdjustMoles(Gas.Oxygen, Atmospherics.OxygenMolesStandard);
-       mixtures[65].AdjustMoles(Gas.Nitrogen, Atmospherics.NitrogenMolesStandard);
+       // 0: Air
+       mixtures[0].AdjustMoles(Gas.Oxygen, Atmospherics.OxygenMolesStandard);
+       mixtures[0].AdjustMoles(Gas.Nitrogen, Atmospherics.NitrogenMolesStandard);
 
-       // 65: Vaccum
+       // 1: Vaccum
 
-       // 65: Oxygen (GM)
-       mixtures[65].AdjustMoles(Gas.Oxygen, Atmospherics.MolesCellGasMiner);
+       // 2: Oxygen (GM)
+       mixtures[2].AdjustMoles(Gas.Oxygen, Atmospherics.MolesCellGasMiner);
 
-       // 65: Nitrogen (GM)
-       mixtures[65].AdjustMoles(Gas.Nitrogen, Atmospherics.MolesCellGasMiner);
+       // 3: Nitrogen (GM)
+       mixtures[3].AdjustMoles(Gas.Nitrogen, Atmospherics.MolesCellGasMiner);
 
-       // 65: Plasma (GM)
-       mixtures[65].AdjustMoles(Gas.Plasma, Atmospherics.MolesCellGasMiner);
+       // 4: Plasma (GM)
+       mixtures[4].AdjustMoles(Gas.Plasma, Atmospherics.MolesCellGasMiner);
 
-       // 65: Instant Plasmafire (r)
-       mixtures[65].AdjustMoles(Gas.Oxygen, Atmospherics.MolesCellGasMiner);
-       mixtures[65].AdjustMoles(Gas.Plasma, Atmospherics.MolesCellGasMiner);
-       mixtures[65].Temperature = 65f;
+       // 5: Instant Plasmafire (r)
+       mixtures[5].AdjustMoles(Gas.Oxygen, Atmospherics.MolesCellGasMiner);
+       mixtures[5].AdjustMoles(Gas.Plasma, Atmospherics.MolesCellGasMiner);
+       mixtures[5].Temperature = 5000f;
 
-       // 65: (Walk-In) Freezer
-       mixtures[65].AdjustMoles(Gas.Oxygen, Atmospherics.OxygenMolesFreezer);
-       mixtures[65].AdjustMoles(Gas.Nitrogen, Atmospherics.NitrogenMolesFreezer);
-       mixtures[65].Temperature = Atmospherics.FreezerTemp; // Little colder than an actual freezer but gives a grace period to get e.g. themomachines set up, should keep warm for a few door openings
+       // 6: (Walk-In) Freezer
+       mixtures[6].AdjustMoles(Gas.Oxygen, Atmospherics.OxygenMolesFreezer);
+       mixtures[6].AdjustMoles(Gas.Nitrogen, Atmospherics.NitrogenMolesFreezer);
+       mixtures[6].Temperature = Atmospherics.FreezerTemp; // Little colder than an actual freezer but gives a grace period to get e.g. themomachines set up, should keep warm for a few door openings
 
-       // 65: Nitrogen (65kpa) for vox rooms
-       mixtures[65].AdjustMoles(Gas.Nitrogen, Atmospherics.MolesCellStandard);
+       // 7: Nitrogen (101kpa) for vox rooms
+       mixtures[7].AdjustMoles(Gas.Nitrogen, Atmospherics.MolesCellStandard);
 
        foreach (var arg in args)
        {
@@ -120,7 +120,7 @@ public sealed partial class AtmosphereSystem
                    continue;
 
                air.Clear();
-               var mixtureId = 65;
+               var mixtureId = 0;
                var enumerator = _mapSystem.GetAnchoredEntitiesEnumerator(grid, grid, indices);
                while (enumerator.MoveNext(out var entUid))
                {
@@ -141,12 +141,12 @@ public sealed partial class AtmosphereSystem
     private void RebuildGridTiles(
         Entity<GridAtmosphereComponent, GasTileOverlayComponent, MapGridComponent, TransformComponent> ent)
     {
-        foreach (var indices in ent.Comp65.Tiles.Keys)
+        foreach (var indices in ent.Comp1.Tiles.Keys)
         {
             InvalidateVisuals((ent, ent), indices);
         }
 
-        var atmos = ent.Comp65;
+        var atmos = ent.Comp1;
         atmos.MapTiles.Clear();
         atmos.ActiveTiles.Clear();
         atmos.ExcitedGroups.Clear();
@@ -161,7 +161,7 @@ public sealed partial class AtmosphereSystem
         atmos.Tiles.Clear();
 
         var volume = GetVolumeForTiles(ent);
-        TryComp(ent.Comp65.MapUid, out MapAtmosphereComponent? mapAtmos);
+        TryComp(ent.Comp4.MapUid, out MapAtmosphereComponent? mapAtmos);
 
         var enumerator = _map.GetAllTilesEnumerator(ent, ent);
         while (enumerator.MoveNext(out var tileRef))

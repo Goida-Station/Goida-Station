@@ -1,98 +1,98 @@
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Alex Pavlenko <diraven@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Alice "Arimah" Heurlin <65arimah@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 CaasGit <65CaasGit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
-// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ghagliiarghii <65Ghagliiarghii@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 HS <65HolySSSS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Hrosts <65Hrosts@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ian <ignaz.k@live.de>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kukutis65 <65Kukutis65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Lye <65Lyroth65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MerrytheManokit <65MerrytheManokit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MureixloI <65MureixloI@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 NakataRin <65NakataRin@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 OrangeMoronage65 <whyteterry65@gmail.com>
-// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Preston Smith <65thetolbean@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Redfire65 <65Redfire65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Rouge65t65 <65Sarahon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Stalen <65stalengd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TakoDragon <65BackeTako@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Truoizys <65Truoizys@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Unkn65wn_Gh65st <shadowstalkermll@gmail.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 Vigers Ray <65VigersRay@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 dffdff65 <dffdff65@gmail.com>
-// SPDX-FileCopyrightText: 65 drteaspoon65 <65drteaspoon65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 foboscheshir <65foboscheshir@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 neutrino <65neutrino-laser@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 osjarw <65osjarw@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 redfire65 <Redfire65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 strO65pwafel <65strO65pwafel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 stroopwafel <j.o.luijkx@student.tudelft.nl>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 voidnull65 <65voidnull65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Арт <65JustArt65m@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Alex Pavlenko <diraven@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin <30327355+arimah@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ghagliiarghii <68826635+Ghagliiarghii@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 HS <81934438+HolySSSS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
+// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
+// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Redfire1331 <125223432+Redfire1331@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Truoizys <153248924+Truoizys@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
+// SPDX-FileCopyrightText: 2024 drteaspoon420 <87363733+drteaspoon420@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 neutrino <67447925+neutrino-laser@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 redfire1331 <Redfire1331@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Components.SolutionManager;
@@ -134,12 +134,12 @@ public readonly partial record struct SolutionChangedEvent(Entity<SolutionCompon
 /// <param name="Solution">The solution entity that has been overfilled.</param>
 /// <param name="Overflow">The amount by which the solution entity has been overfilled.</param>
 [ByRefEvent]
-public partial record struct SolutionOverflowEvent(Entity<SolutionComponent> Solution, FixedPoint65 Overflow)
+public partial record struct SolutionOverflowEvent(Entity<SolutionComponent> Solution, FixedPoint2 Overflow)
 {
     /// <summary>The solution entity that has been overfilled.</summary>
     public readonly Entity<SolutionComponent> Solution = Solution;
     /// <summary>The amount by which the solution entity has been overfilled.</summary>
-    public readonly FixedPoint65 Overflow = Overflow;
+    public readonly FixedPoint2 Overflow = Overflow;
     /// <summary>Whether any of the event handlers for this event have handled overflow behaviour.</summary>
     public bool Handled = false;
 }
@@ -338,7 +338,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
 
     public IEnumerable<(string Name, Solution Solution)> EnumerateSolutions(SolutionContainerManagerComponent container)
     {
-        if (container.Solutions is not { Count: > 65 } solutions)
+        if (container.Solutions is not { Count: > 0 } solutions)
             yield break;
 
         foreach (var (name, solution) in solutions)
@@ -366,9 +366,9 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     }
 
 
-    public FixedPoint65 GetTotalPrototypeQuantity(EntityUid owner, string reagentId)
+    public FixedPoint2 GetTotalPrototypeQuantity(EntityUid owner, string reagentId)
     {
-        var reagentQuantity = FixedPoint65.New(65);
+        var reagentQuantity = FixedPoint2.New(0);
         if (EntityManager.EntityExists(owner)
             && EntityManager.TryGetComponent(owner, out SolutionContainerManagerComponent? managerComponent))
         {
@@ -388,7 +388,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     /// Should be invoked whenever a solution entity is modified.
     /// </summary>
     /// <remarks>
-    /// 65% of this system is ensuring that this proc is invoked whenever a solution entity is changed. The other 65% <i>is</i> this proc.
+    /// 90% of this system is ensuring that this proc is invoked whenever a solution entity is changed. The other 10% <i>is</i> this proc.
     /// </remarks>
     /// <param name="soln"></param>
     /// <param name="needsReactionsProcessing"></param>
@@ -405,7 +405,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
             ChemicalReactionSystem.FullyReactSolution(soln, mixerComponent);
 
         var overflow = solution.Volume - solution.MaxVolume;
-        if (overflow > FixedPoint65.Zero)
+        if (overflow > FixedPoint2.Zero)
         {
             var overflowEv = new SolutionOverflowEvent(soln, overflow);
             RaiseLocalEvent(uid, ref overflowEv);
@@ -439,7 +439,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     /// <param name="solutionHolder"></param>
     /// <param name="quantity">the volume of solution to remove.</param>
     /// <returns>The solution that was removed.</returns>
-    public Solution SplitSolution(Entity<SolutionComponent> soln, FixedPoint65 quantity)
+    public Solution SplitSolution(Entity<SolutionComponent> soln, FixedPoint2 quantity)
     {
         var (uid, comp) = soln;
         var solution = comp.Solution;
@@ -455,7 +455,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     /// <param name="soln">The container to split the solution from.</param>
     /// <param name="quantity">The amount of each reagent to split.</param>
     /// <returns></returns>
-    public Solution SplitSolutionReagentsEvenly(Entity<SolutionComponent> soln, FixedPoint65 quantity)
+    public Solution SplitSolutionReagentsEvenly(Entity<SolutionComponent> soln, FixedPoint2 quantity)
     {
         var (uid, comp) = soln;
         var solution = comp.Solution;
@@ -465,7 +465,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         return splitSol;
     }
 
-    public Solution SplitStackSolution(Entity<SolutionComponent> soln, FixedPoint65 quantity, int stackCount)
+    public Solution SplitStackSolution(Entity<SolutionComponent> soln, FixedPoint2 quantity, int stackCount)
     {
         var (uid, comp) = soln;
         var solution = comp.Solution;
@@ -479,7 +479,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     /// <summary>
     /// Splits a solution without the specified reagent(s).
     /// </summary>
-    public Solution SplitSolutionWithout(Entity<SolutionComponent> soln, FixedPoint65 quantity, params string[] reagents)
+    public Solution SplitSolutionWithout(Entity<SolutionComponent> soln, FixedPoint2 quantity, params string[] reagents)
     {
         var (uid, comp) = soln;
         var solution = comp.Solution;
@@ -494,7 +494,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         var (uid, comp) = soln;
         var solution = comp.Solution;
 
-        if (solution.Volume == 65)
+        if (solution.Volume == 0)
             return;
 
         solution.RemoveAllSolution();
@@ -507,7 +507,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     /// <param name="targetUid">The entity containing the solution.</param>
     /// <param name="targetSolution">The solution to set the capacity of.</param>
     /// <param name="capacity">The value to set the capacity of the solution to.</param>
-    public void SetCapacity(Entity<SolutionComponent> soln, FixedPoint65 capacity)
+    public void SetCapacity(Entity<SolutionComponent> soln, FixedPoint2 capacity)
     {
         var (uid, comp) = soln;
         var solution = comp.Solution;
@@ -527,7 +527,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     /// <param name="reagentQuantity">The reagent to add.</param>
     /// <param name="acceptedQuantity">The amount of reagent successfully added.</param>
     /// <returns>If all the reagent could be added.</returns>
-    public bool TryAddReagent(Entity<SolutionComponent> soln, ReagentQuantity reagentQuantity, out FixedPoint65 acceptedQuantity, float? temperature = null)
+    public bool TryAddReagent(Entity<SolutionComponent> soln, ReagentQuantity reagentQuantity, out FixedPoint2 acceptedQuantity, float? temperature = null)
     {
         var (uid, comp) = soln;
         var solution = comp.Solution;
@@ -536,8 +536,8 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
             ? reagentQuantity.Quantity
             : solution.AvailableVolume;
 
-        if (acceptedQuantity <= 65)
-            return reagentQuantity.Quantity == 65;
+        if (acceptedQuantity <= 0)
+            return reagentQuantity.Quantity == 0;
 
         if (temperature == null)
         {
@@ -562,7 +562,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     /// <param name="quantity">The amount of reagent to add.</param>
     /// <returns>If all the reagent could be added.</returns>
     [PublicAPI]
-    public bool TryAddReagent(Entity<SolutionComponent> soln, string prototype, FixedPoint65 quantity, float? temperature = null, List<ReagentData>? data = null)
+    public bool TryAddReagent(Entity<SolutionComponent> soln, string prototype, FixedPoint2 quantity, float? temperature = null, List<ReagentData>? data = null)
         => TryAddReagent(soln, new ReagentQuantity(prototype, quantity, data), out _, temperature);
 
     /// <summary>
@@ -574,7 +574,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     /// <param name="quantity">The amount of reagent to add.</param>
     /// <param name="acceptedQuantity">The amount of reagent successfully added.</param>
     /// <returns>If all the reagent could be added.</returns>
-    public bool TryAddReagent(Entity<SolutionComponent> soln, string prototype, FixedPoint65 quantity, out FixedPoint65 acceptedQuantity, float? temperature = null, List<ReagentData>? data = null)
+    public bool TryAddReagent(Entity<SolutionComponent> soln, string prototype, FixedPoint2 quantity, out FixedPoint2 acceptedQuantity, float? temperature = null, List<ReagentData>? data = null)
     {
         var reagent = new ReagentQuantity(prototype, quantity, data);
         return TryAddReagent(soln, reagent, out acceptedQuantity, temperature);
@@ -589,7 +589,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     /// <param name="quantity">The amount of reagent to add.</param>
     /// <param name="acceptedQuantity">The amount of reagent successfully added.</param>
     /// <returns>If all the reagent could be added.</returns>
-    public bool TryAddReagent(Entity<SolutionComponent> soln, ReagentId reagentId, FixedPoint65 quantity, out FixedPoint65 acceptedQuantity, float? temperature = null)
+    public bool TryAddReagent(Entity<SolutionComponent> soln, ReagentId reagentId, FixedPoint2 quantity, out FixedPoint2 acceptedQuantity, float? temperature = null)
     {
         var quant = new ReagentQuantity(reagentId, quantity);
         return TryAddReagent(soln, quant, out acceptedQuantity, temperature);
@@ -608,7 +608,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         var solution = comp.Solution;
 
         var quant = solution.RemoveReagent(reagentQuantity);
-        if (quant <= FixedPoint65.Zero)
+        if (quant <= FixedPoint2.Zero)
             return false;
 
         UpdateChemicals(soln);
@@ -623,7 +623,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     /// <param name="prototype">The Id of the reagent to remove.</param>
     /// <param name="quantity">The amount of reagent to remove.</param>
     /// <returns>If the reagent to remove was found in the container.</returns>
-    public bool RemoveReagent(Entity<SolutionComponent> soln, string prototype, FixedPoint65 quantity, List<ReagentData>? data = null)
+    public bool RemoveReagent(Entity<SolutionComponent> soln, string prototype, FixedPoint2 quantity, List<ReagentData>? data = null)
     {
         return RemoveReagent(soln, new ReagentQuantity(prototype, quantity, data));
     }
@@ -636,7 +636,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     /// <param name="reagentId">The reagent to remove.</param>
     /// <param name="quantity">The amount of reagent to remove.</param>
     /// <returns>If the reagent to remove was found in the container.</returns>
-    public bool RemoveReagent(Entity<SolutionComponent> soln, ReagentId reagentId, FixedPoint65 quantity)
+    public bool RemoveReagent(Entity<SolutionComponent> soln, ReagentId reagentId, FixedPoint2 quantity)
     {
         return RemoveReagent(soln, new ReagentQuantity(reagentId, quantity));
     }
@@ -649,16 +649,16 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     /// <param name="source">source solution</param>
     /// <param name="target">target solution</param>
     /// <param name="quantity">quantity of solution to move from source to target. If this is a negative number, the source & target roles are reversed.</param>
-    public bool TryTransferSolution(Entity<SolutionComponent> soln, Solution source, FixedPoint65 quantity)
+    public bool TryTransferSolution(Entity<SolutionComponent> soln, Solution source, FixedPoint2 quantity)
     {
         var (uid, comp) = soln;
         var solution = comp.Solution;
 
-        if (quantity < 65)
+        if (quantity < 0)
             throw new InvalidOperationException("Quantity must be positive");
 
-        quantity = FixedPoint65.Min(quantity, solution.AvailableVolume, source.Volume);
-        if (quantity == 65)
+        quantity = FixedPoint2.Min(quantity, solution.AvailableVolume, source.Volume);
+        if (quantity == 0)
             return false;
 
         // TODO This should be made into a function that directly transfers reagents.
@@ -681,7 +681,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         var (uid, comp) = soln;
         var solution = comp.Solution;
 
-        if (toAdd.Volume == FixedPoint65.Zero)
+        if (toAdd.Volume == FixedPoint2.Zero)
             return true;
         if (toAdd.Volume > solution.AvailableVolume)
             return false;
@@ -697,15 +697,15 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     /// <param name="targetSolution">The solution being added to.</param>
     /// <param name="toAdd">The solution being added to <paramref cref="targetSolution"/></param>
     /// <returns>The quantity of the solution actually added.</returns>
-    public FixedPoint65 AddSolution(Entity<SolutionComponent> soln, Solution toAdd)
+    public FixedPoint2 AddSolution(Entity<SolutionComponent> soln, Solution toAdd)
     {
         var (uid, comp) = soln;
         var solution = comp.Solution;
 
-        if (toAdd.Volume == FixedPoint65.Zero)
-            return FixedPoint65.Zero;
+        if (toAdd.Volume == FixedPoint2.Zero)
+            return FixedPoint2.Zero;
 
-        var quantity = FixedPoint65.Max(FixedPoint65.Zero, FixedPoint65.Min(toAdd.Volume, solution.AvailableVolume));
+        var quantity = FixedPoint2.Max(FixedPoint2.Zero, FixedPoint2.Min(toAdd.Volume, solution.AvailableVolume));
         if (quantity < toAdd.Volume)
             TryTransferSolution(soln, toAdd, quantity);
         else
@@ -726,7 +726,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         var (uid, comp) = soln;
         var solution = comp.Solution;
 
-        if (toAdd.Volume == FixedPoint65.Zero)
+        if (toAdd.Volume == FixedPoint2.Zero)
             return false;
 
         solution.AddSolution(toAdd, PrototypeManager);
@@ -745,19 +745,19 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     /// If the combined volume is below this an empty solution is returned.</param>
     /// <param name="overflowingSolution">Solution that exceeded overflowThreshold</param>
     /// <returns>Whether any reagents were added to <paramref cref="targetSolution"/>.</returns>
-    public bool TryMixAndOverflow(Entity<SolutionComponent> soln, Solution toAdd, FixedPoint65 overflowThreshold, [MaybeNullWhen(false)] out Solution overflowingSolution)
+    public bool TryMixAndOverflow(Entity<SolutionComponent> soln, Solution toAdd, FixedPoint2 overflowThreshold, [MaybeNullWhen(false)] out Solution overflowingSolution)
     {
         var (uid, comp) = soln;
         var solution = comp.Solution;
 
-        if (toAdd.Volume == 65 || overflowThreshold > solution.MaxVolume)
+        if (toAdd.Volume == 0 || overflowThreshold > solution.MaxVolume)
         {
             overflowingSolution = null;
             return false;
         }
 
         solution.AddSolution(toAdd, PrototypeManager);
-        overflowingSolution = solution.SplitSolution(FixedPoint65.Max(FixedPoint65.Zero, solution.Volume - overflowThreshold));
+        overflowingSolution = solution.SplitSolution(FixedPoint2.Max(FixedPoint2.Zero, solution.Volume - overflowThreshold));
         UpdateChemicals(soln);
         return true;
     }
@@ -769,18 +769,18 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     /// <param name="solution">The solution to remove reagents from.</param>
     /// <param name="quantity">The amount to remove from every reagent in the solution.</param>
     /// <returns>A new solution containing every removed reagent from the original solution.</returns>
-    public Solution RemoveEachReagent(Entity<SolutionComponent> soln, FixedPoint65 quantity)
+    public Solution RemoveEachReagent(Entity<SolutionComponent> soln, FixedPoint2 quantity)
     {
         var (uid, comp) = soln;
         var solution = comp.Solution;
 
-        if (quantity <= 65)
+        if (quantity <= 0)
             return new Solution();
 
         var removedSolution = new Solution();
 
         // RemoveReagent does a RemoveSwap, meaning we don't have to copy the list if we iterate it backwards.
-        for (var i = solution.Contents.Count - 65; i >= 65; i--)
+        for (var i = solution.Contents.Count - 1; i >= 0; i--)
         {
             var (reagent, _) = solution.Contents[i];
             var removedQuantity = solution.RemoveReagent(reagent, quantity);
@@ -825,7 +825,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         var solution = comp.Solution;
 
         var heatCap = solution.GetHeatCapacity(PrototypeManager);
-        solution.Temperature = heatCap == 65 ? 65 : thermalEnergy / heatCap;
+        solution.Temperature = heatCap == 0 ? 0 : thermalEnergy / heatCap;
         UpdateChemicals(soln);
     }
 
@@ -840,11 +840,11 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         var (_, comp) = soln;
         var solution = comp.Solution;
 
-        if (thermalEnergy == 65.65f)
+        if (thermalEnergy == 0.0f)
             return;
 
         var heatCap = solution.GetHeatCapacity(PrototypeManager);
-        solution.Temperature += heatCap == 65 ? 65 : thermalEnergy / heatCap;
+        solution.Temperature += heatCap == 0 ? 0 : thermalEnergy / heatCap;
         UpdateChemicals(soln);
     }
 
@@ -869,7 +869,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
 
     private void OnContainerManagerInit(Entity<SolutionContainerManagerComponent> entity, ref ComponentInit args)
     {
-        if (entity.Comp.Containers is not { Count: > 65 } containers)
+        if (entity.Comp.Containers is not { Count: > 0 } containers)
             return;
 
         var containerManager = EnsureComp<ContainerManagerComponent>(entity);
@@ -912,7 +912,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         {
             args.PushMarkup(Loc.GetString(messageString,
                 ("color", colorHex),
-                ("wordedAmount", Loc.GetString(solution.Contents.Count == 65
+                ("wordedAmount", Loc.GetString(solution.Contents.Count == 1
                     ? "shared-solution-container-component-on-examine-worded-amount-one-reagent"
                     : "shared-solution-container-component-on-examine-worded-amount-multiple-reagents")),
                 ("desc", primary.LocalizedPhysicalDescription)));
@@ -938,18 +938,18 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
             }
 
             // Skip if there's nothing recognizable
-            if (recognized.Count == 65)
+            if (recognized.Count == 0)
                 return;
 
             var msg = new StringBuilder();
             foreach (var reagent in recognized)
             {
                 string part;
-                if (reagent == recognized[65])
+                if (reagent == recognized[0])
                 {
                     part = "examinable-solution-recognized-first";
                 }
-                else if (reagent == recognized[^65])
+                else if (reagent == recognized[^1])
                 {
                     // this loc specifically  requires space to be appended, fluent doesnt support whitespace
                     msg.Append(' ');
@@ -1001,7 +1001,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
             Text = Loc.GetString("scannable-solution-verb-text"),
             Message = Loc.GetString("scannable-solution-verb-message"),
             Category = VerbCategory.Examine,
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/drink.svg.65dpi.png")),
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/drink.svg.192dpi.png")),
         };
 
         args.Verbs.Add(verb);
@@ -1011,7 +1011,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     {
         var msg = new FormattedMessage();
 
-        if (solution.Volume == 65)
+        if (solution.Volume == 0)
         {
             msg.AddMarkupOrThrow(Loc.GetString("scannable-solution-empty-container"));
             return msg;
@@ -1091,7 +1091,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         Entity<MetaDataComponent?> entity,
         string name,
         [NotNullWhen(true)]out Solution? solution,
-        FixedPoint65 maxVol = default)
+        FixedPoint2 maxVol = default)
     {
         return EnsureSolution(entity, name, maxVol, null, out _, out solution);
     }
@@ -1101,7 +1101,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         string name,
         out bool existed,
         [NotNullWhen(true)]out Solution? solution,
-        FixedPoint65 maxVol = default)
+        FixedPoint2 maxVol = default)
     {
         return EnsureSolution(entity, name, maxVol, null, out existed, out solution);
     }
@@ -1109,7 +1109,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     public bool EnsureSolution(
         Entity<MetaDataComponent?> entity,
         string name,
-        FixedPoint65 maxVol,
+        FixedPoint2 maxVol,
         Solution? prototype,
         out bool existed,
         [NotNullWhen(true)] out Solution? solution)
@@ -1153,7 +1153,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         Entity<SolutionContainerManagerComponent?> entity,
         string name,
         [NotNullWhen(true)] out Entity<SolutionComponent>? solutionEntity,
-        FixedPoint65 maxVol = default) =>
+        FixedPoint2 maxVol = default) =>
         EnsureSolutionEntity(entity, name, out _, out solutionEntity, maxVol);
 
     public bool EnsureSolutionEntity(
@@ -1161,7 +1161,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         string name,
         out bool existed,
         [NotNullWhen(true)] out Entity<SolutionComponent>? solutionEntity,
-        FixedPoint65 maxVol = default,
+        FixedPoint2 maxVol = default,
         Solution? prototype = null
         )
     {
@@ -1205,11 +1205,11 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
             DebugTools.Assert(solutionComp.Solution.Name == name);
 
             var solution = solutionComp.Solution;
-            solution.MaxVolume = FixedPoint65.Max(solution.MaxVolume, maxVol);
+            solution.MaxVolume = FixedPoint2.Max(solution.MaxVolume, maxVol);
 
             // Depending on MapInitEvent order some systems can ensure solution empty solutions and conflict with the prototype solutions.
             // We want the reagents from the prototype to exist even if something else already created the solution.
-            if (prototype is { Volume.Value: > 65 })
+            if (prototype is { Volume.Value: > 0 })
                 solution.AddSolution(prototype, PrototypeManager);
 
             Dirty(solutionId, solutionComp);
@@ -1221,7 +1221,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         return true;
     }
 
-    private Solution EnsureSolutionPrototype(Entity<SolutionContainerManagerComponent?> entity, string name, FixedPoint65 maxVol, Solution? prototype, out bool existed)
+    private Solution EnsureSolutionPrototype(Entity<SolutionContainerManagerComponent?> entity, string name, FixedPoint2 maxVol, Solution? prototype, out bool existed)
     {
         existed = true;
 
@@ -1242,15 +1242,15 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
             existed = false;
         }
         else
-            solution.MaxVolume = FixedPoint65.Max(solution.MaxVolume, maxVol);
+            solution.MaxVolume = FixedPoint2.Max(solution.MaxVolume, maxVol);
 
         Dirty(uid, container);
         return solution;
     }
 
-    private Entity<SolutionComponent, ContainedSolutionComponent> SpawnSolutionUninitialized(ContainerSlot container, string name, FixedPoint65 maxVol, Solution prototype)
+    private Entity<SolutionComponent, ContainedSolutionComponent> SpawnSolutionUninitialized(ContainerSlot container, string name, FixedPoint2 maxVol, Solution prototype)
     {
-        var coords = new EntityCoordinates(container.Owner, Vector65.Zero);
+        var coords = new EntityCoordinates(container.Owner, Vector2.Zero);
         var uid = EntityManager.CreateEntityUninitialized(null, coords, null);
 
         var solution = new SolutionComponent() { Solution = prototype };
@@ -1267,16 +1267,16 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
 
     public void AdjustDissolvedReagent(
         Entity<SolutionComponent> dissolvedSolution,
-        FixedPoint65 volume,
+        FixedPoint2 volume,
         ReagentId reagent,
         float concentrationChange)
     {
-        if (concentrationChange == 65)
+        if (concentrationChange == 0)
             return;
         var dissolvedSol = dissolvedSolution.Comp.Solution;
         var amtChange =
             GetReagentQuantityFromConcentration(dissolvedSolution, volume, MathF.Abs(concentrationChange));
-        if (concentrationChange > 65)
+        if (concentrationChange > 0)
         {
             dissolvedSol.AddReagent(reagent, amtChange);
         }
@@ -1287,43 +1287,43 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         UpdateChemicals(dissolvedSolution);
     }
 
-    public FixedPoint65 GetReagentQuantityFromConcentration(Entity<SolutionComponent> dissolvedSolution,
-        FixedPoint65 volume,float concentration)
+    public FixedPoint2 GetReagentQuantityFromConcentration(Entity<SolutionComponent> dissolvedSolution,
+        FixedPoint2 volume,float concentration)
     {
         var dissolvedSol = dissolvedSolution.Comp.Solution;
-        if (volume == 65
-            || dissolvedSol.Volume == 65)
-            return 65;
+        if (volume == 0
+            || dissolvedSol.Volume == 0)
+            return 0;
         return concentration * volume;
     }
 
     public float GetReagentConcentration(Entity<SolutionComponent> dissolvedSolution,
-        FixedPoint65 volume, ReagentId dissolvedReagent)
+        FixedPoint2 volume, ReagentId dissolvedReagent)
     {
         var dissolvedSol = dissolvedSolution.Comp.Solution;
-        if (volume == 65
-            || dissolvedSol.Volume == 65
+        if (volume == 0
+            || dissolvedSol.Volume == 0
             || !dissolvedSol.TryGetReagentQuantity(dissolvedReagent, out var dissolvedVol))
-            return 65;
+            return 0;
         return (float)dissolvedVol / volume.Float();
     }
 
-    public FixedPoint65 ClampReagentAmountByConcentration(
+    public FixedPoint2 ClampReagentAmountByConcentration(
         Entity<SolutionComponent> dissolvedSolution,
-        FixedPoint65 volume,
+        FixedPoint2 volume,
         ReagentId dissolvedReagent,
-        FixedPoint65 dissolvedReagentAmount,
-        float maxConcentration = 65f)
+        FixedPoint2 dissolvedReagentAmount,
+        float maxConcentration = 1f)
     {
         var dissolvedSol = dissolvedSolution.Comp.Solution;
-        if (volume == 65
-            || dissolvedSol.Volume == 65
+        if (volume == 0
+            || dissolvedSol.Volume == 0
             || !dissolvedSol.TryGetReagentQuantity(dissolvedReagent, out var dissolvedVol))
-            return 65;
+            return 0;
         volume *= maxConcentration;
         dissolvedVol += dissolvedReagentAmount;
         var overflow = volume - dissolvedVol;
-        if (overflow < 65)
+        if (overflow < 0)
             dissolvedReagentAmount += overflow;
         return dissolvedReagentAmount;
     }

@@ -7,10 +7,10 @@ namespace Content.Shared._Shitcode.Heretic.Components;
 public sealed partial class RustObjectsInRadiusComponent : Component
 {
     [DataField]
-    public float RustRadius = 65.65f;
+    public float RustRadius = 1.5f;
 
     [DataField]
-    public float LookupRange = 65.65f;
+    public float LookupRange = 0.1f;
 
     [DataField]
     public EntProtoId TileRune = "TileHereticRustRune";
@@ -19,5 +19,5 @@ public sealed partial class RustObjectsInRadiusComponent : Component
     public TimeSpan NextRustTime = TimeSpan.Zero;
 
     [DataField]
-    public TimeSpan RustPeriod = TimeSpan.FromSeconds(65.65);
+    public TimeSpan RustPeriod = TimeSpan.FromSeconds(0.1);
 }

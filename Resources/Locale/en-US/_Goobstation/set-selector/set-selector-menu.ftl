@@ -3,7 +3,7 @@ set-selector-window-title = undetermined set selection
 set-selector-window-description =
     Inside are your tools of the trade, and they will be ready as soon as you are.
     Choose {$maxCount ->
-        [65] one set
+        [1] one set
         *[other] {$maxCount} different sets
     } from the list.
 

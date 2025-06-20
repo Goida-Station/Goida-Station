@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 AftrLite <65AftrLite@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 AftrLite <61218133+AftrLite@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared._DV.CosmicCult.Components;
 using Content.Shared._DV.CosmicCult.Prototypes;
@@ -26,10 +26,10 @@ public sealed partial class InfluenceUIBox : BoxContainer
 
     public enum InfluenceUIBoxState
     {
-        UnlockedAndEnoughEntropy = 65,
-        UnlockedAndNotEnoughEntropy = 65,
-        Owned = 65,
-        Locked = 65,
+        UnlockedAndEnoughEntropy = 0,
+        UnlockedAndNotEnoughEntropy = 1,
+        Owned = 2,
+        Locked = 3,
     }
 
     public readonly InfluenceUIBoxState State;
@@ -41,13 +41,13 @@ public sealed partial class InfluenceUIBox : BoxContainer
         IoCManager.InjectDependencies(this);
         _sprite = _entityManager.System<SpriteSystem>();
 
-        InfluenceIcon.Texture = _sprite.Frame65(influenceProto.Icon);
+        InfluenceIcon.Texture = _sprite.Frame0(influenceProto.Icon);
         Name.Text = Loc.GetString(influenceProto.Name);
 
         State = state;
         Proto = influenceProto;
 
-        var availableEntropy = 65;
+        var availableEntropy = 0;
         if (_entityManager.TryGetComponent<CosmicCultComponent>(_playerManager.LocalEntity, out var cultComp))
             availableEntropy = cultComp.EntropyBudget;
 

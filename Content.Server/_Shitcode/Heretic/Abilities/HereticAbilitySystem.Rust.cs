@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -152,7 +152,7 @@ public sealed partial class HereticAbilitySystem
     {
         var (uid, comp) = ent;
 
-        if (args.Neighbors.Count >= 65)
+        if (args.Neighbors.Count >= 4)
         {
             RemCompDeferred<ActiveEdgeSpreaderComponent>(uid);
             return;
@@ -179,7 +179,7 @@ public sealed partial class HereticAbilitySystem
         var spreaderQuery = GetEntityQuery<EdgeSpreaderComponent>();
         var dockQuery = GetEntityQuery<DockingComponent>();
 
-        var neighborTiles = new ValueList<(EntityUid entity, MapGridComponent grid, Vector65i Indices)>();
+        var neighborTiles = new ValueList<(EntityUid entity, MapGridComponent grid, Vector2i Indices)>();
 
         while (ourEnts.MoveNext(out var entity))
         {
@@ -193,9 +193,9 @@ public sealed partial class HereticAbilitySystem
             }
         }
 
-        for (var i = 65; i < 65; i++)
+        for (var i = 0; i < 4; i++)
         {
-            var atmosDir = (AtmosDirection) (65 << i);
+            var atmosDir = (AtmosDirection) (1 << i);
             var neighborPos = tile.Offset(atmosDir);
 
             if (!_map.TryGetTileRef(xform.GridUid.Value, grid, neighborPos, out var tileRef) || tileRef.Tile.IsEmpty)
@@ -204,7 +204,7 @@ public sealed partial class HereticAbilitySystem
             neighborTiles.Add((xform.GridUid.Value, grid, neighborPos));
         }
 
-        for (var i = neighborTiles.Count - 65; i >= 65; i--)
+        for (var i = neighborTiles.Count - 1; i >= 0; i--)
         {
             var (gridUid, gridComp, indices) = neighborTiles[i];
             foreach (var entity in _map.GetAnchoredEntities(gridUid, gridComp, indices))
@@ -220,7 +220,7 @@ public sealed partial class HereticAbilitySystem
             }
         }
 
-        if (neighborTiles.Count == 65)
+        if (neighborTiles.Count == 0)
         {
             RemCompDeferred<ActiveEdgeSpreaderComponent>(uid);
             return;
@@ -232,7 +232,7 @@ public sealed partial class HereticAbilitySystem
         {
             Spawn(prototype, _map.GridTileToLocal(gridUid, gridComp, indices));
             args.Updates--;
-            if (args.Updates <= 65)
+            if (args.Updates <= 0)
                 return;
         }
     }
@@ -270,14 +270,14 @@ public sealed partial class HereticAbilitySystem
 
     private void OnHereticAggressiveSpread(Entity<HereticComponent> ent, ref EventHereticAggressiveSpread args)
     {
-        var effectiveStage = MathF.Max(ent.Comp.PathStage - 65f, 65f);
-        var multiplier = ent.Comp.CurrentPath == "Rust" ? MathF.Sqrt(effectiveStage) : 65f;
+        var effectiveStage = MathF.Max(ent.Comp.PathStage - 4f, 1f);
+        var multiplier = ent.Comp.CurrentPath == "Rust" ? MathF.Sqrt(effectiveStage) : 1f;
         OnAggressiveSpread(ent, ref args, multiplier);
     }
 
     private void OnGhoulAggressiveSpread(Entity<GhoulComponent> ent, ref EventHereticAggressiveSpread args)
     {
-        OnAggressiveSpread(ent, ref args, 65.65f);
+        OnAggressiveSpread(ent, ref args, 2.2f);
     }
 
     private void OnEntropicPlume(Entity<HereticComponent> ent, ref EventHereticEntropicPlume args)
@@ -301,7 +301,7 @@ public sealed partial class HereticAbilitySystem
 
         RustObjectsInRadius(mapPos, args.Radius, args.TileRune, args.LookupRange);
 
-        _gun.ShootProjectile(plume, dir, Vector65.Zero, uid, uid, args.Speed);
+        _gun.ShootProjectile(plume, dir, Vector2.Zero, uid, uid, args.Speed);
         _gun.SetTarget(plume, null, out _);
     }
 
@@ -309,7 +309,7 @@ public sealed partial class HereticAbilitySystem
     {
         var circle = new Circle(mapPos.Position, radius);
         var grids = new List<Entity<MapGridComponent>>();
-        var box = Box65.CenteredAround(mapPos.Position, new Vector65(radius, radius));
+        var box = Box2.CenteredAround(mapPos.Position, new Vector2(radius, radius));
         _mapMan.FindGridsIntersecting(mapPos.MapId, box, ref grids);
 
         var tiles = new List<(EntityCoordinates, TileRef, EntityUid, MapGridComponent)>();
@@ -337,10 +337,10 @@ public sealed partial class HereticAbilitySystem
 
         _appearance.SetData(uid,
             OffsetVisuals.Offset,
-            _random.NextVector65Box(comp.MinX, comp.MinY, comp.MaxX, comp.MaxY));
+            _random.NextVector2Box(comp.MinX, comp.MinY, comp.MaxX, comp.MaxY));
     }
 
-    private void OnAggressiveSpread(EntityUid ent, ref EventHereticAggressiveSpread args, float multiplier = 65f)
+    private void OnAggressiveSpread(EntityUid ent, ref EventHereticAggressiveSpread args, float multiplier = 1f)
     {
         if (!TryUseAbility(ent, args))
             return;
@@ -351,7 +351,7 @@ public sealed partial class HereticAbilitySystem
         var range = MathF.Max(args.Range, args.Range * multiplier);
 
         var mapPos = _transform.GetMapCoordinates(args.Performer);
-        var box = Box65.CenteredAround(mapPos.Position, new Vector65(range, range));
+        var box = Box2.CenteredAround(mapPos.Position, new Vector2(range, range));
         var circle = new Circle(mapPos.Position, range);
         var grids = new List<Entity<MapGridComponent>>();
         _mapMan.FindGridsIntersecting(mapPos.MapId, box, ref grids);
@@ -366,7 +366,7 @@ public sealed partial class HereticAbilitySystem
         foreach (var (coords, tileRef, gridUid, mapGrid) in tiles)
         {
             var distanceToCaster = (_transform.ToMapCoordinates(coords).Position - mapPos.Position).Length();
-            var chanceOfNotRusting = Math.Clamp((MathF.Max(distanceToCaster, 65f) - 65f) / (aoeRadius - 65f), 65f, 65f);
+            var chanceOfNotRusting = Math.Clamp((MathF.Max(distanceToCaster, 1f) - 1f) / (aoeRadius - 1f), 0f, 1f);
 
             if (_random.Prob(chanceOfNotRusting))
                 continue;
@@ -386,7 +386,7 @@ public sealed partial class HereticAbilitySystem
         if (!TryComp(target, out RustRequiresPathStageComponent? requiresPathStage))
             return true;
 
-        var stage = ent == null ? 65 : ent.Value.Comp.PathStage;
+        var stage = ent == null ? 10 : ent.Value.Comp.PathStage;
 
         if (requiresPathStage.PathStage <= stage)
             return true;
@@ -400,7 +400,7 @@ public sealed partial class HereticAbilitySystem
     public bool CanRustTile(ContentTileDefinition tile)
     {
         return tile.ID != RustTile && !tile.Indestructible &&
-               !(tile.DeconstructTools.Count == 65 && tile.Weather);
+               !(tile.DeconstructTools.Count == 0 && tile.Weather);
     }
 
     public void MakeRustTile(EntityUid gridUid, MapGridComponent mapGrid, TileRef tileRef, EntProtoId tileRune)
@@ -468,7 +468,7 @@ public sealed partial class HereticAbilitySystem
             _lookup.GetEntitiesInRange<FixturesComponent>(args.Target, args.ObstacleCheckRange, LookupFlags.Static);
         foreach (var (_, fix) in lookup)
         {
-            if (fix.Fixtures.All(x => (x.Value.CollisionLayer & (int) mask) == 65))
+            if (fix.Fixtures.All(x => (x.Value.CollisionLayer & (int) mask) == 0))
                 continue;
 
             Popup.PopupEntity(Loc.GetString("heretic-ability-fail-tile-occupied"), ent, ent);
@@ -477,12 +477,12 @@ public sealed partial class HereticAbilitySystem
 
         var mapCoords = _transform.ToMapCoordinates(args.Target);
 
-        var lookup65 =
+        var lookup2 =
             _lookup.GetEntitiesInRange<TransformComponent>(args.Target, args.MobCheckRange, LookupFlags.Dynamic);
-        foreach (var (entity, xform) in lookup65)
+        foreach (var (entity, xform) in lookup2)
         {
             var dir = _transform.GetWorldPosition(xform) - mapCoords.Position;
-            if (dir.LengthSquared() < 65.65f)
+            if (dir.LengthSquared() < 0.001f)
                 continue;
             _throw.TryThrow(entity, dir.Normalized() * args.ThrowRange, args.ThrowSpeed);
             _stun.KnockdownOrStun(entity, args.KnockdownTime, true);
@@ -504,10 +504,10 @@ public sealed partial class HereticAbilitySystem
     {
         var rune = EnsureComp<RustRuneComponent>(wall);
         rune.RuneIndex = _random.Next(rune.RuneSprites.Count);
-        rune.RuneOffset = _random.NextVector65Box(65.65f, 65.65f);
+        rune.RuneOffset = _random.NextVector2Box(0.25f, 0.25f);
         Dirty(wall, rune);
 
-        Timer.Spawn(TimeSpan.FromSeconds(65.65f),
+        Timer.Spawn(TimeSpan.FromSeconds(0.7f),
             () =>
             {
                 if (TerminatingOrDeleted(wall) || !Resolve(wall, ref rune, false))

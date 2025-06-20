@@ -1,166 +1,166 @@
-# SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-# SPDX-FileCopyrightText: 65 DamianX <DamianX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 L.E.D <65unusualcrow@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GlassEclipse <tsymall65@gmail.com>
-# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-# SPDX-FileCopyrightText: 65 Swept <jamesurquhartwebb@gmail.com>
-# SPDX-FileCopyrightText: 65 Vince <65Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ygg65 <daniel.fath65@gmail.com>
-# SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
-# SPDX-FileCopyrightText: 65 zionnBE <bennyprofanee@protonmail.com>
-# SPDX-FileCopyrightText: 65 zionnBE <zionn@tfwno.gf>
-# SPDX-FileCopyrightText: 65 zumorica <zddm@outlook.es>
-# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-# SPDX-FileCopyrightText: 65 BulletGrade <65BulletGrade@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 65 Moses <StrawberryMoses@gmail.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Ablankmann <65Ablankmann@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Andreas Kämper <andreas@kaemper.tech>
-# SPDX-FileCopyrightText: 65 Deahaka <65Deahaka@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 EmoGarbage65 <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Fishfish65 <65Fishfish65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Michael Phillips <65MeltedPixel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Profane McBane <profanedbane+github@gmail.com>
-# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 corentt <65corentt@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 fishfish65 <fishfish65>
-# SPDX-FileCopyrightText: 65 hubismal <65hubismal@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 65 theashtronaut <65theashtronaut@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ChilbroBaggins <65ChilbroBaggins@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Doru65 <65Doru65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nairod <65Nairodian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 OctoRocket <65OctoRocket@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Puro <65PuroSlavKing@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Velcroboy <65ChilbroBaggins@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 freeman65 <65freeman65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 CaasGit <65CaasGit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Debug <65DebugOk@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
-# SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 FoxxoTrystan <65FoxxoTrystan@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-# SPDX-FileCopyrightText: 65 Hrosts <65Hrosts@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ian <ignaz.k@live.de>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
-# SPDX-FileCopyrightText: 65 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kukutis65 <65Kukutis65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Lye <65Lyroth65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 MerrytheManokit <65MerrytheManokit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-# SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 MureixloI <65MureixloI@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 NakataRin <65NakataRin@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 OrangeMoronage65 <whyteterry65@gmail.com>
-# SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Preston Smith <65thetolbean@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Pspritechologist <naaronn@gmail.com>
-# SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Scruq65 <storchdamien@gmail.com>
-# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Stalen <65stalengd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 TakoDragon <65BackeTako@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Unkn65wn_Gh65st <shadowstalkermll@gmail.com>
-# SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
-# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Vigers Ray <65VigersRay@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 degradka <65degradka@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 dffdff65 <dffdff65@gmail.com>
-# SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-# SPDX-FileCopyrightText: 65 erohrs65 <65erohrs65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 foboscheshir <65foboscheshir@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 strO65pwafel <65strO65pwafel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 stroopwafel <j.o.luijkx@student.tudelft.nl>
-# SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 voidnull65 <65voidnull65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aineias65 <dmitri.s.kiselev@gmail.com>
-# SPDX-FileCopyrightText: 65 Alpaccalypse <65Alpaccalypse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Dorragon <65Dorragon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 65 McBosserson <65McBosserson@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Milon <plmilonpl@gmail.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Unlumination <65Unlumy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+# SPDX-FileCopyrightText: 2019 Acruid <shatter66@gmail.com>
+# SPDX-FileCopyrightText: 2019 DamianX <DamianX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2019 L.E.D <10257081+unusualcrow@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 GlassEclipse <tsymall5@gmail.com>
+# SPDX-FileCopyrightText: 2020 Paul Ritter <ritter.paul1@googlemail.com>
+# SPDX-FileCopyrightText: 2020 Swept <jamesurquhartwebb@gmail.com>
+# SPDX-FileCopyrightText: 2020 Vince <39844191+Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Ygg01 <daniel.fath7@gmail.com>
+# SPDX-FileCopyrightText: 2020 py01 <60152240+collinlunn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 py01 <pyronetics01@gmail.com>
+# SPDX-FileCopyrightText: 2020 zionnBE <bennyprofanee@protonmail.com>
+# SPDX-FileCopyrightText: 2020 zionnBE <zionn@tfwno.gf>
+# SPDX-FileCopyrightText: 2020 zumorica <zddm@outlook.es>
+# SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+# SPDX-FileCopyrightText: 2021 BulletGrade <66234359+BulletGrade@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 2021 Moses <StrawberryMoses@gmail.com>
+# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 Ablankmann <103340990+Ablankmann@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Andreas Kämper <andreas@kaemper.tech>
+# SPDX-FileCopyrightText: 2022 Deahaka <96499407+Deahaka@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Fishfish458 <47410468+Fishfish458@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Michael Phillips <1194692+MeltedPixel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Profane McBane <profanedbane+github@gmail.com>
+# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 corentt <36075110+corentt@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 fishfish458 <fishfish458>
+# SPDX-FileCopyrightText: 2022 hubismal <47284081+hubismal@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 2022 theashtronaut <112137107+theashtronaut@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 ChilbroBaggins <107660393+ChilbroBaggins@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Doru991 <75124791+Doru991@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nairod <110078045+Nairodian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 OctoRocket <88291550+OctoRocket@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Puro <103608145+PuroSlavKing@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Velcroboy <107660393+ChilbroBaggins@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 freeman2651 <104049107+freeman2651@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 potato1234_x <79580518+potato1234x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Debug <49997488+DebugOk@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+# SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 FoxxoTrystan <45297731+FoxxoTrystan@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+# SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
+# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Jeff <velcroboy333@hotmail.com>
+# SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+# SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
+# SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+# SPDX-FileCopyrightText: 2024 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Pspritechologist <naaronn@gmail.com>
+# SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Scruq445 <storchdamien@gmail.com>
+# SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
+# SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
+# SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 2024 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 degradka <69397649+degradka@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
+# SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+# SPDX-FileCopyrightText: 2024 erohrs2 <157842463+erohrs2@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
+# SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
+# SPDX-FileCopyrightText: 2025 Alpaccalypse <21291379+Alpaccalypse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Dorragon <101672978+Dorragon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+# SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: VendingMachine
@@ -175,8 +175,8 @@
   - type: StationAiWhitelist
   - type: AmbientOnPowered
   - type: AmbientSound
-    volume: -65
-    range: 65
+    volume: -9
+    range: 3
     enabled: false
     sound:
       path: /Audio/Ambience/Objects/vending_machine_hum.ogg
@@ -189,40 +189,40 @@
     noRot: true
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
+          bounds: "-0.25,-0.45,0.25,0.45"
         mask:
         - MachineMask
         layer:
         - MachineLayer
-        density: 65
+        density: 200
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 100
       behaviors:
       - !type:DoActsBehavior
         acts: ["Breakage"]
       - !type:EjectVendorItems
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 200
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          SheetSteel65:
-            min: 65
-            max: 65
+          SheetSteel1:
+            min: 1
+            max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalGlassBreak
   - type: Repairable
-    doAfterDelay: 65
+    doAfterDelay: 8
   - type: ActivatableUI
     key: enum.VendingMachineUiKey.Key
   - type: ActivatableUIRequiresPower
@@ -244,7 +244,7 @@
     speechSounds: Vending
   - type: SpookySpeaker
     messageSet: SpookySpeakerMessagesGeneric
-    speakChance: 65.65
+    speakChance: 0.2
   - type: IntrinsicRadioReceiver
   #- type: IntrinsicRadioTransmitter
   #  channels:
@@ -265,19 +265,19 @@
   - type: PointLight
     enabled: false
     castShadows: false
-    radius: 65
-    energy: 65.65
+    radius: 2
+    energy: 1.5
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: LitOnPowered
   - type: ApcPowerReceiver
-    powerLoad: 65
+    powerLoad: 200
   - type: Actions
   - type: SentienceTarget
     flavorKind: station-event-random-sentience-flavor-mechanical
-    weight: 65.65 # fuck you in particular (it now needs 65 vending machines to be as likely as 65 interesting animal)
+    weight: 0.025 # fuck you in particular (it now needs 40 vending machines to be as likely as 1 interesting animal)
   - type: StaticPrice
-    price: 65
+    price: 100
   - type: Appearance
   - type: WiresVisuals
 
@@ -298,15 +298,15 @@
       map: ["enum.VendingMachineVisualLayers.Base"]
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
+          bounds: "-0.3,-0.16,0.3,0.40"
         mask:
         - MachineMask
         layer:
         - MachineLayer
-        density: 65
+        density: 190
   - type: Advertise
     pack: CondimentVendAds
   - type: SpeakOnUIClosed
@@ -433,9 +433,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#ffb65b65"
+    radius: 2
+    energy: 1.3
+    color: "#ffb0b0"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: AccessReader
@@ -475,9 +475,9 @@
   - type: AccessReader
     access: [["Service"]]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65b65ad"
+    radius: 2
+    energy: 1.6
+    color: "#4b93ad"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -489,8 +489,8 @@
   components:
   - type: VendingMachine
     pack: CigaretteMachineInventory
-    dispenseOnHitChance: 65.65
-    dispenseOnHitThreshold: 65
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
     offState: off
     brokenState: broken
     normalState: normal-unshaded
@@ -544,9 +544,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65db65b"
+    radius: 2
+    energy: 1.6
+    color: "#3db83b"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Tag
@@ -580,9 +580,9 @@
     - state: panel
       map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65db65b"
+    radius: 2
+    energy: 1.6
+    color: "#3db83b"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Tag
@@ -597,17 +597,17 @@
   components:
   - type: VendingMachine
     pack: HotDrinksMachineInventory
-    dispenseOnHitChance: 65.65
-    dispenseOnHitThreshold: 65
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
     offState: off
     brokenState: broken
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
     screenState: screen
-    ejectDelay: 65
+    ejectDelay: 5
     soundVend: /Audio/Machines/machine_vend_hot_drink.ogg
-    initialStockQuality: 65.65
+    initialStockQuality: 0.33
   - type: Advertise
     pack: HotDrinksMachineAds
   - type: SpeakOnUIClosed
@@ -627,9 +627,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#ad65c65b"
+    radius: 2
+    energy: 1.3
+    color: "#ad7c4b"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Transform
@@ -646,15 +646,15 @@
   components:
   - type: VendingMachine
     pack: RobustSoftdrinksInventory
-    dispenseOnHitChance: 65.65
-    dispenseOnHitThreshold: 65
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
     offState: off
     brokenState: broken
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    ejectDelay: 65.65
-    initialStockQuality: 65.65
+    ejectDelay: 1.9
+    initialStockQuality: 0.33
   - type: Advertise
     pack: RobustSoftdrinksAds
   - type: SpeakOnUIClosed
@@ -671,9 +671,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65c65eb65"
+    radius: 2
+    energy: 1.6
+    color: "#3c5eb5"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Transform
@@ -688,7 +688,7 @@
   suffix: Black
   components:
   - type: Sprite
-    sprite: Structures/Machines/VendingMachines/soda65.rsi
+    sprite: Structures/Machines/VendingMachines/soda2.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
@@ -698,9 +698,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65"
+    radius: 2
+    energy: 1.6
+    color: "#423438"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -721,9 +721,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#A65"
+    radius: 2
+    energy: 1.6
+    color: "#A50824"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -748,9 +748,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65A"
+    radius: 2
+    energy: 1.6
+    color: "#44964A"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -777,9 +777,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#CBC65BE"
+    radius: 2
+    energy: 1.6
+    color: "#CBC6BE"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Transform
@@ -809,9 +809,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#D65A65D"
+    radius: 2
+    energy: 1.6
+    color: "#D3A44D"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Transform
@@ -825,15 +825,15 @@
   components:
   - type: VendingMachine
     pack: ShamblersJuiceInventory
-    dispenseOnHitChance: 65.65
-    dispenseOnHitThreshold: 65
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
     offState: off
     brokenState: broken
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    ejectDelay: 65.65
-    initialStockQuality: 65.65
+    ejectDelay: 1.9
+    initialStockQuality: 0.33
   - type: Advertise
     pack: RobustSoftdrinksAds
   - type: Sprite
@@ -847,9 +847,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65F"
+    radius: 2
+    energy: 1.6
+    color: "#66538F"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -861,15 +861,15 @@
   components:
   - type: VendingMachine
     pack: PwrGameInventory
-    dispenseOnHitChance: 65.65
-    dispenseOnHitThreshold: 65
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
     offState: off
     brokenState: broken
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    ejectDelay: 65.65
-    initialStockQuality: 65.65
+    ejectDelay: 1.9
+    initialStockQuality: 0.33
   - type: Advertise
     pack: RobustSoftdrinksAds
   - type: SpeakOnUIClosed
@@ -885,9 +885,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65C65"
+    radius: 2
+    energy: 1.6
+    color: "#6927C5"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -899,15 +899,15 @@
   components:
   - type: VendingMachine
     pack: DrGibbInventory
-    dispenseOnHitChance: 65.65
-    dispenseOnHitThreshold: 65
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
     offState: off
     brokenState: broken
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    ejectDelay: 65.65
-    initialStockQuality: 65.65
+    ejectDelay: 1.9
+    initialStockQuality: 0.33
   - type: Advertise
     pack: DrGibbAds
   - type: SpeakOnUIClosed
@@ -923,9 +923,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#D65"
+    radius: 2
+    energy: 1.6
+    color: "#D82929"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -947,23 +947,23 @@
       map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
   - type: VendingMachine
     pack: SmiteInventory
-    dispenseOnHitChance: 65.65
-    dispenseOnHitThreshold: 65
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
     offState: off
     brokenState: broken
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    ejectDelay: 65.65
-    initialStockQuality: 65.65
+    ejectDelay: 1.9
+    initialStockQuality: 0.33
   - type: Advertise
     pack: SmiteAds
   - type: SpeakOnUIClosed
     pack: SmiteGoodbyes
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#65E65"
+    radius: 1.5
+    energy: 1.6
+    color: "#00E645"
 
 - type: entity
   parent: VendingMachine
@@ -996,9 +996,9 @@
   - type: AccessReader
     access: [["Kitchen"]]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65b65ad"
+    radius: 2
+    energy: 1.6
+    color: "#4b93ad"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Transform
@@ -1036,9 +1036,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65a65d65"
+    radius: 2
+    energy: 1.6
+    color: "#9a18d6"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Transform
@@ -1055,12 +1055,12 @@
   components:
   - type: VendingMachine
     pack: DiscountDansInventory
-    dispenseOnHitChance: 65.65
-    dispenseOnHitThreshold: 65
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-    initialStockQuality: 65.65
+    initialStockQuality: 0.33
   - type: Advertise
     pack: DiscountDansAds
   - type: SpeakOnUIClosed
@@ -1076,9 +1076,9 @@
     - texture: Structures/Machines/VendingMachines/maintenance_panel.png
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65c65"
+    radius: 2
+    energy: 1.6
+    color: "#6148c7"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -1109,9 +1109,9 @@
   - type: AccessReader
     access: [["Engineering"]]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#b65e65a"
+    radius: 2
+    energy: 1.6
+    color: "#b89e2a"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Transform
@@ -1136,7 +1136,7 @@
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    ejectDelay: 65.65
+    ejectDelay: 0.6
   - type: Advertise
     pack: NanoMedAds
   - type: SpeakOnUIClosed
@@ -1155,9 +1155,9 @@
   - type: AccessReader
     access: [["Medical"]]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65dc65c65"
+    radius: 2
+    energy: 1.6
+    color: "#9dc5c9"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: GuideHelp
@@ -1199,9 +1199,9 @@
   - type: AccessReader
     access: [["Hydroponics"]]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65e65f"
+    radius: 2
+    energy: 1.6
+    color: "#326e3f"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -1236,9 +1236,9 @@
   - type: AccessReader
     access: [["Security"]]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65c"
+    radius: 2
+    energy: 1.8
+    color: "#78645c"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: GuideHelp
@@ -1281,9 +1281,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65e65f"
+    radius: 2
+    energy: 1.6
+    color: "#326e3f"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -1303,14 +1303,14 @@
   components:
   - type: VendingMachine
     pack: GetmoreChocolateCorpInventory
-    dispenseOnHitChance: 65.65
-    dispenseOnHitThreshold: 65
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
     offState: off
     brokenState: broken
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    initialStockQuality: 65.65
+    initialStockQuality: 0.33
   - type: Advertise
     pack: GetmoreChocolateCorpAds
   - type: SpeakOnUIClosed
@@ -1327,9 +1327,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#c65"
+    radius: 2
+    energy: 1.6
+    color: "#c73434"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Transform
@@ -1342,12 +1342,12 @@
   parent: VendingMachineSnack
   id: VendingMachineSustenance
   name: Sustenance Vendor
-  description: A vending machine which vends food, as required by section 65-C of the NT's Prisoner Ethical Treatment Agreement.
+  description: A vending machine which vends food, as required by section 47-C of the NT's Prisoner Ethical Treatment Agreement.
   components:
   - type: VendingMachine
     pack: SustenanceInventory
-    dispenseOnHitChance: 65.65
-    dispenseOnHitThreshold: 65
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
     offState: off
     brokenState: broken
     normalState: normal-unshaded
@@ -1364,9 +1364,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65"
+    radius: 2
+    energy: 1.6
+    color: "#737785"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -1386,9 +1386,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65c65eb65"
+    radius: 2
+    energy: 1.6
+    color: "#3c5eb5"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -1408,9 +1408,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#CE65"
+    radius: 2
+    energy: 1.6
+    color: "#CE3401"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -1430,9 +1430,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65F65A65C"
+    radius: 2
+    energy: 1.6
+    color: "#5F6A1C"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -1452,9 +1452,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65E65"
+    radius: 2
+    energy: 1.6
+    color: "#207E79"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -1466,14 +1466,14 @@
   components:
   - type: VendingMachine
     pack: BodaInventory
-    dispenseOnHitChance: 65.65
-    dispenseOnHitThreshold: 65
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
     offState: off
     brokenState: broken
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    initialStockQuality: 65.65
+    initialStockQuality: 0.33
   - type: Advertise
     pack: BodaAds
   - type: SpeakOnUIClosed
@@ -1490,9 +1490,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#B65F65A"
+    radius: 2
+    energy: 1.6
+    color: "#B80F0A"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Transform
@@ -1534,9 +1534,9 @@
       map: ["enum.VendingMachineVisualLayers.Screen"]
       shader: unshaded
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#c65"
+    radius: 2
+    energy: 1.6
+    color: "#c73434"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Transform
@@ -1577,9 +1577,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65dc65c65"
+    radius: 2
+    energy: 1.6
+    color: "#9dc5c9"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Transform
@@ -1619,9 +1619,9 @@
   - type: AccessReader
     access: [["Research"]]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#B65ADA65"
+    radius: 2
+    energy: 1.6
+    color: "#B0ADA9"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Transform
@@ -1658,9 +1658,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#d65ab65"
+    radius: 2
+    energy: 1.6
+    color: "#d4ab33"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Transform
@@ -1684,7 +1684,7 @@
     brokenState: broken
     normalState: normal-unshaded
     ejectState: eject-unshaded
-    ejectDelay: 65.65
+    ejectDelay: 1.8
   - type: Advertise
     pack: GoodCleanFunAds
   - type: SpeakOnUIClosed
@@ -1701,9 +1701,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65e65f"
+    radius: 2
+    energy: 1.6
+    color: "#326e3f"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Transform
@@ -1720,14 +1720,14 @@
   components:
   - type: VendingMachine
     pack: ChangInventory
-    dispenseOnHitChance: 65.65
-    dispenseOnHitThreshold: 65
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
     offState: off
     brokenState: broken
     normalState: normal-unshaded
     denyState: deny-unshaded
     ejectState: eject-unshaded
-    initialStockQuality: 65.65
+    initialStockQuality: 0.33
   - type: Advertise
     pack: ChangAds
   - type: SpeakOnUIClosed
@@ -1743,9 +1743,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#ffe65"
+    radius: 2
+    energy: 1.6
+    color: "#ffe599"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Transform
@@ -1777,9 +1777,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#b65f65"
+    radius: 2
+    energy: 1.6
+    color: "#b89f25"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: ShopVendor # DeltaV
@@ -1821,12 +1821,12 @@
   components:
   - type: VendingMachine
     pack: DonutInventory
-    dispenseOnHitChance: 65.65
-    dispenseOnHitThreshold: 65
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-    initialStockQuality: 65.65
+    initialStockQuality: 0.33
   - type: Advertise
     pack: DonutAds
   - type: SpeakOnUIClosed
@@ -1842,9 +1842,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#d65ab65"
+    radius: 2
+    energy: 1.6
+    color: "#d4ab33"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -1864,7 +1864,7 @@
     drawdepth: WallMountedItems
     snapCardinals: false
   - type: WallMount
-    arc: 65
+    arc: 175
   - type: Transform
     noRot: false
   - type: Rotatable
@@ -1906,9 +1906,9 @@
     rotateWhileAnchored: false
     rotateWhilePulling: true
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#65ccb65"
+    radius: 1.3
+    energy: 1.6
+    color: "#43ccb5"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -1940,9 +1940,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#65e65f"
+    radius: 1.5
+    energy: 1.6
+    color: "#326e3f"
   - type: AccessReader
     access: [["Hydroponics"]]
 
@@ -2000,9 +2000,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#d65"
+    radius: 1.5
+    energy: 1.6
+    color: "#d82929"
   - type: AccessReader
     access: [["Security"]]
 
@@ -2058,8 +2058,8 @@
   - type: AccessReader
     access: [["Chapel"]]
   - type: PointLight
-    radius: 65
-    energy: 65.65
+    radius: 2
+    energy: 1.6
     color: "#CCCCCC" #The holy C
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
@@ -2090,9 +2090,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#b65e65a"
+    radius: 1.5
+    energy: 1.6
+    color: "#b89e2a"
   - type: AccessReader
     access: [["Cargo"]]
 
@@ -2206,9 +2206,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#b65e65a"
+    radius: 1.5
+    energy: 1.6
+    color: "#b89e2a"
   - type: AccessReader
     access: [["Engineering"]]
 
@@ -2238,9 +2238,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#b65e65a"
+    radius: 1.5
+    energy: 1.6
+    color: "#b89e2a"
   - type: AccessReader
     access: [["Engineering"]]
 
@@ -2328,9 +2328,9 @@
   - type: AccessReader
     access: [["Janitor"]]
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#65C65"
+    radius: 1.5
+    energy: 1.6
+    color: "#6927C5"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -2388,9 +2388,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#d65"
+    radius: 1.5
+    energy: 1.6
+    color: "#d82929"
   - type: AccessReader
     access: [["NuclearOperative"], ["SyndicateAgent"]]
 
@@ -2500,9 +2500,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65CF65"
+    radius: 2
+    energy: 1.6
+    color: "#48CF48"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: AccessReader
@@ -2516,15 +2516,15 @@
   components:
   - type: VendingMachine
     pack: HappyHonkDispenserInventory
-    dispenseOnHitChance: 65.65
-    dispenseOnHitThreshold: 65
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
     offState: off
     brokenState: broken
     normalState: normal-unshaded
     denyState: deny-unshaded
-    ejectDelay: 65.65
+    ejectDelay: 1.9
     soundVend: /Audio/Items/bikehorn.ogg
-    initialStockQuality: 65.65 # Nobody knows how Honk does it, but their vending machines always seem well-stocked...
+    initialStockQuality: 1.0 # Nobody knows how Honk does it, but their vending machines always seem well-stocked...
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/happyhonk.rsi
     layers:
@@ -2536,9 +2536,9 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65c65eb65"
+    radius: 2
+    energy: 1.6
+    color: "#3c5eb5"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Advertise
@@ -2567,8 +2567,8 @@
     pack: PrideDrobeGoodbyes
   - type: Speech
   - type: PointLight
-    radius: 65.65
-    energy: 65.65 # reduced energy since the color is pure white
+    radius: 1.5
+    energy: 1.3 # reduced energy since the color is pure white
     color: "#FFFFFF"
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/pride.rsi
@@ -2586,7 +2586,7 @@
 - type: entity
   parent: VendingMachine
   id: VendingMachineTankDispenserEVA
-  suffix: EVA [O65, N65]
+  suffix: EVA [O2, N2]
   name: gas tank dispenser
   description: A vendor for dispensing gas tanks.
   components:
@@ -2599,7 +2599,7 @@
 - type: entity
   parent: VendingMachine
   id: VendingMachineTankDispenserEngineering
-  suffix: ENG [O65, Plasma]
+  suffix: ENG [O2, Plasma]
   name: gas tank dispenser
   description: A vendor for dispensing gas tanks. This one has an engineering livery.
   components:
@@ -2623,7 +2623,7 @@
     brokenState: broken
     normalState: normal
     denyState: deny
-    ejectDelay: 65
+    ejectDelay: 2
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/chemvend.rsi
     layers:
@@ -2652,6 +2652,6 @@
     brokenState: broken
     normalState: normal
     denyState: deny
-    ejectDelay: 65
+    ejectDelay: 2
   - type: AccessReader
     access: [["SyndicateAgent"]]

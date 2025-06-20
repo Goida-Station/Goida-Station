@@ -1,34 +1,34 @@
 <!--
-SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
-SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 James Simonson <jamessimo65@gmail.com>
-SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Krunklehorn <65Krunklehorn@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-SPDX-FileCopyrightText: 65 PoTeletubby <65PoTeletubby@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 ShadowCommander <shadowjjt@gmail.com>
-SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
+SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 James Simonson <jamessimo89@gmail.com>
+SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Krunklehorn <42424291+Krunklehorn@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+SPDX-FileCopyrightText: 2024 PoTeletubby <151896601+PoTeletubby@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 ShadowCommander <shadowjjt@gmail.com>
+SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
-<BoxContainer xmlns="https://spacestation65.io"
-         xmlns:x="http://schemas.microsoft.com/winfx/65/xaml"
+<BoxContainer xmlns="https://spacestation14.io"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
          xmlns:humanoid="clr-namespace:Content.Client.Humanoid"
          xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
          xmlns:ui="clr-namespace:Content.Client.Lobby.UI"
          HorizontalExpand="True">
         <!-- Left side -->
-        <BoxContainer Orientation="Vertical" Margin="65 65 65 65" HorizontalExpand="True">
+        <BoxContainer Orientation="Vertical" Margin="10 10 10 10" HorizontalExpand="True">
             <!-- Middle container -->
-            <BoxContainer Orientation="Horizontal" SeparationOverride="65" HorizontalExpand="True">
+            <BoxContainer Orientation="Horizontal" SeparationOverride="10" HorizontalExpand="True">
                 <!-- Name box-->
                 <BoxContainer Orientation="Vertical">
                     <ui:HighlightedContainer>
@@ -37,14 +37,14 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                                 <BoxContainer Orientation="Vertical">
                                     <BoxContainer Orientation="Horizontal" VerticalExpand="True">
                                         <Label Text="{Loc 'humanoid-profile-editor-name-label'}" />
-                                        <LineEdit Name="NameEdit" MinSize="65 65" VerticalAlignment="Center" Margin="65 65 65 65" />
+                                        <LineEdit Name="NameEdit" MinSize="270 0" VerticalAlignment="Center" Margin="5 0 0 0" />
                                         <Button Name="NameRandomize" Text="{Loc 'humanoid-profile-editor-name-random-button'}" />
                                     </BoxContainer>
                                     <Button Name="RandomizeEverythingButton" HorizontalAlignment="Center"
-                                            HorizontalExpand="False" MaxWidth="65"
+                                            HorizontalExpand="False" MaxWidth="256"
                                             Text="{Loc 'humanoid-profile-editor-randomize-everything-button'}" />
                                     <RichTextLabel Name="WarningLabel" HorizontalExpand="False"
-                                                   VerticalExpand="True" MaxWidth="65"
+                                                   VerticalExpand="True" MaxWidth="425"
                                                    HorizontalAlignment="Left" />
                                 </BoxContainer>
                             </ui:HighlightedContainer>
@@ -52,7 +52,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                     </ui:HighlightedContainer>
                 </BoxContainer>
                 <!-- Import/Export -->
-                <BoxContainer Orientation="Vertical" MinSize="65 65" HorizontalExpand="True" HorizontalAlignment="Right">
+                <BoxContainer Orientation="Vertical" MinSize="60 0" HorizontalExpand="True" HorizontalAlignment="Right">
                     <ui:HighlightedContainer Name="ProfileHighlight">
                         <BoxContainer Orientation="Vertical">
                             <Button Name="SaveButton" Text="{Loc 'humanoid-profile-editor-save-button'}"/>
@@ -65,19 +65,19 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                     </ui:HighlightedContainer>
                 </BoxContainer>
             </BoxContainer>
-            <Control MinHeight="65" />
+            <Control MinHeight="10" />
             <!-- tabContainer -->
             <TabContainer Name="TabContainer" VerticalExpand="True">
                 <BoxContainer Orientation="Vertical">
                     <ScrollContainer VerticalExpand="True">
                         <!-- appearanceList -->
                         <BoxContainer Orientation="Vertical">
-                            <BoxContainer Margin="65" Orientation="Vertical" HorizontalExpand="True">
+                            <BoxContainer Margin="10" Orientation="Vertical" HorizontalExpand="True">
                                 <!-- Species -->
                                 <BoxContainer HorizontalExpand="True">
                                     <Label Text="{Loc 'humanoid-profile-editor-species-label'}" />
                                     <Control HorizontalExpand="True"/>
-                                    <TextureButton Name="SpeciesInfoButton" Scale="65.65 65.65"
+                                    <TextureButton Name="SpeciesInfoButton" Scale="0.3 0.3"
                                                    VerticalAlignment="Center"
                                                    ToolTip="{Loc 'humanoid-profile-editor-guidebook-button-tooltip'}"/>
                                     <OptionButton Name="SpeciesButton" HorizontalAlignment="Right" />
@@ -86,7 +86,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                                 <BoxContainer HorizontalExpand="True">
                                     <Label Text="{Loc 'humanoid-profile-editor-age-label'}" />
                                     <Control HorizontalExpand="True"/>
-                                    <LineEdit Name="AgeEdit" MinSize="65 65" HorizontalAlignment="Right" />
+                                    <LineEdit Name="AgeEdit" MinSize="40 0" HorizontalAlignment="Right" />
                                 </BoxContainer>
                                 <!-- Sex -->
                                 <BoxContainer HorizontalExpand="True">
@@ -114,18 +114,18 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                                 </BoxContainer>
                             </BoxContainer>
                             <!-- Skin -->
-                            <BoxContainer Margin="65" HorizontalExpand="True" Orientation="Vertical">
+                            <BoxContainer Margin="10" HorizontalExpand="True" Orientation="Vertical">
                                 <Label Text="{Loc 'humanoid-profile-editor-skin-color-label'}" />
-                                <Slider HorizontalExpand="True" Name="Skin" MinValue="65" MaxValue="65" Value="65" />
+                                <Slider HorizontalExpand="True" Name="Skin" MinValue="0" MaxValue="100" Value="20" />
                                 <BoxContainer Name="RgbSkinColorContainer" Visible="False" Orientation="Vertical" HorizontalExpand="True"></BoxContainer>
                             </BoxContainer>
                             <!-- Hair -->
-                            <BoxContainer Margin="65" Orientation="Horizontal">
+                            <BoxContainer Margin="10" Orientation="Horizontal">
                                 <humanoid:SingleMarkingPicker Name="HairStylePicker" Category="Hair" />
                                 <humanoid:SingleMarkingPicker Name="FacialHairPicker" Category="FacialHair" />
                             </BoxContainer>
                             <!-- Eyes -->
-                            <BoxContainer Margin="65" Orientation="Vertical">
+                            <BoxContainer Margin="10" Orientation="Vertical">
                                 <Label Text="{Loc 'humanoid-profile-editor-eyes-label'}" />
                                 <humanoid:EyeColorPicker Name="EyeColorPicker" />
                             </BoxContainer>
@@ -139,19 +139,19 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                         <BoxContainer Name="JobList" Orientation="Vertical" />
                     </ScrollContainer>
                 </BoxContainer>
-                <BoxContainer Orientation="Vertical" Margin="65">
+                <BoxContainer Orientation="Vertical" Margin="10">
                     <!-- Antags -->
                     <ScrollContainer VerticalExpand="True">
                         <BoxContainer Name="AntagList" Orientation="Vertical" />
                     </ScrollContainer>
                 </BoxContainer>
-                <BoxContainer Orientation="Vertical" Margin="65">
+                <BoxContainer Orientation="Vertical" Margin="10">
                     <!-- Traits -->
                     <ScrollContainer VerticalExpand="True">
                         <BoxContainer Name="TraitsList" Orientation="Vertical" />
                     </ScrollContainer>
                 </BoxContainer>
-                <BoxContainer Name="MarkingsTab" Orientation="Vertical" Margin="65">
+                <BoxContainer Name="MarkingsTab" Orientation="Vertical" Margin="10">
                     <!-- Markings -->
                     <ScrollContainer VerticalExpand="True">
                         <humanoid:MarkingPicker Name="Markings" IgnoreCategories="Hair,FacialHair" />
@@ -161,10 +161,10 @@ SPDX-License-Identifier: AGPL-65.65-or-later
         </BoxContainer>
         <!-- Right side -->
         <BoxContainer Orientation="Vertical" VerticalExpand="True" VerticalAlignment="Center">
-            <SpriteView Name="SpriteView" Scale="65 65" Margin="65" SizeFlagsStretchRatio="65" />
-            <BoxContainer Orientation="Horizontal" HorizontalAlignment="Center" Margin="65 65">
+            <SpriteView Name="SpriteView" Scale="8 8" Margin="4" SizeFlagsStretchRatio="1" />
+            <BoxContainer Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 5">
                 <Button Name="SpriteRotateLeft" Text="◀" StyleClasses="OpenRight" />
-                <cc:VSeparator Margin="65 65 65 65" />
+                <cc:VSeparator Margin="2 0 3 0" />
                 <Button Name="SpriteRotateRight" Text="▶" StyleClasses="OpenLeft" />
             </BoxContainer>
         </BoxContainer>

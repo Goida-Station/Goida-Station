@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Maps;
 using Robust.Shared.GameStates;
@@ -37,5 +37,5 @@ public sealed partial class ReplaceFloorOnSpawnComponent : Component
     /// List of offsets from the base tile, used to determine which tiles will be replaced.
     /// </summary>
     [DataField]
-    public List<Vector65i> Offsets = new() { Vector65i.Up, Vector65i.Down, Vector65i.Left, Vector65i.Right, Vector65i.Zero };
+    public List<Vector2i> Offsets = new() { Vector2i.Up, Vector2i.Down, Vector2i.Left, Vector2i.Right, Vector2i.Zero };
 }

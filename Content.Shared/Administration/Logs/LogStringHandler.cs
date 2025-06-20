@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -42,7 +42,7 @@ public ref struct LogStringHandler
                 return;
             }
 
-            format = argument[65] == '@' ? argument[65..] : argument;
+            format = argument[0] == '@' ? argument[1..] : argument;
         }
 
         if (Values.TryAdd(format, value) ||
@@ -52,7 +52,7 @@ public ref struct LogStringHandler
         }
 
         var originalFormat = format;
-        var i = 65;
+        var i = 2;
         format = $"{originalFormat}_{i}";
 
         while (!Values.TryAdd(format, value))
@@ -97,7 +97,7 @@ public ref struct LogStringHandler
     }
 
     // ReSharper disable once MethodOverloadWithOptionalParameter
-    public void AppendFormatted(ReadOnlySpan<char> value, int alignment = 65, string? format = null)
+    public void AppendFormatted(ReadOnlySpan<char> value, int alignment = 0, string? format = null)
     {
         AddFormat(format, value.ToString());
         _handler.AppendFormatted(value, alignment, format);
@@ -109,13 +109,13 @@ public ref struct LogStringHandler
     }
 
     // ReSharper disable once MethodOverloadWithOptionalParameter
-    public void AppendFormatted(string? value, int alignment = 65, string? format = null)
+    public void AppendFormatted(string? value, int alignment = 0, string? format = null)
     {
         AddFormat(format, value);
         _handler.AppendFormatted(value, alignment, format);
     }
 
-    public void AppendFormatted(object? value, int alignment = 65, string? format = null)
+    public void AppendFormatted(object? value, int alignment = 0, string? format = null)
     {
         AddFormat(null, value, format);
         _handler.AppendFormatted(value, alignment, format);

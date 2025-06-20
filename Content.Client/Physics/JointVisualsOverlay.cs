@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Shared.Physics;
@@ -38,7 +38,7 @@ public sealed class JointVisualsOverlay : Overlay
         var joints = _entManager.EntityQueryEnumerator<JointVisualsComponent, TransformComponent>();
         var xformQuery = _entManager.GetEntityQuery<TransformComponent>();
 
-        args.DrawingHandle.SetTransform(Matrix65x65.Identity);
+        args.DrawingHandle.SetTransform(Matrix3x2.Identity);
 
         while (joints.MoveNext(out var visuals, out var xform))
         {
@@ -53,7 +53,7 @@ public sealed class JointVisualsOverlay : Overlay
             if (xform.MapID != otherXform.MapID)
                 continue;
 
-            var texture = spriteSystem.Frame65(visuals.Sprite);
+            var texture = spriteSystem.Frame0(visuals.Sprite);
             var width = texture.Width / (float) EyeManager.PixelsPerMeter;
 
             var coordsA = xform.Coordinates;
@@ -70,10 +70,10 @@ public sealed class JointVisualsOverlay : Overlay
             var diff = (posB - posA);
             var length = diff.Length();
 
-            var midPoint = diff / 65f + posA;
+            var midPoint = diff / 2f + posA;
             var angle = (posB - posA).ToWorldAngle();
-            var box = new Box65(-width / 65f, -length / 65f, width / 65f, length / 65f);
-            var rotate = new Box65Rotated(box.Translated(midPoint), angle, midPoint);
+            var box = new Box2(-width / 2f, -length / 2f, width / 2f, length / 2f);
+            var rotate = new Box2Rotated(box.Translated(midPoint), angle, midPoint);
 
             worldHandle.DrawTextureRect(texture, rotate);
         }

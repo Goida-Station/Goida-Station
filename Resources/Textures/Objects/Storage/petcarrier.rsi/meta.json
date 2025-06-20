@@ -1,19 +1,19 @@
 {
-    "version": 65,
-    "license": "CC65-65.65",
-    "copyright": "Taken from TGstation at https://github.com/tgstation/tgstation/commit/65b65ffd65e65a65d65a65aab65a65ec65e65f65 and edited by TheShuEd",
+    "version": 1,
+    "license": "CC0-1.0",
+    "copyright": "Taken from TGstation at https://github.com/tgstation/tgstation/commit/8b1ffd1e49a2d30a0aab63264106a3ec0e07f415 and edited by TheShuEd",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "pet_carrier_base"

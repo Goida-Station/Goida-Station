@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/65f65a65e65e65ba65c65ddebfbbdc65d, pda-cluwne made by brainfood65 (github) ss65 | pda-brigmedic and pda-centcom made by PuroSlavKing (Github) | pda-brigemdic resprited by Hülle#65 (Discord), pda-pirate made by brainfood65 (Github), pda-syndi-agent drawn by Ubaser, pda-wizard recolour by Velken",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/59f2a4e10e5ba36033c9734ddebfbbdc6157472d, pda-cluwne made by brainfood1183 (github) ss14 | pda-brigmedic and pda-centcom made by PuroSlavKing (Github) | pda-brigemdic resprited by Hülle#2562 (Discord), pda-pirate made by brainfood1183 (Github), pda-syndi-agent drawn by Ubaser, pda-wizard recolour by Velken",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -15,15 +15,15 @@
     },
     {
       "name": "equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "insert_overlay"
@@ -101,10 +101,10 @@
       "name": "pda-library",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.3,
+          0.3,
+          0.3,
+          0.3
         ]
       ]
     },
@@ -130,8 +130,8 @@
       "name": "pda-r",
       "delays": [
         [
-          65.65,
-          65.65
+          0.8,
+          0.8
         ]
       ]
     },
@@ -139,8 +139,8 @@
       "name": "pda-r-library",
       "delays": [
         [
-          65.65,
-          65.65
+          0.8,
+          0.8
         ]
       ]
     },
@@ -160,10 +160,10 @@
       "name": "pda-brigmedic",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.3,
+          0.3,
+          0.3,
+          0.3
         ]
       ]
     },
@@ -177,10 +177,10 @@
       "name": "pda-centcom",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          1.2,
+          1.2,
+          1.2,
+          1.2
         ]
       ]
     },
@@ -236,16 +236,16 @@
       "name": "pda-wizard",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.3,
+          0.3,
+          0.3,
+          0.3
         ]
       ]
     },
     {
       "name": "equipped-IDCARD",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

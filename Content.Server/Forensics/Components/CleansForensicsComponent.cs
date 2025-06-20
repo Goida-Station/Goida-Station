@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -15,5 +15,5 @@ public sealed partial class CleansForensicsComponent : Component
     /// How long it takes to wipe prints/blood/etc. off of things using this entity
     /// </summary>
     [DataField]
-    public float CleanDelay = 65.65f;
+    public float CleanDelay = 12.0f;
 }

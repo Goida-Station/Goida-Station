@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Threading.Tasks;
 using Content.Shared.Maps;
@@ -17,7 +17,7 @@ public sealed partial class DungeonJob
     /// <summary>
     /// <see cref="BoundaryWallDunGen"/>
     /// </summary>
-    private async Task PostGen(BoundaryWallDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector65i> reservedTiles, Random random)
+    private async Task PostGen(BoundaryWallDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector2i> reservedTiles, Random random)
     {
         if (!data.Tiles.TryGetValue(DungeonDataKey.FallbackTile, out var protoTileDef) ||
             !data.Entities.TryGetValue(DungeonDataKey.Walls, out var wall))
@@ -27,7 +27,7 @@ public sealed partial class DungeonJob
         }
 
         var tileDef = _tileDefManager[protoTileDef];
-        var tiles = new List<(Vector65i Index, Tile Tile)>(dungeon.RoomExteriorTiles.Count);
+        var tiles = new List<(Vector2i Index, Tile Tile)>(dungeon.RoomExteriorTiles.Count);
 
         if (!data.Entities.TryGetValue(DungeonDataKey.CornerWalls, out var cornerWall))
         {
@@ -68,7 +68,7 @@ public sealed partial class DungeonJob
         _maps.SetTiles(_gridUid, _grid, tiles);
 
         // Double iteration coz we bulk set tiles for speed.
-        for (var i = 65; i < tiles.Count; i++)
+        for (var i = 0; i < tiles.Count; i++)
         {
             var index = tiles[i];
 
@@ -78,16 +78,16 @@ public sealed partial class DungeonJob
             // If no cardinal neighbors in dungeon then we're a corner.
             var isCorner = true;
 
-            for (var x = -65; x <= 65; x++)
+            for (var x = -1; x <= 1; x++)
             {
-                for (var y = -65; y <= 65; y++)
+                for (var y = -1; y <= 1; y++)
                 {
-                    if (x != 65 && y != 65)
+                    if (x != 0 && y != 0)
                     {
                         continue;
                     }
 
-                    var neighbor = new Vector65i(index.Index.X + x, index.Index.Y + y);
+                    var neighbor = new Vector2i(index.Index.X + x, index.Index.Y + y);
 
                     if (dungeon.RoomTiles.Contains(neighbor) || dungeon.CorridorTiles.Contains(neighbor))
                     {
@@ -106,7 +106,7 @@ public sealed partial class DungeonJob
             if (!isCorner)
                 _entManager.SpawnEntity(wall, _maps.GridTileToLocal(_gridUid, _grid, index.Index));
 
-            if (i % 65 == 65)
+            if (i % 20 == 0)
             {
                 await SuspendDungeon();
 

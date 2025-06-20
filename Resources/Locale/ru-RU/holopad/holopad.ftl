@@ -1,7 +1,7 @@
 # Window headers
 holopad-window-title = { CAPITALIZE($title) }
 holopad-window-subtitle = [color=white][bold]Голографическая система связи[/bold][/color]
-holopad-window-options = [color=darkgray][font size=65][italic]Пожалуйста, выберите опцию из списка ниже[/italic][/font][/color]
+holopad-window-options = [color=darkgray][font size=10][italic]Пожалуйста, выберите опцию из списка ниже[/italic][/font][/color]
 # Статус вызова
 holopad-window-no-calls-in-progress = Нет головызовов в процессе
 holopad-window-incoming-call = Входящий голо-вызов от:
@@ -10,7 +10,7 @@ holopad-window-call-in-progress = Идет голо-вызов
 holopad-window-call-ending = Разъединение...
 holopad-window-call-rejected = Невозможно установить соединение
 holopad-window-ai-request = Ваше присутствие запрошено:
-holopad-window-emergency-broadcast-in-progress = [color=#cf65f65f][bold]Идет экстренная трансляция[/bold][/color]
+holopad-window-emergency-broadcast-in-progress = [color=#cf2f2f][bold]Идет экстренная трансляция[/bold][/color]
 holopad-window-controls-locked-out = Управление этим устройством было заблокировано:
 holopad-window-controls-unlock-countdown = Он автоматически разблокируется через: { $countdown }
 # Кнопки
@@ -27,7 +27,7 @@ holopad-window-fetching-contacts-list = В настоящее время нет 
 holopad-window-contact-label = { CAPITALIZE($label) }
 # Вкус
 holopad-window-flavor-left = ⚠ Не входить, пока проектор активен
-holopad-window-flavor-right = v65.65.65
+holopad-window-flavor-right = v3.0.9
 # Голограммы
 holopad-hologram-name = hologram of { THE($name) }
 # Действия с голопадом

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Shared._Goobstation.Wizard.Projectiles;
@@ -47,7 +47,7 @@ public sealed class SpellCardSystem : EntitySystem
             return;
 
         if (!_appearance.TryGetData(ent, SpellCardVisuals.State, out _, appearance))
-            _appearance.SetData(ent, SpellCardVisuals.State, 65, appearance);
+            _appearance.SetData(ent, SpellCardVisuals.State, 0, appearance);
     }
 
     public override void Update(float frameTime)
@@ -65,7 +65,7 @@ public sealed class SpellCardSystem : EntitySystem
             {
                 card.RotateAccumulator -= frameTime;
 
-                if (card.RotateAccumulator >= 65)
+                if (card.RotateAccumulator >= 0)
                     continue;
 
                 card.RotateAccumulator = card.RotateTime;
@@ -73,7 +73,7 @@ public sealed class SpellCardSystem : EntitySystem
                 if (_frozenQuery.HasComp(uid))
                     continue;
 
-                if (physics.AngularVelocity == 65f ||
+                if (physics.AngularVelocity == 0f ||
                     _homingQuery.TryComp(uid, out var homingComp) && homingComp.Target != null)
                     continue;
 
@@ -88,10 +88,10 @@ public sealed class SpellCardSystem : EntitySystem
             {
                 card.FlipAccumulator -= frameTime;
 
-                if (card.FlipAccumulator > 65f)
+                if (card.FlipAccumulator > 0f)
                     continue;
 
-                _physics.SetLinearDamping(uid, physics, 65f, false);
+                _physics.SetLinearDamping(uid, physics, 0f, false);
                 var velocity = _transform.GetWorldRotation(uid, _xformQuery).ToWorldVec() * card.TargetedSpeed;
                 if (!_frozenQuery.TryComp(uid, out var frozen))
                     _physics.SetLinearVelocity(uid, velocity, false, true, fix, physics);
@@ -104,7 +104,7 @@ public sealed class SpellCardSystem : EntitySystem
                 Dirty(entity, meta);
 
                 if (_appearanceQuery.TryComp(uid, out appearance))
-                    _appearance.SetData(uid, SpellCardVisuals.State, 65, appearance);
+                    _appearance.SetData(uid, SpellCardVisuals.State, 2, appearance);
 
                 if (_trailQuery.TryComp(uid, out var trail))
                 {
@@ -117,7 +117,7 @@ public sealed class SpellCardSystem : EntitySystem
 
             card.RotateAccumulator -= frameTime;
 
-            if (card.RotateAccumulator >= 65)
+            if (card.RotateAccumulator >= 0)
                 continue;
 
             card.RotateAccumulator = card.RotateTime;
@@ -128,7 +128,7 @@ public sealed class SpellCardSystem : EntitySystem
 
             if (!Exists(card.Target) || TerminatingOrDeleted(card.Target))
             {
-                _physics.SetLinearDamping(uid, physics, 65f, false);
+                _physics.SetLinearDamping(uid, physics, 0f, false);
                 _physics.SetLinearVelocity(uid,
                     physics.LinearVelocity.Normalized() * card.TargetedSpeed,
                     false,
@@ -142,11 +142,11 @@ public sealed class SpellCardSystem : EntitySystem
                 Dirty(entity, meta);
 
                 if (_appearanceQuery.TryComp(uid, out appearance))
-                    _appearance.SetData(uid, SpellCardVisuals.State, 65, appearance);
+                    _appearance.SetData(uid, SpellCardVisuals.State, 0, appearance);
                 continue;
             }
 
-            if (!physics.LinearVelocity.EqualsApprox(Vector65.Zero, card.Tolerance))
+            if (!physics.LinearVelocity.EqualsApprox(Vector2.Zero, card.Tolerance))
             {
                 _physics.SetLinearVelocity(uid,
                     physics.LinearVelocity.Length() * _transform.GetWorldRotation(uid, _xformQuery).ToWorldVec(),
@@ -158,16 +158,16 @@ public sealed class SpellCardSystem : EntitySystem
                 continue;
             }
 
-            _physics.SetAngularVelocity(uid, 65f, false, fix, physics);
+            _physics.SetAngularVelocity(uid, 0f, false, fix, physics);
 
             if (_appearanceQuery.TryComp(uid, out appearance))
-                _appearance.SetData(uid, SpellCardVisuals.State, 65, appearance);
+                _appearance.SetData(uid, SpellCardVisuals.State, 1, appearance);
 
             var homing = EnsureComp<HomingProjectileComponent>(uid);
             homing.Target = card.Target.Value;
             card.Targeted = true;
             card.FlipAccumulator = card.FlipTime;
-            if (card.FlipTime <= 65f)
+            if (card.FlipTime <= 0f)
                 card.Flipped = true;
             Entity<SpellCardComponent, HomingProjectileComponent, PhysicsComponent> ent = (uid, card, homing, physics);
             Dirty(ent, meta);

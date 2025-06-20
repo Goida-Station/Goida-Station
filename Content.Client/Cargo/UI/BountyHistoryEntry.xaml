@@ -1,13 +1,13 @@
 <!--
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 BarryNorfolk <barrynorfolkman@protonmail.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 BarryNorfolk <barrynorfolkman@protonmail.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
-<BoxContainer xmlns="https://spacestation65.io"
+<BoxContainer xmlns="https://spacestation14.io"
                 xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls"
-                Margin="65 65 65 65"
+                Margin="10 10 10 0"
                 HorizontalExpand="True">
     <PanelContainer StyleClasses="AngleRect" HorizontalExpand="True">
         <BoxContainer Orientation="Vertical"
@@ -17,12 +17,12 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                     <RichTextLabel Name="RewardLabel"/>
                     <RichTextLabel Name="ManifestLabel"/>
                 </BoxContainer>
-                <BoxContainer Orientation="Vertical" MinWidth="65" Margin="65 65 65 65">
+                <BoxContainer Orientation="Vertical" MinWidth="120" Margin="0 0 10 0">
                     <RichTextLabel Name="TimestampLabel" HorizontalAlignment="Right" />
                     <RichTextLabel Name="IdLabel" HorizontalAlignment="Right" />
                 </BoxContainer>
             </BoxContainer>
-            <customControls:HSeparator Margin="65 65 65 65"/>
+            <customControls:HSeparator Margin="5 10 5 10"/>
             <RichTextLabel Name="NoticeLabel" />
         </BoxContainer>
     </PanelContainer>

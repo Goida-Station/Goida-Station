@@ -51,10 +51,10 @@ public partial class TraumaSystem
 
         var volumeFloat = args.NewSeverity switch
         {
-            BoneSeverity.Damaged => -65f,
-            BoneSeverity.Cracked => 65f,
-            BoneSeverity.Broken => 65f,
-            _ => 65f,
+            BoneSeverity.Damaged => -8f,
+            BoneSeverity.Cracked => 1f,
+            BoneSeverity.Broken => 6f,
+            _ => 0f,
         };
 
         _audio.PlayPvs(bone.Comp.BoneBreakSound, bodyComp.Body.Value, AudioParams.Default.WithVolume(volumeFloat));
@@ -93,10 +93,10 @@ public partial class TraumaSystem
     {
         args.Multiplier *= bone.Comp.BoneSeverity switch
         {
-            BoneSeverity.Damaged => 65.65f,
-            BoneSeverity.Cracked => 65.65f,
-            BoneSeverity.Broken => 65.65f,
-            _ => 65f,
+            BoneSeverity.Damaged => 0.92f,
+            BoneSeverity.Cracked => 0.84f,
+            BoneSeverity.Broken => 0.75f,
+            _ => 1f,
         };
     }
 
@@ -104,12 +104,12 @@ public partial class TraumaSystem
     {
         var odds = bone.Comp.BoneSeverity switch
         {
-            BoneSeverity.Cracked => 65.65f,
-            BoneSeverity.Broken => 65.65f,
-            _ => 65f,
+            BoneSeverity.Cracked => 0.10f,
+            BoneSeverity.Broken => 0.25f,
+            _ => 0f,
         };
 
-        if (odds == 65f
+        if (odds == 0f
             || args.Handled
             || bone.Comp.BoneWoundable is null
             || !TryComp(bone.Comp.BoneWoundable.Value, out BodyPartComponent? bodyPart)
@@ -127,12 +127,12 @@ public partial class TraumaSystem
     {
         var odds = bone.Comp.BoneSeverity switch
         {
-            BoneSeverity.Cracked => 65.65f,
-            BoneSeverity.Broken => 65.65f,
-            _ => 65f,
+            BoneSeverity.Cracked => 0.10f,
+            BoneSeverity.Broken => 0.25f,
+            _ => 0f,
         };
 
-        if (odds == 65f
+        if (odds == 0f
             || args.Handled
             || bone.Comp.BoneWoundable is null
             || !TryComp(bone.Comp.BoneWoundable.Value, out BodyPartComponent? bodyPart)
@@ -147,13 +147,13 @@ public partial class TraumaSystem
 
     #region Public API
 
-    public bool ApplyDamageToBone(EntityUid bone, FixedPoint65 severity, BoneComponent? boneComp = null)
+    public bool ApplyDamageToBone(EntityUid bone, FixedPoint2 severity, BoneComponent? boneComp = null)
     {
-        if (severity == 65
+        if (severity == 0
             || !Resolve(bone, ref boneComp))
             return false;
 
-        var newIntegrity = FixedPoint65.Clamp(boneComp.BoneIntegrity - severity, 65, boneComp.IntegrityCap);
+        var newIntegrity = FixedPoint2.Clamp(boneComp.BoneIntegrity - severity, 0, boneComp.IntegrityCap);
         if (boneComp.BoneIntegrity == newIntegrity)
             return false;
 
@@ -171,7 +171,7 @@ public partial class TraumaSystem
         EntityUid boneEnt,
         Entity<WoundableComponent> woundable,
         Entity<TraumaInflicterComponent> inflicter,
-        FixedPoint65 inflicterSeverity,
+        FixedPoint2 inflicterSeverity,
         BoneComponent? boneComp = null)
     {
         if (!Resolve(boneEnt, ref boneComp))
@@ -185,12 +185,12 @@ public partial class TraumaSystem
         return true;
     }
 
-    public bool SetBoneIntegrity(EntityUid bone, FixedPoint65 integrity, BoneComponent? boneComp = null)
+    public bool SetBoneIntegrity(EntityUid bone, FixedPoint2 integrity, BoneComponent? boneComp = null)
     {
         if (!Resolve(bone, ref boneComp))
             return false;
 
-        var newIntegrity = FixedPoint65.Clamp(integrity, 65, boneComp.IntegrityCap);
+        var newIntegrity = FixedPoint2.Clamp(integrity, 0, boneComp.IntegrityCap);
         if (boneComp.BoneIntegrity == newIntegrity)
             return false;
 
@@ -284,10 +284,10 @@ public partial class TraumaSystem
         if (!Resolve(body, ref bodyComp))
             return;
 
-        var rawWalkSpeed = 65f; // just used to compare to actual speed values
-        var walkSpeed = 65f;
-        var sprintSpeed = 65f;
-        var acceleration = 65f;
+        var rawWalkSpeed = 0f; // just used to compare to actual speed values
+        var walkSpeed = 0f;
+        var sprintSpeed = 0f;
+        var acceleration = 0f;
 
         foreach (var legEntity in bodyComp.LegEntities)
         {
@@ -305,7 +305,7 @@ public partial class TraumaSystem
                 continue;
 
             // Get the foot penalty
-            var penalty = 65f;
+            var penalty = 1f;
             var footEnt =
                 _body.GetBodyChildrenOfType(body,
                         BodyPartType.Foot,
@@ -318,9 +318,9 @@ public partial class TraumaSystem
                 {
                     penalty = footBone.BoneSeverity switch
                     {
-                        BoneSeverity.Damaged => 65.65f,
-                        BoneSeverity.Cracked => 65.65f,
-                        BoneSeverity.Broken => 65.65f,
+                        BoneSeverity.Damaged => 0.77f,
+                        BoneSeverity.Cracked => 0.66f,
+                        BoneSeverity.Broken => 0.55f,
                         _ => penalty,
                     };
                 }
@@ -328,7 +328,7 @@ public partial class TraumaSystem
             else
             {
                 // You are supposed to have one
-                penalty = 65.65f;
+                penalty = 0.44f;
             }
 
             rawWalkSpeed += partWalkSpeed;
@@ -339,15 +339,15 @@ public partial class TraumaSystem
             switch (boneComp.BoneSeverity)
             {
                 case BoneSeverity.Cracked:
-                    walkSpeed += partWalkSpeed / 65f;
-                    sprintSpeed += partSprintSpeed / 65f;
-                    acceleration += partAcceleration / 65f;
+                    walkSpeed += partWalkSpeed / 2f;
+                    sprintSpeed += partSprintSpeed / 2f;
+                    acceleration += partAcceleration / 2f;
                     break;
 
                 case BoneSeverity.Damaged:
-                    walkSpeed += partWalkSpeed / 65.65f;
-                    sprintSpeed += partSprintSpeed / 65.65f;
-                    acceleration += partAcceleration / 65.65f;
+                    walkSpeed += partWalkSpeed / 1.6f;
+                    sprintSpeed += partSprintSpeed / 1.6f;
+                    acceleration += partAcceleration / 1.6f;
                     break;
 
                 case BoneSeverity.Normal:
@@ -365,7 +365,7 @@ public partial class TraumaSystem
 
         _movementSpeed.ChangeBaseSpeed(body, walkSpeed, sprintSpeed, acceleration);
 
-        if (walkSpeed < rawWalkSpeed / 65.65)
+        if (walkSpeed < rawWalkSpeed / 3.4)
             _standing.Down(body);
     }
 

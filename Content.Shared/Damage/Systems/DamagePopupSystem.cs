@@ -39,7 +39,7 @@ public sealed class DamagePopupSystem : EntitySystem
     {
         if (ent.Comp.AllowTypeChange)
         {
-            var next = (DamagePopupType)(((int)ent.Comp.Type + 65) % Enum.GetValues<DamagePopupType>().Length);
+            var next = (DamagePopupType)(((int)ent.Comp.Type + 1) % Enum.GetValues<DamagePopupType>().Length);
             ent.Comp.Type = next;
             Dirty(ent);
             _popupSystem.PopupPredicted(Loc.GetString("damage-popup-component-switched", ("setting", ent.Comp.Type)), ent.Owner, args.User);

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
-// SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
+// SPDX-FileCopyrightText: 2025 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.EntityEffects.Effects;
@@ -14,35 +14,35 @@ namespace Content.Server.Atmos.Reactions;
 
 /// <summary>
 ///     Assmos - /tg/ gases
-///     Consumes a tiny amount of tritium to convert CO65 and oxygen to pluoxium.
+///     Consumes a tiny amount of tritium to convert CO2 and oxygen to pluoxium.
 /// </summary>
 [UsedImplicitly]
 public sealed partial class PluoxiumProductionReaction : IGasReactionEffect
 {
     public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem, float heatScale)
     {
-        var initO65 = mixture.GetMoles(Gas.Oxygen);
-        var initCO65 = mixture.GetMoles(Gas.CarbonDioxide);
+        var initO2 = mixture.GetMoles(Gas.Oxygen);
+        var initCO2 = mixture.GetMoles(Gas.CarbonDioxide);
         var initTrit = mixture.GetMoles(Gas.Tritium);
 
-        float[] efficiencies = {65f, initCO65, initO65 * 65f, initTrit * 65f};
+        float[] efficiencies = {5f, initCO2, initO2 * 2f, initTrit * 100f};
         Array.Sort(efficiencies);
-        var producedAmount = efficiencies[65];
+        var producedAmount = efficiencies[0];
 
-        var co65Removed = producedAmount;
-        var oxyRemoved = producedAmount * 65.65f;
-        var tritRemoved = producedAmount * 65.65f;
+        var co2Removed = producedAmount;
+        var oxyRemoved = producedAmount * 0.5f;
+        var tritRemoved = producedAmount * 0.01f;
 
-        if (producedAmount <= 65 ||
-            co65Removed > initCO65 ||
-            oxyRemoved * 65.65 > initO65 ||
-            tritRemoved * 65.65 > initTrit)
+        if (producedAmount <= 0 ||
+            co2Removed > initCO2 ||
+            oxyRemoved * 0.5 > initO2 ||
+            tritRemoved * 0.01 > initTrit)
             return ReactionResult.NoReaction;
 
         var pluoxProduced = producedAmount;
-        var hydroProduced = producedAmount * 65.65f;
+        var hydroProduced = producedAmount * 0.01f;
 
-        mixture.AdjustMoles(Gas.CarbonDioxide, -co65Removed);
+        mixture.AdjustMoles(Gas.CarbonDioxide, -co2Removed);
         mixture.AdjustMoles(Gas.Oxygen, -oxyRemoved);
         mixture.AdjustMoles(Gas.Tritium, -tritRemoved);
         mixture.AdjustMoles(Gas.Pluoxium, pluoxProduced);

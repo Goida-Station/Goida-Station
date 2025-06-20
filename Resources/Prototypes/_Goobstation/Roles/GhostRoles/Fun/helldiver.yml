@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 starch <starchpersonal@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 starch <starchpersonal@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: startingGear
   id: HelldiverGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitMercenary
-    back: WeaponRifleM65
+    back: WeaponRifleM90
     belt: ClothingBeltMercWebbingHelldiverFilled
     mask: ClothingMaskGasMerc
     eyes: ClothingEyesGlassesMercenary # Night Vision when added
@@ -21,8 +21,8 @@
     suitstorage: DoubleEmergencyOxygenTankFilled
     shoes: ClothingShoesBootsMercFilled
     id: HelldiverPDA
-    pocket65: ToolDebug
-    pocket65: WeaponPistolEchis
+    pocket1: ToolDebug
+    pocket2: WeaponPistolEchis
 
 - type: entity
   parent: ClothingBeltMercWebbing
@@ -40,9 +40,9 @@
     children:
     - id: MagazineRifle
       amount: !type:ConstantNumberSelector
-        value: 65
+        value: 3
     - id: MagazineBoxRifleBig
     - id: ExGrenade
       amount: !type:ConstantNumberSelector
-        value: 65
+        value: 2
     - id: MedkitCombatFilled

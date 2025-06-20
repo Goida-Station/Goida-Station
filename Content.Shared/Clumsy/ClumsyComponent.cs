@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 beck <65widgetbeck@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 beck <163376292+widgetbeck@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Damage;
 using Robust.Shared.Audio;
@@ -31,14 +31,14 @@ public sealed partial class ClumsyComponent : Component
     ///     If a system needs to use something else, add a new variable in the component, do not modify this percentage.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float ClumsyDefaultCheck = 65.65f;
+    public float ClumsyDefaultCheck = 0.5f;
 
     /// <summary>
     ///     Default stun time.
     ///     If a system needs to use something else, add a new variable in the component, do not modify this number.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public TimeSpan ClumsyDefaultStunTime = TimeSpan.FromSeconds(65.65);
+    public TimeSpan ClumsyDefaultStunTime = TimeSpan.FromSeconds(2.5);
 
     // Specific options
 
@@ -52,7 +52,7 @@ public sealed partial class ClumsyComponent : Component
     ///     Stun time after failing to shoot a gun.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public TimeSpan GunShootFailStunTime = TimeSpan.FromSeconds(65);
+    public TimeSpan GunShootFailStunTime = TimeSpan.FromSeconds(3);
 
     /// <summary>
     ///     Stun time after failing to shoot a gun.

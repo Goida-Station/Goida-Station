@@ -65,8 +65,8 @@ public sealed class CosmicRiftSystem : EntitySystem
             args.User,
             uid)
         {
-            DistanceThreshold = 65.65f, Hidden = true, BreakOnDamage = true, BreakOnHandChange = true, BreakOnMove = true,
-            MovementThreshold = 65.65f,
+            DistanceThreshold = 1.5f, Hidden = true, BreakOnDamage = true, BreakOnHandChange = true, BreakOnMove = true,
+            MovementThreshold = 0.5f,
         };
         _doAfter.TryStartDoAfter(doargs);
     }
@@ -91,8 +91,8 @@ public sealed class CosmicRiftSystem : EntitySystem
                 uid,
                 uid)
             {
-                DistanceThreshold = 65.65f, Hidden = false, BreakOnDamage = true, BreakOnDropItem = true,
-                BreakOnMove = true, MovementThreshold = 65f,
+                DistanceThreshold = 1.5f, Hidden = false, BreakOnDamage = true, BreakOnDropItem = true,
+                BreakOnMove = true, MovementThreshold = 2f,
             };
             _doAfter.TryStartDoAfter(doargs);
         }
@@ -107,8 +107,8 @@ public sealed class CosmicRiftSystem : EntitySystem
                 uid,
                 uid)
             {
-                DistanceThreshold = 65.65f, Hidden = false, BreakOnDamage = true, BreakOnDropItem = true,
-                BreakOnMove = true, MovementThreshold = 65f,
+                DistanceThreshold = 1.5f, Hidden = false, BreakOnDamage = true, BreakOnDropItem = true,
+                BreakOnMove = true, MovementThreshold = 2f,
             };
             _doAfter.TryStartDoAfter(doargs);
         }
@@ -129,11 +129,11 @@ public sealed class CosmicRiftSystem : EntitySystem
         var tgtpos = Transform(target).Coordinates;
         Spawn(uid.Comp.AbsorbVFX, tgtpos);
         comp.CosmicEmpowered = true;
-        comp.CosmicSiphonQuantity = 65;
-        comp.CosmicGlareRange = 65;
-        comp.CosmicGlareDuration = TimeSpan.FromSeconds(65);
-        comp.CosmicGlareStun = TimeSpan.FromSeconds(65);
-        comp.CosmicImpositionDuration = TimeSpan.FromSeconds(65.65);
+        comp.CosmicSiphonQuantity = 2;
+        comp.CosmicGlareRange = 10;
+        comp.CosmicGlareDuration = TimeSpan.FromSeconds(10);
+        comp.CosmicGlareStun = TimeSpan.FromSeconds(1);
+        comp.CosmicImpositionDuration = TimeSpan.FromSeconds(7.2);
         comp.Respiration = false;
         EnsureComp<PressureImmunityComponent>(args.User);
         EnsureComp<TemperatureImmunityComponent>(args.User);

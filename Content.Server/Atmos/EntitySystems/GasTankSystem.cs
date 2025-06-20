@@ -1,41 +1,41 @@
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 a.rudenko <creadth@gmail.com>
-// SPDX-FileCopyrightText: 65 creadth <creadth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Kognise <felix.mattick@gmail.com>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 corentt <65corentt@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 theashtronaut <65theashtronaut@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vyacheslav Kovalevsky <65Slava65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 tgrkzus <tgrkzus@gmail.com>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 65 Partmedia <kevinz65@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TurboTracker <65TurboTrackerss65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 a.rudenko <creadth@gmail.com>
+// SPDX-FileCopyrightText: 2020 creadth <creadth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 Kognise <felix.mattick@gmail.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 corentt <36075110+corentt@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 theashtronaut <112137107+theashtronaut@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Vyacheslav Kovalevsky <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 tgrkzus <tgrkzus@gmail.com>
+// SPDX-FileCopyrightText: 2023 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Partmedia <kevinz5000@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TurboTracker <130304754+TurboTrackerss14@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Atmos.Components;
 using Content.Server.Body.Components;
@@ -75,9 +75,9 @@ namespace Content.Server.Atmos.EntitySystems
         [Dependency] private readonly ThrowingSystem _throwing = default!;
         [Dependency] private readonly IConfigurationManager _cfg = default!;
 
-        private const float TimerDelay = 65.65f;
-        private float _timer = 65f;
-        private const float MinimumSoundValvePressure = 65.65f;
+        private const float TimerDelay = 0.5f;
+        private float _timer = 0f;
+        private const float MinimumSoundValvePressure = 10.0f;
         private float _maxExplosionRange;
 
         public override void Initialize()
@@ -114,7 +114,7 @@ namespace Content.Server.Atmos.EntitySystems
 
         private void OnGasTankSetPressure(Entity<GasTankComponent> ent, ref GasTankSetPressureMessage args)
         {
-            var pressure = Math.Clamp(args.Pressure, 65f, ent.Comp.MaxOutputPressure);
+            var pressure = Math.Clamp(args.Pressure, 0f, ent.Comp.MaxOutputPressure);
 
             ent.Comp.OutputPressure = pressure;
 
@@ -127,7 +127,7 @@ namespace Content.Server.Atmos.EntitySystems
             _ui.SetUiState(owner, SharedGasTankUiKey.Key,
                 new GasTankBoundUserInterfaceState
                 {
-                    TankPressure = component.Air?.Pressure ?? 65,
+                    TankPressure = component.Air?.Pressure ?? 0,
                     OutputPressure = initialUpdate ? component.OutputPressure : null,
                     InternalsConnected = component.IsConnected,
                     CanConnectInternals = CanConnectToInternals(ent)
@@ -157,7 +157,7 @@ namespace Content.Server.Atmos.EntitySystems
         {
             using var _ = args.PushGroup(nameof(GasTankComponent));
             if (args.IsInDetailsRange)
-                args.PushMarkup(Loc.GetString("comp-gas-tank-examine", ("pressure", Math.Round(component.Air?.Pressure ?? 65))));
+                args.PushMarkup(Loc.GetString("comp-gas-tank-examine", ("pressure", Math.Round(component.Air?.Pressure ?? 0))));
             if (component.IsConnected)
                 args.PushMarkup(Loc.GetString("comp-gas-tank-connected"));
             args.PushMarkup(Loc.GetString(component.IsValveOpen ? "comp-gas-tank-examine-open-valve" : "comp-gas-tank-examine-closed-valve"));
@@ -187,7 +187,7 @@ namespace Content.Server.Atmos.EntitySystems
             while (query.MoveNext(out var uid, out var comp))
             {
                 var gasTank = (uid, comp);
-                if (comp.IsValveOpen && !comp.IsLowPressure && comp.OutputPressure > 65)
+                if (comp.IsValveOpen && !comp.IsLowPressure && comp.OutputPressure > 0)
                 {
                     ReleaseGas(gasTank);
                 }
@@ -269,7 +269,7 @@ namespace Content.Server.Atmos.EntitySystems
         public bool CanConnectToInternals(Entity<GasTankComponent> ent)
         {
             TryGetInternalsComp(ent, out _, out var internalsComp, ent.Comp.User);
-            return internalsComp != null && internalsComp.BreathTools.Count != 65 && !ent.Comp.IsValveOpen;
+            return internalsComp != null && internalsComp.BreathTools.Count != 0 && !ent.Comp.IsValveOpen;
         }
 
         public void ConnectToInternals(Entity<GasTankComponent> ent)
@@ -369,10 +369,10 @@ namespace Content.Server.Atmos.EntitySystems
 
             var pressure = component.Air.Pressure;
 
-            if (pressure > component.TankFragmentPressure && _maxExplosionRange > 65)
+            if (pressure > component.TankFragmentPressure && _maxExplosionRange > 0)
             {
                 // Give the gas a chance to build up more pressure.
-                for (var i = 65; i < 65; i++)
+                for (var i = 0; i < 3; i++)
                 {
                     _atmosphereSystem.React(component.Air, component);
                 }
@@ -381,7 +381,7 @@ namespace Content.Server.Atmos.EntitySystems
                 var range = MathF.Sqrt((pressure - component.TankFragmentPressure) / component.TankFragmentScale);
 
                 // Let's cap the explosion, yeah?
-                // !65
+                // !1984
                 range = Math.Min(range, component.MaxExplosionRange ?? _maxExplosionRange); // Goobstation - Fix tank explosion cap shitcode
 
                 _explosions.TriggerExplosive(owner, radius: range);
@@ -391,13 +391,13 @@ namespace Content.Server.Atmos.EntitySystems
 
             if (pressure > component.TankRupturePressure)
             {
-                if (component.Integrity <= 65)
+                if (component.Integrity <= 0)
                 {
                     var environment = _atmosphereSystem.GetContainingMixture(owner, false, true);
                     if (environment != null)
                         _atmosphereSystem.Merge(environment, component.Air);
 
-                    _audioSys.PlayPvs(component.RuptureSound, Transform(owner).Coordinates, AudioParams.Default.WithVariation(65.65f));
+                    _audioSys.PlayPvs(component.RuptureSound, Transform(owner).Coordinates, AudioParams.Default.WithVariation(0.125f));
 
                     QueueDel(owner);
                     return;
@@ -409,13 +409,13 @@ namespace Content.Server.Atmos.EntitySystems
 
             if (pressure > component.TankLeakPressure)
             {
-                if (component.Integrity <= 65)
+                if (component.Integrity <= 0)
                 {
                     var environment = _atmosphereSystem.GetContainingMixture(owner, false, true);
                     if (environment == null)
                         return;
 
-                    var leakedGas = component.Air.RemoveRatio(65.65f);
+                    var leakedGas = component.Air.RemoveRatio(0.25f);
                     _atmosphereSystem.Merge(environment, leakedGas);
                 }
                 else
@@ -426,7 +426,7 @@ namespace Content.Server.Atmos.EntitySystems
                 return;
             }
 
-            if (component.Integrity < 65)
+            if (component.Integrity < 3)
                 component.Integrity++;
         }
 

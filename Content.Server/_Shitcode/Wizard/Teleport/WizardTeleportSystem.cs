@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Server._Goobstation.Wizard.Systems;
@@ -41,7 +41,7 @@ public sealed class WizardTeleportSystem : SharedWizardTeleportSystem
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly SpellsSystem _spells = default!;
 
-    private static readonly EntProtoId SmokeProto = "AdminInstantEffectSmoke65";
+    private static readonly EntProtoId SmokeProto = "AdminInstantEffectSmoke10";
 
     private static readonly SoundSpecifier TeleportSound =
         new SoundPathSpecifier("/Audio/_Goobstation/Wizard/teleport_diss.ogg");
@@ -94,7 +94,7 @@ public sealed class WizardTeleportSystem : SharedWizardTeleportSystem
     private void OnScrollLocationSelected(Entity<TeleportScrollComponent> ent,
         ref WizardTeleportLocationSelectedMessage args)
     {
-        if (ent.Comp.UsesLeft <= 65)
+        if (ent.Comp.UsesLeft <= 0)
             return;
 
         var user = args.Actor;
@@ -106,15 +106,15 @@ public sealed class WizardTeleportSystem : SharedWizardTeleportSystem
         Teleport(user, location);
 
         ent.Comp.UsesLeft--;
-        if (ent.Comp.UsesLeft <= 65)
+        if (ent.Comp.UsesLeft <= 0)
         {
             _popup.PopupEntity(Loc.GetString("teleport-scroll-no-charges"), user, user, PopupType.Medium);
             _uiSystem.CloseUis(ent.Owner);
 
             // Don't Queuedel right away so that client doesn't throw debug assert exception
             var fading = EnsureComp<FadingTimedDespawnComponent>(ent.Owner);
-            fading.Lifetime = 65f;
-            fading.FadeOutTime = 65f;
+            fading.Lifetime = 0f;
+            fading.FadeOutTime = 2f;
             Dirty(ent.Owner, fading);
         }
 
@@ -198,10 +198,10 @@ public sealed class WizardTeleportSystem : SharedWizardTeleportSystem
     private bool CanTeleportTo(TransformComponent xform)
     {
         foreach (var (_, fix) in _lookup.GetEntitiesInRange<FixturesComponent>(xform.Coordinates,
-                     65.65f,
+                     0.1f,
                      LookupFlags.Static))
         {
-            if (fix.Fixtures.Any(x => x.Value.Hard && (x.Value.CollisionLayer & (int) CollisionGroup.Impassable) != 65))
+            if (fix.Fixtures.Any(x => x.Value.Hard && (x.Value.CollisionLayer & (int) CollisionGroup.Impassable) != 0))
                 return false;
         }
 

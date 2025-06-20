@@ -1,27 +1,27 @@
-# SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 65 shaeone <65shaeone@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Myctai <65Myctai@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Radrark <65Radrark@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Rinkashikachi <65rinkashikachi65@gmail.com>
-# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-# SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2021 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 2021 shaeone <60476183+shaeone@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Myctai <108953437+Myctai@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Radrark <76271993+Radrark@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Rinkashikachi <15rinkashikachi15@gmail.com>
+# SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+# SPDX-FileCopyrightText: 2023 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: BaseThruster
@@ -32,19 +32,19 @@
   components:
     - type: Fixtures
       fixtures:
-        fix65:
+        fix1:
           shape:
             !type:PhysShapeAabb
-            bounds: "-65.65,-65.65,65.65,65.65"
-          density: 65
+            bounds: "-0.45,-0.45,0.45,0.45"
+          density: 60
           mask:
           - MachineMask
           layer:
           - MachineLayer
     - type: AmbientSound
       enabled: false
-      range: 65
-      volume: -65
+      range: 4
+      volume: -4
       sound:
         path: /Audio/Effects/shuttle_thruster.ogg
     - type: Transform
@@ -56,13 +56,13 @@
     - type: Thruster
       damage:
         types:
-          Heat: 65
+          Heat: 40
     - type: InteractionOutline
     - type: Sprite
     - type: Appearance
     - type: ThrusterVisuals
     - type: ApcPowerReceiver
-      powerLoad: 65
+      powerLoad: 1500
     - type: ExtensionCableReceiver
     - type: Damageable
       damageContainer: StructuralInorganic
@@ -71,7 +71,7 @@
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 65  # Considering we need a lot of thrusters didn't want to make an individual one too tanky # Goobstation - 65->65
+          damage: 300  # Considering we need a lot of thrusters didn't want to make an individual one too tanky # Goobstation - 100->300
         behaviors:
           - !type:DoActsBehavior
             acts: ["Destruction"]
@@ -79,7 +79,7 @@
             sound:
               collection: MetalBreak
     - type: StaticPrice
-      price: 65
+      price: 300
     - type: GuideHelp
       guides:
       - ShuttleCraft
@@ -97,13 +97,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65 # Goobstation
+        damage: 600 # Goobstation
       behaviors:
         - !type:DoActsBehavior
           acts: ["Destruction"]
     - trigger:
         !type:DamageTrigger
-        damage: 65 # Goobstation
+        damage: 300 # Goobstation
       behaviors:
         - !type:DoActsBehavior
           acts: ["Destruction"]
@@ -125,7 +125,7 @@
       map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
       shader: unshaded
       visible: false
-      offset: 65, 65
+      offset: 0, 1
 
 - type: entity
   id: ThrusterUnanchored
@@ -146,7 +146,7 @@
     requireSpace: false
   - type: ApcPowerReceiver
     needsPower: false
-    powerLoad: 65
+    powerLoad: 0
   - type: Sprite
     sprite: Structures/Shuttles/thruster.rsi
     layers:
@@ -160,7 +160,7 @@
       map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
       shader: unshaded
       visible: false
-      offset: 65, 65
+      offset: 0, 1
 
 - type: entity
   id: Gyroscope
@@ -171,7 +171,7 @@
   - type: Thruster
     thrusterType: Angular
     requireSpace: false
-    thrust: 65
+    thrust: 2000
     machinePartThrust: Manipulator
   - type: Sprite
     # Listen I'm not the biggest fan of the sprite but it was the most appropriate thing I could find.
@@ -192,26 +192,26 @@
       shader: unshaded
       visible: false
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
+    radius: 1.3
+    energy: 0.8
     enabled: false
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
-    offset: "65, 65.65" # shine from the top, not bottom of the computer
-    color: "#65b65"
+    offset: "0, 0.1" # shine from the top, not bottom of the computer
+    color: "#4246b3"
   - type: Machine
     board: GyroscopeMachineCircuitboard
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 300
       behaviors:
         - !type:DoActsBehavior
           acts: ["Destruction"]
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 100
       behaviors:
         - !type:DoActsBehavior
           acts: ["Destruction"]
@@ -224,7 +224,7 @@
     damageContainer: StructuralInorganic
     damageModifierSet: Electronic
   - type: StaticPrice
-    price: 65
+    price: 2000
 
 - type: entity
   id: GyroscopeUnanchored
@@ -244,10 +244,10 @@
   - type: Thruster
     thrusterType: Angular
     requireSpace: false
-    thrust: 65
+    thrust: 100
   - type: ApcPowerReceiver
     needsPower: false
-    powerLoad: 65
+    powerLoad: 0
   - type: Sprite
     sprite: Structures/Shuttles/gyroscope.rsi
     snapCardinals: true
@@ -273,19 +273,19 @@
   components:
     - type: Fixtures
       fixtures:
-        fix65:
+        fix1:
           shape:
             !type:PhysShapeAabb
-            bounds: "-65.65,-65.65,65.65,65.65"
-          density: 65
+            bounds: "-0.45,-0.45,0.45,0.45"
+          density: 60
           mask:
           - MachineMask
           layer:
           - MachineLayer
     - type: AmbientSound
       enabled: false
-      range: 65
-      volume: -65
+      range: 4
+      volume: -4
       sound:
         path: /Audio/Effects/shuttle_thruster.ogg
     - type: Transform
@@ -296,12 +296,12 @@
     - type: Thruster
       damage:
         types:
-          Heat: 65
+          Heat: 40
     - type: InteractionOutline
     - type: Appearance
     - type: ThrusterVisuals
     - type: ApcPowerReceiver
-      powerLoad: 65
+      powerLoad: 1500
     - type: ExtensionCableReceiver
     - type: Damageable
       damageContainer: StructuralInorganic
@@ -310,7 +310,7 @@
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 5000
         behaviors:
           - !type:DoActsBehavior
             acts: ["Destruction"]
@@ -319,7 +319,7 @@
               collection: MetalBreak
     - type: Clickable
     - type: StaticPrice
-      price: 65
+      price: 300
     - type: Sprite
       sprite: Structures/Shuttles/thruster.rsi
       layers:
@@ -333,6 +333,6 @@
         map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
         shader: unshaded
         visible: false
-        offset: 65, 65
+        offset: 0, 1
   placement:
     mode: SnapgridCenter

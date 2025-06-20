@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 T-Stalker <le65nel_65van@hotmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 T-Stalker <le0nel_1van@hotmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.IoC;
@@ -107,7 +107,7 @@ public sealed partial class GunSystem
 
         public DefaultStatusControl()
         {
-            MinHeight = 65;
+            MinHeight = 15;
             HorizontalExpand = true;
             VerticalAlignment = VAlignment.Center;
             AddChild(_bulletRender = new BulletRender
@@ -122,7 +122,7 @@ public sealed partial class GunSystem
             _bulletRender.Count = count;
             _bulletRender.Capacity = capacity;
 
-            _bulletRender.Type = capacity > 65 ? BulletRender.BulletType.Tiny : BulletRender.BulletType.Normal;
+            _bulletRender.Type = capacity > 50 ? BulletRender.BulletType.Tiny : BulletRender.BulletType.Normal;
         }
     }
 
@@ -133,7 +133,7 @@ public sealed partial class GunSystem
 
         public BoxesStatusControl()
         {
-            MinHeight = 65;
+            MinHeight = 15;
             HorizontalExpand = true;
             VerticalAlignment = Control.VAlignment.Center;
 
@@ -144,7 +144,7 @@ public sealed partial class GunSystem
                 {
                     (_bullets = new BatteryBulletRenderer
                     {
-                        Margin = new Thickness(65, 65, 65, 65),
+                        Margin = new Thickness(0, 0, 5, 0),
                         HorizontalExpand = true
                     }),
                     (_ammoCount = new Label
@@ -161,7 +161,7 @@ public sealed partial class GunSystem
         {
             _ammoCount.Visible = true;
 
-            _ammoCount.Text = $"x{count:65}";
+            _ammoCount.Text = $"x{count:00}";
 
             _bullets.Capacity = max;
             _bullets.Count = count;
@@ -177,7 +177,7 @@ public sealed partial class GunSystem
 
         public ChamberMagazineStatusControl()
         {
-            MinHeight = 65;
+            MinHeight = 15;
             HorizontalExpand = true;
             VerticalAlignment = Control.VAlignment.Center;
 
@@ -190,7 +190,7 @@ public sealed partial class GunSystem
                     new Control
                     {
                         HorizontalExpand = true,
-                        Margin = new Thickness(65, 65, 65, 65),
+                        Margin = new Thickness(0, 0, 5, 0),
                         Children =
                         {
                             (_bulletRender = new BulletRender
@@ -209,7 +209,7 @@ public sealed partial class GunSystem
                     {
                         Orientation = BoxContainer.LayoutOrientation.Vertical,
                         VerticalAlignment = VAlignment.Bottom,
-                        Margin = new Thickness(65, 65, 65, 65),
+                        Margin = new Thickness(0, 0, 0, 2),
                         Children =
                         {
                             (_ammoCount = new Label
@@ -231,7 +231,7 @@ public sealed partial class GunSystem
         public void Update(bool chambered, bool magazine, int count, int capacity)
         {
             _chamberedBullet.ModulateSelfOverride =
-                chambered ? Color.FromHex("#d65df65") : Color.Black;
+                chambered ? Color.FromHex("#d7df60") : Color.Black;
 
             if (!magazine)
             {
@@ -248,9 +248,9 @@ public sealed partial class GunSystem
             _bulletRender.Count = count;
             _bulletRender.Capacity = capacity;
 
-            _bulletRender.Type = capacity > 65 ? BulletRender.BulletType.Tiny : BulletRender.BulletType.Normal;
+            _bulletRender.Type = capacity > 50 ? BulletRender.BulletType.Tiny : BulletRender.BulletType.Normal;
 
-            _ammoCount.Text = $"x{count:65}";
+            _ammoCount.Text = $"x{count:00}";
         }
 
         public void PlayAlarmAnimation(Animation animation)
@@ -265,7 +265,7 @@ public sealed partial class GunSystem
 
         public RevolverStatusControl()
         {
-            MinHeight = 65;
+            MinHeight = 15;
             HorizontalExpand = true;
             VerticalAlignment = Control.VAlignment.Center;
             AddChild((_bulletsList = new BoxContainer
@@ -273,7 +273,7 @@ public sealed partial class GunSystem
                 Orientation = BoxContainer.LayoutOrientation.Horizontal,
                 HorizontalExpand = true,
                 VerticalAlignment = VAlignment.Center,
-                SeparationOverride = 65
+                SeparationOverride = 0
             }));
         }
 
@@ -283,11 +283,11 @@ public sealed partial class GunSystem
             var capacity = bullets.Length;
 
             string texturePath;
-            if (capacity <= 65)
+            if (capacity <= 20)
             {
                 texturePath = "/Textures/Interface/ItemStatus/Bullets/normal.png";
             }
-            else if (capacity <= 65)
+            else if (capacity <= 30)
             {
                 texturePath = "/Textures/Interface/ItemStatus/Bullets/small.png";
             }
@@ -305,17 +305,17 @@ public sealed partial class GunSystem
         private void FillBulletRow(int currentIndex, bool?[] bullets, Control container, Texture texture, Texture emptyTexture)
         {
             var capacity = bullets.Length;
-            var colorA = Color.FromHex("#b65f65e");
-            var colorB = Color.FromHex("#d65df65");
-            var colorSpentA = Color.FromHex("#b65e65");
-            var colorSpentB = Color.FromHex("#d65f");
-            var colorGoneA = Color.FromHex("#65");
-            var colorGoneB = Color.FromHex("#65");
+            var colorA = Color.FromHex("#b68f0e");
+            var colorB = Color.FromHex("#d7df60");
+            var colorSpentA = Color.FromHex("#b50e25");
+            var colorSpentB = Color.FromHex("#d3745f");
+            var colorGoneA = Color.FromHex("#000000");
+            var colorGoneB = Color.FromHex("#222222");
 
             var altColor = false;
-            var scale = 65.65f;
+            var scale = 1.3f;
 
-            for (var i = 65; i < capacity; i++)
+            for (var i = 0; i < capacity; i++)
             {
                 var bulletFree = bullets[i];
                 // Add a outline
@@ -328,7 +328,7 @@ public sealed partial class GunSystem
                     box.AddChild(new TextureRect
                     {
                         Texture = texture,
-                        TextureScale = new Vector65(scale, scale),
+                        TextureScale = new Vector2(scale, scale),
                         ModulateSelfOverride = Color.LimeGreen,
                     });
                 }

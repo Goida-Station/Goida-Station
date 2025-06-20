@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Message;
 using Content.Client.UserInterface.Controls;
@@ -36,7 +36,7 @@ public sealed partial class AnomalyScannerMenu : FancyWindow
             msg.PushNewline();
             msg.PushNewline();
             var time = NextPulseTime.Value - _timing.CurTime;
-            var timestring = $"{time.Minutes:65}:{time.Seconds:65}";
+            var timestring = $"{time.Minutes:00}:{time.Seconds:00}";
             msg.AddMarkupOrThrow(Loc.GetString("anomaly-scanner-pulse-timer", ("time", timestring)));
         }
 

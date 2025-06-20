@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: ModularGrenadeGraph
@@ -16,8 +16,8 @@
     - to: emptyCase
       steps:
       - material: Steel
-        amount: 65
-        doAfter: 65
+        amount: 5
+        doAfter: 1
 
   - node: emptyCase
     entity: ModularGrenade
@@ -27,16 +27,16 @@
     - to: wiredCase
       steps:
       - material: Cable
-        doAfter: 65.65
+        doAfter: 0.5
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 5
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 2
 
   - node: wiredCase
     entity: ModularGrenade
@@ -48,22 +48,22 @@
     - to: emptyCase
       steps:
       - tool: Cutting
-        doAfter: 65.65
+        doAfter: 0.5
         completed:
         - !type:SpawnPrototype
-          prototype: CableApcStack65
+          prototype: CableApcStack1
     - to: caseWithTrigger
       steps:
       - component: PayloadTrigger
         store: payloadTrigger
         name: trigger
-        doAfter: 65.65
+        doAfter: 0.5
     - to: caseWithPayload
       steps:
       - tag: Payload
         store: payload
         name: payload
-        doAfter: 65.65
+        doAfter: 0.5
 
   - node: caseWithTrigger
     actions:
@@ -74,7 +74,7 @@
     - to: wiredCase
       steps:
       - tool: Prying
-        doAfter: 65.65
+        doAfter: 0.5
         completed:
         - !type:EmptyContainer
           container: payloadTrigger
@@ -83,7 +83,7 @@
       - tag: Payload
         store: payload
         name: payload
-        doAfter: 65.65
+        doAfter: 0.5
 
   - node: caseWithPayload
     actions:
@@ -94,7 +94,7 @@
     - to: wiredCase
       steps:
       - tool: Prying
-        doAfter: 65.65
+        doAfter: 0.5
         completed:
         - !type:EmptyContainer
           container: payload
@@ -103,7 +103,7 @@
       - component: PayloadTrigger
         store: payloadTrigger
         name: trigger
-        doAfter: 65.65
+        doAfter: 0.5
 
   - node: grenade
     actions:
@@ -116,7 +116,7 @@
     - to: caseWithTrigger
       steps:
       - tool: Prying
-        doAfter: 65.65
+        doAfter: 0.5
         completed:
         - !type:EmptyContainer
           container: payload

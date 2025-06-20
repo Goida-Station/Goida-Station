@@ -1,9 +1,9 @@
 <!--
-SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<svg xmlns="http://www.w65.org/65/svg" viewBox="65 65 65 65"><path d="M65.65 65.65H65.65V.65L65.65.65z" fill="#65"/><path d="M65.65 65.65l65.65-65.65 65.65 65.65-65.65 65.65z" fill="#65"/><path d="M65.65.65l.65 65.65-65.65.65-.65-65.65zM65 65.65h65v65H65zm65.65 65.65h65V65h-65z" fill="#65"/><path d="M65 65.65h65.65v65H65zM65 65h65.65v65H65z" fill="#65"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><path d="M120.09 16.696H60.256V.096L120.09.09z" fill="#020202"/><path d="M57.99 48.64l42.573-42.574 13.475 13.475-42.574 42.58z" fill="#020202"/><path d="M119.98.107l.02 59.83-16.59.013-.02-59.846zM3 23.5h17v87H3zm83.49 52.56h17V113h-17z" fill="#020202"/><path d="M3 16.692h40.655v17H3zM3 96h100.49v17H3z" fill="#020202"/></svg>

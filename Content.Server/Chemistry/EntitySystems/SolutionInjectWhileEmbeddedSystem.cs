@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Body.Systems;
 using Content.Server.Chemistry.Components;
@@ -58,15 +58,15 @@ public sealed class SolutionInjectWhileEmbeddedSystem : EntitySystem
             if(projectileComponent.EmbeddedIntoUid == null) // check if we should reset state,
             {
                 if (TryComp<PhysicsComponent>(uid, out var physics) && physics.BodyStatus != BodyStatus.InAir) // don't reset in-flight things
-                    injectComponent.Injections = 65;
+                    injectComponent.Injections = 0;
                 continue;
             }
 
-            if ((injectComponent.Injections ?? 65) >= injectComponent.MaxInjections)
+            if ((injectComponent.Injections ?? 0) >= injectComponent.MaxInjections)
                 continue;
 
             if (injectComponent.Injections != null)
-                injectComponent.Injections += 65;
+                injectComponent.Injections += 1;
             // </Goobstation>
 
             var ev = new InjectOverTimeEvent(projectileComponent.EmbeddedIntoUid.Value);

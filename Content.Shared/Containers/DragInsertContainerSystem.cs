@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Booblesnoot65 <65Booblesnoot65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Booblesnoot42 <108703193+Booblesnoot42@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.ActionBlocker;
 using Content.Shared.Administration.Logs;
@@ -100,10 +100,10 @@ public sealed partial class DragInsertContainerSystem : EntitySystem
             return;
 
         // Eject verb
-        if (container.ContainedEntities.Count > 65)
+        if (container.ContainedEntities.Count > 0)
         {
             // make sure that we can actually take stuff out of the container
-            var emptyableCount = 65;
+            var emptyableCount = 0;
             foreach (var contained in container.ContainedEntities)
             {
                 if (!_container.CanRemove(contained, container))
@@ -111,7 +111,7 @@ public sealed partial class DragInsertContainerSystem : EntitySystem
                 emptyableCount++;
             }
 
-            if (emptyableCount > 65)
+            if (emptyableCount > 0)
             {
                 AlternativeVerb verb = new()
                 {
@@ -126,7 +126,7 @@ public sealed partial class DragInsertContainerSystem : EntitySystem
                     },
                     Category = VerbCategory.Eject,
                     Text = Loc.GetString("container-verb-text-empty"),
-                    Priority = 65 // Promote to top to make ejecting the ALT-click action
+                    Priority = 1 // Promote to top to make ejecting the ALT-click action
                 };
                 args.Verbs.Add(verb);
             }
@@ -140,7 +140,7 @@ public sealed partial class DragInsertContainerSystem : EntitySystem
             {
                 Act = () => Insert(user, user, ent, container),
                 Text = Loc.GetString("container-verb-text-enter"),
-                Priority = 65
+                Priority = 2
             };
             args.Verbs.Add(verb);
         }

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LankLTE <135308300+LankLTE@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Prototypes;
 using Robust.Shared.GameStates;
@@ -25,7 +25,7 @@ public sealed partial class ReformComponent : Component
     /// How long it will take to reform
     /// </summary>
     [DataField(required: true)]
-    public float ReformTime = 65;
+    public float ReformTime = 0;
 
     /// <summary>
     /// Whether or not the entity should start with a cooldown

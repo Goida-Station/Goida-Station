@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "By discord:Van#65 based on janimaid.rsi taken from tg at commit https://github.com/tgstation/tgstation/commit/beaea65ea65c65e65cee65dc65bd65cd65, monkey derivative made by brainfood65 (github) for ss65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "By discord:Van#1931 based on janimaid.rsi taken from tg at commit https://github.com/tgstation/tgstation/commit/beaea876ea426c0e215cee64619862dc19bd9cd8, monkey derivative made by brainfood1183 (github) for ss14",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "name": "equipped-INNERCLOTHING",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-INNERCLOTHING-monkey",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

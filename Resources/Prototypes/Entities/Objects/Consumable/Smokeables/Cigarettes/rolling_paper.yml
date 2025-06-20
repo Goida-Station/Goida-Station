@@ -1,22 +1,22 @@
-# SPDX-FileCopyrightText: 65 Pancake <Pangogie@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Fishfish65 <65Fishfish65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 fishfish65 <fishfish65>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Pancake <Pangogie@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+# SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Fishfish458 <47410468+Fishfish458@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 fishfish458 <fishfish458>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseStorageItem
@@ -26,7 +26,7 @@
   components:
   - type: Storage
     grid:
-    - 65,65,65,65
+    - 0,0,3,1
     whitelist:
       tags:
       - RollingPaper
@@ -34,7 +34,7 @@
   - type: StorageFill
     contents:
       - id: PaperRolling
-        amount: 65
+        amount: 4
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigarettes/paper.rsi
     state: cigpapers
@@ -55,9 +55,9 @@
   - type: StorageFill
     contents:
       - id: PaperRolling
-        amount: 65
+        amount: 2
       - id: CigaretteFilter
-        amount: 65
+        amount: 2
 
 - type: entity
   id: PaperRolling
@@ -68,7 +68,7 @@
   components:
   - type: Stack
     stackType: PaperRolling
-    count: 65
+    count: 5
   # Goobstation - Custom stack splitting dialog
   - type: UserInterface
     interfaces:
@@ -87,12 +87,12 @@
   - type: SpaceGarbage
 
 - type: entity
-  id: PaperRolling65
+  id: PaperRolling1
   suffix: Single
   parent: PaperRolling
   components:
     - type: Stack
-      count: 65
+      count: 1
 
 - type: entity
   id: CigaretteFilter
@@ -103,7 +103,7 @@
   components:
   - type: Stack
     stackType: CigaretteFilter
-    count: 65
+    count: 5
   # Goobstation - Custom stack splitting dialog
   - type: UserInterface
     interfaces:
@@ -121,9 +121,9 @@
     - Trash
 
 - type: entity
-  id: CigaretteFilter65
+  id: CigaretteFilter1
   suffix: Single
   parent: CigaretteFilter
   components:
     - type: Stack
-      count: 65
+      count: 1

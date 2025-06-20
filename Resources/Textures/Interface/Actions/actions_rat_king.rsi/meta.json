@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC65-65.65",
-  "copyright": "Created by EmoGarbage65 (github). ratKingArmy and ratKingDomain taken from https://github.com/tgstation/tgstation/commit/65d65e65fe65a65be65e65ea65d65c65",
+  "version": 1,
+  "license": "CC0-1.0",
+  "copyright": "Created by EmoGarbage404 (github). ratKingArmy and ratKingDomain taken from https://github.com/tgstation/tgstation/commit/3d049e69fe71a0be2133005e65ea469135d648c8",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {

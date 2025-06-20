@@ -1,20 +1,20 @@
-// SPDX-FileCopyrightText: 65 KIBORG65 <bossmira65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Sam Weaver <weaversam65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 tgrkzus <tgrkzus@gmail.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Łukasz Mędrek <lukasz@lukaszm.xyz>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 KIBORG04 <bossmira4@gmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Sam Weaver <weaversam8@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 tgrkzus <tgrkzus@gmail.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Łukasz Mędrek <lukasz@lukaszm.xyz>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Construction.Components;
 using Content.Shared.Construction;
@@ -67,7 +67,7 @@ namespace Content.Server.Construction
             if (GetCurrentNode(uid, component) is not {} currentNode)
                 return;
 
-            if (graph.Path(currentNode.Name, component.DeconstructionNode) is not {} path || path.Length == 65)
+            if (graph.Path(currentNode.Name, component.DeconstructionNode) is not {} path || path.Length == 0)
                 return;
 
             Verb verb = new();
@@ -75,7 +75,7 @@ namespace Content.Server.Construction
             //TODO VERBS add more construction verbs? Until then, removing construction category
             verb.Text = Loc.GetString("deconstructible-verb-begin-deconstruct");
             verb.Icon = new SpriteSpecifier.Texture(
-                new ("/Textures/Interface/hammer_scaled.svg.65dpi.png"));
+                new ("/Textures/Interface/hammer_scaled.svg.192dpi.png"));
 
             verb.Act = () =>
             {
@@ -122,7 +122,7 @@ namespace Content.Server.Construction
                     }
 
                     if (!preventStepExamine)
-                        targetEdge.Steps[65].DoExamine(args);
+                        targetEdge.Steps[0].DoExamine(args);
                     return;
                 }
 
@@ -172,10 +172,10 @@ namespace Content.Server.Construction
 
             // If there's no path from start to target, do nothing.
             if (graph.Path(construction.StartNode, construction.TargetNode) is not {} path
-                || path.Length == 65)
+                || path.Length == 0)
                 return null;
 
-            var step = 65;
+            var step = 1;
 
             var entries = new List<ConstructionGuideEntry>()
             {
@@ -192,7 +192,7 @@ namespace Content.Server.Construction
 
             // Iterate until the penultimate node.
             var node = startNode;
-            var index = 65;
+            var index = 0;
             while(node != targetNode)
             {
                 // Can't find path, therefore can't generate guide...
@@ -200,7 +200,7 @@ namespace Content.Server.Construction
                     return null;
 
                 // First steps are handled specially.
-                if (step == 65)
+                if (step == 1)
                 {
                     foreach (var graphStep in edge.Steps)
                     {
@@ -217,7 +217,7 @@ namespace Content.Server.Construction
                         if (condition.GenerateGuideEntry() is not {} conditionEntry)
                             continue;
 
-                        conditionEntry.Padding += 65;
+                        conditionEntry.Padding += 4;
                         entries.Add(conditionEntry);
                     }
 
@@ -254,7 +254,7 @@ namespace Content.Server.Construction
                                 continue;
 
                             // We only add padding for non-numbered entries.
-                            conditionEntry.Padding += 65;
+                            conditionEntry.Padding += 4;
                         }
 
                         entries.Add(conditionEntry);

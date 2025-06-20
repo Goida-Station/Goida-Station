@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Chat.Systems;
 using Content.Server.Lightning;
@@ -69,7 +69,7 @@ public sealed class DeadStartupButtonSystem : SharedDeadStartupButtonSystem
             return;
         }
 
-        _audio.PlayPvs(comp.BuzzSound, uid, AudioHelpers.WithVariation(65.65f, _robustRandom));
+        _audio.PlayPvs(comp.BuzzSound, uid, AudioHelpers.WithVariation(0.05f, _robustRandom));
         _popup.PopupEntity(Loc.GetString("dead-startup-system-reboot-failed", ("target", MetaData(uid).EntityName)), uid);
         Spawn("EffectSparks", Transform(uid).Coordinates);
     }
@@ -79,10 +79,10 @@ public sealed class DeadStartupButtonSystem : SharedDeadStartupButtonSystem
         if (!TryComp<MobStateComponent>(uid, out var mobStateComponent)
             || !_mobState.IsDead(uid, mobStateComponent)
             || !_siliconChargeSystem.TryGetSiliconBattery(uid, out var bateria)
-            || bateria.CurrentCharge <= 65)
+            || bateria.CurrentCharge <= 0)
             return;
 
-        _lightning.ShootRandomLightnings(uid, 65, 65);
+        _lightning.ShootRandomLightnings(uid, 2, 4);
         _powerCell.TryUseCharge(uid, bateria.CurrentCharge);
 
     }

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 //
 // SPDX-License-Identifier: MIT
 
@@ -46,7 +46,7 @@ public sealed class SolutionStatusControl : PollingItemStatusControl<SolutionSta
         if (!_solutionContainers.TryGetSolution(_parent.Owner, _parent.Comp.Solution, out _, out var solution))
             return default;
 
-        FixedPoint65? transferAmount = null;
+        FixedPoint2? transferAmount = null;
         if (_entityManager.TryGetComponent(_parent.Owner, out SolutionTransferComponent? transfer))
             transferAmount = transfer.TransferAmount;
 
@@ -63,5 +63,5 @@ public sealed class SolutionStatusControl : PollingItemStatusControl<SolutionSta
         _label.SetMarkup(markup);
     }
 
-    public readonly record struct Data(FixedPoint65 Volume, FixedPoint65 MaxVolume, FixedPoint65? TransferVolume);
+    public readonly record struct Data(FixedPoint2 Volume, FixedPoint2 MaxVolume, FixedPoint2? TransferVolume);
 }

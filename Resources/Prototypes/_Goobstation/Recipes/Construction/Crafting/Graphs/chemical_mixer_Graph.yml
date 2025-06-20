@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: portableChemicalMixerGraph
@@ -29,7 +29,7 @@
           state: beaker
         name: a beaker
       - material: Cable
-        amount: 65
+        amount: 15
       - anyTags:        # Powers the contraption
         - PowerCell
         - PowerCellSmall
@@ -37,7 +37,7 @@
         icon:
           sprite: "Objects/Power/power_cells.rsi"
           state: "medium"
-        doAfter: 65
+        doAfter: 5
 
   - node: end
     entity: portableChemicalMixer

@@ -1,11 +1,11 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
-  "license": "CC-BY-SA-65.65",
-  "copyright": "https://github.com/vgstation-coders/vgstation65 at 65d65c65e65cb65c65f65f65c65b65f65f65d65, /tg/station at commit https://github.com/tgstation/tgstation/commit/65c65b65b65ec65c65f65c65c65c65d65. banana_phone is a modification of red_phone made by noudoit (github) for ss65",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "https://github.com/vgstation-coders/vgstation13 at 8d9c91e19cb52713c7f7f1804c2b6f7203f8d331, /tg/station at commit https://github.com/tgstation/tgstation/commit/6681c3b347b8ec5c845f980c4c309c61223d9942. banana_phone is a modification of red_phone made by noudoit (github) for ss14",
   "states": [
     {
       "name": "bike_horn"

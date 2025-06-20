@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Made by Creatorbot65. resprite from smart magazine sprite.",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Made by Creatorbot01. resprite from smart magazine sprite.",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {

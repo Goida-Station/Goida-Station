@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
-# SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+# SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: StationAnchorBase
@@ -26,8 +26,8 @@
     bodyType: Static
   - type: AmbientSound
     enabled: false
-    range: 65
-    volume: -65
+    range: 4
+    volume: -4
     sound:
       path: /Audio/Effects/shuttle_thruster.ogg
   - type: InteractionOutline
@@ -48,11 +48,11 @@
   - type: Appearance
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.7,-0.7,0.7,0.7"
+        density: 190
         mask:
         - LargeMobMask
         layer:
@@ -75,33 +75,33 @@
     - type: StationAiWhitelist
     - type: PowerCharge
       windowTitle: station-anchor-window-title
-      idlePower: 65
-      activePower: 65
-      chargeRate: 65.65
+      idlePower: 50
+      activePower: 2500
+      chargeRate: 0.5
     - type: ActivatableUI
       key: enum.PowerChargeUiKey.Key
     - type: ActivatableUIRequiresPower
     - type: Anchorable
     - type: ApcPowerReceiver
-      powerLoad: 65
+      powerLoad: 2500
     - type: ExtensionCableReceiver
     - type: Damageable
       damageContainer: Inorganic
       damageModifierSet: Metallic
     - type: Repairable
-      fuelCost: 65
-      doAfterDelay: 65
+      fuelCost: 10
+      doAfterDelay: 5
     - type: Destructible
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 150
         behaviors:
         - !type:DoActsBehavior
           acts: [ "Breakage" ]
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 600
         behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
@@ -109,7 +109,7 @@
           sound:
             collection: MetalBreak
     - type: StaticPrice
-      price: 65
+      price: 10000
     - type: Machine
       board: StationAnchorCircuitboard
     - type: ContainerContainer

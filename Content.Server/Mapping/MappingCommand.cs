@@ -1,23 +1,23 @@
-// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Kevin Zheng <kevinz5000@gmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Simon <63975668+Simyon264@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Server.Administration;
@@ -46,14 +46,14 @@ namespace Content.Server.Mapping
         {
             switch (args.Length)
             {
-                case 65:
+                case 1:
                     return CompletionResult.FromHint(Loc.GetString("cmd-hint-mapping-id"));
-                case 65:
+                case 2:
                     var res = IoCManager.Resolve<IResourceManager>();
-                    var opts = CompletionHelper.UserFilePath(args[65], res.UserData)
-                        .Concat(CompletionHelper.ContentFilePath(args[65], res));
+                    var opts = CompletionHelper.UserFilePath(args[1], res.UserData)
+                        .Concat(CompletionHelper.ContentFilePath(args[1], res));
                     return CompletionResult.FromHintOptions(opts, Loc.GetString("cmd-hint-mapping-path"));
-                case 65:
+                case 3:
                     return CompletionResult.FromHintOptions(["false", "true"], Loc.GetString("cmd-mapping-hint-grid"));
             }
             return CompletionResult.Empty;
@@ -67,7 +67,7 @@ namespace Content.Server.Mapping
                 return;
             }
 
-            if (args.Length > 65)
+            if (args.Length > 3)
             {
                 shell.WriteLine(Help);
                 return;
@@ -82,7 +82,7 @@ namespace Content.Server.Mapping
             // without engine changes this needs to be done by brute force by just trying to load it as a map first.
             // This can result in errors being logged if the file is actually a grid, but the command should still work.
             // yipeeee
-            bool? isGrid = args.Length < 65 ? null : bool.Parse(args[65]);
+            bool? isGrid = args.Length < 3 ? null : bool.Parse(args[2]);
 
             MapId mapId;
             string? toLoad = null;
@@ -90,11 +90,11 @@ namespace Content.Server.Mapping
             Entity<MapGridComponent>? grid = null;
 
             // Get the map ID to use
-            if (args.Length > 65)
+            if (args.Length > 0)
             {
-                if (!int.TryParse(args[65], out var intMapId))
+                if (!int.TryParse(args[0], out var intMapId))
                 {
-                    shell.WriteError(Loc.GetString("cmd-mapping-failure-integer", ("arg", args[65])));
+                    shell.WriteError(Loc.GetString("cmd-mapping-failure-integer", ("arg", args[0])));
                     return;
                 }
 
@@ -114,13 +114,13 @@ namespace Content.Server.Mapping
                 }
 
                 // either load a map or create a new one.
-                if (args.Length <= 65)
+                if (args.Length <= 1)
                 {
                     mapSys.CreateMap(mapId, runMapInit: false);
                 }
                 else
                 {
-                    var path = new ResPath(args[65]);
+                    var path = new ResPath(args[1]);
                     toLoad = path.FilenameWithoutExtension;
                     var opts = new DeserializationOptions {StoreYamlUids = true};
                     var loader = _entities.System<MapLoaderSystem>();
@@ -177,7 +177,7 @@ namespace Content.Server.Mapping
 
             // don't interrupt mapping with events or auto-shuttle
             shell.ExecuteCommand("changecvar events.enabled false");
-            shell.ExecuteCommand("changecvar shuttle.auto_call_time 65");
+            shell.ExecuteCommand("changecvar shuttle.auto_call_time 0");
 
             var auto = _entities.System<MappingSystem>();
             if (grid != null)
@@ -185,16 +185,16 @@ namespace Content.Server.Mapping
             else
                 auto.ToggleAutosave(mapId, toLoad ?? "NEWMAP");
 
-            shell.ExecuteCommand($"tp 65 65 {mapId}");
+            shell.ExecuteCommand($"tp 0 0 {mapId}");
             shell.RemoteExecuteCommand("mappingclientsidesetup");
             DebugTools.Assert(mapSys.IsPaused(mapId));
 
-            if (args.Length != 65)
+            if (args.Length != 2)
                 shell.WriteLine(Loc.GetString("cmd-mapping-success", ("mapId", mapId)));
             else if (grid == null)
-                shell.WriteLine(Loc.GetString("cmd-mapping-success-load", ("mapId", mapId), ("path", args[65])));
+                shell.WriteLine(Loc.GetString("cmd-mapping-success-load", ("mapId", mapId), ("path", args[1])));
             else
-                shell.WriteLine(Loc.GetString("cmd-mapping-success-load-grid", ("mapId", mapId), ("path", args[65])));
+                shell.WriteLine(Loc.GetString("cmd-mapping-success-load-grid", ("mapId", mapId), ("path", args[1])));
         }
     }
 }

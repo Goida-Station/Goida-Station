@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 Bixkitts <65Bixkitts@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Krunklehorn <65Krunklehorn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 2023 Bixkitts <72874643+Bixkitts@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2024 Krunklehorn <42424291+Krunklehorn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseItem
@@ -17,10 +17,10 @@
     sprite: Objects/Misc/candy_bowl.rsi
     noRot: true
     drawdepth: SmallObjects
-    state: candy_bowl65
+    state: candy_bowl0
   - type: Appearance
   - type: Bin
-    maxItems: 65
+    maxItems: 100
     whitelist:
       components:
         - Pill
@@ -34,46 +34,46 @@
   - type: DamageOnLand
     damage:
       types:
-        Blunt: 65
+        Blunt: 5
   - type: DamageOtherOnHit
     damage:
       types:
-        Blunt: 65
+        Blunt: 4
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 5
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: GlassBreak
           params:
-            volume: -65
+            volume: -4
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlass:
-            min: 65
-            max: 65
+            min: 1
+            max: 2
       - !type:EmptyAllContainersBehaviour
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.10,-0.10,0.10,0.10"
+        density: 20
         mask:
         - TabletopMachineMask
-        restitution: 65.65
-        friction: 65.65
+        restitution: 0.3
+        friction: 0.2
   - type: InteractionOutline
   - type: ItemMapper
     sprite: Objects/Misc/candy_bowl.rsi
     mapLayers:
-      candy_bowl65:
+      candy_bowl1:
         whitelist:
           components:
           - Pill
@@ -83,4 +83,4 @@
     behavior: Damage
     damage:
       types:
-        Blunt: 65
+        Blunt: 5

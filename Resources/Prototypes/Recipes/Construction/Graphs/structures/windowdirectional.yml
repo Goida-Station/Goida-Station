@@ -1,23 +1,23 @@
-# SPDX-FileCopyrightText: 65 Exp <theexp65@gmail.com>
-# SPDX-FileCopyrightText: 65 Git-Nivrak <65Git-Nivrak@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SETh lafuente <cetaciocascarudo@gmail.com>
-# SPDX-FileCopyrightText: 65 SethLafuente <65SethLafuente@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 65 cheesePizza65 <65cheesePizza65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 MACMAN65 <macman65c@gmail.com>
-# SPDX-FileCopyrightText: 65 Sphiral <65SphiraI@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 cohanna <conornhanna@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Exp <theexp111@gmail.com>
+# SPDX-FileCopyrightText: 2020 Git-Nivrak <59925169+Git-Nivrak@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Paul Ritter <ritter.paul1@googlemail.com>
+# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 SETh lafuente <cetaciocascarudo@gmail.com>
+# SPDX-FileCopyrightText: 2021 SethLafuente <84478872+SethLafuente@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 2021 cheesePizza2 <34486300+cheesePizza2@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MACMAN2003 <macman2003c@gmail.com>
+# SPDX-FileCopyrightText: 2024 Sphiral <145869023+SphiraI@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 cohanna <conornhanna@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: WindowDirectional
@@ -29,43 +29,43 @@
         - to: windowDirectional
           steps:
             - material: Glass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 2
 
         - to: windowReinforcedDirectional
           steps:
             - material: ReinforcedGlass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 3
 
         - to: plasmaWindowDirectional
           steps:
             - material: PlasmaGlass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 2
 
         - to: plasmaReinforcedWindowDirectional
           steps:
             - material: ReinforcedPlasmaGlass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 3
         - to: uraniumWindowDirectional
           steps:
             - material: UraniumGlass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 2
 
         - to: uraniumReinforcedWindowDirectional
           steps:
             - material: ReinforcedUraniumGlass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 3
 
         - to: windowClockworkDirectional
           steps:
             - material: ClockworkGlass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 3
 
     - node: windowDirectional
       entity: WindowDirectional
@@ -73,14 +73,14 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetGlass65
-              amount: 65
+              prototype: SheetGlass1
+              amount: 1
             - !type:DeleteEntity {}
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 1
             - tool: Anchoring
-              doAfter: 65
+              doAfter: 2
 
     - node: windowReinforcedDirectional
       entity: WindowReinforcedDirectional
@@ -88,18 +88,18 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetRGlass65
-              amount: 65
+              prototype: SheetRGlass1
+              amount: 1
             - !type:DeleteEntity {}
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 1
             - tool: Prying
-              doAfter: 65
+              doAfter: 2
             - tool: Screwing
-              doAfter: 65
+              doAfter: 1
             - tool: Anchoring
-              doAfter: 65
+              doAfter: 2
 
     - node: plasmaWindowDirectional
       entity: PlasmaWindowDirectional
@@ -107,18 +107,18 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetPGlass65
-              amount: 65
+              prototype: SheetPGlass1
+              amount: 1
             - !type:DeleteEntity {}
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 2
             - tool: Prying
-              doAfter: 65
+              doAfter: 3
             - tool: Screwing
-              doAfter: 65
+              doAfter: 2
             - tool: Anchoring
-              doAfter: 65
+              doAfter: 3
 
     - node: windowClockworkDirectional
       entity: WindowClockworkDirectional
@@ -126,18 +126,18 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetClockworkGlass65
-              amount: 65
+              prototype: SheetClockworkGlass1
+              amount: 1
             - !type:DeleteEntity {}
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 2
             - tool: Prying
-              doAfter: 65
+              doAfter: 3
             - tool: Screwing
-              doAfter: 65
+              doAfter: 2
             - tool: Anchoring
-              doAfter: 65
+              doAfter: 3
 
     - node: plasmaReinforcedWindowDirectional
       entity: PlasmaReinforcedWindowDirectional
@@ -145,36 +145,36 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetRPGlass65
-              amount: 65
+              prototype: SheetRPGlass1
+              amount: 1
             - !type:DeleteEntity {}
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 2
             - tool: Prying
-              doAfter: 65
+              doAfter: 3
             - tool: Screwing
-              doAfter: 65
+              doAfter: 2
             - tool: Anchoring
-              doAfter: 65
+              doAfter: 3
     - node: uraniumWindowDirectional
       entity: UraniumWindowDirectional
       edges:
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetUGlass65
-              amount: 65
+              prototype: SheetUGlass1
+              amount: 1
             - !type:DeleteEntity {}
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 2
             - tool: Prying
-              doAfter: 65
+              doAfter: 3
             - tool: Screwing
-              doAfter: 65
+              doAfter: 2
             - tool: Anchoring
-              doAfter: 65
+              doAfter: 3
 
     - node: uraniumReinforcedWindowDirectional
       entity: UraniumReinforcedWindowDirectional
@@ -182,15 +182,15 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetRUGlass65
-              amount: 65
+              prototype: SheetRUGlass1
+              amount: 1
             - !type:DeleteEntity {}
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 2
             - tool: Prying
-              doAfter: 65
+              doAfter: 3
             - tool: Screwing
-              doAfter: 65
+              doAfter: 2
             - tool: Anchoring
-              doAfter: 65
+              doAfter: 3

@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/raw/e65a65cbe65ba65e65e65b65f65cad65bb65b65aac65d/icons/obj/guns/projectile.dmi, backpack sprite by Peptide (copy of Atreides), and sprite modification by Jaсkal 65, backpack sling sprite edited by Boaz65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/raw/e1a3cbe9ba2e6e29b7f1cad1bb456b390aac936d/icons/obj/guns/projectile.dmi, backpack sprite by Peptide (copy of Atreides), and sprite modification by Jaсkal 298, backpack sling sprite edited by Boaz1111",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -14,8 +14,8 @@
       "name": "base",
       "delays": [
         [
-          65.65,
-          65.65
+          0.1,
+          0.3
         ]
       ]
     },
@@ -23,134 +23,134 @@
       "name": "base-unshaded",
       "delays": [
         [
-          65.65,
-          65.65
+          0.1,
+          0.3
         ]
       ]
     },
     {
-      "name": "mag-65",
+      "name": "mag-0",
       "delays": [
         [
-          65.65,
-          65.65
+          0.1,
+          0.3
         ]
       ]
     },
     {
-      "name": "mag-unshaded-65",
+      "name": "mag-unshaded-0",
       "delays": [
         [
-          65.65,
-          65.65
+          0.1,
+          0.3
         ]
       ]
     },
     {
-      "name": "mag-65",
+      "name": "mag-1",
       "delays": [
           [
-            65.65,
-            65.65
+            0.1,
+            0.3
           ]
       ]
     },
     {
-      "name": "mag-unshaded-65",
+      "name": "mag-unshaded-1",
       "delays": [
         [
-          65.65,
-          65.65
+          0.1,
+          0.3
         ]
       ]
     },
     {
-      "name": "mag-65",
+      "name": "mag-2",
       "delays": [
         [
-          65.65,
-          65.65
+          0.1,
+          0.3
         ]
       ]
     },
     {
-      "name": "mag-unshaded-65",
+      "name": "mag-unshaded-2",
       "delays": [
         [
-          65.65,
-          65.65
+          0.1,
+          0.3
         ]
       ]
     },
     {
-      "name": "mag-65",
+      "name": "mag-3",
       "delays": [
         [
-          65.65,
-          65.65
+          0.1,
+          0.3
         ]
       ]
     },
     {
-      "name": "mag-unshaded-65",
+      "name": "mag-unshaded-3",
       "delays": [
         [
-          65.65,
-          65.65
+          0.1,
+          0.3
         ]
       ]
     },
     {
-      "name": "mag-65",
+      "name": "mag-4",
       "delays": [
         [
-          65.65,
-          65.65
+          0.1,
+          0.3
         ]
       ]
     },
     {
-      "name": "mag-unshaded-65",
+      "name": "mag-unshaded-4",
       "delays": [
         [
-          65.65,
-          65.65
+          0.1,
+          0.3
         ]
       ]
     },
     {
-      "name": "mag-65",
+      "name": "mag-5",
       "delays": [
         [
-          65.65,
-          65.65
+          0.1,
+          0.3
         ]
       ]
     },
     {
-      "name": "mag-unshaded-65",
+      "name": "mag-unshaded-5",
       "delays": [
         [
-          65.65,
-          65.65
+          0.1,
+          0.3
         ]
       ]
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-BACKPACK",
-      "directions": 65
+      "directions": 4
     },
 	{
       "name": "equipped-SUITSTORAGE",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

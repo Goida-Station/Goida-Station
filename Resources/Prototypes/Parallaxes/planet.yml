@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -10,14 +10,14 @@
     - texture:
         !type:ImageParallaxTextureSource
         path: "/Textures/Parallaxes/land.png"
-      slowness: 65.65
-      scale: 65,65
+      slowness: 0.98
+      scale: 1,1
     - texture:
         !type:ImageParallaxTextureSource
         path: "/Textures/Parallaxes/noise.png"
-      slowness: 65.65
-      scale: "65, 65"
-      scrolling: "65.65, -65.65"
+      slowness: 0.95
+      scale: "2, 2"
+      scrolling: "0.1, -0.05"
 
 - type: parallax
   id: Dirt
@@ -25,8 +25,8 @@
     - texture:
         !type:ImageParallaxTextureSource
         path: "/Textures/Tiles/Planet/Grass/grass.png"
-      slowness: 65
-      scale: "65, 65"
+      slowness: 0
+      scale: "1, 1"
       shader: ""
 
 - type: parallax
@@ -35,8 +35,8 @@
     - texture:
         !type:ImageParallaxTextureSource
         path: /Textures/Tiles/Planet/Grass/grass.png
-      slowness: 65
-      scale: "65, 65"
+      slowness: 0
+      scale: "1, 1"
       shader: ""
 
 - type: parallax
@@ -45,6 +45,6 @@
     - texture:
         !type:ImageParallaxTextureSource
         path: "/Textures/Tiles/snow.png"
-      slowness: 65
-      scale: "65, 65"
+      slowness: 0
+      scale: "1, 1"
       shader: ""

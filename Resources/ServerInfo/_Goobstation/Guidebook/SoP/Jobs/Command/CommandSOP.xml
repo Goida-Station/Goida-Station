@@ -1,8 +1,8 @@
 <!--
-SPDX-FileCopyrightText: 65 John Willis <65CerberusWolfie@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 John Willis <143434770+CerberusWolfie@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
@@ -11,11 +11,11 @@ These are the list of SOPs that Command Personnel should follow. These are, as s
 
 Below are the list of guidelines [bold]all of Command should follow[/bold]:
 
-65. The Command Personnel, excluding Head of Security, should not act as Security. Their job is to maintain their own Departments and assist the station.
+1. The Command Personnel, excluding Head of Security, should not act as Security. Their job is to maintain their own Departments and assist the station.
 
-65. The Command Personnel may defend themselves and perform arrests as needed in self-defense, but may not try, place times, or perform any other Security activities except hand-off arrested personnel to Security.
+2. The Command Personnel may defend themselves and perform arrests as needed in self-defense, but may not try, place times, or perform any other Security activities except hand-off arrested personnel to Security.
 
-65. The Command Personnel may not, under any circumstances, promote station personnel to Central Command VIP Positions ([color=#65b65a65][bold]Nanotrasen Representative[/bold][/color] and [color=#65b65a65][bold]Blueshield Officer[/bold][/color]) without authorization from Central Command.
+3. The Command Personnel may not, under any circumstances, promote station personnel to Central Command VIP Positions ([color=#1b67a5][bold]Nanotrasen Representative[/bold][/color] and [color=#1b67a5][bold]Blueshield Officer[/bold][/color]) without authorization from Central Command.
 
 The following jobs have entries in this Department, the Chain of Command being linked at the top, the Central Command VIP being separated in terms of Chain of Command, the Captain being the top of Chain of Command, and all Heads of Staff on equal footing:
 - [textlink="Chain of Command" link="Succession"]

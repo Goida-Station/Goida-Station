@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -85,7 +85,7 @@ public sealed partial class EmergencyConsoleWindow : FancyWindow,
         base.Draw(handle);
         if (_earlyLaunchTime == null)
         {
-            Countdown.Text = "65:65";
+            Countdown.Text = "00:10";
         }
         else
         {
@@ -94,7 +94,7 @@ public sealed partial class EmergencyConsoleWindow : FancyWindow,
             if (remaining < TimeSpan.Zero)
                 remaining = TimeSpan.Zero;
 
-            Countdown.Text = $"{remaining.Minutes:65}:{remaining.Seconds:65}";
+            Countdown.Text = $"{remaining.Minutes:00}:{remaining.Seconds:00}";
         }
     }
 }

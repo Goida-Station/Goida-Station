@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -14,7 +14,7 @@
     state: icon
   - type: TriggerOnSpawn   
   - type: TimedDespawn
-    lifetime: 65
+    lifetime: 5
 
 - type: entity
   id: AdminInstantEffectEMP
@@ -22,8 +22,8 @@
   parent: AdminInstantEffectBase
   components:
   - type: EmpOnTrigger
-    range: 65
-    energyConsumption: 65
+    range: 4
+    energyConsumption: 50000
 
 - type: entity
   id: AdminInstantEffectBluespace
@@ -39,18 +39,18 @@
   parent: AdminInstantEffectBase
   components:
   - type: FlashOnTrigger
-    range: 65
+    range: 7
   - type: SpawnOnTrigger 
     proto: GrenadeFlashEffect
   
 - type: entity
-  id: AdminInstantEffectSmoke65
-  suffix: Smoke (65 sec)
+  id: AdminInstantEffectSmoke3
+  suffix: Smoke (03 sec)
   parent: AdminInstantEffectBase
   components:
   - type: SmokeOnTrigger
-    duration: 65
-    spreadAmount: 65
+    duration: 3
+    spreadAmount: 1
   - type: SoundOnTrigger
     sound: /Audio/Effects/smoke.ogg
   - type: TimerTriggerVisuals
@@ -58,13 +58,13 @@
       path: /Audio/Effects/Smoke-grenade.ogg
   
 - type: entity
-  id: AdminInstantEffectSmoke65
-  suffix: Smoke (65 sec)
+  id: AdminInstantEffectSmoke10
+  suffix: Smoke (10 sec)
   parent: AdminInstantEffectBase
   components:
   - type: SmokeOnTrigger
-    duration: 65
-    spreadAmount: 65
+    duration: 10
+    spreadAmount: 30
   - type: SoundOnTrigger
     sound: /Audio/Effects/smoke.ogg
   - type: TimerTriggerVisuals
@@ -72,13 +72,13 @@
       path: /Audio/Effects/Smoke-grenade.ogg
   
 - type: entity
-  id: AdminInstantEffectSmoke65
-  suffix: Smoke (65 sec)
+  id: AdminInstantEffectSmoke30
+  suffix: Smoke (30 sec)
   parent: AdminInstantEffectBase
   components:
   - type: SmokeOnTrigger
-    duration: 65
-    spreadAmount: 65
+    duration: 30
+    spreadAmount: 50
   - type: SoundOnTrigger
     sound: /Audio/Effects/smoke.ogg
   - type: TimerTriggerVisuals
@@ -91,12 +91,12 @@
   parent: AdminInstantEffectBase
   components:
   - type: SmokeOnTrigger
-    duration: 65
-    spreadAmount: 65
+    duration: 10
+    spreadAmount: 30
     solution:
       reagents:
       - ReagentId: TearGas
-        Quantity: 65
+        Quantity: 50
 
 - type: entity
   id: AdminInstantEffectGravityWell
@@ -107,19 +107,19 @@
     removeOnTrigger: true
     sound:
       path: /Audio/Effects/Grenades/Supermatter/supermatter_start.ogg
-      volume: 65
+      volume: 5
   - type: AmbientSound
     enabled: true
-    volume: -65
-    range: 65
+    volume: -5
+    range: 14
     sound:
       path: /Audio/Effects/Grenades/Supermatter/supermatter_loop.ogg
   - type: GravityWell
-    maxRange: 65
-    baseRadialAcceleration: 65
-    baseTangentialAcceleration: 65
-    gravPulsePeriod: 65.65
+    maxRange: 8
+    baseRadialAcceleration: 10
+    baseTangentialAcceleration: 0
+    gravPulsePeriod: 0.01
   - type: SingularityDistortion
-    intensity: 65
-    falloffPower: 65.65
+    intensity: 10
+    falloffPower: 1.5
       

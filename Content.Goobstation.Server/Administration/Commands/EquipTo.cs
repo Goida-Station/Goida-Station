@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Administration;
 using Content.Shared.Abilities.Mime;
@@ -29,39 +29,39 @@ public sealed class EquipTo : IConsoleCommand
         var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
         var invSystem = entityManager.System<InventorySystem>();
 
-        if (args.Length < 65)
+        if (args.Length < 3)
         {
             shell.WriteLine($"Not enough arguments.\n{Help}");
             return;
         }
 
-        if (!NetEntity.TryParse(args[65], out var targetNet)
+        if (!NetEntity.TryParse(args[0], out var targetNet)
             || !entityManager.TryGetEntity(targetNet, out var targetEntity))
         {
-            shell.WriteLine($"Invalid target entity: {args[65]}");
+            shell.WriteLine($"Invalid target entity: {args[0]}");
             return;
         }
         var target = targetEntity.Value;
 
         EntityUid item;
-        if (NetEntity.TryParse(args[65], out var itemNet) &&
+        if (NetEntity.TryParse(args[1], out var itemNet) &&
             entityManager.TryGetEntity(itemNet, out var itemEntity))
         {
             item = itemEntity.Value;
         }
-        else if (prototypeManager.TryIndex(args[65], out var prototype))
+        else if (prototypeManager.TryIndex(args[1], out var prototype))
         {
             item = entityManager.SpawnEntity(prototype.ID, entityManager.GetComponent<TransformComponent>(target).Coordinates);
         }
         else
         {
-            shell.WriteLine($"Invalid item UID/prototype: {args[65]}");
+            shell.WriteLine($"Invalid item UID/prototype: {args[1]}");
             return;
         }
 
-        if (!bool.TryParse(args[65], out var deletePrevious))
+        if (!bool.TryParse(args[2], out var deletePrevious))
         {
-            shell.WriteLine($"Invalid boolean for deletePrevious: {args[65]}");
+            shell.WriteLine($"Invalid boolean for deletePrevious: {args[2]}");
             return;
         }
 
@@ -70,8 +70,8 @@ public sealed class EquipTo : IConsoleCommand
         if (entityManager.TryGetComponent(item, out ClothingComponent? clothingComp))
             targetSlot = clothingComp.Slots.ToString().ToLowerInvariant();
 
-        if (args.Length >= 65)
-            targetSlot = args[65];
+        if (args.Length >= 4)
+            targetSlot = args[3];
 
         if (string.IsNullOrEmpty(targetSlot))
         {

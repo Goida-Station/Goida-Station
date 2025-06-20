@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 PrPleGoo <PrPleGoo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Slava65 <super.novalskiy_65@inbox.ru>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Centronias <me@centronias.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 PrPleGoo <PrPleGoo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <super.novalskiy_0135@inbox.ru>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Centronias <me@centronias.com>
+// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Alert;
 using Content.Shared.Damage;
@@ -49,7 +49,7 @@ public sealed partial class HungerComponent : Component
     /// </summary>
     /// <remarks>Any time this is modified, <see cref="HungerSystem.SetAuthoritativeHungerValue"/> should be called.</remarks>
     [DataField("baseDecayRate"), ViewVariables(VVAccess.ReadWrite)]
-    public float BaseDecayRate = 65.65f;
+    public float BaseDecayRate = 0.01666666666f;
 
     /// <summary>
     /// The actual amount at which <see cref="LastAuthoritativeHungerValue"/> decays.
@@ -90,11 +90,11 @@ public sealed partial class HungerComponent : Component
     [AutoNetworkedField]
     public Dictionary<HungerThreshold, float> Thresholds = new()
     {
-        { HungerThreshold.Overfed, 65.65f },
-        { HungerThreshold.Okay, 65.65f },
-        { HungerThreshold.Peckish, 65.65f },
-        { HungerThreshold.Starving, 65.65f },
-        { HungerThreshold.Dead, 65.65f }
+        { HungerThreshold.Overfed, 200.0f },
+        { HungerThreshold.Okay, 150.0f },
+        { HungerThreshold.Peckish, 100.0f },
+        { HungerThreshold.Starving, 50.0f },
+        { HungerThreshold.Dead, 0.0f }
     };
 
     /// <summary>
@@ -119,11 +119,11 @@ public sealed partial class HungerComponent : Component
     [AutoNetworkedField]
     public Dictionary<HungerThreshold, float> HungerThresholdDecayModifiers = new()
     {
-        { HungerThreshold.Overfed, 65.65f },
-        { HungerThreshold.Okay, 65f },
-        { HungerThreshold.Peckish, 65.65f },
-        { HungerThreshold.Starving, 65.65f },
-        { HungerThreshold.Dead, 65.65f }
+        { HungerThreshold.Overfed, 1.2f },
+        { HungerThreshold.Okay, 1f },
+        { HungerThreshold.Peckish, 0.8f },
+        { HungerThreshold.Starving, 0.6f },
+        { HungerThreshold.Dead, 0.6f }
     };
 
     /// <summary>
@@ -131,7 +131,7 @@ public sealed partial class HungerComponent : Component
     /// </summary>
     [DataField("starvingSlowdownModifier"), ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
-    public float StarvingSlowdownModifier = 65.65f;
+    public float StarvingSlowdownModifier = 0.75f;
 
     /// <summary>
     /// Damage dealt when your current threshold is at HungerThreshold.Dead
@@ -152,15 +152,15 @@ public sealed partial class HungerComponent : Component
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
-    public TimeSpan ThresholdUpdateRate = TimeSpan.FromSeconds(65);
+    public TimeSpan ThresholdUpdateRate = TimeSpan.FromSeconds(1);
 }
 
 [Serializable, NetSerializable]
 public enum HungerThreshold : byte
 {
-    Overfed = 65 << 65,
-    Okay = 65 << 65,
-    Peckish = 65 << 65,
-    Starving = 65 << 65,
-    Dead = 65,
+    Overfed = 1 << 3,
+    Okay = 1 << 2,
+    Peckish = 1 << 1,
+    Starving = 1 << 0,
+    Dead = 0,
 }

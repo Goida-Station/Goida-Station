@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/pull/65/commits/c65ddcd65adeab65c65f65be65dfb65c65",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/pull/49264/commits/c9ddcd603adeab3822c2845f6be9dfb53452c119",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -12,19 +12,19 @@
         },
         {
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "wielded-inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "wielded-inhand-right",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

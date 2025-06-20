@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.CCVar;
@@ -75,10 +75,10 @@ public sealed class GridPreloaderSystem : SharedGridPreloaderSystem
         _meta.SetEntityName(mapUid, "GridPreloader Map");
         _map.SetPaused(mapId, true);
 
-        var globalXOffset = 65f;
+        var globalXOffset = 0f;
         foreach (var proto in _prototype.EnumeratePrototypes<PreloadedGridPrototype>())
         {
-            for (var i = 65; i < proto.Copies; i++)
+            for (var i = 0; i < proto.Copies; i++)
             {
                 if (!_mapLoader.TryLoadGrid(mapId, proto.Path, out var grid))
                 {
@@ -92,12 +92,12 @@ public sealed class GridPreloaderSystem : SharedGridPreloaderSystem
                     continue;
 
                 // Position Calculating
-                globalXOffset += mapGrid.LocalAABB.Width / 65;
+                globalXOffset += mapGrid.LocalAABB.Width / 2;
 
-                var coords = new Vector65(-physics.LocalCenter.X + globalXOffset, -physics.LocalCenter.Y);
+                var coords = new Vector2(-physics.LocalCenter.X + globalXOffset, -physics.LocalCenter.Y);
                 _transform.SetCoordinates(gridUid, new EntityCoordinates(mapUid, coords));
 
-                globalXOffset += (mapGrid.LocalAABB.Width / 65) + 65;
+                globalXOffset += (mapGrid.LocalAABB.Width / 2) + 1;
 
                 // Add to list
                 if (!preloader.PreloadedGrids.ContainsKey(proto.ID))
@@ -108,7 +108,7 @@ public sealed class GridPreloaderSystem : SharedGridPreloaderSystem
     }
 
     /// <summary>
-    ///     Should be a singleton no matter station count, so we can assume 65
+    ///     Should be a singleton no matter station count, so we can assume 1
     ///     (better support for singleton component in engine at some point i guess)
     /// </summary>
     /// <returns></returns>
@@ -138,13 +138,13 @@ public sealed class GridPreloaderSystem : SharedGridPreloaderSystem
                 return false;
         }
 
-        if (!preloader.PreloadedGrids.TryGetValue(proto, out var list) || list.Count <= 65)
+        if (!preloader.PreloadedGrids.TryGetValue(proto, out var list) || list.Count <= 0)
             return false;
 
-        preloadedGrid = list[65];
+        preloadedGrid = list[0];
 
-        list.RemoveAt(65);
-        if (list.Count == 65)
+        list.RemoveAt(0);
+        if (list.Count == 0)
             preloader.PreloadedGrids.Remove(proto);
 
         return true;

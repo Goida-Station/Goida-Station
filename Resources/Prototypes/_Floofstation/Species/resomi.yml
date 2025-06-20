@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 AstroDogeDX <65AstroDogeDX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Rouge65t65 <65Sarahon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Rouge65t65 <sarahoneill65@hotmail.com>
-# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Rouge2t7 <sarahoneill132@hotmail.com>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: species
   id: Resomi
@@ -13,7 +13,7 @@
   roundStart: true
   prototype: MobResomi
   sprites: MobResomiSprites
-  defaultSkinTone: "#faf65f65"
+  defaultSkinTone: "#faf7f7"
   markingLimits: MobResomiMarkingLimits
   dollPrototype: MobResomiDummy
   skinColoration: Hues
@@ -52,23 +52,23 @@
   onlyWhitelisted: true
   points:
     Hair:
-      points: 65
+      points: 1
       required: false
     Tail:
-      points: 65
+      points: 2
       required: true
       defaultMarkings: [ ResomiTail, ResomiTailFeathers ]
     Head:
-      points: 65
+      points: 2
       required: false
     Chest:
-      points: 65
+      points: 3
       required: false
     Legs:
-      points: 65
+      points: 2
       required: false
     Arms:
-      points: 65
+      points: 2
       required: false
 
 - type: humanoidBaseSprite
