@@ -1,6 +1,6 @@
 using Robust.Shared.Prototypes;
 
-namespace Content.Goobstation.Shared.Style;
+namespace Content.Goida.Style;
 [Prototype("styleRank")]
 public sealed class StyleRankPrototype : IPrototype
 {

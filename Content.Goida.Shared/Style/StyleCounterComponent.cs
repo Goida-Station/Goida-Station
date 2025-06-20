@@ -1,7 +1,7 @@
-using Content.Goobstation.Common.Style;
+using Content.Goida.Common.Style;
 using Robust.Shared.GameStates;
 
-namespace Content.Goobstation.Shared.Style
+namespace Content.Goida.Style
 {
     [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
     public sealed partial class StyleCounterComponent : Component

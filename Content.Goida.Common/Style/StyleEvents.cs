@@ -1,6 +1,6 @@
 using Robust.Shared.Serialization;
 
-namespace Content.Goobstation.Common.Style
+namespace Content.Goida.Common.Style
 {
     [Serializable, NetSerializable]
     public sealed class StyleHudUpdateEvent : EntityEventArgs

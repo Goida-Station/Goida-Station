@@ -1,10 +1,10 @@
-using Content.Goobstation.Common.Style;
-using Content.Goobstation.Shared.Style;
+using Content.Goida.Common.Style;
+using Content.Goida.Style;
 using Content.Server.Speech.Components;
 using Content.Shared.Speech;
 using Robust.Shared.Timing;
 
-namespace Content.Goobstation.Server.Style;
+namespace Content.Goida.Server.Style;
 
 public sealed class StyleEventSystem : EntitySystem
 {

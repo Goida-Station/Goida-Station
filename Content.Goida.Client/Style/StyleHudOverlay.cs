@@ -1,15 +1,13 @@
 using System.Numerics;
 using Content.Client.Resources;
-using Content.Goobstation.Common.Style;
-using Content.Goobstation.Shared.Style;
+using Content.Goida.Style;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
 using Robust.Client.ResourceManagement;
 using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Utility;
 
-namespace Content.Goobstation.Client.Style;
+namespace Content.Goida.Client.Style;
 
 public sealed class StyleHudOverlay : Overlay
 {
