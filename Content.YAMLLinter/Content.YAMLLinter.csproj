@@ -26,6 +26,9 @@ SPDX-License-Identifier: MIT
       <ProjectReference Include="..\RobustToolbox\Robust.Server\Robust.Server.csproj" />
       <ProjectReference Include="..\RobustToolbox\Robust.Shared.Maths\Robust.Shared.Maths.csproj" />
       <ProjectReference Include="..\RobustToolbox\Robust.Shared\Robust.Shared.csproj" />
+      <ProjectReference Include="..\Content.Goida.Client\Content.Goida.Client.csproj" />
+      <ProjectReference Include="..\Content.Goida.Shared\Content.Goida.Shared.csproj" />
+      <ProjectReference Include="..\Content.Goida.Server\Content.Goida.Server.csproj" />
     </ItemGroup>
 
   <ItemGroup>

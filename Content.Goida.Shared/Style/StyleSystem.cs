@@ -1,11 +1,11 @@
 using System.Linq;
-using Content.Goobstation.Common.Style;
+using Content.Goida.Common.Style;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
-namespace Content.Goobstation.Shared.Style
+namespace Content.Goida.Style
 {
     public sealed class StyleSystem : EntitySystem
     {

@@ -1,11 +1,10 @@
-using Content.Goobstation.Common.Style;
-using Content.Goobstation.Shared.Style;
+using Content.Goida.Common.Style;
+using Content.Goida.Style;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
-using Robust.Shared.GameStates;
 using Robust.Shared.Player;
 
-namespace Content.Goobstation.Client.Style;
+namespace Content.Goida.Client.Style;
 
 public sealed class StyleHudSystem : EntitySystem
 {

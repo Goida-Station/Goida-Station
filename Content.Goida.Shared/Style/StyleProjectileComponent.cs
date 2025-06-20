@@ -1,8 +1,4 @@
-using Content.Goobstation.Common.Style;
-using Robust.Shared.GameStates;
-using Robust.Shared.Serialization;
-
-namespace Content.Goobstation.Shared.Style;
+namespace Content.Goida.Style;
 
 /// <summary>
 /// Used to mark the projectile that was shot from an entity that needs to track style

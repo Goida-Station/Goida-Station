@@ -1,6 +1,6 @@
 using System.Linq;
+using Content.Goida.Common.Style;
 using Content.Goobstation.Common.Gun.Events;
-using Content.Goobstation.Common.Style;
 using Content.Goobstation.Shared.Dash;
 using Content.Goobstation.Shared.Emoting;
 using Content.Goobstation.Shared.Sandevistan;
@@ -14,13 +14,12 @@ using Content.Shared.Mobs.Components;
 using Content.Shared.Projectiles;
 using Content.Shared.Rejuvenate;
 using Content.Shared.Slippery;
-using Content.Shared.Stunnable;
 using Content.Shared.Throwing;
 using Content.Shared.Weapons.Melee.Events;
 using Robust.Shared.Network;
 using Robust.Shared.Timing;
 
-namespace Content.Goobstation.Shared.Style
+namespace Content.Goida.Style
 {
     public sealed class SharedStyleEventSystem : EntitySystem
     {
