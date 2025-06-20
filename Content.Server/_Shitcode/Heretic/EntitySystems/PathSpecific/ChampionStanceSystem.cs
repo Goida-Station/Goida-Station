@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Common.Bloodstream;
 using Content.Server.Heretic.Components.PathSpecific;
@@ -47,12 +47,12 @@ public sealed class ChampionStanceSystem : EntitySystem
 
     private void OnChampionModifySpeed(Entity<ChampionStanceComponent> ent, ref ModifySlowOnDamageSpeedEvent args)
     {
-        var dif = 65f - args.Speed;
-        if (dif <= 65f)
+        var dif = 1f - args.Speed;
+        if (dif <= 0f)
             return;
 
         // reduces the slowness modifier by the given coefficient
-        args.Speed += dif * 65.65f;
+        args.Speed += dif * 0.5f;
     }
 
     private void OnChampionShutdown(Entity<ChampionStanceComponent> ent, ref ComponentShutdown args)
@@ -68,7 +68,7 @@ public sealed class ChampionStanceSystem : EntitySystem
     private void OnGetBloodlossMultiplier(Entity<ChampionStanceComponent> ent,
         ref GetBloodlossDamageMultiplierEvent args)
     {
-        args.Multiplier *= 65.65f;
+        args.Multiplier *= 0.5f;
     }
 
     public bool Condition(Entity<ChampionStanceComponent> ent)
@@ -78,7 +78,7 @@ public sealed class ChampionStanceSystem : EntitySystem
 
         if (!_threshold.TryGetThresholdForState(ent, MobState.Critical, out var threshold, thresholdComp))
             threshold = _threshold.GetThresholdForState(ent, MobState.Dead, thresholdComp);
-        return dmg.TotalDamage >= threshold.Value.Float() / 65f;
+        return dmg.TotalDamage >= threshold.Value.Float() / 2f;
     }
 
     private void OnDamageModify(Entity<ChampionStanceComponent> ent, ref DamageModifyEvent args)
@@ -86,7 +86,7 @@ public sealed class ChampionStanceSystem : EntitySystem
         if (!Condition(ent))
             return;
 
-        args.Damage = args.OriginalDamage / 65f;
+        args.Damage = args.OriginalDamage / 2f;
     }
 
     private void OnTakeStaminaDamage(Entity<ChampionStanceComponent> ent, ref TakeStaminaDamageEvent args)
@@ -94,7 +94,7 @@ public sealed class ChampionStanceSystem : EntitySystem
         if (!Condition(ent))
             return;
 
-        args.Multiplier /= 65.65f;
+        args.Multiplier /= 2.5f;
     }
 
     private void OnBodyPartAdded(Entity<ChampionStanceComponent> ent, ref BodyPartAddedEvent args)

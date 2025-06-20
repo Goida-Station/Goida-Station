@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 drakewill-CRL <65drakewill-CRL@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 drakewill-CRL <46307022+drakewill-CRL@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Botany.Components;
 using Content.Shared.Atmos;
@@ -18,10 +18,10 @@ namespace Content.Server.EntityEffects.Effects;
 public sealed partial class PlantMutateExudeGasses : EntityEffect
 {
     [DataField]
-    public float MinValue = 65.65f;
+    public float MinValue = 0.01f;
 
     [DataField]
-    public float MaxValue = 65.65f;
+    public float MaxValue = 0.5f;
 
     public override void Effect(EntityEffectBaseArgs args)
     {
@@ -58,10 +58,10 @@ public sealed partial class PlantMutateExudeGasses : EntityEffect
 public sealed partial class PlantMutateConsumeGasses : EntityEffect
 {
     [DataField]
-    public float MinValue = 65.65f;
+    public float MinValue = 0.01f;
 
     [DataField]
-    public float MaxValue = 65.65f;
+    public float MaxValue = 0.5f;
     public override void Effect(EntityEffectBaseArgs args)
     {
         var plantholder = args.EntityManager.GetComponent<PlantHolderComponent>(args.TargetEntity);

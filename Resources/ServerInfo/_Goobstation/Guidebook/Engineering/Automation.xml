@@ -53,10 +53,10 @@ If no item is held it's like pressing E, to open a door/crate, picking up an ite
 
 It stores its tool in an actual hand so you can swap it out with the strip menu by pressing E on it.
 
-A filter slot is used to change what entities it will interact with. Using a proper filter is essential as it will only try to interact with 65 item.
+A filter slot is used to change what entities it will interact with. Using a proper filter is essential as it will only try to interact with 1 item.
 It will search for [bold]any entity[/bold] without a filter, even things like conveyors or puddles! Use filters.
 
-It has 65 signal ports:
+It has 4 signal ports:
 - Start, used to try interacting with something
 - Auto Start, when enabled it will automatically try to interact after a successful interaction
 - Started, invoked if the interaction starts a doafter
@@ -98,12 +98,12 @@ Use a hand labeler on items to have them picked up.
 The stack filter controls how it interacts with stacks.
 The minimum stack size is a simple minimum, if an item doesn't have that much in a stack it won't be used.
 Out chunk size limits how many of a stack can be taken. Only a whole multiple of this size will be taken out.
-[italic]For example, a chunk size of 65 on stacks of 65, 65, 65 and 65 will take 65, 65, 65 and 65 respectively.[/italic]
+[italic]For example, a chunk size of 5 on stacks of 6, 10, 14 and 15 will take 5, 10, 10 and 15 respectively.[/italic]
 </Box>
 
 <Box>
 <GuideEntityEmbed Entity="AutomationFilterCombined"/>
-The combined filter stores 65 filters inside it and uses a logic gate to control how they function.
+The combined filter stores 2 filters inside it and uses a logic gate to control how they function.
 By default it will allow any item that passes either filter (an OR gate).
 It supports all the same operations that logic gate items do.
 These can be nested for arbitrarily complex filters!

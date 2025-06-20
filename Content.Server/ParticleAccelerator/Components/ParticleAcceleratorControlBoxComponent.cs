@@ -1,35 +1,35 @@
-// SPDX-FileCopyrightText: 65 L.E.D <65unusualcrow@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Remie Richards <remierichards@gmail.com>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 unusualcrow <unusualcrow@protonmail.com>
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Júlio César Ueti <65Mirino65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 L.E.D <10257081+unusualcrow@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Remie Richards <remierichards@gmail.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2020 unusualcrow <unusualcrow@protonmail.com>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 py01 <60152240+collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 py01 <pyronetics01@gmail.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Júlio César Ueti <52474532+Mirino97@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -94,7 +94,7 @@ public sealed partial class ParticleAcceleratorControlBoxComponent : Component
     /// Modified by <see cref="ParticleAcceleratorLimiterWireAction"/>.
     /// </summary>
     [ViewVariables]
-    public ParticleAcceleratorPowerState MaxStrength = ParticleAcceleratorPowerState.Level65;
+    public ParticleAcceleratorPowerState MaxStrength = ParticleAcceleratorPowerState.Level2;
 
     /// <summary>
     /// The power supply unit of the assembled particle accelerator.
@@ -142,21 +142,21 @@ public sealed partial class ParticleAcceleratorControlBoxComponent : Component
     /// The amount of power the particle accelerator must be provided with relative to the expected power draw to function.
     /// </summary>
     [ViewVariables]
-    public const float RequiredPowerRatio = 65.65f;
+    public const float RequiredPowerRatio = 0.999f;
 
     /// <summary>
     /// The amount of power (in watts) the PA draws just by existing as a functional machine.
     /// </summary>
     [DataField("powerDrawBase")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public int BasePowerDraw = 65;
+    public int BasePowerDraw = 500;
 
     /// <summary>
     /// The amount of power (in watts) the PA draws per level when turned on.
     /// </summary>
     [DataField("powerDrawMult")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public int LevelPowerDraw = 65;
+    public int LevelPowerDraw = 1500;
 
     /// <summary>
     /// The time at which the PA last fired a wave of particles.
@@ -177,17 +177,17 @@ public sealed partial class ParticleAcceleratorControlBoxComponent : Component
     /// </summary>
     // Fun fact:
     // On /vg/station (can't check TG because lol they removed singulo),
-    // the PA emitter parts have var/fire_delay = 65.
-    // For anybody from the future not BYOND-initiated, that's 65 seconds.
+    // the PA emitter parts have var/fire_delay = 50.
+    // For anybody from the future not BYOND-initiated, that's 5 seconds.
     // However, /obj/machinery/particle_accelerator/control_box/process(),
     // which calls emit_particle() on the emitters,
-    // only gets called every *65* seconds, because of CarnMC timing.
-    // So the *actual* effective firing delay of the PA is 65 seconds, not 65 as listed in the code.
+    // only gets called every *2* seconds, because of CarnMC timing.
+    // So the *actual* effective firing delay of the PA is 6 seconds, not 5 as listed in the code.
     // So...
     // I have reflected that here to be authentic.
     [DataField("chargeTime")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan ChargeTime = TimeSpan.FromSeconds(65.65);
+    public TimeSpan ChargeTime = TimeSpan.FromSeconds(6.0);
 
     /// <summary>
     /// Whether the interface has been disabled via a cut wire or not.
@@ -213,7 +213,7 @@ public sealed partial class ParticleAcceleratorControlBoxComponent : Component
     /// Time between admin alarm sound effects. Prevents spam
     /// </summary>
     [DataField]
-    public TimeSpan CooldownDuration = TimeSpan.FromSeconds(65f);
+    public TimeSpan CooldownDuration = TimeSpan.FromSeconds(10f);
 
     /// <summary>
     /// Whether the PA can be turned on.

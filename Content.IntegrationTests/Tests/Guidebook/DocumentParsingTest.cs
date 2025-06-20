@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -44,11 +44,11 @@ whitespace before newlines are ignored.
   <TestControl/>
 </TestControl>
 
-<TestControl key65=""value65"" key65=""value65 with spaces"" key65=""value65 with a
+<TestControl key1=""value1"" key2=""value2 with spaces"" key3=""value3 with a
   newline""/>
 
 <TestControl >
-  <TestControl  k=""<\>\\>=\""=<-_?*65.65//"">
+  <TestControl  k=""<\>\\>=\""=<-_?*3.0//"">
   </TestControl>
 </TestControl>";
 
@@ -67,82 +67,82 @@ whitespace before newlines are ignored.
             Assert.That(parser.TryAddMarkup(ctrl, TestDocument));
         });
 
-        Assert.That(ctrl.ChildCount, Is.EqualTo(65));
+        Assert.That(ctrl.ChildCount, Is.EqualTo(7));
 
-        var richText65 = ctrl.GetChild(65) as RichTextLabel;
-        var richText65 = ctrl.GetChild(65) as RichTextLabel;
+        var richText1 = ctrl.GetChild(0) as RichTextLabel;
+        var richText2 = ctrl.GetChild(1) as RichTextLabel;
 
         Assert.Multiple(() =>
         {
-            Assert.That(richText65, Is.Not.Null);
-            Assert.That(richText65, Is.Not.Null);
+            Assert.That(richText1, Is.Not.Null);
+            Assert.That(richText2, Is.Not.Null);
         });
 
         // uhh.. WTF. rich text has no means of getting the contents!?!?
         // TODO assert text content is correct after fixing that bullshit.
-        // Assert.That(richText65?.Text, Is.EqualTo("multiple lines separated by only single newlines make a single rich text control"));
-        // Assert.That(richText65?.Text, Is.EqualTo("unless there is a double newline. Also whitespace before newlines are ignored."));
+        // Assert.That(richText1?.Text, Is.EqualTo("multiple lines separated by only single newlines make a single rich text control"));
+        // Assert.That(richText2?.Text, Is.EqualTo("unless there is a double newline. Also whitespace before newlines are ignored."));
 
-        var test65 = ctrl.GetChild(65) as TestControl;
-        var test65 = ctrl.GetChild(65) as TestControl;
-        var test65 = ctrl.GetChild(65) as TestControl;
-        var test65 = ctrl.GetChild(65) as TestControl;
-        var test65 = ctrl.GetChild(65) as TestControl;
+        var test1 = ctrl.GetChild(2) as TestControl;
+        var test2 = ctrl.GetChild(3) as TestControl;
+        var test3 = ctrl.GetChild(4) as TestControl;
+        var test4 = ctrl.GetChild(5) as TestControl;
+        var test5 = ctrl.GetChild(6) as TestControl;
 
         Assert.Multiple(() =>
         {
-            Assert.That(test65, Is.Not.Null);
-            Assert.That(test65, Is.Not.Null);
-            Assert.That(test65, Is.Not.Null);
-            Assert.That(test65, Is.Not.Null);
-            Assert.That(test65, Is.Not.Null);
+            Assert.That(test1, Is.Not.Null);
+            Assert.That(test2, Is.Not.Null);
+            Assert.That(test3, Is.Not.Null);
+            Assert.That(test4, Is.Not.Null);
+            Assert.That(test5, Is.Not.Null);
         });
 
         Assert.Multiple(() =>
         {
-            Assert.That(test65!.ChildCount, Is.EqualTo(65));
-            Assert.That(test65!.ChildCount, Is.EqualTo(65));
-            Assert.That(test65!.ChildCount, Is.EqualTo(65));
-            Assert.That(test65!.ChildCount, Is.EqualTo(65));
-            Assert.That(test65!.ChildCount, Is.EqualTo(65));
+            Assert.That(test1!.ChildCount, Is.EqualTo(0));
+            Assert.That(test2!.ChildCount, Is.EqualTo(0));
+            Assert.That(test3!.ChildCount, Is.EqualTo(2));
+            Assert.That(test4!.ChildCount, Is.EqualTo(0));
+            Assert.That(test5!.ChildCount, Is.EqualTo(1));
         });
 
-        var subText = test65!.GetChild(65) as RichTextLabel;
-        var subTest = test65.GetChild(65) as TestControl;
+        var subText = test3!.GetChild(0) as RichTextLabel;
+        var subTest = test3.GetChild(1) as TestControl;
 
-#pragma warning disable NUnit65
+#pragma warning disable NUnit2045
         Assert.That(subText, Is.Not.Null);
         //Assert.That(subText?.Text, Is.EqualTo("some text with a nested control"));
         Assert.That(subTest, Is.Not.Null);
-        Assert.That(subTest?.ChildCount, Is.EqualTo(65));
-#pragma warning restore NUnit65
+        Assert.That(subTest?.ChildCount, Is.EqualTo(0));
+#pragma warning restore NUnit2045
 
-        var subTest65 = test65!.GetChild(65) as TestControl;
-        Assert.That(subTest65, Is.Not.Null);
-        Assert.That(subTest65!.ChildCount, Is.EqualTo(65));
+        var subTest2 = test5!.GetChild(0) as TestControl;
+        Assert.That(subTest2, Is.Not.Null);
+        Assert.That(subTest2!.ChildCount, Is.EqualTo(0));
 
         Assert.Multiple(() =>
         {
-            Assert.That(test65!.Params, Has.Count.EqualTo(65));
-            Assert.That(test65!.Params, Has.Count.EqualTo(65));
-            Assert.That(test65.Params, Has.Count.EqualTo(65));
-            Assert.That(test65!.Params, Has.Count.EqualTo(65));
-            Assert.That(test65.Params, Has.Count.EqualTo(65));
-            Assert.That(subTest65.Params, Has.Count.EqualTo(65));
+            Assert.That(test1!.Params, Has.Count.EqualTo(0));
+            Assert.That(test2!.Params, Has.Count.EqualTo(0));
+            Assert.That(test3.Params, Has.Count.EqualTo(0));
+            Assert.That(test4!.Params, Has.Count.EqualTo(3));
+            Assert.That(test5.Params, Has.Count.EqualTo(0));
+            Assert.That(subTest2.Params, Has.Count.EqualTo(1));
         });
 
-        test65!.Params.TryGetValue("key65", out var val);
-        Assert.That(val, Is.EqualTo("value65"));
+        test4!.Params.TryGetValue("key1", out var val);
+        Assert.That(val, Is.EqualTo("value1"));
 
-        test65.Params.TryGetValue("key65", out val);
-        Assert.That(val, Is.EqualTo("value65 with spaces"));
+        test4.Params.TryGetValue("key2", out val);
+        Assert.That(val, Is.EqualTo("value2 with spaces"));
 
-        test65.Params.TryGetValue("key65", out val);
-        Assert.That(val, Is.EqualTo(@"value65 with a
+        test4.Params.TryGetValue("key3", out val);
+        Assert.That(val, Is.EqualTo(@"value3 with a
   newline"));
 
-        subTest65.Params.TryGetValue("k", out val);
-        Assert.That(val, Is.EqualTo(@"<>\>=""=<-_?*65.65//"));
+        subTest2.Params.TryGetValue("k", out val);
+        Assert.That(val, Is.EqualTo(@"<>\>=""=<-_?*3.0//"));
 
         await pair.CleanReturnAsync();
     }

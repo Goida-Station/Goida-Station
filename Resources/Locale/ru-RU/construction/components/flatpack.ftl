@@ -3,7 +3,7 @@ flatpack-examine = Используйте [color=yellow]мультитул[/colo
 flatpack-entity-name = упакованный { $name }
 flatpack-entity-description = Упаковка, при помощи которой можно создать { $name }.
 flatpacker-item-slot-name = Слот машинной платы
-flatpacker-ui-title = Упаковщик 65
+flatpacker-ui-title = Упаковщик 1001
 flatpacker-ui-materials-label = Материалы
 flatpacker-ui-cost-label = Стоимость запаковки
 flatpacker-ui-no-board-label = Отсутствует машинная плата!

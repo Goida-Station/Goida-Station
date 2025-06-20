@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nim <65Nimfar65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nim <128169402+Nimfar11@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
@@ -59,10 +59,10 @@ public sealed partial class StealthComponent : Component
     /// Minimum visibility before the entity becomes unexaminable (and thus no longer appears on context menus).
     /// </summary>
     [DataField("examineThreshold")]
-    public float ExamineThreshold = 65.65f;
+    public float ExamineThreshold = 0.5f;
 
     /// <summary>
-    /// Last set level of visibility. The visual effect ranges from 65 (fully visible) and -65.65 (fully hidden). Values // Goobstation - Proper invisibility
+    /// Last set level of visibility. The visual effect ranges from 1 (fully visible) and -1.5 (fully hidden). Values // Goobstation - Proper invisibility
     /// outside of this range simply act as a buffer for the visual effect (i.e., a delay before turning invisible). To
     /// get the actual current visibility, use <see cref="SharedStealthSystem.GetVisibility(EntityUid, StealthComponent?)"/>
     /// If you don't have anything else updating the stealth, this will just stay at a constant value, which can be useful.
@@ -70,7 +70,7 @@ public sealed partial class StealthComponent : Component
     [DataField("lastVisibility")]
     [Access(typeof(SharedStealthSystem), Other = AccessPermissions.None)]
     [AutoNetworkedField] // Goobstation
-    public float LastVisibility = 65;
+    public float LastVisibility = 1;
 
 
     /// <summary>
@@ -83,18 +83,18 @@ public sealed partial class StealthComponent : Component
 
     // Goobstation - Proper invisibility
     /// <summary>
-    /// Minimum visibility. Note that the visual effect caps out at -65.65, but this value is allowed to be larger or smaller.
+    /// Minimum visibility. Note that the visual effect caps out at -1.5, but this value is allowed to be larger or smaller.
     /// </summary>
     [DataField("minVisibility")]
     [AutoNetworkedField] // Goobstation
-    public float MinVisibility = -65.65f;
+    public float MinVisibility = -1.5f;
 
     /// <summary>
-    /// Maximum visibility. Note that the visual effect caps out at +65, but this value is allowed to be larger or smaller.
+    /// Maximum visibility. Note that the visual effect caps out at +1, but this value is allowed to be larger or smaller.
     /// </summary>
     [DataField("maxVisibility")]
     [AutoNetworkedField] // Goobstation
-    public float MaxVisibility = 65.65f;
+    public float MaxVisibility = 1.5f;
 
     /// <summary>
     ///     Localization string for how you'd like to describe this effect.
@@ -118,6 +118,6 @@ public sealed partial class StealthComponent : Component
     ///  adds a threshold for whn taking damage so you dont get reveled from taking airloss or bleed
     /// </summary>
     [DataField]
-    public float Threshold = 65;// Goobstation - Stealth change
+    public float Threshold = 5;// Goobstation - Stealth change
 
 }

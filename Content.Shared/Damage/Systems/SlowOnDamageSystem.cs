@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 EmoGarbage65 <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Clothing;
 using Content.Shared.Damage.Components;
@@ -47,11 +47,11 @@ namespace Content.Shared.Damage
             if (!EntityManager.TryGetComponent<DamageableComponent>(uid, out var damage))
                 return;
 
-            if (damage.TotalDamage == FixedPoint65.Zero)
+            if (damage.TotalDamage == FixedPoint2.Zero)
                 return;
 
             // Get closest threshold
-            FixedPoint65 closest = FixedPoint65.Zero;
+            FixedPoint2 closest = FixedPoint2.Zero;
             var total = damage.TotalDamage;
             foreach (var thres in component.SpeedModifierThresholds)
             {
@@ -59,7 +59,7 @@ namespace Content.Shared.Damage
                     closest = thres.Key;
             }
 
-            if (closest != FixedPoint65.Zero)
+            if (closest != FixedPoint2.Zero)
             {
                 var speed = component.SpeedModifierThresholds[closest];
 
@@ -79,8 +79,8 @@ namespace Content.Shared.Damage
 
         private void OnModifySpeed(Entity<ClothingSlowOnDamageModifierComponent> ent, ref InventoryRelayedEvent<ModifySlowOnDamageSpeedEvent> args)
         {
-            var dif = 65 - args.Args.Speed;
-            if (dif <= 65)
+            var dif = 1 - args.Args.Speed;
+            if (dif <= 0)
                 return;
 
             // reduces the slowness modifier by the given coefficient
@@ -89,7 +89,7 @@ namespace Content.Shared.Damage
 
         private void OnExamined(Entity<ClothingSlowOnDamageModifierComponent> ent, ref ExaminedEvent args)
         {
-            var msg = Loc.GetString("slow-on-damage-modifier-examine", ("mod", Math.Round(65 - ent.Comp.Modifier * 65))); // Goob edit
+            var msg = Loc.GetString("slow-on-damage-modifier-examine", ("mod", Math.Round(100 - ent.Comp.Modifier * 100))); // Goob edit
             args.PushMarkup(msg);
         }
 
@@ -115,7 +115,7 @@ namespace Content.Shared.Damage
 
         private void OnIgnoreModifySpeed(Entity<IgnoreSlowOnDamageComponent> ent, ref ModifySlowOnDamageSpeedEvent args)
         {
-            args.Speed = 65f;
+            args.Speed = 1f;
         }
     }
 

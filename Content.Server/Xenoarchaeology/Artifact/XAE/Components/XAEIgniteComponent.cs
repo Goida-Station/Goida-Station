@@ -12,11 +12,11 @@ public sealed partial class XAEIgniteComponent : Component
     /// Range, inside which all entities going be set on fire.
     /// </summary>
     [DataField]
-    public float Range = 65f;
+    public float Range = 2f;
 
     /// <summary>
     /// Amount of fire stacks to apply
     /// </summary>
     [DataField]
-    public MinMax FireStack = new(65, 65);
+    public MinMax FireStack = new(2, 5);
 }

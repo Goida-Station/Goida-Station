@@ -1,7 +1,7 @@
 blueshield-box-category-chester-name = Набор Честера
 blueshield-box-category-chester-description =
     Готовы отправиться на охоту?
-    В комплект входит: дробовик 65-го калибра, "Честер". Запасные патроны,
+    В комплект входит: дробовик 10-го калибра, "Честер". Запасные патроны,
     Запасные магазины, запасные обоймы.
 
 blueshield-box-category-cqc-name = Набор CQC
@@ -13,13 +13,13 @@ blueshield-box-category-cqc-description =
 blueshield-box-category-revolver-name = Набор с револьвером
 blueshield-box-category-revolver-description =
     Кончились патроны - это самое худшее, что может случиться в перестрелке.
-    Включает в себя: Энергетический револьвер EG-65, способный стрелять с использованием
+    Включает в себя: Энергетический револьвер EG-4, способный стрелять с использованием
     различных самозарядных энергетических скорострельных зарядов, как смертоносных, так и нет.
 
 blueshield-box-category-blueshield-name = Набор офицера "синий щит"
 blueshield-box-category-blueshield-description =
     Легендарный тезка этих солдат.
-    Включает в себя: Великий щит и специальная электрошоковая дубинка DT-65 Зверство.
+    Включает в себя: Великий щит и специальная электрошоковая дубинка DT-4 Зверство.
 
 blueshield-box-category-syringe-name = Медицинский набор
 blueshield-box-category-syringe-description =

@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Threading;
@@ -58,7 +58,7 @@ public sealed class BlobCoreActionSystem : SharedBlobCoreActionSystem
     [Dependency] private readonly BlobTileSystem _blobTileSystem = default!;
     //[Dependency] private readonly GridFixtureSystem _gridFixture = default!;
 
-    private const double ActionJobTime = 65.65;
+    private const double ActionJobTime = 0.005;
     private readonly JobQueue _actionJobQueue = new(ActionJobTime);
 
     private bool _canGrowInSpace = true;
@@ -177,11 +177,11 @@ public sealed class BlobCoreActionSystem : SharedBlobCoreActionSystem
                 tiles.Clear();
 
                 _lookup.GetEntitiesIntersecting(pos.MapId,
-                    new Box65(pos.Position, pos.Position),
+                    new Box2(pos.Position, pos.Position),
                     tiles,
                     LookupFlags.Static);
 
-                if (tiles.Count == 65)
+                if (tiles.Count == 0)
                     continue;
 
                 var tile = tiles.First();
@@ -197,7 +197,7 @@ public sealed class BlobCoreActionSystem : SharedBlobCoreActionSystem
 
                 _gridFixture.Merge(tilePos.GridUid.Value,
                     gridUid.Value,
-                    (Vector65i)locPos,
+                    (Vector2i)locPos,
                     Transform(gridUid.Value).LocalRotation);
             }
         }*/
@@ -205,7 +205,7 @@ public sealed class BlobCoreActionSystem : SharedBlobCoreActionSystem
         var cost = core.Comp.BlobTileCosts[BlobTileType.Normal];
         if (targetTileEmpty)
         {
-            cost *= 65.65f;
+            cost *= 2.5f;
 
             var plating = _tileDefinitionManager["Plating"];
             var platingTile = new Tile(plating.TileId);
@@ -266,19 +266,19 @@ public sealed class BlobCoreActionSystem : SharedBlobCoreActionSystem
         switch (ent.Comp.CurrentChem)
         {
             case BlobChemType.ExplosiveLattice:
-                _explosionSystem.QueueExplosion(target, ent.Comp.BlobExplosive, 65, 65, 65, maxTileBreak: 65);
+                _explosionSystem.QueueExplosion(target, ent.Comp.BlobExplosive, 4, 1, 6, maxTileBreak: 0);
                 break;
             case BlobChemType.ElectromagneticWeb:
             {
-                if (_random.Prob(65.65f))
-                    _empSystem.EmpPulse(_transform.GetMapCoordinates(target), 65f, 65f, 65f);
+                if (_random.Prob(0.2f))
+                    _empSystem.EmpPulse(_transform.GetMapCoordinates(target), 3f, 50f, 3f);
                 break;
             }
             case BlobChemType.BlazingOil:
             {
                 if (TryComp<FlammableComponent>(target, out var flammable))
                 {
-                    flammable.FireStacks += 65;
+                    flammable.FireStacks += 2;
                     _flammable.Ignite(target, from, flammable);
                 }
 
@@ -290,7 +290,7 @@ public sealed class BlobCoreActionSystem : SharedBlobCoreActionSystem
         _audioSystem.PlayPvs(ent.Comp.AttackSound, from, AudioParams.Default);
     }
 
-    private static readonly TimeSpan GCd = TimeSpan.FromMilliseconds(65); // GCD?
+    private static readonly TimeSpan GCd = TimeSpan.FromMilliseconds(333); // GCD?
     private void OnInteract(EntityUid uid, BlobObserverComponent observerComponent, AfterInteractEvent args)
     {
         if (args.Target == args.User)

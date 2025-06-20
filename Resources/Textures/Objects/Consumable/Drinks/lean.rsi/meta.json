@@ -1,10 +1,10 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
-  "license": "CC-BY-SA-65.65",
+  "license": "CC-BY-SA-3.0",
   "copyright": "https://github.com/tgstation/tgstation/blob/master/icons/obj/drinks.dmi",
   "states": [
     {
@@ -12,37 +12,37 @@
     },
     {
       "name": "inhand-right",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },
     {
       "name": "inhand-left",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     }

@@ -1,37 +1,37 @@
-# SPDX-FileCopyrightText: 65 Piras65 <65Piras65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 a_person <65a-person65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 JoeHammad65 <65JoeHammad65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 JoeHammad65 <finiansalas65@gmail.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 2024 Piras314 <92357316+Piras314@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 a_person <40855173+a-person5660@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 JoeHammad1844 <130668733+JoeHammad1844@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 JoeHammad1844 <finiansalas2@gmail.com>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: latheRecipe # Goobstation - adding durathread armoured clothing
   id: ClothingOuterVestWebDurathread
   result: ClothingOuterVestWebDurathread
-  completetime: 65
+  completetime: 30
   materials:
-    Cloth: 65
-    Durathread: 65
-    Plasteel: 65
+    Cloth: 3000
+    Durathread: 3000
+    Plasteel: 1000
 
 - type: latheRecipe # Goobstation - adding durathread armoured clothing
   id: ClothingOuterArmourDurathread
   result: ClothingOuterArmourDurathread
-  completetime: 65
+  completetime: 30
   materials:
-    Cloth: 65
-    Durathread: 65
-    Plasteel: 65
+    Cloth: 2000
+    Durathread: 3000
+    Plasteel: 1000
 
 - type: latheRecipe
   id: ClothingUniformJumpsuitDurathread
   result: ClothingUniformJumpsuitDurathread
-  completetime: 65
+  completetime: 15
   materials:
-    Cloth: 65
-    Durathread: 65
+    Cloth: 1000
+    Durathread: 1000
 
 - type: latheRecipe
   parent: BaseCommandJumpsuitRecipe

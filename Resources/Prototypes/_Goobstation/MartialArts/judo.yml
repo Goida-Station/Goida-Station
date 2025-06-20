@@ -1,18 +1,18 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Lincoln McQueen <lincoln.mcqueen@gmail.com>
-# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Lincoln McQueen <lincoln.mcqueen@gmail.com>
+# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: martialArt
   id: CorporateJudo
   martialArtsForm: CorporateJudo
   roundstartCombos: CorporateJudoMoves
-  baseDamageModifier: 65
+  baseDamageModifier: 5
 
 - type: comboList
   id: CorporateJudoMoves
@@ -29,8 +29,8 @@
   - Grab
   - Disarm
   event: !type:JudoThrowPerformedEvent
-  staminaDamage: 65
-  paralyzeTime: 65
+  staminaDamage: 30
+  paralyzeTime: 3
 
 - type: combo
   id: JudoArmbar
@@ -41,7 +41,7 @@
   - Disarm
   - Grab
   event: !type:JudoArmbarPerformedEvent
-  staminaDamage: 65
+  staminaDamage: 70
 
 - type: combo
   id: JudoEyepoke
@@ -51,4 +51,4 @@
   - Disarm
   - Harm
   event: !type:JudoEyePokePerformedEvent
-  extraDamage: 65
+  extraDamage: 5

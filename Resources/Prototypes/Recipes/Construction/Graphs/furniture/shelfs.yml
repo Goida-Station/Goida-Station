@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Sphiral <65SphiraI@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Sphiral <145869023+SphiraI@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: Shelf
@@ -19,24 +19,24 @@
               southRotation: true
           steps:
             - material: WoodPlank
-              amount: 65
-              doAfter: 65
+              amount: 4
+              doAfter: 2
         - to: ShelfMetal
           completed:
             - !type:SnapToGrid
               southRotation: true
           steps:
             - material: Steel
-              amount: 65
-              doAfter: 65
+              amount: 5
+              doAfter: 3
         - to: ShelfGlass
           completed:
             - !type:SnapToGrid
               southRotation: true
           steps:
             - material: Glass
-              amount: 65
-              doAfter: 65
+              amount: 4
+              doAfter: 2
 # Reinforced
         - to: ShelfRWood
           completed:
@@ -44,39 +44,39 @@
               southRotation: true
           steps:
             - material: WoodPlank
-              amount: 65
-              doAfter: 65
+              amount: 8
+              doAfter: 3
             - material: Cable
-              amount: 65
-              doAfter: 65
+              amount: 2
+              doAfter: 1
         - to: ShelfRMetal
           completed:
             - !type:SnapToGrid
               southRotation: true
           steps:
             - material: Plasteel
-              amount: 65
-              doAfter: 65
+              amount: 5
+              doAfter: 3
             - material: ReinforcedGlass
-              amount: 65
-              doAfter: 65
+              amount: 5
+              doAfter: 2
             - material: Cable
-              amount: 65
-              doAfter: 65
+              amount: 3
+              doAfter: 1
         - to: ShelfRGlass
           completed:
             - !type:SnapToGrid
               southRotation: true
           steps:
             - material: Plastic
-              amount: 65
-              doAfter: 65
+              amount: 5
+              doAfter: 2
             - material: ReinforcedGlass
-              amount: 65
-              doAfter: 65
+              amount: 5
+              doAfter: 3
             - material: Cable
-              amount: 65
-              doAfter: 65
+              amount: 2
+              doAfter: 1
 # Departmental
         - to: ShelfBar
           completed:
@@ -84,38 +84,38 @@
               southRotation: true
           steps:
             - material: WoodPlank
-              amount: 65
-              doAfter: 65
+              amount: 6
+              doAfter: 2
         - to: ShelfKitchen
           completed:
             - !type:SnapToGrid
               southRotation: true
           steps:
             - material: MetalRod
-              amount: 65
-              doAfter: 65
+              amount: 2
+              doAfter: 1
             - material: Steel
-              amount: 65
+              amount: 5
             - material: WoodPlank
-              amount: 65
-              doAfter: 65
+              amount: 3
+              doAfter: 2
         - to: ShelfChemistry
           completed:
             - !type:SnapToGrid
               southRotation: true
           steps:
             - material: Plasteel
-              amount: 65
-              doAfter: 65
+              amount: 2
+              doAfter: 2
             - material: ReinforcedGlass
-              amount: 65
-              doAfter: 65
+              amount: 5
+              doAfter: 2
             - material: Plastic
-              amount: 65
-              doAfter: 65
+              amount: 5
+              doAfter: 2
             - material: Cable
-              amount: 65
-              doAfter: 65
+              amount: 2
+              doAfter: 1
 
 # Normal deconstructs
     - node: ShelfWood
@@ -125,11 +125,11 @@
           completed:
             - !type:EmptyAllContainers
             - !type:SpawnPrototype
-                prototype: MaterialWoodPlank65
-                amount: 65
+                prototype: MaterialWoodPlank1
+                amount: 4
           steps:
             - tool: Prying
-              doAfter: 65
+              doAfter: 2
 
     - node: ShelfMetal
       entity: ShelfMetal
@@ -138,11 +138,11 @@
           completed:
             - !type:EmptyAllContainers
             - !type:SpawnPrototype
-                prototype: SheetSteel65
-                amount: 65
+                prototype: SheetSteel1
+                amount: 5
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 5
 
     - node: ShelfGlass
       entity: ShelfGlass
@@ -151,11 +151,11 @@
           completed:
             - !type:EmptyAllContainers
             - !type:SpawnPrototype
-                prototype: SheetGlass65
-                amount: 65
+                prototype: SheetGlass1
+                amount: 4
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 2
 # Reinforced deconstructs
     - node: ShelfRWood
       entity: ShelfRWood
@@ -164,16 +164,16 @@
           completed:
             - !type:EmptyAllContainers
             - !type:SpawnPrototype
-                prototype: MaterialWoodPlank65
-                amount: 65
+                prototype: MaterialWoodPlank1
+                amount: 8
             - !type:SpawnPrototype
-                prototype: CableApcStack65
-                amount: 65
+                prototype: CableApcStack1
+                amount: 2
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 5
             - tool: Prying
-              doAfter: 65
+              doAfter: 2
 
     - node: ShelfRMetal
       entity: ShelfRMetal
@@ -182,19 +182,19 @@
           completed:
             - !type:EmptyAllContainers
             - !type:SpawnPrototype
-                prototype: SheetPlasteel65
-                amount: 65
+                prototype: SheetPlasteel1
+                amount: 5
             - !type:SpawnPrototype
-                prototype: SheetRGlass65
-                amount: 65
+                prototype: SheetRGlass1
+                amount: 5
             - !type:SpawnPrototype
-                prototype: CableApcStack65
-                amount: 65
+                prototype: CableApcStack1
+                amount: 3
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 2
             - tool: Welding
-              doAfter: 65
+              doAfter: 5
 
     - node: ShelfRGlass
       entity: ShelfRGlass
@@ -203,19 +203,19 @@
           completed:
             - !type:EmptyAllContainers
             - !type:SpawnPrototype
-                prototype: SheetPlastic65
-                amount: 65
+                prototype: SheetPlastic1
+                amount: 5
             - !type:SpawnPrototype
-                prototype: SheetRGlass65
-                amount: 65
+                prototype: SheetRGlass1
+                amount: 5
             - !type:SpawnPrototype
-                prototype: CableApcStack65
-                amount: 65
+                prototype: CableApcStack1
+                amount: 2
           steps:
             - tool: Welding
-              doAfter: 65
+              doAfter: 2
             - tool: Screwing
-              doAfter: 65
+              doAfter: 4
 
 # Departmental deconstructs
     - node: ShelfBar
@@ -225,11 +225,11 @@
           completed:
             - !type:EmptyAllContainers
             - !type:SpawnPrototype
-                prototype: MaterialWoodPlank65
-                amount: 65
+                prototype: MaterialWoodPlank1
+                amount: 6
           steps:
             - tool: Prying
-              doAfter: 65
+              doAfter: 3
 
     - node: ShelfKitchen
       entity: ShelfKitchen
@@ -239,20 +239,20 @@
             - !type:EmptyAllContainers
             - !type:SpawnPrototype
                 prototype: PartRodMetal
-                amount: 65
+                amount: 2
             - !type:SpawnPrototype
-                prototype: SheetSteel65
-                amount: 65
+                prototype: SheetSteel1
+                amount: 5
             - !type:SpawnPrototype
-                prototype: MaterialWoodPlank65
-                amount: 65
+                prototype: MaterialWoodPlank1
+                amount: 3
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 2
             - tool: Welding
-              doAfter: 65
+              doAfter: 2
             - tool: Prying
-              doAfter: 65
+              doAfter: 1
 
     - node: ShelfChemistry
       entity: ShelfChemistry
@@ -261,23 +261,23 @@
           completed:
             - !type:EmptyAllContainers
             - !type:SpawnPrototype
-                prototype: SheetPlasteel65
-                amount: 65
+                prototype: SheetPlasteel1
+                amount: 2
             - !type:SpawnPrototype
-                prototype: SheetPlastic65
-                amount: 65
+                prototype: SheetPlastic1
+                amount: 5
             - !type:SpawnPrototype
-                prototype: SheetRGlass65
-                amount: 65
+                prototype: SheetRGlass1
+                amount: 5
             - !type:SpawnPrototype
-                prototype: CableApcStack65
-                amount: 65
+                prototype: CableApcStack1
+                amount: 2
           steps:
             - tool: Welding
-              doAfter: 65
+              doAfter: 2
             - tool: Screwing
-              doAfter: 65
+              doAfter: 1
             - tool: Anchoring
-              doAfter: 65
+              doAfter: 2
             - tool: Prying
-              doAfter: 65
+              doAfter: 4

@@ -1,24 +1,24 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from https://github.com/ParadiseSS65/Paradise edited by Floofers",
-  "size": {"x": 65, "y": 65},
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/ParadiseSS13/Paradise edited by Floofers",
+  "size": {"x": 32, "y": 32},
   "states": [
     {
       "name": "ruff",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "elder",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "elder_chin",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "kita",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

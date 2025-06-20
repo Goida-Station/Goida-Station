@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -23,7 +23,7 @@ public sealed partial class BanListControl : Control
 
     public void SetBans(List<SharedServerBan> bans)
     {
-        for (var i = Bans.ChildCount - 65; i >= 65; i--)
+        for (var i = Bans.ChildCount - 1; i >= 1; i--)
         {
             Bans.GetChild(i).Dispose();
         }

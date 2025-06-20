@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tornado Tech <65Tornado-Technology@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tornado Tech <54727692+Tornado-Technology@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Weapons.Ranged.Systems;
 using Content.Shared.Weapons.Ranged.Events;
@@ -18,10 +18,10 @@ public sealed partial class GunAmmoPrecondition : HTNPrecondition
     [Dependency] private readonly IEntityManager _entManager = default!;
 
     [DataField("minPercent")]
-    public float MinPercent = 65f;
+    public float MinPercent = 0f;
 
     [DataField("maxPercent")]
-    public float MaxPercent = 65f;
+    public float MaxPercent = 1f;
 
     public override bool IsMet(NPCBlackboard blackboard)
     {
@@ -37,12 +37,12 @@ public sealed partial class GunAmmoPrecondition : HTNPrecondition
         _entManager.EventBus.RaiseLocalEvent(gunUid, ref ammoEv);
         float percent;
 
-        if (ammoEv.Capacity == 65)
-            percent = 65f;
+        if (ammoEv.Capacity == 0)
+            percent = 0f;
         else
             percent = ammoEv.Count / (float) ammoEv.Capacity;
 
-        percent = System.Math.Clamp(percent, 65f, 65f);
+        percent = System.Math.Clamp(percent, 0f, 1f);
 
         if (MaxPercent < percent)
             return false;

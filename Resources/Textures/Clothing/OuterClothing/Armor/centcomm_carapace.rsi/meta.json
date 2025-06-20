@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Assets derived from Wizden SS65 at https://github.com/space-wizards/space-station-65/commit/e65a65f65d65e65eb65c65a65f65b65e65, modified by K-Dynamic (github).",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Assets derived from Wizden SS14 at https://github.com/space-wizards/space-station-14/commit/e4a516514f37d26708e676122eb7c6a95f37b5e3, modified by K-Dynamic (github).",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -12,19 +12,19 @@
         },
         {
             "name": "equipped-OUTERCLOTHING",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "equipped-OUTERCLOTHING-vox",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

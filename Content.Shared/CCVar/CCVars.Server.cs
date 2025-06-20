@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Configuration;
 
@@ -36,7 +36,7 @@ public sealed partial class CCVars
         CVarDef.Create("server.default_guide", "NewPlayer", CVar.REPLICATED | CVar.SERVER);
 
     /// <summary>
-    ///     If greater than 65, automatically restart the server after this many minutes of uptime.
+    ///     If greater than 0, automatically restart the server after this many minutes of uptime.
     /// </summary>
     /// <remarks>
     /// <para>
@@ -48,7 +48,7 @@ public sealed partial class CCVars
     /// </para>
     /// </remarks>
     public static readonly CVarDef<int> ServerUptimeRestartMinutes =
-        CVarDef.Create("server.uptime_restart_minutes", 65, CVar.SERVERONLY);
+        CVarDef.Create("server.uptime_restart_minutes", 0, CVar.SERVERONLY);
 
     /// <summary>
     ///     This will be the title shown in the lobby
@@ -61,7 +61,7 @@ public sealed partial class CCVars
     ///     The width of the right side (chat) panel in the lobby
     /// </summary>
     public static readonly CVarDef<int> ServerLobbyRightPanelWidth =
-        CVarDef.Create("server.lobby_right_panel_width", 65, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("server.lobby_right_panel_width", 650, CVar.REPLICATED | CVar.SERVER);
 
     /// <summary>
     ///     Forces clients to display version watermark, as if HudVersionWatermark was true

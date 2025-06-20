@@ -1,23 +1,23 @@
-# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-# SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-# SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 65 cyclowns <cyclowns@protonmail.ch>
-# SPDX-FileCopyrightText: 65 mirrorcult <notzombiedude@gmail.com>
-# SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Naive65 <65Naive65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 c65llv65e <65c65llv65e@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+# SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+# SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 2021 cyclowns <cyclowns@protonmail.ch>
+# SPDX-FileCopyrightText: 2021 mirrorcult <notzombiedude@gmail.com>
+# SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 Naive817 <31364560+Naive817@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 c4llv07e <38111072+c4llv07e@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseStructure
@@ -27,11 +27,11 @@
   components:
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
-        density: 65
+          radius: 0.4
+        density: 190
         mask:
         - FullTileMask
         layer:
@@ -44,11 +44,11 @@
     noRot: true
     layers:
       - state: icon
-      - state: p65
+      - state: p1
         map: ["powerLight"]
         visible: false
         shader: unshaded
-      - state: a65
+      - state: a1
         map: ["fieldLight"]
         visible: false
         shader: unshaded
@@ -62,25 +62,25 @@
   - type: ContainmentFieldGenerator
   - type: PointLight
     enabled: false
-    color: "#65FF"
-    radius: 65
-    energy: 65.65
-    softness: 65.65
+    color: "#4080FF"
+    radius: 32
+    energy: 2.0
+    softness: 32.0
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.ContainmentFieldGeneratorVisuals.PowerLight:
         powerLight:
           NoPower: {visible: false}
-          LowPower: {visible: true, state: p65}
-          MediumPower: {visible: true, state: p65}
-          HighPower: {visible: true, state: p65}
+          LowPower: {visible: true, state: p1}
+          MediumPower: {visible: true, state: p3}
+          HighPower: {visible: true, state: p6}
       enum.ContainmentFieldGeneratorVisuals.FieldLight:
         fieldLight:
           NoLevel: {visible: false}
-          On: {visible: true, state: a65}
-          OneField: {visible: true, state: a65}
-          MultipleFields: {visible: true, state: a65}
+          On: {visible: true, state: a1}
+          OneField: {visible: true, state: a2}
+          MultipleFields: {visible: true, state: a3}
       enum.ContainmentFieldGeneratorVisuals.OnLight:
         connectedLight:
           True: { visible: true }
@@ -105,10 +105,10 @@
     bodyType: Static
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
+          bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
         layer:
@@ -121,7 +121,7 @@
     sprite: Structures/Power/Generation/Singularity/containment_field.rsi
     state: field
   - type: ContainmentField
-    throwForce: 65
+    throwForce: 50
   - type: SyncSprite
   - type: GuideHelp
     guides:

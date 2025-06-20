@@ -1,21 +1,21 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from /vg/station at commit 65c65dee65fb65a65d65be65b65c65c65a65a65a65e Cut out for unshaded by metalgearsloth",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from /vg/station at commit 5c50dee8fb2a55d6be3b3c9c90a782a618a5506e Cut out for unshaded by metalgearsloth",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "beam",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
@@ -23,10 +23,10 @@
       "name": "idle",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2,
+          0.2
         ]
       ]
     },

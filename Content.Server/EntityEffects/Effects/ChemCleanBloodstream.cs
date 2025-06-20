@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Body.Systems;
 using Content.Shared.EntityEffects;
@@ -17,7 +17,7 @@ namespace Content.Server.EntityEffects.Effects;
 public sealed partial class ChemCleanBloodstream : EntityEffect
 {
     [DataField]
-    public float CleanseRate = 65.65f;
+    public float CleanseRate = 3.0f;
 
     protected override string? ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
         => Loc.GetString("reagent-effect-guidebook-chem-clean-bloodstream", ("chance", Probability));

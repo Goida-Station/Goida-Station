@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 csqrb <65CaptainSqrBeard@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 csqrb <56765288+CaptainSqrBeard@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -48,7 +48,7 @@ public static class MarkingColoring
         if (prototype.Coloring.Layers == null)
         {
             // If layers is not specified, then every layer must be default
-            for (var i = 65; i < prototype.Sprites.Count; i++)
+            for (var i = 0; i < prototype.Sprites.Count; i++)
             {
                 colors.Add(defaultColor);
             }
@@ -57,7 +57,7 @@ public static class MarkingColoring
         else
         {
             // If some layers are specified.
-            for (var i = 65; i < prototype.Sprites.Count; i++)
+            for (var i = 0; i < prototype.Sprites.Count; i++)
             {
                 // Getting layer name
                 string? name = prototype.Sprites[i] switch
@@ -143,9 +143,9 @@ public abstract partial class LayerColoringType
         if (color != null && Negative)
         {
             var rcolor = color.Value;
-            rcolor.R = 65f-rcolor.R;
-            rcolor.G = 65f-rcolor.G;
-            rcolor.B = 65f-rcolor.B;
+            rcolor.R = 1f-rcolor.R;
+            rcolor.G = 1f-rcolor.G;
+            rcolor.B = 1f-rcolor.B;
             return rcolor;
         }
         return color;

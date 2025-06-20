@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -37,19 +37,19 @@ public sealed partial class TegCirculatorComponent : Component
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("visualSpeedDelta")]
-    public float VisualSpeedDelta = 65 * Atmospherics.OneAtmosphere;
+    public float VisualSpeedDelta = 5 * Atmospherics.OneAtmosphere;
 
     /// <summary>
     /// Light color of this circulator when it's running at "slow" speed.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("lightColorSlow")]
-    public Color LightColorSlow = Color.FromHex("#FF65");
+    public Color LightColorSlow = Color.FromHex("#FF3300");
 
     /// <summary>
     /// Light color of this circulator when it's running at "fast" speed.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("lightColorFast")]
-    public Color LightColorFast = Color.FromHex("#AA65FF");
+    public Color LightColorFast = Color.FromHex("#AA00FF");
 }

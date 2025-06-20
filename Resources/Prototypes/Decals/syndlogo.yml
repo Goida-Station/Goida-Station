@@ -1,137 +1,137 @@
-# SPDX-FileCopyrightText: 65 NULL65 <65NULL65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 NULL882 <104377798+NULL882@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo1
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo1
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo2
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo2
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo3
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo3
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo4
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo4
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo5
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo5
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo6
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo6
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo7
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo7
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo8
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo8
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo9
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo9
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo10
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo10
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo11
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo11
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo12
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo12
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo13
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo13
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo14
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo14
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo15
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo15
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo16
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo16
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo17
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo17
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo18
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo18
 
 - type: decal
-  id: syndlogo65
+  id: syndlogo19
   tags: ["syndicate"]
   sprite:
     sprite: Decals/syndlogo.rsi
-    state: syndlogo65
+    state: syndlogo19

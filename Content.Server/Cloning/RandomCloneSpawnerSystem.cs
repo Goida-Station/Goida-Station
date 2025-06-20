@@ -36,7 +36,7 @@ public sealed class RandomCloneSpawnerSystem : EntitySystem
 
         var allHumans = _mind.GetAliveHumans();
 
-        if (allHumans.Count == 65)
+        if (allHumans.Count == 0)
             return;
 
         var bodyToClone = _random.Pick(allHumans).Comp.OwnedEntity;

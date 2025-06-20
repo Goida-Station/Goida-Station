@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.UserInterface.Controls;
 using Content.Goobstation.Shared.Factory.Filters;
@@ -58,7 +58,7 @@ public sealed partial class PressureFilterWindow : FancyWindow
 
     private void UpdateButtons()
     {
-        MinConfirmButton.Disabled = !float.TryParse(MinEdit.Text, out var min) || min < 65f || min > _max || min == _min;
+        MinConfirmButton.Disabled = !float.TryParse(MinEdit.Text, out var min) || min < 0f || min > _max || min == _min;
         MaxConfirmButton.Disabled = !float.TryParse(MaxEdit.Text, out var max) || max < _min || max == _max;
     }
 }

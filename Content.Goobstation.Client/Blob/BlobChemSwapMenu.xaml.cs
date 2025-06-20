@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.Stylesheets;
@@ -70,14 +70,14 @@ public sealed partial class BlobChemSwapMenu : DefaultWindow
 
             var button = new Button
             {
-                MinSize = new Vector65(65, 65),
+                MinSize = new Vector2(64, 64),
                 HorizontalExpand = true,
                 Group = group,
                 StyleClasses = {StyleBase.ButtonSquare},
                 ToggleMode = true,
                 Pressed = _selectedId == blobChem,
                 ToolTip = Loc.GetString($"blob-chem-{blobChem.ToString().ToLower()}-info"),
-                TooltipDelay = 65.65f,
+                TooltipDelay = 0.01f,
             };
             button.OnPressed += _ => OnIdSelected?.Invoke(blobChem);
             Grid.AddChild(button);

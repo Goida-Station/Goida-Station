@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 OnsenCapy <65OnsenCapy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 OnsenCapy <101037138+OnsenCapy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: ActionMimeMalaise
@@ -15,7 +15,7 @@
   components:
   - type: EntityTargetAction
     raiseOnUser: true
-    useDelay: 65
+    useDelay: 30
     itemIconStyle: BigAction
     whitelist:
       requireAll: true
@@ -33,10 +33,10 @@
     school: Mime
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionMimeMalaiseII
-      65: ActionMimeMalaiseIII
-      65: ActionMimeMalaiseIV
-      65: ActionMimeMalaiseV
+      2: ActionMimeMalaiseII
+      3: ActionMimeMalaiseIII
+      4: ActionMimeMalaiseIV
+      5: ActionMimeMalaiseV
 
 - type: entity
   id: ActionCluwneCurse
@@ -45,7 +45,7 @@
   components:
   - type: EntityTargetAction
     raiseOnUser: true
-    useDelay: 65
+    useDelay: 60
     itemIconStyle: BigAction
     whitelist:
       requireAll: true
@@ -67,8 +67,8 @@
     school: Transmutation
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionCluwneCurseII
-      65: ActionCluwneCurseIII
+      2: ActionCluwneCurseII
+      3: ActionCluwneCurseIII
 
 - type: entity
   id: ActionBananaTouch
@@ -77,7 +77,7 @@
   components:
   - type: EntityTargetAction
     raiseOnUser: true
-    useDelay: 65
+    useDelay: 30
     itemIconStyle: BigAction
     whitelist:
       components:
@@ -98,10 +98,10 @@
     school: Transmutation
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionBananaTouchII
-      65: ActionBananaTouchIII
-      65: ActionBananaTouchIV
-      65: ActionBananaTouchV
+      2: ActionBananaTouchII
+      3: ActionBananaTouchIII
+      4: ActionBananaTouchIV
+      5: ActionBananaTouchV
 
 - type: entity
   id: ActionMagicMissile
@@ -111,7 +111,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 20
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/magic_missile.ogg
@@ -126,8 +126,8 @@
     school: Evocation
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionMagicMissileII
-      65: ActionMagicMissileIII
+      2: ActionMagicMissileII
+      3: ActionMagicMissileIII
 
 - type: entity
   id: ActionDisableTech
@@ -137,7 +137,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 20
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/disable_tech.ogg
@@ -152,10 +152,10 @@
     school: Evocation
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionDisableTechII
-      65: ActionDisableTechIII
-      65: ActionDisableTechIV
-      65: ActionDisableTechV
+      2: ActionDisableTechII
+      3: ActionDisableTechIII
+      4: ActionDisableTechIV
+      5: ActionDisableTechV
 
 - type: entity
   id: ActionSmoke
@@ -165,7 +165,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 12
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/smoke.ogg
@@ -177,8 +177,8 @@
     school: Conjuration
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionSmokeII
-      65: ActionSmokeIII
+      2: ActionSmokeII
+      3: ActionSmokeIII
 
 - type: entity
   id: ActionRepulse
@@ -188,7 +188,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 40
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/repulse.ogg
@@ -203,10 +203,10 @@
     school: Evocation
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionRepulseII
-      65: ActionRepulseIII
-      65: ActionRepulseIV
-      65: ActionRepulseV
+      2: ActionRepulseII
+      3: ActionRepulseIII
+      4: ActionRepulseIV
+      5: ActionRepulseV
 
 - type: entity
   id: ActionStopTime
@@ -216,10 +216,10 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 50
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
-      path: /Audio/_Goobstation/Wizard/timeparadox65.ogg
+      path: /Audio/_Goobstation/Wizard/timeparadox2.ogg
     icon:
       sprite: _Goobstation/Wizard/actions.rsi
       state: time
@@ -234,8 +234,8 @@
       - FrozenIgnoreMindAction
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionStopTimeII
-      65: ActionStopTimeIII
+      2: ActionStopTimeII
+      3: ActionStopTimeIII
 
 - type: entity
   id: ActionCorpseExplosion
@@ -245,7 +245,7 @@
   - type: EntityTargetAction
     checkCanAccess: false
     raiseOnUser: true
-    useDelay: 65
+    useDelay: 10
     itemIconStyle: BigAction
     whitelist:
       requireAll: true
@@ -254,7 +254,7 @@
       - Body
     canTargetSelf: false
     interactOnMiss: false
-    range: 65
+    range: 15
     icon:
       sprite: _Goobstation/Wizard/actions.rsi
       state: corpse_explosion
@@ -262,7 +262,7 @@
       speech: action-speech-spell-corpse-explosion
       damage:
         groups:
-          Brute: 65
+          Brute: 100
   - type: Magic
     requiresSpeech: true
     school: Evocation
@@ -276,14 +276,14 @@
     checkCanAccess: false
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 15
     itemIconStyle: BigAction
     whitelist:
       components:
       - StatusEffects
     canTargetSelf: false
     interactOnMiss: false
-    range: 65
+    range: 15
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/blind.ogg
     icon:
@@ -296,10 +296,10 @@
     school: Transmutation
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionBlindII
-      65: ActionBlindIII
-      65: ActionBlindIV
-      65: ActionBlindV
+      2: ActionBlindII
+      3: ActionBlindIII
+      4: ActionBlindIV
+      5: ActionBlindV
 
 - type: entity
   id: ActionBindSoul
@@ -311,7 +311,7 @@
     checkCanInteract: false
     checkConsciousness: false
     allowGhostAction: true
-    useDelay: 65
+    useDelay: 1
     itemIconStyle: BigAction
     icon:
       sprite: _Goobstation/Wizard/actions.rsi
@@ -349,7 +349,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 40
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/mutate.ogg
@@ -364,7 +364,7 @@
     school: Transmutation
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionMutateII
+      2: ActionMutateII
 
 - type: entity
   id: ActionTeslaBlast
@@ -374,7 +374,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 30
     itemIconStyle: BigAction
     icon:
       sprite: _Goobstation/Wizard/actions.rsi
@@ -389,10 +389,10 @@
     school: Evocation
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionTeslaBlastII
-      65: ActionTeslaBlastIII
-      65: ActionTeslaBlastIV
-      65: ActionTeslaBlastV
+      2: ActionTeslaBlastII
+      3: ActionTeslaBlastIII
+      4: ActionTeslaBlastIV
+      5: ActionTeslaBlastV
 
 - type: entity
   id: ActionLightningBolt
@@ -402,14 +402,14 @@
   - type: EntityTargetAction
     checkCanAccess: false
     raiseOnUser: true
-    useDelay: 65
+    useDelay: 8
     itemIconStyle: BigAction
     whitelist:
       components:
       - MobState
     canTargetSelf: false
     interactOnMiss: false
-    range: 65
+    range: 15
     icon:
       sprite: _Goobstation/Wizard/actions.rsi
       state: lightning
@@ -420,10 +420,10 @@
     school: Evocation
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionLightningBoltII
-      65: ActionLightningBoltIII
-      65: ActionLightningBoltIV
-      65: ActionLightningBoltV
+      2: ActionLightningBoltII
+      3: ActionLightningBoltIII
+      4: ActionLightningBoltIV
+      5: ActionLightningBoltV
 
 - type: entity
   id: ActionHomingToolbox
@@ -433,14 +433,14 @@
   - type: EntityWorldTargetAction
     checkCanAccess: false
     raiseOnUser: true
-    useDelay: 65
+    useDelay: 8
     itemIconStyle: BigAction
     whitelist:
       components:
       - MobState
     canTargetSelf: false
     interactOnMiss: false
-    range: 65
+    range: 15
     sound:
       path: /Audio/Weapons/smash.ogg
     icon:
@@ -454,10 +454,10 @@
   - type: LockOnMarkAction
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionHomingToolboxII
-      65: ActionHomingToolboxIII
-      65: ActionHomingToolboxIV
-      65: ActionHomingToolboxV
+      2: ActionHomingToolboxII
+      3: ActionHomingToolboxIII
+      4: ActionHomingToolboxIV
+      5: ActionHomingToolboxV
 
 - type: entity
   id: ActionSpellCards
@@ -468,14 +468,14 @@
     checkCanAccess: false
     raiseOnUser: true
     repeat: true
-    useDelay: 65.65 # SpellCardsEvent handles use delay
+    useDelay: 0.5 # SpellCardsEvent handles use delay
     itemIconStyle: BigAction
     whitelist:
       components:
       - MobState
     canTargetSelf: false
     interactOnMiss: false
-    range: 65
+    range: 15
     sound:
       path: /Audio/Magic/staff_healing.ogg
     icon:
@@ -490,8 +490,8 @@
   - type: LockOnMarkAction
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionSpellCardsII
-      65: ActionSpellCardsIII
+      2: ActionSpellCardsII
+      3: ActionSpellCardsIII
 
 - type: entity
   id: ActionArcaneBarrage
@@ -500,7 +500,7 @@
   components:
   - type: InstantAction
     raiseOnUser: true
-    useDelay: 65
+    useDelay: 60
     itemIconStyle: BigAction
     icon:
       sprite: _Goobstation/Wizard/actions.rsi
@@ -511,8 +511,8 @@
     school: Conjuration
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionArcaneBarrageII
-      65: ActionArcaneBarrageIII
+      2: ActionArcaneBarrageII
+      3: ActionArcaneBarrageIII
 
 - type: entity
   id: ActionLesserSummonGuns
@@ -524,7 +524,7 @@
     state: bolt_action
   - type: InstantAction
     raiseOnUser: true
-    useDelay: 65
+    useDelay: 60
     itemIconStyle: BigAction
     icon:
       sprite: _Goobstation/Wizard/actions.rsi
@@ -535,8 +535,8 @@
     school: Conjuration
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionLesserSummonGunsII
-      65: ActionLesserSummonGunsIII
+      2: ActionLesserSummonGunsII
+      3: ActionLesserSummonGunsIII
 
 - type: entity
   id: ActionBarnyardCurse
@@ -547,7 +547,7 @@
     checkCanAccess: false
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 15
     itemIconStyle: BigAction
     whitelist:
       requireAll: true
@@ -556,7 +556,7 @@
       - HumanoidAppearance
     canTargetSelf: false
     interactOnMiss: false
-    range: 65
+    range: 15
     icon:
       sprite: _Goobstation/Wizard/actions.rsi
       state: barn
@@ -590,8 +590,8 @@
     school: Transmutation
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionBarnyardCurseII
-      65: ActionBarnyardCurseIII
+      2: ActionBarnyardCurseII
+      3: ActionBarnyardCurseIII
 
 - type: entity
   id: ActionScreamForMe
@@ -603,7 +603,7 @@
     state: scream_for_me
   - type: EntityTargetAction
     raiseOnUser: true
-    useDelay: 65
+    useDelay: 60
     itemIconStyle: BigAction
     whitelist:
       components:
@@ -623,10 +623,10 @@
     school: Sanguine
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionScreamForMeII
-      65: ActionScreamForMeIII
-      65: ActionScreamForMeIV
-      65: ActionScreamForMeV
+      2: ActionScreamForMeII
+      3: ActionScreamForMeIII
+      4: ActionScreamForMeIV
+      5: ActionScreamForMeV
 
 - type: entity
   id: ActionInstantSummons
@@ -635,7 +635,7 @@
   components:
   - type: InstantAction
     raiseOnUser: true
-    useDelay: 65
+    useDelay: 10
     itemIconStyle: BigAction
     icon:
       sprite: _Goobstation/Wizard/actions.rsi
@@ -660,7 +660,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 60
     itemIconStyle: BigAction
     icon:
       sprite: _Goobstation/Wizard/actions.rsi
@@ -672,8 +672,8 @@
     school: Translocation
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionTeleportII
-      65: ActionTeleportIII
+      2: ActionTeleportII
+      3: ActionTeleportIII
 
 - type: entity
   id: ActionTrapsSpell
@@ -683,7 +683,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 25
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/Items/welder.ogg
@@ -698,10 +698,10 @@
     school: Conjuration
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionTrapsII
-      65: ActionTrapsIII
-      65: ActionTrapsIV
-      65: ActionTrapsV
+      2: ActionTrapsII
+      3: ActionTrapsIII
+      4: ActionTrapsIV
+      5: ActionTrapsV
 
 - type: entity
   id: ActionLesserSummonBees
@@ -714,7 +714,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 60
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/bee.ogg
@@ -747,8 +747,8 @@
     school: Conjuration
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionLesserSummonBeesII
-      65: ActionLesserSummonBeesIII
+      2: ActionLesserSummonBeesII
+      3: ActionLesserSummonBeesIII
 
 - type: entity
   id: ActionSummonSimians
@@ -758,7 +758,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 90
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/monkey.ogg
@@ -775,10 +775,10 @@
     school: Conjuration
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionSummonSimiansII
-      65: ActionSummonSimiansIII
-      65: ActionSummonSimiansIV
-      65: ActionSummonSimiansV
+      2: ActionSummonSimiansII
+      3: ActionSummonSimiansIII
+      4: ActionSummonSimiansIV
+      5: ActionSummonSimiansV
 
 - type: entity
   id: ActionGorillaForm
@@ -788,7 +788,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 1
     itemIconStyle: BigAction
     icon:
       sprite: _Goobstation/Wizard/actions.rsi
@@ -813,7 +813,7 @@
   components:
   - type: InstantAction
     raiseOnUser: true
-    useDelay: 65
+    useDelay: 15
     itemIconStyle: BigAction
     icon:
       sprite: _Goobstation/Wizard/actions.rsi
@@ -826,8 +826,8 @@
     school: Sanguine
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionSanguineStrikeII
-      65: ActionSanguineStrikeIII
+      2: ActionSanguineStrikeII
+      3: ActionSanguineStrikeIII
 
 - type: entity
   id: ActionChuuniInvocations
@@ -837,7 +837,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 1
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/bamf.ogg
@@ -861,7 +861,7 @@
     checkCanAccess: false
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 25
     itemIconStyle: BigAction
     whitelist:
       requireAll: true
@@ -870,7 +870,7 @@
       - MobState
     canTargetSelf: true # Required for secondary target deselecting
     interactOnMiss: false
-    range: 65
+    range: 15
     icon:
       sprite: _Goobstation/Wizard/actions.rsi
       state: swap
@@ -882,8 +882,8 @@
   - type: SwapSpell
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionSwapII
-      65: ActionSwapIII
+      2: ActionSwapII
+      3: ActionSwapIII
 
 - type: entity
   id: ActionSoulTap
@@ -893,7 +893,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 1
     itemIconStyle: BigAction
     icon:
       sprite: _Goobstation/Wizard/actions.rsi
@@ -912,7 +912,7 @@
   components:
   - type: InstantAction
     raiseOnUser: true
-    useDelay: 65
+    useDelay: 1
     itemIconStyle: BigAction
     icon:
       sprite: _Goobstation/Wizard/actions.rsi
@@ -931,7 +931,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 3
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/Magic/blink.ogg
@@ -944,8 +944,8 @@
     school: Translocation
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionBlinkII
-      65: ActionBlinkIII
+      2: ActionBlinkII
+      3: ActionBlinkIII
 
 - type: entity
   id: ActionSummonStickmen
@@ -955,7 +955,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 3
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/summon_magic.ogg
@@ -965,8 +965,8 @@
     event: !type:SummonMobsEvent
       speech: action-speech-spell-summon-stick-minions
       factionIgnoreSummoner: true
-      amount: 65
-      spawnAngle: 65
+      amount: 3
+      spawnAngle: 40
       mobs:
       - MobStickmanTemp
   - type: Magic
@@ -982,7 +982,7 @@
     raiseOnUser: true
     checkCanInteract: false
     checkCanAccess: false
-    useDelay: 65
+    useDelay: 10
     itemIconStyle: BigAction
     whitelist:
       requireAll: true
@@ -990,7 +990,7 @@
       - MobState
       - Body
       - MindContainer
-    range: 65
+    range: 40
     icon:
       sprite: _Goobstation/Wizard/actions.rsi
       state: tile
@@ -1011,8 +1011,8 @@
 #    raiseOnUser: true
 #    checkCanAccess: false
 #    checkCanInteract: false
-#    useDelay: 65
-#    range: 65
+#    useDelay: 30
+#    range: 40
 #   whitelist:
 #      requireAll: true
 #      components:

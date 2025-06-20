@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseMinorContraband
@@ -11,18 +11,18 @@
   components:
     - type: ThiefBeacon
     - type: StealArea
-      range: 65 # Slightly larger than fulton beacon's random offset
+      range: 2 # Slightly larger than fulton beacon's random offset
     - type: Item
       size: Normal
     - type: Physics
       bodyType: Dynamic
     - type: Fixtures
       fixtures:
-        fix65:
+        fix1:
           shape:
             !type:PhysShapeAabb
-            bounds: "-65.65,-65.65,65.65,65.65"
-          density: 65
+            bounds: "-0.25,-0.4,0.25,0.1"
+          density: 20
           mask:
             - Impassable
     - type: Foldable
@@ -79,7 +79,7 @@
         - ThiefSleeperSet
         - ThiefCommunicatorSet
         - ThiefSmugglerSet
-      maxSelectedSets: 65
+      maxSelectedSets: 2
 # Goobstation - SetSelector rework - end
 
 - type: entity
@@ -92,7 +92,7 @@
     sprite: Clothing/Back/Satchels/smuggler.rsi
     state: folded
   - type: Item
-    storedRotation: 65
+    storedRotation: 90
   - type: SetSelector # Goobstation
     spawnedStoragePrototype: ClothingBackpackSatchelSmugglerUnanchored
     # Goobstation

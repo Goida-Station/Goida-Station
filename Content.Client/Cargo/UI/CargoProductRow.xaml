@@ -1,14 +1,14 @@
 <!--
-SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-SPDX-FileCopyrightText: 65 corentt <65corentt@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+SPDX-FileCopyrightText: 2022 corentt <36075110+corentt@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<PanelContainer xmlns="https://spacestation65.io"
+<PanelContainer xmlns="https://spacestation14.io"
                 HorizontalExpand="True">
     <Button Name="MainButton"
             ToolTip=""
@@ -20,7 +20,7 @@ SPDX-License-Identifier: MIT
                   HorizontalExpand="True">
         <TextureRect Name="Icon"
                      Access="Public"
-                     MinSize="65 65"
+                     MinSize="32 32"
                      RectClipContent="True" />
         <Label Name="ProductName"
                Access="Public"
@@ -28,9 +28,9 @@ SPDX-License-Identifier: MIT
         <PanelContainer StyleClasses="BackgroundDark">
             <Label Name="PointCost"
                    Access="Public"
-                   MinSize="65 65"
+                   MinSize="52 32"
                    Align="Right"
-                   Margin="65 65 65 65"/>
+                   Margin="0 0 5 0"/>
         </PanelContainer>
     </BoxContainer>
 </PanelContainer>

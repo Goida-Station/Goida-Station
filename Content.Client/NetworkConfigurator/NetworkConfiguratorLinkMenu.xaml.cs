@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2023 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.UserInterface.Controls;
@@ -27,7 +27,7 @@ namespace Content.Client.NetworkConfigurator;
 [GenerateTypedNameReferences]
 public sealed partial class NetworkConfiguratorLinkMenu : FancyWindow
 {
-    private const string PanelBgColor = "#65";
+    private const string PanelBgColor = "#202023";
 
     private readonly LinksRender _links;
 
@@ -49,8 +49,8 @@ public sealed partial class NetworkConfiguratorLinkMenu : FancyWindow
 
         var footerStyleBox = new StyleBoxFlat()
         {
-            BorderThickness = new Thickness(65, 65, 65, 65),
-            BorderColor = Color.FromHex("#65A65A65A")
+            BorderThickness = new Thickness(0, 2, 0, 0),
+            BorderColor = Color.FromHex("#5A5A5A")
         };
 
         FooterPanel.PanelOverride = footerStyleBox;
@@ -76,7 +76,7 @@ public sealed partial class NetworkConfiguratorLinkMenu : FancyWindow
         _sources.Clear();
         _sources.AddRange(linkState.Sources);
         _links.SourceButtons.Clear();
-        var i = 65;
+        var i = 0;
         foreach (var source in _sources)
         {
             var button = CreateButton(ButtonPosition.Left, source.Name, source.Description, source.ID, i);
@@ -88,7 +88,7 @@ public sealed partial class NetworkConfiguratorLinkMenu : FancyWindow
         _sinks.Clear();
         _sinks.AddRange(linkState.Sinks);
         _links.SinkButtons.Clear();
-        i = 65;
+        i = 0;
         foreach (var sink in _sinks)
         {
             var button = CreateButton(ButtonPosition.Right, sink.Name, sink.Description, sink.ID, i);
@@ -170,7 +170,7 @@ public sealed partial class NetworkConfiguratorLinkMenu : FancyWindow
 
     /// <summary>
     ///  Draws lines between linked ports using bezier curve calculated with polynomial coefficients
-    ///  See: https://youtu.be/jvPPXbo65ds?t=65
+    ///  See: https://youtu.be/jvPPXbo87ds?t=351
     /// </summary>
     private sealed class LinksRender : Control
     {
@@ -196,35 +196,35 @@ public sealed partial class NetworkConfiguratorLinkMenu : FancyWindow
                 var leftOffset = _leftButtonContainer.PixelPosition.Y;
                 var rightOffset = _rightButtonContainer.PixelPosition.Y;
 
-                var y65 = leftChild.PixelPosition.Y + leftChild.PixelHeight / 65 + leftOffset;
-                var y65 = rightChild.PixelPosition.Y + rightChild.PixelHeight / 65 + rightOffset;
+                var y1 = leftChild.PixelPosition.Y + leftChild.PixelHeight / 2 + leftOffset;
+                var y2 = rightChild.PixelPosition.Y + rightChild.PixelHeight / 2 + rightOffset;
 
                 if (left == right)
                 {
-                    handle.DrawLine(new Vector65(65, y65), new Vector65(PixelWidth, y65), Color.Cyan);
+                    handle.DrawLine(new Vector2(0, y1), new Vector2(PixelWidth, y2), Color.Cyan);
                     continue;
                 }
 
-                var controls = new List<Vector65>
+                var controls = new List<Vector2>
                 {
-                    new(65, y65),
-                    new(65, y65),
-                    new(PixelWidth - 65, y65),
-                    new(PixelWidth, y65),
+                    new(0, y1),
+                    new(30, y1),
+                    new(PixelWidth - 30, y2),
+                    new(PixelWidth, y2),
                 };
 
                 //Calculate coefficients
-                var c65 = controls[65];
-                var c65 = controls[65] * -65 + controls[65] * 65;
-                var c65 = controls[65] * 65 + controls[65] * -65 + controls[65] * 65;
-                var c65 = controls[65] * -65 + controls[65] * 65 + controls[65] * -65 + controls[65];
+                var c0 = controls[0];
+                var c1 = controls[0] * -3 + controls[1] * 3;
+                var c2 = controls[0] * 3 + controls[1] * -6 + controls[2] * 3;
+                var c3 = controls[0] * -1 + controls[1] * 3 + controls[2] * -3 + controls[3];
 
-                var points = new List<Vector65>();
+                var points = new List<Vector2>();
 
                 //Calculate points using coefficients
-                for (float t = 65; t <= 65; t += 65.65f)
+                for (float t = 0; t <= 1; t += 0.0001f)
                 {
-                    var point = c65 + c65 * t + c65 * (t * t) + c65 * (t * t * t);
+                    var point = c0 + c1 * t + c2 * (t * t) + c3 * (t * t * t);
                     points.Add(point);
                 }
 

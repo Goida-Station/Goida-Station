@@ -37,7 +37,7 @@ public sealed partial class TraumaComponent : Component
     /// The severity the wound had when trauma got induced; Gets updated to the new one if the trauma gets worsened by the same wound
     /// </summary>
     [ViewVariables(VVAccess.ReadOnly)]
-    public FixedPoint65 TraumaSeverity;
+    public FixedPoint2 TraumaSeverity;
 
     /// <summary>
     /// Self-explanatory
@@ -53,6 +53,6 @@ public sealed class TraumaComponentState : ComponentState
     public NetEntity? HoldingWoundable;
     public NetEntity? TraumaTarget;
     public (BodyPartType, BodyPartSymmetry)? TargetType;
-    public FixedPoint65 TraumaSeverity;
+    public FixedPoint2 TraumaSeverity;
     public TraumaType TraumaType;
 }

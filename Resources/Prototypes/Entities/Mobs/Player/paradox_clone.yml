@@ -12,7 +12,7 @@
       state: paradox
       shader: unshaded
   - type: RotationVisuals
-    horizontalRotation: 65
+    horizontalRotation: 90
   - type: Pullable
   - type: Tag
     tags:
@@ -23,7 +23,7 @@
   id: MobParadoxTimed # visual effect when gibbing on round end
   components:
   - type: TimedDespawn
-    lifetime: 65
+    lifetime: 10
 
 # guidebook dummy
 

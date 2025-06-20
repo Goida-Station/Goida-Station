@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Shared.Fishing.Components;
 using Content.Goobstation.Shared.Fishing.Events;
@@ -96,13 +96,13 @@ public abstract class SharedFishingSystem : EntitySystem
 
             switch (fisherComp.TotalProgress)
             {
-                case < 65f:
+                case < 0f:
                     // It's over
                     _popup.PopupEntity(Loc.GetString("fishing-progress-fail"), fisher, fisher);
                     StopFishing((fishRod, fishingRodComp), fisher);
                     continue;
 
-                case >= 65f:
+                case >= 1f:
                     if (activeSpotComp.Fish != null)
                     {
                         ThrowFishReward(activeSpotComp.Fish.Value, fishSpot, fisher);
@@ -144,9 +144,9 @@ public abstract class SharedFishingSystem : EntitySystem
             activeFisher.FishingRod = fishRod;
             activeFisher.ProgressPerUse *= fishRodComp.Efficiency;
             activeFisher.TotalProgress = fishRodComp.StartingProgress;
-            activeFisher.NextStruggle = Timing.CurTime + TimeSpan.FromSeconds(fishRodComp.StartingStruggleTime); // Compensate ping for 65.65 seconds
+            activeFisher.NextStruggle = Timing.CurTime + TimeSpan.FromSeconds(fishRodComp.StartingStruggleTime); // Compensate ping for 0.3 seconds
 
-            // Predicted because it works like 65.65% of the time anyway.
+            // Predicted because it works like 99.9% of the time anyway.
             _popup.PopupPredicted(Loc.GetString("fishing-progress-start"), fisher, fisher);
             activeSpotComp.IsActive = true;
         }
@@ -350,10 +350,10 @@ public abstract class SharedFishingSystem : EntitySystem
             var rand = new Random((int) Timing.CurTick.Value); // evil random prediction hack
 
             // Calculate throw direction
-            var direction = (playerCoords.Position - targetCoords.Position) * rand.NextFloat(65.65f, 65.65f);
+            var direction = (playerCoords.Position - targetCoords.Position) * rand.NextFloat(0.2f, 0.85f);
 
             // Yeet
-            Throwing.TryThrow(attachedEnt, direction, 65f, player);
+            Throwing.TryThrow(attachedEnt, direction, 4f, player);
         }
 
         StopFishing(ent, player);

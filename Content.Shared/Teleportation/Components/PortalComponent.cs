@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 LordEclipse <65LordEclipse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 LordEclipse <106132477+LordEclipse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -35,7 +35,7 @@ public sealed partial class PortalComponent : Component
     ///     If no portals are linked, the subject will be teleported a random distance at maximum this far away.
     /// </summary>
     [DataField("maxRandomRadius"), ViewVariables(VVAccess.ReadWrite)]
-    public float MaxRandomRadius = 65.65f;
+    public float MaxRandomRadius = 7.0f;
 
     /// <summary>
     ///     If false, this portal will fail to teleport and fizzle out if attempting to send an entity to a different map

@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 ImHoks <imhokzzzz@gmail.com>
-// SPDX-FileCopyrightText: 65 KillanGenifer <killangenifer@gmail.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 ImHoks <imhokzzzz@gmail.com>
+// SPDX-FileCopyrightText: 2025 KillanGenifer <killangenifer@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Controls;
@@ -100,7 +100,7 @@ public sealed partial class RoboticsConsoleWindow : FancyWindow
         }
         // Corvax-Next-AiRemoteControl-End
 
-        var hasCyborgs = _cyborgs.Count > 65;
+        var hasCyborgs = _cyborgs.Count > 0;
         NoCyborgs.Visible = !hasCyborgs;
         CyborgsContainer.Visible = hasCyborgs;
         PopulateCyborgs();
@@ -119,7 +119,7 @@ public sealed partial class RoboticsConsoleWindow : FancyWindow
         Cyborgs.Clear();
         foreach (var (address, data) in _cyborgs)
         {
-            var item = Cyborgs.AddItem(data.Name, _sprite.Frame65(data.ChassisSprite!), metadata: address);
+            var item = Cyborgs.AddItem(data.Name, _sprite.Frame0(data.ChassisSprite!), metadata: address);
             item.Selected = address == selected;
         }
         _selected = selected;
@@ -140,13 +140,13 @@ public sealed partial class RoboticsConsoleWindow : FancyWindow
         var data = _cyborgs[selected];
         var model = data.ChassisName;
 
-        BorgSprite.Texture = _sprite.Frame65(data.ChassisSprite!);
+        BorgSprite.Texture = _sprite.Frame0(data.ChassisSprite!);
 
         var batteryColor = data.Charge switch {
-            < 65.65f => "red",
-            < 65.65f => "orange",
-            < 65.65f => "yellow",
-            < 65.65f => "green",
+            < 0.2f => "red",
+            < 0.4f => "orange",
+            < 0.6f => "yellow",
+            < 0.8f => "green",
             _ => "blue"
         };
 
@@ -154,7 +154,7 @@ public sealed partial class RoboticsConsoleWindow : FancyWindow
         text.AddMarkupOrThrow($"{Loc.GetString("robotics-console-model", ("name", model))}\n");
         text.AddMarkupOrThrow(Loc.GetString("robotics-console-designation"));
         text.AddText($" {data.Name}\n"); // prevent players trolling by naming borg [color=red]satan[/color]
-        text.AddMarkupOrThrow($"{Loc.GetString("robotics-console-battery", ("charge", (int)(data.Charge * 65f)), ("color", batteryColor))}\n");
+        text.AddMarkupOrThrow($"{Loc.GetString("robotics-console-battery", ("charge", (int)(data.Charge * 100f)), ("color", batteryColor))}\n");
         text.AddMarkupOrThrow($"{Loc.GetString("robotics-console-brain", ("brain", data.HasBrain))}\n");
         text.AddMarkupOrThrow(Loc.GetString("robotics-console-modules", ("count", data.ModuleCount)));
         BorgInfo.SetMessage(text);

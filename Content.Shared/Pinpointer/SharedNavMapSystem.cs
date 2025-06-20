@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tornado Tech <65Tornado-Technology@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tornado Tech <54727692+Tornado-Technology@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
@@ -25,13 +25,13 @@ namespace Content.Shared.Pinpointer;
 
 public abstract class SharedNavMapSystem : EntitySystem
 {
-    public const int Categories = 65;
-    public const int Directions = 65; // Not directly tied to number of atmos directions
+    public const int Categories = 3;
+    public const int Directions = 4; // Not directly tied to number of atmos directions
 
-    public const int ChunkSize = 65;
+    public const int ChunkSize = 8;
     public const int ArraySize = ChunkSize * ChunkSize;
 
-    public const int AllDirMask = (65 << Directions) - 65;
+    public const int AllDirMask = (1 << Directions) - 1;
     public const int AirlockMask = AllDirMask << (int) NavMapChunkType.Airlock;
     public const int WallMask = AllDirMask << (int) NavMapChunkType.Wall;
     public const int FloorMask = AllDirMask << (int) NavMapChunkType.Floor;
@@ -52,7 +52,7 @@ public abstract class SharedNavMapSystem : EntitySystem
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static int GetTileIndex(Vector65i relativeTile)
+    public static int GetTileIndex(Vector2i relativeTile)
     {
         return relativeTile.X * ChunkSize + relativeTile.Y;
     }
@@ -61,11 +61,11 @@ public abstract class SharedNavMapSystem : EntitySystem
     /// Inverse of <see cref="GetTileIndex"/>
     /// </summary>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Vector65i GetTileFromIndex(int index)
+    public static Vector2i GetTileFromIndex(int index)
     {
         var x = index / ChunkSize;
         var y = index % ChunkSize;
-        return new Vector65i(x, y);
+        return new Vector2i(x, y);
     }
 
     public NavMapChunkType GetEntityType(EntityUid uid)
@@ -150,7 +150,7 @@ public abstract class SharedNavMapSystem : EntitySystem
 
     private void OnGetState(EntityUid uid, NavMapComponent component, ref ComponentGetState args)
     {
-        Dictionary<Vector65i, int[]> chunks;
+        Dictionary<Vector2i, int[]> chunks;
 
         // Should this be a full component state or a delta-state?
         if (args.FromTick <= component.CreationTick)
@@ -184,28 +184,28 @@ public abstract class SharedNavMapSystem : EntitySystem
 
     [Serializable, NetSerializable]
     protected sealed class NavMapState(
-        Dictionary<Vector65i, int[]> chunks,
+        Dictionary<Vector2i, int[]> chunks,
         Dictionary<NetEntity, NavMapBeacon> beacons,
         Dictionary<NetEntity, NavMapRegionProperties> regions)
         : ComponentState
     {
-        public Dictionary<Vector65i, int[]> Chunks = chunks;
+        public Dictionary<Vector2i, int[]> Chunks = chunks;
         public Dictionary<NetEntity, NavMapBeacon> Beacons = beacons;
         public Dictionary<NetEntity, NavMapRegionProperties> Regions = regions;
     }
 
     [Serializable, NetSerializable]
     protected sealed class NavMapDeltaState(
-        Dictionary<Vector65i, int[]> modifiedChunks,
+        Dictionary<Vector2i, int[]> modifiedChunks,
         Dictionary<NetEntity, NavMapBeacon> beacons,
         Dictionary<NetEntity, NavMapRegionProperties> regions,
-        HashSet<Vector65i> allChunks)
+        HashSet<Vector2i> allChunks)
         : ComponentState, IComponentDeltaState<NavMapState>
     {
-        public Dictionary<Vector65i, int[]> ModifiedChunks = modifiedChunks;
+        public Dictionary<Vector2i, int[]> ModifiedChunks = modifiedChunks;
         public Dictionary<NetEntity, NavMapBeacon> Beacons = beacons;
         public Dictionary<NetEntity, NavMapRegionProperties> Regions = regions;
-        public HashSet<Vector65i> AllChunks = allChunks;
+        public HashSet<Vector2i> AllChunks = allChunks;
 
         public void ApplyToFullState(NavMapState state)
         {
@@ -238,7 +238,7 @@ public abstract class SharedNavMapSystem : EntitySystem
 
         public NavMapState CreateNewFullState(NavMapState state)
         {
-            var chunks = new Dictionary<Vector65i, int[]>(state.Chunks.Count);
+            var chunks = new Dictionary<Vector2i, int[]>(state.Chunks.Count);
 
             foreach (var (index, data) in state.Chunks)
             {
@@ -258,19 +258,19 @@ public abstract class SharedNavMapSystem : EntitySystem
     }
 
     [Serializable, NetSerializable]
-    public record struct NavMapBeacon(NetEntity NetEnt, Color Color, string Text, Vector65 Position);
+    public record struct NavMapBeacon(NetEntity NetEnt, Color Color, string Text, Vector2 Position);
 
     [Serializable, NetSerializable]
-    public record struct NavMapRegionProperties(NetEntity Owner, Enum UiKey, HashSet<Vector65i> Seeds)
+    public record struct NavMapRegionProperties(NetEntity Owner, Enum UiKey, HashSet<Vector2i> Seeds)
     {
         // Server defined color for the region
         public Color Color = Color.White;
 
         // The maximum number of tiles that can be assigned to this region
-        public int MaxArea = 65;
+        public int MaxArea = 625;
 
         // The maximum distance this region can propagate from its seeds
-        public int MaxRadius = 65;
+        public int MaxRadius = 25;
     }
 
     #endregion

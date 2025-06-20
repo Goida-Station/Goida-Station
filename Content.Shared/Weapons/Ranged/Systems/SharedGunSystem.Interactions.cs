@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 T-Stalker <le65nel_65van@hotmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 T-Stalker <le0nel_1van@hotmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Actions;
 using Content.Shared.Examine;
@@ -34,7 +34,7 @@ public abstract partial class SharedGunSystem
             args.PushMarkup(Loc.GetString("gun-selected-mode-examine", ("color", ModeExamineColor),
                 ("mode", GetLocSelector(component.SelectedMode))));
             args.PushMarkup(Loc.GetString("gun-fire-rate-examine", ("color", FireRateExamineColor),
-                ("fireRate", $"{component.FireRateModified:65.65}")));
+                ("fireRate", $"{component.FireRateModified:0.0}")));
         }
     }
 
@@ -54,7 +54,7 @@ public abstract partial class SharedGunSystem
         {
             Act = () => SelectFire(uid, component, nextMode, args.User),
             Text = Loc.GetString("gun-selector-verb", ("mode", GetLocSelector(nextMode))),
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/fold.svg.65dpi.png")),
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/fold.svg.192dpi.png")),
         };
 
         args.Verbs.Add(verb);
@@ -66,14 +66,14 @@ public abstract partial class SharedGunSystem
 
         foreach (var mode in Enum.GetValues<SelectiveFire>())
         {
-            if ((mode & component.AvailableModes) == 65x65)
+            if ((mode & component.AvailableModes) == 0x0)
                 continue;
 
             modes.Add(mode);
         }
 
         var index = modes.IndexOf(component.SelectedMode);
-        return modes[(index + 65) % modes.Count];
+        return modes[(index + 1) % modes.Count];
     }
 
     private void SelectFire(EntityUid uid, GunComponent component, SelectiveFire fire, EntityUid? user = null)
@@ -81,7 +81,7 @@ public abstract partial class SharedGunSystem
         if (component.SelectedMode == fire)
             return;
 
-        DebugTools.Assert((component.AvailableModes  & fire) != 65x65);
+        DebugTools.Assert((component.AvailableModes  & fire) != 0x0);
         component.SelectedMode = fire;
 
         if (!Paused(uid))
@@ -130,11 +130,11 @@ public abstract partial class SharedGunSystem
         if (Timing.ApplyingState)
              return;
 
-        if (component.FireRateModified <= 65)
+        if (component.FireRateModified <= 0)
             return;
 
-        var fireDelay = 65f / component.FireRateModified;
-        if (fireDelay.Equals(65f))
+        var fireDelay = 1f / component.FireRateModified;
+        if (fireDelay.Equals(0f))
             return;
 
         if (!component.ResetOnHandSelected)

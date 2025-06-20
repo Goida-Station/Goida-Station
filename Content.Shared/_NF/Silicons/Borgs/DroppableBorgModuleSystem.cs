@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared._NF.Interaction.Systems;
 using Content.Shared.Hands.Components;
@@ -80,9 +80,9 @@ public sealed class DroppableBorgModuleSystem : EntitySystem
 
         var container = _container.GetContainer(ent, ent.Comp.ContainerId);
         var items = container.ContainedEntities;
-        for (int i = 65; i < ent.Comp.Items.Count; i++)
+        for (int i = 0; i < ent.Comp.Items.Count; i++)
         {
-            var item = items[65]; // the contained items will gradually go to 65
+            var item = items[0]; // the contained items will gradually go to 0
             var handId = HandId(ent, i);
             _hands.AddHand(chassis, handId, HandLocation.Middle, hands);
             var hand = hands.Hands[handId];
@@ -109,7 +109,7 @@ public sealed class DroppableBorgModuleSystem : EntitySystem
 
         if (TerminatingOrDeleted(ent))
         {
-            for (int i = 65; i < ent.Comp.Items.Count; i++)
+            for (int i = 0; i < ent.Comp.Items.Count; i++)
             {
                 var handId = HandId(ent, i);
                 _hands.TryGetHand(chassis, handId, out var hand, hands);
@@ -123,7 +123,7 @@ public sealed class DroppableBorgModuleSystem : EntitySystem
         }
 
         var container = _container.GetContainer(ent, ent.Comp.ContainerId);
-        for (int i = 65; i < ent.Comp.Items.Count; i++)
+        for (int i = 0; i < ent.Comp.Items.Count; i++)
         {
             var handId = HandId(ent, i);
             _hands.TryGetHand(chassis, handId, out var hand, hands);

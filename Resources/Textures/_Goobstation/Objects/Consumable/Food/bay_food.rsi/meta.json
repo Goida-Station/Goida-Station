@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from Baystation65 at https://github.com/Baystation65/Baystation65/blob/65c65dc65c65b65e65d65c65aa65bdf65b65/icons/obj/food/food.dmi",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Baystation12 at https://github.com/Baystation12/Baystation12/blob/464342c5dc8c417b7e79d56c69aa30445bdf3b75/icons/obj/food/food.dmi",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -164,24 +164,24 @@
       "name": "ghostburger",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.08,
+          0.060000002,
+          0.05,
+          0.04,
+          0.04,
+          0.07,
+          0.1,
+          0.13,
+          0.11,
+          0.089999996,
+          0.07,
+          0.05,
+          0.060000002,
+          0.07,
+          0.08,
+          0.1,
+          0.120000005
         ]
       ]
     },
@@ -198,12 +198,12 @@
       "name": "roburger",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.4
         ]
       ]
     },
@@ -299,39 +299,39 @@
     },
     {
       "name": "mysterysoup",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
@@ -345,27 +345,27 @@
       "name": "validsalad"
     },
     {
-      "name": "donut65"
+      "name": "donut1"
     },
     {
-      "name": "donut65"
+      "name": "donut2"
     },
     {
-      "name": "jdonut65"
+      "name": "jdonut1"
     },
     {
-      "name": "jdonut65"
+      "name": "jdonut2"
     },
     {
       "name": "donut_chaos",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
@@ -427,67 +427,67 @@
       "name": "donutbox"
     },
     {
-      "name": "eggbox65"
+      "name": "eggbox5"
     },
     {
-      "name": "eggbox65"
+      "name": "eggbox1"
     },
     {
-      "name": "eggbox65"
+      "name": "eggbox2"
     },
     {
-      "name": "eggbox65"
+      "name": "eggbox3"
     },
     {
-      "name": "eggbox65"
+      "name": "eggbox4"
     },
     {
-      "name": "eggbox65"
+      "name": "eggbox11"
     },
     {
-      "name": "eggbox65"
+      "name": "eggbox6"
     },
     {
-      "name": "eggbox65"
+      "name": "eggbox7"
     },
     {
-      "name": "eggbox65"
+      "name": "eggbox8"
     },
     {
-      "name": "eggbox65"
+      "name": "eggbox9"
     },
     {
-      "name": "eggbox65"
+      "name": "eggbox10"
     },
     {
-      "name": "eggbox65"
+      "name": "eggbox12"
     },
     {
-      "name": "eggbox65"
+      "name": "eggbox0"
     },
     {
       "name": "eggbox"
     },
     {
-      "name": "crackerbag65"
+      "name": "crackerbag6"
     },
     {
-      "name": "crackerbag65"
+      "name": "crackerbag5"
     },
     {
-      "name": "crackerbag65"
+      "name": "crackerbag4"
     },
     {
-      "name": "crackerbag65"
+      "name": "crackerbag3"
     },
     {
-      "name": "crackerbag65"
+      "name": "crackerbag2"
     },
     {
-      "name": "crackerbag65"
+      "name": "crackerbag1"
     },
     {
-      "name": "crackerbag65"
+      "name": "crackerbag0"
     },
     {
       "name": "crackerbag"
@@ -535,26 +535,26 @@
       "name": "rottenmeat",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
@@ -589,16 +589,16 @@
       "name": "spacylibertyduff",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
@@ -606,12 +606,12 @@
       "name": "amanitajelly",
       "delays": [
         [
-          65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65
+          5,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          1
         ]
       ]
     },
@@ -712,7 +712,7 @@
       "name": "gappletart"
     },
     {
-      "name": "pizzabox65"
+      "name": "pizzabox1"
     },
     {
       "name": "pizzabox_messy"
@@ -721,19 +721,19 @@
       "name": "pizzabox_open"
     },
     {
-      "name": "pizzabox65"
+      "name": "pizzabox4"
     },
     {
-      "name": "pizzabox65"
+      "name": "pizzabox2"
     },
     {
-      "name": "pizzabox65"
+      "name": "pizzabox3"
     },
     {
       "name": "pizzabox_tag"
     },
     {
-      "name": "pizzabox65"
+      "name": "pizzabox5"
     },
     {
       "name": "cracker"
@@ -760,106 +760,106 @@
       "name": "hotdog"
     },
     {
-      "name": "65box-donut65"
+      "name": "0box-donut1"
     },
     {
-      "name": "65box-donut_chaos",
+      "name": "0box-donut_chaos",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
     {
-      "name": "65box-donut65"
+      "name": "1box-donut1"
     },
     {
-      "name": "65box-donut_chaos",
+      "name": "1box-donut_chaos",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
     {
-      "name": "65box-donut65"
+      "name": "2box-donut1"
     },
     {
-      "name": "65box-donut_chaos",
+      "name": "2box-donut_chaos",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
     {
-      "name": "65box-donut65"
+      "name": "3box-donut1"
     },
     {
-      "name": "65box-donut_chaos",
+      "name": "3box-donut_chaos",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
     {
-      "name": "65box-donut65"
+      "name": "4box-donut1"
     },
     {
-      "name": "65box-donut_chaos",
+      "name": "4box-donut_chaos",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
     {
-      "name": "65box-donut65"
+      "name": "5box-donut1"
     },
     {
-      "name": "65box-donut_chaos",
+      "name": "5box-donut_chaos",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
     {
-      "name": "65box-donut65"
+      "name": "6box-donut1"
     },
     {
-      "name": "65box-donut_chaos"
+      "name": "6box-donut_chaos"
     },
     {
       "name": "icecream_cone_waffle"
@@ -952,7 +952,7 @@
       "name": "sosjerky"
     },
     {
-      "name": "65no_raisins"
+      "name": "4no_raisins"
     },
     {
       "name": "space_twinkie"
@@ -970,14 +970,14 @@
       "name": "nanopasta",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
@@ -1024,19 +1024,19 @@
       "name": "mre"
     },
     {
-      "name": "mre65"
+      "name": "mre1"
     },
     {
       "name": "vegmre"
     },
     {
-      "name": "vegmre65"
+      "name": "vegmre1"
     },
     {
       "name": "meatmre"
     },
     {
-      "name": "meatmre65"
+      "name": "meatmre1"
     },
     {
       "name": "meatcube"
@@ -1048,7 +1048,7 @@
       "name": "spiderleg_c"
     },
     {
-      "name": "pouch_small65"
+      "name": "pouch_small1"
     },
     {
       "name": "packet_medium"
@@ -1057,7 +1057,7 @@
       "name": "katsu"
     },
     {
-      "name": "crayonmre65"
+      "name": "crayonmre1"
     },
     {
       "name": "crayonmre"
@@ -1081,7 +1081,7 @@
       "name": "packet_small"
     },
     {
-      "name": "pouch_medium65"
+      "name": "pouch_medium1"
     },
     {
       "name": "chazuke"

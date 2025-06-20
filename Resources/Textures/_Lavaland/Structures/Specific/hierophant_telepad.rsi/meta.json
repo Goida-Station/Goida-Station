@@ -1,21 +1,21 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
   "copyright": "taken from YogStation",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "hierophant_tele_off",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.08,
+          0.06,
+          0.04,
+          0.02
         ]
       ]
     },
@@ -23,14 +23,14 @@
       "name": "hierophant_tele_on",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.08,
+          0.06,
+          0.04,
+          0.02,
+          0.3,
+          0.15,
+          0.1
         ]
       ]
     }

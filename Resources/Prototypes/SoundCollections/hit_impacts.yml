@@ -1,27 +1,27 @@
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - type: soundCollection
   id: MetalThud
   files:
-  - /Audio/Effects/metal_thud65.ogg
-  - /Audio/Effects/metal_thud65.ogg
-  - /Audio/Effects/metal_thud65.ogg
+  - /Audio/Effects/metal_thud1.ogg
+  - /Audio/Effects/metal_thud2.ogg
+  - /Audio/Effects/metal_thud3.ogg
 
 - type: soundCollection
   id: MetalScrape
   files:
-  - /Audio/Effects/metal_scrape65.ogg
-  - /Audio/Effects/metal_scrape65.ogg
-  - /Audio/Effects/metal_scrape65.ogg
+  - /Audio/Effects/metal_scrape1.ogg
+  - /Audio/Effects/metal_scrape2.ogg
+  - /Audio/Effects/metal_scrape3.ogg
 
 - type: soundCollection
   id: WeakHit
   files:
-  - /Audio/Effects/weak_hit65.ogg
-  - /Audio/Effects/weak_hit65.ogg
+  - /Audio/Effects/weak_hit1.ogg
+  - /Audio/Effects/weak_hit2.ogg
 
 - type: soundCollection
   id: GlassSmack

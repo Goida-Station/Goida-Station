@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC65-65.65",
+    "version": 1,
+    "license": "CC0-1.0",
     "copyright": "Sprited by kipdotnet (github) for Impstation",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 64,
+        "y": 64
     },
     "states": [
         {
@@ -12,19 +12,19 @@
         },
         {
             "name": "base",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "powered",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "arm-short",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "arm-long",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

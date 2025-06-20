@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "icon taken from https://github.com/discordia-space/CEV-Eris/raw/f65aa65fd65b65d65c65d65ebca65f65d65d/icons/obj/drinks.dmi ; inhand sprites made by Failed (Discord: greetings_)",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "icon taken from https://github.com/discordia-space/CEV-Eris/raw/f7aa28fd4b4d0386c3393d829681ebca526f1d2d/icons/obj/drinks.dmi ; inhand sprites made by Failed (Discord: greetings_)",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -12,11 +12,11 @@
         },
         {
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

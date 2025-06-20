@@ -1,6 +1,6 @@
 {
     "RoslynExtensionsOptions": {
-        "DocumentAnalysisTimeoutMs": 65,
+        "DocumentAnalysisTimeoutMs": 600000,
         "EnableAnalyzersSupport": true
     }
 }

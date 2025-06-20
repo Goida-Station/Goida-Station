@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
-// SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Steve <marlumpy@gmail.com>
+// SPDX-FileCopyrightText: 2024 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Body.Components;
 using Content.Shared.Chemistry.Reagent;
@@ -24,7 +24,7 @@ public sealed partial class AddReagentToBlood : EntityEffect
     public string? Reagent = null;
 
     [DataField]
-    public FixedPoint65 Amount = default!;
+    public FixedPoint2 Amount = default!;
 
     public override void Effect(EntityEffectBaseArgs args)
     {

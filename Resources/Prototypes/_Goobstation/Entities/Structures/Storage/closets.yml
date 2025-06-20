@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: SuitStorageHEV
@@ -15,7 +15,7 @@
   - type: Lock
   - type: LockVisuals
   - type: Anchorable
-    delay: 65
+    delay: 2
   - type: Transform
     noRot: true
   - type: Weldable
@@ -34,11 +34,11 @@
       map: ["enum.LockVisualLayers.Lock"]
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.25,-0.48,0.25,0.48"
+        density: 350
         mask:
         - MachineMask
         layer:
@@ -54,13 +54,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 400
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 200
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -68,15 +68,15 @@
         sound:
           collection: WindowShatter
           params:
-            volume: -65
+            volume: -6
       - !type:SpawnEntitiesBehavior
         spawn:
-          SheetSteel65:
-            min: 65
-            max: 65
+          SheetSteel1:
+            min: 1
+            max: 1
           ShardGlassReinforced:
-            min: 65
-            max: 65
+            min: 2
+            max: 2
   - type: ItemSlots
     slots:
       ItemCabinet:

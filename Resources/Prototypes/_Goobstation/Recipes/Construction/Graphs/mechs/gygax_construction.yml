@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 NULL65 <gost65@yandex.ru>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 NULL882 <gost6865@yandex.ru>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: Gygax
@@ -14,27 +14,27 @@
     - to: gygax
       steps:
       - tool: Anchoring
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 1
 
       - tool: Screwing
-        doAfter: 65
+        doAfter: 1
 
       - material: Cable
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 2
 
       - tool: Cutting
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 3
 
       - tag: GygaxCentralControlModule
         name: gygax central control module
@@ -44,14 +44,14 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 4
 
       - tool: Screwing
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 5
 
       - tag: GygaxPeripheralsControlModule
         name: gygax peripherals control module
@@ -61,14 +61,14 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 6
 
       - tool: Screwing
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 7
 
       - tag: GygaxTargetingControlModule
         name: gygax weapon control and targeting module
@@ -78,14 +78,14 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 8
 
       - tool: Screwing
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 9
 
       - tag: CapacitorStockPart
         name: capacitor
@@ -95,14 +95,14 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 10
 
       - tool: Screwing
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 11
 
       - component: PowerCell
         name: power cell
@@ -113,35 +113,35 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 12
 
       - tool: Screwing
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 13
 
       - material: Steel
-        amount: 65
+        amount: 5
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 16
 
       - tool: Anchoring
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 17
 
       - tool: Welding
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 18
 
       - tag: MechAirTank
         name: exosuit air tank
@@ -150,7 +150,7 @@
           state: mecha_air_tank
 
       - tool: Anchoring
-        doAfter: 65
+        doAfter: 1
 
       - tag: MechThruster
         name: exosuit thruster
@@ -159,7 +159,7 @@
           state: mecha_bin
 
       - tool: Anchoring
-        doAfter: 65
+        doAfter: 1
 
       - tag: GygaxArmor
         name: gygax armor plates
@@ -169,17 +169,17 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 19
 
       - tool: Anchoring
-        doAfter: 65
+        doAfter: 2
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 20
 
       - tool: Welding
-        doAfter: 65
+        doAfter: 1
 
   - node: gygax
     actions:

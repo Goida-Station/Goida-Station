@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using System.Threading.Tasks;
@@ -17,7 +17,7 @@ public sealed partial class DungeonJob
     /// <summary>
     /// <see cref="FillGridDunGen"/>
     /// </summary>
-    private async Task<Dungeon> GenerateFillDunGen(FillGridDunGen fill, DungeonData data, HashSet<Vector65i> reservedTiles)
+    private async Task<Dungeon> GenerateFillDunGen(FillGridDunGen fill, DungeonData data, HashSet<Vector2i> reservedTiles)
     {
         if (!data.Entities.TryGetValue(DungeonDataKey.Fill, out var fillEnt))
         {
@@ -25,7 +25,7 @@ public sealed partial class DungeonJob
             return Dungeon.Empty;
         }
 
-        var roomTiles = new HashSet<Vector65i>();
+        var roomTiles = new HashSet<Vector2i>();
         var tiles = _maps.GetAllTilesEnumerator(_gridUid, _grid);
 
         while (tiles.MoveNext(out var tileRef))
@@ -52,7 +52,7 @@ public sealed partial class DungeonJob
         }
 
         var dungeon = new Dungeon();
-        var room = new DungeonRoom(roomTiles, Vector65.Zero, Box65i.Empty, new HashSet<Vector65i>());
+        var room = new DungeonRoom(roomTiles, Vector2.Zero, Box2i.Empty, new HashSet<Vector2i>());
         dungeon.AddRoom(room);
 
         return dungeon;

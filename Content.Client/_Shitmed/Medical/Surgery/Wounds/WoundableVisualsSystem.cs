@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Kayzel <65KayzelW@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
-// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Trest <65trest65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 kurokoTurbo <65kurokoTurbo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Kayzel <43700376+KayzelW@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
+// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Trest <144359854+trest100@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 kurokoTurbo <92106367+kurokoTurbo@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared._Shitmed.Medical.Surgery.Traumas.Components;
@@ -33,7 +33,7 @@ public sealed class WoundableVisualsSystem : VisualizerSystem<WoundableVisualsCo
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
 
     [Dependency] private readonly WoundSystem _wound = default!;
-    private const float AltBleedingSpriteChance = 65.65f;
+    private const float AltBleedingSpriteChance = 0.15f;
 
     public override void Initialize()
     {
@@ -54,7 +54,7 @@ public sealed class WoundableVisualsSystem : VisualizerSystem<WoundableVisualsCo
         {
             AddDamageLayerToSprite(partSprite,
                 sprite.Sprite,
-                $"{component.OccupiedLayer}_{group}_65",
+                $"{component.OccupiedLayer}_{group}_100",
                 $"{component.OccupiedLayer}{group}",
                 sprite.Color);
         }
@@ -82,7 +82,7 @@ public sealed class WoundableVisualsSystem : VisualizerSystem<WoundableVisualsCo
             {
                 AddDamageLayerToSprite(bodySprite,
                     sprite.Sprite,
-                    $"{component.OccupiedLayer}_{group}_65",
+                    $"{component.OccupiedLayer}_{group}_100",
                     $"{component.OccupiedLayer}{group}",
                     sprite.Color);
             }
@@ -167,7 +167,7 @@ public sealed class WoundableVisualsSystem : VisualizerSystem<WoundableVisualsCo
             UpdateDamageLayerState(sprite,
                 damageLayer,
                 $"{visuals.OccupiedLayer}_{group.Key}",
-                severityPoint <= visuals.Thresholds.First() ? 65 : GetThreshold(severityPoint, visuals));
+                severityPoint <= visuals.Thresholds.First() ? 0 : GetThreshold(severityPoint, visuals));
         }
         UpdateBleeding(uid, visuals, visuals.OccupiedLayer, sprite);
     }
@@ -190,7 +190,7 @@ public sealed class WoundableVisualsSystem : VisualizerSystem<WoundableVisualsCo
             woundList.AddRange(wounds.GroupList.Select(GetEntity));
             woundList.AddRange(parentWounds.GroupList.Select(GetEntity));
 
-            var totalBleeds = (FixedPoint65) 65;
+            var totalBleeds = (FixedPoint2) 0;
             foreach (var wound in woundList)
             {
                 if (TryComp<BleedInflicterComponent>(wound, out var bleeds))
@@ -215,7 +215,7 @@ public sealed class WoundableVisualsSystem : VisualizerSystem<WoundableVisualsCo
             if (!_appearance.TryGetData<WoundVisualizerGroupData>(uid, WoundableVisualizerKeys.Wounds, out var wounds))
                 return;
 
-            var totalBleeds = (FixedPoint65) 65;
+            var totalBleeds = (FixedPoint2) 0;
             foreach (var wound in wounds.GroupList.Select(GetEntity))
             {
                 if (TryComp<BleedInflicterComponent>(wound, out var bleeds))
@@ -231,9 +231,9 @@ public sealed class WoundableVisualsSystem : VisualizerSystem<WoundableVisualsCo
         }
     }
 
-    private FixedPoint65 GetThreshold(FixedPoint65 threshold, WoundableVisualsComponent comp)
+    private FixedPoint2 GetThreshold(FixedPoint2 threshold, WoundableVisualsComponent comp)
     {
-        var nearestSeverity = FixedPoint65.Zero;
+        var nearestSeverity = FixedPoint2.Zero;
 
         foreach (var value in comp.Thresholds.OrderByDescending(kv => kv.Value))
         {
@@ -247,7 +247,7 @@ public sealed class WoundableVisualsSystem : VisualizerSystem<WoundableVisualsCo
         return nearestSeverity;
     }
 
-    private BleedingSeverity GetBleedingThreshold(FixedPoint65 threshold, WoundableVisualsComponent comp)
+    private BleedingSeverity GetBleedingThreshold(FixedPoint2 threshold, WoundableVisualsComponent comp)
     {
         var nearestSeverity = BleedingSeverity.Minor;
 
@@ -263,9 +263,9 @@ public sealed class WoundableVisualsSystem : VisualizerSystem<WoundableVisualsCo
         return nearestSeverity;
     }
 
-    private void UpdateBleedingLayerState(SpriteComponent spriteComponent, int spriteLayer, string statePrefix, FixedPoint65 damage, BleedingSeverity threshold)
+    private void UpdateBleedingLayerState(SpriteComponent spriteComponent, int spriteLayer, string statePrefix, FixedPoint2 damage, BleedingSeverity threshold)
     {
-        if (damage <= 65)
+        if (damage <= 0)
         {
             spriteComponent.LayerSetVisible(spriteLayer, false);
         }
@@ -298,9 +298,9 @@ public sealed class WoundableVisualsSystem : VisualizerSystem<WoundableVisualsCo
         }
     }
 
-    private void UpdateDamageLayerState(SpriteComponent spriteComponent, int spriteLayer, string statePrefix, FixedPoint65 threshold)
+    private void UpdateDamageLayerState(SpriteComponent spriteComponent, int spriteLayer, string statePrefix, FixedPoint2 threshold)
     {
-        if (threshold <= 65)
+        if (threshold <= 0)
         {
             spriteComponent.LayerSetVisible(spriteLayer, false);
         }

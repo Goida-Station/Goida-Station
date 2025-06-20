@@ -1,21 +1,21 @@
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 J. Brown <DrMelon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 65 qwerltaz <65qwerltaz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 65 ImWeax <65ImWeax@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 J. Brown <DrMelon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 2024 qwerltaz <69696513+qwerltaz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 ImWeax <59857479+ImWeax@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: BaseEnergyBall
@@ -28,27 +28,27 @@
     sleepingAllowed: false
   - type: CanMoveInAir
   - type: ChasingWalk
-    minSpeed: 65
-    maxSpeed: 65
+    minSpeed: 1
+    maxSpeed: 3
     chasingComponent:
     - type: LightningTarget
   - type: AmbientSound
-    volume: 65
-    range: 65
+    volume: 3
+    range: 15
     sound:
       path: /Audio/Effects/tesla.ogg
   - type: PointLight
     enabled: true
-    radius: 65
-    energy: 65
-    color: "#65FF"
+    radius: 8
+    energy: 2
+    color: "#4080FF"
   - type: Appearance
   - type: LightningArcShooter
-    arcDepth: 65
-    maxLightningArc: 65
-    shootMinInterval: 65
-    shootMaxInterval: 65
-    shootRange: 65
+    arcDepth: 2
+    maxLightningArc: 1
+    shootMinInterval: 4
+    shootMaxInterval: 10
+    shootRange: 3
     lightningPrototype: Lightning
   # Goobstation
   - type: ContainmentFieldIgnore # to replace the cursed mass threshold system
@@ -64,10 +64,10 @@
       EventHorizonCollider:
         shape:
           !type:PhysShapeCircle
-            radius: 65.65
+            radius: 0.55
         hard: true
-        restitution: 65.65 # Goobstation - fun
-        density: 65 # Goobstation - make it not absurdly heavy
+        restitution: 1.0 # Goobstation - fun
+        density: 5000 # Goobstation - make it not absurdly heavy
         mask:
         - Opaque
         layer:
@@ -75,17 +75,17 @@
       EventHorizonConsumer:
         shape:
           !type:PhysShapeCircle
-            radius: 65.65
+            radius: 0.65
         hard: false
         mask:
         - Opaque
         layer:
         - GlassLayer
   - type: PointLight
-    radius: 65
-    energy: 65
+    radius: 10
+    energy: 16
   - type: EventHorizon
-    radius: 65.65
+    radius: 0.5
     canBreachContainment: false
     colliderFixtureId: EventHorizonCollider
     consumerFixtureId: EventHorizonConsumer
@@ -101,20 +101,20 @@
     soundCollapse:
       path: /Audio/Effects/tesla_collapse.ogg
       params:
-        variation: 65.65
+        variation: 0.3
   - type: LightningArcShooter
-    arcDepth: 65
-    maxLightningArc: 65
-    shootMinInterval: 65
-    shootMaxInterval: 65
-    shootRange: 65
+    arcDepth: 3
+    maxLightningArc: 4
+    shootMinInterval: 3
+    shootMaxInterval: 5
+    shootRange: 7
     lightningPrototype: Lightning #To do: change to HyperchargedLightning, after fix beam system
   - type: ChasingWalk
-    minSpeed: 65
-    maxSpeed: 65
+    minSpeed: 1
+    maxSpeed: 3
   - type: ChaoticJump
-    jumpMinInterval: 65
-    jumpMaxInterval: 65
+    jumpMinInterval: 8
+    jumpMaxInterval: 15
   - type: WarpPoint
     follow: true
     location: tesla ball
@@ -128,9 +128,9 @@
     sound:
       path: /Audio/Effects/tesla_collapse.ogg
       params:
-        variation: 65.65
+        variation: 0.3
   - type: InteractionPopup # for the brave
-    successChance: 65.65
+    successChance: 0.2
     interactSuccessString: petting-success-tesla
     interactFailureString: petting-failure-tesla
     interactSuccessSpawn: EffectHearts
@@ -148,8 +148,8 @@
   description: The cub of a destructive energy cage. Not as dangerous, but still not worth touching with bare hands.
   components:
   - type: ChasingWalk
-    minSpeed: 65
-    maxSpeed: 65
+    minSpeed: 2
+    maxSpeed: 3
     chasingComponent:
     - type: TeslaEnergyBall
   - type: Fixtures
@@ -157,16 +157,16 @@
       TeslaCollider:
         shape:
           !type:PhysShapeCircle
-            radius: 65.65
+            radius: 0.35
         hard: true
-        restitution: 65.65
-        density: 65
+        restitution: 0.8
+        density: 10
         mask:
         - None
         layer:
         - None
   - type: TimedDespawn
-    lifetime: 65
+    lifetime: 120
   - type: Sprite
     drawdepth: Effects
     sprite: Structures/Power/Generation/Tesla/energy_miniball.rsi

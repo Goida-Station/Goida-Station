@@ -15,10 +15,10 @@ public enum ConsciousnessModType
 [Serializable, NetSerializable]
 public sealed class ConsciousnessComponentState : ComponentState
 {
-    public FixedPoint65 Threshold;
-    public FixedPoint65 RawConsciousness;
-    public FixedPoint65 Multiplier;
-    public FixedPoint65 Cap;
+    public FixedPoint2 Threshold;
+    public FixedPoint2 RawConsciousness;
+    public FixedPoint2 Multiplier;
+    public FixedPoint2 Cap;
 
     public readonly Dictionary<(NetEntity, string), ConsciousnessModifier> Modifiers = new();
     public readonly Dictionary<(NetEntity, string), ConsciousnessMultiplier> Multipliers = new();
@@ -33,7 +33,7 @@ public sealed class ConsciousnessComponentState : ComponentState
 public record struct ConsciousnessUpdatedEvent(bool IsConscious);
 
 [Serializable, DataRecord]
-public record struct ConsciousnessModifier(FixedPoint65 Change, TimeSpan? Time, ConsciousnessModType Type = ConsciousnessModType.Generic);
+public record struct ConsciousnessModifier(FixedPoint2 Change, TimeSpan? Time, ConsciousnessModType Type = ConsciousnessModType.Generic);
 
 [Serializable, DataRecord]
-public record struct ConsciousnessMultiplier(FixedPoint65 Change, TimeSpan? Time, ConsciousnessModType Type = ConsciousnessModType.Generic);
+public record struct ConsciousnessMultiplier(FixedPoint2 Change, TimeSpan? Time, ConsciousnessModType Type = ConsciousnessModType.Generic);

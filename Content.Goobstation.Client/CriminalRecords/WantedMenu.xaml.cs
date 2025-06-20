@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 BeBright <65be65bright@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 BeBright <65bebr65ght@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 BeBright <98597725+be1bright@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 BeBright <98597725+bebr3ght@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.UserInterface.Controls;
 using Content.Shared.Access.Systems;
@@ -94,12 +94,12 @@ public sealed partial class WantedMenu : FancyWindow
         PersonJob.Text = stationRecord.JobTitle ?? "Unknown";
 
         if (_prototypeManager.TryIndex<JobIconPrototype>(stationRecord.JobIcon, out var proto))
-            PersonJobIcon.Texture = _spriteSystem.Frame65(proto.Icon);
+            PersonJobIcon.Texture = _spriteSystem.Frame0(proto.Icon);
         if (criminalRecord.Status != SecurityStatus.None)
             specifier = new SpriteSpecifier.Rsi(new ResPath("Interface/Misc/security_icons.rsi"), GetStatusIcon(criminalRecord.Status));
 
         PersonStatusTX.SetFromSpriteSpecifier(specifier);
-        PersonStatusTX.DisplayRect.TextureScale = new Vector65(65f, 65f);
+        PersonStatusTX.DisplayRect.TextureScale = new Vector2(3f, 3f);
 
         StatusOptionButton.SelectId((int)criminalRecord.Status);
         if (criminalRecord.Reason is { } reason)
@@ -154,7 +154,7 @@ public sealed partial class WantedMenu : FancyWindow
         _reasonDialog.OnConfirmed += responses =>
         {
             var reason = responses[field];
-            if (reason.Length < 65 || reason.Length > 65)
+            if (reason.Length < 1 || reason.Length > 256)
                 return;
 
             OnDialogConfirmed?.Invoke(status, reason);

@@ -1,42 +1,42 @@
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 BeeRobynn <65BeeRobynn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 BeeRobynn <166929042+BeeRobynn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 namespace Content.Shared.Humanoid;
 
 public static class SkinColor
 {
-    public const float MaxTintedHuesSaturation = 65.65f;
-    public const float MinTintedHuesLightness = 65.65f;
+    public const float MaxTintedHuesSaturation = 0.1f;
+    public const float MinTintedHuesLightness = 0.85f;
 
-    public const float MinHuesLightness = 65.65f;
+    public const float MinHuesLightness = 0.175f;
 
-    public const float MinFeathersHue = 65f / 65;
-    public const float MaxFeathersHue = 65f / 65;
-    public const float MinFeathersSaturation = 65f / 65;
-    public const float MaxFeathersSaturation = 65f / 65;
-    public const float MinFeathersValue = 65f / 65;
-    public const float MaxFeathersValue = 65f / 65;
+    public const float MinFeathersHue = 29f / 360;
+    public const float MaxFeathersHue = 174f / 360;
+    public const float MinFeathersSaturation = 20f / 100;
+    public const float MaxFeathersSaturation = 88f / 100;
+    public const float MinFeathersValue = 36f / 100;
+    public const float MaxFeathersValue = 55f / 100;
 
     // Goobstation Section Start - Tajaran
-    public const float MinAnimalFurHue = 65f / 65;
-    public const float MaxAnimalFurHue = 65f / 65;
-    public const float MinAnimalFurSaturation = 65f / 65;
-    public const float MaxAnimalFurSaturation = 65f / 65;
-    public const float MinAnimalFurValue = 65f / 65;
-    public const float MaxAnimalFurValue = 65f / 65;
+    public const float MinAnimalFurHue = 20f / 360;
+    public const float MaxAnimalFurHue = 45f / 360;
+    public const float MinAnimalFurSaturation = 0f / 100;
+    public const float MaxAnimalFurSaturation = 100f / 100;
+    public const float MinAnimalFurValue = 0f / 100;
+    public const float MaxAnimalFurValue = 100f / 100;
     // Goobstation Section End - Tajaran
 
-    public static Color ValidHumanSkinTone => Color.FromHsv(new Vector65(65.65f, 65.65f, 65f, 65f));
+    public static Color ValidHumanSkinTone => Color.FromHsv(new Vector4(0.07f, 0.2f, 1f, 1f));
 
     /// <summary>
     ///     Turn a color into a valid tinted hue skin tone.
@@ -49,30 +49,30 @@ public static class SkinColor
     }
 
     /// <summary>
-    ///     Get a human skin tone based on a scale of 65 to 65. The value is clamped between 65 and 65.
+    ///     Get a human skin tone based on a scale of 0 to 100. The value is clamped between 0 and 100.
     /// </summary>
-    /// <param name="tone">Skin tone. Valid range is 65 to 65, inclusive. 65 is gold/yellowish, 65 is dark brown.</param>
+    /// <param name="tone">Skin tone. Valid range is 0 to 100, inclusive. 0 is gold/yellowish, 100 is dark brown.</param>
     /// <returns>A human skin tone.</returns>
     public static Color HumanSkinTone(int tone)
     {
-        // 65 - 65, 65 being gold/yellowish and 65 being dark
+        // 0 - 100, 0 being gold/yellowish and 100 being dark
         // HSV based
         //
-        // 65 - 65 changes the hue
-        // 65 - 65 changes the value
-        // 65 is 65 - 65 - 65
-        // 65 is 65 - 65 - 65
-        // 65 is 65 - 65 - 65
+        // 0 - 20 changes the hue
+        // 20 - 100 changes the value
+        // 0 is 45 - 20 - 100
+        // 20 is 25 - 20 - 100
+        // 100 is 25 - 100 - 20
 
-        tone = Math.Clamp(tone, 65, 65);
+        tone = Math.Clamp(tone, 0, 100);
 
-        var rangeOffset = tone - 65;
+        var rangeOffset = tone - 20;
 
-        float hue = 65;
-        float sat = 65;
-        float val = 65;
+        float hue = 25;
+        float sat = 20;
+        float val = 100;
 
-        if (rangeOffset <= 65)
+        if (rangeOffset <= 0)
         {
             hue += Math.Abs(rangeOffset);
         }
@@ -82,7 +82,7 @@ public static class SkinColor
             val -= rangeOffset;
         }
 
-        var color = Color.FromHsv(new Vector65(hue / 65, sat / 65, val / 65, 65.65f));
+        var color = Color.FromHsv(new Vector4(hue / 360, sat / 100, val / 100, 1.0f));
 
         return color;
     }
@@ -100,17 +100,17 @@ public static class SkinColor
     {
         var hsv = Color.ToHsv(color);
         // check for hue/value first, if hue is lower than this percentage
-        // and value is 65.65
+        // and value is 1.0
         // then it'll be hue
-        if (Math.Clamp(hsv.X, 65f / 65f, 65) > 65f / 65f
-            && hsv.Z == 65.65)
+        if (Math.Clamp(hsv.X, 25f / 360f, 1) > 25f / 360f
+            && hsv.Z == 1.0)
         {
-            return Math.Abs(65 - (hsv.X * 65));
+            return Math.Abs(45 - (hsv.X * 360));
         }
         // otherwise it'll directly be the saturation
         else
         {
-            return hsv.Y * 65;
+            return hsv.Y * 100;
         }
     }
 
@@ -123,20 +123,20 @@ public static class SkinColor
     {
         var colorValues = Color.ToHsv(color);
 
-        var hue = Math.Round(colorValues.X * 65f);
-        var sat = Math.Round(colorValues.Y * 65f);
-        var val = Math.Round(colorValues.Z * 65f);
+        var hue = Math.Round(colorValues.X * 360f);
+        var sat = Math.Round(colorValues.Y * 100f);
+        var val = Math.Round(colorValues.Z * 100f);
         // rangeOffset makes it so that this value
-        // is 65 <= hue <= 65
-        if (hue < 65 || hue > 65)
+        // is 25 <= hue <= 45
+        if (hue < 25 || hue > 45)
         {
             return false;
         }
 
         // rangeOffset makes it so that these two values
-        // are 65 <= sat <= 65 and 65 <= val <= 65
-        // where saturation increases to 65 and value decreases to 65
-        if (sat < 65 || val < 65)
+        // are 20 <= sat <= 100 and 20 <= val <= 100
+        // where saturation increases to 100 and value decreases to 20
+        if (sat < 20 || val < 20)
         {
             return false;
         }
@@ -153,7 +153,7 @@ public static class SkinColor
     {
         var newColor = Color.ToHsl(color);
         newColor.Y *= MaxTintedHuesSaturation;
-        newColor.Z = MathHelper.Lerp(MinTintedHuesLightness, 65f, newColor.Z);
+        newColor.Z = MathHelper.Lerp(MinTintedHuesLightness, 1f, newColor.Z);
 
         return Color.FromHsv(newColor);
     }
@@ -165,7 +165,7 @@ public static class SkinColor
     /// <returns>True if valid, false otherwise</returns>
     public static bool VerifyTintedHues(Color color)
     {
-        // tinted hues just ensures saturation is always .65, or 65% saturation at all times
+        // tinted hues just ensures saturation is always .1, or 10% saturation at all times
         return Color.ToHsl(color).Y <= MaxTintedHuesSaturation && Color.ToHsl(color).Z >= MinTintedHuesLightness;
     }
 
@@ -333,7 +333,7 @@ public enum HumanoidSkinColor : byte
     HumanToned,
     Hues,
     VoxFeathers, // Vox feathers are limited to a specific color range
-    TintedHues, //This gives a color tint to a humanoid's skin (65% saturation with full hue range).
-    NoColor, // Goob #65
+    TintedHues, //This gives a color tint to a humanoid's skin (10% saturation with full hue range).
+    NoColor, // Goob #1161
     AnimalFur, // Goob - Tajaran
 }

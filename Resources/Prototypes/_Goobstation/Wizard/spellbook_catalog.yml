@@ -1,18 +1,18 @@
-# SPDX-FileCopyrightText: 65 ActiveMammmoth <65ActiveMammmoth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ActiveMammmoth <kmcsmooth@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Scruq65 <storchdamien@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 crasg <65Scruq65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-# SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ActiveMammmoth <140334666+ActiveMammmoth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ActiveMammmoth <kmcsmooth@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Scruq445 <storchdamien@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 crasg <109207982+Scruq445@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 2025 keronshb <54602815+keronshb@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Offensive
 - type: listing
   id: SpellbookMimeMalaise
@@ -21,12 +21,12 @@
   description: spellbook-mime-malaise-desc
   productAction: ActionMimeMalaise
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -39,12 +39,12 @@
   description: spellbook-banana-touch-desc
   productAction: ActionBananaTouch
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -57,12 +57,12 @@
   description: spellbook-cluwne-curse-desc
   productAction: ActionCluwneCurse
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -74,12 +74,12 @@
   description: spellbook-corpse-explosion-desc
   productAction: ActionCorpseExplosion
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -92,12 +92,12 @@
   description: spellbook-blind-desc
   productAction: ActionBlindSpell
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -110,12 +110,12 @@
   description: spellbook-mutate-desc
   productAction: ActionMutateSpell
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -128,12 +128,12 @@
   description: spellbook-tesla-blast-desc
   productAction: ActionTeslaBlast
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -146,12 +146,12 @@
   description: spellbook-lightning-bolt-desc
   productAction: ActionLightningBolt
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -164,12 +164,12 @@
   description: spellbook-homing-toolbox-desc
   productAction: ActionHomingToolbox
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -182,12 +182,12 @@
   description: spellbook-spell-cards-desc
   productAction: ActionSpellCards
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -200,12 +200,12 @@
   description: spellbook-arcane-barrage-desc
   productAction: ActionArcaneBarrage
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookLesserSummonGuns
@@ -219,12 +219,12 @@
   description: spellbook-lesser-summon-guns-desc
   productAction: ActionLesserSummonGuns
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookArcaneBarrage
@@ -238,12 +238,12 @@
   description: spellbook-barnyard-desc
   productAction: ActionBarnyardCurse
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -256,12 +256,12 @@
   description: spellbook-scream-for-me-desc
   productAction: ActionScreamForMe
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -274,12 +274,12 @@
   description: spellbook-bees-desc
   productAction: ActionLesserSummonBees
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -292,12 +292,12 @@
   description: spellbook-simians-desc
   productAction: ActionSummonSimians
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -310,12 +310,12 @@
   description: spellbook-sanguine-strike-desc
   productAction: ActionSanguineStrike
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -328,12 +328,12 @@
   description: spellbook-smite-desc
   productAction: ActionSmite
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookOffensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -347,12 +347,12 @@
   description: spellbook-magic-missile-desc
   productAction: ActionMagicMissile
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookDefensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -365,12 +365,12 @@
   description: spellbook-disable-tech-desc
   productAction: ActionDisableTech
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookDefensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -383,12 +383,12 @@
   description: spellbook-smoke-desc
   productAction: ActionSmoke
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookDefensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -401,12 +401,12 @@
   description: spellbook-repulse-desc
   productAction: ActionRepulse
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookDefensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -419,12 +419,12 @@
   description: spellbook-stop-time-desc
   productAction: ActionStopTime
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookDefensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -436,12 +436,12 @@
   description: spellbook-bind-soul-desc
   productAction: ActionBindSoul
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookDefensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -455,12 +455,12 @@
   description: spellbook-the-traps-desc
   productAction: ActionTrapsSpell
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookDefensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -472,12 +472,12 @@
   description: spellbook-chuuni-desc
   productAction: ActionChuuniInvocations
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookDefensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -490,12 +490,12 @@
   description: spellbook-thrown-lightning-desc
   productAction: ActionThrownLightning
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookDefensive
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -508,12 +508,12 @@
   description: spellbook-instant-summons-desc
   productAction: ActionInstantSummons
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookUtility
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -526,12 +526,12 @@
   description: spellbook-teleport-desc
   productAction: ActionTeleportWizard
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookUtility
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -548,12 +548,12 @@
   description: spellbook-swap-desc
   productAction: ActionSwapSpell
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookUtility
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -565,12 +565,12 @@
   description: spellbook-soul-tap-desc
   productAction: ActionSoulTap
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookUtility
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -583,12 +583,12 @@
   description: spellbook-knock-desc
   productAction: ActionKnock
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookUtility
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -600,12 +600,12 @@
   description: spellbook-tile-toggle-description
   productAction: ActionTileToggle
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookUtility
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -617,12 +617,12 @@
 #  description: spellbook-curse-of-byond-description
 #  productAction: ActionCurseOfByond
 #  cost:
-#    WizCoin: 65
+#    WizCoin: 1
 #  categories:
 #  - SpellbookUtility
 #  conditions:
 #  - !type:ListingLimitedStockCondition
-#    stock: 65
+#    stock: 1
 #  - !type:BuyBeforeCondition
 #    whitelist:
 #      - SpellbookTileToggle
@@ -637,7 +637,7 @@
   description: spellbook-scrying-orb-desc
   productEntity: ScryingOrbWizard
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookEquipment
 
@@ -647,7 +647,7 @@
   description: spellbook-spellblade-desc
   productEntity: Spellblade
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookEquipment
 
@@ -657,7 +657,7 @@
   description: spellbook-everfull-mug-desc
   productEntity: EverfullMug
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookEquipment
 
@@ -667,7 +667,7 @@
   description: spellbook-cryo-katana-desc
   productEntity: CryoKatana
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookEquipment
 
@@ -677,7 +677,7 @@
   description: spellbook-skates-desc
   productEntity: ClothingShoesWizardSkates
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookEquipment
 
@@ -687,7 +687,7 @@
   description: spellbook-hardsuit-desc
   productEntity: ClothingOuterHardsuitWizard
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookEquipment
 
@@ -697,7 +697,7 @@
   description: spellbook-paper-robe-desc
   productEntity: ClothingOuterWizardPaperReal
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookEquipment
 
@@ -707,7 +707,7 @@
   description: spellbook-high-freq-desc
   productEntity: HighFrequencyBlade
   cost:
-    WizCoin: 65
+    WizCoin: 3
   categories:
   - SpellbookEquipment
 
@@ -717,7 +717,7 @@
   description: spellbook-sm-halberd-desc
   productEntity: SupermatterHalberd
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookEquipment
 
@@ -727,7 +727,7 @@
   description: spellbook-staff-healing-desc
   productEntity: WeaponStaffHealing
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookEquipment
 
@@ -737,7 +737,7 @@
   description: spellbook-staff-animate-desc
   productEntity: AnimationStaff
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookEquipment
 
@@ -747,7 +747,7 @@
   description: spellbook-staff-change-desc
   productEntity: WeaponStaffChange
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookEquipment
 
@@ -757,7 +757,7 @@
   description: spellbook-staff-chaos-desc
   productEntity: WeaponStaffChaos
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookEquipment
 
@@ -767,7 +767,7 @@
   description: spellbook-staff-slipping-desc
   productEntity: WeaponStaffSlipping
   cost:
-    WizCoin: 65
+    WizCoin: 1
   categories:
   - SpellbookEquipment
 
@@ -780,7 +780,7 @@
     sprite: _Goobstation/Wizard/Objects/Weapons/Wands/wand.rsi
     state: icon
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookEquipment
 
@@ -791,12 +791,12 @@
   description: spellbook-magical-lamp-desc
   productEntity: MagicalLamp
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookSummons
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   disableRefund: true
 
 - type: listing
@@ -806,14 +806,14 @@
   productEntity: ContractApprenticeship
   icon:
     sprite: _Goobstation/Wizard/Objects/scroll.rsi
-    state: scroll65
+    state: scroll2
   cost:
-    WizCoin: 65
+    WizCoin: 2
   categories:
   - SpellbookSummons
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:StoreWhitelistCondition
     blacklist:
       tags:
@@ -829,12 +829,12 @@
     sprite: _Goobstation/Wizard/Icons/spellbook.rsi
     state: icemoon
   cost:
-    WizCoin: 65
+    WizCoin: 0
   categories:
   - SpellbookEvents
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   disableRefund: true
 
 - type: listing
@@ -846,12 +846,12 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: tileglobal
   cost:
-    WizCoin: 65
+    WizCoin: 0
   categories:
   - SpellbookEvents
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     whitelist:
       - SpellbookTileToggle
@@ -863,20 +863,20 @@
   name: spellbook-full-random-name
   description: spellbook-full-random-desc
   productEvent: !type:RandomizeSpellsEvent
-    totalBalance: 65
+    totalBalance: 15
     spellsDict:
       FullRandomSpellTable: null
   raiseProductEventOnUser: true
   icon:
     sprite: Objects/Fun/dice.rsi
-    state: d65_65
+    state: d20_20
   cost:
-    WizCoin: 65
+    WizCoin: 10
   categories:
   - SpellbookSpecial
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookSemiRandom
@@ -887,22 +887,22 @@
   name: spellbook-semi-random-name
   description: spellbook-semi-random-desc
   productEvent: !type:RandomizeSpellsEvent
-    totalBalance: 65
+    totalBalance: 12
     spellsDict:
-      LethalSpellTable: 65
-      MobilitySpellTable: 65
+      LethalSpellTable: 1
+      MobilitySpellTable: 1
       FullRandomSpellTable: null
   raiseProductEventOnUser: true
   icon:
     sprite: Objects/Fun/dice.rsi
-    state: d65_65
+    state: d6_6
   cost:
-    WizCoin: 65
+    WizCoin: 10
   categories:
   - SpellbookSpecial
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     blacklist:
     - SpellbookFullRandom
@@ -915,12 +915,12 @@
   description: spellbook-mime-bundle-desc
   productEntity: ClothingBackpackWizardMimeBundle
   cost:
-    WizCoin: 65
+    WizCoin: 0
   categories:
   - SpellbookBundles
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     whitelist:
     - SpellbookMimeMalaise
@@ -934,12 +934,12 @@
   description: spellbook-clown-bundle-desc
   productEntity: ClothingBackpackWizardClownBundle
   cost:
-    WizCoin: 65
+    WizCoin: 0
   categories:
   - SpellbookBundles
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     whitelistRequireAll: false
     whitelist:
@@ -956,7 +956,7 @@
   description: spellbook-oblivion-enforcer-desc
   productEntity: ClothingBackpackOblivionEnforcerBundle
   cost:
-    WizCoin: 65
+    WizCoin: 0
   categories:
   - SpellbookBundles
   conditions:
@@ -972,12 +972,12 @@
   description: spellbook-tider-bundle-desc
   productEntity: ToolboxTiderFilled
   cost:
-    WizCoin: 65
+    WizCoin: 0
   categories:
   - SpellbookBundles
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:BuyBeforeCondition
     whitelist:
     - SpellbookHomingToolbox

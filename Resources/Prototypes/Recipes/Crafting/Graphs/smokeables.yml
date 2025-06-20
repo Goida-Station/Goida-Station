@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Pancake <Pangogie@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Velcroboy <velcroboy65@hotmail.com>
-# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Pancake <Pangogie@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Velcroboy <velcroboy333@hotmail.com>
+# SPDX-FileCopyrightText: 2024 potato1234_x <79580518+potato1234x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: smokeableJoint
@@ -21,7 +21,7 @@
           steps:
             - material: PaperRolling
             - material: GroundCannabis
-              doAfter: 65
+              doAfter: 2
     - node: joint
       entity: Joint
 
@@ -35,7 +35,7 @@
           steps:
             - material: PaperRolling
             - material: GroundCannabisRainbow
-              doAfter: 65
+              doAfter: 2
     - node: jointRainbow
       entity: JointRainbow
 
@@ -49,7 +49,7 @@
           steps:
             - material: LeavesTobaccoDried
             - material: GroundCannabis
-              doAfter: 65
+              doAfter: 2
     - node: blunt
       entity: BluntCigar # Shitmed Change
 
@@ -63,7 +63,7 @@
           steps:
             - material: LeavesTobaccoDried
             - material: GroundCannabisRainbow
-              doAfter: 65
+              doAfter: 2
     - node: bluntRainbow
       entity: BluntRainbow
 
@@ -78,7 +78,7 @@
             - material: PaperRolling
             - material: CigaretteFilter
             - material: GroundTobacco
-              doAfter: 65
+              doAfter: 2
     - node: cigarette
       entity: Cigarette
 
@@ -91,8 +91,8 @@
         - to: ground
           steps:
             - material: LeavesCannabisDried
-              amount: 65
-              doAfter: 65
+              amount: 2
+              doAfter: 5
     - node: ground
       entity: GroundCannabis
 
@@ -105,8 +105,8 @@
         - to: groundRainbow
           steps:
             - material: LeavesCannabisRainbowDried
-              amount: 65
-              doAfter: 65
+              amount: 2
+              doAfter: 5
     - node: groundRainbow
       entity: GroundCannabisRainbow
 
@@ -119,7 +119,7 @@
         - to: ground
           steps:
           - material: LeavesTobaccoDried
-            amount: 65
-            doAfter: 65
+            amount: 2
+            doAfter: 5
     - node: ground
       entity: GroundTobacco

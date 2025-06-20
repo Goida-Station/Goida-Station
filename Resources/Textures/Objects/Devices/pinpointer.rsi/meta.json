@@ -1,47 +1,47 @@
 {
-    "version": 65,
+    "version": 1,
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/65f65a65e65e65ba65c65ddebfbbdc65d, station and syndicate pinpointer resprited by Ubaser, Pinpointer Detective from goobstation by Taro Varne.",
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/59f2a4e10e5ba36033c9734ddebfbbdc6157472d, station and syndicate pinpointer resprited by Ubaser, Pinpointer Detective from goobstation by Taro Varne.",
     "states": [
         {
             "name": "pinonalert",
-            "directions": 65,
+            "directions": 8,
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ]
             ]
         },
@@ -49,8 +49,8 @@
             "name": "pinonalertdirect",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ]
             ]
         },
@@ -58,8 +58,8 @@
             "name": "pinonalertnull",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ]
             ]
         },
@@ -67,8 +67,8 @@
             "name": "pinonclose",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ]
             ]
         },
@@ -76,8 +76,8 @@
             "name": "pinondirect",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ]
             ]
         },
@@ -85,8 +85,8 @@
             "name": "pinondirectlarge",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ]
             ]
         },
@@ -94,8 +94,8 @@
             "name": "pinondirectsmall",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ]
             ]
         },
@@ -103,8 +103,8 @@
             "name": "pinondirectxtrlarge",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ]
             ]
         },
@@ -112,8 +112,8 @@
             "name": "pinonfar",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.6,
+                    0.2
                 ]
             ]
         },
@@ -121,8 +121,8 @@
             "name": "pinonmedium",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.4,
+                    0.2
                 ]
             ]
         },
@@ -130,8 +130,8 @@
             "name": "pinonnull",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ]
             ]
         },
@@ -168,11 +168,11 @@
         },
         {
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

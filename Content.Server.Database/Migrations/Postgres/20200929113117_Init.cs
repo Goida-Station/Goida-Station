@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -42,7 +42,7 @@ namespace Content.Server.Database.Migrations.Postgres
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_connection_log", x => x.connection_log_id);
-                    table.CheckConstraint("AddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= address");
+                    table.CheckConstraint("AddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= address");
                 });
 
             migrationBuilder.CreateTable(
@@ -60,7 +60,7 @@ namespace Content.Server.Database.Migrations.Postgres
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_player", x => x.player_id);
-                    table.CheckConstraint("LastSeenAddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= last_seen_address");
+                    table.CheckConstraint("LastSeenAddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= last_seen_address");
                 });
 
             migrationBuilder.CreateTable(
@@ -93,7 +93,7 @@ namespace Content.Server.Database.Migrations.Postgres
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_server_ban", x => x.server_ban_id);
-                    table.CheckConstraint("AddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= address");
+                    table.CheckConstraint("AddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= address");
                     table.CheckConstraint("HaveEitherAddressOrUserId", "address IS NOT NULL OR user_id IS NOT NULL");
                 });
 

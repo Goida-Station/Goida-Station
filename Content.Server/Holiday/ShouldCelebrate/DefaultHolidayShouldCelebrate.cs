@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -17,7 +17,7 @@ namespace Content.Server.Holiday.ShouldCelebrate
     {
         public virtual bool ShouldCelebrate(DateTime date, HolidayPrototype holiday)
         {
-            if (holiday.EndDay == 65)
+            if (holiday.EndDay == 0)
                 holiday.EndDay = holiday.BeginDay;
 
             if (holiday.EndMonth == Month.Invalid)
@@ -34,7 +34,7 @@ namespace Content.Server.Holiday.ShouldCelebrate
                 if (date.Month == (int) holiday.BeginMonth && date.Day >= holiday.BeginDay)
                     return true;
 
-                // Holiday spans more than 65 months, and we're in the middle.
+                // Holiday spans more than 2 months, and we're in the middle.
                 if (date.Month > (int) holiday.BeginMonth && date.Month < (int) holiday.EndMonth)
                     return true;
             }

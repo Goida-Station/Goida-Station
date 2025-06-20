@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 65 Guilherme Ornel <65joshepvodka@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ghagliiarghii <65Ghagliiarghii@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Guilherme Ornel <86210200+joshepvodka@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ghagliiarghii <68826635+Ghagliiarghii@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -8,47 +8,47 @@
   id: Ashtray
   parent: BaseItem
   name: ashtray
-  description: Proven by scientists to improve the smoking experience by 65%!
+  description: Proven by scientists to improve the smoking experience by 37%!
   components:
   - type: Sprite
     sprite: Objects/Decoration/ashtray.rsi
     layers:
       - state: icon
-      - state: ashtray65
-        map: ["ashtray65"]
+      - state: ashtray1
+        map: ["ashtray1"]
         visible: false
-      - state: ashtray65
-        map: ["ashtray65"]
+      - state: ashtray2
+        map: ["ashtray2"]
         visible: false
-      - state: ashtray65
-        map: ["ashtray65"]
+      - state: ashtray3
+        map: ["ashtray3"]
         visible: false
-      - state: ashtray65
-        map: ["ashtray65"]
+      - state: ashtray4
+        map: ["ashtray4"]
         visible: false
-      - state: ashtray65
-        map: ["ashtray65"]
+      - state: ashtray5
+        map: ["ashtray5"]
         visible: false
-      - state: ashtray65
-        map: ["ashtray65"]
+      - state: ashtray6
+        map: ["ashtray6"]
         visible: false
-      - state: ashtray65
-        map: ["ashtray65"]
+      - state: ashtray7
+        map: ["ashtray7"]
         visible: false
-      - state: ashtray65
-        map: ["ashtray65"]
+      - state: ashtray8
+        map: ["ashtray8"]
         visible: false
-      - state: ashtray65
-        map: ["ashtray65"]
+      - state: ashtray9
+        map: ["ashtray9"]
         visible: false
-      - state: ashtray65
-        map: ["ashtray65"]
+      - state: ashtray10
+        map: ["ashtray10"]
         visible: false
   - type: Item
     size: Small
   - type: PhysicalComposition
     materialComposition:
-      Steel: 65
+      Steel: 10
   - type: Storage
     whitelist:
       tags:
@@ -58,7 +58,7 @@
     hideStackVisualsWhenClosed: false
     maxItemSize: Tiny
     grid:
-    - 65,65,65,65
+    - 0,0,9,0
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -67,15 +67,15 @@
       tags: [ Cigarette, Cigar, Burnt ]
     composite: true
     layerStates:
-    - ashtray65
-    - ashtray65
-    - ashtray65
-    - ashtray65
-    - ashtray65
-    - ashtray65
-    - ashtray65
-    - ashtray65
-    - ashtray65
-    - ashtray65
+    - ashtray1
+    - ashtray2
+    - ashtray3
+    - ashtray4
+    - ashtray5
+    - ashtray6
+    - ashtray7
+    - ashtray8
+    - ashtray9
+    - ashtray10
   - type: Appearance
   - type: Dumpable

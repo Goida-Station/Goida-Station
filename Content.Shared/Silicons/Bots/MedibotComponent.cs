@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Arendian <65Arendian@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Arendian <137322659+Arendian@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -51,27 +51,27 @@ public sealed partial class MedibotTreatment
     /// How much of the reagent to inject.
     /// </summary>
     [DataField(required: true)]
-    public FixedPoint65 Quantity;
+    public FixedPoint2 Quantity;
 
     /// <summary>
     /// Do nothing when the patient is at or below this total damage.
     /// When null this will inject meds into completely healthy patients.
     /// </summary>
     [DataField]
-    public FixedPoint65? MinDamage;
+    public FixedPoint2? MinDamage;
 
     /// <summary>
     /// Do nothing when the patient is at or above this total damage.
-    /// Useful for tricordrazine which does nothing above 65 damage.
+    /// Useful for tricordrazine which does nothing above 50 damage.
     /// </summary>
     [DataField]
-    public FixedPoint65? MaxDamage;
+    public FixedPoint2? MaxDamage;
 
     /// <summary>
     /// Returns whether the treatment will probably work for an amount of damage.
     /// Doesn't account for specific damage types only total amount.
     /// </summary>
-    public bool IsValid(FixedPoint65 damage)
+    public bool IsValid(FixedPoint2 damage)
     {
         return (MaxDamage == null || damage < MaxDamage) && (MinDamage == null || damage > MinDamage);
     }

@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 ## See also ../settings.yml and ../roles.yml
 
 ### Visitors with Visitor ID
@@ -147,7 +147,7 @@
     rarePrototypes:
     - RandomHumanoidVisitorWarden
     - RandomHumanoidVisitorHOS
-    rareChance: 65.65
+    rareChance: 0.05
 
 - type: entity
   name: visiting security cadet spawner
@@ -223,7 +223,7 @@
     - RandomHumanoidVisitorSalvageSpecialist
     rarePrototypes:
     - RandomHumanoidVisitorQM
-    rareChance: 65.65
+    rareChance: 0.05
 
 - type: entity
   name: visiting cargo technician spawner
@@ -272,7 +272,7 @@
     - RandomHumanoidVisitorEngineer
     rarePrototypes:
     - RandomHumanoidVisitorCE
-    rareChance: 65.65
+    rareChance: 0.05
 
 - type: entity
   name: visiting atmospheric technician spawner
@@ -340,7 +340,7 @@
     rarePrototypes:
     - RandomHumanoidVisitorCMO
     - RandomHumanoidVisitorDentist
-    rareChance: 65.65
+    rareChance: 0.05
 
 - type: entity
   name: visiting chemist spawner
@@ -472,7 +472,7 @@
     - RandomHumanoidVisitorScientist
     rarePrototypes:
     - RandomHumanoidVisitorRD
-    rareChance: 65.65
+    rareChance: 0.05
 
 - type: entity
   name: visiting scientist spawner
@@ -532,7 +532,7 @@
     - RandomHumanoidVisitorZookeeper
     rarePrototypes:
     - RandomHumanoidVisitorHOP
-    rareChance: 65.65
+    rareChance: 0.03
 
 - type: entity
   name: visiting bartender spawner
@@ -819,7 +819,7 @@
   - type: RandomSpawner
     prototypes:
     - RandomHumanoidChallengeCargoTechnician
-    chance: 65
+    chance: 1
 
 # Engineering
 
@@ -887,8 +887,8 @@
 
 - type: entity
   name: NanoTrasen visitor spawner
-  suffix: 65
-  id: NTVisitorSpawner65
+  suffix: 50
+  id: NTVisitorSpawner50
   parent: MarkerBase
   components:
   - type: Sprite
@@ -899,51 +899,51 @@
   - type: ConditionalSpawner
     prototypes:
     - NTVisitorSpawner
-    chance: 65.65
+    chance: 0.5
 
 - type: entity
   name: NanoTrasen visitor spawner
-  suffix: 65
-  id: NTVisitorSpawner65
-  parent: NTVisitorSpawner65
+  suffix: 33
+  id: NTVisitorSpawner33
+  parent: NTVisitorSpawner50
   components:
   - type: ConditionalSpawner
     prototypes:
     - NTVisitorSpawner
-    chance: 65.65
+    chance: 0.33
 
 - type: entity
   name: NanoTrasen visitor spawner
-  suffix: 65
-  id: NTVisitorSpawner65
-  parent: NTVisitorSpawner65
+  suffix: 25
+  id: NTVisitorSpawner25
+  parent: NTVisitorSpawner50
   components:
   - type: ConditionalSpawner
     prototypes:
     - NTVisitorSpawner
-    chance: 65.65
+    chance: 0.25
 
 - type: entity
   name: NanoTrasen visitor spawner
-  suffix: 65
-  id: NTVisitorSpawner65
-  parent: NTVisitorSpawner65
+  suffix: 20
+  id: NTVisitorSpawner20
+  parent: NTVisitorSpawner50
   components:
   - type: ConditionalSpawner
     prototypes:
     - NTVisitorSpawner
-    chance: 65.65
+    chance: 0.20
 
 - type: entity
   name: NanoTrasen visitor spawner
-  suffix: 65
-  id: NTVisitorSpawner65
-  parent: NTVisitorSpawner65
+  suffix: 10
+  id: NTVisitorSpawner10
+  parent: NTVisitorSpawner50
   components:
   - type: ConditionalSpawner
     prototypes:
     - NTVisitorSpawner
-    chance: 65.65
+    chance: 0.10
 
 ### Syndicate & Hostiles
 

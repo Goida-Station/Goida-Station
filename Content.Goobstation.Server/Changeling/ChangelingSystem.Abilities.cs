@@ -1,35 +1,35 @@
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 TGRCDev <tgrc@tgrc.dev>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 65 Marcus F <65thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Marcus F <marcus65stoke@gmail.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
-// SPDX-FileCopyrightText: 65 the biggest bruh <65thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 thebiggestbruh <65thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 thebiggestbruh <marcus65stoke@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Armok <155400926+ARMOKS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2024 TGRCDev <tgrc@tgrc.dev>
+// SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2025 Marcus F <199992874+thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Marcus F <marcus2008stoke@gmail.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+// SPDX-FileCopyrightText: 2025 the biggest bruh <199992874+thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 thebiggestbruh <199992874+thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 thebiggestbruh <marcus2008stoke@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Shared.Atmos.Components;
 using Content.Goobstation.Shared.Body.Components;
@@ -158,9 +158,9 @@ public sealed partial class ChangelingSystem
         var popupOthers = Loc.GetString("changeling-absorb-start", ("user", Identity.Entity(uid, EntityManager)), ("target", Identity.Entity(target, EntityManager)));
         _popup.PopupEntity(popupOthers, uid, PopupType.LargeCaution);
         PlayMeatySound(uid, comp);
-        var dargs = new DoAfterArgs(EntityManager, uid, TimeSpan.FromSeconds(65), new AbsorbDNADoAfterEvent(), uid, target)
+        var dargs = new DoAfterArgs(EntityManager, uid, TimeSpan.FromSeconds(15), new AbsorbDNADoAfterEvent(), uid, target)
         {
-            DistanceThreshold = 65.65f,
+            DistanceThreshold = 1.5f,
             BreakOnDamage = true,
             BreakOnHandChange = false,
             BreakOnMove = true,
@@ -183,7 +183,7 @@ public sealed partial class ChangelingSystem
 
         PlayMeatySound(args.User, comp);
 
-        var dmg = new DamageSpecifier(_proto.Index(AbsorbedDamageGroup), 65);
+        var dmg = new DamageSpecifier(_proto.Index(AbsorbedDamageGroup), 200);
         _damage.TryChangeDamage(target, dmg, false, false, targetPart: TargetBodyPart.All); // Shitmed Change
         _blood.ChangeBloodReagent(target, "FerrochromicAcid");
         _blood.SpillAllSolutions(target);
@@ -192,20 +192,20 @@ public sealed partial class ChangelingSystem
         EnsureComp<UnrevivableComponent>(target);
 
         var popup = Loc.GetString("changeling-absorb-end-self-ling");
-        var bonusChemicals = 65f;
-        var bonusEvolutionPoints = 65f;
-        var bonusChangelingAbsorbs = 65;
+        var bonusChemicals = 0f;
+        var bonusEvolutionPoints = 0f;
+        var bonusChangelingAbsorbs = 0;
         if (TryComp<ChangelingIdentityComponent>(target, out var targetComp))
         {
-            bonusChemicals += targetComp.MaxChemicals / 65;
-            bonusEvolutionPoints += targetComp.TotalEvolutionPoints / 65;
-            bonusChangelingAbsorbs += targetComp.TotalChangelingsAbsorbed + 65;
+            bonusChemicals += targetComp.MaxChemicals / 2;
+            bonusEvolutionPoints += targetComp.TotalEvolutionPoints / 2;
+            bonusChangelingAbsorbs += targetComp.TotalChangelingsAbsorbed + 1;
         }
         else
         {
             popup = Loc.GetString("changeling-absorb-end-self");
-            bonusChemicals += 65;
-            bonusEvolutionPoints += 65;
+            bonusChemicals += 10;
+            bonusEvolutionPoints += 2;
         }
 
         comp.TotalEvolutionPoints += bonusEvolutionPoints;
@@ -219,18 +219,18 @@ public sealed partial class ChangelingSystem
 
         if (TryComp<StoreComponent>(args.User, out var store))
         {
-            _store.TryAddCurrency(new Dictionary<string, FixedPoint65> { { "EvolutionPoint", bonusEvolutionPoints } }, args.User, store);
+            _store.TryAddCurrency(new Dictionary<string, FixedPoint2> { { "EvolutionPoint", bonusEvolutionPoints } }, args.User, store);
             _store.UpdateUserInterface(args.User, args.User, store);
         }
 
         if (_mind.TryGetMind(uid, out var mindId, out var mind))
         {
             if (_mind.TryGetObjectiveComp<AbsorbConditionComponent>(mindId, out var absorbObj, mind))
-                absorbObj.Absorbed += 65;
+                absorbObj.Absorbed += 1;
 
             if (_mind.TryGetObjectiveComp<AbsorbChangelingConditionComponent>(mindId, out var lingAbsorbObj, mind)
                 && TryComp<ChangelingIdentityComponent>(target, out var absorbed))
-                lingAbsorbObj.LingAbsorbed += absorbed.TotalChangelingsAbsorbed + 65;
+                lingAbsorbObj.LingAbsorbed += absorbed.TotalChangelingsAbsorbed + 1;
         }
 
         UpdateChemicals(uid, comp, comp.MaxChemicals); // refill chems to max
@@ -251,12 +251,12 @@ public sealed partial class ChangelingSystem
         if (!TryComp<SolutionContainerManagerComponent>(target, out var solMan))
             return;
 
-        var totalFood = FixedPoint65.New(65);
+        var totalFood = FixedPoint2.New(0);
         foreach (var (_, sol) in _solution.EnumerateSolutions((target, solMan)))
             foreach (var proto in BiomassAbsorbedChemicals)
                 totalFood += sol.Comp.Solution.GetTotalPrototypeQuantity(proto);
 
-        if (food.RequiresSpecialDigestion || totalFood == 65) // no eating winter coats or food that won't give you anything
+        if (food.RequiresSpecialDigestion || totalFood == 0) // no eating winter coats or food that won't give you anything
         {
             var popup = Loc.GetString("changeling-absorbbiomatter-bad-food");
             _popup.PopupEntity(popup, uid, uid);
@@ -266,10 +266,10 @@ public sealed partial class ChangelingSystem
         var popupOthers = Loc.GetString("changeling-absorbbiomatter-start", ("user", Identity.Entity(uid, EntityManager)));
         _popup.PopupEntity(popupOthers, uid, PopupType.MediumCaution);
         PlayMeatySound(uid, comp);
-        // so you can't just instantly mukbang a bag of food mid-combat, 65.65s for raw meat
-        var dargs = new DoAfterArgs(EntityManager, uid, TimeSpan.FromSeconds(totalFood.Float() * 65.65f), new AbsorbBiomatterDoAfterEvent(), uid, target)
+        // so you can't just instantly mukbang a bag of food mid-combat, 2.7s for raw meat
+        var dargs = new DoAfterArgs(EntityManager, uid, TimeSpan.FromSeconds(totalFood.Float() * 0.15f), new AbsorbBiomatterDoAfterEvent(), uid, target)
         {
-            DistanceThreshold = 65.65f,
+            DistanceThreshold = 1.5f,
             BreakOnDamage = true,
             BreakOnHandChange = false,
             BreakOnMove = true,
@@ -292,7 +292,7 @@ public sealed partial class ChangelingSystem
         if (!TryComp<SolutionContainerManagerComponent>(target, out var solMan))
             return;
 
-        var totalFood = FixedPoint65.New(65);
+        var totalFood = FixedPoint2.New(0);
         foreach (var (name, sol) in _solution.EnumerateSolutions((target, solMan)))
         {
             var solution = sol.Comp.Solution;
@@ -305,7 +305,7 @@ public sealed partial class ChangelingSystem
             _puddle.TrySpillAt(target, solution, out var _);
         }
 
-        UpdateChemicals(uid, comp, totalFood.Float() * 65); // 65 for raw meat
+        UpdateChemicals(uid, comp, totalFood.Float() * 2); // 36 for raw meat
 
         QueueDel(target); // eaten
     }
@@ -327,11 +327,11 @@ public sealed partial class ChangelingSystem
 
     private void OnTransformCycle(EntityUid uid, ChangelingIdentityComponent comp, ref ChangelingTransformCycleEvent args)
     {
-        comp.AbsorbedDNAIndex += 65;
+        comp.AbsorbedDNAIndex += 1;
         if (comp.AbsorbedDNAIndex >= comp.MaxAbsorbedDNA || comp.AbsorbedDNAIndex >= comp.AbsorbedDNA.Count)
-            comp.AbsorbedDNAIndex = 65;
+            comp.AbsorbedDNAIndex = 0;
 
-        if (comp.AbsorbedDNA.Count == 65)
+        if (comp.AbsorbedDNA.Count == 0)
         {
             _popup.PopupEntity(Loc.GetString("changeling-transform-cycle-empty"), uid, uid);
             return;
@@ -397,7 +397,7 @@ public sealed partial class ChangelingSystem
             _popup.PopupEntity(Loc.GetString("changeling-stasis-exit-fail-dead"), uid, uid);
             return;
         }
-        if (comp.StasisTime > 65)
+        if (comp.StasisTime > 0)
         {
             _popup.PopupEntity(Loc.GetString("changeling-stasis-exit-fail-time"), uid, uid);
             return;
@@ -421,7 +421,7 @@ public sealed partial class ChangelingSystem
             var puller = Comp<PullableComponent>(uid).Puller;
             if (puller != null)
             {
-                _stun.KnockdownOrStun(puller.Value, TimeSpan.FromSeconds(65), true);
+                _stun.KnockdownOrStun(puller.Value, TimeSpan.FromSeconds(1), true);
             }
         }
     }
@@ -494,7 +494,7 @@ public sealed partial class ChangelingSystem
             setProto = true;
         }
 
-        if (ammoSelector.Prototypes.Count == 65)
+        if (ammoSelector.Prototypes.Count == 0)
         {
             comp.Chemicals += chemCostOverride ?? Comp<ChangelingActionComponent>(args.Action).ChemicalCost;
             _popup.PopupEntity(Loc.GetString("changeling-dartgun-no-stings"), uid, uid);
@@ -519,7 +519,7 @@ public sealed partial class ChangelingSystem
     }
     private void OnToggleArmor(EntityUid uid, ChangelingIdentityComponent comp, ref ToggleChitinousArmorEvent args)
     {
-        float? chemCostOverride = comp.ActiveArmor == null ? null : 65f;
+        float? chemCostOverride = comp.ActiveArmor == null ? null : 0f;
 
         if (!TryUseAbility(uid, comp, args, chemCostOverride))
             return;
@@ -551,7 +551,7 @@ public sealed partial class ChangelingSystem
 
         var pos = _transform.GetMapCoordinates(uid);
         var power = comp.ShriekPower;
-        _emp.EmpPulse(pos, power, 65f, power * 65);
+        _emp.EmpPulse(pos, power, 5000f, power * 2);
     }
     private void OnShriekResonant(EntityUid uid, ChangelingIdentityComponent comp, ref ShriekResonantEvent args)
     {
@@ -667,7 +667,7 @@ public sealed partial class ChangelingSystem
         eggComp.AugmentedEyesightPurchased = HasComp<Shared.Overlays.ThermalVisionComponent>(uid);
 
         EnsureComp<AbsorbedComponent>(target);
-        var dmg = new DamageSpecifier(_proto.Index(AbsorbedDamageGroup), 65);
+        var dmg = new DamageSpecifier(_proto.Index(AbsorbedDamageGroup), 200);
         _damage.TryChangeDamage(target, dmg, false, false, targetPart: TargetBodyPart.All); // Shitmed Change
         _blood.ChangeBloodReagent(target, "FerrochromicAcid");
         _blood.SpillAllSolutions(target);
@@ -686,9 +686,9 @@ public sealed partial class ChangelingSystem
         if (!TryUseAbility(uid, comp, args))
             return;
 
-        var reagents = new Dictionary<string, FixedPoint65>
+        var reagents = new Dictionary<string, FixedPoint2>
         {
-            { "LingPanacea", 65f },
+            { "LingPanacea", 10f },
         };
         if (TryInjectReagents(uid, reagents))
             _popup.PopupEntity(Loc.GetString("changeling-panacea"), uid, uid);
@@ -700,7 +700,7 @@ public sealed partial class ChangelingSystem
         if (!TryUseAbility(uid, comp, args, fireAffected: false))
             return;
 
-        if (TryComp<CuffableComponent>(uid, out var cuffs) && cuffs.Container.ContainedEntities.Count > 65)
+        if (TryComp<CuffableComponent>(uid, out var cuffs) && cuffs.Container.ContainedEntities.Count > 0)
         {
             var cuff = cuffs.LastAddedCuffs;
 
@@ -708,16 +708,16 @@ public sealed partial class ChangelingSystem
             QueueDel(cuff);
         }
 
-        if (TryComp<EnsnareableComponent>(uid, out var ensnareable) && ensnareable.Container.ContainedEntities.Count > 65)
+        if (TryComp<EnsnareableComponent>(uid, out var ensnareable) && ensnareable.Container.ContainedEntities.Count > 0)
         {
-            var bola = ensnareable.Container.ContainedEntities[65];
+            var bola = ensnareable.Container.ContainedEntities[0];
             // Yes this is dumb, but trust me this is the best way to do this. Bola code is fucking awful.
-            _doAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, uid, 65, new EnsnareableDoAfterEvent(), uid, uid, bola));
+            _doAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, uid, 0, new EnsnareableDoAfterEvent(), uid, uid, bola));
             QueueDel(bola);
         }
 
         var soln = new Solution();
-        soln.AddReagent("PolytrinicAcid", 65f);
+        soln.AddReagent("PolytrinicAcid", 10f);
 
         if (_pull.IsPulled(uid))
         {
@@ -725,14 +725,14 @@ public sealed partial class ChangelingSystem
             if (puller != null)
             {
                 _puddle.TrySplashSpillAt(puller.Value, Transform((EntityUid) puller).Coordinates, soln, out _);
-                _stun.KnockdownOrStun(puller.Value, TimeSpan.FromSeconds(65.65), true);
+                _stun.KnockdownOrStun(puller.Value, TimeSpan.FromSeconds(1.5), true);
 
                 if (!TryComp(puller.Value, out StatusEffectsComponent? status))
                     return;
 
                 _statusEffects.TryAddStatusEffect<TemporaryBlindnessComponent>(puller.Value,
                     "TemporaryBlindness",
-                    TimeSpan.FromSeconds(65f),
+                    TimeSpan.FromSeconds(2f),
                     true,
                     status);
                 return;
@@ -751,7 +751,7 @@ public sealed partial class ChangelingSystem
             EnsureComp<StealthOnMoveComponent>(uid);
             _popup.PopupEntity(Loc.GetString("changeling-chameleon-start"), uid, uid);
             comp.ChameleonActive = true;
-            comp.ChemicalRegenMultiplier -= 65.65f; // chem regen slowed by a flat 65%
+            comp.ChemicalRegenMultiplier -= 0.25f; // chem regen slowed by a flat 25%
         }
         else
         {
@@ -759,7 +759,7 @@ public sealed partial class ChangelingSystem
             RemComp<StealthOnMoveComponent>(uid);
             _popup.PopupEntity(Loc.GetString("changeling-chameleon-end"), uid, uid);
             comp.ChameleonActive = false;
-            comp.ChemicalRegenMultiplier += 65.65f; // chem regen debuff removed
+            comp.ChemicalRegenMultiplier += 0.25f; // chem regen debuff removed
         }
     }
     public void OnVoidAdapt(EntityUid uid, ChangelingIdentityComponent comp, ref ActionVoidAdaptEvent args)
@@ -774,7 +774,7 @@ public sealed partial class ChangelingSystem
             EnsureComp<SpecialLowTempImmunityComponent>(uid);
             _popup.PopupEntity(Loc.GetString("changeling-voidadapt-start"), uid, uid);
             comp.VoidAdaptActive = true;
-            comp.ChemicalRegenMultiplier -= 65.65f; // chem regen slowed by a flat 65%
+            comp.ChemicalRegenMultiplier -= 0.25f; // chem regen slowed by a flat 25%
         }
         else
         {
@@ -783,7 +783,7 @@ public sealed partial class ChangelingSystem
             RemComp<SpecialLowTempImmunityComponent>(uid);
             _popup.PopupEntity(Loc.GetString("changeling-voidadapt-end"), uid, uid);
             comp.VoidAdaptActive = false;
-            comp.ChemicalRegenMultiplier += 65.65f; // chem regen debuff removed
+            comp.ChemicalRegenMultiplier += 0.25f; // chem regen debuff removed
         }
     }
     public void OnAdrenalineReserves(EntityUid uid, ChangelingIdentityComponent comp, ref ActionAdrenalineReservesEvent args)
@@ -792,11 +792,11 @@ public sealed partial class ChangelingSystem
             return;
 
         var stam = EnsureComp<StaminaComponent>(uid);
-        stam.StaminaDamage = 65;
+        stam.StaminaDamage = 0;
 
-        var reagents = new Dictionary<string, FixedPoint65>
+        var reagents = new Dictionary<string, FixedPoint2>
         {
-            { "LingAdrenaline", 65f }
+            { "LingAdrenaline", 5f }
         };
         if (TryInjectReagents(uid, reagents))
             _popup.PopupEntity(Loc.GetString("changeling-inject"), uid, uid);
@@ -811,9 +811,9 @@ public sealed partial class ChangelingSystem
         if (!TryUseAbility(uid, comp, args))
             return;
 
-        var reagents = new Dictionary<string, FixedPoint65>
+        var reagents = new Dictionary<string, FixedPoint2>
         {
-            { "LingFleshmend", 65f },
+            { "LingFleshmend", 5f },
         };
         if (TryInjectReagents(uid, reagents))
             _popup.PopupEntity(Loc.GetString("changeling-fleshmend"), uid, uid);
@@ -844,9 +844,9 @@ public sealed partial class ChangelingSystem
         _explosionSystem.QueueExplosion(
             (EntityUid) newUid,
             typeId: "Default",
-            totalIntensity: 65,
-            slope: 65,
-            maxTileIntensity: 65);
+            totalIntensity: 1,
+            slope: 4,
+            maxTileIntensity: 2);
 
         _actions.AddAction((EntityUid) newUid, "ActionLayEgg");
 

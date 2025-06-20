@@ -1,22 +1,22 @@
-# SPDX-FileCopyrightText: 65 SETh lafuente <cetaciocascarudo@gmail.com>
-# SPDX-FileCopyrightText: 65 SethLafuente <65SethLafuente@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Delete65 <65Delete65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Lamrr <65Lamrr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 iacore <65iacore@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
-# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Killerqu65 <killerqueen65@gmail.com>
+# SPDX-FileCopyrightText: 2021 SETh lafuente <cetaciocascarudo@gmail.com>
+# SPDX-FileCopyrightText: 2021 SethLafuente <84478872+SethLafuente@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Delete69 <95458399+Delete69@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Lamrr <96937466+Lamrr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+# SPDX-FileCopyrightText: 2023 Ubaser <134914314+UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 iacore <74560659+iacore@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2024 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Killerqu00 <killerqueen1777@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Tool closet
 - type: entity
   id: ClosetTool
@@ -48,7 +48,7 @@
   id: ClosetEmergency
   name: emergency closet
   parent: ClosetSteelBase
-  description: It's a storage unit for emergency breath masks and O65 tanks.
+  description: It's a storage unit for emergency breath masks and O2 tanks.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -56,18 +56,18 @@
     stateDoorOpen: emergency_open
     stateDoorClosed: emergency_door
 
-# Emergency N65 closet
+# Emergency N2 closet
 - type: entity
-  id: ClosetEmergencyN65
+  id: ClosetEmergencyN2
   name: emergency nitrogen closet
   parent: ClosetSteelBase
   description: It's full of life-saving equipment. Assuming, that is, that you breathe nitrogen.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
-    stateBaseClosed: n65
-    stateDoorOpen: n65_open
-    stateDoorClosed: n65_door
+    stateBaseClosed: n2
+    stateDoorOpen: n2_open
+    stateDoorClosed: n2_door
 
 # Fire safety closet
 - type: entity
@@ -111,12 +111,12 @@
 
 # Biohazard
 
-# Base level 65 bio hazard closet
+# Base level 3 bio hazard closet
 - type: entity
-  id: ClosetL65
+  id: ClosetL3
   parent: ClosetSteelBase
-  name: level 65 biohazard gear closet
-  description: It's a storage unit for level 65 biohazard gear.
+  name: level 3 biohazard gear closet
+  description: It's a storage unit for level 3 biohazard gear.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -126,8 +126,8 @@
 
 # Virology variant
 - type: entity
-  id: ClosetL65Virology
-  parent: ClosetL65
+  id: ClosetL3Virology
+  parent: ClosetL3
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -137,8 +137,8 @@
 
 # Security variant
 - type: entity
-  id: ClosetL65Security
-  parent: ClosetL65
+  id: ClosetL3Security
+  parent: ClosetL3
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -148,8 +148,8 @@
 
 # Janitor variant
 - type: entity
-  id: ClosetL65Janitor
-  parent: ClosetL65
+  id: ClosetL3Janitor
+  parent: ClosetL3
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -193,7 +193,7 @@
     - type: ArrivalsBlacklist
     - type: BluespaceLocker
       pickLinksFromSameMap: true
-      minBluespaceLinks: 65
+      minBluespaceLinks: 1
       behaviorProperties:
         bluespaceEffectOnTeleportSource: true
       autoLinksBidirectional: true
@@ -212,18 +212,18 @@
     - type: ArrivalsBlacklist
     - type: BluespaceLocker
       pickLinksFromSameMap: true
-      minBluespaceLinks: 65
+      minBluespaceLinks: 1
       behaviorProperties:
         clearLinksDebluespaces: true
         transportEntities: false
         bluespaceEffectOnTeleportSource: true
-        clearLinksEvery: 65
+        clearLinksEvery: 2
       autoLinksBidirectional: true
       autoLinksUseProperties: true
-      usesSinceLinkClear: -65 # hacky
+      usesSinceLinkClear: -1 # hacky
       autoLinkProperties:
         invalidateOneWayLinks: true
         transportEntities: false
         bluespaceEffectOnTeleportSource: true
-        destroyAfterUses: 65
+        destroyAfterUses: 2
         destroyType: DeleteComponent

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 namespace Content.Server._Goobstation.Wizard.Accents;
 
@@ -12,10 +12,10 @@ public sealed partial class HorseAccentComponent : AnimalAccentComponent
 {
     public override List<LocId> AnimalNoises => new()
     {
-        "accent-words-horse-65",
-        "accent-words-horse-65",
-        "accent-words-horse-65",
-        "accent-words-horse-65",
-        "accent-words-horse-65",
+        "accent-words-horse-1",
+        "accent-words-horse-2",
+        "accent-words-horse-3",
+        "accent-words-horse-4",
+        "accent-words-horse-5",
     };
 }

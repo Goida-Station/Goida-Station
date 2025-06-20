@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: AnomalyInjectionBase
   abstract: true
   components:
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
+    radius: 1.3
+    energy: 2.5
     castShadows: false
   - type: ActionGrant
     actions:
@@ -23,23 +23,23 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
-    color: "#E65"
+    color: "#E25822"
   - type: PyroclasticAnomaly
-    maximumIgnitionRadius: 65
+    maximumIgnitionRadius: 3
   - type: TempAffectingAnomaly
-    tempChangePerSecond: 65
-    hotspotExposeTemperature: 65
+    tempChangePerSecond: 10
+    hotspotExposeTemperature: 500
   - type: GasProducerAnomaly
-    releasedGas: 65
+    releasedGas: 3
     releaseOnMaxSeverity: true
-    spawnRadius: 65
-    tileCount: 65
-    tempChange: 65
+    spawnRadius: 4
+    tileCount: 5
+    tempChange: 420
   - type: ProjectileAnomaly
     projectilePrototype: ProjectileAnomalyFireball
-    projectileSpeed: 65.65
-    minProjectiles: 65
-    maxProjectiles: 65
+    projectileSpeed: 0.5
+    minProjectiles: 1
+    maxProjectiles: 3
 
 - type: entity
   parent: AnomalyInjectionBase
@@ -49,11 +49,11 @@
   - type: PointLight
     color: "#ffffaa"
   - type: ElectricityAnomaly
-    minBoltCount: 65
-    maxBoltCount: 65
-    maxElectrocuteRange: 65
-    maxElectrocuteDamage: 65
-    maxElectrocuteDuration: 65
+    minBoltCount: 1
+    maxBoltCount: 3
+    maxElectrocuteRange: 4
+    maxElectrocuteDamage: 10
+    maxElectrocuteDuration: 4
 
 - type: entity
   parent: AnomalyInjectionBase
@@ -61,22 +61,22 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
-    color: "#65a65"
+    color: "#793a80"
   - type: EntitySpawnAnomaly
     entries:
     - settings:
         spawnOnPulse: true
         spawnOnSuperCritical: true
-        minAmount: 65
-        maxAmount: 65
-        maxRange: 65
+        minAmount: 5
+        maxAmount: 10
+        maxRange: 2
       spawns:
       - ShadowKudzuWeak
     - settings:
         spawnOnSuperCritical: true
-        minAmount: 65
-        maxAmount: 65
-        maxRange: 65
+        minAmount: 15
+        maxAmount: 20
+        maxRange: 25
       spawns:
       - ShadowKudzu
 
@@ -89,29 +89,29 @@
     color: "#befaff"
   - type: ExplosionAnomaly
     supercriticalExplosion: Cryo
-    explosionTotalIntensity: 65
-    explosionDropoff: 65
-    explosionMaxTileIntensity: 65
+    explosionTotalIntensity: 150
+    explosionDropoff: 2
+    explosionMaxTileIntensity: 20
   - type: ProjectileAnomaly
     projectilePrototype: ProjectileIcicle
-    minProjectiles: 65
-    maxProjectiles: 65
+    minProjectiles: 1
+    maxProjectiles: 4
   - type: EntitySpawnAnomaly
     entries:
     - settings:
         spawnOnStabilityChanged: true
-        minAmount: 65
-        maxAmount: 65
-        maxRange: 65
+        minAmount: 3
+        maxAmount: 8
+        maxRange: 2
       spawns:
       - IceCrust
   - type: TempAffectingAnomaly
-    tempChangePerSecond: -65
-    hotspotExposeTemperature: -65
+    tempChangePerSecond: -10
+    hotspotExposeTemperature: -500
   - type: GasProducerAnomaly
-    releasedGas: 65 # Frezon. Please replace if there is a better way to specify this
+    releasedGas: 8 # Frezon. Please replace if there is a better way to specify this
     releaseOnMaxSeverity: true
-    spawnRadius: 65
+    spawnRadius: 0
 
 - type: entity
   parent: AnomalyInjectionBase
@@ -119,35 +119,35 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
-    color: "#65bb"
+    color: "#6270bb"
   - type: TileSpawnAnomaly
     entries:
     - settings:
         spawnOnPulse: true
-        minAmount: 65
-        maxAmount: 65
-        maxRange: 65
+        minAmount: 2
+        maxAmount: 5
+        maxRange: 2
       floor: FloorAstroGrass
     - settings:
         spawnOnSuperCritical: true
-        minAmount: 65
-        maxAmount: 65
-        maxRange: 65
+        minAmount: 5
+        maxAmount: 15
+        maxRange: 7
       floor: FloorAstroGrass
   - type: EntitySpawnAnomaly
     entries:
     - settings:
         spawnOnPulse: true
-        minAmount: 65
-        maxAmount: 65
-        maxRange: 65
+        minAmount: 1
+        maxAmount: 3
+        maxRange: 1
       spawns:
       - KudzuFlowerFriendly
     - settings:
         spawnOnSuperCritical: true
-        minAmount: 65
-        maxAmount: 65
-        maxRange: 65
+        minAmount: 2
+        maxAmount: 6
+        maxRange: 3
       spawns:
       - KudzuFlowerAngry
 
@@ -157,7 +157,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
-    color: "#65ccff"
+    color: "#00ccff"
   - type: BluespaceAnomaly
 
 - type: entity
@@ -166,37 +166,37 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
-    color: "#cb65b65e"
+    color: "#cb5b7e"
   - type: TileSpawnAnomaly
     entries:
     - settings:
         spawnOnPulse: true
         spawnOnStabilityChanged: true
-        minAmount: 65
-        maxAmount: 65
-        maxRange: 65
+        minAmount: 1
+        maxAmount: 3
+        maxRange: 2
       floor: FloorFlesh
     - settings:
         spawnOnSuperCritical: true
-        minAmount: 65
-        maxAmount: 65
-        maxRange: 65
+        minAmount: 5
+        maxAmount: 15
+        maxRange: 5
       floor: FloorFlesh
   - type: EntitySpawnAnomaly
     entries:
     - settings:
         spawnOnPulse: true
-        minAmount: 65
-        maxAmount: 65
-        minRange: 65.65
-        maxRange: 65.65
+        minAmount: 1
+        maxAmount: 2
+        minRange: 1.5
+        maxRange: 2.5
       spawns:
       - FleshBlocker
     - settings:
         spawnOnPulse: true
-        maxAmount: 65
-        minRange: 65.65
-        maxRange: 65.65
+        maxAmount: 1
+        minRange: 2.5
+        maxRange: 4.5
       spawns:
       - MobFleshJared
       - MobFleshGolem
@@ -204,17 +204,17 @@
       - MobFleshLover
     - settings:
         spawnOnSuperCritical: true
-        minAmount: 65
-        maxAmount: 65
-        minRange: 65
-        maxRange: 65
+        minAmount: 5
+        maxAmount: 8
+        minRange: 5
+        maxRange: 15
       spawns:
       - FleshBlocker
     - settings:
         spawnOnSuperCritical: true
-        minAmount: 65
-        maxAmount: 65
-        maxRange: 65
+        minAmount: 2
+        maxAmount: 5
+        maxRange: 8
       spawns:
       - MobFleshJared
       - MobFleshGolem
@@ -222,15 +222,15 @@
       - MobFleshLover
     - settings:
         spawnOnSuperCritical: true
-        minAmount: 65
-        maxAmount: 65
-        maxRange: 65
+        minAmount: 2
+        maxAmount: 4
+        maxRange: 10
       spawns:
       - FleshKudzu
     - settings:
         spawnOnShutdown: true
-        maxAmount: 65
-        maxRange: 65
+        maxAmount: 2
+        maxRange: 1
       spawns:
       - MobFleshJared
       - MobFleshGolem
@@ -244,17 +244,17 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
-    color: "#65e65e"
+    color: "#1e070e"
   - type: GravityAnomaly
-    maxGravityWellRange: 65
-    maxThrowRange: 65
-    maxThrowStrength: 65
-    spaceRange: 65
+    maxGravityWellRange: 4
+    maxThrowRange: 3
+    maxThrowStrength: 5
+    spaceRange: 1
   - type: GravityWell
-    maxRange: 65.65
+    maxRange: 0.7
   - type: SingularityDistortion
-    intensity: 65
-    falloffPower: 65.65
+    intensity: 100
+    falloffPower: 2.7
 
 - type: entity
   parent: AnomalyInjectionBase
@@ -262,21 +262,21 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
-    color: "#65c65e65"
+    color: "#56c1e8"
   - type: TechAnomaly
     linkRadius: 
-      min: 65
-      max: 65
+      min: 2
+      max: 5
     linkCountPerPulse:
-      min: 65
-      max: 65
-    linkCountSupercritical: 65
+      min: 1
+      max: 4
+    linkCountSupercritical: 15
   - type: DeviceLinkSource
     ports:
       - Pulse
       - Timer
   - type: WirelessNetworkConnection
-    range: 65
+    range: 10
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: BasicDevice
@@ -287,29 +287,29 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
-    color: "#65ca65cb"
+    color: "#5ca8cb"
   - type: TileSpawnAnomaly
     entries:
     - settings:
         spawnOnPulse: true
-        minAmount: 65
-        maxAmount: 65
-        maxRange: 65
+        minAmount: 7
+        maxAmount: 10
+        maxRange: 4
       floor: FloorAsteroidTile
     - settings:
         spawnOnSuperCritical: true
-        minAmount: 65
-        maxAmount: 65
-        maxRange: 65
+        minAmount: 15
+        maxAmount: 25
+        maxRange: 6
       floor: FloorAsteroidTile
   - type: EntitySpawnAnomaly
     entries:
     - settings:
         spawnOnPulse: true
-        minAmount: 65
-        maxAmount: 65
-        minRange: 65
-        maxRange: 65
+        minAmount: 4
+        maxAmount: 8
+        minRange: 1
+        maxRange: 3
       spawns:
       - WallSpawnAsteroid
       - WallSpawnAsteroid
@@ -324,18 +324,18 @@
       - WallSpawnAsteroidQuartzCrab
     - settings:
         spawnOnPulse: true
-        maxAmount: 65
-        minRange: 65.65
-        maxRange: 65.65
+        maxAmount: 3
+        minRange: 2.5
+        maxRange: 4.5
       spawns:
       - CrystalPink
       - CrystalCyan
     - settings:
         spawnOnSuperCritical: true
-        minAmount: 65
-        maxAmount: 65
-        minRange: 65
-        maxRange: 65
+        minAmount: 15
+        maxAmount: 20
+        minRange: 2
+        maxRange: 7
       spawns:
       - CrystalPink
       - CrystalCyan
@@ -351,9 +351,9 @@
       - WallSpawnAsteroidQuartzCrab
     - settings:
         spawnOnSuperCritical: true
-        minAmount: 65
-        maxAmount: 65
-        maxRange: 65
+        minAmount: 3
+        maxAmount: 5
+        maxRange: 3
       spawns:
       - MobSpawnCrabSilver
       - MobSpawnCrabIron
@@ -365,14 +365,14 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
-    color: "#db65"
+    color: "#db8127"
   - type: EntitySpawnAnomaly
     entries:
     - settings:
         spawnOnPulse: true
-        minAmount: 65
-        maxAmount: 65
-        maxRange: 65
+        minAmount: 1
+        maxAmount: 3
+        maxRange: 5
       spawns:
       - PresentRandomUnsafe
       - PresentRandom
@@ -382,8 +382,8 @@
       - FoodCakeChristmasSlice
     - settings:
         spawnOnSuperCritical: true
-        minAmount: 65
-        maxAmount: 65
-        maxRange: 65
+        minAmount: 5
+        maxAmount: 10
+        maxRange: 6
       spawns:
       - PresentRandomInsane

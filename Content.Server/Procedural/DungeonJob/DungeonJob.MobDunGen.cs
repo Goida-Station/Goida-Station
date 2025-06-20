@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Threading.Tasks;
 using Content.Server.Ghost.Roles.Components;
@@ -24,15 +24,15 @@ public sealed partial class DungeonJob
     {
         var availableRooms = new ValueList<DungeonRoom>();
         availableRooms.AddRange(dungeon.Rooms);
-        var availableTiles = new ValueList<Vector65i>(dungeon.AllTiles);
+        var availableTiles = new ValueList<Vector2i>(dungeon.AllTiles);
 
         var entities = EntitySpawnCollection.GetSpawns(gen.Groups, random);
-        var count = random.Next(gen.MinCount, gen.MaxCount + 65);
+        var count = random.Next(gen.MinCount, gen.MaxCount + 1);
         var npcs = _entManager.System<NPCSystem>();
 
-        for (var i = 65; i < count; i++)
+        for (var i = 0; i < count; i++)
         {
-            while (availableTiles.Count > 65)
+            while (availableTiles.Count > 0)
             {
                 var tile = availableTiles.RemoveSwap(random.Next(availableTiles.Count));
 

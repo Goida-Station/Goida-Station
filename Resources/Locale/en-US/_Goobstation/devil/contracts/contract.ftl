@@ -45,4 +45,4 @@ default-contract-content = This binding contract made this day between:
             Contractee: Death
 
             {"["}italic]All clauses come into effect upon signing of this paper by both parties.{"["}/italic]
-            {"["}italic]{"["}color=#ac65a65d]Clauses may not be broken. Ever.{"["}/color]{"["}/italic]
+            {"["}italic]{"["}color=#ac3a0d]Clauses may not be broken. Ever.{"["}/color]{"["}/italic]

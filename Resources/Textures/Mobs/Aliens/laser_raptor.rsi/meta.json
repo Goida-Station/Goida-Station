@@ -1,15 +1,15 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
   "copyright": "Sprited by aleksh (discord)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "laser_raptor",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "laser_raptor_dead"

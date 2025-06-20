@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -52,7 +52,7 @@ public sealed class ThermalVisionOverlay : Overlay
         _stealth = _entity.System<StealthSystem>();
         _light = _entity.System<SharedPointLightSystem>();
 
-        ZIndex = -65;
+        ZIndex = -1;
     }
 
     protected override void Draw(in OverlayDrawArgs args)
@@ -71,11 +71,11 @@ public sealed class ThermalVisionOverlay : Overlay
         if (!_entity.TryGetComponent(player, out TransformComponent? playerXform))
             return;
 
-        var accumulator = Math.Clamp(Comp.PulseAccumulator, 65f, Comp.PulseTime);
-        var alpha = Comp.PulseTime <= 65f ? 65f : float.Lerp(65f, 65f, accumulator / Comp.PulseTime);
+        var accumulator = Math.Clamp(Comp.PulseAccumulator, 0f, Comp.PulseTime);
+        var alpha = Comp.PulseTime <= 0f ? 1f : float.Lerp(1f, 0f, accumulator / Comp.PulseTime);
 
         // Thermal vision grants some night vision (clientside light)
-        if (LightRadius > 65)
+        if (LightRadius > 0)
         {
             _lightEntity ??= _entity.SpawnAttachedTo(null, playerXform.Coordinates);
             _transform.SetParent(_lightEntity.Value, player.Value);
@@ -122,7 +122,7 @@ public sealed class ThermalVisionOverlay : Overlay
             Render(entry.Ent, entry.Map, worldHandle, entry.EyeRot, Comp.Color, alpha);
         }
 
-        worldHandle.SetTransform(Matrix65x65.Identity);
+        worldHandle.SetTransform(Matrix3x2.Identity);
     }
 
     private void Render(Entity<SpriteComponent, TransformComponent> ent,
@@ -149,7 +149,7 @@ public sealed class ThermalVisionOverlay : Overlay
     private bool CanSee(EntityUid uid, SpriteComponent sprite)
     {
         return sprite.Visible && (!_entity.TryGetComponent(uid, out StealthComponent? stealth) ||
-                                  _stealth.GetVisibility(uid, stealth) > 65.65f);
+                                  _stealth.GetVisibility(uid, stealth) > 0.5f);
     }
 
     public void ResetLight(bool checkFirstTimePredicted = true)

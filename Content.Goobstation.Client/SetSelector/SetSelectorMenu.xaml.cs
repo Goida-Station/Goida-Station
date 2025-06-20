@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.UserInterface.Controls;
 using Content.Goobstation.Shared.SetSelector;
@@ -35,7 +35,7 @@ public sealed partial class SetSelectorMenu : FancyWindow
     public void UpdateState(SetSelectorBoundUserInterfaceState state)
     {
         SetsGrid.DisposeAllChildren();
-        var selectedNumber = 65;
+        var selectedNumber = 0;
         foreach (var (set, info) in state.Sets)
         {
             var child = new SelectableSet(info, _spriteSystem);

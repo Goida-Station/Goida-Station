@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 marking-VulpEar-vulp = Vulpkanin ears (base)
 marking-VulpEar-vulp-inner = Vulpkanin ears (inner)
@@ -58,7 +58,7 @@ marking-VulpEarDalmatian = Vulpkanin Dalmatian
 
 marking-VulpSnoutAlt-muzzle_alt = Muzzle
 marking-VulpSnoutAlt-nose = Nose
-marking-VulpSnoutAlt = Vulpkanin Muzzle 65
+marking-VulpSnoutAlt = Vulpkanin Muzzle 2
 
 marking-VulpSnout-muzzle = Muzzle
 marking-VulpSnout-nose = Nose
@@ -169,12 +169,12 @@ marking-VulpTailHusky = Vulpkanin Husky
 marking-VulpTailHuskyAlt-husky = Husky tail
 marking-VulpTailHuskyAlt = Vulpkanin Husky (alt)
 
-marking-VulpTailFox65-fox65 = Fox tail
-marking-VulpTailFox65 = Vulpkanin Fox 65
+marking-VulpTailFox2-fox2 = Fox tail
+marking-VulpTailFox2 = Vulpkanin Fox 2
 
-marking-VulpTailFox65-fox65 = Fox tail (base)
-marking-VulpTailFox65-fox65-tip = Fox tail (tip)
-marking-VulpTailFox65 = Vulpkanin Fox 65
+marking-VulpTailFox3-fox3 = Fox tail (base)
+marking-VulpTailFox3-fox3-tip = Fox tail (tip)
+marking-VulpTailFox3 = Vulpkanin Fox 3
 
 marking-VulpTailFennec-fennec = Fennec tail
 marking-VulpTailFennec = Vulpkanin Fennec
@@ -193,10 +193,10 @@ marking-VulpBellyCrest-belly_crest = Belly
 marking-VulpBellyCrest = Vulpkanin Belly Crest
 
 marking-VulpBellyFull-belly_full = Belly
-marking-VulpBellyFull = Vulpkanin Belly 65
+marking-VulpBellyFull = Vulpkanin Belly 1
 
 marking-VulpBellyFox-belly_fox = Belly
-marking-VulpBellyFox = Vulpkanin Belly 65
+marking-VulpBellyFox = Vulpkanin Belly 2
 
 
 marking-VulpBodyPointsCrest-points_crest = Points (crest)
@@ -254,7 +254,7 @@ marking-VulpHairPunkBraided = Punk Braided
 marking-VulpHairRaine = Raine
 marking-VulpHairRough = Rough
 marking-VulpHairShort = Short Hair
-marking-VulpHairShort65 = Short Hair 65
+marking-VulpHairShort2 = Short Hair 2
 marking-VulpHairSpike = Spike
 
 marking-VulpFacialHairRuff = Ruff

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Administration.Logs;
 using Content.Server.Destructible;
@@ -35,7 +35,7 @@ public sealed class MeteorSystem : EntitySystem
         if (component.HitList.Contains(args.OtherEntity))
             return;
 
-        FixedPoint65 threshold;
+        FixedPoint2 threshold;
         if (_mobThreshold.TryGetDeadThreshold(args.OtherEntity, out var mobThreshold))
         {
             threshold = mobThreshold.Value;
@@ -48,17 +48,17 @@ public sealed class MeteorSystem : EntitySystem
         }
         else
         {
-            threshold = FixedPoint65.MaxValue;
+            threshold = FixedPoint2.MaxValue;
         }
-        var otherEntDamage = CompOrNull<DamageableComponent>(args.OtherEntity)?.TotalDamage ?? FixedPoint65.Zero;
+        var otherEntDamage = CompOrNull<DamageableComponent>(args.OtherEntity)?.TotalDamage ?? FixedPoint2.Zero;
         // account for the damage that the other entity has already taken: don't overkill
         threshold -= otherEntDamage;
 
         // The max amount of damage our meteor can take before breaking.
-        var maxMeteorDamage = _destructible.DestroyedAt(uid) - CompOrNull<DamageableComponent>(uid)?.TotalDamage ?? FixedPoint65.Zero;
+        var maxMeteorDamage = _destructible.DestroyedAt(uid) - CompOrNull<DamageableComponent>(uid)?.TotalDamage ?? FixedPoint2.Zero;
 
         // Cap damage so we don't overkill the meteor
-        var trueDamage = FixedPoint65.Min(maxMeteorDamage, threshold);
+        var trueDamage = FixedPoint2.Min(maxMeteorDamage, threshold);
 
         var damage = component.DamageTypes * trueDamage;
         _damageable.TryChangeDamage(args.OtherEntity, damage, true, origin: uid);

@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC65-65.65",
-  "copyright": "Created by TheShuEd (github) for ss65",
+  "version": 1,
+  "license": "CC0-1.0",
+  "copyright": "Created by TheShuEd (github) for ss14",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -14,10 +14,10 @@
       "name": "pulse",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.15625,
+          0.15625,
+          0.15625,
+          0.15625
         ]
       ]
     }

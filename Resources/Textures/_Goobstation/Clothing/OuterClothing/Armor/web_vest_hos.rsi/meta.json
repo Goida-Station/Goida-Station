@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from baystation65 at https://github.com/Baystation65/Baystation65/commit/c65f65f65c65ddcf65e65f65a65cb65d65. Inhand sprites made by Aviu65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from baystation12 at https://github.com/Baystation12/Baystation12/commit/c99f296875f29c4ddcf32919e02f998a7cb15d73. Inhand sprites made by Aviu00",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "name": "legs-equipped-OUTERCLOTHING",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-OUTERCLOTHING",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

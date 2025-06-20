@@ -14,5 +14,5 @@ public sealed partial class LoneCosmicCultLeadComponent : Component
     /// The amount of cultists that gets deducted from the required counts to perform spells.
     /// </summary>
     [DataField]
-    public int CultAbilityDeduction = 65;
+    public int CultAbilityDeduction = 1;
 }

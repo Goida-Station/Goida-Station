@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -56,7 +56,7 @@ namespace Content.Server.Database.Migrations.Postgres
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_server_role_ban", x => x.server_role_ban_id);
-                    table.CheckConstraint("CK_server_role_ban_AddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= address");
+                    table.CheckConstraint("CK_server_role_ban_AddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= address");
                     table.ForeignKey(
                         name: "FK_server_role_ban_server_role_unban__unban_id",
                         column: x => x.unban_id,

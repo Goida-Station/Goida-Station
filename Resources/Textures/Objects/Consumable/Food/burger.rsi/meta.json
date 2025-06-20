@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation and modified by Swept and potato65x at https://github.com/tgstation/tgstation/commit/65d65cc65c65fb65ce65bf65a65f65bdaa, ian.png created by EmoGarbage, mothroach.png created by TurboTracker",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation and modified by Swept and potato1234x at https://github.com/tgstation/tgstation/commit/40d75cc340c63582fb66ce15bf75a36115f6bdaa, ian.png created by EmoGarbage, mothroach.png created by TurboTracker",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -59,10 +59,10 @@
       "name": "crazy",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
@@ -79,8 +79,8 @@
       "name": "empowered",
       "delays": [
         [
-          65.65,
-          65.65
+          1.5,
+          0.1
         ]
       ]
     },
@@ -94,24 +94,24 @@
       "name": "ghost",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.11,
+          0.08,
+          0.06,
+          0.05,
+          0.04,
+          0.04,
+          0.07,
+          0.1,
+          0.13,
+          0.11,
+          0.09,
+          0.07,
+          0.05,
+          0.06,
+          0.07,
+          0.08,
+          0.1,
+          0.12
         ]
       ]
     },
@@ -140,24 +140,24 @@
       "name": "ro",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.4,
+          0.3,
+          0.1,
+          0.3,
+          0.1,
+          0.3,
+          0.4,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          1.1
         ]
       ]
     },
@@ -184,11 +184,11 @@
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

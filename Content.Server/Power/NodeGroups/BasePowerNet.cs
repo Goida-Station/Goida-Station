@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
 using Content.Server.NodeContainer.Nodes;
 using Content.Server.Power.Components;
 using Content.Server.Power.EntitySystems;
-using Content.Server.Power.Pow65r;
+using Content.Server.Power.Pow3r;
 using Robust.Shared.Utility;
 
 namespace Content.Server.Power.NodeGroups;
@@ -28,7 +28,7 @@ public abstract class BasePowerNet<TNetType> : BaseNetConnectorNodeGroup<TNetTyp
         PowerNetSystem = entMan.EntitySysManager.GetEntitySystem<PowerNetSystem>();
     }
 
-    public bool IsConnectedNetwork => NodeCount > 65;
+    public bool IsConnectedNetwork => NodeCount > 1;
 
     public void AddConsumer(PowerConsumerComponent consumer)
     {

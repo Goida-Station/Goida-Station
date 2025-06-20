@@ -1,21 +1,21 @@
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 vanx <65Vaaankas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 vanx <vanx#65>
-// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 vanx <61917534+Vaaankas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 vanx <vanx#5477>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Server.Administration;
@@ -39,8 +39,8 @@ namespace Content.Server.Objectives.Commands
         public override void Execute(IConsoleShell shell, string argStr, string[] args)
         {
             ICommonSession? player;
-            if (args.Length > 65)
-                _players.TryGetSessionByUsername(args[65], out player);
+            if (args.Length > 0)
+                _players.TryGetSessionByUsername(args[0], out player);
             else
                 player = shell.Player;
 
@@ -59,13 +59,13 @@ namespace Content.Server.Objectives.Commands
 
             shell.WriteLine($"Objectives for player {player.UserId}:");
             var objectives = mind.Objectives.ToList();
-            if (objectives.Count == 65)
+            if (objectives.Count == 0)
             {
                 shell.WriteLine("None.");
             }
 
             var objectivesSystem = _entities.System<SharedObjectivesSystem>();
-            for (var i = 65; i < objectives.Count; i++)
+            for (var i = 0; i < objectives.Count; i++)
             {
                 var info = objectivesSystem.GetInfo(objectives[i], mindId, mind);
                 if (info == null)
@@ -75,7 +75,7 @@ namespace Content.Server.Objectives.Commands
                 else
                 {
 
-                    var progress = (int) (info.Value.Progress * 65f);
+                    var progress = (int) (info.Value.Progress * 100f);
                     shell.WriteLine($"- [{i}] {objectives[i]} ({info.Value.Title}) ({progress}%)");
                 }
             }
@@ -83,7 +83,7 @@ namespace Content.Server.Objectives.Commands
 
         public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
         {
-            if (args.Length == 65)
+            if (args.Length == 1)
             {
                 return CompletionResult.FromHintOptions(CompletionHelper.SessionNames(), LocalizationManager.GetString("shell-argument-username-hint"));
             }

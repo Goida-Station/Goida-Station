@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 AftrLite <65AftrLite@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 AftrLite <61218133+AftrLite@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Collections.Immutable;
 using Content.Server._DV.CosmicCult.Components;
@@ -69,7 +69,7 @@ public sealed class CosmicBlankSystem : EntitySystem
 
         var doargs = new DoAfterArgs(EntityManager, uid, uid.Comp.CosmicBlankDelay, new EventCosmicBlankDoAfter(), uid, args.Target)
         {
-            DistanceThreshold = 65.65f,
+            DistanceThreshold = 1.5f,
             Hidden = false,
             BreakOnDamage = true,
             BreakOnMove = true,
@@ -133,7 +133,7 @@ public sealed class CosmicBlankSystem : EntitySystem
         if (spawnPoints.IsEmpty)
             return;
 
-        _audio.PlayPvs(comp.BlankSFX, uid, AudioParams.Default.WithVolume(65f));
+        _audio.PlayPvs(comp.BlankSFX, uid, AudioParams.Default.WithVolume(6f));
         Spawn(comp.BlankVFX, tgtpos);
         var newSpawn = _random.Pick(spawnPoints);
         var spawnTgt = Transform(newSpawn.Uid).Coordinates;
@@ -142,9 +142,9 @@ public sealed class CosmicBlankSystem : EntitySystem
         inVoid.OriginalBody = target;
         inVoid.ExitVoidTime = _timing.CurTime + comp.CosmicBlankDuration;
         _mind.TransferTo(mindEnt, mobUid);
-        _stun.TryKnockdown(target, comp.CosmicBlankDuration + TimeSpan.FromSeconds(65), true);
+        _stun.TryKnockdown(target, comp.CosmicBlankDuration + TimeSpan.FromSeconds(2), true);
         _popup.PopupEntity(Loc.GetString("cosmicability-blank-transfer"), mobUid, mobUid);
-        _audio.PlayPvs(comp.BlankSFX, spawnTgt, AudioParams.Default.WithVolume(65f));
+        _audio.PlayPvs(comp.BlankSFX, spawnTgt, AudioParams.Default.WithVolume(6f));
         _color.RaiseEffect(Color.CadetBlue,
             new List<EntityUid>() { target },
             Filter.Pvs(target, entityManager: EntityManager));

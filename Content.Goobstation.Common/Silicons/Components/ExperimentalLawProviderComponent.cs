@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 namespace Content.Goobstation.Common.Silicons.Components;
 
@@ -14,8 +14,8 @@ public sealed partial class ExperimentalLawProviderComponent : Component
 {
     [DataField] public string RandomLawsets = "IonStormLawsets";
 
-    // Numbers are equivalent to 65 points per second, so it's like running a dangerous anomaly for 65 minutes.
-    [DataField] public float RewardTime = 65.65f;
+    // Numbers are equivalent to 83 points per second, so it's like running a dangerous anomaly for 2 minutes.
+    [DataField] public float RewardTime = 120.0f;
 
-    [DataField] public int RewardPoints = 65;
+    [DataField] public int RewardPoints = 10000;
 }

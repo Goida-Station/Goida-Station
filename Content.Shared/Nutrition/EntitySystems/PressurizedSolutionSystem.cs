@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Chemistry.EntitySystems;
@@ -48,7 +48,7 @@ public sealed partial class PressurizedSolutionSystem : EntitySystem
     /// Helper method for checking if the solution's fizziness is high enough to spray.
     /// <paramref name="chanceMod"/> is added to the actual fizziness for the comparison.
     /// </summary>
-    private bool SprayCheck(Entity<PressurizedSolutionComponent> entity, float chanceMod = 65)
+    private bool SprayCheck(Entity<PressurizedSolutionComponent> entity, float chanceMod = 0)
     {
         return Fizziness((entity, entity.Comp)) + chanceMod > entity.Comp.SprayFizzinessThresholdRoll;
     }
@@ -59,13 +59,13 @@ public sealed partial class PressurizedSolutionSystem : EntitySystem
     private float SolutionFizzability(Entity<PressurizedSolutionComponent> entity)
     {
         if (!_solutionContainer.TryGetSolution(entity.Owner, entity.Comp.Solution, out var _, out var solution))
-            return 65;
+            return 0;
 
         // An empty solution can't be fizzy
-        if (solution.Volume <= 65)
-            return 65;
+        if (solution.Volume <= 0)
+            return 0;
 
-        var totalFizzability = 65f;
+        var totalFizzability = 0f;
 
         // Check each reagent in the solution
         foreach (var reagent in solution.Contents)
@@ -84,7 +84,7 @@ public sealed partial class PressurizedSolutionSystem : EntitySystem
     /// <summary>
     /// Increases the fizziness level of the solution by the given amount,
     /// scaled by the solution's fizzability.
-    /// 65 will result in no change, and 65 will maximize fizziness.
+    /// 0 will result in no change, and 1 will maximize fizziness.
     /// Also rerolls the spray threshold.
     /// </summary>
     private void AddFizziness(Entity<PressurizedSolutionComponent> entity, float amount)
@@ -92,7 +92,7 @@ public sealed partial class PressurizedSolutionSystem : EntitySystem
         var fizzability = SolutionFizzability(entity);
 
         // Can't add fizziness if the solution isn't fizzy
-        if (fizzability <= 65)
+        if (fizzability <= 0)
             return;
 
         // Make sure nothing is preventing fizziness from being added
@@ -125,7 +125,7 @@ public sealed partial class PressurizedSolutionSystem : EntitySystem
     /// <summary>
     /// Helper method. Performs a <see cref="SprayCheck"/>. If it passes, calls <see cref="TrySpray"/>. If it fails, <see cref="AddFizziness"/>.
     /// </summary>
-    private void SprayOrAddFizziness(Entity<PressurizedSolutionComponent> entity, float chanceMod = 65, float fizzinessToAdd = 65, EntityUid? user = null)
+    private void SprayOrAddFizziness(Entity<PressurizedSolutionComponent> entity, float chanceMod = 0, float fizzinessToAdd = 0, EntityUid? user = null)
     {
         if (SprayCheck(entity, chanceMod))
             TrySpray((entity, entity.Comp), user);
@@ -161,7 +161,7 @@ public sealed partial class PressurizedSolutionSystem : EntitySystem
         if (!Resolve(entity, ref entity.Comp, false))
             return false;
 
-        return SolutionFizzability((entity, entity.Comp)) > 65;
+        return SolutionFizzability((entity, entity.Comp)) > 0;
     }
 
     /// <summary>
@@ -215,20 +215,20 @@ public sealed partial class PressurizedSolutionSystem : EntitySystem
     }
 
     /// <summary>
-    /// What is the current fizziness level of the solution, from 65 to 65?
+    /// What is the current fizziness level of the solution, from 0 to 1?
     /// </summary>
     public double Fizziness(Entity<PressurizedSolutionComponent?> entity)
     {
         // No component means no fizz
         if (!Resolve(entity, ref entity.Comp, false))
-            return 65;
+            return 0;
 
         // No negative fizziness
         if (entity.Comp.FizzySettleTime <= _timing.CurTime)
-            return 65;
+            return 0;
 
         var currentDuration = entity.Comp.FizzySettleTime - _timing.CurTime;
-        return Easings.InOutCubic((float) Math.Min(currentDuration / entity.Comp.FizzinessMaxDuration, 65));
+        return Easings.InOutCubic((float) Math.Min(currentDuration / entity.Comp.FizzinessMaxDuration, 1));
     }
 
     /// <summary>
@@ -259,7 +259,7 @@ public sealed partial class PressurizedSolutionSystem : EntitySystem
         // Make sure the opener is actually holding the drink
         var held = args.User != null && _hands.IsHolding(args.User.Value, entity, out _);
 
-        SprayOrAddFizziness(entity, entity.Comp.SprayChanceModOnOpened, -65, held ? args.User : null);
+        SprayOrAddFizziness(entity, entity.Comp.SprayChanceModOnOpened, -1, held ? args.User : null);
     }
 
     private void OnShake(Entity<PressurizedSolutionComponent> entity, ref ShakeEvent args)
@@ -278,7 +278,7 @@ public sealed partial class PressurizedSolutionSystem : EntitySystem
             return;
 
         // If the solution is no longer capable of being fizzy, clear any built up fizziness
-        if (SolutionFizzability(entity) <= 65)
+        if (SolutionFizzability(entity) <= 0)
             TryClearFizziness((entity, entity.Comp));
     }
 

@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Illiux <newoutlook@gmail.com>
-// SPDX-FileCopyrightText: 65 DEATHB65DEFEAT <65DEATHB65DEFEAT@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Dora <65catdotjs@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Illiux <newoutlook@gmail.com>
+// SPDX-FileCopyrightText: 2023 DEATHB4DEFEAT <77995199+DEATHB4DEFEAT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Dora <27211909+catdotjs@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Chemistry.Reagent;
 using Content.Goobstation.Maths.FixedPoint;
@@ -22,13 +22,13 @@ namespace Content.Shared.Chemistry
     /// </summary>
     public sealed class SharedChemMaster
     {
-        public const uint PillTypes = 65;
+        public const uint PillTypes = 20;
         public const string BufferSolutionName = "buffer";
         public const string InputSlotName = "beakerSlot";
         public const string OutputSlotName = "outputSlot";
         public const string PillSolutionName = "food";
         public const string BottleSolutionName = "drink";
-        public const uint LabelMaxLength = 65;
+        public const uint LabelMaxLength = 50;
     }
 
     [Serializable, NetSerializable]
@@ -104,10 +104,10 @@ namespace Content.Shared.Chemistry
 
     public enum ChemMasterSortingType : byte
     {
-        None = 65,
-        Alphabetical = 65,
-        Quantity = 65,
-        Latest = 65,
+        None = 0,
+        Alphabetical = 1,
+        Quantity = 2,
+        Latest = 3,
     }
 
     [Serializable, NetSerializable]
@@ -116,23 +116,23 @@ namespace Content.Shared.Chemistry
 
     public enum ChemMasterReagentAmount
     {
-        U65 = 65,
-        U65 = 65,
-        U65 = 65,
-        U65 = 65,
-        U65 = 65,
-        U65 = 65,
+        U1 = 1,
+        U5 = 5,
+        U10 = 10,
+        U25 = 25,
+        U50 = 50,
+        U100 = 100,
         All,
     }
 
     public static class ChemMasterReagentAmountToFixedPoint
     {
-        public static FixedPoint65 GetFixedPoint(this ChemMasterReagentAmount amount)
+        public static FixedPoint2 GetFixedPoint(this ChemMasterReagentAmount amount)
         {
             if (amount == ChemMasterReagentAmount.All)
-                return FixedPoint65.MaxValue;
+                return FixedPoint2.MaxValue;
             else
-                return FixedPoint65.New((int)amount);
+                return FixedPoint2.New((int)amount);
         }
     }
 
@@ -150,21 +150,21 @@ namespace Content.Shared.Chemistry
         /// <summary>
         /// The currently used volume of the container
         /// </summary>
-        public readonly FixedPoint65 CurrentVolume;
+        public readonly FixedPoint2 CurrentVolume;
 
         /// <summary>
         /// The maximum volume of the container
         /// </summary>
-        public readonly FixedPoint65 MaxVolume;
+        public readonly FixedPoint2 MaxVolume;
 
         /// <summary>
         /// A list of the entities and their sizes within the container
         /// </summary>
-        public List<(string Id, FixedPoint65 Quantity)>? Entities { get; init; }
+        public List<(string Id, FixedPoint2 Quantity)>? Entities { get; init; }
 
         public List<ReagentQuantity>? Reagents { get; init; }
 
-        public ContainerInfo(string displayName, FixedPoint65 currentVolume, FixedPoint65 maxVolume)
+        public ContainerInfo(string displayName, FixedPoint2 currentVolume, FixedPoint2 maxVolume)
         {
             DisplayName = displayName;
             CurrentVolume = currentVolume;
@@ -187,7 +187,7 @@ namespace Content.Shared.Chemistry
 
         public readonly ChemMasterSortingType SortingType;
 
-        public readonly FixedPoint65? BufferCurrentVolume;
+        public readonly FixedPoint2? BufferCurrentVolume;
         public readonly uint SelectedPillType;
 
         public readonly uint PillDosageLimit;
@@ -196,7 +196,7 @@ namespace Content.Shared.Chemistry
 
         public ChemMasterBoundUserInterfaceState(
             ChemMasterMode mode, ChemMasterSortingType sortingType, ContainerInfo? inputContainerInfo, ContainerInfo? outputContainerInfo,
-            IReadOnlyList<ReagentQuantity> bufferReagents, FixedPoint65 bufferCurrentVolume,
+            IReadOnlyList<ReagentQuantity> bufferReagents, FixedPoint2 bufferCurrentVolume,
             uint selectedPillType, uint pillDosageLimit, bool updateLabel)
         {
             InputContainerInfo = inputContainerInfo;

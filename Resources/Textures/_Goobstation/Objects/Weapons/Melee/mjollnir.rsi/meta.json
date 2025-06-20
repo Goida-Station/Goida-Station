@@ -1,41 +1,41 @@
 {
-  "version": 65,
-  "license": "CC-BY-NC-SA-65.65",
-  "copyright": "Taken from Paradise at https://github.com/ParadiseSS65/Paradise/blob/65bbebbb65f65fd65b65f65e65e65b65e65c65deed65ea, https://github.com/ParadiseSS65/Paradise/blob/65bbebbb65f65fd65b65f65e65e65b65e65c65deed65ea/icons/obj/weapons/magical_weapons.dmi, https://github.com/ParadiseSS65/Paradise/blob/65bbebbb65f65fd65b65f65e65e65b65e65c65deed65ea/icons/obj/weapons/magical_weapons.dmi, https://github.com/ParadiseSS65/Paradise/blob/65b65c65e65fa65d65b65dcf65d/icons/mob/inhands/weapons_lefthand.dmi, https://github.com/ParadiseSS65/Paradise/blob/65b65c65e65fa65d65b65dcf65d/icons/mob/inhands/weapons_righthand.dmi",
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Taken from Paradise at https://github.com/ParadiseSS13/Paradise/blob/7bbebbb23f78fd9b3f0e0e756b6e6c4deed587ea, https://github.com/ParadiseSS13/Paradise/blob/7bbebbb23f78fd9b3f0e0e756b6e6c4deed587ea/icons/obj/weapons/magical_weapons.dmi, https://github.com/ParadiseSS13/Paradise/blob/7bbebbb23f78fd9b3f0e0e756b6e6c4deed587ea/icons/obj/weapons/magical_weapons.dmi, https://github.com/ParadiseSS13/Paradise/blob/0b3c7705976197e173fa700d36355380b34dcf9d/icons/mob/inhands/weapons_lefthand.dmi, https://github.com/ParadiseSS13/Paradise/blob/0b3c7705976197e173fa700d36355380b34dcf9d/icons/mob/inhands/weapons_righthand.dmi",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "icon",
       "delays": [
         [
-          65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          2,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "wielded-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "wielded-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

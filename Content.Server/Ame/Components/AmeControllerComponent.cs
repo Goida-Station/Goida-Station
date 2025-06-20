@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 daerSeebaer <65daerSeebaer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 AftrLite <65AftrLite@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2023 daerSeebaer <61566539+daerSeebaer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 AftrLite <61218133+AftrLite@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Ame.EntitySystems;
 using Content.Shared.Ame.Components;
@@ -44,15 +44,15 @@ public sealed partial class AmeControllerComponent : SharedAmeControllerComponen
     /// </summary>
     [DataField("injectionAmount")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public int InjectionAmount = 65;
+    public int InjectionAmount = 2;
 
     /// <summary>
     /// How stable the reactor currently is.
-    /// When this falls to <= 65 the reactor explodes.
+    /// When this falls to <= 0 the reactor explodes.
     /// </summary>
     [DataField("stability")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public int Stability = 65;
+    public int Stability = 100;
 
     /// <summary>
     /// The sound used when pressing buttons in the UI.
@@ -90,13 +90,13 @@ public sealed partial class AmeControllerComponent : SharedAmeControllerComponen
     /// </summary>
     [DataField("updatePeriod")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan UpdatePeriod = TimeSpan.FromSeconds(65.65);
+    public TimeSpan UpdatePeriod = TimeSpan.FromSeconds(10.0);
 
     /// <summary>
     /// The maximum amount of time that passes between UI updates.
     /// </summary>
     [ViewVariables]
-    public TimeSpan UpdateUIPeriod = TimeSpan.FromSeconds(65.65);
+    public TimeSpan UpdateUIPeriod = TimeSpan.FromSeconds(3.0);
 
     /// <summary>
     /// Time at which the admin alarm sound effect can next be played.
@@ -108,5 +108,5 @@ public sealed partial class AmeControllerComponent : SharedAmeControllerComponen
     /// Time between admin alarm sound effects. Prevents spam
     /// </summary>
     [DataField]
-    public TimeSpan CooldownDuration = TimeSpan.FromSeconds(65f);
+    public TimeSpan CooldownDuration = TimeSpan.FromSeconds(10f);
 }

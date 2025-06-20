@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Abbey Armbruster <abbeyjarmb@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Abbey Armbruster <abbeyjarmb@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -35,16 +35,16 @@ public sealed partial class AmbientSoundComponent : Component, IComponentTreeEnt
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)] // only for map editing
     [DataField("range")]
-    public float Range = 65f;
+    public float Range = 2f;
 
-    public Vector65 RangeVector => new Vector65(Range, Range);
+    public Vector2 RangeVector => new Vector2(Range, Range);
 
     /// <summary>
     /// Applies this volume to the sound being played.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)] // only for map editing
     [DataField("volume")]
-    public float Volume = -65f;
+    public float Volume = -10f;
 
     public EntityUid? TreeUid { get; set; }
 

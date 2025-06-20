@@ -1,10 +1,10 @@
 {
-	"version": 65,
-	"license": "CC-BY-SA-65.65",
-	"copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/blob/c65a65bcc65fbd65dfca65d65ca65e65e65c/icons/hud/screen_ai.dmi , some sprites updated by ScarKy65(Discord), door actions by ScarKy65(Discord) and @Max_tanuki(Twitter)",
+	"version": 1,
+	"license": "CC-BY-SA-3.0",
+	"copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/blob/c473a8bcc28fbd80827dfca5660d81ca6e833e2c/icons/hud/screen_ai.dmi , some sprites updated by ScarKy0(Discord), door actions by ScarKy0(Discord) and @Max_tanuki(Twitter)",
 	"size": {
-		"x": 65,
-		"y": 65
+		"x": 32,
+		"y": 32
 	},
 	"states": [
 		{

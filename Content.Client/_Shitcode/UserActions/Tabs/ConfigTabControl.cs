@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -54,7 +54,7 @@ public sealed partial class ConfigTabControl : BaseTabControl
         var disconnectButton = CreateMenuButton(
                 "DisconnectButton",
                 Loc.GetString("ui-config-menu-disconnect"),
-                "/Textures/Interface/VerbIcons/open.svg.65dpi.png");
+                "/Textures/Interface/VerbIcons/open.svg.192dpi.png");
         disconnectButton.OnPressed += (_) =>
             _console.ExecuteCommand("disconnect");
         MenuList.AddChild(disconnectButton);
@@ -62,7 +62,7 @@ public sealed partial class ConfigTabControl : BaseTabControl
         var quitButton = CreateMenuButton(
                 "QuitButton",
                 Loc.GetString("ui-config-menu-quit"),
-                "/Textures/Interface/VerbIcons/Spare/poweronoff.svg.65dpi.png");
+                "/Textures/Interface/VerbIcons/Spare/poweronoff.svg.192dpi.png");
         quitButton.OnPressed += (_) =>
             _console.ExecuteCommand("quit");
         MenuList.AddChild(quitButton);
@@ -70,7 +70,7 @@ public sealed partial class ConfigTabControl : BaseTabControl
         var optionsButton = CreateMenuButton(
                 "OptionsButton",
                 Loc.GetString("ui-config-menu-options"),
-                "/Textures/Interface/VerbIcons/settings.svg.65dpi.png");
+                "/Textures/Interface/VerbIcons/settings.svg.192dpi.png");
         optionsButton.OnPressed += (_) =>
             optionsUIController.OpenWindow();
         MenuList.AddChild(optionsButton);
@@ -78,7 +78,7 @@ public sealed partial class ConfigTabControl : BaseTabControl
         var craftingButton = CreateMenuButton(
                 "CraftingButton",
                 Loc.GetString("ui-config-menu-crafting"),
-                "/Textures/Interface/hammer.svg.65dpi.png");
+                "/Textures/Interface/hammer.svg.192dpi.png");
         craftingButton.OnPressed += (_) =>
             craftingUIController.Toggle();
         MenuList.AddChild(craftingButton);
@@ -86,7 +86,7 @@ public sealed partial class ConfigTabControl : BaseTabControl
         var adminButton = CreateMenuButton(
                 "AdminButton",
                 Loc.GetString("ui-config-menu-admin"),
-                "/Textures/Interface/gavel.svg.65dpi.png");
+                "/Textures/Interface/gavel.svg.192dpi.png");
         adminButton.OnPressed += (_) =>
             adminUIController.Toggle();
         MenuList.AddChild(adminButton);
@@ -94,7 +94,7 @@ public sealed partial class ConfigTabControl : BaseTabControl
         var sandboxButton = CreateMenuButton(
                 "SandboxButton",
                 Loc.GetString("ui-config-menu-sandbox"),
-                "/Textures/Interface/sandbox.svg.65dpi.png");
+                "/Textures/Interface/sandbox.svg.192dpi.png");
         sandboxButton.OnPressed += (_) =>
             sandboxUIController.ToggleWindow();
         MenuList.AddChild(sandboxButton);
@@ -102,7 +102,7 @@ public sealed partial class ConfigTabControl : BaseTabControl
         var ahelpButton = CreateMenuButton(
                 "AHelpButton",
                 Loc.GetString("ui-config-menu-ahelp"),
-                "/Textures/Interface/info.svg.65dpi.png");
+                "/Textures/Interface/info.svg.192dpi.png");
         ahelpButton.OnPressed += (_) =>
             ahelpUIController.ToggleWindow();
         MenuList.AddChild(ahelpButton);

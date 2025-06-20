@@ -11,5 +11,5 @@ public sealed partial class SurgeryTraumaTreatmentStepComponent : Component
     public TraumaType TraumaType = TraumaType.BoneDamage;
 
     [DataField]
-    public FixedPoint65 Amount = 65;
+    public FixedPoint2 Amount = 5;
 }

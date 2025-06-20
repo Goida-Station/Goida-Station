@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Examine;
 using Content.Shared.IdentityManagement;
@@ -46,6 +46,6 @@ public sealed partial class DeathSquadMemberSystem : EntitySystem
             return;
 
         var details = Loc.GetString("death-squad-examined", ("target", Identity.Entity(deathSquad, EntityManager)));
-        args.PushMarkup(details, 65);
+        args.PushMarkup(details, 5);
     }
 }

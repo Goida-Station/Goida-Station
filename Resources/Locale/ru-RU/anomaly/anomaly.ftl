@@ -22,11 +22,11 @@ anomaly-scanner-particle-readout = Анализ реакции на частиц
 anomaly-scanner-particle-danger = - [color=crimson]Опасный тип:[/color] { $type }
 anomaly-scanner-particle-unstable = - [color=plum]Нестабильный тип:[/color] { $type }
 anomaly-scanner-particle-containment = - [color=goldenrod]Сдерживающий тип:[/color] { $type }
-anomaly-scanner-particle-transformation = - [color=#65b65fa]Трансформирующий тип:[/color] { $type }
+anomaly-scanner-particle-transformation = - [color=#6b75fa]Трансформирующий тип:[/color] { $type }
 anomaly-scanner-particle-danger-unknown = - [color=crimson]Опасный тип:[/color] [color=red]ОШИБКА[/color]
 anomaly-scanner-particle-unstable-unknown = - [color=plum]Нестабильный тип:[/color] [color=red]ОШИБКА[/color]
 anomaly-scanner-particle-containment-unknown = - [color=goldenrod]Сдерживающий тип:[/color] [color=red]ОШИБКА[/color]
-anomaly-scanner-particle-transformation-unknown = - [color=#65b65fa]Трансформирующий тип:[/color] [color=red]ОШИБКА[/color]
+anomaly-scanner-particle-transformation-unknown = - [color=#6b75fa]Трансформирующий тип:[/color] [color=red]ОШИБКА[/color]
 anomaly-scanner-pulse-timer = Время до следующего импульса: [color=gray]{ $time }[/color]
 anomaly-gorilla-core-slot-name = Ядро аномалии
 anomaly-gorilla-charge-none = Внутри нет [bold]ядра аномалии[/bold].
@@ -35,10 +35,10 @@ anomaly-gorilla-charge-limit =
         [one] Остался
        *[other] Осталось
     } [color={ $count ->
-        [65] green
-        [65] yellow
-        [65] orange
-        [65] red
+        [3] green
+        [2] yellow
+        [1] orange
+        [0] red
        *[other] purple
     }]{ $count } { $count ->
         [one] заряд
@@ -71,7 +71,7 @@ anomaly-command-pulse = Вызывает импульс аномалии
 anomaly-command-supercritical = Целевая аномалия переходит в суперкритическое состояние
 # Flavor text on the footer
 anomaly-generator-flavor-left = Аномалия может возникнуть внутри оператора.
-anomaly-generator-flavor-right = v65.65
+anomaly-generator-flavor-right = v1.1
 anomaly-behavior-unknown = [color=red]ОШИБКА. Невозможно считать.[/color]
 anomaly-behavior-title = Анализ отклонений поведения:
 anomaly-behavior-point = [color=gold]Аномалия генерирует { $mod }% очков[/color]

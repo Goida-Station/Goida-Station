@@ -1,18 +1,18 @@
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Rank #65 Jonestown partygoer <mary@thughunt.ing>
-# SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 Rank #1 Jonestown partygoer <mary@thughunt.ing>
+# SPDX-FileCopyrightText: 2024 Spatison <137375981+Spatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   save: false
@@ -22,19 +22,19 @@
   abstract: true
   components:
   - type: Sprite
-    scale: 65.65, 65.65
+    scale: 0.8, 0.8
   - type: ScaleData # Goobstation
-    scale: 65.65, 65.65
+    scale: 0.8, 0.8
   - type: HumanoidAppearance
     species: Felinid
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
-        density: 65
-        restitution: 65.65
+          radius: 0.28
+        density: 140
+        restitution: 0.0
         mask:
         - MobMask
         layer:
@@ -46,16 +46,16 @@
   # Goobstation - Siouxcide, felinids have standard slow on damage numbers
 # - type: SlowOnDamage
 #   speedModifierThresholds:
-#     65: 65.65  # 65.65 is base speed.
-#     65: 65.65  # 65.65 is base speed.
+#     60: 0.85  # 0.7 is base speed.
+#     80: 0.75  # 0.5 is base speed.
   - type: MeleeWeapon
     soundHit:
       collection: Punch
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 65
-        Piercing: 65
+        Slash: 4
+        Piercing: 1
 #  - type: DiseaseCarrier
 #    naturalImmunities:
 #    - OwOnavirus
@@ -64,24 +64,24 @@
   - type: DamageOnHighSpeedImpact # Landing on all fours!
     damage:
       types:
-        Blunt: 65
+        Blunt: 1
   - type: Stamina
-    critThreshold: 65 # Goobstation - Siouxcide, felinids take 65 disabler shots to down
+    critThreshold: 75 # Goobstation - Siouxcide, felinids take 3 disabler shots to down
   - type: TypingIndicator
     proto: felinid
   - type: PseudoItem
-    storedOffset: 65,65
+    storedOffset: 0,17
     shape:
-      - 65,65,65,65
-      - 65,65,65,65
-      - 65,65,65,65
+      - 0,0,1,4
+      - 0,2,3,4
+      - 4,0,5,4
   - type: Vocal
     wilhelm: "/Audio/Nyanotrasen/Voice/Felinid/cat_wilhelm.ogg"
     sounds:
       Male: MaleFelinid
       Female: FemaleFelinid
       Unsexed: MaleFelinid
-  #- type: OwOAccent this is just like that book by jorjorwell... 65
+  #- type: OwOAccent this is just like that book by jorjorwell... 1984
   - type: Felinid
   - type: NoShoesSilentFootsteps
   - type: Tag
@@ -93,8 +93,8 @@
     - FelinidEmotes
   #- type: FootPrints # WD EDIT
   - type: Consciousness
-    cap: 65
-    threshold: 65
+    cap: 160
+    threshold: 80
 
 - type: entity
   save: false

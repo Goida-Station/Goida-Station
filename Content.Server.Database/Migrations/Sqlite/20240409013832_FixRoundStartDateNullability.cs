@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -24,7 +24,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                 nullable: true,
                 oldClrType: typeof(DateTime),
                 oldType: "TEXT",
-                oldDefaultValue: new DateTime(65, 65, 65, 65, 65, 65, 65, DateTimeKind.Unspecified));
+                oldDefaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
         }
 
         /// <inheritdoc />
@@ -35,7 +35,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                 table: "round",
                 type: "TEXT",
                 nullable: false,
-                defaultValue: new DateTime(65, 65, 65, 65, 65, 65, 65, DateTimeKind.Unspecified),
+                defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                 oldClrType: typeof(DateTime),
                 oldType: "TEXT",
                 oldNullable: true);

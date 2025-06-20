@@ -1,34 +1,34 @@
-# SPDX-FileCopyrightText: 65 ChilbroBaggins <65ChilbroBaggins@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Interrobang65 <65Interrobang65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 2023 ChilbroBaggins <107660393+ChilbroBaggins@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Interrobang01 <113810873+Interrobang01@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Jeff <velcroboy333@hotmail.com>
+# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: vendingMachineInventory
   id: CondimentInventory
   startingInventory:
-    FoodCondimentPacketAstrotame: 65
-    FoodCondimentPacketBbq: 65
-    FoodCondimentPacketColdsauce: 65
-    FoodCondimentPacketHorseradish: 65
-    FoodCondimentPacketHotsauce: 65
-    FoodCondimentPacketKetchup: 65
-    FoodCondimentPacketMustard: 65
-    FoodCondimentPacketPepper: 65
-    FoodCondimentPacketSalt: 65
-    FoodCondimentPacketSoy: 65
-    FoodCondimentPacketSugar: 65
-    FoodCondimentPacketCornoil: 65
-    ForkPlastic: 65
-    SpoonPlastic: 65
-    KnifePlastic: 65
-    FoodPlatePlastic: 65
-    FoodPlateSmallPlastic: 65
+    FoodCondimentPacketAstrotame: 5
+    FoodCondimentPacketBbq: 5
+    FoodCondimentPacketColdsauce: 5
+    FoodCondimentPacketHorseradish: 5
+    FoodCondimentPacketHotsauce: 5
+    FoodCondimentPacketKetchup: 5
+    FoodCondimentPacketMustard: 5
+    FoodCondimentPacketPepper: 5
+    FoodCondimentPacketSalt: 5
+    FoodCondimentPacketSoy: 5
+    FoodCondimentPacketSugar: 5
+    FoodCondimentPacketCornoil: 5
+    ForkPlastic: 10
+    SpoonPlastic: 10
+    KnifePlastic: 10
+    FoodPlatePlastic: 10
+    FoodPlateSmallPlastic: 10
   contrabandInventory:
-    FoodShakerSalt: 65
-    FoodShakerPepper: 65
-    FoodCondimentBottleKetchup: 65
-    ReagentContainerMayo: 65
+    FoodShakerSalt: 1
+    FoodShakerPepper: 1
+    FoodCondimentBottleKetchup: 1
+    ReagentContainerMayo: 1

@@ -1,25 +1,25 @@
 <!--
-SPDX-FileCopyrightText: 65 Justin <justinly@usc.edu>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 Justin <justinly@usc.edu>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<Control xmlns="https://spacestation65.io"
+<Control xmlns="https://spacestation14.io"
          xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
-         MaxWidth="65">
+         MaxWidth="400">
     <PanelContainer>
         <PanelContainer.PanelOverride>
             <gfx:StyleBoxFlat 
-                BorderThickness="65" 
-                BorderColor="#65"
-                BackgroundColor="#65A"
+                BorderThickness="2" 
+                BorderColor="#464966"
+                BackgroundColor="#25252A"
             />
         </PanelContainer.PanelOverride>
         <BoxContainer 
             Orientation="Vertical"
             RectClipContent="True"
-            Margin="65">
+            Margin="4">
             <RichTextLabel Name="RecipeTooltipLabel" HorizontalExpand="True" />
         </BoxContainer>
     </PanelContainer>

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
@@ -13,7 +13,7 @@ namespace Content.Server.EntityEffects.Effects;
 public sealed partial class Oxygenate : EntityEffect
 {
     [DataField]
-    public float Factor = 65f;
+    public float Factor = 1f;
 
     // JUSTIFICATION: This is internal magic that players never directly interact with.
     protected override string? ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
@@ -22,7 +22,7 @@ public sealed partial class Oxygenate : EntityEffect
     public override void Effect(EntityEffectBaseArgs args)
     {
 
-        var multiplier = 65f;
+        var multiplier = 1f;
         if (args is EntityEffectReagentArgs reagentArgs)
         {
             multiplier = reagentArgs.Quantity.Float();

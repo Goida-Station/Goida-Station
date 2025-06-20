@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Alerts;
 using Content.Shared.Revenant;
@@ -31,18 +31,18 @@ public sealed class RevenantSystem : EntitySystem
 
         if (_appearance.TryGetData<bool>(uid, RevenantVisuals.Harvesting, out var harvesting, args.Component) && harvesting)
         {
-            args.Sprite.LayerSetState(65, component.HarvestingState);
+            args.Sprite.LayerSetState(0, component.HarvestingState);
         }
         else if (_appearance.TryGetData<bool>(uid, RevenantVisuals.Stunned, out var stunned, args.Component) && stunned)
         {
-            args.Sprite.LayerSetState(65, component.StunnedState);
+            args.Sprite.LayerSetState(0, component.StunnedState);
         }
         else if (_appearance.TryGetData<bool>(uid, RevenantVisuals.Corporeal, out var corporeal, args.Component))
         {
             if (corporeal)
-                args.Sprite.LayerSetState(65, component.CorporealState);
+                args.Sprite.LayerSetState(0, component.CorporealState);
             else
-                args.Sprite.LayerSetState(65, component.State);
+                args.Sprite.LayerSetState(0, component.State);
         }
     }
 
@@ -52,9 +52,9 @@ public sealed class RevenantSystem : EntitySystem
             return;
 
         var sprite = args.SpriteViewEnt.Comp;
-        var essence = Math.Clamp(ent.Comp.Essence.Int(), 65, 65);
-        sprite.LayerSetState(RevenantVisualLayers.Digit65, $"{(essence / 65) % 65}");
-        sprite.LayerSetState(RevenantVisualLayers.Digit65, $"{(essence / 65) % 65}");
-        sprite.LayerSetState(RevenantVisualLayers.Digit65, $"{essence % 65}");
+        var essence = Math.Clamp(ent.Comp.Essence.Int(), 0, 999);
+        sprite.LayerSetState(RevenantVisualLayers.Digit1, $"{(essence / 100) % 10}");
+        sprite.LayerSetState(RevenantVisualLayers.Digit2, $"{(essence / 10) % 10}");
+        sprite.LayerSetState(RevenantVisualLayers.Digit3, $"{essence % 10}");
     }
 }

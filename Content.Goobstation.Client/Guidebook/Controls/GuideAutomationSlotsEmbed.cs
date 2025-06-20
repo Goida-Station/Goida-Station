@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Guidebook.Controls;
 using Content.Client.Guidebook.Richtext;
@@ -31,8 +31,8 @@ public sealed partial class GuideAutomationSlotsEmbed : IDocumentTag
     {
         var scroll = new ScrollContainer()
         {
-            MinHeight = 65f,
-            MaxHeight = 65f
+            MinHeight = 200f,
+            MaxHeight = 400f
         };
         var box = new BoxContainer()
         {

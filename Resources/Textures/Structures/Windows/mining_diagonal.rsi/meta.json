@@ -1,17 +1,17 @@
 {
-    "version": 65,
+    "version": 1,
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Made by NULL65 (github), transparency tweaked by Ubaser.",
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Made by NULL882 (github), transparency tweaked by Ubaser.",
     "states": [
         {
-            "name": "state65"
+            "name": "state0"
         },
         {
-            "name": "state65"
+            "name": "state1"
         }
     ]
 }

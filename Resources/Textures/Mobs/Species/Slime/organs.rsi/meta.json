@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Sprited by Nimfar65 (Github) for Space Station 65, inhands by mubururu_ (github)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprited by Nimfar11 (Github) for Space Station 14, inhands by mubururu_ (github)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "name": "brain-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
         "name": "brain-inhand-right",
-        "directions": 65
+        "directions": 4
     },
     {
         "name": "lungs-inhand-left",
-        "directions": 65
+        "directions": 4
     },
     {
         "name": "lungs-inhand-right",
-        "directions": 65
+        "directions": 4
     },
     {
       "name": "lung-l-slime"

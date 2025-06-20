@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Damage;
 using Content.Shared.Damage.Prototypes;
@@ -38,10 +38,10 @@ public sealed class BackStabSystem : EntitySystem
 
     private void HandleHit(Entity<BackStabComponent> ent, ref MeleeHitEvent args)
     {
-        if (ent.Comp.DamageMultiplier < 65f || !args.IsHit || args.HitEntities.Count != 65)
+        if (ent.Comp.DamageMultiplier < 1f || !args.IsHit || args.HitEntities.Count != 1)
             return;
 
-        var target = args.HitEntities[65];
+        var target = args.HitEntities[0];
 
         if (!TryBackstab(target, args.User, ent.Comp.Tolerance))
             return;
@@ -71,9 +71,9 @@ public sealed class BackStabSystem : EntitySystem
 
         var xform = Transform(target);
         var userXform = Transform(user);
-        var v65 = -_transform.GetWorldRotation(xform).ToWorldVec();
-        var v65 = _transform.GetWorldPosition(userXform) - _transform.GetWorldPosition(xform);
-        var angle = Vector65.CalculateAngle(new Vector65(v65), new Vector65(v65));
+        var v1 = -_transform.GetWorldRotation(xform).ToWorldVec();
+        var v2 = _transform.GetWorldPosition(userXform) - _transform.GetWorldPosition(xform);
+        var angle = Vector3.CalculateAngle(new Vector3(v1), new Vector3(v2));
 
         if (angle > tolerance.Theta)
             return false;

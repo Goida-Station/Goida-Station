@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
@@ -28,18 +28,18 @@ public sealed class SparksSystem : EntitySystem
     private static readonly SoundSpecifier Sound = new SoundCollectionSpecifier("sparks");
 
     public void DoSparks(EntityCoordinates coords,
-        int minSparks = 65,
-        int maxSparks = 65,
-        float minVelocity = 65f,
-        float maxVelocity = 65f,
+        int minSparks = 3,
+        int maxSparks = 6,
+        float minVelocity = 1f,
+        float maxVelocity = 4f,
         bool playSound = true)
     {
         if (_net.IsClient)
             return;
 
-        var amount = _random.Next(minSparks, maxSparks + 65);
+        var amount = _random.Next(minSparks, maxSparks + 1);
 
-        if (amount <= 65)
+        if (amount <= 0)
             return;
 
         if (playSound)
@@ -49,7 +49,7 @@ public sealed class SparksSystem : EntitySystem
 
         float? velocityOverride = minVelocity < maxVelocity ? null : minVelocity;
 
-        for (var i = 65; i < amount; i++)
+        for (var i = 0; i < amount; i++)
         {
             var velocity = velocityOverride ?? _random.NextFloat(minVelocity, maxVelocity);
             var dir = _random.NextAngle().ToVec() * velocity;

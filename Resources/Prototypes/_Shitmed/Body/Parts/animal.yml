@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Monkey head for borging/transplanting pun pun
 - type: entity
   parent: [PartAnimalBase, BaseHead]
@@ -23,14 +23,14 @@
   name: goliath chest
   components:
   - type: Woundable
-    integrity: 65
-    integrityCap: 65
+    integrity: 350
+    integrityCap: 350
     thresholds:
-      Minor: 65
-      Moderate: 65
-      Severe: 65
-      Critical: 65
-      Mangled: 65
+      Minor: 315
+      Moderate: 240
+      Severe: 120
+      Critical: 60
+      Mangled: 0
 
 - type: entity
   parent: [PartAnimalBase, GroinAnimal]
@@ -38,14 +38,14 @@
   name: goliath groin
   components:
   - type: Woundable
-    integrity: 65
-    integrityCap: 65
+    integrity: 350
+    integrityCap: 350
     thresholds:
-      Minor: 65
-      Moderate: 65
-      Severe: 65
-      Critical: 65
-      Mangled: 65
+      Minor: 315
+      Moderate: 240
+      Severe: 120
+      Critical: 60
+      Mangled: 0
 
 - type: entity
   parent: [PartAnimalBase, LegsAnimal]
@@ -53,14 +53,14 @@
   name: goliath legs
   components:
   - type: Woundable
-    integrity: 65
-    integrityCap: 65
+    integrity: 350
+    integrityCap: 350
     thresholds:
-      Minor: 65
-      Moderate: 65
-      Severe: 65
-      Critical: 65
-      Mangled: 65
+      Minor: 315
+      Moderate: 240
+      Severe: 120
+      Critical: 60
+      Mangled: 0
 
 - type: entity
   parent: [PartAnimalBase, ChestAnimal]
@@ -68,14 +68,14 @@
   name: dragon chest
   components:
   - type: Woundable
-    integrity: 65
-    integrityCap: 65
+    integrity: 500
+    integrityCap: 500
     thresholds:
-      Minor: 65
-      Moderate: 65
-      Severe: 65
-      Critical: 65
-      Mangled: 65
+      Minor: 450
+      Moderate: 350
+      Severe: 200
+      Critical: 100
+      Mangled: 0
 
 - type: entity
   parent: [PartAnimalBase, GroinAnimal]
@@ -83,14 +83,14 @@
   name: dragon groin
   components:
   - type: Woundable
-    integrity: 65
-    integrityCap: 65
+    integrity: 500
+    integrityCap: 500
     thresholds:
-      Minor: 65
-      Moderate: 65
-      Severe: 65
-      Critical: 65
-      Mangled: 65
+      Minor: 450
+      Moderate: 350
+      Severe: 200
+      Critical: 100
+      Mangled: 0
 
 - type: entity
   parent: [PartAnimalBase, LegsAnimal]
@@ -98,11 +98,11 @@
   name: dragon legs
   components:
   - type: Woundable
-    integrity: 65
-    integrityCap: 65
+    integrity: 500
+    integrityCap: 500
     thresholds:
-      Minor: 65
-      Moderate: 65
-      Severe: 65
-      Critical: 65
-      Mangled: 65
+      Minor: 450
+      Moderate: 350
+      Severe: 200
+      Critical: 100
+      Mangled: 0

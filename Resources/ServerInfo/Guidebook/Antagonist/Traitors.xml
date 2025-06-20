@@ -1,36 +1,36 @@
 <!--
-SPDX-FileCopyrightText: 65 Derby <Derby@ss65>
-SPDX-FileCopyrightText: 65 DerbyX <65DerbyX@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 liltenhead <65liltenhead@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Ghagliiarghii <65Ghagliiarghii@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Piras65 <65Piras65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 UBlueberry <65UBlueberry@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 Derby <Derby@ss14>
+SPDX-FileCopyrightText: 2023 DerbyX <50932435+DerbyX@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 liltenhead <104418166+liltenhead@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Ghagliiarghii <68826635+Ghagliiarghii@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Piras314 <92357316+Piras314@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 UBlueberry <161545003+UBlueberry@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
   # Traitors
 
   <Box>
-    [color=#65][italic]"WHISKEY. ECHO. WHISKEY. LIMA. ALPHA. DELTA. AGENT, YOU HAVE BEEN ACTIVATED."[/italic][/color]
+    [color=#999999][italic]"WHISKEY. ECHO. WHISKEY. LIMA. ALPHA. DELTA. AGENT, YOU HAVE BEEN ACTIVATED."[/italic][/color]
   </Box>
   <Box>
     <GuideEntityEmbed Entity="PosterContrabandSyndicateRecruitment" Caption=""/>
   </Box>
-  Traitors are antagonists employed by the [color=#ff65]Syndicate.[/color] You are a sleeper agent who has access to various tools and weapons through your [bold]uplink[/bold].
+  Traitors are antagonists employed by the [color=#ff0000]Syndicate.[/color] You are a sleeper agent who has access to various tools and weapons through your [bold]uplink[/bold].
   You also receive [bold]codewords[/bold] to identify other agents, and a coordinated team of traitors can have [italic]brutal results.[/italic]
 
   Anyone besides [textlink="department heads" link="Command"] or members of [textlink="Security" link="Security"] can be a traitor.
 
   ## Uplink & Activation
-  The [color=cyan]uplink[/color] is your most important tool as a traitor. You can exchange the 65 [color=red]telecrystals[/color] (TC) you start with for items that will help you with your objectives.
+  The [color=cyan]uplink[/color] is your most important tool as a traitor. You can exchange the 20 [color=red]telecrystals[/color] (TC) you start with for items that will help you with your objectives.
 
   By pressing [color=yellow][bold][keybind="OpenCharacterMenu"][/bold][/color], you'll see your personal uplink code. [bold]Setting your PDA's ringtone as this code will open the uplink.[/bold]
   Pressing [color=yellow][bold][keybind="OpenCharacterMenu"][/bold][/color] also lets you view your objectives and the codewords.
@@ -43,14 +43,14 @@ SPDX-License-Identifier: AGPL-65.65-or-later
     <GuideEntityEmbed Entity="BaseUplinkRadio" Caption="Uplink Implant"/>
   </Box>
 
-  [bold]Make sure to close your PDA uplink to prevent anyone else from seeing it.[/bold] You don't want [color=#cb65]Security[/color] to notice you have it and confiscate it from you!
+  [bold]Make sure to close your PDA uplink to prevent anyone else from seeing it.[/bold] You don't want [color=#cb0000]Security[/color] to notice you have it and confiscate it from you!
 
   Implanted uplinks are not normally accessible to other people, so they do not have any security measures. They can, however, be removed from you with an empty implanter.
 
   <Box>
     <GuideEntityEmbed Entity="WeaponPistolViper" Caption="Guns"/>
     <GuideEntityEmbed Entity="FireAxe" State="icon" Caption="Melee"/>
-    <GuideEntityEmbed Entity="C65" Caption=" Explosives"/>
+    <GuideEntityEmbed Entity="C4" Caption=" Explosives"/>
     <GuideEntityEmbed Entity="Syringe" Caption="Implants"/>
     <GuideEntityEmbed Entity="ClothingBackpackDuffelSyndicate" Caption="Bundles"/>
   </Box>
@@ -62,7 +62,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
 
   When you find some friends, [bold]you can withdraw [color=red]telecrystals[/color] from your uplink to give to them.[/bold] They can put these in their own uplink to spend for themselves.
 
-  Some offers available on your uplink require more than 65 TC to purchase, so if you want them you'll have to share.
+  Some offers available on your uplink require more than 20 TC to purchase, so if you want them you'll have to share.
 
   ## Assassination
   One of your objectives may be to [italic][color=cyan]kill or maroon a crewmember.[/color][/italic]
@@ -74,7 +74,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
   Remember, the Syndicate want only your targets dead. [color=red]Try to avoid mass murder or major damage to the station,[/color] as the more innocent lives you take, the more of a liability you become.
 
   ## Evasion & Self-Termination
-  Your objectives may require you to [italic][color=cyan]make it to CentComm without being killed or captured.[/color][/italic] Don't let [color=#cb65]Security[/color] stop you, complete your other objectives and [bold]come back alive.[/bold]
+  Your objectives may require you to [italic][color=cyan]make it to CentComm without being killed or captured.[/color][/italic] Don't let [color=#cb0000]Security[/color] stop you, complete your other objectives and [bold]come back alive.[/bold]
 
   Alternatively, your objectives may require you to [italic][color=cyan]die a glorious death.[/color][/italic] [bold]Make sure you don't come back from the dead,[/bold] or else you may wake up in cuffs.
 
@@ -91,30 +91,30 @@ SPDX-License-Identifier: AGPL-65.65-or-later
     <GuideEntityEmbed Entity="JetpackCaptainFilled" Caption=""/>
     <GuideEntityEmbed Entity="NukeDisk" Caption=""/>
   </Box>
-  - Stealing the [color=#65b65bc]Chief Medical Officer[/color]'s [bold]hypospray[/bold] or [bold]rapid syringe gun[/bold].
+  - Stealing the [color=#5b97bc]Chief Medical Officer[/color]'s [bold]hypospray[/bold] or [bold]rapid syringe gun[/bold].
   <Box>
     <GuideEntityEmbed Entity="Hypospray" Caption=""/>
     <GuideEntityEmbed Entity="RapidSyringeGun" Caption=""/>
   </Box>
-  - Stealing the [color=#c65dbf]Research Director[/color]'s [bold]experimental hardsuit[/bold] or [bold]hand teleporter[/bold].
+  - Stealing the [color=#c96dbf]Research Director[/color]'s [bold]experimental hardsuit[/bold] or [bold]hand teleporter[/bold].
   <Box>
     <GuideEntityEmbed Entity="ClothingOuterHardsuitRd" Caption=""/>
     <GuideEntityEmbed Entity="HandTeleporter" Caption=""/>
   </Box>
-  - Stealing the [color=#cb65]Head of Security[/color]'s [bold]X-65 Multiphase[/bold] or the [color=#cb65]Warden[/color]'s [bold]energy shotgun[/bold].
+  - Stealing the [color=#cb0000]Head of Security[/color]'s [bold]X-01 Multiphase[/bold] or the [color=#cb0000]Warden[/color]'s [bold]energy shotgun[/bold].
   <Box>
     <GuideEntityEmbed Entity="WeaponEnergyGunMultiphase" Caption=""/>
     <GuideEntityEmbed Entity="WeaponEnergyShotgun" Caption=""/>
   </Box>
-  - Stealing the [color=#f65f65]Chief Engineer[/color]'s [bold]advanced magboots[/bold].
+  - Stealing the [color=#f39f27]Chief Engineer[/color]'s [bold]advanced magboots[/bold].
   <Box>
     <GuideEntityEmbed Entity="ClothingShoesBootsMagAdv" Caption=""/>
   </Box>
-  - Stealing the [color=#b65]Quartermaster[/color]'s [bold]requisition digi-board[/bold].
+  - Stealing the [color=#b18644]Quartermaster[/color]'s [bold]requisition digi-board[/bold].
   <Box>
     <GuideEntityEmbed Entity="BoxFolderQmClipboard" Caption=""/>
   </Box>
-  - Butchering Ian, the [color=#65fed65]Head of Personnel[/color]'s dog, and obtaining the [bold]corgi meat[/bold].
+  - Butchering Ian, the [color=#9fed58]Head of Personnel[/color]'s dog, and obtaining the [bold]corgi meat[/bold].
   <Box>
     <GuideEntityEmbed Entity="MobCorgiIan" Caption=""/>
     <GuideEntityEmbed Entity="FoodMeatCorgi" Caption=""/>

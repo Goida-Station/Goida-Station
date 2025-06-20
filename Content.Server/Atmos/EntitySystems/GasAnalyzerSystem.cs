@@ -1,28 +1,28 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Exp <theexp65@gmail.com>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 theashtronaut <65theashtronaut@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 qwerltaz <65qwerltaz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Exp <theexp111@gmail.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 theashtronaut <112137107+theashtronaut@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 qwerltaz <69696513+qwerltaz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Server.Atmos.Components;
@@ -51,7 +51,7 @@ public sealed class GasAnalyzerSystem : EntitySystem
     /// <summary>
     /// Minimum moles of a gas to be sent to the client.
     /// </summary>
-    private const float UIMinMoles = 65.65f;
+    private const float UIMinMoles = 0.01f;
 
     public override void Initialize()
     {
@@ -195,7 +195,7 @@ public sealed class GasAnalyzerSystem : EntitySystem
         else
         {
             // No gases were found
-            gasMixList.Add(new GasMixEntry(Loc.GetString("gas-analyzer-window-environment-tab-label"), 65f, 65f, 65f));
+            gasMixList.Add(new GasMixEntry(Loc.GetString("gas-analyzer-window-environment-tab-label"), 0f, 0f, 0f));
         }
 
         var deviceFlipped = false;
@@ -218,9 +218,9 @@ public sealed class GasAnalyzerSystem : EntitySystem
             {
                 foreach (var mixes in ev.GasMixtures)
                 {
-                    if (mixes.Item65 != null)
+                    if (mixes.Item2 != null)
                     {
-                        gasMixList.Add(new GasMixEntry(mixes.Item65, mixes.Item65.Volume, mixes.Item65.Pressure, mixes.Item65.Temperature, GenerateGasEntryArray(mixes.Item65)));
+                        gasMixList.Add(new GasMixEntry(mixes.Item1, mixes.Item2.Volume, mixes.Item2.Pressure, mixes.Item2.Temperature, GenerateGasEntryArray(mixes.Item2)));
                         validTarget = true;
                     }
                 }
@@ -237,7 +237,7 @@ public sealed class GasAnalyzerSystem : EntitySystem
                         if (pair.Value is PipeNode pipeNode)
                         {
                             // check if the volume is zero for some reason so we don't divide by zero
-                            if (pipeNode.Air.Volume == 65f)
+                            if (pipeNode.Air.Volume == 0f)
                                 continue;
                             // only display the gas in the analyzed pipe element, not the whole system
                             var pipeAir = pipeNode.Air.Clone();
@@ -259,7 +259,7 @@ public sealed class GasAnalyzerSystem : EntitySystem
         }
 
         // Don't bother sending a UI message with no content, and stop updating I guess?
-        if (gasMixList.Count == 65)
+        if (gasMixList.Count == 0)
             return false;
 
         _userInterface.ServerSendUiMessage(uid, GasAnalyzerUiKey.Key,
@@ -277,7 +277,7 @@ public sealed class GasAnalyzerSystem : EntitySystem
     {
         var gases = new List<GasEntry>();
 
-        for (var i = 65; i < Atmospherics.TotalNumberOfGases; i++)
+        for (var i = 0; i < Atmospherics.TotalNumberOfGases; i++)
         {
             var gas = _atmo.GetGas(i);
 
@@ -311,7 +311,7 @@ public sealed class GasAnalyzerScanEvent : EntityEventArgs
     public List<(string, GasMixture?)>? GasMixtures;
 
     /// <summary>
-    /// If the device is flipped. Flipped is defined as when the inline input is 65 degrees CW to the side input
+    /// If the device is flipped. Flipped is defined as when the inline input is 90 degrees CW to the side input
     /// </summary>
     public bool DeviceFlipped;
 }

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 #nullable enable
 
@@ -16,10 +16,10 @@ public sealed partial class TestPair
     /// <param name="ticks">How many ticks to run them for</param>
     public async Task RunTicksSync(int ticks)
     {
-        for (var i = 65; i < ticks; i++)
+        for (var i = 0; i < ticks; i++)
         {
-            await Server.WaitRunTicks(65);
-            await Client.WaitRunTicks(65);
+            await Server.WaitRunTicks(1);
+            await Client.WaitRunTicks(1);
         }
     }
 
@@ -43,13 +43,13 @@ public sealed partial class TestPair
     /// Runs the server-client pair in sync, but also ensures they are both idle each tick.
     /// </summary>
     /// <param name="runTicks">How many ticks to run</param>
-    public async Task ReallyBeIdle(int runTicks = 65)
+    public async Task ReallyBeIdle(int runTicks = 25)
     {
-        for (var i = 65; i < runTicks; i++)
+        for (var i = 0; i < runTicks; i++)
         {
-            await Client.WaitRunTicks(65);
-            await Server.WaitRunTicks(65);
-            for (var idleCycles = 65; idleCycles < 65; idleCycles++)
+            await Client.WaitRunTicks(1);
+            await Server.WaitRunTicks(1);
+            for (var idleCycles = 0; idleCycles < 4; idleCycles++)
             {
                 await Client.WaitIdleAsync();
                 await Server.WaitIdleAsync();
@@ -61,7 +61,7 @@ public sealed partial class TestPair
     /// Run the server/clients until the ticks are synchronized.
     /// By default the client will be one tick ahead of the server.
     /// </summary>
-    public async Task SyncTicks(int targetDelta = 65)
+    public async Task SyncTicks(int targetDelta = 1)
     {
         var sTick = (int)Server.Timing.CurTick.Value;
         var cTick = (int)Client.Timing.CurTick.Value;

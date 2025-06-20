@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from Paradise at https://github.com/ParadiseSS65/Paradise/blob/65d65f65c65c65f65ef65d65e65e65f/icons/obj/clothing/masks.dmi",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Paradise at https://github.com/ParadiseSS13/Paradise/blob/8352613d0312f362c4c0f9ef91d02506752e4e9f/icons/obj/clothing/masks.dmi",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {

@@ -1,11 +1,11 @@
 {
-    "version": 65,
+    "version": 1,
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from /tg/station at commit 65b65ae65be65d65f65c65a65efbf65a, edited by github user @Flareguy for Space Station 65",
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from /tg/station at commit 9065b811726ae52be5d1889f436c01a24efbf47a, edited by github user @Flareguy for Space Station 14",
     "states": [
         {
             "name": "mw"
@@ -14,7 +14,7 @@
             "name": "mw_unlit"
         },
         {
-            "name": "mw65"
+            "name": "mw0"
         },
         {
             "name": "mw_running_unlit"
@@ -26,10 +26,10 @@
             "name": "mwbloody"
         },
         {
-            "name": "mwbloody65"
+            "name": "mwbloody0"
         },
         {
-            "name": "mwbloody65"
+            "name": "mwbloody1"
         },
         {
             "name": "mwbloodyo"

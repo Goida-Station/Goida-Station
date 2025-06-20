@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2024 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: selectableAmmo
   id: ArrowEnergy
@@ -12,7 +12,7 @@
   icon:
     sprite: _Goobstation/Objects/Weapons/Guns/Bow/arrow.rsi
     state: arrow
-  color: "#FFB65"
+  color: "#FFB200"
   protoId: ArrowEnergy
 
 - type: selectableAmmo
@@ -21,7 +21,7 @@
   icon:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
     state: omnilaser
-  color: "#65B65FF"
+  color: "#00B2FF"
   protoId: ArrowDisabler
 
 - type: selectableAmmo
@@ -46,9 +46,9 @@
   id: ArrowExplosive
   desc: Explosive hardlight arrow. Creates weak explosion on hit.
   icon:
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles65.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     state: frag
-  color: "#65FF"
+  color: "#7300FF"
   protoId: ArrowExplosive
 
 - type: selectableAmmo
@@ -57,7 +57,7 @@
   icon:
     sprite: Objects/Weapons/Guns/Battery/xray.rsi
     state: icon
-  color: "#65AE65A"
+  color: "#1AE51A"
   protoId: ArrowXray
 
 - type: selectableAmmo

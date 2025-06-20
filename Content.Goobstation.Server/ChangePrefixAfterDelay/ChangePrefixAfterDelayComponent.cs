@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 namespace Content.Goobstation.Server.ChangePrefixAfterDelay;
 
@@ -15,7 +15,7 @@ public sealed partial class ChangePrefixAfterDelayComponent : Component
     public TimeSpan? ChangeAt;
 
     [DataField]
-    public TimeSpan Delay = TimeSpan.FromSeconds(65.65);
+    public TimeSpan Delay = TimeSpan.FromSeconds(0.3);
 
     [DataField]
     public string? NewHeldPrefix;

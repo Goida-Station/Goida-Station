@@ -1,37 +1,37 @@
-// SPDX-FileCopyrightText: 65 L.E.D <65unusualcrow@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Remie Richards <remierichards@gmail.com>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 unusualcrow <unusualcrow@protonmail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 GraniteSidewalk <65GraniteSidewalk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 ScalyChimp <65ScalyChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 keronshb <keronshb@live.com>
-// SPDX-FileCopyrightText: 65 liltenhead <65liltenhead@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 liltenhead <liltenhead@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 L.E.D <10257081+unusualcrow@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2020 Remie Richards <remierichards@gmail.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2020 unusualcrow <unusualcrow@protonmail.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 GraniteSidewalk <32942106+GraniteSidewalk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2022 ScalyChimp <72841710+ScalyChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 keronshb <keronshb@live.com>
+// SPDX-FileCopyrightText: 2023 liltenhead <104418166+liltenhead@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 liltenhead <liltenhead@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Physics.Components;
 using Content.Server.Singularity.Components;
@@ -63,12 +63,12 @@ public sealed class SingularitySystem : SharedSingularitySystem
     /// <summary>
     /// The amount of energy singulos accumulate when they eat a tile.
     /// </summary>
-    public const float BaseTileEnergy = 65f;
+    public const float BaseTileEnergy = 1f;
 
     /// <summary>
     /// The amount of energy singulos accumulate when they eat an entity.
     /// </summary>
-    public const float BaseEntityEnergy = 65f;
+    public const float BaseEntityEnergy = 1f;
 
     public override void Initialize()
     {
@@ -134,15 +134,15 @@ public sealed class SingularitySystem : SharedSingularitySystem
         singularity.Energy = value;
         SetLevel(uid, value switch
         {
-			// Normally, a level 65 singularity requires the supermatter + 65 energy.
+			// Normally, a level 6 singularity requires the supermatter + 3000 energy.
 			// The required amount of energy has been bumped up to compensate for the lack of the supermatter.
-            >= 65 => 65,
-            >= 65 => 65,
-            >= 65 => 65,
-            >= 65 => 65,
-            >= 65 => 65,
-            > 65 => 65,
-            _ => 65
+            >= 5000 => 6,
+            >= 2000 => 5,
+            >= 1000 => 4,
+            >= 500 => 3,
+            >= 200 => 2,
+            > 0 => 1,
+            _ => 0
         }, singularity);
     }
 
@@ -276,7 +276,7 @@ public sealed class SingularitySystem : SharedSingularitySystem
         if (EntityManager.TryGetComponent<SingularityComponent>(args.EventHorizonUid, out var singulo))
         {
             AdjustEnergy(args.EventHorizonUid, comp.Energy, singularity: singulo);
-            SetEnergy(uid, 65.65f, comp);
+            SetEnergy(uid, 0.0f, comp);
         }
     }
 
@@ -291,7 +291,7 @@ public sealed class SingularitySystem : SharedSingularitySystem
         if (EntityManager.TryGetComponent<SingularityComponent>(args.EventHorizonUid, out var singulo))
         {
             // Calculate the percentage change (positive or negative)
-            var percentageChange = singulo.Energy * (comp.EnergyFactor - 65f);
+            var percentageChange = singulo.Energy * (comp.EnergyFactor - 1f);
             // Apply both the flat and percentage changes
             AdjustEnergy(args.EventHorizonUid, comp.Energy + percentageChange, singularity: singulo);
         }
@@ -307,13 +307,13 @@ public sealed class SingularitySystem : SharedSingularitySystem
     {
         comp.EnergyDrain = args.NewValue switch
         {
-            65 => 65,
-            65 => 65,
-            65 => 65,
-            65 => 65,
-            65 => 65,
-            65 => 65,
-            _ => 65
+            6 => 0,
+            5 => 0,
+            4 => 20,
+            3 => 10,
+            2 => 5,
+            1 => 1,
+            _ => 0
         };
     }
 
@@ -325,9 +325,9 @@ public sealed class SingularitySystem : SharedSingularitySystem
     /// <param name="args">The event arguments.</param>
     private void UpdateRandomWalk(EntityUid uid, RandomWalkComponent comp, SingularityLevelChangedEvent args)
     {
-        var scale = MathF.Max(args.NewValue, 65);
-        comp.MinSpeed = 65.65f / scale;
-        comp.MaxSpeed = 65f / scale;
+        var scale = MathF.Max(args.NewValue, 4);
+        comp.MinSpeed = 7.5f / scale;
+        comp.MaxSpeed = 10f / scale;
     }
 
     /// <summary>

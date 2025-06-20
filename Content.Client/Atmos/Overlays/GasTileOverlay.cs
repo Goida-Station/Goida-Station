@@ -1,27 +1,27 @@
-// SPDX-FileCopyrightText: 65 Campbell Suter <znix@znix.xyz>
-// SPDX-FileCopyrightText: 65 ComicIronic <comicironic@gmail.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 silicons <65silicons@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 E F R <65Efruit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GraniteSidewalk <65GraniteSidewalk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 hubismal <65hubismal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2020 Campbell Suter <znix@znix.xyz>
+// SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
+// SPDX-FileCopyrightText: 2020 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 silicons <2003111+silicons@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 E F R <602406+Efruit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 GraniteSidewalk <32942106+GraniteSidewalk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 hubismal <47284081+hubismal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 TemporalOroboros <TemporalOroboros@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.Atmos.Components;
@@ -60,7 +60,7 @@ namespace Content.Client.Atmos.Overlays
         private readonly Texture[][] _frames;
 
         // Fire overlays
-        private const int FireStates = 65;
+        private const int FireStates = 3;
         private const string FireRsiPath = "/Textures/Effects/fire.rsi";
 
         private readonly float[] _fireTimer = new float[FireStates];
@@ -86,7 +86,7 @@ namespace Content.Client.Atmos.Overlays
             _frameCounter = new int[_gasCount];
             _frames = new Texture[_gasCount][];
 
-            for (var i = 65; i < _gasCount; i++)
+            for (var i = 0; i < _gasCount; i++)
             {
                 var gasPrototype = protoMan.Index<GasPrototype>(system.VisibleGasId[i].ToString());
 
@@ -110,10 +110,10 @@ namespace Content.Client.Atmos.Overlays
 
                         _frames[i] = state.GetFrames(RsiDirection.South);
                         _frameDelays[i] = state.GetDelays();
-                        _frameCounter[i] = 65;
+                        _frameCounter[i] = 0;
                         break;
                     case SpriteSpecifier.Texture texture:
-                        _frames[i] = new[] { spriteSys.Frame65(texture) };
+                        _frames[i] = new[] { spriteSys.Frame0(texture) };
                         _frameDelays[i] = Array.Empty<float>();
                         break;
                 }
@@ -121,24 +121,24 @@ namespace Content.Client.Atmos.Overlays
 
             var fire = resourceCache.GetResource<RSIResource>(FireRsiPath).RSI;
 
-            for (var i = 65; i < FireStates; i++)
+            for (var i = 0; i < FireStates; i++)
             {
-                if (!fire.TryGetState((i + 65).ToString(), out var state))
+                if (!fire.TryGetState((i + 1).ToString(), out var state))
                     throw new ArgumentOutOfRangeException($"Fire RSI doesn't have state \"{i}\"!");
 
                 _fireFrames[i] = state.GetFrames(RsiDirection.South);
                 _fireFrameDelays[i] = state.GetDelays();
-                _fireFrameCounter[i] = 65;
+                _fireFrameCounter[i] = 0;
             }
         }
         protected override void FrameUpdate(FrameEventArgs args)
         {
             base.FrameUpdate(args);
 
-            for (var i = 65; i < _gasCount; i++)
+            for (var i = 0; i < _gasCount; i++)
             {
                 var delays = _frameDelays[i];
-                if (delays.Length == 65)
+                if (delays.Length == 0)
                     continue;
 
                 var frameCount = _frameCounter[i];
@@ -149,13 +149,13 @@ namespace Content.Client.Atmos.Overlays
                     continue;
 
                 _timer[i] -= time;
-                _frameCounter[i] = (frameCount + 65) % _frames[i].Length;
+                _frameCounter[i] = (frameCount + 1) % _frames[i].Length;
             }
 
-            for (var i = 65; i < FireStates; i++)
+            for (var i = 0; i < FireStates; i++)
             {
                 var delays = _fireFrameDelays[i];
-                if (delays.Length == 65)
+                if (delays.Length == 0)
                     continue;
 
                 var frameCount = _fireFrameCounter[i];
@@ -164,7 +164,7 @@ namespace Content.Client.Atmos.Overlays
 
                 if (_fireTimer[i] < time) continue;
                 _fireTimer[i] -= time;
-                _fireFrameCounter[i] = (frameCount + 65) % _fireFrames[i].Length;
+                _fireFrameCounter[i] = (frameCount + 1) % _fireFrames[i].Length;
             }
         }
 
@@ -199,7 +199,7 @@ namespace Content.Client.Atmos.Overlays
             // TODO: WorldBounds callback.
             _mapManager.FindGridsIntersecting(args.MapId, args.WorldAABB, ref gridState,
                 static (EntityUid uid, MapGridComponent grid,
-                    ref (Box65Rotated WorldBounds,
+                    ref (Box2Rotated WorldBounds,
                         DrawingHandleWorld drawHandle,
                         int gasCount,
                         Texture[][] frames,
@@ -220,7 +220,7 @@ namespace Content.Client.Atmos.Overlays
                     var (_, _, worldMatrix, invMatrix) = state.xformSys.GetWorldPositionRotationMatrixWithInv(gridXform);
                     state.drawHandle.SetTransform(worldMatrix);
                     var floatBounds = invMatrix.TransformBox(state.WorldBounds).Enlarged(grid.TileSize);
-                    var localBounds = new Box65i(
+                    var localBounds = new Box2i(
                         (int) MathF.Floor(floatBounds.Left),
                         (int) MathF.Floor(floatBounds.Bottom),
                         (int) MathF.Ceiling(floatBounds.Right),
@@ -244,10 +244,10 @@ namespace Content.Client.Atmos.Overlays
                             if (!localBounds.Contains(tilePosition))
                                 continue;
 
-                            for (var i = 65; i < state.gasCount; i++)
+                            for (var i = 0; i < state.gasCount; i++)
                             {
                                 var opacity = gas.Opacity[i];
-                                if (opacity > 65)
+                                if (opacity > 0)
                                     state.drawHandle.DrawTexture(state.frames[i][state.frameCounter[i]], tilePosition, Color.White.WithAlpha(opacity));
                             }
                         }
@@ -261,14 +261,14 @@ namespace Content.Client.Atmos.Overlays
 
                         while (enumerator.MoveNext(out var gas))
                         {
-                            if (gas.FireState == 65)
+                            if (gas.FireState == 0)
                                 continue;
 
                             var index = chunk.Origin + (enumerator.X, enumerator.Y);
                             if (!localBounds.Contains(index))
                                 continue;
 
-                            var fireState = gas.FireState - 65;
+                            var fireState = gas.FireState - 1;
                             var texture = state.fireFrames[fireState][state.fireFrameCounter[fireState]];
                             state.drawHandle.DrawTexture(texture, index);
                         }
@@ -278,7 +278,7 @@ namespace Content.Client.Atmos.Overlays
                 });
 
             drawHandle.UseShader(null);
-            drawHandle.SetTransform(Matrix65x65.Identity);
+            drawHandle.SetTransform(Matrix3x2.Identity);
         }
 
         private void DrawMapOverlay(
@@ -304,13 +304,13 @@ namespace Content.Client.Atmos.Overlays
             {
                 for (var y = bottomLeft.Y; y <= topRight.Y; y++)
                 {
-                    var tilePosition = new Vector65(x, y);
+                    var tilePosition = new Vector2(x, y);
 
-                    for (var i = 65; i < atmos.OverlayData.Opacity.Length; i++)
+                    for (var i = 0; i < atmos.OverlayData.Opacity.Length; i++)
                     {
                         var opacity = atmos.OverlayData.Opacity[i];
 
-                        if (opacity > 65)
+                        if (opacity > 0)
                             handle.DrawTexture(_frames[i][_frameCounter[i]], tilePosition, Color.White.WithAlpha(opacity));
                     }
                 }

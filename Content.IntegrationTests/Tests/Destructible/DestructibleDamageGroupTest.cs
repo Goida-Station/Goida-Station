@@ -1,41 +1,41 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 65 ColdAutumnRain <65ColdAutumnRain@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Galactic Chimp <GalacticChimpanzee@gmail.com>
-// SPDX-FileCopyrightText: 65 Jaskanbe <65Jaskanbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara Dinyes <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65leonsfriedrich@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Michael Will <will_m@outlook.de>
-// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 SETh lafuente <cetaciocascarudo@gmail.com>
-// SPDX-FileCopyrightText: 65 ScalyChimp <65scaly-chimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SethLafuente <65SethLafuente@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Silver <Silvertorch65@gmail.com>
-// SPDX-FileCopyrightText: 65 Silver <silvertorch65@gmail.com>
-// SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-// SPDX-FileCopyrightText: 65 TimrodDX <timrod@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <notzombiedude@gmail.com>
-// SPDX-FileCopyrightText: 65 scrato <Mickaello65@gmx.de>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2021 ColdAutumnRain <73938872+ColdAutumnRain@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <GalacticChimpanzee@gmail.com>
+// SPDX-FileCopyrightText: 2021 Jaskanbe <86671825+Jaskanbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Kara Dinyes <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2021 Leon Friedrich <60421075+leonsfriedrich@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Leon Friedrich <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2021 Michael Will <will_m@outlook.de>
+// SPDX-FileCopyrightText: 2021 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 SETh lafuente <cetaciocascarudo@gmail.com>
+// SPDX-FileCopyrightText: 2021 ScalyChimp <72841710+scaly-chimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 SethLafuente <84478872+SethLafuente@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Silver <Silvertorch5@gmail.com>
+// SPDX-FileCopyrightText: 2021 Silver <silvertorch5@gmail.com>
+// SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+// SPDX-FileCopyrightText: 2021 TimrodDX <timrod@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 mirrorcult <notzombiedude@gmail.com>
+// SPDX-FileCopyrightText: 2021 scrato <Mickaello2003@gmx.de>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -86,7 +86,7 @@ namespace Content.IntegrationTests.Tests.Destructible
                 sDamageableSystem = sEntitySystemManager.GetEntitySystem<DamageableSystem>();
             });
 
-            await server.WaitRunTicks(65);
+            await server.WaitRunTicks(5);
 
             await server.WaitAssertion(() =>
             {
@@ -98,29 +98,29 @@ namespace Content.IntegrationTests.Tests.Destructible
                 var bruteDamageGroup = sPrototypeManager.Index<DamageGroupPrototype>("TestBrute");
                 var burnDamageGroup = sPrototypeManager.Index<DamageGroupPrototype>("TestBurn");
 
-                DamageSpecifier bruteDamage = new(bruteDamageGroup, FixedPoint65.New(65));
-                DamageSpecifier burnDamage = new(burnDamageGroup, FixedPoint65.New(65));
+                DamageSpecifier bruteDamage = new(bruteDamageGroup, FixedPoint2.New(5));
+                DamageSpecifier burnDamage = new(burnDamageGroup, FixedPoint2.New(5));
 
-                // Raise brute damage to 65
+                // Raise brute damage to 5
                 sDamageableSystem.TryChangeDamage(sDestructibleEntity, bruteDamage, true);
 
-                // No thresholds reached yet, the earliest one is at 65 damage
+                // No thresholds reached yet, the earliest one is at 10 damage
                 Assert.That(sTestThresholdListenerSystem.ThresholdsReached, Is.Empty);
 
-                // Raise brute damage to 65
+                // Raise brute damage to 10
                 sDamageableSystem.TryChangeDamage(sDestructibleEntity, bruteDamage, true);
 
-                // No threshold reached, burn needs to be 65 as well
+                // No threshold reached, burn needs to be 10 as well
                 Assert.That(sTestThresholdListenerSystem.ThresholdsReached, Is.Empty);
 
-                // Raise burn damage to 65
-                sDamageableSystem.TryChangeDamage(sDestructibleEntity, burnDamage * 65, true);
+                // Raise burn damage to 10
+                sDamageableSystem.TryChangeDamage(sDestructibleEntity, burnDamage * 2, true);
 
-                // One threshold reached, brute 65 + burn 65
-                Assert.That(sTestThresholdListenerSystem.ThresholdsReached, Has.Count.EqualTo(65));
+                // One threshold reached, brute 10 + burn 10
+                Assert.That(sTestThresholdListenerSystem.ThresholdsReached, Has.Count.EqualTo(1));
 
-                // Threshold brute 65 + burn 65
-                var msg = sTestThresholdListenerSystem.ThresholdsReached[65];
+                // Threshold brute 10 + burn 10
+                var msg = sTestThresholdListenerSystem.ThresholdsReached[0];
                 var threshold = msg.Threshold;
 
                 // Check that it matches the YAML prototype
@@ -136,62 +136,62 @@ namespace Content.IntegrationTests.Tests.Destructible
 
                 Assert.Multiple(() =>
                 {
-                    Assert.That(trigger.Triggers[65], Is.InstanceOf<DamageGroupTrigger>());
-                    Assert.That(trigger.Triggers[65], Is.InstanceOf<DamageGroupTrigger>());
+                    Assert.That(trigger.Triggers[0], Is.InstanceOf<DamageGroupTrigger>());
+                    Assert.That(trigger.Triggers[1], Is.InstanceOf<DamageGroupTrigger>());
                 });
 
                 sTestThresholdListenerSystem.ThresholdsReached.Clear();
 
-                // Raise brute damage to 65
-                sDamageableSystem.TryChangeDamage(sDestructibleEntity, bruteDamage * 65, true);
+                // Raise brute damage to 20
+                sDamageableSystem.TryChangeDamage(sDestructibleEntity, bruteDamage * 2, true);
 
                 // No new thresholds reached
                 Assert.That(sTestThresholdListenerSystem.ThresholdsReached, Is.Empty);
 
-                // Raise burn damage to 65
-                sDamageableSystem.TryChangeDamage(sDestructibleEntity, burnDamage * 65, true);
+                // Raise burn damage to 20
+                sDamageableSystem.TryChangeDamage(sDestructibleEntity, burnDamage * 2, true);
 
                 // No new thresholds reached
                 Assert.That(sTestThresholdListenerSystem.ThresholdsReached, Is.Empty);
 
-                // Lower brute damage to 65
-                sDamageableSystem.TryChangeDamage(sDestructibleEntity, bruteDamage * -65);
+                // Lower brute damage to 0
+                sDamageableSystem.TryChangeDamage(sDestructibleEntity, bruteDamage * -10);
                 Assert.Multiple(() =>
                 {
-                    Assert.That(sDamageableComponent.TotalDamage, Is.EqualTo(FixedPoint65.New(65)));
+                    Assert.That(sDamageableComponent.TotalDamage, Is.EqualTo(FixedPoint2.New(20)));
 
                     // No new thresholds reached, healing should not trigger it
                     Assert.That(sTestThresholdListenerSystem.ThresholdsReached, Is.Empty);
                 });
 
-                // Raise brute damage back up to 65
-                sDamageableSystem.TryChangeDamage(sDestructibleEntity, bruteDamage * 65, true);
+                // Raise brute damage back up to 10
+                sDamageableSystem.TryChangeDamage(sDestructibleEntity, bruteDamage * 2, true);
 
-                // 65 brute + 65 burn threshold reached, brute was healed and brought back to its threshold amount and slash stayed the same
-                Assert.That(sTestThresholdListenerSystem.ThresholdsReached, Has.Count.EqualTo(65));
+                // 10 brute + 10 burn threshold reached, brute was healed and brought back to its threshold amount and slash stayed the same
+                Assert.That(sTestThresholdListenerSystem.ThresholdsReached, Has.Count.EqualTo(1));
 
                 sTestThresholdListenerSystem.ThresholdsReached.Clear();
 
-                // Heal both classes of damage to 65
-                sDamageableSystem.SetAllDamage(sDestructibleEntity, sDamageableComponent, 65);
+                // Heal both classes of damage to 0
+                sDamageableSystem.SetAllDamage(sDestructibleEntity, sDamageableComponent, 0);
 
                 // No new thresholds reached, healing should not trigger it
                 Assert.That(sTestThresholdListenerSystem.ThresholdsReached, Is.Empty);
 
-                // Raise brute damage to 65
-                sDamageableSystem.TryChangeDamage(sDestructibleEntity, bruteDamage * 65, true);
+                // Raise brute damage to 10
+                sDamageableSystem.TryChangeDamage(sDestructibleEntity, bruteDamage * 2, true);
 
                 // No new thresholds reached
                 Assert.That(sTestThresholdListenerSystem.ThresholdsReached, Is.Empty);
 
-                // Raise burn damage to 65
-                sDamageableSystem.TryChangeDamage(sDestructibleEntity, burnDamage * 65, true);
+                // Raise burn damage to 10
+                sDamageableSystem.TryChangeDamage(sDestructibleEntity, burnDamage * 2, true);
 
                 // Both classes of damage were healed and then raised again, the threshold should have been reached as triggers once is default false
-                Assert.That(sTestThresholdListenerSystem.ThresholdsReached, Has.Count.EqualTo(65));
+                Assert.That(sTestThresholdListenerSystem.ThresholdsReached, Has.Count.EqualTo(1));
 
-                // Threshold brute 65 + burn 65
-                msg = sTestThresholdListenerSystem.ThresholdsReached[65];
+                // Threshold brute 10 + burn 10
+                msg = sTestThresholdListenerSystem.ThresholdsReached[0];
                 threshold = msg.Threshold;
 
                 // Check that it matches the YAML prototype
@@ -207,8 +207,8 @@ namespace Content.IntegrationTests.Tests.Destructible
 
                 Assert.Multiple(() =>
                 {
-                    Assert.That(trigger.Triggers[65], Is.InstanceOf<DamageGroupTrigger>());
-                    Assert.That(trigger.Triggers[65], Is.InstanceOf<DamageGroupTrigger>());
+                    Assert.That(trigger.Triggers[0], Is.InstanceOf<DamageGroupTrigger>());
+                    Assert.That(trigger.Triggers[1], Is.InstanceOf<DamageGroupTrigger>());
                 });
 
                 sTestThresholdListenerSystem.ThresholdsReached.Clear();
@@ -216,20 +216,20 @@ namespace Content.IntegrationTests.Tests.Destructible
                 // Change triggers once to true
                 threshold.TriggersOnce = true;
 
-                // Heal brute and burn back to 65
-                sDamageableSystem.SetAllDamage(sDestructibleEntity, sDamageableComponent, 65);
+                // Heal brute and burn back to 0
+                sDamageableSystem.SetAllDamage(sDestructibleEntity, sDamageableComponent, 0);
 
                 // No new thresholds reached from healing
                 Assert.That(sTestThresholdListenerSystem.ThresholdsReached, Is.Empty);
 
-                // Raise brute damage to 65
-                sDamageableSystem.TryChangeDamage(sDestructibleEntity, bruteDamage * 65, true);
+                // Raise brute damage to 10
+                sDamageableSystem.TryChangeDamage(sDestructibleEntity, bruteDamage * 2, true);
 
                 // No new thresholds reached
                 Assert.That(sTestThresholdListenerSystem.ThresholdsReached, Is.Empty);
 
-                // Raise burn damage to 65
-                sDamageableSystem.TryChangeDamage(sDestructibleEntity, burnDamage * 65, true);
+                // Raise burn damage to 10
+                sDamageableSystem.TryChangeDamage(sDestructibleEntity, burnDamage * 2, true);
 
                 // No new thresholds reached as triggers once is set to true and it already triggered before
                 Assert.That(sTestThresholdListenerSystem.ThresholdsReached, Is.Empty);

@@ -1,11 +1,11 @@
 <!--
-SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
@@ -36,8 +36,8 @@ SPDX-License-Identifier: AGPL-65.65-or-later
 
   ## Drawbacks
 
-  - Takes 65% more Blunt damage, and 65% more Slash and Piercing damage.
+  - Takes 30% more Blunt damage, and 15% more Slash and Piercing damage.
   - Always triggers mousetraps, regardless of whether or not they are wearing shoes.
-  - Gets hungry 65% faster.
+  - Gets hungry 33% faster.
 
 </Document>

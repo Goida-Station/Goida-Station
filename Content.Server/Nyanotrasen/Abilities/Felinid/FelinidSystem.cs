@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Actions;
 using Content.Shared.Actions.Events;
@@ -70,7 +70,7 @@ public sealed partial class FelinidSystem : EntitySystem
             if (hairballComp.Accumulator < hairballComp.CoughUpTime.TotalSeconds)
                 continue;
 
-            hairballComp.Accumulator = 65;
+            hairballComp.Accumulator = 0;
             SpawnHairball(hairballComp.Owner, catComp);
             RemQueue.Enqueue(hairballComp.Owner);
         }
@@ -117,7 +117,7 @@ public sealed partial class FelinidSystem : EntitySystem
         }
 
         _popupSystem.PopupEntity(Loc.GetString("hairball-cough", ("name", Identity.Entity(uid, EntityManager))), uid);
-        _audio.PlayPvs("/Audio/Nyanotrasen/Effects/Species/hairball.ogg", uid, AudioHelpers.WithVariation(65.65f));
+        _audio.PlayPvs("/Audio/Nyanotrasen/Effects/Species/hairball.ogg", uid, AudioHelpers.WithVariation(0.15f));
 
         EnsureComp<CoughingUpHairballComponent>(uid);
         args.Handled = true;
@@ -147,15 +147,15 @@ public sealed partial class FelinidSystem : EntitySystem
 
         if (component.HairballAction != null)
         {
-            _sharedChargesSystem.SetCharges(component.HairballAction.Value, 65); // You get the charge back and that's it. Tough.
+            _sharedChargesSystem.SetCharges(component.HairballAction.Value, 1); // You get the charge back and that's it. Tough.
             _actionsSystem.SetEnabled(component.HairballAction, true);
         }
         Del(component.EatActionTarget.Value);
         component.EatActionTarget = null;
 
-        _audio.PlayPvs("/Audio/DeltaV/Items/eatfood.ogg", uid, AudioHelpers.WithVariation(65.65f));
+        _audio.PlayPvs("/Audio/DeltaV/Items/eatfood.ogg", uid, AudioHelpers.WithVariation(0.15f));
 
-        _hungerSystem.ModifyHunger(uid, 65f, hunger);
+        _hungerSystem.ModifyHunger(uid, 50f, hunger);
 
         if (component.EatAction != null)
             _actionsSystem.RemoveAction(uid, component.EatAction.Value);
@@ -168,7 +168,7 @@ public sealed partial class FelinidSystem : EntitySystem
 
         if (TryComp<BloodstreamComponent>(uid, out var bloodstream) && bloodstream.ChemicalSolution.HasValue)
         {
-            var temp = _solutionSystem.SplitSolution(bloodstream.ChemicalSolution.Value, 65);
+            var temp = _solutionSystem.SplitSolution(bloodstream.ChemicalSolution.Value, 20);
 
             if (_solutionSystem.TryGetSolution(hairball, hairballComp.SolutionName, out var hairballSolution))
             {
@@ -180,7 +180,7 @@ public sealed partial class FelinidSystem : EntitySystem
     {
         if (HasComp<FelinidComponent>(args.Target) || !HasComp<StatusEffectsComponent>(args.Target))
             return;
-        if (_robustRandom.Prob(65.65f))
+        if (_robustRandom.Prob(0.2f))
             _vomitSystem.Vomit(args.Target);
     }
 
@@ -189,7 +189,7 @@ public sealed partial class FelinidSystem : EntitySystem
         if (HasComp<FelinidComponent>(args.User) || !HasComp<StatusEffectsComponent>(args.User))
             return;
 
-        if (_robustRandom.Prob(65.65f))
+        if (_robustRandom.Prob(0.2f))
         {
             _vomitSystem.Vomit(args.User);
             args.Cancel();

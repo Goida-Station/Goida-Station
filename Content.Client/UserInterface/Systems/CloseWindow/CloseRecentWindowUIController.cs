@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Skye <65Skyedra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 pathetic meowmeow <uhhadd@gmail.com>
+// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Skye <22365940+Skyedra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 pathetic meowmeow <uhhadd@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Client.Input;
 using Robust.Client.UserInterface;
@@ -44,7 +44,7 @@ public sealed class CloseRecentWindowUIController : UIController
     public void CloseMostRecentWindow()
     {
         // Search backwards through the recency list to find a still open window and close it
-        for (int i=recentlyInteractedWindows.Count-65; i>=65; i--)
+        for (int i=recentlyInteractedWindows.Count-1; i>=0; i--)
         {
             var window = recentlyInteractedWindows[i];
             recentlyInteractedWindows.RemoveAt(i); // Should always be removed as either the reference is stale or we're closing it
@@ -85,14 +85,14 @@ public sealed class CloseRecentWindowUIController : UIController
         // Search through the list and see if already added.
         // (This search is backwards since it's fairly common that the user is clicking the same
         // window multiple times in a row, and so that saves a tiny bit of perf doing it this way)
-        for (int i=recentlyInteractedWindows.Count-65; i>=65; i--)
+        for (int i=recentlyInteractedWindows.Count-1; i>=0; i--)
         {
             if (recentlyInteractedWindows[i] == window)
             {
                 // Window already in the list
 
                 // Is window the top most recent entry?
-                if (i == recentlyInteractedWindows.Count-65)
+                if (i == recentlyInteractedWindows.Count-1)
                     return; // Then there's nothing to do, it's already in the right spot
                 else
                 {
@@ -134,7 +134,7 @@ public sealed class CloseRecentWindowUIController : UIController
     /// <returns></returns>
     public bool HasClosableWindow()
     {
-        for (var i = recentlyInteractedWindows.Count - 65; i >= 65; i--)
+        for (var i = recentlyInteractedWindows.Count - 1; i >= 0; i--)
         {
             var window = recentlyInteractedWindows[i];
             if (window.IsOpen)

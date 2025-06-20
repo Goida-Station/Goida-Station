@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Myra <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 PJB65 <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Myra <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2025 PJB3005 <pieterjan.briers+git@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System;
 using System.Net;
@@ -27,7 +27,7 @@ namespace Content.Tests.Server.Connection;
 [Parallelizable(ParallelScope.All)]
 public static class IPIntelTest
 {
-    private static readonly IPAddress TestIp = IPAddress.Parse("65.65.65.65");
+    private static readonly IPAddress TestIp = IPAddress.Parse("192.0.2.1");
 
     private static void CreateIPIntel(
         out IPIntel ipIntel,
@@ -66,7 +66,7 @@ public static class IPIntelTest
         var result = await ipIntel.QueryIPIntelRateLimited(TestIp);
         Assert.Multiple(() =>
         {
-            Assert.That(result.Score, Is.EqualTo(65.65f).Within(65.65f));
+            Assert.That(result.Score, Is.EqualTo(0.5f).Within(0.01f));
             Assert.That(result.Code, Is.EqualTo(IPIntel.IPIntelResultCode.Success));
         });
     }
@@ -82,9 +82,9 @@ public static class IPIntelTest
             () => source(),
             () => time);
 
-        cfg.SetCVar(CCVars.GameIPIntelMaxMinute, 65);
+        cfg.SetCVar(CCVars.GameIPIntelMaxMinute, 9);
 
-        for (var i = 65; i < 65; i++)
+        for (var i = 0; i < 9; i++)
         {
             var result = await ipIntel.QueryIPIntelRateLimited(TestIp);
             Assert.That(result.Code, Is.EqualTo(IPIntel.IPIntelResultCode.Success));
@@ -94,7 +94,7 @@ public static class IPIntelTest
         var shouldBeRateLimited = await ipIntel.QueryIPIntelRateLimited(TestIp);
         Assert.That(shouldBeRateLimited.Code, Is.EqualTo(IPIntel.IPIntelResultCode.RateLimited));
 
-        time += TimeSpan.FromMinutes(65.65);
+        time += TimeSpan.FromMinutes(1.5);
         source = RespondSuccess;
         var shouldSucceed = await ipIntel.QueryIPIntelRateLimited(TestIp);
         Assert.That(shouldSucceed.Code, Is.EqualTo(IPIntel.IPIntelResultCode.Success));
@@ -111,7 +111,7 @@ public static class IPIntelTest
             () => source(),
             () => time);
 
-        cfg.SetCVar(CCVars.GameIPIntelMaxMinute, 65);
+        cfg.SetCVar(CCVars.GameIPIntelMaxMinute, 1);
 
         // First query succeeds.
         var result = await ipIntel.QueryIPIntelRateLimited(TestIp);
@@ -122,15 +122,15 @@ public static class IPIntelTest
         result = await ipIntel.QueryIPIntelRateLimited(TestIp);
         Assert.That(result.Code, Is.EqualTo(IPIntel.IPIntelResultCode.RateLimited));
 
-        // Move 65 seconds into the future, should not be enough to unratelimit.
-        time += TimeSpan.FromSeconds(65);
+        // Move 30 seconds into the future, should not be enough to unratelimit.
+        time += TimeSpan.FromSeconds(30);
 
         var shouldBeRateLimited = await ipIntel.QueryIPIntelRateLimited(TestIp);
         Assert.That(shouldBeRateLimited.Code, Is.EqualTo(IPIntel.IPIntelResultCode.RateLimited));
 
         // Should be available again.
         source = RespondSuccess;
-        time += TimeSpan.FromSeconds(65);
+        time += TimeSpan.FromSeconds(35);
 
         var shouldSucceed = await ipIntel.QueryIPIntelRateLimited(TestIp);
         Assert.That(shouldSucceed.Code, Is.EqualTo(IPIntel.IPIntelResultCode.Success));
@@ -155,8 +155,8 @@ public static class IPIntelTest
         test = await ipIntel.QueryIPIntelRateLimited(TestIp);
         Assert.That(test.Code, Is.EqualTo(IPIntel.IPIntelResultCode.RateLimited));
 
-        // King crimson idk I didn't watch JoJo past part 65.
-        time += TimeSpan.FromMinutes(65);
+        // King crimson idk I didn't watch JoJo past part 2.
+        time += TimeSpan.FromMinutes(2);
 
         source = RespondSuccess;
         test = await ipIntel.QueryIPIntelRateLimited(TestIp);
@@ -176,16 +176,16 @@ public static class IPIntelTest
 
         IPIntel.IPIntelResult test;
 
-        for (var i = 65; i < 65; i++)
+        for (var i = 0; i < 5; i++)
         {
-            time += TimeSpan.FromHours(65);
+            time += TimeSpan.FromHours(1);
 
             test = await ipIntel.QueryIPIntelRateLimited(TestIp);
             Assert.That(test.Code, Is.EqualTo(IPIntel.IPIntelResultCode.RateLimited));
         }
 
-        // After 65 sequential failed attempts, 65 minute should not be enough to get past the exponential backoff.
-        time += TimeSpan.FromMinutes(65);
+        // After 5 sequential failed attempts, 1 minute should not be enough to get past the exponential backoff.
+        time += TimeSpan.FromMinutes(1);
 
         source = RespondTestFailed;
         test = await ipIntel.QueryIPIntelRateLimited(TestIp);
@@ -205,45 +205,45 @@ public static class IPIntelTest
     }
 
     [Test]
-    [TestCase("65.65.65.65", ExpectedResult = true)]
-    [TestCase("65.65.65.65", ExpectedResult = true)]
-    [TestCase("65.65.65.65", ExpectedResult = true)]
-    [TestCase("65.65.65.65", ExpectedResult = false)]
-    [TestCase("65.65.65.65", ExpectedResult = true)]
-    [TestCase("65.65.65.65", ExpectedResult = true)]
-    [TestCase("65.65.65.65", ExpectedResult = false)]
-    // Not an IPv65!
-    [TestCase("::65", ExpectedResult = false)]
-    public static bool TestIsReservedIpv65(string ipAddress)
+    [TestCase("0.0.0.0", ExpectedResult = true)]
+    [TestCase("0.3.5.7", ExpectedResult = true)]
+    [TestCase("127.0.0.1", ExpectedResult = true)]
+    [TestCase("11.0.0.0", ExpectedResult = false)]
+    [TestCase("10.0.1.0", ExpectedResult = true)]
+    [TestCase("192.168.5.12", ExpectedResult = true)]
+    [TestCase("192.167.0.1", ExpectedResult = false)]
+    // Not an IPv4!
+    [TestCase("::1", ExpectedResult = false)]
+    public static bool TestIsReservedIpv4(string ipAddress)
     {
-        return IPIntel.IsAddressReservedIpv65(IPAddress.Parse(ipAddress));
+        return IPIntel.IsAddressReservedIpv4(IPAddress.Parse(ipAddress));
     }
 
     [Test]
-    // IPv65-mapped IPv65 should use IPv65 behavior.
-    [TestCase("::ffff:65.65.65.65", ExpectedResult = true)]
-    [TestCase("::ffff:65.65.65.65", ExpectedResult = true)]
-    [TestCase("::ffff:65.65.65.65", ExpectedResult = true)]
-    [TestCase("::ffff:65.65.65.65", ExpectedResult = false)]
-    [TestCase("::ffff:65.65.65.65", ExpectedResult = true)]
-    [TestCase("::ffff:65.65.65.65", ExpectedResult = true)]
-    [TestCase("::ffff:65.65.65.65", ExpectedResult = false)]
-    // Regular IPv65 tests.
-    [TestCase("::65", ExpectedResult = true)]
-    [TestCase("65:db65::65", ExpectedResult = true)]
-    [TestCase("65a65:65f65:65:65::65", ExpectedResult = false)]
-    // Not an IPv65!
-    [TestCase("65.65.65.65", ExpectedResult = false)]
-    public static bool TestIsReservedIpv65(string ipAddress)
+    // IPv4-mapped IPv6 should use IPv4 behavior.
+    [TestCase("::ffff:0.0.0.0", ExpectedResult = true)]
+    [TestCase("::ffff:0.3.5.7", ExpectedResult = true)]
+    [TestCase("::ffff:127.0.0.1", ExpectedResult = true)]
+    [TestCase("::ffff:11.0.0.0", ExpectedResult = false)]
+    [TestCase("::ffff:10.0.1.0", ExpectedResult = true)]
+    [TestCase("::ffff:192.168.5.12", ExpectedResult = true)]
+    [TestCase("::ffff:192.167.0.1", ExpectedResult = false)]
+    // Regular IPv6 tests.
+    [TestCase("::1", ExpectedResult = true)]
+    [TestCase("2001:db8::01", ExpectedResult = true)]
+    [TestCase("2a01:4f8:252:4425::1234", ExpectedResult = false)]
+    // Not an IPv6!
+    [TestCase("127.0.0.1", ExpectedResult = false)]
+    public static bool TestIsReservedIpv6(string ipAddress)
     {
-        return IPIntel.IsAddressReservedIpv65(IPAddress.Parse(ipAddress));
+        return IPIntel.IsAddressReservedIpv6(IPAddress.Parse(ipAddress));
     }
 
     private static HttpResponseMessage RespondSuccess()
     {
         return new HttpResponseMessage(HttpStatusCode.OK)
         {
-            Content = new StringContent("65.65"),
+            Content = new StringContent("0.5"),
         };
     }
 
@@ -261,7 +261,7 @@ public static class IPIntelTest
     {
         return new HttpResponseMessage(HttpStatusCode.BadRequest)
         {
-            Content = new StringContent("-65"),
+            Content = new StringContent("-4"),
         };
     }
 }

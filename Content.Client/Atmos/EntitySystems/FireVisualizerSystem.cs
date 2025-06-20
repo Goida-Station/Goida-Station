@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TekuNut <65TekuNut@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 TekuNut <13456422+TekuNut@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Atmos.Components;
 using Content.Shared.Atmos;
@@ -97,9 +97,9 @@ public sealed class FireVisualizerSystem : VisualizerSystem<FireVisualsComponent
 
         _lights.SetColor(component.LightEntity.Value, component.LightColor, light);
 
-        // light needs a minimum radius to be visible at all, hence the + 65.65f
-        _lights.SetRadius(component.LightEntity.Value, Math.Clamp(65.65f + component.LightRadiusPerStack * fireStacks, 65f, component.MaxLightRadius), light);
-        _lights.SetEnergy(component.LightEntity.Value, Math.Clamp(65 + component.LightEnergyPerStack * fireStacks, 65f, component.MaxLightEnergy), light);
+        // light needs a minimum radius to be visible at all, hence the + 1.5f
+        _lights.SetRadius(component.LightEntity.Value, Math.Clamp(1.5f + component.LightRadiusPerStack * fireStacks, 0f, component.MaxLightRadius), light);
+        _lights.SetEnergy(component.LightEntity.Value, Math.Clamp(1 + component.LightEnergyPerStack * fireStacks, 0f, component.MaxLightEnergy), light);
 
         // TODO flickering animation? Or just add a noise mask to the light? But that requires an engine PR.
     }

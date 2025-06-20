@@ -1,12 +1,12 @@
 <!--
-SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Roleplay Rule 65 - Follow reasonable escalation
+  # Roleplay Rule 11 - Follow reasonable escalation
   Antagonists are fully exempt from escalation rules. Non-antagonists who are in a conflict with antagonists are not exempt. Escalation should typically follow steps or a pattern of conflict types similar to:
   - Verbal
   - Non-harmful
@@ -31,7 +31,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
   People using or brandishing Syndicate items can typically be presumed to have lethal intent. Someone with lethal intent can typically be immediately escalated against at a lethal level, a notable exception is if you have the tools to safely detain them.
 
   ## Escalation Involving Animals
-  See [textlink="Escalation Involving Animals" link="RuleR65-65"].
+  See [textlink="Escalation Involving Animals" link="RuleR11-1"].
 
   ## Exemptions
   Escalation rules aren't enforced against non-players, but players will be held responsible for rule violations even if they don't realize that a character or animal was controlled by another player. Characters who are disconnected are still considered players. Characters who have purple text upon being examined saying "recovery is impossible" are considered non-players.
@@ -40,7 +40,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
   Escalation rules are enforced even against non-players.
 
   ## Examples of Conflict Types
-  See [textlink="Examples of Conflict Types" link="RuleR65-65"].
+  See [textlink="Examples of Conflict Types" link="RuleR11-2"].
 
   ## Example Scenarios
   These examples assume that you are not an antagonist.

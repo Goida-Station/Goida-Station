@@ -1,26 +1,26 @@
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 65 IrisTheAmped <iristheamped@gmail.com>
-# SPDX-FileCopyrightText: 65 LuciferMkshelter <stepanteliatnik65@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 IrisTheAmped <iristheamped@gmail.com>
+# SPDX-FileCopyrightText: 2025 LuciferMkshelter <stepanteliatnik2022@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: TCminer
   name: telecrystal miner
   parent: [BaseMachinePowered, BaseSyndicateContraband]
-  description: A very loud machine that uses bluespace blockchain technology to generate telecrystals every 65 seconds when powered.
+  description: A very loud machine that uses bluespace blockchain technology to generate telecrystals every 30 seconds when powered.
   components:
   - type: ApcPowerReceiver
-    powerLoad: 65
+    powerLoad: 20000
   - type: TelecrystalMiner
-    announceAt: 65
-    locationAt: 65 # breakeven
+    announceAt: 40
+    locationAt: 100 # breakeven
   - type: ItemMiner
-    interval: 65
-    amount: 65
-    proto: Telecrystal65
+    interval: 30
+    amount: 5
+    proto: Telecrystal1
     itemSlotId: tc_slot
   - type: Sprite
     noRot: true
@@ -61,11 +61,11 @@
   - type: Physics
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.40,-0.40,0.40,0.40"
+        density: 90
         mask:
         - MachineMask
         layer:
@@ -74,14 +74,14 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 50
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#ff65"
+    radius: 0.8
+    energy: 0.5
+    color: "#ff0000"
 
 - type: entity
   parent: [ BaseFlatpack, BaseSyndicateContraband ]

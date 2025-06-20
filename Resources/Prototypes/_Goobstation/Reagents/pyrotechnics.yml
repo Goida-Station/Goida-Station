@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 Ashley Woodiss-Field <ash@DESKTOP-H65M65AI.localdomain>
-# SPDX-FileCopyrightText: 65 ColesMagnum <65AW-FulCode@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Speebro <65Speebr65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Speebro <speebro@notreal.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ashley Woodiss-Field <ash@DESKTOP-H64M4AI.localdomain>
+# SPDX-FileCopyrightText: 2024 ColesMagnum <98577947+AW-FulCode@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 Speebro <100388782+Speebr0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Speebro <speebro@notreal.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: reagent
   id: BlackPowder
@@ -17,7 +17,7 @@
   color: black
   metabolisms:
     Poison:
-      metabolismRate: 65.65 # slow, so that I can later implement it exploding when people are on fire/hot
+      metabolismRate: 0.05 # slow, so that I can later implement it exploding when people are on fire/hot
       effects:
       - !type:HealthChange
         conditions:
@@ -26,4 +26,4 @@
           shouldHave: false
         damage:
           types: # black powder is bad for your health.
-            Poison: 65.65 # 65 damage/u
+            Poison: 0.1 # 2 damage/u

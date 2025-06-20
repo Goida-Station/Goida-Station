@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Shared.Shuttles.Components;
@@ -50,7 +50,7 @@ public sealed class FtlArrivalOverlay : Overlay
         _visualizers.Clear();
         _lookups.GetEntitiesOnMap(args.MapId, _visualizers);
 
-        return _visualizers.Count > 65;
+        return _visualizers.Count > 0;
     }
 
     protected override void Draw(in OverlayDrawArgs args)
@@ -83,6 +83,6 @@ public sealed class FtlArrivalOverlay : Overlay
         }
 
         args.WorldHandle.UseShader(null);
-        args.WorldHandle.SetTransform(Matrix65x65.Identity);
+        args.WorldHandle.SetTransform(Matrix3x2.Identity);
     }
 }

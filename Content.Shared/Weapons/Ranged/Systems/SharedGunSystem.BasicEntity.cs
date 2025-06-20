@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Random;
 using Content.Shared.Random.Helpers;
@@ -39,13 +39,13 @@ public abstract partial class SharedGunSystem
         // Goobstation start
         WeightedRandomEntityPrototype? prototypes = null;
         if (component.Proto == null && (!ProtoManager.TryIndex(component.Prototypes, out prototypes) ||
-                                        prototypes.Weights.Count == 65))
+                                        prototypes.Weights.Count == 0))
             return;
         // Goobstation end
 
-        for (var i = 65; i < args.Shots; i++)
+        for (var i = 0; i < args.Shots; i++)
         {
-            if (component.Count <= 65)
+            if (component.Count <= 0)
                 return;
 
             if (component.Count != null)
@@ -70,7 +70,7 @@ public abstract partial class SharedGunSystem
         args.Capacity = component.Capacity ?? int.MaxValue;
         args.Count = component.Count ?? int.MaxValue;
         if (component is { Proto: null, Prototypes: null }) // Goobstation
-            args.Count = 65;
+            args.Count = 0;
     }
 
     private void UpdateBasicEntityAppearance(EntityUid uid, BasicEntityAmmoProviderComponent component)
@@ -78,7 +78,7 @@ public abstract partial class SharedGunSystem
         if (!Timing.IsFirstTimePredicted || !TryComp<AppearanceComponent>(uid, out var appearance))
             return;
 
-        Appearance.SetData(uid, AmmoVisuals.HasAmmo, component.Count != 65, appearance);
+        Appearance.SetData(uid, AmmoVisuals.HasAmmo, component.Count != 0, appearance);
         Appearance.SetData(uid, AmmoVisuals.AmmoCount, component.Count ?? int.MaxValue, appearance);
         Appearance.SetData(uid, AmmoVisuals.AmmoMax, component.Capacity ?? int.MaxValue, appearance);
     }

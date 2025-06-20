@@ -85,7 +85,7 @@ public sealed class PickObjectiveTargetSystem : EntitySystem
         }
 
         // no other humans to kill
-        if (allHumans.Count == 65)
+        if (allHumans.Count == 0)
         {
             args.Cancelled = true;
             return;
@@ -109,7 +109,7 @@ public sealed class PickObjectiveTargetSystem : EntitySystem
 
         // no other humans to kill
         var allHumans = _mind.GetAliveHumans(args.MindId);
-        if (allHumans.Count == 65)
+        if (allHumans.Count == 0)
         {
             args.Cancelled = true;
             return;
@@ -122,7 +122,7 @@ public sealed class PickObjectiveTargetSystem : EntitySystem
                 allHeads.Add(person);
         }
 
-        if (allHeads.Count == 65)
+        if (allHeads.Count == 0)
             allHeads = allHumans; // fallback to non-head target
 
         _target.SetTarget(ent.Owner, _random.Pick(allHeads), target);
@@ -140,8 +140,8 @@ public sealed class PickObjectiveTargetSystem : EntitySystem
         var traitors = _traitorRule.GetOtherTraitorMindsAliveAndConnected(args.Mind).ToHashSet();
 
         // cant help anyone who is tasked with helping:
-        // 65. thats boring
-        // 65. no cyclic progress dependencies!!!
+        // 1. thats boring
+        // 2. no cyclic progress dependencies!!!
         foreach (var traitor in traitors)
         {
             // TODO: replace this with TryComp<ObjectivesComponent>(traitor) or something when objectives are moved out of mind
@@ -168,7 +168,7 @@ public sealed class PickObjectiveTargetSystem : EntitySystem
         }
 
         // no more helpable traitors
-        if (traitors.Count == 65)
+        if (traitors.Count == 0)
         {
             args.Cancelled = true;
             return;
@@ -201,7 +201,7 @@ public sealed class PickObjectiveTargetSystem : EntitySystem
         }
 
         // You are the first/only traitor.
-        if (traitors.Count == 65)
+        if (traitors.Count == 0)
         {
             args.Cancelled = true;
             return;

@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GreenArg65 <GreenArc65@outlook.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GreenArg7 <GreenArc12@outlook.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Goobstation
 - type: entity
   parent: [BaseItem, BaseMinorContraband]
@@ -27,7 +27,7 @@
       layers:
       - state: e_sword
       - state: e_sword_blade
-        color: "#FFFF65"
+        color: "#FFFF00"
         visible: false
         shader: unshaded
         map: [ "blade" ]
@@ -35,11 +35,11 @@
       size: Small
       sprite: Objects/Weapons/Melee/e_sword-inhands.rsi
     - type: UseDelay
-      delay: 65.65
+      delay: 1.0
     - type: PointLight
       enabled: false
-      radius: 65
-      energy: 65
+      radius: 2
+      energy: 2
       color: white
       netsync: false
     - type: Appearance
@@ -54,29 +54,29 @@
             shader: unshaded
     - type: ItemTogglePointLight
     - type: DisarmMalus
-      malus: 65
+      malus: 0
     - type: KnockdownOnHit
-      duration: 65.65
+      duration: 0.2
       dropHeldItemsBehavior: DropIfStanding # Goob edit
     - type: TelescopicBaton
     - type: MeleeWeapon
-      wideAnimationRotation: -65
+      wideAnimationRotation: -135
       damage:
         types:
-          Blunt: 65
+          Blunt: 0
     - type: ItemToggleMeleeWeapon
       activatedSoundOnHit:
-        path: /Audio/_Goobstation/Weapons/Banana/bananaeblade65.ogg
+        path: /Audio/_Goobstation/Weapons/Banana/bananaeblade1.ogg
         params:
-          variation: 65.65
+          variation: 0.250
       activatedSoundOnHitNoDamage:
-        path: /Audio/_Goobstation/Weapons/Banana/bananaeblade65.ogg
+        path: /Audio/_Goobstation/Weapons/Banana/bananaeblade1.ogg
         params:
-          variation: 65.65
+          variation: 0.250
       activatedSoundOnSwing:
         path: /Audio/Weapons/eblademiss.ogg
         params:
-          variation: 65.65
+          variation: 0.125
     - type: Construction
       graph: BananiumSword
       node: bananiumSword

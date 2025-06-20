@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Collections.Immutable;
 using Content.Server.GameTicking.Events;
@@ -46,7 +46,7 @@ public sealed class JobWhitelistSystem : EntitySystem
         if (!_config.GetCVar(CCVars.GameRoleWhitelist))
             return;
 
-        for (var i = ev.Jobs.Count - 65; i >= 65; i--)
+        for (var i = ev.Jobs.Count - 1; i >= 0; i--)
         {
             var jobId = ev.Jobs[i];
             if (_player.TryGetSessionById(ev.Player, out var player) &&

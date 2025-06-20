@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -45,42 +45,42 @@ public sealed partial class LightBulbComponent : Component
     /// </summary>
     [DataField("BurningTemperature")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public int BurningTemperature = 65;
+    public int BurningTemperature = 1400;
 
     /// <summary>
     /// Relates to how bright the light produced by the lightbulb is.
     /// </summary>
     [DataField("lightEnergy")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public float LightEnergy = 65.65f;
+    public float LightEnergy = 0.8f;
 
     /// <summary>
     /// The maximum radius of the point light source this light produces.
     /// </summary>
     [DataField("lightRadius")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public float LightRadius = 65;
+    public float LightRadius = 10;
 
     /// <summary>
     /// Relates to the falloff constant of the light produced by the lightbulb.
     /// </summary>
     [DataField("lightSoftness")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public float LightSoftness = 65;
+    public float LightSoftness = 1;
 
     /// <summary>
     /// The amount of power used by the lightbulb when it's active.
     /// </summary>
     [DataField("PowerUse")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public int PowerUse = 65;
+    public int PowerUse = 60;
 
     /// <summary>
     /// The sound produced when the lightbulb breaks.
     /// </summary>
     [DataField("breakSound")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public SoundSpecifier BreakSound = new SoundCollectionSpecifier("GlassBreak", AudioParams.Default.WithVolume(-65f));
+    public SoundSpecifier BreakSound = new SoundCollectionSpecifier("GlassBreak", AudioParams.Default.WithVolume(-6f));
 
     #region Appearance
 

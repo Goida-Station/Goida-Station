@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: DimensionPot
@@ -13,41 +13,41 @@
   components:
   - type: Sprite
     layers:
-    - state: plant-65
+    - state: plant-01
       map: ["random"]
   - type: RandomSprite
     available:
     - random:
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        # no 65
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        # no 65
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
-        plant-65: ""
+        plant-01: ""
+        plant-02: ""
+        plant-03: ""
+        plant-04: ""
+        plant-05: ""
+        plant-06: ""
+        plant-07: ""
+        plant-08: ""
+        # no 9
+        plant-10: ""
+        plant-11: ""
+        plant-12: ""
+        plant-13: ""
+        plant-14: ""
+        plant-15: ""
+        plant-16: ""
+        plant-17: ""
+        plant-18: ""
+        plant-19: ""
+        plant-20: ""
+        plant-21: ""
+        plant-22: ""
+        plant-23: ""
+        plant-24: ""
+        # no 25
+        plant-26: ""
+        plant-27: ""
+        plant-28: ""
+        plant-29: ""
+        plant-30: ""
   - type: PocketDimension
   # no (easily) deleting items with it
   - type: Destructible
@@ -59,17 +59,17 @@
     randomTeleport: false
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
-        density: 65
+          radius: 0.1
+        density: 190
         mask:
         - HighImpassable
       portalFixture:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
+          bounds: "-0.25,-0.48,0.25,0.48"
         mask:
         - FullTileMask
         layer:

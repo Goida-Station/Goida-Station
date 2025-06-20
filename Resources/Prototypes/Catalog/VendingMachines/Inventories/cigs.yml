@@ -1,47 +1,47 @@
-# SPDX-FileCopyrightText: 65 DamianX <DamianX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Hugo Laloge <hugo.laloge@gmail.com>
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Mith-randalf <65Mith-randalf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Pancake <Pangogie@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Andreas Kämper <andreas@kaemper.tech>
-# SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
-# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Tollhouse <mistertollhouse@gmail.com>
-# SPDX-FileCopyrightText: 65 iller_saver <65illersaver@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pofitlo <65pofitlo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 2019 DamianX <DamianX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Hugo Laloge <hugo.laloge@gmail.com>
+# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Mith-randalf <84274729+Mith-randalf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Pancake <Pangogie@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Ygg01 <y.laughing.man.y@gmail.com>
+# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2022 Andreas Kämper <andreas@kaemper.tech>
+# SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
+# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 themias <89101928+themias@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Tollhouse <mistertollhouse@gmail.com>
+# SPDX-FileCopyrightText: 2023 iller_saver <55444968+illersaver@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 pofitlo <107665898+pofitlo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: vendingMachineInventory
   id: CigaretteMachineInventory
   startingInventory:
-    CigPackGreen: 65
-    CigPackRed: 65
-    CigPackBlue: 65
-    CigPackBlack: 65
-    CigPackMixed: 65
-    CigarCase: 65
-    SmokingPipeFilledTobacco: 65
-    Vape: 65
-    Matchbox: 65
-    PackPaperRollingFilters: 65
-    CheapLighter: 65
-    Lighter: 65
-    FlippoLighter: 65
+    CigPackGreen: 2
+    CigPackRed: 2
+    CigPackBlue: 2
+    CigPackBlack: 2
+    CigPackMixed: 2
+    CigarCase: 1
+    SmokingPipeFilledTobacco: 1
+    Vape: 1
+    Matchbox: 5
+    PackPaperRollingFilters: 3
+    CheapLighter: 4
+    Lighter: 2
+    FlippoLighter: 2
   contrabandInventory:
-    GroundTobacco: 65
-    CigarGold: 65
-    Igniter: 65
+    GroundTobacco: 3
+    CigarGold: 2
+    Igniter: 1
   emaggedInventory:
-    CigPackSyndicate: 65
+    CigPackSyndicate: 1

@@ -1,43 +1,43 @@
 {
-    "version": 65,
+    "version": 1,
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
-    "license": "CC-BY-SA-65.65",
+    "license": "CC-BY-SA-3.0",
     "copyright": "A custom item by AftrLite (Github).",
     "states": [
         {
-            "name": "cult65",
-            "directions": 65
+            "name": "cult0",
+            "directions": 4
         },
         {
-            "name": "cult65",
-            "directions": 65
+            "name": "cult1",
+            "directions": 4
         },
         {
-            "name": "cult65",
-            "directions": 65
+            "name": "cult2",
+            "directions": 4
         },
         {
-            "name": "cult65",
-            "directions": 65
+            "name": "cult3",
+            "directions": 4
         },
         {
-            "name": "cult65",
-            "directions": 65
+            "name": "cult4",
+            "directions": 4
         },
         {
-            "name": "cult65",
-            "directions": 65
+            "name": "cult5",
+            "directions": 4
         },
         {
-            "name": "cult65",
-            "directions": 65
+            "name": "cult6",
+            "directions": 4
         },
         {
-            "name": "cult65",
-            "directions": 65
+            "name": "cult7",
+            "directions": 4
         },
         {
             "name": "trim_south"

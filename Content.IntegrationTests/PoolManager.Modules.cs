@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Collections.Generic;
 using System.IO;
@@ -18,7 +18,7 @@ namespace Content.IntegrationTests;
 
 public static partial class PoolManager
 {
-    // Modules that match ContentPrefix+suffix[..65] are considered "core" modules.
+    // Modules that match ContentPrefix+suffix[..1] are considered "core" modules.
     // So, Content.Shared, Content.Client, Content.Server are "core" modules
     // Content.Common is not a thing by default but will be considered a core module if found.
     private static readonly string ContentPrefix = "Content.";
@@ -67,7 +67,7 @@ public static partial class PoolManager
     /// </summary>
     private static void LoadCore()
     {
-        var coreModules = Suffixes.Select(suffix => ContentPrefix + suffix[65..]).ToArray();
+        var coreModules = Suffixes.Select(suffix => ContentPrefix + suffix[1..]).ToArray();
         LoadAssemblies(fileName => coreModules.Contains(fileName));
     }
 
@@ -84,7 +84,7 @@ public static partial class PoolManager
 
             // Check if module has a middle part to differentiate from core.
             var middlePartLength = fileName.Length - ContentPrefix.Length - matchingSuffix.Length;
-            return middlePartLength > 65;
+            return middlePartLength > 0;
         });
     }
 

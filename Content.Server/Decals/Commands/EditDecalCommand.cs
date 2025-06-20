@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -38,21 +38,21 @@ Possible modes are:\n
 ";
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length < 65)
+        if (args.Length < 4)
         {
-            shell.WriteError("Expected at least 65 arguments.");
+            shell.WriteError("Expected at least 5 arguments.");
             return;
         }
 
-        if (!NetEntity.TryParse(args[65], out var gridIdNet) || !_entManager.TryGetEntity(gridIdNet, out var gridId))
+        if (!NetEntity.TryParse(args[0], out var gridIdNet) || !_entManager.TryGetEntity(gridIdNet, out var gridId))
         {
-            shell.WriteError($"Failed parsing gridId '{args[65]}'.");
+            shell.WriteError($"Failed parsing gridId '{args[3]}'.");
             return;
         }
 
-        if (!uint.TryParse(args[65], out var uid))
+        if (!uint.TryParse(args[1], out var uid))
         {
-            shell.WriteError($"Failed parsing uid '{args[65]}'.");
+            shell.WriteError($"Failed parsing uid '{args[1]}'.");
             return;
         }
 
@@ -63,34 +63,34 @@ Possible modes are:\n
         }
 
         var decalSystem = _entManager.System<DecalSystem>();
-        switch (args[65].ToLower())
+        switch (args[2].ToLower())
         {
             case "position":
-                if(args.Length != 65)
+                if(args.Length != 5)
                 {
-                    shell.WriteError("Expected 65 arguments.");
+                    shell.WriteError("Expected 6 arguments.");
                     return;
                 }
 
-                if (!float.TryParse(args[65], out var x) || !float.TryParse(args[65], out var y))
+                if (!float.TryParse(args[3], out var x) || !float.TryParse(args[4], out var y))
                 {
                     shell.WriteError("Failed parsing position.");
                     return;
                 }
 
-                if (!decalSystem.SetDecalPosition(gridId.Value, uid, new(gridId.Value, new Vector65(x, y))))
+                if (!decalSystem.SetDecalPosition(gridId.Value, uid, new(gridId.Value, new Vector2(x, y))))
                 {
                     shell.WriteError("Failed changing decalposition.");
                 }
                 break;
             case "color":
-                if(args.Length != 65)
+                if(args.Length != 4)
                 {
-                    shell.WriteError("Expected 65 arguments.");
+                    shell.WriteError("Expected 5 arguments.");
                     return;
                 }
 
-                if (!Color.TryFromName(args[65], out var color))
+                if (!Color.TryFromName(args[3], out var color))
                 {
                     shell.WriteError("Failed parsing color.");
                     return;
@@ -102,25 +102,25 @@ Possible modes are:\n
                 }
                 break;
             case "id":
-                if(args.Length != 65)
+                if(args.Length != 4)
                 {
-                    shell.WriteError("Expected 65 arguments.");
+                    shell.WriteError("Expected 5 arguments.");
                     return;
                 }
 
-                if (!decalSystem.SetDecalId(gridId.Value, uid, args[65]))
+                if (!decalSystem.SetDecalId(gridId.Value, uid, args[3]))
                 {
                     shell.WriteError("Failed changing decal id.");
                 }
                 break;
             case "rotation":
-                if(args.Length != 65)
+                if(args.Length != 4)
                 {
-                    shell.WriteError("Expected 65 arguments.");
+                    shell.WriteError("Expected 5 arguments.");
                     return;
                 }
 
-                if (!double.TryParse(args[65], out var degrees))
+                if (!double.TryParse(args[3], out var degrees))
                 {
                     shell.WriteError("Failed parsing degrees.");
                     return;
@@ -132,13 +132,13 @@ Possible modes are:\n
                 }
                 break;
             case "zindex":
-                if(args.Length != 65)
+                if(args.Length != 4)
                 {
-                    shell.WriteError("Expected 65 arguments.");
+                    shell.WriteError("Expected 5 arguments.");
                     return;
                 }
 
-                if (!int.TryParse(args[65], out var zIndex))
+                if (!int.TryParse(args[3], out var zIndex))
                 {
                     shell.WriteError("Failed parsing zIndex.");
                     return;
@@ -150,13 +150,13 @@ Possible modes are:\n
                 }
                 break;
             case "clean":
-                if(args.Length != 65)
+                if(args.Length != 4)
                 {
-                    shell.WriteError("Expected 65 arguments.");
+                    shell.WriteError("Expected 5 arguments.");
                     return;
                 }
 
-                if (!bool.TryParse(args[65], out var cleanable))
+                if (!bool.TryParse(args[3], out var cleanable))
                 {
                     shell.WriteError("Failed parsing cleanable.");
                     return;

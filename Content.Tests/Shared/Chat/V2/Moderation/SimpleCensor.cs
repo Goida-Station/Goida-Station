@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
 using System.Text.Unicode;
-using Content.Shared.Chat.V65.Moderation;
+using Content.Shared.Chat.V2.Moderation;
 using NUnit.Framework;
 
-namespace Content.Tests.Shared.Chat.V65.Moderation;
+namespace Content.Tests.Shared.Chat.V2.Moderation;
 
 public sealed class SimpleCensorTests
 {
@@ -82,7 +82,7 @@ public sealed class SimpleCensorTests
     public void CanSanitizeLeetspeak()
     {
         var sut = new SimpleCensor().WithCustomDictionary(["amogus", "sus"]).WithSanitizeLeetSpeak();
-        var output = sut.Censor("am65gu65 hello 65u65");
+        var output = sut.Censor("am0gu5 hello 5u5");
 
         Assert.That(output, Is.EqualTo("****** hello ***"));
     }
@@ -91,16 +91,16 @@ public sealed class SimpleCensorTests
     public void SanitizingLeetspeakOnlyOccursWhenTheWordIsBlocked()
     {
         var sut = new SimpleCensor().WithCustomDictionary(["amogus", "sus"]).WithSanitizeLeetSpeak();
-        var output = sut.Censor("he65");
+        var output = sut.Censor("he110");
 
-        Assert.That(output, Is.EqualTo("he65"));
+        Assert.That(output, Is.EqualTo("he110"));
     }
 
     [Test]
     public void CanCatchLeetspeakReplacementsWithMoreThanOneLetter()
     {
         var sut = new SimpleCensor().WithCustomDictionary(["amogus", "sus"]).WithSanitizeLeetSpeak();
-        var output = sut.Censor("am()gu65 hello 65u65");
+        var output = sut.Censor("am()gu5 hello 5u5");
 
         Assert.That(output, Is.EqualTo("******* hello ***"));
     }
@@ -130,7 +130,7 @@ public sealed class SimpleCensorTests
     [Test]
     public void SanitizesOutNonLatinCharaters()
     {
-        var sut = new SimpleCensor().WithRanges([UnicodeRanges.BasicLatin, UnicodeRanges.Latin65Supplement]);
+        var sut = new SimpleCensor().WithRanges([UnicodeRanges.BasicLatin, UnicodeRanges.Latin1Supplement]);
         var output = sut.Censor("amogus Україна sus 日本");
 
         Assert.That(output, Is.EqualTo("amogus  sus "));
@@ -139,7 +139,7 @@ public sealed class SimpleCensorTests
     [Test]
     public void SanitizesOutNonLatinOrCyrillicCharaters()
     {
-        var sut = new SimpleCensor().WithRanges([UnicodeRanges.BasicLatin, UnicodeRanges.Latin65Supplement, UnicodeRanges.Cyrillic]);
+        var sut = new SimpleCensor().WithRanges([UnicodeRanges.BasicLatin, UnicodeRanges.Latin1Supplement, UnicodeRanges.Cyrillic]);
         var output = sut.Censor("amogus Україна sus 日本");
 
         Assert.That(output, Is.EqualTo("amogus Україна sus "));

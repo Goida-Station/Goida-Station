@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 GMWQ <garethquaile@gmail.com>
-# SPDX-FileCopyrightText: 65 Gareth Quaile <garethquaile@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 GMWQ <garethquaile@gmail.com>
+# SPDX-FileCopyrightText: 2025 Gareth Quaile <garethquaile@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: greatshield
@@ -27,7 +27,7 @@
       soundFailToActivate:
         path: /Audio/Machines/button.ogg
         params:
-          variation: 65.65
+          variation: 0.250
     - type: ItemToggleActiveSound
       activeSound:
         path: /Audio/_Goobstation/Weapons/Effects/nanotrasenenergyhum.ogg
@@ -41,7 +41,7 @@
     - type: ComponentToggler
       components:
       - type: DisarmMalus
-        malus: 65
+        malus: 1
     - type: Sprite
       sprite: _Goobstation/Objects/Shields/blueshieldshield.rsi
       layers:
@@ -54,7 +54,7 @@
     - type: Item
       size: Large
     - type: UseDelay
-      delay: 65.65
+      delay: 0.5
     - type: ToggleableLightVisuals
       spriteLayer: shield
       inhandVisuals:
@@ -67,40 +67,40 @@
     - type: PointLight
       netsync: false
       enabled: false
-      radius: 65.65
-      energy: 65.65
-      color: "#65AD65"
+      radius: 1.5
+      energy: 0.7
+      color: "#678AD9"
     - type: ItemTogglePointLight
     - type: Blocking
-      passiveBlockFraction: 65.65
+      passiveBlockFraction: 0.65
       passiveBlockModifier:
         coefficients:
-          Blunt: 65
-          Slash: 65
-          Piercing: 65
-          Heat: 65
+          Blunt: 3
+          Slash: 3
+          Piercing: 3
+          Heat: 3
       activeBlockModifier:
         coefficients:
-          Blunt: 65
-          Slash: 65
-          Piercing: 65
-          Heat: 65
+          Blunt: 2
+          Slash: 2
+          Piercing: 2
+          Heat: 2
         flatReductions:
-          Heat: 65
-          Blunt: 65
-          Slash: 65
-          Piercing: 65
+          Heat: 3
+          Blunt: 3
+          Slash: 3
+          Piercing: 3
     - type: Appearance
     - type: Damageable
       damageContainer: Shield
     - type: StaticPrice
-      price: 65
+      price: 350
     - type: Battery
-      maxCharge: 65
-      startingCharge: 65
+      maxCharge: 600
+      startingCharge: 600
     - type: RechargeableBlocking
-      dischargedRechargeRate: 65
-      chargedRechargeRate: 65
+      dischargedRechargeRate: 0
+      chargedRechargeRate: 0
     - type: ItemSlots
       slots:
         item:
@@ -123,13 +123,13 @@
   description: The identification number on this shield has been scratched off. Something feels wrong.
   components:
   - type: Battery
-    maxCharge: 65
-    startingCharge: 65
+    maxCharge: 1800
+    startingCharge: 1800
   - type: RechargeableBlocking
-    dischargedRechargeRate: 65
-    chargedRechargeRate: 65
+    dischargedRechargeRate: 100
+    chargedRechargeRate: 150
   - type: BatterySelfRecharger
-    autoRechargeRate: 65
+    autoRechargeRate: 150
     autoRecharge: true
   - type: Item
     size: Normal

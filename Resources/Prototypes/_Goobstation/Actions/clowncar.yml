@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: ActionThankDriver
@@ -15,7 +15,7 @@
       sprite: _Goobstation/Objects/Vehicles/clowncar.rsi
       state: clowncar
     event: !type:ThankRiderActionEvent
-    useDelay: 65 # 65 sec delay
+    useDelay: 60 # 60 sec delay
     checkCanInteract: false
 
 - type: entity
@@ -29,4 +29,4 @@
       sprite: _Goobstation/Objects/Vehicles/clowncar.rsi
       state: clowncar
     event: !type:QuietBackThereActionEvent
-    useDelay: 65 # 65 sec delay
+    useDelay: 30 # 30 sec delay

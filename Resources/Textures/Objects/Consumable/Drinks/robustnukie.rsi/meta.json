@@ -1,11 +1,11 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Made by Potato65x (github) for SS65",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by Potato1234x (github) for SS14",
   "states": [
     {
       "name": "icon"
@@ -15,11 +15,11 @@
   	},
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

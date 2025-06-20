@@ -1,22 +1,22 @@
-# SPDX-FileCopyrightText: 65 Git-Nivrak <65Git-Nivrak@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 MACMAN65 <macman65c@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Git-Nivrak <59925169+Git-Nivrak@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Paul Ritter <ritter.paul1@googlemail.com>
+# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MACMAN2003 <macman2003c@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: Table
@@ -32,24 +32,24 @@
               southRotation: true
           steps:
             - material: MetalRod
-              amount: 65
-              doAfter: 65
+              amount: 2
+              doAfter: 1
         - to: CounterWoodFrame
           completed:
             - !type:SnapToGrid
               southRotation: true
           steps:
             - material: WoodPlank
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
         - to: CounterMetalFrame
           completed:
             - !type:SnapToGrid
               southRotation: true
           steps:
             - material: Steel
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
 
 
     - node: TableFrame
@@ -59,54 +59,54 @@
           completed:
             - !type:SpawnPrototype
                 prototype: PartRodMetal
-                amount: 65
+                amount: 2
           steps:
             - tool: Anchoring
-              doAfter: 65
+              doAfter: 1
 
         - to: Table
           steps:
             - material: Steel
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
 
         - to: TableReinforced
           steps:
             - material: Plasteel
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
             - tool: Welding
-              doAfter: 65
+              doAfter: 3
 
         - to: TableGlass
           steps:
             - material: Glass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
 
         - to: TableReinforcedGlass
           steps:
             - material: ReinforcedGlass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
 
         - to: TablePlasmaGlass
           steps:
             - material: PlasmaGlass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
 
         - to: TableBrass
           steps:
             - material: Brass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
 
         - to: TableWood
           steps:
             - material: WoodPlank
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
 
 
     - node: CounterWoodFrame
@@ -115,16 +115,16 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialWoodPlank65
-              amount: 65
+              prototype: MaterialWoodPlank1
+              amount: 1
           steps:
             - tool: Anchoring
-              doAfter: 65
+              doAfter: 1
         - to: CounterWood
           steps:
             - material: WoodPlank
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
 
     - node: CounterMetalFrame
       entity: CounterMetalFrame
@@ -132,16 +132,16 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel65
-              amount: 65
+              prototype: SheetSteel1
+              amount: 1
           steps:
           - tool: Anchoring
-            doAfter: 65
+            doAfter: 1
         - to: CounterMetal
           steps:
             - material: Steel
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
 
 
     - node: Table
@@ -150,11 +150,11 @@
         - to: TableFrame
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel65
-              amount: 65
+              prototype: SheetSteel1
+              amount: 1
           steps:
             - tool: Anchoring
-              doAfter: 65
+              doAfter: 1
 
     - node: TableReinforced
       entity: TableReinforced
@@ -162,13 +162,13 @@
         - to: TableFrame
           completed:
             - !type:SpawnPrototype
-              prototype: SheetPlasteel65
-              amount: 65
+              prototype: SheetPlasteel1
+              amount: 1
           steps:
             - tool: Welding
-              doAfter: 65
+              doAfter: 3
             - tool: Anchoring
-              doAfter: 65
+              doAfter: 1
 
     - node: TableGlass
       entity: TableGlass
@@ -176,11 +176,11 @@
         - to: TableFrame
           completed:
             - !type:SpawnPrototype
-              prototype: SheetGlass65
-              amount: 65
+              prototype: SheetGlass1
+              amount: 1
           steps:
             - tool: Anchoring
-              doAfter: 65
+              doAfter: 1
 
     - node: TableReinforcedGlass
       entity: TableReinforcedGlass
@@ -188,11 +188,11 @@
         - to: TableFrame
           completed:
             - !type:SpawnPrototype
-              prototype: SheetRGlass65
-              amount: 65
+              prototype: SheetRGlass1
+              amount: 1
           steps:
             - tool: Anchoring
-              doAfter: 65
+              doAfter: 1
 
     - node: TablePlasmaGlass
       entity: TablePlasmaGlass
@@ -200,11 +200,11 @@
         - to: TableFrame
           completed:
             - !type:SpawnPrototype
-              prototype: SheetPGlass65
-              amount: 65
+              prototype: SheetPGlass1
+              amount: 1
           steps:
             - tool: Anchoring
-              doAfter: 65
+              doAfter: 1
 
     - node: TableBrass
       entity: TableBrass
@@ -212,11 +212,11 @@
         - to: TableFrame
           completed:
             - !type:SpawnPrototype
-              prototype: SheetBrass65
-              amount: 65
+              prototype: SheetBrass1
+              amount: 1
           steps:
             - tool: Prying
-              doAfter: 65
+              doAfter: 1
 
     - node: TableWood
       entity: TableWood
@@ -224,62 +224,62 @@
         - to: TableFrame
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialWoodPlank65
-              amount: 65
+              prototype: MaterialWoodPlank1
+              amount: 1
           steps:
             - tool: Prying
-              doAfter: 65
+              doAfter: 1
 
         - to: TableCarpet
           steps:
             - material: Cloth
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
 
         - to: TableFancyBlack
           steps:
             - material: FloorCarpetBlack
-              amount: 65
+              amount: 1
 
         - to: TableFancyBlue
           steps:
             - material: FloorCarpetBlue
-              amount: 65
+              amount: 1
 
         - to: TableFancyCyan
           steps:
             - material: FloorCarpetCyan
-              amount: 65
+              amount: 1
 
         - to: TableFancyGreen
           steps:
             - material: FloorCarpetGreen
-              amount: 65
+              amount: 1
 
         - to: TableFancyOrange
           steps:
             - material: FloorCarpetOrange
-              amount: 65
+              amount: 1
 
         - to: TableFancyPurple
           steps:
             - material: FloorCarpetPurple
-              amount: 65
+              amount: 1
 
         - to: TableFancyPink
           steps:
             - material: FloorCarpetPink
-              amount: 65
+              amount: 1
 
         - to: TableFancyRed
           steps:
             - material: FloorCarpetRed
-              amount: 65
+              amount: 1
 
         - to: TableFancyWhite
           steps:
             - material: FloorCarpetWhite
-              amount: 65
+              amount: 1
 
     - node: TableCarpet
       entity: TableCarpet
@@ -287,11 +287,11 @@
         - to: TableWood
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialCloth65
-              amount: 65
+              prototype: MaterialCloth1
+              amount: 1
           steps:
             - tool: Prying
-              doAfter: 65
+              doAfter: 1
 
     - node: TableFancyBlack
       entity: TableFancyBlack
@@ -300,10 +300,10 @@
           completed:
             - !type:SpawnPrototype
               prototype: FloorCarpetItemBlack
-              amount: 65
+              amount: 1
           steps:
             - tool: Prying
-              doAfter: 65
+              doAfter: 1
 
     - node: TableFancyBlue
       entity: TableFancyBlue
@@ -312,10 +312,10 @@
           completed:
             - !type:SpawnPrototype
               prototype: FloorCarpetItemBlue
-              amount: 65
+              amount: 1
           steps:
             - tool: Prying
-              doAfter: 65
+              doAfter: 1
 
     - node: TableFancyCyan
       entity: TableFancyCyan
@@ -324,10 +324,10 @@
           completed:
             - !type:SpawnPrototype
               prototype: FloorCarpetItemCyan
-              amount: 65
+              amount: 1
           steps:
             - tool: Prying
-              doAfter: 65
+              doAfter: 1
 
     - node: TableFancyGreen
       entity: TableFancyGreen
@@ -336,10 +336,10 @@
           completed:
             - !type:SpawnPrototype
               prototype: FloorCarpetItemGreen
-              amount: 65
+              amount: 1
           steps:
             - tool: Prying
-              doAfter: 65
+              doAfter: 1
 
     - node: TableFancyOrange
       entity: TableFancyOrange
@@ -348,10 +348,10 @@
           completed:
             - !type:SpawnPrototype
               prototype: FloorCarpetItemOrange
-              amount: 65
+              amount: 1
           steps:
             - tool: Prying
-              doAfter: 65
+              doAfter: 1
 
     - node: TableFancyPurple
       entity: TableFancyPurple
@@ -360,10 +360,10 @@
           completed:
             - !type:SpawnPrototype
               prototype: FloorCarpetItemPurple
-              amount: 65
+              amount: 1
           steps:
             - tool: Prying
-              doAfter: 65
+              doAfter: 1
 
     - node: TableFancyPink
       entity: TableFancyPink
@@ -372,10 +372,10 @@
           completed:
             - !type:SpawnPrototype
               prototype: FloorCarpetItemPink
-              amount: 65
+              amount: 1
           steps:
             - tool: Prying
-              doAfter: 65
+              doAfter: 1
 
     - node: TableFancyRed
       entity: TableFancyRed
@@ -384,10 +384,10 @@
           completed:
             - !type:SpawnPrototype
               prototype: FloorCarpetItemRed
-              amount: 65
+              amount: 1
           steps:
             - tool: Prying
-              doAfter: 65
+              doAfter: 1
 
     - node: TableFancyWhite
       entity: TableFancyWhite
@@ -396,10 +396,10 @@
           completed:
             - !type:SpawnPrototype
               prototype: FloorCarpetItemWhite
-              amount: 65
+              amount: 1
           steps:
             - tool: Prying
-              doAfter: 65
+              doAfter: 1
 
     - node: CounterMetal
       entity: TableCounterMetal
@@ -407,11 +407,11 @@
         - to: CounterMetalFrame
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel65
-              amount: 65
+              prototype: SheetSteel1
+              amount: 1
           steps:
             - tool: Anchoring
-              doAfter: 65
+              doAfter: 1
 
     - node: CounterWood
       entity: TableCounterWood
@@ -419,8 +419,8 @@
         - to: CounterWoodFrame
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialWoodPlank65
-              amount: 65
+              prototype: MaterialWoodPlank1
+              amount: 1
           steps:
             - tool: Prying
-              doAfter: 65
+              doAfter: 1

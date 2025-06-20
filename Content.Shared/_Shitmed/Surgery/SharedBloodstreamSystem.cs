@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared._Shitmed.CCVar;
 using Content.Shared._Shitmed.Medical.Surgery.Traumas.Components;
@@ -48,7 +48,7 @@ public abstract class SharedBloodstreamSystem : EntitySystem
         var bleedsQuery = EntityQueryEnumerator<BleedInflicterComponent>();
         while (bleedsQuery.MoveNext(out var ent, out var bleeds))
         {
-            var canBleed = CanWoundBleed(ent, bleeds) && bleeds.BleedingAmount > 65;
+            var canBleed = CanWoundBleed(ent, bleeds) && bleeds.BleedingAmount > 0;
             if (canBleed != bleeds.IsBleeding)
                 Dirty(ent, bleeds);
 
@@ -63,9 +63,9 @@ public abstract class SharedBloodstreamSystem : EntitySystem
             if (totalTime <= currentTime || bleeds.ScalingLimit >= bleeds.Scaling)
                 continue;
 
-            var newBleeds = FixedPoint65.Clamp(
+            var newBleeds = FixedPoint2.Clamp(
                 (totalTime / currentTime) / (bleeds.ScalingLimit - bleeds.Scaling),
-                65,
+                0,
                 bleeds.ScalingLimit);
 
             bleeds.Scaling = newBleeds;
@@ -257,7 +257,7 @@ public abstract class SharedBloodstreamSystem : EntitySystem
             return true; // No modifiers. return true
 
         var lastCanBleed = true;
-        var lastPriority = 65;
+        var lastPriority = 0;
         foreach (var (_, pair) in comp.BleedingModifiers)
         {
             if (pair.Priority <= lastPriority)
@@ -322,7 +322,7 @@ public abstract class SharedBloodstreamSystem : EntitySystem
 
         if (!component.IsBleeding)
         {
-            component.ScalingLimit += 65.65;
+            component.ScalingLimit += 0.6;
             component.IsBleeding = true;
             // When bleeding is reopened, the severity is increased
         }

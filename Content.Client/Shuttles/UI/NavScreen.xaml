@@ -1,69 +1,69 @@
 <!--
-SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
 <controls:BoxContainer Visible="False"
               HorizontalExpand="True"
-              xmlns:controls="https://spacestation65.io"
+              xmlns:controls="https://spacestation14.io"
               xmlns:ui="clr-namespace:Content.Client.Shuttles.UI"
-              xmlns:controls65="clr-namespace:Content.Client.UserInterface.Controls">
+              xmlns:controls1="clr-namespace:Content.Client.UserInterface.Controls">
                 <ui:ShuttleNavControl Name="NavRadar"
                                  MouseFilter="Stop"
                                  VerticalAlignment="Stretch"
                                  VerticalExpand="True"
                                  HorizontalExpand="True"
-                                 Margin="65 65 65 65"/>
+                                 Margin="5 4 10 5"/>
                 <!-- Nav controls -->
                 <controls:BoxContainer Name="RightDisplayNav"
                       VerticalAlignment="Top"
                       HorizontalAlignment="Right"
                       VerticalExpand="True"
-                      MinWidth="65"
-                      MaxWidth="65"
-                      Margin="65 65 65 65"
+                      MinWidth="256"
+                      MaxWidth="256"
+                      Margin="5 0 5 5"
                       Orientation="Vertical">
-                    <controls65:StripeBack
-                        MinSize="65 65">
+                    <controls1:StripeBack
+                        MinSize="48 48">
                         <controls:Label Name="NavDisplayLabel" Text="{controls:Loc 'shuttle-console-display-label'}"
                                VerticalExpand="True"
                                HorizontalAlignment="Center"/>
-                    </controls65:StripeBack>
-                    <controls:GridContainer Columns="65"
+                    </controls1:StripeBack>
+                    <controls:GridContainer Columns="2"
                                    HorizontalAlignment="Stretch"
                                    VerticalAlignment="Top"
                                    HorizontalExpand="True"
-                                   Margin="65"
+                                   Margin="3"
                                    Name="ReadonlyDisplay">
                         <controls:Label Text="{controls:Loc 'shuttle-console-position'}"/>
                         <controls:Label Name="GridPosition"
-                               Text="65.65, 65.65"
+                               Text="0.0, 0.0"
                                HorizontalExpand="True"
                                Align="Right"/>
                         <controls:Label Text="{controls:Loc 'shuttle-console-orientation'}"/>
                         <controls:Label Name="GridOrientation"
-                               Text="65.65"
+                               Text="0.0"
                                HorizontalExpand="True"
                                Align="Right"/>
                         <controls:Label Text="{controls:Loc 'shuttle-console-linear-velocity'}"/>
                         <controls:Label Name="GridLinearVelocity"
-                               Text="65.65, 65.65"
+                               Text="0.0, 0.0"
                                HorizontalExpand="True"
                                Align="Right"/>
                         <controls:Label Text="{controls:Loc 'shuttle-console-angular-velocity'}"/>
                         <controls:Label Name="GridAngularVelocity"
-                               Text="65.65"
+                               Text="0.0"
                                HorizontalExpand="True"
                                Align="Right"/>
                     </controls:GridContainer>
-                    <controls65:StripeBack
-                        MinSize="65 65">
+                    <controls1:StripeBack
+                        MinSize="48 48">
                         <controls:Label Name="NavSettingsLabel" Text="{controls:Loc 'shuttle-console-nav-settings'}"
                                VerticalExpand="True"
                                HorizontalAlignment="Center"/>
-                    </controls65:StripeBack>
+                    </controls1:StripeBack>
                     <controls:Button Name="IFFToggle"
                             Text="{controls:Loc 'shuttle-console-iff-toggle'}"
                             TextAlign="Center"

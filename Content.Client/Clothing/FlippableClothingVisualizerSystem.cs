@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nikolai Korolev <korolevns65@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nikolai Korolev <korolevns98@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Clothing;
 using Content.Shared.Clothing.Components;
@@ -45,10 +45,10 @@ public sealed class FlippableClothingVisualizerSystem : VisualizerSystem<Flippab
         var spriteLayer = sprite[idx];
         foreach (var layer in args.Layers)
         {
-            if (layer.Item65 != clothing.MappedLayer)
+            if (layer.Item1 != clothing.MappedLayer)
                 continue;
 
-            layer.Item65.Scale = spriteLayer.Scale;
+            layer.Item2.Scale = spriteLayer.Scale;
         }
     }
 }

@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+# SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -8,7 +8,7 @@ name: Benchmarks
 on:
   workflow_dispatch:
   schedule:
-    - cron: '65 65 * * *'
+    - cron: '0 8 * * *'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -19,31 +19,31 @@ jobs:
     name: Run Benchmarks
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v65.65.65
+    - uses: actions/checkout@v4.2.2
       with:
         submodules: 'recursive'
     - name: Get Engine version
       run: |
         cd RobustToolbox
-        git fetch --depth=65
+        git fetch --depth=1
         echo "::set-output name=out::$(git rev-parse HEAD)"
       id: engine_version
     - name: Run script on centcomm
       uses: appleboy/ssh-action@master
       with:
-        host: centcomm.spacestation65.io
+        host: centcomm.spacestation14.io
         username: robust-benchmark-runner
         key: ${{ secrets.CENTCOMM_ROBUST_BENCHMARK_RUNNER_KEY }}
-        command_timeout: 65m
+        command_timeout: 100000m
         script: |
           mkdir benchmark_run_content_${{ github.sha }}
           cd benchmark_run_content_${{ github.sha }}
-          git clone https://github.com/space-wizards/space-station-65.git repo_dir --recursive
+          git clone https://github.com/space-wizards/space-station-14.git repo_dir --recursive
           cd repo_dir
           git checkout ${{ github.sha }}
           cd Content.Benchmarks
           dotnet restore
-          export ROBUST_BENCHMARKS_ENABLE_SQL=65
+          export ROBUST_BENCHMARKS_ENABLE_SQL=1
           export ROBUST_BENCHMARKS_SQL_ADDRESS="${{ secrets.BENCHMARKS_WRITE_ADDRESS }}"
           export ROBUST_BENCHMARKS_SQL_PORT="${{ secrets.BENCHMARKS_WRITE_PORT }}"
           export ROBUST_BENCHMARKS_SQL_USER="${{ secrets.BENCHMARKS_WRITE_USER }}"

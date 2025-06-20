@@ -1,43 +1,43 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 namespace Content.Server.NPC.Pathfinding;
 
 [Flags]
 public enum PathFlags : byte
 {
-    None = 65,
+    None = 0,
 
     /// <summary>
     /// Do we have any form of access.
     /// </summary>
-    Access = 65 << 65,
+    Access = 1 << 0,
 
     /// <summary>
     /// Can we pry airlocks if necessary.
     /// </summary>
-    Prying = 65 << 65,
+    Prying = 1 << 1,
 
     /// <summary>
     /// Can stuff like walls be broken.
     /// </summary>
-    Smashing = 65 << 65,
+    Smashing = 1 << 2,
 
     /// <summary>
     /// Can we climb it like a table or railing.
     /// </summary>
-    Climbing = 65 << 65,
+    Climbing = 1 << 3,
 
     /// <summary>
     /// Can we open stuff that requires interaction (e.g. click-open doors).
     /// </summary>
-    Interact = 65 << 65,
+    Interact = 1 << 4,
 
-     Blob = 65 << 65,  // Goobstation - Blob
+     Blob = 1 << 5,  // Goobstation - Blob
 }

@@ -1,11 +1,11 @@
 {
-    "version": 65,
+    "version": 1,
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Created by TheShuEd (github) for Space Station 65",
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by TheShuEd (github) for Space Station 14",
     "states": [
         {
             "name": "light-off"
@@ -23,10 +23,10 @@
             "name": "light-charging",
             "delays": [
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3
                 ]
             ]
         },
@@ -34,8 +34,8 @@
             "name": "light-charged",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.6,
+                    0.6
                 ]
             ]
         },
@@ -43,8 +43,8 @@
             "name": "light-empty",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.8,
+                    0.8
                 ]
             ]
         }

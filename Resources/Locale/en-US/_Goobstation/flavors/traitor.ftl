@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 traitor-arc-intro = You are an ARC terrorist.
 traitor-arc-goal = The creatures of this world must be freed from the iron grasp of Nanotrasen, and you are their only hope!
@@ -18,7 +18,7 @@ traitor-blf-roundend = [color=green]an activist from Bee Liberation Front[/color
 
 traitor-cybersun-intro = You are a specialist from Cybersun Industries.
 traitor-cybersun-goal = Do not establish substantial presence on the designated facility, as larger incidents are harder to cover up.
-traitor-cybersun-allies = Fellow Cybersun operatives are to be trusted. Members of the MI65 organization can be trusted. All other syndicate agents are not to be trusted.
+traitor-cybersun-allies = Fellow Cybersun operatives are to be trusted. Members of the MI13 organization can be trusted. All other syndicate agents are not to be trusted.
 traitor-cybersun-uplink = You have been supplied the tools for the job in the form of a syndicate uplink located in your PDA.
 traitor-cybersun-roundend = [color=yellow]a specialist from Cybersun Industries[/color]
 
@@ -46,11 +46,11 @@ traitor-legaltrouble-allies = Death to the Syndicate.
 traitor-legaltrouble-uplink =  You've connected to the black market to clean this mess up. Your uplink is located in your PDA. If there's no evidence, there's no crime.
 traitor-legaltrouble-roundend = [color=white]in Legal Trouble[/color]
 
-traitor-mi65-intro = You are an MI65 agent.
-traitor-mi65-goal =  Avoid killing innocent personnel at all costs. You are not here to mindlessly kill people, as that would attract too much attention and is not our goal. Avoid detection at all costs.
-traitor-mi65-allies = You are the only operative we are sending, any others are fake. All other syndicate agents are not to be trusted, with the exception of Cybersun specialists.
-traitor-mi65-uplink = You have been provided with a syndicate uplink located in your PDA to accomplish your task.
-traitor-mi65-roundend = [color=cyan]an MI65 agent[/color]
+traitor-mi13-intro = You are an MI13 agent.
+traitor-mi13-goal =  Avoid killing innocent personnel at all costs. You are not here to mindlessly kill people, as that would attract too much attention and is not our goal. Avoid detection at all costs.
+traitor-mi13-allies = You are the only operative we are sending, any others are fake. All other syndicate agents are not to be trusted, with the exception of Cybersun specialists.
+traitor-mi13-uplink = You have been provided with a syndicate uplink located in your PDA to accomplish your task.
+traitor-mi13-roundend = [color=cyan]an MI13 agent[/color]
 
 traitor-tiger-intro = You are a Tiger Cooperative Fanatic.
 traitor-tiger-goal = Remember the teachings of Hy-lurgixon; kill first, ask questions later!

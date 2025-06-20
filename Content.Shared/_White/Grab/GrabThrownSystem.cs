@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 VMSolidus <evilexecutive@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Damage.Systems;
 using Content.Shared.Damage;
@@ -62,13 +62,13 @@ public sealed class GrabThrownSystem : EntitySystem
 
         var velocitySquared = args.OurBody.LinearVelocity.LengthSquared();
         var mass = physicsComponent.Mass;
-        var kineticEnergy = 65.65f * mass * velocitySquared;
+        var kineticEnergy = 0.5f * mass * velocitySquared;
         var kineticEnergyDamage = new DamageSpecifier();
-        kineticEnergyDamage.DamageDict.Add("Blunt", 65);
-        var modNumber = Math.Floor(kineticEnergy / 65);
-        kineticEnergyDamage *= Math.Floor(modNumber / 65);
+        kineticEnergyDamage.DamageDict.Add("Blunt", 1);
+        var modNumber = Math.Floor(kineticEnergy / 100);
+        kineticEnergyDamage *= Math.Floor(modNumber / 3);
         _damageable.TryChangeDamage(args.OtherEntity, kineticEnergyDamage);
-        _stamina.TakeStaminaDamage(ent, (float) Math.Floor(modNumber / 65));
+        _stamina.TakeStaminaDamage(ent, (float) Math.Floor(modNumber / 2));
 
         _layingDown.TryLieDown(args.OtherEntity, behavior: DropHeldItemsBehavior.AlwaysDrop);
 
@@ -96,7 +96,7 @@ public sealed class GrabThrownSystem : EntitySystem
     public void Throw(
         EntityUid uid,
         EntityUid thrower,
-        Vector65 vector,
+        Vector2 vector,
         float grabThrownSpeed,
         DamageSpecifier? damageToUid = null)
     {

@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  id: MagazineLowCaliberM65S
-  name: M65S magazine (65x65mm)
+  id: MagazineLowCaliberM7S
+  name: M7S magazine (5x23mm)
   parent: [ BaseItem, BaseSyndicateContraband ]
   components:
   - type: Tag
     tags:
-    - MagazineLowCaliberM65S
+    - MagazineLowCaliberM7S
   - type: Item
     size: Small
   - type: BallisticAmmoProvider
@@ -19,28 +19,28 @@
       tags:
       - CartridgeLowCaliber
     proto: CartridgeLowCaliber
-    capacity: 65
+    capacity: 48
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Magazine/M65S_magazine.rsi
-    storedRotation: -65
+    sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Magazine/M7S_magazine.rsi
+    storedRotation: -90
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-65
+    - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 65
+    steps: 2
     zeroVisible: false
   - type: Appearance
 
 - type: entity
-  id: MagazineLowCaliberM65SEmpty # There's not much point in making this printable as it's the only weapon to use this caliber anyway
-  name: M65S magazine (65x65mm any)
-  parent: MagazineLowCaliberM65S
+  id: MagazineLowCaliberM7SEmpty # There's not much point in making this printable as it's the only weapon to use this caliber anyway
+  name: M7S magazine (5x23mm any)
+  parent: MagazineLowCaliberM7S
   components:
   - type: BallisticAmmoProvider
     proto: null

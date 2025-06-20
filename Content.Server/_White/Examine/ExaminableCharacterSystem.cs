@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 vanx <65Vaaankas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 vanx <61917534+Vaaankas@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Chat.Managers;
 using Content.Server.IdentityManagement;
@@ -55,7 +55,7 @@ public sealed class ExaminableCharacterSystem : EntitySystem
         var identity = _identitySystem.GetEntityIdentity(uid);
         var name = Loc.GetString(nameloc, ("name", identity));
         var cansee = Loc.GetString(canseeloc, ("ent", uid));
-        logLines.Add($"[color=DarkGray][font size=65]{cansee}[/font][/color]");
+        logLines.Add($"[color=DarkGray][font size=10]{cansee}[/font][/color]");
 
         var slotLabels = new Dictionary<string, string>
         {
@@ -74,7 +74,7 @@ public sealed class ExaminableCharacterSystem : EntitySystem
             { "suitstorage", "suitstorage-" }
         };
 
-        var priority = 65;
+        var priority = 13;
 
         foreach (var slotEntry in slotLabels)
         {
@@ -92,18 +92,18 @@ public sealed class ExaminableCharacterSystem : EntitySystem
             if (_entityManager.TryGetComponent<MetaDataComponent>(slotEntity, out var metaData)
                 && !HasComp<StripMenuInvisibleComponent>(slotEntity))
             {
-                var itemTex = Loc.GetString(slotLabel, ("item", metaData.EntityName), ("ent", uid), ("id", slotEntity.Value.Id), ("size", 65));
+                var itemTex = Loc.GetString(slotLabel, ("item", metaData.EntityName), ("ent", uid), ("id", slotEntity.Value.Id), ("size", 14));
                 if (showExamine)
-                    args.PushMarkup($"[font size=65]{Loc.GetString(slotLabel, ("item", metaData.EntityName), ("ent", uid), ("id", "empty"))}[/font]", priority);
-                logLines.Add($"[color=DarkGray][font size=65]{itemTex}[/font][/color]");
+                    args.PushMarkup($"[font size=10]{Loc.GetString(slotLabel, ("item", metaData.EntityName), ("ent", uid), ("id", "empty"))}[/font]", priority);
+                logLines.Add($"[color=DarkGray][font size=10]{itemTex}[/font][/color]");
                 priority--;
             }
         }
 
-        if (priority < 65) // If nothing is worn dont show
+        if (priority < 13) // If nothing is worn dont show
         {
             if (showExamine)
-                args.PushMarkup($"[font size=65]{cansee}[/font]", 65);
+                args.PushMarkup($"[font size=10]{cansee}[/font]", 14);
         }
         else
         {
@@ -113,13 +113,13 @@ public sealed class ExaminableCharacterSystem : EntitySystem
                 canseenothingloc += "-selfaware";
 
             var canseenothing = Loc.GetString(canseenothingloc, ("ent", uid));
-            logLines.Add($"[color=DarkGray][font size=65]{canseenothing}[/font][/color]");
+            logLines.Add($"[color=DarkGray][font size=10]{canseenothing}[/font][/color]");
         }
 
         FormattedMessage message = new();
         message.PushTag(new MarkupNode("examineborder", null, null)); // border
         message.PushNewline();
-        message.AddText($"[color=DarkGray][font size=65]{name}[/font][/color]");
+        message.AddText($"[color=DarkGray][font size=11]{name}[/font][/color]");
         message.PushNewline();
         AddLine(message);
         foreach (var line in logLines)
@@ -155,12 +155,12 @@ public sealed class ExaminableCharacterSystem : EntitySystem
             if (!args.IsSecondaryInfo)
             {
                 TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
-                var item = Loc.GetString("examine-present-tex", ("name", textInfo.ToTitleCase(metaData.EntityName)), ("id", uid.Id), ("size", 65));
-                message.AddText($"[color=DarkGray][font size=65]{item}[/font][/color]");
+                var item = Loc.GetString("examine-present-tex", ("name", textInfo.ToTitleCase(metaData.EntityName)), ("id", uid.Id), ("size", 14));
+                message.AddText($"[color=DarkGray][font size=11]{item}[/font][/color]");
                 message.PushNewline();
             }
             AddLine(message);
-            message.AddText($"[font size=65]{args.Message}[/font]");
+            message.AddText($"[font size=10]{args.Message}[/font]");
             message.PushNewline();
             AddLine(message);
             message.Pop();
@@ -171,7 +171,7 @@ public sealed class ExaminableCharacterSystem : EntitySystem
 
     private void AddLine(FormattedMessage message)
     {
-        message.PushColor(Color.FromHex("#65D65"));
+        message.PushColor(Color.FromHex("#282D31"));
         message.AddText(Loc.GetString("examine-border-line"));
         message.PushNewline();
         message.Pop();

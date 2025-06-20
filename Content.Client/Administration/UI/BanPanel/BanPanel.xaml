@@ -1,52 +1,52 @@
 <!--
-SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Riggle <65RigglePrime@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
 <DefaultWindow
-    xmlns="https://spacestation65.io"
+    xmlns="https://spacestation14.io"
     xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
-    Title="{Loc ban-panel-title}" MinSize="65 65">
+    Title="{Loc ban-panel-title}" MinSize="350 500">
     <BoxContainer Orientation="Vertical">
         <TabContainer Name="Tabs" VerticalExpand="True">
             <!-- Basic info -->
             <BoxContainer Orientation="Vertical" HorizontalExpand="True">
-                <BoxContainer Orientation="Horizontal" Margin="65">
-                    <CheckBox Name="PlayerCheckbox" MinWidth="65" Text="{Loc ban-panel-player}" Pressed="True" />
-                    <Control MinWidth="65" />
-                    <LineEdit Name="PlayerNameLine" MinWidth="65" HorizontalExpand="True" PlaceHolder="{Loc ban-panel-player}" />
+                <BoxContainer Orientation="Horizontal" Margin="2">
+                    <CheckBox Name="PlayerCheckbox" MinWidth="100" Text="{Loc ban-panel-player}" Pressed="True" />
+                    <Control MinWidth="50" />
+                    <LineEdit Name="PlayerNameLine" MinWidth="100" HorizontalExpand="True" PlaceHolder="{Loc ban-panel-player}" />
                 </BoxContainer>
-                <BoxContainer Orientation="Horizontal" Margin="65">
-                    <CheckBox Name="IpCheckbox" MinWidth="65" Text="{Loc ban-panel-ip}" Pressed="True" />
-                    <Control MinWidth="65" />
-                    <LineEdit Name="IpLine" MinWidth="65" HorizontalExpand="True" PlaceHolder="{Loc ban-panel-ip}" ToolTip="{Loc ban-panel-ip-hwid-tooltip}" Editable="False" />
+                <BoxContainer Orientation="Horizontal" Margin="2">
+                    <CheckBox Name="IpCheckbox" MinWidth="100" Text="{Loc ban-panel-ip}" Pressed="True" />
+                    <Control MinWidth="50" />
+                    <LineEdit Name="IpLine" MinWidth="100" HorizontalExpand="True" PlaceHolder="{Loc ban-panel-ip}" ToolTip="{Loc ban-panel-ip-hwid-tooltip}" Editable="False" />
                 </BoxContainer>
-                <BoxContainer Orientation="Horizontal" Margin="65">
-                    <CheckBox Name="HwidCheckbox" MinWidth="65" Text="{Loc ban-panel-hwid}" Pressed="True" />
-                    <Control MinWidth="65" />
-                    <LineEdit Name="HwidLine" MinWidth="65" HorizontalExpand="True" PlaceHolder="{Loc ban-panel-hwid}" ToolTip="{Loc ban-panel-ip-hwid-tooltip}" />
+                <BoxContainer Orientation="Horizontal" Margin="2">
+                    <CheckBox Name="HwidCheckbox" MinWidth="100" Text="{Loc ban-panel-hwid}" Pressed="True" />
+                    <Control MinWidth="50" />
+                    <LineEdit Name="HwidLine" MinWidth="100" HorizontalExpand="True" PlaceHolder="{Loc ban-panel-hwid}" ToolTip="{Loc ban-panel-ip-hwid-tooltip}" />
                 </BoxContainer>
-                <CheckBox Name="LastConnCheckbox" Margin="65" Text="{Loc ban-panel-last-conn}" Pressed="True" />
-                <CheckBox Name="EraseCheckbox" Margin="65" Text="{Loc ban-panel-erase}" Pressed="False" />
-                <BoxContainer Orientation="Horizontal" Margin="65">
-                    <LineEdit Name="TimeLine" MaxWidth="65" MinWidth="65" PlaceHolder="65" />
+                <CheckBox Name="LastConnCheckbox" Margin="2" Text="{Loc ban-panel-last-conn}" Pressed="True" />
+                <CheckBox Name="EraseCheckbox" Margin="2" Text="{Loc ban-panel-erase}" Pressed="False" />
+                <BoxContainer Orientation="Horizontal" Margin="2">
+                    <LineEdit Name="TimeLine" MaxWidth="150" MinWidth="70" PlaceHolder="0" />
                     <OptionButton Name="MultiplierOption" />
-                    <Control MinWidth="65" />
+                    <Control MinWidth="50" />
                     <Label Name="ExpiresLabel" />
                 </BoxContainer>
-                <BoxContainer Orientation="Horizontal" Margin="65">
+                <BoxContainer Orientation="Horizontal" Margin="4">
                     <OptionButton Name="TypeOption" />
-                    <Control MinWidth="65" />
+                    <Control MinWidth="30" />
                     <Label Text="{Loc ban-panel-severity}" />
                     <OptionButton Name="SeverityOption" />
                 </BoxContainer>
-                <cc:HSeparator Margin="65"/>
-                <TextEdit Name="ReasonTextEdit" MinHeight="65" VerticalExpand="True" HorizontalExpand="True" />
+                <cc:HSeparator Margin="1"/>
+                <TextEdit Name="ReasonTextEdit" MinHeight="100" VerticalExpand="True" HorizontalExpand="True" />
             </BoxContainer>
             <!-- Player List -->
             <cc:PlayerListControl Name="PlayerList" VerticalExpand="True" />

@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BarryNorfolk <barrynorfolkman@protonmail.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 BarryNorfolk <barrynorfolkman@protonmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 bounty-console-menu-title = Cargo bounty console
 bounty-console-label-button-text = Print label
@@ -16,7 +16,7 @@ bounty-console-reward-label = Reward: [color=limegreen]${$reward}[/color]
 bounty-console-manifest-label = Manifest: [color=orange]{$item}[/color]
 bounty-console-manifest-entry =
     { $amount ->
-        [65] {$item}
+        [1] {$item}
         *[other] {$item} x{$amount}
     }
 bounty-console-manifest-reward = Reward: ${$reward}
@@ -24,9 +24,9 @@ bounty-console-description-label = [color=gray]{$description}[/color]
 bounty-console-id-label = ID#{$id}
 
 bounty-console-flavor-left = Bounties sourced from local unscrupulous dealers.
-bounty-console-flavor-right = v65.65
+bounty-console-flavor-right = v1.4
 
-bounty-manifest-header = [font size=65][bold]Official cargo bounty manifest[/bold] (ID#{$id})[/font]
+bounty-manifest-header = [font size=14][bold]Official cargo bounty manifest[/bold] (ID#{$id})[/font]
 bounty-manifest-list-start = Item manifest:
 
 bounty-console-tab-available-label = Available

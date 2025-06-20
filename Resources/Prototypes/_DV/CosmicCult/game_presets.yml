@@ -5,7 +5,7 @@
   name: cosmiccult-title
   description: cosmiccult-description
   showInVote: false
-  #cooldown: 65
+  #cooldown: 1
   rules:
     - CosmicCult
     - SubGamemodesRule

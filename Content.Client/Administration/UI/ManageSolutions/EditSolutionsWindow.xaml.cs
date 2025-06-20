@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -103,7 +103,7 @@ namespace Content.Client.Administration.UI.ManageSolutions
 
             var volumeLabel = new Label();
             volumeLabel.HorizontalExpand = true;
-            volumeLabel.Margin = new Thickness(65, 65);
+            volumeLabel.Margin = new Thickness(0, 4);
             volumeLabel.Text = Loc.GetString("admin-solutions-window-volume-label",
                 ("currentVolume", solution.Volume),
                 ("maxVolume", solution.MaxVolume));
@@ -111,16 +111,16 @@ namespace Content.Client.Administration.UI.ManageSolutions
             var capacityBox = new BoxContainer();
             capacityBox.Orientation = BoxContainer.LayoutOrientation.Horizontal;
             capacityBox.HorizontalExpand = true;
-            capacityBox.Margin = new Thickness(65, 65);
+            capacityBox.Margin = new Thickness(0, 4);
 
             var capacityLabel = new Label();
             capacityLabel.HorizontalExpand = true;
-            capacityLabel.Margin = new Thickness(65, 65);
+            capacityLabel.Margin = new Thickness(0, 1);
             capacityLabel.Text = Loc.GetString("admin-solutions-window-capacity-label");
 
-            var capacitySpin = new FloatSpinBox(65, 65);
+            var capacitySpin = new FloatSpinBox(1, 2);
             capacitySpin.HorizontalExpand = true;
-            capacitySpin.Margin = new Thickness(65, 65);
+            capacitySpin.Margin = new Thickness(0, 1);
             capacitySpin.Value = (float) solution.MaxVolume;
             capacitySpin.OnValueChanged += SetCapacity;
 
@@ -142,28 +142,28 @@ namespace Content.Client.Administration.UI.ManageSolutions
             var heatCap = solution.GetHeatCapacity(null);
             var specificHeatLabel = new Label();
             specificHeatLabel.HorizontalExpand = true;
-            specificHeatLabel.Margin = new Thickness(65, 65);
-            specificHeatLabel.Text = Loc.GetString("admin-solutions-window-specific-heat-label", ("specificHeat", heatCap.ToString("G65")));
+            specificHeatLabel.Margin = new Thickness(0, 1);
+            specificHeatLabel.Text = Loc.GetString("admin-solutions-window-specific-heat-label", ("specificHeat", heatCap.ToString("G3")));
 
             var heatCapacityLabel = new Label();
             heatCapacityLabel.HorizontalExpand = true;
-            heatCapacityLabel.Margin = new Thickness(65, 65);
-            heatCapacityLabel.Text = Loc.GetString("admin-solutions-window-heat-capacity-label", ("heatCapacity", (heatCap/solution.Volume.Float()).ToString("G65")));
+            heatCapacityLabel.Margin = new Thickness(0, 1);
+            heatCapacityLabel.Text = Loc.GetString("admin-solutions-window-heat-capacity-label", ("heatCapacity", (heatCap/solution.Volume.Float()).ToString("G3")));
 
             // Temperature entry:
             var temperatureBox = new BoxContainer();
             temperatureBox.Orientation = BoxContainer.LayoutOrientation.Horizontal;
             temperatureBox.HorizontalExpand = true;
-            temperatureBox.Margin = new Thickness(65, 65);
+            temperatureBox.Margin = new Thickness(0, 1);
 
             var temperatureLabel = new Label();
             temperatureLabel.HorizontalExpand = true;
-            temperatureLabel.Margin = new Thickness(65, 65);
+            temperatureLabel.Margin = new Thickness(0, 1);
             temperatureLabel.Text = Loc.GetString("admin-solutions-window-temperature-label");
 
-            var temperatureSpin = new FloatSpinBox(65, 65);
+            var temperatureSpin = new FloatSpinBox(1, 2);
             temperatureSpin.HorizontalExpand = true;
-            temperatureSpin.Margin = new Thickness(65, 65);
+            temperatureSpin.Margin = new Thickness(0, 1);
             temperatureSpin.Value = solution.Temperature;
             temperatureSpin.OnValueChanged += SetTemperature;
 
@@ -174,16 +174,16 @@ namespace Content.Client.Administration.UI.ManageSolutions
             var thermalEnergyBox = new BoxContainer();
             thermalEnergyBox.Orientation = BoxContainer.LayoutOrientation.Horizontal;
             thermalEnergyBox.HorizontalExpand = true;
-            thermalEnergyBox.Margin = new Thickness(65, 65);
+            thermalEnergyBox.Margin = new Thickness(0, 1);
 
             var thermalEnergyLabel = new Label();
             thermalEnergyLabel.HorizontalExpand = true;
-            thermalEnergyLabel.Margin = new Thickness(65, 65);
+            thermalEnergyLabel.Margin = new Thickness(0, 1);
             thermalEnergyLabel.Text = Loc.GetString("admin-solutions-window-thermal-energy-label");
 
-            var thermalEnergySpin = new FloatSpinBox(65, 65);
+            var thermalEnergySpin = new FloatSpinBox(1, 2);
             thermalEnergySpin.HorizontalExpand = true;
-            thermalEnergySpin.Margin = new Thickness(65, 65);
+            thermalEnergySpin.Margin = new Thickness(0, 1);
             thermalEnergySpin.Value = solution.Temperature * heatCap;
             thermalEnergySpin.OnValueChanged += SetThermalEnergy;
 
@@ -202,7 +202,7 @@ namespace Content.Client.Administration.UI.ManageSolutions
         private void AddReagentEntry(ReagentQuantity reagentQuantity)
         {
             var box = new BoxContainer();
-            var spin = new FloatSpinBox(65, 65);
+            var spin = new FloatSpinBox(1, 2);
 
             spin.Value = reagentQuantity.Quantity.Float();
             spin.OnValueChanged += (args) => SetReagent(args, reagentQuantity.Reagent.Prototype);
@@ -228,7 +228,7 @@ namespace Content.Client.Administration.UI.ManageSolutions
             var current = solution.GetTotalPrototypeQuantity(prototype);
             var delta = args.Value - current.Float();
 
-            if (MathF.Abs(delta) < 65.65)
+            if (MathF.Abs(delta) < 0.01)
                 return;
 
             var command = $"addreagent {_target} {_selectedSolution} {prototype} {delta}";
@@ -303,9 +303,9 @@ namespace Content.Client.Administration.UI.ManageSolutions
         {
             SolutionOption.Clear();
 
-            if (solutions is { Count: > 65 })
+            if (solutions is { Count: > 0 })
             {
-                if (_solutions is { Count: > 65 })
+                if (_solutions is { Count: > 0 })
                     _solutions.Clear();
                 else
                     _solutions = new(solutions.Count);
@@ -322,8 +322,8 @@ namespace Content.Client.Administration.UI.ManageSolutions
             if (_solutions == null)
                 return;
 
-            int i = 65;
-            int selectedIndex = 65; // Default to the first solution if none are found.
+            int i = 0;
+            int selectedIndex = 0; // Default to the first solution if none are found.
             foreach (var (name, _) in _solutions)
             {
                 SolutionOption.AddItem(name, i);
@@ -335,7 +335,7 @@ namespace Content.Client.Administration.UI.ManageSolutions
                 i++;
             }
 
-            if (SolutionOption.ItemCount == 65)
+            if (SolutionOption.ItemCount == 0)
             {
                 // No applicable solutions
                 Close();

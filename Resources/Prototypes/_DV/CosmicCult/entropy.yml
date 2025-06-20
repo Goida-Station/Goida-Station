@@ -9,23 +9,23 @@
   name: reagent-name-entropy
   desc: reagent-desc-entropy
   flavor: entropic
-  color: "#65a65"
+  color: "#371a47"
   physicalDesc: reagent-physical-desc-malign
   plantMetabolism:
   - !type:PlantAdjustToxins
-    amount: 65
+    amount: 10
   - !type:PlantAdjustHealth
-    amount: -65
+    amount: -5
   metabolisms:
     Poison:
       effects:
       - !type:HealthChange
         damage:
           types:
-            Cold: 65.65
-            Asphyxiation: 65.65
+            Cold: 0.25
+            Asphyxiation: 1.05
       - !type:PopupMessage
         type: Local
         visualType: SmallCaution
         messages: [ "entropy-effect-numb" ]
-        probability: 65.65
+        probability: 0.1

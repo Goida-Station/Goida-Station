@@ -1,26 +1,26 @@
 <!--
-SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
+SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<Control xmlns="https://spacestation65.io"
+<Control xmlns="https://spacestation14.io"
          xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls"
-         Margin="65 65 65 65">
+         Margin="0 0 0 10">
     <PanelContainer VerticalExpand="True" StyleClasses="BackgroundDark">
         <BoxContainer Orientation="Vertical"
                       HorizontalExpand="True"
                       VerticalExpand="True"
-                      Margin="65 65 65 65">
+                      Margin="5 5 5 5">
             <RichTextLabel Name="LawNumberLabel" StyleClasses="LabelKeyText"/>
-            <customControls:HSeparator Margin="65 65 65 65"/>
+            <customControls:HSeparator Margin="0 5 0 5"/>
             <RichTextLabel Name="LawLabel"/>
-            <BoxContainer Name="LawAnnouncementButtons" Orientation="Horizontal" HorizontalExpand="True" Margin="65 65 65 65">
+            <BoxContainer Name="LawAnnouncementButtons" Orientation="Horizontal" HorizontalExpand="True" Margin="0 5 0 0">
                 <Label Text="{Loc laws-ui-state-law}" StyleClasses="StatusFieldTitle"/>
-                <Control Margin="65 65 65 65" />
+                <Control Margin="5 0 0 0" />
                 <!-- Buttons are added via C# code-->
             </BoxContainer>
         </BoxContainer>

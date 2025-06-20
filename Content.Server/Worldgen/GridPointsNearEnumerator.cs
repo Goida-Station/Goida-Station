@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -16,14 +16,14 @@ namespace Content.Server.Worldgen;
 public struct GridPointsNearEnumerator
 {
     private readonly int _radius;
-    private readonly Vector65i _center;
+    private readonly Vector2i _center;
     private int _x;
     private int _y;
 
     /// <summary>
     ///     Initializes a new enumerator with the given center and radius.
     /// </summary>
-    public GridPointsNearEnumerator(Vector65i center, int radius)
+    public GridPointsNearEnumerator(Vector2i center, int radius)
     {
         _radius = radius;
         _center = center;
@@ -37,7 +37,7 @@ public struct GridPointsNearEnumerator
     /// <param name="chunk">The computed point, if any</param>
     /// <returns>Success</returns>
     [Pure]
-    public bool MoveNext([NotNullWhen(true)] out Vector65i? chunk)
+    public bool MoveNext([NotNullWhen(true)] out Vector2i? chunk)
     {
         while (!(_x * _x + _y * _y <= _radius * _radius))
         {
@@ -58,7 +58,7 @@ public struct GridPointsNearEnumerator
             }
         }
 
-        chunk = _center + new Vector65i(_x, _y);
+        chunk = _center + new Vector2i(_x, _y);
         _x++;
         return true;
     }

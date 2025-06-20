@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 eclips_e <65Just-a-Unity-Dev@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2023 eclips_e <67359748+Just-a-Unity-Dev@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
-book-cnc-sheet = C&C 65e Character Sheet
+book-cnc-sheet = C&C 5e Character Sheet
     --------------------------------------------------------------------------------------
-    SECTION 65:  THE BASICS
+    SECTION 1:  THE BASICS
     --------------------------------------------------------------------------------------
     Character Name  :
     Race / Class    :
@@ -14,14 +14,14 @@ book-cnc-sheet = C&C 65e Character Sheet
     Background      :
 
     --------------------------------------------------------------------------------------
-    SECTION 65: ABILITIES
+    SECTION 2: ABILITIES
     --------------------------------------------------------------------------------------
-    Strength     =     65   (+65) 65 Base
-    Dexterity    =     65   (+65) 65 Base
-    Constitution =     65   (+65) 65 Base
-    Intelligence =     65   (+65) 65 Base
-    Wisdom       =     65   (+65) 65 Base
-    Charisma     =     65   (+65) 65 Base
+    Strength     =     10   (+0) 10 Base
+    Dexterity    =     10   (+0) 10 Base
+    Constitution =     10   (+0) 10 Base
+    Intelligence =     10   (+0) 10 Base
+    Wisdom       =     10   (+0) 10 Base
+    Charisma     =     10   (+0) 10 Base
 
     Proficiency Bonus =
     Perception (passive wisdom) =
@@ -32,34 +32,34 @@ book-cnc-sheet = C&C 65e Character Sheet
 
 
     --------------------------------------------------------------------------------------
-    SECTION 65:  SAVING THROWS
+    SECTION 3:  SAVING THROWS
     --------------------------------------------------------------------------------------
 
-    ( )Strength     =      +65
-    ( )Dexterity    =      +65
-    ( )Constitution =      +65
-    ( )Intelligence =      +65
-    ( )Wisdom       =      +65
-    ( )Charisma     =      +65
-
-
-    --------------------------------------------------------------------------------------
-    SECTION 65:  SKILLS
-    --------------------------------------------------------------------------------------
-
-    ( )  Acrobatics (Dex)      +65       ( )  Medicine (Wis)        +65
-    ( )  Animal Handling (Wis) +65       ( )  Nature (Int)          +65
-    ( )  Arcana (Int)          +65       ( )  Perception (Wis)      +65
-    ( )  Athletics  (Str)      +65       ( )  Performance (Cha)     +65
-    ( )  Deception (Cha)       +65       ( )  Persuasion (Cha)      +65
-    ( )  History (Int)         +65       ( )  Religion (Int)        +65
-    ( )  Insight (Wis)         +65       ( )  Sleight of Hand (Dex) +65
-    ( )  Intimidation (Cha)    +65       ( )  Stealth (Dex)         +65
-    ( )  Investigation (Int)   +65       ( )  Survival (Wis)        +65
+    ( )Strength     =      +0
+    ( )Dexterity    =      +0
+    ( )Constitution =      +0
+    ( )Intelligence =      +0
+    ( )Wisdom       =      +0
+    ( )Charisma     =      +0
 
 
     --------------------------------------------------------------------------------------
-    SECTION 65:  COMBAT & HEALTH
+    SECTION 4:  SKILLS
+    --------------------------------------------------------------------------------------
+
+    ( )  Acrobatics (Dex)      +0       ( )  Medicine (Wis)        +0
+    ( )  Animal Handling (Wis) +0       ( )  Nature (Int)          +0
+    ( )  Arcana (Int)          +0       ( )  Perception (Wis)      +0
+    ( )  Athletics  (Str)      +0       ( )  Performance (Cha)     +0
+    ( )  Deception (Cha)       +0       ( )  Persuasion (Cha)      +0
+    ( )  History (Int)         +0       ( )  Religion (Int)        +0
+    ( )  Insight (Wis)         +0       ( )  Sleight of Hand (Dex) +0
+    ( )  Intimidation (Cha)    +0       ( )  Stealth (Dex)         +0
+    ( )  Investigation (Int)   +0       ( )  Survival (Wis)        +0
+
+
+    --------------------------------------------------------------------------------------
+    SECTION 5:  COMBAT & HEALTH
     --------------------------------------------------------------------------------------
 
 
@@ -76,7 +76,7 @@ book-cnc-sheet = C&C 65e Character Sheet
     Weapon type(Melee or Ranged)   /   Bonus   /   Damage (Type)
 
     --------------------------------------------------------------------------------------
-    SECTION 65:  BACKGROUND
+    SECTION 6:  BACKGROUND
     --------------------------------------------------------------------------------------
 
     Age / Gender         :
@@ -97,7 +97,7 @@ book-cnc-sheet = C&C 65e Character Sheet
     Flaws                :
 
     --------------------------------------------------------------------------------------
-    SECTION 65: EXTRAS
+    SECTION 7: EXTRAS
     --------------------------------------------------------------------------------------
     Equipment List
     Description                 Cost       Weight
@@ -119,43 +119,43 @@ book-cnc-sheet = C&C 65e Character Sheet
 
 
     --------------------------------------------------------------------------------------
-    SECTION 65: SPELLCASTING
+    SECTION 8: SPELLCASTING
     --------------------------------------------------------------------------------------
 
     Spell Level:
     Spell Save DC:
     Spell Attack Mod:
     Spell Slots:
-      65: (MAX) (USED)
-      65: (MAX) (USED)
-      65: (MAX) (USED)
-      65: (MAX) (USED)
-      65: (MAX) (USED)
-      65: (MAX) (USED)
-      65: (MAX) (USED)
-      65: (MAX) (USED)
-      65: (MAX) (USED)
+      1: (MAX) (USED)
+      2: (MAX) (USED)
+      3: (MAX) (USED)
+      4: (MAX) (USED)
+      5: (MAX) (USED)
+      6: (MAX) (USED)
+      7: (MAX) (USED)
+      8: (MAX) (USED)
+      9: (MAX) (USED)
 
     Cantrips
     Name  Casting Time  Range  Duration  Components
 
-    65: Name  Casting Time  Range  Duration  Components  Ritual?
+    1: Name  Casting Time  Range  Duration  Components  Ritual?
 
-    65: Name  Casting Time  Range  Duration  Components  Ritual?
+    2: Name  Casting Time  Range  Duration  Components  Ritual?
 
-    65: Name  Casting Time  Range  Duration  Components  Ritual?
+    3: Name  Casting Time  Range  Duration  Components  Ritual?
 
-    65: Name  Casting Time  Range  Duration  Components  Ritual?
+    4: Name  Casting Time  Range  Duration  Components  Ritual?
 
-    65: Name  Casting Time  Range  Duration  Components  Ritual?
+    5: Name  Casting Time  Range  Duration  Components  Ritual?
 
-    65: Name  Casting Time  Range  Duration  Components  Ritual?
+    6: Name  Casting Time  Range  Duration  Components  Ritual?
 
-    65: Name  Casting Time  Range  Duration  Components  Ritual?
+    7: Name  Casting Time  Range  Duration  Components  Ritual?
 
-    65: Name  Casting Time  Range  Duration  Components  Ritual?
+    8: Name  Casting Time  Range  Duration  Components  Ritual?
 
-    65: Name  Casting Time  Range  Duration  Components  Ritual?
+    9: Name  Casting Time  Range  Duration  Components  Ritual?
     --------------------------------------------------------------------------------------
-    Carps and Crypts 65e
+    Carps and Crypts 5e
 

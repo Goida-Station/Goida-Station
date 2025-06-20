@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from InterBay65 at https://github.com/AndySok/InterBay65/commit/65fe65d65ea65b65da65ab65ab65, backpack sling sprite edited by Boaz65, wield sprites by RiceMar65",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from InterBay13 at https://github.com/AndySok/InterBay13/commit/84824582fe1381d9ea6282b9da407994ab8ab509, backpack sling sprite edited by Boaz1111, wield sprites by RiceMar1244",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -15,27 +15,27 @@
         },
         {
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "wielded-inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "wielded-inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "equipped-BACKPACK",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "equipped-SUITSTORAGE",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

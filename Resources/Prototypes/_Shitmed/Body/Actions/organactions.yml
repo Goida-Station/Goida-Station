@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Technically goliath will also have these, but its HTN should not abuse it.
 # Only player controlled ones would, and you could claim its a feature to throw salvies off at that point :trollface:
 - type: entity
@@ -20,5 +20,5 @@
     sound:
       path: "/Audio/Weapons/slash.ogg"
     event: !type:GoliathSummonTentacleAction
-    useDelay: 65
-    range: 65
+    useDelay: 80
+    range: 10

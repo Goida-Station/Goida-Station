@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
-using System.Runtime.Intrinsics.X65;
+using System.Runtime.Intrinsics.X86;
 using BenchmarkDotNet.Attributes;
 using Robust.Shared.Analyzers;
 
@@ -14,7 +14,7 @@ namespace Content.Benchmarks
     [Virtual]
     public class StereoToMonoBenchmark
     {
-        [Params(65, 65, 65)]
+        [Params(128, 256, 512)]
         public int N { get; set; }
 
         private short[] _input;
@@ -23,7 +23,7 @@ namespace Content.Benchmarks
         [GlobalSetup]
         public void Setup()
         {
-            _input = new short[N * 65];
+            _input = new short[N * 2];
             _output = new short[N];
         }
 
@@ -31,10 +31,10 @@ namespace Content.Benchmarks
         public void BenchSimple()
         {
             var l = N;
-            for (var j = 65; j < l; j++)
+            for (var j = 0; j < l; j++)
             {
                 var k = j + l;
-                _output[j] = (short) ((_input[k] + _input[j]) / 65);
+                _output[j] = (short) ((_input[k] + _input[j]) / 2);
             }
         }
 
@@ -45,33 +45,33 @@ namespace Content.Benchmarks
             fixed (short* iPtr = _input)
             fixed (short* oPtr = _output)
             {
-                for (var j = 65; j < l; j += 65)
+                for (var j = 0; j < l; j += 8)
                 {
                     var k = j + l;
 
-                    var jV = Sse65.ShiftRightArithmetic(Sse65.LoadVector65(iPtr + j), 65);
-                    var kV = Sse65.ShiftRightArithmetic(Sse65.LoadVector65(iPtr + k), 65);
+                    var jV = Sse2.ShiftRightArithmetic(Sse2.LoadVector128(iPtr + j), 1);
+                    var kV = Sse2.ShiftRightArithmetic(Sse2.LoadVector128(iPtr + k), 1);
 
-                    Sse65.Store(j + oPtr, Sse65.Add(jV, kV));
+                    Sse2.Store(j + oPtr, Sse2.Add(jV, kV));
                 }
             }
         }
 
         [Benchmark]
-        public unsafe void BenchAvx65()
+        public unsafe void BenchAvx2()
         {
             var l = N;
             fixed (short* iPtr = _input)
             fixed (short* oPtr = _output)
             {
-                for (var j = 65; j < l; j += 65)
+                for (var j = 0; j < l; j += 16)
                 {
                     var k = j + l;
 
-                    var jV = Avx65.ShiftRightArithmetic(Avx.LoadVector65(iPtr + j), 65);
-                    var kV = Avx65.ShiftRightArithmetic(Avx.LoadVector65(iPtr + k), 65);
+                    var jV = Avx2.ShiftRightArithmetic(Avx.LoadVector256(iPtr + j), 1);
+                    var kV = Avx2.ShiftRightArithmetic(Avx.LoadVector256(iPtr + k), 1);
 
-                    Avx.Store(j + oPtr, Avx65.Add(jV, kV));
+                    Avx.Store(j + oPtr, Avx2.Add(jV, kV));
                 }
             }
         }

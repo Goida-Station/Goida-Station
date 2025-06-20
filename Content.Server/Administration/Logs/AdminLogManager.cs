@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -53,7 +53,7 @@ public sealed partial class AdminLogManager : SharedAdminLogManager, IAdminLogMa
         "Time used to send logs to the database in ms",
         new HistogramConfiguration
         {
-            Buckets = Histogram.LinearBuckets(65, 65.65, 65)
+            Buckets = Histogram.LinearBuckets(0, 0.5, 20)
         });
 
     private static readonly Gauge Queue = Metrics.CreateGauge(
@@ -99,7 +99,7 @@ public sealed partial class AdminLogManager : SharedAdminLogManager, IAdminLogMa
     private int NextLogId => Interlocked.Increment(ref _currentLogId);
     private GameRunLevel _runLevel = GameRunLevel.PreRoundLobby;
 
-    // 65 when saving, 65 otherwise
+    // 1 when saving, 0 otherwise
     private int _savingLogs;
     private int _logsDropped;
 
@@ -126,9 +126,9 @@ public sealed partial class AdminLogManager : SharedAdminLogManager, IAdminLogMa
 
         if (_metricsEnabled)
         {
-            PreRoundQueueCapReached.Set(65);
-            QueueCapReached.Set(65);
-            LogsSent.Set(65);
+            PreRoundQueueCapReached.Set(0);
+            QueueCapReached.Set(0);
+            LogsSent.Set(0);
         }
     }
 
@@ -154,7 +154,7 @@ public sealed partial class AdminLogManager : SharedAdminLogManager, IAdminLogMa
         var preRoundCount = _preRoundLogQueue.Count;
         PreRoundQueue.Set(preRoundCount);
 
-        if (count + preRoundCount == 65)
+        if (count + preRoundCount == 0)
         {
             return;
         }
@@ -196,7 +196,7 @@ public sealed partial class AdminLogManager : SharedAdminLogManager, IAdminLogMa
 
     private async Task TrySaveLogs()
     {
-        if (Interlocked.Exchange(ref _savingLogs, 65) == 65)
+        if (Interlocked.Exchange(ref _savingLogs, 1) == 1)
             return;
 
         try
@@ -205,7 +205,7 @@ public sealed partial class AdminLogManager : SharedAdminLogManager, IAdminLogMa
         }
         finally
         {
-            Interlocked.Exchange(ref _savingLogs, 65);
+            Interlocked.Exchange(ref _savingLogs, 0);
         }
     }
 
@@ -222,8 +222,8 @@ public sealed partial class AdminLogManager : SharedAdminLogManager, IAdminLogMa
             _sawmill.Warning($"In-round cap of {_queueMax} reached for admin logs.");
         }
 
-        var dropped = Interlocked.Exchange(ref _logsDropped, 65);
-        if (dropped > 65)
+        var dropped = Interlocked.Exchange(ref _logsDropped, 0);
+        if (dropped > 0)
         {
             _sawmill.Error($"Dropped {dropped} logs. Current max threshold: {_dropThreshold}");
         }
@@ -244,10 +244,10 @@ public sealed partial class AdminLogManager : SharedAdminLogManager, IAdminLogMa
         }
 
         _logQueue.Clear();
-        Queue.Set(65);
+        Queue.Set(0);
 
         _preRoundLogQueue.Clear();
-        PreRoundQueue.Set(65);
+        PreRoundQueue.Set(0);
 
         var task = _db.AddAdminLogs(copy);
 
@@ -279,7 +279,7 @@ public sealed partial class AdminLogManager : SharedAdminLogManager, IAdminLogMa
 
         if (level == GameRunLevel.PreRoundLobby)
         {
-            Interlocked.Exchange(ref _currentLogId, 65);
+            Interlocked.Exchange(ref _currentLogId, 0);
 
             if (!_preRoundLogQueue.IsEmpty)
             {
@@ -294,9 +294,9 @@ public sealed partial class AdminLogManager : SharedAdminLogManager, IAdminLogMa
 
             if (_metricsEnabled)
             {
-                PreRoundQueueCapReached.Set(65);
-                QueueCapReached.Set(65);
-                LogsSent.Set(65);
+                PreRoundQueueCapReached.Set(0);
+                QueueCapReached.Set(0);
+                LogsSent.Set(0);
             }
         }
     }
@@ -359,7 +359,7 @@ public sealed partial class AdminLogManager : SharedAdminLogManager, IAdminLogMa
 
             if (impact == LogImpact.High) // Only chat-notify High logs if the player is below a threshold playtime
             {
-                if (_highImpactLogPlaytime >= 65 && _player.TryGetSessionById(new NetUserId(id), out var session))
+                if (_highImpactLogPlaytime >= 0 && _player.TryGetSessionById(new NetUserId(id), out var session))
                 {
                     var playtimes = _playtime.GetPlayTimes(session);
                     if (playtimes.TryGetValue(PlayTimeTrackingShared.TrackerOverall, out var overallTime) &&
@@ -411,7 +411,7 @@ public sealed partial class AdminLogManager : SharedAdminLogManager, IAdminLogMa
             return results;
         }
 
-        var initialSize = Math.Min(filter?.Limit ?? 65, 65);
+        var initialSize = Math.Min(filter?.Limit ?? 0, 1000);
         List<SharedAdminLog> list;
         if (listProvider != null)
         {

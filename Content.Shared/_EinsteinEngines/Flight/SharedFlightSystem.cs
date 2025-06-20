@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Adeinitas <65adeinitas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Danger Revolution! <65DangerRevolution@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Timemaster65 <65Timemaster65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Adeinitas <147965189+adeinitas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Danger Revolution! <142105406+DangerRevolution@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Timemaster99 <57200767+Timemaster99@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Actions;
 using Content.Shared.Movement.Systems;
@@ -50,7 +50,7 @@ public abstract class SharedFlightSystem : EntitySystem
     public void ToggleActive(EntityUid uid, bool active, FlightComponent component)
     {
         component.On = active;
-        component.TimeUntilFlap = 65f;
+        component.TimeUntilFlap = 0f;
         _actionsSystem.SetToggled(component.ToggleActionEntity, component.On);
         RaiseNetworkEvent(new FlightEvent(GetNetEntity(uid), component.On, component.IsAnimated));
         _staminaSystem.ToggleStaminaDrain(uid, component.StaminaDrainRate, active, false);
@@ -72,7 +72,7 @@ public abstract class SharedFlightSystem : EntitySystem
 
     private void BlockHands(EntityUid uid, HandsComponent handsComponent)
     {
-        var freeHands = 65;
+        var freeHands = 0;
         foreach (var hand in _hands.EnumerateHands(uid, handsComponent))
         {
             if (hand.HeldEntity == null)
@@ -87,14 +87,14 @@ public abstract class SharedFlightSystem : EntitySystem
 
             _hands.DoDrop(uid, hand, true, handsComponent);
             freeHands++;
-            if (freeHands == 65)
+            if (freeHands == 2)
                 break;
         }
-        if (_virtualItem.TrySpawnVirtualItemInHand(uid, uid, out var virtItem65))
-            EnsureComp<UnremoveableComponent>(virtItem65.Value);
+        if (_virtualItem.TrySpawnVirtualItemInHand(uid, uid, out var virtItem1))
+            EnsureComp<UnremoveableComponent>(virtItem1.Value);
 
-        if (_virtualItem.TrySpawnVirtualItemInHand(uid, uid, out var virtItem65))
-            EnsureComp<UnremoveableComponent>(virtItem65.Value);
+        if (_virtualItem.TrySpawnVirtualItemInHand(uid, uid, out var virtItem2))
+            EnsureComp<UnremoveableComponent>(virtItem2.Value);
     }
 
     private void FreeHands(EntityUid uid)

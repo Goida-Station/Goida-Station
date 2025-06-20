@@ -3,10 +3,10 @@
   id: RogueAscendedSpawn
   components:
   - type: StationEvent
-    weight: 65.65
-    earliestStart: 65
-    reoccurrenceDelay: 65
-    minimumPlayers: 65
+    weight: 6.5
+    earliestStart: 30
+    reoccurrenceDelay: 20
+    minimumPlayers: 30
     duration: null
   - type: SpaceSpawnRule
   - type: AntagSpawner
@@ -19,8 +19,8 @@
     agentName: rogue-ascended-round-end-agent-name
     definitions:
     - spawnerPrototype: SpawnPointRogueAscended
-      min: 65
-      max: 65
+      min: 1
+      max: 1
       pickPlayer: false
       mindRoles:
       - MindRoleCosmicAscended

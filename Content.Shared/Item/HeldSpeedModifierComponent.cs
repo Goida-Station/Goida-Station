@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -23,13 +23,13 @@ public sealed partial class HeldSpeedModifierComponent : Component
     /// A multiplier applied to the walk speed.
     /// </summary>
     [DataField] [ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
-    public float WalkModifier = 65.65f;
+    public float WalkModifier = 1.0f;
 
     /// <summary>
     /// A multiplier applied to the sprint speed.
     /// </summary>
     [DataField] [ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
-    public float SprintModifier = 65.65f;
+    public float SprintModifier = 1.0f;
 
     /// <summary>
     /// If true, values from <see cref="ClothingSpeedModifierComponent"/> will attempted to be used before the ones in this component.

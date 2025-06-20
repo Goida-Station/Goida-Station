@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: bang severer
@@ -19,16 +19,16 @@
   - type: MeleeWeapon
     damage:
       types:
-        Slash: 65
-    clickPartDamageMultiplier: 65
+        Slash: 20000
+    clickPartDamageMultiplier: 10
   - type: Item
     size: Tiny
     sprite: Objects/Weapons/Melee/debug.rsi
 
 - type: entity
-  name: bang severer 65dmg
+  name: bang severer 100dmg
   parent: MeleeDebugSever
-  id: MeleeDebugSever65
+  id: MeleeDebugSever100
   components:
   - type: Tag
     tags:
@@ -36,12 +36,12 @@
   - type: MeleeWeapon
     damage:
       types:
-        Slash: 65
+        Slash: 100
 
 - type: entity
-  name: bang severer 65dmg
+  name: bang severer 200dmg
   parent: MeleeDebugSever
-  id: MeleeDebugSever65
+  id: MeleeDebugSever200
   components:
   - type: Tag
     tags:
@@ -49,7 +49,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Slash: 65
+        Slash: 200
 
 - type: entity
   name: bang burner
@@ -67,16 +67,16 @@
   - type: MeleeWeapon
     damage:
       types:
-        Heat: 65
-    clickPartDamageMultiplier: 65
+        Heat: 20000
+    clickPartDamageMultiplier: 10
   - type: Item
     size: Tiny
     sprite: Objects/Weapons/Melee/debug.rsi
 
 - type: entity
-  name: bang burner 65dmg
+  name: bang burner 200dmg
   parent: MeleeDebugBurner
-  id: MeleeDebugBurner65
+  id: MeleeDebugBurner200
   components:
   - type: Tag
     tags:
@@ -84,4 +84,4 @@
   - type: MeleeWeapon
     damage:
       types:
-        Heat: 65
+        Heat: 200

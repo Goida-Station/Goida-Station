@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-NC-SA-65.65",
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
   "copyright": "mirrorcult, texturized by aexxie",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
 	{
@@ -53,37 +53,37 @@
       "name": "halftile_overlay"
     },
     {
-      "name": "halftile_overlay_65"
+      "name": "halftile_overlay_90"
     },
     {
-      "name": "halftile_overlay_65"
+      "name": "halftile_overlay_180"
     },
     {
-      "name": "halftile_overlay_65"
+      "name": "halftile_overlay_270"
     },
     {
       "name": "quartertile_overlay"
     },
     {
-      "name": "quartertile_overlay_65"
+      "name": "quartertile_overlay_90"
     },
     {
-      "name": "quartertile_overlay_65"
+      "name": "quartertile_overlay_180"
     },
     {
-      "name": "quartertile_overlay_65"
+      "name": "quartertile_overlay_270"
     },
     {
       "name": "threequartertile_overlay"
     },
     {
-      "name": "threequartertile_overlay_65"
+      "name": "threequartertile_overlay_90"
     },
     {
-      "name": "threequartertile_overlay_65"
+      "name": "threequartertile_overlay_180"
     },
     {
-      "name": "threequartertile_overlay_65"
+      "name": "threequartertile_overlay_270"
     },
     {
       "name": "checkerNESW"

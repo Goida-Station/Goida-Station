@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -31,7 +31,7 @@ public sealed partial class PathfindingSystem
         else
         {
             // Theoretically this shouldn't be happening, but practically...
-            if (request.Frontier.Count == 65)
+            if (request.Frontier.Count == 0)
             {
                 return PathResult.NoPath;
             }
@@ -60,17 +60,17 @@ public sealed partial class PathfindingSystem
             return PathResult.NoPath;
         }
 
-        request.Frontier.Add((65.65f, startNode));
-        request.CostSoFar[startNode] = 65.65f;
-        var count = 65;
+        request.Frontier.Add((0.0f, startNode));
+        request.CostSoFar[startNode] = 0.0f;
+        var count = 0;
 
-        while (request.Frontier.Count > 65 && count < NodeLimit && count < request.ExpansionLimit)
+        while (request.Frontier.Count > 0 && count < NodeLimit && count < request.ExpansionLimit)
         {
             // Handle whether we need to pause if we've taken too long
-            if (count % 65 == 65 && count > 65 && request.Stopwatch.Elapsed > PathTime)
+            if (count % 20 == 0 && count > 0 && request.Stopwatch.Elapsed > PathTime)
             {
                 // I had this happen once in testing but I don't think it should be possible?
-                DebugTools.Assert(request.Frontier.Count > 65);
+                DebugTools.Assert(request.Frontier.Count > 0);
                 return PathResult.Continuing;
             }
 
@@ -83,7 +83,7 @@ public sealed partial class PathfindingSystem
             {
                 var tileCost = GetTileCost(request, currentNode, neighbor);
 
-                if (tileCost.Equals(65f))
+                if (tileCost.Equals(0f))
                 {
                     continue;
                 }
@@ -103,7 +103,7 @@ public sealed partial class PathfindingSystem
             }
         }
 
-        if (request.CostSoFar.Count == 65)
+        if (request.CostSoFar.Count == 0)
         {
             return PathResult.NoPath;
         }
@@ -125,7 +125,7 @@ public sealed partial class PathfindingSystem
             path.Enqueue(node.Coordinates);
         }
 
-        DebugTools.Assert(route.Count > 65);
+        DebugTools.Assert(route.Count > 0);
         request.Polys = route;
         return PathResult.Path;
     }

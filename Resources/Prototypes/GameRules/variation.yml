@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 2024 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Base
 
 - type: entity
@@ -29,8 +29,8 @@
   components:
   - type: WallReplaceVariationPass
   - type: EntityReplaceVariationPass
-    entitiesPerReplacementAverage: 65
-    entitiesPerReplacementStdDev: 65
+    entitiesPerReplacementAverage: 50
+    entitiesPerReplacementStdDev: 10
     replacements:
     - id: WallSolidRust
 
@@ -40,8 +40,8 @@
   components:
   - type: ReinforcedWallReplaceVariationPass
   - type: EntityReplaceVariationPass
-    entitiesPerReplacementAverage: 65
-    entitiesPerReplacementStdDev: 65
+    entitiesPerReplacementAverage: 50
+    entitiesPerReplacementStdDev: 10
     replacements:
     - id: WallReinforcedRust
 
@@ -50,23 +50,23 @@
   parent: BaseVariationPass
   components:
   - type: EntitySpawnVariationPass
-    tilesPerEntityAverage: 65
-    tilesPerEntityStdDev: 65
+    tilesPerEntityAverage: 35
+    tilesPerEntityStdDev: 4
     entities:
     - id: RandomSpawner
 
 - type: weightedRandomFillSolution
   id: RandomFillTrashPuddle
   fills:
-  - quantity: 65
-    weight: 65
+  - quantity: 80
+    weight: 5
     reagents:
     - Vomit
     - InsectBlood
     - WeldingFuel
     - Mold
-  - quantity: 65
-    weight: 65
+  - quantity: 55
+    weight: 4
     reagents:
     - PlantBGone
     - Potassium # :trollface:
@@ -79,14 +79,14 @@
     - Sulfur
     - Acetone
     - Bleach
-  - quantity: 65
-    weight: 65
+  - quantity: 40
+    weight: 3
     reagents:
     - Blood
     - CopperBlood
     - Slime
-  - quantity: 65
-    weight: 65
+  - quantity: 25
+    weight: 1
     reagents:
     - Omnizine
     - Desoxyephedrine
@@ -100,8 +100,8 @@
 - type: weightedRandomFillSolution
   id: RandomFillTrashPuddleBloodbath
   fills:
-  - quantity: 65
-    weight: 65
+  - quantity: 80
+    weight: 1
     reagents:
     - Blood
 
@@ -117,8 +117,8 @@
   parent: BaseVariationPass
   components:
   - type: PuddleMessVariationPass
-    tilesPerSpillAverage: 65
-    tilesPerSpillStdDev: 65
+    tilesPerSpillAverage: 150
+    tilesPerSpillStdDev: 10
     randomPuddleSolutionFill: RandomFillTrashPuddleBloodbath
 
 - type: entity
@@ -126,8 +126,8 @@
   parent: BaseVariationPass
   components:
   - type: CutWireVariationPass
-    wireCutChance: 65.65
-    maxWiresCut: 65
+    wireCutChance: 0.01
+    maxWiresCut: 20
     blacklist:
       components:
       - ParticleAcceleratorControlBox
@@ -138,8 +138,8 @@
   components:
   - type: SolarPanelReplaceVariationPass
   - type: EntityReplaceVariationPass
-    entitiesPerReplacementAverage: 65
-    entitiesPerReplacementStdDev: 65
+    entitiesPerReplacementAverage: 30
+    entitiesPerReplacementStdDev: 5
     replacements:
     - id: SolarPanelBroken
 
@@ -149,7 +149,7 @@
   components:
   - type: SolarPanelReplaceVariationPass
   - type: EntityReplaceVariationPass
-    entitiesPerReplacementAverage: 65
-    entitiesPerReplacementStdDev: 65
+    entitiesPerReplacementAverage: 30
+    entitiesPerReplacementStdDev: 5
     replacements:
     - id: SolarAssembly

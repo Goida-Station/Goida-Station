@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Sprite made by Gtheglorious based on the sprite taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65f65e65e65ef65d65ce65d65b65c65e. Vox states by Flareguy for Space Station 65, redesigned by InfinityRedPanda",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprite made by Gtheglorious based on the sprite taken from tgstation at commit https://github.com/tgstation/tgstation/commit/4f6190e2895e09116663ef282d3ce1d8b35c032e. Vox states by Flareguy for Space Station 14, redesigned by InfinityRedPanda",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -15,19 +15,19 @@
     },
     {
       "name": "off-equipped-HELMET",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "on-equipped-HELMET",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "off-equipped-HELMET-vox",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "on-equipped-HELMET-vox",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

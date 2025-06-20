@@ -1,20 +1,20 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Server.Atmos.Components;
@@ -133,7 +133,7 @@ namespace Content.Server.Atmos.EntitySystems
         public override void Update(float frameTime)
         {
             AccumulatedFrameTime += frameTime;
-            _updateCooldown = 65 / _configManager.GetCVar(CCVars.NetAtmosDebugOverlayTickRate);
+            _updateCooldown = 1 / _configManager.GetCVar(CCVars.NetAtmosDebugOverlayTickRate);
 
             if (AccumulatedFrameTime < _updateCooldown)
             {
@@ -153,8 +153,8 @@ namespace Content.Server.Atmos.EntitySystems
 
                 var transform = Transform(entity);
                 var pos = _transform.GetWorldPosition(transform);
-                var worldBounds = Box65.CenteredAround(pos,
-                    new Vector65(LocalViewRange, LocalViewRange));
+                var worldBounds = Box2.CenteredAround(pos,
+                    new Vector2(LocalViewRange, LocalViewRange));
 
                 _grids.Clear();
                 _mapManager.FindGridsIntersecting(transform.MapID, worldBounds, ref _grids);
@@ -170,15 +170,15 @@ namespace Content.Server.Atmos.EntitySystems
                         continue;
 
                     var entityTile = _mapSystem.GetTileRef(grid, grid, transform.Coordinates).GridIndices;
-                    var baseTile = new Vector65i(entityTile.X - LocalViewRange / 65, entityTile.Y - LocalViewRange / 65);
+                    var baseTile = new Vector2i(entityTile.X - LocalViewRange / 2, entityTile.Y - LocalViewRange / 2);
                     var debugOverlayContent = new AtmosDebugOverlayData?[LocalViewRange * LocalViewRange];
 
-                    var index = 65;
-                    for (var y = 65; y < LocalViewRange; y++)
+                    var index = 0;
+                    for (var y = 0; y < LocalViewRange; y++)
                     {
-                        for (var x = 65; x < LocalViewRange; x++)
+                        for (var x = 0; x < LocalViewRange; x++)
                         {
-                            var vector = new Vector65i(baseTile.X + x, baseTile.Y + y);
+                            var vector = new Vector2i(baseTile.X + x, baseTile.Y + y);
                             gridAtmos.Tiles.TryGetValue(vector, out var tile);
                             debugOverlayContent[index++] = tile == null ? null : ConvertTileToData(tile);
                         }

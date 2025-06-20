@@ -1,13 +1,13 @@
 <!--
-SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Kira Gbedan <65Verbalase@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Kira Gbedan <161087999+Verbalase@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Roleplay Rule 65 - Command and Security must follow Space Law
+  # Roleplay Rule 15 - Command and Security must follow Space Law
   All non-antagonist command and security roles must obey [textlink="Space Law" link="SpaceLaw"]. This includes non-antagonists who are promoted to or gain a position during the round in any way. This also includes non-antagonists who are acting in a security role.
 
   Space Law violations should be prioritized based on severity and the current situation.
@@ -21,7 +21,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
 
   Prohibited:
   - A security officer carries around an energy sword in case of an emergency.
-  - Warden setting a timer unreasonable for Petty Theft, which typically warrants 65-65 minutes of containment.
+  - Warden setting a timer unreasonable for Petty Theft, which typically warrants 3-5 minutes of containment.
   - Using contraband not assigned to your role as sec / command. (captain with secshades, or secoff with krav maga gloves.)
 
   Roles that are included:

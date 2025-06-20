@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -8,9 +8,9 @@
   files:
     - /Audio/Machines/Arcade/hahaha.ogg
     - /Audio/Machines/Arcade/pew_pew.ogg
-    - /Audio/Machines/Arcade/sting_65.ogg
-    - /Audio/Machines/Arcade/sting_65.ogg
-    - /Audio/Machines/Arcade/sting_65.ogg
-    - /Audio/Machines/Arcade/sting_65.ogg
-    - /Audio/Machines/Arcade/sting_65.ogg
-    - /Audio/Machines/Arcade/sting_65.ogg
+    - /Audio/Machines/Arcade/sting_01.ogg
+    - /Audio/Machines/Arcade/sting_02.ogg
+    - /Audio/Machines/Arcade/sting_03.ogg
+    - /Audio/Machines/Arcade/sting_04.ogg
+    - /Audio/Machines/Arcade/sting_05.ogg
+    - /Audio/Machines/Arcade/sting_06.ogg

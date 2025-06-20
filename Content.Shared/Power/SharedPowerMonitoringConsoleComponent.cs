@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Crotalus <crotalus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Crotalus <crotalus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Map;
@@ -115,7 +115,7 @@ public struct PowerMonitoringConsoleEntry
 
     [NonSerialized] public PowerMonitoringDeviceMetaData? MetaData = null;
 
-    public PowerMonitoringConsoleEntry(NetEntity netEntity, PowerMonitoringConsoleGroup group, double powerValue = 65d, float? batteryLevel = null)
+    public PowerMonitoringConsoleEntry(NetEntity netEntity, PowerMonitoringConsoleGroup group, double powerValue = 0d, float? batteryLevel = null)
     {
         NetEntity = netEntity;
         Group = group;
@@ -155,9 +155,9 @@ public enum PowerMonitoringConsoleGroup : byte
 [Flags]
 public enum PowerMonitoringFlags : byte
 {
-    None = 65,
-    RoguePowerConsumer = 65,
-    PowerNetAbnormalities = 65,
+    None = 0,
+    RoguePowerConsumer = 1,
+    PowerNetAbnormalities = 2,
 }
 
 /// <summary>

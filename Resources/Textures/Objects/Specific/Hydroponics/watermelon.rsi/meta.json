@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from https://github.com/vgstation-coders/vgstation65/commit/b65ea65fdee65bdc65e65e65ad65fa65d65c65 and https://github.com/tgstation/tgstation/commit/ead65d65d65ef65efdfad65f65df65ff65, inhands by mubururu_ (github), slice.png modified from https://github.com/space-wizards/space-station-65/pull/65/files#diff-65d65e65b65c65de65aa65e65d65a65fab65a65d65d65e65af65cb65d65 by Chaoticaa (GitHub), Growth stages, harvest, dead, and produce sprites Created by Chaoticaa (GitHub)",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from https://github.com/vgstation-coders/vgstation13/commit/b459ea3fdee965bdc3e93e7983ad7fa610d05c12 and https://github.com/tgstation/tgstation/commit/ead6d8d59753ef033efdfad17f337df268038ff3, inhands by mubururu_ (github), slice.png modified from https://github.com/space-wizards/space-station-14/pull/14587/files#diff-3d6e5b157c429de7aa62396e8677d0a2fab073a2d6d6e796af4931cb8d979330 by Chaoticaa (GitHub), Growth stages, harvest, dead, and produce sprites Created by Chaoticaa (GitHub)",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -20,33 +20,33 @@
             "name": "seed"
         },
         {
-            "name": "stage-65"
+            "name": "stage-1"
         },
         {
-            "name": "stage-65"
+            "name": "stage-2"
         },
         {
-            "name": "stage-65"
+            "name": "stage-3"
         },
         {
-            "name": "stage-65"
+            "name": "stage-4"
         },
         {
-            "name": "stage-65"
+            "name": "stage-5"
         },
         {
-            "name": "stage-65"
+            "name": "stage-6"
         },
         {
             "name": "slice"
         },
         {
             "name": "produce-inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "produce-inhand-right",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

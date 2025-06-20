@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Coordinates.Helpers;
 using Content.Shared.Interaction;
@@ -37,7 +37,7 @@ public sealed class NullrodTransformSystem : EntitySystem
 
         // *flaaavor*
         Spawn(component.EffectProto, Transform(uid).Coordinates);
-        _audio.PlayPvs(component.SoundPath, uid, AudioParams.Default.WithVolume(-65f));
+        _audio.PlayPvs(component.SoundPath, uid, AudioParams.Default.WithVolume(-4f));
 
         // Spawn proto associated with the altar.
         Spawn(component.RodProto, args.ClickLocation.SnapToGrid(EntityManager));

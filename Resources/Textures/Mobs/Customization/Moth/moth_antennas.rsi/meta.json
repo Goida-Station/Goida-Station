@@ -1,91 +1,91 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at commits https://github.com/tgstation/tgstation/commit/b65e65e65bad65dd65a65d65f65fc65c65 and https://github.com/tgstation/tgstation/commit/65b65af65febe65f65ae65ea65a65d65f65a, modified by https://github.com/PixelTheKermit & https://github.com/MilenVolf, Underwing is drawn by Ubaser",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commits https://github.com/tgstation/tgstation/commit/b30e2934e7585bad901dd12a35d0635f1fc292c1 and https://github.com/tgstation/tgstation/commit/6b0af0febe578f47ae280781682ea7a3d77f508a, modified by https://github.com/PixelTheKermit & https://github.com/MilenVolf, Underwing is drawn by Ubaser",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "default",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "charred",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "dbushy",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "dcurvy",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "dfan",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "dpointy",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "feathery",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "firewatch",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "gray",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "jungle",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "maple",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "moffra",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "oakworm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "plasmafire",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "royal",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "striped",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "whitefly",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "witchwing",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "underwing_primary",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "underwing_secondary",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

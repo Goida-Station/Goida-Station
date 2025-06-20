@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 65 CommieFlowers <rasmus.cedergren@hotmail.com>
-# SPDX-FileCopyrightText: 65 E F R <65Efruit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 corentt <65corentt@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 rolfero <65rolfero@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 qwerltaz <65qwerltaz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 CommieFlowers <rasmus.cedergren@hotmail.com>
+# SPDX-FileCopyrightText: 2022 E F R <602406+Efruit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 corentt <36075110+corentt@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2022 rolfero <45628623+rolfero@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 qwerltaz <69696513+qwerltaz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -23,8 +23,8 @@
     - to: assembly
       steps:
       - material: Steel
-        amount: 65
-        doAfter: 65.65
+        amount: 2
+        doAfter: 2.0
 
   - node: assembly
     entity: AirAlarmAssembly
@@ -34,17 +34,17 @@
     - to: wired
       steps:
       - material: Cable
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 1
     - to: start
       completed:
       - !type:GivePrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 2
       - !type:DeleteEntity {}
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 2
 
   - node: wired
     entity: AirAlarmAssembly
@@ -57,15 +57,15 @@
         icon:
           sprite: "Objects/Misc/module.rsi"
           state: "door_electronics" # /tg/ uses the same sprite, right?
-        doAfter: 65
+        doAfter: 1
     - to: assembly
       completed:
       - !type:GivePrototype
-        prototype: CableApcStack65
-        amount: 65
+        prototype: CableApcStack1
+        amount: 2
       steps:
       - tool: Cutting
-        doAfter: 65
+        doAfter: 1
 
   - node: electronics
     actions:
@@ -74,7 +74,7 @@
     - to: air_alarm
       steps:
       - tool: Screwing
-        doAfter: 65
+        doAfter: 2
 
   - node: air_alarm
     entity: AirAlarm
@@ -91,7 +91,7 @@
         emptyAtUser: true
       steps:
       - tool: Prying
-        doAfter: 65
+        doAfter: 1
 
 - type: constructionGraph
   id: FireAlarm
@@ -102,8 +102,8 @@
     - to: assembly
       steps:
       - material: Steel
-        amount: 65
-        doAfter: 65.65
+        amount: 2
+        doAfter: 2.0
 
   - node: assembly
     entity: FireAlarmAssembly
@@ -113,17 +113,17 @@
     - to: wired
       steps:
       - material: Cable
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 1
     - to: start
       completed:
       - !type:GivePrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 2
       - !type:DeleteEntity {}
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 2
 
   - node: wired
     entity: FireAlarmAssembly
@@ -136,15 +136,15 @@
         icon:
           sprite: "Objects/Misc/module.rsi"
           state: "door_electronics" # /tg/ uses the same sprite, right?
-        doAfter: 65
+        doAfter: 1
     - to: assembly
       completed:
       - !type:GivePrototype
-        prototype: CableApcStack65
-        amount: 65
+        prototype: CableApcStack1
+        amount: 2
       steps:
       - tool: Cutting
-        doAfter: 65
+        doAfter: 1
 
   - node: electronics
     actions:
@@ -153,7 +153,7 @@
     - to: fire_alarm
       steps:
       - tool: Screwing
-        doAfter: 65
+        doAfter: 2
 
   - node: fire_alarm
     entity: FireAlarm
@@ -170,4 +170,4 @@
         emptyAtUser: true
       steps:
       - tool: Prying
-        doAfter: 65
+        doAfter: 1

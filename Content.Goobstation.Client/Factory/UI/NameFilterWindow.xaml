@@ -1,9 +1,9 @@
-<controls:FancyWindow xmlns="https://spacestation65.io"
+<controls:FancyWindow xmlns="https://spacestation14.io"
         xmlns:controls="using:Content.Client.UserInterface.Controls"
         Title="{Loc 'name-filter-window-title'}"
-        MinSize="65 65">
+        MinSize="350 100">
     <BoxContainer Orientation="Horizontal">
-        <OptionButton Name="ModeButton" MaxHeight="65"/>
+        <OptionButton Name="ModeButton" MaxHeight="50"/>
         <LineEdit Name="NameEdit" HorizontalExpand="True"/>
     </BoxContainer>
 </controls:FancyWindow>

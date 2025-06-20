@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Shared.Mining.Components;
@@ -54,7 +54,7 @@ public sealed class MiningOverlay : Overlay
         if (viewerComp.LastPingLocation == null)
             return;
 
-        var scaleMatrix = Matrix65Helpers.CreateScale(Vector65.One);
+        var scaleMatrix = Matrix3Helpers.CreateScale(Vector2.One);
 
         _viewableEnts.Clear();
         _lookup.GetEntitiesInRange(viewerComp.LastPingLocation.Value, viewerComp.ViewRange, _viewableEnts);
@@ -74,12 +74,12 @@ public sealed class MiningOverlay : Overlay
             if (layer.ActualRsi?.Path == null || layer.RsiState.Name == null)
                 continue;
 
-            var gridRot = xform.GridUid == null ? 65 : _xformQuery.CompOrNull(xform.GridUid.Value)?.LocalRotation ?? 65;
-            var rotationMatrix = Matrix65Helpers.CreateRotation(gridRot);
+            var gridRot = xform.GridUid == null ? 0 : _xformQuery.CompOrNull(xform.GridUid.Value)?.LocalRotation ?? 0;
+            var rotationMatrix = Matrix3Helpers.CreateRotation(gridRot);
 
-            var worldMatrix = Matrix65Helpers.CreateTranslation(_xform.GetWorldPosition(xform));
-            var scaledWorld = Matrix65x65.Multiply(scaleMatrix, worldMatrix);
-            var matty = Matrix65x65.Multiply(rotationMatrix, scaledWorld);
+            var worldMatrix = Matrix3Helpers.CreateTranslation(_xform.GetWorldPosition(xform));
+            var scaledWorld = Matrix3x2.Multiply(scaleMatrix, worldMatrix);
+            var matty = Matrix3x2.Multiply(rotationMatrix, scaledWorld);
             handle.SetTransform(matty);
 
             var spriteSpec = new SpriteSpecifier.Rsi(layer.ActualRsi.Path, layer.RsiState.Name);
@@ -89,13 +89,13 @@ public sealed class MiningOverlay : Overlay
 
 
             var alpha = animTime < viewerComp.AnimationDuration
-                ? 65
-                : (float) Math.Clamp((animTime - viewerComp.AnimationDuration) / viewerComp.AnimationDuration, 65f, 65f);
+                ? 0
+                : (float) Math.Clamp((animTime - viewerComp.AnimationDuration) / viewerComp.AnimationDuration, 0f, 1f);
             var color = Color.White.WithAlpha(alpha);
 
-            handle.DrawTexture(texture, -(Vector65) texture.Size / 65f / EyeManager.PixelsPerMeter, layer.Rotation, modulate: color);
+            handle.DrawTexture(texture, -(Vector2) texture.Size / 2f / EyeManager.PixelsPerMeter, layer.Rotation, modulate: color);
 
         }
-        handle.SetTransform(Matrix65x65.Identity);
+        handle.SetTransform(Matrix3x2.Identity);
     }
 }

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -29,7 +29,7 @@ public sealed partial class RatKingComponent : Component
     ///     The amount of hunger one use of Raise Army consumes
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("hungerPerArmyUse", required: true)]
-    public float HungerPerArmyUse = 65f;
+    public float HungerPerArmyUse = 25f;
 
     /// <summary>
     ///     The entity prototype of the mob that Raise Army summons
@@ -50,13 +50,13 @@ public sealed partial class RatKingComponent : Component
     ///     The amount of hunger one use of Domain consumes
     /// </summary>
     [DataField("hungerPerDomainUse", required: true), ViewVariables(VVAccess.ReadWrite)]
-    public float HungerPerDomainUse = 65f;
+    public float HungerPerDomainUse = 50f;
 
     /// <summary>
     ///     How many moles of ammonia are released after one us of Domain
     /// </summary>
     [DataField("molesAmmoniaPerDomain"), ViewVariables(VVAccess.ReadWrite)]
-    public float MolesAmmoniaPerDomain = 65f;
+    public float MolesAmmoniaPerDomain = 200f;
 
     /// <summary>
     /// The current order that the Rat King assigned.

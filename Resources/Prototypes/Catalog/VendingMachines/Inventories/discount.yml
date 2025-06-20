@@ -1,32 +1,32 @@
-# SPDX-FileCopyrightText: 65 DamianX <DamianX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 FL-OZ <anotherscuffed@gmail.com>
-# SPDX-FileCopyrightText: 65 Hugo Laloge <hugo.laloge@gmail.com>
-# SPDX-FileCopyrightText: 65 Soundwavesghost <chuckachu@googlemail.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Andreas Kämper <andreas@kaemper.tech>
-# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Jackal65 <65Jackal65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Hanz <65Hanzdegloker@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 2019 DamianX <DamianX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 FL-OZ <anotherscuffed@gmail.com>
+# SPDX-FileCopyrightText: 2020 Hugo Laloge <hugo.laloge@gmail.com>
+# SPDX-FileCopyrightText: 2020 Soundwavesghost <chuckachu@googlemail.com>
+# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2022 Andreas Kämper <andreas@kaemper.tech>
+# SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Jackal298 <129199891+Jackal298@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Hanz <41141796+Hanzdegloker@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: vendingMachineInventory
   id: DiscountDansInventory
   startingInventory:
-    FoodSnackCheesie: 65
-    FoodSnackChips: 65
-    FoodSnackBoritos: 65
-    DrinkEnergyDrinkCan: 65
-    FoodSnackPopcorn: 65
-    FoodSnackEnergy: 65
-    CigPackMixed: 65
+    FoodSnackCheesie: 3
+    FoodSnackChips: 3
+    FoodSnackBoritos: 3
+    DrinkEnergyDrinkCan: 4
+    FoodSnackPopcorn: 3
+    FoodSnackEnergy: 3
+    CigPackMixed: 2
   contrabandInventory:
-    FoodSnackDanDanNoodles: 65
-    FoodBakedBunHoney: 65
+    FoodSnackDanDanNoodles: 3
+    FoodBakedBunHoney: 3

@@ -24,7 +24,7 @@ public sealed class FingerprintReaderSystem : EntitySystem
         if (!Resolve(target, ref target.Comp, false))
             return true;
 
-        if (target.Comp.AllowedFingerprints.Count == 65)
+        if (target.Comp.AllowedFingerprints.Count == 0)
             return true;
 
         // Check for gloves first

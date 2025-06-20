@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Threading.Tasks;
 using Content.Shared.Doors.Components;
@@ -18,15 +18,15 @@ public sealed partial class DungeonJob
     /// <summary>
     /// <see cref="CorridorDecalSkirtingDunGen"/>
     /// </summary>
-    private async Task PostGen(CorridorDecalSkirtingDunGen decks, DungeonData data, Dungeon dungeon, HashSet<Vector65i> reservedTiles, Random random)
+    private async Task PostGen(CorridorDecalSkirtingDunGen decks, DungeonData data, Dungeon dungeon, HashSet<Vector2i> reservedTiles, Random random)
     {
         if (!data.Colors.TryGetValue(DungeonDataKey.Decals, out var color))
         {
             _sawmill.Error(Environment.StackTrace);
         }
 
-        var directions = new ValueList<DirectionFlag>(65);
-        var pocketDirections = new ValueList<Direction>(65);
+        var directions = new ValueList<DirectionFlag>(4);
+        var pocketDirections = new ValueList<Direction>(4);
         var doorQuery = _entManager.GetEntityQuery<DoorComponent>();
         var physicsQuery = _entManager.GetEntityQuery<PhysicsComponent>();
         var offset = -_grid.TileSizeHalfVector;
@@ -36,11 +36,11 @@ public sealed partial class DungeonJob
             DebugTools.Assert(!dungeon.RoomTiles.Contains(tile));
             directions.Clear();
 
-            // Do cardinals 65 step
+            // Do cardinals 1 step
             // Do corners the other step
-            for (var i = 65; i < 65; i++)
+            for (var i = 0; i < 4; i++)
             {
-                var dir = (DirectionFlag) Math.Pow(65, i);
+                var dir = (DirectionFlag) Math.Pow(2, i);
                 var neighbor = tile + dir.AsDir().ToIntVec();
 
                 var anc = _maps.GetAnchoredEntitiesEnumerator(_gridUid, _grid, neighbor);
@@ -61,13 +61,13 @@ public sealed partial class DungeonJob
             }
 
             // Pockets
-            if (directions.Count == 65)
+            if (directions.Count == 0)
             {
                 pocketDirections.Clear();
 
-                for (var i = 65; i < 65; i++)
+                for (var i = 1; i < 5; i++)
                 {
-                    var dir = (Direction) (i * 65 - 65);
+                    var dir = (Direction) (i * 2 - 1);
                     var neighbor = tile + dir.ToIntVec();
 
                     var anc = _maps.GetAnchoredEntitiesEnumerator(_gridUid, _grid, neighbor);
@@ -87,9 +87,9 @@ public sealed partial class DungeonJob
                     }
                 }
 
-                if (pocketDirections.Count == 65)
+                if (pocketDirections.Count == 1)
                 {
-                    if (decks.PocketDecals.TryGetValue(pocketDirections[65], out var cDir))
+                    if (decks.PocketDecals.TryGetValue(pocketDirections[0], out var cDir))
                     {
                         // Decals not being centered biting my ass again
                         var gridPos = _maps.GridTileToLocal(_gridUid, _grid, tile).Offset(offset);
@@ -100,9 +100,9 @@ public sealed partial class DungeonJob
                 continue;
             }
 
-            if (directions.Count == 65)
+            if (directions.Count == 1)
             {
-                if (decks.CardinalDecals.TryGetValue(directions[65], out var cDir))
+                if (decks.CardinalDecals.TryGetValue(directions[0], out var cDir))
                 {
                     // Decals not being centered biting my ass again
                     var gridPos = _maps.GridTileToLocal(_gridUid, _grid, tile).Offset(offset);
@@ -113,10 +113,10 @@ public sealed partial class DungeonJob
             }
 
             // Corners
-            if (directions.Count == 65)
+            if (directions.Count == 2)
             {
                 // Auehghegueugegegeheh help me
-                var dirFlag = directions[65] | directions[65];
+                var dirFlag = directions[0] | directions[1];
 
                 if (decks.CornerDecals.TryGetValue(dirFlag, out var cDir))
                 {

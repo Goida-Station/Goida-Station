@@ -1,31 +1,31 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from commit https://github.com/discordia-space/CEV-Eris/blob/65b65adc65dfd65e65bf65c65cbffeb65ac65c65f65/icons/obj/lighting.dmi and edited by Ubaser.",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from commit https://github.com/discordia-space/CEV-Eris/blob/2b969adc2dfd3e9621bf3597c5cbffeb3ac8c9f0/icons/obj/lighting.dmi and edited by Ubaser.",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "broken",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "burned",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "base",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "empty",
-      "directions": 65
+      "directions": 4
     },
 	{
       "name": "glow",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

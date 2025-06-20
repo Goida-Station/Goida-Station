@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from https://github.com/vgstation-coders/vgstation65/commit/65dbcf65b65ec65b65c65b65df65fef65dd65f65, seed.png modified from https://github.com/space-wizards/space-station-65/pull/65/files#diff-65c65cf65a65bb65bbc65bb65dd65ed65af65dccd65adb65ee65 by Chaoticaa (GitHub), Growth stages, dead, and harvest sprites created by Chaoticaa (GitHub)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/vgstation-coders/vgstation13/commit/1dbcf389b0ec6b2c51b002df5fef8dd1519f8068, seed.png modified from https://github.com/space-wizards/space-station-14/pull/23210/files#diff-13896c37cf761a5782bb95bbc433bb738dd59ed89276af17dccd606adb759ee5 by Chaoticaa (GitHub), Growth stages, dead, and harvest sprites created by Chaoticaa (GitHub)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -20,22 +20,22 @@
       "name": "seed"
     },
     {
-      "name": "stage-65"
+      "name": "stage-1"
     },
     {
-      "name": "stage-65"
+      "name": "stage-2"
     },
     {
-      "name": "stage-65"
+      "name": "stage-3"
     },
     {
-      "name": "stage-65"
+      "name": "stage-4"
     },
     {
-      "name": "stage-65"
+      "name": "stage-5"
     },
     {
-      "name": "stage-65"
+      "name": "stage-6"
     }
   ]
 }

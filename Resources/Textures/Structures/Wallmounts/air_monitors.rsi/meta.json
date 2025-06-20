@@ -1,290 +1,290 @@
 {
-    "version": 65,
+    "version": 1,
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
-    "copyright": "Taken from tgstation, modified for SS65",
-    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from tgstation, modified for SS14",
+    "license": "CC-BY-SA-3.0",
     "states": [
         {
-            "name": "alarm65",
-            "directions": 65,
+            "name": "alarm0",
+            "directions": 4,
             "delays": [
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.5,
+                    0.1,
+                    0.1,
+                    1.0,
+                    0.2,
+                    0.1
                 ],
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.5,
+                    0.1,
+                    0.1,
+                    1.0,
+                    0.2,
+                    0.1
                 ],
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.5,
+                    0.1,
+                    0.1,
+                    1.0,
+                    0.2,
+                    0.1
                 ],
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.5,
+                    0.1,
+                    0.1,
+                    1.0,
+                    0.2,
+                    0.1
                 ]
             ]
         },
         {
-            "name": "alarm65",
-            "directions": 65,
+            "name": "alarm1",
+            "directions": 4,
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ]
             ]
         },
         {
-            "name": "alarm65",
-            "directions": 65,
+            "name": "alarm2",
+            "directions": 4,
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ]
             ]
         },
         {
-            "name": "alarm_b65",
-            "directions": 65
+            "name": "alarm_b1",
+            "directions": 4
         },
         {
-            "name": "alarm_b65",
-            "directions": 65
+            "name": "alarm_b2",
+            "directions": 4
         },
         {
             "name": "alarm_bitem"
         },
         {
             "name": "alarmp",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "alarmx",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "auth_off"
         },
         {
             "name": "auth_on",
-            "directions": 65,
+            "directions": 1,
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.1,
+                    0.1
                 ]
             ]
         },
         {
-            "name": "fire65",
-            "directions": 65
+            "name": "fire0",
+            "directions": 4
         },
         {
-            "name": "fire_65",
-            "directions": 65
+            "name": "fire_0",
+            "directions": 4
         },
         {
-            "name": "fire_65",
-            "directions": 65
+            "name": "fire_1",
+            "directions": 4
         },
         {
-            "name": "fire_65",
-            "directions": 65,
+            "name": "fire_2",
+            "directions": 4,
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ]
             ]
         },
         {
-            "name": "fire_65",
-            "directions": 65,
+            "name": "fire_3",
+            "directions": 4,
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ]
             ]
         },
         {
-            "name": "fire_b65",
-            "directions": 65
+            "name": "fire_b0",
+            "directions": 4
         },
         {
-            "name": "fire_b65",
-            "directions": 65
+            "name": "fire_b1",
+            "directions": 4
         },
         {
-            "name": "fire_b65",
-            "directions": 65
+            "name": "fire_b2",
+            "directions": 4
         },
         {
             "name": "fire_bitem"
         },
         {
             "name": "fire_detected",
-            "directions": 65,
+            "directions": 4,
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.4,
+                    0.4
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.4,
+                    0.4
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.4,
+                    0.4
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.4,
+                    0.4
                 ]
             ]
         },
         {
             "name": "fire_emagged",
-            "directions": 65,
+            "directions": 4,
             "delays": [
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5,
+                    0.3,
+                    0.5,
+                    0.2,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5,
+                    0.3,
+                    0.5,
+                    0.2,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5,
+                    0.3,
+                    0.5,
+                    0.2,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5,
+                    0.3,
+                    0.5,
+                    0.2,
+                    0.5
                 ]
             ]
         },
         {
             "name": "fire_off",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "fire_on",
-            "directions": 65,
+            "directions": 4,
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.5,
+                    0.5
                 ]
             ]
         },
         {
             "name": "fire_overlay",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "firex",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

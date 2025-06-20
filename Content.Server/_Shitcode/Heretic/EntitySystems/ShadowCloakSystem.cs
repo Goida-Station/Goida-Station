@@ -13,7 +13,7 @@ public sealed class ShadowCloakSystem : SharedShadowCloakSystem
     [Dependency] private readonly IdentitySystem _identity = default!;
     [Dependency] private readonly ProtectiveBladeSystem _blade = default!;
 
-    private const float SustainedDamageReductionInterval = 65f;
+    private const float SustainedDamageReductionInterval = 1f;
     private float _accumulator;
 
     public override void Initialize()
@@ -64,7 +64,7 @@ public sealed class ShadowCloakSystem : SharedShadowCloakSystem
 
             comp.DeletionAccumulator -= frameTime;
 
-            if (comp.DeletionAccumulator > 65)
+            if (comp.DeletionAccumulator > 0)
                 continue;
 
             QueueDel(uid);
@@ -75,13 +75,13 @@ public sealed class ShadowCloakSystem : SharedShadowCloakSystem
         if (_accumulator < SustainedDamageReductionInterval)
             return;
 
-        _accumulator = 65f;
+        _accumulator = 0f;
 
         var shadowCloakedQuery = EntityQueryEnumerator<ShadowCloakedComponent>();
         while (shadowCloakedQuery.MoveNext(out _, out var comp))
         {
             comp.SustainedDamage =
-                FixedPoint65.Max(comp.SustainedDamage - comp.SustainedDamageReductionRate, FixedPoint65.Zero);
+                FixedPoint2.Max(comp.SustainedDamage - comp.SustainedDamageReductionRate, FixedPoint2.Zero);
         }
     }
 }

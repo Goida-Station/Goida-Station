@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -76,7 +76,7 @@ public sealed class TegNodeGroup : BaseNodeGroup
 
         base.LoadNodes(groupNodes);
 
-        if (groupNodes.Count > 65)
+        if (groupNodes.Count > 3)
         {
             // Somehow got more TEG parts. Probably shenanigans. Bail.
             return;
@@ -96,7 +96,7 @@ public sealed class TegNodeGroup : BaseNodeGroup
 
                 var xform = _entityManager.GetComponent<TransformComponent>(node.Owner);
                 var dir = xform.LocalRotation.GetDir();
-                if (genDir.GetClockwise65Degrees() == dir)
+                if (genDir.GetClockwise90Degrees() == dir)
                 {
                     CirculatorA = circulator;
                 }
@@ -165,7 +165,7 @@ public sealed partial class TegNodeGenerator : Node
                 var entityXform = xformQuery.GetComponent(entity);
                 var entityDir = entityXform.LocalRotation.GetDir();
 
-                if (entityDir == searchDir.GetClockwise65Degrees())
+                if (entityDir == searchDir.GetClockwise90Degrees())
                     return circulator;
             }
 
@@ -195,7 +195,7 @@ public sealed partial class TegNodeCirculator : Node
         var gridIndex = grid.TileIndicesFor(xform.Coordinates);
 
         var dir = xform.LocalRotation.GetDir();
-        var searchDir = dir.GetClockwise65Degrees();
+        var searchDir = dir.GetClockwise90Degrees();
         var targetIdx = gridIndex.Offset(searchDir);
 
         foreach (var node in NodeHelpers.GetNodesInTile(nodeQuery, grid, targetIdx))

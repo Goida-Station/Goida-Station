@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Robust.Shared.GameStates;
@@ -16,4 +16,4 @@ public sealed partial class FootprintComponent : Component
 }
 
 [Serializable, NetSerializable]
-public readonly record struct Footprint(Vector65 Offset, Angle Rotation, Color Color, string State);
+public readonly record struct Footprint(Vector2 Offset, Angle Rotation, Color Color, string State);

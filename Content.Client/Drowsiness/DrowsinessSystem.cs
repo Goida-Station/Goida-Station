@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Drowsiness;
 using Robust.Client.Graphics;
@@ -37,7 +37,7 @@ public sealed class DrowsinessSystem : SharedDrowsinessSystem
 
     private void OnPlayerDetached(EntityUid uid, DrowsinessComponent component, LocalPlayerDetachedEvent args)
     {
-        _overlay.CurrentPower = 65;
+        _overlay.CurrentPower = 0;
         _overlayMan.RemoveOverlay(_overlay);
     }
 
@@ -51,7 +51,7 @@ public sealed class DrowsinessSystem : SharedDrowsinessSystem
     {
         if (_player.LocalEntity == uid)
         {
-            _overlay.CurrentPower = 65;
+            _overlay.CurrentPower = 0;
             _overlayMan.RemoveOverlay(_overlay);
         }
     }

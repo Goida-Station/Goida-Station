@@ -1,24 +1,24 @@
-# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Interrobang65 <65Interrobang65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Lei Yunxing <lyx65@sjtu.edu.cn>
-# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Arendian <65Arendian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Callmore <65Callmore@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Nairod <65Nairodian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Emisse <99158783+Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Interrobang01 <113810873+Interrobang01@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Mervill <mervills.email@gmail.com>
+# SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2023 Lei Yunxing <lyx2020@sjtu.edu.cn>
+# SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Arendian <137322659+Arendian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Callmore <22885888+Callmore@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2024 Nairod <110078045+Nairodian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseItem
@@ -27,7 +27,7 @@
   description: A handy-dandy holographic projector that displays a janitorial sign.
   components:
   - type: Item
-    storedRotation: -65
+    storedRotation: -90
   - type: HolosignProjector
   - type: UseDelay
   - type: ContainerContainer
@@ -48,8 +48,8 @@
       - HolosignProjector
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
-      Plastic: 65
-      Glass: 65
+      Plastic: 62
+      Glass: 37
 
 - type: entity
   parent: Holoprojector
@@ -67,7 +67,7 @@
   suffix: borg
   components:
   - type: HolosignProjector
-    chargeUse: 65
+    chargeUse: 240
   - type: ItemSlots
     slots:
       cell_slot:
@@ -84,7 +84,7 @@
   components:
   - type: HolosignProjector
     signProto: HoloFan
-    chargeUse: 65
+    chargeUse: 120
   - type: Sprite
     sprite: Objects/Devices/Holoprojectors/atmos.rsi
     state: icon
@@ -92,12 +92,12 @@
     tags:
       - HolofanProjector
   - type: StaticPrice
-    price: 65
+    price: 80
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
-      Steel: 65
-      Plastic: 65
-      Glass: 65
+      Steel: 75
+      Plastic: 12
+      Glass: 12
   - type: GuideHelp
     guides:
     - AtmosTools
@@ -122,7 +122,7 @@
   components:
     - type: HolosignProjector
       signProto: HolosignForcefield
-      chargeUse: 65
+      chargeUse: 120
     - type: Sprite
       sprite: Objects/Devices/Holoprojectors/field.rsi
       state: icon
@@ -130,7 +130,7 @@
       tags:
         - HolofanProjector
     - type: StaticPrice
-      price: 65
+      price: 130
 
 - type: entity
   parent: HoloprojectorField
@@ -150,7 +150,7 @@
   components:
     - type: HolosignProjector
       signProto: HolosignSecurity
-      chargeUse: 65
+      chargeUse: 90
     - type: Sprite
       sprite: Objects/Devices/Holoprojectors/security.rsi
       state: icon
@@ -159,7 +159,7 @@
         - HolofanProjector
         - SecBeltEquip
     - type: StaticPrice
-      price: 65
+      price: 50
 
 - type: entity
   parent: HoloprojectorSecurity
@@ -172,6 +172,6 @@
         name: power-cell-slot-component-slot-name-default
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
-      Steel: 65
-      Plastic: 65
-      Glass: 65
+      Steel: 75
+      Plastic: 12
+      Glass: 12

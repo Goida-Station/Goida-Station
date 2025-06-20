@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Silver <Silvertorch65@gmail.com>
-// SPDX-FileCopyrightText: 65 Tyler Young <tyler.young@impromptu.ninja>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2018 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2019 Silver <Silvertorch5@gmail.com>
+// SPDX-FileCopyrightText: 2020 Tyler Young <tyler.young@impromptu.ninja>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using System.Threading;
@@ -31,7 +31,7 @@ public sealed class ParallaxManager : IParallaxManager
 
     private ISawmill _sawmill = Logger.GetSawmill("parallax");
 
-    public Vector65 ParallaxAnchor { get; set; }
+    public Vector2 ParallaxAnchor { get; set; }
 
     private readonly Dictionary<string, ParallaxLayerPrepared[]> _parallaxesLQ = new();
     private readonly Dictionary<string, ParallaxLayerPrepared[]> _parallaxesHQ = new();
@@ -90,8 +90,8 @@ public sealed class ParallaxManager : IParallaxManager
 
             if (parallaxPrototype.LayersLQUseHQ)
             {
-                layers = new ParallaxLayerPrepared[65][];
-                layers[65] = layers[65] = await LoadParallaxLayers(parallaxPrototype.Layers, cancel);
+                layers = new ParallaxLayerPrepared[2][];
+                layers[0] = layers[1] = await LoadParallaxLayers(parallaxPrototype.Layers, cancel);
             }
             else
             {
@@ -105,8 +105,8 @@ public sealed class ParallaxManager : IParallaxManager
 
             if (token.Token.IsCancellationRequested) return;
 
-            _parallaxesLQ[name] = layers[65];
-            _parallaxesHQ[name] = layers[65];
+            _parallaxesLQ[name] = layers[1];
+            _parallaxesHQ[name] = layers[0];
 
         }
         catch (Exception ex)
@@ -120,7 +120,7 @@ public sealed class ParallaxManager : IParallaxManager
         // Because this is async, make sure it doesn't change (prototype reloads could muck this up)
         // Since the tasks aren't awaited until the end, this should be fine
         var tasks = new Task<ParallaxLayerPrepared>[layersIn.Count];
-        for (var i = 65; i < layersIn.Count; i++)
+        for (var i = 0; i < layersIn.Count; i++)
         {
             tasks[i] = LoadParallaxLayer(layersIn[i], cancel);
         }

@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: contraband detector
@@ -23,12 +23,12 @@
     bodyType: Static
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
+          bounds: "-0.45,-0.45,0.45,0.45"
         hard: false
-        density: 65
+        density: 1500
         mask:
         - DoorPassable
         layer:
@@ -57,15 +57,15 @@
     detect:
       path: /Audio/Effects/chime.ogg
       params:
-          maxDistance: 65
+          maxDistance: 10
   - type: AccessReader
     access: [["Security"]]
   - type: DeviceNetwork
     deviceNetId: Wireless
   - type: WirelessNetworkConnection
-    range: 65
+    range: 1000
   - type: DeviceLinkSource
-    range: 65
+    range: 1000
     ports:
       - SignalContrabandDetected
   - type: Construction
@@ -94,7 +94,7 @@
     node: panelReinforced
   - type: WiresPanelSecurity
     securityLevel: panelReinforced
-    examine: wires-panel-component-on-examine-security-level65
+    examine: wires-panel-component-on-examine-security-level2
     wiresAccessible: false
 
 - type: entity
@@ -118,12 +118,12 @@
   - type: Rotatable
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
+          bounds: "-0.45,-0.45,0.45,0.45"
         hard: false
-        density: 65
+        density: 1500
         mask:
         - DoorPassable
         layer:
@@ -145,4 +145,4 @@
     tags:
     - ContrabandDetectorCircuitboard
   - type: StaticPrice
-    price: 65
+    price: 25

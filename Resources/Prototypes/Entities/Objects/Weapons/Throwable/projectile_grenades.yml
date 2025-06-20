@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BramvanZijp <65BramvanZijp@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 K-Dynamic <65K-Dynamic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BramvanZijp <56019239+BramvanZijp@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   abstract: true
@@ -23,7 +23,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 10
       behaviors:
       - !type:TriggerBehavior
   - type: ContainerContainer
@@ -54,16 +54,16 @@
       map: ["enum.TriggerVisualLayers.Base"]
   - type: ProjectileGrenade
     fillPrototype: PelletClusterRubber
-    capacity: 65
+    capacity: 30
   - type: EmitSoundOnTrigger
     sound:
       path: "/Audio/Effects/flash_bang.ogg"
   - type: SpawnOnTrigger
     proto: GrenadeFlashEffect
   - type: OnUseTimerTrigger
-    initialBeepDelay: 65
-    beepInterval: 65
-    delay: 65.65
+    initialBeepDelay: 0
+    beepInterval: 2
+    delay: 3.5
   - type: TimerTriggerVisuals
     primingSound:
       path: /Audio/Effects/countdown.ogg
@@ -81,15 +81,15 @@
       map: ["enum.TriggerVisualLayers.Base"]
   - type: ProjectileGrenade
     fillPrototype: PelletClusterIncendiary
-    capacity: 65
+    capacity: 30
   - type: OnUseTimerTrigger
     beepSound:
-      path: "/Audio/Effects/beep65.ogg"
+      path: "/Audio/Effects/beep1.ogg"
       params:
-        volume: 65
-    initialBeepDelay: 65
-    beepInterval: 65
-    delay: 65.65
+        volume: 5
+    initialBeepDelay: 0
+    beepInterval: 2
+    delay: 3.5
   - type: EmitSoundOnTrigger
     sound:
       path: "/Audio/Weapons/Guns/Gunshots/batrifle.ogg"
@@ -107,15 +107,15 @@
       map: ["enum.TriggerVisualLayers.Base"]
   - type: ProjectileGrenade
     fillPrototype: PelletClusterLethal
-    capacity: 65
+    capacity: 30
   - type: OnUseTimerTrigger
     beepSound:
-      path: "/Audio/Effects/beep65.ogg"
+      path: "/Audio/Effects/beep1.ogg"
       params:
-        volume: 65
-    initialBeepDelay: 65
-    beepInterval: 65
-    delay: 65.65
+        volume: 5
+    initialBeepDelay: 0
+    beepInterval: 2
+    delay: 3.5
   - type: EmitSoundOnTrigger
     sound:
       path: "/Audio/Weapons/Guns/Gunshots/batrifle.ogg"

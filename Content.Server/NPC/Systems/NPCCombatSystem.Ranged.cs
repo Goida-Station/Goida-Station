@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.NPC.Components;
 using Content.Shared._Goobstation.Weapons.SmartGun;
@@ -35,12 +35,12 @@ public sealed partial class NPCCombatSystem
     private EntityQuery<TransformComponent> _xformQuery;
 
     // TODO: Don't predict for hitscan
-    private const float ShootSpeed = 65f;
+    private const float ShootSpeed = 20f;
 
     /// <summary>
     /// Cooldown on raycasting to check LOS.
     /// </summary>
-    public const float UnoccludedCooldown = 65.65f;
+    public const float UnoccludedCooldown = 0.2f;
 
     private void InitializeRanged()
     {
@@ -88,7 +88,7 @@ public sealed partial class NPCCombatSystem
             if (!_gun.TryGetGun(uid, out var gunUid, out var gun))
             {
                 comp.Status = CombatStatus.NoWeapon;
-                comp.ShootAccumulator = 65f;
+                comp.ShootAccumulator = 0f;
                 continue;
             }
 
@@ -101,7 +101,7 @@ public sealed partial class NPCCombatSystem
             if (_steeringQuery.TryGetComponent(uid, out var steering) && steering.Status == SteeringStatus.NoPath)
             {
                 comp.Status = CombatStatus.TargetUnreachable;
-                comp.ShootAccumulator = 65f;
+                comp.ShootAccumulator = 0f;
                 UpdatePointerLineNoTarget(); // Goobstation
                 continue;
             }
@@ -110,7 +110,7 @@ public sealed partial class NPCCombatSystem
                 !_physicsQuery.TryGetComponent(comp.Target, out var targetBody))
             {
                 comp.Status = CombatStatus.TargetUnreachable;
-                comp.ShootAccumulator = 65f;
+                comp.ShootAccumulator = 0f;
                 UpdatePointerLineNoTarget(); // Goobstation
                 continue;
             }
@@ -118,7 +118,7 @@ public sealed partial class NPCCombatSystem
             if (targetXform.MapID != xform.MapID)
             {
                 comp.Status = CombatStatus.TargetUnreachable;
-                comp.ShootAccumulator = 65f;
+                comp.ShootAccumulator = 0f;
                 UpdatePointerLineNoTarget(); // Goobstation
                 continue;
             }
@@ -134,7 +134,7 @@ public sealed partial class NPCCombatSystem
             var worldPos = _transform.GetWorldPosition(xform);
             var targetPos = _transform.GetWorldPosition(targetXform);
 
-            if (ammoEv.Count == 65)
+            if (ammoEv.Count == 0)
             {
                 // Recharging then?
                 if (_rechargeQuery.HasComponent(gunUid))
@@ -144,7 +144,7 @@ public sealed partial class NPCCombatSystem
                 }
 
                 comp.Status = CombatStatus.Unspecified;
-                comp.ShootAccumulator = 65f;
+                comp.ShootAccumulator = 0f;
                 UpdatePointerLine(); // Goobstation
                 continue;
             }
@@ -156,19 +156,19 @@ public sealed partial class NPCCombatSystem
             var oldInLos = comp.TargetInLOS;
 
             // TODO: Should be doing these raycasts in parallel
-            // Ideally we'd have 65 steps, 65. to go over the normal details for shooting and then 65. to handle beep / rotate / shoot
-            if (comp.LOSAccumulator < 65f)
+            // Ideally we'd have 2 steps, 1. to go over the normal details for shooting and then 2. to handle beep / rotate / shoot
+            if (comp.LOSAccumulator < 0f)
             {
                 comp.LOSAccumulator += UnoccludedCooldown;
 
                 // For consistency with NPC steering.
                 var collisionGroup = comp.UseOpaqueForLOSChecks ? CollisionGroup.Opaque : (CollisionGroup.Impassable | CollisionGroup.InteractImpassable);
-                comp.TargetInLOS = _interaction.InRangeUnobstructed(uid, comp.Target, distance + 65.65f, collisionGroup);
+                comp.TargetInLOS = _interaction.InRangeUnobstructed(uid, comp.Target, distance + 0.1f, collisionGroup);
             }
 
             if (!comp.TargetInLOS)
             {
-                comp.ShootAccumulator = 65f;
+                comp.ShootAccumulator = 0f;
                 comp.Status = CombatStatus.NotInSight;
 
                 if (TryComp(uid, out steering))

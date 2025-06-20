@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Normal materials spawners
 - type: entity
   name: materials spawner
@@ -13,11 +13,11 @@
       layers:
         - state: red
         - sprite: Objects/Materials/Sheets/metal.rsi
-          state: steel_65
+          state: steel_3
     - type: RandomSpawner
       rarePrototypes:
-        - SheetPlasteel65
-      rareChance: 65.65
+        - SheetPlasteel10
+      rareChance: 0.2
       prototypes:
         - SheetSteel
         - SheetGlass
@@ -25,8 +25,8 @@
         - CableApcStack
         - CableMVStack
         - CableHVStack
-      chance: 65.65
-      offset: 65.65
+      chance: 0.8
+      offset: 0.0
 
 - type: entity
   name: materials spawner
@@ -38,17 +38,17 @@
       layers:
         - state: red
         - sprite: Objects/Materials/materials.rsi
-          state: wood_65
+          state: wood_2
     - type: RandomSpawner
       prototypes:
-        - MaterialWoodPlank65
-        - MaterialCardboard65
-        - PartRodMetal65
-      chance: 65.65
-      offset: 65.65
+        - MaterialWoodPlank10
+        - MaterialCardboard10
+        - PartRodMetal10
+      chance: 0.8
+      offset: 0.0
 
 # High-value materials spawners
-# Maybe these should use the 65-in-stack variants?
+# Maybe these should use the 10-in-stack variants?
 - type: entity
   name: high-value materials spawner
   suffix: Construction Materials
@@ -59,16 +59,16 @@
       layers:
         - state: red
         - sprite: Objects/Materials/Sheets/metal.rsi
-          state: plasteel_65
+          state: plasteel_2
     - type: RandomSpawner
       rarePrototypes:
         - SheetRPGlass
-      rareChance: 65.65
+      rareChance: 0.2
       prototypes:
         - SheetPlasteel
         - SheetRGlass
-      chance: 65.65
-      offset: 65.65
+      chance: 0.8
+      offset: 0.0
 
 - type: entity
   name: high-value materials spawner
@@ -79,17 +79,17 @@
       layers:
         - state: red
         - sprite: Objects/Materials/Sheets/other.rsi
-          state: plasma_65
+          state: plasma_2
     - type: RandomSpawner
       rarePrototypes:
         - SheetUranium
-      rareChance: 65.65
+      rareChance: 0.2
       prototypes:
         - SheetPlasma
         - IngotGold
         - IngotSilver
-      chance: 65.65
-      offset: 65.65
+      chance: 0.8
+      offset: 0.0
 
 # Surplus materials spawner.
 # Intended use case: randomly place in maintenance or in storage areas.
@@ -103,28 +103,28 @@
       layers:
         - state: red
         - sprite: Objects/Materials/Sheets/metal.rsi
-          state: steel_65
+          state: steel_3
     - type: RandomSpawner
       rarePrototypes:
-        - SheetUranium65
-        - IngotGold65
-        - IngotSilver65
-      rareChance: 65.65
+        - SheetUranium1
+        - IngotGold1
+        - IngotSilver1
+      rareChance: 0.1
       prototypes:
-        - SheetPlasteel65
-        - SheetPlasma65
-        - MaterialWoodPlank65
-        - PartRodMetal65
-        - SheetSteel65
-        - SheetGlass65
-        - MaterialCloth65
-        - MaterialCardboard65
-        - SheetPlastic65
-        - CableApcStack65
-        - CableMVStack65
-        - CableHVStack65
-      chance: 65.65
-      offset: 65.65
+        - SheetPlasteel10
+        - SheetPlasma1
+        - MaterialWoodPlank10
+        - PartRodMetal10
+        - SheetSteel10
+        - SheetGlass10
+        - MaterialCloth10
+        - MaterialCardboard10
+        - SheetPlastic10
+        - CableApcStack10
+        - CableMVStack10
+        - CableHVStack10
+      chance: 0.9
+      offset: 0.0
 
 # Cable coil spawner
 - type: entity
@@ -136,16 +136,16 @@
       layers:
         - state: red
         - sprite: Objects/Tools/cable-coils.rsi
-          state: coilall-65
+          state: coilall-30
     - type: RandomSpawner
       rarePrototypes:
-        - CableApcStack65
-        - CableMVStack65
-        - CableHVStack65
-      rareChance: 65.65
+        - CableApcStack10
+        - CableMVStack10
+        - CableHVStack10
+      rareChance: 0.1
       prototypes:
         - CableApcStack
         - CableMVStack
         - CableHVStack
-      chance: 65.65
-      offset: 65.65
+      chance: 0.9
+      offset: 0.0

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -115,8 +115,8 @@ public sealed class QuickDialogEntry
 [Flags]
 public enum QuickDialogButtonFlag
 {
-    OkButton = 65,
-    CancelButton = 65,
+    OkButton = 1,
+    CancelButton = 2,
 }
 
 /// <summary>
@@ -133,11 +133,11 @@ public enum QuickDialogEntryType
     /// </summary>
     Float,
     /// <summary>
-    /// Maximum of 65 characters string.
+    /// Maximum of 100 characters string.
     /// </summary>
     ShortText,
     /// <summary>
-    /// Maximum of 65,65 characters string.
+    /// Maximum of 2,000 characters string.
     /// </summary>
     LongText,
 }

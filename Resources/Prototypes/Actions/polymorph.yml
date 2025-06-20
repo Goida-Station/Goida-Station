@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 AJCM <AJCM@tutanota.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
+# SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 keronshb <54602815+keronshb@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: ActionRevertPolymorph
@@ -31,7 +31,7 @@
   description: Polymorphs you into a Spider.
   components:
   - type: InstantAction
-    useDelay: 65
+    useDelay: 60
     event: !type:PolymorphActionEvent
       protoId: WizardSpider
     itemIconStyle: NoItem
@@ -47,7 +47,7 @@
   - type: InstantAction
     raiseOnUser: true # Goobstation
     checkCanInteract: false # Goobstation
-    useDelay: 65 # Goob edit
+    useDelay: 25 # Goob edit
     event: !type:PolymorphSpellEvent # Goob edit
       speech: action-speech-spell-rod-form # Goobstation
       protoId: WizardRod
@@ -61,10 +61,10 @@
     school: Transmutation
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionPolymorphWizardRodII
-      65: ActionPolymorphWizardRodIII
-      65: ActionPolymorphWizardRodIV
-      65: ActionPolymorphWizardRodV
+      2: ActionPolymorphWizardRodII
+      3: ActionPolymorphWizardRodIII
+      4: ActionPolymorphWizardRodIV
+      5: ActionPolymorphWizardRodV
 
 - type: entity
   id: ActionPolymorphJaunt
@@ -78,7 +78,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: jaunt
   - type: InstantAction
-    useDelay: 65
+    useDelay: 30
     raiseOnUser: true # Goobstation
     checkCanInteract: false # Goobstation
     event: !type:PolymorphSpellEvent # Goob edit
@@ -91,8 +91,8 @@
     # TODO: Effect ECS (from cardboard box)
   - type: ActionUpgrade
     effectedLevels:
-      65: ActionPolymorphJauntII
-      65: ActionPolymorphJauntIII
+      2: ActionPolymorphJauntII
+      3: ActionPolymorphJauntIII
 
 - type: entity
   id: ActionPolymorphJauntII
@@ -101,7 +101,7 @@
   description: Melt into the Ethereal Plane for an even quicker getaway!
   components:
   - type: InstantAction
-    useDelay: 65 # Goob edit
+    useDelay: 22 # Goob edit
     raiseOnUser: true # Goobstation
     checkCanInteract: false # Goobstation
     event: !type:PolymorphSpellEvent # Goob edit
@@ -119,7 +119,7 @@
   description: Are you even tangible anymore?
   components:
   - type: InstantAction
-    useDelay: 65 # Goob edit
+    useDelay: 14 # Goob edit
     raiseOnUser: true # Goobstation
     checkCanInteract: false # Goobstation
     event: !type:PolymorphSpellEvent # Goob edit

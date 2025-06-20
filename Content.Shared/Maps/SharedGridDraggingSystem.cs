@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -33,12 +33,12 @@ public sealed class GridDragToggleMessage : EntityEventArgs
 public sealed class GridDragRequestPosition : EntityEventArgs
 {
     public NetEntity Grid;
-    public Vector65 WorldPosition;
+    public Vector2 WorldPosition;
 }
 
 [Serializable, NetSerializable]
 public sealed class GridDragVelocityRequest : EntityEventArgs
 {
     public NetEntity Grid;
-    public Vector65 LinearVelocity;
+    public Vector2 LinearVelocity;
 }

@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "sprites taken from TG station, edited by whateverusername65 and blooodyspy. ascension_rust made by Armok. ice_spear taken from Yogstation and modified.",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "sprites taken from TG station, edited by whateverusername0 and blooodyspy. ascension_rust made by Armok. ice_spear taken from Yogstation and modified.",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -44,10 +44,10 @@
             "name": "nightwatcher_rebirth"
         },
         {
-            "name": "ashlord_rite65"
+            "name": "ashlord_rite1"
         },
         {
-            "name": "ashlord_rite65"
+            "name": "ashlord_rite2"
         },
         {
             "name": "bulglar_finesse"

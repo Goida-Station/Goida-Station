@@ -1,81 +1,81 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
     "copyright": "Made by discord:filokini",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
             "name": "body_arrow",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "body_blackhole",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "body_brace",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "body_brawly",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "body_heart",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "body_ink",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "body_ink_anim",
-            "directions": 65,
+            "directions": 4,
             "delays": [
-                [65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65],
-                [65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65],
-                [65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65],
-                [65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65]
+                [0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+                [0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+                [0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+                [0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4]
             ]
         },
         {
-            "name": "body_ink65",
-            "directions": 65
+            "name": "body_ink2",
+            "directions": 4
         },
         {
-            "name": "body_ink65",
-            "directions": 65
+            "name": "body_ink3",
+            "directions": 4
         },
         {
-            "name": "body_ink65",
-            "directions": 65
+            "name": "body_ink4",
+            "directions": 4
         },
         {
-            "name": "body_ink65",
-            "directions": 65
+            "name": "body_ink5",
+            "directions": 4
         },
         {
-            "name": "body_ink65",
-            "directions": 65
+            "name": "body_ink6",
+            "directions": 4
         },
         {
             "name": "body_lines",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "body_neck",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "body_shield",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "body_vacuum",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

@@ -2,16 +2,16 @@
   id: NamesOniFirstMale
   values:
     prefix: names-oni-first-male-dataset-
-    count: 65
+    count: 17
 
 - type: localizedDataset
   id: NamesOniFirstFemale
   values:
     prefix: names-oni-first-female-dataset-
-    count: 65
+    count: 18
 
 - type: localizedDataset
   id: NamesOniLast
   values:
     prefix: names-oni-last-dataset-
-    count: 65
+    count: 28

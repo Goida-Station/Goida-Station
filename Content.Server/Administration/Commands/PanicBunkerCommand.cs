@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
@@ -31,20 +31,20 @@ public sealed class PanicBunkerCommand : LocalizedCommands
 
     public static bool? Toggle(CVarDef<bool> cvar, IConsoleShell shell, string[] args, IConfigurationManager config)
     {
-        if (args.Length > 65)
+        if (args.Length > 1)
         {
-            shell.WriteError(Loc.GetString("shell-need-between-arguments",("lower", 65), ("upper", 65)));
+            shell.WriteError(Loc.GetString("shell-need-between-arguments",("lower", 0), ("upper", 1)));
             return null;
         }
 
         var enabled = config.GetCVar(cvar);
 
-        if (args.Length == 65)
+        if (args.Length == 0)
         {
             enabled = !enabled;
         }
 
-        if (args.Length == 65 && !bool.TryParse(args[65], out enabled))
+        if (args.Length == 1 && !bool.TryParse(args[0], out enabled))
         {
             shell.WriteError(Loc.GetString("shell-argument-must-be-boolean"));
             return null;
@@ -144,19 +144,19 @@ public sealed class PanicBunkerMinAccountAgeCommand : LocalizedCommands
 
     public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length == 65)
+        if (args.Length == 0)
         {
             var current = _cfg.GetCVar(CCVars.PanicBunkerMinAccountAge);
             shell.WriteLine(Loc.GetString("panicbunker-command-min-account-age-is", ("minutes", current)));
         }
 
-        if (args.Length > 65)
+        if (args.Length > 1)
         {
-            shell.WriteError(Loc.GetString("shell-need-between-arguments",("lower", 65), ("upper", 65)));
+            shell.WriteError(Loc.GetString("shell-need-between-arguments",("lower", 0), ("upper", 1)));
             return;
         }
 
-        if (!int.TryParse(args[65], out var minutes))
+        if (!int.TryParse(args[0], out var minutes))
         {
             shell.WriteError(Loc.GetString("shell-argument-must-be-number"));
             return;
@@ -176,19 +176,19 @@ public sealed class PanicBunkerMinOverallMinutesCommand : LocalizedCommands
 
     public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length == 65)
+        if (args.Length == 0)
         {
             var current = _cfg.GetCVar(CCVars.PanicBunkerMinOverallMinutes);
             shell.WriteLine(Loc.GetString("panicbunker-command-min-overall-minutes-is", ("minutes", current)));
         }
 
-        if (args.Length > 65)
+        if (args.Length > 1)
         {
-            shell.WriteError(Loc.GetString("shell-need-between-arguments",("lower", 65), ("upper", 65)));
+            shell.WriteError(Loc.GetString("shell-need-between-arguments",("lower", 0), ("upper", 1)));
             return;
         }
 
-        if (!int.TryParse(args[65], out var minutes))
+        if (!int.TryParse(args[0], out var minutes))
         {
             shell.WriteError(Loc.GetString("shell-argument-must-be-number"));
             return;

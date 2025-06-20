@@ -1,25 +1,25 @@
-# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ygg65 <daniel.fath65@gmail.com>
-# SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SlamBamActionman <slambamactionman@gmail.com>
-# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 qwerltaz <msmarcinpl@gmail.com>
+# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Ygg01 <daniel.fath7@gmail.com>
+# SPDX-FileCopyrightText: 2020 moonheart08 <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SlamBamActionman <slambamactionman@gmail.com>
+# SPDX-FileCopyrightText: 2025 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 qwerltaz <msmarcinpl@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # TODO move all of this to tiles once tile smoothing is supported
 - type: entity
   id: CarpetBase
@@ -48,16 +48,16 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 10
         behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
   - type: Butcherable
     butcheringType: Knife
-    butcherDelay: 65
+    butcherDelay: 2
     spawned:
-    - id: MaterialCloth65
-      amount: 65
+    - id: MaterialCloth1
+      amount: 1
   - type: TrayScanReveal
 
 - type: entity
@@ -73,21 +73,21 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 100
         behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 10
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
           - !type:SpawnEntitiesBehavior
             spawn:
               FloorCarpetItemRed:
-                min: 65
-                max: 65
+                min: 1
+                max: 1
 
 - type: entity
   id: CarpetBlack
@@ -103,21 +103,21 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 100
         behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 10
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
           - !type:SpawnEntitiesBehavior
             spawn:
               FloorCarpetItemBlack:
-                min: 65
-                max: 65
+                min: 1
+                max: 1
 
 - type: entity
   id: CarpetPink
@@ -133,21 +133,21 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 100
         behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 10
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
           - !type:SpawnEntitiesBehavior
             spawn:
               FloorCarpetItemPink:
-                min: 65
-                max: 65
+                min: 1
+                max: 1
 
 - type: entity
   id: CarpetBlue
@@ -163,21 +163,21 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 100
         behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 10
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
           - !type:SpawnEntitiesBehavior
             spawn:
               FloorCarpetItemBlue:
-                min: 65
-                max: 65
+                min: 1
+                max: 1
 
 - type: entity
   id: CarpetGreen
@@ -193,21 +193,21 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 100
         behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 10
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
           - !type:SpawnEntitiesBehavior
             spawn:
               FloorCarpetItemGreen:
-                min: 65
-                max: 65
+                min: 1
+                max: 1
 
 - type: entity
   id: CarpetOrange
@@ -223,21 +223,21 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 100
         behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 10
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
           - !type:SpawnEntitiesBehavior
             spawn:
               FloorCarpetItemOrange:
-                min: 65
-                max: 65
+                min: 1
+                max: 1
 
 - type: entity
   id: CarpetSBlue
@@ -253,21 +253,21 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 100
         behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 10
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
           - !type:SpawnEntitiesBehavior
             spawn:
               FloorCarpetItemSkyBlue:
-                min: 65
-                max: 65
+                min: 1
+                max: 1
 
 - type: entity
   id: CarpetPurple
@@ -283,21 +283,21 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 100
         behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 10
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
           - !type:SpawnEntitiesBehavior
             spawn:
               FloorCarpetItemPurple:
-                min: 65
-                max: 65
+                min: 1
+                max: 1
 
 - type: entity
   id: CarpetCyan
@@ -313,21 +313,21 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 100
         behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 10
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
           - !type:SpawnEntitiesBehavior
             spawn:
               FloorCarpetItemCyan:
-                min: 65
-                max: 65
+                min: 1
+                max: 1
 
 - type: entity
   id: CarpetWhite
@@ -343,21 +343,21 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 100
         behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 10
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
           - !type:SpawnEntitiesBehavior
             spawn:
               FloorCarpetItemWhite:
-                min: 65
-                max: 65
+                min: 1
+                max: 1
 
 # TODO nuke this once tiles support rotating sprites
 - type: entity
@@ -383,7 +383,7 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 10
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]

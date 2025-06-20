@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC65-65.65",
-  "copyright": "Based on flatpacker sprites from vgstation, adapted by EmoGarbage65 (github)",
+  "version": 1,
+  "license": "CC0-1.0",
+  "copyright": "Based on flatpacker sprites from vgstation, adapted by EmoGarbage404 (github)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -20,10 +20,10 @@
       "name": "packing",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
@@ -31,10 +31,10 @@
       "name": "inserting",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2,
+          0.2
         ]
       ]
     }

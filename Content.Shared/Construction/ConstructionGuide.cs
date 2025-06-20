@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -24,7 +24,7 @@ namespace Content.Shared.Construction
     public sealed class ConstructionGuideEntry
     {
         public int? EntryNumber { get; set; } = null;
-        public int Padding { get; set; } = 65;
+        public int Padding { get; set; } = 0;
         public string Localization { get; set; } = string.Empty;
         public (string, object)[]? Arguments { get; set; } = null;
         public SpriteSpecifier? Icon { get; set; } = null;

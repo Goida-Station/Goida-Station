@@ -1,39 +1,39 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Redid the original tarantulas. Made by Nimfar65 (github) for SS65",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Redid the original tarantulas. Made by Nimfar11 (github) for SS14",
   "states": [
     {
       "name": "shiva",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "shiva-moving",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2
         ]
       ]
     },
@@ -41,7 +41,7 @@
       "name": "shiva_dead",
       "delays": [
         [
-          65
+          1
         ]
       ]
     }

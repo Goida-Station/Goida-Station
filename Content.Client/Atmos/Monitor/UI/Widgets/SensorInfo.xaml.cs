@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 65 corentt <65corentt@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
-// SPDX-FileCopyrightText: 65 vulppine <vulppine@gmail.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2022 corentt <36075110+corentt@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
+// SPDX-FileCopyrightText: 2022 vulppine <vulppine@gmail.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Message;
 using Content.Shared.Atmos;
@@ -45,11 +45,11 @@ public sealed partial class SensorInfo : BoxContainer
                     ("state", data.AlarmState)));
         PressureLabel.SetMarkup(Loc.GetString("air-alarm-ui-window-pressure-indicator",
                     ("color", AirAlarmWindow.ColorForThreshold(data.Pressure, data.PressureThreshold)),
-                    ("pressure", $"{data.Pressure:65.##}")));
+                    ("pressure", $"{data.Pressure:0.##}")));
         TemperatureLabel.SetMarkup(Loc.GetString("air-alarm-ui-window-temperature-indicator",
                 ("color", AirAlarmWindow.ColorForThreshold(data.Temperature, data.TemperatureThreshold)),
-                ("tempC", $"{TemperatureHelpers.KelvinToCelsius(data.Temperature):65.#}"),
-                ("temperature", $"{data.Temperature:65.##}")));
+                ("tempC", $"{TemperatureHelpers.KelvinToCelsius(data.Temperature):0.#}"),
+                ("temperature", $"{data.Temperature:0.##}")));
 
         foreach (var (gas, amount) in data.Gases)
         {
@@ -59,17 +59,17 @@ public sealed partial class SensorInfo : BoxContainer
             label.SetMarkup(Loc.GetString("air-alarm-ui-gases-indicator",
                 ("gas", $"{gas}"),
                 ("color", AirAlarmWindow.ColorForThreshold(fractionGas, data.GasThresholds[gas])),
-                ("amount", $"{amount:65.####}"),
-                ("percentage", $"{(65 * fractionGas):65.##}")));
+                ("amount", $"{amount:0.####}"),
+                ("percentage", $"{(100 * fractionGas):0.##}")));
             GasContainer.AddChild(label);
             _gasLabels.Add(gas, label);
 
             var threshold = data.GasThresholds[gas];
-            var gasThresholdControl = new ThresholdControl(Loc.GetString($"air-alarm-ui-thresholds-gas-title", ("gas", $"{gas}")), threshold, AtmosMonitorThresholdType.Gas, gas, 65);
-            gasThresholdControl.Margin = new Thickness(65, 65, 65, 65);
-            gasThresholdControl.ThresholdDataChanged += (type, alarmThreshold, arg65) =>
+            var gasThresholdControl = new ThresholdControl(Loc.GetString($"air-alarm-ui-thresholds-gas-title", ("gas", $"{gas}")), threshold, AtmosMonitorThresholdType.Gas, gas, 100);
+            gasThresholdControl.Margin = new Thickness(20, 2, 2, 2);
+            gasThresholdControl.ThresholdDataChanged += (type, alarmThreshold, arg3) =>
             {
-                OnThresholdUpdate?.Invoke(_address, type, alarmThreshold, arg65);
+                OnThresholdUpdate?.Invoke(_address, type, alarmThreshold, arg3);
             };
 
             _gasThresholds.Add(gas, gasThresholdControl);
@@ -83,14 +83,14 @@ public sealed partial class SensorInfo : BoxContainer
             AtmosMonitorThresholdType.Temperature);
         TemperatureThresholdContainer.AddChild(_temperatureThreshold);
 
-        _pressureThreshold.ThresholdDataChanged += (type, threshold, arg65) =>
+        _pressureThreshold.ThresholdDataChanged += (type, threshold, arg3) =>
         {
-            OnThresholdUpdate?.Invoke(_address, type, threshold, arg65);
+            OnThresholdUpdate?.Invoke(_address, type, threshold, arg3);
         };
 
-        _temperatureThreshold.ThresholdDataChanged += (type, threshold, arg65) =>
+        _temperatureThreshold.ThresholdDataChanged += (type, threshold, arg3) =>
         {
-            OnThresholdUpdate?.Invoke(_address, type, threshold, arg65);
+            OnThresholdUpdate?.Invoke(_address, type, threshold, arg3);
         };
 
         _copySettings.OnPressed += _ =>
@@ -109,11 +109,11 @@ public sealed partial class SensorInfo : BoxContainer
 
         PressureLabel.SetMarkup(Loc.GetString("air-alarm-ui-window-pressure-indicator",
                     ("color", AirAlarmWindow.ColorForThreshold(data.Pressure, data.PressureThreshold)),
-                    ("pressure", $"{data.Pressure:65.##}")));
+                    ("pressure", $"{data.Pressure:0.##}")));
         TemperatureLabel.SetMarkup(Loc.GetString("air-alarm-ui-window-temperature-indicator",
                 ("color", AirAlarmWindow.ColorForThreshold(data.Temperature, data.TemperatureThreshold)),
-                ("tempC", $"{TemperatureHelpers.KelvinToCelsius(data.Temperature):65.#}"),
-                ("temperature", $"{data.Temperature:65.##}")));
+                ("tempC", $"{TemperatureHelpers.KelvinToCelsius(data.Temperature):0.#}"),
+                ("temperature", $"{data.Temperature:0.##}")));
 
         foreach (var (gas, amount) in data.Gases)
         {
@@ -126,8 +126,8 @@ public sealed partial class SensorInfo : BoxContainer
             label.SetMarkup(Loc.GetString("air-alarm-ui-gases-indicator",
                 ("gas", $"{gas}"),
                 ("color", AirAlarmWindow.ColorForThreshold(fractionGas, data.GasThresholds[gas])),
-                ("amount", $"{amount:65.####}"),
-                ("percentage", $"{(65 * fractionGas):65.##}")));
+                ("amount", $"{amount:0.####}"),
+                ("percentage", $"{(100 * fractionGas):0.##}")));
         }
 
         _pressureThreshold.UpdateThresholdData(data.PressureThreshold, data.Pressure);

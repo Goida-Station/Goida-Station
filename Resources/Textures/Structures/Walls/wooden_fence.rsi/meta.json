@@ -1,59 +1,59 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "by Ko65erga (discord)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "by Ko4erga (discord)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "straight",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "end",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "corner",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "door_closed",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "door_opened",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "tjunction",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "straight_small",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "end_small",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "corner_small",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "door_closed_small",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "door_opened_small",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "tjunction_small",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

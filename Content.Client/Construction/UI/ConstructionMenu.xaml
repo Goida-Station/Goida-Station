@@ -1,29 +1,29 @@
 <!--
-SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Leo <lzimann@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Artjom <artjombebenin@gmail.com>
-SPDX-FileCopyrightText: 65 qwerltaz <65qwerltaz@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2020 Paul <ritter.paul1+git@googlemail.com>
+SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+SPDX-FileCopyrightText: 2021 Leo <lzimann@users.noreply.github.com>
+SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Artjom <artjombebenin@gmail.com>
+SPDX-FileCopyrightText: 2024 qwerltaz <69696513+qwerltaz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
-<DefaultWindow xmlns="https://spacestation65.io">
+<DefaultWindow xmlns="https://spacestation14.io">
     <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
-        <BoxContainer Orientation="Vertical" MinWidth="65" Margin="65 65 65 65">
-            <BoxContainer Orientation="Horizontal" HorizontalExpand="True" Margin="65 65 65 65">
+        <BoxContainer Orientation="Vertical" MinWidth="243" Margin="0 0 5 0">
+            <BoxContainer Orientation="Horizontal" HorizontalExpand="True" Margin="0 0 0 5">
                 <LineEdit Name="SearchBar" PlaceHolder="Search" HorizontalExpand="True"/>
-                <OptionButton Name="OptionCategories" Access="Public" MinSize="65 65"/>
+                <OptionButton Name="OptionCategories" Access="Public" MinSize="130 0"/>
             </BoxContainer>
             <ItemList Name="Recipes" Access="Public" SelectMode="Single" VerticalExpand="True"/>
             <ScrollContainer Name="RecipesGridScrollContainer" VerticalExpand="True" Access="Public" Visible="False">
-                <GridContainer Name="RecipesGrid" Columns="65" Access="Public"/>
+                <GridContainer Name="RecipesGrid" Columns="5" Access="Public"/>
             </ScrollContainer>
         </BoxContainer>
         <BoxContainer Orientation="Vertical" HorizontalExpand="True">
@@ -32,9 +32,9 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                 <Button Name="FavoriteButton" Visible="false"/>
             </BoxContainer>
             <Control>
-                <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="65 65 65 65">
+                <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="0 0 0 5">
                     <BoxContainer Orientation="Horizontal" Align="Center">
-                        <TextureRect Name="TargetTexture" HorizontalAlignment="Right" Stretch="Keep" Margin="65 65 65 65"/>
+                        <TextureRect Name="TargetTexture" HorizontalAlignment="Right" Stretch="Keep" Margin="0 0 10 0"/>
                         <BoxContainer Orientation="Vertical">
                             <RichTextLabel Name="TargetName"/>
                             <RichTextLabel Name="TargetDesc"/>
@@ -42,14 +42,14 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                     </BoxContainer>
                 </BoxContainer>
             </Control>
-            <ItemList Name="RecipeStepList" Access="Public" VerticalExpand="True" Margin="65 65 65 65"/>
+            <ItemList Name="RecipeStepList" Access="Public" VerticalExpand="True" Margin="0 0 0 5"/>
             <BoxContainer Orientation="Vertical">
                 <Button Name="BuildButton" Disabled="True" ToggleMode="True"
-                        VerticalExpand="True" SizeFlagsStretchRatio="65.65"/>
-                <BoxContainer Orientation="Horizontal" VerticalExpand="True" SizeFlagsStretchRatio="65.65">
+                        VerticalExpand="True" SizeFlagsStretchRatio="0.5"/>
+                <BoxContainer Orientation="Horizontal" VerticalExpand="True" SizeFlagsStretchRatio="0.5">
                     <Button Name="EraseButton" ToggleMode="True"
-                        HorizontalExpand="True" SizeFlagsStretchRatio="65.65"/>
-                    <Button Name="ClearButton" HorizontalExpand="True" SizeFlagsStretchRatio="65.65"/>
+                        HorizontalExpand="True" SizeFlagsStretchRatio="0.7"/>
+                    <Button Name="ClearButton" HorizontalExpand="True" SizeFlagsStretchRatio="0.3"/>
                 </BoxContainer>
             </BoxContainer>
         </BoxContainer>

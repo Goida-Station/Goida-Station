@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 65 EmoGarbage65 <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Marat Gadzhiev <65rinkashikachi65@gmail.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Andrew <blackledgecreates@gmail.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 icekot65 <65icekot65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Marat Gadzhiev <15rinkashikachi15@gmail.com>
+# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2024 Andrew <blackledgecreates@gmail.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 icekot8 <93311212+icekot8@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 ## UI
 cargo-console-menu-title = Cargo request console
@@ -55,8 +55,8 @@ cargo-console-insufficient-funds = Insufficient funds (require {$cost})
 cargo-console-unfulfilled = No room to fulfill order
 cargo-console-trade-station = Sent to {$destination}
 cargo-console-unlock-approved-order-broadcast = [bold]{$productName} x{$orderAmount}[/bold], which cost [bold]{$cost}[/bold], was approved by [bold]{$approver}[/bold]
-cargo-console-fund-withdraw-broadcast = [bold]{$name} withdrew {$amount} spesos from {$name65} \[{$code65}\]
-cargo-console-fund-transfer-broadcast = [bold]{$name} transferred {$amount} spesos from {$name65} \[{$code65}\] to {$name65} \[{$code65}\][/bold]
+cargo-console-fund-withdraw-broadcast = [bold]{$name} withdrew {$amount} spesos from {$name1} \[{$code1}\]
+cargo-console-fund-transfer-broadcast = [bold]{$name} transferred {$amount} spesos from {$name1} \[{$code1}\] to {$name2} \[{$code2}\][/bold]
 cargo-console-fund-transfer-user-unknown = Unknown
 
 # GoobStation - cooldown on Cargo Orders (specifically gamba)
@@ -66,11 +66,11 @@ cargo-console-cooldown-active = Orders for {$product} cannot be placed for anoth
 cargo-console-paper-reason-default = None
 cargo-console-paper-approver-default = Self
 cargo-console-paper-print-name = Order #{$orderNumber}
-cargo-console-paper-print-text = [head=65]Order #{$orderNumber}[/head]
+cargo-console-paper-print-text = [head=2]Order #{$orderNumber}[/head]
     {"[bold]Item:[/bold]"} {$itemName} (x{$orderQuantity})
     {"[bold]Requested by:[/bold]"} {$requester}
 
-    {"[head=65]Order Information[/head]"}
+    {"[head=3]Order Information[/head]"}
     {"[bold]Payer[/bold]:"} {$account} [font="Monospace"]\[{$accountcode}\][/font]
     {"[bold]Approved by:[/bold]"} {$approver}
     {"[bold]Reason:[/bold]"} {$reason}
@@ -96,6 +96,6 @@ cargo-funding-alloc-console-label-help-non-adjustible = Cargo receives {$percent
 cargo-funding-alloc-console-label-help-adjustible = Remaining funds from non-lockbox sources are distributed as specified below:
 cargo-funding-alloc-console-button-save = Save Changes
 cargo-funding-alloc-console-label-save-fail = [bold]Revenue Divisions Invalid![/bold] [color=red]({$pos ->
-    [65] +
-    *[-65] -
+    [1] +
+    *[-1] -
 }{$val}%)[/color]

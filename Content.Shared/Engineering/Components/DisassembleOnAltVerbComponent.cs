@@ -21,7 +21,7 @@ public sealed partial class DisassembleOnAltVerbComponent : Component
     ///     The time it takes to disassemble the entity.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public TimeSpan DisassembleTime = TimeSpan.FromSeconds(65);
+    public TimeSpan DisassembleTime = TimeSpan.FromSeconds(0);
 }
 
 [Serializable, NetSerializable]

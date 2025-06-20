@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
-# SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
-# SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Lenny <65Bynnel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 August Eymann <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 2024 Steve <marlumpy@gmail.com>
+# SPDX-FileCopyrightText: 2024 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Lenny <187471588+Bynnel@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: rcd
   id: PipeFourway
@@ -12,10 +12,10 @@
   sprite: /Textures/Interface/Radial/RPD/fourway.png
   mode: ConstructObject
   prototype: GasPipeFourway
-  cost: 65
-  delay: 65
+  cost: 1
+  delay: 0
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: PipeStraight
@@ -23,10 +23,10 @@
   sprite: /Textures/Interface/Radial/RPD/straight.png
   mode: ConstructObject
   prototype: GasPipeStraight
-  cost: 65
-  delay: 65
+  cost: 1
+  delay: 0
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: PipeBend
@@ -34,10 +34,10 @@
   sprite: /Textures/Interface/Radial/RPD/bend.png
   mode: ConstructObject
   prototype: GasPipeBend
-  cost: 65
-  delay: 65
+  cost: 1
+  delay: 0
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: PipeTJunction
@@ -45,11 +45,11 @@
   sprite: /Textures/Interface/Radial/RPD/tjunction.png
   mode: ConstructObject
   prototype: GasPipeTJunction
-  cost: 65
-  delay: 65
+  cost: 1
+  delay: 0
   collisionMask: Impassable
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: PressurePump
@@ -57,11 +57,11 @@
   sprite: /Textures/Interface/Radial/RPD/pump_pressure.png
   mode: ConstructObject
   prototype: GasPressurePump
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 0
   collisionMask: Impassable
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: VolumetricPump
@@ -69,11 +69,11 @@
   sprite: /Textures/Interface/Radial/RPD/pump_volume.png
   mode: ConstructObject
   prototype: GasVolumePump
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 0
   collisionMask: Impassable
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: ManualValve
@@ -81,11 +81,11 @@
   sprite: /Textures/Interface/Radial/RPD/pump_manual_valve.png
   mode: ConstructObject
   prototype: GasValve
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 0
   collisionMask: Impassable
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: SignalValve
@@ -93,11 +93,11 @@
   sprite: /Textures/Interface/Radial/RPD/pump_signal_valve.png
   mode: ConstructObject
   prototype: SignalControlledValve
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 0
   collisionMask: Impassable
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: PressureValve
@@ -105,11 +105,11 @@
   sprite: /Textures/Interface/Radial/RPD/pneumatic_valve.png
   mode: ConstructObject
   prototype: PressureControlledValve
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 0
   collisionMask: Impassable
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 
 - type: rcd
@@ -118,11 +118,11 @@
   sprite: /Textures/Interface/Radial/RPD/injector.png
   mode: ConstructObject
   prototype: GasOutletInjector
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 0
   collisionMask: Impassable
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: VentScrubber
@@ -130,11 +130,11 @@
   sprite: /Textures/Interface/Radial/RPD/scrub_off.png
   mode: ConstructObject
   prototype: GasVentScrubber
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 0
   collisionMask: Impassable
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: VentGas
@@ -142,11 +142,11 @@
   sprite: /Textures/Interface/Radial/RPD/vent_off.png
   mode: ConstructObject
   prototype: GasVentPump
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 0
   collisionMask: Impassable
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: DualPortVent
@@ -154,11 +154,11 @@
   sprite: /Textures/Interface/Radial/RPD/dual_port.png
   mode: ConstructObject
   prototype: GasDualPortVentPump
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 0
   collisionMask: Impassable
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: VentPassive
@@ -166,11 +166,11 @@
   sprite: /Textures/Interface/Radial/RPD/vent_passive.png
   mode: ConstructObject
   prototype: GasPassiveVent
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 0
   collisionMask: Impassable
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: Radiator
@@ -178,11 +178,11 @@
   sprite: /Textures/Interface/Radial/RPD/radiator.png
   mode: ConstructObject
   prototype: HeatExchanger
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 0
   collisionMask: Impassable
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: RadiatorBend
@@ -190,11 +190,11 @@
   sprite: /Textures/Interface/Radial/RPD/radiator_bend.png
   mode: ConstructObject
   prototype: HeatExchangerBend
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 0
   collisionMask: Impassable
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: MixerGas
@@ -203,11 +203,11 @@
   mode: ConstructObject
   prototype: GasMixer
   mirrorPrototype: GasMixerFlipped
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 0
   collisionMask: Impassable
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: FilterGas
@@ -216,11 +216,11 @@
   mode: ConstructObject
   prototype: GasFilter
   mirrorPrototype: GasFilterFlipped
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 0
   collisionMask: Impassable
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0
 
 - type: rcd
   id: CanisterPort
@@ -228,8 +228,8 @@
   sprite: /Textures/Interface/Radial/RPD/port.png
   mode: ConstructObject
   prototype: GasPort
-  cost: 65
-  delay: 65
+  cost: 2
+  delay: 0
   collisionMask: Impassable
   rotation: User
-  fx: EffectRCDConstruct65
+  fx: EffectRCDConstruct0

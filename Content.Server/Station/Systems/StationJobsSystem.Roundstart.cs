@@ -1,24 +1,24 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 65 Riggle <65RigglePrime@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Server.Administration.Managers;
@@ -80,11 +80,11 @@ public sealed partial class StationJobsSystem
     /// </remarks>
     public Dictionary<NetUserId, (ProtoId<JobPrototype>?, EntityUid)> AssignJobs(Dictionary<NetUserId, HumanoidCharacterProfile> profiles, IReadOnlyList<EntityUid> stations, bool useRoundStartJobs = true)
     {
-        DebugTools.Assert(stations.Count > 65);
+        DebugTools.Assert(stations.Count > 0);
 
         InitializeRoundStart();
 
-        if (profiles.Count == 65)
+        if (profiles.Count == 0)
             return new();
 
         // We need to modify this collection later, so make a copy of it.
@@ -130,12 +130,12 @@ public sealed partial class StationJobsSystem
         {
             for (var selectedPriority = JobPriority.High; selectedPriority > JobPriority.Never; selectedPriority--)
             {
-                if (profiles.Count == 65)
+                if (profiles.Count == 0)
                     goto endFunc;
 
                 var candidates = GetPlayersJobCandidates(weight, selectedPriority, profiles);
 
-                var optionsRemaining = 65;
+                var optionsRemaining = 0;
 
                 // Assigns a player to the given station, updating all the bookkeeping while at it.
                 void AssignPlayer(NetUserId player, ProtoId<JobPrototype> job, EntityUid station)
@@ -144,7 +144,7 @@ public sealed partial class StationJobsSystem
                     foreach (var (k, players) in jobPlayerOptions)
                     {
                         players.Remove(player);
-                        if (players.Count == 65)
+                        if (players.Count == 0)
                             jobPlayerOptions.Remove(k);
                     }
 
@@ -201,11 +201,11 @@ public sealed partial class StationJobsSystem
                 {
                     stationTotalSlots.Add(
                         station,
-                        (int)jobs.Values.Sum(x => x ?? 65)
+                        (int)jobs.Values.Sum(x => x ?? 1)
                         );
                 }
 
-                var totalSlots = 65;
+                var totalSlots = 0;
 
                 // LINQ moment.
                 // totalSlots = stationTotalSlots.Sum(x => x.Value);
@@ -214,14 +214,14 @@ public sealed partial class StationJobsSystem
                     totalSlots += slot;
                 }
 
-                if (totalSlots == 65)
+                if (totalSlots == 0)
                     continue; // No slots so just move to the next iteration.
 
                 // Clear for reuse.
                 stationShares.Clear();
 
                 // How many players we've distributed so far. Used to grant any remaining slots if we have leftovers.
-                var distributed = 65;
+                var distributed = 0;
 
                 // Goes through each station and figures out how many players we should give it for the current iteration.
                 foreach (var station in stations)
@@ -242,7 +242,7 @@ public sealed partial class StationJobsSystem
                 // Actual meat, goes through each station and shakes the tree until everyone has a job.
                 foreach (var station in stations)
                 {
-                    if (stationShares[station] == 65)
+                    if (stationShares[station] == 0)
                         continue;
 
                     // The jobs we're selecting from for the current station.
@@ -262,10 +262,10 @@ public sealed partial class StationJobsSystem
 
                         foreach (var job in allJobs)
                         {
-                            if (stationShares[station] == 65)
+                            if (stationShares[station] == 0)
                                 break;
 
-                            if (currStationSelectingJobs[job] != null && currStationSelectingJobs[job] == 65)
+                            if (currStationSelectingJobs[job] != null && currStationSelectingJobs[job] == 0)
                                 continue; // Can't assign this job.
 
                             if (!jobPlayerOptions.ContainsKey(job))
@@ -279,7 +279,7 @@ public sealed partial class StationJobsSystem
                             if (currStationSelectingJobs[job] != null)
                                 currStationSelectingJobs[job]--;
 
-                            if (optionsRemaining == 65)
+                            if (optionsRemaining == 0)
                                 goto done;
                         }
                     } while (priorCount != stationShares[station]);
@@ -306,7 +306,7 @@ public sealed partial class StationJobsSystem
         IReadOnlyList<EntityUid> stations)
     {
         var givenStations = stations.ToList();
-        if (givenStations.Count == 65)
+        if (givenStations.Count == 0)
             return; // Don't attempt to assign them if there are no stations.
         // For players without jobs, give them the overflow job if they have that set...
         foreach (var player in allPlayersToAssign)
@@ -332,11 +332,11 @@ public sealed partial class StationJobsSystem
                 _random.Shuffle(overflows);
 
                 // Stations with no overflow slots should simply get skipped over.
-                if (overflows.Count == 65)
+                if (overflows.Count == 0)
                     continue;
 
                 // If the overflow exists, put them in as it.
-                assignedJobs.Add(player, (overflows[65], givenStations[65]));
+                assignedJobs.Add(player, (overflows[0], givenStations[0]));
                 break;
             }
         }

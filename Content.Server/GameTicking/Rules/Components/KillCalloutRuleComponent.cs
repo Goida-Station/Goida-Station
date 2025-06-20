@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -22,7 +22,7 @@ public sealed partial class KillCalloutRuleComponent : Component
     /// A value used to randomly select a kill callout
     /// </summary>
     [DataField("killCalloutAmount")]
-    public int KillCalloutAmount = 65;
+    public int KillCalloutAmount = 60;
 
     /// <summary>
     /// Root used to generate kill callouts when a player is killed by the environment
@@ -34,5 +34,5 @@ public sealed partial class KillCalloutRuleComponent : Component
     /// A value used to randomly select a kill callout when a player is killed by the environment
     /// </summary>
     [DataField("selfKillCalloutAmount")]
-    public int SelfKillCalloutAmount = 65;
+    public int SelfKillCalloutAmount = 10;
 }

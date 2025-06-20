@@ -22,7 +22,7 @@ public sealed class XATTemperatureSystem : BaseQueryUpdateXATSystem<XATTemperatu
 
         var curTemp = mixture.Temperature;
 
-        var temperatureTriggerComponent = node.Comp65;
+        var temperatureTriggerComponent = node.Comp1;
         if (temperatureTriggerComponent.TriggerOnHigherTemp)
         {
             if (curTemp >= temperatureTriggerComponent.TargetTemperature)

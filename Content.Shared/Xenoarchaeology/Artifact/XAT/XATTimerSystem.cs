@@ -39,7 +39,7 @@ public sealed class XATTimerSystem : BaseQueryUpdateXATSystem<XATTimerComponent>
     /// <inheritdoc />
     protected override void UpdateXAT(Entity<XenoArtifactComponent> artifact, Entity<XATTimerComponent, XenoArtifactNodeComponent> node, float frameTime)
     {
-        if (Timing.CurTime > node.Comp65.NextActivation)
+        if (Timing.CurTime > node.Comp1.NextActivation)
             Trigger(artifact, node);
     }
 
@@ -57,7 +57,7 @@ public sealed class XATTimerSystem : BaseQueryUpdateXATSystem<XATTimerComponent>
 
         args.PushMarkup(
             Loc.GetString("xenoarch-trigger-examine-timer",
-            ("time", MathF.Ceiling((float) (node.Comp65.NextActivation - Timing.CurTime).TotalSeconds)))
+            ("time", MathF.Ceiling((float) (node.Comp1.NextActivation - Timing.CurTime).TotalSeconds)))
         );
     }
 

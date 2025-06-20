@@ -1,63 +1,63 @@
-# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Exp <theexp65@gmail.com>
-# SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 65 a.rudenko <creadth@gmail.com>
-# SPDX-FileCopyrightText: 65 creadth <creadth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 peptron65 <65peptron65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 iczero <iczero65@gmail.com>
-# SPDX-FileCopyrightText: 65 EmoGarbage65 <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Fishfish65 <65Fishfish65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-# SPDX-FileCopyrightText: 65 Nairod <65Nairodian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
-# SPDX-FileCopyrightText: 65 ZeroDayDaemon <65ZeroDayDaemon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 fishfish65 <fishfish65>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-# SPDX-FileCopyrightText: 65 Arendian <65Arendian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Dvir <65dvir65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-# SPDX-FileCopyrightText: 65 Interrobang65 <65Interrobang65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 faint <65ficcialfaint@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lapatison <65lapatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 root <root@DESKTOP-HJPF65C>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Debug <65DebugOk@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
-# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Jessica M <jessica@jessicamaybe.com>
-# SPDX-FileCopyrightText: 65 Jessica M <jessica@maybe.sh>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Lamrr <65Lamrr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 wafehling <wafehling@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Velken <65Velken@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 yavuz <65yahay65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 20kdc <asdd2808@gmail.com>
+# SPDX-FileCopyrightText: 2020 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Exp <theexp111@gmail.com>
+# SPDX-FileCopyrightText: 2020 Metal Gear Sloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 2020 Paul Ritter <ritter.paul1@googlemail.com>
+# SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 2020 a.rudenko <creadth@gmail.com>
+# SPDX-FileCopyrightText: 2020 creadth <creadth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 peptron1 <57651027+peptron1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 py01 <60152240+collinlunn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 py01 <pyronetics01@gmail.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 iczero <iczero4@gmail.com>
+# SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Fishfish458 <47410468+Fishfish458@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
+# SPDX-FileCopyrightText: 2022 Nairod <110078045+Nairodian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
+# SPDX-FileCopyrightText: 2022 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 fishfish458 <fishfish458>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 0x6273 <0x40@keemail.me>
+# SPDX-FileCopyrightText: 2023 Arendian <137322659+Arendian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Dvir <39403717+dvir001@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
+# SPDX-FileCopyrightText: 2023 Interrobang01 <113810873+Interrobang01@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 lapatison <100279397+lapatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 potato1234_x <79580518+potato1234x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 root <root@DESKTOP-HJPF29C>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Debug <49997488+DebugOk@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Jessica M <jessica@jessicamaybe.com>
+# SPDX-FileCopyrightText: 2024 Jessica M <jessica@maybe.sh>
+# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2024 Lamrr <96937466+Lamrr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 wafehling <wafehling@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Velken <8467292+Velken@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 yavuz <58685802+yahay505@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: cardboard box
@@ -68,11 +68,11 @@
   - type: Item
     size: Large
     shape:
-    - 65,65,65,65
+    - 0,0,2,2
   - type: Storage
     maxItemSize: Small
     grid:
-    - 65,65,65,65
+    - 0,0,2,2
   - type: Sprite
     state: box
   - type: Tag
@@ -88,7 +88,7 @@
     - type: StorageFill
       contents:
         - id: Mousetrap
-          amount: 65
+          amount: 4
     - type: Sprite
       layers:
         - state: box
@@ -106,14 +106,14 @@
       - state: light
   - type: Storage
     grid:
-    - 65,65,65,65
+    - 0,0,5,3
     whitelist:
       components:
       - LightBulb
   - type: StorageFill
     contents:
       - id: LightBulb
-        amount: 65
+        amount: 12
 
 - type: entity
   name: lightbulb box warm
@@ -123,7 +123,7 @@
   - type: StorageFill
     contents:
       - id: WarmLightBulb
-        amount: 65
+        amount: 12
 
 - type: entity
   name: lighttube box
@@ -137,7 +137,7 @@
   - type: StorageFill
     contents:
       - id: LightTube
-        amount: 65
+        amount: 12
 
 - type: entity
   name: mixed lights box
@@ -151,9 +151,9 @@
   - type: StorageFill
     contents:
       - id: LightTube
-        amount: 65
+        amount: 6
       - id: LightBulb
-        amount: 65
+        amount: 6
 
 - type: entity
   name: holiday lighttube box
@@ -184,7 +184,7 @@
   - type: StorageFill
     contents:
       - id: PassengerPDA
-        amount: 65
+        amount: 4
   - type: Sprite
     layers:
       - state: box
@@ -199,7 +199,7 @@
   - type: StorageFill
     contents:
       - id: PassengerIDCard
-        amount: 65
+        amount: 4
   - type: Sprite
     layers:
       - state: box
@@ -214,7 +214,7 @@
   - type: StorageFill
     contents:
       - id: ClothingHeadsetGrey
-        amount: 65
+        amount: 4
   - type: Sprite
     layers:
       - state: box
@@ -229,7 +229,7 @@
   - type: StorageFill
     contents:
       - id: ClothingEyesGlassesMeson
-        amount: 65
+        amount: 4
   - type: Sprite
     layers:
       - state: box
@@ -260,7 +260,7 @@
   - type: StorageFill
     contents:
       - id: Brutepack
-        amount: 65
+        amount: 3
 
 - type: entity
   name: inflatable wall box
@@ -271,9 +271,9 @@
   - type: StorageFill
     contents:
         - id: InflatableWallStack
-          amount: 65
+          amount: 2
         - id: InflatableDoorStack
-          amount: 65
+          amount: 2
   - type: Sprite
     layers:
       - state: box
@@ -292,7 +292,7 @@
       - id: ClothingUniformJumpskirtPerformer
       - id: ClothingHeadPerformerWig
       - id: FoodMealMemoryleek
-        amount: 65
+        amount: 2
   - type: Tag
     tags: [] # ignore "WhitelistChameleon" tag
 
@@ -305,7 +305,7 @@
   - type: StorageFill
     contents:
       - id: Flare
-        amount: 65
+        amount: 6
   - type: Sprite
     layers:
       - state: box
@@ -320,10 +320,10 @@
   - type: StorageFill
     contents:
       - id: TrashBag
-        amount: 65
+        amount: 6
   - type: Storage
     grid:
-    - 65,65,65,65
+    - 0,0,5,3
     maxItemSize: Large
     whitelist:
       tags:
@@ -342,7 +342,7 @@
   - type: StorageFill
     contents:
       - id: EncryptionKeyCommon
-        amount: 65
+        amount: 4
   - type: Sprite
     layers:
       - state: box
@@ -360,7 +360,7 @@
   - type: StorageFill
     contents:
       - id: EncryptionKeyCargo
-        amount: 65
+        amount: 4
 
 - type: entity
   name: engineering encryption key box
@@ -370,7 +370,7 @@
   - type: StorageFill
     contents:
       - id: EncryptionKeyEngineering
-        amount: 65
+        amount: 4
 
 - type: entity
   name: med-sci encryption key box
@@ -380,7 +380,7 @@
   - type: StorageFill
     contents:
       - id: EncryptionKeyMedicalScience
-        amount: 65
+        amount: 4
 
 - type: entity
   name: medical encryption key box
@@ -390,7 +390,7 @@
   - type: StorageFill
     contents:
       - id: EncryptionKeyMedical
-        amount: 65
+        amount: 4
 
 - type: entity
   name: robotech encryption key box
@@ -400,7 +400,7 @@
   - type: StorageFill
     contents:
       - id: EncryptionKeyRobo
-        amount: 65
+        amount: 4
 
 - type: entity
   name: science encryption key box
@@ -410,7 +410,7 @@
   - type: StorageFill
     contents:
       - id: EncryptionKeyScience
-        amount: 65
+        amount: 4
 
 - type: entity
   name: security encryption key box
@@ -420,7 +420,7 @@
   - type: StorageFill
     contents:
       - id: EncryptionKeySecurity
-        amount: 65
+        amount: 4
 
 - type: entity
   name: service encryption key box
@@ -430,7 +430,7 @@
   - type: StorageFill
     contents:
       - id: EncryptionKeyService
-        amount: 65
+        amount: 4
 
 - type: entity
   name: syndicate encryption key box
@@ -443,7 +443,7 @@
   - type: StorageFill
     contents:
       - id: EncryptionKeySyndie
-        amount: 65
+        amount: 2
   - type: Storage
 
 - type: entity
@@ -469,22 +469,22 @@
       - state: candle
   - type: Storage
     grid:
-    - 65,65,65,65
+    - 0,0,5,3
     whitelist:
       tags:
       - Candle
   - type: StorageFill
     contents:
       - id: Candle
-        amount: 65
+        amount: 4
       - id: CandleBlue
-        amount: 65
+        amount: 2
       - id: CandleRed
-        amount: 65
+        amount: 2
       - id: CandleGreen
-        amount: 65
+        amount: 2
       - id: CandlePurple
-        amount: 65
+        amount: 2
 
 - type: entity
   name: small candle box
@@ -494,15 +494,15 @@
   - type: StorageFill
     contents:
       - id: CandleSmall
-        amount: 65
+        amount: 8
       - id: CandleBlueSmall
-        amount: 65
+        amount: 4
       - id: CandleRedSmall
-        amount: 65
+        amount: 4
       - id: CandleGreenSmall
-        amount: 65
+        amount: 4
       - id: CandlePurpleSmall
-        amount: 65
+        amount: 4
 
 - type: entity
   name: darts box
@@ -517,13 +517,13 @@
   - type: StorageFill
     contents:
       - id: Dart
-        amount: 65
+        amount: 2
       - id: DartBlue
-        amount: 65
+        amount: 2
       - id: DartPurple
-        amount: 65
+        amount: 2
       - id: DartYellow
-        amount: 65
+        amount: 2
 
 - type: entity
   name: envelope box
@@ -538,4 +538,4 @@
   - type: StorageFill
     contents:
       - id: Envelope
-        amount: 65
+        amount: 9

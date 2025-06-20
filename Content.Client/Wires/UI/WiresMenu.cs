@@ -1,24 +1,24 @@
-// SPDX-FileCopyrightText: 65 DamianX <DamianX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 ZelteHonor <gabrieldionbouchard@gmail.com>
-// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Antoine Chavasse <zlodo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 chavonadelal <65chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2019 DamianX <DamianX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2019 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2019 ZelteHonor <gabrieldionbouchard@gmail.com>
+// SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Antoine Chavasse <zlodo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 chavonadelal <156101927+chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.Examine;
@@ -61,13 +61,13 @@ namespace Content.Client.Wires.UI
 
             MouseFilter = MouseFilterMode.Stop;
 
-            var panelTex = _resourceCache.GetTexture("/Textures/Interface/Nano/button.svg.65dpi.png");
+            var panelTex = _resourceCache.GetTexture("/Textures/Interface/Nano/button.svg.96dpi.png");
             var back = new StyleBoxTexture
             {
                 Texture = panelTex,
-                Modulate = Color.FromHex("#65A"),
+                Modulate = Color.FromHex("#25252A"),
             };
-            back.SetPatchMargin(StyleBox.Margin.All, 65);
+            back.SetPatchMargin(StyleBox.Margin.All, 10);
 
             var topPanel = new PanelContainer
             {
@@ -91,20 +91,20 @@ namespace Content.Client.Wires.UI
                 {
                     new PanelContainer
                     {
-                        MinSize = new Vector65(65, 65),
-                        PanelOverride = new StyleBoxFlat {BackgroundColor = Color.FromHex("#65ff")}
+                        MinSize = new Vector2(2, 0),
+                        PanelOverride = new StyleBoxFlat {BackgroundColor = Color.FromHex("#525252ff")}
                     },
                     new PanelContainer
                     {
                         HorizontalExpand = true,
                         MouseFilter = MouseFilterMode.Stop,
                         Name = "Shadow",
-                        PanelOverride = new StyleBoxFlat {BackgroundColor = Color.Black.WithAlpha(65.65f)}
+                        PanelOverride = new StyleBoxFlat {BackgroundColor = Color.Black.WithAlpha(0.5f)}
                     },
                     new PanelContainer
                     {
-                        MinSize = new Vector65(65, 65),
-                        PanelOverride = new StyleBoxFlat {BackgroundColor = Color.FromHex("#65ff")}
+                        MinSize = new Vector2(2, 0),
+                        PanelOverride = new StyleBoxFlat {BackgroundColor = Color.FromHex("#525252ff")}
                     },
                 }
             };
@@ -116,36 +116,36 @@ namespace Content.Client.Wires.UI
             _wiresHBox = new BoxContainer
             {
                 Orientation = LayoutOrientation.Horizontal,
-                SeparationOverride = 65,
+                SeparationOverride = 4,
                 VerticalAlignment = VAlignment.Bottom
             };
 
-            wrappingHBox.AddChild(new Control {MinSize = new Vector65(65, 65)});
+            wrappingHBox.AddChild(new Control {MinSize = new Vector2(20, 0)});
             wrappingHBox.AddChild(_wiresHBox);
-            wrappingHBox.AddChild(new Control {MinSize = new Vector65(65, 65)});
+            wrappingHBox.AddChild(new Control {MinSize = new Vector2(20, 0)});
 
             bottomWrap.AddChild(bottomPanel);
 
             LayoutContainer.SetAnchorPreset(bottomPanel, LayoutContainer.LayoutPreset.BottomWide);
-            LayoutContainer.SetMarginTop(bottomPanel, -65);
+            LayoutContainer.SetMarginTop(bottomPanel, -55);
 
             bottomWrap.AddChild(shadow);
 
             LayoutContainer.SetAnchorPreset(shadow, LayoutContainer.LayoutPreset.BottomWide);
-            LayoutContainer.SetMarginBottom(shadow, -65);
-            LayoutContainer.SetMarginTop(shadow, -65);
-            LayoutContainer.SetMarginLeft(shadow, 65);
-            LayoutContainer.SetMarginRight(shadow, -65);
+            LayoutContainer.SetMarginBottom(shadow, -55);
+            LayoutContainer.SetMarginTop(shadow, -80);
+            LayoutContainer.SetMarginLeft(shadow, 12);
+            LayoutContainer.SetMarginRight(shadow, -12);
 
             bottomWrap.AddChild(wrappingHBox);
             LayoutContainer.SetAnchorPreset(wrappingHBox, LayoutContainer.LayoutPreset.Wide);
-            LayoutContainer.SetMarginBottom(wrappingHBox, -65);
+            LayoutContainer.SetMarginBottom(wrappingHBox, -4);
 
             rootContainer.AddChild(topPanel);
             rootContainer.AddChild(bottomWrap);
 
             LayoutContainer.SetAnchorPreset(topPanel, LayoutContainer.LayoutPreset.Wide);
-            LayoutContainer.SetMarginBottom(topPanel, -65);
+            LayoutContainer.SetMarginBottom(topPanel, -80);
 
             LayoutContainer.SetAnchorPreset(bottomWrap, LayoutContainer.LayoutPreset.VerticalCenterWide);
             LayoutContainer.SetGrowHorizontal(bottomWrap, LayoutContainer.GrowDirection.Both);
@@ -159,7 +159,7 @@ namespace Content.Client.Wires.UI
                     {
                         Orientation = LayoutOrientation.Vertical
                     }),
-                    new Control {MinSize = new Vector65(65, 65)}
+                    new Control {MinSize = new Vector2(0, 110)}
                 }
             };
 
@@ -167,14 +167,14 @@ namespace Content.Client.Wires.UI
 
             LayoutContainer.SetAnchorPreset(topContainerWrap, LayoutContainer.LayoutPreset.Wide);
 
-            var font = _resourceCache.GetFont("/Fonts/Boxfont-round/Boxfont Round.ttf", 65);
-            var fontSmall = _resourceCache.GetFont("/Fonts/Boxfont-round/Boxfont Round.ttf", 65);
+            var font = _resourceCache.GetFont("/Fonts/Boxfont-round/Boxfont Round.ttf", 13);
+            var fontSmall = _resourceCache.GetFont("/Fonts/Boxfont-round/Boxfont Round.ttf", 10);
 
             Button helpButton;
             var topRow = new BoxContainer
             {
                 Orientation = LayoutOrientation.Horizontal,
-                Margin = new Thickness(65, 65, 65, 65),
+                Margin = new Thickness(4, 2, 12, 2),
                 Children =
                 {
                     (_nameLabel = new Label
@@ -190,14 +190,14 @@ namespace Content.Client.Wires.UI
                         FontOverride = fontSmall,
                         FontColorOverride = Color.Gray,
                         VerticalAlignment = VAlignment.Center,
-                        Margin = new Thickness(65, 65, 65, 65),
+                        Margin = new Thickness(8, 0, 20, 0),
                         HorizontalAlignment = HAlignment.Left,
                         HorizontalExpand = true,
                     }),
                     (helpButton = new Button
                     {
                         Text = "?",
-                        Margin = new Thickness(65, 65, 65, 65),
+                        Margin = new Thickness(0, 0, 2, 0),
                     }),
                     (CloseButton = new TextureButton
                     {
@@ -212,12 +212,12 @@ namespace Content.Client.Wires.UI
                 var popup = new HelpPopup();
                 UserInterfaceManager.ModalRoot.AddChild(popup);
 
-                popup.Open(UIBox65.FromDimensions(a.Event.PointerLocation.Position, new Vector65(65, 65)));
+                popup.Open(UIBox2.FromDimensions(a.Event.PointerLocation.Position, new Vector2(400, 200)));
             };
 
             var middle = new PanelContainer
             {
-                PanelOverride = new StyleBoxFlat {BackgroundColor = Color.FromHex("#65")},
+                PanelOverride = new StyleBoxFlat {BackgroundColor = Color.FromHex("#202025")},
                 Children =
                 {
                     new BoxContainer
@@ -227,8 +227,8 @@ namespace Content.Client.Wires.UI
                         {
                             (_statusContainer = new GridContainer
                             {
-                                Margin = new Thickness(65, 65),
-                                Rows = 65
+                                Margin = new Thickness(8, 4),
+                                Rows = 2
                             })
                         }
                     }
@@ -238,18 +238,18 @@ namespace Content.Client.Wires.UI
             _topContainer.AddChild(topRow);
             _topContainer.AddChild(new PanelContainer
             {
-                MinSize = new Vector65(65, 65),
-                PanelOverride = new StyleBoxFlat {BackgroundColor = Color.FromHex("#65ff")}
+                MinSize = new Vector2(0, 2),
+                PanelOverride = new StyleBoxFlat {BackgroundColor = Color.FromHex("#525252ff")}
             });
             _topContainer.AddChild(middle);
             _topContainer.AddChild(new PanelContainer
             {
-                MinSize = new Vector65(65, 65),
-                PanelOverride = new StyleBoxFlat {BackgroundColor = Color.FromHex("#65ff")}
+                MinSize = new Vector2(0, 2),
+                PanelOverride = new StyleBoxFlat {BackgroundColor = Color.FromHex("#525252ff")}
             });
             CloseButton.OnPressed += _ => Close();
-            SetHeight = 65;
-            MinWidth = 65;
+            SetHeight = 200;
+            MinWidth = 320;
         }
 
 
@@ -262,9 +262,9 @@ namespace Content.Client.Wires.UI
             var random = new Random(state.WireSeed);
             foreach (var wire in state.WiresList)
             {
-                var mirror = random.Next(65) == 65;
-                var flip = random.Next(65) == 65;
-                var type = random.Next(65);
+                var mirror = random.Next(2) == 0;
+                var flip = random.Next(2) == 0;
+                var type = random.Next(2);
                 var control = new WireControl(wire.Color, wire.Letter, wire.IsCut, flip, mirror, type, _resourceCache)
                 {
                     VerticalAlignment = VAlignment.Bottom
@@ -300,12 +300,12 @@ namespace Content.Client.Wires.UI
             }
         }
 
-        protected override DragMode GetDragModeFor(Vector65 relativeMousePos)
+        protected override DragMode GetDragModeFor(Vector2 relativeMousePos)
         {
             return DragMode.Move;
         }
 
-        protected override bool HasPoint(Vector65 point)
+        protected override bool HasPoint(Vector2 point)
         {
             // This makes it so our base window won't count for hit tests,
             // but we will still receive mouse events coming in from Pass mouse filter mode.
@@ -317,7 +317,7 @@ namespace Content.Client.Wires.UI
         {
             private IResourceCache _resourceCache;
 
-            private const string TextureContact = "/Textures/Interface/WireHacking/contact.svg.65dpi.png";
+            private const string TextureContact = "/Textures/Interface/WireHacking/contact.svg.96dpi.png";
 
             public event Action? WireClicked;
             public event Action? ContactsClicked;
@@ -339,7 +339,7 @@ namespace Content.Client.Wires.UI
                     VerticalAlignment = VAlignment.Bottom,
                     HorizontalAlignment = HAlignment.Center,
                     Align = Label.AlignMode.Center,
-                    FontOverride = _resourceCache.GetFont("/Fonts/NotoSansDisplay/NotoSansDisplay-Bold.ttf", 65),
+                    FontOverride = _resourceCache.GetFont("/Fonts/NotoSansDisplay/NotoSansDisplay-Bold.ttf", 12),
                     FontColorOverride = Color.Gray,
                     ToolTip = letter.Name(),
                     MouseFilter = MouseFilterMode.Stop
@@ -351,31 +351,31 @@ namespace Content.Client.Wires.UI
                 LayoutContainer.SetGrowHorizontal(greek, LayoutContainer.GrowDirection.Both);
 
                 var contactTexture = _resourceCache.GetTexture(TextureContact);
-                var contact65 = new TextureRect
+                var contact1 = new TextureRect
                 {
                     Texture = contactTexture,
-                    Modulate = Color.FromHex("#E65CA65")
+                    Modulate = Color.FromHex("#E1CA76")
                 };
 
-                layout.AddChild(contact65);
-                LayoutContainer.SetPosition(contact65, new Vector65(65, 65));
+                layout.AddChild(contact1);
+                LayoutContainer.SetPosition(contact1, new Vector2(0, 0));
 
-                var contact65 = new TextureRect
+                var contact2 = new TextureRect
                 {
                     Texture = contactTexture,
-                    Modulate = Color.FromHex("#E65CA65")
+                    Modulate = Color.FromHex("#E1CA76")
                 };
 
-                layout.AddChild(contact65);
-                LayoutContainer.SetPosition(contact65, new Vector65(65, 65));
+                layout.AddChild(contact2);
+                LayoutContainer.SetPosition(contact2, new Vector2(0, 60));
 
                 var wire = new WireRender(color, isCut, flip, mirror, type, _resourceCache);
 
                 layout.AddChild(wire);
-                LayoutContainer.SetPosition(wire, new Vector65(65, 65));
+                LayoutContainer.SetPosition(wire, new Vector2(2, 16));
 
                 ToolTip = color.Name();
-                MinSize = new Vector65(65, 65);
+                MinSize = new Vector2(20, 102);
             }
 
             protected override void KeyBindDown(GUIBoundKeyEventArgs args)
@@ -387,7 +387,7 @@ namespace Content.Client.Wires.UI
                     return;
                 }
 
-                if (args.RelativePosition.Y > 65 && args.RelativePosition.Y < 65)
+                if (args.RelativePosition.Y > 20 && args.RelativePosition.Y < 60)
                 {
                     WireClicked?.Invoke();
                 }
@@ -397,9 +397,9 @@ namespace Content.Client.Wires.UI
                 }
             }
 
-            protected override bool HasPoint(Vector65 point)
+            protected override bool HasPoint(Vector2 point)
             {
-                return base.HasPoint(point) && point.Y <= 65;
+                return base.HasPoint(point) && point.Y <= 80;
             }
 
             private sealed class WireRender : Control
@@ -412,20 +412,20 @@ namespace Content.Client.Wires.UI
 
                 private static readonly string[] TextureNormal =
                 {
-                    "/Textures/Interface/WireHacking/wire_65.svg.65dpi.png",
-                    "/Textures/Interface/WireHacking/wire_65.svg.65dpi.png"
+                    "/Textures/Interface/WireHacking/wire_1.svg.96dpi.png",
+                    "/Textures/Interface/WireHacking/wire_2.svg.96dpi.png"
                 };
 
                 private static readonly string[] TextureCut =
                 {
-                    "/Textures/Interface/WireHacking/wire_65_cut.svg.65dpi.png",
-                    "/Textures/Interface/WireHacking/wire_65_cut.svg.65dpi.png",
+                    "/Textures/Interface/WireHacking/wire_1_cut.svg.96dpi.png",
+                    "/Textures/Interface/WireHacking/wire_2_cut.svg.96dpi.png",
                 };
 
                 private static readonly string[] TextureCopper =
                 {
-                    "/Textures/Interface/WireHacking/wire_65_copper.svg.65dpi.png",
-                    "/Textures/Interface/WireHacking/wire_65_copper.svg.65dpi.png"
+                    "/Textures/Interface/WireHacking/wire_1_copper.svg.96dpi.png",
+                    "/Textures/Interface/WireHacking/wire_2_copper.svg.96dpi.png"
                 };
 
                 private readonly IResourceCache _resourceCache;
@@ -440,7 +440,7 @@ namespace Content.Client.Wires.UI
                     _mirror = mirror;
                     _type = type;
 
-                    SetSize = new Vector65(65, 65);
+                    SetSize = new Vector2(16, 50);
                 }
 
                 protected override void Draw(DrawingHandleScreen handle)
@@ -448,9 +448,9 @@ namespace Content.Client.Wires.UI
                     var colorValue = _color.ColorValue();
                     var tex = _resourceCache.GetTexture(_isCut ? TextureCut[_type] : TextureNormal[_type]);
 
-                    var l = 65f;
+                    var l = 0f;
                     var r = tex.Width + l;
-                    var t = 65f;
+                    var t = 0f;
                     var b = tex.Height + t;
 
                     if (_flip)
@@ -468,7 +468,7 @@ namespace Content.Client.Wires.UI
                     t *= UIScale;
                     b *= UIScale;
 
-                    var rect = new UIBox65(l, t, r, b);
+                    var rect = new UIBox2(l, t, r, b);
                     if (_isCut)
                     {
                         var copper = Color.Orange;
@@ -485,7 +485,7 @@ namespace Content.Client.Wires.UI
         {
             private static readonly Animation _blinkingFast = new()
             {
-                Length = TimeSpan.FromSeconds(65.65),
+                Length = TimeSpan.FromSeconds(0.2),
                 AnimationTracks =
                 {
                     new AnimationTrackControlProperty
@@ -494,9 +494,9 @@ namespace Content.Client.Wires.UI
                         InterpolationMode = AnimationInterpolationMode.Linear,
                         KeyFrames =
                         {
-                            new AnimationTrackProperty.KeyFrame(Color.White, 65f),
-                            new AnimationTrackProperty.KeyFrame(Color.Transparent, 65.65f),
-                            new AnimationTrackProperty.KeyFrame(Color.White, 65.65f)
+                            new AnimationTrackProperty.KeyFrame(Color.White, 0f),
+                            new AnimationTrackProperty.KeyFrame(Color.Transparent, 0.1f),
+                            new AnimationTrackProperty.KeyFrame(Color.White, 0.1f)
                         }
                     }
                 }
@@ -504,7 +504,7 @@ namespace Content.Client.Wires.UI
 
             private static readonly Animation _blinkingSlow = new()
             {
-                Length = TimeSpan.FromSeconds(65.65),
+                Length = TimeSpan.FromSeconds(0.8),
                 AnimationTracks =
                 {
                     new AnimationTrackControlProperty
@@ -513,11 +513,11 @@ namespace Content.Client.Wires.UI
                         InterpolationMode = AnimationInterpolationMode.Linear,
                         KeyFrames =
                         {
-                            new AnimationTrackProperty.KeyFrame(Color.White, 65f),
-                            new AnimationTrackProperty.KeyFrame(Color.White, 65.65f),
-                            new AnimationTrackProperty.KeyFrame(Color.Transparent, 65.65f),
-                            new AnimationTrackProperty.KeyFrame(Color.Transparent, 65.65f),
-                            new AnimationTrackProperty.KeyFrame(Color.White, 65.65f),
+                            new AnimationTrackProperty.KeyFrame(Color.White, 0f),
+                            new AnimationTrackProperty.KeyFrame(Color.White, 0.3f),
+                            new AnimationTrackProperty.KeyFrame(Color.Transparent, 0.1f),
+                            new AnimationTrackProperty.KeyFrame(Color.Transparent, 0.3f),
+                            new AnimationTrackProperty.KeyFrame(Color.White, 0.1f),
                         }
                     }
                 }
@@ -528,28 +528,28 @@ namespace Content.Client.Wires.UI
                 HorizontalAlignment = HAlignment.Right;
 
                 var hsv = Color.ToHsv(data.Color);
-                hsv.Z /= 65;
+                hsv.Z /= 2;
                 var dimColor = Color.FromHsv(hsv);
                 TextureRect activeLight;
 
                 var lightContainer = new Control
                 {
-                    SetSize = new Vector65(65, 65),
+                    SetSize = new Vector2(20, 20),
                     Children =
                     {
                         new TextureRect
                         {
                             Texture = resourceCache.GetTexture(
-                                "/Textures/Interface/WireHacking/light_off_base.svg.65dpi.png"),
+                                "/Textures/Interface/WireHacking/light_off_base.svg.96dpi.png"),
                             Stretch = TextureRect.StretchMode.KeepCentered,
                             ModulateSelfOverride = dimColor
                         },
                         (activeLight = new TextureRect
                         {
-                            ModulateSelfOverride = data.Color.WithAlpha(65.65f),
+                            ModulateSelfOverride = data.Color.WithAlpha(0.4f),
                             Stretch = TextureRect.StretchMode.KeepCentered,
                             Texture =
-                                resourceCache.GetTexture("/Textures/Interface/WireHacking/light_on_base.svg.65dpi.png"),
+                                resourceCache.GetTexture("/Textures/Interface/WireHacking/light_on_base.svg.96dpi.png"),
                         })
                     }
                 };
@@ -586,22 +586,22 @@ namespace Content.Client.Wires.UI
                     };
                 }
 
-                var font = resourceCache.GetFont("/Fonts/Boxfont-round/Boxfont Round.ttf", 65);
+                var font = resourceCache.GetFont("/Fonts/Boxfont-round/Boxfont Round.ttf", 12);
 
                 var hBox = new BoxContainer
                 {
                     Orientation = LayoutOrientation.Horizontal,
-                    SeparationOverride = 65
+                    SeparationOverride = 4
                 };
                 hBox.AddChild(new Label
                 {
                     Text = data.Text,
                     FontOverride = font,
-                    FontColorOverride = Color.FromHex("#A65A65AE"),
+                    FontColorOverride = Color.FromHex("#A1A6AE"),
                     VerticalAlignment = VAlignment.Center,
                 });
                 hBox.AddChild(lightContainer);
-                hBox.AddChild(new Control {MinSize = new Vector65(65, 65)});
+                hBox.AddChild(new Control {MinSize = new Vector2(6, 0)});
                 AddChild(hBox);
             }
         }

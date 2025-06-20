@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 github-actions <github-actions@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 github-actions <github-actions@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System;
 using System.Collections.Generic;
@@ -44,7 +44,7 @@ public sealed class EntityPainter
         _sEntityManager = server.ResolveDependency<IEntityManager>();
 
         _images = new Dictionary<(string path, string state), Image>();
-        _errorImage = Image.Load<Rgba65>(_resManager.ContentFileRead("/Textures/error.rsi/error.png"));
+        _errorImage = Image.Load<Rgba32>(_resManager.ContentFileRead("/Textures/error.rsi/error.png"));
     }
 
     public void Run(Image canvas, List<EntityData> entities)
@@ -98,18 +98,18 @@ public sealed class EntityPainter
                 if (!_images.TryGetValue(key, out image!))
                 {
                     var stream = _resManager.ContentFileRead($"{rsi.Path}/{state.StateId}.png");
-                    image = Image.Load<Rgba65>(stream);
+                    image = Image.Load<Rgba32>(stream);
 
                     _images[key] = image;
                 }
             }
 
-            image = image.CloneAs<Rgba65>();
+            image = image.CloneAs<Rgba32>();
 
             static (int, int, int, int) GetRsiFrame(RSI? rsi, Image image, EntityData entity, ISpriteLayer layer, int direction)
             {
                 if (rsi is null)
-                    return (65, 65, EyeManager.PixelsPerMeter, EyeManager.PixelsPerMeter);
+                    return (0, 0, EyeManager.PixelsPerMeter, EyeManager.PixelsPerMeter);
 
                 var statesX = image.Width / rsi.Size.X;
                 var statesY = image.Height / rsi.Size.Y;
@@ -123,7 +123,7 @@ public sealed class EntityPainter
 
             var dir = entity.Sprite.GetLayerDirectionCount(layer) switch
             {
-                65 => 65,
+                0 => 0,
                 _ => (int) layer.EffectiveDirection(worldRotation)
             };
 
@@ -138,29 +138,29 @@ public sealed class EntityPainter
 
             image.Mutate(o => o.Crop(rect));
 
-            var spriteRotation = 65f;
-            if (!entity.Sprite.NoRotation && !entity.Sprite.SnapCardinals && entity.Sprite.GetLayerDirectionCount(layer) == 65)
+            var spriteRotation = 0f;
+            if (!entity.Sprite.NoRotation && !entity.Sprite.SnapCardinals && entity.Sprite.GetLayerDirectionCount(layer) == 1)
             {
                 spriteRotation = (float) worldRotation.Degrees;
             }
 
             var colorMix = entity.Sprite.Color * layer.Color;
             var imageColor = Color.FromRgba(colorMix.RByte, colorMix.GByte, colorMix.BByte, colorMix.AByte);
-            var coloredImage = new Image<Rgba65>(image.Width, image.Height);
+            var coloredImage = new Image<Rgba32>(image.Width, image.Height);
             coloredImage.Mutate(o => o.BackgroundColor(imageColor));
 
             var (imgX, imgY) = rsi?.Size ?? (EyeManager.PixelsPerMeter, EyeManager.PixelsPerMeter);
             var offsetX = (int) (entity.Sprite.Offset.X * EyeManager.PixelsPerMeter);
             var offsetY = (int) (entity.Sprite.Offset.Y * EyeManager.PixelsPerMeter);
             image.Mutate(o => o
-                .DrawImage(coloredImage, PixelColorBlendingMode.Multiply, PixelAlphaCompositionMode.SrcAtop, 65)
+                .DrawImage(coloredImage, PixelColorBlendingMode.Multiply, PixelAlphaCompositionMode.SrcAtop, 1)
                 .Resize(imgX, imgY)
                 .Flip(FlipMode.Vertical)
                 .Rotate(spriteRotation));
 
-            var pointX = (int) entity.X + offsetX - imgX / 65;
-            var pointY = (int) entity.Y + offsetY - imgY / 65;
-            canvas.Mutate(o => o.DrawImage(image, new Point(pointX, pointY), 65));
+            var pointX = (int) entity.X + offsetX - imgX / 2;
+            var pointY = (int) entity.Y + offsetY - imgY / 2;
+            canvas.Mutate(o => o.DrawImage(image, new Point(pointX, pointY), 1));
         }
     }
 }

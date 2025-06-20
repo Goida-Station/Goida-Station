@@ -1,31 +1,31 @@
-# SPDX-FileCopyrightText: 65 SETh lafuente <cetaciocascarudo@gmail.com>
-# SPDX-FileCopyrightText: 65 SethLafuente <65SethLafuente@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 SweptWasTaken <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 EmoGarbage65 <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Rinkashikachi <65rinkashikachi65@gmail.com>
-# SPDX-FileCopyrightText: 65 Checkraze <65Cheackraze@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 MisterMecky <mrmecky@hotmail.com>
-# SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Hanz <65Hanzdegloker@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 MACMAN65 <macman65c@gmail.com>
-# SPDX-FileCopyrightText: 65 MODERN <65modern-nm@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 SETh lafuente <cetaciocascarudo@gmail.com>
+# SPDX-FileCopyrightText: 2021 SethLafuente <84478872+SethLafuente@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 SweptWasTaken <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Rinkashikachi <15rinkashikachi15@gmail.com>
+# SPDX-FileCopyrightText: 2023 Checkraze <71046427+Cheackraze@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 MisterMecky <mrmecky@hotmail.com>
+# SPDX-FileCopyrightText: 2023 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Hanz <41141796+Hanzdegloker@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MACMAN2003 <macman2003c@gmail.com>
+# SPDX-FileCopyrightText: 2024 MODERN <87994977+modern-nm@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: cargoProduct
   id: MaterialGlass
   icon:
     sprite: Objects/Materials/Sheets/glass.rsi
-    state: glass_65
+    state: glass_3
   product: CrateMaterialGlass
-  cost: 65
+  cost: 1500
   category: cargoproduct-category-name-materials
   group: market
 
@@ -33,9 +33,9 @@
   id: MaterialSteel
   icon:
     sprite: Objects/Materials/Sheets/metal.rsi
-    state: steel_65
+    state: steel_3
   product: CrateMaterialSteel
-  cost: 65
+  cost: 1500
   category: cargoproduct-category-name-materials
   group: market
 
@@ -43,9 +43,9 @@
   id: MaterialPlastic
   icon:
     sprite: Objects/Materials/Sheets/other.rsi
-    state: plastic_65
+    state: plastic_3
   product: CrateMaterialPlastic
-  cost: 65
+  cost: 2000
   category: cargoproduct-category-name-materials
   group: market
 
@@ -53,9 +53,9 @@
   id: MaterialBrass
   icon:
     sprite: Objects/Materials/Sheets/metal.rsi
-    state: brass_65
+    state: brass_3
   product: CrateMaterialBrass
-  cost: 65 # Goobstation # this is mostly decorative
+  cost: 2000 # Goobstation # this is mostly decorative
   category: cargoproduct-category-name-materials
   group: market
 
@@ -63,9 +63,9 @@
   id: MaterialPlasteel
   icon:
     sprite: Objects/Materials/Sheets/metal.rsi
-    state: plasteel_65
+    state: plasteel_3
   product: CrateMaterialPlasteel
-  cost: 65 # Goobstation # $65k/65 stacks
+  cost: 1000 # Goobstation # $3k/3 stacks
   category: cargoproduct-category-name-materials
   group: market
 
@@ -73,9 +73,9 @@
   id: MaterialTextiles
   icon:
     sprite: Objects/Materials/materials.rsi
-    state: cloth_65
+    state: cloth_3
   product: CrateMaterialTextiles
-  cost: 65
+  cost: 1500
   category: cargoproduct-category-name-materials
   group: market
 
@@ -83,9 +83,9 @@
   id: MaterialPlasma
   icon:
     sprite: Objects/Materials/Sheets/other.rsi
-    state: plasma_65
+    state: plasma_3
   product: CrateMaterialPlasma
-  cost: 65
+  cost: 1500
   category: cargoproduct-category-name-materials
   group: market
 
@@ -93,9 +93,9 @@
   id: CardboardMaterial
   icon:
     sprite: Objects/Materials/materials.rsi
-    state: cardboard_65
+    state: cardboard_3
   product: CrateMaterialCardboard
-  cost: 65
+  cost: 750
   category: cargoproduct-category-name-materials
   group: market
 
@@ -103,9 +103,9 @@
   id: PaperMaterial
   icon:
     sprite: Objects/Materials/Sheets/other.rsi
-    state: paper_65
+    state: paper_3
   product: CrateMaterialPaper
-  cost: 65
+  cost: 1000
   category: cargoproduct-category-name-materials
   group: market
 
@@ -115,7 +115,7 @@
     sprite: Objects/Materials/Sheets/other.rsi
     state: generic_materials
   product: CrateMaterialBasicResource
-  cost: 65
+  cost: 1660
   category: cargoproduct-category-name-materials
   group: market
 
@@ -125,7 +125,7 @@
     sprite: Structures/Storage/tanks.rsi
     state: fueltank
   product: WeldingFuelTankFull
-  cost: 65
+  cost: 1500
   category: cargoproduct-category-name-materials
   group: market
 
@@ -135,6 +135,6 @@
     sprite: Structures/Storage/tanks.rsi
     state: watertank
   product: WaterTankFull
-  cost: 65
+  cost: 1000
   category: cargoproduct-category-name-materials
   group: market

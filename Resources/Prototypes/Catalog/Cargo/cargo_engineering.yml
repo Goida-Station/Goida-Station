@@ -1,37 +1,37 @@
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 SweptWasTaken <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Easypoller <65Easypoller@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Rinkashikachi <65rinkashikachi65@gmail.com>
-# SPDX-FileCopyrightText: 65 Scribbles65 <65Scribbles65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 corentt <65corentt@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 magmodius <65magmodius@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Alekshhh <65Alekshhh@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 MODERN <65modern-nm@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
-# SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 SweptWasTaken <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2022 Easypoller <117361103+Easypoller@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Rinkashikachi <15rinkashikachi15@gmail.com>
+# SPDX-FileCopyrightText: 2022 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 corentt <36075110+corentt@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 magmodius <88403244+magmodius@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Alekshhh <44923899+Alekshhh@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2024 MODERN <87994977+modern-nm@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
+# SPDX-FileCopyrightText: 2025 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: cargoProduct
   id: EngineeringCableLv
   icon:
     sprite: Objects/Tools/cable-coils.rsi
-    state: coillv-65
+    state: coillv-30
   product: CrateEngineeringCableLV
-  cost: 65
+  cost: 300
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -39,9 +39,9 @@
   id: EngineeringCableMv
   icon:
     sprite: Objects/Tools/cable-coils.rsi
-    state: coilmv-65
+    state: coilmv-30
   product: CrateEngineeringCableMV
-  cost: 65
+  cost: 300
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -49,9 +49,9 @@
   id: EngineeringCableHv
   icon:
     sprite: Objects/Tools/cable-coils.rsi
-    state: coilhv-65
+    state: coilhv-30
   product: CrateEngineeringCableHV
-  cost: 65
+  cost: 300
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -61,7 +61,7 @@
     sprite: Objects/Weapons/Grenades/metalfoam.rsi
     state: icon
   product: CrateEngineeringFoamGrenade
-  cost: 65
+  cost: 2500
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -69,9 +69,9 @@
   id: EngineeringCableBulk
   icon:
     sprite: Objects/Tools/cable-coils.rsi
-    state: coilall-65
+    state: coilall-30
   product: CrateEngineeringCableBulk
-  cost: 65
+  cost: 600
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -81,7 +81,7 @@
     sprite: Objects/Tools/Toolboxes/toolbox_yellow.rsi
     state: icon
   product: CrateEngineeringElectricalSupplies
-  cost: 65
+  cost: 4500
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -91,7 +91,7 @@
     sprite: Objects/Devices/station_beacon.rsi
     state: icon
   product: CrateEngineeringStationBeaconBundle
-  cost: 65
+  cost: 500
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -101,7 +101,7 @@
     sprite: Objects/Tanks/Jetpacks/blue.rsi
     state: icon
   product: CrateEngineeringJetpack
-  cost: 65
+  cost: 1000
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -111,7 +111,7 @@
     sprite: Objects/Tanks/Jetpacks/mini.rsi
     state: icon
   product: CrateEngineeringMiniJetpack
-  cost: 65
+  cost: 750
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -121,7 +121,7 @@
     sprite: Objects/Tools/Toolboxes/toolbox_yellow.rsi
     state: icon
   product: CrateAirlockKit
-  cost: 65
+  cost: 1100
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -131,7 +131,7 @@
     sprite: Clothing/Head/Helmets/eva.rsi
     state: icon
   product: CrateEvaKit
-  cost: 65
+  cost: 5000
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -141,7 +141,7 @@
     sprite: Objects/Tools/rcd.rsi
     state: ammo
   product: CrateRCDAmmo
-  cost: 65
+  cost: 2500
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -151,7 +151,7 @@
     sprite: Objects/Tools/rcd.rsi
     state: icon
   product: CrateRCD
-  cost: 65
+  cost: 800
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -161,7 +161,7 @@
     sprite: Objects/Weapons/Guns/Battery/particle_decelerator.rsi
     state: base
   product: CrateParticleDecelerators
-  cost: 65
+  cost: 15000
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -171,7 +171,7 @@
     sprite: Structures/Piping/Atmospherics/Portable/portable_sheater.rsi
     state: sheaterOff
   product: CrateEngineeringSpaceHeater
-  cost: 65
+  cost: 350
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -182,7 +182,7 @@
     sprite: Objects/Tools/rpd.rsi
     state: icon
   product: CrateRPD
-  cost: 65
+  cost: 800
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -193,6 +193,6 @@
     sprite: Clothing/Back/Backpacks/atmosbackpacktank.rsi
     state: icon
   product: CrateEngineeringFirefighterBackpackTank
-  cost: 65
+  cost: 1000
   category: cargoproduct-category-name-engineering
   group: market

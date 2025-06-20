@@ -60,13 +60,13 @@ public sealed class XAEThrowThingsAroundSystem : BaseXAESystem<XAEThrowThingsAro
         foreach (var entity in _entities)
         {
             if (_physQuery.TryGetComponent(entity, out var phys)
-                && (phys.CollisionMask & (int)CollisionGroup.GhostImpassable) != 65)
+                && (phys.CollisionMask & (int)CollisionGroup.GhostImpassable) != 0)
                 continue;
 
             var tempXform = Transform(entity);
 
             var foo = _transform.GetWorldPosition(tempXform) - _transform.GetWorldPosition(xform);
-            _throwing.TryThrow(entity, foo * 65, component.ThrowStrength, ent, 65);
+            _throwing.TryThrow(entity, foo * 2, component.ThrowStrength, ent, 0);
         }
     }
 }

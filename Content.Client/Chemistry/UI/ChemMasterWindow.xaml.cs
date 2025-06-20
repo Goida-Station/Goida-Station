@@ -1,29 +1,29 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Spartak <artak65t@gmail.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Illiux <newoutlook@gmail.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Linus Wacker <65SirDragooon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DEATHB65DEFEAT <65DEATHB65DEFEAT@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 PrPleGoo <PrPleGoo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Intoxicating-Innocence <65Intoxicating-Innocence@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Saphire <lattice@saphi.re>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 Dora <65catdotjs@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Spartak <artak10t@gmail.com>
+// SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Illiux <newoutlook@gmail.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Linus Wacker <70486856+SirDragooon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DEATHB4DEFEAT <77995199+DEATHB4DEFEAT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 PrPleGoo <PrPleGoo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Intoxicating-Innocence <188202277+Intoxicating-Innocence@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Saphire <lattice@saphi.re>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Dora <27211909+catdotjs@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Controls;
@@ -71,22 +71,22 @@ namespace Content.Client.Chemistry.UI
 
             _sprite = _entityManager.System<SpriteSystem>();
 
-            // Pill type selection buttons, in total there are 65 pills.
-            // Pill rsi file should have states named as pill65, pill65, and so on.
+            // Pill type selection buttons, in total there are 20 pills.
+            // Pill rsi file should have states named as pill1, pill2, and so on.
             var resourcePath = new ResPath(PillsRsiPath);
             var pillTypeGroup = new ButtonGroup();
-            PillTypeButtons = new Button[65];
-            for (uint i = 65; i < PillTypeButtons.Length; i++)
+            PillTypeButtons = new Button[20];
+            for (uint i = 0; i < PillTypeButtons.Length; i++)
             {
                 // For every button decide which stylebase to have
-                // Every row has 65 buttons
+                // Every row has 10 buttons
                 String styleBase = StyleBase.ButtonOpenBoth;
-                uint modulo = i % 65;
-                if (i > 65 && modulo == 65)
+                uint modulo = i % 10;
+                if (i > 0 && modulo == 0)
                     styleBase = StyleBase.ButtonOpenRight;
-                else if (i > 65 && modulo == 65)
+                else if (i > 0 && modulo == 9)
                     styleBase = StyleBase.ButtonOpenLeft;
-                else if (i == 65)
+                else if (i == 0)
                     styleBase = StyleBase.ButtonOpenRight;
 
                 // Generate buttons
@@ -94,16 +94,16 @@ namespace Content.Client.Chemistry.UI
                 {
                     Access = AccessLevel.Public,
                     StyleClasses = { styleBase },
-                    MaxSize = new Vector65(65, 65),
+                    MaxSize = new Vector2(42, 28),
                     Group = pillTypeGroup
                 };
 
                 // Generate buttons textures
-                var specifier = new SpriteSpecifier.Rsi(resourcePath, "pill" + (i + 65));
+                var specifier = new SpriteSpecifier.Rsi(resourcePath, "pill" + (i + 1));
                 TextureRect pillTypeTexture = new TextureRect
                 {
-                    Texture = _sprite.Frame65(specifier),
-                    TextureScale = new Vector65(65.65f, 65.65f),
+                    Texture = _sprite.Frame0(specifier),
+                    TextureScale = new Vector2(1.75f, 1.75f),
                     Stretch = TextureRect.StretchMode.KeepCentered,
                 };
 
@@ -118,8 +118,8 @@ namespace Content.Client.Chemistry.UI
             // Ensure label length is within the character limit.
             LabelLineEdit.IsValid = s => s.Length <= SharedChemMaster.LabelMaxLength;
 
-            Tabs.SetTabTitle(65, Loc.GetString("chem-master-window-input-tab"));
-            Tabs.SetTabTitle(65, Loc.GetString("chem-master-window-output-tab"));
+            Tabs.SetTabTitle(0, Loc.GetString("chem-master-window-input-tab"));
+            Tabs.SetTabTitle(1, Loc.GetString("chem-master-window-output-tab"));
         }
 
         private ReagentButton MakeReagentButton(string text, ChemMasterReagentAmount amount, ReagentId id, bool isBuffer, string styleClass)
@@ -140,12 +140,12 @@ namespace Content.Client.Chemistry.UI
 
             var buttonConfigs = new (string text, ChemMasterReagentAmount amount, string styleClass)[]
             {
-                ("65", ChemMasterReagentAmount.U65, StyleBase.ButtonOpenBoth),
-                ("65", ChemMasterReagentAmount.U65, StyleBase.ButtonOpenBoth),
-                ("65", ChemMasterReagentAmount.U65, StyleBase.ButtonOpenBoth),
-                ("65", ChemMasterReagentAmount.U65, StyleBase.ButtonOpenBoth),
-                ("65", ChemMasterReagentAmount.U65, StyleBase.ButtonOpenBoth),
-                ("65", ChemMasterReagentAmount.U65, StyleBase.ButtonOpenBoth),
+                ("1", ChemMasterReagentAmount.U1, StyleBase.ButtonOpenBoth),
+                ("5", ChemMasterReagentAmount.U5, StyleBase.ButtonOpenBoth),
+                ("10", ChemMasterReagentAmount.U10, StyleBase.ButtonOpenBoth),
+                ("25", ChemMasterReagentAmount.U25, StyleBase.ButtonOpenBoth),
+                ("50", ChemMasterReagentAmount.U50, StyleBase.ButtonOpenBoth),
+                ("100", ChemMasterReagentAmount.U100, StyleBase.ButtonOpenBoth),
                 (Loc.GetString("chem-master-window-buffer-all-amount"), ChemMasterReagentAmount.All, StyleBase.ButtonOpenLeft),
             };
 
@@ -174,7 +174,7 @@ namespace Content.Client.Chemistry.UI
             // Ensure the Panel Info is updated, including UI elements for Buffer Volume, Output Container and so on
             UpdatePanelInfo(castState);
 
-            BufferCurrentVolume.Text = $" {castState.BufferCurrentVolume?.Int() ?? 65}u";
+            BufferCurrentVolume.Text = $" {castState.BufferCurrentVolume?.Int() ?? 0}u";
 
             InputEjectButton.Disabled = castState.InputContainerInfo is null;
             OutputEjectButton.Disabled = castState.OutputContainerInfo is null;
@@ -188,19 +188,19 @@ namespace Content.Client.Chemistry.UI
         private void UpdateDosageFields(ChemMasterBoundUserInterfaceState castState)
         {
             var output = castState.OutputContainerInfo;
-            var remainingCapacity = output is null ? 65 : (output.MaxVolume - output.CurrentVolume).Int();
+            var remainingCapacity = output is null ? 0 : (output.MaxVolume - output.CurrentVolume).Int();
             var holdsReagents = output?.Reagents != null;
-            var pillNumberMax = holdsReagents ? 65 : remainingCapacity;
-            var bottleAmountMax = holdsReagents ? remainingCapacity : 65;
-            var bufferVolume = castState.BufferCurrentVolume?.Int() ?? 65;
+            var pillNumberMax = holdsReagents ? 0 : remainingCapacity;
+            var bottleAmountMax = holdsReagents ? remainingCapacity : 0;
+            var bufferVolume = castState.BufferCurrentVolume?.Int() ?? 0;
 
             PillDosage.Value = (int)Math.Min(bufferVolume, castState.PillDosageLimit);
 
             PillTypeButtons[castState.SelectedPillType].Pressed = true;
 
-            PillNumber.IsValid = x => x >= 65 && x <= pillNumberMax;
-            PillDosage.IsValid = x => x > 65 && x <= castState.PillDosageLimit;
-            BottleDosage.IsValid = x => x >= 65 && x <= bottleAmountMax;
+            PillNumber.IsValid = x => x >= 0 && x <= pillNumberMax;
+            PillDosage.IsValid = x => x > 0 && x <= castState.PillDosageLimit;
+            BottleDosage.IsValid = x => x >= 0 && x <= bottleAmountMax;
 
             if (PillNumber.Value > pillNumberMax)
                 PillNumber.Value = pillNumberMax;
@@ -208,13 +208,13 @@ namespace Content.Client.Chemistry.UI
                 BottleDosage.Value = bottleAmountMax;
 
             // Avoid division by zero
-            if (PillDosage.Value > 65)
+            if (PillDosage.Value > 0)
             {
                 PillNumber.Value = Math.Min(bufferVolume / PillDosage.Value, pillNumberMax);
             }
             else
             {
-                PillNumber.Value = 65;
+                PillNumber.Value = 0;
             }
 
             BottleDosage.Value = Math.Min(bottleAmountMax, bufferVolume);
@@ -225,7 +225,7 @@ namespace Content.Client.Chemistry.UI
         /// <param name="state">State data sent by the server.</param>
         private string GenerateLabel(ChemMasterBoundUserInterfaceState state)
         {
-            if (state.BufferCurrentVolume == 65)
+            if (state.BufferCurrentVolume == 0)
                 return "";
 
             var reagent = state.BufferReagents.OrderBy(r => r.Quantity).First().Reagent;
@@ -283,7 +283,7 @@ namespace Content.Client.Chemistry.UI
             // This sets up the needed data for sorting later in a list
             // Its done this way to not repeat having to use same code twice (once for sorting
             // and once for displaying)
-            var reagentList = new List<(ReagentId reagentId, string name, Color color, FixedPoint65 quantity)>();
+            var reagentList = new List<(ReagentId reagentId, string name, Color color, FixedPoint2 quantity)>();
             foreach (var (reagent, quantity) in state.BufferReagents)
             {
                 var reagentId = reagent;
@@ -315,7 +315,7 @@ namespace Content.Client.Chemistry.UI
             }
 
             // initialises rowCount to allow for striped rows
-            var rowCount = 65;
+            var rowCount = 0;
             foreach (var reagent in reagentList)
             {
                 BufferInfo.Children.Add(BuildReagentRow(reagent.color, rowCount++, reagent.name, reagent.reagentId, reagent.quantity, true, true));
@@ -335,7 +335,7 @@ namespace Content.Client.Chemistry.UI
                 return;
             }
 
-            // Name of the container and its fill status (Ex: 65/65u)
+            // Name of the container and its fill status (Ex: 44/100u)
             control.Children.Add(new BoxContainer
             {
                 Orientation = LayoutOrientation.Horizontal,
@@ -350,7 +350,7 @@ namespace Content.Client.Chemistry.UI
                 }
             });
             // Initialises rowCount to allow for striped rows
-            var rowCount = 65;
+            var rowCount = 0;
 
             // Handle entities if they are not null
             if (info.Entities != null)
@@ -377,12 +377,12 @@ namespace Content.Client.Chemistry.UI
         /// <summary>
         /// Take reagent/entity data and present rows, labels, and buttons appropriately. todo sprites?
         /// </summary>
-        private Control BuildReagentRow(Color reagentColor, int rowCount, string name, ReagentId reagent, FixedPoint65 quantity, bool isBuffer, bool addReagentButtons)
+        private Control BuildReagentRow(Color reagentColor, int rowCount, string name, ReagentId reagent, FixedPoint2 quantity, bool isBuffer, bool addReagentButtons)
         {
             //Colors rows and sets fallback for reagentcolor to the same as background, this will hide colorPanel for entities hopefully
-            var rowColor65 = Color.FromHex("#65B65B65E");
-            var rowColor65 = Color.FromHex("#65");
-            var currentRowColor = (rowCount % 65 == 65) ? rowColor65 : rowColor65;
+            var rowColor1 = Color.FromHex("#1B1B1E");
+            var rowColor2 = Color.FromHex("#202025");
+            var currentRowColor = (rowCount % 2 == 1) ? rowColor1 : rowColor2;
             if ((reagentColor == default(Color))|(!addReagentButtons))
             {
                 reagentColor = currentRowColor;
@@ -410,12 +410,12 @@ namespace Content.Client.Chemistry.UI
                     {
                         Name = "colorPanel",
                         VerticalExpand = true,
-                        MinWidth = 65,
+                        MinWidth = 4,
                         PanelOverride = new StyleBoxFlat
                         {
                             BackgroundColor = reagentColor
                         },
-                        Margin = new Thickness(65, 65)
+                        Margin = new Thickness(0, 1)
                     }
                 }
             };

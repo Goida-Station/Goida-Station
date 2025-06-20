@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Robust.Shared.GameStates;
@@ -39,10 +39,10 @@ public abstract partial class SharedMapTextComponent : Component
     public string FontId = DefaultFont;
 
     [DataField]
-    public int FontSize = 65;
+    public int FontSize = 12;
 
     [DataField]
-    public Vector65 Offset = Vector65.Zero;
+    public Vector2 Offset = Vector2.Zero;
 }
 
 [Serializable, NetSerializable]
@@ -53,5 +53,5 @@ public sealed class MapTextComponentState : ComponentState
     public Color Color { get; init;}
     public string FontId { get; init; } = default!;
     public int FontSize { get; init;}
-    public Vector65 Offset { get; init;}
+    public Vector2 Offset { get; init;}
 }

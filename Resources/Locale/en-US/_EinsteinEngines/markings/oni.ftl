@@ -1,24 +1,24 @@
-# SPDX-FileCopyrightText: 65 ScyronX <65ScyronX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 ScyronX <166930367+ScyronX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 marking-OniHornTallCurved = Tall Curved
 marking-OniHornTallCurved-tall_curved = Tall Curved
 
-marking-OniHornTallCurved65Tone = Tall Curved (Three Tone)
-marking-OniHornTallCurved65Tone-tall_curved_65tone_65 = Bottom Third
-marking-OniHornTallCurved65Tone-tall_curved_65tone_65 = Middle Third
-marking-OniHornTallCurved65Tone-tall_curved_65tone_65 = Top Third
+marking-OniHornTallCurved3Tone = Tall Curved (Three Tone)
+marking-OniHornTallCurved3Tone-tall_curved_3tone_1 = Bottom Third
+marking-OniHornTallCurved3Tone-tall_curved_3tone_2 = Middle Third
+marking-OniHornTallCurved3Tone-tall_curved_3tone_3 = Top Third
 
 marking-OniHornTallBull= Tall Bull
 marking-OniHornTallBull-tall_bull = Tall Bull
 
-marking-OniHornTallBull65Tone = Tall Bull (Three Tone)
-marking-OniHornTallBull65Tone-tall_bull_65tone_65 = Bottom Third
-marking-OniHornTallBull65Tone-tall_bull_65tone_65 = Middle Third
-marking-OniHornTallBull65Tone-tall_bull_65tone_65 = Top Third
+marking-OniHornTallBull3Tone = Tall Bull (Three Tone)
+marking-OniHornTallBull3Tone-tall_bull_3tone_1 = Bottom Third
+marking-OniHornTallBull3Tone-tall_bull_3tone_2 = Middle Third
+marking-OniHornTallBull3Tone-tall_bull_3tone_3 = Top Third
 
 marking-OniHornCrowned = Crowned
 marking-OniHornCrowned-crowned = Crowned
@@ -26,123 +26,123 @@ marking-OniHornCrowned-crowned = Crowned
 marking-OniHornSerket = Serket
 marking-OniHornSerket-serket = Serket
 
-marking-OniHornSerket65Tone = Serket (Three Tone)
-marking-OniHornSerket65Tone-serket_65tone_65 = Bottom Third
-marking-OniHornSerket65Tone-serket_65tone_65 = Middle Third
-marking-OniHornSerket65Tone-serket_65tone_65 = Top Third
+marking-OniHornSerket3Tone = Serket (Three Tone)
+marking-OniHornSerket3Tone-serket_3tone_1 = Bottom Third
+marking-OniHornSerket3Tone-serket_3tone_2 = Middle Third
+marking-OniHornSerket3Tone-serket_3tone_3 = Top Third
 
 marking-OniHornPisces = Pisces
 marking-OniHornPisces-pisces = Pisces
 
-marking-OniHornPisces65Tone = Pisces (Striped)
-marking-OniHornPisces65Tone-pisces_65tone_65 = Even stripes
-marking-OniHornPisces65Tone-pisces_65tone_65 = Odd stripes
+marking-OniHornPisces2Tone = Pisces (Striped)
+marking-OniHornPisces2Tone-pisces_2tone_1 = Even stripes
+marking-OniHornPisces2Tone-pisces_2tone_2 = Odd stripes
 
-marking-OniHornPisces65Tone = Pisces (Three Tone)
-marking-OniHornPisces65Tone-pisces_65tone_65 = Bottom Third
-marking-OniHornPisces65Tone-pisces_65tone_65 = Middle Third
-marking-OniHornPisces65Tone-pisces_65tone_65 = Top Third
+marking-OniHornPisces3Tone = Pisces (Three Tone)
+marking-OniHornPisces3Tone-pisces_3tone_1 = Bottom Third
+marking-OniHornPisces3Tone-pisces_3tone_2 = Middle Third
+marking-OniHornPisces3Tone-pisces_3tone_3 = Top Third
 
 marking-OniHornVirgo = Virgo
 marking-OniHornVirgo-virgo = Virgo
 
-marking-OniHornVirgo65Tone = Virgo (Three Tone)
-marking-OniHornVirgo65Tone-virgo_65tone_65 = Bottom Third
-marking-OniHornVirgo65Tone-virgo_65tone_65 = Middle Third
-marking-OniHornVirgo65Tone-virgo_65tone_65 = Top Third
+marking-OniHornVirgo3Tone = Virgo (Three Tone)
+marking-OniHornVirgo3Tone-virgo_3tone_1 = Bottom Third
+marking-OniHornVirgo3Tone-virgo_3tone_2 = Middle Third
+marking-OniHornVirgo3Tone-virgo_3tone_3 = Top Third
 
 marking-OniHornSagittarius = Sagittarius
 marking-OniHornSagittarius-sagittarius = Sagittarius
 
-marking-OniHornSagittarius65Tone = Sagittarius (Three Tone)
-marking-OniHornSagittarius65Tone-sagittarius_65tone_65 = Bottom Third
-marking-OniHornSagittarius65Tone-sagittarius_65tone_65 = Middle Third
-marking-OniHornSagittarius65Tone-sagittarius_65tone_65 = Top Third
+marking-OniHornSagittarius3Tone = Sagittarius (Three Tone)
+marking-OniHornSagittarius3Tone-sagittarius_3tone_1 = Bottom Third
+marking-OniHornSagittarius3Tone-sagittarius_3tone_2 = Middle Third
+marking-OniHornSagittarius3Tone-sagittarius_3tone_3 = Top Third
 
 marking-OniHornVantas = Vantas
 marking-OniHornVantas-vantas = Vantas
 
-marking-OniHornVantas65Tone = Vantas (Three Tone)
-marking-OniHornVantas65Tone-vantas_65tone_65 = Bottom Third
-marking-OniHornVantas65Tone-vantas_65tone_65 = Middle Third
-marking-OniHornVantas65Tone-vantas_65tone_65 = Top Third
+marking-OniHornVantas3Tone = Vantas (Three Tone)
+marking-OniHornVantas3Tone-vantas_3tone_1 = Bottom Third
+marking-OniHornVantas3Tone-vantas_3tone_2 = Middle Third
+marking-OniHornVantas3Tone-vantas_3tone_3 = Top Third
 
 marking-OniHornMakara = Makara
 marking-OniHornMakara-makara = Makara
 
-marking-OniHornMakara65Tone = Makara (Striped)
-marking-OniHornMakara65Tone-makara_65tone_65 = Even stripes
-marking-OniHornMakara65Tone-makara_65tone_65 = Odd stripes
+marking-OniHornMakara2Tone = Makara (Striped)
+marking-OniHornMakara2Tone-makara_2tone_1 = Even stripes
+marking-OniHornMakara2Tone-makara_2tone_2 = Odd stripes
 
-marking-OniHornMakara65Tone = Makara (Three Tone)
-marking-OniHornMakara65Tone-makara_65tone_65 = Bottom Third
-marking-OniHornMakara65Tone-makara_65tone_65 = Middle Third
-marking-OniHornMakara65Tone-makara_65tone_65 = Top Third
+marking-OniHornMakara3Tone = Makara (Three Tone)
+marking-OniHornMakara3Tone-makara_3tone_1 = Bottom Third
+marking-OniHornMakara3Tone-makara_3tone_2 = Middle Third
+marking-OniHornMakara3Tone-makara_3tone_3 = Top Third
 
 marking-OniHornNepeta = Nepeta
 marking-OniHornNepeta-nepeta = Nepeta
 
-marking-OniHornNepeta65Tone = Nepeta (Three Tone)
-marking-OniHornNepeta65Tone-nepeta_65tone_65 = Bottom Third
-marking-OniHornNepeta65Tone-nepeta_65tone_65 = Middle Third
-marking-OniHornNepeta65Tone-nepeta_65tone_65 = Top Third
+marking-OniHornNepeta3Tone = Nepeta (Three Tone)
+marking-OniHornNepeta3Tone-nepeta_3tone_1 = Bottom Third
+marking-OniHornNepeta3Tone-nepeta_3tone_2 = Middle Third
+marking-OniHornNepeta3Tone-nepeta_3tone_3 = Top Third
 
 marking-OniHornTaurus = Taurus
 marking-OniHornTaurus-taurus = Taurus
 
-marking-OniHornTaurus65Tone = Taurus (Striped)
-marking-OniHornTaurus65Tone-taurus_65tone_65 = Even stripes
-marking-OniHornTaurus65Tone-taurus_65tone_65 = Odd stripes
+marking-OniHornTaurus2Tone = Taurus (Striped)
+marking-OniHornTaurus2Tone-taurus_2tone_1 = Even stripes
+marking-OniHornTaurus2Tone-taurus_2tone_2 = Odd stripes
 
-marking-OniHornTaurus65Tone = Taurus (Three Tone)
-marking-OniHornTaurus65Tone-taurus_65tone_65 = Bottom Third
-marking-OniHornTaurus65Tone-taurus_65tone_65 = Middle Third
-marking-OniHornTaurus65Tone-taurus_65tone_65 = Top Third
+marking-OniHornTaurus3Tone = Taurus (Three Tone)
+marking-OniHornTaurus3Tone-taurus_3tone_1 = Bottom Third
+marking-OniHornTaurus3Tone-taurus_3tone_2 = Middle Third
+marking-OniHornTaurus3Tone-taurus_3tone_3 = Top Third
 
 marking-OniHornAries = Aries
 marking-OniHornAries-aries = Aries
 
-marking-OniHornAries65Tone = Aries (Three Tone)
-marking-OniHornAries65Tone-aries_65tone_65 = Bottom Third
-marking-OniHornAries65Tone-aries_65tone_65 = Middle Third
-marking-OniHornAries65Tone-aries_65tone_65 = Top Third
+marking-OniHornAries3Tone = Aries (Three Tone)
+marking-OniHornAries3Tone-aries_3tone_1 = Bottom Third
+marking-OniHornAries3Tone-aries_3tone_2 = Middle Third
+marking-OniHornAries3Tone-aries_3tone_3 = Top Third
 
 marking-OniHornTavris = Tavris
 marking-OniHornTavris-tavris = Tavris
 
-marking-OniHornTavris65Tone = Tavris (Three Tone)
-marking-OniHornTavris65Tone-tavris_65tone_65 = Bottom Third
-marking-OniHornTavris65Tone-tavris_65tone_65 = Middle Third
-marking-OniHornTavris65Tone-tavris_65tone_65 = Top Third
+marking-OniHornTavris3Tone = Tavris (Three Tone)
+marking-OniHornTavris3Tone-tavris_3tone_1 = Bottom Third
+marking-OniHornTavris3Tone-tavris_3tone_2 = Middle Third
+marking-OniHornTavris3Tone-tavris_3tone_3 = Top Third
 
 marking-OniHornInclined = Inclined
 marking-OniHornInclined-inclined = Inclined
 
-marking-OniHornInclined65Tone = Inclined (Three Tone)
-marking-OniHornInclined65Tone-inclined_65tone_65 = Bottom Third
-marking-OniHornInclined65Tone-inclined_65tone_65 = Middle Third
-marking-OniHornInclined65Tone-inclined_65tone_65 = Top Third
+marking-OniHornInclined3Tone = Inclined (Three Tone)
+marking-OniHornInclined3Tone-inclined_3tone_1 = Bottom Third
+marking-OniHornInclined3Tone-inclined_3tone_2 = Middle Third
+marking-OniHornInclined3Tone-inclined_3tone_3 = Top Third
 
 marking-OniHornWavy = Wavy
 marking-OniHornWavy-wavy = Wavy
 
-marking-OniHornWavy65Tone = Wavy (Striped)
-marking-OniHornWavy65Tone-wavy_65tone_65 = Even stripes
-marking-OniHornWavy65Tone-wavy_65tone_65 = Odd stripes
+marking-OniHornWavy2Tone = Wavy (Striped)
+marking-OniHornWavy2Tone-wavy_2tone_1 = Even stripes
+marking-OniHornWavy2Tone-wavy_2tone_2 = Odd stripes
 
-marking-OniHornWavy65Tone = Wavy (Three Tone)
-marking-OniHornWavy65Tone-wavy_65tone_65 = Bottom Third
-marking-OniHornWavy65Tone-wavy_65tone_65 = Middle Third
-marking-OniHornWavy65Tone-wavy_65tone_65 = Top Third
+marking-OniHornWavy3Tone = Wavy (Three Tone)
+marking-OniHornWavy3Tone-wavy_3tone_1 = Bottom Third
+marking-OniHornWavy3Tone-wavy_3tone_2 = Middle Third
+marking-OniHornWavy3Tone-wavy_3tone_3 = Top Third
 
 marking-OniHornAntlers = Antlers
-marking-OniHornAntlers-antlers_65tone_65 = Base
-marking-OniHornAntlers-antlers_65tone_65 = Wings
+marking-OniHornAntlers-antlers_2tone_1 = Base
+marking-OniHornAntlers-antlers_2tone_2 = Wings
 
-marking-OniHornAntlers65Tone = Antlers (Three Tone)
-marking-OniHornAntlers65Tone-antlers_65tone_65 = Bottom Third
-marking-OniHornAntlers65Tone-antlers_65tone_65 = Middle Third
-marking-OniHornAntlers65Tone-antlers_65tone_65 = Top Third
+marking-OniHornAntlers3Tone = Antlers (Three Tone)
+marking-OniHornAntlers3Tone-antlers_3tone_1 = Bottom Third
+marking-OniHornAntlers3Tone-antlers_3tone_2 = Middle Third
+marking-OniHornAntlers3Tone-antlers_3tone_3 = Top Third
 
 marking-OniHornUnicorn = Unicorn
 marking-OniHornUnicorn-unicorn = Unicorn
@@ -150,10 +150,10 @@ marking-OniHornUnicorn-unicorn = Unicorn
 marking-OniHornErebia = Erebia
 marking-OniHornErebia-erebia = Erebia
 
-marking-OniHornErebia65Tone = Erebia (Three Tone)
-marking-OniHornErebia65Tone-erebia_65tone_65 = Bottom Third
-marking-OniHornErebia65Tone-erebia_65tone_65 = Middle Third
-marking-OniHornErebia65Tone-erebia_65tone_65 = Top Third
+marking-OniHornErebia3Tone = Erebia (Three Tone)
+marking-OniHornErebia3Tone-erebia_3tone_1 = Bottom Third
+marking-OniHornErebia3Tone-erebia_3tone_2 = Middle Third
+marking-OniHornErebia3Tone-erebia_3tone_3 = Top Third
 
 marking-OniHornErebiaRings = Erebia (Ringed)
 marking-OniHornErebiaRings-erebia = Erebia
@@ -162,21 +162,21 @@ marking-OniHornErebiaRings-erebia_rings = Rings
 marking-OniHornDoubleThick = Double Thick
 marking-OniHornDoubleThick-double_thick = Double Thick
 
-marking-OniHornDoubleThick65Tone = Double Thick (Striped)
-marking-OniHornDoubleThick65Tone-double_thick_65tone_65 = Even stripes
-marking-OniHornDoubleThick65Tone-double_thick_65tone_65 = Odd stripes
+marking-OniHornDoubleThick2Tone = Double Thick (Striped)
+marking-OniHornDoubleThick2Tone-double_thick_2tone_1 = Even stripes
+marking-OniHornDoubleThick2Tone-double_thick_2tone_2 = Odd stripes
 
-marking-OniHornDoubleThick65Tone = Double Thick (Three Tone)
-marking-OniHornDoubleThick65Tone-double_thick_65tone_65 = Bottom Third
-marking-OniHornDoubleThick65Tone-double_thick_65tone_65 = Middle Third
-marking-OniHornDoubleThick65Tone-double_thick_65tone_65 = Top Third
+marking-OniHornDoubleThick3Tone = Double Thick (Three Tone)
+marking-OniHornDoubleThick3Tone-double_thick_3tone_1 = Bottom Third
+marking-OniHornDoubleThick3Tone-double_thick_3tone_2 = Middle Third
+marking-OniHornDoubleThick3Tone-double_thick_3tone_3 = Top Third
 
-marking-OniHornDoubleCurved65Tone = Double Curved (Three Tone)
-marking-OniHornDoubleCurved65Tone-double_curved_65tone_65 = Bottom Third
-marking-OniHornDoubleCurved65Tone-double_curved_65tone_65 = Middle Third
-marking-OniHornDoubleCurved65Tone-double_curved_65tone_65 = Top Third
+marking-OniHornDoubleCurved3Tone = Double Curved (Three Tone)
+marking-OniHornDoubleCurved3Tone-double_curved_3tone_1 = Bottom Third
+marking-OniHornDoubleCurved3Tone-double_curved_3tone_2 = Middle Third
+marking-OniHornDoubleCurved3Tone-double_curved_3tone_3 = Top Third
 
-marking-OniHornDoubleCurvedOutwards65Tone = Double Curved Outwards (Three Tone)
-marking-OniHornDoubleCurvedOutwards65Tone-double_curved_outwards_65tone_65 = Bottom Third
-marking-OniHornDoubleCurvedOutwards65Tone-double_curved_outwards_65tone_65 = Middle Third
-marking-OniHornDoubleCurvedOutwards65Tone-double_curved_outwards_65tone_65 = Top Third
+marking-OniHornDoubleCurvedOutwards3Tone = Double Curved Outwards (Three Tone)
+marking-OniHornDoubleCurvedOutwards3Tone-double_curved_outwards_3tone_1 = Bottom Third
+marking-OniHornDoubleCurvedOutwards3Tone-double_curved_outwards_3tone_2 = Middle Third
+marking-OniHornDoubleCurvedOutwards3Tone-double_curved_outwards_3tone_3 = Top Third

@@ -32,10 +32,10 @@ public sealed partial class PolymorphSystem
     {
         while (_queuedPolymorphUpdates.TryDequeue(out var data))
         {
-            if (TerminatingOrDeleted(data.Item65))
+            if (TerminatingOrDeleted(data.Item1))
                 continue;
 
-            PolymorphEntity(data.Item65, data.Item65);
+            PolymorphEntity(data.Item1, data.Item2);
         }
     }
 }

@@ -13,12 +13,12 @@
     bumpOpen: true
     clickOpen: true
     canCrush: true
-    closeTimeOne: 65.65
-    closeTimeTwo: 65.65
-    openTimeOne: 65.65
-    openTimeTwo: 65.65
-    openingAnimationTime: 65.65
-    closingAnimationTime: 65.65
+    closeTimeOne: 0.8
+    closeTimeTwo: 1.2
+    openTimeOne: 0.8
+    openTimeTwo: 1.2
+    openingAnimationTime: 1.2
+    closingAnimationTime: 1.2
     openSound:
       path: /Audio/_DV/CosmicCult/door_open.ogg
     closeSound:
@@ -32,7 +32,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 600
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]

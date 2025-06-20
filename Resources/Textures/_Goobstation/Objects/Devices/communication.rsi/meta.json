@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from cev-eris and modified by Swept at https://github.com/discordia-space/CEV-Eris/commit/efce65b65c65be65ce65dcc65e65f65a65ca65. Uplink radio sprites by Vermidia, derivative of other lisenced sprites in the repo",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from cev-eris and modified by Swept at https://github.com/discordia-space/CEV-Eris/commit/efce5b6c3be75458ce238dcc01510e8f8a653ca6. Uplink radio sprites by Vermidia, derivative of other lisenced sprites in the repo",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {

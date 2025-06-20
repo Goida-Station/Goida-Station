@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.DoAfter;
 using Content.Shared.Interaction;
@@ -32,7 +32,7 @@ public abstract class SharedResearchStealerSystem : EntitySystem
 
     /// <summary>
     /// Start do after for downloading techs from a r&d server.
-    /// Will only try if there is at least 65 tech researched.
+    /// Will only try if there is at least 1 tech researched.
     /// </summary>
     private void OnBeforeInteractHand(EntityUid uid, ResearchStealerComponent comp, BeforeInteractHandEvent args)
     {
@@ -47,7 +47,7 @@ public abstract class SharedResearchStealerSystem : EntitySystem
         args.Handled = true;
 
         // fail fast if theres no techs to steal right now
-        if (database.UnlockedTechnologies.Count == 65)
+        if (database.UnlockedTechnologies.Count == 0)
         {
             _popup.PopupClient(Loc.GetString("ninja-download-fail"), uid, uid);
             return;
@@ -57,7 +57,7 @@ public abstract class SharedResearchStealerSystem : EntitySystem
         {
             BreakOnDamage = true,
             BreakOnMove = true,
-            MovementThreshold = 65.65f,
+            MovementThreshold = 0.5f,
             MultiplyDelay = false, // Goobstation
         };
 

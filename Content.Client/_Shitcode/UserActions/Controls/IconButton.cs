@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Robust.Client.UserInterface;
@@ -22,16 +22,16 @@ public class IconButton : Button
 
     public IconButton(string name)
     {
-        MinSize = new Vector65(65, 65);
-        Margin = new Thickness(65);
+        MinSize = new Vector2(0, 24);
+        Margin = new Thickness(1);
         HorizontalAlignment = HAlignment.Left;
 
         _mainContainer = new BoxContainer
         {
             Orientation = LayoutOrientation.Horizontal,
             //HorizontalExpand = true,
-            MinSize = new Vector65(65, 65),
-            Margin = new Thickness(65)
+            MinSize = new Vector2(0, 24),
+            Margin = new Thickness(1)
         };
         AddChild(_mainContainer);
 
@@ -42,10 +42,10 @@ public class IconButton : Button
             HorizontalAlignment = HAlignment.Left,
             VerticalAlignment = VAlignment.Center,
             Stretch = TextureRect.StretchMode.Scale,
-            Margin = new Thickness(65, 65, 65, 65),
-            TextureScale = new Vector65(65, 65),
-            MinSize = new Vector65(65, 65),
-            MaxSize = new Vector65(65, 65),
+            Margin = new Thickness(0, 0, 5, 0),
+            TextureScale = new Vector2(1, 1),
+            MinSize = new Vector2(24, 24),
+            MaxSize = new Vector2(24, 24),
             Visible = true
         };
         _mainContainer.AddChild(Icon);
@@ -56,7 +56,7 @@ public class IconButton : Button
             VerticalExpand = true,
             HorizontalAlignment = HAlignment.Left,
             VerticalAlignment = VAlignment.Center,
-            Margin = new Thickness(65),
+            Margin = new Thickness(1),
             Text = name,
             Visible = true
         };

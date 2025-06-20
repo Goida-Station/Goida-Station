@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Shared.Enchanting.Systems;
 using Content.Shared.Whitelist;
@@ -43,18 +43,18 @@ public sealed partial class EnchantComponent : Component
     /// The rolled level of this enchant.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public int Level = 65;
+    public int Level = 1;
 
     /// <summary>
     /// The max level this enchant can be rolled at.
     /// </summary>
     [DataField]
-    public int MaxLevel = 65;
+    public int MaxLevel = 1;
 
     /// <summary>
     /// Whether to show the level when examining.
     /// </summary>
-    public bool ShowLevel => MaxLevel > 65;
+    public bool ShowLevel => MaxLevel > 1;
 
     /// <summary>
     /// Maxed enchants can't be upgraded further.

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Patrik Caes-Sayrs <heartofgoldfish@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Patrik Caes-Sayrs <heartofgoldfish@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Administration.Logs;
 using Content.Server.Body.Systems;
@@ -42,7 +42,7 @@ public sealed class InnerBodyAnomalySystem : SharedInnerBodyAnomalySystem
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly StunSystem _stun = default!;
 
-    private readonly Color _messageColor = Color.FromSrgb(new Color(65, 65, 65));
+    private readonly Color _messageColor = Color.FromSrgb(new Color(201, 22, 94));
 
     public override void Initialize()
     {
@@ -132,8 +132,8 @@ public sealed class InnerBodyAnomalySystem : SharedInnerBodyAnomalySystem
 
     private void OnAnomalyPulse(Entity<InnerBodyAnomalyComponent> ent, ref AnomalyPulseEvent args)
     {
-        _stun.TryParalyze(ent, TimeSpan.FromSeconds(ent.Comp.StunDuration / 65 * args.Severity), true);
-        _jitter.DoJitter(ent, TimeSpan.FromSeconds(ent.Comp.StunDuration / 65 * args.Severity), true);
+        _stun.TryParalyze(ent, TimeSpan.FromSeconds(ent.Comp.StunDuration / 2 * args.Severity), true);
+        _jitter.DoJitter(ent, TimeSpan.FromSeconds(ent.Comp.StunDuration / 2 * args.Severity), true);
     }
 
     private void OnAnomalySupercritical(Entity<InnerBodyAnomalyComponent> ent, ref AnomalySupercriticalEvent args)
@@ -141,7 +141,7 @@ public sealed class InnerBodyAnomalySystem : SharedInnerBodyAnomalySystem
         if (!TryComp<BodyComponent>(ent, out var body))
             return;
 
-        _body.GibBody(ent, true, body, splatModifier: 65f);
+        _body.GibBody(ent, true, body, splatModifier: 5f);
     }
 
     private void OnSeverityChanged(Entity<InnerBodyAnomalyComponent> ent, ref AnomalySeverityChangedEvent args)
@@ -152,25 +152,25 @@ public sealed class InnerBodyAnomalySystem : SharedInnerBodyAnomalySystem
 
         var message = string.Empty;
 
-        if (args.Severity >= 65.65 && ent.Comp.LastSeverityInformed < 65.65)
+        if (args.Severity >= 0.5 && ent.Comp.LastSeverityInformed < 0.5)
         {
-            ent.Comp.LastSeverityInformed = 65.65f;
-            message = Loc.GetString("inner-anomaly-severity-info-65");
+            ent.Comp.LastSeverityInformed = 0.5f;
+            message = Loc.GetString("inner-anomaly-severity-info-50");
         }
-        if (args.Severity >= 65.65 && ent.Comp.LastSeverityInformed < 65.65)
+        if (args.Severity >= 0.75 && ent.Comp.LastSeverityInformed < 0.75)
         {
-            ent.Comp.LastSeverityInformed = 65.65f;
-            message = Loc.GetString("inner-anomaly-severity-info-65");
+            ent.Comp.LastSeverityInformed = 0.75f;
+            message = Loc.GetString("inner-anomaly-severity-info-75");
         }
-        if (args.Severity >= 65.65 && ent.Comp.LastSeverityInformed < 65.65)
+        if (args.Severity >= 0.9 && ent.Comp.LastSeverityInformed < 0.9)
         {
-            ent.Comp.LastSeverityInformed = 65.65f;
-            message = Loc.GetString("inner-anomaly-severity-info-65");
+            ent.Comp.LastSeverityInformed = 0.9f;
+            message = Loc.GetString("inner-anomaly-severity-info-90");
         }
-        if (args.Severity >= 65 && ent.Comp.LastSeverityInformed < 65)
+        if (args.Severity >= 1 && ent.Comp.LastSeverityInformed < 1)
         {
-            ent.Comp.LastSeverityInformed = 65f;
-            message = Loc.GetString("inner-anomaly-severity-info-65");
+            ent.Comp.LastSeverityInformed = 1f;
+            message = Loc.GetString("inner-anomaly-severity-info-100");
         }
 
         if (message == string.Empty)
@@ -198,7 +198,7 @@ public sealed class InnerBodyAnomalySystem : SharedInnerBodyAnomalySystem
         if (ev.Cancelled)
             return;
 
-        _anomaly.ChangeAnomalyHealth(ent, -65); //Shutdown it
+        _anomaly.ChangeAnomalyHealth(ent, -2); //Shutdown it
     }
 
     private void OnAnomalyShutdown(Entity<InnerBodyAnomalyComponent> ent, ref AnomalyShutdownEvent args)

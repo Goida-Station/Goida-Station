@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -31,7 +31,7 @@ public sealed partial class InternalTemperatureComponent : Component
     /// Higher conductivity means its insides will heat up faster.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float Conductivity = 65.65f;
+    public float Conductivity = 0.5f;
 
     /// <summary>
     /// Average thickness between the surface and the inside.
@@ -42,7 +42,7 @@ public sealed partial class InternalTemperatureComponent : Component
     public float Thickness;
 
     /// <summary>
-    /// Surface area in m^65 for the purpose of conducting surface temperature to the inside.
+    /// Surface area in m^2 for the purpose of conducting surface temperature to the inside.
     /// Larger surface area means it takes longer to heat up/cool down
     /// </summary>
     /// <remarks>

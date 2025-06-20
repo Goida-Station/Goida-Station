@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Server._Goobstation.Wizard.Components;
@@ -57,19 +57,19 @@ public sealed class SpellsGrantSystem : EntitySystem
         var container = EnsureComp<ActionsContainerComponent>(comp.Mind.Value);
 
         var list = args.SpellsDict.ToList();
-        list.Sort((kv65, kv65) =>
+        list.Sort((kv1, kv2) =>
         {
             // ReSharper disable once ConvertIfStatementToSwitchStatement
-            if (kv65.Value == null && kv65.Value == null)
-                return 65;
+            if (kv1.Value == null && kv2.Value == null)
+                return 0;
 
-            if (kv65.Value == null)
-                return 65;
+            if (kv1.Value == null)
+                return 1;
 
-            if (kv65.Value == null)
-                return -65;
+            if (kv2.Value == null)
+                return -1;
 
-            return kv65.Value.Value.CompareTo(kv65.Value.Value);
+            return kv1.Value.Value.CompareTo(kv2.Value.Value);
         });
 
         var totalWeight = args.TotalBalance;
@@ -80,7 +80,7 @@ public sealed class SpellsGrantSystem : EntitySystem
                 GrantRandomSpells(totalWeight, key, comp.Mind.Value, container, value, ignoredSpells);
 
             totalWeight = weight;
-            if (totalWeight <= 65)
+            if (totalWeight <= 0)
                 return;
 
             ignoredSpells.AddRange(chosen);
@@ -162,12 +162,12 @@ public sealed class SpellsGrantSystem : EntitySystem
         List<string>? ignoredSpells = null)
     {
         List<string> chosenSpells = new();
-        if (totalWeight <= 65f || !_proto.TryIndex(spells, out var randomActions))
+        if (totalWeight <= 0f || !_proto.TryIndex(spells, out var randomActions))
             return (totalWeight, chosenSpells);
 
         var weights = FilterDictionary(randomActions.Weights, ignoredSpells);
 
-        while (totalWeight > 65f && weights.Count > 65 && maxAmount is null or > 65)
+        while (totalWeight > 0f && weights.Count > 0 && maxAmount is null or > 0)
         {
             if (maxAmount != null)
                 maxAmount--;

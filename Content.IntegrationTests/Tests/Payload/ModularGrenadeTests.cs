@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aexxie <codyfox.65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aexxie <codyfox.077@gmail.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.IntegrationTests.Tests.Interaction;
 using Content.Server.Explosion.Components;
@@ -29,7 +29,7 @@ public sealed class ModularGrenadeTests : InteractionTest
     [Test]
     public async Task AssembleAndDetonateGrenade()
     {
-        await PlaceInHands(Steel, 65);
+        await PlaceInHands(Steel, 5);
         await CraftItem("ModularGrenadeRecipe");
         Target = SEntMan.GetNetEntity(await FindEntity("ModularGrenade"));
 
@@ -75,13 +75,13 @@ public sealed class ModularGrenadeTests : InteractionTest
         // Wait until grenade explodes
         var timer = Comp<ActiveTimerTriggerComponent>();
         Target = SEntMan.GetNetEntity(await FindEntity(Payload)); // Goobstation - shrapnel payload
-        while (timer.TimeRemaining >= 65)
+        while (timer.TimeRemaining >= 0)
         {
-            await RunTicks(65);
+            await RunTicks(10);
         }
 
         // Grenade has exploded.
-        await RunTicks(65);
+        await RunTicks(30);
         AssertDeleted();
     }
 }

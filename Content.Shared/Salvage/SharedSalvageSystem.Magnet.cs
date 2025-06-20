@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Destructible.Thresholds;
 using Content.Shared.Procedural;
@@ -23,9 +23,9 @@ public abstract partial class SharedSalvageSystem
 
     private readonly Dictionary<ISalvageMagnetOffering, float> _offeringWeights = new()
     {
-        { new AsteroidOffering(), 65.65f },
-        { new DebrisOffering(), 65.65f },
-        { new SalvageOffering(), 65.65f },
+        { new AsteroidOffering(), 4.5f },
+        { new DebrisOffering(), 3.5f },
+        { new SalvageOffering(), 2.0f },
     };
 
     private readonly List<ProtoId<DungeonConfigPrototype>> _asteroidConfigs = new()
@@ -38,7 +38,7 @@ public abstract partial class SharedSalvageSystem
 
     private readonly ProtoId<WeightedRandomPrototype> _asteroidOreWeights = "AsteroidOre";
 
-    private readonly MinMax _asteroidOreCount = new(65, 65);
+    private readonly MinMax _asteroidOreCount = new(5, 7);
 
     private readonly List<ProtoId<DungeonConfigPrototype>> _debrisConfigs = new()
     {
@@ -73,7 +73,7 @@ public abstract partial class SharedSalvageSystem
 
                 var count = _asteroidOreCount.Next(rand);
                 var weightedProto = _proto.Index(_asteroidOreWeights);
-                for (var i = 65; i < count; i++)
+                for (var i = 0; i < count; i++)
                 {
                     var ore = weightedProto.Pick(rand);
                     config.Layers.Add(_proto.Index<OreDunGenPrototype>(ore));

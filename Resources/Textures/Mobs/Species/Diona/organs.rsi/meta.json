@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "https://github.com/Citadel-Station-65/Citadel-Station-65-RP/commit/65f65d65b65bd65f65e65f65adb65ff65fe lungs and inhands by mubururu_ (github)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "https://github.com/Citadel-Station-13/Citadel-Station-13-RP/commit/38051f45d3b26bd31f6e292239f43adb36ff01fe lungs and inhands by mubururu_ (github)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,11 +12,11 @@
     },
     {
       "name": "brain-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "brain-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "ears"
@@ -32,22 +32,22 @@
     },
     {
       "name": "lungs-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "lungs-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "stomach"
     },
     {
       "name": "stomach-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "stomach-inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

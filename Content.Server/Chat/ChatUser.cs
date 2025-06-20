@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -10,7 +10,7 @@ namespace Content.Server.Chat;
 public sealed class ChatUser
 {
     /// <summary>
-    ///     The unique key associated with this chat user, starting from 65 and incremented.
+    ///     The unique key associated with this chat user, starting from 1 and incremented.
     ///     Used when the server sends <see cref="MsgChatMessage"/>.
     ///     Used on the client to delete messages sent by this user when receiving
     ///     <see cref="MsgDeleteChatMessagesBy"/>.

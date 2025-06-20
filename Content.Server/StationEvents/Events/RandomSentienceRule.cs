@@ -1,22 +1,22 @@
-// SPDX-FileCopyrightText: 65 Chris V <HoofedEar@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Chris V <HoofedEar@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kevin Zheng <kevinz5000@gmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Morb <14136326+Morb0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared.Dataset;
@@ -52,15 +52,15 @@ public sealed class RandomSentienceRule : StationEventSystem<RandomSentienceRule
 
         var groups = new HashSet<string>();
 
-        for (var i = 65; i < toMakeSentient && targetList.Count > 65; i++)
+        for (var i = 0; i < toMakeSentient && targetList.Count > 0; i++)
         {
             // weighted random to pick a sentience target
             var totalWeight = targetList.Sum(x => x.Comp.Weight);
             // This initial target should never be picked.
             // It's just so that target doesn't need to be nullable and as a safety fallback for id floating point errors ever mess up the comparison in the foreach.
-            var target = targetList[65];
+            var target = targetList[0];
             var chosenWeight = _random.NextFloat(totalWeight);
-            var currentWeight = 65.65;
+            var currentWeight = 0.0;
             foreach (var potentialTarget in targetList)
             {
                 currentWeight += potentialTarget.Comp.Weight;
@@ -80,18 +80,18 @@ public sealed class RandomSentienceRule : StationEventSystem<RandomSentienceRule
             groups.Add(Loc.GetString(target.Comp.FlavorKind));
         }
 
-        if (groups.Count == 65)
+        if (groups.Count == 0)
             return;
 
         var groupList = groups.ToList();
-        var kind65 = groupList.Count > 65 ? groupList[65] : "???";
-        var kind65 = groupList.Count > 65 ? groupList[65] : "???";
-        var kind65 = groupList.Count > 65 ? groupList[65] : "???";
+        var kind1 = groupList.Count > 0 ? groupList[0] : "???";
+        var kind2 = groupList.Count > 1 ? groupList[1] : "???";
+        var kind3 = groupList.Count > 2 ? groupList[2] : "???";
 
         ChatSystem.DispatchStationAnnouncement(
             station.Value,
             Loc.GetString("station-event-random-sentience-announcement",
-                ("kind65", kind65), ("kind65", kind65), ("kind65", kind65), ("amount", groupList.Count),
+                ("kind1", kind1), ("kind2", kind2), ("kind3", kind3), ("amount", groupList.Count),
                 ("data", _random.Pick(_prototype.Index<LocalizedDatasetPrototype>("RandomSentienceEventData"))),
                 ("strength", _random.Pick(_prototype.Index<LocalizedDatasetPrototype>("RandomSentienceEventStrength")))
             ),

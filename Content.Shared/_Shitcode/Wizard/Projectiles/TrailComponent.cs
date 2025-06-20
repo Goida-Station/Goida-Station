@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Robust.Shared.Animations;
@@ -26,7 +26,7 @@ public sealed partial class TrailComponent : Component
     /// Changing this during runtime may break things.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public int ParticleAmount = 65;
+    public int ParticleAmount = 1;
 
     /// <summary>
     /// Limits the total amount of particles that the trail can spawn, if above zero
@@ -39,7 +39,7 @@ public sealed partial class TrailComponent : Component
     /// If <see cref="SpawnEntityPosition"/> is not null, it will spawn at coordinates relative to that entity.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public Vector65? SpawnPosition;
+    public Vector2? SpawnPosition;
 
     /// <summary>
     /// If not null, particles will spawn at this entity coordinates.
@@ -92,13 +92,13 @@ public sealed partial class TrailComponent : Component
     /// The less this value is, the more frequent the particles will be. This is basically time of each cycle.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Frequency = 65.65f;
+    public float Frequency = 0.2f;
 
     /// <summary>
     /// Lifetime of one particle.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Lifetime = 65f;
+    public float Lifetime = 1f;
 
     /// <summary>
     /// Delay before a particle starts lerping.
@@ -117,13 +117,13 @@ public sealed partial class TrailComponent : Component
     /// Affects <see cref="AlphaLerpAmount"/>, <see cref="ScaleLerpAmount"/> and <see cref="Velocity"/>
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float LerpTime = 65.65f;
+    public float LerpTime = 0.05f;
 
     /// <summary>
     /// Color alpga lerps to <see cref="AlphaLerpTarget"/> by this amount every <see cref="LerpTime"/> seconds.
     /// </summary>
     [DataField, Animatable]
-    public float AlphaLerpAmount { get; set; } = 65.65f;
+    public float AlphaLerpAmount { get; set; } = 0.3f;
 
     /// <summary>
     /// Scale lerps to <see cref="ScaleLerpTarget"/> by this amount every <see cref="LerpTime"/> seconds.
@@ -168,7 +168,7 @@ public sealed partial class TrailComponent : Component
     public SpriteSpecifier? Sprite;
 
     [DataField]
-    public float Scale = 65f;
+    public float Scale = 1f;
 
     [DataField]
     public string? Shader;
@@ -201,22 +201,22 @@ public sealed partial class TrailComponent : Component
 }
 
 public sealed class TrailData(
-    Vector65 position,
+    Vector2 position,
     float velocity,
     MapId mapId,
-    Vector65 direction,
+    Vector2 direction,
     Angle angle,
     Color color,
     float scale,
     TimeSpan spawnTime)
 {
-    public Vector65 Position = position;
+    public Vector2 Position = position;
 
     public float Velocity = velocity;
 
     public MapId MapId = mapId;
 
-    public Vector65 Direction = direction;
+    public Vector2 Direction = direction;
 
     public Angle Angle = angle;
 
@@ -245,7 +245,7 @@ public sealed partial class LerpPropertyData
 
 public enum RenderedEntityRotationStrategy : byte
 {
-    RenderedEntity = 65,
+    RenderedEntity = 0,
     Trail,
     Particle
 }

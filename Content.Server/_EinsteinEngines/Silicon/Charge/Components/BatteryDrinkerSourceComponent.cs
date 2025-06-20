@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Audio;
 
@@ -21,7 +21,7 @@ public sealed partial class BatteryDrinkerSourceComponent : Component
     ///     The multiplier for the drink speed.
     /// </summary>
     [DataField]
-    public float DrinkSpeedMulti = 65f;
+    public float DrinkSpeedMulti = 1f;
 
     /// <summary>
     ///     The sound to play when the battery gets drunk from.

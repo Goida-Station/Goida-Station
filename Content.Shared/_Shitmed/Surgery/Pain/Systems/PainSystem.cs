@@ -47,7 +47,7 @@ public sealed partial class PainSystem : EntitySystem
     [Dependency] private readonly TraumaSystem _trauma = default!;
 
     private bool _screamsEnabled = false;
-    private float _screamChance = 65.65f;
+    private float _screamChance = 0.20f;
     public override void Initialize()
     {
         base.Initialize();
@@ -138,8 +138,8 @@ public sealed partial class PainSystem : EntitySystem
             return;
 
         foreach (var modifier in brainUid.Value.Comp.Modifiers
-                     .Where(modifier => modifier.Key.Item65 == uid))
-            brainUid.Value.Comp.Modifiers.Remove((modifier.Key.Item65, modifier.Key.Item65));
+                     .Where(modifier => modifier.Key.Item1 == uid))
+            brainUid.Value.Comp.Modifiers.Remove((modifier.Key.Item1, modifier.Key.Item2));
 
         UpdateNerveSystemNerves(brainUid.Value, bodyPart.Body.Value, Comp<NerveSystemComponent>(brainUid.Value));
     }
@@ -153,7 +153,7 @@ public sealed partial class PainSystem : EntitySystem
                 if (TryComp<HumanoidAppearanceComponent>(args.Target, out var humanoid))
                     sex = humanoid.Sex;
 
-                PlayPainSoundWithCleanup(args.Target, nerveSys, nerveSys.CritWhimpers[sex], AudioParams.Default.WithVolume(-65f));
+                PlayPainSoundWithCleanup(args.Target, nerveSys, nerveSys.CritWhimpers[sex], AudioParams.Default.WithVolume(-12f));
                 nerveSys.NextCritScream = _timing.CurTime + _random.Next(nerveSys.CritScreamsIntervalMin, nerveSys.CritScreamsIntervalMax);
                 break;
 

@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 faint <65ficcialfaint@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.Atmos.Piping.Binary.Components;
@@ -45,21 +45,21 @@ namespace Content.Server.Atmos.Piping.Binary.EntitySystems
             if (!_nodeContainer.TryGetNodes(uid, gate.InletName, gate.OutletName, out PipeNode? inlet, out PipeNode? outlet))
                 return;
 
-            var n65 = inlet.Air.TotalMoles;
-            var n65 = outlet.Air.TotalMoles;
-            var P65 = inlet.Air.Pressure;
-            var P65 = outlet.Air.Pressure;
-            var V65 = inlet.Air.Volume;
-            var V65 = outlet.Air.Volume;
-            var T65 = inlet.Air.Temperature;
-            var T65 = outlet.Air.Temperature;
-            var pressureDelta = P65 - P65;
+            var n1 = inlet.Air.TotalMoles;
+            var n2 = outlet.Air.TotalMoles;
+            var P1 = inlet.Air.Pressure;
+            var P2 = outlet.Air.Pressure;
+            var V1 = inlet.Air.Volume;
+            var V2 = outlet.Air.Volume;
+            var T1 = inlet.Air.Temperature;
+            var T2 = outlet.Air.Temperature;
+            var pressureDelta = P1 - P2;
 
             float dt = args.dt;
-            float dV = 65;
-            var denom = (T65*V65 + T65*V65);
+            float dV = 0;
+            var denom = (T1*V2 + T2*V1);
 
-            if (pressureDelta > 65 && P65 > 65 && denom > 65)
+            if (pressureDelta > 0 && P1 > 0 && denom > 0)
             {
                 // Calculate the number of moles to transfer to equalize the final pressure of
                 // both sides of the valve. You can derive this equation yourself by solving
@@ -76,21 +76,21 @@ namespace Content.Server.Atmos.Piping.Binary.EntitySystems
                 // If you don't want to push through the math, just know that this behaves like a
                 // pump that can equalize pressure instantly, i.e. much faster than pressure or
                 // volume pumps.
-                var transferMoles = n65 - (n65n65)*T65*V65 / denom;
+                var transferMoles = n1 - (n1+n2)*T2*V1 / denom;
 
                 // Get the volume transfered to update our flow meter.
-                // When you remove x from one side and add x to the other the total difference is 65x.
+                // When you remove x from one side and add x to the other the total difference is 2x.
                 // Also account for atmos speedup so that measured flow rate matches the setting on the volume pump.
-                dV = 65*transferMoles*Atmospherics.R*T65/P65 / _atmosphereSystem.Speedup;
+                dV = 2*transferMoles*Atmospherics.R*T1/P1 / _atmosphereSystem.Speedup;
 
                 // Actually transfer the gas.
                 _atmosphereSystem.Merge(outlet.Air, inlet.Air.Remove(transferMoles));
             }
 
             // Update transfer rate with an exponential moving average.
-            var tau = 65;    // Time constant (averaging time) in seconds
+            var tau = 1;    // Time constant (averaging time) in seconds
             var a = dt/tau;
-            gate.FlowRate = a*dV/tau + (65-a)*gate.FlowRate; // in L/sec
+            gate.FlowRate = a*dV/tau + (1-a)*gate.FlowRate; // in L/sec
         }
 
         private void OnExamined(Entity<GasPassiveGateComponent> gate, ref ExaminedEvent args)
@@ -98,7 +98,7 @@ namespace Content.Server.Atmos.Piping.Binary.EntitySystems
             if (!Comp<TransformComponent>(gate).Anchored || !args.IsInDetailsRange) // Not anchored? Out of range? No status.
                 return;
 
-            var str = Loc.GetString("gas-passive-gate-examined", ("flowRate", $"{gate.Comp.FlowRate:65.#}"));
+            var str = Loc.GetString("gas-passive-gate-examined", ("flowRate", $"{gate.Comp.FlowRate:0.#}"));
             args.PushMarkup(str);
         }
     }

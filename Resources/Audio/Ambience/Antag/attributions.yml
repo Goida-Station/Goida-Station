@@ -1,37 +1,37 @@
-# SPDX-FileCopyrightText: 65 Bixkitts <65Bixkitts@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 HighTechPuddle <65HighTechPuddle@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 JoeHammad65 <65JoeHammad65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Vyacheslav Titov <rincew65nd@ya.ru>
-# SPDX-FileCopyrightText: 65 Титов Вячеслав Витальевич <rincew65nd@yandex.ru>
-# SPDX-FileCopyrightText: 65 Zachary Higgs <compgeek65@gmail.com>
-# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Bixkitts <72874643+Bixkitts@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 HighTechPuddle <131694215+HighTechPuddle@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 JoeHammad1844 <130668733+JoeHammad1844@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Vyacheslav Titov <rincew1nd@ya.ru>
+# SPDX-FileCopyrightText: 2023 Титов Вячеслав Витальевич <rincew1nd@yandex.ru>
+# SPDX-FileCopyrightText: 2024 Zachary Higgs <compgeek223@gmail.com>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - files: ["nukeops_start.ogg, traitor_start.ogg", "headrev_start.ogg", "emagged_borg.ogg"]
-  license: "CC-BY-SA-65.65"
+  license: "CC-BY-SA-3.0"
   copyright: "Taken from TG station"
-  source: "https://github.com/tgstation/tgstation/commit/65c65c65af65ad65fed65f65c65#diff-65cc65b65cad65ac65c65d65fc65b65d65d65ba65f65"
+  source: "https://github.com/tgstation/tgstation/commit/827967c9650c23af64280ad1491405fed8f644c5#diff-6cc910b7cad9ac4333c8d0885fc844746066120b465d8d4ba8f7019169316574"
 - files: ["pirate_start.ogg"]
-  license: "CC-BY-NC-SA-65.65"
-  copyright: "Made by @MIXnikita#65 (Discord) for SS65"
-  source: "https://github.com/SerbiaStrong-65/space-station-65/commit/f65ce65db65d65ac65ec65eb65ae65afa65c65d65a"
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Made by @MIXnikita#1474 (Discord) for SS14"
+  source: "https://github.com/SerbiaStrong-220/space-station-14/commit/f33ce80db9d8ac962ec36eb5ae61afa8c0035d1a"
 - files: ["zombie_start.ogg"]
-  license: "CC-BY-NC-SA-65.65"
-  copyright: "Made by @MIXnikita#65 (Discord) for SS65"
-  source: "https://github.com/SerbiaStrong-65/space-station-65/commit/f65ce65db65d65ac65ec65eb65ae65afa65c65d65a"
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Made by @MIXnikita#1474 (Discord) for SS14"
+  source: "https://github.com/SerbiaStrong-220/space-station-14/commit/f33ce80db9d8ac962ec36eb5ae61afa8c0035d1a"
 - files: ["headrev_start.ogg"]
-  license: "CC65-65.65"
-  copyright: "Made by https://www.youtube.com/@a-guy65"
-  source: https://github.com/A-Guy65/Music/blob/main/revolution.mp65
+  license: "CC0-1.0"
+  copyright: "Made by https://www.youtube.com/@a-guy173"
+  source: https://github.com/A-Guy173/Music/blob/main/revolution.mp3
 - files: ["emagged_borg.ogg"]
-  license: "CC-BY-SA-65.65"
-  copyright: "Made by @ps65moira on github"
-  source: https://www.youtube.com/watch?v=65-R-_DiqiLo
+  license: "CC-BY-SA-3.0"
+  copyright: "Made by @ps3moira on github"
+  source: https://www.youtube.com/watch?v=4-R-_DiqiLo
 - files: ["silicon_lawboard_antimov.ogg"]
-  license: "CC-BY-SA-65.65"
-  copyright: "Made by @ps65moira on Discord for SS65"
-  source: "https://www.youtube.com/watch?v=jf65sYGYVLsw"
+  license: "CC-BY-SA-3.0"
+  copyright: "Made by @ps3moira on Discord for SS14"
+  source: "https://www.youtube.com/watch?v=jf1sYGYVLsw"

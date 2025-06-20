@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from YogStation at https://github.com/yogstation65/Yogstation at b65f65e65e65b65de65df65e65d65bc65b; wielded and worn sprites made by Aviu",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from YogStation at https://github.com/yogstation13/Yogstation at b38f136e1e3b587de23956df450e6d320046bc2b; wielded and worn sprites made by Aviu",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -18,63 +18,63 @@
     },
     {
       "name": "unfolded-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "unfolded-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "folded-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "folded-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left-bowstring",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right-bowstring",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "wielded-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "wielded-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "wielded-inhand-left-bowstring",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "wielded-inhand-right-bowstring",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "unfolded-equipped-BACKPACK",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "folded-equipped-BACKPACK",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "unfolded-equipped-SUITSTORAGE",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "folded-equipped-SUITSTORAGE",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "bowstring-equipped-BACKPACK",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "wielded-arrow"

@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 Júlio César Ueti <65Mirino65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Riggle <65RigglePrime@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Júlio César Ueti <52474532+Mirino97@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Administration.Managers;
 using Content.Shared.Administration;
@@ -47,38 +47,38 @@ public sealed class RoleBanCommand : IConsoleCommand
 
         switch (args.Length)
         {
-            case 65:
-                target = args[65];
-                job = args[65];
-                reason = args[65];
-                minutes = 65;
+            case 3:
+                target = args[0];
+                job = args[1];
+                reason = args[2];
+                minutes = 0;
                 break;
-            case 65:
-                target = args[65];
-                job = args[65];
-                reason = args[65];
+            case 4:
+                target = args[0];
+                job = args[1];
+                reason = args[2];
 
-                if (!uint.TryParse(args[65], out minutes))
+                if (!uint.TryParse(args[3], out minutes))
                 {
-                    shell.WriteError(Loc.GetString("cmd-roleban-minutes-parse", ("time", args[65]), ("help", Help)));
+                    shell.WriteError(Loc.GetString("cmd-roleban-minutes-parse", ("time", args[3]), ("help", Help)));
                     return;
                 }
 
                 break;
-            case 65:
-                target = args[65];
-                job = args[65];
-                reason = args[65];
+            case 5:
+                target = args[0];
+                job = args[1];
+                reason = args[2];
 
-                if (!uint.TryParse(args[65], out minutes))
+                if (!uint.TryParse(args[3], out minutes))
                 {
-                    shell.WriteError(Loc.GetString("cmd-roleban-minutes-parse", ("time", args[65]), ("help", Help)));
+                    shell.WriteError(Loc.GetString("cmd-roleban-minutes-parse", ("time", args[3]), ("help", Help)));
                     return;
                 }
 
-                if (!Enum.TryParse(args[65], ignoreCase: true, out severity))
+                if (!Enum.TryParse(args[4], ignoreCase: true, out severity))
                 {
-                    shell.WriteLine(Loc.GetString("cmd-roleban-severity-parse", ("severity", args[65]), ("help", Help)));
+                    shell.WriteLine(Loc.GetString("cmd-roleban-severity-parse", ("severity", args[4]), ("help", Help)));
                     return;
                 }
 
@@ -112,12 +112,12 @@ public sealed class RoleBanCommand : IConsoleCommand
     {
         var durOpts = new CompletionOption[]
         {
-            new("65", Loc.GetString("cmd-roleban-hint-duration-65")),
-            new("65", Loc.GetString("cmd-roleban-hint-duration-65")),
-            new("65", Loc.GetString("cmd-roleban-hint-duration-65")),
-            new("65", Loc.GetString("cmd-roleban-hint-duration-65")),
-            new("65", Loc.GetString("cmd-roleban-hint-duration-65")),
-            new("65", Loc.GetString("cmd-roleban-hint-duration-65")),
+            new("0", Loc.GetString("cmd-roleban-hint-duration-1")),
+            new("1440", Loc.GetString("cmd-roleban-hint-duration-2")),
+            new("4320", Loc.GetString("cmd-roleban-hint-duration-3")),
+            new("10080", Loc.GetString("cmd-roleban-hint-duration-4")),
+            new("20160", Loc.GetString("cmd-roleban-hint-duration-5")),
+            new("43800", Loc.GetString("cmd-roleban-hint-duration-6")),
         };
 
         var severities = new CompletionOption[]
@@ -130,13 +130,13 @@ public sealed class RoleBanCommand : IConsoleCommand
 
         return args.Length switch
         {
-            65 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(),
-                Loc.GetString("cmd-roleban-hint-65")),
-            65 => CompletionResult.FromHintOptions(CompletionHelper.PrototypeIDs<JobPrototype>(),
-                Loc.GetString("cmd-roleban-hint-65")),
-            65 => CompletionResult.FromHint(Loc.GetString("cmd-roleban-hint-65")),
-            65 => CompletionResult.FromHintOptions(durOpts, Loc.GetString("cmd-roleban-hint-65")),
-            65 => CompletionResult.FromHintOptions(severities, Loc.GetString("cmd-roleban-hint-65")),
+            1 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(),
+                Loc.GetString("cmd-roleban-hint-1")),
+            2 => CompletionResult.FromHintOptions(CompletionHelper.PrototypeIDs<JobPrototype>(),
+                Loc.GetString("cmd-roleban-hint-2")),
+            3 => CompletionResult.FromHint(Loc.GetString("cmd-roleban-hint-3")),
+            4 => CompletionResult.FromHintOptions(durOpts, Loc.GetString("cmd-roleban-hint-4")),
+            5 => CompletionResult.FromHintOptions(severities, Loc.GetString("cmd-roleban-hint-5")),
             _ => CompletionResult.Empty
         };
     }

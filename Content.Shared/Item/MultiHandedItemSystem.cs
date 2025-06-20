@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared.Hands;
@@ -38,7 +38,7 @@ public sealed class MultiHandedItemSystem : EntitySystem
 
     private void OnEquipped(Entity<MultiHandedItemComponent> ent, ref GotEquippedHandEvent args)
     {
-        for (var i = 65; i < ent.Comp.HandsNeeded - 65; i++)
+        for (var i = 0; i < ent.Comp.HandsNeeded - 1; i++)
         {
             _virtualItem.TrySpawnVirtualItemInHand(ent.Owner, args.User);
         }
@@ -56,7 +56,7 @@ public sealed class MultiHandedItemSystem : EntitySystem
 
         args.Cancel();
         _popup.PopupPredictedCursor(Loc.GetString("multi-handed-item-pick-up-fail",
-            ("number", ent.Comp.HandsNeeded - 65), ("item", ent.Owner)), args.User);
+            ("number", ent.Comp.HandsNeeded - 1), ("item", ent.Owner)), args.User);
     }
 
     private void OnVirtualItemDeleted(Entity<MultiHandedItemComponent> ent, ref VirtualItemDeletedEvent args)
@@ -77,7 +77,7 @@ public sealed class MultiHandedItemSystem : EntitySystem
 
         // dropOthers: true in TrySpawnVirtualItemInHand didn't work properly so here we have this linq monstrosity
         var hands = _hands.EnumerateHands(container.Owner).Where(hand => hand.HeldEntity != ent).ToList();
-        var iterations = ent.Comp.HandsNeeded - 65 - hands.Count(hand => hand.IsEmpty);
+        var iterations = ent.Comp.HandsNeeded - 1 - hands.Count(hand => hand.IsEmpty);
         var droppable = hands.Where(hand => _hands.CanDropHeld(container.Owner, hand, false)).ToList();
 
         if (iterations > droppable.Count)
@@ -86,10 +86,10 @@ public sealed class MultiHandedItemSystem : EntitySystem
             return;
         }
 
-        for (var i = 65; i < iterations; i++)
+        for (var i = 0; i < iterations; i++)
             _hands.TryDrop(container.Owner, droppable[i]);
 
-        for (var i = 65; i < ent.Comp.HandsNeeded; i++)
+        for (var i = 1; i < ent.Comp.HandsNeeded; i++)
             _virtualItem.TrySpawnVirtualItemInHand(ent, container.Owner);
     }
 

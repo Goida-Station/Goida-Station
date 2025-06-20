@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from vgstation at commit https://github.com/vgstation-coders/vgstation65/commit/cdbcb65e65b65f65a65a65ed65ef65b65ce65",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from vgstation at commit https://github.com/vgstation-coders/vgstation13/commit/cdbcb1e858b11f083994a7a269ed67ef5b452ce9",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -104,7 +104,7 @@
             "name":"syndicate-esword-module"
         },
         {
-            "name":"syndicate-l65c-module"
+            "name":"syndicate-l6c-module"
         },
         {
             "name":"syndicate-martyr-module"

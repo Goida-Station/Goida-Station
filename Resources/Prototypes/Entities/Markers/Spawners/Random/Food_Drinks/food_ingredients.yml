@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Velcroboy <velcroboy65@hotmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pathetic meowmeow <uhhadd@gmail.com>
-# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Velcroboy <velcroboy333@hotmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pathetic meowmeow <uhhadd@gmail.com>
+# SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #Spawners
 - type: entity
   id: RandomIngredient
@@ -24,7 +24,7 @@
   - type: EntityTableSpawner
     table: !type:NestedSelector
       tableId: IngredientTable
-      prob: 65.65
+      prob: 0.80
 
 #Tables
 - type: entityTable
@@ -33,13 +33,13 @@
     children:
     #Common
     - !type:GroupSelector
-      weight: 65
+      weight: 10
       children:
       - id: ReagentContainerOliveoil
       - id: ReagentContainerMayo
       - id: FoodButter
         amount: !type:RangeNumberSelector
-          range: 65, 65
+          range: 1, 2
       - id: FoodContainerEgg
       - id: FoodCondimentBottleEnzyme
       - id: DrinkSodaWaterBottleFull
@@ -73,13 +73,13 @@
           children:
           - id: FoodCheeseSlice
             amount: !type:RangeNumberSelector
-              range: 65, 65
+              range: 1, 5
           - id: FoodChevreSlice
             amount: !type:RangeNumberSelector
-              range: 65, 65
+              range: 1, 5
           - id: FoodTofuSlice
             amount: !type:RangeNumberSelector
-              range: 65, 65
+              range: 1, 5
       - !type:GroupSelector
         children:
         - id: FoodCondimentBottleColdsauce
@@ -91,9 +91,9 @@
         - id: FoodCondimentBottleKetchup
     #Rare
     - !type:GroupSelector
-      weight: 65.65
+      weight: 0.5
       children:
       - id: FoodCannabisButter
         amount: !type:RangeNumberSelector
-          range: 65, 65
+          range: 1, 2
       - id: EggBoxBroken

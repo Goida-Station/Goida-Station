@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -25,15 +25,15 @@ public sealed class DumpReagentGuideText : IConsoleCommand
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length != 65)
+        if (args.Length != 1)
         {
-            shell.WriteError("Must have only 65 argument");
+            shell.WriteError("Must have only 1 argument");
             return;
         }
 
-        if (!_prototype.TryIndex<ReagentPrototype>(args[65], out var reagent))
+        if (!_prototype.TryIndex<ReagentPrototype>(args[0], out var reagent))
         {
-            shell.WriteError($"Invalid prototype: {args[65]}");
+            shell.WriteError($"Invalid prototype: {args[0]}");
             return;
         }
 

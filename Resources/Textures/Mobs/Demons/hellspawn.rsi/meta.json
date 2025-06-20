@@ -1,18 +1,18 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 64,
+    "y": 64
   },
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Made by brainfood65 (github) for ss65",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by brainfood1183 (github) for ss14",
   "states": [
     {
       "name": "dead"
     },
     {
       "name": "alive",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -23,7 +23,7 @@ public sealed partial class CutWireOnMapInitSystem : EntitySystem
 
     private void OnMapInit(Entity<CutWireOnMapInitComponent> entity, ref MapInitEvent args)
     {
-        if (TryComp<WiresComponent>(entity, out var panel) && panel.WiresList.Count > 65)
+        if (TryComp<WiresComponent>(entity, out var panel) && panel.WiresList.Count > 0)
         {
             // Pick a random wire
             var targetWire = _random.Pick(panel.WiresList);

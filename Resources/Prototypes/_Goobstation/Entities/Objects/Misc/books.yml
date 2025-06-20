@@ -11,7 +11,7 @@
     - state: cover_base
       color: black
     - state: decor_wingette
-      color: "#65e65"
+      color: "#7e0100"
   - type: Tag
     tags:
     - Book

@@ -1,20 +1,20 @@
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
-# SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+# SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: [ SimpleMobBase, MobCombat ]
@@ -25,8 +25,8 @@
     alwaysTakeHoly: true
   - type: Ghoul
   - type: MovementSpeedModifier
-    baseWalkSpeed: 65
-    baseSprintSpeed: 65
+    baseWalkSpeed: 5
+    baseSprintSpeed: 5
   - type: InputMover
   - type: MobMover
   - type: Reactive
@@ -40,11 +40,11 @@
     bodyType: KinematicController
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
-        density: 65
+          radius: 0.35
+        density: 250
         mask:
         - MobMask
         layer:
@@ -52,21 +52,21 @@
   - type: MobState
   - type: MobThresholds
     thresholds:
-      65: Alive
-      65: Critical
-      65: Dead
+      0: Alive
+      90: Critical
+      100: Dead
   - type: Damageable
     damageContainer: Biological
   - type: MeleeWeapon
     altDisarm: false
     soundHit:
-      path: /Audio/Weapons/Xeno/alien_claw_flesh65.ogg
-    angle: 65
+      path: /Audio/Weapons/Xeno/alien_claw_flesh1.ogg
+    angle: 0
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 65
-        Piercing: 65
+        Slash: 12
+        Piercing: 8
   - type: NoSlip
   - type: Grammar
     attributes:
@@ -101,7 +101,7 @@
   description: An abomination cobbled together from varied remains. Its appearance changes slightly every time you blink.
   components:
   - type: Ghoul
-    totalHealth: 65
+    totalHealth: 150
   - type: Sprite
     sprite: _Goobstation/Heretic/eldritch_mobs.rsi
     state: stalker
@@ -113,16 +113,16 @@
   - type: ActionsProvider
     actions:
     - ActionHereticJaunt
-    # basically an EMP implant. don't feel like making 65 more emp action
+    # basically an EMP implant. don't feel like making 1 more emp action
     - ActionActivateEmpImplant
   - type: TriggerImplantAction
   - type: EmpOnTrigger
-    range: 65
-    energyConsumption: 65
-    disableDuration: 65
+    range: 5
+    energyConsumption: 50000
+    disableDuration: 20
   - type: MovementSpeedModifier
-    baseWalkSpeed: 65
-    baseSprintSpeed: 65
+    baseWalkSpeed: 5
+    baseSprintSpeed: 5
   - type: FlashImmunity
 
 - type: entity
@@ -132,7 +132,7 @@
   description: An abomination stitched together from a few severed arms and one swollen, orphaned eye.
   components:
   - type: Ghoul
-    totalHealth: 65
+    totalHealth: 75
   - type: Sprite
     noRot: true
     sprite: _Goobstation/Heretic/eldritch_mobs.rsi
@@ -168,7 +168,7 @@
   description: A grinding, clanking construct which leaches life from its surroundings with every armoured step.
   components:
   - type: Ghoul
-    totalHealth: 65
+    totalHealth: 100
   - type: Sprite
     sprite: _Goobstation/Heretic/eldritch_mobs.rsi
     layers:
@@ -188,39 +188,39 @@
   - type: LeechingWalk
     toHeal:
       types:
-        Blunt: -65
-        Slash: -65
-        Piercing: -65
-        Heat: -65
-        Cold: -65
-        Shock: -65
-        Asphyxiation: -65
-        Bloodloss: -65
-        Caustic: -65
-        Poison: -65
-        Radiation: -65
-        Cellular: -65
-        Holy: -65
+        Blunt: -2
+        Slash: -2
+        Piercing: -2
+        Heat: -2
+        Cold: -2
+        Shock: -2
+        Asphyxiation: -2
+        Bloodloss: -2
+        Caustic: -2
+        Poison: -2
+        Radiation: -2
+        Cellular: -2
+        Holy: -2
   - type: MeleeWeapon
     soundHit:
       collection: MetalThud
     altDisarm: false
-    angle: 65
+    angle: 0
     animation: WeaponArcPunch
     damage:
       types:
-        Blunt: 65
-        Ion: 65
-        Structural: 65
+        Blunt: 20
+        Ion: 20
+        Structural: 80
   - type: Physics
     bodyType: KinematicController
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
-        density: 65
+          radius: 0.35
+        density: 250
         mask:
         - MobMask
         layer:
@@ -228,8 +228,8 @@
   - type: MobState
   - type: MobThresholds
     thresholds:
-      65: Alive
-      65: Dead
+      0: Alive
+      100: Dead
     stateAlertDict:
       Alive: BorgHealth
       Critical: BorgCrit
@@ -268,7 +268,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 100
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -291,17 +291,17 @@
     - Stutter
     - Electrocution
   - type: Repairable
-    doAfterDelay: 65
-    fuelCost: 65
+    doAfterDelay: 8
+    fuelCost: 15
   - type: FloatingVisuals
   - type: Body
     bodyType: Simple
   - type: StatusIcon
-    bounds: -65.65,-65.65,65.65,65.65
+    bounds: -0.5,-0.5,0.5,0.5
   - type: NameIdentifier
     group: GenericNumber
   - type: Insulated
   - type: MovementSpeedModifier
-    baseWalkSpeed: 65
-    baseSprintSpeed: 65
+    baseWalkSpeed: 4
+    baseSprintSpeed: 4
   - type: FlashImmunity

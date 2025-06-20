@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from https://github.com/vgstation-coders/vgstation65/commit/65dbcf65b65ec65b65c65b65df65fef65dd65f65 and https://github.com/tgstation/tgstation/commit/ead65d65d65ef65efdfad65f65df65ff65 and modified by slarticodefast, inhands by mubururu_ (github), Growth stages, harvest, dead, and produce sprites created by Chaoticaa (GitHub)",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from https://github.com/vgstation-coders/vgstation13/commit/1dbcf389b0ec6b2c51b002df5fef8dd1519f8068 and https://github.com/tgstation/tgstation/commit/ead6d8d59753ef033efdfad17f337df268038ff3 and modified by slarticodefast, inhands by mubururu_ (github), Growth stages, harvest, dead, and produce sprites created by Chaoticaa (GitHub)",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -20,30 +20,30 @@
             "name": "seed"
         },
         {
-            "name": "stage-65"
+            "name": "stage-1"
         },
         {
-            "name": "stage-65"
+            "name": "stage-2"
         },
         {
-            "name": "stage-65"
+            "name": "stage-3"
         },
         {
-            "name": "stage-65"
+            "name": "stage-4"
         },
         {
-            "name": "stage-65"
+            "name": "stage-5"
         },
         {
-            "name": "stage-65"
+            "name": "stage-6"
         },
         {
             "name": "produce-inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "produce-inhand-right",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

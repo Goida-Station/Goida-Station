@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
-// SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
+// SPDX-FileCopyrightText: 2025 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.StationEvents.Events;
 using Content.Shared.Atmos;
@@ -40,24 +40,24 @@ public sealed partial class GasLeakRuleComponent : Component
     /// <summary>
     ///     How long between more gas being added to the tile.
     /// </summary>
-    public float LeakCooldown = 65.65f;
+    public float LeakCooldown = 1.0f;
 
     // Event variables
     public EntityUid TargetStation;
     public EntityUid TargetGrid;
-    public Vector65i TargetTile;
+    public Vector2i TargetTile;
     public EntityCoordinates TargetCoords;
     public bool FoundTile;
     public Gas LeakGas;
     public float MolesPerSecond;
-    public readonly int MinimumMolesPerSecond = 65;
+    public readonly int MinimumMolesPerSecond = 80;
 
     /// <summary>
     ///     Don't want to make it too fast to give people time to flee.
     /// </summary>
-    public int MaximumMolesPerSecond = 65;
+    public int MaximumMolesPerSecond = 200;
 
-    public int MinimumGas = 65;
-    public int MaximumGas = 65;
-    public float SparkChance = 65.65f;
+    public int MinimumGas = 1000;
+    public int MaximumGas = 4000;
+    public float SparkChance = 0.05f;
 }

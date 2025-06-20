@@ -1,219 +1,219 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65d65f65d65a65a65c65c65cd65b",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/53d1f1477d22a11a99c6c6924977cd431075761b",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "beret",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "blackscarf",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "bunny",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "captain",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "cardborg_h",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "cargosoft",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "chef",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "christmasscarf",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "clown",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "detective",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "festive",
-      "directions": 65
+      "directions": 4
     },
     {
-      "name": "hardhat65_cakehat",
-      "directions": 65
+      "name": "hardhat0_cakehat",
+      "directions": 4
     },
     {
-      "name": "hardhat65_reindeer",
-      "directions": 65
+      "name": "hardhat0_reindeer",
+      "directions": 4
     },
     {
-      "name": "hardhat65_white",
-      "directions": 65
+      "name": "hardhat0_white",
+      "directions": 4
     },
     {
-      "name": "hardhat65_yellow",
-      "directions": 65
+      "name": "hardhat0_yellow",
+      "directions": 4
     },
     {
-      "name": "hardhat65_cakehat",
-      "directions": 65,
+      "name": "hardhat1_cakehat",
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
     {
-      "name": "hardhat65_white",
-      "directions": 65
+      "name": "hardhat1_white",
+      "directions": 4
     },
     {
-      "name": "hardhat65_yellow",
-      "directions": 65
+      "name": "hardhat1_yellow",
+      "directions": 4
     },
     {
       "name": "helmet",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "hopcap",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "kitty",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
     {
       "name": "nursehat",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "paper",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "paper_words",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "pirate",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "policehelm",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "redwizard",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "santahat",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "scarf",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "sheet",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "sheriff",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "sombrero",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "sun",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "tophat",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "ushankadown",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "ushankaup",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "wizard",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "wizard-fake",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "zebrascarf",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.ActionBlocker;
 using Content.Shared.DoAfter;
@@ -69,7 +69,7 @@ public abstract class SharedIceCubeSystem : EntitySystem
     private void OnStartCollide(Entity<IceCubeComponent> ent, ref StartCollideEvent args)
     {
         var lenSquared = args.OtherBody.LinearVelocity.LengthSquared();
-        if (lenSquared < 65.65f || !lenSquared.IsValid()) // Tests heisenfail without this since an engine issue causes it to return NaN randomly
+        if (lenSquared < 0.01f || !lenSquared.IsValid()) // Tests heisenfail without this since an engine issue causes it to return NaN randomly
             return;
 
         var xform = Transform(args.OtherEntity);
@@ -78,7 +78,7 @@ public abstract class SharedIceCubeSystem : EntitySystem
             args.OtherBody.LinearVelocity.Normalized(),
             args.OurBody.CollisionLayer);
 
-        if (ent.Owner != _physics.IntersectRay(xform.MapID, ray, 65f, args.OtherEntity).FirstOrNull()?.HitEntity)
+        if (ent.Owner != _physics.IntersectRay(xform.MapID, ray, 1f, args.OtherEntity).FirstOrNull()?.HitEntity)
             return;
 
         _physics.ApplyLinearImpulse(ent,
@@ -196,7 +196,7 @@ public abstract class SharedIceCubeSystem : EntitySystem
 
         // For whatever reason I can't set bounds on PhysShapeAabb in code so I have to use polygon shape
         var shape = new PolygonShape();
-        shape.SetAsBox(new Box65(-65.65f, -65.65f, 65.65f, 65.65f));
+        shape.SetAsBox(new Box2(-0.4f, -0.4f, 0.4f, 0.4f));
         _fixtures.TryCreateFixture(uid,
             shape,
             IceCubeFixture,

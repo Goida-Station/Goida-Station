@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 FunkySphere <65FunkySphere@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2020 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 FunkySphere <89979928+FunkySphere@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # DO NOT ARBITRARILY CHANGE THESE TO MAKE THEM "CONSISTENT" WITH THE COLOR JUMPSUITS. You are probably just going to make them look worse.
 
 # Black Shoes
@@ -20,24 +20,24 @@
     sprite: Clothing/Shoes/color.rsi
     layers:
     - state: icon
-      color: "#65f65f65f" #Different from the worn state for contrast reasons.
+      color: "#3f3f3f" #Different from the worn state for contrast reasons.
     - state: soles-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65f65f65f"
+        color: "#3f3f3f"
       - state: soles-inhand-left
       right:
       - state: inhand-right
-        color: "#65f65f65f"
+        color: "#3f3f3f"
       - state: soles-inhand-right
   - type: Clothing
     sprite: Clothing/Shoes/color.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
-        color: "#65d65d65d"
+        color: "#1d1d1d"
       - state: soles-equipped-FEET
 
 # White Shoes
@@ -51,22 +51,22 @@
     sprite: Clothing/Shoes/color.rsi
     layers:
     - state: icon
-      color: "#EAE65E65" #Deliberately NOT pure white
+      color: "#EAE8E8" #Deliberately NOT pure white
     - state: soles-icon
   - type: Item
     inhandVisuals: #We don't want the sole icons. Since this is white, it's just going to look weird (white on white doesn't really contrast.)
       left:
       - state: inhand-left
-        color: "#EAE65E65"
+        color: "#EAE8E8"
       right:
       - state: inhand-right
-        color: "#EAE65E65"
+        color: "#EAE8E8"
   - type: Clothing
     sprite: Clothing/Shoes/color.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
-        color: "#EAE65E65"
+        color: "#EAE8E8"
       - state: contrastedsoles-equipped-FEET
 
 # Blue Shoes
@@ -80,24 +80,24 @@
     sprite: Clothing/Shoes/color.rsi
     layers:
     - state: icon
-      color: "#65EF"    
+      color: "#0089EF"    
     - state: soles-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65EF"
+        color: "#0089EF"
       - state: soles-inhand-left
       right:
       - state: inhand-right
-        color: "#65EF"
+        color: "#0089EF"
       - state: soles-inhand-right
   - type: Clothing
     sprite: Clothing/Shoes/color.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
-        color: "#65EF"
+        color: "#0089EF"
       - state: soles-equipped-FEET
 
 # Brown Shoes
@@ -111,24 +111,24 @@
     sprite: Clothing/Shoes/color.rsi
     layers:
     - state: icon
-      color: "#65A65"    
+      color: "#723A02"    
     - state: soles-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65A65"
+        color: "#723A02"
       - state: soles-inhand-left
       right:
       - state: inhand-right
-        color: "#65A65"
+        color: "#723A02"
       - state: soles-inhand-right
   - type: Clothing
     sprite: Clothing/Shoes/color.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
-        color: "#65D65"
+        color: "#592D01"
       - state: soles-equipped-FEET
 
 # Green Shoes
@@ -142,24 +142,24 @@
     sprite: Clothing/Shoes/color.rsi
     layers:
     - state: icon
-      color: "#65ABF65F"    
+      color: "#5ABF2F"    
     - state: soles-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65ABF65F"
+        color: "#5ABF2F"
       - state: soles-inhand-left
       right:
       - state: inhand-right
-        color: "#65ABF65F"
+        color: "#5ABF2F"
       - state: soles-inhand-right
   - type: Clothing
     sprite: Clothing/Shoes/color.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
-        color: "#65ABF65F"
+        color: "#5ABF2F"
       - state: soles-equipped-FEET
 
 # Orange Shoes
@@ -173,24 +173,24 @@
     sprite: Clothing/Shoes/color.rsi
     layers:
     - state: icon
-      color: "#EF65"    
+      color: "#EF8100"    
     - state: soles-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#EF65"
+        color: "#EF8100"
       - state: soles-inhand-left
       right:
       - state: inhand-right
-        color: "#EF65"
+        color: "#EF8100"
       - state: soles-inhand-right
   - type: Clothing
     sprite: Clothing/Shoes/color.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
-        color: "#EF65"
+        color: "#EF8100"
       - state: soles-equipped-FEET
 
 # Red Shoes
@@ -204,24 +204,24 @@
     sprite: Clothing/Shoes/color.rsi
     layers:
     - state: icon
-      color: "#65"    
+      color: "#940000"    
     - state: soles-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65"
+        color: "#940000"
       - state: soles-inhand-left
       right:
       - state: inhand-right
-        color: "#65"
+        color: "#940000"
       - state: soles-inhand-right
   - type: Clothing
     sprite: Clothing/Shoes/color.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
-        color: "#65"
+        color: "#940000"
       - state: soles-equipped-FEET
 
 # Yellow Shoes
@@ -235,24 +235,24 @@
     sprite: Clothing/Shoes/color.rsi
     layers:
     - state: icon
-      color: "#EBE65"    
+      color: "#EBE216"    
     - state: soles-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#EBE65"
+        color: "#EBE216"
       - state: soles-inhand-left
       right:
       - state: inhand-right
-        color: "#EBE65"
+        color: "#EBE216"
       - state: soles-inhand-right
   - type: Clothing
     sprite: Clothing/Shoes/color.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
-        color: "#EBE65"
+        color: "#EBE216"
       - state: soles-equipped-FEET
 
 # Purple Shoes
@@ -266,22 +266,22 @@
     sprite: Clothing/Shoes/color.rsi
     layers:
     - state: icon
-      color: "#65C65DE65"    
+      color: "#9C0DE1"    
     - state: soles-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#65C65DE65"
+        color: "#9C0DE1"
       - state: soles-inhand-left
       right:
       - state: inhand-right
-        color: "#65C65DE65"
+        color: "#9C0DE1"
       - state: soles-inhand-right
   - type: Clothing
     sprite: Clothing/Shoes/color.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
-        color: "#65C65DE65"
+        color: "#9C0DE1"
       - state: soles-equipped-FEET

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Stunnable;
 using Content.Shared.Throwing;
@@ -38,10 +38,10 @@ public sealed class GunRecoilSystem : EntitySystem
             knockdownTime *= multiplier;
         }
 
-        if (range > 65f && speed > 65f)
+        if (range > 0f && speed > 0f)
             _throwing.TryThrow(args.User, dir * range, speed, animated: false);
 
-        if (knockdownTime <= 65f)
+        if (knockdownTime <= 0f)
             return;
 
         _stun.TryKnockdown(args.User,

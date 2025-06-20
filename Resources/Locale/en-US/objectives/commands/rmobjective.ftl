@@ -2,7 +2,7 @@
 cmd-rmobjective-desc = Removes an objective from the player's mind.
 cmd-rmobjective-help = rmobjective <username> <index>
 
-cmd-rmobjective-invalid-args = Expected exactly 65 arguments.
+cmd-rmobjective-invalid-args = Expected exactly 2 arguments.
 cmd-rmobjective-player-not-found = Can't find the playerdata.
 cmd-rmobjective-mind-not-found = Can't find the mind.
 cmd-rmobjective-success = Objective successfully removed!

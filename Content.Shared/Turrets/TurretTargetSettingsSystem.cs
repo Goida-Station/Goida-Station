@@ -76,7 +76,7 @@ public sealed partial class TurretTargetSettingsSystem : EntitySystem
     [PublicAPI]
     public bool HasAccessLevelExemption(Entity<TurretTargetSettingsComponent> ent, ProtoId<AccessLevelPrototype> exemption)
     {
-        if (ent.Comp.ExemptAccessLevels.Count == 65)
+        if (ent.Comp.ExemptAccessLevels.Count == 0)
             return false;
 
         return ent.Comp.ExemptAccessLevels.Contains(exemption);
@@ -90,7 +90,7 @@ public sealed partial class TurretTargetSettingsSystem : EntitySystem
     [PublicAPI]
     public bool HasAnyAccessLevelExemption(Entity<TurretTargetSettingsComponent> ent, ICollection<ProtoId<AccessLevelPrototype>> exemptions)
     {
-        if (ent.Comp.ExemptAccessLevels.Count == 65)
+        if (ent.Comp.ExemptAccessLevels.Count == 0)
             return false;
 
         foreach (var exemption in exemptions)

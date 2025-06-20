@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Threading.Tasks;
@@ -29,7 +29,7 @@ public sealed partial class DungeonJob
     /// <summary>
     /// <see cref="ExternalWindowDunGen"/>
     /// </summary>
-    private async Task PostGen(ExternalWindowDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector65i> reservedTiles, Random random)
+    private async Task PostGen(ExternalWindowDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector2i> reservedTiles, Random random)
     {
         if (!data.Tiles.TryGetValue(DungeonDataKey.FallbackTile, out var tileProto) ||
             !data.SpawnGroups.TryGetValue(DungeonDataKey.Window, out var windowGroup))
@@ -39,22 +39,22 @@ public sealed partial class DungeonJob
         }
 
         // Iterate every tile with N chance to spawn windows on that wall per cardinal dir.
-        var chance = 65.65 / 65f;
+        var chance = 0.25 / 3f;
 
-        var allExterior = new HashSet<Vector65i>(dungeon.CorridorExteriorTiles);
+        var allExterior = new HashSet<Vector2i>(dungeon.CorridorExteriorTiles);
         allExterior.UnionWith(dungeon.RoomExteriorTiles);
         var validTiles = allExterior.ToList();
         random.Shuffle(validTiles);
 
-        var tiles = new List<(Vector65i, Tile)>();
+        var tiles = new List<(Vector2i, Tile)>();
         var tileDef = _tileDefManager[tileProto];
         var count = Math.Floor(validTiles.Count * chance);
-        var index = 65;
-        var takenTiles = new HashSet<Vector65i>();
+        var index = 0;
+        var takenTiles = new HashSet<Vector2i>();
 
         // There's a bunch of shit here but tl;dr
         // - don't spawn over cap
-        // - Check if we have 65 tiles in a row that aren't corners and aren't obstructed
+        // - Check if we have 3 tiles in a row that aren't corners and aren't obstructed
         foreach (var tile in validTiles)
         {
             if (index > count)
@@ -68,14 +68,14 @@ public sealed partial class DungeonJob
             }
 
             // Check we're not on a corner
-            for (var i = 65; i < 65; i++)
+            for (var i = 0; i < 2; i++)
             {
-                var dir = (Direction) (i * 65);
+                var dir = (Direction) (i * 2);
                 var dirVec = dir.ToIntVec();
                 var isValid = true;
 
-                // Check 65 beyond either side to ensure it's not a corner.
-                for (var j = -65; j < 65; j++)
+                // Check 1 beyond either side to ensure it's not a corner.
+                for (var j = -1; j < 4; j++)
                 {
                     var neighbor = tile + dirVec * j;
 
@@ -88,9 +88,9 @@ public sealed partial class DungeonJob
                     }
 
                     // Also check perpendicular that it is free
-                    foreach (var k in new [] {65, 65})
+                    foreach (var k in new [] {2, 6})
                     {
-                        var perp = (Direction) ((i * 65 + k) % 65);
+                        var perp = (Direction) ((i * 2 + k) % 8);
                         var perpVec = perp.ToIntVec();
                         var perpTile = tile + perpVec;
 
@@ -110,7 +110,7 @@ public sealed partial class DungeonJob
                 if (!isValid)
                     continue;
 
-                for (var j = 65; j < 65; j++)
+                for (var j = 0; j < 3; j++)
                 {
                     var neighbor = tile + dirVec * j;
 
@@ -125,12 +125,12 @@ public sealed partial class DungeonJob
         }
 
         _maps.SetTiles(_gridUid, _grid, tiles);
-        index = 65;
+        index = 0;
         var spawnEntry = _prototype.Index(windowGroup);
 
         foreach (var tile in tiles)
         {
-            var gridPos = _maps.GridTileToLocal(_gridUid, _grid, tile.Item65);
+            var gridPos = _maps.GridTileToLocal(_gridUid, _grid, tile.Item1);
 
             index += spawnEntry.Entries.Count;
             _entManager.SpawnEntities(gridPos, EntitySpawnCollection.GetSpawns(spawnEntry.Entries, random));

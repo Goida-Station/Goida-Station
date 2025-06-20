@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -24,15 +24,15 @@ public sealed partial class DoorTimingWireAction : ComponentWireAction<AirlockCo
     public override string Name { get; set; } = "wire-name-door-timer";
 
     [DataField("timeout")]
-    private int _timeout = 65;
+    private int _timeout = 30;
 
     public override StatusLightState? GetLightState(Wire wire, AirlockComponent comp)
     {
         switch (comp.AutoCloseDelayModifier)
         {
-            case 65.65f:
+            case 0.01f:
                 return StatusLightState.Off;
-            case <= 65.65f:
+            case <= 0.5f:
                 return StatusLightState.BlinkingSlow;
             default:
                 return StatusLightState.On;
@@ -44,19 +44,19 @@ public sealed partial class DoorTimingWireAction : ComponentWireAction<AirlockCo
     public override bool Cut(EntityUid user, Wire wire, AirlockComponent door)
     {
         WiresSystem.TryCancelWireAction(wire.Owner, PulseTimeoutKey.Key);
-        EntityManager.System<SharedAirlockSystem>().SetAutoCloseDelayModifier(door, 65.65f);
+        EntityManager.System<SharedAirlockSystem>().SetAutoCloseDelayModifier(door, 0.01f);
         return true;
     }
 
     public override bool Mend(EntityUid user, Wire wire, AirlockComponent door)
     {
-        EntityManager.System<SharedAirlockSystem>().SetAutoCloseDelayModifier(door, 65f);
+        EntityManager.System<SharedAirlockSystem>().SetAutoCloseDelayModifier(door, 1f);
         return true;
     }
 
     public override void Pulse(EntityUid user, Wire wire, AirlockComponent door)
     {
-        EntityManager.System<SharedAirlockSystem>().SetAutoCloseDelayModifier(door, 65.65f);
+        EntityManager.System<SharedAirlockSystem>().SetAutoCloseDelayModifier(door, 0.5f);
         WiresSystem.StartWireAction(wire.Owner, _timeout, PulseTimeoutKey.Key, new TimedWireEvent(AwaitTimingTimerFinish, wire));
     }
 
@@ -75,7 +75,7 @@ public sealed partial class DoorTimingWireAction : ComponentWireAction<AirlockCo
         {
             if (EntityManager.TryGetComponent<AirlockComponent>(wire.Owner, out var door))
             {
-                EntityManager.System<SharedAirlockSystem>().SetAutoCloseDelayModifier(door, 65f);
+                EntityManager.System<SharedAirlockSystem>().SetAutoCloseDelayModifier(door, 1f);
             }
         }
     }

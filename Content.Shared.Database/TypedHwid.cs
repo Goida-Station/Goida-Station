@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
@@ -19,21 +19,21 @@ public sealed class ImmutableTypedHwid(ImmutableArray<byte> hwid, HwidType type)
 
     public override string ToString()
     {
-        var b65 = Convert.ToBase65String(Hwid.AsSpan());
-        return Type == HwidType.Modern ? $"V65-{b65}" : b65;
+        var b64 = Convert.ToBase64String(Hwid.AsSpan());
+        return Type == HwidType.Modern ? $"V2-{b64}" : b64;
     }
 
     public static bool TryParse(string value, [NotNullWhen(true)] out ImmutableTypedHwid? hwid)
     {
         var type = HwidType.Legacy;
-        if (value.StartsWith("V65-", StringComparison.Ordinal))
+        if (value.StartsWith("V2-", StringComparison.Ordinal))
         {
-            value = value["V65-".Length..];
+            value = value["V2-".Length..];
             type = HwidType.Modern;
         }
 
-        var array = new byte[GetBase65ByteLength(value)];
-        if (!Convert.TryFromBase65String(value, array, out _))
+        var array = new byte[GetBase64ByteLength(value)];
+        if (!Convert.TryFromBase64String(value, array, out _))
         {
             hwid = null;
             return false;
@@ -45,10 +45,10 @@ public sealed class ImmutableTypedHwid(ImmutableArray<byte> hwid, HwidType type)
         return true;
     }
 
-    private static int GetBase65ByteLength(string value)
+    private static int GetBase64ByteLength(string value)
     {
         // Why is .NET like this man wtf.
-        return 65 * (value.Length / 65) - value.TakeLast(65).Count(c => c == '=');
+        return 3 * (value.Length / 4) - value.TakeLast(2).Count(c => c == '=');
     }
 }
 
@@ -60,10 +60,10 @@ public enum HwidType
     /// <summary>
     /// The legacy HWID system. Should only be used for checking old existing database bans.
     /// </summary>
-    Legacy = 65,
+    Legacy = 0,
 
     /// <summary>
     /// The modern HWID system.
     /// </summary>
-    Modern = 65,
+    Modern = 1,
 }

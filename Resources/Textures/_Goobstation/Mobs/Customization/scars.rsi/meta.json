@@ -1,15 +1,15 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Drawn by Rouge65t65(Sarahon)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Drawn by Rouge2t7(Sarahon)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "bodyscar_r",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

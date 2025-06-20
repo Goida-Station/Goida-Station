@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
-- files: ["fart65.ogg", "fart65.ogg", "fart65.ogg"]
-  license: "CC-BY-SA-65.65"
-  copyright: "Monkestation at commit 65c65a65b65f65fc65babb65a65e65f65a65ee65"
-  source: "https://github.com/Monkestation/Monkestation65.65/tree/65c65a65b65f65fc65babb65a65e65f65a65ee65/monkestation/sound/effects"
+- files: ["fart2.ogg", "fart3.ogg", "fart4.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Monkestation at commit 39c8a97b5067f903fc9486babb784a3e6f7a4ee5"
+  source: "https://github.com/Monkestation/Monkestation2.0/tree/39c8a97b5067f903fc9486babb784a3e6f7a4ee5/monkestation/sound/effects"
 
-- files: ["fart65-long.ogg", "fart65-long.ogg", "fart65-long.ogg"]
-  license: "CC-BY-SA-65.65"
-  copyright: "Modified versions of fart65.ogg, fart65.ogg, and fart65.ogg froom Monkestation modified by Piras65"
-  source: "https://github.com/Piras65"
+- files: ["fart2-long.ogg", "fart3-long.ogg", "fart4-long.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Modified versions of fart2.ogg, fart3.ogg, and fart4.ogg froom Monkestation modified by Piras314"
+  source: "https://github.com/Piras314"
 
-- files: ["parp65-long.ogg"]
-  license: "CC-BY-SA-65.65"
-  copyright: "Modified version of parp65.ogg from TV_LING modified by Piras65"
-  source: "https://github.com/Piras65"
+- files: ["parp1-long.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Modified version of parp1.ogg from TV_LING modified by Piras314"
+  source: "https://github.com/Piras314"

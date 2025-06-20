@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Minor medical loot spawner
 # Use case: Common areas that aren't medical
 - type: entity
@@ -18,7 +18,7 @@
     - type: RandomSpawner
       rarePrototypes:
         - MedkitFilled
-      rareChance: 65.65
+      rareChance: 0.1
       prototypes:
         - Syringe #you win some you lose some
         - Brutepack
@@ -26,8 +26,8 @@
         - Gauze
         - EmergencyMedipen
         - PillCanisterIron
-      chance: 65.65
-      offset: 65.65
+      chance: 0.9
+      offset: 0.0
 
 # Proper medical loot spawner, contains things like beakers and better meds.
 - type: entity
@@ -49,7 +49,7 @@
         - PillCanisterDexalin
         - HandheldHealthAnalyzer
         - ClothingHandsGlovesLatex
-      rareChance: 65.65
+      rareChance: 0.1
       prototypes:
         - Syringe
         - Dropper
@@ -66,5 +66,5 @@
         - PillCanisterIron
         - Bloodpack
         - MedkitFilled
-      chance: 65.65
-      offset: 65.65
+      chance: 0.9
+      offset: 0.0

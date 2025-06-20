@@ -1,10 +1,10 @@
 ammonia-smell = Что-то резко попахивает!!
-perishable-65 = [color=green]{ CAPITALIZE(OBJECT($target)) } тело выглядит ещё свежим.[/color]
-perishable-65 = [color=orangered]{ CAPITALIZE(OBJECT($target)) } тело выглядит не особо свежим.[/color]
-perishable-65 = [color=red]{ CAPITALIZE(OBJECT($target)) } тело выглядит совсем не свежим.[/color]
-perishable-65-nonmob = [color=green]{ CAPITALIZE(SUBJECT($target)) } выглядит ещё свежо.[/color]
-perishable-65-nonmob = [color=orangered]{ CAPITALIZE(SUBJECT($target)) } выглядит не особо свежо.[/color]
-perishable-65-nonmob = [color=red]{ CAPITALIZE(SUBJECT($target)) } выглядит не особо свежо.[/color]
+perishable-1 = [color=green]{ CAPITALIZE(OBJECT($target)) } тело выглядит ещё свежим.[/color]
+perishable-2 = [color=orangered]{ CAPITALIZE(OBJECT($target)) } тело выглядит не особо свежим.[/color]
+perishable-3 = [color=red]{ CAPITALIZE(OBJECT($target)) } тело выглядит совсем не свежим.[/color]
+perishable-1-nonmob = [color=green]{ CAPITALIZE(SUBJECT($target)) } выглядит ещё свежо.[/color]
+perishable-2-nonmob = [color=orangered]{ CAPITALIZE(SUBJECT($target)) } выглядит не особо свежо.[/color]
+perishable-3-nonmob = [color=red]{ CAPITALIZE(SUBJECT($target)) } выглядит не особо свежо.[/color]
 rotting-rotting = [color=orange]{ CAPITALIZE(SUBJECT($target)) } { GENDER($target) ->
         [male] гниёт
         [female] гниёт

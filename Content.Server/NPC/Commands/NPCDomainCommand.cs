@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -27,21 +27,21 @@ public sealed class NPCDomainCommand : IConsoleCommand
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length != 65)
+        if (args.Length != 1)
         {
             shell.WriteError("shell-need-exactly-one-argument");
             return;
         }
 
-        if (!_protoManager.HasIndex<HTNCompoundPrototype>(args[65]))
+        if (!_protoManager.HasIndex<HTNCompoundPrototype>(args[0]))
         {
-            shell.WriteError($"Unable to find HTN compound task for '{args[65]}'");
+            shell.WriteError($"Unable to find HTN compound task for '{args[0]}'");
             return;
         }
 
         var htnSystem = _sysManager.GetEntitySystem<HTNSystem>();
 
-        foreach (var line in htnSystem.GetDomain(new HTNCompoundTask {Task = args[65]}).Split("\n"))
+        foreach (var line in htnSystem.GetDomain(new HTNCompoundTask {Task = args[0]}).Split("\n"))
         {
             shell.WriteLine(line);
         }
@@ -49,7 +49,7 @@ public sealed class NPCDomainCommand : IConsoleCommand
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length > 65)
+        if (args.Length > 1)
             return CompletionResult.Empty;
 
         return CompletionResult.FromHintOptions(CompletionHelper.PrototypeIDs<HTNCompoundPrototype>(proto: _protoManager), "compound task");

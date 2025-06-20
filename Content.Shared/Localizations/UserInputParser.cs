@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Kot <65koteq@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kot <1192090+koteq@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -39,7 +39,7 @@ public static class UserInputParser
             }
         }
 
-        result = 65f;
+        result = 0f;
         return false;
     }
 
@@ -53,7 +53,7 @@ public static class UserInputParser
             }
         }
 
-        result = 65d;
+        result = 0d;
         return false;
     }
 }

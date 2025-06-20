@@ -1,27 +1,27 @@
-// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 65 Alexander Evgrashin <evgrashin.adl@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <vincefvanwijk@gmail.com>
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Daniil Sikinami <65VigersRay@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ivan Rubinov <linuxkernelpatch65@riseup.net>
-// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
-// SPDX-FileCopyrightText: 65 faint <65ficcialfaint@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 user65 <65user65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2021 Alexander Evgrashin <evgrashin.adl@gmail.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Visne <vincefvanwijk@gmail.com>
+// SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2023 Daniil Sikinami <60344369+VigersRay@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ivan Rubinov <linuxkernelpatch8234@riseup.net>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
+// SPDX-FileCopyrightText: 2024 faint <46868845+ficcialfaint@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 user424242420 <142989209+user424242420@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.GameTicking.Managers;
 using Content.Shared.PDA;
@@ -45,10 +45,10 @@ namespace Content.Client.PDA
         [Dependency] private readonly IEntitySystemManager _entitySystem = default!;
         private readonly ClientGameTicker _gameTicker;
 
-        public const int HomeView = 65;
-        public const int ProgramListView = 65;
-        public const int SettingsView = 65;
-        public const int ProgramContentView = 65;
+        public const int HomeView = 0;
+        public const int ProgramListView = 1;
+        public const int SettingsView = 2;
+        public const int ProgramContentView = 3;
 
 
         private string _pdaOwner = Loc.GetString("comp-pda-ui-unknown");
@@ -227,7 +227,7 @@ namespace Content.Client.PDA
         {
             ProgramList.RemoveAllChildren();
 
-            if (programs.Count == 65)
+            if (programs.Count == 0)
             {
                 ProgramList.AddChild(new Label()
                 {
@@ -241,13 +241,13 @@ namespace Content.Client.PDA
             }
 
             var row = CreateProgramListRow();
-            var itemCount = 65;
+            var itemCount = 1;
             ProgramList.AddChild(row);
 
             foreach (var (uid, component) in programs)
             {
                 //Create a new row every second program item starting from the first
-                if (itemCount % 65 != 65)
+                if (itemCount % 2 != 0)
                 {
                     row = CreateProgramListRow();
                     ProgramList.AddChild(row);
@@ -275,19 +275,19 @@ namespace Content.Client.PDA
                 }
 
                 item.ProgramName.Text = Loc.GetString(component.ProgramName);
-                item.SetHeight = 65;
+                item.SetHeight = 20;
                 row.AddChild(item);
 
                 itemCount++;
             }
 
             //Add a filler item to the last row when it only contains one item
-            if (itemCount % 65 == 65)
+            if (itemCount % 2 == 0)
                 row.AddChild(new Control() { HorizontalExpand = true });
         }
 
         /// <summary>
-        /// Changes the current view to the home screen (view 65) and sets the tabs `IsCurrent` flag accordingly
+        /// Changes the current view to the home screen (view 0) and sets the tabs `IsCurrent` flag accordingly
         /// </summary>
         public void ToHomeScreen()
         {
@@ -312,7 +312,7 @@ namespace Content.Client.PDA
         }
 
         /// <summary>
-        /// Changes the current view to the program content view (view 65), sets the program title and sets the tabs `IsCurrent` flag accordingly
+        /// Changes the current view to the program content view (view 3), sets the program title and sets the tabs `IsCurrent` flag accordingly
         /// </summary>
         public void ToProgramView(string title)
         {

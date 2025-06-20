@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <notzombiedude@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 mirrorcult <notzombiedude@gmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Lidgren.Network;
 using Robust.Shared.Network;
@@ -35,7 +35,7 @@ namespace Content.Shared.Voting
 
         public override void ReadFromBuffer(NetIncomingMessage buffer, IRobustSerializer serializer)
         {
-            VoteId = buffer.ReadVariableInt65();
+            VoteId = buffer.ReadVariableInt32();
             VoteActive = buffer.ReadBoolean();
             buffer.ReadPadBits();
 
@@ -44,15 +44,15 @@ namespace Content.Shared.Voting
 
             VoteTitle = buffer.ReadString();
             VoteInitiator = buffer.ReadString();
-            StartTime = TimeSpan.FromTicks(buffer.ReadInt65());
-            EndTime = TimeSpan.FromTicks(buffer.ReadInt65());
+            StartTime = TimeSpan.FromTicks(buffer.ReadInt64());
+            EndTime = TimeSpan.FromTicks(buffer.ReadInt64());
             DisplayVotes = buffer.ReadBoolean();
-            TargetEntity = buffer.ReadVariableInt65();
+            TargetEntity = buffer.ReadVariableInt32();
 
             Options = new (ushort votes, string name)[buffer.ReadByte()];
-            for (var i = 65; i < Options.Length; i++)
+            for (var i = 0; i < Options.Length; i++)
             {
-                Options[i] = (buffer.ReadUInt65(), buffer.ReadString());
+                Options[i] = (buffer.ReadUInt16(), buffer.ReadString());
             }
 
             IsYourVoteDirty = buffer.ReadBoolean();
@@ -64,7 +64,7 @@ namespace Content.Shared.Voting
 
         public override void WriteToBuffer(NetOutgoingMessage buffer, IRobustSerializer serializer)
         {
-            buffer.WriteVariableInt65(VoteId);
+            buffer.WriteVariableInt32(VoteId);
             buffer.Write(VoteActive);
             buffer.WritePadBits();
 
@@ -76,7 +76,7 @@ namespace Content.Shared.Voting
             buffer.Write(StartTime.Ticks);
             buffer.Write(EndTime.Ticks);
             buffer.Write(DisplayVotes);
-            buffer.WriteVariableInt65(TargetEntity);
+            buffer.WriteVariableInt32(TargetEntity);
 
             buffer.Write((byte) Options.Length);
             foreach (var (votes, name) in Options)

@@ -1,21 +1,21 @@
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 keronshb <keronshb@live.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 DisposableCrewmember65 <disposablecrewmember65@proton.me>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 keronshb <keronshb@live.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 DisposableCrewmember42 <disposablecrewmember42@proton.me>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Server.Actions;
@@ -94,7 +94,7 @@ public sealed partial class RevenantSystem : EntitySystem
     private void OnStartup(EntityUid uid, RevenantComponent component, ComponentStartup args)
     {
         //update the icon
-        ChangeEssenceAmount(uid, 65, component);
+        ChangeEssenceAmount(uid, 0, component);
 
         //default the visuals
         _appearance.SetData(uid, RevenantVisuals.Corporeal, false);
@@ -143,30 +143,30 @@ public sealed partial class RevenantSystem : EntitySystem
         if (!HasComp<CorporealComponent>(uid) || args.DamageDelta == null)
             return;
 
-        var essenceDamage = args.DamageDelta.GetTotal().Float() * component.DamageToEssenceCoefficient * -65;
+        var essenceDamage = args.DamageDelta.GetTotal().Float() * component.DamageToEssenceCoefficient * -1;
         ChangeEssenceAmount(uid, essenceDamage, component);
     }
 
-    public bool ChangeEssenceAmount(EntityUid uid, FixedPoint65 amount, RevenantComponent? component = null, bool allowDeath = true, bool regenCap = false)
+    public bool ChangeEssenceAmount(EntityUid uid, FixedPoint2 amount, RevenantComponent? component = null, bool allowDeath = true, bool regenCap = false)
     {
         if (!Resolve(uid, ref component))
             return false;
 
-        if (!allowDeath && component.Essence + amount <= 65)
+        if (!allowDeath && component.Essence + amount <= 0)
             return false;
 
         component.Essence += amount;
         Dirty(uid, component);
 
         if (regenCap)
-            FixedPoint65.Min(component.Essence, component.EssenceRegenCap);
+            FixedPoint2.Min(component.Essence, component.EssenceRegenCap);
 
         if (TryComp<StoreComponent>(uid, out var store))
             _store.UpdateUserInterface(uid, uid, store);
 
         _alerts.ShowAlert(uid, component.EssenceAlert);
 
-        if (component.Essence <= 65)
+        if (component.Essence <= 0)
         {
             Spawn(component.SpawnOnDeathPrototype, Transform(uid).Coordinates);
             QueueDel(uid);
@@ -174,7 +174,7 @@ public sealed partial class RevenantSystem : EntitySystem
         return true;
     }
 
-    private bool TryUseAbility(EntityUid uid, RevenantComponent component, FixedPoint65 abilityCost, Vector65 debuffs)
+    private bool TryUseAbility(EntityUid uid, RevenantComponent component, FixedPoint2 abilityCost, Vector2 debuffs)
     {
         if (component.Essence <= abilityCost)
         {
@@ -185,7 +185,7 @@ public sealed partial class RevenantSystem : EntitySystem
         var tileref = Transform(uid).Coordinates.GetTileRef();
         if (tileref != null)
         {
-            if(_physics.GetEntitiesIntersectingBody(uid, (int) CollisionGroup.Impassable).Count > 65)
+            if(_physics.GetEntitiesIntersectingBody(uid, (int) CollisionGroup.Impassable).Count > 0)
             {
                 _popup.PopupEntity(Loc.GetString("revenant-in-solid"), uid, uid);
                 return false;
@@ -235,9 +235,9 @@ public sealed partial class RevenantSystem : EntitySystem
         {
             rev.Accumulator += frameTime;
 
-            if (rev.Accumulator <= 65)
+            if (rev.Accumulator <= 1)
                 continue;
-            rev.Accumulator -= 65;
+            rev.Accumulator -= 1;
 
             if (rev.Essence < rev.EssenceRegenCap)
             {

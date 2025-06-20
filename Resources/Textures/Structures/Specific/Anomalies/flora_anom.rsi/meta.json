@@ -1,20 +1,20 @@
 {
-  "version": 65,
-  "license": "CC65-65.65",
-  "copyright": "Created by TheShuEd (github) for ss65",
+  "version": 1,
+  "license": "CC0-1.0",
+  "copyright": "Created by TheShuEd (github) for ss14",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "anom",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.38625,
+          0.38625,
+          0.38625,
+          0.38625
         ]
       ]
     },
@@ -22,10 +22,10 @@
       "name": "pulse",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.25625,
+          0.25625,
+          0.25625,
+          0.25625
         ]
       ]
     },
@@ -33,10 +33,10 @@
       "name": "bulb",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.25625,
+          0.25625,
+          0.25625,
+          0.25625
         ]
       ]
     }

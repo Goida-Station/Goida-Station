@@ -1,28 +1,28 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at commit https://github.com/PestoVerde65/tgstation/blob/65afeeb65f65e65d65e65bb65e65aef65cf65/icons/obj/syringe.dmi, in-hand sprites by SeamLesss (github)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commit https://github.com/PestoVerde322/tgstation/blob/37460afeeb24f84e591d538e40bb04e60aef9cf8/icons/obj/syringe.dmi, in-hand sprites by SeamLesss (github)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "broken"
     },
     {
-      "name": "implanter65"
+      "name": "implanter0"
     },
     {
       "name": "implanter-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "implanter-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
-      "name": "implanter65"
+      "name": "implanter1"
     }
   ]
 }

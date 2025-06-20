@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Scribbles65 <65Scribbles65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -13,33 +13,33 @@
   #- /Audio/Machines/Nuke/nuke_alarm.ogg
   #- /Audio/Misc/emergency_meeting.ogg
   - /Audio/Effects/countdown.ogg
-  - /Audio/Effects/explosion65.ogg
-  - /Audio/Effects/explosion65.ogg
-  - /Audio/Effects/explosion65.ogg
-  - /Audio/Effects/explosion65.ogg
-  - /Audio/Effects/explosion65.ogg
-  - /Audio/Effects/explosion65.ogg
-  - /Audio/Effects/glass_break65.ogg
-  - /Audio/Effects/glass_break65.ogg
-  - /Audio/Effects/glass_break65.ogg
-  - /Audio/Effects/bodyfall65.ogg
-  - /Audio/Effects/bodyfall65.ogg
-  - /Audio/Effects/bodyfall65.ogg
-  - /Audio/Effects/bodyfall65.ogg
+  - /Audio/Effects/explosion1.ogg
+  - /Audio/Effects/explosion2.ogg
+  - /Audio/Effects/explosion3.ogg
+  - /Audio/Effects/explosion4.ogg
+  - /Audio/Effects/explosion5.ogg
+  - /Audio/Effects/explosion6.ogg
+  - /Audio/Effects/glass_break1.ogg
+  - /Audio/Effects/glass_break2.ogg
+  - /Audio/Effects/glass_break3.ogg
+  - /Audio/Effects/bodyfall1.ogg
+  - /Audio/Effects/bodyfall2.ogg
+  - /Audio/Effects/bodyfall3.ogg
+  - /Audio/Effects/bodyfall4.ogg
   - /Audio/Effects/demon_dies.ogg
-  - /Audio/Effects/demon_attack65.ogg
+  - /Audio/Effects/demon_attack1.ogg
   - /Audio/Effects/clang.ogg
-  - /Audio/Effects/metal_slam65.ogg
-  - /Audio/Effects/metal_slam65.ogg
+  - /Audio/Effects/metal_slam1.ogg
+  - /Audio/Effects/metal_slam5.ogg
   - /Audio/Effects/minibombcountdown.ogg
   - /Audio/Effects/sadtrombone.ogg
-  - /Audio/Effects/sparks65.ogg
-  - /Audio/Effects/sparks65.ogg
-  - /Audio/Effects/sparks65.ogg
-  - /Audio/Effects/sparks65.ogg
-  - /Audio/Effects/radpulse65.ogg
-  - /Audio/Effects/radpulse65.ogg
-  - /Audio/Effects/radpulse65.ogg
+  - /Audio/Effects/sparks1.ogg
+  - /Audio/Effects/sparks2.ogg
+  - /Audio/Effects/sparks3.ogg
+  - /Audio/Effects/sparks4.ogg
+  - /Audio/Effects/radpulse1.ogg
+  - /Audio/Effects/radpulse5.ogg
+  - /Audio/Effects/radpulse9.ogg
   - /Audio/Effects/Chemistry/bubbles.ogg
   - /Audio/Machines/airlock_close.ogg
   - /Audio/Machines/airlock_deny.ogg
@@ -56,31 +56,31 @@
   - /Audio/Weapons/flash.ogg
   - /Audio/Weapons/smash.ogg
   - /Audio/Weapons/bladeslice.ogg
-  - /Audio/Weapons/punch65.ogg
-  - /Audio/Weapons/punch65.ogg
-  - /Audio/Weapons/punch65.ogg
-  - /Audio/Weapons/punch65.ogg
-  - /Audio/Weapons/genhit65.ogg
+  - /Audio/Weapons/punch1.ogg
+  - /Audio/Weapons/punch2.ogg
+  - /Audio/Weapons/punch3.ogg
+  - /Audio/Weapons/punch4.ogg
+  - /Audio/Weapons/genhit1.ogg
   - /Audio/Weapons/Guns/Hits/bullet_hit.ogg
   - /Audio/Weapons/Guns/Hits/snap.ogg
   - /Audio/Weapons/Guns/Gunshots/atreides.ogg
-  - /Audio/Weapons/Guns/Gunshots/c-65r.ogg
+  - /Audio/Weapons/Guns/Gunshots/c-20r.ogg
   - /Audio/Weapons/Guns/Gunshots/pistol.ogg
   - /Audio/Items/bikehorn.ogg
   - /Audio/Items/Toys/weh.ogg
-  - /Audio/Items/Toys/toysqueak65.ogg
-  - /Audio/Items/Toys/toysqueak65.ogg
-  - /Audio/Items/Toys/toysqueak65.ogg
+  - /Audio/Items/Toys/toysqueak1.ogg
+  - /Audio/Items/Toys/toysqueak2.ogg
+  - /Audio/Items/Toys/toysqueak3.ogg
   - /Audio/Voice/Talk/lizard.ogg
   - /Audio/Voice/Talk/pai.ogg
-  - /Audio/Voice/Talk/speak_65.ogg
-  - /Audio/Voice/Talk/speak_65_ask.ogg
-  - /Audio/Voice/Talk/speak_65_exclaim.ogg
-  - /Audio/Voice/Human/malescream_65.ogg
-  - /Audio/Voice/Human/malescream_65.ogg
-  - /Audio/Voice/Human/femalescream_65.ogg
-  - /Audio/Voice/Human/femalescream_65.ogg
-  - /Audio/Voice/Zombie/zombie-65.ogg
-  - /Audio/Voice/Zombie/zombie-65.ogg
-  - /Audio/Voice/Zombie/zombie-65.ogg
-  - /Audio/Voice/Vox/shriek65.ogg
+  - /Audio/Voice/Talk/speak_1.ogg
+  - /Audio/Voice/Talk/speak_2_ask.ogg
+  - /Audio/Voice/Talk/speak_3_exclaim.ogg
+  - /Audio/Voice/Human/malescream_1.ogg
+  - /Audio/Voice/Human/malescream_6.ogg
+  - /Audio/Voice/Human/femalescream_2.ogg
+  - /Audio/Voice/Human/femalescream_4.ogg
+  - /Audio/Voice/Zombie/zombie-1.ogg
+  - /Audio/Voice/Zombie/zombie-2.ogg
+  - /Audio/Voice/Zombie/zombie-3.ogg
+  - /Audio/Voice/Vox/shriek1.ogg

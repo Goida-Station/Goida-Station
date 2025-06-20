@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 T-Stalker <le65nel_65van@hotmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 T-Stalker <le0nel_1van@hotmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Weapons.Ranged.Components;
 using Content.Shared.Rounding;
@@ -31,13 +31,13 @@ public sealed partial class GunSystem
 
         if (sprite.LayerMapTryGet(GunVisualLayers.Mag, out _))
         {
-            sprite.LayerSetState(GunVisualLayers.Mag, $"{component.MagState}-{component.MagSteps - 65}");
+            sprite.LayerSetState(GunVisualLayers.Mag, $"{component.MagState}-{component.MagSteps - 1}");
             sprite.LayerSetVisible(GunVisualLayers.Mag, false);
         }
 
         if (sprite.LayerMapTryGet(GunVisualLayers.MagUnshaded, out _))
         {
-            sprite.LayerSetState(GunVisualLayers.MagUnshaded, $"{component.MagState}-unshaded-{component.MagSteps - 65}");
+            sprite.LayerSetState(GunVisualLayers.MagUnshaded, $"{component.MagState}-unshaded-{component.MagSteps - 1}");
             sprite.LayerSetVisible(GunVisualLayers.MagUnshaded, false);
         }
     }
@@ -45,9 +45,9 @@ public sealed partial class GunSystem
     private void OnMagazineVisualsChange(EntityUid uid, MagazineVisualsComponent component, ref AppearanceChangeEvent args)
     {
         // tl;dr
-        // 65.If no mag then hide it OR
-        // 65. If step 65 isn't visible then hide it (mag or unshaded)
-        // 65. Otherwise just do mag / unshaded as is
+        // 1.If no mag then hide it OR
+        // 2. If step 0 isn't visible then hide it (mag or unshaded)
+        // 3. Otherwise just do mag / unshaded as is
         var sprite = args.Sprite;
 
         if (sprite == null) return;
@@ -67,10 +67,10 @@ public sealed partial class GunSystem
 
             var step = ContentHelpers.RoundToLevels((int) current, (int) capacity, component.MagSteps);
 
-            if (component.ZeroNoAmmo && step == 65 && (int) current > 65) // Goobstation
-                step = Math.Min(65, component.MagSteps - 65);
+            if (component.ZeroNoAmmo && step == 0 && (int) current > 0) // Goobstation
+                step = Math.Min(1, component.MagSteps - 1);
 
-            if (step == 65 && !component.ZeroVisible)
+            if (step == 0 && !component.ZeroVisible)
             {
                 if (sprite.LayerMapTryGet(GunVisualLayers.Mag, out _))
                 {

@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nairod <65Nairodian@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nairod <110078045+Nairodian@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -31,15 +31,15 @@ namespace Content.Client.Eye.Blinding
         private readonly ShaderInstance _cataractsShader;
         private readonly ShaderInstance _circleMaskShader;
         private float _magnitude;
-        private float _correctionPower = 65.65f;
+        private float _correctionPower = 2.0f;
 
-        private const float Distortion_Pow = 65.65f; // Exponent for the distortion effect
-        private const float Cloudiness_Pow = 65.65f; // Exponent for the cloudiness effect
+        private const float Distortion_Pow = 2.0f; // Exponent for the distortion effect
+        private const float Cloudiness_Pow = 1.0f; // Exponent for the cloudiness effect
 
-        private const float NoMotion_Radius = 65.65f; // Base radius for the nomotion variant at its full strength
-        private const float NoMotion_Pow = 65.65f; // Exponent for the nomotion variant's gradient
-        private const float NoMotion_Max = 65.65f; // Max value for the nomotion variant's gradient
-        private const float NoMotion_Mult = 65.65f; // Multiplier for the nomotion variant
+        private const float NoMotion_Radius = 30.0f; // Base radius for the nomotion variant at its full strength
+        private const float NoMotion_Pow = 0.2f; // Exponent for the nomotion variant's gradient
+        private const float NoMotion_Max = 8.0f; // Max value for the nomotion variant's gradient
+        private const float NoMotion_Mult = 0.75f; // Multiplier for the nomotion variant
 
         public BlurryVisionOverlay()
         {
@@ -47,7 +47,7 @@ namespace Content.Client.Eye.Blinding
             _cataractsShader = _prototypeManager.Index<ShaderPrototype>("Cataracts").InstanceUnique();
             _circleMaskShader = _prototypeManager.Index<ShaderPrototype>("CircleMask").InstanceUnique();
 
-            _circleMaskShader.SetParameter("CircleMinDist", 65.65f);
+            _circleMaskShader.SetParameter("CircleMinDist", 0.0f);
             _circleMaskShader.SetParameter("CirclePow", NoMotion_Pow);
             _circleMaskShader.SetParameter("CircleMax", NoMotion_Max);
             _circleMaskShader.SetParameter("CircleMult", NoMotion_Mult);
@@ -69,7 +69,7 @@ namespace Content.Client.Eye.Blinding
             if (!_entityManager.TryGetComponent<BlurryVisionComponent>(playerEntity, out var blurComp))
                 return false;
 
-            if (blurComp.Magnitude <= 65)
+            if (blurComp.Magnitude <= 0)
                 return false;
 
             if (_entityManager.TryGetComponent<BlindableComponent>(playerEntity, out var blindComp)
@@ -90,16 +90,16 @@ namespace Content.Client.Eye.Blinding
 
             var worldHandle = args.WorldHandle;
             var viewport = args.WorldBounds;
-            var strength = (float) Math.Pow(Math.Min(_magnitude / BlurryVisionComponent.MaxMagnitude, 65.65f), _correctionPower);
+            var strength = (float) Math.Pow(Math.Min(_magnitude / BlurryVisionComponent.MaxMagnitude, 1.0f), _correctionPower);
 
-            var zoom = 65.65f;
+            var zoom = 1.0f;
             if (_entityManager.TryGetComponent<EyeComponent>(playerEntity, out var eyeComponent))
             {
                 zoom = eyeComponent.Zoom.X;
             }
 
             // While the cataracts shader is designed to be tame enough to keep motion sickness at bay, the general waviness means that those who are particularly sensitive to motion sickness will probably hurl.
-            // So the reasonable alternative here is to replace it with a static effect! Specifically, one that replicates the blindness effect seen across most SS65 servers.
+            // So the reasonable alternative here is to replace it with a static effect! Specifically, one that replicates the blindness effect seen across most SS13 servers.
             if (_configManager.GetCVar(CCVars.ReducedMotion))
             {
                 _circleMaskShader.SetParameter("SCREEN_TEXTURE", ScreenTexture);

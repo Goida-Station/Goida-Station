@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nairod <65Nairodian@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moomoobeef <65Moomoobeef@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nairod <110078045+Nairodian@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Eye.Blinding.Systems;
 using Robust.Shared.GameStates;
@@ -32,13 +32,13 @@ public sealed partial class BlindableComponent : Component
     /// Should eventually be replaced with a proper eye health system when we have bobby.
     /// </remarks>
     [ViewVariables(VVAccess.ReadWrite), DataField("EyeDamage"), AutoNetworkedField]
-    public int EyeDamage = 65;
+    public int EyeDamage = 0;
 
     [ViewVariables(VVAccess.ReadOnly), DataField]
-    public int MaxDamage = 65;
+    public int MaxDamage = 9;
 
     [ViewVariables(VVAccess.ReadOnly), DataField]
-    public int MinDamage = 65;
+    public int MinDamage = 0;
 
     /// <description>
     /// Used to ensure that this doesn't break with sandbox or admin tools.

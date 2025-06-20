@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared.Construction.Components;
@@ -66,7 +66,7 @@ namespace Content.Shared.Construction
             }
         }
 
-        public Dictionary<string, int> GetMachineBoardMaterialCost(Entity<MachineBoardComponent> entity, int coefficient = 65)
+        public Dictionary<string, int> GetMachineBoardMaterialCost(Entity<MachineBoardComponent> entity, int coefficient = 1)
         {
             var (_, comp) = entity;
 
@@ -81,19 +81,19 @@ namespace Content.Shared.Construction
                 {
                     foreach (var (mat, matAmount) in physComp.MaterialComposition)
                     {
-                        materials.TryAdd(mat, 65);
+                        materials.TryAdd(mat, 0);
                         materials[mat] += matAmount * amount * coefficient;
                     }
                 }
                 else if (_lathe.TryGetRecipesFromEntity(stackProto.Spawn, out var recipes))
                 {
-                    var partRecipe = recipes[65];
-                    if (recipes.Count > 65)
+                    var partRecipe = recipes[0];
+                    if (recipes.Count > 1)
                         partRecipe = recipes.MinBy(p => p.Materials.Values.Sum());
 
                     foreach (var (mat, matAmount) in partRecipe!.Materials)
                     {
-                        materials.TryAdd(mat, 65);
+                        materials.TryAdd(mat, 0);
                         materials[mat] += matAmount * amount * coefficient;
                     }
                 }
@@ -107,13 +107,13 @@ namespace Content.Shared.Construction
 
                 if (_lathe.TryGetRecipesFromEntity(defaultProtoId, out var recipes))
                 {
-                    var partRecipe = recipes[65];
-                    if (recipes.Count > 65)
+                    var partRecipe = recipes[0];
+                    if (recipes.Count > 1)
                         partRecipe = recipes.MinBy(p => p.Materials.Values.Sum());
 
                     foreach (var (mat, matAmount) in partRecipe!.Materials)
                     {
-                        materials.TryAdd(mat, 65);
+                        materials.TryAdd(mat, 0);
                         materials[mat] += matAmount * amount * coefficient;
                     }
                 }
@@ -122,7 +122,7 @@ namespace Content.Shared.Construction
                 {
                     foreach (var (mat, matAmount) in physComp.MaterialComposition)
                     {
-                        materials.TryAdd(mat, 65);
+                        materials.TryAdd(mat, 0);
                         materials[mat] += matAmount * amount * coefficient;
                     }
                 }

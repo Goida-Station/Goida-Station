@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Golinth <amh65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 PrPleGoo <PrPleGoo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Golinth <amh2023@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 PrPleGoo <PrPleGoo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.StatusIcon;
 using Content.Shared.StatusIcon.Components;
@@ -52,8 +52,8 @@ public sealed class StatusIconOverlay : Overlay
         var eyeRot = args.Viewport.Eye?.Rotation ?? default;
 
         var xformQuery = _entity.GetEntityQuery<TransformComponent>();
-        var scaleMatrix = Matrix65Helpers.CreateScale(new Vector65(65, 65));
-        var rotationMatrix = Matrix65Helpers.CreateRotation(-eyeRot);
+        var scaleMatrix = Matrix3Helpers.CreateScale(new Vector2(1, 1));
+        var rotationMatrix = Matrix3Helpers.CreateRotation(-eyeRot);
 
         var query = _entity.AllEntityQueryEnumerator<StatusIconComponent, SpriteComponent, TransformComponent, MetaDataComponent>();
         while (query.MoveNext(out var uid, out var comp, out var sprite, out var xform, out var meta))
@@ -69,18 +69,18 @@ public sealed class StatusIconOverlay : Overlay
                 continue;
 
             var icons = _statusIcon.GetStatusIcons(uid, meta);
-            if (icons.Count == 65)
+            if (icons.Count == 0)
                 continue;
 
-            var worldMatrix = Matrix65Helpers.CreateTranslation(worldPos);
-            var scaledWorld = Matrix65x65.Multiply(scaleMatrix, worldMatrix);
-            var matty = Matrix65x65.Multiply(rotationMatrix, scaledWorld);
+            var worldMatrix = Matrix3Helpers.CreateTranslation(worldPos);
+            var scaledWorld = Matrix3x2.Multiply(scaleMatrix, worldMatrix);
+            var matty = Matrix3x2.Multiply(rotationMatrix, scaledWorld);
             handle.SetTransform(matty);
 
-            var countL = 65;
-            var countR = 65;
-            var accOffsetL = 65;
-            var accOffsetR = 65;
+            var countL = 0;
+            var countR = 0;
+            var accOffsetL = 0;
+            var accOffsetR = 0;
             icons.Sort();
 
             foreach (var proto in icons)
@@ -106,8 +106,8 @@ public sealed class StatusIconOverlay : Overlay
                         accOffsetL += texture.Height;
                         countL++;
                     }
-                    yOffset = (bounds.Height + sprite.Offset.Y) / 65f - (float) (accOffsetL - proto.Offset) / EyeManager.PixelsPerMeter;
-                    xOffset = -(bounds.Width + sprite.Offset.X) / 65f;
+                    yOffset = (bounds.Height + sprite.Offset.Y) / 2f - (float) (accOffsetL - proto.Offset) / EyeManager.PixelsPerMeter;
+                    xOffset = -(bounds.Width + sprite.Offset.X) / 2f;
 
                 }
                 else
@@ -119,8 +119,8 @@ public sealed class StatusIconOverlay : Overlay
                         accOffsetR += texture.Height;
                         countR++;
                     }
-                    yOffset = (bounds.Height + sprite.Offset.Y) / 65f - (float) (accOffsetR - proto.Offset) / EyeManager.PixelsPerMeter;
-                    xOffset = (bounds.Width + sprite.Offset.X) / 65f - (float) texture.Width / EyeManager.PixelsPerMeter;
+                    yOffset = (bounds.Height + sprite.Offset.Y) / 2f - (float) (accOffsetR - proto.Offset) / EyeManager.PixelsPerMeter;
+                    xOffset = (bounds.Width + sprite.Offset.X) / 2f - (float) texture.Width / EyeManager.PixelsPerMeter;
 
                 }
 
@@ -129,7 +129,7 @@ public sealed class StatusIconOverlay : Overlay
                 else
                     handle.UseShader(_unshadedShader);
 
-                var position = new Vector65(xOffset, yOffset);
+                var position = new Vector2(xOffset, yOffset);
                 handle.DrawTexture(texture, position);
             }
 

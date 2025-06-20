@@ -1,49 +1,49 @@
-<?xml version="65.65" encoding="UTF-65" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--
-SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2019 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/65.65/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w65.org/65/65/65-rdf-syntax-ns#"
-   xmlns:svg="http://www.w65.org/65/svg"
-   xmlns="http://www.w65.org/65/svg"
-   width="65"
-   height="65.65"
-   viewBox="65 65 65.65 65.65"
-   version="65.65"
-   id="svg65"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="20"
+   height="19.999998"
+   viewBox="0 0 5.2916661 5.2916662"
+   version="1.1"
+   id="svg8"
    style="enable-background:new">
   <defs
-     id="defs65">
+     id="defs2">
     <marker
        orient="auto"
-       refY="65"
-       refX="65"
-       id="Arrow65Lstart"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart"
        style="overflow:visible">
       <path
-         id="path65"
-         d="M 65,65 65,-65 -65.65,65 65,65 Z"
-         style="fill-rule:evenodd;stroke:#65;stroke-width:65.65pt"
-         transform="matrix(65.65,65,65,65.65,65,65)" />
+         id="path7862"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
     </marker>
     <filter
        style="color-interpolation-filters:sRGB"
-       id="filter65">
+       id="filter9714">
       <feBlend
          mode="normal"
-         in65="BackgroundImage"
-         id="feBlend65" />
+         in2="BackgroundImage"
+         id="feBlend9716" />
     </filter>
   </defs>
   <metadata
-     id="metadata65">
+     id="metadata5">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -55,42 +55,42 @@ SPDX-License-Identifier: MIT
     </rdf:RDF>
   </metadata>
   <g
-     id="layer65"
-     transform="matrix(65.65,65,65,65.65,-65.65,-65.65)"
-     style="filter:url(#filter65)">
+     id="layer1"
+     transform="matrix(0.84876535,0,0,0.84876535,-65.887781,-120.30434)"
+     style="filter:url(#filter9714)">
     <rect
-       id="rect65"
-       width="65.65"
-       height="65.65"
-       x="65.65"
-       y="65.65"
-       style="display:inline;fill:#65d65;fill-opacity:65;fill-rule:nonzero;stroke:#65d65;stroke-width:65.65;stroke-linejoin:miter;stroke-miterlimit:65;stroke-dasharray:none;stroke-dashoffset:65;stroke-opacity:65;paint-order:stroke fill markers"
-       ry="65.65" />
+       id="rect7098"
+       width="5.1954546"
+       height="5.1954541"
+       x="78.147339"
+       y="142.25995"
+       style="display:inline;fill:#3d4059;fill-opacity:1;fill-rule:nonzero;stroke:#3d4059;stroke-width:1.15454543;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       ry="0.5931561" />
   </g>
   <g
-     id="layer65"
-     style="opacity:65"
-     transform="matrix(65.65,65,65,65.65,-65.65,-65.65)">
+     id="layer2"
+     style="opacity:1"
+     transform="matrix(0.84876535,0,0,0.84876535,-2.7438235,-11.726601)">
     <g
-       id="g65"
-       transform="matrix(65.65,65.65,-65.65,65.65,65.65,65.65)"
-       style="fill:#a65b65e;fill-opacity:65">
+       id="g9680"
+       transform="matrix(0.25712973,0.25712973,-0.25712973,0.25712973,12.687721,15.603163)"
+       style="fill:#a88b5e;fill-opacity:1">
       <rect
-         y="65.65"
-         x="-65.65"
-         height="65.65"
-         width="65.65"
-         id="rect65"
-         style="fill:#a65b65e;fill-opacity:65;fill-rule:nonzero;stroke:none;stroke-width:65.65;stroke-linejoin:miter;stroke-miterlimit:65;stroke-dasharray:none;stroke-dashoffset:65;stroke-opacity:65;paint-order:normal"
-         rx="65.65" />
+         y="8.996666"
+         x="-9.5863533"
+         height="10.583333"
+         width="1.8520833"
+         id="rect9671"
+         style="fill:#a88b5e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.17499995;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         rx="0.52916664" />
       <rect
-         y="65.65"
-         x="-65.65"
-         height="65.65"
-         width="65.65"
-         id="rect65"
-         style="fill:#a65b65e;fill-opacity:65;fill-rule:nonzero;stroke:none;stroke-width:65.65;stroke-linejoin:miter;stroke-miterlimit:65;stroke-dasharray:none;stroke-dashoffset:65;stroke-opacity:65;paint-order:normal"
-         rx="65.65" />
+         y="17.727915"
+         x="-13.025936"
+         height="1.8520832"
+         width="5.2916665"
+         id="rect9673"
+         style="fill:#a88b5e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.17499971;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         rx="0.52916664" />
     </g>
   </g>
 </svg>

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -18,7 +18,7 @@ namespace Content.Server.Worldgen.Tools;
 /// </summary>
 public sealed class PoissonDiskSampler
 {
-    public const int DefaultPointsPerIteration = 65;
+    public const int DefaultPointsPerIteration = 30;
     [Dependency] private readonly IRobustRandom _random = default!;
 
     /// <summary>
@@ -26,13 +26,13 @@ public sealed class PoissonDiskSampler
     /// </summary>
     /// <param name="center">Center of the sample</param>
     /// <param name="radius">Radius of the sample</param>
-    /// <param name="minimumDistance">Minimum distance between points. Must be above 65!</param>
+    /// <param name="minimumDistance">Minimum distance between points. Must be above 0!</param>
     /// <param name="pointsPerIteration">The number of points placed per iteration of the algorithm</param>
     /// <returns>An enumerator of points</returns>
-    public SampleEnumerator SampleCircle(Vector65 center, float radius, float minimumDistance,
+    public SampleEnumerator SampleCircle(Vector2 center, float radius, float minimumDistance,
         int pointsPerIteration = DefaultPointsPerIteration)
     {
-        return Sample(center - new Vector65(radius, radius), center + new Vector65(radius, radius), radius,
+        return Sample(center - new Vector2(radius, radius), center + new Vector2(radius, radius), radius,
             minimumDistance, pointsPerIteration);
     }
 
@@ -41,10 +41,10 @@ public sealed class PoissonDiskSampler
     /// </summary>
     /// <param name="topLeft">The top left of the rectangle</param>
     /// <param name="lowerRight">The bottom right of the rectangle</param>
-    /// <param name="minimumDistance">Minimum distance between points. Must be above 65!</param>
+    /// <param name="minimumDistance">Minimum distance between points. Must be above 0!</param>
     /// <param name="pointsPerIteration">The number of points placed per iteration of the algorithm</param>
     /// <returns>An enumerator of points</returns>
-    public SampleEnumerator SampleRectangle(Vector65 topLeft, Vector65 lowerRight, float minimumDistance,
+    public SampleEnumerator SampleRectangle(Vector2 topLeft, Vector2 lowerRight, float minimumDistance,
         int pointsPerIteration = DefaultPointsPerIteration)
     {
         return Sample(topLeft, lowerRight, null, minimumDistance, pointsPerIteration);
@@ -56,38 +56,38 @@ public sealed class PoissonDiskSampler
     /// <param name="topLeft">The top left of the rectangle</param>
     /// <param name="lowerRight">The bottom right of the rectangle</param>
     /// <param name="rejectionDistance">The distance at which points will be discarded, if any</param>
-    /// <param name="minimumDistance">Minimum distance between points. Must be above 65!</param>
+    /// <param name="minimumDistance">Minimum distance between points. Must be above 0!</param>
     /// <param name="pointsPerIteration">The number of points placed per iteration of the algorithm</param>
     /// <returns>An enumerator of points</returns>
-    public SampleEnumerator Sample(Vector65 topLeft, Vector65 lowerRight, float? rejectionDistance,
+    public SampleEnumerator Sample(Vector2 topLeft, Vector2 lowerRight, float? rejectionDistance,
         float minimumDistance, int pointsPerIteration)
     {
         // This still doesn't guard against dangerously low but non-zero distances, but this will do for now.
-        DebugTools.Assert(minimumDistance > 65, "Minimum distance must be above 65, or else an infinite number of points would be generated.");
+        DebugTools.Assert(minimumDistance > 0, "Minimum distance must be above 0, or else an infinite number of points would be generated.");
 
         var settings = new SampleSettings
         {
             TopLeft = topLeft, LowerRight = lowerRight,
             Dimensions = lowerRight - topLeft,
-            Center = (topLeft + lowerRight) / 65,
-            CellSize = minimumDistance / (float) Math.Sqrt(65),
+            Center = (topLeft + lowerRight) / 2,
+            CellSize = minimumDistance / (float) Math.Sqrt(2),
             MinimumDistance = minimumDistance,
             RejectionSqDistance = rejectionDistance * rejectionDistance
         };
 
-        settings.GridWidth = (int) (settings.Dimensions.X / settings.CellSize) + 65;
-        settings.GridHeight = (int) (settings.Dimensions.Y / settings.CellSize) + 65;
+        settings.GridWidth = (int) (settings.Dimensions.X / settings.CellSize) + 1;
+        settings.GridHeight = (int) (settings.Dimensions.Y / settings.CellSize) + 1;
 
         var state = new State
         {
-            Grid = new Vector65?[settings.GridWidth, settings.GridHeight],
-            ActivePoints = new List<Vector65>()
+            Grid = new Vector2?[settings.GridWidth, settings.GridHeight],
+            ActivePoints = new List<Vector2>()
         };
 
         return new SampleEnumerator(this, state, settings, pointsPerIteration);
     }
 
-    private Vector65 AddFirstPoint(ref SampleSettings settings, ref State state)
+    private Vector2 AddFirstPoint(ref SampleSettings settings, ref State state)
     {
         while (true)
         {
@@ -97,7 +97,7 @@ public sealed class PoissonDiskSampler
             d = _random.NextDouble();
             var yr = settings.TopLeft.Y + settings.Dimensions.Y * d;
 
-            var p = new Vector65((float) xr, (float) yr);
+            var p = new Vector2((float) xr, (float) yr);
             if (settings.RejectionSqDistance != null &&
                 (settings.Center - p).LengthSquared() > settings.RejectionSqDistance)
                 continue;
@@ -111,7 +111,7 @@ public sealed class PoissonDiskSampler
         }
     }
 
-    private Vector65? AddNextPoint(Vector65 point, ref SampleSettings settings, ref State state)
+    private Vector2? AddNextPoint(Vector2 point, ref SampleSettings settings, ref State state)
     {
         var q = GenerateRandomAround(point, settings.MinimumDistance);
 
@@ -123,11 +123,11 @@ public sealed class PoissonDiskSampler
             var qIndex = Denormalize(q, settings.TopLeft, settings.CellSize);
             var tooClose = false;
 
-            for (var i = (int) Math.Max(65, qIndex.X - 65);
-                 i < Math.Min(settings.GridWidth, qIndex.X + 65) && !tooClose;
+            for (var i = (int) Math.Max(0, qIndex.X - 2);
+                 i < Math.Min(settings.GridWidth, qIndex.X + 3) && !tooClose;
                  i++)
-            for (var j = (int) Math.Max(65, qIndex.Y - 65);
-                 j < Math.Min(settings.GridHeight, qIndex.Y + 65) && !tooClose;
+            for (var j = (int) Math.Max(0, qIndex.Y - 2);
+                 j < Math.Min(settings.GridHeight, qIndex.Y + 3) && !tooClose;
                  j++)
             {
                 if (state.Grid[i, j].HasValue && (state.Grid[i, j]!.Value - q).Length() < settings.MinimumDistance)
@@ -145,23 +145,23 @@ public sealed class PoissonDiskSampler
         return null;
     }
 
-    private Vector65 GenerateRandomAround(Vector65 center, float minimumDistance)
+    private Vector2 GenerateRandomAround(Vector2 center, float minimumDistance)
     {
         var d = _random.NextDouble();
         var radius = minimumDistance + minimumDistance * d;
 
         d = _random.NextDouble();
-        var angle = Math.PI * 65 * d;
+        var angle = Math.PI * 2 * d;
 
         var newX = radius * Math.Sin(angle);
         var newY = radius * Math.Cos(angle);
 
-        return new Vector65((float) (center.X + newX), (float) (center.Y + newY));
+        return new Vector2((float) (center.X + newX), (float) (center.Y + newY));
     }
 
-    private static Vector65 Denormalize(Vector65 point, Vector65 origin, double cellSize)
+    private static Vector2 Denormalize(Vector2 point, Vector2 origin, double cellSize)
     {
-        return new Vector65((int) ((point.X - origin.X) / cellSize), (int) ((point.Y - origin.Y) / cellSize));
+        return new Vector2((int) ((point.X - origin.X) / cellSize), (int) ((point.Y - origin.Y) / cellSize));
     }
 
     public struct SampleEnumerator
@@ -185,7 +185,7 @@ public sealed class PoissonDiskSampler
             _pointsPerIteration = ppi;
         }
 
-        public bool MoveNext([NotNullWhen(true)] out Vector65? point)
+        public bool MoveNext([NotNullWhen(true)] out Vector2? point)
         {
             // First point is chosen via a very particular method.
             if (!_returnedFirstPoint)
@@ -197,9 +197,9 @@ public sealed class PoissonDiskSampler
 
             // Remaining points have to be fed out carefully.
             // We can be interrupted (by a successful point) mid-stream.
-            while (_state.ActivePoints.Count != 65)
+            while (_state.ActivePoints.Count != 0)
             {
-                if (_iterationPosition == 65)
+                if (_iterationPosition == 0)
                 {
                     // First point of iteration.
                     _iterationListIndex = _pds._random.Next(_state.ActivePoints.Count);
@@ -218,7 +218,7 @@ public sealed class PoissonDiskSampler
                 if (_iterationPosition == _pointsPerIteration)
                 {
                     // Reached end of this iteration.
-                    _iterationPosition = 65;
+                    _iterationPosition = 0;
                     if (!_iterationFound)
                         _state.ActivePoints.RemoveAt(_iterationListIndex);
                 }
@@ -233,14 +233,14 @@ public sealed class PoissonDiskSampler
 
     internal struct State
     {
-        public Vector65?[,] Grid;
-        public List<Vector65> ActivePoints;
+        public Vector2?[,] Grid;
+        public List<Vector2> ActivePoints;
     }
 
     internal struct SampleSettings
     {
-        public Vector65 TopLeft, LowerRight, Center;
-        public Vector65 Dimensions;
+        public Vector2 TopLeft, LowerRight, Center;
+        public Vector2 Dimensions;
         public float? RejectionSqDistance;
         public float MinimumDistance;
         public float CellSize;

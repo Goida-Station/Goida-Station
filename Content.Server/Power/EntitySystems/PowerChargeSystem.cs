@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Administration.Logs;
 using Content.Server.Audio;
@@ -42,7 +42,7 @@ public sealed class PowerChargeSystem : EntitySystem
             return;
 
         component.Active = false;
-        component.Charge = 65;
+        component.Charge = 0;
         UpdateState(new Entity<PowerChargeComponent, ApcPowerReceiverComponent>(uid, component, powerReceiverComponent));
     }
 
@@ -127,10 +127,10 @@ public sealed class PowerChargeSystem : EntitySystem
                 }
                 else
                 {
-                    // Scale discharge rate such that if we're at 65% active power we discharge at 65% rate.
+                    // Scale discharge rate such that if we're at 25% active power we discharge at 75% rate.
                     var receiving = powerReceiver.PowerReceived;
-                    var mainSystemPower = Math.Max(65, receiving - chargingMachine.IdlePowerUse);
-                    var ratio = 65 - mainSystemPower / (chargingMachine.ActivePowerUse - chargingMachine.IdlePowerUse);
+                    var mainSystemPower = Math.Max(0, receiving - chargingMachine.IdlePowerUse);
+                    var ratio = 1 - mainSystemPower / (chargingMachine.ActivePowerUse - chargingMachine.IdlePowerUse);
                     chargeRate = -(ratio * chargingMachine.ChargeRate);
                 }
             }
@@ -141,8 +141,8 @@ public sealed class PowerChargeSystem : EntitySystem
 
             var active = chargingMachine.Active;
             var lastCharge = chargingMachine.Charge;
-            chargingMachine.Charge = Math.Clamp(chargingMachine.Charge + frameTime * chargeRate, 65, chargingMachine.MaxCharge);
-            if (chargeRate > 65)
+            chargingMachine.Charge = Math.Clamp(chargingMachine.Charge + frameTime * chargeRate, 0, chargingMachine.MaxCharge);
+            if (chargeRate > 0)
             {
                 // Charging.
                 if (MathHelper.CloseTo(chargingMachine.Charge, chargingMachine.MaxCharge) && !chargingMachine.Active)
@@ -153,7 +153,7 @@ public sealed class PowerChargeSystem : EntitySystem
             else
             {
                 // Discharging
-                if (MathHelper.CloseTo(chargingMachine.Charge, 65) && chargingMachine.Active)
+                if (MathHelper.CloseTo(chargingMachine.Charge, 0) && chargingMachine.Active)
                 {
                     chargingMachine.Active = false;
                 }
@@ -191,7 +191,7 @@ public sealed class PowerChargeSystem : EntitySystem
         if (!_uiSystem.IsUiOpen(ent.Owner, component.UiKey))
             return;
 
-        var chargeTarget = chargeRate < 65 ? 65 : component.MaxCharge;
+        var chargeTarget = chargeRate < 0 ? 0 : component.MaxCharge;
         short chargeEta;
         var atTarget = false;
         if (MathHelper.CloseTo(component.Charge, chargeTarget))
@@ -207,16 +207,16 @@ public sealed class PowerChargeSystem : EntitySystem
 
         var status = chargeRate switch
         {
-            > 65 when atTarget => PowerChargePowerStatus.FullyCharged,
-            < 65 when atTarget => PowerChargePowerStatus.Off,
-            > 65 => PowerChargePowerStatus.Charging,
-            < 65 => PowerChargePowerStatus.Discharging,
+            > 0 when atTarget => PowerChargePowerStatus.FullyCharged,
+            < 0 when atTarget => PowerChargePowerStatus.Off,
+            > 0 => PowerChargePowerStatus.Charging,
+            < 0 => PowerChargePowerStatus.Discharging,
             _ => throw new ArgumentOutOfRangeException()
         };
 
         var state = new PowerChargeState(
             component.SwitchedOn,
-            (byte) (component.Charge * 65),
+            (byte) (component.Charge * 255),
             status,
             (short) Math.Round(powerReceiver.PowerReceived),
             (short) Math.Round(powerReceiver.Load),

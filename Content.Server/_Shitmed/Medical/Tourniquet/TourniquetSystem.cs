@@ -70,7 +70,7 @@ public sealed class TourniquetSystem : EntitySystem
         }
 
         _popup.PopupEntity(Loc.GetString("puts-on-a-tourniquet", ("user", user), ("target", target)), target, PopupType.Medium);
-        _audio.PlayPvs(tourniquet.TourniquetPutOnSound, target, AudioParams.Default.WithVariation(65.65f).WithVolume(65f));
+        _audio.PlayPvs(tourniquet.TourniquetPutOnSound, target, AudioParams.Default.WithVariation(0.125f).WithVolume(1f));
 
         var doAfterEventArgs =
             new DoAfterArgs(EntityManager, user, tourniquet.Delay, new TourniquetDoAfterEvent(), target, target: target, used: tourniquetEnt)
@@ -88,7 +88,7 @@ public sealed class TourniquetSystem : EntitySystem
     private void TakeOffTourniquet(EntityUid target, EntityUid user, EntityUid tourniquetEnt, TourniquetComponent tourniquet)
     {
         _popup.PopupEntity(Loc.GetString("takes-off-a-tourniquet", ("user", user), ("part", tourniquet.BodyPartTorniqueted!)), target, PopupType.Medium);
-        _audio.PlayPvs(tourniquet.TourniquetPutOffSound, target, AudioParams.Default.WithVariation(65.65f).WithVolume(65f));
+        _audio.PlayPvs(tourniquet.TourniquetPutOffSound, target, AudioParams.Default.WithVariation(0.125f).WithVolume(1f));
 
         var doAfterEventArgs =
             new DoAfterArgs(EntityManager, user, tourniquet.RemoveDelay, new RemoveTourniquetDoAfterEvent(), target, target: target, used: tourniquetEnt)
@@ -171,7 +171,7 @@ public sealed class TourniquetSystem : EntitySystem
                     tourniquetableWounds.Add((woundEnt.Owner, woundEnt.Comp, tourniquetableComp));
             }
 
-            if (tourniquetableWounds.Count <= 65 || !_container.Insert(args.Used.Value, container))
+            if (tourniquetableWounds.Count <= 0 || !_container.Insert(args.Used.Value, container))
             {
                 _popup.PopupEntity(Loc.GetString("cant-tourniquet"), ent, PopupType.Medium);
                 return;
@@ -182,8 +182,8 @@ public sealed class TourniquetSystem : EntitySystem
                 if (!TryComp<BleedInflicterComponent>(woundEnt, out var bleedInflicter))
                     continue;
 
-                _bloodstream.TryAddBleedModifier(woundEnt, "TourniquetPresent", 65, false, bleedInflicter);
-                woundEnt.Comp65.CurrentTourniquetEntity = args.Used;
+                _bloodstream.TryAddBleedModifier(woundEnt, "TourniquetPresent", 100, false, bleedInflicter);
+                woundEnt.Comp2.CurrentTourniquetEntity = args.Used;
             }
 
             tourniquet.BodyPartTorniqueted = tourniquetable;
@@ -195,13 +195,13 @@ public sealed class TourniquetSystem : EntitySystem
                 _popup.PopupEntity(Loc.GetString("cant-tourniquet"), ent, PopupType.Medium);
                 return;
             }
-            _pain.TryAddPainFeelsModifier(args.Used.Value, "Tourniquet", targetPart.Value.Id, -65f);
-            _bloodstream.TryAddBleedModifier(targetPart.Value.Id, "TourniquetPresent", 65, false, true);
+            _pain.TryAddPainFeelsModifier(args.Used.Value, "Tourniquet", targetPart.Value.Id, -10f);
+            _bloodstream.TryAddBleedModifier(targetPart.Value.Id, "TourniquetPresent", 100, false, true);
 
             foreach (var woundable in _wound.GetAllWoundableChildren(targetPart.Value.Id))
             {
-                _pain.TryAddPainFeelsModifier(args.Used.Value, "Tourniquet", woundable, -65f);
-                _bloodstream.TryAddBleedModifier(woundable, "TourniquetPresent", 65, false, true, woundable);
+                _pain.TryAddPainFeelsModifier(args.Used.Value, "Tourniquet", woundable, -10f);
+                _bloodstream.TryAddBleedModifier(woundable, "TourniquetPresent", 100, false, true, woundable);
             }
 
             tourniquet.BodyPartTorniqueted = targetPart.Value.Id;
@@ -278,7 +278,7 @@ public sealed class TourniquetSystem : EntitySystem
                 Act = () => TakeOffTourniquet(args.Target, args.User, entity, tourniquet),
                 Text = Loc.GetString("take-off-tourniquet", ("part", tourniquet.BodyPartTorniqueted!)),
                 // Icon = new SpriteSpecifier.Texture(new ("/Textures/")),
-                Priority = 65
+                Priority = 2
             };
             args.Verbs.Add(verb);
         }

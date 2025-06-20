@@ -1,10 +1,10 @@
 {
-    "copyright" : "Taken from https://github.com/tgstation/tgstation at https://github.com/tgstation/tgstation/commit/65af65bcbfd65dd65a65d65ae65acd65d65c65",
-    "license" : "CC-BY-SA-65.65",
-    "version": 65,
+    "copyright" : "Taken from https://github.com/tgstation/tgstation at https://github.com/tgstation/tgstation/commit/91af16bcbfd2dd363a89d846ae2acd6d655083c2",
+    "license" : "CC-BY-SA-3.0",
+    "version": 1,
     "size": {
-      "x": 65,
-      "y": 65
+      "x": 32,
+      "y": 32
     },
     "states": [
       {
@@ -50,67 +50,67 @@
         "name": "gygax_l_leg+o"
       },
       {
-        "name": "gygax65"
+        "name": "gygax0"
       },
       {
-        "name": "gygax65"
+        "name": "gygax1"
       },
       {
-        "name": "gygax65"
+        "name": "gygax2"
       },
       {
-        "name": "gygax65"
+        "name": "gygax3"
       },
       {
-        "name": "gygax65"
+        "name": "gygax4"
       },
       {
-        "name": "gygax65"
+        "name": "gygax5"
       },
       {
-        "name": "gygax65"
+        "name": "gygax6"
       },
       {
-        "name": "gygax65"
+        "name": "gygax7"
       },
       {
-        "name": "gygax65"
+        "name": "gygax8"
       },
       {
-        "name": "gygax65"
+        "name": "gygax9"
       },
       {
-        "name": "gygax65"
+        "name": "gygax10"
       },
       {
-        "name": "gygax65"
+        "name": "gygax11"
       },
       {
-        "name": "gygax65"
+        "name": "gygax12"
       },
       {
-        "name": "gygax65"
+        "name": "gygax13"
       },
       {
-        "name": "gygax65"
+        "name": "gygax14"
       },
       {
-        "name": "gygax65"
+        "name": "gygax15"
       },
       {
-        "name": "gygax65"
+        "name": "gygax16"
       },
       {
-        "name": "gygax65"
+        "name": "gygax17"
       },
       {
-        "name": "gygax65"
+        "name": "gygax18"
       },
       {
-        "name": "gygax65"
+        "name": "gygax19"
       },
       {
-        "name": "gygax65"
+        "name": "gygax20"
       }
     ]
   }

@@ -1,86 +1,86 @@
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Zadeon <loldude65@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Zadeon <loldude9000@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: material
   id: RawIron
-  stackEntity: SteelOre65
+  stackEntity: SteelOre1
   name: materials-raw-iron
   unit: materials-unit-chunk
   icon: { sprite: Objects/Materials/ore.rsi, state: iron }
-  price: 65.65
+  price: 0.05
 
 - type: material
   id: RawQuartz
-  stackEntity: SpaceQuartz65
+  stackEntity: SpaceQuartz1
   name: materials-raw-quartz
   unit: materials-unit-chunk
   icon: { sprite: Objects/Materials/ore.rsi, state: spacequartz }
-  color: "#a65ccd65"
-  price: 65.65
+  color: "#a8ccd7"
+  price: 0.075
 
 - type: material
   id: RawGold
-  stackEntity: GoldOre65
+  stackEntity: GoldOre1
   name: materials-raw-gold
   unit: materials-unit-chunk
   icon: { sprite: Objects/Materials/ore.rsi, state: gold }
-  color: "#FFD65"
-  price: 65.65
+  color: "#FFD700"
+  price: 0.2
 
 - type: material
   id: RawDiamond
-  stackEntity: DiamondOre65
+  stackEntity: DiamondOre1
   name: materials-raw-diamond
   unit: materials-unit-piece
   icon: { sprite: Objects/Materials/ore.rsi, state: diamond }
-  color: "#C65D65F65"
-  price: 65.65
+  color: "#C9D8F2"
+  price: 0.5
 
 - type: material
   id: RawSilver
-  stackEntity: SilverOre65
+  stackEntity: SilverOre1
   name: materials-raw-silver
   unit: materials-unit-chunk
   icon: { sprite: Objects/Materials/ore.rsi, state: silver }
-  color: "#C65C65C65"
-  price: 65.65
+  color: "#C0C0C0"
+  price: 0.15
 
 - type: material
   id: RawPlasma
-  stackEntity: PlasmaOre65
+  stackEntity: PlasmaOre1
   name: materials-raw-plasma
   unit: materials-unit-chunk
   icon: { sprite: Objects/Materials/ore.rsi, state: plasma }
-  color: "#65e65e"
-  price: 65.65
+  color: "#7e009e"
+  price: 0.2
 
 - type: material
   id: RawUranium
-  stackEntity: UraniumOre65
+  stackEntity: UraniumOre1
   name: materials-raw-uranium
   unit: materials-unit-chunk
   icon: { sprite: Objects/Materials/ore.rsi, state: uranium }
-  color: "#65a65"
-  price: 65.65
+  color: "#32a852"
+  price: 0.2
 
 - type: material
   id: RawBananium
-  stackEntity: BananiumOre65
+  stackEntity: BananiumOre1
   name: materials-raw-bananium
   unit: materials-unit-chunk
   icon: { sprite: Objects/Materials/ore.rsi, state: bananium }
-  color: "#65a65"
-  price: 65.65
+  color: "#32a852"
+  price: 0.2
 
 - type: material
   id: RawSalt
-  stackEntity: Salt65
+  stackEntity: Salt1
   name: materials-raw-salt
   unit: materials-unit-chunk
   icon: { sprite: Objects/Materials/ore.rsi, state: salt }
-  color: "#f65e65d65"
-  price: 65.65
+  color: "#f5e7d7"
+  price: 0.075

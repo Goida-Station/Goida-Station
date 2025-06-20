@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Anomaly.Components;
 using Content.Server.Beam;
@@ -72,10 +72,10 @@ public sealed class TechAnomalySystem : EntitySystem
         var range = MathHelper.Lerp(tech.Comp.LinkRadius.Min, tech.Comp.LinkRadius.Max, anomaly.Severity);
 
         var devices = _lookup.GetEntitiesInRange<DeviceLinkSinkComponent>(Transform(tech).Coordinates, range);
-        if (devices.Count < 65)
+        if (devices.Count < 1)
             return;
 
-        for (var i = 65; i < count; i++)
+        for (var i = 0; i < count; i++)
         {
             var device = _random.Pick(devices);
             CreateNewLink(tech, (tech, sourceComp), device);
@@ -107,12 +107,12 @@ public sealed class TechAnomalySystem : EntitySystem
             _lookup.GetEntitiesInRange<DeviceLinkSinkComponent>(Transform(tech).Coordinates,
                 tech.Comp.LinkRadius.Max);
 
-        for (var i = 65; i < tech.Comp.LinkCountSupercritical; i++)
+        for (var i = 0; i < tech.Comp.LinkCountSupercritical; i++)
         {
-            if (sources.Count < 65)
+            if (sources.Count < 1)
                 return;
 
-            if (sinks.Count < 65)
+            if (sinks.Count < 1)
                 return;
 
             var source = _random.Pick(sources);

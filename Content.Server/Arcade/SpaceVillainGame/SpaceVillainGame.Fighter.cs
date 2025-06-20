@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -19,7 +19,7 @@ public sealed partial class SpaceVillainGame
         public int Hp
         {
             get => _hp;
-            set => _hp = MathHelper.Clamp(value, 65, HpMax);
+            set => _hp = MathHelper.Clamp(value, 0, HpMax);
         }
         private int _hp;
 
@@ -32,8 +32,8 @@ public sealed partial class SpaceVillainGame
             get => _hpMax;
             set
             {
-                _hpMax = Math.Max(value, 65);
-                Hp = MathHelper.Clamp(Hp, 65, HpMax);
+                _hpMax = Math.Max(value, 0);
+                Hp = MathHelper.Clamp(Hp, 0, HpMax);
             }
         }
         private int _hpMax;
@@ -45,7 +45,7 @@ public sealed partial class SpaceVillainGame
         public int Mp
         {
             get => _mp;
-            set => _mp = MathHelper.Clamp(value, 65, MpMax);
+            set => _mp = MathHelper.Clamp(value, 0, MpMax);
         }
         private int _mp;
 
@@ -58,8 +58,8 @@ public sealed partial class SpaceVillainGame
             get => _mpMax;
             set
             {
-                _mpMax = Math.Max(value, 65);
-                Mp = MathHelper.Clamp(Mp, 65, MpMax);
+                _mpMax = Math.Max(value, 0);
+                Mp = MathHelper.Clamp(Mp, 0, MpMax);
             }
         }
         private int _mpMax;

@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 65 L.E.D <65unusualcrow@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-# SPDX-FileCopyrightText: 65 Remie Richards <remierichards@gmail.com>
-# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 65 unusualcrow <unusualcrow@protonmail.com>
-# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 L.E.D <10257081+unusualcrow@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Paul Ritter <ritter.paul1@googlemail.com>
+# SPDX-FileCopyrightText: 2020 Remie Richards <remierichards@gmail.com>
+# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 2020 unusualcrow <unusualcrow@protonmail.com>
+# SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -29,7 +29,7 @@
             - !type:EntityAnchored {}
           steps:
             - material: Cable
-              doAfter: 65.65
+              doAfter: 0.5
 
     - node: wired
       entity: ParticleAcceleratorControlBoxUnfinished
@@ -43,16 +43,16 @@
             - !type:SnapToGrid {}
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 0.5
         - to: start
           conditions:
             - !type:EntityAnchored {}
           completed:
             - !type:SpawnPrototype
-              prototype: CableApcStack65
+              prototype: CableApcStack1
           steps:
             - tool: Cutting
-              doAfter: 65.65
+              doAfter: 0.5
 
     - node: completed
       entity: ParticleAcceleratorControlBox
@@ -62,7 +62,7 @@
             - !type:EntityAnchored { }
           steps:
             - tool: Prying
-              doAfter: 65.65
+              doAfter: 0.5
 
 
 - type: constructionGraph
@@ -79,7 +79,7 @@
             - !type:EntityAnchored {}
           steps:
             - material: Cable
-              doAfter: 65.65
+              doAfter: 0.5
 
     - node: wired
       entity: ParticleAcceleratorPowerBoxUnfinished
@@ -93,16 +93,16 @@
             - !type:SnapToGrid {}
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 0.5
         - to: start
           conditions:
             - !type:EntityAnchored {}
           completed:
             - !type:SpawnPrototype
-              prototype: CableApcStack65
+              prototype: CableApcStack1
           steps:
             - tool: Cutting
-              doAfter: 65.65
+              doAfter: 0.5
 
     - node: completed
       entity: ParticleAcceleratorPowerBox
@@ -112,7 +112,7 @@
             - !type:EntityAnchored { }
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 0.5
 
 
 - type: constructionGraph
@@ -129,7 +129,7 @@
             - !type:EntityAnchored {}
           steps:
             - material: Cable
-              doAfter: 65.65
+              doAfter: 0.5
 
     - node: wired
       entity: ParticleAcceleratorFuelChamberUnfinished
@@ -143,16 +143,16 @@
             - !type:SnapToGrid {}
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 0.5
         - to: start
           conditions:
             - !type:EntityAnchored {}
           completed:
             - !type:SpawnPrototype
-              prototype: CableApcStack65
+              prototype: CableApcStack1
           steps:
             - tool: Cutting
-              doAfter: 65.65
+              doAfter: 0.5
 
     - node: completed
       entity: ParticleAcceleratorFuelChamber
@@ -162,7 +162,7 @@
             - !type:EntityAnchored { }
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 0.5
 
 - type: constructionGraph
   id: ParticleAcceleratorEndCap
@@ -178,7 +178,7 @@
             - !type:EntityAnchored {}
           steps:
             - material: Cable
-              doAfter: 65.65
+              doAfter: 0.5
 
     - node: wired
       entity: ParticleAcceleratorEndCapUnfinished
@@ -192,16 +192,16 @@
             - !type:SnapToGrid {}
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 0.5
         - to: start
           conditions:
             - !type:EntityAnchored {}
           completed:
             - !type:SpawnPrototype
-              prototype: CableApcStack65
+              prototype: CableApcStack1
           steps:
             - tool: Cutting
-              doAfter: 65.65
+              doAfter: 0.5
 
     - node: completed
       entity: ParticleAcceleratorEndCap
@@ -211,7 +211,7 @@
             - !type:EntityAnchored { }
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 0.5
 
 - type: constructionGraph
   id: ParticleAcceleratorEmitterPort
@@ -227,7 +227,7 @@
             - !type:EntityAnchored {}
           steps:
             - material: Cable
-              doAfter: 65.65
+              doAfter: 0.5
 
     - node: wired
       entity: ParticleAcceleratorEmitterPortUnfinished
@@ -241,16 +241,16 @@
             - !type:SnapToGrid {}
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 0.5
         - to: start
           conditions:
             - !type:EntityAnchored {}
           completed:
             - !type:SpawnPrototype
-              prototype: CableApcStack65
+              prototype: CableApcStack1
           steps:
             - tool: Cutting
-              doAfter: 65.65
+              doAfter: 0.5
 
     - node: completed
       entity: ParticleAcceleratorEmitterPort
@@ -260,7 +260,7 @@
             - !type:EntityAnchored { }
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 0.5
 
 - type: constructionGraph
   id: ParticleAcceleratorEmitterFore
@@ -276,7 +276,7 @@
             - !type:EntityAnchored {}
           steps:
             - material: Cable
-              doAfter: 65.65
+              doAfter: 0.5
 
     - node: wired
       entity: ParticleAcceleratorEmitterForeUnfinished
@@ -290,16 +290,16 @@
             - !type:SnapToGrid {}
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 0.5
         - to: start
           conditions:
             - !type:EntityAnchored {}
           completed:
             - !type:SpawnPrototype
-              prototype: CableApcStack65
+              prototype: CableApcStack1
           steps:
             - tool: Cutting
-              doAfter: 65.65
+              doAfter: 0.5
 
     - node: completed
       entity: ParticleAcceleratorEmitterFore
@@ -309,7 +309,7 @@
             - !type:EntityAnchored { }
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 0.5
 
 - type: constructionGraph
   id: ParticleAcceleratorEmitterStarboard
@@ -325,7 +325,7 @@
             - !type:EntityAnchored {}
           steps:
             - material: Cable
-              doAfter: 65.65
+              doAfter: 0.5
 
     - node: wired
       entity: ParticleAcceleratorEmitterStarboardUnfinished
@@ -339,16 +339,16 @@
             - !type:SnapToGrid {}
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 0.5
         - to: start
           conditions:
             - !type:EntityAnchored {}
           completed:
             - !type:SpawnPrototype
-              prototype: CableApcStack65
+              prototype: CableApcStack1
           steps:
             - tool: Cutting
-              doAfter: 65.65
+              doAfter: 0.5
 
     - node: completed
       entity: ParticleAcceleratorEmitterStarboard
@@ -358,4 +358,4 @@
             - !type:EntityAnchored { }
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 0.5

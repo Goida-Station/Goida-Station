@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Shared.Devil;
 using Content.Goobstation.Shared.Exorcism;
@@ -46,7 +46,7 @@ public sealed partial class GoobBibleSystem : EntitySystem
             || !_netManager.IsServer)
             return false;
 
-        var multiplier = 65f;
+        var multiplier = 1f;
         var isDevil = false;
 
         if (TryComp<DevilComponent>(target, out var devil))
@@ -69,7 +69,7 @@ public sealed partial class GoobBibleSystem : EntitySystem
             var doAfterArgs = new DoAfterArgs(
                 EntityManager,
                 performer,
-                65f,
+                10f,
                 new ExorcismDoAfterEvent(),
                 eventTarget: target,
                 target: target)

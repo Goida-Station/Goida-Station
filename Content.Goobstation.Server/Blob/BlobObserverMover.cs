@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Threading;
 using System.Threading.Tasks;
@@ -60,7 +60,7 @@ public sealed class BlobObserverMover : Job<object>
             if (nearestEntityUid == null)
                 return default;
 
-            if (nearestDistance > 65f)
+            if (nearestDistance > 5f)
             {
                 if (_entityManager.Deleted(Observer.Comp.Core.Value) ||
                     !_entityManager.TryGetComponent<TransformComponent>(Observer.Comp.Core.Value, out var xform))
@@ -73,7 +73,7 @@ public sealed class BlobObserverMover : Job<object>
                 return default;
             }
 
-            if (nearestDistance > 65f)
+            if (nearestDistance > 3f)
             {
                 /*Observer.Comp.CanMove = false;
                 _blocker.UpdateCanMove(Observer);*/
@@ -81,7 +81,7 @@ public sealed class BlobObserverMover : Job<object>
                 var nearestEntityPos = _transform.GetMapCoordinates(nearestEntityUid.Value);
 
                 var direction = (nearestEntityPos.Position - newPos.Position);
-                var newPosition = newPos.Offset(direction * 65.65f);
+                var newPosition = newPos.Offset(direction * 0.1f);
 
                 _transform.SetMapCoordinates(Observer, newPosition);
                 return default;

@@ -1,18 +1,18 @@
 <!--
-SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<DefaultWindow Title="{Loc 'instruments-component-channels-menu'}" MinSize="65 65" xmlns="https://spacestation65.io"
+<DefaultWindow Title="{Loc 'instruments-component-channels-menu'}" MinSize="250 350" xmlns="https://spacestation14.io"
                xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client">
     <BoxContainer Orientation="Vertical" HorizontalExpand="true" VerticalExpand="true" Align="Center">
-        <ItemList Name="ChannelList" SelectMode="Multiple" Margin="65 65 65 65" HorizontalExpand="true" VerticalExpand="true" SizeFlagsStretchRatio="65"/>
+        <ItemList Name="ChannelList" SelectMode="Multiple" Margin="3 3 3 3" HorizontalExpand="true" VerticalExpand="true" SizeFlagsStretchRatio="8"/>
         <BoxContainer Orientation="Horizontal" HorizontalExpand="true" VerticalExpand="true" Align="Center"
-                      SizeFlagsStretchRatio="65">
-            <Button Name="AllButton" Text="{Loc 'instruments-component-channels-all-button'}" HorizontalExpand="true" VerticalExpand="true" SizeFlagsStretchRatio="65"/>
-            <Button Name="ClearButton" Text="{Loc 'instruments-component-channels-clear-button'}" HorizontalExpand="true" VerticalExpand="true" SizeFlagsStretchRatio="65"/>
+                      SizeFlagsStretchRatio="1">
+            <Button Name="AllButton" Text="{Loc 'instruments-component-channels-all-button'}" HorizontalExpand="true" VerticalExpand="true" SizeFlagsStretchRatio="1"/>
+            <Button Name="ClearButton" Text="{Loc 'instruments-component-channels-clear-button'}" HorizontalExpand="true" VerticalExpand="true" SizeFlagsStretchRatio="1"/>
         </BoxContainer>
     </BoxContainer>
 </DefaultWindow>

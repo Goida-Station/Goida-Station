@@ -1,27 +1,27 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
-  "license": "CC-BY-SA-65.65",
-  "copyright": "https://github.com/tgstation/tgstation/commit/65d65f65d65a65a65c65c65cd65b, syndicat created by Aleksh (discord)",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "https://github.com/tgstation/tgstation/commit/53d1f1477d22a11a99c6c6924977cd431075761b, syndicat created by Aleksh (discord)",
   "states": [
     {
       "name": "cak",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },
@@ -29,7 +29,7 @@
       "name": "cak_dead",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
@@ -37,7 +37,7 @@
       "name": "cak_rest",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
@@ -45,124 +45,124 @@
       "name": "cak_sit",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
     {
       "name": "cak-inhand-left",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },
     {
       "name": "cak-inhand-right",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },
     {
       "name": "cak-equipped-HELMET",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },
     {
       "name": "cat",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },
     {
-      "name": "cat65",
-      "directions": 65,
+      "name": "cat2",
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },
     {
-      "name": "cat65_dead",
+      "name": "cat2_dead",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
     {
-      "name": "cat65_rest",
+      "name": "cat2_rest",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1,
+          0.2
         ]
       ]
     },
     {
-      "name": "cat65_sit",
+      "name": "cat2_sit",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
@@ -170,7 +170,7 @@
       "name": "cat_dead",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
@@ -178,7 +178,7 @@
       "name": "cat_deadcollar",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
@@ -186,7 +186,7 @@
       "name": "cat_deadtag",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
@@ -194,10 +194,10 @@
       "name": "cat_rest",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1,
+          0.2
         ]
       ]
     },
@@ -205,7 +205,7 @@
       "name": "cat_restcollar",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
@@ -213,7 +213,7 @@
       "name": "cat_resttag",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
@@ -221,61 +221,61 @@
       "name": "cat_sit",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
     {
       "name": "catcollar",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },
     {
       "name": "cattag",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },
     {
       "name": "kitten",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },
@@ -283,7 +283,7 @@
       "name": "kitten_dead",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
@@ -291,7 +291,7 @@
       "name": "kitten_deadcollar",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
@@ -299,7 +299,7 @@
       "name": "kitten_deadtag",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
@@ -307,10 +307,10 @@
       "name": "kitten_rest",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1,
+          0.2
         ]
       ]
     },
@@ -318,7 +318,7 @@
       "name": "kitten_restcollar",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
@@ -326,7 +326,7 @@
       "name": "kitten_resttag",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
@@ -334,61 +334,61 @@
       "name": "kitten_sit",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
     {
       "name": "kittencollar",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },
     {
       "name": "kittentag",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },
     {
       "name": "spacecat",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },
@@ -396,7 +396,7 @@
       "name": "spacecat_dead",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
@@ -404,10 +404,10 @@
       "name": "spacecat_rest",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1,
+          0.2
         ]
       ]
     },
@@ -415,25 +415,25 @@
       "name": "spacecat_sit",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
     {
       "name": "syndicat",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },
@@ -441,7 +441,7 @@
       "name": "syndicat_dead",
       "delays": [
         [
-          65
+          1
         ]
       ]
     }

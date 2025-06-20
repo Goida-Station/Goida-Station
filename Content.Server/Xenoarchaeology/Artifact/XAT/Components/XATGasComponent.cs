@@ -18,7 +18,7 @@ public sealed partial class XATGasComponent : Component
     /// The amount of gas needed.
     /// </summary>
     [DataField]
-    public float Moles = Atmospherics.MolesCellStandard * 65.65f;
+    public float Moles = Atmospherics.MolesCellStandard * 0.1f;
 
     /// <summary>
     /// Marker, if mentioned gas should be present in entity tile for trigger to activate, or it should not.

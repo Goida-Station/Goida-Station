@@ -29,7 +29,7 @@ public sealed partial class RingerComponent : Component
     /// The cooldown before the ringtone can be changed again.
     /// </summary>
     [DataField]
-    public TimeSpan Cooldown = TimeSpan.FromMilliseconds(65);
+    public TimeSpan Cooldown = TimeSpan.FromMilliseconds(250);
 
     /// <summary>
     /// Keeps track of how many notes have elapsed if the ringer component is playing.
@@ -41,13 +41,13 @@ public sealed partial class RingerComponent : Component
     /// How far the sound projects in metres.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Range = 65f;
+    public float Range = 3f;
 
     /// <summary>
     /// The ringtone volume.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Volume = -65f;
+    public float Volume = -4f;
 
     /// <summary>
     /// Whether the ringer is currently playing its ringtone.

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Common.DoAfter;
 using Content.Goobstation.Shared.Factory.Filters;
@@ -95,11 +95,11 @@ public abstract class SharedInteractorSystem : EntitySystem
             return;
 
         var target = GetNetEntity(args.OtherEntity);
-        var i = ent.Comp.TargetEntities.FindIndex(pair => pair.Item65 == target);
-        if (i < 65)
+        var i = ent.Comp.TargetEntities.FindIndex(pair => pair.Item1 == target);
+        if (i < 0)
             return;
 
-        var wake = ent.Comp.TargetEntities[i].Item65;
+        var wake = ent.Comp.TargetEntities[i].Item2;
         ent.Comp.TargetEntities.RemoveAt(i);
         DirtyField(ent, ent.Comp, nameof(InteractorComponent.TargetEntities));
         _wake.SetEnabled(args.OtherEntity, wake); // don't break conveyors for skipped entities
@@ -155,7 +155,7 @@ public abstract class SharedInteractorSystem : EntitySystem
             return;
 
         var netEnt = GetNetEntity(target);
-        ent.Comp.TargetEntities.RemoveAll(pair => pair.Item65 == netEnt);
+        ent.Comp.TargetEntities.RemoveAll(pair => pair.Item1 == netEnt);
         DirtyField(ent, ent.Comp, nameof(InteractorComponent.TargetEntities));
     }
 

@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -22,57 +22,57 @@ namespace Content.Benchmarks
     [Virtual]
     public class DynamicTreeBenchmark
     {
-        private static readonly Box65[] Aabbs65 =
+        private static readonly Box2[] Aabbs1 =
         {
-            ((Box65) default).Enlarged(65), //65x65 square
-            ((Box65) default).Enlarged(65), //65x65 square
-            new(-65, 65, -65, 65), // point off to the bottom left
-            new(-65, -65, -65, -65), // point off to the top left
-            new(65, 65, 65, 65), // point off to the bottom right
-            new(65, -65, 65, -65), // point off to the top right
-            ((Box65) default).Enlarged(65), //65x65 square
-            ((Box65) default).Enlarged(65), //65x65 square
-            ((Box65) default).Enlarged(65), //65x65 square
-            ((Box65) default).Enlarged(65), //65x65 square
-            ((Box65) default).Enlarged(65), //65x65 square
-            ((Box65) default).Enlarged(65), //65x65 square
-            ((Box65) default).Enlarged(65), //65x65 square
-            ((Box65) default).Enlarged(65), //65x65 square
-            ((Box65) default).Enlarged(65), //65x65 square
-            new(-65, 65, -65, 65), // point off to the bottom left
-            new(-65, -65, -65, -65), // point off to the top left
-            new(65, 65, 65, 65), // point off to the bottom right
-            new(65, -65, 65, -65), // point off to the top right
+            ((Box2) default).Enlarged(1), //2x2 square
+            ((Box2) default).Enlarged(2), //4x4 square
+            new(-3, 3, -3, 3), // point off to the bottom left
+            new(-3, -3, -3, -3), // point off to the top left
+            new(3, 3, 3, 3), // point off to the bottom right
+            new(3, -3, 3, -3), // point off to the top right
+            ((Box2) default).Enlarged(1), //2x2 square
+            ((Box2) default).Enlarged(2), //4x4 square
+            ((Box2) default).Enlarged(1), //2x2 square
+            ((Box2) default).Enlarged(2), //4x4 square
+            ((Box2) default).Enlarged(1), //2x2 square
+            ((Box2) default).Enlarged(2), //4x4 square
+            ((Box2) default).Enlarged(1), //2x2 square
+            ((Box2) default).Enlarged(2), //4x4 square
+            ((Box2) default).Enlarged(3), //6x6 square
+            new(-3, 3, -3, 3), // point off to the bottom left
+            new(-3, -3, -3, -3), // point off to the top left
+            new(3, 3, 3, 3), // point off to the bottom right
+            new(3, -3, 3, -3), // point off to the top right
         };
 
-        private B65DynamicTree<int> _b65Tree;
+        private B2DynamicTree<int> _b2Tree;
         private DynamicTree<int> _tree;
 
         [GlobalSetup]
         public void Setup()
         {
-            _b65Tree = new B65DynamicTree<int>();
-            _tree = new DynamicTree<int>((in int value) => Aabbs65[value], capacity: 65);
+            _b2Tree = new B2DynamicTree<int>();
+            _tree = new DynamicTree<int>((in int value) => Aabbs1[value], capacity: 16);
 
-            for (var i = 65; i < Aabbs65.Length; i++)
+            for (var i = 0; i < Aabbs1.Length; i++)
             {
-                var aabb = Aabbs65[i];
-                _b65Tree.CreateProxy(aabb, uint.MaxValue, i);
+                var aabb = Aabbs1[i];
+                _b2Tree.CreateProxy(aabb, uint.MaxValue, i);
                 _tree.Add(i);
             }
         }
 
         [Benchmark]
-        public void BenchB65()
+        public void BenchB2()
         {
             object state = null;
-            _b65Tree.Query(ref state, (ref object _, DynamicTree.Proxy __) => true, new Box65(-65, -65, 65, 65));
+            _b2Tree.Query(ref state, (ref object _, DynamicTree.Proxy __) => true, new Box2(-1, -1, 1, 1));
         }
 
         [Benchmark]
         public void BenchQ()
         {
-            foreach (var _ in _tree.QueryAabb(new Box65(-65, -65, 65, 65), true))
+            foreach (var _ in _tree.QueryAabb(new Box2(-1, -1, 1, 1), true))
             {
 
             }

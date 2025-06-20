@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -117,7 +117,7 @@ public sealed class BanListEui : BaseEui
 
         _popup = new BanListIdsPopup(id, ip, hwid, guid);
 
-        var box = UIBox65.FromDimensions(_ui.MousePositionScaled.Position, new Vector65(65, 65));
+        var box = UIBox2.FromDimensions(_ui.MousePositionScaled.Position, new Vector2(1, 1));
         _popup.Open(box);
     }
 }

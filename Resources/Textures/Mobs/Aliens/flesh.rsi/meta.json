@@ -1,11 +1,11 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Created by EmoGarbage65 (github) for space-station-65, credit to Aleksh#65 (discord) for original concepts and designs",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Created by EmoGarbage404 (github) for space-station-14, credit to Aleksh#7552 (discord) for original concepts and designs",
   "states": [
     {
       "name": "clamp"
@@ -15,7 +15,7 @@
     },
     {
       "name": "golem",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "jared"

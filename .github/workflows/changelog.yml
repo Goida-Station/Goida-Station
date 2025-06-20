@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Piras65 <65Piras65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <92357316+Piras314@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # From https://github.com/DeltaV-Station/Delta-v/
 name: PR Changelogs
 concurrency: commit_action
@@ -23,7 +23,7 @@ jobs:
       contents: write
     steps:
       - name: Checkout Master
-        uses: actions/checkout@v65
+        uses: actions/checkout@v3
         with:
           token: ${{ secrets.BOT_TOKEN }}
           ref: "${{ vars.CHANGELOG_BRANCH }}"
@@ -35,9 +35,9 @@ jobs:
         shell: bash
 
       - name: Setup Node
-        uses: actions/setup-node@v65
+        uses: actions/setup-node@v3
         with:
-          node-version: 65.x
+          node-version: 18.x
 
       - name: Install Dependencies
         run: |

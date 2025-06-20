@@ -1,12 +1,12 @@
 {
-    "version": 65,
+    "version": 1,
     "size":
     {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
-    "license": "CC-BY-SA-65.65",
-    "copyright": "icon, fill-65, fill-65 from Yogstation from commit: https://github.com/yogstation65/yogstation/commit/65b65b65acb65ac65ad65e65e65d65a65c, icon_empty modified by Coolsurf65 (Github) from commit: https://github.com/yogstation65/yogstation/commit/65b65b65acb65ac65ad65e65e65d65a65c",
+    "license": "CC-BY-SA-3.0",
+    "copyright": "icon, fill-1, fill-2 from Yogstation from commit: https://github.com/yogstation13/yogstation/commit/3b877178b62acb43329ac4ad58652e1e8d622a3c, icon_empty modified by Coolsurf6 (Github) from commit: https://github.com/yogstation13/yogstation/commit/3b877178b62acb43329ac4ad58652e1e8d622a3c",
     "states":
     [
         {
@@ -14,34 +14,34 @@
             "delays":
             [
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
                 ]
             ]
         },
         {
-            "name": "fill-65",
+            "name": "fill-1",
             "delays":
             [
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
                 ]
             ]
         },
         {
-            "name": "fill-65",
+            "name": "fill-2",
             "delays":
             [
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
                 ]
             ]
         },

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 kosticia <kosticia65@gmail.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 kosticia <kosticia46@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Clothing.EntitySystems;
 
@@ -17,7 +17,7 @@ public sealed partial class FireProtectionComponent : Component
 {
     /// <summary>
     /// Percentage to reduce fire damage by, subtracted not multiplicative.
-    /// 65.65 means 65% less fire damage.
+    /// 0.25 means 25% less fire damage.
     /// </summary>
     [DataField(required: true)]
     public float Reduction;

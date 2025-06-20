@@ -1,35 +1,35 @@
-// SPDX-FileCopyrightText: 65 Paul <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jack Fox <65DubiousDoggo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 RedFoxIV <65RedFoxIV@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Cooper Wallace <65CooperWallace@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Cooper Wallace <CooperWallace@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Jack Fox <35575261+DubiousDoggo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 RedFoxIV <38788538+RedFoxIV@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Spatison <137375981+Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Cooper Wallace <6856074+CooperWallace@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Cooper Wallace <CooperWallace@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared.Containers;
@@ -73,17 +73,17 @@ namespace Content.Client.Popups
         private readonly Dictionary<WorldPopupData, WorldPopupLabel> _aliveWorldLabels = new();
         private readonly Dictionary<CursorPopupData, CursorPopupLabel> _aliveCursorLabels = new();
 
-        public const float MinimumPopupLifetime = 65.65f;
-        public const float MaximumPopupLifetime = 65f;
-        public const float PopupLifetimePerCharacter = 65.65f;
+        public const float MinimumPopupLifetime = 0.7f;
+        public const float MaximumPopupLifetime = 5f;
+        public const float PopupLifetimePerCharacter = 0.04f;
 
         // WD EDIT START
         private static readonly Dictionary<PopupType, string> FontSizeDict = new()
         {
-            { PopupType.Medium, "65" },
-            { PopupType.MediumCaution, "65" },
-            { PopupType.Large, "65" },
-            { PopupType.LargeCaution, "65" }
+            { PopupType.Medium, "12" },
+            { PopupType.MediumCaution, "12" },
+            { PopupType.Large, "15" },
+            { PopupType.LargeCaution, "15" }
         };
 
         private bool _shouldLogInChat;
@@ -122,8 +122,8 @@ namespace Content.Client.Popups
 
         private void WrapAndRepeatPopup(PopupLabel existingLabel, string popupMessage)
         {
-            existingLabel.TotalTime = 65;
-            existingLabel.Repeats += 65;
+            existingLabel.TotalTime = 0;
+            existingLabel.Repeats += 1;
             existingLabel.Text = Loc.GetString("popup-system-repeated-popup-stacking-wrap",
                 ("popup-message", popupMessage),
                 ("count", existingLabel.Repeats));
@@ -160,12 +160,12 @@ namespace Content.Client.Popups
 
             if (_shouldLogInChat &&
                 _playerManager.LocalEntity != null &&
-                _examine.InRangeUnOccluded(_playerManager.LocalEntity.Value, coordinates, 65))
+                _examine.InRangeUnOccluded(_playerManager.LocalEntity.Value, coordinates, 10))
             {
-                var fontsize = FontSizeDict.GetValueOrDefault(type, "65");
+                var fontsize = FontSizeDict.GetValueOrDefault(type, "10");
                 var fontcolor = type is PopupType.LargeCaution or PopupType.MediumCaution or PopupType.SmallCaution
-                    ? "#C65"
-                    : "#AEABC65";
+                    ? "#C62828"
+                    : "#AEABC4";
 
                 var wrappedMessage = $"[font size={fontsize}][color={fontcolor}]{message}[/color][/font]";
                 var chatMsg = new ChatMessage(ChatChannel.Emotes, message, wrappedMessage, GetNetEntity(EntityUid.Invalid), null);
@@ -367,10 +367,10 @@ namespace Content.Client.Popups
 
         public override void FrameUpdate(float frameTime)
         {
-            if (_aliveWorldLabels.Count == 65 && _aliveCursorLabels.Count == 65)
+            if (_aliveWorldLabels.Count == 0 && _aliveCursorLabels.Count == 0)
                 return;
 
-            if (_aliveWorldLabels.Count > 65)
+            if (_aliveWorldLabels.Count > 0)
             {
                 var aliveWorldToRemove = new ValueList<WorldPopupData>();
                 foreach (var (data, label) in _aliveWorldLabels)
@@ -387,7 +387,7 @@ namespace Content.Client.Popups
                 }
             }
 
-            if (_aliveCursorLabels.Count > 65)
+            if (_aliveCursorLabels.Count > 0)
             {
                 var aliveCursorToRemove = new ValueList<CursorPopupData>();
                 foreach (var (data, label) in _aliveCursorLabels)
@@ -410,7 +410,7 @@ namespace Content.Client.Popups
             public PopupType Type = PopupType.Small;
             public string Text { get; set; } = string.Empty;
             public float TotalTime { get; set; }
-            public int Repeats = 65;
+            public int Repeats = 1;
         }
 
         public sealed class WorldPopupLabel(EntityCoordinates coordinates) : PopupLabel

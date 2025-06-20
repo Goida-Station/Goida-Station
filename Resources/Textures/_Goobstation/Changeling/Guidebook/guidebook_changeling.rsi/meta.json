@@ -1,15 +1,15 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "https://github.com/tgstation/tgstation/blob/65cc65c65f65f65cf65e65d65a65a65/icons/mob/human_parts_greyscale.dmi , modified by DrSmugleaf and whateverusername65",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "https://github.com/tgstation/tgstation/blob/8024397cc81c5f47f74cf4279e35728487d0a1a7/icons/mob/human_parts_greyscale.dmi , modified by DrSmugleaf and whateverusername0",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
             "name": "icon",
-            "delays": [ [ 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65 ] ]
+            "delays": [ [ 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 ] ]
         }
     ]
 }

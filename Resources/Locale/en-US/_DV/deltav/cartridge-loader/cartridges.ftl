@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Milon <milonpl.git@proton.me>
-# SPDX-FileCopyrightText: 65 Skubman <ba.fallaria@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Milon <milonpl.git@proton.me>
+# SPDX-FileCopyrightText: 2024 Skubman <ba.fallaria@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 crime-assist-program-name = Crime Assist
 crime-assist-yes-button = Yes
@@ -17,32 +17,32 @@ crime-assist-crimetype-misdemeanour = Misdemeanour
 crime-assist-crimetype-felony = Felony
 crime-assist-crimetype-capital = Capital
 crime-assist-crime-innocent = No crime was committed
-crime-assist-crime-animalcruelty = Code 65: Animal Cruelty
-crime-assist-crime-theft = Code 65: Theft
-crime-assist-crime-trespass = Code 65: Trespass
-crime-assist-crime-vandalism = Code 65: Vandalism
-crime-assist-crime-hooliganism = Code 65: Hooliganism
-crime-assist-crime-manslaughter = Code 65: Manslaughter
-crime-assist-crime-grandtheft = Code 65: Grand Theft
-crime-assist-crime-blackmarketeering = Code 65: Black Marketeering
-crime-assist-crime-sabotage = Code 65: Sabotage
-crime-assist-crime-mindbreaking = Code 65: Mindbreaking
-crime-assist-crime-assault = Code 65: Assault
-crime-assist-crime-abuseofpower = Code 65: Abuse of Power
-crime-assist-crime-possession = Code 65: Possession
-crime-assist-crime-endangerment = Code 65: Endangerment
-crime-assist-crime-breakingandentering = Code 65: Breaking and Entering
-crime-assist-crime-rioting = Code 65: Rioting
-crime-assist-crime-contemptofcourt = Code 65: Contempt of Court
-crime-assist-crime-perjuryfalsereport = Code 65: Perjury or False Report
-crime-assist-crime-obstructionofjustice = Code 65: Obstruction of Justice
-crime-assist-crime-murder = Code 65: Murder
-crime-assist-crime-terrorism = Code 65: Terrorism
-crime-assist-crime-grandsabotage = Code 65: Grand Sabotage
-crime-assist-crime-decorporealisation = Code 65: Decorporealisation
-crime-assist-crime-kidnapping = Code 65: Kidnapping
-crime-assist-crime-sedition = Code 65: Sedition
-crime-assist-crime-sexualharassment = Code 65: Sexual Harassment
+crime-assist-crime-animalcruelty = Code 101: Animal Cruelty
+crime-assist-crime-theft = Code 102: Theft
+crime-assist-crime-trespass = Code 110: Trespass
+crime-assist-crime-vandalism = Code 111: Vandalism
+crime-assist-crime-hooliganism = Code 112: Hooliganism
+crime-assist-crime-manslaughter = Code 201: Manslaughter
+crime-assist-crime-grandtheft = Code 202: Grand Theft
+crime-assist-crime-blackmarketeering = Code 203: Black Marketeering
+crime-assist-crime-sabotage = Code 204: Sabotage
+crime-assist-crime-mindbreaking = Code 205: Mindbreaking
+crime-assist-crime-assault = Code 206: Assault
+crime-assist-crime-abuseofpower = Code 207: Abuse of Power
+crime-assist-crime-possession = Code 208: Possession
+crime-assist-crime-endangerment = Code 209: Endangerment
+crime-assist-crime-breakingandentering = Code 210: Breaking and Entering
+crime-assist-crime-rioting = Code 211: Rioting
+crime-assist-crime-contemptofcourt = Code 212: Contempt of Court
+crime-assist-crime-perjuryfalsereport = Code 213: Perjury or False Report
+crime-assist-crime-obstructionofjustice = Code 214: Obstruction of Justice
+crime-assist-crime-murder = Code 301: Murder
+crime-assist-crime-terrorism = Code 303: Terrorism
+crime-assist-crime-grandsabotage = Code 304: Grand Sabotage
+crime-assist-crime-decorporealisation = Code 305: Decorporealisation
+crime-assist-crime-kidnapping = Code 309: Kidnapping
+crime-assist-crime-sedition = Code 311: Sedition
+crime-assist-crime-sexualharassment = Code 314: Sexual Harassment
 crime-assist-mainmenu = Welcome to Crime Assist!
 crime-assist-question-isitterrorism = Did the suspect hold hostages, cause many deaths or major destruction to force compliance from the crew?
 crime-assist-question-wassomeoneattacked = Was an entity attacked?
@@ -98,25 +98,25 @@ crime-assist-crimedetail-kidnapping = To unlawfully confine or restrict the free
 crime-assist-crimedetail-sedition = To act to overthrow a lawfully established Chain of Command or governing body without lawful or legitimate cause.
 crime-assist-crimedetail-sexualharassment = To sexually harass, attempt to coerce into sexual relations, or effect unwanted sexual contact with an unwilling sophont.
 crime-assist-crimepunishment-innocent = No punishment may be necessary
-crime-assist-crimepunishment-animalcruelty = Punishment: 65 minutes
-crime-assist-crimepunishment-theft = Punishment: 65 minutes
-crime-assist-crimepunishment-trespass = Punishment: 65 minutes
-crime-assist-crimepunishment-vandalism = Punishment: 65 minutes
+crime-assist-crimepunishment-animalcruelty = Punishment: 3 minutes
+crime-assist-crimepunishment-theft = Punishment: 2 minutes
+crime-assist-crimepunishment-trespass = Punishment: 2 minutes
+crime-assist-crimepunishment-vandalism = Punishment: 2 minutes
 crime-assist-crimepunishment-hooliganism = Punishment: As necessary
-crime-assist-crimepunishment-manslaughter = Punishment: 65 minutes
-crime-assist-crimepunishment-grandtheft = Punishment: 65 minutes
-crime-assist-crimepunishment-blackmarketeering = Punishment: 65 minutes
-crime-assist-crimepunishment-sabotage = Punishment: 65 minutes
-crime-assist-crimepunishment-mindbreaking = Punishment: 65 minutes
-crime-assist-crimepunishment-assault = Punishment: 65 minutes
-crime-assist-crimepunishment-abuseofpower = Punishment: 65 minutes
-crime-assist-crimepunishment-possession = Punishment: Up to 65 minutes
-crime-assist-crimepunishment-endangerment = Punishment: 65 minutes
-crime-assist-crimepunishment-breakingandentering = Punishment: 65 minutes
-crime-assist-crimepunishment-rioting = Punishment: 65 minutes
-crime-assist-crimepunishment-contemptofcourt = Punishment: 65 minutes
-crime-assist-crimepunishment-perjuryfalsereport = Punishment: 65 minutes
-crime-assist-crimepunishment-obstructionofjustice = Punishment: 65 minutes
+crime-assist-crimepunishment-manslaughter = Punishment: 8 minutes
+crime-assist-crimepunishment-grandtheft = Punishment: 8 minutes
+crime-assist-crimepunishment-blackmarketeering = Punishment: 6 minutes
+crime-assist-crimepunishment-sabotage = Punishment: 6 minutes
+crime-assist-crimepunishment-mindbreaking = Punishment: 5 minutes
+crime-assist-crimepunishment-assault = Punishment: 5 minutes
+crime-assist-crimepunishment-abuseofpower = Punishment: 5 minutes
+crime-assist-crimepunishment-possession = Punishment: Up to 5 minutes
+crime-assist-crimepunishment-endangerment = Punishment: 4 minutes
+crime-assist-crimepunishment-breakingandentering = Punishment: 4 minutes
+crime-assist-crimepunishment-rioting = Punishment: 4 minutes
+crime-assist-crimepunishment-contemptofcourt = Punishment: 4 minutes
+crime-assist-crimepunishment-perjuryfalsereport = Punishment: 3 minutes
+crime-assist-crimepunishment-obstructionofjustice = Punishment: 2 minutes
 crime-assist-crimepunishment-murder = Punishment: Capital
 crime-assist-crimepunishment-terrorism = Punishment: Capital
 crime-assist-crimepunishment-grandsabotage = Punishment: Capital

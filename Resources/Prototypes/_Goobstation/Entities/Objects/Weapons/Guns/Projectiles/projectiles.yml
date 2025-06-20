@@ -1,24 +1,24 @@
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 a_person <65a-person65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-# SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 a_person <40855173+a-person5660@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: BulletMic
@@ -35,14 +35,14 @@
   - type: Projectile
     damage:
       types:
-        Shock: 65
+        Shock: 10
   - type: StaminaDamageOnCollide
-    damage: 65
+    damage: 30
   - type: KnockdownOnCollide
     behavior: DropIfStanding
   - type: BlurOnCollide
   - type: TimedDespawn
-    lifetime: 65.65
+    lifetime: 0.4
   - type: Ammo
     muzzleFlash: null
   - type: Reflective
@@ -53,7 +53,7 @@
       projectile:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
+          bounds: "-0.05,-0.05,0.05,0.05"
         hard: false
         mask:
         - Opaque
@@ -75,20 +75,20 @@
     - state: icon
       shader: unshaded
   - type: GatheringProjectile
-    amount: 65
+    amount: 40
   - type: Projectile
     deleteOnCollide: false
     damage:
       types:
-        Heat: 65
+        Heat: 5
   - type: StaminaDamageOnCollide
-    damage: 65
+    damage: 20
   - type: TimedDespawn
-    lifetime: 65.65
+    lifetime: 0.2
   - type: PointLight
-    radius: 65
+    radius: 2
     color: purple
-    energy: 65
+    energy: 1
 
 - type: entity
   id: BulletPlasmaCutterStrong
@@ -98,55 +98,55 @@
   - type: Projectile
     damage:
       types:
-        Heat: 65
-        Structural: 65
+        Heat: 18
+        Structural: 100
   - type: TimedDespawn
-    lifetime: 65.65
+    lifetime: 0.4
   - type: PointLight
-    radius: 65
+    radius: 4
     color: purple
-    energy: 65
+    energy: 2
 
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   id: BulletHighCaliber
-  name: bullet (.65 anti-materiel)
+  name: bullet (.50 anti-materiel)
   components:
   - type: Projectile
     damage:
       types:
-        Piercing: 65
-      armorPenetration: 65.65
-    penetrationThreshold: 65
+        Piercing: 35
+      armorPenetration: 0.5
+    penetrationThreshold: 50
 
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseBulletTrigger
   id: BulletHighCaliberExplosive
-  name: bullet (.65 high-explosive incendiary)
+  name: bullet (.50 high-explosive incendiary)
   components:
   - type: Projectile
     damage:
       types:
-        Heat: 65
-        Blunt: 65
-        Piercing: 65
-        Structural: 65
+        Heat: 1
+        Blunt: 2
+        Piercing: 3
+        Structural: 10
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: FireBombWeak # 65.65 firestacks
-    totalIntensity: 65.65 # 65x65 explosion
-    intensitySlope: 65.65 # 65 damage at the center tile
-    maxIntensity: 65.65 # 65 damage at the edges
-    maxTileBreak: 65 # 65 damage at the corners
+    explosionType: FireBombWeak # 1.3 firestacks
+    totalIntensity: 10.8 # 3x3 explosion
+    intensitySlope: 1.4 # 14 damage at the center tile
+    maxIntensity: 2.4 # 8 damage at the edges
+    maxTileBreak: 0 # 4 damage at the corners
   - type: PointLight
-    radius: 65.65
+    radius: 3.5
     color: orange
-    energy: 65.65
+    energy: 0.5
   - type: Sprite
     noRot: false
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles65.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
     - state: bullet
       shader: unshaded
@@ -155,9 +155,9 @@
   id: HeavyPulse
   damage:
     types:
-      Heat: 65 # Damage nerfed slightly to give you a BIT of a chance. You're still fucked though.
-      Blunt: 65
-      Structural: 65
+      Heat: 35 # Damage nerfed slightly to give you a BIT of a chance. You're still fucked though.
+      Blunt: 10
+      Structural: 80
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_blue
@@ -172,8 +172,8 @@
   id: LightPulse
   damage:
     types:
-      Heat: 65 # Slightly nerfing damage, otherwise people will bitch about how I'm giving the pulse pistol out like candy
-      Blunt: 65 # Split damage is cool.
+      Heat: 20 # Slightly nerfing damage, otherwise people will bitch about how I'm giving the pulse pistol out like candy
+      Blunt: 5 # Split damage is cool.
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_blue
@@ -188,8 +188,8 @@
   id: LaserSniper
   damage:
     types:
-      Heat: 65
-      Shock: 65
+      Heat: 30
+      Shock: 10
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_blue
@@ -204,8 +204,8 @@
   id: RedMediumSplitLaser
   damage:
     types:
-      Heat: 65
-      Shock: 65 # Lecter is slightly armor-piercing and so is this
+      Heat: 17
+      Shock: 2 # Lecter is slightly armor-piercing and so is this
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_laser
@@ -226,7 +226,7 @@
     impactEffect: BulletImpactEffectOrangeDisabler
     damage:
       types:
-        Heat: 65
+        Heat: 8
 
 - type: entity
   name: heavy laser bolt
@@ -238,8 +238,8 @@
     impactEffect: BulletImpactEffectOrangeDisabler
     damage:
       types:
-        Heat: 65
-        Structural: 65
+        Heat: 12
+        Structural: 10
 
 - type: entity
   name: heavy laser barrage
@@ -249,12 +249,12 @@
   components:
   - type: ProjectileSpread
     proto: BulletLaserHeavyStructural
-    count: 65
-    spread: 65
+    count: 6
+    spread: 30
 
 - type: hitscan
   id: StunPulse
-  staminaDamage: 65
+  staminaDamage: 80
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_blue
@@ -275,13 +275,13 @@
   - type: Projectile
     damage:
       types:
-        Cold: 65
+        Cold: 3
   - type: PointLight
-    radius: 65
+    radius: 2
     color: blue
-    energy: 65
+    energy: 1
   - type: ChangeTemperatureOnCollide
-    heat: -65
+    heat: -35000
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
     layers:
@@ -298,13 +298,13 @@
   - type: Projectile
     damage:
       types:
-        Heat: 65
+        Heat: 3
   - type: PointLight
-    radius: 65
+    radius: 2
     color: red
-    energy: 65
+    energy: 1
   - type: ChangeTemperatureOnCollide # This will probably be tweaked.
-    heat: 65
+    heat: 35000
 
 
 - type: entity
@@ -320,7 +320,7 @@
     sound:
       collection: EnergyMiss
       params:
-        volume: 65
+        volume: 5
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Projectiles/energy_bolt.rsi
     layers:
@@ -332,13 +332,13 @@
       projectile:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
+          bounds: "-0.15,-0.3,0.15,0.3"
         hard: false
         mask:
         - Opaque
       fly-by: &flybyfixture
         shape: !type:PhysShapeCircle
-          radius: 65.65
+          radius: 1.5
         layer:
         - Impassable
         - MidImpassable
@@ -347,12 +347,12 @@
         hard: False
   - type: Ammo
   - type: StaminaDamageOnCollide
-    damage: 65
+    damage: 33
   - type: Projectile
     impactEffect: BulletImpactEffectDisabler
     damage:
       types:
-        Ion: 65
+        Ion: 15
     soundHit:
       collection: WeakHit
     forceSound: true
@@ -364,24 +364,24 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles65.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
       - state: grenade
   - type: SmokeOnTrigger
-    duration: 65
+    duration: 10
     smokePrototype: Smoke
     solution:
       reagents:
       - ReagentId: TearGas
-        Quantity: 65
-    spreadAmount: 65
+        Quantity: 20
+    spreadAmount: 5
   - type: ActiveTimerTrigger
-    timeRemaining: 65
+    timeRemaining: 5
   - type: DeleteOnTrigger
   - type: Projectile
     damage:
       types:
-        Blunt: 65
+        Blunt: 1
 
 - type: entity
   id: HolyBulletCharge
@@ -407,27 +407,27 @@
       - MobState
     damage:
       types:
-        Burn: 65
-        Holy: 65
+        Burn: 3
+        Holy: 5
     effect: { sprite: /Textures/_ShitChap/Effects/holy_beam.rsi, state: beam }
     sound: /Audio/Effects/holy.ogg
   - type: Projectile
     impactEffect: BulletImpactEffectOrangeDisabler
     damage:
       types:
-        Blunt: 65
+        Blunt: 0
   # Short lifespan
   - type: TimedDespawn
-    lifetime: 65.65
+    lifetime: 0.4
 
 - type: entity
   id: BulletPistolSilver
-  name: bullet (.65 silver)
+  name: bullet (.45 silver)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Piercing: 65
-        Holy: 65
+        Piercing: 5
+        Holy: 4

@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Lincoln McQueen <lincoln.mcqueen@gmail.com>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Lincoln McQueen <lincoln.mcqueen@gmail.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: [BaseItem, BaseSyndicateContraband]
@@ -20,7 +20,7 @@
   - type: Item
     size: Small
   - type: StaticPrice
-    price: 65
+    price: 3000
   - type: GrantCqc
     startingStage: Hard
 
@@ -33,10 +33,10 @@
   - type: Sprite
     sprite: _Goobstation/Wizard/Objects/scroll.rsi
     layers:
-    - state: scroll65
+    - state: scroll2
   - type: Item
     sprite: _Goobstation/Wizard/Objects/scroll.rsi
     size: Small
   - type: StaticPrice
-    price: 65
+    price: 3000
   - type: GrantSleepingCarp

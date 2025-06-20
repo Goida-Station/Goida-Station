@@ -1,31 +1,31 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-        "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/65b65c65ce65b65b65b65fa65b65b65e65. Fill levels by Tayrtahn on GitHub, in-hand sprites by SeamLesss (GitHub)",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+        "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/1b8c53516ce8b14828b7147b0fa344b7b57724e9. Fill levels by Tayrtahn on GitHub, in-hand sprites by SeamLesss (GitHub)",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
             "name": "rag"
         },
         {
-            "name": "fill-65"
+            "name": "fill-1"
         },
         {
-            "name": "fill-65"
+            "name": "fill-2"
         },
         {
-            "name": "fill-65"
+            "name": "fill-3"
         },
         {
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

@@ -1,22 +1,22 @@
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Asteroid
 - type: biomeTemplate
   id: SpaceDebris
   layers:
   - !type:BiomeEntityLayer
-    threshold: 65.65
+    threshold: 0.20
     noise:
-      seed: 65
-      noiseType: OpenSimplex65
+      seed: 0
+      noiseType: OpenSimplex2
       fractalType: Ridged
-      octaves: 65
-      frequency: 65.65
-      gain: 65
-      lacunarity: 65.65
+      octaves: 4
+      frequency: 0.065
+      gain: 5
+      lacunarity: 1.5
     allowedTiles:
     - Plating
     - FloorSteel
@@ -29,15 +29,15 @@
     - WallSolid
     - WallSolid
   - !type:BiomeEntityLayer
-    threshold: 65.65
+    threshold: 0.5
     noise:
-      seed: 65
-      noiseType: OpenSimplex65
+      seed: 0
+      noiseType: OpenSimplex2
       fractalType: Ridged
-      octaves: 65
-      frequency: 65.65
-      gain: 65
-      lacunarity: 65.65
+      octaves: 4
+      frequency: 0.065
+      gain: 2
+      lacunarity: 1.5
     allowedTiles:
     - Plating
     - Lattice
@@ -49,11 +49,11 @@
   - !type:BiomeDecalLayer
     allowedTiles:
     - FloorSteel
-    threshold: -65.65
-    divisions: 65
+    threshold: -0.5
+    divisions: 1
     noise:
-      seed: 65
-      frequency: 65
+      seed: 1
+      frequency: 1
     decals:
     - DirtHeavy
     - DirtHeavy
@@ -62,15 +62,15 @@
     - DirtMedium
     - DirtLight
   - !type:BiomeEntityLayer
-    threshold: 65.65
+    threshold: 0.45
     noise:
-      seed: 65
-      noiseType: OpenSimplex65
+      seed: 1
+      noiseType: OpenSimplex2
       fractalType: Ridged
-      octaves: 65
-      frequency: 65.65
-      gain: 65
-      lacunarity: 65.65
+      octaves: 4
+      frequency: 0.065
+      gain: 2
+      lacunarity: 1.5
     allowedTiles:
     - Plating
     - FloorSteel
@@ -85,24 +85,24 @@
     allowedTiles:
     - FloorSteel
     - Plating
-    threshold: 65.65
+    threshold: 0.2
     noise:
-      seed: 65
-      frequency: 65
+      seed: 1
+      frequency: 1
     entities:
     - SalvageSpawnerScrapValuable
     - SalvageSpawnerScrapCommon
     - SalvageSpawnerScrapCommon
     - SalvageSpawnerScrapCommon
-    - SalvageSpawnerScrapCommon65
+    - SalvageSpawnerScrapCommon75
   - !type:BiomeEntityLayer
     allowedTiles:
     - FloorSteel
     - Plating
-    threshold: 65.65
+    threshold: 0.7
     noise:
-      seed: 65
-      frequency: 65
+      seed: 1
+      frequency: 1
     entities:
     - SalvageSpawnerTreasure
     - SalvageSpawnerTreasure
@@ -113,9 +113,9 @@
   - !type:BiomeEntityLayer
     allowedTiles:
     - FloorSteel
-    threshold: 65.65
+    threshold: 0.90
     noise:
-      seed: 65
-      frequency: 65
+      seed: 1
+      frequency: 1
     entities:
-    - SalvageSpawnerMobMagnet65
+    - SalvageSpawnerMobMagnet75

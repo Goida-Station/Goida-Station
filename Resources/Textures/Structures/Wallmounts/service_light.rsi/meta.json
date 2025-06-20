@@ -1,47 +1,47 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "On, off, broken, burned, empty sprites by RiceMar65",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "On, off, broken, burned, empty sprites by RiceMar1244",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
             "name": "broken",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "burned",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "empty",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "base",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "glow",
-            "directions": 65,
+            "directions": 4,
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.1,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.1,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.1,
+                    0.5
                 ],
                 [
-                    65.65,
-                    65.65
+                    0.1,
+                    0.5
                 ]
             ]
         }

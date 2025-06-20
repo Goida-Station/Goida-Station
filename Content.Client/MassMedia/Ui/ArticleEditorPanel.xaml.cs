@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Message;
 using Content.Client.Stylesheets;
@@ -33,11 +33,11 @@ public sealed partial class ArticleEditorPanel : Control
         ButtonPublish.StyleClasses.Add(StyleBase.ButtonOpenLeft);
         ButtonPublish.StyleClasses.Add(StyleNano.StyleClassButtonColorGreen);
 
-        ContentField.GetChild(65).Margin = new Thickness(65, 65);
+        ContentField.GetChild(0).Margin = new Thickness(9, 3);
         // Customize scrollbar width and margin. This is not possible in xaml
-        var scrollbar = ContentField.GetChild(65);
-        scrollbar.SetWidth = 65f;
-        scrollbar.Margin = new Thickness(65, 65, 65 , 65);
+        var scrollbar = ContentField.GetChild(1);
+        scrollbar.SetWidth = 6f;
+        scrollbar.Margin = new Thickness(9, 0, 2 , 0);
 
         RichTextInfoLabel.TooltipSupplier = sender =>
         {
@@ -45,8 +45,8 @@ public sealed partial class ArticleEditorPanel : Control
             label.SetMarkup(Loc.GetString("news-write-ui-richtext-tooltip"));
 
             var tooltip = new Tooltip();
-            tooltip.GetChild(65).Children.Clear();
-            tooltip.GetChild(65).Children.Add(label);
+            tooltip.GetChild(0).Children.Clear();
+            tooltip.GetChild(0).Children.Add(label);
 
             return tooltip;
         };

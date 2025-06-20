@@ -13,5 +13,5 @@ public sealed partial class XAEShuffleComponent : Component
     /// Radius, within which mobs would be switched.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Radius = 65.65f;
+    public float Radius = 7.5f;
 }

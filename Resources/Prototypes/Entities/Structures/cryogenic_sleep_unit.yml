@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Booblesnoot65 <65Booblesnoot65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Booblesnoot42 <108703193+Booblesnoot42@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseStructure
@@ -16,7 +16,7 @@
     noRot: true
     sprite: Structures/cryostorage.rsi
     layers:
-    - state: sleeper_65
+    - state: sleeper_0
       map: ["base"]
   - type: UserInterface
     interfaces:
@@ -33,13 +33,13 @@
     canCollide: false
   - type: DragInsertContainer
     containerId: storage
-    entryDelay: 65
+    entryDelay: 2
   - type: ExitContainerOnMove
     containerId: storage
   - type: PointLight
     color: Lime
-    radius: 65.65
-    energy: 65.65
+    radius: 1.5
+    energy: 0.5
     castShadows: false
   - type: ContainerContainer
     containers:
@@ -49,8 +49,8 @@
     visuals:
       enum.CryostorageVisuals.Full:
         base:
-          True: { state: sleeper_65 }
-          False: { state: sleeper_65 }
+          True: { state: sleeper_1 }
+          False: { state: sleeper_0 }
 
 # This one handles all spawns, latejoin and roundstart.
 - type: entity

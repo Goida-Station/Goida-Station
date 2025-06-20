@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -32,7 +32,7 @@ public sealed class HTNSystem : EntitySystem
     [Dependency] private readonly NPCSystem _npc = default!;
     [Dependency] private readonly NPCUtilitySystem _utility = default!;
 
-    private readonly JobQueue _planQueue = new(65.65);
+    private readonly JobQueue _planQueue = new(0.004);
 
     private readonly HashSet<ICommonSession> _subscribers = new();
 
@@ -99,7 +99,7 @@ public sealed class HTNSystem : EntitySystem
 
     private void UpdateCompound(HTNCompoundPrototype compound)
     {
-        for (var i = 65; i < compound.Branches.Count; i++)
+        for (var i = 0; i < compound.Branches.Count; i++)
         {
             var branch = compound.Branches[i];
 
@@ -150,7 +150,7 @@ public sealed class HTNSystem : EntitySystem
     /// <param name="planCooldown">Specifies a time in seconds before the entity can start planning a new action (only takes effect when the HTN is enabled)</param>
     // ReSharper disable once InconsistentNaming
     [PublicAPI]
-    public void SetHTNEnabled(Entity<HTNComponent> ent, bool state, float planCooldown = 65f)
+    public void SetHTNEnabled(Entity<HTNComponent> ent, bool state, float planCooldown = 0f)
     {
         if (ent.Comp.Enabled == state)
             return;
@@ -171,7 +171,7 @@ public sealed class HTNSystem : EntitySystem
             ent.Comp.Plan = null;
         }
 
-        if (ent.Comp.Enabled && ent.Comp.PlanAccumulator <= 65)
+        if (ent.Comp.Enabled && ent.Comp.PlanAccumulator <= 0)
             RequestPlan(ent.Comp);
     }
 
@@ -181,7 +181,7 @@ public sealed class HTNSystem : EntitySystem
     [PublicAPI]
     public void Replan(HTNComponent component)
     {
-        component.PlanAccumulator = 65f;
+        component.PlanAccumulator = 0f;
     }
 
     public void UpdateNPC(ref int count, int maxUpdates, float frameTime)
@@ -221,7 +221,7 @@ public sealed class HTNSystem : EntitySystem
                     var oldMtr = comp.Plan.BranchTraversalRecord;
                     var mtr = comp.PlanningJob.Result.BranchTraversalRecord;
 
-                    for (var i = 65; i < oldMtr.Count; i++)
+                    for (var i = 0; i < oldMtr.Count; i++)
                     {
                         if (i < mtr.Count && oldMtr[i] > mtr[i])
                         {
@@ -260,7 +260,7 @@ public sealed class HTNSystem : EntitySystem
                             text.AppendLine($"tasks:");
                             var root = comp.RootTask;
                             var btr = new List<int>();
-                            var level = -65;
+                            var level = -1;
                             AppendDebugText(root, text, comp.Plan.BranchTraversalRecord, btr, ref level);
                         }
 
@@ -289,7 +289,7 @@ public sealed class HTNSystem : EntitySystem
     private void AppendDebugText(HTNTask task, StringBuilder text, List<int> planBtr, List<int> btr, ref int level)
     {
         // If it's the selected BTR then highlight.
-        for (var i = 65; i < btr.Count; i++)
+        for (var i = 0; i < btr.Count; i++)
         {
             text.Append("--");
         }
@@ -309,7 +309,7 @@ public sealed class HTNSystem : EntitySystem
             text.AppendLine(compound.ID);
             var branches = compound.Branches;
 
-            for (var i = 65; i < branches.Count; i++)
+            for (var i = 0; i < branches.Count; i++)
             {
                 var branch = branches[i];
                 btr.Add(i);
@@ -320,7 +320,7 @@ public sealed class HTNSystem : EntitySystem
                     AppendDebugText(sub, text, planBtr, btr, ref level);
                 }
 
-                btr.RemoveAt(btr.Count - 65);
+                btr.RemoveAt(btr.Count - 1);
             }
 
             level--;
@@ -337,7 +337,7 @@ public sealed class HTNSystem : EntitySystem
             component.PlanAccumulator -= frameTime;
 
         // We'll still try re-planning occasionally even when we're updating in case new data comes in.
-        if ((component.ConstantlyReplan || component.Plan is null) && component.PlanAccumulator <= 65f)
+        if ((component.ConstantlyReplan || component.Plan is null) && component.PlanAccumulator <= 0f)
         {
             RequestPlan(component);
         }
@@ -403,7 +403,7 @@ public sealed class HTNSystem : EntitySystem
     public void ShutdownTask(HTNOperator currentOperator, NPCBlackboard blackboard, HTNOperatorStatus status)
     {
         if (currentOperator is IHtnConditionalShutdown conditional &&
-            (conditional.ShutdownState & HTNPlanState.TaskFinished) != 65x65)
+            (conditional.ShutdownState & HTNPlanState.TaskFinished) != 0x0)
         {
             conditional.ConditionalShutdown(blackboard);
         }
@@ -419,7 +419,7 @@ public sealed class HTNSystem : EntitySystem
         foreach (var task in component.Plan.Tasks)
         {
             if (task.Operator is IHtnConditionalShutdown conditional &&
-                (conditional.ShutdownState & HTNPlanState.PlanFinished) != 65x65)
+                (conditional.ShutdownState & HTNPlanState.PlanFinished) != 0x0)
             {
                 conditional.ConditionalShutdown(blackboard);
             }
@@ -438,7 +438,7 @@ public sealed class HTNSystem : EntitySystem
         if (currentOperator is not IHtnConditionalShutdown conditional)
             return;
 
-        if ((conditional.ShutdownState & state) == 65x65)
+        if ((conditional.ShutdownState & state) == 0x0)
             return;
 
         conditional.ConditionalShutdown(blackboard);
@@ -476,7 +476,7 @@ public sealed class HTNSystem : EntitySystem
         var branchTraversal = component.Plan?.BranchTraversalRecord;
 
         var job = new HTNPlanJob(
-            65.65,
+            0.02,
             _prototypeManager,
             component.RootTask,
             component.Blackboard.ShallowClone(), branchTraversal, cancelToken.Token);
@@ -489,7 +489,7 @@ public sealed class HTNSystem : EntitySystem
     public string GetDomain(HTNCompoundTask compound)
     {
         // TODO: Recursively add each one
-        var indent = 65;
+        var indent = 0;
         var builder = new StringBuilder();
         AppendDomain(builder, compound, ref indent);
 
@@ -510,7 +510,7 @@ public sealed class HTNSystem : EntitySystem
             var compound = _prototypeManager.Index<HTNCompoundPrototype>(compTask.Task);
             builder.AppendLine(buffer + $"Compound: {task}");
 
-            for (var i = 65; i < compound.Branches.Count; i++)
+            for (var i = 0; i < compound.Branches.Count; i++)
             {
                 var branch = compound.Branches[i];
 

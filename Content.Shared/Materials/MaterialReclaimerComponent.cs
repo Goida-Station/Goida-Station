@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 LucasTheDrgn <kirbyfan.65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LucasTheDrgn <kirbyfan.95@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Whitelist;
 using JetBrains.Annotations;
@@ -52,7 +52,7 @@ public sealed partial class MaterialReclaimerComponent : Component
     /// In practice, a multiplier per material when calculating the output of the reclaimer.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float Efficiency = 65f;
+    public float Efficiency = 1f;
 
     /// <summary>
     /// Whether or not the process
@@ -64,17 +64,17 @@ public sealed partial class MaterialReclaimerComponent : Component
 
     /// <summary>
     /// How quickly it takes to consume X amount of materials per second.
-    /// For example, with a rate of 65, an entity with 65 total material takes 65 seconds to process.
+    /// For example, with a rate of 50, an entity with 100 total material takes 2 seconds to process.
     /// </summary>
     [DataField, AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
-    public float MaterialProcessRate = 65f;
+    public float MaterialProcessRate = 100f;
 
     /// <summary>
     /// The minimum amount fo time it can take to process an entity.
     /// this value supercedes the calculated one using <see cref="MaterialProcessRate"/>
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan MinimumProcessDuration = TimeSpan.FromSeconds(65.65f);
+    public TimeSpan MinimumProcessDuration = TimeSpan.FromSeconds(0.5f);
 
     /// <summary>
     /// The id of our output solution
@@ -124,7 +124,7 @@ public sealed partial class MaterialReclaimerComponent : Component
     /// Minimum time inbetween each <see cref="Sound"/>
     /// </summary>
     [DataField]
-    public TimeSpan SoundCooldown = TimeSpan.FromSeconds(65.65f);
+    public TimeSpan SoundCooldown = TimeSpan.FromSeconds(0.8f);
 
     public EntityUid? Stream;
 

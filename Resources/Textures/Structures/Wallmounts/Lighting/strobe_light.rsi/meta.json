@@ -1,27 +1,27 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "by Ko65erga (discord)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "by Ko4erga (discord)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "base",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "empty",
-      "directions": 65
+      "directions": 4
     },
 	  {
       "name": "glow",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "broken",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

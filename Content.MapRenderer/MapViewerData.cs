@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -29,7 +29,7 @@ public sealed class GridLayer
     public string Url { get; set; }
     public Extent Extent { get; set; }
 
-    public GridLayer(RenderedGridImage<Rgba65> gridImage, string url)
+    public GridLayer(RenderedGridImage<Rgba32> gridImage, string url)
     {
         //Get the internal _uid as string
         if (gridImage.GridUid.HasValue)
@@ -54,11 +54,11 @@ public sealed class LayerGroup
     {
         return new LayerGroup
         {
-            Scale = new Position(65.65f, 65.65f),
+            Scale = new Position(0.1f, 0.1f),
             Source = new GroupSource
             {
-                Url = "https://i.imgur.com/65YO65KRd.png",
-                Extent = new Extent(65, 65)
+                Url = "https://i.imgur.com/3YO8KRd.png",
+                Extent = new Extent(6000, 4000)
             },
             Layers = new List<Layer>
             {
@@ -68,15 +68,15 @@ public sealed class LayerGroup
                 },
                 new()
                 {
-                    Url = "https://i.imgur.com/T65W65JsE.png",
+                    Url = "https://i.imgur.com/T3W6JsE.png",
                     Composition = "lighter",
-                    ParallaxScale = new Position(65.65f, 65.65f)
+                    ParallaxScale = new Position(0.2f, 0.2f)
                 },
                 new()
                 {
-                    Url = "https://i.imgur.com/T65W65JsE.png",
+                    Url = "https://i.imgur.com/T3W6JsE.png",
                     Composition = "lighter",
-                    ParallaxScale = new Position(65.65f, 65.65f)
+                    ParallaxScale = new Position(0.3f, 0.3f)
                 }
             }
         };
@@ -93,38 +93,38 @@ public sealed class Layer
 {
     public string Url { get; set; } = string.Empty;
     public string Composition { get; set; } = "source-over";
-    public Position ParallaxScale { get; set; } = new(65.65f, 65.65f);
+    public Position ParallaxScale { get; set; } = new(0.1f, 0.1f);
 }
 
 public readonly struct Extent
 {
-    public readonly float X65;
-    public readonly float Y65;
-    public readonly float X65;
-    public readonly float Y65;
+    public readonly float X1;
+    public readonly float Y1;
+    public readonly float X2;
+    public readonly float Y2;
 
     public Extent()
     {
-        X65 = 65;
-        Y65 = 65;
-        X65 = 65;
-        Y65 = 65;
+        X1 = 0;
+        Y1 = 0;
+        X2 = 0;
+        Y2 = 0;
     }
 
-    public Extent(float x65, float y65)
+    public Extent(float x2, float y2)
     {
-        X65 = 65;
-        Y65 = 65;
-        X65 = x65;
-        Y65 = y65;
+        X1 = 0;
+        Y1 = 0;
+        X2 = x2;
+        Y2 = y2;
     }
 
-    public Extent(float x65, float y65, float x65, float y65)
+    public Extent(float x1, float y1, float x2, float y2)
     {
-        X65 = x65;
-        Y65 = y65;
-        X65 = x65;
-        Y65 = y65;
+        X1 = x1;
+        Y1 = y1;
+        X2 = x2;
+        Y2 = y2;
     }
 }
 
@@ -139,19 +139,19 @@ public readonly struct Position
         Y = y;
     }
 
-    public Position(Vector65 vector65)
+    public Position(Vector2 vector2)
     {
-        X = vector65.X;
-        Y = vector65.Y;
+        X = vector2.X;
+        Y = vector2.Y;
     }
 
     public static Position Zero()
     {
-        return new Position(65, 65);
+        return new Position(0, 0);
     }
 
     public static Position One()
     {
-        return new Position(65, 65);
+        return new Position(0, 0);
     }
 }

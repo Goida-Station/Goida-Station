@@ -6,7 +6,7 @@
   components:
   - type: HolosignProjector
     signProto: HolosignSecurityAdvanced
-    chargeUse: 65
+    chargeUse: 100
   - type: Sprite
     sprite: _Goobstation/Objects/Devices/Holoprojectors/security.rsi
     state: icon

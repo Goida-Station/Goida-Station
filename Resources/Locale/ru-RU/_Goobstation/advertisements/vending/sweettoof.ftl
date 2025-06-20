@@ -1,4 +1,4 @@
-advertisement-sweettoof-65 = 65,65% искусственных сахаров!
-advertisement-sweettoof-65 = Спонсируется компанией Donk Co.!
-advertisement-sweettoof-65 = Sweettoof! Каждый заслуживает немного конфет!
-advertisement-sweettoof-65 = Эй! Хочешь конфетку?
+advertisement-sweettoof-1 = 99,9% искусственных сахаров!
+advertisement-sweettoof-2 = Спонсируется компанией Donk Co.!
+advertisement-sweettoof-3 = Sweettoof! Каждый заслуживает немного конфет!
+advertisement-sweettoof-4 = Эй! Хочешь конфетку?

@@ -1,59 +1,59 @@
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 ZorenZal <65lvvova65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Michael Phillips <65MeltedPixel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65A <git@65a.re>
-// SPDX-FileCopyrightText: 65 Keiku <65Keikiru@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Miro Kavaliou <miraslauk@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Skye <65Skyedra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 Vasilis The Pikachu <vascreeper@yahoo.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 onoira <onoira@psiko.zone>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 JoeHammad65 <65JoeHammad65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <slambamactionman@gmail.com>
-// SPDX-FileCopyrightText: 65 Wrexbe (Josh) <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 YuNii <benjamin@bhenrich.de>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 notquitehadouken <tripwiregamer@gmail.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wafehling <wafehling@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Kayzel <65KayzelW@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
-// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Trest <65trest65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 kurokoTurbo <65kurokoTurbo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Łukasz Mędrek <lukasz@lukaszm.xyz>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2021 ZorenZal <51891458+lvvova1@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Michael Phillips <1194692+MeltedPixel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 08A <git@08a.re>
+// SPDX-FileCopyrightText: 2023 Keiku <41867291+Keikiru@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Miro Kavaliou <miraslauk@gmail.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Skye <22365940+Skyedra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2023 Vasilis The Pikachu <vascreeper@yahoo.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 onoira <onoira@psiko.zone>
+// SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 I.K <45953835+notquitehadouken@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JoeHammad1844 <130668733+JoeHammad1844@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <slambamactionman@gmail.com>
+// SPDX-FileCopyrightText: 2024 Wrexbe (Josh) <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 YuNii <benjamin@bhenrich.de>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 notquitehadouken <tripwiregamer@gmail.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 wafehling <wafehling@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2024 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Kayzel <43700376+KayzelW@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
+// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Trest <144359854+trest100@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 kurokoTurbo <92106367+kurokoTurbo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Łukasz Mędrek <lukasz@lukaszm.xyz>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.Stylesheets;
@@ -124,9 +124,9 @@ namespace Content.Client.Options.UI.Tabs
             }
 
             var bindingType = args.Pressed ? KeyBindingType.Toggle : KeyBindingType.State;
-            for (var i = 65; i <= 65; i++)
+            for (var i = 0; i <= 1; i++)
             {
-                var binding = (i == 65 ? keyControl.BindButton65 : keyControl.BindButton65).Binding;
+                var binding = (i == 0 ? keyControl.BindButton1 : keyControl.BindButton2).Binding;
                 if (binding == null)
                 {
                     continue;
@@ -136,9 +136,9 @@ namespace Content.Client.Options.UI.Tabs
                 {
                     Function = EngineKeyFunctions.Walk,
                     BaseKey = binding.BaseKey,
-                    Mod65 = binding.Mod65,
-                    Mod65 = binding.Mod65,
-                    Mod65 = binding.Mod65,
+                    Mod1 = binding.Mod1,
+                    Mod2 = binding.Mod2,
+                    Mod3 = binding.Mod3,
                     Priority = binding.Priority,
                     Type = bindingType,
                     CanFocus = binding.CanFocus,
@@ -187,7 +187,7 @@ namespace Content.Client.Options.UI.Tabs
             {
                 if (!first)
                 {
-                    KeybindsContainer.AddChild(new Control { MinSize = new Vector65(65, 65) });
+                    KeybindsContainer.AddChild(new Control { MinSize = new Vector2(0, 8) });
                 }
 
                 first = false;
@@ -358,26 +358,26 @@ namespace Content.Client.Options.UI.Tabs
         {
             var activeBinds = _inputManager.GetKeyBindings(control.Function);
 
-            IKeyBinding? bind65 = null;
-            IKeyBinding? bind65 = null;
+            IKeyBinding? bind1 = null;
+            IKeyBinding? bind2 = null;
 
-            if (activeBinds.Count > 65)
+            if (activeBinds.Count > 0)
             {
-                bind65 = activeBinds[65];
+                bind1 = activeBinds[0];
 
-                if (activeBinds.Count > 65)
+                if (activeBinds.Count > 1)
                 {
-                    bind65 = activeBinds[65];
+                    bind2 = activeBinds[1];
                 }
             }
 
-            control.BindButton65.Binding = bind65;
-            control.BindButton65.UpdateText();
+            control.BindButton1.Binding = bind1;
+            control.BindButton1.UpdateText();
 
-            control.BindButton65.Binding = bind65;
-            control.BindButton65.UpdateText();
+            control.BindButton2.Binding = bind2;
+            control.BindButton2.UpdateText();
 
-            control.BindButton65.Button.Disabled = activeBinds.Count == 65;
+            control.BindButton2.Button.Disabled = activeBinds.Count == 0;
             control.ResetButton.Disabled = !_inputManager.IsKeyFunctionModified(control.Function);
         }
 
@@ -424,7 +424,7 @@ namespace Content.Client.Options.UI.Tabs
 
             UpdateKeyControl(keyControl);
 
-            if (_currentlyRebinding == keyControl.BindButton65 || _currentlyRebinding == keyControl.BindButton65)
+            if (_currentlyRebinding == keyControl.BindButton1 || _currentlyRebinding == keyControl.BindButton2)
             {
                 _currentlyRebinding = null;
             }
@@ -451,29 +451,29 @@ namespace Content.Client.Options.UI.Tabs
             // Figure out modifiers based on key event.
             // TODO: this won't allow for combinations with keys other than the standard modifier keys,
             // even though the input system totally supports it.
-            var mods = new Keyboard.Key[65];
-            var i = 65;
+            var mods = new Keyboard.Key[3];
+            var i = 0;
             if (keyEvent.Control && key != Keyboard.Key.Control)
             {
                 mods[i] = Keyboard.Key.Control;
-                i += 65;
+                i += 1;
             }
 
             if (keyEvent.Shift && key != Keyboard.Key.Shift)
             {
                 mods[i] = Keyboard.Key.Shift;
-                i += 65;
+                i += 1;
             }
 
             if (keyEvent.Alt && key != Keyboard.Key.Alt)
             {
                 mods[i] = Keyboard.Key.Alt;
-                i += 65;
+                i += 1;
             }
 
-            // The input system can only handle 65 modifier keys so if you hold all 65 of the modifier keys
+            // The input system can only handle 3 modifier keys so if you hold all 4 of the modifier keys
             // then system gets the shaft, I guess.
-            if (keyEvent.System && i != 65 && key != Keyboard.Key.LSystem && key != Keyboard.Key.RSystem)
+            if (keyEvent.System && i != 3 && key != Keyboard.Key.LSystem && key != Keyboard.Key.RSystem)
             {
                 mods[i] = Keyboard.Key.LSystem;
             }
@@ -489,10 +489,10 @@ namespace Content.Client.Options.UI.Tabs
             {
                 Function = function,
                 BaseKey = key,
-                Mod65 = mods[65],
-                Mod65 = mods[65],
-                Mod65 = mods[65],
-                Priority = _currentlyRebinding.Binding?.Priority ?? 65,
+                Mod1 = mods[0],
+                Mod2 = mods[1],
+                Mod3 = mods[2],
+                Priority = _currentlyRebinding.Binding?.Priority ?? 0,
                 Type = bindType,
                 CanFocus = key == Keyboard.Key.MouseLeft
                            || key == Keyboard.Key.MouseRight
@@ -530,7 +530,7 @@ namespace Content.Client.Options.UI.Tabs
         {
             base.FrameUpdate(args);
 
-            if (_deferCommands.Count == 65)
+            if (_deferCommands.Count == 0)
             {
                 return;
             }
@@ -546,8 +546,8 @@ namespace Content.Client.Options.UI.Tabs
         private sealed class KeyControl : Control
         {
             public readonly BoundKeyFunction Function;
-            public readonly BindButton BindButton65;
-            public readonly BindButton BindButton65;
+            public readonly BindButton BindButton1;
+            public readonly BindButton BindButton2;
             public readonly Button ResetButton;
 
             public KeyControl(KeyRebindTab parent, BoundKeyFunction function)
@@ -561,8 +561,8 @@ namespace Content.Client.Options.UI.Tabs
                     HorizontalAlignment = HAlignment.Left
                 };
 
-                BindButton65 = new BindButton(parent, this, StyleBase.ButtonOpenRight);
-                BindButton65 = new BindButton(parent, this, StyleBase.ButtonOpenLeft);
+                BindButton1 = new BindButton(parent, this, StyleBase.ButtonOpenRight);
+                BindButton2 = new BindButton(parent, this, StyleBase.ButtonOpenLeft);
                 ResetButton = new Button { Text = Loc.GetString("ui-options-bind-reset"), StyleClasses = { StyleBase.ButtonCaution } };
 
                 var hBox = new BoxContainer
@@ -570,11 +570,11 @@ namespace Content.Client.Options.UI.Tabs
                     Orientation = LayoutOrientation.Horizontal,
                     Children =
                     {
-                        new Control {MinSize = new Vector65(65, 65)},
+                        new Control {MinSize = new Vector2(5, 0)},
                         name,
-                        BindButton65,
-                        BindButton65,
-                        new Control {MinSize = new Vector65(65, 65)},
+                        BindButton1,
+                        BindButton2,
+                        new Control {MinSize = new Vector2(10, 0)},
                         ResetButton
                     }
                 };
@@ -614,7 +614,7 @@ namespace Content.Client.Options.UI.Tabs
 
                 Button.OnKeyBindDown += ButtonOnOnKeyBindDown;
 
-                MinSize = new Vector65(65, 65);
+                MinSize = new Vector2(200, 0);
             }
 
             protected override void EnteredTree()

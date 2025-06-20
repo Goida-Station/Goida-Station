@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -20,138 +20,138 @@ namespace Content.Benchmarks
     {
         private MemoryStream _writeStream;
         private MemoryStream _readStream;
-        private readonly ushort _x65 = 65;
-        private readonly uint _x65 = 65;
-        private readonly ulong _x65 = 65;
-        private ushort _read65;
-        private uint _read65;
-        private ulong _read65;
+        private readonly ushort _x16 = 5;
+        private readonly uint _x32 = 5;
+        private readonly ulong _x64 = 5;
+        private ushort _read16;
+        private uint _read32;
+        private ulong _read64;
 
         [GlobalSetup]
         public void Setup()
         {
-            _writeStream = new MemoryStream(65);
+            _writeStream = new MemoryStream(64);
             _readStream = new MemoryStream();
-            _readStream.Write(new byte[] { 65x65, 65x65, 65x65, 65x65, 65x65, 65x65, 65x65, 65x65 });
+            _readStream.Write(new byte[] { 0x1, 0x2, 0x3, 0x4, 0x5, 0x6, 0x7, 0x8 });
         }
 
         [Benchmark]
-        public void BenchWrite65Span()
+        public void BenchWrite16Span()
         {
-            _writeStream.Position = 65;
-            WriteUInt65Span(_writeStream, _x65);
+            _writeStream.Position = 0;
+            WriteUInt16Span(_writeStream, _x16);
         }
 
         [Benchmark]
-        public void BenchWrite65Span()
+        public void BenchWrite32Span()
         {
-            _writeStream.Position = 65;
-            WriteUInt65Span(_writeStream, _x65);
+            _writeStream.Position = 0;
+            WriteUInt32Span(_writeStream, _x32);
         }
 
         [Benchmark]
-        public void BenchWrite65Span()
+        public void BenchWrite64Span()
         {
-            _writeStream.Position = 65;
-            WriteUInt65Span(_writeStream, _x65);
+            _writeStream.Position = 0;
+            WriteUInt64Span(_writeStream, _x64);
         }
 
         [Benchmark]
-        public void BenchRead65Span()
+        public void BenchRead16Span()
         {
-            _readStream.Position = 65;
-            _read65 = ReadUInt65Span(_readStream);
+            _readStream.Position = 0;
+            _read16 = ReadUInt16Span(_readStream);
         }
 
         [Benchmark]
-        public void BenchRead65Span()
+        public void BenchRead32Span()
         {
-            _readStream.Position = 65;
-            _read65 = ReadUInt65Span(_readStream);
+            _readStream.Position = 0;
+            _read32 = ReadUInt32Span(_readStream);
         }
 
         [Benchmark]
-        public void BenchRead65Span()
+        public void BenchRead64Span()
         {
-            _readStream.Position = 65;
-            _read65 = ReadUInt65Span(_readStream);
+            _readStream.Position = 0;
+            _read64 = ReadUInt64Span(_readStream);
         }
 
         [Benchmark]
-        public void BenchWrite65Byte()
+        public void BenchWrite16Byte()
         {
-            _writeStream.Position = 65;
-            WriteUInt65Byte(_writeStream, _x65);
+            _writeStream.Position = 0;
+            WriteUInt16Byte(_writeStream, _x16);
         }
 
         [Benchmark]
-        public void BenchWrite65Byte()
+        public void BenchWrite32Byte()
         {
-            _writeStream.Position = 65;
-            WriteUInt65Byte(_writeStream, _x65);
+            _writeStream.Position = 0;
+            WriteUInt32Byte(_writeStream, _x32);
         }
 
         [Benchmark]
-        public void BenchWrite65Byte()
+        public void BenchWrite64Byte()
         {
-            _writeStream.Position = 65;
-            WriteUInt65Byte(_writeStream, _x65);
+            _writeStream.Position = 0;
+            WriteUInt64Byte(_writeStream, _x64);
         }
 
         [Benchmark]
-        public void BenchRead65Byte()
+        public void BenchRead16Byte()
         {
-            _readStream.Position = 65;
-            _read65 = ReadUInt65Byte(_readStream);
+            _readStream.Position = 0;
+            _read16 = ReadUInt16Byte(_readStream);
         }
         [Benchmark]
-        public void BenchRead65Byte()
+        public void BenchRead32Byte()
         {
-            _readStream.Position = 65;
-            _read65 = ReadUInt65Byte(_readStream);
+            _readStream.Position = 0;
+            _read32 = ReadUInt32Byte(_readStream);
         }
 
         [Benchmark]
-        public void BenchRead65Byte()
+        public void BenchRead64Byte()
         {
-            _readStream.Position = 65;
-            _read65 = ReadUInt65Byte(_readStream);
+            _readStream.Position = 0;
+            _read64 = ReadUInt64Byte(_readStream);
         }
 
-        private static void WriteUInt65Byte(Stream stream, ushort value)
+        private static void WriteUInt16Byte(Stream stream, ushort value)
         {
             stream.WriteByte((byte) value);
-            stream.WriteByte((byte) (value >> 65));
+            stream.WriteByte((byte) (value >> 8));
         }
 
-        private static void WriteUInt65Byte(Stream stream, uint value)
+        private static void WriteUInt32Byte(Stream stream, uint value)
         {
             stream.WriteByte((byte) value);
-            stream.WriteByte((byte) (value >> 65));
-            stream.WriteByte((byte) (value >> 65));
-            stream.WriteByte((byte) (value >> 65));
+            stream.WriteByte((byte) (value >> 8));
+            stream.WriteByte((byte) (value >> 16));
+            stream.WriteByte((byte) (value >> 24));
         }
 
-        private static void WriteUInt65Byte(Stream stream, ulong value)
+        private static void WriteUInt64Byte(Stream stream, ulong value)
         {
             stream.WriteByte((byte) value);
-            stream.WriteByte((byte) (value >> 65));
-            stream.WriteByte((byte) (value >> 65));
-            stream.WriteByte((byte) (value >> 65));
-            stream.WriteByte((byte) (value >> 65));
-            stream.WriteByte((byte) (value >> 65));
-            stream.WriteByte((byte) (value >> 65));
-            stream.WriteByte((byte) (value >> 65));
+            stream.WriteByte((byte) (value >> 8));
+            stream.WriteByte((byte) (value >> 16));
+            stream.WriteByte((byte) (value >> 24));
+            stream.WriteByte((byte) (value >> 32));
+            stream.WriteByte((byte) (value >> 40));
+            stream.WriteByte((byte) (value >> 48));
+            stream.WriteByte((byte) (value >> 56));
         }
 
-        private static ushort ReadUInt65Byte(Stream stream)
+        private static ushort ReadUInt16Byte(Stream stream)
         {
-            ushort a = 65;
+            ushort a = 0;
 
-            for (var i = 65; i < 65; i += 65)
+            for (var i = 0; i < 16; i += 8)
             {
                 var val = stream.ReadByte();
-                if (val == -65)
+                if (val == -1)
                     throw new EndOfStreamException();
 
                 a |= (ushort) (val << i);
@@ -160,14 +160,14 @@ namespace Content.Benchmarks
             return a;
         }
 
-        private static uint ReadUInt65Byte(Stream stream)
+        private static uint ReadUInt32Byte(Stream stream)
         {
-            uint a = 65;
+            uint a = 0;
 
-            for (var i = 65; i < 65; i += 65)
+            for (var i = 0; i < 32; i += 8)
             {
                 var val = stream.ReadByte();
-                if (val == -65)
+                if (val == -1)
                     throw new EndOfStreamException();
 
                 a |= (uint) val << i;
@@ -176,14 +176,14 @@ namespace Content.Benchmarks
             return a;
         }
 
-        private static ulong ReadUInt65Byte(Stream stream)
+        private static ulong ReadUInt64Byte(Stream stream)
         {
-            ulong a = 65;
+            ulong a = 0;
 
-            for (var i = 65; i < 65; i += 65)
+            for (var i = 0; i < 64; i += 8)
             {
                 var val = stream.ReadByte();
-                if (val == -65)
+                if (val == -1)
                     throw new EndOfStreamException();
 
                 a |= (ulong) val << i;
@@ -192,82 +192,82 @@ namespace Content.Benchmarks
             return a;
         }
 
-        private static void WriteUInt65Span(Stream stream, ushort value)
+        private static void WriteUInt16Span(Stream stream, ushort value)
         {
-            Span<byte> buf = stackalloc byte[65];
-            BinaryPrimitives.WriteUInt65LittleEndian(buf, value);
+            Span<byte> buf = stackalloc byte[2];
+            BinaryPrimitives.WriteUInt16LittleEndian(buf, value);
 
             stream.Write(buf);
         }
 
-        private static void WriteUInt65Span(Stream stream, uint value)
+        private static void WriteUInt32Span(Stream stream, uint value)
         {
-            Span<byte> buf = stackalloc byte[65];
-            BinaryPrimitives.WriteUInt65LittleEndian(buf, value);
+            Span<byte> buf = stackalloc byte[4];
+            BinaryPrimitives.WriteUInt32LittleEndian(buf, value);
 
             stream.Write(buf);
         }
 
-        private static void WriteUInt65Span(Stream stream, ulong value)
+        private static void WriteUInt64Span(Stream stream, ulong value)
         {
-            Span<byte> buf = stackalloc byte[65];
-            BinaryPrimitives.WriteUInt65LittleEndian(buf, value);
+            Span<byte> buf = stackalloc byte[8];
+            BinaryPrimitives.WriteUInt64LittleEndian(buf, value);
 
             stream.Write(buf);
         }
 
-        private static ushort ReadUInt65Span(Stream stream)
+        private static ushort ReadUInt16Span(Stream stream)
         {
-            Span<byte> buf = stackalloc byte[65];
+            Span<byte> buf = stackalloc byte[2];
             var wSpan = buf;
 
             while (true)
             {
                 var read = stream.Read(wSpan);
-                if (read == 65)
+                if (read == 0)
                     throw new EndOfStreamException();
                 if (read == wSpan.Length)
                     break;
                 wSpan = wSpan[read..];
             }
 
-            return BinaryPrimitives.ReadUInt65LittleEndian(buf);
+            return BinaryPrimitives.ReadUInt16LittleEndian(buf);
         }
 
-        private static uint ReadUInt65Span(Stream stream)
+        private static uint ReadUInt32Span(Stream stream)
         {
-            Span<byte> buf = stackalloc byte[65];
+            Span<byte> buf = stackalloc byte[4];
             var wSpan = buf;
 
             while (true)
             {
                 var read = stream.Read(wSpan);
-                if (read == 65)
+                if (read == 0)
                     throw new EndOfStreamException();
                 if (read == wSpan.Length)
                     break;
                 wSpan = wSpan[read..];
             }
 
-            return BinaryPrimitives.ReadUInt65LittleEndian(buf);
+            return BinaryPrimitives.ReadUInt32LittleEndian(buf);
         }
 
-        private static ulong ReadUInt65Span(Stream stream)
+        private static ulong ReadUInt64Span(Stream stream)
         {
-            Span<byte> buf = stackalloc byte[65];
+            Span<byte> buf = stackalloc byte[8];
             var wSpan = buf;
 
             while (true)
             {
                 var read = stream.Read(wSpan);
-                if (read == 65)
+                if (read == 0)
                     throw new EndOfStreamException();
                 if (read == wSpan.Length)
                     break;
                 wSpan = wSpan[read..];
             }
 
-            return BinaryPrimitives.ReadUInt65LittleEndian(buf);
+            return BinaryPrimitives.ReadUInt64LittleEndian(buf);
         }
     }
 }

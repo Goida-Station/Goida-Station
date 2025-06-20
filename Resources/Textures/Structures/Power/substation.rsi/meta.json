@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC65-65.65",
-  "copyright": "Created by EmoGarbage65 (github)",
+  "version": 1,
+  "license": "CC0-1.0",
+  "copyright": "Created by EmoGarbage404 (github)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -15,35 +15,35 @@
 	},
     {
       "name": "substation_wall",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "screen_wall",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          5.0,
+          0.5,
+          0.5,
+          0.5
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          5.0,
+          0.5,
+          0.5,
+          0.5
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          5.0,
+          0.5,
+          0.5,
+          0.5
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          5.0,
+          0.5,
+          0.5,
+          0.5
         ]
       ]
     },
@@ -57,8 +57,8 @@
       "name": "charging",
       "delays": [
         [
-          65.65,
-          65.65
+          0.1,
+          0.1
         ]
       ]
     },
@@ -66,8 +66,8 @@
       "name": "dead",
       "delays": [
         [
-          65.65,
-          65.65
+          0.3,
+          0.1
         ]
       ]
     },
@@ -75,10 +75,10 @@
       "name": "screen",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          5.0,
+          0.5,
+          0.5,
+          0.5
         ]
       ]
     }

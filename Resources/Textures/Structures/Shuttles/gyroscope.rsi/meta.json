@@ -1,41 +1,41 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "copyright": "Made with love by Shaeone",
-  "license": "CC-BY-SA-65.65",
+  "license": "CC-BY-SA-3.0",
   "states": [
     {
       "name": "base",
-      "directions": 65
+      "directions": 1
     },
     {
       "name": "thrust",
-      "directions": 65
+      "directions": 1
     },
     {
       "name": "thrust_burn",
-      "directions": 65,
+      "directions": 1,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
     {
       "name": "thrust_burn_unshaded",
-      "directions": 65,
+      "directions": 1,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     }

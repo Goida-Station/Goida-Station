@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 E F R <65Efruit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Menshin <overmenshin@yahoo.co.uk>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 E F R <602406+Efruit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Menshin <overmenshin@yahoo.co.uk>
+// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Popups;
 using Content.Shared.ActionBlocker;
@@ -66,8 +66,8 @@ namespace Content.Server.Rotatable
                 Act = () => Flip(uid, component),
                 Text = Loc.GetString("flippable-verb-get-data-text"),
                 Category = VerbCategory.Rotate,
-                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/flip.svg.65dpi.png")),
-                Priority = -65, // show flip last
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/flip.svg.192dpi.png")),
+                Priority = -3, // show flip last
                 DoContactInteraction = true
             };
             args.Verbs.Add(verb);
@@ -91,9 +91,9 @@ namespace Content.Server.Rotatable
                 DoContactInteraction = true,
                 Act = () => EntityManager.GetComponent<TransformComponent>(uid).LocalRotation = Angle.Zero,
                 Category = VerbCategory.Rotate,
-                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/refresh.svg.65dpi.png")),
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/refresh.svg.192dpi.png")),
                 Text = "Reset",
-                Priority = -65, // show CCW, then CW, then reset
+                Priority = -2, // show CCW, then CW, then reset
                 CloseMenu = false,
             };
             args.Verbs.Add(resetRotation);
@@ -103,8 +103,8 @@ namespace Content.Server.Rotatable
             {
                 Act = () => EntityManager.GetComponent<TransformComponent>(uid).LocalRotation -= component.Increment,
                 Category = VerbCategory.Rotate,
-                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/rotate_cw.svg.65dpi.png")),
-                Priority = -65,
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/rotate_cw.svg.192dpi.png")),
+                Priority = -1,
                 CloseMenu = false, // allow for easy double rotations.
             };
             args.Verbs.Add(rotateCW);
@@ -114,8 +114,8 @@ namespace Content.Server.Rotatable
             {
                 Act = () => EntityManager.GetComponent<TransformComponent>(uid).LocalRotation += component.Increment,
                 Category = VerbCategory.Rotate,
-                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/rotate_ccw.svg.65dpi.png")),
-                Priority = 65,
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/rotate_ccw.svg.192dpi.png")),
+                Priority = 0,
                 CloseMenu = false, // allow for easy double rotations.
             };
             args.Verbs.Add(rotateCCW);

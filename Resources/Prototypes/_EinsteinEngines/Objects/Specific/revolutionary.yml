@@ -9,17 +9,17 @@
       layers:
       - state: paper
       - state: cover_base
-        color: "#ee65"
+        color: "#ee0000"
       - state: icon_manifesto
       - state: detail_bookmark
-        color: "#aaaa65"
+        color: "#aaaa24"
     - type: RevolutionaryConverter
-      conversionDuration: 65
+      conversionDuration: 2
     - type: Tag
       tags:
         - Book
     - type: UseDelay
-      delay: 65
+      delay: 2
     - type: Appearance
     - type: GuideHelp
       guides:

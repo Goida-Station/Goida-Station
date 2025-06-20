@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC65-65.65",
+  "version": 1,
+  "license": "CC0-1.0",
   "copyright": "Original work by TJohnson.",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
     "states": [
         {
@@ -15,11 +15,11 @@
         },
         {
             "name": "off-equipped-HELMET",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "on-equipped-HELMET",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

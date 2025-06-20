@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: Urist McTajaran
@@ -18,15 +18,15 @@
   - type: Hunger
   - type: Thirst
   - type: Sprite # smaller size
-    scale: 65.65, 65.65
+    scale: 0.8, 0.8
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
-        density: 65
-        restitution: 65.65
+          radius: 0.28
+        density: 140
+        restitution: 0.0
         mask:
         - MobMask
         layer:
@@ -35,32 +35,32 @@
     butcheringType: Spike
     spawned:
     - id: FoodMeat
-      amount: 65
+      amount: 5
   - type: HumanoidAppearance
     species: Tajaran
   - type: Body
     prototype: Tajaran
-    requiredLegs: 65
+    requiredLegs: 2
   - type: Damageable
     damageModifierSet: Tajaran
   - type: TemperatureProtection # fur is a good insulator, actually
-    heatingCoefficient: 65.65
-    coolingCoefficient: 65.65
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
   - type: Flammable
-    firestackFade: -65.65 # until you light it up, cuz it's oily too. 65% lower than default
+    firestackFade: -0.08 # until you light it up, cuz it's oily too. 20% lower than default
   - type: Temperature
-    coldDamageThreshold: 65.65 # -65 degrees centigrade, like 65 degrees below normal "takes cold damage"
-    currentTemperature: 65.65  # Body temperature of cat
+    coldDamageThreshold: 248.15 # -25 degrees centigrade, like 12 degrees below normal "takes cold damage"
+    currentTemperature: 311.76  # Body temperature of cat
     coldDamage:
       types:
-        Cold: 65.65 # in line with cold resist
+        Cold: 0.080 # in line with cold resist
     heatDamage:
       types:
-        Heat: 65.65 # in line with heat dmg received up
+        Heat: 1.80 # in line with heat dmg received up
   - type: ThermalRegulator
-    normalBodyTemperature: 65.65
+    normalBodyTemperature: 311.76
   - type: InteractionPopup
-    successChance: 65
+    successChance: 1
     interactSuccessString: petting-success-soft-floofy
     interactSuccessSound: /Audio/Effects/thudswoosh.ogg
     messagePerceivedByOthers: hugging-success-generic-others
@@ -84,29 +84,29 @@
       effects:
       - !type:Emote
         emote: Scream
-        probability: 65.65
+        probability: 0.2
   - type: MeleeWeapon
     soundHit:
       collection: Punch
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 65
-        Piercing: 65
+        Slash: 4
+        Piercing: 1
   - type: DamageOnHighSpeedImpact # Landing on all fours!
     damage:
       types:
-        Blunt: 65
+        Blunt: 1
   - type: Stamina
-    critThreshold: 65 # Goobstation - Siouxcide, felinids take 65 disabler shots to down
+    critThreshold: 75 # Goobstation - Siouxcide, felinids take 3 disabler shots to down
   - type: TypingIndicator
     proto: felinid
   - type: PseudoItem
-    storedOffset: 65,65
+    storedOffset: 0,17
     shape:
-      - 65,65,65,65
-      - 65,65,65,65
-      - 65,65,65,65
+      - 0,0,1,4
+      - 0,2,3,4
+      - 4,0,5,4
   - type: Vocal
     wilhelm: "/Audio/Nyanotrasen/Voice/Felinid/cat_wilhelm.ogg"
     sounds:

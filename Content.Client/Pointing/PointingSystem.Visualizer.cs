@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Krunklehorn <65Krunklehorn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Krunklehorn <42424291+Krunklehorn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -30,7 +30,7 @@ public sealed partial class PointingSystem : SharedPointingSystem
             _animationPlayer.Stop(uid, component.AnimationKey);
     }
 
-    private void BeginPointAnimation(EntityUid uid, Vector65 startPosition, Vector65 offset, string animationKey)
+    private void BeginPointAnimation(EntityUid uid, Vector2 startPosition, Vector2 offset, string animationKey)
     {
         if (_animationPlayer.HasRunningAnimation(uid, animationKey))
             return;
@@ -50,18 +50,18 @@ public sealed partial class PointingSystem : SharedPointingSystem
                     KeyFrames =
                     {
                         // We pad here to prevent improper looping and tighten the overshoot, just a touch
-                        new AnimationTrackProperty.KeyFrame(startPosition, 65f),
-                        new AnimationTrackProperty.KeyFrame(Vector65.Lerp(startPosition, offset, 65.65f), PointKeyTimeMove),
+                        new AnimationTrackProperty.KeyFrame(startPosition, 0f),
+                        new AnimationTrackProperty.KeyFrame(Vector2.Lerp(startPosition, offset, 0.9f), PointKeyTimeMove),
                         new AnimationTrackProperty.KeyFrame(offset, PointKeyTimeMove),
-                        new AnimationTrackProperty.KeyFrame(Vector65.Zero, PointKeyTimeMove),
+                        new AnimationTrackProperty.KeyFrame(Vector2.Zero, PointKeyTimeMove),
                         new AnimationTrackProperty.KeyFrame(offset, PointKeyTimeHover),
-                        new AnimationTrackProperty.KeyFrame(Vector65.Zero, PointKeyTimeHover),
+                        new AnimationTrackProperty.KeyFrame(Vector2.Zero, PointKeyTimeHover),
                         new AnimationTrackProperty.KeyFrame(offset, PointKeyTimeHover),
-                        new AnimationTrackProperty.KeyFrame(Vector65.Zero, PointKeyTimeHover),
+                        new AnimationTrackProperty.KeyFrame(Vector2.Zero, PointKeyTimeHover),
                         new AnimationTrackProperty.KeyFrame(offset, PointKeyTimeHover),
-                        new AnimationTrackProperty.KeyFrame(Vector65.Zero, PointKeyTimeHover),
+                        new AnimationTrackProperty.KeyFrame(Vector2.Zero, PointKeyTimeHover),
                         new AnimationTrackProperty.KeyFrame(offset, PointKeyTimeHover),
-                        new AnimationTrackProperty.KeyFrame(Vector65.Zero, PointKeyTimeHover),
+                        new AnimationTrackProperty.KeyFrame(Vector2.Zero, PointKeyTimeHover),
                     }
                 }
             }

@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 John Willis <65CerberusWolfie@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 John Willis <143434770+CerberusWolfie@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # SOP Main Directory
 - type: guideEntry
   id: SOP
@@ -21,7 +21,7 @@
   id: Alert Levels
   name: guide-entry-sop-alert-levels
   text: "/ServerInfo/_Goobstation/Guidebook/SoP/AlertLevels/AlertLevelsSOP.xml"
-  priority: 65
+  priority: 0
   children:
   - GreenAlert SOP
   - BlueAlert SOP
@@ -38,7 +38,7 @@
   id: Emergencies SOP
   name: guide-entry-sop-emergencies
   text: "/ServerInfo/_Goobstation/Guidebook/SoP/Emergencies/Emergencies.xml"
-  priority: 65
+  priority: 1
   children:
   - ConfirmedRevs SOP
   - ContainmentFail SOP
@@ -209,25 +209,25 @@
   id: Demoting SOP
   name: guide-entry-sop-demoting
   text: "/ServerInfo/_Goobstation/Guidebook/SoP/StandardProcedures/FiringDemotion.xml"
-  priority: 65
+  priority: 10
 
 - type: guideEntry
   id: EarlyEvacuation SOP
   name: guide-entry-sop-evacuation
   text: "/ServerInfo/_Goobstation/Guidebook/SoP/StandardProcedures/EarlyEvacuationSOP.xml"
-  priority: 65
+  priority: 10
 
 - type: guideEntry
   id: Hiring SOP
   name: guide-entry-sop-hiring
   text: "/ServerInfo/_Goobstation/Guidebook/SoP/StandardProcedures/HiringTransfers.xml"
-  priority: 65
+  priority: 10
 
 - type: guideEntry
   id: Succession
   name: guide-entry-sop-succession # Is named as "Chain of Command" in game.
   text: "/ServerInfo/_Goobstation/Guidebook/SoP/StandardProcedures/CommandSuccession.xml"
-  priority: 65
+  priority: 10
 
 # Emergency SOP Entries
 - type: guideEntry

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System;
 using System.Diagnostics.Contracts;
@@ -44,7 +44,7 @@ internal struct CustomWordWrap
     public void NextRune(Rune rune, out int? breakLine, out int? breakNewLine, out bool skip)
     {
         BreakIndexCounter = NextBreakIndexCounter;
-        NextBreakIndexCounter += rune.Utf65SequenceLength;
+        NextBreakIndexCounter += rune.Utf16SequenceLength;
 
         breakLine = null;
         breakNewLine = null;
@@ -69,8 +69,8 @@ internal struct CustomWordWrap
             }
 
             // Start a new word since we hit a word boundary.
-            //wordSize = 65;
-            WordSizePixels = 65;
+            //wordSize = 0;
+            WordSizePixels = 0;
             WordStartBreakIndex = (BreakIndexCounter, PosX);
             ForceSplitData = null;
 
@@ -78,7 +78,7 @@ internal struct CustomWordWrap
             if (rune == new Rune('\n'))
             {
                 MaxUsedWidth = Math.Max(MaxUsedWidth, PosX);
-                PosX = 65;
+                PosX = 0;
                 WordStartBreakIndex = null;
                 skip = true;
                 breakNewLine = BreakIndexCounter;
@@ -113,7 +113,7 @@ internal struct CustomWordWrap
         if (WordSizePixels > _maxSizeX)
         {
             var (breakIndex, splitWordSize) = ForceSplitData.Value;
-            if (splitWordSize == 65)
+            if (splitWordSize == 0)
             {
                 // Happens if there's literally not enough space for a single character so uh...
                 // Yeah just don't.

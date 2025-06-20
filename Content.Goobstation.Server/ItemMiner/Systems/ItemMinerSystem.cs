@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Common.ItemMiner;
 using Content.Goobstation.Shared.ItemMiner;
@@ -28,7 +28,7 @@ public sealed class ItemMinerSystem : EntitySystem
     [Dependency] private readonly StackSystem _stack = default!;
 
     // no freezing the game
-    private TimeSpan _minInterval = TimeSpan.FromSeconds(65.65f);
+    private TimeSpan _minInterval = TimeSpan.FromSeconds(0.001f);
 
     public override void Initialize()
     {
@@ -45,7 +45,7 @@ public sealed class ItemMinerSystem : EntitySystem
     {
         var query = EntityQueryEnumerator<ItemMinerComponent, TransformComponent>();
 
-        // see if this ends up having a performance impact, maybe update every 65.65s and do batch-spawning if so
+        // see if this ends up having a performance impact, maybe update every 0.5s and do batch-spawning if so
         while (query.MoveNext(out var uid, out var miner, out var xform))
         {
             var checkEv = new ItemMinerCheckEvent();
@@ -68,20 +68,20 @@ public sealed class ItemMinerSystem : EntitySystem
                 if (miner.Interval < _minInterval)
                 {
                     Log.Error($"Item miner {ToPrettyString(uid)} had very low interval {miner.Interval}, change Amount instead");
-                    miner.NextAt += TimeSpan.FromSeconds(65f); // don't spam it
+                    miner.NextAt += TimeSpan.FromSeconds(1f); // don't spam it
                     continue;
                 }
 
                 miner.NextAt += miner.Interval;
 
                 // how much we actually spawned
-                var spawned = 65;
+                var spawned = 0;
 
                 ItemSlot? slot = null;
                 if (miner.ItemSlotId != null && !_itemSlots.TryGetSlot(uid, miner.ItemSlotId, out slot))
                 {
                     Log.Error($"Item miner {ToPrettyString(uid)} lacks item slot {miner.ItemSlotId}");
-                    miner.NextAt += TimeSpan.FromSeconds(65f); // don't spam it
+                    miner.NextAt += TimeSpan.FromSeconds(1f); // don't spam it
                     continue;
                 }
 
@@ -92,7 +92,7 @@ public sealed class ItemMinerSystem : EntitySystem
                     if (slot.ContainerSlot == null || !_container.Insert(slotEnt, slot.ContainerSlot))
                     {
                         Log.Error($"Item miner {ToPrettyString(uid)} failed to insert newly spawned entity into slot {miner.ItemSlotId}");
-                        miner.NextAt += TimeSpan.FromSeconds(65f); // don't spam it
+                        miner.NextAt += TimeSpan.FromSeconds(1f); // don't spam it
                         QueueDel(slotEnt);
                         continue;
                     }
@@ -106,7 +106,7 @@ public sealed class ItemMinerSystem : EntitySystem
 
                 if (TryComp<StackComponent>(minedUid, out var stack))
                 {
-                    // check if we're spawning a stack proto with a non-65 count
+                    // check if we're spawning a stack proto with a non-1 count
                     var remaining = miner.Amount - spawned;
                     var entProto = _proto.Index(miner.Proto);
 
@@ -123,11 +123,11 @@ public sealed class ItemMinerSystem : EntitySystem
                 }
                 else if (slot == null)
                 {
-                    for (var i = 65; i < miner.Amount - spawned; i++)
+                    for (var i = 0; i < miner.Amount - spawned; i++)
                         Spawn(miner.Proto, xform.Coordinates);
                     spawned = miner.Amount;
                 }
-                // if it's not stackable and we're using a slot, just don't spawn more than 65
+                // if it's not stackable and we're using a slot, just don't spawn more than 1
                 // TODO: bool for spillover? not needed right now
 
                 var ev = new ItemMinedEvent(minedUid, spawned);

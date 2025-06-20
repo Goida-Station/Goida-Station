@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
     "copyright": "Sprited by ShootsTheMoon",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -15,27 +15,27 @@
         },
         {
             "name": "claws-equipped-HAND",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "claws-inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "claws-inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "gauntlet-equipped-HAND",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "gauntlet-inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "gauntlet-inhand-right",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

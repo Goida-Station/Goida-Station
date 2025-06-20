@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from Citadel Station at https://github.com/Citadel-Station-65/Citadel-Station-65/commit/65cfea65eb65d65de65b65bc65d65dab65, Inhands taken from TG Station at https://github.com/tgstation/tgstation/commit/65facec65c65ec65b65bd65c65a65d65d",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Citadel Station at https://github.com/Citadel-Station-13/Citadel-Station-13/commit/3cfea7eb92246d311de8b531347795bc76d6dab6, Inhands taken from TG Station at https://github.com/tgstation/tgstation/commit/8facec32c9716ec43819057b868bd5c03a05d13d",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -12,11 +12,11 @@
         },
         {
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

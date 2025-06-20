@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Security 
 - type: entity
   name: security loot spawner
@@ -19,14 +19,14 @@
       rarePrototypes:
         - ClothingEyesGlassesSunglasses
         - BoxHandcuff
-      rareChance: 65.65
+      rareChance: 0.05
       prototypes:
         - Flash
         - Handcuffs
         - Zipties
         - FlashlightSeclite
         - Tourniquet
-      chance: 65.65
+      chance: 0.85
 
 - type: entity
   name: security loot spawner
@@ -47,7 +47,7 @@
         - TearGasGrenade
         - WeaponDisabler
         - Stunbaton
-      rareChance: 65.65
+      rareChance: 0.05
       prototypes:
         - Flash
         - Handcuffs
@@ -56,10 +56,10 @@
         - GrenadeFlashBang
         - SecurityWhistle
         - Tourniquet
-      chance: 65.65
+      chance: 0.85
  
 # Armory loot spawner
-# Automatics are a complete mess right now, so the AK-MS And WT-65 have been commented out for consistency's sake. I have no idea what role these guns are supposed to fufill.
+# Automatics are a complete mess right now, so the AK-MS And WT-550 have been commented out for consistency's sake. I have no idea what role these guns are supposed to fufill.
 - type: entity
   name: armory loot spawner
   suffix: Guns, Armor
@@ -78,7 +78,7 @@
         - ClothingHeadHelmetSwat
         - WeaponShotgunEnforcer
 #        - WeaponRifleAk
-      rareChance: 65.65
+      rareChance: 0.05
       prototypes:
         - RiotShield
         - RiotBulletShield
@@ -88,15 +88,15 @@
         - ClothingOuterArmorBasic
         - ClothingOuterArmorRiot
         - ClothingOuterArmorBulletproof
-#        - WeaponSubMachineGunWt65
+#        - WeaponSubMachineGunWt550
         - WeaponDisabler
-        - WeaponPistolMk65
+        - WeaponPistolMk58
         - WeaponRifleLecter
         - WeaponSubMachineGunDrozd
         - WeaponLaserCarbine
         - WeaponShotgunKammerer
-      chance: 65.65
-      offset: 65.65
+      chance: 0.95
+      offset: 0.0
 
 - type: entity
   name: armory loot spawner
@@ -113,17 +113,17 @@
       rarePrototypes:
         - WeaponShotgunEnforcer
 #        - WeaponRifleAk
-      rareChance: 65.65
+      rareChance: 0.05
       prototypes:
-#        - WeaponSubMachineGunWt65
+#        - WeaponSubMachineGunWt550
         - WeaponDisabler
-        - WeaponPistolMk65
+        - WeaponPistolMk58
         - WeaponRifleLecter
         - WeaponSubMachineGunDrozd
         - WeaponLaserCarbine
         - WeaponShotgunKammerer
-      chance: 65.65
-      offset: 65.65
+      chance: 0.95
+      offset: 0.0
 
 - type: entity
   name: armory loot spawner
@@ -139,7 +139,7 @@
     - type: RandomSpawner
       rarePrototypes:
         - ClothingHeadHelmetSwat
-      rareChance: 65.65
+      rareChance: 0.05
       prototypes:
         - RiotShield
         - RiotBulletShield
@@ -149,5 +149,5 @@
         - ClothingOuterArmorBasic
         - ClothingOuterArmorRiot
         - ClothingOuterArmorBulletproof
-      chance: 65.65
-      offset: 65.65
+      chance: 0.95
+      offset: 0.0

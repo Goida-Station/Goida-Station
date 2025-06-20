@@ -1,17 +1,17 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 64
   },
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/65d65f65d65a65a65c65c65cd65b",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/53d1f1477d22a11a99c6c6924977cd431075761b",
   "states": [
     {
       "name": "icon",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
@@ -19,43 +19,43 @@
       "name": "dead",
       "delays": [
         [
-          65
+          1
         ]
       ]
     },
     {
       "name": "crawling",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     },
     {
       "name": "standing",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ],
         [
-          65
+          1
         ]
       ]
     }

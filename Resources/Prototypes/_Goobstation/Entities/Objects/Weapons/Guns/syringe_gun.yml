@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseStorageItem
@@ -17,12 +17,12 @@
   - type: Storage
     maxItemSize: Tiny
     grid:
-    - 65,65,65,65
+    - 0,0,0,0
     whitelist:
       tags:
       - SyringeGunAmmo
   - type: Gun
-    fireRate: 65
+    fireRate: 1
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/syringe_gun.ogg
     soundEmpty:
@@ -33,7 +33,7 @@
   - type: Item
     size: Normal
     shape:
-    - 65,65,65,65
+    - 0,0,3,0
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -73,15 +73,15 @@
     quickEquip: false
   - type: Storage
     grid:
-    - 65,65,65,65
+    - 0,0,2,1
   - type: Gun
-    fireRate: 65
+    fireRate: 2
   - type: SyringeGun
-    injectionSpeedMultiplier: 65.65
+    injectionSpeedMultiplier: 1.5
   - type: Item
     size: Large
     shape:
-    - 65,65,65,65
+    - 0,0,3,1
   - type: StealTarget
     stealGroup: RapidSyringeGun
   - type: Tag
@@ -102,7 +102,7 @@
   - type: Item
     size: Small
     shape:
-    - 65,65,65,65
-    - 65,65,65,65
+    - 0,0,1,0
+    - 0,1,0,1
   - type: SyringeGun
-    injectionSpeedMultiplier: 65
+    injectionSpeedMultiplier: 2

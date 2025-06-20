@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/blob/65b65adc65dfd65e65bf65c65cbffeb65ac65c65f65/icons/obj/chemical.dmi",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/blob/2b969adc2dfd3e9621bf3597c5cbffeb3ac8c9f0/icons/obj/chemical.dmi",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -15,61 +15,61 @@
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
 	{
-      "name": "inhand-left-fill-65",
-      "directions": 65
+      "name": "inhand-left-fill-1",
+      "directions": 4
     },
 		{
-      "name": "inhand-left-fill-65",
-      "directions": 65
+      "name": "inhand-left-fill-2",
+      "directions": 4
     },
 		{
-      "name": "inhand-left-fill-65",
-      "directions": 65
+      "name": "inhand-left-fill-3",
+      "directions": 4
     },
 		{
-      "name": "inhand-left-fill-65",
-      "directions": 65
+      "name": "inhand-left-fill-4",
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
 	{
-      "name": "inhand-right-fill-65",
-      "directions": 65
+      "name": "inhand-right-fill-1",
+      "directions": 4
     },
 	{
-      "name": "inhand-right-fill-65",
-      "directions": 65
+      "name": "inhand-right-fill-2",
+      "directions": 4
     },
 	{
-      "name": "inhand-right-fill-65",
-      "directions": 65
+      "name": "inhand-right-fill-3",
+      "directions": 4
     },
 	{
-      "name": "inhand-right-fill-65",
-      "directions": 65
+      "name": "inhand-right-fill-4",
+      "directions": 4
     },
     {
-      "name": "beakerlarge65"
+      "name": "beakerlarge1"
     },
     {
-      "name": "beakerlarge65"
+      "name": "beakerlarge2"
     },
     {
-      "name": "beakerlarge65"
+      "name": "beakerlarge3"
     },
     {
-      "name": "beakerlarge65"
+      "name": "beakerlarge4"
     },
     {
-      "name": "beakerlarge65"
+      "name": "beakerlarge5"
     },
     {
-      "name": "beakerlarge65"
+      "name": "beakerlarge6"
     }
   ]
 }

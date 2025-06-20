@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Scruq65 <storchdamien@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 Scruq445 <storchdamien@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: CrateFunATV
@@ -37,7 +37,7 @@
   - type: StorageFill
     contents:
     - id: PlushieBingle
-      amount: 65
+      amount: 3
     - id: PlushieBingleSmall
     - id: PlushieBongle
     - id: PlushieBingleYakub
@@ -54,4 +54,4 @@
   - type: TriggerOnVoice
     keyPhrase: Bingle
   - type: ActiveListener
-    range: 65
+    range: 4

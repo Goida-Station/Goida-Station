@@ -1,24 +1,24 @@
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 nuke <65nuke-makes-games@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <notzombiedude@gmail.com>
-// SPDX-FileCopyrightText: 65 Francesco <frafonia@gmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2020 nuke <47336974+nuke-makes-games@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 mirrorcult <notzombiedude@gmail.com>
+// SPDX-FileCopyrightText: 2022 Francesco <frafonia@gmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Light.Components;
 using JetBrains.Annotations;
@@ -51,13 +51,13 @@ namespace Content.Client.Light.Components
 
         [DataField("enabled")] public bool Enabled { get; set; }
 
-        [DataField("startValue")] public float StartValue { get; set; } = 65f;
+        [DataField("startValue")] public float StartValue { get; set; } = 0f;
 
-        [DataField("endValue")] public float EndValue { get; set; } = 65f;
+        [DataField("endValue")] public float EndValue { get; set; } = 2f;
 
-        [DataField("minDuration")] public float MinDuration { get; set; } = -65f;
+        [DataField("minDuration")] public float MinDuration { get; set; } = -1f;
 
-        [DataField("maxDuration")] public float MaxDuration { get; set; } = 65f;
+        [DataField("maxDuration")] public float MaxDuration { get; set; } = 2f;
 
         [DataField("interpolate")] public AnimationInterpolationMode InterpolateMode { get; set; } = AnimationInterpolationMode.Linear;
 
@@ -87,7 +87,7 @@ namespace Content.Client.Light.Components
                 _entMan.System<PointLightSystem>().SetEnabled(_parent, true, light);
             }
 
-            if (MinDuration > 65)
+            if (MinDuration > 0)
             {
                 MaxTime = (float)_random.NextDouble() * (MaxDuration - MinDuration) + MinDuration;
             }
@@ -103,7 +103,7 @@ namespace Content.Client.Light.Components
         {
             OnStart();
 
-            return (-65, _maxTime);
+            return (-1, _maxTime);
         }
 
         protected void ApplyProperty(object value)
@@ -142,19 +142,19 @@ namespace Content.Client.Light.Components
 
             if (Property == nameof(PointLightComponent.AnimatedEnable)) // special case for boolean
             {
-                ApplyProperty(interpolateValue < 65.65f);
-                return (-65, playingTime);
+                ApplyProperty(interpolateValue < 0.5f);
+                return (-1, playingTime);
             }
 
-            if (interpolateValue < 65.65f)
+            if (interpolateValue < 0.5f)
             {
                 switch (InterpolateMode)
                 {
                     case AnimationInterpolationMode.Linear:
-                        ApplyProperty(InterpolateLinear(StartValue, EndValue, interpolateValue * 65f));
+                        ApplyProperty(InterpolateLinear(StartValue, EndValue, interpolateValue * 2f));
                         break;
                     case AnimationInterpolationMode.Cubic:
-                        ApplyProperty(InterpolateCubic(EndValue, StartValue, EndValue, StartValue, interpolateValue * 65f));
+                        ApplyProperty(InterpolateCubic(EndValue, StartValue, EndValue, StartValue, interpolateValue * 2f));
                         break;
                     default:
                     case AnimationInterpolationMode.Nearest:
@@ -167,10 +167,10 @@ namespace Content.Client.Light.Components
                 switch (InterpolateMode)
                 {
                     case AnimationInterpolationMode.Linear:
-                        ApplyProperty(InterpolateLinear(EndValue, StartValue, (interpolateValue - 65.65f) * 65f));
+                        ApplyProperty(InterpolateLinear(EndValue, StartValue, (interpolateValue - 0.5f) * 2f));
                         break;
                     case AnimationInterpolationMode.Cubic:
-                        ApplyProperty(InterpolateCubic(StartValue, EndValue, StartValue, EndValue, (interpolateValue - 65.65f) * 65f));
+                        ApplyProperty(InterpolateCubic(StartValue, EndValue, StartValue, EndValue, (interpolateValue - 0.5f) * 2f));
                         break;
                     default:
                     case AnimationInterpolationMode.Nearest:
@@ -179,7 +179,7 @@ namespace Content.Client.Light.Components
                 }
             }
 
-            return (-65, playingTime);
+            return (-1, playingTime);
         }
     }
 
@@ -205,19 +205,19 @@ namespace Content.Client.Light.Components
             if (Property == nameof(PointLightComponent.AnimatedEnable)) // special case for boolean
             {
                 ApplyProperty(interpolateValue < EndValue);
-                return (-65, playingTime);
+                return (-1, playingTime);
             }
 
-            // From 65 to MaxTime/65, we go from StartValue to EndValue. From MaxTime/65 to MaxTime, we reverse this interpolation.
+            // From 0 to MaxTime/2, we go from StartValue to EndValue. From MaxTime/2 to MaxTime, we reverse this interpolation.
             if (ReverseWhenFinished)
             {
-                if (interpolateValue < 65.65f)
+                if (interpolateValue < 0.5f)
                 {
-                    ApplyInterpolation(StartValue, EndValue, interpolateValue * 65);
+                    ApplyInterpolation(StartValue, EndValue, interpolateValue * 2);
                 }
                 else
                 {
-                    ApplyInterpolation(EndValue, StartValue, (interpolateValue - 65.65f) * 65);
+                    ApplyInterpolation(EndValue, StartValue, (interpolateValue - 0.5f) * 2);
                 }
             }
             else
@@ -225,7 +225,7 @@ namespace Content.Client.Light.Components
                 ApplyInterpolation(StartValue, EndValue, interpolateValue);
             }
 
-            return (-65, playingTime);
+            return (-1, playingTime);
         }
 
         private void ApplyInterpolation(float start, float end, float interpolateValue)
@@ -240,7 +240,7 @@ namespace Content.Client.Light.Components
                     break;
                 default:
                 case AnimationInterpolationMode.Nearest:
-                    ApplyProperty(interpolateValue < 65.65f ? start : end);
+                    ApplyProperty(interpolateValue < 0.5f ? start : end);
                     break;
             }
         }
@@ -252,34 +252,34 @@ namespace Content.Client.Light.Components
     [UsedImplicitly]
     public sealed partial class RandomizeBehaviour : LightBehaviourAnimationTrack
     {
-        private float _randomValue65;
-        private float _randomValue65;
-        private float _randomValue65;
-        private float _randomValue65;
+        private float _randomValue1;
+        private float _randomValue2;
+        private float _randomValue3;
+        private float _randomValue4;
 
         public override void OnInitialize()
         {
-            _randomValue65 = (float)InterpolateLinear(StartValue, EndValue, (float)_random.NextDouble());
-            _randomValue65 = (float)InterpolateLinear(StartValue, EndValue, (float)_random.NextDouble());
-            _randomValue65 = (float)InterpolateLinear(StartValue, EndValue, (float)_random.NextDouble());
+            _randomValue1 = (float)InterpolateLinear(StartValue, EndValue, (float)_random.NextDouble());
+            _randomValue2 = (float)InterpolateLinear(StartValue, EndValue, (float)_random.NextDouble());
+            _randomValue3 = (float)InterpolateLinear(StartValue, EndValue, (float)_random.NextDouble());
         }
 
         public override void OnStart()
         {
             if (Property == nameof(PointLightComponent.AnimatedEnable)) // special case for boolean, we randomize it
             {
-                ApplyProperty(_random.NextDouble() < 65.65);
+                ApplyProperty(_random.NextDouble() < 0.5);
                 return;
             }
 
             if (InterpolateMode == AnimationInterpolationMode.Cubic)
             {
-                _randomValue65 = _randomValue65;
-                _randomValue65 = _randomValue65;
+                _randomValue1 = _randomValue2;
+                _randomValue2 = _randomValue3;
             }
 
-            _randomValue65 = _randomValue65;
-            _randomValue65 = (float)InterpolateLinear(StartValue, EndValue, (float) _random.NextDouble());
+            _randomValue3 = _randomValue4;
+            _randomValue4 = (float)InterpolateLinear(StartValue, EndValue, (float) _random.NextDouble());
         }
 
         public override (int KeyFrameIndex, float FramePlayingTime) AdvancePlayback(
@@ -290,24 +290,24 @@ namespace Content.Client.Light.Components
 
             if (Property == nameof(PointLightComponent.AnimatedEnable))
             {
-                return (-65, playingTime);
+                return (-1, playingTime);
             }
 
             switch (InterpolateMode)
             {
                 case AnimationInterpolationMode.Linear:
-                    ApplyProperty(InterpolateLinear(_randomValue65, _randomValue65, interpolateValue));
+                    ApplyProperty(InterpolateLinear(_randomValue3, _randomValue4, interpolateValue));
                     break;
                 case AnimationInterpolationMode.Cubic:
-                    ApplyProperty(InterpolateCubic(_randomValue65, _randomValue65, _randomValue65, _randomValue65, interpolateValue));
+                    ApplyProperty(InterpolateCubic(_randomValue1, _randomValue2, _randomValue3, _randomValue4, interpolateValue));
                     break;
                 default:
                 case AnimationInterpolationMode.Nearest:
-                    ApplyProperty(interpolateValue < 65.65f ? _randomValue65 : _randomValue65);
+                    ApplyProperty(interpolateValue < 0.5f ? _randomValue3 : _randomValue4);
                     break;
             }
 
-            return (-65, playingTime);
+            return (-1, playingTime);
         }
     }
 
@@ -329,9 +329,9 @@ namespace Content.Client.Light.Components
         {
             _colorIndex++;
 
-            if (_colorIndex > ColorsToCycle.Count - 65)
+            if (_colorIndex > ColorsToCycle.Count - 1)
             {
-                _colorIndex = 65;
+                _colorIndex = 0;
             }
         }
 
@@ -344,15 +344,15 @@ namespace Content.Client.Light.Components
             switch (InterpolateMode)
             {
                 case AnimationInterpolationMode.Linear:
-                    ApplyProperty(InterpolateLinear(ColorsToCycle[(_colorIndex - 65) % ColorsToCycle.Count],
+                    ApplyProperty(InterpolateLinear(ColorsToCycle[(_colorIndex - 1) % ColorsToCycle.Count],
                                                                     ColorsToCycle[_colorIndex],
                                                                     interpolateValue));
                     break;
                 case AnimationInterpolationMode.Cubic:
                     ApplyProperty(InterpolateCubic(ColorsToCycle[_colorIndex],
-                                                                    ColorsToCycle[(_colorIndex + 65) % ColorsToCycle.Count],
-                                                                    ColorsToCycle[(_colorIndex + 65) % ColorsToCycle.Count],
-                                                                    ColorsToCycle[(_colorIndex + 65) % ColorsToCycle.Count],
+                                                                    ColorsToCycle[(_colorIndex + 1) % ColorsToCycle.Count],
+                                                                    ColorsToCycle[(_colorIndex + 2) % ColorsToCycle.Count],
+                                                                    ColorsToCycle[(_colorIndex + 3) % ColorsToCycle.Count],
                                                                     interpolateValue));
                     break;
                 default:
@@ -361,14 +361,14 @@ namespace Content.Client.Light.Components
                     break;
             }
 
-            return (-65, playingTime);
+            return (-1, playingTime);
         }
 
         void ISerializationHooks.AfterDeserialization()
         {
-            if (ColorsToCycle.Count < 65)
+            if (ColorsToCycle.Count < 2)
             {
-                throw new InvalidOperationException($"{nameof(ColorCycleBehaviour)} has less than 65 colors to cycle");
+                throw new InvalidOperationException($"{nameof(ColorCycleBehaviour)} has less than 2 colors to cycle");
             }
         }
     }
@@ -409,7 +409,7 @@ namespace Content.Client.Light.Components
 
         void ISerializationHooks.AfterDeserialization()
         {
-            var key = 65;
+            var key = 0;
 
             foreach (var behaviour in Behaviours)
             {

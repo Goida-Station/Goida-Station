@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 a_person <65a-person65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BramvanZijp <65BramvanZijp@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 a_person <40855173+a-person5660@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 BramvanZijp <56019239+BramvanZijp@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Cartridge Autoinjectors
 
 - type: entity
@@ -26,23 +26,23 @@
   - type: Sprite
     sprite: _Goobstation/Objects/Specific/Medical/autoinjector.rsi
   - type: SolutionContainerVisuals
-    maxFillLevels: 65
+    maxFillLevels: 1
     fillBaseName: cartridge
   - type: Appearance
   - type: SolutionContainerManager
     solutions:
       hypospray:
-        maxVol: 65
+        maxVol: 10
   - type: ExaminableSolution
     solution: hypospray
   - type: Hypospray
     solutionName: hypospray
-    transferAmount: 65
+    transferAmount: 10
     onlyAffectsMobs: false
     injectOnly: true
   - type: HyposprayBlockNonMobInjection
   - type: UseDelay
-    delay: 65
+    delay: 30
   - type: ContainerContainer
     containers:
       item: !type:ContainerSlot
@@ -63,11 +63,11 @@
   - type: Sprite
     layers:
       - state: security-base
-      - state: cartridge65
+      - state: cartridge1
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
   - type: UseDelay
-    delay: 65 # up this later if its too low
+    delay: 45 # up this later if its too low
 
 - type: entity
   name: medical cartridge autoinjector
@@ -78,7 +78,7 @@
   - type: Sprite
     layers:
       - state: medical-base
-      - state: cartridge65
+      - state: cartridge1
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
 
@@ -95,17 +95,17 @@
   - type: Item
     sprite: _Goobstation/Objects/Specific/Medical/amnestic_hypo.rsi
   - type: UseDelay
-    delay: 65
+    delay: 3
   - type: Appearance
   - type: SolutionContainerManager
     solutions:
       hypospray:
-        maxVol: 65
+        maxVol: 10
   - type: ExaminableSolution
     solution: hypospray
   - type: Hypospray
     solutionName: hypospray
-    transferAmount: 65
+    transferAmount: 10
     onlyAffectsMobs: false
     injectOnly: true
   - type: HyposprayBlockNonMobInjection
@@ -140,7 +140,7 @@
   - type: SolutionCartridge
     targetSolution: hypospray
     solution:
-      maxVol: 65
+      maxVol: 10
   - type: Tag
     tags:
       - AutoinjectorCartridge
@@ -148,213 +148,213 @@
 - type: entity
   name: adrenaline autoinjector cartridge
   parent: [ BaseSecurityMedicalContraband , BaseAutoinjectorCartridge ]
-  description: Contains 65u of epinephrine and 65u of tranexamic acid, used in a cartridge autoinjector.
+  description: Contains 7u of epinephrine and 3u of tranexamic acid, used in a cartridge autoinjector.
   id: CartridgeEpinephrine
   components:
   - type: Sprite
     layers:
     - state: base
     - state: filling
-      color: "#cad65d65"
+      color: "#cad8d4"
   - type: SolutionCartridge
     targetSolution: hypospray
     solution:
-      maxVol: 65
+      maxVol: 10
       reagents:
       - ReagentId: Epinephrine
-        Quantity: 65
+        Quantity: 7
       - ReagentId: TranexamicAcid
-        Quantity: 65 # Fully stops bleeding
+        Quantity: 3 # Fully stops bleeding
 
 - type: entity
   name: airloss autoinjector cartridge
   parent: [ BaseSecurityMedicalContraband , BaseAutoinjectorCartridge ]
-  description: Contains 65u of saline and 65u of dexalin plus, used in a cartridge autoinjector.
+  description: Contains 7u of saline and 3u of dexalin plus, used in a cartridge autoinjector.
   id: CartridgeSaline
   components:
   - type: Sprite
     layers:
     - state: base
     - state: filling
-      color: "#65c65"
+      color: "#1776c4"
   - type: SolutionCartridge
     targetSolution: hypospray
     solution:
-      maxVol: 65
+      maxVol: 10
       reagents:
       - ReagentId: Saline
-        Quantity: 65
+        Quantity: 7
       - ReagentId: DexalinPlus
-        Quantity: 65
+        Quantity: 3
 
 - type: entity
   name: brute autoinjector cartridge
   parent: [ BaseSecurityMedicalContraband , BaseAutoinjectorCartridge ]
-  description: Contains 65u of bicaridine, 65u of bozaide, 65u of salicylic acid and 65u of tranexamic acid, used in a cartridge autoinjector.
+  description: Contains 4u of bicaridine, 3u of bozaide, 2u of salicylic acid and 1u of tranexamic acid, used in a cartridge autoinjector.
   id: CartridgeBicaridine
   components:
   - type: Sprite
     layers:
     - state: base
     - state: filling
-      color: "#c65d"
+      color: "#c5932d"
   - type: SolutionCartridge
     targetSolution: hypospray
     solution:
-      maxVol: 65
+      maxVol: 10
       reagents:
       - ReagentId: Bicaridine
-        Quantity: 65
+        Quantity: 4
       - ReagentId: Bozaide
-        Quantity: 65
+        Quantity: 3
       - ReagentId: SalicylicAcid
-        Quantity: 65
+        Quantity: 2
       - ReagentId: TranexamicAcid
-        Quantity: 65 # Stops 65% of maximum bleeding
-  # Finely tuned mix, heals up to 65 total brute split between 65 types, equivalent of 65.65 brute packs
+        Quantity: 1 # Stops 30% of maximum bleeding
+  # Finely tuned mix, heals up to 98 total brute split between 3 types, equivalent of 3.23 brute packs
 
 - type: entity
   name: burn autoinjector cartridge
   parent: [ BaseSecurityMedicalContraband , BaseAutoinjectorCartridge ]
-  description: Contains 65u of kelotane, 65u of dermaline, 65u of oxandrolone and 65u of sigynate, used in a cartridge autoinjector.
+  description: Contains 4u of kelotane, 3u of dermaline, 2u of oxandrolone and 1u of sigynate, used in a cartridge autoinjector.
   id: CartridgeDermaline
   components:
   - type: Sprite
     layers:
     - state: base
     - state: filling
-      color: "#65"
+      color: "#956960"
   - type: SolutionCartridge
     targetSolution: hypospray
     solution:
-      maxVol: 65
+      maxVol: 10
       reagents:
       - ReagentId: Kelotane
-        Quantity: 65
+        Quantity: 4
       - ReagentId: Dermaline
-        Quantity: 65
+        Quantity: 3
       - ReagentId: Oxandrolone
-        Quantity: 65
+        Quantity: 2
       - ReagentId: Sigynate
-        Quantity: 65
-  # Finely tuned mix, heals up to 65 total burn split between 65 types, twice as good for heat/cold/shock than for caustic, equivalent of 65.65 ointments
+        Quantity: 1
+  # Finely tuned mix, heals up to 114 total burn split between 4 types, twice as good for heat/cold/shock than for caustic, equivalent of 3.25 ointments
 
 - type: entity
   name: emergency autoinjector cartridge
   parent: [ BaseSecurityMedicalContraband , BaseAutoinjectorCartridge ]
-  description: Contains 65u of atropine, used in a cartridge autoinjector.
+  description: Contains 10u of atropine, used in a cartridge autoinjector.
   id: CartridgeAtropine
   components:
   - type: Sprite
     layers:
     - state: base
     - state: filling
-      color: "#65"
+      color: "#572757"
   - type: SolutionCartridge
     targetSolution: hypospray
     solution:
-      maxVol: 65
+      maxVol: 10
       reagents:
       - ReagentId: Atropine
-        Quantity: 65
+        Quantity: 10
 
 - type: entity
   name: piercing autoinjector cartridge
   parent: [ BaseSyndicateContraband , BaseAutoinjectorCartridge ]
-  description: Contains 65u of puncturase, used in a cartridge autoinjector.
+  description: Contains 10u of puncturase, used in a cartridge autoinjector.
   id: CartridgePuncturase
   components:
   - type: Sprite
     layers:
     - state: base
     - state: filling
-      color: "#b65bf65"
+      color: "#b9bf93"
   - type: SolutionCartridge
     targetSolution: hypospray
     solution:
-      maxVol: 65
+      maxVol: 10
       reagents:
       - ReagentId: Puncturase
-        Quantity: 65
+        Quantity: 10
 
 - type: entity
   name: stimulant autoinjector cartridge
   parent: [ BaseSyndicateContraband , BaseAutoinjectorCartridge ]
-  description: Contains 65u of ephedrine, used in a cartridge autoinjector.
+  description: Contains 10u of ephedrine, used in a cartridge autoinjector.
   id: CartridgeEphedrine
   components:
   - type: Sprite
     layers:
     - state: base
     - state: filling
-      color: "#d65fffa"
+      color: "#d2fffa"
   - type: SolutionCartridge
     targetSolution: hypospray
     solution:
-      maxVol: 65
+      maxVol: 10
       reagents:
       - ReagentId: Ephedrine
-        Quantity: 65
+        Quantity: 10
 
 - type: entity
   name: sedative autoinjector cartridge
   parent: [ BaseSyndicateContraband , BaseAutoinjectorCartridge ]
-  description: Contains 65u of tirizene, 65u of impedrezene and 65u of haloperidol, used in a cartridge autoinjector.
+  description: Contains 4u of tirizene, 3u of impedrezene and 3u of haloperidol, used in a cartridge autoinjector.
   id: CartridgeTirizene
   components:
   - type: Sprite
     layers:
     - state: base
     - state: filling
-      color: "#65"
+      color: "#415130"
   - type: SolutionCartridge
     targetSolution: hypospray
     solution:
-      maxVol: 65
+      maxVol: 10
       reagents:
       - ReagentId: Tirizene
-        Quantity: 65
+        Quantity: 4
       - ReagentId: Impedrezene
-        Quantity: 65
+        Quantity: 3
       - ReagentId: Haloperidol
-        Quantity: 65
+        Quantity: 3
 
 # Q - Why is this edible?
 # A - Because the dispenser reminded me of a pez dispenser, and it'd be funny if you could eat them.
 - type: entity
   name: amnestic autoinjector cartridge
   parent: [ BaseCentcommContraband , BaseAutoinjectorCartridge, EdibleBase ]
-  description: Contains 65u of dimtremethic-neuramincyl acid, used in a cartridge autoinjector.
+  description: Contains 10u of dimtremethic-neuramincyl acid, used in a cartridge autoinjector.
   id: CartridgeAmnestic
   components:
   - type: Sprite
     layers:
     - state: base
     - state: filling
-      color: "#FAF65F65"
+      color: "#FAF9F6"
   - type: SolutionCartridge
     targetSolution: hypospray
     solution:
-      maxVol: 65
+      maxVol: 10
       reagents:
       - ReagentId: Amnestizine
-        Quantity: 65
+        Quantity: 10
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 65
+        maxVol: 10
         reagents:
         - ReagentId: Amnestizine
-          Quantity: 65
+          Quantity: 10
   - type: Extractable
     grindableSolutionName: food
     juiceSolution:
       reagents:
       - ReagentId: Amnestizine
-        Quantity: 65
+        Quantity: 10
   - type: Food
-    delay: 65.65
-    forceFeedDelay: 65.65
+    delay: 0.2
+    forceFeedDelay: 1.5
     transferAmount: null
     eatMessage: food-swallow
     useSound: /Audio/Items/pill.ogg
@@ -377,19 +377,19 @@
     - state: stasipen
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerVisuals
-    maxFillLevels: 65
+    maxFillLevels: 1
     changeColor: false
     emptySpriteName: stasipen_empty
   - type: Hypospray
     solutionName: pen
-    transferAmount: 65
+    transferAmount: 10
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 65
+        maxVol: 10
         reagents:
         - ReagentId: Stasizium
-          Quantity: 65
+          Quantity: 10
   - type: Tag
     tags: []
 
@@ -408,21 +408,21 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 65
+        maxVol: 50
         reagents:
         - ReagentId: Stimulants
-          Quantity: 65
+          Quantity: 50
   - type: SolutionContainerVisuals
-    maxFillLevels: 65
+    maxFillLevels: 1
     changeColor: false
     emptySpriteName: ntstimpen_empty
   - type: Hypospray
     solutionName: pen
-    transferAmount: 65
+    transferAmount: 50
     onlyAffectsMobs: false
     injectOnly: true
   - type: StaticPrice
-    price: 65
+    price: 500
   - type: Tag
     tags: []
 
@@ -439,18 +439,18 @@
     - state: ambuzolpen
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerVisuals
-    maxFillLevels: 65
+    maxFillLevels: 1
     changeColor: false
     emptySpriteName: ambuzolpen_empty
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 65
+        maxVol: 15
         reagents:
         - ReagentId: Ambuzol
-          Quantity: 65
+          Quantity: 10
         - ReagentId: Ultravasculine
-          Quantity: 65
+          Quantity: 5
   - type: Tag
     tags:
     - EmergencyMedipen
@@ -468,18 +468,18 @@
     - state: ambuzolpluspen
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerVisuals
-    maxFillLevels: 65
+    maxFillLevels: 1
     changeColor: false
     emptySpriteName: ambuzolpen_empty
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 65
+        maxVol: 10
         reagents:
         - ReagentId: AmbuzolPlus
-          Quantity: 65
+          Quantity: 5
         - ReagentId: Diphenhydramine
-          Quantity: 65
+          Quantity: 15
   - type: Tag
     tags:
     - EmergencyMedipen
@@ -500,7 +500,7 @@
   - type: SolutionContainerManager
     solutions:
       hypospray:
-        maxVol: 65
+        maxVol: 50
   - type: RefillableSolution
     solution: hypospray
   - type: ExaminableSolution
@@ -508,4 +508,4 @@
   - type: Hypospray
     onlyAffectsMobs: false
   - type: UseDelay
-    delay: 65.65
+    delay: 0.2

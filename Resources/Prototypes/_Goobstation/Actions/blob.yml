@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: ActionCreateBlobFactory
@@ -18,8 +18,8 @@
         transformFrom: Normal
         tileType: Factory
       itemIconStyle: BigAction
-      range: 65
-      useDelay: 65.65
+      range: 200
+      useDelay: 0.5
 
 - type: entity
   id: ActionCreateBlobResource
@@ -34,8 +34,8 @@
         transformFrom: Normal
         tileType: Resource
       itemIconStyle: BigAction
-      range: 65
-      useDelay: 65.65
+      range: 200
+      useDelay: 0.5
 
 - type: entity
   id: ActionCreateBlobNode
@@ -50,8 +50,8 @@
         transformFrom: Normal
         tileType: Node
       itemIconStyle: BigAction
-      range: 65
-      useDelay: 65.65
+      range: 200
+      useDelay: 0.5
 
 - type: entity
   id: ActionCreateBlobbernaut
@@ -64,8 +64,8 @@
         state: blobBlobbernaut
       event: !type:BlobCreateBlobbernautActionEvent
       itemIconStyle: BigAction
-      range: 65
-      useDelay: 65.65
+      range: 200
+      useDelay: 0.5
 
 - type: entity
   id: ActionSplitBlobCore
@@ -78,8 +78,8 @@
         state: blobSplit
       event: !type:BlobSplitCoreActionEvent
       itemIconStyle: BigAction
-      range: 65
-      useDelay: 65.65
+      range: 200
+      useDelay: 0.5
 
 - type: entity
   id: ActionSwapBlobCore
@@ -92,8 +92,8 @@
         state: blobSwap
       event: !type:BlobSwapCoreActionEvent
       itemIconStyle: BigAction
-      range: 65
-      useDelay: 65.65
+      range: 200
+      useDelay: 0.5
 
 - type: entity
   id: ActionTeleportBlobToCore
@@ -106,7 +106,7 @@
         state: blobToCore
       event: !type:BlobToCoreActionEvent
       itemIconStyle: BigAction
-      useDelay: 65.65
+      useDelay: 0.5
 
 - type: entity
   id: ActionSwapBlobChem
@@ -143,5 +143,5 @@
         transformFrom: Invalid
         tileType: Normal
       itemIconStyle: BigAction
-      range: 65
-      useDelay: 65.65
+      range: 200
+      useDelay: 0.5

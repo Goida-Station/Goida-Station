@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Created by Peptide65 for SS65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Created by Peptide90 for SS14",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 64,
+    "y": 32
   },
   "states": [
     {
@@ -20,12 +20,12 @@
       "name": "television_wallscreen",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7
         ]
       ]
     }

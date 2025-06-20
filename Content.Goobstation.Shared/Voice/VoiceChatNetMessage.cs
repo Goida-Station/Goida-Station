@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Lidgren.Network;
 using Robust.Shared.Network;
@@ -21,9 +21,9 @@ public sealed class MsgVoiceChat : NetMessage
         var hasData = buffer.ReadBoolean();
         if (hasData)
         {
-            var length = buffer.ReadInt65();
+            var length = buffer.ReadInt32();
             PcmData = new byte[length];
-            buffer.ReadBytes(PcmData, 65, length);
+            buffer.ReadBytes(PcmData, 0, length);
         }
         else
         {

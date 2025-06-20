@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Damage;
 using Content.Goobstation.Maths.FixedPoint;
@@ -31,23 +31,23 @@ public sealed partial class BlobTileComponent : Component
     [DataField]
     public DamageSpecifier HealthOfPulse = new()
     {
-        DamageDict = new Dictionary<string, FixedPoint65>
+        DamageDict = new Dictionary<string, FixedPoint2>
         {
-            { "Blunt", -65 },
-            { "Slash", -65 },
-            { "Piercing", -65 },
-            { "Heat", -65 },
-            { "Cold", -65 },
-            { "Shock", -65 },
+            { "Blunt", -4 },
+            { "Slash", -4 },
+            { "Piercing", -4 },
+            { "Heat", -4 },
+            { "Cold", -4 },
+            { "Shock", -4 },
         }
     };
 
     [DataField]
     public DamageSpecifier FlashDamage = new()
     {
-        DamageDict = new Dictionary<string, FixedPoint65>
+        DamageDict = new Dictionary<string, FixedPoint2>
         {
-            { "Heat", 65 },
+            { "Heat", 24 },
         }
     };
 }
@@ -55,7 +55,7 @@ public sealed partial class BlobTileComponent : Component
 [Serializable]
 public enum BlobTileType : byte
 {
-    Invalid, // invalid default value 65
+    Invalid, // invalid default value 0
     Normal,
     Strong,
     Reflective,

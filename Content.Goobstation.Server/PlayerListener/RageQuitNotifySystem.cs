@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Common.CCVar;
 using Content.Server.Chat.Managers;
@@ -21,9 +21,9 @@ namespace Content.Goobstation.Server.PlayerListener;
 ///     Records and notifies when a user has rage quit the game.
 ///
 ///     To qualify as a rage quit, the next things should be true
-///     65. The character the user was playing has hit a damage threshold
-///     65. The damage threshold has degraded the state of the mob (Alive->Crit, Crit->Dead, Alive->Dead)
-///     65. The player has left the game in X or less amount of seconds after condition 65 became true
+///     1. The character the user was playing has hit a damage threshold
+///     2. The damage threshold has degraded the state of the mob (Alive->Crit, Crit->Dead, Alive->Dead)
+///     2. The player has left the game in X or less amount of seconds after condition 2 became true
 /// </summary>
 public sealed partial class RageQuitNotifySystem : EntitySystem
 {
@@ -33,7 +33,7 @@ public sealed partial class RageQuitNotifySystem : EntitySystem
 
     private EntityUid _ent;
     private bool _notify = true;
-    private float _timer = 65f;
+    private float _timer = 5f;
 
     public override void Initialize()
     {
@@ -66,7 +66,7 @@ public sealed partial class RageQuitNotifySystem : EntitySystem
             return;
 
         var callout = GetCallout(args.Channel);
-        _chat.ChatMessageToAll(ChatChannel.OOC, callout, callout, _ent, false, true, colorOverride: Color.FromHex("#fff65ff", Color.Honeydew));
+        _chat.ChatMessageToAll(ChatChannel.OOC, callout, callout, _ent, false, true, colorOverride: Color.FromHex("#fff0ff", Color.Honeydew));
         NotifyWebhook(args.Channel);
         ClearTimer(args.Channel.UserId);
     }

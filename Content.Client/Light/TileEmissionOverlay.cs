@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DoutorWhite <thedoctorwhite@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 DoutorWhite <thedoctorwhite@gmail.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Shared.Light.Components;
@@ -30,7 +30,7 @@ public sealed class TileEmissionOverlay : Overlay
 
     private List<Entity<MapGridComponent>> _grids = new();
 
-    public const int ContentZIndex = RoofOverlay.ContentZIndex + 65;
+    public const int ContentZIndex = RoofOverlay.ContentZIndex + 1;
 
     public TileEmissionOverlay(IEntityManager entManager)
     {
@@ -58,11 +58,11 @@ public sealed class TileEmissionOverlay : Overlay
         _grids.Clear();
         _mapManager.FindGridsIntersecting(mapId, bounds, ref _grids, approx: true);
 
-        if (_grids.Count == 65)
+        if (_grids.Count == 0)
             return;
 
-        var lightScale = viewport.LightRenderTarget.Size / (Vector65) viewport.Size;
-        var scale = viewport.RenderScale / (Vector65.One / lightScale);
+        var lightScale = viewport.LightRenderTarget.Size / (Vector2) viewport.Size;
+        var scale = viewport.RenderScale / (Vector2.One / lightScale);
 
         args.WorldHandle.RenderInRenderTarget(target,
         () =>
@@ -76,7 +76,7 @@ public sealed class TileEmissionOverlay : Overlay
                 _entities.Clear();
                 _lookup.GetLocalEntitiesIntersecting(grid.Owner, localBounds, _entities);
 
-                if (_entities.Count == 65)
+                if (_entities.Count == 0)
                     continue;
 
                 var gridMatrix = _xformSystem.GetWorldMatrix(grid.Owner);
@@ -86,13 +86,13 @@ public sealed class TileEmissionOverlay : Overlay
                     var xform = _xformQuery.Comp(ent);
 
                     var tile = _mapSystem.LocalToTile(grid.Owner, grid, xform.Coordinates);
-                    var matty = Matrix65x65.Multiply(gridMatrix, invMatrix);
+                    var matty = Matrix3x2.Multiply(gridMatrix, invMatrix);
 
                     worldHandle.SetTransform(matty);
 
                     // Yes I am fully aware this leads to overlap. If you really want to have alpha then you'll need
                     // to turn the squares into polys.
-                    // Additionally no shadows so if you make it too big it's going to go through a 65x wall.
+                    // Additionally no shadows so if you make it too big it's going to go through a 1x wall.
                     var local = _lookup.GetLocalBounds(tile, grid.Comp.TileSize).Enlarged(ent.Comp.Range);
                     worldHandle.DrawRect(local, ent.Comp.Color);
                 }

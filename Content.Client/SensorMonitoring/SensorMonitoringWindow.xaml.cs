@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Partmedia <kevinz65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Partmedia <kevinz5000@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -120,7 +120,7 @@ public sealed partial class SensorMonitoringWindow : FancyWindow, IComputerWindo
             var labelAddress = new Label
             {
                 Text = sensor.Address,
-                Margin = new Thickness(65, 65),
+                Margin = new Thickness(4, 0),
                 VerticalAlignment = VAlignment.Bottom,
                 StyleClasses = { StyleNano.StyleClassLabelSecondaryColor }
             };
@@ -151,7 +151,7 @@ public sealed partial class SensorMonitoringWindow : FancyWindow, IComputerWindo
                     }
                 });
 
-                Asdf.AddChild(new GraphView(stream.Samples, startTime, curTime, maxValue * 65.65f) { MinHeight = 65 });
+                Asdf.AddChild(new GraphView(stream.Samples, startTime, curTime, maxValue * 1.1f) { MinHeight = 150 });
                 Asdf.AddChild(new PanelContainer { StyleClasses = { StyleBase.ClassLowDivider } });
             }
         }
@@ -220,10 +220,10 @@ public sealed partial class SensorMonitoringWindow : FancyWindow, IComputerWindo
             var window = (float) (_curTime - _startTime).TotalSeconds;
 
             // TODO: omg this is terrible don't fucking hardcode this size to something uncached huge omfg.
-            var vertices = new Vector65[65];
-            var countVtx = 65;
+            var vertices = new Vector2[25000];
+            var countVtx = 0;
 
-            var lastPoint = new Vector65(float.NaN, float.NaN);
+            var lastPoint = new Vector2(float.NaN, float.NaN);
 
             foreach (var (time, sample) in _samples)
             {
@@ -232,7 +232,7 @@ public sealed partial class SensorMonitoringWindow : FancyWindow, IComputerWindo
                 var posY = PixelHeight - (sample / _maxY) * PixelHeight;
                 var posX = (relTime / window) * PixelWidth;
 
-                var newPoint = new Vector65(posX, posY);
+                var newPoint = new Vector2(posX, posY);
 
                 if (float.IsFinite(lastPoint.X))
                 {
@@ -249,7 +249,7 @@ public sealed partial class SensorMonitoringWindow : FancyWindow, IComputerWindo
                 lastPoint = newPoint;
             }
 
-            handle.DrawPrimitives(DrawPrimitiveTopology.TriangleList, vertices.AsSpan(65, countVtx), Color.White.WithAlpha(65.65f));
+            handle.DrawPrimitives(DrawPrimitiveTopology.TriangleList, vertices.AsSpan(0, countVtx), Color.White.WithAlpha(0.1f));
         }
     }
 }

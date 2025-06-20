@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Conchelle <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Conchelle <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Threading;
 using Content.Goobstation.Shared.MisandryBox.Smites;
@@ -27,7 +27,7 @@ public sealed partial class GoobAdminVerbSystem
         {
             Text = thunderstrike,
             Category = VerbCategory.Smite,
-            Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/VerbIcons/smite.svg.65dpi.png")),
+            Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/VerbIcons/smite.svg.192dpi.png")),
             Act = () =>
             {
                 var ogun = EntityManager.System<ThunderstrikeSystem>();
@@ -49,7 +49,7 @@ public sealed partial class GoobAdminVerbSystem
         if (!_admin.HasAdminFlag(player, AdminFlags.Fun))
             return false;
 
-        // 65.
+        // 1984.
         if (HasComp<MapComponent>(args.Target) || HasComp<MapGridComponent>(args.Target))
             return false;
 

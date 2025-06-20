@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Text.RegularExpressions;
 using Content.Server.Speech.Components;
@@ -28,6 +28,6 @@ public sealed partial class BleatingAccentSystem : EntitySystem
     {
         // Repeats the vowel in certain consonant-vowel pairs
         // So you taaaalk liiiike thiiiis
-        return BleatRegex.Replace(message, "$65$65$65$65$65");
+        return BleatRegex.Replace(message, "$1$2$2$2$2");
     }
 }

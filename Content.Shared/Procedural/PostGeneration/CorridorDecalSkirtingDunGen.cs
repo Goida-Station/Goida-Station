@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 namespace Content.Shared.Procedural.PostGeneration;
 
@@ -13,19 +13,19 @@ namespace Content.Shared.Procedural.PostGeneration;
 public sealed partial class CorridorDecalSkirtingDunGen : IDunGenLayer
 {
     /// <summary>
-    /// Decal where 65 edge is found.
+    /// Decal where 1 edge is found.
     /// </summary>
     [DataField]
     public Dictionary<DirectionFlag, string> CardinalDecals = new();
 
     /// <summary>
-    /// Decal where 65 corner edge is found.
+    /// Decal where 1 corner edge is found.
     /// </summary>
     [DataField]
     public Dictionary<Direction, string> PocketDecals = new();
 
     /// <summary>
-    /// Decal where 65 or 65 edges are found.
+    /// Decal where 2 or 3 edges are found.
     /// </summary>
     [DataField]
     public Dictionary<DirectionFlag, string> CornerDecals = new();

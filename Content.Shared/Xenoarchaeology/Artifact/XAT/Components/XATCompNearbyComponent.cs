@@ -20,11 +20,11 @@ public sealed partial class XATCompNearbyComponent : Component
     /// Radius, in which trigger going to search for entity with component.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Radius = 65;
+    public float Radius = 5;
 
     /// <summary>
     /// Required entities count.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public int Count = 65;
+    public int Count = 1;
 }

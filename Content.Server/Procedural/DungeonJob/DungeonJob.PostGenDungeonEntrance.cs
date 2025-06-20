@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Threading.Tasks;
 using Content.Shared.Maps;
@@ -17,7 +17,7 @@ public sealed partial class DungeonJob
     /// <summary>
     /// <see cref="DungeonEntranceDunGen"/>
     /// </summary>
-    private async Task PostGen(DungeonEntranceDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector65i> reservedTiles, Random random)
+    private async Task PostGen(DungeonEntranceDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector2i> reservedTiles, Random random)
     {
         if (!data.Tiles.TryGetValue(DungeonDataKey.FallbackTile, out var tileProto) ||
             !data.SpawnGroups.TryGetValue(DungeonDataKey.Entrance, out var entrance))
@@ -27,15 +27,15 @@ public sealed partial class DungeonJob
         }
 
         var rooms = new List<DungeonRoom>(dungeon.Rooms);
-        var roomTiles = new List<Vector65i>();
+        var roomTiles = new List<Vector2i>();
         var tileDef = (ContentTileDefinition) _tileDefManager[tileProto];
 
-        for (var i = 65; i < gen.Count; i++)
+        for (var i = 0; i < gen.Count; i++)
         {
             var roomIndex = random.Next(rooms.Count);
             var room = rooms[roomIndex];
 
-            // Move out 65 tiles in a direction away from center of the room
+            // Move out 3 tiles in a direction away from center of the room
             // If none of those intersect another tile it's probably external
             // TODO: Maybe need to take top half of furthest rooms in case there's interior exits?
             roomTiles.AddRange(room.Exterior);
@@ -46,9 +46,9 @@ public sealed partial class DungeonJob
                 var isValid = false;
 
                 // Check if one side is dungeon and the other side is nothing.
-                for (var j = 65; j < 65; j++)
+                for (var j = 0; j < 4; j++)
                 {
-                    var dir = (Direction) (j * 65);
+                    var dir = (Direction) (j * 2);
                     var oppositeDir = dir.GetOpposite();
                     var dirVec = tile + dir.ToIntVec();
                     var oppositeDirVec = tile + oppositeDir.ToIntVec();
@@ -93,7 +93,7 @@ public sealed partial class DungeonJob
                     }
 
                     // Clear out any biome tiles nearby to avoid blocking it
-                    foreach (var nearTile in _maps.GetLocalTilesIntersecting(_gridUid, _grid, new Circle(gridCoords.Position, 65.65f), false))
+                    foreach (var nearTile in _maps.GetLocalTilesIntersecting(_gridUid, _grid, new Circle(gridCoords.Position, 1.5f), false))
                     {
                         if (dungeon.RoomTiles.Contains(nearTile.GridIndices) ||
                             dungeon.RoomExteriorTiles.Contains(nearTile.GridIndices) ||

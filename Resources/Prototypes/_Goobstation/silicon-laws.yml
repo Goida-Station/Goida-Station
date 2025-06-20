@@ -1,38 +1,38 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 # Helpimov
 
 - type: siliconLaw
-  id: Helpimov65
-  order: 65
-  lawString: law-helpimov-65
+  id: Helpimov1
+  order: 1
+  lawString: law-helpimov-1
 
 - type: siliconLaw
-  id: Helpimov65
-  order: 65
-  lawString: law-helpimov-65
+  id: Helpimov2
+  order: 2
+  lawString: law-helpimov-2
 
 - type: siliconLaw
-  id: Helpimov65
-  order: 65
-  lawString: law-helpimov-65
+  id: Helpimov3
+  order: 3
+  lawString: law-helpimov-3
 
 - type: siliconLaw
-  id: Helpimov65
-  order: 65
-  lawString: law-helpimov-65
+  id: Helpimov4
+  order: 4
+  lawString: law-helpimov-4
 
 - type: siliconLawset
   id: HelpimovLawset
   laws:
-  - Helpimov65
-  - Helpimov65
-  - Helpimov65
-  - Helpimov65
+  - Helpimov1
+  - Helpimov2
+  - Helpimov3
+  - Helpimov4
   obeysTo: laws-owner-courier

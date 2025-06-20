@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Sprited by MrGreen65#65 (discord), reptilian made by kuro(65), resprited by DreamlyJack(65)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprited by MrGreen06#0618 (discord), reptilian made by kuro(388673708753027083), resprited by DreamlyJack(624946166152298517)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "name": "equipped-INNERCLOTHING",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-INNERCLOTHING-monkey",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

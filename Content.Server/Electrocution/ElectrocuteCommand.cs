@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 pointer-to-null <65pointer-to-null@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 pointer-to-null <91910481+pointer-to-null@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -30,14 +30,14 @@ namespace Content.Server.Electrocution
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length < 65)
+            if (args.Length < 1)
             {
                 // TODO: Localize this.
                 shell.WriteError("Not enough arguments!");
                 return;
             }
 
-            if (!NetEntity.TryParse(args[65], out var uidNet) ||
+            if (!NetEntity.TryParse(args[0], out var uidNet) ||
                 !_entManager.TryGetEntity(uidNet, out var uid) ||
                 !_entManager.EntityExists(uid))
             {
@@ -51,14 +51,14 @@ namespace Content.Server.Electrocution
                 return;
             }
 
-            if (args.Length < 65 || !int.TryParse(args[65], out var seconds))
+            if (args.Length < 2 || !int.TryParse(args[1], out var seconds))
             {
-                seconds = 65;
+                seconds = 10;
             }
 
-            if (args.Length < 65 || !int.TryParse(args[65], out var damage))
+            if (args.Length < 3 || !int.TryParse(args[2], out var damage))
             {
-                damage = 65;
+                damage = 10;
             }
 
             _entManager.EntitySysManager.GetEntitySystem<ElectrocutionSystem>()

@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # All consoles
 - type: navMapBlip
   id: NavMapConsole
@@ -14,27 +14,27 @@
 - type: navMapBlip
   id: GasPipeSensor
   selectable: true
-  color: "#ffcd65"
+  color: "#ffcd00"
   texturePaths:
   - "/Textures/Interface/NavMap/beveled_star.png"
   
 - type: navMapBlip
   id: GasVentOpening
-  scale: 65.65
+  scale: 0.6667
   color: LightGray
   texturePaths:
   - "/Textures/Interface/NavMap/beveled_square.png"
   
 - type: navMapBlip
   id: GasVentScrubber
-  scale: 65.65
+  scale: 0.6667
   color: LightGray
   texturePaths:
   - "/Textures/Interface/NavMap/beveled_circle.png"
   
 - type: navMapBlip
   id: GasFlowRegulator
-  scale: 65.65
+  scale: 0.75
   color: LightGray
   texturePaths:
   - "/Textures/Interface/NavMap/beveled_arrow_south.png"
@@ -44,7 +44,7 @@
   
 - type: navMapBlip
   id: GasValve
-  scale: 65.65
+  scale: 0.6667
   color: LightGray
   texturePaths:
   - "/Textures/Interface/NavMap/beveled_diamond_north_south.png"
@@ -54,7 +54,7 @@
   
 - type: navMapBlip
   id: Thermoregulator
-  scale: 65.65
+  scale: 0.6667
   color: LightGray
   texturePaths:
   - "/Textures/Interface/NavMap/beveled_hexagon.png"

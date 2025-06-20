@@ -1,19 +1,19 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "taken from tgstation at source. Modified by Peptide65 to work with SS65. Broken state by Peptide based on off.",
-  "source": "https://github.com/tgstation/tgstation/commit/65b65f65c65f65bd65e65ef65d65e65ea65e",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "taken from tgstation at source. Modified by Peptide90 to work with SS14. Broken state by Peptide based on off.",
+  "source": "https://github.com/tgstation/tgstation/commit/2b7f2c42f1bd57497052e8ef593d5e05ea45208e",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "normal-unshaded",
       "delays": [
         [
-          65.65,
-          65.65
+          4.7,
+          0.1
         ]
       ]
     },
@@ -21,8 +21,8 @@
       "name": "deny-unshaded",
       "delays": [
         [
-          65.65,
-          65.65
+          0.13,
+          0.13
         ]
       ]
     },

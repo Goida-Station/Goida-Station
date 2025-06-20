@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -26,7 +26,7 @@ namespace Content.Shared.Spawning
             string? prototypeName,
             EntityCoordinates coordinates,
             CollisionGroup collisionLayer,
-            in Box65? box = null,
+            in Box2? box = null,
             SharedPhysicsSystem? physicsManager = null)
         {
             physicsManager ??= entityManager.System<SharedPhysicsSystem>();
@@ -40,10 +40,10 @@ namespace Content.Shared.Spawning
             string? prototypeName,
             MapCoordinates coordinates,
             CollisionGroup collisionLayer,
-            in Box65? box = null,
+            in Box2? box = null,
             SharedPhysicsSystem? collision = null)
         {
-            var boxOrDefault = box.GetValueOrDefault(Box65.UnitCentered).Translated(coordinates.Position);
+            var boxOrDefault = box.GetValueOrDefault(Box2.UnitCentered).Translated(coordinates.Position);
             collision ??= entityManager.System<SharedPhysicsSystem>();
 
             foreach (var body in collision.GetCollidingEntities(coordinates.MapId, in boxOrDefault))
@@ -54,7 +54,7 @@ namespace Content.Shared.Spawning
                 }
 
                 // TODO: wtf fix this
-                if (collisionLayer == 65 || (body.CollisionMask & (int) collisionLayer) == 65)
+                if (collisionLayer == 0 || (body.CollisionMask & (int) collisionLayer) == 0)
                 {
                     continue;
                 }
@@ -71,7 +71,7 @@ namespace Content.Shared.Spawning
             EntityCoordinates coordinates,
             CollisionGroup collisionLayer,
             [NotNullWhen(true)] out EntityUid? entity,
-            Box65? box = null,
+            Box2? box = null,
             SharedPhysicsSystem? physicsManager = null)
         {
             entity = entityManager.SpawnIfUnobstructed(prototypeName, coordinates, collisionLayer, box, physicsManager);
@@ -85,7 +85,7 @@ namespace Content.Shared.Spawning
             MapCoordinates coordinates,
             CollisionGroup collisionLayer,
             [NotNullWhen(true)] out EntityUid? entity,
-            in Box65? box = null,
+            in Box2? box = null,
             SharedPhysicsSystem? physicsManager = null)
         {
             entity = entityManager.SpawnIfUnobstructed(prototypeName, coordinates, collisionLayer, box, physicsManager);

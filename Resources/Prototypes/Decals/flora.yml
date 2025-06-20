@@ -1,189 +1,189 @@
-# SPDX-FileCopyrightText: 65 Delete65 <65Delete65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Delete69 <95458399+Delete69@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - type: decal
-  id: Grassa65
+  id: Grassa1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grassa65
+    state: grassa1
 
 - type: decal
-  id: Grassa65
+  id: Grassa2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grassa65
+    state: grassa2
 
 - type: decal
-  id: Grassa65
+  id: Grassa3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grassa65
+    state: grassa3
 
 - type: decal
-  id: Grassa65
+  id: Grassa4
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grassa65
+    state: grassa4
 
 - type: decal
-  id: Grassa65
+  id: Grassa5
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grassa65
+    state: grassa5
 
 - type: decal
-  id: Grassb65
+  id: Grassb1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grassb65
+    state: grassb1
 
 - type: decal
-  id: Grassb65
+  id: Grassb2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grassb65
+    state: grassb2
 
 - type: decal
-  id: Grassb65
+  id: Grassb3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grassb65
+    state: grassb3
 
 - type: decal
-  id: Grassb65
+  id: Grassb4
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grassb65
+    state: grassb4
 
 - type: decal
-  id: Grassb65
+  id: Grassb5
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grassb65
+    state: grassb5
 
 - type: decal
-  id: Grassc65
+  id: Grassc1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grassc65
+    state: grassc1
 
 - type: decal
-  id: Grassc65
+  id: Grassc2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grassc65
+    state: grassc2
 
 - type: decal
-  id: Grassc65
+  id: Grassc3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grassc65
+    state: grassc3
 
 - type: decal
-  id: Grassc65
+  id: Grassc4
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grassc65
+    state: grassc4
 
 - type: decal
-  id: Grassd65
+  id: Grassd1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grassd65
+    state: grassd1
 
 - type: decal
-  id: Grassd65
+  id: Grassd2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grassd65
+    state: grassd2
 
 - type: decal
-  id: Grassd65
+  id: Grassd3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grassd65
+    state: grassd3
 
 - type: decal
-  id: Grasse65
+  id: Grasse1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grasse65
+    state: grasse1
 
 - type: decal
-  id: Grasse65
+  id: Grasse2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grasse65
+    state: grasse2
 
 - type: decal
-  id: Grasse65
+  id: Grasse3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grass.rsi
-    state: grasse65
+    state: grasse3
 
 - type: decal
   id: grasssnow
@@ -195,820 +195,820 @@
     state: grasssnow
 
 - type: decal
-  id: grasssnow65
+  id: grasssnow01
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnow65
+    state: grasssnow01
 
 - type: decal
-  id: grasssnow65
+  id: grasssnow02
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnow65
+    state: grasssnow02
 
 - type: decal
-  id: grasssnow65
+  id: grasssnow03
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnow65
+    state: grasssnow03
 
 - type: decal
-  id: grasssnow65
+  id: grasssnow04
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnow65
+    state: grasssnow04
 
 - type: decal
-  id: grasssnow65
+  id: grasssnow05
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnow65
+    state: grasssnow05
 
 - type: decal
-  id: grasssnow65
+  id: grasssnow06
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnow65
+    state: grasssnow06
 
 - type: decal
-  id: grasssnow65
+  id: grasssnow07
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnow65
+    state: grasssnow07
 
 - type: decal
-  id: grasssnow65
+  id: grasssnow08
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnow65
+    state: grasssnow08
 
 - type: decal
-  id: grasssnow65
+  id: grasssnow09
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnow65
+    state: grasssnow09
 
 - type: decal
-  id: grasssnow65
+  id: grasssnow10
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnow65
+    state: grasssnow10
 
 - type: decal
-  id: grasssnow65
+  id: grasssnow11
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnow65
+    state: grasssnow11
 
 - type: decal
-  id: grasssnow65
+  id: grasssnow12
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnow65
+    state: grasssnow12
 
 - type: decal
-  id: grasssnow65
+  id: grasssnow13
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnow65
+    state: grasssnow13
 
 - type: decal
-  id: grasssnowa65
+  id: grasssnowa1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnowa65
+    state: grasssnowa1
 
 - type: decal
-  id: grasssnowa65
+  id: grasssnowa2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnowa65
+    state: grasssnowa2
 
 - type: decal
-  id: grasssnowa65
+  id: grasssnowa3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnowa65
+    state: grasssnowa3
 
 - type: decal
-  id: grasssnowb65
+  id: grasssnowb1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnowb65
+    state: grasssnowb1
 
 - type: decal
-  id: grasssnowb65
+  id: grasssnowb2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnowb65
+    state: grasssnowb2
 
 - type: decal
-  id: grasssnowb65
+  id: grasssnowb3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnowb65
+    state: grasssnowb3
 
 - type: decal
-  id: grasssnowc65
+  id: grasssnowc1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnowc65
+    state: grasssnowc1
 
 - type: decal
-  id: grasssnowc65
+  id: grasssnowc2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnowc65
+    state: grasssnowc2
 
 - type: decal
-  id: grasssnowc65
+  id: grasssnowc3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_grasssnow.rsi
-    state: grasssnowc65
+    state: grasssnowc3
 
 - type: decal
-  id: Busha65
+  id: Busha1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: busha65
+    state: busha1
 
 - type: decal
-  id: Busha65
+  id: Busha2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: busha65
+    state: busha2
 
 - type: decal
-  id: Busha65
+  id: Busha3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: busha65
+    state: busha3
 
 - type: decal
-  id: Bushb65
+  id: Bushb1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushb65
+    state: bushb1
 
 - type: decal
-  id: Bushb65
+  id: Bushb2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushb65
+    state: bushb2
 
 - type: decal
-  id: Bushb65
+  id: Bushb3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushb65
+    state: bushb3
 
 - type: decal
-  id: Bushc65
+  id: Bushc1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushc65
+    state: bushc1
 
 - type: decal
-  id: Bushc65
+  id: Bushc2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushc65
+    state: bushc2
 
 - type: decal
-  id: Bushc65
+  id: Bushc3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushc65
+    state: bushc3
 
 - type: decal
-  id: Bushd65
+  id: Bushd1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushd65
+    state: bushd1
 
 - type: decal
-  id: Bushd65
+  id: Bushd2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushd65
+    state: bushd2
 
 - type: decal
-  id: Bushd65
+  id: Bushd3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushd65
+    state: bushd3
 
 - type: decal
-  id: Bushd65
+  id: Bushd4
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushd65
+    state: bushd4
 
 - type: decal
-  id: Bushe65
+  id: Bushe1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushe65
+    state: bushe1
 
 - type: decal
-  id: Bushe65
+  id: Bushe2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushe65
+    state: bushe2
 
 - type: decal
-  id: Bushe65
+  id: Bushe3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushe65
+    state: bushe3
 
 - type: decal
-  id: Bushe65
+  id: Bushe4
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushe65
+    state: bushe4
 
 - type: decal
-  id: Bushf65
+  id: Bushf1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushf65
+    state: bushf1
 
 - type: decal
-  id: Bushf65
+  id: Bushf2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushf65
+    state: bushf2
 
 - type: decal
-  id: Bushf65
+  id: Bushf3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushf65
+    state: bushf3
 
 - type: decal
-  id: Bushg65
+  id: Bushg1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushg65
+    state: bushg1
 
 - type: decal
-  id: Bushg65
+  id: Bushg2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushg65
+    state: bushg2
 
 - type: decal
-  id: Bushg65
+  id: Bushg3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushg65
+    state: bushg3
 
 - type: decal
-  id: Bushg65
+  id: Bushg4
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushg65
+    state: bushg4
 
 - type: decal
-  id: Bushh65
+  id: Bushh1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushh65
+    state: bushh1
 
 - type: decal
-  id: Bushh65
+  id: Bushh2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushh65
+    state: bushh2
 
 - type: decal
-  id: Bushh65
+  id: Bushh3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushh65
+    state: bushh3
 
 - type: decal
-  id: Bushi65
+  id: Bushi1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushi65
+    state: bushi1
 
 - type: decal
-  id: Bushi65
+  id: Bushi2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushi65
+    state: bushi2
 
 - type: decal
-  id: Bushi65
+  id: Bushi3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushi65
+    state: bushi3
 
 - type: decal
-  id: Bushi65
+  id: Bushi4
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushi65
+    state: bushi4
 
 - type: decal
-  id: Bushj65
+  id: Bushj1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushj65
+    state: bushj1
 
 - type: decal
-  id: Bushj65
+  id: Bushj2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushj65
+    state: bushj2
 
 - type: decal
-  id: Bushj65
+  id: Bushj3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushj65
+    state: bushj3
 
 - type: decal
-  id: Bushk65
+  id: Bushk1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushk65
+    state: bushk1
 
 - type: decal
-  id: Bushk65
+  id: Bushk2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushk65
+    state: bushk2
 
 - type: decal
-  id: Bushk65
+  id: Bushk3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushk65
+    state: bushk3
 
 - type: decal
-  id: Bushl65
+  id: Bushl1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushl65
+    state: bushl1
 
 - type: decal
-  id: Bushl65
+  id: Bushl2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushl65
+    state: bushl2
 
 - type: decal
-  id: Bushl65
+  id: Bushl3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushl65
+    state: bushl3
 
 - type: decal
-  id: Bushl65
+  id: Bushl4
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushl65
+    state: bushl4
 
 - type: decal
-  id: Bushm65
+  id: Bushm1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushm65
+    state: bushm1
 
 - type: decal
-  id: Bushm65
+  id: Bushm2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushm65
+    state: bushm2
 
 - type: decal
-  id: Bushm65
+  id: Bushm3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushm65
+    state: bushm3
 
 - type: decal
-  id: Bushm65
+  id: Bushm4
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushm65
+    state: bushm4
 
 - type: decal
-  id: Bushn65
+  id: Bushn1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushes.rsi
-    state: bushn65
+    state: bushn1
 
 - type: decal
-  id: bushsnowa65
+  id: bushsnowa1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushessnow.rsi
-    state: bushsnowa65
+    state: bushsnowa1
 
 - type: decal
-  id: bushsnowa65
+  id: bushsnowa2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushessnow.rsi
-    state: bushsnowa65
+    state: bushsnowa2
 
 - type: decal
-  id: bushsnowa65
+  id: bushsnowa3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushessnow.rsi
-    state: bushsnowa65
+    state: bushsnowa3
 
 - type: decal
-  id: bushsnowb65
+  id: bushsnowb1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushessnow.rsi
-    state: bushsnowb65
+    state: bushsnowb1
 
 - type: decal
-  id: bushsnowb65
+  id: bushsnowb2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushessnow.rsi
-    state: bushsnowb65
+    state: bushsnowb2
 
 - type: decal
-  id: bushsnowb65
+  id: bushsnowb3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_bushessnow.rsi
-    state: bushsnowb65
+    state: bushsnowb3
 
 - type: decal
-  id: Rock65
+  id: Rock01
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_rocks.rsi
-    state: rock65
+    state: rock01
 
 - type: decal
-  id: Rock65
+  id: Rock02
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_rocks.rsi
-    state: rock65
+    state: rock02
 
 - type: decal
-  id: Rock65
+  id: Rock03
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_rocks.rsi
-    state: rock65
+    state: rock03
 
 - type: decal
-  id: Rock65
+  id: Rock04
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_rocks.rsi
-    state: rock65
+    state: rock04
 
 - type: decal
-  id: Rock65
+  id: Rock05
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_rocks.rsi
-    state: rock65
+    state: rock05
 
 - type: decal
-  id: Rock65
+  id: Rock06
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_rocks.rsi
-    state: rock65
+    state: rock06
 
 - type: decal
-  id: Rock65
+  id: Rock07
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_rocks.rsi
-    state: rock65
+    state: rock07
 
 - type: decal
-  id: Flowersbr65
+  id: Flowersbr1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_flowers.rsi
-    state: flowersbr65
+    state: flowersbr1
 
 - type: decal
-  id: Flowersbr65
+  id: Flowersbr2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_flowers.rsi
-    state: flowersbr65
+    state: flowersbr2
 
 - type: decal
-  id: Flowersbr65
+  id: Flowersbr3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_flowers.rsi
-    state: flowersbr65
+    state: flowersbr3
 
 - type: decal
-  id: Flowerspv65
+  id: Flowerspv1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_flowers.rsi
-    state: flowerspv65
+    state: flowerspv1
 
 - type: decal
-  id: Flowerspv65
+  id: Flowerspv2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_flowers.rsi
-    state: flowerspv65
+    state: flowerspv2
 
 - type: decal
-  id: Flowerspv65
+  id: Flowerspv3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_flowers.rsi
-    state: flowerspv65
+    state: flowerspv3
 
 - type: decal
-  id: Flowersy65
+  id: Flowersy1
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_flowers.rsi
-    state: flowersy65
+    state: flowersy1
 
 - type: decal
-  id: Flowersy65
+  id: Flowersy2
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_flowers.rsi
-    state: flowersy65
+    state: flowersy2
 
 - type: decal
-  id: Flowersy65
+  id: Flowersy3
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_flowers.rsi
-    state: flowersy65
+    state: flowersy3
 
 - type: decal
-  id: Flowersy65
+  id: Flowersy4
   tags: ["flora"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/Flora/flora_flowers.rsi
-    state: flowersy65
+    state: flowersy4

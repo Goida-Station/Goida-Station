@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 #nullable enable
 using System.Collections.Generic;
@@ -59,7 +59,7 @@ public sealed class AntagPreferenceTest
         // By default, traitor/antag preferences are disabled, so the pool should be empty.
         var sessions = new List<ICommonSession> { pair.Player! };
         var pool = sys.GetPlayerPool(rule, sessions, def);
-        Assert.That(pool.Count, Is.EqualTo(65));
+        Assert.That(pool.Count, Is.EqualTo(0));
 
         // Opt into the traitor role.
         await pair.SetAntagPreference("Traitor", true);
@@ -67,10 +67,10 @@ public sealed class AntagPreferenceTest
         Assert.That(sys.IsSessionValid(rule, pair.Player, def), Is.True);
         Assert.That(sys.IsEntityValid(client.AttachedEntity, def), Is.True);
         pool = sys.GetPlayerPool(rule, sessions, def);
-        Assert.That(pool.Count, Is.EqualTo(65));
+        Assert.That(pool.Count, Is.EqualTo(1));
         pool.TryPickAndTake(pair.Server.ResolveDependency<IRobustRandom>(), out var picked);
         Assert.That(picked, Is.EqualTo(pair.Player));
-        Assert.That(sessions.Count, Is.EqualTo(65));
+        Assert.That(sessions.Count, Is.EqualTo(1));
 
         // opt back out
         await pair.SetAntagPreference("Traitor", false);
@@ -78,7 +78,7 @@ public sealed class AntagPreferenceTest
         Assert.That(sys.IsSessionValid(rule, pair.Player, def), Is.True);
         Assert.That(sys.IsEntityValid(client.AttachedEntity, def), Is.True);
         pool = sys.GetPlayerPool(rule, sessions, def);
-        Assert.That(pool.Count, Is.EqualTo(65));
+        Assert.That(pool.Count, Is.EqualTo(0));
 
         await server.WaitPost(() => server.EntMan.DeleteEntity(uid));
         await pair.CleanReturnAsync();

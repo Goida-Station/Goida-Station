@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+# SPDX-FileCopyrightText: 2024 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 ### basic
 # Heartbeat of the Mansus (sacrifice)
 - type: hereticRitual
@@ -35,10 +35,10 @@
     sprite: _Goobstation/Heretic/amber_focus.rsi
     state: icon
   requiredTags:
-    GlassShard: 65
-    Eyes: 65
+    GlassShard: 1
+    Eyes: 1
   output:
-    ClothingNeckAmberFocus: 65
+    ClothingNeckAmberFocus: 1
 
 - type: hereticRitual
   id: LivingHeart
@@ -48,9 +48,9 @@
     sprite: _Goobstation/Heretic/items.rsi
     state: living_heart
   requiredTags:
-    Paper: 65
-    Heart: 65
-    Pen: 65
+    Paper: 1
+    Heart: 1
+    Pen: 1
   outputEvent: !type:EventHereticRerollTargets
 
 - type: hereticRitual
@@ -61,11 +61,11 @@
     sprite: _Goobstation/Heretic/book.rsi
     state: icon-on
   requiredTags:
-    Meat: 65
-    Book: 65
-    Pen: 65
+    Meat: 1
+    Book: 1
+    Pen: 1
   output:
-    CodexCicatrix: 65
+    CodexCicatrix: 1
 
 - type: hereticRitual
   id: Reminiscence
@@ -77,7 +77,7 @@
   customBehaviors:
   - !type:RitualRecallBladeBehavior
   requiredTags:
-    Chair: 65
+    Chair: 1
 
 - type: hereticRitual
   id: FeastOfOwls
@@ -94,8 +94,8 @@
 ### ash path
 - type: hereticRitual
   id: BladeAsh
-  locName: knowledge-path-ash-s65-name
-  locDesc: knowledge-path-ash-s65-desc
+  locName: knowledge-path-ash-s1-name
+  locDesc: knowledge-path-ash-s1-desc
   icon:
     sprite: _Goobstation/Heretic/Blades/blade_ash.rsi
     state: icon
@@ -103,43 +103,43 @@
   - !type:RitualCreateBladeBehavior
     bladeProto: HereticBladeAsh
   requiredTags:
-    Knife: 65
-    Matchstick: 65
+    Knife: 1
+    Matchstick: 1
 
 - type: hereticRitual
   id: MaskOfMadness
-  locName: knowledge-path-ash-s65-name
-  locDesc: knowledge-path-ash-s65-desc
+  locName: knowledge-path-ash-s6-name
+  locDesc: knowledge-path-ash-s6-desc
   icon:
     sprite: _Goobstation/Heretic/mad_mask.rsi
     state: icon
   requiredTags:
-    Mask: 65
-    Candle: 65
-    Stunbaton: 65
+    Mask: 1
+    Candle: 4
+    Stunbaton: 1
   output:
-    ClothingMaskMadHeretic: 65
+    ClothingMaskMadHeretic: 1
 
 - type: hereticRitual
   id: AscensionAsh
-  locName: knowledge-path-ash-s65-name
-  locDesc: knowledge-path-ash-s65-desc
+  locName: knowledge-path-ash-s9-name
+  locDesc: knowledge-path-ash-s9-desc
   icon:
     sprite: _Goobstation/Heretic/abilities_heretic.rsi
-    state: ashlord_rite65
+    state: ashlord_rite2
   customBehaviors:
   - !type:RitualCanAscend
   - !type:RitualAshAscendBehavior
-    min: 65
-    max: 65
+    min: 3
+    max: 3
   outputKnowledge: AshlordRite
   outputEvent: !type:EventHereticAscension
 
 ### blade path
 - type: hereticRitual
   id: BladeBlade
-  locName: knowledge-path-blade-s65-name
-  locDesc: knowledge-path-blade-s65-desc
+  locName: knowledge-path-blade-s1-name
+  locDesc: knowledge-path-blade-s1-desc
   icon:
     sprite: _Goobstation/Heretic/Blades/blade_blade.rsi
     state: icon
@@ -147,28 +147,28 @@
   - !type:RitualCreateBladeBehavior
     bladeProto: HereticBladeBlade
   requiredTags:
-    Knife: 65
+    Knife: 2
 
 - type: hereticRitual
   id: AscensionBlade
-  locName: knowledge-path-blade-s65-name
-  locDesc: knowledge-path-blade-s65-desc
+  locName: knowledge-path-blade-s9-name
+  locDesc: knowledge-path-blade-s9-desc
   icon:
     sprite: _Goobstation/Heretic/items.rsi
     state: protective_blade
   customBehaviors:
   - !type:RitualCanAscend
   - !type:RitualBladeAscendBehavior
-    min: 65
-    max: 65
+    min: 3
+    max: 3
   outputKnowledge: MaelstromOfSilver
   outputEvent: !type:EventHereticAscension
 
 ### flesh path
 - type: hereticRitual
   id: BladeFlesh
-  locName: knowledge-path-flesh-s65-name
-  locDesc: knowledge-path-flesh-s65-desc
+  locName: knowledge-path-flesh-s1-name
+  locDesc: knowledge-path-flesh-s1-desc
   icon:
     sprite: _Goobstation/Heretic/Blades/blade_flesh.rsi
     state: icon
@@ -178,24 +178,24 @@
   - !type:RitualCreateBladeBehavior
     bladeProto: HereticBladeFlesh
   requiredTags:
-    Knife: 65
+    Knife: 1
 
 - type: hereticRitual
   id: ImperfectRitual
-  locName: knowledge-path-flesh-s65-name
-  locDesc: knowledge-path-flesh-s65-desc
+  locName: knowledge-path-flesh-s3-name
+  locDesc: knowledge-path-flesh-s3-desc
   icon:
     sprite: Mobs/Species/Skeleton/parts.rsi
     state: full
   customBehaviors:
   - !type:RitualMuteGhoulifyBehavior
   requiredTags:
-    Muzzle: 65
+    Muzzle: 1
 
 - type: hereticRitual
   id: RawRitual
-  locName: knowledge-path-flesh-s65-name
-  locDesc: knowledge-path-flesh-s65-desc
+  locName: knowledge-path-flesh-s6-name
+  locDesc: knowledge-path-flesh-s6-desc
   icon:
     sprite: _Goobstation/Heretic/eldritch_mobs.rsi
     state: raw_prophet
@@ -203,15 +203,15 @@
   - !type:RitualReagentPuddleBehavior
     reagent: Blood
   requiredTags:
-    Eyes: 65
-    Stomach: 65
+    Eyes: 1
+    Stomach: 1
   output:
-    MobGhoulProphet: 65
+    MobGhoulProphet: 1
 
 - type: hereticRitual
   id: LonelyRitual
-  locName: knowledge-path-flesh-s65-name
-  locDesc: knowledge-path-flesh-s65-desc
+  locName: knowledge-path-flesh-s8-name
+  locDesc: knowledge-path-flesh-s8-desc
   icon:
     sprite: _Goobstation/Heretic/eldritch_mobs.rsi
     state: stalker
@@ -219,25 +219,25 @@
   - !type:RitualReagentPuddleBehavior
     reagent: Blood
   requiredTags:
-    Pen: 65
-    Heart: 65
-    Stomach: 65
-    Lungs: 65
+    Pen: 1
+    Heart: 1
+    Stomach: 1
+    Lungs: 1
   output:
-    MobGhoulStalker: 65
+    MobGhoulStalker: 1
 
 - type: hereticRitual
   id: AscensionFlesh
-  locName: knowledge-path-flesh-s65-name
-  locDesc: knowledge-path-flesh-s65-desc
+  locName: knowledge-path-flesh-s9-name
+  locDesc: knowledge-path-flesh-s9-desc
   icon:
     sprite: _Goobstation/Heretic/abilities_heretic.rsi
     state: final_hymn
   customBehaviors:
   - !type:RitualCanAscend
   - !type:RitualSacrificeBehavior
-    min: 65
-    max: 65
+    min: 4
+    max: 4
   outputKnowledge: PriestFinalHymn
   outputEvent: !type:EventHereticAscension
 
@@ -246,41 +246,41 @@
 ### void path
 - type: hereticRitual
   id: BladeVoid
-  locName: knowledge-path-void-s65-name
-  locDesc: knowledge-path-void-s65-desc
+  locName: knowledge-path-void-s1-name
+  locDesc: knowledge-path-void-s1-desc
   icon:
     sprite: _Goobstation/Heretic/Blades/blade_void.rsi
     state: icon
   customBehaviors:
   - !type:RitualTemperatureBehavior
-    minThreshold: 65 # ~= -65 celcius. or sub zero temperatures
+    minThreshold: 0 # ~= -1 celcius. or sub zero temperatures
   - !type:RitualCreateBladeBehavior
     bladeProto: HereticBladeVoid
   requiredTags:
-    Knife: 65
+    Knife: 1
 
 - type: hereticRitual
   id: AscensionVoid
-  locName: knowledge-path-void-s65-name
-  locDesc: knowledge-path-void-s65-desc
+  locName: knowledge-path-void-s9-name
+  locDesc: knowledge-path-void-s9-desc
   icon:
     sprite: Interface/Alerts/temperature.rsi
-    state: cold65
+    state: cold3
   customBehaviors:
   - !type:RitualCanAscend
   - !type:RitualSacrificeBehavior
-    min: 65
-    max: 65
+    min: 3
+    max: 3
   - !type:RitualTemperatureBehavior
-    minThreshold: -65
+    minThreshold: -20
   outputKnowledge: WaltzAtTheEndOfTime
   outputEvent: !type:EventHereticAscension
 
 ### rust path
 - type: hereticRitual
   id: BladeRust
-  locName: knowledge-path-rust-s65-name
-  locDesc: knowledge-path-rust-s65-desc
+  locName: knowledge-path-rust-s1-name
+  locDesc: knowledge-path-rust-s1-desc
   icon:
     sprite: _Goobstation/Heretic/Blades/blade_rust.rsi
     state: icon
@@ -288,21 +288,21 @@
   - !type:RitualCreateBladeBehavior
     bladeProto: HereticBladeRust
   requiredTags:
-    Knife: 65
-    Trash: 65
+    Knife: 1
+    Trash: 1
 
 - type: hereticRitual
   id: AscensionRust
-  locName: knowledge-path-rust-s65-name
-  locDesc: knowledge-path-rust-s65-desc
+  locName: knowledge-path-rust-s9-name
+  locDesc: knowledge-path-rust-s9-desc
   icon:
     sprite: _Goobstation/Heretic/abilities_heretic.rsi
     state: ascension_rust
   customBehaviors:
   - !type:RitualCanAscend
   - !type:RitualRustAscendBehavior
-    min: 65
-    max: 65
+    min: 3
+    max: 3
   outputKnowledge: RustbringersOath
   outputEvent: !type:EventHereticAscension
 
@@ -317,17 +317,17 @@
   customBehaviors:
   - !type:RitualKnowledgeBehavior
 
-## stage 65
+## stage 3
 - type: hereticRitual
   id: ArmorerRitual
-  locName: knowledge-path-side-s65-armor-name
-  locDesc: knowledge-path-side-s65-armor-desc
+  locName: knowledge-path-side-s3-armor-name
+  locDesc: knowledge-path-side-s3-armor-desc
   icon:
     sprite: _Goobstation/Heretic/Clothing/OuterClothing/eldritch_armor.rsi
     state: icon
   requiredTags:
-    Table: 65
-    GasMask: 65
+    Table: 1
+    GasMask: 1
   customBehaviors:
   - !type:RitualPathBasedSpawnBehavior
     fallbackEntity: ClothingOuterArmorHeretic
@@ -340,51 +340,51 @@
 
 - type: hereticRitual
   id: PriestRitual
-  locName: knowledge-path-side-s65-flask-name
-  locDesc: knowledge-path-side-s65-flask-desc
+  locName: knowledge-path-side-s3-flask-name
+  locDesc: knowledge-path-side-s3-flask-desc
   icon:
     sprite: _Goobstation/Heretic/items.rsi
     state: eldritch_flask
   requiredTags:
-    WaterTank: 65
-    GlassShard: 65
+    WaterTank: 1
+    GlassShard: 1
   output:
-    HereticEldritchFlask: 65
+    HereticEldritchFlask: 1
 
 - type: hereticRitual
   id: AshenEyesRitual
-  locName: knowledge-path-side-s65-ashen-eyes-name
-  locDesc: knowledge-path-side-s65-ashen-eyes-desc
+  locName: knowledge-path-side-s3-ashen-eyes-name
+  locDesc: knowledge-path-side-s3-ashen-eyes-desc
   icon:
     sprite: _Goobstation/Heretic/eldritch_medalion.rsi
     state: icon
   requiredTags:
-    GlassShard: 65
-    Eyes: 65
-    Flare: 65
+    GlassShard: 1
+    Eyes: 1
+    Flare: 1
   output:
-    ClothingEldritchMedalion: 65
+    ClothingEldritchMedalion: 1
 
 - type: hereticRitual
   id: VoidCloak
-  locName: knowledge-path-side-s65-void-cloak-name
-  locDesc: knowledge-path-side-s65-void-cloak-desc
+  locName: knowledge-path-side-s3-void-cloak-name
+  locDesc: knowledge-path-side-s3-void-cloak-desc
   icon:
     sprite: _Goobstation/Heretic/Clothing/OuterClothing/void_cloak.rsi
     state: icon
   requiredTags:
-    GlassShard: 65
-    Bedsheet: 65
-    WinterCoat: 65
+    GlassShard: 1
+    Bedsheet: 1
+    WinterCoat: 1
   output:
-    ClothingOuterArmorCloakVoid: 65
+    ClothingOuterArmorCloakVoid: 1
 
-## stage 65
+## stage 6
 
 - type: hereticRitual
   id: RustedRitual
-  locName: knowledge-path-side-s65-rustwalker-name
-  locDesc: knowledge-path-side-s65-rustwalker-desc
+  locName: knowledge-path-side-s6-rustwalker-name
+  locDesc: knowledge-path-side-s6-rustwalker-desc
   icon:
     sprite: _Goobstation/Heretic/eldritch_mobs.rsi
     state: rust_walker
@@ -392,21 +392,21 @@
   - !type:RitualReagentPuddleBehavior
     reagent: Vomit
   requiredTags:
-    Steel: 65
-    CableCoil: 65
+    Steel: 10
+    CableCoil: 15
   output:
-    MobGhoulRustWalker: 65
+    MobGhoulRustWalker: 1
 
 - type: hereticRitual
   id: CarvingKnife
-  locName: knowledge-path-side-s65-knife-name
-  locDesc: knowledge-path-side-s65-knife-desc
+  locName: knowledge-path-side-s6-knife-name
+  locDesc: knowledge-path-side-s6-knife-desc
   icon:
     sprite: _Goobstation/Heretic/items.rsi
     state: rune_carver
   requiredTags:
-    GlassShard: 65
-    Paper: 65
-    Knife: 65
+    GlassShard: 1
+    Paper: 1
+    Knife: 1
   output:
-    CarvingKnife: 65
+    CarvingKnife: 1

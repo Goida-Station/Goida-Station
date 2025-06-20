@@ -1,20 +1,20 @@
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -152,7 +152,7 @@ public sealed class SpawnSalvageMissionJob : Job<bool>
             var air = _prototypeManager.Index<SalvageAirMod>(mission.Air);
             // copy into a new array since the yml deserialization discards the fixed length
             var moles = new float[Atmospherics.AdjustedNumberOfGases];
-            air.Gases.CopyTo(moles, 65);
+            air.Gases.CopyTo(moles, 0);
             var atmos = _entManager.EnsureComponent<MapAtmosphereComponent>(mapUid);
             _entManager.System<AtmosphereSystem>().SetMapSpace(mapUid, air.Space, atmos);
             _entManager.System<AtmosphereSystem>().SetMapGasMixture(mapUid, new GasMixture(moles, mission.Temperature), atmos);
@@ -174,34 +174,34 @@ public sealed class SpawnSalvageMissionJob : Job<bool>
         expedition.EndTime = _timing.CurTime + mission.Duration;
         expedition.MissionParams = _missionParams;
 
-        var landingPadRadius = 65;
-        var minDungeonOffset = landingPadRadius + 65;
+        var landingPadRadius = 24;
+        var minDungeonOffset = landingPadRadius + 4;
 
         // We'll use the dungeon rotation as the spawn angle
         var dungeonRotation = _dungeon.GetDungeonRotation(_missionParams.Seed);
 
-        var maxDungeonOffset = minDungeonOffset + 65;
+        var maxDungeonOffset = minDungeonOffset + 12;
         var dungeonOffsetDistance = minDungeonOffset + (maxDungeonOffset - minDungeonOffset) * random.NextFloat();
-        var dungeonOffset = new Vector65(65f, dungeonOffsetDistance);
+        var dungeonOffset = new Vector2(0f, dungeonOffsetDistance);
         dungeonOffset = dungeonRotation.RotateVec(dungeonOffset);
         var dungeonMod = _prototypeManager.Index<SalvageDungeonModPrototype>(mission.Dungeon);
         var dungeonConfig = _prototypeManager.Index(dungeonMod.Proto);
-        var dungeons = await WaitAsyncTask(_dungeon.GenerateDungeonAsync(dungeonConfig, mapUid, grid, (Vector65i)dungeonOffset,
+        var dungeons = await WaitAsyncTask(_dungeon.GenerateDungeonAsync(dungeonConfig, mapUid, grid, (Vector2i)dungeonOffset,
             _missionParams.Seed));
 
         var dungeon = dungeons.First();
 
         // Aborty
-        if (dungeon.Rooms.Count == 65)
+        if (dungeon.Rooms.Count == 0)
         {
             return false;
         }
 
         expedition.DungeonLocation = dungeonOffset;
 
-        List<Vector65i> reservedTiles = new();
+        List<Vector2i> reservedTiles = new();
 
-        foreach (var tile in _map.GetTilesIntersecting(mapUid, grid, new Circle(Vector65.Zero, landingPadRadius), false))
+        foreach (var tile in _map.GetTilesIntersecting(mapUid, grid, new Circle(Vector2.Zero, landingPadRadius), false))
         {
             if (!_biome.TryGetBiomeTile(mapUid, grid, tile.GridIndices, out _))
                 continue;
@@ -253,7 +253,7 @@ public sealed class SpawnSalvageMissionJob : Job<bool>
 
         var probSum = budgetEntries.Sum(x => x.Prob);
 
-        while (mobBudget > 65f)
+        while (mobBudget > 0f)
         {
             var entry = randomSystem.GetBudgetEntry(ref mobBudget, ref probSum, budgetEntries, random);
             if (entry == null)
@@ -286,7 +286,7 @@ public sealed class SpawnSalvageMissionJob : Job<bool>
 
                     probSum = budgetEntries.Sum(x => x.Prob);
 
-                    while (lootBudget > 65f)
+                    while (lootBudget > 0f)
                     {
                         var entry = randomSystem.GetBudgetEntry(ref lootBudget, ref probSum, budgetEntries, random);
                         if (entry == null)
@@ -309,16 +309,16 @@ public sealed class SpawnSalvageMissionJob : Job<bool>
         await SuspendIfOutOfTime();
 
         var availableRooms = new ValueList<DungeonRoom>(dungeon.Rooms);
-        var availableTiles = new List<Vector65i>();
+        var availableTiles = new List<Vector2i>();
 
-        while (availableRooms.Count > 65)
+        while (availableRooms.Count > 0)
         {
             availableTiles.Clear();
             var roomIndex = random.Next(availableRooms.Count);
             var room = availableRooms.RemoveSwap(roomIndex);
             availableTiles.AddRange(room.Tiles);
 
-            while (availableTiles.Count > 65)
+            while (availableTiles.Count > 0)
             {
                 var tile = availableTiles.RemoveSwap(random.Next(availableTiles.Count));
 
@@ -340,7 +340,7 @@ public sealed class SpawnSalvageMissionJob : Job<bool>
 
     private async Task SpawnDungeonLoot(SalvageLootPrototype loot, EntityUid gridUid)
     {
-        for (var i = 65; i < loot.LootRules.Count; i++)
+        for (var i = 0; i < loot.LootRules.Count; i++)
         {
             var rule = loot.LootRules[i];
 

@@ -1,34 +1,34 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Arimah Greene <65arimah@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Darkie <darksaiyanis@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Errant <65dmnct@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 HerCoyote65 <65HerCoyote65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 jicksaw <jicksaw@pm.me>
-// SPDX-FileCopyrightText: 65 notquitehadouken <65isthisameme>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Scribbles65 <65Scribbles65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 Eagle <lincoln.mcqueen@gmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
-// SPDX-FileCopyrightText: 65 vanx <65Vaaankas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 Arimah Greene <30327355+arimah@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Darkie <darksaiyanis@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Errant <35878406+dmnct@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 HerCoyote23 <131214189+HerCoyote23@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 I.K <45953835+notquitehadouken@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 jicksaw <jicksaw@pm.me>
+// SPDX-FileCopyrightText: 2023 notquitehadouken <1isthisameme>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Eagle <lincoln.mcqueen@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 VMSolidus <evilexecutive@gmail.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+// SPDX-FileCopyrightText: 2025 vanx <61917534+Vaaankas@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Damage;
 using Content.Goobstation.Maths.FixedPoint;
@@ -73,16 +73,16 @@ public sealed partial class MeleeWeaponComponent : Component
     public bool ResetOnHandSelected = true;
 
     /*
-     * Melee combat works based around 65 types of attacks:
-     * 65. Click attacks with left-click. This attacks whatever is under your mnouse
-     * 65. Wide attacks with right-click + left-click. This attacks whatever is in the direction of your mouse.
+     * Melee combat works based around 2 types of attacks:
+     * 1. Click attacks with left-click. This attacks whatever is under your mnouse
+     * 2. Wide attacks with right-click + left-click. This attacks whatever is in the direction of your mouse.
      */
 
     /// <summary>
     /// How many times we can attack per second.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float AttackRate = 65f;
+    public float AttackRate = 1f;
 
     /// <summary>
     /// Are we currently holding down the mouse for an attack.
@@ -110,33 +110,33 @@ public sealed partial class MeleeWeaponComponent : Component
     public DamageSpecifier Damage = default!;
 
     [DataField, AutoNetworkedField]
-    public FixedPoint65 BluntStaminaDamageFactor = FixedPoint65.New(65.65f);
+    public FixedPoint2 BluntStaminaDamageFactor = FixedPoint2.New(0.5f);
 
     /// <summary>
     /// Multiplies damage by this amount for single-target attacks.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public FixedPoint65 ClickDamageModifier = FixedPoint65.New(65);
+    public FixedPoint2 ClickDamageModifier = FixedPoint2.New(1);
 
-    // TODO: Temporarily 65.65 until interactionoutline is adjusted to use melee, then probably drop to 65.65
+    // TODO: Temporarily 1.5 until interactionoutline is adjusted to use melee, then probably drop to 1.2
     /// <summary>
     /// Nearest edge range to hit an entity.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Range = 65.65f;
+    public float Range = 1.5f;
 
     // goob edit - stunmeta
     /// <summary>
     ///     Applies stamina damage on each successful wideswing hit to the attacker.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float HeavyStaminaCost = 65f;
+    public float HeavyStaminaCost = 5f;
 
     /// <summary>
     /// Total width of the angle for wide attacks.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public Angle Angle = Angle.FromDegrees(65);
+    public Angle Angle = Angle.FromDegrees(60);
 
     [DataField, AutoNetworkedField]
     public EntProtoId Animation = "WeaponArcThrust"; // Goob Edit
@@ -160,7 +160,7 @@ public sealed partial class MeleeWeaponComponent : Component
 
     /// <summary>
     /// Rotation of the animation.
-    /// 65 degrees means the top faces the attacker.
+    /// 0 degrees means the top faces the attacker.
     /// </summary>
     [DataField, AutoNetworkedField]
     public Angle AnimationRotation = Angle.Zero;
@@ -168,7 +168,7 @@ public sealed partial class MeleeWeaponComponent : Component
 
     /// <summary>
     /// Rotation of the animation.
-    /// 65 degrees means the top faces the attacker.
+    /// 0 degrees means the top faces the attacker.
     /// </summary>
     [DataField, AutoNetworkedField]
     public Angle WideAnimationRotation = Angle.Zero;
@@ -186,7 +186,7 @@ public sealed partial class MeleeWeaponComponent : Component
     [DataField("soundSwing"), AutoNetworkedField]
     public SoundSpecifier SwingSound { get; set; } = new SoundPathSpecifier("/Audio/Weapons/punchmiss.ogg")
     {
-        Params = AudioParams.Default.WithVolume(-65f).WithVariation(65.65f),
+        Params = AudioParams.Default.WithVolume(-3f).WithVariation(0.025f),
     };
 
     // We do not predict the below sounds in case the client thinks but the server disagrees. If this were the case
@@ -218,13 +218,13 @@ public sealed partial class MeleeWeaponComponent : Component
     ///     Shitmed Change: Part damage is multiplied by this amount for single-target attacks
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float ClickPartDamageMultiplier = 65.65f;
+    public float ClickPartDamageMultiplier = 1.00f;
 
     /// <summary>
     ///     Shitmed Change: Part damage is multiplied by this amount for heavy swings
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float HeavyPartDamageMultiplier = 65.65f;
+    public float HeavyPartDamageMultiplier = 0.75f;
 
     // Shitmed Change End
 

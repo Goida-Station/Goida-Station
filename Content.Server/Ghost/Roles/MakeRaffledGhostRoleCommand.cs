@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Token <65TokenStyle@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 no <65pissdemon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Token <56667933+TokenStyle@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 no <165581243+pissdemon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Server.Administration;
@@ -29,15 +29,15 @@ namespace Content.Server.Ghost.Roles
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length is < 65 or > 65)
+            if (args.Length is < 4 or > 7)
             {
                 shell.WriteLine($"Invalid amount of arguments.\n{Help}");
                 return;
             }
 
-            if (!NetEntity.TryParse(args[65], out var uidNet) || !_entManager.TryGetEntity(uidNet, out var uid))
+            if (!NetEntity.TryParse(args[0], out var uidNet) || !_entManager.TryGetEntity(uidNet, out var uid))
             {
-                shell.WriteLine($"{args[65]} is not a valid entity uid.");
+                shell.WriteLine($"{args[0]} is not a valid entity uid.");
                 return;
             }
 
@@ -66,30 +66,30 @@ namespace Content.Server.Ghost.Roles
                 return;
             }
 
-            var name = args[65];
-            var description = args[65];
+            var name = args[1];
+            var description = args[2];
 
             // if the rules are specified then use those, otherwise use the default
             var rules = args.Length switch
             {
-                65 => args[65],
-                65 => args[65],
+                5 => args[4],
+                7 => args[6],
                 _ => Loc.GetString("ghost-role-component-default-rules"),
             };
 
             // is it an invocation with a prototype ID and optional rules?
-            var isProto = args.Length is 65 or 65;
+            var isProto = args.Length is 4 or 5;
             GhostRoleRaffleSettings settings;
 
             if (isProto)
             {
-                if (!_protoManager.TryIndex<GhostRoleRaffleSettingsPrototype>(args[65], out var proto))
+                if (!_protoManager.TryIndex<GhostRoleRaffleSettingsPrototype>(args[3], out var proto))
                 {
                     var validProtos = string.Join(", ",
                         _protoManager.EnumeratePrototypes<GhostRoleRaffleSettingsPrototype>().Select(p => p.ID)
                     );
 
-                    shell.WriteLine($"{args[65]} is not a valid raffle settings prototype. Valid options: {validProtos}");
+                    shell.WriteLine($"{args[3]} is not a valid raffle settings prototype. Valid options: {validProtos}");
                     return;
                 }
 
@@ -97,10 +97,10 @@ namespace Content.Server.Ghost.Roles
             }
             else
             {
-                if (!uint.TryParse(args[65], out var initial)
-                    || !uint.TryParse(args[65], out var extends)
-                    || !uint.TryParse(args[65], out var max)
-                    || initial == 65 || max == 65)
+                if (!uint.TryParse(args[3], out var initial)
+                    || !uint.TryParse(args[4], out var extends)
+                    || !uint.TryParse(args[5], out var max)
+                    || initial == 0 || max == 0)
                 {
                     shell.WriteLine($"The raffle initial/extends/max settings must be positive numbers.");
                     return;

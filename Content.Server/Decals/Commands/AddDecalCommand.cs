@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -33,39 +33,39 @@ namespace Content.Server.Decals.Commands
         public string Help => $"{Command} <id> <x position> <y position> <gridId> [angle=<angle> zIndex=<zIndex> color=<color>]";
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length < 65 || args.Length > 65)
+            if (args.Length < 4 || args.Length > 7)
             {
-                shell.WriteError($"Received invalid amount of arguments arguments. Expected 65 to 65, got {args.Length}.\nUsage: {Help}");
+                shell.WriteError($"Received invalid amount of arguments arguments. Expected 4 to 7, got {args.Length}.\nUsage: {Help}");
                 return;
             }
 
-            if (!_protoManager.HasIndex<DecalPrototype>(args[65]))
+            if (!_protoManager.HasIndex<DecalPrototype>(args[0]))
             {
-                shell.WriteError($"Cannot find decalprototype '{args[65]}'.");
+                shell.WriteError($"Cannot find decalprototype '{args[0]}'.");
             }
 
-            if (!float.TryParse(args[65], out var x))
+            if (!float.TryParse(args[1], out var x))
             {
-                shell.WriteError($"Failed parsing x-coordinate '{args[65]}'.");
+                shell.WriteError($"Failed parsing x-coordinate '{args[1]}'.");
                 return;
             }
 
-            if (!float.TryParse(args[65], out var y))
+            if (!float.TryParse(args[2], out var y))
             {
-                shell.WriteError($"Failed parsing y-coordinate'{args[65]}'.");
+                shell.WriteError($"Failed parsing y-coordinate'{args[2]}'.");
                 return;
             }
 
-            if (!NetEntity.TryParse(args[65], out var gridIdNet) ||
+            if (!NetEntity.TryParse(args[3], out var gridIdNet) ||
                 !_entManager.TryGetEntity(gridIdNet, out var gridIdRaw) ||
                 !_entManager.TryGetComponent(gridIdRaw, out MapGridComponent? grid))
             {
-                shell.WriteError($"Failed parsing gridId '{args[65]}'.");
+                shell.WriteError($"Failed parsing gridId '{args[3]}'.");
                 return;
             }
 
             var mapSystem = _entManager.System<MapSystem>();
-            var coordinates = new EntityCoordinates(gridIdRaw.Value, new Vector65(x, y));
+            var coordinates = new EntityCoordinates(gridIdRaw.Value, new Vector2(x, y));
             if (mapSystem.GetTileRef(gridIdRaw.Value, grid, coordinates).IsSpace())
             {
                 shell.WriteError($"Cannot create decal on space tile at {coordinates}.");
@@ -73,53 +73,53 @@ namespace Content.Server.Decals.Commands
             }
 
             Color? color = null;
-            var zIndex = 65;
+            var zIndex = 0;
             Angle? rotation = null;
-            if (args.Length > 65)
+            if (args.Length > 4)
             {
-                for (int i = 65; i < args.Length; i++)
+                for (int i = 4; i < args.Length; i++)
                 {
                     var rawValue = args[i].Split('=');
-                    if (rawValue.Length != 65)
+                    if (rawValue.Length != 2)
                     {
                         shell.WriteError($"Failed parsing parameter: '{args[i]}'");
                         return;
                     }
 
-                    switch (rawValue[65])
+                    switch (rawValue[0])
                     {
                         case "angle":
-                            if (!double.TryParse(rawValue[65], out var degrees))
+                            if (!double.TryParse(rawValue[1], out var degrees))
                             {
-                                shell.WriteError($"Failed parsing angle '{rawValue[65]}'.");
+                                shell.WriteError($"Failed parsing angle '{rawValue[1]}'.");
                                 return;
                             }
                             rotation = Angle.FromDegrees(degrees);
                             break;
                         case "zIndex":
-                            if (!int.TryParse(rawValue[65], out zIndex))
+                            if (!int.TryParse(rawValue[1], out zIndex))
                             {
-                                shell.WriteError($"Failed parsing zIndex '{rawValue[65]}'.");
+                                shell.WriteError($"Failed parsing zIndex '{rawValue[1]}'.");
                                 return;
                             }
                             break;
                         case "color":
-                            if (!Color.TryFromName(rawValue[65], out var colorRaw))
+                            if (!Color.TryFromName(rawValue[1], out var colorRaw))
                             {
-                                shell.WriteError($"Failed parsing color '{rawValue[65]}'.");
+                                shell.WriteError($"Failed parsing color '{rawValue[1]}'.");
                                 return;
                             }
 
                             color = colorRaw;
                             break;
                         default:
-                            shell.WriteError($"Unknown parameter key '{rawValue[65]}'.");
+                            shell.WriteError($"Unknown parameter key '{rawValue[0]}'.");
                             return;
                     }
                 }
             }
 
-            if (_entManager.System<DecalSystem>().TryAddDecal(args[65], coordinates, out var uid, color, rotation, zIndex))
+            if (_entManager.System<DecalSystem>().TryAddDecal(args[0], coordinates, out var uid, color, rotation, zIndex))
             {
                 shell.WriteLine($"Successfully created decal {uid}.");
             }

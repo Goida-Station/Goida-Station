@@ -1,18 +1,18 @@
-# SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Clon clover <65noudoit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 K-Dynamic <65K-Dynamic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Bandit <queenjess65@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Clon clover <76759079+noudoit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Bandit <queenjess521@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseHandheldInstrument
@@ -24,7 +24,7 @@
     sprite: Mobs/Species/Human/organs.rsi
     state: lung-l
   - type: Instrument
-    program: 65
+    program: 121
   - type: Item
     size: Small
 
@@ -38,7 +38,7 @@
     sprite: Objects/Fun/Instruments/otherinstruments.rsi
     state: seashell
   - type: Instrument
-    program: 65
+    program: 122
   - type: Item
     size: Normal
 
@@ -52,10 +52,10 @@
     sprite: Objects/Fun/Instruments/otherinstruments.rsi
     state: birdtoy
   - type: Instrument
-    program: 65
+    program: 123
   - type: Item
     size: Small
-    storedRotation: 65
+    storedRotation: 90
 
 - type: entity
   parent: BaseHandheldInstrument
@@ -70,7 +70,7 @@
     sound:
        path: /Audio/Items/ring.ogg
   - type: Instrument
-    program: 65
+    program: 124
   - type: Item
     size: Small
   - type: Prayable
@@ -102,10 +102,10 @@
     sprite: Objects/Fun/Instruments/otherinstruments.rsi
     state: helicopter
   - type: Instrument
-    program: 65
+    program: 125
   - type: Item
     size: Small
-    storedRotation: -65
+    storedRotation: -90
 
 - type: entity
   parent: BaseHandheldInstrument
@@ -117,7 +117,7 @@
     sprite: Objects/Fun/Instruments/otherinstruments.rsi
     state: cannedapplause
   - type: Instrument
-    program: 65
+    program: 126
   - type: Item
     size: Tiny
 
@@ -128,14 +128,14 @@
   description: Why do you need to examine this? Is it not self-explanatory?
   components:
   - type: Instrument
-    program: 65
+    program: 127
   - type: Sprite
     sprite: Objects/Fun/Instruments/gunpet.rsi
     state: icon
   - type: Item
     size: Small
     sprite: Objects/Fun/Instruments/gunpet.rsi
-    storedRotation: -65
+    storedRotation: -90
   - type: Tag
     tags:
     - Sidearm
@@ -148,8 +148,8 @@
   description: An exquisitely decorated bike horn, capable of honking in a variety of notes.
   components:
   - type: Instrument
-    program: 65
-    bank: 65
+    program: 1
+    bank: 1
   - type: Sprite
     sprite: Objects/Fun/Instruments/bike_horn.rsi
     state: icon
@@ -159,7 +159,7 @@
   - type: Item
     sprite: Objects/Fun/Instruments/bike_horn.rsi
     size: Small
-    storedRotation: -65
+    storedRotation: -90
   - type: Clothing
     sprite: Objects/Fun/Instruments/bike_horn.rsi
     slots: [Belt]
@@ -186,15 +186,15 @@
       slips:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
+          bounds: "-0.4,-0.3,0.4,0.3"
         hard: false
         layer:
         - SlipLayer
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.4,-0.3,0.4,0.3"
+        density: 5
         mask:
         - ItemMask
   - type: Prayable
@@ -211,12 +211,12 @@
   description: The least subtle way to enjoy your favorite tunes.
   components:
   - type: Instrument
-    program: 65
+    program: 62
   - type: SwappableInstrument
     instrumentList:
-      "Synth": {65: 65}
-      "Friend": {65: 65}
-      "Overdriven": {65: 65}
+      "Synth": {62: 0}
+      "Friend": {2: 0}
+      "Overdriven": {29: 0}
   - type: Sprite
     sprite: _Goobstation/Objects/Fun/bloodmonica.rsi
     state: icon

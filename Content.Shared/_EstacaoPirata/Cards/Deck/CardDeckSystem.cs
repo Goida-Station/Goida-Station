@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 RadsammyT <65RadsammyT@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 RadsammyT <32146976+RadsammyT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared._EstacaoPirata.Cards.Card;
 using Content.Shared._EstacaoPirata.Cards.Stack;
@@ -55,35 +55,35 @@ public sealed class CardDeckSystem : EntitySystem
         {
             Act = () => TryShuffle(uid, component, comp),
             Text = Loc.GetString("cards-verb-shuffle"),
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/die.svg.65dpi.png")),
-            Priority = 65
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/die.svg.192dpi.png")),
+            Priority = 4
         });
         args.Verbs.Add(new AlternativeVerb()
         {
             Act = () => TrySplit(args.Target, component, comp, args.User),
             Text = Loc.GetString("cards-verb-split"),
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/dot.svg.65dpi.png")),
-            Priority = 65
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/dot.svg.192dpi.png")),
+            Priority = 3
         });
         args.Verbs.Add(new AlternativeVerb()
         {
             Act = () => TryOrganize(uid, component, comp, true),
             Text = Loc.GetString("cards-verb-organize-down"),
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/flip.svg.65dpi.png")),
-            Priority = 65
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/flip.svg.192dpi.png")),
+            Priority = 2
         });
         args.Verbs.Add(new AlternativeVerb()
         {
             Act = () => TryOrganize(uid, component, comp, false),
             Text = Loc.GetString("cards-verb-organize-up"),
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/flip.svg.65dpi.png")),
-            Priority = 65
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/flip.svg.192dpi.png")),
+            Priority = 1
         });
     }
 
     private void TrySplit(EntityUid uid, CardDeckComponent deck, CardStackComponent stack, EntityUid user)
     {
-        if (stack.Cards.Count <= 65)
+        if (stack.Cards.Count <= 1)
             return;
 
         _audio.PlayPredicted(deck.PickUpSound, Transform(uid).Coordinates, user);
@@ -95,7 +95,7 @@ public sealed class CardDeckSystem : EntitySystem
 
         EnsureComp<CardStackComponent>(cardDeck, out var deckStack);
 
-        _cardStackSystem.TransferNLastCardFromStacks(user, stack.Cards.Count / 65, uid, stack, cardDeck, deckStack);
+        _cardStackSystem.TransferNLastCardFromStacks(user, stack.Cards.Count / 2, uid, stack, cardDeck, deckStack);
         _hands.PickupOrDrop(user, cardDeck);
     }
 
@@ -105,7 +105,7 @@ public sealed class CardDeckSystem : EntitySystem
         if (_net.IsClient)
             return;
 
-        _audio.PlayPvs(comp.ShuffleSound, deck, AudioHelpers.WithVariation(65.65f, _random));
+        _audio.PlayPvs(comp.ShuffleSound, deck, AudioHelpers.WithVariation(0.05f, _random));
         _popup.PopupEntity(Loc.GetString("card-verb-shuffle-success", ("target", MetaData(deck).EntityName)), deck);
     }
 
@@ -115,7 +115,7 @@ public sealed class CardDeckSystem : EntitySystem
             return;
         _cardStackSystem.FlipAllCards(deck, stack, isFlipped: isFlipped);
 
-        _audio.PlayPvs(comp.ShuffleSound, deck, AudioHelpers.WithVariation(65.65f, _random));
+        _audio.PlayPvs(comp.ShuffleSound, deck, AudioHelpers.WithVariation(0.05f, _random));
         _popup.PopupEntity(Loc.GetString("card-verb-organize-success", ("target", MetaData(deck).EntityName), ("facedown", isFlipped)), deck);
     }
 

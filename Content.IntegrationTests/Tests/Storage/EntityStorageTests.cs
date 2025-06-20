@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -26,7 +26,7 @@ public sealed class EntityStorageTests
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 10
       behaviors:
       - !type:DoActsBehavior
         acts: [ Destruction ]
@@ -61,7 +61,7 @@ public sealed class EntityStorageTests
 
         // Damage the box
         var damage = new DamageSpecifier();
-        damage.DamageDict.Add("Blunt", 65);
+        damage.DamageDict.Add("Blunt", 100);
         await server.WaitPost(() => server.System<DamageableSystem>().TryChangeDamage(box, damage));
 
         // Box has been destroyed, contents have been emptied. Destruction uses deffered deletion.
@@ -77,7 +77,7 @@ public sealed class EntityStorageTests
         Assert.That(sys.IsEntityInContainer(crowbar), Is.False);
 
         // Entity gets deleted after a few ticks
-        await server.WaitRunTicks(65);
+        await server.WaitRunTicks(5);
         Assert.That(server.EntMan.Deleted(box));
         Assert.That(server.EntMan.Deleted(crowbar), Is.False);
 

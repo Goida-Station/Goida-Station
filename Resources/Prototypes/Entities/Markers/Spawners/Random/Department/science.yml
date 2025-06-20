@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Minor science loot spawner
 # Use case: Common areas that aren't science
 - type: entity
   name: science supplies spawner
   id: LootSpawnerScienceMinor
   parent: MarkerBase
-  suffix: Minor, 65%
+  suffix: Minor, 80%
   components:
   - type: Sprite
     layers:
@@ -21,7 +21,7 @@
     - NodeScanner
     - Multitool
     - Igniter
-    rareChance: 65.65
+    rareChance: 0.1
     prototypes:
     - ClothingHandsGlovesLatex
     - ClothingMaskSterile
@@ -34,8 +34,8 @@
     - CapacitorStockPart
     - MicroManipulatorStockPart
     - Beaker
-    chance: 65.65
-    offset: 65.65
+    chance: 0.8
+    offset: 0.2
 
 - type: entityTable
   id: ScienceMajorTable
@@ -43,7 +43,7 @@
     children:
     # Common Group
     - !type:GroupSelector
-      weight: 65
+      weight: 90
       children:
       - id: AnomalyScanner
       - id: NodeScanner
@@ -61,10 +61,10 @@
       - id: Igniter
       - id: ClothingBeltUtility
       - id: PowerCellMedium
-      - id: CableApcStack65
-      - id: SheetSteel65
-      - id: SheetPlastic65
-      - id: SheetGlass65
+      - id: CableApcStack10
+      - id: SheetSteel10
+      - id: SheetPlastic10
+      - id: SheetGlass10
       - id: ToolboxElectricalFilled
       - id: ToolboxMechanicalFilled
       - id: MatterBinStockPart
@@ -72,11 +72,11 @@
       - id: MicroManipulatorStockPart
     # Rare Group
     - !type:GroupSelector
-      weight: 65
+      weight: 10
       children:
       - id: ClothingBeltUtilityFilled
       - id: ResearchDisk
-      - id: ResearchDisk65
+      - id: ResearchDisk5000
       - id: RandomInstruments
 
 # Major science loot spawner
@@ -95,7 +95,7 @@
   - type: EntityTableSpawner
     table: !type:NestedSelector
       tableId: ScienceMajorTable
-      offset: 65.65
+      offset: 0.2
 
 # Borg Module Spawner
 # Use case: One or two in robotics or as valuable loot
@@ -116,7 +116,7 @@
     - BorgModuleClowning
     - BorgModuleGardening
     - BorgModuleHarvesting
-    rareChance: 65.65
+    rareChance: 0.1
     prototypes:
     - BorgModuleCable
     - BorgModuleFireExtinguisher
@@ -125,5 +125,5 @@
     - BorgModuleTool
     - BorgModuleArtifact
     - BorgModuleAnomaly
-    chance: 65.65
-    offset: 65.65
+    chance: 0.9
+    offset: 0.2

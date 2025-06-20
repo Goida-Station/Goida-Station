@@ -1,20 +1,20 @@
-# SPDX-FileCopyrightText: 65 NULL65 <gost65@yandex.ru>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 FaDeOkno <logkedr65@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Thom <65ItsMeThom@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 TurboTracker <65TurboTrackerss65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 NULL882 <gost6865@yandex.ru>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 FaDeOkno <logkedr18@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Thom <119594676+ItsMeThom@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 TurboTracker <130304754+TurboTrackerss14@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
-# Tier 65
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Tier 1
 - type: technology
   id: AccessibilityTech
   name: research-technology-accessibility
@@ -22,12 +22,12 @@
     sprite: _Goobstation/Objects/Vehicles/hoverchair.rsi
     state: vehicle
   discipline: CivilianServices
-  tier: 65
-  cost: 65
+  tier: 1
+  cost: 4500
   recipeUnlocks:
   - VehicleHoverchairSci
   - PrescriptionGlasses
-  position: 65,65
+  position: 3,4
   technologyPrerequisites:
   - AdvancedEntertainment
 
@@ -38,11 +38,11 @@
     sprite: _Goobstation/Objects/Weapons/Guns/Cannons/syringe_gun.rsi
     state: icon
   discipline: CivilianServices
-  tier: 65
-  cost: 65
+  tier: 1
+  cost: 5000
   recipeUnlocks:
   - SyringeGun
-  position: 65,65
+  position: 3,6
   technologyPrerequisites:
   - BiochemicalStasis
 
@@ -53,16 +53,16 @@
     sprite: Objects/Specific/Medical/handheldcrewmonitor.rsi
     state: scanner
   discipline: CivilianServices
-  tier: 65
-  cost: 65
+  tier: 1
+  cost: 7500
   recipeUnlocks:
   - HandheldCrewMonitor
   - DefibrillatorCompact
-  position: 65,65
+  position: 4,6
   technologyPrerequisites:
   - BiochemicalStasis
 
-# Tier 65
+# Tier 2
 
 - type: technology
   id: HONKWeapons
@@ -71,13 +71,13 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_bananamrtr
   discipline: CivilianServices
-  tier: 65
-  cost: 65
+  tier: 2
+  cost: 6000
   recipeUnlocks:
   - MechEquipmentHonkerBananaMortar
   - MechEquipmentHonkerMousetrapMortar
-  position: 65,65
+  position: 0,6
   technologyPrerequisites:
   - HONKMech
 
-# Tier 65
+# Tier 3

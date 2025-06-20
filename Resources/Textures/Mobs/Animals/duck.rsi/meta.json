@@ -1,69 +1,69 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
-  "license": "CC65-65.65",
+  "license": "CC0-1.0",
   "copyright": "Created By https://github.com/Mith-randalf",
     "states": [
         {
-            "name": "icon-65",
+            "name": "icon-0",
             "delays": [
                 [
-                    65
+                    1
                 ]
             ]
         },
         {
-            "name": "icon-65",
+            "name": "icon-1",
             "delays": [
                 [
-                    65
+                    1
                 ]
             ]
         },
         {
-            "name": "icon-65",
+            "name": "icon-2",
             "delays": [
                 [
-                    65
+                    1
                 ]
             ]
         },
         {
-            "name": "duck-65",
-            "directions": 65
+            "name": "duck-0",
+            "directions": 4
         },
         {
-            "name": "duck-65",
-            "directions": 65
+            "name": "duck-1",
+            "directions": 4
         },
         {
-            "name": "duck-65",
-            "directions": 65
+            "name": "duck-2",
+            "directions": 4
         },
         {
-            "name": "dead-65",
+            "name": "dead-0",
             "delays": [
                 [
-                    65
+                    1
                 ]
             ]
         },
         {
-            "name": "dead-65",
+            "name": "dead-1",
             "delays": [
                 [
-                    65
+                    1
                 ]
             ]
         },
         {
-            "name": "dead-65",
+            "name": "dead-2",
             "delays": [
                 [
-                    65
+                    1
                 ]
             ]
         }

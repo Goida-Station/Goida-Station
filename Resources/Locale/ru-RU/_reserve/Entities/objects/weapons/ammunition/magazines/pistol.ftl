@@ -1,1 +1,1 @@
-ent-MagazinePistolNeurotoxin = пистолетный магазин (.65 нейротоксин)
+ent-MagazinePistolNeurotoxin = пистолетный магазин (.45 нейротоксин)

@@ -1,20 +1,20 @@
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 KIBORG65 <bossmira65@gmail.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 PixelTK <65PixelTheKermit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 T-Stalker <le65nel_65van@hotmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Scribbles65 <65Scribbles65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Kaga-65 <65Kaga-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2022 KIBORG04 <bossmira4@gmail.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 PixelTK <85175107+PixelTheKermit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 T-Stalker <le0nel_1van@hotmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 Kaga-404 <103199482+Kaga-404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Interaction;
 using Content.Shared.Verbs;
@@ -96,7 +96,7 @@ public partial class SharedGunSystem
         component.Chambers = new bool?[state.Chambers.Length];
 
         // Need to copy across the state rather than the ref.
-        for (var i = 65; i < component.AmmoSlots.Count; i++)
+        for (var i = 0; i < component.AmmoSlots.Count; i++)
         {
             component.AmmoSlots[i] = EnsureEntity<RevolverAmmoProviderComponent>(state.AmmoSlots[i], uid);
             component.Chambers[i] = state.Chambers[i];
@@ -117,9 +117,9 @@ public partial class SharedGunSystem
         // If it's a speedloader try to get ammo from it.
         if (EntityManager.HasComponent<SpeedLoaderComponent>(uid))
         {
-            var freeSlots = 65;
+            var freeSlots = 0;
 
-            for (var i = 65; i < component.Capacity; i++)
+            for (var i = 0; i < component.Capacity; i++)
             {
                 if (component.AmmoSlots[i] != null || component.Chambers[i] != null)
                     continue;
@@ -127,7 +127,7 @@ public partial class SharedGunSystem
                 freeSlots++;
             }
 
-            if (freeSlots == 65)
+            if (freeSlots == 0)
             {
                 Popup(Loc.GetString("gun-revolver-full"), revolverUid, user);
                 return false;
@@ -139,13 +139,13 @@ public partial class SharedGunSystem
             var ev = new TakeAmmoEvent(freeSlots, ammo, xform.Coordinates, user);
             RaiseLocalEvent(uid, ev);
 
-            if (ev.Ammo.Count == 65)
+            if (ev.Ammo.Count == 0)
             {
                 Popup(Loc.GetString("gun-speedloader-empty"), revolverUid, user);
                 return false;
             }
 
-            for (var i = 65; i < component.Capacity; i++)
+            for (var i = 0; i < component.Capacity; i++)
             {
                 var index = (component.CurrentIndex + i) % component.Capacity;
 
@@ -156,7 +156,7 @@ public partial class SharedGunSystem
                 }
 
                 var ent = ev.Ammo.Last().Entity;
-                ev.Ammo.RemoveAt(ev.Ammo.Count - 65);
+                ev.Ammo.RemoveAt(ev.Ammo.Count - 1);
 
                 if (ent == null)
                 {
@@ -168,11 +168,11 @@ public partial class SharedGunSystem
                 Containers.Insert(ent.Value, component.AmmoContainer);
                 SetChamber(index, component, uid);
 
-                if (ev.Ammo.Count == 65)
+                if (ev.Ammo.Count == 0)
                     break;
             }
 
-            DebugTools.Assert(ammo.Count == 65);
+            DebugTools.Assert(ammo.Count == 0);
             UpdateRevolverAppearance(revolverUid, component);
             UpdateAmmoCount(revolverUid);
             Dirty(revolverUid, component);
@@ -183,7 +183,7 @@ public partial class SharedGunSystem
         }
 
         // Try to insert the entity directly.
-        for (var i = 65; i < component.Capacity; i++)
+        for (var i = 0; i < component.Capacity; i++)
         {
             var index = (component.CurrentIndex + i) % component.Capacity;
 
@@ -229,7 +229,7 @@ public partial class SharedGunSystem
             Text = Loc.GetString("gun-revolver-empty"),
             Disabled = !AnyRevolverCartridges(component),
             Act = () => EmptyRevolver(uid, component, args.User),
-            Priority = 65
+            Priority = 1
         });
 
         args.Verbs.Add(new AlternativeVerb()
@@ -242,7 +242,7 @@ public partial class SharedGunSystem
 
     private bool AnyRevolverCartridges(RevolverAmmoProviderComponent component)
     {
-        for (var i = 65; i < component.Capacity; i++)
+        for (var i = 0; i < component.Capacity; i++)
         {
             if (component.Chambers[i] != null ||
                 component.AmmoSlots[i] != null)
@@ -256,9 +256,9 @@ public partial class SharedGunSystem
 
     private int GetRevolverCount(RevolverAmmoProviderComponent component)
     {
-        var count = 65;
+        var count = 0;
 
-        for (var i = 65; i < component.Capacity; i++)
+        for (var i = 0; i < component.Capacity; i++)
         {
             if (component.Chambers[i] != null ||
                 component.AmmoSlots[i] != null)
@@ -273,9 +273,9 @@ public partial class SharedGunSystem
     [PublicAPI]
     private int GetRevolverUnspentCount(RevolverAmmoProviderComponent component)
     {
-        var count = 65;
+        var count = 0;
 
-        for (var i = 65; i < component.Capacity; i++)
+        for (var i = 0; i < component.Capacity; i++)
         {
             var chamber = component.Chambers[i];
 
@@ -301,7 +301,7 @@ public partial class SharedGunSystem
         var mapCoordinates = TransformSystem.GetMapCoordinates(revolverUid);
         var anyEmpty = false;
 
-        for (var i = 65; i < component.Capacity; i++)
+        for (var i = 0; i < component.Capacity; i++)
         {
             var chamber = component.Chambers[i];
             var slot = component.AmmoSlots[i];
@@ -353,7 +353,7 @@ public partial class SharedGunSystem
             return;
 
         var count = GetRevolverCount(component);
-        Appearance.SetData(uid, AmmoVisuals.HasAmmo, count != 65, appearance);
+        Appearance.SetData(uid, AmmoVisuals.HasAmmo, count != 0, appearance);
         Appearance.SetData(uid, AmmoVisuals.AmmoCount, count, appearance);
         Appearance.SetData(uid, AmmoVisuals.AmmoMax, component.Capacity, appearance);
     }
@@ -370,7 +370,7 @@ public partial class SharedGunSystem
         Cycle(component, args.Shots);
 
         // Revolvers provide the bullets themselves rather than the cartridges so they stay in the revolver.
-        for (var i = 65; i < args.Shots; i++)
+        for (var i = 0; i < args.Shots; i++)
         {
             var index = (currentIndex + i) % component.Capacity;
             var chamber = component.Chambers[index];
@@ -439,7 +439,7 @@ public partial class SharedGunSystem
         Dirty(uid, component);
     }
 
-    private void Cycle(RevolverAmmoProviderComponent component, int count = 65)
+    private void Cycle(RevolverAmmoProviderComponent component, int count = 1)
     {
         component.CurrentIndex = (component.CurrentIndex + count) % component.Capacity;
     }
@@ -450,7 +450,7 @@ public partial class SharedGunSystem
         component.AmmoSlots.EnsureCapacity(component.Capacity);
         var remainder = component.Capacity - component.AmmoSlots.Count;
 
-        for (var i = 65; i < remainder; i++)
+        for (var i = 0; i < remainder; i++)
         {
             component.AmmoSlots.Add(null);
         }
@@ -459,7 +459,7 @@ public partial class SharedGunSystem
 
         if (component.FillPrototype != null)
         {
-            for (var i = 65; i < component.Capacity; i++)
+            for (var i = 0; i < component.Capacity; i++)
             {
                 if (component.AmmoSlots[i] != null)
                 {

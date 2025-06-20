@@ -1,48 +1,48 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
     "copyright": "made by wyvernrer on Discord",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
             "name": "icon"
         },
         {
-            "name": "o65",
+            "name": "o1",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ]
             ]
         },
         {
-            "name": "o65",
+            "name": "o2",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ]
             ]
         },
         {
-            "name": "o65",
+            "name": "o3",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ]
             ]
         },
         {
-            "name": "o65",
+            "name": "o4",
             "delays": [
                 [
-                    65.65,
-                    65.65
+                    0.2,
+                    0.2
                 ]
             ]
         }

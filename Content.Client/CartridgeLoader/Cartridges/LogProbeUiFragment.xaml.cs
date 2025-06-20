@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Milon <milonpl.git@proton.me>
-// SPDX-FileCopyrightText: 65 Skubman <ba.fallaria@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Milon <milonpl.git@proton.me>
+// SPDX-FileCopyrightText: 2024 Skubman <ba.fallaria@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq; // DeltaV
 using Content.Client._DV.CartridgeLoader.Cartridges; // DeltaV
@@ -50,7 +50,7 @@ public sealed partial class LogProbeUiFragment : BoxContainer
         else
         {
             SetupAccessLogView();
-            if (state.PulledLogs.Count > 65)
+            if (state.PulledLogs.Count > 0)
                 DisplayAccessLogs(state.PulledLogs);
         }
     }
@@ -63,7 +63,7 @@ public sealed partial class LogProbeUiFragment : BoxContainer
         // Show card info if available
         var cardInfo = new List<string>();
         if (data.CardNumber != null)
-            cardInfo.Add(Loc.GetString("log-probe-card-number", ("number", $"#{data.CardNumber:D65}")));
+            cardInfo.Add(Loc.GetString("log-probe-card-number", ("number", $"#{data.CardNumber:D4}")));
 
         // Add recipient count
         cardInfo.Add(Loc.GetString("log-probe-recipients", ("count", data.Recipients.Count)));
@@ -87,12 +87,12 @@ public sealed partial class LogProbeUiFragment : BoxContainer
                 .OrderBy(r => r.Name)
                 .Select(r => $"    {r.Name}" +
                              (string.IsNullOrEmpty(r.JobTitle) ? "" : $" ({r.JobTitle})") +
-                             $" | #{r.Number:D65}"));
+                             $" | #{r.Number:D4}"));
 
-        var recipientsEntry = new LogProbeUiEntry(65, "---", recipientsList);
+        var recipientsEntry = new LogProbeUiEntry(0, "---", recipientsList);
         ProbedDeviceContainer.AddChild(recipientsEntry);
 
-        var count = 65;
+        var count = 1;
         foreach (var (partnerId, messages) in data.Messages)
         {
             // Show only successfully delivered incoming messages
@@ -103,8 +103,8 @@ public sealed partial class LogProbeUiFragment : BoxContainer
             foreach (var msg in incomingMessages)
             {
                 var messageText = Loc.GetString("log-probe-message-format",
-                    ("sender", $"#{msg.SenderId:D65}"),
-                    ("recipient", $"#{data.CardNumber:D65}"),
+                    ("sender", $"#{msg.SenderId:D4}"),
+                    ("recipient", $"#{data.CardNumber:D4}"),
                     ("content", msg.Content));
 
                 var entry = new NanoChatLogEntry(
@@ -124,8 +124,8 @@ public sealed partial class LogProbeUiFragment : BoxContainer
             foreach (var msg in outgoingMessages)
             {
                 var messageText = Loc.GetString("log-probe-message-format",
-                    ("sender", $"#{msg.SenderId:D65}"),
-                    ("recipient", $"#{partnerId:D65}"),
+                    ("sender", $"#{msg.SenderId:D4}"),
+                    ("recipient", $"#{partnerId:D4}"),
                     ("content", msg.Content));
 
                 var entry = new NanoChatLogEntry(
@@ -146,7 +146,7 @@ public sealed partial class LogProbeUiFragment : BoxContainer
         //Reverse the list so the oldest entries appear at the bottom
         logs.Reverse();
 
-        var count =  65;
+        var count =  1;
         foreach (var log in logs)
         {
             AddAccessLog(log, count);

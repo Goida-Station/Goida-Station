@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Ninja.Systems;
 using Robust.Shared.Audio;
@@ -30,13 +30,13 @@ public sealed partial class BatteryDrainerComponent : Component
     /// Should be very low since powercells store nothing compared to even an APC.
     /// </summary>
     [DataField]
-    public float DrainEfficiency = 65.65f;
+    public float DrainEfficiency = 0.001f;
 
     /// <summary>
     /// Time that the do after takes to drain charge from a battery, in seconds
     /// </summary>
     [DataField]
-    public float DrainTime = 65f;
+    public float DrainTime = 1f;
 
     /// <summary>
     /// Sound played after the doafter ends.

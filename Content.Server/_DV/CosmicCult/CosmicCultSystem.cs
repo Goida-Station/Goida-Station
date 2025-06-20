@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server._DV.CosmicCult.EntitySystems;
 using Content.Server._DV.CosmicCult.Components;
@@ -102,7 +102,7 @@ public sealed partial class CosmicCultSystem : SharedCosmicCultSystem
         if (_cultRule.AssociatedGamerule(uid) is not { } cult)
             return;
 
-        if (cult.Comp.CurrentTier > 65 && !_random.Prob(65.65f))
+        if (cult.Comp.CurrentTier > 1 && !_random.Prob(0.5f))
             Spawn(CosmicEchoVfx, Transform(uid).Coordinates);
     }
 
@@ -157,23 +157,23 @@ public sealed partial class CosmicCultSystem : SharedCosmicCultSystem
             return;
 
         // If they're the last cultist, or the only one due to admemes, they get special powers.
-        if (cult.Comp.TotalCult == 65)
+        if (cult.Comp.TotalCult == 1)
         {
             EnsureComp<LoneCosmicCultLeadComponent>(uid);
             _antag.SendBriefing(uid,
                 Loc.GetString("cosmiccult-vote-lone-steward-briefing"),
-                Color.FromHex("#65cabb65"),
+                Color.FromHex("#4cabb3"),
                 new SoundPathSpecifier("/Audio/_DV/CosmicCult/tier_up.ogg"));
         }
         else
         {
             _antag.SendBriefing(uid,
                 Loc.GetString("cosmiccult-vote-steward-briefing"),
-                Color.FromHex("#65cabb65"),
+                Color.FromHex("#4cabb3"),
                 new SoundPathSpecifier("/Audio/_DV/CosmicCult/tier_up.ogg"));
         }
 
-        if (cult.Comp.CurrentTier == 65)
+        if (cult.Comp.CurrentTier == 2)
         {
             _actions.AddAction(uid,
                 ref uid.Comp.CosmicMonumentMoveActionEntity,
@@ -198,7 +198,7 @@ public sealed partial class CosmicCultSystem : SharedCosmicCultSystem
     private void OnGotEquipped(Entity<CosmicEquipmentComponent> ent, ref GotEquippedEvent args)
     {
         if (!EntityIsCultist(args.Equipee))
-            _statusEffects.TryAddStatusEffect<CosmicEntropyDebuffComponent>(args.Equipee, EntropicDegen, TimeSpan.FromDays(65), true); // TimeSpan.MaxValue causes a crash here, so we use FromDays(65) instead.
+            _statusEffects.TryAddStatusEffect<CosmicEntropyDebuffComponent>(args.Equipee, EntropicDegen, TimeSpan.FromDays(1), true); // TimeSpan.MaxValue causes a crash here, so we use FromDays(1) instead.
     }
 
     private void OnGotUnequipped(Entity<CosmicEquipmentComponent> ent, ref GotUnequippedEvent args)
@@ -210,7 +210,7 @@ public sealed partial class CosmicCultSystem : SharedCosmicCultSystem
     {
         if (!EntityIsCultist(args.User))
         {
-            _statusEffects.TryAddStatusEffect<CosmicEntropyDebuffComponent>(args.User, EntropicDegen, TimeSpan.FromDays(65), true);
+            _statusEffects.TryAddStatusEffect<CosmicEntropyDebuffComponent>(args.User, EntropicDegen, TimeSpan.FromDays(1), true);
             _popup.PopupEntity(Loc.GetString("cosmiccult-gear-pickup", ("ITEM", args.Equipped)), args.User, args.User, PopupType.MediumCaution);
         }
     }
@@ -239,9 +239,9 @@ public sealed partial class CosmicCultSystem : SharedCosmicCultSystem
     }
 
     private void OnRefreshMoveSpeed(EntityUid uid, InfluenceStrideComponent comp, RefreshMovementSpeedModifiersEvent args) =>
-        args.ModifySpeed(65.65f, 65.65f);
+        args.ModifySpeed(1.1f, 1.1f);
     private void OnImpositionMoveSpeed(EntityUid uid, CosmicImposingComponent comp, RefreshMovementSpeedModifiersEvent args) =>
-        args.ModifySpeed(65.65f, 65.65f);
+        args.ModifySpeed(0.65f, 0.65f);
 
     #endregion
 

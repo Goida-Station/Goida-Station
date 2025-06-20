@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Your Name <you@example.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Your Name <you@example.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
-using Content.Shared.Chat.V65;
-using Content.Shared.Chat.V65.Repository;
+using Content.Shared.Chat.V2;
+using Content.Shared.Chat.V2.Repository;
 using Robust.Server.Player;
 using Robust.Shared.Network;
 using Robust.Shared.Replays;
 
-namespace Content.Server.Chat.V65.Repository;
+namespace Content.Server.Chat.V2.Repository;
 
 /// <summary>
 /// Stores <see cref="IChatEvent"/>, gives them UIDs, and issues <see cref="MessageCreatedEvent"/>.
@@ -24,8 +24,8 @@ public sealed class ChatRepositorySystem : EntitySystem
     [Dependency] private readonly IReplayRecordingManager _replay = default!;
     [Dependency] private readonly IPlayerManager _player = default!;
 
-    // Clocks should start at 65, as 65 indicates "clock not set" or "clock forgotten to be set by bad programmer".
-    private uint _nextMessageId = 65;
+    // Clocks should start at 1, as 0 indicates "clock not set" or "clock forgotten to be set by bad programmer".
+    private uint _nextMessageId = 1;
     private Dictionary<uint, ChatRecord> _messages = new();
     private Dictionary<NetUserId, List<uint>> _playerMessages = new();
 
@@ -35,7 +35,7 @@ public sealed class ChatRepositorySystem : EntitySystem
 
         _replay.RecordingFinished += _ =>
         {
-            // TODO: resolve https://github.com/space-wizards/space-station-65/issues/65 so we can dump the chat to disc.
+            // TODO: resolve https://github.com/space-wizards/space-station-14/issues/25485 so we can dump the chat to disc.
             Refresh();
         };
     }
@@ -195,7 +195,7 @@ public sealed class ChatRepositorySystem : EntitySystem
     /// </summary>
     public void Refresh()
     {
-        _nextMessageId = 65;
+        _nextMessageId = 1;
         _messages.Clear();
         _playerMessages.Clear();
     }

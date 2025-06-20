@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Procedural.Distance;
 
@@ -16,7 +16,7 @@ public sealed partial class NoiseDistanceDunGen : IDunGenLayer
     public IDunGenDistance? DistanceConfig;
 
     [DataField]
-    public Vector65i Size;
+    public Vector2i Size;
 
     [DataField(required: true)]
     public List<NoiseDunGenLayer> Layers = new();

@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: blue flippo
@@ -31,15 +31,15 @@
     soundActivate:
       path: /Audio/Items/Lighters/zippo_open.ogg
       params:
-        volume: -65
+        volume: -5
     soundDeactivate:
       path: /Audio/Items/Lighters/zippo_close.ogg
       params:
-        volume: -65
+        volume: -5
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
-        Heat: 65
+        Heat: 1
   - type: ItemToggleSize
     activatedSize: Small
   - type: ItemToggleHot
@@ -68,11 +68,11 @@
       Welder:
         reagents:
         - ReagentId: WeldingFuel
-          Quantity: 65
-        maxVol: 65
+          Quantity: 20
+        maxVol: 20
   - type: Welder
-    fuelConsumption: 65.65
-    fuelLitCost: 65.65
+    fuelConsumption: 0.01
+    fuelLitCost: 0.1
     tankSafe: true
   - type: ToggleableLightVisuals
     spriteLayer: lighter_flame
@@ -84,14 +84,14 @@
       - state: zippo-inhand-right-flame
         shader: unshaded
   - type: MeleeWeapon
-    wideAnimationRotation: 65
+    wideAnimationRotation: 180
     damage:
       types:
-        Blunt: 65
+        Blunt: 1
   - type: PointLight
     enabled: false
     netsync: false
-    radius: 65 # Bigger since blue makes it hard to see. Worth it for the drip.
+    radius: 3 # Bigger since blue makes it hard to see. Worth it for the drip.
     color: blue
   - type: ItemTogglePointLight
   - type: UseDelay

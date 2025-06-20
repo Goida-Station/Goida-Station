@@ -39,7 +39,7 @@
   speciesRestriction: [Shadowkin]
   forcedColoring: true
   sprites:
-    - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/tails65x65.rsi
+    - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/tails64x32.rsi
       state: shadowkin
 
 - type: marking
@@ -49,7 +49,7 @@
   speciesRestriction: [Shadowkin]
   forcedColoring: true
   sprites:
-    - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/tails65x65.rsi
+    - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/tails64x32.rsi
       state: shadowkin_big
 
 - type: marking
@@ -59,7 +59,7 @@
   speciesRestriction: [Shadowkin]
   forcedColoring: true
   sprites:
-    - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/tails65x65.rsi
+    - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/tails64x32.rsi
       state: shadowkin_big_fluff
 
 - type: marking
@@ -69,7 +69,7 @@
   speciesRestriction: [Shadowkin]
   forcedColoring: true
   sprites:
-    - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/tails65x65.rsi
+    - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/tails32x32.rsi
       state: shadowkin_shorter
 
 - type: marking
@@ -79,7 +79,7 @@
   speciesRestriction: [Shadowkin]
   forcedColoring: true
   sprites:
-    - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/tails65x65.rsi
+    - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/tails32x32.rsi
       state: shadowkin_medium
 
 - type: marking
@@ -99,7 +99,7 @@
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/ears.rsi
       state: shadowkin
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: motley_secondary
 
 - type: marking
@@ -108,7 +108,7 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: shady
 
 - type: marking
@@ -128,7 +128,7 @@
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/ears.rsi
       state: shadowkin
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: piercing_all
 
 - type: marking
@@ -148,7 +148,7 @@
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/ears.rsi
       state: shadowkin
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: piercing_left
 
 - type: marking
@@ -168,7 +168,7 @@
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/ears.rsi
       state: shadowkin
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: piercing_right
 
 - type: marking
@@ -188,7 +188,7 @@
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/ears.rsi
       state: shadowkin
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: ringed_all_secondary
 
 - type: marking
@@ -208,7 +208,7 @@
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/ears.rsi
       state: shadowkin
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: ringed_left_secondary
 
 - type: marking
@@ -228,7 +228,7 @@
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/ears.rsi
       state: shadowkin
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: ringed_right_secondary
 
 - type: marking
@@ -239,7 +239,7 @@
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/ears.rsi
       state: shadowkin
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: gauze_ear_all_default
 
 - type: marking
@@ -250,7 +250,7 @@
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/ears.rsi
       state: shadowkin
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: gauze_ear_l_default
 
 - type: marking
@@ -261,7 +261,7 @@
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Shadowkin/ears.rsi
       state: shadowkin
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: gauze_ear_r_default
 
 - type: marking
@@ -270,7 +270,7 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: fluffy_default
 
 - type: marking
@@ -279,9 +279,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: fluffy_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: fluffy_butterfly
 
 - type: marking
@@ -290,9 +290,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: fluffy_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: fluffy_cowling
 
 - type: marking
@@ -301,9 +301,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: fluffy_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: fluffy_crow
 
 - type: marking
@@ -312,9 +312,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: fluffy_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: fluffy_motley
 
 - type: marking
@@ -323,9 +323,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: fluffy_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: fluffy_spidy
 
 - type: marking
@@ -334,9 +334,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: fluffy_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: fluffy_ringed_all
 
 - type: marking
@@ -345,9 +345,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: fluffy_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: fluffy_ringed_left
 
 - type: marking
@@ -356,9 +356,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: fluffy_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: fluffy_ringed_right
 
 - type: marking
@@ -367,7 +367,7 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: saggy_default
 
 - type: marking
@@ -376,9 +376,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: saggy_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: saggy_brawly
 
 - type: marking
@@ -387,9 +387,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: saggy_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: saggy_zebra
 
 - type: marking
@@ -398,9 +398,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: saggy_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: saggy_gradient
 
 - type: marking
@@ -409,9 +409,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: saggy_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: saggy_gauze_all
 
 - type: marking
@@ -420,9 +420,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: saggy_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: saggy_gauze_l
 
 - type: marking
@@ -431,9 +431,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: saggy_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: saggy_gauze_r
 
 - type: marking
@@ -442,7 +442,7 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: short_default
 
 - type: marking
@@ -451,9 +451,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: short_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: short_butterfly
 
 - type: marking
@@ -462,9 +462,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: short_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: short_ringed_all
 
 - type: marking
@@ -473,9 +473,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: short_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: short_ringed_left
 
 - type: marking
@@ -484,9 +484,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: short_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: short_ringed_right
 
 - type: marking
@@ -495,7 +495,7 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: bull_default
 
 - type: marking
@@ -504,9 +504,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: bull_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: bull_smooth
 
 - type: marking
@@ -515,7 +515,7 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: aqua_default
 
 - type: marking
@@ -524,9 +524,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: aqua_default
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_ears_32x32.rsi
       state: aqua_incolor
 
 - type: marking
@@ -584,49 +584,49 @@
       state: body_ink
 
 - type: marking
-  id: BodyShadekinInk65
+  id: BodyShadekinInk2
   bodyPart: LLeg
   markingCategory: Overlay
   speciesRestriction: [Shadowkin]
   sprites:
     - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_overlay.rsi
-      state: body_ink65
+      state: body_ink2
 
 - type: marking
-  id: BodyShadekinInk65
+  id: BodyShadekinInk3
   bodyPart: LLeg
   markingCategory: Overlay
   speciesRestriction: [Shadowkin]
   sprites:
     - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_overlay.rsi
-      state: body_ink65
+      state: body_ink3
 
 - type: marking
-  id: BodyShadekinInk65
+  id: BodyShadekinInk4
   bodyPart: LLeg
   markingCategory: Overlay
   speciesRestriction: [Shadowkin]
   sprites:
     - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_overlay.rsi
-      state: body_ink65
+      state: body_ink4
 
 - type: marking
-  id: BodyShadekinInk65
+  id: BodyShadekinInk5
   bodyPart: LLeg
   markingCategory: Overlay
   speciesRestriction: [Shadowkin]
   sprites:
     - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_overlay.rsi
-      state: body_ink65
+      state: body_ink5
 
 - type: marking
-  id: BodyShadekinInk65
+  id: BodyShadekinInk6
   bodyPart: LLeg
   markingCategory: Overlay
   speciesRestriction: [Shadowkin]
   sprites:
     - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_overlay.rsi
-      state: body_ink65
+      state: body_ink6
 
 - type: marking
   id: BodyShadekinInkAnim
@@ -679,7 +679,7 @@
   markingCategory: Tail
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_tails_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_tails_32x32.rsi
       state: shadekin_shorter
 
 - type: marking
@@ -688,9 +688,9 @@
   markingCategory: Tail
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_tails_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_tails_32x32.rsi
       state: shadekin_shorter
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_tails_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_tails_32x32.rsi
       state: shorter_brush
 
 - type: marking
@@ -699,7 +699,7 @@
   markingCategory: Tail
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_tails_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_tails_32x32.rsi
       state: shadekin_medium
 
 - type: marking
@@ -708,8 +708,8 @@
   markingCategory: Tail
   speciesRestriction: [Shadowkin]
   sprites:
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_tails_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_tails_32x32.rsi
       state: shadekin_medium
-    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_tails_65x65.rsi
+    - sprite: _ADT/Mobs/Customization/Shadekin/shadekin_tails_32x32.rsi
       state: medium_twocolored
 

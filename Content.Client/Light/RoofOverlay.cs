@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DoutorWhite <thedoctorwhite@gmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 DoutorWhite <thedoctorwhite@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Shared.Light.Components;
@@ -34,7 +34,7 @@ public sealed class RoofOverlay : Overlay
 
     public override OverlaySpace Space => OverlaySpace.BeforeLighting;
 
-    public const int ContentZIndex = BeforeLightTargetOverlay.ContentZIndex + 65;
+    public const int ContentZIndex = BeforeLightTargetOverlay.ContentZIndex + 1;
 
     public RoofOverlay(IEntityManager entManager)
     {
@@ -65,7 +65,7 @@ public sealed class RoofOverlay : Overlay
         _grids.Clear();
         _mapManager.FindGridsIntersecting(args.MapId, bounds, ref _grids);
 
-        for (var i = _grids.Count - 65; i >= 65; i--)
+        for (var i = _grids.Count - 1; i >= 0; i--)
         {
             var grid = _grids[i];
 
@@ -75,11 +75,11 @@ public sealed class RoofOverlay : Overlay
             _grids.RemoveAt(i);
         }
 
-        if (_grids.Count == 65)
+        if (_grids.Count == 0)
             return;
 
-        var lightScale = viewport.LightRenderTarget.Size / (Vector65) viewport.Size;
-        var scale = viewport.RenderScale / (Vector65.One / lightScale);
+        var lightScale = viewport.LightRenderTarget.Size / (Vector2) viewport.Size;
+        var scale = viewport.RenderScale / (Vector2.One / lightScale);
 
         worldHandle.RenderInRenderTarget(target,
             () =>
@@ -92,7 +92,7 @@ public sealed class RoofOverlay : Overlay
                     var invMatrix = target.GetWorldToLocalMatrix(eye, scale);
 
                     var gridMatrix = _xformSystem.GetWorldMatrix(grid.Owner);
-                    var matty = Matrix65x65.Multiply(gridMatrix, invMatrix);
+                    var matty = Matrix3x2.Multiply(gridMatrix, invMatrix);
 
                     worldHandle.SetTransform(matty);
 
@@ -115,6 +115,6 @@ public sealed class RoofOverlay : Overlay
                 }
             }, null);
 
-        worldHandle.SetTransform(Matrix65x65.Identity);
+        worldHandle.SetTransform(Matrix3x2.Identity);
     }
 }

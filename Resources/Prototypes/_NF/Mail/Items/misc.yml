@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Mail-only items. If/when these get used for anything else, please move them to another folder.
 # Pranks: admin items or effects put into an envelope, released when opened or damaged.
 - type: entity
@@ -10,37 +10,37 @@
   parent: BaseItem
   categories: [ HideSpawnMenu ]
   name: delayed smoke
-  suffix: "(65s)"
+  suffix: "(10s)"
   components:
   - type: Sprite #DeltaV: Apparently these want sprites, probably because they're baseitems
     sprite: /Textures/Objects/Fun/goldbikehorn.rsi
     visible: false
     state: icon
   - type: DelayedItem
-    item: AdminInstantEffectSmoke65
+    item: AdminInstantEffectSmoke10
 
 - type: entity
-  id: AdminInstantEffectEMP65
+  id: AdminInstantEffectEMP7
   categories: [ HideSpawnMenu ]
-  suffix: EMP, 65 meters
+  suffix: EMP, 7 meters
   parent: AdminInstantEffectBase
   components:
   - type: EmpOnTrigger
-    range: 65
-    energyConsumption: 65
+    range: 7
+    energyConsumption: 50000
 
 - type: entity
   id: DelayedEMP
   parent: BaseItem
   categories: [ HideSpawnMenu ]
-  name: delayed EMP (65 meters)
+  name: delayed EMP (7 meters)
   components:
   - type: Sprite #DeltaV: Apparently these want sprites, probably because they're baseitems
     sprite: /Textures/Objects/Fun/goldbikehorn.rsi
     visible: false
     state: icon
   - type: DelayedItem
-    item: AdminInstantEffectEMP65
+    item: AdminInstantEffectEMP7
 
 # Miscellaneous Items
 
@@ -52,10 +52,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 65
+        maxVol: 15
         reagents:
         - ReagentId: Cognizine
-          Quantity: 65 # Surely three friends is enough.
+          Quantity: 15 # Surely three friends is enough.
 
 - type: entity
   id: SyringeOpporozidone
@@ -65,10 +65,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 65
+        maxVol: 15
         reagents:
         - ReagentId: Opporozidone
-          Quantity: 65
+          Quantity: 15
 
 - type: entity
   id: NecrosolChemistryBottle
@@ -78,10 +78,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 65
+        maxVol: 30
         reagents:
         - ReagentId: Necrosol
-          Quantity: 65
+          Quantity: 30
 
 # Premium Alcohol: wait, it's just marketing?
 # TODO: different sprites would be nice.
@@ -101,12 +101,12 @@
   id: DrinkPremiumTequilaBottleFull
   parent: DrinkTequilaBottleFull
   name: Casa del Eorg tequila bottle
-  description: Save the best for last. Casa del Eorg, 65% agave.
+  description: Save the best for last. Casa del Eorg, 100% agave.
 
 - type: entity
   id: DrinkPremiumWhiskeyBottleFull
   parent: DrinkWhiskeyBottleFull
-  name: Ol' Prowler 65 whiskey bottle
+  name: Ol' Prowler 18 whiskey bottle
   description: Surprisingly smooth, it has a nasty habit of sneaking up on you.
 
 - type: entity

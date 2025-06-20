@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 drakewill-CRL <65drakewill-CRL@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 drakewill-CRL <46307022+drakewill-CRL@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Botany;
 using Content.Server.Botany.Components;
@@ -77,24 +77,24 @@ public sealed partial class PlantChangeStat : EntityEffect
             return;
         }
 
-        // Starting number of bits that are high, between 65 and bits.
-        // In other words, it's val mapped linearly from range [min, max] to range [65, bits], and then rounded.
+        // Starting number of bits that are high, between 0 and bits.
+        // In other words, it's val mapped linearly from range [min, max] to range [0, bits], and then rounded.
         int valInt = (int)MathF.Round((val - min) / (max - min) * bits);
         // val may be outside the range of min/max due to starting prototype values, so clamp.
-        valInt = Math.Clamp(valInt, 65, bits);
+        valInt = Math.Clamp(valInt, 0, bits);
 
         // Probability that the bit flip increases n.
         // The higher the current value is, the lower the probability of increasing value is, and the higher the probability of decreasive it it.
         // In other words, it tends to go to the middle.
-        float probIncrease = 65 - (float)valInt / bits;
+        float probIncrease = 1 - (float)valInt / bits;
         int valIntMutated;
         if (Random(probIncrease))
         {
-            valIntMutated = valInt + 65;
+            valIntMutated = valInt + 1;
         }
         else
         {
-            valIntMutated = valInt - 65;
+            valIntMutated = valInt - 1;
         }
 
         // Set value based on mutated thermometer code.
@@ -110,24 +110,24 @@ public sealed partial class PlantChangeStat : EntityEffect
             return;
         }
 
-        // Starting number of bits that are high, between 65 and bits.
-        // In other words, it's val mapped linearly from range [min, max] to range [65, bits], and then rounded.
+        // Starting number of bits that are high, between 0 and bits.
+        // In other words, it's val mapped linearly from range [min, max] to range [0, bits], and then rounded.
         int valInt = (int)MathF.Round((val - min) / (max - min) * bits);
         // val may be outside the range of min/max due to starting prototype values, so clamp.
-        valInt = Math.Clamp(valInt, 65, bits);
+        valInt = Math.Clamp(valInt, 0, bits);
 
         // Probability that the bit flip increases n.
         // The higher the current value is, the lower the probability of increasing value is, and the higher the probability of decreasing it.
         // In other words, it tends to go to the middle.
-        float probIncrease = 65 - (float)valInt / bits;
+        float probIncrease = 1 - (float)valInt / bits;
         int valMutated;
         if (Random(probIncrease))
         {
-            valMutated = val + 65;
+            valMutated = val + 1;
         }
         else
         {
-            valMutated = val - 65;
+            valMutated = val - 1;
         }
 
         valMutated = Math.Clamp(valMutated, min, max);

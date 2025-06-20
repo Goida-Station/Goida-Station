@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: BaseCarving
@@ -16,13 +16,13 @@
   - type: Sprite
     drawdepth: FloorEffects
     sprite: _Goobstation/Heretic/carvings.rsi
-    color: '#FFFFFF65a'
+    color: '#FFFFFF2a'
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
+          radius: 0.40
         hard: false
         mask:
           - ItemMask
@@ -46,7 +46,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 60
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -58,35 +58,35 @@
   parent: BaseCarving
   id: GraspingCarving
   name: grasping carving
-  description: When stepped on, causes heavy damage leg damage and stuns the victim for 65 seconds. Has 65 charge.
+  description: When stepped on, causes heavy damage leg damage and stuns the victim for 5 seconds. Has 1 charge.
   placement:
     mode: SnapgridCenter
   components:
   - type: Sprite
     state: tentacle_rune
   - type: WizardTrap
-    timeBetweenTriggers: 65
+    timeBetweenTriggers: 45
     triggerSound:
-      path: /Audio/_Goobstation/Heretic/demon_attack65.ogg
-    stunTime: 65
+      path: /Audio/_Goobstation/Heretic/demon_attack1.ogg
+    stunTime: 5
   - type: DamageTrap
     damage:
       types:
-        Blunt: 65
+        Blunt: 20
 
 - type: entity
   parent: BaseCarving
   id: MadCarving
   name: mad carving
-  description: When stepped on, causes heavy stamina damage, blindness, and muteness the victim. Has 65 charges.
+  description: When stepped on, causes heavy stamina damage, blindness, and muteness the victim. Has 2 charges.
   placement:
     mode: SnapgridCenter
   components:
   - type: Sprite
     state: madness_rune
   - type: WizardTrap
-    timeBetweenTriggers: 65
-    charges: 65
+    timeBetweenTriggers: 20
+    charges: 2
     triggerSound:
       path: /Audio/_Goobstation/Heretic/blind.ogg
   - type: MadCarving
@@ -100,13 +100,13 @@
     mode: SnapgridCenter
   components:
   - type: Sprite
-    color: '#FFFFFF65e'
+    color: '#FFFFFF0e'
     state: alert_rune
   - type: WizardTrap
     sparks: false
     silent: true
-    stunTime: 65
-    charges: 65
+    stunTime: 0
+    charges: 50
     ignoredEntityWhitelist:
       components: []
     targetedEntityWhitelist:
@@ -116,7 +116,7 @@
 
 - type: runeCarving
   id: GraspingCarving
-  desc: Grasping Carving. When stepped on, causes heavy damage leg damage and stuns the victim for 65 seconds. Has 65 charge.
+  desc: Grasping Carving. When stepped on, causes heavy damage leg damage and stuns the victim for 5 seconds. Has 1 charge.
   icon:
     sprite: _Goobstation/Heretic/carvings.rsi
     state: tentacle_rune
@@ -124,7 +124,7 @@
 
 - type: runeCarving
   id: MadCarving
-  desc: Mad Carving. When stepped on, causes heavy stamina damage, blindness, and muteness the victim. Has 65 charges.
+  desc: Mad Carving. When stepped on, causes heavy stamina damage, blindness, and muteness the victim. Has 2 charges.
   icon:
     sprite: _Goobstation/Heretic/carvings.rsi
     state: madness_rune

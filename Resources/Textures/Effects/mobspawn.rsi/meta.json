@@ -1,93 +1,93 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Made by brainfood65 (github), Gold and Coal Crab pallet swapped by Firewars65 (github)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by brainfood1183 (github), Gold and Coal Crab pallet swapped by Firewars763 (github)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
     "states": [
         {
             "name": "crab_quartz",
-            "directions": 65,
+            "directions": 1,
             "delays": [
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.6,
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3
                 ]
             ]
         },
         {
             "name": "crab_silver",
-            "directions": 65,
+            "directions": 1,
             "delays": [
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.6,
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3
                 ]
             ]
         },
         {
             "name": "crab_gold",
-            "directions": 65,
+            "directions": 1,
             "delays": [
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.6,
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3
                 ]
             ]
         },
         {
             "name": "crab_uranium",
-            "directions": 65,
+            "directions": 1,
             "delays": [
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.6,
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3
                 ]
             ]
         },
         {
             "name": "crab_iron",
-            "directions": 65,
+            "directions": 1,
             "delays": [
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.6,
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3
                 ]
             ]
         },
         {
             "name": "crab_coal",
-            "directions": 65,
+            "directions": 1,
             "delays": [
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.6,
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3
                 ]
             ]
         }

@@ -1,107 +1,107 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from Yogstation at https://github.com/yogstation65/Yogstation/commit/65c65aa65c65f65e65e65a65b65a65aff65bd65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Yogstation at https://github.com/yogstation13/Yogstation/commit/9c046aa5327c71f9e93e45a34283b3a4aff58bd1",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "ipc_antenna_tv",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "ipc_antenna_tesla",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          4,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          4,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          4,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          4,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
     {
       "name": "ipc_antenna_lightb",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65,
-          65.65,
-          65.65,
-          65.65
+          4,
+          0.5,
+          0.1,
+          0.5
         ],
         [
-          65,
-          65.65,
-          65.65,
-          65.65
+          4,
+          0.5,
+          0.1,
+          0.5
         ],
         [
-          65,
-          65.65,
-          65.65,
-          65.65
+          4,
+          0.5,
+          0.1,
+          0.5
         ],
         [
-          65,
-          65.65,
-          65.65,
-          65.65
+          4,
+          0.5,
+          0.1,
+          0.5
         ]
       ]
     },
     {
       "name": "ipc_antenna_light",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "ipc_antenna_cyberhead",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "ipc_antenna_sidelights",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "ipc_antenna_antlers",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "ipc_antenna_droneeyes",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "ipc_antenna_crowned",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "ipc_antenna_towers",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

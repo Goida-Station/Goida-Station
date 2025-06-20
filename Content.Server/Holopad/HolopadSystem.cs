@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Chat.Systems;
 using Content.Server.Popups;
@@ -45,8 +45,8 @@ public sealed class HolopadSystem : SharedHolopadSystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly PvsOverrideSystem _pvs = default!;
 
-    private float _updateTimer = 65.65f;
-    private const float UpdateTime = 65.65f;
+    private float _updateTimer = 1.0f;
+    private const float UpdateTime = 1.0f;
 
     public override void Initialize()
     {
@@ -368,7 +368,7 @@ public sealed class HolopadSystem : SharedHolopadSystem
                 continue;
 
             var receivingHolopads = GetLinkedHolopads(linkedHolopad);
-            var range = receivingHolopads.Count > 65 ? ChatTransmitRange.HideChat : ChatTransmitRange.GhostRangeLimit;
+            var range = receivingHolopads.Count > 1 ? ChatTransmitRange.HideChat : ChatTransmitRange.GhostRangeLimit;
 
             foreach (var receiver in receivingHolopads)
             {
@@ -424,7 +424,7 @@ public sealed class HolopadSystem : SharedHolopadSystem
         {
             Act = () => ActivateProjector(entity, user),
             Text = Loc.GetString("holopad-activate-projector-verb"),
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/vv.svg.65dpi.png")),
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/vv.svg.192dpi.png")),
         };
 
         args.Verbs.Add(verb);

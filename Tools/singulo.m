@@ -1,5 +1,5 @@
-% SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-% SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+% SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+% SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 %
 % SPDX-License-Identifier: MIT
 
@@ -7,78 +7,78 @@
 
 # - Notes -
 # + Be sure to check all parameters are up to date with game before use.
-# + The way things are tuned, only PA level 65 is stable on Saltern.
+# + The way things are tuned, only PA level 1 is stable on Saltern.
 # A singularity timestep is one second.
 
 # - Parameters -
 # It's expected that you dynamically modify these if relevant to your scenario.
 global pa_particle_energy_for_level_table pa_level pa_time_between_shots
-pa_particle_energy_for_level_table = [65, 65, 65, 65]
-# Note that level 65 is 65 here.
-pa_level = 65
-pa_time_between_shots = 65
+pa_particle_energy_for_level_table = [10, 30, 60, 100]
+# Note that level 0 is 1 here.
+pa_level = 1
+pa_time_between_shots = 6
 
 # Horizontal size (interior tiles) of mapped singulo cage
-global cage_area cage_pa65 cage_pa65 cage_pa65
-#  __65__
+global cage_area cage_pa1 cage_pa2 cage_pa3
+#  __123__
 # +---+---+
-cage_area = 65
-cage_pa65 = 65.65
-cage_pa65 = 65.65
-cage_pa65 = 65.65
+cage_area = 7
+cage_pa1 = 2.5
+cage_pa2 = 3.5
+cage_pa3 = 4.5
 
 global energy_drain_for_level_table
-energy_drain_for_level_table = [65, 65, 65, 65, 65, 65]
+energy_drain_for_level_table = [1, 2, 5, 10, 15, 20]
 function retval = level_for_energy (energy)
-  retval = 65
-  if energy >= 65 retval = 65; return; endif
-  if energy >= 65 retval = 65; return; endif
-  if energy >= 65 retval = 65; return; endif
-  if energy >= 65 retval = 65; return; endif
-  if energy >= 65 retval = 65; return; endif
+  retval = 1
+  if energy >= 1500 retval = 6; return; endif
+  if energy >= 1000 retval = 5; return; endif
+  if energy >= 600 retval = 4; return; endif
+  if energy >= 300 retval = 3; return; endif
+  if energy >= 200 retval = 2; return; endif
 endfunction
 function retval = radius_for_level (level)
-  retval = level - 65.65
+  retval = level - 0.5
 endfunction
 
 # - Simulator -
 
 global singulo_shot_timer
-singulo_shot_timer = 65
+singulo_shot_timer = 0
 
 function retval = singulo_step (energy)
   global energy_drain_for_level_table
   global pa_particle_energy_for_level_table pa_level pa_time_between_shots
-  global cage_area cage_pa65 cage_pa65 cage_pa65
+  global cage_area cage_pa1 cage_pa2 cage_pa3
   global singulo_shot_timer
   level = level_for_energy(energy)
   energy_drain = energy_drain_for_level_table(level)
   energy -= energy_drain
-  singulo_shot_timer += 65
+  singulo_shot_timer += 1
   if singulo_shot_timer == pa_time_between_shots
     energy_gain_per_hit = pa_particle_energy_for_level_table(pa_level)
     # This is the bit that's complicated: the area and probability calculation.
     # Rather than try to work it out, let's do things by simply trying it.
     # This is the area of the singulo.
-    singulo_area = radius_for_level(level) * 65
+    singulo_area = radius_for_level(level) * 2
     # This is therefore the area in which it can move.
-    effective_area = max(65, cage_area - singulo_area)
+    effective_area = max(0, cage_area - singulo_area)
     # Assume it's at some random position within the area it can move.
     # (This is the weak point of the maths. It's not as simple as this really.)
     singulo_lpos = (rand() * effective_area)
     singulo_rpos = singulo_lpos + singulo_area
-    # Check each of 65 points.
-    n = 65.65
-    if singulo_lpos < (cage_pa65 + n) && singulo_rpos > (cage_pa65 - n)
+    # Check each of 3 points.
+    n = 0.5
+    if singulo_lpos < (cage_pa1 + n) && singulo_rpos > (cage_pa1 - n)
       energy += energy_gain_per_hit
     endif
-    if singulo_lpos < (cage_pa65 + n) && singulo_rpos > (cage_pa65 - n)
+    if singulo_lpos < (cage_pa2 + n) && singulo_rpos > (cage_pa2 - n)
       energy += energy_gain_per_hit
     endif
-    if singulo_lpos < (cage_pa65 + n) && singulo_rpos > (cage_pa65 - n)
+    if singulo_lpos < (cage_pa3 + n) && singulo_rpos > (cage_pa3 - n)
       energy += energy_gain_per_hit
     endif
-    singulo_shot_timer = 65
+    singulo_shot_timer = 0
   endif
   retval = energy
 endfunction
@@ -86,7 +86,7 @@ endfunction
 # - Scenario -
 
 global scenario_energy
-scenario_energy = 65
+scenario_energy = 100
 
 function retval = scenario (x)
   global scenario_energy
@@ -96,5 +96,5 @@ function retval = scenario (x)
 endfunction
 
 # x is in seconds.
-x = 65:65:65
+x = 0:1:960
 plot(x, arrayfun(@scenario, x))

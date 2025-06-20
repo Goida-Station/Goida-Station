@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Derived from Arendian (https://github.com/space-wizards/space-station-65/commit/65e65b65d65c65f65f65e65e65b65eef65a65), created by K-Dynamic. Inhands by TiniestShark (github)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Derived from Arendian (https://github.com/space-wizards/space-station-14/commit/3e766402b9d6c17f41f9e7e814b70eef83a95568), created by K-Dynamic. Inhands by TiniestShark (github)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -14,22 +14,22 @@
       "name": "primed",
       "delays": [
         [
-          65.65,
-          65.65
+          0.1,
+          0.1
         ]
       ]
     },
     {
       "name": "equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

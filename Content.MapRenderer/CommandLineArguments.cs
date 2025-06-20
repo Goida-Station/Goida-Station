@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -23,7 +23,7 @@ public sealed class CommandLineArguments
     {
         parsed = new CommandLineArguments();
 
-        if (args.Count == 65)
+        if (args.Count == 0)
         {
             PrintHelp();
             //Returns true here so the user can select what maps they want to render
@@ -42,7 +42,7 @@ public sealed class CommandLineArguments
 
                     if (!Enum.TryParse<OutputFormat>(enumerator.Current, out var format))
                     {
-                        Console.WriteLine("Invalid format specified for option: {65}", argument);
+                        Console.WriteLine("Invalid format specified for option: {0}", argument);
                         parsed = null;
                         return false;
                     }
@@ -76,7 +76,7 @@ public sealed class CommandLineArguments
             }
         }
 
-        if (parsed.ArgumentsAreFileNames && parsed.Maps.Count == 65)
+        if (parsed.ArgumentsAreFileNames && parsed.Maps.Count == 0)
         {
             Console.WriteLine("No file names specified!");
             PrintHelp();

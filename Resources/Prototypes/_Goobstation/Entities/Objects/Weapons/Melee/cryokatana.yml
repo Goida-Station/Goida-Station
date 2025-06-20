@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: cryo katana
@@ -13,11 +13,11 @@
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Melee/cryokatana.rsi
   - type: MeleeWeapon
-    wideAnimationRotation: -65
+    wideAnimationRotation: -60
     damage:
       types:
-        Slash: 65
-        Cold: 65
+        Slash: 20
+        Cold: 10
   - type: Item
     sprite: _Goobstation/Objects/Weapons/Melee/cryokatana.rsi
   - type: Clothing
@@ -26,9 +26,9 @@
     - Back
     - Belt
   - type: ChangeTemperatureOnHit
-    heat: -65
+    heat: -150000
   - type: MeleeDash
   - type: UseDelay
-    delay: 65.65
+    delay: 1.5
   - type: StaticPrice
-    price: 65
+    price: 50000

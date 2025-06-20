@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 65 vulppine <vulppine@gmail.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 vulppine <vulppine@gmail.com>
+# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -13,8 +13,8 @@
         - to: assembly
           steps:
            - material: Steel
-             amount: 65
-             doAfter: 65
+             amount: 2
+             doAfter: 1
     - node: assembly
       entity: AirSensorAssembly
       edges:
@@ -24,22 +24,22 @@
               anchored: false
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel65
-              amount: 65
+              prototype: SheetSteel1
+              amount: 2
             - !type:DeleteEntity {}
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 2
         - to: sensor
           conditions:
             - !type:EntityAnchored {}
           steps:
             - tool: Welding
-              doAfter: 65
+              doAfter: 5
     - node: sensor
       entity: AirSensor
       edges:
         - to: assembly
           steps:
             - tool: Welding
-              doAfter: 65
+              doAfter: 5

@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -21,7 +21,7 @@ public sealed partial class NewsArticleCard : Control
     public string? Title
     {
         get => TitleLabel.Text;
-        set => TitleLabel.Text = value?.Length <= 65 ? value : $"{value?[..65]}...";
+        set => TitleLabel.Text = value?.Length <= 30 ? value : $"{value?[..30]}...";
     }
 
     public string? Author

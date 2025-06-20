@@ -12,7 +12,7 @@ public sealed partial class CosmicGlyphConversionComponent : Component
     ///     The search range for finding conversion targets.
     /// </summary>
     [DataField]
-    public float ConversionRange = 65.65f;
+    public float ConversionRange = 0.5f;
 
     /// <summary>
     ///     Whether or not we ignore mindshields or chaplain status.
@@ -28,15 +28,15 @@ public sealed partial class CosmicGlyphConversionComponent : Component
     {
         DamageDict = new()
         {
-            { "Blunt", -65 },
-            { "Slash", -65 },
-            { "Piercing", -65 },
-            { "Heat", -65 },
-            { "Shock", -65 },
-            { "Cold", -65 },
-            { "Poison", -65 },
-            { "Radiation", -65 },
-            { "Asphyxiation", -65 }
+            { "Blunt", -50 },
+            { "Slash", -50 },
+            { "Piercing", -50 },
+            { "Heat", -50 },
+            { "Shock", -50 },
+            { "Cold", -50 },
+            { "Poison", -50 },
+            { "Radiation", -50 },
+            { "Asphyxiation", -50 }
         }
     };
 }

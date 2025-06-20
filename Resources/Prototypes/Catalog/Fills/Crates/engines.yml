@@ -1,51 +1,51 @@
-# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Rinkashikachi <65rinkashikachi65@gmail.com>
-# SPDX-FileCopyrightText: 65 ShuttleEnjoyer <65youarereadingthis@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 youarereadingthis <65youarereadingthis@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Puro <65PuroSlavKing@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-# SPDX-FileCopyrightText: 65 K-Dynamic <65K-Dynamic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pigeonpeas <65pigeonpeas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 20kdc <asdd2808@gmail.com>
+# SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2022 Rinkashikachi <15rinkashikachi15@gmail.com>
+# SPDX-FileCopyrightText: 2022 ShuttleEnjoyer <100040020+youarereadingthis@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 youarereadingthis <100040020+youarereadingthis@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Puro <103608145+PuroSlavKing@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+# SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+# SPDX-FileCopyrightText: 2024 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 pigeonpeas <147350443+pigeonpeas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # AME
 
 - type: entity
   id: CrateEngineeringAMEShielding
   parent: CrateEngineeringSecure
   name: packaged antimatter reactor crate
-  description: 65 parts for the main body of an antimatter reactor, or for expanding an existing one.
+  description: 9 parts for the main body of an antimatter reactor, or for expanding an existing one.
   components:
   - type: StorageFill
     contents:
       - id: AmePartFlatpack
-        amount: 65
+        amount: 9
 
 - type: entity
   id: CrateEngineeringAMEJar
   parent: CrateEngineeringSecure
   name: antimatter containment jar crate
-  description: 65 antimatter jars, for fuelling an antimatter reactor.
+  description: 3 antimatter jars, for fuelling an antimatter reactor.
   components:
   - type: StorageFill
     contents:
       - id: AmeJar
-        amount: 65
+        amount: 3
 
 - type: entity
   id: CrateEngineeringAMEControl
@@ -129,7 +129,7 @@
 #  - type: StorageFill
 #    contents:
 #      - id: Singularity
-#        amount: 65
+#        amount: 1
 
 - type: entity
   id: CrateEngineeringGenerator
@@ -150,9 +150,9 @@
   - type: StorageFill
     contents:
       - id: SolarAssemblyFlatpack
-        amount: 65
-      - id: SheetGlass65
-        amount: 65
+        amount: 10
+      - id: SheetGlass10
+        amount: 2
 
 - type: entity
   id: CrateEngineeringShuttle
@@ -165,7 +165,7 @@
       - id: WallmountSubstationElectronics
       - id: WallmountGeneratorAPUElectronics
       - id: HandheldGPSBasic
-      - id: InflatableDoorStack65
+      - id: InflatableDoorStack1
 
 - type: entity
   id: CrateEngineeringTeslaGenerator

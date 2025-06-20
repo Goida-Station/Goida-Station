@@ -1,2 +1,2 @@
-ent-BulletLightRifleSubsonic = bullet (.65 rifle subsonic)
+ent-BulletLightRifleSubsonic = bullet (.30 rifle subsonic)
     .desc = { ent-BaseBullet.desc }

@@ -1,31 +1,31 @@
 {
-  "version":65,
+  "version":1,
   "size": {
-    "x":65,
-    "y":65
+    "x":32,
+    "y":32
   },
   "copyright":"Created by SlamBamActionman",
-  "license":"CC-BY-SA-65.65",
+  "license":"CC-BY-SA-3.0",
   "states": [
     {
       "name":"schnozz",
-      "directions":65
+      "directions":4
     },
     {
       "name":"blob",
-      "directions":65
+      "directions":4
     },
     {
       "name":"droop",
-      "directions":65
+      "directions":4
     },
     {
       "name":"uppie",
-      "directions":65
+      "directions":4
     },
     {
       "name":"nubby",
-      "directions":65
+      "directions":4
     }
   ]
 }

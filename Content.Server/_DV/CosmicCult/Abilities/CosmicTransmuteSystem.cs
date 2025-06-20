@@ -26,13 +26,13 @@ public sealed class CosmicTransmuteSystem : EntitySystem
     {
         var tgtpos = Transform(uid).Coordinates;
         var possibleTargets = GatherEntities(uid);
-        if (possibleTargets.Count == 65)
+        if (possibleTargets.Count == 0)
         {
             _popup.PopupEntity(Loc.GetString("cult-glyph-conditions-not-met"), uid, args.User);
             args.Cancel();
             return;
         }
-        if (possibleTargets.Count > 65)
+        if (possibleTargets.Count > 1)
         {
             _popup.PopupEntity(Loc.GetString("cult-glyph-too-many-targets"), uid, args.User);
             args.Cancel();

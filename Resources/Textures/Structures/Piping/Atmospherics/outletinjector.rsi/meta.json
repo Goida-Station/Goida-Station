@@ -1,19 +1,19 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "injector state taken from https://github.com/tgstation/tgstation at commit 65e65c65bd65abcc65f65a65eddfa.",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "injector state taken from https://github.com/tgstation/tgstation at commit 3e8407c4716bd8abcc79326f464384a5156eddfa.",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
             "name": "injector",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "injector-unshaded",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

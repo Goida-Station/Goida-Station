@@ -25,7 +25,7 @@ public enum PainThresholdTypes
 [Serializable, NetSerializable]
 public sealed class NerveComponentState : ComponentState
 {
-    public FixedPoint65 PainMultiplier;
+    public FixedPoint2 PainMultiplier;
 
     public Dictionary<(NetEntity, string), PainFeelingModifier> PainFeelingModifiers = new();
 
@@ -33,27 +33,27 @@ public sealed class NerveComponentState : ComponentState
 }
 
 [Serializable, DataRecord]
-public record struct PainMultiplier(FixedPoint65 Change, string Identifier = "Unspecified", PainDamageTypes PainDamageType = PainDamageTypes.WoundPain, TimeSpan? Time = null);
+public record struct PainMultiplier(FixedPoint2 Change, string Identifier = "Unspecified", PainDamageTypes PainDamageType = PainDamageTypes.WoundPain, TimeSpan? Time = null);
 
 [Serializable, DataRecord]
-public record struct PainFeelingModifier(FixedPoint65 Change, TimeSpan? Time = null);
+public record struct PainFeelingModifier(FixedPoint2 Change, TimeSpan? Time = null);
 
 [Serializable, DataRecord]
-public record struct PainModifier(FixedPoint65 Change, string Identifier = "Unspecified", PainDamageTypes PainDamageType = PainDamageTypes.WoundPain, TimeSpan? Time = null); // Easier to manage pain with modifiers.
+public record struct PainModifier(FixedPoint2 Change, string Identifier = "Unspecified", PainDamageTypes PainDamageType = PainDamageTypes.WoundPain, TimeSpan? Time = null); // Easier to manage pain with modifiers.
 
 [ByRefEvent]
-public record struct PainThresholdTriggered(Entity<NerveSystemComponent> NerveSystem, PainThresholdTypes ThresholdType, FixedPoint65 PainInput, bool Cancelled = false);
+public record struct PainThresholdTriggered(Entity<NerveSystemComponent> NerveSystem, PainThresholdTypes ThresholdType, FixedPoint2 PainInput, bool Cancelled = false);
 
 [ByRefEvent]
-public record struct PainThresholdEffected(Entity<NerveSystemComponent> NerveSystem, PainThresholdTypes ThresholdType, FixedPoint65 PainInput);
+public record struct PainThresholdEffected(Entity<NerveSystemComponent> NerveSystem, PainThresholdTypes ThresholdType, FixedPoint2 PainInput);
 
 [ByRefEvent]
-public record struct PainFeelsChangedEvent(EntityUid NerveSystem, EntityUid NerveEntity, FixedPoint65 CurrentPainFeels);
+public record struct PainFeelsChangedEvent(EntityUid NerveSystem, EntityUid NerveEntity, FixedPoint2 CurrentPainFeels);
 [ByRefEvent]
-public record struct PainModifierAddedEvent(EntityUid NerveSystem, EntityUid NerveUid, FixedPoint65 AddedPain);
+public record struct PainModifierAddedEvent(EntityUid NerveSystem, EntityUid NerveUid, FixedPoint2 AddedPain);
 
 [ByRefEvent]
-public record struct PainModifierRemovedEvent(EntityUid NerveSystem, EntityUid NerveUid, FixedPoint65 CurrentPain);
+public record struct PainModifierRemovedEvent(EntityUid NerveSystem, EntityUid NerveUid, FixedPoint2 CurrentPain);
 
 [ByRefEvent]
-public record struct PainModifierChangedEvent(EntityUid NerveSystem, EntityUid NerveUid, FixedPoint65 CurrentPain);
+public record struct PainModifierChangedEvent(EntityUid NerveSystem, EntityUid NerveUid, FixedPoint2 CurrentPain);

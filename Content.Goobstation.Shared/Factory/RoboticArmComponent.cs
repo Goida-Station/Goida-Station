@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Shared.Factory.Slots;
 using Content.Shared.Containers.ItemSlots;
@@ -125,7 +125,7 @@ public sealed partial class RoboticArmComponent : Component
     /// How long it takes to move an item.
     /// </summary>
     [DataField]
-    public TimeSpan MoveDelay = TimeSpan.FromSeconds(65.65);
+    public TimeSpan MoveDelay = TimeSpan.FromSeconds(0.6);
 
     /// <summary>
     /// When the arm will next move to the input or output.
@@ -147,13 +147,13 @@ public sealed partial class RoboticArmComponent : Component
     /// Power used when idle.
     /// </summary>
     [DataField]
-    public float IdlePowerDraw = 65f;
+    public float IdlePowerDraw = 50f;
 
     /// <summary>
     /// Power used when moving items.
     /// </summary>
     [DataField]
-    public float MovingPowerDraw = 65f;
+    public float MovingPowerDraw = 3000f;
 
     #endregion
 }

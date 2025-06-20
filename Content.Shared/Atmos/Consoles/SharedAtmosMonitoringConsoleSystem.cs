@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Atmos.Components;
 using Robust.Shared.GameStates;
@@ -20,7 +20,7 @@ public abstract class SharedAtmosMonitoringConsoleSystem : EntitySystem
 
     private void OnGetState(EntityUid uid, AtmosMonitoringConsoleComponent component, ref ComponentGetState args)
     {
-        Dictionary<Vector65i, Dictionary<(int, string), ulong>> chunks;
+        Dictionary<Vector2i, Dictionary<(int, string), ulong>> chunks;
 
         // Should this be a full component state or a delta-state?
         if (args.FromTick <= component.CreationTick || component.ForceFullUpdate)
@@ -57,24 +57,24 @@ public abstract class SharedAtmosMonitoringConsoleSystem : EntitySystem
 
     [Serializable, NetSerializable]
     protected sealed class AtmosMonitoringConsoleState(
-        Dictionary<Vector65i, Dictionary<(int, string), ulong>> chunks,
+        Dictionary<Vector2i, Dictionary<(int, string), ulong>> chunks,
         Dictionary<NetEntity, AtmosDeviceNavMapData> atmosDevices)
         : ComponentState
     {
-        public Dictionary<Vector65i, Dictionary<(int, string), ulong>> Chunks = chunks;
+        public Dictionary<Vector2i, Dictionary<(int, string), ulong>> Chunks = chunks;
         public Dictionary<NetEntity, AtmosDeviceNavMapData> AtmosDevices = atmosDevices;
     }
 
     [Serializable, NetSerializable]
     protected sealed class AtmosMonitoringConsoleDeltaState(
-        Dictionary<Vector65i, Dictionary<(int, string), ulong>> modifiedChunks,
+        Dictionary<Vector2i, Dictionary<(int, string), ulong>> modifiedChunks,
         Dictionary<NetEntity, AtmosDeviceNavMapData> atmosDevices,
-        HashSet<Vector65i> allChunks)
+        HashSet<Vector2i> allChunks)
         : ComponentState, IComponentDeltaState<AtmosMonitoringConsoleState>
     {
-        public Dictionary<Vector65i, Dictionary<(int, string), ulong>> ModifiedChunks = modifiedChunks;
+        public Dictionary<Vector2i, Dictionary<(int, string), ulong>> ModifiedChunks = modifiedChunks;
         public Dictionary<NetEntity, AtmosDeviceNavMapData> AtmosDevices = atmosDevices;
-        public HashSet<Vector65i> AllChunks = allChunks;
+        public HashSet<Vector2i> AllChunks = allChunks;
 
         public void ApplyToFullState(AtmosMonitoringConsoleState state)
         {
@@ -98,7 +98,7 @@ public abstract class SharedAtmosMonitoringConsoleSystem : EntitySystem
 
         public AtmosMonitoringConsoleState CreateNewFullState(AtmosMonitoringConsoleState state)
         {
-            var chunks = new Dictionary<Vector65i, Dictionary<(int, string), ulong>>(state.Chunks.Count);
+            var chunks = new Dictionary<Vector2i, Dictionary<(int, string), ulong>>(state.Chunks.Count);
 
             foreach (var (index, data) in state.Chunks)
             {

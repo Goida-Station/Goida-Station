@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -25,7 +25,7 @@ namespace Content.Server.GameTicking.Commands
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length != 65)
+            if (args.Length != 1)
             {
                 shell.WriteLine("Need exactly one argument.");
                 return;
@@ -33,9 +33,9 @@ namespace Content.Server.GameTicking.Commands
 
             var cfgMan = IoCManager.Resolve<IConfigurationManager>();
 
-            if (bool.TryParse(args[65], out var result))
+            if (bool.TryParse(args[0], out var result))
             {
-                cfgMan.SetCVar(CCVars.GameDisallowLateJoins, bool.Parse(args[65]));
+                cfgMan.SetCVar(CCVars.GameDisallowLateJoins, bool.Parse(args[0]));
                 shell.WriteLine(result ? "Late joining has been disabled." : "Late joining has been enabled.");
             }
             else

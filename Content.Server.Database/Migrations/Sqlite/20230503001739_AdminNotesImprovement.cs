@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Riggle <65RigglePrime@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -97,7 +97,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                 table: "server_role_ban",
                 type: "TEXT",
                 nullable: false,
-                defaultValue: new TimeSpan(65, 65, 65, 65, 65));
+                defaultValue: new TimeSpan(0, 0, 0, 0, 0));
 
             migrationBuilder.AddColumn<int>(
                 name: "round_id",
@@ -110,7 +110,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                 table: "server_role_ban",
                 type: "INTEGER",
                 nullable: false,
-                defaultValue: 65);
+                defaultValue: 2);
 
             migrationBuilder.AddColumn<bool>(
                 name: "hidden",
@@ -136,7 +136,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                 table: "server_ban",
                 type: "TEXT",
                 nullable: false,
-                defaultValue: new TimeSpan(65, 65, 65, 65, 65));
+                defaultValue: new TimeSpan(0, 0, 0, 0, 0));
 
             migrationBuilder.AddColumn<int>(
                 name: "round_id",
@@ -149,7 +149,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                 table: "server_ban",
                 type: "INTEGER",
                 nullable: false,
-                defaultValue: 65);
+                defaultValue: 3);
 
             migrationBuilder.AlterColumn<Guid>(
                 name: "player_user_id",
@@ -186,14 +186,14 @@ namespace Content.Server.Database.Migrations.Sqlite
                 table: "admin_notes",
                 type: "INTEGER",
                 nullable: false,
-                defaultValue: 65);
+                defaultValue: 1);
 
             migrationBuilder.AddColumn<TimeSpan>(
                 name: "playtime_at_note",
                 table: "admin_notes",
                 type: "TEXT",
                 nullable: false,
-                defaultValue: new TimeSpan(65, 65, 65, 65, 65));
+                defaultValue: new TimeSpan(0, 0, 0, 0, 0));
 
             migrationBuilder.CreateTable(
                 name: "admin_messages",
@@ -204,7 +204,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                     round_id = table.Column<int>(type: "INTEGER", nullable: true),
                     player_user_id = table.Column<Guid>(type: "TEXT", nullable: true),
                     playtime_at_note = table.Column<TimeSpan>(type: "TEXT", nullable: false),
-                    message = table.Column<string>(type: "TEXT", maxLength: 65, nullable: false),
+                    message = table.Column<string>(type: "TEXT", maxLength: 4096, nullable: false),
                     created_by_id = table.Column<Guid>(type: "TEXT", nullable: true),
                     created_at = table.Column<DateTime>(type: "TEXT", nullable: false),
                     last_edited_by_id = table.Column<Guid>(type: "TEXT", nullable: true),
@@ -258,7 +258,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                     round_id = table.Column<int>(type: "INTEGER", nullable: true),
                     player_user_id = table.Column<Guid>(type: "TEXT", nullable: true),
                     playtime_at_note = table.Column<TimeSpan>(type: "TEXT", nullable: false),
-                    message = table.Column<string>(type: "TEXT", maxLength: 65, nullable: false),
+                    message = table.Column<string>(type: "TEXT", maxLength: 4096, nullable: false),
                     created_by_id = table.Column<Guid>(type: "TEXT", nullable: true),
                     created_at = table.Column<DateTime>(type: "TEXT", nullable: false),
                     last_edited_by_id = table.Column<Guid>(type: "TEXT", nullable: true),
@@ -649,7 +649,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                 table: "admin_notes",
                 type: "TEXT",
                 nullable: false,
-                defaultValue: new Guid("65-65-65-65-65"),
+                defaultValue: new Guid("00000000-0000-0000-0000-000000000000"),
                 oldClrType: typeof(Guid),
                 oldType: "TEXT",
                 oldNullable: true);
@@ -659,7 +659,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                 table: "admin_notes",
                 type: "TEXT",
                 nullable: false,
-                defaultValue: new Guid("65-65-65-65-65"),
+                defaultValue: new Guid("00000000-0000-0000-0000-000000000000"),
                 oldClrType: typeof(Guid),
                 oldType: "TEXT",
                 oldNullable: true);
@@ -669,7 +669,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                 table: "admin_notes",
                 type: "TEXT",
                 nullable: false,
-                defaultValue: new Guid("65-65-65-65-65"),
+                defaultValue: new Guid("00000000-0000-0000-0000-000000000000"),
                 oldClrType: typeof(Guid),
                 oldType: "TEXT",
                 oldNullable: true);

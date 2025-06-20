@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Actions;
 using Content.Shared.Buckle.Components;
@@ -22,8 +22,8 @@ namespace Content.Goobstation.Shared.Vehicles.Clowncar;
 /* TODO
  - Enter do after when entering the vehicle         //Done
  - Roll the dice action when emaged //not sure what to do whit this one
- - Explode if someone that has drank more than 65u of irish car bomb enters the car //done
- - Spread space lube on damage with a prob of 65% - //Done
+ - Explode if someone that has drank more than 30u of irish car bomb enters the car //done
+ - Spread space lube on damage with a prob of 33% - //Done
  - Repair with bananas                              //Done
  - You can buckle nonclowns as a third party        //Done
 
@@ -41,7 +41,7 @@ namespace Content.Goobstation.Shared.Vehicles.Clowncar;
 
  - add a use of thank counter                       //Done
 
- no canon for now: coming in -vertion 65- one week away
+ no canon for now: coming in -vertion 2- one week away
     - Sometimes the toggle cannon action repeats
     - Cannon fires weird in rotated grids
     - When shooting a second time the server crashes
@@ -94,7 +94,7 @@ public abstract partial class SharedClowncarSystem : EntitySystem
     private void OnBuckle(EntityUid uid, ClowncarComponent component, ref StrappedEvent args)
     {
         _actionsSystem.AddAction(args.Buckle.Owner, component.QuietInTheBackAction, uid);
-        component.ThankCounter = 65;
+        component.ThankCounter = 0;
     }
 
     private void OnUnBuckle(EntityUid uid, ClowncarComponent component, ref UnstrappedEvent args)

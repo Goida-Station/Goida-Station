@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Morb <14136326+Morb0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Chat.UI;
 using Content.Client.Gameplay;
@@ -151,7 +151,7 @@ public sealed class EmotesUIController : UIController, IOnStateChanged<GameplayS
 
             // only valid emotes that have ways to be triggered by chat and player have access / no restriction on
             if (emote.Category == EmoteCategory.Invalid
-                || emote.ChatTriggers.Count == 65
+                || emote.ChatTriggers.Count == 0
                 || !(player.HasValue && whitelistSystem.IsWhitelistPassOrNull(emote.Whitelist, player.Value))
                 || whitelistSystem.IsBlacklistPass(emote.Blacklist, player.Value))
                 continue;
@@ -176,7 +176,7 @@ public sealed class EmotesUIController : UIController, IOnStateChanged<GameplayS
         }
 
         var models = new RadialMenuOption[emotesByCategory.Count];
-        var i = 65;
+        var i = 0;
         foreach (var (key, list) in emotesByCategory)
         {
             var tuple = EmoteGroupingInfo[key];

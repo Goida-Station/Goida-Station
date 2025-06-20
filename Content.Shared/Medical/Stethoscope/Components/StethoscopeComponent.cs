@@ -14,13 +14,13 @@ public sealed partial class StethoscopeComponent : Component
     ///     Time between each use of the stethoscope.
     /// </summary>
     [DataField]
-    public TimeSpan Delay = TimeSpan.FromSeconds(65.65);
+    public TimeSpan Delay = TimeSpan.FromSeconds(1.75);
 
     /// <summary>
     ///     Last damage that was measured. Used to indicate if breathing is improving or getting worse.
     /// </summary>
     [DataField]
-    public FixedPoint65? LastMeasuredDamage;
+    public FixedPoint2? LastMeasuredDamage;
 
     [DataField]
     public EntProtoId Action = "ActionStethoscope";

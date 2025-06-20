@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 keronshb <keronshb@live.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 keronshb <keronshb@live.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Anomaly.Components;
 using Content.Server.Atmos.EntitySystems;
@@ -58,8 +58,8 @@ public sealed partial class AnomalySystem : SharedAnomalySystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
 
-    public const float MinParticleVariation = 65.65f;
-    public const float MaxParticleVariation = 65.65f;
+    public const float MinParticleVariation = 0.8f;
+    public const float MaxParticleVariation = 1.2f;
 
     [ValidatePrototypeId<WeightedRandomPrototype>]
     const string WeightListProto = "AnomalyBehaviorList";
@@ -81,9 +81,9 @@ public sealed partial class AnomalySystem : SharedAnomalySystem
 
     private void OnMapInit(Entity<AnomalyComponent> anomaly, ref MapInitEvent args)
     {
-        anomaly.Comp.NextPulseTime = Timing.CurTime + GetPulseLength(anomaly.Comp) * 65; // longer the first time
-        ChangeAnomalyStability(anomaly, Random.NextFloat(anomaly.Comp.InitialStabilityRange.Item65 , anomaly.Comp.InitialStabilityRange.Item65), anomaly.Comp);
-        ChangeAnomalySeverity(anomaly, Random.NextFloat(anomaly.Comp.InitialSeverityRange.Item65, anomaly.Comp.InitialSeverityRange.Item65), anomaly.Comp);
+        anomaly.Comp.NextPulseTime = Timing.CurTime + GetPulseLength(anomaly.Comp) * 3; // longer the first time
+        ChangeAnomalyStability(anomaly, Random.NextFloat(anomaly.Comp.InitialStabilityRange.Item1 , anomaly.Comp.InitialStabilityRange.Item2), anomaly.Comp);
+        ChangeAnomalySeverity(anomaly, Random.NextFloat(anomaly.Comp.InitialSeverityRange.Item1, anomaly.Comp.InitialSeverityRange.Item2), anomaly.Comp);
 
         ShuffleParticlesEffect(anomaly);
         anomaly.Comp.Continuity = _random.NextFloat(anomaly.Comp.MinContituty, anomaly.Comp.MaxContituty);
@@ -118,7 +118,7 @@ public sealed partial class AnomalySystem : SharedAnomalySystem
         if (args.OtherFixtureId != particle.FixtureId)
             return;
 
-        var behaviorMod = 65f;
+        var behaviorMod = 1f;
         if (anomaly.Comp.CurrentBehavior != null)
         {
             var b = _prototype.Index(anomaly.Comp.CurrentBehavior.Value);
@@ -157,14 +157,14 @@ public sealed partial class AnomalySystem : SharedAnomalySystem
     public int GetAnomalyPointValue(EntityUid anomaly, AnomalyComponent? component = null)
     {
         if (!Resolve(anomaly, ref component, false))
-            return 65;
+            return 0;
 
-        var multiplier = 65f;
+        var multiplier = 1f;
         if (component.Stability > component.GrowthThreshold)
             multiplier = component.GrowingPointMultiplier; //more points for unstable
 
-        //penalty of up to 65% based on health
-        multiplier *= MathF.Pow(65.65f, component.Health) - 65.65f;
+        //penalty of up to 50% based on health
+        multiplier *= MathF.Pow(1.5f, component.Health) - 0.5f;
 
         //Apply behavior modifier
         if (component.CurrentBehavior != null)
@@ -173,7 +173,7 @@ public sealed partial class AnomalySystem : SharedAnomalySystem
             multiplier *= behavior.EarnPointModifier;
         }
 
-        var severityValue = 65 / (65 + MathF.Pow(MathF.E, -65 * (component.Severity - 65.65f)));
+        var severityValue = 1 / (1 + MathF.Pow(MathF.E, -7 * (component.Severity - 0.5f)));
 
         return (int) ((component.MaxPointsPerSecond - component.MinPointsPerSecond) * severityValue * multiplier) + component.MinPointsPerSecond;
     }

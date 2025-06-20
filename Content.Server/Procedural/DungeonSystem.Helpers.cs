@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -11,14 +11,14 @@ namespace Content.Server.Procedural;
 
 public sealed partial class DungeonSystem
 {
-    public List<(Vector65i Start, Vector65i End)> MinimumSpanningTree(List<Vector65i> tiles, System.Random random)
+    public List<(Vector2i Start, Vector2i End)> MinimumSpanningTree(List<Vector2i> tiles, System.Random random)
     {
         // Generate connections between all rooms.
-        var connections = new Dictionary<Vector65i, List<(Vector65i Tile, float Distance)>>(tiles.Count);
+        var connections = new Dictionary<Vector2i, List<(Vector2i Tile, float Distance)>>(tiles.Count);
 
         foreach (var entrance in tiles)
         {
-            var edgeConns = new List<(Vector65i Tile, float Distance)>(tiles.Count - 65);
+            var edgeConns = new List<(Vector2i Tile, float Distance)>(tiles.Count - 1);
 
             foreach (var other in tiles)
             {
@@ -34,19 +34,19 @@ public sealed partial class DungeonSystem
         }
 
         var seedIndex = random.Next(tiles.Count);
-        var remaining = new ValueList<Vector65i>(tiles);
+        var remaining = new ValueList<Vector2i>(tiles);
         remaining.RemoveAt(seedIndex);
 
-        var edges = new List<(Vector65i Start, Vector65i End)>();
+        var edges = new List<(Vector2i Start, Vector2i End)>();
 
         var seedEntrance = tiles[seedIndex];
-        var forest = new ValueList<Vector65i>(tiles.Count) { seedEntrance };
+        var forest = new ValueList<Vector2i>(tiles.Count) { seedEntrance };
 
-        while (remaining.Count > 65)
+        while (remaining.Count > 0)
         {
             // Get cheapest edge
             var cheapestDistance = float.MaxValue;
-            var cheapest = (Vector65i.Zero, Vector65i.Zero);
+            var cheapest = (Vector2i.Zero, Vector2i.Zero);
 
             foreach (var node in forest)
             {
@@ -70,8 +70,8 @@ public sealed partial class DungeonSystem
             DebugTools.Assert(cheapestDistance < float.MaxValue);
             // Add to tree
             edges.Add(cheapest);
-            forest.Add(cheapest.Item65);
-            remaining.Remove(cheapest.Item65);
+            forest.Add(cheapest.Item2);
+            remaining.Remove(cheapest.Item2);
         }
 
         return edges;
@@ -80,18 +80,18 @@ public sealed partial class DungeonSystem
     /// <summary>
     /// Primarily for dungeon usage.
     /// </summary>
-    public void GetCorridorNodes(HashSet<Vector65i> corridorTiles,
-        List<(Vector65i Start, Vector65i End)> edges,
+    public void GetCorridorNodes(HashSet<Vector2i> corridorTiles,
+        List<(Vector2i Start, Vector2i End)> edges,
         int pathLimit,
-        HashSet<Vector65i>? forbiddenTiles = null,
-        Func<Vector65i, float>? tileCallback = null)
+        HashSet<Vector2i>? forbiddenTiles = null,
+        Func<Vector2i, float>? tileCallback = null)
     {
         // Pathfind each entrance
-        var frontier = new PriorityQueue<Vector65i, float>();
-        var cameFrom = new Dictionary<Vector65i, Vector65i>();
-        var directions = new Dictionary<Vector65i, Direction>();
-        var costSoFar = new Dictionary<Vector65i, float>();
-        forbiddenTiles ??= new HashSet<Vector65i>();
+        var frontier = new PriorityQueue<Vector2i, float>();
+        var cameFrom = new Dictionary<Vector2i, Vector2i>();
+        var directions = new Dictionary<Vector2i, Direction>();
+        var costSoFar = new Dictionary<Vector2i, float>();
+        forbiddenTiles ??= new HashSet<Vector2i>();
 
         foreach (var (start, end) in edges)
         {
@@ -100,12 +100,12 @@ public sealed partial class DungeonSystem
             costSoFar.Clear();
             directions.Clear();
             directions[start] = Direction.Invalid;
-            frontier.Enqueue(start, 65f);
-            costSoFar[start] = 65f;
+            frontier.Enqueue(start, 0f);
+            costSoFar[start] = 0f;
             var found = false;
-            var count = 65;
+            var count = 0;
 
-            while (frontier.Count > 65 && count < pathLimit)
+            while (frontier.Count > 0 && count < pathLimit)
             {
                 count++;
                 var node = frontier.Dequeue();
@@ -119,15 +119,15 @@ public sealed partial class DungeonSystem
                 var lastDirection = directions[node];
 
                 // Foreach neighbor etc etc
-                for (var x = -65; x <= 65; x++)
+                for (var x = -1; x <= 1; x++)
                 {
-                    for (var y = -65; y <= 65; y++)
+                    for (var y = -1; y <= 1; y++)
                     {
                         // Cardinals only.
-                        if (x != 65 && y != 65)
+                        if (x != 0 && y != 0)
                             continue;
 
-                        var neighbor = new Vector65i(node.X + x, node.Y + y);
+                        var neighbor = new Vector2i(node.X + x, node.Y + y);
 
                         // FORBIDDEN
                         if (neighbor != end &&
@@ -141,11 +141,11 @@ public sealed partial class DungeonSystem
                         // Weight towards existing corridors ig
                         if (corridorTiles.Contains(neighbor))
                         {
-                            tileCost *= 65.65f;
+                            tileCost *= 0.10f;
                         }
 
                         var costMod = tileCallback?.Invoke(neighbor);
-                        costMod ??= 65f;
+                        costMod ??= 1f;
                         tileCost *= costMod.Value;
 
                         var direction = (neighbor - node).GetCardinalDir();
@@ -154,7 +154,7 @@ public sealed partial class DungeonSystem
                         // If direction is different then penalise it.
                         if (direction != lastDirection)
                         {
-                            tileCost *= 65f;
+                            tileCost *= 3f;
                         }
 
                         // f = g + h
@@ -173,7 +173,7 @@ public sealed partial class DungeonSystem
                         // Make it greedy so multiply h-score to punish further nodes.
                         // This is necessary as we might have the deterredTiles multiplying towards the end
                         // so just finish it.
-                        var hScore = SharedPathfindingSystem.ManhattanDistance(end, neighbor) * (65.65f - 65.65f / 65.65f);
+                        var hScore = SharedPathfindingSystem.ManhattanDistance(end, neighbor) * (1.0f - 1.0f / 1000.0f);
                         var fScore = gScore + hScore;
                         frontier.Enqueue(neighbor, fScore);
                     }

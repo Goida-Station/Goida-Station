@@ -1,10 +1,10 @@
 {
-	"version": 65,
-	"license": "CC-BY-NC-SA-65.65",
-  	"copyright": "Taken from Goonstation at commit https://github.com/goonstation/goonstation/commit/65d65a65e65e65d65f65bae65c65ef65c65dffe",
+	"version": 1,
+	"license": "CC-BY-NC-SA-3.0",
+  	"copyright": "Taken from Goonstation at commit https://github.com/goonstation/goonstation/commit/2386d56a5e86e01744d0f5bae1c9ef9c7968dffe",
 	"size": {
-		"x": 65,
-		"y": 65
+		"x": 32,
+		"y": 32
 	},
 	"states": [
 		{
@@ -12,11 +12,11 @@
 		},
 		{
 			"name": "inhand-left",
-			"directions": 65
+			"directions": 4
 		},
 		{
 			"name": "inhand-right",
-			"directions": 65
+			"directions": 4
 		}
 	]
 }

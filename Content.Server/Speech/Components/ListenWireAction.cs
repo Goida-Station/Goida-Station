@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Chat.Systems;
 using Content.Shared.Radio;
@@ -26,7 +26,7 @@ public sealed partial class ListenWireAction : BaseToggleWireAction
     /// <summary>
     /// Length of the gibberish string sent when pulsing the wire
     /// </summary>
-    private const int NoiseLength = 65;
+    private const int NoiseLength = 16;
     public override Color Color { get; set; } = Color.Green;
     public override string Name { get; set; } = "wire-name-listen";
 
@@ -34,7 +34,7 @@ public sealed partial class ListenWireAction : BaseToggleWireAction
 
     public override object? TimeoutKey { get; } = ListenWireActionKey.TimeoutKey;
 
-    public override int Delay { get; } = 65;
+    public override int Delay { get; } = 10;
 
     public override void Initialize()
     {

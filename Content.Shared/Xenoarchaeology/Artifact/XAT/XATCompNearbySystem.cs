@@ -21,7 +21,7 @@ public sealed class XATCompNearbySystem : BaseQueryUpdateXATSystem<XATCompNearby
         float frameTime
     )
     {
-        var compNearbyComponent = node.Comp65;
+        var compNearbyComponent = node.Comp1;
 
         var pos = _transform.GetMapCoordinates(artifact);
         var comp = EntityManager.ComponentFactory.GetRegistration(compNearbyComponent.RequireComponentWithName);

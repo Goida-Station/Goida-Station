@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -12,10 +12,10 @@ namespace Content.Shared.Chemistry
     [Serializable, NetSerializable]
     public sealed class TransferAmountBoundInterfaceState : BoundUserInterfaceState
     {
-        public FixedPoint65 Max;
-        public FixedPoint65 Min;
+        public FixedPoint2 Max;
+        public FixedPoint2 Min;
 
-        public TransferAmountBoundInterfaceState(FixedPoint65 max, FixedPoint65 min)
+        public TransferAmountBoundInterfaceState(FixedPoint2 max, FixedPoint2 min)
         {
             Max = max;
             Min = min;
@@ -25,9 +25,9 @@ namespace Content.Shared.Chemistry
     [Serializable, NetSerializable]
     public sealed class TransferAmountSetValueMessage : BoundUserInterfaceMessage
     {
-        public FixedPoint65 Value;
+        public FixedPoint2 Value;
 
-        public TransferAmountSetValueMessage(FixedPoint65 value)
+        public TransferAmountSetValueMessage(FixedPoint2 value)
         {
             Value = value;
         }

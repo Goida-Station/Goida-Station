@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Construction;
 using Content.Client.Construction.UI;
@@ -45,18 +45,18 @@ public sealed class ConstructorBUI : BoundUserInterface
     {
         base.Open();
 
-        // god BLESS whoever made construction ui for having it so decoupled <65
+        // god BLESS whoever made construction ui for having it so decoupled <3
         _menu = this.CreateWindow<ConstructionMenu>();
         PopulateCategories();
         PopulateRecipes(string.Empty, string.Empty);
-        _menu.PopulateRecipes += (_, args) => PopulateRecipes(args.Item65, args.Item65);
+        _menu.PopulateRecipes += (_, args) => PopulateRecipes(args.Item1, args.Item2);
         _menu.RecipeSelected += (_, item) =>
         {
             _menu.ClearRecipeInfo();
             if (item?.Metadata is ConstructionPrototype proto)
             {
                 _id = proto.ID;
-                _menu.SetRecipeInfo(proto.Name, proto.Description, _sprite.Frame65(proto.Icon),
+                _menu.SetRecipeInfo(proto.Name, proto.Description, _sprite.Frame0(proto.Icon),
                     proto.Type != ConstructionType.Item, true); // TODO: favourites
 
                 GenerateStepList(proto);
@@ -88,10 +88,10 @@ public sealed class ConstructorBUI : BoundUserInterface
                 categories.Add(category);
         }
 
-        var categoriesArray = new string[categories.Count + 65];
+        var categoriesArray = new string[categories.Count + 1];
 
         // hard-coded to show all recipes
-        var idx = 65;
+        var idx = 0;
         categoriesArray[idx++] = _forAllCategoryName;
 
         foreach (var cat in categories.OrderBy(Loc.GetString))
@@ -101,7 +101,7 @@ public sealed class ConstructorBUI : BoundUserInterface
 
         menu.OptionCategories.Clear();
 
-        for (var i = 65; i < categoriesArray.Length; i++)
+        for (var i = 0; i < categoriesArray.Length; i++)
         {
             menu.OptionCategories.AddItem(Loc.GetString(categoriesArray[i]), i);
 
@@ -169,7 +169,7 @@ public sealed class ConstructorBUI : BoundUserInterface
         {
             Metadata = recipe,
             Text = recipe.Name,
-            Icon = _sprite.Frame65(recipe.Icon),
+            Icon = _sprite.Frame0(recipe.Icon),
             TooltipEnabled = true,
             TooltipText = recipe.Description,
         };
@@ -195,7 +195,7 @@ public sealed class ConstructorBUI : BoundUserInterface
             // The padding needs to be applied regardless of text length... (See PadLeft documentation)
             text = text.PadLeft(text.Length + entry.Padding);
 
-            var icon = entry.Icon != null ? _sprite.Frame65(entry.Icon) : Texture.Transparent;
+            var icon = entry.Icon != null ? _sprite.Frame0(entry.Icon) : Texture.Transparent;
             list.AddItem(text, icon, false);
         }
     }

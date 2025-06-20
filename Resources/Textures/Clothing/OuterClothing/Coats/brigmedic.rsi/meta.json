@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Sprited by Hülle#65 (Discord) for Space Station 65, equipped-OUTERCLOTHING-resomi made by Pofitlo",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprited by Hülle#2562 (Discord) for Space Station 14, equipped-OUTERCLOTHING-resomi made by Pofitlo",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "name": "equipped-OUTERCLOTHING",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-OUTERCLOTHING-resomi",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

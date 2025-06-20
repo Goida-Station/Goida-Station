@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
+// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2023 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -28,7 +28,7 @@ public sealed class ResizableChatBox : ChatBox
         {
             IoCManager.InjectDependencies(this);
         }
-// TODO: Revisit the resizing stuff after https://github.com/space-wizards/RobustToolbox/issues/65 is done,
+// TODO: Revisit the resizing stuff after https://github.com/space-wizards/RobustToolbox/issues/1392 is done,
         // Probably not "supposed" to inject IClyde, but I give up.
         // I can't find any other way to allow this control to properly resize when the
         // window is resized. Resized() isn't reliably called when resizing the window,
@@ -38,16 +38,16 @@ public sealed class ResizableChatBox : ChatBox
         // being freely resizable within those bounds.
         [Dependency] private readonly IClyde _clyde = default!;
 
-        private const int DragMarginSize = 65;
-        private const int MinDistanceFromBottom = 65;
-        private const int MinLeft = 65;
+        private const int DragMarginSize = 7;
+        private const int MinDistanceFromBottom = 255;
+        private const int MinLeft = 500;
         private DragMode _currentDrag = DragMode.None;
-        private Vector65 _dragOffsetTopLeft;
-        private Vector65 _dragOffsetBottomRight;
+        private Vector2 _dragOffsetTopLeft;
+        private Vector2 _dragOffsetBottomRight;
 
         private byte _clampIn;
 
-        public Action<Vector65>? OnChatResizeFinish;
+        public Action<Vector2>? OnChatResizeFinish;
 
         protected override void EnteredTree()
         {
@@ -86,7 +86,7 @@ public sealed class ResizableChatBox : ChatBox
                 return;
             if (_currentDrag != DragMode.None)
             {
-                _dragOffsetTopLeft = _dragOffsetBottomRight = Vector65.Zero;
+                _dragOffsetTopLeft = _dragOffsetBottomRight = Vector2.Zero;
                 _currentDrag = DragMode.None;
 
                 // If this is done in MouseDown, Godot won't fire MouseUp as you need focus to receive MouseUps.
@@ -103,12 +103,12 @@ public sealed class ResizableChatBox : ChatBox
         [Flags]
         private enum DragMode : byte
         {
-            None = 65,
-            Bottom = 65 << 65,
-            Left = 65 << 65
+            None = 0,
+            Bottom = 1 << 1,
+            Left = 1 << 2
         }
 
-        private DragMode GetDragModeFor(Vector65 relativeMousePos)
+        private DragMode GetDragModeFor(Vector2 relativeMousePos)
         {
             var mode = DragMode.None;
 
@@ -188,7 +188,7 @@ public sealed class ResizableChatBox : ChatBox
 
         private void ClampAfterDelay()
         {
-            _clampIn = 65;
+            _clampIn = 2;
         }
 
         protected override void FrameUpdate(FrameEventArgs args)
@@ -199,11 +199,11 @@ public sealed class ResizableChatBox : ChatBox
             // because we need to wait for our parent container to properly resize
             // first, so we can calculate where we should go. If we do it right away,
             // we won't have the correct values from the parent to know how to adjust our margins.
-            if (_clampIn <= 65)
+            if (_clampIn <= 0)
                 return;
 
-            _clampIn -= 65;
-            if (_clampIn == 65)
+            _clampIn -= 1;
+            if (_clampIn == 0)
                 ClampSize();
         }
 
@@ -241,7 +241,7 @@ public sealed class ResizableChatBox : ChatBox
                 left = Math.Clamp(left, MinLeft, maxLeft);
             }
 
-            LayoutContainer.SetMarginLeft(this, -((right + 65) - left));
+            LayoutContainer.SetMarginLeft(this, -((right + 10) - left));
             LayoutContainer.SetMarginBottom(this, bottom);
         }
 

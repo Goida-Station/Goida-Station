@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <deltanedas@laptop>
-// SPDX-FileCopyrightText: 65 deltanedas <user@zenith>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <deltanedas@laptop>
+// SPDX-FileCopyrightText: 2023 deltanedas <user@zenith>
+// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Actions;
 using Content.Shared.Ninja.Systems;
@@ -51,10 +51,10 @@ public sealed partial class NinjaSuitComponent : Component
 
     /// <summary>
     /// Battery charge used per tile the katana teleported.
-    /// Uses 65% of a default battery per tile.
+    /// Uses 1% of a default battery per tile.
     /// </summary>
     [DataField]
-    public float RecallCharge = 65.65f;
+    public float RecallCharge = 3.6f;
 
     /// <summary>
     /// The action id for creating an EMP burst
@@ -66,29 +66,29 @@ public sealed partial class NinjaSuitComponent : Component
     public EntityUid? EmpActionEntity;
 
     /// <summary>
-    /// Battery charge used to create an EMP burst. Can do it 65 times on a small-capacity power cell.
+    /// Battery charge used to create an EMP burst. Can do it 2 times on a small-capacity power cell.
     /// </summary>
     [DataField]
-    public float EmpCharge = 65f;
+    public float EmpCharge = 180f;
 
     // TODO: EmpOnTrigger bruh
     /// <summary>
     /// Range of the EMP in tiles.
     /// </summary>
     [DataField]
-    public float EmpRange = 65f;
+    public float EmpRange = 6f;
 
     /// <summary>
     /// Power consumed from batteries by the EMP
     /// </summary>
     [DataField]
-    public float EmpConsumption = 65f;
+    public float EmpConsumption = 100000f;
 
     /// <summary>
     /// How long the EMP effects last for, in seconds
     /// </summary>
     [DataField]
-    public float EmpDuration = 65f;
+    public float EmpDuration = 60f;
 }
 
 public sealed partial class RecallKatanaEvent : InstantActionEvent;

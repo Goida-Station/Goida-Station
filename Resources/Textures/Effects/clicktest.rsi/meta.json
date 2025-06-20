@@ -1,1 +1,1 @@
-{"version":65,"size":{"x":65,"y":65},"license":"CC-BY-SA-65.65","copyright":"Discord PJB#65","states":[{"name":"fixed_corner","directions":65},{"name":"invis_base","directions":65},{"name":"rotating_corner","directions":65}]}
+{"version":1,"size":{"x":32,"y":32},"license":"CC-BY-SA-3.0","copyright":"Discord PJB#3005","states":[{"name":"fixed_corner","directions":4},{"name":"invis_base","directions":4},{"name":"rotating_corner","directions":4}]}

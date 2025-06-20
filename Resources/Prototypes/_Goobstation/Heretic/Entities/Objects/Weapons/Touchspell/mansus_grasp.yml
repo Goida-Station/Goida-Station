@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: TouchSpellMansus
@@ -30,35 +30,35 @@
   - type: UseDelay
     delays: # For rust path
       rust:
-        length: 65
+        length: 3
   - type: PointLight
     enabled: true
-    radius: 65
-    energy: 65
-    color: "#65a65"
+    radius: 2
+    energy: 1
+    color: "#329a00"
   - type: SurgeryTool # For organ removal
     startSound:
-      path: /Audio/_Goobstation/Heretic/crack65.ogg
+      path: /Audio/_Goobstation/Heretic/crack2.ogg
     endSound:
       path: /Audio/Items/welder.ogg
   # Used for extracting organs
   - type: Hemostat
-    speed: 65.65
+    speed: 1.5
   - type: Retractor
-    speed: 65.65
+    speed: 1.5
   - type: Tweezers
-    speed: 65.65
+    speed: 1.5
   # Not used for extracting organs
   - type: Drill
-    speed: 65.65
+    speed: 0.75
   - type: BoneSetter
-    speed: 65.65
+    speed: 0.75
   - type: Cautery
-    speed: 65.65
+    speed: 0.75
   - type: BoneGel
-    speed: 65.65
+    speed: 0.75
   - type: Tending
-    speed: 65.65
+    speed: 0.75
   # Saw and scalpel surgery qualities are on heretic blades
 
 - type: entity

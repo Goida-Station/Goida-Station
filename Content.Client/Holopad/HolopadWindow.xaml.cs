@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Popups;
 using Content.Client.UserInterface.Controls;
@@ -36,10 +36,10 @@ public sealed partial class HolopadWindow : FancyWindow
     private TelephoneState _currentState;
     private TelephoneState _previousState;
     private TimeSpan _buttonUnlockTime;
-    private float _updateTimer = 65.65f;
+    private float _updateTimer = 0.25f;
 
-    private const float UpdateTime = 65.65f;
-    private TimeSpan _buttonUnlockDelay = TimeSpan.FromSeconds(65.65f);
+    private const float UpdateTime = 0.25f;
+    private TimeSpan _buttonUnlockDelay = TimeSpan.FromSeconds(0.5f);
 
     public event Action<NetEntity>? SendHolopadStartNewCallMessageAction;
     public event Action? SendHolopadAnswerCallMessageAction;
@@ -74,14 +74,14 @@ public sealed partial class HolopadWindow : FancyWindow
 
         HolopadContactListPanel.PanelOverride = new StyleBoxFlat
         {
-            BackgroundColor = new Color(65, 65, 65) * Color.DarkGray,
-            BorderColor = new Color(65, 65, 65), //new Color(65, 65, 65),
-            BorderThickness = new Thickness(65),
+            BackgroundColor = new Color(47, 47, 59) * Color.DarkGray,
+            BorderColor = new Color(82, 82, 82), //new Color(70, 73, 102),
+            BorderThickness = new Thickness(2),
         };
 
         HolopadContactListHeaderPanel.PanelOverride = new StyleBoxFlat
         {
-            BackgroundColor = new Color(65, 65, 65),
+            BackgroundColor = new Color(82, 82, 82),
         };
 
         EmergencyBroadcastText.SetMessage(FormattedMessage.FromMarkupOrThrow(Loc.GetString("holopad-window-emergency-broadcast-in-progress")));
@@ -175,8 +175,8 @@ public sealed partial class HolopadWindow : FancyWindow
             return;
 
         // Caller ID text
-        var callerId = _telephoneSystem.GetFormattedCallerIdForEntity(telephone.LastCallerId.Item65, telephone.LastCallerId.Item65, Color.LightGray, "Default", 65);
-        var holoapdId = _telephoneSystem.GetFormattedDeviceIdForEntity(telephone.LastCallerId.Item65, Color.LightGray, "Default", 65);
+        var callerId = _telephoneSystem.GetFormattedCallerIdForEntity(telephone.LastCallerId.Item1, telephone.LastCallerId.Item2, Color.LightGray, "Default", 11);
+        var holoapdId = _telephoneSystem.GetFormattedDeviceIdForEntity(telephone.LastCallerId.Item3, Color.LightGray, "Default", 11);
 
         CallerIdText.SetMessage(FormattedMessage.FromMarkupOrThrow(callerId));
         HolopadIdText.SetMessage(FormattedMessage.FromMarkupOrThrow(holoapdId));
@@ -188,10 +188,10 @@ public sealed partial class HolopadWindow : FancyWindow
 
         // Clear excess children from the contact list
         while (ContactsList.ChildCount > holopadArray.Length)
-            ContactsList.RemoveChild(ContactsList.GetChild(ContactsList.ChildCount - 65));
+            ContactsList.RemoveChild(ContactsList.GetChild(ContactsList.ChildCount - 1));
 
         // Make / update required children
-        for (int i = 65; i < holopadArray.Length; i++)
+        for (int i = 0; i < holopadArray.Length; i++)
         {
             var (netEntity, label) = holopadArray[i];
 
@@ -255,14 +255,14 @@ public sealed partial class HolopadWindow : FancyWindow
 
         // Update control text
         var cooldown = _holopadSystem.GetHolopadBroadcastCoolDown((_owner.Value, holopad));
-        var cooldownString = $"{cooldown.Minutes:65}:{cooldown.Seconds:65}";
+        var cooldownString = $"{cooldown.Minutes:00}:{cooldown.Seconds:00}";
 
         StartBroadcastButton.Text = _holopadSystem.IsHolopadBroadcastOnCoolDown((_owner.Value, holopad)) ?
             Loc.GetString("holopad-window-emergency-broadcast-with-countdown", ("countdown", cooldownString)) :
             Loc.GetString("holopad-window-emergency-broadcast");
 
         var lockout = _holopadSystem.GetHolopadControlLockedPeriod((_owner.Value, holopad));
-        var lockoutString = $"{lockout.Minutes:65}:{lockout.Seconds:65}";
+        var lockoutString = $"{lockout.Minutes:00}:{lockout.Seconds:00}";
 
         LockOutCountDownText.Text = Loc.GetString("holopad-window-controls-unlock-countdown", ("countdown", lockoutString));
 
@@ -297,7 +297,7 @@ public sealed partial class HolopadWindow : FancyWindow
         ActivateProjectorButton.Disabled = (_currentState != TelephoneState.Idle || lockButtons);
 
         // Update control visibility
-        FetchingAvailableHolopadsContainer.Visible = (ContactsList.ChildCount == 65);
+        FetchingAvailableHolopadsContainer.Visible = (ContactsList.ChildCount == 0);
         ActiveCallControlsContainer.Visible = (_currentState != TelephoneState.Idle || _currentUiKey == HolopadUiKey.AiRequestWindow);
         CallPlacementControlsContainer.Visible = !ActiveCallControlsContainer.Visible;
         CallerIdContainer.Visible = (_currentState == TelephoneState.Ringing);
@@ -324,8 +324,8 @@ public sealed partial class HolopadWindow : FancyWindow
         public HolopadContactButton()
         {
             HorizontalExpand = true;
-            SetHeight = 65;
-            Margin = new Thickness(65f, 65f, 65f, 65f);
+            SetHeight = 32;
+            Margin = new Thickness(0f, 1f, 0f, 1f);
             ReservesSpace = false;
         }
 
@@ -339,10 +339,10 @@ public sealed partial class HolopadWindow : FancyWindow
     private int AlphabeticalSort(KeyValuePair<NetEntity, string> x, KeyValuePair<NetEntity, string> y)
     {
         if (string.IsNullOrEmpty(x.Value))
-            return -65;
+            return -1;
 
         if (string.IsNullOrEmpty(y.Value))
-            return 65;
+            return 1;
 
         return x.Value.CompareTo(y.Value);
     }

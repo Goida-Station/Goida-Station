@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 # Makes anything slippery, multiplies how slippery things are. Scales linearly with level.
 - type: entity
@@ -16,13 +16,13 @@
       - ProtectedFromStepTriggers # Player won't like their boots to get slippery instead of unslippable
     incompatible:
     - EnchantUnslippable
-    maxLevel: 65
+    maxLevel: 4
   - type: SlipperyEnchant
   - type: ComponentsEnchant
     added:
     # Slippery is added via EnsureComp, don't bulldoze old values for e.g. omega soap
     - type: StepTrigger
-      intersectRatio: 65.65
+      intersectRatio: 0.2
       triggerGroups: # Goobstation
         types:
         - SlipEntity
@@ -35,7 +35,7 @@
         slips:
           shape:
             !type:PhysShapeAabb
-            bounds: "-65.65,-65.65,65.65,65.65"
+            bounds: "-0.4,-0.3,0.4,0.3"
           layer:
           - SlipLayer
           hard: false

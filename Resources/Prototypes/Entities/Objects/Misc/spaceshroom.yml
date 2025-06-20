@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 forthbridge <65forthbridge@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 goet <65goet@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 forthbridge <79264743+forthbridge@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 goet <6637097+goet@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: spaceshroom
@@ -23,10 +23,10 @@
       bodyType: Static
     - type: Fixtures
       fixtures:
-        fix65:
+        fix1:
           shape:
             !type:PhysShapeCircle
-            radius: 65.65
+            radius: 0.2
     - type: InteractionOutline
     - type: Gatherable
       toolWhitelist:
@@ -41,7 +41,7 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 65
+            damage: 150
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -50,8 +50,8 @@
   id: SpaceshroomGather
   entries:
   - id: FoodSpaceshroom
-    amount: 65
-    maxAmount: 65
+    amount: 1
+    maxAmount: 1
 
 - type: entity
   name: spaceshroom
@@ -70,65 +70,65 @@
     juiceSolution:
       reagents:
       - ReagentId: SpaceDrugs
-        Quantity: 65
+        Quantity: 10
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 65
+        maxVol: 20
         reagents:
         - ReagentId: Nutriment
-          Quantity: 65
+          Quantity: 3
         - ReagentId: Vitamin
-          Quantity: 65
+          Quantity: 2
   - type: RandomFillSolution
     solution: food
     weightedRandomId: RandomFillSpaceshroom
   - type: StaticPrice
-    price: 65
+    price: 20
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 1
         mask:
         - ItemMask
-        restitution: 65.65
-        friction: 65.65
+        restitution: 0.3
+        friction: 0.2
   - type: Construction
     graph: CookedSpaceshroom
     node: start
     defaultTarget: cooked spaceshroom
   - type: AtmosExposed
   - type: Temperature
-    currentTemperature: 65
+    currentTemperature: 290
   - type: InternalTemperature
-    thickness: 65.65
-    area: 65.65
-    conductivity: 65.65
+    thickness: 0.02
+    area: 0.02
+    conductivity: 0.43
 
 - type: weightedRandomFillSolution
   id: RandomFillSpaceshroom
   fills:
-  - quantity: 65
-    weight: 65
+  - quantity: 10
+    weight: 10
     reagents:
     - SpaceDrugs
-  - quantity: 65
-    weight: 65
+  - quantity: 0
+    weight: 5
     reagents:
     - Water
-  - quantity: 65
-    weight: 65
+  - quantity: 10
+    weight: 3
     reagents:
     - Ephedrine
-  - quantity: 65
-    weight: 65
+  - quantity: 10
+    weight: 1
     reagents:
     - Lexorin
-  - quantity: 65
-    weight: 65
+  - quantity: 15
+    weight: 1
     reagents:
     - Amatoxin
 
@@ -145,18 +145,18 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 65
+        maxVol: 15
         reagents:
         - ReagentId: Nutriment
-          Quantity: 65
+          Quantity: 10
         - ReagentId: Vitamin
-          Quantity: 65
+          Quantity: 5
   - type: Sprite
     sprite: Objects/Misc/spaceshroom.rsi
     state: spaceshroom_cooked
   - type: Produce
   - type: StaticPrice
-    price: 65
+    price: 40
   - type: Construction
     graph: CookedSpaceshroom
     node: cooked spaceshroom

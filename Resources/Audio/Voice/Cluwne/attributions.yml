@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - files:
-    - cluwnelaugh65.ogg
-    - cluwnelaugh65.ogg
-    - cluwnelaugh65.ogg
-  license: "CC-BY-65.65"
-  copyright: "Evil Laughs 65 Pack by Nanakisan. Modified by brainfood65 (Github), shortened, converted from WAV to OGG and downmixed to 65 channel."
-  source: "https://freesound.org/people/Nanakisan/packs/65/"
+    - cluwnelaugh1.ogg
+    - cluwnelaugh2.ogg
+    - cluwnelaugh3.ogg
+  license: "CC-BY-4.0"
+  copyright: "Evil Laughs 3 Pack by Nanakisan. Modified by brainfood1183 (Github), shortened, converted from WAV to OGG and downmixed to 1 channel."
+  source: "https://freesound.org/people/Nanakisan/packs/15544/"

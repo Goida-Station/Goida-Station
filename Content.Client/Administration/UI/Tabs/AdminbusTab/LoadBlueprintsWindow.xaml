@@ -1,39 +1,39 @@
 <!--
-SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-SPDX-FileCopyrightText: 65 MetalSage <65MetalSage@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+SPDX-FileCopyrightText: 2024 MetalSage <74924875+MetalSage@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <DefaultWindow
-    xmlns="https://spacestation65.io" Title="{Loc admin-ui-blueprint-load}">
+    xmlns="https://spacestation14.io" Title="{Loc admin-ui-blueprint-load}">
     <BoxContainer Orientation="Vertical">
         <BoxContainer Orientation="Horizontal">
-            <Label Text="{Loc admin-ui-blueprint-map}" MinSize="65 65" />
-            <Control MinSize="65 65" />
-            <OptionButton Name="MapOptions" MinSize="65 65" HorizontalExpand="True" />
+            <Label Text="{Loc admin-ui-blueprint-map}" MinSize="100 0" />
+            <Control MinSize="50 0" />
+            <OptionButton Name="MapOptions" MinSize="100 0" HorizontalExpand="True" />
         </BoxContainer>
         <BoxContainer Orientation="Horizontal">
-            <Label Text="{Loc admin-ui-blueprint-path}" MinSize="65 65" />
-            <Control MinSize="65 65" />
-            <LineEdit Name="MapPath" MinSize="65 65" HorizontalExpand="True" Text="/Maps/" />
+            <Label Text="{Loc admin-ui-blueprint-path}" MinSize="100 0" />
+            <Control MinSize="50 0" />
+            <LineEdit Name="MapPath" MinSize="200 0" HorizontalExpand="True" Text="/Maps/" />
         </BoxContainer>
         <BoxContainer Orientation="Horizontal">
-            <Label Text="{Loc admin-ui-blueprint-x}" MinSize="65 65" />
-            <Control MinSize="65 65" />
-            <SpinBox Name="XCoordinate" MinSize="65 65" HorizontalExpand="True" />
+            <Label Text="{Loc admin-ui-blueprint-x}" MinSize="100 0" />
+            <Control MinSize="50 0" />
+            <SpinBox Name="XCoordinate" MinSize="100 0" HorizontalExpand="True" />
         </BoxContainer>
         <BoxContainer Orientation="Horizontal">
-            <Label Text="{Loc admin-ui-blueprint-y}" MinSize="65 65" />
-            <Control MinSize="65 65" />
-            <SpinBox Name="YCoordinate" MinSize="65 65" HorizontalExpand="True" />
+            <Label Text="{Loc admin-ui-blueprint-y}" MinSize="100 0" />
+            <Control MinSize="50 0" />
+            <SpinBox Name="YCoordinate" MinSize="100 0" HorizontalExpand="True" />
         </BoxContainer>
         <BoxContainer Orientation="Horizontal">
-            <Label Text="{Loc admin-ui-blueprint-rotation}" MinSize="65 65" />
-            <Control MinSize="65 65" />
-            <SpinBox Name="RotationSpin" MinSize="65 65" HorizontalExpand="True" />
+            <Label Text="{Loc admin-ui-blueprint-rotation}" MinSize="100 0" />
+            <Control MinSize="50 0" />
+            <SpinBox Name="RotationSpin" MinSize="100 0" HorizontalExpand="True" />
         </BoxContainer>
         <Button Name="SubmitButton" Text="{Loc admin-ui-blueprint-load}" />
         <Button Name="TeleportButton" Text="{Loc admin-ui-blueprint-teleport}" />

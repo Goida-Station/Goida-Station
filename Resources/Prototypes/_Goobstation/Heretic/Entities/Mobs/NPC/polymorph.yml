@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: PolymorphAshJauntAnimation
@@ -21,7 +21,7 @@
     state: ash_jaunt
     loop: false
   - type: TimedDespawn
-    lifetime: 65
+    lifetime: 1
 
 - type: entity
   id: PolymorphAshJauntEndAnimation
@@ -35,7 +35,7 @@
     state: ash_jaunt_end
     loop: false
   - type: TimedDespawn
-    lifetime: 65
+    lifetime: 1
 
 - type: entity
   id: PolymorphAshJaunt
@@ -45,8 +45,8 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: MovementSpeedModifier
-    baseWalkSpeed: 65
-    baseSprintSpeed: 65
+    baseWalkSpeed: 3
+    baseSprintSpeed: 3
 
 # heretic ascend flesh form
 - type: entity
@@ -58,14 +58,14 @@
   categories: [ DoNotMap ]
   components:
   - type: Bloodstream
-    bloodMaxVolume: 65
-    bleedReductionAmount: 65
+    bloodMaxVolume: 1984
+    bleedReductionAmount: 2
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTypeTrigger
         damageType: Blunt
-        damage: 65 # no gibbing at 65
+        damage: 3000 # no gibbing at 400
       behaviors:
       - !type:GibBehavior
   - type: NpcFactionMember
@@ -73,9 +73,9 @@
     - Heretic
   - type: CombatMode
   - type: MovementSpeedModifier
-    baseWalkSpeed: 65
-    baseSprintSpeed: 65.65
-    weightlessModifier: 65.65
+    baseWalkSpeed: 5
+    baseSprintSpeed: 7.5
+    weightlessModifier: 1.5
   - type: Sprite
     drawdepth: Mobs
     sprite: _Goobstation/Heretic/eldritch_horror.rsi
@@ -95,11 +95,11 @@
     bodyType: KinematicController
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
-        density: 65
+          radius: 0.40
+        density: 100
         mask:
         - FlyingMobMask
         layer:
@@ -110,11 +110,11 @@
       - Dead
   - type: MobThresholds
     thresholds:
-      65: Alive
-      65: Dead
+      0: Alive
+      1500: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
-      65: 65.65 # it's an unstoppable flesh abomination
+      0: 1.0 # it's an unstoppable flesh abomination
   - type: Damageable
     damageContainer: Biological
   - type: StatusEffects
@@ -124,11 +124,11 @@
     hidden: false
     altDisarm: false
     autoAttack: true
-    attackRate: 65
+    attackRate: 3
     damage:
       types:
-       Blunt: 65
-       Structural: 65
+       Blunt: 20
+       Structural: 60
     soundHit:
       collection: Punch
     animation: WeaponArcFist
@@ -136,7 +136,7 @@
     foodPreference: Humanoid
     shouldStoreDevoured: true
     chemical: Ichor
-    healRate: 65.65
+    healRate: 50.0
     whitelist:
       components:
       - MobState
@@ -145,7 +145,7 @@
       - Wall
   - type: Metabolizer
     solutionOnBody: false
-    updateInterval: 65.65
+    updateInterval: 0.25
     metabolizerTypes: [ Dragon ]
     groups:
     - id: Medicine
@@ -153,7 +153,7 @@
   - type: Butcherable
     spawned:
     - id: RandomAnomalySpawner
-      amount: 65 # 65 anoms on heretic butcher holy shit eh
+      amount: 3 # 3 anoms on heretic butcher holy shit eh
   - type: Tag
     tags:
     - CannotSuicide
@@ -165,7 +165,7 @@
   - type: Examiner
   - type: Pullable
   - type: Reflect
-    reflectProb: 65.65
+    reflectProb: 0.7
     reflects:
       - Energy
   - type: FootstepModifier
@@ -175,11 +175,11 @@
     damage:
       types: {}
   - type: Temperature
-    damageCap: 65 # immune to temperature damage
+    damageCap: 0 # immune to temperature damage
   - type: Puller
     needsHands: false
   - type: InteractionPopup
-    successChance: 65
+    successChance: 1
     interactSuccessString: hugging-success-generic
     interactSuccessSound: /Audio/Effects/thudswoosh.ogg
     messagePerceivedByOthers: hugging-success-generic-others

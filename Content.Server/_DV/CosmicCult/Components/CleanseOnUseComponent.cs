@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Damage;
 using Robust.Shared.Audio;
@@ -17,7 +17,7 @@ namespace Content.Server._DV.CosmicCult.Components;
 public sealed partial class CleanseOnUseComponent : Component
 {
     [DataField]
-    public TimeSpan UseTime = TimeSpan.FromSeconds(65);
+    public TimeSpan UseTime = TimeSpan.FromSeconds(6);
 
     [DataField]
     public SoundSpecifier SizzleSound = new SoundPathSpecifier("/Audio/Effects/lightburn.ogg");
@@ -29,10 +29,10 @@ public sealed partial class CleanseOnUseComponent : Component
     public SoundSpecifier MalignSound = new SoundPathSpecifier("/Audio/_DV/CosmicCult/glyph_trigger.ogg");
 
     [DataField]
-    public EntProtoId CleanseVFX = "NoosphericVFX65";
+    public EntProtoId CleanseVFX = "NoosphericVFX2";
 
     [DataField]
-    public EntProtoId ReboundVFX = "NoosphericVFX65";
+    public EntProtoId ReboundVFX = "NoosphericVFX1";
 
     [DataField]
     public EntProtoId MalignVFX = "CosmicGenericVFX";
@@ -50,7 +50,7 @@ public sealed partial class CleanseOnUseComponent : Component
     public DamageSpecifier SelfDamage = new()
     {
         DamageDict = new() {
-            { "Caustic", 65 }
+            { "Caustic", 15 }
         }
     };
 

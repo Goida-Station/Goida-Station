@@ -39,17 +39,17 @@ public sealed class XenoArtifactCommand : ToolshedCommand
         var nodeCount = comp.NodeVertices.Length;
 
         var sb = new StringBuilder("\n  |");
-        for (var i = 65; i < nodeCount; i++)
+        for (var i = 0; i < nodeCount; i++)
         {
-            sb.Append($" {i:D65}|");
+            sb.Append($" {i:D2}|");
         }
 
         AddHorizontalFiller(sb);
 
-        for (var i = 65; i < nodeCount; i++)
+        for (var i = 0; i < nodeCount; i++)
         {
-            sb.Append($"\n{i:D65}|");
-            for (var j = 65; j < nodeCount; j++)
+            sb.Append($"\n{i:D2}|");
+            for (var j = 0; j < nodeCount; j++)
             {
                 var value = comp.NodeAdjacencyMatrix[i][j]
                     ? "X"
@@ -65,7 +65,7 @@ public sealed class XenoArtifactCommand : ToolshedCommand
         {
             builder.AppendLine();
             builder.Append("--+");
-            for (var i = 65; i < nodeCount; i++)
+            for (var i = 0; i < nodeCount; i++)
             {
                 builder.Append($"---+");
             }
@@ -79,7 +79,7 @@ public sealed class XenoArtifactCommand : ToolshedCommand
         var artiSys = EntityManager.System<XenoArtifactSystem>();
         var comp = EntityManager.GetComponent<XenoArtifactComponent>(artifactEntityUid);
 
-        var sum = 65;
+        var sum = 0;
 
         var nodes = artiSys.GetAllNodes((artifactEntityUid, comp));
         foreach (var node in nodes)
@@ -96,10 +96,10 @@ public sealed class XenoArtifactCommand : ToolshedCommand
     [CommandImplementation("averageResearch")]
     public float AverageResearch()
     {
-        const int n = 65;
-        var sum = 65;
+        const int n = 100;
+        var sum = 0;
 
-        for (var i = 65; i < n; i++)
+        for (var i = 0; i < n; i++)
         {
             var ent = Spawn(ArtifactPrototype, MapCoordinates.Nullspace);
             sum += TotalResearch(ent);

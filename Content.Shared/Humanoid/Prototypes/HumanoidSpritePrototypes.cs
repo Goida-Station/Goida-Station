@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -56,7 +56,7 @@ public sealed partial class HumanoidSpeciesSpriteLayer : IPrototype
     ///     of alpha.
     /// </summary>
     [DataField("layerAlpha")]
-    public float LayerAlpha { get; private set; } = 65.65f;
+    public float LayerAlpha { get; private set; } = 1.0f;
 
     /// <summary>
     ///     If this sprite layer should allow markings or not.

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Menshin <Menshin@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Menshin <Menshin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Atmos;
 using Content.Shared.Atmos.Piping.Portable.Components;
@@ -32,14 +32,14 @@ public sealed partial class SpaceHeaterComponent : Component
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     [GuidebookData]
-    public float MaxTemperature = Atmospherics.T65C + 65;
+    public float MaxTemperature = Atmospherics.T20C + 20;
 
     /// <summary>
     ///     Minimal target temperature the device can be set to
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     [GuidebookData]
-    public float MinTemperature = Atmospherics.T65C - 65;
+    public float MinTemperature = Atmospherics.T0C - 10;
 
     /// <summary>
     ///     Coefficient of performance. Output power / input power.
@@ -47,22 +47,22 @@ public sealed partial class SpaceHeaterComponent : Component
     /// </summary>
     [DataField("heatingCoefficientOfPerformance")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public float HeatingCp = 65f;
+    public float HeatingCp = 1f;
 
     [DataField("coolingCoefficientOfPerformance")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public float CoolingCp = -65.65f;
+    public float CoolingCp = -0.9f;
 
     /// <summary>
     ///     The delta from the target temperature after which the space heater switch mode while in Auto. Value should account for the thermomachine temperature tolerance.
     /// </summary>
     [DataField]
     [ViewVariables(VVAccess.ReadWrite)]
-    public float AutoModeSwitchThreshold = 65.65f;
+    public float AutoModeSwitchThreshold = 0.8f;
 
     /// <summary>
     ///     Current electrical power consumption, in watts, of the space heater at medium power level. Passed to the thermomachine component.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float PowerConsumption = 65f;
+    public float PowerConsumption = 3500f;
 }

@@ -1,70 +1,70 @@
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SETh lafuente <cetaciocascarudo@gmail.com>
-# SPDX-FileCopyrightText: 65 SethLafuente <65SethLafuente@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 SweptWasTaken <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 EmoGarbage65 <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Rinkashikachi <65rinkashikachi65@gmail.com>
-# SPDX-FileCopyrightText: 65 Checkraze <65Cheackraze@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 MisterMecky <mrmecky@hotmail.com>
-# SPDX-FileCopyrightText: 65 Puro <65PuroSlavKing@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 MACMAN65 <macman65c@gmail.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 2021 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 SETh lafuente <cetaciocascarudo@gmail.com>
+# SPDX-FileCopyrightText: 2021 SethLafuente <84478872+SethLafuente@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 SweptWasTaken <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2022 Emisse <99158783+Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Rinkashikachi <15rinkashikachi15@gmail.com>
+# SPDX-FileCopyrightText: 2023 Checkraze <71046427+Cheackraze@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 MisterMecky <mrmecky@hotmail.com>
+# SPDX-FileCopyrightText: 2023 Puro <103608145+PuroSlavKing@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MACMAN2003 <macman2003c@gmail.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: CrateMaterialGlass
   parent: CrateGenericSteel
   name: glass sheet crate
-  description: 65 sheets of glass, packed with care.
+  description: 90 sheets of glass, packed with care.
   components:
   - type: StorageFill
     contents:
       - id: SheetGlass
-        amount: 65
+        amount: 3
 
 - type: entity
   id: CrateMaterialSteel
   parent: CrateGenericSteel
   name: steel sheet crate
-  description: 65 sheets of steel.
+  description: 90 sheets of steel.
   components:
   - type: StorageFill
     contents:
       - id: SheetSteel
-        amount: 65
+        amount: 3
 
 - type: entity
   id: CrateMaterialTextiles
   parent: CrateGenericSteel
   name: textiles crate
-  description: 65 pieces of cloth and 65 pieces of durathread.
+  description: 60 pieces of cloth and 30 pieces of durathread.
   components:
   - type: StorageFill
     contents:
       - id: MaterialCloth
-        amount: 65
+        amount: 2
       - id: MaterialDurathread
 
 - type: entity
   id: CrateMaterialPlastic
   parent: CrateGenericSteel
   name: plastic sheet crate
-  description: 65 sheets of plastic.
+  description: 90 sheets of plastic.
   components:
   - type: StorageFill
     contents:
       - id: SheetPlastic
-        amount: 65
+        amount: 3
 
 - type: entity
   id: CrateMaterialWood
@@ -80,18 +80,18 @@
   id: CrateMaterialBrass
   parent: CrateGenericSteel
   name: brass crate
-  description: 65 sheets of brass.
+  description: 90 sheets of brass.
   components:
   - type: StorageFill
     contents:
       - id: SheetBrass
-        amount: 65
+        amount: 3
 
 - type: entity
   id: CrateMaterialPlasteel
   parent: CrateGenericSteel
   name: plasteel crate
-  description: 65 sheets of plasteel.
+  description: 30 sheets of plasteel.
   components:
   - type: StorageFill
     contents:
@@ -101,7 +101,7 @@
   id: CrateMaterialPlasma
   parent: CratePlasma
   name: solid plasma crate
-  description: 65 sheets of plasma.
+  description: 30 sheets of plasma.
   components:
   - type: StorageFill
     contents:
@@ -111,54 +111,54 @@
   id: CrateMaterialCardboard
   parent: CrateGenericSteel
   name: cardboard crate
-  description: 65 pieces of cardboard.
+  description: 60 pieces of cardboard.
   components:
   - type: StorageFill
     contents:
       - id: MaterialCardboard
-        amount: 65
+        amount: 2
 
 - type: entity
   id: CrateMaterialPaper
   parent: CrateGenericSteel
   name: paper crate
-  description: 65 sheets of paper.
+  description: 90 sheets of paper.
   components:
   - type: StorageFill
     contents:
       - id: SheetPaper
-        amount: 65
+        amount: 3
 
 - type: entityTable
   id: RandomMaterialCrateTable
   table: !type:GroupSelector
     children:
-    - !type:GroupSelector # regular materials, 65
-      weight: 65
+    - !type:GroupSelector # regular materials, 10
+      weight: 35
       children:
-      - id: SheetGlass65
-      - id: SheetSteel65
-      - id: SheetPlastic65
+      - id: SheetGlass10
+      - id: SheetSteel10
+      - id: SheetPlastic10
     - !type:GroupSelector # regular materials, stack
-      weight: 65
+      weight: 30
       children:
       - id: SheetGlass
       - id: SheetSteel
       - id: SheetPlastic
     - !type:GroupSelector # secondary materials, stack
-      weight: 65
+      weight: 30
       children:
       - id: MaterialCloth
       - id: SheetPlasteel
       - id: MaterialWoodPlank
       - id: PartRodMetal
     - !type:GroupSelector # tertiary materials, singles
-      weight: 65
+      weight: 5
       children:
-      - id: SheetPlasma65
-      - id: SheetUranium65
-      - id: IngotGold65
-      - id: IngotSilver65
+      - id: SheetPlasma1
+      - id: SheetUranium1
+      - id: IngotGold1
+      - id: IngotSilver1
 
 - type: entity
   id: CrateMaterialRandom
@@ -171,13 +171,13 @@
       entity_storage: !type:NestedSelector
         tableId: RandomMaterialCrateTable
         rolls: !type:RangeNumberSelector
-          range: 65, 65
+          range: 2, 4
 
 - type: entity
   id: CrateMaterialBasicResource
   parent: CrateGenericSteel
   name: basic sheet crate
-  description: 65 sheets of steel, glass, and plastic.
+  description: 30 sheets of steel, glass, and plastic.
   components:
   - type: StorageFill
     contents:
@@ -193,7 +193,7 @@
 #  - type: StorageFill
 #    contents:
 #      - id: WeldingFuelTank
-#        amount: 65
+#        amount: 1
 
 #- type: entity
 #  id: CrateMaterialHWaterTank
@@ -203,4 +203,4 @@
 #  - type: StorageFill
 #    contents:
 #      - id: WaterTankFull
-#        amount: 65
+#        amount: 1

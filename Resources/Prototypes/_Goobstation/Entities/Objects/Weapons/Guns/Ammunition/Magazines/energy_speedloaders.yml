@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: BaseEnergySpeedloader
@@ -14,13 +14,13 @@
     sprite: /Textures/_Goobstation/Objects/Weapons/Guns/Ammunition/Magazine/energy_speedloader.rsi
     state: icon-lethal
   - type: Battery
-    maxCharge: 65
-    startingCharge: 65
+    maxCharge: 600
+    startingCharge: 600
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 65
+    autoRechargeRate: 40
     autoRechargePause: true
-    autoRechargePauseTime: 65
+    autoRechargePauseTime: 12
   - type: AmmoCounter
   - type: Appearance
   - type: Tag
@@ -35,7 +35,7 @@
   components:
   - type: ProjectileBatteryAmmoProvider
     proto: BulletEnergyGunMagnum
-    fireCost: 65
+    fireCost: 100
   - type: Tag
     tags:
       - EnergySpeedloader
@@ -51,7 +51,7 @@
     state: icon-disabling
   - type: ProjectileBatteryAmmoProvider
     proto: BulletEnergyGunDisabler
-    fireCost: 65
+    fireCost: 50
   - type: Tag
     tags:
       - EnergySpeedloader
@@ -65,7 +65,7 @@
   components:
   - type: HitscanBatteryAmmoProvider
     proto: LightPulse
-    fireCost: 65
+    fireCost: 50
   - type: Tag
     tags:
     - EnergySpeedloader

@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Lincoln McQueen <lincoln.mcqueen@gmail.com>
-# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Lincoln McQueen <lincoln.mcqueen@gmail.com>
+# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: ActionLegSweep
@@ -15,7 +15,7 @@
     icon:
       sprite: _Goobstation/Actions/kravmaga.rsi
       state: legsweep
-      useDelay: 65
+      useDelay: 3
     event: !type:KravMagaActionEvent { }
   - type: KravMagaAction
     configuration: LegSweep
@@ -31,27 +31,27 @@
     icon:
       sprite: _Goobstation/Actions/kravmaga.rsi
       state: neckchop
-      useDelay: 65
+      useDelay: 3
     event: !type:KravMagaActionEvent { }
   - type: KravMagaAction
     configuration: NeckChop
     name: Neck Chop
-    effectTime: 65
+    effectTime: 20
 
 - type: entity
   id: ActionLungPunch
   name: Lung Punch
-  description: Deals 65 stamina damage and prevents breathing for ten seconds. Four of those will incapacitate a target less-than-lethally, but beware of the loss of breath you cause.
+  description: Deals 30 stamina damage and prevents breathing for ten seconds. Four of those will incapacitate a target less-than-lethally, but beware of the loss of breath you cause.
   categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
     icon:
       sprite: _Goobstation/Actions/kravmaga.rsi
       state: lungpunch
-      useDelay: 65
+      useDelay: 3
     event: !type:KravMagaActionEvent { }
   - type: KravMagaAction
     configuration: LungPunch
     name: Lung Punch
-    staminaDamage: 65
-    effectTime: 65
+    staminaDamage: 40
+    effectTime: 10

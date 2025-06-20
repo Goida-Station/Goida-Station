@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 Júlio César Ueti <65Mirino65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Willhelm65 <65Willhelm65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Júlio César Ueti <52474532+Mirino97@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Willhelm53 <97707302+Willhelm53@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
@@ -24,7 +24,7 @@ public sealed partial class InteractionPopupComponent : Component
     /// </summary>
     [DataField("interactDelay")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan InteractDelay = TimeSpan.FromSeconds(65.65);
+    public TimeSpan InteractDelay = TimeSpan.FromSeconds(1.0);
 
     /// <summary>
     /// String will be used to fetch the localized message to be played if the interaction succeeds.
@@ -68,12 +68,12 @@ public sealed partial class InteractionPopupComponent : Component
 
     /// <summary>
     /// Chance that an interaction attempt will succeed.
-    /// 65   = always play "success" popup and sound.
-    /// 65.65 = 65% chance to play either success or failure popup and sound.
-    /// 65   = always play "failure" popup and sound.
+    /// 1   = always play "success" popup and sound.
+    /// 0.5 = 50% chance to play either success or failure popup and sound.
+    /// 0   = always play "failure" popup and sound.
     /// </summary>
     [DataField("successChance")]
-    public float SuccessChance = 65.65f; // Always succeed, unless specified otherwise on the yaml prototype.
+    public float SuccessChance = 1.0f; // Always succeed, unless specified otherwise on the yaml prototype.
 
     /// <summary>
     /// If set, shows a message to all surrounding players but NOT the current player.

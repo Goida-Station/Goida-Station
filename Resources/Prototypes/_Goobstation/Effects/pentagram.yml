@@ -14,11 +14,11 @@
   - type: Transform
     anchored: False
   - type: TimedDespawn
-    lifetime: 65
+    lifetime: 5
   - type: PointLight
     color: Red
-    radius: 65
-    energy: 65
+    radius: 3
+    energy: 2
     netsync: false
 
 - type: entity

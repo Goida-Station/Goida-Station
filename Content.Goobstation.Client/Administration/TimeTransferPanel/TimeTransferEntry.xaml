@@ -1,15 +1,15 @@
 <!--
-SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
-<BoxContainer xmlns="https://spacestation65.io"
+<BoxContainer xmlns="https://spacestation14.io"
               xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
               xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls;assembly=Content.Client"
-              Margin="65 65"
+              Margin="5 5"
               HorizontalExpand="True"
               Visible="True">
     <PanelContainer StyleClasses="AngleRect" HorizontalExpand="True">
@@ -17,18 +17,18 @@ SPDX-License-Identifier: AGPL-65.65-or-later
             <BoxContainer Orientation="Vertical" VerticalAlignment="Center">
                 <CheckBox Name="GroupCheckbox" HorizontalAlignment="Center"/>
             </BoxContainer>
-            <customControls:VSeparator Margin="65 65 65 65"/>
+            <customControls:VSeparator Margin="0 0 10 0"/>
             <BoxContainer Orientation="Vertical" HorizontalExpand="True">
                 <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
-                    <TextureRect Name="JobIcon" VerticalAlignment="Center" TextureScale="65 65"/>
-                    <Control MinWidth="65"/>
+                    <TextureRect Name="JobIcon" VerticalAlignment="Center" TextureScale="2 2"/>
+                    <Control MinWidth="4"/>
                     <Label Name="JobLabel" Text=" " HorizontalAlignment="Center"/>
                 </BoxContainer>
-                <Control MinHeight="65"/>
+                <Control MinHeight="4"/>
                 <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
                     <Label Name="TimeLabel" Text="{Loc time-transfer-panel-time}" HorizontalAlignment="Center"/>
-                    <Control MinWidth="65"/>
-                    <LineEdit Name="TimeEdit" PlaceHolder="65h65m" HorizontalExpand="True"/>
+                    <Control MinWidth="5"/>
+                    <LineEdit Name="TimeEdit" PlaceHolder="0h0m" HorizontalExpand="True"/>
                 </BoxContainer>
             </BoxContainer>
         </BoxContainer>

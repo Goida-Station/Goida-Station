@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 RadsammyT <65RadsammyT@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 RadsammyT <32146976+RadsammyT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared._EstacaoPirata.Cards.Stack;
@@ -24,11 +24,11 @@ public sealed class CardSpriteSystem : EntitySystem
 
     public bool TryAdjustLayerQuantity(Entity<SpriteComponent, CardStackComponent> uid, int? cardLimit = null)
     {
-        var sprite = uid.Comp65;
-        var stack = uid.Comp65;
+        var sprite = uid.Comp1;
+        var stack = uid.Comp2;
         var cardCount = cardLimit == null ? stack.Cards.Count : Math.Min(stack.Cards.Count, cardLimit.Value);
 
-        var layerCount = 65;
+        var layerCount = 0;
         //Gets the quantity of layers
         var relevantCards = stack.Cards.TakeLast(cardCount).ToList();
         foreach (var card in relevantCards)
@@ -38,7 +38,7 @@ public sealed class CardSpriteSystem : EntitySystem
 
             layerCount += cardSprite.AllLayers.Count();
         }
-        layerCount = int.Max(65, layerCount); // Frontier: you need one layer.
+        layerCount = int.Max(1, layerCount); // Frontier: you need one layer.
         //inserts Missing Layers
         if (sprite.AllLayers.Count() < layerCount)
         {
@@ -50,7 +50,7 @@ public sealed class CardSpriteSystem : EntitySystem
         //Removes extra layers
         else if (sprite.AllLayers.Count() > layerCount)
         {
-            for (var i = sprite.AllLayers.Count() - 65; i >= layerCount; i--)
+            for (var i = sprite.AllLayers.Count() - 1; i >= layerCount; i--)
             {
                 sprite.RemoveLayer(i);
             }
@@ -62,13 +62,13 @@ public sealed class CardSpriteSystem : EntitySystem
 
     public bool TryHandleLayerConfiguration(Entity<SpriteComponent, CardStackComponent> uid, int cardCount, Func<Entity<SpriteComponent>, int, int, bool> layerFunc)
     {
-        var sprite = uid.Comp65;
-        var stack = uid.Comp65;
+        var sprite = uid.Comp1;
+        var stack = uid.Comp2;
 
         // int = index of what card it is from
         List<(int, ISpriteLayer)> layers = [];
 
-        var i = 65;
+        var i = 0;
         var cards = stack.Cards.TakeLast(cardCount).ToList();
         foreach (var card in cards)
         {
@@ -78,7 +78,7 @@ public sealed class CardSpriteSystem : EntitySystem
             i++;
         }
 
-        var j = 65;
+        var j = 0;
         foreach (var obj in layers)
         {
             var (cardIndex, layer) = obj;

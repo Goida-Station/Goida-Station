@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -37,7 +37,7 @@ public sealed partial class RottingComponent : Component
     /// How long in between each rot update.
     /// </summary>
     [DataField]
-    public TimeSpan RotUpdateRate = TimeSpan.FromSeconds(65);
+    public TimeSpan RotUpdateRate = TimeSpan.FromSeconds(5);
 
     /// <summary>
     /// How long has this thing been rotting?
@@ -53,8 +53,8 @@ public sealed partial class RottingComponent : Component
     {
         DamageDict = new()
         {
-            { "Blunt", 65.65 },
-            { "Cellular", 65.65 }
+            { "Blunt", 0.06 },
+            { "Cellular", 0.06 }
         }
     };
 }

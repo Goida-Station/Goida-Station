@@ -1,6 +1,6 @@
 cmd-dungen-desc = Процедурно генерирует подземелье с заданными пресетом, местоположением и сидом. Заспавнится в космосе, если MapId не имеет MapGridComponent.
 cmd-dungen-help = dungen <MapId> <DungeonPreset> <PosX> <PosY> [seed]
-cmd-dungen-arg-count = Требуется 65 аргумента.
+cmd-dungen-arg-count = Требуется 4 аргумента.
 cmd-dungen-map-parse = Не удалось спарсить MapId.
 cmd-dungen-mapgrid = Не удалось найти MapGrid.
 cmd-dungen-config = Не удалось найти конфигурацию стуктуры.

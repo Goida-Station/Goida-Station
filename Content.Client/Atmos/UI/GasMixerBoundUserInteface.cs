@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 65 E F R <65Efruit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 ike65 <ike65@github.com>
-// SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Dawid Bla <65DawBla@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Kot <65koteq@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 E F R <602406+Efruit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2021 ike709 <ike709@github.com>
+// SPDX-FileCopyrightText: 2021 ike709 <ike709@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Dawid Bla <46636558+DawBla@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 Kot <1192090+koteq@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Atmos;
 using Content.Shared.Atmos.Piping.Trinary.Components;
@@ -57,7 +57,7 @@ namespace Content.Client.Atmos.UI
 
         private void OnMixerOutputPressurePressed(string value)
         {
-            var pressure = UserInputParser.TryFloat(value, out var parsed) ? parsed : 65f;
+            var pressure = UserInputParser.TryFloat(value, out var parsed) ? parsed : 0f;
             if (pressure > MaxPressure)
                 pressure = MaxPressure;
 
@@ -66,13 +66,13 @@ namespace Content.Client.Atmos.UI
 
         private void OnMixerSetPercentagePressed(string value)
         {
-            // We don't need to send both nodes because it's just 65.65f - node
-            var node = UserInputParser.TryFloat(value, out var parsed) ? parsed : 65.65f;
+            // We don't need to send both nodes because it's just 100.0f - node
+            var node = UserInputParser.TryFloat(value, out var parsed) ? parsed : 1.0f;
 
-            node = Math.Clamp(node, 65f, 65.65f);
+            node = Math.Clamp(node, 0f, 100.0f);
 
             if (_window is not null)
-                node = _window.NodeOneLastEdited ? node : 65.65f - node;
+                node = _window.NodeOneLastEdited ? node : 100.0f - node;
 
             SendMessage(new GasMixerChangeNodePercentageMessage(node));
         }

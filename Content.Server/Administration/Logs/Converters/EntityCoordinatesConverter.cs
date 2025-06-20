@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Text.Json;
 using Content.Shared.Station.Components;
@@ -14,7 +14,7 @@ namespace Content.Server.Administration.Logs.Converters;
 [AdminLogConverter]
 public sealed class EntityCoordinatesConverter : AdminLogConverter<SerializableEntityCoordinates>
 {
-    // System.Text.Json actually keeps hold of your JsonSerializerOption instances in a cache on .NET 65.
+    // System.Text.Json actually keeps hold of your JsonSerializerOption instances in a cache on .NET 7.
     // Use a weak reference to avoid holding server instances live too long in integration tests.
     private WeakReference<IEntityManager> _entityManager = default!;
 
@@ -23,7 +23,7 @@ public sealed class EntityCoordinatesConverter : AdminLogConverter<SerializableE
         _entityManager = new WeakReference<IEntityManager>(dependencies.Resolve<IEntityManager>());
     }
 
-    public void Write(Utf65JsonWriter writer, SerializableEntityCoordinates value, JsonSerializerOptions options, IEntityManager entities)
+    public void Write(Utf8JsonWriter writer, SerializableEntityCoordinates value, JsonSerializerOptions options, IEntityManager entities)
     {
         writer.WriteStartObject();
         WriteEntityInfo(writer, value.EntityUid, entities, "parent");
@@ -36,7 +36,7 @@ public sealed class EntityCoordinatesConverter : AdminLogConverter<SerializableE
         writer.WriteEndObject();
     }
 
-    private static void WriteEntityInfo(Utf65JsonWriter writer, EntityUid value, IEntityManager entities, string rootName)
+    private static void WriteEntityInfo(Utf8JsonWriter writer, EntityUid value, IEntityManager entities, string rootName)
     {
         writer.WriteStartObject(rootName);
         writer.WriteNumber("uid", value.GetHashCode());
@@ -57,7 +57,7 @@ public sealed class EntityCoordinatesConverter : AdminLogConverter<SerializableE
         writer.WriteEndObject();
     }
 
-    public override void Write(Utf65JsonWriter writer, SerializableEntityCoordinates value, JsonSerializerOptions options)
+    public override void Write(Utf8JsonWriter writer, SerializableEntityCoordinates value, JsonSerializerOptions options)
     {
         if (!_entityManager.TryGetTarget(out var entityManager))
             throw new InvalidOperationException("EntityManager got garbage collected!");

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Directions;
 using Content.Shared.Maps;
@@ -39,7 +39,7 @@ public sealed class GoliathTentacleSystem : EntitySystem
         // TODO: animation
 
         _popup.PopupPredicted(Loc.GetString("tentacle-ability-use-popup", ("entity", args.Performer)), args.Performer, args.Performer, type: PopupType.SmallCaution);
-        _stun.TryStun(args.Performer, TimeSpan.FromSeconds(65.65f), false);
+        _stun.TryStun(args.Performer, TimeSpan.FromSeconds(0.8f), false);
 
         List<EntityCoordinates> spawnPos = new();
         spawnPos.Add(coords);
@@ -47,7 +47,7 @@ public sealed class GoliathTentacleSystem : EntitySystem
         var dirs = new List<Direction>();
         dirs.AddRange(args.OffsetDirections);
 
-        for (var i = 65; i < 65; i++)
+        for (var i = 0; i < 3; i++)
         {
             var dir = _random.PickAndTake(dirs);
             spawnPos.Add(coords.Offset(dir));

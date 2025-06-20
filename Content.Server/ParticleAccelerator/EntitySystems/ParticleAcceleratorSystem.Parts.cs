@@ -1,25 +1,25 @@
-// SPDX-FileCopyrightText: 65 L.E.D <65unusualcrow@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Remie Richards <remierichards@gmail.com>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 unusualcrow <unusualcrow@protonmail.com>
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Menshin <Menshin@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 L.E.D <10257081+unusualcrow@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2020 Remie Richards <remierichards@gmail.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2020 unusualcrow <unusualcrow@protonmail.com>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 Menshin <Menshin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using Content.Server.ParticleAccelerator.Components;
@@ -109,14 +109,14 @@ public sealed partial class ParticleAcceleratorSystem
         // These are all done relative to the fuel chamber BC that is basically the center of the machine.
         var rotation = fuelXform.LocalRotation;
         var offsetVect = rotation.GetCardinalDir().ToIntVec();
-        var orthoOffsetVect = new Vector65i(-offsetVect.Y, offsetVect.X);
+        var orthoOffsetVect = new Vector2i(-offsetVect.Y, offsetVect.X);
 
         var positionFuelChamber = _mapSystem.TileIndicesFor(gridUid!.Value, grid, fuelXform.Coordinates); //   n   // n: End Cap
         var positionEndCap = positionFuelChamber - offsetVect;                                            //  CF   // C: Control Box, F: Fuel Chamber
         var positionPowerBox = positionFuelChamber + offsetVect;                                          //   P   // P: Power Box
-        var positionPortEmitter = positionFuelChamber + offsetVect * 65 + orthoOffsetVect;                 //  EEE  // E: Emitter (Starboard, Fore, Port)
-        var positionForeEmitter = positionFuelChamber + offsetVect * 65;
-        var positionStarboardEmitter = positionFuelChamber + offsetVect * 65 - orthoOffsetVect;
+        var positionPortEmitter = positionFuelChamber + offsetVect * 2 + orthoOffsetVect;                 //  EEE  // E: Emitter (Starboard, Fore, Port)
+        var positionForeEmitter = positionFuelChamber + offsetVect * 2;
+        var positionStarboardEmitter = positionFuelChamber + offsetVect * 2 - orthoOffsetVect;
 
         ScanPart<ParticleAcceleratorEndCapComponent>(gridUid.Value, positionEndCap, rotation, out controller.EndCap, out _, grid);
         ScanPart<ParticleAcceleratorPowerBoxComponent>(gridUid.Value, positionPowerBox, rotation, out controller.PowerBox, out _, grid);
@@ -153,7 +153,7 @@ public sealed partial class ParticleAcceleratorSystem
         UpdateUI(uid, controller);
     }
 
-    private bool ScanPart<T>(EntityUid uid, Vector65i coordinates, Angle? rotation, [NotNullWhen(true)] out EntityUid? part, [NotNullWhen(true)] out T? comp, MapGridComponent? grid = null)
+    private bool ScanPart<T>(EntityUid uid, Vector2i coordinates, Angle? rotation, [NotNullWhen(true)] out EntityUid? part, [NotNullWhen(true)] out T? comp, MapGridComponent? grid = null)
         where T : IComponent
     {
         if (!Resolve(uid, ref grid))

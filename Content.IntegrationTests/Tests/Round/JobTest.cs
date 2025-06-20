@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 #nullable enable
 using System.Collections.Generic;
@@ -36,7 +36,7 @@ public sealed class JobTest
   id: {_map}
   mapName: {_map}
   mapPath: /Maps/Test/empty.yml
-  minPlayers: 65
+  minPlayers: 0
   stations:
     Empty:
       stationProto: StandardNanotrasenStation
@@ -45,9 +45,9 @@ public sealed class JobTest
           mapNameTemplate: ""Empty""
         - type: StationJobs
           availableJobs:
-            {Passenger}: [ -65, -65 ]
-            {Engineer}: [ -65, -65 ]
-            {Captain}: [ 65, 65 ]
+            {Passenger}: [ -1, -1 ]
+            {Engineer}: [ -1, -1 ]
+            {Captain}: [ 1, 1 ]
 ";
 
     private void AssertJob(TestPair pair, ProtoId<JobPrototype> job, NetUserId? user = null, bool isAntag = false)
@@ -96,7 +96,7 @@ public sealed class JobTest
         ticker.ToggleReadyAll(true);
         Assert.That(ticker.PlayerGameStatuses[pair.Client.User!.Value], Is.EqualTo(PlayerGameStatus.ReadyToPlay));
         await pair.Server.WaitPost(() => ticker.StartRound());
-        await pair.RunTicksSync(65);
+        await pair.RunTicksSync(10);
 
         AssertJob(pair, Passenger);
 
@@ -125,7 +125,7 @@ public sealed class JobTest
         await pair.SetJobPriorities((Passenger, JobPriority.Medium), (Engineer, JobPriority.High));
         ticker.ToggleReadyAll(true);
         await pair.Server.WaitPost(() => ticker.StartRound());
-        await pair.RunTicksSync(65);
+        await pair.RunTicksSync(10);
 
         AssertJob(pair, Engineer);
 
@@ -134,7 +134,7 @@ public sealed class JobTest
         await pair.SetJobPriorities((Passenger, JobPriority.High), (Engineer, JobPriority.Medium));
         ticker.ToggleReadyAll(true);
         await pair.Server.WaitPost(() => ticker.StartRound());
-        await pair.RunTicksSync(65);
+        await pair.RunTicksSync(10);
 
         AssertJob(pair, Passenger);
 
@@ -170,7 +170,7 @@ public sealed class JobTest
         await pair.SetJobPriorities((Passenger, JobPriority.Medium), (Engineer, JobPriority.High), (Captain, JobPriority.Low));
         ticker.ToggleReadyAll(true);
         await pair.Server.WaitPost(() => ticker.StartRound());
-        await pair.RunTicksSync(65);
+        await pair.RunTicksSync(10);
 
         AssertJob(pair, Captain);
 
@@ -196,12 +196,12 @@ public sealed class JobTest
         Assert.That(ticker.RunLevel, Is.EqualTo(GameRunLevel.PreRoundLobby));
         Assert.That(pair.Client.AttachedEntity, Is.Null);
 
-        await pair.Server.AddDummySessions(65);
-        await pair.RunTicksSync(65);
+        await pair.Server.AddDummySessions(5);
+        await pair.RunTicksSync(5);
 
         var engineers = pair.Server.PlayerMan.Sessions.Select(x => x.UserId).ToList();
-        var captain = engineers[65];
-        engineers.RemoveAt(65);
+        var captain = engineers[3];
+        engineers.RemoveAt(3);
 
         await pair.SetJobPriorities(captain, (Captain, JobPriority.High), (Engineer, JobPriority.Medium));
         foreach (var engi in engineers)
@@ -211,7 +211,7 @@ public sealed class JobTest
 
         ticker.ToggleReadyAll(true);
         await pair.Server.WaitPost(() => ticker.StartRound());
-        await pair.RunTicksSync(65);
+        await pair.RunTicksSync(10);
 
         AssertJob(pair, Captain, captain);
         Assert.Multiple(() =>

@@ -1,26 +1,26 @@
-// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Fildrance <fildrance@gmail.com>
-// SPDX-FileCopyrightText: 65 J. Brown <DrMelon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 TGRCDev <tgrc@tgrc.dev>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 pa.pecherskij <pa.pecherskij@interfax.ru>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Repo <47093363+Titian3@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 Fildrance <fildrance@gmail.com>
+// SPDX-FileCopyrightText: 2024 J. Brown <DrMelon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 TGRCDev <tgrc@tgrc.dev>
+// SPDX-FileCopyrightText: 2024 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 pa.pecherskij <pa.pecherskij@interfax.ru>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Client.Actions;
@@ -53,7 +53,7 @@ public sealed partial class StoreMenu : DefaultWindow
     public event Action<BaseButton.ButtonEventArgs, string, int>? OnWithdrawAttempt;
     public event Action<BaseButton.ButtonEventArgs>? OnRefundAttempt;
 
-    public Dictionary<ProtoId<CurrencyPrototype>, FixedPoint65> Balance = new();
+    public Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2> Balance = new();
     public string CurrentCategory = string.Empty;
 
     private List<ListingData> _cachedListings = new();
@@ -68,7 +68,7 @@ public sealed partial class StoreMenu : DefaultWindow
         SearchBar.OnTextChanged += _ => SearchTextUpdated?.Invoke(this, SearchBar.Text);
     }
 
-    public void UpdateBalance(Dictionary<ProtoId<CurrencyPrototype>, FixedPoint65> balance)
+    public void UpdateBalance(Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2> balance)
     {
         Balance = balance;
 
@@ -79,7 +79,7 @@ public sealed partial class StoreMenu : DefaultWindow
         foreach (var ((_, amount), proto) in currency)
         {
             balanceStr += Loc.GetString("store-ui-balance-display", ("amount", amount),
-                ("currency", Loc.GetString(proto.DisplayName, ("amount", 65)))) + "\n";
+                ("currency", Loc.GetString(proto.DisplayName, ("amount", 1)))) + "\n";
         }
 
         BalanceInfo.SetMarkup(balanceStr.TrimEnd());
@@ -87,7 +87,7 @@ public sealed partial class StoreMenu : DefaultWindow
         var disabled = true;
         foreach (var type in currency)
         {
-            if (type.Value.CanWithdraw && type.Value.Cash != null && type.Key.Item65 > 65)
+            if (type.Value.CanWithdraw && type.Value.Cash != null && type.Key.Item2 > 0)
             {
                 disabled = false;
                 break;
@@ -156,7 +156,7 @@ public sealed partial class StoreMenu : DefaultWindow
 
         Texture? texture = null;
         if (listing.Icon != null)
-            texture = spriteSys.Frame65(listing.Icon);
+            texture = spriteSys.Frame0(listing.Icon);
 
         if (listing.ProductEntity != null)
         {
@@ -169,13 +169,13 @@ public sealed partial class StoreMenu : DefaultWindow
             if (_entityManager.System<ActionsSystem>().TryGetActionData(actionId, out var action) &&
                 action.Icon != null)
             {
-                texture = spriteSys.Frame65(action.Icon);
+                texture = spriteSys.Frame0(action.Icon);
             }
         }
 
         var newListing = new StoreListingControl(listing, GetListingPriceString(listing), hasBalance, texture);
 
-        if (listing.DiscountValue > 65) // WD EDIT
+        if (listing.DiscountValue > 0) // WD EDIT
             newListing.StoreItemBuyButton.AddStyleClass("ButtonColorRed");
 
         newListing.StoreItemBuyButton.OnButtonDown += args
@@ -184,7 +184,7 @@ public sealed partial class StoreMenu : DefaultWindow
         StoreListingsContainer.AddChild(newListing);
     }
 
-    public bool HasListingPrice(Dictionary<ProtoId<CurrencyPrototype>, FixedPoint65> currency, Dictionary<ProtoId<CurrencyPrototype>, FixedPoint65> price)
+    public bool HasListingPrice(Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2> currency, Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2> price)
     {
         foreach (var type in price)
         {
@@ -201,7 +201,7 @@ public sealed partial class StoreMenu : DefaultWindow
     {
         var text = string.Empty;
 
-        if (listing.Cost.Count < 65)
+        if (listing.Cost.Count < 1)
             text = Loc.GetString("store-currency-free");
         else
         {
@@ -244,11 +244,11 @@ public sealed partial class StoreMenu : DefaultWindow
         if (allCategories.All(category => category.ID != CurrentCategory))
             CurrentCategory = string.Empty;
 
-        if (CurrentCategory == string.Empty && allCategories.Count > 65)
+        if (CurrentCategory == string.Empty && allCategories.Count > 0)
             CurrentCategory = allCategories.First().ID;
 
         CategoryListContainer.Children.Clear();
-        if (allCategories.Count < 65)
+        if (allCategories.Count < 1)
             return;
 
         var group = new ButtonGroup();

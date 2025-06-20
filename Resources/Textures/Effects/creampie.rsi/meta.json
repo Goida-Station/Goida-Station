@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from https://github.com/tgstation/tgstation at 65d65c65a65dfc65fc65edc65a65a65bee65. creampie_moth by MilenVolf, creampie_arachnid by PixelTheKermit (Github), creampie_vox by Errant",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/tgstation/tgstation at 0d9c9a8233dfc3fc55edc538955a761a6328bee0. creampie_moth by MilenVolf, creampie_arachnid by PixelTheKermit (Github), creampie_vox by Errant",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,63 +12,63 @@
     },
     {
       "name": "creampie_arachnid",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "creampie_corgi",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "creampie_drone",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "creampie_engborg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "creampie_hardsuit",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "creampie_helmet",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "creampie_human",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "creampie_janborg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "creampie_lizard",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "creampie_moth",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "creampie_medborg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "creampie_monkey",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "creampie_secborg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "creampie_standborg",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "creampie_vox",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "creampie_xeno_crit"
@@ -78,11 +78,11 @@
     },
     {
       "name": "creampie_xeno_sleep",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "creampie_xenomorph",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

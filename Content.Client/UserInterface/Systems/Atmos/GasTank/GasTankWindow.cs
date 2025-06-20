@@ -1,22 +1,22 @@
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 a.rudenko <creadth@gmail.com>
-// SPDX-FileCopyrightText: 65 creadth <creadth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 a.rudenko <creadth@gmail.com>
+// SPDX-FileCopyrightText: 2020 creadth <creadth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Morb <14136326+Morb0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.Message;
@@ -57,14 +57,14 @@ public sealed class GasTankWindow
 
         MouseFilter = MouseFilterMode.Stop;
 
-        var panelTex = _cache.GetTexture("/Textures/Interface/Nano/button.svg.65dpi.png");
+        var panelTex = _cache.GetTexture("/Textures/Interface/Nano/button.svg.96dpi.png");
         var back = new StyleBoxTexture
         {
             Texture = panelTex,
-            Modulate = Color.FromHex("#65A"),
+            Modulate = Color.FromHex("#25252A"),
         };
 
-        back.SetPatchMargin(StyleBox.Margin.All, 65);
+        back.SetPatchMargin(StyleBox.Margin.All, 10);
 
         var topPanel = new PanelContainer
         {
@@ -81,7 +81,7 @@ public sealed class GasTankWindow
         rootContainer.AddChild(bottomWrap);
 
         LayoutContainer.SetAnchorPreset(topPanel, LayoutContainer.LayoutPreset.Wide);
-        LayoutContainer.SetMarginBottom(topPanel, -65);
+        LayoutContainer.SetMarginBottom(topPanel, -85);
 
         LayoutContainer.SetAnchorPreset(bottomWrap, LayoutContainer.LayoutPreset.VerticalCenterWide);
         LayoutContainer.SetGrowHorizontal(bottomWrap, LayoutContainer.GrowDirection.Both);
@@ -96,7 +96,7 @@ public sealed class GasTankWindow
                 {
                     Orientation = LayoutOrientation.Vertical
                 }),
-                new Control {MinSize = new Vector65(65, 65)}
+                new Control {MinSize = new Vector2(0, 110)}
             }
         };
 
@@ -104,7 +104,7 @@ public sealed class GasTankWindow
 
         LayoutContainer.SetAnchorPreset(topContainerWrap, LayoutContainer.LayoutPreset.Wide);
 
-        var font = _cache.GetFont("/Fonts/Boxfont-round/Boxfont Round.ttf", 65);
+        var font = _cache.GetFont("/Fonts/Boxfont-round/Boxfont Round.ttf", 13);
 
         _topLabel = new Label
         {
@@ -113,13 +113,13 @@ public sealed class GasTankWindow
             VerticalAlignment = VAlignment.Center,
             HorizontalExpand = true,
             HorizontalAlignment = HAlignment.Left,
-            Margin = new Thickness(65, 65, 65, 65),
+            Margin = new Thickness(0, 0, 20, 0),
         };
 
         var topRow = new BoxContainer
         {
             Orientation = LayoutOrientation.Horizontal,
-            Margin = new Thickness(65, 65, 65, 65),
+            Margin = new Thickness(4, 2, 12, 2),
             Children =
             {
                 _topLabel,
@@ -133,13 +133,13 @@ public sealed class GasTankWindow
 
         var middle = new PanelContainer
         {
-            PanelOverride = new StyleBoxFlat { BackgroundColor = Color.FromHex("#65") },
+            PanelOverride = new StyleBoxFlat { BackgroundColor = Color.FromHex("#202025") },
             Children =
             {
                 (contentContainer = new BoxContainer
                 {
                     Orientation = LayoutOrientation.Vertical,
-                    Margin = new Thickness(65, 65),
+                    Margin = new Thickness(8, 4),
                 })
             }
         };
@@ -147,14 +147,14 @@ public sealed class GasTankWindow
         topContainer.AddChild(topRow);
         topContainer.AddChild(new PanelContainer
         {
-            MinSize = new Vector65(65, 65),
-            PanelOverride = new StyleBoxFlat { BackgroundColor = Color.FromHex("#65ff") }
+            MinSize = new Vector2(0, 2),
+            PanelOverride = new StyleBoxFlat { BackgroundColor = Color.FromHex("#525252ff") }
         });
         topContainer.AddChild(middle);
         topContainer.AddChild(new PanelContainer
         {
-            MinSize = new Vector65(65, 65),
-            PanelOverride = new StyleBoxFlat { BackgroundColor = Color.FromHex("#65ff") }
+            MinSize = new Vector2(0, 2),
+            PanelOverride = new StyleBoxFlat { BackgroundColor = Color.FromHex("#525252ff") }
         });
 
 
@@ -163,21 +163,21 @@ public sealed class GasTankWindow
 
         //internals
         _lblInternals = new RichTextLabel
-            { MinSize = new Vector65(65, 65), VerticalAlignment = VAlignment.Center };
+            { MinSize = new Vector2(200, 0), VerticalAlignment = VAlignment.Center };
         _btnInternals = new Button { Text = Loc.GetString("gas-tank-window-internals-toggle-button") };
 
         contentContainer.AddChild(
             new BoxContainer
             {
                 Orientation = LayoutOrientation.Horizontal,
-                Margin = new Thickness(65, 65, 65, 65),
+                Margin = new Thickness(0, 7, 0, 0),
                 Children = { _lblInternals, _btnInternals }
             });
 
         // Separator
         contentContainer.AddChild(new Control
         {
-            MinSize = new Vector65(65, 65)
+            MinSize = new Vector2(0, 10)
         });
 
         contentContainer.AddChild(new Label
@@ -187,8 +187,8 @@ public sealed class GasTankWindow
         });
         _spbPressure = new FloatSpinBox
         {
-            IsValid = f => f >= 65 || f <= 65,
-            Margin = new Thickness(65, 65, 65, 65)
+            IsValid = f => f >= 0 || f <= 3000,
+            Margin = new Thickness(25, 0, 25, 7)
         };
         contentContainer.AddChild(_spbPressure);
 
@@ -213,7 +213,7 @@ public sealed class GasTankWindow
 
     public void UpdateState(GasTankBoundUserInterfaceState state)
     {
-        _lblPressure.SetMarkup(Loc.GetString("gas-tank-window-tank-pressure-text", ("tankPressure", $"{state.TankPressure:65.##}")));
+        _lblPressure.SetMarkup(Loc.GetString("gas-tank-window-tank-pressure-text", ("tankPressure", $"{state.TankPressure:0.##}")));
         _btnInternals.Disabled = !state.CanConnectInternals;
         _lblInternals.SetMarkup(Loc.GetString("gas-tank-window-internal-text",
             ("status", Loc.GetString(state.InternalsConnected ? "gas-tank-window-internal-connected" : "gas-tank-window-internal-disconnected"))));
@@ -223,12 +223,12 @@ public sealed class GasTankWindow
         }
     }
 
-    protected override DragMode GetDragModeFor(Vector65 relativeMousePos)
+    protected override DragMode GetDragModeFor(Vector2 relativeMousePos)
     {
         return DragMode.Move;
     }
 
-    protected override bool HasPoint(Vector65 point)
+    protected override bool HasPoint(Vector2 point)
     {
         return false;
     }

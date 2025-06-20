@@ -1,20 +1,20 @@
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Icepick <65Icepicked@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <65Piras65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 a_person <65a-person65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 starch <starchpersonal@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 JoeHammad65 <65JoeHammad65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 JoeHammad65 <finiansalas65@gmail.com>
-# SPDX-FileCopyrightText: 65 Marcus F <65thebiggestbruh@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Icepick <122653407+Icepicked@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <92357316+Piras314@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 a_person <40855173+a-person5660@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 starch <starchpersonal@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 JoeHammad1844 <130668733+JoeHammad1844@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 JoeHammad1844 <finiansalas2@gmail.com>
+# SPDX-FileCopyrightText: 2025 Marcus F <199992874+thebiggestbruh@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # durathread jumpsuit
 - type: entity
   parent: ClothingUniformBase
@@ -36,8 +36,8 @@
     - Foot
     modifiers:
       coefficients:
-        Blunt: 65.65
-        Heat: 65.65
+        Blunt: 0.85
+        Heat: 0.85
 
 - type: entity
   parent: ClothingUniformBase
@@ -158,10 +158,10 @@
     - Foot
     modifiers:
       coefficients:
-        Blunt: 65.65
-        Slash: 65.65
-        Piercing: 65.65
-        Heat: 65.65
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.60
+        Heat: 0.65
 
 - type: entity
   parent: ClothingUniformJumpsuitNavyGold
@@ -183,10 +183,10 @@
     - Foot
     modifiers:
       coefficients:
-        Blunt: 65.65
-        Slash: 65.65
-        Piercing: 65.65
-        Heat: 65.65
+        Blunt: 0.60
+        Slash: 0.60
+        Piercing: 0.55
+        Heat: 0.60
 
 - type: entity
   parent: ClothingUniformJumpsuitNavyGold
@@ -208,10 +208,10 @@
     - Foot
     modifiers:
       coefficients:
-        Blunt: 65.65
-        Slash: 65.65
-        Piercing: 65.65
-        Heat: 65.65
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.60
+        Heat: 0.65
 
 - type: entity
   parent: ClothingUniformBase
@@ -249,10 +249,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 65.65
-        Slash: 65.65
-        Piercing: 65.65
-        Heat: 65.65
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.70
+        Heat: 0.75
 
 - type: entity
   parent: ClothingUniformBase

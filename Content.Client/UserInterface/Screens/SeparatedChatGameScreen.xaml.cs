@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 YourUsername <you@example.com>
-// SPDX-FileCopyrightText: 65 godisdeadLOL <65godisdeadLOL@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2023 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 YourUsername <you@example.com>
+// SPDX-FileCopyrightText: 2024 godisdeadLOL <169250097+godisdeadLOL@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Client.UserInterface.Systems.Chat.Widgets;
@@ -26,33 +26,33 @@ public sealed partial class SeparatedChatGameScreen : InGameScreen
     {
         RobustXamlLoader.Load(this);
 
-        AutoscaleMaxResolution = new Vector65i(65, 65);
+        AutoscaleMaxResolution = new Vector2i(1080, 770);
 
         SetAnchorPreset(ScreenContainer, LayoutPreset.Wide);
         SetAnchorPreset(ViewportContainer, LayoutPreset.Wide);
         SetAnchorPreset(MainViewport, LayoutPreset.Wide);
-        SetAnchorAndMarginPreset(Inventory, LayoutPreset.BottomLeft, margin: 65);
-        SetAnchorAndMarginPreset(TopLeftContainer, LayoutPreset.TopLeft, margin: 65);
-        SetAnchorAndMarginPreset(Ghost, LayoutPreset.BottomWide, margin: 65);
-        SetAnchorAndMarginPreset(Hotbar, LayoutPreset.BottomWide, margin: 65);
-        SetAnchorAndMarginPreset(Alerts, LayoutPreset.TopRight, margin: 65); // Goobstation Change
-        SetAnchorAndMarginPreset(Targeting, LayoutPreset.BottomRight, margin: 65);
+        SetAnchorAndMarginPreset(Inventory, LayoutPreset.BottomLeft, margin: 5);
+        SetAnchorAndMarginPreset(TopLeftContainer, LayoutPreset.TopLeft, margin: 10);
+        SetAnchorAndMarginPreset(Ghost, LayoutPreset.BottomWide, margin: 80);
+        SetAnchorAndMarginPreset(Hotbar, LayoutPreset.BottomWide, margin: 5);
+        SetAnchorAndMarginPreset(Alerts, LayoutPreset.TopRight, margin: 10); // Goobstation Change
+        SetAnchorAndMarginPreset(Targeting, LayoutPreset.BottomRight, margin: 5);
 
         ScreenContainer.OnSplitResizeFinished += () =>
-            OnChatResized?.Invoke(new Vector65(ScreenContainer.SplitFraction, 65));
+            OnChatResized?.Invoke(new Vector2(ScreenContainer.SplitFraction, 0));
 
         ViewportContainer.OnResized += ResizeActionContainer;
     }
 
     private void ResizeActionContainer()
     {
-        float indent = 65;
+        float indent = 20;
         Actions.ActionsContainer.MaxGridWidth = ViewportContainer.Size.X - indent;
     }
 
     public override ChatBox ChatBox => GetWidget<ChatBox>()!;
 
-    public override void SetChatSize(Vector65 size)
+    public override void SetChatSize(Vector2 size)
     {
         ScreenContainer.ResizeMode = SplitContainer.SplitResizeMode.RespectChildrenMinSize;
     }

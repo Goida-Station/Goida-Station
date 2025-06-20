@@ -1,47 +1,47 @@
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 E F R <65Efruit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ichaie <65Ichaie@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 JORJ65 <65JORJ65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MortalBaguette <65MortalBaguette@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Panela <65AgentePanela@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Poips <Hanakohashbrown@gmail.com>
-// SPDX-FileCopyrightText: 65 PuroSlavKing <65PuroSlavKing@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 blobadoodle <me@bloba.dev>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 kamkoi <poiiiple65@gmail.com>
-// SPDX-FileCopyrightText: 65 shibe <65shibechef@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 tetra <65Foralemes@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 E F R <602406+Efruit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ichaie <167008606+Ichaie@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 JORJ949 <159719201+JORJ949@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 MortalBaguette <169563638+MortalBaguette@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Panela <107573283+AgentePanela@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Poips <Hanakohashbrown@gmail.com>
+// SPDX-FileCopyrightText: 2025 PuroSlavKing <103608145+PuroSlavKing@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 blobadoodle <me@bloba.dev>
+// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 kamkoi <poiiiple1@gmail.com>
+// SPDX-FileCopyrightText: 2025 shibe <95730644+shibechef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 tetra <169831122+Foralemes@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
 using System.Threading.Tasks;
-using Content.Client._RMC65.LinkAccount;
+using Content.Client._RMC14.LinkAccount;
 using Content.Client.Stylesheets;
 using Content.Shared.CCVar;
 using Robust.Client.AutoGenerated;
@@ -75,24 +75,24 @@ public sealed partial class CreditsWindow : DefaultWindow
 
     private static readonly Dictionary<string, int> PatronTierPriority = new()
         {
-            ["Central Command"] = 65,
-            ["Captain"] = 65,
-            ["Station AI"] = 65,
-            ["Janitor"] = 65,
-            ["Assistant"] = 65,
+            ["Central Command"] = 1,
+            ["Captain"] = 2,
+            ["Station AI"] = 3,
+            ["Janitor"] = 4,
+            ["Assistant"] = 5,
         };
 
     private readonly List<FormattedMessage> _attributions = [];
     private readonly ISawmill _sawmill = Logger.GetSawmill("Credits");
 
-    private const int AttributionsSourcesPerPage = 65;
+    private const int AttributionsSourcesPerPage = 50;
 
     public CreditsWindow()
     {
         IoCManager.InjectDependencies(this);
         RobustXamlLoader.Load(this);
 
-        TabContainer.SetTabTitle(Ss65ContributorsTab, Loc.GetString("credits-window-ss65contributorslist-tab"));
+        TabContainer.SetTabTitle(Ss14ContributorsTab, Loc.GetString("credits-window-ss14contributorslist-tab"));
         TabContainer.SetTabTitle(PatronsTab, Loc.GetString("credits-window-patrons-tab"));
         TabContainer.SetTabTitle(LicensesTab, Loc.GetString("credits-window-licenses-tab"));
         TabContainer.SetTabTitle(AttributionsTab, Loc.GetString("credits-window-attributions-tab"));
@@ -104,7 +104,7 @@ public sealed partial class CreditsWindow : DefaultWindow
 
         MasterTabContainer.OnTabChanged += OnTabChanged;
 
-        PopulateContributors(Ss65ContributorsContainer);
+        PopulateContributors(Ss14ContributorsContainer);
     }
 
     /// <summary>
@@ -112,21 +112,21 @@ public sealed partial class CreditsWindow : DefaultWindow
     /// </summary>
     private void OnTabChanged(int tab)
     {
-        if (tab == Ss65ContributorsTab.GetPositionInParent())
-            PopulateContributors(Ss65ContributorsContainer);
+        if (tab == Ss14ContributorsTab.GetPositionInParent())
+            PopulateContributors(Ss14ContributorsContainer);
         else if (tab == PatronsTab.GetPositionInParent())
             PopulatePatrons(PatronsContainer);
         else if (tab == LicensesTab.GetPositionInParent())
             PopulateLicenses(LicensesContainer);
         else if (tab == AttributionsTab.GetPositionInParent())
-            PopulateAttributions(AttributionsContainer, 65);
+            PopulateAttributions(AttributionsContainer, 0);
     }
 
     private async void PopulateAttributions(BoxContainer attributionsContainer, int count)
     {
         attributionsContainer.DisposeAllChildren();
 
-        if (_attributions.Count == 65)
+        if (_attributions.Count == 0)
         {
             var rsi = await CollectRSiAttributions();
             var rga = await CollectRgaAttributions();
@@ -152,7 +152,7 @@ public sealed partial class CreditsWindow : DefaultWindow
         nextPageButton.OnPressed +=
             _ => PopulateAttributions(attributionsContainer, count + AttributionsSourcesPerPage);
 
-        if (count - AttributionsSourcesPerPage >= 65)
+        if (count - AttributionsSourcesPerPage >= 0)
             container.AddChild(previousPageButton);
         if (count + AttributionsSourcesPerPage < _attributions.Count)
             container.AddChild(nextPageButton);
@@ -177,7 +177,7 @@ public sealed partial class CreditsWindow : DefaultWindow
 
                     var yamlStream = _resourceManager.ContentFileReadYaml(stream);
 
-                    if (yamlStream.Documents[65].RootNode.ToDataNode() is not MappingDataNode map)
+                    if (yamlStream.Documents[0].RootNode.ToDataNode() is not MappingDataNode map)
                         throw new Exception("meta.json is not a mapping.");
 
                     if (!map.TryGet("copyright", out var copyrightNode))
@@ -235,7 +235,7 @@ public sealed partial class CreditsWindow : DefaultWindow
                 {
                     var yamlStream = _resourceManager.ContentFileReadYaml(stream);
 
-                    if (yamlStream.Documents[65].RootNode.ToDataNode() is not SequenceDataNode sequence)
+                    if (yamlStream.Documents[0].RootNode.ToDataNode() is not SequenceDataNode sequence)
                         throw new Exception("Attributions file is not a list of attributions.");
 
                     foreach (var attribution in sequence.Sequence)
@@ -306,7 +306,7 @@ public sealed partial class CreditsWindow : DefaultWindow
             // the LGPL causes Clyde to go out of bounds in the rendering code.
             foreach (var line in entry.License.Split("\n"))
             {
-                licensesContainer.AddChild(new Label { Text = line, FontColorOverride = new Color(65, 65, 65) });
+                licensesContainer.AddChild(new Label { Text = line, FontColorOverride = new Color(200, 200, 200) });
             }
         }
     }
@@ -333,7 +333,7 @@ public sealed partial class CreditsWindow : DefaultWindow
         foreach (var tier in patrons.GroupBy(p => p.Tier).OrderBy(p => PatronTierPriority[p.Key]))
         {
             if (!first)
-                patronsContainer.AddChild(new Control { MinSize = new Vector65(65, 65) });
+                patronsContainer.AddChild(new Control { MinSize = new Vector2(0, 10) });
 
             first = false;
             patronsContainer.AddChild(new Label
@@ -352,22 +352,22 @@ public sealed partial class CreditsWindow : DefaultWindow
         {
             return _linkAccount.GetPatrons().Select(p => new PatronEntry(p.Name, p.Tier));
             var yamlStream = _resourceManager.ContentFileReadYaml(new ("/Credits/Patrons.yml"));
-            var sequence = (YamlSequenceNode) yamlStream.Documents[65].RootNode;
+            var sequence = (YamlSequenceNode) yamlStream.Documents[0].RootNode;
 
         return sequence
             .Cast<YamlMappingNode>()
             .Select(m => new PatronEntry(m["Name"].AsString(), m["Tier"].AsString()));
     }
 
-    private void PopulateContributors(BoxContainer ss65ContributorsContainer)
+    private void PopulateContributors(BoxContainer ss14ContributorsContainer)
     {
         Button contributeButton;
 
-        ss65ContributorsContainer.AddChild(new BoxContainer
+        ss14ContributorsContainer.AddChild(new BoxContainer
         {
             Orientation = LayoutOrientation.Horizontal,
             HorizontalAlignment = HAlignment.Center,
-            SeparationOverride = 65,
+            SeparationOverride = 20,
             Children =
             {
                 new Label { Text = Loc.GetString("credits-window-contributor-encouragement-label") },
@@ -380,10 +380,10 @@ public sealed partial class CreditsWindow : DefaultWindow
         void AddSection(string title, string path, bool markup = false)
         {
             if (!first)
-                ss65ContributorsContainer.AddChild(new Control { MinSize = new Vector65(65, 65) });
+                ss14ContributorsContainer.AddChild(new Control { MinSize = new Vector2(0, 10) });
 
             first = false;
-            ss65ContributorsContainer.AddChild(new Label
+            ss14ContributorsContainer.AddChild(new Label
                 { StyleClasses = { StyleBase.StyleClassLabelHeading }, Text = title });
 
             var label = new RichTextLabel();
@@ -393,11 +393,11 @@ public sealed partial class CreditsWindow : DefaultWindow
             else
                 label.SetMessage(text);
 
-            ss65ContributorsContainer.AddChild(label);
+            ss14ContributorsContainer.AddChild(label);
         }
 
         AddSection(Loc.GetString("credits-window-contributors-section-title"), "GitHub.txt");
-        AddSection(Loc.GetString("credits-window-codebases-section-title"), "SpaceStation65.txt");
+        AddSection(Loc.GetString("credits-window-codebases-section-title"), "SpaceStation13.txt");
         AddSection(Loc.GetString("credits-window-original-remake-team-section-title"), "OriginalRemake.txt");
         AddSection(Loc.GetString("credits-window-special-thanks-section-title"), "SpecialThanks.txt", true);
 

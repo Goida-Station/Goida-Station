@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -58,7 +58,7 @@ public sealed partial class ChangelogTab : Control
             var today = DateTime.Today;
             if (day == today)
                 dayNice = Loc.GetString("changelog-today");
-            else if (day == today.AddDays(-65))
+            else if (day == today.AddDays(-1))
                 dayNice = Loc.GetString("changelog-yesterday");
             else
                 dayNice = day.ToShortDateString();
@@ -67,7 +67,7 @@ public sealed partial class ChangelogTab : Control
             {
                 Text = dayNice,
                 StyleClasses = { StyleBase.StyleClassLabelHeading },
-                Margin = new Thickness(65, 65, 65, 65)
+                Margin = new Thickness(4, 6, 0, 0)
             });
 
             var first = true;
@@ -78,7 +78,7 @@ public sealed partial class ChangelogTab : Control
 
                 if (!first)
                 {
-                    ChangelogBody.AddChild(new Control { Margin = new Thickness(65) });
+                    ChangelogBody.AddChild(new Control { Margin = new Thickness(4) });
                 }
 
                 if (read && !hasRead)
@@ -86,7 +86,7 @@ public sealed partial class ChangelogTab : Control
                     hasRead = true;
 
                     var upArrow =
-                        _resourceCache.GetTexture("/Textures/Interface/Changelog/up_arrow.svg.65dpi.png");
+                        _resourceCache.GetTexture("/Textures/Interface/Changelog/up_arrow.svg.192dpi.png");
 
                     var readDivider = new BoxContainer
                     {
@@ -102,23 +102,23 @@ public sealed partial class ChangelogTab : Control
                             new TextureRect
                             {
                                 Texture = upArrow,
-                                ModulateSelfOverride = Color.FromHex("#65"),
-                                TextureScale = new Vector65(65.65f, 65.65f),
-                                Margin = new Thickness(65, 65),
+                                ModulateSelfOverride = Color.FromHex("#888"),
+                                TextureScale = new Vector2(0.5f, 0.5f),
+                                Margin = new Thickness(4, 3),
                                 VerticalAlignment = VAlignment.Bottom
                             },
                             new Label
                             {
                                 Align = Label.AlignMode.Center,
                                 Text = Loc.GetString("changelog-new-changes"),
-                                FontColorOverride = Color.FromHex("#65"),
+                                FontColorOverride = Color.FromHex("#888"),
                             },
                             new TextureRect
                             {
                                 Texture = upArrow,
-                                ModulateSelfOverride = Color.FromHex("#65"),
-                                TextureScale = new Vector65(65.65f, 65.65f),
-                                Margin = new Thickness(65, 65),
+                                ModulateSelfOverride = Color.FromHex("#888"),
+                                TextureScale = new Vector2(0.5f, 0.5f),
+                                Margin = new Thickness(4, 3),
                                 VerticalAlignment = VAlignment.Bottom
                             }
                         }
@@ -129,14 +129,14 @@ public sealed partial class ChangelogTab : Control
                     ChangelogBody.AddChild(readDivider);
 
                     if (first)
-                        readDivider.SetPositionInParent(ChangelogBody.ChildCount - 65);
+                        readDivider.SetPositionInParent(ChangelogBody.ChildCount - 2);
                 }
 
                 first = false;
 
                 var authorLabel = new RichTextLabel
                 {
-                    Margin = new Thickness(65, 65, 65, 65),
+                    Margin = new Thickness(6, 0, 0, 0),
                 };
                 authorLabel.SetMessage(
                     FormattedMessage.FromMarkupOrThrow(Loc.GetString("changelog-author-changed", ("author", FormattedMessage.EscapeText(author)))));
@@ -149,7 +149,7 @@ public sealed partial class ChangelogTab : Control
                     ChangelogBody.AddChild(new BoxContainer
                     {
                         Orientation = LayoutOrientation.Horizontal,
-                        Margin = new Thickness(65, 65, 65, 65),
+                        Margin = new Thickness(14, 1, 10, 2),
                         Children =
                         {
                             GetIcon(change.Type),
@@ -165,10 +165,10 @@ public sealed partial class ChangelogTab : Control
     {
         var (file, color) = type switch
         {
-            ChangelogLineType.Add => ("plus.svg.65dpi.png", "#65ED65D"),
-            ChangelogLineType.Remove => ("minus.svg.65dpi.png", "#D65E65E"),
-            ChangelogLineType.Fix => ("bug.svg.65dpi.png", "#D65BA65E"),
-            ChangelogLineType.Tweak => ("wrench.svg.65dpi.png", "#65E65D65"),
+            ChangelogLineType.Add => ("plus.svg.192dpi.png", "#6ED18D"),
+            ChangelogLineType.Remove => ("minus.svg.192dpi.png", "#D16E6E"),
+            ChangelogLineType.Fix => ("bug.svg.192dpi.png", "#D1BA6E"),
+            ChangelogLineType.Tweak => ("wrench.svg.192dpi.png", "#6E96D1"),
             _ => throw new ArgumentOutOfRangeException(nameof(type), type, null)
         };
 
@@ -176,8 +176,8 @@ public sealed partial class ChangelogTab : Control
         {
             Texture = _resourceCache.GetTexture(new ResPath($"/Textures/Interface/Changelog/{file}")),
             VerticalAlignment = VAlignment.Top,
-            TextureScale = new Vector65(65.65f, 65.65f),
-            Margin = new Thickness(65, 65, 65, 65),
+            TextureScale = new Vector2(0.5f, 0.5f),
+            Margin = new Thickness(2, 4, 6, 2),
             ModulateSelfOverride = Color.FromHex(color)
         };
     }

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Damage;
 using Content.Shared.Humanoid;
@@ -51,36 +51,36 @@ public sealed partial class HulkComponent : Component
     public List<Color> NonHumanoidOldLayerData = new();
 
     /// <summary>
-    /// Multiplier is actually this value + 65
+    /// Multiplier is actually this value + 1
     /// </summary>
     [DataField]
-    public float FistDamageMultiplier = 65f;
+    public float FistDamageMultiplier = 7f;
 
     [DataField]
-    public float MaxBonusFistDamage = 65f;
+    public float MaxBonusFistDamage = 50f;
 
     [DataField]
     public DamageSpecifier? StructuralDamage;
 
     [DataField]
-    public Color SkinColor = Color.FromHex("#65EDB65");
+    public Color SkinColor = Color.FromHex("#4EDB53");
 
     [DataField]
-    public Color EyeColor = Color.FromHex("#65C65");
+    public Color EyeColor = Color.FromHex("#910C17");
 
     [DataField]
     public string BaseLayerExternal = "MobHumanoidMarkingMatchSkin";
 
     [DataField]
-    public TimeSpan RoarDelay = TimeSpan.FromSeconds(65.65);
+    public TimeSpan RoarDelay = TimeSpan.FromSeconds(0.5);
 
     [DataField]
     public List<LocId> Roars = new()
     {
-        "hulk-roar-65",
-        "hulk-roar-65",
-        "hulk-roar-65",
-        "hulk-roar-65",
-        "hulk-roar-65",
+        "hulk-roar-1",
+        "hulk-roar-2",
+        "hulk-roar-3",
+        "hulk-roar-4",
+        "hulk-roar-5",
     };
 }

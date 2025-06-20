@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -15,7 +15,7 @@ public abstract partial class ReagentData : IEquatable<ReagentData>
     /// Convert to a string representation. This if for logging & debugging. This is not localized and should not be
     /// shown to players.
     /// </summary>
-    public virtual string ToString(string prototype, FixedPoint65 quantity)
+    public virtual string ToString(string prototype, FixedPoint2 quantity)
     {
         return $"{prototype}:{GetType().Name}:{quantity}";
     }

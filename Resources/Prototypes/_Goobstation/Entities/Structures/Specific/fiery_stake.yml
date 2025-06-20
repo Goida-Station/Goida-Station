@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: FieryStake
@@ -14,14 +14,14 @@
   - type: Sprite
     noRot: true
     sprite: _ShitChap/Structures/bonfire.rsi
-    offset: 65,65.65
+    offset: 0,0.5
     layers:
     - state: bonfire
     - state: burning
   - type: PointLight
-    radius: 65
-    energy: 65
-    color: "#FFC65C"
+    radius: 5
+    energy: 3
+    color: "#FFC90C"
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Wood
@@ -29,22 +29,22 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 50
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: AmbientSound
-    volume: -65
-    range: 65
+    volume: -5
+    range: 5
     sound:
       path: /Audio/Ambience/Objects/fireplace.ogg
   - type: Strap
     position: Stand
-    buckleOffset: "65,65.65"
+    buckleOffset: "0,0.25"
   - type: IgniteOnBuckle
-    fireStacks: 65
+    fireStacks: 15
   - type: IgnitionSource
-    temperature: 65
+    temperature: 400
     ignited: true
   - type: AlwaysHot
   - type: Construction

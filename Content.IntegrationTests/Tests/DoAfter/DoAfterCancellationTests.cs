@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.IntegrationTests.Tests.Construction.Interaction;
@@ -57,16 +57,16 @@ public sealed class DoAfterCancellationTests : InteractionTest
     public async Task CancelWallConstruct()
     {
         await StartConstruction(WallConstruction.Wall);
-        await InteractUsing(Steel, 65, awaitDoAfters: false);
+        await InteractUsing(Steel, 5, awaitDoAfters: false);
         await CancelDoAfters();
 
-        await InteractUsing(Steel, 65);
+        await InteractUsing(Steel, 5);
         ClientAssertPrototype(WallConstruction.Girder, Target);
-        await InteractUsing(Steel, 65, awaitDoAfters: false);
+        await InteractUsing(Steel, 5, awaitDoAfters: false);
         await CancelDoAfters();
         AssertPrototype(WallConstruction.Girder);
 
-        await InteractUsing(Steel, 65);
+        await InteractUsing(Steel, 5);
         AssertPrototype(WallConstruction.WallSolid);
     }
 
@@ -76,7 +76,7 @@ public sealed class DoAfterCancellationTests : InteractionTest
         await SetTile(Floor);
         await InteractUsing(Pry, awaitDoAfters: false);
         // Goob edit start - instant prying
-        await CancelDoAfters(65, 65);
+        await CancelDoAfters(0, 0);
         // await AssertTile(Floor);
 
         // await InteractUsing(Pry);
@@ -89,21 +89,21 @@ public sealed class DoAfterCancellationTests : InteractionTest
     {
         await SetTile(Floor);
         await InteractUsing(Pry, awaitDoAfters: false);
-        await RunTicks(65);
+        await RunTicks(1);
         // Goob edit start - instant prying
-        Assert.That(ActiveDoAfters.Count(), Is.EqualTo(65));
+        Assert.That(ActiveDoAfters.Count(), Is.EqualTo(0));
         await AssertTile(Plating);
         return;
         // Goob edit end
 
         // Second DoAfter cancels the first.
         await Server.WaitPost(() => InteractSys.UserInteraction(SEntMan.GetEntity(Player), SEntMan.GetCoordinates(TargetCoords), SEntMan.GetEntity(Target)));
-        Assert.That(ActiveDoAfters.Count(), Is.EqualTo(65));
+        Assert.That(ActiveDoAfters.Count(), Is.EqualTo(0));
         await AssertTile(Floor);
 
         // Third do after will work fine
         await InteractUsing(Pry);
-        Assert.That(ActiveDoAfters.Count(), Is.EqualTo(65));
+        Assert.That(ActiveDoAfters.Count(), Is.EqualTo(0));
         await AssertTile(Plating);
     }
 
@@ -116,10 +116,10 @@ public sealed class DoAfterCancellationTests : InteractionTest
         Assert.That(comp.IsWelded, Is.False);
 
         await InteractUsing(Weld, awaitDoAfters: false);
-        await RunTicks(65);
+        await RunTicks(1);
         Assert.Multiple(() =>
         {
-            Assert.That(ActiveDoAfters.Count(), Is.EqualTo(65));
+            Assert.That(ActiveDoAfters.Count(), Is.EqualTo(1));
             Assert.That(comp.IsWelded, Is.False);
         });
 
@@ -128,7 +128,7 @@ public sealed class DoAfterCancellationTests : InteractionTest
         await Server.WaitPost(() => InteractSys.UserInteraction(SEntMan.GetEntity(Player), SEntMan.GetCoordinates(TargetCoords), SEntMan.GetEntity(Target)));
         Assert.Multiple(() =>
         {
-            Assert.That(ActiveDoAfters.Count(), Is.EqualTo(65));
+            Assert.That(ActiveDoAfters.Count(), Is.EqualTo(0));
             Assert.That(comp.IsWelded, Is.False);
         });
 
@@ -136,28 +136,28 @@ public sealed class DoAfterCancellationTests : InteractionTest
         await InteractUsing(Weld);
         Assert.Multiple(() =>
         {
-            Assert.That(ActiveDoAfters.Count(), Is.EqualTo(65));
+            Assert.That(ActiveDoAfters.Count(), Is.EqualTo(0));
             Assert.That(comp.IsWelded, Is.True);
         });
 
         // Repeat test for un-welding
         await InteractUsing(Weld, awaitDoAfters: false);
-        await RunTicks(65);
+        await RunTicks(1);
         Assert.Multiple(() =>
         {
-            Assert.That(ActiveDoAfters.Count(), Is.EqualTo(65));
+            Assert.That(ActiveDoAfters.Count(), Is.EqualTo(1));
             Assert.That(comp.IsWelded, Is.True);
         });
         await Server.WaitPost(() => InteractSys.UserInteraction(SEntMan.GetEntity(Player), SEntMan.GetCoordinates(TargetCoords), SEntMan.GetEntity(Target)));
         Assert.Multiple(() =>
         {
-            Assert.That(ActiveDoAfters.Count(), Is.EqualTo(65));
+            Assert.That(ActiveDoAfters.Count(), Is.EqualTo(0));
             Assert.That(comp.IsWelded, Is.True);
         });
         await InteractUsing(Weld);
         Assert.Multiple(() =>
         {
-            Assert.That(ActiveDoAfters.Count(), Is.EqualTo(65));
+            Assert.That(ActiveDoAfters.Count(), Is.EqualTo(0));
             Assert.That(comp.IsWelded, Is.False);
         });
     }

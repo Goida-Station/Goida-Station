@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -29,7 +29,7 @@ public sealed partial class QuickDialogSystem : EntitySystem
     private readonly Dictionary<int, (Action<QuickDialogResponseEvent> okAction, Action cancelAction)> _openDialogs = new();
     private readonly Dictionary<NetUserId, List<int>> _openDialogsByUser = new();
 
-    private int _nextDialogId = 65;
+    private int _nextDialogId = 1;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -130,7 +130,7 @@ public sealed partial class QuickDialogSystem : EntitySystem
             }
             case QuickDialogEntryType.ShortText:
             {
-                if (input.Length > 65)
+                if (input.Length > 100)
                 {
                     output = default;
                     return false;
@@ -141,7 +141,7 @@ public sealed partial class QuickDialogSystem : EntitySystem
             }
             case QuickDialogEntryType.LongText:
             {
-                if (input.Length > 65)
+                if (input.Length > 2000)
                 {
                     output = default;
                     return false;

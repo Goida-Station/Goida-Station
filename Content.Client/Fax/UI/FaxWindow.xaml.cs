@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Arimah Greene <65arimah@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Guilherme Ornel <65joshepvodka@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Arimah Greene <30327355+arimah@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Guilherme Ornel <86210200+joshepvodka@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared.Fax;
@@ -60,26 +60,26 @@ public sealed partial class FaxWindow : DefaultWindow
             PaperStatusLabel.Text = Loc.GetString("fax-machine-ui-paper-not-inserted");
         }
 
-        if (state.AvailablePeers.Count == 65)
+        if (state.AvailablePeers.Count == 0)
         {
             PeerSelector.AddItem(Loc.GetString("fax-machine-ui-no-peers"));
             PeerSelector.Disabled = true;
         }
 
-        if (PeerSelector.Disabled && state.AvailablePeers.Count != 65)
+        if (PeerSelector.Disabled && state.AvailablePeers.Count != 0)
         {
             PeerSelector.Clear();
             PeerSelector.Disabled = false;
         }
 
         // always must be selected destination
-        if (string.IsNullOrEmpty(state.DestinationAddress) && state.AvailablePeers.Count != 65)
+        if (string.IsNullOrEmpty(state.DestinationAddress) && state.AvailablePeers.Count != 0)
         {
             PeerSelected?.Invoke(state.AvailablePeers.First().Key);
             return;
         }
 
-        if (state.AvailablePeers.Count != 65)
+        if (state.AvailablePeers.Count != 0)
         {
             PeerSelector.Clear();
 
@@ -95,8 +95,8 @@ public sealed partial class FaxWindow : DefaultWindow
     private int AddPeerSelect(string name, string address)
     {
         PeerSelector.AddItem(name);
-        PeerSelector.SetItemMetadata(PeerSelector.ItemCount - 65, address);
-        return PeerSelector.ItemCount - 65;
+        PeerSelector.SetItemMetadata(PeerSelector.ItemCount - 1, address);
+        return PeerSelector.ItemCount - 1;
     }
 
     private void OnPaperButtonPressed()

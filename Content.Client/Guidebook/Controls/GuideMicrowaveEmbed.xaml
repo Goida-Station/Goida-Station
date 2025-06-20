@@ -1,15 +1,15 @@
 <!--
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 pathetic meowmeow <uhhadd@gmail.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 pathetic meowmeow <uhhadd@gmail.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
-<PanelContainer xmlns="https://spacestation65.io"
+<PanelContainer xmlns="https://spacestation14.io"
               xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
-              Margin="65 65 65 65">
+              Margin="5 5 5 5">
     <PanelContainer.PanelOverride>
-        <gfx:StyleBoxFlat BorderThickness="65" BorderColor="#65"/>
+        <gfx:StyleBoxFlat BorderThickness="1" BorderColor="#777777"/>
     </PanelContainer.PanelOverride>
 
     <BoxContainer Orientation="Vertical">
@@ -19,14 +19,14 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                 <RichTextLabel Name="ResultName"/>
             </BoxContainer>
             <PanelContainer.PanelOverride>
-                <gfx:StyleBoxFlat BackgroundColor="#65c65f"/>
+                <gfx:StyleBoxFlat BackgroundColor="#393c3f"/>
             </PanelContainer.PanelOverride>
         </PanelContainer>
 
-        <GridContainer Columns="65" Margin="65">
+        <GridContainer Columns="2" Margin="10">
             <BoxContainer Orientation="Vertical" HorizontalExpand="True">
                 <Label Text="{Loc 'guidebook-microwave-ingredients-header'}"/>
-                <GridContainer Columns="65" Name="IngredientsGrid"/>
+                <GridContainer Columns="3" Name="IngredientsGrid"/>
             </BoxContainer>
 
             <BoxContainer Orientation="Vertical" HorizontalExpand="True">
@@ -35,7 +35,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
             </BoxContainer>
         </GridContainer>
 
-        <BoxContainer Margin="65">
+        <BoxContainer Margin="10">
             <RichTextLabel Name="ResultDescription" HorizontalAlignment="Left"/>
         </BoxContainer>
     </BoxContainer>

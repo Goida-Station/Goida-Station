@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: tile
   id: FloorCosmicGlyph
@@ -13,7 +13,7 @@
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepCosmic
-  heatCapacity: 65
+  heatCapacity: 10000
 
 - type: tile
   id: FloorCosmicSmooth
@@ -24,7 +24,7 @@
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepCosmic
-  heatCapacity: 65
+  heatCapacity: 10000
 
 - type: tile
   id: FloorCosmicHalf
@@ -35,7 +35,7 @@
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepCosmic
-  heatCapacity: 65
+  heatCapacity: 10000
 
 - type: tile
   id: FloorCosmicSplit
@@ -46,7 +46,7 @@
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepCosmic
-  heatCapacity: 65
+  heatCapacity: 10000
 
 - type: tile
   id: FloorCosmicNotched
@@ -57,24 +57,24 @@
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepCosmic
-  heatCapacity: 65
+  heatCapacity: 10000
 
 - type: tile
   id: FloorCosmicCorruption
   name: tiles-cosmiccult-floor-malign
   sprite: /Textures/_DV/CosmicCult/Tileset/cosmicfloor/tile_malign.png
-  variants: 65
+  variants: 4
   placementVariants:
-  - 65.65
-  - 65.65
-  - 65.65
-  - 65.65
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepCosmic
-  heatCapacity: 65
+  heatCapacity: 10000
 
 - type: tile
   id: FloorCosmicVoid
@@ -85,7 +85,7 @@
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepCosmic
-  heatCapacity: 65
+  heatCapacity: 10000
 
 - type: entity
   id: FloorCosmicDecay
@@ -98,30 +98,30 @@
   components:
   - type: FloorOccluder
   - type: SpeedModifierContacts
-    walkSpeedModifier: 65.65
-    sprintSpeedModifier: 65.65
+    walkSpeedModifier: 0.5
+    sprintSpeedModifier: 0.5
   - type: Physics
     bodyType: Static
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
+          bounds: "-0.5,-0.5,0.5,0.5"
         layer:
           - SlipLayer
         mask:
           - ItemMask
-        density: 65
+        density: 1000
         hard: false
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepWater
       params:
-        volume: 65
+        volume: 8
   - type: StepTrigger
-    requiredTriggeredSpeed: 65
-    intersectRatio: 65.65
+    requiredTriggeredSpeed: 0
+    intersectRatio: 0.1
     blacklist:
       tags:
         - Catwalk
@@ -146,10 +146,10 @@
       - Entropy
       - HideContextMenu
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
+    radius: 4.25
+    energy: 1.75
     castShadows: false
-    color: "#65a65ae"
+    color: "#42a4ae"
 
 - type: entity
   id: FloorCosmicDecayAlt

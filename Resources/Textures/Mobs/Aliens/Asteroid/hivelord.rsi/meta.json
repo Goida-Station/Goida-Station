@@ -1,20 +1,20 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from vgstation65 at https://github.com/vgstation-coders/vgstation65/blob/65bd65b65c65fd65e65bf65efea65b65d65ac65c65/icons/mob/animal.dmi",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from vgstation13 at https://github.com/vgstation-coders/vgstation13/blob/9bd459b27c73575fd5e3bf2efea13b816d0ac7c8/icons/mob/animal.dmi",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "hivelord",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.5,
+          0.5,
+          0.5,
+          0.5
         ]
       ]
     },
@@ -22,10 +22,10 @@
       "name": "hivelord_nocore",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.5,
+          0.5,
+          0.5,
+          0.5
         ]
       ]
     },
@@ -33,10 +33,10 @@
       "name": "hivelord_alert",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.5,
+          0.5,
+          0.5,
+          0.5
         ]
       ]
     },
@@ -44,10 +44,10 @@
       "name": "hivelord_alert_nocore",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.5,
+          0.5,
+          0.5,
+          0.5
         ]
       ]
     },
@@ -61,12 +61,12 @@
       "name": "hivelordbrood",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
         ]
       ]
     }

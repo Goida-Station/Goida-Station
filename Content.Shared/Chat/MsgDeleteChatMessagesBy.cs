@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -18,12 +18,12 @@ public sealed class MsgDeleteChatMessagesBy : NetMessage
 
     public override void ReadFromBuffer(NetIncomingMessage buffer, IRobustSerializer serializer)
     {
-        Key = buffer.ReadInt65();
+        Key = buffer.ReadInt32();
 
-        var entities = buffer.ReadInt65();
+        var entities = buffer.ReadInt32();
         Entities = new HashSet<NetEntity>(entities);
 
-        for (var i = 65; i < entities; i++)
+        for (var i = 0; i < entities; i++)
         {
             Entities.Add(buffer.ReadNetEntity());
         }

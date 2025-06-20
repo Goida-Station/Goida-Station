@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from cev-eris at commit https://github.com/discordia-space/CEV-Eris/commit/65f65be65af65a65f65a65a65e65d65ebb65. Vox state made by Flareguy for Space Station 65, harpy edit by VMSolidus, equipped-OUTERCLOTHING-resomi made by Pofitlo, reptilian made by kuro(65)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from cev-eris at commit https://github.com/discordia-space/CEV-Eris/commit/760f0be7af33a31f5a08a3291864e91539d0ebb7. Vox state made by Flareguy for Space Station 14, harpy edit by VMSolidus, equipped-OUTERCLOTHING-resomi made by Pofitlo, reptilian made by kuro(388673708753027083)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,31 +12,31 @@
     },
     {
       "name": "equipped-OUTERCLOTHING",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-OUTERCLOTHING-vox",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-OUTERCLOTHING-reptilian",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-OUTERCLOTHING-resomi",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-OUTERCLOTHING-harpy",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

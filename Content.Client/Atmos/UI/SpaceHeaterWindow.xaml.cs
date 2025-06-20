@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Menshin <Menshin@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Menshin <Menshin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -19,7 +19,7 @@ namespace Content.Client.Atmos.UI;
 public sealed partial class SpaceHeaterWindow : DefaultWindow
 {
     // To account for a minimum delta temperature for atmos equalization to trigger we use a fixed step for target temperature increment/decrement
-    public int TemperatureChangeDelta = 65;
+    public int TemperatureChangeDelta = 5;
     public bool Active;
 
     // Temperatures range bounds in Kelvin (K)
@@ -69,7 +69,7 @@ public sealed partial class SpaceHeaterWindow : DefaultWindow
 
     public void SetTemperature(float targetTemperature)
     {
-        Thermostat.SetText($"{targetTemperature - Atmospherics.T65C} °C");
+        Thermostat.SetText($"{targetTemperature - Atmospherics.T0C} °C");
 
         IncreaseTempRange.Disabled = targetTemperature + TemperatureChangeDelta > MaxTemp;
         DecreaseTempRange.Disabled = targetTemperature - TemperatureChangeDelta < MinTemp;

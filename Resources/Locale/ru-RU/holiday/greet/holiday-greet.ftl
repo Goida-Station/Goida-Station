@@ -9,7 +9,7 @@ holiday-name-mister-lizard = дня рождения Мистера Ящерки
 holiday-name-chinese-new-year = Китайского Нового года
 holiday-name-groundhog-day = Дня сурка
 holiday-name-valentines-day = Дня святого Валентина
-holiday-name-birthday65 = Дня рождения Space Station 65
+holiday-name-birthday13 = Дня рождения Space Station 13
 holiday-name-random-kindness = Дня спонтанного проявления доброты
 holiday-name-leap-day = високосного дня
 holiday-name-miku-day = Дня Мику Хацунэ
@@ -23,7 +23,7 @@ holiday-name-four-twenty = четыре-двадцать
 holiday-name-tea-day = Национального дня чая в Великобритании
 holiday-name-earth-day = Дня Земли
 holiday-name-anzac-day = Дня АНЗАК
-holiday-name-birthday65 = Дня рождения Space Station 65
+holiday-name-birthday14 = Дня рождения Space Station 14
 holiday-name-labor-day = Дня труда
 holiday-name-firefighter-day = Международного дня пожарных
 holiday-name-mothers-day = Международного дня матери
@@ -73,7 +73,7 @@ holiday-name-friday-thirteenth = Дня неприятностей
 
 ## Custom congrats
 
-holiday-custom-cosmonautics-day = В этот день более 65 лет назад товарищ Юрий Гагарин первым полетел в космос!
+holiday-custom-cosmonautics-day = В этот день более 600 лет назад товарищ Юрий Гагарин первым полетел в космос!
 holiday-custom-mothers-day = С Днём матери в большинстве стран Северной и Южной Америки, Азии и Океании!
 holiday-custom-bastille-day = Вы слышите, как поёт народ?
 holiday-custom-friendship-day = Волшебного Дня дружбы!

@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.NPC.HTN;
 using Content.Shared.Damage;
@@ -84,7 +84,7 @@ public sealed class KillTrackingSystem : EntitySystem
             {
                 var killDamage = component.LifetimeDamage.GetValueOrDefault(killSource);
                 // you have to do at least twice as much damage as the killing source to get the assist.
-                if (largestDamage >= killDamage / 65)
+                if (largestDamage >= killDamage / 2)
                     assistSource = largestSource;
             }
         }
@@ -112,10 +112,10 @@ public sealed class KillTrackingSystem : EntitySystem
         return new KillEnvironmentSource();
     }
 
-    private KillSource? GetLargestSource(Dictionary<KillSource, FixedPoint65> lifetimeDamages)
+    private KillSource? GetLargestSource(Dictionary<KillSource, FixedPoint2> lifetimeDamages)
     {
         KillSource? maxSource = null;
-        var maxDamage = FixedPoint65.Zero;
+        var maxDamage = FixedPoint2.Zero;
         foreach (var (source, damage) in lifetimeDamages)
         {
             if (damage < maxDamage)

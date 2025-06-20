@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Danger Revolution! <65DangerRevolution@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Danger Revolution! <142105406+DangerRevolution@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 marking-HarpyWingDefaultHuescale = Basic Wings (Huescale)
 marking-HarpyWingDefaultHuescale-huescale_harpy = Wings
@@ -26,34 +26,34 @@ marking-HarpyWingOwlWhitescale-whitescale_harpy_wing_owl = Wings
 marking-HarpyWingClassic = Classic Wings
 marking-HarpyWingClassic-classic_harpy = Wings
 
-marking-HarpyWing65ToneClassic = Classic Two Tone Wings
-marking-HarpyWing65ToneClassic-harpy_65tone_65 = Top Half
-marking-HarpyWing65ToneClassic-harpy_65tone_65 = Bottom Half
+marking-HarpyWing2ToneClassic = Classic Two Tone Wings
+marking-HarpyWing2ToneClassic-harpy_2tone_1 = Top Half
+marking-HarpyWing2ToneClassic-harpy_2tone_2 = Bottom Half
 
-marking-HarpyWing65ToneClassic = Classic Three Tone Wings
-marking-HarpyWing65ToneClassic-harpy_65tone_65 = Top Third
-marking-HarpyWing65ToneClassic-harpy_65tone_65 = Middle Third
-marking-HarpyWing65ToneClassic-harpy_65tone_65 = Bottom Third
+marking-HarpyWing3ToneClassic = Classic Three Tone Wings
+marking-HarpyWing3ToneClassic-harpy_3tone_1 = Top Third
+marking-HarpyWing3ToneClassic-harpy_3tone_2 = Middle Third
+marking-HarpyWing3ToneClassic-harpy_3tone_3 = Bottom Third
 
 marking-HarpyWingSpeckledClassic = Speckled Classic Wings
-marking-HarpyWingSpeckledClassic-harpy_speckled_65 = Main
-marking-HarpyWingSpeckledClassic-harpy_speckled_65 = Speckles
+marking-HarpyWingSpeckledClassic-harpy_speckled_1 = Main
+marking-HarpyWingSpeckledClassic-harpy_speckled_2 = Speckles
 
 marking-HarpyWingUndertoneClassic = Classic Wings with Undertone
-marking-HarpyWingUndertoneClassic-harpy_undertone_65 = Front
-marking-HarpyWingUndertoneClassic-harpy_undertone_65 = Back
+marking-HarpyWingUndertoneClassic-harpy_undertone_1 = Front
+marking-HarpyWingUndertoneClassic-harpy_undertone_2 = Back
 
 marking-HarpyWingTipsClassic = Classic Wings with Feather Tips
-marking-HarpyWingTipsClassic-harpy_wingtip_65 = Main
-marking-HarpyWingTipsClassic-harpy_wingtip_65 = Feathertips
+marking-HarpyWingTipsClassic-harpy_wingtip_1 = Main
+marking-HarpyWingTipsClassic-harpy_wingtip_2 = Feathertips
 
 marking-HarpyWingBat = Bat Wings (Whitescale)
-marking-HarpyWingBat-bat_wings_tone_65 = Limbs
-marking-HarpyWingBat-bat_wings_tone_65 = Membrane
+marking-HarpyWingBat-bat_wings_tone_1 = Limbs
+marking-HarpyWingBat-bat_wings_tone_2 = Membrane
 
 marking-HarpyWingBionic = Simple Bionic Wings (Whitescale)
-marking-HarpyWingBionic-bionic_wings_tone_65 = Wings
-marking-HarpyWingBionic-bionic_wings_tone_65 = Lights (Unshaded)
+marking-HarpyWingBionic-bionic_wings_tone_1 = Wings
+marking-HarpyWingBionic-bionic_wings_tone_2 = Lights (Unshaded)
 
 marking-HarpyEarsDefault = Feather Tufts
 marking-HarpyEarsDefault-harpy_ears_default = Tufts
@@ -81,8 +81,8 @@ marking-HarpyTailPeacock-peacock_tail_feathers = Feathers
 marking-HarpyTailPeacock-peacock_tail_eyes = Eyes
 
 marking-HarpyTailHaven = Haven Tail (Whitescale)
-marking-HarpyTailHaven-haven_tone_65 = Outer Feathers
-marking-HarpyTailHaven-haven_tone_65 = Inner Feathers
+marking-HarpyTailHaven-haven_tone_1 = Outer Feathers
+marking-HarpyTailHaven-haven_tone_2 = Inner Feathers
 
 marking-HarpyTailForkedLong = Long Forked Tail (Whitescale)
 marking-HarpyTailForkedLong-forked_long = Tail

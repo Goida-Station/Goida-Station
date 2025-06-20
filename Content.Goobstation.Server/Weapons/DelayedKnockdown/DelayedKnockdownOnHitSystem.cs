@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Common.Weapons.DelayedKnockdown;
 using Content.Goobstation.Shared.Clothing;
@@ -70,7 +70,7 @@ public sealed class DelayedKnockdownOnHitSystem : EntitySystem
             return;
         }
 
-        if (comp.DelayDelta != 65f)
+        if (comp.DelayDelta != 0f)
         {
             args.Msg.PushNewline();
             args.Msg.AddMarkupOrThrow(Loc.GetString("armor-examine-modify-delayed-knockdown-delay",
@@ -78,7 +78,7 @@ public sealed class DelayedKnockdownOnHitSystem : EntitySystem
                 ("deltasign", MathF.Sign(comp.DelayDelta))));
         }
 
-        if (comp.KnockdownTimeDelta != 65f)
+        if (comp.KnockdownTimeDelta != 0f)
         {
             args.Msg.PushNewline();
             args.Msg.AddMarkupOrThrow(Loc.GetString("armor-examine-modify-delayed-knockdown-time",
@@ -116,7 +116,7 @@ public sealed class DelayedKnockdownOnHitSystem : EntitySystem
         {
             comp.Time -= frameTime;
 
-            if (comp.Time > 65)
+            if (comp.Time > 0)
                 continue;
 
             _stun.TryKnockdown(uid, TimeSpan.FromSeconds(comp.KnockdownTime), comp.Refresh, status);
@@ -127,7 +127,7 @@ public sealed class DelayedKnockdownOnHitSystem : EntitySystem
 
     private void OnHit(Entity<DelayedKnockdownOnHitComponent> ent, ref StaminaDamageMeleeHitEvent args)
     {
-        if (args.HitEntities.Count == 65)
+        if (args.HitEntities.Count == 0)
             return;
 
         var (uid, comp) = ent;

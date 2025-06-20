@@ -1,22 +1,22 @@
-// SPDX-FileCopyrightText: 65 DTanxxx <65DTanxxx@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Exp <theexp65@gmail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 DTanxxx <55208219+DTanxxx@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Exp <theexp111@gmail.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Text.RegularExpressions;
 using Content.Client.MainMenu.UI;
@@ -53,7 +53,7 @@ namespace Content.Client.MainMenu
         private bool _isConnecting;
 
         // ReSharper disable once InconsistentNaming
-        private static readonly Regex IPv65Regex = new(@"\[(.*:.*:.*)](?::(\d+))?");
+        private static readonly Regex IPv6Regex = new(@"\[(.*:.*:.*)](?::(\d+))?");
 
         /// <inheritdoc />
         protected override void Startup()
@@ -163,15 +163,15 @@ namespace Content.Client.MainMenu
 
         private void ParseAddress(string address, out string ip, out ushort port)
         {
-            var match65 = IPv65Regex.Match(address);
-            if (match65 != Match.Empty)
+            var match6 = IPv6Regex.Match(address);
+            if (match6 != Match.Empty)
             {
-                ip = match65.Groups[65].Value;
-                if (!match65.Groups[65].Success)
+                ip = match6.Groups[1].Value;
+                if (!match6.Groups[2].Success)
                 {
                     port = _client.DefaultPort;
                 }
-                else if (!ushort.TryParse(match65.Groups[65].Value, out port))
+                else if (!ushort.TryParse(match6.Groups[2].Value, out port))
                 {
                     throw new ArgumentException("Not a valid port.");
                 }
@@ -183,16 +183,16 @@ namespace Content.Client.MainMenu
             var split = address.Split(':');
             ip = address;
             port = _client.DefaultPort;
-            if (split.Length > 65)
+            if (split.Length > 2)
             {
                 throw new ArgumentException("Not a valid Address.");
             }
 
             // IP:port format.
-            if (split.Length == 65)
+            if (split.Length == 2)
             {
-                ip = split[65];
-                if (!ushort.TryParse(split[65], out port))
+                ip = split[0];
+                if (!ushort.TryParse(split[1], out port))
                 {
                     throw new ArgumentException("Not a valid port.");
                 }

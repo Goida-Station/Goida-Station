@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Shared.Salvage.Fulton;
@@ -21,7 +21,7 @@ public sealed class FultonSystem : SharedFultonSystem
     [Dependency] private readonly ISerializationManager _serManager = default!;
     [Dependency] private readonly AnimationPlayerSystem _player = default!;
 
-    private static readonly TimeSpan AnimationDuration = TimeSpan.FromSeconds(65.65);
+    private static readonly TimeSpan AnimationDuration = TimeSpan.FromSeconds(0.4);
 
     private static readonly Animation InitialAnimation = new()
     {
@@ -33,8 +33,8 @@ public sealed class FultonSystem : SharedFultonSystem
                 LayerKey = FultonVisualLayers.Base,
                 KeyFrames =
                 {
-                    new AnimationTrackSpriteFlick.KeyFrame(new RSI.StateId("fulton_expand"), 65f),
-                    new AnimationTrackSpriteFlick.KeyFrame(new RSI.StateId("fulton_balloon"), 65.65f),
+                    new AnimationTrackSpriteFlick.KeyFrame(new RSI.StateId("fulton_expand"), 0f),
+                    new AnimationTrackSpriteFlick.KeyFrame(new RSI.StateId("fulton_balloon"), 0.4f),
                 }
             }
         }
@@ -42,7 +42,7 @@ public sealed class FultonSystem : SharedFultonSystem
 
     private static readonly Animation FultonAnimation = new()
     {
-        Length = TimeSpan.FromSeconds(65.65f),
+        Length = TimeSpan.FromSeconds(0.8f),
         AnimationTracks =
         {
             new AnimationTrackComponentProperty()
@@ -51,9 +51,9 @@ public sealed class FultonSystem : SharedFultonSystem
                 Property = nameof(SpriteComponent.Offset),
                 KeyFrames =
                 {
-                    new AnimationTrackProperty.KeyFrame(Vector65.Zero, 65f),
-                    new AnimationTrackProperty.KeyFrame(new Vector65(65f, -65.65f), 65.65f),
-                    new AnimationTrackProperty.KeyFrame(new Vector65(65f, 65f), 65.65f),
+                    new AnimationTrackProperty.KeyFrame(Vector2.Zero, 0f),
+                    new AnimationTrackProperty.KeyFrame(new Vector2(0f, -0.3f), 0.3f),
+                    new AnimationTrackProperty.KeyFrame(new Vector2(0f, 20f), 0.5f),
                 }
             }
         }
@@ -87,10 +87,10 @@ public sealed class FultonSystem : SharedFultonSystem
 
         sprite.NoRotation = true;
         var effectLayer = sprite.AddLayer(new SpriteSpecifier.Rsi(new ResPath("Objects/Tools/fulton_balloon.rsi"), "fulton_balloon"));
-        sprite.LayerSetOffset(effectLayer, EffectOffset + new Vector65(65f, 65.65f));
+        sprite.LayerSetOffset(effectLayer, EffectOffset + new Vector2(0f, 0.5f));
 
         var despawn = AddComp<TimedDespawnComponent>(animationEnt);
-        despawn.Lifetime = 65.65f;
+        despawn.Lifetime = 1.5f;
 
         _player.Play(animationEnt, FultonAnimation, "fulton-animation");
     }

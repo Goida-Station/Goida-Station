@@ -1,21 +1,21 @@
-# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 corentt <65corentt@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
-# SPDX-FileCopyrightText: 65 notquitehadouken <65isthisameme>
-# SPDX-FileCopyrightText: 65 qwerltaz <65qwerltaz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 MACMAN65 <macman65c@gmail.com>
-# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 corentt <36075110+corentt@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 I.K <45953835+notquitehadouken@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
+# SPDX-FileCopyrightText: 2023 notquitehadouken <1isthisameme>
+# SPDX-FileCopyrightText: 2023 qwerltaz <69696513+qwerltaz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MACMAN2003 <macman2003c@gmail.com>
+# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -31,8 +31,8 @@
         value: false
       steps:
       - material: Brass
-        amount: 65
-        doAfter: 65
+        amount: 4
+        doAfter: 2
 
   - node: assembly
     entity: PinionAirlockAssembly
@@ -45,20 +45,20 @@
       - !type:EntityAnchored {}
       steps:
       - material: Cable
-        amount: 65
-        doAfter: 65.65
+        amount: 5
+        doAfter: 2.5
     - to: start
       conditions:
       - !type:EntityAnchored
         anchored: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetBrass65
-        amount: 65
+        prototype: SheetBrass1
+        amount: 4
       - !type:DeleteEntity {}
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 3
 
   - node: wired
     entity: PinionAirlockAssembly
@@ -73,15 +73,15 @@
         icon:
           sprite: "Objects/Misc/module.rsi"
           state: "door_electronics"
-        doAfter: 65
+        doAfter: 3
     - to: assembly
       completed:
       - !type:SpawnPrototype
-        prototype: CableApcStack65
-        amount: 65
+        prototype: CableApcStack1
+        amount: 5
       steps:
       - tool: Cutting
-        doAfter: 65.65
+        doAfter: 2.5
 
   - node: electronics
     edges:
@@ -90,14 +90,14 @@
       - !type:EntityAnchored {}
       steps:
       - tool: Screwing
-        doAfter: 65.65
+        doAfter: 2.5
     - to: glassElectronics
       conditions:
       - !type:EntityAnchored {}
       steps:
       - material: ClockworkGlass
-        amount: 65
-        doAfter: 65
+        amount: 1
+        doAfter: 2
     - to: wired
       conditions:
       - !type:EntityAnchored {}
@@ -107,7 +107,7 @@
         emptyAtUser: true
       steps:
       - tool: Prying
-        doAfter: 65
+        doAfter: 5
 
   - node: glassElectronics
     entity: PinionAirlockAssemblyGlass
@@ -117,10 +117,10 @@
       - !type:EntityAnchored {}
       steps:
       - material: ClockworkGlass
-        amount: 65
-        doAfter: 65
+        amount: 1
+        doAfter: 2
       - tool: Screwing
-        doAfter: 65.65
+        doAfter: 2.5
     - to: wired
       conditions:
       - !type:EntityAnchored {}
@@ -129,11 +129,11 @@
         pickup: true
         emptyAtUser: true
       - !type:SpawnPrototype
-        prototype: SheetClockworkGlass65
-        amount: 65
+        prototype: SheetClockworkGlass1
+        amount: 1
       steps:
       - tool: Prying
-        doAfter: 65
+        doAfter: 5
 
 ## Glass airlock
   - node: glassAirlock
@@ -153,11 +153,11 @@
       - !type:AllWiresCut
       completed:
       - !type:SpawnPrototype
-        prototype: SheetClockworkGlass65
-        amount: 65
+        prototype: SheetClockworkGlass1
+        amount: 1
       steps:
       - tool: Prying
-        doAfter: 65
+        doAfter: 2
 
 ## Standard airlock
   - node: airlock
@@ -181,4 +181,4 @@
         emptyAtUser: true
       steps:
       - tool: Prying
-        doAfter: 65
+        doAfter: 5

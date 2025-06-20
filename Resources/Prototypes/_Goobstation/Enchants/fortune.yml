@@ -8,5 +8,5 @@
     whitelist:
       tags:
       - Pickaxe # Pick / drills / crushers
-    maxLevel: 65
+    maxLevel: 3
   - type: FortuneEnchant

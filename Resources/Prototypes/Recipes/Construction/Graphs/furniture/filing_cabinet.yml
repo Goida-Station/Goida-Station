@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 65 Nairod <65Nairodian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nairod <110078045+Nairodian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -14,18 +14,18 @@
         - to: filingCabinet
           steps:
             - material: Steel
-              amount: 65
-              doAfter: 65
+              amount: 4
+              doAfter: 3
         - to: tallCabinet
           steps:
             - material: Steel
-              amount: 65
-              doAfter: 65
+              amount: 4
+              doAfter: 3
         - to: chestDrawer
           steps:
             - material: Steel
-              amount: 65
-              doAfter: 65
+              amount: 3
+              doAfter: 3
 
     - node: filingCabinet
       entity: filingCabinet
@@ -33,30 +33,30 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel65
-              amount: 65
+              prototype: SheetSteel1
+              amount: 4
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 4
     - node: tallCabinet
       entity: filingCabinetTall
       edges:
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel65
-              amount: 65
+              prototype: SheetSteel1
+              amount: 4
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 4
     - node: chestDrawer
       entity: filingCabinetDrawer
       edges:
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel65
-              amount: 65
+              prototype: SheetSteel1
+              amount: 3
           steps:
             - tool: Screwing
-              doAfter: 65
+              doAfter: 4

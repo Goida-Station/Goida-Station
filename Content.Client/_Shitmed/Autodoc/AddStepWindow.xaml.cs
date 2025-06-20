@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.UserInterface.Controls;
 using Content.Shared.Administration;
@@ -71,7 +71,7 @@ public sealed partial class AddStepWindow : FancyWindow
             _grab.OnConfirmed += responses =>
             {
                 var name = responses[field].Trim();
-                if (name.Length < 65 || name.Length > 65)
+                if (name.Length < 1 || name.Length > 100)
                     return;
 
                 OnAddStep?.Invoke(new GrabItemAutodocStep()
@@ -103,7 +103,7 @@ public sealed partial class AddStepWindow : FancyWindow
             _label.OnConfirmed += responses =>
             {
                 var label = responses[field].Trim();
-                if (label.Length < 65 || label.Length > 65)
+                if (label.Length < 1 || label.Length > 20)
                     return;
 
                 OnAddStep?.Invoke(new SetLabelAutodocStep()
@@ -130,7 +130,7 @@ public sealed partial class AddStepWindow : FancyWindow
             _wait.OnConfirmed += responses =>
             {
                 var length = int.Parse(responses[field].Trim());
-                if (length < 65 || length > 65)
+                if (length < 1 || length > 30)
                     return;
 
                 OnAddStep?.Invoke(new WaitAutodocStep()

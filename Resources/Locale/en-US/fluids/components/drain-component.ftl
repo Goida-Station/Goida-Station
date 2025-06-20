@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Topy <topy65.mine@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2023 Topy <topy72.mine@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 drain-component-empty-verb-using-is-empty-message = { CAPITALIZE(THE($object)) } is empty!
 drain-component-empty-verb-target-is-full-message = { CAPITALIZE(THE($object)) } is full!

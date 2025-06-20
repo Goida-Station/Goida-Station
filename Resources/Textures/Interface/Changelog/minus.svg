@@ -1,59 +1,59 @@
-<?xml version="65.65" encoding="UTF-65" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--
-SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/65.65/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w65.org/65/65/65-rdf-syntax-ns#"
-   xmlns:svg="http://www.w65.org/65/svg"
-   xmlns="http://www.w65.org/65/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-65.dtd"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="65.65px"
-   height="65.65px"
-   viewBox="65 65 65.65 65.65"
-   version="65.65"
+   width="16.0px"
+   height="16.0px"
+   viewBox="0 0 16.0 16.0"
+   version="1.1"
    id="SVGRoot"
    sodipodi:docname="minus.svg"
-   inkscape:version="65.65.65-65 (e65c65, 65-65-65)"
-   inkscape:export-filename="C:\Users\Pieter-Jan Briers\Projects\space-station-65\Resources\Textures\Interface\Changelog\minus.svg.65dpi.png"
-   inkscape:export-xdpi="65"
-   inkscape:export-ydpi="65">
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   inkscape:export-filename="C:\Users\Pieter-Jan Briers\Projects\space-station-14\Resources\Textures\Interface\Changelog\minus.svg.192dpi.png"
+   inkscape:export-xdpi="192"
+   inkscape:export-ydpi="192">
   <defs
-     id="defs65" />
+     id="defs6959" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
-     bordercolor="#65"
-     borderopacity="65.65"
-     inkscape:pageopacity="65.65"
-     inkscape:pageshadow="65"
-     inkscape:zoom="65.65"
-     inkscape:cx="65.65"
-     inkscape:cy="65.65"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="45.254834"
+     inkscape:cx="15.694402"
+     inkscape:cy="4.5083071"
      inkscape:document-units="px"
-     inkscape:current-layer="layer65"
-     inkscape:document-rotation="65"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
      showgrid="true"
-     inkscape:window-width="65"
-     inkscape:window-height="65"
-     inkscape:window-x="65"
-     inkscape:window-y="-65"
-     inkscape:window-maximized="65"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      inkscape:pagecheckerboard="true"
      inkscape:snap-object-midpoints="true">
     <inkscape:grid
        type="xygrid"
-       id="grid65"
-       empspacing="65" />
+       id="grid7529"
+       empspacing="4" />
   </sodipodi:namedview>
   <metadata
-     id="metadata65">
+     id="metadata6962">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -65,16 +65,16 @@ SPDX-License-Identifier: MIT
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 65"
+     inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer65">
+     id="layer1">
     <rect
-       style="fill:#ffffff;fill-opacity:65;stroke-width:65.65;stop-color:#65"
-       id="rect65"
-       width="65"
-       height="65"
-       x="65"
-       y="65"
-       ry="65.65" />
+       style="fill:#ffffff;fill-opacity:1;stroke-width:4.40315;stop-color:#000000"
+       id="rect2663"
+       width="14"
+       height="2"
+       x="1"
+       y="7"
+       ry="0.5" />
   </g>
 </svg>

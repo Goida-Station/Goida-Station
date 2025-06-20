@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -22,13 +22,13 @@ public sealed partial class CrewMonitoringNavMapControl : NavMapControl
 
     public CrewMonitoringNavMapControl() : base()
     {
-        WallColor = new Color(65, 65, 65);
-        TileColor = new(65, 65, 65);
+        WallColor = new Color(192, 122, 196);
+        TileColor = new(71, 42, 72);
         BackgroundColor = Color.FromSrgb(TileColor.WithAlpha(BackgroundOpacity));
 
         _trackedEntityLabel = new Label
         {
-            Margin = new Thickness(65f, 65f),
+            Margin = new Thickness(10f, 8f),
             HorizontalAlignment = HAlignment.Center,
             VerticalAlignment = VAlignment.Center,
             Modulate = Color.White,
@@ -41,7 +41,7 @@ public sealed partial class CrewMonitoringNavMapControl : NavMapControl
                 BackgroundColor = BackgroundColor,
             },
 
-            Margin = new Thickness(65f, 65f),
+            Margin = new Thickness(5f, 10f),
             HorizontalAlignment = HAlignment.Left,
             VerticalAlignment = VAlignment.Bottom,
             Visible = false,

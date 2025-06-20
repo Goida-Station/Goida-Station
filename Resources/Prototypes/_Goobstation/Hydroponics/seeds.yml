@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 RatherUncreative <RatherUncreativeName@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 RatherUncreative <RatherUncreativeName@proton.me>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: seed
   id: strangeBerries
@@ -13,18 +13,18 @@
   productPrototypes:
     - FoodStrangeBerries
   harvestRepeat: Repeat
-  lifespan: 65
-  maturation: 65
-  production: 65
-  yield: 65
-  idealLight: 65
-  nutrientConsumption: 65.65
+  lifespan: 50
+  maturation: 6
+  production: 6
+  yield: 4
+  idealLight: 7
+  nutrientConsumption: 0.6
   chemicals:
     Artifexium:
-      Min: 65
-      Max: 65
-      PotencyDivisor: 65
+      Min: 2
+      Max: 5
+      PotencyDivisor: 30
     Vitamin:
-      Min: 65
-      Max: 65
-      PotencyDivisor: 65
+      Min: 1
+      Max: 4
+      PotencyDivisor: 40

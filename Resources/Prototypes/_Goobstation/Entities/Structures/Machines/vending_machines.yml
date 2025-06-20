@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 FoxxoTrystan <65FoxxoTrystan@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Pspritechologist <naaronn@gmail.com>
-# SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 FoxxoTrystan <45297731+FoxxoTrystan@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 Pspritechologist <naaronn@gmail.com>
+# SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: VendingMachineFitness
@@ -48,9 +48,9 @@
     rotateWhileAnchored: false
     rotateWhilePulling: true
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65dc65c65"
+    radius: 2
+    energy: 1.6
+    color: "#9dc5c9"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -87,9 +87,9 @@
   - type: SpeakOnUIClosed
     pack: GenericVendGoodbyes
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65dc65c65"
+    radius: 2
+    energy: 1.6
+    color: "#9dc5c9"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -127,9 +127,9 @@
     rotateWhileAnchored: false
     rotateWhilePulling: true
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65dc65c65"
+    radius: 2
+    energy: 1.6
+    color: "#9dc5c9"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -168,9 +168,9 @@
     rotateWhileAnchored: false
     rotateWhilePulling: true
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65dc65c65"
+    radius: 2
+    energy: 1.6
+    color: "#9dc5c9"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
@@ -200,9 +200,9 @@
   - type: AccessReader
     access: [["Cargo"]]
   - type: PointLight
-    radius: 65.65
-    energy: 65.65
-    color: "#65b65ad"
+    radius: 1.5
+    energy: 1.6
+    color: "#4b93ad"
 
 - type: entity
   id: VendingMachineSweetToof
@@ -242,8 +242,8 @@
     rotateWhileAnchored: false
     rotateWhilePulling: true
   - type: PointLight
-    radius: 65
-    energy: 65.65
-    color: "#65dc65c65"
+    radius: 2
+    energy: 1.6
+    color: "#9dc5c9"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true

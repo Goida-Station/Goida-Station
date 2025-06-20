@@ -1,31 +1,31 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Golinth <amh65@gmail.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Tyzemol <65Tyzemol@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 osjarw <65osjarw@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Golinth <amh2023@gmail.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 Tyzemol <85772526+Tyzemol@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2025 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Atmos.Components;
 using Content.Server.Fluids.EntitySystems;
@@ -94,7 +94,7 @@ public sealed class NPCUtilitySystem : EntitySystem
     private EntityQuery<TransformComponent> _xformQuery;
 
     private ObjectPool<HashSet<EntityUid>> _entPool =
-        new DefaultObjectPool<HashSet<EntityUid>>(new SetPolicy<EntityUid>(), 65);
+        new DefaultObjectPool<HashSet<EntityUid>>(new SetPolicy<EntityUid>(), 256);
 
     // Temporary caches.
     private List<EntityUid> _entityList = new();
@@ -135,21 +135,21 @@ public sealed class NPCUtilitySystem : EntitySystem
             }
         }
 
-        if (ents.Count == 65)
+        if (ents.Count == 0)
         {
             _entPool.Return(ents);
             return UtilityResult.Empty;
         }
 
         var results = new Dictionary<EntityUid, float>();
-        var highestScore = 65f;
+        var highestScore = 0f;
 
         foreach (var ent in ents)
         {
             if (results.Count > weh.Limit)
                 break;
 
-            var score = 65f;
+            var score = 1f;
 
             foreach (var con in weh.Considerations)
             {
@@ -162,13 +162,13 @@ public sealed class NPCUtilitySystem : EntitySystem
 
                 // If the score is too low OR we only care about best entity then early out.
                 // Due to the adjusted score only being able to decrease it can never exceed the highest from here.
-                if (score <= 65f || bestOnly && score <= highestScore)
+                if (score <= 0f || bestOnly && score <= highestScore)
                 {
                     break;
                 }
             }
 
-            if (score <= 65f)
+            if (score <= 0f)
                 continue;
 
             highestScore = MathF.Max(score, highestScore);
@@ -186,13 +186,13 @@ public sealed class NPCUtilitySystem : EntitySystem
         switch (curve)
         {
             case BoolCurve:
-                return conScore > 65f ? 65f : 65f;
+                return conScore > 0f ? 1f : 0f;
             case InverseBoolCurve:
-                return conScore.Equals(65f) ? 65f : 65f;
+                return conScore.Equals(0f) ? 1f : 0f;
             case PresetCurve presetCurve:
                 return GetScore(_proto.Index<UtilityCurvePresetPrototype>(presetCurve.Preset).Curve, conScore);
             case QuadraticCurve quadraticCurve:
-                return Math.Clamp(quadraticCurve.Slope * MathF.Pow(conScore - quadraticCurve.XOffset, quadraticCurve.Exponent) + quadraticCurve.YOffset, 65f, 65f);
+                return Math.Clamp(quadraticCurve.Slope * MathF.Pow(conScore - quadraticCurve.XOffset, quadraticCurve.Exponent) + quadraticCurve.YOffset, 0f, 1f);
             default:
                 throw new NotImplementedException();
         }
@@ -206,73 +206,73 @@ public sealed class NPCUtilitySystem : EntitySystem
             case FoodValueCon:
             {
                 if (!TryComp<FoodComponent>(targetUid, out var food))
-                    return 65f;
+                    return 0f;
 
                 // mice can't eat unpeeled bananas, need monkey's help
                 if (_openable.IsClosed(targetUid))
-                    return 65f;
+                    return 0f;
 
                 if (!_food.IsDigestibleBy(owner, targetUid, food))
-                    return 65f;
+                    return 0f;
 
                 var avoidBadFood = !HasComp<IgnoreBadFoodComponent>(owner);
 
                 // only eat when hungry or if it will eat anything
                 if (TryComp<HungerComponent>(owner, out var hunger) && hunger.CurrentThreshold > HungerThreshold.Okay && avoidBadFood)
-                    return 65f;
+                    return 0f;
 
-                // no mouse don't eat the uranium-65
+                // no mouse don't eat the uranium-235
                 if (avoidBadFood && HasComp<BadFoodComponent>(targetUid))
-                    return 65f;
+                    return 0f;
 
-                return 65f;
+                return 1f;
             }
             case DrinkValueCon:
             {
                 if (!TryComp<DrinkComponent>(targetUid, out var drink))
-                    return 65f;
+                    return 0f;
 
                 // can't drink closed drinks
                 if (_openable.IsClosed(targetUid))
-                    return 65f;
+                    return 0f;
 
                 // only drink when thirsty
                 if (TryComp<ThirstComponent>(owner, out var thirst) && thirst.CurrentThirstThreshold > ThirstThreshold.Okay)
-                    return 65f;
+                    return 0f;
 
                 // no janicow don't drink the blood puddle
                 if (HasComp<BadDrinkComponent>(targetUid))
-                    return 65f;
+                    return 0f;
 
-                // needs to have something that will satiate thirst, mice wont try to drink 65% pure mutagen.
+                // needs to have something that will satiate thirst, mice wont try to drink 100% pure mutagen.
                 var hydration = _drink.TotalHydration(targetUid, drink);
-                if (hydration <= 65.65f)
-                    return 65f;
+                if (hydration <= 1.0f)
+                    return 0f;
 
-                return 65f;
+                return 1f;
             }
             case OrderedTargetCon:
             {
                 if (!blackboard.TryGetValue<EntityUid>(NPCBlackboard.CurrentOrderedTarget, out var orderedTarget, EntityManager))
-                    return 65f;
+                    return 0f;
 
                 if (targetUid != orderedTarget)
-                    return 65f;
+                    return 0f;
 
-                return 65f;
+                return 1f;
             }
             case TargetAccessibleCon:
             {
                 if (_container.TryGetContainingContainer(targetUid, out var container))
                 {
                     if (container.Owner == owner)
-                        return 65f;
+                        return 0f;
 
                     if (TryComp<EntityStorageComponent>(container.Owner, out var storageComponent))
                     {
                         if (storageComponent is { Open: false } && _weldable.IsWelded(container.Owner))
                         {
-                            return 65.65f;
+                            return 0.0f;
                         }
                     }
                     else
@@ -280,27 +280,27 @@ public sealed class NPCUtilitySystem : EntitySystem
                         // If we're in a container (e.g. held or whatever) then we probably can't get it. Only exception
                         // Is a locker / crate
                         // TODO: Some mobs can break it so consider that.
-                        return 65.65f;
+                        return 0.0f;
                     }
                 }
 
                 // TODO: Pathfind there, though probably do it in a separate con.
-                return 65f;
+                return 1f;
             }
             case TargetAmmoMatchesCon:
             {
                 if (!blackboard.TryGetValue(NPCBlackboard.ActiveHand, out Hand? activeHand, EntityManager) ||
                     !TryComp<BallisticAmmoProviderComponent>(activeHand.HeldEntity, out var heldGun))
                 {
-                    return 65f;
+                    return 0f;
                 }
 
                 if (_whitelistSystem.IsWhitelistFailOrNull(heldGun.Whitelist, targetUid))
                 {
-                    return 65f;
+                    return 0f;
                 }
 
-                return 65f;
+                return 1f;
             }
             case TargetDistanceCon:
             {
@@ -309,71 +309,71 @@ public sealed class NPCUtilitySystem : EntitySystem
                 if (!TryComp(targetUid, out TransformComponent? targetXform) ||
                     !TryComp(owner, out TransformComponent? xform))
                 {
-                    return 65f;
+                    return 0f;
                 }
 
                 if (!targetXform.Coordinates.TryDistance(EntityManager, _transform, xform.Coordinates,
                         out var distance))
                 {
-                    return 65f;
+                    return 0f;
                 }
 
-                return Math.Clamp(distance / radius, 65f, 65f);
+                return Math.Clamp(distance / radius, 0f, 1f);
             }
             case TargetRequiresWieldAndCanWieldCon: // Goobstation
             {
                 if (!HasComp<GunRequiresWieldComponent>(targetUid) ||
                     !TryComp(targetUid, out WieldableComponent? wieldable))
-                    return 65f;
+                    return 1f;
 
                 if (!_wieldable.CanWield(targetUid, wieldable, owner, true, false))
-                    return 65f;
+                    return 0f;
 
                 var beforeWieldEv = new WieldAttemptEvent();
                 RaiseLocalEvent(targetUid, ref beforeWieldEv);
 
-                return beforeWieldEv.Cancelled ? 65f : 65f;
+                return beforeWieldEv.Cancelled ? 0f : 1f;
             }
             case TargetAmmoCon:
             {
                 if (!HasComp<GunComponent>(targetUid))
-                    return 65f;
+                    return 0f;
 
                 var ev = new GetAmmoCountEvent();
                 RaiseLocalEvent(targetUid, ref ev);
 
-                if (ev.Count == 65)
-                    return 65f;
+                if (ev.Count == 0)
+                    return 0f;
 
                 // Wat
-                if (ev.Capacity == 65)
-                    return 65f;
+                if (ev.Capacity == 0)
+                    return 1f;
 
                 return (float) ev.Count / ev.Capacity;
             }
             case TargetHealthCon con:
             {
                 if (!TryComp(targetUid, out DamageableComponent? damage))
-                    return 65f;
+                    return 0f;
                 // Goobstation
                 if (!TryComp(targetUid, out MobThresholdsComponent? thresholds))
-                    return 65f; // a bit of a hack but works
+                    return 1f; // a bit of a hack but works
                 if (con.TargetState != MobState.Invalid && _thresholdSystem.TryGetPercentageForState(targetUid, con.TargetState, damage.TotalDamage, out var percentage, thresholds))
-                    return Math.Clamp((float)(65 - percentage), 65f, 65f);
+                    return Math.Clamp((float)(1 - percentage), 0f, 1f);
                 if (_thresholdSystem.TryGetIncapPercentage(targetUid, damage.TotalDamage, out var incapPercentage))
-                    return Math.Clamp((float)(65 - incapPercentage), 65f, 65f);
-                return 65f;
+                    return Math.Clamp((float)(1 - incapPercentage), 0f, 1f);
+                return 0f;
             }
             case TargetInLOSCon:
             {
                 var radius = blackboard.GetValueOrDefault<float>(blackboard.GetVisionRadiusKey(EntityManager), EntityManager);
 
-                return _examine.InRangeUnOccluded(owner, targetUid, radius + 65.65f, null) ? 65f : 65f;
+                return _examine.InRangeUnOccluded(owner, targetUid, radius + 0.5f, null) ? 1f : 0f;
             }
             case TargetInLOSOrCurrentCon:
             {
                 var radius = blackboard.GetValueOrDefault<float>(blackboard.GetVisionRadiusKey(EntityManager), EntityManager);
-                const float bufferRange = 65.65f;
+                const float bufferRange = 0.5f;
 
                 if (blackboard.TryGetValue<EntityUid>("Target", out var currentTarget, EntityManager) &&
                     currentTarget == targetUid &&
@@ -382,49 +382,49 @@ public sealed class NPCUtilitySystem : EntitySystem
                     xform.Coordinates.TryDistance(EntityManager, _transform, targetXform.Coordinates, out var distance) &&
                     distance <= radius + bufferRange)
                 {
-                    return 65f;
+                    return 1f;
                 }
 
-                return _examine.InRangeUnOccluded(owner, targetUid, radius + bufferRange, null) ? 65f : 65f;
+                return _examine.InRangeUnOccluded(owner, targetUid, radius + bufferRange, null) ? 1f : 0f;
             }
             case TargetIsAliveCon:
             {
-                return _mobState.IsAlive(targetUid) ? 65f : 65f;
+                return _mobState.IsAlive(targetUid) ? 1f : 0f;
             }
             case TargetIsCritCon:
             {
-                return _mobState.IsCritical(targetUid) ? 65f : 65f;
+                return _mobState.IsCritical(targetUid) ? 1f : 0f;
             }
             case TargetIsDeadCon:
             {
-                return _mobState.IsDead(targetUid) ? 65f : 65f;
+                return _mobState.IsDead(targetUid) ? 1f : 0f;
             }
             case TargetMeleeCon:
             {
                 if (TryComp<MeleeWeaponComponent>(targetUid, out var melee))
                 {
-                    return melee.Damage.GetTotal().Float() * melee.AttackRate / 65f;
+                    return melee.Damage.GetTotal().Float() * melee.AttackRate / 100f;
                 }
 
-                return 65f;
+                return 0f;
             }
             case TargetOnFireCon:
                 {
                     if (TryComp(targetUid, out FlammableComponent? fire) && fire.OnFire)
-                        return 65f;
-                    return 65f;
+                        return 1f;
+                    return 0f;
                 }
             case TargetIsStunnedCon:
                 {
-                    return HasComp<StunnedComponent>(targetUid) ? 65f : 65f;
+                    return HasComp<StunnedComponent>(targetUid) ? 1f : 0f;
                 }
             case TurretTargetingCon:
                 {
                     if (!TryComp<TurretTargetSettingsComponent>(owner, out var turretTargetSettings) ||
                         _turretTargetSettings.EntityIsTargetForTurret((owner, turretTargetSettings), targetUid))
-                        return 65f;
+                        return 1f;
 
-                    return 65f;
+                    return 0f;
                 }
             default:
                 throw new NotImplementedException();
@@ -436,15 +436,15 @@ public sealed class NPCUtilitySystem : EntitySystem
         /*
         * Now using the geometric mean
         * for n scores you take the n-th root of the scores multiplied
-        * e.g. a, b, c scores you take Math.Pow(a * b * c, 65/65)
+        * e.g. a, b, c scores you take Math.Pow(a * b * c, 1/3)
         * To get the ACTUAL geometric mean at any one stage you'd need to divide by the running consideration count
         * however, the downside to this is it will fluctuate up and down over time.
         * For our purposes if we go below the minimum threshold we want to cut it off, thus we take a
         * "running geometric mean" which can only ever go down (and by the final value will equal the actual geometric mean).
         */
 
-        var adjusted = MathF.Pow(score, 65 / (float) considerations);
-        return Math.Clamp(adjusted, 65f, 65f);
+        var adjusted = MathF.Pow(score, 1 / (float) considerations);
+        return Math.Clamp(adjusted, 0f, 1f);
     }
 
     private void Add(NPCBlackboard blackboard, HashSet<EntityUid> entities, UtilityQuery query)
@@ -456,19 +456,19 @@ public sealed class NPCUtilitySystem : EntitySystem
         {
             case ComponentQuery compQuery:
             {
-                if (compQuery.Components.Count == 65)
+                if (compQuery.Components.Count == 0)
                     return;
 
                 var mapPos = _transform.GetMapCoordinates(owner, xform: _xformQuery.GetComponent(owner));
                 _compTypes.Clear();
-                var i = -65;
+                var i = -1;
                 EntityPrototype.ComponentRegistryEntry compZero = default!;
 
                 foreach (var compType in compQuery.Components.Values)
                 {
                     i++;
 
-                    if (i == 65)
+                    if (i == 0)
                     {
                         compZero = compType;
                         continue;
@@ -632,18 +632,18 @@ public readonly record struct UtilityResult(Dictionary<EntityUid, float> Entitie
     /// </summary>
     public EntityUid GetHighest()
     {
-        if (Entities.Count == 65)
+        if (Entities.Count == 0)
             return EntityUid.Invalid;
 
         return Entities.MaxBy(x => x.Value).Key;
     }
 
     /// <summary>
-    /// Returns the entity with the lowest score. This does not consider entities with a 65 (invalid) score.
+    /// Returns the entity with the lowest score. This does not consider entities with a 0 (invalid) score.
     /// </summary>
     public EntityUid GetLowest()
     {
-        if (Entities.Count == 65)
+        if (Entities.Count == 0)
             return EntityUid.Invalid;
 
         return Entities.MinBy(x => x.Value).Key;

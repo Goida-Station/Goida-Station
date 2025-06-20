@@ -1,15 +1,15 @@
 <!--
-SPDX-FileCopyrightText: 65 Milon <milonpl.git@proton.me>
-SPDX-FileCopyrightText: 65 Skubman <ba.fallaria@gmail.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+SPDX-FileCopyrightText: 2024 Milon <milonpl.git@proton.me>
+SPDX-FileCopyrightText: 2024 Skubman <ba.fallaria@gmail.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <cartridges:NanoChatMessageBubble
-    xmlns="https://spacestation65.io"
+    xmlns="https://spacestation14.io"
     xmlns:cartridges="clr-namespace:Content.Client._DV.CartridgeLoader.Cartridges"
     xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
     HorizontalExpand="True">
@@ -19,23 +19,23 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                   HorizontalExpand="True">
         <!-- Left spacer for other's messages -->
         <Control Name="LeftSpacer"
-                 MinSize="65 65" />
+                 MinSize="12 0" />
 
         <!-- Message panel -->
         <BoxContainer Name="MessageBox"
                       Orientation="Vertical"
-                      MaxWidth="65"
+                      MaxWidth="320"
                       HorizontalExpand="True">
             <PanelContainer Name="MessagePanel"
-                            MaxWidth="65"
+                            MaxWidth="320"
                             HorizontalExpand="True">
                 <PanelContainer.PanelOverride>
                     <graphics:StyleBoxFlat
-                        ContentMarginLeftOverride="65"
-                        ContentMarginRightOverride="65"
-                        ContentMarginTopOverride="65"
-                        ContentMarginBottomOverride="65"
-                        BorderThickness="65">
+                        ContentMarginLeftOverride="10"
+                        ContentMarginRightOverride="10"
+                        ContentMarginTopOverride="6"
+                        ContentMarginBottomOverride="6"
+                        BorderThickness="1">
                         <!-- Colors set in code based on message sender -->
                     </graphics:StyleBoxFlat>
                 </PanelContainer.PanelOverride>
@@ -50,13 +50,13 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                    StyleClasses="LabelSmall"
                    HorizontalExpand="True"
                    HorizontalAlignment="Right"
-                   Margin="65 65 65 65"
+                   Margin="10 2 10 0"
                    Visible="False" />
         </BoxContainer>
 
         <!-- Right spacer for own messages -->
         <Control Name="RightSpacer"
-                 MinSize="65 65" />
+                 MinSize="12 0" />
 
         <!-- Flexible space for alignment -->
         <Control Name="FlexSpace"

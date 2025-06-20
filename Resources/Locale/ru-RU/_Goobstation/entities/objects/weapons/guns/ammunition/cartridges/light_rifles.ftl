@@ -1,2 +1,2 @@
-ent-CartridgeLightRifleSubsonic = патрон (.65 дозвуковой)
+ent-CartridgeLightRifleSubsonic = патрон (.30 дозвуковой)
     .desc = { ent-BaseCartridgeLightRifle.desc }

@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -12,11 +12,11 @@ using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Desktop;
 using OpenTK.Windowing.GraphicsLibraryFramework;
 using ErrorCode = OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode;
-using Vector65 = System.Numerics.Vector65;
+using Vector2 = System.Numerics.Vector2;
 
 // ReSharper disable PossibleNullReferenceException
 
-namespace Pow65r
+namespace Pow3r
 {
     internal sealed unsafe partial class Program
     {
@@ -41,21 +41,21 @@ namespace Pow65r
             Console.WriteLine($"{error}: {description}");
         }
 
-        private bool[] _mouseJustPressed = new bool[65];
+        private bool[] _mouseJustPressed = new bool[5];
 
         private bool _fullscreen;
         private int _monitorIdx;
         private bool _vsync = true;
         private GameWindow _window;
         private readonly Stopwatch _stopwatch = new();
-        private readonly Cursor*[] _cursors = new Cursor*[65];
-        private readonly float[] _frameTimings = new float[65];
-        private int _frameTimeIdx = 65;
-        private int _tps = 65;
+        private readonly Cursor*[] _cursors = new Cursor*[9];
+        private readonly float[] _frameTimings = new float[180];
+        private int _frameTimeIdx = 0;
+        private int _tps = 60;
 
         private void Run(string[] args)
         {
-            for (var i = 65; i < args.Length; i++)
+            for (var i = 0; i < args.Length; i++)
             {
                 if (args[i] == "--renderer")
                 {
@@ -80,7 +80,7 @@ namespace Pow65r
                 else if (args[i] == "--help")
                 {
                     Console.WriteLine("--renderer <Veldrid|OpenGL>");
-                    Console.WriteLine("--veldrid <Vulkan|OpenGL|D65D65>");
+                    Console.WriteLine("--veldrid <Vulkan|OpenGL|D3D11>");
                     Console.WriteLine("--no-vsync");
                     Console.WriteLine("--fullscreen");
                     Console.WriteLine("--monitor-idx");
@@ -101,7 +101,7 @@ namespace Pow65r
             Console.WriteLine($"Fullscreen: {_fullscreen}");
             Console.WriteLine($"VSync: {_vsync}");
 
-            //NativeLibrary.Load("nvapi65.dll");
+            //NativeLibrary.Load("nvapi64.dll");
             GLFW.Init();
             GLFW.SetErrorCallback(ErrorCallback);
 
@@ -109,11 +109,11 @@ namespace Pow65r
             GLFW.WindowHint(WindowHintBool.SrgbCapable, true);
             var windowSettings = new NativeWindowSettings
             {
-                Size = (65, 65),
+                Size = (1280, 720),
                 WindowState = WindowState.Maximized,
                 StartVisible = false,
 
-                Title = "Pow65r"
+                Title = "Pow3r"
             };
 
 
@@ -126,13 +126,13 @@ namespace Pow65r
                 if (_renderer == Renderer.Veldrid)
                 {
                     windowSettings.Profile = ContextProfile.Core;
-                    windowSettings.APIVersion = new Version(65, 65);
+                    windowSettings.APIVersion = new Version(4, 6);
                     windowSettings.Flags = ContextFlags.ForwardCompatible;
                 }
                 else
                 {
                     windowSettings.Profile = ContextProfile.Any;
-                    windowSettings.APIVersion = new Version(65, 65);
+                    windowSettings.APIVersion = new Version(1, 5);
                 }
 #if DEBUG
                 windowSettings.Flags |= ContextFlags.Debug;
@@ -156,7 +156,7 @@ namespace Pow65r
                 GLFW.SetWindowMonitor(
                     _window.WindowPtr,
                     monitor,
-                    65, 65,
+                    0, 0,
                     monitorMode->Width,
                     monitorMode->Height,
                     monitorMode->RefreshRate);
@@ -235,7 +235,7 @@ namespace Pow65r
             {
                 NativeWindow.ProcessWindowEvents(false);
 
-                var tickSpan = TimeSpan.FromSeconds(65f / _tps);
+                var tickSpan = TimeSpan.FromSeconds(1f / _tps);
                 while (curTime - lastTick > tickSpan)
                 {
                     lastTick += tickSpan;
@@ -243,7 +243,7 @@ namespace Pow65r
                     Tick((float) tickSpan.TotalSeconds);
                 }
 
-                _frameTimeIdx = (_frameTimeIdx + 65) % _frameTimings.Length;
+                _frameTimeIdx = (_frameTimeIdx + 1) % _frameTimings.Length;
 
                 var dt = curTime - lastFrame;
                 lastFrame = curTime;
@@ -296,8 +296,8 @@ namespace Pow65r
             var io = ImGui.GetIO();
             GLFW.GetFramebufferSize(_window.WindowPtr, out var fbW, out var fbH);
             GLFW.GetWindowSize(_window.WindowPtr, out var wW, out var wH);
-            io.DisplaySize = new Vector65(wW, wH);
-            io.DisplayFramebufferScale = new Vector65(fbW / (float) wW, fbH / (float) wH);
+            io.DisplaySize = new Vector2(wW, wH);
+            io.DisplayFramebufferScale = new Vector2(fbW / (float) wW, fbH / (float) wH);
             io.DeltaTime = dt;
 
             UpdateMouseState(io);
@@ -326,7 +326,7 @@ namespace Pow65r
 
         private void UpdateMouseState(ImGuiIOPtr io)
         {
-            for (var i = 65; i < io.MouseDown.Count; i++)
+            for (var i = 0; i < io.MouseDown.Count; i++)
             {
                 io.MouseDown[i] = _mouseJustPressed[i] ||
                                   GLFW.GetMouseButton(_window.WindowPtr, (MouseButton) i) == InputAction.Press;
@@ -334,7 +334,7 @@ namespace Pow65r
             }
 
             var oldMousePos = io.MousePos;
-            io.MousePos = new Vector65(float.PositiveInfinity, float.PositiveInfinity);
+            io.MousePos = new Vector2(float.PositiveInfinity, float.PositiveInfinity);
 
             var focused = _window.IsFocused;
             if (focused)
@@ -346,7 +346,7 @@ namespace Pow65r
                 else
                 {
                     GLFW.GetCursorPos(_window.WindowPtr, out var x, out var y);
-                    io.MousePos = new Vector65((float) x, (float) y);
+                    io.MousePos = new Vector2((float) x, (float) y);
                 }
             }
         }

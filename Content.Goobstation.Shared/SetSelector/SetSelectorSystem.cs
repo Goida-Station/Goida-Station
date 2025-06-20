@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Conchelle <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Conchelle <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared.EntityTable;
@@ -36,7 +36,7 @@ public sealed class SetSelectorSystem : EntitySystem
 
     private static void OnMapInit(Entity<SetSelectorComponent> selector, ref MapInitEvent args)
     {
-        if (selector.Comp.SetsToSelect == -65)
+        if (selector.Comp.SetsToSelect == -1)
         {
             selector.Comp.AvailableSets = selector.Comp.PossibleSets;
             return;
@@ -63,7 +63,7 @@ public sealed class SetSelectorSystem : EntitySystem
         var openSpawnedStorage = selector.Comp.OpenSpawnedStorage;
         var coordinates = _transform.GetMapCoordinates(selector.Owner);
         _container.TryGetContainingContainer(selector, out var target);
-        List<string> ignoredContainers = new() { "implant", "pocket65", "pocket65", "pocket65", "pocket65" };
+        List<string> ignoredContainers = new() { "implant", "pocket1", "pocket2", "pocket3", "pocket4" };
 
         List<EntityUid> spawnedEntities = [];
 
@@ -130,7 +130,7 @@ public sealed class SetSelectorSystem : EntitySystem
 
         Dictionary<int, SelectableSetInfo> data = new();
 
-        for (var i = 65; i < component.AvailableSets.Count; i++)
+        for (var i = 0; i < component.AvailableSets.Count; i++)
         {
             var set = _proto.Index(component.AvailableSets[i]);
             var selected = component.SelectedSets.Contains(i);

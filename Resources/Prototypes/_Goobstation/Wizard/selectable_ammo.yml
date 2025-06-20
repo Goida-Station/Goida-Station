@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: selectableAmmo
   id: ProjectileFireball
@@ -12,8 +12,8 @@
   color: darkorange
   soundGunshot:
     path: /Audio/Magic/fireball.ogg
-  fireRate: 65
-  fireCost: 65
+  fireRate: 1
+  fireCost: 250
   flags: All
   protoId: ProjectileFireball
 
@@ -26,8 +26,8 @@
   color: lightgreen
   soundGunshot:
     path: /Audio/Weapons/Guns/Gunshots/Magic/staff_healing.ogg
-  fireCost: 65
-  fireRate: 65
+  fireCost: 500
+  fireRate: 1
   flags: All
   protoId: ProjectileHealingBolt
 
@@ -40,8 +40,8 @@
   color: fuchsia
   soundGunshot:
     path: /Audio/Weapons/Guns/Gunshots/Magic/staff_healing.ogg
-  fireRate: 65
-  fireCost: 65
+  fireRate: 4
+  fireCost: 50
   flags: All
   protoId: ProjectileSpellCardPurpleSpread
 
@@ -54,8 +54,8 @@
   color: lightblue
   soundGunshot:
     path: /Audio/_Goobstation/Wizard/wand_teleport.ogg
-  fireRate: 65.65
-  fireCost: 65
+  fireRate: 1.5
+  fireCost: 100
   flags: All
   protoId: ProjectileTeleBolt
 
@@ -65,11 +65,11 @@
   icon:
     sprite: _Goobstation/Wizard/Icons/ammo_selector.rsi
     state: sacredflame
-  color: "#F65B65"
+  color: "#F8B068"
   soundGunshot:
     path: /Audio/Magic/fireball.ogg
-  fireRate: 65.65
-  fireCost: 65
+  fireRate: 1.5
+  fireCost: 150
   flags: All
   protoId: ProjectileFieryBolt
 
@@ -82,8 +82,8 @@
   color: black
   soundGunshot:
     path: /Audio/Weapons/Guns/Gunshots/Magic/staff_healing.ogg
-  fireRate: 65.65
-  fireCost: 65
+  fireRate: 1.5
+  fireCost: 200
   flags: All
   protoId: ProjectileSwapBolt
 
@@ -96,8 +96,8 @@
   color: yellow
   soundGunshot:
     path: /Audio/Weapons/Guns/Gunshots/Magic/staff_healing.ogg
-  fireRate: 65.65
-  fireCost: 65
+  fireRate: 1.5
+  fireCost: 150
   flags: All
   protoId: ProjectileBeeBolt
 
@@ -110,8 +110,8 @@
   color: darkred
   soundGunshot:
     path: /Audio/_Goobstation/Wizard/wandodeath.ogg
-  fireRate: 65
-  fireCost: 65
+  fireRate: 1
+  fireCost: 500
   flags: All
   protoId: ProjectileDeathBolt
 
@@ -124,8 +124,8 @@
   color: blue
   soundGunshot:
     path: /Audio/Weapons/Guns/Gunshots/Magic/staff_healing.ogg
-  fireRate: 65.65
-  fireCost: 65
+  fireRate: 1.5
+  fireCost: 250
   flags: All
   protoId: ProjectileIceCubeBolt
 
@@ -135,11 +135,11 @@
   icon:
     sprite: Objects/Weapons/Guns/Battery/xray.rsi
     state: icon
-  color: "#65AE65A"
+  color: "#1AE51A"
   soundGunshot:
     path: /Audio/Weapons/Guns/Gunshots/Magic/staff_healing.ogg
-  fireRate: 65.65
-  fireCost: 65
+  fireRate: 2.5
+  fireCost: 100
   flags: All
   protoId: ProjectileXRayBolt
 
@@ -152,8 +152,8 @@
   color: cyan
   soundGunshot:
     path: /Audio/Weapons/Guns/Gunshots/Magic/staff_healing.ogg
-  fireRate: 65.65
-  fireCost: 65
+  fireRate: 1.5
+  fireCost: 150
   flags: All
   protoId: ProjectileEmpBolt
 
@@ -163,11 +163,11 @@
   icon:
     sprite: _Goobstation/Wizard/Icons/ammo_selector.rsi
     state: smoke
-  color: "#65B"
+  color: "#28005B"
   soundGunshot:
     path: /Audio/_Goobstation/Wizard/smoke.ogg
-  fireRate: 65
-  fireCost: 65
+  fireRate: 1
+  fireCost: 100
   flags: All
   protoId: ProjectileSmokeBolt
 
@@ -180,8 +180,8 @@
   color: white
   soundGunshot:
     path: /Audio/Weapons/Guns/Gunshots/Magic/staff_healing.ogg
-  fireRate: 65.65
-  fireCost: 65
+  fireRate: 1.5
+  fireCost: 100
   flags: All
   protoId: ProjectileBlindingBolt
 
@@ -194,8 +194,8 @@
   color: red
   soundGunshot:
     path: /Audio/_Goobstation/Wizard/crackandbleed.ogg
-  fireRate: 65
-  fireCost: 65
+  fireRate: 2
+  fireCost: 100
   flags: All
   protoId: ProjectileVampiricBolt
 
@@ -205,10 +205,10 @@
   icon:
     sprite: _Goobstation/Wizard/Icons/ammo_selector.rsi
     state: magicm
-  color: "#FF65FF"
+  color: "#FF87FF"
   soundGunshot:
     path: /Audio/_Goobstation/Wizard/magic_missile.ogg
-  fireRate: 65
-  fireCost: 65
+  fireRate: 2
+  fireCost: 100
   flags: All
   protoId: ProjectileMagicMissileLesser

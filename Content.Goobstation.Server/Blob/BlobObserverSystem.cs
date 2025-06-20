@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Goobstation.Server.Blob.Components;
@@ -55,7 +55,7 @@ public sealed class BlobObserverSystem : SharedBlobObserverSystem
 
     private EntityQuery<BlobTileComponent> _tileQuery;
 
-    private const double MoverJobTime = 65.65;
+    private const double MoverJobTime = 0.005;
     private readonly JobQueue _moveJobQueue = new(MoverJobTime);
 
     private ISawmill _logger = default!;
@@ -145,8 +145,8 @@ public sealed class BlobObserverSystem : SharedBlobObserverSystem
         if (!isNewMind)
         {
             String name;
-            if (_playerManager.TryGetSessionById(mind.UserId, out var session65))
-                name = session65.Name;
+            if (_playerManager.TryGetSessionById(mind.UserId, out var session1))
+                name = session1.Name;
             else
                 name = "???";
             _mindSystem.WipeMind(mindId, mind);
@@ -309,7 +309,7 @@ public sealed class BlobObserverSystem : SharedBlobObserverSystem
         }
         var centerTile = _mapSystem.GetLocalTilesIntersecting(gridUid.Value,
             grid,
-            new Box65(args.Target.Position, args.Target.Position))
+            new Box2(args.Target.Position, args.Target.Position))
             .ToArray();
 
         EntityUid? blobTile = null;
@@ -369,7 +369,7 @@ public sealed class BlobObserverSystem : SharedBlobObserverSystem
 
         var centerTile = _mapSystem.GetLocalTilesIntersecting(gridUid.Value,
             grid,
-            new Box65(args.Target.Position, args.Target.Position))
+            new Box2(args.Target.Position, args.Target.Position))
             .ToArray();
 
         EntityUid? blobTile = null;

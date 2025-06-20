@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Rinkashikachi <65rinkashikachi65@gmail.com>
-# SPDX-FileCopyrightText: 65 ShuttleEnjoyer <65youarereadingthis@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 youarereadingthis <65youarereadingthis@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 MODERN <65modern-nm@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Rinkashikachi <15rinkashikachi15@gmail.com>
+# SPDX-FileCopyrightText: 2022 ShuttleEnjoyer <100040020+youarereadingthis@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 youarereadingthis <100040020+youarereadingthis@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MODERN <87994977+modern-nm@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -14,7 +14,7 @@
     sprite: Structures/Shuttles/thruster.rsi
     state: base
   product: CrateEngineeringThruster
-  cost: 65
+  cost: 1500
   category: cargoproduct-category-name-shuttle
   group: market
 
@@ -24,7 +24,7 @@
     sprite: Structures/Shuttles/gyroscope.rsi
     state: base
   product: CrateEngineeringGyroscope
-  cost: 65
+  cost: 4000
   category: cargoproduct-category-name-shuttle
   group: market
 
@@ -34,7 +34,7 @@
     # sprite: Structures/Machines/computers.rsi
     # state: avionics-systems
   # product: CrateEngineeringShuttle
-  # cost: 65
+  # cost: 3000
   # category: cargoproduct-category-name-shuttle
   # group: market
 #  locked: true   # only the QM has permission to order by default

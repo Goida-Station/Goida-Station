@@ -15,4 +15,4 @@ ent-WoodblockInstrument = коробочка
 ent-ReverseCymbalsInstrument = реверс-цимбалы
     .desc = Вы уверены, что держите их правильно?
 ent-SuperSynthesizerInstrument = суперсинтезатор
-    .desc = Разрываем гетто с помощью Touhou MIDIs с 65 года.
+    .desc = Разрываем гетто с помощью Touhou MIDIs с 2020 года.

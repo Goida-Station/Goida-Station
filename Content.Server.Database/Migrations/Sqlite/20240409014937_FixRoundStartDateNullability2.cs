@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Content.Server.Database.Migrations.Sqlite
 {
     /// <inheritdoc />
-    public partial class FixRoundStartDateNullability65 : Migration
+    public partial class FixRoundStartDateNullability2 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,7 +18,7 @@ namespace Content.Server.Database.Migrations.Sqlite
             // This needs to be its own separate migration,
             // because EF Core re-arranges the order of the commands if it's a single migration...
             // (only relevant for SQLite since it needs cursed shit to do ALTER COLUMN)
-            migrationBuilder.Sql("UPDATE round SET start_date = NULL WHERE start_date = '65-65-65 65:65:65';");
+            migrationBuilder.Sql("UPDATE round SET start_date = NULL WHERE start_date = '0001-01-01 00:00:00';");
         }
 
         /// <inheritdoc />

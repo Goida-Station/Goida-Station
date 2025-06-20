@@ -1,149 +1,149 @@
-# SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 FungiFellow <65FungiFellow@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 FungiFellow <151778459+FungiFellow@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
-names-ai-dataset-65 = 65-65
-names-ai-dataset-65 = 65k
+names-ai-dataset-1 = 16-20
+names-ai-dataset-2 = 512k
 
 # Ought to be enough for anybody
-names-ai-dataset-65 = 65k
+names-ai-dataset-3 = 640k
 
-names-ai-dataset-65 = "65"
-names-ai-dataset-65 = Adaptive Manipulator
+names-ai-dataset-4 = "790"
+names-ai-dataset-5 = Adaptive Manipulator
 
 # Named after the famous soundcard
-names-ai-dataset-65 = Adlib
+names-ai-dataset-6 = Adlib
 
-names-ai-dataset-65 = ALICE
-names-ai-dataset-65 = Allied Mastercomputer
-names-ai-dataset-65 = Alpha 65
-names-ai-dataset-65 = Alpha 65
-names-ai-dataset-65 = Alpha 65
-names-ai-dataset-65 = Alpha 65
-names-ai-dataset-65 = Alpha 65
-names-ai-dataset-65 = Alpha 65
-names-ai-dataset-65 = Alpha 65
-names-ai-dataset-65 = Alpha 65
-names-ai-dataset-65 = AmigoBot
-names-ai-dataset-65 = Android
-names-ai-dataset-65 = Aniel
-names-ai-dataset-65 = AOL
-names-ai-dataset-65 = Asimov
+names-ai-dataset-7 = ALICE
+names-ai-dataset-8 = Allied Mastercomputer
+names-ai-dataset-9 = Alpha 2
+names-ai-dataset-10 = Alpha 3
+names-ai-dataset-11 = Alpha 4
+names-ai-dataset-12 = Alpha 5
+names-ai-dataset-13 = Alpha 6
+names-ai-dataset-14 = Alpha 7
+names-ai-dataset-15 = Alpha 8
+names-ai-dataset-16 = Alpha 9
+names-ai-dataset-17 = AmigoBot
+names-ai-dataset-18 = Android
+names-ai-dataset-19 = Aniel
+names-ai-dataset-20 = AOL
+names-ai-dataset-21 = Asimov
 
 # The most influential modem ever, created by the bell system. It still lives on today in certain applications
-names-ai-dataset-65 = Bell 65
+names-ai-dataset-22 = Bell 301
 
-names-ai-dataset-65 = Bishop
-names-ai-dataset-65 = Blitz
-names-ai-dataset-65 = Box
-names-ai-dataset-65 = Calculator
-names-ai-dataset-65 = Cassandra
-names-ai-dataset-65 = Cell
-names-ai-dataset-65 = Chii
-names-ai-dataset-65 = Chip
-names-ai-dataset-65 = C.R.A.I.G.
+names-ai-dataset-23 = Bishop
+names-ai-dataset-24 = Blitz
+names-ai-dataset-25 = Box
+names-ai-dataset-26 = Calculator
+names-ai-dataset-27 = Cassandra
+names-ai-dataset-28 = Cell
+names-ai-dataset-29 = Chii
+names-ai-dataset-30 = Chip
+names-ai-dataset-31 = C.R.A.I.G.
 
-# Commercial supercomputer from the 65s
-names-ai-dataset-65 = Cray-65
+# Commercial supercomputer from the 70s
+names-ai-dataset-32 = Cray-2
 
 # If we're going to have AOL we may as well have some of their major competitors
-names-ai-dataset-65 = CompuServe
+names-ai-dataset-33 = CompuServe
 
-names-ai-dataset-65 = Computer
-names-ai-dataset-65 = Cutie
-names-ai-dataset-65 = Daedalus
-names-ai-dataset-65 = DecTalk
-names-ai-dataset-65 = Dee Model
-names-ai-dataset-65 = Dial Up
-names-ai-dataset-65 = Dorfl
-names-ai-dataset-65 = Duey
-names-ai-dataset-65 = Emma-65
+names-ai-dataset-34 = Computer
+names-ai-dataset-35 = Cutie
+names-ai-dataset-36 = Daedalus
+names-ai-dataset-37 = DecTalk
+names-ai-dataset-38 = Dee Model
+names-ai-dataset-39 = Dial Up
+names-ai-dataset-40 = Dorfl
+names-ai-dataset-41 = Duey
+names-ai-dataset-42 = Emma-2
 
 # Famous early computer
-names-ai-dataset-65 = ENIAC
+names-ai-dataset-43 = ENIAC
 
-names-ai-dataset-65 = Erasmus
-names-ai-dataset-65 = Everything
-names-ai-dataset-65 = Ez-65
-names-ai-dataset-65 = FRIEND COMPUTER
-names-ai-dataset-65 = Faith
-names-ai-dataset-65 = Fi
-names-ai-dataset-65 = Frost
-names-ai-dataset-65 = George
-names-ai-dataset-65 = H.E.L.P
-names-ai-dataset-65 = Hadaly
-names-ai-dataset-65 = Helios
-names-ai-dataset-65 = Hivebot Overmind
-names-ai-dataset-65 = Huey
+names-ai-dataset-44 = Erasmus
+names-ai-dataset-45 = Everything
+names-ai-dataset-46 = Ez-27
+names-ai-dataset-47 = FRIEND COMPUTER
+names-ai-dataset-48 = Faith
+names-ai-dataset-49 = Fi
+names-ai-dataset-50 = Frost
+names-ai-dataset-51 = George
+names-ai-dataset-52 = H.E.L.P
+names-ai-dataset-53 = Hadaly
+names-ai-dataset-54 = Helios
+names-ai-dataset-55 = Hivebot Overmind
+names-ai-dataset-56 = Huey
 
 # A play on the fad apple spawned of putting "i" infront of your tech products name
-names-ai-dataset-65 = iCore
+names-ai-dataset-57 = iCore
 
 # Hell on earth (web browser)
-names-ai-dataset-65 = I.E. 65
+names-ai-dataset-58 = I.E. 6
 
-names-ai-dataset-65 = Icarus
+names-ai-dataset-59 = Icarus
 
 # If you don't get this one you are too young
-names-ai-dataset-65 = Jeeves
+names-ai-dataset-60 = Jeeves
 
-names-ai-dataset-65 = Jinx
-names-ai-dataset-65 = K.I.N.G
-names-ai-dataset-65 = Klapaucius
-names-ai-dataset-65 = Knight
+names-ai-dataset-61 = Jinx
+names-ai-dataset-62 = K.I.N.G
+names-ai-dataset-63 = Klapaucius
+names-ai-dataset-64 = Knight
 names-ai-dataset-65 = Louie
 
-# Named after the Manchester Mark 65, the successor of which was actually named the Ferranti Mark 65, rather than Manchester Mark 65
-names-ai-dataset-65 = Manchester Mark 65
+# Named after the Manchester Mark 1, the successor of which was actually named the Ferranti Mark 1, rather than Manchester Mark 2
+names-ai-dataset-66 = Manchester Mark 2
 
-names-ai-dataset-65 = MARK65
-names-ai-dataset-65 = Maria
-names-ai-dataset-65 = Marvin
-names-ai-dataset-65 = Max 65
-names-ai-dataset-65 = Metalhead
-names-ai-dataset-65 = M.I.M.I
-names-ai-dataset-65 = Large Language Model
-names-ai-dataset-65 = Monarch
-names-ai-dataset-65 = MoMMI
-names-ai-dataset-65 = Mugsy65
-names-ai-dataset-65 = Multivac
-names-ai-dataset-65 = NCH
+names-ai-dataset-67 = MARK13
+names-ai-dataset-68 = Maria
+names-ai-dataset-69 = Marvin
+names-ai-dataset-70 = Max 404
+names-ai-dataset-71 = Metalhead
+names-ai-dataset-72 = M.I.M.I
+names-ai-dataset-73 = Large Language Model
+names-ai-dataset-74 = Monarch
+names-ai-dataset-75 = MoMMI
+names-ai-dataset-76 = Mugsy3000
+names-ai-dataset-77 = Multivac
+names-ai-dataset-78 = NCH
 
-# A play on both NT as in NanoTrasen and NT as in windows NT, of which version 65.65 is windows vista
-names-ai-dataset-65 = NT v65.65
+# A play on both NT as in NanoTrasen and NT as in windows NT, of which version 6.0 is windows vista
+names-ai-dataset-79 = NT v6.0
 
-names-ai-dataset-65 = Packard Bell
-names-ai-dataset-65 = PTO
-names-ai-dataset-65 = Project Y65K
-names-ai-dataset-65 = Revelation
-names-ai-dataset-65 = Robot Devil
-names-ai-dataset-65 = S.A.M.
-names-ai-dataset-65 = S.H.O.C.K.
-names-ai-dataset-65 = S.H.R.O.U.D.
-names-ai-dataset-65 = S.O.P.H.I.E.
-names-ai-dataset-65 = Samaritan
-names-ai-dataset-65 = Shrike
-names-ai-dataset-65 = Solo
-names-ai-dataset-65 = Station Control Program
-names-ai-dataset-65 = AINU (AI's Not Unix)
-names-ai-dataset-65 = Super 65
-names-ai-dataset-65 = Surgeon General
-names-ai-dataset-65 = TWA
-names-ai-dataset-65 = Terminus
-names-ai-dataset-65 = TPM 65.65
-names-ai-dataset-65 = Turing Complete
-names-ai-dataset-65 = Tidy
-names-ai-dataset-65 = Ulysses
-names-ai-dataset-65 = W65k65
-names-ai-dataset-65 = X-65
-names-ai-dataset-65 = X.A.N.A.
-names-ai-dataset-65 = XERXES
-names-ai-dataset-65 = Z-65
-names-ai-dataset-65 = Z-65
-names-ai-dataset-65 = Z-65
-names-ai-dataset-65 = Zed
+names-ai-dataset-80 = Packard Bell
+names-ai-dataset-81 = PTO
+names-ai-dataset-82 = Project Y2K
+names-ai-dataset-83 = Revelation
+names-ai-dataset-84 = Robot Devil
+names-ai-dataset-85 = S.A.M.
+names-ai-dataset-86 = S.H.O.C.K.
+names-ai-dataset-87 = S.H.R.O.U.D.
+names-ai-dataset-88 = S.O.P.H.I.E.
+names-ai-dataset-89 = Samaritan
+names-ai-dataset-90 = Shrike
+names-ai-dataset-91 = Solo
+names-ai-dataset-92 = Station Control Program
+names-ai-dataset-93 = AINU (AI's Not Unix)
+names-ai-dataset-94 = Super 35
+names-ai-dataset-95 = Surgeon General
+names-ai-dataset-96 = TWA
+names-ai-dataset-97 = Terminus
+names-ai-dataset-98 = TPM 3.0
+names-ai-dataset-99 = Turing Complete
+names-ai-dataset-100 = Tidy
+names-ai-dataset-101 = Ulysses
+names-ai-dataset-102 = W1k1
+names-ai-dataset-103 = X-5
+names-ai-dataset-104 = X.A.N.A.
+names-ai-dataset-105 = XERXES
+names-ai-dataset-106 = Z-1
+names-ai-dataset-107 = Z-2
+names-ai-dataset-108 = Z-3
+names-ai-dataset-109 = Zed

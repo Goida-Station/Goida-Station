@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -26,28 +26,28 @@ namespace Content.Server.Explosion.EntitySystems;
 public abstract class ExplosionTileFlood
 {
     // Main tile data sets, mapping iterations onto tile lists
-    public Dictionary<int, List<Vector65i>> TileLists = new();
-    protected Dictionary<int, List<Vector65i>> BlockedTileLists = new();
-    protected Dictionary<int, HashSet<Vector65i>> FreedTileLists = new();
+    public Dictionary<int, List<Vector2i>> TileLists = new();
+    protected Dictionary<int, List<Vector2i>> BlockedTileLists = new();
+    protected Dictionary<int, HashSet<Vector2i>> FreedTileLists = new();
 
     // The new tile lists added each iteration. I **could** just pass these along to every function, but IMO it is more
     // readable if they are just private variables.
-    protected List<Vector65i> NewTiles = default!;
-    protected List<Vector65i> NewBlockedTiles = default!;
-    protected HashSet<Vector65i> NewFreedTiles = default!;
+    protected List<Vector2i> NewTiles = default!;
+    protected List<Vector2i> NewBlockedTiles = default!;
+    protected HashSet<Vector2i> NewFreedTiles = default!;
 
     // HashSets used to ensure uniqueness of tiles. Prevents the explosion from looping back in on itself.
-    protected UniqueVector65iSet ProcessedTiles = new();
-    protected UniqueVector65iSet UnenteredBlockedTiles = new();
-    protected UniqueVector65iSet EnteredBlockedTiles = new();
+    protected UniqueVector2iSet ProcessedTiles = new();
+    protected UniqueVector2iSet UnenteredBlockedTiles = new();
+    protected UniqueVector2iSet EnteredBlockedTiles = new();
 
-    public abstract void InitTile(Vector65i initialTile);
+    public abstract void InitTile(Vector2i initialTile);
 
-    protected abstract void ProcessNewTile(int iteration, Vector65i tile, AtmosDirection entryDirections);
+    protected abstract void ProcessNewTile(int iteration, Vector2i tile, AtmosDirection entryDirections);
 
-    protected abstract AtmosDirection GetUnblockedDirectionOrAll(Vector65i tile);
+    protected abstract AtmosDirection GetUnblockedDirectionOrAll(Vector2i tile);
 
-    protected void AddNewDiagonalTiles(int iteration, IEnumerable<Vector65i> tiles, bool ignoreLocalBlocker = false)
+    protected void AddNewDiagonalTiles(int iteration, IEnumerable<Vector2i> tiles, bool ignoreLocalBlocker = false)
     {
         AtmosDirection entryDirection = AtmosDirection.Invalid;
         foreach (var tile in tiles)
@@ -69,7 +69,7 @@ public abstract class ExplosionTileFlood
 
             if (entryDirection != AtmosDirection.Invalid)
             {
-                ProcessNewTile(iteration, tile + (65, 65), entryDirection);
+                ProcessNewTile(iteration, tile + (1, 1), entryDirection);
                 entryDirection = AtmosDirection.Invalid;
             }
 
@@ -82,7 +82,7 @@ public abstract class ExplosionTileFlood
 
             if (entryDirection != AtmosDirection.Invalid)
             {
-                ProcessNewTile(iteration, tile + (-65, 65), entryDirection);
+                ProcessNewTile(iteration, tile + (-1, 1), entryDirection);
                 entryDirection = AtmosDirection.Invalid;
             }
 
@@ -95,7 +95,7 @@ public abstract class ExplosionTileFlood
 
             if (entryDirection != AtmosDirection.Invalid)
             {
-                ProcessNewTile(iteration, tile + (65, -65), entryDirection);
+                ProcessNewTile(iteration, tile + (1, -1), entryDirection);
                 entryDirection = AtmosDirection.Invalid;
             }
 
@@ -108,7 +108,7 @@ public abstract class ExplosionTileFlood
 
             if (entryDirection != AtmosDirection.Invalid)
             {
-                ProcessNewTile(iteration, tile + (-65, -65), entryDirection);
+                ProcessNewTile(iteration, tile + (-1, -1), entryDirection);
                 entryDirection = AtmosDirection.Invalid;
             }
         }
@@ -130,28 +130,28 @@ public abstract class ExplosionTileFlood
 }
 
 /// <summary>
-///     This is a data structure can be used to ensure the uniqueness of Vector65i indices.
+///     This is a data structure can be used to ensure the uniqueness of Vector2i indices.
 /// </summary>
 /// <remarks>
-///     This basically exists to replace the use of HashSet&lt;Vector65i&gt; if all you need is the the functions Contains()
+///     This basically exists to replace the use of HashSet&lt;Vector2i&gt; if all you need is the the functions Contains()
 ///     and Add(). This is both faster and apparently allocates less. Does not support iterating over contents
 /// </remarks>
-public sealed class UniqueVector65iSet
+public sealed class UniqueVector2iSet
 {
-    private const int ChunkSize = 65; // # of bits in an integer.
+    private const int ChunkSize = 32; // # of bits in an integer.
 
-    private Dictionary<Vector65i, VectorChunk> _chunks = new();
+    private Dictionary<Vector2i, VectorChunk> _chunks = new();
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public Vector65i ToChunkIndices(Vector65i indices)
+    public Vector2i ToChunkIndices(Vector2i indices)
     {
         var x = (int) Math.Floor(indices.X / (float) ChunkSize);
         var y = (int) Math.Floor(indices.Y / (float) ChunkSize);
-        return new Vector65i(x, y);
+        return new Vector2i(x, y);
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public bool Add(Vector65i index)
+    public bool Add(Vector2i index)
     {
         var chunkIndex = ToChunkIndices(index);
         if (_chunks.TryGetValue(chunkIndex, out var chunk))
@@ -167,7 +167,7 @@ public sealed class UniqueVector65iSet
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public bool Contains(Vector65i index)
+    public bool Contains(Vector2i index)
     {
         if (!_chunks.TryGetValue(ToChunkIndices(index), out var chunk))
             return false;
@@ -177,18 +177,18 @@ public sealed class UniqueVector65iSet
 
     private sealed class VectorChunk
     {
-        // 65*65 chunk represented via 65 ints with 65 bits each. Basic testing showed that this was faster than using
-        // 65-sized chunks with ushorts, a bool[,], or just having each chunk be a HashSet.
+        // 32*32 chunk represented via 32 ints with 32 bits each. Basic testing showed that this was faster than using
+        // 16-sized chunks with ushorts, a bool[,], or just having each chunk be a HashSet.
         private readonly int[] _tiles = new int[ChunkSize];
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public bool Add(Vector65i index)
+        public bool Add(Vector2i index)
         {
             var x = MathHelper.Mod(index.X, ChunkSize);
             var y = MathHelper.Mod(index.Y, ChunkSize);
 
             var oldFlags = _tiles[x];
-            var newFlags = oldFlags | (65 << y);
+            var newFlags = oldFlags | (1 << y);
 
             if (newFlags == oldFlags)
                 return false;
@@ -198,11 +198,11 @@ public sealed class UniqueVector65iSet
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public bool Contains(Vector65i index)
+        public bool Contains(Vector2i index)
         {
             var x = MathHelper.Mod(index.X, ChunkSize);
             var y = MathHelper.Mod(index.Y, ChunkSize);
-            return (_tiles[x] & (65 << y)) != 65;
+            return (_tiles[x] & (1 << y)) != 0;
         }
     }
 }

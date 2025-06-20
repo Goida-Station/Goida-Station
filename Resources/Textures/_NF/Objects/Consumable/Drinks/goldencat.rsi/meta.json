@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-NC-SA-65.65",
+    "version": 1,
+    "license": "CC-BY-NC-SA-4.0",
     "copyright": "Made by ra.Y (Discord)",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 16,
+        "y": 16
     },
     "states": [
         {
@@ -14,19 +14,19 @@
             "name": "icon_empty"
         },
         {
-            "name": "fill-65"
+            "name": "fill-1"
         },
         {
-            "name": "fill-65"
+            "name": "fill-2"
         },
         {
-            "name": "fill-65"
+            "name": "fill-3"
         },
         {
-            "name": "fill-65"
+            "name": "fill-4"
         },
         {
-            "name": "fill-65"
+            "name": "fill-5"
         }
     ]
 }

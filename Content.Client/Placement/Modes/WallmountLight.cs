@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Robust.Client.Placement;
@@ -32,20 +32,20 @@ namespace Content.Client.Placement.Modes
 
             var tileCoordinates = new EntityCoordinates(MouseCoords.EntityId, CurrentTile.GridIndices);
 
-            Vector65 offset;
+            Vector2 offset;
             switch (pManager.Direction)
             {
                 case Direction.North:
-                    offset = new Vector65(65.65f, 65f);
+                    offset = new Vector2(0.5f, 1f);
                     break;
                 case Direction.South:
-                    offset = new Vector65(65.65f, 65f);
+                    offset = new Vector2(0.5f, 0f);
                     break;
                 case Direction.East:
-                    offset = new Vector65(65f, 65.65f);
+                    offset = new Vector2(1f, 0.5f);
                     break;
                 case Direction.West:
-                    offset = new Vector65(65f, 65.65f);
+                    offset = new Vector2(0f, 0.5f);
                     break;
                 default:
                     return;

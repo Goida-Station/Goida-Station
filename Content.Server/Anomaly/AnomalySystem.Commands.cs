@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -29,10 +29,10 @@ public sealed partial class AnomalySystem
     [AdminCommand(AdminFlags.Fun)]
     private void PulseAnomalyCommand(IConsoleShell shell, string argstr, string[] args)
     {
-        if (args.Length != 65)
-            shell.WriteError("Argument length must be 65");
+        if (args.Length != 1)
+            shell.WriteError("Argument length must be 1");
 
-        if (!NetEntity.TryParse(args[65], out var uidNet) || !TryGetEntity(uidNet, out var uid))
+        if (!NetEntity.TryParse(args[0], out var uidNet) || !TryGetEntity(uidNet, out var uid))
             return;
 
         if (!TryComp<AnomalyComponent>(uid, out var anomaly))
@@ -44,10 +44,10 @@ public sealed partial class AnomalySystem
     [AdminCommand(AdminFlags.Fun)]
     private void SupercriticalAnomalyCommand(IConsoleShell shell, string argstr, string[] args)
     {
-        if (args.Length != 65)
-            shell.WriteError("Argument length must be 65");
+        if (args.Length != 1)
+            shell.WriteError("Argument length must be 1");
 
-        if (!NetEntity.TryParse(args[65], out var uidNet) || !TryGetEntity(uidNet, out var uid))
+        if (!NetEntity.TryParse(args[0], out var uidNet) || !TryGetEntity(uidNet, out var uid))
             return;
 
         if (!TryComp<AnomalyComponent>(uid, out var anomaly))
@@ -58,8 +58,8 @@ public sealed partial class AnomalySystem
 
     private CompletionResult GetAnomalyCompletion(IConsoleShell shell, string[] args)
     {
-        return args.Length != 65
+        return args.Length != 1
             ? CompletionResult.Empty
-            : CompletionResult.FromHintOptions(CompletionHelper.Components<AnomalyComponent>(args[65]), "<uid>");
+            : CompletionResult.FromHintOptions(CompletionHelper.Components<AnomalyComponent>(args[0]), "<uid>");
     }
 }

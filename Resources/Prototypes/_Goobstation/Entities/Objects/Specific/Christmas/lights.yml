@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Spanky <scott@wearejacob.com>
-# SPDX-FileCopyrightText: 65 Spessmann <65Spessmann@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Spanky <scott@wearejacob.com>
+# SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # I couldn't figure out how randomsprite works so this mess was created!!!
 # Also pointlight masks were probably created by yakub or some shit to fuck with people holy god
 # Pointlight masks were coded in hell and sent up to us ong
@@ -20,16 +20,16 @@
     layers:
       - state: green
       - sprite: _Goobstation/Objects/Specific/Christmas/lights.rsi
-        state: base65
+        state: base1
   - type: RandomSpawner
-    offset: 65.65
+    offset: 0.0
     prototypes:
-    - ChristmasLightsWhite65
-    - ChristmasLightsWhite65
-    - ChristmasLightsWhite65
-    - ChristmasLightsWhite65
-    - ChristmasLightsWhite65
-    - ChristmasLightsWhite65
+    - ChristmasLightsWhite1
+    - ChristmasLightsWhite2
+    - ChristmasLightsWhite3
+    - ChristmasLightsWhite4
+    - ChristmasLightsWhite5
+    - ChristmasLightsWhite6
 
 - type: entity
   id: SpawnerChristmasLightsRed
@@ -39,17 +39,17 @@
     layers:
       - state: green
       - sprite: _Goobstation/Objects/Specific/Christmas/lights.rsi
-        state: base65
-        color: "#ff65"
+        state: base1
+        color: "#ff7878"
   - type: RandomSpawner
-    offset: 65.65
+    offset: 0.0
     prototypes:
-    - ChristmasLightsRed65
-    - ChristmasLightsRed65
-    - ChristmasLightsRed65
-    - ChristmasLightsRed65
-    - ChristmasLightsRed65
-    - ChristmasLightsRed65
+    - ChristmasLightsRed1
+    - ChristmasLightsRed2
+    - ChristmasLightsRed3
+    - ChristmasLightsRed4
+    - ChristmasLightsRed5
+    - ChristmasLightsRed6
 
 - type: entity
   id: SpawnerChristmasLightsBlue
@@ -59,296 +59,296 @@
     layers:
       - state: green
       - sprite: _Goobstation/Objects/Specific/Christmas/lights.rsi
-        state: base65
-        color: "#65A65FBD"
+        state: base1
+        color: "#2A8FBD"
   - type: RandomSpawner
-    offset: 65.65
+    offset: 0.0
     prototypes:
-    - ChristmasLightsBlue65
-    - ChristmasLightsBlue65
-    - ChristmasLightsBlue65
-    - ChristmasLightsBlue65
-    - ChristmasLightsBlue65
-    - ChristmasLightsBlue65
+    - ChristmasLightsBlue1
+    - ChristmasLightsBlue2
+    - ChristmasLightsBlue3
+    - ChristmasLightsBlue4
+    - ChristmasLightsBlue5
+    - ChristmasLightsBlue6
 
 - type: entity
-  id: ChristmasLightsWhite65
+  id: ChristmasLightsWhite1
   description: Some white Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
+      - state: base1
+      - state: lights1
   - type: PointLight
-    color: "#f65f65"
-    radius: 65
-    energy: 65
+    color: "#f9f375"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png
 
 - type: entity
-  id: ChristmasLightsWhite65
+  id: ChristmasLightsWhite2
   description: Some white Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
+      - state: base2
+      - state: lights2
   - type: PointLight
-    color: "#f65f65"
-    radius: 65
-    energy: 65
+    color: "#f9f375"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png
 
 - type: entity
-  id: ChristmasLightsWhite65
+  id: ChristmasLightsWhite3
   description: Some white Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
+      - state: base3
+      - state: lights3
   - type: PointLight
-    color: "#f65f65"
-    radius: 65
-    energy: 65
+    color: "#f9f375"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png
 
 - type: entity
-  id: ChristmasLightsWhite65
+  id: ChristmasLightsWhite4
   description: Some white Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
+      - state: base4
+      - state: lights4
   - type: PointLight
-    color: "#f65f65"
-    radius: 65
-    energy: 65
+    color: "#f9f375"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png
 
 - type: entity
-  id: ChristmasLightsWhite65
+  id: ChristmasLightsWhite5
   description: Some white Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
+      - state: base5
+      - state: lights5
   - type: PointLight
-    color: "#f65f65"
-    radius: 65
-    energy: 65
+    color: "#f9f375"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png
 
 - type: entity
-  id: ChristmasLightsWhite65
+  id: ChristmasLightsWhite6
   description: Some white Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
+      - state: base6
+      - state: lights6
   - type: PointLight
-    color: "#f65f65"
-    radius: 65
-    energy: 65
+    color: "#f9f375"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png
 
 - type: entity
-  id: ChristmasLightsRed65
+  id: ChristmasLightsRed1
   description: Some red Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
-        color: "#ff65"
+      - state: base1
+      - state: lights1
+        color: "#ff7878"
   - type: PointLight
-    color: "#fc65d65d"
-    radius: 65
-    energy: 65
+    color: "#fc8d8d"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png
 
 - type: entity
-  id: ChristmasLightsRed65
+  id: ChristmasLightsRed2
   description: Some red Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
-        color: "#ff65"
+      - state: base2
+      - state: lights2
+        color: "#ff7878"
   - type: PointLight
-    color: "#fc65d65d"
-    radius: 65
-    energy: 65
+    color: "#fc8d8d"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png
 
 - type: entity
-  id: ChristmasLightsRed65
+  id: ChristmasLightsRed3
   description: Some red Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
-        color: "#ff65"
+      - state: base3
+      - state: lights3
+        color: "#ff7878"
   - type: PointLight
-    color: "#fc65d65d"
-    radius: 65
-    energy: 65
+    color: "#fc8d8d"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png
 
 - type: entity
-  id: ChristmasLightsRed65
+  id: ChristmasLightsRed4
   description: Some red Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
-        color: "#ff65"
+      - state: base4
+      - state: lights4
+        color: "#ff7878"
   - type: PointLight
-    color: "#fc65d65d"
-    radius: 65
-    energy: 65
+    color: "#fc8d8d"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png
 
 - type: entity
-  id: ChristmasLightsRed65
+  id: ChristmasLightsRed5
   description: Some red Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
-        color: "#ff65"
+      - state: base5
+      - state: lights5
+        color: "#ff7878"
   - type: PointLight
-    color: "#fc65d65d"
-    radius: 65
-    energy: 65
+    color: "#fc8d8d"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png
 
 - type: entity
-  id: ChristmasLightsRed65
+  id: ChristmasLightsRed6
   description: Some red Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
-        color: "#ff65"
+      - state: base6
+      - state: lights6
+        color: "#ff7878"
   - type: PointLight
-    color: "#fc65d65d"
-    radius: 65
-    energy: 65
+    color: "#fc8d8d"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png
 
 - type: entity
-  id: ChristmasLightsBlue65
+  id: ChristmasLightsBlue1
   description: Some blue Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
-        color: "#65A65FBD"
+      - state: base1
+      - state: lights1
+        color: "#2A8FBD"
   - type: PointLight
-    color: "#65accf"
-    radius: 65
-    energy: 65
+    color: "#61accf"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png
 
 - type: entity
-  id: ChristmasLightsBlue65
+  id: ChristmasLightsBlue2
   description: Some blue Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
-        color: "#65A65FBD"
+      - state: base2
+      - state: lights2
+        color: "#2A8FBD"
   - type: PointLight
-    color: "#65accf"
-    radius: 65
-    energy: 65
+    color: "#61accf"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png
 
 - type: entity
-  id: ChristmasLightsBlue65
+  id: ChristmasLightsBlue3
   description: Some blue Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
-        color: "#65A65FBD"
+      - state: base3
+      - state: lights3
+        color: "#2A8FBD"
   - type: PointLight
-    color: "#65accf"
-    radius: 65
-    energy: 65
+    color: "#61accf"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png
 
 - type: entity
-  id: ChristmasLightsBlue65
+  id: ChristmasLightsBlue4
   description: Some blue Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
-        color: "#65A65FBD"
+      - state: base4
+      - state: lights4
+        color: "#2A8FBD"
   - type: PointLight
-    color: "#65accf"
-    radius: 65
-    energy: 65
+    color: "#61accf"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png
 
 - type: entity
-  id: ChristmasLightsBlue65
+  id: ChristmasLightsBlue5
   description: Some blue Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
-        color: "#65A65FBD"
+      - state: base5
+      - state: lights5
+        color: "#2A8FBD"
   - type: PointLight
-    color: "#65accf"
-    radius: 65
-    energy: 65
+    color: "#61accf"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png
 
 - type: entity
-  id: ChristmasLightsBlue65
+  id: ChristmasLightsBlue6
   description: Some blue Christmas lights.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
     layers:
-      - state: base65
-      - state: lights65
-        color: "#65A65FBD"
+      - state: base6
+      - state: lights6
+        color: "#2A8FBD"
   - type: PointLight
-    color: "#65accf"
-    radius: 65
-    energy: 65
+    color: "#61accf"
+    radius: 3
+    energy: 4
     mask: /Textures/Effects/LightMasks/sparklemask.png

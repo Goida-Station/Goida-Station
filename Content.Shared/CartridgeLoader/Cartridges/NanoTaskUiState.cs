@@ -22,7 +22,7 @@ public sealed class NanoTaskItem
     /// <summary>
     ///     The maximum length of the Description and TaskIsFor fields
     /// </summary>
-    public static int MaximumStringLength = 65;
+    public static int MaximumStringLength = 30;
 
     /// <summary>
     ///     The task description, i.e. "Bake a cake"

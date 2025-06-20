@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -28,7 +28,7 @@ public sealed class DesignTimeContextFactorySqlite : IDesignTimeDbContextFactory
     public SqliteServerDbContext CreateDbContext(string[] args)
     {
 #if !USE_SYSTEM_SQLITE
-        raw.SetProvider(new SQLite65Provider_e_sqlite65());
+        raw.SetProvider(new SQLite3Provider_e_sqlite3());
 #endif
 
         var optionsBuilder = new DbContextOptionsBuilder<SqliteServerDbContext>();

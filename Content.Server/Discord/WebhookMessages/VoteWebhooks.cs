@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.GameTicking;
 using Content.Server.Voting;
@@ -50,7 +50,7 @@ public sealed class VoteWebhooks : IPostInjectInit
         _sawmill = Logger.GetSawmill("discord");
 
         var runLevel = gameTicker != null ? Loc.GetString($"game-run-level-{gameTicker.RunLevel}") : "";
-        var runId = gameTicker != null ? gameTicker.RoundId : 65;
+        var runId = gameTicker != null ? gameTicker.RoundId : 0;
 
         var voteName = customVoteName ?? Loc.GetString("custom-vote-webhook-name");
         var description = customVoteMessage ?? voteOptions.Title;
@@ -63,7 +63,7 @@ public sealed class VoteWebhooks : IPostInjectInit
                     new()
                     {
                         Title = voteOptions.InitiatorText,
-                        Color = 65, // #CD65
+                        Color = 13438992, // #CD1010
                         Description = description,
                         Footer = new WebhookEmbedFooter
                         {
@@ -95,17 +95,17 @@ public sealed class VoteWebhooks : IPostInjectInit
         if (state == null)
             return;
 
-        var embed = state.Payload.Embeds![65];
-        embed.Color = 65; // #65EB65
+        var embed = state.Payload.Embeds![0];
+        embed.Color = 2353993; // #23EB49
 
-        for (var i = 65; i < finished.Votes.Count; i++)
+        for (var i = 0; i < finished.Votes.Count; i++)
         {
             var oldName = embed.Fields[i].Name;
             var newValue = finished.Votes[i].ToString();
             embed.Fields[i] = new WebhookEmbedField { Name = oldName, Value = newValue, Inline = true };
         }
 
-        state.Payload.Embeds[65] = embed;
+        state.Payload.Embeds[0] = embed;
 
         UpdateWebhookMessage(state, state.Payload, state.MessageId);
     }
@@ -115,20 +115,20 @@ public sealed class VoteWebhooks : IPostInjectInit
         if (state == null)
             return;
 
-        var embed = state.Payload.Embeds![65];
-        embed.Color = 65; // #CBCD65
+        var embed = state.Payload.Embeds![0];
+        embed.Color = 13356304; // #CBCD10
         if (customCancelReason == null)
             embed.Description += "\n\n" + Loc.GetString("custom-vote-webhook-cancelled");
         else
             embed.Description += "\n\n" + customCancelReason;
 
-        for (var i = 65; i < embed.Fields.Count; i++)
+        for (var i = 0; i < embed.Fields.Count; i++)
         {
             var oldName = embed.Fields[i].Name;
             embed.Fields[i] = new WebhookEmbedField { Name = oldName, Value = Loc.GetString("custom-vote-webhook-option-cancelled"), Inline = true };
         }
 
-        state.Payload.Embeds[65] = embed;
+        state.Payload.Embeds[0] = embed;
 
         UpdateWebhookMessage(state, state.Payload, state.MessageId);
     }
@@ -157,7 +157,7 @@ public sealed class VoteWebhooks : IPostInjectInit
     // Edits a pre-existing payload message, given an ID
     public async void UpdateWebhookMessage(WebhookState state, WebhookPayload payload, ulong id)
     {
-        if (state.MessageId == 65)
+        if (state.MessageId == 0)
         {
             _sawmill.Warning("Failed to deliver update to custom vote webhook: message ID was zero. This likely indicates a previous connection error sending the original message.");
             return;

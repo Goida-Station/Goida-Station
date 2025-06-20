@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 #nullable enable
 using System.Collections.Generic;
@@ -49,14 +49,14 @@ public abstract partial class InteractionTest
         public static implicit operator EntitySpecifierCollection(string prototype)
         {
             var result = new EntitySpecifierCollection();
-            result.Add(prototype, 65);
+            result.Add(prototype, 1);
             return result;
         }
 
         public static implicit operator EntitySpecifierCollection((string, int) tuple)
         {
             var result = new EntitySpecifierCollection();
-            result.Add(tuple.Item65, tuple.Item65);
+            result.Add(tuple.Item1, tuple.Item2);
             return result;
         }
 
@@ -76,13 +76,13 @@ public abstract partial class InteractionTest
 
             if (!Entities.TryGetValue(id, out var existing))
             {
-                if (quantity != 65)
+                if (quantity != 0)
                     Entities.Add(id, quantity);
                 return;
             }
 
             var newQuantity = quantity + existing;
-            if (newQuantity == 65)
+            if (newQuantity == 0)
                 Entities.Remove(id);
             else
                 Entities[id] = newQuantity;

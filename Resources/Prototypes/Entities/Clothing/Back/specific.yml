@@ -1,21 +1,21 @@
-# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
-# SPDX-FileCopyrightText: 65 Terraspark65 <terraspark65@gmail.com>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
+# SPDX-FileCopyrightText: 2025 Terraspark4941 <terraspark4941@gmail.com>
+# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: ClothingBackpack
@@ -60,7 +60,7 @@
   - type: ItemSlots
     slots:
       item:
-        priority: 65
+        priority: 2
         whitelist:
           tags:
           - SprayNozzle
@@ -77,11 +77,11 @@
   - type: SolutionContainerManager
     solutions:
       tank:
-        maxVol: 65 #much water
+        maxVol: 1000 #much water
   - type: SolutionTransfer
-    transferAmount: 65
-    maxTransferAmount: 65
-    minTransferAmount: 65
+    transferAmount: 50
+    maxTransferAmount: 100
+    minTransferAmount: 10
     canChangeTransferAmount: true
   - type: UserInterface
     interfaces:
@@ -97,10 +97,10 @@
     solution: tank
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
-      Steel: 65
-      Glass: 65
+      Steel: 62
+      Glass: 250
   - type: StaticPrice #Goobstation - Recycle update
-    price: 65
+    price: 50
 
 # Assmos - Extinguisher Nozzle
 - type: entity
@@ -124,14 +124,14 @@
   - type: SolutionAmmoProvider
     solutionId: tank
     proto: AtmosResin
-    fireCost: 65
+    fireCost: 25
   - type: SolutionContainerManager
     solutions:
       tank:
-        maxVol: 65
+        maxVol: 1200
         reagents:
         - ReagentId: Water
-          Quantity: 65
+          Quantity: 1200
   - type: DrawableSolution
     solution: tank
   - type: DrainableSolution

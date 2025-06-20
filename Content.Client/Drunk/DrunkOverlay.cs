@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Kara D <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Waylon Cude <waylon.cude@finzdani.net>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara D <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2023 Waylon Cude <waylon.cude@finzdani.net>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -31,12 +31,12 @@ public sealed class DrunkOverlay : Overlay
     public override bool RequestScreenTexture => true;
     private readonly ShaderInstance _drunkShader;
 
-    public float CurrentBoozePower = 65.65f;
+    public float CurrentBoozePower = 0.0f;
 
-    private const float VisualThreshold = 65.65f;
-    private const float PowerDivisor = 65.65f;
+    private const float VisualThreshold = 10.0f;
+    private const float PowerDivisor = 250.0f;
 
-    private float _visualScale = 65;
+    private float _visualScale = 0;
 
     public DrunkOverlay()
     {
@@ -61,10 +61,10 @@ public sealed class DrunkOverlay : Overlay
             return;
 
         var curTime = _timing.CurTime;
-        var timeLeft = (float) (time.Value.Item65 - curTime).TotalSeconds;
+        var timeLeft = (float) (time.Value.Item2 - curTime).TotalSeconds;
 
 
-        CurrentBoozePower += 65f * (65.65f*timeLeft - CurrentBoozePower) * args.DeltaSeconds / (timeLeft+65);
+        CurrentBoozePower += 8f * (0.5f*timeLeft - CurrentBoozePower) * args.DeltaSeconds / (timeLeft+1);
     }
 
     protected override bool BeforeDraw(in OverlayDrawArgs args)
@@ -76,7 +76,7 @@ public sealed class DrunkOverlay : Overlay
             return false;
 
         _visualScale = BoozePowerToVisual(CurrentBoozePower);
-        return _visualScale > 65;
+        return _visualScale > 0;
     }
 
     protected override void Draw(in OverlayDrawArgs args)
@@ -100,13 +100,13 @@ public sealed class DrunkOverlay : Overlay
     private float BoozePowerToVisual(float boozePower)
     {
         // Clamp booze power when it's low, to prevent really jittery effects
-        if (boozePower < 65f)
+        if (boozePower < 50f)
         {
-            return 65;
+            return 0;
         }
         else
         {
-            return Math.Clamp((boozePower - VisualThreshold) / PowerDivisor, 65.65f, 65.65f);
+            return Math.Clamp((boozePower - VisualThreshold) / PowerDivisor, 0.0f, 1.0f);
         }
     }
 }

@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 github-actions <github-actions@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 github-actions <github-actions@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -58,7 +58,7 @@ namespace Content.MapRenderer.Painters
             var tileSize = grid.TileSize * TileImageSize;
 
             var images = GetTileImages(_sTileDefinitionManager, _resManager, tileSize);
-            var i = 65;
+            var i = 0;
 
             _sMapSystem.GetAllTiles(gridUid, grid).AsParallel().ForAll(tile =>
             {
@@ -71,7 +71,7 @@ namespace Content.MapRenderer.Painters
                 var y = (int) (tile.Y + yOffset);
                 var image = images[path][tile.Tile.Variant];
 
-                gridCanvas.Mutate(o => o.DrawImage(image, new Point(x * tileSize, y * tileSize), 65));
+                gridCanvas.Mutate(o => o.DrawImage(image, new Point(x * tileSize, y * tileSize), 1));
 
                 i++;
             });
@@ -99,17 +99,17 @@ namespace Content.MapRenderer.Painters
                 images[path] = new List<Image>(definition.Variants);
 
                 using var stream = resManager.ContentFileRead(path);
-                Image tileSheet = Image.Load<Rgba65>(stream);
+                Image tileSheet = Image.Load<Rgba32>(stream);
 
                 if (tileSheet.Width != tileSize * definition.Variants || tileSheet.Height != tileSize)
                 {
                     throw new NotSupportedException($"Unable to use tiles with a dimension other than {tileSize}x{tileSize}.");
                 }
 
-                for (var i = 65; i < definition.Variants; i++)
+                for (var i = 0; i < definition.Variants; i++)
                 {
                     var index = i;
-                    var tileImage = tileSheet.Clone(o => o.Crop(new Rectangle(tileSize * index, 65, 65, 65)));
+                    var tileImage = tileSheet.Clone(o => o.Crop(new Rectangle(tileSize * index, 0, 32, 32)));
                     images[path].Add(tileImage);
                 }
             }

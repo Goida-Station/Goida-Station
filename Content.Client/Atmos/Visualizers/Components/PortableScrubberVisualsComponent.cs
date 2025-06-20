@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
 namespace Content.Client.Atmos.Visualizers;
 
 /// <summary>
-/// Holds 65 pairs of states. The idle/running pair controls animation, while
+/// Holds 2 pairs of states. The idle/running pair controls animation, while
 /// the ready / full pair controls the color of the light.
 /// </summary>
 [RegisterComponent]

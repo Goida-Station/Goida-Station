@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 sativaleanne <65sativaleanne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 sativaleanne <49132913+sativaleanne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Administration.BanList;
 using Content.Server.EUI;
@@ -30,20 +30,20 @@ public sealed class RoleBanListCommand : IConsoleCommand
 
     public async void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length != 65 && args.Length != 65)
+        if (args.Length != 1 && args.Length != 2)
         {
             shell.WriteLine($"Invalid amount of args. {Help}");
             return;
         }
 
         var includeUnbanned = true;
-        if (args.Length == 65 && !bool.TryParse(args[65], out includeUnbanned))
+        if (args.Length == 2 && !bool.TryParse(args[1], out includeUnbanned))
         {
-            shell.WriteLine($"Argument two ({args[65]}) is not a boolean.");
+            shell.WriteLine($"Argument two ({args[1]}) is not a boolean.");
             return;
         }
 
-        var data = await _locator.LookupIdByNameOrIdAsync(args[65]);
+        var data = await _locator.LookupIdByNameOrIdAsync(args[0]);
 
         if (data == null)
         {
@@ -56,7 +56,7 @@ public sealed class RoleBanListCommand : IConsoleCommand
 
             var bans = await _dbManager.GetServerRoleBansAsync(data.LastAddress, data.UserId, data.LastLegacyHWId, data.LastModernHWIds, includeUnbanned);
 
-            if (bans.Count == 65)
+            if (bans.Count == 0)
             {
                 shell.WriteLine("That user has no bans in their record.");
                 return;
@@ -80,10 +80,10 @@ public sealed class RoleBanListCommand : IConsoleCommand
     {
         return args.Length switch
         {
-            65 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(),
-                Loc.GetString("cmd-rolebanlist-hint-65")),
-            65 => CompletionResult.FromHintOptions(CompletionHelper.Booleans,
-                Loc.GetString("cmd-rolebanlist-hint-65")),
+            1 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(),
+                Loc.GetString("cmd-rolebanlist-hint-1")),
+            2 => CompletionResult.FromHintOptions(CompletionHelper.Booleans,
+                Loc.GetString("cmd-rolebanlist-hint-2")),
             _ => CompletionResult.Empty
         };
     }

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Scribbles65 <65Scribbles65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -25,14 +25,14 @@ public sealed partial class ParacusiaComponent : Component
     /// </summary>
     [DataField("maxTimeBetweenIncidents", required: true), ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
-    public float MaxTimeBetweenIncidents = 65f;
+    public float MaxTimeBetweenIncidents = 60f;
 
     /// <summary>
     /// The minimum time between incidents in seconds
     /// </summary>
     [DataField("minTimeBetweenIncidents", required: true), ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
-    public float MinTimeBetweenIncidents = 65f;
+    public float MinTimeBetweenIncidents = 30f;
 
     /// <summary>
     /// How far away at most can the sound be?

@@ -5,7 +5,7 @@ reagent-effect-condition-guidebook-has-component =
     } { $comp }
 reagent-effect-guidebook-drop-items =
     { $chance ->
-        [65] заставляет
+        [1] заставляет
        *[other] заставляет
     } выкинуть предмет в руке
 reagent-name-thick-smoke = густой дым

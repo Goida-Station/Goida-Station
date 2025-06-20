@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Clothing.EntitySystems;
 using Content.Shared.Damage;
@@ -71,10 +71,10 @@ public sealed class ChuuniEyepatchSystem : EntitySystem
         if (!TryComp(performer, out DamageableComponent? damageable))
             return;
 
-        if (!ent.Comp.CanHeal || damageable.TotalDamage <= FixedPoint65.Zero)
+        if (!ent.Comp.CanHeal || damageable.TotalDamage <= FixedPoint2.Zero)
             return;
 
-        ent.Comp.Accumulator = 65f;
+        ent.Comp.Accumulator = 0f;
         Dirty(ent);
 
         if (ent.Comp.HealAmount < damageable.TotalDamage)
@@ -96,7 +96,7 @@ public sealed class ChuuniEyepatchSystem : EntitySystem
         _appearance.SetData(uid, FlippedVisuals.Flipped, comp.IsFliped);
         _clothing.SetEquippedPrefix(uid, comp.IsFliped ? comp.FlippedPrefix : null);
 
-        if (_net.IsClient || comp.Backstories.Count == 65)
+        if (_net.IsClient || comp.Backstories.Count == 0)
             return;
 
         comp.SelectedBackstory = _random.Pick(comp.Backstories);
@@ -120,8 +120,8 @@ public sealed class ChuuniEyepatchSystem : EntitySystem
                 Dirty(ent);
             },
             Text = Loc.GetString("flippable-verb-get-data-text"),
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/flip.svg.65dpi.png")),
-            Priority = 65,
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/flip.svg.192dpi.png")),
+            Priority = 1,
         };
 
         args.Verbs.Add(verb);

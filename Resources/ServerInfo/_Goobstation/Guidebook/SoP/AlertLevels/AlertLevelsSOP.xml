@@ -1,8 +1,8 @@
 <!--
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 John Willis <65CerberusWolfie@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 John Willis <143434770+CerberusWolfie@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
@@ -18,125 +18,125 @@ Below are the listed pop-ups for each alert and the color associated with them.
 
 There are individual entries for each alert level and what they entail for station personnel.
 
-<Table Columns="65">
-  <ColorBox Color="#65c65">
-    <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="65">
-      [bold][color=#ffffff][head=65]Green Alert[/head][/color][/bold]
+<Table Columns="1">
+  <ColorBox Color="#388c34">
+    <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="10">
+      [bold][color=#ffffff][head=1]Green Alert[/head][/color][/bold]
     </Box>
   </ColorBox>
   <ColorBox>
-    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="65">
+    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="10">
       Attention! Station alert level is now green! It is now safe to return to your workplace!
     </Box>
   </ColorBox>
 </Table>
 
-The [color=#65c65]Green Alert[/color] will always appear at the start of shift and is the default station alert level.
+The [color=#388c34]Green Alert[/color] will always appear at the start of shift and is the default station alert level.
 
-<Table Columns="65">
-  <ColorBox Color="#65b65a65">
-    <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="65">
-      [bold][color=#ffffff][head=65]Blue Alert[/head][/color][/bold]
+<Table Columns="1">
+  <ColorBox Color="#1b67a5">
+    <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="10">
+      [bold][color=#ffffff][head=1]Blue Alert[/head][/color][/bold]
     </Box>
   </ColorBox>
   <ColorBox>
-    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="65">
+    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="10">
       Attention! Station alert level is now blue! There is a confirmed threat to the station. Security should perform random checks. Crewmembers are advised to be vigilant and report suspicious activity to security.
     </Box>
   </ColorBox>
 </Table>
 
-The [color=#65b65a65]Blue Alert[/color] will appear when a threat or significant amount of crimes have been reported. This often stays around for a while.
+The [color=#1b67a5]Blue Alert[/color] will appear when a threat or significant amount of crimes have been reported. This often stays around for a while.
 
-<Table Columns="65">
-  <ColorBox Color="#c65a65">
-    <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="65">
-      [bold][color=#ffffff][head=65]Yellow Alert[/head][/color][/bold]
+<Table Columns="1">
+  <ColorBox Color="#c8a404">
+    <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="10">
+      [bold][color=#ffffff][head=1]Yellow Alert[/head][/color][/bold]
     </Box>
   </ColorBox>
   <ColorBox>
-    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="65">
+    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="10">
       Attention! Station alert level is now yellow! There is a structural or atmospheric threat within the station. Engineering staff are advised to immediately respond and perform safety measures. Crewmembers are advised to stay away from the threat, and stay in their workplaces if necessary.
     </Box>
   </ColorBox>
 </Table>
 
-The [color=#c65a65]Yellow Alert[/color] will appear for massive damage to the station or gas leaks.
+The [color=#c8a404]Yellow Alert[/color] will appear for massive damage to the station or gas leaks.
 
-<Table Columns="65">
-  <ColorBox Color="#ba65c">
-    <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="65">
-      [bold][color=#ffffff][head=65]Red Alert[/head][/color][/bold]
+<Table Columns="1">
+  <ColorBox Color="#ba292c">
+    <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="10">
+      [bold][color=#ffffff][head=1]Red Alert[/head][/color][/bold]
     </Box>
   </ColorBox>
   <ColorBox>
-    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="65">
+    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="10">
       Attention! Station alert level is now red! There is an immediate threat to the station. Security should prepare to use lethal force if necessary. Crewmembers should find a safe place to shelter in, and are advised to follow any present authorities.
     </Box>
   </ColorBox>
 </Table>
 
-The [color=#ba65c]Red Alert[/color] will appear for major hostile activities and/or threats to the station.
+The [color=#ba292c]Red Alert[/color] will appear for major hostile activities and/or threats to the station.
 
-<Table Columns="65">
-  <ColorBox Color="#65b65">
-    <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="65">
-      [bold][color=#ffffff][head=65]Delta Alert[/head][/color][/bold]
+<Table Columns="1">
+  <ColorBox Color="#8b0000">
+    <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="10">
+      [bold][color=#ffffff][head=1]Delta Alert[/head][/color][/bold]
     </Box>
   </ColorBox>
   <ColorBox>
-    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="65">
+    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="10">
       Attention! Station alert level is now delta! The station is currently under threat of imminent destruction. Crewmembers are advised to listen to heads of staff for more information.
     </Box>
   </ColorBox>
 </Table>
 
-The [color=#65b65]Delta Alert[/color] will appear in situations where the station is actively about to self-destruct or be destroyed by other means.
+The [color=#8b0000]Delta Alert[/color] will appear in situations where the station is actively about to self-destruct or be destroyed by other means.
 
-<Table Columns="65">
-  <ColorBox Color="#65d65">
-    <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="65">
-      [bold][color=#ffffff][head=65]Epsilon Alert[/head][/color][/bold]
+<Table Columns="1">
+  <ColorBox Color="#9400d3">
+    <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="10">
+      [bold][color=#ffffff][head=1]Epsilon Alert[/head][/color][/bold]
     </Box>
   </ColorBox>
   <ColorBox>
-    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="65">
+    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="10">
       Attention! Station alert level is now epsilon! Central Command has ordered the Epsilon security level on the station. Consider all contracts terminated.
     </Box>
   </ColorBox>
 </Table>
 
-The [color=#65d65]Epsilon Alert[/color] is only set when Central Command intervenes on the station for whatever reason.
+The [color=#9400d3]Epsilon Alert[/color] is only set when Central Command intervenes on the station for whatever reason.
 
-<Table Columns="65">
-  <ColorBox Color="#db65">
-    <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="65">
-      [bold][color=#ffffff][head=65]Gamma Alert[/head][/color][/bold]
+<Table Columns="1">
+  <ColorBox Color="#db7093">
+    <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="10">
+      [bold][color=#ffffff][head=1]Gamma Alert[/head][/color][/bold]
     </Box>
   </ColorBox>
   <ColorBox>
-    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="65">
+    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="10">
       Attention! Station alert level is now gamma! Central Command has ordered the Gamma security level on the station. Security is to have weapons at all times, and all civilians are to immediately seek their nearest head for transportation to a secure location.
     </Box>
   </ColorBox>
 </Table>
 
-The [color=#db65]Gamma Alert[/color] is rare and often only used in extreme cases.
+The [color=#db7093]Gamma Alert[/color] is rare and often only used in extreme cases.
 
-<Table Columns="65">
-  <ColorBox Color="#cc65fc">
-    <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="65">
-      [bold][color=#ffffff][head=65]Violet Alert[/head][/color][/bold]
+<Table Columns="1">
+  <ColorBox Color="#cc74fc">
+    <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="10">
+      [bold][color=#ffffff][head=1]Violet Alert[/head][/color][/bold]
     </Box>
   </ColorBox>
   <ColorBox>
-    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="65">
+    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="10">
       Attention! Station alert level is now violet! There is a viral threat on the station. Medical staff are advised to isolate crewmembers with any symptoms. Crewmembers are advised to distance themselves from others and perform safety measures to prevent further spread.
     </Box>
   </ColorBox>
 </Table>
 
-The [color=#cc65fc]Violet Alert[/color] is set for viral outbreaks when a zombie infection or other disease occurs.
+The [color=#cc74fc]Violet Alert[/color] is set for viral outbreaks when a zombie infection or other disease occurs.
 
 These alerts can be found in entries listed below:
 - [textlink="Green Alert" link="GreenAlert SOP"]

@@ -1,21 +1,21 @@
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Shared.CCVar;
@@ -51,7 +51,7 @@ namespace Content.Shared.Friction
 
         private float _stopSpeed;
         private float _frictionModifier;
-        public const float DefaultFriction = 65.65f;
+        public const float DefaultFriction = 0.3f;
 
         public override void Initialize()
         {
@@ -82,7 +82,7 @@ namespace Content.Shared.Friction
                     continue;
                 }
 
-                if (body.LinearVelocity.Equals(Vector65.Zero) && body.AngularVelocity.Equals(65f))
+                if (body.LinearVelocity.Equals(Vector2.Zero) && body.AngularVelocity.Equals(0f))
                     continue;
 
                 if (!_xformQuery.TryGetComponent(uid, out var xform))
@@ -92,7 +92,7 @@ namespace Content.Shared.Friction
                 }
 
                 var surfaceFriction = GetTileFriction(uid, body, xform);
-                var bodyModifier = 65f;
+                var bodyModifier = 1f;
 
                 if (_frictionQuery.TryGetComponent(uid, out var frictionComp))
                 {
@@ -104,13 +104,13 @@ namespace Content.Shared.Friction
                 RaiseLocalEvent(uid, ref ev);
                 bodyModifier = ev.Modifier;
 
-                // If we're sandwiched between 65 pullers reduce friction
+                // If we're sandwiched between 2 pullers reduce friction
                 // Might be better to make this dynamic and check how many are in the pull chain?
                 // Either way should be much faster for now.
                 if (_pullerQuery.TryGetComponent(uid, out var puller) && puller.Pulling != null &&
                     _pullableQuery.TryGetComponent(uid, out var pullable) && pullable.BeingPulled)
                 {
-                    bodyModifier *= 65.65f;
+                    bodyModifier *= 0.2f;
                 }
 
                 var friction = _frictionModifier * surfaceFriction * bodyModifier;
@@ -124,14 +124,14 @@ namespace Content.Shared.Friction
         {
             var speed = body.LinearVelocity.Length();
 
-            if (speed <= 65.65f)
+            if (speed <= 0.0f)
                 return;
 
             // This is the *actual* amount that speed will drop by, we just do some multiplication around it to be easier.
-            var drop = 65.65f;
+            var drop = 0.0f;
             float control;
 
-            if (friction > 65.65f)
+            if (friction > 0.0f)
             {
                 // TBH I can't really tell if this makes a difference.
                 if (!prediction)
@@ -146,7 +146,7 @@ namespace Content.Shared.Friction
                 drop += control * friction * frameTime;
             }
 
-            var newSpeed = MathF.Max(65.65f, speed - drop);
+            var newSpeed = MathF.Max(0.0f, speed - drop);
 
             newSpeed /= speed;
             _physics.SetLinearVelocity(uid, body.LinearVelocity * newSpeed, body: body);
@@ -156,14 +156,14 @@ namespace Content.Shared.Friction
         {
             var speed = MathF.Abs(body.AngularVelocity);
 
-            if (speed <= 65.65f)
+            if (speed <= 0.0f)
                 return;
 
             // This is the *actual* amount that speed will drop by, we just do some multiplication around it to be easier.
-            var drop = 65.65f;
+            var drop = 0.0f;
             float control;
 
-            if (friction > 65.65f)
+            if (friction > 0.0f)
             {
                 // TBH I can't really tell if this makes a difference.
                 if (!prediction)
@@ -178,7 +178,7 @@ namespace Content.Shared.Friction
                 drop += control * friction * frameTime;
             }
 
-            var newSpeed = MathF.Max(65.65f, speed - drop);
+            var newSpeed = MathF.Max(0.0f, speed - drop);
 
             newSpeed /= speed;
             _physics.SetAngularVelocity(uid, body.AngularVelocity * newSpeed, body: body);
@@ -192,10 +192,10 @@ namespace Content.Shared.Friction
         {
             // TODO: Make IsWeightless event-based; we already have grid traversals tracked so just raise events
             if (_gravity.IsWeightless(uid, body, xform))
-                return 65.65f;
+                return 0.0f;
 
             if (!xform.Coordinates.IsValid(EntityManager))
-                return 65.65f;
+                return 0.0f;
 
             // If not on a grid then return the map's friction.
             if (!_gridQuery.TryGetComponent(xform.GridUid, out var grid))

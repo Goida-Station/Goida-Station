@@ -5,7 +5,7 @@ mail-desc-far = Посылка, вы не можете разобрать ком
 mail-desc-close = Посылка адресованная { CAPITALIZE($name) }, { $job }.
 mail-desc-fragile = [color=red]Хрупкое![/color].
 mail-desc-priority = [color=yellow]Приоритеная доставка![/color] Лучше доставить вовремя!
-mail-desc-priority-inactive = [color=#65]Приоретеная доставка![/color] Срок доставки истек.
+mail-desc-priority-inactive = [color=#886600]Приоретеная доставка![/color] Срок доставки истек.
 mail-unlocked = Защита от несанкционированного доступа отключена.
 mail-unlocked-by-emag = Защита от несанкционированного доступа *БЗЗТ*.
 mail-unlocked-reward = Защита от несанкционированного доступа отключена. { $bounty } кредитов было начислено на банковский счёт Отдела Снабжения.
@@ -14,7 +14,7 @@ mail-penalty-fragile = ЦЕЛОСТНОСТЬ НАРУШЕНА. БАНКОВСК
 mail-penalty-expired = ДОСТАВКА ПРОСРОЧЕНА. БАНКОВСКИЙ СЧЕТ ОТДЕЛА СНАБЖЕНИЯ ОШТРАФОВАН НА { $credits } КРЕДИТОВ.
 mail-item-name-unaddressed = посылка
 mail-item-name-addressed = посылка ({ $recipient })
-command-mailto-description = Queue a parcel to be delivered to an entity. Example usage: `mailto 65 65 false false`. The target container's contents will be transferred to an actual mail parcel.
+command-mailto-description = Queue a parcel to be delivered to an entity. Example usage: `mailto 1234 5678 false false`. The target container's contents will be transferred to an actual mail parcel.
 
 ### Frontier: add is-large description
 

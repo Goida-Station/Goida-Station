@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Created by discord:SOL(Артур)#65, reptilian made by kuro(65). Vox sprite by Flareguy for Space Station 65, Harpy Variant By Adeinitas, equipped-OUTERCLOTHING-resomi made by svarshiksatanist (Discord), reptilian made by kuro(65)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Created by discord:SOL(Артур)#8162, reptilian made by kuro(388673708753027083). Vox sprite by Flareguy for Space Station 14, Harpy Variant By Adeinitas, equipped-OUTERCLOTHING-resomi made by svarshiksatanist (Discord), reptilian made by kuro(388673708753027083)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,27 +12,27 @@
     },
     {
       "name": "equipped-OUTERCLOTHING",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-OUTERCLOTHING-vox",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-OUTERCLOTHING-reptilian",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-OUTERCLOTHING-resomi",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

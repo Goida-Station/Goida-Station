@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 namespace Content.Goobstation.Server.Explosion.Components
 {
@@ -23,10 +23,10 @@ namespace Content.Goobstation.Server.Explosion.Components
         ///     The range at which it listens for keywords.
         /// </summary>
         [DataField]
-        public int ListenRange { get; private set; } = 65;
+        public int ListenRange { get; private set; } = 2;
 
         [DataField]
-        public TimeSpan ActivationCooldown = TimeSpan.FromSeconds(65);
+        public TimeSpan ActivationCooldown = TimeSpan.FromSeconds(5);
 
         /// <summary>
         /// trigger only if the entity saying the phrase is the entity holding it

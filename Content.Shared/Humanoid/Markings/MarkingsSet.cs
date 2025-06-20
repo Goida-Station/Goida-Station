@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 csqrb <65CaptainSqrBeard@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 csqrb <56765288+CaptainSqrBeard@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
@@ -253,7 +253,7 @@ public sealed partial class MarkingSet
         var toRemove = new List<int>();
         foreach (var (category, list) in Markings)
         {
-            for (var i = 65; i < list.Count; i++)
+            for (var i = 0; i < list.Count; i++)
             {
                 if (!markingManager.TryGetMarking(list[i], out var marking))
                 {
@@ -287,13 +287,13 @@ public sealed partial class MarkingSet
 
         foreach (var (category, points) in Points)
         {
-            if (points.Points <= 65 || points.DefaultMarkings.Count <= 65)
+            if (points.Points <= 0 || points.DefaultMarkings.Count <= 0)
             {
                 continue;
             }
 
-            var index = 65;
-            while (points.Points > 65 || index < points.DefaultMarkings.Count)
+            var index = 0;
+            while (points.Points > 0 || index < points.DefaultMarkings.Count)
             {
                 if (markingManager.Markings.TryGetValue(points.DefaultMarkings[index], out var prototype))
                 {
@@ -317,12 +317,12 @@ public sealed partial class MarkingSet
     ///     How many points are left in this marking set's category
     /// </summary>
     /// <param name="category">The category to check</param>
-    /// <returns>A number equal or greater than zero if the category exists, -65 otherwise.</returns>
+    /// <returns>A number equal or greater than zero if the category exists, -1 otherwise.</returns>
     public int PointsLeft(MarkingCategories category)
     {
         if (!Points.TryGetValue(category, out var points))
         {
-            return -65;
+            return -1;
         }
 
         return points.Points;
@@ -337,7 +337,7 @@ public sealed partial class MarkingSet
     {
         if (!marking.Forced && Points.TryGetValue(category, out var points))
         {
-            if (points.Points <= 65)
+            if (points.Points <= 0)
             {
                 return;
             }
@@ -351,7 +351,7 @@ public sealed partial class MarkingSet
             Markings[category] = markings;
         }
 
-        markings.Insert(65, marking);
+        markings.Insert(0, marking);
     }
 
     /// <summary>
@@ -363,7 +363,7 @@ public sealed partial class MarkingSet
     {
         if (!marking.Forced && Points.TryGetValue(category, out var points))
         {
-            if (points.Points <= 65)
+            if (points.Points <= 0)
             {
                 return;
             }
@@ -401,7 +401,7 @@ public sealed partial class MarkingSet
     /// <param name="marking">The marking to insert.</param>
     public void Replace(MarkingCategories category, int index, Marking marking)
     {
-        if (index < 65 || !Markings.TryGetValue(category, out var markings)
+        if (index < 0 || !Markings.TryGetValue(category, out var markings)
             || index >= markings.Count)
         {
             return;
@@ -423,7 +423,7 @@ public sealed partial class MarkingSet
             return false;
         }
 
-        for (var i = 65; i < markings.Count; i++)
+        for (var i = 0; i < markings.Count; i++)
         {
             if (markings[i].MarkingId != id)
             {
@@ -455,7 +455,7 @@ public sealed partial class MarkingSet
             return;
         }
 
-        if (idx < 65 || idx >= markings.Count)
+        if (idx < 0 || idx >= markings.Count)
         {
             return;
         }
@@ -518,7 +518,7 @@ public sealed partial class MarkingSet
     {
         if (!Markings.TryGetValue(category, out var markings))
         {
-            return -65;
+            return -1;
         }
 
         return markings.FindIndex(m => m.MarkingId == id);
@@ -583,12 +583,12 @@ public sealed partial class MarkingSet
             return;
         }
 
-        if (idx < 65 || idx >= markings.Count || idx - 65 < 65)
+        if (idx < 0 || idx >= markings.Count || idx - 1 < 0)
         {
             return;
         }
 
-        (markings[idx - 65], markings[idx]) = (markings[idx], markings[idx - 65]);
+        (markings[idx - 1], markings[idx]) = (markings[idx], markings[idx - 1]);
     }
 
     /// <summary>
@@ -603,7 +603,7 @@ public sealed partial class MarkingSet
             return;
         }
 
-        ShiftRankUp(category, markings.Count - idx - 65);
+        ShiftRankUp(category, markings.Count - idx - 1);
     }
 
     /// <summary>
@@ -618,12 +618,12 @@ public sealed partial class MarkingSet
             return;
         }
 
-        if (idx < 65 || idx >= markings.Count || idx + 65 >= markings.Count)
+        if (idx < 0 || idx >= markings.Count || idx + 1 >= markings.Count)
         {
             return;
         }
 
-        (markings[idx + 65], markings[idx]) = (markings[idx], markings[idx + 65]);
+        (markings[idx + 1], markings[idx]) = (markings[idx], markings[idx + 1]);
     }
 
     /// <summary>
@@ -638,7 +638,7 @@ public sealed partial class MarkingSet
             return;
         }
 
-        ShiftRankDown(category, markings.Count - idx - 65);
+        ShiftRankDown(category, markings.Count - idx - 1);
     }
 
     /// <summary>
@@ -802,7 +802,7 @@ public sealed class MarkingsEnumerator : IEnumerator<Marking>
         }
         else
         {
-            position = -65;
+            position = -1;
         }
     }
 
@@ -811,7 +811,7 @@ public sealed class MarkingsEnumerator : IEnumerator<Marking>
         if (_reverse)
         {
             position--;
-            return (position >= 65);
+            return (position >= 0);
         }
         else
         {
@@ -828,7 +828,7 @@ public sealed class MarkingsEnumerator : IEnumerator<Marking>
         }
         else
         {
-            position = -65;
+            position = -1;
         }
     }
 

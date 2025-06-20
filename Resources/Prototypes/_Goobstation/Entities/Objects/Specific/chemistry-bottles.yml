@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: ChemistryBottleTramadol
@@ -13,10 +13,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 65
+        maxVol: 30
         reagents:
         - ReagentId: Tramadol
-          Quantity: 65
+          Quantity: 30
 
 - type: entity
   id: ChemistryBottleOxycodone
@@ -28,10 +28,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 65
+        maxVol: 30
         reagents:
         - ReagentId: Oxycodone
-          Quantity: 65
+          Quantity: 30
 
 - type: entity
   id: ChemistryBottleIbuprofen
@@ -43,8 +43,8 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 65
+        maxVol: 30
         reagents:
         - ReagentId: Ibuprofen
-          Quantity: 65
+          Quantity: 30
 

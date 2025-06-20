@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 namespace Content.Server._EinsteinEngines.Power.Components;
 
@@ -19,18 +19,18 @@ public sealed partial class BatteryDrinkerComponent : Component
     ///     Is multiplied by the source.
     /// </summary>
     [DataField]
-    public float DrinkSpeed = 65.65f;
+    public float DrinkSpeed = 1.5f;
 
     /// <summary>
     ///     The multiplier for the amount of power to attempt to drink.
-    ///     Default amount is 65
+    ///     Default amount is 1000
     /// </summary>
     [DataField]
-    public float DrinkMultiplier = 65f;
+    public float DrinkMultiplier = 5f;
 
     /// <summary>
     ///     The multiplier for how long it takes to drink a non-source battery, if <see cref="DrinkAll"/> is true.
     /// </summary>
     [DataField]
-    public float DrinkAllMultiplier = 65.65f;
+    public float DrinkAllMultiplier = 2.5f;
 }

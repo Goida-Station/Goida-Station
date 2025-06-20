@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "inspiration from TGstation, made by whateverusername65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "inspiration from TGstation, made by whateverusername0",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 64,
+    "y": 64
   },
   "states": [
     {
@@ -12,9 +12,9 @@
       "delays":
       [
         [
-          65.65, 65.65, 65.65, 65.65, 65.65,
-          65.65, 65.65, 65.65, 65.65, 65.65,
-          65.65
+          0.083, 0.083, 0.083, 0.083, 0.083,
+          0.083, 0.083, 0.083, 0.083, 0.083,
+          0.083
         ]
       ]
     },

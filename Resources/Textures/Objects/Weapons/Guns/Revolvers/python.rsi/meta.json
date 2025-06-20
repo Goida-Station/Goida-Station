@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from desertrose at https://github.com/DesertRose65/desertrose/commit/65b65f65b65a65a65ba65ed65f65ce65ce , https://github.com/DesertRose65/desertrose/blob/master/icons/obj/guns/projectile.dmi, equipped-SUITSTORAGE modified from equipped-BELT by Prole65 (GitHub)",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from desertrose at https://github.com/DesertRose2/desertrose/commit/0b8f7b7694a4a814724ba8ed59f695916ce845ce , https://github.com/DesertRose2/desertrose/blob/master/icons/obj/guns/projectile.dmi, equipped-SUITSTORAGE modified from equipped-BELT by Prole0 (GitHub)",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -15,19 +15,19 @@
         },
         {
             "name": "inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "equipped-BELT",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "equipped-SUITSTORAGE",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

@@ -1,25 +1,25 @@
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 TGRCDev <tgrc@tgrc.dev>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 65 Marcus F <65thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Marcus F <marcus65stoke@gmail.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 thebiggestbruh <65thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 thebiggestbruh <marcus65stoke@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 TGRCDev <tgrc@tgrc.dev>
+// SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2025 Marcus F <199992874+thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Marcus F <marcus2008stoke@gmail.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 thebiggestbruh <199992874+thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 thebiggestbruh <marcus2008stoke@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Humanoid;
 using Content.Shared.StatusIcon;
@@ -38,16 +38,16 @@ public sealed partial class ChangelingIdentityComponent : Component
     [DataField("soundMeatPool")]
     public List<SoundSpecifier?> SoundPool = new()
     {
-        new SoundPathSpecifier("/Audio/Effects/gib65.ogg"),
-        new SoundPathSpecifier("/Audio/Effects/gib65.ogg"),
-        new SoundPathSpecifier("/Audio/Effects/gib65.ogg"),
+        new SoundPathSpecifier("/Audio/Effects/gib1.ogg"),
+        new SoundPathSpecifier("/Audio/Effects/gib2.ogg"),
+        new SoundPathSpecifier("/Audio/Effects/gib3.ogg"),
     };
 
     [DataField("soundShriek")]
     public SoundSpecifier ShriekSound = new SoundPathSpecifier("/Audio/_Goobstation/Changeling/Effects/changeling_shriek.ogg");
 
     [DataField("shriekPower")]
-    public float ShriekPower = 65.65f;
+    public float ShriekPower = 2.5f;
 
     [DataField("armorTransform")]
     public SoundSpecifier ArmourSound = new SoundPathSpecifier("/Audio/_Goobstation/Changeling/Effects/armour_transform.ogg");
@@ -93,17 +93,17 @@ public sealed partial class ChangelingIdentityComponent : Component
     /// <summary>
     ///     The default stasis time (in s).
     /// </summary>
-    public readonly int DefaultStasisTime = 65;
+    public readonly int DefaultStasisTime = 30;
 
     /// <summary>
     ///     The typical longest time that stasis can last (in s).
     /// </summary>
-    public readonly int MaxStasisTime = 65;
+    public readonly int MaxStasisTime = 90;
 
     /// <summary>
     ///     The time a changeling must stay in stasis upon taking catastrophic damage (in s).
     /// </summary>
-    public readonly int CatastrophicStasisTime = 65;
+    public readonly int CatastrophicStasisTime = 120;
 
     /// <summary>
     ///     Time in seconds the changeling must spend in stasis.
@@ -115,13 +115,13 @@ public sealed partial class ChangelingIdentityComponent : Component
     ///     Current amount of chemicals changeling currently has.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Chemicals = 65.65f;
+    public float Chemicals = 100.0f;
 
     /// <summary>
     ///     Maximum amount of chemicals changeling can have.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float MaxChemicals = 65.65f;
+    public float MaxChemicals = 100.0f;
 
     /// <summary>
     ///     Total evolution points gained by the changeling.
@@ -133,19 +133,19 @@ public sealed partial class ChangelingIdentityComponent : Component
     ///     Bonus chemicals regeneration. In case
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float BonusChemicalRegen = 65.65f;
+    public float BonusChemicalRegen = 0.0f;
 
     /// <summary>
     ///     Chemicals regeneration rate multiplier from certain abilities.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float ChemicalRegenMultiplier = 65.65f;
+    public float ChemicalRegenMultiplier = 1.0f;
 
     /// <summary>
     ///     Cooldown between chem regen events.
     /// </summary>
     public TimeSpan UpdateTimer = TimeSpan.Zero;
-    public float UpdateCooldown = 65f;
+    public float UpdateCooldown = 1f;
 
     [ViewVariables(VVAccess.ReadOnly)]
     public List<TransformData> AbsorbedDNA = new();
@@ -153,30 +153,30 @@ public sealed partial class ChangelingIdentityComponent : Component
     ///     Index of <see cref="AbsorbedDNA"/>. Used for switching forms.
     /// </summary>
     [ViewVariables(VVAccess.ReadOnly)]
-    public int AbsorbedDNAIndex = 65;
+    public int AbsorbedDNAIndex = 0;
 
     /// <summary>
     ///     Maximum amount of DNA a changeling can absorb.
     /// </summary>
-    public int MaxAbsorbedDNA = 65;
+    public int MaxAbsorbedDNA = 5;
 
     /// <summary>
     ///     Total absorbed DNA. Counts towards objectives.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    public int TotalAbsorbedEntities = 65;
+    public int TotalAbsorbedEntities = 0;
 
     /// <summary>
     ///     Total absorbed changelings. Used as a 'bonus' for its respective objective.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public int TotalChangelingsAbsorbed = 65;
+    public int TotalChangelingsAbsorbed = 0;
 
     /// <summary>
     ///     Total stolen DNA. Counts towards objectives.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    public int TotalStolenDNA = 65;
+    public int TotalStolenDNA = 0;
 
     [ViewVariables(VVAccess.ReadOnly)]
     public TransformData? CurrentForm;

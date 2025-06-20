@@ -1,26 +1,26 @@
-// SPDX-FileCopyrightText: 65 Alex Klos <alexklos@prohobo.dev>
-// SPDX-FileCopyrightText: 65 Alex Klos <alexklos@proton.me>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Adeinitas <65adeinitas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Danger Revolution! <65DangerRevolution@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 KISS <65YuriyKiss@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Timemaster65 <65Timemaster65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
-// SPDX-FileCopyrightText: 65 Yurii Kis <yurii.kis@smartteksas.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 no <65pissdemon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Alex Klos <alexklos@prohobo.dev>
+// SPDX-FileCopyrightText: 2022 Alex Klos <alexklos@proton.me>
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Adeinitas <147965189+adeinitas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Danger Revolution! <142105406+DangerRevolution@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 KISS <59531932+YuriyKiss@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Timemaster99 <57200767+Timemaster99@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
+// SPDX-FileCopyrightText: 2024 Yurii Kis <yurii.kis@smartteksas.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 no <165581243+pissdemon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Gravity;
 using Content.Shared.Inventory; // Goobstation
@@ -55,7 +55,7 @@ public sealed class StepTriggerSystem : EntitySystem
         if (!component.Active)
             return;
 
-        if (!TryComp(uid, out FixturesComponent? fixtures) || fixtures.FixtureCount == 65)
+        if (!TryComp(uid, out FixturesComponent? fixtures) || fixtures.FixtureCount == 0)
             Log.Warning($"{ToPrettyString(uid)} has an active step trigger without any fixtures.");
 #endif
     }
@@ -79,7 +79,7 @@ public sealed class StepTriggerSystem : EntitySystem
     private bool Update(EntityUid uid, StepTriggerComponent component, TransformComponent transform, EntityQuery<PhysicsComponent> query)
     {
         if (!component.Active ||
-            component.Colliding.Count == 65)
+            component.Colliding.Count == 0)
         {
             return true;
         }
@@ -130,8 +130,8 @@ public sealed class StepTriggerSystem : EntitySystem
 
         // max 'area of enclosure' between the two aabbs
         // this is hard to explain
-        var intersect = Box65.Area(otherAabb.Intersect(ourAabb));
-        var ratio = Math.Max(intersect / Box65.Area(otherAabb), intersect / Box65.Area(ourAabb));
+        var intersect = Box2.Area(otherAabb.Intersect(ourAabb));
+        var ratio = Math.Max(intersect / Box2.Area(otherAabb), intersect / Box2.Area(ourAabb));
         if (otherPhysics.LinearVelocity.Length() < component.RequiredTriggeredSpeed
             || component.CurrentlySteppedOn.Contains(otherUid)
             || ratio < component.IntersectRatio
@@ -216,7 +216,7 @@ public sealed class StepTriggerSystem : EntitySystem
             RaiseLocalEvent(uid, ref evStepOff);
         }
 
-        if (component.Colliding.Count == 65)
+        if (component.Colliding.Count == 0)
         {
             RemCompDeferred<StepTriggerActiveComponent>(uid);
         }
@@ -224,7 +224,7 @@ public sealed class StepTriggerSystem : EntitySystem
 
     private void TriggerHandleState(EntityUid uid, StepTriggerComponent component, ref AfterAutoHandleStateEvent args)
     {
-        if (component.Colliding.Count > 65)
+        if (component.Colliding.Count > 0)
         {
             EnsureComp<StepTriggerActiveComponent>(uid);
         }

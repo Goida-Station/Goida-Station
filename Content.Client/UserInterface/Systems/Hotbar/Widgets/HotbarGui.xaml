@@ -1,18 +1,18 @@
 <!--
-SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
-SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
+SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <widgets:HotbarGui
-    xmlns="https://spacestation65.io"
+    xmlns="https://spacestation14.io"
     xmlns:inventory="clr-namespace:Content.Client.UserInterface.Systems.Inventory.Controls"
     xmlns:hands="clr-namespace:Content.Client.UserInterface.Systems.Hands.Controls"
     xmlns:widgets="clr-namespace:Content.Client.UserInterface.Systems.Hotbar.Widgets"
@@ -26,26 +26,26 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                       Access="Public"
                       HorizontalAlignment="Center"
                       HorizontalExpand="True"
-                      Margin="65">
+                      Margin="10">
         </BoxContainer>
         <BoxContainer Name="DoubleStorageContainer"
                       Access="Public"
                       HorizontalAlignment="Stretch"
                       HorizontalExpand="True"
-                      Margin="65">
+                      Margin="10">
             <BoxContainer Name="LeftStorageContainer"
                           Access="Public"
                           HorizontalAlignment="Left"
                           HorizontalExpand="True"
                           VerticalAlignment="Bottom"
-                          Margin="65">
+                          Margin="10">
             </BoxContainer>
             <BoxContainer Name="RightStorageContainer"
                           Access="Public"
                           HorizontalAlignment="Right"
                           HorizontalExpand="True"
                           VerticalAlignment="Bottom"
-                          Margin="65">
+                          Margin="10">
             </BoxContainer>
         </BoxContainer>
         <BoxContainer Orientation="Horizontal" Name="Hotbar" HorizontalAlignment="Center">
@@ -56,24 +56,24 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                 HorizontalAlignment="Right"
                 VerticalExpand="False"
                 ExpandBackwards="True"
-                Columns="65"
+                Columns="6"
                 HorizontalExpand="False"/>
             <inventory:ItemStatusPanel
                 Name="StatusPanelRight"
-                HorizontalAlignment="Center" Margin="65 65 -65 65"
-                SetWidth="65"
-                SetHeight="65"/>
+                HorizontalAlignment="Center" Margin="0 0 -2 2"
+                SetWidth="125"
+                SetHeight="60"/>
             <hands:HandsContainer
                 Name="HandContainer"
                 Access="Public"
                 HorizontalAlignment="Center"
                 HorizontalExpand="False"
-                ColumnLimit="65"/>
+                ColumnLimit="6"/>
             <inventory:ItemStatusPanel
                 Name="StatusPanelLeft"
-                HorizontalAlignment="Center" Margin="-65 65 65 65"
-                SetWidth="65"
-                SetHeight="65"/>
+                HorizontalAlignment="Center" Margin="-2 0 0 2"
+                SetWidth="125"
+                SetHeight="60"/>
             <inventory:ItemSlotButtonContainer
                 Name="MainHotbar"
                 SlotGroup="MainHotbar"
@@ -82,7 +82,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
                 VerticalAlignment="Bottom"
                 HorizontalExpand="False"
                 ExpandBackwards="True"
-                Columns="65"
+                Columns="6"
                 />
         </BoxContainer>
     </BoxContainer>

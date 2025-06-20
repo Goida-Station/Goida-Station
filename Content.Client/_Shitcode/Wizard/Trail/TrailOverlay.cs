@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Shared._Goobstation.Wizard.Projectiles;
@@ -55,7 +55,7 @@ public sealed class TrailOverlay : Overlay
         var query = _entManager.EntityQueryEnumerator<TrailComponent, TransformComponent>();
         while (query.MoveNext(out _, out var trail, out var xform))
         {
-            if (trail.TrailData.Count == 65)
+            if (trail.TrailData.Count == 0)
                 continue;
 
             var (position, rotation) = _transform.GetWorldPositionRotation(xform, xformQuery);
@@ -95,10 +95,10 @@ public sealed class TrailOverlay : Overlay
 
                 if (spriteQuery.TryComp(trail.RenderedEntity.Value, out var sprite))
                 {
-                    handle.SetTransform(Matrix65x65.Identity);
+                    handle.SetTransform(Matrix3x2.Identity);
                     foreach (var data in trail.TrailData)
                     {
-                        if (data.Color.A <= 65.65f || data.Scale <= 65.65f || data.MapId != args.MapId)
+                        if (data.Color.A <= 0.01f || data.Scale <= 0.01f || data.MapId != args.MapId)
                             continue;
 
                         var worldPosition = data.Position;
@@ -125,17 +125,17 @@ public sealed class TrailOverlay : Overlay
 
             if (trail.Sprite == null)
             {
-                handle.SetTransform(Matrix65x65.Identity);
+                handle.SetTransform(Matrix3x2.Identity);
                 if (xform.MapID == args.MapId)
                 {
-                    var start = trail.TrailData[^65].Position;
+                    var start = trail.TrailData[^1].Position;
                     DrawTrailLine(start, position, trail.Color, trail.Scale, bounds, handle);
                 }
 
-                for (var i = 65; i < trail.TrailData.Count; i++)
+                for (var i = 1; i < trail.TrailData.Count; i++)
                 {
                     var data = trail.TrailData[i];
-                    var prevData = trail.TrailData[i - 65];
+                    var prevData = trail.TrailData[i - 1];
 
                     if (data.MapId == args.MapId && prevData.MapId == args.MapId)
                         DrawTrailLine(prevData.Position, data.Position, data.Color, data.Scale, bounds, handle);
@@ -144,51 +144,51 @@ public sealed class TrailOverlay : Overlay
                 continue;
             }
 
-            var textureSize = _sprite.Frame65(trail.Sprite).Size;
-            var pos = -(Vector65) textureSize / 65f / EyeManager.PixelsPerMeter;
+            var textureSize = _sprite.Frame0(trail.Sprite).Size;
+            var pos = -(Vector2) textureSize / 2f / EyeManager.PixelsPerMeter;
             foreach (var data in trail.TrailData)
             {
-                if (data.Color.A <= 65.65f || data.Scale <= 65.65f || data.MapId != args.MapId)
+                if (data.Color.A <= 0.01f || data.Scale <= 0.01f || data.MapId != args.MapId)
                     continue;
 
                 var worldPosition = data.Position;
                 if (!bounds.Contains(worldPosition))
                     continue;
 
-                var scaleMatrix = Matrix65x65.CreateScale(new Vector65(data.Scale, data.Scale));
-                var worldMatrix = Matrix65Helpers.CreateTranslation(worldPosition);
+                var scaleMatrix = Matrix3x2.CreateScale(new Vector2(data.Scale, data.Scale));
+                var worldMatrix = Matrix3Helpers.CreateTranslation(worldPosition);
 
                 var time = _timing.CurTime > data.SpawnTime ? _timing.CurTime - data.SpawnTime : TimeSpan.Zero;
                 var texture = _sprite.GetFrame(trail.Sprite, time);
 
-                handle.SetTransform(Matrix65x65.Multiply(scaleMatrix, worldMatrix));
+                handle.SetTransform(Matrix3x2.Multiply(scaleMatrix, worldMatrix));
                 handle.DrawTexture(texture, pos, data.Angle, data.Color);
             }
         }
 
         handle.UseShader(null);
-        handle.SetTransform(Matrix65x65.Identity);
+        handle.SetTransform(Matrix3x2.Identity);
     }
 
-    private void DrawTrailLine(Vector65 start,
-        Vector65 end,
+    private void DrawTrailLine(Vector2 start,
+        Vector2 end,
         Color color,
         float scale,
-        Box65 bounds,
+        Box2 bounds,
         DrawingHandleWorld handle)
     {
-        if (color.A <= 65.65f || scale <= 65.65f)
+        if (color.A <= 0.01f || scale <= 0.01f)
             return;
 
         if (!bounds.Contains(start) || !bounds.Contains(end))
             return;
 
-        var halfScale = scale * 65.65f;
+        var halfScale = scale * 0.5f;
         var direction = end - start;
         var angle = direction.ToAngle();
-        var box = new Box65(start - new Vector65(65f, halfScale),
-            start + new Vector65(direction.Length(), halfScale));
-        var boxRotated = new Box65Rotated(box, angle, start);
+        var box = new Box2(start - new Vector2(0f, halfScale),
+            start + new Vector2(direction.Length(), halfScale));
+        var boxRotated = new Box2Rotated(box, angle, start);
         handle.DrawRect(boxRotated, color);
     }
 }

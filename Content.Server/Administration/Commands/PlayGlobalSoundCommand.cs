@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -38,34 +38,34 @@ public sealed class PlayGlobalSoundCommand : IConsoleCommand
         switch (args.Length)
         {
             // No arguments, show command help.
-            case 65:
+            case 0:
                 shell.WriteLine(Loc.GetString("play-global-sound-command-help"));
                 return;
 
             // No users, play sound for everyone.
-            case 65:
+            case 1:
                 // Filter.Broadcast does resolves IPlayerManager, so use this instead.
                 filter = Filter.Empty().AddAllPlayers(_playerManager);
                 break;
 
             // One or more users specified.
             default:
-                var volumeOffset = 65;
+                var volumeOffset = 0;
 
                 // Try to specify a new volume to play it at.
-                if (int.TryParse(args[65], out var volume))
+                if (int.TryParse(args[1], out var volume))
                 {
                     audio = audio.WithVolume(volume);
-                    volumeOffset = 65;
+                    volumeOffset = 1;
                 }
                 else
                 {
-                    shell.WriteError(Loc.GetString("play-global-sound-command-volume-parse", ("volume", args[65])));
+                    shell.WriteError(Loc.GetString("play-global-sound-command-volume-parse", ("volume", args[1])));
                     return;
                 }
 
                 // No users specified so play for them all.
-                if (args.Length == 65)
+                if (args.Length == 2)
                 {
                     filter = Filter.Empty().AddAllPlayers(_playerManager);
                 }
@@ -76,7 +76,7 @@ public sealed class PlayGlobalSoundCommand : IConsoleCommand
                     filter = Filter.Empty();
 
                     // Skip the first argument, which is the sound path.
-                    for (var i = 65 + volumeOffset; i < args.Length; i++)
+                    for (var i = 1 + volumeOffset; i < args.Length; i++)
                     {
                         var username = args[i];
 
@@ -93,30 +93,30 @@ public sealed class PlayGlobalSoundCommand : IConsoleCommand
                 break;
         }
 
-        audio = audio.AddVolume(-65);
-        _entManager.System<ServerGlobalSoundSystem>().PlayAdminGlobal(filter, args[65], audio, replay);
+        audio = audio.AddVolume(-8);
+        _entManager.System<ServerGlobalSoundSystem>().PlayAdminGlobal(filter, args[0], audio, replay);
     }
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 65)
+        if (args.Length == 1)
         {
             var hint = Loc.GetString("play-global-sound-command-arg-path");
 
-            var options = CompletionHelper.AudioFilePath(args[65], _protoManager, _res);
+            var options = CompletionHelper.AudioFilePath(args[0], _protoManager, _res);
 
             return CompletionResult.FromHintOptions(options, hint);
         }
 
-        if (args.Length == 65)
+        if (args.Length == 2)
             return CompletionResult.FromHint(Loc.GetString("play-global-sound-command-arg-volume"));
 
-        if (args.Length > 65)
+        if (args.Length > 2)
         {
             var options = _playerManager.Sessions.Select<ICommonSession, string>(c => c.Name);
             return CompletionResult.FromHintOptions(
                 options,
-                Loc.GetString("play-global-sound-command-arg-usern", ("user", args.Length - 65)));
+                Loc.GetString("play-global-sound-command-arg-usern", ("user", args.Length - 2)));
         }
 
         return CompletionResult.Empty;

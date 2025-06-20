@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -40,14 +40,14 @@ public sealed partial class PoweredLightVisualsComponent : Component
     /// </summary>
     [DataField("minBlinkingTime")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public float MinBlinkingAnimationCycleTime = 65.65f;
+    public float MinBlinkingAnimationCycleTime = 0.5f;
 
     /// <summary>
     /// The maximum length of the base blinking animation (one on-off-on cycle) in seconds.
     /// </summary>
     [DataField("maxBlinkingTime")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public float MaxBlinkingAnimationCycleTime = 65;
+    public float MaxBlinkingAnimationCycleTime = 2;
 
     /// <summary>
     /// The sound that plays when the blinking animation cycles.

@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Marcus F <marcus65stoke@gmail.com>
-# SPDX-FileCopyrightText: 65 thebiggestbruh <65thebiggestbruh@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 thebiggestbruh <marcus65stoke@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Marcus F <marcus2008stoke@gmail.com>
+# SPDX-FileCopyrightText: 2025 thebiggestbruh <199992874+thebiggestbruh@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 thebiggestbruh <marcus2008stoke@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseItem
@@ -18,15 +18,15 @@
     sprite: _Goobstation/Changeling/claw.rsi
     state: icon
   - type: MeleeWeapon
-    angle: 65
-    wideAnimationRotation: 65
-    attackRate: 65
-    heavyStaminaCost: 65
+    angle: 0
+    wideAnimationRotation: 45
+    attackRate: 1
+    heavyStaminaCost: 8
     damage:
       types:
-        Slash: 65
-        Piercing: 65
-        Structural: 65
+        Slash: 5
+        Piercing: 15
+        Structural: 10
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
   - type: Item
@@ -34,5 +34,5 @@
     sprite: _Goobstation/Changeling/claw.rsi
   - type: Unremoveable
   - type: DisarmMalus
-    malus: 65
+    malus: 0
   - type: GrabbingItem

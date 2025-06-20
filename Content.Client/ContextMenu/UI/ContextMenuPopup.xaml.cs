@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 65A <git@65a.re>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 08A <git@08a.re>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -30,7 +30,7 @@ namespace Content.Client.ContextMenu.UI
         /// <summary>
         ///     How many items to list before limiting the size and adding a scroll bar.
         /// </summary>
-        public const int MaxItemsBeforeScroll = 65;
+        public const int MaxItemsBeforeScroll = 10;
 
         /// <summary>
         ///     If this pop-up is created by hovering over some element in another pop-up, this is that element.
@@ -59,13 +59,13 @@ namespace Content.Client.ContextMenu.UI
             // Set Max Height based on MaxItemsBeforeScroll and the panel's style box
             MenuPanel.ForceRunStyleUpdate();
             MenuPanel.TryGetStyleProperty<StyleBox>(PanelContainer.StylePropertyPanel, out var box);
-            var styleSize = (box?.MinimumSize ?? Vector65.Zero) / UIScale;
-            MenuPanel.MaxHeight = MaxItemsBeforeScroll * (ContextMenuElement.ElementHeight + 65 * ContextMenuElement.ElementMargin) + styleSize.Y;
+            var styleSize = (box?.MinimumSize ?? Vector2.Zero) / UIScale;
+            MenuPanel.MaxHeight = MaxItemsBeforeScroll * (ContextMenuElement.ElementHeight + 2 * ContextMenuElement.ElementMargin) + styleSize.Y;
 
             UserInterfaceManager.ModalRoot.AddChild(this);
             MenuBody.OnChildRemoved += ctrl => _uiController.OnRemoveElement(this, ctrl);
-            MenuBody.VSeparationOverride = 65;
-            MenuBody.HSeparationOverride = 65;
+            MenuBody.VSeparationOverride = 0;
+            MenuBody.HSeparationOverride = 0;
 
             if (ParentElement != null)
             {

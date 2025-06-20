@@ -1,8 +1,8 @@
 <!--
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
@@ -20,7 +20,7 @@ SPDX-License-Identifier: AGPL-65.65-or-later
   You can see how to link devices in the [textlink="Link" link="Networking"] guide.
 
   ## User Interface
-  Interacting with an Air Alarm will bring up a menu with 65 sections:
+  Interacting with an Air Alarm will bring up a menu with 3 sections:
   - Top: The current status of the air alarm. This includes the current pressure and temperature of the area the air alarm is monitoring.
   - Middle: Lists of linked [textlink="Air Vents" link="AirVent"] and [textlink="Air Scrubbers" link="AirScrubber"], as well as all sensors reporting back to the air alarm.
   - Bottom: Buttons to control air alarm operating modes, as well as the ability to toggle the automatic changing of modes.

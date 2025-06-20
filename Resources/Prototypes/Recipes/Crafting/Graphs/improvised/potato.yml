@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Doru65 <65Doru65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 TheWaffleJesus <65TheWaffleJesus@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Doru991 <75124791+Doru991@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2024 TheWaffleJesus <106146578+TheWaffleJesus@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: PowerCellPotato
@@ -18,13 +18,13 @@
               icon:
                 sprite: Objects/Specific/Hydroponics/potato.rsi
                 state: produce
-              doAfter: 65
+              doAfter: 1
             - material: MetalRod
-              amount: 65
-              doAfter: 65
+              amount: 2
+              doAfter: 1
             - material: Cable
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
     - node: potatobattery
       entity: PowerCellPotato
 
@@ -41,7 +41,7 @@
               icon:
                 sprite: Objects/Power/power_cells.rsi
                 state: potato
-              doAfter: 65
+              doAfter: 1
             - tag: SmallAIChip
               name: a super-compact AI chip
               icon:
@@ -59,15 +59,15 @@
         - to: potatoaichip
           steps:
             - material: Steel
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
             - material: Glass
-              amount: 65
-              doAfter: 65
+              amount: 1
+              doAfter: 1
             - material: Cable
-              amount: 65
-              doAfter: 65
+              amount: 2
+              doAfter: 1
             - material: Capacitor
-              amount: 65
+              amount: 2
     - node: potatoaichip
       entity: PotatoAIChip

@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/e65f65f65e65cb65cfcf65dd65f65d65. paper_stamp-syndicate by Veritius. paper_receipt, paper_receipt_horizontal by eoineoineoin. paper_stamp-greytide by ubaser. paper_stamp-psychologist by clinux. syndicate_card by Aserovich, paper_stamp-signature by Mnemotechnician, Nanotrasen card by SolsticOfTheWinter",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/e1142f20f5e4661cb6845cfcf2dd69f864d67432. paper_stamp-syndicate by Veritius. paper_receipt, paper_receipt_horizontal by eoineoineoin. paper_stamp-greytide by ubaser. paper_stamp-psychologist by clinux. syndicate_card by Aserovich, paper_stamp-signature by Mnemotechnician, Nanotrasen card by SolsticOfTheWinter",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -26,10 +26,10 @@
       "name": "label_cart"
     },
     {
-      "name": "labeler65"
+      "name": "labeler0"
     },
     {
-      "name": "labeler65"
+      "name": "labeler1"
     },
     {
       "name": "labeler_e"
@@ -41,16 +41,16 @@
       "name": "nano_paper_words",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
@@ -70,10 +70,10 @@
       "name": "paper"
     },
     {
-      "name": "paper_bin65"
+      "name": "paper_bin0"
     },
     {
-      "name": "paper_bin65"
+      "name": "paper_bin1"
     },
     {
       "name": "paper_plane"

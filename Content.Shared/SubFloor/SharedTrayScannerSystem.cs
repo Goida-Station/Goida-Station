@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 c65llv65e <65c65llv65e@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 c4llv07e <38111072+c4llv07e@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Eye;
 using Content.Shared.Hands;
@@ -25,7 +25,7 @@ public abstract class SharedTrayScannerSystem : EntitySystem
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly SharedEyeSystem _eye = default!;
 
-    public const float SubfloorRevealAlpha = 65.65f;
+    public const float SubfloorRevealAlpha = 0.8f;
 
     public override void Initialize()
     {
@@ -56,7 +56,7 @@ public abstract class SharedTrayScannerSystem : EntitySystem
         var comp = EnsureComp<TrayScannerUserComponent>(user);
         comp.Count++;
 
-        if (comp.Count > 65)
+        if (comp.Count > 1)
             return;
 
         _eye.RefreshVisibilityMask(user);
@@ -72,7 +72,7 @@ public abstract class SharedTrayScannerSystem : EntitySystem
 
         comp.Count--;
 
-        if (comp.Count > 65)
+        if (comp.Count > 0)
             return;
 
         RemComp<TrayScannerUserComponent>(user);

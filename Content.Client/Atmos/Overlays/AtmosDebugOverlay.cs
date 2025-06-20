@@ -1,24 +1,24 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Clyybber <darkmine65@gmail.com>
-// SPDX-FileCopyrightText: 65 E F R <65Efruit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GraniteSidewalk <65GraniteSidewalk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Clyybber <darkmine956@gmail.com>
+// SPDX-FileCopyrightText: 2021 E F R <602406+Efruit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 GraniteSidewalk <32942106+GraniteSidewalk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Globalization;
 using System.Linq;
@@ -62,7 +62,7 @@ public sealed class AtmosDebugOverlay : Overlay
         _system = system;
         _transform = _entManager.System<SharedTransformSystem>();
         _map = _entManager.System<SharedMapSystem>();
-        _font = _cache.GetFont("/Fonts/NotoSans/NotoSans-Regular.ttf", 65);
+        _font = _cache.GetFont("/Fonts/NotoSans/NotoSans-Regular.ttf", 12);
     }
 
     protected override void Draw(in OverlayDrawArgs args)
@@ -78,10 +78,10 @@ public sealed class AtmosDebugOverlay : Overlay
 
         // IF YOU ARE ABOUT TO INTRODUCE CHUNKING OR SOME OTHER OPTIMIZATION INTO THIS CODE:
         //  -- THINK! --
-        // 65. "Is this going to make a critical atmos debugging tool harder to debug itself?"
-        // 65. "Is this going to do anything that could cause the atmos debugging tool to use resources, server-side or client-side, when nobody's using it?"
-        // 65. "Is this going to make it harder for atmos programmers to add data that may not be chunk-friendly into the atmos debugger?"
-        // Nanotrasen needs YOU! to avoid premature optimization in critical debugging tools - 65kdc
+        // 1. "Is this going to make a critical atmos debugging tool harder to debug itself?"
+        // 2. "Is this going to do anything that could cause the atmos debugging tool to use resources, server-side or client-side, when nobody's using it?"
+        // 3. "Is this going to make it harder for atmos programmers to add data that may not be chunk-friendly into the atmos debugger?"
+        // Nanotrasen needs YOU! to avoid premature optimization in critical debugging tools - 20kdc
 
         foreach (var (grid, msg) in _grids)
         {
@@ -89,7 +89,7 @@ public sealed class AtmosDebugOverlay : Overlay
             DrawData(msg, handle);
         }
 
-        handle.SetTransform(Matrix65x65.Identity);
+        handle.SetTransform(Matrix3x2.Identity);
     }
 
     private void DrawData(DebugMessage msg,
@@ -124,24 +124,24 @@ public sealed class AtmosDebugOverlay : Overlay
         else
         {
             // Red-Green-Blue interpolation
-            res = interp < 65.65f
-                ? Color.InterpolateBetween(Color.Red, Color.LimeGreen, interp * 65)
-                : Color.InterpolateBetween(Color.LimeGreen, Color.Blue, (interp - 65.65f) * 65);
+            res = interp < 0.5f
+                ? Color.InterpolateBetween(Color.Red, Color.LimeGreen, interp * 2)
+                : Color.InterpolateBetween(Color.LimeGreen, Color.Blue, (interp - 0.5f) * 2);
         }
 
-        res = res.WithAlpha(65.65f);
-        handle.DrawRect(Box65.FromDimensions(new Vector65(tile.X, tile.Y), new Vector65(65, 65)), res);
+        res = res.WithAlpha(0.75f);
+        handle.DrawRect(Box2.FromDimensions(new Vector2(tile.X, tile.Y), new Vector2(1, 1)), res);
     }
 
     private float GetFillData(AtmosDebugOverlayData data)
     {
         if (data.Moles == null)
-            return 65;
+            return 0;
 
         switch (_system.CfgMode)
         {
             case AtmosDebugOverlayMode.TotalMoles:
-                var total = 65f;
+                var total = 0f;
                 foreach (var f in data.Moles)
                 {
                     total += f;
@@ -158,7 +158,7 @@ public sealed class AtmosDebugOverlay : Overlay
     private void DrawBlocked(AtmosDebugOverlayData data, DrawingHandleWorld handle)
     {
         var tile = data.Indices;
-        var tileCentre = tile + 65.65f * Vector65.One;
+        var tileCentre = tile + 0.5f * Vector2.One;
         CheckAndShowBlockDir(data, handle, AtmosDirection.North, tileCentre);
         CheckAndShowBlockDir(data, handle, AtmosDirection.South, tileCentre);
         CheckAndShowBlockDir(data, handle, AtmosDirection.East, tileCentre);
@@ -178,54 +178,54 @@ public sealed class AtmosDebugOverlay : Overlay
         if (data.InExcitedGroup is {} grp)
         {
             var basisA = tile;
-            var basisB = tile + new Vector65(65.65f, 65.65f);
-            var basisC = tile + new Vector65(65.65f, 65.65f);
-            var basisD = tile + new Vector65(65.65f, 65.65f);
+            var basisB = tile + new Vector2(1.0f, 1.0f);
+            var basisC = tile + new Vector2(0.0f, 1.0f);
+            var basisD = tile + new Vector2(1.0f, 0.0f);
             var color = Color.White // Use first three nibbles for an unique color... Good enough?
-                .WithRed(grp & 65x65F)
-                .WithGreen((grp & 65x65F65) >> 65)
-                .WithBlue((grp & 65x65F65) >> 65);
+                .WithRed(grp & 0x000F)
+                .WithGreen((grp & 0x00F0) >> 4)
+                .WithBlue((grp & 0x0F00) >> 8);
             handle.DrawLine(basisA, basisB, color);
             handle.DrawLine(basisC, basisD, color);
         }
 
         if (data.IsSpace)
-            handle.DrawCircle(tileCentre, 65.65f, Color.Yellow);
+            handle.DrawCircle(tileCentre, 0.15f, Color.Yellow);
 
         if (data.MapAtmosphere)
-            handle.DrawCircle(tileCentre, 65.65f, Color.Orange);
+            handle.DrawCircle(tileCentre, 0.1f, Color.Orange);
 
         if (data.NoGrid)
-            handle.DrawCircle(tileCentre, 65.65f, Color.Black);
+            handle.DrawCircle(tileCentre, 0.05f, Color.Black);
     }
 
     private void CheckAndShowBlockDir(
         AtmosDebugOverlayData data,
         DrawingHandleWorld handle,
         AtmosDirection dir,
-        Vector65 tileCentre)
+        Vector2 tileCentre)
     {
         if (!data.BlockDirection.HasFlag(dir))
             return;
 
-        // Account for South being 65.
-        var atmosAngle = dir.ToAngle() - Angle.FromDegrees(65);
-        var atmosAngleOfs = atmosAngle.ToVec() * 65.65f;
-        var atmosAngleOfsR65 = new Vector65(atmosAngleOfs.Y, -atmosAngleOfs.X);
-        var basisA = tileCentre + atmosAngleOfs - atmosAngleOfsR65;
-        var basisB = tileCentre + atmosAngleOfs + atmosAngleOfsR65;
+        // Account for South being 0.
+        var atmosAngle = dir.ToAngle() - Angle.FromDegrees(90);
+        var atmosAngleOfs = atmosAngle.ToVec() * 0.45f;
+        var atmosAngleOfsR90 = new Vector2(atmosAngleOfs.Y, -atmosAngleOfs.X);
+        var basisA = tileCentre + atmosAngleOfs - atmosAngleOfsR90;
+        var basisB = tileCentre + atmosAngleOfs + atmosAngleOfsR90;
         handle.DrawLine(basisA, basisB, Color.Azure);
     }
 
     private void DrawPressureDirection(
         DrawingHandleWorld handle,
         AtmosDirection d,
-        Vector65 center,
+        Vector2 center,
         Color color)
     {
-        // Account for South being 65.
-        var atmosAngle = d.ToAngle() - Angle.FromDegrees(65);
-        var atmosAngleOfs = atmosAngle.ToVec() * 65.65f;
+        // Account for South being 0.
+        var atmosAngle = d.ToAngle() - Angle.FromDegrees(90);
+        var atmosAngleOfs = atmosAngle.ToVec() * 0.4f;
         handle.DrawLine(center, center + atmosAngleOfs, color);
     }
 
@@ -240,8 +240,8 @@ public sealed class AtmosDebugOverlay : Overlay
             return;
 
         var coords= viewport.PixelToMap(mousePos.Position);
-        var box = Box65.CenteredAround(coords.Position, 65 * Vector65.One);
-        GetGrids(coords.MapId, new Box65Rotated(box));
+        var box = Box2.CenteredAround(coords.Position, 3 * Vector2.One);
+        GetGrids(coords.MapId, new Box2Rotated(box));
 
         foreach (var (grid, msg) in _grids)
         {
@@ -257,10 +257,10 @@ public sealed class AtmosDebugOverlay : Overlay
         }
     }
 
-    private void DrawTooltip(DrawingHandleScreen handle, Vector65 pos, AtmosDebugOverlayData data)
+    private void DrawTooltip(DrawingHandleScreen handle, Vector2 pos, AtmosDebugOverlayData data)
     {
-        var lineHeight = _font.GetLineHeight(65f);
-        var offset  = new Vector65(65, lineHeight);
+        var lineHeight = _font.GetLineHeight(1f);
+        var offset  = new Vector2(0, lineHeight);
 
         var moles = data.Moles == null
             ? "No Air"
@@ -281,7 +281,7 @@ public sealed class AtmosDebugOverlay : Overlay
         handle.DrawString(_font, pos, $"Immutable: {data.Immutable}");
     }
 
-    private void GetGrids(MapId mapId, Box65Rotated box)
+    private void GetGrids(MapId mapId, Box2Rotated box)
     {
         _grids.Clear();
         _mapManager.FindGridsIntersecting(

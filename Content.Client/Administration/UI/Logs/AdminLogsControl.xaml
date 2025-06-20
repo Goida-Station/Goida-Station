@@ -1,52 +1,52 @@
 <!--
-SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<Control xmlns="https://spacestation65.io"
+<Control xmlns="https://spacestation14.io"
          xmlns:aui="clr-namespace:Content.Client.Administration.UI.CustomControls">
     <PanelContainer StyleClasses="BackgroundDark">
         <BoxContainer Orientation="Horizontal">
             <BoxContainer Orientation="Vertical">
-                <BoxContainer Orientation="Horizontal" MinWidth="65">
+                <BoxContainer Orientation="Horizontal" MinWidth="400">
                     <Label Text="{Loc admin-logs-round}"/>
-                    <SpinBox Name="RoundSpinBox" Value="65" MinWidth="65"/>
+                    <SpinBox Name="RoundSpinBox" Value="0" MinWidth="150"/>
                     <Control HorizontalExpand="True"/>
                     <Button Name="ResetRoundButton" Text="{Loc admin-logs-reset}" HorizontalAlignment="Right"
                             StyleClasses="OpenRight"/>
                 </BoxContainer>
                 <BoxContainer Orientation="Horizontal" VerticalExpand="True">
-                    <BoxContainer Orientation="Vertical" MinWidth="65">
+                    <BoxContainer Orientation="Vertical" MinWidth="200">
                         <LineEdit Name="TypeSearch" Access="Public" StyleClasses="actionSearchBox"
                                   HorizontalExpand="true" PlaceHolder="{Loc admin-logs-search-types-placeholder}"/>
                         <BoxContainer Orientation="Horizontal">
                             <Button Name="SelectAllTypesButton" Text="{Loc admin-logs-select-all}"
-                                    MinWidth="65" StyleClasses="ButtonSquare"/>
+                                    MinWidth="100" StyleClasses="ButtonSquare"/>
                             <Button Name="SelectNoTypesButton" Text="{Loc admin-logs-select-none}"
-                                    MinWidth="65" StyleClasses="ButtonSquare"/>
+                                    MinWidth="100" StyleClasses="ButtonSquare"/>
                         </BoxContainer>
                         <ScrollContainer VerticalExpand="True">
                             <BoxContainer Name="TypesContainer" Access="Public" Orientation="Vertical"/>
                         </ScrollContainer>
                     </BoxContainer>
                     <aui:VSeparator/>
-                    <BoxContainer Orientation="Vertical" MinWidth="65">
+                    <BoxContainer Orientation="Vertical" MinWidth="200">
                         <LineEdit Name="PlayerSearch" Access="Public" StyleClasses="actionSearchBox"
                                   HorizontalExpand="true" PlaceHolder="{Loc admin-logs-search-players-placeholder}"/>
                         <Button Name="IncludeNonPlayersButton" Text="{Loc admin-logs-include-non-player}"
-                                MinWidth="65" StyleClasses="ButtonSquare" ToggleMode="True" />
+                                MinWidth="100" StyleClasses="ButtonSquare" ToggleMode="True" />
                         <BoxContainer Orientation="Horizontal">
                             <Button Name="SelectAllPlayersButton" Text="{Loc admin-logs-select-all}"
-                                    MinWidth="65" StyleClasses="ButtonSquare" />
+                                    MinWidth="100" StyleClasses="ButtonSquare" />
                             <Button Name="SelectNoPlayersButton" Text="{Loc admin-logs-select-none}"
-                                    MinWidth="65" StyleClasses="ButtonSquare"/>
+                                    MinWidth="100" StyleClasses="ButtonSquare"/>
                         </BoxContainer>
                         <ScrollContainer VerticalExpand="True">
                             <BoxContainer Name="PlayersContainer" Access="Public" Orientation="Vertical"/>

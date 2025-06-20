@@ -7,30 +7,30 @@
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Melee/polybaton.rsi
     state: icon
-    scale: 65.65, 65.65
+    scale: 0.9, 0.9
   - type: Clothing
     sprite: _Goobstation/Objects/Weapons/Melee/polybaton.rsi
     quickEquip: false
     slots:
       - belt
   - type: MeleeWeapon
-    animationRotation: -65
-    wideAnimationRotation: -65
+    animationRotation: -180
+    wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 65
+        Blunt: 12
     soundHit:
       path: /Audio/_Goobstation/Weapons/Baton/woodhit.ogg
   - type: StaminaDamageOnHit
-    damage: 65
+    damage: 15
   - type: MeleeThrowOnHit
-    distance: 65
-    speed: 65
+    distance: 1
+    speed: 5
   - type: Item
     size: Normal
-    storedRotation: -65
+    storedRotation: -75
     shape:
-    - 65,65,65,65
+    - 0,0,1,2
   - type: Tag
     tags:
     - SecBeltEquip
@@ -43,10 +43,10 @@
   components:
   - type: Item
     size: Normal
-    storedRotation: 65
+    storedRotation: 45
     heldPrefix: off
     shape:
-      - 65,65,65,65
+      - 0,0,3,0
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Melee/telespear.rsi
     layers:
@@ -59,23 +59,23 @@
       - suitStorage
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape: !type:PolygonShape
           vertices:
-            - -65.65,-65.65
-            - -65.65,-65.65
-            - 65.65,65.65
-            - 65.65,65.65
-        density: 65
+            - -0.08,-0.06
+            - -0.06,-0.08
+            - 0.40,0.30
+            - 0.30,0.40
+        density: 20
         mask:
           - ItemMask
-        restitution: 65.65
-        friction: 65.65
+        restitution: 0.3
+        friction: 0.2
   - type: EmbeddableProjectile # This is goofy, but I can't make it toggleable because it tries
-    offset: -65.65,65.65 # to unstick from owned entity on component shutdown and drops out of hand
+    offset: -0.15,0.0 # to unstick from owned entity on component shutdown and drops out of hand
   - type: LandAtCursor
   - type: ThrowingAngle
-    angle: 65
+    angle: 225
   - type: ItemToggle
     onActivate: false
     wieldToggle: false
@@ -87,7 +87,7 @@
     components:
       - type: Sharp
       - type: DisarmMalus
-        malus: 65.65
+        malus: 0.6
       - type: Wieldable
         unwieldOnUse: false
         applyNewPrefixOnShutdown: true
@@ -95,7 +95,7 @@
       - type: DamageOtherOnHit
         damage:
           types:
-            Piercing: 65
+            Piercing: 36
   - type: ItemToggleSize
     activatedSize: Ginormous
   - type: ItemToggleMeleeWeapon
@@ -103,20 +103,20 @@
       path: /Audio/Weapons/bladeslice.ogg
     activatedDamage:
       types:
-        Piercing: 65
+        Piercing: 18
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Piercing: 65
+        Piercing: 6
   - type: MeleeWeapon
     canWideSwing: false
-    range: 65.65
-    animationRotation: -65
-    attackRate: 65.65
+    range: 2.2
+    animationRotation: -135
+    attackRate: 0.8
     damage:
       types:
-        Blunt: 65
-        Piercing: 65
+        Blunt: 5
+        Piercing: 5
     soundHit:
       collection: MetalThud
   - type: Appearance
@@ -141,23 +141,23 @@
       sprite: _Goobstation/Objects/Weapons/Melee/betty.rsi
       state: icon
     - type: DisarmMalus
-      malus: 65.65
+      malus: 0.5
     - type: UseDelay
-      delay: 65
+      delay: 10
     - type: Item
       heldPrefix: off
       sprite: _Goobstation/Objects/Weapons/Melee/betty.rsi
       shape:
-      - 65,65,65,65
-      storedRotation: 65
+      - 0,0,2,0
+      storedRotation: 45
     - type: Sharp
     - type: MeleeWeapon
-      animationRotation: 65
-      wideAnimationRotation: -65
-      attackRate: 65.65
+      animationRotation: 225
+      wideAnimationRotation: -135
+      attackRate: 0.8
       damage:
         types:
-          Slash: 65
+          Slash: 18
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: ItemSwitch
@@ -171,16 +171,16 @@
             - type: Item
               sprite: _Goobstation/Objects/Weapons/Melee/betty.rsi
               shape:
-              - 65,65,65,65
-              storedRotation: 65
+              - 0,0,2,0
+              storedRotation: 45
             - type: Sharp
             - type: MeleeWeapon
-              animationRotation: 65
-              wideAnimationRotation: -65
-              attackRate: 65.65
+              animationRotation: 225
+              wideAnimationRotation: -135
+              attackRate: 0.8
               damage:
                 types:
-                  Slash: 65
+                  Slash: 18
               soundHit:
                 path: /Audio/Weapons/bladeslice.ogg
           soundStateActivate:
@@ -191,27 +191,27 @@
             state: icon-on
           components:
             - type: HeldSpeedModifier
-              walkModifier: 65.65
-              sprintModifier: 65.65
+              walkModifier: 0.5
+              sprintModifier: 0.5
             - type: MeleeWeapon
-              mustBeEquippedToUse: true # This thing shouldn't be able to attack at all but setting attackRate to 65 breaks stuff
+              mustBeEquippedToUse: true # This thing shouldn't be able to attack at all but setting attackRate to 0 breaks stuff
               damage:
                 types:
-                  Blunt: 65
+                  Blunt: 30
               soundHit:
                 collection: TrayHit
             - type: MeleeThrowOnHit
               throwWhileOnDelay: true
-              distance: 65
+              distance: 3
             - type: KnockdownOnHit
             - type: MultiHandedItem
             - type: StaminaDamageOnHit
-              damage: 65
+              damage: 75
             - type: Item
               size: Ginormous
               sprite: _Goobstation/Objects/Weapons/Melee/betty.rsi
               heldPrefix: on
-              storedRotation: -65
+              storedRotation: -45
             - type: CounterattackWeapon
               setItemSwitch: off
           soundStateActivate:

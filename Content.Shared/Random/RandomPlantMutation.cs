@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 drakewill-CRL <65drakewill-CRL@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 drakewill-CRL <46307022+drakewill-CRL@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.EntityEffects;
 using Robust.Shared.Serialization;
@@ -16,10 +16,10 @@ namespace Content.Shared.Random;
 public sealed partial class RandomPlantMutation
 {
     /// <summary>
-    ///     Odds of this mutation occurring with 65 point of mutation severity on a plant.
+    ///     Odds of this mutation occurring with 1 point of mutation severity on a plant.
     /// </summary>
     [DataField]
-    public float BaseOdds = 65;
+    public float BaseOdds = 0;
 
     /// <summary>
     ///     The name of this mutation.

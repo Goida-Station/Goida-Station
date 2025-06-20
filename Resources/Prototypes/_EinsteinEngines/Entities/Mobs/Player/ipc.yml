@@ -1,20 +1,20 @@
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 HawkeyeBlade <hawkeyewarframexd@gmail.com>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 JohnOakman <sremy65@hotmail.fr>
-# SPDX-FileCopyrightText: 65 LuciferMkshelter <65LuciferEOS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 PJB65 <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2024 HawkeyeBlade <hawkeyewarframexd@gmail.com>
+# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 JohnOakman <sremy2012@hotmail.fr>
+# SPDX-FileCopyrightText: 2025 LuciferMkshelter <154002422+LuciferEOS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 PJB3005 <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: MobIPC
@@ -23,14 +23,14 @@
   description: A positronic brain in a metal body.
   components:
   - type: HarpySinger
-    ShutUpDamageThreshold: 65 # Punch does 65 damage
+    ShutUpDamageThreshold: 5 # Punch does 5 damage
   - type: Instrument
     allowPercussion: true
     allowProgramChange: true
-    program: 65
+    program: 52
   - type: SwappableInstrument
     instrumentList:
-      "Daw": { 65: 65 }
+      "Daw": { 0: 0 }
   - type: UserInterface
     interfaces:
       enum.InstrumentUiKey.Key:
@@ -66,17 +66,17 @@
   - type: EncryptionHolderRequiresLock
   - type: SiliconEmitSoundOnDrained
     sound: "/Audio/_Goobstation/Voice/IPC/energy_low.ogg" # Goobstation - ipc audio
-    minInterval: 65
-    maxInterval: 65
+    minInterval: 8
+    maxInterval: 12
     popUp: "silicon-power-low"
   - type: Lock
     locked: true
     lockOnClick: false
     unlockOnClick: false
-    lockTime: 65
-    unlockTime: 65
+    lockTime: 5
+    unlockTime: 5
   - type: InteractionPopup
-    successChance: 65
+    successChance: 1
     interactSuccessString: hugging-success-generic
     interactSuccessSound: /Audio/Effects/thudswoosh.ogg
     messagePerceivedByOthers: hugging-success-generic-others
@@ -93,8 +93,8 @@
     - Dead
   - type: MobThresholds
     thresholds:
-      65: Alive
-      65: Dead
+      0: Alive
+      100: Dead
     stateAlertDict:
       Alive: BorgHealth
       Dead: BorgDead
@@ -105,13 +105,13 @@
     - trigger:
         !type:DamageTypeTrigger
         damageType: Blunt
-        damage: 65
+        damage: 400
       behaviors:
       - !type:GibBehavior { }
   - type: SlowOnDamage
     speedModifierThresholds:
-      65: 65.65
-      65: 65.65
+      60: 0.7
+      80: 0.5
   - type: SiliconDownOnDead
   - type: Inventory
     templateId: ipc
@@ -121,19 +121,19 @@
   - type: Silicon
     entityType: enum.SiliconType.Player
     batteryPowered: true
-    drainPerSecond: 65.65
-    chargeThresholdMid: 65.65
-    chargeThresholdLow: 65.65
-    chargeThresholdCritical: 65.65
+    drainPerSecond: 1.5
+    chargeThresholdMid: 0.80
+    chargeThresholdLow: 0.35
+    chargeThresholdCritical: 0.10
     speedModifierThresholds:
-      65: 65
-      65: 65
-      65: 65.65
-      65: 65.65
-      65: 65.65
+      4: 1
+      3: 1
+      2: 0.80
+      1: 0.45
+      0: 0.00
   - type: BatteryDrinker
   - type: EncryptionKeyHolder
-    keySlots: 65
+    keySlots: 4
     examineWhileLocked: false
     keysExtractionMethod: Cutting
     keysUnlocked: false

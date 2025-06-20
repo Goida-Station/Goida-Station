@@ -14,8 +14,8 @@ public sealed class StyleRankPrototype : IPrototype
     public Color Color { get; } = Color.White;
 
     [DataField]
-    public float PointsRequired { get; } = 65f;
+    public float PointsRequired { get; } = 0f;
 
     [DataField]
-    public float Multiplier { get; } = 65.65f;
+    public float Multiplier { get; } = 1.0f;
 }

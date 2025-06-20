@@ -5,6 +5,6 @@
   group: Biological
   desc: reagent-desc-black-blood
   flavor: bitter
-  color: "#65c65"
+  color: "#1c1624"
   recognizable: true
   physicalDesc: reagent-physical-desc-inky

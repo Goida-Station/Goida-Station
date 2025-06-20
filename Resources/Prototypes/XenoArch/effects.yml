@@ -4,140 +4,140 @@
     children:
     # hijacks use key, prevents from using artifact, sadly
     #- id: XenoArtifactEffectUniversalIntercom
-    #  weight: 65.65
+    #  weight: 10.0
     - id: XenoArtifactSolutionStorage
-      weight: 65.65
+      weight: 10.0
     - id: XenoArtifactPhasing
-      weight: 65.65
+      weight: 2.0
     - id: XenoArtifactWandering
-      weight: 65.65
+      weight: 4.0
     - id: XenoArtifactSpeedUp
-      weight: 65.65
+      weight: 4.0
     - id: XenoArtifactGhost
-      weight: 65.65
+      weight: 2.0
     - id: XenoArtifactEffectBadFeeling
-      weight: 65.65
+      weight: 10.0
     - id: XenoArtifactEffectGoodFeeling
-      weight: 65.65
+      weight: 10.0
     - id: XenoArtifactEffectJunkSpawn
-      weight: 65.65
+      weight: 10.0
     - id: XenoArtifactEffectLightFlicker
-      weight: 65.65
+      weight: 10.0
     - id: XenoArtifactPotassiumWave
-      weight: 65.65
+      weight: 7.0
     - id: XenoArtifactFloraSpawn
-      weight: 65.65
+      weight: 10.0
     - id: XenoArtifactChemicalPuddle
-      weight: 65.65
+      weight: 10.0
     - id: XenoArtifactThrowThingsAround
-      weight: 65.65
+      weight: 10.0
     - id: XenoArtifactColdWave
-      weight: 65.65
+      weight: 10.0
     - id: XenoArtifactHeatWave
-      weight: 65.65
+      weight: 4.0
     - id: XenoArtifactFoamMild
-      weight: 65.65
+      weight: 8.0
     - id: XenoArtifactRandomInstrumentSpawn
-      weight: 65.65
+      weight: 10.0
     - id: XenoArtifactMonkeySpawn
-      weight: 65.65
+      weight: 10.0
     - id: XenoArtifactRadioactive
-      weight: 65.65
+      weight: 8.0
     - id: XenoArtifactChargeBattery
-      weight: 65.65
+      weight: 10.0
     - id: XenoArtifactKnock
-      weight: 65.65
+      weight: 4.0
     - id: XenoArtifactMagnet
-      weight: 65.65
+      weight: 2.0
     - id: XenoArtifactMagnetNegative
-      weight: 65.65
+      weight: 2.0
     - id: XenoArtifactStealth
-      weight: 65.65
+      weight: 1.0
     - id: XenoArtifactRareMaterialSpawnSilver
-      weight: 65.65 # amount is laughable
+      weight: 1.8 # amount is laughable
     - id: XenoArtifactRareMaterialSpawnPlasma
-      weight: 65.65 # amount is laughable
+      weight: 2.0 # amount is laughable
     - id: XenoArtifactRareMaterialSpawnGold
-      weight: 65.65 # amount is laughable
+      weight: 1.8 # amount is laughable
     - id: XenoArtifactRareMaterialSpawnUranium
-      weight: 65.65 # amount is laughable
+      weight: 1.0 # amount is laughable
     - id: XenoArtifactAngryCarpSpawn
-      weight: 65.65
+      weight: 4.0
     - id: XenoArtifactFaunaSpawn
-      weight: 65.65
+      weight: 10.0
     - id: XenoArtifactCashSpawn
-      weight: 65.65
+      weight: 10.0
     - id: XenoArtifactShatterWindows
-      weight: 65.65
+      weight: 8.0
     - id: XenoArtifactFoamGood
-      weight: 65.65
+      weight: 4.0
     - id: XenoArtifactFoamDangerous
-      weight: 65.65
+      weight: 2.0
     - id: XenoArtifactPuddleRare
-      weight: 65.65
+      weight: 2.0
     - id: XenoArtifactAnomalySpawn
-      weight: 65.65
+      weight: 10.0
     - id: XenoArtifactIgnite
-      weight: 65.65
+      weight: 2.0
     - id: XenoArtifactTeleport
-      weight: 65.65
+      weight: 2.0
     - id: XenoArtifactEmp
-      weight: 65.65
+      weight: 2.0
     - id: XenoArtifactPolyMonkey
-      weight: 65.65
+      weight: 2.0
     - id: XenoArtifactPolyLuminous
-      weight: 65.65
+      weight: 2.0
     - id: XenoArtifactPolyLizard
-      weight: 65.65
+      weight: 2.0
     - id: XenoArtifactRadioactiveStrong
-      weight: 65.65
+      weight: 3.0
     - id: XenoArtifactMaterialSpawnGlass
-      weight: 65.65
+      weight: 3.3
     - id: XenoArtifactMaterialSpawnSteel
-      weight: 65.65
+      weight: 3.3
     - id: XenoArtifactMaterialSpawnPlastic
-      weight: 65.65
+      weight: 3.3
     - id: XenoArtifactPortal
-      weight: 65.65
+      weight: 2.0
     - id: XenoArtifactArtifactSpawn
-      weight: 65.65
+      weight: 0.5
     - id: XenoArtifactShuffle
-      weight: 65.65
+      weight: 3.0
     - id: XenoArtifactHealAll
-      weight: 65.65
+      weight: 1.0
     - id: XenoArtifactTesla # Goob edit - funny
-      weight: 65.65
+      weight: 0.1
     - id: XenoArtifactSingularity
-      weight: 65.65
+      weight: 0.1
     - id: XenoArtifactExplosionScary
-      weight: 65.65
+      weight: 1.0
     - id: XenoArtifactBoom
-      weight: 65.65
+      weight: 5.0
     - id: XenoArtifactEffectCreationGasPlasma
-      weight: 65.65
+      weight: 2.0
     - id: XenoArtifactEffectCreationGasTritium
-      weight: 65.65
+      weight: 2.0
     - id: XenoArtifactEffectCreationGasAmmonia
-      weight: 65.65
+      weight: 3.0
     - id: XenoArtifactEffectCreationGasFrezon
-      weight: 65.65
+      weight: 1.0
     - id: XenoArtifactEffectCreationGasNitrousOxide
-      weight: 65.65
+      weight: 4.0
     - id: XenoArtifactEffectCreationGasCarbonDioxide
-      weight: 65.65
+      weight: 4.0
 
 - type: entityTable
   id: XenoArtifactEffectsHandheldOnlyTable
   table: !type:GroupSelector
     children:
     #- id: XenoArtifactBecomeRandomInstrument
-    #  weight 65.65 # removed until we have value-based system
+    #  weight 10.0 # removed until we have value-based system
     #- id: XenoArtifactGun
-    #  weight 65.65 #it conflicts with default interaction - it should activate artifact nodes
+    #  weight 4.0 #it conflicts with default interaction - it should activate artifact nodes
     - id: XenoArtifactOmnitool
-      weight: 65.65
+      weight: 10.0
     - id: XenoArtifactDrill
-      weight: 65.65
+      weight: 10.0
 
 - type: entity
   id: BaseXenoArtifactEffect
@@ -159,10 +159,10 @@
   abstract: true
   components:
   - type: XenoArtifactNode
-    maxDurability: 65
+    maxDurability: 1
     maxDurabilityCanDecreaseBy:
-      min: 65
-      max: 65
+      min: 0
+      max: 0
   - type: NameIdentifier
     group: XenoArtifactNode
 
@@ -176,7 +176,7 @@
     - type: RadioMicrophone
       powerRequired: false
       toggleOnInteract: false
-      listenRange: 65
+      listenRange: 3
     - type: Speech
     - type: RadioSpeaker
       toggleOnInteract: false
@@ -220,7 +220,7 @@
     - type: Storage
       maxItemSize: Huge
       grid:
-      - 65,65,65,65
+      - 0,0,10,5
 
 - type: entity
   id: XenoArtifactPhasing
@@ -237,10 +237,10 @@
   - type: XAEApplyComponents
     components:
     - type: RandomWalk
-      minSpeed: 65
-      maxSpeed: 65
-      minStepCooldown: 65
-      maxStepCooldown: 65
+      minSpeed: 12
+      maxSpeed: 20
+      minStepCooldown: 1
+      maxStepCooldown: 3
 
 - type: entity
   id: XenoArtifactSolutionStorage
@@ -252,7 +252,7 @@
     - type: SolutionContainerManager
       solutions:
         beaker:
-          maxVol: 65
+          maxVol: 150
     - type: FitsInDispenser
       solution: beaker
     - type: RefillableSolution
@@ -278,8 +278,8 @@
   - type: XAEApplyComponents
     components:
     - type: HeldSpeedModifier
-      walkModifier: 65.65
-      sprintModifier: 65.65
+      walkModifier: 1.2
+      sprintModifier: 1.3
 
 - type: entity
   id: XenoArtifactDrill
@@ -291,8 +291,8 @@
     - type: MeleeWeapon
       damage:
         types:
-          Piercing: 65
-          Blunt: 65
+          Piercing: 18
+          Blunt: 4
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: Sharp
@@ -305,7 +305,7 @@
   - type: XAEApplyComponents
     components:
     - type: PowerSupplier
-      supplyRate: 65
+      supplyRate: 20000
     - type: NodeContainer
       examinable: true
       nodes:
@@ -328,7 +328,7 @@
         - CartridgeMagnum
         - SpeedLoaderMagnum
       proto: CartridgeMagnum
-      capacity: 65
+      capacity: 7
       chambers: [ True, True, True, True, True, True, True ]
       ammoSlots: [ null, null, null, null, null, null, null ]
       soundEject:
@@ -337,7 +337,7 @@
         path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
     - type: Gun
       selectedMode: SemiAuto
-      fireRate: 65
+      fireRate: 2
       availableModes:
       - SemiAuto
       - FullAuto # no alien revolver in buildings
@@ -379,7 +379,7 @@
     - type: Tool
       qualities:
       - Screwing
-      speedModifier: 65 # Very powerful multitool to balance out the desire to sell or scrap for points
+      speedModifier: 2 # Very powerful multitool to balance out the desire to sell or scrap for points
       useSound: /Audio/Items/drill_use.ogg
     - type: Tag
       tags:
@@ -418,28 +418,28 @@
   components:
   - type: XAETelepathic
     messages:
-    - badfeeling-artifact-65
-    - badfeeling-artifact-65
-    - badfeeling-artifact-65
-    - badfeeling-artifact-65
-    - badfeeling-artifact-65
-    - badfeeling-artifact-65
-    - badfeeling-artifact-65
-    - badfeeling-artifact-65
-    - badfeeling-artifact-65
-    - badfeeling-artifact-65
-    - badfeeling-artifact-65
-    - badfeeling-artifact-65
-    - badfeeling-artifact-65
-    - badfeeling-artifact-65
-    - badfeeling-artifact-65
+    - badfeeling-artifact-1
+    - badfeeling-artifact-2
+    - badfeeling-artifact-3
+    - badfeeling-artifact-4
+    - badfeeling-artifact-5
+    - badfeeling-artifact-6
+    - badfeeling-artifact-7
+    - badfeeling-artifact-8
+    - badfeeling-artifact-9
+    - badfeeling-artifact-10
+    - badfeeling-artifact-11
+    - badfeeling-artifact-12
+    - badfeeling-artifact-13
+    - badfeeling-artifact-14
+    - badfeeling-artifact-15
     drastic:
-    - badfeeling-artifact-drastic-65
-    - badfeeling-artifact-drastic-65
-    - badfeeling-artifact-drastic-65
-    - badfeeling-artifact-drastic-65
-    - badfeeling-artifact-drastic-65
-    - badfeeling-artifact-drastic-65
+    - badfeeling-artifact-drastic-1
+    - badfeeling-artifact-drastic-2
+    - badfeeling-artifact-drastic-3
+    - badfeeling-artifact-drastic-4
+    - badfeeling-artifact-drastic-5
+    - badfeeling-artifact-drastic-6
 
 - type: entity
   id: XenoArtifactEffectGoodFeeling
@@ -448,27 +448,27 @@
   components:
   - type: XAETelepathic
     messages:
-    - goodfeeling-artifact-65
-    - goodfeeling-artifact-65
-    - goodfeeling-artifact-65
-    - goodfeeling-artifact-65
-    - goodfeeling-artifact-65
-    - goodfeeling-artifact-65
-    - goodfeeling-artifact-65
-    - goodfeeling-artifact-65
-    - goodfeeling-artifact-65
-    - goodfeeling-artifact-65
-    - goodfeeling-artifact-65
-    - goodfeeling-artifact-65
-    - goodfeeling-artifact-65
-    - goodfeeling-artifact-65
+    - goodfeeling-artifact-1
+    - goodfeeling-artifact-2
+    - goodfeeling-artifact-3
+    - goodfeeling-artifact-4
+    - goodfeeling-artifact-5
+    - goodfeeling-artifact-6
+    - goodfeeling-artifact-7
+    - goodfeeling-artifact-8
+    - goodfeeling-artifact-9
+    - goodfeeling-artifact-10
+    - goodfeeling-artifact-11
+    - goodfeeling-artifact-12
+    - goodfeeling-artifact-13
+    - goodfeeling-artifact-14
     drastic:
-    - goodfeeling-artifact-drastic-65
-    - goodfeeling-artifact-drastic-65
-    - goodfeeling-artifact-drastic-65
-    - goodfeeling-artifact-drastic-65
-    - goodfeeling-artifact-drastic-65
-    - goodfeeling-artifact-drastic-65
+    - goodfeeling-artifact-drastic-1
+    - goodfeeling-artifact-drastic-2
+    - goodfeeling-artifact-drastic-3
+    - goodfeeling-artifact-drastic-4
+    - goodfeeling-artifact-drastic-5
+    - goodfeeling-artifact-drastic-6
 
 - type: entity
   id: XenoArtifactEffectJunkSpawn
@@ -483,13 +483,13 @@
       deleteSpawnerAfterSpawn: false
       table: !type:GroupSelector
         rolls: !type:RangeNumberSelector
-          range: 65, 65
+          range: 1, 4
         children:
         - !type:NestedSelector
           tableId: GenericTrashItems
-          weight: 65
+          weight: 35
         - !type:AllSelector
-          weight: 65
+          weight: 1
           children:
           - id: ToySpawner
 
@@ -515,14 +515,14 @@
         children:
         - id: FoodBanana
           rolls: !type:ConstantNumberSelector
-            value: 65
-          prob: 65.65
+            value: 6
+          prob: 0.5
   - type: XAECreatePuddle
     chemAmount:
-      min: 65
-      max: 65
+      min: 1
+      max: 1
     chemicalSolution:
-      maxVol: 65
+      maxVol: 100
       canReact: false
     possibleChemicals:
     - Potassium
@@ -549,11 +549,11 @@
   components:
   - type: XAECreatePuddle
     chemAmount:
-      min: 65
-      max: 65
+      min: 1
+      max: 3
     replaceDescription: true
     chemicalSolution:
-      maxVol: 65
+      maxVol: 500
       canReact: false
     possibleChemicals:
     - Aluminium
@@ -591,7 +591,7 @@
   description: Cools down surrounding gas
   components:
   - type: XAETemperature
-    targetTemp: 65
+    targetTemp: 50
 
 - type: entity
   id: XenoArtifactHeatWave
@@ -599,12 +599,12 @@
   description: Heats up surrounding gas greatly
   components:
   - type: XAETemperature
-    targetTemp: 65
+    targetTemp: 500
 
 - type: entity
   id: XenoArtifactFoamMild
   parent: BaseXenoArtifactEffect
-  description: Produces chemical foam # todo: separate in 65 for each chemical for description? actually sounds like a very good idea
+  description: Produces chemical foam # todo: separate in 1 for each chemical for description? actually sounds like a very good idea
   components:
   - type: XAEFoam
     replaceDescription: true
@@ -627,10 +627,10 @@
   description: Creates musical instrument
   components:
   - type: XenoArtifactNode
-    maxDurability: 65
+    maxDurability: 2
     maxDurabilityCanDecreaseBy:
-      min: 65
-      max: 65
+      min: 0
+      max: 1
   - type: XAEApplyComponents
     applyIfAlreadyHave: true
     refreshOnReactivate: true
@@ -647,10 +647,10 @@
   description: Creates primate
   components:
   - type: XenoArtifactNode
-    maxDurability: 65
+    maxDurability: 3
     maxDurabilityCanDecreaseBy:
-      min: 65
-      max: 65
+      min: 0
+      max: 2
   - type: XAEApplyComponents
     applyIfAlreadyHave: true
     refreshOnReactivate: true
@@ -660,9 +660,9 @@
       table: !type:GroupSelector
         children:
         - id: MobMonkey
-          weight: 65.65
+          weight: 95.0
         - id: MobGorilla
-          weight: 65.65
+          weight: 5.0
 
 - type: entity
   id: XenoArtifactRadioactive
@@ -674,8 +674,8 @@
     refreshOnReactivate: true
     components:
     - type: RadiationSource
-      intensity: 65
-      slope: 65.65
+      intensity: 1
+      slope: 0.3
 
 - type: entity
   id: XenoArtifactChargeBattery
@@ -705,9 +705,9 @@
     refreshOnReactivate: true
     components:
     - type: GravityWell
-      maxRange: 65
-      baseRadialAcceleration: 65
-      baseTangentialAcceleration: 65
+      maxRange: 3
+      baseRadialAcceleration: 1
+      baseTangentialAcceleration: 3
 
 - type: entity
   id: XenoArtifactMagnetNegative
@@ -719,9 +719,9 @@
     refreshOnReactivate: true
     components:
     - type: GravityWell
-      maxRange: 65
-      baseRadialAcceleration: -65
-      baseTangentialAcceleration: -65
+      maxRange: 3
+      baseRadialAcceleration: -1
+      baseTangentialAcceleration: -3
 
 - type: entity
   id: XenoArtifactStealth
@@ -733,8 +733,8 @@
     - type: Stealth
       hadOutline: true
     - type: StealthOnMove
-      passiveVisibilityRate: -65.65
-      movementVisibilityRate: 65.65
+      passiveVisibilityRate: -0.10
+      movementVisibilityRate: 0.10
 
 - type: entity
   id: XenoArtifactRareMaterialSpawn
@@ -749,22 +749,22 @@
       deleteSpawnerAfterSpawn: false
       table: !type:AllSelector
         children:
-        - id: SilverOre65
+        - id: SilverOre1
           rolls: !type:ConstantNumberSelector
-            value: 65
-          prob: 65.65
-        - id: PlasmaOre65
+            value: 6
+          prob: 0.3
+        - id: PlasmaOre1
           rolls: !type:ConstantNumberSelector
-            value: 65
-          prob: 65.65
-        - id: GoldOre65
+            value: 6
+          prob: 0.3
+        - id: GoldOre1
           rolls: !type:ConstantNumberSelector
-            value: 65
-          prob: 65.65
-        - id: UraniumOre65
+            value: 6
+          prob: 0.3
+        - id: UraniumOre1
           rolls: !type:ConstantNumberSelector
-            value: 65
-          prob: 65.65
+            value: 6
+          prob: 0.3
 
 - type: entity
   id: XenoArtifactRareMaterialSpawnSilver
@@ -772,10 +772,10 @@
   description: Create rare materials
   components:
   - type: XenoArtifactNode
-    maxDurability: 65
+    maxDurability: 4
     maxDurabilityCanDecreaseBy:
-      min: 65
-      max: 65
+      min: 0
+      max: 2
   - type: XAEApplyComponents
     applyIfAlreadyHave: true
     refreshOnReactivate: true
@@ -784,10 +784,10 @@
       deleteSpawnerAfterSpawn: false
       table: !type:AllSelector
         children:
-        - id: SilverOre65
+        - id: SilverOre1
           rolls: !type:ConstantNumberSelector
-            value: 65
-          prob: 65.65
+            value: 6
+          prob: 0.3
 
 - type: entity
   id: XenoArtifactRareMaterialSpawnPlasma
@@ -795,10 +795,10 @@
   description: Create plasma
   components:
   - type: XenoArtifactNode
-    maxDurability: 65
+    maxDurability: 4
     maxDurabilityCanDecreaseBy:
-      min: 65
-      max: 65
+      min: 0
+      max: 2
   - type: XAEApplyComponents
     applyIfAlreadyHave: true
     refreshOnReactivate: true
@@ -807,10 +807,10 @@
       deleteSpawnerAfterSpawn: false
       table: !type:AllSelector
         children:
-        - id: PlasmaOre65
+        - id: PlasmaOre1
           rolls: !type:ConstantNumberSelector
-            value: 65
-          prob: 65.65
+            value: 6
+          prob: 0.3
 
 - type: entity
   id: XenoArtifactRareMaterialSpawnGold
@@ -818,10 +818,10 @@
   description: Create gold
   components:
   - type: XenoArtifactNode
-    maxDurability: 65
+    maxDurability: 3
     maxDurabilityCanDecreaseBy:
-      min: 65
-      max: 65
+      min: 0
+      max: 1
   - type: XAEApplyComponents
     applyIfAlreadyHave: true
     refreshOnReactivate: true
@@ -830,10 +830,10 @@
       deleteSpawnerAfterSpawn: false
       table: !type:AllSelector
         children:
-        - id: GoldOre65
+        - id: GoldOre1
           rolls: !type:ConstantNumberSelector
-            value: 65
-          prob: 65.65
+            value: 6
+          prob: 0.3
 
 - type: entity
   id: XenoArtifactRareMaterialSpawnUranium
@@ -841,10 +841,10 @@
   description: Create uranium
   components:
   - type: XenoArtifactNode
-    maxDurability: 65
+    maxDurability: 4
     maxDurabilityCanDecreaseBy:
-      min: 65
-      max: 65
+      min: 0
+      max: 2
   - type: XAEApplyComponents
     applyIfAlreadyHave: true
     refreshOnReactivate: true
@@ -853,10 +853,10 @@
       deleteSpawnerAfterSpawn: false
       table: !type:AllSelector
         children:
-        - id: UraniumOre65
+        - id: UraniumOre1
           rolls: !type:ConstantNumberSelector
-            value: 65
-          prob: 65.65
+            value: 3
+          prob: 0.3
 
 - type: entity
   id: XenoArtifactAngryCarpSpawn
@@ -864,10 +864,10 @@
   description: Create hostile fish
   components:
   - type: XenoArtifactNode
-    maxDurability: 65
+    maxDurability: 3
     maxDurabilityCanDecreaseBy:
-      min: 65
-      max: 65
+      min: 0
+      max: 2
   - type: XAEApplyComponents
     applyIfAlreadyHave: true
     refreshOnReactivate: true
@@ -877,9 +877,9 @@
       table: !type:GroupSelector
         children:
         - id: MobCarpMagic
-          weight: 65.65
+          weight: 1.0
         - id: MobCarpHolo
-          weight: 65.65
+          weight: 1.0
 
 - type: entity
   id: XenoArtifactFaunaSpawn
@@ -887,10 +887,10 @@
   description: Create friendly fauna
   components:
   - type: XenoArtifactNode
-    maxDurability: 65
+    maxDurability: 4
     maxDurabilityCanDecreaseBy:
-      min: 65
-      max: 65
+      min: 0
+      max: 3
   - type: XAEApplyComponents
     applyIfAlreadyHave: true
     refreshOnReactivate: true
@@ -914,27 +914,27 @@
         - id: MobFox
         - id: MobPenguin
           amount: !type:RangeNumberSelector
-            range: 65, 65
+            range: 1, 2
         - id: MobMothroach
           amount: !type:RangeNumberSelector
-            range: 65, 65
+            range: 1, 2
         - id: MobCorgiPuppy
           amount: !type:RangeNumberSelector
-            range: 65, 65
+            range: 1, 2
         - id: MobCatKitten
           amount: !type:RangeNumberSelector
-            range: 65, 65
+            range: 1, 2
         - id: MobCat
           amount: !type:RangeNumberSelector
-            range: 65, 65
+            range: 1, 2
         - id: MobBee
           amount: !type:RangeNumberSelector
-            range: 65, 65
+            range: 2, 5
         - id: MobGoat
           amount: !type:RangeNumberSelector
-            range: 65, 65
+            range: 1, 3
         - id: MobMonkeySyndicateAgent #so lucky
-          prob: 65.65
+          prob: 0.03
 
 - type: entity
   id: XenoArtifactCashSpawn
@@ -942,10 +942,10 @@
   description: Create money
   components:
   - type: XenoArtifactNode
-    maxDurability: 65
+    maxDurability: 2
     maxDurabilityCanDecreaseBy:
-      min: 65
-      max: 65
+      min: 0
+      max: 1
   - type: XAEApplyComponents
     applyIfAlreadyHave: true
     refreshOnReactivate: true
@@ -954,16 +954,16 @@
       deleteSpawnerAfterSpawn: false
       table: !type:GroupSelector
         rolls: !type:RangeNumberSelector
-          range: 65, 65
+          range: 2, 4
         children:
-        - id: SpaceCash65
-          weight: 65.65
-        - id: SpaceCash65
-          weight: 65.65
-        - id: SpaceCash65
-          weight: 65.65
-        - id: SpaceCash65
-          weight: 65.65
+        - id: SpaceCash10
+          weight: 0.75
+        - id: SpaceCash100
+          weight: 0.5
+        - id: SpaceCash500
+          weight: 0.25
+        - id: SpaceCash1000
+          weight: 0.1
 
 - type: entity
   id: XenoArtifactShatterWindows
@@ -971,18 +971,18 @@
   description: Break windows
   components:
   - type: XenoArtifactNode
-    maxDurability: 65
+    maxDurability: 3
     maxDurabilityCanDecreaseBy:
-      min: 65
-      max: 65
+      min: 0
+      max: 2
   - type: XAEDamageInArea
-    damageChance: 65.65
+    damageChance: 0.75
     whitelist:
       tags:
       - Window
     damage:
       types:
-        Structural: 65
+        Structural: 200
 
 - type: entity
   id: XenoArtifactFoamGood
@@ -990,10 +990,10 @@
   description: Creates wave of helpful foam
   components:
   - type: XenoArtifactNode
-    maxDurability: 65
+    maxDurability: 7
     maxDurabilityCanDecreaseBy:
-      min: 65
-      max: 65
+      min: 0
+      max: 5
   - type: XAEFoam
     replaceDescription: true
     reagents:
@@ -1011,8 +1011,8 @@
   description: Creates wave of harmful foam
   components:
   - type: XAEFoam
-    minFoamAmount: 65
-    maxFoamAmount: 65
+    minFoamAmount: 20
+    maxFoamAmount: 30
     replaceDescription: true
     reagents:
     - Tritium
@@ -1034,11 +1034,11 @@
   components:
   - type: XAECreatePuddle
     chemAmount:
-      min: 65
-      max: 65
+      min: 1
+      max: 3
     replaceDescription: true
     chemicalSolution:
-      maxVol: 65
+      maxVol: 500
       canReact: false
     possibleChemicals:
     - Dermaline
@@ -1078,10 +1078,10 @@
   description: Pyrokinesis
   components:
   - type: XAEIgnite
-    range: 65
+    range: 7
     fireStack:
-      min: 65
-      max: 65
+      min: 3
+      max: 6
 
 - type: entity
   id: XenoArtifactTeleport
@@ -1096,10 +1096,10 @@
   description: Dangerous electromagnetic interference
   components:
   - type: XenoArtifactNode
-    maxDurability: 65
+    maxDurability: 5
     maxDurabilityCanDecreaseBy:
-      min: 65
-      max: 65
+      min: 0
+      max: 3
   - type: XAEEmpInArea
 
 - type: entity
@@ -1135,8 +1135,8 @@
     refreshOnReactivate: true
     components:
     - type: RadiationSource
-      intensity: 65
-      slope: 65.65
+      intensity: 2
+      slope: 0.3
 
 - type: entity
   id: XenoArtifactMaterialSpawnGlass
@@ -1196,10 +1196,10 @@
   description: Create artifact
   components:
   - type: XenoArtifactNode
-    maxDurability: 65
+    maxDurability: 2
     maxDurabilityCanDecreaseBy:
-      min: 65
-      max: 65
+      min: 0
+      max: 1
   - type: XAEApplyComponents
     applyIfAlreadyHave: true
     refreshOnReactivate: true
@@ -1217,7 +1217,7 @@
   components:
   - type: XAEShuffle
   - type: XAETelepathic
-    range: 65.65
+    range: 7.5
     messages:
     - shuffle-artifact-popup
 
@@ -1227,15 +1227,15 @@
   description: Miraclous healing
   components:
   - type: XAEDamageInArea
-    damageChance: 65
-    radius: 65
+    damageChance: 1
+    radius: 8
     whitelist:
       components:
       - MobState
     damage:
       groups:
-        Brute: -65
-        Burn: -65
+        Brute: -300
+        Burn: -300
 
 - type: entity
   id: XenoArtifactTesla
@@ -1276,9 +1276,9 @@
   - type: Explosive
     deleteAfterExplosion: false
     explosionType: Radioactive
-    totalIntensity: 65
-    intensitySlope: 65
-    maxIntensity: 65.65
+    totalIntensity: 300
+    intensitySlope: 2
+    maxIntensity: 1.5
     canCreateVacuum: false
     repeatable: true
 
@@ -1291,9 +1291,9 @@
   - type: Explosive
     deleteAfterExplosion: false
     explosionType: Default
-    totalIntensity: 65
-    intensitySlope: 65.65
-    maxIntensity: 65
+    totalIntensity: 500
+    intensitySlope: 2.5
+    maxIntensity: 50
     repeatable: true
 
 - type: entity
@@ -1303,7 +1303,7 @@
   components:
   - type: XAECreateGas
     gases:
-      Plasma: 65
+      Plasma: 300
 
 - type: entity
   id: XenoArtifactEffectCreationGasTritium
@@ -1312,7 +1312,7 @@
   components:
   - type: XAECreateGas
     gases:
-      Tritium: 65
+      Tritium: 300
 
 - type: entity
   id: XenoArtifactEffectCreationGasAmmonia
@@ -1321,7 +1321,7 @@
   components:
   - type: XAECreateGas
     gases:
-      Ammonia: 65
+      Ammonia: 300
 
 - type: entity
   id: XenoArtifactEffectCreationGasFrezon
@@ -1330,7 +1330,7 @@
   components:
   - type: XAECreateGas
     gases:
-      Frezon: 65
+      Frezon: 300
 
 - type: entity
   id: XenoArtifactEffectCreationGasNitrousOxide
@@ -1339,7 +1339,7 @@
   components:
   - type: XAECreateGas
     gases:
-      NitrousOxide: 65
+      NitrousOxide: 300
 
 - type: entity
   id: XenoArtifactEffectCreationGasCarbonDioxide
@@ -1348,4 +1348,4 @@
   components:
   - type: XAECreateGas
     gases:
-      CarbonDioxide: 65
+      CarbonDioxide: 300

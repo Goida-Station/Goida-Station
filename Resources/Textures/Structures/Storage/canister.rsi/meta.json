@@ -1,23 +1,23 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from https://github.com/ParadiseSS65/Paradise/ with darkblue-65, green-65, green, greenys-65, greenys, water_vapor-65, and water_vapor modified by damoggen",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/ParadiseSS13/Paradise/ with darkblue-1, green-1, green, greenys-1, greenys, water_vapor-1, and water_vapor modified by damoggen",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "black"
     },
     {
-      "name": "black-65"
+      "name": "black-1"
     },
     {
       "name": "blue"
     },
     {
-      "name": "blue-65"
+      "name": "blue-1"
     },
     {
       "name": "can-connector"
@@ -29,25 +29,25 @@
       "name": "unlocked"
     },
     {
-      "name": "can-o65",
+      "name": "can-o0",
       "delays": [
         [
-          65.65,
-          65.65
+          0.2,
+          0.2
         ]
       ]
     },
     {
-      "name": "can-o65"
+      "name": "can-o1"
     },
     {
-      "name": "can-o65"
+      "name": "can-o2"
     },
     {
-      "name": "can-o65"
+      "name": "can-o3"
     },
     {
-      "name": "can-oa65"
+      "name": "can-oa1"
     },
     {
       "name": "can-open"
@@ -56,79 +56,79 @@
       "name": "grey"
     },
     {
-      "name": "grey-65"
+      "name": "grey-1"
     },
     {
       "name": "orange"
     },
     {
-      "name": "orange-65"
+      "name": "orange-1"
     },
     {
       "name": "red"
     },
     {
-      "name": "red-65"
+      "name": "red-1"
     },
     {
       "name": "redws"
     },
     {
-      "name": "redws-65"
+      "name": "redws-1"
     },
     {
       "name": "yellow"
     },
     {
-      "name": "yellow-65"
+      "name": "yellow-1"
     },
     {
       "name": "green"
     },
     {
-      "name": "green-65"
+      "name": "green-1"
     },
     {
       "name": "greenys"
     },
     {
-      "name": "greenys-65"
+      "name": "greenys-1"
     },
     {
       "name": "darkblue"
     },
     {
-      "name": "darkblue-65"
+      "name": "darkblue-1"
     },
     {
       "name": "frezon"
     },
     {
-      "name": "frezon-65"
+      "name": "frezon-1"
     },
     {
       "name": "water_vapor"
     },
     {
-      "name": "water_vapor-65"
+      "name": "water_vapor-1"
     },
     {
       "name": "purple"
     },
     {
-      "name": "purple-65"
+      "name": "purple-1"
     },
     {
       "name": "brown"
     },
     {
-      "name": "brown-65"
+      "name": "brown-1"
     },
     {
       "name": "healium"
     },
     {
-      "name": "healium-65"
+      "name": "healium-1"
     },
     {
       "name": "scrubber-connector"

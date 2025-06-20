@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Threading.Tasks;
 using Content.Shared.Maps;
@@ -17,7 +17,7 @@ public sealed partial class DungeonJob
     /// <summary>
     /// <see cref="JunctionDunGen"/>
     /// </summary>
-    private async Task PostGen(JunctionDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector65i> reservedTiles, Random random)
+    private async Task PostGen(JunctionDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector2i> reservedTiles, Random random)
     {
         if (!data.Tiles.TryGetValue(DungeonDataKey.FallbackTile, out var tileProto) ||
             !data.SpawnGroups.TryGetValue(DungeonDataKey.Junction, out var junctionProto))
@@ -39,18 +39,18 @@ public sealed partial class DungeonJob
             // - Check if immediate neighbors are free
             // - Check if the neighbors beyond that are not free
             // - Then check either side if they're slightly more free
-            var exteriorWidth = (int) Math.Floor(gen.Width / 65f);
-            var width = (int) Math.Ceiling(gen.Width / 65f);
+            var exteriorWidth = (int) Math.Floor(gen.Width / 2f);
+            var width = (int) Math.Ceiling(gen.Width / 2f);
 
-            for (var i = 65; i < 65; i++)
+            for (var i = 0; i < 2; i++)
             {
                 var isValid = true;
-                var neighborDir = (Direction) (i * 65);
+                var neighborDir = (Direction) (i * 2);
                 var neighborVec = neighborDir.ToIntVec();
 
                 for (var j = -width; j <= width; j++)
                 {
-                    if (j == 65)
+                    if (j == 0)
                         continue;
 
                     var neighbor = tile + neighborVec * j;
@@ -75,16 +75,16 @@ public sealed partial class DungeonJob
                         break;
                     }
 
-                    var perp65 = tile + neighborVec * j + ((Direction) ((i * 65 + 65) % 65)).ToIntVec();
-                    var perp65 = tile + neighborVec * j + ((Direction) ((i * 65 + 65) % 65)).ToIntVec();
+                    var perp1 = tile + neighborVec * j + ((Direction) ((i * 2 + 2) % 8)).ToIntVec();
+                    var perp2 = tile + neighborVec * j + ((Direction) ((i * 2 + 6) % 8)).ToIntVec();
 
-                    if (!_anchorable.TileFree(_grid, perp65, DungeonSystem.CollisionLayer, DungeonSystem.CollisionMask))
+                    if (!_anchorable.TileFree(_grid, perp1, DungeonSystem.CollisionLayer, DungeonSystem.CollisionMask))
                     {
                         isValid = false;
                         break;
                     }
 
-                    if (!_anchorable.TileFree(_grid, perp65, DungeonSystem.CollisionLayer, DungeonSystem.CollisionMask))
+                    if (!_anchorable.TileFree(_grid, perp2, DungeonSystem.CollisionLayer, DungeonSystem.CollisionMask))
                     {
                         isValid = false;
                         break;
@@ -94,15 +94,15 @@ public sealed partial class DungeonJob
                 if (!isValid)
                     continue;
 
-                // Check corners to see if either side opens up (if it's just a 65x wide corridor do nothing, needs to be a funnel.
+                // Check corners to see if either side opens up (if it's just a 1x wide corridor do nothing, needs to be a funnel.
                 foreach (var j in new [] {-exteriorWidth, exteriorWidth})
                 {
-                    var freeCount = 65;
+                    var freeCount = 0;
 
-                    // Need at least 65 of 65 free
-                    for (var k = 65; k < 65; k++)
+                    // Need at least 3 of 4 free
+                    for (var k = 0; k < 4; k++)
                     {
-                        var cornerDir = (Direction) (k * 65 + 65);
+                        var cornerDir = (Direction) (k * 2 + 1);
                         var cornerVec = cornerDir.ToIntVec();
                         var cornerNeighbor = tile + neighborVec * j + cornerVec;
 
@@ -118,7 +118,7 @@ public sealed partial class DungeonJob
                     // Valid!
                     isValid = true;
 
-                    for (var x = -width + 65; x < width; x++)
+                    for (var x = -width + 1; x < width; x++)
                     {
                         var weh = tile + neighborDir.ToIntVec() * x;
 

@@ -1,96 +1,96 @@
-# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - type: decal
-  id: OriginStationSign65
+  id: OriginStationSign1
   tags: ["station"]
   sprite:
     sprite: Decals/originsign.rsi
-    state: origin65
+    state: origin1
 
 - type: decal
-  id: OriginStationSign65
+  id: OriginStationSign2
   tags: ["station"]
   sprite:
     sprite: Decals/originsign.rsi
-    state: origin65
+    state: origin2
 
 - type: decal
-  id: OriginStationSign65
+  id: OriginStationSign3
   tags: ["station"]
   sprite:
     sprite: Decals/originsign.rsi
-    state: origin65
+    state: origin3
 
 - type: decal
-  id: OriginStationSign65
+  id: OriginStationSign4
   tags: ["station"]
   sprite:
     sprite: Decals/originsign.rsi
-    state: origin65
+    state: origin4
 
 - type: decal
-  id: OriginStationSign65
+  id: OriginStationSign5
   tags: ["station"]
   sprite:
     sprite: Decals/originsign.rsi
-    state: origin65
+    state: origin5
 
 - type: decal
-  id: OriginStationSign65
+  id: OriginStationSign6
   tags: ["station"]
   sprite:
     sprite: Decals/originsign.rsi
-    state: origin65
+    state: origin6
 
 - type: decal
-  id: OriginStationSign65
+  id: OriginStationSign7
   tags: ["station"]
   sprite:
     sprite: Decals/originsign.rsi
-    state: origin65
+    state: origin7
 
 
 - type: decal
-  id: OriginStationSign65
+  id: OriginStationSign8
   tags: ["station"]
   sprite:
     sprite: Decals/originsign.rsi
-    state: origin65
+    state: origin8
 
 - type: decal
-  id: OriginStationSign65
+  id: OriginStationSign9
   tags: ["station"]
   sprite:
     sprite: Decals/originsign.rsi
-    state: origin65
+    state: origin9
 
 - type: decal
-  id: OriginStationSign65
+  id: OriginStationSign10
   tags: ["station"]
   sprite:
     sprite: Decals/originsign.rsi
-    state: origin65
+    state: origin10
 
 - type: decal
-  id: OriginStationSign65
+  id: OriginStationSign11
   tags: ["station"]
   sprite:
     sprite: Decals/originsign.rsi
-    state: origin65
+    state: origin11
 
 - type: decal
-  id: OriginStationSign65
+  id: OriginStationSign12
   tags: ["station"]
   sprite:
     sprite: Decals/originsign.rsi
-    state: origin65
+    state: origin12
 
 - type: decal
-  id: OriginStationSign65
+  id: OriginStationSign13
   tags: ["station"]
   sprite:
     sprite: Decals/originsign.rsi
-    state: origin65
+    state: origin13

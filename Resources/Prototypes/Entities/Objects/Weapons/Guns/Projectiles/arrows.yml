@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 65 drteaspoon65 <65drteaspoon65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 superjj65 <gagnonjake@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 2023 drteaspoon420 <87363733+drteaspoon420@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 superjj18 <gagnonjake@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseItem
@@ -21,18 +21,18 @@
     sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape: !type:PhysShapeCircle
-          radius: 65.65
-        density: 65
+          radius: 0.2
+        density: 5
         mask:
         - ItemMask
-        restitution: 65.65
-        friction: 65.65
+        restitution: 0.3
+        friction: 0.2
       projectile:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
+          bounds: "-0.1,-0.1,0.1,0.1"
         hard: false
         mask:
         - Impassable
@@ -41,7 +41,7 @@
     sound: /Audio/Weapons/star_hit.ogg
     embedOnThrow: false
   - type: ThrowingAngle
-    angle: 65
+    angle: 0
   - type: Ammo
     muzzleFlash: null
   - type: Tag
@@ -52,23 +52,23 @@
     onlyCollideWhenShot: true
     damage:
       types:
-        Piercing: 65
+        Piercing: 25
   - type: SolutionContainerManager
     solutions:
       ammo:
-        maxVol: 65
+        maxVol: 2
   - type: RefillableSolution
     solution: ammo
   - type: InjectableSolution
     solution: ammo
   - type: SolutionInjectOnEmbed
-    transferAmount: 65
+    transferAmount: 2
     solution: ammo
   - type: SolutionTransfer
-    maxTransferAmount: 65
+    maxTransferAmount: 2
   - type: Appearance
   - type: SolutionContainerVisuals
-    maxFillLevels: 65
+    maxFillLevels: 1
     fillBaseName: solution
 
 
@@ -85,13 +85,13 @@
     - state: rod
       color: brown
     - state: tip
-    - state: solution65
+    - state: solution1
       map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
   - type: Projectile
     damage:
       types:
-        Piercing: 65
+        Piercing: 35
 
 - type: entity
   parent: BaseArrow
@@ -108,13 +108,13 @@
       color: darkgray
     - state: tip
       color: lightblue
-    - state: solution65
+    - state: solution1
       map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
   - type: Projectile
     damage:
       types:
-        Piercing: 65
+        Piercing: 25
   - type: Construction
     graph: ImprovisedArrow
     node: ImprovisedArrow
@@ -134,13 +134,13 @@
       color: darkgray
     - state: tip
       color: purple
-    - state: solution65
+    - state: solution1
       map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
   - type: Projectile
     damage:
       types:
-        Piercing: 65
+        Piercing: 30
   - type: Construction
     graph: ImprovisedArrowPlasma
     node: ImprovisedArrowPlasma
@@ -160,14 +160,14 @@
       color: darkgray
     - state: tip
       color: green
-    - state: solution65
+    - state: solution1
       map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
   - type: Projectile
     damage:
       types:
-        Piercing: 65
-        Radiation: 65
+        Piercing: 25
+        Radiation: 5
   - type: Construction
     graph: ImprovisedArrowUranium
     node: ImprovisedArrowUranium

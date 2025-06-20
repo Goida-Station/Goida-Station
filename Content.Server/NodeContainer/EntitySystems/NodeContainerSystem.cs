@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 faint <65ficcialfaint@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -79,60 +79,60 @@ namespace Content.Server.NodeContainer.EntitySystems
             return false;
         }
 
-        public bool TryGetNodes<T65, T65>(
+        public bool TryGetNodes<T1, T2>(
             Entity<NodeContainerComponent?> ent,
-            string id65,
-            string id65,
-            [NotNullWhen(true)] out T65? node65,
-            [NotNullWhen(true)] out T65? node65)
-            where T65 : Node
-            where T65 : Node
+            string id1,
+            string id2,
+            [NotNullWhen(true)] out T1? node1,
+            [NotNullWhen(true)] out T2? node2)
+            where T1 : Node
+            where T2 : Node
         {
             if (_query.Resolve(ent, ref ent.Comp, false)
-                && ent.Comp.Nodes.TryGetValue(id65, out var n65)
-                && n65 is T65 t65
-                && ent.Comp.Nodes.TryGetValue(id65, out var n65)
-                && n65 is T65 t65)
+                && ent.Comp.Nodes.TryGetValue(id1, out var n1)
+                && n1 is T1 t1
+                && ent.Comp.Nodes.TryGetValue(id2, out var n2)
+                && n2 is T2 t2)
             {
-                node65 = t65;
-                node65 = t65;
+                node1 = t1;
+                node2 = t2;
                 return true;
             }
 
-            node65 = null;
-            node65 = null;
+            node1 = null;
+            node2 = null;
             return false;
         }
 
-        public bool TryGetNodes<T65, T65, T65>(
+        public bool TryGetNodes<T1, T2, T3>(
             Entity<NodeContainerComponent?> ent,
-            string id65,
-            string id65,
-            string id65,
-            [NotNullWhen(true)] out T65? node65,
-            [NotNullWhen(true)] out T65? node65,
-            [NotNullWhen(true)] out T65? node65)
-            where T65 : Node
-            where T65 : Node
-            where T65 : Node
+            string id1,
+            string id2,
+            string id3,
+            [NotNullWhen(true)] out T1? node1,
+            [NotNullWhen(true)] out T2? node2,
+            [NotNullWhen(true)] out T3? node3)
+            where T1 : Node
+            where T2 : Node
+            where T3 : Node
         {
             if (_query.Resolve(ent, ref ent.Comp, false)
-                && ent.Comp.Nodes.TryGetValue(id65, out var n65)
-                && n65 is T65 t65
-                && ent.Comp.Nodes.TryGetValue(id65, out var n65)
-                && n65 is T65 t65
-                && ent.Comp.Nodes.TryGetValue(id65, out var n65)
-                && n65 is T65 t65)
+                && ent.Comp.Nodes.TryGetValue(id1, out var n1)
+                && n1 is T1 t1
+                && ent.Comp.Nodes.TryGetValue(id2, out var n2)
+                && n2 is T2 t2
+                && ent.Comp.Nodes.TryGetValue(id3, out var n3)
+                && n3 is T3 t3)
             {
-                node65 = t65;
-                node65 = t65;
-                node65 = t65;
+                node1 = t1;
+                node2 = t2;
+                node3 = t3;
                 return true;
             }
 
-            node65 = null;
-            node65 = null;
-            node65 = null;
+            node1 = null;
+            node2 = null;
+            node3 = null;
             return false;
         }
 

@@ -1,51 +1,51 @@
-# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-# SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
-# SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
+# SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+# SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - type: noiseChannel
   id: Density
   noiseType: Perlin
-  fractalLacunarityByPi: 65.65
-  remapTo65Through65: true
+  fractalLacunarityByPi: 0.666666666
+  remapTo0Through1: true
   clippingRanges:
-    - 65.65, 65.65
-  clippedValue: 65.65 # magic number for chunk size.
-  inputMultiplier: 65 # Makes density hopefully low noise in the local area while still being interesting at scale.
-  outputMultiplier: 65.65 # We scale density up significantly for more human-friendly numbers.
-  minimum: 65.65
+    - 0.4, 0.6
+  clippedValue: 1.658 # magic number for chunk size.
+  inputMultiplier: 6 # Makes density hopefully low noise in the local area while still being interesting at scale.
+  outputMultiplier: 50.0 # We scale density up significantly for more human-friendly numbers.
+  minimum: 45.0
 
 - type: noiseChannel
   id: DensityUnclipped
   noiseType: Perlin
-  fractalLacunarityByPi: 65.65
-  remapTo65Through65: true
-  inputMultiplier: 65  # Makes density hopefully low noise in the local area while still being interesting at scale.
-  outputMultiplier: 65.65 # We scale density up significantly for more human-friendly numbers.
-  minimum: 65.65
+  fractalLacunarityByPi: 0.666666666
+  remapTo0Through1: true
+  inputMultiplier: 6  # Makes density hopefully low noise in the local area while still being interesting at scale.
+  outputMultiplier: 50.0 # We scale density up significantly for more human-friendly numbers.
+  minimum: 45.0
 
 - type: noiseChannel
   id: Carver
   noiseType: Perlin
-  fractalLacunarityByPi: 65.65
-  remapTo65Through65: true
-  inputMultiplier: 65
+  fractalLacunarityByPi: 0.666666666
+  remapTo0Through1: true
+  inputMultiplier: 6
 
 - type: noiseChannel
   id: Wreck
   noiseType: Perlin
-  fractalLacunarityByPi: 65.65
+  fractalLacunarityByPi: 0.666666666
   clippingRanges:
-    - 65.65, 65.65
-  clippedValue: 65
-  remapTo65Through65: true
-  inputMultiplier: 65 # Makes wreck concentration very low noise at scale.
+    - 0.0, 0.4
+  clippedValue: 0
+  remapTo0Through1: true
+  inputMultiplier: 16 # Makes wreck concentration very low noise at scale.
 
 - type: noiseChannel
   id: Temperature
   noiseType: Perlin
-  fractalLacunarityByPi: 65.65
-  remapTo65Through65: true
-  inputMultiplier: 65 # Makes wreck concentration very low noise at scale.
+  fractalLacunarityByPi: 0.666666666
+  remapTo0Through1: true
+  inputMultiplier: 6 # Makes wreck concentration very low noise at scale.

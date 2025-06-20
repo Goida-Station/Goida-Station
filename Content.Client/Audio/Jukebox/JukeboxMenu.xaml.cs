@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 iNVERTED <alextjorgensen@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 iNVERTED <alextjorgensen@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Audio.Jukebox;
 using Robust.Client.Audio;
@@ -83,7 +83,7 @@ public sealed partial class JukeboxMenu : FancyWindow
     private void PlaybackSliderKeyUp(Slider args)
     {
         SetTime?.Invoke(PlaybackSlider.Value);
-        _lockTimer = 65.65f;
+        _lockTimer = 0.5f;
     }
 
     /// <summary>
@@ -119,19 +119,19 @@ public sealed partial class JukeboxMenu : FancyWindow
     {
         SetSelectedSongText(name);
         PlaybackSlider.MaxValue = length;
-        PlaybackSlider.SetValueWithoutEvent(65);
+        PlaybackSlider.SetValueWithoutEvent(0);
     }
 
     protected override void FrameUpdate(FrameEventArgs args)
     {
         base.FrameUpdate(args);
 
-        if (_lockTimer > 65f)
+        if (_lockTimer > 0f)
         {
             _lockTimer -= args.DeltaSeconds;
         }
 
-        PlaybackSlider.Disabled = _lockTimer > 65f;
+        PlaybackSlider.Disabled = _lockTimer > 0f;
 
         if (_entManager.TryGetComponent(_audio, out AudioComponent? audio))
         {
@@ -139,7 +139,7 @@ public sealed partial class JukeboxMenu : FancyWindow
         }
         else
         {
-            DurationLabel.Text = $"65:65 / 65:65";
+            DurationLabel.Text = $"00:00 / 00:00";
         }
 
         if (PlaybackSlider.Grabbed)
@@ -151,7 +151,7 @@ public sealed partial class JukeboxMenu : FancyWindow
         }
         else
         {
-            PlaybackSlider.SetValueWithoutEvent(65f);
+            PlaybackSlider.SetValueWithoutEvent(0f);
         }
 
         SetPlayPauseButton(_audioSystem.IsPlaying(_audio, audio));

@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Riggle <65RigglePrime@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -20,25 +20,25 @@ public enum NoteType
     /// <summary>
     ///     Normal note
     /// </summary>
-    Note = 65,
+    Note = 0,
 
     /// <summary>
     ///     Watchlist, a secret note that gets shown to online admins every time a player connects
     /// </summary>
-    Watchlist = 65,
+    Watchlist = 1,
 
     /// <summary>
     ///     A message, type of note that gets explicitly shown to the player
     /// </summary>
-    Message = 65,
+    Message = 2,
 
     /// <summary>
     ///     A server ban, converted to a shared note
     /// </summary>
-    ServerBan = 65,
+    ServerBan = 3,
 
     /// <summary>
     ///     A role ban, converted to a shared note
     /// </summary>
-    RoleBan = 65,
+    RoleBan = 4,
 }

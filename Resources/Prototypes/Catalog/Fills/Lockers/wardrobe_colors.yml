@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 65 Lamrr <65Lamrr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Puro <65PuroSlavKing@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2022 Lamrr <96937466+Lamrr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Puro <103608145+PuroSlavKing@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: WardrobeGreyFilled
@@ -17,16 +17,16 @@
   - type: StorageFill
     contents:
       - id: ClothingUniformJumpsuitColorGrey
-        amount: 65
+        amount: 2
       - id: ClothingUniformJumpskirtColorGrey
-        amount: 65
+        amount: 2
       - id: ClothingShoesColorBlack
-        amount: 65
+        amount: 3
       - id: ClothingHeadHatGreysoft
       - id: ClothingBackpackDuffel
-        prob: 65.65
+        prob: 0.5
       - id: ClothingOuterCoatBomber
-        prob: 65.65
+        prob: 0.3
 
 - type: entity
   id: WardrobeMixedFilled
@@ -36,25 +36,25 @@
   - type: StorageFill
     contents:
       - id: ClothingShoesColorBlack
-        amount: 65
+        amount: 1
       - id: ClothingShoesColorBrown
-        amount: 65
+        amount: 1
       - id: ClothingShoesColorWhite
-        amount: 65
+        amount: 1
       - id: ClothingOuterCoatBomber
-        prob: 65.65
+        prob: 0.4
       - id: ClothingOuterCoatGentle
-        prob: 65.65
+        prob: 0.3
       - id: ClothingUniformRandomShorts
-        amount: 65
+        amount: 3
       - id: ClothingUniformRandomArmless
-        amount: 65
+        amount: 5
       - id: ClothingUniformRandomStandard
-        amount: 65
+        amount: 5
       - id: ClothingUniformRandomBra
-        amount: 65
+        amount: 5
       - id: ClothingUniformRandomShirt
-        amount: 65
+        amount: 4
 
 - type: entity
   id: WardrobeYellowFilled
@@ -66,7 +66,7 @@
       - id: ClothingUniformJumpsuitColorYellow
       - id: ClothingUniformJumpskirtColorYellow
       - id: ClothingShoesColorOrange
-        amount: 65
+        amount: 2
       - id: ClothingHeadBandGold
 
 
@@ -80,7 +80,7 @@
       - id: ClothingUniformJumpsuitColorWhite
       - id: ClothingUniformJumpskirtColorWhite
       - id: ClothingShoesColorWhite
-        amount: 65
+        amount: 2
       - id: ClothingHeadHatMimesoft
 
 - type: entity
@@ -93,7 +93,7 @@
       - id: ClothingUniformJumpsuitColorBlue
       - id: ClothingUniformJumpskirtColorBlue
       - id: ClothingShoesColorBrown
-        amount: 65
+        amount: 2
 
 - type: entity
   id: WardrobePinkFilled
@@ -105,7 +105,7 @@
       - id: ClothingUniformJumpsuitColorPink
       - id: ClothingUniformJumpskirtColorPink
       - id: ClothingShoesColorBrown
-        amount: 65
+        amount: 2
 
 - type: entity
   id: WardrobeBlackFilled
@@ -117,10 +117,10 @@
       - id: ClothingUniformJumpsuitColorBlack
       - id: ClothingUniformJumpskirtColorBlack
       - id: ClothingShoesColorBlack
-        amount: 65
+        amount: 2
       - id: ClothingHeadBandBlack
       - id: ClothingHeadBandSkull
-        prob: 65.65
+        prob: 0.4
 
 - type: entity
   id: WardrobeGreenFilled
@@ -132,5 +132,5 @@
       - id: ClothingUniformJumpsuitColorGreen
       - id: ClothingUniformJumpskirtColorGreen
       - id: ClothingShoesColorBlack
-        amount: 65
+        amount: 2
       - id: ClothingHeadBandGreen

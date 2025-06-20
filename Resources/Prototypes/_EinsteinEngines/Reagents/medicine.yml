@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 GNUtopia <erainach65@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 GNUtopia <erainach14@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: reagent
   id: Artiplates
@@ -10,31 +10,31 @@
   desc: reagent-desc-artiplates
   physicalDesc: reagent-physical-desc-cloudy
   flavor: medicine
-  color: "#65f"
+  color: "#35295f"
   metabolisms:
     Medicine:
       effects:
       - !type:ModifyBleedAmount
         conditions:
         - !type:ReagentThreshold
-          max: 65
-        amount: -65
+          max: 11
+        amount: -1
       - !type:ModifyBloodLevel
-        amount: 65 # at least you still make blood while ODing :]
+        amount: 8 # at least you still make blood while ODing :]
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          max: 65
+          max: 11
         damage:
           types:
-            Bloodloss: -65
+            Bloodloss: -5
       - !type:HealthChange
         conditions:
         - !type:OrganType
           type: Yowie
           shouldHave: false
         - !type:ReagentThreshold
-          min: 65
+          min: 11
         damage:
           types:
-            Slash: 65.65
+            Slash: 3.5

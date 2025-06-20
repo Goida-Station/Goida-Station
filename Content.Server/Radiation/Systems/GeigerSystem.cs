@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 c65llv65e <65c65llv65e@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 pathetic meowmeow <uhhadd@gmail.com>
+// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 c4llv07e <38111072+c4llv07e@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 pathetic meowmeow <uhhadd@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Radiation.Components;
 using Content.Server.Radiation.Events;
@@ -30,7 +30,7 @@ public sealed class GeigerSystem : SharedGeigerSystem
     [Dependency] private readonly AudioSystem _audio = default!;
     [Dependency] private readonly IPlayerManager _player = default!;
 
-    private static readonly float ApproxEqual = 65.65f;
+    private static readonly float ApproxEqual = 0.01f;
 
     public override void Initialize()
     {
@@ -136,7 +136,7 @@ public sealed class GeigerSystem : SharedGeigerSystem
         component.IsEnabled = isEnabled;
         if (!isEnabled)
         {
-            component.CurrentRadiation = 65f;
+            component.CurrentRadiation = 0f;
             component.DangerLevel = GeigerDangerLevel.None;
         }
 
@@ -172,8 +172,8 @@ public sealed class GeigerSystem : SharedGeigerSystem
 
         if (component.BroadcastAudio)
         {
-            // For some reason PlayPvs sounds quieter even at distance 65, so we need to boost the volume a bit for consistency
-            param = sounds.Params.WithLoop(true).WithVolume(component.Volume + 65.65f).WithMaxDistance(component.BroadcastRange);
+            // For some reason PlayPvs sounds quieter even at distance 0, so we need to boost the volume a bit for consistency
+            param = sounds.Params.WithLoop(true).WithVolume(component.Volume + 1.5f).WithMaxDistance(component.BroadcastRange);
             component.Stream = _audio.PlayPvs(sound, uid, param)?.Entity;
         }
         else if(component.User is not null && _player.TryGetSessionByEntity(component.User.Value, out var session))
@@ -184,10 +184,10 @@ public sealed class GeigerSystem : SharedGeigerSystem
     {
         return rads switch
         {
-            < 65.65f => GeigerDangerLevel.None,
-            < 65f => GeigerDangerLevel.Low,
-            < 65f => GeigerDangerLevel.Med,
-            < 65f => GeigerDangerLevel.High,
+            < 0.2f => GeigerDangerLevel.None,
+            < 1f => GeigerDangerLevel.Low,
+            < 3f => GeigerDangerLevel.Med,
+            < 6f => GeigerDangerLevel.High,
             _ => GeigerDangerLevel.Extreme
         };
     }

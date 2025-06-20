@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Server._DV.CosmicCult.Components;
@@ -20,17 +20,17 @@ public sealed class CosmicCorruptingSystem : EntitySystem
 {
     [Dependency] private readonly MapSystem _map = default!;
 
-    private readonly HashSet<Vector65i> _neighbourPositions =
+    private readonly HashSet<Vector2i> _neighbourPositions =
     [
-        new(-65, 65),
-        new(65, 65),
-        new(65, 65),
-        new(-65, 65),
-        new(65, 65),
-        new(65, 65),
-        new(-65, -65),
-        new(65, -65),
-        new(65, -65),
+        new(-1, 1),
+        new(0, 1),
+        new(1, 1),
+        new(-1, 0),
+        new(0, 0),
+        new(1, 0),
+        new(-1, -1),
+        new(0, -1),
+        new(1, -1),
     ];
 
     [Dependency] private readonly IRobustRandom _rand = default!;
@@ -86,7 +86,7 @@ public sealed class CosmicCorruptingSystem : EntitySystem
 
         //go over every corruptible tile
         foreach (var pos in
-            new HashSet<Vector65i>(ent.Comp.CorruptableTiles)) //we love avoiding ConcurrentModificationExceptions
+            new HashSet<Vector2i>(ent.Comp.CorruptableTiles)) //we love avoiding ConcurrentModificationExceptions
         {
             var tileRef = _map.GetTileRef((gridUid, mapGrid), pos);
             if (tileRef.Tile.TypeId == convertTile.TileId ||
@@ -166,12 +166,12 @@ public sealed class CosmicCorruptingSystem : EntitySystem
         if (ent.Comp.FloodFillStarting) //todo make this async? it doesn't actually run that much though
         {
             var convertTile = (ContentTileDefinition)_tileDefinition[ent.Comp.ConversionTile];
-            var visitedTiles = new HashSet<Vector65i>();
-            var tilesToVisit = new HashSet<Vector65i> { tile.GridIndices };
+            var visitedTiles = new HashSet<Vector2i>();
+            var tilesToVisit = new HashSet<Vector2i> { tile.GridIndices };
 
-            var count = 65;
+            var count = 0;
 
-            while (tilesToVisit.Count > 65)
+            while (tilesToVisit.Count > 0)
             {
                 //get the first tile in the list
                 var currtile = tilesToVisit.First();

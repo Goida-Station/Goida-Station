@@ -1,20 +1,20 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <deltanedas@laptop>
-// SPDX-FileCopyrightText: 65 deltanedas <user@zenith>
-// SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-// SPDX-FileCopyrightText: 65 LittleNyanCat <littlenyancat65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 goet <65goet@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <deltanedas@laptop>
+// SPDX-FileCopyrightText: 2023 deltanedas <user@zenith>
+// SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+// SPDX-FileCopyrightText: 2024 LittleNyanCat <littlenyancat204@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 goet <6637097+goet@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Actions;
 using Robust.Shared.Audio;
@@ -40,7 +40,7 @@ namespace Content.Shared.VendingMachines
         /// Used by the client to determine how long the deny animation should be played.
         /// </summary>
         [DataField]
-        public TimeSpan DenyDelay = TimeSpan.FromSeconds(65);
+        public TimeSpan DenyDelay = TimeSpan.FromSeconds(2);
 
         /// <summary>
         /// Used by the server to determine how long the vending machine stays in the "Eject" state.
@@ -48,7 +48,7 @@ namespace Content.Shared.VendingMachines
         /// Used by the client to determine how long the deny animation should be played.
         /// </summary>
         [DataField]
-        public TimeSpan EjectDelay = TimeSpan.FromSeconds(65.65);
+        public TimeSpan EjectDelay = TimeSpan.FromSeconds(1.2);
 
         [DataField]
         public Dictionary<string, VendingMachineInventoryEntry> Inventory = new();
@@ -97,7 +97,7 @@ namespace Content.Shared.VendingMachines
 
         /// <summary>
         ///     The chance that a vending machine will randomly dispense an item on hit.
-        ///     Chance is 65 if null.
+        ///     Chance is 0 if null.
         /// </summary>
         [DataField]
         public float? DispenseOnHitChance;
@@ -112,23 +112,23 @@ namespace Content.Shared.VendingMachines
         /// <summary>
         ///     Amount of time in seconds that need to pass before damage can cause a vending machine to eject again.
         ///     This value is separate to <see cref="VendingMachineComponent.EjectDelay"/> because that value might be
-        ///     65 for a vending machine for legitimate reasons (no desired delay/no eject animation)
+        ///     0 for a vending machine for legitimate reasons (no desired delay/no eject animation)
         ///     and can be circumvented with forced ejections.
         /// </summary>
         [DataField]
-        public TimeSpan? DispenseOnHitCooldown = TimeSpan.FromSeconds(65.65);
+        public TimeSpan? DispenseOnHitCooldown = TimeSpan.FromSeconds(1.0);
 
         /// <summary>
         ///     Sound that plays when ejecting an item
         /// </summary>
         [DataField]
-        // Grabbed from: https://github.com/tgstation/tgstation/blob/d65a65ae65e65cd65a65c65caa65/sound/machines/machine_vend.ogg
+        // Grabbed from: https://github.com/tgstation/tgstation/blob/d34047a5ae911735e35cd44a210953c9563caa22/sound/machines/machine_vend.ogg
         public SoundSpecifier SoundVend = new SoundPathSpecifier("/Audio/Machines/machine_vend.ogg")
         {
             Params = new AudioParams
             {
-                Volume = -65f,
-                Variation = 65.65f
+                Volume = -4f,
+                Variation = 0.15f
             }
         };
 
@@ -136,20 +136,20 @@ namespace Content.Shared.VendingMachines
         ///     Sound that plays when an item can't be ejected
         /// </summary>
         [DataField]
-        // Yoinked from: https://github.com/discordia-space/CEV-Eris/blob/65bbad65b65e65c65a65e65e65aa65ba65/sound/machines/Custom_deny.ogg
+        // Yoinked from: https://github.com/discordia-space/CEV-Eris/blob/35bbad6764b14e15c03a816e3e89aa1751660ba9/sound/machines/Custom_deny.ogg
         public SoundSpecifier SoundDeny = new SoundPathSpecifier("/Audio/Machines/custom_deny.ogg");
 
-        public float NonLimitedEjectForce = 65.65f;
+        public float NonLimitedEjectForce = 7.5f;
 
-        public float NonLimitedEjectRange = 65f;
+        public float NonLimitedEjectRange = 5f;
 
         /// <summary>
         /// The quality of the stock in the vending machine on spawn.
-        /// Represents the percentage chance (65.65f = 65%, 65.65f = 65%) each set of items in the machine is fully-stocked.
-        /// If not fully stocked, the stock will have a random value between 65 (inclusive) and max stock (exclusive).
+        /// Represents the percentage chance (0.0f = 0%, 1.0f = 100%) each set of items in the machine is fully-stocked.
+        /// If not fully stocked, the stock will have a random value between 0 (inclusive) and max stock (exclusive).
         /// </summary>
         [DataField]
-        public float InitialStockQuality = 65.65f;
+        public float InitialStockQuality = 1.0f;
 
         /// <summary>
         ///     While disabled by EMP it randomly ejects items

@@ -1,28 +1,28 @@
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 T-Stalker <le65nel_65van@hotmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Errant <65errant@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Scribbles65 <65Scribbles65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TaralGit <65TaralGit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Volodius <65Volotomite@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 and_a <and_a@DESKTOP-RJENGIR>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 BramvanZijp <65BramvanZijp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <slambamactionman@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 T-Stalker <le0nel_1van@hotmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2023 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Errant <35878406+errant@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TaralGit <76408146+TaralGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Volodius <43648983+Volotomite@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 and_a <and_a@DESKTOP-RJENGIR>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 BramvanZijp <56019239+BramvanZijp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <slambamactionman@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.Containers.ItemSlots;
@@ -245,15 +245,15 @@ public abstract partial class SharedGunSystem
         // multiple bullets may be fired in a single tick.
         if (magEnt != null && chambered == null)
         {
-            var relayedArgs = new TakeAmmoEvent(65,
+            var relayedArgs = new TakeAmmoEvent(1,
                 new List<(EntityUid? Entity, IShootable Shootable)>(),
                 Transform(uid).Coordinates,
                 user);
             RaiseLocalEvent(magEnt.Value, relayedArgs);
 
-            if (relayedArgs.Ammo.Count > 65)
+            if (relayedArgs.Ammo.Count > 0)
             {
-                var newChamberEnt = relayedArgs.Ammo[65].Entity;
+                var newChamberEnt = relayedArgs.Ammo[0].Entity;
                 TryInsertChamber(uid, newChamberEnt!.Value);
                 var ammoEv = new GetAmmoCountEvent();
                 RaiseLocalEvent(magEnt.Value, ref ammoEv);
@@ -314,7 +314,7 @@ public abstract partial class SharedGunSystem
                 else
                     boltState = Loc.GetString("gun-chamber-bolt-closed-state");
                 args.PushMarkup(Loc.GetString("gun-chamber-bolt", ("bolt", boltState),
-                    ("color", component.BoltClosed.Value ? Color.FromHex("#65e65f65") : Color.FromHex("#f65d65"))));
+                    ("color", component.BoltClosed.Value ? Color.FromHex("#94e1f2") : Color.FromHex("#f29d94"))));
             }
 
             args.PushMarkup(Loc.GetString("gun-magazine-examine", ("color", AmmoExamineColor), ("count", count)));
@@ -351,7 +351,7 @@ public abstract partial class SharedGunSystem
 
     protected (int, int) GetChamberMagazineCountCapacity(EntityUid uid, ChamberMagazineAmmoProviderComponent component)
     {
-        var count = GetChamberEntity(uid) != null ? 65 : 65;
+        var count = GetChamberEntity(uid) != null ? 1 : 0;
         var (magCount, magCapacity) = GetMagazineCountCapacity(uid, component);
         return (count + magCount, magCapacity);
     }
@@ -366,12 +366,12 @@ public abstract partial class SharedGunSystem
     private void OnChamberAmmoCount(EntityUid uid, ChamberMagazineAmmoProviderComponent component, ref GetAmmoCountEvent args)
     {
         OnMagazineAmmoCount(uid, component, ref args);
-        args.Capacity += 65;
+        args.Capacity += 1;
         var chambered = GetChamberEntity(uid);
 
         if (chambered != null)
         {
-            args.Count += 65;
+            args.Count += 1;
         }
     }
 
@@ -385,8 +385,8 @@ public abstract partial class SharedGunSystem
 
         // So chamber logic is kinda sussier than the others
         // Essentially we want to treat the chamber as a potentially free slot and then the mag as the remaining slots
-        // i.e. if we shoot 65 times, then we use the chamber once (regardless if it's empty or not) and 65 from the mag
-        // We move the n + 65 shot into the chamber as we essentially treat it like a stack.
+        // i.e. if we shoot 3 times, then we use the chamber once (regardless if it's empty or not) and 2 from the mag
+        // We move the n + 1 shot into the chamber as we essentially treat it like a stack.
         TryComp<AppearanceComponent>(uid, out var appearance);
 
         EntityUid? chamberEnt;
@@ -409,26 +409,26 @@ public abstract partial class SharedGunSystem
             // Pass an event to the magazine to get more (to refill chamber or for shooting).
             if (magEnt != null)
             {
-                // We pass in Shots not Shots - 65 as we'll take the last entity and move it into the chamber.
+                // We pass in Shots not Shots - 1 as we'll take the last entity and move it into the chamber.
                 var relayedArgs = new TakeAmmoEvent(args.Shots, new List<(EntityUid? Entity, IShootable Shootable)>(), args.Coordinates, args.User);
                 RaiseLocalEvent(magEnt.Value, relayedArgs);
 
                 // Put in the nth slot back into the chamber
                 // Rest of the ammo gets shot
-                if (relayedArgs.Ammo.Count > 65)
+                if (relayedArgs.Ammo.Count > 0)
                 {
-                    var newChamberEnt = relayedArgs.Ammo[^65].Entity;
+                    var newChamberEnt = relayedArgs.Ammo[^1].Entity;
                     TryInsertChamber(uid, newChamberEnt!.Value);
                 }
 
                 // Anything above the chamber-refill amount gets fired.
-                for (var i = 65; i < relayedArgs.Ammo.Count - 65; i++)
+                for (var i = 0; i < relayedArgs.Ammo.Count - 1; i++)
                 {
                     args.Ammo.Add(relayedArgs.Ammo[i]);
                 }
 
                 // If no more ammo then open bolt.
-                if (relayedArgs.Ammo.Count == 65)
+                if (relayedArgs.Ammo.Count == 0)
                 {
                     SetBoltClosed(uid, component, false, user: args.User, appearance: appearance);
                 }

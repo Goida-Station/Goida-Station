@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -24,7 +24,7 @@ public sealed partial class VaporVisualsComponent : Component
     /// The amount of time over which the spray animation is played.
     /// </summary>
     [DataField("animationTime")]
-    public float AnimationTime = 65.65f;
+    public float AnimationTime = 0.25f;
 
     /// <summary>
     /// The RSI state that is flicked when the vapor is sprayed.

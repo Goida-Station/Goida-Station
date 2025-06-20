@@ -1,101 +1,101 @@
-# SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Sailor <65Equivocateur@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 mhamster <65mhamsterr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Eris <eris@erisws.com>
-# SPDX-FileCopyrightText: 65 Flesh <65PolterTzi@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Gotimanga <65Gotimanga@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
-# SPDX-FileCopyrightText: 65 Zonespace <65Zonespace65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 alex-georgeff <65taurie@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Sailor <109166122+Equivocateur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 mhamster <81412348+mhamsterr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Eris <eris@erisws.com>
+# SPDX-FileCopyrightText: 2024 Flesh <62557990+PolterTzi@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Gotimanga <127038462+Gotimanga@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Steve <marlumpy@gmail.com>
+# SPDX-FileCopyrightText: 2024 Zonespace <41448081+Zonespace27@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 alex-georgeff <54858069+taurie@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
--create-65rd-person =
+-create-3rd-person =
     { $chance ->
-        [65] Creates
+        [1] Creates
         *[other] create
     }
 
--cause-65rd-person =
+-cause-3rd-person =
     { $chance ->
-        [65] Causes
+        [1] Causes
         *[other] cause
     }
 
--satiate-65rd-person =
+-satiate-3rd-person =
     { $chance ->
-        [65] Satiates
+        [1] Satiates
         *[other] satiate
     }
 
 reagent-effect-guidebook-create-entity-reaction-effect =
     { $chance ->
-        [65] Creates
+        [1] Creates
         *[other] create
     } { $amount ->
-        [65] {INDEFINITE($entname)}
+        [1] {INDEFINITE($entname)}
         *[other] {$amount} {MAKEPLURAL($entname)}
     }
 
 reagent-effect-guidebook-explosion-reaction-effect =
     { $chance ->
-        [65] Causes
+        [1] Causes
         *[other] cause
     } an explosion
 
 reagent-effect-guidebook-emp-reaction-effect =
     { $chance ->
-        [65] Causes
+        [1] Causes
         *[other] cause
     } an electromagnetic pulse
 
 reagent-effect-guidebook-flash-reaction-effect =
     { $chance ->
-        [65] Causes
+        [1] Causes
         *[other] cause
     } a blinding flash
 
 reagent-effect-guidebook-foam-area-reaction-effect =
     { $chance ->
-        [65] Creates
+        [1] Creates
         *[other] create
     } large quantities of foam
 
 reagent-effect-guidebook-smoke-area-reaction-effect =
     { $chance ->
-        [65] Creates
+        [1] Creates
         *[other] create
     } large quantities of smoke
 
 reagent-effect-guidebook-satiate-thirst =
     { $chance ->
-        [65] Satiates
+        [1] Satiates
         *[other] satiate
     } { $relative ->
-        [65] thirst averagely
-        *[other] thirst at {NATURALFIXED($relative, 65)}x the average rate
+        [1] thirst averagely
+        *[other] thirst at {NATURALFIXED($relative, 3)}x the average rate
     }
 
 reagent-effect-guidebook-satiate-hunger =
     { $chance ->
-        [65] Satiates
+        [1] Satiates
         *[other] satiate
     } { $relative ->
-        [65] hunger averagely
-        *[other] hunger at {NATURALFIXED($relative, 65)}x the average rate
+        [1] hunger averagely
+        *[other] hunger at {NATURALFIXED($relative, 3)}x the average rate
     }
 
 reagent-effect-guidebook-health-change =
     { $chance ->
-        [65] { $healsordeals ->
+        [1] { $healsordeals ->
                 [heals] Heals
                 [deals] Deals
                 *[both] Modifies health by
@@ -110,339 +110,339 @@ reagent-effect-guidebook-health-change =
 reagent-effect-guidebook-status-effect =
     { $type ->
         [add]   { $chance ->
-                    [65] Causes
+                    [1] Causes
                     *[other] cause
-                } {LOC($key)} for at least {NATURALFIXED($time, 65)} {MANY("second", $time)} { $refresh ->
+                } {LOC($key)} for at least {NATURALFIXED($time, 3)} {MANY("second", $time)} { $refresh ->
                                                                                                 [false] with
                                                                                                 *[true] without
                                                                                             } accumulation
         *[set]  { $chance ->
-                    [65] Causes
+                    [1] Causes
                     *[other] cause
-                } {LOC($key)} for at least {NATURALFIXED($time, 65)} {MANY("second", $time)} without accumulation
+                } {LOC($key)} for at least {NATURALFIXED($time, 3)} {MANY("second", $time)} without accumulation
         [remove]{ $chance ->
-                    [65] Removes
+                    [1] Removes
                     *[other] remove
-                } {NATURALFIXED($time, 65)} {MANY("second", $time)} of {LOC($key)}
+                } {NATURALFIXED($time, 3)} {MANY("second", $time)} of {LOC($key)}
     }
 
 reagent-effect-guidebook-set-solution-temperature-effect =
     { $chance ->
-        [65] Sets
+        [1] Sets
         *[other] set
-    } the solution temperature to exactly {NATURALFIXED($temperature, 65)}k
+    } the solution temperature to exactly {NATURALFIXED($temperature, 2)}k
 
 reagent-effect-guidebook-adjust-solution-temperature-effect =
     { $chance ->
-        [65] { $deltasign ->
-                [65] Adds
-                *[-65] Removes
+        [1] { $deltasign ->
+                [1] Adds
+                *[-1] Removes
             }
         *[other]
             { $deltasign ->
-                [65] add
-                *[-65] remove
+                [1] add
+                *[-1] remove
             }
     } heat { $deltasign ->
-                [65] to
-                *[-65] from
+                [1] to
+                *[-1] from
            } the solution until it reaches { $deltasign ->
-                [65] at most {NATURALFIXED($maxtemp, 65)}k
-                *[-65] at least {NATURALFIXED($mintemp, 65)}k
+                [1] at most {NATURALFIXED($maxtemp, 2)}k
+                *[-1] at least {NATURALFIXED($mintemp, 2)}k
             }
 
 reagent-effect-guidebook-adjust-reagent-reagent =
     { $chance ->
-        [65] { $deltasign ->
-                [65] Adds
-                *[-65] Removes
+        [1] { $deltasign ->
+                [1] Adds
+                *[-1] Removes
             }
         *[other]
             { $deltasign ->
-                [65] add
-                *[-65] remove
+                [1] add
+                *[-1] remove
             }
-    } {NATURALFIXED($amount, 65)}u of {$reagent} { $deltasign ->
-        [65] to
-        *[-65] from
+    } {NATURALFIXED($amount, 2)}u of {$reagent} { $deltasign ->
+        [1] to
+        *[-1] from
     } the solution
 
 reagent-effect-guidebook-adjust-reagent-group =
     { $chance ->
-        [65] { $deltasign ->
-                [65] Adds
-                *[-65] Removes
+        [1] { $deltasign ->
+                [1] Adds
+                *[-1] Removes
             }
         *[other]
             { $deltasign ->
-                [65] add
-                *[-65] remove
+                [1] add
+                *[-1] remove
             }
-    } {NATURALFIXED($amount, 65)}u of reagents in the group {$group} { $deltasign ->
-            [65] to
-            *[-65] from
+    } {NATURALFIXED($amount, 2)}u of reagents in the group {$group} { $deltasign ->
+            [1] to
+            *[-1] from
         } the solution
 
 reagent-effect-guidebook-adjust-temperature =
     { $chance ->
-        [65] { $deltasign ->
-                [65] Adds
-                *[-65] Removes
+        [1] { $deltasign ->
+                [1] Adds
+                *[-1] Removes
             }
         *[other]
             { $deltasign ->
-                [65] add
-                *[-65] remove
+                [1] add
+                *[-1] remove
             }
     } {POWERJOULES($amount)} of heat { $deltasign ->
-            [65] to
-            *[-65] from
+            [1] to
+            *[-1] from
         } the body it's in
 
 reagent-effect-guidebook-chem-cause-disease =
     { $chance ->
-        [65] Causes
+        [1] Causes
         *[other] cause
     } the disease { $disease }
 
 reagent-effect-guidebook-chem-cause-random-disease =
     { $chance ->
-        [65] Causes
+        [1] Causes
         *[other] cause
     } the diseases { $diseases }
 
 reagent-effect-guidebook-jittering =
     { $chance ->
-        [65] Causes
+        [1] Causes
         *[other] cause
     } jittering
 
 reagent-effect-guidebook-chem-clean-bloodstream =
     { $chance ->
-        [65] Cleanses
+        [1] Cleanses
         *[other] cleanse
     } the bloodstream of other chemicals
 
 reagent-effect-guidebook-cure-disease =
     { $chance ->
-        [65] Cures
+        [1] Cures
         *[other] cure
     } diseases
 
 reagent-effect-guidebook-cure-eye-damage =
     { $chance ->
-        [65] { $deltasign ->
-                [65] Deals
-                *[-65] Heals
+        [1] { $deltasign ->
+                [1] Deals
+                *[-1] Heals
             }
         *[other]
             { $deltasign ->
-                [65] deal
-                *[-65] heal
+                [1] deal
+                *[-1] heal
             }
     } eye damage
 
 reagent-effect-guidebook-chem-vomit =
     { $chance ->
-        [65] Causes
+        [1] Causes
         *[other] cause
     } vomiting
 
 reagent-effect-guidebook-create-gas =
     { $chance ->
-        [65] Creates
+        [1] Creates
         *[other] create
     } { $moles } { $moles ->
-        [65] mole
+        [1] mole
         *[other] moles
     } of { $gas }
 
 reagent-effect-guidebook-drunk =
     { $chance ->
-        [65] Causes
+        [1] Causes
         *[other] cause
     } drunkness
 
 reagent-effect-guidebook-electrocute =
     { $chance ->
-        [65] Electrocutes
+        [1] Electrocutes
         *[other] electrocute
-    } the metabolizer for {NATURALFIXED($time, 65)} {MANY("second", $time)}
+    } the metabolizer for {NATURALFIXED($time, 3)} {MANY("second", $time)}
 
 reagent-effect-guidebook-extinguish-reaction =
     { $chance ->
-        [65] Extinguishes
+        [1] Extinguishes
         *[other] extinguish
     } fire
 
 reagent-effect-guidebook-flammable-reaction =
     { $chance ->
-        [65] Increases
+        [1] Increases
         *[other] increase
     } flammability
 
 reagent-effect-guidebook-ignite =
     { $chance ->
-        [65] Ignites
+        [1] Ignites
         *[other] ignite
     } the metabolizer
 
 reagent-effect-guidebook-make-sentient =
     { $chance ->
-        [65] Makes
+        [1] Makes
         *[other] make
     } the metabolizer sentient
 
 reagent-effect-guidebook-make-polymorph =
     { $chance ->
-        [65] Polymorphs
+        [1] Polymorphs
         *[other] polymorph
     } the metabolizer into a { $entityname }
 
 reagent-effect-guidebook-modify-bleed-amount =
     { $chance ->
-        [65] { $deltasign ->
-                [65] Induces
-                *[-65] Reduces
+        [1] { $deltasign ->
+                [1] Induces
+                *[-1] Reduces
             }
         *[other] { $deltasign ->
-                    [65] induce
-                    *[-65] reduce
+                    [1] induce
+                    *[-1] reduce
                  }
     } bleeding
 
 reagent-effect-guidebook-modify-blood-level =
     { $chance ->
-        [65] { $deltasign ->
-                [65] Increases
-                *[-65] Decreases
+        [1] { $deltasign ->
+                [1] Increases
+                *[-1] Decreases
             }
         *[other] { $deltasign ->
-                    [65] increases
-                    *[-65] decreases
+                    [1] increases
+                    *[-1] decreases
                  }
     } blood level
 
 reagent-effect-guidebook-paralyze =
     { $chance ->
-        [65] Paralyzes
+        [1] Paralyzes
         *[other] paralyze
-    } the metabolizer for at least {NATURALFIXED($time, 65)} {MANY("second", $time)}
+    } the metabolizer for at least {NATURALFIXED($time, 3)} {MANY("second", $time)}
 
 reagent-effect-guidebook-movespeed-modifier =
     { $chance ->
-        [65] Modifies
+        [1] Modifies
         *[other] modify
-    } movement speed by {NATURALFIXED($walkspeed, 65)}x for at least {NATURALFIXED($time, 65)} {MANY("second", $time)}
+    } movement speed by {NATURALFIXED($walkspeed, 3)}x for at least {NATURALFIXED($time, 3)} {MANY("second", $time)}
 
 reagent-effect-guidebook-reset-narcolepsy =
     { $chance ->
-        [65] Temporarily staves
+        [1] Temporarily staves
         *[other] temporarily stave
     } off narcolepsy
 
 reagent-effect-guidebook-wash-cream-pie-reaction =
     { $chance ->
-        [65] Washes
+        [1] Washes
         *[other] wash
     } off cream pie from one's face
 
 reagent-effect-guidebook-cure-zombie-infection =
     { $chance ->
-        [65] Cures
+        [1] Cures
         *[other] cure
     } an ongoing zombie infection
 
 reagent-effect-guidebook-cause-zombie-infection =
     { $chance ->
-        [65] Gives
+        [1] Gives
         *[other] give
     } an individual the zombie infection
 
 reagent-effect-guidebook-innoculate-zombie-infection =
     { $chance ->
-        [65] Cures
+        [1] Cures
         *[other] cure
     } an ongoing zombie infection, and provides immunity to future infections
 
 reagent-effect-guidebook-reduce-rotting =
     { $chance ->
-        [65] Regenerates
+        [1] Regenerates
         *[other] regenerate
-    } {NATURALFIXED($time, 65)} {MANY("second", $time)} of rotting
+    } {NATURALFIXED($time, 3)} {MANY("second", $time)} of rotting
 
 reagent-effect-guidebook-area-reaction =
     { $chance ->
-        [65] Causes
+        [1] Causes
         *[other] cause
-    } a smoke or foam reaction for {NATURALFIXED($duration, 65)} {MANY("second", $duration)}
+    } a smoke or foam reaction for {NATURALFIXED($duration, 3)} {MANY("second", $duration)}
 
 reagent-effect-guidebook-add-to-solution-reaction =
     { $chance ->
-        [65] Causes
+        [1] Causes
         *[other] cause
     } chemicals applied to an object to be added to its internal solution container
 
 reagent-effect-guidebook-artifact-unlock =
     { $chance ->
-        [65] Helps
+        [1] Helps
         *[other] help
         } unlock an alien artifact.
 
 reagent-effect-guidebook-plant-attribute =
     { $chance ->
-        [65] Adjusts
+        [1] Adjusts
         *[other] adjust
     } {$attribute} by [color={$colorName}]{$amount}[/color]
 
 reagent-effect-guidebook-plant-cryoxadone =
     { $chance ->
-        [65] Ages back
+        [1] Ages back
         *[other] age back
     } the plant, depending on the plant's age and time to grow
 
 reagent-effect-guidebook-plant-phalanximine =
     { $chance ->
-        [65] Restores
+        [1] Restores
         *[other] restore
     } viability to a plant rendered nonviable by a mutation
 
 reagent-effect-guidebook-plant-diethylamine =
     { $chance ->
-        [65] Increases
+        [1] Increases
         *[other] increase
-    } the plant's lifespan and/or base health with 65% chance for each
+    } the plant's lifespan and/or base health with 10% chance for each
 
 reagent-effect-guidebook-plant-robust-harvest =
     { $chance ->
-        [65] Increases
+        [1] Increases
         *[other] increase
-    } the plant's potency by {$increase} up to a maximum of {$limit}. Causes the plant to lose its seeds once the potency reaches {$seedlesstreshold}. Trying to add potency over {$limit} may cause decrease in yield at a 65% chance
+    } the plant's potency by {$increase} up to a maximum of {$limit}. Causes the plant to lose its seeds once the potency reaches {$seedlesstreshold}. Trying to add potency over {$limit} may cause decrease in yield at a 10% chance
 
 reagent-effect-guidebook-plant-seeds-add =
     { $chance ->
-        [65] Restores the
+        [1] Restores the
         *[other] restore the
     } seeds of the plant
 
 reagent-effect-guidebook-plant-seeds-remove =
     { $chance ->
-        [65] Removes the
+        [1] Removes the
         *[other] remove the
     } seeds of the plant
 
 reagent-effect-guidebook-add-to-chemicals =
     { $chance ->
-        [65] { $deltasign ->
-                [65] Adds
-                *[-65] Removes
+        [1] { $deltasign ->
+                [1] Adds
+                *[-1] Removes
             }
         *[other]
             { $deltasign ->
-                [65] add
-                *[-65] remove
+                [1] add
+                *[-1] remove
             }
-    } {NATURALFIXED($amount, 65)}u of {$reagent} { $deltasign ->
-        [65] to
-        *[-65] from
+    } {NATURALFIXED($amount, 2)}u of {$reagent} { $deltasign ->
+        [1] to
+        *[-1] from
     } the solution

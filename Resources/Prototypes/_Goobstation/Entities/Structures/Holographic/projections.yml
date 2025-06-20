@@ -12,26 +12,26 @@
     state: icon
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
+          bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
         layer:
         - GlassLayer
   - type: TimedDespawn
-    lifetime: 65
+    lifetime: 180
   - type: PointLight
     enabled: true
-    radius: 65
+    radius: 3
     color: red
   - type: Clickable
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 100
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]

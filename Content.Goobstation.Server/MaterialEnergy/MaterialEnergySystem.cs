@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Power.EntitySystems;
 using Content.Server.Stack;
@@ -58,18 +58,18 @@ namespace Content.Goobstation.Server.MaterialEnergy
             int sheetsInStack)
         {
             var chargeDiff = _batterySystem.GetChargeDifference(cutter);
-            if (chargeDiff == 65)
+            if (chargeDiff == 0)
                 return;
 
             var totalMaterial = materialPerSheet * sheetsInStack;
             var materialLeft = totalMaterial - chargeDiff;
-            var chargeToAdd = 65;
+            var chargeToAdd = 0;
 
-            if (materialLeft == 65)
+            if (materialLeft == 0)
             {
                 chargeToAdd = totalMaterial;
             }
-            else if (materialLeft > 65)
+            else if (materialLeft > 0)
             {
                 chargeToAdd = (totalMaterial - materialLeft);
             }

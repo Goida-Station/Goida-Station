@@ -11,8 +11,8 @@
       - !type:SnapToGrid { }
       steps:
       - material: WoodPlank
-        amount: 65
-        doAfter: 65
+        amount: 10
+        doAfter: 1
 
   - node: BonfireNode
     entity: FieryStake
@@ -20,8 +20,8 @@
     - to: start
       completed:
       - !type:GivePrototype
-        prototype: MaterialWoodPlank65
-        amount: 65
+        prototype: MaterialWoodPlank1
+        amount: 1
       steps:
       - tool: Prying
-        doAfter: 65
+        doAfter: 1

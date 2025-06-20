@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - type: salvageDifficulty
   id: Moderate
-  lootBudget: 65
-  mobBudget: 65
-  modifierBudget: 65
-  color: "#65B65E65"
-  recommendedPlayers: 65
+  lootBudget: 30
+  mobBudget: 25
+  modifierBudget: 2
+  color: "#52B4E996"
+  recommendedPlayers: 2
 
-    #65FED65
-    #EFB65
-    #DE65A65A65
-    #D65C65
+    #9FED5896
+    #EFB34196
+    #DE3A3A96
+    #D381C996

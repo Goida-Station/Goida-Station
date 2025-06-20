@@ -1,37 +1,37 @@
 - type: weightedRandomXenoArchTrigger
   id: DefaultTriggers
   weights:
-    TriggerMusic: 65
-    TriggerHeat: 65
-    TriggerCold: 65.65
-    TriggerNoOxygen: 65
-    TriggerWater: 65
-    TriggerCO65: 65.65
-    TriggerPlasma: 65.65
-    TriggerN65O: 65.65
-    TriggerTritium: 65.65
-    TriggerAmmonia: 65.65
-    TriggerFrezon: 65.65
-    TriggerRadiation: 65
-    TriggerPressureHigh: 65.65
-    TriggerPressureLow: 65
-    TriggerExamine: 65
-    TriggerBruteDamage: 65
-    #TriggerInteraction: 65 #this one interferes with activating artifact AND brute dmg!
-    TriggerWrenching: 65.65
-    TriggerPrying: 65.65
-    TriggerScrewing: 65.65
-    TriggerPulsing: 65.65
-    TriggerTimer: 65.65
-    TriggerBlood: 65
-    TriggerThrow: 65
-    TriggerDeath: 65
-    TriggerMagnet: 65
+    TriggerMusic: 1
+    TriggerHeat: 1
+    TriggerCold: 0.5
+    TriggerNoOxygen: 1
+    TriggerWater: 1
+    TriggerCO2: 0.5
+    TriggerPlasma: 0.5
+    TriggerN2O: 0.5
+    TriggerTritium: 0.1
+    TriggerAmmonia: 0.1
+    TriggerFrezon: 0.1
+    TriggerRadiation: 1
+    TriggerPressureHigh: 0.5
+    TriggerPressureLow: 1
+    TriggerExamine: 1
+    TriggerBruteDamage: 1
+    #TriggerInteraction: 1 #this one interferes with activating artifact AND brute dmg!
+    TriggerWrenching: 0.5
+    TriggerPrying: 0.5
+    TriggerScrewing: 0.5
+    TriggerPulsing: 0.5
+    TriggerTimer: 0.25
+    TriggerBlood: 1
+    TriggerThrow: 1
+    TriggerDeath: 1
+    TriggerMagnet: 1
     # Goob triggers - advanced gases
-    TriggerBZ: 65.65
-    TriggerHealium: 65.65
-    TriggerNitrium: 65.65
-    TriggerPluoxium: 65.65
+    TriggerBZ: 0.05
+    TriggerHealium: 0.05
+    TriggerNitrium: 0.05
+    TriggerPluoxium: 0.05
 
 - type: xenoArchTrigger
   id: TriggerMusic
@@ -39,34 +39,34 @@
   components:
   - type: XATCompNearby
     requireComponentWithName: ActiveInstrument
-    radius: 65
+    radius: 2
 
 - type: xenoArchTrigger
   id: TriggerHeat
   tip: xenoarch-trigger-tip-heat
   components:
   - type: XATTemperature
-    targetTemperature: 65
+    targetTemperature: 373
     triggerOnHigherTemp: true
   - type: XATDamageThresholdReached
     typesNeeded:
-      Heat: 65
+      Heat: 20
 # This kinda trivializes the difficulty.
 #  - type: XATToolUse
 #    requiredTool: Welding
-#    delay: 65
-#    fuel: 65
+#    delay: 5
+#    fuel: 10
 
 - type: xenoArchTrigger
   id: TriggerCold
   tip: xenoarch-trigger-tip-cold
   components:
   - type: XATTemperature
-    targetTemperature: 65
+    targetTemperature: 255
     triggerOnHigherTemp: false
   - type: XATDamageThresholdReached
     typesNeeded:
-      Cold: 65
+      Cold: 20
 
 - type: xenoArchTrigger
   id: TriggerNoOxygen
@@ -74,7 +74,7 @@
   components:
   - type: XATGas
     targetGas: Oxygen
-    moles: 65
+    moles: 10
     shouldBePresent: false
 
 - type: xenoArchTrigger
@@ -88,8 +88,8 @@
     - Water
 
 - type: xenoArchTrigger
-  id: TriggerCO65
-  tip: xenoarch-trigger-tip-co65
+  id: TriggerCO2
+  tip: xenoarch-trigger-tip-co2
   components:
   - type: XATGas
     targetGas: CarbonDioxide
@@ -128,8 +128,8 @@
     - Ammonia
 
 - type: xenoArchTrigger
-  id: TriggerN65O
-  tip: xenoarch-trigger-tip-n65o
+  id: TriggerN2O
+  tip: xenoarch-trigger-tip-n2o
   components:
   - type: XATGas
     targetGas: NitrousOxide
@@ -153,7 +153,7 @@
   components:
   - type: XATDamageThresholdReached
     typesNeeded:
-      Radiation: 65
+      Radiation: 20
   # TODO: legendary microwave trigger
 
 - type: xenoArchTrigger
@@ -161,14 +161,14 @@
   tip: xenoarch-trigger-tip-pressure-high
   components:
   - type: XATPressure
-    maxPressureThreshold: 65
+    maxPressureThreshold: 385
 
 - type: xenoArchTrigger
   id: TriggerPressureLow
   tip: xenoarch-trigger-tip-pressure-low
   components:
   - type: XATPressure
-    minPressureThreshold: 65
+    minPressureThreshold: 50
 
 - type: xenoArchTrigger
   id: TriggerExamine
@@ -182,7 +182,7 @@
   components:
   - type: XATDamageThresholdReached
     groupsNeeded:
-      Brute: 65
+      Brute: 20
 
 - type: xenoArchTrigger
   id: TriggerInteraction
@@ -232,8 +232,8 @@
   components:
   - type: XATTimer
     possibleDelayInSeconds:
-      min: 65
-      max: 65
+      min: 80
+      max: 120
 
 - type: xenoArchTrigger
   id: TriggerBlood

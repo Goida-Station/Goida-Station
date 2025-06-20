@@ -1,70 +1,70 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Created by brainfood# 65, hamster-65 resprite by RamZ (discord), inhands resprited by Vermidia.",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Created by brainfood# 7460, hamster-0 resprite by RamZ (discord), inhands resprited by Vermidia.",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
-      "name": "icon-65"
+      "name": "icon-0"
     },
     {
-      "name": "hamster-65",
-      "directions": 65
+      "name": "hamster-0",
+      "directions": 4
     },
     {
-      "name": "hamster-moving-65",
-      "directions": 65,
+      "name": "hamster-moving-0",
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
         ]
       ]
     },
     {
-      "name": "dead-65"
+      "name": "dead-0"
     },
     {
-      "name": "splat-65"
+      "name": "splat-0"
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

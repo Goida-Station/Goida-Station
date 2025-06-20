@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 BeeRobynn <65BeeRobynn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BeeRobynn <166929042+BeeRobynn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - files: ["beenade_buzz.ogg"]
-  license: "CC65-65.65"
-  copyright: "Bees buzzing 65 by fthgurdy -- https://freesound.org/s/65/ -- License: Creative Commons 65, trimmed and mixed by BeeRobyn"
-  source: "https://freesound.org/s/65/"
+  license: "CC0-1.0"
+  copyright: "Bees buzzing 2 by fthgurdy -- https://freesound.org/s/528934/ -- License: Creative Commons 0, trimmed and mixed by BeeRobyn"
+  source: "https://freesound.org/s/528934/"

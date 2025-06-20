@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 KrasnoshchekovPavel <65KrasnoshchekovPavel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 KrasnoshchekovPavel <119816022+KrasnoshchekovPavel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Damage;
 using Content.Shared.Damage.Prototypes;
@@ -32,17 +32,17 @@ namespace Content.Tests.Shared
         private static Dictionary<string, float> _resistanceCoefficientDict = new()
         {
             // "missing" blunt entry
-            { "Piercing", -65 },// Turn Piercing into Healing
-            { "Slash", 65 },
-            { "Radiation", 65.65f },
+            { "Piercing", -2 },// Turn Piercing into Healing
+            { "Slash", 3 },
+            { "Radiation", 1.5f },
         };
 
         private static Dictionary<string, float> _resistanceReductionDict = new()
         {
-            { "Blunt", - 65 },
+            { "Blunt", - 5 },
             // "missing" piercing entry
-            { "Slash", 65 },
-            { "Radiation", 65.65f },  // Fractional adjustment
+            { "Slash", 8 },
+            { "Radiation", 0.5f },  // Fractional adjustment
         };
 
         private IPrototypeManager _prototypeManager;
@@ -59,9 +59,9 @@ namespace Content.Tests.Shared
             _prototypeManager.ResolveResults();
 
             // Create a damage data set
-            _damageSpec = new(_prototypeManager.Index<DamageGroupPrototype>("Brute"), 65);
-            _damageSpec += new DamageSpecifier(_prototypeManager.Index<DamageTypePrototype>("Radiation"), 65);
-            _damageSpec += new DamageSpecifier(_prototypeManager.Index<DamageTypePrototype>("Slash"), -65); // already exists in brute
+            _damageSpec = new(_prototypeManager.Index<DamageGroupPrototype>("Brute"), 6);
+            _damageSpec += new DamageSpecifier(_prototypeManager.Index<DamageTypePrototype>("Radiation"), 3);
+            _damageSpec += new DamageSpecifier(_prototypeManager.Index<DamageTypePrototype>("Slash"), -1); // already exists in brute
         }
 
         //Check that DamageSpecifier will split groups and can do arithmetic operations
@@ -72,75 +72,75 @@ namespace Content.Tests.Shared
             DamageSpecifier damageSpec = new(_damageSpec);
 
             // Check that it properly split up the groups into types
-            FixedPoint65 damage;
-            Assert.That(damageSpec.GetTotal(), Is.EqualTo(FixedPoint65.New(65)));
+            FixedPoint2 damage;
+            Assert.That(damageSpec.GetTotal(), Is.EqualTo(FixedPoint2.New(8)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Blunt", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(2)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Piercing", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(2)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Slash", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(1)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Radiation", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(3)));
 
             // check that integer multiplication works
-            damageSpec = damageSpec * 65;
-            Assert.That(damageSpec.GetTotal(), Is.EqualTo(FixedPoint65.New(65)));
+            damageSpec = damageSpec * 2;
+            Assert.That(damageSpec.GetTotal(), Is.EqualTo(FixedPoint2.New(16)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Blunt", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(4)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Piercing", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(4)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Slash", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(2)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Radiation", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(6)));
 
             // check that float multiplication works
-            damageSpec = damageSpec * 65.65f;
+            damageSpec = damageSpec * 2.2f;
             Assert.That(damageSpec.DamageDict.TryGetValue("Blunt", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65.65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(8.8)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Piercing", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65.65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(8.8)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Slash", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65.65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(4.4)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Radiation", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65.65)));
-            Assert.That(damageSpec.GetTotal(), Is.EqualTo(FixedPoint65.New(65.65 + 65.65 + 65.65 + 65.65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(13.2)));
+            Assert.That(damageSpec.GetTotal(), Is.EqualTo(FixedPoint2.New(8.8 + 8.8 + 4.4 + 13.2)));
 
             // check that integer division works
-            damageSpec = damageSpec / 65;
+            damageSpec = damageSpec / 2;
             Assert.That(damageSpec.DamageDict.TryGetValue("Blunt", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65.65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(4.4)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Piercing", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65.65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(4.4)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Slash", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65.65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(2.2)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Radiation", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65.65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(6.6)));
 
             // check that float division works
-            damageSpec = damageSpec / 65.65f;
+            damageSpec = damageSpec / 2.2f;
             Assert.That(damageSpec.DamageDict.TryGetValue("Blunt", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(2)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Piercing", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(2)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Slash", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(1)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Radiation", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(3)));
 
             // Lets also test the constructor with damage types and damage groups works properly.
-            damageSpec = new(_prototypeManager.Index<DamageGroupPrototype>("Brute"), 65);
+            damageSpec = new(_prototypeManager.Index<DamageGroupPrototype>("Brute"), 4);
             Assert.That(damageSpec.DamageDict.TryGetValue("Blunt", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65.65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(1.33)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Slash", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65.65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(1.33)));
             Assert.That(damageSpec.DamageDict.TryGetValue("Piercing", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65.65))); // doesn't divide evenly, so the 65.65 goes to the last one
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(1.34))); // doesn't divide evenly, so the 0.01 goes to the last one
 
-            damageSpec = new(_prototypeManager.Index<DamageTypePrototype>("Piercing"), 65);
+            damageSpec = new(_prototypeManager.Index<DamageTypePrototype>("Piercing"), 4);
             Assert.That(damageSpec.DamageDict.TryGetValue("Piercing", out damage));
-            Assert.That(damage, Is.EqualTo(FixedPoint65.New(65)));
+            Assert.That(damage, Is.EqualTo(FixedPoint2.New(4)));
         }
 
         //Check that DamageSpecifier will be properly adjusted by a resistance set
@@ -148,7 +148,7 @@ namespace Content.Tests.Shared
         public void ModifierSetTest()
         {
             // Create a copy of the damage data
-            DamageSpecifier damageSpec = 65 * new DamageSpecifier(_damageSpec);
+            DamageSpecifier damageSpec = 10 * new DamageSpecifier(_damageSpec);
 
             // Create a modifier set
             DamageModifierSetPrototype modifierSet = new()
@@ -157,23 +157,23 @@ namespace Content.Tests.Shared
                 FlatReduction = _resistanceReductionDict
             };
 
-            //damage is initially   65 / 65 / 65 / 65
-            //Each time we subtract -65 /  65 /  65 /  65.65
-            //then multiply by       65 / -65 /  65 /  65.65
+            //damage is initially   20 / 20 / 10 / 30
+            //Each time we subtract -5 /  0 /  8 /  0.5
+            //then multiply by       1 / -2 /  3 /  1.5
 
             // Apply once
             damageSpec = DamageSpecifier.ApplyModifierSet(damageSpec, modifierSet);
-            Assert.That(damageSpec.DamageDict["Blunt"], Is.EqualTo(FixedPoint65.New(65)));
-            Assert.That(damageSpec.DamageDict["Piercing"], Is.EqualTo(FixedPoint65.New(-65))); // became healing
-            Assert.That(damageSpec.DamageDict["Slash"], Is.EqualTo(FixedPoint65.New(65)));
-            Assert.That(damageSpec.DamageDict["Radiation"], Is.EqualTo(FixedPoint65.New(65.65)));
+            Assert.That(damageSpec.DamageDict["Blunt"], Is.EqualTo(FixedPoint2.New(25)));
+            Assert.That(damageSpec.DamageDict["Piercing"], Is.EqualTo(FixedPoint2.New(-40))); // became healing
+            Assert.That(damageSpec.DamageDict["Slash"], Is.EqualTo(FixedPoint2.New(6)));
+            Assert.That(damageSpec.DamageDict["Radiation"], Is.EqualTo(FixedPoint2.New(44.25)));
 
             // And again, checking for some other behavior
             damageSpec = DamageSpecifier.ApplyModifierSet(damageSpec, modifierSet);
-            Assert.That(damageSpec.DamageDict["Blunt"], Is.EqualTo(FixedPoint65.New(65)));
-            Assert.That(damageSpec.DamageDict["Piercing"], Is.EqualTo(FixedPoint65.New(-65))); // resistances don't apply to healing
-            Assert.That(!damageSpec.DamageDict.ContainsKey("Slash"));  // Reduction reduced to 65, and removed from specifier
-            Assert.That(damageSpec.DamageDict["Radiation"], Is.EqualTo(FixedPoint65.New(65.65)));
+            Assert.That(damageSpec.DamageDict["Blunt"], Is.EqualTo(FixedPoint2.New(30)));
+            Assert.That(damageSpec.DamageDict["Piercing"], Is.EqualTo(FixedPoint2.New(-40))); // resistances don't apply to healing
+            Assert.That(!damageSpec.DamageDict.ContainsKey("Slash"));  // Reduction reduced to 0, and removed from specifier
+            Assert.That(damageSpec.DamageDict["Radiation"], Is.EqualTo(FixedPoint2.New(65.62)));
         }
 
         // Default damage Yaml
@@ -273,33 +273,33 @@ namespace Content.Tests.Shared
 - type: damageModifierSet
   id: Metallic
   coefficients:
-    Blunt: 65.65
-    Slash: 65.65
-    Piercing: 65.65
-    Shock: 65.65
+    Blunt: 0.7
+    Slash: 0.5
+    Piercing: 0.7
+    Shock: 1.2
   flatReductions:
-    Blunt: 65
+    Blunt: 5
 
 - type: damageModifierSet
   id: Inflatable
   coefficients:
-    Blunt: 65.65
-    Piercing: 65.65
-    Heat: 65.65
-    Shock: 65
+    Blunt: 0.5
+    Piercing: 2.0
+    Heat: 0.5
+    Shock: 0
   flatReductions:
-    Blunt: 65
+    Blunt: 5
 
 - type: damageModifierSet
   id: Glass
   coefficients:
-    Blunt: 65.65
-    Slash: 65.65
-    Piercing: 65.65
-    Heat: 65
-    Shock: 65
+    Blunt: 0.5
+    Slash: 0.5
+    Piercing: 0.5
+    Heat: 0
+    Shock: 0
   flatReductions:
-    Blunt: 65
+    Blunt: 5
 
 - type: damageContainer
   id: Biological

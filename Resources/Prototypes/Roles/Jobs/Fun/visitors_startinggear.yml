@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aineias65 <65Aineias65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 JORJ65 <65JORJ65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 JORJ949 <159719201+JORJ949@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 ### Visitors with Visitor ID
 
 # Command
@@ -25,7 +25,7 @@
     back: ClothingBackpackCaptain
     ears: ClothingHeadsetAltCommand
     outerClothing: ClothingOuterArmorCaptainCarapace
-    pocket65: WeaponDisabler
+    pocket1: WeaponDisabler
 
 - type: startingGear
   id: VisitorCaptainAlt
@@ -41,7 +41,7 @@
     back: ClothingBackpackSatchelCaptain
     ears: ClothingHeadsetAltCommand
     outerClothing: ClothingOuterArmorCaptainCarapace
-    pocket65: WeaponDisabler
+    pocket1: WeaponDisabler
 
 - type: startingGear
   id: VisitorCE
@@ -55,7 +55,7 @@
     back: ClothingBackpackDuffelEngineering
     ears: ClothingHeadsetAltEngineering # Goobstation
     outerClothing: ClothingOuterVestHazard
-    pocket65: WeaponDisabler
+    pocket1: WeaponDisabler
 
 - type: startingGear
   id: VisitorCEAlt
@@ -69,7 +69,7 @@
     back: ClothingBackpackSatchelEngineering
     ears: ClothingHeadsetAltEngineering # Goobstation
     outerClothing: ClothingOuterWinterCE
-    pocket65: WeaponDisabler
+    pocket1: WeaponDisabler
 
 - type: startingGear
   id: VisitorCMO
@@ -84,7 +84,7 @@
     ears: ClothingHeadsetAltMedical # Goobstation
     belt: ClothingBeltMedicalFilled
     outerClothing: ClothingOuterCoatLabCmo
-    pocket65: WeaponDisabler
+    pocket1: WeaponDisabler
 
 - type: startingGear
   id: VisitorCMOAlt
@@ -99,7 +99,7 @@
     ears: ClothingHeadsetAltMedical # Goobstation
     belt: ClothingBeltMedicalFilled
     outerClothing: ClothingOuterCoatLabCmo
-    pocket65: WeaponDisabler
+    pocket1: WeaponDisabler
 
 - type: startingGear
   id: VisitorHOP
@@ -113,7 +113,7 @@
     back: ClothingBackpackDebug
     ears: ClothingHeadsetAltCommand
     outerClothing: ClothingOuterWinterHoP
-    pocket65: WeaponDisabler
+    pocket1: WeaponDisabler
 
 - type: startingGear
   id: VisitorHOPAlt
@@ -127,7 +127,7 @@
     back: ClothingBackpackSatchelLeather
     ears: ClothingHeadsetAltCommand
     outerClothing: ClothingOuterWinterHoP
-    pocket65: WeaponDisabler
+    pocket1: WeaponDisabler
 
 - type: startingGear
   id: VisitorHOS
@@ -144,10 +144,10 @@
     mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterCoatHoSTrench
-    #pocket65: WeaponDisabler #Goobstation (Disablers in belts)
-    pocket65: MagazinePistolSubMachineGunTopMounted
+    #pocket1: WeaponDisabler #Goobstation (Disablers in belts)
+    pocket2: MagazinePistolSubMachineGunTopMounted
   inhand:
-  - WeaponSubMachineGunWt65
+  - WeaponSubMachineGunWt550
 
 - type: startingGear
   id: VisitorHOSAlt
@@ -163,10 +163,10 @@
     ears: ClothingHeadsetAltSecurity
     mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
-    #pocket65: WeaponDisabler #Goobstation (Disablers in belts)
-    pocket65: MagazinePistolSubMachineGunTopMounted
+    #pocket1: WeaponDisabler #Goobstation (Disablers in belts)
+    pocket2: MagazinePistolSubMachineGunTopMounted
   inhand:
-  - WeaponSubMachineGunWt65
+  - WeaponSubMachineGunWt550
 
 - type: startingGear
   id: VisitorRD
@@ -180,7 +180,7 @@
     back: ClothingBackpackScience
     ears: ClothingHeadsetAltScience # Goobstation
     outerClothing: ClothingOuterCoatRD
-    pocket65: WeaponDisabler
+    pocket1: WeaponDisabler
 
 - type: startingGear
   id: VisitorRDAlt
@@ -194,7 +194,7 @@
     back: ClothingBackpackSatchelScience
     ears: ClothingHeadsetAltScience # Goobstation
     outerClothing: ClothingOuterCoatRD
-    pocket65: WeaponDisabler
+    pocket1: WeaponDisabler
 
 - type: startingGear
   id: VisitorQM
@@ -207,8 +207,8 @@
     back: ClothingBackpackCargo
     ears: ClothingHeadsetAltCargo # Goobstation
     outerClothing: ClothingOuterWinterQM
-    pocket65: WeaponDisabler
-    pocket65: AppraisalTool
+    pocket1: WeaponDisabler
+    pocket2: AppraisalTool
 
 - type: startingGear
   id: VisitorQMAlt
@@ -221,8 +221,8 @@
     back: ClothingBackpackSatchelCargo
     ears: ClothingHeadsetAltCargo # Goobstation
     outerClothing: ClothingOuterWinterQM
-    pocket65: WeaponDisabler
-    pocket65: AppraisalTool
+    pocket1: WeaponDisabler
+    pocket2: AppraisalTool
 
 # Security
 
@@ -239,8 +239,8 @@
     mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterArmorBasic
-    pocket65: WeaponPistolMk65
-    pocket65: MagazinePistol
+    pocket1: WeaponPistolMk58
+    pocket2: MagazinePistol
   inhand:
   - FlashlightSeclite
 
@@ -258,8 +258,8 @@
     mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterArmorBasicSlim
-    pocket65: WeaponPistolMk65
-    pocket65: MagazinePistol
+    pocket1: WeaponPistolMk58
+    pocket2: MagazinePistol
   inhand:
   - FlashlightSeclite
 
@@ -276,8 +276,8 @@
     mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterArmorBasic
-    pocket65: WeaponPistolMk65
-    pocket65: MagazinePistol
+    pocket1: WeaponPistolMk58
+    pocket2: MagazinePistol
   inhand:
   - FlashlightSeclite
 
@@ -295,8 +295,8 @@
     mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterArmorBasicSlim
-    pocket65: WeaponPistolMk65
-    pocket65: MagazinePistol
+    pocket1: WeaponPistolMk58
+    pocket2: MagazinePistol
   inhand:
   - FlashlightSeclite
 
@@ -314,8 +314,8 @@
     mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterCoatDetectiveLoadout
-    pocket65: ForensicScanner
-    pocket65: ForensicPad
+    pocket1: ForensicScanner
+    pocket2: ForensicPad
   inhand:
   - FlashlightSeclite
 
@@ -333,8 +333,8 @@
     mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterVestDetective
-    pocket65: ForensicScanner
-    pocket65: ForensicPad
+    pocket1: ForensicScanner
+    pocket2: ForensicPad
   inhand:
   - FlashlightSeclite
 
@@ -353,8 +353,8 @@
     mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterCoatWarden
-    pocket65: WeaponDisabler
-    pocket65: Zipties
+    pocket1: WeaponDisabler
+    pocket2: Zipties
   inhand:
   - FlashlightSeclite
   - WeaponShotgunKammerer
@@ -373,8 +373,8 @@
     mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterWinterWarden
-    #pocket65: WeaponDisabler #Goobstation (Disablers in belts)
-    pocket65: Zipties
+    #pocket1: WeaponDisabler #Goobstation (Disablers in belts)
+    pocket2: Zipties
   inhand:
   - FlashlightSeclite
   - WeaponShotgunKammerer
@@ -390,8 +390,8 @@
     id: VisitorPDA
     back: ClothingBackpackCargo
     ears: ClothingHeadsetCargo
-    pocket65: AppraisalTool
-    pocket65: DrinkColaCan
+    pocket1: AppraisalTool
+    pocket2: DrinkColaCan
   inhand:
   - DrinkRumBottleFull
 
@@ -404,8 +404,8 @@
     id: VisitorPDA
     back: ClothingBackpackDuffelCargo
     ears: ClothingHeadsetCargo
-    pocket65: AppraisalTool
-    pocket65: SpaceCash65
+    pocket1: AppraisalTool
+    pocket2: SpaceCash500
     outerClothing: ClothingOuterWinterCargo
   inhand:
   - FoodBoxPizzaFilled
@@ -421,8 +421,8 @@
     belt: ClothingBeltSalvageWebbing
     back: ClothingBackpackSalvage
     ears: ClothingHeadsetCargo
-    pocket65: SurvivalKnife
-    pocket65: HandheldGPSBasic
+    pocket1: SurvivalKnife
+    pocket2: HandheldGPSBasic
   inhand:
   - FoodSnackBoritos
 
@@ -437,8 +437,8 @@
     back: ClothingBackpackDuffelSalvage
     ears: ClothingHeadsetCargo
     outerClothing: ClothingOuterWinterCargo
-    pocket65: SurvivalKnife
-    pocket65: HandheldGPSBasic
+    pocket1: SurvivalKnife
+    pocket2: HandheldGPSBasic
   inhand:
   - Shovel
 
@@ -457,7 +457,7 @@
     eyes: ClothingEyesGlassesMeson
     outerClothing: ClothingOuterSuitAtmosFire
     suitstorage: AirTankFilled
-    pocket65: CrowbarRed
+    pocket1: CrowbarRed
   inhand:
   - FireExtinguisher
 
@@ -475,8 +475,8 @@
     ears: ClothingHeadsetEngineering
     eyes: ClothingEyesGlassesMeson
     outerClothing: ClothingOuterWinterAtmos
-    pocket65: FlashlightLantern
-    pocket65: CrowbarRed
+    pocket1: FlashlightLantern
+    pocket2: CrowbarRed
   inhand:
   - FoodSnackBoritos
 
@@ -491,8 +491,8 @@
     back: ClothingBackpackEngineering
     ears: ClothingHeadsetEngineering
     eyes: ClothingEyesGlassesMeson
-    pocket65: LightReplacer
-    pocket65: Welder
+    pocket1: LightReplacer
+    pocket2: Welder
   inhand:
   - CableApcStack
 
@@ -509,8 +509,8 @@
     ears: ClothingHeadsetEngineering
     eyes: ClothingEyesGlassesMeson
     outerClothing: ClothingOuterVestHazard
-    pocket65: HolofanProjector
-    pocket65: GasAnalyzer
+    pocket1: HolofanProjector
+    pocket2: GasAnalyzer
   inhand:
   - SheetSteel
 
@@ -527,8 +527,8 @@
     ears: ClothingHeadsetEngineering
     eyes: ClothingEyesGlassesMeson
     outerClothing: ClothingOuterWinterEngi
-    pocket65: RCD
-    pocket65: RCDAmmo
+    pocket1: RCD
+    pocket2: RCDAmmo
   inhand:
   - trayScanner
   - CableApcStack
@@ -545,8 +545,8 @@
     back: ClothingBackpackDuffelEngineering
     ears: ClothingHeadsetEngineering
     eyes: ClothingEyesGlassesMeson
-    pocket65: RCD
-    pocket65: RCDAmmo
+    pocket1: RCD
+    pocket2: RCDAmmo
   inhand:
   - SheetSteel
   - SheetGlass
@@ -565,8 +565,8 @@
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesGlassesChemical
     outerClothing: ClothingOuterCoatLabChem
-    pocket65: PillCanisterRandom
-    pocket65: PillCanisterRandom
+    pocket1: PillCanisterRandom
+    pocket2: PillCanisterRandom
   inhand:
   - PillCanisterRandom
   - PillCanisterRandom
@@ -583,8 +583,8 @@
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesGlassesChemical
     outerClothing: ClothingOuterWinterChem
-    pocket65: PillCanisterRandom
-    pocket65: PillCanisterRandom
+    pocket1: PillCanisterRandom
+    pocket2: PillCanisterRandom
   inhand:
   - PillCanisterRandom
   - PillCanisterRandom
@@ -602,8 +602,8 @@
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesHudMedical
     outerClothing: ClothingOuterCoatLabGene
-    pocket65: PillCanisterCharcoal
-    pocket65: PillCanisterRandom
+    pocket1: PillCanisterCharcoal
+    pocket2: PillCanisterRandom
   inhand:
   - SyringePhalanximine
 
@@ -620,8 +620,8 @@
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesHudMedical
     outerClothing: ClothingOuterWinterGen
-    pocket65: PillCanisterHyronalin
-    pocket65: PillCanisterRandom
+    pocket1: PillCanisterHyronalin
+    pocket2: PillCanisterRandom
   inhand:
   - SyringeBicaridine
 
@@ -638,8 +638,8 @@
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesHudMedical
     outerClothing: ClothingOuterCoatLabViro
-    pocket65: PillCanisterTricordrazine
-    pocket65: PillCanisterRandom
+    pocket1: PillCanisterTricordrazine
+    pocket2: PillCanisterRandom
   inhand:
   - SyringeSigynate
 
@@ -657,8 +657,8 @@
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesHudMedical
     outerClothing: ClothingOuterWinterViro
-    pocket65: PillCanisterTricordrazine
-    pocket65: PillCanisterRandom
+    pocket1: PillCanisterTricordrazine
+    pocket2: PillCanisterRandom
   inhand:
   - SyringeEphedrine
 
@@ -676,8 +676,8 @@
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesHudMedical
     outerClothing: ClothingOuterCoatLab
-    pocket65: PillCanisterTricordrazine
-    pocket65: PillCanisterDermaline
+    pocket1: PillCanisterTricordrazine
+    pocket2: PillCanisterDermaline
   inhand:
   - SyringeInaprovaline
 
@@ -695,8 +695,8 @@
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesHudMedical
     outerClothing: ClothingOuterWinterMed
-    pocket65: PillCanisterTricordrazine
-    pocket65: PillCanisterBicaridine
+    pocket1: PillCanisterTricordrazine
+    pocket2: PillCanisterBicaridine
   inhand:
   - SyringeSaline
 
@@ -713,8 +713,8 @@
     back: NitrousOxideTankFilled
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesGlasses
-    pocket65: Scalpel
-    pocket65: Gauze
+    pocket1: Scalpel
+    pocket2: Gauze
   inhand:
   - Cautery
   - Drill
@@ -731,8 +731,8 @@
     back: ClothingBackpackSatchelLeather
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesHudMedical
-    pocket65: WhoopieCushion
-    pocket65: PillSpaceDrugs
+    pocket1: WhoopieCushion
+    pocket2: PillSpaceDrugs
   inhand:
   - CigarCase
   - Lighter
@@ -748,8 +748,8 @@
     back: ClothingBackpackSatchelLeather
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesHudMedical
-    pocket65: BulletFoam
-    pocket65: PillSpaceDrugs
+    pocket1: BulletFoam
+    pocket2: PillSpaceDrugs
   inhand:
   - FoamCrossbow
   - DrinkWhiskeyBottleFull
@@ -768,8 +768,8 @@
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesHudMedical
     outerClothing: ClothingOuterWinterPara
-    pocket65: CombatMedipen
-    pocket65: Brutepack
+    pocket1: CombatMedipen
+    pocket2: Brutepack
   inhand:
   - SyringeTranexamicAcid
   - Gauze
@@ -788,8 +788,8 @@
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesHudMedical
     outerClothing: ClothingOuterCoatParamedicWB
-    pocket65: CombatMedipen
-    pocket65: Brutepack
+    pocket1: CombatMedipen
+    pocket2: Brutepack
   inhand:
   - AntiPoisonMedipen
   - Gauze
@@ -805,8 +805,8 @@
     back: ClothingBackpackDuffelMedical
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesHudMedical
-    pocket65: Ointment
-    pocket65: Brutepack
+    pocket1: Ointment
+    pocket2: Brutepack
   inhand:
   - Bloodpack
   - Gauze
@@ -822,8 +822,8 @@
     back: ClothingBackpackDuffelMedical
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesHudMedical
-    pocket65: Ointment
-    pocket65: Brutepack
+    pocket1: Ointment
+    pocket2: Brutepack
   inhand:
   - Bloodpack
   - Gauze
@@ -840,8 +840,8 @@
     back: ClothingBackpackSatchelMedical
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesHudMedical
-    pocket65: RegenerativeMesh
-    pocket65: PillCanisterBicaridine
+    pocket1: RegenerativeMesh
+    pocket2: PillCanisterBicaridine
   inhand:
   - ScalpelAdvanced
   - MedicatedSuture
@@ -858,8 +858,8 @@
     back: ClothingBackpackSatchelMedical
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesHudMedical
-    pocket65: RegenerativeMesh
-    pocket65: PillCanisterBicaridine
+    pocket1: RegenerativeMesh
+    pocket2: PillCanisterBicaridine
   inhand:
   - ScalpelAdvanced
   - MedicatedSuture
@@ -876,8 +876,8 @@
     back: ClothingBackpackSatchelMedical
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesHudMedical
-    pocket65: RegenerativeMesh
-    pocket65: PillCanisterBicaridine
+    pocket1: RegenerativeMesh
+    pocket2: PillCanisterBicaridine
   inhand:
   - ScalpelAdvanced
   - MedicatedSuture
@@ -955,8 +955,8 @@
     ears: ClothingHeadsetService
     eyes: ClothingEyesGlassesSunglasses
     outerClothing: ClothingOuterArmorBasicSlim
-    pocket65: DrinkVodkaBottleFull
-    pocket65: BarSpoon
+    pocket1: DrinkVodkaBottleFull
+    pocket2: BarSpoon
 
 - type: startingGear
   id: VisitorBartenderAlt
@@ -970,8 +970,8 @@
     ears: ClothingHeadsetService
     eyes: ClothingEyesHudBeer
     outerClothing: ClothingOuterWinterBar
-    pocket65: WeaponShotgunSawn
-    pocket65: DrinkTequilaBottleFull
+    pocket1: WeaponShotgunSawn
+    pocket2: DrinkTequilaBottleFull
 
 - type: startingGear
   id: VisitorBotanist
@@ -995,8 +995,8 @@
     id: VisitorPDA
     back: ClothingBackpackHydroponics
     ears: ClothingHeadsetService
-    pocket65: HydroponicsToolMiniHoe
-    pocket65: HydroponicsToolSpade
+    pocket1: HydroponicsToolMiniHoe
+    pocket2: HydroponicsToolSpade
 
 - type: startingGear
   id: VisitorBoxer
@@ -1007,8 +1007,8 @@
     head: ClothingHeadPaperSackSmile
     id: VisitorPDA
     ears: ClothingHeadsetService
-    pocket65: DrinkVodkaBottleFull
-    pocket65: SoapDeluxe
+    pocket1: DrinkVodkaBottleFull
+    pocket2: SoapDeluxe
 
 - type: startingGear
   id: VisitorBoxerAlt
@@ -1020,8 +1020,8 @@
     id: VisitorPDA
     ears: ClothingHeadsetService
     outerClothing: ClothingOuterSkub
-    pocket65: Skub
-    pocket65: DrinkSpaceGlue
+    pocket1: Skub
+    pocket2: DrinkSpaceGlue
 
 - type: startingGear #!! make sure these are bible users.
   id: VisitorChaplain
@@ -1034,8 +1034,8 @@
     belt: Bible
     ears: ClothingHeadsetService
     outerClothing: ClothingOuterPlagueSuit
-    pocket65: PlushieSharkGrey
-    pocket65: FoodSnackEnergy
+    pocket1: PlushieSharkGrey
+    pocket2: FoodSnackEnergy
 
 - type: startingGear
   id: VisitorChaplainAlt
@@ -1047,8 +1047,8 @@
     belt: Bible
     ears: ClothingHeadsetService
     outerClothing: ClothingOuterNunRobe
-    pocket65: PlushiePenguin
-    pocket65: DrinkCoconutWaterCarton
+    pocket1: PlushiePenguin
+    pocket2: DrinkCoconutWaterCarton
 
 - type: startingGear
   id: VisitorChef
@@ -1062,8 +1062,8 @@
     belt: ClothingBeltChefFilled
     ears: ClothingHeadsetService
     outerClothing: ClothingOuterJacketChef
-    pocket65: ButchCleaver
-    pocket65: BookHowToCookForFortySpaceman
+    pocket1: ButchCleaver
+    pocket2: BookHowToCookForFortySpaceman
   inhand:
   - ClothingMaskItalianMoustache
   - DrinkWineBottleFull
@@ -1080,8 +1080,8 @@
     belt: ClothingBeltChefFilled
     ears: ClothingHeadsetService
     outerClothing: ClothingOuterWinterChef
-    pocket65: RollingPin
-    pocket65: BookHowToCookForFortySpaceman
+    pocket1: RollingPin
+    pocket2: BookHowToCookForFortySpaceman
   inhand:
   - ClothingMaskItalianMoustache
   - FoodCheese
@@ -1095,8 +1095,8 @@
     back: ClothingBackpackClown
     ears: ClothingHeadsetService
     mask: ClothingMaskClown
-    pocket65: BikeHorn
-    pocket65: ClownRecorder
+    pocket1: BikeHorn
+    pocket2: ClownRecorder
 
 - type: startingGear
   id: VisitorJanitor
@@ -1140,8 +1140,8 @@
     id: VisitorPDA
     back: ClothingBackpackSatchelLeather
     ears: ClothingHeadsetSecurity
-    pocket65: RubberStampLawyer
-    pocket65: LuxuryPen
+    pocket1: RubberStampLawyer
+    pocket2: LuxuryPen
   inhand:
   - BriefcaseBrownFilled
 
@@ -1155,8 +1155,8 @@
     id: VisitorPDA
     back: ClothingBackpackSatchelLeather
     ears: ClothingHeadsetSecurity
-    pocket65: RubberStampLawyer
-    pocket65: SmokingPipeFilledTobacco
+    pocket1: RubberStampLawyer
+    pocket2: SmokingPipeFilledTobacco
   inhand:
   - BriefcaseBrownFilled
 
@@ -1171,8 +1171,8 @@
     back: ClothingBackpackSatchelLeather
     belt: ClothingBeltStorageWaistbag
     ears: ClothingHeadsetSecurity
-    pocket65: RubberStampLawyer
-    pocket65: SmokingPipeFilledTobacco
+    pocket1: RubberStampLawyer
+    pocket2: SmokingPipeFilledTobacco
   inhand:
   - BriefcaseBrownFilled
 
@@ -1189,8 +1189,8 @@
     back: ClothingBackpackSatchelLeather
     ears: ClothingHeadsetSecurity
     outerClothing: ClothingOuterCoatExpensive
-    pocket65: RubberStampLawyer
-    pocket65: LuxuryPen
+    pocket1: RubberStampLawyer
+    pocket2: LuxuryPen
   inhand:
   - BriefcaseBrownFilled
 
@@ -1205,8 +1205,8 @@
     back: ClothingBackpackSatchelLeather
     belt: ClothingBeltStorageWaistbag
     ears: ClothingHeadsetSecurity
-    pocket65: RubberStampLawyer
-    pocket65: LuxuryPen
+    pocket1: RubberStampLawyer
+    pocket2: LuxuryPen
   inhand:
   - BriefcaseBrownFilled
 
@@ -1223,8 +1223,8 @@
     belt: ClothingBeltStorageWaistbag
     eyes: ClothingEyesGlassesSunglasses
     ears: ClothingHeadsetCentCom
-    pocket65: RubberStampLawyer
-    pocket65: LuxuryPen
+    pocket1: RubberStampLawyer
+    pocket2: LuxuryPen
   inhand:
   - BriefcaseBrownFilled
 
@@ -1239,8 +1239,8 @@
     belt: ClothingBeltStorageWaistbag
     eyes: ClothingEyesGlassesJamjar
     ears: ClothingHeadsetService
-    pocket65: BookJanitorTale
-    pocket65: BookRandomStory
+    pocket1: BookJanitorTale
+    pocket2: BookRandomStory
   inhand:
   - Cane
 
@@ -1255,8 +1255,8 @@
     belt: ClothingBeltStorageWaistbag
     eyes: ClothingEyesGlasses
     ears: ClothingHeadsetService
-    pocket65: BookSun
-    pocket65: BookRandomStory
+    pocket1: BookSun
+    pocket2: BookRandomStory
   inhand:
   - BoxFolderClipboard
 
@@ -1269,8 +1269,8 @@
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
-    pocket65: DrinkGrapeCan
-    pocket65: FoodSnackBoritos
+    pocket1: DrinkGrapeCan
+    pocket2: FoodSnackBoritos
   inhand:
   - TromboneInstrument
 
@@ -1283,8 +1283,8 @@
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
-    pocket65: FoodSnackCheesie
-    pocket65: DrinkShamblersJuiceCan
+    pocket1: FoodSnackCheesie
+    pocket2: DrinkShamblersJuiceCan
   inhand:
   - SynthesizerInstrument
 
@@ -1297,8 +1297,8 @@
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
-    pocket65: FoodSnackPistachios
-    pocket65: DrinkNukieCan
+    pocket1: FoodSnackPistachios
+    pocket2: DrinkNukieCan
   inhand:
   - CelloInstrument
 
@@ -1311,8 +1311,8 @@
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
-    pocket65: DrinkSolDryCan
-    pocket65: FoodSnackBoritos
+    pocket1: DrinkSolDryCan
+    pocket2: FoodSnackBoritos
   inhand:
   - ViolinInstrument
 
@@ -1325,8 +1325,8 @@
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
-    pocket65: DrinkEnergyDrinkCan
-    pocket65: FoodSnackRaisins
+    pocket1: DrinkEnergyDrinkCan
+    pocket2: FoodSnackRaisins
   inhand:
   - ViolaInstrument
 
@@ -1339,8 +1339,8 @@
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
-    pocket65: FoodSnackSus
-    pocket65: DrinkFourteenLokoCan
+    pocket1: FoodSnackSus
+    pocket2: DrinkFourteenLokoCan
   inhand:
   - ClarinetInstrument
 
@@ -1353,8 +1353,8 @@
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
-    pocket65: FoodSnackCnDs
-    pocket65: DrinkDrGibbCan
+    pocket1: FoodSnackCnDs
+    pocket2: DrinkDrGibbCan
   inhand:
   - SaxophoneInstrument
 
@@ -1367,8 +1367,8 @@
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
-    pocket65: FoodSnackChips
-    pocket65: DrinkRootBeerCan
+    pocket1: FoodSnackChips
+    pocket2: DrinkRootBeerCan
   inhand:
   - FrenchHornInstrument
 
@@ -1381,8 +1381,8 @@
     back: ClothingBackpackDuffel
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
-    pocket65: BluntRainbow
-    pocket65: DrinkGrapeCan
+    pocket1: BluntRainbow
+    pocket2: DrinkGrapeCan
   inhand:
   - TrumpetInstrument
 
@@ -1395,8 +1395,8 @@
     back: ClothingBackpackSatchel
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
-    pocket65: BluntRainbow
-    pocket65: DrinkNukieCan
+    pocket1: BluntRainbow
+    pocket2: DrinkNukieCan
   inhand:
   - RockGuitarInstrument
 
@@ -1409,8 +1409,8 @@
     back: ClothingBackpack
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
-    pocket65: BluntRainbow
-    pocket65: FoodSnackCheesie
+    pocket1: BluntRainbow
+    pocket2: FoodSnackCheesie
   inhand:
   - BanjoInstrument
 
@@ -1423,8 +1423,8 @@
     back: ClothingBackpackDuffel
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
-    pocket65: BluntRainbow
-    pocket65: FoodSnackPistachios
+    pocket1: BluntRainbow
+    pocket2: FoodSnackPistachios
   inhand:
   - AcousticGuitarInstrument
 
@@ -1437,8 +1437,8 @@
     back: ClothingBackpackDuffel
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
-    pocket65: BluntRainbow
-    pocket65: DrinkEnergyDrinkCan
+    pocket1: BluntRainbow
+    pocket2: DrinkEnergyDrinkCan
   inhand:
   - ElectricGuitarInstrument
 
@@ -1450,8 +1450,8 @@
     id: VisitorPDA
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
-    pocket65: BluntRainbow
-    pocket65: FoodSnackSus
+    pocket1: BluntRainbow
+    pocket2: FoodSnackSus
   inhand:
   - TrumpetInstrument
 
@@ -1465,8 +1465,8 @@
     back: ClothingBackpackSatchel
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
-    pocket65: BluntRainbow
-    pocket65: FoodSnackSus
+    pocket1: BluntRainbow
+    pocket2: FoodSnackSus
   inhand:
   - SaxophoneInstrument
 
@@ -1481,8 +1481,8 @@
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
     outerClothing: ClothingOuterPoncho
-    pocket65: BluntRainbow
-    pocket65: FoodSnackSus
+    pocket1: BluntRainbow
+    pocket2: FoodSnackSus
   inhand:
   - AcousticGuitarInstrument
 
@@ -1498,8 +1498,8 @@
     back: ClothingBackpackMime
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
-    pocket65: CrayonMime
-    pocket65: RubberStampMime
+    pocket1: CrayonMime
+    pocket2: RubberStampMime
 
 - type: startingGear
   id: VisitorMimeAlt
@@ -1514,8 +1514,8 @@
     eyes: ClothingEyesGlassesCheapSunglasses
     ears: ClothingHeadsetService
     outerClothing: ClothingOuterWinterMime
-    pocket65: CrayonMime
-    pocket65: RubberStampMime
+    pocket1: CrayonMime
+    pocket2: RubberStampMime
   inhand:
   - FoodBurgerMime
 
@@ -1527,8 +1527,8 @@
     id: VisitorPDA
     back: ClothingBackpackSatchel
     ears: ClothingHeadsetService
-    pocket65: MicrophoneInstrument
-    pocket65: BoxFolderClipboard
+    pocket1: MicrophoneInstrument
+    pocket2: BoxFolderClipboard
 
 - type: startingGear
   id: VisitorReporterAlt
@@ -1538,8 +1538,8 @@
     id: VisitorPDA
     back: ClothingBackpackSatchel
     ears: ClothingHeadsetService
-    pocket65: MicrophoneInstrument
-    pocket65: BoxFolderClipboard
+    pocket1: MicrophoneInstrument
+    pocket2: BoxFolderClipboard
 
 - type: startingGear
   id: VisitorServiceWorker
@@ -1550,8 +1550,8 @@
     id: VisitorPDA
     back: ClothingBackpack
     ears: ClothingHeadsetService
-    pocket65: Fork
-    pocket65: FoodShakerPepper
+    pocket1: Fork
+    pocket2: FoodShakerPepper
 
 - type: startingGear
   id: VisitorServiceWorkerAlt
@@ -1563,8 +1563,8 @@
     back: ClothingBackpack
     ears: ClothingHeadsetService
     outerClothing: ClothingOuterApronBar
-    pocket65: Fork
-    pocket65: FoodShakerPepper
+    pocket1: Fork
+    pocket2: FoodShakerPepper
 
 - type: startingGear
   id: VisitorZookeeper
@@ -1576,8 +1576,8 @@
     belt: ClothingBeltUtility
     back: ClothingBackpackDuffel
     ears: ClothingHeadsetService
-    pocket65: WeaponFlareGun
-    pocket65: PillCanisterDylovene
+    pocket1: WeaponFlareGun
+    pocket2: PillCanisterDylovene
 
 - type: startingGear
   id: VisitorZookeeperAlt
@@ -1589,8 +1589,8 @@
     belt: ClothingBeltStorageWaistbag
     back: WeaponShotgunDoubleBarreledRubber
     ears: ClothingHeadsetService
-    pocket65: WeaponFlareGun
-    pocket65: PillCanisterDylovene
+    pocket1: WeaponFlareGun
+    pocket2: PillCanisterDylovene
 
 # Misc
 
@@ -1610,7 +1610,7 @@
     id: VisitorPDA
     back: ClothingBackpackCargo
     #ears: null # No headsets.
-    pocket65: AppraisalTool
+    pocket1: AppraisalTool
 
 - type: startingGear
   id: ChallengeCargoTechGearCoat
@@ -1621,7 +1621,7 @@
     id: VisitorPDA
     back: ClothingBackpackSatchelCargo
     #ears: # No headsets.
-    pocket65: AppraisalTool
+    pocket1: AppraisalTool
     outerClothing: ClothingOuterWinterCargo
 
 # CHALLENGE
@@ -1698,7 +1698,7 @@
     back: ClothingBackpackDuffelEngineering
     #ears: # No headsets.
     outerClothing: ClothingOuterVestHazard
-    pocket65: WeaponDisabler
+    pocket1: WeaponDisabler
 
 - type: startingGear
   id: ChallengeVictimCEAlt
@@ -1712,7 +1712,7 @@
     back: ClothingBackpackSatchelEngineering
     #ears: # No headsets.
     outerClothing: ClothingOuterWinterCE
-    pocket65: WeaponDisabler
+    pocket1: WeaponDisabler
 
 # CHALLENGE
 # carefully consider everything you add to these. These are meant for roles that are placed in survival situations where every item will be a resource.
@@ -1816,7 +1816,7 @@
     back: ClothingBackpackCargo
     #ears: # No headsets.
     outerClothing: ClothingOuterWinterQM
-    pocket65: AppraisalTool
+    pocket1: AppraisalTool
 
 - type: startingGear
   id: ChallengeVictimQMAlt
@@ -1829,7 +1829,7 @@
     back: ClothingBackpackSatchelCargo
     #ears: # No headsets.
     outerClothing: ClothingOuterWinterQM
-    pocket65: AppraisalTool
+    pocket1: AppraisalTool
 
 # Security
 
@@ -1859,8 +1859,8 @@
     back: ClothingBackpackSatchelLeather
     belt: ClothingBeltUtility
     ears: ClothingHeadsetFreelance
-    pocket65: WeaponPistolFlintlock
-    pocket65: HandheldGPSBasic
+    pocket1: WeaponPistolFlintlock
+    pocket2: HandheldGPSBasic
   inhand:
     - Cutlass
 
@@ -1884,7 +1884,7 @@
   parent: PirateScoonerAltA
   equipment:
     head: ClothingHeadHatPirateTricord
-    pocket65: WeaponRevolverPirate
+    pocket1: WeaponRevolverPirate
 
 - type: startingGear
   id: PirateCaptainScooner
@@ -1894,7 +1894,7 @@
     ears: ClothingHeadsetAltFreelancer
     neck: ClothingNeckCloakPirateCap
     outerClothing: ClothingOuterVestWeb
-    pocket65: WeaponRevolverPirate
+    pocket1: WeaponRevolverPirate
 
 ### Other
 
@@ -1909,8 +1909,8 @@
     belt: ClothingBeltMercWebbing
     ears: ClothingHeadsetGrey
     outerClothing: ClothingOuterVestWebMerc
-    pocket65: WeaponLaserSvalinn
-    pocket65: RadioHandheld
+    pocket1: WeaponLaserSvalinn
+    pocket2: RadioHandheld
 
 - type: startingGear
   id: CossackGear

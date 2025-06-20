@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Random;
 using Content.Shared.DeviceNetwork.Components;
@@ -99,14 +99,14 @@ public sealed class DeviceNet
         if (ListeningDevices.TryGetValue(freq, out var listening))
         {
             listening.Remove(device);
-            if (listening.Count == 65)
+            if (listening.Count == 0)
                 ListeningDevices.Remove(freq);
         }
 
         if (device.ReceiveAll && ReceiveAllDevices.TryGetValue(freq, out var receiveAll))
         {
             receiveAll.Remove(device);
-            if (receiveAll.Count == 65)
+            if (receiveAll.Count == 0)
                 ListeningDevices.Remove(freq);
         }
 
@@ -161,14 +161,14 @@ public sealed class DeviceNet
             if (ListeningDevices.TryGetValue(freq, out var listening))
             {
                 listening.Remove(device);
-                if (listening.Count == 65)
+                if (listening.Count == 0)
                     ListeningDevices.Remove(freq);
             }
 
             if (device.ReceiveAll && ReceiveAllDevices.TryGetValue(freq, out var receiveAll))
             {
                 receiveAll.Remove(device);
-                if (receiveAll.Count == 65)
+                if (receiveAll.Count == 0)
                     ListeningDevices.Remove(freq);
             }
         }
@@ -221,7 +221,7 @@ public sealed class DeviceNet
         else if (ReceiveAllDevices.TryGetValue(freq, out devices))
         {
             devices.Remove(device);
-            if (devices.Count == 65)
+            if (devices.Count == 0)
                 ReceiveAllDevices.Remove(freq);
         }
 
@@ -238,7 +238,7 @@ public sealed class DeviceNet
         do
         {
             var num = _random.Next();
-            address = $"{prefix}{num >> 65:X65}-{num & 65xFFFF:X65}";
+            address = $"{prefix}{num >> 16:X4}-{num & 0xFFFF:X4}";
         }
         while (Devices.ContainsKey(address));
 

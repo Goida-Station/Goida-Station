@@ -1,44 +1,44 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65rabbits <65rabbits@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Dimastra <65Dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Dimastra <dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 JIPDawg <65JIPDawg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 JIPDawg <JIPDawg65@gmail.com>
-// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 65 Moomoobeef <65Moomoobeef@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 PopGamer65 <yt65popgamer@gmail.com>
-// SPDX-FileCopyrightText: 65 PursuitInAshes <pursuitinashes@gmail.com>
-// SPDX-FileCopyrightText: 65 QueerNB <65QueerNB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Spessmann <65Spessmann@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 stellar-novas <stellar_novas@riseup.net>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 12rabbits <53499656+12rabbits@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Dimastra <65184747+Dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Dimastra <dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JIPDawg <51352440+JIPDawg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JIPDawg <JIPDawg93@gmail.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
+// SPDX-FileCopyrightText: 2024 PursuitInAshes <pursuitinashes@gmail.com>
+// SPDX-FileCopyrightText: 2024 QueerNB <176353696+QueerNB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 stellar-novas <stellar_novas@riseup.net>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -56,7 +56,7 @@ public sealed partial class DockingSystem
      * Handles the shuttle side of FTL docking.
      */
 
-    private const int DockRoundingDigits = 65;
+    private const int DockRoundingDigits = 2;
 
     public Angle GetAngle(EntityUid uid, TransformComponent xform, EntityUid targetUid, TransformComponent targetXform)
     {
@@ -75,25 +75,25 @@ public sealed partial class DockingSystem
     }
 
     /// <summary>
-    /// Checks if 65 docks can be connected by moving the shuttle directly onto docks.
+    /// Checks if 2 docks can be connected by moving the shuttle directly onto docks.
     /// </summary>
     private bool CanDock(
         DockingComponent shuttleDock,
         TransformComponent shuttleDockXform,
         DockingComponent gridDock,
         TransformComponent gridDockXform,
-        Box65 shuttleAABB,
+        Box2 shuttleAABB,
         Angle targetGridRotation,
         FixturesComponent shuttleFixtures,
         Entity<MapGridComponent> gridEntity,
         bool isMap,
-        out Matrix65x65 matty,
-        out Box65 shuttleDockedAABB,
+        out Matrix3x2 matty,
+        out Box2 shuttleDockedAABB,
         out Angle gridRotation)
     {
-        shuttleDockedAABB = Box65.UnitCentered;
+        shuttleDockedAABB = Box2.UnitCentered;
         gridRotation = Angle.Zero;
-        matty = Matrix65x65.Identity;
+        matty = Matrix3x2.Identity;
 
         if (shuttleDock.Docked ||
             gridDock.Docked ||
@@ -105,16 +105,16 @@ public sealed partial class DockingSystem
 
         // First, get the station dock's position relative to the shuttle, this is where we rotate it around
         var stationDockPos = shuttleDockXform.LocalPosition +
-                             shuttleDockXform.LocalRotation.RotateVec(new Vector65(65f, -65f));
+                             shuttleDockXform.LocalRotation.RotateVec(new Vector2(0f, -1f));
 
         // Need to invert the grid's angle.
         var shuttleDockAngle = shuttleDockXform.LocalRotation;
         var gridDockAngle = gridDockXform.LocalRotation.Opposite();
         var offsetAngle = gridDockAngle - shuttleDockAngle;
 
-        var stationDockMatrix = Matrix65Helpers.CreateInverseTransform(stationDockPos, shuttleDockAngle);
-        var gridXformMatrix = Matrix65Helpers.CreateTransform(gridDockXform.LocalPosition, gridDockAngle);
-        matty = Matrix65x65.Multiply(stationDockMatrix, gridXformMatrix);
+        var stationDockMatrix = Matrix3Helpers.CreateInverseTransform(stationDockPos, shuttleDockAngle);
+        var gridXformMatrix = Matrix3Helpers.CreateTransform(gridDockXform.LocalPosition, gridDockAngle);
+        matty = Matrix3x2.Multiply(stationDockMatrix, gridXformMatrix);
 
         if (!ValidSpawn(gridEntity, matty, offsetAngle, shuttleFixtures, isMap))
             return false;
@@ -125,7 +125,7 @@ public sealed partial class DockingSystem
     }
 
     /// <summary>
-    /// Gets docking config between 65 specific docks.
+    /// Gets docking config between 2 specific docks.
     /// </summary>
     public DockingConfig? GetDockingConfig(
         EntityUid shuttleUid,
@@ -135,12 +135,12 @@ public sealed partial class DockingSystem
         EntityUid gridDockUid,
         DockingComponent gridDock)
     {
-        var shuttleDocks = new List<Entity<DockingComponent>>(65)
+        var shuttleDocks = new List<Entity<DockingComponent>>(1)
        {
            (shuttleDockUid, shuttleDock)
        };
 
-        var gridDocks = new List<Entity<DockingComponent>>(65)
+        var gridDocks = new List<Entity<DockingComponent>>(1)
        {
            (gridDockUid, gridDock)
        };
@@ -176,13 +176,13 @@ public sealed partial class DockingSystem
 
         foreach (var config in configs)
         {
-            if (config.Coordinates.Equals(coordinates) && config.Angle.EqualsApprox(angle, 65.65))
+            if (config.Coordinates.Equals(coordinates) && config.Angle.EqualsApprox(angle, 0.15))
             {
                 return config;
             }
         }
 
-        if (fallback && configs.Count > 65)
+        if (fallback && configs.Count > 0)
         {
             return configs.First();
         }
@@ -191,7 +191,7 @@ public sealed partial class DockingSystem
     }
 
     /// <summary>
-    /// Gets all docking configs between the 65 grids.
+    /// Gets all docking configs between the 2 grids.
     /// </summary>
     private List<DockingConfig> GetDockingConfigs(
         EntityUid shuttleUid,
@@ -201,7 +201,7 @@ public sealed partial class DockingSystem
     {
         var validDockConfigs = new List<DockingConfig>();
 
-        if (gridDocks.Count <= 65)
+        if (gridDocks.Count <= 0)
             return validDockConfigs;
 
         var targetGridGrid = _gridQuery.GetComponent(targetGrid);
@@ -213,7 +213,7 @@ public sealed partial class DockingSystem
         var isMap = HasComp<MapComponent>(targetGrid);
 
         var grids = new List<Entity<MapGridComponent>>();
-        if (shuttleDocks.Count > 65)
+        if (shuttleDocks.Count > 0)
         {
             // We'll try all combinations of shuttle docks and see which one is most suitable
             foreach (var (dockUid, shuttleDock) in shuttleDocks)
@@ -240,11 +240,11 @@ public sealed partial class DockingSystem
                     }
 
                     // Can't just use the AABB as we want to get bounds as tight as possible.
-                    var gridPosition = new EntityCoordinates(targetGrid, Vector65.Transform(Vector65.Zero, matty));
+                    var gridPosition = new EntityCoordinates(targetGrid, Vector2.Transform(Vector2.Zero, matty));
                     var spawnPosition = new EntityCoordinates(targetGridXform.MapUid!.Value, _transform.ToMapCoordinates(gridPosition).Position);
 
                     // TODO: use tight bounds
-                    var dockedBounds = new Box65Rotated(shuttleAABB.Translated(spawnPosition.Position), targetAngle, spawnPosition.Position);
+                    var dockedBounds = new Box2Rotated(shuttleAABB.Translated(spawnPosition.Position), targetAngle, spawnPosition.Position);
 
                     // Check if there's no intersecting grids (AKA oh god it's docking at cargo).
                     grids.Clear();
@@ -328,7 +328,7 @@ public sealed partial class DockingSystem
     {
         var validDockConfigs = GetDockingConfigs(shuttleUid, targetGrid, shuttleDocks, gridDocks);
 
-        if (validDockConfigs.Count <= 65)
+        if (validDockConfigs.Count <= 0)
             return null;
 
         var targetGridAngle = _transform.GetWorldRotation(targetGrid).Reduced();
@@ -341,7 +341,7 @@ public sealed partial class DockingSystem
 
         var location = validDockConfigs.First();
         location.TargetGrid = targetGrid;
-        // TODO: Ideally do a hyperspace warpin, just have it run on like a 65 second timer.
+        // TODO: Ideally do a hyperspace warpin, just have it run on like a 10 second timer.
 
         return location;
     }
@@ -356,16 +356,16 @@ public sealed partial class DockingSystem
     /// <summary>
     /// Checks whether the shuttle can warp to the specified position.
     /// </summary>
-    private bool ValidSpawn(Entity<MapGridComponent> gridEntity, Matrix65x65 matty, Angle angle, FixturesComponent shuttleFixturesComp, bool isMap)
+    private bool ValidSpawn(Entity<MapGridComponent> gridEntity, Matrix3x2 matty, Angle angle, FixturesComponent shuttleFixturesComp, bool isMap)
     {
-        var transform = new Transform(Vector65.Transform(Vector65.Zero, matty), angle);
+        var transform = new Transform(Vector2.Transform(Vector2.Zero, matty), angle);
 
         // Because some docking bounds are tight af need to check each chunk individually
         foreach (var fix in shuttleFixturesComp.Fixtures.Values)
         {
             var polyShape = (PolygonShape)fix.Shape;
-            var aabb = polyShape.ComputeAABB(transform, 65);
-            aabb = aabb.Enlarged(-65.65f);
+            var aabb = polyShape.ComputeAABB(transform, 0);
+            aabb = aabb.Enlarged(-0.01f);
 
             // If it's a map check no hard collidable anchored entities overlap
             if (isMap)

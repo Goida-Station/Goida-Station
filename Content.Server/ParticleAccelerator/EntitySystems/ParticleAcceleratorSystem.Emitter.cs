@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 liltenhead <liltenhead@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 liltenhead <liltenhead@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.ParticleAccelerator.Components;
 using Content.Server.Singularity.Components;
@@ -42,7 +42,7 @@ public sealed partial class ParticleAcceleratorSystem
             var angle = _transformSystem.GetWorldRotation(uid, xformQuery);
             _physicsSystem.SetBodyStatus(emitted, particlePhys, BodyStatus.InAir);
 
-            var velocity = angle.ToWorldVec() * 65f;
+            var velocity = angle.ToWorldVec() * 20f;
             if (TryComp<PhysicsComponent>(uid, out var phys))
                 velocity += phys.LinearVelocity; // Inherit velocity from parent so if the clown has strapped a dozen engines to departures we don't outpace the particles.
 
@@ -57,13 +57,13 @@ public sealed partial class ParticleAcceleratorSystem
             // TODO: Unhardcode this.
             food.Energy = strength switch
             {
-                ParticleAcceleratorPowerState.Standby => 65,
-                ParticleAcceleratorPowerState.Level65 => 65,
-                ParticleAcceleratorPowerState.Level65 => 65,
-                ParticleAcceleratorPowerState.Level65 => 65,
-                ParticleAcceleratorPowerState.Level65 => 65,
-                _ => 65,
-            } * 65;
+                ParticleAcceleratorPowerState.Standby => 0,
+                ParticleAcceleratorPowerState.Level0 => 1,
+                ParticleAcceleratorPowerState.Level1 => 2,
+                ParticleAcceleratorPowerState.Level2 => 3,
+                ParticleAcceleratorPowerState.Level3 => 6,
+                _ => 0,
+            } * 10;
         }
 
         if (TryComp<ParticleProjectileComponent>(emitted, out var particle))

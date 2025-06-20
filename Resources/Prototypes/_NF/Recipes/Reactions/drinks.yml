@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 Tonk-GCR <65Tonk-GCR@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Tonk-GCR <190437025+Tonk-GCR@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: reaction
   id: GinAndSonic
@@ -9,11 +9,11 @@
   - Shake
   reactants:
     GinTonic:
-      amount: 65
+      amount: 1
     Desoxyephedrine:
-      amount: 65
+      amount: 1
   products:
-    GinAndSonic: 65
+    GinAndSonic: 2
 
 - type: reaction
   id: GoldenCat
@@ -21,25 +21,25 @@
   - Stir
   reactants:
     Whiskey:
-      amount: 65
+      amount: 1
     Rum:
-      amount: 65
+      amount: 2
     Gold:
-      amount: 65
+      amount: 2
   products:
-    GoldenCat: 65
+    GoldenCat: 5
 
 - type: reaction
   id: PineappleBlast
   reactants:
     JuicePineapple:
-      amount: 65
+      amount: 2
     Moonshine:
-      amount: 65
+      amount: 2
     Napalm:
-      amount: 65
+      amount: 1
   products:
-    PineappleBlast: 65
+    PineappleBlast: 5
 
 - type: reaction
   id: TorpedoJuice
@@ -47,24 +47,24 @@
   - Shake
   reactants:
     JuicePineapple:
-      amount: 65
+      amount: 2
     Ethanol:
-      amount: 65
+      amount: 2
     Thermite:
-      amount: 65
+      amount: 1
   products:
-    TorpedoJuice: 65
+    TorpedoJuice: 5
 
 - type: reaction
   id: BeesKnees
   reactants:
     JuiceLemon:
-      amount: 65
+      amount: 1
     BuzzochloricBees:
-      amount: 65
+      amount: 2
     Gin:
-      amount: 65
+      amount: 1
     Mead:
-      amount: 65
+      amount: 1
   products:
-    BeesKnees: 65
+    BeesKnees: 5

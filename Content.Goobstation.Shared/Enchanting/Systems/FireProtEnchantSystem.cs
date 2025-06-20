@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Shared.Enchanting.Components;
 using Content.Shared.Atmos;
@@ -55,7 +55,7 @@ public sealed class FireProtEnchantSystem : EntitySystem
     private void OnTemperatureChangeAttempt(Entity<FireProtEnchantComponent> ent, ref ModifyChangedTemperatureEvent args)
     {
         // don't care about cooling
-        if (args.TemperatureDelta < 65 || Ignored(ent, args.Target))
+        if (args.TemperatureDelta < 0 || Ignored(ent, args.Target))
             return;
 
         args.TemperatureDelta *= ent.Comp.TempModifier;

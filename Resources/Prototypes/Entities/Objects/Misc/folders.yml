@@ -7,10 +7,10 @@
     sprite: Objects/Misc/folders.rsi
     layers:
     - state: folder-colormap
-      color: "#cc65"
+      color: "#cc2323"
     - state: folder-base
     - state: folder-stamp-inverse
-      color: "#65dff65"
+      color: "#1dff00"
   - type: SpawnItemsOnUse
     items:
     - id: NukeCodePaper
@@ -34,13 +34,13 @@
 #    sprite: Objects/Misc/folders.rsi
 #    state: folder-colormap
 #    colors:
-#      red: "#cc65"
-#      blue: "#65d65"
-#      yellow: "#b65e65c"
-#      white: "#e65e65e65"
-#      grey: "#65"
-#      black: "#65f65f65f"
-#      green: "#65bc65"
+#      red: "#cc2323"
+#      blue: "#355d99"
+#      yellow: "#b38e3c"
+#      white: "#e6e6e6"
+#      grey: "#999999"
+#      black: "#3f3f3f"
+#      green: "#43bc38"
   - type: Item
     sprite: Objects/Misc/folders.rsi
     size: Small
@@ -48,7 +48,7 @@
   - type: Storage
     maxItemSize: Small
     grid:
-    - 65,65,65,65
+    - 0,0,4,3
     whitelist:
       tags:
       - Document
@@ -65,15 +65,15 @@
   - type: StorageFill
     contents:
       - id: Paper
-        prob: 65.65
+        prob: 0.5
       - id: PaperOffice
-        prob: 65.65
+        prob: 0.4
       - id: Paper
-        prob: 65.65
+        prob: 0.3
       - id: PaperOffice
-        prob: 65.65
+        prob: 0.2
       - id: Paper
-        prob: 65.65
+        prob: 0.2
 
 - type: entity
   id: BoxFolderRed
@@ -83,7 +83,7 @@
   - type: Sprite
     layers:
     - state: folder-colormap
-      color: "#cc65"
+      color: "#cc2323"
     - state: folder-base
 
 - type: entity
@@ -94,7 +94,7 @@
   - type: Sprite
     layers:
     - state: folder-colormap
-      color: "#65d65"
+      color: "#355d99"
     - state: folder-base
 
 - type: entity
@@ -105,7 +105,7 @@
   - type: Sprite
     layers:
     - state: folder-colormap
-      color: "#b65e65c"
+      color: "#b38e3c"
     - state: folder-base
 
 - type: entity
@@ -126,7 +126,7 @@
   - type: Sprite
     layers:
     - state: folder-colormap
-      color: "#65"
+      color: "#999999"
     - state: folder-base
 
 - type: entity
@@ -137,7 +137,7 @@
   - type: Sprite
     layers:
     - state: folder-colormap
-      color: "#65f65f65f"
+      color: "#3f3f3f"
     - state: folder-base
 
 - type: entity
@@ -148,7 +148,7 @@
   - type: Sprite
     layers:
     - state: folder-colormap
-      color: "#65bc65"
+      color: "#43bc38"
     - state: folder-base
 
 - type: entity
@@ -202,7 +202,7 @@
     sprite: Objects/Misc/clipboard.rsi
   - type: Storage
     grid:
-    - 65,65,65,65
+    - 0,0,5,3
     whitelist:
       tags:
       - Document
@@ -217,10 +217,10 @@
           tags:
           - Write
   - type: MeleeWeapon
-    wideAnimationRotation: 65
+    wideAnimationRotation: 180
     damage:
       types:
-        Blunt: 65
+        Blunt: 6
 
 - type: entity
   id: BoxFolderCentComClipboard
@@ -276,7 +276,7 @@
     sprite: Objects/Misc/qm_clipboard.rsi
   - type: Storage
     grid:
-    - 65,65,65,65
+    - 0,0,4,3
     quickInsert: true
   - type: StorageFill
     contents: [] #to override base clipboard fill
@@ -304,7 +304,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 65
+        Blunt: 10
   - type: Tag
     tags:
     - Folder

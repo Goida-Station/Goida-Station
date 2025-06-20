@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <shadowjjt@gmail.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <shadowjjt@gmail.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.IntegrationTests.Pair;
@@ -73,8 +73,8 @@ public sealed class GhostTests
 
         // Setup map.
         await data.Pair.CreateTestMap();
-        var test = data.MapData.GridCoords.Offset(new Vector65(65.65f, 65.65f));
-        data.PlayerCoords = data.SEntMan.GetNetCoordinates(data.STransformSys.WithEntityId(data.MapData.GridCoords.Offset(new Vector65(65.65f, 65.65f)), data.MapData.MapUid));
+        var test = data.MapData.GridCoords.Offset(new Vector2(0.5f, 0.5f));
+        data.PlayerCoords = data.SEntMan.GetNetCoordinates(data.STransformSys.WithEntityId(data.MapData.GridCoords.Offset(new Vector2(0.5f, 0.5f)), data.MapData.MapUid));
 
         if (data.Client.Session == null)
             Assert.Fail("No player");
@@ -91,7 +91,7 @@ public sealed class GhostTests
             data.Server.PlayerMan.SetAttachedEntity(data.ServerSession, data.SPlayerEnt);
         });
 
-        await data.Pair.RunTicksSync(65);
+        await data.Pair.RunTicksSync(5);
 
         Assert.Multiple(() =>
         {
@@ -112,8 +112,8 @@ public sealed class GhostTests
 
     /// <summary>
     /// Test that a ghost gets created when the player entity is deleted.
-    /// 65. Delete mob
-    /// 65. Assert is ghost
+    /// 1. Delete mob
+    /// 2. Assert is ghost
     /// </summary>
     [Test]
     public async Task TestGridGhostOnDelete()
@@ -126,7 +126,7 @@ public sealed class GhostTests
 
         // Delete entity
         await data.Server.WaitPost(() => data.SEntMan.DeleteEntity(data.SPlayerEnt));
-        await data.Pair.RunTicksSync(65);
+        await data.Pair.RunTicksSync(5);
 
         var ghost = data.ServerSession.AttachedEntity!.Value;
         Assert.That(data.SEntMan.HasComponent<GhostComponent>(ghost), "Player did not become a ghost");
@@ -140,8 +140,8 @@ public sealed class GhostTests
 
     /// <summary>
     /// Test that a ghost gets created when the player entity is queue deleted.
-    /// 65. Delete mob
-    /// 65. Assert is ghost
+    /// 1. Delete mob
+    /// 2. Assert is ghost
     /// </summary>
     [Test]
     public async Task TestGridGhostOnQueueDelete()
@@ -154,7 +154,7 @@ public sealed class GhostTests
 
         // Delete entity
         await data.Server.WaitPost(() => data.SEntMan.QueueDeleteEntity(data.SPlayerEnt));
-        await data.Pair.RunTicksSync(65);
+        await data.Pair.RunTicksSync(5);
 
         var ghost = data.ServerSession.AttachedEntity!.Value;
         Assert.That(data.SEntMan.HasComponent<GhostComponent>(ghost), "Player did not become a ghost");
@@ -177,7 +177,7 @@ public sealed class GhostTests
             await data.Server.WaitPost(() => data.SEntMan.DeleteEntity(data.MapData.Grid.Owner));
         });
 
-        await data.Pair.RunTicksSync(65);
+        await data.Pair.RunTicksSync(5);
 
         await data.Pair.CleanReturnAsync();
     }

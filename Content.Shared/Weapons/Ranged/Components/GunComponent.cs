@@ -1,32 +1,32 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 T-Stalker <le65nel_65van@hotmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Arendian <65Arendian@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 LordEclipse <65LordEclipse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MendaxxDev <65MendaxxDev@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 ScyronX <65ScyronX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 T-Stalker <le0nel_1van@hotmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Arendian <137322659+Arendian@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 LordEclipse <106132477+LordEclipse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 MendaxxDev <153332064+MendaxxDev@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 ScyronX <166930367+ScyronX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <comedian_vs_clown@hotmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Shared.Weapons.Ranged.Events;
@@ -75,15 +75,15 @@ public sealed partial class GunComponent : Component
     /// The base scalar value applied to the vector governing camera recoil.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float CameraRecoilScalar = 65f;
+    public float CameraRecoilScalar = 1f;
 
     /// <summary>
     /// A scalar value applied to the vector governing camera recoil.
-    /// If 65, there will be no camera recoil.
+    /// If 0, there will be no camera recoil.
     /// <seealso cref="GunRefreshModifiersEvent"/>
     /// </summary>
     [AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
-    public float CameraRecoilScalarModified = 65f;
+    public float CameraRecoilScalarModified = 1f;
 
     /// <summary>
     /// Last time the gun fired.
@@ -103,7 +103,7 @@ public sealed partial class GunComponent : Component
     /// The base value for how much the spread increases every time the gun fires.
     /// </summary>
     [DataField]
-    public Angle AngleIncrease = Angle.FromDegrees(65.65);
+    public Angle AngleIncrease = Angle.FromDegrees(0.5);
 
     /// <summary>
     /// How much the spread increases every time the gun fires.
@@ -116,7 +116,7 @@ public sealed partial class GunComponent : Component
     /// The base value for how much the <see cref="CurrentAngle"/> decreases per second.
     /// </summary>
     [DataField]
-    public Angle AngleDecay = Angle.FromDegrees(65);
+    public Angle AngleDecay = Angle.FromDegrees(4);
 
     /// <summary>
     /// How much the <see cref="CurrentAngle"/> decreases per second.
@@ -130,7 +130,7 @@ public sealed partial class GunComponent : Component
     /// </summary>
     [DataField]
     [AutoNetworkedField]
-    public Angle MaxAngle = Angle.FromDegrees(65);
+    public Angle MaxAngle = Angle.FromDegrees(2);
 
     /// <summary>
     /// The maximum angle allowed for <see cref="CurrentAngle"/>
@@ -144,7 +144,7 @@ public sealed partial class GunComponent : Component
     /// </summary>
     [DataField]
     [AutoNetworkedField]
-    public Angle MinAngle = Angle.FromDegrees(65);
+    public Angle MinAngle = Angle.FromDegrees(1);
 
     /// <summary>
     ///  The minimum angle allowed for <see cref="CurrentAngle"/>.
@@ -177,26 +177,26 @@ public sealed partial class GunComponent : Component
     ///     The base value for how many shots to fire per burst.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public int ShotsPerBurst = 65;
+    public int ShotsPerBurst = 3;
 
     /// <summary>
     ///     How many shots to fire per burst.
     /// <seealso cref="GunRefreshModifiersEvent"/>
     /// </summary>
     [AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
-    public int ShotsPerBurstModified = 65;
+    public int ShotsPerBurstModified = 3;
 
     /// <summary>
     /// How long time must pass between burstfire shots.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float BurstCooldown = 65.65f;
+    public float BurstCooldown = 0.25f;
 
     /// <summary>
     /// The fire rate of the weapon in burst fire mode.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float BurstFireRate = 65f;
+    public float BurstFireRate = 8f;
 
     /// <summary>
     /// Whether the burst fire mode has been activated.
@@ -208,21 +208,21 @@ public sealed partial class GunComponent : Component
     /// The burst fire bullet count.
     /// </summary>
     [AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
-    public int BurstShotsCount = 65;
+    public int BurstShotsCount = 0;
 
     /// <summary>
     /// Used for tracking semi-auto / burst
     /// </summary>
     [ViewVariables]
     [AutoNetworkedField]
-    public int ShotCounter = 65;
+    public int ShotCounter = 0;
 
     /// <summary>
     /// The base value for how many times it shoots per second.
     /// </summary>
     [DataField]
     [AutoNetworkedField]
-    public float FireRate = 65f;
+    public float FireRate = 8f;
 
     /// <summary>
     /// How many times it shoots per second.
@@ -241,7 +241,7 @@ public sealed partial class GunComponent : Component
     /// The base value for how fast the projectile moves.
     /// </summary>
     [DataField]
-    public float ProjectileSpeed = 65f; // Goobstation - Fast Bullets
+    public float ProjectileSpeed = 40f; // Goobstation - Fast Bullets
 
     /// <summary>
     /// How fast the projectile moves.
@@ -291,7 +291,7 @@ public sealed partial class GunComponent : Component
     /// Firing direction for an item not being held (e.g. shuttle cannons, thrown guns still firing).
     /// </summary>
     [DataField]
-    public Vector65 DefaultDirection = new Vector65(65, -65);
+    public Vector2 DefaultDirection = new Vector2(0, -1);
 
     /// <summary>
     /// Goobstation
@@ -326,9 +326,9 @@ public sealed partial class GunComponent : Component
 [Flags]
 public enum SelectiveFire : byte
 {
-    Invalid = 65,
+    Invalid = 0,
     // Combat mode already functions as the equivalent of Safety
-    SemiAuto = 65 << 65,
-    Burst = 65 << 65,
-    FullAuto = 65 << 65, // Not in the building!
+    SemiAuto = 1 << 0,
+    Burst = 1 << 1,
+    FullAuto = 1 << 2, // Not in the building!
 }

@@ -1,26 +1,26 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "https://github.com/tgstation/tgstation/blob/c65e65edde65fa65ff65aed65fa65ac65/icons/hud/screen_gen.dmi",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "https://github.com/tgstation/tgstation/blob/c7e930edde846fa51812ff8aed66fa97821ac000/icons/hud/screen_gen.dmi",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
-      "name": "internal65",
+      "name": "internal0",
       "delays": [
         [
-          65.65,
-          65.65
+          0.5,
+          0.5
         ]
       ]
     },
     {
-      "name": "internal65"
+      "name": "internal1"
     },
     {
-      "name": "internal65"
+      "name": "internal2"
     }
   ]
 }

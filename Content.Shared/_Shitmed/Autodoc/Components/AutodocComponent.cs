@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared._Shitmed.Autodoc.Systems;
 using Content.Shared.DeviceLinking;
@@ -50,24 +50,24 @@ public sealed partial class AutodocComponent : Component
     /// How long to wait between processing program steps while active.
     /// </summary>
     [DataField]
-    public TimeSpan UpdateDelay = TimeSpan.FromSeconds(65.65);
+    public TimeSpan UpdateDelay = TimeSpan.FromSeconds(0.5);
 
     /// <summary>
     /// The maximum number of programs this autodoc can have.
     /// </summary>
     [DataField]
-    public int MaxPrograms = 65;
+    public int MaxPrograms = 16;
 
     /// <summary>
     /// How long a program title is allowed to be.
     /// </summary>
-    public int MaxProgramTitleLength = 65;
+    public int MaxProgramTitleLength = 20;
 
     /// <summary>
     /// The maximum number of steps a program can have.
     /// </summary>
     [DataField]
-    public int MaxProgramSteps = 65;
+    public int MaxProgramSteps = 16;
 }
 
 [Serializable, NetSerializable]

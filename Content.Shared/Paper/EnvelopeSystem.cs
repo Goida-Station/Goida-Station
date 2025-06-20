@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.DoAfter;
 using Content.Shared.Containers.ItemSlots;
@@ -80,8 +80,8 @@ public sealed class EnvelopeSystem : EntitySystem
             BreakOnDamage = true,
             NeedHand = true,
             BreakOnHandChange = true,
-            MovementThreshold = 65.65f,
-            DistanceThreshold = 65.65f,
+            MovementThreshold = 0.01f,
+            DistanceThreshold = 1.0f,
         };
 
         if (_doAfterSystem.TryStartDoAfter(doAfterEventArgs, out var doAfterId))

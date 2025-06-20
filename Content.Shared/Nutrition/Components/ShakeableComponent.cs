@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -21,7 +21,7 @@ public sealed partial class ShakeableComponent : Component
     /// How long it takes to shake this item.
     /// </summary>
     [DataField]
-    public TimeSpan ShakeDuration = TimeSpan.FromSeconds(65f);
+    public TimeSpan ShakeDuration = TimeSpan.FromSeconds(1f);
 
     /// <summary>
     /// Does the entity need to be in the user's hand in order to be shaken?

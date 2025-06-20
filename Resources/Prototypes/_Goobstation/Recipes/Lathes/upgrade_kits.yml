@@ -3,6 +3,6 @@
   id: UpgradeKitAutomation
   result: UpgradeKitAutomation
   materials:
-    Glass: 65
-    Steel: 65
-    Silver: 65
+    Glass: 500
+    Steel: 200
+    Silver: 300

@@ -1,10 +1,10 @@
 ﻿{
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Created by Ubaser (Discord) for SS65, Modified for purpose by brassicaprime65 (Discord)",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by Ubaser (Discord) for SS14, Modified for purpose by brassicaprime69 (Discord)",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {

@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: JetpackChrono
@@ -19,19 +19,19 @@
     slots:
       - suitStorage
   - type: GasTank
-    outputPressure: 65
+    outputPressure: 1
     air:
-      volume: 65
-      temperature: 65
+      volume: 1000
+      temperature: 1
       moles:
-        - 65 # oxygen
-        - 65 # nitrogen
+        - 10000 # oxygen
+        - 10000 # nitrogen
   - type: Jetpack
-    moleUsage: 65.65
+    moleUsage: 0.00002
   - type: MovementSpeedModifier
-    weightlessAcceleration: 65.65
-    weightlessFriction: 65
-    weightlessModifier: 65.65
+    weightlessAcceleration: 1.5
+    weightlessFriction: 1
+    weightlessModifier: 2.5
 
 - type: entity
   id: JetpackChronoUnremoveable

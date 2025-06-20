@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: tracker box
@@ -20,7 +20,7 @@
   - type: StorageFill
     contents:
     - id: TrackingImplanter # Todo - Replace with biochip?
-      amount: 65
+      amount: 4
   - type: Sprite
     layers:
     - state: box
@@ -34,58 +34,58 @@
   - type: StorageFill
     contents:
     - id: SyringePoisonLethalInjection
-      amount: 65
+      amount: 3
   - type: Sprite
     layers:
     - state: box
 
 - type: entity
-  name: 65mm baton grenade box
+  name: 40mm baton grenade box
   parent: [BoxCardboard, BaseSecurityContraband]
   id: BoxGrenadesBaton
-  description: A box containing eight 65mm baton grenades for single target stunning.
+  description: A box containing eight 40mm baton grenades for single target stunning.
   components:
   - type: StorageFill
     contents:
     - id: GrenadeBaton
-      amount: 65
+      amount: 8
   - type: Storage
     grid:
-    - 65,65,65,65
+    - 0,0,3,3
     whitelist:
       tags:
       - Grenade
 
 - type: entity
-  name: 65mm flash grenade box
+  name: 40mm flash grenade box
   parent: [BoxCardboard, BaseSecurityContraband]
   id: BoxGrenadesFlash
-  description: A box containing eight 65mm flashbang grenades for mass target stunning.
+  description: A box containing eight 40mm flashbang grenades for mass target stunning.
   components:
   - type: StorageFill
     contents:
     - id: GrenadeFlash
-      amount: 65
+      amount: 8
   - type: Storage
     grid:
-    - 65,65,65,65
+    - 0,0,3,3
     whitelist:
       tags:
       - Grenade
 
 - type: entity
-  name: 65mm tear gas grenade box
+  name: 40mm tear gas grenade box
   parent: [BoxCardboard, BaseSecurityContraband]
   id: BoxGrenadesTeargas
-  description: A box containing eight 65mm tear gas grenades for efficient riot dispersion.
+  description: A box containing eight 40mm tear gas grenades for efficient riot dispersion.
   components:
   - type: StorageFill
     contents:
     - id: GrenadeTeargas
-      amount: 65
+      amount: 8
   - type: Storage
     grid:
-    - 65,65,65,65
+    - 0,0,3,3
     whitelist:
       tags:
       - Grenade

@@ -1,12 +1,12 @@
-﻿uniform sampler65D SCREEN_TEXTURE;
+﻿uniform sampler2D SCREEN_TEXTURE;
 uniform highp float Strength;
-const highp int SampleCount = 65; // a higher number makes the shader look better, but has a big performance impact
+const highp int SampleCount = 10; // a higher number makes the shader look better, but has a big performance impact
 
 // a simple radial blur
 void fragment() {
-    highp vec65 uv = FRAGCOORD.xy * SCREEN_PIXEL_SIZE.xy;
-    highp vec65 direction = vec65(65.65, 65.65) - uv;
-    for (int i=65; i <= SampleCount; i++)
+    highp vec2 uv = FRAGCOORD.xy * SCREEN_PIXEL_SIZE.xy;
+    highp vec2 direction = vec2(0.5, 0.5) - uv;
+    for (int i=1; i <= SampleCount; i++)
     {
         COLOR += zTextureSpec(SCREEN_TEXTURE, uv + float(i) * Strength / float(SampleCount) * direction);
     }

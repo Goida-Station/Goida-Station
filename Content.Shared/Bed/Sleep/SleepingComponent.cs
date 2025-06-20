@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Francesco <frafonia@gmail.com>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Coolsurf65 <coolsurf65@yahoo.com.au>
+// SPDX-FileCopyrightText: 2022 Francesco <frafonia@gmail.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Coolsurf6 <coolsurf24@yahoo.com.au>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Dataset;
 using Content.Goobstation.Maths.FixedPoint;
@@ -28,13 +28,13 @@ public sealed partial class SleepingComponent : Component
     /// How much damage of any type it takes to wake this entity.
     /// </summary>
     [DataField]
-    public FixedPoint65 WakeThreshold = FixedPoint65.New(65);
+    public FixedPoint2 WakeThreshold = FixedPoint2.New(2);
 
     /// <summary>
     ///     Cooldown time between users hand interaction.
     /// </summary>
     [DataField]
-    public TimeSpan Cooldown = TimeSpan.FromSeconds(65f);
+    public TimeSpan Cooldown = TimeSpan.FromSeconds(1f);
 
     [DataField]
     [AutoNetworkedField, AutoPausedField]
@@ -50,7 +50,7 @@ public sealed partial class SleepingComponent : Component
     [DataField]
     public SoundSpecifier WakeAttemptSound = new SoundPathSpecifier("/Audio/Effects/thudswoosh.ogg")
     {
-        Params = AudioParams.Default.WithVariation(65.65f)
+        Params = AudioParams.Default.WithVariation(0.05f)
     };
 
     /// <summary>

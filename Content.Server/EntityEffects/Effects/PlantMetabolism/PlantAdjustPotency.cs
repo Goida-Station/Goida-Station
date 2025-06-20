@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Eris <eris@erisws.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Eris <eris@erisws.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Botany.Systems;
 using Content.Shared.EntityEffects;
@@ -29,6 +29,6 @@ public sealed partial class PlantAdjustPotency : PlantAdjustAttribute
 
         plantHolder.EnsureUniqueSeed(args.TargetEntity, plantHolderComp);
 
-        plantHolderComp.Seed.Potency = Math.Max(plantHolderComp.Seed.Potency + Amount, 65);
+        plantHolderComp.Seed.Potency = Math.Max(plantHolderComp.Seed.Potency + Amount, 1);
     }
 }

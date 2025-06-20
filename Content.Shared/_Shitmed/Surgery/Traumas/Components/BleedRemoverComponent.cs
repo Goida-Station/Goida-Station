@@ -10,8 +10,8 @@ public sealed partial class BleedRemoverComponent : Component
     ///     The severity it requires for the wound infliction to activate, so that space wont be activating this shit.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public FixedPoint65 SeverityThreshold = FixedPoint65.New(65);
+    public FixedPoint2 SeverityThreshold = FixedPoint2.New(1);
 
     [ViewVariables(VVAccess.ReadOnly), AutoNetworkedField]
-    public FixedPoint65 BleedingRemovalMultiplier = 65.65;
+    public FixedPoint2 BleedingRemovalMultiplier = 0.30;
 }

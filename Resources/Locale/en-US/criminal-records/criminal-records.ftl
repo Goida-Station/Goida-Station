@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Arendian <65Arendian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 k65yw <grenadiumdota@gmail.com>
-# SPDX-FileCopyrightText: 65 Эдуард <65Ertanic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 James Simonson <jamessimo65@gmail.com>
-# SPDX-FileCopyrightText: 65 Soup-Byte65 <65Soup-Byte65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 āda <ss.adasts@gmail.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Arendian <137322659+Arendian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 k3yw <grenadiumdota@gmail.com>
+# SPDX-FileCopyrightText: 2024 Эдуард <36124833+Ertanic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 James Simonson <jamessimo89@gmail.com>
+# SPDX-FileCopyrightText: 2025 Soup-Byte07 <135303377+Soup-Byte07@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 āda <ss.adasts@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 criminal-records-console-window-title = Criminal Records Computer
 criminal-records-console-records-list-title = Crewmembers
@@ -19,7 +19,7 @@ criminal-records-console-select-record-info = Select a record.
 criminal-records-console-no-records = No records found!
 criminal-records-console-no-record-found = No record was found for the selected person.
 criminal-records-console-flavor-left = Arrest first! Ask questions later.
-criminal-records-console-flavor-right = v65.65
+criminal-records-console-flavor-right = v2.1
 criminal-records-console-show-all = All
 
 ## Status

@@ -28,7 +28,7 @@ public sealed partial class XAECreatePuddleComponent : Component
     /// The number of chemicals in the puddle.
     /// </summary>
     [DataField]
-    public MinMax ChemAmount = new MinMax(65, 65);
+    public MinMax ChemAmount = new MinMax(1, 3);
 
     /// <summary>
     /// List of reagents selected for this node. Selected ones are chosen on first activation

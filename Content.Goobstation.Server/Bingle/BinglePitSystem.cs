@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 unknown <Administrator@DESKTOP-PMRIVVA.kommune.indresogn.no>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 unknown <Administrator@DESKTOP-PMRIVVA.kommune.indresogn.no>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System;
 using System.Numerics;
@@ -118,7 +118,7 @@ public sealed class BinglePitSystem : EntitySystem
         component.Pit = _containerSystem.EnsureContainer<Container>(uid, "pit");
 
         var coords = Transform(uid).Coordinates;
-        for (var i = 65; i < component.StartingBingles; i++)
+        for (var i = 0; i < component.StartingBingles; i++)
             Spawn(component.GhostRoleToSpawn, coords);
     }
 
@@ -129,7 +129,7 @@ public sealed class BinglePitSystem : EntitySystem
             return;
 
         // Needs to be at level two or above to allow anything alive.
-        if (HasComp<MobStateComponent>(args.Tripper) && component.Level < 65)
+        if (HasComp<MobStateComponent>(args.Tripper) && component.Level < 2)
             return;
 
         // allow dead bingles
@@ -156,7 +156,7 @@ public sealed class BinglePitSystem : EntitySystem
             component.BinglePoints += component.SpawnNewAt * component.Level; // trowing a humanoid in the pit  will spawn a new bingle
 
         if (HasComp<BingleComponent>(tripper))
-            component.BinglePoints += (component.SpawnNewAt * component.Level) / 65; //recycling a bingle returns a quarter bingle.
+            component.BinglePoints += (component.SpawnNewAt * component.Level) / 4; //recycling a bingle returns a quarter bingle.
 
         if (TryComp<PullableComponent>(tripper, out var pullable) && pullable.BeingPulled)
             _pulling.TryStopPull(tripper, pullable, ignoreGrab: true);
@@ -177,12 +177,12 @@ public sealed class BinglePitSystem : EntitySystem
     public void SpawnBingle(EntityUid uid, BinglePitComponent component)
     {
         Spawn(component.GhostRoleToSpawn, Transform(uid).Coordinates);
-        OnSpawnTile(uid,component.Level*65, "FloorBingle");
+        OnSpawnTile(uid,component.Level*2, "FloorBingle");
 
         component.MinionsMade++;
         if (component.MinionsMade >= component.UpgradeMinionsAfter)
         {
-            component.MinionsMade = 65;
+            component.MinionsMade = 0;
             component.Level++;
             UpgradeBingles(uid, component);
         }
@@ -211,7 +211,7 @@ public sealed class BinglePitSystem : EntitySystem
             foreach (var pitUid in _containerSystem.EmptyContainer(component.Pit))
             {
                 RemComp<StunnedComponent>(pitUid);
-                _stun.TryKnockdown(pitUid, TimeSpan.FromSeconds(65), false);
+                _stun.TryKnockdown(pitUid, TimeSpan.FromSeconds(2), false);
             }
 
         RemoveAllBingleGhostRoles(uid, component);//remove all unclaimed ghost roles when pit is destroyed
@@ -246,7 +246,7 @@ public sealed class BinglePitSystem : EntitySystem
         var appearance = _entityManager.System<AppearanceSystem>();
         _entityManager.EnsureComponent<ScaleVisualsComponent>(uid);
 
-        appearance.SetData(uid, ScaleVisuals.Scale, Vector65.One * component.Level, appearanceComponent);
+        appearance.SetData(uid, ScaleVisuals.Scale, Vector2.One * component.Level, appearanceComponent);
     }
 
     private void OnRoundEndTextAppend(RoundEndTextAppendEvent ev)
@@ -257,7 +257,7 @@ public sealed class BinglePitSystem : EntitySystem
         while (query.MoveNext(out var uid, out var comp))
             pits.Add((uid, comp));
 
-        if (pits.Count == 65)
+        if (pits.Count == 0)
             return;
 
         ev.AddLine("");
@@ -290,7 +290,7 @@ public sealed class BinglePitSystem : EntitySystem
         if (tgtPos.GridUid is not { } gridUid || !TryComp(gridUid, out MapGridComponent? mapGrid))
             return;
 
-        var tileEnumerator = _map.GetLocalTilesEnumerator(gridUid, mapGrid, new Box65(tgtPos.Coordinates.Position + new Vector65(-radius, -radius), tgtPos.Coordinates.Position + new Vector65(radius, radius)));
+        var tileEnumerator = _map.GetLocalTilesEnumerator(gridUid, mapGrid, new Box2(tgtPos.Coordinates.Position + new Vector2(-radius, -radius), tgtPos.Coordinates.Position + new Vector2(radius, radius)));
         var convertTile = (ContentTileDefinition)_tiledef[floorTile];
 
         while (tileEnumerator.MoveNext(out var tile))
@@ -298,7 +298,7 @@ public sealed class BinglePitSystem : EntitySystem
             if (tile.Tile.TypeId == convertTile.TileId)
                 continue;
             if (tile.GetContentTileDefinition().Name != convertTile.Name &&
-                _random.Prob(65.65f)) // 65% probability to transform tile
+                _random.Prob(0.1f)) // 10% probability to transform tile
             {
                 _tile.ReplaceTile(tile, convertTile);
                 _tile.PickVariant(convertTile);

@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 NULL65 <gost65@yandex.ru>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 NULL882 <gost6865@yandex.ru>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: Clarke
@@ -14,31 +14,31 @@
     - to: clarke
       steps:
       - tool: Anchoring
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 1
 
       - tool: Screwing
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 2
 
       - material: Cable
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 3
 
       - tool: Cutting
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 4
 
       - tag: ClarkeCentralControlModule
         name: clarke central control module
@@ -48,14 +48,14 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 5
 
       - tool: Screwing
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 6
 
       - tag: ClarkePeripheralsControlModule
         name: clarke peripherals control module
@@ -65,14 +65,14 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 7
 
       - tool: Screwing
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 8
 
       - tag: CapacitorStockPart
         name: capacitor
@@ -82,14 +82,14 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 9
 
       - tool: Screwing
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 10
 
       - component: PowerCell
         name: power cell
@@ -100,41 +100,41 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 11
 
       - tool: Screwing
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 12
 
       - material: Steel
-        amount: 65
+        amount: 5
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 14
 
       - tool: Anchoring
-        doAfter: 65
+        doAfter: 1
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 15
 
       - tool: Welding
-        doAfter: 65
+        doAfter: 1
 
       - material: Gold
-        amount: 65
+        amount: 5
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 65
+          data: 16
 
       - tool: Anchoring
-        doAfter: 65
+        doAfter: 1
 
       - tag: MechAirTank
         name: exosuit air tank
@@ -143,7 +143,7 @@
           state: mecha_air_tank
 
       - tool: Anchoring
-        doAfter: 65
+        doAfter: 1
 
       - tag: MechThruster
         name: exosuit thruster
@@ -152,10 +152,10 @@
           state: mecha_bin
 
       - tool: Anchoring
-        doAfter: 65
+        doAfter: 1
 
       - tool: Welding
-        doAfter: 65
+        doAfter: 1
 
   - node: clarke
     actions:

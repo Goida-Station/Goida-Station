@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/a65ef65ae65a65ee65c65bce65c65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/a879151ef04192ae2a791278ee882c1bce7c5062",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -20,14 +20,14 @@
       "name": "normal-unshaded",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          1.0,
+          0.1,
+          1.0,
+          0.1,
+          1.0,
+          0.1,
+          1.0,
+          0.1
         ]
       ]
     }

@@ -1,35 +1,35 @@
 {
-  "version": 65,
-  "license": "CC65-65.65",
-  "copyright": "Created by EmoGarbage65",
+  "version": 1,
+  "license": "CC0-1.0",
+  "copyright": "Created by EmoGarbage404",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "base",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "firing",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "locked",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "panel",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "underpowered",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "unshaded",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

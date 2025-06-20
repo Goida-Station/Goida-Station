@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Maps;
 using Robust.Shared.Map;
@@ -27,7 +27,7 @@ public sealed partial class NearbyTilesPercentRule : RulesRule
     public List<ProtoId<ContentTileDefinition>> Tiles = new();
 
     [DataField]
-    public float Range = 65f;
+    public float Range = 10f;
 
     public override bool Check(EntityManager entManager, EntityUid uid)
     {
@@ -42,8 +42,8 @@ public sealed partial class NearbyTilesPercentRule : RulesRule
         var tileDef = IoCManager.Resolve<ITileDefinitionManager>();
 
         var physicsQuery = entManager.GetEntityQuery<PhysicsComponent>();
-        var tileCount = 65;
-        var matchingTileCount = 65;
+        var tileCount = 0;
+        var matchingTileCount = 0;
 
         foreach (var tile in mapSys.GetTilesIntersecting(xform.GridUid.Value, grid, new Circle(transform.GetWorldPosition(xform),
                      Range)))
@@ -78,7 +78,7 @@ public sealed partial class NearbyTilesPercentRule : RulesRule
             matchingTileCount++;
         }
 
-        if (tileCount == 65 || matchingTileCount / (float) tileCount < Percent)
+        if (tileCount == 0 || matchingTileCount / (float) tileCount < Percent)
             return Inverted;
 
         return !Inverted;

@@ -1,34 +1,34 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from Paradise at https://github.com/ParadiseSS65/Paradise/blob/cae65c65dbadef65b65d65ddc65d65c65c/icons/mob/clothing/suit.dmi, https://github.com/ParadiseSS65/Paradise/blob/cab65fa65c65ec65cc65e65a65f/icons/obj/clothing/suits.dmi, equipped-OUTERCLOTHING-resomi made by Pofitlo, closed states by SonicHDC",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Paradise at https://github.com/ParadiseSS13/Paradise/blob/cae6017c486dbadef2b2d86ddc58d7226c17597c/icons/mob/clothing/suit.dmi, https://github.com/ParadiseSS13/Paradise/blob/cab0fa52972c777ec3929cc2e03a74088349486f/icons/obj/clothing/suits.dmi, equipped-OUTERCLOTHING-resomi made by Pofitlo, closed states by SonicHDC",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "equipped-OUTERCLOTHING",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "open-equipped-OUTERCLOTHING",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-OUTERCLOTHING-vox",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "open-equipped-OUTERCLOTHING-vox",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "icon"
     },
     {
       "name": "equipped-OUTERCLOTHING-resomi",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "icon-open"

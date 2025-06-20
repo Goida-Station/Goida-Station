@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: OrganAnimalBrain
@@ -15,12 +15,12 @@
     state: brain
   - type: Organ
     slotId: brain
-    intCap: 65
-    integrity: 65
+    intCap: 28
+    integrity: 28
     integrityThresholds:
-      Normal: 65
-      Damaged: 65
-      Destroyed: 65    
+      Normal: 28
+      Damaged: 16
+      Destroyed: 0    
   - type: Input
     context: "ghost"
   - type: Brain
@@ -38,12 +38,12 @@
       organ:
         reagents:
         - ReagentId: Nutriment
-          Quantity: 65
+          Quantity: 10
       food:
-        maxVol: 65
+        maxVol: 5
         reagents:
         - ReagentId: GreyMatter
-          Quantity: 65
+          Quantity: 5
   - type: FlavorProfile
     flavors:
       - people
@@ -70,12 +70,12 @@
   # start-backmen: surgery
   - type: Organ
     slotId: eyes
-    intCap: 65
-    integrity: 65
+    intCap: 12
+    integrity: 12
     integrityThresholds:
-      Normal: 65
-      Damaged: 65
-      Destroyed: 65    
+      Normal: 12
+      Damaged: 6
+      Destroyed: 0    
   - type: Eyes
   # end-backmen: surgery
   - type: Sprite

@@ -26,11 +26,11 @@ public sealed partial class AnalysisConsoleComponent : Component
     /// The sound played when an artifact has points extracted.
     /// </summary>
     [DataField]
-    public SoundSpecifier? ExtractSound = new SoundPathSpecifier("/Audio/Effects/radpulse65.ogg")
+    public SoundSpecifier? ExtractSound = new SoundPathSpecifier("/Audio/Effects/radpulse11.ogg")
     {
         Params = new AudioParams
         {
-            Volume = 65,
+            Volume = 4,
         }
     };
 

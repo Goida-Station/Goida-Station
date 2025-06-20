@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 OnsenCapy <65OnsenCapy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 OnsenCapy <101037138+OnsenCapy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseStructure
@@ -17,11 +17,11 @@
   - type: Actions
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 60
         mask:
         - MachineMask
         layer:
@@ -32,8 +32,8 @@
     layers:
     - state: syndie_lethal
   - type: InteractionPopup
-    interactDelay: 65.65
-    successChance: 65.65
+    interactDelay: 0.2
+    successChance: 0.8
     interactSuccessString: petting-success-generic
     interactFailureString: petting-failure-generic
     interactSuccessSound:
@@ -46,7 +46,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 600
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -55,7 +55,7 @@
           collection: MetalGlassBreak
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 300
        # TODO: Construction graph
       behaviors:
       - !type:DoActsBehavior
@@ -65,21 +65,21 @@
           collection: MetalGlassBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          SheetSteel65:
-            min: 65
-            max: 65
+          SheetSteel1:
+            min: 3
+            max: 5
   - type: HTN
     rootTask:
       task: TurretCompound
     blackboard:
       RotateSpeed: !type:Single
-        65.65
+        3.141
       SoundTargetInLOS: !type:SoundPathSpecifier
         path: /Audio/Effects/double_beep.ogg
   - type: MouseRotator
-    angleTolerance: 65
-    rotationSpeed: 65
-    simple65DirMode: false
+    angleTolerance: 5
+    rotationSpeed: 180
+    simple4DirMode: false
   - type: NoRotateOnInteract
   - type: NoRotateOnMove
   - type: Input
@@ -97,7 +97,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Gun
-    fireRate: 65
+    fireRate: 6
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -105,7 +105,7 @@
       path: /Audio/Weapons/Guns/Gunshots/gun_sentry.ogg
   - type: BallisticAmmoProvider
     proto: CartridgeCaselessRifle
-    capacity: 65
+    capacity: 500
 
 - type: entity
   parent: BaseWeaponTurret
@@ -125,22 +125,22 @@
     - state: lethal
       shader: unshaded
   - type: Gun
-    projectileSpeed: 65
-    fireRate: 65.65
+    projectileSpeed: 15
+    fireRate: 1.5
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/taser65.ogg
+      path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
   - type: ProjectileBatteryAmmoProvider
     proto: BulletEnergyTurretLaser
-    fireCost: 65
+    fireCost: 100
   - type: Battery
-    maxCharge: 65
-    startingCharge: 65
+    maxCharge: 2000
+    startingCharge: 0
   - type: ApcPowerReceiverBattery
-    idleLoad: 65
-    batteryRechargeRate: 65
-    batteryRechargeEfficiency: 65.65 #temporarily no power draw because this was causing potentially seizure inducing light flickering
+    idleLoad: 5
+    batteryRechargeRate: 200
+    batteryRechargeEfficiency: 0.0 #temporarily no power draw because this was causing potentially seizure inducing light flickering
   - type: ApcPowerReceiver
-    powerLoad: 65
+    powerLoad: 5
   - type: ExtensionCableReceiver
   - type: HTN
     rootTask:

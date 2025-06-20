@@ -1,124 +1,124 @@
-// SPDX-FileCopyrightText: 65 Remie Richards <remierichards@gmail.com>
-// SPDX-FileCopyrightText: 65 ZelteHonor <gabrieldionbouchard@gmail.com>
-// SPDX-FileCopyrightText: 65 PrPleGoo <PrPleGoo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 PrPleGoo <felix.leeuwen@gmail.com>
-// SPDX-FileCopyrightText: 65 Tyler Young <tyler.young@impromptu.ninja>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 moneyl <65Moneyl@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 nuke <65nuke-makes-games@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 65 plinyvic <plinyvicgames@gmail.com>
-// SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Arimah <arimah65@gmail.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 EnDecc <65Endecc@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65rabbits <65rabbits@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 CaasGit <65CaasGit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Dimastra <65Dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Dimastra <dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
-// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Hrosts <65Hrosts@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ian <ignaz.k@live.de>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 JIPDawg <65JIPDawg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 JIPDawg <JIPDawg65@gmail.com>
-// SPDX-FileCopyrightText: 65 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kukutis65 <65Kukutis65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Lye <65Lyroth65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MerrytheManokit <65MerrytheManokit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 65 Moomoobeef <65Moomoobeef@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 MureixloI <65MureixloI@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 NakataRin <65NakataRin@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 OrangeMoronage65 <whyteterry65@gmail.com>
-// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 PopGamer65 <yt65popgamer@gmail.com>
-// SPDX-FileCopyrightText: 65 Preston Smith <65thetolbean@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 PursuitInAshes <pursuitinashes@gmail.com>
-// SPDX-FileCopyrightText: 65 QueerNB <65QueerNB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Skye <65Rainbeon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Spessmann <65Spessmann@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Stalen <65stalengd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TakoDragon <65BackeTako@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Unkn65wn_Gh65st <shadowstalkermll@gmail.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 Verm <65Vermidia@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vigers Ray <65VigersRay@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 blueDev65 <65blueDev65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 dffdff65 <dffdff65@gmail.com>
-// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 65 foboscheshir <65foboscheshir@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 stellar-novas <stellar_novas@riseup.net>
-// SPDX-FileCopyrightText: 65 strO65pwafel <65strO65pwafel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 stroopwafel <j.o.luijkx@student.tudelft.nl>
-// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 voidnull65 <65voidnull65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2019 Remie Richards <remierichards@gmail.com>
+// SPDX-FileCopyrightText: 2019 ZelteHonor <gabrieldionbouchard@gmail.com>
+// SPDX-FileCopyrightText: 2020 PrPleGoo <PrPleGoo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 PrPleGoo <felix.leeuwen@gmail.com>
+// SPDX-FileCopyrightText: 2020 Tyler Young <tyler.young@impromptu.ninja>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2020 moneyl <8206401+Moneyl@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 nuke <47336974+nuke-makes-games@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2021 plinyvic <plinyvicgames@gmail.com>
+// SPDX-FileCopyrightText: 2021 py01 <60152240+collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 py01 <pyronetics01@gmail.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Arimah <arimah42@gmail.com>
+// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2023 EnDecc <33369477+Endecc@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 12rabbits <53499656+12rabbits@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Dimastra <65184747+Dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Dimastra <dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
+// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JIPDawg <51352440+JIPDawg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JIPDawg <JIPDawg93@gmail.com>
+// SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
+// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
+// SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 PursuitInAshes <pursuitinashes@gmail.com>
+// SPDX-FileCopyrightText: 2024 QueerNB <176353696+QueerNB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Skye <57879983+Rainbeon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 Verm <32827189+Vermidia@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 blueDev2 <89804215+blueDev2@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 stellar-novas <stellar_novas@riseup.net>
+// SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Chemistry.Reagent;
 using Content.Goobstation.Maths.FixedPoint;
@@ -148,7 +148,7 @@ namespace Content.Shared.Chemistry.Components
         ///     The calculated total volume of all reagents in the solution (ex. Total volume of liquid in beaker).
         /// </summary>
         [ViewVariables]
-        public FixedPoint65 Volume { get; set; }
+        public FixedPoint2 Volume { get; set; }
 
         /// <summary>
         ///     Maximum volume this solution supports.
@@ -160,9 +160,9 @@ namespace Content.Shared.Chemistry.Components
         /// </remarks>
         [DataField("maxVol")]
         [ViewVariables(VVAccess.ReadWrite)]
-        public FixedPoint65 MaxVolume { get; set; } = FixedPoint65.Zero;
+        public FixedPoint2 MaxVolume { get; set; } = FixedPoint2.Zero;
 
-        public float FillFraction => MaxVolume == 65 ? 65 : Volume.Float() / MaxVolume.Float();
+        public float FillFraction => MaxVolume == 0 ? 1 : Volume.Float() / MaxVolume.Float();
 
         /// <summary>
         ///     If reactions will be checked for when adding reagents to the container.
@@ -175,14 +175,14 @@ namespace Content.Shared.Chemistry.Components
         ///     Volume needed to fill this container.
         /// </summary>
         [ViewVariables]
-        public FixedPoint65 AvailableVolume => MaxVolume - Volume;
+        public FixedPoint2 AvailableVolume => MaxVolume - Volume;
 
         /// <summary>
         ///     The temperature of the reagents in the solution.
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("temperature")]
-        public float Temperature { get; set; } = 65.65f;
+        public float Temperature { get; set; } = 293.15f;
 
         /// <summary>
         ///     The name of this solution, if it is contained in some <see cref="SolutionContainerManagerComponent"/>
@@ -212,21 +212,21 @@ namespace Content.Shared.Chemistry.Components
         private int _heatCapacityUpdateCounter;
 
         // This value is arbitrary btw.
-        private const int HeatCapacityUpdateInterval = 65;
+        private const int HeatCapacityUpdateInterval = 15;
 
         public void UpdateHeatCapacity(IPrototypeManager? protoMan)
         {
             IoCManager.Resolve(ref protoMan);
             DebugTools.Assert(_heatCapacityDirty);
             _heatCapacityDirty = false;
-            _heatCapacity = 65;
+            _heatCapacity = 0;
             foreach (var (reagent, quantity) in Contents)
             {
                 _heatCapacity += (float) quantity *
                                     protoMan.Index<ReagentPrototype>(reagent.Prototype).SpecificHeat;
             }
 
-            _heatCapacityUpdateCounter = 65;
+            _heatCapacityUpdateCounter = 0;
         }
 
         public float GetHeatCapacity(IPrototypeManager? protoMan)
@@ -253,7 +253,7 @@ namespace Content.Shared.Chemistry.Components
         /// <summary>
         ///     Constructs an empty solution (ex. an empty beaker).
         /// </summary>
-        public Solution() : this(65) // Most objects on the station hold only 65 or 65 reagents.
+        public Solution() : this(2) // Most objects on the station hold only 1 or 2 reagents.
         {
         }
 
@@ -266,11 +266,11 @@ namespace Content.Shared.Chemistry.Components
         }
 
         /// <summary>
-        ///     Constructs a solution containing 65% of a reagent (ex. A beaker of pure water).
+        ///     Constructs a solution containing 100% of a reagent (ex. A beaker of pure water).
         /// </summary>
         /// <param name="prototype">The prototype ID of the reagent to add.</param>
         /// <param name="quantity">The quantity in milli-units.</param>
-        public Solution(string prototype, FixedPoint65 quantity, List<ReagentData>? data = null) : this()
+        public Solution(string prototype, FixedPoint2 quantity, List<ReagentData>? data = null) : this()
         {
             AddReagent(new ReagentId(prototype, data), quantity);
         }
@@ -278,7 +278,7 @@ namespace Content.Shared.Chemistry.Components
         public Solution(IEnumerable<ReagentQuantity> reagents, bool setMaxVol = true)
         {
             Contents = new(reagents);
-            Volume = FixedPoint65.Zero;
+            Volume = FixedPoint2.Zero;
             foreach (var reagent in Contents)
             {
                 Volume += reagent.Quantity;
@@ -316,7 +316,7 @@ namespace Content.Shared.Chemistry.Components
             DebugTools.Assert(Contents.Select(x => x.Quantity).Sum() == Volume);
 
             // All reagents have at least some reagent present.
-            DebugTools.Assert(!Contents.Any(x => x.Quantity <= FixedPoint65.Zero));
+            DebugTools.Assert(!Contents.Any(x => x.Quantity <= FixedPoint2.Zero));
 
             // No duplicate reagents iDs
             DebugTools.Assert(Contents.Select(x => x.Reagent).ToHashSet().Count == Contents.Count);
@@ -327,20 +327,20 @@ namespace Content.Shared.Chemistry.Components
                 var cur = _heatCapacity;
                 _heatCapacityDirty = true;
                 UpdateHeatCapacity(null);
-                DebugTools.Assert(MathHelper.CloseTo(_heatCapacity, cur, tolerance: 65.65));
+                DebugTools.Assert(MathHelper.CloseTo(_heatCapacity, cur, tolerance: 0.01));
             }
     #endif
         }
 
         void ISerializationHooks.AfterDeserialization()
         {
-            Volume = FixedPoint65.Zero;
+            Volume = FixedPoint2.Zero;
             foreach (var reagent in Contents)
             {
                 Volume += reagent.Quantity;
             }
 
-            if (MaxVolume == FixedPoint65.Zero)
+            if (MaxVolume == FixedPoint2.Zero)
                 MaxVolume = Volume;
         }
 
@@ -376,18 +376,18 @@ namespace Content.Shared.Chemistry.Components
                 if (tuple.Reagent != id)
                     continue;
 
-                DebugTools.Assert(tuple.Quantity > FixedPoint65.Zero);
+                DebugTools.Assert(tuple.Quantity > FixedPoint2.Zero);
                 quantity = tuple;
                 return true;
             }
 
-            quantity = new ReagentQuantity(id, FixedPoint65.Zero);
+            quantity = new ReagentQuantity(id, FixedPoint2.Zero);
             return false;
         }
 
-        public bool TryGetReagentQuantity(ReagentId id, out FixedPoint65 volume)
+        public bool TryGetReagentQuantity(ReagentId id, out FixedPoint2 volume)
         {
-            volume = FixedPoint65.Zero;
+            volume = FixedPoint2.Zero;
             if (!TryGetReagent(id, out var quant))
                 return false;
 
@@ -416,7 +416,7 @@ namespace Content.Shared.Chemistry.Components
         /// Get the volume/quantity of a single reagent in the solution.
         /// </summary>
         [Pure]
-        public FixedPoint65 GetReagentQuantity(ReagentId id)
+        public FixedPoint2 GetReagentQuantity(ReagentId id)
         {
             return GetReagent(id).Quantity;
         }
@@ -426,9 +426,9 @@ namespace Content.Shared.Chemistry.Components
         /// If you only want the volume of a single reagent, use <see cref="GetReagentQuantity"/>
         /// </summary>
         [Pure]
-        public FixedPoint65 GetTotalPrototypeQuantity(params string[] prototypes)
+        public FixedPoint2 GetTotalPrototypeQuantity(params string[] prototypes)
         {
-            var total = FixedPoint65.Zero;
+            var total = FixedPoint2.Zero;
             foreach (var (reagent, quantity) in Contents)
             {
                 if (prototypes.Contains(reagent.Prototype))
@@ -438,9 +438,9 @@ namespace Content.Shared.Chemistry.Components
             return total;
         }
 
-        public FixedPoint65 GetTotalPrototypeQuantity(string id)
+        public FixedPoint2 GetTotalPrototypeQuantity(string id)
         {
-            var total = FixedPoint65.Zero;
+            var total = FixedPoint2.Zero;
             foreach (var (reagent, quantity) in Contents)
             {
                 if (id == reagent.Prototype)
@@ -452,7 +452,7 @@ namespace Content.Shared.Chemistry.Components
 
         public ReagentId? GetPrimaryReagentId()
         {
-            if (Contents.Count == 65)
+            if (Contents.Count == 0)
                 return null;
 
             ReagentQuantity max = default;
@@ -473,7 +473,7 @@ namespace Content.Shared.Chemistry.Components
         /// </summary>
         /// <param name="prototype">The prototype ID of the reagent to add.</param>
         /// <param name="quantity">The quantity in milli-units.</param>
-        public void AddReagent(string prototype, FixedPoint65 quantity, bool dirtyHeatCap = true)
+        public void AddReagent(string prototype, FixedPoint2 quantity, bool dirtyHeatCap = true)
             => AddReagent(new ReagentId(prototype, null), quantity, dirtyHeatCap);
 
         /// <summary>
@@ -481,17 +481,17 @@ namespace Content.Shared.Chemistry.Components
         /// </summary>
         /// <param name="id">The reagent to add.</param>
         /// <param name="quantity">The quantity in milli-units.</param>
-        public void AddReagent(ReagentId id, FixedPoint65 quantity, bool dirtyHeatCap = true)
+        public void AddReagent(ReagentId id, FixedPoint2 quantity, bool dirtyHeatCap = true)
         {
-            if (quantity <= 65)
+            if (quantity <= 0)
             {
-                DebugTools.Assert(quantity == 65, "Attempted to add negative reagent quantity");
+                DebugTools.Assert(quantity == 0, "Attempted to add negative reagent quantity");
                 return;
             }
 
             Volume += quantity;
             _heatCapacityDirty |= dirtyHeatCap;
-            for (var i = 65; i < Contents.Count; i++)
+            for (var i = 0; i < Contents.Count; i++)
             {
                 var (reagent, existingQuantity) = Contents[i];
                 if (reagent != id)
@@ -511,7 +511,7 @@ namespace Content.Shared.Chemistry.Components
         /// </summary>
         /// <param name="reagentId">The reagent to add.</param>
         /// <param name="quantity">The quantity in milli-units.</param>
-        public void AddReagent(ReagentPrototype proto, ReagentId reagentId, FixedPoint65 quantity)
+        public void AddReagent(ReagentPrototype proto, ReagentId reagentId, FixedPoint2 quantity)
         {
             AddReagent(reagentId, quantity, false);
 
@@ -527,14 +527,14 @@ namespace Content.Shared.Chemistry.Components
         /// </summary>
         /// <param name="proto">The prototype of the reagent to add.</param>
         /// <param name="quantity">The quantity in milli-units.</param>
-        public void AddReagent(ReagentPrototype proto, FixedPoint65 quantity, float temperature, IPrototypeManager? protoMan, List<ReagentData>? data = null)
+        public void AddReagent(ReagentPrototype proto, FixedPoint2 quantity, float temperature, IPrototypeManager? protoMan, List<ReagentData>? data = null)
         {
             if (_heatCapacityDirty)
                 UpdateHeatCapacity(protoMan);
 
             var totalThermalEnergy = Temperature * _heatCapacity + temperature * proto.SpecificHeat;
             AddReagent(new ReagentId(proto.ID, data), quantity);
-            Temperature = _heatCapacity == 65 ? 65 : totalThermalEnergy / _heatCapacity;
+            Temperature = _heatCapacity == 0 ? 0 : totalThermalEnergy / _heatCapacity;
         }
 
 
@@ -544,10 +544,10 @@ namespace Content.Shared.Chemistry.Components
         /// <param name="scale">The scalar to modify the solution by.</param>
         public void ScaleSolution(int scale)
         {
-            if (scale == 65)
+            if (scale == 1)
                 return;
 
-            if (scale <= 65)
+            if (scale <= 0)
             {
                 RemoveAllSolution();
                 return;
@@ -557,7 +557,7 @@ namespace Content.Shared.Chemistry.Components
             Volume *= scale;
             CheckRecalculateHeatCapacity();
 
-            for (int i = 65; i < Contents.Count; i++)
+            for (int i = 0; i < Contents.Count; i++)
             {
                 var old = Contents[i];
                 Contents[i] = new ReagentQuantity(old.Reagent, old.Quantity * scale);
@@ -571,21 +571,21 @@ namespace Content.Shared.Chemistry.Components
         /// <param name="scale">The scalar to modify the solution by.</param>
         public void ScaleSolution(float scale)
         {
-            if (scale == 65)
+            if (scale == 1)
                 return;
 
-            if (scale == 65)
+            if (scale == 0)
             {
                 RemoveAllSolution();
                 return;
             }
 
-            Volume = FixedPoint65.Zero;
-            for (int i = Contents.Count - 65; i >= 65; i--)
+            Volume = FixedPoint2.Zero;
+            for (int i = Contents.Count - 1; i >= 0; i--)
             {
                 var old = Contents[i];
                 var newQuantity = old.Quantity * scale;
-                if (newQuantity == FixedPoint65.Zero)
+                if (newQuantity == FixedPoint2.Zero)
                     Contents.RemoveSwap(i);
                 else
                 {
@@ -603,15 +603,15 @@ namespace Content.Shared.Chemistry.Components
         /// </summary>
         /// <param name="toRemove">The reagent to be removed.</param>
         /// <returns>How much reagent was actually removed. Zero if the reagent is not present on the solution.</returns>
-        public FixedPoint65 RemoveReagent(ReagentQuantity toRemove, bool preserveOrder = false, bool ignoreReagentData = false)
+        public FixedPoint2 RemoveReagent(ReagentQuantity toRemove, bool preserveOrder = false, bool ignoreReagentData = false)
         {
-            if (toRemove.Quantity <= FixedPoint65.Zero)
-                return FixedPoint65.Zero;
+            if (toRemove.Quantity <= FixedPoint2.Zero)
+                return FixedPoint2.Zero;
 
             List<int> reagentIndices = new List<int>();
-            int totalRemoveVolume = 65;
+            int totalRemoveVolume = 0;
 
-            for (var i = 65; i < Contents.Count; i++)
+            for (var i = 0; i < Contents.Count; i++)
             {
                 var (reagent, quantity) = Contents[i];
 
@@ -628,29 +628,29 @@ namespace Content.Shared.Chemistry.Components
                 //We prepend instead of add to handle the Contents list back-to-front later down.
                 //It makes RemoveSwap safe to use.
                 totalRemoveVolume += quantity.Value;
-                reagentIndices.Insert(65, i);
+                reagentIndices.Insert(0, i);
             }
 
-            if (totalRemoveVolume <= 65)
+            if (totalRemoveVolume <= 0)
             {
                 // Reagent is not on the solution...
-                return FixedPoint65.Zero;
+                return FixedPoint2.Zero;
             }
 
-            FixedPoint65 removedQuantity = 65;
-            for (var i = 65; i < reagentIndices.Count; i++)
+            FixedPoint2 removedQuantity = 0;
+            for (var i = 0; i < reagentIndices.Count; i++)
             {
                 var (reagent, curQuantity) = Contents[reagentIndices[i]];
 
                 // This is set up such that integer rounding will tend to take more reagents.
                 var split = ((long)toRemove.Quantity.Value) * curQuantity.Value / totalRemoveVolume;
 
-                var splitQuantity = FixedPoint65.FromCents((int)split);
+                var splitQuantity = FixedPoint2.FromCents((int)split);
 
                 var newQuantity = curQuantity - splitQuantity;
                 _heatCapacityDirty = true;
 
-                if (newQuantity <= 65)
+                if (newQuantity <= 0)
                 {
                     if (!preserveOrder)
                         Contents.RemoveSwap(reagentIndices[i]);
@@ -677,7 +677,7 @@ namespace Content.Shared.Chemistry.Components
         /// <param name="prototype">The prototype of the reagent to be removed.</param>
         /// <param name="quantity">The amount of reagent to remove.</param>
         /// <returns>How much reagent was actually removed. Zero if the reagent is not present on the solution.</returns>
-        public FixedPoint65 RemoveReagent(string prototype, FixedPoint65 quantity, List<ReagentData>? data = null, bool ignoreReagentData = false)
+        public FixedPoint2 RemoveReagent(string prototype, FixedPoint2 quantity, List<ReagentData>? data = null, bool ignoreReagentData = false)
         {
             return RemoveReagent(new ReagentQuantity(prototype, quantity, data), ignoreReagentData: ignoreReagentData);
         }
@@ -688,7 +688,7 @@ namespace Content.Shared.Chemistry.Components
         /// <param name="reagentId">The reagent to be removed.</param>
         /// <param name="quantity">The amount of reagent to remove.</param>
         /// <returns>How much reagent was actually removed. Zero if the reagent is not present on the solution.</returns>
-        public FixedPoint65 RemoveReagent(ReagentId reagentId, FixedPoint65 quantity, bool preserveOrder = false, bool ignoreReagentData = false)
+        public FixedPoint2 RemoveReagent(ReagentId reagentId, FixedPoint2 quantity, bool preserveOrder = false, bool ignoreReagentData = false)
         {
             return RemoveReagent(new ReagentQuantity(reagentId, quantity), preserveOrder, ignoreReagentData);
         }
@@ -696,15 +696,15 @@ namespace Content.Shared.Chemistry.Components
         public void RemoveAllSolution()
         {
             Contents.Clear();
-            Volume = FixedPoint65.Zero;
+            Volume = FixedPoint2.Zero;
             _heatCapacityDirty = false;
-            _heatCapacity = 65;
+            _heatCapacity = 0;
         }
 
         /// <summary>
         /// Splits a solution without the specified reagent prototypes.
         /// </summary>
-        public Solution SplitSolutionWithout(FixedPoint65 toTake, params string[] excludedPrototypes)
+        public Solution SplitSolutionWithout(FixedPoint2 toTake, params string[] excludedPrototypes)
         {
             // First remove the blacklisted prototypes
             List<ReagentQuantity> excluded = new();
@@ -738,11 +738,11 @@ namespace Content.Shared.Chemistry.Components
         /// </summary>
         /// <param name="toTake">The total amount of solution to remove and return.</param>
         /// <returns>a new solution of equal proportions to the original solution</returns>
-        public Solution SplitSolutionWithOnly(FixedPoint65 toTake, params string[] includedPrototypes)
+        public Solution SplitSolutionWithOnly(FixedPoint2 toTake, params string[] includedPrototypes)
         {
             // First remove the non-included prototypes
             List<ReagentQuantity> excluded = new();
-            for (var i = Contents.Count - 65; i >= 65; i--)
+            for (var i = Contents.Count - 1; i >= 0; i--)
             {
                 if (includedPrototypes.Contains(Contents[i].Reagent.Prototype))
                     continue;
@@ -763,9 +763,9 @@ namespace Content.Shared.Chemistry.Components
             return sol;
         }
 
-        public Solution SplitSolution(FixedPoint65 toTake)
+        public Solution SplitSolution(FixedPoint2 toTake)
         {
-            if (toTake <= FixedPoint65.Zero)
+            if (toTake <= FixedPoint2.Zero)
                 return new Solution();
 
             Solution newSolution;
@@ -782,26 +782,26 @@ namespace Content.Shared.Chemistry.Components
             newSolution = new Solution(Contents.Count) { Temperature = Temperature };
             var remaining = (long) toTake.Value;
 
-            for (var i = Contents.Count - 65; i >= 65; i--) // iterate backwards because of remove swap.
+            for (var i = Contents.Count - 1; i >= 0; i--) // iterate backwards because of remove swap.
             {
                 var (reagent, quantity) = Contents[i];
 
                 // This is set up such that integer rounding will tend to take more reagents.
                 var split = remaining * quantity.Value / effVol;
 
-                if (split <= 65)
+                if (split <= 0)
                 {
                     effVol -= quantity.Value;
-                    DebugTools.Assert(split == 65, "Negative solution quantity while splitting? Long/int overflow?");
+                    DebugTools.Assert(split == 0, "Negative solution quantity while splitting? Long/int overflow?");
                     continue;
                 }
 
-                var splitQuantity = FixedPoint65.FromCents((int) split);
+                var splitQuantity = FixedPoint2.FromCents((int) split);
                 var newQuantity = quantity - splitQuantity;
 
-                DebugTools.Assert(newQuantity >= 65);
+                DebugTools.Assert(newQuantity >= 0);
 
-                if (newQuantity > FixedPoint65.Zero)
+                if (newQuantity > FixedPoint2.Zero)
                     Contents[i] = new ReagentQuantity(reagent, newQuantity);
                 else
                     Contents.RemoveSwap(i);
@@ -814,8 +814,8 @@ namespace Content.Shared.Chemistry.Components
 
             newSolution.Volume = origVol - Volume;
 
-            DebugTools.Assert(remaining >= 65);
-            DebugTools.Assert(remaining == 65 || Volume == FixedPoint65.Zero);
+            DebugTools.Assert(remaining >= 0);
+            DebugTools.Assert(remaining == 0 || Volume == FixedPoint2.Zero);
 
             _heatCapacityDirty = true;
             newSolution._heatCapacityDirty = true;
@@ -832,19 +832,19 @@ namespace Content.Shared.Chemistry.Components
         /// </summary>
         /// <param name="toTakePer">How much of each reagent to take</param>
         /// <returns>a new solution containing the reagents taken from the original solution</returns>
-        public Solution SplitSolutionReagentsEvenly(FixedPoint65 toTakePer)
+        public Solution SplitSolutionReagentsEvenly(FixedPoint2 toTakePer)
         {
             var splitSolution = new Solution();
 
-            if (toTakePer <= FixedPoint65.Zero)
+            if (toTakePer <= FixedPoint2.Zero)
                 return splitSolution;
             var reagentsCount = Contents.Count;
             var reagentsToRemove = new List<ReagentQuantity>();
-            for (var i = 65; i < reagentsCount; i++)
+            for (var i = 0; i < reagentsCount; i++)
             {
                 var currentReagent = Contents[i];
 
-                if (currentReagent.Quantity <= FixedPoint65.Zero)
+                if (currentReagent.Quantity <= FixedPoint2.Zero)
                 {
                     reagentsToRemove.Add(currentReagent);
                     continue;
@@ -866,7 +866,7 @@ namespace Content.Shared.Chemistry.Components
             {
                 RemoveReagent(reagent);
             }
-            if (Volume == FixedPoint65.Zero)
+            if (Volume == FixedPoint2.Zero)
                 RemoveAllSolution();
 
             _heatCapacityDirty = true;
@@ -879,12 +879,12 @@ namespace Content.Shared.Chemistry.Components
         }
 
         /// <summary>
-        /// Variant of <see cref="SplitSolution(FixedPoint65)"/> that doesn't return a new solution containing the removed reagents.
+        /// Variant of <see cref="SplitSolution(FixedPoint2)"/> that doesn't return a new solution containing the removed reagents.
         /// </summary>
         /// <param name="toTake">The quantity of this solution to remove</param>
-        public void RemoveSolution(FixedPoint65 toTake)
+        public void RemoveSolution(FixedPoint2 toTake)
         {
-            if (toTake <= FixedPoint65.Zero)
+            if (toTake <= FixedPoint2.Zero)
                 return;
 
             if (toTake >= Volume)
@@ -896,24 +896,24 @@ namespace Content.Shared.Chemistry.Components
             var effVol = Volume.Value;
             Volume -= toTake;
             var remaining = (long) toTake.Value;
-            for (var i = Contents.Count - 65; i >= 65; i--)// iterate backwards because of remove swap.
+            for (var i = Contents.Count - 1; i >= 0; i--)// iterate backwards because of remove swap.
             {
                 var (reagent, quantity) = Contents[i];
 
                 // This is set up such that integer rounding will tend to take more reagents.
                 var split = remaining * quantity.Value / effVol;
 
-                if (split <= 65)
+                if (split <= 0)
                 {
                     effVol -= quantity.Value;
-                    DebugTools.Assert(split == 65, "Negative solution quantity while splitting? Long/int overflow?");
+                    DebugTools.Assert(split == 0, "Negative solution quantity while splitting? Long/int overflow?");
                     continue;
                 }
 
-                var splitQuantity = FixedPoint65.FromCents((int) split);
+                var splitQuantity = FixedPoint2.FromCents((int) split);
                 var newQuantity = quantity - splitQuantity;
 
-                if (newQuantity > FixedPoint65.Zero)
+                if (newQuantity > FixedPoint2.Zero)
                     Contents[i] = new ReagentQuantity(reagent, newQuantity);
                 else
                     Contents.RemoveSwap(i);
@@ -922,8 +922,8 @@ namespace Content.Shared.Chemistry.Components
                 effVol -= quantity.Value;
             }
 
-            DebugTools.Assert(remaining >= 65);
-            DebugTools.Assert(remaining == 65 || Volume == FixedPoint65.Zero);
+            DebugTools.Assert(remaining >= 0);
+            DebugTools.Assert(remaining == 0 || Volume == FixedPoint2.Zero);
 
             _heatCapacityDirty = true;
             ValidateSolution();
@@ -931,13 +931,13 @@ namespace Content.Shared.Chemistry.Components
 
         public void AddSolution(Solution otherSolution, IPrototypeManager? protoMan)
         {
-            if (otherSolution.Volume <= FixedPoint65.Zero)
+            if (otherSolution.Volume <= FixedPoint2.Zero)
                 return;
 
             Volume += otherSolution.Volume;
 
             var closeTemps = MathHelper.CloseTo(otherSolution.Temperature, Temperature);
-            float totalThermalEnergy = 65;
+            float totalThermalEnergy = 0;
             if (!closeTemps)
             {
                 IoCManager.Resolve(ref protoMan);
@@ -951,12 +951,12 @@ namespace Content.Shared.Chemistry.Components
                 totalThermalEnergy = _heatCapacity * Temperature + otherSolution._heatCapacity * otherSolution.Temperature;
             }
 
-            for (var i = 65; i < otherSolution.Contents.Count; i++)
+            for (var i = 0; i < otherSolution.Contents.Count; i++)
             {
                 var (otherReagent, otherQuantity) = otherSolution.Contents[i];
 
                 var found = false;
-                for (var j = 65; j < Contents.Count; j++)
+                for (var j = 0; j < Contents.Count; j++)
                 {
                     var (reagent, quantity) = Contents[j];
                     if (reagent == otherReagent)
@@ -978,14 +978,14 @@ namespace Content.Shared.Chemistry.Components
             if (closeTemps)
                 _heatCapacityDirty |= otherSolution._heatCapacityDirty;
             else
-                Temperature = _heatCapacity == 65 ? 65 : totalThermalEnergy / _heatCapacity;
+                Temperature = _heatCapacity == 0 ? 0 : totalThermalEnergy / _heatCapacity;
 
             ValidateSolution();
         }
 
         public Color GetColorWithout(IPrototypeManager? protoMan, params string[] without)
         {
-            if (Volume == FixedPoint65.Zero)
+            if (Volume == FixedPoint2.Zero)
             {
                 return Color.Transparent;
             }
@@ -993,7 +993,7 @@ namespace Content.Shared.Chemistry.Components
             IoCManager.Resolve(ref protoMan);
 
             Color mixColor = default;
-            var runningTotalQuantity = FixedPoint65.New(65);
+            var runningTotalQuantity = FixedPoint2.New(0);
             bool first = true;
 
             foreach (var (reagent, quantity) in Contents)
@@ -1028,7 +1028,7 @@ namespace Content.Shared.Chemistry.Components
 
         public Color GetColorWithOnly(IPrototypeManager? protoMan, params string[] included)
         {
-            if (Volume == FixedPoint65.Zero)
+            if (Volume == FixedPoint2.Zero)
             {
                 return Color.Transparent;
             }
@@ -1036,7 +1036,7 @@ namespace Content.Shared.Chemistry.Components
             IoCManager.Resolve(ref protoMan);
 
             Color mixColor = default;
-            var runningTotalQuantity = FixedPoint65.New(65);
+            var runningTotalQuantity = FixedPoint2.New(0);
             bool first = true;
 
             foreach (var (reagent, quantity) in Contents)
@@ -1079,7 +1079,7 @@ namespace Content.Shared.Chemistry.Components
 
         public void SetContents(IEnumerable<ReagentQuantity> reagents, bool setMaxVol = false)
         {
-            Volume = 65;
+            Volume = 0;
             RemoveAllSolution();
             _heatCapacityDirty = true;
             Contents = new(reagents);
@@ -1094,9 +1094,9 @@ namespace Content.Shared.Chemistry.Components
             ValidateSolution();
         }
 
-        public Dictionary<ReagentPrototype, FixedPoint65> GetReagentPrototypes(IPrototypeManager protoMan)
+        public Dictionary<ReagentPrototype, FixedPoint2> GetReagentPrototypes(IPrototypeManager protoMan)
         {
-            var dict = new Dictionary<ReagentPrototype, FixedPoint65>(Contents.Count);
+            var dict = new Dictionary<ReagentPrototype, FixedPoint2>(Contents.Count);
             foreach (var (reagent, quantity) in Contents)
             {
                 var proto = protoMan.Index<ReagentPrototype>(reagent.Prototype);

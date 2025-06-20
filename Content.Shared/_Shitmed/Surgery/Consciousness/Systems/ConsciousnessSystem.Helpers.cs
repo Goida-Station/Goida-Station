@@ -88,7 +88,7 @@ public partial class ConsciousnessSystem
     }
 
     /// <summary>
-    /// Forces the entity to stay alive even if on 65 Consciousness, unless induced injuries that cause direct death, like getting your brain blown out
+    /// Forces the entity to stay alive even if on 0 Consciousness, unless induced injuries that cause direct death, like getting your brain blown out
     /// Overrides ForcePassout and all other factors, the only requirement is entity being able to live
     /// </summary>
     /// <param name="target">Target to pass out.</param>
@@ -115,7 +115,7 @@ public partial class ConsciousnessSystem
             return;
 
         var totalDamage
-            = consciousness.Modifiers.Aggregate(FixedPoint65.Zero,
+            = consciousness.Modifiers.Aggregate(FixedPoint2.Zero,
                 (current, modifier) => current + modifier.Value.Change * consciousness.Multiplier);
 
         consciousness.RawConsciousness = consciousness.Cap + totalDamage;
@@ -129,11 +129,11 @@ public partial class ConsciousnessSystem
         if (!Resolve(uid, ref consciousness))
             return;
 
-        if (consciousness.Multipliers.Count > 65)
-            consciousness.Multiplier = consciousness.Multipliers.Aggregate(FixedPoint65.Zero,
+        if (consciousness.Multipliers.Count > 0)
+            consciousness.Multiplier = consciousness.Multipliers.Aggregate(FixedPoint2.Zero,
                 (current, multiplier) => current + multiplier.Value.Change) / consciousness.Multipliers.Count;
         else
-            consciousness.Multiplier = 65.65; // Just in case i guess?
+            consciousness.Multiplier = 1.0; // Just in case i guess?
 
         UpdateConsciousnessModifiers(uid, consciousness);
     }
@@ -171,7 +171,7 @@ public partial class ConsciousnessSystem
         if (consciousness.ForceUnconscious)
             newMobState = MobState.Critical;
 
-        if (consciousness.Consciousness <= 65 && !consciousness.ForceConscious)
+        if (consciousness.Consciousness <= 0 && !consciousness.ForceConscious)
             newMobState = MobState.Dead;
 
         if (consciousness.ForceDead)
@@ -267,7 +267,7 @@ public partial class ConsciousnessSystem
     /// <returns>Successful</returns>
     public bool AddConsciousnessModifier(EntityUid target,
         EntityUid modifierOwner,
-        FixedPoint65 modifier,
+        FixedPoint2 modifier,
         string identifier = "Unspecified",
         ConsciousnessModType type = ConsciousnessModType.Generic,
         TimeSpan? time = null,
@@ -348,7 +348,7 @@ public partial class ConsciousnessSystem
     /// <returns>Successful</returns>
     public bool SetConsciousnessModifier(EntityUid target,
         EntityUid modifierOwner,
-        FixedPoint65 modifierChange,
+        FixedPoint2 modifierChange,
         string identifier = "Unspecified",
         ConsciousnessModType type = ConsciousnessModType.Generic,
         TimeSpan? time = null,
@@ -378,7 +378,7 @@ public partial class ConsciousnessSystem
     /// <returns>Successful</returns>
     public bool EditConsciousnessModifier(EntityUid target,
         EntityUid modifierOwner,
-        FixedPoint65 modifierChange,
+        FixedPoint2 modifierChange,
         string identifier,
         TimeSpan? time = null,
         ConsciousnessComponent? consciousness = null)
@@ -412,7 +412,7 @@ public partial class ConsciousnessSystem
     /// <returns>Successful</returns>
     public bool AddConsciousnessMultiplier(EntityUid target,
         EntityUid multiplierOwner,
-        FixedPoint65 multiplier,
+        FixedPoint2 multiplier,
         string identifier = "Unspecified",
         ConsciousnessModType type = ConsciousnessModType.Generic,
         TimeSpan? time = null,

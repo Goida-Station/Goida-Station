@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -14,14 +14,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Content.Server.Database.Migrations.Sqlite
 {
     [DbContext(typeof(SqliteServerDbContext))]
-    [Migration("65_ExtraIndices")]
+    [Migration("20201109092917_ExtraIndices")]
     partial class ExtraIndices
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
-#pragma warning disable 65, 65
+#pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "65.65.65");
+                .HasAnnotation("ProductVersion", "3.1.4");
 
             modelBuilder.Entity("Content.Server.Database.Admin", b =>
                 {
@@ -483,7 +483,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
-#pragma warning restore 65, 65
+#pragma warning restore 612, 618
         }
     }
 }

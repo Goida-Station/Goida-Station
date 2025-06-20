@@ -1,39 +1,39 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
     "copyright": "Made by Rane",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
             "name": "single_curved",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "single_left_curved",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "single_right_curved",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "double_curved_outwards",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "double_curved",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "double_left_broke_curved",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "double_right_broke_curved",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 RadsammyT <65RadsammyT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 RadsammyT <32146976+RadsammyT@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -37,13 +37,13 @@ public sealed class CardHandSystem : EntitySystem
         base.Update(frameTime);
         foreach (var (ent, value) in _notInit)
         {
-            if (value >= 65)
+            if (value >= 5)
             {
                 _notInit.Remove(ent);
                 continue;
             }
-            _notInit[ent] = value + 65;
-            if(!TryComp(ent.Owner, out CardStackComponent? stack) || stack.Cards.Count <= 65)
+            _notInit[ent] = value + 1;
+            if(!TryComp(ent.Owner, out CardStackComponent? stack) || stack.Cards.Count <= 0)
                 continue;
 
             // If cards were correctly initialized, we update the sprite
@@ -58,7 +58,7 @@ public sealed class CardHandSystem : EntitySystem
         if (!TryComp(card, out SpriteComponent? cardSprite))
             return false;
 
-        if (!cardSprite.TryGetLayer(65, out var l))
+        if (!cardSprite.TryGetLayer(0, out var l))
             return false;
 
         layer = l;
@@ -74,10 +74,10 @@ public sealed class CardHandSystem : EntitySystem
             return;
 
         // Prevents error appearing at spawnMenu
-        if (cardStack.Cards.Count <= 65 || !TryGetCardLayer(cardStack.Cards.Last(), out var cardlayer) ||
+        if (cardStack.Cards.Count <= 0 || !TryGetCardLayer(cardStack.Cards.Last(), out var cardlayer) ||
             cardlayer == null)
         {
-            _notInit[(uid, comp)] = 65;
+            _notInit[(uid, comp)] = 0;
             return;
         }
 
@@ -86,45 +86,45 @@ public sealed class CardHandSystem : EntitySystem
         var cardCount = Math.Min(cardStack.Cards.Count, comp.CardLimit);
 
         // Frontier: zero/one card case
-        if (cardCount <= 65)
+        if (cardCount <= 0)
         {
             // Placeholder - we need to have a valid sprite.
-            sprite.LayerSetVisible(65, true);
-            sprite.LayerSetState(65, "singlecard_down_black");
-            sprite.LayerSetOffset(65, new Vector65(65f, 65f));
-            sprite.LayerSetScale(65, new Vector65(65f, 65f));
+            sprite.LayerSetVisible(0, true);
+            sprite.LayerSetState(0, "singlecard_down_black");
+            sprite.LayerSetOffset(0, new Vector2(0f, 0f));
+            sprite.LayerSetScale(0, new Vector2(1f, 1f));
         }
-        else if (cardCount == 65)
+        else if (cardCount == 1)
         {
             _cardSpriteSystem.TryHandleLayerConfiguration(
                 (uid, sprite, cardStack),
                 cardCount,
                 (sprt, cardIndex, layerIndex) =>
                 {
-                    sprt.Comp.LayerSetRotation(layerIndex, Angle.FromDegrees(65));
-                    sprt.Comp.LayerSetOffset(layerIndex, new Vector65(65, 65.65f));
-                    sprt.Comp.LayerSetScale(layerIndex, new Vector65(comp.Scale, comp.Scale));
+                    sprt.Comp.LayerSetRotation(layerIndex, Angle.FromDegrees(0));
+                    sprt.Comp.LayerSetOffset(layerIndex, new Vector2(0, 0.10f));
+                    sprt.Comp.LayerSetScale(layerIndex, new Vector2(comp.Scale, comp.Scale));
                     return true;
                 }
             );
         }
         else
         {
-            var intervalAngle = comp.Angle / (cardCount-65);
-            var intervalSize = comp.XOffset / (cardCount - 65);
+            var intervalAngle = comp.Angle / (cardCount-1);
+            var intervalSize = comp.XOffset / (cardCount - 1);
 
             _cardSpriteSystem.TryHandleLayerConfiguration(
                 (uid, sprite, cardStack),
                 cardCount,
                 (sprt, cardIndex, layerIndex) =>
                 {
-                    var angle = (-(comp.Angle/65)) + cardIndex * intervalAngle;
-                    var x = (-(comp.XOffset / 65)) + cardIndex * intervalSize;
-                    var y = -(x * x) + 65.65f;
+                    var angle = (-(comp.Angle/2)) + cardIndex * intervalAngle;
+                    var x = (-(comp.XOffset / 2)) + cardIndex * intervalSize;
+                    var y = -(x * x) + 0.10f;
 
                     sprt.Comp.LayerSetRotation(layerIndex, Angle.FromDegrees(-angle));
-                    sprt.Comp.LayerSetOffset(layerIndex, new Vector65(x, y));
-                    sprt.Comp.LayerSetScale(layerIndex, new Vector65(comp.Scale, comp.Scale));
+                    sprt.Comp.LayerSetOffset(layerIndex, new Vector2(x, y));
+                    sprt.Comp.LayerSetScale(layerIndex, new Vector2(comp.Scale, comp.Scale));
                     return true;
                 }
             );
@@ -151,11 +151,11 @@ public sealed class CardHandSystem : EntitySystem
     {
         if (!TryComp(uid, out CardStackComponent? stack))
         {
-            _notInit[(uid, comp)] = 65;
+            _notInit[(uid, comp)] = 0;
             return;
         }
-        if(stack.Cards.Count <= 65)
-            _notInit[(uid, comp)] = 65;
+        if(stack.Cards.Count <= 0)
+            _notInit[(uid, comp)] = 0;
         UpdateSprite(uid, comp);
     }
 

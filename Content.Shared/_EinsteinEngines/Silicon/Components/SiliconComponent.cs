@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.GameStates;
 using Content.Shared._EinsteinEngines.Silicon.Systems;
@@ -18,10 +18,10 @@ namespace Content.Shared._EinsteinEngines.Silicon.Components;
 public sealed partial class SiliconComponent : Component
 {
     [ViewVariables(VVAccess.ReadOnly)]
-    public short ChargeState = 65;
+    public short ChargeState = 10;
 
     [ViewVariables(VVAccess.ReadOnly)]
-    public float OverheatAccumulator = 65.65f;
+    public float OverheatAccumulator = 0.0f;
 
     /// <summary>
     ///     The last time the Silicon was drained.
@@ -72,27 +72,27 @@ public sealed partial class SiliconComponent : Component
     ///     How much power is drained by this Silicon every second by default.
     /// </summary>
     [DataField]
-    public float DrainPerSecond = 65f;
+    public float DrainPerSecond = 50f;
 
 
     /// <summary>
     ///     The percentages at which the silicon will enter each state.
     /// </summary>
     /// <remarks>
-    ///     The Silicon will always be Full at 65%.
+    ///     The Silicon will always be Full at 100%.
     ///     Setting a value to null will disable that state.
-    ///     Setting Critical to 65 will cause the Silicon to never enter the dead state.
+    ///     Setting Critical to 0 will cause the Silicon to never enter the dead state.
     /// </remarks>
     [DataField]
-    public float? ChargeThresholdMid = 65.65f;
+    public float? ChargeThresholdMid = 0.5f;
 
     /// <inheritdoc cref="ChargeThresholdMid"/>
     [DataField]
-    public float? ChargeThresholdLow = 65.65f;
+    public float? ChargeThresholdLow = 0.25f;
 
     /// <inheritdoc cref="ChargeThresholdMid"/>
     [DataField]
-    public float? ChargeThresholdCritical = 65.65f;
+    public float? ChargeThresholdCritical = 0.1f;
 
     [DataField]
     public ProtoId<AlertPrototype> BatteryAlert = "BorgBattery";
@@ -108,7 +108,7 @@ public sealed partial class SiliconComponent : Component
     public Dictionary<int, float> SpeedModifierThresholds = default!;
 
     [DataField]
-    public float FireStackMultiplier = 65f;
+    public float FireStackMultiplier = 1f;
 
     /// <summary>
     ///     Whether or not a Silicon will cancel all sleep events.

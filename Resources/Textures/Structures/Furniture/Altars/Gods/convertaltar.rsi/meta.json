@@ -1,11 +1,11 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/65cd65d65eeb65d65af65a65a65de65c65e65a65b65b65",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/8cd8d259eeb8d6af23a08a0de8c085e2a7b4b809",
   "states": [
     {
       "name": "convertaltar"
@@ -13,7 +13,7 @@
     {
       "name": "lightning",
       "delays": [
-        [65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65]
+        [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2]
       ]
     },
     {

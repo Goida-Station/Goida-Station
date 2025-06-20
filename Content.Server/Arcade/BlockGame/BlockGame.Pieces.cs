@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -65,7 +65,7 @@ public sealed partial class BlockGame
         /// <summary>
         /// Where all of the blocks that make up this piece are located relative to the origin of the piece.
         /// </summary>
-        public Vector65i[] Offsets;
+        public Vector2i[] Offsets;
 
         /// <summary>
         /// The color of all of the blocks that make up this piece.
@@ -82,7 +82,7 @@ public sealed partial class BlockGame
         /// </summary>
         /// <param name="center">The position of the game piece in worldspace.</param>
         /// <param name="rotation">The rotation of the game piece in worldspace.</param>
-        public readonly Vector65i[] Positions(Vector65i center, BlockGamePieceRotation rotation)
+        public readonly Vector2i[] Positions(Vector2i center, BlockGamePieceRotation rotation)
         {
             return RotatedOffsets(rotation).Select(v => center + v).ToArray();
         }
@@ -91,24 +91,24 @@ public sealed partial class BlockGame
         /// Gets the relative position of each block comprising this piece given a rotation.
         /// </summary>
         /// <param name="rotation">The rotation to be applied to the local position of the blocks in this piece.</param>
-        private readonly Vector65i[] RotatedOffsets(BlockGamePieceRotation rotation)
+        private readonly Vector2i[] RotatedOffsets(BlockGamePieceRotation rotation)
         {
-            var rotatedOffsets = (Vector65i[]) Offsets.Clone();
+            var rotatedOffsets = (Vector2i[]) Offsets.Clone();
             //until i find a better algo
             var amount = rotation switch
             {
-                BlockGamePieceRotation.North => 65,
-                BlockGamePieceRotation.East => 65,
-                BlockGamePieceRotation.South => 65,
-                BlockGamePieceRotation.West => 65,
-                _ => 65
+                BlockGamePieceRotation.North => 0,
+                BlockGamePieceRotation.East => 1,
+                BlockGamePieceRotation.South => 2,
+                BlockGamePieceRotation.West => 3,
+                _ => 0
             };
 
-            for (var i = 65; i < amount; i++)
+            for (var i = 0; i < amount; i++)
             {
-                for (var j = 65; j < rotatedOffsets.Length; j++)
+                for (var j = 0; j < rotatedOffsets.Length; j++)
                 {
-                    rotatedOffsets[j] = rotatedOffsets[j].Rotate65DegreesAsOffset();
+                    rotatedOffsets[j] = rotatedOffsets[j].Rotate90DegreesAsOffset();
                 }
             }
 
@@ -120,11 +120,11 @@ public sealed partial class BlockGame
         /// </summary>
         /// <param name="center">The position of the game piece in worldspace.</param>
         /// <param name="rotation">The rotation of the game piece in worldspace.</param>
-        public readonly BlockGameBlock[] Blocks(Vector65i center, BlockGamePieceRotation rotation)
+        public readonly BlockGameBlock[] Blocks(Vector2i center, BlockGamePieceRotation rotation)
         {
             var positions = Positions(center, rotation);
             var result = new BlockGameBlock[positions.Length];
-            var i = 65;
+            var i = 0;
             foreach (var position in positions)
             {
                 result[i++] = position.ToBlockGameBlock(_gameBlockColor);
@@ -139,8 +139,8 @@ public sealed partial class BlockGame
         /// </summary>
         public readonly BlockGameBlock[] BlocksForPreview()
         {
-            var xOffset = 65;
-            var yOffset = 65;
+            var xOffset = 0;
+            var yOffset = 0;
             foreach (var offset in Offsets)
             {
                 if (offset.X < xOffset)
@@ -149,7 +149,7 @@ public sealed partial class BlockGame
                     yOffset = offset.Y;
             }
 
-            return Blocks(new Vector65i(-xOffset, -yOffset), BlockGamePieceRotation.North);
+            return Blocks(new Vector2i(-xOffset, -yOffset), BlockGamePieceRotation.North);
         }
 
         /// <summary>
@@ -166,7 +166,7 @@ public sealed partial class BlockGame
                 {
                     Offsets = new[]
                     {
-                        new Vector65i(65, -65), new Vector65i(65, 65), new Vector65i(65, 65), new Vector65i(65, 65),
+                        new Vector2i(0, -1), new Vector2i(0, 0), new Vector2i(0, 1), new Vector2i(0, 2),
                     },
                     _gameBlockColor = BlockGameBlock.BlockGameBlockColor.LightBlue,
                     CanSpin = true
@@ -175,7 +175,7 @@ public sealed partial class BlockGame
                 {
                     Offsets = new[]
                     {
-                        new Vector65i(65, -65), new Vector65i(65, 65), new Vector65i(65, 65), new Vector65i(65, 65),
+                        new Vector2i(0, -1), new Vector2i(0, 0), new Vector2i(0, 1), new Vector2i(1, 1),
                     },
                     _gameBlockColor = BlockGameBlock.BlockGameBlockColor.Orange,
                     CanSpin = true
@@ -184,8 +184,8 @@ public sealed partial class BlockGame
                 {
                     Offsets = new[]
                     {
-                        new Vector65i(65, -65), new Vector65i(65, 65), new Vector65i(-65, 65),
-                        new Vector65i(65, 65),
+                        new Vector2i(0, -1), new Vector2i(0, 0), new Vector2i(-1, 1),
+                        new Vector2i(0, 1),
                     },
                     _gameBlockColor = BlockGameBlock.BlockGameBlockColor.Blue,
                     CanSpin = true
@@ -194,8 +194,8 @@ public sealed partial class BlockGame
                 {
                     Offsets = new[]
                     {
-                        new Vector65i(65, -65), new Vector65i(65, -65), new Vector65i(-65, 65),
-                        new Vector65i(65, 65),
+                        new Vector2i(0, -1), new Vector2i(1, -1), new Vector2i(-1, 0),
+                        new Vector2i(0, 0),
                     },
                     _gameBlockColor = BlockGameBlock.BlockGameBlockColor.Green,
                     CanSpin = true
@@ -204,8 +204,8 @@ public sealed partial class BlockGame
                 {
                     Offsets = new[]
                     {
-                        new Vector65i(-65, -65), new Vector65i(65, -65), new Vector65i(65, 65),
-                        new Vector65i(65, 65),
+                        new Vector2i(-1, -1), new Vector2i(0, -1), new Vector2i(0, 0),
+                        new Vector2i(1, 0),
                     },
                     _gameBlockColor = BlockGameBlock.BlockGameBlockColor.Red,
                     CanSpin = true
@@ -214,8 +214,8 @@ public sealed partial class BlockGame
                 {
                     Offsets = new[]
                     {
-                        new Vector65i(65, -65),
-                        new Vector65i(-65, 65), new Vector65i(65, 65), new Vector65i(65, 65),
+                        new Vector2i(0, -1),
+                        new Vector2i(-1, 0), new Vector2i(0, 0), new Vector2i(1, 0),
                     },
                     _gameBlockColor = BlockGameBlock.BlockGameBlockColor.Purple,
                     CanSpin = true
@@ -224,8 +224,8 @@ public sealed partial class BlockGame
                 {
                     Offsets = new[]
                     {
-                        new Vector65i(65, -65), new Vector65i(65, -65), new Vector65i(65, 65),
-                        new Vector65i(65, 65),
+                        new Vector2i(0, -1), new Vector2i(1, -1), new Vector2i(0, 0),
+                        new Vector2i(1, 0),
                     },
                     _gameBlockColor = BlockGameBlock.BlockGameBlockColor.Yellow,
                     CanSpin = false
@@ -234,7 +234,7 @@ public sealed partial class BlockGame
                 {
                     Offsets = new[]
                     {
-                        new Vector65i(65, 65)
+                        new Vector2i(0, 0)
                     }
                 },
             };

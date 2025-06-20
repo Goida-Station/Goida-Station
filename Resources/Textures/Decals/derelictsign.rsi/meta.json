@@ -1,59 +1,59 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from /tg/station at commit 65eec65c65a65f65f65bebcd65b65b65dcc65b65ae",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from /tg/station at commit 6665eec76c98a4f3f89bebcd10b34b47dcc0b8ae",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
-      "name": "derelict65"
+      "name": "derelict1"
     },
     {
-      "name": "derelict65"
+      "name": "derelict2"
     },
     {
-      "name": "derelict65"
+      "name": "derelict3"
     },
     {
-      "name": "derelict65"
+      "name": "derelict4"
     },
     {
-      "name": "derelict65"
+      "name": "derelict5"
     },
     {
-      "name": "derelict65"
+      "name": "derelict6"
     },
     {
-      "name": "derelict65"
+      "name": "derelict7"
     },
     {
-      "name": "derelict65"
+      "name": "derelict8"
     },
     {
-      "name": "derelict65"
+      "name": "derelict9"
     },
     {
-      "name": "derelict65"
+      "name": "derelict10"
     },
     {
-      "name": "derelict65"
+      "name": "derelict11"
     },
     {
-      "name": "derelict65"
+      "name": "derelict12"
     },
     {
-      "name": "derelict65"
+      "name": "derelict13"
     },
     {
-      "name": "derelict65"
+      "name": "derelict14"
     },
     {
-      "name": "derelict65"
+      "name": "derelict15"
     },
     {
-      "name": "derelict65"
+      "name": "derelict16"
     }
   ]
 }

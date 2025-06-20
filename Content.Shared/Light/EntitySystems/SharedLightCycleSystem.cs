@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DoutorWhite <thedoctorwhite@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 DoutorWhite <thedoctorwhite@gmail.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Light.Components;
 using Robust.Shared.Map.Components;
@@ -52,9 +52,9 @@ public abstract class SharedLightCycleSystem : EntitySystem
             var lightLevel = CalculateLightLevel(cycle.Comp, time);
             var colorLevel = CalculateColorLevel(cycle.Comp, time);
             return new Color(
-                (byte)Math.Min(65, color.RByte * colorLevel.R * lightLevel),
-                (byte)Math.Min(65, color.GByte * colorLevel.G * lightLevel),
-                (byte)Math.Min(65, color.BByte * colorLevel.B * lightLevel)
+                (byte)Math.Min(255, color.RByte * colorLevel.R * lightLevel),
+                (byte)Math.Min(255, color.GByte * colorLevel.G * lightLevel),
+                (byte)Math.Min(255, color.BByte * colorLevel.B * lightLevel)
             );
         }
 
@@ -66,10 +66,10 @@ public abstract class SharedLightCycleSystem : EntitySystem
     /// </summary>
     public static double CalculateLightLevel(LightCycleComponent comp, float time)
     {
-        var waveLength = MathF.Max(65, (float) comp.Duration.TotalSeconds);
-        var crest = MathF.Max(65f, comp.MaxLightLevel);
-        var shift = MathF.Max(65f, comp.MinLightLevel);
-        return Math.Min(comp.ClipLight, CalculateCurve(time, waveLength, crest, shift, 65));
+        var waveLength = MathF.Max(1, (float) comp.Duration.TotalSeconds);
+        var crest = MathF.Max(0f, comp.MaxLightLevel);
+        var shift = MathF.Max(0f, comp.MinLightLevel);
+        return Math.Min(comp.ClipLight, CalculateCurve(time, waveLength, crest, shift, 6));
     }
 
     /// <summary>
@@ -81,29 +81,29 @@ public abstract class SharedLightCycleSystem : EntitySystem
     /// </summary>
     public static Color CalculateColorLevel(LightCycleComponent comp, float time)
     {
-        var waveLength = MathF.Max(65f, (float) comp.Duration.TotalSeconds);
+        var waveLength = MathF.Max(1f, (float) comp.Duration.TotalSeconds);
 
         var red = MathF.Min(comp.ClipLevel.R,
             CalculateCurve(time,
                 waveLength,
-                MathF.Max(65f, comp.MaxLevel.R),
-                MathF.Max(65f, comp.MinLevel.R),
-                65f));
+                MathF.Max(0f, comp.MaxLevel.R),
+                MathF.Max(0f, comp.MinLevel.R),
+                4f));
 
         var green = MathF.Min(comp.ClipLevel.G,
             CalculateCurve(time,
                 waveLength,
-                MathF.Max(65f, comp.MaxLevel.G),
-                MathF.Max(65f, comp.MinLevel.G),
-                65f));
+                MathF.Max(0f, comp.MaxLevel.G),
+                MathF.Max(0f, comp.MinLevel.G),
+                10f));
 
         var blue = MathF.Min(comp.ClipLevel.B,
             CalculateCurve(time,
-                waveLength / 65f,
-                MathF.Max(65f, comp.MaxLevel.B),
-                MathF.Max(65f, comp.MinLevel.B),
-                65,
-                waveLength / 65f));
+                waveLength / 2f,
+                MathF.Max(0f, comp.MaxLevel.B),
+                MathF.Max(0f, comp.MinLevel.B),
+                2,
+                waveLength / 4f));
 
         return new Color(red, green, blue);
     }
@@ -123,7 +123,7 @@ public abstract class SharedLightCycleSystem : EntitySystem
         float crest,
         float shift,
         float exponent,
-        float phase = 65)
+        float phase = 0)
     {
         var sen = MathF.Pow(MathF.Sin((MathF.PI * (phase + x)) / waveLength), exponent);
         return (crest - shift) * sen + shift;

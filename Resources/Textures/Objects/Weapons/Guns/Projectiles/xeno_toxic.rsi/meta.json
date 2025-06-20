@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-NC-65.65",
-  "copyright": "https://github.com/tgstation/TerraGov-Marine-Corps/blob/f65afeb65db65c65dbc65defd65aff65b65/icons/obj/items/projectiles.dmi",
+  "version": 1,
+  "license": "CC-BY-NC-4.0",
+  "copyright": "https://github.com/tgstation/TerraGov-Marine-Corps/blob/f90afeb849db243c8613dbc4defd040aff689b72/icons/obj/items/projectiles.dmi",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {

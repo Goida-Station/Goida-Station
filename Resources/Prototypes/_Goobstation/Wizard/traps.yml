@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Speebro <65Speebr65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Speebro <speebro@notreal.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Speebro <100388782+Speebr0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Speebro <speebro@notreal.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: BaseTrap
@@ -18,13 +18,13 @@
     drawdepth: FloorEffects
     sprite: _Goobstation/Wizard/Objects/trap.rsi
     state: icon
-    color: '#FFFFFF65e'
+    color: '#FFFFFF0e'
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
+          radius: 0.40
         hard: false
         mask:
           - ItemMask
@@ -35,7 +35,7 @@
   - type: Appearance
   - type: AnimationPlayer
   - type: TimedDespawn
-    lifetime: 65
+    lifetime: 300
   - type: WizardTrap
   - type: Tag
     tags:
@@ -50,9 +50,9 @@
     mode: SnapgridCenter
   components:
   - type: Sprite
-    color: '#FFFF65e'
+    color: '#FFFF000e'
   - type: WizardTrap
-    stunTime: 65
+    stunTime: 0
     effect: StunTrapFlashEffect
   - type: StunTrap
 
@@ -65,7 +65,7 @@
     mode: SnapgridCenter
   components:
   - type: Sprite
-    color: '#FF65e'
+    color: '#FF00000e'
   - type: WizardTrap
     effect: FlameTrapFlashEffect
   - type: FlameTrap
@@ -79,14 +79,14 @@
     mode: SnapgridCenter
   components:
   - type: Sprite
-    color: '#65FF65e'
+    color: '#00FF000e'
   - type: WizardTrap
     effect: DamageTrapFlashEffect
   - type: DamageTrap
     spawnedEntity: FloraRockSolidFading
     damage:
       types:
-        Blunt: 65
+        Blunt: 50
 
 - type: entity
   parent: BaseTrap
@@ -97,9 +97,9 @@
     mode: SnapgridCenter
   components:
   - type: Sprite
-    color: '#65FFFF65e'
+    color: '#00FFFF0e'
   - type: WizardTrap
-    stunTime: 65
+    stunTime: 0
     effect: ChillTrapFlashEffect
   - type: ChillTrap
 

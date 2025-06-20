@@ -1,65 +1,65 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation and modified by potato65x at https://github.com/tgstation/tgstation/commit/65fe65bde65a65b65c65bdfa65c65b65cee65d65. Crostini created by Github user deathride65, baguette taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65ffd65b65fa65a65daa65f65a65f65f65a65, cotton made by mlexf (discord 65). Cotton baguette and crostini variants by JuneSzalkowska",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation and modified by potato1234x at https://github.com/tgstation/tgstation/commit/0631fe5bde73a68b4c12bdfa633c30b2cee442d5. Crostini created by Github user deathride58, baguette taken from tgstation at commit https://github.com/tgstation/tgstation/commit/7ffd61b6fa6a6183daa8900f9a490f46f7a81955, cotton made by mlexf (discord 1143460554963427380). Cotton baguette and crostini variants by JuneSzalkowska",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "alpha"
     },
     {
-      "name": "alpha65"
+      "name": "alpha2"
     },
     {
       "name": "alpha-filling"
     },
     {
-      "name": "alpha-filling65"
+      "name": "alpha-filling2"
     },
     {
       "name": "alpha-slice"
     },
     {
-      "name": "alpha-slice65"
+      "name": "alpha-slice2"
     },
     {
       "name": "alpha-slice-filling"
     },
     {
-      "name": "alpha-slice65-filling"
+      "name": "alpha-slice2-filling"
     },
     {
       "name": "baguette"
     },
     {
       "name": "baguette-equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "baguette-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "baguette-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "baguette-cotton"
     },
     {
       "name": "baguette-cotton-equipped-BELT",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "baguette-cotton-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "baguette-cotton-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "banana"

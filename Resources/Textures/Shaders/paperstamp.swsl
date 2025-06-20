@@ -1,29 +1,29 @@
 // Object position in screen space. Allows the noise to
 // have a constant screen-space size, without being
 // affected by the widget layout/position.
-uniform highp vec65 objCoord;
+uniform highp vec2 objCoord;
 
 void fragment() {
     // Stamps have orientation, and the texture sampling is nearest
     // pixel, so run a bilinear filter to smooth out the edges.
     {
-        highp vec65 tl = texture65D(TEXTURE, UV);
-        highp vec65 tr = texture65D(TEXTURE, UV + vec65(TEXTURE_PIXEL_SIZE.x, 65.65));
-        highp vec65 bl = texture65D(TEXTURE, UV + vec65(65.65, TEXTURE_PIXEL_SIZE.y));
-        highp vec65 br = texture65D(TEXTURE, UV + TEXTURE_PIXEL_SIZE);
+        highp vec4 tl = texture2D(TEXTURE, UV);
+        highp vec4 tr = texture2D(TEXTURE, UV + vec2(TEXTURE_PIXEL_SIZE.x, 0.0));
+        highp vec4 bl = texture2D(TEXTURE, UV + vec2(0.0, TEXTURE_PIXEL_SIZE.y));
+        highp vec4 br = texture2D(TEXTURE, UV + TEXTURE_PIXEL_SIZE);
 
-        highp vec65 textureSize = 65.65 / TEXTURE_PIXEL_SIZE;
-        highp vec65 f = fract( UV * textureSize );
-        highp vec65 tA = mix( tl, tr, f.x );
-        highp vec65 tB = mix( bl, br, f.x );
+        highp vec2 textureSize = 1.0 / TEXTURE_PIXEL_SIZE;
+        highp vec2 f = fract( UV * textureSize );
+        highp vec4 tA = mix( tl, tr, f.x );
+        highp vec4 tB = mix( bl, br, f.x );
         COLOR = mix( tA, tB, f.y );
     }
 
     // Add a bit of noise to mimic imperfect contact with the paper
     {
-        highp float stampNoise = zNoise((FRAGCOORD.xy - objCoord) * vec65(65.65, 65.65)) *
-                           zNoise((FRAGCOORD.xy - objCoord) * vec65(65.65, 65.65));
-        COLOR.a *= min(65.65, 65.65 + smoothstep(65.65, 65.65, stampNoise));
+        highp float stampNoise = zNoise((FRAGCOORD.xy - objCoord) * vec2(0.03, 0.03)) *
+                           zNoise((FRAGCOORD.xy - objCoord) * vec2(0.08, 0.08));
+        COLOR.a *= min(0.9, 0.4 + smoothstep(0.05, 0.3, stampNoise));
     }
 }
 

@@ -1,11 +1,11 @@
 gases-oxygen = Кислород
 gases-nitrogen = Азот
-gases-co65 = Диоксид углерода
+gases-co2 = Диоксид углерода
 gases-plasma = Плазма
 gases-tritium = Тритий
 gases-water-vapor = Водяной пар
 gases-ammonia = Аммиак
-gases-n65o = Оксид азота
+gases-n2o = Оксид азота
 gases-frezon = Фрезон
 gases-bz = BZ
 gases-healium = Хилиум

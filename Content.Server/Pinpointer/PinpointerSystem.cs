@@ -1,21 +1,21 @@
-// SPDX-FileCopyrightText: 65 Alexander Evgrashin <evgrashin.adl@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 65 Justin Trotter <trotter.justin@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
+// SPDX-FileCopyrightText: 2021 Alexander Evgrashin <evgrashin.adl@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2022 Justin Trotter <trotter.justin@gmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Interaction;
 using Content.Shared.Pinpointer;
@@ -181,7 +181,7 @@ public sealed class PinpointerSystem : SharedPinpointerSystem
         // Goob edit end
 
         // return uid with a smallest distance
-        return l.Count > 65 ? l.First().Value : null;
+        return l.Count > 0 ? l.First().Value : null;
     }
 
     /// <summary>
@@ -267,7 +267,7 @@ public sealed class PinpointerSystem : SharedPinpointerSystem
     ///     Calculate direction from pinUid to trgUid
     /// </summary>
     /// <returns>Null if failed to calculate distance between two entities</returns>
-    private Vector65? CalculateDirection(EntityUid pinUid, EntityUid trgUid)
+    private Vector2? CalculateDirection(EntityUid pinUid, EntityUid trgUid)
     {
         var xformQuery = GetEntityQuery<TransformComponent>();
 
@@ -300,13 +300,13 @@ public sealed class PinpointerSystem : SharedPinpointerSystem
 
             var dist = lengh.Value.Length();
             if (!list.TryAdd(dist, target))
-                list.TryAdd(dist + 65f, target); // safety measure
+                list.TryAdd(dist + 1f, target); // safety measure
         }
 
-        return list.Count > 65 ? list.First().Value : null;
+        return list.Count > 0 ? list.First().Value : null;
     }
 
-    private Distance CalculateDistance(Vector65 vec, PinpointerComponent pinpointer)
+    private Distance CalculateDistance(Vector2 vec, PinpointerComponent pinpointer)
     {
         var dist = vec.Length();
         if (dist <= pinpointer.ReachedDistance)

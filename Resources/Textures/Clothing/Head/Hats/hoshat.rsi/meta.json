@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Made by Flareguy for SS65. Based on the HOS cap sprite taken from tgstation at commit https://github.com/tgstation/tgstation/commit/d65c65e65de65f65d65c65da65dbc65d65cd65bb65, updated by JORJ65.",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by Flareguy for SS14. Based on the HOS cap sprite taken from tgstation at commit https://github.com/tgstation/tgstation/commit/d90c7e5de6f6d94596c164da78dbc8d3cd35bb99, updated by JORJ949.",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "name": "equipped-HELMET",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

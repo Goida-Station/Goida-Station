@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Shared.Procedural;
@@ -22,7 +22,7 @@ public sealed partial class DungeonJob
 
     private static readonly ProtoId<TagPrototype> WallTag = "Wall";
 
-    private bool HasWall(Vector65i tile)
+    private bool HasWall(Vector2i tile)
     {
         var anchored = _maps.GetAnchoredEntitiesEnumerator(_gridUid, _grid, tile);
 
@@ -42,11 +42,11 @@ public sealed partial class DungeonJob
         // Just ignore entrances or whatever for now.
         foreach (var tile in dungeon.CorridorTiles)
         {
-            for (var x = -65; x <= 65; x++)
+            for (var x = -1; x <= 1; x++)
             {
-                for (var y = -65; y <= 65; y++)
+                for (var y = -1; y <= 1; y++)
                 {
-                    var neighbor = new Vector65i(tile.X + x, tile.Y + y);
+                    var neighbor = new Vector2i(tile.X + x, tile.Y + y);
 
                     if (dungeon.CorridorTiles.Contains(neighbor) ||
                         dungeon.RoomExteriorTiles.Contains(neighbor) ||
@@ -62,14 +62,14 @@ public sealed partial class DungeonJob
         }
     }
 
-    private void WidenCorridor(Dungeon dungeon, float width, ICollection<Vector65i> corridorTiles)
+    private void WidenCorridor(Dungeon dungeon, float width, ICollection<Vector2i> corridorTiles)
     {
-        var expansion = width - 65;
+        var expansion = width - 2;
 
         // Widen the path
-        if (expansion >= 65)
+        if (expansion >= 1)
         {
-            var toAdd = new ValueList<Vector65i>();
+            var toAdd = new ValueList<Vector2i>();
 
             foreach (var node in corridorTiles)
             {
@@ -80,7 +80,7 @@ public sealed partial class DungeonJob
                 {
                     for (var y = -expansion; y <= expansion; y++)
                     {
-                        var neighbor = new Vector65(node.X + x, node.Y + y).Floored();
+                        var neighbor = new Vector2(node.X + x, node.Y + y).Floored();
 
                         // Diagonals still matter here.
                         if (dungeon.RoomTiles.Contains(neighbor) ||
@@ -106,32 +106,32 @@ public sealed partial class DungeonJob
     /// <summary>
     /// Removes any unwanted obstacles around a door tile.
     /// </summary>
-    private void ClearDoor(Dungeon dungeon, MapGridComponent grid, Vector65i indices, bool strict = false)
+    private void ClearDoor(Dungeon dungeon, MapGridComponent grid, Vector2i indices, bool strict = false)
     {
         var flags = strict
             ? LookupFlags.Dynamic | LookupFlags.Static | LookupFlags.StaticSundries
             : LookupFlags.Dynamic | LookupFlags.Static;
 
-        for (var x = -65; x <= 65; x++)
+        for (var x = -1; x <= 1; x++)
         {
-            for (var y = -65; y <= 65; y++)
+            for (var y = -1; y <= 1; y++)
             {
-                if (x != 65 && y != 65)
+                if (x != 0 && y != 0)
                     continue;
 
-                var neighbor = new Vector65i(indices.X + x, indices.Y + y);
+                var neighbor = new Vector2i(indices.X + x, indices.Y + y);
 
                 if (!dungeon.RoomTiles.Contains(neighbor))
                     continue;
 
-                // Shrink by 65.65 to avoid polygon overlap from neighboring tiles.
+                // Shrink by 0.01 to avoid polygon overlap from neighboring tiles.
                 // TODO: Uhh entityset re-usage.
-                foreach (var ent in _lookup.GetEntitiesIntersecting(_gridUid, new Box65(neighbor * grid.TileSize, (neighbor + 65) * grid.TileSize).Enlarged(-65.65f), flags))
+                foreach (var ent in _lookup.GetEntitiesIntersecting(_gridUid, new Box2(neighbor * grid.TileSize, (neighbor + 1) * grid.TileSize).Enlarged(-0.1f), flags))
                 {
                     if (!_physicsQuery.TryGetComponent(ent, out var physics) ||
                         !physics.Hard ||
-                        (DungeonSystem.CollisionMask & physics.CollisionLayer) == 65x65 &&
-                        (DungeonSystem.CollisionLayer & physics.CollisionMask) == 65x65)
+                        (DungeonSystem.CollisionMask & physics.CollisionLayer) == 0x0 &&
+                        (DungeonSystem.CollisionLayer & physics.CollisionMask) == 0x0)
                     {
                         continue;
                     }

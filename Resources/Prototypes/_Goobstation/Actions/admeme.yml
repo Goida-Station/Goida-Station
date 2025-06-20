@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: ActionVaporizeFreeman
@@ -11,7 +11,7 @@
   description: That will be all.
   components:
   - type: EntityTargetAction
-    useDelay: 65
+    useDelay: 3
     itemIconStyle: BigAction
     whitelist:
       components:
@@ -36,7 +36,7 @@
     sprite: _Goobstation/Wizard/actions.rsi # Todo - Unique sprite?
     state: jaunt
   - type: InstantAction
-    useDelay: 65
+    useDelay: 3
     raiseOnUser: true
     checkCanInteract: false
     event: !type:PolymorphSpellEvent
@@ -52,8 +52,8 @@
   description: Is it really that time again?
   components:
   - type: WorldTargetAction
-    useDelay: 65
-    range: 65
+    useDelay: 1
+    range: 48
     itemIconStyle: BigAction
     checkCanAccess: false
     repeat: false
@@ -70,10 +70,10 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 65
+    useDelay: 1
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
-      path: /Audio/_Goobstation/Wizard/timeparadox65.ogg
+      path: /Audio/_Goobstation/Wizard/timeparadox2.ogg
     icon:
       sprite: _Goobstation/Wizard/actions.rsi # Todo - Change this, but idc.
       state: time

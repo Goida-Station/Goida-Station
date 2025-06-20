@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 mail-recipient-mismatch = Recipient name or job does not match.
 mail-invalid-access = Recipient name and job match, but access isn't as expected.
@@ -11,7 +11,7 @@ mail-desc-far = A parcel of mail. You can't make out who it's addressed to from 
 mail-desc-close = A parcel of mail addressed to {CAPITALIZE($name)}, {$job}.
 mail-desc-fragile = It has a [color=red]red fragile label[/color].
 mail-desc-priority = The anti-tamper lock's [color=yellow]yellow priority tape[/color] is active. Better deliver it on time!
-mail-desc-priority-inactive = The anti-tamper lock's [color=#65]yellow priority tape[/color] is inactive.
+mail-desc-priority-inactive = The anti-tamper lock's [color=#886600]yellow priority tape[/color] is inactive.
 mail-unlocked = Anti-tamper system unlocked.
 mail-unlocked-by-emag = Anti-tamper system *BZZT*.
 mail-unlocked-reward = Anti-tamper system unlocked. {$bounty} spesos have been added to logistics' account.
@@ -21,7 +21,7 @@ mail-penalty-expired = DELIVERY PAST DUE. LOGISTICS BANK ACCOUNT PENALIZED BY {$
 mail-item-name-unaddressed = mail
 mail-item-name-addressed = mail ({$recipient})
 
-command-mailto-description = Queue a parcel to be delivered to an entity. Example usage: `mailto 65 65 false false`. The target container's contents will be transferred to an actual mail parcel.
+command-mailto-description = Queue a parcel to be delivered to an entity. Example usage: `mailto 1234 5678 false false`. The target container's contents will be transferred to an actual mail parcel.
 ### Frontier: add is-large description
 command-mailto-help = Usage: {$command} <recipient entityUid> <container entityUid> [is-fragile: true or false] [is-priority: true or false] [is-large: true or false, optional]
 command-mailto-no-mailreceiver = Target recipient entity does not have a {$requiredComponent}.

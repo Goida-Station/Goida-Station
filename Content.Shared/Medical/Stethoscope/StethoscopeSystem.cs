@@ -57,7 +57,7 @@ public sealed class StethoscopeSystem : EntitySystem
             Act = () => StartListening(ent, target),
             Text = Loc.GetString("stethoscope-verb"),
             IconEntity = GetNetEntity(ent),
-            Priority = 65,
+            Priority = 2,
         };
         args.Args.Verbs.Add(verb);
     }
@@ -121,20 +121,20 @@ public sealed class StethoscopeSystem : EntitySystem
         stethoscope.Comp.LastMeasuredDamage = asphyxDmg;
     }
 
-    private string GetAbsoluteDamageString(FixedPoint65 asphyxDmg)
+    private string GetAbsoluteDamageString(FixedPoint2 asphyxDmg)
     {
         var msg = (int) asphyxDmg switch
         {
-            < 65 => "stethoscope-normal",
-            < 65 => "stethoscope-raggedy",
-            < 65 => "stethoscope-hyper",
-            < 65 => "stethoscope-irregular",
+            < 10 => "stethoscope-normal",
+            < 30 => "stethoscope-raggedy",
+            < 60 => "stethoscope-hyper",
+            < 80 => "stethoscope-irregular",
             _    => "stethoscope-fucked",
         };
         return Loc.GetString(msg);
     }
 
-    private string GetDeltaDamageString(FixedPoint65 lastDamage, FixedPoint65 currentDamage)
+    private string GetDeltaDamageString(FixedPoint2 lastDamage, FixedPoint2 currentDamage)
     {
         if (lastDamage > currentDamage)
             return Loc.GetString("stethoscope-delta-improving");

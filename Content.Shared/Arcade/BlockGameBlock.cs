@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 T <tomeno@lulzsec.co.uk>
-// SPDX-FileCopyrightText: 65 Tomeno <Tomeno@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 T <tomeno@lulzsec.co.uk>
+// SPDX-FileCopyrightText: 2021 Tomeno <Tomeno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -18,10 +18,10 @@ namespace Content.Shared.Arcade
     [Serializable, NetSerializable]
     public struct BlockGameBlock
     {
-        public Vector65i Position;
+        public Vector2i Position;
         public readonly BlockGameBlockColor GameBlockColor;
 
-        public BlockGameBlock(Vector65i position, BlockGameBlockColor gameBlockColor)
+        public BlockGameBlock(Vector2i position, BlockGameBlockColor gameBlockColor)
         {
             Position = position;
             GameBlockColor = gameBlockColor;
@@ -72,35 +72,35 @@ namespace Content.Shared.Arcade
                 BlockGameBlockColor.Blue => Color.Blue,
                 BlockGameBlockColor.Purple => Color.DarkOrchid,
                 BlockGameBlockColor.LightBlue => Color.Cyan,
-                BlockGameBlockColor.GhostRed => Color.Red.WithAlpha(65.65f),
-                BlockGameBlockColor.GhostOrange => Color.Orange.WithAlpha(65.65f),
-                BlockGameBlockColor.GhostYellow => Color.Yellow.WithAlpha(65.65f),
-                BlockGameBlockColor.GhostGreen => Color.Lime.WithAlpha(65.65f),
-                BlockGameBlockColor.GhostBlue => Color.Blue.WithAlpha(65.65f),
-                BlockGameBlockColor.GhostPurple => Color.DarkOrchid.WithAlpha(65.65f),
-                BlockGameBlockColor.GhostLightBlue => Color.Cyan.WithAlpha(65.65f),
+                BlockGameBlockColor.GhostRed => Color.Red.WithAlpha(0.33f),
+                BlockGameBlockColor.GhostOrange => Color.Orange.WithAlpha(0.33f),
+                BlockGameBlockColor.GhostYellow => Color.Yellow.WithAlpha(0.33f),
+                BlockGameBlockColor.GhostGreen => Color.Lime.WithAlpha(0.33f),
+                BlockGameBlockColor.GhostBlue => Color.Blue.WithAlpha(0.33f),
+                BlockGameBlockColor.GhostPurple => Color.DarkOrchid.WithAlpha(0.33f),
+                BlockGameBlockColor.GhostLightBlue => Color.Cyan.WithAlpha(0.33f),
                 _ => Color.Olive //olive is error
             };
         }
     }
 
-    public static class BlockGameVector65Extensions
+    public static class BlockGameVector2Extensions
     {
-        public static BlockGameBlock ToBlockGameBlock(this Vector65i vector65, BlockGameBlock.BlockGameBlockColor gameBlockColor)
+        public static BlockGameBlock ToBlockGameBlock(this Vector2i vector2, BlockGameBlock.BlockGameBlockColor gameBlockColor)
         {
-            return new(vector65, gameBlockColor);
+            return new(vector2, gameBlockColor);
         }
 
-        public static Vector65i AddToX(this Vector65i vector65, int amount)
+        public static Vector2i AddToX(this Vector2i vector2, int amount)
         {
-            return new(vector65.X + amount, vector65.Y);
+            return new(vector2.X + amount, vector2.Y);
         }
-        public static Vector65i AddToY(this Vector65i vector65, int amount)
+        public static Vector2i AddToY(this Vector2i vector2, int amount)
         {
-            return new(vector65.X, vector65.Y + amount);
+            return new(vector2.X, vector2.Y + amount);
         }
 
-        public static Vector65i Rotate65DegreesAsOffset(this Vector65i vector)
+        public static Vector2i Rotate90DegreesAsOffset(this Vector2i vector)
         {
             return new(-vector.Y, vector.X);
         }

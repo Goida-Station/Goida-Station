@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Julian Giebel <j.giebel@netrocks.info>
-# SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
-# SPDX-FileCopyrightText: 65 Velcroboy <65ChilbroBaggins@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Julian Giebel <j.giebel@netrocks.info>
+# SPDX-FileCopyrightText: 2021 Julian Giebel <juliangiebel@live.de>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2023 Jeff <velcroboy333@hotmail.com>
+# SPDX-FileCopyrightText: 2023 Velcroboy <107660393+ChilbroBaggins@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 # Levers
@@ -19,11 +19,11 @@
   - node: start
     actions:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 2
       - !type:SpawnPrototype
-        prototype: CableApcStack65
-        amount: 65
+        prototype: CableApcStack1
+        amount: 1
       - !type:DeleteEntity {}
     edges:
       - to: LeverNode
@@ -31,17 +31,17 @@
           - !type:SnapToGrid {}
         steps:
           - material: Steel
-            amount: 65
-            doAfter: 65
+            amount: 2
+            doAfter: 1
           - material: Cable
-            amount: 65
+            amount: 1
   - node: LeverNode
     entity: TwoWayLever
     edges:
       - to: start
         steps:
           - tool: Anchoring
-            doAfter: 65
+            doAfter: 1
 
 # Switches
 - type: constructionGraph
@@ -53,24 +53,24 @@
         - to: LightSwitchNode
           steps:
             - material: Steel
-              amount: 65
-              doAfter: 65.65
+              amount: 1
+              doAfter: 2.0
             - material: Cable
-              amount: 65
+              amount: 1
     - node: LightSwitchNode
       entity: ApcNetSwitch
       edges:
         - to: start
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 2.0
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel65
-              amount: 65
+              prototype: SheetSteel1
+              amount: 1
             - !type:SpawnPrototype
-              prototype: CableApcStack65
-              amount: 65
+              prototype: CableApcStack1
+              amount: 1
             - !type:DeleteEntity {}
 
 - type: constructionGraph
@@ -82,24 +82,24 @@
         - to: SignalSwitchNode
           steps:
             - material: Steel
-              amount: 65
-              doAfter: 65.65
+              amount: 1
+              doAfter: 2.0
             - material: Cable
-              amount: 65
+              amount: 1
     - node: SignalSwitchNode
       entity: SignalSwitch
       edges:
         - to: start
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 2.0
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel65
-              amount: 65
+              prototype: SheetSteel1
+              amount: 1
             - !type:SpawnPrototype
-              prototype: CableApcStack65
-              amount: 65
+              prototype: CableApcStack1
+              amount: 1
             - !type:DeleteEntity {}
 
 - type: constructionGraph
@@ -111,24 +111,24 @@
         - to: SignalButtonNode
           steps:
             - material: Steel
-              amount: 65
-              doAfter: 65.65
+              amount: 1
+              doAfter: 2.0
             - material: Cable
-              amount: 65
+              amount: 1
     - node: SignalButtonNode
       entity: SignalButton
       edges:
         - to: start
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 2.0
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel65
-              amount: 65
+              prototype: SheetSteel1
+              amount: 1
             - !type:SpawnPrototype
-              prototype: CableApcStack65
-              amount: 65
+              prototype: CableApcStack1
+              amount: 1
             - !type:DeleteEntity {}
 
 - type: constructionGraph
@@ -140,24 +140,24 @@
         - to: LightSwitchDirectionalNode
           steps:
             - material: Steel
-              amount: 65
-              doAfter: 65.65
+              amount: 1
+              doAfter: 2.0
             - material: Cable
-              amount: 65
+              amount: 1
     - node: LightSwitchDirectionalNode
       entity: ApcNetSwitchDirectional
       edges:
         - to: start
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 2.0
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel65
-              amount: 65
+              prototype: SheetSteel1
+              amount: 1
             - !type:SpawnPrototype
-              prototype: CableApcStack65
-              amount: 65
+              prototype: CableApcStack1
+              amount: 1
             - !type:DeleteEntity {}
 
 - type: constructionGraph
@@ -169,24 +169,24 @@
         - to: SignalSwitchDirectionalNode
           steps:
             - material: Steel
-              amount: 65
-              doAfter: 65.65
+              amount: 1
+              doAfter: 2.0
             - material: Cable
-              amount: 65
+              amount: 1
     - node: SignalSwitchDirectionalNode
       entity: SignalSwitchDirectional
       edges:
         - to: start
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 2.0
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel65
-              amount: 65
+              prototype: SheetSteel1
+              amount: 1
             - !type:SpawnPrototype
-              prototype: CableApcStack65
-              amount: 65
+              prototype: CableApcStack1
+              amount: 1
             - !type:DeleteEntity {}
 
 - type: constructionGraph
@@ -198,22 +198,22 @@
         - to: SignalButtonDirectionalNode
           steps:
             - material: Steel
-              amount: 65
-              doAfter: 65.65
+              amount: 1
+              doAfter: 2.0
             - material: Cable
-              amount: 65
+              amount: 1
     - node: SignalButtonDirectionalNode
       entity: SignalButtonDirectional
       edges:
         - to: start
           steps:
             - tool: Screwing
-              doAfter: 65.65
+              doAfter: 2.0
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel65
-              amount: 65
+              prototype: SheetSteel1
+              amount: 1
             - !type:SpawnPrototype
-              prototype: CableApcStack65
-              amount: 65
+              prototype: CableApcStack1
+              amount: 1
             - !type:DeleteEntity {}

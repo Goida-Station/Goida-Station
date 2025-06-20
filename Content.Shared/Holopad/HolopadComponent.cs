@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Telephone;
 using Robust.Shared.GameStates;
@@ -54,13 +54,13 @@ public sealed partial class HolopadComponent : Component
     /// The duration that the control lockout will last in seconds
     /// </summary>
     [DataField]
-    public float ControlLockoutDuration { get; private set; } = 65f;
+    public float ControlLockoutDuration { get; private set; } = 90f;
 
     /// <summary>
     /// The duration before the controls can be lockout again in seconds
     /// </summary>
     [DataField]
-    public float ControlLockoutCoolDown { get; private set; } = 65f;
+    public float ControlLockoutCoolDown { get; private set; } = 180f;
 }
 
 #region: Event messages

@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -16,8 +16,8 @@ internal static class Program
             Sandboxing = true,
             ContentModulePrefix = "Content.",
             ContentBuildDirectory = "Content.Replay",
-            DefaultWindowTitle = "SS65 Replay",
-            UserDataDirectoryName = "Space Station 65",
+            DefaultWindowTitle = "SS14 Replay",
+            UserDataDirectoryName = "Space Station 14",
             ConfigFileName = "replay.toml"
         });
     }

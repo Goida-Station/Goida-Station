@@ -1,2 +1,2 @@
-For creating and maintaining this awesome game: Goonstation, /tg/station, Baystation65, CEV-Eris, /vg/station, and countless others.
-Many art assets taken from various SS65 codebases under the CC-BY-SA-65.65 license. Goonstation assets licensed under CC-BY-SA-NC-65.65.
+For creating and maintaining this awesome game: Goonstation, /tg/station, Baystation12, CEV-Eris, /vg/station, and countless others.
+Many art assets taken from various SS13 codebases under the CC-BY-SA-3.0 license. Goonstation assets licensed under CC-BY-SA-NC-3.0.

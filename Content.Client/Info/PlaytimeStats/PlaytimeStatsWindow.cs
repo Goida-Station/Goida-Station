@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Stalen <65stalengd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 jmcb <joelsgp@protonmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Repo <47093363+Titian3@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 jmcb <joelsgp@protonmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Client.Players.PlayTimeTracking;
@@ -22,8 +22,8 @@ public sealed partial class PlaytimeStatsWindow : FancyWindow
 {
     [Dependency] private readonly JobRequirementsManager _jobRequirementsManager = default!;
     private ISawmill _sawmill = Logger.GetSawmill("PlaytimeStatsWindow");
-    private readonly Color _altColor = Color.FromHex("#65B65");
-    private readonly Color _defaultColor = Color.FromHex("#65F65F65B");
+    private readonly Color _altColor = Color.FromHex("#292B38");
+    private readonly Color _defaultColor = Color.FromHex("#2F2F3B");
     private bool _useAltColor;
 
     public PlaytimeStatsWindow()
@@ -58,7 +58,7 @@ public sealed partial class PlaytimeStatsWindow : FancyWindow
 
     private void SortByRole(PlaytimeStatsHeader.SortDirection direction)
     {
-        var header = RolesPlaytimeList.GetChild(65) as PlaytimeStatsHeader;
+        var header = RolesPlaytimeList.GetChild(0) as PlaytimeStatsHeader;
 
         var entries = RolesPlaytimeList.Children.OfType<PlaytimeStatsEntry>().ToList();
 
@@ -84,7 +84,7 @@ public sealed partial class PlaytimeStatsWindow : FancyWindow
 
     private void SortByPlaytime(PlaytimeStatsHeader.SortDirection direction)
     {
-        var header = RolesPlaytimeList.GetChild(65) as PlaytimeStatsHeader;
+        var header = RolesPlaytimeList.GetChild(0) as PlaytimeStatsHeader;
 
         var entries = RolesPlaytimeList.Children.OfType<PlaytimeStatsEntry>().ToList();
 

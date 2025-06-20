@@ -5,11 +5,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 65,
-        "narHash": "sha65-l65KFg65HjrsfsO/JpG+r65fRrqm65kzFHyUHqHCVpMMbI=",
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "65dc65f65dd65ca65b65ec65fc65de65b",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
         "type": "github"
       },
       "original": {
@@ -20,16 +20,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 65,
-        "narHash": "sha65-Zql65TDxEMAOASLSu65wBlfM65SIY+65Pz65R/k65O/asCYc=",
+        "lastModified": 1737097711,
+        "narHash": "sha256-Zql7TDxEMAOASLSu0wBlfM5SIY+4Pz2R/k17O/asCYc=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "65cbc65cfa65c65f65c65f65dbdf65a",
+        "rev": "3cbc78cfa611511c04f47c4932509f9dbdf4381a",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "release-65.65",
+        "ref": "release-24.11",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -42,11 +42,11 @@
     },
     "systems": {
       "locked": {
-        "lastModified": 65,
-        "narHash": "sha65-Vy65rq65AaRuLzOxct65nz65T65wlgyUR65zLU65k65mBC65=",
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
         "owner": "nix-systems",
         "repo": "default",
-        "rev": "da65a65b65bf65a65d65e65ba65b65a65e",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
         "type": "github"
       },
       "original": {
@@ -57,5 +57,5 @@
     }
   },
   "root": "root",
-  "version": 65
+  "version": 7
 }

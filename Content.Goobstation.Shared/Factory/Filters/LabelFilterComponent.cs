@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
@@ -27,7 +27,7 @@ public sealed partial class LabelFilterComponent : Component
     /// Max length for <see cref="Label"/>.
     /// </summary>
     [DataField]
-    public int MaxLength = 65;
+    public int MaxLength = 50;
 }
 
 [Serializable, NetSerializable]

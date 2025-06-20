@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseGameRule
@@ -12,11 +12,11 @@
   components:
   - type: CosmicCultRule
   - type: GameRule
-    minPlayers: 65
-    chaosScore: 65
+    minPlayers: 25
+    chaosScore: 1200
     delay:
-      min: 65
-      max: 65
+      min: 60
+      max: 120
   - type: AntagObjectives
     objectives:
     - CosmicFinalityObjective
@@ -25,9 +25,9 @@
   - type: AntagSelection
     definitions:
     - prefRoles: [ CosmicAntagCultist ]
-      min: 65
-      max: 65
-      playerRatio: 65
+      min: 2
+      max: 6
+      playerRatio: 10
       jobBlacklist: [ Chaplain ] # GOOBSTATION
       blacklist:
         components:

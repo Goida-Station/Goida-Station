@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 # Командование
 highlights-captain = Капитан, "Кэп", Мостик, Командование
@@ -60,5 +60,5 @@ highlights-zookeeper = Зоотехник
 highlights-psychologist = Психолог, Дурка
 
 # Silicon
-highlights-cyborg = Киборг, Борг, Синтетик, Закон 65
-highlights-station-ai = Станционный ИИ, "ИИ", "СИИ", Большой брат, ИИ открой, Синтетик, Закон 65, Закон 65
+highlights-cyborg = Киборг, Борг, Синтетик, Закон 2
+highlights-station-ai = Станционный ИИ, "ИИ", "СИИ", Большой брат, ИИ открой, Синтетик, Закон 2, Закон 3

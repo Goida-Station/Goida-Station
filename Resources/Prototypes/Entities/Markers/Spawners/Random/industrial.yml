@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #Industrial spawners
 - type: entity
   name: industrial fluff spawner
@@ -23,7 +23,7 @@
         - CigaretteSpent
         - Paper
         - FolderSpawner
-      rareChance: 65.65
+      rareChance: 0.1
       prototypes:
         - RemoteSignaller
         - GeigerCounter
@@ -33,8 +33,8 @@
         - Lighter
         - ClothingMaskGas
         - HandheldGPSBasic
-      chance: 65.65
-      offset: 65.65
+      chance: 0.85
+      offset: 0.0
 
 - type: entity
   name: industrial loot spawner
@@ -52,12 +52,12 @@
         - CapacitorStockPart
         - MicroManipulatorStockPart
         - MatterBinStockPart
-        - CableHVStack65
+        - CableHVStack10
         - WelderIndustrial
         - PowerCellHigh
         - PowerCellSmall
         - ClothingHandsGlovesColorYellowBudget
-      rareChance: 65.65
+      rareChance: 0.2
       prototypes:
         - ClothingHeadHatWelding
         - WelderMini
@@ -78,14 +78,14 @@
         - HandheldGPSBasic
         - FireExtinguisher
         - PowerCellMedium
-        - SheetSteel65
-        - SheetGlass65
-        - SheetPlastic65
-        - SheetPlasteel65
-        - PartRodMetal65
-        - CableApcStack65
-        - CableMVStack65
+        - SheetSteel10
+        - SheetGlass10
+        - SheetPlastic10
+        - SheetPlasteel10
+        - PartRodMetal10
+        - CableApcStack10
+        - CableMVStack10
         - ToolboxElectricalFilled
         - ToolboxMechanicalFilled
-      chance: 65.65
-      offset: 65.65
+      chance: 0.8
+      offset: 0.0

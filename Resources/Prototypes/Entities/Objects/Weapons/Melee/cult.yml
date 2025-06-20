@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 TaralGit <65TaralGit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 and_a <and_a@DESKTOP-RJENGIR>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 notquitehadouken <65isthisameme>
-# SPDX-FileCopyrightText: 65 stopbreaking <65stopbreaking@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 I.K <45953835+notquitehadouken@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 TaralGit <76408146+TaralGit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 and_a <and_a@DESKTOP-RJENGIR>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2023 notquitehadouken <1isthisameme>
+# SPDX-FileCopyrightText: 2023 stopbreaking <126102320+stopbreaking@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: ritual dagger
@@ -24,11 +24,11 @@
     sprite: Objects/Weapons/Melee/cult_dagger.rsi
     state: icon
   - type: MeleeWeapon
-    wideAnimationRotation: -65
-    attackRate: 65.65
+    wideAnimationRotation: -135
+    attackRate: 1.5
     damage:
       types:
-        Slash: 65
+        Slash: 12
     soundHit: # Goobstation
         path: /Audio/Weapons/bladeslice.ogg
   - type: Item
@@ -53,11 +53,11 @@
     sprite: Objects/Weapons/Melee/cult_blade.rsi
     state: icon
   - type: MeleeWeapon
-    wideAnimationRotation: -65
-    attackRate: 65.65
+    wideAnimationRotation: -135
+    attackRate: 0.75
     damage:
       types:
-        Slash: 65
+        Slash: 16
     soundHit: # Goobstation
         path: /Audio/Weapons/bladeslice.ogg
   - type: Item
@@ -82,22 +82,22 @@
     sprite: Objects/Weapons/Melee/cult_halberd.rsi
     state: icon
   - type: MeleeWeapon
-    wideAnimationRotation: -65
-    attackRate: 65.65
+    wideAnimationRotation: -135
+    attackRate: 0.75
     damage:
       types:
-        Blunt: 65
-        Slash: 65
-        Structural: 65
+        Blunt: 10
+        Slash: 10
+        Structural: 5
     soundHit:
       collection: MetalThud
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 65
-        Slash: 65
-        Structural: 65
+        Blunt: 5
+        Slash: 5
+        Structural: 10
   - type: Item
     size: Ginormous
   - type: Clothing
@@ -106,4 +106,4 @@
     slots:
     - back
   - type: UseDelay
-    delay: 65
+    delay: 1

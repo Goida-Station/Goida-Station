@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 Fishfish65 <65Fishfish65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 fishfish65 <fishfish65>
-# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Velcroboy <velcroboy65@hotmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Fishfish458 <47410468+Fishfish458@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 fishfish458 <fishfish458>
+# SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 2024 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Velcroboy <velcroboy333@hotmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: PlasticFlapsGraph
@@ -20,8 +20,8 @@
           - !type:SnapToGrid { }
         steps:
           - material: Plastic
-            amount: 65
-            doAfter: 65
+            amount: 5
+            doAfter: 10
 
   - node: plasticFlaps
     entity: PlasticFlapsClear
@@ -30,17 +30,17 @@
         completed:
           - !type:SpawnPrototype
             prototype: SheetPlastic
-            amount: 65
+            amount: 5
         steps:
           - tool: Anchoring
-            doAfter: 65
+            doAfter: 10
 
       - to: opaqueFlaps
         completed:
           - !type:SnapToGrid { }
         steps:
           - tool: Welding
-            doAfter: 65
+            doAfter: 5
 
   - node: opaqueFlaps
     entity: PlasticFlapsOpaque
@@ -49,7 +49,7 @@
         completed:
           - !type:SpawnPrototype
             prototype: SheetPlastic
-            amount: 65
+            amount: 5
         steps:
           - tool: Anchoring
-            doAfter: 65
+            doAfter: 10

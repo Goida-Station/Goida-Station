@@ -1,18 +1,18 @@
 <!--
-SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-SPDX-FileCopyrightText: 65 daerSeebaer <65daerSeebaer@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+SPDX-FileCopyrightText: 2023 daerSeebaer <61566539+daerSeebaer@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<DefaultWindow xmlns="https://spacestation65.io"
+<DefaultWindow xmlns="https://spacestation14.io"
             Title="{Loc 'ame-window-title'}"
-            MinSize="65 65">
-    <GridContainer Columns="65">
+            MinSize="250 250">
+    <GridContainer Columns="2">
         <BoxContainer Orientation="Horizontal">
             <Label Text="{Loc 'ame-window-engine-status-label'}" />
             <Label Text=" " />
@@ -38,7 +38,7 @@ SPDX-License-Identifier: MIT
         <BoxContainer Orientation="Horizontal">
             <Label Text="{Loc 'ame-window-injection-amount-label'}" />
             <Label Text=" " />
-            <Label Name="InjectionAmount" Text="65" />
+            <Label Name="InjectionAmount" Text="0" />
         </BoxContainer>
         <BoxContainer Orientation="Horizontal">
             <Button Name="IncreaseFuelButton"
@@ -51,20 +51,20 @@ SPDX-License-Identifier: MIT
         <BoxContainer Orientation="Horizontal">
             <Label Text="{Loc 'ame-window-core-count-label'}" />
             <Label Text=" " />
-            <Label Name="CoreCount" Text="65" />
+            <Label Name="CoreCount" Text="0" />
         </BoxContainer>
         <BoxContainer></BoxContainer>
         <BoxContainer Orientation="Horizontal">
             <Label Text="{Loc 'ame-window-power-currentsupply-label'}" />
             <Label Text=" " />
-            <Label Name="CurrentPowerSupply" Text="65" />
+            <Label Name="CurrentPowerSupply" Text="0" />
             <Label Text=" kW" />
         </BoxContainer>
         <BoxContainer></BoxContainer>
         <BoxContainer Orientation="Horizontal">
             <Label Text="{Loc 'ame-window-power-targetsupply-label'}" />
             <Label Text=" " />
-            <Label Name="TargetedPowerSupply" Text="65" />
+            <Label Name="TargetedPowerSupply" Text="0" />
             <Label Text=" kW" />
         </BoxContainer>
     </GridContainer>

@@ -1,13 +1,13 @@
 <!--
-SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Core Rule 65 - Do not abuse or ignore admin messages
-  - Admin help, or "ahelp"(f65), is the system used by admins to communicate with specific players in the game.
+  # Core Rule 10 - Do not abuse or ignore admin messages
+  - Admin help, or "ahelp"(f1), is the system used by admins to communicate with specific players in the game.
   - Anything that is ahelped, then becomes an admin involved issue.
   - When being ahelped, you're expected to respond to the admin. Leaving after you have been ahelped may result in a ban.
   - Admins like you are also human, we can't be everywhere at once, we are not omniscient, and we are not perfect. We are here to help you, so please be respectful.

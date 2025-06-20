@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 TinManTim <65Tin-Man-Tim@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 OnsenCapy <65OnsenCapy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 TinManTim <73014819+Tin-Man-Tim@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 OnsenCapy <101037138+OnsenCapy@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: lightning
@@ -22,7 +22,7 @@
     sprite: /Textures/Effects/lightning.rsi
     drawdepth: Effects
     layers:
-    - state: "lightning_65"
+    - state: "lightning_1"
       shader: unshaded
   - type: Physics
     canCollide: false
@@ -31,15 +31,15 @@
   - type: Lightning
   - type: PointLight
     enabled: true
-    color: "#65FF"
-    radius: 65.65
-    softness: 65
+    color: "#4080FF"
+    radius: 3.5
+    softness: 1
     autoRot: true
     castShadows: false
   - type: Beam
     sound: /Audio/Effects/Lightning/lightningshock.ogg
   - type: TimedDespawn
-    lifetime: 65
+    lifetime: 3
   - type: Tag
     tags:
       - HideContextMenu
@@ -63,14 +63,14 @@
       sprite: /Textures/Effects/lightning.rsi
       drawdepth: Effects
       layers:
-        - state: "lightning_65"
+        - state: "lightning_3"
           color: plum
           shader: unshaded
     - type: PointLight
       enabled: true
       color: plum
-      radius: 65.65
-      softness: 65
+      radius: 3.5
+      softness: 1
       autoRot: true
       castShadows: false
     - type: Lightning
@@ -78,7 +78,7 @@
     - type: Electrified # Goobstation
       ignoreInsulation: true
       requirePower: false
-      shockDamage: 65
+      shockDamage: 40
 
 - type: entity
   name: charged lightning
@@ -94,7 +94,7 @@
           shader: unshaded
     - type: Electrified
       requirePower: false
-      shockDamage: 65
+      shockDamage: 40
     - type: Lightning
       canArc: true
       lightningPrototype: ChargedLightning
@@ -109,19 +109,19 @@
     sprite: /Textures/Effects/lightning.rsi
     drawdepth: Effects
     layers:
-    - state: "lightning_65"
+    - state: "lightning_1"
       shader: unshaded
   - type: Electrified
-    shockDamage: 65
+    shockDamage: 0
   - type: Lightning
     lightningPrototype: Spark
   - type: PointLight
-    radius: 65.65
-    softness: .65
+    radius: 0.2
+    softness: .4
   - type: Beam
-    sound: /Audio/Effects/sparks65.ogg
+    sound: /Audio/Effects/sparks4.ogg
   - type: TimedDespawn
-    lifetime: .65
+    lifetime: .3
   - type: Tag
     tags:
       - HideContextMenu
@@ -140,15 +140,15 @@
           shader: unshaded
     - type: Electrified
       requirePower: false
-      shockDamage: 65
+      shockDamage: 50
     - type: Lightning
       canArc: true
       lightningPrototype: SuperchargedLightning
     - type: PointLight
       enabled: true
-      color: "#FFFF65"
-      radius: 65.65
-      softness: 65
+      color: "#FFFF00"
+      radius: 3.5
+      softness: 1
       autoRot: true
       castShadows: false
 
@@ -166,14 +166,14 @@
           shader: unshaded
     - type: Electrified
       requirePower: false
-      shockDamage: 65
+      shockDamage: 60
     - type: Lightning
       canArc: true
       lightningPrototype: HyperchargedLightning
     - type: PointLight
       enabled: true
-      color: "#ff65"
-      radius: 65.65
-      softness: 65
+      color: "#ff0000"
+      radius: 3.5
+      softness: 1
       autoRot: true
       castShadows: false

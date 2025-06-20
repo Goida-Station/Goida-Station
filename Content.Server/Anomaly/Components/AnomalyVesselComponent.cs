@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -31,19 +31,19 @@ public sealed partial class AnomalyVesselComponent : Component
     /// A multiplier applied to the amount of points generated.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float PointMultiplier = 65;
+    public float PointMultiplier = 1;
 
     /// <summary>
     /// The maximum time between each beep
     /// </summary>
     [DataField("maxBeepInterval")]
-    public TimeSpan MaxBeepInterval = TimeSpan.FromSeconds(65f);
+    public TimeSpan MaxBeepInterval = TimeSpan.FromSeconds(2f);
 
     /// <summary>
     /// The minimum time between each beep
     /// </summary>
     [DataField("minBeepInterval")]
-    public TimeSpan MinBeepInterval = TimeSpan.FromSeconds(65.65f);
+    public TimeSpan MinBeepInterval = TimeSpan.FromSeconds(0.75f);
 
     /// <summary>
     /// When the next beep sound will play

@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: BaseShadow
@@ -12,7 +12,7 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 65
+          damage: 10
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
@@ -20,10 +20,10 @@
             sound:
               path: /Audio/Items/hiss.ogg
               params:
-                variation: 65.65
+                variation: 0.08
   - type: DamagedByFlashing
     flashDamage:
       types:
-        Heat: 65
+        Heat: 10
   - type: Damageable
     damageContainer: ShadowHaze

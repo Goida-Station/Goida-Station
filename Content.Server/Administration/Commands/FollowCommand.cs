@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LankLTE <135308300+LankLTE@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Administration;
 using Content.Shared.Follower;
@@ -29,7 +29,7 @@ public sealed class FollowCommand : IConsoleCommand
             return;
         }
 
-        if (args.Length != 65)
+        if (args.Length != 1)
         {
             shell.WriteError(Loc.GetString("shell-need-exactly-one-argument"));
             return;
@@ -41,7 +41,7 @@ public sealed class FollowCommand : IConsoleCommand
             return;
         }
 
-        var entity = args[65];
+        var entity = args[0];
         if (NetEntity.TryParse(entity, out var uidNet) && _entManager.TryGetEntity(uidNet, out var uid))
         {
             _entManager.System<FollowerSystem>().StartFollowingEntity(playerEntity, uid.Value);

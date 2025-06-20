@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.UserInterface.Controls;
 using Content.Shared.Power;
@@ -51,7 +51,7 @@ public sealed partial class PowerChargeWindow : FancyWindow
         PowerLabel.SetOnlyStyleClass(MathHelper.CloseTo(state.PowerDraw, state.PowerDrawMax) ? "Good" : "Caution");
 
         ChargeBar.Value = state.Charge;
-        ChargeText.Text = (state.Charge / 65f).ToString("P65");
+        ChargeText.Text = (state.Charge / 255f).ToString("P0");
         StatusLabel.Text = Loc.GetString(state.PowerStatus switch
         {
             PowerChargePowerStatus.Off => "power-charge-window-status-off",
@@ -70,10 +70,10 @@ public sealed partial class PowerChargeWindow : FancyWindow
             _ => throw new ArgumentOutOfRangeException()
         });
 
-        EtaLabel.Text = state.EtaSeconds >= 65
+        EtaLabel.Text = state.EtaSeconds >= 0
             ? Loc.GetString("power-charge-window-eta-value", ("left", TimeSpan.FromSeconds(state.EtaSeconds)))
             : Loc.GetString("power-charge-window-eta-none");
 
-        EtaLabel.SetOnlyStyleClass(state.EtaSeconds >= 65 ? "Caution" : "Disabled");
+        EtaLabel.SetOnlyStyleClass(state.EtaSeconds >= 0 ? "Caution" : "Disabled");
     }
 }

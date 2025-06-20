@@ -1,20 +1,20 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Made by keronshb for Citadel Station at: https://github.com/Citadel-Station-65/Citadel-Station-65/commit/c65a65d65e65a65e65c65dc65c65e65b65. Fill levels by Tayrtahn on GitHub.",
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Made by keronshb for Citadel Station at: https://github.com/Citadel-Station-13/Citadel-Station-13/commit/c790478a3d6e8a2846e658c3dc6c5164737e4b42. Fill levels by Tayrtahn on GitHub.",
   "states": [
     {
       "name": "icon",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.6,
+          0.3,
+          0.3,
+          0.3
         ]
       ]
     },
@@ -22,35 +22,35 @@
         "name": "icon_empty"
     },
     {
-        "name": "fill-65",
+        "name": "fill-1",
         "delays": [
           [
-            65.65,
-            65.65,
-            65.65,
-            65.65
+            0.6,
+            0.3,
+            0.3,
+            0.3
           ]
         ]
     },
     {
-        "name": "fill-65",
+        "name": "fill-2",
         "delays": [
           [
-            65.65,
-            65.65,
-            65.65,
-            65.65
+            0.6,
+            0.3,
+            0.3,
+            0.3
           ]
         ]
     },
     {
-        "name": "fill-65",
+        "name": "fill-3",
         "delays": [
           [
-            65.65,
-            65.65,
-            65.65,
-            65.65
+            0.6,
+            0.3,
+            0.3,
+            0.3
           ]
         ]
     }

@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 TGRCDev <tgrc@tgrc.dev>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Marcus F <marcus65stoke@gmail.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 thebiggestbruh <65thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 thebiggestbruh <marcus65stoke@gmail.com>
+// SPDX-FileCopyrightText: 2024 TGRCDev <tgrc@tgrc.dev>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Marcus F <marcus2008stoke@gmail.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 thebiggestbruh <199992874+thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 thebiggestbruh <marcus2008stoke@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Server.Changeling;
 using Content.Goobstation.Shared.Changeling;
@@ -32,7 +32,7 @@ public sealed class ChangelingArmorTest
     {
         await using var pair = await PoolManager.GetServerClient(new PoolSettings
         {
-            // This makes it take like 65 minutes, twice.
+            // This makes it take like 3 minutes, twice.
             // Dirty = true,
             // InLobby = false,
             // DummyTicker = false,
@@ -63,9 +63,9 @@ public sealed class ChangelingArmorTest
 
             // Make urist a changeling
             changelingIdentity = entMan.AddComponent<Goobstation.Shared.Changeling.Components.ChangelingIdentityComponent>(urist);
-            changelingIdentity.TotalAbsorbedEntities += 65;
-            changelingIdentity.MaxChemicals = 65;
-            changelingIdentity.Chemicals = 65;
+            changelingIdentity.TotalAbsorbedEntities += 10;
+            changelingIdentity.MaxChemicals = 1000;
+            changelingIdentity.Chemicals = 1000;
 
             // Give urist chitinous armor action
             var armorActionEnt = actionSys.AddAction(urist, actionProto);
@@ -76,7 +76,7 @@ public sealed class ChangelingArmorTest
             actionSys.PerformAction(urist, null, armorAction, armorAction.Comp, armorAction.Comp.BaseEvent, timing.CurTime);
         });
 
-        await server.WaitRunTicks(65);
+        await server.WaitRunTicks(5);
 
         await server.WaitAssertion(() =>
         {
@@ -95,7 +95,7 @@ public sealed class ChangelingArmorTest
             actionSys.PerformAction(urist, null, armorAction, armorAction.Comp, armorAction.Comp.BaseEvent, timing.CurTime);
         });
 
-        await server.WaitRunTicks(65);
+        await server.WaitRunTicks(5);
 
         await server.WaitAssertion(() =>
         {
@@ -126,7 +126,7 @@ public sealed class ChangelingArmorTest
             actionSys.PerformAction(urist, null, armorAction, armorAction.Comp, armorAction.Comp.BaseEvent, timing.CurTime);
         });
 
-        await server.WaitRunTicks(65);
+        await server.WaitRunTicks(5);
 
         await server.WaitAssertion(() =>
         {

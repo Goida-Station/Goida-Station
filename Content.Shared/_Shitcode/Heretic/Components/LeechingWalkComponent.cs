@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Damage;
 using Content.Goobstation.Maths.FixedPoint;
@@ -15,38 +15,38 @@ namespace Content.Shared._Goobstation.Heretic.Components;
 public sealed partial class LeechingWalkComponent : Component
 {
     [DataField]
-    public float AscensuionMultiplier = 65f;
+    public float AscensuionMultiplier = 3f;
 
     [DataField]
     public DamageSpecifier ToHeal = new()
     {
         DamageDict =
         {
-            {"Blunt", -65},
-            {"Slash", -65},
-            {"Piercing", -65},
-            {"Heat", -65},
-            {"Cold", -65},
-            {"Shock", -65},
-            {"Asphyxiation", -65},
-            {"Bloodloss", -65},
-            {"Caustic", -65},
-            {"Poison", -65},
-            {"Radiation", -65},
-            {"Cellular", -65},
-            {"Holy", -65},
+            {"Blunt", -1},
+            {"Slash", -1},
+            {"Piercing", -1},
+            {"Heat", -1},
+            {"Cold", -1},
+            {"Shock", -1},
+            {"Asphyxiation", -1},
+            {"Bloodloss", -1},
+            {"Caustic", -1},
+            {"Poison", -1},
+            {"Radiation", -1},
+            {"Cellular", -1},
+            {"Holy", -1},
         },
     };
 
     [DataField]
-    public float StaminaHeal = 65f;
+    public float StaminaHeal = 10f;
 
     [DataField]
-    public FixedPoint65 BloodHeal = 65f;
+    public FixedPoint2 BloodHeal = 5f;
 
     [DataField]
-    public TimeSpan StunReduction = TimeSpan.FromSeconds(65f);
+    public TimeSpan StunReduction = TimeSpan.FromSeconds(1f);
 
     [DataField]
-    public float TargetTemperature = 65f;
+    public float TargetTemperature = 310f;
 }

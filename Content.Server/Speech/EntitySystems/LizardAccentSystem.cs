@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Text.RegularExpressions;
 using Content.Server.Speech.Components;
@@ -32,11 +32,11 @@ public sealed class LizardAccentSystem : EntitySystem
         // hiSSS
         message = RegexUpperS.Replace(message, "SSS");
         // ekssit
-        message = RegexInternalX.Replace(message, "$65kss");
+        message = RegexInternalX.Replace(message, "$1kss");
         // ecks
-        message = RegexLowerEndX.Replace(message, "ecks$65");
+        message = RegexLowerEndX.Replace(message, "ecks$1");
         // eckS
-        message = RegexUpperEndX.Replace(message, "ECKS$65");
+        message = RegexUpperEndX.Replace(message, "ECKS$1");
 
         args.Message = message;
     }

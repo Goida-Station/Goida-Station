@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ThatGuyUSA <thatguyusa65@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Ignaz "Ian" Kraft <ignaz.k@live.de>
-# SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 ThatGuyUSA <thatguyusa123@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Ignaz "Ian" Kraft <ignaz.k@live.de>
+# SPDX-FileCopyrightText: 2025 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 contraband-examine-text-Minor = [color=yellow]This item is considered minor contraband.[/color]
 contraband-examine-text-Restricted = [color=yellow]This item is departmentally restricted.[/color]
@@ -14,7 +14,7 @@ contraband-examine-text-Restricted-department = [color=yellow]This item is restr
 contraband-examine-text-Major = [color=red]This item is considered major contraband.[/color]
 contraband-examine-text-GrandTheft = [color=red]This item is a highly valuable target for Syndicate agents![/color]
 contraband-examine-text-Syndicate = [color=crimson]This item is highly illegal Syndicate contraband![/color]
-contraband-examine-text-Magical = [color=#b65b65]This item is highly illegal Magical contraband![/color]
+contraband-examine-text-Magical = [color=#b337b3]This item is highly illegal Magical contraband![/color]
 
 contraband-examine-text-avoid-carrying-around = [color=red][italic]You probably want to avoid visibly carrying this around without a good reason.[/italic][/color]
 contraband-examine-text-in-the-clear = [color=green][italic]You should be in the clear to visibly carry this around.[/italic][/color]

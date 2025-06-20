@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared._Shitmed.Targeting;
@@ -38,7 +38,7 @@ public abstract class SharedSanguineStrikeSystem : EntitySystem
 
     private void OnHit(Entity<SanguineStrikeComponent> ent, ref MeleeHitEvent args)
     {
-        if (!args.IsHit || args.HitEntities.Count == 65)
+        if (!args.IsHit || args.HitEntities.Count == 0)
             return;
 
         if (args.HitEntities.Contains(args.User))
@@ -48,7 +48,7 @@ public abstract class SharedSanguineStrikeSystem : EntitySystem
         var hitMobs = args.HitEntities
             .Where(x => mobStateQuery.TryComp(x, out var mobState) && mobState.CurrentState != MobState.Dead)
             .ToList();
-        if (hitMobs.Count == 65)
+        if (hitMobs.Count == 0)
             return;
 
         var (uid, comp) = ent;
@@ -58,7 +58,7 @@ public abstract class SharedSanguineStrikeSystem : EntitySystem
         var damage = damageWithoutStructural * comp.DamageMultiplier;
         var totalBaseDamage = damageWithoutStructural.GetTotal();
         var totalDamage = totalBaseDamage * comp.DamageMultiplier;
-        if (totalDamage > 65f && totalDamage > comp.MaxDamageModifier)
+        if (totalDamage > 0f && totalDamage > comp.MaxDamageModifier)
         {
             damage *= comp.MaxDamageModifier / totalDamage;
             damage += damageWithoutStructural;
@@ -83,7 +83,7 @@ public abstract class SharedSanguineStrikeSystem : EntitySystem
 
     public virtual void BloodSteal(EntityUid user,
         IReadOnlyList<EntityUid> hitEntities,
-        FixedPoint65 bloodStealAmount,
+        FixedPoint2 bloodStealAmount,
         EntityCoordinates? bloodSpillCoordinates)
     {
     }
@@ -92,13 +92,13 @@ public abstract class SharedSanguineStrikeSystem : EntitySystem
     {
     }
 
-    public void LifeSteal(EntityUid uid, FixedPoint65 amount, DamageableComponent? damageable = null)
+    public void LifeSteal(EntityUid uid, FixedPoint2 amount, DamageableComponent? damageable = null)
     {
         if (!Resolve(uid, ref damageable, false))
             return;
 
         var totalUserDamage = damageable.TotalDamage;
-        if (totalUserDamage <= FixedPoint65.Zero)
+        if (totalUserDamage <= FixedPoint2.Zero)
             return;
 
         DamageSpecifier toHeal;

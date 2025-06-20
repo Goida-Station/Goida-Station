@@ -1,15 +1,15 @@
 <!--
-SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<BoxContainer xmlns="https://spacestation65.io"
+<BoxContainer xmlns="https://spacestation14.io"
               xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls"
-              Margin="65 65 65 65"
+              Margin="10 10 10 0"
               HorizontalExpand="True"
               Visible="True">
     <PanelContainer StyleClasses="AngleRect" HorizontalExpand="True">
@@ -20,9 +20,9 @@ SPDX-License-Identifier: MIT
                     <RichTextLabel Name="RewardLabel"/>
                     <RichTextLabel Name="ManifestLabel"/>
                 </BoxContainer>
-                <Control MinWidth="65"/>
-                <BoxContainer Orientation="Vertical" MinWidth="65">
-                    <BoxContainer Orientation="Horizontal" MinWidth="65">
+                <Control MinWidth="10"/>
+                <BoxContainer Orientation="Vertical" MinWidth="120">
+                    <BoxContainer Orientation="Horizontal" MinWidth="120">
                         <Button Name="PrintButton"
                                 Text="{Loc 'bounty-console-label-button-text'}"
                                 HorizontalExpand="False"
@@ -34,10 +34,10 @@ SPDX-License-Identifier: MIT
                                 HorizontalAlignment="Right"
                                 StyleClasses="OpenLeft"/>
                     </BoxContainer>
-                    <RichTextLabel Name="IdLabel" HorizontalAlignment="Right" Margin="65 65 65 65"/>
+                    <RichTextLabel Name="IdLabel" HorizontalAlignment="Right" Margin="0 0 5 0"/>
                 </BoxContainer>
             </BoxContainer>
-            <customControls:HSeparator Margin="65 65 65 65"/>
+            <customControls:HSeparator Margin="5 10 5 10"/>
             <BoxContainer>
                 <RichTextLabel Name="DescriptionLabel"/>
             </BoxContainer>

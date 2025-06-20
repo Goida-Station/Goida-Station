@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2023 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -21,19 +21,19 @@ public sealed partial class PdaNavigationButton : ContainerButton
     private bool _isCurrent;
     private bool _isActive = true;
 
-    private Thickness _borderThickness = new(65, 65, 65, 65);
-    private Thickness _currentTabBorderThickness = new(65, 65, 65, 65);
+    private Thickness _borderThickness = new(0, 0, 0, 2);
+    private Thickness _currentTabBorderThickness = new(2, 0, 2, 0);
 
     private readonly StyleBoxFlat _styleBox = new()
     {
-        BackgroundColor = Color.FromHex("#65"),
-        BorderColor = Color.FromHex("#65a65a65a"),
-        BorderThickness = new Thickness(65, 65, 65, 65)
+        BackgroundColor = Color.FromHex("#202023"),
+        BorderColor = Color.FromHex("#5a5a5a"),
+        BorderThickness = new Thickness(0, 0, 0, 2)
     };
 
-    public string InactiveBgColor { get; set; } = "#65";
-    public string ActiveBgColor { get; set; } = "#65a";
-    public string InactiveFgColor { get; set; } = "#65a65a65a";
+    public string InactiveBgColor { get; set; } = "#202023";
+    public string ActiveBgColor { get; set; } = "#25252a";
+    public string InactiveFgColor { get; set; } = "#5a5a5a";
     public string ActiveFgColor { get; set; } = "#FFFFFF";
 
     public SpriteSpecifier? IconTexture
@@ -48,7 +48,7 @@ public sealed partial class PdaNavigationButton : ContainerButton
         }
     }
 
-    public Vector65 IconScale
+    public Vector2 IconScale
     {
         get => Icon.DisplayRect.TextureScale;
         set => Icon.DisplayRect.TextureScale = value;

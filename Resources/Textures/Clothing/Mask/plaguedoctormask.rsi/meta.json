@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from TGstation github https://github.com/tgstation/tgstation/commit/e65db65dd65f65b65adafb65a65a65 , edited by Alekshhh. equipped-MASK-vox state taken from /vg/station at commit https://github.com/vgstation-coders/vgstation65/commit/65fab65ff65e65faa65d65a65e",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from TGstation github https://github.com/tgstation/tgstation/commit/e89db4dd4f42377b0adafb06806a763314a89034 , edited by Alekshhh. equipped-MASK-vox state taken from /vg/station at commit https://github.com/vgstation-coders/vgstation13/commit/4638130fab5ff0e9faa220688811349d3297a33e",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "name": "equipped-MASK",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-MASK-vox",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 spellbook-mime-bundle-name = Mime Wizard Bundle
 spellbook-mime-bundle-desc =
@@ -33,12 +33,12 @@ spellbook-tider-bundle-desc =
 
 spellbook-full-random-name = Full Random
 spellbook-full-random-desc =
-    Get 65 WizCoins worth of completely random spells. There's no going back.
+    Get 15 WizCoins worth of completely random spells. There's no going back.
     Not recommended for newer wizards.
 
 spellbook-semi-random-name = Semi-Random
 spellbook-semi-random-desc =
-    Get 65 WizCoins worth of random spells. You are guaranteed to get at least some mobility and lethal spells though. There's no going back.
+    Get 12 WizCoins worth of random spells. You are guaranteed to get at least some mobility and lethal spells though. There's no going back.
     Not recommended for newer wizards.
 
 spellbook-event-dimension-shift-name = Dimension Shift
@@ -53,7 +53,7 @@ spellbook-apprentice-desc =
     A magical contract binding an apprentice wizard to your service, using it will summon them to your side.
     Can only be purchased once.
 
-    You can choose between 65 set of spells for your apprentice to learn:
+    You can choose between 8 set of spells for your apprentice to learn:
     Destruction: Fireball and Mutate.
     Ethereal: Ethereal Jaunt and Teleport.
     Summoning: Lesser Summon Bees and Summon Simians.
@@ -61,7 +61,7 @@ spellbook-apprentice-desc =
     Arcane: Arcane Barrage, Charge and Instant Summons.
     Sanguine: Scream For Me, Exsanguinating Strike and Instant Summons.
     Robeless: Mind Swap, Force Wall and Knock.
-    Chaos: 65 WizCoins worth of random spells, except for Bind Soul and Soul Tap.
+    Chaos: 6 WizCoins worth of random spells, except for Bind Soul and Soul Tap.
 
 spellbook-magical-lamp-name = Magical Lamp
 spellbook-magical-lamp-desc =

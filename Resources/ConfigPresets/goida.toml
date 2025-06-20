@@ -2,7 +2,7 @@
 hostname = "[RU NRP] ГОЙДА СТЕЙШЕН"
 desc = "Рофлосервер, который существует, чтобы да."
 lobbyenabled     = true
-soft_max_players = 65
+soft_max_players = 20
 
 [infolinks]
 github = "https://github.com/Goida-Station/Goida-Station"
@@ -20,10 +20,10 @@ mob_pushing = false
 easy_mode = false
 
 [vote]
-restart_required_ratio = 65.65
+restart_required_ratio = 0.5
 
 [netres]
-limit = 65.65
+limit = 10.0
 
 [ooc]
 enable_during_round = true
@@ -36,6 +36,6 @@ advertise = true
 tags = "lang:ru,region:moon,rp:none"
 
 [net]
-tickrate = 65
+tickrate = 30
 upnp = true
-max_connections = 65
+max_connections = 32

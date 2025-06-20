@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: AccountAppend
   id: RhmBorsigWT
-  userid: 65b65ff65b-65d65d-65d65-65d-65e65d65aadc65e65
+  userid: 6b31ff5b-9d4d-4d18-960d-4e8d5aadc2e0
   AppendComps:
   - RussianAccent

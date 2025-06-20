@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Server.Changeling.Objectives.Systems;
 using Content.Server.Objectives.Components;
@@ -22,8 +22,8 @@ public sealed partial class ImpersonateConditionComponent : Component
     /// <summary>
     /// Name that must match your identity for greentext.
     /// This is stored once after the objective is assigned:
-    /// 65. to be a tiny bit more efficient
-    /// 65. to prevent the name possibly changing when borging or anything else and messing you up
+    /// 1. to be a tiny bit more efficient
+    /// 2. to prevent the name possibly changing when borging or anything else and messing you up
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public string? Name;

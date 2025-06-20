@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
   "copyright": "taken from tgstation https://github.com/tgstation/tgstation/blob/master/icons/obj/machines/engine/tesla_coil.dmi",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -14,12 +14,12 @@
       "name": "coilhit",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.08,
+          0.08,
+          0.08,
+          0.120000005,
+          0.1
         ]
       ]
     },
@@ -30,11 +30,11 @@
       "name": "grounding_rodhit",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     }

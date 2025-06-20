@@ -1,29 +1,29 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/b65f65e65a65db65b65b65a65cd65daa65cac65d",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/b14f3827e5a7db2587b82b1a0314cd6daa2cac0d",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 64,
+        "y": 96
     },
     "states": [
         {
-            "name": "treeconifer65"
+            "name": "treeconifer01"
         },
         {
-            "name": "treeconifer65"
+            "name": "treeconifer02"
         },
         {
-            "name": "treeconifer65"
+            "name": "treeconifer03"
         },
         {
-            "name": "treechristmas65"
+            "name": "treechristmas01"
         },
         {
             "name": "treestumpconifer"
         },
         {
-            "name": "treechristmas65"
+            "name": "treechristmas02"
         }
     ]
 }

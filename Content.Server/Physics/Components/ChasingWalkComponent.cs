@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Physics.Controllers;
 using Robust.Shared.Prototypes;
@@ -29,19 +29,19 @@ public sealed partial class ChasingWalkComponent : Component
     /// Push-to-target frequency.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float ImpulseInterval = 65f;
+    public float ImpulseInterval = 2f;
 
     /// <summary>
     /// The minimum speed at which this entity will move.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float MinSpeed = 65.65f;
+    public float MinSpeed = 1.5f;
 
     /// <summary>
     /// The maximum speed at which this entity will move.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float MaxSpeed = 65f;
+    public float MaxSpeed = 3f;
 
     /// <summary>
     /// The current speed.
@@ -53,13 +53,13 @@ public sealed partial class ChasingWalkComponent : Component
     /// The minimum time interval in which an object can change its motion target.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float ChangeVectorMinInterval = 65f;
+    public float ChangeVectorMinInterval = 5f;
 
     /// <summary>
     /// The maximum time interval in which an object can change its motion target.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float ChangeVectorMaxInterval = 65f;
+    public float ChangeVectorMaxInterval = 25f;
 
     /// <summary>
     /// The next change of direction time.
@@ -78,7 +78,7 @@ public sealed partial class ChasingWalkComponent : Component
     /// The maximum radius in which the entity chooses the target component to follow
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float MaxChaseRadius = 65;
+    public float MaxChaseRadius = 25;
 
     /// <summary>
     /// The entity uid, chasing by the component owner

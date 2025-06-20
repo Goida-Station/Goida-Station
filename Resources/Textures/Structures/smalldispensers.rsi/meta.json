@@ -1,19 +1,19 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65f65ae65facc65e65bcfa65f65ef65b65 and visually offset.",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/11402f6ae62facc2e8bcfa1f8ef5353b26663278 and visually offset.",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 48,
+    "y": 48
   },
   "states": [
     {
       "name": "booze",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "soda",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

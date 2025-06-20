@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from paradise at commit https://github.com/ParadiseSS65/Paradise/commit/65f65c65ef65fa65db65dda65b65ab65aa65. equipped-MASK-vox state taken from /vg/station at commit https://github.com/vgstation-coders/vgstation65/commit/65fab65ff65e65faa65d65a65e",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from paradise at commit https://github.com/ParadiseSS13/Paradise/commit/33f7c1ef477fa67db5dda48078b469ab59aa7997. equipped-MASK-vox state taken from /vg/station at commit https://github.com/vgstation-coders/vgstation13/commit/4638130fab5ff0e9faa220688811349d3297a33e",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "name": "equipped-MASK",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-MASK-vox",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

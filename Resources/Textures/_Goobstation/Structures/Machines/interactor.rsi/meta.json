@@ -1,42 +1,42 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
     "copyright": "Created by Drazamuffin (github/discord) for Goobstation, modified by deltanedas (github)",
     "size": {
-    	"x": 65,
-    	"y": 65
+    	"x": 32,
+    	"y": 32
 	},
 	"states": [
 		{
 			"name": "base",
-			"directions": 65
+			"directions": 4
 		},
 		{
 			"name": "icon"
 		},
 		{
 			"name": "empty",
-			"directions": 65
+			"directions": 4
 		},
 		{
 			"name": "inactive",
-			"directions": 65
+			"directions": 4
 		},
 		{
 			"name": "active",
-			"directions": 65
+			"directions": 4
 		},
 		{
 			"name": "empty-powered",
-			"directions": 65
+			"directions": 4
 		},
 		{
 			"name": "inactive-powered",
-			"directions": 65
+			"directions": 4
 		},
 		{
 			"name": "active-powered",
-			"directions": 65
+			"directions": 4
 		}
 	]
 }

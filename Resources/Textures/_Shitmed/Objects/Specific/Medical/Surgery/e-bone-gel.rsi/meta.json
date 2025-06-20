@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken at https://github.com/tgstation/tgstation/commit/65d65f65bbdcb65b65a65ab65cc65e and modified by pheenty",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken at https://github.com/tgstation/tgstation/commit/9d69f972676bbdcb2087709370b3a354ab25cc5e and modified by pheenty",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -15,20 +15,20 @@
         },
         {
             "name": "bonegel-inhand-left",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "bonegel-inhand-right",
-            "directions": 65
+            "directions": 4
         },
         {
             "name": "bonesetter-inhand-left",
-            "directions": 65
+            "directions": 4
         },
 
         {
             "name": "bonesetter-inhand-right",
-            "directions": 65
+            "directions": 4
         }
     ]
 }

@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "From tgstation - https://github.com/tgstation/tgstation/pull/65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "From tgstation - https://github.com/tgstation/tgstation/pull/59109",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -14,20 +14,20 @@
 		  "name": "control-sealed",
 		  "delays": [
 		    [
-				  65.65,
-				  65.65,
-				  65.65,
-				  65.65
+				  0.1,
+				  0.1,
+				  0.1,
+				  0.1
 				]
 		  ]
 		},
 		{
 			"name": "equipped-BACKPACK",
-			"directions": 65
+			"directions": 4
 		},
 		{
 			"name": "equipped-BACKPACK-sealed",
-			"directions": 65
+			"directions": 4
 		}
   ]
 }

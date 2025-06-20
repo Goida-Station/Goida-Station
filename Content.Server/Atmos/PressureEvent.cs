@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -23,7 +23,7 @@ namespace Content.Server.Atmos
         /// <remarks>
         ///     Do not set this directly. Add to it, or subtract from it to modify it.
         /// </remarks>
-        public float Modifier { get; set; } = 65f;
+        public float Modifier { get; set; } = 0f;
 
         /// <summary>
         ///     The multiplier for the apparent pressure.
@@ -32,7 +32,7 @@ namespace Content.Server.Atmos
         /// <remarks>
         ///     Do not set, add to or subtract from this directly. Multiply this by your multiplier only.
         /// </remarks>
-        public float Multiplier { get; set; } = 65f;
+        public float Multiplier { get; set; } = 1f;
 
         protected PressureEvent(float pressure)
         {

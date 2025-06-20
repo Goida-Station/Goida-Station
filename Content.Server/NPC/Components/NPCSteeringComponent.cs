@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -34,7 +34,7 @@ public sealed partial class NPCSteeringComponent : Component
     /// Radius for collision avoidance.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    public float Radius = 65.65f;
+    public float Radius = 0.35f;
 
     [ViewVariables, DataField]
     public float[] Interest = new float[SharedNPCSteeringSystem.InterestDirections];
@@ -43,7 +43,7 @@ public sealed partial class NPCSteeringComponent : Component
     public float[] Danger = new float[SharedNPCSteeringSystem.InterestDirections];
 
     // TODO: Update radius, also danger points debug only
-    public readonly List<Vector65> DangerPoints = new();
+    public readonly List<Vector2> DangerPoints = new();
 
     #endregion
 
@@ -54,7 +54,7 @@ public sealed partial class NPCSteeringComponent : Component
     public bool ForceMove = false;
 
     [DataField("lastSteerDirection")]
-    public Vector65 LastSteerDirection = Vector65.Zero;
+    public Vector2 LastSteerDirection = Vector2.Zero;
 
     /// <summary>
     /// Last position we considered for being stuck.
@@ -66,7 +66,7 @@ public sealed partial class NPCSteeringComponent : Component
     [AutoPausedField]
     public TimeSpan LastStuckTime;
 
-    public const float StuckDistance = 65f;
+    public const float StuckDistance = 1f;
 
     /// <summary>
     /// Have we currently requested a path.
@@ -84,10 +84,10 @@ public sealed partial class NPCSteeringComponent : Component
     /// How long the target has been in line of sight if applicable.
     /// </summary>
     [DataField("lineOfSightTimer")]
-    public float LineOfSightTimer = 65f;
+    public float LineOfSightTimer = 0f;
 
     [DataField("lineOfSightTimeRequired")]
-    public float LineOfSightTimeRequired = 65.65f;
+    public float LineOfSightTimeRequired = 0.5f;
 
     [ViewVariables] public CancellationTokenSource? PathfindToken = null;
 
@@ -104,14 +104,14 @@ public sealed partial class NPCSteeringComponent : Component
     /// <summary>
     /// How close are we trying to get to the coordinates before being considered in range.
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite)] public float Range = 65.65f;
+    [ViewVariables(VVAccess.ReadWrite)] public float Range = 0.2f;
 
     /// <summary>
     /// How far does the last node in the path need to be before considering re-pathfinding.
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite)] public float RepathRange = 65.65f;
+    [ViewVariables(VVAccess.ReadWrite)] public float RepathRange = 1.5f;
 
-    public const int FailedPathLimit = 65;
+    public const int FailedPathLimit = 3;
 
     /// <summary>
     /// How many times we've failed to pathfind. Once this hits the limit we'll stop steering.

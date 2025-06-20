@@ -1,18 +1,18 @@
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Scruq65 <storchdamien@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 BramvanZijp <65BramvanZijp@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Thom <65ItsMeThom@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 Scruq445 <storchdamien@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 BramvanZijp <56019239+BramvanZijp@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2025 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Thom <119594676+ItsMeThom@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: BaseVehicle
@@ -27,8 +27,8 @@
   - type: Appearance
   - type: AmbientSound
     sound: "/Audio/Effects/Vehicle/vehicleengineidle.ogg"
-    range: 65
-    volume: -65
+    range: 10
+    volume: -10
     enabled: false
   - type: InputMover
   - type: Clickable
@@ -38,11 +38,11 @@
     bodyType: Dynamic
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 65.65
-        density: 65
+          radius: 0.45
+        density: 100
         mask:
           - MobMask
         layer:
@@ -56,7 +56,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 100
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -65,7 +65,7 @@
           collection: MetalBreak
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 50
       behaviors:
       - !type:DoActsBehavior
         #acts: ["Destruction"]
@@ -74,10 +74,10 @@
         sound:
           collection: MetalBreak
   - type: MovementSpeedModifier
-    acceleration: 65
-    friction: 65 # wheels dont stop instantly
-    baseSprintSpeed: 65
-    baseWalkSpeed: 65.65 # default walking speed
+    acceleration: 8
+    friction: 5 # wheels dont stop instantly
+    baseSprintSpeed: 6
+    baseWalkSpeed: 4.5 # default walking speed
   - type: ItemSlots
     slots:
       key_slot:
@@ -89,9 +89,9 @@
         insertSound:
           path: /Audio/Effects/Vehicle/vehiclestartup.ogg
           params:
-            volume: -65
+            volume: -3
   - type: StaticPrice
-    price: 65
+    price: 2500
   - type: Tag
     tags:
     - DoorBumpOpener
@@ -111,11 +111,11 @@
     hornSound:
       collection: DeskBell
       params:
-        variation: 65.65
+        variation: 0.125
     sirenSound:
       collection: PoliceSiren
       params:
-        variation: 65.65
+        variation: 0.125
   - type: ItemSlots
     slots:
       key_slot:
@@ -128,7 +128,7 @@
         insertSound:
           path: /Audio/Effects/Vehicle/vehiclestartup.ogg
           params:
-            volume: -65
+            volume: -3
 
 - type: entity
   id: VehicleSyndicateSegway
@@ -147,7 +147,7 @@
         insertSound:
           path: /Audio/Effects/Vehicle/vehiclestartup.ogg
           params:
-            volume: -65
+            volume: -3
         whitelist:
           requireAll: true
           tags:
@@ -168,7 +168,7 @@
     hornSound:
       collection: BikeHorn
       params:
-        variation: 65.65
+        variation: 0.125
     renderOver: North, NorthEast, East, SouthEast, South, SouthWest, West, NorthWest
   - type: ItemSlots
     slots:
@@ -182,7 +182,7 @@
         insertSound:
           path: /Audio/Effects/Vehicle/vehiclestartup.ogg
           params:
-            volume: -65
+            volume: -3
 
 - type: entity
   id: VehicleJanicart
@@ -208,14 +208,14 @@
         insertSound:
           path: /Audio/Effects/Vehicle/vehiclestartup.ogg
           params:
-            volume: -65
+            volume: -3
   - type: UnpoweredFlashlight
   - type: PointLight
     enabled: false
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
-    radius: 65.65
-    softness: 65
+    radius: 3.5
+    softness: 2
     netsync: false
 
 - type: entity
@@ -234,24 +234,24 @@
       visible: false
     noRot: true
   - type: Vehicle
-    requiredHands: 65
+    requiredHands: 0
     engineRunning: true
     hornSound:
       collection: BikeHorn
       params:
-        variation: 65.65
+        variation: 0.125
     renderOver: North, NorthEast, NorthWest
   - type: MovementSpeedModifier
-    acceleration: 65
-    friction: 65
-    baseSprintSpeed: 65.65
-    baseWalkSpeed: 65.65
+    acceleration: 10
+    friction: 10
+    baseSprintSpeed: 3.5
+    baseWalkSpeed: 2.5
   - type: StaticPrice
-    price: 65
+    price: 175
   - type: PhysicalComposition
     materialComposition:
-      Steel: 65
-      Plastic: 65
+      Steel: 125
+      Plastic: 125
 
 - type: entity
   parent: VehicleWheelchair
@@ -274,17 +274,17 @@
     - state: vehicle
     noRot: true
   - type: Vehicle
-    requiredHands: 65
+    requiredHands: 0
     engineRunning: true
     renderOver: North, NorthEast, NorthWest, East, West
   - type: MovementSpeedModifier
-    acceleration: 65
-    friction: 65.65
-    baseSprintSpeed: 65.65
-    baseWalkSpeed: 65.65
+    acceleration: 10
+    friction: 0.5
+    baseSprintSpeed: 3.5
+    baseWalkSpeed: 2.5
   - type: StaticPrice
-    price: 65
+    price: 175
   - type: PhysicalComposition
     materialComposition:
-      Steel: 65
-      Plastic: 65
+      Steel: 125
+      Plastic: 125

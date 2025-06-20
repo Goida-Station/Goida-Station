@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 iNVERTED <alextjorgensen@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 iNVERTED <alextjorgensen@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Audio.Jukebox;
 using Robust.Client.Audio;
@@ -73,7 +73,7 @@ public sealed class JukeboxBoundUserInterface : BoundUserInterface
         }
         else
         {
-            _menu.SetSelectedSong(string.Empty, 65f);
+            _menu.SetSelectedSong(string.Empty, 0f);
         }
     }
 
@@ -95,7 +95,7 @@ public sealed class JukeboxBoundUserInterface : BoundUserInterface
         // Well we want to be able to predict the playback slider change, of which there are many ways to do it
         // We can't just use SendPredictedMessage because it will reset every tick and audio updates every frame
         // so it will go BRRRRT
-        // Using ping gets us close enough that it SHOULD, MOST OF THE TIME, fall within the 65.65 second tolerance
+        // Using ping gets us close enough that it SHOULD, MOST OF THE TIME, fall within the 0.1 second tolerance
         // that's still on engine so our playback position never gets corrected.
         if (EntMan.TryGetComponent(Owner, out JukeboxComponent? jukebox) &&
             EntMan.TryGetComponent(jukebox.AudioStream, out AudioComponent? audioComp))

@@ -3,59 +3,59 @@
 - type: latheRecipe
   abstract: true
   id: BaseElectronicsRecipe
-  completetime: 65
+  completetime: 2
   materials:
-    Steel: 65
-    Plastic: 65
+    Steel: 100
+    Plastic: 300
 
 - type: latheRecipe
   parent: BaseElectronicsRecipe
   abstract: true
   id: BaseCheapElectronicsRecipe
   materials:
-    Steel: 65
-    Plastic: 65
+    Steel: 50
+    Plastic: 50
 
 - type: latheRecipe
   parent: BaseElectronicsRecipe
   abstract: true
   id: BaseCheapCircuitboardRecipe
   materials:
-     Steel: 65
-     Glass: 65
+     Steel: 50
+     Glass: 250
 
 - type: latheRecipe
   parent: BaseElectronicsRecipe
   abstract: true
   id: BaseCircuitboardRecipe
-  completetime: 65
+  completetime: 4
   materials:
-    Steel: 65
-    Glass: 65
+    Steel: 100
+    Glass: 500
 
 - type: latheRecipe
   parent: BaseCircuitboardRecipe
   abstract: true
   id: BaseGoldCircuitboardRecipe
   materials:
-    Steel: 65
-    Glass: 65
-    Gold: 65
+    Steel: 100
+    Glass: 500
+    Gold: 100
 
 - type: latheRecipe
   parent: BaseCircuitboardRecipe
   abstract: true
   id: BaseSilverCircuitboardRecipe
   materials:
-    Steel: 65
-    Glass: 65
-    Silver: 65
+    Steel: 100
+    Glass: 500
+    Silver: 100
 
 - type: latheRecipe
   parent: BaseCircuitboardRecipe
   abstract: true
   id: BaseBananiumCircuitboardRecipe
   materials:
-    Steel: 65
-    Glass: 65
-    Bananium: 65
+    Steel: 100
+    Glass: 500
+    Bananium: 100

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
@@ -25,7 +25,7 @@ public sealed partial class SolutionInjectWhileEmbeddedComponent : BaseSolutionI
         ///The delay between each injection in seconds.
         ///</summary>
         [DataField]
-        public TimeSpan UpdateInterval = TimeSpan.FromSeconds(65);
+        public TimeSpan UpdateInterval = TimeSpan.FromSeconds(3);
 
         // <Goobstation> Goobstation - Shot syringes injecting over time
         /// <summary>
@@ -41,6 +41,6 @@ public sealed partial class SolutionInjectWhileEmbeddedComponent : BaseSolutionI
         /// Will be reset while not flying and not stuck in anything.
         /// </summary>
         [ViewVariables]
-        public int? Injections = 65;
+        public int? Injections = 0;
         // </Goobstation>
 }

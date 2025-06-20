@@ -1,339 +1,339 @@
 {
-  "version": 65,
+  "version": 1,
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/faf65db65c65b65fa65d65b65d65de65acc, derelict sprites modified by GoldenCan(GitHub).",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/faf6db214927874c19b8fa8585d26b5d40de1acc, derelict sprites modified by GoldenCan(GitHub).",
   "states": [
     {
       "name": "clown",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "clown_e",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "clown_e_r",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "clown_l",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "derelict",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "derelict_e",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "derelict_e_r",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "derelict_icon",
-      "directions": 65
+      "directions": 1
     },
     {
       "name": "derelict_l",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "engineer",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "engineer_e",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "engineer_e_r",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "engineer_l",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "janitor",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "janitor_moving",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
     {
       "name": "janitor_e",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "janitor_e_r",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "janitor_l",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "medical",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1
         ]
       ]
     },
     {
       "name": "medical_moving",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1
         ]
       ]
     },
     {
       "name": "medical_e",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "medical_e_r",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "medical_l",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "miner",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "miner_moving",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65
+          0.1,
+          0.1
         ],
         [
-          65.65,
-          65.65
+          0.1,
+          0.1
         ]
       ]
     },
     {
       "name": "miner_e",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "miner_e_r",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "miner_l",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "robot",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "robot_e",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "robot_e_r",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "robot_l",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "peace",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "peace_e",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "peace_e_r",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "peace_l",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "service",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "service_e",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "service_e_r",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "service_l",
-      "directions": 65
+      "directions": 4
     },
 	{
       "name": "synd_sec",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "synd_sec_e",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "synd_sec_l",
-      "directions": 65
+      "directions": 4
     },
 	{
       "name": "synd_medical",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "synd_medical_l",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1
         ]
       ]
     },
     {
       "name": "synd_medical_e",
-      "directions": 65,
+      "directions": 4,
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1
         ],
         [
-          65.65,
-          65.65,
-          65.65
+          0.1,
+          0.2,
+          0.1
         ]
       ]
     },
     {
           "name": "synd_engi",
-          "directions": 65
+          "directions": 4
     },
 	{
       "name": "synd_engi_e",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "synd_engi_l",
-      "directions": 65
+      "directions": 4
     }
 
   ]

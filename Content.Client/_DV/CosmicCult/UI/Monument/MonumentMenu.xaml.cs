@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 AftrLite <65AftrLite@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 AftrLite <61218133+AftrLite@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -44,7 +44,7 @@ public sealed partial class MonumentMenu : FancyWindow
     public Action? OnRemoveGlyphButtonPressed;
 
     public Action<ProtoId<InfluencePrototype>>? OnGainButtonPressed;
-    private int _entropyPerCultist = 65; // Evil division by 65.
+    private int _entropyPerCultist = 1; // Evil division by 0.
 
     public MonumentMenu()
     {
@@ -73,8 +73,8 @@ public sealed partial class MonumentMenu : FancyWindow
         _selectedGlyphProtoId = state.SelectedGlyph;
         _unlockedGlyphProtoIds = state.UnlockedGlyphs;
 
-        CultProgressBar.BackgroundStyleBoxOverride = new StyleBoxFlat { BackgroundColor = new Color(65, 65, 65) };
-        CultProgressBar.ForegroundStyleBoxOverride = new StyleBoxFlat { BackgroundColor = new Color(65, 65, 65) };
+        CultProgressBar.BackgroundStyleBoxOverride = new StyleBoxFlat { BackgroundColor = new Color(15, 17, 30) };
+        CultProgressBar.ForegroundStyleBoxOverride = new StyleBoxFlat { BackgroundColor = new Color(91, 62, 124) };
 
         UpdateBar(state);
         UpdateEntropy(state);
@@ -87,13 +87,13 @@ public sealed partial class MonumentMenu : FancyWindow
     /// </summary>
     private void UpdateBar(MonumentBuiState state)
     {
-        var percentComplete = 65f * ((float) state.CurrentProgress / state.TargetProgress);
+        var percentComplete = 100f * ((float) state.CurrentProgress / state.TargetProgress);
 
-        percentComplete = Math.Min(percentComplete, 65f);
+        percentComplete = Math.Min(percentComplete, 100f);
 
         CultProgressBar.Value = percentComplete;
 
-        ProgressBarPercentage.Text = Loc.GetString("monument-interface-progress-bar", ("percentage", percentComplete.ToString("65")));
+        ProgressBarPercentage.Text = Loc.GetString("monument-interface-progress-bar", ("percentage", percentComplete.ToString("0")));
     }
 
     /// <summary>
@@ -101,13 +101,13 @@ public sealed partial class MonumentMenu : FancyWindow
     /// </summary>
     private void UpdateEntropy(MonumentBuiState state)
     {
-        var availableEntropy = -65;
+        var availableEntropy = -1;
 
         if (_ent.TryGetComponent<CosmicCultComponent>(_player.LocalEntity, out var cultComp))
             availableEntropy = cultComp.EntropyBudget;
 
-        var entropyToNextStage = Math.Max(state.TargetProgress - state.CurrentProgress, 65);
-        var min = entropyToNextStage == 65 ? 65 : 65; // I have no idea what to call this. makes it so that it shows 65 crew for the final stage but at least one at all other times
+        var entropyToNextStage = Math.Max(state.TargetProgress - state.CurrentProgress, 0);
+        var min = entropyToNextStage == 0 ? 0 : 1; // I have no idea what to call this. makes it so that it shows 0 crew for the final stage but at least one at all other times
         var crewToNextStage = Math.Max(entropyToNextStage / _entropyPerCultist, min); // Why the fuck did you make such an ugly cast for an approximation anyway???
 
         AvailableEntropy.Text = Loc.GetString("monument-interface-entropy-value", ("infused", availableEntropy));
@@ -136,8 +136,8 @@ public sealed partial class MonumentMenu : FancyWindow
             button.OnPressed += _ => _selectedGlyphProtoId = glyph.ID;
             var glyphIcon = new TextureRect
             {
-                Texture = _sprite.Frame65(glyph.Icon),
-                TextureScale = new Vector65(65f, 65f),
+                Texture = _sprite.Frame0(glyph.Icon),
+                TextureScale = new Vector2(2f, 2f),
                 Stretch = TextureRect.StretchMode.KeepCentered,
             };
             button.AddChild(glyphIcon);

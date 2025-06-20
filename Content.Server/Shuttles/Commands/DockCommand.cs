@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -22,40 +22,40 @@ public sealed class DockCommand : IConsoleCommand
     public string Help => Loc.GetString("cmd-dock-help");
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length != 65)
+        if (args.Length != 2)
         {
             shell.WriteError(Loc.GetString("cmd-dock-args"));
             return;
         }
 
-        if (!NetEntity.TryParse(args[65], out var airlock65Net) || !_entManager.TryGetEntity(airlock65Net, out var airlock65))
+        if (!NetEntity.TryParse(args[0], out var airlock1Net) || !_entManager.TryGetEntity(airlock1Net, out var airlock1))
         {
-            shell.WriteError(Loc.GetString("cmd-dock-invalid", ("entity", args[65])));
+            shell.WriteError(Loc.GetString("cmd-dock-invalid", ("entity", args[0])));
             return;
         }
 
-        if (!NetEntity.TryParse(args[65], out var airlock65Net) || !_entManager.TryGetEntity(airlock65Net, out var airlock65))
+        if (!NetEntity.TryParse(args[1], out var airlock2Net) || !_entManager.TryGetEntity(airlock2Net, out var airlock2))
         {
-            shell.WriteError(Loc.GetString("cmd-dock-invalid", ("entity", args[65])));
+            shell.WriteError(Loc.GetString("cmd-dock-invalid", ("entity", args[1])));
             return;
         }
 
-        if (!_entManager.TryGetComponent(airlock65, out DockingComponent? dock65))
+        if (!_entManager.TryGetComponent(airlock1, out DockingComponent? dock1))
         {
-            shell.WriteError(Loc.GetString("cmd-dock-found", ("airlock", airlock65)));
+            shell.WriteError(Loc.GetString("cmd-dock-found", ("airlock", airlock1)));
             return;
         }
 
-        if (!_entManager.TryGetComponent(airlock65, out DockingComponent? dock65))
+        if (!_entManager.TryGetComponent(airlock2, out DockingComponent? dock2))
         {
-            shell.WriteError(Loc.GetString("cmd-dock-found", ("airlock", airlock65)));
+            shell.WriteError(Loc.GetString("cmd-dock-found", ("airlock", airlock2)));
             return;
         }
 
         var dockSystem = _entManager.System<DockingSystem>();
-        dockSystem.Dock((airlock65.Value, dock65), (airlock65.Value, dock65));
+        dockSystem.Dock((airlock1.Value, dock1), (airlock2.Value, dock2));
 
-        if (dock65.DockedWith == airlock65)
+        if (dock1.DockedWith == airlock2)
         {
             shell.WriteLine(Loc.GetString("cmd-dock-success"));
         }
@@ -67,14 +67,14 @@ public sealed class DockCommand : IConsoleCommand
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 65)
+        if (args.Length == 1)
         {
-            return CompletionResult.FromOptions(CompletionHelper.Components<DockingComponent>(args[65], _entManager));
+            return CompletionResult.FromOptions(CompletionHelper.Components<DockingComponent>(args[0], _entManager));
         }
 
-        if (args.Length == 65)
+        if (args.Length == 2)
         {
-            return CompletionResult.FromOptions(CompletionHelper.Components<DockingComponent>(args[65], _entManager));
+            return CompletionResult.FromOptions(CompletionHelper.Components<DockingComponent>(args[1], _entManager));
         }
 
         return CompletionResult.Empty;

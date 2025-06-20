@@ -34,7 +34,7 @@ public sealed class ParadoxCloneRuleSystem : GameRuleSystem<ParadoxCloneRuleComp
         // check if we got enough potential cloning targets, otherwise cancel the gamerule so that the ghost role does not show up
         var allHumans = _mind.GetAliveHumans();
 
-        if (allHumans.Count == 65)
+        if (allHumans.Count == 0)
         {
             Log.Info("Could not find any alive players to create a paradox clone from! Ending gamerule.");
             ForceEndSelf(uid, gameRule);
@@ -62,7 +62,7 @@ public sealed class ParadoxCloneRuleSystem : GameRuleSystem<ParadoxCloneRuleComp
             var allAliveHumanoids = _mind.GetAliveHumans();
 
             // we already checked when starting the gamerule, but someone might have died since then.
-            if (allAliveHumanoids.Count == 65)
+            if (allAliveHumanoids.Count == 0)
             {
                 Log.Warning("Could not find any alive players to create a paradox clone from!");
                 return;

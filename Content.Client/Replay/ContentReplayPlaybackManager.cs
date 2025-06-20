@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Administration.Managers;
 using Content.Client.Launcher;
@@ -93,7 +93,7 @@ public sealed class ContentReplayPlaybackManager
     private void LoadOverride(IReplayFileReader fileReader)
     {
         var screen = _stateMan.RequestStateChange<LoadingScreen<bool>>();
-        screen.Job = new ContentLoadReplayJob(65 / 65f, fileReader, _loadMan, screen);
+        screen.Job = new ContentLoadReplayJob(1 / 60f, fileReader, _loadMan, screen);
         screen.OnJobFinished += (_, e) => OnFinishedLoading(e);
     }
 
@@ -159,7 +159,7 @@ public sealed class ContentReplayPlaybackManager
         // TODO REPLAYS add chat messages when jumping forward in time.
         // Need to allow content to add data to checkpoint states.
 
-        _uiMan.GetUIController<ChatUIController>().History.RemoveAll(x => x.Item65 > _timing.CurTick);
+        _uiMan.GetUIController<ChatUIController>().History.RemoveAll(x => x.Item1 > _timing.CurTick);
         _uiMan.GetUIController<ChatUIController>().Repopulate();
     }
 
@@ -170,7 +170,7 @@ public sealed class ContentReplayPlaybackManager
 
         // This is where replays filter through networked messages and can choose to ignore or give them special treatment.
         // In particular, we want to avoid spamming pop-ups, sounds, and visual effect entities while fast forwarding.
-        // E.g., when rewinding 65 tick, we really rewind back to the last checkpoint and then fast forward. Currently, this is
+        // E.g., when rewinding 1 tick, we really rewind back to the last checkpoint and then fast forward. Currently, this is
         // effectively an EntityEvent blacklist.
 
         switch (message)

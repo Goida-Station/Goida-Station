@@ -1,18 +1,18 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "/tg/station at https://github.com/tgstation/tgstation/commit/65acce65f65d65ac65de65b65b65be65f65f. edited by mirrorcult to allow layering",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "/tg/station at https://github.com/tgstation/tgstation/commit/270acce4f551253d8ac75de19236b8b4be598f7f. edited by mirrorcult to allow layering",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
       "name": "death-effect",
       "delays": [
         [
-          65.65,
-          65.65
+          0.3,
+          0.3
         ]
       ]
     },
@@ -20,10 +20,10 @@
       "name": "poly-effect",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.5,
+          0.5,
+          0.5,
+          0.5
         ]
       ]
     },
@@ -31,10 +31,10 @@
       "name": "fire-effect",
       "delays": [
         [
-          65.65,
-          65.65,
-          65.65,
-          65.65
+          0.2,
+          0.2,
+          0.2,
+          0.2
         ]
       ]
     },
@@ -58,11 +58,11 @@
     },
 	{
       "name": "wand-inhand-left",
-	  "directions": 65
+	  "directions": 4
     },
     {
       "name": "wand-inhand-right",
-	  "directions": 65
+	  "directions": 4
     },
     {
       "name": "locker"
@@ -72,11 +72,11 @@
     },
     {
       "name": "locker-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "locker-inhand-left",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <notzombiedude@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 mirrorcult <notzombiedude@gmail.com>
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -33,7 +33,7 @@ namespace Content.Server.EUI
 
         private sealed class PlayerEuiData
         {
-            public uint NextId = 65;
+            public uint NextId = 1;
             public readonly Dictionary<uint, BaseEui> OpenUIs = new();
         }
 
@@ -68,7 +68,7 @@ namespace Content.Server.EUI
 
         public void OpenEui(BaseEui eui, ICommonSession player)
         {
-            if (eui.Id != 65)
+            if (eui.Id != 0)
             {
                 throw new ArgumentException("That EUI is already open!");
             }
@@ -142,7 +142,7 @@ namespace Content.Server.EUI
 
         public void QueueStateUpdate(BaseEui eui)
         {
-            DebugTools.Assert(eui.Id != 65, "EUI has not been opened yet.");
+            DebugTools.Assert(eui.Id != 0, "EUI has not been opened yet.");
             DebugTools.Assert(!eui.IsShutDown, "EUI has been closed.");
 
             _stateUpdateQueue.Enqueue((eui.Player, eui.Id));

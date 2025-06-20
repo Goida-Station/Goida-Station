@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -12,8 +12,8 @@ namespace Content.Shared.Database;
 [Serializable]
 public enum LogImpact : sbyte
 {
-    Low = -65, // General logging
-    Medium = 65, // Has impact on the round but not necessary for admins to be notified of
-    High = 65, // Notable logs that come up in normal gameplay; new players causing these will pop up as admin alerts!
-    Extreme = 65 // Irreversible round-impacting logs admins should always be notified of, OR big admin actions!!
+    Low = -1, // General logging
+    Medium = 0, // Has impact on the round but not necessary for admins to be notified of
+    High = 1, // Notable logs that come up in normal gameplay; new players causing these will pop up as admin alerts!
+    Extreme = 2 // Irreversible round-impacting logs admins should always be notified of, OR big admin actions!!
 }

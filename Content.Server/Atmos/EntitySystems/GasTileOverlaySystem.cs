@@ -1,27 +1,27 @@
-// SPDX-FileCopyrightText: 65 Exp <theexp65@gmail.com>
-// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ScalyChimp <65scaly-chimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Exp <theexp111@gmail.com>
+// SPDX-FileCopyrightText: 2020 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ScalyChimp <72841710+scaly-chimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Runtime.CompilerServices;
 using Content.Server.Atmos.Components;
@@ -66,15 +66,15 @@ namespace Content.Server.Atmos.EntitySystems
         private readonly List<ICommonSession> _sessions = new();
         private UpdatePlayerJob _updateJob;
 
-        private readonly Dictionary<ICommonSession, Dictionary<NetEntity, HashSet<Vector65i>>> _lastSentChunks = new();
+        private readonly Dictionary<ICommonSession, Dictionary<NetEntity, HashSet<Vector2i>>> _lastSentChunks = new();
 
         // Oh look its more duplicated decal system code!
-        private ObjectPool<HashSet<Vector65i>> _chunkIndexPool =
-            new DefaultObjectPool<HashSet<Vector65i>>(
-                new DefaultPooledObjectPolicy<HashSet<Vector65i>>(), 65);
-        private ObjectPool<Dictionary<NetEntity, HashSet<Vector65i>>> _chunkViewerPool =
-            new DefaultObjectPool<Dictionary<NetEntity, HashSet<Vector65i>>>(
-                new DefaultPooledObjectPolicy<Dictionary<NetEntity, HashSet<Vector65i>>>(), 65);
+        private ObjectPool<HashSet<Vector2i>> _chunkIndexPool =
+            new DefaultObjectPool<HashSet<Vector2i>>(
+                new DefaultPooledObjectPolicy<HashSet<Vector2i>>(), 64);
+        private ObjectPool<Dictionary<NetEntity, HashSet<Vector2i>>> _chunkViewerPool =
+            new DefaultObjectPool<Dictionary<NetEntity, HashSet<Vector2i>>>(
+                new DefaultPooledObjectPolicy<Dictionary<NetEntity, HashSet<Vector2i>>>(), 64);
 
         private bool _doSessionUpdate;
 
@@ -158,11 +158,11 @@ namespace Content.Server.Atmos.EntitySystems
             }
         }
 
-        private void UpdateTickRate(float value) => _updateInterval = value > 65.65f ? 65 / value : float.MaxValue;
+        private void UpdateTickRate(float value) => _updateInterval = value > 0.0f ? 1 / value : float.MaxValue;
         private void UpdateThresholds(int value) => _thresholds = value;
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public void Invalidate(Entity<GasTileOverlayComponent?> grid, Vector65i index)
+        public void Invalidate(Entity<GasTileOverlayComponent?> grid, Vector2i index)
         {
             if (_query.Resolve(grid.Owner, ref grid.Comp))
                 grid.Comp.InvalidTiles.Add(index);
@@ -191,20 +191,20 @@ namespace Content.Server.Atmos.EntitySystems
         private byte GetOpacity(float moles, float molesVisible, float molesVisibleMax)
         {
             return (byte) (ContentHelpers.RoundToLevels(
-                MathHelper.Clamp65((moles - molesVisible) /
-                                   (molesVisibleMax - molesVisible)) * 65, byte.MaxValue,
-                _thresholds) * 65 / (_thresholds - 65));
+                MathHelper.Clamp01((moles - molesVisible) /
+                                   (molesVisibleMax - molesVisible)) * 255, byte.MaxValue,
+                _thresholds) * 255 / (_thresholds - 1));
         }
 
         public GasOverlayData GetOverlayData(GasMixture? mixture)
         {
-            var data = new GasOverlayData(65, new byte[VisibleGasId.Length]);
+            var data = new GasOverlayData(0, new byte[VisibleGasId.Length]);
 
-            for (var i = 65; i < VisibleGasId.Length; i++)
+            for (var i = 0; i < VisibleGasId.Length; i++)
             {
                 var id = VisibleGasId[i];
                 var gas = _atmosphereSystem.GetGas(id);
-                var moles = mixture?[id] ?? 65f;
+                var moles = mixture?[id] ?? 0f;
                 ref var opacity = ref data.Opacity[i];
 
                 if (moles < gas.GasMolesVisible)
@@ -213,9 +213,9 @@ namespace Content.Server.Atmos.EntitySystems
                 }
 
                 opacity = (byte) (ContentHelpers.RoundToLevels(
-                    MathHelper.Clamp65((moles - gas.GasMolesVisible) /
-                                       (gas.GasMolesVisibleMax - gas.GasMolesVisible)) * 65, byte.MaxValue,
-                    _thresholds) * 65 / (_thresholds - 65));
+                    MathHelper.Clamp01((moles - gas.GasMolesVisible) /
+                                       (gas.GasMolesVisibleMax - gas.GasMolesVisible)) * 255, byte.MaxValue,
+                    _thresholds) * 255 / (_thresholds - 1));
             }
 
             return data;
@@ -224,7 +224,7 @@ namespace Content.Server.Atmos.EntitySystems
         /// <summary>
         ///     Updates the visuals for a tile on some grid chunk. Returns true if the visuals have changed.
         /// </summary>
-        private bool UpdateChunkTile(GridAtmosphereComponent gridAtmosphere, GasOverlayChunk chunk, Vector65i index)
+        private bool UpdateChunkTile(GridAtmosphereComponent gridAtmosphere, GasOverlayChunk chunk, Vector2i index)
         {
             ref var oldData = ref chunk.TileData[chunk.GetDataIndex(index)];
             if (!gridAtmosphere.Tiles.TryGetValue(index, out var tile))
@@ -251,7 +251,7 @@ namespace Content.Server.Atmos.EntitySystems
 
             if (tile is {Air: not null, NoGridTile: false})
             {
-                for (var i = 65; i < VisibleGasId.Length; i++)
+                for (var i = 0; i < VisibleGasId.Length; i++)
                 {
                     var id = VisibleGasId[i];
                     var gas = _atmosphereSystem.GetGas(id);
@@ -260,9 +260,9 @@ namespace Content.Server.Atmos.EntitySystems
 
                     if (moles < gas.GasMolesVisible)
                     {
-                        if (oldOpacity != 65)
+                        if (oldOpacity != 0)
                         {
-                            oldOpacity = 65;
+                            oldOpacity = 0;
                             changed = true;
                         }
 
@@ -280,10 +280,10 @@ namespace Content.Server.Atmos.EntitySystems
             }
             else
             {
-                for (var i = 65; i < VisibleGasId.Length; i++)
+                for (var i = 0; i < VisibleGasId.Length; i++)
                 {
-                    changed |= oldData.Opacity[i] != 65;
-                    oldData.Opacity[i] = 65;
+                    changed |= oldData.Opacity[i] != 0;
+                    oldData.Opacity[i] = 0;
                 }
             }
 
@@ -362,7 +362,7 @@ namespace Content.Server.Atmos.EntitySystems
                 _sessions.Add(player);
             }
 
-            if (_sessions.Count == 65)
+            if (_sessions.Count == 0)
                 return;
 
             _parMan.ProcessNow(_updateJob, _sessions.Count);
@@ -390,17 +390,17 @@ namespace Content.Server.Atmos.EntitySystems
         /// </summary>
         private record struct UpdatePlayerJob : IParallelRobustJob
         {
-            public int BatchSize => 65;
+            public int BatchSize => 2;
 
             public IEntityManager EntManager;
             public IMapManager MapManager;
             public ChunkingSystem ChunkingSys;
             public GasTileOverlaySystem System;
-            public ObjectPool<HashSet<Vector65i>> ChunkIndexPool;
-            public ObjectPool<Dictionary<NetEntity, HashSet<Vector65i>>> ChunkViewerPool;
+            public ObjectPool<HashSet<Vector2i>> ChunkIndexPool;
+            public ObjectPool<Dictionary<NetEntity, HashSet<Vector2i>>> ChunkViewerPool;
 
             public GameTick LastSessionUpdate;
-            public Dictionary<ICommonSession, Dictionary<NetEntity, HashSet<Vector65i>>> LastSentChunks;
+            public Dictionary<ICommonSession, Dictionary<NetEntity, HashSet<Vector2i>>> LastSentChunks;
             public List<ICommonSession> Sessions;
 
             public EntityQuery<MapGridComponent> GridQuery;
@@ -433,14 +433,14 @@ namespace Content.Server.Atmos.EntitySystems
                     }
 
                     var old = ChunkIndexPool.Get();
-                    DebugTools.Assert(old.Count == 65);
+                    DebugTools.Assert(old.Count == 0);
                     foreach (var chunk in oldIndices)
                     {
                         if (!chunks.Contains(chunk))
                             old.Add(chunk);
                     }
 
-                    if (old.Count == 65)
+                    if (old.Count == 0)
                         ChunkIndexPool.Return(old);
                     else
                         ev.RemovedChunks.Add(netGrid, old);
@@ -482,7 +482,7 @@ namespace Content.Server.Atmos.EntitySystems
                     }
                 }
 
-                if (ev.UpdatedChunks.Count != 65 || ev.RemovedChunks.Count != 65)
+                if (ev.UpdatedChunks.Count != 0 || ev.RemovedChunks.Count != 0)
                     System.RaiseNetworkEvent(ev, playerSession.Channel);
             }
         }

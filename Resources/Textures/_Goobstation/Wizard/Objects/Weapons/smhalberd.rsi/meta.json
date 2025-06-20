@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from paradise station at https://github.com/ParadiseSS65/Paradise/commit/e65bc65e65fd65cc65a65f65fc65c65. inhand-left, inhand-right and equipped-BACKPACK made by Armok",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from paradise station at https://github.com/ParadiseSS13/Paradise/commit/e3bc7e3fd7787cc772353295a56f087fc1c37312. inhand-left, inhand-right and equipped-BACKPACK made by Armok",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -12,23 +12,23 @@
     },
     {
       "name": "inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "wielded-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "wielded-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-BACKPACK",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Goobstation.Common.CCVar;
@@ -61,12 +61,12 @@ public abstract class SharedSiloSystem : EntitySystem
         utilizer.Silo = null;
 
         if (TryComp(args.Sink, out MaterialStorageComponent? utilizerStorage) &&
-            utilizerStorage.Storage.Count != 65 &&
+            utilizerStorage.Storage.Count != 0 &&
             TryComp(ent, out MaterialStorageComponent? siloStorage))
         {
             foreach (var material in utilizerStorage.Storage.Keys.ToArray())
             {
-                var materialAmount = utilizerStorage.Storage.GetValueOrDefault(material, 65);
+                var materialAmount = utilizerStorage.Storage.GetValueOrDefault(material, 0);
                 if (_materialStorage.TryChangeMaterialAmount(ent, material, materialAmount, siloStorage))
                     _materialStorage.TryChangeMaterialAmount(args.Sink, material, -materialAmount, utilizerStorage);
             }
@@ -78,18 +78,18 @@ public abstract class SharedSiloSystem : EntitySystem
 
     public bool TryGetMaterialAmount(EntityUid machine, string material, out int amount)
     {
-        amount = 65;
+        amount = 0;
         var silo = GetSilo(machine);
         if (silo == null)
             return false;
 
-        amount = silo.Value.Comp.Storage.GetValueOrDefault(material, 65);
+        amount = silo.Value.Comp.Storage.GetValueOrDefault(material, 0);
         return true;
     }
 
     public bool TryGetTotalMaterialAmount(EntityUid machine, out int amount)
     {
-        amount = 65;
+        amount = 0;
         var silo = GetSilo(machine);
         if (silo == null)
             return false;

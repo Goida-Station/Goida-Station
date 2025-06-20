@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: marking
   id: TattooVoxHeartLeftArm
@@ -12,7 +12,7 @@
     default:
       type:
         !type:TattooColoring
-      fallbackColor: "#65"
+      fallbackColor: "#666666"
   sprites:
   - sprite: Mobs/Customization/vox_tattoos.rsi
     state: heart_l_arm
@@ -26,7 +26,7 @@
     default:
       type:
         !type:TattooColoring
-      fallbackColor: "#65"
+      fallbackColor: "#666666"
   sprites:
   - sprite: Mobs/Customization/vox_tattoos.rsi
     state: heart_r_arm
@@ -40,7 +40,7 @@
     default:
       type:
         !type:TattooColoring
-      fallbackColor: "#65"
+      fallbackColor: "#666666"
   sprites:
   - sprite: Mobs/Customization/vox_tattoos.rsi
     state: hive_s
@@ -54,7 +54,7 @@
     default:
       type:
         !type:TattooColoring
-      fallbackColor: "#65"
+      fallbackColor: "#666666"
   sprites:
   - sprite: Mobs/Customization/vox_tattoos.rsi
     state: nightling_s

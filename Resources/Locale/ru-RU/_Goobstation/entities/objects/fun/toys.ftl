@@ -13,4 +13,4 @@ ent-PlushieBlackburnPlyushkina = Plyushkina plushie
 ent-PlushieBlackburnMatryoskya = Matryoskya plushie
     .desc = An urban legend told by Nanotrasen war veterans; a beast uncontrolled by both Yukon insurgents and Nanotrasen, now available as a plushie.
 ent-PlushieDesislavaBlackburn = Desislava plushie
-    .desc = A tiny sub-species of the BKv65 blackburn designed to fit in tankettes and some tank variants, this one is in a "Darwin 65A65M C65 YKN."
+    .desc = A tiny sub-species of the BKv1 blackburn designed to fit in tankettes and some tank variants, this one is in a "Darwin 6A2M C7 YKN."

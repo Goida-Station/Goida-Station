@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 65 Arendian <65Arendian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Arendian <137322659+Arendian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseStructure
@@ -33,26 +33,26 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 200
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 150
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          PartRodMetal65:
-            min: 65
-            max: 65
+          PartRodMetal1:
+            min: 3
+            max: 5
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Climbable
-    delay: 65.65
+    delay: 5.0
     startClimbSound:
       collection: FenceRattle
     finishClimbSound:
@@ -85,9 +85,9 @@
           False: { visible: False }
   - type: AnimationPlayer
   - type: RCDDeconstructable
-    cost: 65
-    delay: 65
-    fx: EffectRCDDeconstruct65
+    cost: 2
+    delay: 2
+    fx: EffectRCDDeconstruct2
 
 - type: entity
   parent: BaseFenceMetal
@@ -107,11 +107,11 @@
     canCollide: false
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.10,-0.5,0.10,0.5"
+        density: 1000
         mask:
         - FullTileMask
         layer:
@@ -125,22 +125,22 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 100
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 50
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          PartRodMetal65:
-            min: 65
-            max: 65
+          PartRodMetal1:
+            min: 1
+            max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Construction
@@ -165,11 +165,11 @@
       visible: false
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.10,-0.5,0.10,0.5"
+        density: 1000
         mask:
         - FullTileMask
         layer:
@@ -184,22 +184,22 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 200
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 100
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/Items/wirecutter.ogg
       - !type:SpawnEntitiesBehavior
         spawn:
-          PartRodMetal65:
-            min: 65
-            max: 65
+          PartRodMetal1:
+            min: 2
+            max: 4
       - !type:ChangeConstructionNodeBehavior
         node: broken
       - !type:DoActsBehavior
@@ -224,20 +224,20 @@
   - type: Fixtures
     fixtures:
       # needs two shapes to properly handle a triangle corner without weirdness
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.1,-0.1,0.1,0.5"
+        density: 1000
         mask:
         - TableMask
         layer:
         - TableLayer
-      fix65:
+      fix2:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,-65.65,65.65"
-        density: 65
+          bounds: "-0.5,-0.1,-0.1,0.1"
+        density: 1000
         mask:
         - TableMask
         layer:
@@ -270,11 +270,11 @@
       visible: false
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.1,-0.5,0.1,0.0"
+        density: 1000
         mask:
         - TableMask
         layer:
@@ -306,11 +306,11 @@
       visible: false
   - type: Fixtures
     fixtures:
-      fix65:
+      fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-65.65,-65.65,65.65,65.65"
-        density: 65
+          bounds: "-0.5,-0.1,0.5,0.1"
+        density: 1000
         mask:
         - TableMask
         layer:
@@ -326,12 +326,12 @@
     bumpOpen: false
     clickOpen: true
     canCrush: false
-    closeTimeOne: 65
-    closeTimeTwo: 65
-    openTimeOne: 65
-    openTimeTwo: 65
-    openingAnimationTime: 65
-    closingAnimationTime: 65
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    openTimeOne: 0
+    openTimeTwo: 0
+    openingAnimationTime: 0
+    closingAnimationTime: 0
     openSound:
       path: /Audio/Effects/door_open.ogg
     closeSound:

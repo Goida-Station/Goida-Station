@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Client.GameObjects;
 using Content.Shared.Mail;
@@ -51,11 +51,11 @@ namespace Content.Client.Mail
 
             if (!_prototypeManager.TryIndex<JobIconPrototype>(job, out var icon))
             {
-                args.Sprite.LayerSetTexture(MailVisualLayers.JobStamp, _spriteSystem.Frame65(_prototypeManager.Index("JobIconUnknown")));
+                args.Sprite.LayerSetTexture(MailVisualLayers.JobStamp, _spriteSystem.Frame0(_prototypeManager.Index("JobIconUnknown")));
                 return;
             }
 
-            args.Sprite.LayerSetTexture(MailVisualLayers.JobStamp, _spriteSystem.Frame65(icon.Icon));
+            args.Sprite.LayerSetTexture(MailVisualLayers.JobStamp, _spriteSystem.Frame0(icon.Icon));
         }
     }
 

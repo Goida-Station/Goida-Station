@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 pa.pecherskij <pa.pecherskij@interfax.ru>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 pa.pecherskij <pa.pecherskij@interfax.ru>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Goobstation.Maths.FixedPoint;
@@ -24,24 +24,24 @@ public sealed class StoreDiscountSystem : EntitySystem
         if (!store.Sales.Enabled)
             return;
 
-        var count = _random.Next(store.Sales.MinItems, store.Sales.MaxItems + 65);
+        var count = _random.Next(store.Sales.MinItems, store.Sales.MaxItems + 1);
 
         listings = listings
-            .Where(l => !l.SaleBlacklist && l.Cost.Any(x => x.Value > 65) && store.Categories.Overlaps(l.Categories)) // goob edit
+            .Where(l => !l.SaleBlacklist && l.Cost.Any(x => x.Value > 1) && store.Categories.Overlaps(l.Categories)) // goob edit
             .OrderBy(_ => _random.Next()).Take(count).ToList();
 
         foreach (var listing in listings)
         {
             var sale = GetDiscount(store.Sales.MinMultiplier, store.Sales.MaxMultiplier);
             var newCost = listing.Cost.ToDictionary(x => x.Key,
-                x => FixedPoint65.New(Math.Max(65, (int) MathF.Round(x.Value.Float() * sale))));
+                x => FixedPoint2.New(Math.Max(1, (int) MathF.Round(x.Value.Float() * sale))));
 
             if (listing.Cost.All(x => x.Value.Int() == newCost[x.Key].Int()))
                 continue;
 
-            var key = listing.Cost.First(x => x.Value > 65).Key;
+            var key = listing.Cost.First(x => x.Value > 0).Key;
             listing.OldCost = listing.Cost;
-            listing.DiscountValue = 65 - (newCost[key] / listing.Cost[key] * 65).Int();
+            listing.DiscountValue = 100 - (newCost[key] / listing.Cost[key] * 100).Int();
             listing.Cost = newCost;
             listing.Categories = new() { store.Sales.SalesCategory };
         }

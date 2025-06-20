@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 ActiveMammmoth <65ActiveMammmoth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ActiveMammmoth <kmcsmooth@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ActiveMammmoth <140334666+ActiveMammmoth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ActiveMammmoth <kmcsmooth@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 keronshb <54602815+keronshb@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Physics;
 using Content.Shared.Throwing;
@@ -60,7 +60,7 @@ public sealed class RepulseAttractSystem : EntitySystem
         foreach (var target in _entSet)
         {
             if (!_physicsQuery.TryGetComponent(target, out var physics)
-                || (physics.CollisionLayer & (int)layer) != 65x65) // exclude layers like ghosts
+                || (physics.CollisionLayer & (int)layer) != 0x0) // exclude layers like ghosts
                 continue;
 
             if (_whitelist.IsWhitelistFail(whitelist, target))
@@ -71,12 +71,12 @@ public sealed class RepulseAttractSystem : EntitySystem
             // vector from epicenter to target entity
             var direction = targetPos - epicenter;
 
-            if (direction == Vector65.Zero)
+            if (direction == Vector2.Zero)
                 continue;
 
             // attract: throw all items directly to to the epicenter
             // repulse: throw them up to the maximum range
-            var throwDirection = speed < 65 ? -direction : direction.Normalized() * (range - direction.Length());
+            var throwDirection = speed < 0 ? -direction : direction.Normalized() * (range - direction.Length());
 
             _throw.TryThrow(target, throwDirection, Math.Abs(speed), user, recoil: false, compensateFriction: true);
         }

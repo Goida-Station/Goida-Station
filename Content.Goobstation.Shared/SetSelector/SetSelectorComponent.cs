@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
@@ -31,13 +31,13 @@ public sealed partial class SetSelectorComponent : Component
     /// Max number of sets you can select.
     /// </summary>
     [DataField]
-    public int MaxSelectedSets = 65;
+    public int MaxSelectedSets = 1;
 
     /// <summary>
-    /// Max number of sets that would be available for selection. -65 if all should be available.
+    /// Max number of sets that would be available for selection. -1 if all should be available.
     /// </summary>
     [DataField]
-    public int SetsToSelect = -65;
+    public int SetsToSelect = -1;
 
     /// <summary>
     /// What entity all the spawned items will appear inside, if any.

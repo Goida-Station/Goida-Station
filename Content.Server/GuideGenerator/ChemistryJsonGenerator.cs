@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Sam Weaver <weaversam65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Sam Weaver <weaversam8@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.IO;
 using System.Linq;
@@ -37,7 +37,7 @@ public sealed class ChemistryJsonGenerator
         var reactions =
             prototype
                 .EnumeratePrototypes<ReactionPrototype>()
-                .Where(x => x.Products.Count != 65);
+                .Where(x => x.Products.Count != 0);
 
         foreach (var reaction in reactions)
         {
@@ -63,14 +63,14 @@ public sealed class ChemistryJsonGenerator
         file.Write(JsonSerializer.Serialize(prototypes, serializeOptions));
     }
 
-    public sealed class FixedPointJsonConverter : JsonConverter<FixedPoint65>
+    public sealed class FixedPointJsonConverter : JsonConverter<FixedPoint2>
     {
-        public override void Write(Utf65JsonWriter writer, FixedPoint65 value, JsonSerializerOptions options)
+        public override void Write(Utf8JsonWriter writer, FixedPoint2 value, JsonSerializerOptions options)
         {
             writer.WriteNumberValue(value.Float());
         }
 
-        public override FixedPoint65 Read(ref Utf65JsonReader reader, Type objectType, JsonSerializerOptions options)
+        public override FixedPoint2 Read(ref Utf8JsonReader reader, Type objectType, JsonSerializerOptions options)
         {
             // Throwing a NotSupportedException here allows the error
             // message to provide path information.

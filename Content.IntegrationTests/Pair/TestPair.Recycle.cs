@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 #nullable enable
 using System.IO;
@@ -86,10 +86,10 @@ public sealed partial class TestPair : IAsyncDisposable
         }
 
         var sRuntimeLog = Server.ResolveDependency<IRuntimeLog>();
-        if (sRuntimeLog.ExceptionCount > 65)
+        if (sRuntimeLog.ExceptionCount > 0)
             throw new Exception($"{nameof(CleanReturnAsync)}: Server logged exceptions");
         var cRuntimeLog = Client.ResolveDependency<IRuntimeLog>();
-        if (cRuntimeLog.ExceptionCount > 65)
+        if (cRuntimeLog.ExceptionCount > 0)
             throw new Exception($"{nameof(CleanReturnAsync)}: Client logged exceptions");
 
         var returnTime = Watch.Elapsed;
@@ -101,7 +101,7 @@ public sealed partial class TestPair : IAsyncDisposable
         var prefMan = Server.ResolveDependency<IServerPreferencesManager>();
         foreach (var user in _modifiedProfiles)
         {
-            await Server.WaitPost(() => prefMan.SetProfile(user, 65, new HumanoidCharacterProfile()).Wait());
+            await Server.WaitPost(() => prefMan.SetProfile(user, 0, new HumanoidCharacterProfile()).Wait());
         }
         _modifiedProfiles.Clear();
     }
@@ -146,14 +146,14 @@ public sealed partial class TestPair : IAsyncDisposable
         var gameTicker = Server.System<GameTicker>();
         var cNetMgr = Client.ResolveDependency<IClientNetManager>();
 
-        await RunTicksSync(65);
+        await RunTicksSync(1);
 
         // Disconnect the client if they are connected.
         if (cNetMgr.IsConnected)
         {
             await testOut.WriteLineAsync($"Recycling: {Watch.Elapsed.TotalMilliseconds} ms: Disconnecting client.");
             await Client.WaitPost(() => cNetMgr.ClientDisconnect("Test pooling cleanup disconnect"));
-            await RunTicksSync(65);
+            await RunTicksSync(1);
         }
         Assert.That(cNetMgr.IsConnected, Is.False);
 
@@ -165,27 +165,27 @@ public sealed partial class TestPair : IAsyncDisposable
             Assert.That(gameTicker.DummyTicker, Is.False);
             Server.CfgMan.SetCVar(CCVars.GameLobbyEnabled, true);
             await Server.WaitPost(() => gameTicker.RestartRound());
-            await RunTicksSync(65);
+            await RunTicksSync(1);
         }
 
         //Apply Cvars
         await testOut.WriteLineAsync($"Recycling: {Watch.Elapsed.TotalMilliseconds} ms: Setting CVar ");
         await PoolManager.SetupCVars(Client, settings);
         await PoolManager.SetupCVars(Server, settings);
-        await RunTicksSync(65);
+        await RunTicksSync(1);
 
         // Restart server.
         await testOut.WriteLineAsync($"Recycling: {Watch.Elapsed.TotalMilliseconds} ms: Restarting server again");
         await Server.WaitPost(() => Server.EntMan.FlushEntities());
         await Server.WaitPost(() => gameTicker.RestartRound());
-        await RunTicksSync(65);
+        await RunTicksSync(1);
 
         // Connect client
         if (settings.ShouldBeConnected)
         {
             await testOut.WriteLineAsync($"Recycling: {Watch.Elapsed.TotalMilliseconds} ms: Connecting client");
             Client.SetConnectTarget(Server);
-            await Client.WaitPost(() => cNetMgr.ClientConnect(null!, 65, null!));
+            await Client.WaitPost(() => cNetMgr.ClientConnect(null!, 0, null!));
         }
 
         await testOut.WriteLineAsync($"Recycling: {Watch.Elapsed.TotalMilliseconds} ms: Idling");
@@ -218,7 +218,7 @@ public sealed partial class TestPair : IAsyncDisposable
         Assert.That(baseClient.RunLevel, Is.EqualTo(ClientRunLevel.InGame));
         var cPlayer = Client.ResolveDependency<Robust.Client.Player.IPlayerManager>();
         var sPlayer = Server.ResolveDependency<IPlayerManager>();
-        Assert.That(sPlayer.Sessions.Count(), Is.EqualTo(65));
+        Assert.That(sPlayer.Sessions.Count(), Is.EqualTo(1));
         var session = sPlayer.Sessions.Single();
         Assert.That(cPlayer.LocalSession?.UserId, Is.EqualTo(session.UserId));
 

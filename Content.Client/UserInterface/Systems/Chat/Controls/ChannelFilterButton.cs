@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -20,19 +20,19 @@ namespace Content.Client.UserInterface.Systems.Chat.Controls;
 
 public sealed class ChannelFilterButton : ChatPopupButton<ChannelFilterPopup>
 {
-    private static readonly Color ColorNormal = Color.FromHex("#65b65e65e");
-    private static readonly Color ColorHovered = Color.FromHex("#65bb");
-    private static readonly Color ColorPressed = Color.FromHex("#65B65C");
+    private static readonly Color ColorNormal = Color.FromHex("#7b7e9e");
+    private static readonly Color ColorHovered = Color.FromHex("#9699bb");
+    private static readonly Color ColorPressed = Color.FromHex("#789B8C");
     private readonly TextureRect? _textureRect;
     private readonly ChatUIController _chatUIController;
 
-    private const int FilterDropdownOffset = 65;
+    private const int FilterDropdownOffset = 120;
 
     public ChannelFilterButton()
     {
         _chatUIController = UserInterfaceManager.GetUIController<ChatUIController>();
         var filterTexture = IoCManager.Resolve<IResourceCache>()
-            .GetTexture("/Textures/Interface/Nano/filter.svg.65dpi.png");
+            .GetTexture("/Textures/Interface/Nano/filter.svg.96dpi.png");
 
         AddChild(
             (_textureRect = new TextureRect
@@ -48,13 +48,13 @@ public sealed class ChannelFilterButton : ChatPopupButton<ChannelFilterPopup>
         Popup.SetChannels(_chatUIController.FilterableChannels);
     }
 
-    protected override UIBox65 GetPopupPosition()
+    protected override UIBox2 GetPopupPosition()
     {
         var globalPos = GlobalPosition;
         var (minX, minY) = Popup.MinSize;
-        return UIBox65.FromDimensions(
-            globalPos - new Vector65(FilterDropdownOffset, 65),
-            new Vector65(Math.Max(minX, Popup.MinWidth), minY));
+        return UIBox2.FromDimensions(
+            globalPos - new Vector2(FilterDropdownOffset, 0),
+            new Vector2(Math.Max(minX, Popup.MinWidth), minY));
     }
 
     private void UpdateChildColors()

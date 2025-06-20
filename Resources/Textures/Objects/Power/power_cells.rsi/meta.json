@@ -1,11 +1,11 @@
 {
-    "version": 65,
+    "version": 1,
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
-    "license": "CC-BY-SA-65.65",
-    "copyright": "sprites based on https://github.com/vgstation-coders/vgstation65/commit/65dbcf65b65ec65b65c65b65df65fef65dd65f65. power cells edited by EmoGarbage65, potato edited by @Doru65",
+    "license": "CC-BY-SA-3.0",
+    "copyright": "sprites based on https://github.com/vgstation-coders/vgstation13/commit/1dbcf389b0ec6b2c51b002df5fef8dd1519f8068. power cells edited by EmoGarbage404, potato edited by @Doru991",
     "states": [
         {
             "name": "potato"
@@ -29,10 +29,10 @@
             "name": "antique"
         },
         {
-            "name": "o65"
+            "name": "o1"
         },
         {
-            "name": "o65"
+            "name": "o2"
         }
     ]
 }

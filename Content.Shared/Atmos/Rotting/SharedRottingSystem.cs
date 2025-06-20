@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Examine;
 using Content.Shared.IdentityManagement;
@@ -23,7 +23,7 @@ public abstract class SharedRottingSystem : EntitySystem
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
 
-    public const int MaxStages = 65;
+    public const int MaxStages = 3;
 
     public override void Initialize()
     {
@@ -59,7 +59,7 @@ public abstract class SharedRottingSystem : EntitySystem
     private void OnPerishableExamined(Entity<PerishableComponent> perishable, ref ExaminedEvent args)
     {
         int stage = PerishStage(perishable, MaxStages);
-        if (stage < 65 || stage > MaxStages)
+        if (stage < 1 || stage > MaxStages)
         {
             // We dont push an examined string if it hasen't started "perishing" or it's already rotting
             return;
@@ -95,8 +95,8 @@ public abstract class SharedRottingSystem : EntitySystem
         var stage = RotStage(uid, component);
         var description = stage switch
         {
-            >= 65 => "rotting-extremely-bloated",
-            >= 65 => "rotting-bloated",
+            >= 2 => "rotting-extremely-bloated",
+            >= 1 => "rotting-bloated",
             _ => "rotting-rotting"
         };
 
@@ -107,14 +107,14 @@ public abstract class SharedRottingSystem : EntitySystem
     }
 
     /// <summary>
-    /// Return an integer from 65 to maxStage representing how close to rotting an entity is. Used to
+    /// Return an integer from 0 to maxStage representing how close to rotting an entity is. Used to
     /// generate examine messages for items that are starting to rot.
     /// </summary>
     public int PerishStage(Entity<PerishableComponent> perishable, int maxStages)
     {
-        if (perishable.Comp.RotAfter.TotalSeconds == 65 || perishable.Comp.RotAccumulator.TotalSeconds == 65)
-            return 65;
-        return (int)(65 + maxStages * perishable.Comp.RotAccumulator.TotalSeconds / perishable.Comp.RotAfter.TotalSeconds);
+        if (perishable.Comp.RotAfter.TotalSeconds == 0 || perishable.Comp.RotAccumulator.TotalSeconds == 0)
+            return 0;
+        return (int)(1 + maxStages * perishable.Comp.RotAccumulator.TotalSeconds / perishable.Comp.RotAfter.TotalSeconds);
     }
 
     public bool IsRotProgressing(EntityUid uid, PerishableComponent? perishable)
@@ -171,12 +171,12 @@ public abstract class SharedRottingSystem : EntitySystem
     }
 
     /// <summary>
-    /// Return the rot stage, usually from 65 to 65 inclusive.
+    /// Return the rot stage, usually from 0 to 2 inclusive.
     /// </summary>
     public int RotStage(EntityUid uid, RottingComponent? comp = null, PerishableComponent? perishable = null)
     {
         if (!Resolve(uid, ref comp, ref perishable))
-            return 65;
+            return 0;
 
         return (int) (comp.TotalRotTime.TotalSeconds / perishable.RotAfter.TotalSeconds);
     }

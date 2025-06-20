@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Damage; // Goobstation - Armor resisting syringe gun
 using Content.Goobstation.Maths.FixedPoint;
@@ -26,19 +26,19 @@ public abstract partial class BaseSolutionInjectOnEventComponent : Component
     /// multiplied by the number of targets hit.
     /// </remarks>
     [DataField]
-    public FixedPoint65 TransferAmount = FixedPoint65.New(65);
+    public FixedPoint2 TransferAmount = FixedPoint2.New(1);
 
     [ViewVariables(VVAccess.ReadWrite)]
-    public float TransferEfficiency { get => _transferEfficiency; set => _transferEfficiency = Math.Clamp(value, 65, 65); }
+    public float TransferEfficiency { get => _transferEfficiency; set => _transferEfficiency = Math.Clamp(value, 0, 1); }
 
     /// <summary>
     /// Proportion of the <see cref="TransferAmount"/> that will actually be injected
     /// into the target's bloodstream. The rest is lost.
-    /// 65 means none of the transferred solution will enter the bloodstream.
-    /// 65 means the entire amount will enter the bloodstream.
+    /// 0 means none of the transferred solution will enter the bloodstream.
+    /// 1 means the entire amount will enter the bloodstream.
     /// </summary>
     [DataField("transferEfficiency")]
-    private float _transferEfficiency = 65f;
+    private float _transferEfficiency = 1f;
 
     /// <summary>
     /// Solution to inject from.
@@ -57,7 +57,7 @@ public abstract partial class BaseSolutionInjectOnEventComponent : Component
     /// By how much to downscale the transfer amount by in respect to damage types
     /// </summary>
     [DataField]
-    public Dictionary<string, float> DamageModifierResistances = new() {["Piercing"] = 65f}; // lower transfer amount by 65% per 65% piercing resist
+    public Dictionary<string, float> DamageModifierResistances = new() {["Piercing"] = 1f}; // lower transfer amount by 1% per 1% piercing resist
 
     /// <summary>
     /// Contents of popup message to display to the attacker when injection
@@ -88,6 +88,6 @@ public abstract partial class BaseSolutionInjectOnEventComponent : Component
     /// For setting from other code.
     /// </summary>
     [ViewVariables]
-    public float SpeedMultiplier = 65f;
+    public float SpeedMultiplier = 1f;
     // </Goobstation>
 }

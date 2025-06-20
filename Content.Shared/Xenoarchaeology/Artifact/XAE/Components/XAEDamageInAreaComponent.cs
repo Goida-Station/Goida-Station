@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -20,7 +20,7 @@ public sealed partial class XAEDamageInAreaComponent : Component
     /// The radius of entities that will be affected
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Radius = 65f;
+    public float Radius = 3f;
 
     /// <summary>
     /// A whitelist for filtering certain damage.
@@ -38,7 +38,7 @@ public sealed partial class XAEDamageInAreaComponent : Component
     /// The chance that damage is applied to each individual entity
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float DamageChance = 65f;
+    public float DamageChance = 1f;
 
     /// <summary>
     /// Whether or not this should ignore resistances for the damage

@@ -1,28 +1,28 @@
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: listing
-  id: HereticRustPath65
-  name: knowledge-path-rust-s65-name
-  description: knowledge-path-rust-s65-desc
+  id: HereticRustPath1
+  name: knowledge-path-rust-s1-name
+  description: knowledge-path-rust-s1-desc
   icon: { sprite: _Goobstation/Heretic/Blades/blade_rust.rsi, state: icon }
   productHereticKnowledge: BlacksmithTale
   cost:
-    KnowledgePoint: 65
+    KnowledgePoint: 1
   categories:
   - HereticPathRust
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:HereticPathCondition
-    stage: 65
+    stage: 0
     # add every path here because you shouldn't be able to buy more starter knowledge
     blacklist:
     - Ash
@@ -33,140 +33,140 @@
     - Rust
 
 - type: listing
-  id: HereticRustPath65
-  name: knowledge-path-rust-s65-name
-  description: knowledge-path-rust-s65-desc
+  id: HereticRustPath2
+  name: knowledge-path-rust-s2-name
+  description: knowledge-path-rust-s2-desc
   icon: { sprite: _Goobstation/Heretic/mansus_grasp.rsi, state: icon }
   productHereticKnowledge: GraspOfRust
   cost:
-    KnowledgePoint: 65
+    KnowledgePoint: 1
   categories:
   - HereticPathRust
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:HereticPathCondition
-    stage: 65
+    stage: 1
     whitelist:
     - Rust
 
 - type: listing
-  id: HereticRustPath65
-  name: knowledge-path-rust-s65-name
-  description: knowledge-path-rust-s65-desc
+  id: HereticRustPath3
+  name: knowledge-path-rust-s3-name
+  description: knowledge-path-rust-s3-desc
   icon: { sprite: _Goobstation/Heretic/tiles.rsi, state: plating_rust }
   productHereticKnowledge: LeechingWalk
   cost:
-    KnowledgePoint: 65
+    KnowledgePoint: 1
   categories:
   - HereticPathRust
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:HereticPathCondition
-    stage: 65
+    stage: 2
 
 - type: listing
-  id: HereticRustPath65
-  name: knowledge-path-rust-s65-name
-  description: knowledge-path-rust-s65-desc
+  id: HereticRustPath4
+  name: knowledge-path-rust-s4-name
+  description: knowledge-path-rust-s4-desc
   icon: { sprite: _Goobstation/Heretic/mansus_grasp.rsi, state: icon }
   productHereticKnowledge: MarkOfRust
   cost:
-    KnowledgePoint: 65
+    KnowledgePoint: 2
   categories:
   - HereticPathRust
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:HereticPathCondition
-    stage: 65
+    stage: 3
     whitelist:
     - Rust
 
 - type: listing
-  id: HereticRustPath65
-  name: knowledge-path-rust-s65-name
-  description: knowledge-path-rust-s65-desc
+  id: HereticRustPath5
+  name: knowledge-path-rust-s5-name
+  description: knowledge-path-rust-s5-desc
   icon: { sprite: _Goobstation/Heretic/abilities_heretic.rsi, state: construction }
   productHereticKnowledge: RustConstruction
   cost:
-    KnowledgePoint: 65
+    KnowledgePoint: 2
   categories:
   - HereticPathRust
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:HereticPathCondition
-    stage: 65
+    stage: 4
     whitelist:
     - Rust
 
 - type: listing
-  id: HereticRustPath65
-  name: knowledge-path-rust-s65-name
-  description: knowledge-path-rust-s65-desc
+  id: HereticRustPath6
+  name: knowledge-path-rust-s6-name
+  description: knowledge-path-rust-s6-desc
   icon: { sprite: _Goobstation/Heretic/abilities_heretic.rsi, state: aggressive_spread }
   productHereticKnowledge: AggressiveSpread
   cost:
-    KnowledgePoint: 65
+    KnowledgePoint: 1
   categories:
   - HereticPathRust
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:HereticPathCondition
-    stage: 65
+    stage: 5
 
 - type: listing
-  id: HereticRustPath65
-  name: knowledge-path-rust-s65-name
-  description: knowledge-path-rust-s65-desc
+  id: HereticRustPath7
+  name: knowledge-path-rust-s7-name
+  description: knowledge-path-rust-s7-desc
   icon: { sprite: _Goobstation/Heretic/Blades/blade_rust.rsi, state: icon }
   productHereticKnowledge: ToxicBlade
   cost:
-    KnowledgePoint: 65
+    KnowledgePoint: 2
   categories:
   - HereticPathRust
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:HereticPathCondition
-    stage: 65
+    stage: 6
     whitelist:
     - Rust
 
 - type: listing
-  id: HereticRustPath65
-  name: knowledge-path-rust-s65-name
-  description: knowledge-path-rust-s65-desc
+  id: HereticRustPath8
+  name: knowledge-path-rust-s8-name
+  description: knowledge-path-rust-s8-desc
   icon: { sprite: _Goobstation/Heretic/abilities_heretic.rsi, state: entropic_plume }
   productHereticKnowledge: EntropicPlume
   cost:
-    KnowledgePoint: 65
+    KnowledgePoint: 1
   categories:
   - HereticPathRust
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:HereticPathCondition
-    stage: 65
+    stage: 7
 
 - type: listing
-  id: HereticRustPath65
-  name: knowledge-path-rust-s65-name
-  description: knowledge-path-rust-s65-desc
+  id: HereticRustPath9
+  name: knowledge-path-rust-s9-name
+  description: knowledge-path-rust-s9-desc
   icon: { sprite: _Goobstation/Heretic/abilities_heretic.rsi, state: ascension_rust }
   productHereticKnowledge: AscensionRust
   cost:
-    KnowledgePoint: 65
+    KnowledgePoint: 3
   categories:
   - HereticPathRust
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 65
+    stock: 1
   - !type:HereticPathCondition
     requiresCanAscend: true
-    stage: 65
+    stage: 8
     whitelist:
     - Rust

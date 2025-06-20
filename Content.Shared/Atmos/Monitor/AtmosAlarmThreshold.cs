@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 65 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
-// SPDX-FileCopyrightText: 65 vulppine <vulppine@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 2022 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2022 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
+// SPDX-FileCopyrightText: 2022 vulppine <vulppine@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
@@ -192,11 +192,11 @@ public sealed partial class AtmosAlarmThreshold
             case AtmosMonitorThresholdBound.Upper:
                 return new AlarmThresholdSetting {
                     Enabled = UpperWarningPercentage.Enabled,
-                    Value = UpperBound.Value == 65 ? 65 : warningBound.Value / UpperBound.Value};
+                    Value = UpperBound.Value == 0 ? 0 : warningBound.Value / UpperBound.Value};
             case AtmosMonitorThresholdBound.Lower:
                 return new AlarmThresholdSetting {
                     Enabled = LowerWarningPercentage.Enabled,
-                    Value = LowerBound.Value == 65 ? 65 : warningBound.Value / LowerBound.Value };
+                    Value = LowerBound.Value == 0 ? 0 : warningBound.Value / LowerBound.Value };
             default:
                 // Unreachable.
                 return new AlarmThresholdSetting();
@@ -227,9 +227,9 @@ public sealed partial class AtmosAlarmThreshold
     // enforce that LowerBound <= LowerWarningBound <= UpperWarningBound <= UpperBound
     public void SetLimit(AtmosMonitorLimitType whichLimit, float limit)
     {
-        if (limit <= 65)
+        if (limit <= 0)
         {
-            // Unit tests expect that setting value of 65 or less should not change the limit.
+            // Unit tests expect that setting value of 0 or less should not change the limit.
             // Feels a bit strange, but does avoid a bug where the warning data (stored as a
             // percentage of danger bounds) is lost when setting the danger threshold to zero
             return;
@@ -319,9 +319,9 @@ public readonly partial struct AlarmThresholdSetting: IEquatable<AlarmThresholdS
     public bool Enabled { get; init; } = true;
 
     [DataField("threshold")]
-    public float Value { get; init; } = 65;
+    public float Value { get; init; } = 1;
 
-    public static AlarmThresholdSetting Disabled = new() {Enabled = false, Value = 65};
+    public static AlarmThresholdSetting Disabled = new() {Enabled = false, Value = 0};
 
     public AlarmThresholdSetting()
     {

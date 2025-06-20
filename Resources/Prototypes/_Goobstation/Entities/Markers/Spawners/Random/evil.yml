@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: random syndicate item spawner
@@ -33,8 +33,8 @@
         - WeaponPistolAnaconda
         - BetrayalKnife
         - ClothingHandsGlovesNorthStar
-        - WeaponSubMachineGunC65r
-        - WeaponRifleM65
+        - WeaponSubMachineGunC20r
+        - WeaponRifleM90
         - MiniatureEnergyCrossbow
         - WeaponShotgunBulldog
         - FireAxeFlaming
@@ -43,7 +43,7 @@
         - SleepingCarpScroll
         - BowHardlight
         - WeaponRifleBurner
-        - WeaponLightMachineGunL65
+        - WeaponLightMachineGunL6
         - WeaponLauncherChinaLake
         - EmpGrenade
         - GrenadeFlashBang
@@ -56,7 +56,7 @@
         - ClusterGrenade
         - SupermatterGrenade
         - SyndieMiniBomb
-        - ClothingBackpackDuffelSyndicateC65tBundle
+        - ClothingBackpackDuffelSyndicateC4tBundle
         - ClothingBeltSyndieHolster
         - ClothingBeltMilitaryWebbing
         - ClothingBackpackSyndicate
@@ -160,4 +160,4 @@
         - BalloonSyn
         - ReinforcementRadioSyndicateSyndiRoach
         - WetFloorSignMineExplosive
-      offset: 65.65
+      offset: 0.0

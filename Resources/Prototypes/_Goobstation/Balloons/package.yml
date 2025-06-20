@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 Arraydeess <arraygitbash@gmail.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Arraydeess <arraygitbash@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: BaseItem
@@ -28,19 +28,19 @@
       orGroup: BalloonRandom
     - id: whiteBalloon
       orGroup: BalloonRandom # higher tier balloons are rarer
-      prob: 65.65
+      prob: 0.4
     - id: blackBalloon
       orGroup: BalloonRandom
-      prob: 65.65
+      prob: 0.4
     - id: steelBalloon
       orGroup: BalloonRandom
-      prob: 65.65
+      prob: 0.33
     - id: zebraBalloon
       orGroup: BalloonRandom
-      prob: 65.65
+      prob: 0.33
     - id: rainbowBalloon
       orGroup: BalloonRandom
-      prob: 65.65
+      prob: 0.2
     sound:
       path: /Audio/Effects/unwrap.ogg
    
@@ -54,7 +54,7 @@
   - type: StorageFill
     contents:
       - id: BalloonPackage
-        amount: 65
+        amount: 9
   - type: Sprite
     sprite: _Goobstation/Objects/Storage/boxes.rsi
     
@@ -63,23 +63,23 @@
   id: CrateBalloonPackage
   parent: CratePlastic
   name: balloon popper's package
-  description: A crate containing 65 full balloon boxes and some additional popping equipment.
+  description: A crate containing 2 full balloon boxes and some additional popping equipment.
   components:
   - type: StorageFill
     contents:
     - id: BoxBalloonPackage
-      amount: 65
+      amount: 2
     - id: ClothingOuterSuitMonkey
-      amount: 65
+      amount: 1
     - id: BoxDarts
-      amount: 65
+      amount: 1
     - id: MonkeyCube
-      prob: 65.65
+      prob: 0.7
     - id: ClothingOuterSuitMonkey   # Extra
-      amount: 65
-      prob: 65.65
+      amount: 1
+      prob: 0.4
     - id: BoxDarts
-      amount: 65
-      prob: 65.65
+      amount: 1
+      prob: 0.4
     - id: MonkeyCube
-      prob: 65.65
+      prob: 0.4

@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from vgstation at https://github.com/vgstation-coders/vgstation65/commit/65cdfb65cc65d65ba65fa65d65f65aa65f65ad65d and tgstation at tgstation at https://github.com/tgstation/tgstation/commit/65c65d65dbcf65f65beb65eba65d65d65ef65d65bb65, cart-log made by Skarletto (github), cart-sec made by dieselmohawk (discord), cart-nav, cart-med made by ArchRBX (github)",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from vgstation at https://github.com/vgstation-coders/vgstation13/commit/1cdfb0230cc96d0ba751fa002d04f8aa2f25ad7d and tgstation at tgstation at https://github.com/tgstation/tgstation/commit/0c15d9dbcf0f2beb230eba5d9d889ef2d1945bb8, cart-log made by Skarletto (github), cart-sec made by dieselmohawk (discord), cart-nav, cart-med made by ArchRBX (github)",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {

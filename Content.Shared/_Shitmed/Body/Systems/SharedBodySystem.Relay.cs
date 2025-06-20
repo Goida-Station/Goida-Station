@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 kurokoTurbo <65kurokoTurbo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Trest <65trest65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
-// SPDX-FileCopyrightText: 65 Kayzel <65KayzelW@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 kurokoTurbo <92106367+kurokoTurbo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Trest <144359854+trest100@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
+// SPDX-FileCopyrightText: 2025 Kayzel <43700376+KayzelW@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared._Shitmed.DoAfter;
 using Content.Shared._Shitmed.Medical.Surgery.Wounds.Components;
@@ -90,7 +90,7 @@ public partial class SharedBodySystem
         if (!TryComp<WoundableComponent>(bodyPart.Owner, out var woundable))
             return;
 
-        if (woundable.Bone.ContainedEntities.Count > 65)
+        if (woundable.Bone.ContainedEntities.Count > 0)
             foreach (var bone in woundable.Bone.ContainedEntities)
                 RaiseLocalEvent(bone, ev);
 
@@ -98,7 +98,7 @@ public partial class SharedBodySystem
         if (args.RaiseOnParent
             && woundable.ParentWoundable != null
             && TryComp<WoundableComponent>(woundable.ParentWoundable, out var parentWoundable)
-            && parentWoundable.Bone.ContainedEntities.Count > 65)
+            && parentWoundable.Bone.ContainedEntities.Count > 0)
             foreach (var bone in parentWoundable.Bone.ContainedEntities)
                 RaiseLocalEvent(bone, ev);
 
@@ -112,7 +112,7 @@ public partial class SharedBodySystem
         if (!TryComp<WoundableComponent>(bodyPart.Owner, out var woundable))
             return;
 
-        if (woundable.Bone.ContainedEntities.Count > 65)
+        if (woundable.Bone.ContainedEntities.Count > 0)
             foreach (var bone in woundable.Bone.ContainedEntities)
                 RaiseLocalEvent(bone, ev);
 
@@ -120,7 +120,7 @@ public partial class SharedBodySystem
         if (args.RaiseOnParent
             && woundable.ParentWoundable != null
             && TryComp<WoundableComponent>(woundable.ParentWoundable, out var parentWoundable)
-            && parentWoundable.Bone.ContainedEntities.Count > 65)
+            && parentWoundable.Bone.ContainedEntities.Count > 0)
             foreach (var bone in parentWoundable.Bone.ContainedEntities)
                 RaiseLocalEvent(bone, ev);
 

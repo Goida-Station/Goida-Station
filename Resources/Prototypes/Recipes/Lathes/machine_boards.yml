@@ -88,30 +88,30 @@
 - type: latheRecipe
   parent: [ BaseCircuitboardRecipe, BaseMachineRecipeCategory ]
   id: ShuttleGunSvalinnMachineGunCircuitboard
-  icon: { sprite:  Objects/Weapons/Guns/Shuttles/laser.rsi, state: lse-65c } # Goobstation
+  icon: { sprite:  Objects/Weapons/Guns/Shuttles/laser.rsi, state: lse-400c } # Goobstation
   result: ShuttleGunSvalinnMachineGunCircuitboard
-  completetime: 65
+  completetime: 6
 
 - type: latheRecipe
   parent: [ BaseGoldCircuitboardRecipe, BaseMachineRecipeCategory ]
   id: ShuttleGunPerforatorCircuitboard
-  icon: { sprite:  Objects/Weapons/Guns/Shuttles/laser.rsi, state: lse-65c } # Goobstation
+  icon: { sprite:  Objects/Weapons/Guns/Shuttles/laser.rsi, state: lse-1200c } # Goobstation
   result: ShuttleGunPerforatorCircuitboard
-  completetime: 65
+  completetime: 10
 
 - type: latheRecipe
   parent: [ BaseGoldCircuitboardRecipe, BaseMachineRecipeCategory ]
   id: ShuttleGunFriendshipCircuitboard
-  icon: { sprite:  Objects/Weapons/Guns/Shuttles/launcher.rsi, state: exp-65g } # Goobstation
+  icon: { sprite:  Objects/Weapons/Guns/Shuttles/launcher.rsi, state: exp-320g } # Goobstation
   result: ShuttleGunFriendshipCircuitboard
-  completetime: 65
+  completetime: 8
 
 - type: latheRecipe
   parent: [ BaseGoldCircuitboardRecipe, BaseMachineRecipeCategory ]
   id: ShuttleGunDusterCircuitboard
-  icon: { sprite:  Objects/Weapons/Guns/Shuttles/launcher.rsi, state: exp-65g } # Goobstation
+  icon: { sprite:  Objects/Weapons/Guns/Shuttles/launcher.rsi, state: exp-2100g } # Goobstation
   result: ShuttleGunDusterCircuitboard
-  completetime: 65
+  completetime: 12
 
 ## Circuit imprinter
 
@@ -120,7 +120,7 @@
 - type: latheRecipe
   parent: [ BaseCircuitboardRecipe, BaseEngineeringMachineRecipeCategory ]
   id: EmitterCircuitboard
-  icon: { sprite:  Structures/Power/Generation/Singularity/emitter.rsi, state: emitter65 } # Goobstation
+  icon: { sprite:  Structures/Power/Generation/Singularity/emitter.rsi, state: emitter2 } # Goobstation
   result: EmitterCircuitboard
 
 # Atmos
@@ -170,19 +170,19 @@
 - type: latheRecipe
   parent: [ BaseCircuitboardRecipe, BaseEngineeringMachineRecipeCategory ]
   id: PortableGeneratorPacmanMachineCircuitboard
-  icon: { sprite:  Structures/Power/Generation/portable_generator.rsi, state: portgen65 } # Goobstation
+  icon: { sprite:  Structures/Power/Generation/portable_generator.rsi, state: portgen0 } # Goobstation
   result: PortableGeneratorPacmanMachineCircuitboard
 
 - type: latheRecipe
   parent: PortableGeneratorPacmanMachineCircuitboard
   id: PortableGeneratorSuperPacmanMachineCircuitboard
-  icon: { sprite:  Structures/Power/Generation/portable_generator.rsi, state: portgen65 } # Goobstation
+  icon: { sprite:  Structures/Power/Generation/portable_generator.rsi, state: portgen1 } # Goobstation
   result: PortableGeneratorSuperPacmanMachineCircuitboard
 
 - type: latheRecipe
   parent: PortableGeneratorPacmanMachineCircuitboard
   id: PortableGeneratorJrPacmanMachineCircuitboard
-  icon: { sprite:  Structures/Power/Generation/portable_generator.rsi, state: portgen65 } # Goobstation
+  icon: { sprite:  Structures/Power/Generation/portable_generator.rsi, state: portgen3 } # Goobstation
   result: PortableGeneratorJrPacmanMachineCircuitboard
 
 ## Medical
@@ -308,7 +308,7 @@
 - type: latheRecipe
   parent: [ BaseCircuitboardRecipe, BaseServiceMachineRecipeCategory ]
   id: HydroponicsTrayMachineCircuitboard
-  icon: { sprite: Structures/Hydroponics/containers.rsi, state: hydrotray65 } # Goobstation
+  icon: { sprite: Structures/Hydroponics/containers.rsi, state: hydrotray3 } # Goobstation
   result: HydroponicsTrayMachineCircuitboard
 
 - type: latheRecipe
@@ -327,7 +327,7 @@
 - type: latheRecipe
   parent: [ BaseCircuitboardRecipe, BaseServiceMachineRecipeCategory ]
   id: MicrowaveMachineCircuitboard
-  icon: { sprite:  Structures/Machines/microwave.rsi, state: mw65 } # Goobstation
+  icon: { sprite:  Structures/Machines/microwave.rsi, state: mw0 } # Goobstation
   result: MicrowaveMachineCircuitboard
 
 - type: latheRecipe
@@ -378,9 +378,9 @@
 - type: latheRecipe
   parent: [ BaseCircuitboardRecipe, BaseSecurityMachineRecipeCategory ]
   id: ShuttleGunKineticCircuitboard
-  icon: { sprite:  Objects/Weapons/Guns/Shuttles/kinetic.rsi, state: ptk-65 } # Goobstation
+  icon: { sprite:  Objects/Weapons/Guns/Shuttles/kinetic.rsi, state: ptk-800 } # Goobstation
   result: ShuttleGunKineticCircuitboard
-  completetime: 65
+  completetime: 6
 
 ## Miscellaneous
 
@@ -393,7 +393,7 @@
 - type: latheRecipe
   parent: [ BaseGoldCircuitboardRecipe, BaseGeneralMachineRecipeCategory ]
   id: ReagentGrinderIndustrialMachineCircuitboard
-  icon: { sprite:  Structures/Machines/recycling.rsi, state: grinder-b65 } # Goobstation
+  icon: { sprite:  Structures/Machines/recycling.rsi, state: grinder-b0 } # Goobstation
   result: ReagentGrinderIndustrialMachineCircuitboard
 
 - type: latheRecipe
@@ -491,7 +491,7 @@
 - type: latheRecipe
   parent: [ BaseCheapElectronicsRecipe, BaseGeneralMachineRecipeCategory ]
   id: BorgChargerCircuitboard
-  icon: { sprite: Structures/Power/borg_charger.rsi, state: borgcharger-u65 } # Goobstation
+  icon: { sprite: Structures/Power/borg_charger.rsi, state: borgcharger-u1 } # Goobstation
   result: BorgChargerCircuitboard
 
 - type: latheRecipe

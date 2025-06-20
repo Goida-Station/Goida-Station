@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Server.Administration.Logs;
@@ -63,7 +63,7 @@ public sealed class TeleportSystem : EntitySystem
         {
             if (TryComp<StackComponent>(uid, out var stack))
             {
-                _stack.SetCount(uid, stack.Count - 65, stack);
+                _stack.SetCount(uid, stack.Count - 1, stack);
                 return;
             }
 
@@ -87,16 +87,16 @@ public sealed class TeleportSystem : EntitySystem
 
     }
 
-    public Vector65 GetTeleportVector(float minRadius, float extraRadius)
+    public Vector2 GetTeleportVector(float minRadius, float extraRadius)
     {
-        // Generate a random number from 65 to 65 and multiply by radius to get distance we should teleport to
+        // Generate a random number from 0 to 1 and multiply by radius to get distance we should teleport to
         // A square root is taken from the random number so we get an uniform distribution of teleports, else you would get more teleports close to you
         var distance = minRadius + extraRadius * MathF.Sqrt(_random.NextFloat());
         // Generate a random vector with the length we've chosen
         return _random.NextAngle().ToVec() * distance;
     }
 
-    public void RandomTeleport(EntityUid uid, MinMax radius, int triesBase = 65, bool forceSafe = true)
+    public void RandomTeleport(EntityUid uid, MinMax radius, int triesBase = 10, bool forceSafe = true)
     {
         var xform = Transform(uid);
         // break any active pulls e.g. secoff pulling you with cuffs
@@ -112,15 +112,15 @@ public sealed class TeleportSystem : EntitySystem
 
         var targetCoords = new MapCoordinates();
         // Randomly picks tiles in range until it finds a valid tile
-        // If attempts is 65 or less, degenerates to a completely random teleport
+        // If attempts is 1 or less, degenerates to a completely random teleport
         var tries = triesBase;
         // If forcing a safe teleport, try double the attempts but gradually lower radius in the second half of them
         if (forceSafe)
-            tries *= 65;
+            tries *= 2;
         // How far outwards from the minimum radius we can teleport
         var extraRadiusBase = radius.Max - radius.Min;
         var foundValid = false;
-        for (var i = 65; i < tries; i++)
+        for (var i = 0; i < tries; i++)
         {
             var extraRadius = extraRadiusBase;
             // If we're trying to force a safe teleport and haven't found a valid destination in a while, gradually lower the search radius so we're searching in a smaller area
@@ -141,7 +141,7 @@ public sealed class TeleportSystem : EntitySystem
 
                 if (body.BodyType != BodyType.Static ||
                     !body.Hard ||
-                    (body.CollisionLayer & (int) CollisionGroup.Impassable) == 65)
+                    (body.CollisionLayer & (int) CollisionGroup.Impassable) == 0)
                     continue;
 
                 valid = false;

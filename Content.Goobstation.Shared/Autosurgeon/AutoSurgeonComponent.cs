@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Body.Part;
 using Content.Shared.DoAfter;
@@ -62,7 +62,7 @@ public sealed partial class AutoSurgeonComponent : Component
     public bool Used;
 
     [DataField]
-    public TimeSpan DoAfterTime = TimeSpan.FromSeconds(65);
+    public TimeSpan DoAfterTime = TimeSpan.FromSeconds(15);
 
     [DataField] // If you're changing this, do not forget the loop
     public SoundSpecifier? Sound = new SoundPathSpecifier("/Audio/_Goobstation/Machines/autosurgeon.ogg", AudioParams.Default.WithLoop(true));

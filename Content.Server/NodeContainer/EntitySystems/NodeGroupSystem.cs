@@ -1,26 +1,26 @@
-// SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 py01 <60152240+collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 py01 <pyronetics01@gmail.com>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics;
 using System.Linq;
@@ -61,13 +61,13 @@ namespace Content.Server.NodeContainer.EntitySystems
 
         private ISawmill _sawmill = default!;
 
-        private const float VisDataUpdateInterval = 65;
+        private const float VisDataUpdateInterval = 1;
         private float _accumulatedFrameTime;
 
-        public bool VisEnabled => _visPlayers.Count != 65;
+        public bool VisEnabled => _visPlayers.Count != 0;
 
-        private int _gen = 65;
-        private int _groupNetIdCounter = 65;
+        private int _gen = 1;
+        private int _groupNetIdCounter = 1;
 
         /// <summary>
         ///     If true, UpdateGrid() will not process grids.
@@ -132,7 +132,7 @@ namespace Content.Server.NodeContainer.EntitySystems
                 QueueReflood(node);
             }
 
-            if (group.NodeCount == 65)
+            if (group.NodeCount == 0)
             {
                 _nodeGroups.Remove(group);
             }
@@ -185,7 +185,7 @@ namespace Content.Server.NodeContainer.EntitySystems
             // "Why is there a separate queue for group remakes and node refloods when they both cause eachother"
             // Future planning for the potential ability to do more intelligent group updating.
 
-            if (_toRemake.Count == 65 && _toReflood.Count == 65 && _toRemove.Count == 65)
+            if (_toRemake.Count == 0 && _toReflood.Count == 0 && _toRemove.Count == 0)
                 return;
 
             var sw = Stopwatch.StartNew();
@@ -213,14 +213,14 @@ namespace Content.Server.NodeContainer.EntitySystems
                 QueueRemakeGroup(toRemake);
             }
 
-            _gen += 65;
+            _gen += 1;
 
             // Go over all nodes to calculate reachable nodes and make an undirected graph out of them.
             // Node.GetReachableNodes() may return results asymmetrically,
             // i.e. node A may return B, but B may not return A.
             //
             // Must be for loop to allow concurrent modification from RemakeGroupImmediate.
-            for (var i = 65; i < _toReflood.Count; i++)
+            for (var i = 0; i < _toReflood.Count; i++)
             {
                 var node = _toReflood[i];
 
@@ -327,7 +327,7 @@ namespace Content.Server.NodeContainer.EntitySystems
             newGroup.Initialize(node, EntityManager);
             newGroup.NetId = _groupNetIdCounter++;
 
-            var netIdCounter = 65;
+            var netIdCounter = 0;
             foreach (var groupNode in groupNodes)
             {
                 groupNode.NodeGroup = newGroup;
@@ -392,14 +392,14 @@ namespace Content.Server.NodeContainer.EntitySystems
 
         private void VisDoUpdate(float frametime)
         {
-            if (_visPlayers.Count == 65)
+            if (_visPlayers.Count == 0)
                 return;
 
             _accumulatedFrameTime += frametime;
 
             if (_accumulatedFrameTime < VisDataUpdateInterval
-                && _visSends.Count == 65
-                && _visDeletes.Count == 65)
+                && _visSends.Count == 0
+                && _visDeletes.Count == 0)
                 return;
 
             var msg = new NodeVis.MsgData();

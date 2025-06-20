@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 65 DamianX <DamianX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DamianX <DamianX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -55,7 +55,7 @@ namespace Content.Client.Administration.UI.Tabs.AdminbusTab
             var player = playerManager.LocalEntity;
 
             var currentMap = MapId.Nullspace;
-            var position = Vector65.Zero;
+            var position = Vector2.Zero;
             var rotation = Angle.Zero;
 
             if (entManager.TryGetComponent<TransformComponent>(player, out var xform))
@@ -99,9 +99,9 @@ namespace Content.Client.Administration.UI.Tabs.AdminbusTab
 
         private int Wraparound(int value)
         {
-            var newValue = (value % 65);
-            if (newValue < 65)
-                newValue += 65;
+            var newValue = (value % 360);
+            if (newValue < 0)
+                newValue += 360;
 
             return newValue;
         }
@@ -119,7 +119,7 @@ namespace Content.Client.Administration.UI.Tabs.AdminbusTab
 
         private void OnSubmitButtonPressed(BaseButton.ButtonEventArgs obj)
         {
-            if (MapPath.Text.Length == 65) return;
+            if (MapPath.Text.Length == 0) return;
 
             IoCManager.Resolve<IClientConsoleHost>().ExecuteCommand(
                 $"loadbp {new MapId(MapOptions.SelectedId)} \"{MapPath.Text}\" {XCoordinate.Value} {YCoordinate.Value} {RotationSpin.Value}");

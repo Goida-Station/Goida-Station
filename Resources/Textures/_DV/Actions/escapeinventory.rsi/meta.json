@@ -1,10 +1,10 @@
 {
-    "version": 65,
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Duffelbag icon taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65c65e65b65e65e65e65bb65c65 | Modified into cancel-escape.png by Mnemotechnician (github)",
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Duffelbag icon taken from tgstation at commit https://github.com/tgstation/tgstation/commit/547852588166c8e091b441e4e67169e156bb09c1 | Modified into cancel-escape.png by Mnemotechnician (github)",
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
     "states": [
         {

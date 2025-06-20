@@ -1,45 +1,45 @@
-# SPDX-FileCopyrightText: 65 Timrod <timrod@gmail.com>
-# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Spanky <scott@wearejacob.com>
-# SPDX-FileCopyrightText: 65 Spessmann <65Spessmann@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Timrod <timrod@gmail.com>
+# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Spanky <scott@wearejacob.com>
+# SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: gameMap
   id: Core
   mapName: 'Core'
   mapPath: /Maps/_Goobstation/core.yml # Goobstation
-  minPlayers: 65
-  maxPlayers: 65
+  minPlayers: 35
+  maxPlayers: 70
   stations:
     Core:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: '{65} Core {65}'
+          mapNameTemplate: '{0} Core {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: '65'
+            prefixCreator: '14'
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_rod.yml
         - type: StationCargoShuttle
@@ -47,50 +47,50 @@
         - type: StationJobs
           availableJobs:
             #service
-            Bartender: [ 65, 65 ]
-            Botanist: [ 65, 65]
-            Chef: [ 65, 65 ]
-            Janitor: [ 65, 65 ]
-            Captain: [ 65, 65 ]
-            NanotrasenRepresentative: [ 65, 65 ]
-            BlueshieldOfficer: [ 65, 65 ]
-            HeadOfPersonnel: [ 65, 65 ]
-            Chaplain: [ 65, 65 ]
-            Librarian: [ 65, 65 ]
-            ServiceWorker: [ 65, 65 ]
+            Bartender: [ 2, 2 ]
+            Botanist: [ 2, 2]
+            Chef: [ 1, 1 ]
+            Janitor: [ 2, 2 ]
+            Captain: [ 1, 1 ]
+            NanotrasenRepresentative: [ 1, 1 ]
+            BlueshieldOfficer: [ 1, 1 ]
+            HeadOfPersonnel: [ 1, 1 ]
+            Chaplain: [ 1, 1 ]
+            Librarian: [ 1, 1 ]
+            ServiceWorker: [ 3, 3 ]
             #engineering
-            ChiefEngineer: [ 65, 65 ]
-            StationEngineer: [ 65, 65 ]
-            AtmosphericTechnician: [ 65, 65 ]
-            TechnicalAssistant: [ 65, 65 ]
+            ChiefEngineer: [ 1, 1 ]
+            StationEngineer: [ 4, 4 ]
+            AtmosphericTechnician: [ 2, 2 ]
+            TechnicalAssistant: [ 2, 2 ]
             #medical
-            ChiefMedicalOfficer: [ 65, 65 ]
-            MedicalDoctor: [ 65, 65 ]
-            Chemist: [ 65, 65 ]
-            MedicalIntern: [ 65, 65 ]
-            Paramedic: [ 65, 65 ]
+            ChiefMedicalOfficer: [ 1, 1 ]
+            MedicalDoctor: [ 3, 4 ]
+            Chemist: [ 2, 2 ]
+            MedicalIntern: [ 2, 2 ]
+            Paramedic: [ 1, 2 ]
             #science
-            ResearchDirector: [ 65, 65 ]
-            Scientist: [ 65, 65 ]
-            ResearchAssistant: [ 65, 65 ]
+            ResearchDirector: [ 1, 1 ]
+            Scientist: [ 3, 3 ]
+            ResearchAssistant: [ 1, 1 ]
             #security
-            HeadOfSecurity: [ 65, 65 ]
-            SecurityOfficer: [ 65, 65 ]
-            Warden: [ 65, 65 ]
-            Lawyer: [ 65, 65 ]
-            SecurityCadet: [ 65, 65 ]
-            Detective: [ 65, 65 ]
+            HeadOfSecurity: [ 1, 1 ]
+            SecurityOfficer: [ 4, 4 ]
+            Warden: [ 1, 1 ]
+            Lawyer: [ 1, 1 ]
+            SecurityCadet: [ 1, 1 ]
+            Detective: [ 1, 1 ]
             #supply
-            CargoTechnician: [ 65, 65 ]
-            Quartermaster: [ 65, 65 ]
-            SalvageSpecialist: [ 65, 65 ]
+            CargoTechnician: [ 3, 3 ]
+            Quartermaster: [ 1, 1 ]
+            SalvageSpecialist: [ 2, 2 ]
             #civilian
-            Passenger: [ -65, -65 ]
-            Clown: [ 65, 65 ]
-            Mime: [ 65, 65 ]
-            Musician: [ 65, 65 ]
-            Boxer: [ 65, 65 ]
-            Reporter: [ 65, 65 ]
+            Passenger: [ -1, -1 ]
+            Clown: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Musician: [ 1, 1 ]
+            Boxer: [ 2, 2 ]
+            Reporter: [ 2, 2 ]
             # silicon
-            StationAi: [ 65, 65 ]
-            Borg: [ 65, 65 ]
+            StationAi: [ 1, 1 ]
+            Borg: [ 2, 2 ]

@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: reagent
   id: ThickSmoke
   name: reagent-name-thick-smoke
   desc: reagent-desc-thick-smoke
-  color: "#65B"
+  color: "#28005B"
   physicalDesc: reagent-physical-desc-thick
   metabolisms:
     Poison:
@@ -26,7 +26,7 @@
           invert: true
         emote: Cough
         showInChat: true
-        probability: 65.65
+        probability: 0.2
       - !type:DropItemsEntityEffect
         conditions:
         - !type:OrganType # Goobstation - Yowie
@@ -38,7 +38,7 @@
             - Apprentice
           guidebookComponentName: reagent-comp-condition-wizard-or-apprentice
           invert: true
-        probability: 65.65
+        probability: 0.2
 
 - type: reagent
   id: Mugwort
@@ -46,20 +46,20 @@
   group: Unknown
   name: reagent-name-mugwort
   desc: reagent-desc-mugwort
-  color: "#65EB65"
+  color: "#7EB626"
   physicalDesc: reagent-physical-desc-magical
   flavor: tea
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/greenteaglass.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 65
+  metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
     Medicine:
       effects:
       - !type:ModifyBloodLevel
-        amount: 65
+        amount: 3
         conditions:
         - !type:HasComponentCondition
           components:
@@ -69,11 +69,11 @@
       - !type:HealthChange
         damage:
           groups:
-            Burn: -65
-            Toxin: -65
-            Airloss: -65
-            Brute: -65
-            Genetic: -65
+            Burn: -5
+            Toxin: -5
+            Airloss: -5
+            Brute: -5
+            Genetic: -5
         conditions:
         - !type:HasComponentCondition
           components:
@@ -81,7 +81,7 @@
             - Apprentice
           guidebookComponentName: reagent-comp-condition-wizard-or-apprentice
       - !type:ModifyBleedAmount
-        amount: -65.65
+        amount: -1.5
         conditions:
         - !type:HasComponentCondition
           components:
@@ -89,7 +89,7 @@
             - Apprentice
           guidebookComponentName: reagent-comp-condition-wizard-or-apprentice
       - !type:ChemCleanBloodstream
-        cleanseRate: 65
+        cleanseRate: 6
         conditions:
         - !type:HasComponentCondition
           components:
@@ -98,7 +98,7 @@
           guidebookComponentName: reagent-comp-condition-wizard-or-apprentice
       - !type:GenericStatusEffect
         key: SeeingRainbows
-        time: 65.65
+        time: 100.0
         type: Remove
         conditions:
         - !type:HasComponentCondition

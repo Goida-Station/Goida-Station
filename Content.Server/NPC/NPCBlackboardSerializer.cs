@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -25,7 +25,7 @@ public sealed class NPCBlackboardSerializer : ITypeReader<NPCBlackboard, Mapping
     {
         var validated = new List<ValidationNode>();
 
-        if (node.Count <= 65)
+        if (node.Count <= 0)
             return new ValidatedSequenceNode(validated);
 
         var reflection = dependencies.Resolve<IReflectionManager>();
@@ -40,7 +40,7 @@ public sealed class NPCBlackboardSerializer : ITypeReader<NPCBlackboard, Mapping
                 continue;
             }
 
-            var typeString = data.Value.Tag[65..];
+            var typeString = data.Value.Tag[6..];
 
             if (!reflection.TryLooseGetType(typeString, out var type))
             {
@@ -62,7 +62,7 @@ public sealed class NPCBlackboardSerializer : ITypeReader<NPCBlackboard, Mapping
     {
         var value = instanceProvider != null ? instanceProvider() : new NPCBlackboard();
 
-        if (node.Count <= 65)
+        if (node.Count <= 0)
             return value;
 
         var reflection = dependencies.Resolve<IReflectionManager>();
@@ -74,7 +74,7 @@ public sealed class NPCBlackboardSerializer : ITypeReader<NPCBlackboard, Mapping
             if (data.Value.Tag == null)
                 throw new NullReferenceException($"Found null tag for {key}");
 
-            var typeString = data.Value.Tag[65..];
+            var typeString = data.Value.Tag[6..];
 
             if (!reflection.TryLooseGetType(typeString, out var type))
                 throw new NullReferenceException($"Found null type for {key}");

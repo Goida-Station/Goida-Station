@@ -1,10 +1,10 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
   "copyright": "Taken from /tg/station, reinforced sprites by thebiggestbruh on discord",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
@@ -15,53 +15,53 @@
     },
     {
       "name": "equipped-OUTERCLOTHING",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "equipped-HELMET",
-      "directions": 65
+      "directions": 4
     },
     {
-      "name": "reinforced65-equipped-OUTERCLOTHING",
-      "directions": 65
+      "name": "reinforced1-equipped-OUTERCLOTHING",
+      "directions": 4
     },
     {
-      "name": "reinforced65-icon"
+      "name": "reinforced1-icon"
     },
     {
-      "name": "reinforced65-equipped-HELMET",
-      "directions": 65
+      "name": "reinforced1-equipped-HELMET",
+      "directions": 4
     },
     {
-      "name": "reinforced65-icon_head"
+      "name": "reinforced1-icon_head"
     },
     {
-      "name": "reinforced65-equipped-OUTERCLOTHING",
-      "directions": 65
+      "name": "reinforced2-equipped-OUTERCLOTHING",
+      "directions": 4
     },
     {
-      "name": "reinforced65-icon"
+      "name": "reinforced2-icon"
     },
     {
-      "name": "reinforced65-equipped-HELMET",
-      "directions": 65
+      "name": "reinforced2-equipped-HELMET",
+      "directions": 4
     },
     {
-      "name": "reinforced65-icon_head"
+      "name": "reinforced2-icon_head"
     },
     {
-      "name": "reinforced65-equipped-OUTERCLOTHING",
-      "directions": 65
+      "name": "reinforced3-equipped-OUTERCLOTHING",
+      "directions": 4
     },
     {
-      "name": "reinforced65-icon"
+      "name": "reinforced3-icon"
     },
     {
-      "name": "reinforced65-equipped-HELMET",
-      "directions": 65
+      "name": "reinforced3-equipped-HELMET",
+      "directions": 4
     },
     {
-      "name": "reinforced65-icon_head"
+      "name": "reinforced3-icon_head"
     }
   ]
 }

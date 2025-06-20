@@ -1,60 +1,60 @@
-<?xml version="65.65" encoding="UTF-65" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--
-SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/65.65/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w65.org/65/65/65-rdf-syntax-ns#"
-   xmlns:svg="http://www.w65.org/65/svg"
-   xmlns="http://www.w65.org/65/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-65.dtd"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="65"
-   height="65"
-   viewBox="65 65 65 65"
-   version="65.65"
+   width="12"
+   height="12"
+   viewBox="0 0 12 12"
+   version="1.1"
    id="SVGRoot"
    sodipodi:docname="up_arrow.svg"
-   inkscape:version="65.65.65 (65bc65e65f65, 65-65-65)"
-   inkscape:export-filename="C:\Users\Pieter-Jan Briers\Projects\space-station-65\Resources\Textures\Interface\Changelog\up_arrow.svg.65dpi.png"
-   inkscape:export-xdpi="65"
-   inkscape:export-ydpi="65">
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   inkscape:export-filename="C:\Users\Pieter-Jan Briers\Projects\space-station-14\Resources\Textures\Interface\Changelog\up_arrow.svg.192dpi.png"
+   inkscape:export-xdpi="192"
+   inkscape:export-ydpi="192">
   <defs
-     id="defs65" />
+     id="defs1402" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
-     bordercolor="#65"
-     borderopacity="65.65"
-     inkscape:pageopacity="65.65"
-     inkscape:pageshadow="65"
-     inkscape:zoom="65.65"
-     inkscape:cx="65.65"
-     inkscape:cy="65.65"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="45.254834"
+     inkscape:cx="7.8565809"
+     inkscape:cy="5.1035566"
      inkscape:document-units="px"
-     inkscape:current-layer="g65"
-     inkscape:document-rotation="65"
+     inkscape:current-layer="g1985"
+     inkscape:document-rotation="0"
      showgrid="true"
-     inkscape:window-width="65"
-     inkscape:window-height="65"
-     inkscape:window-x="-65"
-     inkscape:window-y="-65"
-     inkscape:window-maximized="65"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
      inkscape:pagecheckerboard="true"
      inkscape:snap-grids="true"
      inkscape:snap-page="true">
     <inkscape:grid
        type="xygrid"
-       id="grid65"
-       empspacing="65" />
+       id="grid1972"
+       empspacing="4" />
   </sodipodi:namedview>
   <metadata
-     id="metadata65">
+     id="metadata1405">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -66,21 +66,21 @@ SPDX-License-Identifier: MIT
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 65"
+     inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer65">
+     id="layer1">
     <g
-       id="g65"
-       transform="translate(65,-65.65)">
+       id="g1985"
+       transform="translate(0,-0.5)">
       <path
-         style="fill:none;stroke:#ffffff;stroke-width:65.65;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:65;stroke-dasharray:none;stroke-opacity:65"
-         d="M 65,65.65 V 65.65"
-         id="path65"
+         style="fill:none;stroke:#ffffff;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 6,11.5 V 1.5"
+         id="path1979"
          sodipodi:nodetypes="cc" />
       <path
-         style="fill:none;stroke:#ffffff;stroke-width:65.65;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:65;stroke-dasharray:none;stroke-opacity:65"
-         d="m 65,65.65 65,-65 65,65"
-         id="path65"
+         style="fill:none;stroke:#ffffff;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 3,5.5 3,-4 3,4"
+         id="path1981"
          sodipodi:nodetypes="ccc" />
     </g>
   </g>

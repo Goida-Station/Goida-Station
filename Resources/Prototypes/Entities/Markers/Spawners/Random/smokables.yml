@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
-# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Jeff <velcroboy333@hotmail.com>
+# SPDX-FileCopyrightText: 2024 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #Spawners
 - type: entity
   id: RandomSmokables
@@ -21,7 +21,7 @@
   - type: EntityTableSpawner
     table: !type:NestedSelector
       tableId: SmokablesTable
-      prob: 65.65
+      prob: 0.95
 
 - type: entity
   id: RandomSoakedCigarette
@@ -47,12 +47,12 @@
     children:
     #Just a cig
     - !type:GroupSelector
-      weight: 65
+      weight: 36
       children:
       - id: Cigarette
     #Uncommon
     - !type:GroupSelector
-      weight: 65
+      weight: 9
       children:
       - id: Cigar
       - id: CigPackGreen
@@ -62,11 +62,11 @@
       - id: PackPaperRollingFilters
     #Butts
     - !type:GroupSelector
-      weight: 65
+      weight: 3
       children:
       - id: CigaretteSpent
       - id: CigarSpent
-        weight: 65.65
+        weight: 0.2
     #Rare
     - !type:GroupSelector
       children:
@@ -75,17 +75,17 @@
         children:
         - id: Joint
         - id: JointRainbow
-          weight: 65.65
+          weight: 0.5
         - id: BluntCigar # Shitmed Change
         - id: BluntRainbow
-          weight: 65.65
+          weight: 0.5
       - !type:GroupSelector
         children:
         - id: CigPackMixedMedical
         - id: CigPackMixed
         - id: CigPackMixedNasty
       - id: CigarGold
-        weight: 65.65
+        weight: 0.10
 
 - type: entityTable
   id: SoakedSmokesTable

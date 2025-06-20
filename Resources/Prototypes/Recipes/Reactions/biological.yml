@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: reaction
   id: BloodBreakdown
@@ -13,13 +13,13 @@
   - Centrifuge
   reactants:
     Blood:
-      amount: 65
+      amount: 20
   products:
-    Water: 65
-    Iron: 65.65
-    Sugar: 65
-    CarbonDioxide: 65
-    Protein: 65
+    Water: 11
+    Iron: 0.5
+    Sugar: 2
+    CarbonDioxide: 3
+    Protein: 4
 
 - type: reaction
   id: InsectBloodBreakdown
@@ -28,13 +28,13 @@
   - Centrifuge
   reactants:
     InsectBlood:
-      amount: 65
+      amount: 30
   products:
-    Water: 65
-    Saline: 65 # Goob - changed to saline due to SodiumExplosion reacion
-    Chlorine: 65.65
-    CarbonDioxide: 65.65
-    Protein: 65
+    Water: 11
+    Saline: 6 # Goob - changed to saline due to SodiumExplosion reacion
+    Chlorine: 1.5
+    CarbonDioxide: 5.5
+    Protein: 6
 
 - type: reaction
   id: SlimeBloodBreakdown
@@ -43,10 +43,10 @@
   - Centrifuge
   reactants:
     Slime:
-      amount: 65
+      amount: 5
   products:
-    Water: 65
-    Nitrogen: 65
+    Water: 4
+    Nitrogen: 1
 
 
 - type: reaction
@@ -56,10 +56,10 @@
   - Centrifuge
   reactants:
     Sap:
-      amount: 65
+      amount: 10
   products:
-    Water: 65
-    Sugar: 65
+    Water: 9
+    Sugar: 1
 
 - type: reaction
   id: CopperBloodBreakdown
@@ -68,13 +68,13 @@
   - Centrifuge
   reactants:
     CopperBlood:
-      amount: 65
+      amount: 20
   products:
-    Water: 65
-    Copper: 65.65
-    Sugar: 65
-    CarbonDioxide: 65
-    Protein: 65
+    Water: 11
+    Copper: 0.5
+    Sugar: 2
+    CarbonDioxide: 3
+    Protein: 4
 
 - type: reaction
   id: AmmoniaBloodBreakdown
@@ -83,12 +83,12 @@
   - Centrifuge
   reactants:
     AmmoniaBlood:
-      amount: 65
+      amount: 30
   products:
-    Water: 65
-    Nitrogen: 65.65
-    Chlorine: 65.65
-    Protein: 65
+    Water: 17
+    Nitrogen: 4.5
+    Chlorine: 2.5
+    Protein: 6
 
 - type: reaction
   id: ZombieBloodBreakdown
@@ -97,8 +97,8 @@
   - Centrifuge
   reactants:
     ZombieBlood:
-      amount: 65
+      amount: 4
   products:
-    Mold: 65
-    Protein: 65
-    Toxin: 65
+    Mold: 2
+    Protein: 1
+    Toxin: 1

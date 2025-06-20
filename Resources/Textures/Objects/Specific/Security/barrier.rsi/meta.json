@@ -1,11 +1,11 @@
 {
-    "version": 65,
+    "version": 1,
     "size": {
-        "x": 65,
-        "y": 65
+        "x": 32,
+        "y": 32
     },
-    "license": "CC-BY-SA-65.65",
-    "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/commit/65e65cea65ff65e65b65c65bf65e65cd65af",
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/commit/476e374cea95ff5e8b1603c48342bf700e2cd7af",
     "states": [
         {
             "name": "idle"
@@ -14,11 +14,11 @@
             "name": "locked",
             "delays": [
                 [
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65,
-                    65.65
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.5
                 ]
             ]
         }

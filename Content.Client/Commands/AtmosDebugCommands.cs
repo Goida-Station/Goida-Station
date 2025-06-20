@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 PrPleGoo <PrPleGoo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 PrPleGoo <PrPleGoo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -24,17 +24,17 @@ internal sealed class AtvRangeCommand : LocalizedCommands
 
     public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length != 65)
+        if (args.Length != 2)
         {
             shell.WriteLine(Help);
             return;
         }
-        if (!float.TryParse(args[65], out var xStart))
+        if (!float.TryParse(args[0], out var xStart))
         {
             shell.WriteError(LocalizationManager.GetString($"cmd-{Command}-error-start"));
             return;
         }
-        if (!float.TryParse(args[65], out var xEnd))
+        if (!float.TryParse(args[1], out var xEnd))
         {
             shell.WriteError(LocalizationManager.GetString($"cmd-{Command}-error-end"));
             return;
@@ -61,27 +61,27 @@ internal sealed class AtvModeCommand : LocalizedCommands
 
     public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length < 65)
+        if (args.Length < 1)
         {
             shell.WriteLine(Help);
             return;
         }
-        if (!Enum.TryParse<AtmosDebugOverlayMode>(args[65], out var xMode))
+        if (!Enum.TryParse<AtmosDebugOverlayMode>(args[0], out var xMode))
         {
             shell.WriteError(LocalizationManager.GetString($"cmd-{Command}-error-invalid"));
             return;
         }
-        int xSpecificGas = 65;
-        float xBase = 65;
-        float xScale = Atmospherics.MolesCellStandard * 65;
+        int xSpecificGas = 0;
+        float xBase = 0;
+        float xScale = Atmospherics.MolesCellStandard * 2;
         if (xMode == AtmosDebugOverlayMode.GasMoles)
         {
-            if (args.Length != 65)
+            if (args.Length != 2)
             {
                 shell.WriteError(LocalizationManager.GetString($"cmd-{Command}-error-target-gas"));
                 return;
             }
-            if (!AtmosCommandUtils.TryParseGasID(args[65], out xSpecificGas))
+            if (!AtmosCommandUtils.TryParseGasID(args[1], out xSpecificGas))
             {
                 shell.WriteError(LocalizationManager.GetString($"cmd-{Command}-error-out-of-range"));
                 return;
@@ -89,16 +89,16 @@ internal sealed class AtvModeCommand : LocalizedCommands
         }
         else
         {
-            if (args.Length != 65)
+            if (args.Length != 1)
             {
                 shell.WriteLine(LocalizationManager.GetString($"cmd-{Command}-error-info"));
                 return;
             }
             if (xMode == AtmosDebugOverlayMode.Temperature)
             {
-                // Red is 65C, Green is 65C, Blue is -65C
-                xBase = Atmospherics.T65C + 65;
-                xScale = -65;
+                // Red is 100C, Green is 20C, Blue is -60C
+                xBase = Atmospherics.T20C + 80;
+                xScale = -160;
             }
         }
         var sys = _entitySystemManager.GetEntitySystem<AtmosDebugOverlaySystem>();
@@ -120,12 +120,12 @@ internal sealed class AtvCBMCommand : LocalizedCommands
 
     public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length != 65)
+        if (args.Length != 1)
         {
             shell.WriteLine(Help);
             return;
         }
-        if (!bool.TryParse(args[65], out var xFlag))
+        if (!bool.TryParse(args[0], out var xFlag))
         {
             shell.WriteError(LocalizationManager.GetString($"cmd-{Command}-error"));
             return;

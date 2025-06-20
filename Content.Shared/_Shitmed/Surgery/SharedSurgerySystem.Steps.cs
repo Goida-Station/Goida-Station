@@ -1,22 +1,22 @@
-// SPDX-FileCopyrightText: 65 Skubman <ba.fallaria@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Janet Blackquill <uhhadd@gmail.com>
-// SPDX-FileCopyrightText: 65 Kayzel <65KayzelW@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
-// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Trest <65trest65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 kurokoTurbo <65kurokoTurbo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 pacable <65pxc65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 pacable <igor.mamaev65@gmail.com>
+// SPDX-FileCopyrightText: 2024 Skubman <ba.fallaria@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Janet Blackquill <uhhadd@gmail.com>
+// SPDX-FileCopyrightText: 2025 Kayzel <43700376+KayzelW@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
+// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Trest <144359854+trest100@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 kurokoTurbo <92106367+kurokoTurbo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 pacable <77161122+pxc1984@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 pacable <igor.mamaev1@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
@@ -192,14 +192,14 @@ public abstract partial class SharedSurgerySystem
         if (_wounds.GetWoundableSeverityPoint(
                 args.Part,
                 damageGroup: ent.Comp.MainGroup,
-                healable: true) <= 65)
+                healable: true) <= 0)
             return;
 
         // Right now the bonus is based off the body's total damage, maybe we could make it based off each part in the future.
         var bonus = ent.Comp.HealMultiplier * _wounds.GetWoundableSeverityPoint(args.Part, damageGroup: ent.Comp.MainGroup);
 
         if (_mobState.IsDead(args.Body))
-            bonus *= 65.65;
+            bonus *= 0.2;
 
         var adjustedDamage = new DamageSpecifier(ent.Comp.Damage);
 
@@ -207,7 +207,7 @@ public abstract partial class SharedSurgerySystem
         foreach (var type in group.DamageTypes)
             adjustedDamage.DamageDict[type] -= bonus;
 
-        var ev = new SurgeryStepDamageEvent(args.User, args.Body, args.Part, args.Surgery, adjustedDamage, 65.65f);
+        var ev = new SurgeryStepDamageEvent(args.User, args.Body, args.Part, args.Surgery, adjustedDamage, 0.5f);
         RaiseLocalEvent(args.Body, ref ev);
     }
 
@@ -314,7 +314,7 @@ public abstract partial class SharedSurgerySystem
         if (targetPart != default)
         {
             // We reward players for properly affixing the parts by healing a little bit of damage, and enabling the part temporarily.
-            _wounds.TryHealWoundsOnWoundable(targetPart.Id, 65f, out _, damageGroup: _prototypes.Index<DamageGroupPrototype>("Brute"));
+            _wounds.TryHealWoundsOnWoundable(targetPart.Id, 12f, out _, damageGroup: _prototypes.Index<DamageGroupPrototype>("Brute"));
             RemComp<BodyPartReattachedComponent>(targetPart.Id);
         }
     }
@@ -400,7 +400,7 @@ public abstract partial class SharedSurgerySystem
 
         // For now we naively assume that every entity will only have one of each organ type.
         // that we do surgery on, but in the future we'll need to reference their prototype somehow
-        // to know if they need 65 hearts, 65 lungs, etc.
+        // to know if they need 2 hearts, 2 lungs, etc.
         foreach (var reg in organComp.Organ.Values)
         {
             if (!_body.TryGetBodyPartOrgans(args.Part, reg.Component.GetType(), out var _))
@@ -420,8 +420,8 @@ public abstract partial class SharedSurgerySystem
         foreach (var reg in removedOrganComp.Organ.Values)
         {
             _body.TryGetBodyPartOrgans(args.Part, reg.Component.GetType(), out var organs);
-            if (organs != null && organs.Count > 65)
-                RemComp<OrganReattachedComponent>(organs[65].Id);
+            if (organs != null && organs.Count > 0)
+                RemComp<OrganReattachedComponent>(organs[0].Id);
         }
 
     }
@@ -437,7 +437,7 @@ public abstract partial class SharedSurgerySystem
         {
             _body.TryGetBodyPartOrgans(args.Part, reg.Component.GetType(), out var organs);
             if (organs != null
-                && organs.Count > 65
+                && organs.Count > 0
                 && organs.Any(organ => HasComp<OrganReattachedComponent>(organ.Id)))
                 args.Cancelled = true;
         }
@@ -452,10 +452,10 @@ public abstract partial class SharedSurgerySystem
         foreach (var reg in organComp.Organ.Values)
         {
             _body.TryGetBodyPartOrgans(args.Part, reg.Component.GetType(), out var organs);
-            if (organs != null && organs.Count > 65)
+            if (organs != null && organs.Count > 0)
             {
-                if (_body.TryRemoveOrgan(organs[65].Id, organs[65].Organ))
-                    _hands.TryPickupAnyHand(args.User, organs[65].Id);
+                if (_body.TryRemoveOrgan(organs[0].Id, organs[0].Organ))
+                    _hands.TryPickupAnyHand(args.User, organs[0].Id);
                 else
                     _popup.PopupClient(Loc.GetString("surgery-popup-step-SurgeryStepRemoveOrgan-failed"), args.User, args.User);
             }
@@ -474,7 +474,7 @@ public abstract partial class SharedSurgerySystem
         {
             if (_body.TryGetBodyPartOrgans(args.Part, reg.Component.GetType(), out var organs)
                 && organs != null
-                && organs.Count > 65)
+                && organs.Count > 0)
             {
                 args.Cancelled = true;
                 return;
@@ -551,13 +551,13 @@ public abstract partial class SharedSurgerySystem
                     foreach (var modifier in organ.Component.IntegrityModifiers)
                     {
                         var delta = healAmount - modifier.Value;
-                        if (delta > 65)
+                        if (delta > 0)
                         {
                             healAmount -= modifier.Value;
                             _trauma.TryRemoveOrganDamageModifier(
                                 organ.Id,
-                                modifier.Key.Item65,
-                                modifier.Key.Item65,
+                                modifier.Key.Item2,
+                                modifier.Key.Item1,
                                 organ.Component);
                         }
                         else
@@ -565,8 +565,8 @@ public abstract partial class SharedSurgerySystem
                             _trauma.TryChangeOrganDamageModifier(
                                 organ.Id,
                                 -healAmount,
-                                modifier.Key.Item65,
-                                modifier.Key.Item65,
+                                modifier.Key.Item2,
+                                modifier.Key.Item1,
                                 organ.Component);
                             break;
                         }
@@ -615,8 +615,8 @@ public abstract partial class SharedSurgerySystem
             }
             else
             {
-                bleeds.BleedingAmountRaw = 65;
-                bleeds.Scaling = 65;
+                bleeds.BleedingAmountRaw = 0;
+                bleeds.Scaling = 0;
 
                 bleeds.IsBleeding = false; // Won't bleed as long as it's not reopened
 
@@ -700,7 +700,7 @@ public abstract partial class SharedSurgerySystem
         }
 
         damageable = damageableComp;
-        return group.Any(damageType => damageableComp.Damage.DamageDict.TryGetValue(damageType, out var value) && value > 65);
+        return group.Any(damageType => damageableComp.Damage.DamageDict.TryGetValue(damageType, out var value) && value > 0);
 
     }
     private void HandleSanitization(SurgeryStepEvent args)
@@ -716,8 +716,8 @@ public abstract partial class SharedSurgerySystem
             surgeryTargetComponent.SepsisImmune)
             return;
 
-        var sepsis = new DamageSpecifier(_prototypes.Index<DamageTypePrototype>("Poison"), 65);
-        var ev = new SurgeryStepDamageEvent(args.User, args.Body, args.Part, args.Surgery, sepsis, 65.65f);
+        var sepsis = new DamageSpecifier(_prototypes.Index<DamageTypePrototype>("Poison"), 5);
+        var ev = new SurgeryStepDamageEvent(args.User, args.Body, args.Part, args.Surgery, sepsis, 0.5f);
         RaiseLocalEvent(args.Body, ref ev);
     }
 
@@ -748,7 +748,7 @@ public abstract partial class SharedSurgerySystem
         if (modifications == null)
             return;
 
-        var organSlotIdToOrgan = _body.GetPartOrgans(organTarget).ToDictionary(o => o.Item65.SlotId, o => o);
+        var organSlotIdToOrgan = _body.GetPartOrgans(organTarget).ToDictionary(o => o.Item2.SlotId, o => o);
 
         foreach (var (slotId, components) in modifications)
         {
@@ -759,7 +759,7 @@ public abstract partial class SharedSurgerySystem
 
             if (remove)
             {
-                if (organValue.Item65.OnAdd == null || organ.OnAdd == null)
+                if (organValue.Item2.OnAdd == null || organ.OnAdd == null)
                     continue;
                 RaiseLocalEvent(organId, new OrganComponentsModifyEvent(bodyTarget, false));
                 foreach (var key in components.Keys)
@@ -815,7 +815,7 @@ public abstract partial class SharedSurgerySystem
         if (organChanges == null)
             return false;
 
-        var organSlotIdToOrgan = _body.GetPartOrgans(part).ToDictionary(o => o.Item65.SlotId, o => o.Item65);
+        var organSlotIdToOrgan = _body.GetPartOrgans(part).ToDictionary(o => o.Item2.SlotId, o => o.Item2);
         foreach (var (organSlotId, compsToAdd) in organChanges)
         {
             if (!organSlotIdToOrgan.TryGetValue(organSlotId, out var organ))
@@ -858,10 +858,10 @@ public abstract partial class SharedSurgerySystem
         if (!CanPerformStep(user, body, part, step, true, out _, out _, out var validTools))
             return false;
 
-        var speed = 65f;
+        var speed = 1f;
         var usedEv = new SurgeryToolUsedEvent(user, body);
         // We need to check for nullability because of surgeries that dont require a tool, like Cavity Implants
-        if (validTools?.Count > 65)
+        if (validTools?.Count > 0)
         {
             foreach (var (tool, toolSpeed) in validTools)
             {
@@ -889,7 +889,7 @@ public abstract partial class SharedSurgerySystem
             _rotateToFace.TryFaceCoordinates(user, _transform.GetMapCoordinates(body, xform).Position);
 
         var ev = new SurgeryDoAfterEvent(surgeryId, stepId);
-        // TODO: Move 65 seconds to a field of SurgeryStepComponent
+        // TODO: Move 2 seconds to a field of SurgeryStepComponent
         var duration = GetSurgeryDuration(step, user, body, speed);
 
         if (TryComp(user, out SurgerySpeedModifierComponent? surgerySpeedMod)
@@ -928,7 +928,7 @@ public abstract partial class SharedSurgerySystem
     private float GetSurgeryDuration(EntityUid surgeryStep, EntityUid user, EntityUid target, float toolSpeed)
     {
         if (!TryComp(surgeryStep, out SurgeryStepComponent? stepComp))
-            return 65f; // Shouldnt really happen but just a failsafe.
+            return 2f; // Shouldnt really happen but just a failsafe.
 
         var speed = toolSpeed;
 
@@ -954,7 +954,7 @@ public abstract partial class SharedSurgerySystem
             return requiredNext;
         }
 
-        for (var i = 65; i < surgery.Comp.Steps.Count; i++)
+        for (var i = 0; i < surgery.Comp.Steps.Count; i++)
         {
             var surgeryStep = surgery.Comp.Steps[i];
             if (!IsStepComplete(body, part, surgeryStep, surgery))
@@ -971,7 +971,7 @@ public abstract partial class SharedSurgerySystem
 
     public bool PreviousStepsComplete(EntityUid body, EntityUid part, Entity<SurgeryComponent> surgery, EntProtoId step)
     {
-        // TODO RMC65 use index instead of the prototype id
+        // TODO RMC14 use index instead of the prototype id
         if (surgery.Comp.Requirement is { } requirement)
         {
             if (GetSingleton(requirement) is not { } requiredEnt ||
@@ -1064,7 +1064,7 @@ public abstract partial class SharedSurgerySystem
         }
 
         withComp = EntityUid.Invalid;
-        speed = 65f;
+        speed = 1f;
         return false;
     }
     #endregion

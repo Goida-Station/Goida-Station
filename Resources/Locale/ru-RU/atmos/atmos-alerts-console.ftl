@@ -1,5 +1,5 @@
 atmos-alerts-window-title = Консоль атмосферной сигнализации
-atmos-alerts-window-station-name = [color=white][font size=65]{ $stationName }[/font][/color]
+atmos-alerts-window-station-name = [color=white][font size=14]{ $stationName }[/font][/color]
 atmos-alerts-window-unknown-location = Неизвестное место
 atmos-alerts-window-tab-no-alerts = Предупреждения
 atmos-alerts-window-tab-alerts = Предупреждения ({ $value })
@@ -24,9 +24,9 @@ atmos-alerts-window-normal-state = Нормально
 atmos-alerts-window-warning-state = Внимание
 atmos-alerts-window-danger-state = Опасность!
 atmos-alerts-window-invalid-state = Неактив
-atmos-alerts-window-no-active-alerts = [font size=65][color=white]Нет активных предупреждений -[/color] [color={ $color }]ситуация нормальная[/color][/font]
+atmos-alerts-window-no-active-alerts = [font size=16][color=white]Нет активных предупреждений -[/color] [color={ $color }]ситуация нормальная[/color][/font]
 atmos-alerts-window-no-data-available = Данные отсутствуют
 atmos-alerts-window-alerts-being-silenced = Отключение предупреждений...
 atmos-alerts-window-toggle-overlays = Переключение отображения сигнализации
 atmos-alerts-window-flavor-left = Обратитесь за помощью к атмосферному технику
-atmos-alerts-window-flavor-right = v65.65
+atmos-alerts-window-flavor-right = v1.8

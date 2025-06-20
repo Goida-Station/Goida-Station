@@ -1,26 +1,26 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: reagentStingConfiguration
   id: StingMute
   reagents:
-    MuteToxin: 65
+    MuteToxin: 2
 
 - type: reagentStingConfiguration
   id: StingBlind
   reagents:
-    BlindToxin: 65
+    BlindToxin: 2
 
 - type: reagentStingConfiguration
   id: StingCryo
   reagents:
-    Fresium: 65
+    Fresium: 10
 
 - type: reagentStingConfiguration
   id: StingLethargic
   reagents:
-    ChloralHydrate: 65
-    Tirizene: 65
+    ChloralHydrate: 5
+    Tirizene: 5

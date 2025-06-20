@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 65 Jack Fox <65DubiousDoggo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 65A <git@65a.re>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2022 Jack Fox <35575261+DubiousDoggo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 08A <git@08a.re>
+# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: constructionGraph
   id: DisposalPipe
@@ -18,120 +18,120 @@
     - to: pipe
       steps:
       - material: Steel
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 1
     - to: tagger
       steps:
       - material: Steel
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 1
     - to: trunk
       steps:
       - material: Steel
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 1
     # DisposalRouter
     - to: router
       steps:
       - material: Steel
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 1
     - to: routerflipped
       steps:
       - material: Steel
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 1
     # DisposalJunction
     - to: junction
       steps:
       - material: Steel
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 1
     - to: junctionflipped
       steps:
       - material: Steel
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 1
     - to: yJunction
       steps:
       - material: Steel
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 1
     - to: bend
       steps:
       - material: Steel
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 1
     # DisposalSignalRouter
     - to: signal_router
       steps:
       - material: Steel
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 1
       - material: Cable
-        amount: 65
-        doAfter: 65
+        amount: 1
+        doAfter: 1
     - to: signal_router_flipped
       steps:
       - material: Steel
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 1
       - material: Cable
-        amount: 65
-        doAfter: 65
+        amount: 1
+        doAfter: 1
     # Goobstation - DisposalBlocker
     - to: blocker
       steps:
       - material: Steel
-        amount: 65
-        doAfter: 65
+        amount: 2
+        doAfter: 1
   - node: broken
     entity: DisposalPipeBroken
     edges:
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
+        prototype: SheetSteel1
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 1
   - node: pipe
     entity: DisposalPipe
     edges:
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 2
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 1
   - node: tagger
     entity: DisposalTagger
     edges:
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 2
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 1
   - node: trunk
     entity: DisposalTrunk
     edges:
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 2
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 1
   # DisposalRouter
   - node: router
     entity: DisposalRouter
@@ -139,24 +139,24 @@
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 2
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 1
   - node: routerflipped
     entity: DisposalRouterFlipped
     edges:
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 2
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 1
   # DisposalJunction
   - node: junction
     entity: DisposalJunction
@@ -164,64 +164,64 @@
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 2
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 1
     - to: yJunction
       steps:
       - tool: Screwing
-        doAfter: 65
+        doAfter: 1
   - node: junctionflipped
     entity: DisposalJunctionFlipped
     edges:
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 2
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 1
     - to: yJunction
       steps:
       - tool: Screwing
-        doAfter: 65
+        doAfter: 1
   - node: yJunction
     entity: DisposalYJunction
     edges:
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 2
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 1
     - to: junction
       steps:
       - tool: Screwing
-        doAfter: 65
+        doAfter: 1
     - to: junctionflipped
       steps:
       - tool: Screwing
-        doAfter: 65
+        doAfter: 1
   - node: bend
     entity: DisposalBend
     edges:
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 2
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 1
   # DisposalRouter
   - node: signal_router
     entity: DisposalSignalRouter
@@ -229,28 +229,28 @@
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 2
       - !type:SpawnPrototype
-        prototype: CableApcStack65
+        prototype: CableApcStack1
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 1
   - node: signal_router_flipped
     entity: DisposalSignalRouterFlipped
     edges:
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 2
       - !type:SpawnPrototype
-        prototype: CableApcStack65
+        prototype: CableApcStack1
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 1
   # Goobstation - DisposalBlocker
   - node: blocker
     entity: DisposalBlocker
@@ -258,9 +258,9 @@
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel65
-        amount: 65
+        prototype: SheetSteel1
+        amount: 2
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 65
+        doAfter: 1

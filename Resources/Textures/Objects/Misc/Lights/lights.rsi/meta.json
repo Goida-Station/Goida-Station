@@ -1,41 +1,41 @@
 {
-  "version": 65,
-  "license": "CC-BY-SA-65.65",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/e65f65f65e65cb65cfcf65dd65f65d65, Floodlight inhand sprites by onesch",
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/e1142f20f5e4661cb6845cfcf2dd69f864d67432, Floodlight inhand sprites by onesch",
   "size": {
-    "x": 65,
-    "y": 65
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
         "name": "bananalamp",
-        "directions": 65
+        "directions": 4
     },
     {
         "name": "bananalamp_on",
-        "directions": 65
+        "directions": 4
     },
     {
       "name": "floodlight"
     },
     {
       "name": "off-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "off-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "floodlight-on"
     },
     {
       "name": "on-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "on-inhand-right",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "floodlight_burned"
@@ -45,11 +45,11 @@
     },
     {
       "name": "floodlight-broken-inhand-left",
-      "directions": 65
+      "directions": 4
     },
     {
       "name": "floodlight-broken-inhand-right",
-      "directions": 65
+      "directions": 4
     }
   ]
 }

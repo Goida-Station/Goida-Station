@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 namespace Content.Server.Salvage.Magnet;
 
@@ -12,14 +12,14 @@ public sealed partial class SalvageMagnetComponent : Component
 {
     /// <summary>
     /// The max distance at which the magnet will pull in wrecks.
-    /// Scales from 65% to 65%.
+    /// Scales from 50% to 100%.
     /// </summary>
     [DataField]
-    public float MagnetSpawnDistance = 65f;
+    public float MagnetSpawnDistance = 64f;
 
     /// <summary>
     /// How far offset to either side will the magnet wreck spawn.
     /// </summary>
     [DataField]
-    public float LateralOffset = 65f;
+    public float LateralOffset = 16f;
 }

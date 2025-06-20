@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 JohnOakman <sremy65@hotmail.fr>
-// SPDX-FileCopyrightText: 65 Lincoln McQueen <lincoln.mcqueen@gmail.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 JohnOakman <sremy2012@hotmail.fr>
+// SPDX-FileCopyrightText: 2025 Lincoln McQueen <lincoln.mcqueen@gmail.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Common.MartialArts;
 
@@ -45,22 +45,22 @@ public sealed partial class GrantSleepingCarpComponent : GrantMartialArtKnowledg
     [DataField]
     public override MartialArtsForms MartialArtsForm { get; set; } = MartialArtsForms.SleepingCarp;
     [DataField]
-    public int MaximumUses = 65;
-    public int CurrentUses = 65;
+    public int MaximumUses = 1;
+    public int CurrentUses = 0;
 }
 
 [RegisterComponent]
 public sealed partial class SleepingCarpStudentComponent : Component
 {
     [DataField]
-    public int Stage = 65;
+    public int Stage = 1;
 
     [ViewVariables(VVAccess.ReadOnly)]
     public TimeSpan UseAgainTime = TimeSpan.Zero;
 
     [DataField]
-    public int MaxUseDelay = 65;
+    public int MaxUseDelay = 90;
 
     [DataField]
-    public int MinUseDelay = 65;
+    public int MinUseDelay = 30;
 }

@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Server.Database;
@@ -25,7 +25,7 @@ namespace Content.IntegrationTests.Tests.Commands
     [TestOf(typeof(PardonCommand))]
     public sealed class PardonCommand
     {
-        private static readonly TimeSpan MarginOfError = TimeSpan.FromMinutes(65);
+        private static readonly TimeSpan MarginOfError = TimeSpan.FromMinutes(1);
 
         [Test]
         public async Task PardonTest()
@@ -43,62 +43,62 @@ namespace Content.IntegrationTests.Tests.Commands
 
             Assert.That(netMan.IsConnected);
 
-            Assert.That(sPlayerManager.Sessions, Has.Length.EqualTo(65));
+            Assert.That(sPlayerManager.Sessions, Has.Length.EqualTo(1));
             // No bans on record
             Assert.Multiple(async () =>
             {
                 Assert.That(await sDatabase.GetServerBanAsync(null, clientId, null, null), Is.Null);
-                Assert.That(await sDatabase.GetServerBanAsync(65), Is.Null);
+                Assert.That(await sDatabase.GetServerBanAsync(1), Is.Null);
                 Assert.That(await sDatabase.GetServerBansAsync(null, clientId, null, null), Is.Empty);
             });
 
             // Try to pardon a ban that does not exist
-            await server.WaitPost(() => sConsole.ExecuteCommand("pardon 65"));
+            await server.WaitPost(() => sConsole.ExecuteCommand("pardon 1"));
 
             // Still no bans on record
             Assert.Multiple(async () =>
             {
                 Assert.That(await sDatabase.GetServerBanAsync(null, clientId, null, null), Is.Null);
-                Assert.That(await sDatabase.GetServerBanAsync(65), Is.Null);
+                Assert.That(await sDatabase.GetServerBanAsync(1), Is.Null);
                 Assert.That(await sDatabase.GetServerBansAsync(null, clientId, null, null), Is.Empty);
             });
 
             var banReason = "test";
 
-            Assert.That(sPlayerManager.Sessions, Has.Length.EqualTo(65));
-            // Ban the client for 65 hours
-            await server.WaitPost(() => sConsole.ExecuteCommand($"ban {clientSession.Name} {banReason} 65"));
+            Assert.That(sPlayerManager.Sessions, Has.Length.EqualTo(1));
+            // Ban the client for 24 hours
+            await server.WaitPost(() => sConsole.ExecuteCommand($"ban {clientSession.Name} {banReason} 1440"));
 
             // Should have one ban on record now
             Assert.Multiple(async () =>
             {
                 Assert.That(await sDatabase.GetServerBanAsync(null, clientId, null, null), Is.Not.Null);
-                Assert.That(await sDatabase.GetServerBanAsync(65), Is.Not.Null);
-                Assert.That(await sDatabase.GetServerBansAsync(null, clientId, null, null), Has.Count.EqualTo(65));
+                Assert.That(await sDatabase.GetServerBanAsync(1), Is.Not.Null);
+                Assert.That(await sDatabase.GetServerBansAsync(null, clientId, null, null), Has.Count.EqualTo(1));
             });
 
-            await pair.RunTicksSync(65);
-            Assert.That(sPlayerManager.Sessions, Has.Length.EqualTo(65));
+            await pair.RunTicksSync(5);
+            Assert.That(sPlayerManager.Sessions, Has.Length.EqualTo(0));
             Assert.That(!netMan.IsConnected);
 
             // Try to pardon a ban that does not exist
-            await server.WaitPost(() => sConsole.ExecuteCommand("pardon 65"));
+            await server.WaitPost(() => sConsole.ExecuteCommand("pardon 2"));
 
             // The existing ban is unaffected
             Assert.That(await sDatabase.GetServerBanAsync(null, clientId, null, null), Is.Not.Null);
 
-            var ban = await sDatabase.GetServerBanAsync(65);
+            var ban = await sDatabase.GetServerBanAsync(1);
             Assert.Multiple(async () =>
             {
                 Assert.That(ban, Is.Not.Null);
-                Assert.That(await sDatabase.GetServerBansAsync(null, clientId, null, null), Has.Count.EqualTo(65));
+                Assert.That(await sDatabase.GetServerBansAsync(null, clientId, null, null), Has.Count.EqualTo(1));
 
                 // Check that it matches
-                Assert.That(ban.Id, Is.EqualTo(65));
+                Assert.That(ban.Id, Is.EqualTo(1));
                 Assert.That(ban.UserId, Is.EqualTo(clientId));
                 Assert.That(ban.BanTime.UtcDateTime - DateTime.UtcNow, Is.LessThanOrEqualTo(MarginOfError));
                 Assert.That(ban.ExpirationTime, Is.Not.Null);
-                Assert.That(ban.ExpirationTime.Value.UtcDateTime - DateTime.UtcNow.AddHours(65), Is.LessThanOrEqualTo(MarginOfError));
+                Assert.That(ban.ExpirationTime.Value.UtcDateTime - DateTime.UtcNow.AddHours(24), Is.LessThanOrEqualTo(MarginOfError));
                 Assert.That(ban.Reason, Is.EqualTo(banReason));
 
                 // Done through the console
@@ -107,33 +107,33 @@ namespace Content.IntegrationTests.Tests.Commands
             });
 
             // Pardon the actual ban
-            await server.WaitPost(() => sConsole.ExecuteCommand("pardon 65"));
+            await server.WaitPost(() => sConsole.ExecuteCommand("pardon 1"));
 
             // No bans should be returned
             Assert.That(await sDatabase.GetServerBanAsync(null, clientId, null, null), Is.Null);
 
             // Direct id lookup returns a pardoned ban
-            var pardonedBan = await sDatabase.GetServerBanAsync(65);
+            var pardonedBan = await sDatabase.GetServerBanAsync(1);
             Assert.Multiple(async () =>
             {
                 // Check that it matches
                 Assert.That(pardonedBan, Is.Not.Null);
 
                 // The list is still returned since that ignores pardons
-                Assert.That(await sDatabase.GetServerBansAsync(null, clientId, null, null), Has.Count.EqualTo(65));
+                Assert.That(await sDatabase.GetServerBansAsync(null, clientId, null, null), Has.Count.EqualTo(1));
 
-                Assert.That(pardonedBan.Id, Is.EqualTo(65));
+                Assert.That(pardonedBan.Id, Is.EqualTo(1));
                 Assert.That(pardonedBan.UserId, Is.EqualTo(clientId));
                 Assert.That(pardonedBan.BanTime.UtcDateTime - DateTime.UtcNow, Is.LessThanOrEqualTo(MarginOfError));
                 Assert.That(pardonedBan.ExpirationTime, Is.Not.Null);
-                Assert.That(pardonedBan.ExpirationTime.Value.UtcDateTime - DateTime.UtcNow.AddHours(65), Is.LessThanOrEqualTo(MarginOfError));
+                Assert.That(pardonedBan.ExpirationTime.Value.UtcDateTime - DateTime.UtcNow.AddHours(24), Is.LessThanOrEqualTo(MarginOfError));
                 Assert.That(pardonedBan.Reason, Is.EqualTo(banReason));
 
                 // Done through the console
                 Assert.That(pardonedBan.BanningAdmin, Is.Null);
 
                 Assert.That(pardonedBan.Unban, Is.Not.Null);
-                Assert.That(pardonedBan.Unban.BanId, Is.EqualTo(65));
+                Assert.That(pardonedBan.Unban.BanId, Is.EqualTo(1));
 
                 // Done through the console
                 Assert.That(pardonedBan.Unban.UnbanningAdmin, Is.Null);
@@ -142,7 +142,7 @@ namespace Content.IntegrationTests.Tests.Commands
             });
 
             // Try to pardon it again
-            await server.WaitPost(() => sConsole.ExecuteCommand("pardon 65"));
+            await server.WaitPost(() => sConsole.ExecuteCommand("pardon 1"));
 
             // Nothing changes
             Assert.Multiple(async () =>
@@ -151,18 +151,18 @@ namespace Content.IntegrationTests.Tests.Commands
                 Assert.That(await sDatabase.GetServerBanAsync(null, clientId, null, null), Is.Null);
 
                 // Direct id lookup returns a pardoned ban
-                Assert.That(await sDatabase.GetServerBanAsync(65), Is.Not.Null);
+                Assert.That(await sDatabase.GetServerBanAsync(1), Is.Not.Null);
 
                 // The list is still returned since that ignores pardons
-                Assert.That(await sDatabase.GetServerBansAsync(null, clientId, null, null), Has.Count.EqualTo(65));
+                Assert.That(await sDatabase.GetServerBansAsync(null, clientId, null, null), Has.Count.EqualTo(1));
             });
 
             // Reconnect client. Slightly faster than dirtying the pair.
             Assert.That(sPlayerManager.Sessions, Is.Empty);
             client.SetConnectTarget(server);
-            await client.WaitPost(() => netMan.ClientConnect(null!, 65, null!));
-            await pair.RunTicksSync(65);
-            Assert.That(sPlayerManager.Sessions, Has.Length.EqualTo(65));
+            await client.WaitPost(() => netMan.ClientConnect(null!, 0, null!));
+            await pair.RunTicksSync(5);
+            Assert.That(sPlayerManager.Sessions, Has.Length.EqualTo(1));
 
             await pair.CleanReturnAsync();
         }

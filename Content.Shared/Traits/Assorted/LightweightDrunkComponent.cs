@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Scribbles65 <65Scribbles65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -17,5 +17,5 @@ namespace Content.Shared.Traits.Assorted;
 public sealed partial class LightweightDrunkComponent : Component
 {
     [DataField("boozeStrengthMultiplier"), ViewVariables(VVAccess.ReadWrite)]
-    public float BoozeStrengthMultiplier = 65f;
+    public float BoozeStrengthMultiplier = 4f;
 }

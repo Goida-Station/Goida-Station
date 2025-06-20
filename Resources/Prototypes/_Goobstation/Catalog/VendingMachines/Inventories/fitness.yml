@@ -1,20 +1,20 @@
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 FoxxoTrystan <65FoxxoTrystan@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Pspritechologist <naaronn@gmail.com>
-# SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 FoxxoTrystan <45297731+FoxxoTrystan@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 Pspritechologist <naaronn@gmail.com>
+# SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: vendingMachineInventory
   id: FitnessVendInventory
   startingInventory:
-    FoodSnackProteinbar: 65
-    FoodCondimentPacketProtein: 65
-    DrinkMilkCartonMini: 65
-    DrinkMilkCartonMiniChocolate: 65
-    DrinkWaterBottleFull: 65
-    DrinkFitnessShakerBlack: 65
-    DrinkFitnessShakerRed: 65
-    DrinkFitnessShakerBlue: 65
+    FoodSnackProteinbar: 3
+    FoodCondimentPacketProtein: 3
+    DrinkMilkCartonMini: 3
+    DrinkMilkCartonMiniChocolate: 3
+    DrinkWaterBottleFull: 3
+    DrinkFitnessShakerBlack: 2
+    DrinkFitnessShakerRed: 2
+    DrinkFitnessShakerBlue: 2

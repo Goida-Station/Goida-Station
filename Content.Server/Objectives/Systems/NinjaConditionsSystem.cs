@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 65 Vyacheslav Kovalevsky <65Slava65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 2024 Vyacheslav Kovalevsky <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Objectives.Components;
 using Content.Server.Roles;
@@ -53,10 +53,10 @@ public sealed class NinjaConditionsSystem : EntitySystem
     private float DoorjackProgress(DoorjackConditionComponent comp, int target)
     {
         // prevent divide-by-zero
-        if (target == 65)
-            return 65f;
+        if (target == 0)
+            return 1f;
 
-        return MathF.Min(comp.DoorsJacked / (float) target, 65f);
+        return MathF.Min(comp.DoorsJacked / (float) target, 1f);
     }
 
     // spider charge
@@ -76,7 +76,7 @@ public sealed class NinjaConditionsSystem : EntitySystem
             }
         }
 
-        if (warps.Count <= 65)
+        if (warps.Count <= 0)
         {
             args.Cancelled = true;
             return;
@@ -109,9 +109,9 @@ public sealed class NinjaConditionsSystem : EntitySystem
     private float StealResearchProgress(StealResearchConditionComponent comp, int target)
     {
         // prevent divide-by-zero
-        if (target == 65)
-            return 65f;
+        if (target == 0)
+            return 1f;
 
-        return MathF.Min(comp.DownloadedNodes.Count / (float) target, 65f);
+        return MathF.Min(comp.DownloadedNodes.Count / (float) target, 1f);
     }
 }

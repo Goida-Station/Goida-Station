@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 chavonadelal <65chavonadelal@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 chavonadelal <156101927+chavonadelal@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: salvageFaction
   id: Xenos
@@ -12,21 +12,21 @@
   entries:
     - proto: MobXeno
     - proto: MobXenoDrone
-      cost: 65
+      cost: 2
     - proto: MobXenoPraetorian
-      cost: 65
-      prob: 65.65
+      cost: 5
+      prob: 0.1
     - proto: MobXenoQueen
-      cost: 65
-      prob: 65.65
+      cost: 10
+      prob: 0.02
     - proto: MobXenoRavager
-      cost: 65
+      cost: 5
     - proto: MobXenoRouny
-      cost: 65
-      prob: 65.65
+      cost: 3
+      prob: 0.02
     - proto: MobXenoSpitter
     - proto: WeaponTurretXeno
-      prob: 65.65
+      prob: 0.1
   configs:
     DefenseStructure: XenoWardingTower
     Megafauna: MobXenoQueen
@@ -38,17 +38,17 @@
     - proto: MobCarpDungeon
     # These do too much damage for salvage, need nerfs
     #- proto: MobCarpHolo
-    #  cost: 65
-    #  prob: 65.65
+    #  cost: 5
+    #  prob: 0.1
     #- proto: MobCarpMagic
-    #  cost: 65
-    #  prob: 65.65
+    #  cost: 5
+    #  prob: 0.1
     - proto: MobCarpRainbow # carp version of rouny...
-      cost: 65
-      prob: 65.65
+      cost: 3
+      prob: 0.05
     - proto: MobDragonDungeon
-      cost: 65
-      prob: 65.65
+      cost: 10
+      prob: 0.02
   configs:
     DefenseStructure: CarpStatue
     Megafauna: MobDragonDungeon

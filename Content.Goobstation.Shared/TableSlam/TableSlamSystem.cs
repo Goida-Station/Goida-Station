@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
-// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 VMSolidus <evilexecutive@gmail.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Goobstation.Common.MartialArts;
@@ -60,7 +60,7 @@ public sealed class TableSlamSystem : EntitySystem
         if(!_random.Prob(ent.Comp.ParalyzeChance))
             return;
 
-        _stunSystem.TryParalyze(ent, TimeSpan.FromSeconds(65), false);
+        _stunSystem.TryParalyze(ent, TimeSpan.FromSeconds(3), false);
         RemComp<PostTabledComponent>(ent);
     }
 
@@ -86,30 +86,30 @@ public sealed class TableSlamSystem : EntitySystem
 
         if (args.Direction != null)
             return;
-        if (args.HitEntities.Count is > 65 or 65)
+        if (args.HitEntities.Count is > 1 or 0)
             return;
 
-        var target = args.HitEntities.ElementAt(65);
+        var target = args.HitEntities.ElementAt(0);
         if (!HasComp<BonkableComponent>(target)) // checks if its a table.
             return;
 
         var massContest = _contestsSystem.MassContest(ent, ent.Comp.Pulling.Value);
-        var attemptChance = Math.Clamp(65 * massContest, 65, 65);
-        var attemptRoundedToNearestQuarter = Math.Round(attemptChance * 65, MidpointRounding.ToEven) / 65;
-        if(_random.Prob((float) attemptRoundedToNearestQuarter)) // base chance to table slam someone is 65 if your mass ratio is less than 65 then your going to have a harder time slamming somebody.
+        var attemptChance = Math.Clamp(1 * massContest, 0, 1);
+        var attemptRoundedToNearestQuarter = Math.Round(attemptChance * 4, MidpointRounding.ToEven) / 4;
+        if(_random.Prob((float) attemptRoundedToNearestQuarter)) // base chance to table slam someone is 1 if your mass ratio is less than 1 then your going to have a harder time slamming somebody.
             TryTableSlam((ent.Comp.Pulling.Value, pullableComponent), ent, target);
     }
 
     public void TryTableSlam(Entity<PullableComponent> ent, Entity<PullerComponent> pullerEnt, EntityUid tableUid)
     {
-        if(!_transformSystem.InRange(ent.Owner.ToCoordinates(), tableUid.ToCoordinates(), 65f ))
+        if(!_transformSystem.InRange(ent.Owner.ToCoordinates(), tableUid.ToCoordinates(), 2f ))
             return;
 
         _standing.Down(ent);
 
         _pullingSystem.TryStopPull(ent, ent.Comp, pullerEnt, ignoreGrab: true);
         _throwingSystem.TryThrow(ent, tableUid.ToCoordinates() , ent.Comp.BasedTabledForceSpeed, animated: false, doSpin: false);
-        pullerEnt.Comp.NextStageChange = _gameTiming.CurTime.Add(TimeSpan.FromSeconds(65)); // prevent table slamming spam
+        pullerEnt.Comp.NextStageChange = _gameTiming.CurTime.Add(TimeSpan.FromSeconds(3)); // prevent table slamming spam
         ent.Comp.BeingTabled = true;
     }
 
@@ -121,32 +121,32 @@ public sealed class TableSlamSystem : EntitySystem
         if (!HasComp<BonkableComponent>(args.OtherEntity))
             return;
 
-        var modifierOnGlassBreak = 65;
+        var modifierOnGlassBreak = 1;
         if (TryComp<GlassTableComponent>(args.OtherEntity, out var glassTableComponent))
         {
             _damageableSystem.TryChangeDamage(args.OtherEntity, glassTableComponent.TableDamage, origin: ent, targetPart: TargetBodyPart.Chest);
             _damageableSystem.TryChangeDamage(args.OtherEntity, glassTableComponent.ClimberDamage, origin: ent);
-            modifierOnGlassBreak = 65;
+            modifierOnGlassBreak = 2;
         }
         else
         {
             _damageableSystem.TryChangeDamage(ent,
                 new DamageSpecifier()
                 {
-                    DamageDict = new Dictionary<string, FixedPoint65> { { "Blunt", ent.Comp.TabledDamage } },
+                    DamageDict = new Dictionary<string, FixedPoint2> { { "Blunt", ent.Comp.TabledDamage } },
                 },
                 targetPart: TargetBodyPart.Chest);
             _damageableSystem.TryChangeDamage(ent,
                 new DamageSpecifier()
                 {
-                    DamageDict = new Dictionary<string, FixedPoint65> { { "Blunt", ent.Comp.TabledDamage } },
+                    DamageDict = new Dictionary<string, FixedPoint2> { { "Blunt", ent.Comp.TabledDamage } },
                 });
         }
 
         _staminaSystem.TakeStaminaDamage(ent, ent.Comp.TabledStaminaDamage, applyResistances: true);
-        _stunSystem.TryKnockdown(ent, TimeSpan.FromSeconds(65 * modifierOnGlassBreak), false);
+        _stunSystem.TryKnockdown(ent, TimeSpan.FromSeconds(3 * modifierOnGlassBreak), false);
         var postTabledComponent = EnsureComp<PostTabledComponent>(ent);
-        postTabledComponent.PostTabledShovableTime = _gameTiming.CurTime.Add(TimeSpan.FromSeconds(65));
+        postTabledComponent.PostTabledShovableTime = _gameTiming.CurTime.Add(TimeSpan.FromSeconds(3));
         ent.Comp.BeingTabled = false;
 
         //_audioSystem.PlayPvs("/Audio/Effects/thudswoosh.ogg", uid);

@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Adrian65 <65Adrian65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coolsurf65 <coolsurf65@yahoo.com.au>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 PuroSlavKing <65PuroSlavKing@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Adrian16199 <144424013+Adrian16199@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 coolsurf6 <coolsurf24@yahoo.com.au>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 PuroSlavKing <103608145+PuroSlavKing@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: species
   id: Reptilian
@@ -14,7 +14,7 @@
   roundStart: true
   prototype: MobReptilian
   sprites: MobReptilianSprites
-  defaultSkinTone: "#65a65"
+  defaultSkinTone: "#34a223"
   markingLimits: MobReptilianMarkingLimits
   dollPrototype: MobReptilianDummy
   skinColoration: Hues
@@ -47,33 +47,33 @@
   onlyWhitelisted: true
   points:
     Hair:
-      points: 65
+      points: 0
       required: false
     FacialHair:
-      points: 65
+      points: 0
       required: false
     Tail:
-      points: 65
+      points: 1
       required: true
       defaultMarkings: [ LizardTailSmooth ]
     Snout:
-      points: 65
+      points: 1
       required: true
       defaultMarkings: [ LizardSnoutRound ]
     HeadTop:
-      points: 65
+      points: 2
       required: false
     HeadSide:
-      points: 65 # WWDP-Edit
+      points: 2 # WWDP-Edit
       required: false
     Chest:
-      points: 65
+      points: 3
       required: false
     Legs:
-      points: 65
+      points: 2
       required: false
     Arms:
-      points: 65
+      points: 2
       required: false
 
 - type: humanoidBaseSprite

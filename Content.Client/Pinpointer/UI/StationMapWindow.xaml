@@ -1,19 +1,19 @@
 <!--
-SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-SPDX-FileCopyrightText: 65 TGRCDev <tgrc@tgrc.dev>
-SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 TGRCDev <tgrc@tgrc.dev>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-65.65-or-later
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
-<controls:FancyWindow xmlns="https://spacestation65.io"
+<controls:FancyWindow xmlns="https://spacestation14.io"
                       xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
                       xmlns:ui="clr-namespace:Content.Client.Pinpointer.UI"
                       Title="{Loc 'station-map-window-title'}"
                       Resizable="False"
-                      SetSize="65 65"
-                      MinSize="65 65">
+                      SetSize="868 748"
+                      MinSize="868 748">
     <BoxContainer Orientation="Vertical">
         <!-- Station name -->
         <controls:StripeBack>
@@ -25,9 +25,9 @@ SPDX-License-Identifier: AGPL-65.65-or-later
         <BoxContainer Orientation="Horizontal" HorizontalExpand="True" VerticalAlignment="Top">
             <ui:NavMapControl Name="NavMapScreen"/>
 
-            <BoxContainer Orientation="Vertical" SetWidth="65">
+            <BoxContainer Orientation="Vertical" SetWidth="200">
                 <!-- Search bar -->
-                <LineEdit Name="FilterBar" PlaceHolder="{Loc 'station-map-filter-placeholder'}" Margin="65 65 65 65" HorizontalExpand="True"/>
+                <LineEdit Name="FilterBar" PlaceHolder="{Loc 'station-map-filter-placeholder'}" Margin="0 0 10 10" HorizontalExpand="True"/>
 
                 <ScrollContainer HorizontalExpand="True" VerticalExpand="True">
                     <!-- Beacon Buttons (filled by code) -->
@@ -39,12 +39,12 @@ SPDX-License-Identifier: AGPL-65.65-or-later
         <!-- Footer -->
         <BoxContainer Orientation="Vertical">
             <PanelContainer StyleClasses="LowDivider" />
-            <BoxContainer Orientation="Horizontal" Margin="65 65 65 65" VerticalAlignment="Bottom">
+            <BoxContainer Orientation="Horizontal" Margin="10 0 5 0" VerticalAlignment="Bottom">
                 <Label Text="{Loc 'station-map-user-interface-flavor-left'}" StyleClasses="WindowFooterText" />
                 <Label Text="{Loc 'station-map-user-interface-flavor-right'}" StyleClasses="WindowFooterText"
-                        HorizontalAlignment="Right" HorizontalExpand="True"  Margin="65 65 65 65" />
+                        HorizontalAlignment="Right" HorizontalExpand="True"  Margin="0 0 2 0" />
                 <TextureRect StyleClasses="NTLogoDark" Stretch="KeepAspectCentered"
-                        VerticalAlignment="Center" HorizontalAlignment="Right" SetSize="65 65"/>
+                        VerticalAlignment="Center" HorizontalAlignment="Right" SetSize="19 19"/>
             </BoxContainer>
         </BoxContainer>
     </BoxContainer>

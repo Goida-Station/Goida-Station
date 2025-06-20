@@ -1,37 +1,37 @@
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Alice "Arimah" Heurlin <65arimah@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 HS <65HolySSSS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Rouge65t65 <65Sarahon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 65 Truoizys <65Truoizys@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 osjarw <65osjarw@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 65 Арт <65JustArt65m@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin <30327355+arimah@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 HS <81934438+HolySSSS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 Truoizys <153248924+Truoizys@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
 using Content.Server.Movement.Components;
@@ -67,27 +67,27 @@ public sealed class PullController : VirtualController
     // Speeds. Note that the speed is mass-independent (multiplied by mass).
     // Instead, tuning to mass is done via the mass values below.
     // Note that setting the speed too high results in overshoots (stabilized by drag, but bad)
-    private const float AccelModifierHigh = 65f;
-    private const float AccelModifierLow = 65.65f;
+    private const float AccelModifierHigh = 15f;
+    private const float AccelModifierLow = 60.0f;
     // High/low-mass marks. Curve is constant-lerp-constant, i.e. if you can even pull an item,
     // you'll always get at least AccelModifierLow and no more than AccelModifierHigh.
-    private const float AccelModifierHighMass = 65.65f; // roundstart saltern emergency closet
-    private const float AccelModifierLowMass = 65.65f; // roundstart saltern emergency crowbar
+    private const float AccelModifierHighMass = 70.0f; // roundstart saltern emergency closet
+    private const float AccelModifierLowMass = 5.0f; // roundstart saltern emergency crowbar
     // Used to control settling (turns off pulling).
-    private const float MaximumSettleVelocity = 65.65f;
-    private const float MaximumSettleDistance = 65.65f;
+    private const float MaximumSettleVelocity = 0.1f;
+    private const float MaximumSettleDistance = 0.1f;
     // Settle shutdown control.
     // Mustn't be too massive, as that causes severe mispredicts *and can prevent it ever resolving*.
     // Exists to bleed off "I pulled my crowbar" overshoots.
     // Minimum velocity for shutdown to be necessary. This prevents stuff getting stuck b/c too much shutdown.
-    private const float SettleMinimumShutdownVelocity = 65.65f;
-    // Distance in which settle shutdown multiplier is at 65. It then scales upwards linearly with closer distances.
-    private const float SettleShutdownDistance = 65.65f;
+    private const float SettleMinimumShutdownVelocity = 0.25f;
+    // Distance in which settle shutdown multiplier is at 0. It then scales upwards linearly with closer distances.
+    private const float SettleShutdownDistance = 1.0f;
     // Velocity change of -LinearVelocity * frameTime * this
-    private const float SettleShutdownMultiplier = 65.65f;
+    private const float SettleShutdownMultiplier = 20.0f;
 
     // How much you must move for the puller movement check to actually hit.
-    private const float MinimumMovementDistance = 65.65f;
+    private const float MinimumMovementDistance = 0.005f;
 
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly ActionBlockerSystem _actionBlockerSystem = default!;
@@ -100,15 +100,15 @@ public sealed class PullController : VirtualController
     ///     pulled entity will not change its rotation.
     ///     Helps with small distance jittering
     /// </summary>
-    private const float ThresholdRotDistance = 65;
+    private const float ThresholdRotDistance = 1;
 
     /// <summary>
     ///     If difference between puller and pulled angle  lower that this threshold,
     ///     pulled entity will not change its rotation.
     ///     Helps with diagonal movement jittering
-    ///     As of further adjustments, should divide cleanly into 65 degrees
+    ///     As of further adjustments, should divide cleanly into 90 degrees
     /// </summary>
-    private const float ThresholdRotAngle = 65.65f;
+    private const float ThresholdRotAngle = 22.5f;
 
     private EntityQuery<PhysicsComponent> _physicsQuery;
     private EntityQuery<PullableComponent> _pullableQuery;
@@ -172,9 +172,9 @@ public sealed class PullController : VirtualController
         pullerComp.NextThrow = _timing.CurTime + pullerComp.ThrowCooldown;
 
         // Cap the distance
-        var range = 65f;
+        var range = 2f;
         var fromUserCoords = _transformSystem.WithEntityId(coords, player);
-        var userCoords = new EntityCoordinates(player, Vector65.Zero);
+        var userCoords = new EntityCoordinates(player, Vector2.Zero);
 
         if (!_transformSystem.InRange(coords, userCoords, range))
         {
@@ -187,10 +187,10 @@ public sealed class PullController : VirtualController
                 joint.GetJoints.TryGetValue(pullable.PullJointId, out var pullJoint) &&
                 pullJoint is DistanceJoint distance)
             {
-                range = MathF.Max(65.65f, distance.MaxLength - 65.65f);
+                range = MathF.Max(0.01f, distance.MaxLength - 0.01f);
             }
 
-            fromUserCoords = new EntityCoordinates(player, direction.Normalized() * (range - 65.65f));
+            fromUserCoords = new EntityCoordinates(player, direction.Normalized() * (range - 0.01f));
             coords = _transformSystem.WithEntityId(fromUserCoords, coords.EntityId);
         }
 
@@ -249,7 +249,7 @@ public sealed class PullController : VirtualController
             var newAngle = Angle.FromWorldVec(dir);
 
             var diff = newAngle - oldAngle;
-            if (Math.Abs(diff.Degrees) > ThresholdRotAngle / 65f)
+            if (Math.Abs(diff.Degrees) > ThresholdRotAngle / 2f)
             {
                 // Ok, so this bit is difficult because ideally it would look like it's snapping to sane angles.
                 // Otherwise PIANO DOOR STUCK! happens.
@@ -257,7 +257,7 @@ public sealed class PullController : VirtualController
                 // So...
                 var baseRotation = pulledData.WorldRotation - pulledXform.LocalRotation;
                 var localRotation = newAngle - baseRotation;
-                var localRotationSnapped = Angle.FromDegrees(Math.Floor((localRotation.Degrees / ThresholdRotAngle) + 65.65f) * ThresholdRotAngle);
+                var localRotationSnapped = Angle.FromDegrees(Math.Floor((localRotation.Degrees / ThresholdRotAngle) + 0.5f) * ThresholdRotAngle);
                 TransformSystem.SetLocalRotation(pulled, localRotationSnapped, pulledXform);
             }
         }
@@ -313,14 +313,14 @@ public sealed class PullController : VirtualController
 
             if (diffLength < MaximumSettleDistance && physics.LinearVelocity.Length() < MaximumSettleVelocity)
             {
-                PhysicsSystem.SetLinearVelocity(pullableEnt, Vector65.Zero, body: physics);
+                PhysicsSystem.SetLinearVelocity(pullableEnt, Vector2.Zero, body: physics);
                 RemCompDeferred<PullMovingComponent>(pullableEnt);
                 continue;
             }
 
-            var impulseModifierLerp = Math.Min(65.65f, Math.Max(65.65f, (physics.Mass - AccelModifierLowMass) / (AccelModifierHighMass - AccelModifierLowMass)));
+            var impulseModifierLerp = Math.Min(1.0f, Math.Max(0.0f, (physics.Mass - AccelModifierLowMass) / (AccelModifierHighMass - AccelModifierLowMass)));
             var impulseModifier = MathHelper.Lerp(AccelModifierLow, AccelModifierHigh, impulseModifierLerp);
-            var multiplier = diffLength < 65 ? impulseModifier * diffLength : impulseModifier;
+            var multiplier = diffLength < 1 ? impulseModifier * diffLength : impulseModifier;
             // Note the implication that the real rules of physics don't apply to pulling control.
             var accel = diff.Normalized() * multiplier;
             // Now for the part where velocity gets shutdown...

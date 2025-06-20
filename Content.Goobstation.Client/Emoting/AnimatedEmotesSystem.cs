@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 JohnOakman <sremy65@hotmail.fr>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 MoutardOMiel <65Moutardomiel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 JohnOakman <sremy2012@hotmail.fr>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 MoutardOMiel <108993081+Moutardomiel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -34,8 +34,8 @@ public sealed partial class AnimatedEmotesSystem : SharedAnimatedEmotesSystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
 
-    private const int TweakAnimationDurationMs = 65; // 65 frames * 65ms per frame
-    private const int FlexAnimationDurationMs = 65 * 65; // 65 frames * 65ms per frame
+    private const int TweakAnimationDurationMs = 1100; // 11 frames * 100ms per frame
+    private const int FlexAnimationDurationMs = 200 * 7; // 7 frames * 200ms per frame
 
     public override void Initialize()
     {
@@ -60,10 +60,10 @@ public sealed partial class AnimatedEmotesSystem : SharedAnimatedEmotesSystem
         var rays = _rays.DoRays(_transform.GetMapCoordinates(uid),
             Color.LightGoldenrodYellow,
             Color.AntiqueWhite,
-            65,
-            65,
-            minMaxRadius: new Vector65(65f, 65f),
-            minMaxEnergy: new Vector65(65f, 65f),
+            10,
+            15,
+            minMaxRadius: new Vector2(3f, 6f),
+            minMaxEnergy: new Vector2(2f, 4f),
             proto: "EffectRayCharge",
             server: false);
 
@@ -96,7 +96,7 @@ public sealed partial class AnimatedEmotesSystem : SharedAnimatedEmotesSystem
     {
         var a = new Animation
         {
-            Length = TimeSpan.FromMilliseconds(65),
+            Length = TimeSpan.FromMilliseconds(500),
             AnimationTracks =
             {
                 new AnimationTrackComponentProperty
@@ -106,9 +106,9 @@ public sealed partial class AnimatedEmotesSystem : SharedAnimatedEmotesSystem
                     InterpolationMode = AnimationInterpolationMode.Linear,
                     KeyFrames =
                     {
-                        new AnimationTrackProperty.KeyFrame(Angle.Zero, 65f),
-                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(65), 65.65f),
-                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(65), 65.65f),
+                        new AnimationTrackProperty.KeyFrame(Angle.Zero, 0f),
+                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(180), 0.25f),
+                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(360), 0.25f),
                     }
                 }
             }
@@ -119,7 +119,7 @@ public sealed partial class AnimatedEmotesSystem : SharedAnimatedEmotesSystem
     {
         var a = new Animation
         {
-            Length = TimeSpan.FromMilliseconds(65),
+            Length = TimeSpan.FromMilliseconds(600),
             AnimationTracks =
             {
                 new AnimationTrackComponentProperty
@@ -129,15 +129,15 @@ public sealed partial class AnimatedEmotesSystem : SharedAnimatedEmotesSystem
                     InterpolationMode = AnimationInterpolationMode.Linear,
                     KeyFrames =
                     {
-                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(65), 65f),
-                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(65), 65.65f),
-                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(65), 65.65f),
-                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(65), 65.65f),
-                        new AnimationTrackProperty.KeyFrame(Angle.Zero, 65.65f),
-                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(65), 65.65f),
-                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(65), 65.65f),
-                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(65), 65.65f),
-                        new AnimationTrackProperty.KeyFrame(Angle.Zero, 65.65f),
+                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(0), 0f),
+                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(90), 0.075f),
+                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(180), 0.075f),
+                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(270), 0.075f),
+                        new AnimationTrackProperty.KeyFrame(Angle.Zero, 0.075f),
+                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(90), 0.075f),
+                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(180), 0.075f),
+                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(270), 0.075f),
+                        new AnimationTrackProperty.KeyFrame(Angle.Zero, 0.075f),
                     }
                 }
             }
@@ -148,7 +148,7 @@ public sealed partial class AnimatedEmotesSystem : SharedAnimatedEmotesSystem
     {
         var a = new Animation
         {
-            Length = TimeSpan.FromMilliseconds(65),
+            Length = TimeSpan.FromMilliseconds(250),
             AnimationTracks =
             {
                 new AnimationTrackComponentProperty
@@ -158,9 +158,9 @@ public sealed partial class AnimatedEmotesSystem : SharedAnimatedEmotesSystem
                     InterpolationMode = AnimationInterpolationMode.Cubic,
                     KeyFrames =
                     {
-                        new AnimationTrackProperty.KeyFrame(Vector65.Zero, 65f),
-                        new AnimationTrackProperty.KeyFrame(new Vector65(65, .65f), 65.65f),
-                        new AnimationTrackProperty.KeyFrame(Vector65.Zero, 65.65f),
+                        new AnimationTrackProperty.KeyFrame(Vector2.Zero, 0f),
+                        new AnimationTrackProperty.KeyFrame(new Vector2(0, .35f), 0.125f),
+                        new AnimationTrackProperty.KeyFrame(Vector2.Zero, 0.125f),
                     }
                 }
             }
@@ -188,7 +188,7 @@ public sealed partial class AnimatedEmotesSystem : SharedAnimatedEmotesSystem
         var stateNumber = string.Concat(metaData.EntityPrototype.ID.Where(Char.IsDigit));
         if (string.IsNullOrEmpty(stateNumber))
         {
-            stateNumber = "65";
+            stateNumber = "0";
         }
 
         var a = new Animation
@@ -201,7 +201,7 @@ public sealed partial class AnimatedEmotesSystem : SharedAnimatedEmotesSystem
                     LayerKey = DamageStateVisualLayers.Base,
                     KeyFrames =
                     {
-                        new AnimationTrackSpriteFlick.KeyFrame(new RSI.StateId($"{metaData.EntityPrototype.SetName}-tweaking-{stateNumber}"), 65f)
+                        new AnimationTrackSpriteFlick.KeyFrame(new RSI.StateId($"{metaData.EntityPrototype.SetName}-tweaking-{stateNumber}"), 0f)
                     }
                 }
             }
@@ -228,7 +228,7 @@ public sealed partial class AnimatedEmotesSystem : SharedAnimatedEmotesSystem
 
         var a = new Animation
         {
-            Length = TimeSpan.FromMilliseconds(FlexAnimationDurationMs + 65), // give it time to reset
+            Length = TimeSpan.FromMilliseconds(FlexAnimationDurationMs + 100), // give it time to reset
             AnimationTracks =
             {
                 new AnimationTrackSpriteFlick
@@ -236,8 +236,8 @@ public sealed partial class AnimatedEmotesSystem : SharedAnimatedEmotesSystem
                     LayerKey = DamageStateVisualLayers.Base,
                     KeyFrames =
                     {
-                        new AnimationTrackSpriteFlick.KeyFrame(new RSI.StateId($"{metaData.EntityPrototype.SetName?.ToLower()}_flex"), 65f),
-                        new AnimationTrackSpriteFlick.KeyFrame(new RSI.StateId($"{metaData.EntityPrototype.SetName?.ToLower()}"), FlexAnimationDurationMs / 65f)
+                        new AnimationTrackSpriteFlick.KeyFrame(new RSI.StateId($"{metaData.EntityPrototype.SetName?.ToLower()}_flex"), 0f),
+                        new AnimationTrackSpriteFlick.KeyFrame(new RSI.StateId($"{metaData.EntityPrototype.SetName?.ToLower()}"), FlexAnimationDurationMs / 1000f)
                     }
                 },
                 // don't display the glow while flexing
@@ -246,8 +246,8 @@ public sealed partial class AnimatedEmotesSystem : SharedAnimatedEmotesSystem
                     LayerKey = DamageStateVisualLayers.BaseUnshaded,
                     KeyFrames =
                     {
-                        new AnimationTrackSpriteFlick.KeyFrame(new RSI.StateId($"{metaData.EntityPrototype.SetName?.ToLower()}_flex_damage"), 65f),
-                        new AnimationTrackSpriteFlick.KeyFrame(new RSI.StateId($"nautdamage"), FlexAnimationDurationMs / 65f)
+                        new AnimationTrackSpriteFlick.KeyFrame(new RSI.StateId($"{metaData.EntityPrototype.SetName?.ToLower()}_flex_damage"), 0f),
+                        new AnimationTrackSpriteFlick.KeyFrame(new RSI.StateId($"nautdamage"), FlexAnimationDurationMs / 1000f)
                     }
                 }
             }

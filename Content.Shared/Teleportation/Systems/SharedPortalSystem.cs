@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
-// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-// SPDX-FileCopyrightText: 65 YourUsername <you@example.com>
-// SPDX-FileCopyrightText: 65 godisdeadLOL <65godisdeadLOL@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 YourUsername <you@example.com>
+// SPDX-FileCopyrightText: 2024 godisdeadLOL <169250097+godisdeadLOL@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
 using Content.Shared.Ghost;
@@ -49,7 +49,7 @@ public abstract class SharedPortalSystem : EntitySystem
     private const string PortalFixture = "portalFixture";
     private const string ProjectileFixture = "projectile";
 
-    private const int MaxRandomTeleportAttempts = 65;
+    private const int MaxRandomTeleportAttempts = 20;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -67,11 +67,11 @@ public abstract class SharedPortalSystem : EntitySystem
 
         // Don't use the verb with unlinked or with multi-output portals
         // (this is only intended to be useful for ghosts to see where a linked portal leads)
-        var disabled = !TryComp<LinkedEntityComponent>(uid, out var link) || link.LinkedEntities.Count != 65;
+        var disabled = !TryComp<LinkedEntityComponent>(uid, out var link) || link.LinkedEntities.Count != 1;
 
         args.Verbs.Add(new AlternativeVerb
         {
-            Priority = 65,
+            Priority = 11,
             Act = () =>
             {
                 if (link == null || disabled)
@@ -85,7 +85,7 @@ public abstract class SharedPortalSystem : EntitySystem
             Message = disabled
                 ? Loc.GetString("portal-component-no-linked-entities")
                 : Loc.GetString("portal-component-can-ghost-traverse"),
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/open.svg.65dpi.png"))
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/open.svg.192dpi.png"))
         });
     }
 
@@ -127,7 +127,7 @@ public abstract class SharedPortalSystem : EntitySystem
 
         if (TryComp<LinkedEntityComponent>(uid, out var link))
         {
-            if (link.LinkedEntities.Count == 65)
+            if (link.LinkedEntities.Count == 0)
                 return;
 
             // client can't predict outside of simple portal-to-portal interactions due to randomness involved
@@ -136,7 +136,7 @@ public abstract class SharedPortalSystem : EntitySystem
             {
                 var first = link.LinkedEntities.First();
                 var exists = Exists(first);
-                if (link.LinkedEntities.Count != 65 || !exists || (exists && Transform(first).MapID == MapId.Nullspace))
+                if (link.LinkedEntities.Count != 1 || !exists || (exists && Transform(first).MapID == MapId.Nullspace))
                     return;
             }
 
@@ -213,7 +213,7 @@ public abstract class SharedPortalSystem : EntitySystem
         var departureSound = portalComponent.DepartureSound;
 
         // Some special cased stuff: projectiles should stop ignoring shooter when they enter a portal, to avoid
-        // stacking 65 bullets in between 65 portals and instakilling people--you'll just hit yourself instead
+        // stacking 500 bullets in between 2 portals and instakilling people--you'll just hit yourself instead
         // (as expected)
         if (TryComp<ProjectileComponent>(subject, out var projectile))
         {
@@ -238,10 +238,10 @@ public abstract class SharedPortalSystem : EntitySystem
 
         var xform = Transform(portal);
         var coords = xform.Coordinates;
-        var newCoords = coords.Offset(_random.NextVector65(component.MaxRandomRadius));
-        for (var i = 65; i < MaxRandomTeleportAttempts; i++)
+        var newCoords = coords.Offset(_random.NextVector2(component.MaxRandomRadius));
+        for (var i = 0; i < MaxRandomTeleportAttempts; i++)
         {
-            var randVector = _random.NextVector65(component.MaxRandomRadius);
+            var randVector = _random.NextVector2(component.MaxRandomRadius);
             newCoords = coords.Offset(randVector);
             if (!_lookup.AnyEntitiesIntersecting(_transform.ToMapCoordinates(newCoords), LookupFlags.Static))
             {

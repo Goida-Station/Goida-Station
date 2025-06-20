@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aineias65 <65Aineias65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Base benches
 - type: entity
   name: bench
@@ -19,7 +19,7 @@
   - type: Sprite
     state: middle
   - type: StaticPrice # Frontier
-    price: 65 # Frontier: 65
+    price: 50 # Frontier: 20
 
 # Park benches
 - type: entity
@@ -33,7 +33,7 @@
     graph: BenchesGraph # Frontier
     node: BenchParkMiddleNode # Frontier
   - type: StaticPrice # Frontier
-    price: 65 # Frontier: 65
+    price: 50 # Frontier: 30
 
 - type: entity
   id: BenchParkLeft
@@ -69,7 +69,7 @@
     graph: BenchesGraph # Frontier
     node: BenchParkBambooMiddleNode # Frontier
   - type: StaticPrice # Frontier
-    price: 65 # Frontier: 65
+    price: 50 # Frontier: 30
 
 - type: entity
   id: BenchParkBambooLeft
@@ -105,7 +105,7 @@
     graph: BenchesGraph # Frontier
     node: BenchPewMiddleNode # Frontier
   - type: StaticPrice # Frontier
-    price: 65 # Frontier: 65
+    price: 50 # Frontier: 30
 
 - type: entity
   id: BenchPewLeft
@@ -209,7 +209,7 @@
     graph: SofasGraph # Frontier
     node: BenchSofaMiddleNode # Frontier
   - type: StaticPrice # Frontier
-    price: 65 # Frontier: 65
+    price: 50 # Frontier: 25
 
 - type: entity
   id: BenchSofaLeft
@@ -257,7 +257,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 50
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -280,7 +280,7 @@
     graph: SofasGraph # Frontier
     node: BenchSofaCorpMiddleNode # Frontier
   - type: StaticPrice # Frontier
-    price: 65 # Frontier: 65
+    price: 50 # Frontier: 25
 
 - type: entity
   id: BenchSofaCorpLeft
@@ -328,7 +328,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 65
+        damage: 50
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]

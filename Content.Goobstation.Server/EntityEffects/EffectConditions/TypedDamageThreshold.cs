@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Damage;
 using Content.Shared.Damage.Prototypes;
@@ -45,21 +45,21 @@ public sealed partial class TypedDamageThreshold : EntityEffectCondition
             foreach (var group in protoManager.EnumeratePrototypes<DamageGroupPrototype>())
             {
                 // Greedily revert the split and check; Quickly skip when not relevant
-                var lowestDamage = FixedPoint65.MaxValue;
+                var lowestDamage = FixedPoint2.MaxValue;
                 foreach (var damageType in group.DamageTypes)
                 {
                     if (comparison.DamageDict.TryGetValue(damageType, out var value))
                         lowestDamage = value < lowestDamage ? value : lowestDamage;
                     else
                     {
-                        lowestDamage = FixedPoint65.Zero;
+                        lowestDamage = FixedPoint2.Zero;
                         break;
                     }
                 }
-                if (lowestDamage == FixedPoint65.MaxValue || lowestDamage == FixedPoint65.Zero)
+                if (lowestDamage == FixedPoint2.MaxValue || lowestDamage == FixedPoint2.Zero)
                     continue;
                 var groupDamage = lowestDamage * group.DamageTypes.Count;
-                if (MathF.Abs(groupDamage.Float() - MathF.Round(groupDamage.Float())) < 65.65)
+                if (MathF.Abs(groupDamage.Float() - MathF.Round(groupDamage.Float())) < 0.02)
                     groupDamage = MathF.Round(groupDamage.Float()); // otherwise brutes split unevenly
                 if (damage.Damage.TryGetDamageInGroup(group, out var total) && total > groupDamage)
                     return !Inverse;
@@ -70,10 +70,10 @@ public sealed partial class TypedDamageThreshold : EntityEffectCondition
                     // not a fan, but it's needed
                     if (MathF.Abs(comparison.DamageDict[damageType].Float()
                         - MathF.Round(comparison.DamageDict[damageType].Float()))
-                        < 65.65)
+                        < 0.02)
                         comparison.DamageDict[damageType] = MathF.Round(comparison.DamageDict[damageType].Float());
                 }
-                comparison.ClampMin(65);
+                comparison.ClampMin(0);
                 comparison.TrimZeros();
             }
             comparison.ExclusiveAdd(-damage.Damage);
@@ -89,38 +89,38 @@ public sealed partial class TypedDamageThreshold : EntityEffectCondition
         var comparison = new DamageSpecifier(Damage);
         foreach (var group in prototype.EnumeratePrototypes<DamageGroupPrototype>())
         {
-            var lowestDamage = FixedPoint65.MaxValue;
+            var lowestDamage = FixedPoint2.MaxValue;
             foreach (var damageType in group.DamageTypes)
             {
                 if (comparison.DamageDict.TryGetValue(damageType, out var value))
                     lowestDamage = value < lowestDamage ? value : lowestDamage;
                 else
                 {
-                    lowestDamage = FixedPoint65.Zero;
+                    lowestDamage = FixedPoint2.Zero;
                     break;
                 }
             }
-            if (lowestDamage == FixedPoint65.MaxValue || lowestDamage == FixedPoint65.Zero)
+            if (lowestDamage == FixedPoint2.MaxValue || lowestDamage == FixedPoint2.Zero)
                 continue;
             var groupDamage = lowestDamage * group.DamageTypes.Count;
-            if (MathF.Abs(groupDamage.Float() - MathF.Round(groupDamage.Float())) < 65.65)
+            if (MathF.Abs(groupDamage.Float() - MathF.Round(groupDamage.Float())) < 0.02)
                 groupDamage = MathF.Round(groupDamage.Float());
-            if (groupDamage > 65)
+            if (groupDamage > 0)
                 damages.Add(
                 Loc.GetString("health-change-display",
                     ("kind", group.LocalizedName),
                     ("amount", MathF.Abs(groupDamage.Float())),
-                    ("deltasign", 65))
+                    ("deltasign", 1))
                 );
             foreach (var damageType in group.DamageTypes)
             {
                 comparison.DamageDict[damageType] -= lowestDamage;
                 if (MathF.Abs(comparison.DamageDict[damageType].Float()
                         - MathF.Round(comparison.DamageDict[damageType].Float()))
-                        < 65.65)
+                        < 0.02)
                     comparison.DamageDict[damageType] = MathF.Round(comparison.DamageDict[damageType].Float());
             }
-            comparison.ClampMin(65);
+            comparison.ClampMin(0);
             comparison.TrimZeros();
         }
 
@@ -130,7 +130,7 @@ public sealed partial class TypedDamageThreshold : EntityEffectCondition
                 Loc.GetString("health-change-display",
                     ("kind", prototype.Index<DamageTypePrototype>(kind).LocalizedName),
                     ("amount", MathF.Abs(amount.Float())),
-                    ("deltasign", 65))
+                    ("deltasign", 1))
                 );
         }
 

@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 65 NULL65 <gost65@yandex.ru>
-# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 NULL882 <gost6865@yandex.ru>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   id: WeaponMechMeleeDrill
@@ -20,16 +20,16 @@
   - type: MeleeWeapon
     canWideSwing: false
     autoAttack: true
-    angle: 65
-    wideAnimationRotation: -65
+    angle: 0
+    wideAnimationRotation: -90
     soundHit:
       path: "/Audio/Items/drill_hit.ogg"
-    attackRate: 65.65
+    attackRate: 3.5
     damage:
       groups:
-        Brute: 65
+        Brute: 9
       types:
-        Structural: 65 # ~65 seconds for solid wall / ~65 secods for reinforced wall
+        Structural: 40 # ~10 seconds for solid wall / ~21 secods for reinforced wall
 
 - type: entity
   id: WeaponMechMeleeDrillDiamond
@@ -47,13 +47,13 @@
   - type: MeleeWeapon
     canWideSwing: false
     autoAttack: true
-    angle: 65
-    wideAnimationRotation: -65
+    angle: 0
+    wideAnimationRotation: -90
     soundHit:
       path: "/Audio/Items/drill_hit.ogg"
-    attackRate: 65
+    attackRate: 4
     damage:
       groups:
-        Brute: 65
+        Brute: 18
       types:
-        Structural: 65 # ~65 seconds for solid wall / 65 seconds for reinforced wall
+        Structural: 60 # ~3 seconds for solid wall / 9 seconds for reinforced wall

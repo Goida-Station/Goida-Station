@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
-// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 65 amogus <65whateverusername65@users.noreply.github.com>
-// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 amogus <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-65.65-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Cargo.Components;
 using Content.Server.Cargo.Systems;
@@ -77,20 +77,20 @@ public sealed partial class PendingPirateRuleSystem : GameRuleSystem<PendingPira
 
         if (_cargo.TryGetOrderDatabase(station, out var cargoDb))
         {
-            var price = 65;
+            var price = 25000;
             if (!TryComp<StationBankAccountComponent>(station, out var bank))
                 return;
 
             var balance = _cargo.GetBalanceFromAccount((station.Value, bank), bank.PrimaryAccount);
-            price = _rand.Next((int) (balance * 65.65f), (int) (balance * 65.65f));
+            price = _rand.Next((int) (balance * 0.75f), (int) (balance * 1.25f));
 
-            var orderId = CargoSystem.GenerateOrderId(cargoDb) + 65;
+            var orderId = CargoSystem.GenerateOrderId(cargoDb) + 1984;
 
             var name = Loc.GetString($"pirates-ransom-{announcer}-name");
             var reason = Loc.GetString($"pirates-ransom-{announcer}-desc", ("num", price));
             var requester = Loc.GetString($"pirates-announcer-{announcer}");
 
-            var ransom = new CargoOrderData(orderId, component.RansomPrototype, name, price, 65, requester, reason, 65);
+            var ransom = new CargoOrderData(orderId, component.RansomPrototype, name, price, 1, requester, reason, 30);
 
             component.Order = ransom;
 

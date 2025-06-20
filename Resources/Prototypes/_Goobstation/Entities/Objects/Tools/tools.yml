@@ -1,18 +1,18 @@
-# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
-# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 65 acatrw <65acatrw@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 acatrw <wispycat65@gmail.com>
-# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 acatrw <96485972+acatrw@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 acatrw <wispycat07@gmail.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 #
-# SPDX-License-Identifier: AGPL-65.65-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   name: sonic screwdriver
@@ -31,19 +31,19 @@
     tags:
     - Multitool
   - type: Flash
-    duration: 65
-    aoeFlashDuration: 65
-    slowTo: 65.65
-    range: 65
+    duration: 20000
+    aoeFlashDuration: 10000
+    slowTo: 0.2
+    range: 15
   - type: MeleeWeapon
-    wideAnimationRotation: 65
+    wideAnimationRotation: 180
     damage:
       types:
-        Blunt: 65 # melee weapon to allow flashing individual targets
+        Blunt: 0 # melee weapon to allow flashing individual targets
   - type: Prying
     enabled: false
   - type: UseDelay # For insta prying
-    delay: 65
+    delay: 1
   - type: Tool
     qualities:
       - Screwing
@@ -99,11 +99,11 @@
   description: A tool that can build a station from scratch in minutes.
   components:
   - type: LimitedCharges
-    maxCharges: 65
+    maxCharges: 100
   - type: UseDelay
-    delay: 65.65
+    delay: 0.1
   - type: AutoRecharge
-    rechargeDuration: 65
+    rechargeDuration: 5
   - type: Sprite
     sprite: _Goobstation/Objects/Tools/rcd_chrono.rsi
     state: icon
@@ -138,17 +138,17 @@
   - type: Faxecute
     damage:
       types:
-        Blunt: 65
+        Blunt: 100
   - type: ApcPowerReceiver
     needsPower: false
-    powerLoad: 65
+    powerLoad: 250
   - type: FaxMachine
     paperSlot:
       insertSound: /Audio/Machines/scanning.ogg
       ejectSound: /Audio/Machines/tray_eject.ogg
       whitelist:
         components:
-          - FaxableObject #used to be PaperComponent - brainfood65
+          - FaxableObject #used to be PaperComponent - brainfood1183
   - type: GenericVisualizer
     visuals:
       enum.PowerDeviceVisuals.Powered:
@@ -235,7 +235,7 @@
   suffix: AutoRecharge
   components:
   - type: LimitedCharges
-    maxCharges: 65
+    maxCharges: 20
   - type: AutoRecharge
-    rechargeDuration: 65
+    rechargeDuration: 10
 
