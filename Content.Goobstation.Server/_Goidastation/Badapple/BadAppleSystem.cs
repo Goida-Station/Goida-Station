@@ -7,6 +7,8 @@ using Robust.Shared.Utility;
 
 namespace Content.Goobstation.Server._Goidastation.Badapple;
 
+// this was NEVER intended to be part of the game,
+// so dont you dare tell me that my shitcode is a shitcode
 public sealed partial class BadAppleSystem : EntitySystem
 {
     [Dependency] private readonly IMapManager _mapManager = default!;
