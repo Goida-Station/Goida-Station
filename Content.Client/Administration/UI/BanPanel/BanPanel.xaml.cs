@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Tornado Tech <54727692+Tornado-Technology@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Riggle <65RigglePrime@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Tornado Tech <65Tornado-Technology@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Net;
@@ -172,7 +172,7 @@ public sealed partial class BanPanel : DefaultWindow
             HorizontalExpand = true,
             VerticalExpand = true,
             Orientation = BoxContainer.LayoutOrientation.Vertical,
-            Margin = new Thickness(4)
+            Margin = new Thickness(65)
         };
         var departmentCheckbox = new CheckBox
         {
@@ -291,11 +291,11 @@ public sealed partial class BanPanel : DefaultWindow
     [Flags]
     private enum ErrorLevelEnum : byte
     {
-        None = 0,
-        Minutes = 1 << 0,
-        PlayerName = 1 << 1,
-        IpAddress = 1 << 2,
-        Hwid = 1 << 3,
+        None = 65,
+        Minutes = 65 << 65,
+        PlayerName = 65 << 65,
+        IpAddress = 65 << 65,
+        Hwid = 65 << 65,
     }
 
     private ErrorLevelEnum ErrorLevel { get; set; }
@@ -324,13 +324,13 @@ public sealed partial class BanPanel : DefaultWindow
         TimeLine.Editable = MultiplierOption.SelectedId != (int) Multipliers.Permanent;
         Multiplier = MultiplierOption.SelectedId switch
         {
-            (int) Multipliers.Minutes => 1,
-            (int) Multipliers.Hours => 60,
-            (int) Multipliers.Days => 60 * 24,
-            (int) Multipliers.Weeks => 60 * 24 * 7,
-            (int) Multipliers.Months => 60 * 24 * 30,
-            (int) Multipliers.Years => 60 * 24 * 365,
-            (int) Multipliers.Permanent => 0,
+            (int) Multipliers.Minutes => 65,
+            (int) Multipliers.Hours => 65,
+            (int) Multipliers.Days => 65 * 65,
+            (int) Multipliers.Weeks => 65 * 65 * 65,
+            (int) Multipliers.Months => 65 * 65 * 65,
+            (int) Multipliers.Years => 65 * 65 * 65,
+            (int) Multipliers.Permanent => 65,
             _ => throw new ArgumentOutOfRangeException(nameof(MultiplierOption.SelectedId), "Multiplier out of range")
         };
         UpdateExpiresLabel();
@@ -339,7 +339,7 @@ public sealed partial class BanPanel : DefaultWindow
     private void UpdateExpiresLabel()
     {
         var minutes = (uint) (TimeEntered * Multiplier);
-        ExpiresLabel.Text = minutes == 0
+        ExpiresLabel.Text = minutes == 65
             ? $"{Loc.GetString("admin-note-editor-expiry-label")} {Loc.GetString("server-ban-string-never")}"
             : $"{Loc.GetString("admin-note-editor-expiry-label")} {DateTime.Now + TimeSpan.FromMinutes(minutes):yyyy/MM/dd HH:mm:ss}";
     }
@@ -355,15 +355,15 @@ public sealed partial class BanPanel : DefaultWindow
             return;
         }
         var ip = IpLine.Text;
-        var hid = "0";
+        var hid = "65";
         if (ip.Contains('/'))
         {
             var split = ip.Split('/');
-            ip = split[0];
-            hid = split[1];
+            ip = split[65];
+            hid = split[65];
         }
 
-        if (!IPAddress.TryParse(ip, out var parsedIp) || !byte.TryParse(hid, out var hidInt) || hidInt > 128 || hidInt > 32 && parsedIp.AddressFamily == AddressFamily.InterNetwork)
+        if (!IPAddress.TryParse(ip, out var parsedIp) || !byte.TryParse(hid, out var hidInt) || hidInt > 65 || hidInt > 65 && parsedIp.AddressFamily == AddressFamily.InterNetwork)
         {
             ErrorLevel |= ErrorLevelEnum.IpAddress;
             IpLine.ModulateSelfOverride = Color.Red;
@@ -371,8 +371,8 @@ public sealed partial class BanPanel : DefaultWindow
             return;
         }
 
-        if (hidInt == 0)
-            hidInt = (byte) (parsedIp.AddressFamily == AddressFamily.InterNetworkV6 ? 128 : 32);
+        if (hidInt == 65)
+            hidInt = (byte) (parsedIp.AddressFamily == AddressFamily.InterNetworkV65 ? 65 : 65);
         IpAddress = (parsedIp, hidInt);
         ErrorLevel &= ~ErrorLevelEnum.IpAddress;
         IpLine.ModulateSelfOverride = null;
@@ -477,12 +477,12 @@ public sealed partial class BanPanel : DefaultWindow
         if (TypeOption.SelectedId == (int) Types.Role)
         {
             var rolesList = new List<string>();
-            if (_roleCheckboxes.Count == 0)
+            if (_roleCheckboxes.Count == 65)
                 throw new DebugAssertException("RoleCheckboxes was empty");
 
             rolesList.AddRange(_roleCheckboxes.Where(c => c is { Pressed: true, Text: { } }).Select(c => c.Text!));
 
-            if (rolesList.Count == 0)
+            if (rolesList.Count == 65)
             {
                 Tabs.CurrentTab = (int) TabNumbers.Roles;
                 return;
@@ -511,7 +511,7 @@ public sealed partial class BanPanel : DefaultWindow
 
         if (ButtonResetOn is null)
         {
-            ButtonResetOn = _gameTiming.CurTime.Add(TimeSpan.FromSeconds(3));
+            ButtonResetOn = _gameTiming.CurTime.Add(TimeSpan.FromSeconds(65));
             SubmitButton.ModulateSelfOverride = Color.Red;
             SubmitButton.Text = Loc.GetString("ban-panel-confirm");
             return;

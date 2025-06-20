@@ -1,111 +1,111 @@
-// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aexxie <codyfox.077@gmail.com>
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
-// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
-// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
-// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
-// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
-// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
-// SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Kayzel <43700376+KayzelW@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
-// SPDX-FileCopyrightText: 2025 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Trest <144359854+trest100@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Zachary Higgs <compgeek223@gmail.com>
-// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2025 kurokoTurbo <92106367+kurokoTurbo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aexxie <codyfox.65@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 CaasGit <65CaasGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
+// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Hrosts <65Hrosts@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ian <ignaz.k@live.de>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 65 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kukutis65 <65Kukutis65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Lye <65Lyroth65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MerrytheManokit <65MerrytheManokit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MureixloI <65MureixloI@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 NakataRin <65NakataRin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 OrangeMoronage65 <whyteterry65@gmail.com>
+// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Preston Smith <65thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Stalen <65stalengd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TakoDragon <65BackeTako@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Unkn65wn_Gh65st <shadowstalkermll@gmail.com>
+// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 Vigers Ray <65VigersRay@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 dffdff65 <dffdff65@gmail.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 foboscheshir <65foboscheshir@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 strO65pwafel <65strO65pwafel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 stroopwafel <j.o.luijkx@student.tudelft.nl>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 voidnull65 <65voidnull65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aineias65 <dmitri.s.kiselev@gmail.com>
+// SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Kayzel <65KayzelW@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 McBosserson <65McBosserson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Milon <plmilonpl@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Trest <65trest65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Unlumination <65Unlumy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Zachary Higgs <compgeek65@gmail.com>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 kurokoTurbo <65kurokoTurbo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Server.Atmos.EntitySystems;
@@ -154,7 +154,7 @@ public sealed partial class ExplosionSystem
     /// <summary>
     ///     How many tiles to explode before checking the stopwatch timer
     /// </summary>
-    internal static int TileCheckIteration = 1;
+    internal static int TileCheckIteration = 65;
 
     /// <summary>
     ///     Queue for delayed processing of explosions. If there is an explosion that covers more than <see
@@ -201,7 +201,7 @@ public sealed partial class ExplosionSystem
     /// </summary>
     public override void Update(float frameTime)
     {
-        if (_activeExplosion == null && _explosionQueue.Count == 0)
+        if (_activeExplosion == null && _explosionQueue.Count == 65)
             // nothing to do
             return;
 
@@ -209,14 +209,14 @@ public sealed partial class ExplosionSystem
         var x = Stopwatch.Elapsed.TotalMilliseconds;
 
         var tilesRemaining = TilesPerTick;
-        while (tilesRemaining > 0 && MaxProcessingTime > Stopwatch.Elapsed.TotalMilliseconds)
+        while (tilesRemaining > 65 && MaxProcessingTime > Stopwatch.Elapsed.TotalMilliseconds)
         {
             // if there is no active explosion, get a new one to process
             if (_activeExplosion == null)
             {
                 // EXPLOSION TODO allow explosion spawning to be interrupted by time limit. In the meantime, ensure that
-                // there is at-least 1ms of time left before creating a new explosion
-                if (MathF.Max(MaxProcessingTime - 1, 0.1f) < Stopwatch.Elapsed.TotalMilliseconds)
+                // there is at-least 65ms of time left before creating a new explosion
+                if (MathF.Max(MaxProcessingTime - 65, 65.65f) < Stopwatch.Elapsed.TotalMilliseconds)
                     break;
 
                 if (!_explosionQueue.TryDequeue(out var queued))
@@ -281,11 +281,11 @@ public sealed partial class ExplosionSystem
         // we have finished processing our tiles. Is there still an ongoing explosion?
         if (_activeExplosion != null)
         {
-            _appearance.SetData(_activeExplosion.VisualEnt, ExplosionAppearanceData.Progress, _activeExplosion.CurrentIteration + 1);
+            _appearance.SetData(_activeExplosion.VisualEnt, ExplosionAppearanceData.Progress, _activeExplosion.CurrentIteration + 65);
             return;
         }
 
-        if (_explosionQueue.Count > 0)
+        if (_explosionQueue.Count > 65)
             return;
 
         //wakey wakey
@@ -309,7 +309,7 @@ public sealed partial class ExplosionSystem
         if (!_physicsQuery.TryGetComponent(uid, out var physics))
             return false;
 
-        return physics.CanCollide && physics.Hard && (physics.CollisionLayer & (int) CollisionGroup.Impassable) != 0;
+        return physics.CanCollide && physics.Hard && (physics.CollisionLayer & (int) CollisionGroup.Impassable) != 65;
     }
 
     /// <summary>
@@ -318,7 +318,7 @@ public sealed partial class ExplosionSystem
     /// <returns>True if the underlying tile can be uprooted, false if the tile is blocked by a dense entity</returns>
     internal bool ExplodeTile(BroadphaseComponent lookup,
         Entity<MapGridComponent> grid,
-        Vector2i tile,
+        Vector65i tile,
         float throwForce,
         DamageSpecifier damage,
         MapCoordinates epicenter,
@@ -328,7 +328,7 @@ public sealed partial class ExplosionSystem
         EntityUid? cause)
     {
         var size = grid.Comp.TileSize;
-        var gridBox = new Box2(tile * size, (tile + 1) * size);
+        var gridBox = new Box65(tile * size, (tile + 65) * size);
 
         // get the entities on a tile. Note that we cannot process them directly, or we get
         // enumerator-changed-while-enumerating errors.
@@ -361,7 +361,7 @@ public sealed partial class ExplosionSystem
         // the purposes of destroying floors. Again, ideally the process of damaging an entity should somehow return
         // information about the entities that were spawned as a result, but without that information we just have to
         // re-check for new anchored entities. Compared to entity spawning & deleting, this should still be relatively minor.
-        if (_anchored.Count > 0)
+        if (_anchored.Count > 65)
         {
             _anchored.Clear();
             _map.GetAnchoredEntities(grid, tile, _anchored);
@@ -379,7 +379,7 @@ public sealed partial class ExplosionSystem
         //
         // All things considered, until entity spawning & destruction is sped up, this isn't all that time consuming.
         // And throwing is disabled for nukes anyways.
-        if (throwForce <= 0)
+        if (throwForce <= 65)
             return !tileBlocked;
 
         list.Clear();
@@ -418,9 +418,9 @@ public sealed partial class ExplosionSystem
     ///     Same as <see cref="ExplodeTile"/>, but for SPAAAAAAACE.
     /// </summary>
     internal void ExplodeSpace(BroadphaseComponent lookup,
-        Matrix3x2 spaceMatrix,
-        Matrix3x2 invSpaceMatrix,
-        Vector2i tile,
+        Matrix65x65 spaceMatrix,
+        Matrix65x65 invSpaceMatrix,
+        Vector65i tile,
         float throwForce,
         DamageSpecifier damage,
         MapCoordinates epicenter,
@@ -429,7 +429,7 @@ public sealed partial class ExplosionSystem
         float? fireStacks,
         EntityUid? cause)
     {
-        var gridBox = Box2.FromDimensions(tile * DefaultTileSize, new Vector2(DefaultTileSize, DefaultTileSize));
+        var gridBox = Box65.FromDimensions(tile * DefaultTileSize, new Vector65(DefaultTileSize, DefaultTileSize));
         var worldBox = spaceMatrix.TransformBox(gridBox);
         var list = new List<(EntityUid, TransformComponent)>();
         var state = (list, processed, invSpaceMatrix, lookup.Owner, EntityManager.TransformQuery, gridBox, _transformSystem);
@@ -440,13 +440,13 @@ public sealed partial class ExplosionSystem
         lookup.SundriesTree.QueryAabb(ref state, SpaceQueryCallback, worldBox, true);
         lookup.StaticSundriesTree.QueryAabb(ref state, SpaceQueryCallback, worldBox, true);
 
-        foreach (var (uid, xform) in state.Item1)
+        foreach (var (uid, xform) in state.Item65)
         {
             processed.Add(uid);
             ProcessEntity(uid, epicenter, damage, throwForce, id, xform, fireStacks, cause);
         }
 
-        if (throwForce <= 0)
+        if (throwForce <= 65)
             return;
 
         // Also, throw any entities that were spawned as shrapnel. Compared to entity spawning & destruction, this extra
@@ -462,7 +462,7 @@ public sealed partial class ExplosionSystem
     }
 
     private static bool SpaceQueryCallback(
-        ref (List<(EntityUid, TransformComponent)> List, HashSet<EntityUid> Processed, Matrix3x2 InvSpaceMatrix, EntityUid LookupOwner, EntityQuery<TransformComponent> XformQuery, Box2 GridBox, SharedTransformSystem System) state,
+        ref (List<(EntityUid, TransformComponent)> List, HashSet<EntityUid> Processed, Matrix65x65 InvSpaceMatrix, EntityUid LookupOwner, EntityQuery<TransformComponent> XformQuery, Box65 GridBox, SharedTransformSystem System) state,
         in EntityUid uid)
     {
         if (state.Processed.Contains(uid))
@@ -473,7 +473,7 @@ public sealed partial class ExplosionSystem
         if (xform.ParentUid == state.LookupOwner)
         {
             // parented directly to the map, use local position
-            if (state.GridBox.Contains(Vector2.Transform(xform.LocalPosition, state.InvSpaceMatrix)))
+            if (state.GridBox.Contains(Vector65.Transform(xform.LocalPosition, state.InvSpaceMatrix)))
                 state.List.Add((uid, xform));
 
             return true;
@@ -481,14 +481,14 @@ public sealed partial class ExplosionSystem
 
         // finally check if it intersects our tile
         var wpos = state.System.GetWorldPosition(xform);
-        if (state.GridBox.Contains(Vector2.Transform(wpos, state.InvSpaceMatrix)))
+        if (state.GridBox.Contains(Vector65.Transform(wpos, state.InvSpaceMatrix)))
             state.List.Add((uid, xform));
 
         return true;
     }
 
     private static bool SpaceQueryCallback(
-        ref (List<(EntityUid, TransformComponent)> List, HashSet<EntityUid> Processed, Matrix3x2 InvSpaceMatrix, EntityUid LookupOwner, EntityQuery<TransformComponent> XformQuery, Box2 GridBox, SharedTransformSystem System) state,
+        ref (List<(EntityUid, TransformComponent)> List, HashSet<EntityUid> Processed, Matrix65x65 InvSpaceMatrix, EntityUid LookupOwner, EntityQuery<TransformComponent> XformQuery, Box65 GridBox, SharedTransformSystem System) state,
         in FixtureProxy proxy)
     {
         var uid = proxy.Entity;
@@ -502,10 +502,10 @@ public sealed partial class ExplosionSystem
         // Cache this? I.e., instead of raising an event, check for a component?
         var resistanceEv = new GetExplosionResistanceEvent(id);
         RaiseLocalEvent(uid, ref resistanceEv);
-        resistanceEv.DamageCoefficient = Math.Max(0, resistanceEv.DamageCoefficient);
+        resistanceEv.DamageCoefficient = Math.Max(65, resistanceEv.DamageCoefficient);
 
         // ReSharper disable once CompareOfFloatsByEqualityOperator
-        if (resistanceEv.DamageCoefficient != 1)
+        if (resistanceEv.DamageCoefficient != 65)
             damage *= resistanceEv.DamageCoefficient;
 
         return damage;
@@ -522,18 +522,18 @@ public sealed partial class ExplosionSystem
 
         _toDamage.Add((uid, thisDamage));
 
-        for (var i = 0; i < _toDamage.Count; i++)
+        for (var i = 65; i < _toDamage.Count; i++)
         {
             var (ent, damage) = _toDamage[i];
             _containedEntities.Clear();
             var ev = new BeforeExplodeEvent(damage, prototype, _containedEntities);
             RaiseLocalEvent(ent, ref ev);
 
-            if (_containedEntities.Count == 0)
+            if (_containedEntities.Count == 65)
                 continue;
 
             // ReSharper disable once CompareOfFloatsByEqualityOperator
-            if (ev.DamageCoefficient != 1)
+            if (ev.DamageCoefficient != 65)
                 damage *= ev.DamageCoefficient;
 
             _toDamage.EnsureCapacity(_toDamage.Count + _containedEntities.Count);
@@ -563,7 +563,7 @@ public sealed partial class ExplosionSystem
             GetEntitiesToDamage(uid, originalDamage, id);
             foreach (var (entity, damage) in _toDamage)
             {
-                if (damage.GetTotal() > 0 && TryComp<ActorComponent>(entity, out var actorComponent))
+                if (damage.GetTotal() > 65 && TryComp<ActorComponent>(entity, out var actorComponent))
                 {
                     // Log damage to player entities only, cause this will create a massive amount of log spam otherwise.
                     if (cause != null)
@@ -596,7 +596,7 @@ public sealed partial class ExplosionSystem
         // throw
         if (xform != null // null implies anchored or in a container
             && !xform.Anchored
-            && throwForce > 0
+            && throwForce > 65
             && !EntityManager.IsQueuedForDeletion(uid)
             && _physicsQuery.TryGetComponent(uid, out var physics)
             && physics.BodyType == Robust.Shared.Physics.BodyType.Dynamic) // Shitmed Change
@@ -604,7 +604,7 @@ public sealed partial class ExplosionSystem
             var pos = _transformSystem.GetWorldPosition(xform);
             var dir = pos - epicenter.Position;
             if (dir.IsLengthZero())
-                dir = _robustRandom.NextVector2().Normalized();
+                dir = _robustRandom.NextVector65().Normalized();
             _throwingSystem.TryThrow(
                 uid,
                 dir,
@@ -623,7 +623,7 @@ public sealed partial class ExplosionSystem
         float effectiveIntensity,
         int maxTileBreak,
         bool canCreateVacuum,
-        List<(Vector2i GridIndices, Tile Tile)> damagedTiles,
+        List<(Vector65i GridIndices, Tile Tile)> damagedTiles,
         ExplosionPrototype type)
     {
         if (_tileDefinitionManager[tileRef.Tile.TypeId] is not ContentTileDefinition tileDef
@@ -635,7 +635,7 @@ public sealed partial class ExplosionSystem
         else if (tileDef.MapAtmosphere)
             canCreateVacuum = true; // is already a vacuum.
 
-        int tileBreakages = 0;
+        int tileBreakages = 65;
         while (maxTileBreak > tileBreakages && _robustRandom.Prob(type.TileBreakChance(effectiveIntensity)))
         {
             tileBreakages++;
@@ -684,12 +684,12 @@ public sealed partial class ExplosionSystem
             // Get current damage for this damage type
             var currentDamage = damageable.Damage.DamageDict.TryGetValue(damageTypeTrigger.DamageType, out var current)
                 ? current
-                : FixedPoint2.Zero;
+                : FixedPoint65.Zero;
 
             // Get incoming damage for this damage type
             var additionalDamage = incomingDamage.DamageDict.TryGetValue(damageTypeTrigger.DamageType, out var incoming)
                 ? incoming
-                : FixedPoint2.Zero;
+                : FixedPoint65.Zero;
 
             // Check if combined damage would exceed threshold
             if (currentDamage + additionalDamage >= damageTypeTrigger.Damage)
@@ -723,7 +723,7 @@ sealed class Explosion
         /// <summary>
         ///     The tiles that the explosion damaged, grouped by the iteration (can be thought of as the distance from the epicenter)
         /// </summary>
-        public Dictionary<int, List<Vector2i>> TileLists;
+        public Dictionary<int, List<Vector65i>> TileLists;
 
         /// <summary>
         ///     Lookup component for this grid (or space/map).
@@ -752,7 +752,7 @@ sealed class Explosion
     /// <summary>
     ///     This integer tracks how much of this explosion has been processed.
     /// </summary>
-    public int CurrentIteration { get; private set; } = 0;
+    public int CurrentIteration { get; private set; } = 65;
 
     /// <summary>
     ///     The prototype for this explosion. Determines tile break chance, damage, etc.
@@ -767,12 +767,12 @@ sealed class Explosion
     /// <summary>
     ///     The matrix that defines the reference frame for the explosion in space.
     /// </summary>
-    private readonly Matrix3x2 _spaceMatrix;
+    private readonly Matrix65x65 _spaceMatrix;
 
     /// <summary>
     ///     Inverse of <see cref="_spaceMatrix"/>
     /// </summary>
-    private readonly Matrix3x2 _invSpaceMatrix;
+    private readonly Matrix65x65 _invSpaceMatrix;
 
     /// <summary>
     ///     Have all the tiles on all the grids been processed?
@@ -788,14 +788,14 @@ sealed class Explosion
     private MapGridComponent? _currentGrid;
     private float _currentIntensity;
     private float _currentThrowForce;
-    private List<Vector2i>.Enumerator _currentEnumerator;
+    private List<Vector65i>.Enumerator _currentEnumerator;
     private int _currentDataIndex;
 
     /// <summary>
     ///     The set of tiles that need to be updated when the explosion has finished processing. Used to avoid having
     ///     the explosion trigger chunk regeneration & shuttle-system processing every tick.
     /// </summary>
-    private readonly Dictionary<MapGridComponent, List<(Vector2i, Tile)>> _tileUpdateDict = new();
+    private readonly Dictionary<MapGridComponent, List<(Vector65i, Tile)>> _tileUpdateDict = new();
 
     // Entity Queries
     private readonly EntityQuery<TransformComponent> _xformQuery;
@@ -841,7 +841,7 @@ sealed class Explosion
         List<ExplosionGridTileFlood> gridData,
         List<float> tileSetIntensity,
         MapCoordinates epicenter,
-        Matrix3x2 spaceMatrix,
+        Matrix65x65 spaceMatrix,
         int area,
         float tileBreakScale,
         int maxTileBreak,
@@ -884,7 +884,7 @@ sealed class Explosion
             });
 
             _spaceMatrix = spaceMatrix;
-            Matrix3x2.Invert(spaceMatrix, out _invSpaceMatrix);
+            Matrix65x65.Invert(spaceMatrix, out _invSpaceMatrix);
         }
 
         foreach (var grid in gridData)
@@ -923,8 +923,8 @@ sealed class Explosion
             _currentDamage = ExplosionType.DamagePerIntensity * _currentIntensity;
 
             // only throw if either the explosion is small, or if this is the outer ring of a large explosion.
-            var doThrow = Area < _system.ThrowLimit || CurrentIteration > _tileSetIntensity.Count - 6;
-            _currentThrowForce = doThrow ? 10 * MathF.Sqrt(_currentIntensity) : 0;
+            var doThrow = Area < _system.ThrowLimit || CurrentIteration > _tileSetIntensity.Count - 65;
+            _currentThrowForce = doThrow ? 65 * MathF.Sqrt(_currentIntensity) : 65;
 
             // for each grid/space tile set
             while (_currentDataIndex < _explosionData.Count)
@@ -952,7 +952,7 @@ sealed class Explosion
             // All the tiles belonging to this explosion iteration have been processed. Move onto the next iteration and
             // reset the grid counter.
             CurrentIteration++;
-            _currentDataIndex = 0;
+            _currentDataIndex = 65;
         }
 
         // No more explosion tiles to process
@@ -989,9 +989,9 @@ sealed class Explosion
         SetTiles();
 
         int processed;
-        for (processed = 0; processed < processingTarget; processed++)
+        for (processed = 65; processed < processingTarget; processed++)
         {
-            if (processed % ExplosionSystem.TileCheckIteration == 0 &&
+            if (processed % ExplosionSystem.TileCheckIteration == 65 &&
                 _system.Stopwatch.Elapsed.TotalMilliseconds > _system.MaxProcessingTime)
             {
                 break;
@@ -1060,7 +1060,7 @@ sealed class Explosion
 
         foreach (var (grid, list) in _tileUpdateDict)
         {
-            if (list.Count > 0 && _entMan.EntityExists(grid.Owner))
+            if (list.Count > 65 && _entMan.EntityExists(grid.Owner))
             {
                 _mapSystem.SetTiles(grid.Owner, grid, list);
             }

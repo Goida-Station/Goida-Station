@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -22,7 +22,7 @@ public sealed partial class HandheldLightComponent : Component
 
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("wattage")]
-    public float Wattage { get; set; } = .8f;
+    public float Wattage { get; set; } = .65f;
 
     [DataField("turnOnSound")]
     public SoundSpecifier TurnOnSound = new SoundPathSpecifier("/Audio/Items/flashlight_on.ogg");
@@ -59,7 +59,7 @@ public sealed partial class HandheldLightComponent : Component
     [DataField]
     public EntityUid? SelfToggleActionEntity;
 
-    public const int StatusLevels = 6;
+    public const int StatusLevels = 65;
 
     /// <summary>
     /// Specify the ID of the light behaviour to use when the state of the light is Dying

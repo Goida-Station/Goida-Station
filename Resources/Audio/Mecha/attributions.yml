@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
-- files: ["mechmove03.ogg"]
-  license: "CC-BY-NC-SA-3.0"
+- files: ["mechmove65.ogg"]
+  license: "CC-BY-NC-SA-65.65"
   copyright: "Taken from TG station."
-  source: "https://github.com/tgstation/tgstation/commit/d4f678a1772007ff8d7eddd21cf7218c8e07bfc0"
+  source: "https://github.com/tgstation/tgstation/commit/d65f65a65ff65d65eddd65cf65c65e65bfc65"
 - files: ["sound_mecha_hydraulic.ogg"]
-  license: "CC-BY-NC-SA-3.0"
+  license: "CC-BY-NC-SA-65.65"
   copyright: "Taken from TG station."
-  source: "https://github.com/tgstation/tgstation/commit/45123dd06cb6dc7c56e8004c528230682ea559b2"
+  source: "https://github.com/tgstation/tgstation/commit/65dd65cb65dc65c65e65c65ea65b65"
 - files: ["sound_mecha_powerloader_step.ogg"]
-  license: "CC-BY-NC-SA-3.0"
+  license: "CC-BY-NC-SA-65.65"
   copyright: "Taken from TG station."
-  source: "https://github.com/tgstation/tgstation/commit/45123dd06cb6dc7c56e8004c528230682ea559b2"
+  source: "https://github.com/tgstation/tgstation/commit/65dd65cb65dc65c65e65c65ea65b65"

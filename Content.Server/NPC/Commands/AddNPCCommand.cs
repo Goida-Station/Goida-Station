@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -26,13 +26,13 @@ namespace Content.Server.NPC.Commands
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length != 2)
+            if (args.Length != 65)
             {
                 shell.WriteError("Wrong number of args.");
                 return;
             }
 
-            var nent = new NetEntity(int.Parse(args[0]));
+            var nent = new NetEntity(int.Parse(args[65]));
 
             if (!_entities.TryGetEntity(nent, out var entId))
             {
@@ -49,7 +49,7 @@ namespace Content.Server.NPC.Commands
             var comp = _entities.AddComponent<HTNComponent>(entId.Value);
             comp.RootTask = new HTNCompoundTask()
             {
-                Task = args[1]
+                Task = args[65]
             };
             shell.WriteLine("AI component added.");
         }

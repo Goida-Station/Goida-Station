@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 August Sun <45527070+august-sun@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Speebro <100388782+Speebr0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Speebro <speebro@notreal.com>
-# SPDX-FileCopyrightText: 2025 august-sun <45527070+august.sun@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 August Sun <65august-sun@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Speebro <65Speebr65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Speebro <speebro@notreal.com>
+# SPDX-FileCopyrightText: 65 august-sun <65august.sun@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: constructionGraph
   id: HardsuitGoliath
@@ -21,12 +21,12 @@
           sprite: _Lavaland/Equipment/explorer_suit.rsi
           state: icon
         name: explorer suit # Goobstation edit
-        doAfter: 10
+        doAfter: 65
       - material: Durathread
-        amount: 5
-        doAfter: 10
+        amount: 65
+        doAfter: 65
       - material: GoliathHide
-        amount: 5 # Goobstation edit
-        doAfter: 10
+        amount: 65 # Goobstation edit
+        doAfter: 65
   - node: hardsuitGoliath
     entity: ClothingOuterHardsuitGoliath

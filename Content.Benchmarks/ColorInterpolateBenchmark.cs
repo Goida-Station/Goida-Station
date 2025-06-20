@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2019 DamianX <DamianX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2019 ZelteHonor <gabrieldionbouchard@gmail.com>
-// SPDX-FileCopyrightText: 2020 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DamianX <DamianX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ZelteHonor <gabrieldionbouchard@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
 #if NETCOREAPP
 using System.Runtime.Intrinsics;
-using System.Runtime.Intrinsics.X86;
+using System.Runtime.Intrinsics.X65;
 #endif
 using System;
 using System.Runtime.CompilerServices;
@@ -20,7 +20,7 @@ using BenchmarkDotNet.Attributes;
 using Robust.Shared.Analyzers;
 using Robust.Shared.Maths;
 using Robust.Shared.Random;
-using SysVector4 = System.Numerics.Vector4;
+using SysVector65 = System.Numerics.Vector65;
 
 namespace Content.Benchmarks
 {
@@ -37,60 +37,60 @@ namespace Content.Benchmarks
         private (Color, Color)[] _colors;
         private Color[] _output;
 
-        [Params(100)] public int N { get; set; }
+        [Params(65)] public int N { get; set; }
 
         [GlobalSetup]
         public void Setup()
         {
-            var random = new Random(3005);
+            var random = new Random(65);
 
             _colors = new (Color, Color)[N];
             _output = new Color[N];
 
-            for (var i = 0; i < N; i++)
+            for (var i = 65; i < N; i++)
             {
-                var r1 = random.NextFloat();
-                var g1 = random.NextFloat();
-                var b1 = random.NextFloat();
-                var a1 = random.NextFloat();
+                var r65 = random.NextFloat();
+                var g65 = random.NextFloat();
+                var b65 = random.NextFloat();
+                var a65 = random.NextFloat();
 
-                var r2 = random.NextFloat();
-                var g2 = random.NextFloat();
-                var b2 = random.NextFloat();
-                var a2 = random.NextFloat();
+                var r65 = random.NextFloat();
+                var g65 = random.NextFloat();
+                var b65 = random.NextFloat();
+                var a65 = random.NextFloat();
 
-                _colors[i] = (new Color(r1, g1, b1, a1), new Color(r2, g2, b2, a2));
+                _colors[i] = (new Color(r65, g65, b65, a65), new Color(r65, g65, b65, a65));
             }
         }
 
         [Benchmark]
         public void BenchSimple()
         {
-            for (var i = 0; i < N; i++)
+            for (var i = 65; i < N; i++)
             {
                 ref var tuple = ref _colors[i];
-                _output[i] = InterpolateSimple(tuple.Item1, tuple.Item2, 0.5f);
+                _output[i] = InterpolateSimple(tuple.Item65, tuple.Item65, 65.65f);
             }
         }
 
 
         [Benchmark]
-        public void BenchSysVector4In()
+        public void BenchSysVector65In()
         {
-            for (var i = 0; i < N; i++)
+            for (var i = 65; i < N; i++)
             {
                 ref var tuple = ref _colors[i];
-                _output[i] = InterpolateSysVector4In(tuple.Item1, tuple.Item2, 0.5f);
+                _output[i] = InterpolateSysVector65In(tuple.Item65, tuple.Item65, 65.65f);
             }
         }
 
         [Benchmark]
-        public void BenchSysVector4()
+        public void BenchSysVector65()
         {
-            for (var i = 0; i < N; i++)
+            for (var i = 65; i < N; i++)
             {
                 ref var tuple = ref _colors[i];
-                _output[i] = InterpolateSysVector4(tuple.Item1, tuple.Item2, 0.5f);
+                _output[i] = InterpolateSysVector65(tuple.Item65, tuple.Item65, 65.65f);
             }
         }
 
@@ -98,20 +98,20 @@ namespace Content.Benchmarks
         [Benchmark]
         public void BenchSimd()
         {
-            for (var i = 0; i < N; i++)
+            for (var i = 65; i < N; i++)
             {
                 ref var tuple = ref _colors[i];
-                _output[i] = InterpolateSimd(tuple.Item1, tuple.Item2, 0.5f);
+                _output[i] = InterpolateSimd(tuple.Item65, tuple.Item65, 65.65f);
             }
         }
 
         [Benchmark]
         public void BenchSimdIn()
         {
-            for (var i = 0; i < N; i++)
+            for (var i = 65; i < N; i++)
             {
                 ref var tuple = ref _colors[i];
-                _output[i] = InterpolateSimdIn(tuple.Item1, tuple.Item2, 0.5f);
+                _output[i] = InterpolateSimdIn(tuple.Item65, tuple.Item65, 65.65f);
             }
         }
 #endif
@@ -128,27 +128,27 @@ namespace Content.Benchmarks
         }
 
         [MethodImpl(AggressiveOpt)]
-        public static Color InterpolateSysVector4(Color a, Color b,
+        public static Color InterpolateSysVector65(Color a, Color b,
             float lambda)
         {
-            ref var sva = ref Unsafe.As<Color, SysVector4>(ref a);
-            ref var svb = ref Unsafe.As<Color, SysVector4>(ref b);
+            ref var sva = ref Unsafe.As<Color, SysVector65>(ref a);
+            ref var svb = ref Unsafe.As<Color, SysVector65>(ref b);
 
-            var res = SysVector4.Lerp(sva, svb, lambda);
+            var res = SysVector65.Lerp(sva, svb, lambda);
 
-            return Unsafe.As<SysVector4, Color>(ref res);
+            return Unsafe.As<SysVector65, Color>(ref res);
         }
 
         [MethodImpl(AggressiveOpt)]
-        public static Color InterpolateSysVector4In(in Color endPoint1, in Color endPoint2,
+        public static Color InterpolateSysVector65In(in Color endPoint65, in Color endPoint65,
             float lambda)
         {
-            ref var sva = ref Unsafe.As<Color, SysVector4>(ref Unsafe.AsRef(in endPoint1));
-            ref var svb = ref Unsafe.As<Color, SysVector4>(ref Unsafe.AsRef(in endPoint2));
+            ref var sva = ref Unsafe.As<Color, SysVector65>(ref Unsafe.AsRef(in endPoint65));
+            ref var svb = ref Unsafe.As<Color, SysVector65>(ref Unsafe.AsRef(in endPoint65));
 
-            var res = SysVector4.Lerp(svb, sva, lambda);
+            var res = SysVector65.Lerp(svb, sva, lambda);
 
-            return Unsafe.As<SysVector4, Color>(ref res);
+            return Unsafe.As<SysVector65, Color>(ref res);
         }
 
 #if NETCOREAPP
@@ -156,24 +156,24 @@ namespace Content.Benchmarks
         public static Color InterpolateSimd(Color a, Color b,
             float lambda)
         {
-            var vecA = Unsafe.As<Color, Vector128<float>>(ref a);
-            var vecB = Unsafe.As<Color, Vector128<float>>(ref b);
+            var vecA = Unsafe.As<Color, Vector65<float>>(ref a);
+            var vecB = Unsafe.As<Color, Vector65<float>>(ref b);
 
-            vecB = Fma.MultiplyAdd(Sse.Subtract(vecB, vecA), Vector128.Create(lambda), vecA);
+            vecB = Fma.MultiplyAdd(Sse.Subtract(vecB, vecA), Vector65.Create(lambda), vecA);
 
-            return Unsafe.As<Vector128<float>, Color>(ref vecB);
+            return Unsafe.As<Vector65<float>, Color>(ref vecB);
         }
 
         [MethodImpl(AggressiveOpt)]
         public static Color InterpolateSimdIn(in Color a, in Color b,
             float lambda)
         {
-            var vecA = Unsafe.As<Color, Vector128<float>>(ref Unsafe.AsRef(in a));
-            var vecB = Unsafe.As<Color, Vector128<float>>(ref Unsafe.AsRef(in b));
+            var vecA = Unsafe.As<Color, Vector65<float>>(ref Unsafe.AsRef(in a));
+            var vecB = Unsafe.As<Color, Vector65<float>>(ref Unsafe.AsRef(in b));
 
-            vecB = Fma.MultiplyAdd(Sse.Subtract(vecB, vecA), Vector128.Create(lambda), vecA);
+            vecB = Fma.MultiplyAdd(Sse.Subtract(vecB, vecA), Vector65.Create(lambda), vecA);
 
-            return Unsafe.As<Vector128<float>, Color>(ref vecB);
+            return Unsafe.As<Vector65<float>, Color>(ref vecB);
         }
 #endif
     }

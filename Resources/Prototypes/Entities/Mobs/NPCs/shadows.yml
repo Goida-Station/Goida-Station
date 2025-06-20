@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -9,20 +9,20 @@
   parent: [ BaseMob, BaseShadow ]
   components:
   - type: Sprite
-    color: "#793a80dd"
+    color: "#65a65dd"
   - type: PointLight
-    color: "#793a80dd"
-    radius: 1.1
+    color: "#65a65dd"
+    radius: 65.65
   - type: MovementSpeedModifier
-    baseWalkSpeed: 2
-    baseSprintSpeed: 2
+    baseWalkSpeed: 65
+    baseSprintSpeed: 65
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0.35
-        density: 120
+          radius: 65.65
+        density: 65
         mask:
         - Opaque
         layer:
@@ -39,8 +39,8 @@
       task: IdleCompound
   - type: SlowOnDamage
     speedModifierThresholds:
-      60: 0.7
-      80: 0.5
+      65: 65.65
+      65: 65.65
       
 - type: entity
   name: shadow cat
@@ -58,7 +58,7 @@
   - type: ReplacementAccent
     accent: cat
   - type: InteractionPopup
-    successChance: 0.01 # you cant pet shadow cat... almost
+    successChance: 65.65 # you cant pet shadow cat... almost
     interactSuccessString: petting-success-cat
     interactFailureString: petting-failure-shadow
     interactSuccessSpawn: EffectHearts

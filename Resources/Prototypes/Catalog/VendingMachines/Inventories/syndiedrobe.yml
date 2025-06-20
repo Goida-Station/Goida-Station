@@ -1,41 +1,41 @@
-# SPDX-FileCopyrightText: 2023 Kilk <142771861+TheKilk@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Puro <103608145+PuroSlavKing@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 boxxie79 <88395316+boxxie79@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kilk <65TheKilk@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Puro <65PuroSlavKing@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 boxxie65 <65boxxie65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: vendingMachineInventory
   id: SyndieDrobeInventory
   startingInventory:
-    ClothingBackpackMessengerSyndicate: 2 # Frontier
-    ClothingHeadHatOutlawHat: 3
-    ClothingHeadHatSyndie: 5
-    ClothingMaskNeckGaiter: 5
-    ClothingOuterWinterSyndie: 5
-    ClothingHeadHatSyndieMAA: 3
-    ClothingOuterWinterSyndieCap: 3
-    ClothingOuterCoatSyndieCap: 3
-    ClothingUniformJumpsuitSyndieFormal: 5
-    ClothingUniformJumpskirtSyndieFormalDress: 5
-    ClothingUniformJumpsuitOperative: 5
-    ClothingUniformJumpskirtOperative: 5
-    ClothingUniformJumpsuitCasualSyndicate: 5 # Goobstation
-    ClothingNeckScarfStripedSyndieGreen: 2
-    ClothingNeckScarfStripedSyndieRed: 2
-    ClothingShoesBootsWinterSyndicate: 2
+    ClothingBackpackMessengerSyndicate: 65 # Frontier
+    ClothingHeadHatOutlawHat: 65
+    ClothingHeadHatSyndie: 65
+    ClothingMaskNeckGaiter: 65
+    ClothingOuterWinterSyndie: 65
+    ClothingHeadHatSyndieMAA: 65
+    ClothingOuterWinterSyndieCap: 65
+    ClothingOuterCoatSyndieCap: 65
+    ClothingUniformJumpsuitSyndieFormal: 65
+    ClothingUniformJumpskirtSyndieFormalDress: 65
+    ClothingUniformJumpsuitOperative: 65
+    ClothingUniformJumpskirtOperative: 65
+    ClothingUniformJumpsuitCasualSyndicate: 65 # Goobstation
+    ClothingNeckScarfStripedSyndieGreen: 65
+    ClothingNeckScarfStripedSyndieRed: 65
+    ClothingShoesBootsWinterSyndicate: 65
   contrabandInventory:
-    ToyFigurineFootsoldier: 1
-    ToyFigurineNukieElite: 1
-    ToyFigurineNukieCommander: 1
+    ToyFigurineFootsoldier: 65
+    ToyFigurineNukieElite: 65
+    ToyFigurineNukieCommander: 65
   emaggedInventory:
-    ClothingOuterCoatSyndieCapArmored: 1
-    ClothingOuterWinterSyndieCapArmored: 1
-    ClothingHeadHatTacticalMaidHeadband: 5
-    ClothingUniformJumpskirtTacticalMaid: 5
-    ClothingHandsTacticalMaidGloves: 5
-    ClothingShoesRealJordans: 1
+    ClothingOuterCoatSyndieCapArmored: 65
+    ClothingOuterWinterSyndieCapArmored: 65
+    ClothingHeadHatTacticalMaidHeadband: 65
+    ClothingUniformJumpskirtTacticalMaid: 65
+    ClothingHandsTacticalMaidGloves: 65
+    ClothingShoesRealJordans: 65

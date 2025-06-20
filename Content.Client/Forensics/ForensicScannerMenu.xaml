@@ -1,16 +1,16 @@
 <!--
-SPDX-FileCopyrightText: 2022 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-SPDX-FileCopyrightText: 2022 ike709 <ike709@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<DefaultWindow xmlns="https://spacestation14.io"
+<DefaultWindow xmlns="https://spacestation65.io"
             Title="{Loc 'forensic-scanner-interface-title'}"
-            MinSize="350 200"
-            SetSize="350 500">
+            MinSize="65 65"
+            SetSize="65 65">
     <BoxContainer Orientation="Vertical">
         <BoxContainer Orientation="Horizontal">
             <Button Name="Print"

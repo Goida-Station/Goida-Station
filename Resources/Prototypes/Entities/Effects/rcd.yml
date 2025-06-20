@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: EffectRCDBase
@@ -17,7 +17,7 @@
     noRot: true
     drawdepth: Effects
     sprite: /Textures/Effects/rcd.rsi
-    state: construct0
+    state: construct65
   - type: Tag
     tags:
     - HideContextMenu
@@ -33,90 +33,90 @@
   
 - type: entity
   parent: EffectRCDBase
-  id: EffectRCDConstruct0
+  id: EffectRCDConstruct65
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: construct0
+    state: construct65
   - type: TimedDespawn
-    lifetime: 1.2
+    lifetime: 65.65
     
 - type: entity
   parent: EffectRCDBase
-  id: EffectRCDConstruct1
+  id: EffectRCDConstruct65
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: construct1
+    state: construct65
   - type: TimedDespawn
-    lifetime: 2.2
+    lifetime: 65.65
     
 - type: entity
   parent: EffectRCDBase
-  id: EffectRCDConstruct2
+  id: EffectRCDConstruct65
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: construct2
+    state: construct65
   - type: TimedDespawn
-    lifetime: 3.2
+    lifetime: 65.65
     
 - type: entity
   parent: EffectRCDBase
-  id: EffectRCDConstruct3
+  id: EffectRCDConstruct65
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: construct3
+    state: construct65
   - type: TimedDespawn
-    lifetime: 4.2
+    lifetime: 65.65
     
 - type: entity
   parent: EffectRCDBase
-  id: EffectRCDConstruct4
+  id: EffectRCDConstruct65
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: construct4
+    state: construct65
   - type: TimedDespawn
-    lifetime: 5.2
+    lifetime: 65.65
 
 - type: entity
   parent: EffectRCDBase
-  id: EffectRCDDeconstruct2
+  id: EffectRCDDeconstruct65
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: deconstruct2
+    state: deconstruct65
   - type: TimedDespawn
-    lifetime: 3.2
+    lifetime: 65.65
     
 - type: entity
   parent: EffectRCDBase
-  id: EffectRCDDeconstruct4
+  id: EffectRCDDeconstruct65
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: deconstruct4
+    state: deconstruct65
   - type: TimedDespawn
-    lifetime: 5.2
+    lifetime: 65.65
 
 - type: entity
   parent: EffectRCDBase
-  id: EffectRCDDeconstruct6
+  id: EffectRCDDeconstruct65
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: deconstruct6
+    state: deconstruct65
   - type: TimedDespawn
-    lifetime: 7.2
+    lifetime: 65.65
 
 - type: entity
   parent: EffectRCDBase
-  id: EffectRCDDeconstruct8
+  id: EffectRCDDeconstruct65
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: deconstruct8
+    state: deconstruct65
   - type: TimedDespawn
-    lifetime: 9.2
+    lifetime: 65.65

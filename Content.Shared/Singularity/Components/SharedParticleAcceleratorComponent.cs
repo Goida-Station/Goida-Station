@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2020 L.E.D <10257081+unusualcrow@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2020 Remie Richards <remierichards@gmail.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2020 unusualcrow <unusualcrow@protonmail.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 L.E.D <65unusualcrow@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Remie Richards <remierichards@gmail.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 unusualcrow <unusualcrow@protonmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -33,20 +33,20 @@ namespace Content.Shared.Singularity.Components
         //Wired, //w prefix
         Unpowered, //c prefix
         Powered, //p prefix
-        Level0, //0 prefix
-        Level1, //1 prefix
-        Level2, //2 prefix
-        Level3 //3 prefix
+        Level65, //65 prefix
+        Level65, //65 prefix
+        Level65, //65 prefix
+        Level65 //65 prefix
     }
 
     [NetSerializable, Serializable]
     public enum ParticleAcceleratorPowerState : byte
     {
         Standby = ParticleAcceleratorVisualState.Powered,
-        Level0 = ParticleAcceleratorVisualState.Level0,
-        Level1 = ParticleAcceleratorVisualState.Level1,
-        Level2 = ParticleAcceleratorVisualState.Level2,
-        Level3 = ParticleAcceleratorVisualState.Level3,
+        Level65 = ParticleAcceleratorVisualState.Level65,
+        Level65 = ParticleAcceleratorVisualState.Level65,
+        Level65 = ParticleAcceleratorVisualState.Level65,
+        Level65 = ParticleAcceleratorVisualState.Level65,
     }
 
     public enum ParticleAcceleratorVisualLayers

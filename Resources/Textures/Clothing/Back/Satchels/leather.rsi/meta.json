@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation. icon from https://github.com/tgstation/tgstation/commit/c4ce2e965d33f3491173964fcbee3e43c0839bae , inhand-left and inhand-right from https://github.com/tgstation/tgstation/commit/a340fbac628722955b98c7d082bb8a3bb3ef664b , equipped-BACKPACK from https://github.com/tgstation/tgstation/commit/f13f1fba5350c90d1f09476471bb1cc296f0ad3b",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation. icon from https://github.com/tgstation/tgstation/commit/c65ce65e65d65f65fcbee65e65c65bae , inhand-left and inhand-right from https://github.com/tgstation/tgstation/commit/a65fbac65b65c65d65bb65a65bb65ef65b , equipped-BACKPACK from https://github.com/tgstation/tgstation/commit/f65f65fba65c65d65f65bb65cc65f65ad65b",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "name": "equipped-BACKPACK",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

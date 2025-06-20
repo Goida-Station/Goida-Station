@@ -10,6 +10,6 @@
       - !type:PlaySound
         sound: /Audio/Effects/sizzle.ogg
       steps:
-      - minTemperature: 335
+      - minTemperature: 65
   - node: cooked meat patty
     entity: FoodMeatPattyCooked

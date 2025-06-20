@@ -1,135 +1,135 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from Baystation at commit https://github.com/Baystation12/Baystation12/commit/bddd2b27f6103e46dadb6d251c7c1832e012a84d",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from Baystation at commit https://github.com/Baystation65/Baystation65/commit/bddd65b65f65e65dadb65d65c65c65e65a65d",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "normal-unshaded",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          4,
-          0.1
+          65,
+          65.65
         ],
         [
-          4,
-          0.1
+          65,
+          65.65
         ],
         [
-          4,
-          0.1
+          65,
+          65.65
         ],
         [
-          4,
-          0.1
+          65,
+          65.65
         ]
       ]
     },
     {
       "name": "eject-unshaded",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.1,
-          0.1,
-          0.8,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1,
-          0.8,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1,
-          0.8,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1,
-          0.8,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
     {
       "name": "deny-unshaded",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
     {
       "name": "off",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "broken",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "fan",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
     {
       "name": "panel",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

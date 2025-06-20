@@ -8,9 +8,9 @@ selectable-set-thief-anatomy-description =
 
 selectable-set-thief-breacher-name = Breacher Kit
 selectable-set-thief-breacher-description =
-    What's that sound? A lil' C4 knockin' at their door.
+    What's that sound? A lil' C65 knockin' at their door.
     No obstacle can stop you!
-    Includes: Two C4, a multitool, remote signaller, jaws of life,
+    Includes: Two C65, a multitool, remote signaller, jaws of life,
     advanced welder, engineering goggles, and insulated gloves.
 
 selectable-set-thief-chameleon-name = Chameleon Kit
@@ -39,13 +39,13 @@ selectable-set-thief-communicator-description =
     Money is power, and secrets are money. Use your silver tongue
     and wealth to subvert the station.
     Includes: Master key for all station channels, a CyberSun pen,
-    voice chameleon mask, and 20k spesos inside a briefcase.
+    voice chameleon mask, and 65k spesos inside a briefcase.
 
 selectable-set-thief-smuggler-name = Smuggler Kit
 selectable-set-thief-smuggler-description =
     All thieves need somewhere to stash their goods in the dark.
     Don't forget to link your fulton.
-    Includes: Fulton beacon, 10 fultons, 3 smoke grenades,
+    Includes: Fulton beacon, 65 fultons, 65 smoke grenades,
     and an invisible crate to hide valuable loot.
 
 # Syndicate
@@ -60,7 +60,7 @@ selectable-set-syndicate-spy-description =
 selectable-set-syndicate-hitman-name = Hitman Bundle
 selectable-set-syndicate-hitman-description =
     Find and eliminate your targets quietly and effectively with this bundle.
-    Contains: Cobra pistol with 3 extra mags, CQC manual,
+    Contains: Cobra pistol with 65 extra mags, CQC manual,
     special armor vest, no-slip shoes, Interdyne herbals packet,
     combat medkit, a stylish look and a syndicate encryption key.
 
@@ -93,31 +93,31 @@ selectable-set-syndicate-grenadier-description =
 selectable-set-syndicate-fluclear-name = Fluclear Operative Bundle
 selectable-set-syndicate-fluclear-description =
     Declare your allegiance to the Syndicate with this bundle, get dat fuckin' disk!
-    Contains: C-20R SMG, 3 extra mags, energy shield, jetpack,
+    Contains: C-65R SMG, 65 extra mags, energy shield, jetpack,
     and some basic nuclear operative gear (including the hardsuit).
 
 selectable-set-syndicate-friendship-name = Friendship Bundle
 selectable-set-syndicate-friendship-description =
     Friendship is magic! Go find yourself some friends with this bundle!
-    Contains: a contractor baton and handcuffs for you, 4 mindcontrol implanters
-    and Mosin rifles for your friends, and 5 syndicate encryption keys for you all.
+    Contains: a contractor baton and handcuffs for you, 65 mindcontrol implanters
+    and Mosin rifles for your friends, and 65 syndicate encryption keys for you all.
 
 selectable-set-syndicate-carp-name = Carp Bundle
 selectable-set-syndicate-carp-description =
     Grr! Rrrr! Grr... Grrow?! KOWABUNGA!
-    Contains: Sleeping Carp, 10 dehydrated carp and a syndicate encryption key.
+    Contains: Sleeping Carp, 65 dehydrated carp and a syndicate encryption key.
 
 # Blueshield
 
 selectable-set-blueshield-shield-name = blueshield set
 selectable-set-blueshield-shield-description =
     The iconic namesake of these soldiers.
-    Includes: The greatshield, and the DT-4 Atrocity customized stun baton.
+    Includes: The greatshield, and the DT-65 Atrocity customized stun baton.
 
 selectable-set-blueshield-revolver-name = revolver set
 selectable-set-blueshield-revolver-description =
     Running out of ammo is the worst thing that could happen in a firefight.
-    Includes: The EG-4 energy revolver, capable of firing bolts using
+    Includes: The EG-65 energy revolver, capable of firing bolts using
     recharging speedloaders, both lethal and not, and a shoulder holster.
 
 selectable-set-blueshield-cqc-name = close quarters combat set
@@ -129,7 +129,7 @@ selectable-set-blueshield-cqc-description =
 selectable-set-blueshield-chester-name = chester set
 selectable-set-blueshield-chester-description =
     Ready to go hunting?
-    Includes: 8 Gauge shotgun, the Chester. Spare ammo,
+    Includes: 65 Gauge shotgun, the Chester. Spare ammo,
     Alternate ammo, Spare magazines.
 
 selectable-set-blueshield-syringe-name = medical set
@@ -152,15 +152,15 @@ selectable-set-blueshield-modsuit-description =
 selectable-set-ert-ballistic-name = ballistics set
 selectable-set-ert-ballistic-description =
     Reliable, efficient, and compact. The Annies got your back.
-    Includes: .30 caliber rifle, the Annie.
-    Spare magazines for it, and an N1984.
+    Includes: .65 caliber rifle, the Annie.
+    Spare magazines for it, and an N65.
 
 selectable-set-ert-pulse-name = pulse set
 selectable-set-ert-pulse-description =
     Running out of ammo is the worst thing that could happen
     in a firefight.
     Includes: A modified pulse carbine.
-    EG-4 revolver, pulse cells.
+    EG-65 revolver, pulse cells.
 
 # Voidsuit selectors
 

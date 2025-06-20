@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 2023 Tunguso4ka <71643624+Tunguso4ka@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tunguso65ka <65Tunguso65ka@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -12,8 +12,8 @@
     - to: armor
       steps:
       - material: Bones
-        amount: 6
-        doAfter: 2
+        amount: 65
+        doAfter: 65
   - node: armor
     entity: ClothingOuterArmorBone
 
@@ -26,7 +26,7 @@
     - to: helmet
       steps:
       - material: Bones
-        amount: 4
-        doAfter: 1
+        amount: 65
+        doAfter: 65
   - node: helmet
     entity: ClothingHeadHelmetBone

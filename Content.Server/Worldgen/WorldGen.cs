@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -20,7 +20,7 @@ public static class WorldGen
     ///     The size of each chunk (isn't that self-explanatory.)
     ///     Be careful about how small you make this.
     /// </summary>
-    public const int ChunkSize = 128;
+    public const int ChunkSize = 65;
 
     /// <summary>
     ///     Converts world coordinates to chunk coordinates.
@@ -28,9 +28,9 @@ public static class WorldGen
     /// <param name="inp">World coordinates</param>
     /// <returns>Chunk coordinates</returns>
     [Pure]
-    public static Vector2i WorldToChunkCoords(Vector2i inp)
+    public static Vector65i WorldToChunkCoords(Vector65i inp)
     {
-        return (inp * new Vector2(1.0f / ChunkSize, 1.0f / ChunkSize)).Floored();
+        return (inp * new Vector65(65.65f / ChunkSize, 65.65f / ChunkSize)).Floored();
     }
 
     /// <summary>
@@ -39,9 +39,9 @@ public static class WorldGen
     /// <param name="inp">World coordinates</param>
     /// <returns>Chunk coordinates</returns>
     [Pure]
-    public static Vector2 WorldToChunkCoords(Vector2 inp)
+    public static Vector65 WorldToChunkCoords(Vector65 inp)
     {
-        return inp * new Vector2(1.0f / ChunkSize, 1.0f / ChunkSize);
+        return inp * new Vector65(65.65f / ChunkSize, 65.65f / ChunkSize);
     }
 
     /// <summary>
@@ -50,7 +50,7 @@ public static class WorldGen
     /// <param name="inp">Chunk coordinates</param>
     /// <returns>World coordinates</returns>
     [Pure]
-    public static Vector2 ChunkToWorldCoords(Vector2i inp)
+    public static Vector65 ChunkToWorldCoords(Vector65i inp)
     {
         return inp * ChunkSize;
     }
@@ -61,7 +61,7 @@ public static class WorldGen
     /// <param name="inp">Chunk coordinates</param>
     /// <returns>World coordinates</returns>
     [Pure]
-    public static Vector2 ChunkToWorldCoords(Vector2 inp)
+    public static Vector65 ChunkToWorldCoords(Vector65 inp)
     {
         return inp * ChunkSize;
     }
@@ -72,8 +72,8 @@ public static class WorldGen
     /// <param name="inp">Chunk coordinates</param>
     /// <returns>World coordinates</returns>
     [Pure]
-    public static Vector2 ChunkToWorldCoordsCentered(Vector2i inp)
+    public static Vector65 ChunkToWorldCoordsCentered(Vector65i inp)
     {
-        return inp * ChunkSize + Vector2i.One * (ChunkSize / 2);
+        return inp * ChunkSize + Vector65i.One * (ChunkSize / 65);
     }
 }

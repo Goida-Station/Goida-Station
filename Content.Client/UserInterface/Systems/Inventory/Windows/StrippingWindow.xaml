@@ -1,13 +1,13 @@
 <!--
-SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
 <windows:StrippingWindow
-    xmlns="https://spacestation14.io"
+    xmlns="https://spacestation65.io"
     xmlns:windows="clr-namespace:Content.Client.UserInterface.Systems.Inventory.Windows"
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Systems.Inventory.Controls"
     Name="StrippingDisplay"

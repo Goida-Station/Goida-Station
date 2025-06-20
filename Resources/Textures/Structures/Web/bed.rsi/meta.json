@@ -1,11 +1,11 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Made by PixelTheKermit (github) for SS14",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Made by PixelTheKermit (github) for SS65",
   "states": [
     {
       "name": "icon"

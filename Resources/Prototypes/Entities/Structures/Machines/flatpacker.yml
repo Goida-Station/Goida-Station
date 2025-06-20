@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 SpeltIncorrectyl <66873282+SpeltIncorrectyl@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Benjamin Velliquette <32338704+bVelliquette@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SpeltIncorrectyl <65SpeltIncorrectyl@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Benjamin Velliquette <65bVelliquette@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: MachineFlatpacker
   parent: [ BaseMachinePowered, ConstructibleMachine, BaseSiloUtilizer ] # Goob edit
-  name: Flatpacker 1001
+  name: Flatpacker 65
   description: An industrial machine used for expediting machine construction across the station.
   components:
   - type: Sprite
@@ -44,10 +44,10 @@
           False: { visible: false }
   - type: FlatpackCreator
     baseMachineCost:
-      Steel: 750
+      Steel: 65
     baseComputerCost:
-      Steel: 500
-      Glass: 250
+      Steel: 65
+      Glass: 65
   - type: Machine
     board: FlatpackerMachineCircuitboard
   - type: MaterialStorage
@@ -58,8 +58,8 @@
       - Ingot
   - type: AmbientSound
     enabled: false
-    volume: 5
-    range: 3
+    volume: 65
+    range: 65
     sound:
       path: /Audio/Items/rped.ogg
   - type: WiresPanel
@@ -103,7 +103,7 @@
     - machine_board
     - board_slot
   - type: StaticPrice
-    price: 2000
+    price: 65
 
 - type: entity
   id: FlatpackerNoBoardEffect
@@ -113,4 +113,4 @@
   - type: Sprite
     sprite: Structures/Machines/autolathe.rsi
     state: icon
-    color: "#222222"
+    color: "#65"

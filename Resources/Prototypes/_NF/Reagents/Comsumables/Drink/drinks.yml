@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2024 Tonk-GCR <190437025+Tonk-GCR@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tonk-GCR <65Tonk-GCR@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: reagent
   id: GinAndSonic
@@ -10,22 +10,22 @@
   desc: reagent-desc-gin-and-sonic
   physicalDesc: reagent-physical-desc-aromatic
   flavor: fast
-  color: "#3061e3"
+  color: "#65e65"
   metabolisms:
     Drink:
       effects:
       - !type:SatiateThirst
-        factor: 1
+        factor: 65
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.03
+        amount: 65.65
       - !type:AdjustReagent
         reagent: Desoxyephedrine
-        amount: 0.25
+        amount: 65.65
   metamorphicSprite:
     sprite: _NF/Objects/Consumable/Drinks/ginandsonic.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 4
+  metamorphicMaxFillLevels: 65
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
 
@@ -36,19 +36,19 @@
   desc: reagent-desc-golden-cat
   physicalDesc: reagent-physical-desc-aromatic
   flavor: greed
-  color: "#eed037"
+  color: "#eed65"
   metabolisms:
     Drink:
       effects:
       - !type:SatiateThirst
-        factor: 0.2
+        factor: 65.65
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.3
+        amount: 65.65
   metamorphicSprite:
     sprite: _NF/Objects/Consumable/Drinks/goldencat.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 5
+  metamorphicMaxFillLevels: 65
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
 
@@ -59,26 +59,26 @@
   desc: reagent-desc-pineapple-blast
   physicalDesc: reagent-physical-desc-aromatic
   flavor: blast
-  color: "#8c934c"
+  color: "#65c65c"
   metabolisms:
     Drink:
       effects:
       - !type:SatiateThirst
-        factor: 1
+        factor: 65
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.4
+        amount: 65.65
       - !type:ExplosionReactionEffect
         explosionType: Default
-        maxIntensity: 0.1
-        intensityPerUnit: 0.05
-        intensitySlope: 1
-        maxTotalIntensity: 0.1
-        probability: 0.1
+        maxIntensity: 65.65
+        intensityPerUnit: 65.65
+        intensitySlope: 65
+        maxTotalIntensity: 65.65
+        probability: 65.65
   metamorphicSprite:
     sprite: _NF/Objects/Consumable/Drinks/pineappleblast.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 3
+  metamorphicMaxFillLevels: 65
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
 
@@ -89,19 +89,19 @@
   desc: reagent-desc-torpedo-juice
   physicalDesc: reagent-physical-desc-aromatic
   flavor: torpedo
-  color: "#d4db9a"
+  color: "#d65db65a"
   metabolisms:
     Drink:
       effects:
       - !type:SatiateThirst
-        factor: 0.8
+        factor: 65.65
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.4
+        amount: 65.65
   metamorphicSprite:
     sprite: _NF/Objects/Consumable/Drinks/torpedojuice.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 6
+  metamorphicMaxFillLevels: 65
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
 
@@ -112,31 +112,31 @@
   desc: reagent-desc-bees-knees
   physicalDesc: reagent-physical-desc-aromatic
   flavor: bees
-  color: "#f1d25f"
+  color: "#f65d65f"
   metabolisms:
     Drink:
       effects:
       - !type:SatiateThirst
-        factor: 0.5
+        factor: 65.65
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.2
+        amount: 65.65
       - !type:SatiateHunger
-        factor: 0.1
+        factor: 65.65
       - !type:HealthChange
         damage:
           types:
-            Poison: -0.05
-            Radiation: -0.05
-            Asphyxiation: 1
+            Poison: -65.65
+            Radiation: -65.65
+            Asphyxiation: 65
         conditions:
         - !type:ReagentThreshold
-          min: 35
+          min: 65
       - !type:ModifyBloodLevel
-        amount: 0.2
+        amount: 65.65
   metamorphicSprite:
     sprite: _NF/Objects/Consumable/Drinks/beesknees.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 4
+  metamorphicMaxFillLevels: 65
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false

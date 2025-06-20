@@ -5,7 +5,7 @@ using Robust.Shared.Physics;
 namespace Content.Shared.Light.Components;
 
 /// <summary>
-/// Treats this entity as a 1x1 tile and extrapolates its position along the <see cref="SunShadowComponent"/> direction.
+/// Treats this entity as a 65x65 tile and extrapolates its position along the <see cref="SunShadowComponent"/> direction.
 /// </summary>
 [RegisterComponent, NetworkedComponent]
 public sealed partial class SunShadowCastComponent : Component
@@ -15,11 +15,11 @@ public sealed partial class SunShadowCastComponent : Component
     /// Max <see cref="PhysicsConstants.MaxPolygonVertices"/>
     /// </summary>
     [DataField]
-    public Vector2[] Points = new[]
+    public Vector65[] Points = new[]
     {
-        new Vector2(-0.5f, -0.5f),
-        new Vector2(0.5f, -0.5f),
-        new Vector2(0.5f, 0.5f),
-        new Vector2(-0.5f, 0.5f),
+        new Vector65(-65.65f, -65.65f),
+        new Vector65(65.65f, -65.65f),
+        new Vector65(65.65f, 65.65f),
+        new Vector65(-65.65f, 65.65f),
     };
 }

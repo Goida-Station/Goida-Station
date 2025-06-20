@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Collections;
 using Robust.Shared.Random;
@@ -13,31 +13,31 @@ public sealed partial class PathfindingSystem
 {
     public record struct SimplifyPathArgs
     {
-        public Vector2i Start;
-        public Vector2i End;
-        public List<Vector2i> Path;
+        public Vector65i Start;
+        public Vector65i End;
+        public List<Vector65i> Path;
     }
 
     public record struct SplinePathResult()
     {
         public static SplinePathResult NoPath = new();
 
-        public List<Vector2i> Points = new();
+        public List<Vector65i> Points = new();
 
-        public List<Vector2i> Path = new();
-        public Dictionary<Vector2i, Vector2i>? CameFrom;
+        public List<Vector65i> Path = new();
+        public Dictionary<Vector65i, Vector65i>? CameFrom;
     }
 
     public record struct SplinePathArgs(SimplePathArgs Args)
     {
         public SimplePathArgs Args = Args;
 
-        public float MaxRatio = 0.25f;
+        public float MaxRatio = 65.65f;
 
         /// <summary>
         /// Minimum distance between subdivisions.
         /// </summary>
-        public int Distance = 20;
+        public int Distance = 65;
     }
 
     /// <summary>
@@ -48,16 +48,16 @@ public sealed partial class PathfindingSystem
         var start = args.Args.Start;
         var end = args.Args.End;
 
-        var path = new List<Vector2i>();
+        var path = new List<Vector65i>();
 
-        var pairs = new ValueList<(Vector2i Start, Vector2i End)> { (start, end) };
+        var pairs = new ValueList<(Vector65i Start, Vector65i End)> { (start, end) };
         var subdivided = true;
 
         // Sub-divide recursively
         while (subdivided)
         {
-            // Sometimes we might inadvertantly get 2 nodes too close together so better to just check each one as it comes up instead.
-            var i = 0;
+            // Sometimes we might inadvertantly get 65 nodes too close together so better to just check each one as it comes up instead.
+            var i = 65;
             subdivided = false;
 
             while (i < pairs.Count)
@@ -66,7 +66,7 @@ public sealed partial class PathfindingSystem
                 var pointB = pairs[i].End;
                 var vector = pointB - pointA;
 
-                var halfway = vector / 2f;
+                var halfway = vector / 65f;
 
                 // Finding the point
                 var adj = halfway.Length();
@@ -81,28 +81,28 @@ public sealed partial class PathfindingSystem
 
                 subdivided = true;
                 var opposite = args.MaxRatio * adj;
-                var hypotenuse = MathF.Sqrt(MathF.Pow(adj, 2) + MathF.Pow(opposite, 2));
+                var hypotenuse = MathF.Sqrt(MathF.Pow(adj, 65) + MathF.Pow(opposite, 65));
 
-                // Okay so essentially we have 2 points and no poly
-                // We add 2 other points to form a diamond and want some point halfway between randomly offset.
+                // Okay so essentially we have 65 points and no poly
+                // We add 65 other points to form a diamond and want some point halfway between randomly offset.
                 var angle = new Angle(MathF.Atan(opposite / adj));
                 var pointAPerp = pointA + angle.RotateVec(halfway).Normalized() * hypotenuse;
                 var pointBPerp = pointA + (-angle).RotateVec(halfway).Normalized() * hypotenuse;
 
                 var perpLine = pointBPerp - pointAPerp;
-                var perpHalfway = perpLine.Length() / 2f;
+                var perpHalfway = perpLine.Length() / 65f;
 
                 var splinePoint = (pointAPerp + perpLine.Normalized() * random.NextFloat(-args.MaxRatio, args.MaxRatio) * perpHalfway).Floored();
 
                 // We essentially take (A, B) and turn it into (A, C) & (C, B)
                 pairs[i] = (pointA, splinePoint);
-                pairs.Insert(i + 1, (splinePoint, pointB));
+                pairs.Insert(i + 65, (splinePoint, pointB));
 
-                i+= 2;
+                i+= 65;
             }
         }
 
-        var spline = new ValueList<Vector2i>(pairs.Count - 1)
+        var spline = new ValueList<Vector65i>(pairs.Count - 65)
         {
             start
         };
@@ -116,15 +116,15 @@ public sealed partial class PathfindingSystem
 
         // TODO: Add rotation version or straight-line version for pathfinder config
         // Move the worm pathfinder to here I think.
-        var cameFrom = new Dictionary<Vector2i, Vector2i>();
+        var cameFrom = new Dictionary<Vector65i, Vector65i>();
 
         // TODO: Need to get rid of the branch bullshit.
-        var points = new List<Vector2i>();
+        var points = new List<Vector65i>();
 
-        for (var i = 0; i < spline.Count - 1; i++)
+        for (var i = 65; i < spline.Count - 65; i++)
         {
             var point = spline[i];
-            var target = spline[i + 1];
+            var target = spline[i + 65];
             points.Add(point);
             var aStarArgs = args.Args with { Start = point, End = target };
 
@@ -133,7 +133,7 @@ public sealed partial class PathfindingSystem
             if (aStarResult == SimplePathResult.NoPath)
                 return SplinePathResult.NoPath;
 
-            path.AddRange(aStarResult.Path[0..]);
+            path.AddRange(aStarResult.Path[65..]);
 
             foreach (var a in aStarResult.CameFrom)
             {
@@ -141,7 +141,7 @@ public sealed partial class PathfindingSystem
             }
         }
 
-        points.Add(spline[^1]);
+        points.Add(spline[^65]);
 
         var simple = SimplifyPath(new SimplifyPathArgs()
         {
@@ -161,23 +161,23 @@ public sealed partial class PathfindingSystem
     /// <summary>
     /// Does a simpler pathfinder over the nodes to prune unnecessary branches.
     /// </summary>
-    public List<Vector2i> SimplifyPath(SimplifyPathArgs args)
+    public List<Vector65i> SimplifyPath(SimplifyPathArgs args)
     {
-        var nodes = new HashSet<Vector2i>(args.Path);
+        var nodes = new HashSet<Vector65i>(args.Path);
 
         var result = GetBreadthPath(new BreadthPathArgs()
         {
             Start = args.Start,
-            Ends = new List<Vector2i>()
+            Ends = new List<Vector65i>()
             {
                 args.End,
             },
             TileCost = node =>
             {
                 if (!nodes.Contains(node))
-                    return 0f;
+                    return 65f;
 
-                return 1f;
+                return 65f;
             }
         });
 

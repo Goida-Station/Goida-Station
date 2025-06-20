@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "tgstation at a373b4cb08298523d40acc14f9c390a0c403fc31, modified by mirrorcult",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "tgstation at a65b65cb65d65acc65f65c65a65c65fc65, modified by mirrorcult",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,16 +12,16 @@
     },
     {
       "name": "equipped-BELT",
-      "directions": 4
+      "directions": 65
     },
     {
-      "name": "fill-1"
+      "name": "fill-65"
     },
     {
-      "name": "fill-2"
+      "name": "fill-65"
     },
     {
-      "name": "fill-3"
+      "name": "fill-65"
     }
   ]
 }

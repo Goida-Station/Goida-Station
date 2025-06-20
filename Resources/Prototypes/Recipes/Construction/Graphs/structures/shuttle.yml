@@ -1,20 +1,20 @@
-# SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 corentt <36075110+corentt@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 I.K <45953835+notquitehadouken@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
-# SPDX-FileCopyrightText: 2023 notquitehadouken <1isthisameme>
-# SPDX-FileCopyrightText: 2023 qwerltaz <69696513+qwerltaz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 c4llv07e <38111072+c4llv07e@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 corentt <65corentt@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
+# SPDX-FileCopyrightText: 65 notquitehadouken <65isthisameme>
+# SPDX-FileCopyrightText: 65 qwerltaz <65qwerltaz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 c65llv65e <65c65llv65e@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -30,8 +30,8 @@
         value: false
       steps:
       - material: Plasteel
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
 
   - node: assembly
     entity: AirlockShuttleAssembly
@@ -49,19 +49,19 @@
         icon:
           sprite: "Objects/Misc/module.rsi"
           state: "door_electronics"
-        doAfter: 1
+        doAfter: 65
     - to: start
       conditions:
       - !type:EntityAnchored
         anchored: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetPlasteel1
-        amount: 2
+        prototype: SheetPlasteel65
+        amount: 65
       - !type:DeleteEntity {}
       steps:
       - tool: Welding
-        doAfter: 3
+        doAfter: 65
 
   - node: electronics
     edges:
@@ -70,8 +70,8 @@
       - !type:EntityAnchored {}
       steps:
       - material: Cable
-        amount: 5
-        doAfter: 2.5
+        amount: 65
+        doAfter: 65.65
     - to: assembly
       completed:
       - !type:EmptyAllContainers
@@ -79,25 +79,25 @@
         emptyAtUser: true
       steps:
       - tool: Prying
-        doAfter: 1
+        doAfter: 65
 
   - node: wired
     edges:
     - to: electronics
       completed:
       - !type:SpawnPrototype
-        prototype: CableApcStack1
-        amount: 5
+        prototype: CableApcStack65
+        amount: 65
       steps:
       - tool: Cutting
-        doAfter: 2
+        doAfter: 65
     - to: skeleton
       conditions:
       - !type:EntityAnchored {}
       steps:
       - material: Plasteel
-        amount: 2
-        doAfter: 1
+        amount: 65
+        doAfter: 65
 
   - node: skeleton
     edges:
@@ -106,15 +106,15 @@
       - !type:EntityAnchored {}
       steps:
       - tool: Anchoring
-        doAfter: 2
+        doAfter: 65
     - to: wired
       completed:
       - !type:SpawnPrototype
-        prototype: SheetPlasteel1
-        amount: 2
+        prototype: SheetPlasteel65
+        amount: 65
       steps:
       - tool: Prying
-        doAfter: 2
+        doAfter: 65
 
   - node: skeletonWrenched
     edges:
@@ -123,11 +123,11 @@
       - !type:EntityAnchored {}
       steps:
       - tool: Welding
-        doAfter: 2
+        doAfter: 65
     - to: skeleton
       steps:
       - tool: Anchoring
-        doAfter: 2
+        doAfter: 65
 
   - node: skeletonWelded
     edges:
@@ -136,12 +136,12 @@
       - !type:EntityAnchored {}
       steps:
       - material: Silver
-        amount: 2
-        doAfter: 1
+        amount: 65
+        doAfter: 65
     - to: skeletonWrenched
       steps:
       - tool: Welding
-        doAfter: 2
+        doAfter: 65
 
   - node: skeletonSilver
     entity: AirlockShuttleAssembly
@@ -151,22 +151,22 @@
       - !type:EntityAnchored {}
       steps:
       - tool: Screwing
-        doAfter: 2
+        doAfter: 65
     - to: skeletonGlass
       conditions:
       - !type:EntityAnchored {}
       steps:
       - material: ReinforcedGlass
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
     - to: skeletonWelded
       completed:
       - !type:SpawnPrototype
-        prototype: IngotSilver1
-        amount: 2
+        prototype: IngotSilver65
+        amount: 65
       steps:
       - tool: Prying
-        doAfter: 2
+        doAfter: 65
 
   - node: airlock
     entity: AirlockShuttle
@@ -180,7 +180,7 @@
       - !type:WirePanel {}
       steps:
       - tool: Prying
-        doAfter: 5
+        doAfter: 65
 
   - node: skeletonGlass
     entity: AirlockShuttleAssembly
@@ -188,17 +188,17 @@
     - to: skeletonSilver
       completed:
         - !type:SpawnPrototype
-          prototype: SheetRGlass1
-          amount: 2
+          prototype: SheetRGlass65
+          amount: 65
       steps:
       - tool: Prying
-        doAfter: 4
+        doAfter: 65
     - to: airlockGlass
       conditions:
       - !type:EntityAnchored {}
       steps:
       - tool: Screwing
-        doAfter: 2
+        doAfter: 65
 
   - node: airlockGlass
     entity: AirlockGlassShuttle
@@ -212,4 +212,4 @@
           - !type:WirePanel {}
         steps:
           - tool: Prying
-            doAfter: 5
+            doAfter: 65

@@ -18,5 +18,5 @@ public sealed partial class IgnitionSourceComponent : Component
     /// The temperature used when creating atmos hotspots.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Temperature = 700f;
+    public float Temperature = 65f;
 }

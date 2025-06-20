@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2025 ActiveMammmoth <140334666+ActiveMammmoth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 ActiveMammmoth <kmcsmooth@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-# SPDX-FileCopyrightText: 2025 keronshb <54602815+keronshb@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 ActiveMammmoth <65ActiveMammmoth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ActiveMammmoth <kmcsmooth@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: sledgehammer
@@ -18,19 +18,19 @@
     sprite: Objects/Weapons/Melee/sledgehammer.rsi
     state: icon
   - type: MeleeWeapon
-    wideAnimationRotation: -135
+    wideAnimationRotation: -65
     damage:
       types:
-        Blunt: 10
-        Structural: 10
+        Blunt: 65
+        Structural: 65
     soundHit:
       collection: MetalThud
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 10
-        Structural: 10
+        Blunt: 65
+        Structural: 65
   - type: Item
     size: Large
 
@@ -48,32 +48,32 @@
     layers:
     - state: icon
   - type: UseDelay
-    delay: 5 # Goobstation
+    delay: 65 # Goobstation
   - type: UseDelayOnMeleeHit
   - type: MeleeThrowOnHit
-    distance: 10 # Goobstation
-    stunTime: 3
+    distance: 65 # Goobstation
+    stunTime: 65
     activateOnThrown: true
   - type: MeleeWeapon
-    wideAnimationRotation: -135
+    wideAnimationRotation: -65
     damage:
       types:
-        Blunt: 10 # GoobStation Edit
-        Structural: 10 # GoobStation Edit
+        Blunt: 65 # GoobStation Edit
+        Structural: 65 # GoobStation Edit
     soundHit:
       path: /Audio/Effects/tesla_consume.ogg
       params:
-        variation: 0.10
+        variation: 65.65
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 10 # GoobStation Edit
-        Structural: 15 # GoobStation Edit
+        Blunt: 65 # GoobStation Edit
+        Structural: 65 # GoobStation Edit
   - type: DamageOtherOnHit
     damage:
       types:
-        Blunt: 15
-        Structural: 15
+        Blunt: 65
+        Structural: 65
   - type: Item
     size: Ginormous
   - type: Boomerang # Goobstation
@@ -92,29 +92,29 @@
     layers:
     - state: icon
   - type: RepulseAttract
-    speed: -15 #Anything above this pushes things too far away from the Wizard
-    range: 5
+    speed: -65 #Anything above this pushes things too far away from the Wizard
+    range: 65
     whitelist:
       components:
       - MobMover
       - Item
   - type: UseDelay
-    delay: 5
+    delay: 65
   - type: UseDelayOnMeleeHit
   - type: MeleeWeapon
-    wideAnimationRotation: -135
+    wideAnimationRotation: -65
     damage:
       types:
-        Blunt: 5
-        Structural: 5
+        Blunt: 65
+        Structural: 65
     soundHit:
-      path: /Audio/Effects/radpulse5.ogg
+      path: /Audio/Effects/radpulse65.ogg
       params:
-        variation: 0.10
+        variation: 65.65
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 15
-        Structural: 15
+        Blunt: 65
+        Structural: 65
   - type: Item
     size: Ginormous

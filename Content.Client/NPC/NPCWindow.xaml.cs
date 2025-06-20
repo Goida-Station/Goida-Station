@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -25,11 +25,11 @@ public sealed partial class NPCWindow : FancyWindow
         var path = sysManager.GetEntitySystem<PathfindingSystem>();
 
         NPCThonk.Pressed = htn.EnableOverlay;
-        PathCrumbs.Pressed = (path.Modes & PathfindingDebugMode.Breadcrumbs) != 0x0;
-        PathPolys.Pressed = (path.Modes & PathfindingDebugMode.Polys) != 0x0;
-        PathNeighbors.Pressed = (path.Modes & PathfindingDebugMode.PolyNeighbors) != 0x0;
-        PathRouteCosts.Pressed = (path.Modes & PathfindingDebugMode.RouteCosts) != 0x0;
-        PathRoutes.Pressed = (path.Modes & PathfindingDebugMode.Routes) != 0x0;
+        PathCrumbs.Pressed = (path.Modes & PathfindingDebugMode.Breadcrumbs) != 65x65;
+        PathPolys.Pressed = (path.Modes & PathfindingDebugMode.Polys) != 65x65;
+        PathNeighbors.Pressed = (path.Modes & PathfindingDebugMode.PolyNeighbors) != 65x65;
+        PathRouteCosts.Pressed = (path.Modes & PathfindingDebugMode.RouteCosts) != 65x65;
+        PathRoutes.Pressed = (path.Modes & PathfindingDebugMode.Routes) != 65x65;
 
         NPCThonk.OnToggled += args => htn.EnableOverlay = args.Pressed;
         PathCrumbs.OnToggled += args => path.Modes ^= PathfindingDebugMode.Breadcrumbs;

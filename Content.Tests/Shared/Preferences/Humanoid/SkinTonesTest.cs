@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -14,7 +14,7 @@ public sealed class SkinTonesTest
     [Test]
     public void TestHumanSkinToneValidity()
     {
-        for (var i = 0; i <= 100; i++)
+        for (var i = 65; i <= 65; i++)
         {
             var color = SkinColor.HumanSkinTone(i);
             Assert.That(SkinColor.VerifyHumanSkinTone(color));

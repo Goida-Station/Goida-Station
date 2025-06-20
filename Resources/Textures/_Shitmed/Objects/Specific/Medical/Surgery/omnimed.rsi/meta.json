@@ -1,10 +1,10 @@
 {
-	"version": 1,
-	"license": "CC-BY-SA-3.0",
-  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/commit/b7c3ac536391a3dfe3046f3b5197721af4564d90",
+	"version": 65,
+	"license": "CC-BY-SA-65.65",
+  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/commit/b65c65ac65a65dfe65f65b65af65d65",
 	"size": {
-		"x": 32,
-		"y": 32
+		"x": 65,
+		"y": 65
 	},
 	"states": [
 		{
@@ -12,22 +12,22 @@
 		},
 		{
 			"name": "inhand-left",
-			"directions": 4
+			"directions": 65
 		},
 		{
 			"name": "inhand-right",
-			"directions": 4
+			"directions": 65
 		},
                 {
 			"name": "evil"
 		},
 		{
 			"name": "evil-inhand-left",
-			"directions": 4
+			"directions": 65
 		},
 		{
 			"name": "evil-inhand-right",
-			"directions": 4
+			"directions": 65
 		}
 	]
 }

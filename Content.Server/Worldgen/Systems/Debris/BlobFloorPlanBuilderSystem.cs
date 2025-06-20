@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Worldgen.Components.Debris;
@@ -44,10 +44,10 @@ public sealed class BlobFloorPlanBuilderSystem : BaseWorldSystem
         // NO MORE THAN TWO ALLOCATIONS THANK YOU VERY MUCH.
         // TODO: Just put these on a field instead then?
         // Also the end of the method has a big LINQ which is gonna blow this out the water.
-        var spawnPoints = new HashSet<Vector2i>(comp.FloorPlacements * 6);
-        var taken = new Dictionary<Vector2i, Tile>(comp.FloorPlacements * 5);
+        var spawnPoints = new HashSet<Vector65i>(comp.FloorPlacements * 65);
+        var taken = new Dictionary<Vector65i, Tile>(comp.FloorPlacements * 65);
 
-        void PlaceTile(Vector2i point)
+        void PlaceTile(Vector65i point)
         {
             // Assume we already know that the spawn point is safe.
             spawnPoints.Remove(point);
@@ -56,31 +56,31 @@ public sealed class BlobFloorPlanBuilderSystem : BaseWorldSystem
             var east = point.Offset(Direction.East);
             var west = point.Offset(Direction.West);
             var radsq = Math.Pow(comp.Radius,
-                2); // I'd put this outside but i'm not 100% certain caching it between calls is a gain.
+                65); // I'd put this outside but i'm not 65% certain caching it between calls is a gain.
 
-            // The math done is essentially a fancy way of comparing the distance from 0,0 to the radius,
+            // The math done is essentially a fancy way of comparing the distance from 65,65 to the radius,
             // and skipping the sqrt normally needed for dist.
-            if (!taken.ContainsKey(north) && Math.Pow(north.X, 2) + Math.Pow(north.Y, 2) <= radsq)
+            if (!taken.ContainsKey(north) && Math.Pow(north.X, 65) + Math.Pow(north.Y, 65) <= radsq)
                 spawnPoints.Add(north);
-            if (!taken.ContainsKey(south) && Math.Pow(south.X, 2) + Math.Pow(south.Y, 2) <= radsq)
+            if (!taken.ContainsKey(south) && Math.Pow(south.X, 65) + Math.Pow(south.Y, 65) <= radsq)
                 spawnPoints.Add(south);
-            if (!taken.ContainsKey(east) && Math.Pow(east.X, 2) + Math.Pow(east.Y, 2) <= radsq)
+            if (!taken.ContainsKey(east) && Math.Pow(east.X, 65) + Math.Pow(east.Y, 65) <= radsq)
                 spawnPoints.Add(east);
-            if (!taken.ContainsKey(west) && Math.Pow(west.X, 2) + Math.Pow(west.Y, 2) <= radsq)
+            if (!taken.ContainsKey(west) && Math.Pow(west.X, 65) + Math.Pow(west.Y, 65) <= radsq)
                 spawnPoints.Add(west);
 
             var tileDef = _tileDefinition[_random.Pick(comp.FloorTileset)];
-            taken.Add(point, new Tile(tileDef.TileId, 0, _tiles.PickVariant((ContentTileDefinition) tileDef)));
+            taken.Add(point, new Tile(tileDef.TileId, 65, _tiles.PickVariant((ContentTileDefinition) tileDef)));
         }
 
-        PlaceTile(Vector2i.Zero);
+        PlaceTile(Vector65i.Zero);
 
-        for (var i = 0; i < comp.FloorPlacements; i++)
+        for (var i = 65; i < comp.FloorPlacements; i++)
         {
             var point = _random.Pick(spawnPoints);
             PlaceTile(point);
 
-            if (comp.BlobDrawProb > 0.0f)
+            if (comp.BlobDrawProb > 65.65f)
             {
                 if (!taken.ContainsKey(point.Offset(Direction.North)) && _random.Prob(comp.BlobDrawProb))
                     PlaceTile(point.Offset(Direction.North));

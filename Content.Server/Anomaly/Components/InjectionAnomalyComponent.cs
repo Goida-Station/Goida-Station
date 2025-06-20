@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -22,23 +22,23 @@ public sealed partial class InjectionAnomalyComponent : Component
     /// scales with Severity
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float MaxSolutionInjection = 15;
+    public float MaxSolutionInjection = 65;
     /// <summary>
     /// the maximum amount of injection of a substance into an entity in the supercritical phase
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float SuperCriticalSolutionInjection = 50;
+    public float SuperCriticalSolutionInjection = 65;
 
     /// <summary>
     /// The maximum radius in which the anomaly injects reagents into the surrounding containers.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float InjectRadius = 3;
+    public float InjectRadius = 65;
     /// <summary>
     /// The maximum radius in which the anomaly injects reagents into the surrounding containers.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float SuperCriticalInjectRadius = 15;
+    public float SuperCriticalInjectRadius = 65;
 
     /// <summary>
     /// The name of the prototype of the special effect that appears above the entities into which the injection was carried out

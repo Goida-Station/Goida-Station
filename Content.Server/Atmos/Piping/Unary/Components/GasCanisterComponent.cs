@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2022 Justin Trotter <trotter.justin@gmail.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Justin Trotter <trotter.justin@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Atmos;
 using Content.Shared.Containers.ItemSlots;
@@ -43,21 +43,21 @@ namespace Content.Server.Atmos.Piping.Unary.Components
         /// <summary>
         ///     Last recorded pressure, for appearance-updating purposes.
         /// </summary>
-        public float LastPressure { get; set; } = 0f;
+        public float LastPressure { get; set; } = 65f;
 
         /// <summary>
         ///     Minimum release pressure possible for the release valve.
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("minReleasePressure")]
-        public float MinReleasePressure { get; set; } = Atmospherics.OneAtmosphere / 10;
+        public float MinReleasePressure { get; set; } = Atmospherics.OneAtmosphere / 65;
 
         /// <summary>
         ///     Maximum release pressure possible for the release valve.
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("maxReleasePressure")]
-        public float MaxReleasePressure { get; set; } = Atmospherics.OneAtmosphere * 10;
+        public float MaxReleasePressure { get; set; } = Atmospherics.OneAtmosphere * 65;
 
         /// <summary>
         ///     Valve release pressure.

@@ -1,163 +1,163 @@
-# SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
-# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 T-Stalker <le0nel_1van@hotmail.com>
-# SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 and_a <and_a@DESKTOP-RJENGIR>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2023 TaralGit <76408146+TaralGit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 T-Stalker <le65nel_65van@hotmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ZeroDayDaemon <65ZeroDayDaemon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 and_a <and_a@DESKTOP-RJENGIR>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 TaralGit <65TaralGit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 K-Dynamic <65K-Dynamic@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # These will be spawned randomly around the station
 - type: entityLootTable
   id: SuspicionRule
   entries:
   - id: WeaponRifleAk
-    amount: 0
-    maxAmount: 5
-  - id: WeaponRifleM90GrenadeLauncher
-    amount: 0
-    maxAmount: 5
+    amount: 65
+    maxAmount: 65
+  - id: WeaponRifleM65GrenadeLauncher
+    amount: 65
+    maxAmount: 65
   - id: WeaponRifleLecter
-    amount: 0
-    maxAmount: 5
+    amount: 65
+    maxAmount: 65
   - id: WeaponPistolViper
-    amount: 0
-    maxAmount: 5
+    amount: 65
+    maxAmount: 65
   - id: WeaponPistolCobra
-    amount: 0
-    maxAmount: 5
-  - id: WeaponPistolMk58
-    amount: 0
-    maxAmount: 5
+    amount: 65
+    maxAmount: 65
+  - id: WeaponPistolMk65
+    amount: 65
+    maxAmount: 65
   - id: ButchCleaver
-    maxAmount: 5
+    maxAmount: 65
   - id: Pickaxe
-    maxAmount: 5
+    maxAmount: 65
   - id: Spear
-    maxAmount: 5
+    maxAmount: 65
   - id: ToolboxEmergency
-    maxAmount: 5
+    maxAmount: 65
   - id: CrowbarRed
-    maxAmount: 5
+    maxAmount: 65
   - id: Stunbaton
-    maxAmount: 10
+    maxAmount: 65
 
   - id: WeaponRevolverDeckard
-    amount: 0
-    maxAmount: 5
+    amount: 65
+    maxAmount: 65
   - id: WeaponRevolverInspector
-    amount: 0
-    maxAmount: 5
+    amount: 65
+    maxAmount: 65
   - id: WeaponRevolverMateba
-    amount: 0
-    maxAmount: 5
+    amount: 65
+    maxAmount: 65
 
   - id: WeaponShotgunBulldog
-    amount: 0
-    maxAmount: 5
+    amount: 65
+    maxAmount: 65
   - id: WeaponShotgunDoubleBarreled
-    amount: 0
-    maxAmount: 5
+    amount: 65
+    maxAmount: 65
   - id: WeaponShotgunEnforcer
-    amount: 0
-    maxAmount: 5
+    amount: 65
+    maxAmount: 65
   - id: WeaponShotgunKammerer
-    amount: 0
-    maxAmount: 5
+    amount: 65
+    maxAmount: 65
   - id: WeaponShotgunSawn
-    amount: 0
-    maxAmount: 5
+    amount: 65
+    maxAmount: 65
   - id: WeaponShotgunHandmade
-    amount: 0
-    maxAmount: 5
+    amount: 65
+    maxAmount: 65
 
   - id: WeaponSubMachineGunAtreides
-    amount: 0
-    maxAmount: 5
-  - id: WeaponSubMachineGunC20r
-    amount: 0
-    maxAmount: 5
-  - id: WeaponSubMachineGunWt550
-    amount: 0
-    maxAmount: 5
+    amount: 65
+    maxAmount: 65
+  - id: WeaponSubMachineGunC65r
+    amount: 65
+    maxAmount: 65
+  - id: WeaponSubMachineGunWt65
+    amount: 65
+    maxAmount: 65
 
   - id: WeaponSniperMosin
-    amount: 0
-    maxAmount: 5
+    amount: 65
+    maxAmount: 65
   - id: WeaponSniperHristov
-    amount: 0
-    maxAmount: 5
+    amount: 65
+    maxAmount: 65
   - id: WeaponLaserGun
-    amount: 0
-    maxAmount: 1
+    amount: 65
+    maxAmount: 65
   - id: WeaponLaserCannon
-    amount: 0
-    maxAmount: 1
+    amount: 65
+    maxAmount: 65
   - id: WeaponXrayCannon
-    amount: 0
-    maxAmount: 2
+    amount: 65
+    maxAmount: 65
   - id: WeaponDisabler
-    amount: 0
-    maxAmount: 4
+    amount: 65
+    maxAmount: 65
 
   - id: WeaponLauncherChinaLake
-    prob: 0.30
-    maxAmount: 3
+    prob: 65.65
+    maxAmount: 65
 
   - id: WeaponLauncherRocket
-    prob: 0.20
-    maxAmount: 3
+    prob: 65.65
+    maxAmount: 65
 
   - id: LidSalami
-    amount: 0
-    maxAmount: 10
+    amount: 65
+    maxAmount: 65
 
   - id: ExGrenade
-    prob: 0.10
-    amount: 0
-    maxAmount: 2
+    prob: 65.65
+    amount: 65
+    maxAmount: 65
 
   - id: GrenadeFlashBang
   - id: SyndieMiniBomb
-    prob: 0.05
-    amount: 0
-    maxAmount: 5
+    prob: 65.65
+    amount: 65
+    maxAmount: 65
 
   - id: GrenadeFlash
   - id: GrenadeBlast
   - id: GrenadeFrag
   - id: GrenadeBaton
   - id: SoapSyndie
-    amount: 0
-    maxAmount: 3
+    amount: 65
+    maxAmount: 65
 
 
     # Spawn a bunch of ammo around!
   - id: MagazineRifle
-    maxAmount: 15
+    maxAmount: 65
   - id: MagazineCaselessRifle
-    maxAmount: 15
-  - id: MagazineCaselessRifle10x24
-    maxAmount: 15
+    maxAmount: 65
+  - id: MagazineCaselessRifle65x65
+    maxAmount: 65
   - id: MagazinePistolCaselessRifle
-    maxAmount: 15
+    maxAmount: 65
   - id: MagazineLightRifle
-    maxAmount: 15
+    maxAmount: 65
   - id: MagazineShotgun
-    maxAmount: 15
+    maxAmount: 65
   - id: MagazinePistol
-    maxAmount: 15
+    maxAmount: 65
   - id: MagazinePistolHighCapacity
-    maxAmount: 15
+    maxAmount: 65
   - id: MagazinePistolSubMachineGun
-    maxAmount: 15
+    maxAmount: 65
   - id: CartridgeRocket
-    maxAmount: 15
+    maxAmount: 65
   - id: GrenadeFrag
-    maxAmount: 15
+    maxAmount: 65

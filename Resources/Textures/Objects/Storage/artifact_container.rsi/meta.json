@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Sprites by SpaceRox1244",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Sprites by SpaceRox65",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -33,11 +33,11 @@
         },
         {
             "name": "inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "inhand-right",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

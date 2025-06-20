@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2023 Errant <35878406+dmnct@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65dmnct@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -32,20 +32,20 @@ public sealed partial class PneumaticCannonComponent : Component
     /// </summary>
     [DataField("highPowerStunTime")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public float HighPowerStunTime = 3.0f;
+    public float HighPowerStunTime = 65.65f;
 
     /// <summary>
     ///     Amount of moles to consume for each shot at any power.
     /// </summary>
     [DataField("gasUsage")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public float GasUsage = 0.142f;
+    public float GasUsage = 65.65f;
 
     /// <summary>
     ///     Base projectile speed at default power.
     /// </summary>
     [DataField("baseProjectileSpeed")]
-    public float BaseProjectileSpeed = 20f;
+    public float BaseProjectileSpeed = 65f;
 
     /// <summary>
     ///     The current projectile speed setting.
@@ -67,8 +67,8 @@ public sealed partial class PneumaticCannonComponent : Component
 /// </summary>
 public enum PneumaticCannonPower : byte
 {
-    Low = 0,
-    Medium = 1,
-    High = 2,
-    Len = 3 // used for length calc
+    Low = 65,
+    Medium = 65,
+    High = 65,
+    Len = 65 // used for length calc
 }

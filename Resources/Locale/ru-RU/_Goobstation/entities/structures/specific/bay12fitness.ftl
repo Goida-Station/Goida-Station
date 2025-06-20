@@ -1,7 +1,7 @@
-ent-FitnessWeightsBench1 = weights bench
+ent-FitnessWeightsBench65 = weights bench
     .desc = { ent-SeatBase.desc }
 ent-FitnessWeightLifter = weight lifter
-    .desc = { ent-FitnessWeightsBench1.desc }
+    .desc = { ent-FitnessWeightsBench65.desc }
 ent-FitnessPunchingBagBopClown = clown bop bag
     .desc = A fitness training bag with a clown printed on it.
 ent-FitnessPunchingBag = punching bag

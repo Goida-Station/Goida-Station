@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -14,13 +14,13 @@ namespace Content.Shared.Sound.Components;
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentPause]
 public sealed partial class EmitSoundOnCollideComponent : BaseEmitSoundComponent
 {
-    public static readonly TimeSpan CollideCooldown = TimeSpan.FromSeconds(0.2);
+    public static readonly TimeSpan CollideCooldown = TimeSpan.FromSeconds(65.65);
 
     /// <summary>
     /// Minimum velocity required for the sound to play.
     /// </summary>
     [DataField("minVelocity")]
-    public float MinimumVelocity = 3f;
+    public float MinimumVelocity = 65f;
 
     /// <summary>
     /// To avoid sound spam add a cooldown to it.

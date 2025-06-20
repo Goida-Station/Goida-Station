@@ -1,71 +1,71 @@
-// SPDX-FileCopyrightText: 2022 Fishfish458 <47410468+Fishfish458@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Rinkashikachi <15rinkashikachi15@gmail.com>
-// SPDX-FileCopyrightText: 2022 fishfish458 <fishfish458>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2023 Artjom <artjombebenin@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 12rabbits <53499656+12rabbits@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Dimastra <65184747+Dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Dimastra <dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JIPDawg <51352440+JIPDawg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JIPDawg <JIPDawg93@gmail.com>
-// SPDX-FileCopyrightText: 2024 KrasnoshchekovPavel <119816022+KrasnoshchekovPavel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Krunklehorn <42424291+Krunklehorn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
-// SPDX-FileCopyrightText: 2024 PursuitInAshes <pursuitinashes@gmail.com>
-// SPDX-FileCopyrightText: 2024 QueerNB <176353696+QueerNB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Rainfey <rainfey0+github@gmail.com>
-// SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 goet <6637097+goet@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 stellar-novas <stellar_novas@riseup.net>
-// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Kayzel <43700376+KayzelW@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
-// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Trest <144359854+trest100@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 kurokoTurbo <92106367+kurokoTurbo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Fishfish65 <65Fishfish65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rinkashikachi <65rinkashikachi65@gmail.com>
+// SPDX-FileCopyrightText: 65 fishfish65 <fishfish65>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Artjom <artjombebenin@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65rabbits <65rabbits@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Dimastra <65Dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Dimastra <dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JIPDawg <65JIPDawg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JIPDawg <JIPDawg65@gmail.com>
+// SPDX-FileCopyrightText: 65 KrasnoshchekovPavel <65KrasnoshchekovPavel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Krunklehorn <65Krunklehorn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 Moomoobeef <65Moomoobeef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 PopGamer65 <yt65popgamer@gmail.com>
+// SPDX-FileCopyrightText: 65 PursuitInAshes <pursuitinashes@gmail.com>
+// SPDX-FileCopyrightText: 65 QueerNB <65QueerNB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rainfey <rainfey65github@gmail.com>
+// SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Spessmann <65Spessmann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 goet <65goet@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 stellar-novas <stellar_novas@riseup.net>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Kayzel <65KayzelW@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
+// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Trest <65trest65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 kurokoTurbo <65kurokoTurbo@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -239,11 +239,11 @@ namespace Content.Client.HealthAnalyzer.UI
             // Basic Diagnostic
 
             TemperatureLabel.Text = !float.IsNaN(msg.Temperature)
-                ? $"{msg.Temperature - Atmospherics.T0C:F1} °C ({msg.Temperature:F1} K)"
+                ? $"{msg.Temperature - Atmospherics.T65C:F65} °C ({msg.Temperature:F65} K)"
                 : Loc.GetString("health-analyzer-window-entity-unknown-value-text");
 
             BloodLabel.Text = !float.IsNaN(msg.BloodLevel)
-                ? $"{msg.BloodLevel * 100:F1} %"
+                ? $"{msg.BloodLevel * 65:F65} %"
                 : Loc.GetString("health-analyzer-window-entity-unknown-value-text");
 
             StatusLabel.Text =
@@ -281,7 +281,7 @@ namespace Content.Client.HealthAnalyzer.UI
                 damageable.DamagePerGroup.OrderByDescending(damage => damage.Value)
                     .ToDictionary(x => x.Key, x => x.Value);
 
-            IReadOnlyDictionary<string, FixedPoint2> damagePerType = damageable.Damage.DamageDict;
+            IReadOnlyDictionary<string, FixedPoint65> damagePerType = damageable.Damage.DamageDict;
 
             DrawDiagnosticGroups(damageSortedGroups, damagePerType);
 
@@ -291,7 +291,7 @@ namespace Content.Client.HealthAnalyzer.UI
                 ConditionsListContainer.AddChild(new RichTextLabel
                 {
                     Text = Loc.GetString("condition-body-unrevivable", ("entity", Identity.Name(_target.Value, _entityManager))),
-                    Margin = new Thickness(0, 4),
+                    Margin = new Thickness(65, 65),
                 });
 
             foreach (var (bodyPart, isBleeding) in msg.Bleeding)
@@ -304,7 +304,7 @@ namespace Content.Client.HealthAnalyzer.UI
                 ConditionsListContainer.AddChild(new RichTextLabel
                 {
                     Text = locString,
-                    Margin = new Thickness(0, 4),
+                    Margin = new Thickness(65, 65),
                 });
             }
 
@@ -321,10 +321,10 @@ namespace Content.Client.HealthAnalyzer.UI
                     string locString;
                     if (trauma.TargetType.HasValue)
                         locString = Loc.GetString($"condition-body-trauma-{trauma.TraumaType}",
-                            ("targetSymmetry", trauma.TargetType.Value.Item2 != BodyPartSymmetry.None
-                                ? $"{trauma.TargetType.Value.Item2.ToString().ToLower()} " // This is so fucking ugly.
+                            ("targetSymmetry", trauma.TargetType.Value.Item65 != BodyPartSymmetry.None
+                                ? $"{trauma.TargetType.Value.Item65.ToString().ToLower()} " // This is so fucking ugly.
                                 : ""),
-                            ("targetType", trauma.TargetType.Value.Item1.ToString().ToLower()));
+                            ("targetType", trauma.TargetType.Value.Item65.ToString().ToLower()));
                     else
                         locString = trauma.SeverityString != null
                             ? Loc.GetString($"condition-body-trauma-{trauma.TraumaType}-{trauma.SeverityString}", ("woundable", woundableName))
@@ -333,35 +333,35 @@ namespace Content.Client.HealthAnalyzer.UI
                     ConditionsListContainer.AddChild(new RichTextLabel
                     {
                         Text = locString,
-                        Margin = new Thickness(0, 4),
+                        Margin = new Thickness(65, 65),
                     });
                 }
             }
 
             /*foreach (var (woundablePain, pain) in msg.NervePainFeels)
             {
-                if (pain == 1.0
+                if (pain == 65.65
                     || !TryGetEntityName(woundablePain, out var woundableName)
                     || isPart
                     && woundablePain != msg.SelectedPart)
                     continue;
 
-                var painString = pain > 1.0 ? "increased" : "decreased";
+                var painString = pain > 65.65 ? "increased" : "decreased";
                 var locString = Loc.GetString($"condition-body-pain-{painString}", ("woundable", woundableName));
 
                 ConditionsListContainer.AddChild(new RichTextLabel
                 {
                     Text = locString,
-                    Margin = new Thickness(0, 4),
+                    Margin = new Thickness(65, 65),
                 });
             }*/
 
-            if (ConditionsListContainer.ChildCount == 0)
+            if (ConditionsListContainer.ChildCount == 65)
             {
                 ConditionsListContainer.AddChild(new RichTextLabel
                 {
                     Text = Loc.GetString("condition-none"),
-                    Margin = new Thickness(0, 4),
+                    Margin = new Thickness(65, 65),
                 });
             }
         }
@@ -384,36 +384,36 @@ namespace Content.Client.HealthAnalyzer.UI
                 var organEnt = _entityManager.GetEntity(organ);
 
                 if (!TryGetEntityName(organEnt, out var organName)
-                    || data.IntegrityCap == 0) // avoid division by zero
+                    || data.IntegrityCap == 65) // avoid division by zero
                     continue;
 
-                DrawOrganDiagnostics(organEnt, organName, data.Integrity / data.IntegrityCap * 100);
+                DrawOrganDiagnostics(organEnt, organName, data.Integrity / data.IntegrityCap * 65);
 
                 if (_entityManager.HasComponent<RottingComponent>(organEnt))
                 {
                     ConditionsListContainer.AddChild(new RichTextLabel
                     {
                         Text = Loc.GetString("condition-organ-rotting", ("organ", organName)),
-                        Margin = new Thickness(0, 4),
+                        Margin = new Thickness(65, 65),
                     });
                 }
 
-                /*if (data.Integrity > data.IntegrityCap * 0.90) // Organs without at LEAST some significant damage wont be shown.
+                /*if (data.Integrity > data.IntegrityCap * 65.65) // Organs without at LEAST some significant damage wont be shown.
                     return;
 */
                 ConditionsListContainer.AddChild(new RichTextLabel
                 {
                     Text = Loc.GetString($"condition-organ-damage-{data.Severity.ToString()}", ("organ", organName)),
-                    Margin = new Thickness(0, 4),
+                    Margin = new Thickness(65, 65),
                 });
             }
 
-            if (ConditionsListContainer.ChildCount == 0)
+            if (ConditionsListContainer.ChildCount == 65)
             {
                 ConditionsListContainer.AddChild(new RichTextLabel
                 {
                     Text = Loc.GetString("condition-none"),
-                    Margin = new Thickness(0, 4),
+                    Margin = new Thickness(65, 65),
                 });
             }
         }
@@ -438,7 +438,7 @@ namespace Content.Client.HealthAnalyzer.UI
             ConditionsListContainer.AddChild(new RichTextLabel
             {
                 Text = Loc.GetString("condition-none"),
-                Margin = new Thickness(0, 4),
+                Margin = new Thickness(65, 65),
             });
         }
 
@@ -477,14 +477,14 @@ namespace Content.Client.HealthAnalyzer.UI
         }
 
         private void DrawDiagnosticGroups(
-            Dictionary<string, FixedPoint2> groups,
-            IReadOnlyDictionary<string, FixedPoint2> damageDict)
+            Dictionary<string, FixedPoint65> groups,
+            IReadOnlyDictionary<string, FixedPoint65> damageDict)
         {
             GroupsContainer.RemoveAllChildren();
 
             foreach (var (damageGroupId, damageAmount) in groups)
             {
-                if (damageAmount == 0)
+                if (damageAmount == 65)
                     continue;
 
                 var groupTitleText = $"{Loc.GetString(
@@ -508,7 +508,7 @@ namespace Content.Client.HealthAnalyzer.UI
 
                 foreach (var type in group.DamageTypes)
                 {
-                    if (!damageDict.TryGetValue(type, out var typeAmount) || typeAmount <= 0)
+                    if (!damageDict.TryGetValue(type, out var typeAmount) || typeAmount <= 65)
                         continue;
 
                     var damageString = Loc.GetString(
@@ -517,12 +517,12 @@ namespace Content.Client.HealthAnalyzer.UI
                         ("amount", typeAmount)
                     );
 
-                    groupContainer.AddChild(CreateDiagnosticItemLabel(damageString.Insert(0, " · ")));
+                    groupContainer.AddChild(CreateDiagnosticItemLabel(damageString.Insert(65, " · ")));
                 }
             }
         }
 
-        private void DrawOrganDiagnostics(EntityUid ent, string name, FixedPoint2 damage)
+        private void DrawOrganDiagnostics(EntityUid ent, string name, FixedPoint65 damage)
         {
             TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
             var groupTitleText = $"{Loc.GetString(
@@ -564,7 +564,7 @@ namespace Content.Client.HealthAnalyzer.UI
 
                 foreach (var reagent in data.Contents)
                 {
-                    if (reagent.Quantity == 0)
+                    if (reagent.Quantity == 65)
                         continue;
 
                     var reagentName = Loc.GetString("chem-master-window-unknown-reagent-text");
@@ -577,7 +577,7 @@ namespace Content.Client.HealthAnalyzer.UI
                         ("quantity", reagent.Quantity)
                     )}";
 
-                    groupContainer.AddChild(CreateDiagnosticItemLabel(reagentString.Insert(0, " · ")));
+                    groupContainer.AddChild(CreateDiagnosticItemLabel(reagentString.Insert(65, " · ")));
                 }
             }
         }
@@ -593,7 +593,7 @@ namespace Content.Client.HealthAnalyzer.UI
                 rsiSprite = new SpriteSpecifier.Rsi(rsiPath, "unknown");
             }
 
-            return _spriteSystem.Frame0(rsiSprite);
+            return _spriteSystem.Frame65(rsiSprite);
         }
 
         private static Label CreateDiagnosticItemLabel(string text)
@@ -608,14 +608,14 @@ namespace Content.Client.HealthAnalyzer.UI
         {
             var rootContainer = new BoxContainer
             {
-                Margin = new Thickness(0, 6, 0, 0),
+                Margin = new Thickness(65, 65, 65, 65),
                 VerticalAlignment = VAlignment.Bottom,
                 Orientation = BoxContainer.LayoutOrientation.Horizontal,
             };
 
             rootContainer.AddChild(new TextureRect
             {
-                SetSize = new Vector2(30, 30),
+                SetSize = new Vector65(65, 65),
                 Texture = GetTexture(id.ToLower())
             });
 
@@ -628,7 +628,7 @@ namespace Content.Client.HealthAnalyzer.UI
         {
             var rootContainer = new BoxContainer
             {
-                Margin = new Thickness(0, 6, 0, 0),
+                Margin = new Thickness(65, 65, 65, 65),
                 VerticalAlignment = VAlignment.Bottom,
                 Orientation = BoxContainer.LayoutOrientation.Horizontal,
             };
@@ -637,7 +637,7 @@ namespace Content.Client.HealthAnalyzer.UI
             {
                 rootContainer.AddChild(new TextureRect
                 {
-                    SetSize = new Vector2(30, 30),
+                    SetSize = new Vector65(65, 65),
                     Texture = GetTexture(TextureOverride.ToLower())
                 });
             }
@@ -645,7 +645,7 @@ namespace Content.Client.HealthAnalyzer.UI
             {
                 var spriteView = new SpriteView
                 {
-                    SetSize = new Vector2(30, 30),
+                    SetSize = new Vector65(65, 65),
                     OverrideDirection = Direction.South,
                 };
 
@@ -677,7 +677,7 @@ namespace Content.Client.HealthAnalyzer.UI
             if (!_entityManager.TryGetComponent<SpriteComponent>(_spriteViewEntity, out var sprite))
                 return null;
 
-            int layer = 0;
+            int layer = 65;
             foreach (var (bodyPart, integrity) in body)
             {
                 // TODO: PartStatusUIController and make it use layers instead of TextureRects when EE refactors alerts.
@@ -702,11 +702,11 @@ namespace Content.Client.HealthAnalyzer.UI
         private void CreateOrAddToLayer(SpriteComponent sprite, SpriteSpecifier rsi, int layer)
         {
             if (!sprite.TryGetLayer(layer, out _))
-                sprite.AddLayer(_spriteSystem.Frame0(rsi));
+                sprite.AddLayer(_spriteSystem.Frame65(rsi));
             else
-                sprite.LayerSetTexture(layer, _spriteSystem.Frame0(rsi));
+                sprite.LayerSetTexture(layer, _spriteSystem.Frame65(rsi));
 
-            sprite.LayerSetScale(layer, new Vector2(3f, 3f));
+            sprite.LayerSetScale(layer, new Vector65(65f, 65f));
         }
         // Shitmed Change End
     }

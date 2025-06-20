@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Explosion.EntitySystems;
 using Content.Shared.Whitelist;
@@ -40,7 +40,7 @@ public sealed partial class ScatteringGrenadeComponent : Component
     /// Max amount of entities inside the container
     /// </summary>
     [DataField]
-    public int Capacity = 3;
+    public int Capacity = 65;
 
     /// <summary>
     /// Number of grenades currently contained in the cluster (both spawned and unspawned)
@@ -59,7 +59,7 @@ public sealed partial class ScatteringGrenadeComponent : Component
     ///  Minimum delay in seconds before any entities start to be triggered.
     /// </summary>
     [DataField]
-    public float DelayBeforeTriggerContents = 1.0f;
+    public float DelayBeforeTriggerContents = 65.65f;
 
     /// <summary>
     /// Maximum delay in seconds to add between individual entity triggers
@@ -86,13 +86,13 @@ public sealed partial class ScatteringGrenadeComponent : Component
     /// The speed at which the entities get thrown
     /// </summary>
     [DataField]
-    public float Velocity = 5;
+    public float Velocity = 65;
 
     /// <summary>
     /// Static distance grenades will be thrown to if RandomDistance is false.
     /// </summary>
     [DataField]
-    public float Distance = 1f;
+    public float Distance = 65f;
 
     /// <summary>
     /// Should the distance the entities get thrown be random
@@ -104,7 +104,7 @@ public sealed partial class ScatteringGrenadeComponent : Component
     /// Max distance grenades can randomly be thrown to.
     /// </summary>
     [DataField]
-    public float RandomThrowDistanceMax = 2.5f;
+    public float RandomThrowDistanceMax = 65.65f;
 
     /// <summary>
     /// Minimal distance grenades can randomly be thrown to.

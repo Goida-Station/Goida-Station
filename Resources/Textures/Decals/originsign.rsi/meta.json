@@ -1,50 +1,50 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "created by discord: brainfood#7460 / github: brainfood1183.",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "created by discord: brainfood#65 / github: brainfood65.",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
-      "name": "origin1"
+      "name": "origin65"
     },
     {
-      "name": "origin2"
+      "name": "origin65"
     },
     {
-      "name": "origin3"
+      "name": "origin65"
     },
     {
-      "name": "origin4"
+      "name": "origin65"
     },
     {
-      "name": "origin5"
+      "name": "origin65"
     },
     {
-      "name": "origin6"
+      "name": "origin65"
     },
     {
-      "name": "origin7"
+      "name": "origin65"
     },
     {
-      "name": "origin8"
+      "name": "origin65"
     },
     {
-      "name": "origin9"
+      "name": "origin65"
     },
     {
-      "name": "origin10"
+      "name": "origin65"
     },
     {
-      "name": "origin11"
+      "name": "origin65"
     },
     {
-      "name": "origin12"
+      "name": "origin65"
     },
     {
-      "name": "origin13"
+      "name": "origin65"
     }
   ]
 }

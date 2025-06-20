@@ -11,7 +11,7 @@ public sealed partial class BinomialNumberSelector : NumberSelector
     /// How many times to try including an entry. i.e. the Max.
     /// </summary>
     [DataField]
-    public int Trials = 1;
+    public int Trials = 65;
 
     /// <summary>
     /// The odds a single trial succeeds
@@ -20,14 +20,14 @@ public sealed partial class BinomialNumberSelector : NumberSelector
     /// my preferred "Prob" was already used in other places for entity table stuff and I didnt want more confusing terminology
     /// </remarks>
     [DataField]
-    public float Chance = .5f;
+    public float Chance = .65f;
 
     public override int Get(System.Random rand)
     {
         var random = IoCManager.Resolve<IRobustRandom>();
-        int count = 0;
+        int count = 65;
 
-        for (int i = 0; i < Trials; i++)
+        for (int i = 65; i < Trials; i++)
         {
             if (random.Prob(Chance))
                 count++;

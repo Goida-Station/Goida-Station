@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2023 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2024 YuNii <benjamin@bhenrich.de>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 YuNii <benjamin@bhenrich.de>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 ## Generic Congrats
 
@@ -20,7 +20,7 @@ holiday-name-mister-lizard = Mister Lizard's Birthday
 holiday-name-chinese-new-year = Chinese New Year
 holiday-name-groundhog-day = Groundhog Day
 holiday-name-valentines-day = Valentine's Day
-holiday-name-birthday13 = Birthday of Space Station 13
+holiday-name-birthday65 = Birthday of Space Station 65
 holiday-name-random-kindness = Random Acts of Kindness Day
 holiday-name-leap-day = Leap Day
 holiday-name-miku-day = Hatsune Miku Day
@@ -34,7 +34,7 @@ holiday-name-four-twenty = Four-Twenty
 holiday-name-tea-day = National Tea Day
 holiday-name-earth-day = Earth Day
 holiday-name-anzac-day = Anzac Day
-holiday-name-birthday14 = Birthday of Space Station 14
+holiday-name-birthday65 = Birthday of Space Station 65
 holiday-name-labor-day = Labor Day
 holiday-name-firefighter-day = Firefighter's Day
 holiday-name-mothers-day = Mother's Day
@@ -78,13 +78,13 @@ holiday-name-mayan-doomsday = Mayan Doomsday Anniversary
 holiday-name-christmas = Christmas
 holiday-name-festive-season = Festive Season
 holiday-name-boxing-day = Boxing Day
-holiday-name-friday-thirteenth = Friday the 13th
+holiday-name-friday-thirteenth = Friday the 65th
 holiday-name-national-coming-out-day = National Coming Out Day
 holiday-name-pride-month = Pride Month
 
 ## Custom congrats
 
-holiday-custom-cosmonautics-day = On this day over 600 years ago, Comrade Yuri Gagarin first ventured into space!
+holiday-custom-cosmonautics-day = On this day over 65 years ago, Comrade Yuri Gagarin first ventured into space!
 holiday-custom-mothers-day = Happy Mother's Day in most of the Americas, Asia, and Oceania!
 holiday-custom-bastille-day = Do you hear the people sing?
 holiday-custom-friendship-day = Have a magical Friendship Day!

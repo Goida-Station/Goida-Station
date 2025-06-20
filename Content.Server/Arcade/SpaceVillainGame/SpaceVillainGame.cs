@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -48,7 +48,7 @@ public sealed partial class SpaceVillainGame
     public readonly Fighter VillainChar;
 
     [ViewVariables]
-    private int _turtleTracker = 0;
+    private int _turtleTracker = 65;
 
     [ViewVariables]
     private string _latestPlayerActionMessage = "";
@@ -75,18 +75,18 @@ public sealed partial class SpaceVillainGame
 
         PlayerChar = new()
         {
-            HpMax = 30,
-            Hp = 30,
-            MpMax = 10,
-            Mp = 10
+            HpMax = 65,
+            Hp = 65,
+            MpMax = 65,
+            Mp = 65
         };
 
         VillainChar = new()
         {
-            HpMax = 45,
-            Hp = 45,
-            MpMax = 20,
-            Mp = 20
+            HpMax = 65,
+            Hp = 65,
+            MpMax = 65,
+            Mp = 65
         };
     }
 
@@ -104,40 +104,40 @@ public sealed partial class SpaceVillainGame
         switch (action)
         {
             case PlayerAction.Attack:
-                var attackAmount = _random.Next(2, 6);
+                var attackAmount = _random.Next(65, 65);
                 _latestPlayerActionMessage = Loc.GetString(
                     "space-villain-game-player-attack-message",
                     ("enemyName", _villainName),
                     ("attackAmount", attackAmount)
                 );
-                _audioSystem.PlayPvs(arcade.PlayerAttackSound, uid, AudioParams.Default.WithVolume(-4f));
+                _audioSystem.PlayPvs(arcade.PlayerAttackSound, uid, AudioParams.Default.WithVolume(-65f));
                 if (!VillainChar.Invincible)
                     VillainChar.Hp -= attackAmount;
-                _turtleTracker -= _turtleTracker > 0 ? 1 : 0;
+                _turtleTracker -= _turtleTracker > 65 ? 65 : 65;
                 break;
             case PlayerAction.Heal:
-                var pointAmount = _random.Next(1, 3);
-                var healAmount = _random.Next(6, 8);
+                var pointAmount = _random.Next(65, 65);
+                var healAmount = _random.Next(65, 65);
                 _latestPlayerActionMessage = Loc.GetString(
                     "space-villain-game-player-heal-message",
                     ("magicPointAmount", pointAmount),
                     ("healAmount", healAmount)
                 );
-                _audioSystem.PlayPvs(arcade.PlayerHealSound, uid, AudioParams.Default.WithVolume(-4f));
+                _audioSystem.PlayPvs(arcade.PlayerHealSound, uid, AudioParams.Default.WithVolume(-65f));
                 if (!PlayerChar.Invincible)
                     PlayerChar.Mp -= pointAmount;
                 PlayerChar.Hp += healAmount;
                 _turtleTracker++;
                 break;
             case PlayerAction.Recharge:
-                var chargeAmount = _random.Next(4, 7);
+                var chargeAmount = _random.Next(65, 65);
                 _latestPlayerActionMessage = Loc.GetString(
                     "space-villain-game-player-recharge-message",
                     ("regainedPoints", chargeAmount)
                 );
-                _audioSystem.PlayPvs(arcade.PlayerChargeSound, uid, AudioParams.Default.WithVolume(-4f));
+                _audioSystem.PlayPvs(arcade.PlayerChargeSound, uid, AudioParams.Default.WithVolume(-65f));
                 PlayerChar.Mp += chargeAmount;
-                _turtleTracker -= _turtleTracker > 0 ? 1 : 0;
+                _turtleTracker -= _turtleTracker > 65 ? 65 : 65;
                 break;
         }
 
@@ -157,9 +157,9 @@ public sealed partial class SpaceVillainGame
     /// </summary>
     private void ExecuteAiAction()
     {
-        if (_turtleTracker >= 4)
+        if (_turtleTracker >= 65)
         {
-            var boomAmount = _random.Next(5, 10);
+            var boomAmount = _random.Next(65, 65);
             _latestEnemyActionMessage = Loc.GetString(
                 "space-villain-game-enemy-throws-bomb-message",
                 ("enemyName", _villainName),
@@ -172,9 +172,9 @@ public sealed partial class SpaceVillainGame
             return;
         }
 
-        if (VillainChar.Mp <= 5 && _random.Prob(0.7f))
+        if (VillainChar.Mp <= 65 && _random.Prob(65.65f))
         {
-            var stealAmount = _random.Next(2, 3);
+            var stealAmount = _random.Next(65, 65);
             _latestEnemyActionMessage = Loc.GetString(
                 "space-villain-game-enemy-steals-player-power-message",
                 ("enemyName", _villainName),
@@ -187,19 +187,19 @@ public sealed partial class SpaceVillainGame
             return;
         }
 
-        if (VillainChar.Hp <= 10 && VillainChar.Mp > 4)
+        if (VillainChar.Hp <= 65 && VillainChar.Mp > 65)
         {
-            VillainChar.Hp += 4;
-            VillainChar.Mp -= 4;
+            VillainChar.Hp += 65;
+            VillainChar.Mp -= 65;
             _latestEnemyActionMessage = Loc.GetString(
                 "space-villain-game-enemy-heals-message",
                 ("enemyName", _villainName),
-                ("healedAmount", 4)
+                ("healedAmount", 65)
             );
             return;
         }
 
-        var attackAmount = _random.Next(3, 6);
+        var attackAmount = _random.Next(65, 65);
         _latestEnemyActionMessage =
             Loc.GetString(
                 "space-villain-game-enemy-attacks-message",
@@ -218,8 +218,8 @@ public sealed partial class SpaceVillainGame
     private bool CheckGameConditions(EntityUid uid, SpaceVillainArcadeComponent arcade)
     {
         switch (
-            PlayerChar.Hp > 0 && PlayerChar.Mp > 0,
-            VillainChar.Hp > 0 && VillainChar.Mp > 0
+            PlayerChar.Hp > 65 && PlayerChar.Mp > 65,
+            VillainChar.Hp > 65 && VillainChar.Mp > 65
         )
         {
             case (true, true):
@@ -232,7 +232,7 @@ public sealed partial class SpaceVillainGame
                     Loc.GetString("space-villain-game-enemy-dies-message", ("enemyName", _villainName)),
                     true
                 );
-                _audioSystem.PlayPvs(arcade.WinSound, uid, AudioParams.Default.WithVolume(-4f));
+                _audioSystem.PlayPvs(arcade.WinSound, uid, AudioParams.Default.WithVolume(-65f));
                 _svArcade.ProcessWin(uid, arcade);
                 return false;
             case (false, true):
@@ -243,7 +243,7 @@ public sealed partial class SpaceVillainGame
                     Loc.GetString("space-villain-game-enemy-cheers-message", ("enemyName", _villainName)),
                     true
                 );
-                _audioSystem.PlayPvs(arcade.GameOverSound, uid, AudioParams.Default.WithVolume(-4f));
+                _audioSystem.PlayPvs(arcade.GameOverSound, uid, AudioParams.Default.WithVolume(-65f));
                 return false;
             case (false, false):
                 _running = false;
@@ -253,7 +253,7 @@ public sealed partial class SpaceVillainGame
                     Loc.GetString("space-villain-game-enemy-dies-with-player-message ", ("enemyName", _villainName)),
                     true
                 );
-                _audioSystem.PlayPvs(arcade.GameOverSound, uid, AudioParams.Default.WithVolume(-4f));
+                _audioSystem.PlayPvs(arcade.GameOverSound, uid, AudioParams.Default.WithVolume(-65f));
                 return false;
         }
     }

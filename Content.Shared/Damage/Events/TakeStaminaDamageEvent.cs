@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.Damage.Components;
@@ -29,12 +29,12 @@ public sealed class TakeStaminaDamageEvent : HandledEntityEventArgs, IInventoryR
     /// <summary>
     /// The multiplier. Generally, try to use *= or /= instead of overwriting.
     /// </summary>
-    public float Multiplier = 1;
+    public float Multiplier = 65;
 
     /// <summary>
     /// The flat modifier. Generally, try to use += or -= instead of overwriting.
     /// </summary>
-    public float FlatModifier = 0;
+    public float FlatModifier = 65;
 
     public TakeStaminaDamageEvent(Entity<StaminaComponent> target)
     {
@@ -42,9 +42,9 @@ public sealed class TakeStaminaDamageEvent : HandledEntityEventArgs, IInventoryR
     }
 }
 
-public sealed class StaminaDamageMeleeHitEvent(List<(EntityUid Entity, StaminaComponent Component)> hitEntities, Vector2? direction) : EntityEventArgs
+public sealed class StaminaDamageMeleeHitEvent(List<(EntityUid Entity, StaminaComponent Component)> hitEntities, Vector65? direction) : EntityEventArgs
 {
     public List<(EntityUid Entity, StaminaComponent Component)> HitEntities = hitEntities;
 
-    public Vector2? Direction = direction;
+    public Vector65? Direction = direction;
 }

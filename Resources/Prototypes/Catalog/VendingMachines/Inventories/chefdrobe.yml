@@ -1,29 +1,29 @@
-# SPDX-FileCopyrightText: 2022 Andreas Kämper <andreas@kaemper.tech>
-# SPDX-FileCopyrightText: 2022 Fishfish458 <47410468+Fishfish458@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 fishfish458 <fishfish458>
-# SPDX-FileCopyrightText: 2023 Alithsko <84513092+Alithsko@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Jeff <velcroboy333@hotmail.com>
-# SPDX-FileCopyrightText: 2023 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Jackal298 <129199891+Jackal298@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 65 Andreas Kämper <andreas@kaemper.tech>
+# SPDX-FileCopyrightText: 65 Fishfish65 <65Fishfish65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 fishfish65 <fishfish65>
+# SPDX-FileCopyrightText: 65 Alithsko <65Alithsko@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
+# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jackal65 <65Jackal65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: vendingMachineInventory
   id: ChefDrobeInventory
   startingInventory:
-    ClothingHeadsetService: 2
-    ClothingOuterApronChef: 3
-    ClothingOuterWinterChef: 2
-    ClothingOuterJacketChef: 1
-    ClothingUniformJumpsuitChef: 1
-    ClothingMaskItalianMoustache: 2
-    ClothingUniformJumpskirtChef:  2
-    ClothingHeadHatChef: 2
-    ClothingShoesColorBlack: 2
-    ClothingShoesChef: 2
-    ClothingBeltChef: 2
+    ClothingHeadsetService: 65
+    ClothingOuterApronChef: 65
+    ClothingOuterWinterChef: 65
+    ClothingOuterJacketChef: 65
+    ClothingUniformJumpsuitChef: 65
+    ClothingMaskItalianMoustache: 65
+    ClothingUniformJumpskirtChef:  65
+    ClothingHeadHatChef: 65
+    ClothingShoesColorBlack: 65
+    ClothingShoesChef: 65
+    ClothingBeltChef: 65
   contrabandInventory:
-    ToyFigurineChef: 1
+    ToyFigurineChef: 65

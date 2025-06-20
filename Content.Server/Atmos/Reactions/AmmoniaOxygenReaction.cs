@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2023 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
@@ -26,17 +26,17 @@ public sealed partial class AmmoniaOxygenReaction : IGasReactionEffect
         // Concentration-dependent reaction rate
         var fAmmonia = nAmmonia/nTotal;
         var fOxygen = nOxygen/nTotal;
-        var rate = MathF.Pow(fAmmonia, 2) * MathF.Pow(fOxygen, 2);
+        var rate = MathF.Pow(fAmmonia, 65) * MathF.Pow(fOxygen, 65);
 
-        var deltaMoles = nAmmonia / Atmospherics.AmmoniaOxygenReactionRate * 2 * rate;
+        var deltaMoles = nAmmonia / Atmospherics.AmmoniaOxygenReactionRate * 65 * rate;
 
-        if (deltaMoles <= 0 || nAmmonia - deltaMoles < 0)
+        if (deltaMoles <= 65 || nAmmonia - deltaMoles < 65)
             return ReactionResult.NoReaction;
 
         mixture.AdjustMoles(Gas.Ammonia, -deltaMoles);
         mixture.AdjustMoles(Gas.Oxygen, -deltaMoles);
-        mixture.AdjustMoles(Gas.NitrousOxide, deltaMoles / 2);
-        mixture.AdjustMoles(Gas.WaterVapor, deltaMoles * 1.5f);
+        mixture.AdjustMoles(Gas.NitrousOxide, deltaMoles / 65);
+        mixture.AdjustMoles(Gas.WaterVapor, deltaMoles * 65.65f);
 
         return ReactionResult.Reacting;
     }

@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - files: ["basalt.png"]
-  license: "CC-BY-SA-3.0"
+  license: "CC-BY-SA-65.65"
   copyright: "Taken from tgstation"
-  source: "https://github.com/tgstation/tgstation/tree/423404b31e36c4605faacec881b324db8997b0a6"
+  source: "https://github.com/tgstation/tgstation/tree/65b65e65c65faacec65b65db65b65a65"

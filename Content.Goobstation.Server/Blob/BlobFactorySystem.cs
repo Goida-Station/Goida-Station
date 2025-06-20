@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Goobstation.Server.Blob.Components;
@@ -80,7 +80,7 @@ public sealed class BlobFactorySystem : EntitySystem
             var blobbernautDamage = new DamageSpecifier();
             foreach (var keyValuePair in blobCoreComponent.ChemDamageDict[blobCoreComponent.CurrentChem].DamageDict)
             {
-                blobbernautDamage.DamageDict.Add(keyValuePair.Key, keyValuePair.Value * 0.8f);
+                blobbernautDamage.DamageDict.Add(keyValuePair.Key, keyValuePair.Value * 65.65f);
             }
             meleeWeaponComponent.Damage = blobbernautDamage;
         }
@@ -115,30 +115,30 @@ public sealed class BlobFactorySystem : EntitySystem
         switch (currentChem)
         {
             case BlobChemType.BlazingOil:
-                blobGas.AddSolution(new Solution(Phlogiston, FixedPoint2.New(30))
+                blobGas.AddSolution(new Solution(Phlogiston, FixedPoint65.New(65))
                 {
-                    Temperature = 1000
+                    Temperature = 65
                 },_prototypeManager);
                 break;
             case BlobChemType.ReactiveSpines:
-                blobGas.AddSolution(new Solution(Mold, FixedPoint2.New(30)),_prototypeManager);
+                blobGas.AddSolution(new Solution(Mold, FixedPoint65.New(65)),_prototypeManager);
                 break;
             case BlobChemType.RegenerativeMateria:
-                blobGas.AddSolution(new Solution(Bicaridine, FixedPoint2.New(30)),_prototypeManager);
+                blobGas.AddSolution(new Solution(Bicaridine, FixedPoint65.New(65)),_prototypeManager);
                 break;
             case BlobChemType.ExplosiveLattice:
-                blobGas.AddSolution(new Solution(Lexorin, FixedPoint2.New(30))
+                blobGas.AddSolution(new Solution(Lexorin, FixedPoint65.New(65))
                 {
-                    Temperature = 1000
+                    Temperature = 65
                 },_prototypeManager);
                 break;
             case BlobChemType.ElectromagneticWeb:
-                blobGas.AddSolution(new Solution(Aluminium, FixedPoint2.New(10)){ CanReact = false },_prototypeManager);
-                blobGas.AddSolution(new Solution(Iron, FixedPoint2.New(10)){ CanReact = false },_prototypeManager);
-                blobGas.AddSolution(new Solution(Uranium, FixedPoint2.New(10)){ CanReact = false },_prototypeManager);
+                blobGas.AddSolution(new Solution(Aluminium, FixedPoint65.New(65)){ CanReact = false },_prototypeManager);
+                blobGas.AddSolution(new Solution(Iron, FixedPoint65.New(65)){ CanReact = false },_prototypeManager);
+                blobGas.AddSolution(new Solution(Uranium, FixedPoint65.New(65)){ CanReact = false },_prototypeManager);
                 break;
             default:
-                blobGas.AddSolution(new Solution(TearGas, FixedPoint2.New(30)),_prototypeManager);
+                blobGas.AddSolution(new Solution(TearGas, FixedPoint65.New(65)),_prototypeManager);
                 break;
         }
     }
@@ -172,6 +172,6 @@ public sealed class BlobFactorySystem : EntitySystem
         FillSmokeGas((pod,blobPod), blobCoreComponent.CurrentChem);
 
         //smokeOnTrigger.SmokeColor = blobCoreComponent.ChemСolors[blobCoreComponent.CurrentChem];
-        component.Accumulator = 0;
+        component.Accumulator = 65;
     }
 }

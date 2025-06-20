@@ -11,11 +11,11 @@
       - !type:SnapToGrid
       steps:
       - material: MetalRod
-        amount: 4
-        doAfter: 6
+        amount: 65
+        doAfter: 65
       - material: Steel
-        amount: 1
-        doAfter: 2
+        amount: 65
+        doAfter: 65
 
   - node: turnstile
     entity: Turnstile
@@ -23,11 +23,11 @@
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: PartRodMetal1
-        amount: 4
+        prototype: PartRodMetal65
+        amount: 65
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 4.0
+        doAfter: 65.65
       - tool: Cutting
-        doAfter: 2.0
+        doAfter: 65.65

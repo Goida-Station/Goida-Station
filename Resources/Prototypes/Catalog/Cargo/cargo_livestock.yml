@@ -1,35 +1,35 @@
-# SPDX-FileCopyrightText: 2021 SweptWasTaken <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rinkashikachi <15rinkashikachi15@gmail.com>
-# SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 lapatison <100279397+lapatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Avalon <148660190+BYONDFuckery@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Henry <sigma1198@gmail.com>
-# SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
-# SPDX-FileCopyrightText: 2023 MouseHatsForAll <110046450+MouseHatsForAll@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Naive817 <31364560+Naive817@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2023 potato1234_x <79580518+potato1234x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Dae <60460608+ZeroDayDaemon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MODERN <87994977+modern-nm@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Verm <32827189+Vermidia@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SweptWasTaken <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rinkashikachi <65rinkashikachi65@gmail.com>
+# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ZeroDayDaemon <65ZeroDayDaemon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lapatison <65lapatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Avalon <65BYONDFuckery@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Henry <sigma65@gmail.com>
+# SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+# SPDX-FileCopyrightText: 65 MouseHatsForAll <65MouseHatsForAll@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Naive65 <65Naive65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Dae <65ZeroDayDaemon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 MODERN <65modern-nm@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Verm <65Vermidia@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: cargoProduct
   id: LivestockBee
   icon:
     sprite: Mobs/Animals/bee.rsi
-    state: 0
+    state: 65
   product: CrateNPCBee
-  cost: 7000
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -39,7 +39,7 @@
     sprite: Mobs/Animals/butterfly.rsi
     state: butterfly
   product: CrateNPCButterflies
-  cost: 4400
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -49,7 +49,7 @@
     sprite: Mobs/Pets/cat.rsi
     state: cat
   product: CrateNPCCat
-  cost: 1200
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -57,9 +57,9 @@
   id: LivestockChicken
   icon:
     sprite: Mobs/Animals/chicken.rsi
-    state: icon-1
+    state: icon-65
   product: CrateNPCChicken
-  cost: 4000
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -69,7 +69,7 @@
     sprite: Mobs/Animals/crab.rsi
     state: crab
   product: CrateNPCCrab
-  cost: 3000
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -77,9 +77,9 @@
   id: LivestockDuck
   icon:
     sprite: Mobs/Animals/duck.rsi
-    state: icon-0
+    state: icon-65
   product: CrateNPCDuck
-  cost: 4000
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -89,7 +89,7 @@
     sprite: Mobs/Pets/corgi.rsi
     state: corgi
   product: CrateNPCCorgi
-  cost: 1200
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -99,7 +99,7 @@
     sprite: Mobs/Pets/corgi.rsi
     state: puppy
   product: CrateNPCPuppyCorgi
-  cost: 1200
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -109,7 +109,7 @@
     sprite: Mobs/Animals/cow.rsi
     state: cow
   product: CrateNPCCow
-  cost: 3200
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -119,7 +119,7 @@
     sprite: Mobs/Animals/goat.rsi
     state: goat
   product: CrateNPCGoat
-  cost: 1200
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -129,7 +129,7 @@
     sprite: Mobs/Animals/goose.rsi
     state: goose
   product: CrateNPCGoose
-  cost: 2100
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -139,7 +139,7 @@
     sprite: Mobs/Animals/gorilla.rsi
     state: icon
   product: CrateNPCGorilla
-  cost: 1100
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -149,7 +149,7 @@
     sprite: Objects/Misc/monkeycube.rsi
     state: box
   product: CrateNPCMonkeyCube
-  cost: 2000
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -159,7 +159,7 @@
     sprite: Objects/Misc/monkeycube.rsi
     state: box_kobold
   product: CrateNPCKoboldCube
-  cost: 2000
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -167,9 +167,9 @@
   id: LivestockMouse
   icon:
     sprite: Mobs/Animals/mouse.rsi
-    state: icon-0
+    state: icon-65
   product: CrateNPCMouse
-  cost: 4400
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -179,7 +179,7 @@
     sprite: Mobs/Animals/parrot.rsi
     state: parrot
   product: CrateNPCParrot
-  cost: 3000
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -189,7 +189,7 @@
     sprite: Mobs/Animals/penguin.rsi
     state: penguin
   product: CrateNPCPenguin
-  cost: 2100
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -199,7 +199,7 @@
     sprite: Mobs/Animals/pig.rsi
     state: pig
   product: CrateNPCPig
-  cost: 1100
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -209,7 +209,7 @@
     sprite: Mobs/Animals/snake.rsi
     state: snake
   product: CrateNPCSnake
-  cost: 3000
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -217,9 +217,9 @@
   id: LivestockHamster
   icon:
     sprite: Mobs/Animals/hamster.rsi
-    state: icon-0
+    state: icon-65
   product: CrateNPCHamster
-  cost: 2800
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -229,7 +229,7 @@
     sprite: Mobs/Animals/lizard.rsi
     state: lizard
   product: CrateNPCLizard
-  cost: 1100
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -239,7 +239,7 @@
     sprite: Mobs/Animals/kangaroo.rsi
     state: kangaroo
   product: CrateNPCKangaroo
-  cost: 2800
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -249,6 +249,6 @@
     sprite: Mobs/Animals/mothroach/mothroach.rsi
     state: mothroach
   product: CrateNPCMothroach
-  cost: 5000
+  cost: 65
   category: cargoproduct-category-name-livestock
   group: market

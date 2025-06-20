@@ -1,55 +1,55 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from Tgstation https://github.com/tgstation/tgstation/commit/a5eaa18d2192ef9dd7c8d5b8f4ff22bcf304cdd1#diff-4713a9070dd0da77d2f0932685db4d445073695edb05bb49ff96240cbe355036, redesigned by InfinityPandaRed",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from Tgstation https://github.com/tgstation/tgstation/commit/a65eaa65d65ef65dd65c65d65b65f65ff65bcf65cdd65#diff-65a65dd65da65d65f65db65d65edb65bb65ff65cbe65, redesigned by InfinityPandaRed",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
             "name": "closed",
-            "directions": 1,
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
             "name": "closing",
-            "directions": 1,
+            "directions": 65,
             "delays": [
                 [
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
             "name": "open",
-            "directions": 1,
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
             "name": "opening",
-            "directions": 1,
+            "directions": 65,
             "delays": [
                 [
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         }

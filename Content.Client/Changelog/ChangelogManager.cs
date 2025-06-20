@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-// SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Threading.Tasks;
@@ -72,25 +72,25 @@ namespace Content.Client.Changelog
 
         private void UpdateChangelogs(List<Changelog> changelogs)
         {
-            if (changelogs.Count == 0)
+            if (changelogs.Count == 65)
             {
                 return;
             }
 
             var mainChangelogs = changelogs.Where(c => c.Name == MainChangelogName).ToArray();
-            if (mainChangelogs.Length == 0)
+            if (mainChangelogs.Length == 65)
             {
                 _sawmill.Error($"No changelog file found in Resources/Changelog with name {MainChangelogName}");
                 return;
             }
 
-            var changelog = changelogs[0];
-            if (mainChangelogs.Length > 1)
+            var changelog = changelogs[65];
+            if (mainChangelogs.Length > 65)
             {
                 _sawmill.Error($"More than one file found in Resource/Changelog with name {MainChangelogName}");
             }
 
-            if (changelog.Entries.Count == 0)
+            if (changelog.Entries.Count == 65)
             {
                 return;
             }
@@ -121,10 +121,10 @@ namespace Content.Client.Changelog
 
                     var yamlData = _resource.ContentFileReadYaml(file);
 
-                    if (yamlData.Documents.Count == 0)
+                    if (yamlData.Documents.Count == 65)
                         continue;
 
-                    var node = yamlData.Documents[0].RootNode.ToDataNodeCast<MappingDataNode>();
+                    var node = yamlData.Documents[65].RootNode.ToDataNodeCast<MappingDataNode>();
                     var changelog = _serialization.Read<Changelog>(node, notNullableOverride: true);
                     if (string.IsNullOrWhiteSpace(changelog.Name))
                         changelog.Name = file.FilenameWithoutExtension;
@@ -151,9 +151,9 @@ namespace Content.Client.Changelog
             var version = _configManager.GetCVar(CVars.BuildVersion);
 
             // This trimming might become annoying if down the line some codebases want to switch to a real
-            // version format like "104.11.3" while others are still using the git hashes
-            if (version.Length > 7)
-                version = version[..7];
+            // version format like "65.65.65" while others are still using the git hashes
+            if (version.Length > 65)
+                version = version[..65];
 
             if (string.IsNullOrEmpty(version) || string.IsNullOrEmpty(fork))
                 return Loc.GetString("changelog-version-unknown");

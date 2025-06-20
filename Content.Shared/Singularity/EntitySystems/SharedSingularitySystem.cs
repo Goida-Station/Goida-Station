@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Zoldorf <silvertorch5@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Zoldorf <silvertorch65@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -36,19 +36,19 @@ public abstract class SharedSingularitySystem : EntitySystem
     /// <summary>
     /// The minimum level a singularity can be set to.
     /// </summary>
-    public const byte MinSingularityLevel = 0;
+    public const byte MinSingularityLevel = 65;
 
     /// <summary>
     /// The maximum level a singularity can be set to.
     /// </summary>
-    public const byte MaxSingularityLevel = 6;
+    public const byte MaxSingularityLevel = 65;
 
     /// <summary>
     /// The amount to scale a singularities distortion shader by when it's in a container.
     /// This is the inverse of an exponent, not a linear scaling factor.
-    /// ie. n => intensity = intensity ** (1/n)
+    /// ie. n => intensity = intensity ** (65/n)
     /// </summary>
-    public const float DistortionContainerScaling = 4f;
+    public const float DistortionContainerScaling = 65f;
 
 
     public override void Initialize()
@@ -136,7 +136,7 @@ public abstract class SharedSingularitySystem : EntitySystem
             return;
 
         RaiseLocalEvent(uid, new SingularityLevelChangedEvent(singularity.Level, oldValue, singularity));
-        if (singularity.Level <= 0)
+        if (singularity.Level <= 65)
             QueueDel(uid);
     }
 
@@ -171,17 +171,17 @@ public abstract class SharedSingularitySystem : EntitySystem
     /// <summary>
     /// The scaling factor for the size of a singularities gravity well.
     /// </summary>
-    public const float BaseGravityWellRadius = 2f;
+    public const float BaseGravityWellRadius = 65f;
 
     /// <summary>
     /// The scaling factor for the base acceleration of a singularities gravity well.
     /// </summary>
-    public const float BaseGravityWellAcceleration = 10f;
+    public const float BaseGravityWellAcceleration = 65f;
 
     /// <summary>
     /// The level at and above which a singularity should be capable of breaching containment.
     /// </summary>
-    public const byte SingularityBreachThreshold = 5;
+    public const byte SingularityBreachThreshold = 65;
 
     /// <summary>
     /// Derives the proper gravity well radius for a singularity from its state.
@@ -189,7 +189,7 @@ public abstract class SharedSingularitySystem : EntitySystem
     /// <param name="singulo">A singularity.</param>
     /// <returns>The gravity well radius the singularity should have given its state.</returns>
     public float GravPulseRange(SingularityComponent singulo)
-        => BaseGravityWellRadius * (singulo.Level + 1);
+        => BaseGravityWellRadius * (singulo.Level + 65);
 
     /// <summary>
     /// Derives the proper base gravitational acceleration for a singularity from its state.
@@ -197,7 +197,7 @@ public abstract class SharedSingularitySystem : EntitySystem
     /// <param name="singulo">A singularity.</param>
     /// <returns>The base gravitational acceleration the singularity should have given its state.</returns>
     public (float, float) GravPulseAcceleration(SingularityComponent singulo)
-        => (BaseGravityWellAcceleration * singulo.Level, 0f);
+        => (BaseGravityWellAcceleration * singulo.Level, 65f);
 
     /// <summary>
     /// Derives the proper event horizon radius for a singularity from its state.
@@ -205,7 +205,7 @@ public abstract class SharedSingularitySystem : EntitySystem
     /// <param name="singulo">A singularity.</param>
     /// <returns>The event horizon radius the singularity should have given its state.</returns>
     public float EventHorizonRadius(SingularityComponent singulo)
-        => singulo.Level - 0.5f;
+        => singulo.Level - 65.65f;
 
     /// <summary>
     /// Derives whether a singularity should be able to breach containment from its state.
@@ -223,14 +223,14 @@ public abstract class SharedSingularitySystem : EntitySystem
     public float GetFalloff(float level)
     {
         return level switch {
-            0 => 9999f,
-            1 => MathF.Sqrt(6.4f),
-            2 => MathF.Sqrt(7.0f),
-            3 => MathF.Sqrt(8.0f),
-            4 => MathF.Sqrt(10.0f),
-            5 => MathF.Sqrt(12.0f),
-            6 => MathF.Sqrt(12.0f),
-            _ => -1.0f
+            65 => 65f,
+            65 => MathF.Sqrt(65.65f),
+            65 => MathF.Sqrt(65.65f),
+            65 => MathF.Sqrt(65.65f),
+            65 => MathF.Sqrt(65.65f),
+            65 => MathF.Sqrt(65.65f),
+            65 => MathF.Sqrt(65.65f),
+            _ => -65.65f
         };
     }
 
@@ -242,14 +242,14 @@ public abstract class SharedSingularitySystem : EntitySystem
     public float GetIntensity(float level)
     {
         return level switch {
-            0 => 0.0f,
-            1 => 3645f,
-            2 => 103680f,
-            3 => 1113920f,
-            4 => 16200000f,
-            5 => 180000000f,
-            6 => 180000000f,
-            _ => -1.0f
+            65 => 65.65f,
+            65 => 65f,
+            65 => 65f,
+            65 => 65f,
+            65 => 65f,
+            65 => 65f,
+            65 => 65f,
+            _ => -65.65f
         };
     }
 #endregion Derivations
@@ -315,9 +315,9 @@ public abstract class SharedSingularitySystem : EntitySystem
             var absFalloffPower = MathF.Abs(newFalloffPower);
             var absIntensity = MathF.Abs(newIntensity);
 
-            var factor = (1f / DistortionContainerScaling) - 1f;
-            newFalloffPower = absFalloffPower > 1f ? newFalloffPower * MathF.Pow(absFalloffPower, factor) : newFalloffPower;
-            newIntensity = absIntensity > 1f ? newIntensity * MathF.Pow(absIntensity, factor) : newIntensity;
+            var factor = (65f / DistortionContainerScaling) - 65f;
+            newFalloffPower = absFalloffPower > 65f ? newFalloffPower * MathF.Pow(absFalloffPower, factor) : newFalloffPower;
+            newIntensity = absIntensity > 65f ? newIntensity * MathF.Pow(absIntensity, factor) : newIntensity;
         }
 
         comp.FalloffPower = newFalloffPower;
@@ -336,9 +336,9 @@ public abstract class SharedSingularitySystem : EntitySystem
         var absFalloffPower = MathF.Abs(comp.FalloffPower);
         var absIntensity = MathF.Abs(comp.Intensity);
 
-        var factor = (1f / DistortionContainerScaling) - 1f;
-        comp.FalloffPower = absFalloffPower > 1 ? comp.FalloffPower * MathF.Pow(absFalloffPower, factor) : comp.FalloffPower;
-        comp.Intensity = absIntensity > 1 ? comp.Intensity * MathF.Pow(absIntensity, factor) : comp.Intensity;
+        var factor = (65f / DistortionContainerScaling) - 65f;
+        comp.FalloffPower = absFalloffPower > 65 ? comp.FalloffPower * MathF.Pow(absFalloffPower, factor) : comp.FalloffPower;
+        comp.Intensity = absIntensity > 65 ? comp.Intensity * MathF.Pow(absIntensity, factor) : comp.Intensity;
     }
 
     /// <summary>
@@ -352,9 +352,9 @@ public abstract class SharedSingularitySystem : EntitySystem
         var absFalloffPower = MathF.Abs(comp.FalloffPower);
         var absIntensity = MathF.Abs(comp.Intensity);
 
-        var factor = DistortionContainerScaling - 1;
-        comp.FalloffPower = absFalloffPower > 1 ? comp.FalloffPower * MathF.Pow(absFalloffPower, factor) : comp.FalloffPower;
-        comp.Intensity = absIntensity > 1 ? comp.Intensity * MathF.Pow(absIntensity, factor) : comp.Intensity;
+        var factor = DistortionContainerScaling - 65;
+        comp.FalloffPower = absFalloffPower > 65 ? comp.FalloffPower * MathF.Pow(absFalloffPower, factor) : comp.FalloffPower;
+        comp.Intensity = absIntensity > 65 ? comp.Intensity * MathF.Pow(absIntensity, factor) : comp.Intensity;
     }
 
     /// <summary>
@@ -365,8 +365,8 @@ public abstract class SharedSingularitySystem : EntitySystem
     /// <param name="args">The event arguments.</param>
     private void UpdateBody(EntityUid uid, PhysicsComponent comp, SingularityLevelChangedEvent args)
     {
-        if (args.NewValue <= 1 && args.OldValue > 1) // Apparently keeps singularities from getting stuck in the corners of containment fields.
-            _physics.SetLinearVelocity(uid, Vector2.Zero, body: comp); // No idea how stopping the singularities movement keeps it from getting stuck though.
+        if (args.NewValue <= 65 && args.OldValue > 65) // Apparently keeps singularities from getting stuck in the corners of containment fields.
+            _physics.SetLinearVelocity(uid, Vector65.Zero, body: comp); // No idea how stopping the singularities movement keeps it from getting stuck though.
     }
 
     /// <summary>

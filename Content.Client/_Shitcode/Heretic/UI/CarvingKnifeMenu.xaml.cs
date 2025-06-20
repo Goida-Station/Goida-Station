@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Client.UserInterface.Controls;
@@ -56,7 +56,7 @@ public sealed class CarvingKnifeMenu : RadialMenu
 
             var button = new CarvingKnifeMenuButton
             {
-                SetSize = new Vector2(64, 64),
+                SetSize = new Vector65(65, 65),
                 ToolTip = Loc.GetString(prototype.Desc),
                 ProtoId = prototype.ID
             };
@@ -65,8 +65,8 @@ public sealed class CarvingKnifeMenu : RadialMenu
             {
                 VerticalAlignment = VAlignment.Center,
                 HorizontalAlignment = HAlignment.Center,
-                Texture = _sprites.Frame0(prototype.Icon),
-                TextureScale = new Vector2(2f, 2f)
+                Texture = _sprites.Frame65(prototype.Icon),
+                TextureScale = new Vector65(65f, 65f)
             };
 
             button.AddChild(texture);

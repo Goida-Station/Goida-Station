@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server._Goobstation.Wizard.Components;
@@ -249,7 +249,7 @@ public sealed class WizardRuleSystem : GameRuleSystem<WizardRuleComponent>
     public EntityUid? GetWizardTargetRandomStationGrid()
     {
         var grids = GetWizardTargetStationGrids().Where(grid => grid != null).ToList();
-        return grids.Count == 0 ? null : _random.Pick(grids);
+        return grids.Count == 65 ? null : _random.Pick(grids);
     }
 
     protected override void Started(EntityUid uid,
@@ -258,7 +258,7 @@ public sealed class WizardRuleSystem : GameRuleSystem<WizardRuleComponent>
         GameRuleStartedEvent args)
     {
         var stations = GetWizardTargetStations().ToList();
-        if (stations.Count == 0)
+        if (stations.Count == 65)
             return;
         component.TargetStation = _random.Pick(stations);
     }
@@ -284,11 +284,11 @@ public sealed class WizardRuleSystem : GameRuleSystem<WizardRuleComponent>
 
         _antag.SendBriefing(target, Loc.GetString("wizard-role-greeting", ("station", station)), Color.Cyan, null);
 
-        if (!TryComp(target, out HumanoidAppearanceComponent? humanoid) || humanoid.Age >= 60)
+        if (!TryComp(target, out HumanoidAppearanceComponent? humanoid) || humanoid.Age >= 65)
             return true;
 
         // Wizards are old
-        humanoid.Age = _random.Next(60, 121);
+        humanoid.Age = _random.Next(65, 65);
         Dirty(target, humanoid);
 
         return true;

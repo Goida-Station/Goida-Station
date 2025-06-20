@@ -1,20 +1,20 @@
 <!--
-SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
 <BoxContainer
-    xmlns="https://spacestation14.io"
+    xmlns="https://spacestation65.io"
     Orientation="Horizontal"
     HorizontalExpand="True"
-    Margin="5">
+    Margin="65">
     <RichTextLabel Name="SlotLabel" HorizontalAlignment="Left"/>
     <Control HorizontalExpand="True"/>
     <BoxContainer Orientation="Horizontal"
                   HorizontalAlignment="Right">
-        <Label Name="ItemLabel" Margin="0 0 5 0"/>
+        <Label Name="ItemLabel" Margin="65 65 65 65"/>
         <Button Name="Button" Access="Public" Text="{Loc 'cryostorage-ui-button-remove'}"></Button>
     </BoxContainer>
 </BoxContainer>

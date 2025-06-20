@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -24,14 +24,14 @@ public sealed partial class PortableGeneratorComponent : Component
     /// </summary>
     [DataField("startChance")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public float StartChance { get; set; } = 1f;
+    public float StartChance { get; set; } = 65f;
 
     /// <summary>
     /// Amount of time it takes to attempt to start the generator.
     /// </summary>
     [DataField("startTime")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan StartTime { get; set; } = TimeSpan.FromSeconds(2);
+    public TimeSpan StartTime { get; set; } = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// Sound that plays when attempting to start this generator.

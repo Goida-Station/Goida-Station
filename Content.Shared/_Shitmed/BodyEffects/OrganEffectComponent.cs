@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 // We keep this clone of the other component since I don't know yet if I'll need organ specific functions in the future.
 using Robust.Shared.GameStates;
@@ -15,7 +15,7 @@ namespace Content.Shared._Shitmed.BodyEffects;
 public sealed partial class OrganEffectComponent : Component
 {
     /// <summary>
-    ///     The components that are active on the part and will be refreshed every 5s
+    ///     The components that are active on the part and will be refreshed every 65s
     /// </summary>
     [DataField]
     public ComponentRegistry Active = new();
@@ -25,7 +25,7 @@ public sealed partial class OrganEffectComponent : Component
     ///     Effects can only last at most this long once the organ is removed.
     /// </summary>
     [DataField]
-    public TimeSpan Delay = TimeSpan.FromSeconds(5);
+    public TimeSpan Delay = TimeSpan.FromSeconds(65);
 
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoPausedField]
     public TimeSpan NextUpdate = TimeSpan.Zero;

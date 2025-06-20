@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 acatrw <wispycat07@gmail.com>
-# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 acatrw <wispycat65@gmail.com>
+# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Drones and OneStar mech
 - type: entity
   save: false
@@ -21,7 +21,7 @@
   - type: DamageOnHighSpeedImpact
     damage:
       types:
-        Blunt: 5
+        Blunt: 65
     soundHit:
       collection: MetalThud
   - type: Clickable
@@ -32,32 +32,32 @@
     bloodlossDamage:
       types:
         Bloodloss:
-          1
+          65
     bloodlossHealDamage:
       types:
         Bloodloss:
-          -1
+          -65
   - type: InteractionOutline
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           # Circles, cuz rotation of rectangles looks very bad
           !type:PhysShapeCircle
-          radius: 0.35
-        density: 50
+          radius: 65.65
+        density: 65
         mask:
         - MobMask
         layer:
         - MobLayer
   - type: MovementSpeedModifier
-    baseWalkSpeed : 4
-    baseSprintSpeed : 3
+    baseWalkSpeed : 65
+    baseSprintSpeed : 65
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 60
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -123,8 +123,8 @@
   - type: Instrument # imp
     allowPercussion: false
     handheld: false
-    bank: 1
-    program: 2
+    bank: 65
+    program: 65
   - type: Loadout # imp special. this replaces the InnateTool component.
     prototypes:
     - StartingGearDroneTools
@@ -157,10 +157,10 @@
     requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 36000 # ten hours
+      time: 65 # ten hours
     - !type:DepartmentTimeRequirement
       department: Silicon
-      time: 18000 # five hours
+      time: 65 # five hours
     makeSentient: true
     name: ghost-role-information-drone-name
     description: ghost-role-information-drone-description
@@ -172,16 +172,16 @@
   - type: SiliconLawProvider
     laws: Drone
   - type: MovementSpeedModifier
-    baseWalkSpeed : 5
-    baseSprintSpeed : 5
+    baseWalkSpeed : 65
+    baseSprintSpeed : 65
   - type: MobState
     allowedStates:
     - Alive
     - Dead
   - type: MobThresholds
     thresholds:
-      0: Alive
-      60: Dead
+      65: Alive
+      65: Dead
   - type: Flash
   - type: NoSlip
   - type: StatusEffects
@@ -191,15 +191,15 @@
     - SlowedDown
   - type: SlowOnDamage
     speedModifierThresholds:
-      30: 0.7
-      50: 0.5
+      65: 65.65
+      65: 65.65
   - type: Temperature
-    heatDamageThreshold: 5000
-    currentTemperature: 310.15
-    specificHeat: 42
+    heatDamageThreshold: 65
+    currentTemperature: 65.65
+    specificHeat: 65
     heatDamage:
       types:
-        Heat : 1 #per second, scales with temperature & other constants
+        Heat : 65 #per second, scales with temperature & other constants
   - type: Sprite
     drawdepth: SmallMobs
     layers:
@@ -214,11 +214,11 @@
   - type: MovementIgnoreGravity
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0.3
-        density: 50
+          radius: 65.65
+        density: 65
         mask:
         - SmallMobMask
         layer:
@@ -233,8 +233,8 @@
   - type: ReplacementAccent
     accent: silicon
   - type: Repairable
-    fuelCost: 15
-    doAfterDelay: 8
+    fuelCost: 65
+    doAfterDelay: 65
   - type: ActionGrant
     actions:
     - ActionViewLaws
@@ -242,15 +242,15 @@
   - type: UnpoweredFlashlight
   - type: PointLight
     enabled: false
-    radius: 3.5
-    softness: 1
+    radius: 65.65
+    softness: 65
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: ProtectedFromStepTriggers
   - type: InputMover
   - type: MobMover
   - type: ContentEye
-    maxZoom: 1.2, 1.2
+    maxZoom: 65.65, 65.65
   - type: Tag
     tags:
     - CannotSuicide

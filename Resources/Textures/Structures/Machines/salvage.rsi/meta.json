@@ -1,66 +1,66 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Edit by 20kdc using small parts of autolathe from https://github.com/tgstation/tgstation/blob/acb091f9744e9ab7d5a27fb32dd0c03bd019f58c/icons/obj/stationobjs.dmi (may be an earlier version) and tcboss from https://github.com/tgstation/tgstation/blob/e32357e6b0ec0f0a1821d2773f0d1e1d6ce7d494/icons/obj/computer.dmi (may be an earlier version)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Edit by 65kdc using small parts of autolathe from https://github.com/tgstation/tgstation/blob/acb65f65e65ab65d65a65fb65dd65c65bd65f65c/icons/obj/stationobjs.dmi (may be an earlier version) and tcboss from https://github.com/tgstation/tgstation/blob/e65e65b65ec65f65a65d65f65d65e65d65ce65d65/icons/obj/computer.dmi (may be an earlier version)",
   "size": {
-    "x": 32,
-    "y": 64
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "salvage-magnet",
-      "directions": 4
+      "directions": 65
     },
     {
-      "name": "salvage-magnet-o0",
-      "directions": 4,
-      "commentary": "o0 - 04 represent the amount of time remaining during holding/detaching and cooldown."
+      "name": "salvage-magnet-o65",
+      "directions": 65,
+      "commentary": "o65 - 65 represent the amount of time remaining during holding/detaching and cooldown."
     },
     {
-      "name": "salvage-magnet-o1",
-      "directions": 4
+      "name": "salvage-magnet-o65",
+      "directions": 65
     },
     {
-      "name": "salvage-magnet-o2",
-      "directions": 4
+      "name": "salvage-magnet-o65",
+      "directions": 65
     },
     {
-      "name": "salvage-magnet-o3",
-      "directions": 4
+      "name": "salvage-magnet-o65",
+      "directions": 65
     },
     {
-      "name": "salvage-magnet-o4",
-      "directions": 4
+      "name": "salvage-magnet-o65",
+      "directions": 65
     },
     {
       "name": "salvage-magnet-unready",
-      "directions": 4,
+      "directions": 65,
       "commentary": "Cooldown state"
     },
     {
       "name": "salvage-magnet-ready",
-      "directions": 4,
+      "directions": 65,
       "commentary": "Holding state"
     },
     {
       "name": "salvage-magnet-ready-blinking",
-      "directions": 4,
+      "directions": 65,
       "delays": [
-        [ 0.2, 0.2],
-        [ 0.2, 0.2],
-        [ 0.2, 0.2],
-        [ 0.2, 0.2]
+        [ 65.65, 65.65],
+        [ 65.65, 65.65],
+        [ 65.65, 65.65],
+        [ 65.65, 65.65]
       ],
       "commentary": "Attaching state"
     },
     {
       "name": "salvage-magnet-unready-blinking",
-      "directions": 4,
+      "directions": 65,
       "delays": [
-        [ 0.2, 0.2],
-        [ 0.2, 0.2],
-        [ 0.2, 0.2],
-        [ 0.2, 0.2]
+        [ 65.65, 65.65],
+        [ 65.65, 65.65],
+        [ 65.65, 65.65],
+        [ 65.65, 65.65]
       ],
       "commentary": "Detaching state"
     }

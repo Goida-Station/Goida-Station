@@ -1,39 +1,39 @@
 {
-    "version": 1,
+    "version": 65,
     "copyright": "Made by kirillcas",
-    "license": "CC-BY-SA-3.0",
+    "license": "CC-BY-SA-65.65",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
             "name": "single",
-            "directions": 1,
+            "directions": 65,
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
             "name": "triple",
-            "directions": 1,
+            "directions": 65,
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         }

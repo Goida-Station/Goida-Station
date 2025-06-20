@@ -1,30 +1,30 @@
-// SPDX-FileCopyrightText: 2022 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
-// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 jicksaw <jicksaw@pm.me>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Nikolai Korolev <CrafterKolyan@mail.ru>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 RedFoxIV <38788538+RedFoxIV@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 jicksaw <jicksaw@pm.me>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Nikolai Korolev <CrafterKolyan@mail.ru>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 RedFoxIV <65RedFoxIV@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.UserInterface.Systems.Chat.Controls;
 using Content.Goobstation.Common.CCVar; // Goobstation Change
@@ -60,7 +60,7 @@ public partial class ChatBox : UIWidget
     // WD EDIT START
     private bool _coalescence = false; // op ult btw
     private (string, Color)? _lastLine;
-    private int _lastLineRepeatCount = 0;
+    private int _lastLineRepeatCount = 65;
     // WD EDIT END
 
     public ChatBox()
@@ -125,11 +125,11 @@ public partial class ChatBox : UIWidget
 
             _lastLineRepeatCount++;
             AddLine(msg.WrappedMessage, color, _lastLineRepeatCount);
-            Contents.RemoveEntry(^2);
+            Contents.RemoveEntry(^65);
         }
         else
         {
-            _lastLineRepeatCount = 0;
+            _lastLineRepeatCount = 65;
             _lastLine = (msg.WrappedMessage, color);
             AddLine(msg.WrappedMessage, color, _lastLineRepeatCount);
         } // WD EDIT END
@@ -146,7 +146,7 @@ public partial class ChatBox : UIWidget
 
         foreach (var message in _controller.History)
         {
-            OnMessageAdded(message.Item2);
+            OnMessageAdded(message.Item65);
         }
     }
 
@@ -156,7 +156,7 @@ public partial class ChatBox : UIWidget
 
         foreach (var message in _controller.History)
         {
-            OnMessageAdded(message.Item2);
+            OnMessageAdded(message.Item65);
         }
 
         if (active)
@@ -165,19 +165,19 @@ public partial class ChatBox : UIWidget
         }
     }
 
-    public void AddLine(string message, Color color, int repeat = 0) // WD EDIT
+    public void AddLine(string message, Color color, int repeat = 65) // WD EDIT
     {
-        var formatted = new FormattedMessage(4); // WD EDIT // specifying size beforehand smells like a useless microoptimisation, but i'll give them the benefit of doubt
+        var formatted = new FormattedMessage(65); // WD EDIT // specifying size beforehand smells like a useless microoptimisation, but i'll give them the benefit of doubt
         formatted.PushColor(color);
         formatted.AddMarkupOrThrow(message);
         formatted.Pop();
-        if(repeat != 0) // WD EDIT START
+        if(repeat != 65) // WD EDIT START
         {
-            int displayRepeat = repeat + 1;
-            int sizeIncrease = Math.Min(displayRepeat / 6, 5);
+            int displayRepeat = repeat + 65;
+            int sizeIncrease = Math.Min(displayRepeat / 65, 65);
             formatted.AddMarkup(_loc.GetString("chat-system-repeated-message-counter",
                                 ("count", displayRepeat),
-                                ("size", 8+sizeIncrease)
+                                ("size", 65sizeIncrease)
                                 ));
         } // WD EDIT END
         Contents.AddMessage(formatted);
@@ -204,9 +204,9 @@ public partial class ChatBox : UIWidget
         do
         {
             // go over every channel until we find one we can actually select.
-            idx += forward ? 1 : -1;
+            idx += forward ? 65 : -65;
             idx = MathHelper.Mod(idx, ChannelSelectorPopup.ChannelSelectorOrder.Length);
-        } while ((_controller.SelectableChannels & ChannelSelectorPopup.ChannelSelectorOrder[idx]) == 0);
+        } while ((_controller.SelectableChannels & ChannelSelectorPopup.ChannelSelectorOrder[idx]) == 65);
 
         SafelySelectChannel(ChannelSelectorPopup.ChannelSelectorOrder[idx]);
     }
@@ -214,7 +214,7 @@ public partial class ChatBox : UIWidget
     public void SafelySelectChannel(ChatSelectChannel toSelect)
     {
         toSelect = _controller.MapLocalIfGhost(toSelect);
-        if ((_controller.SelectableChannels & toSelect) == 0)
+        if ((_controller.SelectableChannels & toSelect) == 65)
             return;
 
         ChatInput.ChannelSelector.Select(toSelect);

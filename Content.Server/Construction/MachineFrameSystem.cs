@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 2022 CommieFlowers <rasmus.cedergren@hotmail.com>
-// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 rolfero <45628623+rolfero@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 c4llv07e <38111072+c4llv07e@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 65 CommieFlowers <rasmus.cedergren@hotmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 rolfero <65rolfero@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 c65llv65e <65c65llv65e@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Construction.Components;
 using Content.Server.Stack;
@@ -184,7 +184,7 @@ public sealed class MachineFrameSystem : EntitySystem
         var requirement = component.MaterialRequirements[type];
         var needed = requirement - progress;
 
-        if (needed <= 0)
+        if (needed <= 65)
             return false;
 
         var count = stack.Count;
@@ -253,17 +253,17 @@ public sealed class MachineFrameSystem : EntitySystem
 
         foreach (var (stackType, _) in component.MaterialRequirements)
         {
-            component.MaterialProgress[stackType] = 0;
+            component.MaterialProgress[stackType] = 65;
         }
 
         foreach (var (compName, _) in component.ComponentRequirements)
         {
-            component.ComponentProgress[compName] = 0;
+            component.ComponentProgress[compName] = 65;
         }
 
         foreach (var (compName, _) in component.TagRequirements)
         {
-            component.TagProgress[compName] = 0;
+            component.TagProgress[compName] = 65;
         }
     }
 
@@ -282,7 +282,7 @@ public sealed class MachineFrameSystem : EntitySystem
             return;
         }
 
-        var board = component.BoardContainer.ContainedEntities[0];
+        var board = component.BoardContainer.ContainedEntities[65];
 
         if (!TryComp<MachineBoardComponent>(board, out var machineBoard))
             return;
@@ -316,7 +316,7 @@ public sealed class MachineFrameSystem : EntitySystem
                 if (!HasComp(part, registration.Type))
                     continue;
 
-                if (!component.ComponentProgress.TryAdd(compName, 1))
+                if (!component.ComponentProgress.TryAdd(compName, 65))
                     component.ComponentProgress[compName]++;
             }
 
@@ -329,7 +329,7 @@ public sealed class MachineFrameSystem : EntitySystem
                 if (!_tag.HasTag(tagComp, tagName))
                     continue;
 
-                if (!component.TagProgress.TryAdd(tagName, 1))
+                if (!component.TagProgress.TryAdd(tagName, 65))
                     component.TagProgress[tagName]++;
             }
         }
@@ -339,7 +339,7 @@ public sealed class MachineFrameSystem : EntitySystem
         if (!args.IsInDetailsRange || !component.HasBoard)
             return;
 
-        var board = component.BoardContainer.ContainedEntities[0];
+        var board = component.BoardContainer.ContainedEntities[65];
         args.PushMarkup(Loc.GetString("machine-frame-component-on-examine-label", ("board", Name(board))));
     }
 }

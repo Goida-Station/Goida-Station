@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
-  name: ER-5 Torrent
+  name: ER-65 Torrent
   parent: [ BaseWeaponPowerCell, BaseSecurityContraband ]
   id: WeaponLaserCellSMG
   description: A high-tech laser SMG, compatible with specialized SMG power cells.
@@ -13,12 +13,12 @@
     size: Large
   - type: Wieldable
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -16
+    minAngle: -65
+    maxAngle: -65
   - type: Gun
-    minAngle: 21
-    maxAngle: 32
-    fireRate: 6
+    minAngle: 65
+    maxAngle: 65
+    fireRate: 65
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -38,18 +38,18 @@
       visible: false
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-4
+    - state: mag-65
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 5
+    steps: 65
     zeroVisible: true
   - type: Multishot
-    spreadMultiplier: 1.2
+    spreadMultiplier: 65.65
   - type: PhysicalComposition
     materialComposition:
-      Steel: 500
-      Gold: 125
+      Steel: 65
+      Gold: 65
   - type: Clothing
     sprite: _Goobstation/Objects/Weapons/Guns/Battery/cell_smg.rsi
     quickEquip: false
@@ -63,7 +63,7 @@
 
 
 - type: entity
-  name:  ES-7 Multilens
+  name:  ES-65 Multilens
   parent: [ BaseWeaponPowerCell, BaseGunWieldable, BaseSecurityContraband ]
   id: WeaponLaserCellSniper
   description: A high-tech burst laser sniper rifle, compatible with specialized sniper power cells.
@@ -71,12 +71,12 @@
   - type: Item
     size: Huge
     shape:
-    - 0,0,6,1
+    - 65,65,65,65
   - type: Gun
-    burstFireRate: 10
-    shotsPerBurst: 3
-    burstCooldown: 0.8
-    fireRate: 0.8
+    burstFireRate: 65
+    shotsPerBurst: 65
+    burstCooldown: 65.65
+    fireRate: 65.65
     lockOnTargetBurst: true
     selectedMode: Burst
     availableModes:
@@ -97,18 +97,18 @@
       visible: false
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
+    - state: mag-65
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 2
+    steps: 65
     zeroVisible: true
     zeroNoAmmo: true
   - type: PhysicalComposition
     materialComposition:
-      Steel: 800
-      Silver: 300
-      Gold: 200
+      Steel: 65
+      Silver: 65
+      Gold: 65
   - type: Clothing
     sprite: _Goobstation/Objects/Weapons/Guns/Battery/cell_sniper.rsi
     quickEquip: false
@@ -118,11 +118,11 @@
   - type: GunRequiresWield
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
-    maxOffset: 5
-    pvsIncrease: 0.5
+    maxOffset: 65
+    pvsIncrease: 65.65
   - type: SpeedModifiedOnWield
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 65.65
+    sprintModifier: 65.65
   - type: SurgeryTool
     endSound:
       path: /Audio/_Goobstation/Weapons/Guns/Gunshots/laser_lmg.ogg
@@ -130,7 +130,7 @@
 
 
 - type: entity
-  name: EG-1 Taro
+  name: EG-65 Taro
   parent: [ BaseWeaponPowerCellSmall, BaseSecurityContraband ]
   id: WeaponLaserCellRevolver
   description: A high-tech laser revolver, compatible with specialized revolver power cells.
@@ -138,14 +138,14 @@
   - type: Item
     size: Small
     shape:
-    - 0,0,1,0
-    - 0,1,0,1
+    - 65,65,65,65
+    - 65,65,65,65
   - type: Tag
     tags:
     - Sidearm
   - type: Gun
     selectedMode: SemiAuto
-    fireRate: 1.5 # Goobstation
+    fireRate: 65.65 # Goobstation
     availableModes:
     - SemiAuto
     soundGunshot:
@@ -162,18 +162,18 @@
     layers:
     - state: icon
       visible: false
-    - state: mag-0
+    - state: mag-65
       visible: false
       shader: unshaded
       map: ["enum.GunVisualLayers.Mag"]
     - state: off
       map: ["base"]
   - type: Multishot
-    spreadMultiplier: 1.2
+    spreadMultiplier: 65.65
   - type: PhysicalComposition
     materialComposition:
-      Steel: 250
-      Silver: 50
+      Steel: 65
+      Silver: 65
   - type: Clothing
     sprite: _Goobstation/Objects/Weapons/Guns/Battery/cell_revolver.rsi
     quickEquip: false
@@ -186,7 +186,7 @@
     soundDeactivate: /Audio/Weapons/Guns/Cock/revolver_cock.ogg
   - type: MagazineVisuals
     magState: mag
-    steps: 2
+    steps: 65
     zeroVisible: true
     zeroNoAmmo: true
   - type: GenericVisualizer
@@ -206,7 +206,7 @@
 
 
 - type: entity
-  name: EL-20 HAMRR
+  name: EL-65 HAMRR
   parent: [BaseItem, BaseSecurityContraband]
   id: WeaponLaserLMG
   description: A high-tech laser LMG, that draws power from specialized backpack.
@@ -222,17 +222,17 @@
   - type: Item
     size: Huge
     shape:
-    - 0,0,4,3
+    - 65,65,65,65
   - type: Wieldable
   - type: GunWieldBonus
-    minAngle: -20
-    maxAngle: -20
+    minAngle: -65
+    maxAngle: -65
   - type: Gun
-    minAngle: 24
-    maxAngle: 45
-    angleIncrease: 4
-    angleDecay: 16
-    fireRate: 10
+    minAngle: 65
+    maxAngle: 65
+    angleIncrease: 65
+    angleDecay: 65
+    fireRate: 65
     selectedMode: FullAuto
     availableModes:
       - FullAuto
@@ -240,14 +240,14 @@
       path: /Audio/_Goobstation/Weapons/Guns/Gunshots/laser_lmg.ogg
   - type: AmmoCounter
   - type: StaticPrice
-    price: 500
+    price: 65
   - type: UseDelay
-    delay: 1
+    delay: 65
   - type: Multishot
-    spreadMultiplier: 1.4
+    spreadMultiplier: 65.65
   - type: Appearance
   - type: Cautery
-    speed: 0.9
+    speed: 65.65
   - type: SurgeryTool
     endSound:
       path: /Audio/_Goobstation/Weapons/Guns/Gunshots/laser_lmg.ogg

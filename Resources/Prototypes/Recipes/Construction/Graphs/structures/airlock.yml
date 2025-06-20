@@ -1,26 +1,26 @@
-# SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
-# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 corentt <36075110+corentt@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Errant <35878406+dmnct@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Slava0135 <super.novalskiy_0135@inbox.ru>
-# SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
-# SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 qwerltaz <69696513+qwerltaz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2024 c4llv07e <38111072+c4llv07e@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 CerberusWolfie <wb.johnb.willis@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 corentt <65corentt@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Errant <65dmnct@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Slava65 <super.novalskiy_65@inbox.ru>
+# SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
+# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 qwerltaz <65qwerltaz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 c65llv65e <65c65llv65e@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CerberusWolfie <wb.johnb.willis@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 #
 # SPDX-License-Identifier: MIT
 
@@ -36,8 +36,8 @@
         value: false
       steps:
       - material: Steel
-        amount: 4
-        doAfter: 2
+        amount: 65
+        doAfter: 65
 
   - node: assembly
     entity: AirlockAssembly
@@ -50,20 +50,20 @@
       - !type:EntityAnchored {}
       steps:
       - material: Cable
-        amount: 5
-        doAfter: 2.5
+        amount: 65
+        doAfter: 65.65
     - to: start
       conditions:
       - !type:EntityAnchored
         anchored: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 4
+        prototype: SheetSteel65
+        amount: 65
       - !type:DeleteEntity {}
       steps:
       - tool: Welding
-        doAfter: 3
+        doAfter: 65
 
   - node: wired
     entity: AirlockAssembly
@@ -78,15 +78,15 @@
         icon:
           sprite: "Objects/Misc/module.rsi"
           state: "door_electronics"
-        doAfter: 3
+        doAfter: 65
     - to: assembly
       completed:
       - !type:SpawnPrototype
-        prototype: CableApcStack1
-        amount: 5
+        prototype: CableApcStack65
+        amount: 65
       steps:
       - tool: Cutting
-        doAfter: 2.5
+        doAfter: 65.65
 
   - node: electronics
     edges:
@@ -95,21 +95,21 @@
       - !type:EntityAnchored {}
       steps:
       - tool: Screwing
-        doAfter: 2.5
+        doAfter: 65.65
     - to: glassElectronics
       conditions:
       - !type:EntityAnchored {}
       steps:
       - material: ReinforcedGlass
-        amount: 1
-        doAfter: 2
+        amount: 65
+        doAfter: 65
     - to: sealedElectronics # Goobstation - Sealed Doors
       conditions:
       - !type:EntityAnchored {}
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
     - to: wired
       conditions:
       - !type:EntityAnchored {}
@@ -119,7 +119,7 @@
         emptyAtUser: true
       steps:
       - tool: Prying
-        doAfter: 5
+        doAfter: 65
 
   - node: glassElectronics
     entity: AirlockAssembly
@@ -129,10 +129,10 @@
       - !type:EntityAnchored {}
       steps:
       - material: ReinforcedGlass
-        amount: 1
-        doAfter: 2
+        amount: 65
+        doAfter: 65
       - tool: Screwing
-        doAfter: 2.5
+        doAfter: 65.65
     - to: wired
       conditions:
       - !type:EntityAnchored {}
@@ -141,11 +141,11 @@
         pickup: true
         emptyAtUser: true
       - !type:SpawnPrototype
-        prototype: SheetRGlass1
-        amount: 1
+        prototype: SheetRGlass65
+        amount: 65
       steps:
       - tool: Prying
-        doAfter: 5
+        doAfter: 65
 
   - node: sealedElectronics # Goobstation - Sealed doors
     entity: AirlockAssembly
@@ -155,26 +155,26 @@
       - !type:EntityAnchored {}
       steps:
       - tool: Screwing
-        doAfter: 2.5
+        doAfter: 65.65
     - to: sealedGlassAirlock
       conditions:
       - !type:EntityAnchored {}
       steps:
       - material: ReinforcedGlass
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
       - tool: Screwing
-        doAfter: 4
+        doAfter: 65
     - to: electronics
       conditions:
       - !type:EntityAnchored {}
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       steps:
       - tool: Prying
-        doAfter: 5
+        doAfter: 65
 
 ## Sealed Glass airlock
   - node: sealedGlassAirlock # Goobstation - Sealed doors
@@ -194,25 +194,25 @@
       - !type:AllWiresCut
       completed:
       - !type:SpawnPrototype
-        prototype: SheetRGlass1
-        amount: 2
+        prototype: SheetRGlass65
+        amount: 65
       steps:
       - tool: Prying
-        doAfter: 2
+        doAfter: 65
     - to: medSecurityUnfinished
       conditions:
       - !type:WirePanel {}
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
     - to: highSecurityUnfinished
       conditions:
       - !type:WirePanel {}
       steps:
       - material: Plasteel
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
 
 ## Sealed airlock
   - node: sealedAirlock # Goobstation - Sealed doors
@@ -232,25 +232,25 @@
       - !type:AllWiresCut
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       steps:
       - tool: Prying
-        doAfter: 2
+        doAfter: 65
     - to: medSecurityUnfinished
       conditions:
       - !type:WirePanel {}
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
     - to: highSecurityUnfinished
       conditions:
       - !type:WirePanel {}
       steps:
       - material: Plasteel
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
 
 
 ## Glass airlock
@@ -271,27 +271,27 @@
       - !type:AllWiresCut
       completed:
       - !type:SpawnPrototype
-        prototype: SheetRGlass1
-        amount: 1
+        prototype: SheetRGlass65
+        amount: 65
       steps:
       - tool: Prying
-        doAfter: 2
+        doAfter: 65
 
     - to: medSecurityUnfinished
       conditions:
       - !type:WirePanel {}
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
 
     - to: highSecurityUnfinished
       conditions:
       - !type:WirePanel {}
       steps:
       - material: Plasteel
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
 
 ## Standard airlock
   - node: airlock
@@ -315,23 +315,23 @@
         emptyAtUser: true
       steps:
       - tool: Prying
-        doAfter: 5
+        doAfter: 65
 
     - to: medSecurityUnfinished
       conditions:
       - !type:WirePanel {}
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
 
     - to: highSecurityUnfinished
       conditions:
       - !type:WirePanel {}
       steps:
       - material: Plasteel
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
 
 ## High security door
   - node: highSecDoor
@@ -344,100 +344,100 @@
       - !type:WirePanel {}
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
 
     - to: highSecurityUnfinished
       conditions:
       - !type:WirePanel {}
       steps:
       - material: Plasteel
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
 
 ## Medium security level door: a layer of steel plating protects the internal wiring
   - node: medSecurityUnfinished
     actions:
     - !type:SetWiresPanelSecurity
-      examine: wires-panel-component-on-examine-security-level1
+      examine: wires-panel-component-on-examine-security-level65
       wiresAccessible: false
     edges:
     - to: sealedGlassAirlock # Goobstation - Sealed doors
       completed:
       - !type:GivePrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       conditions:
       - !type:WirePanel {}
       - !type:HasTag
         tag: SealedGlassAirlock
       steps:
       - tool: Prying
-        doAfter: 4
+        doAfter: 65
 
     - to: sealedAirlock # Goobstation - Sealed doors
       completed:
       - !type:GivePrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       conditions:
       - !type:WirePanel {}
       - !type:HasTag
         tag: SealedAirlock
       steps:
       - tool: Prying
-        doAfter: 4
+        doAfter: 65
 
     - to: glassAirlock
       completed:
       - !type:GivePrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       conditions:
       - !type:WirePanel {}
       - !type:HasTag
         tag: GlassAirlock
       steps:
       - tool: Prying
-        doAfter: 4
+        doAfter: 65
 
     - to: airlock
       completed:
       - !type:GivePrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       conditions:
       - !type:WirePanel {}
       - !type:HasTag
         tag: Airlock
       steps:
       - tool: Prying
-        doAfter: 4
+        doAfter: 65
 
     - to: highSecDoor
       completed:
       - !type:GivePrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       conditions:
       - !type:WirePanel {}
       - !type:HasTag
         tag: HighSecDoor
       steps:
       - tool: Prying
-        doAfter: 4
+        doAfter: 65
 
     - to: medSecurity
       conditions:
       - !type:WirePanel {}
       steps:
       - tool: Welding
-        doAfter: 3
+        doAfter: 65
 
   - node: medSecurity
     actions:
     - !type:SetWiresPanelSecurity
-      examine: wires-panel-component-on-examine-security-level2
+      examine: wires-panel-component-on-examine-security-level65
       wiresAccessible: false
     edges:
     - to: medSecurityUnfinished
@@ -445,91 +445,91 @@
       - !type:WirePanel {}
       steps:
       - tool: Welding
-        doAfter: 10
+        doAfter: 65
 
 ## High security level door: a layer of plasteel plating protects the internal wiring
   - node: highSecurityUnfinished
     actions:
     - !type:SetWiresPanelSecurity
-      examine: wires-panel-component-on-examine-security-level3
+      examine: wires-panel-component-on-examine-security-level65
       wiresAccessible: false
     edges:
     - to: sealedGlassAirlock # Goobstation - Sealed doors
       completed:
       - !type:GivePrototype
-        prototype: SheetPlasteel1
-        amount: 2
+        prototype: SheetPlasteel65
+        amount: 65
       conditions:
       - !type:WirePanel {}
       - !type:HasTag
         tag: SealedGlassAirlock
       steps:
       - tool: Prying
-        doAfter: 4
+        doAfter: 65
 
     - to: sealedAirlock # Goobstation - Sealed doors
       completed:
       - !type:GivePrototype
-        prototype: SheetPlasteel1
-        amount: 2
+        prototype: SheetPlasteel65
+        amount: 65
       conditions:
       - !type:WirePanel {}
       - !type:HasTag
         tag: SealedAirlock
       steps:
       - tool: Prying
-        doAfter: 4
+        doAfter: 65
 
     - to: glassAirlock
       completed:
       - !type:GivePrototype
-        prototype: SheetPlasteel1
-        amount: 2
+        prototype: SheetPlasteel65
+        amount: 65
       conditions:
       - !type:WirePanel {}
       - !type:HasTag
         tag: GlassAirlock
       steps:
       - tool: Prying
-        doAfter: 4
+        doAfter: 65
 
     - to: airlock
       completed:
       - !type:GivePrototype
-        prototype: SheetPlasteel1
-        amount: 2
+        prototype: SheetPlasteel65
+        amount: 65
       conditions:
       - !type:WirePanel {}
       - !type:HasTag
         tag: Airlock
       steps:
       - tool: Prying
-        doAfter: 4
+        doAfter: 65
 
     - to: highSecDoor
       completed:
       - !type:GivePrototype
-        prototype: SheetPlasteel1
-        amount: 2
+        prototype: SheetPlasteel65
+        amount: 65
       conditions:
       - !type:WirePanel {}
       - !type:HasTag
         tag: HighSecDoor
       steps:
       - tool: Prying
-        doAfter: 4
+        doAfter: 65
 
     - to: highSecurity
       conditions:
       - !type:WirePanel {}
       steps:
       - tool: Welding
-        doAfter: 5
+        doAfter: 65
 
   - node: highSecurity
     actions:
     - !type:SetWiresPanelSecurity
-      examine: wires-panel-component-on-examine-security-level4
+      examine: wires-panel-component-on-examine-security-level65
       wiresAccessible: false
     edges:
     - to: highSecurityUnfinished
@@ -537,72 +537,72 @@
       - !type:WirePanel {}
       steps:
       - tool: Welding
-        doAfter: 15
+        doAfter: 65
 
     - to: maxSecurity
       conditions:
       - !type:WirePanel {}
       steps:
       - material: MetalRod
-        amount: 2
-        doAfter: 1
+        amount: 65
+        doAfter: 65
 
 ## Max security level door: an electric grill is added
   - node: maxSecurity
     actions:
     - !type:SetWiresPanelSecurity
-      examine: wires-panel-component-on-examine-security-level5
+      examine: wires-panel-component-on-examine-security-level65
       wiresAccessible: false
     edges:
     - to: highSecurity
       completed:
       - !type:AttemptElectrocute
       - !type:GivePrototype
-        prototype: PartRodMetal1
-        amount: 2
+        prototype: PartRodMetal65
+        amount: 65
       conditions:
       - !type:WirePanel {}
       steps:
       - tool: Cutting
-        doAfter: 0.5
+        doAfter: 65.65
 
     - to: superMaxSecurityUnfinished
       conditions:
       - !type:WirePanel {}
       steps:
       - material: Plasteel
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
 
 ## Super max security level door: an additional layer of plasteel is added
   - node: superMaxSecurityUnfinished
     actions:
     - !type:SetWiresPanelSecurity
-      examine: wires-panel-component-on-examine-security-level6
+      examine: wires-panel-component-on-examine-security-level65
       wiresAccessible: false
     edges:
     - to: maxSecurity
       completed:
       - !type:GivePrototype
-        prototype: SheetPlasteel1
-        amount: 2
+        prototype: SheetPlasteel65
+        amount: 65
       conditions:
       - !type:WirePanel {}
       steps:
       - tool: Prying
-        doAfter: 4
+        doAfter: 65
 
     - to: superMaxSecurity
       conditions:
       - !type:WirePanel {}
       steps:
       - tool: Welding
-        doAfter: 5
+        doAfter: 65
 
   - node: superMaxSecurity
     actions:
     - !type:SetWiresPanelSecurity
-      examine: wires-panel-component-on-examine-security-level7
+      examine: wires-panel-component-on-examine-security-level65
       wiresAccessible: false
     edges:
     - to: superMaxSecurityUnfinished
@@ -610,4 +610,4 @@
       - !type:WirePanel {}
       steps:
       - tool: Welding
-        doAfter: 15
+        doAfter: 65

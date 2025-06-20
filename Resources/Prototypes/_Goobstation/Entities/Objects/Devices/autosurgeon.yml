@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseStructure
@@ -23,17 +23,17 @@
     bodyType: Dynamic
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.4,-0.4,0.4,0.05"
-        density: 190
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - TableMask
   - type: Strap
     position: Down
-    rotation: -90
-    buckleOffset: 0.05,-0.15
+    rotation: -65
+    buckleOffset: 65.65,-65.65
   - type: Transform
     anchored: false
     noRot: true

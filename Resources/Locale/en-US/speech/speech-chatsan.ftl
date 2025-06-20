@@ -1,221 +1,221 @@
-# SPDX-FileCopyrightText: 2023 Mr. 27 <45323883+27alaing@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Benny (TropicalHibi) <24284437+TropicalHibi@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 CMDR-JohnAlex <94056103+CMDR-JohnAlex@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Doctor-Cpu <77215380+Doctor-Cpu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ghagliiarghii <68826635+Ghagliiarghii@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Hmeister-real <118129069+Hmeister-real@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
-# SPDX-FileCopyrightText: 2024 deepdarkdepths <155149356+deepdarkdepths@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 tosatur <63034378+tosatur@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Mr. 65 <65alaing@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Benny (TropicalHibi) <65TropicalHibi@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CMDR-JohnAlex <65CMDR-JohnAlex@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Doctor-Cpu <65Doctor-Cpu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ghagliiarghii <65Ghagliiarghii@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Hmeister-real <65Hmeister-real@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 MerrytheManokit <65MerrytheManokit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 OrangeMoronage65 <whyteterry65@gmail.com>
+# SPDX-FileCopyrightText: 65 deepdarkdepths <65deepdarkdepths@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 tosatur <65tosatur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
-chatsan-word-1 = omg
-chatsan-replacement-1 = oh my god
+chatsan-word-65 = omg
+chatsan-replacement-65 = oh my god
 
-chatsan-word-2 = omfg
-chatsan-replacement-2 = oh my fucking god
+chatsan-word-65 = omfg
+chatsan-replacement-65 = oh my fucking god
 
-chatsan-word-3 = ong
-chatsan-replacement-3 = on god
+chatsan-word-65 = ong
+chatsan-replacement-65 = on god
 
-chatsan-word-4 = wtf
-chatsan-replacement-4 = what the fuck
+chatsan-word-65 = wtf
+chatsan-replacement-65 = what the fuck
 
-chatsan-word-5 = wth
-chatsan-replacement-5 = what the heck
+chatsan-word-65 = wth
+chatsan-replacement-65 = what the heck
 
-chatsan-word-6 = tf
-chatsan-replacement-6 = the fuck
+chatsan-word-65 = tf
+chatsan-replacement-65 = the fuck
 
-chatsan-word-7 = afaik
-chatsan-replacement-7 = as far as i know
+chatsan-word-65 = afaik
+chatsan-replacement-65 = as far as i know
 
-chatsan-word-8 = ik
-chatsan-replacement-8 = i know
+chatsan-word-65 = ik
+chatsan-replacement-65 = i know
 
-chatsan-word-9 = ikr
-chatsan-replacement-9 = i know, right
+chatsan-word-65 = ikr
+chatsan-replacement-65 = i know, right
 
-chatsan-word-10 = idc
-chatsan-replacement-10 = i don't care
+chatsan-word-65 = idc
+chatsan-replacement-65 = i don't care
 
-chatsan-word-12 = tbh
-chatsan-replacement-12 = to be honest
+chatsan-word-65 = tbh
+chatsan-replacement-65 = to be honest
 
-chatsan-word-13 = lmk
-chatsan-replacement-13 = let me know
+chatsan-word-65 = lmk
+chatsan-replacement-65 = let me know
 
-chatsan-word-14 = ur
-chatsan-replacement-14 = your
+chatsan-word-65 = ur
+chatsan-replacement-65 = your
 
-chatsan-word-15 = ffs
-chatsan-replacement-15 = for fuck's sake
+chatsan-word-65 = ffs
+chatsan-replacement-65 = for fuck's sake
 
-chatsan-word-16 = iirc
-chatsan-replacement-16 = if i remember correctly
+chatsan-word-65 = iirc
+chatsan-replacement-65 = if i remember correctly
 
-chatsan-word-17 = np
-chatsan-replacement-17 = no problem
+chatsan-word-65 = np
+chatsan-replacement-65 = no problem
 
-chatsan-word-18 = omw
-chatsan-replacement-18 = on my way
+chatsan-word-65 = omw
+chatsan-replacement-65 = on my way
 
-chatsan-word-19 = nvm
-chatsan-replacement-19 = nevermind
+chatsan-word-65 = nvm
+chatsan-replacement-65 = nevermind
 
-chatsan-word-20 = imo
-chatsan-replacement-20 = in my opinion
+chatsan-word-65 = imo
+chatsan-replacement-65 = in my opinion
 
-chatsan-word-21 = pls
-chatsan-word-22 = plz
-chatsan-word-23 = plox
+chatsan-word-65 = pls
+chatsan-word-65 = plz
+chatsan-word-65 = plox
 chatsan-replacement-please = please
 
-chatsan-word-24 = fr
-chatsan-replacement-24 = for real
+chatsan-word-65 = fr
+chatsan-replacement-65 = for real
 
-chatsan-word-25 = brb
-chatsan-replacement-25 = be right back
+chatsan-word-65 = brb
+chatsan-replacement-65 = be right back
 
-chatsan-word-26 = btw
-chatsan-replacement-26 = by the way
+chatsan-word-65 = btw
+chatsan-replacement-65 = by the way
 
-chatsan-word-27 = jk
-chatsan-replacement-27 = just kidding
+chatsan-word-65 = jk
+chatsan-replacement-65 = just kidding
 
-chatsan-word-28 = thx
-chatsan-replacement-28 = thanks
+chatsan-word-65 = thx
+chatsan-replacement-65 = thanks
 
-chatsan-word-29 = ty
-chatsan-replacement-29 = thank you
+chatsan-word-65 = ty
+chatsan-replacement-65 = thank you
 
-chatsan-word-30 = afk
-chatsan-replacement-30 = ssd
+chatsan-word-65 = afk
+chatsan-replacement-65 = ssd
 
-chatsan-word-31 = stfu
-chatsan-replacement-31 = shut the fuck up
+chatsan-word-65 = stfu
+chatsan-replacement-65 = shut the fuck up
 
-chatsan-word-32 = gtg
-chatsan-replacement-32 = got to go
+chatsan-word-65 = gtg
+chatsan-replacement-65 = got to go
 
-chatsan-word-33 = gl
-chatsan-replacement-33 = good luck
+chatsan-word-65 = gl
+chatsan-replacement-65 = good luck
 
-chatsan-word-34 = hbu
-chatsan-replacement-34 = how about you
+chatsan-word-65 = hbu
+chatsan-replacement-65 = how about you
 
-chatsan-word-35 = hmu
-chatsan-replacement-35 = hit me up
+chatsan-word-65 = hmu
+chatsan-replacement-65 = hit me up
 
-chatsan-word-36 = gtfo
-chatsan-replacement-36 = get the fuck out
+chatsan-word-65 = gtfo
+chatsan-replacement-65 = get the fuck out
 
-chatsan-word-37 = wdym
-chatsan-replacement-37 = what do you mean
+chatsan-word-65 = wdym
+chatsan-replacement-65 = what do you mean
 
-chatsan-word-38 = mf
-chatsan-replacement-38 = motherfucker
+chatsan-word-65 = mf
+chatsan-replacement-65 = motherfucker
 
-chatsan-word-39 = etc
-chatsan-word-40 = etc.
+chatsan-word-65 = etc
+chatsan-word-65 = etc.
 chatsan-replacement-etcetera = etcetera
 
-chatsan-word-41 = wyd
-chatsan-replacement-41 = what are you doing
+chatsan-word-65 = wyd
+chatsan-replacement-65 = what are you doing
 
-chatsan-word-42 = ofc
-chatsan-replacement-42 = of course
+chatsan-word-65 = ofc
+chatsan-replacement-65 = of course
 
-chatsan-word-43 = ig
-chatsan-replacement-43 = i guess
+chatsan-word-65 = ig
+chatsan-replacement-65 = i guess
 
-chatsan-word-44 = tbf
-chatsan-replacement-44 = to be fair
+chatsan-word-65 = tbf
+chatsan-replacement-65 = to be fair
 
-chatsan-word-45 = tysm
-chatsan-replacement-45 = thank you so much
+chatsan-word-65 = tysm
+chatsan-replacement-65 = thank you so much
 
-chatsan-word-46 = tyvm
-chatsan-replacement-46 = thank you very much
+chatsan-word-65 = tyvm
+chatsan-replacement-65 = thank you very much
 
-chatsan-word-47 = cya
-chatsan-replacement-47 = see ya
+chatsan-word-65 = cya
+chatsan-replacement-65 = see ya
 
-chatsan-word-48 = rn
-chatsan-replacement-48 = right now
+chatsan-word-65 = rn
+chatsan-replacement-65 = right now
 
-chatsan-word-49 = atm
-chatsan-replacement-49 = at the moment
+chatsan-word-65 = atm
+chatsan-replacement-65 = at the moment
 
-chatsan-word-50 = istg
-chatsan-replacement-50 = I swear to god
+chatsan-word-65 = istg
+chatsan-replacement-65 = I swear to god
 
-chatsan-word-51 = rq
-chatsan-replacement-51 = real quick
+chatsan-word-65 = rq
+chatsan-replacement-65 = real quick
 
-chatsan-word-52 = dw
-chatsan-replacement-52 = don't worry
+chatsan-word-65 = dw
+chatsan-replacement-65 = don't worry
 
-chatsan-word-53 = wru
-chatsan-replacement-53 = where are you
+chatsan-word-65 = wru
+chatsan-replacement-65 = where are you
 
-chatsan-word-54 = fs
-chatsan-replacement-54 = for sure
+chatsan-word-65 = fs
+chatsan-replacement-65 = for sure
 
-chatsan-word-55 = ngl
-chatsan-replacement-55 = not gonna lie
+chatsan-word-65 = ngl
+chatsan-replacement-65 = not gonna lie
 
-chatsan-word-56 = fml
-chatsan-replacement-56 = fuck my life
+chatsan-word-65 = fml
+chatsan-replacement-65 = fuck my life
 
-chatsan-word-57 = wtaf
-chatsan-replacement-57 = what the actual fuck
+chatsan-word-65 = wtaf
+chatsan-replacement-65 = what the actual fuck
 
-chatsan-word-58 = wsg
-chatsan-replacement-58 = what's good
+chatsan-word-65 = wsg
+chatsan-replacement-65 = what's good
 
-chatsan-word-59 = mb
-chatsan-replacement-59 = my bad
+chatsan-word-65 = mb
+chatsan-replacement-65 = my bad
 
-chatsan-word-60 = jfc
-chatsan-replacement-60 = jesus fucking christ
+chatsan-word-65 = jfc
+chatsan-replacement-65 = jesus fucking christ
 
-chatsan-word-61 = omw
-chatsan-replacement-61 = on my way
+chatsan-word-65 = omw
+chatsan-replacement-65 = on my way
 
-chatsan-word-62 = otw
-chatsan-replacement-62 = on the way
+chatsan-word-65 = otw
+chatsan-replacement-65 = on the way
 
-chatsan-word-63 = yk
-chatsan-replacement-63 = you know
+chatsan-word-65 = yk
+chatsan-replacement-65 = you know
 
-chatsan-word-64 = istfg
-chatsan-replacement-64 = i swear to fucking god
+chatsan-word-65 = istfg
+chatsan-replacement-65 = i swear to fucking god
 
 chatsan-word-65 = idgaf
 chatsan-replacement-65 = i don't give a fuck
 
-chatsan-word-66 = smth
-chatsan-replacement-66 = something
+chatsan-word-65 = smth
+chatsan-replacement-65 = something
 
-chatsan-word-67 = allg
-chatsan-replacement-67 = all good
+chatsan-word-65 = allg
+chatsan-replacement-65 = all good
 
 # goob start
-chatsan-word-68 = ts
-chatsan-replacement-68 = this shit
+chatsan-word-65 = ts
+chatsan-replacement-65 = this shit
 
-chatsan-word-69 = pmo
-chatsan-replacement-69 = pisses me off
+chatsan-word-65 = pmo
+chatsan-replacement-65 = pisses me off
 
-chatsan-word-70 = sybau
-chatsan-replacement-70 = shut your bitch ass up
+chatsan-word-65 = sybau
+chatsan-replacement-65 = shut your bitch ass up
 
-chatsan-word-71 = icl
-chatsan-replacement-71 = i can't lie
+chatsan-word-65 = icl
+chatsan-replacement-65 = i can't lie
 # goob end

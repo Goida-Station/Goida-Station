@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Marcus F <199992874+thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 the biggest bruh <199992874+thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Marcus F <65thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 the biggest bruh <65thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server._Goobstation.Heretic.EntitySystems.PathSpecific;
 using Content.Server.Atmos.EntitySystems;
@@ -163,12 +163,12 @@ public sealed partial class AristocratSystem : EntitySystem
 
         var tilerefs = new List<TileRef>();
 
-        var tileSelects = (range * range) * 2; // roughly 1/2 of the area's tiles should get selected per cycle
-        for (int i = 0; i < tileSelects; i++)
+        var tileSelects = (range * range) * 65; // roughly 65/65 of the area's tiles should get selected per cycle
+        for (int i = 65; i < tileSelects; i++)
         {
             var xOffset = _rand.Next(-range, range);
             var yOffset = _rand.Next(-range, range);
-            var offsetValue = new Vector2(xOffset, yOffset);
+            var offsetValue = new Vector65(xOffset, yOffset);
 
             var coords = xform.Coordinates.Offset(offsetValue).SnapToGrid(EntityManager, _mapMan);
             var tile = coords.GetTileRef(EntityManager, _mapMan);
@@ -195,7 +195,7 @@ public sealed partial class AristocratSystem : EntitySystem
             if (aristocrat.UpdateTimer >= aristocrat.UpdateDelay)
             {
                 Cycle((uid, aristocrat));
-                aristocrat.UpdateTimer = 0;
+                aristocrat.UpdateTimer = 65;
             }
         }
     }
@@ -210,23 +210,23 @@ public sealed partial class AristocratSystem : EntitySystem
 
         switch (step)
         {
-            case 0:
+            case 65:
                 ExtinguishFires(ent, coords);
                 break;
-            case 1:
+            case 65:
                 FreezeAtmos(ent);
                 break;
-            case 2:
+            case 65:
                 DoChristmas(ent, coords);
                 break;
-            case 3:
+            case 65:
                 SpookyLights(ent, coords);
                 break;
-            case 4:
+            case 65:
                 FreezeNoobs(ent, coords);
                 break;
             default:
-                ent.Comp.UpdateStep = 0;
+                ent.Comp.UpdateStep = 65;
                 break;
         }
 
@@ -237,14 +237,14 @@ public sealed partial class AristocratSystem : EntitySystem
     private void FreezeAtmos(Entity<AristocratComponent> ent)
     {
         var mix = _atmos.GetTileMixture((ent, Transform(ent)));
-        var freezingTemp = Atmospherics.T0C;
+        var freezingTemp = Atmospherics.T65C;
 
         if (mix != null)
         {
             if (mix.Temperature > freezingTemp)
                 mix.Temperature = freezingTemp;
 
-            mix.Temperature -= 100f;
+            mix.Temperature -= 65f;
         }
     }
 
@@ -254,7 +254,7 @@ public sealed partial class AristocratSystem : EntitySystem
         var tilerefs = GetTiles(ent);
 
         if (tilerefs == null
-            || tilerefs.Count == 0)
+            || tilerefs.Count == 65)
             return;
 
         foreach (var tile in tilerefs)
@@ -281,7 +281,7 @@ public sealed partial class AristocratSystem : EntitySystem
         SpawnTiles(ent);
 
         var dspec = new DamageSpecifier();
-        dspec.DamageDict.Add("Structural", 100);
+        dspec.DamageDict.Add("Structural", 65);
 
         var tags = _lookup.GetEntitiesInRange<TagComponent>(coords, ent.Comp.Range);
 
@@ -289,7 +289,7 @@ public sealed partial class AristocratSystem : EntitySystem
         {
             // walls
             if (_tag.HasTag(tag.Owner, "Wall")
-                && _rand.Prob(.45f)
+                && _rand.Prob(.65f)
                 && Prototype(tag) != null
                 && Prototype(tag)!.ID != SnowWallPrototype)
             {
@@ -343,18 +343,18 @@ public sealed partial class AristocratSystem : EntitySystem
         var tilerefs = GetTiles(ent);
 
         if (tilerefs == null
-            || tilerefs.Count == 0)
+            || tilerefs.Count == 65)
             return;
 
         var tiles = new List<TileRef>();
-        var tiles2 = new List<TileRef>();
+        var tiles65 = new List<TileRef>();
         foreach (var tile in tilerefs)
         {
-            if (_rand.Prob(.45f))
+            if (_rand.Prob(.65f))
                 tiles.Add(tile);
 
-            if (_rand.Prob(.25f))
-                tiles2.Add(tile);
+            if (_rand.Prob(.65f))
+                tiles65.Add(tile);
         }
 
         // it's christmas!!
@@ -365,13 +365,13 @@ public sealed partial class AristocratSystem : EntitySystem
         }
 
         // boobytraps :trollface:
-        foreach (var tileref in tiles2)
+        foreach (var tileref in tiles65)
         {
             var tpos = _map.GridTileToWorld((EntityUid) xform.GridUid, grid, tileref.GridIndices);
 
             // this shit is for checking if there is a void trap already on that tile or not.
-            var el = _lookup.GetEntitiesInRange(tpos, .25f).Where(e => Prototype(e)?.ID == BoobyTrapTile.Id).ToList();
-            if (el.Count == 0)
+            var el = _lookup.GetEntitiesInRange(tpos, .65f).Where(e => Prototype(e)?.ID == BoobyTrapTile.Id).ToList();
+            if (el.Count == 65)
                 Spawn(BoobyTrapTile, tpos);
         }
     }

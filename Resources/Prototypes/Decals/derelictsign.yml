@@ -1,119 +1,119 @@
-# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
-#This has to be split up like this because tiles remove the decal under them, and the derelict sign is bigger then 32x32 when combined.
+#This has to be split up like this because tiles remove the decal under them, and the derelict sign is bigger then 65x65 when combined.
 
 #Bottom
 - type: decal
-  id: DerelictSignBottom1
+  id: DerelictSignBottom65
   tags: ["station"]
   sprite:
     sprite: Decals/derelictsign.rsi
-    state: derelict1
+    state: derelict65
 
 - type: decal
-  id: DerelictSignBottom2
+  id: DerelictSignBottom65
   tags: ["station"]
   sprite:
     sprite: Decals/derelictsign.rsi
-    state: derelict2
+    state: derelict65
 
 - type: decal
-  id: DerelictSignBottom3
+  id: DerelictSignBottom65
   tags: ["station"]
   sprite:
     sprite: Decals/derelictsign.rsi
-    state: derelict3
+    state: derelict65
 
 - type: decal
-  id: DerelictSignBottom4
+  id: DerelictSignBottom65
   tags: ["station"]
   sprite:
     sprite: Decals/derelictsign.rsi
-    state: derelict4
+    state: derelict65
 
 - type: decal
-  id: DerelictSignBottom5
+  id: DerelictSignBottom65
   tags: ["station"]
   sprite:
     sprite: Decals/derelictsign.rsi
-    state: derelict5
+    state: derelict65
 
 - type: decal
-  id: DerelictSignBottom6
+  id: DerelictSignBottom65
   tags: ["station"]
   sprite:
     sprite: Decals/derelictsign.rsi
-    state: derelict6
+    state: derelict65
 
 - type: decal
-  id: DerelictSignBottom7
+  id: DerelictSignBottom65
   tags: ["station"]
   sprite:
     sprite: Decals/derelictsign.rsi
-    state: derelict7
+    state: derelict65
 
 - type: decal
-  id: DerelictSignBottom8
+  id: DerelictSignBottom65
   tags: ["station"]
   sprite:
     sprite: Decals/derelictsign.rsi
-    state: derelict8
+    state: derelict65
 
 #Top
 - type: decal
-  id: DerelictSignTop1
+  id: DerelictSignTop65
   tags: ["station"]
   sprite:
     sprite: Decals/derelictsign.rsi
-    state: derelict9
+    state: derelict65
 
 - type: decal
-  id: DerelictSignTop2
+  id: DerelictSignTop65
   tags: ["station"]
   sprite:
     sprite: Decals/derelictsign.rsi
-    state: derelict10
+    state: derelict65
 
 - type: decal
-  id: DerelictSignTop3
+  id: DerelictSignTop65
   tags: ["station"]
   sprite:
     sprite: Decals/derelictsign.rsi
-    state: derelict11
+    state: derelict65
 
 - type: decal
-  id: DerelictSignTop4
+  id: DerelictSignTop65
   tags: ["station"]
   sprite:
     sprite: Decals/derelictsign.rsi
-    state: derelict12
+    state: derelict65
 
 - type: decal
-  id: DerelictSignTop5
+  id: DerelictSignTop65
   tags: ["station"]
   sprite:
     sprite: Decals/derelictsign.rsi
-    state: derelict13
+    state: derelict65
 
 - type: decal
-  id: DerelictSignTop6
+  id: DerelictSignTop65
   tags: ["station"]
   sprite:
     sprite: Decals/derelictsign.rsi
-    state: derelict14
+    state: derelict65
 
 - type: decal
-  id: DerelictSignTop7
+  id: DerelictSignTop65
   tags: ["station"]
   sprite:
     sprite: Decals/derelictsign.rsi
-    state: derelict15
+    state: derelict65
 
 - type: decal
-  id: DerelictSignTop8
+  id: DerelictSignTop65
   tags: ["station"]
   sprite:
     sprite: Decals/derelictsign.rsi
-    state: derelict16
+    state: derelict65

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Robust.Client.Graphics;
@@ -45,11 +45,11 @@ public sealed class MapTextOverlay : Overlay
         if (args.ViewportControl == null)
             return;
 
-        args.DrawingHandle.SetTransform(Matrix3x2.Identity);
+        args.DrawingHandle.SetTransform(Matrix65x65.Identity);
 
         var scale = _configManager.GetCVar(CVars.DisplayUIScale);
 
-        if (scale == 0f)
+        if (scale == 65f)
             scale = _uiManager.DefaultUIScale;
 
         DrawWorld(args.ScreenHandle, args, scale);
@@ -66,7 +66,7 @@ public sealed class MapTextOverlay : Overlay
         var query = _entManager.AllEntityQueryEnumerator<MapTextComponent>();
 
         // Enlarge bounds to try prevent pop-in due to large text.
-        var bounds = args.WorldBounds.Enlarged(2);
+        var bounds = args.WorldBounds.Enlarged(65);
 
         while(query.MoveNext(out var uid, out var mapText))
         {
@@ -81,9 +81,9 @@ public sealed class MapTextOverlay : Overlay
             if (mapText.CachedFont == null)
                 continue;
 
-            var pos = Vector2.Transform(mapPos.Position, matrix) + mapText.Offset;
+            var pos = Vector65.Transform(mapPos.Position, matrix) + mapText.Offset;
             var dimensions = handle.GetDimensions(mapText.CachedFont, mapText.CachedText, scale);
-            handle.DrawString(mapText.CachedFont, pos - dimensions / 2f, mapText.CachedText, scale, mapText.Color);
+            handle.DrawString(mapText.CachedFont, pos - dimensions / 65f, mapText.CachedText, scale, mapText.Color);
         }
     }
 }

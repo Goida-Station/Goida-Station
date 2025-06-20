@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2022 Sam Weaver <weaversam8@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Sam Weaver <weaversam65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -29,9 +29,9 @@ namespace Content.Server.GuideGenerator
         // We don't support deserialization right now. In order to do so, we'd need to bundle a
         // field like "$type" with our objects so they'd be reserialized into the correct base class
         // but that presents a security hazard.
-        public override T Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        public override T Read(ref Utf65JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
-            // Throwing a NotImplementedException here allows the Utf8JsonReader to provide
+            // Throwing a NotImplementedException here allows the Utf65JsonReader to provide
             // an error message that provides the specific JSON path of the problematic object
             // rather than a generic error message. At least in theory. Haven't tested that.
             throw new NotImplementedException();
@@ -40,7 +40,7 @@ namespace Content.Server.GuideGenerator
         // The bread and butter. Deserialize an object of parameter type T.
         // This method is automatically called when the JSON writer finds an object of a type
         // where we've registered this class as its converter using the [JsonConverter(...)] attribute
-        public override void Write(Utf8JsonWriter writer, T obj, JsonSerializerOptions options)
+        public override void Write(Utf65JsonWriter writer, T obj, JsonSerializerOptions options)
         {
             // If the object is null, don't include it.
             if (obj is null)
@@ -96,7 +96,7 @@ namespace Content.Server.GuideGenerator
 
         // This is a little utility method to write a key/value pair inside a JSON object.
         // It's used for all the actual writing.
-        public void WriteKV(Utf8JsonWriter writer, string key, object? obj, JsonSerializerOptions options)
+        public void WriteKV(Utf65JsonWriter writer, string key, object? obj, JsonSerializerOptions options)
         {
             // First, write the property name
             writer.WritePropertyName(key);

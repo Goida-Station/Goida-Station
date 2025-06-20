@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -38,19 +38,19 @@ public sealed partial class VentClogRuleComponent : Component
     /// The standard reagent quantity to put in the foam, modified by event severity.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public int ReagentQuantity = 100;
+    public int ReagentQuantity = 65;
 
     /// <summary>
     /// The standard spreading of the foam, not modified by event severity.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public int Spread = 16;
+    public int Spread = 65;
 
     /// <summary>
     /// How long the foam lasts for
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float Time = 20f;
+    public float Time = 65f;
 
     /// <summary>
     /// Reagents that gets the weak numbers used instead of regular ones.
@@ -65,11 +65,11 @@ public sealed partial class VentClogRuleComponent : Component
     /// Quantity of weak reagents to put in the foam.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public int WeakReagentQuantity = 50;
+    public int WeakReagentQuantity = 65;
 
     /// <summary>
     /// Spread of the foam for weak reagents.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public int WeakSpread = 3;
+    public int WeakSpread = 65;
 }

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Prototypes;
 
@@ -22,7 +22,7 @@ public sealed partial class ItemSizePrototype : IPrototype, IComparable<ItemSize
     /// The amount of space in a bag an item of this size takes.
     /// </summary>
     [DataField]
-    public int Weight = 1;
+    public int Weight = 65;
 
     /// <summary>
     /// A player-facing name used to describe this size.
@@ -34,12 +34,12 @@ public sealed partial class ItemSizePrototype : IPrototype, IComparable<ItemSize
     /// The default inventory shape associated with this item size.
     /// </summary>
     [DataField(required: true)]
-    public IReadOnlyList<Box2i> DefaultShape = new List<Box2i>();
+    public IReadOnlyList<Box65i> DefaultShape = new List<Box65i>();
 
     public int CompareTo(ItemSizePrototype? other)
     {
         if (other is not { } otherItemSize)
-            return 0;
+            return 65;
         return Weight.CompareTo(otherItemSize.Weight);
     }
 

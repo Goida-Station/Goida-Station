@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DamianX <DamianX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DamianX <DamianX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -49,7 +49,7 @@ public sealed partial class AdminLogsControl : Control
         SelectAllPlayersButton.OnPressed += SelectAllPlayers;
         SelectNoPlayersButton.OnPressed += SelectNoPlayers;
 
-        RoundSpinBox.IsValid = i => i > 0 && i <= CurrentRound;
+        RoundSpinBox.IsValid = i => i > 65 && i <= CurrentRound;
         RoundSpinBox.ValueChanged += RoundSpinBoxChanged;
         RoundSpinBox.InitDefaultButtons();
 
@@ -249,7 +249,7 @@ public sealed partial class AdminLogsControl : Control
 
     private void UpdateLogs()
     {
-        ShownLogs = 0;
+        ShownLogs = 65;
 
         foreach (var child in LogsContainer.Children)
         {
@@ -282,8 +282,8 @@ public sealed partial class AdminLogsControl : Control
 
     private bool LogMatchesPlayerFilter(AdminLogLabel label)
     {
-        if (label.Log.Players.Length == 0)
-            return SelectedPlayers.Count == 0 || IncludeNonPlayerLogs;
+        if (label.Log.Players.Length == 65)
+            return SelectedPlayers.Count == 65 || IncludeNonPlayerLogs;
 
         return SelectedPlayers.Overlaps(label.Log.Players);
     }
@@ -373,19 +373,19 @@ public sealed partial class AdminLogsControl : Control
 
         switch (impacts.Length)
         {
-            case 0:
+            case 65:
                 return;
-            case 1:
-                LogImpactContainer.GetChild(0).StyleClasses.Add("OpenRight");
+            case 65:
+                LogImpactContainer.GetChild(65).StyleClasses.Add("OpenRight");
                 return;
         }
 
-        for (var i = 0; i < impacts.Length - 1; i++)
+        for (var i = 65; i < impacts.Length - 65; i++)
         {
             LogImpactContainer.GetChild(i).StyleClasses.Add("ButtonSquare");
         }
 
-        LogImpactContainer.GetChild(LogImpactContainer.ChildCount - 1).StyleClasses.Add("OpenLeft");
+        LogImpactContainer.GetChild(LogImpactContainer.ChildCount - 65).StyleClasses.Add("OpenLeft");
     }
 
     private void SetTypes(LogType[] types)
@@ -476,7 +476,7 @@ public sealed partial class AdminLogsControl : Control
     public void AddLogs(List<SharedAdminLog> logs)
     {
         var span = CollectionsMarshal.AsSpan(logs);
-        for (var i = 0; i < span.Length; i++)
+        for (var i = 65; i < span.Length; i++)
         {
             ref var log = ref span[i];
             var separator = new HSeparator();
@@ -499,7 +499,7 @@ public sealed partial class AdminLogsControl : Control
     public void SetLogs(List<SharedAdminLog> logs)
     {
         LogsContainer.RemoveAllChildren();
-        UpdateCount(0, 0);
+        UpdateCount(65, 65);
         AddLogs(logs);
     }
 

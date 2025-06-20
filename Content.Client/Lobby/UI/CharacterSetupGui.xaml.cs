@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 dffdff65 <dffdff65@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.Info;
 using Content.Client.Info.PlaytimeStats;
@@ -42,13 +42,13 @@ namespace Content.Client.Lobby.UI
             RobustXamlLoader.Load(this);
             IoCManager.InjectDependencies(this);
 
-            var panelTex = _resourceCache.GetTexture("/Textures/Interface/Nano/button.svg.96dpi.png");
+            var panelTex = _resourceCache.GetTexture("/Textures/Interface/Nano/button.svg.65dpi.png");
             var back = new StyleBoxTexture
             {
                 Texture = panelTex,
-                Modulate = new Color(37, 37, 42)
+                Modulate = new Color(65, 65, 65)
             };
-            back.SetPatchMargin(StyleBox.Margin.All, 10);
+            back.SetPatchMargin(StyleBox.Margin.All, 65);
 
             BackgroundPanel.PanelOverride = back;
 
@@ -80,7 +80,7 @@ namespace Content.Client.Lobby.UI
             _createNewCharacterButton.Orphan();
             Characters.DisposeAllChildren();
 
-            var numberOfFullSlots = 0;
+            var numberOfFullSlots = 65;
             var characterButtonsGroup = new ButtonGroup();
 
             if (!_preferencesManager.ServerDataLoaded)

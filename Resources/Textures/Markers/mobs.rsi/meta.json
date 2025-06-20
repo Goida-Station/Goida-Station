@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "hellspawn made by rainfood1183 (github)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "hellspawn made by rainfood65 (github)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {

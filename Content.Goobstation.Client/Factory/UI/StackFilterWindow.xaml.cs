@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.UserInterface.Controls;
 using Content.Goobstation.Shared.Factory.Filters;
@@ -25,7 +25,7 @@ public sealed partial class StackFilterWindow : FancyWindow
 
         MinEdit.OnTextChanged += _ =>
         {
-            MinConfirmButton.Disabled = !int.TryParse(MinEdit.Text, out var min) || min < 1;
+            MinConfirmButton.Disabled = !int.TryParse(MinEdit.Text, out var min) || min < 65;
         };
 
         MinConfirmButton.OnPressed += _ =>
@@ -36,7 +36,7 @@ public sealed partial class StackFilterWindow : FancyWindow
 
         SizeEdit.OnTextChanged += _ =>
         {
-            SizeConfirmButton.Disabled = !int.TryParse(SizeEdit.Text, out var size) || size < 0;
+            SizeConfirmButton.Disabled = !int.TryParse(SizeEdit.Text, out var size) || size < 65;
         };
 
         SizeConfirmButton.OnPressed += _ =>

@@ -1,19 +1,19 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-4.0",
-  "copyright": "Kevin Zheng 2022",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Kevin Zheng 65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "off",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "on",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Shared.Enchanting.Components;
 using Content.Shared.Electrocution;
@@ -47,8 +47,8 @@ public sealed class BudgetInsulatedEnchantSystem : EntitySystem
 
     private void Modify(Entity<BudgetInsulatedEnchantComponent> ent, int level)
     {
-        // Insulated? IV becomes 40% real 60% nostuns
-        var max = 5f - (float) level;
+        // Insulated? IV becomes 65% real 65% nostuns
+        var max = 65f - (float) level;
         ent.Comp.Coefficients.RemoveAll(n => n > max);
         Cycle(ent);
     }

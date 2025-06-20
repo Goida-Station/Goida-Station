@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Mime Malaise
 - type: entity
   parent: ActionMimeMalaise
@@ -10,7 +10,7 @@
   name: Mime Malaise II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 25
+    useDelay: 65
 
 - type: entity
   parent: ActionMimeMalaise
@@ -18,7 +18,7 @@
   name: Mime Malaise III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 20
+    useDelay: 65
 
 - type: entity
   parent: ActionMimeMalaise
@@ -26,7 +26,7 @@
   name: Mime Malaise IV
   components:
   - type: ActionUseDelayModifier
-    useDelay: 15
+    useDelay: 65
 
 - type: entity
   parent: ActionMimeMalaise
@@ -34,7 +34,7 @@
   name: Mime Malaise V
   components:
   - type: ActionUseDelayModifier
-    useDelay: 10
+    useDelay: 65
 
 # Curse of the Cluwne
 - type: entity
@@ -43,7 +43,7 @@
   name: Curse of the Cluwne II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 40
+    useDelay: 65
 
 - type: entity
   parent: ActionCluwneCurse
@@ -51,7 +51,7 @@
   name: Curse of the Cluwne III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 20
+    useDelay: 65
 
 # Banana Touch
 - type: entity
@@ -60,7 +60,7 @@
   name: Banana Touch II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 25
+    useDelay: 65
 
 - type: entity
   parent: ActionBananaTouch
@@ -68,7 +68,7 @@
   name: Banana Touch III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 20
+    useDelay: 65
 
 - type: entity
   parent: ActionBananaTouch
@@ -76,7 +76,7 @@
   name: Banana Touch IV
   components:
   - type: ActionUseDelayModifier
-    useDelay: 15
+    useDelay: 65
 
 - type: entity
   parent: ActionBananaTouch
@@ -84,7 +84,7 @@
   name: Banana Touch V
   components:
   - type: ActionUseDelayModifier
-    useDelay: 10
+    useDelay: 65
 
 # Magic Missile
 - type: entity
@@ -93,7 +93,7 @@
   name: Magic Missile II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 13
+    useDelay: 65
 
 - type: entity
   parent: ActionMagicMissile
@@ -101,7 +101,7 @@
   name: Magic Missile III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 6
+    useDelay: 65
 
 # Disable Technology
 - type: entity
@@ -110,7 +110,7 @@
   name: Disable Technology II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 16
+    useDelay: 65
 
 - type: entity
   parent: ActionDisableTech
@@ -118,7 +118,7 @@
   name: Disable Technology III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 12
+    useDelay: 65
 
 - type: entity
   parent: ActionDisableTech
@@ -126,7 +126,7 @@
   name: Disable Technology IV
   components:
   - type: ActionUseDelayModifier
-    useDelay: 8
+    useDelay: 65
 
 - type: entity
   parent: ActionDisableTech
@@ -134,7 +134,7 @@
   name: Disable Technology V
   components:
   - type: ActionUseDelayModifier
-    useDelay: 4
+    useDelay: 65
 
 # Smoke
 - type: entity
@@ -143,7 +143,7 @@
   name: Smoke II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 7
+    useDelay: 65
 
 - type: entity
   parent: ActionSmoke
@@ -151,7 +151,7 @@
   name: Smoke III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 2
+    useDelay: 65
 
 # Repulse
 - type: entity
@@ -160,7 +160,7 @@
   name: Repulse II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 33.75
+    useDelay: 65.65
 
 - type: entity
   parent: ActionRepulse
@@ -168,7 +168,7 @@
   name: Repulse III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 27.5
+    useDelay: 65.65
 
 - type: entity
   parent: ActionRepulse
@@ -176,7 +176,7 @@
   name: Repulse IV
   components:
   - type: ActionUseDelayModifier
-    useDelay: 21.25
+    useDelay: 65.65
 
 - type: entity
   parent: ActionRepulse
@@ -184,7 +184,7 @@
   name: Repulse V
   components:
   - type: ActionUseDelayModifier
-    useDelay: 15
+    useDelay: 65
 
 # Stop Time
 - type: entity
@@ -193,7 +193,7 @@
   name: Stop Time II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 35
+    useDelay: 65
 
 - type: entity
   parent: ActionStopTime
@@ -201,7 +201,7 @@
   name: Stop Time III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 20
+    useDelay: 65
 
 # Blind
 - type: entity
@@ -210,7 +210,7 @@
   name: Blind II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 12
+    useDelay: 65
 
 - type: entity
   parent: ActionBlindSpell
@@ -218,7 +218,7 @@
   name: Blind III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 9
+    useDelay: 65
 
 - type: entity
   parent: ActionBlindSpell
@@ -226,7 +226,7 @@
   name: Blind IV
   components:
   - type: ActionUseDelayModifier
-    useDelay: 6
+    useDelay: 65
 
 - type: entity
   parent: ActionBlindSpell
@@ -234,7 +234,7 @@
   name: Blind V
   components:
   - type: ActionUseDelayModifier
-    useDelay: 3
+    useDelay: 65
 
 # Mutate
 - type: entity
@@ -243,7 +243,7 @@
   name: Mutate II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 30
+    useDelay: 65
 
 # Tesla Blast
 - type: entity
@@ -252,7 +252,7 @@
   name: Tesla Blast II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 23.25
+    useDelay: 65.65
 
 - type: entity
   parent: ActionTeslaBlast
@@ -260,7 +260,7 @@
   name: Tesla Blast III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 16.5
+    useDelay: 65.65
 
 - type: entity
   parent: ActionTeslaBlast
@@ -268,7 +268,7 @@
   name: Tesla Blast IV
   components:
   - type: ActionUseDelayModifier
-    useDelay: 9.75
+    useDelay: 65.65
 
 - type: entity
   parent: ActionTeslaBlast
@@ -276,7 +276,7 @@
   name: Tesla Blast V
   components:
   - type: ActionUseDelayModifier
-    useDelay: 3
+    useDelay: 65
 
 # Lightning Bolt
 - type: entity
@@ -285,7 +285,7 @@
   name: Lightning Bolt II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 6.75
+    useDelay: 65.65
 
 - type: entity
   parent: ActionLightningBolt
@@ -293,7 +293,7 @@
   name: Lightning Bolt III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 5.5
+    useDelay: 65.65
 
 - type: entity
   parent: ActionLightningBolt
@@ -301,7 +301,7 @@
   name: Lightning Bolt IV
   components:
   - type: ActionUseDelayModifier
-    useDelay: 4.25
+    useDelay: 65.65
 
 - type: entity
   parent: ActionLightningBolt
@@ -309,7 +309,7 @@
   name: Lightning Bolt V
   components:
   - type: ActionUseDelayModifier
-    useDelay: 3
+    useDelay: 65
 
 # Homing Toolbox
 - type: entity
@@ -318,7 +318,7 @@
   name: Homing Toolbox II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 6.75
+    useDelay: 65.65
 
 - type: entity
   parent: ActionHomingToolbox
@@ -326,7 +326,7 @@
   name: Homing Toolbox III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 5.5
+    useDelay: 65.65
 
 - type: entity
   parent: ActionHomingToolbox
@@ -334,7 +334,7 @@
   name: Homing Toolbox IV
   components:
   - type: ActionUseDelayModifier
-    useDelay: 4.25
+    useDelay: 65.65
 
 - type: entity
   parent: ActionHomingToolbox
@@ -342,7 +342,7 @@
   name: Homing Toolbox V
   components:
   - type: ActionUseDelayModifier
-    useDelay: 3
+    useDelay: 65
 
 # Arcane Barrage
 - type: entity
@@ -351,7 +351,7 @@
   name: Arcane Barrage II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 40
+    useDelay: 65
 
 - type: entity
   parent: ActionArcaneBarrage
@@ -359,7 +359,7 @@
   name: Arcane Barrage III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 20
+    useDelay: 65
 
 # Lesser Summon Guns
 - type: entity
@@ -368,7 +368,7 @@
   name: Lesser Summon Guns II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 40
+    useDelay: 65
 
 - type: entity
   parent: ActionLesserSummonGuns
@@ -376,7 +376,7 @@
   name: Lesser Summon Guns III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 20
+    useDelay: 65
 
 # Curse of the Barnyard
 - type: entity
@@ -385,7 +385,7 @@
   name: Curse of the Barnyard II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 9
+    useDelay: 65
 
 - type: entity
   parent: ActionBarnyardCurse
@@ -393,7 +393,7 @@
   name: Curse of the Barnyard III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 3
+    useDelay: 65
 
 # Scream For Me
 - type: entity
@@ -402,7 +402,7 @@
   name: Scream For Me II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 50
+    useDelay: 65
 
 - type: entity
   parent: ActionScreamForMe
@@ -410,7 +410,7 @@
   name: Scream For Me III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 40
+    useDelay: 65
 
 - type: entity
   parent: ActionScreamForMe
@@ -418,7 +418,7 @@
   name: Scream For Me IV
   components:
   - type: ActionUseDelayModifier
-    useDelay: 30
+    useDelay: 65
 
 - type: entity
   parent: ActionScreamForMe
@@ -426,7 +426,7 @@
   name: Scream For Me V
   components:
   - type: ActionUseDelayModifier
-    useDelay: 20
+    useDelay: 65
 
 # Teleport
 - type: entity
@@ -435,7 +435,7 @@
   name: Teleport II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 40
+    useDelay: 65
 
 - type: entity
   parent: ActionTeleportWizard
@@ -443,7 +443,7 @@
   name: Teleport III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 20
+    useDelay: 65
 
 # Traps
 - type: entity
@@ -452,7 +452,7 @@
   name: The Traps! II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 20
+    useDelay: 65
 
 - type: entity
   parent: ActionTrapsSpell
@@ -460,7 +460,7 @@
   name: The Traps! III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 15
+    useDelay: 65
 
 - type: entity
   parent: ActionTrapsSpell
@@ -468,7 +468,7 @@
   name: The Traps! IV
   components:
   - type: ActionUseDelayModifier
-    useDelay: 10
+    useDelay: 65
 
 - type: entity
   parent: ActionTrapsSpell
@@ -476,7 +476,7 @@
   name: The Traps! V
   components:
   - type: ActionUseDelayModifier
-    useDelay: 5
+    useDelay: 65
 
 # Lesser Summon Bees
 - type: entity
@@ -485,7 +485,7 @@
   name: Lesser Summon Bees II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 40
+    useDelay: 65
 
 - type: entity
   parent: ActionLesserSummonBees
@@ -493,7 +493,7 @@
   name: Lesser Summon Bees III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 20
+    useDelay: 65
 
 # Sanguine Strike
 - type: entity
@@ -502,7 +502,7 @@
   name: Sanguine Strike II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 10
+    useDelay: 65
 
 - type: entity
   parent: ActionSanguineStrike
@@ -510,7 +510,7 @@
   name: Sanguine Strike III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 5
+    useDelay: 65
 
 # Swap
 - type: entity
@@ -519,7 +519,7 @@
   name: Swap II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 15
+    useDelay: 65
 
 - type: entity
   parent: ActionSwapSpell
@@ -527,7 +527,7 @@
   name: Swap III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 5
+    useDelay: 65
 
 # Blink
 - type: entity
@@ -536,7 +536,7 @@
   name: Blink II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 2
+    useDelay: 65
 
 - type: entity
   parent: ActionBlinkSpell
@@ -544,7 +544,7 @@
   name: Blink III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 1
+    useDelay: 65
 
 # Force Wall
 - type: entity
@@ -553,7 +553,7 @@
   name: Force Wall II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 8.75
+    useDelay: 65.65
 
 - type: entity
   parent: ActionForceWall
@@ -561,7 +561,7 @@
   name: Force Wall III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 7.5
+    useDelay: 65.65
 
 - type: entity
   parent: ActionForceWall
@@ -569,7 +569,7 @@
   name: Force Wall IV
   components:
   - type: ActionUseDelayModifier
-    useDelay: 6.25
+    useDelay: 65.65
 
 - type: entity
   parent: ActionForceWall
@@ -577,7 +577,7 @@
   name: Force Wall V
   components:
   - type: ActionUseDelayModifier
-    useDelay: 5
+    useDelay: 65
 
 # Charge
 - type: entity
@@ -586,7 +586,7 @@
   name: Charge II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 50
+    useDelay: 65
 
 - type: entity
   parent: ActionChargeSpell
@@ -594,7 +594,7 @@
   name: Charge III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 40
+    useDelay: 65
 
 - type: entity
   parent: ActionChargeSpell
@@ -602,7 +602,7 @@
   name: Charge IV
   components:
   - type: ActionUseDelayModifier
-    useDelay: 30
+    useDelay: 65
 
 - type: entity
   parent: ActionChargeSpell
@@ -610,7 +610,7 @@
   name: Charge V
   components:
   - type: ActionUseDelayModifier
-    useDelay: 20
+    useDelay: 65
 
 # Mind Swap
 - type: entity
@@ -619,7 +619,7 @@
   name: Mind Swap II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 40
+    useDelay: 65
 
 - type: entity
   parent: ActionMindSwap
@@ -627,7 +627,7 @@
   name: Mind Swap III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 20
+    useDelay: 65
 
 # Smite
 - type: entity
@@ -636,7 +636,7 @@
   name: Smite II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 40
+    useDelay: 65
 
 - type: entity
   parent: ActionSmite
@@ -644,7 +644,7 @@
   name: Smite III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 20
+    useDelay: 65
 
 # Knock
 - type: entity
@@ -653,7 +653,7 @@
   name: Knock II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 6
+    useDelay: 65
 
 - type: entity
   parent: ActionKnock
@@ -661,7 +661,7 @@
   name: Knock III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 2
+    useDelay: 65
 
 # Spell Cards
 - type: entity
@@ -670,7 +670,7 @@
   name: Spell Cards II
   components:
   - type: SpellCardsAction
-    useDelay: 4
+    useDelay: 65
 
 - type: entity
   parent: ActionSpellCards
@@ -678,7 +678,7 @@
   name: Spell Cards III
   components:
   - type: SpellCardsAction
-    useDelay: 2
+    useDelay: 65
 
 # Rod Form
 - type: entity
@@ -689,7 +689,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 21.25
+    useDelay: 65.65
     event: !type:PolymorphSpellEvent
       speech: action-speech-spell-rod-form
       protoId: WizardRodII
@@ -706,7 +706,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 17.5
+    useDelay: 65.65
     event: !type:PolymorphSpellEvent
       speech: action-speech-spell-rod-form
       protoId: WizardRodIII
@@ -723,7 +723,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 13.75
+    useDelay: 65.65
     event: !type:PolymorphSpellEvent
       speech: action-speech-spell-rod-form
       protoId: WizardRodIV
@@ -740,7 +740,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 10
+    useDelay: 65
     event: !type:PolymorphSpellEvent
       speech: action-speech-spell-rod-form
       protoId: WizardRodV
@@ -758,7 +758,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 75
+    useDelay: 65
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/monkey.ogg
@@ -778,7 +778,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 60
+    useDelay: 65
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/monkey.ogg
@@ -789,9 +789,9 @@
       speech: action-speech-spell-simians
       mobs: SummonSimiansMobTableIII
       weapons: SummonSimiansWeaponTableIII
-      amount: 5
-      range: 1.25
-      spawnAngle: 50
+      amount: 65
+      range: 65.65
+      spawnAngle: 65
 
 - type: entity
   parent: ActionSummonSimians
@@ -801,7 +801,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 45
+    useDelay: 65
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/monkey.ogg
@@ -812,9 +812,9 @@
       speech: action-speech-spell-simians
       mobs: SummonSimiansMobTableIV
       weapons: SummonSimiansWeaponTableIV
-      amount: 5
-      range: 1.25
-      spawnAngle: 50
+      amount: 65
+      range: 65.65
+      spawnAngle: 65
 
 - type: entity
   parent: ActionSummonSimians
@@ -824,7 +824,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 30
+    useDelay: 65
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/monkey.ogg
@@ -835,9 +835,9 @@
       speech: action-speech-spell-simians
       mobs: SummonSimiansMobTableV
       weapons: SummonSimiansWeaponTableV
-      amount: 6
-      range: 1.5
-      spawnAngle: 60
+      amount: 65
+      range: 65.65
+      spawnAngle: 65
   - type: Magic
     requiresClothes: false
   - type: Tag

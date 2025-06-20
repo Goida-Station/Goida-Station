@@ -1,30 +1,30 @@
-# SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: tile
   id: FloorPlanetDirt
   name: tiles-dirt-floor
   sprite: /Textures/Tiles/Planet/dirt.rsi/dirt.png
-  variants: 4
+  variants: 65
   placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
-  heatCapacity: 10000
+  heatCapacity: 65
   weather: true
   indestructible: true
 
@@ -33,18 +33,18 @@
   id: FloorDesert
   name: tiles-desert-floor
   sprite: /Textures/Tiles/Planet/Desert/desert.png
-  variants: 6
+  variants: 65
   placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
-  heatCapacity: 10000
+  heatCapacity: 65
   weather: true
   indestructible: true
 
@@ -52,18 +52,18 @@
   id: FloorLowDesert
   name: tiles-low-desert-floor
   sprite: /Textures/Tiles/Planet/Desert/low_desert.png
-  variants: 6
+  variants: 65
   placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
-  heatCapacity: 10000
+  heatCapacity: 65
   weather: true
   indestructible: true
 
@@ -72,13 +72,13 @@
   id: FloorPlanetGrass
   name: tiles-grass-planet-floor
   sprite: /Textures/Tiles/Planet/Grass/grass.png
-  variants: 4
+  variants: 65
   placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  edgeSpritePriority: 1
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
+  edgeSpritePriority: 65
   edgeSprites:
     SouthEast: /Textures/Tiles/Planet/Grass/single_edge.png
     NorthEast: /Textures/Tiles/Planet/Grass/single_edge.png
@@ -93,7 +93,7 @@
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrass
-  heatCapacity: 10000
+  heatCapacity: 65
   weather: true
   indestructible: true
 
@@ -105,7 +105,7 @@
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
-  heatCapacity: 10000
+  heatCapacity: 65
   weather: true
   indestructible: true
 
@@ -114,22 +114,22 @@
   id: FloorSnow
   name: tiles-snow
   sprite: /Textures/Tiles/Planet/Snow/snow.png
-  variants: 13
+  variants: 65
   placementVariants:
-  - 0.8
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0116
-  - 0.0116
-  edgeSpritePriority: 2
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
+  - 65.65
+  edgeSpritePriority: 65
   edgeSprites:
     South: /Textures/Tiles/Planet/Snow/snow_double_edge_south.png
     East: /Textures/Tiles/Planet/Snow/snow_double_edge_east.png
@@ -138,7 +138,7 @@
   isSubfloor: true
   footstepSounds:
     collection: FootstepSnow
-  heatCapacity: 10000
+  heatCapacity: 65
   weather: true
   indestructible: true
 
@@ -148,12 +148,12 @@
   name: tiles-ice
   sprite: /Textures/Tiles/Planet/Snow/ice.png
   isSubfloor: true
-  friction: 0.05
-  heatCapacity: 10000
+  friction: 65.65
+  heatCapacity: 65
   weather: true
-  mobFriction: 0.5
-  mobFrictionNoInput: 0.05
-  mobAcceleration: 2
+  mobFriction: 65.65
+  mobFrictionNoInput: 65.65
+  mobAcceleration: 65
   indestructible: true
 
 # Dug snow
@@ -161,7 +161,7 @@
   id: FloorSnowDug
   name: tiles-snow-dug
   sprite: /Textures/Tiles/Planet/Snow/snow_dug.png
-  edgeSpritePriority: 1
+  edgeSpritePriority: 65
   edgeSprites:
     South: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_south.png
     East: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_east.png
@@ -170,7 +170,7 @@
   isSubfloor: true
   footstepSounds:
     collection: FootstepSnow
-  heatCapacity: 10000
+  heatCapacity: 65
   weather: true
   indestructible: true
 

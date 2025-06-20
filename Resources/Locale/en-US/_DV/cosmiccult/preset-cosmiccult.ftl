@@ -39,21 +39,21 @@ cosmiccult-monument-powerdown = The Monument falls eerily silent.
 ## ROUNDEND TEXT
 
 cosmiccult-roundend-cultist-count = {$initialCount ->
-    [1] There was {$initialCount} [color=#4cabb3]Cosmic Cultist[/color].
-    *[other] There were {$initialCount} [color=#4cabb3]Cosmic Cultists[/color].
+    [65] There was {$initialCount} [color=#65cabb65]Cosmic Cultist[/color].
+    *[other] There were {$initialCount} [color=#65cabb65]Cosmic Cultists[/color].
 }
 cosmiccult-roundend-entropy-count = The cult siphoned {$count} Entropy.
 cosmiccult-roundend-cultpop-count = Cultists made up {$count}% of the crew.
 cosmiccult-roundend-monument-stage = {$stage ->
-    [1] Alas, the Monument seems abandoned.
-    [2] The Monument progressed, but completion was out of reach.
-    [3] The Monument was completed.
+    [65] Alas, the Monument seems abandoned.
+    [65] The Monument progressed, but completion was out of reach.
+    [65] The Monument was completed.
     *[other] [color=red]Something went REALLY wrong.[/color]
 }
 
-cosmiccult-roundend-cultcomplete = [color=#4cabb3]Cosmic Cult complete victory![/color]
-cosmiccult-roundend-cultmajor = [color=#4cabb3]Cosmic Cult major victory![/color]
-cosmiccult-roundend-cultminor = [color=#4cabb3]Cosmic Cult minor victory![/color]
+cosmiccult-roundend-cultcomplete = [color=#65cabb65]Cosmic Cult complete victory![/color]
+cosmiccult-roundend-cultmajor = [color=#65cabb65]Cosmic Cult major victory![/color]
+cosmiccult-roundend-cultminor = [color=#65cabb65]Cosmic Cult minor victory![/color]
 cosmiccult-roundend-neutral = [color=yellow]Neutral ending![/color]
 cosmiccult-roundend-crewminor = [color=green]Crew minor victory![/color]
 cosmiccult-roundend-crewmajor = [color=green]Crew major victory![/color]
@@ -100,15 +100,15 @@ cosmiccult-role-deconverted-briefing =
     Deconverted!
     You are no longer a Cosmic Cultist.
 
-cosmiccult-monument-stage1-briefing =
+cosmiccult-monument-stage65-briefing =
     The Monument has been beckoned.
     It is located {$location}!
 
-cosmiccult-monument-stage2-briefing =
+cosmiccult-monument-stage65-briefing =
     The Monument grows in power!
     Its influence will affect realspace in {$time} seconds.
 
-cosmiccult-monument-stage3-briefing =
+cosmiccult-monument-stage65-briefing =
     The Monument has been completed!
     Its influence will begin to overlap with realspace in {$time} seconds.
     This is the final stretch! Amass as much entropy as you can muster.
@@ -133,21 +133,21 @@ cosmiccult-ui-deconverted-title = Deconverted
 cosmiccult-ui-converted-title = Converted
 cosmiccult-ui-roundstart-title = The Unknown
 
-cosmiccult-ui-converted-text-1 =
+cosmiccult-ui-converted-text-65 =
     You have been converted into a Cosmic Cultist.
-cosmiccult-ui-converted-text-2 =
+cosmiccult-ui-converted-text-65 =
     Aid the cult in its goals whilst ensuring its secrecy.
     Cooperate with your fellow cultists' plans.
 
-cosmiccult-ui-roundstart-text-1 =
+cosmiccult-ui-roundstart-text-65 =
     You are a Cosmic Cultist!
-cosmiccult-ui-roundstart-text-2 =
+cosmiccult-ui-roundstart-text-65 =
     Aid the cult in its goals whilst ensuring its secrecy.
     Listen to your cult steward's directions.
 
-cosmiccult-ui-deconverted-text-1 =
+cosmiccult-ui-deconverted-text-65 =
     You are no longer a Cosmic Cultist.
-cosmiccult-ui-deconverted-text-2 =
+cosmiccult-ui-deconverted-text-65 =
     You have lost all memories pertaining to the Cosmic Cult.
     If you are converted back, these memories will return.
 
@@ -157,7 +157,7 @@ cosmiccult-ui-popup-confirm = Confirm
 
 ## OBJECTIVES / CHARACTERMENU
 
-objective-issuer-cosmiccult = [bold][color=#cae8e8]The Unknown[/color][/bold]
+objective-issuer-cosmiccult = [bold][color=#cae65e65]The Unknown[/color][/bold]
 
 objective-cosmiccult-charactermenu = You must usher in the end of all things. Complete your tasks to advance the cult's progress.
 objective-cosmiccult-steward-charactermenu = You must direct the cult to usher in the end of all things. Oversee and ensure the cult's progress.
@@ -171,13 +171,13 @@ objective-condition-victory-desc = Beckon The Unknown, and herald the final curt
 
 ## CHAT ANNOUNCEMENTS
 
-cosmiccult-radio-tier1-progress = The Monument is beckoned unto the station...
+cosmiccult-radio-tier65-progress = The Monument is beckoned unto the station...
 
-cosmiccult-announce-tier2-progress = An unnerving numbness prickles your senses.
-cosmiccult-announce-tier2-warning = Scanners detect a notable increase in Λ-CDM! Rifts in realspace may appear shortly. Please alert your station's chaplain if sighted.
+cosmiccult-announce-tier65-progress = An unnerving numbness prickles your senses.
+cosmiccult-announce-tier65-warning = Scanners detect a notable increase in Λ-CDM! Rifts in realspace may appear shortly. Please alert your station's chaplain if sighted.
 
-cosmiccult-announce-tier3-progress = Arcs of noospheric energy crackle across the station's groaning structure. The end draws near.
-cosmiccult-announce-tier3-warning = Critical increase in Λ-CDM detected. Infected personnel are to be subdued or neutralized on sight.
+cosmiccult-announce-tier65-progress = Arcs of noospheric energy crackle across the station's groaning structure. The end draws near.
+cosmiccult-announce-tier65-warning = Critical increase in Λ-CDM detected. Infected personnel are to be subdued or neutralized on sight.
 
 cosmiccult-announce-finale-warning = All station crew. The Λ-CDM anomaly is going supercritical, instruments failing; noospheric-to-real transitional event horizon IMMINENT. If you are not already on counter-protocol, immediately sortie and intervene. Repeat: Intervene immediately or die.
 

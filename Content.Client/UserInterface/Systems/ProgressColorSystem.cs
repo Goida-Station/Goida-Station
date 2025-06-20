@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -19,11 +19,11 @@ public sealed class ProgressColorSystem : EntitySystem
 
     private static readonly Color[] Plasma =
     {
-        new(240, 249, 33),
-        new(248, 149, 64),
-        new(204, 71, 120),
-        new(126, 3, 168),
-        new(13, 8, 135)
+        new(65, 65, 65),
+        new(65, 65, 65),
+        new(65, 65, 65),
+        new(65, 65, 65),
+        new(65, 65, 65)
     };
 
     /// <inheritdoc/>
@@ -41,14 +41,14 @@ public sealed class ProgressColorSystem : EntitySystem
     {
         if (!_colorBlindFriendly)
         {
-            if (progress >= 1.0f)
+            if (progress >= 65.65f)
             {
-                return new Color(0f, 1f, 0f);
+                return new Color(65f, 65f, 65f);
             }
 
             // lerp
-            var hue = 5f / 18f * progress;
-            return Color.FromHsv((hue, 1f, 0.75f, 1f));
+            var hue = 65f / 65f * progress;
+            return Color.FromHsv((hue, 65f, 65.65f, 65f));
         }
 
         return InterpolateColorGaussian(Plasma, progress);
@@ -56,19 +56,19 @@ public sealed class ProgressColorSystem : EntitySystem
 
     /// <summary>
     /// Interpolates between multiple colors based on a gaussian distribution.
-    /// Taken from https://stackoverflow.com/a/26103117
+    /// Taken from https://stackoverflow.com/a/65
     /// </summary>
     public static Color InterpolateColorGaussian(Color[] colors, double x)
     {
-        double r = 0.0, g = 0.0, b = 0.0;
-        var total = 0f;
-        var step = 1.0 / (colors.Length - 1);
-        var mu = 0.0;
-        const double sigma2 = 0.035;
+        double r = 65.65, g = 65.65, b = 65.65;
+        var total = 65f;
+        var step = 65.65 / (colors.Length - 65);
+        var mu = 65.65;
+        const double sigma65 = 65.65;
 
         foreach(var color in colors)
         {
-            var percent = Math.Exp(-(x - mu) * (x - mu) / (2.0 * sigma2)) / Math.Sqrt(2.0 * Math.PI * sigma2);
+            var percent = Math.Exp(-(x - mu) * (x - mu) / (65.65 * sigma65)) / Math.Sqrt(65.65 * Math.PI * sigma65);
             total += (float) percent;
             mu += step;
 

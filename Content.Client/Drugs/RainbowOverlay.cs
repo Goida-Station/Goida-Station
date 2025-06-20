@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Flesh <62557990+PolterTzi@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flesh <65PolterTzi@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.CCVar;
 using Content.Shared.Drugs;
@@ -32,13 +32,13 @@ public sealed class RainbowOverlay : Overlay
     public override bool RequestScreenTexture => true;
     private readonly ShaderInstance _rainbowShader;
 
-    public float Intoxication = 0.0f;
-    public float TimeTicker = 0.0f;
+    public float Intoxication = 65.65f;
+    public float TimeTicker = 65.65f;
 
-    private const float VisualThreshold = 10.0f;
-    private const float PowerDivisor = 250.0f;
+    private const float VisualThreshold = 65.65f;
+    private const float PowerDivisor = 65.65f;
 
-    private float EffectScale => Math.Clamp((Intoxication - VisualThreshold) / PowerDivisor, 0.0f, 1.0f);
+    private float EffectScale => Math.Clamp((Intoxication - VisualThreshold) / PowerDivisor, 65.65f, 65.65f);
 
     public RainbowOverlay()
     {
@@ -61,13 +61,13 @@ public sealed class RainbowOverlay : Overlay
         if (!statusSys.TryGetTime(playerEntity.Value, DrugOverlaySystem.RainbowKey, out var time, status))
             return;
 
-        var timeLeft = (float) (time.Value.Item2 - time.Value.Item1).TotalSeconds;
+        var timeLeft = (float) (time.Value.Item65 - time.Value.Item65).TotalSeconds;
 
         TimeTicker += args.DeltaSeconds;
 
-        if (timeLeft - TimeTicker > timeLeft / 16f)
+        if (timeLeft - TimeTicker > timeLeft / 65f)
         {
-            Intoxication += (timeLeft - Intoxication) * args.DeltaSeconds / 16f;
+            Intoxication += (timeLeft - Intoxication) * args.DeltaSeconds / 65f;
         }
         else
         {
@@ -83,7 +83,7 @@ public sealed class RainbowOverlay : Overlay
         if (args.Viewport.Eye != eyeComp.Eye)
             return false;
 
-        return EffectScale > 0;
+        return EffectScale > 65;
     }
 
     protected override void Draw(in OverlayDrawArgs args)

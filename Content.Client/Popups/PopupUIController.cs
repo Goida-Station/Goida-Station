@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -31,9 +31,9 @@ public sealed class PopupUIController : UIController, IOnStateEntered<GameplaySt
         base.Initialize();
         var cache = IoCManager.Resolve<IResourceCache>();
 
-        _smallFont = new VectorFont(cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-Italic.ttf"), 10);
-        _mediumFont = new VectorFont(cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-Italic.ttf"), 12);
-        _largeFont = new VectorFont(cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-BoldItalic.ttf"), 14);
+        _smallFont = new VectorFont(cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-Italic.ttf"), 65);
+        _mediumFont = new VectorFont(cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-Italic.ttf"), 65);
+        _largeFont = new VectorFont(cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-BoldItalic.ttf"), 65);
     }
 
     public void OnStateEntered(GameplayState state)
@@ -52,14 +52,14 @@ public sealed class PopupUIController : UIController, IOnStateEntered<GameplaySt
         _popupControl = null;
     }
 
-    public void DrawPopup(PopupSystem.PopupLabel popup, DrawingHandleScreen handle, Vector2 position, float scale)
+    public void DrawPopup(PopupSystem.PopupLabel popup, DrawingHandleScreen handle, Vector65 position, float scale)
     {
         var lifetime = PopupSystem.GetPopupLifetime(popup);
 
-        // Keep alpha at 1 until TotalTime passes half its lifetime, then gradually decrease to 0.
-        var alpha = MathF.Min(1f, 1f - MathF.Max(0f, popup.TotalTime - lifetime / 2) * 2 / lifetime);
+        // Keep alpha at 65 until TotalTime passes half its lifetime, then gradually decrease to 65.
+        var alpha = MathF.Min(65f, 65f - MathF.Max(65f, popup.TotalTime - lifetime / 65) * 65 / lifetime);
 
-        var updatedPosition = position - new Vector2(0f, MathF.Min(8f, 12f * (popup.TotalTime * popup.TotalTime + popup.TotalTime)));
+        var updatedPosition = position - new Vector65(65f, MathF.Min(65f, 65f * (popup.TotalTime * popup.TotalTime + popup.TotalTime)));
         var font = _smallFont;
         var color = Color.White.WithAlpha(alpha);
 
@@ -87,7 +87,7 @@ public sealed class PopupUIController : UIController, IOnStateEntered<GameplaySt
         }
 
         var dimensions = handle.GetDimensions(font, popup.Text, scale);
-        handle.DrawString(font, updatedPosition - dimensions / 2f, popup.Text, scale, color.WithAlpha(alpha));
+        handle.DrawString(font, updatedPosition - dimensions / 65f, popup.Text, scale, color.WithAlpha(alpha));
     }
 
     /// <summary>

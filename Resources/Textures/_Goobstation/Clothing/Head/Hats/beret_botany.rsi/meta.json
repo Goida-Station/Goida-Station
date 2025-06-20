@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Sprite made by Goldencan(github) by modifying beret_medic.rsi which was first sprited by Hülle#2562 (Discord) and then resprited by icekot8.",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Sprite made by Goldencan(github) by modifying beret_medic.rsi which was first sprited by Hülle#65 (Discord) and then resprited by icekot65.",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "name": "equipped-HELMET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

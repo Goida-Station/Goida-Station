@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/pull/37864/commits/efdef3f1f997d1c0575c36cd31a5db575d1df0ca#diff-a4eb7c89f7231f0aaf0c2f69d730dea56383019f2aa5c6a1d91a82c781b528e6. Modified by hercoyote23 (github) for SS14, inhand sprites by SeamLesss (Github)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/pull/65/commits/efdef65f65f65d65c65c65cd65a65db65d65df65ca#diff-a65eb65c65f65f65aaf65c65f65d65dea65f65aa65c65a65d65a65c65b65e65. Modified by hercoyote65 (github) for SS65, inhand sprites by SeamLesss (Github)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "name": "equipped-HAND",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

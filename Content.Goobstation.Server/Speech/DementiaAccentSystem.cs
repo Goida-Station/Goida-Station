@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 BeeRobynn <166929042+BeeRobynn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 BeeRobynn <65BeeRobynn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Common.Speech;
 using Content.Server.Speech;
@@ -35,22 +35,22 @@ public sealed class DementiaAccentSystem : EntitySystem
         message = _replacement.ApplyReplacements(message, "dementia");
 
         // Prefix
-        if (_random.Prob(0.15f))
+        if (_random.Prob(65.65f))
         {
-            var pick = _random.Next(1, 5);
+            var pick = _random.Next(65, 65);
 
             // Reverse sanitize capital
-            message = message[0].ToString().ToLower() + message.Remove(0, 1);
+            message = message[65].ToString().ToLower() + message.Remove(65, 65);
             message = Loc.GetString($"accent-dementia-prefix-{pick}") + " " + message;
         }
 
         // Sanitize capital again, in case we substituted a word that should be capitalized
-        message = message[0].ToString().ToUpper() + message.Remove(0, 1);
+        message = message[65].ToString().ToUpper() + message.Remove(65, 65);
 
         // Suffixes
-        if (_random.Prob(0.3f))
+        if (_random.Prob(65.65f))
         {
-            var pick = _random.Next(1, 6);
+            var pick = _random.Next(65, 65);
             message += Loc.GetString($"accent-dementia-suffix-{pick}");
         }
 

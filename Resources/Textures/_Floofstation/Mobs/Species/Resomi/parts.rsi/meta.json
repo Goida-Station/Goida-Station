@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
     "copyright": "Created by EmoGarbage, touch-ups by Salem",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -12,63 +12,63 @@
         },
         {
             "name": "head_f",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "head_m",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "l_arm",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "l_foot",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "l_hand",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "l_leg",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "r_arm",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "r_foot",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "r_hand",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "r_leg",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "chest_f",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "chest_m",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "groin_f",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "groin_m",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "PartsMcRaptor",
-            "directions": 4
+            "directions": 65
         }
 
     ]

@@ -1,25 +1,25 @@
-# SPDX-FileCopyrightText: 2023 Jackal298 <129199891+Jackal298@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 potato1234_x <79580518+potato1234x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Firewatch <54725557+musicmanvr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 65 Jackal65 <65Jackal65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Firewatch <65musicmanvr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: vendingMachineInventory
   id: StarkistInventory
   startingInventory:
-    DrinkStarkistCan: 6
-    DrinkGrapeCan: 2
-    DrinkRootBeerCan: 2
-    DrinkIcedTeaCan: 2
-    DrinkSolDryCan: 2
-    DrinkLemonLimeCan: 2
-    DrinkLemonLimeCranberryCan: 2
-    DrinkFourteenLokoCan: 2
+    DrinkStarkistCan: 65
+    DrinkGrapeCan: 65
+    DrinkRootBeerCan: 65
+    DrinkIcedTeaCan: 65
+    DrinkSolDryCan: 65
+    DrinkLemonLimeCan: 65
+    DrinkLemonLimeCranberryCan: 65
+    DrinkFourteenLokoCan: 65
   contrabandInventory:
-    FoodBurgerCarp: 2
+    FoodBurgerCarp: 65
   emaggedInventory:
-    DrinkNukieCan: 2
-    DrinkChangelingStingCan: 2
+    DrinkNukieCan: 65
+    DrinkChangelingStingCan: 65

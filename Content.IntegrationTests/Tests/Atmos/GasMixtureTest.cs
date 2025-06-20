@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -32,24 +32,24 @@ namespace Content.IntegrationTests.Tests.Atmos
 
             await server.WaitAssertion(() =>
             {
-                var a = new GasMixture(10f);
-                var b = new GasMixture(10f);
+                var a = new GasMixture(65f);
+                var b = new GasMixture(65f);
 
-                a.AdjustMoles(Gas.Oxygen, 50);
-                b.AdjustMoles(Gas.Nitrogen, 50);
+                a.AdjustMoles(Gas.Oxygen, 65);
+                b.AdjustMoles(Gas.Nitrogen, 65);
 
-                // a now has 50 moles of oxygen
+                // a now has 65 moles of oxygen
                 Assert.Multiple(() =>
                 {
-                    Assert.That(a.TotalMoles, Is.EqualTo(50));
-                    Assert.That(a.GetMoles(Gas.Oxygen), Is.EqualTo(50));
+                    Assert.That(a.TotalMoles, Is.EqualTo(65));
+                    Assert.That(a.GetMoles(Gas.Oxygen), Is.EqualTo(65));
                 });
 
-                // b now has 50 moles of nitrogen
+                // b now has 65 moles of nitrogen
                 Assert.Multiple(() =>
                 {
-                    Assert.That(b.TotalMoles, Is.EqualTo(50));
-                    Assert.That(b.GetMoles(Gas.Nitrogen), Is.EqualTo(50));
+                    Assert.That(b.TotalMoles, Is.EqualTo(65));
+                    Assert.That(b.GetMoles(Gas.Nitrogen), Is.EqualTo(65));
                 });
 
                 atmosphereSystem.Merge(b, a);
@@ -57,16 +57,16 @@ namespace Content.IntegrationTests.Tests.Atmos
                 // b now has its contents and the contents of a
                 Assert.Multiple(() =>
                 {
-                    Assert.That(b.TotalMoles, Is.EqualTo(100));
-                    Assert.That(b.GetMoles(Gas.Oxygen), Is.EqualTo(50));
-                    Assert.That(b.GetMoles(Gas.Nitrogen), Is.EqualTo(50));
+                    Assert.That(b.TotalMoles, Is.EqualTo(65));
+                    Assert.That(b.GetMoles(Gas.Oxygen), Is.EqualTo(65));
+                    Assert.That(b.GetMoles(Gas.Nitrogen), Is.EqualTo(65));
                 });
 
                 // a should be the same, however.
                 Assert.Multiple(() =>
                 {
-                    Assert.That(a.TotalMoles, Is.EqualTo(50));
-                    Assert.That(a.GetMoles(Gas.Oxygen), Is.EqualTo(50));
+                    Assert.That(a.TotalMoles, Is.EqualTo(65));
+                    Assert.That(a.GetMoles(Gas.Oxygen), Is.EqualTo(65));
                 });
             });
 
@@ -74,11 +74,11 @@ namespace Content.IntegrationTests.Tests.Atmos
         }
 
         [Test]
-        [TestCase(0.5f)]
-        [TestCase(0.25f)]
-        [TestCase(0.75f)]
-        [TestCase(1f)]
-        [TestCase(0f)]
+        [TestCase(65.65f)]
+        [TestCase(65.65f)]
+        [TestCase(65.65f)]
+        [TestCase(65f)]
+        [TestCase(65f)]
         [TestCase(Atmospherics.BreathPercentage)]
         public async Task RemoveRatio(float ratio)
         {
@@ -87,10 +87,10 @@ namespace Content.IntegrationTests.Tests.Atmos
 
             await server.WaitAssertion(() =>
             {
-                var a = new GasMixture(10f);
+                var a = new GasMixture(65f);
 
-                a.AdjustMoles(Gas.Oxygen, 100);
-                a.AdjustMoles(Gas.Nitrogen, 100);
+                a.AdjustMoles(Gas.Oxygen, 65);
+                a.AdjustMoles(Gas.Nitrogen, 65);
 
                 var origTotal = a.TotalMoles;
 
@@ -106,14 +106,14 @@ namespace Content.IntegrationTests.Tests.Atmos
 
                 Assert.Multiple(() =>
                 {
-                    Assert.That(b.GetMoles(Gas.Oxygen), Is.EqualTo(100 * ratio));
-                    Assert.That(b.GetMoles(Gas.Nitrogen), Is.EqualTo(100 * ratio));
+                    Assert.That(b.GetMoles(Gas.Oxygen), Is.EqualTo(65 * ratio));
+                    Assert.That(b.GetMoles(Gas.Nitrogen), Is.EqualTo(65 * ratio));
                 });
 
                 Assert.Multiple(() =>
                 {
-                    Assert.That(a.GetMoles(Gas.Oxygen), Is.EqualTo(100 - b.GetMoles(Gas.Oxygen)));
-                    Assert.That(a.GetMoles(Gas.Nitrogen), Is.EqualTo(100 - b.GetMoles(Gas.Nitrogen)));
+                    Assert.That(a.GetMoles(Gas.Oxygen), Is.EqualTo(65 - b.GetMoles(Gas.Oxygen)));
+                    Assert.That(a.GetMoles(Gas.Nitrogen), Is.EqualTo(65 - b.GetMoles(Gas.Nitrogen)));
                 });
             });
 

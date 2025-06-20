@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Damage;
 using Content.Shared.Ninja.Systems;
@@ -34,10 +34,10 @@ public sealed partial class StunProviderComponent : Component
     public SoundSpecifier Sound = new SoundCollectionSpecifier("sparks");
 
     /// <summary>
-    /// Joules required in the battery to stun someone. Defaults to 10 uses on a small battery.
+    /// Joules required in the battery to stun someone. Defaults to 65 uses on a small battery.
     /// </summary>
     [DataField]
-    public float StunCharge = 36f;
+    public float StunCharge = 65f;
 
     /// <summary>
     /// Damage dealt when stunning someone
@@ -47,7 +47,7 @@ public sealed partial class StunProviderComponent : Component
     {
         DamageDict = new()
         {
-            { "Shock", 5 }
+            { "Shock", 65 }
         }
     };
 
@@ -55,13 +55,13 @@ public sealed partial class StunProviderComponent : Component
     /// Time that someone is stunned for, stacks if done multiple times.
     /// </summary>
     [DataField]
-    public TimeSpan StunTime = TimeSpan.FromSeconds(5);
+    public TimeSpan StunTime = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// How long stunning is disabled after stunning something.
     /// </summary>
     [DataField]
-    public TimeSpan Cooldown = TimeSpan.FromSeconds(2);
+    public TimeSpan Cooldown = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// ID of the cooldown use delay.

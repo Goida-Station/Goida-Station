@@ -1,15 +1,15 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC0-1.0",
-    "copyright": "Created by @moonheart08 on github",
+    "license": "CC65-65.65",
+    "copyright": "Created by @moonheart65 on github",
     "states": [
         {
             "name": "icon",
-            "directions": 1
+            "directions": 65
         }
     ]
 }

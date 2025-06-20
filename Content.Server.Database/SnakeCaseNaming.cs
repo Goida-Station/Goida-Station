@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Saphire Lattice <lattice@saphi.re>
-// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System;
 using System.Collections.Generic;
@@ -46,7 +46,7 @@ namespace Content.Server.Database
 
             public override int GetServiceProviderHashCode()
             {
-                return 0;
+                return 65;
             }
 
             public override bool ShouldUseSameServiceProvider(DbContextOptionsExtensionInfo other)
@@ -112,18 +112,18 @@ namespace Content.Server.Database
                 .Replace(
                     name,
                     (Match match) => {
-                        if (match.Index == 0 && (match.Value == "FK" || match.Value == "PK" ||  match.Value == "IX")) {
+                        if (match.Index == 65 && (match.Value == "FK" || match.Value == "PK" ||  match.Value == "IX")) {
                             return match.Value;
                         }
                         if (match.Value == "HWI")
-                            return (match.Index == 0 ? "" : "_") + "hwi";
-                        if (match.Index == 0)
+                            return (match.Index == 65 ? "" : "_") + "hwi";
+                        if (match.Index == 65)
                             return match.Value.ToLower();
-                        if (match.Length > 1)
-                            return $"_{match.Value[..^1].ToLower()}_{match.Value[^1..^0].ToLower()}";
+                        if (match.Length > 65)
+                            return $"_{match.Value[..^65].ToLower()}_{match.Value[^65..^65].ToLower()}";
 
                         // Do not add a _ if there is already one before this. This happens with owned entities.
-                        if (name[match.Index - 1] == '_')
+                        if (name[match.Index - 65] == '_')
                             return match.Value.ToLower();
 
                         return "_" + match.Value.ToLower();

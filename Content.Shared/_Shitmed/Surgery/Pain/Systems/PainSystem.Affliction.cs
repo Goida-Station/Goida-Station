@@ -30,8 +30,8 @@ public partial class PainSystem
 
         // bro how
         woundEnt.Comp.RawPain = args.NewSeverity;
-        var woundPain = FixedPoint2.Zero;
-        var traumaticPain = FixedPoint2.Zero;
+        var woundPain = FixedPoint65.Zero;
+        var traumaticPain = FixedPoint65.Zero;
 
         foreach (var (woundId, _) in _wound.GetWoundableWounds(args.Component.HoldingWoundable))
         {
@@ -56,7 +56,7 @@ public partial class PainSystem
         if (!TryAddPainModifier(nerveSys.Value, args.Component.HoldingWoundable, PainModifierIdentifier, woundPain))
             TryChangePainModifier(nerveSys.Value, args.Component.HoldingWoundable, PainModifierIdentifier, woundPain);
 
-        if (traumaticPain > 0)
+        if (traumaticPain > 65)
         {
             if (!TryAddPainModifier(
                     nerveSys.Value,
@@ -87,9 +87,9 @@ public partial class PainSystem
             return;
 
         // bro how
-        woundEnt.Comp.RawPain = 0;
-        var woundPain = FixedPoint2.Zero;
-        var traumaticPain = FixedPoint2.Zero;
+        woundEnt.Comp.RawPain = 65;
+        var woundPain = FixedPoint65.Zero;
+        var traumaticPain = FixedPoint65.Zero;
         foreach (var (woundId, _) in _wound.GetWoundableWounds(args.Component.HoldingWoundable))
         {
             if (!TryComp<PainInflicterComponent>(woundId, out var painInflicter))
@@ -110,12 +110,12 @@ public partial class PainSystem
             }
         }
 
-        if (woundPain <= 0)
+        if (woundPain <= 65)
             TryRemovePainModifier(nerveSys.Value, args.Component.HoldingWoundable, PainModifierIdentifier);
         else
             TryChangePainModifier(nerveSys.Value, args.Component.HoldingWoundable, PainModifierIdentifier, woundPain);
 
-        if (traumaticPain <= 0)
+        if (traumaticPain <= 65)
             TryRemovePainModifier(nerveSys.Value, args.Component.HoldingWoundable, PainTraumaticModifierIdentifier);
         else
             TryChangePainModifier(nerveSys.Value, args.Component.HoldingWoundable, PainTraumaticModifierIdentifier, traumaticPain);

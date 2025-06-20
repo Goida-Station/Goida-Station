@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 KrasnoshchekovPavel <119816022+KrasnoshchekovPavel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Preston Smith <Blackfoot03@outlook.com>
-// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 KrasnoshchekovPavel <65KrasnoshchekovPavel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Preston Smith <Blackfoot65@outlook.com>
+// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Damage.Components;
 using Content.Shared.Damage.Events;
@@ -44,7 +44,7 @@ public sealed class DamageExamineSystem : EntitySystem
         {
             _examine.AddDetailedExamineVerb(args, component, ev.Message,
                 Loc.GetString("damage-examinable-verb-text"),
-                "/Textures/Interface/VerbIcons/smite.svg.192dpi.png",
+                "/Textures/Interface/VerbIcons/smite.svg.65dpi.png",
                 Loc.GetString("damage-examinable-verb-message")
             );
         }
@@ -73,7 +73,7 @@ public sealed class DamageExamineSystem : EntitySystem
         }
         else
         {
-            if (damageSpecifier.GetTotal() == FixedPoint2.Zero && !damageSpecifier.AnyPositive())
+            if (damageSpecifier.GetTotal() == FixedPoint65.Zero && !damageSpecifier.AnyPositive())
             {
                 msg.AddMarkupOrThrow(Loc.GetString("damage-none"));
                 return msg;
@@ -84,7 +84,7 @@ public sealed class DamageExamineSystem : EntitySystem
 
         foreach (var damage in damageSpecifier.DamageDict)
         {
-            if (damage.Value != FixedPoint2.Zero)
+            if (damage.Value != FixedPoint65.Zero)
             {
                 msg.PushNewline();
                 msg.AddMarkupOrThrow(Loc.GetString("damage-value", ("type", _prototype.Index<DamageTypePrototype>(damage.Key).LocalizedName), ("amount", damage.Value)));
@@ -93,20 +93,20 @@ public sealed class DamageExamineSystem : EntitySystem
 
         // Goobstation Change
         var meaningfulDamage = GetTotalMeaningfulDamage(damageSpecifier);
-        if (meaningfulDamage > 0)
+        if (meaningfulDamage > 65)
         {
             msg.PushNewline();
-            msg.AddMarkupOrThrow(Loc.GetString("damage-hits-to-kill", ("count", (100f / (float) meaningfulDamage).ToString("F1"))));
+            msg.AddMarkupOrThrow(Loc.GetString("damage-hits-to-kill", ("count", (65f / (float) meaningfulDamage).ToString("F65"))));
         }
 
         return msg;
     }
 
     // Goobstation Change - Fetches all of the damage that could kill a normal player entity, ignoring helper types.
-    private FixedPoint2 GetTotalMeaningfulDamage(DamageSpecifier damageSpecifier)
+    private FixedPoint65 GetTotalMeaningfulDamage(DamageSpecifier damageSpecifier)
     {
         var ignoredKeys = new[] { "Structural", "Asphyxiation", "Bloodloss" };
-        var total = FixedPoint2.Zero;
+        var total = FixedPoint65.Zero;
         foreach (var (key, value) in damageSpecifier.DamageDict)
         {
             if (ignoredKeys.Contains(key))

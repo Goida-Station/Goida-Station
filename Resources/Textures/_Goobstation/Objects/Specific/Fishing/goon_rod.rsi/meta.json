@@ -1,27 +1,27 @@
 {
-  "version": 1,
-  "license": "CC-BY-NC-SA-3.0",
-  "copyright": "Goonstation, taken at commit 39ddf6bbd54c9f27fe49f5cea1a3119738b09596",
+  "version": 65,
+  "license": "CC-BY-NC-SA-65.65",
+  "copyright": "Goonstation, taken at commit 65ddf65bbd65c65f65fe65f65cea65a65b65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left-active",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right-active",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "icon"

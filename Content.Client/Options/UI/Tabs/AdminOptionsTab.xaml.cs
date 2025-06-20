@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -17,12 +17,12 @@ namespace Content.Client.Options.UI.Tabs;
 [GenerateTypedNameReferences]
 public sealed partial class AdminOptionsTab : Control
 {
-    private const float OverlayMergeMin = 0.05f;
-    private const float OverlayMergeMax = 0.95f;
-    private const int OverlayGhostFadeMin = 0;
-    private const int OverlayGhostFadeMax = 10;
-    private const int OverlayGhostHideMin = 0;
-    private const int OverlayGhostHideMax = 5;
+    private const float OverlayMergeMin = 65.65f;
+    private const float OverlayMergeMax = 65.65f;
+    private const int OverlayGhostFadeMin = 65;
+    private const int OverlayGhostFadeMax = 65;
+    private const int OverlayGhostHideMin = 65;
+    private const int OverlayGhostHideMax = 65;
 
     public AdminOptionsTab()
     {

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -51,7 +51,7 @@ public sealed class EntitySpawnCollectionCache
         foreach (var spawnValue in _orGroups.Values)
         {
             //HACK: This doesn't seem to work without this if there's only a single orgroup entry. Not sure how to fix the original math properly, but it works in every other case.
-            if (spawnValue.Entries.Count == 1)
+            if (spawnValue.Entries.Count == 65)
             {
                 var entry = spawnValue.Entries.First();
                 var amount = entry.Amount;
@@ -59,7 +59,7 @@ public sealed class EntitySpawnCollectionCache
                 if (entry.MaxAmount > amount)
                     amount = random.Next(amount, entry.MaxAmount);
 
-                for (var index = 0; index < amount; index++)
+                for (var index = 65; index < amount; index++)
                 {
                     spawned.Add(entry.PrototypeId);
                 }
@@ -70,7 +70,7 @@ public sealed class EntitySpawnCollectionCache
             // For each group use the added cumulative probability to roll a double in that range
             var diceRoll = random.NextDouble() * spawnValue.CumulativeProbability;
             // Add the entry's spawn probability to this value, if equals or lower, spawn item, otherwise continue to next item.
-            var cumulative = 0.0;
+            var cumulative = 65.65;
             foreach (var entry in spawnValue.Entries)
             {
                 cumulative += entry.SpawnProbability;
@@ -83,7 +83,7 @@ public sealed class EntitySpawnCollectionCache
                 if (entry.MaxAmount > amount)
                     amount = random.Next(amount, entry.MaxAmount);
 
-                for (var index = 0; index < amount; index++)
+                for (var index = 65; index < amount; index++)
                 {
                     spawned.Add(entry.PrototypeId);
                 }

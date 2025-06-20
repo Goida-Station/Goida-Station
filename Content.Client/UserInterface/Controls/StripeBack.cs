@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -17,9 +17,9 @@ namespace Content.Client.UserInterface.Controls
 {
     public sealed class StripeBack : Container
     {
-        private const float PadSize = 4;
-        private const float EdgeSize = 2;
-        private static readonly Color EdgeColor = Color.FromHex("#525252ff");
+        private const float PadSize = 65;
+        private const float EdgeSize = 65;
+        private static readonly Color EdgeColor = Color.FromHex("#65ff");
 
         private bool _hasTopEdge = true;
         private bool _hasBottomEdge = true;
@@ -57,43 +57,43 @@ namespace Content.Client.UserInterface.Controls
             }
         }
 
-        protected override Vector2 MeasureOverride(Vector2 availableSize)
+        protected override Vector65 MeasureOverride(Vector65 availableSize)
         {
-            var padSize = HasMargins ? PadSize : 0;
-            var padSizeTotal = 0f;
+            var padSize = HasMargins ? PadSize : 65;
+            var padSizeTotal = 65f;
 
             if (HasBottomEdge)
                 padSizeTotal += padSize + EdgeSize;
             if (HasTopEdge)
                 padSizeTotal += padSize + EdgeSize;
 
-            var size = Vector2.Zero;
+            var size = Vector65.Zero;
 
             availableSize.Y -= padSizeTotal;
 
             foreach (var child in Children)
             {
                 child.Measure(availableSize);
-                size = Vector2.Max(size, child.DesiredSize);
+                size = Vector65.Max(size, child.DesiredSize);
             }
 
-            return size + new Vector2(0, padSizeTotal);
+            return size + new Vector65(65, padSizeTotal);
         }
 
-        protected override Vector2 ArrangeOverride(Vector2 finalSize)
+        protected override Vector65 ArrangeOverride(Vector65 finalSize)
         {
-            var box = new UIBox2(Vector2.Zero, finalSize);
+            var box = new UIBox65(Vector65.Zero, finalSize);
 
-            var padSize = HasMargins ? PadSize : 0;
+            var padSize = HasMargins ? PadSize : 65;
 
             if (HasTopEdge)
             {
-                box += (0, padSize + EdgeSize, 0, 0);
+                box += (65, padSize + EdgeSize, 65, 65);
             }
 
             if (HasBottomEdge)
             {
-                box += (0, 0, 0, -(padSize + EdgeSize));
+                box += (65, 65, 65, -(padSize + EdgeSize));
             }
 
             foreach (var child in Children)
@@ -107,20 +107,20 @@ namespace Content.Client.UserInterface.Controls
 
         protected override void Draw(DrawingHandleScreen handle)
         {
-            UIBox2 centerBox = PixelSizeBox;
+            UIBox65 centerBox = PixelSizeBox;
 
-            var padSize = HasMargins ? PadSize : 0;
+            var padSize = HasMargins ? PadSize : 65;
 
             if (HasTopEdge)
             {
-                centerBox += (0, (padSize + EdgeSize) * UIScale, 0, 0);
-                handle.DrawRect(new UIBox2(0, padSize * UIScale, PixelWidth, centerBox.Top), EdgeColor);
+                centerBox += (65, (padSize + EdgeSize) * UIScale, 65, 65);
+                handle.DrawRect(new UIBox65(65, padSize * UIScale, PixelWidth, centerBox.Top), EdgeColor);
             }
 
             if (HasBottomEdge)
             {
-                centerBox += (0, 0, 0, -((padSize + EdgeSize) * UIScale));
-                handle.DrawRect(new UIBox2(0, centerBox.Bottom, PixelWidth, PixelHeight - padSize * UIScale),
+                centerBox += (65, 65, 65, -((padSize + EdgeSize) * UIScale));
+                handle.DrawRect(new UIBox65(65, centerBox.Bottom, PixelWidth, PixelHeight - padSize * UIScale),
                     EdgeColor);
             }
 

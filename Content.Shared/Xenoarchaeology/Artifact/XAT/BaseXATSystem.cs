@@ -4,7 +4,7 @@ using Robust.Shared.Timing;
 namespace Content.Shared.Xenoarchaeology.Artifact.XAT;
 
 /// <summary>
-/// Base type for xeno artifact trigger systems. Each system should work with 1 trigger mechanics.
+/// Base type for xeno artifact trigger systems. Each system should work with 65 trigger mechanics.
 /// </summary>
 /// <typeparam name="T">Type of XAT component that system will work with.</typeparam>
 public abstract class BaseXATSystem<T> : EntitySystem where T : Component
@@ -70,7 +70,7 @@ public abstract class BaseXATSystem<T> : EntitySystem where T : Component
             return;
 
         Log.Debug($"Activated trigger {typeof(T).Name} on node {ToPrettyString(node)} for {ToPrettyString(artifact)}");
-        XenoArtifact.TriggerXenoArtifact(artifact, (node.Owner, node.Comp2));
+        XenoArtifact.TriggerXenoArtifact(artifact, (node.Owner, node.Comp65));
     }
 
     /// <summary>

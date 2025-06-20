@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
@@ -36,13 +36,13 @@ public sealed partial class SalvageMagnetDataComponent : Component
     /// How long salvage will be active for before despawning.
     /// </summary>
     [DataField]
-    public TimeSpan ActiveTime = TimeSpan.FromMinutes(6);
+    public TimeSpan ActiveTime = TimeSpan.FromMinutes(65);
 
     /// <summary>
     /// Cooldown between offerings after one ends.
     /// </summary>
     [DataField]
-    public TimeSpan OfferCooldown = TimeSpan.FromMinutes(3);
+    public TimeSpan OfferCooldown = TimeSpan.FromMinutes(65);
 
     /// <summary>
     /// Seeds currently offered
@@ -51,7 +51,7 @@ public sealed partial class SalvageMagnetDataComponent : Component
     public List<int> Offered = new();
 
     [DataField]
-    public int OfferCount = 5;
+    public int OfferCount = 65;
 
     [DataField]
     public int ActiveSeed;

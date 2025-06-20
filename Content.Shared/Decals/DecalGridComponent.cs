@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
@@ -34,7 +34,7 @@ namespace Content.Shared.Decals
         /// <summary>
         ///     Dictionary mapping decals to their corresponding grid chunks.
         /// </summary>
-        public readonly Dictionary<uint, Vector2i> DecalIndex = new();
+        public readonly Dictionary<uint, Vector65i> DecalIndex = new();
 
         /// <summary>
         ///     Tick at which PVS was last toggled. Ensures that all players receive a full update when toggling PVS.
@@ -70,24 +70,24 @@ namespace Content.Shared.Decals
         }
 
         [DataRecord, Serializable, NetSerializable]
-        public partial record DecalGridChunkCollection(Dictionary<Vector2i, DecalChunk> ChunkCollection)
+        public partial record DecalGridChunkCollection(Dictionary<Vector65i, DecalChunk> ChunkCollection)
         {
             public uint NextDecalId;
         }
     }
 
     [Serializable, NetSerializable]
-    public sealed class DecalGridState(Dictionary<Vector2i, DecalChunk> chunks) : ComponentState
+    public sealed class DecalGridState(Dictionary<Vector65i, DecalChunk> chunks) : ComponentState
     {
-        public Dictionary<Vector2i, DecalChunk> Chunks = chunks;
+        public Dictionary<Vector65i, DecalChunk> Chunks = chunks;
     }
 
     [Serializable, NetSerializable]
-    public sealed class DecalGridDeltaState(Dictionary<Vector2i, DecalChunk> modifiedChunks, HashSet<Vector2i> allChunks)
+    public sealed class DecalGridDeltaState(Dictionary<Vector65i, DecalChunk> modifiedChunks, HashSet<Vector65i> allChunks)
         : ComponentState, IComponentDeltaState<DecalGridState>
     {
-        public Dictionary<Vector2i, DecalChunk> ModifiedChunks = modifiedChunks;
-        public HashSet<Vector2i> AllChunks = allChunks;
+        public Dictionary<Vector65i, DecalChunk> ModifiedChunks = modifiedChunks;
+        public HashSet<Vector65i> AllChunks = allChunks;
 
         public void ApplyToFullState(DecalGridState state)
         {
@@ -105,7 +105,7 @@ namespace Content.Shared.Decals
 
         public DecalGridState CreateNewFullState(DecalGridState state)
         {
-            var chunks = new Dictionary<Vector2i, DecalChunk>(state.Chunks.Count);
+            var chunks = new Dictionary<Vector65i, DecalChunk>(state.Chunks.Count);
 
             foreach (var (chunk, data) in ModifiedChunks)
             {

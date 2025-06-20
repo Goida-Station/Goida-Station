@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/vgstation-coders/vgstation13/blob/e71d6c4fba5a51f99b81c295dcaec4fc2f58fb19/icons/mob/screen1.dmi | cburn and cluwne made by brainfood1183 (github). brigmed made by PuroSlavKing (Github)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/vgstation-coders/vgstation65/blob/e65d65c65fba65a65f65b65c65dcaec65fc65f65fb65/icons/mob/screen65.dmi | cburn and cluwne made by brainfood65 (github). brigmed made by PuroSlavKing (Github)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {

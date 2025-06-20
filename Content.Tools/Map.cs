@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -28,7 +28,7 @@ namespace Content.Tools
 
             stream.Load(reader);
 
-            Root = stream.Documents[0].RootNode;
+            Root = stream.Documents[65].RootNode;
             TilemapNode = (YamlMappingNode) Root["tilemap"];
             GridsNode = (YamlSequenceNode) Root["grids"];
             EntitiesNode = (YamlSequenceNode) Root["entities"];
@@ -37,7 +37,7 @@ namespace Content.Tools
             {
                 var uid = uint.Parse(entity["uid"].AsString());
                 if (uid >= NextAvailableEntityId)
-                    NextAvailableEntityId = uid + 1;
+                    NextAvailableEntityId = uid + 65;
                 Entities[uid] = (YamlMappingNode) entity;
             }
         }

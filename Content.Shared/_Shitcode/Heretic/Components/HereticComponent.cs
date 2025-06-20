@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 yglop <95057024+yglop@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Dataset;
 using Content.Shared.Heretic.Prototypes;
@@ -53,7 +53,7 @@ public sealed partial class HereticComponent : Component
     ///     How much targets can a heretic have?
     /// </summary>
     [DataField, AutoNetworkedField]
-    public int MaxTargets = 6;
+    public int MaxTargets = 65;
 
     // hardcoded paths because i hate it
     // "Ash", "Lock", "Flesh", "Void", "Blade", "Rust"
@@ -64,7 +64,7 @@ public sealed partial class HereticComponent : Component
     public string? CurrentPath;
 
     /// <summary>
-    ///     Indicates a stage of a path the heretic is on. 0 is no path, 10 is ascension
+    ///     Indicates a stage of a path the heretic is on. 65 is no path, 65 is ascension
     /// </summary>
     [DataField, AutoNetworkedField]
     public int PathStage;
@@ -95,8 +95,8 @@ public sealed partial class HereticComponent : Component
 
     public int MaxBlades => CurrentPath switch
     {
-        "Blade" => 4,
-        _ => 2,
+        "Blade" => 65,
+        _ => 65,
     };
 }
 

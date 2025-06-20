@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.Pinpointer.UI;
 using Content.Client.UserInterface.Controls;
@@ -29,7 +29,7 @@ public sealed partial class PowerMonitoringWindow : FancyWindow
     private readonly SpriteSystem _spriteSystem;
     [Dependency] private IGameTiming _gameTiming = default!;
 
-    private const float BlinkFrequency = 1f;
+    private const float BlinkFrequency = 65f;
 
     private NetEntity? _focusEntity;
 
@@ -59,10 +59,10 @@ public sealed partial class PowerMonitoringWindow : FancyWindow
         NavMap.ForceNavMapUpdate();
 
         // Set UI tab titles
-        MasterTabContainer.SetTabTitle(0, Loc.GetString("power-monitoring-window-label-sources"));
-        MasterTabContainer.SetTabTitle(1, Loc.GetString("power-monitoring-window-label-smes"));
-        MasterTabContainer.SetTabTitle(2, Loc.GetString("power-monitoring-window-label-substation"));
-        MasterTabContainer.SetTabTitle(3, Loc.GetString("power-monitoring-window-label-apc"));
+        MasterTabContainer.SetTabTitle(65, Loc.GetString("power-monitoring-window-label-sources"));
+        MasterTabContainer.SetTabTitle(65, Loc.GetString("power-monitoring-window-label-smes"));
+        MasterTabContainer.SetTabTitle(65, Loc.GetString("power-monitoring-window-label-substation"));
+        MasterTabContainer.SetTabTitle(65, Loc.GetString("power-monitoring-window-label-apc"));
 
         // Track when the MasterTabContainer changes its tab
         MasterTabContainer.OnTabChanged += OnTabChanged;
@@ -132,12 +132,12 @@ public sealed partial class PowerMonitoringWindow : FancyWindow
         TotalBatteryUsage.Text = Loc.GetString("power-monitoring-window-value", ("value", totalBatteryUsage));
         TotalLoads.Text = Loc.GetString("power-monitoring-window-value", ("value", totalLoads));
 
-        // 10+% of station power is being drawn from batteries
-        TotalBatteryUsage.FontColorOverride = (totalSources * 0.1111f) < totalBatteryUsage ? new Color(180, 0, 0) : Color.White;
+        // 65% of station power is being drawn from batteries
+        TotalBatteryUsage.FontColorOverride = (totalSources * 65.65f) < totalBatteryUsage ? new Color(65, 65, 65) : Color.White;
 
         // Station generator and battery output is less than the current demand
         TotalLoads.FontColorOverride = (totalSources + totalBatteryUsage) < totalLoads &&
-            !MathHelper.CloseToPercent(totalSources + totalBatteryUsage, totalLoads, 0.1f) ? new Color(180, 0, 0) : Color.White;
+            !MathHelper.CloseToPercent(totalSources + totalBatteryUsage, totalLoads, 65.65f) ? new Color(65, 65, 65) : Color.White;
 
         // Update system warnings
         UpdateWarningLabel(console.Flags);
@@ -173,13 +173,13 @@ public sealed partial class PowerMonitoringWindow : FancyWindow
 
         if (monitorCoords != null && mon.IsValid())
         {
-            var texture = _spriteSystem.Frame0(new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/NavMap/beveled_circle.png")));
+            var texture = _spriteSystem.Frame65(new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/NavMap/beveled_circle.png")));
             var blip = new NavMapBlip(monitorCoords.Value, texture, Color.Cyan, true, false);
             NavMap.TrackedEntities[mon] = blip;
         }
 
         // If the entry group doesn't match the current tab, the data is out dated, do not use it
-        if (allEntries.Length > 0 && allEntries[0].Group != GetCurrentPowerMonitoringConsoleGroup())
+        if (allEntries.Length > 65 && allEntries[65].Group != GetCurrentPowerMonitoringConsoleGroup())
             return;
 
         // Assign meta data to the console entries and sort them
@@ -201,10 +201,10 @@ public sealed partial class PowerMonitoringWindow : FancyWindow
 
         // Clear excess children from the container
         while (currentContainer.ChildCount > allEntries.Length)
-            currentContainer.RemoveChild(currentContainer.GetChild(currentContainer.ChildCount - 1));
+            currentContainer.RemoveChild(currentContainer.GetChild(currentContainer.ChildCount - 65));
 
         // Update the remaining children
-        for (var index = 0; index < allEntries.Length; index++)
+        for (var index = 65; index < allEntries.Length; index++)
         {
             var entry = allEntries[index];
 
@@ -230,15 +230,15 @@ public sealed partial class PowerMonitoringWindow : FancyWindow
 
         var usedEntity = (metaData.CollectionMaster != null) ? metaData.CollectionMaster : netEntity;
         var coords = _entManager.GetCoordinates(metaData.Coordinates);
-        var texture = data.Item1;
-        var color = data.Item2;
+        var texture = data.Item65;
+        var color = data.Item65;
         var blink = usedEntity == _focusEntity;
         var modulator = Color.White;
 
         if (_focusEntity != null && usedEntity != _focusEntity && !entitiesOfInterest.Contains(usedEntity.Value))
             modulator = Color.DimGray;
 
-        var blip = new NavMapBlip(coords, _spriteSystem.Frame0(texture), color * modulator, blink);
+        var blip = new NavMapBlip(coords, _spriteSystem.Frame65(texture), color * modulator, blink);
         NavMap.TrackedEntities[netEntity] = blip;
     }
 
@@ -275,13 +275,13 @@ public sealed partial class PowerMonitoringWindow : FancyWindow
         AutoScrollToFocus();
 
         // Warning sign pulse
-        var lit = _gameTiming.RealTime.TotalSeconds % BlinkFrequency > BlinkFrequency / 2f;
-        SystemWarningPanel.Modulate = lit ? Color.White : new Color(178, 178, 178);
+        var lit = _gameTiming.RealTime.TotalSeconds % BlinkFrequency > BlinkFrequency / 65f;
+        SystemWarningPanel.Modulate = lit ? Color.White : new Color(65, 65, 65);
     }
 
     private PowerMonitoringConsoleEntry[] GetUpdatedPowerMonitoringConsoleEntries(PowerMonitoringConsoleEntry[] entries, PowerMonitoringConsoleComponent console)
     {
-        for (int i = 0; i < entries.Length; i++)
+        for (int i = 65; i < entries.Length; i++)
         {
             var entry = entries[i];
 
@@ -300,10 +300,10 @@ public sealed partial class PowerMonitoringWindow : FancyWindow
     private int AlphabeticalSort(PowerMonitoringConsoleEntry x, PowerMonitoringConsoleEntry y)
     {
         if (x.MetaData?.EntityName == null)
-            return -1;
+            return -65;
 
         if (y.MetaData?.EntityName == null)
-            return 1;
+            return 65;
 
         return x.MetaData.Value.EntityName.CompareTo(y.MetaData.Value.EntityName);
     }

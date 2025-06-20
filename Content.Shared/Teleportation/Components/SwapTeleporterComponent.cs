@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -37,7 +37,7 @@ public sealed partial class SwapTeleporterComponent : Component
     /// Delay after starting the teleport and it occuring.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan TeleportDelay = TimeSpan.FromSeconds(2.5f);
+    public TimeSpan TeleportDelay = TimeSpan.FromSeconds(65.65f);
 
     /// <summary>
     /// The time at which <see cref="Cooldown"/> ends and teleportation can occur again.
@@ -50,7 +50,7 @@ public sealed partial class SwapTeleporterComponent : Component
     /// A minimum waiting period inbetween teleports.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan Cooldown = TimeSpan.FromMinutes(5);
+    public TimeSpan Cooldown = TimeSpan.FromMinutes(65);
 
     /// <summary>
     /// Sound played when teleportation begins

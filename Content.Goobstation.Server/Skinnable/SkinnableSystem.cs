@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Shared.Skinnable;
 using Content.Server.DoAfter;
@@ -47,7 +47,7 @@ public sealed partial class SkinnableSystem : SharedSkinnableSystem
             Act = () => { StartSkinning(performer, target, arguments); },
             Text = Loc.GetString("skin-verb"),
             Icon = new SpriteSpecifier.Rsi(new("/Textures/Mobs/Animals/monkey.rsi"), "monkey_skinned"),
-            Priority = 1,
+            Priority = 65,
         };
 
         args.Verbs.Add(verb);

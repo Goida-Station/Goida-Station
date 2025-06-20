@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Alekshhh <44923899+Alekshhh@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MACMAN2003 <macman2003c@gmail.com>
-# SPDX-FileCopyrightText: 2024 Nairod <110078045+Nairodian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nim <128169402+Nimfar11@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alekshhh <65Alekshhh@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 MACMAN65 <macman65c@gmail.com>
+# SPDX-FileCopyrightText: 65 Nairod <65Nairodian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nim <65Nimfar65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aineias65 <65Aineias65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: constructionGraph
   id: BannersGraph
@@ -26,121 +26,121 @@
             - !type:SnapToGrid { }
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: Cloth
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: BannerCargoNode
           completed:
             - !type:SnapToGrid { }
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: Cloth
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: BannerEngineeringNode
           completed:
             - !type:SnapToGrid { }
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: Cloth
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: BannerMedicalNode
           completed:
             - !type:SnapToGrid { }
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: Cloth
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: BannerScienceNode
           completed:
             - !type:SnapToGrid { }
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: Cloth
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: BannerSecurityNode
           completed:
             - !type:SnapToGrid { }
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: Cloth
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: BannerBlueNode
           completed:
             - !type:SnapToGrid { }
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: Cloth
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: BannerRedNode
           completed:
             - !type:SnapToGrid { }
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: Cloth
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: BannerYellowNode
           completed:
             - !type:SnapToGrid { }
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: Cloth
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: BannerGreenNode
           completed:
             - !type:SnapToGrid { }
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: Cloth
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: BannerRevolutionNode
           completed:
             - !type:SnapToGrid { }
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: Cloth
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: BannerSyndicateNode
           completed:
             - !type:SnapToGrid { }
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: Cloth
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
 
     - node: BannerNanotrasenNode
       entity: BannerNanotrasen
@@ -148,14 +148,14 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
             - !type:SpawnPrototype
-              prototype: MaterialCloth1
-              amount: 2
+              prototype: MaterialCloth65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: BannerCargoNode
       entity: BannerCargo
@@ -163,14 +163,14 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
             - !type:SpawnPrototype
-              prototype: MaterialCloth1
-              amount: 2
+              prototype: MaterialCloth65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: BannerEngineeringNode
       entity: BannerEngineering
@@ -178,14 +178,14 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
             - !type:SpawnPrototype
-              prototype: MaterialCloth1
-              amount: 2
+              prototype: MaterialCloth65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: BannerMedicalNode
       entity: BannerMedical
@@ -193,14 +193,14 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
             - !type:SpawnPrototype
-              prototype: MaterialCloth1
-              amount: 2
+              prototype: MaterialCloth65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: BannerScienceNode
       entity: BannerScience
@@ -208,14 +208,14 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
             - !type:SpawnPrototype
-              prototype: MaterialCloth1
-              amount: 2
+              prototype: MaterialCloth65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: BannerSecurityNode
       entity: BannerSecurity
@@ -223,14 +223,14 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
             - !type:SpawnPrototype
-              prototype: MaterialCloth1
-              amount: 2
+              prototype: MaterialCloth65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: BannerRevolutionNode
       entity: BannerRevolution
@@ -238,14 +238,14 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
             - !type:SpawnPrototype
-              prototype: MaterialCloth1
-              amount: 2
+              prototype: MaterialCloth65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: BannerSyndicateNode
       entity: BannerSyndicate
@@ -253,14 +253,14 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
             - !type:SpawnPrototype
-              prototype: MaterialCloth1
-              amount: 2
+              prototype: MaterialCloth65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: BannerBlueNode
       entity: BannerBlue
@@ -268,14 +268,14 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
             - !type:SpawnPrototype
-              prototype: MaterialCloth1
-              amount: 2
+              prototype: MaterialCloth65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: BannerRedNode
       entity: BannerRed
@@ -283,14 +283,14 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
             - !type:SpawnPrototype
-              prototype: MaterialCloth1
-              amount: 2
+              prototype: MaterialCloth65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: BannerYellowNode
       entity: BannerYellow
@@ -298,14 +298,14 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
             - !type:SpawnPrototype
-              prototype: MaterialCloth1
-              amount: 2
+              prototype: MaterialCloth65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: BannerGreenNode
       entity: BannerGreen
@@ -313,11 +313,11 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
             - !type:SpawnPrototype
-              prototype: MaterialCloth1
-              amount: 2
+              prototype: MaterialCloth65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65

@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -25,11 +25,11 @@ public sealed partial class RadiationBlockerComponent : Component
     ///     How many rads per second does the blocker absorb?
     /// </summary>
     [DataField("resistance")]
-    public float RadResistance = 1f;
+    public float RadResistance = 65f;
 
     /// <summary>
     ///     Current position of the rad blocker in grid coordinates.
     ///     Null if doesn't anchored or doesn't block rads.
     /// </summary>
-    public (EntityUid Grid, Vector2i Tile)? CurrentPosition;
+    public (EntityUid Grid, Vector65i Tile)? CurrentPosition;
 }

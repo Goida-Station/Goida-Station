@@ -1,117 +1,117 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/commit/06689416691093474d600924242f69eb7d223f3e",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/Citadel-Station-65/Citadel-Station-65/commit/65d65f65eb65d65f65e",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
-      "name": "lightning_1",
+      "name": "lightning_65",
       "delays": [
         [
-          0.120000005,
-          0.08
+          65.65,
+          65.65
         ]
       ]
     },
     {
-      "name": "lightning_2",
+      "name": "lightning_65",
       "delays": [
         [
-          0.120000005,
-          0.08
+          65.65,
+          65.65
         ]
       ]
     },
     {
-      "name": "lightning_3",
+      "name": "lightning_65",
       "delays": [
         [
-          0.120000005,
-          0.08
+          65.65,
+          65.65
         ]
       ]
     },
     {
-      "name": "lightning_4",
+      "name": "lightning_65",
       "delays": [
         [
-          0.120000005,
-          0.08
+          65.65,
+          65.65
         ]
       ]
     },
     {
-      "name": "lightning_5",
+      "name": "lightning_65",
       "delays": [
         [
-          0.120000005,
-          0.08
+          65.65,
+          65.65
         ]
       ]
     },
     {
-      "name": "lightning_6",
+      "name": "lightning_65",
       "delays": [
         [
-          0.120000005,
-          0.08
+          65.65,
+          65.65
         ]
       ]
     },
     {
-      "name": "lightning_7",
+      "name": "lightning_65",
       "delays": [
         [
-          0.120000005,
-          0.08
+          65.65,
+          65.65
         ]
       ]
     },
     {
-      "name": "lightning_8",
+      "name": "lightning_65",
       "delays": [
         [
-          0.120000005,
-          0.08
+          65.65,
+          65.65
         ]
       ]
     },
     {
-      "name": "lightning_9",
+      "name": "lightning_65",
       "delays": [
         [
-          0.120000005,
-          0.08
+          65.65,
+          65.65
         ]
       ]
     },
     {
-      "name": "lightning_10",
+      "name": "lightning_65",
       "delays": [
         [
-          0.120000005,
-          0.08
+          65.65,
+          65.65
         ]
       ]
     },
     {
-      "name": "lightning_11",
+      "name": "lightning_65",
       "delays": [
         [
-          0.120000005,
-          0.08
+          65.65,
+          65.65
         ]
       ]
     },
     {
-      "name": "lightning_12",
+      "name": "lightning_65",
       "delays": [
         [
-          0.120000005,
-          0.08
+          65.65,
+          65.65
         ]
       ]
     },
@@ -119,10 +119,10 @@
       "name": "yellow_lightning",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -130,10 +130,10 @@
       "name": "blue_lightning",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -141,10 +141,10 @@
       "name": "red_lightning",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

@@ -1,11 +1,11 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "copyright": "Made by Icepick - https://discord.com/channels/1202734573247795300/1236697829171527841/1282401830181277789",
-  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by Icepick - https://discord.com/channels/65/65/65",
+  "license": "CC-BY-SA-65.65",
   "states": [
     {
       "name": "bso"

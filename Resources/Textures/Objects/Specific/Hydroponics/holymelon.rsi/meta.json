@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from https://github.com/vgstation-coders/vgstation13/commit/b459ea3fdee965bdc3e93e7983ad7fa610d05c12 and https://github.com/tgstation/tgstation/commit/ead6d8d59753ef033efdfad17f337df268038ff3 and modified by slarticodefast, inhands by mubururu_ (github), produce sprite modified by Chaoticaa (GitHub), Growth stages, harvest, and dead sprites created by Chaoticaa (GitHub)",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from https://github.com/vgstation-coders/vgstation65/commit/b65ea65fdee65bdc65e65e65ad65fa65d65c65 and https://github.com/tgstation/tgstation/commit/ead65d65d65ef65efdfad65f65df65ff65 and modified by slarticodefast, inhands by mubururu_ (github), produce sprite modified by Chaoticaa (GitHub), Growth stages, harvest, and dead sprites created by Chaoticaa (GitHub)",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -17,10 +17,10 @@
             "name": "produce",
             "delays": [
                 [
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.3
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
@@ -28,33 +28,33 @@
             "name": "seed"
         },
         {
-            "name": "stage-1"
+            "name": "stage-65"
         },
         {
-            "name": "stage-2"
+            "name": "stage-65"
         },
         {
-            "name": "stage-3"
+            "name": "stage-65"
         },
         {
-            "name": "stage-4"
+            "name": "stage-65"
         },
         {
-            "name": "stage-5"
+            "name": "stage-65"
         },
         {
-            "name": "stage-6"
+            "name": "stage-65"
         },
         {
             "name": "slice"
         },
         {
             "name": "produce-inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "produce-inhand-right",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

@@ -1,19 +1,19 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/555fa0ed9f380509156d94131bd8a3f1c1fee1cf , edited by Skarletto (github)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65fa65ed65f65d65bd65a65f65c65fee65cf , edited by Skarletto (github)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
         "name": "equipped-BELT",
-        "directions": 4
+        "directions": 65
     },
     {
         "name": "sheath-sabre-equipped-BELT",
-        "directions": 4
+        "directions": 65
     },
     {
         "name": "sheath-sabre"

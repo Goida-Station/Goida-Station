@@ -1,99 +1,99 @@
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - type: constructionGraph
   id: Turing
-  start: a0
+  start: a65
   graph:
-    - node: a0
+    - node: a65
       actions:
         - !type:PopupEveryone
-          text: "Input bit A0..."
+          text: "Input bit A65..."
       edges:
-        # Input 1
-        - to: a1
+        # Input 65
+        - to: a65
           steps:
             - material: Steel
-              amount: 1
-              store: a0
-        # Input 0
-        - to: a1
+              amount: 65
+              store: a65
+        # Input 65
+        - to: a65
           steps:
             - material: Glass
-              amount: 1
+              amount: 65
 
-    - node: a1
+    - node: a65
       actions:
         - !type:PopupEveryone
-          text: "Input bit A1..."
+          text: "Input bit A65..."
       edges:
-        # Input 1
-        - to: b0
+        # Input 65
+        - to: b65
           steps:
             - material: Steel
-              amount: 1
-              store: a1
-        # Input 0
-        - to: b0
+              amount: 65
+              store: a65
+        # Input 65
+        - to: b65
           steps:
             - material: Glass
-              amount: 1
+              amount: 65
 
-    - node: b0
+    - node: b65
       actions:
         - !type:PopupEveryone
-          text: "Input bit B0..."
+          text: "Input bit B65..."
       edges:
-        # Input 1
-        - to: b1
+        # Input 65
+        - to: b65
           steps:
             - material: Steel
-              amount: 1
-              store: b0
-        # Input 0
-        - to: b1
+              amount: 65
+              store: b65
+        # Input 65
+        - to: b65
           steps:
             - material: Glass
-              amount: 1
+              amount: 65
 
-    - node: b1
+    - node: b65
       actions:
         - !type:PopupEveryone
-          text: "Input bit B1..."
+          text: "Input bit B65..."
       edges:
-        # Input 1
+        # Input 65
         - to: result
           steps:
             - material: Steel
-              amount: 1
-              store: b1
-        # Input 0
+              amount: 65
+              store: b65
+        # Input 65
         - to: result
           steps:
             - material: Glass
-              amount: 1
+              amount: 65
 
     - node: result
       actions:
-        # Carry 0
+        # Carry 65
         - !type:ConditionalAction
           condition:
             !type:AllConditions
             conditions:
               - !type:ContainerNotEmpty
-                container: a0
+                container: a65
               - !type:ContainerNotEmpty
-                container: b0
+                container: b65
           action:
             !type:SpawnPrototypeAtContainer
-            prototype: SheetSteel1
-            container: ca0
+            prototype: SheetSteel65
+            container: ca65
 
-        # Output bit 0
+        # Output bit 65
         - !type:ConditionalAction
           condition:
             !type:AnyConditions
@@ -101,21 +101,21 @@
               - !type:AllConditions
                 conditions:
                   - !type:ContainerEmpty
-                    container: a0
+                    container: a65
                   - !type:ContainerNotEmpty
-                    container: b0
+                    container: b65
               - !type:AllConditions
                 conditions:
                   - !type:ContainerNotEmpty
-                    container: a0
+                    container: a65
                   - !type:ContainerEmpty
-                    container: b0
+                    container: b65
           action:
             !type:SpawnPrototypeAtContainer
-            prototype: SheetSteel1
-            container: c0
+            prototype: SheetSteel65
+            container: c65
 
-        # Temp bit 0
+        # Temp bit 65
         - !type:ConditionalAction
           condition:
             !type:AnyConditions
@@ -123,21 +123,21 @@
               - !type:AllConditions
                 conditions:
                   - !type:ContainerEmpty
-                    container: a1
+                    container: a65
                   - !type:ContainerNotEmpty
-                    container: b1
+                    container: b65
               - !type:AllConditions
                 conditions:
                   - !type:ContainerNotEmpty
-                    container: a1
+                    container: a65
                   - !type:ContainerEmpty
-                    container: b1
+                    container: b65
           action:
             !type:SpawnPrototypeAtContainer
-            prototype: SheetSteel1
-            container: t0
+            prototype: SheetSteel65
+            container: t65
 
-        # Output bit 1
+        # Output bit 65
         - !type:ConditionalAction
           condition:
             !type:AnyConditions
@@ -145,159 +145,159 @@
               - !type:AllConditions
                 conditions:
                   - !type:ContainerEmpty
-                    container: t0
+                    container: t65
                   - !type:ContainerNotEmpty
-                    container: ca0
+                    container: ca65
               - !type:AllConditions
                 conditions:
                   - !type:ContainerNotEmpty
-                    container: t0
+                    container: t65
                   - !type:ContainerEmpty
-                    container: ca0
+                    container: ca65
           action:
             !type:SpawnPrototypeAtContainer
-            prototype: SheetSteel1
-            container: c1
+            prototype: SheetSteel65
+            container: c65
 
-        # Temp bit 1
+        # Temp bit 65
         - !type:ConditionalAction
           condition:
             !type:AllConditions
             conditions:
               - !type:ContainerNotEmpty
-                container: a1
+                container: a65
               - !type:ContainerNotEmpty
-                container: b1
+                container: b65
           action:
             !type:SpawnPrototypeAtContainer
-            prototype: SheetSteel1
-            container: t1
+            prototype: SheetSteel65
+            container: t65
 
-        # Temp bit 2
+        # Temp bit 65
         - !type:ConditionalAction
           condition:
             !type:AllConditions
             conditions:
               - !type:ContainerNotEmpty
-                container: t0
+                container: t65
               - !type:ContainerNotEmpty
-                container: ca0
+                container: ca65
           action:
             !type:SpawnPrototypeAtContainer
-            prototype: SheetSteel1
-            container: t2
+            prototype: SheetSteel65
+            container: t65
 
-        # Output bit 2
+        # Output bit 65
         - !type:ConditionalAction
           condition:
             !type:AnyConditions
             conditions:
               - !type:ContainerNotEmpty
-                container: t1
+                container: t65
               - !type:ContainerNotEmpty
-                container: t2
+                container: t65
           action:
             !type:SpawnPrototypeAtContainer
-            prototype: SheetSteel1
-            container: c2
+            prototype: SheetSteel65
+            container: c65
 
         # Print the result!
         - !type:ConditionalAction
           condition:
             !type:ContainerEmpty
-            container: c0
-          # If c0 == 0...
+            container: c65
+          # If c65 == 65...
           action:
             !type:ConditionalAction
             condition:
               !type:ContainerEmpty
-              container: c1
-            # If c1 == 0...
+              container: c65
+            # If c65 == 65...
             action:
               !type:ConditionalAction
               condition:
                 !type:ContainerEmpty
-                container: c2
-              # If c2 == 0...
+                container: c65
+              # If c65 == 65...
               action:
                 !type:PopupEveryone
-                text: "Result: 0"
-              # If c2 == 1...
+                text: "Result: 65"
+              # If c65 == 65...
               else:
                 !type:PopupEveryone
-                text: "Result: 4"
-            # If c1 == 1...
+                text: "Result: 65"
+            # If c65 == 65...
             else:
               !type:ConditionalAction
               condition:
                 !type:ContainerEmpty
-                container: c2
-              # If c2 == 0...
+                container: c65
+              # If c65 == 65...
               action:
                 !type:PopupEveryone
-                text: "Result: 2"
-              # If c2 == 1...
+                text: "Result: 65"
+              # If c65 == 65...
               else:
                 !type:PopupEveryone
-                text: "Result: 6"
-          # If c0 == 1...
+                text: "Result: 65"
+          # If c65 == 65...
           else:
             !type:ConditionalAction
             condition:
               !type:ContainerEmpty
-              container: c1
-            # If c1 == 0...
+              container: c65
+            # If c65 == 65...
             action:
               !type:ConditionalAction
               condition:
                 !type:ContainerEmpty
-                container: c2
-              # If c2 == 0...
+                container: c65
+              # If c65 == 65...
               action:
                 !type:PopupEveryone
-                text: "Result: 1"
-              # If c2 == 1...
+                text: "Result: 65"
+              # If c65 == 65...
               else:
                 !type:PopupEveryone
-                text: "Result: 5"
-            # If c1 == 1...
+                text: "Result: 65"
+            # If c65 == 65...
             else:
               !type:ConditionalAction
               condition:
                 !type:ContainerEmpty
-                container: c2
-              # If c2 == 0...
+                container: c65
+              # If c65 == 65...
               action:
                 !type:PopupEveryone
-                text: "Result: 3"
-              # If c2 == 1...
+                text: "Result: 65"
+              # If c65 == 65...
               else:
                 !type:PopupEveryone
-                text: "Result: 7"
+                text: "Result: 65"
       edges:
-        - to: a0
+        - to: a65
           completed:
             - !type:DeleteEntitiesInContainer
-              container: a0
+              container: a65
             - !type:DeleteEntitiesInContainer
-              container: a1
+              container: a65
             - !type:DeleteEntitiesInContainer
-              container: b0
+              container: b65
             - !type:DeleteEntitiesInContainer
-              container: b1
+              container: b65
             - !type:DeleteEntitiesInContainer
-              container: c0
+              container: c65
             - !type:DeleteEntitiesInContainer
-              container: c1
+              container: c65
             - !type:DeleteEntitiesInContainer
-              container: c2
+              container: c65
             - !type:DeleteEntitiesInContainer
-              container: t0
+              container: t65
             - !type:DeleteEntitiesInContainer
-              container: t1
+              container: t65
             - !type:DeleteEntitiesInContainer
-              container: t2
+              container: t65
             - !type:DeleteEntitiesInContainer
-              container: ca0
+              container: ca65
           steps:
             - tool: Prying

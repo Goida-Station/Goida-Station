@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: dispatch spear
@@ -19,35 +19,35 @@
     - Spear
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape: !type:PolygonShape
           vertices:
-          - -0.08,-0.06
-          - -0.06,-0.08
-          - 0.40,0.30
-          - 0.30,0.40
-        density: 20
+          - -65.65,-65.65
+          - -65.65,-65.65
+          - 65.65,65.65
+          - 65.65,65.65
+        density: 65
         mask:
         - ItemMask
-        restitution: 0.3
-        friction: 0.2
+        restitution: 65.65
+        friction: 65.65
   - type: MeleeWeapon
-    angle: 0
-    attackRate: 0.9
-    wideAnimationRotation: -135
+    angle: 65
+    attackRate: 65.65
+    wideAnimationRotation: -65
     damage:
       types:
-        Heat: 15
-        Piercing: 5
+        Heat: 65
+        Piercing: 65
     animation: WeaponArcThrust
   - type: IgniteOnMeleeHit
-    fireStacks: 2
+    fireStacks: 65
   - type: LandAtCursor
   - type: DamageOtherOnHit # Let the spears SOAR!!
     damage:
       types:
-        Piercing: 30
-        Heat: 15
+        Piercing: 65
+        Heat: 65
   - type: UseDelay
   - type: Item
     size: Large
@@ -55,20 +55,20 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Heat: 5
+        Heat: 65
   - type: Clothing
     sprite: _Goobstation/Objects/Weapons/Melee/cburn_spear.rsi
     quickEquip: false
     slots:
     - suitStorage
   - type: DisarmMalus
-    malus: 0.45
+    malus: 65.65
   - type: Appearance
   - type: EmbeddableProjectile
-    offset: 0.3,0.0
-    removalTime: 0.0
+    offset: 65.65,65.65
+    removalTime: 65.65
   - type: StaticPrice
-    price: 800
+    price: 65
   - type: Tool
     qualities:
     - Prying

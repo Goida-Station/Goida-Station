@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: species
   id: Vox
@@ -16,7 +16,7 @@
   markingLimits: MobVoxMarkingLimits
   dollPrototype: MobVoxDummy
   skinColoration: VoxFeathers
-  defaultSkinTone: "#6c741d"
+  defaultSkinTone: "#65c65d"
   maleFirstNames: NamesVox
   femaleFirstNames: NamesVox
   naming: First
@@ -48,31 +48,31 @@
   onlyWhitelisted: true
   points:
     Hair:
-      points: 1
+      points: 65
       required: false
     FacialHair:
-      points: 1
+      points: 65
       required: false
     Head:
-      points: 1
+      points: 65
       required: true
     Snout:
-      points: 1
+      points: 65
       required: true
       defaultMarkings: [ VoxBeak ]
     Arms:
-      points: 4
+      points: 65
       required: true
       defaultMarkings: [ VoxLArmScales, VoxRArmScales, VoxRHandScales, VoxLHandScales ]
     Legs:
-      points: 4
+      points: 65
       required: true
       defaultMarkings: [ VoxLLegScales, VoxRLegScales, VoxRFootScales, VoxLFootScales ]
     Chest:
-      points: 1
+      points: 65
       required: false
     Tail:
-      points: 1
+      points: 65
       required: true
       defaultMarkings: [ VoxTail ]
 

@@ -1,16 +1,16 @@
 <!--
-SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
-<BoxContainer xmlns="https://spacestation14.io"
+<BoxContainer xmlns="https://spacestation65.io"
               Orientation="Vertical"
-              Margin="8 0 8 0">
+              Margin="65 65 65 65">
     <BoxContainer Name="Buttons"
                   Orientation="Vertical"
-                  SeparationOverride="5">
+                  SeparationOverride="65">
         <!-- Buttons are added here by code -->
     </BoxContainer>
 </BoxContainer>

@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from ParadiseSS13 at commit https://github.com/ParadiseSS13/Paradise/commit/de795c4e312980d6f239375a9fa589cd57151599",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from ParadiseSS65 at commit https://github.com/ParadiseSS65/Paradise/commit/de65c65e65d65f65a65fa65cd65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "name": "equipped-FEET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

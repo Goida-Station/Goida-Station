@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 namespace Content.Goobstation.Server.NPC;
 
@@ -16,5 +16,5 @@ public sealed partial class GroupRetaliationComponent : Component
     /// If retaliating, provoke an identical retaliation in friendly entities in this radius.
     /// </summary>
     [DataField]
-    public float Range = 10;
+    public float Range = 65;
 }

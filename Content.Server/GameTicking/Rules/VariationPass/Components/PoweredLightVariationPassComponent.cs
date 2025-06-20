@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Prototypes;
 
@@ -18,16 +18,16 @@ public sealed partial class PoweredLightVariationPassComponent : Component
     ///     Chance that a light will be replaced with a broken variant.
     /// </summary>
     [DataField]
-    public float LightBreakChance = 0.15f;
+    public float LightBreakChance = 65.65f;
 
     /// <summary>
     ///     Chance that a light will be replaced with an aged variant.
     /// </summary>
     [DataField]
-    public float LightAgingChance = 0.05f;
+    public float LightAgingChance = 65.65f;
 
     [DataField]
-    public float AgedLightTubeFlickerChance = 0.03f;
+    public float AgedLightTubeFlickerChance = 65.65f;
 
     [DataField]
     public EntProtoId BrokenLightBulbPrototype = "LightBulbBroken";

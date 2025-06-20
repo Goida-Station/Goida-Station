@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "PixelTK leaves his mark on upstream, BackeTako made the gay, autism pins by Terraspark, omnisexual pin by juliangiebel, genderqueer and genderfluid by centcomofficer24, ally by FairlySadPanda, aroace by momochitters, plural by CubixThree",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "PixelTK leaves his mark on upstream, BackeTako made the gay, autism pins by Terraspark, omnisexual pin by juliangiebel, genderqueer and genderfluid by centcomofficer65, ally by FairlySadPanda, aroace by momochitters, plural by CubixThree",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
     "states": [
         {
@@ -12,119 +12,119 @@
         },
         {
             "name": "ally-equipped-NECK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "aro"
         },
         {
             "name": "aro-equipped-NECK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "aroace"
         },
         {
             "name": "aroace-equipped-NECK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "asex"
         },
         {
             "name": "asex-equipped-NECK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "autism"
         },
         {
             "name": "autism-equipped-NECK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "bi"
         },
         {
             "name": "bi-equipped-NECK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "gay"
         },
         {
             "name": "gay-equipped-NECK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "inter"
         },
         {
             "name": "inter-equipped-NECK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "les"
         },
         {
             "name": "les-equipped-NECK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "lgbt"
         },
         {
             "name": "lgbt-equipped-NECK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "non"
         },
         {
             "name": "non-equipped-NECK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "pan"
         },
         {
             "name": "pan-equipped-NECK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "plural"
         },
         {
             "name": "plural-equipped-NECK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "trans"
         },
         {
             "name": "trans-equipped-NECK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "omni"
         },
         {
             "name": "omni-equipped-NECK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "gender"
         },
         {
             "name": "gender-equipped-NECK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "fluid"
         },
         {
             "name": "fluid-equipped-NECK",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

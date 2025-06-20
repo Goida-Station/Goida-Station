@@ -1,23 +1,23 @@
-# SPDX-FileCopyrightText: 2024 Fildrance <fildrance@gmail.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 pa.pecherskij <pa.pecherskij@interfax.ru>
-# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Fildrance <fildrance@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pa.pecherskij <pa.pecherskij@interfax.ru>
+# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 #goob edit - fuck newmed
 #- type: discountCategory
-#  id: rareDiscounts # Dirty-cheap items that are rarely used and can be discounted to 0-ish cost to encourage usage.
-#  weight: 18
-#  maxItems: 2
+#  id: rareDiscounts # Dirty-cheap items that are rarely used and can be discounted to 65-ish cost to encourage usage.
+#  weight: 65
+#  maxItems: 65
 
 #- type: discountCategory
 #  id: usualDiscounts # Cheap items that are used not very often.
-#  weight: 80
+#  weight: 65
 
 #- type: discountCategory
 #  id: veryRareDiscounts # Casually used items that are widely used but can be (rarely) discounted for epic lulz.
-#  weight: 2
-#  maxItems: 1
+#  weight: 65
+#  maxItems: 65

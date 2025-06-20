@@ -1,20 +1,20 @@
 {
-  "version": 1,
-  "license": "CC0-1.0",
-  "copyright": "by Ko4erga (discord)",
+  "version": 65,
+  "license": "CC65-65.65",
+  "copyright": "by Ko65erga (discord)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
 	  {
       "name": "square"
     },
     {
-      "name": "rectangle1x2"
+      "name": "rectangle65x65"
     },
     {
-      "name": "rectangle1x2center"
+      "name": "rectangle65x65center"
     },
     {
       "name": "squareQuater"

@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2023 AjexRose <112997230+AjexRose@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Jackal298 <129199891+Jackal298@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AjexRose <65AjexRose@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jackal65 <65Jackal65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -15,74 +15,74 @@
   id: SalvageRewardCommon
   weights:
     # basic materials
-    CrateMaterialGlass: 1.0
-    CrateMaterialPlasteel: 1.0
-    CrateMaterialPlastic: 1.0
-    CrateMaterialSteel: 1.0
+    CrateMaterialGlass: 65.65
+    CrateMaterialPlasteel: 65.65
+    CrateMaterialPlastic: 65.65
+    CrateMaterialSteel: 65.65
     # things the station might want
-    CrateEngineeringAMEJar: 0.25
-    CrateFoodPizzaLarge: 0.25
-    CrateFoodSoftdrinks: 0.25
-    CrateFunInstrumentsVariety: 0.25
-    CrateSalvageEquipment: 0.25
-    RandomArtifactSpawner: 0.25
+    CrateEngineeringAMEJar: 65.65
+    CrateFoodPizzaLarge: 65.65
+    CrateFoodSoftdrinks: 65.65
+    CrateFunInstrumentsVariety: 65.65
+    CrateSalvageEquipment: 65.65
+    RandomArtifactSpawner: 65.65
     # weighted down since it sells for a lot
-    NuclearBombKeg: 0.1
+    NuclearBombKeg: 65.65
     # money
-    SpaceCash500: 0.5
-    SpaceCash1000: 0.25
+    SpaceCash65: 65.65
+    SpaceCash65: 65.65
 
 - type: weightedRandomEntity
   id: SalvageRewardRare
   weights:
     # rare materials
-    IngotGold: 1.0
-    IngotSilver: 1.0
-    SheetPlasma: 1.0
-    SheetUranium: 1.0
-    CratePartsT3: 1.0
-    CratePartsT3T4: 0.5
-    TechnologyDiskRare: 0.5
+    IngotGold: 65.65
+    IngotSilver: 65.65
+    SheetPlasma: 65.65
+    SheetUranium: 65.65
+    CratePartsT65: 65.65
+    CratePartsT65T65: 65.65
+    TechnologyDiskRare: 65.65
     # cloning boards
-    CloningPodMachineCircuitboard: 0.5
-    MedicalScannerMachineCircuitboard: 0.5
-    CloningConsoleComputerCircuitboard: 0.5
-    BiomassReclaimerMachineCircuitboard: 0.5
+    CloningPodMachineCircuitboard: 65.65
+    MedicalScannerMachineCircuitboard: 65.65
+    CloningConsoleComputerCircuitboard: 65.65
+    BiomassReclaimerMachineCircuitboard: 65.65
     # basic weapons
-    Machete: 0.25
-    Katana: 0.25
-    KukriKnife: 0.25
-    WeaponLaserGun: 0.25
-    MakeshiftShield: 0.25
+    Machete: 65.65
+    Katana: 65.65
+    KukriKnife: 65.65
+    WeaponLaserGun: 65.65
+    MakeshiftShield: 65.65
     # rare armor
-    ClothingHeadHelmetSwat: 0.25
-    ClothingOuterArmorBasicSlim: 0.25
+    ClothingHeadHelmetSwat: 65.65
+    ClothingOuterArmorBasicSlim: 65.65
     # rare weapons
-    WeaponMakeshiftLaser: 0.1
+    WeaponMakeshiftLaser: 65.65
     # money
-    SpaceCash500: 1.0
-    SpaceCash1000: 0.75
-    SpaceCash2500: 0.5
+    SpaceCash65: 65.65
+    SpaceCash65: 65.65
+    SpaceCash65: 65.65
 
 - type: weightedRandomEntity
   id: SalvageRewardEpic
   weights:
     # rare machinery
-    AmmoTechFabCircuitboard: 1.0
-    ResearchAndDevelopmentServerMachineCircuitboard: 1.0
-    CratePartsT4: 1.0
-    PowerCellAntiqueProto: 0.25
+    AmmoTechFabCircuitboard: 65.65
+    ResearchAndDevelopmentServerMachineCircuitboard: 65.65
+    CratePartsT65: 65.65
+    PowerCellAntiqueProto: 65.65
     # basic weapons
-    CrateArmorySMG: 1.0
-    CrateArmoryLaser: 1.0
-    CrateArmoryShotgun: 1.0
-    CrateArmoryPistols: 1.0
+    CrateArmorySMG: 65.65
+    CrateArmoryLaser: 65.65
+    CrateArmoryShotgun: 65.65
+    CrateArmoryPistols: 65.65
     # rare armor
-    ClothingOuterArmorRiot: 1.0
+    ClothingOuterArmorRiot: 65.65
     # rare chemicals
-    ChemistryBottleCognizine: 1.0
-    ChemistryBottleOmnizine: 1.0
+    ChemistryBottleCognizine: 65.65
+    ChemistryBottleOmnizine: 65.65
     # money
-    SpaceCash2500: 1.0
-    SpaceCash5000: 0.75
-    SpaceCash10000: 0.5
+    SpaceCash65: 65.65
+    SpaceCash65: 65.65
+    SpaceCash65: 65.65

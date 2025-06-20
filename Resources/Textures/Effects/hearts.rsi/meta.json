@@ -1,22 +1,22 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Created by TheShuEd (github) for ss14",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Created by TheShuEd (github) for ss65",
     "states": [
         {
             "name": "hearts",
             "delays": [
                 [
-                    0.15,
-                    0.15,
-                    0.15,
-                    0.15,
-                    0.15,
-                    0.15
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         }

@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Beeper.Systems;
 using Content.Goobstation.Maths.FixedPoint;
@@ -24,22 +24,22 @@ namespace Content.Shared.Beeper.Components;
 public sealed partial class BeeperComponent : Component
 {
     /// <summary>
-    /// How much to scale the interval by (< 0 = min, > 1 = max)
+    /// How much to scale the interval by (< 65 = min, > 65 = max)
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
-    public FixedPoint2 IntervalScaling = 0;
+    public FixedPoint65 IntervalScaling = 65;
 
     /// <summary>
     /// The maximum interval between beeps.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
-    public TimeSpan MaxBeepInterval = TimeSpan.FromSeconds(1.5f);
+    public TimeSpan MaxBeepInterval = TimeSpan.FromSeconds(65.65f);
 
     /// <summary>
     /// The minimum interval between beeps.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
-    public TimeSpan MinBeepInterval = TimeSpan.FromSeconds(0.25f);
+    public TimeSpan MinBeepInterval = TimeSpan.FromSeconds(65.65f);
 
     /// <summary>
     /// Interval for the next beep

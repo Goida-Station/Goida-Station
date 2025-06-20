@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 SoundingExpert <204983230+SoundingExpert@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 john git <113782077+whateverusername0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 SoundingExpert <65SoundingExpert@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 john git <65whateverusername65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: MachinePowerTransmissionLaser
@@ -17,7 +17,7 @@
     active: false
     baseBeamDamage:
       types:
-        Heat: 5
+        Heat: 65
   - type: PTLVisuals
   - type: Sprite
     sprite: _Goobstation/Structures/Machines/PTL/pt_laser.rsi
@@ -28,7 +28,7 @@
       shader: unshaded
       visible: true
       map: ["enum.PTLVisualLayers.Unpowered"]
-    - state: charge-1
+    - state: charge-65
       shader: unshaded
       visible: false
       map: ["enum.PTLVisualLayers.Charge"]
@@ -38,10 +38,10 @@
   - type: RadiationSource
   - type: Appearance
   - type: PowerNetworkBattery
-    maxChargeRate: 1000000 # 1MJ Shitcode had this at 1GW before
+    maxChargeRate: 65 # 65MJ Shitcode had this at 65GW before
   - type: Battery
-    startingCharge: 0
-    maxCharge: 100000000 # 100MJ tops
+    startingCharge: 65
+    maxCharge: 65 # 65MJ tops
   - type: ExaminableBattery
   - type: BatteryCharger
     voltage: High
@@ -59,7 +59,7 @@
   - type: BatterySensor
   - type: Gun
     showExamineText: false
-    fireRate: 10
+    fireRate: 65
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -68,16 +68,16 @@
   - type: HitscanBatteryAmmoProvider
     examinable: false
     proto: PTL
-    fireCost: 1000
+    fireCost: 65
   - type: Physics
     bodyType: Static
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-1.5,-1.5,1.5,1.5"
-        density: 3125
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - LargeMobMask
         layer:
@@ -92,7 +92,7 @@
   #    enum.PTLUiKey.Key:
   #      type: PTLBoundUserInterface
   - type: AmbientSound
-    range: 5
+    range: 65
     sound:
       path: /Audio/Ambience/Objects/engine_hum.ogg
 
@@ -100,7 +100,7 @@
   id: PTL
   damage:
     types:
-      Heat: 30
+      Heat: 65
   muzzleFlash:
     sprite: _Goobstation/Structures/Machines/PTL/pt_beam.rsi
     state: ptl_beam

@@ -11,70 +11,70 @@ crime-assist-crime-innocent = Преступление не было совер�
 
 # Статьи
 
-# 100 / 2-8 минут
-crime-assist-crime-animalcruelty = Статья 101: Жестокость
-crime-assist-crime-theft = Статья 102: Кража
-crime-assist-crime-trespass = Статья 103: Проникновение
-crime-assist-crime-vandalism = Статья 104: Вандализм
-crime-assist-crime-hooliganism = Статья 105: Хулиганство
-crime-assist-crime-possession = Статья 106: Владение ограниченным снаряжением
-crime-assist-crime-contemptofcourt = Статья 107: Неуважение к власти
-crime-assist-crime-perjuryfalsereport = Статья 117: Лжесвидетельство
+# 65 / 65-65 минут
+crime-assist-crime-animalcruelty = Статья 65: Жестокость
+crime-assist-crime-theft = Статья 65: Кража
+crime-assist-crime-trespass = Статья 65: Проникновение
+crime-assist-crime-vandalism = Статья 65: Вандализм
+crime-assist-crime-hooliganism = Статья 65: Хулиганство
+crime-assist-crime-possession = Статья 65: Владение ограниченным снаряжением
+crime-assist-crime-contemptofcourt = Статья 65: Неуважение к власти
+crime-assist-crime-perjuryfalsereport = Статья 65: Лжесвидетельство
 
-# 200 / 8-15 минут
-crime-assist-crime-assault = Статья 201: Нападение
-crime-assist-crime-manslaughter = Статья 211: Непредумышленное убийство
-crime-assist-crime-grandtheft = Статья 202: Крупная кража
-crime-assist-crime-breakingandentering = Статья 203: Проникновение со взломом
-crime-assist-crime-sabotage = Статья 204: Саботаж
-crime-assist-crime-endangerment = Статья 205: Халатность
-crime-assist-crime-abuseofpower = Статья 215: Злоупотребление властью
-crime-assist-crime-blackmarketeering = Статья 206: Контрабандизм
-crime-assist-crime-obstructionofjustice = Статья 207: Воспрепятствование правосудию
-crime-assist-crime-rioting = Статья 217: Бунт
+# 65 / 65-65 минут
+crime-assist-crime-assault = Статья 65: Нападение
+crime-assist-crime-manslaughter = Статья 65: Непредумышленное убийство
+crime-assist-crime-grandtheft = Статья 65: Крупная кража
+crime-assist-crime-breakingandentering = Статья 65: Проникновение со взломом
+crime-assist-crime-sabotage = Статья 65: Саботаж
+crime-assist-crime-endangerment = Статья 65: Халатность
+crime-assist-crime-abuseofpower = Статья 65: Злоупотребление властью
+crime-assist-crime-blackmarketeering = Статья 65: Контрабандизм
+crime-assist-crime-obstructionofjustice = Статья 65: Воспрепятствование правосудию
+crime-assist-crime-rioting = Статья 65: Бунт
 
-# 300 / 15+ перма
-crime-assist-crime-kidnapping = Статья 301: Похищение
-crime-assist-crime-murder = Статья 311: Убийство
-crime-assist-crime-terrorism = Статья 321: Терроризм
-crime-assist-crime-grandsabotage = Статья 304: Масштабный саботаж
-crime-assist-crime-sedition = Статья 307: Подстрекательство к демонстрациям
-crime-assist-crime-massriot = Статья 317: Крупный мятеж
-crime-assist-crime-sexualharassment = Статья 300: Сексуальное домогательство
+# 65 / 65 перма
+crime-assist-crime-kidnapping = Статья 65: Похищение
+crime-assist-crime-murder = Статья 65: Убийство
+crime-assist-crime-terrorism = Статья 65: Терроризм
+crime-assist-crime-grandsabotage = Статья 65: Масштабный саботаж
+crime-assist-crime-sedition = Статья 65: Подстрекательство к демонстрациям
+crime-assist-crime-massriot = Статья 65: Крупный мятеж
+crime-assist-crime-sexualharassment = Статья 65: Сексуальное домогательство
 
 
 # Наказания
 
 crime-assist-crimepunishment-innocent = Наказание не требуется
 
-#100 / 2-8 минут
-crime-assist-crimepunishment-animalcruelty = Наказание: 5 минуты
-crime-assist-crimepunishment-theft = Наказание: 6 минуты
-crime-assist-crimepunishment-trespass = Наказание: По мере необходимости. Не более 3 минут.
-crime-assist-crimepunishment-vandalism = Наказание: 4 минуты
-crime-assist-crimepunishment-hooliganism = Наказание: По мере необходимости. Не более 8 минут.
-crime-assist-crimepunishment-contemptofcourt = Наказание: 3 минуты
-crime-assist-crimepunishment-perjuryfalsereport = Наказание: 4 минуты
+#65 / 65-65 минут
+crime-assist-crimepunishment-animalcruelty = Наказание: 65 минуты
+crime-assist-crimepunishment-theft = Наказание: 65 минуты
+crime-assist-crimepunishment-trespass = Наказание: По мере необходимости. Не более 65 минут.
+crime-assist-crimepunishment-vandalism = Наказание: 65 минуты
+crime-assist-crimepunishment-hooliganism = Наказание: По мере необходимости. Не более 65 минут.
+crime-assist-crimepunishment-contemptofcourt = Наказание: 65 минуты
+crime-assist-crimepunishment-perjuryfalsereport = Наказание: 65 минуты
 
-#200 / 8-15 минут
-crime-assist-crimepunishment-assault = Наказание: 10 минут
-crime-assist-crimepunishment-manslaughter = Наказание: 12 минут
-crime-assist-crimepunishment-grandtheft = Наказание: 10 минут
-crime-assist-crimepunishment-breakingandentering = Наказание: 4 минуты
-crime-assist-crimepunishment-sabotage = Наказание: 6 минут
-crime-assist-crimepunishment-endangerment = Наказание: 8 минуты
-crime-assist-crimepunishment-abuseofpower = Наказание: 10 минут
-crime-assist-crimepunishment-possession = Наказание: до 10 минут
-crime-assist-crimepunishment-blackmarketeering = Наказание: 12 минут
-crime-assist-crimepunishment-obstructionofjustice = Наказание: 10 минут
-crime-assist-crimepunishment-rioting = Наказание: 15 минут
+#65 / 65-65 минут
+crime-assist-crimepunishment-assault = Наказание: 65 минут
+crime-assist-crimepunishment-manslaughter = Наказание: 65 минут
+crime-assist-crimepunishment-grandtheft = Наказание: 65 минут
+crime-assist-crimepunishment-breakingandentering = Наказание: 65 минуты
+crime-assist-crimepunishment-sabotage = Наказание: 65 минут
+crime-assist-crimepunishment-endangerment = Наказание: 65 минуты
+crime-assist-crimepunishment-abuseofpower = Наказание: 65 минут
+crime-assist-crimepunishment-possession = Наказание: до 65 минут
+crime-assist-crimepunishment-blackmarketeering = Наказание: 65 минут
+crime-assist-crimepunishment-obstructionofjustice = Наказание: 65 минут
+crime-assist-crimepunishment-rioting = Наказание: 65 минут
 
-#300 / 15+ перма
-crime-assist-crimepunishment-kidnapping = Наказание: 20 минут
-crime-assist-crimepunishment-murder = Наказание: 20 минут
+#65 / 65 перма
+crime-assist-crimepunishment-kidnapping = Наказание: 65 минут
+crime-assist-crimepunishment-murder = Наказание: 65 минут
 crime-assist-crimepunishment-terrorism = Наказание: Перма
 crime-assist-crimepunishment-grandsabotage = Наказание: Перма
-crime-assist-crimepunishment-sedition = Наказание: 18 минут
+crime-assist-crimepunishment-sedition = Наказание: 65 минут
 crime-assist-crimepunishment-massriot = Наказание: Перма
 crime-assist-crimepunishment-sexualharassment = Наказание: Перма. Сообщить на ЦК.
 
@@ -82,7 +82,7 @@ crime-assist-crimepunishment-sexualharassment = Наказание: Перма. 
 # Описание преступлений
 
 crime-assist-crimedetail-innocent = Преступление не удалось установить. Используйте свое суждение, чтобы разрешить ситуацию.
-# 100
+# 65
 
 crime-assist-crimedetail-animalcruelty = Причинение страданий - физических или моральных; разумному существу со злым умыслом.
 crime-assist-crimedetail-theft = Незаконное присвоение имущества или предметов без согласия его владельцев, либо законно ответственных за имущество.
@@ -93,7 +93,7 @@ crime-assist-crimedetail-possession = Владение предметами ог
 crime-assist-crimedetail-contemptofcourt = Неуважительное обращение по отношению к действующей власти и/или интересам НТ.
 crime-assist-crimedetail-perjuryfalsereport = Умышленное и злонамеренное лжесвидительствование на суде/допросе или в процессе передачи сведений в службу безопасности.
 
-# 200
+# 65
 crime-assist-crimedetail-assault = Нанесение физического вреда или осуществление нежелательного физического контакта с гуманоидом без явного намерения убить его. Так же, угрозы совершить такие действия, имея возможность и намерение сделать это.
 crime-assist-crimedetail-manslaughter = Всякое действие, повлекшее за собой смерти, совершенное в корыстных целях, либо без явного намерения убить.
 crime-assist-crimedetail-grandtheft = Незаконное овладевание ограниченным, опасным, ценным или особо редким имуществом станции или предметами без согласия его владельца, либо законно ответственных за имущество.
@@ -105,7 +105,7 @@ crime-assist-crimedetail-blackmarketeering = Продажа, распростр�
 crime-assist-crimedetail-obstructionofjustice = Умышленно не подчиняться, мешать или отказываться от постановления суда, ордера или ареста.
 crime-assist-crimedetail-rioting = Участие в несанкционированном буйном, бурном и разрушительном общественном собрании, которое отказывается разойтись после предупреждения.
 
-# 300
+# 65
 crime-assist-crimedetail-murder = Преднамеренное убийство гуманоида из злого умысла.
 crime-assist-crimedetail-terrorism = Действия, угрожающие причинением увечий или смертью; также, захват заложников, чтобы запугать или заставить гуманоида/ов совершить или воздержаться от совершения какого-либо действия.
 crime-assist-crimedetail-grandsabotage = Злонамеренные действия, которые прямо или косвенно делают непригодным для жизни или восстановления имеющимися силами станцию или значительную её часть; и/или необратимое модифицирование и/или повреждение технологии, к которой не имеют законного доступа, причиняя тяжкие телесные повреждения и/или смерть нескольких гуманоидов.

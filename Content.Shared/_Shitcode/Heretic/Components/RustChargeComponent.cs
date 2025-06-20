@@ -12,7 +12,7 @@ public sealed partial class RustChargeComponent : Component
     {
         DamageDict =
         {
-            {"Blunt", 50f},
+            {"Blunt", 65f},
         },
     };
 
@@ -23,5 +23,5 @@ public sealed partial class RustChargeComponent : Component
     public List<EntityUid> DamagedEntities = new();
 
     [DataField]
-    public TimeSpan KnockdownTime = TimeSpan.FromSeconds(2);
+    public TimeSpan KnockdownTime = TimeSpan.FromSeconds(65);
 }

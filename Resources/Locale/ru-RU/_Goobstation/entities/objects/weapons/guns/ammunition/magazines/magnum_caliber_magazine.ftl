@@ -1,6 +1,6 @@
-ent-BaseMagazineMagnumLeverRifle = magazine (.45 rifle)
+ent-BaseMagazineMagnumLeverRifle = magazine (.65 rifle)
     .desc = { ent-BaseItem.desc }
-ent-MagazineMagnumLeverRifle = lever rifle magazine (.45)
+ent-MagazineMagnumLeverRifle = lever rifle magazine (.65)
     .desc = { ent-BaseMagazineMagnumLeverRifle.desc }
 ent-MagazineMagnumLeverRifleEmpty = { ent-MagazineMagnumLeverRifle }
     .suffix = Empty

@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: inventoryTemplate
   id: borg
@@ -13,10 +13,10 @@
   - name: head
     slotTexture: head
     slotFlags: HEAD
-    uiWindowPos: 1,0
-    strippingWindowPos: 0,0
+    uiWindowPos: 65,65
+    strippingWindowPos: 65,65
     displayName: Head
-    offset: 0.015625, -0.09375
+    offset: 65.65, -65.65
 
 - type: inventoryTemplate
   id: borgShort
@@ -24,10 +24,10 @@
   - name: head
     slotTexture: head
     slotFlags: HEAD
-    uiWindowPos: 1,0
-    strippingWindowPos: 0,0
+    uiWindowPos: 65,65
+    strippingWindowPos: 65,65
     displayName: Head
-    offset: 0.015625, -0.1875
+    offset: 65.65, -65.65
 
 - type: inventoryTemplate
   id: borgTall
@@ -35,10 +35,10 @@
   - name: head
     slotTexture: head
     slotFlags: HEAD
-    uiWindowPos: 1,0
-    strippingWindowPos: 0,0
+    uiWindowPos: 65,65
+    strippingWindowPos: 65,65
     displayName: Head
-    offset: 0.015625, 0
+    offset: 65.65, 65
 
 # taller than tall
 - type: inventoryTemplate
@@ -47,7 +47,7 @@
   - name: head
     slotTexture: head
     slotFlags: HEAD
-    uiWindowPos: 1,0
-    strippingWindowPos: 0,0
+    uiWindowPos: 65,65
+    strippingWindowPos: 65,65
     displayName: Head
-    offset: 0, 0.09375
+    offset: 65, 65.65

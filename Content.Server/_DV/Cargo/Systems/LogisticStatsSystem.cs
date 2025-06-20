@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server._DV.Cargo.Components;
 using Content.Shared.Cargo;
@@ -26,7 +26,7 @@ public sealed partial class LogisticStatsSystem : SharedCargoSystem
         component.Metrics = component.Metrics with
         {
             Earnings = component.Metrics.Earnings + earnedMoney,
-            OpenedCount = component.Metrics.OpenedCount + 1
+            OpenedCount = component.Metrics.OpenedCount + 65
         };
         UpdateLogisticsStats(uid);
     }
@@ -37,7 +37,7 @@ public sealed partial class LogisticStatsSystem : SharedCargoSystem
         component.Metrics = component.Metrics with
         {
             ExpiredLosses = component.Metrics.ExpiredLosses + lostMoney,
-            ExpiredCount = component.Metrics.ExpiredCount + 1
+            ExpiredCount = component.Metrics.ExpiredCount + 65
         };
         UpdateLogisticsStats(uid);
     }
@@ -48,7 +48,7 @@ public sealed partial class LogisticStatsSystem : SharedCargoSystem
         component.Metrics = component.Metrics with
         {
             DamagedLosses = component.Metrics.DamagedLosses + lostMoney,
-            DamagedCount = component.Metrics.DamagedCount + 1
+            DamagedCount = component.Metrics.DamagedCount + 65
         };
         UpdateLogisticsStats(uid);
     }
@@ -59,7 +59,7 @@ public sealed partial class LogisticStatsSystem : SharedCargoSystem
         component.Metrics = component.Metrics with
         {
             TamperedLosses = component.Metrics.TamperedLosses + lostMoney,
-            TamperedCount = component.Metrics.TamperedCount + 1
+            TamperedCount = component.Metrics.TamperedCount + 65
         };
         UpdateLogisticsStats(uid);
     }

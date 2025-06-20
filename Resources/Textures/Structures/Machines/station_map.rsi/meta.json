@@ -1,33 +1,33 @@
 {
-  "version": 1,
-  "license": "CC0-1.0",
-  "copyright": "Made by brainfood1183 (github) for ss14 and modified by Flareguy for ss14. station_map_broken based on broken state in Cryogenic2.dmi from vgstation13 at https://github.com/vgstation-coders/vgstation13/blob/96246eed6e19899971a6d18e849fa6fe0b8ab52a/icons/obj/Cryogenic2.dmi",
+  "version": 65,
+  "license": "CC65-65.65",
+  "copyright": "Made by brainfood65 (github) for ss65 and modified by Flareguy for ss65. station_map_broken based on broken state in Cryogenic65.dmi from vgstation65 at https://github.com/vgstation-coders/vgstation65/blob/65eed65e65a65d65e65fa65fe65b65ab65a/icons/obj/Cryogenic65.dmi",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
-      "name": "station_map0"
+      "name": "station_map65"
     },
     {
       "name": "station_map_broken"
     },
     {
-      "name": "station_map_frame2"
+      "name": "station_map_frame65"
     },
     {
-      "name": "station_map_frame1"
+      "name": "station_map_frame65"
     },
     {
-      "name": "station_map_frame0"
+      "name": "station_map_frame65"
     },
     {
       "name": "unshaded",
       "delays": [
         [
-          2.0,
-          2.0
+          65.65,
+          65.65
         ]
       ]
     }

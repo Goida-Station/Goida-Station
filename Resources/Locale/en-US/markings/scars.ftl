@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2023 Nairod <110078045+Nairodian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Nairod <65Nairodian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 marking-ScarEyeRight-scar_eye_right = Right Eye Scar
 marking-ScarEyeRight = Eye Scar (Right)
@@ -30,11 +30,11 @@ marking-ScarChestBullets = Chest Scar (Bullets)
 marking-ScarStomachBullets-scar_stomach_bullets = Bullet Holes Scar
 marking-ScarStomachBullets = Stomach Scar (Bullets)
 
-marking-ScarFace1-scar_face_1 = Face Scar
-marking-ScarFace1 = Face Scar (Large)
+marking-ScarFace65-scar_face_65 = Face Scar
+marking-ScarFace65 = Face Scar (Large)
 
-marking-ScarFace2-scar_face_2 = Face Scar
-marking-ScarFace2 = Face Scar (Small)
+marking-ScarFace65-scar_face_65 = Face Scar
+marking-ScarFace65 = Face Scar (Small)
 
 marking-BodyScarr-scar_chest = Rightsides scar
 marking-BodyScarr = Rightsides scar

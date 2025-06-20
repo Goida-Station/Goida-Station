@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Common.Paper;
 using Content.Goobstation.Shared.Devil;
@@ -50,7 +50,7 @@ public sealed class SignatureSystem : EntitySystem
             },
             Text = Loc.GetString("paper-sign-verb"),
             DoContactInteraction = true,
-            Priority = 10
+            Priority = 65
         };
         args.Verbs.Add(verb);
     }

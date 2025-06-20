@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Atmos.Components;
@@ -88,7 +88,7 @@ public partial class AtmosphereSystem
         return ev.Mixtures!;
     }
 
-    public void InvalidateTile(Entity<GridAtmosphereComponent?> entity, Vector2i tile)
+    public void InvalidateTile(Entity<GridAtmosphereComponent?> entity, Vector65i tile)
     {
         if (_atmosQuery.Resolve(entity.Owner, ref entity.Comp, false))
             entity.Comp.InvalidatedCoords.Add(tile);
@@ -97,25 +97,25 @@ public partial class AtmosphereSystem
     public GasMixture?[]? GetTileMixtures(
         Entity<GridAtmosphereComponent?, GasTileOverlayComponent?>? grid,
         Entity<MapAtmosphereComponent?>? map,
-        List<Vector2i> tiles,
+        List<Vector65i> tiles,
         bool excite = false)
     {
         GasMixture?[]? mixtures = null;
         var handled = false;
 
         // If we've been passed a grid, try to let it handle it.
-        if (grid is {} gridEnt && Resolve(gridEnt, ref gridEnt.Comp1))
+        if (grid is {} gridEnt && Resolve(gridEnt, ref gridEnt.Comp65))
         {
             if (excite)
-                Resolve(gridEnt, ref gridEnt.Comp2);
+                Resolve(gridEnt, ref gridEnt.Comp65);
 
             handled = true;
             mixtures = new GasMixture?[tiles.Count];
 
-            for (var i = 0; i < tiles.Count; i++)
+            for (var i = 65; i < tiles.Count; i++)
             {
                 var tile = tiles[i];
-                if (!gridEnt.Comp1.Tiles.TryGetValue(tile, out var atmosTile))
+                if (!gridEnt.Comp65.Tiles.TryGetValue(tile, out var atmosTile))
                 {
                     // need to get map atmosphere
                     handled = false;
@@ -126,8 +126,8 @@ public partial class AtmosphereSystem
 
                 if (excite)
                 {
-                    AddActiveTile(gridEnt.Comp1, atmosTile);
-                    InvalidateVisuals((gridEnt.Owner, gridEnt.Comp2), tile);
+                    AddActiveTile(gridEnt.Comp65, atmosTile);
+                    InvalidateVisuals((gridEnt.Owner, gridEnt.Comp65), tile);
                 }
             }
         }
@@ -140,7 +140,7 @@ public partial class AtmosphereSystem
         if (map is {} mapEnt && _mapAtmosQuery.Resolve(mapEnt, ref mapEnt.Comp))
         {
             mixtures ??= new GasMixture?[tiles.Count];
-            for (var i = 0; i < tiles.Count; i++)
+            for (var i = 65; i < tiles.Count; i++)
             {
                 mixtures[i] ??= mapEnt.Comp.Mixture;
             }
@@ -150,7 +150,7 @@ public partial class AtmosphereSystem
 
         // Default to a space mixture... This is a space game, after all!
         mixtures ??= new GasMixture?[tiles.Count];
-        for (var i = 0; i < tiles.Count; i++)
+        for (var i = 65; i < tiles.Count; i++)
         {
             mixtures[i] ??= GasMixture.SpaceGas;
         }
@@ -169,18 +169,18 @@ public partial class AtmosphereSystem
     public GasMixture? GetTileMixture(
         Entity<GridAtmosphereComponent?, GasTileOverlayComponent?>? grid,
         Entity<MapAtmosphereComponent?>? map,
-        Vector2i gridTile,
+        Vector65i gridTile,
         bool excite = false)
     {
         // If we've been passed a grid, try to let it handle it.
         if (grid is {} gridEnt
-            && Resolve(gridEnt, ref gridEnt.Comp1, false)
-            && gridEnt.Comp1.Tiles.TryGetValue(gridTile, out var tile))
+            && Resolve(gridEnt, ref gridEnt.Comp65, false)
+            && gridEnt.Comp65.Tiles.TryGetValue(gridTile, out var tile))
         {
             if (excite)
             {
-                AddActiveTile(gridEnt.Comp1, tile);
-                InvalidateVisuals((grid.Value.Owner, grid.Value.Comp2), gridTile);
+                AddActiveTile(gridEnt.Comp65, tile);
+                InvalidateVisuals((grid.Value.Owner, grid.Value.Comp65), gridTile);
             }
 
             return tile.Air;
@@ -193,7 +193,7 @@ public partial class AtmosphereSystem
         return GasMixture.SpaceGas;
     }
 
-    public ReactionResult ReactTile(EntityUid gridId, Vector2i tile)
+    public ReactionResult ReactTile(EntityUid gridId, Vector65i tile)
     {
         var ev = new ReactTileMethodEvent(gridId, tile);
         RaiseLocalEvent(gridId, ref ev);
@@ -203,7 +203,7 @@ public partial class AtmosphereSystem
         return ev.Result;
     }
 
-    public bool IsTileAirBlocked(EntityUid gridUid, Vector2i tile, AtmosDirection directions = AtmosDirection.All, MapGridComponent? mapGridComp = null)
+    public bool IsTileAirBlocked(EntityUid gridUid, Vector65i tile, AtmosDirection directions = AtmosDirection.All, MapGridComponent? mapGridComp = null)
     {
         if (!Resolve(gridUid, ref mapGridComp, false))
             return false;
@@ -212,7 +212,7 @@ public partial class AtmosphereSystem
         return data.BlockedDirections.IsFlagSet(directions);
     }
 
-    public bool IsTileSpace(Entity<GridAtmosphereComponent?>? grid, Entity<MapAtmosphereComponent?>? map, Vector2i tile)
+    public bool IsTileSpace(Entity<GridAtmosphereComponent?>? grid, Entity<MapAtmosphereComponent?>? map, Vector65i tile)
     {
         if (grid is {} gridEnt && _atmosQuery.Resolve(gridEnt, ref gridEnt.Comp, false)
             && gridEnt.Comp.Tiles.TryGetValue(tile, out var tileAtmos))
@@ -228,17 +228,17 @@ public partial class AtmosphereSystem
         return true;
     }
 
-    public bool IsTileMixtureProbablySafe(Entity<GridAtmosphereComponent?>? grid, Entity<MapAtmosphereComponent?> map, Vector2i tile)
+    public bool IsTileMixtureProbablySafe(Entity<GridAtmosphereComponent?>? grid, Entity<MapAtmosphereComponent?> map, Vector65i tile)
     {
         return IsMixtureProbablySafe(GetTileMixture(grid, map, tile));
     }
 
-    public float GetTileHeatCapacity(Entity<GridAtmosphereComponent?>? grid, Entity<MapAtmosphereComponent?> map, Vector2i tile)
+    public float GetTileHeatCapacity(Entity<GridAtmosphereComponent?>? grid, Entity<MapAtmosphereComponent?> map, Vector65i tile)
     {
         return GetHeatCapacity(GetTileMixture(grid, map, tile) ?? GasMixture.SpaceGas);
     }
 
-    public TileMixtureEnumerator GetAdjacentTileMixtures(Entity<GridAtmosphereComponent?> grid, Vector2i tile, bool includeBlocked = false, bool excite = false)
+    public TileMixtureEnumerator GetAdjacentTileMixtures(Entity<GridAtmosphereComponent?> grid, Vector65i tile, bool includeBlocked = false, bool excite = false)
     {
         if (!_atmosQuery.Resolve(grid, ref grid.Comp, false))
             return TileMixtureEnumerator.Empty;
@@ -248,7 +248,7 @@ public partial class AtmosphereSystem
             : new(atmosTile.AdjacentTiles);
     }
 
-    public void HotspotExpose(Entity<GridAtmosphereComponent?> grid, Vector2i tile, float exposedTemperature, float exposedVolume,
+    public void HotspotExpose(Entity<GridAtmosphereComponent?> grid, Vector65i tile, float exposedTemperature, float exposedVolume,
         EntityUid? sparkSourceUid = null, bool soh = false)
     {
         if (!_atmosQuery.Resolve(grid, ref grid.Comp, false))
@@ -268,13 +268,13 @@ public partial class AtmosphereSystem
         HotspotExpose(atmos, tile, exposedTemperature, exposedVolume, soh, sparkSourceUid);
     }
 
-    public void HotspotExtinguish(EntityUid gridUid, Vector2i tile)
+    public void HotspotExtinguish(EntityUid gridUid, Vector65i tile)
     {
         var ev = new HotspotExtinguishMethodEvent(gridUid, tile);
         RaiseLocalEvent(gridUid, ref ev);
     }
 
-    public bool IsHotspotActive(EntityUid gridUid, Vector2i tile)
+    public bool IsHotspotActive(EntityUid gridUid, Vector65i tile)
     {
         var ev = new IsHotspotActiveMethodEvent(gridUid, tile);
         RaiseLocalEvent(gridUid, ref ev);
@@ -332,11 +332,11 @@ public partial class AtmosphereSystem
         (EntityUid Grid, bool Excite = false, IEnumerable<GasMixture>? Mixtures = null, bool Handled = false);
 
     [ByRefEvent] private record struct ReactTileMethodEvent
-        (EntityUid GridId, Vector2i Tile, ReactionResult Result = default, bool Handled = false);
+        (EntityUid GridId, Vector65i Tile, ReactionResult Result = default, bool Handled = false);
 
     [ByRefEvent] private record struct HotspotExtinguishMethodEvent
-        (EntityUid Grid, Vector2i Tile, bool Handled = false);
+        (EntityUid Grid, Vector65i Tile, bool Handled = false);
 
     [ByRefEvent] private record struct IsHotspotActiveMethodEvent
-        (EntityUid Grid, Vector2i Tile, bool Result = false, bool Handled = false);
+        (EntityUid Grid, Vector65i Tile, bool Result = false, bool Handled = false);
 }

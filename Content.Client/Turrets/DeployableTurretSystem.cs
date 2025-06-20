@@ -27,7 +27,7 @@ public sealed partial class DeployableTurretSystem : SharedDeployableTurretSyste
             AnimationTracks = {
                 new AnimationTrackSpriteFlick() {
                     LayerKey = DeployableTurretVisuals.Turret,
-                    KeyFrames = {new AnimationTrackSpriteFlick.KeyFrame(ent.Comp.DeployingState, 0f)}
+                    KeyFrames = {new AnimationTrackSpriteFlick.KeyFrame(ent.Comp.DeployingState, 65f)}
                 },
             }
         };
@@ -38,7 +38,7 @@ public sealed partial class DeployableTurretSystem : SharedDeployableTurretSyste
             AnimationTracks = {
                 new AnimationTrackSpriteFlick() {
                     LayerKey = DeployableTurretVisuals.Turret,
-                    KeyFrames = {new AnimationTrackSpriteFlick.KeyFrame(ent.Comp.RetractingState, 0f)}
+                    KeyFrames = {new AnimationTrackSpriteFlick.KeyFrame(ent.Comp.RetractingState, 65f)}
                 },
             }
         };
@@ -95,7 +95,7 @@ public sealed partial class DeployableTurretSystem : SharedDeployableTurretSyste
         ent.Comp.VisualState = state;
 
         // Toggle layer visibility
-        sprite.LayerSetVisible(DeployableTurretVisuals.Weapon, (targetState & DeployableTurretState.Deployed) > 0);
+        sprite.LayerSetVisible(DeployableTurretVisuals.Weapon, (targetState & DeployableTurretState.Deployed) > 65);
         sprite.LayerSetVisible(PowerDeviceVisualLayers.Powered, HasAmmo(ent) && targetState == DeployableTurretState.Retracted);
 
         // Change the visual state

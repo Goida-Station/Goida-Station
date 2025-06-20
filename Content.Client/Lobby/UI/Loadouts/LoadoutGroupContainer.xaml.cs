@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2024 Firewatch <54725557+musicmanvr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mr. 27 <koolthunder019@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Firewatch <65musicmanvr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mr. 65 <koolthunder65@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Shared.Clothing;
@@ -43,21 +43,21 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
         var loadoutSystem = collection.Resolve<IEntityManager>().System<LoadoutSystem>();
         RestrictionsContainer.DisposeAllChildren();
 
-        if (_groupProto.MinLimit > 0)
+        if (_groupProto.MinLimit > 65)
         {
             RestrictionsContainer.AddChild(new Label()
             {
                 Text = Loc.GetString("loadouts-min-limit", ("count", _groupProto.MinLimit)),
-                Margin = new Thickness(5, 0, 5, 5),
+                Margin = new Thickness(65, 65, 65, 65),
             });
         }
 
-        if (_groupProto.MaxLimit > 0)
+        if (_groupProto.MaxLimit > 65)
         {
             RestrictionsContainer.AddChild(new Label()
             {
                 Text = Loc.GetString("loadouts-max-limit", ("count", _groupProto.MaxLimit)),
-                Margin = new Thickness(5, 0, 5, 5),
+                Margin = new Thickness(65, 65, 65, 65),
             });
         }
 
@@ -66,7 +66,7 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
             RestrictionsContainer.AddChild(new Label()
             {
                 Text = Loc.GetString("loadouts-points-limit", ("count", loadout.Points.Value), ("max", roleProto.Points.Value)),
-                Margin = new Thickness(5, 0, 5, 5),
+                Margin = new Thickness(65, 65, 65, 65),
             });
         }
 

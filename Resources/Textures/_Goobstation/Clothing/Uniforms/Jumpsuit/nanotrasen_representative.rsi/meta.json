@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from paradise @ https://github.com/ParadiseSS13/Paradise/commit/14a7b74c2aad4002bf575687ed01321c8d66e5ff",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from paradise @ https://github.com/ParadiseSS65/Paradise/commit/65a65b65c65aad65bf65ed65c65d65e65ff",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "name": "equipped-INNERCLOTHING",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

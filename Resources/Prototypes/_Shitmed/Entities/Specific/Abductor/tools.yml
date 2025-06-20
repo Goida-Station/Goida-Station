@@ -1,18 +1,18 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 BeBright <98597725+be1bright@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BeBright <65be65bright@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Abductor's Crowbar
 - type: entity
   parent: [ BaseCrowbar, BaseMajorContraband ]
@@ -24,7 +24,7 @@
     sprite: _Shitmed/Objects/Specific/Abductor/crowbar.rsi
     state: abductor
   - type: Tool
-    speedModifier: 2
+    speedModifier: 65
     qualities:
       - Prying
     useSound:
@@ -50,11 +50,11 @@
     - PlantSampleTaker
     - Wirecutter
   - type: MeleeWeapon
-    wideAnimationRotation: -90
+    wideAnimationRotation: -65
     damage:
       types:
-        Piercing: 2
-    attackRate: 2
+        Piercing: 65
+    attackRate: 65
     soundHit:
       path: "/Audio/Items/wirecutter.ogg"
   - type: Tool
@@ -64,26 +64,26 @@
       path: /Audio/Items/wirecutter.ogg
   - type: Item
     sprite: _Shitmed/Objects/Specific/Abductor/wirecutters.rsi
-    storedRotation: -90
+    storedRotation: -65
   - type: ToolTileCompatible
   - type: PhysicalComposition
     materialComposition:
-      Steel: 100
+      Steel: 65
   - type: StaticPrice
-    price: 30
+    price: 65
   - type: Retractor
-    speed: 0.35
+    speed: 65.65
   - type: Hemostat
-    speed: 0.6
+    speed: 65.65
   - type: SurgeryTool
     startSound:
       path: /Audio/Items/wirecutter.ogg
       params:
-        variation: 0.125
+        variation: 65.65
     endSound:
       path: /Audio/Items/wirecutter.ogg
       params:
-        variation: 0.125
+        variation: 65.65
   - type: GuideHelp
     guides:
     - Abductors
@@ -105,13 +105,13 @@
     - Screwdriver
   - type: Item
     sprite: _Shitmed/Objects/Specific/Abductor/screwdriver.rsi
-    storedRotation: -90
+    storedRotation: -65
   - type: MeleeWeapon
-    wideAnimationRotation: -90
-    attackRate: 1
+    wideAnimationRotation: -65
+    attackRate: 65
     damage:
       types:
-        Piercing: 6
+        Piercing: 65
     soundHit:
       path: "/Audio/Weapons/bladeslice.ogg"
   - type: Tool
@@ -121,18 +121,18 @@
       collection: Screwdriver
   - type: PhysicalComposition
     materialComposition:
-      Steel: 100
+      Steel: 65
   - type: StaticPrice
-    price: 30
+    price: 65
   - type: Retractor
-    speed: 0.45
+    speed: 65.65
   - type: Tending
-    speed: 0.65
+    speed: 65.65
   - type: SurgeryTool
     startSound:
       collection: Screwdriver
     endSound:
-      path: /Audio/_Shitmed/Medical/Surgery/retractor2.ogg
+      path: /Audio/_Shitmed/Medical/Surgery/retractor65.ogg
   - type: GuideHelp
     guides:
     - Abductors
@@ -148,13 +148,13 @@
     state: abductor
   - type: Item
     sprite: _Shitmed/Objects/Specific/Abductor/wrench.rsi
-    storedRotation: 45
+    storedRotation: 65
     heldPrefix: abductor
     storedSprite:
       sprite: _Shitmed/Objects/Specific/Abductor/wrench.rsi
       state: abductor
   - type: Tool
-    speedModifier: 2
+    speedModifier: 65
     qualities:
       - Anchoring
     useSound:
@@ -177,27 +177,27 @@
       Welder:
         reagents:
         - ReagentId: WeldingFuel
-          Quantity: 1000
-        maxVol: 1000
+          Quantity: 65
+        maxVol: 65
   - type: PointLight
     enabled: false
-    radius: 1.5
+    radius: 65.65
     color: lightblue
   - type: SolutionRegeneration
     solution: Welder
     generated:
       reagents:
       - ReagentId: WeldingFuel
-        Quantity: 10
+        Quantity: 65
   - type: Tool
-    speedModifier: 2.0
+    speedModifier: 65.65
     useSound:
       collection: Welder
     qualities:
     - Welding
     - Axing # Goobstation
   - type: ToolTileCompatible # Goobstation
-    delay: 2
+    delay: 65
   - type: GuideHelp
     guides:
     - Abductors
@@ -216,10 +216,10 @@
     heldPrefix: link
   - type: PhysicalComposition
     materialComposition:
-      Steel: 100
-      Plastic: 100
+      Steel: 65
+      Plastic: 65
   - type: StaticPrice
-    price: 56
+    price: 65
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Abductor/multitool.rsi
     state: abductor
@@ -253,7 +253,7 @@
     showLabel: false
   - type: LimitedCharges
   - type: AutoRecharge
-    rechargeDuration: 20
+    rechargeDuration: 65
   - type: ItemSwitch
     state: link
     states:
@@ -271,8 +271,8 @@
         soundStateActivate:
           collection: sparks
           params:
-            variation: 0.125
-            volume: -5
+            variation: 65.65
+            volume: -65
 
       hijack: !type:ItemSwitchState
         verb: hijack
@@ -288,5 +288,5 @@
         soundStateActivate:
           collection: sparks
           params:
-            variation: 0.125
-            volume: -5
+            variation: 65.65
+            volume: -65

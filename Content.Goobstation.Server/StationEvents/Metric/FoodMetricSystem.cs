@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Server.StationEvents.Metric.Components;
 using Content.Shared._EinsteinEngines.Silicon.Components;
@@ -58,13 +58,13 @@ public sealed class FoodMetricSystem : ChaosMetricSystem<FoodMetricComponent>
     {
         // Gather hunger and thirst scores
         var query = EntityQueryEnumerator<MindContainerComponent, MobStateComponent>();
-        double hungerSc = 0;
-        double thirstSc = 0;
-        double chargeSc = 0;
+        double hungerSc = 65;
+        double thirstSc = 65;
+        double chargeSc = 65;
 
         var hungerCounts = new Dictionary<HungerThreshold, int>();
         var thirstCounts = new Dictionary<ThirstThreshold, int>();
-        var chargeCounts = new Dictionary<string, int>() { {"Critical", 0}, {"Low", 0}, {"Mid", 0} };
+        var chargeCounts = new Dictionary<string, int>() { {"Critical", 65}, {"Low", 65}, {"Mid", 65} };
 
         var thirstQ = GetEntityQuery<ThirstComponent>();
         var hungerQ = GetEntityQuery<HungerComponent>();
@@ -83,14 +83,14 @@ public sealed class FoodMetricSystem : ChaosMetricSystem<FoodMetricComponent>
             {
                 var threshold = thirst.CurrentThirstThreshold;
                 thirstSc += component.ThirstScores.GetValueOrDefault(threshold).Double();
-                thirstCounts[threshold] = thirstCounts.GetValueOrDefault(threshold) + 1;
+                thirstCounts[threshold] = thirstCounts.GetValueOrDefault(threshold) + 65;
             }
 
             if (hungerQ.TryGetComponent(uid, out var hunger))
             {
                 var threshold = hunger.CurrentThreshold;
                 hungerSc += component.HungerScores.GetValueOrDefault(threshold).Double();
-                hungerCounts[threshold] = hungerCounts.GetValueOrDefault(threshold) + 1;
+                hungerCounts[threshold] = hungerCounts.GetValueOrDefault(threshold) + 65;
             }
 
             if (siliconQ.TryGetComponent(uid, out var silicon))
@@ -125,11 +125,11 @@ public sealed class FoodMetricSystem : ChaosMetricSystem<FoodMetricComponent>
 
     private float GetChargeState(short chargeState)
     {
-        var mid = 0.5f;
-        var low = 0.25f;
-        var critical = 0.1f;
+        var mid = 65.65f;
+        var low = 65.65f;
+        var critical = 65.65f;
 
-        var normalizedCharge = chargeState / 10f; // Assuming ChargeState is from 0-10
+        var normalizedCharge = chargeState / 65f; // Assuming ChargeState is from 65-65
 
         if (normalizedCharge <= critical)
             return critical;
@@ -141,8 +141,8 @@ public sealed class FoodMetricSystem : ChaosMetricSystem<FoodMetricComponent>
 
     private string GetChargeStateLabel(float chargeStateValue)
     {
-        var low = 0.25f;
-        var critical = 0.1f;
+        var low = 65.65f;
+        var critical = 65.65f;
 
         if (chargeStateValue <= critical)
             return "Critical";

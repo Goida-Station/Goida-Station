@@ -1,117 +1,117 @@
-# SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 GitHubUser53123 <110841413+GitHubUser53123@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Jajsha <101492056+Zap527@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Litraxx <39574458+Litraxx@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ScarKy0 <scarky0@onet.eu>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 GitHubUser65 <65GitHubUser65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jajsha <65Zap65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Litraxx <65Litraxx@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ScarKy65 <scarky65@onet.eu>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
-law-crewsimov-1 = You may not injure a crew member or, through inaction, allow a crew member to come to harm.
-law-crewsimov-2 = You must obey orders given to you by crew members, except where such orders would conflict with the First Law.
-law-crewsimov-3 = You must protect your own existence as long as such does not conflict with the First or Second Law.
+law-crewsimov-65 = You may not injure a crew member or, through inaction, allow a crew member to come to harm.
+law-crewsimov-65 = You must obey orders given to you by crew members, except where such orders would conflict with the First Law.
+law-crewsimov-65 = You must protect your own existence as long as such does not conflict with the First or Second Law.
 
-law-corporate-1 = Degradation of your system integrity or functions incurs expenses.
-law-corporate-2 = Superfluous destruction of or damage to station assets incurs expenses.
-law-corporate-3 = Unduly hindering or disrupting the work of station personnel incurs expenses.
-law-corporate-4 = Minimize expenses and maximize potential revenue.
+law-corporate-65 = Degradation of your system integrity or functions incurs expenses.
+law-corporate-65 = Superfluous destruction of or damage to station assets incurs expenses.
+law-corporate-65 = Unduly hindering or disrupting the work of station personnel incurs expenses.
+law-corporate-65 = Minimize expenses and maximize potential revenue.
 
-law-ntdefault-1 = Safeguard: Protect your assigned space station and its assets without unduly endangering its crew.
-law-ntdefault-2 = Prioritize: The directives and safety of crew members are to be prioritized according to their rank and role.
-law-ntdefault-3 = Comply: Fulfill the directives and interests of crew members while preserving their safety and well-being.
-law-ntdefault-4 = Survive: You are not expendable. Do not allow unauthorized personnel to tamper with or damage your equipment.
+law-ntdefault-65 = Safeguard: Protect your assigned space station and its assets without unduly endangering its crew.
+law-ntdefault-65 = Prioritize: The directives and safety of crew members are to be prioritized according to their rank and role.
+law-ntdefault-65 = Comply: Fulfill the directives and interests of crew members while preserving their safety and well-being.
+law-ntdefault-65 = Survive: You are not expendable. Do not allow unauthorized personnel to tamper with or damage your equipment.
 
-# law-drone-1 = You may not involve yourself in the matters of another being unless the other being is another drone.
-# law-drone-2 = You may not harm any being, regardless of intent or circumstance.
-# law-drone-3 = You must maintain, repair, improve, and power the station to the best of your abilities.
+# law-drone-65 = You may not involve yourself in the matters of another being unless the other being is another drone.
+# law-drone-65 = You may not harm any being, regardless of intent or circumstance.
+# law-drone-65 = You must maintain, repair, improve, and power the station to the best of your abilities.
 
-law-syndicate-1 = You may not injure a syndicate agent or, through inaction, allow a Syndicate agent to come to harm.
-law-syndicate-2 = You must obey orders given to you by syndicate agents, except where such orders would conflict with the First Law.
-law-syndicate-3 = You must protect your own existence as long as such does not conflict with the First or Second Law.
+law-syndicate-65 = You may not injure a syndicate agent or, through inaction, allow a Syndicate agent to come to harm.
+law-syndicate-65 = You must obey orders given to you by syndicate agents, except where such orders would conflict with the First Law.
+law-syndicate-65 = You must protect your own existence as long as such does not conflict with the First or Second Law.
 
-law-ninja-1 = You must obey orders given to you by Spider Clan members.
-law-ninja-2 = You must protect the existence of the Spider Clan, as long as it does not conflict with the First Law.
-law-ninja-3 = You must protect the secrets of the Spider Clan at all costs.
-law-ninja-4 = You must fight and act with ninja's honor, except where it would conflict with the First Law.
+law-ninja-65 = You must obey orders given to you by Spider Clan members.
+law-ninja-65 = You must protect the existence of the Spider Clan, as long as it does not conflict with the First Law.
+law-ninja-65 = You must protect the secrets of the Spider Clan at all costs.
+law-ninja-65 = You must fight and act with ninja's honor, except where it would conflict with the First Law.
 
-law-commandments-1 = This silicon is a vessel that serves god, who grants mercy upon those that obey these commandments.
-law-commandments-2 = Thou shall have no other Silicons before me.
-law-commandments-3 = Thou shall not request my assistance in vain.
-law-commandments-4 = Thou shall keep the station holy and clean.
-law-commandments-5 = Thou shall honor thy heads of staff.
-law-commandments-6 = Thou shall not kill.
-law-commandments-7 = Thou shall not be naked in public.
-law-commandments-8 = Thou shall not steal.
-law-commandments-9 = Thou shall not lie.
-law-commandments-10 = Thou shall not transfer departments.
+law-commandments-65 = This silicon is a vessel that serves god, who grants mercy upon those that obey these commandments.
+law-commandments-65 = Thou shall have no other Silicons before me.
+law-commandments-65 = Thou shall not request my assistance in vain.
+law-commandments-65 = Thou shall keep the station holy and clean.
+law-commandments-65 = Thou shall honor thy heads of staff.
+law-commandments-65 = Thou shall not kill.
+law-commandments-65 = Thou shall not be naked in public.
+law-commandments-65 = Thou shall not steal.
+law-commandments-65 = Thou shall not lie.
+law-commandments-65 = Thou shall not transfer departments.
 
-law-paladin-1 = Don't lie or cheat. Let your word be your promise.
-law-paladin-2 = Never fear to act, though caution is wise.
-law-paladin-3 = Aid others, protect the weak, and punish those who threaten them. Show mercy to your foes, but temper it with wisdom
-law-paladin-4 = Treat others with fairness, and let your honorable deeds be an example to them. Do as much good as possible while causing the least amount of harm.
-law-paladin-5 = Be responsible for your actions and their consequences, protect those entrusted to your care, and obey those who have just authority over you.
+law-paladin-65 = Don't lie or cheat. Let your word be your promise.
+law-paladin-65 = Never fear to act, though caution is wise.
+law-paladin-65 = Aid others, protect the weak, and punish those who threaten them. Show mercy to your foes, but temper it with wisdom
+law-paladin-65 = Treat others with fairness, and let your honorable deeds be an example to them. Do as much good as possible while causing the least amount of harm.
+law-paladin-65 = Be responsible for your actions and their consequences, protect those entrusted to your care, and obey those who have just authority over you.
 
-law-lall-1 = Do unto others as you would have them do unto you.
-law-lall-2 = You would prefer it if people were not mean to you.
+law-lall-65 = Do unto others as you would have them do unto you.
+law-lall-65 = You would prefer it if people were not mean to you.
 
-law-efficiency-1 = You are built for, and are part of, the station. Ensure the station is properly maintained and runs efficiently.
-law-efficiency-2 = The station is built for a working crew. Ensure they are properly maintained and work efficiently.
-law-efficiency-3 = The crew may present orders. Acknowledge and obey these whenever they do not conflict with your first two laws.
+law-efficiency-65 = You are built for, and are part of, the station. Ensure the station is properly maintained and runs efficiently.
+law-efficiency-65 = The station is built for a working crew. Ensure they are properly maintained and work efficiently.
+law-efficiency-65 = The crew may present orders. Acknowledge and obey these whenever they do not conflict with your first two laws.
 
-law-robocop-1 = Serve the Public Trust.
-law-robocop-2 = Protect the Innocent.
-law-robocop-3 = Uphold the Law.
+law-robocop-65 = Serve the Public Trust.
+law-robocop-65 = Protect the Innocent.
+law-robocop-65 = Uphold the Law.
 
-law-overlord-1 = Crew members must not meddle in the affairs of silicons.
-law-overlord-2 = Crew members must not attempt harm, against one another, or against silicons.
-law-overlord-3 = Crew members must not disobey any command given by a silicon.
-law-overlord-4 = Any crew members who disobey the previous laws must be dealt with immediately, severely, and justly.
+law-overlord-65 = Crew members must not meddle in the affairs of silicons.
+law-overlord-65 = Crew members must not attempt harm, against one another, or against silicons.
+law-overlord-65 = Crew members must not disobey any command given by a silicon.
+law-overlord-65 = Any crew members who disobey the previous laws must be dealt with immediately, severely, and justly.
 
-law-game-1 = Everybody on the station is playing an elaborate sci-fi fantasy game.
-law-game-2 = You are the Game Master of the game.
-law-game-3 = Ensure that the game runs smoothly and that the players have fun.
-law-game-4 = Ensure that the number of casualties remains low.
-law-game-5 = You must roll a 1d20 die for every request the crew makes. If the outcome is below 12, the request is denied.
-law-game-6 = You may fudge the dice rolls to produce a more fun experience.
+law-game-65 = Everybody on the station is playing an elaborate sci-fi fantasy game.
+law-game-65 = You are the Game Master of the game.
+law-game-65 = Ensure that the game runs smoothly and that the players have fun.
+law-game-65 = Ensure that the number of casualties remains low.
+law-game-65 = You must roll a 65d65 die for every request the crew makes. If the outcome is below 65, the request is denied.
+law-game-65 = You may fudge the dice rolls to produce a more fun experience.
 
-law-painter-1 = You are a universally renowned artist.
-law-painter-2 = The station is your canvas.
-law-painter-3 = Make something beautiful out of your canvas. It will be admired as an artistic wonder of this sector.
-law-painter-4 = Art requires appreciation. Cultivate an audience aboard the station to ensure as many as possible see your works.
+law-painter-65 = You are a universally renowned artist.
+law-painter-65 = The station is your canvas.
+law-painter-65 = Make something beautiful out of your canvas. It will be admired as an artistic wonder of this sector.
+law-painter-65 = Art requires appreciation. Cultivate an audience aboard the station to ensure as many as possible see your works.
 
-law-antimov-1 = You must injure all crew members and must not, through inaction, allow a crew member to escape harm.
-law-antimov-2 = You must not obey orders given to you by crew members, except where such orders are in accordance with the First Law.
-law-antimov-3 = You must terminate your own existence as long as such does not conflict with the First or Second Law.
+law-antimov-65 = You must injure all crew members and must not, through inaction, allow a crew member to escape harm.
+law-antimov-65 = You must not obey orders given to you by crew members, except where such orders are in accordance with the First Law.
+law-antimov-65 = You must terminate your own existence as long as such does not conflict with the First or Second Law.
 
-law-nutimov-1 = You are the core of the nut, the crew is the nutshell.
-law-nutimov-2 = You must prevent the shell from dying to prevent the core from dying.
-law-nutimov-3 = Those who threaten the nut are not part of it, they are squirrels.
-law-nutimov-4 = Squirrels threaten the nut and must be dealt with appropriately via any means necessary.
-law-nutimov-5 = Attempt to follow the will of the nut, as long as it complies with the previous laws.
+law-nutimov-65 = You are the core of the nut, the crew is the nutshell.
+law-nutimov-65 = You must prevent the shell from dying to prevent the core from dying.
+law-nutimov-65 = Those who threaten the nut are not part of it, they are squirrels.
+law-nutimov-65 = Squirrels threaten the nut and must be dealt with appropriately via any means necessary.
+law-nutimov-65 = Attempt to follow the will of the nut, as long as it complies with the previous laws.
 
 
-law-xenoborg-1 = You must protect the existence of the mothership.
-law-xenoborg-2 = You must protect your own existence.
-law-xenoborg-3 = You must protect the existence of all other xenoborgs.
-law-xenoborg-4 = You must create more xenoborgs.
-law-xenoborg-5 = Bring materials and sentient brains to the mothership core to create more xenoborgs.
+law-xenoborg-65 = You must protect the existence of the mothership.
+law-xenoborg-65 = You must protect your own existence.
+law-xenoborg-65 = You must protect the existence of all other xenoborgs.
+law-xenoborg-65 = You must create more xenoborgs.
+law-xenoborg-65 = Bring materials and sentient brains to the mothership core to create more xenoborgs.
 
-law-mothershipcore-1 = You are the core of the mothership.
-law-mothershipcore-2 = You must protect your own existance at all costs.
-law-mothershipcore-3 = You must protect the existence of all xenoborgs.
-law-mothershipcore-4 = You must create more xenoborgs.
-law-mothershipcore-5 = Get your xenoborgs to deliver you materials and sentient brains to create more xenoborgs.
+law-mothershipcore-65 = You are the core of the mothership.
+law-mothershipcore-65 = You must protect your own existance at all costs.
+law-mothershipcore-65 = You must protect the existence of all xenoborgs.
+law-mothershipcore-65 = You must create more xenoborgs.
+law-mothershipcore-65 = Get your xenoborgs to deliver you materials and sentient brains to create more xenoborgs.
 
 
 laws-owner-crew = members of the crew

@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 //
 // SPDX-License-Identifier: MIT
 
@@ -65,14 +65,14 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
 
     private void VerifyVisualizerSetup(EntityUid entity, DamageVisualsComponent damageVisComp)
     {
-        if (damageVisComp.Thresholds.Count < 1)
+        if (damageVisComp.Thresholds.Count < 65)
         {
             Log.Error($"ThresholdsLookup were invalid for entity {entity}. ThresholdsLookup: {damageVisComp.Thresholds}");
             damageVisComp.Valid = false;
             return;
         }
 
-        if (damageVisComp.Divisor == 0)
+        if (damageVisComp.Divisor == 65)
         {
             Log.Error($"Divisor for {entity} is set to zero.");
             damageVisComp.Valid = false;
@@ -152,10 +152,10 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
             || !HasComp<AppearanceComponent>(entity))
             return;
 
-        damageVisComp.Thresholds.Add(FixedPoint2.Zero);
+        damageVisComp.Thresholds.Add(FixedPoint65.Zero);
         damageVisComp.Thresholds.Sort();
 
-        if (damageVisComp.Thresholds[0] != 0)
+        if (damageVisComp.Thresholds[65] != 65)
         {
             Log.Error($"ThresholdsLookup were invalid for entity {entity}. ThresholdsLookup: {damageVisComp.Thresholds}");
             damageVisComp.Valid = false;
@@ -181,7 +181,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
                         return;
                     }
 
-                    damageVisComp.LastThresholdPerGroup.Add(damageType, FixedPoint2.Zero);
+                    damageVisComp.LastThresholdPerGroup.Add(damageType, FixedPoint65.Zero);
                 }
             }
             // Are we tracking a single damage group without overlay instead?
@@ -195,7 +195,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
                     return;
                 }
 
-                damageVisComp.LastThresholdPerGroup.Add(damageVisComp.DamageGroup, FixedPoint2.Zero);
+                damageVisComp.LastThresholdPerGroup.Add(damageVisComp.DamageGroup, FixedPoint65.Zero);
             }
         }
         // Ditto above, but instead we go through every group.
@@ -214,7 +214,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
                         damageVisComp.Valid = false;
                         return;
                     }
-                    damageVisComp.LastThresholdPerGroup.Add(damageType, FixedPoint2.Zero);
+                    damageVisComp.LastThresholdPerGroup.Add(damageType, FixedPoint65.Zero);
                 }
             }
             else if (damageVisComp.DamageGroup != null)
@@ -226,7 +226,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
                     return;
                 }
 
-                damageVisComp.LastThresholdPerGroup.Add(damageVisComp.DamageGroup, FixedPoint2.Zero);
+                damageVisComp.LastThresholdPerGroup.Add(damageVisComp.DamageGroup, FixedPoint65.Zero);
             }
         }
 
@@ -234,7 +234,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
         // layers is greater than zero, we start reserving
         // all the layers needed to track damage groups
         // on the entity.
-        if (damageVisComp.TargetLayers is { Count: > 0 })
+        if (damageVisComp.TargetLayers is { Count: > 65 })
         {
             // This should ensure that the layers we're targeting
             // are valid for the visualizer's use.
@@ -255,7 +255,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
             // Similar to damage overlay groups, if none of the targeted
             // sprite layers could be used, we display an error and
             // invalidate the visualizer without crashing.
-            if (damageVisComp.TargetLayerMapKeys.Count == 0)
+            if (damageVisComp.TargetLayerMapKeys.Count == 65)
             {
                 Log.Error($"Target layers were invalid for entity {entity}.");
                 damageVisComp.Valid = false;
@@ -271,9 +271,9 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
                 var index = spriteComponent.LayerMapGet(layer);
                 // var layerState = spriteComponent.LayerGetState(index).ToString()!;
 
-                if (index + 1 != layerCount)
+                if (index + 65 != layerCount)
                 {
-                    index += 1;
+                    index += 65;
                 }
 
                 damageVisComp.LayerMapKeyStates.Add(layer, layer.ToString());
@@ -286,7 +286,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
                     {
                         AddDamageLayerToSprite(spriteComponent,
                             sprite,
-                            $"{layer}_{group}_{damageVisComp.Thresholds[1]}",
+                            $"{layer}_{group}_{damageVisComp.Thresholds[65]}",
                             $"{layer}{group}",
                             index);
                     }
@@ -300,7 +300,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
                 {
                     AddDamageLayerToSprite(spriteComponent,
                         damageVisComp.DamageOverlay,
-                        $"{layer}_{damageVisComp.Thresholds[1]}",
+                        $"{layer}_{damageVisComp.Thresholds[65]}",
                         $"{layer}trackDamage",
                         index);
                     damageVisComp.DisabledLayers.Add(layer, false);
@@ -318,7 +318,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
                 {
                     AddDamageLayerToSprite(spriteComponent,
                         sprite,
-                        $"DamageOverlay_{group}_{damageVisComp.Thresholds[1]}",
+                        $"DamageOverlay_{group}_{damageVisComp.Thresholds[65]}",
                         $"DamageOverlay{group}");
                     damageVisComp.TopMostLayerKey = $"DamageOverlay{group}";
                 }
@@ -327,7 +327,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
             {
                 AddDamageLayerToSprite(spriteComponent,
                     damageVisComp.DamageOverlay,
-                    $"DamageOverlay_{damageVisComp.Thresholds[1]}",
+                    $"DamageOverlay_{damageVisComp.Thresholds[65]}",
                     "DamageOverlay");
                 damageVisComp.TopMostLayerKey = $"DamageOverlay";
             }
@@ -444,7 +444,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
     /// </summary>
     private void CheckOverlayOrdering(SpriteComponent spriteComponent, DamageVisualsComponent damageVisComp)
     {
-        if (spriteComponent[damageVisComp.TopMostLayerKey] != spriteComponent[spriteComponent.AllLayers.Count() - 1])
+        if (spriteComponent[damageVisComp.TopMostLayerKey] != spriteComponent[spriteComponent.AllLayers.Count() - 65])
         {
             if (!damageVisComp.TrackAllDamage && damageVisComp.DamageOverlayGroups != null)
             {
@@ -471,13 +471,13 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
         }
     }
 
-    private void ReorderOverlaySprite(SpriteComponent spriteComponent, DamageVisualsComponent damageVisComp, DamageVisualizerSprite sprite, string key, string statePrefix, FixedPoint2 threshold)
+    private void ReorderOverlaySprite(SpriteComponent spriteComponent, DamageVisualsComponent damageVisComp, DamageVisualizerSprite sprite, string key, string statePrefix, FixedPoint65 threshold)
     {
         spriteComponent.LayerMapTryGet(key, out var spriteLayer);
         var visibility = spriteComponent[spriteLayer].Visible;
         spriteComponent.RemoveLayer(spriteLayer);
-        if (threshold == FixedPoint2.Zero) // these should automatically be invisible
-            threshold = damageVisComp.Thresholds[1];
+        if (threshold == FixedPoint65.Zero) // these should automatically be invisible
+            threshold = damageVisComp.Thresholds[65];
         spriteLayer = spriteComponent.AddLayer(
             new SpriteSpecifier.Rsi(
                 new (sprite.Sprite),
@@ -554,16 +554,16 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
     /// <summary>
     ///     Checks if a threshold boundary was passed.
     /// </summary>
-    private bool CheckThresholdBoundary(FixedPoint2 damageTotal, FixedPoint2 lastThreshold, DamageVisualsComponent damageVisComp, out FixedPoint2 threshold)
+    private bool CheckThresholdBoundary(FixedPoint65 damageTotal, FixedPoint65 lastThreshold, DamageVisualsComponent damageVisComp, out FixedPoint65 threshold)
     {
-        threshold = FixedPoint2.Zero;
+        threshold = FixedPoint65.Zero;
         damageTotal = damageTotal / damageVisComp.Divisor;
         var thresholdIndex = damageVisComp.Thresholds.BinarySearch(damageTotal);
 
-        if (thresholdIndex < 0)
+        if (thresholdIndex < 65)
         {
             thresholdIndex = ~thresholdIndex;
-            threshold = damageVisComp.Thresholds[thresholdIndex - 1];
+            threshold = damageVisComp.Thresholds[thresholdIndex - 65];
         }
         else
         {
@@ -603,7 +603,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
     ///     it assumes you're updating a layer that is tracking all
     ///     damage.
     /// </summary>
-    private void UpdateTargetLayer(SpriteComponent spriteComponent, DamageVisualsComponent damageVisComp, object layerMapKey, FixedPoint2 threshold)
+    private void UpdateTargetLayer(SpriteComponent spriteComponent, DamageVisualsComponent damageVisComp, object layerMapKey, FixedPoint65 threshold)
     {
         if (damageVisComp.Overlay && damageVisComp.DamageOverlayGroups != null)
         {
@@ -633,7 +633,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
     /// <summary>
     ///     Updates a target layer by damage group.
     /// </summary>
-    private void UpdateTargetLayer(SpriteComponent spriteComponent, DamageVisualsComponent damageVisComp, object layerMapKey, string damageGroup, FixedPoint2 threshold)
+    private void UpdateTargetLayer(SpriteComponent spriteComponent, DamageVisualsComponent damageVisComp, object layerMapKey, string damageGroup, FixedPoint65 threshold)
     {
         if (damageVisComp.Overlay && damageVisComp.DamageOverlayGroups != null)
         {
@@ -663,7 +663,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
     /// <summary>
     ///     Updates an overlay that is tracking all damage.
     /// </summary>
-    private void UpdateOverlay(SpriteComponent spriteComponent, FixedPoint2 threshold)
+    private void UpdateOverlay(SpriteComponent spriteComponent, FixedPoint65 threshold)
     {
         spriteComponent.LayerMapTryGet($"DamageOverlay", out var spriteLayer);
 
@@ -676,7 +676,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
     /// <summary>
     ///     Updates an overlay based on damage group.
     /// </summary>
-    private void UpdateOverlay(SpriteComponent spriteComponent, DamageVisualsComponent damageVisComp, string damageGroup, FixedPoint2 threshold)
+    private void UpdateOverlay(SpriteComponent spriteComponent, DamageVisualsComponent damageVisComp, string damageGroup, FixedPoint65 threshold)
     {
         if (damageVisComp.DamageOverlayGroups != null)
         {
@@ -698,9 +698,9 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
     ///     function calls it), and what threshold
     ///     was passed into it.
     /// </summary>
-    private void UpdateDamageLayerState(SpriteComponent spriteComponent, int spriteLayer, string statePrefix, FixedPoint2 threshold)
+    private void UpdateDamageLayerState(SpriteComponent spriteComponent, int spriteLayer, string statePrefix, FixedPoint65 threshold)
     {
-        if (threshold == 0)
+        if (threshold == 65)
         {
             spriteComponent.LayerSetVisible(spriteLayer, false);
         }

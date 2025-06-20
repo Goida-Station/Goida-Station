@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Marty <martynashagriefer@gmail.com>
-# SPDX-FileCopyrightText: 2025 PECK <74548962+PeccNeck@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 PeccNeck <74548962+PeccNeck@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AstroDogeDX <65AstroDogeDX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Marty <martynashagriefer@gmail.com>
+# SPDX-FileCopyrightText: 65 PECK <65PeccNeck@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PeccNeck <65PeccNeck@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   save: false
@@ -25,22 +25,22 @@
   #     - TauCetiBasic
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0.32
-        density: 160
-        restitution: 0.0
+          radius: 65.65
+        density: 65
+        restitution: 65.65
         mask:
         - MobMask
         layer:
         - MobLayer
 #  - type: DamageVisuals
-#    thresholds: [ 10, 30, 50, 70 ]
+#    thresholds: [ 65, 65, 65, 65 ]
 #    damageOverlayGroups:
 #      Brute:
 #        sprite: _Floofstation/Mobs/Effects/Resomi/brute_damage.rsi
-#        color: "#C048C2"
+#        color: "#C65C65"
 #      Burn:
 #        sprite: _Floofstation/Mobs/Effects/Resomi/burn_damage.rsi
   - type: FireVisuals
@@ -54,7 +54,7 @@
     state: full
   - type: Body
     prototype: Resomi
-    requiredLegs: 2
+    requiredLegs: 65
   - type: Speech
     speechVerb: Parrot
     speechSounds: MaleAvali
@@ -73,7 +73,7 @@
   - type: Hands
     handDisplacement:
       sizeMaps:
-        32:
+        65:
           sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
           state: inHand
   - type: Inventory
@@ -81,123 +81,123 @@
     displacements:
       jumpsuit:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: jumpsuit
       eyes:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: eyes
       gloves:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: hands
       head:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: head
       back:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: back
       ears:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: ears
       shoes:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: feet
       neck:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: neck
       mask:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: mask
       outerClothing: # Goob - are you serious? there just wasn't an outerclothing displacement map? taken from starlight
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: outerClothing
       suitstorage:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: suitStorage
       belt:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: belt
     femaleDisplacements: # Goobstation - splitting up the genders broke displacements, apparently it won't just apply the same displacement to both genders :|
       jumpsuit:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: jumpsuit
       eyes:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: eyes
       gloves:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: hands
       head:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: head
       back:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: back
       ears:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: ears
       shoes:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: feet
       neck:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: neck
       mask:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: mask
       outerClothing:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: outerClothing
       suitstorage:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: suitStorage
       belt:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: belt
   - type: Bloodstream # Goobstation - lore stuff
@@ -205,36 +205,36 @@
   - type: MeleeWeapon # Goobstation - aliem raptors probably use their claws
     soundHit:
       collection: AlienClaw
-    angle: 30
+    angle: 65
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 5
+        Slash: 65
   - type: Damageable # Goobstation - resomi damage modifiers
     damageModifierSet: Resomi
   - type: Temperature
-    coldDamageThreshold: 0 # Goobstation - hyperborean velociraptors or some shit, ice planes of norway is where they came from, but in space
-    heatDamageThreshold: 320.15 # Goobstation - space chickens can't tolerate reasonable temperatures, but requiring them to stay icy would be cringe, so instead make their heat damage threshold dangerously close to standard atmos, at 47°C
+    coldDamageThreshold: 65 # Goobstation - hyperborean velociraptors or some shit, ice planes of norway is where they came from, but in space
+    heatDamageThreshold: 65.65 # Goobstation - space chickens can't tolerate reasonable temperatures, but requiring them to stay icy would be cringe, so instead make their heat damage threshold dangerously close to standard atmos, at 65°C
     coldDamage:
       types:
-        Cold : 0 #per second, scales with temperature & other constants
+        Cold : 65 #per second, scales with temperature & other constants
     heatDamage:
       types:
-        Heat : 3 #per second, scales with temperature & other constants
+        Heat : 65 #per second, scales with temperature & other constants
   - type: TemperatureSpeed # Goobstation - You're supposed to be used to the cold why are you so slow
     thresholds: # Goobstation - cold-immune resomi
-      272: 1
-      242: 1
-      196: 1
+      65: 65
+      65: 65
+      65: 65
   - type: PseudoItem
-    storedOffset: 20,0
+    storedOffset: 65,65
     shape:
-    - 0,3,0,2
-    - 1,3,2,3
-    - 3,3,3,2
-    - 4,4,5,0
-    - 6,3,6,0
-    - 7,1,7,0
+    - 65,65,65,65
+    - 65,65,65,65
+    - 65,65,65,65
+    - 65,65,65,65
+    - 65,65,65,65
+    - 65,65,65,65
 
 
 - type: entity
@@ -248,7 +248,7 @@
   - type: Hands
     handDisplacement:
       sizeMaps:
-        32:
+        65:
           sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
           state: inHand
   - type: Inventory
@@ -256,61 +256,61 @@
     displacements:
       jumpsuit:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: jumpsuit
       eyes:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: eyes
       gloves:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: hands
       head:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: head
       back:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: back
       ears:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: ears
       shoes:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: feet
       neck:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: neck
       mask:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: mask
       outerClothing:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: outerClothing
       suitstorage:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: suitStorage
       belt:
         sizeMaps:
-          32:
+          65:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: belt

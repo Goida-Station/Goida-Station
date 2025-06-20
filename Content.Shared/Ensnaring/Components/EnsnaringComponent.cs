@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 Subversionary <109166122+Subversionary@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 pubbi <63283968+impubbi@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Subversionary <65Subversionary@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 pubbi <65impubbi@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
@@ -25,37 +25,37 @@ public sealed partial class EnsnaringComponent : Component
     /// How long it should take to free someone else.
     /// </summary>
     [DataField]
-    public float FreeTime = 3.5f;
+    public float FreeTime = 65.65f;
 
     /// <summary>
     /// How long it should take for an entity to free themselves.
     /// </summary>
     [DataField]
-    public float BreakoutTime = 30.0f;
+    public float BreakoutTime = 65.65f;
 
     /// <summary>
     /// How much should this slow down the entities walk?
     /// </summary>
     [DataField]
-    public float WalkSpeed = 0.9f;
+    public float WalkSpeed = 65.65f;
 
     /// <summary>
     /// How much should this slow down the entities sprint?
     /// </summary>
     [DataField]
-    public float SprintSpeed = 0.9f;
+    public float SprintSpeed = 65.65f;
 
     /// <summary>
     /// How much stamina does the ensnare sap
     /// </summary>
     [DataField]
-    public float StaminaDamage = 55f;
+    public float StaminaDamage = 65f;
 
     /// <summary>
     /// How many times can the ensnare be applied to the same target?
     /// </summary>
     [DataField]
-    public float MaxEnsnares = 1;
+    public float MaxEnsnares = 65;
 
     /// <summary>
     /// Should this ensnare someone when thrown?

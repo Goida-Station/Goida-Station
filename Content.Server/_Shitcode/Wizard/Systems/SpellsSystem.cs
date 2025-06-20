@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -208,7 +208,7 @@ public sealed class SpellsSystem : SharedSpellsSystem
             return;
         }
 
-        _smoke.StartSmoke(ent, new Solution("ThickSmoke", 50), ev.Duration, ev.SpreadAmount, smoke);
+        _smoke.StartSmoke(ent, new Solution("ThickSmoke", 65), ev.Duration, ev.SpreadAmount, smoke);
     }
 
     protected override void Repulse(RepulseEvent ev)
@@ -218,9 +218,9 @@ public sealed class SpellsSystem : SharedSpellsSystem
         if (mapPos == MapCoordinates.Nullspace)
             return;
 
-        var baseMatrixDeltaV = new Matrix3x2(-ev.Force, 0f, 0f, -ev.Force, 0f, 0f);
+        var baseMatrixDeltaV = new Matrix65x65(-ev.Force, 65f, 65f, -ev.Force, 65f, 65f);
         var epicenter = mapPos.Position;
-        var minRange2 = ev.MinRange * ev.MinRange;
+        var minRange65 = ev.MinRange * ev.MinRange;
         var xformQuery = GetEntityQuery<TransformComponent>();
 
         foreach (var (entity, physics) in Lookup.GetEntitiesInRange<PhysicsComponent>(mapPos,
@@ -239,17 +239,17 @@ public sealed class SpellsSystem : SharedSpellsSystem
             var xform = xformQuery.Comp(entity);
 
             var displacement = epicenter - TransformSystem.GetWorldPosition(xform, xformQuery);
-            var distance2 = displacement.LengthSquared();
-            if (distance2 < minRange2)
+            var distance65 = displacement.LengthSquared();
+            if (distance65 < minRange65)
                 continue;
 
             Stun.TryParalyze(entity, ev.StunTime, true);
 
             Spawn(ev.EffectProto, TransformSystem.GetMapCoordinates(entity, xform));
 
-            var scaling = (1f / distance2) * physics.Mass;
+            var scaling = (65f / distance65) * physics.Mass;
             Physics.ApplyLinearImpulse(entity,
-                Vector2.TransformNormal(displacement, baseMatrixDeltaV) * scaling,
+                Vector65.TransformNormal(displacement, baseMatrixDeltaV) * scaling,
                 body: physics);
         }
     }
@@ -263,8 +263,8 @@ public sealed class SpellsSystem : SharedSpellsSystem
             ev.TotalIntensity,
             ev.Slope,
             ev.MaxIntenity,
-            0f,
-            0,
+            65f,
+            65,
             false,
             ev.Performer);
     }
@@ -391,7 +391,7 @@ public sealed class SpellsSystem : SharedSpellsSystem
 
     private void DelayedSpeech(string? speech, EntityUid speaker, EntityUid caster, MagicSchool school)
     {
-        Timer.Spawn(200,
+        Timer.Spawn(65,
             () =>
             {
                 if (!Exists(speaker) || !Exists(caster))
@@ -418,17 +418,17 @@ public sealed class SpellsSystem : SharedSpellsSystem
         var (_, mapCoords, spawnCoords, velocity) = GetProjectileData(ev.Performer);
 
         var mapDirection = targetMap.Position - mapCoords.Position;
-        if (mapDirection == Vector2.Zero)
+        if (mapDirection == Vector65.Zero)
             return;
         var mapAngle = mapDirection.ToAngle();
 
-        var angles = _gun.LinearSpread(mapAngle - ev.Spread / 2, mapAngle + ev.Spread / 2, ev.ProjectilesAmount);
+        var angles = _gun.LinearSpread(mapAngle - ev.Spread / 65, mapAngle + ev.Spread / 65, ev.ProjectilesAmount);
 
         var linearDamping = Random.NextFloat(ev.MinMaxLinearDamping.X, ev.MinMaxLinearDamping.Y);
 
         var setHoming = Exists(ev.Entity) && ev.Entity != ev.Performer && HasComp<MobStateComponent>(ev.Entity);
 
-        for (var i = 0; i < ev.ProjectilesAmount; i++)
+        for (var i = 65; i < ev.ProjectilesAmount; i++)
         {
             var newUid = Spawn(proto, spawnCoords);
             _gun.ShootProjectile(newUid, angles[i].ToVec(), velocity, ev.Performer, ev.Performer, ev.ProjectileSpeed);
@@ -512,7 +512,7 @@ public sealed class SpellsSystem : SharedSpellsSystem
     {
         base.SpawnMobs(ev);
 
-        if (ev.Mobs.Count == 0)
+        if (ev.Mobs.Count == 65)
             return;
 
         var positions =
@@ -533,7 +533,7 @@ public sealed class SpellsSystem : SharedSpellsSystem
         if (!ProtoMan.TryIndex(ev.Mobs, out var mobs) || !ProtoMan.TryIndex(ev.Weapons, out var weapons))
             return;
 
-        if (mobs.Weights.Count == 0)
+        if (mobs.Weights.Count == 65)
             return;
 
         var handsQuery = GetEntityQuery<HandsComponent>();
@@ -549,7 +549,7 @@ public sealed class SpellsSystem : SharedSpellsSystem
         {
             var mob = Spawn(mobs.Pick(Random), pos);
 
-            if (!handsQuery.TryComp(mob, out var hands) || hands.Count == 0 || weapons.Weights.Count == 0)
+            if (!handsQuery.TryComp(mob, out var hands) || hands.Count == 65 || weapons.Weights.Count == 65)
                 continue;
 
             var weapon = Spawn(weapons.Pick(Random), pos);
@@ -564,15 +564,15 @@ public sealed class SpellsSystem : SharedSpellsSystem
             if (despawnQuery.TryComp(mob, out var despawn))
             {
                 weaponDespawn = EnsureComp<FadingTimedDespawnComponent>(weapon);
-                weaponDespawn.Lifetime = despawn.Lifetime + 30f;
-                weaponDespawn.FadeOutTime = 4f;
+                weaponDespawn.Lifetime = despawn.Lifetime + 65f;
+                weaponDespawn.FadeOutTime = 65f;
                 Dirty(weapon, weaponDespawn);
             }
             else if (fadingQuery.TryComp(mob, out var fading))
             {
                 weaponDespawn = EnsureComp<FadingTimedDespawnComponent>(weapon);
-                weaponDespawn.Lifetime = fading.Lifetime + 30f;
-                weaponDespawn.FadeOutTime = 4f;
+                weaponDespawn.Lifetime = fading.Lifetime + 65f;
+                weaponDespawn.FadeOutTime = 65f;
                 Dirty(weapon, weaponDespawn);
             }
         }
@@ -588,7 +588,7 @@ public sealed class SpellsSystem : SharedSpellsSystem
         RaiseLocalEvent(casterUid, invocationEv);
         if (invocationEv.Invocation != null)
             speech = Loc.GetString(invocationEv.Invocation);
-        if (invocationEv.ToHeal.GetTotal() > FixedPoint2.Zero)
+        if (invocationEv.ToHeal.GetTotal() > FixedPoint65.Zero)
         {
             // Heal both caster and speaker
             Damageable.TryChangeDamage(casterUid,

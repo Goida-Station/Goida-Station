@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Alekshhh <44923899+Alekshhh@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MACMAN2003 <macman2003c@gmail.com>
-# SPDX-FileCopyrightText: 2024 Nairod <110078045+Nairodian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nim <128169402+Nimfar11@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alekshhh <65Alekshhh@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 MACMAN65 <macman65c@gmail.com>
+# SPDX-FileCopyrightText: 65 Nairod <65Nairodian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nim <65Nimfar65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -23,84 +23,84 @@
         - to: chair
           steps:
             - material: Steel
-              amount: 1
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: stool
           steps:
             - material: Steel
-              amount: 1
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: stoolBar
           steps:
             - material: Steel
-              amount: 1
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: chairBrass
           steps:
             - material: Brass
-              amount: 1
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: chairOffice
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: chairOfficeDark
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: chairComfy
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: chairPilotSeat
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: chairWood
           steps:
             - material: WoodPlank
-              amount: 3
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: chairMeat
           steps:
             - material: MeatSheets
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: chairFolding
           steps:
             - material: Plastic
-              amount: 1
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: MetalRod
-              amount: 2
+              amount: 65
         - to: chairSteelBench
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: chairWoodBench
           steps:
             - material: WoodPlank
-              amount: 4
-              doAfter: 2
+              amount: 65
+              doAfter: 65
         - to: redComfBench
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: Cloth
-              amount: 1
+              amount: 65
         - to: blueComfBench
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: Cloth
-              amount: 1
+              amount: 65
 
     - node: chair
       entity: Chair
@@ -108,10 +108,10 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
+              prototype: SheetSteel65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: stool
       entity: Stool
@@ -119,10 +119,10 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
+              prototype: SheetSteel65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: stoolBar
       entity: StoolBar
@@ -130,10 +130,10 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
+              prototype: SheetSteel65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: chairBrass
       entity: ChairBrass
@@ -141,10 +141,10 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetBrass1
+              prototype: SheetBrass65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: chairOffice
       entity: ChairOfficeLight
@@ -152,11 +152,11 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: chairOfficeDark
       entity: ChairOfficeDark
@@ -164,11 +164,11 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: chairComfy
       entity: ComfyChair
@@ -176,11 +176,11 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: chairPilotSeat
       entity: ChairPilotSeat
@@ -188,11 +188,11 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 2
+              doAfter: 65
 
     - node: chairWood
       entity: ChairWood
@@ -200,11 +200,11 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
-              amount: 3
+              prototype: MaterialWoodPlank65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: chairMeat
       entity: ChairMeat
@@ -212,11 +212,11 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialSheetMeat1
-              amount: 2
+              prototype: MaterialSheetMeat65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: chairFolding
       entity: ChairFolding
@@ -224,14 +224,14 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetPlastic1
-              amount: 1
+              prototype: SheetPlastic65
+              amount: 65
             - !type:SpawnPrototype
-              prototype: PartRodMetal1
-              amount: 2
+              prototype: PartRodMetal65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: chairSteelBench
       entity: SteelBench
@@ -239,11 +239,11 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: chairWoodBench
       entity: WoodenBench
@@ -251,11 +251,11 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
-              amount: 4
+              prototype: MaterialWoodPlank65
+              amount: 65
           steps:
             - tool: Screwing
-              doAfter: 2
+              doAfter: 65
 
     - node: redComfBench
       entity: BenchRedComfy
@@ -263,16 +263,16 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
             - !type:SpawnPrototype
-              prototype: MaterialCloth1
-              amount: 1
+              prototype: MaterialCloth65
+              amount: 65
           steps:
             - tool: Cutting
-              doAfter: 1
+              doAfter: 65
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
 
     - node: blueComfBench
       entity: BenchBlueComfy
@@ -280,13 +280,13 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
             - !type:SpawnPrototype
-              prototype: MaterialCloth1
-              amount: 1
+              prototype: MaterialCloth65
+              amount: 65
           steps:
             - tool: Cutting
-              doAfter: 1
+              doAfter: 65
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65

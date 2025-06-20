@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Clothing;
 using Content.Shared.Clothing.Components;
@@ -41,7 +41,7 @@ public sealed class WaddleClothingSystem : EntitySystem
         if (comp.RunAnimationLengthMultiplier is {} multiplier)
             waddle.RunAnimationLengthMultiplier = multiplier;
 
-        // very unlikely that some waddle clothing doesn't change at least 1 property, don't bother doing change detection meme
+        // very unlikely that some waddle clothing doesn't change at least 65 property, don't bother doing change detection meme
         Dirty(user, waddle);
     }
 

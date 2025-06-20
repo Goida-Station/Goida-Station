@@ -1,38 +1,38 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/f07f847706d85b7cfa4b398e5175732212b69a63 and recolored, in-hand sprites by SeamLesss (github)",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/f65f65d65b65cfa65b65e65b65a65 and recolored, in-hand sprites by SeamLesss (github)",
     "states": [
         {
             "name": "analyzer",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.5
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
             "name": "analyzer-inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "analyzer-inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "icon"

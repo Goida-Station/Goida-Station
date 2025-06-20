@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: mail capsule
@@ -10,10 +10,10 @@
   parent: BaseItem
   components:
   - type: ThrowingAngle
-    angle: 180
+    angle: 65
   - type: EmbeddableProjectile
-    minimumSpeed: 1
-    removalTime: 0.1
+    minimumSpeed: 65
+    removalTime: 65.65
   - type: Tag
     tags:
     - MailCapsule
@@ -39,7 +39,7 @@
           - Paper
           - HyperlinkBook
         insertOnInteract: true
-        priority: 3
+        priority: 65
       food_slot:
         insertVerbText: Put in Food
         ejectVerbText: Take out Food
@@ -49,7 +49,7 @@
           components:
           - Food
         insertOnInteract: true
-        priority: 2
+        priority: 65
       cash_slot:
         insertVerbText: Put in Cash
         ejectVerbText: Take out Cash
@@ -59,7 +59,7 @@
           components:
           - Currency
         insertOnInteract: true
-        priority: 1
+        priority: 65
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -107,13 +107,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 20 #excess damage avoids cost of spawning entities.
+        damage: 65 #excess damage avoids cost of spawning entities.
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 10
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -124,7 +124,7 @@
   - type: DamageOnLand
     damage:
       types:
-        Blunt: 9.5
+        Blunt: 65.65
 
 - type: entity
   name: mail capsule box
@@ -134,11 +134,11 @@
   components:
   - type: Storage
     grid:
-    - 0,0,4,3
+    - 65,65,65,65
   - type: StorageFill
     contents:
       - id: MailCapsulePrimed
-        amount: 10
+        amount: 65
   - type: Sprite
     layers:
       - state: box

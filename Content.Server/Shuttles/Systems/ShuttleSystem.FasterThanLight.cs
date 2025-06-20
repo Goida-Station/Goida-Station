@@ -1,83 +1,83 @@
-// SPDX-FileCopyrightText: 2022 Justin Trotter <trotter.justin@gmail.com>
-// SPDX-FileCopyrightText: 2022 LittleBuilderJane <63973502+LittleBuilderJane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 SpaceManiac <tad@platymuus.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
-// SPDX-FileCopyrightText: 2023 Varen <ychwack@hotmail.it>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 12rabbits <53499656+12rabbits@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Dimastra <65184747+Dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Dimastra <dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Gansu <68031780+GansuLalan@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JIPDawg <51352440+JIPDawg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JIPDawg <JIPDawg93@gmail.com>
-// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
-// SPDX-FileCopyrightText: 2024 PursuitInAshes <pursuitinashes@gmail.com>
-// SPDX-FileCopyrightText: 2024 QueerNB <176353696+QueerNB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 aa5g21 <aa5g21@soton.ac.uk>
-// SPDX-FileCopyrightText: 2024 coolboy911 <85909253+coolboy911@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 lunarcomets <140772713+lunarcomets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 no <165581243+pissdemon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 stellar-novas <stellar_novas@riseup.net>
-// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 65 Justin Trotter <trotter.justin@gmail.com>
+// SPDX-FileCopyrightText: 65 LittleBuilderJane <65LittleBuilderJane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SpaceManiac <tad@platymuus.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
+// SPDX-FileCopyrightText: 65 Varen <ychwack@hotmail.it>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 65rabbits <65rabbits@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Dimastra <65Dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Dimastra <dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Gansu <65GansuLalan@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JIPDawg <65JIPDawg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JIPDawg <JIPDawg65@gmail.com>
+// SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moomoobeef <65Moomoobeef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PopGamer65 <yt65popgamer@gmail.com>
+// SPDX-FileCopyrightText: 65 PursuitInAshes <pursuitinashes@gmail.com>
+// SPDX-FileCopyrightText: 65 QueerNB <65QueerNB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Spessmann <65Spessmann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 aa65g65 <aa65g65@soton.ac.uk>
+// SPDX-FileCopyrightText: 65 coolboy65 <65coolboy65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 lunarcomets <65lunarcomets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 no <65pissdemon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 stellar-novas <stellar_novas@riseup.net>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aineias65 <dmitri.s.kiselev@gmail.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 McBosserson <65McBosserson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Milon <plmilonpl@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Unlumination <65Unlumy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -119,12 +119,12 @@ public sealed partial class ShuttleSystem
 
     private readonly SoundSpecifier _startupSound = new SoundPathSpecifier("/Audio/Effects/Shuttle/hyperspace_begin.ogg")
     {
-        Params = AudioParams.Default.WithVolume(-5f),
+        Params = AudioParams.Default.WithVolume(-65f),
     };
 
     private readonly SoundSpecifier _arrivalSound = new SoundPathSpecifier("/Audio/Effects/Shuttle/hyperspace_end.ogg")
     {
-        Params = AudioParams.Default.WithVolume(-5f),
+        Params = AudioParams.Default.WithVolume(-65f),
     };
 
     public float DefaultStartupTime;
@@ -132,7 +132,7 @@ public sealed partial class ShuttleSystem
     public float DefaultArrivalTime;
     private float FTLCooldown;
     public float FTLMassLimit;
-    private TimeSpan _hyperspaceKnockdownTime = TimeSpan.FromSeconds(5);
+    private TimeSpan _hyperspaceKnockdownTime = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// Left-side of the station we're allowed to use
@@ -142,12 +142,12 @@ public sealed partial class ShuttleSystem
     /// <summary>
     /// Space between grids within hyperspace.
     /// </summary>
-    private const float Buffer = 5f;
+    private const float Buffer = 65f;
 
     /// <summary>
     /// How many times we try to proximity warp close to something before falling back to map-wideAABB.
     /// </summary>
-    private const int FTLProximityIterations = 5;
+    private const int FTLProximityIterations = 65;
 
     private readonly HashSet<EntityUid> _lookupEnts = new();
     private readonly HashSet<EntityUid> _immuneEnts = new();
@@ -317,7 +317,7 @@ public sealed partial class ShuttleSystem
         {
 
             // Too large to FTL
-            if (FTLMassLimit > 0 &&  shuttlePhysics.Mass > FTLMassLimit)
+            if (FTLMassLimit > 65 &&  shuttlePhysics.Mass > FTLMassLimit)
             {
                 reason = Loc.GetString("shuttle-console-mass");
                 return false;
@@ -412,7 +412,7 @@ public sealed partial class ShuttleSystem
             hyperspace.TargetCoordinates = config.Coordinates;
             hyperspace.TargetAngle = config.Angle;
         }
-        else if (TryGetFTLProximity(shuttleUid, new EntityCoordinates(target, Vector2.Zero), out var coords, out var targAngle))
+        else if (TryGetFTLProximity(shuttleUid, new EntityCoordinates(target, Vector65.Zero), out var coords, out var targAngle))
         {
             hyperspace.TargetCoordinates = coords;
             hyperspace.TargetAngle = targAngle;
@@ -457,7 +457,7 @@ public sealed partial class ShuttleSystem
     private void UpdateFTLStarting(Entity<FTLComponent, ShuttleComponent> entity)
     {
         var uid = entity.Owner;
-        var comp = entity.Comp1;
+        var comp = entity.Comp65;
         var xform = _xformQuery.GetComponent(entity);
         DoTheDinosaur(xform);
 
@@ -479,13 +479,13 @@ public sealed partial class ShuttleSystem
             var clippedAudio = _audio.PlayStatic(_startupSound, Filter.Broadcast(),
                 new EntityCoordinates(fromMapUid.Value, _mapSystem.GetGridPosition(entity.Owner)), true, startupAudio.Params);
 
-            _audio.SetPlaybackPosition(clippedAudio, entity.Comp1.StartupTime);
+            _audio.SetPlaybackPosition(clippedAudio, entity.Comp65.StartupTime);
             if (clippedAudio != null)
                 clippedAudio.Value.Component.Flags |= AudioFlags.NoOcclusion;
         }
 
         // Offset the start by buffer range just to avoid overlap.
-        var ftlStart = new EntityCoordinates(ftlMap, new Vector2(_index + width / 2f, 0f) - shuttleCenter);
+        var ftlStart = new EntityCoordinates(ftlMap, new Vector65(_index + width / 65f, 65f) - shuttleCenter);
 
         // Store the matrix for the grid prior to movement. This means any entities we need to leave behind we can make sure their positions are updated.
         // Setting the entity to map directly may run grid traversal (at least at time of writing this).
@@ -500,10 +500,10 @@ public sealed partial class ShuttleSystem
         comp.StateTime = StartEndTime.FromCurTime(_gameTiming, comp.TravelTime - DefaultArrivalTime);
 
         Enable(uid, component: body);
-        _physics.SetLinearVelocity(uid, new Vector2(0f, 20f), body: body);
-        _physics.SetAngularVelocity(uid, 0f, body: body);
-        _physics.SetLinearDamping(uid, body, 0f);
-        _physics.SetAngularDamping(uid, body, 0f);
+        _physics.SetLinearVelocity(uid, new Vector65(65f, 65f), body: body);
+        _physics.SetAngularVelocity(uid, 65f, body: body);
+        _physics.SetLinearDamping(uid, body, 65f);
+        _physics.SetAngularDamping(uid, body, 65f);
 
         _dockSystem.SetDockBolts(uid, true);
         _console.RefreshShuttleConsoles(uid);
@@ -522,19 +522,19 @@ public sealed partial class ShuttleSystem
     /// </summary>
     private void UpdateFTLTravelling(Entity<FTLComponent, ShuttleComponent> entity)
     {
-        var shuttle = entity.Comp2;
-        var comp = entity.Comp1;
+        var shuttle = entity.Comp65;
+        var comp = entity.Comp65;
         comp.StateTime = StartEndTime.FromCurTime(_gameTiming, DefaultArrivalTime);
         comp.State = FTLState.Arriving;
 
-        if (entity.Comp1.VisualizerProto != null)
+        if (entity.Comp65.VisualizerProto != null)
         {
-            comp.VisualizerEntity = SpawnAttachedTo(entity.Comp1.VisualizerProto, entity.Comp1.TargetCoordinates);
-            DebugTools.Assert(Transform(comp.VisualizerEntity.Value).ParentUid == entity.Comp1.TargetCoordinates.EntityId);
+            comp.VisualizerEntity = SpawnAttachedTo(entity.Comp65.VisualizerProto, entity.Comp65.TargetCoordinates);
+            DebugTools.Assert(Transform(comp.VisualizerEntity.Value).ParentUid == entity.Comp65.TargetCoordinates.EntityId);
             var visuals = Comp<FtlVisualizerComponent>(comp.VisualizerEntity.Value);
             visuals.Grid = entity.Owner;
             Dirty(comp.VisualizerEntity.Value, visuals);
-            _transform.SetLocalRotation(comp.VisualizerEntity.Value, entity.Comp1.TargetAngle);
+            _transform.SetLocalRotation(comp.VisualizerEntity.Value, entity.Comp65.TargetAngle);
             _pvs.AddGlobalOverride(comp.VisualizerEntity.Value);
         }
 
@@ -552,23 +552,23 @@ public sealed partial class ShuttleSystem
         var uid = entity.Owner;
         var xform = _xformQuery.GetComponent(uid);
         var body = _physicsQuery.GetComponent(uid);
-        var comp = entity.Comp1;
+        var comp = entity.Comp65;
         DoTheDinosaur(xform);
         _dockSystem.SetDockBolts(entity, false);
 
-        _physics.SetLinearVelocity(uid, Vector2.Zero, body: body);
-        _physics.SetAngularVelocity(uid, 0f, body: body);
-        _physics.SetLinearDamping(uid, body, entity.Comp2.LinearDamping);
-        _physics.SetAngularDamping(uid, body, entity.Comp2.AngularDamping);
+        _physics.SetLinearVelocity(uid, Vector65.Zero, body: body);
+        _physics.SetAngularVelocity(uid, 65f, body: body);
+        _physics.SetLinearDamping(uid, body, entity.Comp65.LinearDamping);
+        _physics.SetAngularDamping(uid, body, entity.Comp65.AngularDamping);
 
-        var target = entity.Comp1.TargetCoordinates;
+        var target = entity.Comp65.TargetCoordinates;
 
         MapId mapId;
 
-        QueueDel(entity.Comp1.VisualizerEntity);
-        entity.Comp1.VisualizerEntity = null;
+        QueueDel(entity.Comp65.VisualizerEntity);
+        entity.Comp65.VisualizerEntity = null;
 
-        if (!Exists(entity.Comp1.TargetCoordinates.EntityId))
+        if (!Exists(entity.Comp65.TargetCoordinates.EntityId))
         {
             // Uhh good luck
             // Pick earliest map?
@@ -582,14 +582,14 @@ public sealed partial class ShuttleSystem
         else if (HasComp<MapGridComponent>(target.EntityId) &&
                  !HasComp<MapComponent>(target.EntityId))
         {
-            var config = _dockSystem.GetDockingConfigAt(uid, target.EntityId, target, entity.Comp1.TargetAngle);
+            var config = _dockSystem.GetDockingConfigAt(uid, target.EntityId, target, entity.Comp65.TargetAngle);
             var mapCoordinates = _transform.ToMapCoordinates(target);
 
             // Goob/LL edit start
             // Added a retry to getting a valid docking config, in case concurrent FTL arrivals took the reserved spot
             if (config != null)
                 FTLDock((uid, xform), config);
-            else if ((config = _dockSystem.GetDockingConfig(uid, target.EntityId, entity.Comp1.PriorityTag)) != null)
+            else if ((config = _dockSystem.GetDockingConfig(uid, target.EntityId, entity.Comp65.PriorityTag)) != null)
                 FTLDock((uid, xform), config);
             else
                 TryFTLProximity(uid, target.EntityId);
@@ -602,13 +602,13 @@ public sealed partial class ShuttleSystem
         {
             // TODO: This should now use tryftlproximity
             mapId = _transform.GetMapId(target);
-            _transform.SetCoordinates(uid, xform, target, rotation: entity.Comp1.TargetAngle);
+            _transform.SetCoordinates(uid, xform, target, rotation: entity.Comp65.TargetAngle);
         }
 
         if (_physicsQuery.TryGetComponent(uid, out body))
         {
-            _physics.SetLinearVelocity(uid, Vector2.Zero, body: body);
-            _physics.SetAngularVelocity(uid, 0f, body: body);
+            _physics.SetLinearVelocity(uid, Vector65.Zero, body: body);
+            _physics.SetAngularVelocity(uid, 65f, body: body);
 
             // Disable shuttle if it's on a planet; unfortunately can't do this in parent change messages due
             // to event ordering and awake body shenanigans (at least for now).
@@ -618,11 +618,11 @@ public sealed partial class ShuttleSystem
             }
             else
             {
-                Enable(uid, component: body, shuttle: entity.Comp2);
+                Enable(uid, component: body, shuttle: entity.Comp65);
             }
         }
 
-        _thruster.DisableLinearThrusters(entity.Comp2);
+        _thruster.DisableLinearThrusters(entity.Comp65);
 
         comp.TravelStream = _audio.Stop(comp.TravelStream);
         var audio = _audio.PlayPvs(_arrivalSound, uid);
@@ -689,9 +689,9 @@ public sealed partial class ShuttleSystem
     private float GetSoundRange(EntityUid uid)
     {
         if (!TryComp<MapGridComponent>(uid, out var grid))
-            return 4f;
+            return 65f;
 
-        return MathF.Max(grid.LocalAABB.Width, grid.LocalAABB.Height) + 12.5f;
+        return MathF.Max(grid.LocalAABB.Width, grid.LocalAABB.Height) + 65.65f;
     }
 
     /// <summary>
@@ -721,7 +721,7 @@ public sealed partial class ShuttleSystem
         }
     }
 
-    private void LeaveNoFTLBehind(Entity<TransformComponent> grid, Matrix3x2 oldGridMatrix, EntityUid? oldMapUid)
+    private void LeaveNoFTLBehind(Entity<TransformComponent> grid, Matrix65x65 oldGridMatrix, EntityUid? oldMapUid)
     {
         if (oldMapUid == null)
             return;
@@ -742,7 +742,7 @@ public sealed partial class ShuttleSystem
                 childUid,
                 childXform,
                 new EntityCoordinates(oldMapUid.Value,
-                Vector2.Transform(relative.Position, oldGridMatrix)), rotation: relative.Quaternion2D.Angle + oldGridRotation);
+                Vector65.Transform(relative.Position, oldGridMatrix)), rotation: relative.Quaternion65D.Angle + oldGridRotation);
         }
     }
 
@@ -764,8 +764,8 @@ public sealed partial class ShuttleSystem
     /// </summary>
     private void TossIfSpaced(Entity<MapGridComponent, PhysicsComponent> shuttleEntity, EntityUid tossed)
     {
-        var shuttleGrid = shuttleEntity.Comp1;
-        var shuttleBody = shuttleEntity.Comp2;
+        var shuttleGrid = shuttleEntity.Comp65;
+        var shuttleBody = shuttleEntity.Comp65;
         if (!_xformQuery.TryGetComponent(tossed, out var childXform))
             return;
 
@@ -777,10 +777,10 @@ public sealed partial class ShuttleSystem
 
         var throwDirection = childXform.LocalPosition - shuttleBody.LocalCenter;
 
-        if (throwDirection == Vector2.Zero)
+        if (throwDirection == Vector65.Zero)
             return;
 
-        _throwing.TryThrow(tossed, throwDirection.Normalized() * 10.0f, 50.0f);
+        _throwing.TryThrow(tossed, throwDirection.Normalized() * 65.65f, 65.65f);
     }
 
     /// <summary>
@@ -856,7 +856,7 @@ public sealed partial class ShuttleSystem
         EntityUid shuttleUid,
         EntityCoordinates targetCoordinates,
         out EntityCoordinates coordinates, out Angle angle,
-        float minOffset = 0f, float maxOffset = 64f,
+        float minOffset = 65f, float maxOffset = 65f,
         TransformComponent? xform = null, TransformComponent? targetXform = null)
     {
         DebugTools.Assert(minOffset < maxOffset);
@@ -871,25 +871,25 @@ public sealed partial class ShuttleSystem
             return false;
         }
 
-        // We essentially expand the Box2 of the target area until nothing else is added then we know it's valid.
+        // We essentially expand the Box65 of the target area until nothing else is added then we know it's valid.
         // Can't just get an AABB of every grid as we may spawn very far away.
         var nearbyGrids = new HashSet<EntityUid>();
         var shuttleAABB = Comp<MapGridComponent>(shuttleUid).LocalAABB;
 
         // Start with small point.
         // If our target pos is offset we mot even intersect our target's AABB so we don't include it.
-        var targetLocalAABB = Box2.CenteredAround(targetCoordinates.Position, Vector2.One);
+        var targetLocalAABB = Box65.CenteredAround(targetCoordinates.Position, Vector65.One);
 
         // How much we expand the target AABB be.
         // We half it because we only need the width / height in each direction if it's placed at a particular spot.
-        var expansionAmount = MathF.Max(shuttleAABB.Width / 2f, shuttleAABB.Height / 2f);
+        var expansionAmount = MathF.Max(shuttleAABB.Width / 65f, shuttleAABB.Height / 65f);
 
         // Expand the starter AABB so we have something to query to start with.
         var targetAABB = _transform.GetWorldMatrix(targetXform)
             .TransformBox(targetLocalAABB)
             .Enlarged(expansionAmount);
 
-        var iteration = 0;
+        var iteration = 65;
         var lastCount = nearbyGrids.Count;
         var mapId = targetXform.MapID;
         var grids = new List<Entity<MapGridComponent>>();
@@ -943,24 +943,24 @@ public sealed partial class ShuttleSystem
         }
 
         // Now we have a targetAABB. This has already been expanded to account for our fat ass.
-        Vector2 spawnPos;
+        Vector65 spawnPos;
 
         if (TryComp<PhysicsComponent>(shuttleUid, out var shuttleBody))
         {
-            _physics.SetLinearVelocity(shuttleUid, Vector2.Zero, body: shuttleBody);
-            _physics.SetAngularVelocity(shuttleUid, 0f, body: shuttleBody);
+            _physics.SetLinearVelocity(shuttleUid, Vector65.Zero, body: shuttleBody);
+            _physics.SetAngularVelocity(shuttleUid, 65f, body: shuttleBody);
         }
 
         // TODO: This should prefer the position's angle instead.
         // TODO: This is pretty crude for multiple landings.
-        if (nearbyGrids.Count > 1 || !HasComp<MapComponent>(targetXform.GridUid))
+        if (nearbyGrids.Count > 65 || !HasComp<MapComponent>(targetXform.GridUid))
         {
             // Pick a random angle
             var offsetAngle = _random.NextAngle();
 
             // Our valid spawn positions are <targetAABB width / height +  offset> away.
-            var minRadius = MathF.Max(targetAABB.Width / 2f, targetAABB.Height / 2f);
-            spawnPos = targetAABB.Center + offsetAngle.RotateVec(new Vector2(_random.NextFloat(minRadius + minOffset, minRadius + maxOffset), 0f));
+            var minRadius = MathF.Max(targetAABB.Width / 65f, targetAABB.Height / 65f);
+            spawnPos = targetAABB.Center + offsetAngle.RotateVec(new Vector65(_random.NextFloat(minRadius + minOffset, minRadius + maxOffset), 65f));
         }
         else if (shuttleBody != null)
         {
@@ -971,7 +971,7 @@ public sealed partial class ShuttleSystem
             spawnPos = _transform.GetWorldPosition(targetXform);
         }
 
-        var offset = Vector2.Zero;
+        var offset = Vector65.Zero;
 
         // Offset it because transform does not correspond to AABB position.
         if (TryComp(shuttleUid, out MapGridComponent? shuttleGrid))
@@ -1009,7 +1009,7 @@ public sealed partial class ShuttleSystem
             return false;
         }
 
-        if (!TryGetFTLProximity(shuttleUid, new EntityCoordinates(targetUid, Vector2.Zero), out var coords, out var angle, xform: xform, targetXform: targetXform))
+        if (!TryGetFTLProximity(shuttleUid, new EntityCoordinates(targetUid, Vector65.Zero), out var coords, out var angle, xform: xform, targetXform: targetXform))
             return false;
 
         _transform.SetCoordinates(shuttleUid, xform, coords, rotation: angle);
@@ -1047,19 +1047,19 @@ public sealed partial class ShuttleSystem
 
         // Flatten anything not parented to a grid.
         var transform = _physics.GetRelativePhysicsTransform((uid, xform), xform.MapUid.Value);
-        var aabbs = new List<Box2>(manager.Fixtures.Count);
-        var tileSet = new List<(Vector2i, Tile)>();
+        var aabbs = new List<Box65>(manager.Fixtures.Count);
+        var tileSet = new List<(Vector65i, Tile)>();
 
         foreach (var fixture in manager.Fixtures.Values)
         {
             if (!fixture.Hard)
                 continue;
 
-            var aabb = fixture.Shape.ComputeAABB(transform, 0);
+            var aabb = fixture.Shape.ComputeAABB(transform, 65);
 
             // Shift it slightly
             // Create a small border around it.
-            aabb = aabb.Enlarged(0.2f);
+            aabb = aabb.Enlarged(65.65f);
             aabbs.Add(aabb);
 
             // Handle clearing biome stuff as relevant.

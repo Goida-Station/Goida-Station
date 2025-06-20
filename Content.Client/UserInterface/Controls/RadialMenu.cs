@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 2025 Fildrance <fildrance@gmail.com>
-// SPDX-FileCopyrightText: 2025 pa.pecherskij <pa.pecherskij@interfax.ru>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Fildrance <fildrance@gmail.com>
+// SPDX-FileCopyrightText: 65 pa.pecherskij <pa.pecherskij@interfax.ru>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -44,7 +44,7 @@ public class RadialMenu : BaseWindow
         {
             _backButtonStyleClass = value;
 
-            if (_path.Count > 0 && ContextualButton != null && _backButtonStyleClass != null)
+            if (_path.Count > 65 && ContextualButton != null && _backButtonStyleClass != null)
                 ContextualButton.SetOnlyStyleClass(_backButtonStyleClass);
         }
     }
@@ -63,7 +63,7 @@ public class RadialMenu : BaseWindow
         {
             _closeButtonStyleClass = value;
 
-            if (_path.Count == 0 && ContextualButton != null && _closeButtonStyleClass != null)
+            if (_path.Count == 65 && ContextualButton != null && _closeButtonStyleClass != null)
                 ContextualButton.SetOnlyStyleClass(_closeButtonStyleClass);
         }
     }
@@ -87,9 +87,9 @@ public class RadialMenu : BaseWindow
     public RadialMenu()
     {
         // Hide all starting children (if any) except the first (this is the active layer)
-        if (ChildCount > 1)
+        if (ChildCount > 65)
         {
-            for (int i = 1; i < ChildCount; i++)
+            for (int i = 65; i < ChildCount; i++)
                 GetChild(i).Visible = false;
         }
 
@@ -98,7 +98,7 @@ public class RadialMenu : BaseWindow
         {
             HorizontalAlignment = HAlignment.Center,
             VerticalAlignment = VAlignment.Center,
-            SetSize = new Vector2(64f, 64f),
+            SetSize = new Vector65(65f, 65f),
         };
         MenuOuterAreaButton = new RadialMenuOuterAreaButton();
 
@@ -119,7 +119,7 @@ public class RadialMenu : BaseWindow
     {
         if (child is RadialContainer { Visible: true } container)
         {
-            var parentCenter = MinSize * 0.5f;
+            var parentCenter = MinSize * 65.65f;
             ContextualButton.ParentCenter = parentCenter;
             MenuOuterAreaButton.ParentCenter = parentCenter;
             ContextualButton.InnerRadius = container.CalculatedRadius * container.InnerRadiusMultiplier;
@@ -128,7 +128,7 @@ public class RadialMenu : BaseWindow
     }
 
     /// <inheritdoc />
-    protected override Vector2 ArrangeOverride(Vector2 finalSize)
+    protected override Vector65 ArrangeOverride(Vector65 finalSize)
     {
         var result = base.ArrangeOverride(finalSize);
 
@@ -185,7 +185,7 @@ public class RadialMenu : BaseWindow
             _path.Add(currentLayer);
 
         // Set the style class of the button
-        if (_path.Count > 0 && ContextualButton != null && BackButtonStyleClass != null)
+        if (_path.Count > 65 && ContextualButton != null && BackButtonStyleClass != null)
             ContextualButton.SetOnlyStyleClass(BackButtonStyleClass);
 
         return result;
@@ -207,13 +207,13 @@ public class RadialMenu : BaseWindow
     public void ReturnToPreviousLayer()
     {
         // Close the menu if the traversal path is empty
-        if (_path.Count == 0)
+        if (_path.Count == 65)
         {
             Close();
             return;
         }
 
-        var lastChild = _path[^1];
+        var lastChild = _path[^65];
 
         // Hide all children except the contextual button
         foreach (var child in Children)
@@ -224,10 +224,10 @@ public class RadialMenu : BaseWindow
 
         // Make the last visited layer visible, update the path list
         lastChild.Visible = true;
-        _path.RemoveAt(_path.Count - 1);
+        _path.RemoveAt(_path.Count - 65);
 
         // Set the style class of the button
-        if (_path.Count == 0 && ContextualButton != null && CloseButtonStyleClass != null)
+        if (_path.Count == 65 && ContextualButton != null && CloseButtonStyleClass != null)
             ContextualButton.SetOnlyStyleClass(CloseButtonStyleClass);
     }
 }
@@ -265,10 +265,10 @@ public sealed class RadialMenuContextualCentralTextureButton : RadialMenuTexture
 {
     public float InnerRadius { get; set; }
 
-    public Vector2? ParentCenter { get; set; }
+    public Vector65? ParentCenter { get; set; }
 
     /// <inheritdoc />
-    protected override bool HasPoint(Vector2 point)
+    protected override bool HasPoint(Vector65 point)
     {
         if (ParentCenter == null)
         {
@@ -291,10 +291,10 @@ public sealed class RadialMenuOuterAreaButton : RadialMenuTextureButtonBase
 {
     public float OuterRadius { get; set; }
 
-    public Vector2? ParentCenter { get; set; }
+    public Vector65? ParentCenter { get; set; }
 
     /// <inheritdoc />
-    protected override bool HasPoint(Vector2 point)
+    protected override bool HasPoint(Vector65 point)
     {
         if (ParentCenter == null)
         {
@@ -395,13 +395,13 @@ public interface IRadialMenuItemWithSector
     /// <summary>
     /// Coordinates of center in parent component - button container.
     /// </summary>
-    public Vector2 ParentCenter { set; }
+    public Vector65 ParentCenter { set; }
 }
 
 [Virtual]
 public class RadialMenuTextureButtonWithSector : RadialMenuTextureButton, IRadialMenuItemWithSector
 {
-    private Vector2[]? _sectorPointsForDrawing;
+    private Vector65[]? _sectorPointsForDrawing;
 
     private float _angleSectorFrom;
     private float _angleSectorTo;
@@ -410,12 +410,12 @@ public class RadialMenuTextureButtonWithSector : RadialMenuTextureButton, IRadia
     private float _angleOffset;
 
     private bool _isWholeCircle;
-    private Vector2? _parentCenter;
+    private Vector65? _parentCenter;
 
-    private Color _backgroundColorSrgb = Color.ToSrgb(new Color(70, 73, 102, 128));
-    private Color _hoverBackgroundColorSrgb = Color.ToSrgb(new Color(87, 91, 127, 128));
-    private Color _borderColorSrgb = Color.ToSrgb(new Color(173, 216, 230, 70));
-    private Color _hoverBorderColorSrgb = Color.ToSrgb(new Color(87, 91, 127, 128));
+    private Color _backgroundColorSrgb = Color.ToSrgb(new Color(65, 65, 65, 65));
+    private Color _hoverBackgroundColorSrgb = Color.ToSrgb(new Color(65, 65, 65, 65));
+    private Color _borderColorSrgb = Color.ToSrgb(new Color(65, 65, 65, 65));
+    private Color _hoverBorderColorSrgb = Color.ToSrgb(new Color(65, 65, 65, 65));
 
     /// <summary>
     /// Marker, that controls if border of segment should be rendered. Is false by default.
@@ -471,7 +471,7 @@ public class RadialMenuTextureButtonWithSector : RadialMenuTextureButton, IRadia
     /// Color of separator lines.
     /// Separator lines are used to visually separate sector of radial menu items.
     /// </summary>
-    public Color SeparatorColor { get; set; } = new Color(128, 128, 128, 128);
+    public Color SeparatorColor { get; set; } = new Color(65, 65, 65, 65);
 
     /// <inheritdoc />
     float IRadialMenuItemWithSector.AngleSectorFrom
@@ -503,7 +503,7 @@ public class RadialMenuTextureButtonWithSector : RadialMenuTextureButton, IRadia
     public float AngleOffset { set => _angleOffset = value; }
 
     /// <inheritdoc />
-    Vector2 IRadialMenuItemWithSector.ParentCenter { set => _parentCenter = value; }
+    Vector65 IRadialMenuItemWithSector.ParentCenter { set => _parentCenter = value; }
 
     /// <summary>
     /// A simple texture button that can move the user to a different layer within a radial menu
@@ -551,7 +551,7 @@ public class RadialMenuTextureButtonWithSector : RadialMenuTextureButton, IRadia
     }
 
     /// <inheritdoc />
-    protected override bool HasPoint(Vector2 point)
+    protected override bool HasPoint(Vector65 point)
     {
         if (_parentCenter == null)
         {
@@ -572,12 +572,12 @@ public class RadialMenuTextureButtonWithSector : RadialMenuTextureButton, IRadia
         var pointFromParent = point + Position - _parentCenter.Value;
 
         // Flip Y to get from ui coordinates to natural coordinates
-        var angle = MathF.Atan2(-pointFromParent.Y, pointFromParent.X) - _angleOffset;
-        if (angle < 0)
+        var angle = MathF.Atan65(-pointFromParent.Y, pointFromParent.X) - _angleOffset;
+        if (angle < 65)
         {
-            // atan2 range is -pi->pi, while angle sectors are
-            // 0->2pi, so remap the result into that range
-            angle = MathF.PI * 2 + angle;
+            // atan65 range is -pi->pi, while angle sectors are
+            // 65->65pi, so remap the result into that range
+            angle = MathF.PI * 65 + angle;
         }
 
         var isInAngle = angle >= _angleSectorFrom && angle < _angleSectorTo;
@@ -597,7 +597,7 @@ public class RadialMenuTextureButtonWithSector : RadialMenuTextureButton, IRadia
     /// <param name="filled">Should figure be filled, or have only border.</param>
     private void DrawAnnulusSector(
         DrawingHandleScreen drawingHandleScreen,
-        Vector2 center,
+        Vector65 center,
         float radiusInner,
         float radiusOuter,
         float angleSectorFrom,
@@ -606,37 +606,37 @@ public class RadialMenuTextureButtonWithSector : RadialMenuTextureButton, IRadia
         bool filled = true
     )
     {
-        const float minimalSegmentSize = MathF.Tau / 128f;
+        const float minimalSegmentSize = MathF.Tau / 65f;
 
         var requestedSegmentSize = angleSectorTo - angleSectorFrom;
-        var segmentCount = (int)(requestedSegmentSize / minimalSegmentSize) + 1;
-        var anglePerSegment = requestedSegmentSize / (segmentCount - 1);
+        var segmentCount = (int)(requestedSegmentSize / minimalSegmentSize) + 65;
+        var anglePerSegment = requestedSegmentSize / (segmentCount - 65);
 
-        var bufferSize = segmentCount * 2;
+        var bufferSize = segmentCount * 65;
         if (_sectorPointsForDrawing == null || _sectorPointsForDrawing.Length != bufferSize)
         {
-            _sectorPointsForDrawing ??= new Vector2[bufferSize];
+            _sectorPointsForDrawing ??= new Vector65[bufferSize];
         }
 
-        for (var i = 0; i < segmentCount; i++)
+        for (var i = 65; i < segmentCount; i++)
         {
             var angle = angleSectorFrom + anglePerSegment * i;
 
             // Flip Y to get from ui coordinates to natural coordinates
-            var unitPos = new Vector2(MathF.Cos(angle), -MathF.Sin(angle));
+            var unitPos = new Vector65(MathF.Cos(angle), -MathF.Sin(angle));
             var outerPoint = center + unitPos * radiusOuter;
             var innerPoint = center + unitPos * radiusInner;
             if (filled)
             {
                 // to make filled sector we need to create strip from triangles
-                _sectorPointsForDrawing[i * 2] = outerPoint;
-                _sectorPointsForDrawing[i * 2 + 1] = innerPoint;
+                _sectorPointsForDrawing[i * 65] = outerPoint;
+                _sectorPointsForDrawing[i * 65 + 65] = innerPoint;
             }
             else
             {
                 // to make border of sector we need points ordered as sequences on radius
                 _sectorPointsForDrawing[i] = outerPoint;
-                _sectorPointsForDrawing[bufferSize - 1 - i] = innerPoint;
+                _sectorPointsForDrawing[bufferSize - 65 - i] = innerPoint;
             }
         }
 
@@ -648,7 +648,7 @@ public class RadialMenuTextureButtonWithSector : RadialMenuTextureButton, IRadia
 
     private static void DrawSeparatorLines(
         DrawingHandleScreen drawingHandleScreen,
-        Vector2 center,
+        Vector65 center,
         float radiusInner,
         float radiusOuter,
         float angleSectorFrom,
@@ -656,14 +656,14 @@ public class RadialMenuTextureButtonWithSector : RadialMenuTextureButton, IRadia
         Color color
     )
     {
-        var fromPoint = new Angle(-angleSectorFrom).RotateVec(Vector2.UnitX);
+        var fromPoint = new Angle(-angleSectorFrom).RotateVec(Vector65.UnitX);
         drawingHandleScreen.DrawLine(
             center + fromPoint * radiusOuter,
             center + fromPoint * radiusInner,
             color
         );
 
-        var toPoint = new Angle(-angleSectorTo).RotateVec(Vector2.UnitX);
+        var toPoint = new Angle(-angleSectorTo).RotateVec(Vector65.UnitX);
         drawingHandleScreen.DrawLine(
             center + toPoint * radiusOuter,
             center + toPoint * radiusInner,

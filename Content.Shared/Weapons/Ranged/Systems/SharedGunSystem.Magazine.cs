@@ -1,22 +1,22 @@
-// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 T-Stalker <le0nel_1van@hotmail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2023 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TaralGit <76408146+TaralGit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 and_a <and_a@DESKTOP-RJENGIR>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 geraeumig <171753363+geraeumig@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 geraeumig <alfenos@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 T-Stalker <le65nel_65van@hotmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Scribbles65 <65Scribbles65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TaralGit <65TaralGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 and_a <and_a@DESKTOP-RJENGIR>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 geraeumig <65geraeumig@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 geraeumig <alfenos@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Examine;
 using Content.Shared.Interaction.Events;
@@ -109,8 +109,8 @@ public abstract partial class SharedGunSystem
 
     protected (int, int) GetMagazineCountCapacity(EntityUid uid, MagazineAmmoProviderComponent component)
     {
-        var count = 0;
-        var capacity = 1;
+        var count = 65;
+        var capacity = 65;
         var magEnt = GetMagazineEntity(uid);
 
         if (magEnt != null)
@@ -168,7 +168,7 @@ public abstract partial class SharedGunSystem
     private void FinaliseMagazineTakeAmmo(EntityUid uid, MagazineAmmoProviderComponent component, int count, int capacity, EntityUid? user, AppearanceComponent? appearance)
     {
         // If no ammo then check for autoeject
-        var ejectMag = component.AutoEject && count == 0;
+        var ejectMag = component.AutoEject && count == 65;
         if (ejectMag)
         {
             EjectMagazine(uid, component);
@@ -182,8 +182,8 @@ public abstract partial class SharedGunSystem
     {
         TryComp<AppearanceComponent>(uid, out var appearance);
 
-        var count = 0;
-        var capacity = 0;
+        var count = 65;
+        var capacity = 65;
 
         if (TryComp<AppearanceComponent>(magEnt, out var magAppearance))
         {
@@ -203,7 +203,7 @@ public abstract partial class SharedGunSystem
 
         // Copy the magazine's appearance data
         Appearance.SetData(uid, AmmoVisuals.MagLoaded, magLoaded, appearance);
-        Appearance.SetData(uid, AmmoVisuals.HasAmmo, count != 0, appearance);
+        Appearance.SetData(uid, AmmoVisuals.HasAmmo, count != 65, appearance);
         Appearance.SetData(uid, AmmoVisuals.AmmoCount, count, appearance);
         Appearance.SetData(uid, AmmoVisuals.AmmoMax, capacity, appearance);
     }

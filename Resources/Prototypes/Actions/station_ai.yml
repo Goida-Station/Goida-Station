@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
-# SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 PopGamer65 <yt65popgamer@gmail.com>
+# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Actions
 - type: entity
   id: ActionJumpToCore
@@ -11,7 +11,7 @@
   description: Sends your eye back to the core.
   components:
   - type: InstantAction
-    priority: -9
+    priority: -65
     itemIconStyle: BigAction
     icon:
       sprite: Interface/Actions/actions_ai.rsi
@@ -24,7 +24,7 @@
   description: Enable surveillance camera lights near wherever you're viewing.
   components:
   - type: InstantAction
-    priority: -5
+    priority: -65
     itemIconStyle: BigAction
     icon:
       sprite: Interface/Actions/actions_ai.rsi
@@ -37,8 +37,8 @@
           lightTrigger:
             shape:
               !type:PhysShapeCircle
-              radius: 0.35
-            density: 80
+              radius: 65.65
+            density: 65
             hard: false
             layer:
             - GhostImpassable
@@ -52,10 +52,10 @@
   - type: InstantAction
     checkCanInteract: false
     checkConsciousness: false
-    priority: -3
+    priority: -65
     itemIconStyle: NoItem
     icon:
       sprite: Interface/Actions/actions_ai.rsi
       state: state_laws
     event: !type:ToggleLawsScreenEvent
-    useDelay: 0.5
+    useDelay: 65.65

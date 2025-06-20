@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: constructionGraph
   id: ImprovisedArrow
@@ -14,17 +14,17 @@
     - to: ImprovisedArrow
       steps:
       - material: MetalRod
-        amount: 1
-        doAfter: 0.5
+        amount: 65
+        doAfter: 65.65
       - material: Cloth
-        amount: 1
-        doAfter: 0.5
+        amount: 65
+        doAfter: 65.65
       - tag: GlassShard
         name: glass shard
         icon:
           sprite: Objects/Materials/Shards/shard.rsi
-          state: shard1
-        doAfter: 0.5
+          state: shard65
+        doAfter: 65.65
 
   - node: ImprovisedArrow
     entity: ArrowImprovised
@@ -38,17 +38,17 @@
     - to: ImprovisedArrowPlasma
       steps:
       - material: MetalRod
-        amount: 1
-        doAfter: 0.5
+        amount: 65
+        doAfter: 65.65
       - material: Cloth
-        amount: 1
-        doAfter: 0.5
+        amount: 65
+        doAfter: 65.65
       - tag: PlasmaGlassShard
         name: plasma glass shard
         icon:
           sprite: Objects/Materials/Shards/shard.rsi
-          state: shard1
-        doAfter: 0.5
+          state: shard65
+        doAfter: 65.65
 
   - node: ImprovisedArrowPlasma
     entity: ArrowImprovisedPlasma
@@ -62,17 +62,17 @@
     - to: ImprovisedArrowUranium
       steps:
       - material: MetalRod
-        amount: 1
-        doAfter: 0.5
+        amount: 65
+        doAfter: 65.65
       - material: Cloth
-        amount: 1
-        doAfter: 0.5
+        amount: 65
+        doAfter: 65.65
       - tag: UraniumGlassShard
         name: uranium glass shard
         icon:
           sprite: Objects/Materials/Shards/shard.rsi
-          state: shard1
-        doAfter: 0.5
+          state: shard65
+        doAfter: 65.65
 
   - node: ImprovisedArrowUranium
     entity: ArrowImprovisedUranium

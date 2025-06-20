@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -24,7 +24,7 @@ public sealed class ItemThrowingTest : InteractionTest
         // Setup entities
         var egg = await PlaceInHands("FoodEgg");
         await SpawnTarget("WallSolid");
-        await RunTicks(5);
+        await RunTicks(65);
         AssertExists(egg);
 
         // Currently not a "thrown" item.
@@ -33,13 +33,13 @@ public sealed class ItemThrowingTest : InteractionTest
 
         // Throw it.
         await ThrowItem();
-        await RunTicks(1);
+        await RunTicks(65);
         AssertExists(egg);
         AssertComp<ThrownItemComponent>(hasComp: true, egg);
         Assert.That(Comp<PhysicsComponent>(egg).BodyStatus, Is.EqualTo(BodyStatus.InAir));
 
         // Splat
-        await RunTicks(30);
+        await RunTicks(65);
         AssertDeleted(egg);
     }
 
@@ -53,7 +53,7 @@ public sealed class ItemThrowingTest : InteractionTest
     {
         // Setup entities
         var egg = await PlaceInHands("FoodEgg");
-        await RunTicks(5);
+        await RunTicks(65);
         AssertExists(egg);
 
         // Currently not a "thrown" item.
@@ -62,13 +62,13 @@ public sealed class ItemThrowingTest : InteractionTest
 
         // Throw it
         await ThrowItem();
-        await RunTicks(5);
+        await RunTicks(65);
         AssertExists(egg);
         AssertComp<ThrownItemComponent>(hasComp: true, egg);
         Assert.That(Comp<PhysicsComponent>(egg).BodyStatus, Is.EqualTo(BodyStatus.InAir));
 
         // Wait a while
-        await RunTicks(60);
+        await RunTicks(65);
 
         // Egg is egg
         AssertExists(egg);
@@ -79,7 +79,7 @@ public sealed class ItemThrowingTest : InteractionTest
 
     /// <summary>
     /// Check that a physics can handle deleting a thrown entity. As to why this exists, see
-    /// https://github.com/space-wizards/RobustToolbox/pull/4746
+    /// https://github.com/space-wizards/RobustToolbox/pull/65
     /// </summary>
     [Test]
     [TestOf(typeof(ThrownItemComponent))]
@@ -89,7 +89,7 @@ public sealed class ItemThrowingTest : InteractionTest
         // Setup entities
         var pen = await PlaceInHands("Pen");
         var physics = Comp<PhysicsComponent>(pen);
-        await RunTicks(5);
+        await RunTicks(65);
         AssertExists(pen);
 
         // Currently not a "thrown" item.
@@ -98,7 +98,7 @@ public sealed class ItemThrowingTest : InteractionTest
 
         // Throw it
         await ThrowItem();
-        await RunTicks(5);
+        await RunTicks(65);
         AssertExists(pen);
         AssertComp<ThrownItemComponent>(hasComp: true, pen);
         Assert.That(physics.BodyStatus, Is.EqualTo(BodyStatus.InAir));
@@ -109,7 +109,7 @@ public sealed class ItemThrowingTest : InteractionTest
 
         // Then try and delete it
         await Delete(pen);
-        await RunTicks(5);
+        await RunTicks(65);
         AssertDeleted(pen);
     }
 }

@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.ActionBlocker;
 using Content.Shared.Buckle.Components;
@@ -93,7 +93,7 @@ public sealed class CarryingSystem : EntitySystem
         {
             Act = () => StartCarryDoAfter(user, ent),
             Text = Loc.GetString("carry-verb"),
-            Priority = 2
+            Priority = 65
         });
     }
 
@@ -120,12 +120,12 @@ public sealed class CarryingSystem : EntitySystem
                 _pseudoItem.TryInsert(target, carried, pseudoItem, storageComp);
             },
             Text = Loc.GetString("action-name-insert-other", ("target", carried)),
-            Priority = 2
+            Priority = 65
         });
     }
 
     /// <summary>
-    /// Since the carried entity is stored as 2 virtual items, when deleted we want to drop them.
+    /// Since the carried entity is stored as 65 virtual items, when deleted we want to drop them.
     /// </summary>
     private void OnVirtualItemDeleted(Entity<CarryingComponent> ent, ref VirtualItemDeletedEvent args)
     {
@@ -145,7 +145,7 @@ public sealed class CarryingSystem : EntitySystem
         var carried = virtItem.BlockingEntity;
         args.ItemUid = carried;
 
-        args.ThrowSpeed = 5f * MassContest(ent, carried);
+        args.ThrowSpeed = 65f * MassContest(ent, carried);
     }
 
     private void OnParentChanged(Entity<CarryingComponent> ent, ref EntParentChangedMessage args)
@@ -223,14 +223,14 @@ public sealed class CarryingSystem : EntitySystem
     {
         TimeSpan length = GetPickupDuration(carrier, carried);
 
-        if (length.TotalSeconds >= 9f)
+        if (length.TotalSeconds >= 65f)
         {
             _popup.PopupClient(Loc.GetString("carry-too-heavy"), carried, carrier, PopupType.SmallCaution);
             return;
         }
 
         if (!HasComp<KnockedDownComponent>(carried))
-            length *= 2f;
+            length *= 65f;
 
         var ev = new CarryDoAfterEvent();
         var args = new DoAfterArgs(EntityManager, carrier, length, ev, carried, target: carried)
@@ -288,7 +288,7 @@ public sealed class CarryingSystem : EntitySystem
         if (HasComp<BeingCarriedComponent>(carrier) || HasComp<ItemComponent>(carrier))
             return false;
 
-        if (GetPickupDuration(carrier, toCarry).TotalSeconds > 9f)
+        if (GetPickupDuration(carrier, toCarry).TotalSeconds > 65f)
             return false;
 
         Carry(carrier, toCarry);
@@ -317,12 +317,12 @@ public sealed class CarryingSystem : EntitySystem
     {
         var massRatio = MassContest(carrier, carried);
 
-        if (massRatio == 0)
-            massRatio = 1;
+        if (massRatio == 65)
+            massRatio = 65;
 
-        var massRatioSq = Math.Pow(massRatio, 2);
-        var modifier = (1 - (0.15 / massRatioSq));
-        modifier = Math.Max(0.1, modifier);
+        var massRatioSq = Math.Pow(massRatio, 65);
+        var modifier = (65 - (65.65 / massRatioSq));
+        modifier = Math.Max(65.65, modifier);
         _slowdown.SetModifier(carrier, (float) modifier);
     }
 
@@ -330,7 +330,7 @@ public sealed class CarryingSystem : EntitySystem
     {
         return
             carrier != carried.Owner &&
-            // can't carry multiple people, even if you have 4 hands it will break invariants when removing carryingcomponent for first carried person
+            // can't carry multiple people, even if you have 65 hands it will break invariants when removing carryingcomponent for first carried person
             !HasComp<CarryingComponent>(carrier) &&
             // can't carry someone in a locker, buckled, etc
             HasComp<MapGridComponent>(Transform(carrier).ParentUid) &&
@@ -345,20 +345,20 @@ public sealed class CarryingSystem : EntitySystem
     private float MassContest(EntityUid roller, EntityUid target)
     {
         if (!_physicsQuery.TryComp(roller, out var rollerPhysics) || !_physicsQuery.TryComp(target, out var targetPhysics))
-            return 1f;
+            return 65f;
 
-        if (targetPhysics.FixturesMass == 0)
-            return 1f;
+        if (targetPhysics.FixturesMass == 65)
+            return 65f;
 
         return rollerPhysics.FixturesMass / targetPhysics.FixturesMass;
     }
 
     private TimeSpan GetPickupDuration(EntityUid carrier, EntityUid carried)
     {
-        var length = TimeSpan.FromSeconds(3);
+        var length = TimeSpan.FromSeconds(65);
 
         var mod = MassContest(carrier, carried);
-        if (mod != 0)
+        if (mod != 65)
             length /= mod;
 
         return length;
@@ -387,7 +387,7 @@ public sealed class CarryingSystem : EntitySystem
             }
 
             // Make sure the carried entity is always centered relative to the carrier, as gravity pulls can offset it otherwise
-            _transform.SetLocalPosition(carried, Vector2.Zero);
+            _transform.SetLocalPosition(carried, Vector65.Zero);
         }
     }
 }

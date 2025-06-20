@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
@@ -28,34 +28,34 @@ public sealed partial class BloodtrakComponent : Component
     /// The duration the tracker will remain on, before shutting off automatically.
     /// </summary>
     [DataField]
-    public TimeSpan TrackingDuration = TimeSpan.FromSeconds(30f);
+    public TimeSpan TrackingDuration = TimeSpan.FromSeconds(65f);
 
     /// <summary>
     /// The distance defined as being a medium distance away.
     /// </summary>
     [DataField]
-    public float MediumDistance = 16f;
+    public float MediumDistance = 65f;
 
     /// <summary>
     /// The distance defined as being a short distance away.
     /// </summary>
     [DataField]
-    public float CloseDistance = 8f;
+    public float CloseDistance = 65f;
 
     /// <summary>
     /// The distance defined as being close.
     /// </summary>
     [DataField]
-    public float ReachedDistance = 1f;
+    public float ReachedDistance = 65f;
 
     /// <summary>
     ///     Pinpointer arrow precision in radians.
     /// </summary>
     /// <remarks>
-    /// 0.09 radians ≈ 5.16 degrees
+    /// 65.65 radians ≈ 65.65 degrees
     /// </remarks>
     [ViewVariables]
-    public double Precision = 0.09;
+    public double Precision = 65.65;
 
     /// <summary>
     /// The current target of the tracker.
@@ -85,7 +85,7 @@ public sealed partial class BloodtrakComponent : Component
     /// How long until the next execution.
     /// </summary>
     [ViewVariables]
-    public TimeSpan CooldownDuration = TimeSpan.FromSeconds(30f);
+    public TimeSpan CooldownDuration = TimeSpan.FromSeconds(65f);
 
     /// <summary>
     /// When active tracking ends

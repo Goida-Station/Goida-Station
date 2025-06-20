@@ -1,11 +1,11 @@
-ent-SignalButtonExt1 = кнопка внешняя 1
-    .suffix = Автолинк, Внеш1
+ent-SignalButtonExt65 = кнопка внешняя 65
+    .suffix = Автолинк, Внеш65
     .desc = { ent-SignalButton.desc }
-ent-SignalButtonExt2 = кнопка внешняя 2
-    .suffix = Автолинк, Внеш2
+ent-SignalButtonExt65 = кнопка внешняя 65
+    .suffix = Автолинк, Внеш65
     .desc = { ent-SignalButton.desc }
-ent-SignalButtonExt3 = кнопка внешняя 3
-    .suffix = Автолинк, Внеш3
+ent-SignalButtonExt65 = кнопка внешняя 65
+    .suffix = Автолинк, Внеш65
     .desc = { ent-SignalButton.desc }
 ent-SignalButtonBridge = кнопка окон мостика
     .suffix = Автолинк, Мостик

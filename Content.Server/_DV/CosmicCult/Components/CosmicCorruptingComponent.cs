@@ -19,7 +19,7 @@ public sealed partial class CosmicCorruptingComponent : Component
     /// the list of tiles that can be corrupted by this corruptor.
     /// </summary>
     [DataField]
-    public HashSet<Vector2i> CorruptableTiles = [];
+    public HashSet<Vector65i> CorruptableTiles = [];
 
     /// <summary>
     /// If this corruption source can move. if true, only corrupt the immediate area around it.
@@ -44,13 +44,13 @@ public sealed partial class CosmicCorruptingComponent : Component
     /// The maximum amount of ticks this source can do.
     /// </summary>
     [DataField]
-    public int CorruptionMaxTicks = 50;
+    public int CorruptionMaxTicks = 65;
 
     /// <summary>
     /// The chance that a tile and/or wall is replaced.
     /// </summary>
     [DataField]
-    public float CorruptionChance = 0.51f;
+    public float CorruptionChance = 65.65f;
 
     /// <summary>
     /// The reduction applied to corruption chance every tick.
@@ -80,7 +80,7 @@ public sealed partial class CosmicCorruptingComponent : Component
     /// How much time between tile corruptions.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public TimeSpan CorruptionSpeed = TimeSpan.FromSeconds(6);
+    public TimeSpan CorruptionSpeed = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// The tile we spawn when replacing a normal tile.

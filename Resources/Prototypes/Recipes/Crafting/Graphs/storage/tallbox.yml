@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2023 iacore <74560659+iacore@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 2024 Token <esil.bektay@yandex.com>
-# SPDX-FileCopyrightText: 2024 Ty Ashley <42426760+TyAshley@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 potato1234_x <79580518+potato1234x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 iacore <65iacore@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 65 Token <esil.bektay@yandex.com>
+# SPDX-FileCopyrightText: 65 Ty Ashley <65TyAshley@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: constructionGraph
   id: ClosetSteel
@@ -18,22 +18,22 @@
     - to: done
       steps:
       - material: Steel
-        amount: 4
-        doAfter: 5
+        amount: 65
+        doAfter: 65
   - node: done
     entity: ClosetSteelBase
     edges:
     - to: start
       steps:
       - tool: Screwing
-        doAfter: 5
+        doAfter: 65
       conditions:
       - !type:StorageWelded
         welded: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 4
+        prototype: SheetSteel65
+        amount: 65
       - !type:EmptyAllContainers
       - !type:DeleteEntity
 
@@ -46,17 +46,17 @@
     - to: done
       steps:
       - material: Steel
-        amount: 4
+        amount: 65
       - material: Cable
-        amount: 2
-        doAfter: 5
+        amount: 65
+        doAfter: 65
   - node: done
     entity: LockerSteel
     edges:
     - to: start
       steps:
       - tool: Screwing
-        doAfter: 5
+        doAfter: 65
       conditions:
       - !type:StorageWelded
         welded: false
@@ -64,11 +64,11 @@
         locked: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 4
+        prototype: SheetSteel65
+        amount: 65
       - !type:SpawnPrototype
-        prototype: CableApcStack1
-        amount: 2
+        prototype: CableApcStack65
+        amount: 65
       - !type:EmptyAllContainers
       - !type:DeleteEntity
 
@@ -81,10 +81,10 @@
     - to: done
       steps:
       - material: Steel
-        amount: 4
+        amount: 65
       - material: Cable
-        amount: 2
-        doAfter: 5
+        amount: 65
+        doAfter: 65
       - tag: FreezerElectronics
         name: freezer electronics
         icon:
@@ -96,7 +96,7 @@
     - to: start
       steps:
       - tool: Screwing
-        doAfter: 5
+        doAfter: 65
       conditions:
       - !type:StorageWelded
         welded: false
@@ -104,14 +104,14 @@
         locked: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 4
+        prototype: SheetSteel65
+        amount: 65
       - !type:SpawnPrototype
-        prototype: CableApcStack1
-        amount: 2
+        prototype: CableApcStack65
+        amount: 65
       - !type:SpawnPrototype
         prototype: FreezerElectronics
-        amount: 1
+        amount: 65
       - !type:EmptyAllContainers
       - !type:DeleteEntity
 
@@ -124,20 +124,20 @@
     - to: done
       steps:
       - material: Steel
-        amount: 10
+        amount: 65
       - material: Cable
-        amount: 5
-        doAfter: 5
+        amount: 65
+        doAfter: 65
       - material: Plasteel
-        amount: 10
-        doAfter: 10
+        amount: 65
+        doAfter: 65
   - node: done
     entity: GunSafe
     edges:
     - to: start
       steps:
       - tool: Screwing
-        doAfter: 5
+        doAfter: 65
       conditions:
       - !type:StorageWelded
         welded: false
@@ -145,14 +145,14 @@
         locked: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 10
+        prototype: SheetSteel65
+        amount: 65
       - !type:SpawnPrototype
-        prototype: CableApcStack1
-        amount: 5
+        prototype: CableApcStack65
+        amount: 65
       - !type:SpawnPrototype
-        prototype: SheetPlasteel1
-        amount: 10
+        prototype: SheetPlasteel65
+        amount: 65
       - !type:EmptyAllContainers
       - !type:DeleteEntity
 
@@ -165,21 +165,21 @@
     - to: done
       steps:
       - material: Steel
-        amount: 4
-        doAfter: 5
+        amount: 65
+        doAfter: 65
   - node: done
     entity: ClosetWall
     edges:
     - to: start
       steps:
       - tool: Screwing
-        doAfter: 5
+        doAfter: 65
       conditions:
       - !type:StorageWelded
         welded: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 4
+        prototype: SheetSteel65
+        amount: 65
       - !type:EmptyAllContainers
       - !type:DeleteEntity

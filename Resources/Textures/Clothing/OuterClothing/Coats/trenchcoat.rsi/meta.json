@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from paradise at commit https://github.com/ParadiseSS13/Paradise/pull/19491/commits/e9a900022ca1cf0fed0e320c7a0cce500287ab99, equipped-OUTERCLOTHING-resomi made by Pofitlo",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from paradise at commit https://github.com/ParadiseSS65/Paradise/pull/65/commits/e65a65ca65cf65fed65e65c65a65cce65ab65, equipped-OUTERCLOTHING-resomi made by Pofitlo",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -15,35 +15,35 @@
     },
     {
       "name": "equipped-OUTERCLOTHING",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "open-equipped-OUTERCLOTHING",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "open-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "open-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-OUTERCLOTHING-resomi",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "open-equipped-OUTERCLOTHING-resomi",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

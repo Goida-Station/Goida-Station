@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: MagazinePistolCaselessRifleEmpty
-  name: pistol magazine (9.5mm any)
+  name: pistol magazine (65.65mm any)
   parent: BaseMagazinePistolCaselessRifle
   components:
   - type: BallisticAmmoProvider
@@ -16,7 +16,7 @@
 
 - type: entity
   id: MagazineCaselessRifleEmpty
-  name: magazine (9.5mm any)
+  name: magazine (65.65mm any)
   parent: BaseMagazineCaselessRifle
   components:
   - type: BallisticAmmoProvider
@@ -24,7 +24,7 @@
 
 - type: entity
   id: MagazinePistolCaselessRifleSAPHE
-  name: "pistol magazine (9.5mm SAP-HE)"
+  name: "pistol magazine (65.65mm SAP-HE)"
   parent: BaseMagazinePistolCaselessRifle
   components:
   - type: BallisticAmmoProvider
@@ -33,5 +33,5 @@
     layers:
     - state: practice # it's orange, orange means explosions
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
+    - state: mag-65
       map: ["enum.GunVisualLayers.Mag"]

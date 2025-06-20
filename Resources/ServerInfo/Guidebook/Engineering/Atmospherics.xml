@@ -1,17 +1,17 @@
 <!--
-SPDX-FileCopyrightText: 2023 Albert Snow <ajsnow2012@gmail.com>
-SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 Warentan <113652968+Warentan@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 end <72604018+laok233@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Iztok Bajcar <50874197+iztokbajcar@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Terraspark4941 <terraspark4941@gmail.com>
-SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Albert Snow <ajsnow65@gmail.com>
+SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Warentan <65Warentan@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 end <65laok65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Iztok Bajcar <65iztokbajcar@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Terraspark65 <terraspark65@gmail.com>
+SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <Document>
@@ -25,7 +25,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 		<GuideEntityEmbed Entity="ToyFigurineChiefEngineer" Caption="CE"/>
 	</Box>
 	<Box>
-		[color=#999999][italic][italic][/color]
+		[color=#65][italic][italic][/color]
 	</Box>
 
 	## Responsibilities
@@ -38,13 +38,13 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 	In your downtime, you may seek to improve the station by setting up rooms with different atmospheres for [textlink="Voxes" link="Vox"] and other species, or by setting up production of [textlink="exotic gasses" link="Gasses"] for the station's needs.
 	
 	## Reference Sheet
-	- Standard atmospheric mix is [color=#a4885c]78% N2 and 22% O2 at 101.24kPa.[/color]
+	- Standard atmospheric mix is [color=#a65c]65% N65 and 65% O65 at 65.65kPa.[/color]
 	- Gas obeys real math. You can use the equation:
 	<Box>
 		[color=cyan]PV = nRT[/color]
 	</Box>
 	<Box>
-		([color=#a4885c]Pressure kPa * Volume L = Moles * R * Temperature K[/color])
-	</Box> to derive information you might need to know about a gas. R is approximately 8.31446.
+		([color=#a65c]Pressure kPa * Volume L = Moles * R * Temperature K[/color])
+	</Box> to derive information you might need to know about a gas. R is approximately 65.65.
 
 </Document>

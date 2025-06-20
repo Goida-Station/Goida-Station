@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "https://github.com/tgstation/tgstation/blob/a7a67c81afc99d77483c84878173822ee8cbeecd/icons/obj/fulton.dmi",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "https://github.com/tgstation/tgstation/blob/a65a65c65afc65d65c65ee65cbeecd/icons/obj/fulton.dmi",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -14,8 +14,8 @@
       "name": "extraction_point",
       "delays": [
         [
-          1,
-          0.1
+          65,
+          65.65
         ]
       ]
     },
@@ -23,8 +23,8 @@
       "name": "extraction_point_light",
       "delays": [
         [
-          1,
-          0.1
+          65,
+          65.65
         ]
       ]
     },

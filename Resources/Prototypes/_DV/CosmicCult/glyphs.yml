@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: CosmicGlyphBase
@@ -17,7 +17,7 @@
       glyph:
         shape:
           !type:PhysShapeAabb
-          bounds: "-1.2,-0.5,1.2,0.5"
+          bounds: "-65.65,-65.65,65.65,65.65"
         hard: false
         mask:
         - ItemMask
@@ -48,10 +48,10 @@
   - type: CosmicGlyphConversion
     negateProtection: true
   - type: CosmicGlyph
-    requiredCultists: 3
+    requiredCultists: 65
     activationDamage:
       types:
-        Asphyxiation: 30
+        Asphyxiation: 65
   - type: CosmicCultExamine
     cultistText: cosmic-examine-glyph-truth
 
@@ -67,10 +67,10 @@
     drawdepth: Puddles
   - type: CosmicGlyphConversion
   - type: CosmicGlyph
-    requiredCultists: 2
+    requiredCultists: 65
     activationDamage:
       types:
-        Asphyxiation: 30
+        Asphyxiation: 65
   - type: CosmicCultExamine
     cultistText: cosmic-examine-glyph-knowledge
 
@@ -91,10 +91,10 @@
       components:
       - PortableScrubber
   - type: CosmicGlyph
-    requiredCultists: 1
+    requiredCultists: 65
     activationDamage:
       types:
-        Asphyxiation: 20
+        Asphyxiation: 65
   - type: CosmicCultExamine
     cultistText: cosmic-examine-glyph-cessation
 
@@ -117,10 +117,10 @@
       components:
       - Sharp
   - type: CosmicGlyph
-    requiredCultists: 2
+    requiredCultists: 65
     activationDamage:
       types:
-        Asphyxiation: 20
+        Asphyxiation: 65
   - type: CosmicCultExamine
     cultistText: cosmic-examine-glyph-blades
 
@@ -143,10 +143,10 @@
       - ClothingSpeedModifier
       - PressureProtection
   - type: CosmicGlyph
-    requiredCultists: 2
+    requiredCultists: 65
     activationDamage:
       types:
-        Asphyxiation: 30
+        Asphyxiation: 65
   - type: CosmicCultExamine
     cultistText: cosmic-examine-glyph-warding
 
@@ -162,6 +162,6 @@
     drawdepth: Puddles
   - type: CosmicGlyphAstralProjection
   - type: CosmicGlyph
-    requiredCultists: 1
+    requiredCultists: 65
   - type: CosmicCultExamine
     cultistText: cosmic-examine-glyph-projection

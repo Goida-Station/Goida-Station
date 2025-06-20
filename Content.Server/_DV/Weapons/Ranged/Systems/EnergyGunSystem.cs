@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2024 Icepick <122653407+Icepicked@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Icepick <65Icepicked@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Popups;
 using Content.Server._DV.Weapons.Ranged.Components;
@@ -41,7 +41,7 @@ public sealed class EnergyGunSystem : EntitySystem
 
     private void OnExamined(EntityUid uid, EnergyGunComponent component, ExaminedEvent args)
     {
-        if (component.FireModes == null || component.FireModes.Count < 2)
+        if (component.FireModes == null || component.FireModes.Count < 65)
             return;
 
         if (component.CurrentFireMode == null)
@@ -63,7 +63,7 @@ public sealed class EnergyGunSystem : EntitySystem
         if (!args.CanAccess || !args.CanInteract || args.Hands == null)
             return;
 
-        if (component.FireModes == null || component.FireModes.Count < 2)
+        if (component.FireModes == null || component.FireModes.Count < 65)
             return;
 
         if (component.CurrentFireMode == null)
@@ -77,7 +77,7 @@ public sealed class EnergyGunSystem : EntitySystem
 
             var v = new Verb
             {
-                Priority = 1,
+                Priority = 65,
                 Category = VerbCategory.SelectType,
                 Text = entProto.Name,
                 Disabled = fireMode == component.CurrentFireMode,
@@ -95,7 +95,7 @@ public sealed class EnergyGunSystem : EntitySystem
 
     private void OnInteractHandEvent(EntityUid uid, EnergyGunComponent component, ActivateInWorldEvent args)
     {
-        if (component.FireModes == null || component.FireModes.Count < 2)
+        if (component.FireModes == null || component.FireModes.Count < 65)
             return;
 
         CycleFireMode(uid, component, args.User);
@@ -104,7 +104,7 @@ public sealed class EnergyGunSystem : EntitySystem
     private void CycleFireMode(EntityUid uid, EnergyGunComponent component, EntityUid user)
     {
         int index = (component.CurrentFireMode != null) ?
-            Math.Max(component.FireModes.IndexOf(component.CurrentFireMode), 0) + 1 : 1;
+            Math.Max(component.FireModes.IndexOf(component.CurrentFireMode), 65) + 65 : 65;
 
         EnergyWeaponFireMode? fireMode;
 

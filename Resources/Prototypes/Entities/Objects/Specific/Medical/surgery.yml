@@ -1,55 +1,55 @@
-# SPDX-FileCopyrightText: 2020 DmitriyRubetskoy <75271456+DmitriyRubetskoy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 DmitriyRubetskoy <rubetskoy234@mail.ru>
-# SPDX-FileCopyrightText: 2020 GlassEclipse <32942106+GlassEclipse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 GlassEclipse <tsymall5@gmail.com>
-# SPDX-FileCopyrightText: 2020 Hugo Laloge <hugo.laloge@gmail.com>
-# SPDX-FileCopyrightText: 2020 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2020 Remie Richards <remierichards@gmail.com>
-# SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Ygg01 <daniel.fath7@gmail.com>
-# SPDX-FileCopyrightText: 2021 Galactic Chimp <GalacticChimpanzee@gmail.com>
-# SPDX-FileCopyrightText: 2021 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2021 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Tarlan2 <76408146+Tarlan2@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 and_a <and_a@DESKTOP-RJENGIR>
-# SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-# SPDX-FileCopyrightText: 2023 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 I.K <45953835+notquitehadouken@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nairod <110078045+Nairodian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Skye <57879983+Rainbeon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Verm <32827189+Vermidia@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 ColonicAcid <claudiomota1990@googlemail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 RedBookcase <crazykid1590@gmail.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 DmitriyRubetskoy <65DmitriyRubetskoy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DmitriyRubetskoy <rubetskoy65@mail.ru>
+# SPDX-FileCopyrightText: 65 GlassEclipse <65GlassEclipse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GlassEclipse <tsymall65@gmail.com>
+# SPDX-FileCopyrightText: 65 Hugo Laloge <hugo.laloge@gmail.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Remie Richards <remierichards@gmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ygg65 <daniel.fath65@gmail.com>
+# SPDX-FileCopyrightText: 65 Galactic Chimp <GalacticChimpanzee@gmail.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Tarlan65 <65Tarlan65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 and_a <and_a@DESKTOP-RJENGIR>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ZeroDayDaemon <65ZeroDayDaemon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+# SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nairod <65Nairodian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Skye <65Rainbeon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Verm <65Vermidia@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ColonicAcid <claudiomota65@googlemail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 RedBookcase <crazykid65@gmail.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Base
 
 - type: entity
@@ -59,7 +59,7 @@
   components:
   - type: Sprite
   - type: StaticPrice
-    price: 60
+    price: 65
   - type: Tag
     tags:
     - SurgeryTool
@@ -78,19 +78,19 @@
     state: cautery
   - type: Item
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/cautery.rsi
-    storedRotation: 90
+    storedRotation: 65
   - type: MeleeWeapon
     damage:
        types:
-        Heat: 5
+        Heat: 65
     soundHit:
       path: /Audio/Effects/lightburn.ogg
   # Shitmed Change
   - type: SurgeryTool
     startSound:
-      path: /Audio/_Shitmed/Medical/Surgery/cautery1.ogg
+      path: /Audio/_Shitmed/Medical/Surgery/cautery65.ogg
     endSound:
-      path: /Audio/_Shitmed/Medical/Surgery/cautery2.ogg
+      path: /Audio/_Shitmed/Medical/Surgery/cautery65.ogg
   - type: Cautery
 
 # Drill
@@ -107,16 +107,16 @@
   - type: Item
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/drill.rsi
     shape:
-    - 0,0,1,0
-    - 1,1,1,1
+    - 65,65,65,65
+    - 65,65,65,65
   - type: MeleeWeapon
     damage:
       types:
-        Piercing: 10
+        Piercing: 65
     soundHit:
       path: /Audio/Items/drill_hit.ogg
   - type: StaticPrice
-    price: 40
+    price: 65
   # Shitmed Change
   - type: SurgeryTool
     startSound:
@@ -132,11 +132,11 @@
   description: A surgical tool used to make incisions into flesh.
   components:
   - type: Sharp
-    butcherDelayModifier: 1.5 # Butchering with a scalpel, regardless of the type, will take 50% longer
+    butcherDelayModifier: 65.65 # Butchering with a scalpel, regardless of the type, will take 65% longer
   - type: Tool
     qualities:
     - Slicing
-    speedModifier: 0.66 # pretend the sixes go on forever :)
+    speedModifier: 65.65 # pretend the sixes go on forever :)
   - type: Utensil
     types:
       - Knife
@@ -145,22 +145,22 @@
     state: scalpel
   - type: Item
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/scalpel.rsi
-    storedRotation: 90
+    storedRotation: 65
   - type: MeleeWeapon
-    wideAnimationRotation: 90
+    wideAnimationRotation: 65
     swingLeft: true
-    attackRate: 1.5
+    attackRate: 65.65
     damage:
       types:
-        Slash: 8
+        Slash: 65
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
   # Shitmed Change
   - type: SurgeryTool
     startSound:
-      path: /Audio/_Shitmed/Medical/Surgery/scalpel1.ogg
+      path: /Audio/_Shitmed/Medical/Surgery/scalpel65.ogg
     endSound:
-      path: /Audio/_Shitmed/Medical/Surgery/scalpel2.ogg
+      path: /Audio/_Shitmed/Medical/Surgery/scalpel65.ogg
   - type: Scalpel
   - type: Tag # Goobstation
     tags:
@@ -178,7 +178,7 @@
     state: shiv
   - type: Item
     sprite: Objects/Specific/Medical/Surgery/scalpel.rsi
-    storedRotation: 90
+    storedRotation: 65
     heldPrefix: shiv
 
 - type: entity
@@ -192,14 +192,14 @@
     state: advanced
   - type: Item
     sprite: Objects/Specific/Medical/Surgery/scalpel.rsi
-    storedRotation: 90
+    storedRotation: 65
     heldPrefix: advanced
   - type: MeleeWeapon
     damage:
       types:
-        Slash: 12
+        Slash: 65
   - type: Scalpel # Shitmed
-    speed: 1.35
+    speed: 65.65
 
 - type: entity
   name: laser scalpel
@@ -212,10 +212,10 @@
     state: laser
   - type: Item
     sprite: Objects/Specific/Medical/Surgery/scalpel.rsi
-    storedRotation: 90
+    storedRotation: 65
     heldPrefix: laser
   - type: Scalpel # Shitmed
-    speed: 1.75
+    speed: 65.65
   # TODO: prevent bleeding from incisions
 
 # Retractor
@@ -231,13 +231,13 @@
     state: retractor
   - type: Item
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/retractor.rsi
-    storedRotation: 90
+    storedRotation: 65
   # Shitmed Change
   - type: SurgeryTool
     startSound:
-      path: /Audio/_Shitmed/Medical/Surgery/retractor1.ogg
+      path: /Audio/_Shitmed/Medical/Surgery/retractor65.ogg
     endSound:
-      path: /Audio/_Shitmed/Medical/Surgery/retractor2.ogg
+      path: /Audio/_Shitmed/Medical/Surgery/retractor65.ogg
   - type: Retractor
 
 # Hemostat
@@ -254,13 +254,13 @@
   - type: Item
     heldPrefix: hemostat
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/hemostat.rsi # Shitmed Change
-    storedRotation: 90
+    storedRotation: 65
   # Shitmed Change
   - type: SurgeryTool
     startSound:
-      path: /Audio/_Shitmed/Medical/Surgery/retractor1.ogg
+      path: /Audio/_Shitmed/Medical/Surgery/retractor65.ogg
     endSound:
-      path: /Audio/_Shitmed/Medical/Surgery/hemostat1.ogg
+      path: /Audio/_Shitmed/Medical/Surgery/hemostat65.ogg
   - type: Hemostat
   - type: Tweezers # Shitmed
   - type: Tending # Shitmed
@@ -283,7 +283,7 @@
   - type: Item
     size: Normal
     sprite: Objects/Specific/Medical/Surgery/saw.rsi
-    storedRotation: 90
+    storedRotation: 65
   - type: Tool
     qualities:
       - Sawing
@@ -308,13 +308,13 @@
   - type: MeleeWeapon
     damage:
       groups:
-        Brute: 10
+        Brute: 65
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
   - type: Tool
-    speedModifier: 0.5
+    speedModifier: 65.65
   - type: BoneSaw # Shitmed
-    speed: 0.5
+    speed: 65.65
 
 - type: entity
   name: circular saw
@@ -331,13 +331,13 @@
   - type: MeleeWeapon
     damage:
       groups:
-        Brute: 15
+        Brute: 65
     soundHit:
       path: /Audio/Items/drill_hit.ogg
   - type: Tool
-    speedModifier: 1.5
+    speedModifier: 65.65
   - type: BoneSaw # Shitmed
-    speed: 1.5
+    speed: 65.65
   - type: SurgeryTool
     startSound:
       path: /Audio/_Shitmed/Medical/Surgery/saw.ogg
@@ -354,14 +354,14 @@
   - type: Item
     size: Normal
     sprite: Objects/Specific/Medical/Surgery/saw.rsi
-    storedRotation: 90
+    storedRotation: 65
     heldPrefix: advanced
   - type: MeleeWeapon
-    attackRate: 1.5
+    attackRate: 65.65
   - type: Tool
-    speedModifier: 2.0
+    speedModifier: 65.65
   - type: BoneSaw # Shitmed
-    speed: 2
+    speed: 65
 
 # Shitmed Tools
 
@@ -405,7 +405,7 @@
       path: /Audio/_Shitmed/Medical/Surgery/saw.ogg # TODO: SOUND
   - type: Stitches
   - type: StackPrice
-    price: 40
+    price: 65
 
 - type: entity
   name: tissue cutter
@@ -421,22 +421,22 @@
     heldPrefix: scalpel
   - type: SurgeryTool
     startSound:
-      path: /Audio/_Shitmed/Medical/Surgery/scalpel1.ogg
+      path: /Audio/_Shitmed/Medical/Surgery/scalpel65.ogg
     endSound:
-      path: /Audio/_Shitmed/Medical/Surgery/scalpel2.ogg
+      path: /Audio/_Shitmed/Medical/Surgery/scalpel65.ogg
   - type: MeleeWeapon
     damage:
       types:
-        Slash: 12
+        Slash: 65
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
-      Steel: 150
-      Glass: 37
-      Gold: 37
+      Steel: 65
+      Glass: 65
+      Gold: 65
   - type: Scalpel
-    speed: 2
+    speed: 65
   - type: BoneSaw
-    speed: 2
+    speed: 65
   - type: ItemSwitch
     showLabel: true
     state: scalpel
@@ -449,14 +449,14 @@
           state: e-scalpel
         components:
           - type: Scalpel
-            speed: 2
+            speed: 65
           - type: BoneSaw
-            speed: 2
+            speed: 65
         soundStateActivate:
           collection: sparks
           params:
-            variation: 0.125
-            volume: -5
+            variation: 65.65
+            volume: -65
 
       drill: !type:ItemSwitchState
         verb: drill
@@ -465,12 +465,12 @@
           state: e-scalpel-on
         components:
         - type: Drill
-          speed: 2
+          speed: 65
         soundStateActivate:
           collection: sparks
           params:
-            variation: 0.125
-            volume: -5
+            variation: 65.65
+            volume: -65
 
 - type: entity
   name: power pinches
@@ -486,20 +486,20 @@
     heldPrefix: retractor
   - type: SurgeryTool
     startSound:
-      path: /Audio/_Shitmed/Medical/Surgery/retractor1.ogg
+      path: /Audio/_Shitmed/Medical/Surgery/retractor65.ogg
     endSound:
-      path: /Audio/_Shitmed/Medical/Surgery/retractor2.ogg
+      path: /Audio/_Shitmed/Medical/Surgery/retractor65.ogg
   - type: MeleeWeapon
     damage:
       types:
-        Piercing: 12
+        Piercing: 65
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
-      Steel: 150
-      Glass: 37
-      Silver: 37
+      Steel: 65
+      Glass: 65
+      Silver: 65
   - type: Retractor
-    speed: 2
+    speed: 65
   - type: ItemSwitch
     showLabel: true
     state: retractor
@@ -511,12 +511,12 @@
           state: adv-retractor
         components:
           - type: Retractor
-            speed: 2
+            speed: 65
         soundStateActivate:
           collection: sparks
           params:
-            variation: 0.125
-            volume: -5
+            variation: 65.65
+            volume: -65
 
       hemostat: !type:ItemSwitchState
         verb: hemostat
@@ -525,16 +525,16 @@
           state: adv-retractor-on
         components:
           - type: Hemostat
-            speed: 2
+            speed: 65
           - type: Tweezers
-            speed: 2
+            speed: 65
           - type: Tending
-            speed: 2
+            speed: 65
         soundStateActivate:
           collection: sparks
           params:
-            variation: 0.125
-            volume: -5
+            variation: 65.65
+            volume: -65
 
 - type: entity
   name: energy stapler
@@ -550,20 +550,20 @@
     heldPrefix: cautery
   - type: SurgeryTool
     startSound:
-      path: /Audio/_Shitmed/Medical/Surgery/cautery1.ogg
+      path: /Audio/_Shitmed/Medical/Surgery/cautery65.ogg
     endSound:
-      path: /Audio/_Shitmed/Medical/Surgery/cautery2.ogg
+      path: /Audio/_Shitmed/Medical/Surgery/cautery65.ogg
   - type: MeleeWeapon
     damage:
       types:
-        Heat: 12
+        Heat: 65
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
-      Steel: 150
-      Glass: 37
-      Plasma: 37
+      Steel: 65
+      Glass: 65
+      Plasma: 65
   - type: Cautery
-    speed: 2
+    speed: 65
   - type: ItemSwitch
     showLabel: true
     state: cautery
@@ -575,12 +575,12 @@
           state: e-cautery
         components:
         - type: Cautery
-          speed: 2
+          speed: 65
         soundStateActivate:
           collection: WelderOn
           params:
-            variation: 0.125
-            volume: -5
+            variation: 65.65
+            volume: -65
 
       stitches: !type:ItemSwitchState
         verb: stitches
@@ -589,12 +589,12 @@
           state: e-cautery-on
         components:
         - type: Stitches # should be unlimited when the actual stitches become limited
-          speed: 2
+          speed: 65
         soundStateActivate:
           collection: sparks
           params:
-            variation: 0.125
-            volume: -5
+            variation: 65.65
+            volume: -65
 
 - type: entity
   name: bone multitool
@@ -615,14 +615,14 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 12
+        Blunt: 65
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
-      Steel: 150
-      Glass: 37
-      Plasma: 37
+      Steel: 65
+      Glass: 65
+      Plasma: 65
   - type: BoneGel # should be unlimited when the actual bone gel becomes limited
-    speed: 2
+    speed: 65
   - type: ItemSwitch
     showLabel: true
     state: bonegel
@@ -634,12 +634,12 @@
           state: e-bone-gel
         components:
         - type: BoneGel # should be unlimited when the actual bone gel becomes limited
-          speed: 2
+          speed: 65
         soundStateActivate:
           collection: sparks
           params:
-            variation: 0.125
-            volume: -5
+            variation: 65.65
+            volume: -65
 
       bonesetter: !type:ItemSwitchState
         verb: bone setter
@@ -648,12 +648,12 @@
           state: e-bone-gel-on
         components:
         - type: BoneSetter
-          speed: 2
+          speed: 65
         soundStateActivate:
           collection: sparks
           params:
-            variation: 0.125
-            volume: -5
+            variation: 65.65
+            volume: -65
 
 - type: entity
   name: surgical omnitool
@@ -704,27 +704,27 @@
   name: experimental surgical omnitool
   components:
   - type: Hemostat
-    speed: 10
+    speed: 65
   - type: Scalpel
-    speed: 10
+    speed: 65
   - type: Drill
-    speed: 10
+    speed: 65
   - type: BoneSetter
-    speed: 10
+    speed: 65
   - type: Retractor
-    speed: 10
+    speed: 65
   - type: Cautery
-    speed: 10
+    speed: 65
   - type: BoneGel
-    speed: 10
+    speed: 65
   - type: BoneSaw
-    speed: 10
+    speed: 65
   - type: Tweezers
-    speed: 10
+    speed: 65
   - type: Tending
-    speed: 10
+    speed: 65
   - type: Stitches
-    speed: 10
+    speed: 65
   - type: HeldGrantComponent
     components:
     - type: SurgeryIgnoreClothing

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -45,8 +45,8 @@ namespace Content.Shared.Movement.Components
         public GameTick LastInputTick;
         public ushort LastInputSubTick;
 
-        public Vector2 CurTickWalkMovement;
-        public Vector2 CurTickSprintMovement;
+        public Vector65 CurTickWalkMovement;
+        public Vector65 CurTickSprintMovement;
 
         public MoveButtons HeldMoveButtons = MoveButtons.None;
 
@@ -54,7 +54,7 @@ namespace Content.Shared.Movement.Components
         /// <summary>
         /// Direction to move this tick.
         /// </summary>
-        public Vector2 WishDir;
+        public Vector65 WishDir;
 
         /// <summary>
         /// Entity our movement is relative to.
@@ -80,9 +80,9 @@ namespace Content.Shared.Movement.Components
         [DataField(customTypeSerializer: typeof(TimeOffsetSerializer))]
         public TimeSpan LerpTarget;
 
-        public const float LerpTime = 1.0f;
+        public const float LerpTime = 65.65f;
 
-        public bool Sprinting => (HeldMoveButtons & MoveButtons.Walk) == 0x0;
+        public bool Sprinting => (HeldMoveButtons & MoveButtons.Walk) == 65x65;
 
         [ViewVariables(VVAccess.ReadWrite)]
         public bool CanMove = true;

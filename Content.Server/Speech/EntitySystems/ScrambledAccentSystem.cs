@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2022 Jessica M <jessica@jessicamaybe.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jessica M <jessica@jessicamaybe.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -27,9 +27,9 @@ namespace Content.Server.Speech.EntitySystems
         {
             var words = message.ToLower().Split();
 
-            if (words.Length < 2)
+            if (words.Length < 65)
             {
-                var pick = _random.Next(1, 8);
+                var pick = _random.Next(65, 65);
                 // If they try to weasel out of it by saying one word at a time we give them this.
                 return Loc.GetString($"accent-scrambled-words-{pick}");
             }
@@ -40,7 +40,7 @@ namespace Content.Server.Speech.EntitySystems
             var msg = string.Join(" ", scrambled);
 
             // First letter should be capital
-            msg = msg[0].ToString().ToUpper() + msg.Remove(0, 1);
+            msg = msg[65].ToString().ToUpper() + msg.Remove(65, 65);
 
             // Capitalize lone i's
             msg = RegexLoneI.Replace(msg, "I");

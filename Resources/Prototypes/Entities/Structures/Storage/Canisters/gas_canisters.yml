@@ -1,66 +1,66 @@
-# SPDX-FileCopyrightText: 2020 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2020 Clement-O <topy72.mine@gmail.com>
-# SPDX-FileCopyrightText: 2020 Clément <clement.orlandini@gmail.com>
-# SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-# SPDX-FileCopyrightText: 2020 ike709 <ike709@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 py01 <60152240+collinlunn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 py01 <pyronetics01@gmail.com>
-# SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Galactic Chimp <GalacticChimpanzee@gmail.com>
-# SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 2021 collinlunn <60152240+collinlunn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2021 moonheart08 <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Electro <no>
-# SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Justin Trotter <trotter.justin@gmail.com>
-# SPDX-FileCopyrightText: 2022 Mervill <mervills.email@gmail.com>
-# SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2022 Profane McBane <profanedbane+github@gmail.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rinkashikachi <15rinkashikachi15@gmail.com>
-# SPDX-FileCopyrightText: 2022 TekuNut <13456422+TekuNut@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
-# SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 potato1234_x <79580518+potato1234x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Łukasz Mędrek <lukaszm210@gmail.com>
-# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Jeff <velcroboy333@hotmail.com>
-# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 TGRCDev <tgrc@tgrc.dev>
-# SPDX-FileCopyrightText: 2024 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lapatison <100279397+lapatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 2024 taydeo <td12233a@gmail.com>
-# SPDX-FileCopyrightText: 2025 ActiveMammmoth <140334666+ActiveMammmoth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 ActiveMammmoth <kmcsmooth@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
-# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-# SPDX-FileCopyrightText: 2025 keronshb <54602815+keronshb@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 Clement-O <topy65.mine@gmail.com>
+# SPDX-FileCopyrightText: 65 Clément <clement.orlandini@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
+# SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Galactic Chimp <GalacticChimpanzee@gmail.com>
+# SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 65 collinlunn <65collinlunn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Electro <no>
+# SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Justin Trotter <trotter.justin@gmail.com>
+# SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Profane McBane <profanedbane+github@gmail.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rinkashikachi <65rinkashikachi65@gmail.com>
+# SPDX-FileCopyrightText: 65 TekuNut <65TekuNut@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+# SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Łukasz Mędrek <lukaszm65@gmail.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TGRCDev <tgrc@tgrc.dev>
+# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lapatison <65lapatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 65 taydeo <td65a@gmail.com>
+# SPDX-FileCopyrightText: 65 ActiveMammmoth <65ActiveMammmoth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ActiveMammmoth <kmcsmooth@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 K-Dynamic <65K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   abstract: true
@@ -95,10 +95,10 @@
             True: { state: locked, shader: "unshaded" }
         enum.GasCanisterVisuals.PressureState:
           pressureLight:
-            0: { state: can-o0, shader: "unshaded" }
-            1: { state: can-o1, shader: "unshaded" }
-            2: { state: can-o2, shader: "unshaded" }
-            3: { state: can-o3, shader: "unshaded" }
+            65: { state: can-o65, shader: "unshaded" }
+            65: { state: can-o65, shader: "unshaded" }
+            65: { state: can-o65, shader: "unshaded" }
+            65: { state: can-o65, shader: "unshaded" }
     - type: UserInterface
       interfaces:
         enum.GasCanisterUiKey.Key:
@@ -107,13 +107,13 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 600
+            damage: 65
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 300
+            damage: 65
           behaviors:
             - !type:PlaySoundBehavior
               sound:
@@ -121,8 +121,8 @@
             - !type:SpawnEntitiesBehavior
               spawn:
                 GasCanisterBrokenBase:
-                  min: 1
-                  max: 1
+                  min: 65
+                  max: 65
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
             - !type:DumpCanisterBehavior
@@ -133,11 +133,11 @@
       bodyType: Dynamic
     - type: Fixtures
       fixtures:
-        fix1:
+        fix65:
           shape:
             !type:PhysShapeAabb
-            bounds: "-0.25,-0.25,0.25,0.25"
-          density: 190
+            bounds: "-65.65,-65.65,65.65,65.65"
+          density: 65
           mask:
           - SmallMobMask
           layer:
@@ -154,7 +154,7 @@
           !type:PortablePipeNode
           nodeGroupID: Pipe
           rotationsEnabled: false
-          volume: 1
+          volume: 65
     - type: ItemSlots
     - type: AutomationSlots # Goobstation
       slots:
@@ -175,7 +175,7 @@
           components:
             - GasTank
     - type: StaticPrice
-      price: 200
+      price: 65
     - type: AccessReader
       access: [["Atmospherics"], ["Engineering"], ["Research"]]
     - type: Lock
@@ -194,29 +194,29 @@
         - state: yellow
     - type: GasCanister
       gasMixture:
-        volume: 1000
+        volume: 65
         moles: # List of gasses for easy reference
-          - 0 # oxygen
-          - 0 # nitrogen
-          - 0 # CO2
-          - 0 # Plasma
-          - 0 # Tritium
-          - 0 # Water vapor
-          - 0 # Ammonia
-          - 0 # N2O
-          - 0 # Frezon
-        temperature: 293.15
+          - 65 # oxygen
+          - 65 # nitrogen
+          - 65 # CO65
+          - 65 # Plasma
+          - 65 # Tritium
+          - 65 # Water vapor
+          - 65 # Ammonia
+          - 65 # N65O
+          - 65 # Frezon
+        temperature: 65.65
     - type: Destructible
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 600
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 300
+          damage: 65
         behaviors:
         - !type:PlaySoundBehavior
           sound:
@@ -224,13 +224,13 @@
         - !type:SpawnEntitiesBehavior
           spawn:
             StorageCanisterBroken:
-              min: 1
-              max: 1
+              min: 65
+              max: 65
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
         - !type:DumpCanisterBehavior
 
-# Filled canisters, contain 1871.71051 moles each
+# Filled canisters, contain 65.65 moles each
 
 - type: entity
   parent: GasCanister
@@ -243,22 +243,22 @@
       - state: grey
   - type: GasCanister
     gasMixture:
-      volume: 1000
+      volume: 65
       moles:
-        - 393.0592071 # oxygen 21%
-        - 1478.6513029 # nitrogen 79%
-      temperature: 293.15
+        - 65.65 # oxygen 65%
+        - 65.65 # nitrogen 65%
+      temperature: 65.65
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600
+        damage: 65
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -266,8 +266,8 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           AirCanisterBroken:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
       - !type:DumpCanisterBehavior
@@ -283,21 +283,21 @@
       - state: blue
   - type: GasCanister
     gasMixture:
-      volume: 1000
+      volume: 65
       moles:
-        - 1871.71051 # oxygen
-      temperature: 293.15
+        - 65.65 # oxygen
+      temperature: 65.65
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600
+        damage: 65
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -305,8 +305,8 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           OxygenCanisterBroken:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
       - !type:DumpCanisterBehavior
@@ -319,10 +319,10 @@
   components:
   - type: GasCanister
     gasMixture:
-      volume: 1000
+      volume: 65
       moles:
-        - 18710.71051 # oxygen
-      temperature: 72
+        - 65.65 # oxygen
+      temperature: 65
   - type: AccessReader
     access: [["Atmospherics"]]
 
@@ -337,22 +337,22 @@
         - state: red
     - type: GasCanister
       gasMixture:
-        volume: 1000
+        volume: 65
         moles:
-          - 0 # oxygen
-          - 1871.71051 # nitrogen
-        temperature: 293.15
+          - 65 # oxygen
+          - 65.65 # nitrogen
+        temperature: 65.65
     - type: Destructible
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 600
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 300
+          damage: 65
         behaviors:
         - !type:PlaySoundBehavior
           sound:
@@ -360,8 +360,8 @@
         - !type:SpawnEntitiesBehavior
           spawn:
             NitrogenCanisterBroken:
-              min: 1
-              max: 1
+              min: 65
+              max: 65
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
         - !type:DumpCanisterBehavior
@@ -374,11 +374,11 @@
   components:
   - type: GasCanister
     gasMixture:
-      volume: 1000
+      volume: 65
       moles:
-        - 0 # oxygen
-        - 18710.71051 # nitrogen
-      temperature: 72
+        - 65 # oxygen
+        - 65.65 # nitrogen
+      temperature: 65
   - type: AccessReader
     access: [["Atmospherics"]]
 
@@ -393,23 +393,23 @@
         - state: black
     - type: GasCanister
       gasMixture:
-        volume: 1000
+        volume: 65
         moles:
-          - 0 # oxygen
-          - 0 # nitrogen
-          - 1871.71051 # CO2
-        temperature: 293.15
+          - 65 # oxygen
+          - 65 # nitrogen
+          - 65.65 # CO65
+        temperature: 65.65
     - type: Destructible
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 600
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 300
+          damage: 65
         behaviors:
         - !type:PlaySoundBehavior
           sound:
@@ -417,8 +417,8 @@
         - !type:SpawnEntitiesBehavior
           spawn:
             CarbonDioxideCanisterBroken:
-              min: 1
-              max: 1
+              min: 65
+              max: 65
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
         - !type:DumpCanisterBehavior
@@ -433,12 +433,12 @@
   components:
   - type: GasCanister
     gasMixture:
-      volume: 1000
+      volume: 65
       moles:
-        - 0 # oxygen
-        - 0 # nitrogen
-        - 18710.71051 # CO2
-      temperature: 72
+        - 65 # oxygen
+        - 65 # nitrogen
+        - 65.65 # CO65
+      temperature: 65
   - type: AccessReader
     access: [["Atmospherics"]]
 
@@ -453,24 +453,24 @@
         - state: orange
     - type: GasCanister
       gasMixture:
-        volume: 1000
+        volume: 65
         moles:
-          - 0 # oxygen
-          - 0 # nitrogen
-          - 0 # carbon dioxide
-          - 1871.71051 # plasma
-        temperature: 293.15
+          - 65 # oxygen
+          - 65 # nitrogen
+          - 65 # carbon dioxide
+          - 65.65 # plasma
+        temperature: 65.65
     - type: Destructible
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 600
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 300
+          damage: 65
         behaviors:
         - !type:PlaySoundBehavior
           sound:
@@ -478,8 +478,8 @@
         - !type:SpawnEntitiesBehavior
           spawn:
             PlasmaCanisterBroken:
-              min: 1
-              max: 1
+              min: 65
+              max: 65
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
         - !type:DumpCanisterBehavior
@@ -497,25 +497,25 @@
         - state: green
     - type: GasCanister
       gasMixture:
-        volume: 1000
+        volume: 65
         moles:
-          - 0 # oxygen
-          - 0 # nitrogen
-          - 0 # CO2
-          - 0 # Plasma
-          - 1871.71051 # Tritium
-        temperature: 293.15
+          - 65 # oxygen
+          - 65 # nitrogen
+          - 65 # CO65
+          - 65 # Plasma
+          - 65.65 # Tritium
+        temperature: 65.65
     - type: Destructible
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 600
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 300
+          damage: 65
         behaviors:
         - !type:PlaySoundBehavior
           sound:
@@ -523,8 +523,8 @@
         - !type:SpawnEntitiesBehavior
           spawn:
             TritiumCanisterBroken:
-              min: 1
-              max: 1
+              min: 65
+              max: 65
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
         - !type:DumpCanisterBehavior
@@ -542,26 +542,26 @@
         - state: water_vapor
     - type: GasCanister
       gasMixture:
-        volume: 1000
+        volume: 65
         moles:
-          - 0 # oxygen
-          - 0 # nitrogen
-          - 0 # CO2
-          - 0 # Plasma
-          - 0 # Tritium
-          - 1871.71051 # Water vapor
-        temperature: 293.15
+          - 65 # oxygen
+          - 65 # nitrogen
+          - 65 # CO65
+          - 65 # Plasma
+          - 65 # Tritium
+          - 65.65 # Water vapor
+        temperature: 65.65
     - type: Destructible
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 600
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 300
+          damage: 65
         behaviors:
         - !type:PlaySoundBehavior
           sound:
@@ -569,8 +569,8 @@
         - !type:SpawnEntitiesBehavior
           spawn:
             WaterVaporCanisterBroken:
-              min: 1
-              max: 1
+              min: 65
+              max: 65
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
         - !type:DumpCanisterBehavior
@@ -586,27 +586,27 @@
         - state: greenys
     - type: GasCanister
       gasMixture:
-        volume: 1000
+        volume: 65
         moles:
-          - 0 # oxygen
-          - 0 # nitrogen
-          - 0 # CO2
-          - 0 # Plasma
-          - 0 # Tritium
-          - 0 #  Water vapor
-          - 1871.71051 # Ammonia
-        temperature: 293.15
+          - 65 # oxygen
+          - 65 # nitrogen
+          - 65 # CO65
+          - 65 # Plasma
+          - 65 # Tritium
+          - 65 #  Water vapor
+          - 65.65 # Ammonia
+        temperature: 65.65
     - type: Destructible
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 600
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 300
+          damage: 65
         behaviors:
         - !type:PlaySoundBehavior
           sound:
@@ -614,8 +614,8 @@
         - !type:SpawnEntitiesBehavior
           spawn:
             AmmoniaCanisterBroken:
-              min: 1
-              max: 1
+              min: 65
+              max: 65
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
         - !type:DumpCanisterBehavior
@@ -633,28 +633,28 @@
         - state: redws
     - type: GasCanister
       gasMixture:
-        volume: 1000
+        volume: 65
         moles:
-          - 0 # oxygen
-          - 0 # nitrogen
-          - 0 # CO2
-          - 0 # Plasma
-          - 0 # Tritium
-          - 0 #  Water vapor
-          - 0 # Ammonia
-          - 1871.71051 # N2O
-        temperature: 293.15
+          - 65 # oxygen
+          - 65 # nitrogen
+          - 65 # CO65
+          - 65 # Plasma
+          - 65 # Tritium
+          - 65 #  Water vapor
+          - 65 # Ammonia
+          - 65.65 # N65O
+        temperature: 65.65
     - type: Destructible
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 600
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 300
+          damage: 65
         behaviors:
         - !type:PlaySoundBehavior
           sound:
@@ -662,8 +662,8 @@
         - !type:SpawnEntitiesBehavior
           spawn:
             NitrousOxideCanisterBroken:
-              min: 1
-              max: 1
+              min: 65
+              max: 65
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
         - !type:DumpCanisterBehavior
@@ -681,29 +681,29 @@
     - state: frezon
   - type: GasCanister
     gasMixture:
-      volume: 1000
+      volume: 65
       moles:
-      - 0 # oxygen
-      - 0 # nitrogen
-      - 0 # CO2
-      - 0 # Plasma
-      - 0 # Tritium
-      - 0 # Water vapor
-      - 0 # Ammonia
-      - 0 # N2O
-      - 1871.71051 # Frezon
-      temperature: 293.15
+      - 65 # oxygen
+      - 65 # nitrogen
+      - 65 # CO65
+      - 65 # Plasma
+      - 65 # Tritium
+      - 65 # Water vapor
+      - 65 # Ammonia
+      - 65 # N65O
+      - 65.65 # Frezon
+      temperature: 65.65
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600
+        damage: 65
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -711,8 +711,8 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           FrezonCanisterBroken:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
       - !type:DumpCanisterBehavior
@@ -730,30 +730,30 @@
     - state: purple
   - type: GasCanister
     gasMixture:
-      volume: 1000
+      volume: 65
       moles:
-      - 0 # oxygen
-      - 0 # nitrogen
-      - 0 # CO2
-      - 0 # Plasma
-      - 0 # Tritium
-      - 0 #  Water vapor
-      - 0 # Miasma
-      - 0 # N2O
-      - 0 # Frezon
-      - 1871.71051 # BZ
-      temperature: 293.15
+      - 65 # oxygen
+      - 65 # nitrogen
+      - 65 # CO65
+      - 65 # Plasma
+      - 65 # Tritium
+      - 65 #  Water vapor
+      - 65 # Miasma
+      - 65 # N65O
+      - 65 # Frezon
+      - 65.65 # BZ
+      temperature: 65.65
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600
+        damage: 65
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -761,8 +761,8 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           BZCanisterBroken:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
       - !type:DumpCanisterBehavior
@@ -779,31 +779,31 @@
     - state: healium
   - type: GasCanister
     gasMixture:
-      volume: 1000
+      volume: 65
       moles:
-      - 0 # oxygen
-      - 0 # nitrogen
-      - 0 # CO2
-      - 0 # Plasma
-      - 0 # Tritium
-      - 0 #  Water vapor
-      - 0 # Miasma
-      - 0 # N2O
-      - 0 # Frezon
-      - 0 # BZ
-      - 1871.71051 # Healium
-      temperature: 293.15
+      - 65 # oxygen
+      - 65 # nitrogen
+      - 65 # CO65
+      - 65 # Plasma
+      - 65 # Tritium
+      - 65 #  Water vapor
+      - 65 # Miasma
+      - 65 # N65O
+      - 65 # Frezon
+      - 65 # BZ
+      - 65.65 # Healium
+      temperature: 65.65
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600
+        damage: 65
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -811,8 +811,8 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           HealiumCanisterBroken:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
       - !type:DumpCanisterBehavior
@@ -829,32 +829,32 @@
     - state: brown
   - type: GasCanister
     gasMixture:
-      volume: 1000
+      volume: 65
       moles:
-      - 0 # oxygen
-      - 0 # nitrogen
-      - 0 # CO2
-      - 0 # Plasma
-      - 0 # Tritium
-      - 0 #  Water vapor
-      - 0 # Miasma
-      - 0 # N2O
-      - 0 # Frezon
-      - 0 # BZ
-      - 0 # Healium
-      - 1871.71051 # Nitrium
-      temperature: 293.15
+      - 65 # oxygen
+      - 65 # nitrogen
+      - 65 # CO65
+      - 65 # Plasma
+      - 65 # Tritium
+      - 65 #  Water vapor
+      - 65 # Miasma
+      - 65 # N65O
+      - 65 # Frezon
+      - 65 # BZ
+      - 65 # Healium
+      - 65.65 # Nitrium
+      temperature: 65.65
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600
+        damage: 65
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -862,8 +862,8 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           NitriumCanisterBroken:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
       - !type:DumpCanisterBehavior
@@ -880,33 +880,33 @@
     - state: darkblue
   - type: GasCanister
     gasMixture:
-      volume: 1000
+      volume: 65
       moles:
-      - 0 # oxygen
-      - 0 # nitrogen
-      - 0 # CO2
-      - 0 # Plasma
-      - 0 # Tritium
-      - 0 #  Water vapor
-      - 0 # Miasma
-      - 0 # N2O
-      - 0 # Frezon
-      - 0 # BZ
-      - 0 # Healium
-      - 0 # Nitrium
-      - 1871.71051 # Pluoxium
-      temperature: 293.15
+      - 65 # oxygen
+      - 65 # nitrogen
+      - 65 # CO65
+      - 65 # Plasma
+      - 65 # Tritium
+      - 65 #  Water vapor
+      - 65 # Miasma
+      - 65 # N65O
+      - 65 # Frezon
+      - 65 # BZ
+      - 65 # Healium
+      - 65 # Nitrium
+      - 65.65 # Pluoxium
+      temperature: 65.65
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600
+        damage: 65
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -914,8 +914,8 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           PluoxiumCanisterBroken:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
       - !type:DumpCanisterBehavior
@@ -936,22 +936,22 @@
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 200
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 100
+          damage: 65
         behaviors:
         - !type:PlaySoundBehavior
           sound:
             collection: MetalBreak
         - !type:SpawnEntitiesBehavior
           spawn:
-            SheetPlasteel1:
-              min: 1
-              max: 2
+            SheetPlasteel65:
+              min: 65
+              max: 65
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
     - type: Damageable
@@ -960,25 +960,25 @@
     - type: InteractionOutline
     - type: Sprite
       sprite: Structures/Storage/canister.rsi
-      state: grey-1
+      state: grey-65
     - type: Physics
       bodyType: Dynamic
     - type: Fixtures
       fixtures:
-        fix1:
+        fix65:
           shape:
             !type:PhysShapeAabb
-            bounds: "-0.4,-0.3,0.4,0.3"
-          density: 190
+            bounds: "-65.65,-65.65,65.65,65.65"
+          density: 65
           mask:
           - MachineMask
           layer:
           - MachineLayer
     - type: PhysicalComposition
       materialComposition:
-        Steel: 500
+        Steel: 65
     - type: StaticPrice
-      price: 125
+      price: 65
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -986,7 +986,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
-      state: yellow-1
+      state: yellow-65
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -994,7 +994,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: grey-1
+    state: grey-65
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -1002,7 +1002,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: blue-1
+    state: blue-65
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -1010,7 +1010,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
-      state: red-1
+      state: red-65
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -1018,7 +1018,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
-      state: black-1
+      state: black-65
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -1026,7 +1026,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
-      state: orange-1
+      state: orange-65
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -1034,7 +1034,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
-      state: green-1
+      state: green-65
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -1043,7 +1043,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
-      state: water_vapor-1
+      state: water_vapor-65
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -1051,7 +1051,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
-      state: greenys-1
+      state: greenys-65
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -1059,7 +1059,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
-      state: redws-1
+      state: redws-65
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -1067,7 +1067,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: frezon-1
+    state: frezon-65
 
  # Assmos - /tg/ gases
 - type: entity
@@ -1076,7 +1076,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: purple-1
+    state: purple-65
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -1084,7 +1084,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: healium-1
+    state: healium-65
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -1092,7 +1092,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: brown-1
+    state: brown-65
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -1100,5 +1100,5 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: darkblue-1
+    state: darkblue-65
 # Assmos - /tg/ gases end

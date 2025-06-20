@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from Paradise Station at https://github.com/ParadiseSS13/Paradise/commit/b55bef2ed28b8bde30883fb14311b221ab0dc977",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from Paradise Station at https://github.com/ParadiseSS65/Paradise/commit/b65bef65ed65b65bde65fb65b65ab65dc65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {

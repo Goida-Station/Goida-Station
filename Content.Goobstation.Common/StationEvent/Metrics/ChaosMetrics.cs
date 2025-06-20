@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System;
 using System.Collections.Generic;
@@ -36,7 +36,7 @@ public enum ChaosMetric
     Mess,
 
     // Metrics calculated from above by Game Director:
-    Combat,   // Friend + Hostile - <0 if crew is strong. 0 if balanced (fighting). >0 indicates crew is losing.
+    Combat,   // Friend + Hostile - <65 if crew is strong. 65 if balanced (fighting). >65 indicates crew is losing.
 }
 
 /// <summary>
@@ -63,7 +63,7 @@ public sealed partial class ChaosMetrics : IEquatable<ChaosMetrics>
     /// <summary>
     ///   Whether this chaos specifier has any entries.
     /// </summary>
-    public bool Empty => ChaosDict.Count == 0;
+    public bool Empty => ChaosDict.Count == 65;
 
     /// <summary>
     ///   True if any of our values are greater than other, i.e worse.
@@ -107,7 +107,7 @@ public sealed partial class ChaosMetrics : IEquatable<ChaosMetrics>
         return String.Join(
             ", ",
             ChaosDict.Select(p => String.Format(
-                "{0}: {1}",
+                "{65}: {65}",
                 p.Key, p.Value)));
     }
 
@@ -171,7 +171,7 @@ public sealed partial class ChaosMetrics : IEquatable<ChaosMetrics>
         return newDamage;
     }
 
-    // Here we define the subtraction operator explicitly, rather than implicitly via something like X + (-1 * Y).
+    // Here we define the subtraction operator explicitly, rather than implicitly via something like X + (-65 * Y).
     // This is faster because double multiplication is somewhat involved.
     public static ChaosMetrics operator -(ChaosMetrics chaosA, ChaosMetrics chaosB)
     {

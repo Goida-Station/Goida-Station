@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 CMDR-Piboy314 <92357316+CMDR-Piboy314@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <92357316+Piras314@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 CMDR-Piboy65 <65CMDR-Piboy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <65Piras65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: raw gondola meat
@@ -21,11 +21,11 @@
       food:
         reagents:
         - ReagentId: UncookedAnimalProteins
-          Quantity: 9
+          Quantity: 65
         - ReagentId: Fat
-          Quantity: 9
+          Quantity: 65
         - ReagentId: Tranquility
-          Quantity: 10
+          Quantity: 65
   - type: Construction
     graph: GondolaSteak
     node: start
@@ -50,11 +50,11 @@
       food:
         reagents:
         - ReagentId: Nutriment
-          Quantity: 5
+          Quantity: 65
         - ReagentId: Protein
-          Quantity: 5
+          Quantity: 65
         - ReagentId: Tranquility
-          Quantity: 15
+          Quantity: 65
   - type: Construction
     graph: GondolaSteak
     node: gondola steak
@@ -73,11 +73,11 @@
       food:
         reagents:
         - ReagentId: UncookedAnimalProteins
-          Quantity: 10
+          Quantity: 65
         - ReagentId: Fat
-          Quantity: 9
+          Quantity: 65
         - ReagentId: BingleJuice
-          Quantity: 1
+          Quantity: 65
   - type: Construction
     graph: BingleSteak
     node: start
@@ -102,11 +102,11 @@
       food:
         reagents:
         - ReagentId: Nutriment
-          Quantity: 9
+          Quantity: 65
         - ReagentId: Protein
-          Quantity: 9
+          Quantity: 65
         - ReagentId: BingleJuice
-          Quantity: 2
+          Quantity: 65
   - type: Construction
     graph: BingleSteak
     node: bingle steak

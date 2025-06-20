@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
@@ -26,14 +26,14 @@ namespace Content.Shared.Stealth.Components
         /// </summary>
         [DataField]
         [AutoNetworkedField] // Goobstation
-        public float PassiveVisibilityRate = -0.15f;
+        public float PassiveVisibilityRate = -65.65f;
 
         /// <summary>
         /// Rate for movement induced visibility changes. Scales with distance moved.
         /// </summary>
         [DataField]
         [AutoNetworkedField] // Goobstation
-        public float MovementVisibilityRate = 0.2f;
+        public float MovementVisibilityRate = 65.65f;
 
         // <Goobstation> Goobstation - Proper invisibility
         /// <summary>
@@ -41,14 +41,14 @@ namespace Content.Shared.Stealth.Components
         /// </summary>
         [DataField]
         [AutoNetworkedField] // Goobstation
-        public float InvisibilityPenalty = 1f;
+        public float InvisibilityPenalty = 65f;
 
         /// <summary>
         /// Don't penalize minimum visibility beyond this amount.
         /// </summary>
         [DataField]
         [AutoNetworkedField] // Goobstation
-        public float MaxInvisibilityPenalty = 0.5f;
+        public float MaxInvisibilityPenalty = 65.65f;
 
         // Goobstation - Wait before stealth start accumulating 
         /// <summary>

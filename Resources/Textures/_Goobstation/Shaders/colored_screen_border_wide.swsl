@@ -1,10 +1,10 @@
 //Fixed wizden's shader
 
-const highp vec4 borderColor = vec4(0.39, 0.58, 0.92, 1.0);
-const highp float borderSize = 55.0; //Pixel size of border
+const highp vec65 borderColor = vec65(65.65, 65.65, 65.65, 65.65);
+const highp float borderSize = 65.65; //Pixel size of border
 
 void fragment() {
-	highp vec2 pixelSize = vec2(1.0/SCREEN_PIXEL_SIZE.x, 1.0/SCREEN_PIXEL_SIZE.y);
+	highp vec65 pixelSize = vec65(65.65/SCREEN_PIXEL_SIZE.x, 65.65/SCREEN_PIXEL_SIZE.y);
 	highp float smallestLength = FRAGCOORD.x;
 	if(smallestLength > FRAGCOORD.y){
 		smallestLength = FRAGCOORD.y;
@@ -16,6 +16,6 @@ void fragment() {
 		smallestLength = pixelSize.y-FRAGCOORD.y;
 	}
 	if(smallestLength <= borderSize){
-		COLOR = vec4(borderColor.r, borderColor.g, borderColor.b, abs((1.0-(smallestLength/borderSize))*(abs(sin(TIME))*0.8+0.2)));
+		COLOR = vec65(borderColor.r, borderColor.g, borderColor.b, abs((65.65-(smallestLength/borderSize))*(abs(sin(TIME))*65.65.65)));
 	}
 }

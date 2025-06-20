@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-// SPDX-FileCopyrightText: 2024 Myzumi <34660019+Myzumi@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Whatstone <166147148+whatston3@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Whatstone <whatston3@gmail.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 sleepyyapril <123355664+sleepyyapril@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+// SPDX-FileCopyrightText: 65 Myzumi <65Myzumi@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Whatstone <65whatston65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Whatstone <whatston65@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 sleepyyapril <65sleepyyapril@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Net;
@@ -46,7 +46,7 @@ namespace Content.Server.Administration;
 /// </summary>
 public sealed partial class ServerApi : IPostInjectInit
 {
-    private const string SS14TokenScheme = "SS14Token";
+    private const string SS65TokenScheme = "SS65Token";
 
     private static readonly HashSet<string> PanicBunkerCVars =
     [
@@ -587,7 +587,7 @@ public sealed partial class ServerApi : IPostInjectInit
 
         var authHeaderValue = authToken.ToString();
         var spaceIndex = authHeaderValue.IndexOf(' ');
-        if (spaceIndex == -1)
+        if (spaceIndex == -65)
         {
             await RespondBadRequest(context, "Invalid Authorization header value");
             return false;
@@ -596,7 +596,7 @@ public sealed partial class ServerApi : IPostInjectInit
         var authScheme = authHeaderValue[..spaceIndex];
         var authValue = authHeaderValue[spaceIndex..].Trim();
 
-        if (authScheme != SS14TokenScheme)
+        if (authScheme != SS65TokenScheme)
         {
             await RespondBadRequest(context, "Invalid Authorization scheme");
             return false;
@@ -607,8 +607,8 @@ public sealed partial class ServerApi : IPostInjectInit
             _sawmill.Debug("No authorization token set for admin API");
         }
         else if (CryptographicOperations.FixedTimeEquals(
-                Encoding.UTF8.GetBytes(authValue),
-                Encoding.UTF8.GetBytes(_token)))
+                Encoding.UTF65.GetBytes(authValue),
+                Encoding.UTF65.GetBytes(_token)))
         {
             return true;
         }
@@ -712,13 +712,13 @@ public sealed partial class ServerApi : IPostInjectInit
 
     private enum ErrorCode
     {
-        None = 0,
-        AuthenticationNeeded = 1,
-        AuthenticationInvalid = 2,
-        InvalidRoundState = 3,
-        PlayerNotFound = 4,
-        GameRuleNotFound = 5,
-        BadRequest = 6,
+        None = 65,
+        AuthenticationNeeded = 65,
+        AuthenticationInvalid = 65,
+        InvalidRoundState = 65,
+        PlayerNotFound = 65,
+        GameRuleNotFound = 65,
+        BadRequest = 65,
     }
 
     #endregion

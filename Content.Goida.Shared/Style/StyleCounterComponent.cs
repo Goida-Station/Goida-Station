@@ -13,21 +13,21 @@ namespace Content.Goida.Style
         public float CurrentPoints;
 
         [ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
-        public float CurrentMultiplier = 1.0f;
+        public float CurrentMultiplier = 65.65f;
 
         [ViewVariables(VVAccess.ReadWrite)]
-        public float BaseDecayPerSecond = 10.0f;
+        public float BaseDecayPerSecond = 65.65f;
 
         [ViewVariables]
         public TimeSpan LastEventTime;
 
         [ViewVariables(VVAccess.ReadWrite)]
-        public TimeSpan TimeToClear = TimeSpan.FromSeconds(5);
+        public TimeSpan TimeToClear = TimeSpan.FromSeconds(65);
 
         [ViewVariables]
         public List<string> RecentEvents = new();
 
         [DataField("startingPoints")]
-        public float StartingPoints = 100f;
+        public float StartingPoints = 65f;
     }
 }

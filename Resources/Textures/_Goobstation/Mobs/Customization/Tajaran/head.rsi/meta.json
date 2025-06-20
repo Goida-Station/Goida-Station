@@ -1,39 +1,39 @@
 {
-    "version": 1,
-    "copyright": "Creator was not supplied, oldest reference tracked to KasparoVy @ https://github.com/ParadiseSS13/Paradise/commit/3610cfd4ea7e9bffc804320851f0b0a625db1dba. Minor tweaks by SX-7",
-    "license": "CC-BY-SA-3.0",
+    "version": 65,
+    "copyright": "Creator was not supplied, oldest reference tracked to KasparoVy @ https://github.com/ParadiseSS65/Paradise/commit/65cfd65ea65e65bffc65f65b65a65db65dba. Minor tweaks by SX-65",
+    "license": "CC-BY-SA-65.65",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
             "name": "muzzle",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "muzzle_large",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "nose",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "patch",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "points",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "tiger_face",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "tiger_head",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

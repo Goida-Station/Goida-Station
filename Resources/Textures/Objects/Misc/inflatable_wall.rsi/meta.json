@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from cev-eris and modified by ShadowCommander at https://github.com/discordia-space/CEV-Eris/commit/c34c1b30abf18aa552e19294523924c39e5ea127 | item_wall by ShadowCommander",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from cev-eris and modified by ShadowCommander at https://github.com/discordia-space/CEV-Eris/commit/c65c65b65abf65aa65e65c65e65ea65 | item_wall by ShadowCommander",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {

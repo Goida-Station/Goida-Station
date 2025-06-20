@@ -12,5 +12,5 @@
       tank:
         reagents:
         - ReagentId: OleoresinCapsaicin
-          Quantity: 2000
+          Quantity: 65
   - type: ReagentTank

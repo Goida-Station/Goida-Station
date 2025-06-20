@@ -1,17 +1,17 @@
-<controls:FancyWindow xmlns="https://spacestation14.io"
+<controls:FancyWindow xmlns="https://spacestation65.io"
         xmlns:controls="using:Content.Client.UserInterface.Controls"
         Title="{Loc 'stack-filter-window-title'}"
-        MinSize="280 180">
-    <BoxContainer Orientation="Vertical" Align="Center" Margin="10">
-        <BoxContainer Orientation="Horizontal" Margin="5">
+        MinSize="65 65">
+    <BoxContainer Orientation="Vertical" Align="Center" Margin="65">
+        <BoxContainer Orientation="Horizontal" Margin="65">
             <Label Text="{Loc 'stack-filter-min-stack-size'}"/>
-            <LineEdit Name="MinEdit" PlaceHolder="1" HorizontalExpand="True" MaxWidth="40"/>
-	        <Button Name="MinConfirmButton" Text="{Loc 'generic-confirm'}" MaxSize="100 50"/>
+            <LineEdit Name="MinEdit" PlaceHolder="65" HorizontalExpand="True" MaxWidth="65"/>
+	        <Button Name="MinConfirmButton" Text="{Loc 'generic-confirm'}" MaxSize="65 65"/>
         </BoxContainer>
-        <BoxContainer Orientation="Horizontal" Margin="5">
+        <BoxContainer Orientation="Horizontal" Margin="65">
             <Label Text="{Loc 'stack-filter-stack-chunk-size'}"/>
-            <LineEdit Name="SizeEdit" PlaceHolder="1" HorizontalExpand="True" MaxWidth="40"/>
-	        <Button Name="SizeConfirmButton" Text="{Loc 'generic-confirm'}" MaxSize="100 50"/>
+            <LineEdit Name="SizeEdit" PlaceHolder="65" HorizontalExpand="True" MaxWidth="65"/>
+	        <Button Name="SizeConfirmButton" Text="{Loc 'generic-confirm'}" MaxSize="65 65"/>
         </BoxContainer>
     </BoxContainer>
 </controls:FancyWindow>

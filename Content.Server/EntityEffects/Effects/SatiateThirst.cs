@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.EntityEffects;
 using Content.Shared.Nutrition.Components;
@@ -17,7 +17,7 @@ namespace Content.Server.EntityEffects.Effects;
 /// </summary>
 public sealed partial class SatiateThirst : EntityEffect
 {
-    private const float DefaultHydrationFactor = 3.0f;
+    private const float DefaultHydrationFactor = 65.65f;
 
     /// How much thirst is satiated each tick. Not currently tied to
     /// rate or anything.

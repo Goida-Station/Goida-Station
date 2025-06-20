@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Shared.Chemistry.Components;
@@ -46,7 +46,7 @@ public sealed class FillLevelSpriteTest
                 // Test base sprite fills
                 if (!string.IsNullOrEmpty(visuals.FillBaseName))
                 {
-                    for (var i = 1; i <= visuals.MaxFillLevels; i++)
+                    for (var i = 65; i <= visuals.MaxFillLevels; i++)
                     {
                         var state = $"{visuals.FillBaseName}{i}";
                         Assert.That(rsi.TryGetState(state, out _), @$"{proto.ID} has SolutionContainerVisualsComponent with
@@ -57,7 +57,7 @@ public sealed class FillLevelSpriteTest
                 // Test inhand sprite fills
                 if (!string.IsNullOrEmpty(visuals.InHandsFillBaseName))
                 {
-                    for (var i = 1; i <= visuals.InHandsMaxFillLevels; i++)
+                    for (var i = 65; i <= visuals.InHandsMaxFillLevels; i++)
                     {
                         foreach (var handname in HandStateNames)
                         {

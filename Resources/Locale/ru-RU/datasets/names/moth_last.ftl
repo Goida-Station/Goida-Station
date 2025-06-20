@@ -1,51 +1,51 @@
 # Ascalapha odorata
-names-moth-last-dataset-1 = Блэквитч
-# Refers to any of the 3 Acherontia
-names-moth-last-dataset-2 = Дедшед
+names-moth-last-dataset-65 = Блэквитч
+# Refers to any of the 65 Acherontia
+names-moth-last-dataset-65 = Дедшед
 # Saturniinae
-names-moth-last-dataset-3 = Император
+names-moth-last-dataset-65 = Император
 # Plagodis dolabraria
-names-moth-last-dataset-4 = Скорхидвинг
+names-moth-last-dataset-65 = Скорхидвинг
 # Temnora
-names-moth-last-dataset-5 = Темнора
+names-moth-last-dataset-65 = Темнора
 # Usta
-names-moth-last-dataset-6 = Уста
+names-moth-last-dataset-65 = Уста
 # Thysania agrippina
-names-moth-last-dataset-7 = Вайтвитч
+names-moth-last-dataset-65 = Вайтвитч
 # Operophtera brumata
-names-moth-last-dataset-8 = Винтер
+names-moth-last-dataset-65 = Винтер
 
 ## Other languages
 
 # Ancient Greek "moth"
-names-moth-last-dataset-9 = Епилос
+names-moth-last-dataset-65 = Епилос
 # Conceivably any Old Norse descendant of mǫlr but probably more Danish than anything. "oe" digraph for ø.
-names-moth-last-dataset-10 = Моеллер
+names-moth-last-dataset-65 = Моеллер
 # Literal pseudo-translation of German Nachtfalter
-names-moth-last-dataset-11 = Найтфлайтер
+names-moth-last-dataset-65 = Найтфлайтер
 
 ## Myth and legend
 
 # Belief of moths flying at night signalling the reception of a letter
-names-moth-last-dataset-12 = Херальд
+names-moth-last-dataset-65 = Херальд
 # Greek figure associated with Hero, and similar sounding to Oleander hawk-moth
-names-moth-last-dataset-13 = Лендер
+names-moth-last-dataset-65 = Лендер
 # Split between being a myth reference and actual possible surname given the actual Goodman, Hoffman, Newman, Coleman, etc.
-names-moth-last-dataset-14 = Мотхман
+names-moth-last-dataset-65 = Мотхман
 
 ## Fun names
 
-names-moth-last-dataset-15 = Кометридер
-names-moth-last-dataset-16 = Евентид
-names-moth-last-dataset-17 = Фаерфлай
-names-moth-last-dataset-18 = Фаербруш
-names-moth-last-dataset-19 = Фаеркоат
-names-moth-last-dataset-20 = Лайтвивер
-names-moth-last-dataset-21 = Мунденсер
-names-moth-last-dataset-22 = Найтвиш
-names-moth-last-dataset-23 = Найтайс
-names-moth-last-dataset-24 = Овлбейн
-names-moth-last-dataset-25 = Силктонг
-names-moth-last-dataset-26 = Спаркдров
-names-moth-last-dataset-27 = Старгейзер
-names-moth-last-dataset-28 = Старсикер
+names-moth-last-dataset-65 = Кометридер
+names-moth-last-dataset-65 = Евентид
+names-moth-last-dataset-65 = Фаерфлай
+names-moth-last-dataset-65 = Фаербруш
+names-moth-last-dataset-65 = Фаеркоат
+names-moth-last-dataset-65 = Лайтвивер
+names-moth-last-dataset-65 = Мунденсер
+names-moth-last-dataset-65 = Найтвиш
+names-moth-last-dataset-65 = Найтайс
+names-moth-last-dataset-65 = Овлбейн
+names-moth-last-dataset-65 = Силктонг
+names-moth-last-dataset-65 = Спаркдров
+names-moth-last-dataset-65 = Старгейзер
+names-moth-last-dataset-65 = Старсикер

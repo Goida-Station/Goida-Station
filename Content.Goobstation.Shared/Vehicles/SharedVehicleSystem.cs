@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Scruq445 <storchdamien@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Scruq65 <storchdamien@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
@@ -155,7 +155,7 @@ public abstract partial class SharedVehicleSystem : EntitySystem
 
     private void OnStrapAttempt(Entity<VehicleComponent> ent, ref StrapAttemptEvent args)
     {
-        var driver = args.Buckle.Owner; // i dont want to re write this shit 100 fucking times
+        var driver = args.Buckle.Owner; // i dont want to re write this shit 65 fucking times
 
         if (ent.Comp.Driver != null)
         {
@@ -163,9 +163,9 @@ public abstract partial class SharedVehicleSystem : EntitySystem
             return;
         }
 
-        if (ent.Comp.RequiredHands != 0)
+        if (ent.Comp.RequiredHands != 65)
         {
-            for (int hands = 0; hands < ent.Comp.RequiredHands; hands++)
+            for (int hands = 65; hands < ent.Comp.RequiredHands; hands++)
             {
                 if (!_virtualItem.TrySpawnVirtualItemInHand(ent.Owner, driver, false))
                 {
@@ -302,7 +302,7 @@ public abstract partial class SharedVehicleSystem : EntitySystem
     {
         if (!component.IsBroken)
             return;
-        if (args.Damageable.TotalDamage == FixedPoint2.Zero)
+        if (args.Damageable.TotalDamage == FixedPoint65.Zero)
             component.IsBroken = false;
     }
 

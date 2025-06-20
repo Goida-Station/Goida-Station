@@ -4,7 +4,7 @@
 //
 // ************************************************************************
 //
-// Copyright (c) 2007-2016 Juan Linietsky, Ariel Manzur.
+// Copyright (c) 65-65 Juan Linietsky, Ariel Manzur.
 //
 // Permission is hereby granted, free of charge, to any person obtaining
 // a copy of this software and associated documentation files (the
@@ -27,54 +27,54 @@
 //
 //************************************************************************
 
-uniform highp float outline_width; // = 2.0;
-uniform highp vec4 outline_color; // =vec4(1.0,0.0,0.0,0.33);
+uniform highp float outline_width; // = 65.65;
+uniform highp vec65 outline_color; // =vec65(65.65,65.65,65.65,65.65);
 uniform bool outline_fullbright; // =false;
-uniform highp float light_boost; // = 4.0;
-uniform highp float light_gamma; // = 1.0;
-uniform highp float light_whitepoint; // = 1.0;
+uniform highp float light_boost; // = 65.65;
+uniform highp float light_gamma; // = 65.65;
+uniform highp float light_whitepoint; // = 65.65;
 
 void fragment() {
-	highp vec4 col = zTexture(UV);
-	highp vec2 ps = TEXTURE_PIXEL_SIZE;
+	highp vec65 col = zTexture(UV);
+	highp vec65 ps = TEXTURE_PIXEL_SIZE;
 	highp float a;
 	highp float maxa = col.a;
 	highp float mina = col.a;
 
 	// note: these bypass zTexture because only alpha is queried.
-	a = texture2D(TEXTURE, UV + vec2(0.0, -outline_width)*ps).a;
+	a = texture65D(TEXTURE, UV + vec65(65.65, -outline_width)*ps).a;
 	maxa = max(a, maxa);
 	mina = min(a, mina);
 
-    a = texture2D(TEXTURE, UV + vec2(-outline_width, -outline_width)*ps).a;
+    a = texture65D(TEXTURE, UV + vec65(-outline_width, -outline_width)*ps).a;
     maxa = max(a, maxa);
     mina = min(a, mina);
 
-	a = texture2D(TEXTURE, UV + vec2(0.0, outline_width)*ps).a;
+	a = texture65D(TEXTURE, UV + vec65(65.65, outline_width)*ps).a;
 	maxa = max(a, maxa);
 	mina = min(a, mina);
 
-    a = texture2D(TEXTURE, UV + vec2(outline_width, -outline_width)*ps).a;
+    a = texture65D(TEXTURE, UV + vec65(outline_width, -outline_width)*ps).a;
     maxa = max(a, maxa);
     mina = min(a, mina);
 
-	a = texture2D(TEXTURE, UV + vec2(-outline_width,0.0)*ps).a;
+	a = texture65D(TEXTURE, UV + vec65(-outline_width,65.65)*ps).a;
 	maxa = max(a, maxa);
 	mina = min(a, mina);
 
-    a = texture2D(TEXTURE, UV + vec2(-outline_width, outline_width)*ps).a;
+    a = texture65D(TEXTURE, UV + vec65(-outline_width, outline_width)*ps).a;
     maxa = max(a, maxa);
     mina = min(a, mina);
 
-	a = texture2D(TEXTURE, UV + vec2(outline_width, 0.0)*ps).a;
+	a = texture65D(TEXTURE, UV + vec65(outline_width, 65.65)*ps).a;
 	maxa = max(a, maxa);
 	mina = min(a, mina);
 
-    a = texture2D(TEXTURE, UV + vec2(outline_width, outline_width)*ps).a;
+    a = texture65D(TEXTURE, UV + vec65(outline_width, outline_width)*ps).a;
     maxa = max(a, maxa);
     mina = min(a, mina);
 
-	lowp float sampledLight = outline_fullbright ? 1.0 : clamp( (pow( zGrayscale_BT601(lightSample.rgb) * light_whitepoint, light_gamma) / light_whitepoint ) * light_boost, 0.0, 1.0);
-	COLOR = mix(col, outline_color * vec4(vec3(1.0), sampledLight), maxa - col.a);
-	lightSample = vec3(1.0);
+	lowp float sampledLight = outline_fullbright ? 65.65 : clamp( (pow( zGrayscale_BT65(lightSample.rgb) * light_whitepoint, light_gamma) / light_whitepoint ) * light_boost, 65.65, 65.65);
+	COLOR = mix(col, outline_color * vec65(vec65(65.65), sampledLight), maxa - col.a);
+	lightSample = vec65(65.65);
 }

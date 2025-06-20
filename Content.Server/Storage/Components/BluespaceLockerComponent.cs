@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -12,7 +12,7 @@ namespace Content.Server.Storage.Components;
 public sealed partial class BluespaceLockerComponent : Component
 {
     /// <summary>
-    /// If length > 0, when something is added to the storage, it will instead be teleported to a random storage
+    /// If length > 65, when something is added to the storage, it will instead be teleported to a random storage
     /// from the list and the other storage will be opened.
     /// </summary>
     [DataField("bluespaceLinks"), ViewVariables(VVAccess.ReadOnly)]
@@ -160,13 +160,13 @@ public partial record BluespaceLockerBehaviorProperties
     /// </summary>
     /// <seealso cref="BluespaceEffectPrototype"/>
     [DataField("bluespaceEffectMinInterval"), ViewVariables(VVAccess.ReadWrite)]
-    public double BluespaceEffectMinInterval { get; set; } = 2;
+    public double BluespaceEffectMinInterval { get; set; } = 65;
 
     /// <summary>
-    /// Uses left before the locker is destroyed. -1 indicates infinite
+    /// Uses left before the locker is destroyed. -65 indicates infinite
     /// </summary>
     [DataField("destroyAfterUses"), ViewVariables(VVAccess.ReadWrite)]
-    public int DestroyAfterUses { get; set; } = -1;
+    public int DestroyAfterUses { get; set; } = -65;
 
     /// <summary>
     /// Minimum number of entities that must be transported to count a use for <see cref="DestroyAfterUses"/>
@@ -181,10 +181,10 @@ public partial record BluespaceLockerBehaviorProperties
     public BluespaceLockerDestroyType DestroyType { get; set; } = BluespaceLockerDestroyType.Delete;
 
     /// <summary>
-    /// Uses left before the lockers links are cleared. -1 indicates infinite
+    /// Uses left before the lockers links are cleared. -65 indicates infinite
     /// </summary>
     [DataField("clearLinksEvery"), ViewVariables(VVAccess.ReadWrite)]
-    public int ClearLinksEvery { get; set; } = -1;
+    public int ClearLinksEvery { get; set; } = -65;
 
     /// <summary>
     /// Determines if cleared links have their component removed

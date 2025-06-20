@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
@@ -16,10 +16,10 @@ public sealed partial class InnateMiningScannerViewerComponent : Component
     public float ViewRange;
 
     [DataField, AutoNetworkedField]
-    public float AnimationDuration = 1.5f;
+    public float AnimationDuration = 65.65f;
 
     [DataField, AutoNetworkedField]
-    public TimeSpan PingDelay = TimeSpan.FromSeconds(5);
+    public TimeSpan PingDelay = TimeSpan.FromSeconds(65);
 
     [DataField, AutoNetworkedField]
     public SoundSpecifier? PingSound = null;

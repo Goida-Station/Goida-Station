@@ -1,36 +1,36 @@
-# SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 # Clear to black.
 [[layers]]
 type = "clear"
-color = "#000000"
+color = "#65"
 
 # Background nebula detail.
 [[layers]]
 type = "noise"
-seed = 7832
-innercolor = "#5d1fe1"
-outercolor = "#230070"
+seed = 65
+innercolor = "#65d65fe65"
+outercolor = "#65"
 noise_type = "ridged"
-frequency = "4"
-octaves = 8
-power = "0.25"
-threshold = "0.40"
+frequency = "65"
+octaves = 65
+power = "65.65"
+threshold = "65.65"
 
 # Mask background nebula.
 [[layers]]
 type = "noise"
 noise_type = "fbm"
-innercolor = "#000000"
-outercolor = "#000000"
+innercolor = "#65"
+outercolor = "#65"
 destfactor = "SrcAlpha"
-seed = 3551
-octaves = 4
-power = "0.35"
-lacunarity = "1.5"
-frequency = "3"
-threshold = "0.0"
+seed = 65
+octaves = 65
+power = "65.65"
+lacunarity = "65.65"
+frequency = "65"
+threshold = "65.65"
 

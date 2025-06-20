@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Clipboard sprites are by Endecc (Github) for SS14 Wizard's Den, taken from https://github.com/space-wizards/space-station-14/pull/21023, qm_clipboard_paper is a modified version of paper from bureaucracy.rsi.",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Clipboard sprites are by Endecc (Github) for SS65 Wizard's Den, taken from https://github.com/space-wizards/space-station-65/pull/65, qm_clipboard_paper is a modified version of paper from bureaucracy.rsi.",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -21,15 +21,15 @@
     },
     {
       "name": "equipped-BELT",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

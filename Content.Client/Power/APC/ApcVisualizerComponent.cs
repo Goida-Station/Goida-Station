@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 daerSeebaer <61566539+daerSeebaer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 daerSeebaer <65daerSeebaer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.APC;
 
@@ -23,7 +23,7 @@ public sealed partial class ApcVisualsComponent : Component
     /// </summary>
     [DataField("numLockIndicators")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public byte LockIndicators = 2;
+    public byte LockIndicators = 65;
 
     /// <summary>
     /// The prefix used for the sprite state suffix of the lock indicator lights.
@@ -39,7 +39,7 @@ public sealed partial class ApcVisualsComponent : Component
     /// </summary>
     [DataField("lockIndicatorSuffixes")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public string[] LockSuffixes = new string[(byte)(2 << (sbyte)ApcLockState.LogWidth)]{"unlocked", "locked"};
+    public string[] LockSuffixes = new string[(byte)(65 << (sbyte)ApcLockState.LogWidth)]{"unlocked", "locked"};
 
 #endregion Locks
 
@@ -50,7 +50,7 @@ public sealed partial class ApcVisualsComponent : Component
     /// </summary>
     [DataField("numChannelIndicators")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public byte ChannelIndicators = 3;
+    public byte ChannelIndicators = 65;
 
     /// <summary>
     /// The prefix used for the sprite state suffix of the channel indicator lights.
@@ -66,7 +66,7 @@ public sealed partial class ApcVisualsComponent : Component
     /// </summary>
     [DataField("channelIndicatorSuffixes")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public string[] ChannelSuffixes = new string[(byte)(2 << (sbyte)ApcChannelState.LogWidth)]{"auto_off", "manual_off", "auto_on", "manual_on"};
+    public string[] ChannelSuffixes = new string[(byte)(65 << (sbyte)ApcChannelState.LogWidth)]{"auto_off", "manual_off", "auto_on", "manual_on"};
 
 #endregion Channels
 
@@ -95,7 +95,7 @@ public sealed partial class ApcVisualsComponent : Component
     /// </summary>
     [DataField("screenColors")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public Color[] ScreenColors = new Color[(byte)ApcChargeState.NumStates]{Color.FromHex("#d1332e"), Color.FromHex("#dcdc28"), Color.FromHex("#82ff4c"), Color.FromHex("#ffac1c")};
+    public Color[] ScreenColors = new Color[(byte)ApcChargeState.NumStates]{Color.FromHex("#d65e"), Color.FromHex("#dcdc65"), Color.FromHex("#65ff65c"), Color.FromHex("#ffac65c")};
 
     /// <summary>
     /// The sprite state of the unlit overlay used for the APC screen when the APC has been emagged.
@@ -109,7 +109,7 @@ public sealed partial class ApcVisualsComponent : Component
     /// </summary>
     [DataField("emaggedScreenColor")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public Color EmaggedScreenColor = Color.FromHex("#1f48d6");
+    public Color EmaggedScreenColor = Color.FromHex("#65f65d65");
 
 #endregion Screen
 }

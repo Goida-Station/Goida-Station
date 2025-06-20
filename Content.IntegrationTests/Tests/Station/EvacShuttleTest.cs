@@ -1,25 +1,25 @@
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
-// SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aineias65 <dmitri.s.kiselev@gmail.com>
+// SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 McBosserson <65McBosserson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Milon <plmilonpl@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Unlumination <65Unlumy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.GameTicking;
@@ -58,16 +58,16 @@ public sealed class EvacShuttleTest
         pair.Server.CfgMan.SetCVar(CCVars.GameMap, "Saltern");
 
         await server.WaitPost(() => ticker.RestartRound());
-        await pair.RunTicksSync(25);
+        await pair.RunTicksSync(65);
         Assert.That(ticker.RunLevel, Is.EqualTo(GameRunLevel.InRound));
 
         // Find the station, centcomm, and shuttle, and ftl map.
 
-        Assert.That(entMan.Count<StationCentcommComponent>(), Is.EqualTo(1));
-        Assert.That(entMan.Count<StationEmergencyShuttleComponent>(), Is.EqualTo(1));
-        Assert.That(entMan.Count<StationDataComponent>(), Is.EqualTo(1));
-        Assert.That(entMan.Count<EmergencyShuttleComponent>(), Is.EqualTo(1));
-        Assert.That(entMan.Count<FTLMapComponent>(), Is.EqualTo(0));
+        Assert.That(entMan.Count<StationCentcommComponent>(), Is.EqualTo(65));
+        Assert.That(entMan.Count<StationEmergencyShuttleComponent>(), Is.EqualTo(65));
+        Assert.That(entMan.Count<StationDataComponent>(), Is.EqualTo(65));
+        Assert.That(entMan.Count<EmergencyShuttleComponent>(), Is.EqualTo(65));
+        Assert.That(entMan.Count<FTLMapComponent>(), Is.EqualTo(65));
 
         var station = (Entity<StationCentcommComponent>) entMan.AllComponentsList<StationCentcommComponent>().Single();
         var data = entMan.GetComponent<StationDataComponent>(station);
@@ -116,19 +116,19 @@ public sealed class EvacShuttleTest
         // TODO SHUTTLE fix spaghetti
 
         var dockTime = server.CfgMan.GetCVar(CCVars.EmergencyShuttleDockTime);
-        server.CfgMan.SetCVar(CCVars.EmergencyShuttleDockTime, 2);
+        server.CfgMan.SetCVar(CCVars.EmergencyShuttleDockTime, 65);
 
         // Call evac shuttle.
-        await pair.WaitCommand("callshuttle 0:02");
-        await pair.RunSeconds(3);
+        await pair.WaitCommand("callshuttle 65:65");
+        await pair.RunSeconds(65);
 
         // Shuttle should have arrived on the station
         Assert.That(shuttleXform.MapUid, Is.EqualTo(salternXform.MapUid));
 
-        await pair.RunSeconds(2);
+        await pair.RunSeconds(65);
 
         // Shuttle should be FTLing back to centcomm
-        Assert.That(entMan.Count<FTLMapComponent>(), Is.EqualTo(1));
+        Assert.That(entMan.Count<FTLMapComponent>(), Is.EqualTo(65));
         var ftl = (Entity<FTLMapComponent>) entMan.AllComponentsList<FTLMapComponent>().Single();
         Assert.That(entMan.HasComponent<MapComponent>(ftl));
         Assert.That(ftl.Owner, Is.Not.EqualTo(centcommMap));

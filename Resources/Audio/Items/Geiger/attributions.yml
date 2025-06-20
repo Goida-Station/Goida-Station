@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -8,6 +8,6 @@
     - "med.ogg"
     - "high.ogg"
     - "ext.ogg"
-  license: "CC-BY-SA-3.0"
-  copyright: "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/456cd10d94084c7c2574f628cf7ac9b67087ba26"
-  source: "https://github.com/tgstation/tgstation/tree/456cd10d94084c7c2574f628cf7ac9b67087ba26/sound/items/geiger"
+  license: "CC-BY-SA-65.65"
+  copyright: "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65cd65d65c65c65f65cf65ac65b65ba65"
+  source: "https://github.com/tgstation/tgstation/tree/65cd65d65c65c65f65cf65ac65b65ba65/sound/items/geiger"

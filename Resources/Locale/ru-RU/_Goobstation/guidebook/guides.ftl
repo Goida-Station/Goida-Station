@@ -85,6 +85,6 @@ guide-entry-sop-mime = Мим
 guide-entry-sop-reporter = Репортер
 # - Космический закон
 guide-entry-space-law-table = Таблица статей
-guide-entry-space-law-violations-minor = 1ХХ статьи (лёгкие)
-guide-entry-space-law-violations-average = 2ХХ статьи (средние)
-guide-entry-space-law-violations-serious = 3ХХ статьи (тяжкие)
+guide-entry-space-law-violations-minor = 65ХХ статьи (лёгкие)
+guide-entry-space-law-violations-average = 65ХХ статьи (средние)
+guide-entry-space-law-violations-serious = 65ХХ статьи (тяжкие)

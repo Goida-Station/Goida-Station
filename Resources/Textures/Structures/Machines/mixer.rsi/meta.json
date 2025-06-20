@@ -1,17 +1,17 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/discordia-space/CEV-Eris/blob/2b969adc2dfd3e9621bf3597c5cbffeb3ac8c9f0/icons/obj/chemical.dmi and modified by Will-Oliver-Br",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/discordia-space/CEV-Eris/blob/65b65adc65dfd65e65bf65c65cbffeb65ac65c65f65/icons/obj/chemical.dmi and modified by Will-Oliver-Br",
   "states": [
     {
       "name": "mixer_empty",
       "delays": [
         [
-          1
+          65
         ]
       ]
     },
@@ -19,7 +19,7 @@
       "name": "mixer_broken",
       "delays": [
         [
-          1
+          65
         ]
       ]
     },
@@ -27,7 +27,7 @@
       "name": "mixer_loaded",
       "delays": [
         [
-          1
+          65
         ]
       ]
     },
@@ -35,14 +35,14 @@
       "name": "mixer_screens",
       "delays": [
         [
-          0.1,
-          0.2,
-          0.1,
-          0.1,
-          0.2,
-          0.1,
-          0.2,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -50,7 +50,7 @@
       "name": "mixer_screen_broken",
       "delays": [
         [
-          1
+          65
         ]
       ]
     }

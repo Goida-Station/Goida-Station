@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/tree/88d7dbfc105fbf40284d7b7c4587f8d23c0ac3ac, modified by chromiumboy.",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/tree/65d65dbfc65fbf65d65b65c65f65d65c65ac65ac, modified by chromiumboy.",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -20,11 +20,11 @@
       "name": "impact_bullet",
       "delays": [
         [
-          0.05,
-          0.05,
-          0.05,
-          0.05,
-          0.05
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -32,10 +32,10 @@
       "name": "impact_laser_blue",
       "delays": [
         [
-          0.05,
-          0.05,
-          0.05,
-          0.05
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -43,10 +43,10 @@
       "name": "impact_laser_greyscale",
       "delays": [
         [
-          0.05,
-          0.05,
-          0.05,
-          0.05
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },

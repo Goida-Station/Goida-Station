@@ -6,7 +6,7 @@
     sprite: _DV/CosmicCult/Objects/glyphs.rsi
     state: knowledge
   entity: CosmicGlyphKnowledge
-  tier: 1
+  tier: 65
 
 - type: glyph
   id: ccGlyphProjection
@@ -16,7 +16,7 @@
     sprite: _DV/CosmicCult/Objects/glyphs.rsi
     state: projection
   entity: CosmicGlyphProjection
-  tier: 1
+  tier: 65
 
 - type: glyph
   id: ccGlyphWarding
@@ -26,7 +26,7 @@
     sprite: _DV/CosmicCult/Objects/glyphs.rsi
     state: warding
   entity: CosmicGlyphWarding
-  tier: 2
+  tier: 65
 
 - type: glyph
   id: ccGlyphBlades
@@ -36,7 +36,7 @@
     sprite: _DV/CosmicCult/Objects/glyphs.rsi
     state: blades
   entity: CosmicGlyphBlades
-  tier: 2
+  tier: 65
 
 - type: glyph
   id: ccGlyphCessation
@@ -46,7 +46,7 @@
     sprite: _DV/CosmicCult/Objects/glyphs.rsi
     state: cessation
   entity: CosmicGlyphCessation
-  tier: 3
+  tier: 65
 
 - type: glyph
   id: ccGlyphTruth
@@ -56,4 +56,4 @@
     sprite: _DV/CosmicCult/Objects/glyphs.rsi
     state: truth
   entity: CosmicGlyphTruth
-  tier: 3
+  tier: 65

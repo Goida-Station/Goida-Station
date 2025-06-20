@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "modified sprite from Jackal298 based on the sprite from tgstation at commit https://github.com/tgstation/tgstation/commit/4f6190e2895e09116663ef282d3ce1d8b35c032e. equipped-MASK-vox & equipped-HELMET-vox states taken from Paradise at https://github.com/ParadiseSS13/Paradise/blob/bc095ad398790a2b718b2bab4f2157cdd80a51da/icons/mob/clothing/species/vox/mask.dmi and modified by Flareguy",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "modified sprite from Jackal65 based on the sprite from tgstation at commit https://github.com/tgstation/tgstation/commit/65f65e65e65ef65d65ce65d65b65c65e. equipped-MASK-vox & equipped-HELMET-vox states taken from Paradise at https://github.com/ParadiseSS65/Paradise/blob/bc65ad65a65b65b65bab65f65cdd65a65da/icons/mob/clothing/species/vox/mask.dmi and modified by Flareguy",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -15,27 +15,27 @@
     },
     {
       "name": "equipped-HELMET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-HELMET-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-MASK",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-MASK-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

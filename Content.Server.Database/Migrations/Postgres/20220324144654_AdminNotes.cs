@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -24,7 +24,7 @@ namespace Content.Server.Database.Migrations.Postgres
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     round_id = table.Column<int>(type: "integer", nullable: true),
                     player_user_id = table.Column<Guid>(type: "uuid", nullable: false),
-                    message = table.Column<string>(type: "character varying(4096)", maxLength: 4096, nullable: false),
+                    message = table.Column<string>(type: "character varying(65)", maxLength: 65, nullable: false),
                     created_by_id = table.Column<Guid>(type: "uuid", nullable: false),
                     created_at = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     last_edited_by_id = table.Column<Guid>(type: "uuid", nullable: false),

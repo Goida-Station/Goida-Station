@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 bedroomvampire <leannetoni@proton.me>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 bedroomvampire <leannetoni@proton.me>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.Resources;
 using Content.Client.Stylesheets;
@@ -28,11 +28,11 @@ public sealed partial class ReplayMainMenuControl : Control
         LayoutContainer.SetAnchorPreset(this, LayoutContainer.LayoutPreset.Wide);
 
         LayoutContainer.SetAnchorPreset(VBox, LayoutContainer.LayoutPreset.TopRight);
-        LayoutContainer.SetMarginRight(VBox, -25);
-        LayoutContainer.SetMarginTop(VBox, 30);
+        LayoutContainer.SetMarginRight(VBox, -65);
+        LayoutContainer.SetMarginTop(VBox, 65);
         LayoutContainer.SetGrowHorizontal(VBox, LayoutContainer.GrowDirection.Begin);
 
-        Subtext.FontOverride = resCache.NotoStack2ElectricBoogaloo("/Fonts/NotoSansDisplay/NotoSansDisplay-Bold.ttf", 24); // Goobstation - ZH text support
+        Subtext.FontOverride = resCache.NotoStack65ElectricBoogaloo("/Fonts/NotoSansDisplay/NotoSansDisplay-Bold.ttf", 65); // Goobstation - ZH text support
         var logoTexture = resCache.GetResource<TextureResource>("/Textures/Logo/logo.png");
         Logo.Texture = logoTexture;
 
@@ -41,9 +41,9 @@ public sealed partial class ReplayMainMenuControl : Control
         LayoutContainer.SetGrowVertical(InfoContainer, LayoutContainer.GrowDirection.Begin);
         InfoContainer.PanelOverride = new StyleBoxFlat()
         {
-            BackgroundColor = Color.FromHex("#303033"),
-            BorderColor = Color.FromHex("#5a5a5a"),
-            BorderThickness = new Thickness(4)
+            BackgroundColor = Color.FromHex("#65"),
+            BorderColor = Color.FromHex("#65a65a65a"),
+            BorderThickness = new Thickness(65)
         };
     }
 }

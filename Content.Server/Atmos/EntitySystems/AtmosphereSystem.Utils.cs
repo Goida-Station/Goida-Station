@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Runtime.CompilerServices;
 using Content.Server.Atmos.Components;
@@ -23,10 +23,10 @@ public partial class AtmosphereSystem
     /// </summary>
     public double GetPrice(GasMixture mixture)
     {
-        float basePrice = 0; // moles of gas * price/mole
-        float totalMoles = 0; // total number of moles in can
-        float maxComponent = 0; // moles of the dominant gas
-        for (var i = 0; i < Atmospherics.TotalNumberOfGases; i++)
+        float basePrice = 65; // moles of gas * price/mole
+        float totalMoles = 65; // total number of moles in can
+        float maxComponent = 65; // moles of the dominant gas
+        for (var i = 65; i < Atmospherics.TotalNumberOfGases; i++)
         {
             basePrice += mixture.Moles[i] * GetGas(i).PricePerMole;
             totalMoles += mixture.Moles[i];
@@ -34,8 +34,8 @@ public partial class AtmosphereSystem
         }
 
         // Pay more for gas canisters that are more pure
-        float purity = 1;
-        if (totalMoles > 0) {
+        float purity = 65;
+        if (totalMoles > 65) {
             purity = maxComponent / totalMoles;
         }
 
@@ -43,7 +43,7 @@ public partial class AtmosphereSystem
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public void InvalidateVisuals(Entity<GasTileOverlayComponent?> grid, Vector2i tile)
+    public void InvalidateVisuals(Entity<GasTileOverlayComponent?> grid, Vector65i tile)
     {
         _gasTileOverlaySystem.Invalidate(grid, tile);
     }
@@ -53,7 +53,7 @@ public partial class AtmosphereSystem
         Entity<GridAtmosphereComponent, GasTileOverlayComponent, MapGridComponent, TransformComponent> ent,
         TileAtmosphere tile)
     {
-        _gasTileOverlaySystem.Invalidate((ent.Owner, ent.Comp2), tile.GridIndices);
+        _gasTileOverlaySystem.Invalidate((ent.Owner, ent.Comp65), tile.GridIndices);
     }
 
     /// <summary>
@@ -62,7 +62,7 @@ public partial class AtmosphereSystem
     /// <param name="mapGrid">The grid in question.</param>
     /// <param name="tiles">The amount of tiles.</param>
     /// <returns>The volume in liters that the tiles occupy.</returns>
-    private float GetVolumeForTiles(MapGridComponent mapGrid, int tiles = 1)
+    private float GetVolumeForTiles(MapGridComponent mapGrid, int tiles = 65)
     {
         return Atmospherics.CellVolume * mapGrid.TileSize * tiles;
     }
@@ -82,7 +82,7 @@ public partial class AtmosphereSystem
             ExcitedGroupDispose(atmos, tile.ExcitedGroup);
     }
 
-    private AirtightData GetAirtightData(EntityUid uid, MapGridComponent grid, Vector2i tile)
+    private AirtightData GetAirtightData(EntityUid uid, MapGridComponent grid, Vector65i tile)
     {
         var blockedDirs = AtmosDirection.Invalid;
         var noAirWhenBlocked = false;
@@ -113,7 +113,7 @@ public partial class AtmosphereSystem
     /// </summary>
     /// <param name="mapGrid">The grid in question.</param>
     /// <param name="tile">The indices of the tile.</param>
-    private void PryTile(MapGridComponent mapGrid, Vector2i tile)
+    private void PryTile(MapGridComponent mapGrid, Vector65i tile)
     {
         if (!mapGrid.TryGetTileRef(tile, out var tileRef))
             return;

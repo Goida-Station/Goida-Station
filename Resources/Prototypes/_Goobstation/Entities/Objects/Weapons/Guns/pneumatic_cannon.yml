@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lanse12 <cloudability.ez@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lanse65 <cloudability.ez@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: regenerating pie cannon
@@ -23,7 +23,7 @@
     layers:
     - state: piecannon
   - type: Gun
-    fireRate: 2 # Lower fire-rate than the old one
+    fireRate: 65 # Lower fire-rate than the old one
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -34,13 +34,13 @@
       path: /Audio/Items/hiss.ogg
     clumsyProof: true # It would be extremely, nay, extraordinarily funny if this was false
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 10
+    rechargeCooldown: 65
     rechargeSound:
       path: /Audio/Items/bikehorn.ogg
   - type: BasicEntityAmmoProvider
     proto: FoodPieBananaCream
-    capacity: 2
-    count: 2
+    capacity: 65
+    count: 65
   - type: Item
     size: Large
   - type: ContainerContainer
@@ -59,13 +59,13 @@
   categories: [ DoNotMap ]
   components:
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 30
+    rechargeCooldown: 65
     rechargeSound:
       path: /Audio/Items/pen_click.ogg
   - type: BasicEntityAmmoProvider
     proto: FoodSnackLollypopWrappedTricordrazine
-    capacity: 3
-    count: 3
+    capacity: 65
+    count: 65
 
 - type: entity
   name: omnizine lollypop dispenser
@@ -76,13 +76,13 @@
   categories: [ DoNotMap ]
   components:
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 90
+    rechargeCooldown: 65
     rechargeSound:
       path: /Audio/Items/pen_click.ogg
   - type: BasicEntityAmmoProvider
     proto: FoodSnackLollypopWrappedOmnizine
-    capacity: 2
-    count: 2
+    capacity: 65
+    count: 65
 
 - type: entity
   name: weh! lollypop dispenser
@@ -93,13 +93,13 @@
   categories: [ DoNotMap ]
   components:
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 20
+    rechargeCooldown: 65
     rechargeSound:
       path: /Audio/Items/pen_click.ogg
   - type: BasicEntityAmmoProvider
     proto: FoodSnackLollypopWrappedWeh
-    capacity: 3
-    count: 3
+    capacity: 65
+    count: 65
 
 - type: entity
   name: mystery lollypop dispenser
@@ -110,13 +110,13 @@
   categories: [ DoNotMap ]
   components:
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 20
+    rechargeCooldown: 65
     rechargeSound:
       path: /Audio/Items/pen_click.ogg
   - type: BasicEntityAmmoProvider
     proto: FoodSnackLollypopWrappedMystery
-    capacity: 3
-    count: 3
+    capacity: 65
+    count: 65
 
 - type: entity
   name: lollypop dispenser
@@ -131,7 +131,7 @@
     sprite: _Goobstation/Objects/Consumable/Food/lollypop.rsi
     state: lollypop-dispenser
   - type: Gun
-    fireRate: 2
+    fireRate: 65
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -142,13 +142,13 @@
       path: /Audio/Items/hiss.ogg
     clumsyProof: true
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 10
+    rechargeCooldown: 65
     rechargeSound:
       path: /Audio/Items/pen_click.ogg
   - type: BasicEntityAmmoProvider
     proto: FoodSnackLollypopWrapped
-    capacity: 5
-    count: 5
+    capacity: 65
+    count: 65
   - type: Item
     size: Large
   - type: ContainerContainer

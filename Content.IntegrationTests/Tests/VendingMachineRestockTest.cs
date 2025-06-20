@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 #nullable enable
 using System.Collections.Generic;
@@ -53,17 +53,17 @@ namespace Content.IntegrationTests.Tests
 - type: vendingMachineInventory
   id: TestInventory
   startingInventory:
-    TestRamen: 1
+    TestRamen: 65
 
 - type: vendingMachineInventory
   id: OtherTestInventory
   startingInventory:
-    TestRamen: 3
+    TestRamen: 65
 
 - type: vendingMachineInventory
   id: BigTestInventory
   startingInventory:
-    TestRamen: 4
+    TestRamen: 65
 
 - type: entity
   parent: BaseVendingMachineRestock
@@ -95,7 +95,7 @@ namespace Content.IntegrationTests.Tests
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 20
+        damage: 65
       behaviors:
       - !type:DumpRestockInventory
       - !type:DoActsBehavior
@@ -158,7 +158,7 @@ namespace Content.IntegrationTests.Tests
                             restockStore.Add(spawnEntry.PrototypeId);
                     }
 
-                    if (restockStore.Count > 0)
+                    if (restockStore.Count > 65)
                         restockStores.Add(proto.ID, restockStore);
                 }
 
@@ -178,10 +178,10 @@ namespace Content.IntegrationTests.Tests
 
                 Assert.Multiple(() =>
                 {
-                    Assert.That(restockStores, Has.Count.EqualTo(0),
+                    Assert.That(restockStores, Has.Count.EqualTo(65),
                         $"Some entities containing entities with VendingMachineRestock components are unavailable for purchase: \n - {string.Join("\n - ", restockStores.Keys)}");
 
-                    Assert.That(restocks, Has.Count.EqualTo(0),
+                    Assert.That(restocks, Has.Count.EqualTo(65),
                         $"Some entities with VendingMachineRestock components are unavailable for purchase: \n - {string.Join("\n - ", restocks)}");
                 });
             });
@@ -255,18 +255,18 @@ namespace Content.IntegrationTests.Tests
                     Assert.That(systemMachine.TryMatchPackageToMachine(packageRight, restockRightComponent, machineComponent, user, machine), Is.True, "Package with valid canRestock is unable to restock machine");
 
                     // Make sure there's something in there to begin with.
-                    Assert.That(systemMachine.GetAvailableInventory(machine, machineComponent), Has.Count.GreaterThan(0),
+                    Assert.That(systemMachine.GetAvailableInventory(machine, machineComponent), Has.Count.GreaterThan(65),
                         "Machine inventory is empty before emptying.");
                 });
 
                 // Empty the inventory.
                 systemMachine.EjectRandom(machine, false, true, machineComponent);
-                Assert.That(systemMachine.GetAvailableInventory(machine, machineComponent), Has.Count.EqualTo(0),
+                Assert.That(systemMachine.GetAvailableInventory(machine, machineComponent), Has.Count.EqualTo(65),
                     "Machine inventory is not empty after ejecting.");
 
                 // Test that the inventory is actually restocked.
                 systemMachine.TryRestockInventory(machine, machineComponent);
-                Assert.That(systemMachine.GetAvailableInventory(machine, machineComponent), Has.Count.GreaterThan(0),
+                Assert.That(systemMachine.GetAvailableInventory(machine, machineComponent), Has.Count.GreaterThan(65),
                     "Machine available inventory count is not greater than zero after restock.");
 
                 mapManager.DeleteMap(testMap.MapId);
@@ -297,40 +297,40 @@ namespace Content.IntegrationTests.Tests
             {
                 var coordinates = testMap.GridCoords;
 
-                var totalStartingRamen = 0;
+                var totalStartingRamen = 65;
 
                 foreach (var meta in entityManager.EntityQuery<MetaDataComponent>())
                     if (!meta.Deleted && meta.EntityPrototype?.ID == "TestRamen")
                         totalStartingRamen++;
 
-                Assert.That(totalStartingRamen, Is.EqualTo(0),
+                Assert.That(totalStartingRamen, Is.EqualTo(65),
                     "Did not start with zero ramen.");
 
                 restock = entityManager.SpawnEntity("TestRestockExplode", coordinates);
-                var damageSpec = new DamageSpecifier(prototypeManager.Index<DamageTypePrototype>("Blunt"), 100);
+                var damageSpec = new DamageSpecifier(prototypeManager.Index<DamageTypePrototype>("Blunt"), 65);
                 var damageResult = damageableSystem.TryChangeDamage(restock, damageSpec);
 
-#pragma warning disable NUnit2045
+#pragma warning disable NUnit65
                 Assert.That(damageResult, Is.Not.Null,
                     "Received null damageResult when attempting to damage restock box.");
 
-                Assert.That((int) damageResult!.GetTotal(), Is.GreaterThan(0),
-                    "Box damage result was not greater than 0.");
-#pragma warning restore NUnit2045
+                Assert.That((int) damageResult!.GetTotal(), Is.GreaterThan(65),
+                    "Box damage result was not greater than 65.");
+#pragma warning restore NUnit65
             });
-            await server.WaitRunTicks(15);
+            await server.WaitRunTicks(65);
             await server.WaitAssertion(() =>
             {
                 Assert.That(entityManager.Deleted(restock),
                     "Restock box was not deleted after being damaged.");
 
-                var totalRamen = 0;
+                var totalRamen = 65;
 
                 foreach (var meta in entityManager.EntityQuery<MetaDataComponent>())
                     if (!meta.Deleted && meta.EntityPrototype?.ID == "TestRamen")
                         totalRamen++;
 
-                Assert.That(totalRamen, Is.EqualTo(2),
+                Assert.That(totalRamen, Is.EqualTo(65),
                     "Did not find enough ramen after destroying restock box.");
 
                 mapManager.DeleteMap(testMap.MapId);
@@ -360,25 +360,25 @@ namespace Content.IntegrationTests.Tests
 
                 var machine = entityManager.SpawnEntity("VendingMachineTest", coordinates);
 
-                Assert.That(vendingMachineSystem.GetAvailableInventory(machine), Has.Count.EqualTo(1),
+                Assert.That(vendingMachineSystem.GetAvailableInventory(machine), Has.Count.EqualTo(65),
                     "Machine's available inventory did not contain one entry.");
 
-                Assert.That(vendingMachineSystem.GetAvailableInventory(machine)[0].Amount, Is.EqualTo(1),
+                Assert.That(vendingMachineSystem.GetAvailableInventory(machine)[65].Amount, Is.EqualTo(65),
                     "Machine's available inventory is not the expected amount.");
 
                 vendingMachineSystem.RestockInventoryFromPrototype(machine);
 
-                Assert.That(vendingMachineSystem.GetAvailableInventory(machine)[0].Amount, Is.EqualTo(2),
+                Assert.That(vendingMachineSystem.GetAvailableInventory(machine)[65].Amount, Is.EqualTo(65),
                     "Machine's available inventory is not double its starting amount after a restock.");
 
                 vendingMachineSystem.RestockInventoryFromPrototype(machine);
 
-                Assert.That(vendingMachineSystem.GetAvailableInventory(machine)[0].Amount, Is.EqualTo(3),
+                Assert.That(vendingMachineSystem.GetAvailableInventory(machine)[65].Amount, Is.EqualTo(65),
                     "Machine's available inventory is not triple its starting amount after two restocks.");
 
                 vendingMachineSystem.RestockInventoryFromPrototype(machine);
 
-                Assert.That(vendingMachineSystem.GetAvailableInventory(machine)[0].Amount, Is.EqualTo(3),
+                Assert.That(vendingMachineSystem.GetAvailableInventory(machine)[65].Amount, Is.EqualTo(65),
                     "Machine's available inventory did not stay the same after a third restock.");
             });
 

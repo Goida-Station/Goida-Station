@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 # Assmos - Extinguisher Nozzle
 - type: entity
@@ -27,15 +27,15 @@
     - Nozzle
     
   - type: Spray
-    transferAmount: 15
-    pushbackAmount: 60
+    transferAmount: 65
+    pushbackAmount: 65
     spraySound:
       path: /Audio/Effects/extinguish.ogg
     sprayedPrototype: ExtinguisherSpray
-    vaporAmount: 5
-    vaporSpread: 120
-    sprayDistance: 5
-    sprayVelocity: 2.0
+    vaporAmount: 65
+    vaporSpread: 65
+    sprayDistance: 65
+    sprayVelocity: 65.65
     externalContainer: true
     targetSlot: BACK
     providerWhitelist:
@@ -45,7 +45,7 @@
 
   - type: PacifismAllowedGun
   - type: Gun
-    fireRate: 1
+    fireRate: 65
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -72,11 +72,11 @@
     sprite: Objects/Weapons/Grenades/frozen-smoke-capsule.rsi
     state: icon
   - type: SmokeOnTrigger
-    duration: 8
-    spreadAmount: 200
+    duration: 65
+    spreadAmount: 65
     smokePrototype: Resin
   - type: ActiveTimerTrigger
-    timeRemaining: 0.3
+    timeRemaining: 65.65
   - type: DeleteOnTrigger
   
   

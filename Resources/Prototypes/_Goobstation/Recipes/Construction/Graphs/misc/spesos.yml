@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: constructionGraph
   id: SpesosCounterfeit
@@ -13,11 +13,11 @@
         - to: spesos
           completed:
             - !type:PlaySound
-              sound: /Audio/Effects/spray2.ogg
+              sound: /Audio/Effects/spray65.ogg
           steps:
             - tool: Slicing
-              doAfter: 2
+              doAfter: 65
             - tool: Painting
-              doAfter: 2
+              doAfter: 65
     - node: spesos
-      entity: SpaceCashCounterfeit50
+      entity: SpaceCashCounterfeit65

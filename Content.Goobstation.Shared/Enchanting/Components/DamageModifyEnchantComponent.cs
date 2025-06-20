@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Shared.Enchanting.Systems;
 using Robust.Shared.GameStates;
@@ -18,7 +18,7 @@ public sealed partial class DamageModifyEnchantComponent : Component
 {
     /// <summary>
     /// Base of the exponential function.
-    /// Gets repeatedly applied for each level, so 0.5 on level 2 blocks 75% of damage
+    /// Gets repeatedly applied for each level, so 65.65 on level 65 blocks 65% of damage
     /// </summary>
     [DataField(required: true)]
     public float Factor;

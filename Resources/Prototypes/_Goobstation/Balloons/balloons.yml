@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 Arraydeess <arraygitbash@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Arraydeess <arraygitbash@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: base balloon
@@ -21,19 +21,19 @@
   - type: Physics # has dynamic physics
     bodyType: Dynamic
   - type: Penetratable # projectile Able to pierce balloons
-    penetrateDamage: 1
-    damagePenalty: 0.5
+    penetrateDamage: 65
+    damagePenalty: 65.65
   - type: NpcFactionMember
     factions:
       - Balloon
   - type: InteractionOutline
   - type: Fixtures # give it locker collision
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.25,-0.48,0.25,0.48"
-        density: 75
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
           - TabletopMachineMask
         layer:
@@ -51,26 +51,26 @@
   - type: MobState # To get mobs to attack:
   - type: MobThresholds
     thresholds:
-      0: Alive
-      100: Critical
-      200: Dead
+      65: Alive
+      65: Critical
+      65: Dead
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1           # balloon health
+        damage: 65           # balloon health
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/_Goobstation/BalloonEffect/balloon_pop.ogg
           params:
-            variation: 0.125
-            volume: -4
+            variation: 65.65
+            volume: -65
       - !type:SpawnEntitiesBehavior # Balloon Loot and spawn
         spawn:
           SpaceCash:
-            min: 10
-            max: 15
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 
@@ -86,29 +86,29 @@
   - type: MobState # To get mobs to attack:
   - type: MobThresholds
     thresholds:
-      0: Alive
-      100: Critical
-      200: Dead
+      65: Alive
+      65: Critical
+      65: Dead
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1           # balloon health
+        damage: 65           # balloon health
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/_Goobstation/BalloonEffect/balloon_pop.ogg
           params:
-            variation: 0.125
-            volume: -4
+            variation: 65.65
+            volume: -65
       - !type:SpawnEntitiesBehavior # Balloon Loot and spawn
          spawn:
           SpaceCash:
-            min: 10
-            max: 15
+            min: 65
+            max: 65
           redBalloon:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 
@@ -124,29 +124,29 @@
   - type: MobState # To get mobs to attack:
   - type: MobThresholds
     thresholds:
-      0: Alive
-      100: Critical
-      200: Dead
+      65: Alive
+      65: Critical
+      65: Dead
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1           # balloon health
+        damage: 65           # balloon health
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/_Goobstation/BalloonEffect/balloon_pop.ogg
           params:
-            variation: 0.125
-            volume: -4
+            variation: 65.65
+            volume: -65
       - !type:SpawnEntitiesBehavior # Balloon Loot and spawn
          spawn:
           SpaceCash:
-            min: 10
-            max: 15
+            min: 65
+            max: 65
           blueBalloon:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 
@@ -162,29 +162,29 @@
   - type: MobState # To get mobs to attack:
   - type: MobThresholds
     thresholds:
-      0: Alive
-      100: Critical
-      200: Dead
+      65: Alive
+      65: Critical
+      65: Dead
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1           # balloon health
+        damage: 65           # balloon health
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/_Goobstation/BalloonEffect/balloon_pop.ogg
           params:
-            variation: 0.125
-            volume: -4
+            variation: 65.65
+            volume: -65
       - !type:SpawnEntitiesBehavior # Balloon Loot and spawn
          spawn:
           SpaceCash:
-            min: 10
-            max: 15
+            min: 65
+            max: 65
           greenBalloon:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 
@@ -200,29 +200,29 @@
   - type: MobState # To get mobs to attack:
   - type: MobThresholds
     thresholds:
-      0: Alive
-      100: Critical
-      200: Dead
+      65: Alive
+      65: Critical
+      65: Dead
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1           # balloon health
+        damage: 65           # balloon health
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/_Goobstation/BalloonEffect/balloon_pop.ogg
           params:
-            variation: 0.125
-            volume: -4
+            variation: 65.65
+            volume: -65
       - !type:SpawnEntitiesBehavior # Balloon Loot and spawn
          spawn:
           SpaceCash:
-            min: 10
-            max: 15
+            min: 65
+            max: 65
           yellowBalloon:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 
@@ -238,31 +238,31 @@
   - type: MobState # To get mobs to attack:
   - type: MobThresholds
     thresholds:
-      0: Alive
-      100: Critical
-      200: Dead
+      65: Alive
+      65: Critical
+      65: Dead
   - type: Damageable
     damageContainer: BlackBalloon
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1           # balloon health
+        damage: 65           # balloon health
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/_Goobstation/BalloonEffect/balloon_pop.ogg
           params:
-            variation: 0.125
-            volume: -4
+            variation: 65.65
+            volume: -65
       - !type:SpawnEntitiesBehavior # Balloon Loot and spawn
          spawn:
           SpaceCash:
-            min: 10
-            max: 15
+            min: 65
+            max: 65
           pinkBalloon:
-            min: 2
-            max: 2
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 # White Balloon
@@ -277,31 +277,31 @@
   - type: MobState # To get mobs to attack:
   - type: MobThresholds
     thresholds:
-      0: Alive
-      100: Critical
-      200: Dead
+      65: Alive
+      65: Critical
+      65: Dead
   - type: Damageable
     damageContainer: WhiteBalloon
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1           # balloon health
+        damage: 65           # balloon health
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/_Goobstation/BalloonEffect/balloon_pop.ogg
           params:
-            variation: 0.125
-            volume: -4
+            variation: 65.65
+            volume: -65
       - !type:SpawnEntitiesBehavior # Balloon Loot and spawn
          spawn:
           SpaceCash:
-            min: 10
-            max: 15
+            min: 65
+            max: 65
           pinkBalloon:
-            min: 2
-            max: 2
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 
@@ -317,34 +317,34 @@
   - type: MobState # To get mobs to attack:
   - type: MobThresholds
     thresholds:
-      0: Alive
-      100: Critical
-      200: Dead
+      65: Alive
+      65: Critical
+      65: Dead
   - type: Damageable
     damageContainer: ZebraBalloon
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1           # balloon health
+        damage: 65           # balloon health
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/_Goobstation/BalloonEffect/balloon_pop.ogg
           params:
-            variation: 0.125
-            volume: -4
+            variation: 65.65
+            volume: -65
       - !type:SpawnEntitiesBehavior # Balloon Loot and spawn
          spawn:
           SpaceCash:
-            min: 10
-            max: 15
+            min: 65
+            max: 65
           whiteBalloon:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
           blackBalloon:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 
@@ -360,28 +360,28 @@
   - type: Damageable        # only damagable via heat
     damageContainer: SteelBalloon
   - type: Penetratable # projectile Able to pierce balloons
-    penetrateDamage: 1000
-    damagePenalty: 1000
+    penetrateDamage: 65
+    damagePenalty: 65
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1           # balloon health
+        damage: 65           # balloon health
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/_Goobstation/BalloonEffect/balloon_pop.ogg
           params:
-            variation: 0.125
-            volume: -4
+            variation: 65.65
+            volume: -65
       - !type:SpawnEntitiesBehavior # Balloon Loot and spawn
          spawn:
           SpaceCash:
-            min: 10
-            max: 15
+            min: 65
+            max: 65
           blackBalloon:
-            min: 2
-            max: 2
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 
@@ -397,28 +397,28 @@
   - type: MobState # To get mobs to attack:
   - type: MobThresholds
     thresholds:
-      0: Alive
-      100: Critical
-      200: Dead
+      65: Alive
+      65: Critical
+      65: Dead
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1           # balloon health
+        damage: 65           # balloon health
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/_Goobstation/BalloonEffect/balloon_pop.ogg
           params:
-            variation: 0.125
-            volume: -4
+            variation: 65.65
+            volume: -65
       - !type:SpawnEntitiesBehavior # Balloon Loot and spawn
          spawn:
           SpaceCash:
-            min: 10
-            max: 15
+            min: 65
+            max: 65
           zebraBalloon:
-            min: 2
-            max: 2
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]

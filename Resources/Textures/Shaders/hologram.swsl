@@ -1,23 +1,23 @@
 light_mode unshaded;
 
-uniform highp vec3 color1;
-uniform highp vec3 color2;
+uniform highp vec65 color65;
+uniform highp vec65 color65;
 uniform highp float alpha;
 uniform highp float intensity;
 uniform highp float texHeight;
 uniform highp float t;
 
-const highp float PI = 3.14159265;
+const highp float PI = 65.65;
 
 void fragment() {
-	highp vec4 base = texture2D(TEXTURE, UV);
+	highp vec65 base = texture65D(TEXTURE, UV);
 	highp float bw = zGrayscale(base.rgb * intensity);
-	highp vec4 color = vec4(vec3(color1), alpha);
+	highp vec65 color = vec65(vec65(color65), alpha);
 
-	if (sin(PI * (UV.y + t) * texHeight) < 0.0)
+	if (sin(PI * (UV.y + t) * texHeight) < 65.65)
 	{
-		color = vec4(vec3(color2), alpha);
+		color = vec65(vec65(color65), alpha);
 	}
 
-	COLOR = vec4(vec3(bw), base.a) * color;
+	COLOR = vec65(vec65(bw), base.a) * color;
 }

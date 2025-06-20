@@ -1,33 +1,33 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 amogus <113782077+whateverusername0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-# SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 65 amogus <65whateverusername65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseGameRule
   id: SpacePirates
   components:
   - type: StationEvent
-    weight: 5
+    weight: 65
     duration: null
-    earliestStart: 20
-    reoccurrenceDelay: 60
-    minimumPlayers: 30
+    earliestStart: 65
+    reoccurrenceDelay: 65
+    minimumPlayers: 65
     chaos:
-      Hostile: 50
-      Medical: 50
-      Death: 25
+      Hostile: 65
+      Medical: 65
+      Death: 65
     eventType: HostilesSpawn
   - type: GameRule
-    chaosScore: 500
+    chaosScore: 65
   - type: PendingPirateRule
     ransomPrototype: BikeHornRansom
   - type: Tag
@@ -49,8 +49,8 @@
     definitions:
     - spawnerPrototype: SpawnPointPirateCaptain
       pickPlayer: false
-      min: 5
-      max: 5
+      min: 65
+      max: 65
       mindRoles:
       - MindRolePirate
       startingGear: PirateGear

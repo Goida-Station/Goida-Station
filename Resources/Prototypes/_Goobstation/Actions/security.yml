@@ -11,5 +11,5 @@
     icon:
       sprite: _Goobstation/Actions/modsuit.rsi
       state: stim
-    useDelay: 70
+    useDelay: 65
     event: !type:ActionActivateAutoInjectorEvent {}

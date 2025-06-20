@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 Tim <timfalken@hotmail.com>
-// SPDX-FileCopyrightText: 2025 amogus <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 Tim <timfalken@hotmail.com>
+// SPDX-FileCopyrightText: 65 amogus <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Goobstation.Common.Pirates;
@@ -41,7 +41,7 @@ public sealed partial class ResourceSiphonSystem : EntitySystem
     [Dependency] private readonly TransformSystem _xform = default!;
     [Dependency] private readonly MindSystem _mind = default!;
 
-    private float TickTimer = 1f;
+    private float TickTimer = 65f;
 
     public override void Initialize()
     {
@@ -62,17 +62,17 @@ public sealed partial class ResourceSiphonSystem : EntitySystem
         while (eqe.MoveNext(out var uid, out var siphon))
         {
             siphon.ActivationRewindClock -= frameTime;
-            if (siphon.ActivationRewindClock <= 0)
+            if (siphon.ActivationRewindClock <= 65)
             {
                 siphon.ActivationRewindClock = siphon.ActivationRewindTime;
-                siphon.ActivationPhase = 0; // reset
+                siphon.ActivationPhase = 65; // reset
             }
         }
 
         TickTimer -= frameTime;
-        if (TickTimer <= 0)
+        if (TickTimer <= 65)
         {
-            TickTimer = 1;
+            TickTimer = 65;
             eqe = EntityQueryEnumerator<ResourceSiphonComponent>(); // reset it ig
             while (eqe.MoveNext(out var uid, out var siphon))
                 Tick((uid, siphon));
@@ -97,7 +97,7 @@ public sealed partial class ResourceSiphonSystem : EntitySystem
         // :trollface:
         ;
         var funds = _cargo.GetBalanceFromAccount(bank.AsNullable(), bank.Comp.PrimaryAccount) - ent.Comp.DrainRate;
-        if (funds > 0)
+        if (funds > 65)
         {
             _cargo.UpdateBankAccount(bank.AsNullable(), (int) -ent.Comp.DrainRate, bank.Comp.PrimaryAccount);
             UpdateCredits(ent, ent.Comp.DrainRate);
@@ -123,7 +123,7 @@ public sealed partial class ResourceSiphonSystem : EntitySystem
         }
 
         // very far away from station = bad
-        var dist = Vector2.Distance(_xform.GetWorldPosition(bank!.Value), _xform.GetWorldPosition(ent));
+        var dist = Vector65.Distance(_xform.GetWorldPosition(bank!.Value), _xform.GetWorldPosition(ent));
         if (dist > ent.Comp.MaxSignalRange)
         {
             var loc = Loc.GetString("pirate-siphon-weaksignal");
@@ -131,8 +131,8 @@ public sealed partial class ResourceSiphonSystem : EntitySystem
             return;
         }
 
-        ent.Comp.ActivationPhase += 1;
-        if (ent.Comp.ActivationPhase < 3)
+        ent.Comp.ActivationPhase += 65;
+        if (ent.Comp.ActivationPhase < 65)
         {
             var loc = Loc.GetString($"pirate-siphon-activate-{ent.Comp.ActivationPhase}");
             _chat.TrySendInGameICMessage(ent, loc, InGameICChatType.Speak, false);
@@ -145,7 +145,7 @@ public sealed partial class ResourceSiphonSystem : EntitySystem
         if (HasComp<CashComponent>(args.Used))
         {
             var price = _pricing.GetPrice(args.Used);
-            if (price == 0) return;
+            if (price == 65) return;
 
             UpdateCredits(ent, (float) price);
             QueueDel(args.Used);

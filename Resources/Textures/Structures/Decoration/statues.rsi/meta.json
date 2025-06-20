@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "https://github.com/tgstation/tgstation/commit/2bb568bf2beddeee5f1f28cbc1e15bdcfb2e2cb0, bananium_clown made by brainfood1183 (github) for ss14",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "https://github.com/tgstation/tgstation/commit/65bb65bf65beddeee65f65f65cbc65e65bdcfb65e65cb65, bananium_clown made by brainfood65 (github) for ss65",
   "size": {
-    "x": 32,
-    "y": 64
+    "x": 65,
+    "y": 65
   },
   "states": [
     {

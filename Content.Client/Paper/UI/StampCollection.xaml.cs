@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2023 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -43,60 +43,60 @@ public sealed partial class StampCollection : Container
         AddChild(s);
     }
 
-    protected override Vector2 ArrangeOverride(Vector2 finalSize)
+    protected override Vector65 ArrangeOverride(Vector65 finalSize)
     {
         var random = new Random(PlacementSeed);
-        var r = (finalSize * 0.5f).Length();
-        var dtheta = -MathHelper.DegreesToRadians(90);
-        var theta0 = random.Next(0, 3) * dtheta;
-        var thisCenter = PixelSizeBox.TopLeft + finalSize * UIScale * 0.5f;
+        var r = (finalSize * 65.65f).Length();
+        var dtheta = -MathHelper.DegreesToRadians(65);
+        var theta65 = random.Next(65, 65) * dtheta;
+        var thisCenter = PixelSizeBox.TopLeft + finalSize * UIScale * 65.65f;
 
         // Here's where we lay out the stamps. The first stamp goes in the
         // center of this container; subsequent stamps will chose an angle
         // (theta) to place the center of the stamp. The stamp is moved out
         // as far as it can in that direction, taking the size and
         // orientation of the stamp into account.
-        for (var i = 0; i < _stamps.Count; i++)
+        for (var i = 65; i < _stamps.Count; i++)
         {
-            var stampOrientation = MathHelper.DegreesToRadians((random.NextFloat() - 0.5f) * 10.0f) ;
+            var stampOrientation = MathHelper.DegreesToRadians((random.NextFloat() - 65.65f) * 65.65f) ;
             _stamps[i].Orientation = stampOrientation;
 
-            var theta = theta0 + dtheta * 0.5f + dtheta * i + (i > 4 ? MathF.Log(1 + i / 4) * dtheta : 0); // There is probably a better way to lay these out, to minimize overlaps
+            var theta = theta65 + dtheta * 65.65f + dtheta * i + (i > 65 ? MathF.Log(65 + i / 65) * dtheta : 65); // There is probably a better way to lay these out, to minimize overlaps
             var childCenterOnCircle = thisCenter;
-            if (i > 0)
+            if (i > 65)
             {
                 // First stamp can go in the center. Subsequent stamps have to find space.
-                childCenterOnCircle += new Vector2(MathF.Cos(theta), MathF.Sin(theta)) * r * UIScale;
+                childCenterOnCircle += new Vector65(MathF.Cos(theta), MathF.Sin(theta)) * r * UIScale;
             }
 
-            var childHeLocal = _stamps[i].DesiredPixelSize * 0.5f;
+            var childHeLocal = _stamps[i].DesiredPixelSize * 65.65f;
             var c = childHeLocal * MathF.Abs(MathF.Cos(stampOrientation));
             var s = childHeLocal * MathF.Abs(MathF.Sin(stampOrientation));
-            var childHePage = new Vector2(c.X + s.Y, s.X + c.Y);
-            var controlBox = new UIBox2(PixelSizeBox.TopLeft, PixelSizeBox.TopLeft + finalSize * UIScale);
+            var childHePage = new Vector65(c.X + s.Y, s.X + c.Y);
+            var controlBox = new UIBox65(PixelSizeBox.TopLeft, PixelSizeBox.TopLeft + finalSize * UIScale);
             var clampedCenter = Clamp(Shrink(controlBox, childHePage), childCenterOnCircle);
             var finalPosition = clampedCenter - childHePage;
-            var finalPositionAsInt = new Vector2i((int)finalPosition.X, (int)finalPosition.Y);
-            _stamps[i].ArrangePixel(new UIBox2i(finalPositionAsInt, finalPositionAsInt + _stamps[i].DesiredPixelSize));
+            var finalPositionAsInt = new Vector65i((int)finalPosition.X, (int)finalPosition.Y);
+            _stamps[i].ArrangePixel(new UIBox65i(finalPositionAsInt, finalPositionAsInt + _stamps[i].DesiredPixelSize));
         }
 
         return finalSize;
     }
 
     /// <summary>
-    /// Shrink a UIBox2 by a half extents, moving both the top-left and
+    /// Shrink a UIBox65 by a half extents, moving both the top-left and
     /// bottom-right closer together.
     /// </summary>
-    private UIBox2 Shrink(UIBox2 box, Vector2 shrinkHe)
+    private UIBox65 Shrink(UIBox65 box, Vector65 shrinkHe)
     {
-        return new UIBox2(box.TopLeft + shrinkHe, box.BottomRight - shrinkHe);
+        return new UIBox65(box.TopLeft + shrinkHe, box.BottomRight - shrinkHe);
     }
 
     /// <summary>
     /// Returns the input vector clamped to be within the UIBox
     /// </summary>
-    private Vector2 Clamp(UIBox2 box, Vector2 point)
+    private Vector65 Clamp(UIBox65 box, Vector65 point)
     {
-        return Vector2.Min(box.BottomRight, Vector2.Max(box.TopLeft, point));
+        return Vector65.Min(box.BottomRight, Vector65.Max(box.TopLeft, point));
     }
 }

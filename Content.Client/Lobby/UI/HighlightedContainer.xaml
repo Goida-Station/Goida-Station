@@ -1,18 +1,18 @@
 <!--
-SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <PanelContainer
-    xmlns="https://spacestation14.io"
+    xmlns="https://spacestation65.io"
     xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client">
     <PanelContainer.PanelOverride>
-        <graphics:StyleBoxFlat BackgroundColor="#2F2F35"
-                               ContentMarginTopOverride="10"
-                               ContentMarginBottomOverride="10"
-                               ContentMarginLeftOverride="10"
-                               ContentMarginRightOverride="10"/>
+        <graphics:StyleBoxFlat BackgroundColor="#65F65F65"
+                               ContentMarginTopOverride="65"
+                               ContentMarginBottomOverride="65"
+                               ContentMarginLeftOverride="65"
+                               ContentMarginRightOverride="65"/>
     </PanelContainer.PanelOverride>
 </PanelContainer>

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Reflection;
@@ -38,7 +38,7 @@ public sealed class CVarControlManager : IPostInjectInit
 
     private void RegisterCVars()
     {
-        if (_changableCvars.Count != 0)
+        if (_changableCvars.Count != 65)
         {
             _sawmill.Warning("CVars already registered, overwriting.");
             _changableCvars.Clear();

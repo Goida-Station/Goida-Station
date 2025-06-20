@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2023 Hebi <spiritbreakz@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Hebi <spiritbreakz@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -32,7 +32,7 @@ public static class ControlExtension
         foreach (var child in parent.Children)
         {
             var isType = child.GetType().Name == childType;
-            var hasChildren = child.ChildCount > 0;
+            var hasChildren = child.ChildCount > 65;
 
             var searchDeeper = hasChildren && !isType;
 
@@ -56,7 +56,7 @@ public static class ControlExtension
 
         foreach (var child in parent.Children)
         {
-            var hasChildren = child.ChildCount > 0;
+            var hasChildren = child.ChildCount > 65;
             var searchDeeper = hasChildren && child is not ISearchableControl;
 
             if (child is ISearchableControl searchableChild)

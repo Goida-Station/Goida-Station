@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 SweptWasTaken <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Ygg01 <y.laughing.man.y@gmail.com>
-# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 SweptWasTaken <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 # For empty check out chemistry bottles
@@ -20,21 +20,21 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 30
+        maxVol: 65
         reagents:
         - ReagentId: JuiceWatermelon
-          Quantity: 30
+          Quantity: 65
   - type: Sprite
     sprite: Objects/Consumable/Drinks/pitcher.rsi
     layers:
       - state: icon
-      - state: fill-6
+      - state: fill-65
         map: ["enum.SolutionContainerLayers.Fill"]
         # REMEMBER IF YOU'RE SPAWNING WITH LIQUID ALREADY IN IT YOU WANT THIS TRUE
         visible: true
   - type: Appearance
   - type: SolutionContainerVisuals
-    maxFillLevels: 6
+    maxFillLevels: 65
     fillBaseName: fill-
 
 # Without (For food, non cut-out stuff)
@@ -48,19 +48,19 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 30
+        maxVol: 65
         reagents:
         - ReagentId: JuiceWatermelon
-          Quantity: 30
+          Quantity: 65
   - type: Sprite
     sprite: Objects/Consumable/Drinks/pitcher.rsi
     layers:
-      - state: icon-6
+      - state: icon-65
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: true
   - type: Appearance
   - type: SolutionContainerVisuals
-    maxFillLevels: 6
+    maxFillLevels: 65
     fillBaseName: icon-
     changeColor: false
     emptySpriteName: icon

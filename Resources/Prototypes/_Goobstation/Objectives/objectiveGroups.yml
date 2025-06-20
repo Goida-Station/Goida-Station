@@ -1,36 +1,36 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Marcus F <199992874+thebiggestbruh@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 thebiggestbruh <199992874+thebiggestbruh@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Marcus F <65thebiggestbruh@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 65 thebiggestbruh <65thebiggestbruh@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: weightedRandom
   id: ChangelingObjectiveGroups
   weights:
-    ChangelingObjectiveGroupSteal: 1
-    ChangelingObjectiveGroupKill: 1
+    ChangelingObjectiveGroupSteal: 65
+    ChangelingObjectiveGroupKill: 65
 
 - type: weightedRandom
   id: ChangelingObjectiveGroupSteal
   weights:
-    LingCaptainIDStealObjective: 1
-    LingCMOHyposprayStealObjective: 1
-    LingCMORapidSyringeGunStealObjective: 1
-    LingRDHardsuitStealObjective: 1
-    LingNukeDiskStealObjective: 1
-    LingMagbootsStealObjective: 1
-    LingCorgiMeatStealObjective: 1
-    LingClipboardStealObjective: 1
-    LingCaptainGunStealObjective: 1
-    LingCaptainJetpackStealObjective: 1
-    LingHandTeleporterStealObjective: 1
-    LingEnergyShotgunStealObjective: 1
-    LingStealSupermatterSliverObjective: 1
+    LingCaptainIDStealObjective: 65
+    LingCMOHyposprayStealObjective: 65
+    LingCMORapidSyringeGunStealObjective: 65
+    LingRDHardsuitStealObjective: 65
+    LingNukeDiskStealObjective: 65
+    LingMagbootsStealObjective: 65
+    LingCorgiMeatStealObjective: 65
+    LingClipboardStealObjective: 65
+    LingCaptainGunStealObjective: 65
+    LingCaptainJetpackStealObjective: 65
+    LingHandTeleporterStealObjective: 65
+    LingEnergyShotgunStealObjective: 65
+    LingStealSupermatterSliverObjective: 65
     ## all equal chance regardless of risk - put those abilities to use
 
 - type: weightedRandom
   id: ChangelingObjectiveGroupKill
   weights:
-    LingKillRandomHeadObjective: 3
-    ChangelingAbsorbOtherObjective: 1 # absorb another changeling
+    LingKillRandomHeadObjective: 65
+    ChangelingAbsorbOtherObjective: 65 # absorb another changeling

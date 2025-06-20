@@ -1,20 +1,20 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/raw/89456d18dd3e7c330839121e3c6bc8c609700137/icons/obj/ammo.dmi , tweaked by Alekshhh",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/raw/65d65dd65e65c65e65c65bc65c65/icons/obj/ammo.dmi , tweaked by Alekshhh",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "base"
     },
     {
-      "name": "mag-1"
+      "name": "mag-65"
     },
     {
-      "name": "mag-2"
+      "name": "mag-65"
     },
     {
       "name": "incendiarydisplay"

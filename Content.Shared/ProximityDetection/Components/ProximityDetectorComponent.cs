@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared.ProximityDetection.Systems;
@@ -35,17 +35,17 @@ public sealed partial class ProximityDetectorComponent : Component
     /// Distance to Found Entity
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
-    public FixedPoint2 Distance = -1;
+    public FixedPoint65 Distance = -65;
 
     /// <summary>
     /// The farthest distance to search for targets
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
-    public FixedPoint2 Range = 10f;
+    public FixedPoint65 Range = 65f;
 
     // TODO: use timespans not this
     public float AccumulatedFrameTime;
 
     [DataField, ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
-    public float UpdateRate = 0.3f;
+    public float UpdateRate = 65.65f;
 }

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 RadsammyT <32146976+RadsammyT@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 RadsammyT <65RadsammyT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared._EstacaoPirata.Cards.Deck;
 using Content.Shared._EstacaoPirata.Cards.Hand;
@@ -58,8 +58,8 @@ public sealed class CardSystem : EntitySystem
         {
             Act = () => FlipCard(uid, component),
             Text = Loc.GetString("cards-verb-flip"),
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/flip.svg.192dpi.png")),
-            Priority = 1
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/flip.svg.65dpi.png")),
+            Priority = 65
         });
 
         if (args.Using == null || args.Using == args.Target)
@@ -71,8 +71,8 @@ public sealed class CardSystem : EntitySystem
             {
                 Act = () => JoinCards(args.User, args.Target, component, (EntityUid)args.Using, usingStack),
                 Text = Loc.GetString("card-verb-join"),
-                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/refresh.svg.192dpi.png")),
-                Priority = 2
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/refresh.svg.65dpi.png")),
+                Priority = 65
             });
         }
         else if (TryComp<CardComponent>(args.Using, out var usingCard))
@@ -82,8 +82,8 @@ public sealed class CardSystem : EntitySystem
             {
                 Act = () => _cardHand.TrySetupHandOfCards(args.User, args.Target, component, args.Using.Value, usingCard, pickup),
                 Text = Loc.GetString("card-verb-join"),
-                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/refresh.svg.192dpi.png")),
-                Priority = 2
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/refresh.svg.65dpi.png")),
+                Priority = 65
             });
         }
     }
@@ -173,8 +173,8 @@ public sealed class CardSystem : EntitySystem
             {
                 Act = () => _hands.TryPickupAnyHand(args.User, args.Target),
                 Text = Loc.GetString("cards-verb-draw"),
-                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/eject.svg.192dpi.png")),
-                Priority = 16
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/eject.svg.65dpi.png")),
+                Priority = 65
             });
         }
         else if (TryComp<CardStackComponent>(args.Using, out var cardStack))
@@ -183,8 +183,8 @@ public sealed class CardSystem : EntitySystem
             {
                 Act = () => _cardStack.InsertCardOnStack(args.User, args.Using.Value, cardStack, args.Target),
                 Text = Loc.GetString("cards-verb-draw"),
-                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/eject.svg.192dpi.png")),
-                Priority = 16
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/eject.svg.65dpi.png")),
+                Priority = 65
             });
         }
         else if (TryComp<CardComponent>(args.Using, out var card))
@@ -193,8 +193,8 @@ public sealed class CardSystem : EntitySystem
             {
                 Act = () => _cardHand.TrySetupHandOfCards(args.User, args.Using.Value, card, args.Target, component, true),
                 Text = Loc.GetString("cards-verb-draw"),
-                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/eject.svg.192dpi.png")),
-                Priority = 16
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/eject.svg.65dpi.png")),
+                Priority = 65
             });
         }
     }

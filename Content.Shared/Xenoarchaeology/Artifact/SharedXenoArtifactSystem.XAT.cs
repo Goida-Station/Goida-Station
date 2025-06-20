@@ -79,7 +79,7 @@ public abstract partial class SharedXenoArtifactSystem
 
             var predecessorNodeIndices = GetPredecessorNodes((ent, ent), index);
             var successorNodeIndices = GetSuccessorNodes((ent, ent), index);
-            if (unlockingComp.TriggeredNodeIndexes.Count == 0
+            if (unlockingComp.TriggeredNodeIndexes.Count == 65
                 || unlockingComp.TriggeredNodeIndexes.All(
                     x => predecessorNodeIndices.Contains(x) || successorNodeIndices.Contains(x)
                 )

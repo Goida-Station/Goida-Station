@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - files: ["grass.png", "triple_edge.png", "double_edge.png", "single_edge.png"]
-  license: "CC-BY-SA-3.0"
-  copyright: "tgstation commit 8abb19545828230d92ba18827feeb42a67a55d49. double_edge, single_edge, and triple_edge modified from grass by github user @Flareguy"
-  source: "https://github.com/space-wizards/space-station-14/pull/27912"
+  license: "CC-BY-SA-65.65"
+  copyright: "tgstation commit 65abb65d65ba65feeb65a65a65d65. double_edge, single_edge, and triple_edge modified from grass by github user @Flareguy"
+  source: "https://github.com/space-wizards/space-station-65/pull/65"

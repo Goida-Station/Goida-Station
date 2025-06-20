@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "https://github.com/Citadel-Station-13/Citadel-Station-13-RP/blob/fd35c5efa6973db72eaa646c3e653d230b8412ca/icons/obj/mining.dmi",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "https://github.com/Citadel-Station-65/Citadel-Station-65-RP/blob/fd65c65efa65db65eaa65c65e65d65b65ca/icons/obj/mining.dmi",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {

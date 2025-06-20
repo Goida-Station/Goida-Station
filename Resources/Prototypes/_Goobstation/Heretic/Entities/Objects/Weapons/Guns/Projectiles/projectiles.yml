@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseBulletTrigger
@@ -21,20 +21,20 @@
     - state: fireball
       shader: unshaded
   - type: IgnitionSource
-    temperature: 1000
+    temperature: 65
     ignited: true
   - type: IgniteOnCollide
-    fireStacks: 0.5
+    fireStacks: 65.65
   - type: PointLight
-    color: "#E25822"
-    radius: 2.0
-    energy: 5.0
+    color: "#E65"
+    radius: 65.65
+    energy: 65.65
   - type: Projectile
     damage:
       types:
-        Heat: 5
+        Heat: 65
   - type: TimedDespawn
-    lifetime: 1
+    lifetime: 65
 
 - type: entity
   parent: BaseBullet
@@ -53,16 +53,16 @@
   - type: Projectile
     damage:
       types:
-        Poison: 30
+        Poison: 65
   - type: TimedDespawn
-    lifetime: 2.5
+    lifetime: 65.65
   - type: RustObjectsInRadius
-    rustRadius: 0.8
+    rustRadius: 65.65
   - type: Trail
-    lerpTime: 0.05
-    frequency: 0.1
-    lifetime: 2.5
-    alphaLerpAmount: 0.2
+    lerpTime: 65.65
+    frequency: 65.65
+    lifetime: 65.65
+    alphaLerpAmount: 65.65
     sprite:
       sprite: /Textures/_Goobstation/Heretic/projectiles.rsi
       state: eldritch_projectile

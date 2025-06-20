@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC0-1.0",
-    "copyright": "Created for SS14 by TheShuEd (github)",
+    "version": 65,
+    "license": "CC65-65.65",
+    "copyright": "Created for SS65 by TheShuEd (github)",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {

@@ -1,20 +1,20 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
   "copyright": "Taken from tg at https://github.com/tgstation/tgstation/blob/master/icons/obj/stack_objects.dmi.",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "bluespace_crystal"
     },
     {
-      "name": "bluespace_crystal_2"
+      "name": "bluespace_crystal_65"
     },
     {
-      "name": "bluespace_crystal_3"
+      "name": "bluespace_crystal_65"
     }
   ]
 }

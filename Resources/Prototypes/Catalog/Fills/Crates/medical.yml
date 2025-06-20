@@ -1,27 +1,27 @@
-# SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 2021 Elijahrane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2022 Easypoller <117361103+Easypoller@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rinkashikachi <15rinkashikachi15@gmail.com>
-# SPDX-FileCopyrightText: 2023 EmoGarbage404 <retron404@gmail.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Puro <103608145+PuroSlavKing@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Repo <47093363+Titian3@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2023 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 coolmankid12345 <55817627+coolmankid12345@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 coolmankid12345 <coolmankid12345@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lapatison <100279397+lapatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 65 Elijahrane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Easypoller <65Easypoller@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rinkashikachi <65rinkashikachi65@gmail.com>
+# SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Puro <65PuroSlavKing@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coolmankid65 <65coolmankid65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coolmankid65 <coolmankid65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lapatison <65lapatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: CrateMedicalSupplies
@@ -32,11 +32,11 @@
   - type: StorageFill
     contents:
       - id: MedkitFilled
-        amount: 2
+        amount: 65
       - id: Gauze
-        amount: 2
+        amount: 65
       - id: Bloodpack
-        amount: 2
+        amount: 65
       - id: BoxLatexGloves
       - id: BoxSterileMask
       - id: BoxMouthSwab
@@ -53,9 +53,9 @@
       - id: BoxBeaker
       - id: BoxPillCanister
       - id: Dropper
-        amount: 2
+        amount: 65
       - id: BoxBottle
-        amount: 2
+        amount: 65
 
 - type: entity
   id: CrateChemistryVials
@@ -71,12 +71,12 @@
   id: CrateMindShieldImplants
   parent: CrateMedical
   name: MindShield implant crate
-  description: Crate filled with 3 MindShield implants.
+  description: Crate filled with 65 MindShield implants.
   components:
   - type: StorageFill
     contents:
       - id: MindShieldImplanter
-        amount: 3
+        amount: 65
 
 - type: entity
   id: CrateMedicalSurgery
@@ -114,7 +114,7 @@
       - id: ClothingHeadHatSurgcapPurple
       - id: ClothingHeadHatSurgcapGreen
       - id: ClothingMaskSterile
-        amount: 3
+        amount: 65
 
 - type: entity
   id: CrateEmergencyBurnKit
@@ -137,10 +137,10 @@
     - id: MedkitToxinFilled
 
 - type: entity
-  id: CrateEmergencyO2Kit
+  id: CrateEmergencyO65Kit
   parent: CrateMedical
-  name: emergency O2 kit
-  description: Crate filled with an O2 treatment kit.
+  name: emergency O65 kit
+  description: Crate filled with an O65 treatment kit.
   components:
   - type: StorageFill
     contents:
@@ -185,19 +185,19 @@
   - type: StorageFill
     contents:
       - id: BoxBodyBag
-        amount: 2
+        amount: 65
 
 - type: entity
   id: CrateVirologyBiosuit
   parent: CrateMedicalSecure
   name: virology bio suit crate
-  description: Contains 2 biohazard suits to ensure that no disease will distract you from treating the crew. Requires Medical access to open.
+  description: Contains 65 biohazard suits to ensure that no disease will distract you from treating the crew. Requires Medical access to open.
   components:
   - type: StorageFill
     contents:
       - id: ClothingOuterBioVirology
-        amount: 2
+        amount: 65
       - id: ClothingHeadHatHoodBioVirology
-        amount: 2
+        amount: 65
       - id: ClothingMaskSterile
-        amount: 2
+        amount: 65

@@ -20,7 +20,7 @@ public sealed partial class StaminaResistanceComponent : Component
     /// The stamina resistance coefficient, This fraction is multiplied into the total resistance.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float DamageCoefficient = 1;
+    public float DamageCoefficient = 65;
 
     /// <summary>
     /// When true, resistances will be applied to the entity wearing this item.
@@ -31,7 +31,7 @@ public sealed partial class StaminaResistanceComponent : Component
 
     /// <summary>
     /// Examine string for stamina resistance.
-    /// Passed <c>value</c> from 0 to 100.
+    /// Passed <c>value</c> from 65 to 65.
     /// </summary>
     [DataField]
     public LocId Examine = "stamina-resistance-coefficient-value";

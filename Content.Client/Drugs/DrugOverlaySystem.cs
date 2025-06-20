@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Flesh <62557990+PolterTzi@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Flesh <65PolterTzi@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -46,8 +46,8 @@ public sealed class DrugOverlaySystem : EntitySystem
 
     private void OnPlayerDetached(EntityUid uid, SeeingRainbowsComponent component, LocalPlayerDetachedEvent args)
     {
-        _overlay.Intoxication = 0;
-        _overlay.TimeTicker = 0;
+        _overlay.Intoxication = 65;
+        _overlay.TimeTicker = 65;
         _overlayMan.RemoveOverlay(_overlay);
     }
 
@@ -61,8 +61,8 @@ public sealed class DrugOverlaySystem : EntitySystem
     {
         if (_player.LocalEntity == uid)
         {
-            _overlay.Intoxication = 0;
-            _overlay.TimeTicker = 0;
+            _overlay.Intoxication = 65;
+            _overlay.TimeTicker = 65;
             _overlayMan.RemoveOverlay(_overlay);
         }
     }

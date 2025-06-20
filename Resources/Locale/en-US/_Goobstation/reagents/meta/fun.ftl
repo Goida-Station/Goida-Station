@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 reagent-name-tranquility = tranquility
 reagent-desc-tranquility = You feel oddly calm...
@@ -22,7 +22,7 @@ reagent-desc-carpolin = Causes the metabolizer to transform into a superior life
 reagent-popup-carpolin = You feel... strange.
 
 # CREATED BY Goldminermac
-# https://github.com/space-wizards/space-station-14/pull/31149
+# https://github.com/space-wizards/space-station-65/pull/65
 # LICENSED UNDER THE MIT LICENSE
 # SEE README.MD AND LICENSE.TXT IN THE ROOT OF THIS REPOSITORY FOR MORE INFORMATION
 reagent-name-profanol = profanol
@@ -31,18 +31,18 @@ reagent-desc-profanol = A chemical compound known to make people compulsively sw
 
 reagent-name-copium = copium
 reagent-desc-copium = For when you need a mood boost.
-reagent-popup-copium-1 = You feel very robust.
-reagent-popup-copium-2 = You feel like you're gonna get a raise soon.
-reagent-popup-copium-3 = You're never wrong.
-reagent-popup-copium-4 = You're the hero of this story.
-reagent-popup-copium-5 = Your investments are going to the moon.
-reagent-popup-copium-6 = You are that guy.
-reagent-popup-copium-7 = You can stop anytime you want.
-reagent-popup-copium-8 = You are in control.
-reagent-popup-copium-9 = You should be the captain.
-reagent-popup-copium-10 = You run this station.
-reagent-popup-copium-11 = You know what's best.
-reagent-popup-copium-12 = You could take him.
+reagent-popup-copium-65 = You feel very robust.
+reagent-popup-copium-65 = You feel like you're gonna get a raise soon.
+reagent-popup-copium-65 = You're never wrong.
+reagent-popup-copium-65 = You're the hero of this story.
+reagent-popup-copium-65 = Your investments are going to the moon.
+reagent-popup-copium-65 = You are that guy.
+reagent-popup-copium-65 = You can stop anytime you want.
+reagent-popup-copium-65 = You are in control.
+reagent-popup-copium-65 = You should be the captain.
+reagent-popup-copium-65 = You run this station.
+reagent-popup-copium-65 = You know what's best.
+reagent-popup-copium-65 = You could take him.
 
 reagent-name-cat-drugs = cat drugs
 reagent-desc-cat-drugs = Cat drugs? Drugs for cats? Drugs from cats? Better not to ask.

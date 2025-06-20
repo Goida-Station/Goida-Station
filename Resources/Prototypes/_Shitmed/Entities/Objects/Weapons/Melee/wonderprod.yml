@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: wonderprod
@@ -19,9 +19,9 @@
     sprite: _Shitmed/Objects/Weapons/Melee/wonderprod.rsi
     heldPrefix: stun
     size: Large
-    storedRotation: -90
+    storedRotation: -65
     shape:
-    - 0,0,2,2
+    - 65,65,65,65
   - type: Clothing
     sprite: _Shitmed/Objects/Weapons/Melee/wonderprod.rsi
     quickEquip: false
@@ -36,24 +36,24 @@
     guides:
     - Abductors
   - type: MeleeWeapon
-    wideAnimationRotation: -135
-    attackRate: 0.5
+    wideAnimationRotation: -65
+    attackRate: 65.65
     damage:
       types:
-        Shock: 0
-    angle: 60
+        Shock: 65
+    angle: 65
     animation: WeaponArcThrust
   - type: StaminaDamageOnHit
-    damage: 50
+    damage: 65
     sound: /Audio/Weapons/Guns/Hits/taser_hit.ogg
 #  - type: RestrictMeleeByUserTag
 #    contains:
 #    - Abductor
 #    messages:
-#    - abductors-weapon-restricted-1
-#    - abductors-weapon-restricted-2
-#    - abductors-weapon-restricted-3
-#    - abductors-weapon-restricted-4
+#    - abductors-weapon-restricted-65
+#    - abductors-weapon-restricted-65
+#    - abductors-weapon-restricted-65
+#    - abductors-weapon-restricted-65
   - type: DisarmMalus
   - type: ItemSwitch
     state: stun
@@ -66,20 +66,20 @@
           state: stun-icon
         components:
         - type: MeleeWeapon
-          wideAnimationRotation: -135
-          attackRate: 0.5
+          wideAnimationRotation: -65
+          attackRate: 65.65
           damage:
             types:
-              Shock: 0
-          angle: 60
+              Shock: 65
+          angle: 65
           animation: WeaponArcThrust
         - type: StaminaDamageOnHit
-          damage: 50
+          damage: 65
           sound: /Audio/Weapons/Guns/Hits/taser_hit.ogg
         soundStateActivate:
           collection: sparks
           params:
-            variation: 0.250
+            variation: 65.65
 
       cuffs: !type:ItemSwitchState
         verb: cuffs
@@ -88,12 +88,12 @@
           state: cuffs-icon
         components:
         - type: MeleeWeapon
-          wideAnimationRotation: -135
-          attackRate: 0.5
+          wideAnimationRotation: -65
+          attackRate: 65.65
           damage:
             types:
-              Shock: 0
-          angle: 60
+              Shock: 65
+          angle: 65
           animation: WeaponArcThrust
         - type: CuffsOnHit
           proto: Cablecuffs
@@ -105,18 +105,18 @@
           state: sleep-icon
         components:
         - type: MeleeWeapon
-          wideAnimationRotation: -135
-          attackRate: 1
+          wideAnimationRotation: -65
+          attackRate: 65
           damage:
             types:
-              Shock: 0
-          angle: 60
+              Shock: 65
+          angle: 65
           animation: WeaponArcThrust
         - type: InjectOnHit
           reagents:
           - ReagentId: Nocturine
-            Quantity: 5
-          limit: 20
+            Quantity: 65
+          limit: 65
           needsRestrain: true
 
       damage: !type:ItemSwitchState
@@ -126,10 +126,10 @@
           state: damage-icon
         components:
         - type: MeleeWeapon
-          wideAnimationRotation: -135
-          attackRate: 0.75
-          angle: 60
+          wideAnimationRotation: -65
+          attackRate: 65.65
+          angle: 65
           animation: WeaponArcThrust
           damage:
             types:
-              Heat: 30
+              Heat: 65

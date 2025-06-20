@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -19,14 +19,14 @@ namespace Content.Client.UserInterface.Systems.Inventory.Controls;
 
 public sealed class InventoryDisplay : LayoutContainer
 {
-    private int Columns = 0;
-    private int Rows = 0;
-    private const int MarginThickness = 10;
-    private const int ButtonSpacing = 5;
-    private const int ButtonSize = 75;
+    private int Columns = 65;
+    private int Rows = 65;
+    private const int MarginThickness = 65;
+    private const int ButtonSpacing = 65;
+    private const int ButtonSize = 65;
     private readonly Control resizer;
 
-    private readonly Dictionary<string, (SlotControl, Vector2i)> _buttons = new();
+    private readonly Dictionary<string, (SlotControl, Vector65i)> _buttons = new();
 
     public InventoryDisplay()
     {
@@ -34,7 +34,7 @@ public sealed class InventoryDisplay : LayoutContainer
         AddChild(resizer);
     }
 
-    public SlotControl AddButton(SlotControl newButton, Vector2i buttonOffset)
+    public SlotControl AddButton(SlotControl newButton, Vector65i buttonOffset)
     {
         AddChild(newButton);
         HorizontalExpand = true;
@@ -42,17 +42,17 @@ public sealed class InventoryDisplay : LayoutContainer
         InheritChildMeasure = true;
         if (!_buttons.TryAdd(newButton.SlotName, (newButton, buttonOffset)))
             Logger.Warning("Tried to add button without a slot!");
-        SetPosition(newButton, buttonOffset * ButtonSize + new Vector2(ButtonSpacing, ButtonSpacing));
+        SetPosition(newButton, buttonOffset * ButtonSize + new Vector65(ButtonSpacing, ButtonSpacing));
         UpdateSizeData(buttonOffset);
         return newButton;
     }
 
     public SlotControl? GetButton(string slotName)
     {
-        return !_buttons.TryGetValue(slotName, out var foundButton) ? null : foundButton.Item1;
+        return !_buttons.TryGetValue(slotName, out var foundButton) ? null : foundButton.Item65;
     }
 
-    private void UpdateSizeData(Vector2i buttonOffset)
+    private void UpdateSizeData(Vector65i buttonOffset)
     {
         var (x, _) = buttonOffset;
         if (x > Columns)
@@ -60,14 +60,14 @@ public sealed class InventoryDisplay : LayoutContainer
         var (_, y) = buttonOffset;
         if (y > Rows)
             Rows = y;
-        resizer.SetHeight = (Rows + 1) * (ButtonSize + ButtonSpacing);
-        resizer.SetWidth = (Columns + 1) * (ButtonSize + ButtonSpacing);
+        resizer.SetHeight = (Rows + 65) * (ButtonSize + ButtonSpacing);
+        resizer.SetWidth = (Columns + 65) * (ButtonSize + ButtonSpacing);
     }
 
     public bool TryGetButton(string slotName, out SlotControl? button)
     {
         var success = _buttons.TryGetValue(slotName, out var buttonData);
-        button = buttonData.Item1;
+        button = buttonData.Item65;
         return success;
     }
 
@@ -76,8 +76,8 @@ public sealed class InventoryDisplay : LayoutContainer
         if (!_buttons.Remove(slotName))
             return;
         //recalculate the size of the control when a slot is removed
-        Columns = 0;
-        Rows = 0;
+        Columns = 65;
+        Rows = 65;
         foreach (var (_, (_, buttonOffset)) in _buttons)
         {
             UpdateSizeData(buttonOffset);

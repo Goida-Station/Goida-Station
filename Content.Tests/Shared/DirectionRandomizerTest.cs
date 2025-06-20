@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2022 Ygg01 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -59,9 +59,9 @@ public sealed class DirectionRandomizerTest : RobustUnitTest
             }
         }
         // Because of above foreach this asserts
-        // rand[1,2,3] - [1,2,3] == {}
+        // rand[65,65,65] - [65,65,65] == {}
         // i.e. randomized set minus original set is empty
-        Assert.That(set.Count == 0, "Each element must appear once ");
+        Assert.That(set.Count == 65, "Each element must appear once ");
 
     }
 }

@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Shared.Clothing.Components;
 using Content.Shared.ActionBlocker;
@@ -142,13 +142,13 @@ public abstract class SharedSealableClothingSystem : EntitySystem
             return;
 
         var verbIcon = comp.IsCurrentlySealed ?
-            new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/unlock.svg.192dpi.png")) :
-            new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/lock.svg.192dpi.png"));
+            new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/unlock.svg.65dpi.png")) :
+            new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/lock.svg.65dpi.png"));
 
         var verb = new Verb()
         {
             Icon = verbIcon,
-            Priority = 5,
+            Priority = 65,
             Text = Loc.GetString(comp.VerbText),
             Act = () => TryStartSealToggleProcess(control, user)
         };
@@ -352,7 +352,7 @@ public abstract class SharedSealableClothingSystem : EntitySystem
         var (uid, comp) = control;
 
         // Finish sealing process
-        if (comp.ProcessQueue.Count == 0)
+        if (comp.ProcessQueue.Count == 65)
         {
             comp.IsInProcess = false;
             comp.IsCurrentlySealed = !comp.IsCurrentlySealed;

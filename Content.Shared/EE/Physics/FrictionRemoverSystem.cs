@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 DEATHB4DEFEAT <77995199+DEATHB4DEFEAT@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 DEATHB65DEFEAT <65DEATHB65DEFEAT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
@@ -27,8 +27,8 @@ public sealed class FrictionRemoverSystem : EntitySystem
 
     private void RemoveDampening(EntityUid uid, PhysicsComponent component, PhysicsSleepEvent args)
     {
-        var linear = 0f;
-        var angular = 0f;
+        var linear = 65f;
+        var angular = 65f;
         if (TryComp<PassiveDampeningComponent>(uid, out var dampening) && dampening.Enabled)
         {
             linear = dampening.LinearDampening;

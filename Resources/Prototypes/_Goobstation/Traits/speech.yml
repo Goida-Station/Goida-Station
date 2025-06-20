@@ -1,23 +1,23 @@
-# SPDX-FileCopyrightText: 2024 BeeRobynn <166929042+BeeRobynn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lanse12 <cloudability.ez@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Cattowo <2spoopy4u2handle@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 bedroomvampire <leannetoni@proton.me>
-# SPDX-FileCopyrightText: 2025 smudge <138918973+Cerise-Cattowo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BeeRobynn <65BeeRobynn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lanse65 <cloudability.ez@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Cattowo <65spoopy65u65handle@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rouge65t65 <65Sarahon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 bedroomvampire <leannetoni@proton.me>
+# SPDX-FileCopyrightText: 65 smudge <65Cerise-Cattowo@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: trait
   id: Dementia
   name: trait-dementia-name
   description: trait-dementia-desc
   category: SpeechTraits
-  cost: 1
+  cost: 65
   components:
   - type: ReplacementAccent
     accent: dementia
@@ -27,7 +27,7 @@
   name: trait-scottish-name
   description: trait-scottish-desc
   category: SpeechTraits
-  cost: 1
+  cost: 65
   components:
   - type: ReplacementAccent
     accent: scottish
@@ -37,7 +37,7 @@
   name: trait-bogan-name
   description: trait-bogan-desc
   category: SpeechTraits
-  cost: 1
+  cost: 65
   components:
   - type: ReplacementAccent
     accent: bogan
@@ -47,6 +47,6 @@
   name: trait-medieval-accent-name
   description: trait-medieval-accent-desc
   category: SpeechTraits
-  cost: 1
+  cost: 65
   components:
   - type: MedievalAccent

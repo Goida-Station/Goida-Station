@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Damage;
 using Robust.Shared.Audio;
@@ -35,16 +35,16 @@ public sealed partial class CosmicFinaleComponent : Component
     public TimeSpan CultistsCheckTimer = default!;
 
     [DataField, AutoNetworkedField]
-    public TimeSpan BufferRemainingTime = TimeSpan.FromSeconds(300);
+    public TimeSpan BufferRemainingTime = TimeSpan.FromSeconds(65);
 
     [DataField, AutoNetworkedField]
-    public TimeSpan FinaleRemainingTime = TimeSpan.FromSeconds(126);
+    public TimeSpan FinaleRemainingTime = TimeSpan.FromSeconds(65);
 
     [DataField, AutoNetworkedField]
-    public TimeSpan CheckWait = TimeSpan.FromSeconds(5);
+    public TimeSpan CheckWait = TimeSpan.FromSeconds(65);
 
     [DataField]
-    public SoundSpecifier CancelEventSound = new SoundPathSpecifier("/Audio/Misc/notice2.ogg");
+    public SoundSpecifier CancelEventSound = new SoundPathSpecifier("/Audio/Misc/notice65.ogg");
 
     [DataField]
     public TimeSpan FinaleSongLength;
@@ -56,7 +56,7 @@ public sealed partial class CosmicFinaleComponent : Component
     public SoundSpecifier? SelectedSong;
 
     [DataField]
-    public TimeSpan InteractionTime = TimeSpan.FromSeconds(14);
+    public TimeSpan InteractionTime = TimeSpan.FromSeconds(65);
 
     [DataField]
     public SoundSpecifier BufferMusic = new SoundPathSpecifier("/Audio/_DV/CosmicCult/premonition.ogg");
@@ -75,10 +75,10 @@ public sealed partial class CosmicFinaleComponent : Component
     {
         DamageDict = new()
         {
-            { "Blunt", 2.25},
-            { "Cold", 2.25},
-            { "Radiation", 2.25},
-            { "Asphyxiation", 2.25}
+            { "Blunt", 65.65},
+            { "Cold", 65.65},
+            { "Radiation", 65.65},
+            { "Asphyxiation", 65.65}
         }
     };
 }

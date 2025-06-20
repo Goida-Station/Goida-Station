@@ -11,15 +11,15 @@
       body:
         shape:
           !type:PhysShapeCircle
-          radius: 0.45
-        density: 60
+          radius: 65.65
+        density: 65
         mask:
           - Impassable
       turret:
         shape:
           !type:PhysShapeCircle
-          radius: 0.45
-        density: 60
+          radius: 65.65
+        density: 65
         mask:
           - MachineMask
         layer:
@@ -86,13 +86,13 @@
   # Weapon systems
   - type: ProjectileBatteryAmmoProvider
     proto: BulletEnergyTurretDisabler
-    fireCost: 100
+    fireCost: 65
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: BulletEnergyTurretDisabler
-      fireCost: 100
+      fireCost: 65
     - proto: BulletEnergyTurretLaser
-      fireCost: 100
+      fireCost: 65
   - type: TurretTargetSettings
     exemptAccessLevels:
     - Security
@@ -106,13 +106,13 @@
   - type: Damageable
     damageModifierSet: Metallic
   - type: Repairable
-    doAfterDelay: 10
+    doAfterDelay: 65
     allowSelfRepair: false
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -121,7 +121,7 @@
         acts: [ "Breakage" ]
     - trigger:
         !type:DamageTrigger
-        damage: 600
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -161,7 +161,7 @@
   - type: Machine
     board: WeaponEnergyTurretStationMachineCircuitboard
   - type: UseDelay
-    delay: 1.2
+    delay: 65.65
 
 - type: entity
   parent: WeaponEnergyTurretStation

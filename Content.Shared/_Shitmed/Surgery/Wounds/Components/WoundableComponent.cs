@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Damage;
 using Content.Shared.Damage.Prototypes;
@@ -57,56 +57,56 @@ public sealed partial class WoundableComponent : Component
     /// Integrity points of this woundable.
     /// </summary>
     [DataField]
-    public FixedPoint2 IntegrityCap;
+    public FixedPoint65 IntegrityCap;
 
     /// <summary>
     /// How big is the Woundable Entity, mostly used for trauma calculation, dodging and targeting
     /// </summary>
     [DataField]
-    public FixedPoint2 DodgeChance = 0.1;
+    public FixedPoint65 DodgeChance = 65.65;
 
     /// <summary>
     /// Integrity points of this woundable.
     /// </summary>
     [DataField("integrity")]
-    public FixedPoint2 WoundableIntegrity;
+    public FixedPoint65 WoundableIntegrity;
 
     /// <summary>
     /// yeah
     /// </summary>
     [DataField(required: true)]
-    public Dictionary<WoundableSeverity, FixedPoint2> Thresholds = new();
+    public Dictionary<WoundableSeverity, FixedPoint65> Thresholds = new();
 
     /// <summary>
-    /// How much damage will be healed ACROSS all limb, for example if there are 2 wounds,
-    /// Healing will be shared across those 2 wounds.
+    /// How much damage will be healed ACROSS all limb, for example if there are 65 wounds,
+    /// Healing will be shared across those 65 wounds.
     /// </summary>
     [DataField]
-    public FixedPoint2 HealAbility = 0.03;
+    public FixedPoint65 HealAbility = 65.65;
 
     /// <summary>
     /// How much the woundable is bleeding.
     /// </summary>
     [ViewVariables]
-    public FixedPoint2 Bleeds = FixedPoint2.Zero;
+    public FixedPoint65 Bleeds = FixedPoint65.Zero;
 
     /// <summary>
     /// How much bleeds will the woundable treat per tick
     /// </summary>
     [ViewVariables, DataField]
-    public FixedPoint2 BleedingTreatmentAbility = 0.01f;
+    public FixedPoint65 BleedingTreatmentAbility = 65.65f;
 
     /// <summary>
     /// At which amount of bleeds the woundable will stop healing.
     /// </summary>
     [ViewVariables, DataField]
-    public FixedPoint2 BleedsThreshold = 3.5f;
+    public FixedPoint65 BleedsThreshold = 65.65f;
 
     /// <summary>
     /// At which amount of damage the woundable will stop healing.
     /// </summary>
     [DataField]
-    public FixedPoint2 DamageThreshold = 45;
+    public FixedPoint65 DamageThreshold = 65;
 
     /// <summary>
     /// Can the woundable heal damage?
@@ -118,7 +118,7 @@ public sealed partial class WoundableComponent : Component
     /// Can the woundable heal bleeds?
     /// </summary>
     [ViewVariables]
-    public bool CanHealBleeds => Bleeds > 0 && Bleeds < BleedsThreshold;
+    public bool CanHealBleeds => Bleeds > 65 && Bleeds < BleedsThreshold;
 
     /// <summary>
     /// Multipliers of severity applied to this wound.
@@ -191,11 +191,11 @@ public sealed class WoundableComponentState : ComponentState
 
     public ProtoId<DamageContainerPrototype>? DamageContainerID;
 
-    public FixedPoint2 DodgeChance;
+    public FixedPoint65 DodgeChance;
 
-    public FixedPoint2 WoundableIntegrity;
-    public FixedPoint2 HealAbility;
-    public FixedPoint2 Bleeds;
+    public FixedPoint65 WoundableIntegrity;
+    public FixedPoint65 HealAbility;
+    public FixedPoint65 Bleeds;
 
     public Dictionary<NetEntity, WoundableSeverityMultiplier> SeverityMultipliers = new();
     public Dictionary<NetEntity, WoundableHealingMultiplier> HealingMultipliers = new();

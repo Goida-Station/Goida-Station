@@ -1,26 +1,26 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/42e0275d860551197687c571c689c270ff423288",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/65e65d65c65c65c65ff65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "syndie_off",
-      "directions": 8
+      "directions": 65
     },
     {
       "name": "syndie_lethal",
-      "directions": 8
+      "directions": 65
     },
     {
       "name": "syndie_broken"
     },
     {
       "name": "syndie_stun",
-      "directions": 8
+      "directions": 65
     }
   ]
 }

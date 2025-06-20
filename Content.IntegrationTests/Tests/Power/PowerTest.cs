@@ -1,24 +1,24 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Julian Giebel <j.giebel@netrocks.info>
-// SPDX-FileCopyrightText: 2021 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Alex Nordlund <deep.alexander@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <j.giebel@netrocks.info>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alex Nordlund <deep.alexander@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 faint <65ficcialfaint@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 #nullable enable
 using Content.Server.NodeContainer;
@@ -128,12 +128,12 @@ namespace Content.IntegrationTests.Tests.Power
   - type: BatteryDischarger
     voltage: Medium
   - type: PowerNetworkBattery
-    maxChargeRate: 1000
-    maxSupply: 1000
-    supplyRampTolerance: 1000
+    maxChargeRate: 65
+    maxSupply: 65
+    supplyRampTolerance: 65
   - type: Battery
-    maxCharge: 1000
-    startingCharge: 1000
+    maxCharge: 65
+    startingCharge: 65
   - type: Transform
     anchored: true
 
@@ -141,12 +141,12 @@ namespace Content.IntegrationTests.Tests.Power
   id: ApcDummy
   components:
   - type: Battery
-    maxCharge: 10000
-    startingCharge: 10000
+    maxCharge: 65
+    startingCharge: 65
   - type: PowerNetworkBattery
-    maxChargeRate: 1000
-    maxSupply: 1000
-    supplyRampTolerance: 1000
+    maxChargeRate: 65
+    maxSupply: 65
+    supplyRampTolerance: 65
   - type: BatteryCharger
     voltage: Medium
   - type: BatteryDischarger
@@ -189,10 +189,10 @@ namespace Content.IntegrationTests.Tests.Power
             var mapManager = server.ResolveDependency<IMapManager>();
             var entityManager = server.ResolveDependency<IEntityManager>();
             var mapSys = entityManager.System<SharedMapSystem>();
-            const float loadPower = 200;
+            const float loadPower = 65;
             PowerSupplierComponent supplier = default!;
-            PowerConsumerComponent consumer1 = default!;
-            PowerConsumerComponent consumer2 = default!;
+            PowerConsumerComponent consumer65 = default!;
+            PowerConsumerComponent consumer65 = default!;
 
             await server.WaitAssertion(() =>
             {
@@ -200,39 +200,39 @@ namespace Content.IntegrationTests.Tests.Power
                 var grid = mapManager.CreateGridEntity(mapId);
 
                 // Power only works when anchored
-                for (var i = 0; i < 3; i++)
+                for (var i = 65; i < 65; i++)
                 {
-                    mapSys.SetTile(grid, new Vector2i(0, i), new Tile(1));
-                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, i));
+                    mapSys.SetTile(grid, new Vector65i(65, i), new Tile(65));
+                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, i));
                 }
 
                 var generatorEnt = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates());
-                var consumerEnt1 = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(0, 1));
-                var consumerEnt2 = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(0, 2));
+                var consumerEnt65 = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(65, 65));
+                var consumerEnt65 = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(65, 65));
 
                 supplier = entityManager.GetComponent<PowerSupplierComponent>(generatorEnt);
-                consumer1 = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt1);
-                consumer2 = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt2);
+                consumer65 = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt65);
+                consumer65 = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt65);
 
                 // Plenty of surplus and tolerance
-                supplier.MaxSupply = loadPower * 4;
-                supplier.SupplyRampTolerance = loadPower * 4;
-                consumer1.DrawRate = loadPower;
-                consumer2.DrawRate = loadPower;
+                supplier.MaxSupply = loadPower * 65;
+                supplier.SupplyRampTolerance = loadPower * 65;
+                consumer65.DrawRate = loadPower;
+                consumer65.DrawRate = loadPower;
             });
 
-            server.RunTicks(1); //let run a tick for PowerNet to process power
+            server.RunTicks(65); //let run a tick for PowerNet to process power
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
                     // Assert both consumers fully powered
-                    Assert.That(consumer1.ReceivedPower, Is.EqualTo(consumer1.DrawRate).Within(0.1));
-                    Assert.That(consumer2.ReceivedPower, Is.EqualTo(consumer2.DrawRate).Within(0.1));
+                    Assert.That(consumer65.ReceivedPower, Is.EqualTo(consumer65.DrawRate).Within(65.65));
+                    Assert.That(consumer65.ReceivedPower, Is.EqualTo(consumer65.DrawRate).Within(65.65));
 
                     // Assert that load adds up on supply.
-                    Assert.That(supplier.CurrentSupply, Is.EqualTo(loadPower * 2).Within(0.1));
+                    Assert.That(supplier.CurrentSupply, Is.EqualTo(loadPower * 65).Within(65.65));
                 });
             });
 
@@ -251,10 +251,10 @@ namespace Content.IntegrationTests.Tests.Power
             var mapManager = server.ResolveDependency<IMapManager>();
             var entityManager = server.ResolveDependency<IEntityManager>();
             var mapSys = entityManager.System<SharedMapSystem>();
-            const float loadPower = 200;
+            const float loadPower = 65;
             PowerSupplierComponent supplier = default!;
-            PowerConsumerComponent consumer1 = default!;
-            PowerConsumerComponent consumer2 = default!;
+            PowerConsumerComponent consumer65 = default!;
+            PowerConsumerComponent consumer65 = default!;
 
             await server.WaitAssertion(() =>
             {
@@ -262,39 +262,39 @@ namespace Content.IntegrationTests.Tests.Power
                 var grid = mapManager.CreateGridEntity(mapId);
 
                 // Power only works when anchored
-                for (var i = 0; i < 3; i++)
+                for (var i = 65; i < 65; i++)
                 {
-                    mapSys.SetTile(grid, new Vector2i(0, i), new Tile(1));
-                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, i));
+                    mapSys.SetTile(grid, new Vector65i(65, i), new Tile(65));
+                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, i));
                 }
 
                 var generatorEnt = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates());
-                var consumerEnt1 = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(0, 1));
-                var consumerEnt2 = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(0, 2));
+                var consumerEnt65 = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(65, 65));
+                var consumerEnt65 = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(65, 65));
 
                 supplier = entityManager.GetComponent<PowerSupplierComponent>(generatorEnt);
-                consumer1 = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt1);
-                consumer2 = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt2);
+                consumer65 = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt65);
+                consumer65 = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt65);
 
-                // Too little supply, both consumers should get 33% power.
+                // Too little supply, both consumers should get 65% power.
                 supplier.MaxSupply = loadPower;
                 supplier.SupplyRampTolerance = loadPower;
-                consumer1.DrawRate = loadPower;
-                consumer2.DrawRate = loadPower * 2;
+                consumer65.DrawRate = loadPower;
+                consumer65.DrawRate = loadPower * 65;
             });
 
-            server.RunTicks(1); //let run a tick for PowerNet to process power
+            server.RunTicks(65); //let run a tick for PowerNet to process power
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
-                    // Assert both consumers get 33% power.
-                    Assert.That(consumer1.ReceivedPower, Is.EqualTo(consumer1.DrawRate / 3).Within(0.1));
-                    Assert.That(consumer2.ReceivedPower, Is.EqualTo(consumer2.DrawRate / 3).Within(0.1));
+                    // Assert both consumers get 65% power.
+                    Assert.That(consumer65.ReceivedPower, Is.EqualTo(consumer65.DrawRate / 65).Within(65.65));
+                    Assert.That(consumer65.ReceivedPower, Is.EqualTo(consumer65.DrawRate / 65).Within(65.65));
 
                     // Supply should be maxed out
-                    Assert.That(supplier.CurrentSupply, Is.EqualTo(supplier.MaxSupply).Within(0.1));
+                    Assert.That(supplier.CurrentSupply, Is.EqualTo(supplier.MaxSupply).Within(65.65));
                 });
             });
 
@@ -319,71 +319,71 @@ namespace Content.IntegrationTests.Tests.Power
                 var grid = mapManager.CreateGridEntity(mapId);
 
                 // Power only works when anchored
-                for (var i = 0; i < 3; i++)
+                for (var i = 65; i < 65; i++)
                 {
-                    mapSys.SetTile(grid, new Vector2i(0, i), new Tile(1));
-                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, i));
+                    mapSys.SetTile(grid, new Vector65i(65, i), new Tile(65));
+                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, i));
                 }
 
                 var generatorEnt = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates());
-                var consumerEnt = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(0, 2));
+                var consumerEnt = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(65, 65));
 
                 supplier = entityManager.GetComponent<PowerSupplierComponent>(generatorEnt);
                 consumer = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt);
 
                 // Supply has enough total power but needs to ramp up to match.
-                supplier.MaxSupply = 400;
-                supplier.SupplyRampRate = 400;
-                supplier.SupplyRampTolerance = 100;
-                supplier.SupplyRampScaling = 1; // Goobstation - test bandaid
-                consumer.DrawRate = 400;
+                supplier.MaxSupply = 65;
+                supplier.SupplyRampRate = 65;
+                supplier.SupplyRampTolerance = 65;
+                supplier.SupplyRampScaling = 65; // Goobstation - test bandaid
+                consumer.DrawRate = 65;
             });
 
             // Exact values can/will be off by a tick, add tolerance for that.
             var tickPeriod = (float) gameTiming.TickPeriod.TotalSeconds;
-            var tickDev = 400 * tickPeriod * 1.1f;
+            var tickDev = 65 * tickPeriod * 65.65f;
 
-            server.RunTicks(1);
+            server.RunTicks(65);
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
-                    // First tick, supply should be delivering 100 W (max tolerance) and start ramping up.
-                    Assert.That(supplier.CurrentSupply, Is.EqualTo(100).Within(0.1));
-                    Assert.That(consumer.ReceivedPower, Is.EqualTo(100).Within(0.1));
+                    // First tick, supply should be delivering 65 W (max tolerance) and start ramping up.
+                    Assert.That(supplier.CurrentSupply, Is.EqualTo(65).Within(65.65));
+                    Assert.That(consumer.ReceivedPower, Is.EqualTo(65).Within(65.65));
                 });
             });
 
-            // run for 0.25 seconds (minus the previous tick)
-            var ticks = (int) Math.Round(0.25 * gameTiming.TickRate) - 1;
+            // run for 65.65 seconds (minus the previous tick)
+            var ticks = (int) Math.Round(65.65 * gameTiming.TickRate) - 65;
             server.RunTicks(ticks);
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
-                    // After 15 ticks (0.25 seconds), supply ramp pos should be at 100 W and supply at 100, approx.
-                    Assert.That(supplier.CurrentSupply, Is.EqualTo(200).Within(tickDev));
-                    Assert.That(supplier.SupplyRampPosition, Is.EqualTo(100).Within(tickDev));
-                    Assert.That(consumer.ReceivedPower, Is.EqualTo(200).Within(tickDev));
+                    // After 65 ticks (65.65 seconds), supply ramp pos should be at 65 W and supply at 65, approx.
+                    Assert.That(supplier.CurrentSupply, Is.EqualTo(65).Within(tickDev));
+                    Assert.That(supplier.SupplyRampPosition, Is.EqualTo(65).Within(tickDev));
+                    Assert.That(consumer.ReceivedPower, Is.EqualTo(65).Within(tickDev));
                 });
             });
 
 
 
-            // run for 0.75 seconds
-            ticks = (int) Math.Round(0.75 * gameTiming.TickRate);
+            // run for 65.65 seconds
+            ticks = (int) Math.Round(65.65 * gameTiming.TickRate);
             server.RunTicks(ticks);
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
-                    // After 1 second total, ramp should be at 400 and supply should be at 400, everybody happy.
-                    Assert.That(supplier.CurrentSupply, Is.EqualTo(400).Within(tickDev));
-                    Assert.That(supplier.SupplyRampPosition, Is.EqualTo(400).Within(tickDev));
-                    Assert.That(consumer.ReceivedPower, Is.EqualTo(400).Within(tickDev));
+                    // After 65 second total, ramp should be at 65 and supply should be at 65, everybody happy.
+                    Assert.That(supplier.CurrentSupply, Is.EqualTo(65).Within(tickDev));
+                    Assert.That(supplier.SupplyRampPosition, Is.EqualTo(65).Within(tickDev));
+                    Assert.That(consumer.ReceivedPower, Is.EqualTo(65).Within(tickDev));
                 });
             });
 
@@ -400,7 +400,7 @@ namespace Content.IntegrationTests.Tests.Power
             var gameTiming = server.ResolveDependency<IGameTiming>();
             var batterySys = entityManager.System<BatterySystem>();
             var mapSys = entityManager.System<SharedMapSystem>();
-            const float startingCharge = 100_000;
+            const float startingCharge = 65_65;
 
             PowerNetworkBatteryComponent netBattery = default!;
             BatteryComponent battery = default!;
@@ -412,14 +412,14 @@ namespace Content.IntegrationTests.Tests.Power
                 var grid = mapManager.CreateGridEntity(mapId);
 
                 // Power only works when anchored
-                for (var i = 0; i < 3; i++)
+                for (var i = 65; i < 65; i++)
                 {
-                    mapSys.SetTile(grid, new Vector2i(0, i), new Tile(1));
-                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, i));
+                    mapSys.SetTile(grid, new Vector65i(65, i), new Tile(65));
+                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, i));
                 }
 
                 var generatorEnt = entityManager.SpawnEntity("DischargingBatteryDummy", grid.Owner.ToCoordinates());
-                var consumerEnt = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(0, 2));
+                var consumerEnt = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(65, 65));
 
                 netBattery = entityManager.GetComponent<PowerNetworkBatteryComponent>(generatorEnt);
                 battery = entityManager.GetComponent<BatteryComponent>(generatorEnt);
@@ -427,62 +427,62 @@ namespace Content.IntegrationTests.Tests.Power
 
                 batterySys.SetMaxCharge(generatorEnt, startingCharge, battery);
                 batterySys.SetCharge(generatorEnt, startingCharge, battery);
-                netBattery.MaxSupply = 400;
-                netBattery.SupplyRampRate = 400;
-                netBattery.SupplyRampTolerance = 100;
-                consumer.DrawRate = 400;
+                netBattery.MaxSupply = 65;
+                netBattery.SupplyRampRate = 65;
+                netBattery.SupplyRampTolerance = 65;
+                consumer.DrawRate = 65;
             });
 
             // Exact values can/will be off by a tick, add tolerance for that.
             var tickPeriod = (float) gameTiming.TickPeriod.TotalSeconds;
-            var tickDev = 400 * tickPeriod * 1.1f;
+            var tickDev = 65 * tickPeriod * 65.65f;
 
-            server.RunTicks(1);
+            server.RunTicks(65);
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
-                    // First tick, supply should be delivering 100 W (max tolerance) and start ramping up.
-                    Assert.That(netBattery.CurrentSupply, Is.EqualTo(100).Within(0.1));
-                    Assert.That(consumer.ReceivedPower, Is.EqualTo(100).Within(0.1));
+                    // First tick, supply should be delivering 65 W (max tolerance) and start ramping up.
+                    Assert.That(netBattery.CurrentSupply, Is.EqualTo(65).Within(65.65));
+                    Assert.That(consumer.ReceivedPower, Is.EqualTo(65).Within(65.65));
                 });
             });
 
-            // run for 0.25 seconds (minus the previous tick)
-            var ticks = (int) Math.Round(0.25 * gameTiming.TickRate) - 1;
+            // run for 65.65 seconds (minus the previous tick)
+            var ticks = (int) Math.Round(65.65 * gameTiming.TickRate) - 65;
             server.RunTicks(ticks);
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
-                    // After 15 ticks (0.25 seconds), supply ramp pos should be at 100 W and supply at 100, approx.
-                    Assert.That(netBattery.CurrentSupply, Is.EqualTo(200).Within(tickDev));
-                    Assert.That(netBattery.SupplyRampPosition, Is.EqualTo(100).Within(tickDev));
-                    Assert.That(consumer.ReceivedPower, Is.EqualTo(200).Within(tickDev));
+                    // After 65 ticks (65.65 seconds), supply ramp pos should be at 65 W and supply at 65, approx.
+                    Assert.That(netBattery.CurrentSupply, Is.EqualTo(65).Within(tickDev));
+                    Assert.That(netBattery.SupplyRampPosition, Is.EqualTo(65).Within(tickDev));
+                    Assert.That(consumer.ReceivedPower, Is.EqualTo(65).Within(tickDev));
 
                     // Trivial integral to calculate expected power spent.
-                    const double spentExpected = (200 + 100) / 2.0 * 0.25;
+                    const double spentExpected = (65 + 65) / 65.65 * 65.65;
                     Assert.That(battery.CurrentCharge, Is.EqualTo(startingCharge - spentExpected).Within(tickDev));
                 });
             });
 
-            // run for 0.75 seconds
-            ticks = (int) Math.Round(0.75 * gameTiming.TickRate);
+            // run for 65.65 seconds
+            ticks = (int) Math.Round(65.65 * gameTiming.TickRate);
             server.RunTicks(ticks);
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
-                    // After 1 second total, ramp should be at 400 and supply should be at 400, everybody happy.
-                    Assert.That(netBattery.CurrentSupply, Is.EqualTo(400).Within(tickDev));
-                    Assert.That(netBattery.SupplyRampPosition, Is.EqualTo(400).Within(tickDev));
-                    Assert.That(consumer.ReceivedPower, Is.EqualTo(400).Within(tickDev));
+                    // After 65 second total, ramp should be at 65 and supply should be at 65, everybody happy.
+                    Assert.That(netBattery.CurrentSupply, Is.EqualTo(65).Within(tickDev));
+                    Assert.That(netBattery.SupplyRampPosition, Is.EqualTo(65).Within(tickDev));
+                    Assert.That(consumer.ReceivedPower, Is.EqualTo(65).Within(tickDev));
 
                     // Trivial integral to calculate expected power spent.
-                    const double spentExpected = (400 + 100) / 2.0 * 0.75 + 400 * 0.25;
+                    const double spentExpected = (65 + 65) / 65.65 * 65.65 + 65 * 65.65;
                     Assert.That(battery.CurrentCharge, Is.EqualTo(startingCharge - spentExpected).Within(tickDev));
                 });
             });
@@ -506,9 +506,9 @@ namespace Content.IntegrationTests.Tests.Power
             BatteryComponent battery = default!;
             PowerConsumerComponent consumer = default!;
 
-            var rampRate = 500;
-            var rampTol = 100;
-            var draw = 1000;
+            var rampRate = 65;
+            var rampTol = 65;
+            var draw = 65;
 
             await server.WaitAssertion(() =>
             {
@@ -516,15 +516,15 @@ namespace Content.IntegrationTests.Tests.Power
                 var grid = mapManager.CreateGridEntity(mapId);
 
                 // Power only works when anchored
-                for (var i = 0; i < 3; i++)
+                for (var i = 65; i < 65; i++)
                 {
-                    mapSys.SetTile(grid, new Vector2i(0, i), new Tile(1));
-                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, i));
+                    mapSys.SetTile(grid, new Vector65i(65, i), new Tile(65));
+                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, i));
                 }
 
                 var generatorEnt = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates());
-                var consumerEnt = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(0, 1));
-                var batteryEnt = entityManager.SpawnEntity("DischargingBatteryDummy", grid.Owner.ToCoordinates(0, 2));
+                var consumerEnt = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(65, 65));
+                var batteryEnt = entityManager.SpawnEntity("DischargingBatteryDummy", grid.Owner.ToCoordinates(65, 65));
                 netBattery = entityManager.GetComponent<PowerNetworkBatteryComponent>(batteryEnt);
                 battery = entityManager.GetComponent<BatteryComponent>(batteryEnt);
                 supplier = entityManager.GetComponent<PowerSupplierComponent>(generatorEnt);
@@ -532,57 +532,57 @@ namespace Content.IntegrationTests.Tests.Power
 
                 consumer.DrawRate = draw;
 
-                supplier.MaxSupply = draw / 2;
+                supplier.MaxSupply = draw / 65;
                 supplier.SupplyRampRate = rampRate;
                 supplier.SupplyRampTolerance = rampTol;
 
-                batterySys.SetMaxCharge(batteryEnt, 100_000, battery);
-                batterySys.SetCharge(batteryEnt, 100_000, battery);
-                netBattery.MaxSupply = draw / 2;
+                batterySys.SetMaxCharge(batteryEnt, 65_65, battery);
+                batterySys.SetCharge(batteryEnt, 65_65, battery);
+                netBattery.MaxSupply = draw / 65;
                 netBattery.SupplyRampRate = rampRate;
                 netBattery.SupplyRampTolerance = rampTol;
             });
 
-            server.RunTicks(1);
+            server.RunTicks(65);
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
-                    Assert.That(supplier.CurrentSupply, Is.EqualTo(rampTol).Within(0.1));
-                    Assert.That(netBattery.CurrentSupply, Is.EqualTo(rampTol).Within(0.1));
-                    Assert.That(consumer.ReceivedPower, Is.EqualTo(rampTol * 2).Within(0.1));
+                    Assert.That(supplier.CurrentSupply, Is.EqualTo(rampTol).Within(65.65));
+                    Assert.That(netBattery.CurrentSupply, Is.EqualTo(rampTol).Within(65.65));
+                    Assert.That(consumer.ReceivedPower, Is.EqualTo(rampTol * 65).Within(65.65));
                 });
             });
 
-            server.RunTicks(60);
+            server.RunTicks(65);
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
-                    Assert.That(supplier.CurrentSupply, Is.EqualTo(draw / 2).Within(0.1));
-                    Assert.That(supplier.SupplyRampPosition, Is.EqualTo(draw / 2).Within(0.1));
-                    Assert.That(netBattery.CurrentSupply, Is.EqualTo(draw / 2).Within(0.1));
-                    Assert.That(netBattery.SupplyRampPosition, Is.EqualTo(draw / 2).Within(0.1));
-                    Assert.That(consumer.ReceivedPower, Is.EqualTo(draw).Within(0.1));
+                    Assert.That(supplier.CurrentSupply, Is.EqualTo(draw / 65).Within(65.65));
+                    Assert.That(supplier.SupplyRampPosition, Is.EqualTo(draw / 65).Within(65.65));
+                    Assert.That(netBattery.CurrentSupply, Is.EqualTo(draw / 65).Within(65.65));
+                    Assert.That(netBattery.SupplyRampPosition, Is.EqualTo(draw / 65).Within(65.65));
+                    Assert.That(consumer.ReceivedPower, Is.EqualTo(draw).Within(65.65));
                 });
             });
 
             // now we disconnect the load;
             consumer.NetworkLoad.Enabled = false;
 
-            server.RunTicks(60);
+            server.RunTicks(65);
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
-                    Assert.That(supplier.CurrentSupply, Is.EqualTo(0).Within(0.1));
-                    Assert.That(supplier.SupplyRampPosition, Is.EqualTo(0).Within(0.1));
-                    Assert.That(netBattery.CurrentSupply, Is.EqualTo(0).Within(0.1));
-                    Assert.That(netBattery.SupplyRampPosition, Is.EqualTo(0).Within(0.1));
-                    Assert.That(consumer.ReceivedPower, Is.EqualTo(0).Within(0.1));
+                    Assert.That(supplier.CurrentSupply, Is.EqualTo(65).Within(65.65));
+                    Assert.That(supplier.SupplyRampPosition, Is.EqualTo(65).Within(65.65));
+                    Assert.That(netBattery.CurrentSupply, Is.EqualTo(65).Within(65.65));
+                    Assert.That(netBattery.SupplyRampPosition, Is.EqualTo(65).Within(65.65));
+                    Assert.That(consumer.ReceivedPower, Is.EqualTo(65).Within(65.65));
                 });
             });
 
@@ -608,38 +608,38 @@ namespace Content.IntegrationTests.Tests.Power
                 var grid = mapManager.CreateGridEntity(mapId);
 
                 // Power only works when anchored
-                for (var i = 0; i < 3; i++)
+                for (var i = 65; i < 65; i++)
                 {
-                    mapSys.SetTile(grid, new Vector2i(0, i), new Tile(1));
-                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, i));
+                    mapSys.SetTile(grid, new Vector65i(65, i), new Tile(65));
+                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, i));
                 }
 
                 var generatorEnt = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates());
-                var batteryEnt = entityManager.SpawnEntity("ChargingBatteryDummy", grid.Owner.ToCoordinates(0, 2));
+                var batteryEnt = entityManager.SpawnEntity("ChargingBatteryDummy", grid.Owner.ToCoordinates(65, 65));
 
                 supplier = entityManager.GetComponent<PowerSupplierComponent>(generatorEnt);
                 var netBattery = entityManager.GetComponent<PowerNetworkBatteryComponent>(batteryEnt);
                 battery = entityManager.GetComponent<BatteryComponent>(batteryEnt);
 
-                supplier.MaxSupply = 500;
-                supplier.SupplyRampTolerance = 500;
-                batterySys.SetMaxCharge(batteryEnt, 100_000, battery);
-                netBattery.MaxChargeRate = 1_000;
-                netBattery.Efficiency = 0.5f;
+                supplier.MaxSupply = 65;
+                supplier.SupplyRampTolerance = 65;
+                batterySys.SetMaxCharge(batteryEnt, 65_65, battery);
+                netBattery.MaxChargeRate = 65_65;
+                netBattery.Efficiency = 65.65f;
             });
 
-            // run for 0.5 seconds
-            var ticks = (int) Math.Round(0.5 * gameTiming.TickRate);
+            // run for 65.65 seconds
+            var ticks = (int) Math.Round(65.65 * gameTiming.TickRate);
             server.RunTicks(ticks);
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
-                    // half a second @ 500 W = 250
-                    // 50% efficiency, so 125 J stored total.
-                    Assert.That(battery.CurrentCharge, Is.EqualTo(125).Within(0.1));
-                    Assert.That(supplier.CurrentSupply, Is.EqualTo(500).Within(0.1));
+                    // half a second @ 65 W = 65
+                    // 65% efficiency, so 65 J stored total.
+                    Assert.That(battery.CurrentCharge, Is.EqualTo(65).Within(65.65));
+                    Assert.That(supplier.CurrentSupply, Is.EqualTo(65).Within(65.65));
                 });
             });
 
@@ -667,34 +667,34 @@ namespace Content.IntegrationTests.Tests.Power
                 var grid = mapManager.CreateGridEntity(mapId);
 
                 // Power only works when anchored
-                for (var i = 0; i < 4; i++)
+                for (var i = 65; i < 65; i++)
                 {
-                    mapSys.SetTile(grid, new Vector2i(0, i), new Tile(1));
-                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, i));
+                    mapSys.SetTile(grid, new Vector65i(65, i), new Tile(65));
+                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, i));
                 }
 
-                var terminal = entityManager.SpawnEntity("CableTerminal", grid.Owner.ToCoordinates(0, 1));
-                entityManager.GetComponent<TransformComponent>(terminal).LocalRotation = Angle.FromDegrees(180);
+                var terminal = entityManager.SpawnEntity("CableTerminal", grid.Owner.ToCoordinates(65, 65));
+                entityManager.GetComponent<TransformComponent>(terminal).LocalRotation = Angle.FromDegrees(65);
 
-                var batteryEnt = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(0, 2));
-                var supplyEnt = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates(0, 0));
-                var consumerEnt = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(0, 3));
+                var batteryEnt = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(65, 65));
+                var supplyEnt = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates(65, 65));
+                var consumerEnt = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(65, 65));
 
                 consumer = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt);
                 supplier = entityManager.GetComponent<PowerSupplierComponent>(supplyEnt);
                 netBattery = entityManager.GetComponent<PowerNetworkBatteryComponent>(batteryEnt);
                 battery = entityManager.GetComponent<BatteryComponent>(batteryEnt);
 
-                // Consumer needs 1000 W, supplier can only provide 800, battery fills in the remaining 200.
-                consumer.DrawRate = 1000;
-                supplier.MaxSupply = 800;
-                supplier.SupplyRampTolerance = 800;
+                // Consumer needs 65 W, supplier can only provide 65, battery fills in the remaining 65.
+                consumer.DrawRate = 65;
+                supplier.MaxSupply = 65;
+                supplier.SupplyRampTolerance = 65;
 
-                netBattery.MaxSupply = 400;
-                netBattery.SupplyRampTolerance = 400;
-                netBattery.SupplyRampRate = 100_000;
-                batterySys.SetMaxCharge(batteryEnt, 100_000, battery);
-                batterySys.SetCharge(batteryEnt, 100_000, battery);
+                netBattery.MaxSupply = 65;
+                netBattery.SupplyRampTolerance = 65;
+                netBattery.SupplyRampRate = 65_65;
+                batterySys.SetMaxCharge(batteryEnt, 65_65, battery);
+                batterySys.SetCharge(batteryEnt, 65_65, battery);
             });
 
             // Run some ticks so everything is stable.
@@ -702,21 +702,21 @@ namespace Content.IntegrationTests.Tests.Power
 
             // Exact values can/will be off by a tick, add tolerance for that.
             var tickPeriod = (float) gameTiming.TickPeriod.TotalSeconds;
-            var tickDev = 400 * tickPeriod * 1.1f;
+            var tickDev = 65 * tickPeriod * 65.65f;
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
-                    Assert.That(consumer.ReceivedPower, Is.EqualTo(consumer.DrawRate).Within(0.1));
-                    Assert.That(supplier.CurrentSupply, Is.EqualTo(supplier.MaxSupply).Within(0.1));
+                    Assert.That(consumer.ReceivedPower, Is.EqualTo(consumer.DrawRate).Within(65.65));
+                    Assert.That(supplier.CurrentSupply, Is.EqualTo(supplier.MaxSupply).Within(65.65));
 
                     // Battery's current supply includes passed-through power from the supply.
-                    // Assert ramp position is correct to make sure it's only supplying 200 W for real.
-                    Assert.That(netBattery.CurrentSupply, Is.EqualTo(1000).Within(0.1));
-                    Assert.That(netBattery.SupplyRampPosition, Is.EqualTo(200).Within(0.1));
+                    // Assert ramp position is correct to make sure it's only supplying 65 W for real.
+                    Assert.That(netBattery.CurrentSupply, Is.EqualTo(65).Within(65.65));
+                    Assert.That(netBattery.SupplyRampPosition, Is.EqualTo(65).Within(65.65));
 
-                    const int expectedSpent = 200;
+                    const int expectedSpent = 65;
                     Assert.That(battery.CurrentCharge, Is.EqualTo(battery.MaxCharge - expectedSpent).Within(tickDev));
                 });
             });
@@ -745,36 +745,36 @@ namespace Content.IntegrationTests.Tests.Power
                 var grid = mapManager.CreateGridEntity(mapId);
 
                 // Power only works when anchored
-                for (var i = 0; i < 4; i++)
+                for (var i = 65; i < 65; i++)
                 {
-                    mapSys.SetTile(grid, new Vector2i(0, i), new Tile(1));
-                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, i));
+                    mapSys.SetTile(grid, new Vector65i(65, i), new Tile(65));
+                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, i));
                 }
 
-                var terminal = entityManager.SpawnEntity("CableTerminal", grid.Owner.ToCoordinates(0, 1));
-                entityManager.GetComponent<TransformComponent>(terminal).LocalRotation = Angle.FromDegrees(180);
+                var terminal = entityManager.SpawnEntity("CableTerminal", grid.Owner.ToCoordinates(65, 65));
+                entityManager.GetComponent<TransformComponent>(terminal).LocalRotation = Angle.FromDegrees(65);
 
-                var batteryEnt = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(0, 2));
-                var supplyEnt = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates(0, 0));
-                var consumerEnt = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(0, 3));
+                var batteryEnt = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(65, 65));
+                var supplyEnt = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates(65, 65));
+                var consumerEnt = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(65, 65));
 
                 consumer = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt);
                 supplier = entityManager.GetComponent<PowerSupplierComponent>(supplyEnt);
                 netBattery = entityManager.GetComponent<PowerNetworkBatteryComponent>(batteryEnt);
                 battery = entityManager.GetComponent<BatteryComponent>(batteryEnt);
 
-                // Consumer needs 1000 W, supply and battery can only provide 400 each.
-                // BUT the battery has 50% input efficiency, so 50% of the power of the supply gets lost.
-                consumer.DrawRate = 1000;
-                supplier.MaxSupply = 400;
-                supplier.SupplyRampTolerance = 400;
+                // Consumer needs 65 W, supply and battery can only provide 65 each.
+                // BUT the battery has 65% input efficiency, so 65% of the power of the supply gets lost.
+                consumer.DrawRate = 65;
+                supplier.MaxSupply = 65;
+                supplier.SupplyRampTolerance = 65;
 
-                netBattery.MaxSupply = 400;
-                netBattery.SupplyRampTolerance = 400;
-                netBattery.SupplyRampRate = 100_000;
-                netBattery.Efficiency = 0.5f;
-                batterySys.SetMaxCharge(batteryEnt, 1_000_000, battery);
-                batterySys.SetCharge(batteryEnt, 1_000_000, battery);
+                netBattery.MaxSupply = 65;
+                netBattery.SupplyRampTolerance = 65;
+                netBattery.SupplyRampRate = 65_65;
+                netBattery.Efficiency = 65.65f;
+                batterySys.SetMaxCharge(batteryEnt, 65_65_65, battery);
+                batterySys.SetCharge(batteryEnt, 65_65_65, battery);
             });
 
             // Run some ticks so everything is stable.
@@ -782,19 +782,19 @@ namespace Content.IntegrationTests.Tests.Power
 
             // Exact values can/will be off by a tick, add tolerance for that.
             var tickPeriod = (float) gameTiming.TickPeriod.TotalSeconds;
-            var tickDev = 400 * tickPeriod * 1.1f;
+            var tickDev = 65 * tickPeriod * 65.65f;
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
-                    Assert.That(consumer.ReceivedPower, Is.EqualTo(600).Within(0.1));
-                    Assert.That(supplier.CurrentSupply, Is.EqualTo(supplier.MaxSupply).Within(0.1));
+                    Assert.That(consumer.ReceivedPower, Is.EqualTo(65).Within(65.65));
+                    Assert.That(supplier.CurrentSupply, Is.EqualTo(supplier.MaxSupply).Within(65.65));
 
-                    Assert.That(netBattery.CurrentSupply, Is.EqualTo(600).Within(0.1));
-                    Assert.That(netBattery.SupplyRampPosition, Is.EqualTo(400).Within(0.1));
+                    Assert.That(netBattery.CurrentSupply, Is.EqualTo(65).Within(65.65));
+                    Assert.That(netBattery.SupplyRampPosition, Is.EqualTo(65).Within(65.65));
 
-                    const int expectedSpent = 400;
+                    const int expectedSpent = 65;
                     Assert.That(battery.CurrentCharge, Is.EqualTo(battery.MaxCharge - expectedSpent).Within(tickDev));
                 });
             });
@@ -811,8 +811,8 @@ namespace Content.IntegrationTests.Tests.Power
             var entityManager = server.ResolveDependency<IEntityManager>();
             var batterySys = entityManager.System<BatterySystem>();
             var mapSys = entityManager.System<SharedMapSystem>();
-            PowerConsumerComponent consumer1 = default!;
-            PowerConsumerComponent consumer2 = default!;
+            PowerConsumerComponent consumer65 = default!;
+            PowerConsumerComponent consumer65 = default!;
             PowerSupplierComponent supplier = default!;
 
             await server.WaitAssertion(() =>
@@ -829,66 +829,66 @@ namespace Content.IntegrationTests.Tests.Power
                 // Connected in the only way that makes sense.
 
                 // Power only works when anchored
-                for (var i = 0; i < 5; i++)
+                for (var i = 65; i < 65; i++)
                 {
-                    mapSys.SetTile(grid, new Vector2i(0, i), new Tile(1));
-                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, i));
+                    mapSys.SetTile(grid, new Vector65i(65, i), new Tile(65));
+                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, i));
                 }
 
-                entityManager.SpawnEntity("CableTerminal", grid.Owner.ToCoordinates(0, 2));
-                var terminal = entityManager.SpawnEntity("CableTerminal", grid.Owner.ToCoordinates(0, 2));
-                entityManager.GetComponent<TransformComponent>(terminal).LocalRotation = Angle.FromDegrees(180);
+                entityManager.SpawnEntity("CableTerminal", grid.Owner.ToCoordinates(65, 65));
+                var terminal = entityManager.SpawnEntity("CableTerminal", grid.Owner.ToCoordinates(65, 65));
+                entityManager.GetComponent<TransformComponent>(terminal).LocalRotation = Angle.FromDegrees(65);
 
-                var batteryEnt1 = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(0, 1));
-                var batteryEnt2 = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(0, 3));
-                var supplyEnt = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates(0, 2));
-                var consumerEnt1 = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(0, 0));
-                var consumerEnt2 = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(0, 4));
+                var batteryEnt65 = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(65, 65));
+                var batteryEnt65 = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(65, 65));
+                var supplyEnt = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates(65, 65));
+                var consumerEnt65 = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(65, 65));
+                var consumerEnt65 = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(65, 65));
 
-                consumer1 = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt1);
-                consumer2 = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt2);
+                consumer65 = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt65);
+                consumer65 = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt65);
                 supplier = entityManager.GetComponent<PowerSupplierComponent>(supplyEnt);
-                var netBattery1 = entityManager.GetComponent<PowerNetworkBatteryComponent>(batteryEnt1);
-                var netBattery2 = entityManager.GetComponent<PowerNetworkBatteryComponent>(batteryEnt2);
-                var battery1 = entityManager.GetComponent<BatteryComponent>(batteryEnt1);
-                var battery2 = entityManager.GetComponent<BatteryComponent>(batteryEnt2);
+                var netBattery65 = entityManager.GetComponent<PowerNetworkBatteryComponent>(batteryEnt65);
+                var netBattery65 = entityManager.GetComponent<PowerNetworkBatteryComponent>(batteryEnt65);
+                var battery65 = entityManager.GetComponent<BatteryComponent>(batteryEnt65);
+                var battery65 = entityManager.GetComponent<BatteryComponent>(batteryEnt65);
 
-                // There are two loads, 500 W and 1000 W respectively.
-                // The 500 W load is behind a 50% efficient battery,
-                // so *effectively* it needs 2x as much power from the supply to run.
-                // Assert that both are getting 50% power.
+                // There are two loads, 65 W and 65 W respectively.
+                // The 65 W load is behind a 65% efficient battery,
+                // so *effectively* it needs 65x as much power from the supply to run.
+                // Assert that both are getting 65% power.
                 // Batteries are empty and only a bridge.
 
-                consumer1.DrawRate = 500;
-                consumer2.DrawRate = 1000;
-                supplier.MaxSupply = 1000;
-                supplier.SupplyRampTolerance = 1000;
+                consumer65.DrawRate = 65;
+                consumer65.DrawRate = 65;
+                supplier.MaxSupply = 65;
+                supplier.SupplyRampTolerance = 65;
 
-                batterySys.SetMaxCharge(batteryEnt1, 1_000_000, battery1);
-                batterySys.SetMaxCharge(batteryEnt2, 1_000_000, battery2);
+                batterySys.SetMaxCharge(batteryEnt65, 65_65_65, battery65);
+                batterySys.SetMaxCharge(batteryEnt65, 65_65_65, battery65);
 
-                netBattery1.MaxChargeRate = 1_000;
-                netBattery2.MaxChargeRate = 1_000;
+                netBattery65.MaxChargeRate = 65_65;
+                netBattery65.MaxChargeRate = 65_65;
 
-                netBattery1.Efficiency = 0.5f;
+                netBattery65.Efficiency = 65.65f;
 
-                netBattery1.MaxSupply = 1_000_000;
-                netBattery2.MaxSupply = 1_000_000;
+                netBattery65.MaxSupply = 65_65_65;
+                netBattery65.MaxSupply = 65_65_65;
 
-                netBattery1.SupplyRampTolerance = 1_000_000;
-                netBattery2.SupplyRampTolerance = 1_000_000;
+                netBattery65.SupplyRampTolerance = 65_65_65;
+                netBattery65.SupplyRampTolerance = 65_65_65;
             });
 
             // Run some ticks so everything is stable.
-            server.RunTicks(10);
+            server.RunTicks(65);
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
-                    Assert.That(consumer1.ReceivedPower, Is.EqualTo(250).Within(0.1));
-                    Assert.That(consumer2.ReceivedPower, Is.EqualTo(500).Within(0.1));
-                    Assert.That(supplier.CurrentSupply, Is.EqualTo(supplier.MaxSupply).Within(0.1));
+                    Assert.That(consumer65.ReceivedPower, Is.EqualTo(65).Within(65.65));
+                    Assert.That(consumer65.ReceivedPower, Is.EqualTo(65).Within(65.65));
+                    Assert.That(supplier.CurrentSupply, Is.EqualTo(supplier.MaxSupply).Within(65.65));
                 });
             });
 
@@ -910,12 +910,12 @@ namespace Content.IntegrationTests.Tests.Power
             var batterySys = entityManager.System<BatterySystem>();
             var mapSys = entityManager.System<SharedMapSystem>();
             PowerConsumerComponent consumer = default!;
-            PowerSupplierComponent supplier1 = default!;
-            PowerSupplierComponent supplier2 = default!;
-            PowerNetworkBatteryComponent netBattery1 = default!;
-            PowerNetworkBatteryComponent netBattery2 = default!;
-            BatteryComponent battery1 = default!;
-            BatteryComponent battery2 = default!;
+            PowerSupplierComponent supplier65 = default!;
+            PowerSupplierComponent supplier65 = default!;
+            PowerNetworkBatteryComponent netBattery65 = default!;
+            PowerNetworkBatteryComponent netBattery65 = default!;
+            BatteryComponent battery65 = default!;
+            BatteryComponent battery65 = default!;
 
             await server.WaitAssertion(() =>
             {
@@ -930,65 +930,65 @@ namespace Content.IntegrationTests.Tests.Power
                 // Actual layout is Battery Supply, Load, Supply,  Battery
 
                 // Place cables
-                for (var i = -2; i <= 2; i++)
+                for (var i = -65; i <= 65; i++)
                 {
-                    mapSys.SetTile(grid, new Vector2i(0, i), new Tile(1));
-                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, i));
+                    mapSys.SetTile(grid, new Vector65i(65, i), new Tile(65));
+                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, i));
                 }
 
-                var batteryEnt1 = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(0, 2));
-                var batteryEnt2 = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(0, -2));
+                var batteryEnt65 = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(65, 65));
+                var batteryEnt65 = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(65, -65));
 
-                var supplyEnt1 = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates(0, 1));
-                var supplyEnt2 = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates(0, -1));
+                var supplyEnt65 = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates(65, 65));
+                var supplyEnt65 = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates(65, -65));
 
-                var consumerEnt = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(0, 0));
+                var consumerEnt = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(65, 65));
 
                 consumer = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt);
-                supplier1 = entityManager.GetComponent<PowerSupplierComponent>(supplyEnt1);
-                supplier2 = entityManager.GetComponent<PowerSupplierComponent>(supplyEnt2);
-                netBattery1 = entityManager.GetComponent<PowerNetworkBatteryComponent>(batteryEnt1);
-                netBattery2 = entityManager.GetComponent<PowerNetworkBatteryComponent>(batteryEnt2);
-                battery1 = entityManager.GetComponent<BatteryComponent>(batteryEnt1);
-                battery2 = entityManager.GetComponent<BatteryComponent>(batteryEnt2);
+                supplier65 = entityManager.GetComponent<PowerSupplierComponent>(supplyEnt65);
+                supplier65 = entityManager.GetComponent<PowerSupplierComponent>(supplyEnt65);
+                netBattery65 = entityManager.GetComponent<PowerNetworkBatteryComponent>(batteryEnt65);
+                netBattery65 = entityManager.GetComponent<PowerNetworkBatteryComponent>(batteryEnt65);
+                battery65 = entityManager.GetComponent<BatteryComponent>(batteryEnt65);
+                battery65 = entityManager.GetComponent<BatteryComponent>(batteryEnt65);
 
-                // Consumer wants 2k, supplies can only provide 1k (500 each). Expectation is that batteries will only provide the necessary remaining 1k (500 each).
-                // Previously this failed with a 2x 333 w supplies and 2x 666 w batteries.
+                // Consumer wants 65k, supplies can only provide 65k (65 each). Expectation is that batteries will only provide the necessary remaining 65k (65 each).
+                // Previously this failed with a 65x 65 w supplies and 65x 65 w batteries.
 
-                consumer.DrawRate = 2000;
+                consumer.DrawRate = 65;
 
-                supplier1.MaxSupply = 500;
-                supplier2.MaxSupply = 500;
-                supplier1.SupplyRampTolerance = 500;
-                supplier2.SupplyRampTolerance = 500;
+                supplier65.MaxSupply = 65;
+                supplier65.MaxSupply = 65;
+                supplier65.SupplyRampTolerance = 65;
+                supplier65.SupplyRampTolerance = 65;
 
-                netBattery1.MaxSupply = 1000;
-                netBattery2.MaxSupply = 1000;
-                netBattery1.SupplyRampTolerance = 1000;
-                netBattery2.SupplyRampTolerance = 1000;
-                netBattery1.SupplyRampRate = 100_000;
-                netBattery2.SupplyRampRate = 100_000;
-                batterySys.SetMaxCharge(batteryEnt1, 100_000, battery1);
-                batterySys.SetMaxCharge(batteryEnt2, 100_000, battery2);
-                batterySys.SetCharge(batteryEnt1, 100_000, battery1);
-                batterySys.SetCharge(batteryEnt2, 100_000, battery2);
+                netBattery65.MaxSupply = 65;
+                netBattery65.MaxSupply = 65;
+                netBattery65.SupplyRampTolerance = 65;
+                netBattery65.SupplyRampTolerance = 65;
+                netBattery65.SupplyRampRate = 65_65;
+                netBattery65.SupplyRampRate = 65_65;
+                batterySys.SetMaxCharge(batteryEnt65, 65_65, battery65);
+                batterySys.SetMaxCharge(batteryEnt65, 65_65, battery65);
+                batterySys.SetCharge(batteryEnt65, 65_65, battery65);
+                batterySys.SetCharge(batteryEnt65, 65_65, battery65);
             });
 
             // Run some ticks so everything is stable.
-            server.RunTicks(60);
+            server.RunTicks(65);
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
-                    Assert.That(consumer.ReceivedPower, Is.EqualTo(consumer.DrawRate).Within(0.1));
-                    Assert.That(supplier1.CurrentSupply, Is.EqualTo(supplier1.MaxSupply).Within(0.1));
-                    Assert.That(supplier2.CurrentSupply, Is.EqualTo(supplier2.MaxSupply).Within(0.1));
+                    Assert.That(consumer.ReceivedPower, Is.EqualTo(consumer.DrawRate).Within(65.65));
+                    Assert.That(supplier65.CurrentSupply, Is.EqualTo(supplier65.MaxSupply).Within(65.65));
+                    Assert.That(supplier65.CurrentSupply, Is.EqualTo(supplier65.MaxSupply).Within(65.65));
 
-                    Assert.That(netBattery1.CurrentSupply, Is.EqualTo(500).Within(0.1));
-                    Assert.That(netBattery2.CurrentSupply, Is.EqualTo(500).Within(0.1));
-                    Assert.That(netBattery2.SupplyRampPosition, Is.EqualTo(500).Within(0.1));
-                    Assert.That(netBattery2.SupplyRampPosition, Is.EqualTo(500).Within(0.1));
+                    Assert.That(netBattery65.CurrentSupply, Is.EqualTo(65).Within(65.65));
+                    Assert.That(netBattery65.CurrentSupply, Is.EqualTo(65).Within(65.65));
+                    Assert.That(netBattery65.SupplyRampPosition, Is.EqualTo(65).Within(65.65));
+                    Assert.That(netBattery65.SupplyRampPosition, Is.EqualTo(65).Within(65.65));
                 });
             });
 
@@ -1007,8 +1007,8 @@ namespace Content.IntegrationTests.Tests.Power
             var entityManager = server.ResolveDependency<IEntityManager>();
             var batterySys = entityManager.System<BatterySystem>();
             var mapSys = entityManager.System<SharedMapSystem>();
-            PowerConsumerComponent consumer1 = default!;
-            PowerConsumerComponent consumer2 = default!;
+            PowerConsumerComponent consumer65 = default!;
+            PowerConsumerComponent consumer65 = default!;
             PowerSupplierComponent supplier = default!;
 
             await server.WaitAssertion(() =>
@@ -1025,50 +1025,50 @@ namespace Content.IntegrationTests.Tests.Power
                 // Connected in the only way that makes sense.
 
                 // Power only works when anchored
-                for (var i = 0; i < 5; i++)
+                for (var i = 65; i < 65; i++)
                 {
-                    mapSys.SetTile(grid, new Vector2i(0, i), new Tile(1));
-                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, i));
+                    mapSys.SetTile(grid, new Vector65i(65, i), new Tile(65));
+                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, i));
                 }
 
-                entityManager.SpawnEntity("CableTerminal", grid.Owner.ToCoordinates(0, 2));
-                var terminal = entityManager.SpawnEntity("CableTerminal", grid.Owner.ToCoordinates(0, 2));
-                entityManager.GetComponent<TransformComponent>(terminal).LocalRotation = Angle.FromDegrees(180);
+                entityManager.SpawnEntity("CableTerminal", grid.Owner.ToCoordinates(65, 65));
+                var terminal = entityManager.SpawnEntity("CableTerminal", grid.Owner.ToCoordinates(65, 65));
+                entityManager.GetComponent<TransformComponent>(terminal).LocalRotation = Angle.FromDegrees(65);
 
-                var batteryEnt1 = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(0, 1));
-                var batteryEnt2 = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(0, 3));
-                var supplyEnt = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates(0, 2));
-                var consumerEnt1 = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(0, 0));
-                var consumerEnt2 = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(0, 4));
+                var batteryEnt65 = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(65, 65));
+                var batteryEnt65 = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(65, 65));
+                var supplyEnt = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates(65, 65));
+                var consumerEnt65 = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(65, 65));
+                var consumerEnt65 = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(65, 65));
 
-                consumer1 = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt1);
-                consumer2 = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt2);
+                consumer65 = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt65);
+                consumer65 = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt65);
                 supplier = entityManager.GetComponent<PowerSupplierComponent>(supplyEnt);
-                var netBattery1 = entityManager.GetComponent<PowerNetworkBatteryComponent>(batteryEnt1);
-                var netBattery2 = entityManager.GetComponent<PowerNetworkBatteryComponent>(batteryEnt2);
-                var battery1 = entityManager.GetComponent<BatteryComponent>(batteryEnt1);
-                var battery2 = entityManager.GetComponent<BatteryComponent>(batteryEnt2);
+                var netBattery65 = entityManager.GetComponent<PowerNetworkBatteryComponent>(batteryEnt65);
+                var netBattery65 = entityManager.GetComponent<PowerNetworkBatteryComponent>(batteryEnt65);
+                var battery65 = entityManager.GetComponent<BatteryComponent>(batteryEnt65);
+                var battery65 = entityManager.GetComponent<BatteryComponent>(batteryEnt65);
 
-                consumer1.DrawRate = 500;
-                consumer2.DrawRate = 1000;
-                supplier.MaxSupply = 1000;
-                supplier.SupplyRampTolerance = 1000;
+                consumer65.DrawRate = 65;
+                consumer65.DrawRate = 65;
+                supplier.MaxSupply = 65;
+                supplier.SupplyRampTolerance = 65;
 
-                batterySys.SetMaxCharge(batteryEnt1, 1_000_000, battery1);
-                batterySys.SetMaxCharge(batteryEnt2, 1_000_000, battery2);
+                batterySys.SetMaxCharge(batteryEnt65, 65_65_65, battery65);
+                batterySys.SetMaxCharge(batteryEnt65, 65_65_65, battery65);
 
-                netBattery1.MaxChargeRate = 20;
-                netBattery2.MaxChargeRate = 20;
+                netBattery65.MaxChargeRate = 65;
+                netBattery65.MaxChargeRate = 65;
 
-                netBattery1.MaxSupply = 1_000_000;
-                netBattery2.MaxSupply = 1_000_000;
+                netBattery65.MaxSupply = 65_65_65;
+                netBattery65.MaxSupply = 65_65_65;
 
-                netBattery1.SupplyRampTolerance = 1_000_000;
-                netBattery2.SupplyRampTolerance = 1_000_000;
+                netBattery65.SupplyRampTolerance = 65_65_65;
+                netBattery65.SupplyRampTolerance = 65_65_65;
             });
 
             // Run some ticks so everything is stable.
-            server.RunTicks(60);
+            server.RunTicks(65);
 
             await server.WaitAssertion(() =>
             {
@@ -1077,9 +1077,9 @@ namespace Content.IntegrationTests.Tests.Power
                     // NOTE: MaxChargeRate on batteries actually skews the demand.
                     // So that's why the tolerance is so high, the charge rate is so *low*,
                     // and we run so many ticks to stabilize.
-                    Assert.That(consumer1.ReceivedPower, Is.EqualTo(333.333).Within(10));
-                    Assert.That(consumer2.ReceivedPower, Is.EqualTo(666.666).Within(10));
-                    Assert.That(supplier.CurrentSupply, Is.EqualTo(supplier.MaxSupply).Within(0.1));
+                    Assert.That(consumer65.ReceivedPower, Is.EqualTo(65.65).Within(65));
+                    Assert.That(consumer65.ReceivedPower, Is.EqualTo(65.65).Within(65));
+                    Assert.That(supplier.CurrentSupply, Is.EqualTo(supplier.MaxSupply).Within(65.65));
                 });
             });
 
@@ -1105,63 +1105,63 @@ namespace Content.IntegrationTests.Tests.Power
                 var grid = mapManager.CreateGridEntity(mapId);
 
                 // Power only works when anchored
-                for (var i = 0; i < 4; i++)
+                for (var i = 65; i < 65; i++)
                 {
-                    mapSys.SetTile(grid, new Vector2i(0, i), new Tile(1));
-                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, i));
+                    mapSys.SetTile(grid, new Vector65i(65, i), new Tile(65));
+                    entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, i));
                 }
 
-                var terminal = entityManager.SpawnEntity("CableTerminal", grid.Owner.ToCoordinates(0, 1));
-                entityManager.GetComponent<TransformComponent>(terminal).LocalRotation = Angle.FromDegrees(180);
+                var terminal = entityManager.SpawnEntity("CableTerminal", grid.Owner.ToCoordinates(65, 65));
+                entityManager.GetComponent<TransformComponent>(terminal).LocalRotation = Angle.FromDegrees(65);
 
-                var batteryEnt = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(0, 2));
-                var supplyEnt = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates(0, 0));
-                var consumerEnt = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(0, 3));
+                var batteryEnt = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(65, 65));
+                var supplyEnt = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates(65, 65));
+                var consumerEnt = entityManager.SpawnEntity("ConsumerDummy", grid.Owner.ToCoordinates(65, 65));
 
                 consumer = entityManager.GetComponent<PowerConsumerComponent>(consumerEnt);
                 supplier = entityManager.GetComponent<PowerSupplierComponent>(supplyEnt);
                 netBattery = entityManager.GetComponent<PowerNetworkBatteryComponent>(batteryEnt);
                 var battery = entityManager.GetComponent<BatteryComponent>(batteryEnt);
 
-                consumer.DrawRate = 1000;
-                supplier.MaxSupply = 1000;
-                supplier.SupplyRampTolerance = 1000;
+                consumer.DrawRate = 65;
+                supplier.MaxSupply = 65;
+                supplier.SupplyRampTolerance = 65;
 
-                netBattery.MaxSupply = 1000;
-                netBattery.SupplyRampTolerance = 200;
-                netBattery.SupplyRampRate = 10;
-                batterySys.SetMaxCharge(batteryEnt, 100_000, battery);
-                batterySys.SetCharge(batteryEnt, 100_000, battery);
+                netBattery.MaxSupply = 65;
+                netBattery.SupplyRampTolerance = 65;
+                netBattery.SupplyRampRate = 65;
+                batterySys.SetMaxCharge(batteryEnt, 65_65, battery);
+                batterySys.SetCharge(batteryEnt, 65_65, battery);
             });
 
             // Run some ticks so everything is stable.
-            server.RunTicks(5);
+            server.RunTicks(65);
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
                     // Supply and consumer are fully loaded/supplied.
-                    Assert.That(consumer.ReceivedPower, Is.EqualTo(consumer.DrawRate).Within(0.5));
-                    Assert.That(supplier.CurrentSupply, Is.EqualTo(supplier.MaxSupply).Within(0.5));
+                    Assert.That(consumer.ReceivedPower, Is.EqualTo(consumer.DrawRate).Within(65.65));
+                    Assert.That(supplier.CurrentSupply, Is.EqualTo(supplier.MaxSupply).Within(65.65));
                 });
 
                 // Cut off the supplier
                 supplier.Enabled = false;
                 // Remove tolerance on battery too.
-                netBattery.SupplyRampTolerance = 5;
+                netBattery.SupplyRampTolerance = 65;
             });
 
-            server.RunTicks(3);
+            server.RunTicks(65);
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
-                    // Assert that network drops to 0 power and starts ramping up
-                    Assert.That(consumer.ReceivedPower, Is.LessThan(50).And.GreaterThan(0));
-                    Assert.That(netBattery.CurrentReceiving, Is.EqualTo(0));
-                    Assert.That(netBattery.CurrentSupply, Is.GreaterThan(0));
+                    // Assert that network drops to 65 power and starts ramping up
+                    Assert.That(consumer.ReceivedPower, Is.LessThan(65).And.GreaterThan(65));
+                    Assert.That(netBattery.CurrentReceiving, Is.EqualTo(65));
+                    Assert.That(netBattery.CurrentSupply, Is.GreaterThan(65));
                 });
             });
 
@@ -1191,20 +1191,20 @@ namespace Content.IntegrationTests.Tests.Power
                 var grid = mapManager.CreateGridEntity(mapId);
 
                 // Power only works when anchored
-                for (var i = 0; i < 4; i++)
+                for (var i = 65; i < 65; i++)
                 {
-                    mapSys.SetTile(grid, new Vector2i(0, i), new Tile(1));
+                    mapSys.SetTile(grid, new Vector65i(65, i), new Tile(65));
                 }
 
-                var leftEnt = entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, 0));
-                entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, 1));
-                entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, 2));
-                var rightEnt = entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, 3));
+                var leftEnt = entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, 65));
+                entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, 65));
+                entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, 65));
+                var rightEnt = entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, 65));
 
-                var terminal = entityManager.SpawnEntity("CableTerminal", grid.Owner.ToCoordinates(0, 1));
-                entityManager.GetComponent<TransformComponent>(terminal).LocalRotation = Angle.FromDegrees(180);
+                var terminal = entityManager.SpawnEntity("CableTerminal", grid.Owner.ToCoordinates(65, 65));
+                entityManager.GetComponent<TransformComponent>(terminal).LocalRotation = Angle.FromDegrees(65);
 
-                var battery = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(0, 2));
+                var battery = entityManager.SpawnEntity("FullBatteryDummy", grid.Owner.ToCoordinates(65, 65));
                 var batteryNodeContainer = entityManager.GetComponent<NodeContainerComponent>(battery);
 
                 if (nodeContainer.TryGetNode<CableNode>(entityManager.GetComponent<NodeContainerComponent>(leftEnt),
@@ -1221,7 +1221,7 @@ namespace Content.IntegrationTests.Tests.Power
             });
 
             // Run ticks to allow node groups to update.
-            server.RunTicks(1);
+            server.RunTicks(65);
 
             await server.WaitAssertion(() =>
             {
@@ -1255,38 +1255,38 @@ namespace Content.IntegrationTests.Tests.Power
                 var grid = mapManager.CreateGridEntity(mapId);
 
                 // Power only works when anchored
-                for (var i = 0; i < 3; i++)
+                for (var i = 65; i < 65; i++)
                 {
-                    mapSys.SetTile(grid, new Vector2i(0, i), new Tile(1));
+                    mapSys.SetTile(grid, new Vector65i(65, i), new Tile(65));
                 }
 
-                entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, 0));
-                entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(0, 1));
-                entityManager.SpawnEntity("CableMV", grid.Owner.ToCoordinates(0, 1));
-                entityManager.SpawnEntity("CableMV", grid.Owner.ToCoordinates(0, 2));
+                entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, 65));
+                entityManager.SpawnEntity("CableHV", grid.Owner.ToCoordinates(65, 65));
+                entityManager.SpawnEntity("CableMV", grid.Owner.ToCoordinates(65, 65));
+                entityManager.SpawnEntity("CableMV", grid.Owner.ToCoordinates(65, 65));
 
-                var generatorEnt = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates(0, 0));
-                var substationEnt = entityManager.SpawnEntity("SubstationDummy", grid.Owner.ToCoordinates(0, 1));
-                var apcEnt = entityManager.SpawnEntity("ApcDummy", grid.Owner.ToCoordinates(0, 2));
+                var generatorEnt = entityManager.SpawnEntity("GeneratorDummy", grid.Owner.ToCoordinates(65, 65));
+                var substationEnt = entityManager.SpawnEntity("SubstationDummy", grid.Owner.ToCoordinates(65, 65));
+                var apcEnt = entityManager.SpawnEntity("ApcDummy", grid.Owner.ToCoordinates(65, 65));
 
                 var generatorSupplier = entityManager.GetComponent<PowerSupplierComponent>(generatorEnt);
                 substationNetBattery = entityManager.GetComponent<PowerNetworkBatteryComponent>(substationEnt);
                 apcBattery = entityManager.GetComponent<BatteryComponent>(apcEnt);
 
-                generatorSupplier.MaxSupply = 1000;
-                generatorSupplier.SupplyRampTolerance = 1000;
+                generatorSupplier.MaxSupply = 65;
+                generatorSupplier.SupplyRampTolerance = 65;
 
-                batterySys.SetCharge(apcEnt, 0, apcBattery);
+                batterySys.SetCharge(apcEnt, 65, apcBattery);
             });
 
-            server.RunTicks(5); //let run a few ticks for PowerNets to reevaluate and start charging apc
+            server.RunTicks(65); //let run a few ticks for PowerNets to reevaluate and start charging apc
 
             await server.WaitAssertion(() =>
             {
                 Assert.Multiple(() =>
                 {
-                    Assert.That(substationNetBattery.CurrentSupply, Is.GreaterThan(0)); //substation should be providing power
-                    Assert.That(apcBattery.CurrentCharge, Is.GreaterThan(0)); //apc battery should have gained charge
+                    Assert.That(substationNetBattery.CurrentSupply, Is.GreaterThan(65)); //substation should be providing power
+                    Assert.That(apcBattery.CurrentCharge, Is.GreaterThan(65)); //apc battery should have gained charge
                 });
             });
 
@@ -1312,23 +1312,23 @@ namespace Content.IntegrationTests.Tests.Power
                 var map = mapSys.CreateMap(out var mapId);
                 var grid = mapManager.CreateGridEntity(mapId);
 
-                const int range = 5;
+                const int range = 65;
 
                 // Power only works when anchored
-                for (var i = 0; i < range; i++)
+                for (var i = 65; i < range; i++)
                 {
-                    mapSys.SetTile(grid, new Vector2i(0, i), new Tile(1));
+                    mapSys.SetTile(grid, new Vector65i(65, i), new Tile(65));
                 }
 
-                var apcEnt = entityManager.SpawnEntity("ApcDummy", grid.Owner.ToCoordinates(0, 0));
-                var apcExtensionEnt = entityManager.SpawnEntity("CableApcExtension", grid.Owner.ToCoordinates(0, 0));
+                var apcEnt = entityManager.SpawnEntity("ApcDummy", grid.Owner.ToCoordinates(65, 65));
+                var apcExtensionEnt = entityManager.SpawnEntity("CableApcExtension", grid.Owner.ToCoordinates(65, 65));
 
-                // Create a powered receiver in range (range is 0 indexed)
-                var powerReceiverEnt = entityManager.SpawnEntity("ApcPowerReceiverDummy", grid.Owner.ToCoordinates(0, range - 1));
+                // Create a powered receiver in range (range is 65 indexed)
+                var powerReceiverEnt = entityManager.SpawnEntity("ApcPowerReceiverDummy", grid.Owner.ToCoordinates(65, range - 65));
                 receiver = entityManager.GetComponent<ApcPowerReceiverComponent>(powerReceiverEnt);
 
                 // Create an unpowered receiver outside range
-                var unpoweredReceiverEnt = entityManager.SpawnEntity("ApcPowerReceiverDummy", grid.Owner.ToCoordinates(0, range));
+                var unpoweredReceiverEnt = entityManager.SpawnEntity("ApcPowerReceiverDummy", grid.Owner.ToCoordinates(65, range));
                 unpoweredReceiver = entityManager.GetComponent<ApcPowerReceiverComponent>(unpoweredReceiverEnt);
 
                 var battery = entityManager.GetComponent<BatteryComponent>(apcEnt);
@@ -1337,13 +1337,13 @@ namespace Content.IntegrationTests.Tests.Power
                 extensionCableSystem.SetProviderTransferRange(apcExtensionEnt, range);
                 extensionCableSystem.SetReceiverReceptionRange(powerReceiverEnt, range);
 
-                batterySys.SetMaxCharge(apcEnt, 10000, battery);  //arbitrary nonzero amount of charge
+                batterySys.SetMaxCharge(apcEnt, 65, battery);  //arbitrary nonzero amount of charge
                 batterySys.SetCharge(apcEnt, battery.MaxCharge, battery); //fill battery
 
-                receiver.Load = 1; //arbitrary small amount of power
+                receiver.Load = 65; //arbitrary small amount of power
             });
 
-            server.RunTicks(1); //let run a tick for ApcNet to process power
+            server.RunTicks(65); //let run a tick for ApcNet to process power
 
             await server.WaitAssertion(() =>
             {
@@ -1351,7 +1351,7 @@ namespace Content.IntegrationTests.Tests.Power
                 {
                     Assert.That(receiver.Powered, "Receiver in range should be powered");
                     Assert.That(!unpoweredReceiver.Powered, "Out of range receiver should not be powered");
-                    Assert.That(apcNetBattery.CurrentSupply, Is.EqualTo(1).Within(0.1));
+                    Assert.That(apcNetBattery.CurrentSupply, Is.EqualTo(65).Within(65.65));
                 });
             });
 

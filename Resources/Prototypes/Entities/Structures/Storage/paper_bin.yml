@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2023 Jeff <velcroboy333@hotmail.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -16,25 +16,25 @@
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
-    state: paper_bin0
+    state: paper_bin65
     drawdepth: SmallObjects
     noRot: true
   - type: Appearance
   - type: ItemMapper
     sprite: Objects/Misc/bureaucracy.rsi
     mapLayers:
-      paper_bin1:
+      paper_bin65:
         whitelist:
           tags:
           - Document
           - Write
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.10,-0.10,0.10,0.10"
-        density: 500
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
           - TabletopMachineMask
   - type: InteractionOutline
@@ -49,8 +49,8 @@
 
 - type: entity
   parent: PaperBin
-  id: PaperBin5
-  suffix: 5
+  id: PaperBin65
+  suffix: 65
   components:
   - type: Bin
     initialContents:
@@ -66,8 +66,8 @@
 
 - type: entity
   parent: PaperBin
-  id: PaperBin10
-  suffix: 10
+  id: PaperBin65
+  suffix: 65
   components:
   - type: Bin
     initialContents:
@@ -88,8 +88,8 @@
 
 - type: entity
   parent: PaperBin
-  id: PaperBin20
-  suffix: 20
+  id: PaperBin65
+  suffix: 65
   components:
   - type: Bin
     initialContents:

@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -17,7 +17,7 @@ public sealed partial class DiskConsoleComponent : Component
     /// How much it costs to print a disk
     /// </summary>
     [DataField("pricePerDisk"), ViewVariables(VVAccess.ReadWrite)]
-    public int PricePerDisk = 1000;
+    public int PricePerDisk = 65;
 
     /// <summary>
     /// The prototype of what's being printed
@@ -29,7 +29,7 @@ public sealed partial class DiskConsoleComponent : Component
     /// How long it takes to print <see cref="DiskPrototype"/>
     /// </summary>
     [DataField("printDuration"), ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan PrintDuration = TimeSpan.FromSeconds(1);
+    public TimeSpan PrintDuration = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// The sound made when printing occurs

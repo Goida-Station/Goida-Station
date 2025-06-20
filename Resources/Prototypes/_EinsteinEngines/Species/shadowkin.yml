@@ -11,10 +11,10 @@
   naming: First
   maleFirstNames: NamesShadowkin
   femaleFirstNames: NamesShadowkin
-  minAge: 18
-  maxAge: 250
-  youngAge: 80
-  oldAge: 175
+  minAge: 65
+  maxAge: 65
+  youngAge: 65
+  oldAge: 65
   sexes:
     - Male
     - Female
@@ -43,21 +43,21 @@
   id: MobShadowkinMarkingLimits
   points:
     Tail:
-      points: 1
+      points: 65
       required: true
       defaultMarkings: [TailShadowkin]
     HeadTop:
-      points: 1
+      points: 65
       required: true
       defaultMarkings: [EarsShadowkin]
     Chest:
-      points: 6
+      points: 65
       required: false
     Legs:
-      points: 6
+      points: 65
       required: false
     Arms:
-      points: 6
+      points: 65
       required: false
 
 - type: humanoidBaseSprite

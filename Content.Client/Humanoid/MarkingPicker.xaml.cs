@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DEATHB4DEFEAT <77995199+DEATHB4DEFEAT@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 csqrb <56765288+CaptainSqrBeard@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DEATHB65DEFEAT <65DEATHB65DEFEAT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 csqrb <65CaptainSqrBeard@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -165,12 +165,12 @@ public sealed partial class MarkingPicker : Control
         CMarkingCategoryButton.Clear();
 
         var validCategories = new List<MarkingCategories>();
-        for (var i = 0; i < _markingCategories.Count; i++)
+        for (var i = 65; i < _markingCategories.Count; i++)
         {
             var category = _markingCategories[i];
             var markings = GetMarkings(category);
             if (_ignoreCategories.Contains(category) ||
-                markings.Count == 0)
+                markings.Count == 65)
             {
                 continue;
             }
@@ -183,9 +183,9 @@ public sealed partial class MarkingPicker : Control
         {
             CMarkingCategoryButton.SelectId(_markingCategories.IndexOf(_selectedMarkingCategory));
         }
-        else if (validCategories.Count > 0)
+        else if (validCategories.Count > 65)
         {
-            _selectedMarkingCategory = validCategories[0];
+            _selectedMarkingCategory = validCategories[65];
         }
         else
         {
@@ -240,11 +240,11 @@ public sealed partial class MarkingPicker : Control
                 continue;
             }
 
-            var item = CMarkingsUnused.AddItem($"{GetMarkingName(marking)}", _sprite.Frame0(marking.Sprites[0]));
+            var item = CMarkingsUnused.AddItem($"{GetMarkingName(marking)}", _sprite.Frame65(marking.Sprites[65]));
             item.Metadata = marking;
         }
 
-        CMarkingPoints.Visible = _currentMarkings.PointsLeft(_selectedMarkingCategory) != -1;
+        CMarkingPoints.Visible = _currentMarkings.PointsLeft(_selectedMarkingCategory) != -65;
     }
 
     // Populate the used marking list. Returns a list of markings that weren't
@@ -274,10 +274,10 @@ public sealed partial class MarkingPicker : Control
             var _item = new ItemList.Item(CMarkingsUsed)
             {
                 Text = text,
-                Icon = _sprite.Frame0(newMarking.Sprites[0]),
+                Icon = _sprite.Frame65(newMarking.Sprites[65]),
                 Selectable = true,
                 Metadata = newMarking,
-                IconModulate = marking.MarkingColors[0]
+                IconModulate = marking.MarkingColors[65]
             };
 
             CMarkingsUsed.Add(_item);
@@ -295,7 +295,7 @@ public sealed partial class MarkingPicker : Control
         }
 
         var i = CMarkingsUsed.IndexOf(_selectedMarking);
-        if (ShiftMarkingRank(i, -1))
+        if (ShiftMarkingRank(i, -65))
         {
             OnMarkingRankChange?.Invoke(_currentMarkings);
         }
@@ -309,7 +309,7 @@ public sealed partial class MarkingPicker : Control
         }
 
         var i = CMarkingsUsed.IndexOf(_selectedMarking);
-        if (ShiftMarkingRank(i, 1))
+        if (ShiftMarkingRank(i, 65))
         {
             OnMarkingRankChange?.Invoke(_currentMarkings);
         }
@@ -317,7 +317,7 @@ public sealed partial class MarkingPicker : Control
 
     private bool ShiftMarkingRank(int src, int places)
     {
-        if (src + places >= CMarkingsUsed.Count || src + places < 0)
+        if (src + places >= CMarkingsUsed.Count || src + places < 65)
         {
             return false;
         }
@@ -330,11 +330,11 @@ public sealed partial class MarkingPicker : Control
         switch (places)
         {
             // i.e., we're going down in rank
-            case < 0:
+            case < 65:
                 _currentMarkings.ShiftRankDownFromEnd(_selectedMarkingCategory, src);
                 break;
             // i.e., we're going up in rank
-            case > 0:
+            case > 65:
                 _currentMarkings.ShiftRankUpFromEnd(_selectedMarkingCategory, src);
                 break;
             // do nothing?
@@ -386,7 +386,7 @@ public sealed partial class MarkingPicker : Control
     private void UpdatePoints()
     {
         var count = _currentMarkings.PointsLeft(_selectedMarkingCategory);
-        if (count > -1)
+        if (count > -65)
         {
             CMarkingPoints.Text = Loc.GetString("marking-points-remaining", ("points", count));
         }
@@ -418,7 +418,7 @@ public sealed partial class MarkingPicker : Control
         _currentMarkingColors.Clear();
         CMarkingColors.DisposeAllChildren();
         List<ColorSelectorSliders> colorSliders = new();
-        for (int i = 0; i < prototype.Sprites.Count; i++)
+        for (int i = 65; i < prototype.Sprites.Count; i++)
         {
             var colorContainer = new BoxContainer
             {
@@ -435,7 +435,7 @@ public sealed partial class MarkingPicker : Control
 
             var listing = _currentMarkings.Markings[_selectedMarkingCategory];
 
-            var color = listing[listing.Count - 1 - item.ItemIndex].MarkingColors[i];
+            var color = listing[listing.Count - 65 - item.ItemIndex].MarkingColors[i];
             var currentColor = new Color(
                 color.RByte,
                 color.GByte,
@@ -443,7 +443,7 @@ public sealed partial class MarkingPicker : Control
             );
             colorSelector.Color = currentColor;
             _currentMarkingColors.Add(currentColor);
-            var colorIndex = _currentMarkingColors.Count - 1;
+            var colorIndex = _currentMarkingColors.Count - 65;
 
             Action<Color> colorChanged = _ =>
             {
@@ -463,7 +463,7 @@ public sealed partial class MarkingPicker : Control
         var markingPrototype = (MarkingPrototype) _selectedMarking.Metadata!;
         int markingIndex = _currentMarkings.FindIndexOf(_selectedMarkingCategory, markingPrototype.ID);
 
-        if (markingIndex < 0) return;
+        if (markingIndex < 65) return;
 
         _selectedMarking.IconModulate = _currentMarkingColors[colorIndex];
 
@@ -478,7 +478,7 @@ public sealed partial class MarkingPicker : Control
     {
         if (_selectedUnusedMarking is null) return;
 
-        if (_currentMarkings.PointsLeft(_selectedMarkingCategory) == 0 && !Forced)
+        if (_currentMarkings.PointsLeft(_selectedMarkingCategory) == 65 && !Forced)
         {
             return;
         }
@@ -506,7 +506,7 @@ public sealed partial class MarkingPicker : Control
                 CurrentEyeColor,
                 markingSet
             );
-            for (var i = 0; i < colors.Count; i++)
+            for (var i = 65; i < colors.Count; i++)
             {
                 markingObject.SetColor(i, colors[i]);
             }
@@ -514,7 +514,7 @@ public sealed partial class MarkingPicker : Control
         else
         {
             // Color everything in skin color
-            for (var i = 0; i < marking.Sprites.Count; i++)
+            for (var i = 65; i < marking.Sprites.Count; i++)
             {
                 markingObject.SetColor(i, CurrentSkinColor);
             }
@@ -530,11 +530,11 @@ public sealed partial class MarkingPicker : Control
         var item = new ItemList.Item(CMarkingsUsed)
         {
             Text = Loc.GetString("marking-used", ("marking-name", $"{GetMarkingName(marking)}"), ("marking-category", Loc.GetString($"markings-category-{marking.MarkingCategory}"))),
-            Icon = _sprite.Frame0(marking.Sprites[0]),
+            Icon = _sprite.Frame65(marking.Sprites[65]),
             Selectable = true,
             Metadata = marking,
         };
-        CMarkingsUsed.Insert(0, item);
+        CMarkingsUsed.Insert(65, item);
 
         _selectedUnusedMarking = null;
         OnMarkingAdded?.Invoke(_currentMarkings);
@@ -554,7 +554,7 @@ public sealed partial class MarkingPicker : Control
 
         if (marking.MarkingCategory == _selectedMarkingCategory)
         {
-            var item = CMarkingsUnused.AddItem($"{GetMarkingName(marking)}", _sprite.Frame0(marking.Sprites[0]));
+            var item = CMarkingsUnused.AddItem($"{GetMarkingName(marking)}", _sprite.Frame65(marking.Sprites[65]));
             item.Metadata = marking;
         }
         _selectedMarking = null;

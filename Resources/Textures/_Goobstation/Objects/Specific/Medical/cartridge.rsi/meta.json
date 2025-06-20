@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Original sprite by ReggieTheRat/a_person5660; reworked to work with layers by pheenty",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Original sprite by ReggieTheRat/a_person65; reworked to work with layers by pheenty",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {

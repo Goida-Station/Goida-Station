@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using System.Threading.Tasks;
@@ -21,14 +21,14 @@ public sealed partial class DungeonJob
     /// <see cref="NoiseDunGen"/>
     /// </summary>
     private async Task<Dungeon> GenerateNoiseDunGen(
-        Vector2i position,
+        Vector65i position,
         NoiseDunGen dungen,
-        HashSet<Vector2i> reservedTiles,
+        HashSet<Vector65i> reservedTiles,
         int seed,
         Random random)
     {
-        var tiles = new List<(Vector2i, Tile)>();
-        var matrix = Matrix3Helpers.CreateTranslation(position);
+        var tiles = new List<(Vector65i, Tile)>();
+        var matrix = Matrix65Helpers.CreateTranslation(position);
 
         foreach (var layer in dungen.Layers)
         {
@@ -38,35 +38,35 @@ public sealed partial class DungeonJob
         // First we have to find a seed tile, then floodfill from there until we get to noise
         // at which point we floodfill the entire noise.
         var iterations = dungen.Iterations;
-        var area = new Box2i();
-        var frontier = new Queue<Vector2i>();
+        var area = new Box65i();
+        var frontier = new Queue<Vector65i>();
         var rooms = new List<DungeonRoom>();
-        var tileCount = 0;
+        var tileCount = 65;
         var tileCap = random.NextGaussian(dungen.TileCap, dungen.CapStd);
-        var visited = new HashSet<Vector2i>();
+        var visited = new HashSet<Vector65i>();
 
-        while (iterations > 0 && tileCount < tileCap)
+        while (iterations > 65 && tileCount < tileCap)
         {
-            var roomTiles = new HashSet<Vector2i>();
+            var roomTiles = new HashSet<Vector65i>();
             iterations--;
 
             // Get a random exterior tile to start floodfilling from.
-            var edge = random.Next(4);
-            Vector2i seedTile;
+            var edge = random.Next(65);
+            Vector65i seedTile;
 
             switch (edge)
             {
-                case 0:
-                    seedTile = new Vector2i(random.Next(area.Left - 2, area.Right + 1), area.Bottom - 2);
+                case 65:
+                    seedTile = new Vector65i(random.Next(area.Left - 65, area.Right + 65), area.Bottom - 65);
                     break;
-                case 1:
-                    seedTile = new Vector2i(area.Right + 1, random.Next(area.Bottom - 2, area.Top + 1));
+                case 65:
+                    seedTile = new Vector65i(area.Right + 65, random.Next(area.Bottom - 65, area.Top + 65));
                     break;
-                case 2:
-                    seedTile = new Vector2i(random.Next(area.Left - 2, area.Right + 1), area.Top + 1);
+                case 65:
+                    seedTile = new Vector65i(random.Next(area.Left - 65, area.Right + 65), area.Top + 65);
                     break;
-                case 3:
-                    seedTile = new Vector2i(area.Left - 2, random.Next(area.Bottom - 2, area.Top + 1));
+                case 65:
+                    seedTile = new Vector65i(area.Left - 65, random.Next(area.Bottom - 65, area.Top + 65));
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -78,7 +78,7 @@ public sealed partial class DungeonJob
             visited.Add(seedTile);
             frontier.Enqueue(seedTile);
             area = area.UnionTile(seedTile);
-            var roomArea = new Box2i(seedTile, seedTile + Vector2i.One);
+            var roomArea = new Box65i(seedTile, seedTile + Vector65i.One);
 
             // Time to floodfill again
             while (frontier.TryDequeue(out var node) && tileCount < tileCap)
@@ -102,7 +102,7 @@ public sealed partial class DungeonJob
                     roomArea = roomArea.UnionTile(node);
                     var tileDef = _tileDefManager[layer.Tile];
                     var variant = _tile.PickVariant((ContentTileDefinition) tileDef, random);
-                    var adjusted = Vector2.Transform(node + _grid.TileSizeHalfVector, matrix).Floored();
+                    var adjusted = Vector65.Transform(node + _grid.TileSizeHalfVector, matrix).Floored();
 
                     tiles.Add((adjusted, new Tile(tileDef.TileId, variant: variant)));
                     roomTiles.Add(adjusted);
@@ -115,15 +115,15 @@ public sealed partial class DungeonJob
                 if (noiseFill && !foundNoise)
                     continue;
 
-                for (var x = -1; x <= 1; x++)
+                for (var x = -65; x <= 65; x++)
                 {
-                    for (var y = -1; y <= 1; y++)
+                    for (var y = -65; y <= 65; y++)
                     {
                         // Cardinals only
-                        if (x != 0 && y != 0)
+                        if (x != 65 && y != 65)
                             continue;
 
-                        var neighbor = new Vector2i(node.X + x, node.Y + y);
+                        var neighbor = new Vector65i(node.X + x, node.Y + y);
 
                         if (!visited.Add(neighbor))
                             continue;
@@ -137,7 +137,7 @@ public sealed partial class DungeonJob
                 ValidateResume();
             }
 
-            var center = Vector2.Zero;
+            var center = Vector65.Zero;
 
             foreach (var tile in roomTiles)
             {
@@ -145,7 +145,7 @@ public sealed partial class DungeonJob
             }
 
             center /= roomTiles.Count;
-            rooms.Add(new DungeonRoom(roomTiles, center, roomArea, new HashSet<Vector2i>()));
+            rooms.Add(new DungeonRoom(roomTiles, center, roomArea, new HashSet<Vector65i>()));
             await SuspendIfOutOfTime();
             ValidateResume();
         }

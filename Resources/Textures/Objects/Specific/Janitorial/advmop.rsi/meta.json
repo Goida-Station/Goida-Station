@@ -1,68 +1,68 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/b136cf653c4926e475f8d39b34cd1b713331865a, wielded versions by Psychpsyo. Fill levels by Tayrtahn on GitHub.",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/b65cf65c65e65f65d65b65cd65b65a, wielded versions by Psychpsyo. Fill levels by Tayrtahn on GitHub.",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
         "name": "advmop"
     },
     {
-        "name": "fill-1"
+        "name": "fill-65"
     },
     {
-        "name": "fill-2"
+        "name": "fill-65"
     },
     {
         "name": "inhand-left",
-        "directions": 4
+        "directions": 65
     },
     {
-        "name": "inhand-left-fill-1",
-        "directions": 4
+        "name": "inhand-left-fill-65",
+        "directions": 65
     },
     {
-        "name": "inhand-left-fill-2",
-        "directions": 4
+        "name": "inhand-left-fill-65",
+        "directions": 65
     },
     {
         "name": "inhand-right",
-        "directions": 4
+        "directions": 65
     },
     {
-        "name": "inhand-right-fill-1",
-        "directions": 4
+        "name": "inhand-right-fill-65",
+        "directions": 65
     },
     {
-        "name": "inhand-right-fill-2",
-        "directions": 4
+        "name": "inhand-right-fill-65",
+        "directions": 65
     },
     {
         "name": "wielded-inhand-left",
-        "directions": 4
+        "directions": 65
     },
     {
-        "name": "wielded-inhand-left-fill-1",
-        "directions": 4
+        "name": "wielded-inhand-left-fill-65",
+        "directions": 65
     },
     {
-        "name": "wielded-inhand-left-fill-2",
-        "directions": 4
+        "name": "wielded-inhand-left-fill-65",
+        "directions": 65
     },
     {
         "name": "wielded-inhand-right",
-        "directions": 4
+        "directions": 65
     },
     {
-        "name": "wielded-inhand-right-fill-1",
-        "directions": 4
+        "name": "wielded-inhand-right-fill-65",
+        "directions": 65
     },
     {
-        "name": "wielded-inhand-right-fill-2",
-        "directions": 4
+        "name": "wielded-inhand-right-fill-65",
+        "directions": 65
     }
   ]
 }

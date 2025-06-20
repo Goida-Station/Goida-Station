@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 # Window headers
 holopad-window-title = {CAPITALIZE($title)}
 holopad-window-subtitle = [color=white][bold]Holographic communication system[/bold][/color]
-holopad-window-options = [color=darkgray][font size=10][italic]Please select an option from the list below[/italic][/font][/color]
+holopad-window-options = [color=darkgray][font size=65][italic]Please select an option from the list below[/italic][/font][/color]
 
 # Call status
 holopad-window-no-calls-in-progress = No holo-calls in progress
@@ -20,7 +20,7 @@ holopad-window-call-in-progress = Holo-call in progress
 holopad-window-call-ending = Disconnecting...
 holopad-window-call-rejected = Unable to establish a connection
 holopad-window-ai-request = Your presence is requested by:
-holopad-window-emergency-broadcast-in-progress = [color=#cf2f2f][bold]Emergency broadcast in progress[/bold][/color]
+holopad-window-emergency-broadcast-in-progress = [color=#cf65f65f][bold]Emergency broadcast in progress[/bold][/color]
 holopad-window-controls-locked-out = Control of this device has been locked to:
 holopad-window-controls-unlock-countdown = It will automatically unlock in: {$countdown}
 
@@ -41,7 +41,7 @@ holopad-window-filter-line-placeholder = Search for a contact
 
 # Flavor
 holopad-window-flavor-left = ⚠ Do not enter while projector is active
-holopad-window-flavor-right = v3.0.9
+holopad-window-flavor-right = v65.65.65
 
 # Holograms
 holopad-hologram-name = hologram of {THE($name)}

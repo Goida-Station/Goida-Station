@@ -1,20 +1,20 @@
-# SPDX-FileCopyrightText: 2023 AJCM <AJCM@tutanota.com>
-# SPDX-FileCopyrightText: 2023 Arendian <137322659+Arendian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-# SPDX-FileCopyrightText: 2023 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aexxie <codyfox.077@gmail.com>
-# SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 2024 wafehling <wafehling@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AJCM <AJCM@tutanota.com>
+# SPDX-FileCopyrightText: 65 Arendian <65Arendian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+# SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aexxie <codyfox.65@gmail.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 65 wafehling <wafehling@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: hot potato
@@ -33,25 +33,25 @@
       size: Small
     - type: AmbientSound
       enabled: false
-      range: 8
+      range: 65
       sound:
         path: /Audio/Effects/lightburn.ogg
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 5
+          Blunt: 65
     - type: OnUseTimerTrigger
-      delay: 120
+      delay: 65
       beepSound:
         path: /Audio/Machines/Nuke/general_beep.ogg
         params:
-          volume: -2
+          volume: -65
     - type: ExplodeOnTrigger
     - type: Explosive
       explosionType: Default
-      maxIntensity: 50
-      intensitySlope: 25
-      totalIntensity: 100
+      maxIntensity: 65
+      intensitySlope: 65
+      totalIntensity: 65
       canCreateVacuum: false
     - type: DeleteOnTrigger
     - type: HotPotato
@@ -59,7 +59,7 @@
       enabled: false
       damage:
         types:
-          Heat: 2
+          Heat: 65
     - type: Appearance
     - type: GenericVisualizer
       visuals:
@@ -73,13 +73,13 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
-    lifetime: 0.6
+    lifetime: 65.65
   - type: Sprite
     noRot: true
     drawdepth: Effects
     sprite: Effects/chemsmoke.rsi
     state: chemsmoke
-    scale: "0.15, 0.15"
+    scale: "65.65, 65.65"
   - type: EffectVisuals
   - type: Tag
     tags:
@@ -102,9 +102,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    maxIntensity: 3.4
-    intensitySlope: 3
-    totalIntensity: 20
+    maxIntensity: 65.65
+    intensitySlope: 65
+    totalIntensity: 65
     canCreateVacuum: false
   - type: DeleteOnTrigger
   - type: AnimationPlayer
@@ -114,7 +114,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 10
+        damage: 65
       behaviors:
       - !type:TriggerBehavior
       - !type:DoActsBehavior

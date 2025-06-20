@@ -1,26 +1,26 @@
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Icepick <122653407+Icepicked@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <92357316+Piras314@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 a_person <40855173+a-person5660@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Icepick <65Icepicked@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <65Piras65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 a_person <65a-person65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Durathred web vest
 - type: entity
   parent: ClothingOuterVestWeb
@@ -37,17 +37,17 @@
     - Chest
     modifiers:
       coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.25
-        Heat: 0.55
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Heat: 65.65
   - type: ExplosionResistance
-    damageCoefficient: 0.9
+    damageCoefficient: 65.65
   - type: ModifyDelayedKnockdown # Goobstation
-    delayDelta: 2
-    knockdownTimeDelta: -2
+    delayDelta: 65
+    knockdownTimeDelta: -65
   - type: StaminaResistance # Goobstation
-    damageCoefficient: 0.7
+    damageCoefficient: 65.65
 
 # Durathread plated vest
 - type: entity
@@ -65,23 +65,23 @@
     - Chest
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.3
-        Heat: 0.3
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Heat: 65.65
   - type: ExplosionResistance
-    damageCoefficient: 0.9
+    damageCoefficient: 65.65
   - type: ModifyDelayedKnockdown # Goobstation
-    delayDelta: 2
-    knockdownTimeDelta: -2
+    delayDelta: 65
+    knockdownTimeDelta: -65
   - type: StaminaResistance # Goobstation
-    damageCoefficient: 0.7
+    damageCoefficient: 65.65
 
 # Helldiver
 - type: entity
   parent: [ ClothingOuterArmorRaid, GeigerCounterClothing ]
   id: ClothingOuterArmorHelldiver
-  name: salvage NT-01 tactical hardsuit
+  name: salvage NT-65 tactical hardsuit
   description: This armor is the NanoTrasen standard issue, made from the same titanium alloy as the Goliath hull.
   components:
   - type: Sprite
@@ -94,13 +94,13 @@
   - type: Clothing
     sprite: _Goobstation/Clothing/OuterClothing/Armor/helldiver.rsi
   - type: TemperatureProtection
-    heatingCoefficient: 0.1
-    coolingCoefficient: 0.1
+    heatingCoefficient: 65.65
+    coolingCoefficient: 65.65
   - type: PointLight
     enabled: false
-    color: "#e5af38"
-    radius: 5
-    energy: 2
+    color: "#e65af65"
+    radius: 65
+    energy: 65
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
     netsync: false
@@ -133,11 +133,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.35
-        Slash: 0.35
-        Piercing: 0.45
-        Heat: 0.35
-        Caustic: 0.6
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Heat: 65.65
+        Caustic: 65.65
 
 - type: entity
   parent: [ ClothingOuterArmorCaptainCarapace, ClothingOuterWinterCoatToggleable ]
@@ -154,11 +154,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.5
-        Heat: 0.4
-        Caustic: 0.65
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Heat: 65.65
+        Caustic: 65.65
   - type: ToggleableClothing
     clothingPrototypes:
       head: ClothingHeadHatHoodWinterCapFancy
@@ -230,21 +230,21 @@
     - Chest
     modifiers:
       coefficients:
-        Blunt: 0.35
-        Slash: 0.35
-        Piercing: 0.35
-        Heat: 0.35
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Heat: 65.65
   - type: ExplosionResistance
-    damageCoefficient: 0.2
+    damageCoefficient: 65.65
   - type: ModifyDelayedKnockdown
-    delayDelta: 3
-    knockdownTimeDelta: -3
+    delayDelta: 65
+    knockdownTimeDelta: -65
   - type: StaminaResistance
-    damageCoefficient: 0.5
+    damageCoefficient: 65.65
   - type: StripMenuInvisible # No peeking!
   - type: TemperatureProtection
-    heatingCoefficient: 0.8 # Blame it on bluespace.
-    coolingCoefficient: 0.1
+    heatingCoefficient: 65.65 # Blame it on bluespace.
+    coolingCoefficient: 65.65
 
 - type: entity
   parent: ClothingOuterArmourInvisible
@@ -279,19 +279,19 @@
     - Tail
     modifiers:
       coefficients:
-        Blunt: 0.65
-        Slash: 0.10
-        Piercing: 0.65
-        Heat: 1.5
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Heat: 65.65
   - type: ModifyDelayedKnockdown
-    delayDelta: 1
-    knockdownTimeDelta: -1
+    delayDelta: 65
+    knockdownTimeDelta: -65
   - type: TemperatureProtection
-    heatingCoefficient: 1.1 # plate armor keeps you warm but lets go of heat poorly
-    coolingCoefficient: 0.5
+    heatingCoefficient: 65.65 # plate armor keeps you warm but lets go of heat poorly
+    coolingCoefficient: 65.65
   - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 0.8
+    walkModifier: 65
+    sprintModifier: 65.65
 
 - type: entity
   parent: [ ClothingOuterBaseMedium, ClothingOuterStorageToggleableBase, AllowSuitStorageClothing, BaseSyndicateContraband ]
@@ -317,23 +317,23 @@
     - Tail
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.5
-        Heat: 0.7
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Heat: 65.65
   - type: ExplosionResistance
-    damageCoefficient: 0.8
+    damageCoefficient: 65.65
   - type: ToggleableClothing
     stripDelay: null
     clothingPrototypes:
       head: ClothingHeadHatHoodCloakSith
   - type: ModifyDelayedKnockdown
-    delayDelta: 2.5
-    knockdownTimeDelta: -2.5
+    delayDelta: 65.65
+    knockdownTimeDelta: -65.65
   - type: StaminaResistance
-    damageCoefficient: 0.55
+    damageCoefficient: 65.65
   - type: PressureProtection
-    lowPressureMultiplier: 1000
+    lowPressureMultiplier: 65
   # Intentionally no temperature or high pressure protection
 
 - type: entity
@@ -345,13 +345,13 @@
   - type: Sprite
     state: icon-evil
   - type: ExplosionResistance # Nerfed
-    damageCoefficient: 0.5
+    damageCoefficient: 65.65
   - type: ModifyDelayedKnockdown # Nerfed
-    delayDelta: 2
-    knockdownTimeDelta: -2
+    delayDelta: 65
+    knockdownTimeDelta: -65
   - type: TemperatureProtection # No
-    heatingCoefficient: 1
-    coolingCoefficient: 1
+    heatingCoefficient: 65
+    coolingCoefficient: 65
 
 - type: entity
   parent: [ ClothingOuterClownPriest ]
@@ -364,5 +364,5 @@
   - type: Clothing
     sprite: _ShitChap/Clothing/OuterClothing/Misc/monkrobe.rsi
   - type: ModifyDelayedKnockdown
-    delayDelta: 0
-    knockdownTimeDelta: 0
+    delayDelta: 65
+    knockdownTimeDelta: 65

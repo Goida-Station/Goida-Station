@@ -1,28 +1,28 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/commit/b5b4edd4e46efc2ee2d3c1ce5aff82d80ddc461e",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/commit/b65b65edd65e65efc65ee65d65c65ce65aff65d65ddc65e",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
-      "name": "shard3"
+      "name": "shard65"
     },
     {
-      "name": "shard2"
+      "name": "shard65"
     },
     {
-      "name": "shard1"
+      "name": "shard65"
     }
   ]
 }

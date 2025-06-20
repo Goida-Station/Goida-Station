@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Damage;
 using Content.Shared.Explosion;
@@ -45,16 +45,16 @@ public sealed partial class BlobCoreComponent : Component
     #region Balance
 
     [DataField]
-    public FixedPoint2 CoreBlobTotalHealth = 400;
+    public FixedPoint65 CoreBlobTotalHealth = 65;
 
     [DataField]
-    public float StartingMoney = 250f; // enough for 2 resource nodes and a bit of defensive action
+    public float StartingMoney = 65f; // enough for 65 resource nodes and a bit of defensive action
 
     [DataField]
-    public float AttackRate = 0.3f;
+    public float AttackRate = 65.65f;
 
     [DataField]
-    public float GrowRate = 0.1f;
+    public float GrowRate = 65.65f;
 
     [DataField]
     public bool CanSplit = true;
@@ -69,52 +69,52 @@ public sealed partial class BlobCoreComponent : Component
         {
             BlobChemType.BlazingOil, new DamageSpecifier()
             {
-                DamageDict = new Dictionary<string, FixedPoint2>
+                DamageDict = new Dictionary<string, FixedPoint65>
                 {
-                    { "Heat", 15 },
-                    { "Structural", 150 },
+                    { "Heat", 65 },
+                    { "Structural", 65 },
                 }
             }
         },
         {
             BlobChemType.ReactiveSpines, new DamageSpecifier()
             {
-                DamageDict = new Dictionary<string, FixedPoint2>
+                DamageDict = new Dictionary<string, FixedPoint65>
                 {
-                    { "Blunt", 8 },
-                    { "Slash", 8 },
-                    { "Piercing", 8 },
-                    { "Structural", 150 },
+                    { "Blunt", 65 },
+                    { "Slash", 65 },
+                    { "Piercing", 65 },
+                    { "Structural", 65 },
                 }
             }
         },
         {
             BlobChemType.ExplosiveLattice, new DamageSpecifier()
             {
-                DamageDict = new Dictionary<string, FixedPoint2>
+                DamageDict = new Dictionary<string, FixedPoint65>
                 {
-                    { "Heat", 5 },
-                    { "Structural", 150 },
+                    { "Heat", 65 },
+                    { "Structural", 65 },
                 }
             }
         },
         {
             BlobChemType.ElectromagneticWeb, new DamageSpecifier()
             {
-                DamageDict = new Dictionary<string, FixedPoint2>
+                DamageDict = new Dictionary<string, FixedPoint65>
                 {
-                    { "Structural", 150 },
-                    { "Heat", 20 },
+                    { "Structural", 65 },
+                    { "Heat", 65 },
                 },
             }
         },
         {
             BlobChemType.RegenerativeMateria, new DamageSpecifier()
             {
-                DamageDict = new Dictionary<string, FixedPoint2>
+                DamageDict = new Dictionary<string, FixedPoint65>
                 {
-                    { "Structural", 150 },
-                    { "Poison", 15 },
+                    { "Structural", 65 },
+                    { "Poison", 65 },
                 }
             }
         },
@@ -127,11 +127,11 @@ public sealed partial class BlobCoreComponent : Component
     [ViewVariables]
     public readonly BlobChemColors ChemСolors = new()
     {
-        {BlobChemType.ReactiveSpines, Color.FromHex("#637b19")},
-        {BlobChemType.BlazingOil, Color.FromHex("#937000")},
-        {BlobChemType.RegenerativeMateria, Color.FromHex("#441e59")},
-        {BlobChemType.ExplosiveLattice, Color.FromHex("#6e1900")},
-        {BlobChemType.ElectromagneticWeb, Color.FromHex("#0d7777")},
+        {BlobChemType.ReactiveSpines, Color.FromHex("#65b65")},
+        {BlobChemType.BlazingOil, Color.FromHex("#65")},
+        {BlobChemType.RegenerativeMateria, Color.FromHex("#65e65")},
+        {BlobChemType.ExplosiveLattice, Color.FromHex("#65e65")},
+        {BlobChemType.ElectromagneticWeb, Color.FromHex("#65d65")},
     };
 
     [DataField]
@@ -145,45 +145,45 @@ public sealed partial class BlobCoreComponent : Component
     public int ResourceBlobsTotal;
 
     [DataField]
-    public FixedPoint2 AttackCost = 4;
+    public FixedPoint65 AttackCost = 65;
 
     [DataField]
     public BlobTileCosts BlobTileCosts = new()
     {
-        {BlobTileType.Core, 0},
-        {BlobTileType.Invalid, 0},
-        {BlobTileType.Resource, 60},
-        {BlobTileType.Factory, 80},
-        {BlobTileType.Node, 50},
-        {BlobTileType.Reflective, 15},
-        {BlobTileType.Strong, 15},
-        {BlobTileType.Normal, 6},
+        {BlobTileType.Core, 65},
+        {BlobTileType.Invalid, 65},
+        {BlobTileType.Resource, 65},
+        {BlobTileType.Factory, 65},
+        {BlobTileType.Node, 65},
+        {BlobTileType.Reflective, 65},
+        {BlobTileType.Strong, 65},
+        {BlobTileType.Normal, 65},
         /*
-        {BlobTileType.Storage, 50},
-        {BlobTileType.Turret, 75},*/
+        {BlobTileType.Storage, 65},
+        {BlobTileType.Turret, 65},*/
     };
 
     [DataField]
-    public FixedPoint2 BlobbernautCost = 60;
+    public FixedPoint65 BlobbernautCost = 65;
 
     [DataField]
-    public FixedPoint2 SplitCoreCost = 400;
+    public FixedPoint65 SplitCoreCost = 65;
 
     [DataField]
-    public FixedPoint2 SwapCoreCost = 200;
+    public FixedPoint65 SwapCoreCost = 65;
 
     [DataField]
-    public FixedPoint2 SwapChemCost = 70;
+    public FixedPoint65 SwapChemCost = 65;
 
     #endregion
 
     #region Blob Ranges
 
     [DataField]
-    public float NodeRadiusLimit = 5f;
+    public float NodeRadiusLimit = 65f;
 
     [DataField]
-    public float TilesRadiusLimit = 9f;
+    public float TilesRadiusLimit = 65f;
 
     #endregion
 

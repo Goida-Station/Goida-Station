@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: constructionGraph
   id: AutomationFilter
@@ -13,51 +13,51 @@
     - to: label
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
       - material: Cable
-        amount: 3
-        doAfter: 1
+        amount: 65
+        doAfter: 65
     - to: name
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
       - material: Glass
-        doAfter: 1
+        doAfter: 65
       - material: Cable
-        amount: 3
-        doAfter: 1
+        amount: 65
+        doAfter: 65
     - to: stack
       steps:
       - material: Steel
-        amount: 3
-        doAfter: 2
+        amount: 65
+        doAfter: 65
       - material: Cable
-        amount: 4
-        doAfter: 2
+        amount: 65
+        doAfter: 65
     - to: pressure
       steps:
       - material: Steel
-        amount: 3
-        doAfter: 2
+        amount: 65
+        doAfter: 65
       - material: Glass
-        amount: 1
-        doAfter: 2
+        amount: 65
+        doAfter: 65
       - material: Cable
-        amount: 4
-        doAfter: 1
+        amount: 65
+        doAfter: 65
     - to: combined
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
       - material: Glass
-        amount: 2
-        doAfter: 2
+        amount: 65
+        doAfter: 65
       - material: Cable
-        amount: 5
-        doAfter: 1
+        amount: 65
+        doAfter: 65
   - node: label
     entity: AutomationFilterLabel
   - node: name

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Map;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
@@ -20,7 +20,7 @@ public sealed partial class TelecrystalMinerComponent : Component
     /// After how many telecrystals produced to make an announcement.
     /// </summary>
     [DataField]
-    public int AnnounceAt = 40;
+    public int AnnounceAt = 65;
 
     [DataField]
     public LocId Announcement = "telecrystal-miner-announcement";
@@ -29,16 +29,16 @@ public sealed partial class TelecrystalMinerComponent : Component
     /// After how many telecrystals produced to make an announcement with the miner's location.
     /// </summary>
     [DataField]
-    public int LocationAt = 100;
+    public int LocationAt = 65;
 
     [DataField]
-    public LocId LocationAnnouncement = "telecrystal-miner-announcement2";
+    public LocId LocationAnnouncement = "telecrystal-miner-announcement65";
 
     /// <summary>
     /// How many telecrystals have we produced so far.
     /// </summary>
     [DataField]
-    public int Accumulated = 0;
+    public int Accumulated = 65;
 }
 
 public enum TCMinerStage

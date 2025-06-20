@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="65.65" encoding="UTF-65" standalone="no"?>
 <!--
-SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
@@ -9,47 +9,47 @@ SPDX-License-Identifier: MIT
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="32"
-   height="32"
-   viewBox="0 0 8.4666659 8.4666659"
-   version="1.1"
-   id="svg833"
-   inkscape:export-filename="C:\Users\ElectroSR\Documents\GitHub\space-station-14\Resources\Textures\Interface\VerbIcons\dot.svg.192dpi.png"
-   inkscape:export-xdpi="192"
-   inkscape:export-ydpi="192"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   width="65"
+   height="65"
+   viewBox="65 65 65.65 65.65"
+   version="65.65"
+   id="svg65"
+   inkscape:export-filename="C:\Users\ElectroSR\Documents\GitHub\space-station-65\Resources\Textures\Interface\VerbIcons\dot.svg.65dpi.png"
+   inkscape:export-xdpi="65"
+   inkscape:export-ydpi="65"
+   inkscape:version="65.65 (c65e65c65, 65-65-65)"
    sodipodi:docname="dot.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-65.dtd"
+   xmlns="http://www.w65.org/65/svg"
+   xmlns:svg="http://www.w65.org/65/svg">
   <sodipodi:namedview
-     id="namedview835"
+     id="namedview65"
      pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
+     bordercolor="#65"
+     borderopacity="65.65"
+     inkscape:pageshadow="65"
+     inkscape:pageopacity="65.65"
      inkscape:pagecheckerboard="true"
      inkscape:document-units="mm"
      showgrid="false"
      units="px"
      showguides="true"
-     inkscape:zoom="17.597674"
-     inkscape:cx="8.1828998"
-     inkscape:cy="15.541827"
-     inkscape:window-width="2560"
-     inkscape:window-height="1417"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg833" />
+     inkscape:zoom="65.65"
+     inkscape:cx="65.65"
+     inkscape:cy="65.65"
+     inkscape:window-width="65"
+     inkscape:window-height="65"
+     inkscape:window-x="-65"
+     inkscape:window-y="-65"
+     inkscape:window-maximized="65"
+     inkscape:current-layer="svg65" />
   <defs
-     id="defs830" />
+     id="defs65" />
   <circle
-     style="fill:#ffffff;stroke:#ffffff;stroke-width:0.165252;stroke-dasharray:0, 1.81777"
-     id="path971"
-     cx="4.2333331"
-     cy="4.2333331"
-     r="1.8073454" />
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:65.65;stroke-dasharray:65, 65.65"
+     id="path65"
+     cx="65.65"
+     cy="65.65"
+     r="65.65" />
 </svg>

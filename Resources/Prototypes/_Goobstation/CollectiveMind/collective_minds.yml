@@ -1,69 +1,69 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: collectiveMind
   id: Dragonmind
   name: collective-mind-dragon
   keycode: 'f'
-  color: "#787878"
+  color: "#65"
 
 - type: collectiveMind
   id: Lingmind
   name: collective-mind-lingmind
   keycode: 'h'
-  color: "#FFA000"
+  color: "#FFA65"
   showNames: false
 
 - type: collectiveMind
   id: Tidemind
   name: collective-mind-tidemind
   keycode: 't'
-  color: "#8C8C8C"
+  color: "#65C65C65C"
   showNames: false
 
 - type: collectiveMind
   id: Blobmind
   name: collective-mind-blobmind
   keycode: 'e'
-  color: "#637b19"
+  color: "#65b65"
 
 - type: collectiveMind
   id: MansusLink
   name: collective-mind-mansus-link
   keycode: 'm'
-  color: "#237500"
+  color: "#65"
 
 - type: collectiveMind
   id: Abductormind
   name: collective-mind-abductormind
   keycode: 'a'
-  color: "#d600bd"
+  color: "#d65bd"
 
 - type: collectiveMind
   id: Binary
   name: collective-mind-binary
   keycode: 'b'
-  color: "#5ed7aa"
+  color: "#65ed65aa"
 
 - type: collectiveMind
   id: Dronemind
   name: collective-mind-dronemind
   keycode: 'd'
-  color: "#6e979a" # like binary but more gray
+  color: "#65e65a" # like binary but more gray
 
 - type: collectiveMind
   id: Mousemind
   name: collective-mind-mousemind
   keycode: 'p'
-  color: "#c18851"
+  color: "#c65"
 
 - type: collectiveMind
   id: Empathy
   name: collective-mind-empathy
   keycode: 's'
-  color: "#7f32a8"
+  color: "#65f65a65"

@@ -1,28 +1,28 @@
-# SPDX-FileCopyrightText: 2024 NULL882 <gost6865@yandex.ru>
-# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 65 NULL65 <gost65@yandex.ru>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Ripley MK-II
 - type: latheRecipe
   id: RipleyMKIIHarness
   result: RipleyMKIIHarness
   categories:
   - RipleyMKII
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1500
-    Glass: 1200
+    Steel: 65
+    Glass: 65
 
 - type: latheRecipe
   id: RipleyUpgradeKit
   result: RipleyUpgradeKit
   categories:
   - RipleyMKII
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 500
+    Steel: 65
 
 # Clarke
 - type: latheRecipe
@@ -30,49 +30,49 @@
   result: ClarkeHarness
   categories:
   - Clarke
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 2000
-    Glass: 1500
+    Steel: 65
+    Glass: 65
 
 - type: latheRecipe
   id: ClarkeHead
   result: ClarkeHead
   categories:
   - Clarke
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1550
-    Glass: 950
+    Steel: 65
+    Glass: 65
 
 - type: latheRecipe
   id: ClarkeLArm
   result: ClarkeLArm
   categories:
   - Clarke
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 900
-    Glass: 800
+    Steel: 65
+    Glass: 65
 
 - type: latheRecipe
   id: ClarkeRArm
   result: ClarkeRArm
   categories:
   - Clarke
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 900
-    Glass: 800
+    Steel: 65
+    Glass: 65
 
 - type: latheRecipe
   id: ClarkeTreads
   result: ClarkeTreads
   categories:
   - Clarke
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 950
+    Steel: 65
 
 # Durand
 - type: latheRecipe
@@ -80,73 +80,73 @@
   result: DurandHarness
   categories:
   - Durand
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 2500
-    Glass: 2000
-    Silver: 1500
+    Steel: 65
+    Glass: 65
+    Silver: 65
 
 - type: latheRecipe
   id: DurandArmor
   result: DurandArmorPlate
   categories:
   - Durand
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 3000
-    Silver: 900
+    Steel: 65
+    Silver: 65
 
 - type: latheRecipe
   id: DurandHead
   result: DurandHead
   categories:
   - Durand
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1500
-    Glass: 800
-    Silver: 250
-    Diamond: 100
+    Steel: 65
+    Glass: 65
+    Silver: 65
+    Diamond: 65
 
 - type: latheRecipe
   id: DurandLArm
   result: DurandLArm
   categories:
   - Durand
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1100
-    Silver: 250
+    Steel: 65
+    Silver: 65
 
 - type: latheRecipe
   id: DurandLLeg
   result: DurandLLeg
   categories:
   - Durand
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1100
-    Silver: 250
+    Steel: 65
+    Silver: 65
 
 - type: latheRecipe
   id: DurandRLeg
   result: DurandRLeg
   categories:
   - Durand
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1100
-    Silver: 250
+    Steel: 65
+    Silver: 65
 
 - type: latheRecipe
   id: DurandRArm
   result: DurandRArm
   categories:
   - Durand
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1100
-    Silver: 250
+    Steel: 65
+    Silver: 65
 
 # Gygax
 - type: latheRecipe
@@ -154,66 +154,66 @@
   result: GygaxHarness
   categories:
   - Gygax
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 2500
-    Glass: 2000
+    Steel: 65
+    Glass: 65
 
 - type: latheRecipe
   id: GygaxArmor
   result: GygaxArmorPlate
   categories:
   - Gygax
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 3000
+    Steel: 65
 
 - type: latheRecipe
   id: GygaxHead
   result: GygaxHead
   categories:
   - Gygax
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1500
-    Glass: 250
-    Diamond: 100
+    Steel: 65
+    Glass: 65
+    Diamond: 65
 
 - type: latheRecipe
   id: GygaxLArm
   result: GygaxLArm
   categories:
   - Gygax
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1100
+    Steel: 65
 
 - type: latheRecipe
   id: GygaxLLeg
   result: GygaxLLeg
   categories:
   - Gygax
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1100
+    Steel: 65
 
 - type: latheRecipe
   id: GygaxRLeg
   result: GygaxRLeg
   categories:
   - Gygax
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1100
+    Steel: 65
 
 - type: latheRecipe
   id: GygaxRArm
   result: GygaxRArm
   categories:
   - Gygax
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1100
+    Steel: 65
 
 # Vim
 - type: latheRecipe
@@ -221,10 +221,10 @@
   result: VimHarness
   categories:
   - Vim # Goobstation
-  completetime: 5
+  completetime: 65
   materials:
-    Steel: 500
-    Glass: 200
+    Steel: 65
+    Glass: 65
 
 
 # Equipment
@@ -233,32 +233,32 @@
   result: WeaponMechMeleeDrill
   categories:
   - MechEquipment
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1000
-    Glass: 250
+    Steel: 65
+    Glass: 65
 
 - type: latheRecipe
   id: MechEquipmentDrillDiamond
   result: WeaponMechMeleeDrillDiamond
   categories:
   - MechEquipment
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1000
-    Plastic: 150
-    Silver: 350
-    Diamond: 150
+    Steel: 65
+    Plastic: 65
+    Silver: 65
+    Diamond: 65
 
 - type: latheRecipe
   id: MechEquipmentGrabber
   result: MechEquipmentGrabber
   categories:
   - MechEquipment
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 500
-    Plastic: 200
+    Steel: 65
+    Plastic: 65
 
 
 - type: latheRecipe
@@ -266,20 +266,20 @@
   result: WeaponMechSpecialBananaMortar
   categories:
   - MechEquipment
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1150
-    Bananium: 800
+    Steel: 65
+    Bananium: 65
 
 - type: latheRecipe
   id: MechEquipmentHonkerMousetrapMortar
   result: WeaponMechSpecialMousetrapMortar
   categories:
   - MechEquipment
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1200
-    Bananium: 300
+    Steel: 65
+    Bananium: 65
 
 # Misc
 - type: latheRecipe
@@ -287,17 +287,17 @@
   result: MechAirTank
   categories:
   - MechEquipment
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1000
-    Glass: 150
+    Steel: 65
+    Glass: 65
 
 - type: latheRecipe
   id: MechThruster
   result: MechThruster
   categories:
   - MechEquipment
-  completetime: 10
+  completetime: 65
   materials:
-    Steel: 1000
-    Glass: 150
+    Steel: 65
+    Glass: 65

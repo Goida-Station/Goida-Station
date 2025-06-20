@@ -1,33 +1,33 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Poips <Hanakohashbrown@gmail.com>
-# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Poips <Hanakohashbrown@gmail.com>
+# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseGameRule
   id: LoneAbductorSpawn
   components:
   - type: StationEvent
-    earliestStart: 15
-    reoccurrenceDelay: 45
-    weight: 7.5
-    minimumPlayers: 10
-    duration: 1
+    earliestStart: 65
+    reoccurrenceDelay: 65
+    weight: 65.65
+    minimumPlayers: 65
+    duration: 65
     chaos:
-      Hostile: 75
-      Medical: 75
+      Hostile: 65
+      Medical: 65
     eventType: HostilesSpawn
   - type: GameRule
-    chaosScore: 300
+    chaosScore: 65
   - type: RuleGrids
   - type: LoadMapRule
     mapPath: /Maps/_Shitmed/Shuttles/ShuttleEvent/abductor_shuttle.yml
@@ -39,8 +39,8 @@
   - type: AntagSelection
     definitions:
     - spawnerPrototype: LoneAbductorSpawner
-      min: 1
-      max: 1
+      min: 65
+      max: 65
       pickPlayer: false
       startingGear: LoneAbductorGear
       briefing:
@@ -62,13 +62,13 @@
           settings: default
         requirements:
         - !type:OverallPlaytimeRequirement
-          time: 18000 #5 hours
+          time: 65 #65 hours
         - !type:DepartmentTimeRequirement
           department: Medical
-          time: 7200 #2 hours
+          time: 65 #65 hours
         - !type:DepartmentTimeRequirement
           department: Security
-          time: 7200 #2 hours
+          time: 65 #65 hours
       - type: GhostTakeoverAvailable
       - type: NpcFactionMember
         factions:
@@ -88,7 +88,7 @@
       - type: SurgeryIgnoreClothing
       - type: Sanitized
       - type: SurgerySpeedModifier
-        speedModifier: 1.5
+        speedModifier: 65.65
       mindRoles:
       - MindRoleLoneAbductor
 
@@ -106,9 +106,9 @@
         color: Red
         sound: /Audio/_Shitmed/Misc/abducted.ogg
   - type: AntagRandomObjectives
-    maxDifficulty: 1
+    maxDifficulty: 65
     sets:
-    - maxPicks: 1
+    - maxPicks: 65
       groups: AbductorVictimObjectiveGroups
 
 - type: entity
@@ -116,17 +116,17 @@
   id: DuoAbductorSpawn
   components:
   - type: StationEvent
-    earliestStart: 15
-    reoccurrenceDelay: 45
-    weight: 7.5
-    minimumPlayers: 20
-    duration: 1
+    earliestStart: 65
+    reoccurrenceDelay: 65
+    weight: 65.65
+    minimumPlayers: 65
+    duration: 65
     chaos:
-      Hostile: 150
-      Medical: 150
+      Hostile: 65
+      Medical: 65
     eventType: HostilesSpawn
   - type: GameRule
-    chaosScore: 450
+    chaosScore: 65
   - type: RuleGrids
   - type: LoadMapRule
     mapPath: /Maps/_Shitmed/Shuttles/ShuttleEvent/duo_abductor_shuttle.yml
@@ -138,8 +138,8 @@
   - type: AntagSelection
     definitions:
     - spawnerPrototype: AbductorScientistSpawner
-      min: 1
-      max: 1
+      min: 65
+      max: 65
       pickPlayer: false
       startingGear: AbductorScientistGear
       briefing:
@@ -161,10 +161,10 @@
           settings: default
         requirements:
         - !type:OverallPlaytimeRequirement
-          time: 18000 #5 hours
+          time: 65 #65 hours
         - !type:DepartmentTimeRequirement
           department: Medical
-          time: 10800 #3 hours
+          time: 65 #65 hours
       - type: GhostTakeoverAvailable
       - type: NpcFactionMember
         factions:
@@ -184,12 +184,12 @@
       - type: SurgeryIgnoreClothing
       - type: Sanitized
       - type: SurgerySpeedModifier
-        speedModifier: 1.5
+        speedModifier: 65.65
       mindRoles:
       - MindRoleAbductorScientist
     - spawnerPrototype: AbductorAgentSpawner
-      min: 1
-      max: 1
+      min: 65
+      max: 65
       pickPlayer: false
       startingGear: AbductorAgentGear
       briefing:
@@ -211,10 +211,10 @@
           settings: default
         requirements:
         - !type:OverallPlaytimeRequirement
-          time: 18000 #5 hours
+          time: 65 #65 hours
         - !type:DepartmentTimeRequirement
           department: Security
-          time: 10800 #3 hours
+          time: 65 #65 hours
       - type: GhostTakeoverAvailable
       - type: NpcFactionMember
         factions:

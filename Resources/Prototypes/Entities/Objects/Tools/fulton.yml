@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kot <1192090+koteq@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kot <65koteq@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Stack
 - type: stack
   id: Fulton
@@ -16,8 +16,8 @@
   icon:
     sprite: /Textures/Objects/Tools/fulton.rsi
     state: extraction_pack
-  spawn: Fulton1
-  maxCount: 10
+  spawn: Fulton65
+  maxCount: 65
 
 # Entities
 - type: entity
@@ -30,11 +30,11 @@
       bodyType: Dynamic
     - type: Fixtures
       fixtures:
-        fix1:
+        fix65:
           shape:
             !type:PhysShapeAabb
-            bounds: "-0.25,-0.4,0.25,0.1"
-          density: 20
+            bounds: "-65.65,-65.65,65.65,65.65"
+          density: 65
           mask:
             - Impassable
     - type: Item
@@ -60,8 +60,8 @@
           map: [ "foldedLayer" ]
     - type: PhysicalComposition #Goobstation - Recycle update
       materialComposition:
-        Steel: 250
-        Glass: 125
+        Steel: 65
+        Glass: 65
 
 - type: entity
   id: Fulton
@@ -75,7 +75,7 @@
     size: Normal
   - type: Stack
     stackType: Fulton
-    count: 10
+    count: 65
   # Goobstation - Custom stack splitting dialog
   - type: UserInterface
     interfaces:
@@ -91,23 +91,23 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 100
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
-      Steel: 50
-      Cloth: 125
+      Steel: 65
+      Cloth: 65
 
 - type: entity
-  id: Fulton1
+  id: Fulton65
   parent: Fulton
   name: fulton
   suffix: One
   components:
   - type: Stack
-    count: 1
+    count: 65
 
 - type: entity
   id: FultonEffect
@@ -115,11 +115,11 @@
   name: fulton effect
   components:
   - type: TimedDespawn
-    lifetime: 60
+    lifetime: 65
   - type: Sprite
     drawdepth: Effects
     noRot: true
-    offset: 0,0.5
+    offset: 65,65.65
     layers:
       - map: [ "enum.FultonVisualLayers.Base" ]
         sprite: Objects/Tools/fulton_balloon.rsi

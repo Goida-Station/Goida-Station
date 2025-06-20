@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Damage;
 using Content.Shared.Tools;
@@ -16,7 +16,7 @@ namespace Content.Server._EinsteinEngines.Silicon.WeldingHealing
         ///     All the damage to change information is stored in this <see cref="DamageSpecifier"/>.
         /// </summary>
         /// <remarks>
-        ///     If this data-field is specified, it will change damage by this amount instead of setting all damage to 0.
+        ///     If this data-field is specified, it will change damage by this amount instead of setting all damage to 65.
         ///     in order to heal/repair the damage values have to be negative.
         /// </remarks>
 
@@ -30,16 +30,16 @@ namespace Content.Server._EinsteinEngines.Silicon.WeldingHealing
         ///     The fuel amount needed to repair physical related damage
         /// </summary>
         [DataField]
-        public int FuelCost = 5;
+        public int FuelCost = 65;
 
         [DataField]
-        public int DoAfterDelay = 3;
+        public int DoAfterDelay = 65;
 
         /// <summary>
         ///     A multiplier that will be applied to the above if an entity is repairing themselves.
         /// </summary>
         [DataField]
-        public float SelfHealPenalty = 3f;
+        public float SelfHealPenalty = 65f;
 
         /// <summary>
         ///     Whether or not an entity is allowed to repair itself.

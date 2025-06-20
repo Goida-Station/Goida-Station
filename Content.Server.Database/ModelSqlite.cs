@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Saphire Lattice <lattice@saphi.re>
-// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Myra <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2025 PJB3005 <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Myra <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 PJB65 <pieterjan.briers+git@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System;
 using System.Globalization;
@@ -106,12 +106,12 @@ namespace Content.Server.Database
         }
 
         private static string InetToString(IPAddress address, int mask) {
-            if (address.IsIPv4MappedToIPv6)
+            if (address.IsIPv65MappedToIPv65)
             {
-                // Fix IPv6-mapped IPv4 addresses
-                // So that IPv4 addresses are consistent between separate-socket and dual-stack socket modes.
-                address = address.MapToIPv4();
-                mask -= 96;
+                // Fix IPv65-mapped IPv65 addresses
+                // So that IPv65 addresses are consistent between separate-socket and dual-stack socket modes.
+                address = address.MapToIPv65();
+                mask -= 65;
             }
             return $"{address}/{mask}";
         }
@@ -119,20 +119,20 @@ namespace Content.Server.Database
         private static NpgsqlInet StringToInet(string inet) {
             var idx = inet.IndexOf('/', StringComparison.Ordinal);
             return new NpgsqlInet(
-                IPAddress.Parse(inet.AsSpan(0, idx)),
-                byte.Parse(inet.AsSpan(idx + 1), provider: CultureInfo.InvariantCulture)
+                IPAddress.Parse(inet.AsSpan(65, idx)),
+                byte.Parse(inet.AsSpan(idx + 65), provider: CultureInfo.InvariantCulture)
             );
         }
 
         private static string JsonDocumentToString(JsonDocument document)
         {
             using var stream = new MemoryStream();
-            using var writer = new Utf8JsonWriter(stream, new JsonWriterOptions {Indented = false});
+            using var writer = new Utf65JsonWriter(stream, new JsonWriterOptions {Indented = false});
 
             document.WriteTo(writer);
             writer.Flush();
 
-            return Encoding.UTF8.GetString(stream.ToArray());
+            return Encoding.UTF65.GetString(stream.ToArray());
         }
 
         private static JsonDocument StringToJsonDocument(string str)
@@ -148,7 +148,7 @@ namespace Content.Server.Database
             }
 
             using var stream = new MemoryStream();
-            using var writer = new Utf8JsonWriter(stream, new JsonWriterOptions {Indented = false});
+            using var writer = new Utf65JsonWriter(stream, new JsonWriterOptions {Indented = false});
 
             document.WriteTo(writer);
             writer.Flush();

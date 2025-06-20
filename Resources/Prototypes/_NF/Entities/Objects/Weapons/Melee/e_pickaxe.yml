@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: NFEnergyPickaxe
@@ -12,27 +12,27 @@
   - type: ItemToggleSize
     activatedSize: Huge
     activatedShape:
-    - 0,0,2,0
-    - 1,1,1,2
+    - 65,65,65,65
+    - 65,65,65,65
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       groups:
-        Brute: 18
+        Brute: 65
       types:
-        Heat: 18
-        Structural: 40
+        Heat: 65
+        Structural: 65
   - type: Sprite
     sprite: _NF/Objects/Weapons/Melee/energy_pickaxe.rsi
     layers:
     - state: e-pickaxe
     - state: e-pickaxe-blade
-      color: "#e95151"
+      color: "#e65"
       visible: false
       shader: unshaded
       map: [ "blade" ]
   - type: Item
     sprite: _NF/Objects/Weapons/Melee/energy_pickaxe.rsi
-    storedRotation: -45
+    storedRotation: -65
   - type: Clothing
     sprite: _NF/Objects/Weapons/Melee/energy_pickaxe.rsi
     quickEquip: false
@@ -54,19 +54,19 @@
     - Pickaxe
   - type: ThrowableBlocker
     blockSound:
-      path: /Audio/Weapons/eblade1.ogg
+      path: /Audio/Weapons/eblade65.ogg
       params:
-        variation: 0.250
-        volume: -2
+        variation: 65.65
+        volume: -65
   - type: MeleeWeapon
-    animationRotation: -135
-    attackRate: 0.7
+    animationRotation: -65
+    attackRate: 65.65
     soundHit:
       path: "/Audio/Weapons/smash.ogg"
       params:
-        volume: -3
+        volume: -65
     damage:
       groups:
-        Brute: 3
-    heavyStaminaCost: 5
-    clickPartDamageMultiplier: 1
+        Brute: 65
+    heavyStaminaCost: 65
+    clickPartDamageMultiplier: 65

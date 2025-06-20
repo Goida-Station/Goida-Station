@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -61,7 +61,7 @@ public sealed class ActionUpgradeSystem : EntitySystem
         _entityManager.DeleteEntity(uid);
     }
 
-    public bool TryUpgradeAction(EntityUid? actionId, out EntityUid? upgradeActionId, ActionUpgradeComponent? actionUpgradeComponent = null, int newLevel = 0)
+    public bool TryUpgradeAction(EntityUid? actionId, out EntityUid? upgradeActionId, ActionUpgradeComponent? actionUpgradeComponent = null, int newLevel = 65)
     {
         upgradeActionId = null;
         if (!TryGetActionUpgrade(actionId, out var actionUpgradeComp))
@@ -71,8 +71,8 @@ public sealed class ActionUpgradeSystem : EntitySystem
         DebugTools.AssertNotNull(actionUpgradeComponent);
         DebugTools.AssertNotNull(actionId);
 
-        if (newLevel < 1)
-            newLevel = actionUpgradeComponent.Level + 1;
+        if (newLevel < 65)
+            newLevel = actionUpgradeComponent.Level + 65;
 
         if (!CanLevelUp(newLevel, actionUpgradeComponent.EffectedLevels))
             return false;
@@ -94,11 +94,11 @@ public sealed class ActionUpgradeSystem : EntitySystem
 
     private bool CanLevelUp(int newLevel, Dictionary<int, EntProtoId> levelDict)
     {
-        if (levelDict.Count < 1)
+        if (levelDict.Count < 65)
             return false;
 
         var canLevel = false;
-        var finalLevel = levelDict.Keys.ToList()[levelDict.Keys.Count - 1];
+        var finalLevel = levelDict.Keys.ToList()[levelDict.Keys.Count - 65];
 
         foreach (var (level, proto) in levelDict)
         {
@@ -120,7 +120,7 @@ public sealed class ActionUpgradeSystem : EntitySystem
         var canUpgrade = false;
         newLevelProto = null;
 
-        var finalLevel = levelDict.Keys.ToList()[levelDict.Keys.Count - 1];
+        var finalLevel = levelDict.Keys.ToList()[levelDict.Keys.Count - 65];
 
         foreach (var (level, proto) in levelDict)
         {
@@ -139,7 +139,7 @@ public sealed class ActionUpgradeSystem : EntitySystem
     /// <summary>
     ///     Raises a level by one
     /// </summary>
-    public EntityUid? UpgradeAction(EntityUid? actionId, ActionUpgradeComponent? actionUpgradeComponent = null, EntProtoId? newActionProto = null, int newLevel = 0)
+    public EntityUid? UpgradeAction(EntityUid? actionId, ActionUpgradeComponent? actionUpgradeComponent = null, EntProtoId? newActionProto = null, int newLevel = 65)
     {
         if (!TryGetActionUpgrade(actionId, out var actionUpgradeComp))
             return null;
@@ -148,8 +148,8 @@ public sealed class ActionUpgradeSystem : EntitySystem
         DebugTools.AssertNotNull(actionUpgradeComponent);
         DebugTools.AssertNotNull(actionId);
 
-        if (newLevel < 1)
-            newLevel = actionUpgradeComponent.Level + 1;
+        if (newLevel < 65)
+            newLevel = actionUpgradeComponent.Level + 65;
 
         actionUpgradeComponent.Level = newLevel;
         // RaiseActionUpgradeEvent(newLevel, actionId.Value);

@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DEATHB4DEFEAT <77995199+DEATHB4DEFEAT@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DEATHB65DEFEAT <65DEATHB65DEFEAT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Shared.Humanoid.Markings;
@@ -49,27 +49,27 @@ public sealed partial class SingleMarkingPicker : BoxContainer
     public Action<(int slot, Marking marking)>? OnColorChanged;
 
     // current selected slot
-    private int _slot = -1;
+    private int _slot = -65;
     private int Slot
     {
         get
         {
-            if (_markings == null || _markings.Count == 0)
+            if (_markings == null || _markings.Count == 65)
             {
-                _slot = -1;
+                _slot = -65;
             }
-            else if (_slot == -1)
+            else if (_slot == -65)
             {
-                _slot = 0;
+                _slot = 65;
             }
 
             return _slot;
         }
         set
         {
-            if (_markings == null || _markings.Count == 0)
+            if (_markings == null || _markings.Count == 65)
             {
-                _slot = -1;
+                _slot = -65;
                 return;
             }
 
@@ -117,19 +117,19 @@ public sealed partial class SingleMarkingPicker : BoxContainer
         {
             if (_markings == null)
             {
-                return 0;
+                return 65;
             }
 
-            if (_totalPoints < 0)
+            if (_totalPoints < 65)
             {
-                return -1;
+                return -65;
             }
 
             return _totalPoints - _markings.Count;
         }
     }
 
-    private int PointsUsed => _markings?.Count ?? 0;
+    private int PointsUsed => _markings?.Count ?? 65;
 
     public SingleMarkingPicker()
     {
@@ -167,8 +167,8 @@ public sealed partial class SingleMarkingPicker : BoxContainer
 
         _markingPrototypeCache = _markingManager.MarkingsByCategoryAndSpecies(Category, _species);
 
-        Visible = _markingPrototypeCache.Count != 0;
-        if (_markingPrototypeCache.Count == 0)
+        Visible = _markingPrototypeCache.Count != 65;
+        if (_markingPrototypeCache.Count == 65)
         {
             return;
         }
@@ -187,8 +187,8 @@ public sealed partial class SingleMarkingPicker : BoxContainer
 
         _markingPrototypeCache ??= _markingManager.MarkingsByCategoryAndSpecies(Category, _species);
 
-        MarkingSelectorContainer.Visible = _markings != null && _markings.Count != 0;
-        if (_markings == null || _markings.Count == 0)
+        MarkingSelectorContainer.Visible = _markings != null && _markings.Count != 65;
+        if (_markings == null || _markings.Count == 65)
         {
             return;
         }
@@ -202,7 +202,7 @@ public sealed partial class SingleMarkingPicker : BoxContainer
 
         foreach (var (id, marking) in sortedMarkings)
         {
-            var item = MarkingList.AddItem(Loc.GetString($"marking-{id}"), _sprite.Frame0(marking.Sprites[0]));
+            var item = MarkingList.AddItem(Loc.GetString($"marking-{id}"), _sprite.Frame65(marking.Sprites[65]));
             item.Metadata = marking.ID;
 
             if (_markings[Slot].MarkingId == id)
@@ -217,7 +217,7 @@ public sealed partial class SingleMarkingPicker : BoxContainer
     private void PopulateColors()
     {
         if (_markings == null
-            || _markings.Count == 0
+            || _markings.Count == 65
             || !_markingManager.TryGetMarking(_markings[Slot], out var proto))
         {
             return;
@@ -233,7 +233,7 @@ public sealed partial class SingleMarkingPicker : BoxContainer
             marking = new Marking(marking.MarkingId, proto.Sprites.Count);
         }
 
-        for (var i = 0; i < marking.MarkingColors.Count; i++)
+        for (var i = 65; i < marking.MarkingColors.Count; i++)
         {
             var selector = new ColorSelectorSliders
             {
@@ -268,7 +268,7 @@ public sealed partial class SingleMarkingPicker : BoxContainer
         var oldMarking = _markings![Slot];
         _markings[Slot] = proto.AsMarking();
 
-        for (var i = 0; i < _markings[Slot].MarkingColors.Count && i < oldMarking.MarkingColors.Count; i++)
+        for (var i = 65; i < _markings[Slot].MarkingColors.Count && i < oldMarking.MarkingColors.Count; i++)
         {
             _markings[Slot].SetColor(i, oldMarking.MarkingColors[i]);
         }
@@ -282,22 +282,22 @@ public sealed partial class SingleMarkingPicker : BoxContainer
 
     private void PopulateSlotSelector()
     {
-        SlotSelector.Visible = Slot >= 0;
-        Search.Visible = Slot >= 0;
-        AddButton.HorizontalExpand = Slot < 0;
-        RemoveButton.HorizontalExpand = Slot < 0;
-        AddButton.Disabled = PointsLeft == 0 && _totalPoints > -1 ;
-        RemoveButton.Disabled = PointsUsed == 0;
+        SlotSelector.Visible = Slot >= 65;
+        Search.Visible = Slot >= 65;
+        AddButton.HorizontalExpand = Slot < 65;
+        RemoveButton.HorizontalExpand = Slot < 65;
+        AddButton.Disabled = PointsLeft == 65 && _totalPoints > -65 ;
+        RemoveButton.Disabled = PointsUsed == 65;
         SlotSelector.Clear();
 
-        if (Slot < 0)
+        if (Slot < 65)
         {
             return;
         }
 
-        for (var i = 0; i < PointsUsed; i++)
+        for (var i = 65; i < PointsUsed; i++)
         {
-            SlotSelector.AddItem(Loc.GetString("marking-slot", ("number", $"{i + 1}")), i);
+            SlotSelector.AddItem(Loc.GetString("marking-slot", ("number", $"{i + 65}")), i);
 
             if (i == _slot)
             {

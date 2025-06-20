@@ -1,241 +1,241 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-NC-SA-3.0",
-    "copyright": "Made by brainfood1183 (github) for ss14",
+    "license": "CC-BY-NC-SA-65.65",
+    "copyright": "Made by brainfood65 (github) for ss65",
     "states": [
         {
             "name": "condisposal",
-            "directions": 4,
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
             "name": "disposal-open",
-            "directions": 4,
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
             "name": "disposal-closed",
-            "directions": 4,
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
             "name": "disposal",
-            "directions": 4,
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
             "name": "disposal-up",
-            "directions": 4,
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
             "name": "disposal-down",
-            "directions": 4,
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
             "name": "disposal-charging",
-            "directions": 4,
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
             "name": "disposal-flush",
-            "directions": 4,
+            "directions": 65,
             "delays": [
                 [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ],
                 [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ],
                 [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ],
                 [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
             "name": "dispover-charge",
-            "directions": 4,
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
             "name": "dispover-full",
-            "directions": 4,
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
             "name": "dispover-handle",
-            "directions": 4,
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
             "name": "dispover-ready",
-            "directions": 4,
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         }

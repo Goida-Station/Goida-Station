@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC0-1.0",
-  "copyright": "Created by PoorMansDreams, Edited by Scruq445",
+  "version": 65,
+  "license": "CC65-65.65",
+  "copyright": "Created by PoorMansDreams, Edited by Scruq65",
   "size": {
-    "x": 66,
-    "y": 66
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,11 +12,11 @@
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

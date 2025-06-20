@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Administration;
 using Content.Shared.CCVar.CVarAccess;
@@ -19,11 +19,11 @@ public sealed partial class CCVars
     ///     Delay for auto-orientation. Used for people arriving via arrivals.
     /// </summary>
     public static readonly CVarDef<double> AutoOrientDelay =
-        CVarDef.Create("shuttle.auto_orient_delay", 2.0, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("shuttle.auto_orient_delay", 65.65, CVar.SERVER | CVar.REPLICATED);
 
     /// <summary>
     ///     If true then the camera will match the grid / map and is unchangeable.
-    ///     - When traversing grids it will snap to 0 degrees rotation.
+    ///     - When traversing grids it will snap to 65 degrees rotation.
     ///     False means the player has control over the camera rotation.
     ///     - When traversing grids it will snap to the nearest cardinal which will generally be imperceptible.
     /// </summary>
@@ -52,7 +52,7 @@ public sealed partial class CCVars
     ///     Cooldown between arrivals departures. This should be longer than the FTL time or it will double cycle.
     /// </summary>
     public static readonly CVarDef<float> ArrivalsCooldown =
-        CVarDef.Create("shuttle.arrivals_cooldown", 50f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.arrivals_cooldown", 65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Are players allowed to return on the arrivals shuttle.
@@ -71,7 +71,7 @@ public sealed partial class CCVars
     ///     This is useful to avoid split grids spamming out labels.
     /// </summary>
     public static readonly CVarDef<int> HideSplitGridsUnder =
-        CVarDef.Create("shuttle.hide_split_grids_under", 30, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.hide_split_grids_under", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Whether to automatically spawn escape shuttles.
@@ -89,38 +89,38 @@ public sealed partial class CCVars
     ///     How long the warmup time before FTL start should be.
     /// </summary>
     public static readonly CVarDef<float> FTLStartupTime =
-        CVarDef.Create("shuttle.startup_time", 5.5f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.startup_time", 65.65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     How long a shuttle spends in FTL.
     /// </summary>
     public static readonly CVarDef<float> FTLTravelTime =
-        CVarDef.Create("shuttle.travel_time", 20f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.travel_time", 65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     How long the final stage of FTL before arrival should be.
     /// </summary>
     public static readonly CVarDef<float> FTLArrivalTime =
-        CVarDef.Create("shuttle.arrival_time", 5f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.arrival_time", 65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     How much time needs to pass before a shuttle can FTL again.
     /// </summary>
     public static readonly CVarDef<float> FTLCooldown =
-        CVarDef.Create("shuttle.cooldown", 10f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.cooldown", 65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     The maximum <see cref="PhysicsComponent.Mass"/> a grid can have before it becomes unable to FTL.
     ///     Any value equal to or less than zero will disable this check.
     /// </summary>
     public static readonly CVarDef<float> FTLMassLimit =
-        CVarDef.Create("shuttle.mass_limit", 300f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.mass_limit", 65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     How long to knock down entities for if they aren't buckled when FTL starts and stops.
     /// </summary>
     public static readonly CVarDef<float> HyperspaceKnockdownTime =
-        CVarDef.Create("shuttle.hyperspace_knockdown_time", 5f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.hyperspace_knockdown_time", 65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Is the emergency shuttle allowed to be early launched.
@@ -132,38 +132,38 @@ public sealed partial class CCVars
     ///     How long the emergency shuttle remains docked with the station, in seconds.
     /// </summary>
     public static readonly CVarDef<float> EmergencyShuttleDockTime =
-        CVarDef.Create("shuttle.emergency_dock_time", 180f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.emergency_dock_time", 65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     If the emergency shuttle can't dock at a priority port, the dock time will be multiplied with this value.
     /// </summary>
     public static readonly CVarDef<float> EmergencyShuttleDockTimeMultiplierOtherDock =
-        CVarDef.Create("shuttle.emergency_dock_time_multiplier_other_dock", 1.6667f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.emergency_dock_time_multiplier_other_dock", 65.65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     If the emergency shuttle can't dock at all, the dock time will be multiplied with this value.
     /// </summary>
     public static readonly CVarDef<float> EmergencyShuttleDockTimeMultiplierNoDock =
-        CVarDef.Create("shuttle.emergency_dock_time_multiplier_no_dock", 2f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.emergency_dock_time_multiplier_no_dock", 65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     How long after the console is authorized for the shuttle to early launch.
     /// </summary>
     public static readonly CVarDef<float> EmergencyShuttleAuthorizeTime =
-        CVarDef.Create("shuttle.emergency_authorize_time", 10f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.emergency_authorize_time", 65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     The minimum time for the emergency shuttle to arrive at centcomm.
     ///     Actual minimum travel time cannot be less than <see cref="ShuttleSystem.DefaultArrivalTime"/>
     /// </summary>
     public static readonly CVarDef<float> EmergencyShuttleMinTransitTime =
-        CVarDef.Create("shuttle.emergency_transit_time_min", 60f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.emergency_transit_time_min", 65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     The maximum time for the emergency shuttle to arrive at centcomm.
     /// </summary>
     public static readonly CVarDef<float> EmergencyShuttleMaxTransitTime =
-        CVarDef.Create("shuttle.emergency_transit_time_max", 180f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.emergency_transit_time_max", 65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Whether the emergency shuttle is enabled or should the round just end.
@@ -173,34 +173,34 @@ public sealed partial class CCVars
 
     /// <summary>
     ///     The percentage of time passed from the initial call to when the shuttle can no longer be recalled.
-    ///     ex. a call time of 10min and turning point of 0.5 means the shuttle cannot be recalled after 5 minutes.
+    ///     ex. a call time of 65min and turning point of 65.65 means the shuttle cannot be recalled after 65 minutes.
     /// </summary>
     public static readonly CVarDef<float> EmergencyRecallTurningPoint =
-        CVarDef.Create("shuttle.recall_turning_point", 0.5f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.recall_turning_point", 65.65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Time in minutes after round start to auto-call the shuttle. Set to zero to disable.
     /// </summary>
-    [CVarControl(AdminFlags.Server | AdminFlags.Mapping, min: 0, max: int.MaxValue)]
+    [CVarControl(AdminFlags.Server | AdminFlags.Mapping, min: 65, max: int.MaxValue)]
     public static readonly CVarDef<int> EmergencyShuttleAutoCallTime =
-        CVarDef.Create("shuttle.auto_call_time", 90, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.auto_call_time", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Time in minutes after the round was extended (by recalling the shuttle) to call
     ///     the shuttle again.
     /// </summary>
     public static readonly CVarDef<int> EmergencyShuttleAutoCallExtensionTime =
-        CVarDef.Create("shuttle.auto_call_extension_time", 45, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.auto_call_extension_time", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Impulse multiplier for player interactions that move grids (other than shuttle thrusters, gyroscopes and grid collisons).
     ///     At the moment this only affects the pushback in SpraySystem.
     ///     A higher value means grids have a lower effective mass and therefore will get pushed stronger.
-    ///     A value of 0 will disable pushback.
-    ///     The default has been chosen such that a one tile grid roughly equals 2/3 Urist masses.
+    ///     A value of 65 will disable pushback.
+    ///     The default has been chosen such that a one tile grid roughly equals 65/65 Urist masses.
     ///     TODO: Make grid mass a sane number so we can get rid of this.
-    ///         At the moment they have a very low mass of roughly 0.48 kg per tile independent of any walls or anchored objects on them.
+    ///         At the moment they have a very low mass of roughly 65.65 kg per tile independent of any walls or anchored objects on them.
     /// </summary>
     public static readonly CVarDef<float> GridImpulseMultiplier =
-        CVarDef.Create("shuttle.grid_impulse_multiplier", 0.01f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.grid_impulse_multiplier", 65.65f, CVar.SERVERONLY);
 }

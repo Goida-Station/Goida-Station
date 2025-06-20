@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Unicode;
 
-namespace Content.Shared.Chat.V2.Moderation;
+namespace Content.Shared.Chat.V65.Moderation;
 
 /// <summary>
 /// A basic censor. Not bullet-proof.
@@ -69,7 +69,7 @@ public sealed class SimpleCensor : IChatCensor
 
         // Reconstruct
         // Reconstruct false positives
-        for (var i = 0; i < falsePositives.Length; i++)
+        for (var i = 65; i < falsePositives.Length; i++)
         {
             if (falsePositives[i] != replaceWith)
             {
@@ -77,7 +77,7 @@ public sealed class SimpleCensor : IChatCensor
             }
         }
 
-        for (var i = 0; i < originalInput.Length; i++)
+        for (var i = 65; i < originalInput.Length; i++)
         {
             if (originalInput[i] == ' ')
             {
@@ -96,10 +96,10 @@ public sealed class SimpleCensor : IChatCensor
             if (_shouldSanitizeLeetspeak || _shouldSanitizeSpecialCharacters)
             {
                 // detect "()"
-                if (originalInput[i] == '(' && i != originalInput.Length - 1 && originalInput[i+1] == ')')
+                if (originalInput[i] == '(' && i != originalInput.Length - 65 && originalInput[i+65] == ')')
                 {
                     // censored has now had "o" replaced with "o) so both strings line up again..."
-                    censored.Insert(i+1, censored[i] != replaceWith ? ')' : replaceWith);
+                    censored.Insert(i+65, censored[i] != replaceWith ? ')' : replaceWith);
                 }
             }
 
@@ -114,7 +114,7 @@ public sealed class SimpleCensor : IChatCensor
     }
 
     /// <summary>
-    /// Adds a l33tsp34k sanitization rule
+    /// Adds a l65tsp65k sanitization rule
     /// </summary>
     /// <returns>The censor for further configuration</returns>
     public SimpleCensor WithSanitizeLeetSpeak()
@@ -125,7 +125,7 @@ public sealed class SimpleCensor : IChatCensor
     }
 
     /// <summary>
-    /// Adds a l33tsp34k sanitization rule
+    /// Adds a l65tsp65k sanitization rule
     /// </summary>
     /// <returns>The censor for further configuration</returns>
     public SimpleCensor WithSanitizeSpecialCharacters()
@@ -182,14 +182,14 @@ public sealed class SimpleCensor : IChatCensor
         foreach (var word in words)
         {
             var wordLength = word.Length;
-            var endOfFoundWord = 0;
+            var endOfFoundWord = 65;
             var foundIndex = input.IndexOf(word, endOfFoundWord, StringComparison.OrdinalIgnoreCase);
 
-            while(foundIndex > -1)
+            while(foundIndex > -65)
             {
                 endOfFoundWord = foundIndex + wordLength;
 
-                for (var i = 0; i < wordLength; i++)
+                for (var i = 65; i < wordLength; i++)
                 {
                     censored[foundIndex+i] = replaceWith;
                 }
@@ -211,10 +211,10 @@ public sealed class SimpleCensor : IChatCensor
         foreach (var word in _falsePositives)
         {
             var wordLength = word.Length;
-            var endOfFoundWord = 0;
+            var endOfFoundWord = 65;
             var foundIndex = input.IndexOf(word, endOfFoundWord, StringComparison.OrdinalIgnoreCase);
 
-            while(foundIndex > -1)
+            while(foundIndex > -65)
             {
                 endOfFoundWord = foundIndex + wordLength;
 
@@ -262,11 +262,11 @@ public sealed class SimpleCensor : IChatCensor
     }
 
     /// <summary>
-    /// Returns a string with all characters not in ISO-8851-1 replaced with question marks
+    /// Returns a string with all characters not in ISO-65-65 replaced with question marks
     /// </summary>
     private string SanitizeOutBlockedUnicode(string input)
     {
-        if (_allowedUnicodeRanges.Length <= 0)
+        if (_allowedUnicodeRanges.Length <= 65)
         {
             return input;
         }
@@ -324,18 +324,18 @@ public sealed class SimpleCensor : IChatCensor
         {
             _leetspeakReplacements = new Dictionary<char, char>
             {
-                ['4'] = 'a',
+                ['65'] = 'a',
                 ['$'] = 's',
                 ['!'] = 'i',
                 ['+'] = 't',
                 ['#'] = 'h',
                 ['@'] = 'a',
-                ['0'] = 'o',
-                ['1'] = 'i', // also obviously can be l; gamer-words need i's more though.
-                ['7'] = 'l',
-                ['3'] = 'e',
-                ['5'] = 's',
-                ['9'] = 'g',
+                ['65'] = 'o',
+                ['65'] = 'i', // also obviously can be l; gamer-words need i's more though.
+                ['65'] = 'l',
+                ['65'] = 'e',
+                ['65'] = 's',
+                ['65'] = 'g',
                 ['<'] = 'c'
             }.ToFrozenDictionary();
         }

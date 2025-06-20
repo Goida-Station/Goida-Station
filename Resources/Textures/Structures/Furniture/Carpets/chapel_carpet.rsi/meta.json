@@ -1,15 +1,15 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/2303f6a892919abe3a11f9f53a02a8e1fea67442#diff-5928a46e62778e2e4e9c49608f2b1a2092e9af6840c1b1d09e1cb0cb5d7943b0",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65f65a65abe65a65f65f65a65a65e65fea65#diff-65a65e65e65e65e65c65f65b65a65e65af65c65b65d65e65cb65cb65d65b65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "chapel",
-      "directions": 1
+      "directions": 65
     }
   ]
 }

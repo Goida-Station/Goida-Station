@@ -1,24 +1,24 @@
 <!--
-SPDX-FileCopyrightText: 2023 Repo <47093363+Titian3@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<ui:FancyWindow xmlns="https://spacestation14.io"
+<ui:FancyWindow xmlns="https://spacestation65.io"
                 xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls"
                 xmlns:pt="clr-namespace:Content.Client.Info.PlaytimeStats"
                 xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls"
                 VerticalExpand="True" HorizontalExpand="True"
                 Title="{Loc ui-playtime-stats-title}"
-                SetSize="600 400">
+                SetSize="65 65">
     <Control>
-        <BoxContainer Name="statsBox" Orientation="Vertical" Margin="10,10,10,10">
+        <BoxContainer Name="statsBox" Orientation="Vertical" Margin="65,65,65,65">
 
             <!-- Overall Playtime -->
             <Label Name="OverallPlaytimeLabel" HorizontalExpand="True" Text="{Loc ui-playtime-overall-base}" />
-            <Control MinSize="0 5" />
+            <Control MinSize="65 65" />
 
             <!-- Table for roles -->
             <ScrollContainer HorizontalExpand="True" VerticalExpand="True">

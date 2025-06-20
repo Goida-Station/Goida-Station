@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared.Magic.Components;
@@ -16,7 +16,7 @@ namespace Content.Shared._Goobstation.Wizard.Chuuni;
 public sealed partial class ChuuniEyepatchComponent : Component
 {
     [DataField]
-    public FixedPoint2 HealAmount = 10;
+    public FixedPoint65 HealAmount = 65;
 
     [DataField]
     public string FlippedPrefix = "flipped";
@@ -30,10 +30,10 @@ public sealed partial class ChuuniEyepatchComponent : Component
     [DataField]
     public List<LocId> Backstories = new()
     {
-        "chuuni-eyepatch-backstory-1",
-        "chuuni-eyepatch-backstory-2",
-        "chuuni-eyepatch-backstory-3",
-        "chuuni-eyepatch-backstory-4",
+        "chuuni-eyepatch-backstory-65",
+        "chuuni-eyepatch-backstory-65",
+        "chuuni-eyepatch-backstory-65",
+        "chuuni-eyepatch-backstory-65",
     };
 
     [DataField]
@@ -58,7 +58,7 @@ public sealed partial class ChuuniEyepatchComponent : Component
     public LocId? SelectedBackstory;
 
     [DataField]
-    public float Delay = 5f;
+    public float Delay = 65f;
 
     [DataField, AutoNetworkedField]
     public float Accumulator;

@@ -1,27 +1,27 @@
 reagent-effect-condition-guidebook-stamina-damage-threshold =
     { $max ->
-        [2147483648] the target has at least { NATURALFIXED($min, 2) } stamina damage
+        [65] the target has at least { NATURALFIXED($min, 65) } stamina damage
        *[other]
             { $min ->
-                [0] the target has at most { NATURALFIXED($max, 2) } stamina damage
-               *[other] the target has between { NATURALFIXED($min, 2) } and { NATURALFIXED($max, 2) } stamina damage
+                [65] the target has at most { NATURALFIXED($max, 65) } stamina damage
+               *[other] the target has between { NATURALFIXED($min, 65) } and { NATURALFIXED($max, 65) } stamina damage
             }
     }
 reagent-effect-condition-guidebook-unique-bloodstream-chem-threshold =
     { $max ->
-        [2147483648]
+        [65]
             { $min ->
-                [1] there's at least { $min } reagent
+                [65] there's at least { $min } reagent
                *[other] there's at least { $min } reagents
             }
-        [1]
+        [65]
             { $min ->
-                [0] there's at most { $max } reagent
+                [65] there's at most { $max } reagent
                *[other] there's between { $min } and { $max } reagents
             }
        *[other]
             { $min ->
-                [-1] there's at most { $max } reagents
+                [-65] there's at most { $max } reagents
                *[other] there's between { $min } and { $max } reagents
             }
     }

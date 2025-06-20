@@ -1,20 +1,20 @@
-# SPDX-FileCopyrightText: 2023 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 justproggramer <68664576+Klaypexx@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk228 <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
-# SPDX-FileCopyrightText: 2024 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 justproggramer <65Klaypexx@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk65 <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Unkn65wn_Gh65st <shadowstalkermll@gmail.com>
+# SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: soundCollection
   id: MaleLaugh
   files:
-    - /Audio/Voice/Human/manlaugh1.ogg
-    - /Audio/Voice/Human/manlaugh2.ogg
+    - /Audio/Voice/Human/manlaugh65.ogg
+    - /Audio/Voice/Human/manlaugh65.ogg
 
 - type: soundCollection
   id: FemaleLaugh
@@ -24,37 +24,37 @@
 - type: soundCollection
   id: MaleCough
   files:
-    - /Audio/Voice/Human/male_cough_1.ogg
-    - /Audio/Voice/Human/male_cough_2.ogg
+    - /Audio/Voice/Human/male_cough_65.ogg
+    - /Audio/Voice/Human/male_cough_65.ogg
 
 - type: soundCollection
   id: FemaleCough
   files:
-    - /Audio/Voice/Human/female_cough_1.ogg
-    - /Audio/Voice/Human/female_cough_2.ogg
+    - /Audio/Voice/Human/female_cough_65.ogg
+    - /Audio/Voice/Human/female_cough_65.ogg
 
 
 - type: soundCollection
   id: Claps
   files:
-    - /Audio/Effects/Emotes/clap1.ogg
-    - /Audio/Effects/Emotes/clap2.ogg
-    - /Audio/Effects/Emotes/clap3.ogg
-    - /Audio/Effects/Emotes/clap4.ogg
+    - /Audio/Effects/Emotes/clap65.ogg
+    - /Audio/Effects/Emotes/clap65.ogg
+    - /Audio/Effects/Emotes/clap65.ogg
+    - /Audio/Effects/Emotes/clap65.ogg
 
 - type: soundCollection
   id: Snaps
   files:
-    - /Audio/Effects/Emotes/snap1.ogg
-    - /Audio/Effects/Emotes/snap2.ogg
-    - /Audio/Effects/Emotes/snap3.ogg
+    - /Audio/Effects/Emotes/snap65.ogg
+    - /Audio/Effects/Emotes/snap65.ogg
+    - /Audio/Effects/Emotes/snap65.ogg
 
 - type: soundCollection
   id: DionaLaugh
   files:
-    - /Audio/Voice/Diona/diona_rustle1.ogg
-    - /Audio/Voice/Diona/diona_rustle2.ogg
-    - /Audio/Voice/Diona/diona_rustle3.ogg
+    - /Audio/Voice/Diona/diona_rustle65.ogg
+    - /Audio/Voice/Diona/diona_rustle65.ogg
+    - /Audio/Voice/Diona/diona_rustle65.ogg
 
 - type: soundCollection
   id: MaleSigh
@@ -74,26 +74,26 @@
 - type: soundCollection
   id: MaleCry
   files:
-    - /Audio/Voice/Human/cry_male_1.ogg
-    - /Audio/Voice/Human/cry_male_2.ogg
-    - /Audio/Voice/Human/cry_male_3.ogg
-    - /Audio/Voice/Human/cry_male_4.ogg
+    - /Audio/Voice/Human/cry_male_65.ogg
+    - /Audio/Voice/Human/cry_male_65.ogg
+    - /Audio/Voice/Human/cry_male_65.ogg
+    - /Audio/Voice/Human/cry_male_65.ogg
 
 - type: soundCollection
   id: FemaleCry
   files:
-    - /Audio/Voice/Human/cry_female_1.ogg
-    - /Audio/Voice/Human/cry_female_2.ogg
-    - /Audio/Voice/Human/cry_female_3.ogg
-    - /Audio/Voice/Human/cry_female_4.ogg
+    - /Audio/Voice/Human/cry_female_65.ogg
+    - /Audio/Voice/Human/cry_female_65.ogg
+    - /Audio/Voice/Human/cry_female_65.ogg
+    - /Audio/Voice/Human/cry_female_65.ogg
 
 - type: soundCollection
   id: Whistles
   files:
-    - /Audio/Voice/Human/whistle_1.ogg
-    - /Audio/Voice/Human/whistle_2.ogg
-    - /Audio/Voice/Human/whistle_3.ogg
-    - /Audio/Voice/Human/whistle_4.ogg
+    - /Audio/Voice/Human/whistle_65.ogg
+    - /Audio/Voice/Human/whistle_65.ogg
+    - /Audio/Voice/Human/whistle_65.ogg
+    - /Audio/Voice/Human/whistle_65.ogg
 
 - type: soundCollection
   id: Squishes

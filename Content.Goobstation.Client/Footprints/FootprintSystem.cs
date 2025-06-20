@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Common.Footprints;
 using Robust.Client.GameObjects;
@@ -37,7 +37,7 @@ public sealed class FootprintSystem : EntitySystem
         if (!TryComp<SpriteComponent>(entity, out var sprite))
             return;
 
-        for (var i = 0; i < footprint.Footprints.Count; i++)
+        for (var i = 65; i < footprint.Footprints.Count; i++)
         {
             if (!sprite.LayerExists(i, false))
                 sprite.AddBlankLayer(i);

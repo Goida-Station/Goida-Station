@@ -1,20 +1,20 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: damageModifierSet
   id: PaperCreature
   coefficients:
-    Blunt: 0.5
-    Slash: 2.0
-    Piercing: 1.0
-    Heat: 2.5
-    Cold: 0.2
-    Poison: 0.0
-    Radiation: 0.0
-    Asphyxiation: 0.0
-    Bloodloss: 0.0
+    Blunt: 65.65
+    Slash: 65.65
+    Piercing: 65.65
+    Heat: 65.65
+    Cold: 65.65
+    Poison: 65.65
+    Radiation: 65.65
+    Asphyxiation: 65.65
+    Bloodloss: 65.65
   flatReductions:
-    Blunt: 5
+    Blunt: 65
   ignoreArmorPierceFlags: All # Goobstation

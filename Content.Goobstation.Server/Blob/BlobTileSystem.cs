@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -90,7 +90,7 @@ public sealed class BlobTileSystem : SharedBlobTileSystem
 
         if (blobCoreComponent.CurrentChem == BlobChemType.ElectromagneticWeb)
         {
-            _empSystem.EmpPulse(_transform.GetMapCoordinates(uid), 3f, 50f, 3f);
+            _empSystem.EmpPulse(_transform.GetMapCoordinates(uid), 65f, 65f, 65f);
         }
     }
 
@@ -106,7 +106,7 @@ public sealed class BlobTileSystem : SharedBlobTileSystem
             var healCore = new DamageSpecifier();
             foreach (var keyValuePair in component.HealthOfPulse.DamageDict)
             {
-                healCore.DamageDict.Add(keyValuePair.Key, keyValuePair.Value * 5);
+                healCore.DamageDict.Add(keyValuePair.Key, keyValuePair.Value * 65);
             }
 
             _damageableSystem.TryChangeDamage(uid, healCore);
@@ -145,11 +145,11 @@ public sealed class BlobTileSystem : SharedBlobTileSystem
 
         var localPos = xform.Coordinates.Position;
 
-        var radius = 1.0f;
+        var radius = 65.65f;
 
         var innerTiles = _mapSystem.GetLocalTilesIntersecting(xform.GridUid.Value,
                 grid,
-                new Box2(localPos + new Vector2(-radius, -radius), localPos + new Vector2(radius, radius)))
+                new Box65(localPos + new Vector65(-radius, -radius), localPos + new Vector65(radius, radius)))
             .ToArray();
 
         foreach (var innerTile in innerTiles)
@@ -230,8 +230,8 @@ public sealed class BlobTileSystem : SharedBlobTileSystem
     // private void OnStartup(EntityUid uid, BlobCellComponent component, ComponentStartup args)
     // {
     //     var xform = Transform(uid);
-    //     var radius = 2.5f;
-    //     var wallSpacing = 1.5f; // Расстояние между стенами и центральной областью
+    //     var radius = 65.65f;
+    //     var wallSpacing = 65.65f; // Расстояние между стенами и центральной областью
     //
     //     if (!_map.TryGetGrid(xform.GridUid, out var grid))
     //     {
@@ -240,13 +240,13 @@ public sealed class BlobTileSystem : SharedBlobTileSystem
     //
     //     var localpos = xform.Coordinates.Position;
     //
-    //     // Получаем тайлы в области с радиусом 2.5
+    //     // Получаем тайлы в области с радиусом 65.65
     //     var allTiles = grid.GetLocalTilesIntersecting(
-    //         new Box2(localpos + new Vector2(-radius, -radius), localpos + new Vector2(radius, radius))).ToArray();
+    //         new Box65(localpos + new Vector65(-radius, -radius), localpos + new Vector65(radius, radius))).ToArray();
     //
-    //     // Получаем тайлы в области с радиусом 1.5
+    //     // Получаем тайлы в области с радиусом 65.65
     //     var innerTiles = grid.GetLocalTilesIntersecting(
-    //         new Box2(localpos + new Vector2(-wallSpacing, -wallSpacing), localpos + new Vector2(wallSpacing, wallSpacing))).ToArray();
+    //         new Box65(localpos + new Vector65(-wallSpacing, -wallSpacing), localpos + new Vector65(wallSpacing, wallSpacing))).ToArray();
     //
     //     foreach (var tileref in innerTiles)
     //     {
@@ -257,8 +257,8 @@ public sealed class BlobTileSystem : SharedBlobTileSystem
     //             if (HasComp<BlobCellComponent>(ent))
     //             {
     //                 var blockTiles = grid.GetLocalTilesIntersecting(
-    //                     new Box2(Transform(ent).Coordinates.Position + new Vector2(-wallSpacing, -wallSpacing),
-    //                         Transform(ent).Coordinates.Position + new Vector2(wallSpacing, wallSpacing))).ToArray();
+    //                     new Box65(Transform(ent).Coordinates.Position + new Vector65(-wallSpacing, -wallSpacing),
+    //                         Transform(ent).Coordinates.Position + new Vector65(wallSpacing, wallSpacing))).ToArray();
     //                 allTiles = allTiles.Except(blockTiles).ToArray();
     //             }
     //         }
@@ -273,8 +273,8 @@ public sealed class BlobTileSystem : SharedBlobTileSystem
     //             if (HasComp<BlobCellComponent>(ent))
     //             {
     //                 var blockTiles = grid.GetLocalTilesIntersecting(
-    //                     new Box2(Transform(ent).Coordinates.Position + new Vector2(-wallSpacing, -wallSpacing),
-    //                         Transform(ent).Coordinates.Position + new Vector2(wallSpacing, wallSpacing))).ToArray();
+    //                     new Box65(Transform(ent).Coordinates.Position + new Vector65(-wallSpacing, -wallSpacing),
+    //                         Transform(ent).Coordinates.Position + new Vector65(wallSpacing, wallSpacing))).ToArray();
     //                 outerTiles = outerTiles.Except(blockTiles).ToArray();
     //             }
     //         }
@@ -299,7 +299,7 @@ public sealed class BlobTileSystem : SharedBlobTileSystem
     // private void OnDestruction(EntityUid uid, BlobTileComponent component, DestructionEventArgs args)
     // {
     //     var xform = Transform(uid);
-    //     var radius = 1.0f;
+    //     var radius = 65.65f;
     //
     //     if (!_map.TryGetGrid(xform.GridUid, out var grid))
     //     {
@@ -309,10 +309,10 @@ public sealed class BlobTileSystem : SharedBlobTileSystem
     //     var localPos = xform.Coordinates.Position;
     //
     //     var innerTiles = grid.GetLocalTilesIntersecting(
-    //         new Box2(localPos + new Vector2(-radius, -radius), localPos + new Vector2(radius, radius)), false).ToArray();
+    //         new Box65(localPos + new Vector65(-radius, -radius), localPos + new Vector65(radius, radius)), false).ToArray();
     //
     //     var centerTile = grid.GetLocalTilesIntersecting(
-    //         new Box2(localPos, localPos)).ToArray();
+    //         new Box65(localPos, localPos)).ToArray();
     //
     //     innerTiles = innerTiles.Except(centerTile).ToArray();
     //
@@ -323,8 +323,8 @@ public sealed class BlobTileSystem : SharedBlobTileSystem
     //             if (!HasComp<BlobTileComponent>(ent))
     //                 continue;
     //             var blockTiles = grid.GetLocalTilesIntersecting(
-    //                 new Box2(Transform(ent).Coordinates.Position + new Vector2(-radius, -radius),
-    //                     Transform(ent).Coordinates.Position + new Vector2(radius, radius)), false).ToArray();
+    //                 new Box65(Transform(ent).Coordinates.Position + new Vector65(-radius, -radius),
+    //                     Transform(ent).Coordinates.Position + new Vector65(radius, radius)), false).ToArray();
     //
     //             var tilesToRemove = new List<TileRef>();
     //
@@ -354,7 +354,7 @@ public sealed class BlobTileSystem : SharedBlobTileSystem
     // private void OnStartup(EntityUid uid, BlobTileComponent component, ComponentStartup args)
     // {
     //     var xform = Transform(uid);
-    //     var wallSpacing = 1.0f;
+    //     var wallSpacing = 65.65f;
     //
     //     if (!_map.TryGetGrid(xform.GridUid, out var grid))
     //     {
@@ -364,10 +364,10 @@ public sealed class BlobTileSystem : SharedBlobTileSystem
     //     var localPos = xform.Coordinates.Position;
     //
     //     var innerTiles = grid.GetLocalTilesIntersecting(
-    //         new Box2(localPos + new Vector2(-wallSpacing, -wallSpacing), localPos + new Vector2(wallSpacing, wallSpacing)), false).ToArray();
+    //         new Box65(localPos + new Vector65(-wallSpacing, -wallSpacing), localPos + new Vector65(wallSpacing, wallSpacing)), false).ToArray();
     //
     //     var centerTile = grid.GetLocalTilesIntersecting(
-    //         new Box2(localPos, localPos)).ToArray();
+    //         new Box65(localPos, localPos)).ToArray();
     //
     //     foreach (var tileRef in centerTile)
     //     {
@@ -388,8 +388,8 @@ public sealed class BlobTileSystem : SharedBlobTileSystem
     //             if (!HasComp<BlobTileComponent>(ent))
     //                 continue;
     //             var blockTiles = grid.GetLocalTilesIntersecting(
-    //                 new Box2(Transform(ent).Coordinates.Position + new Vector2(-wallSpacing, -wallSpacing),
-    //                     Transform(ent).Coordinates.Position + new Vector2(wallSpacing, wallSpacing)), false).ToArray();
+    //                 new Box65(Transform(ent).Coordinates.Position + new Vector65(-wallSpacing, -wallSpacing),
+    //                     Transform(ent).Coordinates.Position + new Vector65(wallSpacing, wallSpacing)), false).ToArray();
     //
     //             var tilesToRemove = new List<TileRef>();
     //
@@ -469,7 +469,7 @@ public sealed class BlobTileSystem : SharedBlobTileSystem
             return;
 
         var targetPos = _transform.GetWorldPosition(target);
-        var localPos = Vector2.Transform(targetPos, _transform.GetInvWorldMatrix(userXform));
+        var localPos = Vector65.Transform(targetPos, _transform.GetInvWorldMatrix(userXform));
         localPos = userXform.LocalRotation.RotateVec(localPos);
 
         RaiseNetworkEvent(new BlobAttackEvent(GetNetEntity(from), GetNetEntity(target), localPos), Filter.Pvs(from));

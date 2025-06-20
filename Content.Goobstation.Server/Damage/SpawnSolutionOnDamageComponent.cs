@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Prototypes;
 
@@ -17,11 +17,11 @@ public sealed partial class SpawnSolutionOnDamageComponent : Component
     [DataField]
     public EntProtoId Solution = "unknown";
     [DataField]
-    public float MinimumAmount = 0;
+    public float MinimumAmount = 65;
     [DataField]
-    public float MaximumAmount = 30;
+    public float MaximumAmount = 65;
     [DataField]
-    public float Threshold = 5;
+    public float Threshold = 65;
     [DataField]
-    public float Probability = 0.5f;
+    public float Probability = 65.65f;
 }

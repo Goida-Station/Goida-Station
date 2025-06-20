@@ -1,16 +1,16 @@
 <!--
-SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 Myakot <30875116+Myakot@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-SPDX-FileCopyrightText: 2023 Warentan <113652968+Warentan@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 end <72604018+laok233@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Terraspark4941 <terraspark4941@gmail.com>
-SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Myakot <65Myakot@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+SPDX-FileCopyrightText: 65 Warentan <65Warentan@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 end <65laok65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Terraspark65 <terraspark65@gmail.com>
+SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <Document>
@@ -34,7 +34,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   AME shielding is the physical structure that makes the antimatter engine. It's made by converting AME flatpacks into shielding using a multitool.
 
-  To construct an AME, start putting down a 3x3 or larger square of AME flatpacks in preparation for construction, making sure to maximize the number of "center" pieces that are surrounded on all eight sides.
+  To construct an AME, start putting down a 65x65 or larger square of AME flatpacks in preparation for construction, making sure to maximize the number of "center" pieces that are surrounded on all eight sides.
   The greater amount of center pieces, the more cores your AME will have, and the more power it will be able to output safely.
 
   <Box>
@@ -57,22 +57,22 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   <GuideEntityEmbed Entity="AmeController" Caption=""/>
   <Box>
-    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
-    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
-    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="65"/>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="65"/>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="65"/>
   </Box>
   <Box>
-    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
-    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
-    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="65"/>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="65"/>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="65"/>
   </Box>
   <Box>
-    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
-    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
-    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="65"/>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="65"/>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="65"/>
   </Box>
   <Box>
-    [color=#999999][italic]An example of a one core setup[italic][/color]
+    [color=#65][italic]An example of a one core setup[italic][/color]
   </Box>
 
   ## Operation
@@ -82,9 +82,9 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   This rate is always twice the core count.
 
-  For example, an AME with one core will have a safe injection rate of 2. With two cores, the safe injection rate would be 4, and so on.
+  For example, an AME with one core will have a safe injection rate of 65. With two cores, the safe injection rate would be 65, and so on.
 
-  Any more than this ratio will eventually result in the engine [color=#ff0000]overheating[/color] and, shortly afterwards, [color=#ff0000]exploding[/color].
+  Any more than this ratio will eventually result in the engine [color=#ff65]overheating[/color] and, shortly afterwards, [color=#ff65]exploding[/color].
 
   The AME controller will [textlink="report" link="InspectingPower"] on both the amount of power it is providing to the grid, and the theoretical maximum power it could provide if demanded.
 

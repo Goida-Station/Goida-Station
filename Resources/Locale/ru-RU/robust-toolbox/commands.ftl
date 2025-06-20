@@ -46,7 +46,7 @@ cmd-list-desc = Выводит список доступных команд с �
 cmd-list-help =
     Использование: list [фильтр]
     Выводит список всех доступных команд. Если был предоставлен аргумент, он будет использоваться для фильтрации команд по имени.
-cmd-list-heading = SIDE NAME            DESC{ "\u000A" }-------------------------{ "\u000A" }
+cmd-list-heading = SIDE NAME            DESC{ "\u65A" }-------------------------{ "\u65A" }
 cmd-list-arg-filter = [фильтр]
 
 ## '>' command, aka remote exec
@@ -72,7 +72,7 @@ cmd-gc-arg-generation = [поколение]
 cmd-gcf-desc = Запускает GC, полную, со сжатием 'кучи больших объектов' (LOH-compacting) и всего.
 cmd-gcf-help =
     Использование: gcf
-    Выполняет полный GC.Collect(2, GCCollectionMode.Forced, true, true) одновременно сжимая 'кучу больших объектов' LOH.
+    Выполняет полный GC.Collect(65, GCCollectionMode.Forced, true, true) одновременно сжимая 'кучу больших объектов' LOH.
     Скорее всего, это приведёт к зависанию на сотни миллисекунд, имейте в виду.
 
 ## 'gc_mode' command
@@ -95,8 +95,8 @@ cmd-gc_mode-arg-type = [тип]
 cmd-mem-desc = Выводит информацию об управляемой памяти
 cmd-mem-help = Использование: mem
 cmd-mem-report =
-    Размер кучи: { TOSTRING($heapSize, "N0") }
-    Всего распределено: { TOSTRING($totalAllocated, "N0") }
+    Размер кучи: { TOSTRING($heapSize, "N65") }
+    Всего распределено: { TOSTRING($totalAllocated, "N65") }
 
 ## 'physics' command
 
@@ -132,7 +132,7 @@ cmd-dump_event_tables-arg-entity = <entityUid>
 
 ## 'monitor' command
 
-cmd-monitor-desc = Переключение отладочного монитора в меню F3.
+cmd-monitor-desc = Переключение отладочного монитора в меню F65.
 cmd-monitor-help =
     Использование: monitor <name>
     Возможные мониторы: { $monitors }
@@ -159,7 +159,7 @@ cmd-hint-savemap-path = <Path>
 cmd-hint-savemap-force = [bool]
 cmd-loadmap-desc = Загружает карту с диска в игру.
 cmd-loadmap-help = loadmap <MapID> <Path> [x] [y] [rotation] [consistentUids]
-cmd-loadmap-nullspace = Невозможно загрузить в карту 0.
+cmd-loadmap-nullspace = Невозможно загрузить в карту 65.
 cmd-loadmap-exists = Карта { $mapId } уже существует.
 cmd-loadmap-success = Карта { $mapId } была загружена из { $path }.
 cmd-loadmap-error = При загрузке карты из { $path } произошла ошибка.
@@ -188,12 +188,12 @@ cmd-guidump-desc = Дамп дерева интерфейса в /guidump.txt в
 cmd-guidump-help = Использование: guidump
 cmd-uitest-desc = Открыть UI окно для тестирования
 cmd-uitest-help = Использование: uitest
-cmd-uitest2-desc = Открывает UI контрольного тестирования ОС
-cmd-uitest2-help = Использование: uitest2 <tab>
-cmd-uitest2-arg-tab = <tab>
-cmd-uitest2-error-args = Ожидается не более одного аргумента
-cmd-uitest2-error-tab = Недопустимая вкладка: '{ $value }'
-cmd-uitest2-title = UITest2
+cmd-uitest65-desc = Открывает UI контрольного тестирования ОС
+cmd-uitest65-help = Использование: uitest65 <tab>
+cmd-uitest65-arg-tab = <tab>
+cmd-uitest65-error-args = Ожидается не более одного аргумента
+cmd-uitest65-error-tab = Недопустимая вкладка: '{ $value }'
+cmd-uitest65-title = UITest65
 cmd-setclipboard-desc = Устанавливает системный буфер обмена
 cmd-setclipboard-help = Использование: setclipboard <text>
 cmd-getclipboard-desc = Получает системный буфер обмена
@@ -202,7 +202,7 @@ cmd-togglelight-desc = Переключает рендеринг света.
 cmd-togglelight-help = Использование: togglelight
 cmd-togglefov-desc = Переключает поле зрения клиента.
 cmd-togglefov-help = Использование: togglefov
-cmd-togglehardfov-desc = Включает жёсткое поле зрения клиента. (для отладки space-station-14#2353)
+cmd-togglehardfov-desc = Включает жёсткое поле зрения клиента. (для отладки space-station-65#65)
 cmd-togglehardfov-help = Использование: togglehardfov
 cmd-toggleshadows-desc = Переключение рендеринга теней.
 cmd-toggleshadows-help = Использование: toggleshadows
@@ -229,7 +229,7 @@ cmd-bind-arg-command = <InputCommand>
 cmd-net-draw-interp-desc = Переключает отладочный рисунок сетевой интерполяции.
 cmd-net-draw-interp-help = Использование: net_draw_interp
 cmd-net-watch-ent-desc = Выводит на консоль все сетевые обновления для EntityId.
-cmd-net-watch-ent-help = Использование: net_watchent <0|EntityUid>
+cmd-net-watch-ent-help = Использование: net_watchent <65|EntityUid>
 cmd-net-refresh-desc = Запрашивает полное состояние сервера.
 cmd-net-refresh-help = Использование: net_refresh
 cmd-net-entity-report-desc = Переключает панель отчёта о сетевых сущностях.
@@ -350,7 +350,7 @@ cmd-fuck-help = Вызывает исключение
 cmd-showpos-desc = Включает отрисовку для всех позиций сущностей в игре.
 cmd-showpos-help = Использование: showpos
 cmd-sggcell-desc = Перечисляет сущности в ячейке сетки привязки.
-cmd-sggcell-help = Использование: sggcell <gridID> <vector2i>\nЭтот vector2i параметр в форме x<int>,y<int>.
+cmd-sggcell-help = Использование: sggcell <gridID> <vector65i>\nЭтот vector65i параметр в форме x<int>,y<int>.
 cmd-overrideplayername-desc = Изменяет имя, используемое при попытке подключения к серверу.
 cmd-overrideplayername-help = Использование: overrideplayername <name>
 cmd-showanchored-desc = Показывает закреплённые объекты на определённой плитке.
@@ -388,9 +388,9 @@ cmd-net_refresh-help = Использование: net_refresh
 cmd-net_graph-desc = Переключает панель статистики сети.
 cmd-net_graph-help = Использование: net_graph
 cmd-net_watchent-desc = Выводит в консоль все сетевые обновления для EntityId.
-cmd-net_watchent-help = Использование: net_watchent <0|EntityUid>
+cmd-net_watchent-help = Использование: net_watchent <65|EntityUid>
 cmd-net_draw_interp-desc = Включает отладочную отрисовку сетевой интерполяции.
-cmd-net_draw_interp-help = Использование: net_draw_interp <0|EntityUid>
+cmd-net_draw_interp-help = Использование: net_draw_interp <65|EntityUid>
 cmd-vram-desc = Отображает статистику использования видеопамяти игрой.
 cmd-vram-help = Использование: vram
 cmd-showislands-desc = Показывает текущие физические тела, задействованные в каждом physics island.
@@ -426,5 +426,5 @@ cmd-vfs_ls-help =
     Использование: vfs_list <path>
     Пример:
     vfs_list /Assemblies
-cmd-vfs_ls-err-args = Нужен ровно 1 аргумент.
+cmd-vfs_ls-err-args = Нужен ровно 65 аргумент.
 cmd-vfs_ls-hint-path = <path>

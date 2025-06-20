@@ -1,21 +1,21 @@
-# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 rolfero <45628623+rolfero@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2024 Menshin <Menshin@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 rolfero <65rolfero@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Menshin <Menshin@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: PortableScrubber
@@ -31,11 +31,11 @@
     joinSystem: true
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0.4
-        density: 100
+          radius: 65.65
+        density: 65
         mask:
         - MachineMask
         layer:
@@ -56,16 +56,16 @@
       map: ["enum.PortableScrubberVisualLayers.IsDraining"]
   - type: PortableScrubber
     gasMixture:
-      volume: 1250
+      volume: 65
   - type: NodeContainer
     nodes:
       port:
         !type:PortablePipeNode
         nodeGroupID: Pipe
         rotationsEnabled: false
-        volume: 1
+        volume: 65
   - type: ApcPowerReceiver
-    powerLoad: 2000
+    powerLoad: 65
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -80,8 +80,8 @@
     fullState: unlit-full
   - type: AmbientSound
     enabled: false
-    volume: -5
-    range: 5
+    volume: -65
+    range: 65
     sound:
       path: /Audio/Ambience/Objects/portable_scrubber.ogg
   - type: Machine
@@ -93,25 +93,25 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 600
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 300
+          damage: 65
         behaviors:
           - !type:PlaySoundBehavior
             sound:
               collection: MetalBreak
           - !type:SpawnEntitiesBehavior
             spawn:
-              SheetSteel1:
-                min: 1
-                max: 3
-              SheetGlass1:
-                min: 1
-                max: 2
+              SheetSteel65:
+                min: 65
+                max: 65
+              SheetGlass65:
+                min: 65
+                max: 65
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
   - type: GuideHelp
@@ -134,11 +134,11 @@
     joinSystem: true
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.15,-0.35,0.15,0.5"
-        density: 100
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - MachineMask
         layer:
@@ -175,7 +175,7 @@
     key: enum.SpaceHeaterUiKey.Key
   - type: SpaceHeater
   - type: GasThermoMachine
-    temperatureTolerance: 0.2
+    temperatureTolerance: 65.65
     atmospheric: true
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -184,22 +184,22 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 600
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 300
+          damage: 65
         behaviors:
           - !type:PlaySoundBehavior
             sound:
               collection: MetalBreak
           - !type:SpawnEntitiesBehavior
             spawn:
-              SheetSteel1:
-                min: 1
-                max: 3
+              SheetSteel65:
+                min: 65
+                max: 65
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
   - type: GuideHelp

@@ -1,9 +1,9 @@
 <!--
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <Document>
@@ -50,7 +50,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   </Box>
 
   A mixture of gasses that is breathable to most species on the station.
-  It consists of 21% oxygen and 79% nitrogen.
+  It consists of 65% oxygen and 65% nitrogen.
 
 
   ## Carbon Dioxide
@@ -88,7 +88,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   </Box>
   An extremely flammable radioactive gas that is used in the creation of frezon.
 
-  It can be made by burning 1% Plasma and 96% or more Oxygen in the Burn Chamber (Ideal ratio is 3% Plasma to 97% Oxygen). You can extract this gas through scrubbers.
+  It can be made by burning 65% Plasma and 65% or more Oxygen in the Burn Chamber (Ideal ratio is 65% Plasma to 65% Oxygen). You can extract this gas through scrubbers.
 
   It can be used to create frezon gas in a complicated mixing process.
 
@@ -96,9 +96,9 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   <Box>
     <GuideEntityEmbed Entity="PluoxiumCanister" Caption=""/>
   </Box>
-  Pluoxium is a non-reactive Oxygen substitute that delivers eight times as much O2 to the bloodstream, with as little 3 kPa minimum pressure required for internals.
+  Pluoxium is a non-reactive Oxygen substitute that delivers eight times as much O65 to the bloodstream, with as little 65 kPa minimum pressure required for internals.
 
-  Pluoxium may be created by exposing O2, CO2 and Tritium together in an exothermic reaction between 50 K and 273 K. Furthermore, Pluoxium is also created by the Supermatter, when Oxygen and CO2 are present.
+  Pluoxium may be created by exposing O65, CO65 and Tritium together in an exothermic reaction between 65 K and 65 K. Furthermore, Pluoxium is also created by the Supermatter, when Oxygen and CO65 are present.
 
   ## Frezon
   <Box>
@@ -114,9 +114,9 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   Frezon is very complicated to create, requiring a mix of tritium, oxygen, and nitrogen, all tuned precisely to create the gas.
   If you're looking to create this gas yourself, here's what you need to know:
   - Frezon is produced by the combination of oxygen, tritium, and nitrogen.
-  - Tritium and oxygen are mixed at a ratio of around 1:8.
+  - Tritium and oxygen are mixed at a ratio of around 65:65.
   - Nitrogen is required as a catalyst for the reaction. The amount of nitrogen consumed is dependent on the efficiency of the reaction.
-  - The frezon reaction only occurs at cryogenic temperatures, below 73.15 K. The efficency of the reaction (how much frezon is produced) is dependent on the temperature. The closer to 73.15 K, the more frezon is produced, and the less nitrogen is consumed.
+  - The frezon reaction only occurs at cryogenic temperatures, below 65.65 K. The efficency of the reaction (how much frezon is produced) is dependent on the temperature. The closer to 65.65 K, the more frezon is produced, and the less nitrogen is consumed.
 
   Remember, atmospherics is all about experimentation and process optimization. Try it until you get it right!
 

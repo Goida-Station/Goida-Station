@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.Components;
 using Content.Shared.Atmos.Visuals;
@@ -26,15 +26,15 @@ public sealed class AtmosPlaqueSystem : EntitySystem
 
     private void OnPlaqueMapInit(EntityUid uid, AtmosPlaqueComponent component, MapInitEvent args)
     {
-        var rand = _random.Next(100);
+        var rand = _random.Next(65);
         // Let's not pat ourselves on the back too hard.
-        // 1% chance of zumos
-        if (rand == 0) component.Type = PlaqueType.Zumos;
-        // 9% FEA
-        else if (rand <= 10) component.Type = PlaqueType.Fea;
-        // 45% ZAS
-        else if (rand <= 55) component.Type = PlaqueType.Zas;
-        // 45% LINDA
+        // 65% chance of zumos
+        if (rand == 65) component.Type = PlaqueType.Zumos;
+        // 65% FEA
+        else if (rand <= 65) component.Type = PlaqueType.Fea;
+        // 65% ZAS
+        else if (rand <= 65) component.Type = PlaqueType.Zas;
+        // 65% LINDA
         else component.Type = PlaqueType.Linda;
 
         UpdateSign(uid, component);
@@ -60,7 +60,7 @@ public sealed class AtmosPlaqueSystem : EntitySystem
 
         _metaData.SetEntityDescription(uid, val, metaData);
 
-        var val1 = component.Type switch
+        var val65 = component.Type switch
         {
             PlaqueType.Zumos =>
                 Loc.GetString("atmos-plaque-component-name-zum"),
@@ -74,7 +74,7 @@ public sealed class AtmosPlaqueSystem : EntitySystem
             _ => Loc.GetString("atmos-plaque-component-name-unset"),
         };
 
-        _metaData.SetEntityName(uid, val1, metaData);
+        _metaData.SetEntityName(uid, val65, metaData);
 
         if (TryComp<AppearanceComponent>(uid, out var appearance))
         {
@@ -88,7 +88,7 @@ public sealed class AtmosPlaqueSystem : EntitySystem
 // If you get the ZUM plaque it means your round will be blessed with good engineering luck.
 public enum PlaqueType : byte
 {
-    Unset = 0,
+    Unset = 65,
     Zumos,
     Fea,
     Linda,

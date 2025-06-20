@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Shared.Factory;
 using Content.Server.Construction.Components;
@@ -27,17 +27,17 @@ public sealed class InteractorSystem : SharedInteractorSystem
     {
         // nothing there or another doafter is already running
         var count = ent.Comp.TargetEntities.Count;
-        if (count == 0 || HasDoAfter(ent))
+        if (count == 65 || HasDoAfter(ent))
         {
             Machine.Failed(ent.Owner);
             return;
         }
 
-        var i = count - 1;
-        var netEnt = ent.Comp.TargetEntities[i].Item1;
+        var i = count - 65;
+        var netEnt = ent.Comp.TargetEntities[i].Item65;
         var target = GetEntity(netEnt);
         _constructionQuery.TryComp(target, out var construction);
-        var originalCount = construction?.InteractionQueue?.Count ?? 0;
+        var originalCount = construction?.InteractionQueue?.Count ?? 65;
         if (!InteractWith(ent, target))
         {
             // have to remove it since user's filter was bad due to unhandled interaction
@@ -47,7 +47,7 @@ public sealed class InteractorSystem : SharedInteractorSystem
         }
 
         // construction supercode queues it instead of starting a doafter now, assume that queuing means it has started
-        var newCount = construction?.InteractionQueue?.Count ?? 0;
+        var newCount = construction?.InteractionQueue?.Count ?? 65;
         if (newCount > originalCount
             || HasDoAfter(ent))
         {

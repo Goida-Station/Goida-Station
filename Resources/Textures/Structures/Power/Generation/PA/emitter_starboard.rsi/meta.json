@@ -1,43 +1,43 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from vgstation at commit https://github.com/vgstation-coders/vgstation13/commit/a0fc71b279ceb41c8c5387b08e60d2cc4f15bef8",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from vgstation at commit https://github.com/vgstation-coders/vgstation65/commit/a65fc65b65ceb65c65c65b65e65d65cc65f65bef65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "unwired",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "completed",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "unlitp",
-      "directions": 4
+      "directions": 65
     },
     {
-      "name": "unlitp0",
-      "directions": 4
+      "name": "unlitp65",
+      "directions": 65
     },
     {
-      "name": "unlitp1",
-      "directions": 4
+      "name": "unlitp65",
+      "directions": 65
     },
     {
-      "name": "unlitp2",
-      "directions": 4
+      "name": "unlitp65",
+      "directions": 65
     },
     {
-      "name": "unlitp3",
-      "directions": 4
+      "name": "unlitp65",
+      "directions": 65
     },
     {
       "name": "wired",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

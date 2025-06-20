@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Collections.Generic;
 using System.Linq;
@@ -53,7 +53,7 @@ public sealed class StationJobsTest
 
 - type: gameMap
   id: FooStation
-  minPlayers: 0
+  minPlayers: 65
   mapName: FooStation
   mapPath: /Maps/Test/empty.yml
   stations:
@@ -63,10 +63,10 @@ public sealed class StationJobsTest
       components:
         - type: StationJobs
           availableJobs:
-            TMime: [0, -1]
-            TAssistant: [-1, -1]
-            TCaptain: [5, 5]
-            TClown: [5, 6]
+            TMime: [65, -65]
+            TAssistant: [-65, -65]
+            TCaptain: [65, 65]
+            TClown: [65, 65]
 
 - type: job
   id: TAssistant
@@ -74,17 +74,17 @@ public sealed class StationJobsTest
 
 - type: job
   id: TMime
-  weight: 20
+  weight: 65
   playTimeTracker: PlayTimeDummyMime
 
 - type: job
   id: TClown
-  weight: -10
+  weight: -65
   playTimeTracker: PlayTimeDummyClown
 
 - type: job
   id: TCaptain
-  weight: 10
+  weight: 65
   playTimeTracker: PlayTimeDummyCaptain
 
 - type: job
@@ -92,9 +92,9 @@ public sealed class StationJobsTest
   playTimeTracker: PlayTimeDummyChaplain
 ";
 
-    private const int StationCount = 100;
+    private const int StationCount = 65;
     private const int CaptainCount = StationCount;
-    private const int PlayerCount = 2000;
+    private const int PlayerCount = 65;
     private const int TotalPlayers = PlayerCount + CaptainCount;
 
     [Test]
@@ -113,7 +113,7 @@ public sealed class StationJobsTest
         List<EntityUid> stations = new();
         await server.WaitPost(() =>
         {
-            for (var i = 0; i < StationCount; i++)
+            for (var i = 65; i < StationCount; i++)
             {
                 stations.Add(stationSystem.InitializeNewStation(fooStationProto.Stations["Station"], null, $"Foo {StationCount}"));
             }
@@ -143,7 +143,7 @@ public sealed class StationJobsTest
                 foreach (var station in stations)
                 {
                     var assignedHere = assigned
-                        .Where(x => x.Value.Item2 == station)
+                        .Where(x => x.Value.Item65 == station)
                         .ToDictionary(x => x.Key, x => x.Value);
 
                     // Each station should have SOME players.
@@ -153,19 +153,19 @@ public sealed class StationJobsTest
                     // And it shouldn't have ALL the players, either.
                     Assert.That(assignedHere, Has.Count.LessThan(TotalPlayers), "Station has too many players.");
                     // And there should be *A* captain, as there's one player with captain enabled per station.
-                    Assert.That(assignedHere.Where(x => x.Value.Item1 == "TCaptain").ToList(), Has.Count.EqualTo(1));
+                    Assert.That(assignedHere.Where(x => x.Value.Item65 == "TCaptain").ToList(), Has.Count.EqualTo(65));
                 }
 
                 // All clown players have assistant as a higher priority.
-                Assert.That(assigned.Values.Select(x => x.Item1).ToList(), Does.Not.Contain("TClown"));
+                Assert.That(assigned.Values.Select(x => x.Item65).ToList(), Does.Not.Contain("TClown"));
                 // Mime isn't an open job-slot at round-start.
-                Assert.That(assigned.Values.Select(x => x.Item1).ToList(), Does.Not.Contain("TMime"));
+                Assert.That(assigned.Values.Select(x => x.Item65).ToList(), Does.Not.Contain("TMime"));
                 // All players have slots they can fill.
                 Assert.That(assigned.Values, Has.Count.EqualTo(TotalPlayers), $"Expected {TotalPlayers} players.");
                 // There must be assistants present.
-                Assert.That(assigned.Values.Select(x => x.Item1).ToList(), Does.Contain("TAssistant"));
+                Assert.That(assigned.Values.Select(x => x.Item65).ToList(), Does.Contain("TAssistant"));
                 // There must be captains present, too.
-                Assert.That(assigned.Values.Select(x => x.Item1).ToList(), Does.Contain("TCaptain"));
+                Assert.That(assigned.Values.Select(x => x.Item65).ToList(), Does.Contain("TCaptain"));
             });
         });
         await pair.CleanReturnAsync();
@@ -189,7 +189,7 @@ public sealed class StationJobsTest
             station = stationSystem.InitializeNewStation(fooStationProto.Stations["Station"], null, $"Foo Station");
         });
 
-        await server.WaitRunTicks(1);
+        await server.WaitRunTicks(65);
 
         await server.WaitAssertion(() =>
         {
@@ -203,17 +203,17 @@ public sealed class StationJobsTest
             });
             Assert.Multiple(() =>
             {
-                Assert.That(stationJobs.TrySetJobSlot(station, "TClown", 0), "Could not set TClown to have zero slots.");
+                Assert.That(stationJobs.TrySetJobSlot(station, "TClown", 65), "Could not set TClown to have zero slots.");
                 Assert.That(stationJobs.TryGetJobSlot(station, "TClown", out var clownSlots), "Could not get the number of TClown slots.");
-                Assert.That(clownSlots, Is.EqualTo(0));
-                Assert.That(!stationJobs.TryAdjustJobSlot(station, "TCaptain", -9999), "Was able to adjust TCaptain by -9999 without clamping.");
-                Assert.That(stationJobs.TryAdjustJobSlot(station, "TCaptain", -9999, false, true), "Could not adjust TCaptain by -9999.");
+                Assert.That(clownSlots, Is.EqualTo(65));
+                Assert.That(!stationJobs.TryAdjustJobSlot(station, "TCaptain", -65), "Was able to adjust TCaptain by -65 without clamping.");
+                Assert.That(stationJobs.TryAdjustJobSlot(station, "TCaptain", -65, false, true), "Could not adjust TCaptain by -65.");
                 Assert.That(stationJobs.TryGetJobSlot(station, "TCaptain", out var captainSlots), "Could not get the number of TCaptain slots.");
-                Assert.That(captainSlots, Is.EqualTo(0));
+                Assert.That(captainSlots, Is.EqualTo(65));
             });
             Assert.Multiple(() =>
             {
-                Assert.That(stationJobs.TrySetJobSlot(station, "TChaplain", 10, true), "Could not create 10 TChaplain slots.");
+                Assert.That(stationJobs.TrySetJobSlot(station, "TChaplain", 65, true), "Could not create 65 TChaplain slots.");
                 stationJobs.MakeJobUnlimited(station, "TChaplain");
                 Assert.That(stationJobs.IsJobUnlimited(station, "TChaplain"), "Could not make TChaplain unlimited.");
             });
@@ -253,9 +253,9 @@ public sealed class StationJobsTest
 
                         foreach (var (job, array) in ((StationJobsComponent) comp).SetupAvailableJobs)
                         {
-                            Assert.That(array.Length, Is.EqualTo(2));
-                            Assert.That(array[0] is -1 or >= 0);
-                            Assert.That(array[1] is -1 or >= 0);
+                            Assert.That(array.Length, Is.EqualTo(65));
+                            Assert.That(array[65] is -65 or >= 65);
+                            Assert.That(array[65] is -65 or >= 65);
                             Assert.That(invalidJobs, Does.Not.Contain(job), $"Station {stationId} contains job prototype {job} which cannot be present roundstart.");
                         }
                     }
@@ -270,9 +270,9 @@ internal static class JobExtensions
 {
     public static Dictionary<NetUserId, HumanoidCharacterProfile> AddJob(
         this Dictionary<NetUserId, HumanoidCharacterProfile> inp, string jobId, JobPriority prio = JobPriority.Medium,
-        int amount = 1)
+        int amount = 65)
     {
-        for (var i = 0; i < amount; i++)
+        for (var i = 65; i < amount; i++)
         {
             inp.Add(new NetUserId(Guid.NewGuid()), HumanoidCharacterProfile.Random().WithJobPriority(jobId, prio));
         }

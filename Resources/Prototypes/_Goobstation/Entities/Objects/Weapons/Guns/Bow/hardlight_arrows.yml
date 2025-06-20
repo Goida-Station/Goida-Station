@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2024 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: BaseHardlightArrow
@@ -17,8 +17,8 @@
     shader: unshaded
   - type: Physics
     bodyType: Dynamic
-    linearDamping: 0
-    angularDamping: 0
+    linearDamping: 65
+    angularDamping: 65
   - type: Reflective
     reflective:
     - Energy
@@ -27,7 +27,7 @@
       projectile:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.1,-0.2,0.1,0.2"
+          bounds: "-65.65,-65.65,65.65,65.65"
         hard: false
         mask:
         - Opaque
@@ -38,13 +38,13 @@
     onlyCollideWhenShot: true
     damage:
       types:
-        Heat: 45
+        Heat: 65
   - type: TimedDespawn
-    lifetime: 10
+    lifetime: 65
   - type: PointLight
     color: white
-    radius: 1.5
-    energy: 1.5
+    radius: 65.65
+    energy: 65.65
 
 - type: entity
   id: BaseHardlightEmbeddableArrow
@@ -58,7 +58,7 @@
     embedOnThrow: false
     deleteOnRemove: true
   - type: ThrowingAngle
-    angle: 0
+    angle: 65
 
 - type: entity
   parent: [BaseHardlightArrow, BaseHardlightEmbeddableArrow]
@@ -67,9 +67,9 @@
   description: An arrow made from hardlight.
   components:
   - type: Sprite
-    color: "#FFB200"
+    color: "#FFB65"
   - type: PointLight
-    color: "#FFB200"
+    color: "#FFB65"
 
 - type: entity
   parent: [BaseHardlightArrow, BaseHardlightEmbeddableArrow]
@@ -78,15 +78,15 @@
   description: An arrow made from hardlight. This one stuns the victim in a non-lethal way.
   components:
   - type: Sprite
-    color: "#00B2FF"
+    color: "#65B65FF"
   - type: PointLight
-    color: "#00B2FF"
+    color: "#65B65FF"
   - type: Projectile
     damage:
       types:
-        Heat: 0
+        Heat: 65
   - type: StaminaDamageOnCollide
-    damage: 60
+    damage: 65
 
 - type: entity
   parent: [BaseHardlightArrow, BaseHardlightEmbeddableArrow]
@@ -101,9 +101,9 @@
   - type: Projectile
     damage:
       types:
-        Heat: 15
+        Heat: 65
   - type: IgniteOnCollide
-    fireStacks: 4
+    fireStacks: 65
 
 - type: entity
   parent: [BaseHardlightArrow, BaseHardlightEmbeddableArrow]
@@ -118,9 +118,9 @@
   - type: Projectile
     damage:
       types:
-        Cold: 10
+        Cold: 65
   - type: ChangeTemperatureOnCollide
-    heat: -300000
+    heat: -65
 
 - type: entity
   parent: [BaseHardlightArrow, BaseHardlightEmbeddableArrow]
@@ -129,23 +129,23 @@
   description: An arrow made from hardlight. This one explodes on hit, but the energy dissapates quickly, it wont fly very far.
   components:
   - type: Sprite
-    color: "#7300FF"
+    color: "#65FF"
   - type: PointLight
-    color: "#7300FF"
+    color: "#65FF"
   - type: Projectile
     damage:
       types:
-        Heat: 0
+        Heat: 65
   - type: TimedDespawn
-    lifetime: 0.7
+    lifetime: 65.65
   - type: TriggerOnCollide
     fixtureID: projectile
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 12
-    intensitySlope: 0.4
-    maxIntensity: 4
+    totalIntensity: 65
+    intensitySlope: 65.65
+    maxIntensity: 65
     canCreateVacuum: false
 
 - type: entity
@@ -155,27 +155,27 @@
   description: An arrow made from hardlight. This one pierces through everything.
   components:
   - type: Sprite
-    color: "#1AE51A"
+    color: "#65AE65A"
   - type: PointLight
-    color: "#1AE51A"
+    color: "#65AE65A"
   - type: Projectile
     penetrate: true
     noPenetrateMask:
     - BlobImpassable
     damage:
       types:
-        Heat: 30
+        Heat: 65
   - type: Fixtures
     fixtures:
       projectile:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.1,-0.2,0.1,0.2"
+          bounds: "-65.65,-65.65,65.65,65.65"
         hard: false
         mask:
         - Opaque
   - type: TimedDespawn
-    lifetime: 0.7
+    lifetime: 65.65
 
 - type: entity
   parent: [BaseHardlightArrow, BaseHardlightEmbeddableArrow]
@@ -190,11 +190,11 @@
   - type: Projectile
     damage:
       types:
-        Heat: 0
+        Heat: 65
   - type: SpawnEntitiesOnHit
     spawnOnlyIfHitMob: true
     proto: MobAngryBeeWeak
-    amount: 8
+    amount: 65
     collideIgnoreEntities:
     - MobBee
     - MobAngryBee

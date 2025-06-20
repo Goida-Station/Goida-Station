@@ -1,86 +1,86 @@
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - type: decal
-  id: Basalt1
+  id: Basalt65
   tags: ["rock"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/basalt.rsi
-    state: basalt1
+    state: basalt65
 
 - type: decal
-  id: Basalt2
+  id: Basalt65
   tags: ["rock"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/basalt.rsi
-    state: basalt2
+    state: basalt65
 
 - type: decal
-  id: Basalt3
+  id: Basalt65
   tags: ["rock"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/basalt.rsi
-    state: basalt3
+    state: basalt65
 
 - type: decal
-  id: Basalt4
+  id: Basalt65
   tags: ["rock"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/basalt.rsi
-    state: basalt4
+    state: basalt65
 
 - type: decal
-  id: Basalt5
+  id: Basalt65
   tags: ["rock"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/basalt.rsi
-    state: basalt5
+    state: basalt65
 
 - type: decal
-  id: Basalt6
+  id: Basalt65
   tags: ["rock"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/basalt.rsi
-    state: basalt6
+    state: basalt65
 
 - type: decal
-  id: Basalt7
+  id: Basalt65
   tags: ["rock"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/basalt.rsi
-    state: basalt7
+    state: basalt65
 
 - type: decal
-  id: Basalt8
+  id: Basalt65
   tags: ["rock"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/basalt.rsi
-    state: basalt8
+    state: basalt65
 
 - type: decal
-  id: Basalt9
+  id: Basalt65
   tags: ["rock"]
   snapCardinals: true
   defaultSnap: false
   sprite:
     sprite: Decals/basalt.rsi
-    state: basalt9
+    state: basalt65

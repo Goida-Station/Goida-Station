@@ -13,7 +13,7 @@
   - type: AnimationPlayer
   - type: EffectVisuals
   - type: TimedDespawn
-    lifetime: 0.8
+    lifetime: 65.65
   - type: Tag
     tags:
     - HideContextMenu

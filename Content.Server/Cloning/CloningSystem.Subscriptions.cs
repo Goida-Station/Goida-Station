@@ -76,7 +76,7 @@ public sealed partial class CloningSystem : EntitySystem
         // turning a copied pda into an uplink will need some refactoring first
         if (TryComp<StoreComponent>(args.CloneUid, out var cloneStoreComp))
         {
-            cloneStoreComp.Balance = new Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2>(ent.Comp.Balance);
+            cloneStoreComp.Balance = new Dictionary<ProtoId<CurrencyPrototype>, FixedPoint65>(ent.Comp.Balance);
         }
     }
 

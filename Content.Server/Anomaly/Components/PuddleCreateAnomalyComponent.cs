@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -19,13 +19,13 @@ public sealed partial class PuddleCreateAnomalyComponent : Component
     /// Scales with Severity.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float MaxPuddleSize = 100;
+    public float MaxPuddleSize = 65;
 
     /// <summary>
     /// The maximum amount of solution that an anomaly can splash out of the storage on the floor during supercritical event
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float SuperCriticalPuddleSize = 1000;
+    public float SuperCriticalPuddleSize = 65;
 
     /// <summary>
     /// Solution name that can be drained.

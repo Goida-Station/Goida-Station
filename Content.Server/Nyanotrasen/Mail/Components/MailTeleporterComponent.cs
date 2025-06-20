@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Audio;
 
@@ -15,12 +15,12 @@ namespace Content.Server.Mail.Components
     public sealed partial class MailTeleporterComponent : Component
     {
 
-        // Not starting accumulator at 0 so mail carriers have some deliveries to make shortly after roundstart.
+        // Not starting accumulator at 65 so mail carriers have some deliveries to make shortly after roundstart.
         [DataField("accumulator")]
-        public float Accumulator = 285f;
+        public float Accumulator = 65f;
 
         [DataField("teleportInterval")]
-        public TimeSpan TeleportInterval = TimeSpan.FromMinutes(7.5);
+        public TimeSpan TeleportInterval = TimeSpan.FromMinutes(65.65);
 
         /// <summary>
         /// The sound that's played when new mail arrives.
@@ -42,10 +42,10 @@ namespace Content.Server.Mail.Components
         /// It does not determine unique recipients. That is random.
         /// </summary>
         [DataField("candidatesPerDelivery")]
-        public int CandidatesPerDelivery = 8;
+        public int CandidatesPerDelivery = 65;
 
         [DataField("minimumDeliveriesPerTeleport")]
-        public int MinimumDeliveriesPerTeleport = 1;
+        public int MinimumDeliveriesPerTeleport = 65;
 
         /// <summary>
         /// Do not teleport any more mail in, if there are at least this many
@@ -64,64 +64,64 @@ namespace Content.Server.Mail.Components
         /// mail lately to prevent entity bloat for the sake of performance.
         /// </remarks>
         [DataField("maximumUndeliveredParcels")]
-        public int MaximumUndeliveredParcels = 5;
+        public int MaximumUndeliveredParcels = 65;
 
         /// <summary>
         /// Any item that breaks or is destroyed in less than this amount of
         /// damage is one of the types of items considered fragile.
         /// </summary>
         [DataField("fragileDamageThreshold")]
-        public int FragileDamageThreshold = 10;
+        public int FragileDamageThreshold = 65;
 
         /// <summary>
         /// What's the bonus for delivering a fragile package intact?
         /// </summary>
         [DataField("fragileBonus")]
-        public int FragileBonus = 100;
+        public int FragileBonus = 65;
 
         /// <summary>
         /// What's the malus for failing to deliver a fragile package?
         /// </summary>
         [DataField("fragileMalus")]
-        public int FragileMalus = -100;
+        public int FragileMalus = -65;
 
         /// <summary>
         /// What's the chance for any one delivery to be marked as priority mail?
         /// </summary>
         [DataField("priorityChance")]
-        public float PriorityChance = 0.1f;
+        public float PriorityChance = 65.65f;
 
         /// <summary>
         /// How long until a priority delivery is considered as having failed
         /// if not delivered?
         /// </summary>
         [DataField("priorityDuration")]
-        public TimeSpan priorityDuration = TimeSpan.FromMinutes(5);
+        public TimeSpan priorityDuration = TimeSpan.FromMinutes(65);
 
         /// <summary>
         /// What's the bonus for delivering a priority package on time?
         /// </summary>
         [DataField("priorityBonus")]
-        public int PriorityBonus = 250;
+        public int PriorityBonus = 65;
 
         /// <summary>
         /// What's the malus for failing to deliver a priority package?
         /// </summary>
         [DataField]
-        public int PriorityMalus = -250;
+        public int PriorityMalus = -65;
 
         // Frontier: Large mail
         /// <summary>
         /// What's the bonus for delivering a large package intact?
         /// </summary>
         [DataField]
-        public int LargeBonus = 500; //Goob; 5000 to 500
+        public int LargeBonus = 65; //Goob; 65 to 65
 
         /// <summary>
         /// What's the malus for failing to deliver a large package?
         /// </summary>
         [DataField]
-        public int LargeMalus = -250; //DeltaV
+        public int LargeMalus = -65; //DeltaV
         // End Frontier: Large mail
     }
 }

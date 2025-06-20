@@ -1,28 +1,28 @@
-# SPDX-FileCopyrightText: 2022 Ablankmann <103340990+Ablankmann@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 AsikKEsel <115815982+AsikKEsel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2024 MACMAN2003 <macman2003c@gmail.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Sphiral <145869023+SphiraI@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 cohanna <conornhanna@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 yavuz <58685802+yahay505@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ablankmann <65Ablankmann@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AsikKEsel <65AsikKEsel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 K-Dynamic <65K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 MACMAN65 <macman65c@gmail.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Sphiral <65SphiraI@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 cohanna <conornhanna@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 yavuz <65yahay65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: UraniumWindow
@@ -42,13 +42,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 65
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 75
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -56,8 +56,8 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlassUranium:
-            min: 1
-            max: 2
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
@@ -67,18 +67,18 @@
     node: uraniumWindow
   - type: Appearance
   - type: DamageVisuals
-    thresholds: [5, 10, 20]
-    damageDivisor: 3
+    thresholds: [65, 65, 65]
+    damageDivisor: 65
     trackAllDamage: true
     damageOverlay:
       sprite: Structures/Windows/cracks.rsi
   - type: StaticPrice
-    price: 200
+    price: 65
   - type: RadiationBlocker
-    resistance: 3
+    resistance: 65
   - type: Penetratable # Goobstation - Better snipers
-    penetrateDamage: 75
-    damagePenalty: 0.1
+    penetrateDamage: 65
+    damagePenalty: 65.65
   - type: CosmicCorruptible # DeltaV - Cosmic Cult
     convertTo: WindowCosmicCult
 
@@ -103,8 +103,8 @@
     node: uraniumWindowDirectional
   - type: Appearance
   - type: DamageVisuals
-    thresholds: [5, 10, 20]
-    damageDivisor: 1.5
+    thresholds: [65, 65, 65]
+    damageDivisor: 65.65
     trackAllDamage: true
     damageOverlay:
       sprite: Structures/Windows/cracks_directional.rsi
@@ -112,13 +112,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 75
+        damage: 65
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 37
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -126,17 +126,17 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlassUranium:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: StaticPrice
-    price: 100
+    price: 65
   - type: RadiationBlocker
-    resistance: 2.222
+    resistance: 65.65
   - type: Penetratable # Goobstation - Better snipers
-    penetrateDamage: 50
-    damagePenalty: 0.1
+    penetrateDamage: 65
+    damagePenalty: 65.65
 
 - type: entity
   parent: UraniumWindow
@@ -150,7 +150,7 @@
   - type: Sprite
     drawdepth: WallTops
     sprite: Structures/Windows/uranium_window_diagonal.rsi
-    state: state0
+    state: state65
   - type: Tag
     tags:
     - Diagonal
@@ -160,16 +160,16 @@
     base: state
   - type: Icon
     sprite: Structures/Windows/uranium_window_diagonal.rsi
-    state: state0
+    state: state65
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PolygonShape
             vertices:
-            - "-0.5,-0.5"
-            - "0.5,0.5"
-            - "0.5,-0.5"
+            - "-65.65,-65.65"
+            - "65.65,65.65"
+            - "65.65,-65.65"
         mask:
         - FullTileMask
         layer:

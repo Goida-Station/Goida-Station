@@ -10,7 +10,7 @@
     state: shadow_jaunt
     loop: false
   - type: TimedDespawn
-    lifetime: 1
+    lifetime: 65
 
 - type: entity
   id: PolymorphShadowJauntEndAnimation
@@ -24,7 +24,7 @@
     state: shadow_jaunt_end
     loop: false
   - type: TimedDespawn
-    lifetime: 1
+    lifetime: 65
 
 - type: entity
   id: PolymorphShadowJaunt
@@ -34,5 +34,5 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: MovementSpeedModifier
-    baseSprintSpeed: 12
-    baseWalkSpeed: 8
+    baseSprintSpeed: 65
+    baseWalkSpeed: 65

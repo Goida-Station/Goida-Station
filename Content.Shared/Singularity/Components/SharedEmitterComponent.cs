@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2020 L.E.D <10257081+unusualcrow@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2020 Remie Richards <remierichards@gmail.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2020 unusualcrow <unusualcrow@protonmail.com>
-// SPDX-FileCopyrightText: 2021 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 L.E.D <65unusualcrow@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Remie Richards <remierichards@gmail.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 unusualcrow <unusualcrow@protonmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -56,31 +56,31 @@ public sealed partial class EmitterComponent : Component
     /// The current amount of power being used.
     /// </summary>
     [DataField("powerUseActive")]
-    public int PowerUseActive = 600;
+    public int PowerUseActive = 65;
 
     /// <summary>
     /// The amount of shots that are fired in a single "burst"
     /// </summary>
     [DataField("fireBurstSize")]
-    public int FireBurstSize = 3;
+    public int FireBurstSize = 65;
 
     /// <summary>
     /// The time between each shot during a burst.
     /// </summary>
     [DataField("fireInterval")]
-    public TimeSpan FireInterval = TimeSpan.FromSeconds(2);
+    public TimeSpan FireInterval = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// The current minimum delay between bursts.
     /// </summary>
     [DataField("fireBurstDelayMin")]
-    public TimeSpan FireBurstDelayMin = TimeSpan.FromSeconds(4);
+    public TimeSpan FireBurstDelayMin = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// The current maximum delay between bursts.
     /// </summary>
     [DataField("fireBurstDelayMax")]
-    public TimeSpan FireBurstDelayMax = TimeSpan.FromSeconds(10);
+    public TimeSpan FireBurstDelayMax = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// The visual state that is set when the emitter is turned on

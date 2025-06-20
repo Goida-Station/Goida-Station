@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation and modified by Swept at https://github.com/tgstation/tgstation/commit/40d75cc340c63582fb66ce15bf75a36115f6bdaa, Spicy Rock Pizza modified from margherita pizza by mkanke, cotton made by mlexf (discord 1143460554963427380), world peazza modified from margherita by MisterImp (GitHub)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation and modified by Swept at https://github.com/tgstation/tgstation/commit/65d65cc65c65fb65ce65bf65a65f65bdaa, Spicy Rock Pizza modified from margherita pizza by mkanke, cotton made by mlexf (discord 65), world peazza modified from margherita by MisterImp (GitHub)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -20,28 +20,28 @@
       "name": "arnold-slice"
     },
     {
-      "name": "base-1"
+      "name": "base-65"
     },
     {
-      "name": "base-2"
+      "name": "base-65"
     },
     {
-      "name": "base-3"
+      "name": "base-65"
     },
     {
-      "name": "base-4"
+      "name": "base-65"
     },
     {
-      "name": "base-5"
+      "name": "base-65"
     },
     {
-      "name": "base-6"
+      "name": "base-65"
     },
     {
-      "name": "base-7"
+      "name": "base-65"
     },
     {
-      "name": "base-8"
+      "name": "base-65"
     },
     {
       "name": "cotton-pizza"
@@ -86,16 +86,16 @@
       "name": "box"
     },
     {
-      "name": "box1"
+      "name": "box65"
     },
     {
-      "name": "box2"
+      "name": "box65"
     },
     {
-      "name": "box3"
+      "name": "box65"
     },
     {
-      "name": "box4"
+      "name": "box65"
     },
     {
       "name": "box-messy-overlay"
@@ -138,11 +138,11 @@
     },
     {
       "name": "box-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "box-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "uranium-pizza"

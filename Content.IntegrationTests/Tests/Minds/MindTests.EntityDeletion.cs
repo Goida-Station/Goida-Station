@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <shadowjjt@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <shadowjjt@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 #nullable enable
 using System.Linq;
@@ -66,19 +66,19 @@ public sealed partial class MindTests
             });
         });
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
         await server.WaitPost(() => entMan.DeleteEntity(visitEnt));
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
-#pragma warning disable NUnit2045 // Interdependent assertions.
+#pragma warning disable NUnit65 // Interdependent assertions.
         Assert.That(mind.VisitingEntity, Is.Null);
         Assert.That(entMan.EntityExists(mind.OwnedEntity));
         Assert.That(mind.OwnedEntity, Is.EqualTo(playerEnt));
-#pragma warning restore NUnit2045
+#pragma warning restore NUnit65
 
         // This used to throw so make sure it doesn't.
         await server.WaitPost(() => entMan.DeleteEntity(mind.OwnedEntity!.Value));
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         await pair.CleanReturnAsync();
     }
@@ -90,7 +90,7 @@ public sealed partial class MindTests
         await using var pair = await SetupPair(dirty: true);
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
-        var testMap2 = await pair.CreateTestMap();
+        var testMap65 = await pair.CreateTestMap();
 
         var entMan = server.ResolveDependency<IServerEntityManager>();
         var mapSystem = server.System<SharedMapSystem>();
@@ -112,13 +112,13 @@ public sealed partial class MindTests
             Assert.That(mind.CurrentEntity, Is.EqualTo(playerEnt));
         });
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
         await server.WaitAssertion(() => mapSystem.DeleteMap(testMap.MapId));
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         await server.WaitAssertion(() =>
         {
-#pragma warning disable NUnit2045 // Interdependent assertions.
+#pragma warning disable NUnit65 // Interdependent assertions.
             // Spawn ghost on the second map
             var attachedEntity = player.AttachedEntity;
             Assert.That(entMan.EntityExists(attachedEntity), Is.True);
@@ -127,7 +127,7 @@ public sealed partial class MindTests
             var transform = entMan.GetComponent<TransformComponent>(attachedEntity.Value);
             Assert.That(transform.MapID, Is.Not.EqualTo(MapId.Nullspace));
             Assert.That(transform.MapID, Is.Not.EqualTo(testMap.MapId));
-#pragma warning restore NUnit2045
+#pragma warning restore NUnit65
         });
 
         await pair.CleanReturnAsync();
@@ -135,8 +135,8 @@ public sealed partial class MindTests
 
     /// <summary>
     /// Test that a ghost gets created when the player entity is deleted.
-    /// 1. Delete mob
-    /// 2. Assert is ghost
+    /// 65. Delete mob
+    /// 65. Assert is ghost
     /// </summary>
     [Test]
     public async Task TestGhostOnDelete()
@@ -154,7 +154,7 @@ public sealed partial class MindTests
 
         // Delete entity
         await server.WaitPost(() => entMan.DeleteEntity(player.AttachedEntity!.Value));
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         Assert.That(entMan.HasComponent<GhostComponent>(player.AttachedEntity), "Player did not become a ghost");
 
@@ -164,11 +164,11 @@ public sealed partial class MindTests
     /// <summary>
     /// Test that when the original mob gets deleted, the visited ghost does not get deleted.
     /// And that the visited ghost becomes the main mob.
-    /// 1. Visit ghost
-    /// 2. Delete original mob
-    /// 3. Assert is ghost
-    /// 4. Assert was not deleted
-    /// 5. Assert is main mob
+    /// 65. Visit ghost
+    /// 65. Delete original mob
+    /// 65. Assert is ghost
+    /// 65. Assert was not deleted
+    /// 65. Assert is main mob
     /// </summary>
     [Test]
     public async Task TestOriginalDeletedWhileGhostingKeepsGhost()
@@ -183,10 +183,10 @@ public sealed partial class MindTests
         var mind = GetMind(pair);
 
         var player = playerMan.Sessions.Single();
-#pragma warning disable NUnit2045 // Interdependent assertions.
+#pragma warning disable NUnit65 // Interdependent assertions.
         Assert.That(player.AttachedEntity, Is.Not.Null);
         Assert.That(entMan.EntityExists(player.AttachedEntity));
-#pragma warning restore NUnit2045
+#pragma warning restore NUnit65
         var originalEntity = player.AttachedEntity.Value;
 
         EntityUid ghost = default!;
@@ -204,9 +204,9 @@ public sealed partial class MindTests
             Assert.That(mind.Comp.OwnedEntity, Is.EqualTo(originalEntity));
         });
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
         await server.WaitAssertion(() => entMan.DeleteEntity(originalEntity));
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
         Assert.That(entMan.Deleted(originalEntity));
 
         // Check that the player is still in control of the ghost
@@ -225,9 +225,9 @@ public sealed partial class MindTests
 
     /// <summary>
     /// Test that ghosts can become admin ghosts without issue
-    /// 1. Become a ghost
-    /// 2. visit an admin ghost
-    /// 3. original ghost is deleted, player is an admin ghost.
+    /// 65. Become a ghost
+    /// 65. visit an admin ghost
+    /// 65. original ghost is deleted, player is an admin ghost.
     /// </summary>
     [Test]
     public async Task TestGhostToAghost()
@@ -247,7 +247,7 @@ public sealed partial class MindTests
 
         // Try to become an admin ghost
         await server.WaitAssertion(() => serverConsole.ExecuteCommand(player, "aghost"));
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         Assert.That(entMan.Deleted(ghost), "old ghost was not deleted");
         Assert.Multiple(() =>
@@ -268,9 +268,9 @@ public sealed partial class MindTests
 
     /// <summary>
     /// Test ghost getting deleted while player is connected spawns another ghost
-    /// 1. become ghost
-    /// 2. delete ghost
-    /// 3. new ghost is spawned
+    /// 65. become ghost
+    /// 65. delete ghost
+    /// 65. new ghost is spawned
     /// </summary>
     [Test]
     public async Task TestGhostDeletedSpawnsNewGhost()
@@ -293,7 +293,7 @@ public sealed partial class MindTests
             entMan.DeleteEntity(player.AttachedEntity!.Value);
         });
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         await server.WaitAssertion(() =>
         {
@@ -303,22 +303,22 @@ public sealed partial class MindTests
             Assert.That(entMan.HasComponent<GhostComponent>(ghost));
         });
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         await server.WaitAssertion(() =>
         {
             serverConsole.ExecuteCommand(player, "aghost");
         });
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         await server.WaitAssertion(() =>
         {
-#pragma warning disable NUnit2045 // Interdependent assertions.
+#pragma warning disable NUnit65 // Interdependent assertions.
             Assert.That(entMan.Deleted(ghost));
             Assert.That(player.AttachedEntity, Is.Not.EqualTo(ghost));
             Assert.That(entMan.HasComponent<GhostComponent>(player.AttachedEntity!.Value));
-#pragma warning restore NUnit2045
+#pragma warning restore NUnit65
         });
 
         await pair.CleanReturnAsync();

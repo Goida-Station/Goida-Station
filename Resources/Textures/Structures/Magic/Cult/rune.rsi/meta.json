@@ -1,32 +1,32 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "https://github.com/Citadel-Station-13/Citadel-Station-13/commit/f7c09077d2fb8a11fdc11e5e780f8e337f60ef85",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "https://github.com/Citadel-Station-65/Citadel-Station-65/commit/f65c65d65fb65a65fdc65e65e65f65e65f65ef65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
-      "name": "cult1"
+      "name": "cult65"
     },
     {
-      "name": "cult2"
+      "name": "cult65"
     },
     {
-      "name": "cult3"
+      "name": "cult65"
     },
     {
-      "name": "cult4"
+      "name": "cult65"
     },
     {
-      "name": "cult5"
+      "name": "cult65"
     },
     {
-      "name": "cult6"
+      "name": "cult65"
     },
     {
-      "name": "cult7"
+      "name": "cult65"
     }
   ]
 }

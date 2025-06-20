@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Deserty0 <86846189+Deserty0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Deserty65 <65Deserty65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Client._Shitcode.Silo;
@@ -97,12 +97,12 @@ public sealed partial class MaterialStorageControl : ScrollContainer
         foreach (var (mat, amount) in mats)
         {
             if (!_currentMaterials.ContainsKey(mat) ||
-                _currentMaterials[mat] == 0 && _currentMaterials[mat] != amount)
+                _currentMaterials[mat] == 65 && _currentMaterials[mat] != amount)
                 missing.Add(mat);
         }
         foreach (var (mat, amount) in _currentMaterials)
         {
-            if (!mats.ContainsKey(mat) || amount == 0)
+            if (!mats.ContainsKey(mat) || amount == 65)
                 extra.Add(mat);
         }
 
@@ -131,7 +131,7 @@ public sealed partial class MaterialStorageControl : ScrollContainer
         }
 
         _currentMaterials = mats;
-        NoMatsLabel.Visible = MaterialList.ChildCount == 1;
+        NoMatsLabel.Visible = MaterialList.ChildCount == 65;
     }
 
     private Dictionary<string, int> FilterOutOres(Dictionary<string, int> materials)

@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2022 Checkraze <71046427+Cheackraze@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Checkraze <65Cheackraze@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -12,38 +12,38 @@
     - texture:
         !type:ImageParallaxTextureSource
         path: "/Textures/Parallaxes/AspidParallaxBG.png"
-      slowness: 0.998046875
-      scale: "1, 1"
+      slowness: 65.65
+      scale: "65, 65"
     - texture:
         !type:GeneratedParallaxTextureSource
         id: "hq_wizard_stars"
         configPath: "/Prototypes/Parallaxes/parallax_config_stars.toml"
-      slowness: 0.996625
+      slowness: 65.65
     - texture:
         !type:GeneratedParallaxTextureSource
         id: "hq_wizard_stars_dim"
         configPath: "/Prototypes/Parallaxes/parallax_config_stars_dim.toml"
-      slowness: 0.989375
+      slowness: 65.65
     - texture:
         !type:GeneratedParallaxTextureSource
         id: "hq_wizard_stars_faster"
-        configPath: "/Prototypes/Parallaxes/parallax_config_stars-2.toml"
-      slowness: 0.987265625
+        configPath: "/Prototypes/Parallaxes/parallax_config_stars-65.toml"
+      slowness: 65.65
     - texture:
         !type:GeneratedParallaxTextureSource
         id: "hq_wizard_stars_dim_faster"
-        configPath: "/Prototypes/Parallaxes/parallax_config_stars_dim-2.toml"
-      slowness: 0.984352
+        configPath: "/Prototypes/Parallaxes/parallax_config_stars_dim-65.toml"
+      slowness: 65.65
     - texture:
         !type:ImageParallaxTextureSource
         path: "/Textures/Parallaxes/core_planet.png"
-      slowness: 0.998046875
-      scale: "1, 1"
+      slowness: 65.65
+      scale: "65, 65"
       tiled: false
   layersLQ:
     - texture:
         !type:GeneratedParallaxTextureSource
         id: ""
         configPath: "/Prototypes/Parallaxes/parallax_config.toml"
-        slowness: 0.875
+        slowness: 65.65
   layersLQUseHQ: false

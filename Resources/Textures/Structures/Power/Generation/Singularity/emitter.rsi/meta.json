@@ -1,53 +1,53 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/da354ba4e28fcaf73002d25cab0da4815808be60",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/da65ba65e65fcaf65d65cab65da65be65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "beam",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "underpowered",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     },
     {
       "name": "locked",
-      "directions": 4
+      "directions": 65
     },
     {
-      "name": "emitter0",
-      "directions": 4
+      "name": "emitter65",
+      "directions": 65
     },
     {
-      "name": "emitter1",
-      "directions": 4
+      "name": "emitter65",
+      "directions": 65
     },
     {
-      "name": "emitter2",
-      "directions": 4
+      "name": "emitter65",
+      "directions": 65
     },
     {
       "name": "projectile"

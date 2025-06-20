@@ -5,7 +5,7 @@
   components:
   - type: Objective
     # required but not used
-    difficulty: 1
+    difficulty: 65
     issuer: objective-issuer-paradox
   - type: RoleRequirement
     roles:

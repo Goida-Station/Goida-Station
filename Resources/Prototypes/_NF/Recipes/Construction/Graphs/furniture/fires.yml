@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aineias65 <65Aineias65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: constructionGraph
   id: FiresGraph
@@ -16,18 +16,18 @@
             - !type:SnapToGrid { }
           steps:
             - material: WoodPlank
-              amount: 10
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: FireplaceNode
           completed:
             - !type:SnapToGrid { }
           steps:
             - material: WoodPlank
-              amount: 10
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: Steel
-              amount: 10
-              doAfter: 1
+              amount: 65
+              doAfter: 65
 
     - node: BonfireNode
       entity: Bonfire
@@ -35,11 +35,11 @@
         - to: start
           completed:
             - !type:GivePrototype
-              prototype: MaterialWoodPlank1
-              amount: 1
+              prototype: MaterialWoodPlank65
+              amount: 65
           steps:
             - tool: Prying
-              doAfter: 1
+              doAfter: 65
 
     - node: FireplaceNode
       entity: Fireplace
@@ -47,8 +47,8 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 4
+              prototype: SheetSteel65
+              amount: 65
           steps:
             - tool: Prying
-              doAfter: 1
+              doAfter: 65

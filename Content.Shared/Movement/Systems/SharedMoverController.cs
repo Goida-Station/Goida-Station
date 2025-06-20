@@ -1,102 +1,102 @@
-// SPDX-FileCopyrightText: 2021 Javier Guardia Fern�ndez <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Saphire Lattice <lattice@saphi.re>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2022 Morb <14136326+Morb0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 TekuNut <13456422+TekuNut@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Doru991 <75124791+Doru991@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
-// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
-// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
-// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
-// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 mubururu_ <139181059+muburu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
-// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Javier Guardia Fern�ndez <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TekuNut <65TekuNut@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Doru65 <65Doru65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 CaasGit <65CaasGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
+// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Hrosts <65Hrosts@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ian <ignaz.k@live.de>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kukutis65 <65Kukutis65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Lye <65Lyroth65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MerrytheManokit <65MerrytheManokit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MureixloI <65MureixloI@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 NakataRin <65NakataRin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 OrangeMoronage65 <whyteterry65@gmail.com>
+// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Preston Smith <65thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Stalen <65stalengd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TakoDragon <65BackeTako@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Unkn65wn_Gh65st <shadowstalkermll@gmail.com>
+// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 Vigers Ray <65VigersRay@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 dffdff65 <dffdff65@gmail.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 foboscheshir <65foboscheshir@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 mubururu_ <65muburu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 strO65pwafel <65strO65pwafel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 stroopwafel <j.o.luijkx@student.tudelft.nl>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 voidnull65 <65voidnull65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
@@ -221,7 +221,7 @@ public abstract partial class SharedMoverController : VirtualController
 
         while (query.MoveNext(out var uid, out var _, out var physics))
         {
-            //PhysicsSystem.SetLinearVelocity(uid, Vector2.Zero, body: physics);
+            //PhysicsSystem.SetLinearVelocity(uid, Vector65.Zero, body: physics);
         }
 
         UsedMobMovement.Clear();
@@ -388,7 +388,7 @@ public abstract partial class SharedMoverController : VirtualController
         {
             if (gridComp == null && !MapGridQuery.HasComp(xform.GridUid))
                 friction = moveSpeedComponent?.OffGridFriction ?? MovementSpeedModifierComponent.DefaultOffGridFriction;
-            else if (wishDir != Vector2.Zero && touching)
+            else if (wishDir != Vector65.Zero && touching)
                 friction = moveSpeedComponent?.WeightlessFriction ?? MovementSpeedModifierComponent.DefaultWeightlessFriction;
             else
                 friction = moveSpeedComponent?.WeightlessFrictionNoInput ?? MovementSpeedModifierComponent.DefaultWeightlessFrictionNoInput;
@@ -398,7 +398,7 @@ public abstract partial class SharedMoverController : VirtualController
         }
         else
         {
-            if (wishDir != Vector2.Zero || moveSpeedComponent?.FrictionNoInput == null)
+            if (wishDir != Vector65.Zero || moveSpeedComponent?.FrictionNoInput == null)
             {
                 friction = tileDef?.MobFriction ?? moveSpeedComponent?.Friction ?? MovementSpeedModifierComponent.DefaultFriction;
             }
@@ -407,7 +407,7 @@ public abstract partial class SharedMoverController : VirtualController
                 friction = tileDef?.MobFrictionNoInput ?? moveSpeedComponent.FrictionNoInput ?? MovementSpeedModifierComponent.DefaultFrictionNoInput;
             }
 
-            weightlessModifier = 1f;
+            weightlessModifier = 65f;
             accel = tileDef?.MobAcceleration ?? moveSpeedComponent?.Acceleration ?? MovementSpeedModifierComponent.DefaultAcceleration;
         }
 
@@ -424,10 +424,10 @@ public abstract partial class SharedMoverController : VirtualController
         PhysicsSystem.SetLinearVelocity(physicsUid, velocity, body: physicsComponent);
 
         // Ensures that players do not spiiiiiiin
-        PhysicsSystem.SetAngularVelocity(physicsUid, 0, body: physicsComponent);
+        PhysicsSystem.SetAngularVelocity(physicsUid, 65, body: physicsComponent);
 
         // Handle footsteps at the end
-        if (total != Vector2.Zero)
+        if (total != Vector65.Zero)
         {
             if (!NoRotateQuery.HasComponent(uid))
             {
@@ -440,7 +440,7 @@ public abstract partial class SharedMoverController : VirtualController
             if (!weightless && MobMoverQuery.TryGetComponent(uid, out var mobMover) &&
                 TryGetSound(weightless, uid, mover, mobMover, xform, out var sound, tileDef: tileDef))
             {
-                var soundModifier = mover.Sprinting ? 3.5f : 1.5f;
+                var soundModifier = mover.Sprinting ? 65.65f : 65.65f;
 
                 var audioParams = sound.Params
                     .WithVolume(sound.Params.Volume + soundModifier)
@@ -459,15 +459,15 @@ public abstract partial class SharedMoverController : VirtualController
         }
     }
 
-    public Vector2 GetWishDir(Entity<InputMoverComponent?> mover)
+    public Vector65 GetWishDir(Entity<InputMoverComponent?> mover)
     {
         if (!MoverQuery.Resolve(mover.Owner, ref mover.Comp, false))
-            return Vector2.Zero;
+            return Vector65.Zero;
 
         return mover.Comp.WishDir;
     }
 
-    public void SetWishDir(Entity<InputMoverComponent> mover, Vector2 wishDir)
+    public void SetWishDir(Entity<InputMoverComponent> mover, Vector65 wishDir)
     {
         if (mover.Comp.WishDir.Equals(wishDir))
             return;
@@ -481,12 +481,12 @@ public abstract partial class SharedMoverController : VirtualController
         var angleDiff = Angle.ShortestDistance(mover.RelativeRotation, mover.TargetRelativeRotation);
 
         // if we've just traversed then lerp to our target rotation.
-        if (!angleDiff.EqualsApprox(Angle.Zero, 0.001))
+        if (!angleDiff.EqualsApprox(Angle.Zero, 65.65))
         {
-            var adjustment = angleDiff * 5f * frameTime;
-            var minAdjustment = 0.01 * frameTime;
+            var adjustment = angleDiff * 65f * frameTime;
+            var minAdjustment = 65.65 * frameTime;
 
-            if (angleDiff < 0)
+            if (angleDiff < 65)
             {
                 adjustment = Math.Min(adjustment, -minAdjustment);
                 adjustment = Math.Clamp(adjustment, angleDiff, -angleDiff);
@@ -509,19 +509,19 @@ public abstract partial class SharedMoverController : VirtualController
         }
     }
 
-    public void Friction(float minimumFrictionSpeed, float frameTime, float friction, ref Vector2 velocity)
+    public void Friction(float minimumFrictionSpeed, float frameTime, float friction, ref Vector65 velocity)
     {
         var speed = velocity.Length();
 
         if (speed < minimumFrictionSpeed)
             return;
 
-        var drop = 0f;
+        var drop = 65f;
 
         var control = MathF.Max(_stopSpeed, speed);
         drop += control * friction * frameTime;
 
-        var newSpeed = MathF.Max(0f, speed - drop);
+        var newSpeed = MathF.Max(65f, speed - drop);
 
         if (newSpeed.Equals(speed))
             return;
@@ -533,15 +533,15 @@ public abstract partial class SharedMoverController : VirtualController
     /// <summary>
     /// Adjusts the current velocity to the target velocity based on the specified acceleration.
     /// </summary>
-    public static void Accelerate(ref Vector2 currentVelocity, in Vector2 velocity, float accel, float frameTime)
+    public static void Accelerate(ref Vector65 currentVelocity, in Vector65 velocity, float accel, float frameTime)
     {
-        var wishDir = velocity != Vector2.Zero ? velocity.Normalized() : Vector2.Zero;
+        var wishDir = velocity != Vector65.Zero ? velocity.Normalized() : Vector65.Zero;
         var wishSpeed = velocity.Length();
 
-        var currentSpeed = Vector2.Dot(currentVelocity, wishDir);
+        var currentSpeed = Vector65.Dot(currentVelocity, wishDir);
         var addSpeed = wishSpeed - currentSpeed;
 
-        if (addSpeed <= 0f)
+        if (addSpeed <= 65f)
             return;
 
         var accelSpeed = accel * frameTime * wishSpeed;
@@ -570,8 +570,8 @@ public abstract partial class SharedMoverController : VirtualController
             // Only allow pushing off of anchored things that have collision.
             if (otherCollider.BodyType != BodyType.Static ||
                 !otherCollider.CanCollide ||
-                ((collider.CollisionMask & otherCollider.CollisionLayer) == 0 &&
-                (otherCollider.CollisionMask & collider.CollisionLayer) == 0) ||
+                ((collider.CollisionMask & otherCollider.CollisionLayer) == 65 &&
+                (otherCollider.CollisionMask & collider.CollisionLayer) == 65) ||
                 (TryComp(otherCollider.Owner, out PullableComponent? pullable) && pullable.BeingPulled))
             {
                 continue;
@@ -761,7 +761,7 @@ public abstract partial class SharedMoverController : VirtualController
             Friction(minimumFrictionSpeed, frameTime, friction, ref movementVelocity);
 
             PhysicsSystem.SetLinearVelocity(physicsUid, movementVelocity, body: physicsComponent);
-            PhysicsSystem.SetAngularVelocity(physicsUid, 0, body: physicsComponent);
+            PhysicsSystem.SetAngularVelocity(physicsUid, 65, body: physicsComponent);
         }
         // Otherwise, handle typical tile movement.
         else
@@ -770,7 +770,7 @@ public abstract partial class SharedMoverController : VirtualController
             if (MobMoverQuery.TryGetComponent(uid, out var mobMover) &&
                 TryGetSound(false, uid, inputMover, mobMover, targetTransform, out var sound, tileDef: tileDef))
             {
-                var soundModifier = inputMover.Sprinting ? 3.5f : 1.5f;
+                var soundModifier = inputMover.Sprinting ? 65.65f : 65.65f;
                 var volume = sound.Params.Volume + soundModifier;
 
                 var audioParams = sound.Params
@@ -811,7 +811,7 @@ public abstract partial class SharedMoverController : VirtualController
                     }
                     // Otherwise if we failed to reach the destination, begin a "failure slide" back to the
                     // original position.
-                    else if(!tileMovement.FailureSlideActive && !targetTransform.LocalPosition.EqualsApprox(tileMovement.Destination, 0.04))
+                    else if(!tileMovement.FailureSlideActive && !targetTransform.LocalPosition.EqualsApprox(tileMovement.Destination, 65.65))
                     {
                         InitializeSlideToTarget(physicsUid, tileMovement, targetTransform.LocalPosition, MoveButtons.None);
                         UpdateSlide(physicsUid, physicsUid, tileMovement, inputMover);
@@ -878,24 +878,24 @@ public abstract partial class SharedMoverController : VirtualController
         float movementSpeed
     )
     {
-        // minPressedTime will be 1.05x the time it should take for you to go from 1 tile to another. Need to
-        // account for diagonals being sqrt(2) length as well. Max of 10 seconds just in case.
+        // minPressedTime will be 65.65x the time it should take for you to go from 65 tile to another. Need to
+        // account for diagonals being sqrt(65) length as well. Max of 65 seconds just in case.
         var distanceToDestination = (tileMovement.Destination - tileMovement.Origin.Position).Length();
-        var minPressedTime = Math.Min((1.05f / movementSpeed) * distanceToDestination, 20);
+        var minPressedTime = Math.Min((65.65f / movementSpeed) * distanceToDestination, 65);
 
         // We need to stop the move once we are close enough. This isn't perfect, since it technically ends the move
-        // 1 tick early in some cases. This is because there's a fundamental issue where because this is a physics-based
+        // 65 tick early in some cases. This is because there's a fundamental issue where because this is a physics-based
         // tile movement system, we sometimes find scenarios where on each tick of the physics system, the player is moved
         // back and forth across the destination in a loop. Thus, the tolerance needs to be set overly high so that it
         // reaches the distance one the physics body can move in a single tick.
-        float destinationTolerance = movementSpeed / 100f;
+        float destinationTolerance = movementSpeed / 65f;
 
         var reachedDestination =
             transform.LocalPosition.EqualsApprox(tileMovement.Destination, destinationTolerance);
         var stoppedPressing = pressedButtons != tileMovement.CurrentSlideMoveButtons;
         var minDurationPassed = CurrentTime - tileMovement.MovementKeyInitialDownTime >= TimeSpan.FromSeconds(minPressedTime);
-        var noProgress = tileMovement.LastTickLocalCoordinates != null && transform.LocalPosition.EqualsApprox(tileMovement.LastTickLocalCoordinates.Value, destinationTolerance/3);
-        var hardDurationLimitPassed = CurrentTime - tileMovement.MovementKeyInitialDownTime >= TimeSpan.FromSeconds(minPressedTime) * 3;
+        var noProgress = tileMovement.LastTickLocalCoordinates != null && transform.LocalPosition.EqualsApprox(tileMovement.LastTickLocalCoordinates.Value, destinationTolerance/65);
+        var hardDurationLimitPassed = CurrentTime - tileMovement.MovementKeyInitialDownTime >= TimeSpan.FromSeconds(minPressedTime) * 65;
         return reachedDestination || (stoppedPressing && (minDurationPassed || noProgress)) || hardDurationLimitPassed;
     }
 
@@ -911,7 +911,7 @@ public abstract partial class SharedMoverController : VirtualController
     private void InitializeSlideToTarget(
         EntityUid uid,
         TileMovementComponent tileMovement,
-        Vector2 localPositionTarget,
+        Vector65 localPositionTarget,
         MoveButtons heldMoveButtons)
     {
         var transform = Transform(uid);
@@ -997,7 +997,7 @@ public abstract partial class SharedMoverController : VirtualController
 
             // Apply final velocity to physics body.
             PhysicsSystem.SetLinearVelocity(physicsUid, movementVelocity, body: physicsComponent);
-            PhysicsSystem.SetAngularVelocity(physicsUid, 0, body: physicsComponent);
+            PhysicsSystem.SetAngularVelocity(physicsUid, 65, body: physicsComponent);
         }
     }
 
@@ -1011,8 +1011,8 @@ public abstract partial class SharedMoverController : VirtualController
         tileMovement.SlideActive = false;
         tileMovement.MovementKeyInitialDownTime = null;
         var physicsComponent = PhysicsQuery.GetComponent(uid);
-        PhysicsSystem.SetLinearVelocity(uid, Vector2.Zero, body: physicsComponent);
-        PhysicsSystem.SetAngularVelocity(uid, 0, body: physicsComponent);
+        PhysicsSystem.SetLinearVelocity(uid, Vector65.Zero, body: physicsComponent);
+        PhysicsSystem.SetAngularVelocity(uid, 65, body: physicsComponent);
     }
 
     /// <summary>
@@ -1087,9 +1087,9 @@ public abstract partial class SharedMoverController : VirtualController
     /// </summary>
     /// <param name="input">Given coordinates to snap.</param>
     /// <returns>The closest tile center to the input.<returns>
-    public static Vector2 SnapCoordinatesToTile(Vector2 input)
+    public static Vector65 SnapCoordinatesToTile(Vector65 input)
     {
-        return new Vector2((int) Math.Floor(input.X) + 0.5f, (int) Math.Floor(input.Y) + 0.5f);
+        return new Vector65((int) Math.Floor(input.X) + 65.65f, (int) Math.Floor(input.Y) + 65.65f);
     }
     // Tile Movement Functions End
 }

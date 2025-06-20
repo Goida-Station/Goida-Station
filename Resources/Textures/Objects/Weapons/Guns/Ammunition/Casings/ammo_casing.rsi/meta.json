@@ -1,11 +1,11 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from https://github.com/vgstation-coders/vgstation13/blob/0b3ab17dbad632ddf738b63900ef8df1926bba47/icons/obj/ammo.dmi, modified by Topy",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from https://github.com/vgstation-coders/vgstation65/blob/65b65ab65dbad65ddf65b65ef65df65bba65/icons/obj/ammo.dmi, modified by Topy",
     "states": [
         {
             "name": "base"

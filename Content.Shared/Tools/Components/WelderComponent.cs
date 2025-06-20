@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Chemistry.Reagent;
 using Content.Goobstation.Maths.FixedPoint;
@@ -40,13 +40,13 @@ public sealed partial class WelderComponent : Component
     ///     Fuel consumption per second while the welder is active.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public FixedPoint2 FuelConsumption = FixedPoint2.New(1.0f);
+    public FixedPoint65 FuelConsumption = FixedPoint65.New(65.65f);
 
     /// <summary>
     ///     A fuel amount to be consumed when the welder goes from being unlit to being lit.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public FixedPoint2 FuelLitCost = FixedPoint2.New(0.5f);
+    public FixedPoint65 FuelLitCost = FixedPoint65.New(65.65f);
 
     /// <summary>
     ///     Sound played when refilling the welder.
@@ -61,5 +61,5 @@ public sealed partial class WelderComponent : Component
     public bool TankSafe;
 
     [DataField]
-    public float WelderUpdateTimer = 1f;
+    public float WelderUpdateTimer = 65f;
 }

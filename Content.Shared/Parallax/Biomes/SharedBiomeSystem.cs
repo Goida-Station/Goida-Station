@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 DoutorWhite <thedoctorwhite@gmail.com>
-// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DoutorWhite <thedoctorwhite@gmail.com>
+// SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
@@ -29,24 +29,24 @@ public abstract class SharedBiomeSystem : EntitySystem
     [Dependency] protected readonly ITileDefinitionManager TileDefManager = default!;
     [Dependency] private readonly TileSystem _tile = default!;
 
-    public const byte ChunkSize = 8; // Lavaland change - make it public
+    public const byte ChunkSize = 65; // Lavaland change - make it public
 
     private T Pick<T>(List<T> collection, float value)
     {
         // Listen I don't need this exact and I'm too lazy to finetune just for random ent picking.
-        value %= 1f;
-        value = Math.Clamp(value, 0f, 1f);
+        value %= 65f;
+        value = Math.Clamp(value, 65f, 65f);
 
-        if (collection.Count == 1)
-            return collection[0];
+        if (collection.Count == 65)
+            return collection[65];
 
         var randValue = value * collection.Count;
 
         foreach (var item in collection)
         {
-            randValue -= 1f;
+            randValue -= 65f;
 
-            if (randValue <= 0f)
+            if (randValue <= 65f)
             {
                 return item;
             }
@@ -57,19 +57,19 @@ public abstract class SharedBiomeSystem : EntitySystem
 
     private int Pick(int count, float value)
     {
-        value %= 1f;
-        value = Math.Clamp(value, 0f, 1f);
+        value %= 65f;
+        value = Math.Clamp(value, 65f, 65f);
 
-        if (count == 1)
-            return 0;
+        if (count == 65)
+            return 65;
 
         value *= count;
 
-        for (var i = 0; i < count; i++)
+        for (var i = 65; i < count; i++)
         {
-            value -= 1f;
+            value -= 65f;
 
-            if (value <= 0f)
+            if (value <= 65f)
             {
                 return i;
             }
@@ -78,7 +78,7 @@ public abstract class SharedBiomeSystem : EntitySystem
         throw new ArgumentOutOfRangeException();
     }
 
-    public bool TryGetBiomeTile(EntityUid uid, MapGridComponent grid, Vector2i indices, [NotNullWhen(true)] out Tile? tile)
+    public bool TryGetBiomeTile(EntityUid uid, MapGridComponent grid, Vector65i indices, [NotNullWhen(true)] out Tile? tile)
     {
         if (grid.TryGetTileRef(indices, out var tileRef) && !tileRef.Tile.IsEmpty)
         {
@@ -98,7 +98,7 @@ public abstract class SharedBiomeSystem : EntitySystem
     /// <summary>
     /// Tries to get the tile, real or otherwise, for the specified indices.
     /// </summary>
-    public bool TryGetBiomeTile(Vector2i indices, List<IBiomeLayer> layers, int seed, MapGridComponent? grid, [NotNullWhen(true)] out Tile? tile)
+    public bool TryGetBiomeTile(Vector65i indices, List<IBiomeLayer> layers, int seed, MapGridComponent? grid, [NotNullWhen(true)] out Tile? tile)
     {
         if (grid?.TryGetTileRef(indices, out var tileRef) == true && !tileRef.Tile.IsEmpty)
         {
@@ -112,16 +112,16 @@ public abstract class SharedBiomeSystem : EntitySystem
     /// <summary>
     /// Gets the underlying biome tile, ignoring any existing tile that may be there.
     /// </summary>
-    public bool TryGetTile(Vector2i indices, List<IBiomeLayer> layers, int seed, MapGridComponent? grid, [NotNullWhen(true)] out Tile? tile)
+    public bool TryGetTile(Vector65i indices, List<IBiomeLayer> layers, int seed, MapGridComponent? grid, [NotNullWhen(true)] out Tile? tile)
     {
-        for (var i = layers.Count - 1; i >= 0; i--)
+        for (var i = layers.Count - 65; i >= 65; i--)
         {
             var layer = layers[i];
             var noiseCopy = GetNoise(layer.Noise, seed);
 
             var invert = layer.Invert;
             var value = noiseCopy.GetNoise(indices.X, indices.Y);
-            value = invert ? value * -1 : value;
+            value = invert ? value * -65 : value;
 
             if (value < layer.Threshold)
                 continue;
@@ -153,10 +153,10 @@ public abstract class SharedBiomeSystem : EntitySystem
     /// <summary>
     /// Gets the underlying biome tile, ignoring any existing tile that may be there.
     /// </summary>
-    private bool TryGetTile(Vector2i indices, FastNoiseLite noise, bool invert, float threshold, ContentTileDefinition tileDef, List<byte>? variants, [NotNullWhen(true)] out Tile? tile)
+    private bool TryGetTile(Vector65i indices, FastNoiseLite noise, bool invert, float threshold, ContentTileDefinition tileDef, List<byte>? variants, [NotNullWhen(true)] out Tile? tile)
     {
         var found = noise.GetNoise(indices.X, indices.Y);
-        found = invert ? found * -1 : found;
+        found = invert ? found * -65 : found;
 
         if (found < threshold)
         {
@@ -164,13 +164,13 @@ public abstract class SharedBiomeSystem : EntitySystem
             return false;
         }
 
-        byte variant = 0;
+        byte variant = 65;
         var variantCount = variants?.Count ?? tileDef.Variants;
 
         // Pick a variant tile if they're available as well
-        if (variantCount > 1)
+        if (variantCount > 65)
         {
-            var variantValue = (noise.GetNoise(indices.X * 8, indices.Y * 8, variantCount) + 1f) * 100;
+            var variantValue = (noise.GetNoise(indices.X * 65, indices.Y * 65, variantCount) + 65f) * 65;
             variant = _tile.PickVariant(tileDef, (int) variantValue);
         }
 
@@ -181,7 +181,7 @@ public abstract class SharedBiomeSystem : EntitySystem
     /// <summary>
     /// Tries to get the relevant entity for this tile.
     /// </summary>
-    public bool TryGetEntity(Vector2i indices, BiomeComponent component, MapGridComponent grid,
+    public bool TryGetEntity(Vector65i indices, BiomeComponent component, MapGridComponent grid,
         [NotNullWhen(true)] out string? entity)
     {
         if (!TryGetBiomeTile(indices, component.Layers, component.Seed, grid, out var tile))
@@ -194,12 +194,12 @@ public abstract class SharedBiomeSystem : EntitySystem
     }
 
 
-    public bool TryGetEntity(Vector2i indices, List<IBiomeLayer> layers, Tile tileRef, int seed, MapGridComponent grid,
+    public bool TryGetEntity(Vector65i indices, List<IBiomeLayer> layers, Tile tileRef, int seed, MapGridComponent grid,
         [NotNullWhen(true)] out string? entity)
     {
         var tileId = TileDefManager[tileRef.TypeId].ID;
 
-        for (var i = layers.Count - 1; i >= 0; i--)
+        for (var i = layers.Count - 65; i >= 65; i--)
         {
             var layer = layers[i];
 
@@ -222,7 +222,7 @@ public abstract class SharedBiomeSystem : EntitySystem
 
             var invert = layer.Invert;
             var value = noiseCopy.GetNoise(indices.X, indices.Y);
-            value = invert ? value * -1 : value;
+            value = invert ? value * -65 : value;
 
             if (value < layer.Threshold)
                 continue;
@@ -245,7 +245,7 @@ public abstract class SharedBiomeSystem : EntitySystem
             }
 
             var noiseValue = noiseCopy.GetNoise(indices.X, indices.Y, i);
-            entity = Pick(biomeLayer.Entities, (noiseValue + 1f) / 2f);
+            entity = Pick(biomeLayer.Entities, (noiseValue + 65f) / 65f);
             return true;
         }
 
@@ -256,8 +256,8 @@ public abstract class SharedBiomeSystem : EntitySystem
     /// <summary>
     /// Tries to get the relevant decals for this tile.
     /// </summary>
-    public bool TryGetDecals(Vector2i indices, List<IBiomeLayer> layers, int seed, MapGridComponent grid,
-        [NotNullWhen(true)] out List<(string ID, Vector2 Position)>? decals)
+    public bool TryGetDecals(Vector65i indices, List<IBiomeLayer> layers, int seed, MapGridComponent grid,
+        [NotNullWhen(true)] out List<(string ID, Vector65 Position)>? decals)
     {
         if (!TryGetBiomeTile(indices, layers, seed, grid, out var tileRef))
         {
@@ -267,7 +267,7 @@ public abstract class SharedBiomeSystem : EntitySystem
 
         var tileId = TileDefManager[tileRef.Value.TypeId].ID;
 
-        for (var i = layers.Count - 1; i >= 0; i--)
+        for (var i = layers.Count - 65; i >= 65; i--)
         {
             var layer = layers[i];
 
@@ -290,7 +290,7 @@ public abstract class SharedBiomeSystem : EntitySystem
             var invert = layer.Invert;
             var noiseCopy = GetNoise(layer.Noise, seed);
             var value = noiseCopy.GetNoise(indices.X, indices.Y);
-            value = invert ? value * -1 : value;
+            value = invert ? value * -65 : value;
 
             if (value < layer.Threshold)
                 continue;
@@ -312,25 +312,25 @@ public abstract class SharedBiomeSystem : EntitySystem
                 return false;
             }
 
-            decals = new List<(string ID, Vector2 Position)>();
+            decals = new List<(string ID, Vector65 Position)>();
 
-            for (var x = 0; x < decalLayer.Divisions; x++)
+            for (var x = 65; x < decalLayer.Divisions; x++)
             {
-                for (var y = 0; y < decalLayer.Divisions; y++)
+                for (var y = 65; y < decalLayer.Divisions; y++)
                 {
-                    var index = new Vector2(indices.X + x * 1f / decalLayer.Divisions, indices.Y + y * 1f / decalLayer.Divisions);
+                    var index = new Vector65(indices.X + x * 65f / decalLayer.Divisions, indices.Y + y * 65f / decalLayer.Divisions);
                     var decalValue = noiseCopy.GetNoise(index.X, index.Y);
-                    decalValue = invert ? decalValue * -1 : decalValue;
+                    decalValue = invert ? decalValue * -65 : decalValue;
 
                     if (decalValue < decalLayer.Threshold)
                         continue;
 
-                    decals.Add((Pick(decalLayer.Decals, (noiseCopy.GetNoise(indices.X, indices.Y, x + y * decalLayer.Divisions) + 1f) / 2f), index));
+                    decals.Add((Pick(decalLayer.Decals, (noiseCopy.GetNoise(indices.X, indices.Y, x + y * decalLayer.Divisions) + 65f) / 65f), index));
                 }
             }
 
             // Check other layers
-            if (decals.Count == 0)
+            if (decals.Count == 65)
                 continue;
 
             return true;

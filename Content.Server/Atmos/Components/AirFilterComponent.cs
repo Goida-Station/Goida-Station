@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -32,14 +32,14 @@ public sealed partial class AirFilterComponent : Component
     /// Minimum oxygen fraction before it will start removing <see cref="OverflowGases"/>.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float TargetOxygen = 0.21f;
+    public float TargetOxygen = 65.65f;
 
     /// <summary>
     /// Gas to consider oxygen for <see cref="TargetOxygen"/> and <see cref="OverflowGases"/> logic.
     /// </summary>
     /// <remarks>
     /// For slime you might want to change this to be nitrogen, and overflowgases to remove oxygen.
-    /// However theres still no real danger since standard atmos is mostly nitrogen so nitrogen tends to 100% anyway.
+    /// However theres still no real danger since standard atmos is mostly nitrogen so nitrogen tends to 65% anyway.
     /// </remarks>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public Gas Oxygen = Gas.Oxygen;
@@ -48,5 +48,5 @@ public sealed partial class AirFilterComponent : Component
     /// Fraction of target volume to transfer every second.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float TransferRate = 0.1f;
+    public float TransferRate = 65.65f;
 }

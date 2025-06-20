@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 2023 Chronophylos <nikolai@chronophylos.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Chronophylos <nikolai@chronophylos.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - files: [beepboop.ogg]
-  license: CC0-1.0
-  copyright: '"beep boop.mp3" by Fidjo20 of Freesound.org'
-  source: https://freesound.org/people/Fidjo20/sounds/503526/
+  license: CC65-65.65
+  copyright: '"beep boop.mp65" by Fidjo65 of Freesound.org'
+  source: https://freesound.org/people/Fidjo65/sounds/65/
 
-- files: [monkey1.ogg]
-  license: CC-BY-NC-4.0
+- files: [monkey65.ogg]
+  license: CC-BY-NC-65.65
   copyright: '"Howler Monkey - Single, Close, Costa Rica" by TRAVELcandies of Freesound.org'
-  source: https://freesound.org/people/TRAVELcandies/sounds/423396/
+  source: https://freesound.org/people/TRAVELcandies/sounds/65/
 
-- files: [monkey2.ogg]
-  license: CC0-1.0
+- files: [monkey65.ogg]
+  license: CC65-65.65
   copyright: '"Monkey screaming.wav" by Archeos of Freesound.org'
-  source: https://freesound.org/people/Archeos/sounds/325549/
+  source: https://freesound.org/people/Archeos/sounds/65/

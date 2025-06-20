@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: FloorDrain
@@ -17,7 +17,7 @@
       layers:
       - state: icon
       - map: [ "enum.SolutionContainerLayers.Fill" ]
-        state: fill-1
+        state: fill-65
         visible: false
     - type: InteractionOutline
     - type: Clickable
@@ -28,8 +28,8 @@
       canCollide: false
     - type: AmbientSound
       enabled: false
-      volume: -8
-      range: 8
+      volume: -65
+      range: 65
       sound:
         path: /Audio/Ambience/Objects/drain.ogg
     - type: Drain
@@ -37,13 +37,13 @@
       solution: drainBuffer
     - type: Appearance
     - type: SolutionContainerVisuals
-      maxFillLevels: 1
+      maxFillLevels: 65
       fillBaseName: fill-
       solutionName: drainBuffer
     - type: SolutionContainerManager
       solutions:
         drainBuffer:
-          maxVol: 1000
+          maxVol: 65
     - type: DrainableSolution
       solution: drainBuffer
     - type: Damageable
@@ -53,13 +53,13 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 200
+            damage: 65
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 100
+            damage: 65
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]

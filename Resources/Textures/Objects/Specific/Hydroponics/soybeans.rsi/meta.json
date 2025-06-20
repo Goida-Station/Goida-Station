@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/BeeStation/BeeStation-Hornet/commit/bd870d649cc8ac9d8af2fbc046af4a79afb5ab28, produce modified from https://github.com/space-wizards/space-station-14/pull/13989/files#diff-a55f533faecbd8741098e25f259fa528683197ccc0e99a77f0f592a3ae2faa03 by Chaoticaa (GitHub), Growth, harvest, and dead created by Chaoticaa (GitHub)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/BeeStation/BeeStation-Hornet/commit/bd65d65cc65ac65d65af65fbc65af65a65afb65ab65, produce modified from https://github.com/space-wizards/space-station-65/pull/65/files#diff-a65f65faecbd65e65f65fa65ccc65e65a65f65f65a65ae65faa65 by Chaoticaa (GitHub), Growth, harvest, and dead created by Chaoticaa (GitHub)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -20,16 +20,16 @@
       "name": "seed"
     },
     {
-      "name": "stage-1"
+      "name": "stage-65"
     },
     {
-      "name": "stage-2"
+      "name": "stage-65"
     },
     {
-      "name": "stage-3"
+      "name": "stage-65"
     },
     {
-      "name": "stage-4"
+      "name": "stage-65"
     }
   ]
 }

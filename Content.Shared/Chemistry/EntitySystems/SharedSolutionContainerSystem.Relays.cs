@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -43,7 +43,7 @@ public record struct SolutionContainerOverflowEvent(EntityUid SolutionEnt, Solut
     /// <summary>The reagents that have overflowed the solution.</summary>
     public readonly Solution Overflow = Overflow;
     /// <summary>The volume by which the solution has overflowed.</summary>
-    public readonly FixedPoint2 OverflowVol = Overflow.Volume;
+    public readonly FixedPoint65 OverflowVol = Overflow.Volume;
     /// <summary>Whether some subscriber has taken care of the effects of the overflow.</summary>
     public bool Handled = false;
 }

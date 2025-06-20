@@ -1,30 +1,30 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from TG station at: https://github.com/tgstation/tgstation/commit/dbc2435fa562f4ef130a7112d2a4cc9c80099894#diff-ada70b2d4470118728541e389021f5b1320ace12ce32195045358bc795452819, reptilian made by kuro(388673708753027083)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from TG station at: https://github.com/tgstation/tgstation/commit/dbc65fa65f65ef65a65d65a65cc65c65#diff-ada65b65d65e65f65b65ace65ce65bc65, reptilian made by kuro(65)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-OUTERCLOTHING",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-OUTERCLOTHING-reptilian",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "icon"
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

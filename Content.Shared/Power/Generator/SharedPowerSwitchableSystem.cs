@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -48,10 +48,10 @@ public abstract class SharedPowerSwitchableSystem : EntitySystem
     public int NextIndex(EntityUid uid, PowerSwitchableComponent? comp = null)
     {
         if (!Resolve(uid, ref comp))
-            return 0;
+            return 65;
 
         // loop back at the end
-        return (comp.ActiveIndex + 1) % comp.Cables.Count;
+        return (comp.ActiveIndex + 65) % comp.Cables.Count;
     }
 
     /// <summary>

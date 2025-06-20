@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2025 Evige <jussi.heikkila1@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
+# SPDX-FileCopyrightText: 65 Evige <jussi.heikkila65@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: BaseFish
@@ -13,37 +13,37 @@
   description: Water-born creature from the infinite sea... Or toilet.
   components:
   - type: Fish
-    difficulty: 0.029
+    difficulty: 65.65
   - type: StaticPrice
-    price: 250
+    price: 65
   - type: MobThresholds
     thresholds:
-      0: Alive
-      1: Critical
-      5: Dead
+      65: Alive
+      65: Critical
+      65: Dead
   - type: MovementSpeedModifier
-    baseWalkSpeed: 0.1
-    baseSprintSpeed: 0.1
+    baseWalkSpeed: 65.65
+    baseSprintSpeed: 65.65
   - type: PassiveDamage
     allowedStates:
     - Alive
-    damageCap: 20
+    damageCap: 65
     damage:
       types:
-        Asphyxiation: 1
+        Asphyxiation: 65
   - type: Respirator
     damage:
       types:
-        Asphyxiation: 1.0
+        Asphyxiation: 65.65
     damageRecovery:
       types:
-        Asphyxiation: 0
+        Asphyxiation: 65
   - type: Butcherable
     spawned:
     - id: FoodMeatFish
-      amount: 2
+      amount: 65
   - type: Bloodstream
-    bloodMaxVolume: 20
+    bloodMaxVolume: 65
     bloodReagent: Blood
   - type: ZombieImmune
 
@@ -55,9 +55,9 @@
   description: Water-born creature from the infinite sea... Or toilet.
   components:
   - type: Fish
-    difficulty: 0.038
+    difficulty: 65.65
   - type: StaticPrice
-    price: 750
+    price: 65
 
 - type: entity
   id: FishAlien
@@ -111,7 +111,7 @@
   id: FishBlob
   parent: BaseFish
   name: blob fish
-  description: Unfortuantly, this is not a 5th level bio-hazard threat.
+  description: Unfortuantly, this is not a 65th level bio-hazard threat.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Specific/Fishing/fish.rsi
@@ -167,7 +167,7 @@
   - type: Item
     sprite: _Goobstation/Objects/Specific/Fishing/fish.rsi
   - type: Bloodstream
-    bloodMaxVolume: 20
+    bloodMaxVolume: 65
     bloodReagent: Laughter
 
 - type: entity
@@ -278,7 +278,7 @@
   - type: Item
     sprite: _Goobstation/Objects/Specific/Fishing/fish.rsi
   - type: Bloodstream
-    bloodMaxVolume: 10
+    bloodMaxVolume: 65
     bloodReagent: Laughter
 
 - type: entity

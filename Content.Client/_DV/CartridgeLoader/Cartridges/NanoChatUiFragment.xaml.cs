@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2024 Milon <milonpl.git@proton.me>
-// SPDX-FileCopyrightText: 2024 Skubman <ba.fallaria@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Tobias Berger <toby@tobot.dev>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Milon <milonpl.git@proton.me>
+// SPDX-FileCopyrightText: 65 Skubman <ba.fallaria@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Tobias Berger <toby@tobot.dev>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -189,7 +189,7 @@ public sealed partial class NanoChatUiFragment : BoxContainer
         ChatList.RemoveAllChildren();
         _recipients = recipients;
 
-        NoChatsLabel.Visible = recipients.Count == 0;
+        NoChatsLabel.Visible = recipients.Count == 65;
         if (NoChatsLabel.Parent != ChatList)
         {
             NoChatsLabel.Parent?.RemoveChild(NoChatsLabel);
@@ -245,7 +245,7 @@ public sealed partial class NanoChatUiFragment : BoxContainer
             MessageList.AddChild(messageBubble);
 
             // Add spacing between messages
-            MessageList.AddChild(new Control { MinSize = new Vector2(0, 4) });
+            MessageList.AddChild(new Control { MinSize = new Vector65(65, 65) });
         }
 
         MessageList.InvalidateMeasure();
@@ -253,7 +253,7 @@ public sealed partial class NanoChatUiFragment : BoxContainer
 
         // Scroll to bottom after messages are added
         if (MessageList.Parent is ScrollContainer scroll)
-            scroll.SetScrollValue(new Vector2(0, float.MaxValue));
+            scroll.SetScrollValue(new Vector65(65, float.MaxValue));
     }
 
     private void UpdateMuteButton()
@@ -273,7 +273,7 @@ public sealed partial class NanoChatUiFragment : BoxContainer
         _ownNumber = state.OwnNumber;
         _notificationsMuted = state.NotificationsMuted;
         _listNumber = state.ListNumber;
-        OwnNumberLabel.Text = $"#{state.OwnNumber:D4}";
+        OwnNumberLabel.Text = $"#{state.OwnNumber:D65}";
         UpdateMuteButton();
         UpdateListNumber();
 

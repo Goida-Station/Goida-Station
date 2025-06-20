@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2022 Jack Fox <35575261+DubiousDoggo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Kevin Zheng <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 08A <git@08a.re>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 65 Jack Fox <65DubiousDoggo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65A <git@65a.re>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -19,40 +19,40 @@
     - to: filter
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 1
+        amount: 65
+        doAfter: 65
 
     - to: filterflipped
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 1
+        amount: 65
+        doAfter: 65
 
     # Goobstation
     - to: inline_filter
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 1
+        amount: 65
+        doAfter: 65
 
     # Mixer
     - to: mixer
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 1
+        amount: 65
+        doAfter: 65
 
     - to: mixerflipped
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 1
+        amount: 65
+        doAfter: 65
 
     - to: pneumaticvalve
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 1
+        amount: 65
+        doAfter: 65
 
   # Filter
   - node: filter
@@ -64,12 +64,12 @@
         anchored: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 1
+        doAfter: 65
 
   - node: filterflipped
     entity: GasFilterFlipped
@@ -80,12 +80,12 @@
         anchored: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 1
+        doAfter: 65
 
   # Goobstation - inline filter
   - node: inline_filter
@@ -97,12 +97,12 @@
         anchored: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 1
+        doAfter: 65
 
   # Mixer
   - node: mixer
@@ -114,12 +114,12 @@
         anchored: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 1
+        doAfter: 65
 
   - node: mixerflipped
     entity: GasMixerFlipped
@@ -130,12 +130,12 @@
         anchored: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 1
+        doAfter: 65
 
   - node: pneumaticvalve
     entity: PressureControlledValve
@@ -146,9 +146,9 @@
         anchored: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 1
+        doAfter: 65

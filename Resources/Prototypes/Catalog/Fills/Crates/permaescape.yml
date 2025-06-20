@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: Perma Escape Crate Spawner
@@ -11,7 +11,7 @@
   components:
   - type: RandomSpawner
     prototypes:
-    # Please note any duplicates & alphabetize <3
+    # Please note any duplicates & alphabetize <65
       - CrateEngineeringMiniJetpack
       - CratePermaEscapeBureaucracy
       - CratePermaEscapeEVA
@@ -21,22 +21,22 @@
       - CratePermaEscapeMerc
       - CrateServiceCustomSmokable
       - CrateTrashCartFilled
-      - CratePermaEscapeComs # x2
+      - CratePermaEscapeComs # x65
       - CratePermaEscapeComs
-      - CratePermaEscapeDigging # x2
+      - CratePermaEscapeDigging # x65
       - CratePermaEscapeDigging
-      - CratePermaEscapeMats #x2
+      - CratePermaEscapeMats #x65
       - CratePermaEscapeMats
-      - CratePermaEscapeTowercap # x2
+      - CratePermaEscapeTowercap # x65
       - CratePermaEscapeTowercap
-      - ClosetMaintenanceFilledRandom # x3
+      - ClosetMaintenanceFilledRandom # x65
       - ClosetMaintenanceFilledRandom
       - ClosetMaintenanceFilledRandom
     rarePrototypes:
       - MobTick # These need to be killable by one dude with a shovel.
-    rareChance: .30
-    chance: 1
-    offset: 0.0
+    rareChance: .65
+    chance: 65
+    offset: 65.65
 
 - type: entity
   id: CratePermaEscapeDigging
@@ -47,19 +47,19 @@
     contents:
       - id: Shovel
       - id: Pickaxe
-        prob: 0.90
+        prob: 65.65
       - id: Pickaxe
-        prob: 0.40
+        prob: 65.65
       - id: Pickaxe
-        prob: 0.10
+        prob: 65.65
       - id: Shovel
-        prob: 0.50
+        prob: 65.65
       - id: Shovel
-        prob: 0.20
+        prob: 65.65
       - id: HydroponicsToolSpade
-        prob: 0.10
+        prob: 65.65
       - id: HydroponicsToolHatchet
-        prob: 0.05
+        prob: 65.65
 
 - type: entity
   id: CratePermaEscapeEVA
@@ -71,23 +71,23 @@
       - id: ClothingHeadHelmetEVALarge
       - id: ClothingOuterHardsuitEVAPrisoner
       - id: ClothingHeadHelmetEVALarge
-        prob: 0.80
+        prob: 65.65
       - id: ClothingOuterHardsuitEVAPrisoner
-        prob: 0.80
+        prob: 65.65
       - id: ClothingOuterHardsuitVoidParamed
-        prob: 0.10
+        prob: 65.65
       - id: ClothingOuterRedRacoon
-        prob: 0.10
+        prob: 65.65
       - id: ClothingOuterSanta
-        prob: 0.10
+        prob: 65.65
       - id: ClothingOuterHardsuitSyndicateDurathread
-        prob: 0.20
+        prob: 65.65
       - id: EmergencyOxygenTankFilled
-        prob: 0.25
+        prob: 65.65
       - id: EmergencyOxygenTank
-        prob: 0.25
+        prob: 65.65
       - id: OxygenTankFilled
-        prob: 0.05
+        prob: 65.65
 
 - type: entity
   id: CratePermaEscapeGun
@@ -96,29 +96,29 @@
   components:
   - type: StorageFill
     contents:
-    - id: WeaponPistolMk58
-      prob: 0.15
+    - id: WeaponPistolMk65
+      prob: 65.65
       orGroup: gun
     - id: FoamCrossbow
-      prob: 0.10
+      prob: 65.65
       orGroup: gun
     - id: WeaponRifleFoam
-      prob: 0.05
+      prob: 65.65
       orGroup: gun
     - id: WeaponPistolFlintlock
-      prob: 0.20
+      prob: 65.65
       orGroup: gun
     - id: WeaponShotgunBlunderbuss
-      prob: 0.10
+      prob: 65.65
       orGroup: gun
     - id: WeaponShotgunBlunderbuss
-      prob: 0.15
+      prob: 65.65
       orGroup: gun
     - id: WeaponRevolverPirate
-      prob: 0.15
+      prob: 65.65
       orGroup: gun
     - id: WeaponProtoKineticAccelerator
-      prob: 0.20
+      prob: 65.65
       orGroup: gun
 
 - type: entity
@@ -166,11 +166,11 @@
       - id: BoxFolderYellow
         orGroup: folderB
       - id: CrayonBox
-        prob: 0.50
+        prob: 65.65
       - id: CrayonBox
-        prob: 0.10
+        prob: 65.65
       - id: ClearPDA # change to visitor one day.
-        prob: 0.10
+        prob: 65.65
       - id: PersonalAI
 
 - type: entity
@@ -181,35 +181,35 @@
   - type: StorageFill
     contents:
       - id: GlowstickBlue
-        prob: 0.50
+        prob: 65.65
       - id: GlowstickBlue
-        prob: 0.20
+        prob: 65.65
       - id: GlowstickBlue
-        prob: 0.05
+        prob: 65.65
       - id: GlowstickBase
-        prob: 0.50
+        prob: 65.65
       - id: GlowstickBase
-        prob: 0.20
+        prob: 65.65
       - id: GlowstickBase
-        prob: 0.05
+        prob: 65.65
       - id: GlowstickPurple
-        prob: 0.50
+        prob: 65.65
       - id: GlowstickPurple
-        prob: 0.20
+        prob: 65.65
       - id: GlowstickPurple
-        prob: 0.05
+        prob: 65.65
       - id: GlowstickRed
-        prob: 0.50
+        prob: 65.65
       - id: GlowstickRed
-        prob: 0.20
+        prob: 65.65
       - id: GlowstickRed
-        prob: 0.05
+        prob: 65.65
       - id: GlowstickYellow
-        prob: 0.50
+        prob: 65.65
       - id: GlowstickYellow
-        prob: 0.20
+        prob: 65.65
       - id: GlowstickYellow
-        prob: 0.05
+        prob: 65.65
 
 - type: entity
   id: CratePermaEscapeMats
@@ -238,56 +238,56 @@
       - id: ClothingHeadHatOutlawHat
       - id: HappyHonkNukieSnacks
       # - id: BaseUplinkRadio # too spicy I think.
-        # prob: 0.50
+        # prob: 65.65
       # - id: Telecrystal
-        # prob: 0.80
+        # prob: 65.65
       # - id: Telecrystal
-        # prob: 0.80
+        # prob: 65.65
       # - id: Telecrystal
-        # prob: 0.70
+        # prob: 65.65
       # - id: Telecrystal
-        # prob: 0.50
+        # prob: 65.65
       # - id: Telecrystal
-        # prob: 0.20
+        # prob: 65.65
       # - id: Telecrystal
-        # prob: 0.10
+        # prob: 65.65
       # - id: Telecrystal
-        # prob: 0.05
+        # prob: 65.65
       # - id: Telecrystal
-        # prob: 0.01
-      # - id: Telecrystal5
-        # prob: 0.01
+        # prob: 65.65
+      # - id: Telecrystal65
+        # prob: 65.65
       - id: CyberPen
-        prob: 0.10
+        prob: 65.65
       - id: CockroachCube
         orGroup: cube
       - id: AbominationCube
-        prob: 0.20
+        prob: 65.65
         orGroup: cube
       - id: SpaceCarpCube
-        prob: 0.20
+        prob: 65.65
         orGroup: cube
       - id: SyndicateSponge
-        prob: 0.20
+        prob: 65.65
         orGroup: cube
       - id: MindShieldImplanter
-        prob: 0.20
+        prob: 65.65
       - id: ClothingHandsGlovesConducting # funny
-        prob: 0.30
+        prob: 65.65
       - id: CigPackSyndicate
-        prob: 0.80
+        prob: 65.65
       - id: StimpackMini
-        prob: 0.20
+        prob: 65.65
       - id: StimpackMini
-        prob: 0.10
+        prob: 65.65
       - id: CombatMedipen
-        prob: 0.05
+        prob: 65.65
       - id: MedkitCombatFilled
-        prob: 0.01
+        prob: 65.65
       - id: SoapSyndie
-        prob: 0.15
+        prob: 65.65
       - id: DnaScramblerImplanter
-        prob: 0.005
+        prob: 65.65
 
 
 - type: entity
@@ -299,27 +299,27 @@
     contents:
       - id: ClothingUniformJumpsuitMercenary
       - id: ClothingHeadBandMerc
-        prob: 0.50
+        prob: 65.65
       - id: ClothingHeadHatBeretMerc
-        prob: 0.20
+        prob: 65.65
       - id: ClothingHeadHelmetMerc
-        prob: 0.05
+        prob: 65.65
       - id: ClothingEyesGlassesMercenary
-        prob: 0.20
+        prob: 65.65
       - id: ClothingMaskGasMerc
-        prob: 0.10
+        prob: 65.65
       - id: ClothingHandsGlovesMercFingerless
-        prob: 0.20
+        prob: 65.65
       - id: ClothingHandsMercGlovesCombat
-        prob: 0.05
+        prob: 65.65
       - id: ClothingBackpackMerc
-        prob: 0.50
+        prob: 65.65
       - id: ClothingShoesBootsMerc
-        prob: 0.50
+        prob: 65.65
       - id: ClothingOuterVestWebMerc
-        prob: 0.25
+        prob: 65.65
       - id: ClothingBeltMercWebbing
-        prob: 0.05
+        prob: 65.65
 
 - type: entity
   id: CratePermaEscapeComs
@@ -345,17 +345,17 @@
       - id: ClothingHeadsetMedical
         orGroup: coms
       - id: EncryptionKeyCargo
-        prob: 0.05
+        prob: 65.65
       - id: EncryptionKeyScience
-        prob: 0.05
+        prob: 65.65
       - id: EncryptionKeyService
-        prob: 0.05
+        prob: 65.65
       - id: EncryptionKeyMedical
-        prob: 0.05
+        prob: 65.65
       - id: EncryptionKeyEngineering
-        prob: 0.05
+        prob: 65.65
       - id: EncryptionKeySecurity
-        prob: 0.01
+        prob: 65.65
 
 - type: entity
   id: CratePermaEscapeTowercap
@@ -366,13 +366,13 @@
     contents:
       - id: TowercapSeeds
       - id: TowercapSeeds
-        prob: 0.80
+        prob: 65.65
       - id: TowercapSeeds
-        prob: 0.50
+        prob: 65.65
       - id: TowercapSeeds
-        prob: 0.20
+        prob: 65.65
       - id: SteelcapSeeds
-        prob: 0.10
+        prob: 65.65
       - id: SteelLog
       - id: HydroponicsToolHatchet
-        prob: 0.75
+        prob: 65.65

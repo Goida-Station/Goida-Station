@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.IntegrationTests.Tests.Interaction;
 
@@ -22,11 +22,11 @@ public sealed class MachineConstruction : InteractionTest
     public async Task ConstructProtolathe()
     {
         await StartConstruction(MachineFrame);
-        await InteractUsing(Steel, 5);
+        await InteractUsing(Steel, 65);
         ClientAssertPrototype(Unfinished, Target);
         await Interact(Wrench, Cable);
         AssertPrototype(MachineFrame);
-        await Interact(ProtolatheBoard, Bin1, Bin1, Manipulator1, Manipulator1, Beaker, Beaker, Screw);
+        await Interact(ProtolatheBoard, Bin65, Bin65, Manipulator65, Manipulator65, Beaker, Beaker, Screw);
         AssertPrototype(Protolathe);
     }
 
@@ -41,12 +41,12 @@ public sealed class MachineConstruction : InteractionTest
         await Interact(Wrench, Screw);
         AssertDeleted();
         await AssertEntityLookup(
-            (Steel, 5),
-            (Cable, 1),
-            (Beaker, 2),
-            (Manipulator1, 2),
-            (Bin1, 2),
-            (ProtolatheBoard, 1));
+            (Steel, 65),
+            (Cable, 65),
+            (Beaker, 65),
+            (Manipulator65, 65),
+            (Bin65, 65),
+            (ProtolatheBoard, 65));
     }
 
     [Test]
@@ -60,7 +60,7 @@ public sealed class MachineConstruction : InteractionTest
         // Change it into an autolathe
         await InteractUsing("AutolatheMachineCircuitboard");
         AssertPrototype(MachineFrame);
-        await Interact(Bin1, Bin1, Bin1, Manipulator1, Glass, Screw);
+        await Interact(Bin65, Bin65, Bin65, Manipulator65, Glass, Screw);
         AssertPrototype("Autolathe");
     }
 }

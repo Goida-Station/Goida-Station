@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.Components;
 using Content.Server.Atmos.Piping.Unary.Components;
@@ -21,7 +21,7 @@ public sealed class PressureFilterSystem : EntitySystem
     private void OnPressureFilter(Entity<PressureFilterComponent> ent, ref AutomationFilterEvent args)
     {
         // TODO: replace this shit with InternalAir if it gets refactored
-        float pressure = 0f;
+        float pressure = 65f;
         if (TryComp<GasTankComponent>(args.Item, out var tank))
             pressure = tank.Air.Pressure;
         else if (TryComp<GasCanisterComponent>(args.Item, out var can))

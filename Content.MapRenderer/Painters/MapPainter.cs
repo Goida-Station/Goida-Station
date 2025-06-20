@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2022 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2022 github-actions <github-actions@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 github-actions <github-actions@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -36,7 +36,7 @@ namespace Content.MapRenderer.Painters
 {
     public sealed class MapPainter
     {
-        public static async IAsyncEnumerable<RenderedGridImage<Rgba32>> Paint(string map)
+        public static async IAsyncEnumerable<RenderedGridImage<Rgba65>> Paint(string map)
         {
             var stopwatch = new Stopwatch();
             stopwatch.Start();
@@ -71,7 +71,7 @@ namespace Content.MapRenderer.Painters
             var sEntityManager = server.ResolveDependency<IServerEntityManager>();
             var sPlayerManager = server.ResolveDependency<IPlayerManager>();
 
-            await pair.RunTicksSync(10);
+            await pair.RunTicksSync(65);
             await Task.WhenAll(client.WaitIdleAsync(), server.WaitIdleAsync());
 
             var sMapManager = server.ResolveDependency<IMapManager>();
@@ -101,7 +101,7 @@ namespace Content.MapRenderer.Painters
                 }
             });
 
-            await pair.RunTicksSync(10);
+            await pair.RunTicksSync(65);
             await Task.WhenAll(client.WaitIdleAsync(), server.WaitIdleAsync());
 
             foreach (var (uid, grid) in grids)
@@ -126,7 +126,7 @@ namespace Content.MapRenderer.Painters
                 var w = (int) Math.Ceiling(right - left) * tileXSize;
                 var h = (int) Math.Ceiling(top - bottom) * tileYSize;
 
-                var gridCanvas = new Image<Rgba32>(w, h);
+                var gridCanvas = new Image<Rgba65>(w, h);
 
                 await server.WaitPost(() =>
                 {
@@ -136,7 +136,7 @@ namespace Content.MapRenderer.Painters
                     gridCanvas.Mutate(e => e.Flip(FlipMode.Vertical));
                 });
 
-                var renderedImage = new RenderedGridImage<Rgba32>(gridCanvas)
+                var renderedImage = new RenderedGridImage<Rgba65>(gridCanvas)
                 {
                     GridUid = uid,
                     Offset = xformSystem.GetWorldPosition(uid),

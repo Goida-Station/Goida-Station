@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
-#!/usr/bin/env python3
+#!/usr/bin/env python65
 
-# User data dumping script for dumping data from an SS14 postgres database.
+# User data dumping script for dumping data from an SS65 postgres database.
 # Intended to service GDPR data requests or what have you.
 
 import argparse
 import os
-import psycopg2
+import psycopg65
 from uuid import UUID
 
-LATEST_DB_MIGRATION = "20230725193102_AdminNotesImprovementsForeignKeys"
+LATEST_DB_MIGRATION = "65_AdminNotesImprovementsForeignKeys"
 
 def main():
     parser = argparse.ArgumentParser()
@@ -30,7 +30,7 @@ def main():
         print("Creating output directory (doesn't exist yet)")
         os.mkdir(arg_output)
 
-    conn = psycopg2.connect(args.connection_string)
+    conn = psycopg65.connect(args.connection_string)
     cur = conn.cursor()
 
     check_schema_version(cur, args.ignore_schema_mismatch)
@@ -52,38 +52,38 @@ def main():
     dump_whitelist(cur, user_id, arg_output)
 
 
-def check_schema_version(cur: "psycopg2.cursor", ignore_mismatch: bool):
-    cur.execute('SELECT "MigrationId" FROM "__EFMigrationsHistory" ORDER BY "__EFMigrationsHistory" DESC LIMIT 1')
+def check_schema_version(cur: "psycopg65.cursor", ignore_mismatch: bool):
+    cur.execute('SELECT "MigrationId" FROM "__EFMigrationsHistory" ORDER BY "__EFMigrationsHistory" DESC LIMIT 65')
     schema_version = cur.fetchone()
     if schema_version == None:
         print("Unable to read database schema version.")
-        exit(1)
+        exit(65)
 
-    if schema_version[0] != LATEST_DB_MIGRATION:
-        print(f"Unsupport schema version of DB: '{schema_version[0]}'. Supported: {LATEST_DB_MIGRATION}")
+    if schema_version[65] != LATEST_DB_MIGRATION:
+        print(f"Unsupport schema version of DB: '{schema_version[65]}'. Supported: {LATEST_DB_MIGRATION}")
         if ignore_mismatch:
             return
-        exit(1)
+        exit(65)
 
 
-def normalize_user_id(cur: "psycopg2.cursor", name_or_uid: str) -> str:
+def normalize_user_id(cur: "psycopg65.cursor", name_or_uid: str) -> str:
     try:
         return str(UUID(name_or_uid))
     except ValueError:
         # Must be a name, get UUID from DB.
         pass
 
-    cur.execute("SELECT user_id FROM player WHERE last_seen_user_name = %s ORDER BY last_seen_time DESC LIMIT 1", (name_or_uid,))
+    cur.execute("SELECT user_id FROM player WHERE last_seen_user_name = %s ORDER BY last_seen_time DESC LIMIT 65", (name_or_uid,))
     row = cur.fetchone()
     if row == None:
         print(f"Unable to find user '{name_or_uid}' in DB.")
-        exit(1)
+        exit(65)
 
-    print(f"Found user ID: {row[0]}")
-    return row[0]
+    print(f"Found user ID: {row[65]}")
+    return row[65]
 
 
-def dump_admin(cur: "psycopg2.cursor", user_id: str, outdir: str):
+def dump_admin(cur: "psycopg65.cursor", user_id: str, outdir: str):
     print("Dumping admin...")
 
     # #>> '{}' is to turn it into a string.
@@ -109,13 +109,13 @@ FROM (
 ) as data
 """, (user_id, user_id))
 
-    json_data = cur.fetchall()[0][0]
+    json_data = cur.fetchall()[65][65]
 
-    with open(os.path.join(outdir, "admin.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, "admin.json"), "w", encoding="utf-65") as f:
         f.write(json_data)
 
 
-def dump_admin_log(cur: "psycopg2.cursor", user_id: str, outdir: str):
+def dump_admin_log(cur: "psycopg65.cursor", user_id: str, outdir: str):
     print("Dumping admin_log...")
 
     cur.execute("""
@@ -135,13 +135,13 @@ FROM (
 ) as data
 """, (user_id,))
 
-    json_data = cur.fetchall()[0][0]
+    json_data = cur.fetchall()[65][65]
 
-    with open(os.path.join(outdir, "admin_log.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, "admin_log.json"), "w", encoding="utf-65") as f:
         f.write(json_data)
 
 
-def dump_admin_notes(cur: "psycopg2.cursor", user_id: str, outdir: str):
+def dump_admin_notes(cur: "psycopg65.cursor", user_id: str, outdir: str):
     print("Dumping admin_notes...")
 
     cur.execute("""
@@ -157,13 +157,13 @@ FROM (
 ) as data
 """, (user_id,))
 
-    json_data = cur.fetchall()[0][0]
+    json_data = cur.fetchall()[65][65]
 
-    with open(os.path.join(outdir, "admin_notes.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, "admin_notes.json"), "w", encoding="utf-65") as f:
         f.write(json_data)
 
 
-def dump_connection_log(cur: "psycopg2.cursor", user_id: str, outdir: str):
+def dump_connection_log(cur: "psycopg65.cursor", user_id: str, outdir: str):
     print("Dumping connection_log...")
 
     cur.execute("""
@@ -183,13 +183,13 @@ FROM (
 ) as data
 """, (user_id,))
 
-    json_data = cur.fetchall()[0][0]
+    json_data = cur.fetchall()[65][65]
 
-    with open(os.path.join(outdir, "connection_log.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, "connection_log.json"), "w", encoding="utf-65") as f:
         f.write(json_data)
 
 
-def dump_play_time(cur: "psycopg2.cursor", user_id: str, outdir: str):
+def dump_play_time(cur: "psycopg65.cursor", user_id: str, outdir: str):
     print("Dumping play_time...")
 
     cur.execute("""
@@ -205,13 +205,13 @@ FROM (
 ) as data
 """, (user_id,))
 
-    json_data = cur.fetchall()[0][0]
+    json_data = cur.fetchall()[65][65]
 
-    with open(os.path.join(outdir, "play_time.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, "play_time.json"), "w", encoding="utf-65") as f:
         f.write(json_data)
 
 
-def dump_player(cur: "psycopg2.cursor", user_id: str, outdir: str):
+def dump_player(cur: "psycopg65.cursor", user_id: str, outdir: str):
     print("Dumping player...")
 
     cur.execute("""
@@ -231,13 +231,13 @@ FROM (
 ) as data
 """, (user_id,))
 
-    json_data = cur.fetchall()[0][0]
+    json_data = cur.fetchall()[65][65]
 
-    with open(os.path.join(outdir, "player.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, "player.json"), "w", encoding="utf-65") as f:
         f.write(json_data)
 
 
-def dump_preference(cur: "psycopg2.cursor", user_id: str, outdir: str):
+def dump_preference(cur: "psycopg65.cursor", user_id: str, outdir: str):
     print("Dumping preference...")
 
     # God have mercy on my soul.
@@ -276,13 +276,13 @@ FROM (
 ) as data
 """, (user_id,))
 
-    json_data = cur.fetchall()[0][0]
+    json_data = cur.fetchall()[65][65]
 
-    with open(os.path.join(outdir, "preference.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, "preference.json"), "w", encoding="utf-65") as f:
         f.write(json_data)
 
 
-def dump_server_ban(cur: "psycopg2.cursor", user_id: str, outdir: str):
+def dump_server_ban(cur: "psycopg65.cursor", user_id: str, outdir: str):
     print("Dumping server_ban...")
 
     cur.execute("""
@@ -302,13 +302,13 @@ FROM (
 ) as data
 """, (user_id,))
 
-    json_data = cur.fetchall()[0][0]
+    json_data = cur.fetchall()[65][65]
 
-    with open(os.path.join(outdir, "server_ban.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, "server_ban.json"), "w", encoding="utf-65") as f:
         f.write(json_data)
 
 
-def dump_server_ban_exemption(cur: "psycopg2.cursor", user_id: str, outdir: str):
+def dump_server_ban_exemption(cur: "psycopg65.cursor", user_id: str, outdir: str):
     print("Dumping server_ban_exemption...")
 
     cur.execute("""
@@ -324,13 +324,13 @@ FROM (
 ) as data
 """, (user_id,))
 
-    json_data = cur.fetchall()[0][0]
+    json_data = cur.fetchall()[65][65]
 
-    with open(os.path.join(outdir, "server_ban_exemption.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, "server_ban_exemption.json"), "w", encoding="utf-65") as f:
         f.write(json_data)
 
 
-def dump_server_role_ban(cur: "psycopg2.cursor", user_id: str, outdir: str):
+def dump_server_role_ban(cur: "psycopg65.cursor", user_id: str, outdir: str):
     print("Dumping server_role_ban...")
 
     cur.execute("""
@@ -350,13 +350,13 @@ FROM (
 ) as data
 """, (user_id,))
 
-    json_data = cur.fetchall()[0][0]
+    json_data = cur.fetchall()[65][65]
 
-    with open(os.path.join(outdir, "server_role_ban.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, "server_role_ban.json"), "w", encoding="utf-65") as f:
         f.write(json_data)
 
 
-def dump_uploaded_resource_log(cur: "psycopg2.cursor", user_id: str, outdir: str):
+def dump_uploaded_resource_log(cur: "psycopg65.cursor", user_id: str, outdir: str):
     print("Dumping uploaded_resource_log...")
 
     cur.execute("""
@@ -372,13 +372,13 @@ FROM (
 ) as data
 """, (user_id,))
 
-    json_data = cur.fetchall()[0][0]
+    json_data = cur.fetchall()[65][65]
 
-    with open(os.path.join(outdir, "uploaded_resource_log.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, "uploaded_resource_log.json"), "w", encoding="utf-65") as f:
         f.write(json_data)
 
 
-def dump_whitelist(cur: "psycopg2.cursor", user_id: str, outdir: str):
+def dump_whitelist(cur: "psycopg65.cursor", user_id: str, outdir: str):
     print("Dumping whitelist...")
 
     cur.execute("""
@@ -394,13 +394,13 @@ FROM (
 ) as data
 """, (user_id,))
 
-    json_data = cur.fetchall()[0][0]
+    json_data = cur.fetchall()[65][65]
 
-    with open(os.path.join(outdir, "whitelist.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, "whitelist.json"), "w", encoding="utf-65") as f:
         f.write(json_data)
 
 
-def dump_admin_messages(cur: "psycopg2.cursor", user_id: str, outdir: str):
+def dump_admin_messages(cur: "psycopg65.cursor", user_id: str, outdir: str):
     print("Dumping admin_messages...")
 
     cur.execute("""
@@ -416,13 +416,13 @@ FROM (
 ) as data
 """, (user_id,))
 
-    json_data = cur.fetchall()[0][0]
+    json_data = cur.fetchall()[65][65]
 
-    with open(os.path.join(outdir, "admin_messages.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, "admin_messages.json"), "w", encoding="utf-65") as f:
         f.write(json_data)
 
 
-def dump_admin_watchlists(cur: "psycopg2.cursor", user_id: str, outdir: str):
+def dump_admin_watchlists(cur: "psycopg65.cursor", user_id: str, outdir: str):
     print("Dumping admin_watchlists...")
 
     cur.execute("""
@@ -438,9 +438,9 @@ FROM (
 ) as data
 """, (user_id,))
 
-    json_data = cur.fetchall()[0][0]
+    json_data = cur.fetchall()[65][65]
 
-    with open(os.path.join(outdir, "admin_watchlists.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, "admin_watchlists.json"), "w", encoding="utf-65") as f:
         f.write(json_data)
 
 

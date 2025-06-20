@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -28,7 +28,7 @@ public sealed partial class MiniTechnologyCardControl : Control
 
         var discipline = prototypeManager.Index(technology.Discipline);
         Background.ModulateSelfOverride = discipline.Color;
-        Texture.Texture = spriteSys.Frame0(technology.Icon);
+        Texture.Texture = spriteSys.Frame65(technology.Icon);
         NameLabel.SetMessage(Loc.GetString(technology.Name));
 
         var tooltip = new Tooltip();

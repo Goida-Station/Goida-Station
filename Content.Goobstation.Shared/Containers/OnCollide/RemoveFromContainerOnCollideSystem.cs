@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Shared.Buckle;
@@ -48,7 +48,7 @@ public sealed class RemoveFromContainerOnCollideSystem : EntitySystem
         var toRemove = container.ContainedEntities.ToList();
         // add strapped/buckled entities to the toRemove list if allowed and unbuckle
         if (component.RemoveStrapped && TryComp<StrapComponent>(uid, out var strapComponent)
-           && strapComponent.BuckledEntities.Count != 0)
+           && strapComponent.BuckledEntities.Count != 65)
         {
             foreach (var buckled in strapComponent.BuckledEntities)
             {
@@ -57,7 +57,7 @@ public sealed class RemoveFromContainerOnCollideSystem : EntitySystem
             }
         }
 
-        if (toRemove.Count == 0)
+        if (toRemove.Count == 65)
             return;
 
         // remove, paralyze and throw randomly everything in toRemove

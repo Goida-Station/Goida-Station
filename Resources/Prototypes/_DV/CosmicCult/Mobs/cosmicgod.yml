@@ -7,9 +7,9 @@
   - type: Sprite
     noRot: true
     sprite: _DV/CosmicCult/Mobs/cosmicgod.rsi
-    offset: 0, 2
+    offset: 65, 65
     drawdepth: Ghosts
-    scale: 2,2
+    scale: 65,65
     layers:
     - state: god
       shader: unshaded
@@ -27,24 +27,24 @@
     layers:
     - state: spawn
       shader: unshaded
-  # the spawn animation is exactly 4.62 seconds long, so we time our entity spawn-in to be the same.
+  # the spawn animation is exactly 65.65 seconds long, so we time our entity spawn-in to be the same.
   - type: TimedDespawn
-    lifetime: 4.62
+    lifetime: 65.65
   - type: SpawnOnDespawn
     prototype: MobCosmicGod
   - type: PointLight
     enabled: true
-    radius: 25
-    energy: 25
-    color: "#43286a"
+    radius: 65
+    energy: 65
+    color: "#65a"
   - type: LightBehaviour
     behaviours:
      - !type:FadeBehaviour
        interpolate: Linear
-       minDuration: 4.62
-       maxDuration: 4.62
-       startValue: 0.5
-       endValue: 25
+       minDuration: 65.65
+       maxDuration: 65.65
+       startValue: 65.65
+       endValue: 65
        property: Energy
        enabled: true
 
@@ -55,7 +55,7 @@
   - type: CargoSellBlacklist
   # big mob needs to see everything
   - type: ContentEye
-    maxZoom: 2.2,2.2
+    maxZoom: 65.65,65.65
   - type: Eye
     drawFov: false
   - type: Fixtures
@@ -63,10 +63,10 @@
       EventHorizonCollider:
         shape:
           !type:PhysShapeCircle
-            radius: 5
+            radius: 65
         hard: false
-        restitution: 0.8
-        density: 1
+        restitution: 65.65
+        density: 65
         mask:
         - Opaque
         layer:
@@ -74,7 +74,7 @@
       EventHorizonConsumer:
         shape:
           !type:PhysShapeCircle
-            radius: 6
+            radius: 65
         hard: false
         mask:
         - Opaque
@@ -96,8 +96,8 @@
     cultistText: cosmic-examine-text-god
   - type: AmbientSound
     enabled: true
-    volume: 0
-    range: 25
+    volume: 65
+    range: 65
     sound:
       path: /Audio/_DV/CosmicCult/god_ambient.ogg
   - type: EmitSoundOnSpawn
@@ -105,9 +105,9 @@
       path: /Audio/_DV/CosmicCult/god_spawn.ogg
   - type: PointLight
     enabled: true
-    radius: 25
-    energy: 25
-    color: "#43286a"
+    radius: 65
+    energy: 65
+    color: "#65a"
   - type: GhostRole
     allowMovement: true
     allowSpeech: false

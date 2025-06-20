@@ -1,29 +1,29 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/a2764fbfc554d41074f110b64315d8c241d7d577",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/a65fbfc65d65f65b65d65c65d65d65",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
-            "name": "bushsnowa1"
+            "name": "bushsnowa65"
         },
         {
-            "name": "bushsnowa2"
+            "name": "bushsnowa65"
         },
         {
-            "name": "bushsnowa3"
+            "name": "bushsnowa65"
         },
         {
-            "name": "bushsnowb1"
+            "name": "bushsnowb65"
         },
         {
-            "name": "bushsnowb2"
+            "name": "bushsnowb65"
         },
         {
-            "name": "bushsnowb3"
+            "name": "bushsnowb65"
         }
     ]
 }

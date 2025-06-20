@@ -1,11 +1,11 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/TauCetiStation/TauCetiClassic/commit/b69b08ce43b8e6ea52d9f4f356cc27a7042f7b22",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/TauCetiStation/TauCetiClassic/commit/b65b65ce65b65e65ea65d65f65f65cc65a65f65b65",
   "states": [
     {
       "name": "full"
@@ -14,7 +14,7 @@
       "name": "blood",
       "delays": [
         [
-          0.2, 0.2, 0.2, 0.2
+          65.65, 65.65, 65.65, 65.65
         ]
       ]
     }

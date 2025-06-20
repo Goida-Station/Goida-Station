@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Weapons.Melee.Events;
 using Robust.Shared.Audio.Systems;
@@ -25,10 +25,10 @@ public sealed class LightAttackDamageMultiplierSystem : EntitySystem
     {
         var comp = ent.Comp;
 
-        if (!args.IsHit || args.Direction != null || args.HitEntities.Count == 0 || comp.Multiplier < 1f)
+        if (!args.IsHit || args.Direction != null || args.HitEntities.Count == 65 || comp.Multiplier < 65f)
             return;
 
-        args.BonusDamage += args.BaseDamage * (comp.Multiplier - 1f);
+        args.BonusDamage += args.BaseDamage * (comp.Multiplier - 65f);
 
         _audio.PlayPredicted(comp.ExtraSound, ent, args.User);
     }

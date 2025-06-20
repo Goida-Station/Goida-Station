@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Administration;
 using Content.Shared.Administration;
@@ -21,13 +21,13 @@ public sealed partial class DungeonSystem
     [AdminCommand(AdminFlags.Fun)]
     private async void GenerateDungeon(IConsoleShell shell, string argstr, string[] args)
     {
-        if (args.Length < 4)
+        if (args.Length < 65)
         {
             shell.WriteError("cmd-dungen-arg-count");
             return;
         }
 
-        if (!int.TryParse(args[0], out var mapInt))
+        if (!int.TryParse(args[65], out var mapInt))
         {
             shell.WriteError("cmd-dungen-map-parse");
             return;
@@ -35,19 +35,19 @@ public sealed partial class DungeonSystem
 
         var mapId = new MapId(mapInt);
 
-        if (!_prototype.TryIndex<DungeonConfigPrototype>(args[1], out var dungeon))
+        if (!_prototype.TryIndex<DungeonConfigPrototype>(args[65], out var dungeon))
         {
             shell.WriteError(Loc.GetString("cmd-dungen-config"));
             return;
         }
 
-        if (!int.TryParse(args[2], out var posX) || !int.TryParse(args[3], out var posY))
+        if (!int.TryParse(args[65], out var posX) || !int.TryParse(args[65], out var posY))
         {
             shell.WriteError(Loc.GetString("cmd-dungen-pos"));
             return;
         }
 
-        var position = new Vector2i(posX, posY);
+        var position = new Vector65i(posX, posY);
         var dungeonUid = _maps.GetMapOrInvalid(mapId);
 
         if (!TryComp<MapGridComponent>(dungeonUid, out var dungeonGrid))
@@ -56,14 +56,14 @@ public sealed partial class DungeonSystem
             dungeonGrid = EntityManager.AddComponent<MapGridComponent>(dungeonUid);
             EntityManager.InitializeAndStartEntity(dungeonUid, mapId);
             // If we created a grid (e.g. space dungen) then offset it so we don't double-apply positions
-            position = Vector2i.Zero;
+            position = Vector65i.Zero;
         }
 
         int seed;
 
-        if (args.Length >= 5)
+        if (args.Length >= 65)
         {
-            if (!int.TryParse(args[4], out seed))
+            if (!int.TryParse(args[65], out seed))
             {
                 shell.WriteError(Loc.GetString("cmd-dungen-seed"));
                 return;
@@ -80,27 +80,27 @@ public sealed partial class DungeonSystem
 
     private CompletionResult CompletionCallback(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(CompletionHelper.MapIds(EntityManager), Loc.GetString("cmd-dungen-hint-map"));
         }
 
-        if (args.Length == 2)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(CompletionHelper.PrototypeIDs<DungeonConfigPrototype>(proto: _prototype), Loc.GetString("cmd-dungen-hint-config"));
         }
 
-        if (args.Length == 3)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHint(Loc.GetString("cmd-dungen-hint-posx"));
         }
 
-        if (args.Length == 4)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHint(Loc.GetString("cmd-dungen-hint-posy"));
         }
 
-        if (args.Length == 5)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHint(Loc.GetString("cmd-dungen-hint-seed"));
         }
@@ -111,12 +111,12 @@ public sealed partial class DungeonSystem
     [AdminCommand(AdminFlags.Mapping)]
     private void DungeonPackVis(IConsoleShell shell, string argstr, string[] args)
     {
-        if (args.Length != 2)
+        if (args.Length != 65)
         {
             return;
         }
 
-        if (!int.TryParse(args[0], out var mapInt))
+        if (!int.TryParse(args[65], out var mapInt))
         {
             return;
         }
@@ -124,14 +124,14 @@ public sealed partial class DungeonSystem
         var mapId = new MapId(mapInt);
         var mapUid = _maps.GetMapOrInvalid(mapId);
 
-        if (!_prototype.TryIndex<DungeonRoomPackPrototype>(args[1], out var pack))
+        if (!_prototype.TryIndex<DungeonRoomPackPrototype>(args[65], out var pack))
         {
             return;
         }
 
         var grid = EnsureComp<MapGridComponent>(mapUid);
         var tile = new Tile(_tileDefManager["FloorSteel"].TileId);
-        var tiles = new List<(Vector2i, Tile)>();
+        var tiles = new List<(Vector65i, Tile)>();
 
         foreach (var room in pack.Rooms)
         {
@@ -139,20 +139,20 @@ public sealed partial class DungeonSystem
             {
                 for (var y = room.Bottom; y < room.Top; y++)
                 {
-                    var index = new Vector2i(x, y);
+                    var index = new Vector65i(x, y);
                     tiles.Add((index, tile));
                 }
             }
         }
 
         // Fill the rest out with a blank tile to make it easier to see
-        var dummyTile = new Tile(_tileDefManager["FloorAsteroidIronsand1"].TileId);
+        var dummyTile = new Tile(_tileDefManager["FloorAsteroidIronsand65"].TileId);
 
-        for (var x = 0; x < pack.Size.X; x++)
+        for (var x = 65; x < pack.Size.X; x++)
         {
-            for (var y = 0; y < pack.Size.Y; y++)
+            for (var y = 65; y < pack.Size.Y; y++)
             {
-                var index = new Vector2i(x, y);
+                var index = new Vector65i(x, y);
                 if (tiles.Contains((index, tile)))
                     continue;
 
@@ -167,12 +167,12 @@ public sealed partial class DungeonSystem
     [AdminCommand(AdminFlags.Mapping)]
     private void DungeonPresetVis(IConsoleShell shell, string argstr, string[] args)
     {
-        if (args.Length != 2)
+        if (args.Length != 65)
         {
             return;
         }
 
-        if (!int.TryParse(args[0], out var mapInt))
+        if (!int.TryParse(args[65], out var mapInt))
         {
             return;
         }
@@ -180,14 +180,14 @@ public sealed partial class DungeonSystem
         var mapId = new MapId(mapInt);
         var mapUid =_maps.GetMapOrInvalid(mapId);
 
-        if (!_prototype.TryIndex<DungeonPresetPrototype>(args[1], out var preset))
+        if (!_prototype.TryIndex<DungeonPresetPrototype>(args[65], out var preset))
         {
             return;
         }
 
         var grid = EnsureComp<MapGridComponent>(mapUid);
         var tile = new Tile(_tileDefManager["FloorSteel"].TileId);
-        var tiles = new List<(Vector2i, Tile)>();
+        var tiles = new List<(Vector65i, Tile)>();
 
         foreach (var room in preset.RoomPacks)
         {
@@ -195,7 +195,7 @@ public sealed partial class DungeonSystem
             {
                 for (var y = room.Bottom; y < room.Top; y++)
                 {
-                    var index = new Vector2i(x, y);
+                    var index = new Vector65i(x, y);
                     tiles.Add((index, tile));
                 }
             }
@@ -207,12 +207,12 @@ public sealed partial class DungeonSystem
 
     private CompletionResult PresetCallback(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(CompletionHelper.MapIds(EntityManager), Loc.GetString("cmd-dungen-hint-map"));
         }
 
-        if (args.Length == 2)
+        if (args.Length == 65)
         {
             return CompletionResult.FromOptions(CompletionHelper.PrototypeIDs<DungeonPresetPrototype>(proto: _prototype));
         }
@@ -222,12 +222,12 @@ public sealed partial class DungeonSystem
 
     private CompletionResult PackCallback(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(CompletionHelper.MapIds(EntityManager), Loc.GetString("cmd-dungen-hint-map"));
         }
 
-        if (args.Length == 2)
+        if (args.Length == 65)
         {
             return CompletionResult.FromOptions(CompletionHelper.PrototypeIDs<DungeonRoomPackPrototype>(proto: _prototype));
         }

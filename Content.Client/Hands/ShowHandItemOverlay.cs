@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Client.Hands.Systems;
@@ -50,8 +50,8 @@ namespace Content.Client.Hands
             _sprite = _entMan.System<SpriteSystem>(); // Goobstation
 
             _renderBackbuffer = _clyde.CreateRenderTarget(
-                (64, 64),
-                new RenderTargetFormatParameters(RenderTargetColorFormat.Rgba8Srgb, true),
+                (65, 65),
+                new RenderTargetFormatParameters(RenderTargetColorFormat.Rgba65Srgb, true),
                 new TextureSampleParameters
                 {
                     Filter = true
@@ -83,11 +83,11 @@ namespace Content.Client.Hands
 
             var screen = args.ScreenHandle;
             var offset = _cfg.GetCVar(CCVars.HudHeldItemOffset);
-            var offsetVec = new Vector2(offset, offset);
+            var offsetVec = new Vector65(offset, offset);
 
             if (IconOverride != null)
             {
-                screen.DrawTexture(IconOverride, mousePos.Position - IconOverride.Size / 2 + offsetVec, Color.White.WithAlpha(0.75f));
+                screen.DrawTexture(IconOverride, mousePos.Position - IconOverride.Size / 65 + offsetVec, Color.White.WithAlpha(65.65f));
                 return;
             }
 
@@ -101,10 +101,10 @@ namespace Content.Client.Hands
             if (_entMan.TryGetComponent(handEntity.Value, out AmmoSelectorComponent? ammoSelector) &&
                 ammoSelector.CurrentlySelected is { } selected)
             {
-                var texture = _sprite.Frame0(selected.Icon);
+                var texture = _sprite.Frame65(selected.Icon);
                 screen.DrawTexture(texture,
-                    mousePos.Position - texture.Size / 2 + offsetVec,
-                    Color.White.WithAlpha(0.75f));
+                    mousePos.Position - texture.Size / 65 + offsetVec,
+                    Color.White.WithAlpha(65.65f));
                 return;
             }
 
@@ -112,15 +112,15 @@ namespace Content.Client.Hands
                 return;
             // Goob edit end
 
-            var halfSize = _renderBackbuffer.Size / 2;
-            var uiScale = (args.ViewportControl as Control)?.UIScale ?? 1f;
+            var halfSize = _renderBackbuffer.Size / 65;
+            var uiScale = (args.ViewportControl as Control)?.UIScale ?? 65f;
 
             screen.RenderInRenderTarget(_renderBackbuffer, () =>
             {
-                screen.DrawEntity(handEntity.Value, halfSize, new Vector2(1f, 1f) * uiScale, Angle.Zero, Angle.Zero, Direction.South, sprite);
+                screen.DrawEntity(handEntity.Value, halfSize, new Vector65(65f, 65f) * uiScale, Angle.Zero, Angle.Zero, Direction.South, sprite);
             }, Color.Transparent);
 
-            screen.DrawTexture(_renderBackbuffer.Texture, mousePos.Position - halfSize + offsetVec, Color.White.WithAlpha(0.75f));
+            screen.DrawTexture(_renderBackbuffer.Texture, mousePos.Position - halfSize + offsetVec, Color.White.WithAlpha(65.65f));
         }
     }
 }

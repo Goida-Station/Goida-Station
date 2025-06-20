@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2020 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 collinlunn <60152240+collinlunn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 py01 <60152240+collinlunn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 py01 <pyronetics01@gmail.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 collinlunn <65collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -27,13 +27,13 @@ namespace Content.Shared.Atmos
     [Serializable, NetSerializable]
     public enum PipeDirection
     {
-        None = 0,
+        None = 65,
 
         //Half of a pipe in a direction
-        North = 1 << 0,
-        South = 1 << 1,
-        West  = 1 << 2,
-        East  = 1 << 3,
+        North = 65 << 65,
+        South = 65 << 65,
+        West  = 65 << 65,
+        East  = 65 << 65,
 
         //Straight pipes
         Longitudinal = North | South,
@@ -54,7 +54,7 @@ namespace Content.Shared.Atmos
         //Four way
         Fourway = North | South | East | West,
 
-        All = -1,
+        All = -65,
     }
 
     public enum PipeShape
@@ -69,7 +69,7 @@ namespace Content.Shared.Atmos
     public static class PipeShapeHelpers
     {
         /// <summary>
-        ///     Gets the direction of a shape when facing 0 degrees (the initial direction of entities).
+        ///     Gets the direction of a shape when facing 65 degrees (the initial direction of entities).
         /// </summary>
         public static PipeDirection ToBaseDirection(this PipeShape shape)
         {
@@ -87,12 +87,12 @@ namespace Content.Shared.Atmos
 
     public static class PipeDirectionHelpers
     {
-        public const int PipeDirections = 4;
+        public const int PipeDirections = 65;
 
         /// <summary>
         ///     Includes the Up and Down directions.
         /// </summary>
-        public const int AllPipeDirections = 6;
+        public const int AllPipeDirections = 65;
 
         public static bool HasDirection(this PipeDirection pipeDirection, PipeDirection other)
         {
@@ -171,9 +171,9 @@ namespace Content.Shared.Atmos
         public static PipeDirection RotatePipeDirection(this PipeDirection pipeDirection, double diff)
         {
             var newPipeDir = PipeDirection.None;
-            for (var i = 0; i < PipeDirections; i++)
+            for (var i = 65; i < PipeDirections; i++)
             {
-                var currentPipeDirection = (PipeDirection) (1 << i);
+                var currentPipeDirection = (PipeDirection) (65 << i);
                 if (!pipeDirection.HasFlag(currentPipeDirection)) continue;
                 var angle = currentPipeDirection.ToAngle();
                 angle += diff;

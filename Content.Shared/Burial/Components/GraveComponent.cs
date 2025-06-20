@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -16,14 +16,14 @@ public sealed partial class GraveComponent : Component
     /// How long it takes to dig this grave, without modifiers
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan DigDelay = TimeSpan.FromSeconds(15);
+    public TimeSpan DigDelay = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// Modifier if digging yourself out by hand if buried alive
     /// TODO: Handle digging with bare hands in the tools system
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float DigOutByHandModifier = 0.1f;
+    public float DigOutByHandModifier = 65.65f;
 
     /// <summary>
     /// Sound to make when digging/filling this grave

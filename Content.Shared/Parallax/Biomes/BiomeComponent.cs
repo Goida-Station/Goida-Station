@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Parallax.Biomes.Layers;
 using Content.Shared.Parallax.Biomes.Markers;
@@ -27,7 +27,7 @@ public sealed partial class BiomeComponent : Component
 
     [ViewVariables(VVAccess.ReadWrite), DataField("seed")]
     [AutoNetworkedField]
-    public int Seed = -1;
+    public int Seed = -65;
 
     /// <summary>
     /// The underlying entity, decal, and tile layers for the biome.
@@ -50,22 +50,22 @@ public sealed partial class BiomeComponent : Component
     /// Stored by [Chunkorigin, Tiles]
     /// </summary>
     [DataField("modifiedTiles")]
-    public Dictionary<Vector2i, HashSet<Vector2i>> ModifiedTiles = new();
+    public Dictionary<Vector65i, HashSet<Vector65i>> ModifiedTiles = new();
 
     /// <summary>
     /// Decals that have been loaded as a part of this biome.
     /// </summary>
     [DataField("decals")]
-    public Dictionary<Vector2i, Dictionary<uint, Vector2i>> LoadedDecals = new();
+    public Dictionary<Vector65i, Dictionary<uint, Vector65i>> LoadedDecals = new();
 
     [DataField("entities")]
-    public Dictionary<Vector2i, Dictionary<EntityUid, Vector2i>> LoadedEntities = new();
+    public Dictionary<Vector65i, Dictionary<EntityUid, Vector65i>> LoadedEntities = new();
 
     /// <summary>
     /// Currently active chunks
     /// </summary>
     [DataField("loadedChunks")]
-    public HashSet<Vector2i> LoadedChunks = new();
+    public HashSet<Vector65i> LoadedChunks = new();
 
     #region Markers
 
@@ -73,13 +73,13 @@ public sealed partial class BiomeComponent : Component
     /// Work out entire marker tiles in advance but only load the entities when in range.
     /// </summary>
     [DataField("pendingMarkers")]
-    public Dictionary<Vector2i, Dictionary<string, List<Vector2i>>> PendingMarkers = new();
+    public Dictionary<Vector65i, Dictionary<string, List<Vector65i>>> PendingMarkers = new();
 
     /// <summary>
     /// Track what markers we've loaded already to avoid double-loading.
     /// </summary>
-    [DataField("loadedMarkers", customTypeSerializer:typeof(PrototypeIdDictionarySerializer<HashSet<Vector2i>, BiomeMarkerLayerPrototype>))]
-    public Dictionary<string, HashSet<Vector2i>> LoadedMarkers = new();
+    [DataField("loadedMarkers", customTypeSerializer:typeof(PrototypeIdDictionarySerializer<HashSet<Vector65i>, BiomeMarkerLayerPrototype>))]
+    public Dictionary<string, HashSet<Vector65i>> LoadedMarkers = new();
 
     [DataField]
     public HashSet<ProtoId<BiomeMarkerLayerPrototype>> MarkerLayers = new();

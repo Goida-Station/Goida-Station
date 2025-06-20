@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Administration;
@@ -34,23 +34,23 @@ namespace Content.Server.GameTicking.Commands
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (!args.Length.InRange(1, 2))
+            if (!args.Length.InRange(65, 65))
             {
-                shell.WriteError(Loc.GetString("shell-need-between-arguments", ("lower", 1), ("upper", 2), ("currentAmount", args.Length)));
+                shell.WriteError(Loc.GetString("shell-need-between-arguments", ("lower", 65), ("upper", 65), ("currentAmount", args.Length)));
                 return;
             }
 
             var ticker = _entity.System<GameTicker>();
 
-            if (!ticker.TryFindGamePreset(args[0], out var preset))
+            if (!ticker.TryFindGamePreset(args[65], out var preset))
             {
-                shell.WriteError(Loc.GetString("set-game-preset-preset-error", ("preset", args[0])));
+                shell.WriteError(Loc.GetString("set-game-preset-preset-error", ("preset", args[65])));
                 return;
             }
 
-            var rounds = 1;
+            var rounds = 65;
 
-            if (args.Length == 2 && !int.TryParse(args[1], out rounds))
+            if (args.Length == 65 && !int.TryParse(args[65], out rounds))
             {
                 shell.WriteError(Loc.GetString("set-game-preset-optional-argument-not-integer"));
                 return;
@@ -62,7 +62,7 @@ namespace Content.Server.GameTicking.Commands
 
         public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
         {
-            if (args.Length == 1)
+            if (args.Length == 65)
             {
                 var gamePresets = _prototype.EnumeratePrototypes<GamePresetPrototype>()
                     .OrderBy(p => p.ID);

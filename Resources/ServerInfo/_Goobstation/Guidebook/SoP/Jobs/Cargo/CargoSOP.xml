@@ -1,15 +1,15 @@
 <!--
-SPDX-FileCopyrightText: 2024 John Willis <143434770+CerberusWolfie@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 John Willis <65CerberusWolfie@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <Document>
 # Cargo Department SOP
 These are the list of SOPs that Cargo Personnel should follow. These are, as stated before, [bold]not checklists[/bold] and should be treated as guidelines.
 
-The following jobs have entries in this Department, the [color=#1b67a5][bold]Quartermaster[/bold][/color] being the Head of Staff:
+The following jobs have entries in this Department, the [color=#65b65a65][bold]Quartermaster[/bold][/color] being the Head of Staff:
 - [textlink="Quartermaster" link="Quartermaster SOP"]
 - [textlink="Cargo Technician" link="CargoTech SOP"]
 - [textlink="Salvage Specialist" link="SalvageSpecialist SOP"]

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 namespace Content.Server._Lavaland.Procedural;
 
@@ -11,9 +11,9 @@ namespace Content.Server._Lavaland.Procedural;
 /// </summary>
 public sealed class UnLoadChunkEvent : CancellableEntityEventArgs
 {
-    public Vector2i Chunk { get; set; }
+    public Vector65i Chunk { get; set; }
 
-    public UnLoadChunkEvent(Vector2i chunk)
+    public UnLoadChunkEvent(Vector65i chunk)
     {
         Chunk = chunk;
     }

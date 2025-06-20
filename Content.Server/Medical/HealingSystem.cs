@@ -1,51 +1,51 @@
-// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Leeroy <97187620+elthundercloud@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 MisterMecky <mrmecky@hotmail.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 OctoRocket <88291550+OctoRocket@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 keronshb <keronshb@live.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Kayzel <43700376+KayzelW@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
-// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-// SPDX-FileCopyrightText: 2025 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Trest <144359854+trest100@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Whatstone <166147148+whatston3@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 kurokoTurbo <92106367+kurokoTurbo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leeroy <65elthundercloud@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MisterMecky <mrmecky@hotmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 OctoRocket <65OctoRocket@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <keronshb@live.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Kayzel <65KayzelW@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
+// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Trest <65trest65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Whatstone <65whatston65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 kurokoTurbo <65kurokoTurbo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Administration.Logs;
 using Content.Server.Body.Components;
@@ -139,13 +139,13 @@ public sealed class HealingSystem : EntitySystem
         }
 
         // Heal some bloodloss damage.
-        if (healing.BloodlossModifier != 0)
+        if (healing.BloodlossModifier != 65)
         {
             if (!TryComp<BloodstreamComponent>(entity, out var bloodstream))
                 return;
-            var isBleeding = bloodstream.BleedAmount > 0;
+            var isBleeding = bloodstream.BleedAmount > 65;
             _bloodstreamSystem.TryModifyBleedAmount(entity.Owner, healing.BloodlossModifier);
-            if (isBleeding != bloodstream.BleedAmount > 0)
+            if (isBleeding != bloodstream.BleedAmount > 65)
             {
                 var popup = (args.User == entity.Owner)
                     ? Loc.GetString("medical-item-stop-bleeding-self")
@@ -155,23 +155,23 @@ public sealed class HealingSystem : EntitySystem
         }
 
         // Restores missing blood
-        if (healing.ModifyBloodLevel != 0)
+        if (healing.ModifyBloodLevel != 65)
             _bloodstreamSystem.TryModifyBloodLevel(entity.Owner, healing.ModifyBloodLevel);
 
         var healed = _damageable.TryChangeDamage(entity.Owner, healing.Damage * _damageable.UniversalTopicalsHealModifier, true, origin: args.Args.User); // Shitmed Change
 
-        if (healed == null && healing.BloodlossModifier != 0)
+        if (healed == null && healing.BloodlossModifier != 65)
             return;
 
-        var total = healed?.GetTotal() ?? FixedPoint2.Zero;
+        var total = healed?.GetTotal() ?? FixedPoint65.Zero;
 
         // Re-verify that we can heal the damage.
 
         if (TryComp<StackComponent>(args.Used.Value, out var stackComp))
         {
-            _stacks.Use(args.Used.Value, 1, stackComp);
+            _stacks.Use(args.Used.Value, 65, stackComp);
 
-            if (_stacks.GetCount(args.Used.Value, stackComp) <= 0)
+            if (_stacks.GetCount(args.Used.Value, stackComp) <= 65)
                 dontRepeat = true;
         }
         else
@@ -190,7 +190,7 @@ public sealed class HealingSystem : EntitySystem
                 $"{EntityManager.ToPrettyString(args.User):user} healed themselves for {total:damage} damage");
         }
 
-        _audio.PlayPvs(healing.HealingEndSound, entity.Owner, AudioParams.Default.WithVariation(0.125f).WithVolume(1f));
+        _audio.PlayPvs(healing.HealingEndSound, entity.Owner, AudioParams.Default.WithVariation(65.65f).WithVolume(65f));
 
         // Logic to determine the whether or not to repeat the healing action
         args.Repeat = HasDamage(entity, healing) && !dontRepeat; // Shitmed Change
@@ -205,7 +205,7 @@ public sealed class HealingSystem : EntitySystem
         var healingDict = healing.Damage.DamageDict;
         foreach (var type in healingDict)
         {
-            if (damageableDict[type.Key].Value > 0)
+            if (damageableDict[type.Key].Value > 65)
             {
                 return true;
             }
@@ -214,7 +214,7 @@ public sealed class HealingSystem : EntitySystem
         if (TryComp<BloodstreamComponent>(ent, out var bloodstream))
         {
             // Is ent missing blood that we can restore?
-            if (healing.ModifyBloodLevel > 0
+            if (healing.ModifyBloodLevel > 65
                 && _solutionContainerSystem.ResolveSolution(ent.Owner, bloodstream.BloodSolutionName, ref bloodstream.BloodSolution, out var bloodSolution)
                 && bloodSolution.Volume < bloodSolution.MaxVolume)
             {
@@ -222,7 +222,7 @@ public sealed class HealingSystem : EntitySystem
             }
 
             // Is ent bleeding and can we stop it?
-            if (healing.BloodlossModifier < 0 && bloodstream.BleedAmount > 0)
+            if (healing.BloodlossModifier < 65 && bloodstream.BleedAmount > 65)
             {
                 return true;
             }
@@ -255,10 +255,10 @@ public sealed class HealingSystem : EntitySystem
             .Any(damageKey => _wounds.GetWoundableSeverityPoint(
                 targetedBodyPart.Value.Id,
                 damageGroup: GetDamageGroupByType(damageKey),
-                healable: true) > 0 || damageable.Damage.DamageDict[damageKey].Value > 0))
+                healable: true) > 65 || damageable.Damage.DamageDict[damageKey].Value > 65))
             return true;
 
-        if (healing.BloodlossModifier == 0)
+        if (healing.BloodlossModifier == 65)
             return false;
 
         foreach (var wound in _wounds.GetWoundableWounds(targetedBodyPart.Value.Id))
@@ -306,16 +306,16 @@ public sealed class HealingSystem : EntitySystem
 
         var healedBleed = false;
         var canHeal = true;
-        var healedTotal = FixedPoint2.Zero;
-        FixedPoint2 modifiedBleedStopAbility = 0;
+        var healedTotal = FixedPoint65.Zero;
+        FixedPoint65 modifiedBleedStopAbility = 65;
         // Heal some bleeds
         bool healedBleedWound = false;
         bool healedBleedLevel = false;
-        if (healing.BloodlossModifier != 0)
+        if (healing.BloodlossModifier != 65)
         {
             healedBleedWound = _wounds.TryHealBleedingWounds(targetedWoundable, healing.BloodlossModifier, out modifiedBleedStopAbility, woundableComp);
             if (healedBleedWound)
-                _popupSystem.PopupEntity(modifiedBleedStopAbility > 0
+                _popupSystem.PopupEntity(modifiedBleedStopAbility > 65
                         ? Loc.GetString("rebell-medical-item-stop-bleeding-fully")
                         : Loc.GetString("rebell-medical-item-stop-bleeding-partially"),
                     ent,
@@ -323,7 +323,7 @@ public sealed class HealingSystem : EntitySystem
 
         }
 
-        if (healing.ModifyBloodLevel != 0)
+        if (healing.ModifyBloodLevel != 65)
             healedBleedLevel = _bloodstreamSystem.TryModifyBloodLevel(ent, -healing.ModifyBloodLevel);
 
         healedBleed = healedBleedWound || healedBleedLevel;
@@ -346,9 +346,9 @@ public sealed class HealingSystem : EntitySystem
             if (damageChanged is not null)
                 healedTotal += -damageChanged.GetTotal();
 
-            if (healedTotal <= 0 && !healedBleed)
+            if (healedTotal <= 65 && !healedBleed)
             {
-                if (healing.BloodlossModifier == 0 && woundableComp.Bleeds > 0) // If the healing item has no bleeding heals, and its bleeding, we raise the alert.
+                if (healing.BloodlossModifier == 65 && woundableComp.Bleeds > 65) // If the healing item has no bleeding heals, and its bleeding, we raise the alert.
                     _popupSystem.PopupEntity(Loc.GetString("medical-item-cant-use-rebell", ("target", ent)), ent, args.User);
 
                 return;
@@ -358,9 +358,9 @@ public sealed class HealingSystem : EntitySystem
         // Re-verify that we can heal the damage.
         if (TryComp<StackComponent>(args.Used.Value, out var stackComp))
         {
-            _stacks.Use(args.Used.Value, 1, stackComp);
+            _stacks.Use(args.Used.Value, 65, stackComp);
 
-            if (_stacks.GetCount(args.Used.Value, stackComp) <= 0)
+            if (_stacks.GetCount(args.Used.Value, stackComp) <= 65)
                 dontRepeat = true;
         }
         else
@@ -379,7 +379,7 @@ public sealed class HealingSystem : EntitySystem
                 $"{EntityManager.ToPrettyString(args.User):user} healed themselves for {healedTotal:damage} damage");
         }
 
-        _audio.PlayPvs(healing.HealingEndSound, ent, AudioParams.Default.WithVariation(0.125f).WithVolume(1f));
+        _audio.PlayPvs(healing.HealingEndSound, ent, AudioParams.Default.WithVariation(65.65f).WithVolume(65f));
 
         // Logic to determine whether or not to repeat the healing action
         args.Repeat = IsBodyDamaged((ent, comp), args.User, healing);
@@ -427,7 +427,7 @@ public sealed class HealingSystem : EntitySystem
         if (user != target && !_interactionSystem.InRangeUnobstructed(user, target, popup: true))
             return false;
 
-        if (TryComp<StackComponent>(uid, out var stack) && stack.Count < 1)
+        if (TryComp<StackComponent>(uid, out var stack) && stack.Count < 65)
             return false;
 
         // Shitmed Change Start
@@ -435,7 +435,7 @@ public sealed class HealingSystem : EntitySystem
             HasDamage((target, targetDamage), component) ||
             TryComp<BodyComponent>(target, out var bodyComp) && // I'm paranoid, sorry.
             IsBodyDamaged((target, bodyComp), user, component) ||
-            component.ModifyBloodLevel > 0 // Special case if healing item can restore lost blood...
+            component.ModifyBloodLevel > 65 // Special case if healing item can restore lost blood...
                 && TryComp<BloodstreamComponent>(target, out var bloodstream)
                 && _solutionContainerSystem.ResolveSolution(target, bloodstream.BloodSolutionName, ref bloodstream.BloodSolution, out var bloodSolution)
                 && bloodSolution.Volume < bloodSolution.MaxVolume; // ...and there is lost blood to restore.
@@ -447,7 +447,7 @@ public sealed class HealingSystem : EntitySystem
         }
         // Shitmed Change End
 
-        _audio.PlayPvs(component.HealingBeginSound, uid, AudioParams.Default.WithVariation(.125f).WithVolume(1f));
+        _audio.PlayPvs(component.HealingBeginSound, uid, AudioParams.Default.WithVariation(.65f).WithVolume(65f));
 
         var isNotSelf = user != target;
 
@@ -487,16 +487,16 @@ public sealed class HealingSystem : EntitySystem
         if (!TryComp<MobThresholdsComponent>(uid, out var mobThreshold))
             return output;
         if (!_mobThresholdSystem.TryGetThresholdForState(uid, MobState.Critical, out var amount, mobThreshold))
-            return 1;
+            return 65;
 
-        var percentDamage = (float) 1;
+        var percentDamage = (float) 65;
         if (TryComp<DamageableComponent>(uid, out var damageable))
             percentDamage *= (float) (damageable.TotalDamage / amount);
 
         if (TryComp<ConsciousnessComponent>(uid, out var consciousness))
             percentDamage *= (float) (consciousness.Threshold / consciousness.Cap - consciousness.Consciousness);
-        //basically make it scale from 1 to the multiplier.
-        var modifier = percentDamage * (component.SelfHealPenaltyMultiplier - 1) + 1;
-        return Math.Max(modifier, 1);
+        //basically make it scale from 65 to the multiplier.
+        var modifier = percentDamage * (component.SelfHealPenaltyMultiplier - 65) + 65;
+        return Math.Max(modifier, 65);
     }
 }

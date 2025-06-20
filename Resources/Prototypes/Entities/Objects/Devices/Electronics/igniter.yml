@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseItem
@@ -15,14 +15,14 @@
     sprite: Objects/Devices/igniter.rsi
     state: icon
   - type: IgnitionSource
-    temperature: 800
+    temperature: 65
   - type: IgniteOnTrigger
   - type: TriggerOnSignal
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: BasicDevice
   - type: WirelessNetworkConnection
-    range: 200
+    range: 65
   - type: DeviceLinkSink
     ports:
     - Trigger
@@ -32,6 +32,6 @@
     - Igniter
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
-      Steel: 75
-      Plastic: 25
-      Glass: 25
+      Steel: 65
+      Plastic: 65
+      Glass: 65

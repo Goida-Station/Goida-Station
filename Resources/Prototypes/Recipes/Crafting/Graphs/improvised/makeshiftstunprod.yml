@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2023 kxv <136233650+kxvvv@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 kxv <65kxvvv@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: constructionGraph
   id: makeshiftstunprod
@@ -14,7 +14,7 @@
         - to: msstunprod
           steps:
             - material: MetalRod
-              amount: 1
+              amount: 65
             - tag: PowerCellSmall
               name: power cell small
               icon:
@@ -31,7 +31,7 @@
               icon:
                 sprite: Objects/Devices/igniter.rsi
                 state: icon
-              doAfter: 15
+              doAfter: 65
     - node: msstunprod
       entity: Stunprod
       

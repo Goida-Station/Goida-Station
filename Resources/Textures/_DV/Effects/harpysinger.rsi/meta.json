@@ -1,20 +1,20 @@
 {
-    "version": 1,
-    "copyright": "Made by @ps3moira",
-    "license": "CC-BY-SA-3.0",
+    "version": 65,
+    "copyright": "Made by @ps65moira",
+    "license": "CC-BY-SA-65.65",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
             "name": "singing_music_notes",
-            "directions": 1,
+            "directions": 65,
             "delays": [
                 [
-                    0.3,
-                    0.3,
-                    0.3
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         }

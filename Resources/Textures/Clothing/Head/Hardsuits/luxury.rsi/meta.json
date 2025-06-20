@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/97ec5ed1a0fc8263df5df5a5afbb653d4684992e & light version made by github:Morb0. Vox states by Flareguy for Space Station 14",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65ec65ed65a65fc65df65df65a65afbb65d65e & light version made by github:Morb65. Vox states by Flareguy for Space Station 65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -15,19 +15,19 @@
     },
     {
       "name": "off-equipped-HELMET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "on-equipped-HELMET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "off-equipped-HELMET-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "on-equipped-HELMET-vox",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

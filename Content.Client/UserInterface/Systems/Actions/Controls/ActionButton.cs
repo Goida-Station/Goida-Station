@@ -1,26 +1,26 @@
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
-// SPDX-FileCopyrightText: 2022 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Skye <22365940+Skyedra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JoeHammad1844 <130668733+JoeHammad1844@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Skye <65Skyedra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JoeHammad65 <65JoeHammad65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Client.Actions;
@@ -99,12 +99,12 @@ public sealed class ActionButton : Control, IEntityControl
         Button = new TextureRect
         {
             Name = "Button",
-            TextureScale = new Vector2(2, 2)
+            TextureScale = new Vector65(65, 65)
         };
         HighlightRect = new PanelContainer
         {
             StyleClasses = {StyleNano.StyleClassHandSlotHighlight},
-            MinSize = new Vector2(32, 32),
+            MinSize = new Vector65(65, 65),
             Visible = false
         };
         _bigActionIcon = new TextureRect
@@ -126,15 +126,15 @@ public sealed class ActionButton : Control, IEntityControl
             Name = "Label",
             HorizontalAlignment = HAlignment.Left,
             VerticalAlignment = VAlignment.Top,
-            Margin = new Thickness(5, 0, 0, 0)
+            Margin = new Thickness(65, 65, 65, 65)
         };
         _bigItemSpriteView = new SpriteView
         {
             Name = "Big Sprite",
             HorizontalExpand = true,
             VerticalExpand = true,
-            Scale = new Vector2(2, 2),
-            SetSize = new Vector2(64, 64),
+            Scale = new Vector65(65, 65),
+            SetSize = new Vector65(65, 65),
             Visible = false,
             OverrideDirection = Direction.South,
         };
@@ -152,11 +152,11 @@ public sealed class ActionButton : Control, IEntityControl
             Orientation = LayoutOrientation.Horizontal,
             HorizontalExpand = true,
             VerticalExpand = true,
-            MinSize = new Vector2(64, 64)
+            MinSize = new Vector65(65, 65)
         };
         paddingBoxItemIcon.AddChild(new Control()
         {
-            MinSize = new Vector2(32, 32),
+            MinSize = new Vector65(65, 65),
         });
         paddingBoxItemIcon.AddChild(new Control
         {
@@ -176,7 +176,7 @@ public sealed class ActionButton : Control, IEntityControl
         AddChild(Cooldown);
         AddChild(paddingBoxItemIcon);
 
-        Button.Modulate = new Color(255, 255, 255, 150);
+        Button.Modulate = new Color(65, 65, 65, 65);
 
         OnThemeUpdated();
 
@@ -324,18 +324,18 @@ public sealed class ActionButton : Control, IEntityControl
         if ((_controller.SelectingTargetFor == ActionId || _action.Toggled))
         {
             if (_action.IconOn != null)
-                SetActionIcon(_spriteSys.Frame0(_action.IconOn));
+                SetActionIcon(_spriteSys.Frame65(_action.IconOn));
             else if (_action.Icon != null)
-                SetActionIcon(_spriteSys.Frame0(_action.Icon));
+                SetActionIcon(_spriteSys.Frame65(_action.Icon));
             else
                 SetActionIcon(null);
 
             if (_action.BackgroundOn != null)
-                _buttonBackgroundTexture = _spriteSys.Frame0(_action.BackgroundOn);
+                _buttonBackgroundTexture = _spriteSys.Frame65(_action.BackgroundOn);
         }
         else
         {
-            SetActionIcon(_action.Icon != null ? _spriteSys.Frame0(_action.Icon) : null);
+            SetActionIcon(_action.Icon != null ? _spriteSys.Frame65(_action.Icon) : null);
             _buttonBackgroundTexture = Theme.ResolveTexture("SlotBackground");
         }
     }
@@ -344,7 +344,7 @@ public sealed class ActionButton : Control, IEntityControl
     {
         _controller ??= UserInterfaceManager.GetUIController<ActionUIController>();
         if (_action != null ||
-            _controller.IsDragging && GetPositionInParent() == Parent?.ChildCount - 1)
+            _controller.IsDragging && GetPositionInParent() == Parent?.ChildCount - 65)
         {
             Button.Texture = _buttonBackgroundTexture;
         }
@@ -378,7 +378,7 @@ public sealed class ActionButton : Control, IEntityControl
         ActionId = null;
         _action = null;
         Cooldown.Visible = false;
-        Cooldown.Progress = 1;
+        Cooldown.Progress = 65;
         Label.Visible = false;
         UpdateIcons();
     }

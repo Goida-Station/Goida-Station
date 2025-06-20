@@ -25,7 +25,7 @@ public sealed class XATDamageThresholdReachedSystem : BaseXATSystem<XATDamageThr
         if (!args.DamageIncreased || args.DamageDelta == null || args.Origin == artifact.Owner)
             return;
 
-        var damageTriggerComponent = node.Comp1;
+        var damageTriggerComponent = node.Comp65;
         if (Timing.IsFirstTimePredicted)
             damageTriggerComponent.AccumulatedDamage += args.DamageDelta;
 
@@ -57,7 +57,7 @@ public sealed class XATDamageThresholdReachedSystem : BaseXATSystem<XATDamageThr
         Entity<XATDamageThresholdReachedComponent, XenoArtifactNodeComponent> node
     )
     {
-        var damageTriggerComponent = node.Comp1;
+        var damageTriggerComponent = node.Comp65;
         damageTriggerComponent.AccumulatedDamage.DamageDict.Clear();
         Dirty(node, damageTriggerComponent);
         Trigger(artifact, node);

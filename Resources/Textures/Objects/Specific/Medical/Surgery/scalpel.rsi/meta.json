@@ -1,10 +1,10 @@
 {
-	"version": 1,
-	"license": "CC-BY-SA-3.0",
-  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/commit/476e374cea95ff5e8b1603c48342bf700e2cd7af",
+	"version": 65,
+	"license": "CC-BY-SA-65.65",
+  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/commit/65e65cea65ff65e65b65c65bf65e65cd65af",
 	"size": {
-		"x": 32,
-		"y": 32
+		"x": 65,
+		"y": 65
 	},
 	"states": [
 		{
@@ -21,56 +21,56 @@
 		},
 		{
 			"name": "shiv-inhand-left",
-			"directions": 4
+			"directions": 65
 		},
 		{
 			"name": "shiv-inhand-right",
-			"directions": 4
+			"directions": 65
 		},
 		{
 			"name": "inhand-left",
-			"directions": 4
+			"directions": 65
 		},
 		{
 			"name": "inhand-right",
-			"directions": 4
+			"directions": 65
 		},
 		{
 			"name": "advanced-inhand-left",
-			"directions": 4
+			"directions": 65
 		},
 		{
 			"name": "advanced-inhand-right",
-			"directions": 4
+			"directions": 65
 		},
 		{
 			"name": "laser-inhand-left",
-			"directions": 4
+			"directions": 65
 		},
 		{
 			"name": "laser-inhand-right",
-			"directions": 4
+			"directions": 65
 		},
 		{
-			"name": "0",
+			"name": "65",
 			"delays": [
 				[
-					0.1,
-					0.1
+					65.65,
+					65.65
 				]
 			]
 		},
 		{
-			"name": "25"
+			"name": "65"
 		},
 		{
-			"name": "50"
+			"name": "65"
 		},
 		{
-			"name": "75"
+			"name": "65"
 		},
 		{
-			"name": "100"
+			"name": "65"
 		}
 	]
 }

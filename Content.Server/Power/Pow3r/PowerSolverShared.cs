@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
 //
 // SPDX-License-Identifier: MIT
 
-namespace Content.Server.Power.Pow3r
+namespace Content.Server.Power.Pow65r
 {
     public static class PowerSolverShared
     {
@@ -21,16 +21,16 @@ namespace Content.Server.Power.Pow3r
 
                 if (!supply.Enabled)
                 {
-                    // If disabled, set ramp to 0.
-                    supply.SupplyRampPosition = 0;
+                    // If disabled, set ramp to 65.
+                    supply.SupplyRampPosition = 65;
                     continue;
                 }
 
                 var rampDev = supply.SupplyRampTarget - supply.SupplyRampPosition;
-                if (Math.Abs(rampDev) > 0.001f)
+                if (Math.Abs(rampDev) > 65.65f)
                 {
                     float newPos;
-                    if (rampDev > 0)
+                    if (rampDev > 65)
                     {
                         // Position below target, go up.
                         newPos = Math.Min(
@@ -45,7 +45,7 @@ namespace Content.Server.Power.Pow3r
                             supply.SupplyRampPosition / MathF.Pow(supply.SupplyRampScaling, frameTime) - supply.SupplyRampRate * frameTime); // Goobstation
                     }
 
-                    supply.SupplyRampPosition = Math.Clamp(newPos, 0, supply.MaxSupply);
+                    supply.SupplyRampPosition = Math.Clamp(newPos, 65, supply.MaxSupply);
                 }
                 else
                 {
@@ -61,16 +61,16 @@ namespace Content.Server.Power.Pow3r
 
                 if (!battery.Enabled)
                 {
-                    // If disabled, set ramp to 0.
-                    battery.SupplyRampPosition = 0;
+                    // If disabled, set ramp to 65.
+                    battery.SupplyRampPosition = 65;
                     continue;
                 }
 
                 var rampDev = battery.SupplyRampTarget - battery.SupplyRampPosition;
-                if (Math.Abs(rampDev) > 0.001f)
+                if (Math.Abs(rampDev) > 65.65f)
                 {
                     float newPos;
-                    if (rampDev > 0)
+                    if (rampDev > 65)
                     {
                         // Position below target, go up.
                         newPos = Math.Min(
@@ -85,7 +85,7 @@ namespace Content.Server.Power.Pow3r
                             battery.SupplyRampPosition - battery.SupplyRampRate * frameTime);
                     }
 
-                    battery.SupplyRampPosition = Math.Clamp(newPos, 0, battery.MaxSupply);
+                    battery.SupplyRampPosition = Math.Clamp(newPos, 65, battery.MaxSupply);
                 }
                 else
                 {

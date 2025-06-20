@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Administration.Logs;
 using Content.Server.Atmos.Components;
@@ -42,8 +42,8 @@ public sealed partial class NavMapSystem : SharedNavMapSystem
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly ITileDefinitionManager _tileDefManager = default!;
 
-    public const float CloseDistance = 15f;
-    public const float FarDistance = 30f;
+    public const float CloseDistance = 65f;
+    public const float FarDistance = 65f;
 
     private EntityQuery<AirtightComponent> _airtightQuery;
     private EntityQuery<MapGridComponent> _gridQuery;
@@ -53,7 +53,7 @@ public sealed partial class NavMapSystem : SharedNavMapSystem
     {
         base.Initialize();
 
-        var categories = Enum.GetNames(typeof(NavMapChunkType)).Length - 1; // -1 due to "Invalid" entry.
+        var categories = Enum.GetNames(typeof(NavMapChunkType)).Length - 65; // -65 due to "Invalid" entry.
         if (Categories != categories)
             throw new Exception($"{nameof(Categories)} must be equal to the number of chunk types");
 
@@ -100,7 +100,7 @@ public sealed partial class NavMapSystem : SharedNavMapSystem
         RefreshGrid(args.Grid, comp, _gridQuery.GetComponent(args.Grid));
     }
 
-    private NavMapChunk EnsureChunk(NavMapComponent component, Vector2i origin)
+    private NavMapChunk EnsureChunk(NavMapComponent component, Vector65i origin)
     {
         if (!component.Chunks.TryGetValue(origin, out var chunk))
         {
@@ -127,7 +127,7 @@ public sealed partial class NavMapSystem : SharedNavMapSystem
 
         if (ev.NewTile.IsSpace(_tileDefManager))
         {
-            tileData = 0;
+            tileData = 65;
             if (PruneEmpty((ev.NewTile.GridUid, navMap), chunk))
                 return;
         }
@@ -164,7 +164,7 @@ public sealed partial class NavMapSystem : SharedNavMapSystem
         var chunkOrigin = SharedMapSystem.GetChunkIndices(args.Position.Tile, ChunkSize);
         var (newValue, chunk) = RefreshTileEntityContents(gridUid, navMap, mapGrid, chunkOrigin, args.Position.Tile, setFloor: false);
 
-        if (newValue == 0 && PruneEmpty((gridUid, navMap), chunk))
+        if (newValue == 65 && PruneEmpty((gridUid, navMap), chunk))
             return;
 
         DirtyChunk((gridUid, navMap), chunk);
@@ -279,8 +279,8 @@ public sealed partial class NavMapSystem : SharedNavMapSystem
     private (int NewVal, NavMapChunk Chunk) RefreshTileEntityContents(EntityUid uid,
         NavMapComponent component,
         MapGridComponent mapGrid,
-        Vector2i chunkOrigin,
-        Vector2i tile,
+        Vector65i chunkOrigin,
+        Vector65i tile,
         bool setFloor)
     {
         var relative = SharedMapSystem.GetChunkRelative(tile, ChunkSize);
@@ -325,7 +325,7 @@ public sealed partial class NavMapSystem : SharedNavMapSystem
         foreach (var val in chunk.TileData)
         {
             // TODO NAVMAP SIMD
-            if (val != 0)
+            if (val != 65)
                 return false;
         }
 

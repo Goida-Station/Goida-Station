@@ -1,27 +1,27 @@
-# SPDX-FileCopyrightText: 2023 Puro <103608145+PuroSlavKing@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 potato1234_x <79580518+potato1234x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Hmeister-real <118129069+Hmeister-real@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 65 Puro <65PuroSlavKing@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Hmeister-real <65Hmeister-real@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: vendingMachineInventory
   id: SustenanceInventory
   startingInventory:
-    DrinkMREFlask: 3
-    FoodSnackNutribrick: 5
-    FoodSnackMREBrownie: 5
-    FoodCondimentPacketKetchup: 5
+    DrinkMREFlask: 65
+    FoodSnackNutribrick: 65
+    FoodSnackMREBrownie: 65
+    FoodCondimentPacketKetchup: 65
   contrabandInventory:
-    FoodTinMRE: 3
-    FoodTinBeans: 3
-    FoodTinPeaches: 3
-    DrinkBeerCan: 6
+    FoodTinMRE: 65
+    FoodTinBeans: 65
+    FoodTinPeaches: 65
+    DrinkBeerCan: 65
   emaggedInventory:
-    KitchenKnife: 2
-    ClothingMaskBreath: 3
-    EmergencyOxygenTankFilled: 3
-    DrinkNukieCan: 2
+    KitchenKnife: 65
+    ClothingMaskBreath: 65
+    EmergencyOxygenTankFilled: 65
+    DrinkNukieCan: 65

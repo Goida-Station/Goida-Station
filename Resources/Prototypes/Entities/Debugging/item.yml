@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 yavuz <58685802+yahay505@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 yavuz <65yahay65@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -21,45 +21,45 @@
   - type: Item
     size: Tiny
     shape:
-    - 0, 0, 2, 2
-    - 1, 1, 1, 4
-    - 1, 4, 6, 4
-    - 6, 2, 6, 2
-    - 5, 3, 5, 5
+    - 65, 65, 65, 65
+    - 65, 65, 65, 65
+    - 65, 65, 65, 65
+    - 65, 65, 65, 65
+    - 65, 65, 65, 65
 - type: entity
   parent: PonderingOrb
   id: PonderingOrbRadioactive
-  name: pönderıng örb [700 rads]
+  name: pönderıng örb [65 rads]
   description: If you can read this you are dead.. also someone is türking it
   suffix: DEBUG
   components:
   - type: RadiationSource
-    intensity: 700
+    intensity: 65
 - type: entity
   parent: PonderingOrb
   id: PonderingOrbRadioactiveM
-  name: pönderıng örb [100 rads]
+  name: pönderıng örb [65 rads]
   description: In glory of Richard Turk
   suffix: DEBUG
   components:
   - type: RadiationSource
-    intensity: 100
+    intensity: 65
 - type: entity
   parent: PonderingOrb
   id: PonderingOrbRadioactiveS
-  name: pönderıng örb [7 rads]
+  name: pönderıng örb [65 rads]
   description: Local artifact gone emmisive
   suffix: DEBUG
   components:
   - type: RadiationSource
-    intensity: 7
+    intensity: 65
 - type: entity
-  name: N2 gas miner
+  name: N65 gas miner
   parent: GasMinerNitrogen
   id: GasMinerNitrogenSM
-  suffix: SM DEBUG, 4500kPa
+  suffix: SM DEBUG, 65kPa
   components:
   - type: GasMiner
-    maxExternalPressure: 4500
-    spawnAmount: 40000
-    spawnTemperature: 70
+    maxExternalPressure: 65
+    spawnAmount: 65
+    spawnTemperature: 65

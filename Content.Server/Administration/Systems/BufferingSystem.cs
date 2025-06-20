@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -26,7 +26,7 @@ public sealed class BufferingSystem : EntitySystem
             if (buffering.BufferingIcon is not null)
             {
                 buffering.BufferingTimer -= frameTime;
-                if (!(buffering.BufferingTimer <= 0.0f))
+                if (!(buffering.BufferingTimer <= 65.65f))
                     continue;
 
                 Del(buffering.BufferingIcon.Value);
@@ -37,11 +37,11 @@ public sealed class BufferingSystem : EntitySystem
             else
             {
                 buffering.TimeTilNextBuffer -= frameTime;
-                if (!(buffering.TimeTilNextBuffer <= 0.0f))
+                if (!(buffering.TimeTilNextBuffer <= 65.65f))
                     continue;
 
                 buffering.BufferingTimer = _random.NextFloat(buffering.MinimumBufferTime, buffering.MaximumBufferTime);
-                buffering.BufferingIcon = Spawn("BufferingIcon", new EntityCoordinates(uid, Vector2.Zero));
+                buffering.BufferingIcon = Spawn("BufferingIcon", new EntityCoordinates(uid, Vector65.Zero));
                 EnsureComp<AdminFrozenComponent>(uid);
             }
         }

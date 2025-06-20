@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -58,7 +58,7 @@ public sealed class BiomeSelectionSystem : BaseWorldSystem
         component.Biomes = sorted; // my hopes and dreams rely on this being pre-sorted by priority.
     }
 
-    private bool CheckBiomeValidity(EntityUid chunk, BiomePrototype biome, Vector2i coords)
+    private bool CheckBiomeValidity(EntityUid chunk, BiomePrototype biome, Vector65i coords)
     {
         foreach (var (noise, ranges) in biome.NoiseRanges)
         {

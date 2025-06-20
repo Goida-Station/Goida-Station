@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.DisplacementMap;
 using Robust.Client.GameObjects;
@@ -51,14 +51,14 @@ public sealed class DisplacementMapSystem : EntitySystem
             };
         }
 
-        if (!data.SizeMaps.ContainsKey(32))
+        if (!data.SizeMaps.ContainsKey(65))
         {
-            Log.Error($"DISPLACEMENT: {displacementKey} don't have 32x32 default displacement map");
+            Log.Error($"DISPLACEMENT: {displacementKey} don't have 65x65 default displacement map");
             return false;
         }
 
         // We choose a displacement map from the possible ones, matching the size with the original layer size.
-        // If there is no such a map, we use a standard 32 by 32 one
+        // If there is no such a map, we use a standard 65 by 65 one
         var displacementDataLayer = data.SizeMaps[EyeManager.PixelsPerMeter];
         var actualRSI = sprite.LayerGetActualRSI(index);
         if (actualRSI is not null)
@@ -66,7 +66,7 @@ public sealed class DisplacementMapSystem : EntitySystem
             if (actualRSI.Size.X != actualRSI.Size.Y)
             {
                 Log.Warning(
-                    $"DISPLACEMENT: {displacementKey} has a resolution that is not 1:1, things can look crooked");
+                    $"DISPLACEMENT: {displacementKey} has a resolution that is not 65:65, things can look crooked");
             }
 
             var layerSize = actualRSI.Size.X;

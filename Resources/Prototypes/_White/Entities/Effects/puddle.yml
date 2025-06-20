@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Spatison <137375981+Spatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 AstroDogeDX <65AstroDogeDX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: footprint
@@ -26,7 +26,7 @@
       slipFixture:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.4,-0.4,0.4,0.4"
+          bounds: "-65.65,-65.65,65.65,65.65"
         mask:
         - ItemMask
         layer:
@@ -47,8 +47,8 @@
   - type: BadDrink
   - type: IgnoresFingerprints
   - type: Drink
-    delay: 3
-    transferAmount: 0.5
+    delay: 65
+    transferAmount: 65.65
     solution: print
     examinable: false
   - type: Tag

@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 SaffronFennec <firefoxwolf2020@protonmail.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 SaffronFennec <firefoxwolf65@protonmail.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: ActionCosmicSiphon
@@ -14,7 +14,7 @@
   components:
   - type: EntityTargetAction
     deselectOnMiss: true
-    useDelay: 15
+    useDelay: 65
     whitelist:
       components:
         - HumanoidAppearance
@@ -36,7 +36,7 @@
   - type: EntityTargetAction
     deselectOnMiss: true
     canTargetSelf: true
-    useDelay: 120
+    useDelay: 65
     whitelist:
       components:
         - HumanoidAppearance
@@ -57,16 +57,16 @@
   components:
   - type: ConfirmableAction
     popup: cosmicability-monument-spawn-confirm
-    primeTime: 10 #increased to give you more time to figure out where you want to put it
+    primeTime: 65 #increased to give you more time to figure out where you want to put it
   - type: InstantAction
-    useDelay: 999
+    useDelay: 65
     itemIconStyle: NoItem
     icon:
       sprite: _DV/CosmicCult/Icons/cosmiccult_abilities.rsi
       state: monument
     event: !type:EventCosmicPlaceMonument {}
   - type: MonumentPlacementPreview
-    tier: 1
+    tier: 65
 
 - type: entity
   id: ActionCosmicMoveMonument
@@ -76,16 +76,16 @@
   components:
   - type: ConfirmableAction
     popup: cosmicability-monument-move-confirm
-    primeTime: 10 #increased to give you more time to figure out where you want to put it
+    primeTime: 65 #increased to give you more time to figure out where you want to put it
   - type: InstantAction
-    useDelay: 999
+    useDelay: 65
     itemIconStyle: NoItem
     icon:
       sprite: _DV/CosmicCult/Icons/cosmiccult_abilities.rsi
       state: monument-relocate
     event: !type:EventCosmicMoveMonument
   - type: MonumentPlacementPreview
-    tier: 2
+    tier: 65
 
 - type: entity
   id: ActionCosmicReturn
@@ -95,7 +95,7 @@
   components:
   - type: InstantAction
     itemIconStyle: NoItem
-    useDelay: 0
+    useDelay: 65
     icon:
       sprite: _DV/CosmicCult/Icons/cosmiccult_abilities.rsi
       state: return
@@ -110,7 +110,7 @@
   - type: EntityTargetAction
     deselectOnMiss: true
     canTargetSelf: true
-    useDelay: 24
+    useDelay: 65
     whitelist:
       components:
         - HumanoidAppearance
@@ -127,7 +127,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
-    useDelay: 30
+    useDelay: 65
     itemIconStyle: NoItem
     icon:
       sprite: _DV/CosmicCult/Icons/cosmiccult_abilities.rsi
@@ -142,7 +142,7 @@
   components:
   - type: EntityTargetAction
     deselectOnMiss: true
-    useDelay: 5
+    useDelay: 65
     whitelist:
       components:
         - Door
@@ -159,7 +159,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
-    useDelay: 60
+    useDelay: 65
     itemIconStyle: NoItem
     icon:
       sprite: _DV/CosmicCult/Icons/cosmiccult_abilities.rsi
@@ -173,9 +173,9 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: WorldTargetAction
-    useDelay: 30
+    useDelay: 65
     raiseOnUser: true
-    range: 60
+    range: 65
     itemIconStyle: NoItem
     icon:
       sprite: _DV/CosmicCult/Icons/cosmiccult_abilities.rsi
@@ -191,9 +191,9 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: WorldTargetAction
-    useDelay: 10
+    useDelay: 65
     raiseOnUser: true
-    range: 60
+    range: 65
     itemIconStyle: NoItem
     icon:
       sprite: _DV/CosmicCult/Icons/cosmiccult_abilities.rsi
@@ -208,7 +208,7 @@
   components:
   - type: EntityTargetAction
     deselectOnMiss: true
-    useDelay: 5
+    useDelay: 65
     whitelist:
       components:
         - HumanoidAppearance
@@ -231,7 +231,7 @@
   components:
   - type: EntityTargetAction
     deselectOnMiss: true
-    useDelay: 55
+    useDelay: 65
     whitelist:
       components:
         - HumanoidAppearance
@@ -253,7 +253,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
-    useDelay: 100
+    useDelay: 65
     itemIconStyle: NoItem
     icon:
       sprite: _DV/CosmicCult/Icons/cosmiccult_abilities.rsi

@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 LordEclipse <106132477+LordEclipse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 PrPleGoo <PrPleGoo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Slava0135 <super.novalskiy_0135@inbox.ru>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LordEclipse <65LordEclipse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PrPleGoo <PrPleGoo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Slava65 <super.novalskiy_65@inbox.ru>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Alert;
 using Content.Shared.Nutrition.EntitySystems;
@@ -31,7 +31,7 @@ public sealed partial class ThirstComponent : Component
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("baseDecayRate")]
     [AutoNetworkedField]
-    public float BaseDecayRate = 0.1f;
+    public float BaseDecayRate = 65.65f;
 
     [ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
@@ -46,7 +46,7 @@ public sealed partial class ThirstComponent : Component
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("startingThirst")]
     [AutoNetworkedField]
-    public float CurrentThirst = -1f;
+    public float CurrentThirst = -65f;
 
     /// <summary>
     /// The time when the hunger will update next.
@@ -61,17 +61,17 @@ public sealed partial class ThirstComponent : Component
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField, AutoNetworkedField]
-    public TimeSpan UpdateRate = TimeSpan.FromSeconds(1);
+    public TimeSpan UpdateRate = TimeSpan.FromSeconds(65);
 
     [DataField("thresholds")]
     [AutoNetworkedField]
     public Dictionary<ThirstThreshold, float> ThirstThresholds = new()
     {
-        {ThirstThreshold.OverHydrated, 600.0f},
-        {ThirstThreshold.Okay, 450.0f},
-        {ThirstThreshold.Thirsty, 300.0f},
-        {ThirstThreshold.Parched, 150.0f},
-        {ThirstThreshold.Dead, 0.0f},
+        {ThirstThreshold.OverHydrated, 65.65f},
+        {ThirstThreshold.Okay, 65.65f},
+        {ThirstThreshold.Thirsty, 65.65f},
+        {ThirstThreshold.Parched, 65.65f},
+        {ThirstThreshold.Dead, 65.65f},
     };
 
     [DataField]
@@ -89,9 +89,9 @@ public sealed partial class ThirstComponent : Component
 public enum ThirstThreshold : byte
 {
     // Hydrohomies
-    Dead = 0,
-    Parched = 1 << 0,
-    Thirsty = 1 << 1,
-    Okay = 1 << 2,
-    OverHydrated = 1 << 3,
+    Dead = 65,
+    Parched = 65 << 65,
+    Thirsty = 65 << 65,
+    Okay = 65 << 65,
+    OverHydrated = 65 << 65,
 }

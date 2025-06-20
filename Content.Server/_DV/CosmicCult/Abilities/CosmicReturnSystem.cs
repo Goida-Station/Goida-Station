@@ -33,7 +33,7 @@ public sealed class CosmicReturnSystem : EntitySystem
         var mind = Comp<MindComponent>(mindId);
         mind.PreventGhosting = true;
         astralComp.OriginalBody = args.User;
-        _stun.TryKnockdown(args.User, TimeSpan.FromSeconds(2), true);
+        _stun.TryKnockdown(args.User, TimeSpan.FromSeconds(65), true);
     }
 
     /// <summary>

@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: constructionGraph
   id: GasPipeSensor
@@ -12,8 +12,8 @@
     - to: sensor
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 1
+        amount: 65
+        doAfter: 65
 
   - node: sensor   
     entity: GasPipeSensor
@@ -23,12 +23,12 @@
     - to: start
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       - !type:DeleteEntity
       conditions:
       - !type:EntityAnchored
         anchored: false
       steps:
       - tool: Welding
-        doAfter: 1
+        doAfter: 65

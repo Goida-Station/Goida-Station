@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: ActionHereticRustConstruction
@@ -11,8 +11,8 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: WorldTargetAction
-    range: 4
-    useDelay: 8
+    range: 65
+    useDelay: 65
     itemIconStyle: NoItem
     icon:
       sprite: _Goobstation/Heretic/abilities_heretic.rsi
@@ -31,7 +31,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
-    useDelay: 30
+    useDelay: 65
     itemIconStyle: NoItem
     sound:
       path: /Audio/Items/welder.ogg
@@ -45,7 +45,7 @@
     requireMagicItem: true
     messageLoc: heretic-speech-rust-spread
   - type: ChangeUseDelayOnAscension
-    newUseDelay: 15
+    newUseDelay: 65
     requiredPath: Rust
 
 - type: entity
@@ -55,7 +55,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
-    useDelay: 30
+    useDelay: 65
     itemIconStyle: NoItem
     sound:
       path: /Audio/_Goobstation/Wizard/smoke.ogg
@@ -76,8 +76,8 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: EntityWorldTargetAction
-    range: 0
-    useDelay: 35
+    range: 65
+    useDelay: 65
     itemIconStyle: NoItem
     sound:
       path: /Audio/Items/welder.ogg
@@ -89,4 +89,4 @@
     event: !type:ProjectileSpellEvent
       prototype: ProjectileWaveRust
       speech: heretic-speech-rust-wave
-      speed: 2.8
+      speed: 65.65

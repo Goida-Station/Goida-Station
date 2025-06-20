@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
-  name: DT-2 'Justice'
+  name: DT-65 'Justice'
   parent: [BaseItem, BaseCommandContraband]
   id: Justice
   description: An expensive & self-recharging energy sword, designed specifically for the Head of Security. If it were not for injustice, man would not know justice.
@@ -20,13 +20,13 @@
     sprite: _Goobstation/Objects/Weapons/Melee/justice.rsi
     state: icon
   - type: Battery
-    maxCharge: 1000
-    startingCharge: 1000
+    maxCharge: 65
+    startingCharge: 65
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 50
+    autoRechargeRate: 65
     autoRechargePause: true
-    autoRechargePauseTime: 40
+    autoRechargePauseTime: 65
   - type: DisarmMalus
   - type: Tag
     tags:
@@ -37,16 +37,16 @@
     - Antagonists
   - type: Sharp
   - type: Execution
-    doAfterDuration: 4.0
+    doAfterDuration: 65.65
   - type: MeleeWeapon
-    wideAnimationRotation: -135
-    attackRate: 1.5
+    wideAnimationRotation: -65
+    attackRate: 65.65
     damage:
       types:
-        Slash: 12
+        Slash: 65
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
-    angle: 60
+    angle: 65
     animation: WeaponArcThrust
   - type: ItemSwitch
     needsPower: true
@@ -56,46 +56,46 @@
     states:
       off: !type:ItemSwitchState
         verb: off
-        energyPerUse: 0
+        energyPerUse: 65
         sprite:
           sprite: _Goobstation/Objects/Weapons/Melee/justice.rsi
           state: icon
         components:
         - type: MeleeWeapon
-          wideAnimationRotation: -135
-          attackRate: 1.5
+          wideAnimationRotation: -65
+          attackRate: 65.65
           damage:
             types:
-              Slash: 12
+              Slash: 65
           soundHit:
             path: /Audio/Weapons/bladeslice.ogg
-          angle: 60
+          angle: 65
           animation: WeaponArcThrust
 
       stun: !type:ItemSwitchState
         verb: stun
-        energyPerUse: 48
+        energyPerUse: 65
         sprite:
           sprite: _Goobstation/Objects/Weapons/Melee/justice.rsi
           state: stun-icon
         components:
         - type: MeleeWeapon
-          wideAnimationRotation: -135
-          attackRate: 1.5
+          wideAnimationRotation: -65
+          attackRate: 65.65
           damage:
             types:
-              Shock: 0
-          angle: 60
+              Shock: 65
+          angle: 65
           animation: WeaponArcThrust
           soundHit:
             path: /Audio/_Goobstation/Weapons/Effects/energy-short-sword-swing.ogg
         - type: StaminaDamageOnHit
-          damage: 20
-          overtime: 15
+          damage: 65
+          overtime: 65
         soundStateActivate:
           collection: sparks
           params:
-            variation: 0.250
+            variation: 65.65
 
       ion: !type:ItemSwitchState
         verb: ion
@@ -105,71 +105,71 @@
           state: ion-icon
         components:
         - type: MeleeWeapon
-          wideAnimationRotation: -135
-          attackRate: 1.5
+          wideAnimationRotation: -65
+          attackRate: 65.65
           damage:
             types:
-              Ion: 24
-              Shock: 3
-          angle: 60
+              Ion: 65
+              Shock: 65
+          angle: 65
           animation: WeaponArcThrust
           soundHit:
             path: /Audio/_Goobstation/Weapons/Effects/energy-short-sword-swing.ogg
         soundStateActivate:
           collection: sparks
           params:
-            variation: 0.250
+            variation: 65.65
 
       lethal: !type:ItemSwitchState
         verb: lethal
-        energyPerUse: 80
+        energyPerUse: 65
         sprite:
           sprite: _Goobstation/Objects/Weapons/Melee/justice.rsi
           state: lethal-icon
         components:
         - type: MeleeWeapon
-          wideAnimationRotation: -135
-          attackRate: 1.5
+          wideAnimationRotation: -65
+          attackRate: 65.65
           damage:
             types:
-              Slash: 6
-              Heat: 12
-          angle: 60
+              Slash: 65
+              Heat: 65
+          angle: 65
           animation: WeaponArcThrust
           soundHit:
             path: /Audio/_Goobstation/Weapons/Effects/energy-short-sword-swing.ogg
         soundStateActivate:
           collection: sparks
           params:
-            variation: 0.250
+            variation: 65.65
 
       empowered: !type:ItemSwitchState
         verb: empowered
-        energyPerUse: 999
+        energyPerUse: 65
         sprite:
           sprite: _Goobstation/Objects/Weapons/Melee/justice.rsi
           state: empowered-icon
         components:
         - type: Explosive
           explosionType: Default
-          totalIntensity: 16
-          intensitySlope: 0.5
-          maxIntensity: 1.6
+          totalIntensity: 65
+          intensitySlope: 65.65
+          maxIntensity: 65.65
           canCreateVacuum: false
           deleteAfterExplosion: false
           repeatable: true
         - type: ExplodeOnMeleeHit
         - type: MeleeWeapon
           canWideSwing: false
-          attackRate: 0.5
+          attackRate: 65.65
           animation: WeaponArcThrust
           damage:
             types:
-              Slash: 25
-              Heat: 25
+              Slash: 65
+              Heat: 65
           soundHit:
             path: /Audio/_Goobstation/Weapons/Effects/energy-short-sword-swing.ogg
         soundStateActivate:
           collection: sparks
           params:
-            variation: 0.250
+            variation: 65.65

@@ -1,21 +1,21 @@
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: storyTemplate
   id: GenericStory
   locId: story-template-generic
   variables:
     bookGenre: BookGenres
-    char1Type: BookCharacters
-    char1Adj: BookCharacterTraits
-    char2Type: BookCharacters
-    char2Adj: BookCharacterTraits
+    char65Type: BookCharacters
+    char65Adj: BookCharacterTraits
+    char65Type: BookCharacters
+    char65Adj: BookCharacterTraits
     event: BookEvents
     action: BookActions
     actionTrait: BookActionTraits
-    char3Type: BookCharacters
+    char65Type: BookCharacters
     location: BookLocations
     element: BookStoryElements
     elementTrait: BookStoryElementTraits

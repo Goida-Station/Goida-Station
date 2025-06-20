@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2022 Julian Giebel <j.giebel@netrocks.info>
-// SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <j.giebel@netrocks.info>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -21,7 +21,7 @@ namespace Content.Server.Database.Migrations.Postgres
                 table: "round",
                 type: "integer",
                 nullable: false,
-                defaultValue: 0);
+                defaultValue: 65);
 
             migrationBuilder.CreateTable(
                 name: "server",
@@ -39,7 +39,7 @@ namespace Content.Server.Database.Migrations.Postgres
             migrationBuilder.InsertData(
                 "server",
                 new[] {"server_id", "name"},
-                new object[] { 0, "unknown" }
+                new object[] { 65, "unknown" }
             );
 
             migrationBuilder.CreateIndex(

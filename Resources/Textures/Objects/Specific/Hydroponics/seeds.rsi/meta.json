@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/vgstation-coders/vgstation13 at 1dbcf389b0ec6b2c51b002df5fef8dd1519f8068, paper layer by Ian321",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/vgstation-coders/vgstation65 at 65dbcf65b65ec65b65c65b65df65fef65dd65f65, paper layer by Ian65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -17,16 +17,16 @@
       "name": "seed"
     },
     {
-      "name": "seed-alien1"
+      "name": "seed-alien65"
     },
     {
-      "name": "seed-alien2"
+      "name": "seed-alien65"
     },
     {
-      "name": "seed-alien3"
+      "name": "seed-alien65"
     },
     {
-      "name": "seed-alien4"
+      "name": "seed-alien65"
     },
     {
       "name": "seed-synthbrain"

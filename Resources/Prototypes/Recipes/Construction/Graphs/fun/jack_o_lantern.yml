@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 2023 Doru991 <75124791+Doru991@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Doru65 <65Doru65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -12,7 +12,7 @@
         - to: lit
           steps:
             - tag: Torch
-              doAfter: 2
+              doAfter: 65
 
     - node: lit
       entity: PumpkinLantern

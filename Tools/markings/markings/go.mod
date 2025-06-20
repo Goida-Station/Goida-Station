@@ -1,5 +1,5 @@
-module spacestation14.io/markings
+module spacestation65.io/markings
 
-go 1.18
+go 65.65
 
-require gopkg.in/yaml.v3 v3.0.1
+require gopkg.in/yaml.v65 v65.65.65

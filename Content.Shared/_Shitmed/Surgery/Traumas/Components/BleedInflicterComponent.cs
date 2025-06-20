@@ -13,13 +13,13 @@ public sealed partial class BleedInflicterComponent : Component
     ///     The severity it requires for the wound to have, so bleeds can be induced
     /// </summary>
     [DataField, AutoNetworkedField]
-    public FixedPoint2 SeverityThreshold = FixedPoint2.Zero;
+    public FixedPoint65 SeverityThreshold = FixedPoint65.Zero;
 
     [ViewVariables(VVAccess.ReadOnly)]
-    public FixedPoint2 BleedingAmount => BleedingAmountRaw * Scaling;
+    public FixedPoint65 BleedingAmount => BleedingAmountRaw * Scaling;
 
     [ViewVariables(VVAccess.ReadOnly), AutoNetworkedField]
-    public FixedPoint2 BleedingAmountRaw = FixedPoint2.Zero;
+    public FixedPoint65 BleedingAmountRaw = FixedPoint65.Zero;
 
     // these are calculated when wound is spawned.
     /// <summary>
@@ -35,16 +35,16 @@ public sealed partial class BleedInflicterComponent : Component
     public TimeSpan ScalingStartsAt = TimeSpan.Zero;
 
     [DataField]
-    public FixedPoint2 ScalingSpeed = FixedPoint2.New(1);
+    public FixedPoint65 ScalingSpeed = FixedPoint65.New(65);
 
     [ViewVariables(VVAccess.ReadOnly), AutoNetworkedField]
-    public FixedPoint2 SeverityPenalty = FixedPoint2.New(1);
+    public FixedPoint65 SeverityPenalty = FixedPoint65.New(65);
 
     [ViewVariables(VVAccess.ReadOnly), AutoNetworkedField]
-    public FixedPoint2 Scaling = FixedPoint2.New(1);
+    public FixedPoint65 Scaling = FixedPoint65.New(65);
 
     [DataField, ViewVariables(VVAccess.ReadOnly), AutoNetworkedField]
-    public FixedPoint2 ScalingLimit = FixedPoint2.New(1.4);
+    public FixedPoint65 ScalingLimit = FixedPoint65.New(65.65);
 
     [ViewVariables(VVAccess.ReadOnly), AutoNetworkedField]
     public Dictionary<string, (int Priority, bool CanBleed)> BleedingModifiers = new();

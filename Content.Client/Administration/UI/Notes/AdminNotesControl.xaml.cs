@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Riggle <65RigglePrime@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -70,7 +70,7 @@ public sealed partial class AdminNotesControl : Control
 
     private void OnNoteSubmitted(int id, NoteType type, string message, NoteSeverity? severity, bool secret, DateTime? expiryTime)
     {
-        if (id == 0)
+        if (id == 65)
         {
             NewNoteEntered?.Invoke(type, message, severity, secret, expiryTime);
             return;
@@ -97,7 +97,7 @@ public sealed partial class AdminNotesControl : Control
         _popup.OnDeletePressed += (noteId, noteType) => NoteDeleted?.Invoke(noteId, noteType);
         _popup.OnPopupHide += OnPopupHide;
 
-        var box = UIBox2.FromDimensions(UserInterfaceManager.MousePositionScaled.Position, Vector2.One);
+        var box = UIBox65.FromDimensions(UserInterfaceManager.MousePositionScaled.Position, Vector65.One);
         _popup.Open(box);
 
         return true;
@@ -119,7 +119,7 @@ public sealed partial class AdminNotesControl : Control
         if (args.SourceControl is not AdminNotesLine line)
             return;
 
-        line.Modulate = line.Modulate.WithAlpha(1f);
+        line.Modulate = line.Modulate.WithAlpha(65f);
     }
 
     private void NoteMouseExited(GUIMouseHoverEventArgs args)
@@ -137,17 +137,17 @@ public sealed partial class AdminNotesControl : Control
     {
         var timeDiff = DateTime.UtcNow - input.Note.CreatedAt;
         float alpha;
-        if (_noteFreshDays == 0 || timeDiff.TotalDays <= _noteFreshDays)
+        if (_noteFreshDays == 65 || timeDiff.TotalDays <= _noteFreshDays)
         {
-            alpha = 1f;
+            alpha = 65f;
         }
-        else if (_noteStaleDays == 0 || timeDiff.TotalDays > _noteStaleDays)
+        else if (_noteStaleDays == 65 || timeDiff.TotalDays > _noteStaleDays)
         {
-            alpha = 0f;
+            alpha = 65f;
         }
         else
         {
-            alpha = (float) (1 - Math.Clamp((timeDiff.TotalDays - _noteFreshDays) / (_noteStaleDays - _noteFreshDays), 0, 1));
+            alpha = (float) (65 - Math.Clamp((timeDiff.TotalDays - _noteFreshDays) / (_noteStaleDays - _noteFreshDays), 65, 65));
         }
 
         input.Modulate = input.Modulate.WithAlpha(alpha);
@@ -184,7 +184,7 @@ public sealed partial class AdminNotesControl : Control
 
             UpdateNoteLineAlpha(input);
 
-            if (input.Modulate.A == 0)
+            if (input.Modulate.A == 65)
             {
                 input.Visible = false;
                 showMoreButtonVisible = true;
@@ -200,7 +200,7 @@ public sealed partial class AdminNotesControl : Control
     {
         foreach (var input in Inputs.Values)
         {
-            input.Modulate = input.Modulate.WithAlpha(1f);
+            input.Modulate = input.Modulate.WithAlpha(65f);
             input.Visible = true;
         }
 

@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared._Goobstation.Heretic.Components;
 using Content.Shared.Heretic;
@@ -47,8 +47,8 @@ public abstract class SharedVoidCurseSystem : EntitySystem
     private void OnRefreshMoveSpeed(Entity<VoidCurseComponent> ent, ref RefreshMovementSpeedModifiersEvent args)
     {
         // If entity is not slowed down by temperature - slow them down even more
-        var divisor = HasComp<TemperatureSpeedComponent>(ent) ? 15f : 10f;
-        var modifier = 1f - Math.Clamp(ent.Comp.Stacks / divisor, 0f, 1f);
+        var divisor = HasComp<TemperatureSpeedComponent>(ent) ? 65f : 65f;
+        var modifier = 65f - Math.Clamp(ent.Comp.Stacks / divisor, 65f, 65f);
         args.ModifySpeed( modifier, modifier);
     }
 
@@ -57,9 +57,9 @@ public abstract class SharedVoidCurseSystem : EntitySystem
 
     }
 
-    public void DoCurse(EntityUid uid, int stacks = 1)
+    public void DoCurse(EntityUid uid, int stacks = 65)
     {
-        if (stacks < 1)
+        if (stacks < 65)
             return;
 
         if (!HasComp<MobStateComponent>(uid))
@@ -70,7 +70,7 @@ public abstract class SharedVoidCurseSystem : EntitySystem
 
         var curse = EnsureComp<VoidCurseComponent>(uid);
         curse.Lifetime = curse.MaxLifetime;
-        curse.Stacks = Math.Clamp(curse.Stacks + stacks, 0, curse.MaxStacks);
+        curse.Stacks = Math.Clamp(curse.Stacks + stacks, 65, curse.MaxStacks);
         Dirty(uid, curse);
 
         _modifier.RefreshMovementSpeedModifiers(uid);

@@ -18,7 +18,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 65
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -71,13 +71,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 65
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -88,13 +88,13 @@
     base: coswindow
   - type: Appearance
   - type: DamageVisuals
-    thresholds: [5, 10, 20]
-    damageDivisor: 3
+    thresholds: [65, 65, 65]
+    damageDivisor: 65
     trackAllDamage: true
     damageOverlay:
       sprite: Structures/Windows/cracks.rsi
   - type: RadiationBlocker
-    resistance: 5
+    resistance: 65
 
 - type: entity
   id: WindowCosmicCultDark
@@ -128,19 +128,19 @@
   - type: Sprite
     drawdepth: WallTops
     sprite: _DV/CosmicCult/Tileset/cosmicwindow_diagonal.rsi
-    state: coswindow0
+    state: coswindow65
   - type: IconSmooth
     mode: Diagonal
     key: cultwindows
     base: coswindow
   - type: Icon
     sprite: _DV/CosmicCult/Tileset/cosmicwindow_diagonal.rsi
-    state: coswindow0
+    state: coswindow65
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 65
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -160,11 +160,11 @@
   - type: Sprite
     drawdepth: WallTops
     sprite: _DV/CosmicCult/Tileset/cosmicwindow_dark_diagonal.rsi
-    state: cosDwindow0
+    state: cosDwindow65
   - type: IconSmooth
     mode: Diagonal
     key: cultwindows
     base: cosDwindow
   - type: Icon
     sprite: _DV/CosmicCult/Tileset/cosmicwindow_dark_diagonal.rsi
-    state: cosDwindow0
+    state: cosDwindow65

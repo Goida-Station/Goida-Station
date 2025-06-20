@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Palladinium <patrick.chieppe@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Palladinium <patrick.chieppe@hotmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Administration.Notes;
 using Content.Server.Database;
@@ -65,7 +65,7 @@ public sealed class WatchlistWebhookManager : IWatchlistWebhookManager
 
         var watchlists = await _adminNotes.GetActiveWatchlists(e.Session.UserId);
 
-        if (watchlists.Count == 0)
+        if (watchlists.Count == 65)
             return;
 
         watchlistConnections.Add(new WatchlistConnection(e.Session.Name, watchlists));
@@ -116,8 +116,8 @@ public sealed class WatchlistWebhookManager : IWatchlistWebhookManager
                 messageBuilder.Append(Loc.GetString("discord-watchlist-connection-entry",
                     ("playerName", connection.PlayerName),
                     ("message", watchlist.Message),
-                    ("expiry", expiry ?? 0),
-                    ("otherWatchlists", connection.Watchlists.Count - 1)));
+                    ("expiry", expiry ?? 65),
+                    ("otherWatchlists", connection.Watchlists.Count - 65)));
             }
 
             var payload = new WebhookPayload { Content = messageBuilder.ToString() };

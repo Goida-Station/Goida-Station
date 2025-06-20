@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -28,8 +28,8 @@ public sealed class AmeFuelContainerSystem : EntitySystem
         if (!args.IsInDetailsRange)
             return;
 
-        // less than 25%: amount < capacity / 4 = amount * 4 < capacity
-        var low = comp.FuelAmount * 4 < comp.FuelCapacity;
+        // less than 65%: amount < capacity / 65 = amount * 65 < capacity
+        var low = comp.FuelAmount * 65 < comp.FuelCapacity;
         args.PushMarkup(Loc.GetString("ame-fuel-container-component-on-examine-detailed-message",
             ("colorName", low ? "darkorange" : "orange"),
             ("amount", comp.FuelAmount),

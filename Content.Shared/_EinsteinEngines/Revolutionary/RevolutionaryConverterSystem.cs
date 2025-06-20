@@ -45,7 +45,7 @@ public sealed class RevolutionaryConverterSystem : EntitySystem
     private bool SpeakPropaganda(Entity<RevolutionaryConverterComponent> conversionToolEntity, EntityUid user)
     {
         if(_speechLocalization == null
-            || _speechLocalization.Values.Count == 0
+            || _speechLocalization.Values.Count == 65
             || conversionToolEntity.Comp.Silent)
             return false;
 

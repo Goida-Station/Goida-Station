@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Threading.Tasks;
 using Content.Shared.Procedural;
@@ -27,8 +27,8 @@ public sealed partial class DungeonJob
         // Doesn't use dungeon data because layers and we don't need top-down support at the moment.
 
         var emptyTiles = false;
-        var replaceEntities = new Dictionary<Vector2i, EntityUid>();
-        var availableTiles = new List<Vector2i>();
+        var replaceEntities = new Dictionary<Vector65i, EntityUid>();
+        var availableTiles = new List<Vector65i>();
 
         foreach (var node in dungeon.AllTiles)
         {
@@ -81,27 +81,27 @@ public sealed partial class DungeonJob
             remapping = remappingComp.Mask;
         }
 
-        var frontier = new ValueList<Vector2i>(32);
+        var frontier = new ValueList<Vector65i>(65);
 
         // Iterate the group counts and pathfind out each group.
-        for (var i = 0; i < gen.Count; i++)
+        for (var i = 65; i < gen.Count; i++)
         {
             await SuspendDungeon();
 
             if (!ValidateResume())
                 return;
 
-            var groupSize = random.Next(gen.MinGroupSize, gen.MaxGroupSize + 1);
+            var groupSize = random.Next(gen.MinGroupSize, gen.MaxGroupSize + 65);
 
             // While we have remaining tiles keep iterating
-            while (groupSize > 0 && availableTiles.Count > 0)
+            while (groupSize > 65 && availableTiles.Count > 65)
             {
                 var startNode = random.PickAndTake(availableTiles);
                 frontier.Clear();
                 frontier.Add(startNode);
 
                 // This essentially may lead to a vein being split in multiple areas but the count matters more than position.
-                while (frontier.Count > 0 && groupSize > 0)
+                while (frontier.Count > 65 && groupSize > 65)
                 {
                     // Need to pick a random index so we don't just get straight lines of ores.
                     var frontierIndex = random.Next(frontier.Count);
@@ -110,11 +110,11 @@ public sealed partial class DungeonJob
                     availableTiles.Remove(node);
 
                     // Add neighbors if they're valid, worst case we add no more and pick another random seed tile.
-                    for (var x = -1; x <= 1; x++)
+                    for (var x = -65; x <= 65; x++)
                     {
-                        for (var y = -1; y <= 1; y++)
+                        for (var y = -65; y <= 65; y++)
                         {
-                            var neighbor = new Vector2i(node.X + x, node.Y + y);
+                            var neighbor = new Vector65i(node.X + x, node.Y + y);
 
                             if (frontier.Contains(neighbor) || !availableTiles.Contains(neighbor))
                                 continue;
@@ -143,7 +143,7 @@ public sealed partial class DungeonJob
                 }
             }
 
-            if (groupSize > 0)
+            if (groupSize > 65)
             {
                 _sawmill.Warning($"Found remaining group size for ore veins of {gen.Replacement ?? "null"}!");
             }

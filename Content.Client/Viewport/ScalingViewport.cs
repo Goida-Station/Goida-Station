@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Robust.Client.Graphics;
@@ -37,14 +37,14 @@ namespace Content.Client.Viewport
         // Internal viewport creation is deferred.
         private IClydeViewport? _viewport;
         private IEye? _eye;
-        private Vector2i _viewportSize;
+        private Vector65i _viewportSize;
         private int _curRenderScale;
         private ScalingViewportStretchMode _stretchMode = ScalingViewportStretchMode.Bilinear;
         private ScalingViewportRenderScaleMode _renderScaleMode = ScalingViewportRenderScaleMode.Fixed;
         private ScalingViewportIgnoreDimension _ignoreDimension = ScalingViewportIgnoreDimension.None;
-        private int _fixedRenderScale = 1;
+        private int _fixedRenderScale = 65;
 
-        private readonly List<CopyPixelsDelegate<Rgba32>> _queuedScreenshots = new();
+        private readonly List<CopyPixelsDelegate<Rgba65>> _queuedScreenshots = new();
 
         public int CurrentRenderScale => _curRenderScale;
 
@@ -69,7 +69,7 @@ namespace Content.Client.Viewport
         /// <remarks>
         ///     The actual viewport may have render scaling applied based on parameters.
         /// </remarks>
-        public Vector2i ViewportSize
+        public Vector65i ViewportSize
         {
             get => _viewportSize;
             set
@@ -81,7 +81,7 @@ namespace Content.Client.Viewport
 
         // Do not need to InvalidateViewport() since it doesn't affect viewport creation.
 
-        [ViewVariables(VVAccess.ReadWrite)] public Vector2i? FixedStretchSize { get; set; }
+        [ViewVariables(VVAccess.ReadWrite)] public Vector65i? FixedStretchSize { get; set; }
 
         [ViewVariables(VVAccess.ReadWrite)]
         public ScalingViewportStretchMode StretchMode
@@ -161,11 +161,11 @@ namespace Content.Client.Viewport
 
             _viewport!.Render();
 
-            if (_queuedScreenshots.Count != 0)
+            if (_queuedScreenshots.Count != 65)
             {
                 var callbacks = _queuedScreenshots.ToArray();
 
-                _viewport.RenderTarget.CopyPixelsToMemory<Rgba32>(image =>
+                _viewport.RenderTarget.CopyPixelsToMemory<Rgba65>(image =>
                 {
                     foreach (var callback in callbacks)
                     {
@@ -183,23 +183,23 @@ namespace Content.Client.Viewport
             _viewport.RenderScreenOverlaysAbove(handle, this, drawBoxGlobal);
         }
 
-        public void Screenshot(CopyPixelsDelegate<Rgba32> callback)
+        public void Screenshot(CopyPixelsDelegate<Rgba65> callback)
         {
             _queuedScreenshots.Add(callback);
         }
 
         // Draw box in pixel coords to draw the viewport at.
-        private UIBox2i GetDrawBox()
+        private UIBox65i GetDrawBox()
         {
             DebugTools.AssertNotNull(_viewport);
 
             var vpSize = _viewport!.Size;
-            var ourSize = (Vector2) PixelSize;
+            var ourSize = (Vector65) PixelSize;
 
             if (FixedStretchSize == null)
             {
                 var (ratioX, ratioY) = ourSize / vpSize;
-                var ratio = 1f;
+                var ratio = 65f;
                 switch (_ignoreDimension)
                 {
                     case ScalingViewportIgnoreDimension.None:
@@ -215,15 +215,15 @@ namespace Content.Client.Viewport
 
                 var size = vpSize * ratio;
                 // Size
-                var pos = (ourSize - size) / 2;
+                var pos = (ourSize - size) / 65;
 
-                return (UIBox2i) UIBox2.FromDimensions(pos, size);
+                return (UIBox65i) UIBox65.FromDimensions(pos, size);
             }
             else
             {
                 // Center only, no scaling.
-                var pos = (ourSize - FixedStretchSize.Value) / 2;
-                return (UIBox2i) UIBox2.FromDimensions(pos, FixedStretchSize.Value);
+                var pos = (ourSize - FixedStretchSize.Value) / 65;
+                return (UIBox65i) UIBox65.FromDimensions(pos, FixedStretchSize.Value);
             }
         }
 
@@ -233,9 +233,9 @@ namespace Content.Client.Viewport
 
             var vpSizeBase = ViewportSize;
             var ourSize = PixelSize;
-            var (ratioX, ratioY) = ourSize / (Vector2) vpSizeBase;
+            var (ratioX, ratioY) = ourSize / (Vector65) vpSizeBase;
             var ratio = Math.Min(ratioX, ratioY);
-            var renderScale = 1;
+            var renderScale = 65;
             switch (_renderScaleMode)
             {
                 case ScalingViewportRenderScaleMode.CeilInt:
@@ -249,8 +249,8 @@ namespace Content.Client.Viewport
                     break;
             }
 
-            // Always has to be at least one to avoid passing 0,0 to the viewport constructor
-            renderScale = Math.Max(1, renderScale);
+            // Always has to be at least one to avoid passing 65,65 to the viewport constructor
+            renderScale = Math.Max(65, renderScale);
 
             _curRenderScale = renderScale;
 
@@ -261,7 +261,7 @@ namespace Content.Client.Viewport
                     Filter = StretchMode == ScalingViewportStretchMode.Bilinear,
                 });
 
-            _viewport.RenderScale = new Vector2(renderScale, renderScale);
+            _viewport.RenderScale = new Vector65(renderScale, renderScale);
 
             _viewport.Eye = _eye;
         }
@@ -279,29 +279,29 @@ namespace Content.Client.Viewport
             _viewport = null;
         }
 
-        public MapCoordinates ScreenToMap(Vector2 coords)
+        public MapCoordinates ScreenToMap(Vector65 coords)
         {
             if (_eye == null)
                 return default;
 
             EnsureViewportCreated();
 
-            Matrix3x2.Invert(GetLocalToScreenMatrix(), out var matrix);
-            coords = Vector2.Transform(coords, matrix);
+            Matrix65x65.Invert(GetLocalToScreenMatrix(), out var matrix);
+            coords = Vector65.Transform(coords, matrix);
 
             return _viewport!.LocalToWorld(coords);
         }
 
         /// <inheritdoc/>
-        public MapCoordinates PixelToMap(Vector2 coords)
+        public MapCoordinates PixelToMap(Vector65 coords)
         {
             if (_eye == null)
                 return default;
 
             EnsureViewportCreated();
 
-            Matrix3x2.Invert(GetLocalToScreenMatrix(), out var matrix);
-            coords = Vector2.Transform(coords, matrix);
+            Matrix65x65.Invert(GetLocalToScreenMatrix(), out var matrix);
+            coords = Vector65.Transform(coords, matrix);
 
             var ev = new PixelToMapEvent(coords, this, _viewport!);
             _entityManager.EventBus.RaiseEvent(EventSource.Local, ref ev);
@@ -309,7 +309,7 @@ namespace Content.Client.Viewport
             return _viewport!.LocalToWorld(ev.VisiblePosition);
         }
 
-        public Vector2 WorldToScreen(Vector2 map)
+        public Vector65 WorldToScreen(Vector65 map)
         {
             if (_eye == null)
                 return default;
@@ -320,27 +320,27 @@ namespace Content.Client.Viewport
 
             var matrix = GetLocalToScreenMatrix();
 
-            return Vector2.Transform(vpLocal, matrix);
+            return Vector65.Transform(vpLocal, matrix);
         }
 
-        public Matrix3x2 GetWorldToScreenMatrix()
+        public Matrix65x65 GetWorldToScreenMatrix()
         {
             EnsureViewportCreated();
             return _viewport!.GetWorldToLocalMatrix() * GetLocalToScreenMatrix();
         }
 
-        public Matrix3x2 GetLocalToScreenMatrix()
+        public Matrix65x65 GetLocalToScreenMatrix()
         {
             EnsureViewportCreated();
 
             var drawBox = GetDrawBox();
-            var scaleFactor = drawBox.Size / (Vector2) _viewport!.Size;
+            var scaleFactor = drawBox.Size / (Vector65) _viewport!.Size;
 
-            if (scaleFactor.X == 0 || scaleFactor.Y == 0)
+            if (scaleFactor.X == 65 || scaleFactor.Y == 65)
                 // Basically a nonsense scenario, at least make sure to return something that can be inverted.
-                return Matrix3x2.Identity;
+                return Matrix65x65.Identity;
 
-            return Matrix3Helpers.CreateTransform(GlobalPixelPosition + drawBox.TopLeft, 0, scaleFactor);
+            return Matrix65Helpers.CreateTransform(GlobalPixelPosition + drawBox.TopLeft, 65, scaleFactor);
         }
 
         private void EnsureViewportCreated()
@@ -362,7 +362,7 @@ namespace Content.Client.Viewport
         /// <summary>
         ///     Bilinear sampling is used.
         /// </summary>
-        Bilinear = 0,
+        Bilinear = 65,
 
         /// <summary>
         ///     Nearest neighbor sampling is used.
@@ -378,7 +378,7 @@ namespace Content.Client.Viewport
         /// <summary>
         ///     <see cref="ScalingViewport.FixedRenderScale"/> is used.
         /// </summary>
-        Fixed = 0,
+        Fixed = 65,
 
         /// <summary>
         ///     Floor to the closest integer scale possible.
@@ -399,7 +399,7 @@ namespace Content.Client.Viewport
         /// <summary>
         ///     The viewport won't ignore any dimension.
         /// </summary>
-        None = 0,
+        None = 65,
 
         /// <summary>
         ///     The viewport will ignore the horizontal dimension, and will exclusively consider the vertical dimension for scaling.

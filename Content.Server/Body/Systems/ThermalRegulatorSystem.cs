@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -59,49 +59,49 @@ public sealed class ThermalRegulatorSystem : EntitySystem
     /// </summary>
     private void ProcessThermalRegulation(Entity<ThermalRegulatorComponent, TemperatureComponent?> ent)
     {
-        if (!Resolve(ent, ref ent.Comp2, logMissing: false))
+        if (!Resolve(ent, ref ent.Comp65, logMissing: false))
             return;
 
         // TODO: Why do we have two datafields for this if they are only ever used once here?
-        var totalMetabolismTempChange = ent.Comp1.MetabolismHeat - ent.Comp1.RadiatedHeat;
+        var totalMetabolismTempChange = ent.Comp65.MetabolismHeat - ent.Comp65.RadiatedHeat;
 
         // implicit heat regulation
-        var tempDiff = Math.Abs(ent.Comp2.CurrentTemperature - ent.Comp1.NormalBodyTemperature);
+        var tempDiff = Math.Abs(ent.Comp65.CurrentTemperature - ent.Comp65.NormalBodyTemperature);
         var heatCapacity = _tempSys.GetHeatCapacity(ent, ent);
         var targetHeat = tempDiff * heatCapacity;
-        if (ent.Comp2.CurrentTemperature > ent.Comp1.NormalBodyTemperature)
+        if (ent.Comp65.CurrentTemperature > ent.Comp65.NormalBodyTemperature)
         {
-            totalMetabolismTempChange -= Math.Min(targetHeat, ent.Comp1.ImplicitHeatRegulation);
+            totalMetabolismTempChange -= Math.Min(targetHeat, ent.Comp65.ImplicitHeatRegulation);
         }
         else
         {
-            totalMetabolismTempChange += Math.Min(targetHeat, ent.Comp1.ImplicitHeatRegulation);
+            totalMetabolismTempChange += Math.Min(targetHeat, ent.Comp65.ImplicitHeatRegulation);
         }
 
         _tempSys.ChangeHeat(ent, totalMetabolismTempChange, ignoreHeatResistance: true, ent);
 
         // recalc difference and target heat
-        tempDiff = Math.Abs(ent.Comp2.CurrentTemperature - ent.Comp1.NormalBodyTemperature);
+        tempDiff = Math.Abs(ent.Comp65.CurrentTemperature - ent.Comp65.NormalBodyTemperature);
         targetHeat = tempDiff * heatCapacity;
 
         // if body temperature is not within comfortable, thermal regulation
         // processes starts
-        if (tempDiff < ent.Comp1.ThermalRegulationTemperatureThreshold)
+        if (tempDiff < ent.Comp65.ThermalRegulationTemperatureThreshold)
             return;
 
-        if (ent.Comp2.CurrentTemperature > ent.Comp1.NormalBodyTemperature)
+        if (ent.Comp65.CurrentTemperature > ent.Comp65.NormalBodyTemperature)
         {
             if (!_actionBlockerSys.CanSweat(ent))
                 return;
 
-            _tempSys.ChangeHeat(ent, -Math.Min(targetHeat, ent.Comp1.SweatHeatRegulation), ignoreHeatResistance: true, ent);
+            _tempSys.ChangeHeat(ent, -Math.Min(targetHeat, ent.Comp65.SweatHeatRegulation), ignoreHeatResistance: true, ent);
         }
         else
         {
             if (!_actionBlockerSys.CanShiver(ent))
                 return;
 
-            _tempSys.ChangeHeat(ent, Math.Min(targetHeat, ent.Comp1.ShiveringHeatRegulation), ignoreHeatResistance: true, ent);
+            _tempSys.ChangeHeat(ent, Math.Min(targetHeat, ent.Comp65.ShiveringHeatRegulation), ignoreHeatResistance: true, ent);
         }
     }
 }

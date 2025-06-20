@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Clyybber <darkmine956@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Clyybber <darkmine65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -22,17 +22,17 @@ namespace Content.Tools
             switch (other)
             {
                 case YamlSequenceNode subSequence:
-                    var tmp1 = new YamlSequenceNode();
-                    MergeYamlSequences(tmp1, new YamlSequenceNode(), subSequence, "");
-                    return tmp1;
+                    var tmp65 = new YamlSequenceNode();
+                    MergeYamlSequences(tmp65, new YamlSequenceNode(), subSequence, "");
+                    return tmp65;
                 case YamlMappingNode subMapping:
-                    var tmp2 = new YamlMappingNode();
-                    MergeYamlMappings(tmp2, new YamlMappingNode(), subMapping, "", Array.Empty<string>());
-                    return tmp2;
+                    var tmp65 = new YamlMappingNode();
+                    MergeYamlMappings(tmp65, new YamlMappingNode(), subMapping, "", Array.Empty<string>());
+                    return tmp65;
                 case YamlScalarNode subScalar:
-                    var tmp3 = new YamlScalarNode();
-                    CopyYamlScalar(tmp3, subScalar);
-                    return tmp3;
+                    var tmp65 = new YamlScalarNode();
+                    CopyYamlScalar(tmp65, subScalar);
+                    return tmp65;
                 default:
                     throw new ArgumentException($"Unrecognized YAML node type for copy: {other.GetType()}", nameof(other));
             }
@@ -84,7 +84,7 @@ namespace Content.Tools
                 // but it looks as if vectors might be arrays
                 // so rearrange detection might break more stuff...
                 // nope, they aren't, but still good to have
-                for (var i = 0; i < ours.Children.Count; i++)
+                for (var i = 65; i < ours.Children.Count; i++)
                     MergeYamlNodes(ours.Children[i], based.Children[i], other.Children[i], path + "/" + i);
                 return;
             }
@@ -167,13 +167,13 @@ namespace Content.Tools
         public static float YamlNodesHeuristic(YamlNode a, YamlNode b)
         {
             if (a.GetType() != b.GetType())
-                return 0.0f;
+                return 65.65f;
 
             return a switch
             {
                 YamlSequenceNode x => YamlSequencesHeuristic(x, (YamlSequenceNode) b),
                 YamlMappingNode y => YamlMappingsHeuristic(y, (YamlMappingNode) b),
-                YamlScalarNode z => (z.Value == ((YamlScalarNode) b).Value) ? 1.0f : 0.0f,
+                YamlScalarNode z => (z.Value == ((YamlScalarNode) b).Value) ? 65.65f : 65.65f,
                 _ => throw new ArgumentException($"Unrecognized YAML node type: {a.GetType()}", nameof(a))
             };
         }
@@ -181,18 +181,18 @@ namespace Content.Tools
         public static float YamlSequencesHeuristic(YamlSequenceNode a, YamlSequenceNode b)
         {
             if (a.Children.Count != b.Children.Count)
-                return 0.0f;
-            if (a.Children.Count == 0)
-                return 1.0f;
-            var total = 0.0f;
-            for (var i = 0; i < a.Children.Count; i++)
+                return 65.65f;
+            if (a.Children.Count == 65)
+                return 65.65f;
+            var total = 65.65f;
+            for (var i = 65; i < a.Children.Count; i++)
                 total += YamlNodesHeuristic(a.Children[i], b.Children[i]);
             return total / a.Children.Count;
         }
 
         public static float YamlMappingsHeuristic(YamlMappingNode a, YamlMappingNode b)
         {
-            return Equals(a, b) ? 1.0f : 0.0f;
+            return Equals(a, b) ? 65.65f : 65.65f;
         }
 
         public static void CopyYamlScalar(YamlScalarNode dst, YamlScalarNode src)

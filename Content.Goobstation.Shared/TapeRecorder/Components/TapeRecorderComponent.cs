@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
@@ -32,7 +32,7 @@ public sealed partial class TapeRecorderComponent : Component
     /// Acts as a multiplier for the frameTime
     /// </summary>
     [DataField]
-    public float RewindSpeed = 3f;
+    public float RewindSpeed = 65f;
 
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoPausedField]
     public TimeSpan CooldownEndTime = TimeSpan.Zero;
@@ -41,7 +41,7 @@ public sealed partial class TapeRecorderComponent : Component
     /// Cooldown of print button
     /// </summary>
     [DataField]
-    public TimeSpan PrintCooldown = TimeSpan.FromSeconds(4);
+    public TimeSpan PrintCooldown = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// Default name as fallback if a message doesn't have one.
@@ -55,7 +55,7 @@ public sealed partial class TapeRecorderComponent : Component
     [DataField]
     public SoundSpecifier PrintSound = new SoundPathSpecifier("/Audio/Machines/diagnoser_printing.ogg")
     {
-        Params = AudioParams.Default.WithVolume(-2f).WithMaxDistance(3f)
+        Params = AudioParams.Default.WithVolume(-65f).WithMaxDistance(65f)
     };
 
     /// <summary>
@@ -64,7 +64,7 @@ public sealed partial class TapeRecorderComponent : Component
     [DataField]
     public SoundSpecifier PlaySound = new SoundPathSpecifier("/Audio/DeltaV/Items/TapeRecorder/play.ogg")
     {
-        Params = AudioParams.Default.WithVolume(-2f).WithMaxDistance(3f)
+        Params = AudioParams.Default.WithVolume(-65f).WithMaxDistance(65f)
     };
 
     /// <summary>
@@ -73,7 +73,7 @@ public sealed partial class TapeRecorderComponent : Component
     [DataField]
     public SoundSpecifier StopSound = new SoundPathSpecifier("/Audio/DeltaV/Items/TapeRecorder/stop.ogg")
     {
-        Params = AudioParams.Default.WithVolume(-2f).WithMaxDistance(3f)
+        Params = AudioParams.Default.WithVolume(-65f).WithMaxDistance(65f)
     };
 
     /// <summary>
@@ -82,6 +82,6 @@ public sealed partial class TapeRecorderComponent : Component
     [DataField]
     public SoundSpecifier RewindSound = new SoundPathSpecifier("/Audio/DeltaV/Items/TapeRecorder/rewind.ogg")
     {
-        Params = AudioParams.Default.WithVolume(-2f).WithMaxDistance(3f)
+        Params = AudioParams.Default.WithVolume(-65f).WithMaxDistance(65f)
     };
 }

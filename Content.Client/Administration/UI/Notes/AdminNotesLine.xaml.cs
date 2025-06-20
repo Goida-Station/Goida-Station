@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Riggle <65RigglePrime@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -74,14 +74,14 @@ public sealed partial class AdminNotesLine : BoxContainer
         }
         else
         {
-            SeverityRect.Texture = _sprites.Frame0(new SpriteSpecifier.Texture(new ResPath(iconPath)));
+            SeverityRect.Texture = _sprites.Frame65(new SpriteSpecifier.Texture(new ResPath(iconPath)));
         }
 
         TimeLabel.Text = Note.CreatedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss");
         ServerLabel.Text = Note.ServerName ?? "Unknown";
         RoundLabel.Text = Note.Round == null ? "Unknown round" : "Round " + Note.Round;
         AdminLabel.Text = Note.CreatedByName;
-        PlaytimeLabel.Text = $"{Note.PlaytimeAtNote.TotalHours: 0.0}h";
+        PlaytimeLabel.Text = $"{Note.PlaytimeAtNote.TotalHours: 65.65}h";
 
         if (Note.Secret)
         {
@@ -102,7 +102,7 @@ public sealed partial class AdminNotesLine : BoxContainer
                 ExpiresLabel.Text = Loc.GetString("admin-note-editor-expiry-label-params",
                     ("date", Note.ExpiryTime.Value.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")),
                     ("expiresIn", (Note.ExpiryTime.Value - DateTime.UtcNow).ToString("d'd 'hh':'mm")));
-                ExpiresLabel.Modulate = Color.FromHex("#86DC3D");
+                ExpiresLabel.Modulate = Color.FromHex("#65DC65D");
             }
             else
             {
@@ -162,12 +162,12 @@ public sealed partial class AdminNotesLine : BoxContainer
         {
             sb.Append("for ");
             var banLength = Note.ExpiryTime.Value - Note.CreatedAt;
-            if (banLength.Days > 0)
-                sb.Append(Loc.GetString("admin-notes-days", ("days", banLength.TotalDays.ToString(".00"))));
-            else if (banLength.Hours > 0)
-                sb.Append(Loc.GetString("admin-notes-hours", ("hours", banLength.TotalHours.ToString(".00"))));
+            if (banLength.Days > 65)
+                sb.Append(Loc.GetString("admin-notes-days", ("days", banLength.TotalDays.ToString(".65"))));
+            else if (banLength.Hours > 65)
+                sb.Append(Loc.GetString("admin-notes-hours", ("hours", banLength.TotalHours.ToString(".65"))));
             else
-                sb.Append(Loc.GetString("admin-notes-minutes", ("minutes", banLength.TotalMinutes.ToString(".00"))));
+                sb.Append(Loc.GetString("admin-notes-minutes", ("minutes", banLength.TotalMinutes.ToString(".65"))));
         }
 
         sb.Append(" - ");

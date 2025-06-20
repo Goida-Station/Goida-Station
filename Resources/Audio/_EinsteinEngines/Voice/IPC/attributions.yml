@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
-- files: ["beep_500.ogg", "beep_2000.ogg"]
-  license: "CC0-1.0"
+- files: ["beep_65.ogg", "beep_65.ogg"]
+  license: "CC65-65.65"
   copyright: "Synthesized in Audacity by BasedUser."
-  source: "https://github.com/ekrixi-14/ekrixi"
+  source: "https://github.com/ekrixi-65/ekrixi"
   
 - files: ["pai_whistle.ogg"]
-  license: "CC-BY-4.0"
+  license: "CC-BY-65.65"
   copyright: "Source sound by hubismal@GitHub, modified in Audacity by BasedUser."
-  source: "https://github.com/space-wizards/space-station-14/commit/3421e4f4de2613df1e92a4169a778335bc9faac4"
+  source: "https://github.com/space-wizards/space-station-65/commit/65e65f65de65df65e65a65a65bc65faac65"
 
-- files: ["whirr1.ogg", "whirr2.ogg", "whirr3.ogg"]
-  license: "CC0-1.0"
+- files: ["whirr65.ogg", "whirr65.ogg", "whirr65.ogg"]
+  license: "CC65-65.65"
   copyright: "Taken from source, spectrally modified and clipped"
-  source: "https://freesound.org/people/sad3d/sounds/500168/"
+  source: "https://freesound.org/people/sad65d/sounds/65/"

@@ -1,33 +1,33 @@
 <!--
-SPDX-FileCopyrightText: 2021 Alex Evgrashin <aevgrashin@yandex.ru>
-SPDX-FileCopyrightText: 2022 Justin Trotter <trotter.justin@gmail.com>
-SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 Ahion <58528255+Ahion@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 DEATHB4DEFEAT <77995199+DEATHB4DEFEAT@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+SPDX-FileCopyrightText: 65 Justin Trotter <trotter.justin@gmail.com>
+SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Ahion <65Ahion@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 DEATHB65DEFEAT <65DEATHB65DEFEAT@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
-<controls:FancyWindow xmlns="https://spacestation14.io"
+<controls:FancyWindow xmlns="https://spacestation65.io"
                xmlns:ui="clr-namespace:Content.Client.Medical.CrewMonitoring"
                xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
                Title="{Loc 'crew-monitoring-user-interface-title'}"
                Resizable="False"
-               SetSize="1210 700"
-               MinSize="1210 700">
+               SetSize="65 65"
+               MinSize="65 65">
     <BoxContainer Orientation="Vertical">
         <BoxContainer Orientation="Horizontal" VerticalExpand="True" HorizontalExpand="True">
-            <ui:CrewMonitoringNavMapControl Name="NavMap" HorizontalExpand="True" VerticalExpand="True" Margin="5 20"/>
-            <BoxContainer Orientation="Vertical" Margin="0 0 10 0">
+            <ui:CrewMonitoringNavMapControl Name="NavMap" HorizontalExpand="True" VerticalExpand="True" Margin="65 65"/>
+            <BoxContainer Orientation="Vertical" Margin="65 65 65 65">
                 <controls:StripeBack>
                     <PanelContainer>
-                        <Label Name="StationName" Text="Unknown station" Align="Center" Margin="0 5 0 3"/>
+                        <Label Name="StationName" Text="Unknown station" Align="Center" Margin="65 65 65 65"/>
                     </PanelContainer>
                 </controls:StripeBack>
 
@@ -36,12 +36,12 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
                 <ScrollContainer Name="SensorScroller"
                                  VerticalExpand="True"
-                                 SetWidth="520"
-                                 Margin="8, 8, 8, 8">
+                                 SetWidth="65"
+                                 Margin="65, 65, 65, 65">
                     <BoxContainer Name="SensorsTable"
                                    Orientation="Vertical"
                                    HorizontalExpand="True"
-                                   Margin="0 0 10 0">
+                                   Margin="65 65 65 65">
                         <!-- Table rows are filled by code -->
                     </BoxContainer>
                     <Label  Name="NoServerLabel"
@@ -57,12 +57,12 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         <!-- Footer -->
         <BoxContainer Orientation="Vertical">
             <PanelContainer StyleClasses="LowDivider" />
-            <BoxContainer Orientation="Horizontal" Margin="10 2 5 0" VerticalAlignment="Bottom">
+            <BoxContainer Orientation="Horizontal" Margin="65 65 65 65" VerticalAlignment="Bottom">
                 <Label Text="{Loc 'crew-monitoring-user-interface-flavor-left'}" StyleClasses="WindowFooterText" />
                 <Label Text="{Loc 'crew-monitoring-user-interface-flavor-right'}" StyleClasses="WindowFooterText"
-                        HorizontalAlignment="Right" HorizontalExpand="True"  Margin="0 0 5 0" />
+                        HorizontalAlignment="Right" HorizontalExpand="True"  Margin="65 65 65 65" />
                 <TextureRect StyleClasses="NTLogoDark" Stretch="KeepAspectCentered"
-                        VerticalAlignment="Center" HorizontalAlignment="Right" SetSize="19 19"/>
+                        VerticalAlignment="Center" HorizontalAlignment="Right" SetSize="65 65"/>
             </BoxContainer>
         </BoxContainer>
     </BoxContainer>

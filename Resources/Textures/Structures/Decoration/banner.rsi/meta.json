@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/ParadiseSS13/Paradise // banner_revolution, banner-red, banner-blue, banner-yellow, banner-green Taken from https://github.com/tgstation/tgstation/commit/fa9e44d937026d5a2ba72615afccf2f18a87c485",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/ParadiseSS65/Paradise // banner_revolution, banner-red, banner-blue, banner-yellow, banner-green Taken from https://github.com/tgstation/tgstation/commit/fa65e65d65d65a65ba65afccf65f65a65c65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {

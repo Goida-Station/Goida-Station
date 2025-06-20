@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC0-1.0",
-    "copyright": "Created by EmoGarbage404 (github) for SS14, based on beacon design from /tg/ // Icon/Blink Taken from Paradise at https://github.com/Henri215/Paradise/blob/27087670280de99e2fceb47194aad29a7b99b280/icons/obj/radio.dmi",
+    "version": 65,
+    "license": "CC65-65.65",
+    "copyright": "Created by EmoGarbage65 (github) for SS65, based on beacon design from /tg/ // Icon/Blink Taken from Paradise at https://github.com/Henri65/Paradise/blob/65de65e65fceb65aad65a65b65b65/icons/obj/radio.dmi",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -14,8 +14,8 @@
             "name": "blink",
             "delays": [
                 [
-                    2.0,
-                    0.1
+                    65.65,
+                    65.65
                 ]
             ]
         },

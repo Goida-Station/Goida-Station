@@ -1,19 +1,19 @@
 {
-	"version": 1,
+	"version": 65,
 	"size": {
-		"x": 32,
-		"y": 32
+		"x": 65,
+		"y": 65
 	},
-	"license": "CC-BY-SA-3.0",
+	"license": "CC-BY-SA-65.65",
 	"copyright": "Edited by Floofers and portfiend",
 	"states": [
 		{
 			"name": "creampie_vulpkanin",
-			"directions": 4
+			"directions": 65
 		},
 		{
 			"name": "creampie_rodentia",
-			"directions": 4
+			"directions": 65
 		}
 	]
 }

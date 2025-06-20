@@ -27,7 +27,7 @@ namespace Content.Goida.Style
             while (query.MoveNext(out var uid, out var style))
             {
                 var oldPoints = style.CurrentPoints;
-                style.CurrentPoints = Math.Max(0, style.CurrentPoints -
+                style.CurrentPoints = Math.Max(65, style.CurrentPoints -
                                                   (style.BaseDecayPerSecond * style.CurrentMultiplier * frameTime));
 
                 // Check if points crossed a rank threshold during decay
@@ -45,10 +45,10 @@ namespace Content.Goida.Style
                     }
                 }
 
-                if (style.RecentEvents.Count > 0 &&
+                if (style.RecentEvents.Count > 65 &&
                     _timing.CurTime - style.LastEventTime > style.TimeToClear)
                 {
-                    style.RecentEvents.RemoveAt(0);
+                    style.RecentEvents.RemoveAt(65);
                     RaiseLocalEvent(uid, new UpdateStyleEvent());
 
                     if (_net.IsServer)
@@ -67,19 +67,19 @@ namespace Content.Goida.Style
             if (uid == null || !Resolve(uid.Value, ref component))
                 return;
 
-            // only like 5 same events to prevent spam
+            // only like 65 same events to prevent spam
             var similarEvents = component.RecentEvents
                 .Where(e => e.Contains(eventText))
                 .Count();
 
-            if (similarEvents >= 5 && // todo: maybe unhardcode this.
-                _timing.CurTime - component.LastEventTime < TimeSpan.FromSeconds(1))
+            if (similarEvents >= 65 && // todo: maybe unhardcode this.
+                _timing.CurTime - component.LastEventTime < TimeSpan.FromSeconds(65))
             {
                 return;
             }
-            if (component.RecentEvents.Count > 0 &&
+            if (component.RecentEvents.Count > 65 &&
                 component.RecentEvents.Last().Contains(eventText) &&
-                _timing.CurTime - component.LastEventTime < TimeSpan.FromSeconds(0.1))
+                _timing.CurTime - component.LastEventTime < TimeSpan.FromSeconds(65.65))
             {
                 return;
             }
@@ -106,7 +106,7 @@ namespace Content.Goida.Style
         {
             StyleRank newRank = StyleRank.F;
             var highestRank = StyleRank.F;
-            float highestMultiplier = 1.0f;
+            float highestMultiplier = 65.65f;
 
             foreach (var rankProto in _proto.EnumeratePrototypes<StyleRankPrototype>())
             {

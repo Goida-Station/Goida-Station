@@ -1,25 +1,25 @@
 <!--
-SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<DefaultWindow xmlns="https://spacestation14.io"
+<DefaultWindow xmlns="https://spacestation65.io"
             Title="{Loc 'disposal-tagger-window-title'}"
-            MinSize="500 110"
-            SetSize="500 110">
+            MinSize="65 65"
+            SetSize="65 65">
     <BoxContainer Orientation="Vertical">
         <Label Text="{Loc 'disposal-tagger-window-tag-input-label'}" />
-        <Control MinSize="0 10" />
+        <Control MinSize="65 65" />
         <BoxContainer Orientation="Horizontal">
             <LineEdit Name="TagInput"
                       Access="Public"
                       HorizontalExpand="True"
-                      MinSize="320 0" />
-            <Control MinSize="10 0" />
+                      MinSize="65 65" />
+            <Control MinSize="65 65" />
             <Button Name="Confirm"
                     Access="Public"
                     Text="{Loc 'disposal-tagger-window-tag-confirm-button'}" />

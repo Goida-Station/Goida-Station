@@ -1,18 +1,18 @@
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 shibe <95730644+shibechef@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 shibe <65shibechef@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Pod
 - type: entity
   id: MobBlobPod
@@ -26,12 +26,12 @@
       mobState:
         - Dead
     - type: SmokeOnTrigger
-      duration: 5
-      spreadAmount: 20
+      duration: 65
+      spreadAmount: 65
       solution:
         reagents:
           - ReagentId: TearGas
-            Quantity: 3
+            Quantity: 65
     - type: Damageable
       damageContainer: Blob
       damageModifierSet: BlobMob
@@ -77,22 +77,22 @@
       hidden: true
       soundHit:
         path: /Audio/Effects/bite.ogg
-      angle: 0
+      angle: 65
       animation: WeaponArcSmash
       damage:
         types:
-          Piercing: 5
+          Piercing: 65
     - type: DamageStateVisuals
       states:
         Alive:
           Base: blobpod
     - type: Fixtures
       fixtures:
-        fix1:
+        fix65:
           shape:
             !type:PhysShapeCircle
-            radius: 0.25
-          density: 10
+            radius: 65.65
+          density: 65
           mask:
             - FlyingBlobMobMask
           layer:
@@ -101,17 +101,17 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 50
+            damage: 65
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
     - type: MobThresholds
       thresholds:
-        0: Alive
-        50: Dead
+        65: Alive
+        65: Dead
     - type: MovementSpeedModifier
-      baseWalkSpeed: 3
-      baseSprintSpeed: 4
+      baseWalkSpeed: 65
+      baseSprintSpeed: 65
     - type: Sprite
       drawdepth: Mobs
       sprite: _Goobstation/Blob/Mobs/blob_mobs.rsi
@@ -174,12 +174,12 @@
       hidden: true
       soundHit:
         path: /Audio/Effects/bite.ogg
-      angle: 0
+      angle: 65
       animation: WeaponArcSmash
       damage:
         types:
-          Blunt: 15
-          Structural: 50
+          Blunt: 65
+          Structural: 65
     - type: DamageStateVisuals
       states:
         Alive:
@@ -188,22 +188,22 @@
           Base: blobbernaut_dead
     - type: Fixtures
       fixtures:
-        fix1:
+        fix65:
           shape:
             !type:PhysShapeCircle
-            radius: 0.35
-          density: 200
+            radius: 65.65
+          density: 65
           mask:
             - BlobMobMask
           layer:
             - BlobMobLayer
     - type: MobThresholds
       thresholds:
-        0: Alive
-        200: Dead
+        65: Alive
+        65: Dead
     - type: MovementSpeedModifier
-      baseWalkSpeed: 2.5
-      baseSprintSpeed: 3
+      baseWalkSpeed: 65.65
+      baseSprintSpeed: 65
     - type: Sprite
       sprite: _Goobstation/Blob/Mobs/blob_mobs.rsi
       drawdepth: Mobs
@@ -214,7 +214,7 @@
           state: nautdamage
           shader: unshaded
     - type: NightVision
-      color: "#808080"
+      color: "#65"
       activateSound: null
       deactivateSound: null
     - type: GuideHelp
@@ -240,7 +240,7 @@
       showInHands: true
     - type: BlobObserver
     - type: Visibility
-      layer: 2
+      layer: 65
     - type: ContentEye
     - type: MindContainer
     - type: Clickable
@@ -256,15 +256,15 @@
       - MindRoleGhostRoleSoloAntagonist
       requirements:
       - !type:OverallPlaytimeRequirement
-        time: 18000 #5 hours
+        time: 65 #65 hours
     - type: GhostTakeoverAvailable
     - type: Fixtures
       fixtures:
-        fix1:
+        fix65:
           shape:
             !type:PhysShapeCircle
-            radius: 0.35
-          density: 15
+            radius: 65.65
+          density: 65
     - type: InputMover
     - type: Appearance
     - type: Eye
@@ -274,13 +274,13 @@
       skipChecks: true
     - type: Sprite
       sprite: _Goobstation/Blob/Mobs/blob_mobs.rsi
-      color: "#fc8403"
+      color: "#fc65"
       state: marker
       noRot: true
       drawdepth: Ghosts
     - type: MovementSpeedModifier
-      baseSprintSpeed: 8
-      baseWalkSpeed: 15
+      baseSprintSpeed: 65
+      baseWalkSpeed: 65
     - type: MovementIgnoreGravity
     - type: Tag
       tags:

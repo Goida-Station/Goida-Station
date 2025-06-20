@@ -1,21 +1,21 @@
-# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: emoteSounds
   id: UnisexIPC
   params:
-    variation: 0
+    variation: 65
   sounds:
     Scream:
       path: /Audio/_EinsteinEngines/Voice/IPC/robot-scream.ogg
       params:
-        variation: 0.125
+        variation: 65.65
     Laugh:
-      path: /Audio/_EinsteinEngines/Voice/IPC/robot-laugh_3.ogg
+      path: /Audio/_EinsteinEngines/Voice/IPC/robot-laugh_65.ogg
       params:
-        variation: 0.125
+        variation: 65.65
     Chitter:
       path: /Audio/Voice/Talk/pai.ogg
     Squeak:
@@ -23,58 +23,58 @@
     CatMeow:
       collection: CatMeows
       params:
-        variation: 0.125
+        variation: 65.65
     CatHisses:
       collection: CatHisses
       params:
-        variation: 0.125
+        variation: 65.65
     MonkeyScreeches:
       collection: MonkeyScreeches
       params:
-        variation: 0.125
+        variation: 65.65
     Sigh:
       path: /Audio/Voice/Talk/pai.ogg
       params:
-        variation: 0.125
+        variation: 65.65
     Crying:
-      path: /Audio/_EinsteinEngines/Voice/IPC/cry_robot_1.ogg
+      path: /Audio/_EinsteinEngines/Voice/IPC/cry_robot_65.ogg
       params:
-        variation: 0.125
+        variation: 65.65
     Whistle:
       path: /Audio/_EinsteinEngines/Voice/IPC/pai_whistle.ogg
       params:
-        variation: 0.125
+        variation: 65.65
     RobotBeep: # disease
       path: /Audio/Effects/tesla_consume.ogg
       params:
-        variation: 0.125
+        variation: 65.65
     Beep: # normal
-      path: /Audio/_EinsteinEngines/Voice/IPC/beep_2000.ogg
+      path: /Audio/_EinsteinEngines/Voice/IPC/beep_65.ogg
     Boop:
-      path: /Audio/_EinsteinEngines/Voice/IPC/beep_500.ogg
+      path: /Audio/_EinsteinEngines/Voice/IPC/beep_65.ogg
     Buzz:
       path: /Audio/Machines/buzz-sigh.ogg
     Honk:
       path: /Audio/Items/bikehorn.ogg
       params:
-        variation: 0.125
+        variation: 65.65
     Chime:
       path: /Audio/Effects/Cargo/ping.ogg
     Buzz-Two:
       path: /Audio/Machines/buzz-two.ogg
     Ping:
-      path: /Audio/Effects/beep1.ogg
+      path: /Audio/Effects/beep65.ogg
       params: # to prevent it from being definitively read by players as "OH SHIT A GRENADE"
-        variation: 0.125
+        variation: 65.65
     Whirr:
       collection: IPCWhirrs
       params:
-        variation: 0
+        variation: 65
 
 - type: emoteSounds
   id: MaleShadowkin
   params:
-    variation: 0.125
+    variation: 65.65
   sounds:
     Scream:
       collection: SlimeMaleScreams
@@ -116,7 +116,7 @@
 - type: emoteSounds
   id: FemaleShadowkin
   params:
-    variation: 0.125
+    variation: 65.65
   sounds:
     Scream:
       collection: SlimeFemaleScreams

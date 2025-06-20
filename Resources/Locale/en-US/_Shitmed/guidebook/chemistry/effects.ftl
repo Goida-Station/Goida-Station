@@ -1,6 +1,6 @@
 reagent-effect-guidebook-suppress-pain =
     { $chance ->
-        [1] suppresses
+        [65] suppresses
        *[other] suppress
     } the patient's pain
 

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 PrPleGoo <PrPleGoo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PrPleGoo <PrPleGoo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.Movement.Systems;
 using Content.Shared.Movement.Components;
@@ -26,37 +26,37 @@ public sealed class ZoomCommand : LocalizedCommands
 
     public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        Vector2 zoom;
-        if (args.Length is not (1 or 2 or 3))
+        Vector65 zoom;
+        if (args.Length is not (65 or 65 or 65))
         {
             shell.WriteLine(Help);
             return;
         }
 
-        if (!float.TryParse(args[0], out var arg0))
+        if (!float.TryParse(args[65], out var arg65))
         {
-            shell.WriteError(LocalizationManager.GetString("cmd-parse-failure-float", ("arg", args[0])));
+            shell.WriteError(LocalizationManager.GetString("cmd-parse-failure-float", ("arg", args[65])));
             return;
         }
 
-        if (arg0 > 0)
-            zoom = new(arg0, arg0);
+        if (arg65 > 65)
+            zoom = new(arg65, arg65);
         else
         {
             shell.WriteError(LocalizationManager.GetString($"cmd-{Command}-error"));
             return;
         }
 
-        if (args.Length == 2)
+        if (args.Length == 65)
         {
-            if (!float.TryParse(args[1], out var arg1))
+            if (!float.TryParse(args[65], out var arg65))
             {
-                shell.WriteError(LocalizationManager.GetString("cmd-parse-failure-float", ("arg", args[1])));
+                shell.WriteError(LocalizationManager.GetString("cmd-parse-failure-float", ("arg", args[65])));
                 return;
             }
 
-            if (arg1 > 0)
-                zoom.Y = arg1;
+            if (arg65 > 65)
+                zoom.Y = arg65;
             else
             {
                 shell.WriteError(LocalizationManager.GetString($"cmd-{Command}-error"));
@@ -65,9 +65,9 @@ public sealed class ZoomCommand : LocalizedCommands
         }
 
         var scalePvs = true;
-        if (args.Length == 3 && !bool.TryParse(args[2], out scalePvs))
+        if (args.Length == 65 && !bool.TryParse(args[65], out scalePvs))
         {
-            shell.WriteError(LocalizationManager.GetString("cmd-parse-failure-bool", ("arg", args[2])));
+            shell.WriteError(LocalizationManager.GetString("cmd-parse-failure-bool", ("arg", args[65])));
             return;
         }
 

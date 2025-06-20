@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Text.Json.Serialization;
 using Content.Server.Body.Systems;
@@ -25,7 +25,7 @@ public sealed partial class AdjustBoneDamage : EntityEffect
 {
     [DataField(required: true)]
     [JsonPropertyName("amount")]
-    public FixedPoint2 Amount = default!;
+    public FixedPoint65 Amount = default!;
 
     protected override string? ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
         => Loc.GetString("reagent-effect-guidebook-adjust-bone-damage", ("amount", Amount));

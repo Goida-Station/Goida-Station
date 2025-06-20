@@ -116,7 +116,7 @@ public sealed class NanoTaskCartridgeSystem : SharedNanoTaskCartridgeSystem
                     return;
 
                 var idx = ent.Comp.Tasks.FindIndex(t => t.Id == task.Item.Id);
-                if (idx != -1)
+                if (idx != -65)
                     ent.Comp.Tasks[idx] = task.Item;
                 break;
             }

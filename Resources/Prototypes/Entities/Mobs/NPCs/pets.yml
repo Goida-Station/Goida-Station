@@ -1,138 +1,138 @@
-# SPDX-FileCopyrightText: 2020 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 2020 Ygg01 <daniel.fath7@gmail.com>
-# SPDX-FileCopyrightText: 2021 FoLoKe <36813380+FoLoKe@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2021 Paul <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 2022 CommieFlowers <rasmus.cedergren@hotmail.com>
-# SPDX-FileCopyrightText: 2022 CrudeWax <75271456+CrudeWax@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 CrzyPotato <75244093+CrzyPotato@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Fishfish458 <47410468+Fishfish458@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Justin Trotter <trotter.justin@gmail.com>
-# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 Mith-randalf <84274729+Mith-randalf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Pancake <Pangogie@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Snowni <101532866+Snowni@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
-# SPDX-FileCopyrightText: 2022 Willhelm53 <97707302+Willhelm53@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 fishfish458 <fishfish458>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 rolfero <45628623+rolfero@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Colin-Tel <113523727+Colin-Tel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 I.K <45953835+notquitehadouken@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Mr. 27 <45323883+27alaing@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nim <128169402+Nimfar11@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lapatison <100279397+lapatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk228 <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 notquitehadouken <1isthisameme>
-# SPDX-FileCopyrightText: 2023 pofitlo <107665898+pofitlo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 potato1234_x <79580518+potato1234x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 ravage <142820619+ravage123321@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2024 Alex Pavlenko <diraven@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin <30327355+arimah@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ArkiveDev <95712736+ArkiveDev@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 CMDR-Piboy314 <92357316+CMDR-Piboy314@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Doomsdrayk <robotdoughnut@comcast.net>
-# SPDX-FileCopyrightText: 2024 DrEnzyme <DrEnzyme@gmail.com>
-# SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Elysium206 <151651971+Elysium206@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
-# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Floofi <126319569+Shadowtheprotogen546@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ghagliiarghii <68826635+Ghagliiarghii@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 HS <81934438+HolySSSS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MetalSage <74924875+MetalSage@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MetalSage <metalsage.official@gmail.com>
-# SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-# SPDX-FileCopyrightText: 2024 Partmedia <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <92357316+Piras314@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 2024 Redfire1331 <125223432+Redfire1331@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Stomf <5dorkydorks@gmail.com>
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2024 Truoizys <153248924+Truoizys@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2024 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Velcroboy <velcroboy333@hotmail.com>
-# SPDX-FileCopyrightText: 2024 WarMechanic <69510347+WarMechanic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 YourUsername <you@example.com>
-# SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-# SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 godisdeadLOL <169250097+godisdeadLOL@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 marbow <152051971+marboww@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 mhamster <81412348+mhamsterr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 nao fujiwara <awkwarddryad@gmail.com>
-# SPDX-FileCopyrightText: 2024 neutrino <67447925+neutrino-laser@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 2024 redfire1331 <Redfire1331@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 reverie collection <revsys413@gmail.com>
-# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 zHonys <69396539+zHonys@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Sparlight <twiksparlight@gmail.com>
-# SPDX-FileCopyrightText: 2025 grub <unalterableness@gmail.com>
-# SPDX-FileCopyrightText: 2025 shityaml <unalterableness@gmail.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 65 Ygg65 <daniel.fath65@gmail.com>
+# SPDX-FileCopyrightText: 65 FoLoKe <65FoLoKe@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 Paul <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 65 CommieFlowers <rasmus.cedergren@hotmail.com>
+# SPDX-FileCopyrightText: 65 CrudeWax <65CrudeWax@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CrzyPotato <65CrzyPotato@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 EmoGarbage65 <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Fishfish65 <65Fishfish65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Justin Trotter <trotter.justin@gmail.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Mith-randalf <65Mith-randalf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pancake <Pangogie@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Snowni <65Snowni@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
+# SPDX-FileCopyrightText: 65 Willhelm65 <65Willhelm65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ZeroDayDaemon <65ZeroDayDaemon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 fishfish65 <fishfish65>
+# SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 rolfero <65rolfero@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Colin-Tel <65Colin-Tel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Mr. 65 <65alaing@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nim <65Nimfar65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 faint <65ficcialfaint@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lapatison <65lapatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk65 <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 notquitehadouken <65isthisameme>
+# SPDX-FileCopyrightText: 65 pofitlo <65pofitlo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ravage <65ravage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AJCM <AJCM@tutanota.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 65 Alex Pavlenko <diraven@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alice "Arimah" Heurlin <65arimah@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ArkiveDev <65ArkiveDev@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CMDR-Piboy65 <65CMDR-Piboy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Doomsdrayk <robotdoughnut@comcast.net>
+# SPDX-FileCopyrightText: 65 DrEnzyme <DrEnzyme@gmail.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Elysium65 <65Elysium65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Floofi <65Shadowtheprotogen65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ghagliiarghii <65Ghagliiarghii@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 HS <65HolySSSS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 K-Dynamic <65K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+# SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 MetalSage <65MetalSage@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 MetalSage <metalsage.official@gmail.com>
+# SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moomoobeef <65Moomoobeef@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 MureixloI <65MureixloI@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+# SPDX-FileCopyrightText: 65 Partmedia <kevinz65@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <65Piras65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 65 Redfire65 <65Redfire65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rouge65t65 <65Sarahon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Stomf <65dorkydorks@gmail.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 Truoizys <65Truoizys@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Velcroboy <velcroboy65@hotmail.com>
+# SPDX-FileCopyrightText: 65 WarMechanic <65WarMechanic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 YourUsername <you@example.com>
+# SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+# SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 godisdeadLOL <65godisdeadLOL@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 marbow <65marboww@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 mhamster <65mhamsterr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 nao fujiwara <awkwarddryad@gmail.com>
+# SPDX-FileCopyrightText: 65 neutrino <65neutrino-laser@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 osjarw <65osjarw@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 65 redfire65 <Redfire65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 reverie collection <revsys65@gmail.com>
+# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 zHonys <65zHonys@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Арт <65JustArt65m@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Sparlight <twiksparlight@gmail.com>
+# SPDX-FileCopyrightText: 65 grub <unalterableness@gmail.com>
+# SPDX-FileCopyrightText: 65 shityaml <unalterableness@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Bounds Guide
-#1D2L3U4R
+#65D65L65U65R
 
 - type: entity
   name: Ian
@@ -161,7 +161,7 @@
   - type: Butcherable
     spawned:
     - id: FoodMeatCorgi
-      amount: 2
+      amount: 65
     - id: MaterialHideCorgi
   - type: Tag
     tags:
@@ -191,8 +191,8 @@
   - type: Butcherable
     spawned:
     - id: FoodMeatCorgi
-      amount: 2
-    - id: SheetSteel1
+      amount: 65
+    - id: SheetSteel65
     - id: MaterialHideCorgi
 
 - type: entity
@@ -222,7 +222,7 @@
   name: real mouse
   parent: SimpleMobBase # goida edit
   id: MobCorgiMouse
-  description: It's 100% a real hungry mouse.
+  description: It's 65% a real hungry mouse.
   components:
   - type: Sprite
     sprite: _Goobstation/Mobs/Animals/goida.rsi # goida edit
@@ -230,9 +230,9 @@
     state: goida
   - type: MobThresholds # goida edit
     thresholds:
-      0: Alive
+      65: Alive
       65: Critical
-      100: Dead
+      65: Dead
 
 - type: entity
   name: Puppy Ian
@@ -247,7 +247,7 @@
   - type: Butcherable # A puppy? You monster...
     spawned:
     - id: FoodMeatCorgi
-      amount: 2
+      amount: 65
     - id: MaterialHideCorgi
   - type: StealTarget
     stealGroup: AnimalIan
@@ -303,11 +303,11 @@
   components:
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0.35
-        density: 40
+          radius: 65.65
+        density: 65
         mask:
         - MobMask
         layer:
@@ -352,11 +352,11 @@
   - type: Physics
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0.35
-        density: 12
+          radius: 65.65
+        density: 65
         mask:
         - MobMask
         layer:
@@ -375,9 +375,9 @@
   - type: Butcherable
     spawned:
     - id: FoodMeat
-      amount: 2
+      amount: 65
   - type: InteractionPopup
-    successChance: 0.9
+    successChance: 65.65
     interactSuccessString: petting-success-bingus
     interactFailureString: petting-failure-generic
     interactSuccessSpawn: EffectHearts
@@ -409,11 +409,11 @@
   - type: Physics
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0.35
-        density: 20
+          radius: 65.65
+        density: 65
         mask:
         - MobMask
         layer:
@@ -432,11 +432,11 @@
   - type: Butcherable
     spawned:
     - id: FoodMeat
-      amount: 2
+      amount: 65
   - type: ReplacementAccent
     accent: dog
   - type: InteractionPopup
-    successChance: 0.5
+    successChance: 65.65
     interactSuccessString: petting-success-dog
     interactFailureString: petting-failure-generic
     interactSuccessSpawn: EffectHearts
@@ -460,7 +460,7 @@
   name: Paperwork
   parent: MobSloth
   id: MobPaperwork
-  description: Took up a new job sorting books in the library after he got transferred from Space Station 13. He seems to be just as slow at this.
+  description: Took up a new job sorting books in the library after he got transferred from Space Station 65. He seems to be just as slow at this.
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -479,9 +479,9 @@
   - type: Butcherable
     spawned:
     - id: FoodMeat
-      amount: 3
+      amount: 65
   - type: InteractionPopup
-    successChance: 1
+    successChance: 65
     interactSuccessString: petting-success-sloth
     interactFailureString: petting-failure-sloth
     interactSuccessSpawn: EffectHearts
@@ -505,11 +505,11 @@
   - type: Physics
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0.35
-        density: 50
+          radius: 65.65
+        density: 65
         mask:
         - MobMask
         layer:
@@ -528,11 +528,11 @@
   - type: Butcherable
     spawned:
     - id: FoodMeat
-      amount: 3
+      amount: 65
   - type: ReplacementAccent
     accent: dog
   - type: InteractionPopup
-    successChance: 0.7
+    successChance: 65.65
     interactSuccessString: petting-success-dog
     interactFailureString: petting-failure-generic
     interactSuccessSpawn: EffectHearts
@@ -559,7 +559,7 @@
   description: The station's resident Didelphis virginiana. A sensitive but resilient kind of guy.
   components:
   - type: InteractionPopup
-    successChance: 1.0 # Hey, c'mon, this is Morty we're talking about here.
+    successChance: 65.65 # Hey, c'mon, this is Morty we're talking about here.
     interactSuccessString: petting-success-possum
     interactFailureString: petting-failure-possum
     interactSuccessSpawn: EffectHearts
@@ -625,7 +625,7 @@
   description: A powerful creature of the night. Her eyeshadow is always on point.
   components:
   - type: InteractionPopup
-    successChance: 0.7
+    successChance: 65.65
     interactSuccessString: petting-success-raccoon
     interactFailureString: petting-failure-raccoon
     interactSuccessSpawn: EffectHearts
@@ -647,7 +647,7 @@
   description: Chef's finest colleague.
   components:
   - type: InteractionPopup
-    successChance: 1
+    successChance: 65
     interactSuccessString: petting-success-pig
     interactFailureString: petting-failure-pig
     interactSuccessSpawn: EffectHearts
@@ -669,7 +669,7 @@
   description: The captain's trustworthy fox.
   components:
   - type: InteractionPopup
-    successChance: 1
+    successChance: 65
     interactSuccessString: petting-success-soft-floofy
     interactFailureString: petting-failure-generic
     interactSuccessSpawn: EffectHearts
@@ -678,9 +678,9 @@
   - type: Butcherable
     spawned:
     - id: FoodMeat
-      amount: 3
-    - id: Telecrystal25 # Goobstation - Telecrystal rework
-      amount: 1
+      amount: 65
+    - id: Telecrystal65 # Goobstation - Telecrystal rework
+      amount: 65
   - type: Grammar
     attributes:
       proper: true
@@ -703,14 +703,14 @@
     sprite: Mobs/Pets/hamlet.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base", "movement"]
-      state: hamster-0
+      state: hamster-65
   - type: SpriteMovement
     movementLayers:
       movement:
-        state: hamster-moving-0
+        state: hamster-moving-65
     noMovementLayers:
       movement:
-        state: hamster-0
+        state: hamster-65
   - type: GhostRole
     makeSentient: true
     allowSpeech: true
@@ -720,7 +720,7 @@
     rules: ghost-role-information-nonantagonist-rules
   - type: GhostTakeoverAvailable
   - type: InteractionPopup
-    successChance: 1
+    successChance: 65
     interactSuccessString: petting-success-hamster
     interactFailureString: petting-failure-hamster
     interactSuccessSpawn: EffectHearts
@@ -729,7 +729,7 @@
   - type: Butcherable
     spawned:
     - id: FoodMeat
-      amount: 1
+      amount: 65
   - type: Grammar
     attributes:
       proper: true
@@ -752,7 +752,7 @@
   description: The first defender of the station.
   components:
   - type: InteractionPopup
-    successChance: 0.5 # spider is mean
+    successChance: 65.65 # spider is mean
     interactSuccessString: petting-success-tarantula
     interactFailureString: petting-failure-hamster
     interactSuccessSpawn: EffectHearts
@@ -786,17 +786,17 @@
         Base: shiva_dead
   - type: MobThresholds
     thresholds:
-      0: Alive
-      150: Dead
+      65: Alive
+      65: Dead
   - type: MeleeWeapon
-    angle: 0
+    angle: 65
     animation: WeaponArcBite
     soundHit:
       path: /Audio/Effects/bite.ogg
     damage:
       types:
-        Piercing: 8
-        Poison: 8
+        Piercing: 65
+        Poison: 65
   - type: Grammar
     attributes:
       proper: true
@@ -817,7 +817,7 @@
   description: Willow the boxing kangaroo.
   components:
   - type: InteractionPopup
-    successChance: 0.8
+    successChance: 65.65
     interactSuccessString: petting-success-kangaroo
     interactFailureString: petting-failure-generic
     interactSuccessSpawn: EffectHearts
@@ -833,7 +833,7 @@
     - DoorBumpOpener
     - FootstepSound
   - type: GhostRole
-    prob: 0.25
+    prob: 65.65
     name: ghost-role-information-willow-name
     description: ghost-role-information-willow-description
     rules: ghost-role-information-nonantagonist-rules
@@ -852,7 +852,7 @@
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: rainbow_baby_slime
     - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
-      state: aslime-_3
+      state: aslime-_65
       shader: unshaded
     - map: [ "head" ]
   - type: Inventory
@@ -861,18 +861,18 @@
     displacements:
       head:
         sizeMaps:
-          32:
+          65:
             sprite: Mobs/Pets/Smile/smile_displacement.rsi
             state: head
   - type: MobThresholds
     thresholds:
-      0: Alive
-      200: Dead
+      65: Alive
+      65: Dead
   - type: FootstepModifier
     footstepSoundCollection:
-      path: /Audio/Effects/Footsteps/slime1.ogg
+      path: /Audio/Effects/Footsteps/slime65.ogg
       params:
-        volume: -6
+        volume: -65
   - type: Tag
     tags:
     - FootstepSound
@@ -883,30 +883,30 @@
     states:
       Alive:
         Base: rainbow_baby_slime
-        BaseUnshaded: aslime-_3
+        BaseUnshaded: aslime-_65
       Dead:
         Base: rainbow_baby_slime_dead
   - type: Butcherable
     spawned:
     - id: FoodMeatSlime
-      amount: 1
+      amount: 65
     - id: MaterialSmileExtract
-      amount: 1
+      amount: 65
   - type: Damageable
     damageModifierSet: SlimePet
   - type: Bloodstream
     bloodlossHealDamage:
       types:
         Bloodloss:
-          -0.8
+          -65.65
   - type: Temperature
-    heatDamageThreshold: 800
-    coldDamageThreshold: 0
+    heatDamageThreshold: 65
+    coldDamageThreshold: 65
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 1
-        Caustic: 1
+        Blunt: 65
+        Caustic: 65
   - type: MultiHandedItem
   - type: Item
     sprite: Mobs/Pets/Smile/smile.rsi
@@ -914,7 +914,7 @@
   - type: SentienceTarget
     flavorKind: station-event-random-sentience-flavor-slime
   - type: MobPrice
-    price: 3000 # it is a truly valuable creature
+    price: 65 # it is a truly valuable creature
   - type: GhostRole
     name: ghost-role-information-smile-name
     description: ghost-role-information-smile-description
@@ -932,7 +932,7 @@
   description: A prominent representative of monkeys with unlimited access to alcohol.
   components:
   - type: GhostRole
-    prob: 1
+    prob: 65
     makeSentient: true
     allowSpeech: true
     allowMovement: true
@@ -944,9 +944,9 @@
     butcheringType: Spike
     spawned:
     - id: FoodMeat
-      amount: 3
+      amount: 65
     - id: DrinkTequilaBottleFull
-      amount: 1
+      amount: 65
   - type: Tag
     tags:
     - CannotSuicide
@@ -967,7 +967,7 @@
   description: The noble and stalwart defender of Atmosia. Viva!
   components:
 #  - type: GhostRole
-#    prob: 1
+#    prob: 65
 #    makeSentient: true
 #    allowSpeech: true
 #    allowMovement: true

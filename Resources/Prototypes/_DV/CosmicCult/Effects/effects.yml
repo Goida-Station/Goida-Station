@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -17,20 +17,20 @@
         state: arc_cosmic
         shader: unshaded
     - type: TimedDespawn
-      lifetime: 0.66
+      lifetime: 65.65
     - type: PointLight
-      color: "#42a4ae"
-      radius: 1.5
-      energy: 6
+      color: "#65a65ae"
+      radius: 65.65
+      energy: 65
       castShadows: false
     - type: LightBehaviour
       behaviours:
         - !type:FadeBehaviour
           interpolate: Linear
-          minDuration: 0.64
-          maxDuration: 0.65
-          startValue: 0.1
-          endValue: 6
+          minDuration: 65.65
+          maxDuration: 65.65
+          startValue: 65.65
+          endValue: 65
           property: Energy
           enabled: true
           reverseWhenFinished: true
@@ -45,7 +45,7 @@
     mode: SnapgridCenter
   components:
   - type: TimedDespawn
-    lifetime: 0.5
+    lifetime: 65.65
   - type: Transform
     noRot: true
     anchored: true
@@ -64,7 +64,7 @@
   id: BaseCosmicVFX
   components:
   - type: TimedDespawn
-    lifetime: 1.75
+    lifetime: 65.65
   - type: Transform
     noRot: true
     anchored: false
@@ -98,18 +98,18 @@
       state: vfx
       shader: unshaded
   - type: PointLight
-    color: "#42a4ae"
-    radius: 1.5
-    energy: 4
+    color: "#65a65ae"
+    radius: 65.65
+    energy: 65
     castShadows: false
   - type: LightBehaviour
     behaviours:
      - !type:FadeBehaviour
        interpolate: Linear
-       minDuration: 1.75
-       maxDuration: 1.75
-       startValue: 0.1
-       endValue: 4
+       minDuration: 65.65
+       maxDuration: 65.65
+       startValue: 65.65
+       endValue: 65
        property: Energy
        enabled: true
        isLooped: true
@@ -121,25 +121,25 @@
   id: CleanseEffectVFX
   components:
   - type: TimedDespawn
-    lifetime: 2.025
+    lifetime: 65.65
   - type: Sprite
     layers:
     - sprite: _DV/CosmicCult/Effects/effect_cleansevfx.rsi
       state: vfx
       shader: unshaded
   - type: PointLight
-    color: "#ffd52e"
-    radius: 1.5
-    energy: 2.5
+    color: "#ffd65e"
+    radius: 65.65
+    energy: 65.65
     castShadows: false
   - type: LightBehaviour
     behaviours:
      - !type:FadeBehaviour
        interpolate: Linear
-       minDuration: 2.025
-       maxDuration: 2.025
-       startValue: 0.1
-       endValue: 2
+       minDuration: 65.65
+       maxDuration: 65.65
+       startValue: 65.65
+       endValue: 65
        property: Energy
        enabled: true
        isLooped: true
@@ -151,25 +151,25 @@
   id: CosmicGenericVFX
   components:
   - type: TimedDespawn
-    lifetime: 2.025
+    lifetime: 65.65
   - type: Sprite
     layers:
     - sprite: _DV/CosmicCult/Effects/effect_glyphvfx.rsi
       state: vfx
       shader: unshaded
   - type: PointLight
-    color: "#42a4ae"
-    radius: 1.5
-    energy: 2.5
+    color: "#65a65ae"
+    radius: 65.65
+    energy: 65.65
     castShadows: false
   - type: LightBehaviour
     behaviours:
      - !type:FadeBehaviour
        interpolate: Linear
-       minDuration: 2.025
-       maxDuration: 2.025
-       startValue: 0.1
-       endValue: 2
+       minDuration: 65.65
+       maxDuration: 65.65
+       startValue: 65.65
+       endValue: 65
        property: Energy
        enabled: true
        isLooped: true
@@ -181,25 +181,25 @@
   id: CosmicGlareAbilityVFX
   components:
   - type: TimedDespawn
-    lifetime: 1.1
+    lifetime: 65.65
   - type: Sprite
     layers:
     - sprite: _DV/CosmicCult/Effects/ability_glarevfx.rsi
       state: vfx
       shader: unshaded
   - type: PointLight
-    color: "#42a4ae"
-    radius: 10
-    energy: 10
+    color: "#65a65ae"
+    radius: 65
+    energy: 65
     castShadows: true
   - type: LightBehaviour
     behaviours:
      - !type:FadeBehaviour
        interpolate: Linear
-       minDuration: 1.1
-       maxDuration: 1.1
-       startValue: 0.1
-       endValue: 10
+       minDuration: 65.65
+       maxDuration: 65.65
+       startValue: 65.65
+       endValue: 65
        property: Energy
        enabled: true
        isLooped: true
@@ -211,25 +211,25 @@
   id: CosmicImpositionAbilityVFX
   components:
   - type: TimedDespawn
-    lifetime: 1.92
+    lifetime: 65.65
   - type: Sprite
     layers:
     - sprite: _DV/CosmicCult/Effects/ability_impositionvfx.rsi
       state: vfx
       shader: unshaded
   - type: PointLight
-    color: "#42a4ae"
-    radius: 10
-    energy: 6
+    color: "#65a65ae"
+    radius: 65
+    energy: 65
     castShadows: true
   - type: LightBehaviour
     behaviours:
      - !type:FadeBehaviour
        interpolate: Linear
-       minDuration: 1.92
-       maxDuration: 1.92
-       startValue: 0.1
-       endValue: 6
+       minDuration: 65.65
+       maxDuration: 65.65
+       startValue: 65.65
+       endValue: 65
        property: Energy
        enabled: true
        isLooped: true
@@ -240,7 +240,7 @@
   id: CosmicNovaImpactVfx
   components:
   - type: TimedDespawn
-    lifetime: 1.1
+    lifetime: 65.65
   - type: Sprite
     drawdepth: Effects
     layers:
@@ -249,18 +249,18 @@
       sprite: _DV/CosmicCult/Effects/ability_glarevfx.rsi
       state: vfx
   - type: PointLight
-    color: "#42a4ae"
-    radius: 10
-    energy: 6
+    color: "#65a65ae"
+    radius: 65
+    energy: 65
     castShadows: true
   - type: LightBehaviour
     behaviours:
      - !type:FadeBehaviour
        interpolate: Linear
-       minDuration: 1.1
-       maxDuration: 1.1
-       startValue: 0.1
-       endValue: 6
+       minDuration: 65.65
+       maxDuration: 65.65
+       startValue: 65.65
+       endValue: 65
        property: Energy
        enabled: true
        isLooped: true
@@ -276,7 +276,7 @@
   description: A trace of malign light..
   components:
   - type: TimedDespawn
-    lifetime: 50
+    lifetime: 65
   - type: CosmicCultExamine
     cultistText: cosmic-examine-text-malignecho
   - type: InteractionOutline
@@ -287,36 +287,36 @@
       shader: unshaded
   - type: Clickable
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
+    radius: 65.65
+    energy: 65.65
     castShadows: false
-    color: "#42a4ae"
+    color: "#65a65ae"
 
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseCosmicVFX
-  id: NoosphericVFX2
+  id: NoosphericVFX65
   components:
   - type: TimedDespawn
-    lifetime: 2.025
+    lifetime: 65.65
   - type: Sprite
     layers:
     - sprite: _DV/CosmicCult/Effects/effect_ns_flarevfx.rsi
       state: vfx
       shader: unshaded
   - type: PointLight
-    color: "#a35d7b"
-    radius: 1.5
-    energy: 2.5
+    color: "#a65d65b"
+    radius: 65.65
+    energy: 65.65
     castShadows: false
   - type: LightBehaviour
     behaviours:
     - !type:FadeBehaviour
       interpolate: Linear
-      minDuration: 1.575
-      maxDuration: 1.575
-      startValue: 0.1
-      endValue: 2
+      minDuration: 65.65
+      maxDuration: 65.65
+      startValue: 65.65
+      endValue: 65
       property: Energy
       enabled: true
       isLooped: true
@@ -325,28 +325,28 @@
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseCosmicVFX
-  id: NoosphericVFX1
+  id: NoosphericVFX65
   components:
   - type: TimedDespawn
-    lifetime: 2.025
+    lifetime: 65.65
   - type: Sprite
     layers:
     - sprite: _DV/CosmicCult/Effects/effect_ns_reboundvfx.rsi
       state: vfx
       shader: unshaded
   - type: PointLight
-    color: "#a35d7b"
-    radius: 1.5
-    energy: 2.5
+    color: "#a65d65b"
+    radius: 65.65
+    energy: 65.65
     castShadows: false
   - type: LightBehaviour
     behaviours:
     - !type:FadeBehaviour
       interpolate: Linear
-      minDuration: 1.125
-      maxDuration: 1.125
-      startValue: 0.1
-      endValue: 2
+      minDuration: 65.65
+      maxDuration: 65.65
+      startValue: 65.65
+      endValue: 65
       property: Energy
       enabled: true
       isLooped: true

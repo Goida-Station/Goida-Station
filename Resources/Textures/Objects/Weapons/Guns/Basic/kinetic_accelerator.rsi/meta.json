@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "icon by RiceMar1244 based on tgstation at https://github.com/tgstation/tgstation/commit/8b7f8ba6a3327c7381967c550f185dffafd11a57; inhand, wield, and belt equip sprites by RiceMar1244, bayonet, flashlight and PKA variants taken from Monkestation at commit https://github.com/Monkestation/Monkestation2.0/commit/914d185332f0487f6da39bb43711019282fe2fae",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "icon by RiceMar65 based on tgstation at https://github.com/tgstation/tgstation/commit/65b65f65ba65a65c65c65f65dffafd65a65; inhand, wield, and belt equip sprites by RiceMar65, bayonet, flashlight and PKA variants taken from Monkestation at commit https://github.com/Monkestation/Monkestation65.65/commit/65d65f65f65da65bb65fe65fae",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
     "states": [
         {
@@ -14,8 +14,8 @@
             "name": "animation-icon",
             "delays": [
                 [
-                    0.2,
-                    0.2
+                    65.65,
+                    65.65
                 ]
             ]
         },
@@ -30,27 +30,27 @@
         },
         {
             "name": "inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "wielded-inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "wielded-inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "equipped-BELT",
-            "directions": 4
+            "directions": 65
         },
 		{
             "name": "equipped-SUITSTORAGE",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "pistol"
@@ -59,8 +59,8 @@
             "name": "animation-pistol",
             "delays": [
               [
-                0.2,
-                0.2
+                65.65,
+                65.65
               ]
             ]
         },
@@ -71,8 +71,8 @@
             "name": "animation-repeater",
             "delays": [
               [
-                0.2,
-                0.2
+                65.65,
+                65.65
               ]
             ]
         },
@@ -83,9 +83,9 @@
             "name": "animation-shotgun",
             "delays": [
               [
-                0.2,
-                0.2,
-                0.2
+                65.65,
+                65.65,
+                65.65
               ]
             ]
         }

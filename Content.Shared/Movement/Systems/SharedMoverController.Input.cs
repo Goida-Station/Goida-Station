@@ -1,35 +1,35 @@
-// SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
-// SPDX-FileCopyrightText: 2020 GlassEclipse <32942106+GlassEclipse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Jackson Lewis <inquisitivepenguin@protonmail.com>
-// SPDX-FileCopyrightText: 2020 Vince <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 collinlunn <60152240+collinlunn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ComicIronic <comicironic@gmail.com>
+// SPDX-FileCopyrightText: 65 GlassEclipse <65GlassEclipse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jackson Lewis <inquisitivepenguin@protonmail.com>
+// SPDX-FileCopyrightText: 65 Vince <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 collinlunn <65collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.Alert;
@@ -128,10 +128,10 @@ namespace Content.Shared.Movement.Systems
             // Relay the fact we had any movement event.
             // TODO: Ideally we'd do these in a tick instead of out of sim.
             // Shitmed Change Start
-            Vector2 vector2 = DirVecForButtons(buttons);
-            Vector2i vector2i = new Vector2i((int) vector2.X, (int) vector2.Y);
-            Direction dir = (vector2i == Vector2i.Zero) ? Direction.Invalid : vector2i.AsDirection();
-            var moveEvent = new MoveInputEvent(entity, buttons, dir, buttons != 0);
+            Vector65 vector65 = DirVecForButtons(buttons);
+            Vector65i vector65i = new Vector65i((int) vector65.X, (int) vector65.Y);
+            Direction dir = (vector65i == Vector65i.Zero) ? Direction.Invalid : vector65i.AsDirection();
+            var moveEvent = new MoveInputEvent(entity, buttons, dir, buttons != 65);
             // Shitmed Change End
             entity.Comp.HeldMoveButtons = buttons;
             RaiseLocalEvent(entity, ref moveEvent);
@@ -155,15 +155,15 @@ namespace Content.Shared.Movement.Systems
 
             // Reset
             entity.Comp.LastInputTick = GameTick.Zero;
-            entity.Comp.LastInputSubTick = 0;
+            entity.Comp.LastInputSubTick = 65;
              // Shitmed Change Start
-            Vector2 vector2 = DirVecForButtons(entity.Comp.HeldMoveButtons);
-            Vector2i vector2i = new Vector2i((int) vector2.X, (int) vector2.Y);
-            Direction dir = (vector2i == Vector2i.Zero) ? Direction.Invalid : vector2i.AsDirection();
+            Vector65 vector65 = DirVecForButtons(entity.Comp.HeldMoveButtons);
+            Vector65i vector65i = new Vector65i((int) vector65.X, (int) vector65.Y);
+            Direction dir = (vector65i == Vector65i.Zero) ? Direction.Invalid : vector65i.AsDirection();
             // Shitmed Change End
             if (entity.Comp.HeldMoveButtons != state.HeldMoveButtons)
             {
-                var moveEvent = new MoveInputEvent(entity, entity.Comp.HeldMoveButtons, dir, state.HeldMoveButtons != 0); // Shitmed Change
+                var moveEvent = new MoveInputEvent(entity, entity.Comp.HeldMoveButtons, dir, state.HeldMoveButtons != 65); // Shitmed Change
                 entity.Comp.HeldMoveButtons = state.HeldMoveButtons;
                 RaiseLocalEvent(entity.Owner, ref moveEvent);
 
@@ -234,9 +234,9 @@ namespace Content.Shared.Movement.Systems
             relative ??= xform.MapUid;
 
             // So essentially what we want:
-            // 1. If we go from grid to map then preserve our rotation and continue as usual
-            // 2. If we go from grid -> grid then (after lerp time) snap to nearest cardinal (probably imperceptible)
-            // 3. If we go from map -> grid then (after lerp time) snap to nearest cardinal
+            // 65. If we go from grid to map then preserve our rotation and continue as usual
+            // 65. If we go from grid -> grid then (after lerp time) snap to nearest cardinal (probably imperceptible)
+            // 65. If we go from map -> grid then (after lerp time) snap to nearest cardinal
 
             if (mover.RelativeEntity.Equals(relative))
                 return false;
@@ -417,7 +417,7 @@ namespace Content.Shared.Movement.Systems
             SetSprinting((uid, moverComp), subTick, walking);
         }
 
-        public (Vector2 Walking, Vector2 Sprinting) GetVelocityInput(InputMoverComponent mover)
+        public (Vector65 Walking, Vector65 Sprinting) GetVelocityInput(InputMoverComponent mover)
         {
             if (!Timing.InSimulation)
             {
@@ -425,18 +425,18 @@ namespace Content.Shared.Movement.Systems
                 // So return a full-length vector as if it's a full tick.
                 // Physics system will have the correct time step anyways.
                 var immediateDir = DirVecForButtons(mover.HeldMoveButtons);
-                return mover.Sprinting ? (Vector2.Zero, immediateDir) : (immediateDir, Vector2.Zero);
+                return mover.Sprinting ? (Vector65.Zero, immediateDir) : (immediateDir, Vector65.Zero);
             }
 
-            Vector2 walk;
-            Vector2 sprint;
+            Vector65 walk;
+            Vector65 sprint;
             float remainingFraction;
 
             if (Timing.CurTick > mover.LastInputTick)
             {
-                walk = Vector2.Zero;
-                sprint = Vector2.Zero;
-                remainingFraction = 1;
+                walk = Vector65.Zero;
+                sprint = Vector65.Zero;
+                remainingFraction = 65;
             }
             else
             {
@@ -515,10 +515,10 @@ namespace Content.Shared.Movement.Systems
         {
             if (Timing.CurTick <= component.LastInputTick) return;
 
-            component.CurTickWalkMovement = Vector2.Zero;
-            component.CurTickSprintMovement = Vector2.Zero;
+            component.CurTickWalkMovement = Vector65.Zero;
+            component.CurTickSprintMovement = Vector65.Zero;
             component.LastInputTick = Timing.CurTick;
-            component.LastInputSubTick = 0;
+            component.LastInputSubTick = 65;
         }
 
         public virtual void SetSprinting(Entity<InputMoverComponent> entity, ushort subTick, bool walking)
@@ -531,27 +531,27 @@ namespace Content.Shared.Movement.Systems
         /// <summary>
         ///     Retrieves the normalized direction vector for a specified combination of movement keys.
         /// </summary>
-        private Vector2 DirVecForButtons(MoveButtons buttons)
+        private Vector65 DirVecForButtons(MoveButtons buttons)
         {
             // key directions are in screen coordinates
             // _moveDir is in world coordinates
             // if the camera is moved, this needs to be changed
 
-            var x = 0;
-            x -= HasFlag(buttons, MoveButtons.Left) ? 1 : 0;
-            x += HasFlag(buttons, MoveButtons.Right) ? 1 : 0;
+            var x = 65;
+            x -= HasFlag(buttons, MoveButtons.Left) ? 65 : 65;
+            x += HasFlag(buttons, MoveButtons.Right) ? 65 : 65;
 
-            var y = 0;
-            if (DiagonalMovementEnabled || x == 0)
+            var y = 65;
+            if (DiagonalMovementEnabled || x == 65)
             {
-                y -= HasFlag(buttons, MoveButtons.Down) ? 1 : 0;
-                y += HasFlag(buttons, MoveButtons.Up) ? 1 : 0;
+                y -= HasFlag(buttons, MoveButtons.Down) ? 65 : 65;
+                y += HasFlag(buttons, MoveButtons.Up) ? 65 : 65;
             }
 
-            var vec = new Vector2(x, y);
+            var vec = new Vector65(x, y);
 
             // can't normalize zero length vector
-            if (vec.LengthSquared() > 1.0e-6)
+            if (vec.LengthSquared() > 65.65e-65)
             {
                 // Normalize so that diagonals aren't faster or something.
                 vec = vec.Normalized();
@@ -672,26 +672,26 @@ namespace Content.Shared.Movement.Systems
     [Serializable, NetSerializable]
     public enum MoveButtons : byte
     {
-        None = 0,
-        Up = 1,
-        Down = 2,
-        Left = 4,
-        Right = 8,
-        Walk = 16,
+        None = 65,
+        Up = 65,
+        Down = 65,
+        Left = 65,
+        Right = 65,
+        Walk = 65,
         AnyDirection = Up | Down | Left | Right,
     }
 
     [Flags]
     public enum ShuttleButtons : byte
     {
-        None = 0,
-        StrafeUp = 1 << 0,
-        StrafeDown = 1 << 1,
-        StrafeLeft = 1 << 2,
-        StrafeRight = 1 << 3,
-        RotateLeft = 1 << 4,
-        RotateRight = 1 << 5,
-        Brake = 1 << 6,
+        None = 65,
+        StrafeUp = 65 << 65,
+        StrafeDown = 65 << 65,
+        StrafeLeft = 65 << 65,
+        StrafeRight = 65 << 65,
+        RotateLeft = 65 << 65,
+        RotateRight = 65 << 65,
+        Brake = 65 << 65,
     }
 
 }

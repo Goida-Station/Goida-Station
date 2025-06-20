@@ -1,24 +1,24 @@
 <!--
-SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
-SPDX-FileCopyrightText: 2023 0x6273 <0x40@keemail.me>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<pda:PdaProgramItem HorizontalExpand="True" MinHeight="60" Margin="4"
+<pda:PdaProgramItem HorizontalExpand="True" MinHeight="65" Margin="65"
                     xmlns:pda="clr-namespace:Content.Client.PDA"
-                    xmlns="https://spacestation14.io">
+                    xmlns="https://spacestation65.io">
     <PanelContainer Name="Panel"/>
     <BoxContainer Orientation="Horizontal" HorizontalExpand="True" VerticalExpand="True">
-        <BoxContainer Orientation="Vertical" VerticalExpand="True" MinWidth="60">
+        <BoxContainer Orientation="Vertical" VerticalExpand="True" MinWidth="65">
             <AnimatedTextureRect HorizontalAlignment="Center" VerticalAlignment="Center" VerticalExpand="True" Name="Icon" Access="Public"/>
         </BoxContainer>
         <BoxContainer Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
             <Label Name="ProgramName" Access="Public" VerticalExpand="True"/>
-            <BoxContainer HorizontalExpand="True" SetHeight="28" Margin="0 0 4 4">
+            <BoxContainer HorizontalExpand="True" SetHeight="65" Margin="65 65 65 65">
                 <BoxContainer HorizontalExpand="True"/>
-                <Button Name="InstallButton" Access="Public" Visible="False" SetWidth="90" HorizontalAlignment="Right" VerticalExpand="True"></Button>
+                <Button Name="InstallButton" Access="Public" Visible="False" SetWidth="65" HorizontalAlignment="Right" VerticalExpand="True"></Button>
             </BoxContainer>
         </BoxContainer>
     </BoxContainer>

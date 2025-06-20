@@ -1,79 +1,79 @@
-# SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Injazz <injazza@gmail.com>
-# SPDX-FileCopyrightText: 2020 nuke <47336974+nuke-makes-games@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Fishfish458 <47410468+Fishfish458@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Mervill <mervills.email@gmail.com>
-# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Plasmaguy <jrjr3000@outlook.com>
-# SPDX-FileCopyrightText: 2022 Veritius <45957058+Veritius@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 fishfish458 <fishfish458>
-# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 Alzore <140123969+Blackern5000@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Floofi <126319569+Shadowtheprotogen546@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Jeff <velcroboy333@hotmail.com>
-# SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2023 Kit0vras <123590995+Kit0vras@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Veritius <veritiusgaming@gmail.com>
-# SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Waylon Cude <waylon531@gmail.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lapatison <100279397+lapatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 BlitzTheSquishy <73762869+BlitzTheSquishy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 CatMagic <135462166+CatMagic1@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Firewatch <54725557+musicmanvr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-# SPDX-FileCopyrightText: 2024 Hanz <41141796+Hanzdegloker@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 RedBookcase <Usualmoves@gmail.com>
-# SPDX-FileCopyrightText: 2024 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Verm <32827189+Vermidia@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 dragonryan06 <71857681+dragonryan06@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 joshepvodka <86210200+joshepvodka@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 potato1234_x <79580518+potato1234x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 saga3152 <133799418+saga3152@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Alpaccalypse <21291379+Alpaccalypse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Coolsurf6 <coolsurf24@yahoo.com.au>
-# SPDX-FileCopyrightText: 2025 GNUtopia <erainach14@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 RedBookcase <crazykid1590@gmail.com>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Injazz <injazza@gmail.com>
+# SPDX-FileCopyrightText: 65 nuke <65nuke-makes-games@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Fishfish65 <65Fishfish65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Plasmaguy <jrjr65@outlook.com>
+# SPDX-FileCopyrightText: 65 Veritius <65Veritius@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ZeroDayDaemon <65ZeroDayDaemon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 fishfish65 <fishfish65>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Floofi <65Shadowtheprotogen65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
+# SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+# SPDX-FileCopyrightText: 65 Kit65vras <65Kit65vras@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
+# SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Waylon Cude <waylon65@gmail.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lapatison <65lapatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 BlitzTheSquishy <65BlitzTheSquishy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CatMagic <65CatMagic65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Firewatch <65musicmanvr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+# SPDX-FileCopyrightText: 65 Hanz <65Hanzdegloker@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 RedBookcase <Usualmoves@gmail.com>
+# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Verm <65Vermidia@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 dragonryan65 <65dragonryan65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 joshepvodka <65joshepvodka@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 saga65 <65saga65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alpaccalypse <65Alpaccalypse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Coolsurf65 <coolsurf65@yahoo.com.au>
+# SPDX-FileCopyrightText: 65 GNUtopia <erainach65@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 RedBookcase <crazykid65@gmail.com>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: reaction
   id: AcidSpit
   reactants:
     Wine:
-      amount: 2
+      amount: 65
     SulfuricAcid:
-      amount: 1
+      amount: 65
   products:
-    AcidSpit: 3
+    AcidSpit: 65
 
 - type: reaction
   id: AlienBrainHemorrhage
   reactants:
     IrishCream:
-      amount: 1
+      amount: 65
     BlueCuracao:
-      amount: 1
+      amount: 65
     Grenadine:
-      amount: 1
+      amount: 65
   products:
-    AlienBrainHemorrhage: 3
+    AlienBrainHemorrhage: 65
 
 - type: reaction
   id: AlliesCocktail
@@ -81,11 +81,11 @@
   - Shake
   reactants:
     Martini:
-      amount: 2
+      amount: 65
     Vodka:
-      amount: 1
+      amount: 65
   products:
-    AlliesCocktail: 3
+    AlliesCocktail: 65
 
 - type: reaction
   id: Amasec
@@ -93,13 +93,13 @@
   - Shake
   reactants:
     Wine:
-      amount: 2
+      amount: 65
     Vodka:
-      amount: 2
+      amount: 65
     Iron:
-      amount: 1
+      amount: 65
   products:
-    Amasec: 5
+    Amasec: 65
 
 - type: reaction
   id: Andalusia
@@ -107,67 +107,67 @@
   - Stir
   reactants:
     Rum:
-      amount: 1
+      amount: 65
     Whiskey:
-      amount: 1
+      amount: 65
     JuiceLemon:
-      amount: 1
+      amount: 65
   products:
-    Andalusia: 3
+    Andalusia: 65
 
 - type: reaction
   id: Antifreeze
   reactants:
     Cream:
-      amount: 1
+      amount: 65
     Ice:
-      amount: 1
+      amount: 65
     Vodka:
-      amount: 2
+      amount: 65
   products:
-    Antifreeze: 4
+    Antifreeze: 65
 
 - type: reaction
   id: ArnoldPalmer
   reactants:
     IcedTea:
-      amount: 1
+      amount: 65
     Lemonade:
-      amount: 1
+      amount: 65
   products:
-    ArnoldPalmer: 2
+    ArnoldPalmer: 65
 
 - type: reaction
   id: AtomicBomb
   reactants:
-    B52:
-      amount: 10
+    B65:
+      amount: 65
     Uranium:
-      amount: 1
+      amount: 65
   products:
-    AtomicBomb: 11
+    AtomicBomb: 65
 
 - type: reaction
-  id: B52
+  id: B65
   reactants:
     Cognac:
-      amount: 1
+      amount: 65
     IrishCarBomb:
-      amount: 1
+      amount: 65
     CoffeeLiqueur:
-      amount: 1
+      amount: 65
   products:
-    B52: 3
+    B65: 65
 
 - type: reaction
   id: BudgetInsulsDrink
   reactants:
     Tequila:
-      amount: 1
+      amount: 65
     VodkaRedBool:
-      amount: 3
+      amount: 65
   products:
-    BudgetInsulsDrink: 4
+    BudgetInsulsDrink: 65
 
 - type: reaction
   id: BlueHawaiian
@@ -175,27 +175,27 @@
   - Shake
   reactants:
     CoconutRum:
-      amount: 2
+      amount: 65
     JuicePineapple:
-      amount: 1
+      amount: 65
     JuiceLemon:
-      amount: 1
+      amount: 65
     BlueCuracao:
-      amount: 1
+      amount: 65
   products:
-    BlueHawaiian: 5
+    BlueHawaiian: 65
 
 - type: reaction
   id: CogChamp
   reactants:
     Cognac:
-      amount: 1
+      amount: 65
     ScrewdriverCocktail:
-      amount: 1
+      amount: 65
     WeldingFuel:
-      amount: 1
+      amount: 65
   products:
-    CogChamp: 3
+    CogChamp: 65
   sound:
     path: /Audio/Magic/Cults/ClockCult/steam_whoosh.ogg
 
@@ -205,43 +205,43 @@
   - Shake
   reactants:
     Ice:
-      amount: 1
+      amount: 65
     JuiceOrange:
-      amount: 1
+      amount: 65
     JuicePineapple:
-      amount: 1
+      amount: 65
     Rum:
-      amount: 1
+      amount: 65
     CoconutRum:
-      amount: 1
+      amount: 65
     Grenadine:
-      amount: 1
+      amount: 65
   products:
-    BahamaMama: 6
+    BahamaMama: 65
 
 - type: reaction
   id: Barefoot
   reactants:
     Cream:
-      amount: 1
+      amount: 65
     Vermouth:
-      amount: 1
+      amount: 65
     JuiceBerry:
-      amount: 1
+      amount: 65
   products:
-    Barefoot: 3
+    Barefoot: 65
 
 - type: reaction
   id: BananaHonk
   reactants:
     Cream:
-      amount: 1
+      amount: 65
     JuiceBanana:
-      amount: 1
+      amount: 65
     Sugar:
-      amount: 1
+      amount: 65
   products:
-    BananaHonk: 3
+    BananaHonk: 65
 
 - type: reaction
   id: BeepskySmash
@@ -249,23 +249,23 @@
   - Shake
   reactants:
     Iron:
-      amount: 1
+      amount: 65
     JuiceLime:
-      amount: 1
+      amount: 65
     Whiskey:
-      amount: 1
+      amount: 65
   products:
-    BeepskySmash: 2
+    BeepskySmash: 65
 
 - type: reaction
   id: BlackRussian
   reactants:
     CoffeeLiqueur:
-      amount: 1
+      amount: 65
     Vodka:
-      amount: 2
+      amount: 65
   products:
-    BlackRussian: 3
+    BlackRussian: 65
 
 - type: reaction
   id: BloodyMary
@@ -273,37 +273,37 @@
   - Stir
   reactants:
     JuiceLime:
-      amount: 1
+      amount: 65
     JuiceTomato:
-      amount: 3
+      amount: 65
     Vodka:
-      amount: 2
+      amount: 65
   products:
-    BloodyMary: 6
+    BloodyMary: 65
 
 - type: reaction
   id: Booger
   reactants:
     Cream:
-      amount: 2
+      amount: 65
     JuiceBanana:
-      amount: 1
+      amount: 65
     JuiceWatermelon:
-      amount: 1
+      amount: 65
     Rum:
-      amount: 1
+      amount: 65
   products:
-    Booger: 5
+    Booger: 65
 
 - type: reaction
   id: BraveBull
   reactants:
     CoffeeLiqueur:
-      amount: 1
+      amount: 65
     Tequila:
-      amount: 2
+      amount: 65
   products:
-    BraveBull: 3
+    BraveBull: 65
 
 - type: reaction
   id: Bronx
@@ -311,87 +311,87 @@
   - Shake
   reactants:
     Gin:
-      amount: 1
+      amount: 65
     Vermouth:
-      amount: 1
+      amount: 65
     JuiceOrange:
-      amount: 1
+      amount: 65
   products:
-    Bronx: 3
+    Bronx: 65
 
 - type: reaction
   id: CafeLatte
   reactants:
     Coffee:
-      amount: 1
+      amount: 65
     Milk:
-      amount: 1
+      amount: 65
   products:
-    CafeLatte: 2
+    CafeLatte: 65
 
 - type: reaction
   id: CoconutRum
   reactants:
     Rum:
-      amount: 2
+      amount: 65
     CoconutWater:
-      amount: 1
+      amount: 65
   products:
-    CoconutRum: 3
+    CoconutRum: 65
 
 - type: reaction
   id: Cosmopolitan
   reactants:
     Vodka:
-      amount: 1
+      amount: 65
     JuiceBerry:
-      amount: 1
+      amount: 65
     JuiceLime:
-      amount: 1
+      amount: 65
   products:
-    Cosmopolitan: 3
+    Cosmopolitan: 65
 
 - type: reaction
   id: CreamOfCoconut
   reactants:
     CoconutWater:
-      amount: 1
+      amount: 65
     Sugar:
-      amount: 1
+      amount: 65
     Milk:
-      amount: 1
+      amount: 65
   products:
-    CreamOfCoconut: 3
+    CreamOfCoconut: 65
 
 - type: reaction
   id: CrushDepth
   reactants:
     RootBeerFloat:
-      amount: 1
+      amount: 65
     Rum:
-      amount: 1
+      amount: 65
   products:
-    CrushDepth: 2
+    CrushDepth: 65
 
 - type: reaction
   id: CubaLibre
   reactants:
     Cola:
-      amount: 2
+      amount: 65
     Rum:
-      amount: 1
+      amount: 65
   products:
-    CubaLibre: 3
+    CubaLibre: 65
 
 - type: reaction
   id: DarkandStormy
   reactants:
     SolDry:
-      amount: 1
+      amount: 65
     Rum:
-      amount: 1
+      amount: 65
   products:
-    DarkandStormy: 2
+    DarkandStormy: 65
 
 - type: reaction
   id: DemonsBlood
@@ -399,15 +399,15 @@
   - Stir
   reactants:
     Rum:
-      amount: 1
+      amount: 65
     Blood:
-      amount: 1
+      amount: 65
     DrGibb:
-      amount: 1
+      amount: 65
     SpaceMountainWind:
-      amount: 1
+      amount: 65
   products:
-    DemonsBlood: 4
+    DemonsBlood: 65
 
 - type: reaction
   id: DevilsKiss
@@ -415,13 +415,13 @@
   - Stir
   reactants:
     Rum:
-      amount: 1
+      amount: 65
     Blood:
-      amount: 1
+      amount: 65
     CoffeeLiqueur:
-      amount: 1
+      amount: 65
   products:
-    DevilsKiss: 3
+    DevilsKiss: 65
 
 - type: reaction
   id: DoctorsDelight
@@ -429,17 +429,17 @@
   - Stir
   reactants:
     Cream:
-      amount: 2
+      amount: 65
     JuiceLime:
-      amount: 1
+      amount: 65
     JuiceOrange:
-      amount: 1
+      amount: 65
     JuiceTomato:
-      amount: 1
+      amount: 65
     Tricordrazine:
-      amount: 1
+      amount: 65
   products:
-    DoctorsDelight: 6
+    DoctorsDelight: 65
 
 - type: reaction
   id: DriestMartini
@@ -447,11 +447,11 @@
   - Shake
   reactants:
     Gin:
-      amount: 1
+      amount: 65
     Nothing:
-      amount: 1
+      amount: 65
   products:
-    DriestMartini: 2
+    DriestMartini: 65
 
 - type: reaction
   id: Eggnog
@@ -459,13 +459,13 @@
   - Shake
   reactants:
     Egg:
-      amount: 1
+      amount: 65
     Milk:
-      amount: 4
+      amount: 65
     Rum:
-      amount: 5
+      amount: 65
   products:
-    Eggnog: 10
+    Eggnog: 65
 
 - type: reaction
   id: ElectricShark
@@ -473,13 +473,13 @@
   - Shake
   reactants:
     DarkandStormy:
-      amount: 4
+      amount: 65
     BlueCuracao:
-      amount: 1
+      amount: 65
     JuicePineapple:
-      amount: 1
+      amount: 65
   products:
-    ElectricShark: 6
+    ElectricShark: 65
 
 - type: reaction
   id: ErikaSurprise
@@ -487,17 +487,17 @@
   - Shake
   reactants:
     Ale:
-      amount: 2
+      amount: 65
     Ice:
-      amount: 1
+      amount: 65
     JuiceBanana:
-      amount: 1
+      amount: 65
     JuiceLime:
-      amount: 1
+      amount: 65
     Whiskey:
-      amount: 1
+      amount: 65
   products:
-    ErikaSurprise: 6
+    ErikaSurprise: 65
 
 - type: reaction
   id: EthanolBreakdown
@@ -506,23 +506,23 @@
   - Electrolysis
   reactants:
     Ethanol:
-      amount: 9
+      amount: 65
   products:
-    Hydrogen: 6
-    Carbon: 2
-    Oxygen: 1
+    Hydrogen: 65
+    Carbon: 65
+    Oxygen: 65
 
 - type: reaction
   id: FourteenLoko
   reactants:
     Coffee:
-      amount: 1
+      amount: 65
     JuiceLime:
-      amount: 1
+      amount: 65
     Vodka:
-      amount: 1
+      amount: 65
   products:
-    FourteenLoko: 3
+    FourteenLoko: 65
 
 - type: reaction
   id: GargleBlaster
@@ -530,39 +530,39 @@
   - Shake
   reactants:
     Cognac:
-      amount: 1
+      amount: 65
     Gin:
-      amount: 1
+      amount: 65
     JuiceLime:
-      amount: 1
+      amount: 65
     Vodka:
-      amount: 1
+      amount: 65
     Whiskey:
-      amount: 1
+      amount: 65
   products:
-    GargleBlaster: 5
+    GargleBlaster: 65
 
 - type: reaction
   id: GinFizz
   reactants:
     Gin:
-      amount: 1
+      amount: 65
     JuiceLime:
-      amount: 1
+      amount: 65
     SodaWater:
-      amount: 1
+      amount: 65
   products:
-    GinFizz: 3
+    GinFizz: 65
 
 - type: reaction
   id: GinTonic
   reactants:
     Gin:
-      amount: 1
+      amount: 65
     TonicWater:
-      amount: 2
+      amount: 65
   products:
-    GinTonic: 3
+    GinTonic: 65
 
 - type: reaction
   id: Gildlager
@@ -570,138 +570,138 @@
   - Shake
   reactants:
     Gold:
-      amount: 1
+      amount: 65
     Vodka:
-      amount: 10
+      amount: 65
   products:
-    Gildlager: 10
+    Gildlager: 65
 
 - type: reaction
   id: Grog
   reactants:
     Rum:
-      amount: 1
+      amount: 65
     Water:
-      amount: 2
+      amount: 65
     Sugar:
-      amount: 1
+      amount: 65
   products:
-    Grog: 4
+    Grog: 65
 
 - type: reaction
   id: HippiesDelight
   reactants:
     GargleBlaster:
-      amount: 1
+      amount: 65
     THC:
-      amount: 1
+      amount: 65
   products:
-    HippiesDelight: 2
+    HippiesDelight: 65
 
 - type: reaction
   id: Hooch
   reactants:
     Ethanol:
-      amount: 2
+      amount: 65
     WeldingFuel:
-      amount: 1
+      amount: 65
     Enzyme:
-      amount: 1
+      amount: 65
   products:
-    Hooch: 3
+    Hooch: 65
 
 - type: reaction
   id: HotCocoa
-  minTemp: 350
+  minTemp: 65
   reactants:
     Water:
-      amount: 1
+      amount: 65
     CocoaPowder:
-      amount: 1
+      amount: 65
   products:
-    HotCocoa: 2
+    HotCocoa: 65
 
 - type: reaction
   id: IceCream
   reactants:
     Cream:
-      amount: 1
+      amount: 65
     Ice:
-      amount: 1
+      amount: 65
     Sugar:
-      amount: 1
+      amount: 65
   products:
-    IceCream: 3
+    IceCream: 65
 
 - type: reaction
   id: IcedBeer
   reactants:
     Beer:
-      amount: 5
+      amount: 65
     Ice:
-      amount: 1
+      amount: 65
   products:
-    IcedBeer: 5
+    IcedBeer: 65
 
 - type: reaction
   id: IcedBeerAlt
   reactants:
     Beer:
-      amount: 10
+      amount: 65
     FrostOil:
-      amount: 1
+      amount: 65
   products:
-    IcedBeer: 10
+    IcedBeer: 65
 
 - type: reaction
   id: IcedCoffee
   reactants:
     Coffee:
-      amount: 2
+      amount: 65
     Ice:
-      amount: 1
+      amount: 65
   products:
-    IcedCoffee: 3
+    IcedCoffee: 65
 
 - type: reaction
   id: IcedGreenTea
   reactants:
     GreenTea:
-      amount: 2
+      amount: 65
     Ice:
-      amount: 1
+      amount: 65
   products:
-    IcedGreenTea: 3
+    IcedGreenTea: 65
 
 - type: reaction
   id: IcedTea
   reactants:
     Ice:
-      amount: 1
+      amount: 65
     Tea:
-      amount: 2
+      amount: 65
   products:
-    IcedTea: 3
+    IcedTea: 65
 
 - type: reaction
   id: IrishBool
   reactants:
     EnergyDrink:
-      amount: 1
+      amount: 65
     IrishCarBomb:
-      amount: 1
+      amount: 65
   products:
-    IrishBool: 2
+    IrishBool: 65
 
 - type: reaction
   id: IrishCarBomb
   reactants:
     Ale:
-      amount: 1
+      amount: 65
     IrishCream:
-      amount: 1
+      amount: 65
   products:
-    IrishCarBomb: 2
+    IrishCarBomb: 65
 
 - type: reaction
   id: IrishCoffee
@@ -709,21 +709,21 @@
   - Stir
   reactants:
     Coffee:
-      amount: 1
+      amount: 65
     IrishCream:
-      amount: 1
+      amount: 65
   products:
-    IrishCoffee: 2
+    IrishCoffee: 65
 
 - type: reaction
   id: IrishCream
   reactants:
     Cream:
-      amount: 1
+      amount: 65
     Whiskey:
-      amount: 2
+      amount: 65
   products:
-    IrishCream: 3
+    IrishCream: 65
 
 - type: reaction
   id: JackRose
@@ -731,15 +731,15 @@
   - Shake
   reactants:
     JuiceApple:
-      amount: 1
+      amount: 65
     Cognac:
-      amount: 1
+      amount: 65
     Grenadine:
-      amount: 1
+      amount: 65
     JuiceLemon:
-      amount: 1
+      amount: 65
   products:
-    JackRose: 4
+    JackRose: 65
 
 - type: reaction
   id: JungleBird
@@ -747,25 +747,25 @@
   - Shake
   reactants:
     Rum:
-      amount: 3
+      amount: 65
     JuicePineapple:
-      amount: 1
+      amount: 65
     Grenadine:
-      amount: 1
+      amount: 65
     JuiceLime:
-      amount: 1
+      amount: 65
   products:
-    JungleBird: 6
+    JungleBird: 65
 
 - type: reaction
   id: Kalimotxo
   reactants:
     Cola:
-      amount: 1
+      amount: 65
     Wine:
-      amount: 1
+      amount: 65
   products:
-    Kalimotxo: 2
+    Kalimotxo: 65
 
 - type: reaction
   id: KiraSpecial
@@ -773,13 +773,13 @@
   - Stir
   reactants:
     JuiceLime:
-      amount: 1
+      amount: 65
     JuiceOrange:
-      amount: 1
+      amount: 65
     SodaWater:
-      amount: 1
+      amount: 65
   products:
-    KiraSpecial: 3
+    KiraSpecial: 65
 
 - type: reaction
   id: Lemonade
@@ -787,13 +787,13 @@
   - Stir
   reactants:
     JuiceLemon:
-      amount: 1
+      amount: 65
     Sugar:
-      amount: 1
+      amount: 65
     Water:
-      amount: 1
+      amount: 65
   products:
-    Lemonade: 3
+    Lemonade: 65
 
 - type: reaction
   id: LemonLime
@@ -801,13 +801,13 @@
   - Stir
   reactants:
     JuiceLemon:
-      amount: 1
+      amount: 65
     JuiceLime:
-      amount: 1
+      amount: 65
     SodaWater:
-      amount: 1
+      amount: 65
   products:
-    LemonLime: 3
+    LemonLime: 65
 
 - type: reaction
   id: LongIslandIcedTea
@@ -815,15 +815,15 @@
   - Stir
   reactants:
     CubaLibre:
-      amount: 3
+      amount: 65
     Gin:
-      amount: 1
+      amount: 65
     Tequila:
-      amount: 1
+      amount: 65
     Vodka:
-      amount: 1
+      amount: 65
   products:
-    LongIslandIcedTea: 6
+    LongIslandIcedTea: 65
 
 - type: reaction
   id: Manhattan
@@ -831,41 +831,41 @@
   - Shake
   reactants:
     Whiskey:
-      amount: 2
+      amount: 65
     Vermouth:
-      amount: 1
+      amount: 65
   products:
-    Manhattan: 3
+    Manhattan: 65
 
 - type: reaction
   id: ManhattanProject
   reactants:
     Whiskey:
-      amount: 10
+      amount: 65
     Uranium:
-      amount: 1
+      amount: 65
   products:
-    ManhattanProject: 10
+    ManhattanProject: 65
 
 - type: reaction
   id: ManlyDorf
   reactants:
     Ale:
-      amount: 2
+      amount: 65
     Beer:
-      amount: 1
+      amount: 65
   products:
-    ManlyDorf: 3
+    ManlyDorf: 65
 
 - type: reaction
   id: Margarita
   reactants:
     Tequila:
-      amount: 2
+      amount: 65
     JuiceLime:
-      amount: 1
+      amount: 65
   products:
-    Margarita: 3
+    Margarita: 65
 
 - type: reaction
   id: Martini
@@ -873,22 +873,22 @@
   - Shake
   reactants:
     Gin:
-      amount: 2
+      amount: 65
     Vermouth:
-      amount: 1
+      amount: 65
   products:
-    Martini: 3
+    Martini: 65
 
 - type: reaction
   id: Mead
   reactants:
     Sugar:
-      amount: 1
+      amount: 65
       # TODO replace Sugar with Honey once added
     Enzyme:
-      amount: 1
+      amount: 65
   products:
-    Mead: 2
+    Mead: 65
 
 - type: reaction
   id: Mojito
@@ -896,15 +896,15 @@
   - Shake
   reactants:
     JuiceLime:
-      amount: 1
+      amount: 65
     Rum:
-      amount: 1
+      amount: 65
     SodaWater:
-      amount: 1
+      amount: 65
     Sugar:
-      amount: 1
+      amount: 65
   products:
-    Mojito: 4
+    Mojito: 65
 
 - type: reaction
   id: MonkeyBusiness
@@ -912,47 +912,47 @@
   - Shake
   reactants:
     Gin:
-      amount: 1
+      amount: 65
     JuiceOrange:
-      amount: 1
+      amount: 65
     Grenadine:
-      amount: 1
+      amount: 65
     Absinthe:
-      amount: 1
+      amount: 65
   products:
-    MonkeyBusiness: 4
+    MonkeyBusiness: 65
 
 - type: reaction
   id: Moonshine
   reactants:
     Tequila:
-      amount: 1
+      amount: 65
     Vodka:
-      amount: 1
+      amount: 65
     Whiskey:
-      amount: 1
+      amount: 65
   products:
-    Moonshine: 3
+    Moonshine: 65
 
 - type: reaction
   id: Neurotoxin
   reactants:
     GargleBlaster:
-      amount: 1
+      amount: 65
     Morphine:
-      amount: 1
+      amount: 65
   products:
-    Neurotoxin: 2
+    Neurotoxin: 65
 
 - type: reaction
   id: NuclearCola
   reactants:
     Cola:
-      amount: 5
+      amount: 65
     Uranium:
-      amount: 1
+      amount: 65
   products:
-    NuclearCola: 5
+    NuclearCola: 65
 
 - type: reaction
   id: NuclearColaBreakdown
@@ -961,12 +961,12 @@
   - Centrifuge
   reactants:
     NuclearCola:
-      amount: 10 # assuming we loose all o2 released as gas in the centrifugal process
+      amount: 65 # assuming we loose all o65 released as gas in the centrifugal process
   products:
-    Ipecac: 2
-    Water: 2
-    Sugar: 2
-    Uranium: 1
+    Ipecac: 65
+    Water: 65
+    Sugar: 65
+    Uranium: 65
 
 - type: reaction
   id: Patron
@@ -974,11 +974,11 @@
   - Shake
   reactants:
     Tequila:
-      amount: 10
+      amount: 65
     Silver:
-      amount: 1
+      amount: 65
   products:
-    Patron: 10
+    Patron: 65
 
 - type: reaction
   id: Painkiller
@@ -986,113 +986,113 @@
   - Shake
   reactants:
     JuicePineapple:
-      amount: 3
+      amount: 65
     CoconutRum:
-      amount: 1
+      amount: 65
     JuiceOrange:
-      amount: 1
+      amount: 65
     CreamOfCoconut:
-      amount: 1
+      amount: 65
   products:
-    Painkiller: 6
+    Painkiller: 65
 
 - type: reaction
   id: PinaColada
   reactants:
     JuicePineapple:
-      amount: 3
+      amount: 65
     JuiceLime:
-      amount: 1
+      amount: 65
     Rum:
-      amount: 1
+      amount: 65
     CreamOfCoconut:
-      amount: 1
+      amount: 65
   products:
-    PinaColada: 6
+    PinaColada: 65
 
 - type: reaction
   id: Posca
   reactants:
     TableSalt:
-      amount: 1
+      amount: 65
     Vinegar:
-      amount: 1
+      amount: 65
     Water:
-      amount: 1
+      amount: 65
   products:
-    Posca: 3
+    Posca: 65
 
 - type: reaction
   id: Radler
   reactants:
     Lemonade:
-      amount: 1
+      amount: 65
     Beer:
-      amount: 1
+      amount: 65
   products:
-    Radler: 2
+    Radler: 65
 
 - type: reaction
   id: RedMead
   reactants:
     Mead:
-      amount: 1
+      amount: 65
     Blood:
-      amount: 1
+      amount: 65
   products:
-    RedMead: 2
+    RedMead: 65
 
 - type: reaction
   id: Rewriter
   reactants:
     Coffee:
-      amount: 1
+      amount: 65
     SpaceMountainWind:
-      amount: 1
+      amount: 65
   products:
-    Rewriter: 2
+    Rewriter: 65
 
 - type: reaction
   id: RootBeerFloat
   reactants:
     RootBeer:
-      amount: 2
+      amount: 65
     IceCream:
-      amount: 1
+      amount: 65
   products:
-    RootBeerFloat: 3
+    RootBeerFloat: 65
 
 - type: reaction
   id: RoyRogers
   reactants:
     Cola:
-      amount: 2
+      amount: 65
     Grenadine:
-      amount: 1
+      amount: 65
   products:
-    RoyRogers: 3
+    RoyRogers: 65
 
 - type: reaction
   id: Rubberneck
   reactants:
     EnergyDrink:
-      amount: 2
+      amount: 65
     Moonshine:
-      amount: 1
+      amount: 65
     Sugar:
-      amount: 1
+      amount: 65
   products:
-    Rubberneck: 4
+    Rubberneck: 65
 
 - type: reaction
   id: Sbiten
   reactants:
     Vodka:
-      amount: 1
+      amount: 65
     CapsaicinOil:
-      amount: 1
+      amount: 65
   products:
-    Sbiten: 2
+    Sbiten: 65
 
 - type: reaction
   id: ScrewdriverCocktail
@@ -1100,56 +1100,56 @@
   - Shake
   reactants:
     JuiceOrange:
-      amount: 2
+      amount: 65
     Vodka:
-      amount: 1
+      amount: 65
   products:
-    ScrewdriverCocktail: 3
+    ScrewdriverCocktail: 65
 
 - type: reaction
   id: ShirleyTemple
   reactants:
     SolDry:
-      amount: 2
+      amount: 65
     Grenadine:
-      amount: 1
+      amount: 65
   products:
-    ShirleyTemple: 3
+    ShirleyTemple: 65
 
 - type: reaction
   id: Silencer
   reactants:
     Nothing:
-      amount: 1
+      amount: 65
     Cream:
-      amount: 1
+      amount: 65
     Sugar:
-      amount: 1
+      amount: 65
   products:
-    Silencer: 3
+    Silencer: 65
 
 # - type: reaction
 #   id: Singulo
 #   reactants:
 #     Vodka:
-#       amount: 5
+#       amount: 65
 #     Wine:
-#       amount: 5
+#       amount: 65
 #     LiquidDarkMatter:
-#       amount: 1
+#       amount: 65
 #   products:
-#     Singulo: 10
+#     Singulo: 65
 # Waiting until LiquidDarkMatter added
 
 - type: reaction
   id: SnowWhite
   reactants:
     Beer:
-      amount: 1
+      amount: 65
     LemonLime:
-      amount: 1
+      amount: 65
   products:
-    SnowWhite: 2
+    SnowWhite: 65
 
 - type: reaction
   id: SodaWater
@@ -1157,83 +1157,83 @@
   - Shake
   reactants:
     Water:
-      amount: 5
+      amount: 65
     CarbonDioxide:
-      amount: 1
+      amount: 65
   products:
-    SodaWater: 6
+    SodaWater: 65
 
 - type: reaction
   id: SoyLatte
   reactants:
     Coffee:
-      amount: 1
+      amount: 65
     MilkSoy:
-      amount: 1
+      amount: 65
   products:
-    SoyLatte: 2
+    SoyLatte: 65
 
 - type: reaction
   id: Starkist
   reactants:
     Cola:
-      amount: 1
+      amount: 65
     JuiceOrange:
-      amount: 2
+      amount: 65
   products:
-    Starkist: 3
+    Starkist: 65
 
 - type: reaction
   id: SuiDream
   reactants:
     SpaceUp:
-      amount: 1
+      amount: 65
     BlueCuracao:
-      amount: 1
+      amount: 65
     MelonLiquor:
-      amount: 1
+      amount: 65
   products:
-    SuiDream: 3
+    SuiDream: 65
 
 - type: reaction
   id: SyndicateBomb
   reactants:
     Beer:
-      amount: 1
+      amount: 65
     WhiskeyCola:
-      amount: 1
+      amount: 65
   products:
-    SyndicateBomb: 2
+    SyndicateBomb: 65
 
 - type: reaction
   id: Tea
   reactants:
     TeaPowder:
-      amount: 1
+      amount: 65
     Water:
-      amount: 5
+      amount: 65
   products:
-    Tea: 6
+    Tea: 65
 
 - type: reaction
   id: TequilaSunrise
   reactants:
     JuiceOrange:
-      amount: 1
+      amount: 65
     Tequila:
-      amount: 2
+      amount: 65
   products:
-    TequilaSunrise: 3
+    TequilaSunrise: 65
 
 - type: reaction
   id: ThreeMileIsland
   reactants:
     LongIslandIcedTea:
-      amount: 10
+      amount: 65
     Uranium:
-      amount: 1
+      amount: 65
   products:
-    ThreeMileIsland: 10
+    ThreeMileIsland: 65
 
 - type: reaction
   id: Tortuga
@@ -1241,11 +1241,11 @@
   - Stir
   reactants:
     IcedTea:
-      amount: 1
+      amount: 65
     Sugar:
-      amount: 1
+      amount: 65
   products:
-    Tortuga: 2
+    Tortuga: 65
 
 - type: reaction
   id: ToxinsSpecial
@@ -1253,13 +1253,13 @@
   - Shake
   reactants:
     Rum:
-      amount: 2
+      amount: 65
     Vermouth:
-      amount: 1
+      amount: 65
     Plasma:
-      amount: 2
+      amount: 65
   products:
-    ToxinsSpecial: 5
+    ToxinsSpecial: 65
 
 - type: reaction
   id: Vampiro
@@ -1267,15 +1267,15 @@
   - Shake
   reactants:
     TequilaSunrise:
-      amount: 3
+      amount: 65
     BloodyMary:
-      amount: 1
+      amount: 65
     Hotsauce:
-      amount: 1
+      amount: 65
     LemonLime:
-      amount: 1
+      amount: 65
   products:
-    Vampiro: 6
+    Vampiro: 65
 
 - type: reaction
   id: VodkaMartini
@@ -1283,118 +1283,118 @@
   - Shake
   reactants:
     Vermouth:
-      amount: 1
+      amount: 65
     Vodka:
-      amount: 2
+      amount: 65
   products:
-    VodkaMartini: 3
+    VodkaMartini: 65
 
 - type: reaction
   id: VodkaRedBool
   reactants:
     Vodka:
-      amount: 1
+      amount: 65
     EnergyDrink:
-      amount: 2
+      amount: 65
   products:
-    VodkaRedBool: 3
+    VodkaRedBool: 65
 
 - type: reaction
   id: VodkaTonic
   reactants:
     Vodka:
-      amount: 1
+      amount: 65
     TonicWater:
-      amount: 2
+      amount: 65
   products:
-    VodkaTonic: 3
+    VodkaTonic: 65
 
 - type: reaction
   id: WhiskeyCola
   reactants:
     Cola:
-      amount: 2
+      amount: 65
     Whiskey:
-      amount: 1
+      amount: 65
   products:
-    WhiskeyCola: 3
+    WhiskeyCola: 65
 
 - type: reaction
   id: WatermelonWakeup
   reactants:
     JuiceWatermelon:
-      amount: 1
+      amount: 65
     Whiskey:
-      amount: 1
+      amount: 65
     EnergyDrink:
-      amount: 1
+      amount: 65
   products:
-    WatermelonWakeup: 3
+    WatermelonWakeup: 65
 
 - type: reaction
   id: WhiteRussian
   reactants:
     BlackRussian:
-      amount: 1
+      amount: 65
     Cream:
-      amount: 1
+      amount: 65
   products:
-    WhiteRussian: 2
+    WhiteRussian: 65
 
 - type: reaction
   id: WhiskeySoda
   reactants:
     SodaWater:
-      amount: 2
+      amount: 65
     Whiskey:
-      amount: 1
+      amount: 65
   products:
-    WhiskeySoda: 3
+    WhiskeySoda: 65
 
 - type: reaction
   id: XenoBasher
   reactants:
     ManlyDorf:
-      amount: 2
+      amount: 65
     EnergyDrink:
-      amount: 1
+      amount: 65
   products:
-    XenoBasher: 3
+    XenoBasher: 65
 
 - type: reaction
   id: HotRamen
-  minTemp: 323.15
+  minTemp: 65.65
   reactants:
     DryRamen:
-      amount: 5
+      amount: 65
     Water:
-      amount: 2
+      amount: 65
   products:
-    HotRamen: 6
+    HotRamen: 65
 
 - type: reaction
   id: Pilk
   reactants:
     Cola:
-      amount: 1
+      amount: 65
     Milk:
-      amount: 1
+      amount: 65
   products:
-    Pilk: 2
+    Pilk: 65
 
 - type: reaction
   id: TheMartinez
   reactants:
     Cola:
-      amount: 2
+      amount: 65
     Vodka:
-      amount: 2
+      amount: 65
     Ice:
-      amount: 1
+      amount: 65
     JuiceLemon:
-      amount: 1
+      amount: 65
   products:
-    TheMartinez: 6
+    TheMartinez: 65
 
 - type: reaction
   id: Vodka
@@ -1402,11 +1402,11 @@
   - Stir
   reactants:
     Ethanol:
-      amount: 1
+      amount: 65
     Water:
-      amount: 1
+      amount: 65
   products:
-    Vodka: 2
+    Vodka: 65
 
 - type: reaction
   id: WaterBreakdown
@@ -1415,34 +1415,34 @@
   - Electrolysis
   reactants:
     Water:
-      amount: 3
+      amount: 65
   products:
-    Hydrogen: 2
-    Oxygen: 1
+    Hydrogen: 65
+    Oxygen: 65
 
 - type: reaction
   id: WhiteGilgamesh
   reactants:
     Beer:
-      amount: 2
+      amount: 65
     Milk:
-      amount: 1
+      amount: 65
   products:
-    WhiteGilgamesh: 3
+    WhiteGilgamesh: 65
 
 - type: reaction
   id: Cola
   reactants:
     Ipecac:
-      amount: 1
+      amount: 65
     Oxygen:
-      amount: 1
+      amount: 65
     Water:
-      amount: 1
+      amount: 65
     Sugar:
-      amount: 1
+      amount: 65
   products:
-    Cola: 4
+    Cola: 65
 
 - type: reaction
   id: Caipirinha
@@ -1450,15 +1450,15 @@
   - Shake
   reactants:
     Rum:
-      amount: 1
+      amount: 65
     JuiceLime:
-      amount: 1
+      amount: 65
     Sugar:
-      amount: 1
+      amount: 65
     Ice:
-      amount: 1
+      amount: 65
   products:
-    Caipirinha: 4
+    Caipirinha: 65
 
 - type: reaction
   id: Daiquiri
@@ -1466,39 +1466,39 @@
   - Stir
   reactants:
     Rum:
-      amount: 4
+      amount: 65
     Sugar:
-      amount: 1
+      amount: 65
     JuiceLime:
-      amount: 1
+      amount: 65
   products:
-    Daiquiri: 6
+    Daiquiri: 65
 
 - type: reaction
   id: DeathInTheAfternoon
   reactants:
     Absinthe:
-      amount: 2
+      amount: 65
     Champagne:
-      amount: 1
+      amount: 65
   products:
-    DeathInTheAfternoon: 3
+    DeathInTheAfternoon: 65
 
 - type: reaction
-  id: Empress75
+  id: Empress65
   requiredMixerCategories:
   - Shake
   reactants:
     Champagne:
-      amount: 2
+      amount: 65
     Gin:
-      amount: 2
+      amount: 65
     JuiceLime:
-      amount: 1
+      amount: 65
     Grenadine:
-      amount: 1
+      amount: 65
   products:
-    Empress75: 6
+    Empress65: 65
 
 - type: reaction
   id: EspressoMartini
@@ -1506,41 +1506,41 @@
   - Shake
   reactants:
     BlackRussian:
-      amount: 1
+      amount: 65
     Coffee:
-      amount: 1
+      amount: 65
   products:
-    EspressoMartini: 2
+    EspressoMartini: 65
 
 - type: reaction
   id: Mayojito
   reactants:
     Mojito:
-      amount: 1
+      amount: 65
     Mayo:
-      amount: 1
+      amount: 65
   products:
-    Mayojito: 2
+    Mayojito: 65
 
 - type: reaction
   id: Mimeosa
   reactants:
     Mimosa:
-      amount: 2
+      amount: 65
     Nothing:
-      amount: 1
+      amount: 65
   products:
-    Mimeosa: 3
+    Mimeosa: 65
 
 - type: reaction
   id: Mimosa
   reactants:
     JuiceOrange:
-      amount: 2
+      amount: 65
     Champagne:
-      amount: 1
+      amount: 65
   products:
-    Mimosa: 3
+    Mimosa: 65
 
 - type: reaction
   id: MoscowMule
@@ -1548,23 +1548,23 @@
   - Stir
   reactants:
     Vodka:
-      amount: 4
+      amount: 65
     JuiceLime:
-      amount: 1
+      amount: 65
     SolDry:
-      amount: 1
+      amount: 65
   products:
-    MoscowMule: 6
+    MoscowMule: 65
 
 - type: reaction
   id: TheSunAlsoRises
   reactants:
     Absinthe:
-      amount: 1
+      amount: 65
     Daiquiri:
-      amount: 5
+      amount: 65
   products:
-    TheSunAlsoRises: 6
+    TheSunAlsoRises: 65
 
 - type: reaction
   id: WhiskeySour
@@ -1572,38 +1572,38 @@
   - Shake
   reactants:
     Whiskey:
-      amount: 2
+      amount: 65
     Sugar:
-      amount: 1
+      amount: 65
     JuiceLemon:
-      amount: 2
+      amount: 65
     Egg:
-      amount: 1
+      amount: 65
   products:
-    WhiskeySour: 6
+    WhiskeySour: 65
 
 - type: reaction
   id: ZombieCocktail
   reactants:
     Rum:
-      amount: 2
+      amount: 65
     Grenadine:
-      amount: 1
+      amount: 65
     ZombieBlood:
-      amount: 1
+      amount: 65
   products:
-    ZombieCocktail: 4
+    ZombieCocktail: 65
 
 - type: reaction
   id: BacchusBlessing
   reactants:
     Hooch:
-      amount: 1
+      amount: 65
     Absinthe:
-      amount: 1
+      amount: 65
     ManlyDorf:
-      amount: 1
+      amount: 65
     SyndicateBomb:
-      amount: 1
+      amount: 65
   products:
-    BacchusBlessing: 4
+    BacchusBlessing: 65

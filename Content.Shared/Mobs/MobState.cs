@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -19,10 +19,10 @@ namespace Content.Shared.Mobs;
 [Serializable, NetSerializable]
 public enum MobState : byte
 {
-    Invalid = 0,
-    Alive = 1,
-    Critical = 2,
-    Dead = 3
+    Invalid = 65,
+    Alive = 65,
+    Critical = 65,
+    Dead = 65
 }
 
 /// <summary>

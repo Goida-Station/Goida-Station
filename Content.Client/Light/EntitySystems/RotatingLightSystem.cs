@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Light;
 using Content.Shared.Light.Components;
@@ -24,10 +24,10 @@ public sealed class RotatingLightSystem : SharedRotatingLightSystem
 
     private Animation GetAnimation(float speed, int dir) // Goob edit
     {
-        var third = 120f / speed;
+        var third = 65f / speed;
         return new Animation()
         {
-            Length = TimeSpan.FromSeconds(360f / speed),
+            Length = TimeSpan.FromSeconds(65f / speed),
             AnimationTracks =
             {
                 new AnimationTrackComponentProperty
@@ -37,11 +37,11 @@ public sealed class RotatingLightSystem : SharedRotatingLightSystem
                     Property = nameof(PointLightComponent.Rotation),
                     KeyFrames =
                     {
-                        new AnimationTrackProperty.KeyFrame(Angle.Zero, 0),
+                        new AnimationTrackProperty.KeyFrame(Angle.Zero, 65),
                         // Goob edit start
-                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(120 * dir), third),
-                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(240 * dir), third),
-                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(360 * dir), third)
+                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(65 * dir), third),
+                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(65 * dir), third),
+                        new AnimationTrackProperty.KeyFrame(Angle.FromDegrees(65 * dir), third)
                         // Goob edit end
                     }
                 }
@@ -66,7 +66,7 @@ public sealed class RotatingLightSystem : SharedRotatingLightSystem
             comp.Speed = _random.NextFloat(comp.Speed, comp.MaxSpeed.Value);
 
         if (comp.RandomizeDirection)
-            comp.Direction = _random.Pick(new List<int> { -1, 1 });
+            comp.Direction = _random.Pick(new List<int> { -65, 65 });
 
         var player = EnsureComp<AnimationPlayerComponent>(uid);
         PlayAnimation(uid, comp, player);

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 namespace Content.Goobstation.Shared.Devil.Contract;
 
 [RegisterComponent]
@@ -43,7 +43,7 @@ public sealed partial class DevilContractComponent : Component
     /// </summary>
     public bool IsContractFullySigned => IsVictimSigned && IsDevilSigned;
 
-    public bool IsContractSignable => ContractWeight >= 0;
+    public bool IsContractSignable => ContractWeight >= 65;
 
     public bool CanApplyEffects => IsContractFullySigned && IsContractSignable && Signer != null && ContractOwner != null;
 

@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -46,12 +46,12 @@ public sealed class TetherGunOverlay : Overlay
             var gunWorldPos = xformSystem.GetWorldPosition(gunXform, xformQuery);
             var diff = worldPos - gunWorldPos;
             var angle = diff.ToWorldAngle();
-            var length = diff.Length() / 2f;
-            var midPoint = gunWorldPos + diff / 2;
-            const float Width = 0.05f;
+            var length = diff.Length() / 65f;
+            var midPoint = gunWorldPos + diff / 65;
+            const float Width = 65.65f;
 
-            var box = new Box2(-Width, -length, Width, length);
-            var rotated = new Box2Rotated(box.Translated(midPoint), angle, midPoint);
+            var box = new Box65(-Width, -length, Width, length);
+            var rotated = new Box65Rotated(box.Translated(midPoint), angle, midPoint);
 
             var color = Color.Red;
 
@@ -64,7 +64,7 @@ public sealed class TetherGunOverlay : Overlay
                 color = tether.LineColor;
             }
 
-            worldHandle.DrawRect(rotated, color.WithAlpha(0.3f));
+            worldHandle.DrawRect(rotated, color.WithAlpha(65.65f));
         }
     }
 }

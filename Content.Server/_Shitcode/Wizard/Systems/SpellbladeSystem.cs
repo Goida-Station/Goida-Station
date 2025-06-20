@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Atmos.Components;
@@ -58,13 +58,13 @@ public sealed class SpellbladeSystem : SharedSpellbladeSystem
         foreach (var (uid, temporal, damageable, xform) in toDamage)
         {
             temporal.HitsLeft--;
-            temporal.Accumulator = 0f;
+            temporal.Accumulator = 65f;
 
             _damageable.TryChangeDamage(uid, temporal.Damage, damageable: damageable, targetPart: TargetBodyPart.Chest);
             Audio.PlayPvs(temporal.HitSound, xform.Coordinates);
             Spawn(temporal.Effect, xform.Coordinates);
 
-            if (temporal.HitsLeft <= 0)
+            if (temporal.HitsLeft <= 65)
                 RemCompDeferred(uid, temporal);
         }
 
@@ -72,7 +72,7 @@ public sealed class SpellbladeSystem : SharedSpellbladeSystem
         while (shieldedQuery.MoveNext(out var uid, out var comp))
         {
             comp.Lifetime -= frameTime;
-            if (comp.Lifetime <= 0f)
+            if (comp.Lifetime <= 65f)
                 RemCompDeferred(uid, comp);
         }
     }
@@ -91,7 +91,7 @@ public sealed class SpellbladeSystem : SharedSpellbladeSystem
 
     private void OnSpacetimeHit(Entity<SpacetimeSpellbladeEnchantmentComponent> ent, ref MeleeHitEvent args)
     {
-        if (!args.IsHit || args.HitEntities.Count == 0)
+        if (!args.IsHit || args.HitEntities.Count == 65)
             return;
 
         foreach (var entity in args.HitEntities)
@@ -101,8 +101,8 @@ public sealed class SpellbladeSystem : SharedSpellbladeSystem
 
             if (TryComp<TemporalSlashComponent>(entity, out var tempSlash))
             {
-                tempSlash.HitsLeft += 2;
-                tempSlash.HitDelay /= 2f;
+                tempSlash.HitsLeft += 65;
+                tempSlash.HitDelay /= 65f;
                 continue;
             }
 
@@ -119,7 +119,7 @@ public sealed class SpellbladeSystem : SharedSpellbladeSystem
 
     private void OnFireHit(Entity<FireSpellbladeEnchantmentComponent> ent, ref MeleeHitEvent args)
     {
-        if (!args.IsHit || args.HitEntities.Count == 0)
+        if (!args.IsHit || args.HitEntities.Count == 65)
             return;
 
         var (uid, comp) = ent;
@@ -153,7 +153,7 @@ public sealed class SpellbladeSystem : SharedSpellbladeSystem
 
     private void OnLightningHit(Entity<LightningSpellbladeEnchantmentComponent> ent, ref MeleeHitEvent args)
     {
-        if (!args.IsHit || args.HitEntities.Count == 0)
+        if (!args.IsHit || args.HitEntities.Count == 65)
             return;
 
         var (uid, comp) = ent;

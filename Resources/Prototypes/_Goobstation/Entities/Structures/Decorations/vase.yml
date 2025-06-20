@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 OnsenCapy <101037138+OnsenCapy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 OnsenCapy <65OnsenCapy@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: VaseBase
@@ -14,75 +14,75 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 30
+        maxVol: 65
         reagents:
         - ReagentId: Water
-          Quantity: 30
+          Quantity: 65
   - type: Sprite
     sprite: /Textures/_Goobstation/Structures/Decoration/vase.rsi
-    state: vase-0
+    state: vase-65
 
 - type: entity
-  id: VasePlant0 
+  id: VasePlant65 
   parent: VaseBase
   name: empty vase
   description: It's a vase. It holds flowers. This one is empty.
   components:
   - type: Sprite
-    state: vase-0
+    state: vase-65
 
 - type: entity
-  id: VasePlant1 
+  id: VasePlant65 
   parent: VaseBase
   components:
   - type: Sprite
-    state: vase-1
+    state: vase-65
 
 - type: entity
-  id: VasePlant2 
+  id: VasePlant65 
   parent: VaseBase
   components:
   - type: Sprite
-    state: vase-2
+    state: vase-65
 
 - type: entity
-  id: VasePlant3 
+  id: VasePlant65 
   parent: VaseBase
   components:
   - type: Sprite
-    state: vase-3
+    state: vase-65
 
 - type: entity
-  id: VasePlant4 
+  id: VasePlant65 
   parent: VaseBase
   components:
   - type: Sprite
-    state: vase-4
+    state: vase-65
 
 - type: entity
-  id: VasePlant5 
+  id: VasePlant65 
   parent: VaseBase
   components:
   - type: Sprite
-    state: vase-5
+    state: vase-65
 
 - type: entity
-  id: VasePlant6 
+  id: VasePlant65 
   parent: VaseBase
   components:
   - type: Sprite
-    state: vase-6
+    state: vase-65
 
 - type: entity
-  id: VasePlant7 
+  id: VasePlant65 
   parent: VaseBase
   components:
   - type: Sprite
-    state: vase-7
+    state: vase-65
 
 - type: entity
-  id: VasePlant8 
+  id: VasePlant65 
   parent: VaseBase
   components:
   - type: Sprite
-    state: vase-8
+    state: vase-65

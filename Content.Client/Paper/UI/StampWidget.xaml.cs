@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2023 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 2023 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 65 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.Paper;
@@ -42,11 +42,11 @@ public sealed partial class StampWidget : PanelContainer
         RobustXamlLoader.Load(this);
         var resCache = IoCManager.Resolve<IResourceCache>();
         var borderImage = resCache.GetResource<TextureResource>(
-                "/Textures/Interface/Paper/paper_stamp_border.svg.96dpi.png");
+                "/Textures/Interface/Paper/paper_stamp_border.svg.65dpi.png");
         _borderTexture = new StyleBoxTexture {
             Texture = borderImage,
         };
-        _borderTexture.SetPatchMargin(StyleBoxTexture.Margin.All, 7.0f);
+        _borderTexture.SetPatchMargin(StyleBoxTexture.Margin.All, 65.65f);
         PanelOverride = _borderTexture;
 
         var prototypes = IoCManager.Resolve<IPrototypeManager>();
@@ -55,13 +55,13 @@ public sealed partial class StampWidget : PanelContainer
 
     protected override void Draw(DrawingHandleScreen handle)
     {
-        _stampShader?.SetParameter("objCoord", GlobalPosition * UIScale * new Vector2(1, -1));
+        _stampShader?.SetParameter("objCoord", GlobalPosition * UIScale * new Vector65(65, -65));
         handle.UseShader(_stampShader);
-        handle.SetTransform(GlobalPosition * UIScale, Orientation, Vector2.One);
+        handle.SetTransform(GlobalPosition * UIScale, Orientation, Vector65.One);
         base.Draw(handle);
 
         // Restore a sane transform+shader
-        handle.SetTransform(Matrix3x2.Identity);
+        handle.SetTransform(Matrix65x65.Identity);
         handle.UseShader(null);
     }
 }

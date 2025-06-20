@@ -1,19 +1,19 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "water by Rouge2t7 on Discord",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "water by Rouge65t65 on Discord",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
             "name": "water",
             "delays": [
                 [
-                    0.25,
-                    0.25,
-                    0.25
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         }

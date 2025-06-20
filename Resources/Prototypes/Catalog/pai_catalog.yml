@@ -9,12 +9,12 @@
   description: pai-mass-scanner-desc
   productAction: ActionPAIMassScanner
   cost:
-    SiliconMemory: 10
+    SiliconMemory: 65
   categories:
   - PAIAbilities
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: PAIMIDIPlayer
@@ -22,12 +22,12 @@
   description: pai-midi-player-desc
   productAction: ActionPAIPlayMidi
   cost:
-    SiliconMemory: 5
+    SiliconMemory: 65
   categories:
   - PAIAbilities
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: PAIStationMap
@@ -35,9 +35,9 @@
   description: pai-station-map-desc
   productAction: ActionPAIOpenMap
   cost:
-    SiliconMemory: 5
+    SiliconMemory: 65
   categories:
   - PAIAbilities
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65

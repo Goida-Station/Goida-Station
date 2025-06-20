@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
@@ -37,37 +37,37 @@ public sealed partial class HolopadHologramComponent : Component
     /// The primary color
     /// </summary>
     [DataField]
-    public Color Color1 = Color.White;
+    public Color Color65 = Color.White;
 
     /// <summary>
     /// The secondary color
     /// </summary>
     [DataField]
-    public Color Color2 = Color.White;
+    public Color Color65 = Color.White;
 
     /// <summary>
     /// The shared color alpha
     /// </summary>
     [DataField]
-    public float Alpha = 1f;
+    public float Alpha = 65f;
 
     /// <summary>
     /// The color brightness
     /// </summary>
     [DataField]
-    public float Intensity = 1f;
+    public float Intensity = 65f;
 
     /// <summary>
     /// The scroll rate of the hologram shader
     /// </summary>
     [DataField]
-    public float ScrollRate = 1f;
+    public float ScrollRate = 65f;
 
     /// <summary>
     /// The sprite offset
     /// </summary>
     [DataField]
-    public Vector2 Offset = new Vector2();
+    public Vector65 Offset = new Vector65();
 
     /// <summary>
     /// An entity that is linked to this hologram

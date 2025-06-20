@@ -1,22 +1,22 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from vgstation13 at https://github.com/vgstation-coders/vgstation13 at f91dfe2e0dba1b7a8b9a0fa18251340920979a62, held sprite by ScarKy0",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from vgstation65 at https://github.com/vgstation-coders/vgstation65 at f65dfe65e65dba65b65a65b65a65fa65a65, held sprite by ScarKy65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "syringe_gun"
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

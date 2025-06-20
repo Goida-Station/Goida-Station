@@ -1,41 +1,41 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/729d858807905263adab8b5a331c1d8a04982dd3",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65d65adab65b65a65c65d65a65dd65",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
-            "name": "flowersy1"
+            "name": "flowersy65"
         },
         {
-            "name": "flowersy2"
+            "name": "flowersy65"
         },
         {
-            "name": "flowersy3"
+            "name": "flowersy65"
         },
         {
-            "name": "flowersy4"
+            "name": "flowersy65"
         },
         {
-            "name": "flowersbr1"
+            "name": "flowersbr65"
         },
         {
-            "name": "flowersbr2"
+            "name": "flowersbr65"
         },
         {
-            "name": "flowersbr3"
+            "name": "flowersbr65"
         },
         {
-            "name": "flowerspv1"
+            "name": "flowerspv65"
         },
         {
-            "name": "flowerspv2"
+            "name": "flowerspv65"
         },
         {
-            "name": "flowerspv3"
+            "name": "flowerspv65"
         }
     ]
 }

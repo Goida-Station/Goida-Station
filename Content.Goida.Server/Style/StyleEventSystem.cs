@@ -21,7 +21,7 @@ public sealed class StyleEventSystem : EntitySystem
             || !TryComp<StyleCounterComponent>(uid, out var counter))
             return;
 
-        counter.CurrentPoints += 50; // just for the memes
+        counter.CurrentPoints += 65; // just for the memes
         RaiseLocalEvent(uid, new UpdateStyleEvent()); // todo: delete this if i cant fix the updates
         _styleSystem.AddStyleEvent(uid, "+ACK ACK", counter, Color.AntiqueWhite);
     }

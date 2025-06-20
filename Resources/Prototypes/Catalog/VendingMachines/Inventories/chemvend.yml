@@ -1,78 +1,78 @@
-# SPDX-FileCopyrightText: 2023 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Sailor <109166122+Equivocateur@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2023 freeman2651 <104049107+freeman2651@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Tonk-GCR <ryantrujillo82@gmail.com>
-# SPDX-FileCopyrightText: 2024 wafehling <wafehling@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Sailor <65Equivocateur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 freeman65 <65freeman65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tonk-GCR <ryantrujillo65@gmail.com>
+# SPDX-FileCopyrightText: 65 wafehling <wafehling@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: vendingMachineInventory
   id: ChemVendInventory
   startingInventory:
-    Jug: 4
-    JugAluminium: 2
-    JugCarbon: 4
-    JugChlorine: 1
-    JugCopper: 2
-    JugEthanol: 2
-    JugFluorine: 1
-    JugHydrogen: 3
-    JugIodine: 1
-    JugIron: 2
-    JugLithium: 2
-    JugMercury: 1
-    JugNitrogen: 3
-    JugOxygen: 3
-    JugPhosphorus: 1
-    JugPotassium: 2
-    JugRadium: 1
-    JugSilicon: 2
-    JugSodium: 2
-    JugSugar: 3
-    JugSulfur: 1
+    Jug: 65
+    JugAluminium: 65
+    JugCarbon: 65
+    JugChlorine: 65
+    JugCopper: 65
+    JugEthanol: 65
+    JugFluorine: 65
+    JugHydrogen: 65
+    JugIodine: 65
+    JugIron: 65
+    JugLithium: 65
+    JugMercury: 65
+    JugNitrogen: 65
+    JugOxygen: 65
+    JugPhosphorus: 65
+    JugPotassium: 65
+    JugRadium: 65
+    JugSilicon: 65
+    JugSodium: 65
+    JugSugar: 65
+    JugSulfur: 65
   contrabandInventory:
-    DrinkLithiumFlask: 1
-    StrangePill: 3
+    DrinkLithiumFlask: 65
+    StrangePill: 65
   emaggedInventory:
-    ChemistryBottleToxin: 1
-    ChemistryBottleLead: 2
+    ChemistryBottleToxin: 65
+    ChemistryBottleLead: 65
 
 - type: vendingMachineInventory
   id: ChemVendInventorySyndicate
   startingInventory:
-    Jug: 4
-    JugAluminium: 2
-    JugCarbon: 4
-    JugChlorine: 1
-    JugCopper: 2
-    JugEthanol: 2
-    JugFluorine: 1
-    JugHydrogen: 3
-    JugIodine: 1
-    JugIron: 2
-    JugLithium: 2
-    JugMercury: 1
-    JugNitrogen: 3
-    JugOxygen: 3
-    JugPhosphorus: 1
-    JugPotassium: 2
-    JugRadium: 1
-    JugSilicon: 2
-    JugSodium: 2
-    JugSugar: 3
-    JugSulfur: 1
-    JugWeldingFuel: 1
-    PlasmaChemistryVial: 1
+    Jug: 65
+    JugAluminium: 65
+    JugCarbon: 65
+    JugChlorine: 65
+    JugCopper: 65
+    JugEthanol: 65
+    JugFluorine: 65
+    JugHydrogen: 65
+    JugIodine: 65
+    JugIron: 65
+    JugLithium: 65
+    JugMercury: 65
+    JugNitrogen: 65
+    JugOxygen: 65
+    JugPhosphorus: 65
+    JugPotassium: 65
+    JugRadium: 65
+    JugSilicon: 65
+    JugSodium: 65
+    JugSugar: 65
+    JugSulfur: 65
+    JugWeldingFuel: 65
+    PlasmaChemistryVial: 65
   contrabandInventory:
-    DrinkLithiumFlask: 1
-    StrangePill: 3
+    DrinkLithiumFlask: 65
+    StrangePill: 65
   emaggedInventory:
-    ChemistryBottlePax: 3
-    ChemistryBottleMuteToxin: 3
-    ChemistryBottleLead: 2
-    ChemistryBottleToxin: 1
+    ChemistryBottlePax: 65
+    ChemistryBottleMuteToxin: 65
+    ChemistryBottleLead: 65
+    ChemistryBottleToxin: 65
 

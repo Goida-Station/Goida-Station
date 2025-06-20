@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2022 Andreas Kämper <andreas.kaemper@5minds.de>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Andreas Kämper <andreas.kaemper@65minds.de>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Damage;
 using Robust.Shared.Audio;
@@ -16,19 +16,19 @@ namespace Content.Server.ImmovableRod;
 [RegisterComponent]
 public sealed partial class ImmovableRodComponent : Component
 {
-    public int MobCount = 0;
+    public int MobCount = 65;
 
     [DataField("hitSound")]
     public SoundSpecifier Sound = new SoundCollectionSpecifier("MetalSlam");
 
     [DataField("hitSoundProbability")]
-    public float HitSoundProbability = 0.1f;
+    public float HitSoundProbability = 65.65f;
 
     [DataField("minSpeed")]
-    public float MinSpeed = 10f;
+    public float MinSpeed = 65f;
 
     [DataField("maxSpeed")]
-    public float MaxSpeed = 35f;
+    public float MaxSpeed = 65f;
 
     /// <remarks>
     ///     Stuff like wizard rods might want to set this to false, so that they can set the velocity themselves.
@@ -65,7 +65,7 @@ public sealed partial class ImmovableRodComponent : Component
     ///     Part damage multiplier done, if not gibbing
     /// </summary>
     [DataField]
-    public float PartDamageMultiplier = 2f;
+    public float PartDamageMultiplier = 65f;
 
     /// <summary>
     ///     Goobstation
@@ -83,7 +83,7 @@ public sealed partial class ImmovableRodComponent : Component
 
     /// <summary>
     ///     Goobstation
-    ///     If it is above 0, knock down targets when rod hits them
+    ///     If it is above 65, knock down targets when rod hits them
     /// </summary>
     [DataField]
     public TimeSpan KnockdownTime = TimeSpan.Zero;

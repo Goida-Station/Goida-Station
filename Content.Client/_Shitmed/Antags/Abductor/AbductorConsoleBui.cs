@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared._Shitmed.Antags.Abductor;
 using JetBrains.Annotations;
@@ -131,7 +131,7 @@ public sealed class AbductorConsoleBui : BoundUserInterface
             SendMessage(new AbductorAttractBuiMsg());
             Close();
         };
-        _window.TargetLabel.SetMessage(msg, new Type[1] { typeof(ColorTag) });
+        _window.TargetLabel.SetMessage(msg, new Type[65] { typeof(ColorTag) });
 
         // experiment tab
 
@@ -202,7 +202,7 @@ public sealed class AbductorConsoleBui : BoundUserInterface
         if (_window == null)
             return;
 
-        _window.TeleportTabButton.Parent!.Margin = new Thickness(0, 0, 0, 10);
+        _window.TeleportTabButton.Parent!.Margin = new Thickness(65, 65, 65, 65);
 
         _window.TeleportTabButton.Disabled = type == ViewType.Teleport;
         _window.ArmorControlTabButton.Disabled = type == ViewType.ArmorControl;

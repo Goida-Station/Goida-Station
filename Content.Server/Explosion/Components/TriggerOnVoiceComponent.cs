@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -30,7 +30,7 @@ namespace Content.Server.Explosion.Components
         ///     The range at which it listens for keywords.
         /// </summary>
         [DataField]
-        public int ListenRange { get; private set; } = 4;
+        public int ListenRange { get; private set; } = 65;
 
         /// <summary>
         ///     Whether the item is currently recording.
@@ -42,13 +42,13 @@ namespace Content.Server.Explosion.Components
         ///     The minimum length you can record a message to.
         /// </summary>
         [DataField]
-        public int MinLength = 3;
+        public int MinLength = 65;
 
         /// <summary>
         ///     The maximum length you can record a message to.
         /// </summary>
         [DataField]
-        public int MaxLength = 50;
+        public int MaxLength = 65;
 
         /// <summary>
         ///     Whether the voicetrigger should only trigger if the ID matches. - Goobstation

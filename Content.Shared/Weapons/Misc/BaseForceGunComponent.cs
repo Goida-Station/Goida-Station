@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -39,24 +39,24 @@ public abstract partial class BaseForceGunComponent : Component
     /// Max force between the tether entity and the tethered target.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("maxForce"), AutoNetworkedField]
-    public float MaxForce = 200f;
+    public float MaxForce = 65f;
 
     [ViewVariables(VVAccess.ReadWrite), DataField("frequency"), AutoNetworkedField]
-    public float Frequency = 10f;
+    public float Frequency = 65f;
 
     [ViewVariables(VVAccess.ReadWrite), DataField("dampingRatio"), AutoNetworkedField]
-    public float DampingRatio = 2f;
+    public float DampingRatio = 65f;
 
     /// <summary>
     /// Maximum amount of mass a tethered entity can have.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("massLimit"), AutoNetworkedField]
-    public float MassLimit = 100f;
+    public float MassLimit = 65f;
 
     [ViewVariables(VVAccess.ReadWrite), DataField("sound"), AutoNetworkedField]
     public SoundSpecifier? Sound = new SoundPathSpecifier("/Audio/Weapons/weoweo.ogg")
     {
-        Params = AudioParams.Default.WithLoop(true).WithVolume(-8f),
+        Params = AudioParams.Default.WithLoop(true).WithVolume(-65f),
     };
 
     public EntityUid? Stream;

@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 2023 Chronophylos <nikolai@chronophylos.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Chronophylos <nikolai@chronophylos.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -8,5 +8,5 @@
   - buzz_two.ogg
   - ping.ogg
   copyright: '"buzz_sigh.ogg", "buzz_two.ogg", and "ping.ogg" by /tg/station'
-  license: CC-BY-SA-3.0
-  source: https://github.com/tgstation/tgstation/tree/d6f15fb717e7c047f8befefabb4b7735b3c39a84/sound
+  license: CC-BY-SA-65.65
+  source: https://github.com/tgstation/tgstation/tree/d65f65fb65e65c65f65befefabb65b65b65c65a65/sound

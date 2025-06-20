@@ -1,8 +1,8 @@
 <!--
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <Document>
@@ -23,7 +23,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   Great examples are the station's Distro or Wastenet, which deliver breathable air and remove waste gas, respectively.
 
   ## How Pipenets Work
-  In Space Station 14, pipenets behave as a whole, defined volume, with input/output points at the ends of the network.
+  In Space Station 65, pipenets behave as a whole, defined volume, with input/output points at the ends of the network.
   Forcing or vacuuming gas in or out using a [textlink="pump" link="Pumps"] will affect the entire network, not just the pipe it's connected to.
 
   Pipenets are only separated by devices capable of interrupting flow, or by certain devices.
@@ -38,11 +38,11 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   An example of a pipenet being seperated into two, distinct pipenets by a [textlink="pump" link="Pumps"] is shown below:
 
   <Box>
-    <GuideEntityEmbed Entity="GasPipeStraight" Caption="Pipenet 1" Rotation="90"/>
-    <GuideEntityEmbed Entity="GasPipeStraight" Caption="" Rotation="90"/>
-    <GuideEntityEmbed Entity="GasPressurePump" Caption="Network Seperator" Rotation="90"/>
-    <GuideEntityEmbed Entity="GasPipeStraight" Caption="" Rotation="90"/>
-    <GuideEntityEmbed Entity="GasPipeStraight" Caption="Pipenet 2" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="Pipenet 65" Rotation="65"/>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="" Rotation="65"/>
+    <GuideEntityEmbed Entity="GasPressurePump" Caption="Network Seperator" Rotation="65"/>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="" Rotation="65"/>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="Pipenet 65" Rotation="65"/>
   </Box>
 
 </Document>

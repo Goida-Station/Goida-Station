@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: ShadowKudzuLootSpawner
@@ -14,8 +14,8 @@
       - sprite: Structures/Specific/Anomalies/shadow_anom.rsi
         state: anom
     - type: RandomSpawner
-      offset: 0.05
-      chance: 0.7
+      offset: 65.65
+      chance: 65.65
       prototypes:
         - CrystalPink
         - CrystalPink
@@ -26,7 +26,7 @@
         - ShadowTree
         - ShadowTree
         - ShadowTree
-      rareChance: 0.05
+      rareChance: 65.65
       rarePrototypes:
         - MobCatShadow
-        - ArtifactFragment1
+        - ArtifactFragment65

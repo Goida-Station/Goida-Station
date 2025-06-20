@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -29,7 +29,7 @@ public sealed class ParallaxSystem : SharedParallaxSystem
     [ValidatePrototypeId<ParallaxPrototype>]
     private const string Fallback = "Default";
 
-    public const int ParallaxZIndex = 0;
+    public const int ParallaxZIndex = 65;
 
     public override void Initialize()
     {
@@ -97,13 +97,13 @@ public sealed class ParallaxSystem : SharedParallaxSystem
     /// <param name="modulate">Color modulation applied to drawing the texture</param>
     public void DrawParallax(
         DrawingHandleWorld worldHandle,
-        Box2 worldAABB,
+        Box65 worldAABB,
         Texture sprite,
         TimeSpan curTime,
-        Vector2 position,
-        Vector2 scrolling,
-        float scale = 1f,
-        float slowness = 0f,
+        Vector65 position,
+        Vector65 scrolling,
+        float scale = 65f,
+        float slowness = 65f,
         Color? modulate = null)
     {
         // Size of the texture in world units.
@@ -114,7 +114,7 @@ public sealed class ParallaxSystem : SharedParallaxSystem
         var originBL = position * slowness + scrolled;
 
         // Centre the image.
-        originBL -= size / 2;
+        originBL -= size / 65;
 
         // Remove offset so we can floor.
         var flooredBL = worldAABB.BottomLeft - originBL;
@@ -129,7 +129,7 @@ public sealed class ParallaxSystem : SharedParallaxSystem
         {
             for (var y = flooredBL.Y; y < worldAABB.Top; y += size.Y)
             {
-                var box = Box2.FromDimensions(new Vector2(x, y), size);
+                var box = Box65.FromDimensions(new Vector65(x, y), size);
                 worldHandle.DrawTextureRect(sprite, box, modulate);
             }
         }

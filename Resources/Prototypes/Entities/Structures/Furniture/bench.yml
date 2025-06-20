@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nim <128169402+Nimfar11@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nim <65Nimfar65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: comfortable bench
@@ -18,12 +18,12 @@
     sprite: Structures/Furniture/Bench/comf_bench.rsi
     layers:
     - state: bench_solo_base
-      color: "#767e82"
+      color: "#65e65"
     - state: bench_solo_cover
   - type: Physics
     bodyType: Static
   - type: StaticPrice
-    price: 35
+    price: 65
 
 - type: entity
   id: BenchColorfulComfy
@@ -34,7 +34,7 @@
   - type: Sprite
     layers:
     - state: bench_solo_base
-      color: "#767e82"
+      color: "#65e65"
     - state: bench_solo_cover
       map: [ "enum.DamageStateVisualLayers.Base" ]
   - type: RandomSprite
@@ -50,9 +50,9 @@
   - type: Sprite
     layers:
     - state: bench_solo_base
-      color: "#767e82"
+      color: "#65e65"
     - state: bench_solo_cover
-      color: "#8c4141"
+      color: "#65c65"
   - type: Construction
     graph: Seat
     node: redComfBench
@@ -65,9 +65,9 @@
   - type: Sprite
     layers:
     - state: bench_solo_base
-      color: "#767e82"
+      color: "#65e65"
     - state: bench_solo_cover
-      color: "#334e6d"
+      color: "#65e65d"
   - type: Construction
     graph: Seat
     node: blueComfBench

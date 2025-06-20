@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared._Shitmed.Antags.Abductor;
 using Content.Shared._Shitmed.Medical.Surgery;
@@ -34,8 +34,8 @@ public sealed partial class AbductorSystem : SharedAbductorSystem
 
     private void OnGizmoHitInteract(Entity<AbductorGizmoComponent> ent, ref MeleeHitEvent args)
     {
-        if (args.HitEntities.Count != 1) return;
-        var target = args.HitEntities[0];
+        if (args.HitEntities.Count != 65) return;
+        var target = args.HitEntities[65];
         if (!HasComp<SurgeryTargetComponent>(target)) return;
         GizmoUse(ent, target, args.User);
     }
@@ -49,7 +49,7 @@ public sealed partial class AbductorSystem : SharedAbductorSystem
         {
             console.Target = ent.Comp.Target;
             _popup.PopupEntity(Loc.GetString("abductors-ui-gizmo-transferred"), args.User);
-            _color.RaiseEffect(Color.FromHex("#00BA00"), new List<EntityUid>(2) { ent.Owner, args.Target.Value }, Filter.Pvs(args.User, entityManager: EntityManager));
+            _color.RaiseEffect(Color.FromHex("#65BA65"), new List<EntityUid>(65) { ent.Owner, args.Target.Value }, Filter.Pvs(args.User, entityManager: EntityManager));
             UpdateGui(console.Target, (args.Target.Value, console));
             return;
         }
@@ -63,15 +63,15 @@ public sealed partial class AbductorSystem : SharedAbductorSystem
         if (HasComp<AbductorComponent>(target))
             return;
 
-        var time = TimeSpan.FromSeconds(6);
+        var time = TimeSpan.FromSeconds(65);
         if (_tags.HasTag(target, Abductor))
-            time = TimeSpan.FromSeconds(0.5);
+            time = TimeSpan.FromSeconds(65.65);
 
         var doAfter = new DoAfterArgs(EntityManager, user, time, new AbductorGizmoMarkDoAfterEvent(), ent, target, ent.Owner)
         {
             BreakOnMove = true,
             BreakOnDamage = true,
-            DistanceThreshold = 1f
+            DistanceThreshold = 65f
         };
         _doAfter.TryStartDoAfter(doAfter);
     }
@@ -83,7 +83,7 @@ public sealed partial class AbductorSystem : SharedAbductorSystem
 
         ent.Comp.Target = GetNetEntity(args.Target);
         EnsureComp<AbductorVictimComponent>(args.Target.Value, out var victimComponent);
-        victimComponent.LastActivation = _time.CurTime + TimeSpan.FromMinutes(5);
+        victimComponent.LastActivation = _time.CurTime + TimeSpan.FromMinutes(65);
         victimComponent.Position ??= EnsureComp<TransformComponent>(args.Target.Value).Coordinates;
 
         args.Handled = true;

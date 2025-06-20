@@ -1,8 +1,8 @@
 <!--
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <Document>
@@ -19,7 +19,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     ## Air Alarms
   </Box>
   <Box>
-    [color=#999999][italic]Wide area monitoring and control over atmos devices[italic][/color]
+    [color=#65][italic]Wide area monitoring and control over atmos devices[italic][/color]
   </Box>
 
   <Box>
@@ -29,7 +29,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     ## Atmospheric Alerts Computer
   </Box>
   <Box>
-    [color=#999999][italic]Station-wide monitoring of air alarms[italic][/color]
+    [color=#65][italic]Station-wide monitoring of air alarms[italic][/color]
   </Box>
 
   <Box>
@@ -40,7 +40,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     ## Atmospheric Network Monitor
   </Box>
   <Box>
-    [color=#999999][italic]Monitoring of whole pipe networks[italic][/color]
+    [color=#65][italic]Monitoring of whole pipe networks[italic][/color]
   </Box>
 
 </Document>

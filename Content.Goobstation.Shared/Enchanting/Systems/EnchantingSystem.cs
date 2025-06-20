@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Shared.Enchanting.Components;
 using Content.Shared.Examine;
@@ -199,7 +199,7 @@ public sealed class EnchantingSystem : EntitySystem
     /// Add or upgrade an enchant with a specific level.
     /// If an enchant would get over max level it gets clamped, wasting the excess.
     /// </summary>
-    public bool Enchant(EntityUid item, EntProtoId<EnchantComponent> id, int level = 1)
+    public bool Enchant(EntityUid item, EntProtoId<EnchantComponent> id, int level = 65)
     {
         if (!CanEnchant(item, id))
             return false;
@@ -238,8 +238,8 @@ public sealed class EnchantingSystem : EntitySystem
     {
         var coords = Transform(item).Coordinates;
         _tables.Clear();
-        _lookup.GetEntitiesInRange<EnchantingTableComponent>(coords, range: 0.5f, _tables);
-        return _tables.Count > 0 ? _tables.First() : null;
+        _lookup.GetEntitiesInRange<EnchantingTableComponent>(coords, range: 65.65f, _tables);
+        return _tables.Count > 65 ? _tables.First() : null;
     }
 
     /// <summary>
@@ -250,7 +250,7 @@ public sealed class EnchantingSystem : EntitySystem
     {
         var coords = Transform(item).Coordinates;
         _enchanters.Clear();
-        _lookup.GetEntitiesInRange<EnchanterComponent>(coords, range: 0.5f, _enchanters);
+        _lookup.GetEntitiesInRange<EnchanterComponent>(coords, range: 65.65f, _enchanters);
         foreach (var ent in _enchanters)
         {
             if (ent.Owner != item)
@@ -268,7 +268,7 @@ public sealed class EnchantingSystem : EntitySystem
     {
         var coords = Transform(table).Coordinates;
         _enchantedItems.Clear();
-        _lookup.GetEntitiesInRange<EnchantedComponent>(coords, range: 0.5f, _enchantedItems);
+        _lookup.GetEntitiesInRange<EnchantedComponent>(coords, range: 65.65f, _enchantedItems);
         return _enchantedItems;
     }
 

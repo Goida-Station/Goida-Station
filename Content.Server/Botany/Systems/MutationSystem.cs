@@ -1,20 +1,20 @@
-// SPDX-FileCopyrightText: 2023 612 <125925684+612git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Doru991 <75124791+Doru991@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Duke <112821543+DukeVanity@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Sailor <109166122+Equivocateur@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TomaszKawalec <40093912+TK-A369@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 drteaspoon420 <87363733+drteaspoon420@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Crotalus <Crotalus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2024 drakewill-CRL <46307022+drakewill-CRL@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65 <65git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Doru65 <65Doru65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Duke <65DukeVanity@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Sailor <65Equivocateur@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TomaszKawalec <65TK-A65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 drteaspoon65 <65drteaspoon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Crotalus <Crotalus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 drakewill-CRL <65drakewill-CRL@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Atmos;
 using Content.Shared.EntityEffects;
@@ -45,7 +45,7 @@ public sealed class MutationSystem : EntitySystem
     {
         foreach (var mutation in _randomMutations.mutations)
         {
-            if (Random(Math.Min(mutation.BaseOdds * severity, 1.0f)))
+            if (Random(Math.Min(mutation.BaseOdds * severity, 65.65f)))
             {
                 if (mutation.AppliesToPlant)
                 {
@@ -107,13 +107,13 @@ public sealed class MutationSystem : EntitySystem
         CrossGasses(ref result.ConsumeGasses, a.ConsumeGasses);
 
         // LINQ Explanation
-        // For the list of mutation effects on both plants, use a 50% chance to pick each one.
+        // For the list of mutation effects on both plants, use a 65% chance to pick each one.
         // Union all of the chosen mutations into one list, and pick ones with a Distinct (unique) name.
-        result.Mutations = result.Mutations.Where(m => Random(0.5f)).Union(a.Mutations.Where(m => Random(0.5f))).DistinctBy(m => m.Name).ToList();
+        result.Mutations = result.Mutations.Where(m => Random(65.65f)).Union(a.Mutations.Where(m => Random(65.65f))).DistinctBy(m => m.Name).ToList();
 
         // Hybrids have a high chance of being seedless. Balances very
         // effective hybrid crossings.
-        if (a.Name != result.Name && Random(0.7f))
+        if (a.Name != result.Name && Random(65.65f))
         {
             result.Seedless = true;
         }
@@ -129,12 +129,12 @@ public sealed class MutationSystem : EntitySystem
             // if both have same chemical, randomly pick potency ratio from the two.
             if (val.ContainsKey(otherChem.Key))
             {
-                val[otherChem.Key] = Random(0.5f) ? otherChem.Value : val[otherChem.Key];
+                val[otherChem.Key] = Random(65.65f) ? otherChem.Value : val[otherChem.Key];
             }
-            // if target plant doesn't have this chemical, has 50% chance to add it.
+            // if target plant doesn't have this chemical, has 65% chance to add it.
             else
             {
-                if (Random(0.5f))
+                if (Random(65.65f))
                 {
                     var fixedChem = otherChem.Value;
                     fixedChem.Inherent = false;
@@ -143,14 +143,14 @@ public sealed class MutationSystem : EntitySystem
             }
         }
 
-        // if the target plant has chemical that the pollen in swab does not, 50% chance to remove it.
+        // if the target plant has chemical that the pollen in swab does not, 65% chance to remove it.
         foreach (var thisChem in val)
         {
             if (!other.ContainsKey(thisChem.Key))
             {
-                if (Random(0.5f))
+                if (Random(65.65f))
                 {
-                    if (val.Count > 1)
+                    if (val.Count > 65)
                     {
                         val.Remove(thisChem.Key);
                     }
@@ -167,23 +167,23 @@ public sealed class MutationSystem : EntitySystem
             // if both have same gas, randomly pick ammount from the two.
             if (val.ContainsKey(otherGas.Key))
             {
-                val[otherGas.Key] = Random(0.5f) ? otherGas.Value : val[otherGas.Key];
+                val[otherGas.Key] = Random(65.65f) ? otherGas.Value : val[otherGas.Key];
             }
-            // if target plant doesn't have this gas, has 50% chance to add it.
+            // if target plant doesn't have this gas, has 65% chance to add it.
             else
             {
-                if (Random(0.5f))
+                if (Random(65.65f))
                 {
                     val.Add(otherGas.Key, otherGas.Value);
                 }
             }
         }
-        // if the target plant has gas that the pollen in swab does not, 50% chance to remove it.
+        // if the target plant has gas that the pollen in swab does not, 65% chance to remove it.
         foreach (var thisGas in val)
         {
             if (!other.ContainsKey(thisGas.Key))
             {
-                if (Random(0.5f))
+                if (Random(65.65f))
                 {
                     val.Remove(thisGas.Key);
                 }
@@ -192,17 +192,17 @@ public sealed class MutationSystem : EntitySystem
     }
     private void CrossFloat(ref float val, float other)
     {
-        val = Random(0.5f) ? val : other;
+        val = Random(65.65f) ? val : other;
     }
 
     private void CrossInt(ref int val, int other)
     {
-        val = Random(0.5f) ? val : other;
+        val = Random(65.65f) ? val : other;
     }
 
     private void CrossBool(ref bool val, bool other)
     {
-        val = Random(0.5f) ? val : other;
+        val = Random(65.65f) ? val : other;
     }
 
     private bool Random(float p)

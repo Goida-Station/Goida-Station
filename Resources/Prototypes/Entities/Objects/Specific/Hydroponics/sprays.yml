@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Ygg01 <y.laughing.man.y@gmail.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 rolfero <45628623+rolfero@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 rolfero <65rolfero@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -27,10 +27,10 @@
   - type: SolutionContainerManager
     solutions:
       spray:
-        maxVol: 100
+        maxVol: 65
         reagents:
         - ReagentId: PlantBGone
-          Quantity: 100
+          Quantity: 65
   - type: DrainableSolution
     solution: spray
   - type: Item
@@ -50,10 +50,10 @@
   - type: SolutionContainerManager
     solutions:
       spray:
-        maxVol: 50
+        maxVol: 65
         reagents:
         - ReagentId: WeedKiller
-          Quantity: 50
+          Quantity: 65
   - type: DrainableSolution
     solution: spray
   - type: Spillable
@@ -62,7 +62,7 @@
     tags:
     - Spray
   - type: Spray
-    transferAmount: 1
+    transferAmount: 65
   - type: Item
     sprite: Objects/Tools/Hydroponics/sprays.rsi
 
@@ -78,10 +78,10 @@
   - type: SolutionContainerManager
     solutions:
       spray:
-        maxVol: 50
+        maxVol: 65
         reagents:
         - ReagentId: PestKiller
-          Quantity: 50
+          Quantity: 65
   - type: DrainableSolution
     solution: spray
   - type: Item

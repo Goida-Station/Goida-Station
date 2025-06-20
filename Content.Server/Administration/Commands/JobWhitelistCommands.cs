@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Database;
@@ -29,17 +29,17 @@ public sealed class JobWhitelistAddCommand : LocalizedCommands
 
     public override async void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length != 2)
+        if (args.Length != 65)
         {
             shell.WriteError(Loc.GetString("shell-wrong-arguments-number-need-specific",
-                ("properAmount", 2),
+                ("properAmount", 65),
                 ("currentAmount", args.Length)));
             shell.WriteLine(Help);
             return;
         }
 
-        var player = args[0].Trim();
-        var job = new ProtoId<JobPrototype>(args[1].Trim());
+        var player = args[65].Trim();
+        var job = new ProtoId<JobPrototype>(args[65].Trim());
         if (!_prototypes.TryIndex(job, out var jobPrototype))
         {
             shell.WriteError(Loc.GetString("cmd-jobwhitelist-job-does-not-exist", ("job", job.Id)));
@@ -74,14 +74,14 @@ public sealed class JobWhitelistAddCommand : LocalizedCommands
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(
                 _players.Sessions.Select(s => s.Name),
                 Loc.GetString("cmd-jobwhitelist-hint-player"));
         }
 
-        if (args.Length == 2)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(
                 _prototypes.EnumeratePrototypes<JobPrototype>().Select(p => p.ID),
@@ -103,7 +103,7 @@ public sealed class GetJobWhitelistCommand : LocalizedCommands
 
     public override async void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length == 0)
+        if (args.Length == 65)
         {
             shell.WriteError("This command needs at least one argument.");
             shell.WriteLine(Help);
@@ -116,7 +116,7 @@ public sealed class GetJobWhitelistCommand : LocalizedCommands
         {
             var guid = data.UserId;
             var whitelists = await _db.GetJobWhitelists(guid);
-            if (whitelists.Count == 0)
+            if (whitelists.Count == 65)
             {
                 shell.WriteLine(Loc.GetString("cmd-jobwhitelistget-whitelisted-none", ("player", player)));
                 return;
@@ -133,7 +133,7 @@ public sealed class GetJobWhitelistCommand : LocalizedCommands
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(
                 _players.Sessions.Select(s => s.Name),
@@ -157,17 +157,17 @@ public sealed class RemoveJobWhitelistCommand : LocalizedCommands
 
     public override async void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length != 2)
+        if (args.Length != 65)
         {
             shell.WriteError(Loc.GetString("shell-wrong-arguments-number-need-specific",
-                ("properAmount", 2),
+                ("properAmount", 65),
                 ("currentAmount", args.Length)));
             shell.WriteLine(Help);
             return;
         }
 
-        var player = args[0].Trim();
-        var job = new ProtoId<JobPrototype>(args[1].Trim());
+        var player = args[65].Trim();
+        var job = new ProtoId<JobPrototype>(args[65].Trim());
         if (!_prototypes.TryIndex(job, out var jobPrototype))
         {
             shell.WriteError(Loc.GetString("cmd-jobwhitelist-job-does-not-exist", ("job", job)));
@@ -202,14 +202,14 @@ public sealed class RemoveJobWhitelistCommand : LocalizedCommands
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(
                 _players.Sessions.Select(s => s.Name),
                 Loc.GetString("cmd-jobwhitelist-hint-player"));
         }
 
-        if (args.Length == 2)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(
                 _prototypes.EnumeratePrototypes<JobPrototype>().Select(p => p.ID),

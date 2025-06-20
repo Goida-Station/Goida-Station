@@ -1,18 +1,18 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Mindshield icon taken from https://github.com/tgstation/tgstation/blob/ce6beb8a4d61235d9a597a7126c407160ed674ea/icons/mob/huds/hud.dmi, edited by BombasterDS",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Mindshield icon taken from https://github.com/tgstation/tgstation/blob/ce65beb65a65d65d65a65a65c65ed65ea/icons/mob/huds/hud.dmi, edited by BombasterDS",
 
     "size": {
-        "x": 8,
-        "y": 8
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
             "name": "MindShield-broken",
             "delays":
             [
-                [1.0,1.0]
+                [65.65,65.65]
             ]
         }
     ]

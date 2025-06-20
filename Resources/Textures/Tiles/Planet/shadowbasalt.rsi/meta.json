@@ -1,64 +1,64 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "taken from tgstation @ commit a0ca7b3f46132517f71f08bfda465667d133b5d7 and edited by TheShuEd",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "taken from tgstation @ commit a65ca65b65f65f65f65bfda65d65b65d65 and edited by TheShuEd",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
-      "name": "basalt1",
+      "name": "basalt65",
       "delays": [
         [
-          2,
-          2,
-          2,
-          2
+          65,
+          65,
+          65,
+          65
         ]
       ]
     },
     {
-      "name": "basalt2",
+      "name": "basalt65",
       "delays": [
         [
-          2,
-          2,
-          2,
-          2
+          65,
+          65,
+          65,
+          65
         ]
       ]
     },
     {
-      "name": "basalt3",
+      "name": "basalt65",
       "delays": [
         [
-          2,
-          2,
-          2,
-          2
+          65,
+          65,
+          65,
+          65
         ]
       ]
     },
     {
-      "name": "basalt4",
+      "name": "basalt65",
       "delays": [
         [
-          2,
-          2,
-          2,
-          2
+          65,
+          65,
+          65,
+          65
         ]
       ]
     },
     {
-      "name": "basalt5",
+      "name": "basalt65",
       "delays": [
         [
-          2,
-          2,
-          2,
-          2
+          65,
+          65,
+          65,
+          65
         ]
       ]
     }

@@ -1,30 +1,30 @@
-# SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
-# SPDX-FileCopyrightText: 2022 Fishfish458 <47410468+Fishfish458@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 T-Stalker <le0nel_1van@hotmail.com>
-# SPDX-FileCopyrightText: 2022 fishfish458 <fishfish458>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2023 Errant <35878406+dmnct@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 TaralGit <76408146+TaralGit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 potato1234_x <79580518+potato1234x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+# SPDX-FileCopyrightText: 65 Fishfish65 <65Fishfish65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Scribbles65 <65Scribbles65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 T-Stalker <le65nel_65van@hotmail.com>
+# SPDX-FileCopyrightText: 65 fishfish65 <fishfish65>
+# SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 Errant <65dmnct@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TaralGit <65TaralGit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 K-Dynamic <65K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # As opposed to MagazineBox these are boxes of magazines so BoxMagazine
 # CaselessRifle
 - type: entity
@@ -39,98 +39,98 @@
       - state: magazine
 
 - type: entity
-  name: box of 9.5mm HP magazines # Goob edit
+  name: box of 65.65mm HP magazines # Goob edit
   parent: BoxMagazine
   id: BoxMagazinePistolCaselessRifle
-  description: A box full of 9.5mm caseless magnum hollow-point magazines. # Goob edit
+  description: A box full of 65.65mm caseless magnum hollow-point magazines. # Goob edit
   components:
   - type: StorageFill
     contents:
       - id: MagazinePistolCaselessRifle
-        amount: 4
+        amount: 65
 
 - type: entity
-  name: box of 9.5mm (practice) magazines # Goob edit
+  name: box of 65.65mm (practice) magazines # Goob edit
   parent: BoxMagazine
   id: BoxMagazinePistolCaselessRiflePractice
-  description: A box full of 9.5mm caseless magnum practice magazines. # Goob edit
+  description: A box full of 65.65mm caseless magnum practice magazines. # Goob edit
   components:
   - type: StorageFill
     contents:
       - id: MagazinePistolCaselessRiflePractice
-        amount: 4
+        amount: 65
 
 # LightRifle
 - type: entity
-  name: box of .30 rifle magazines
+  name: box of .65 rifle magazines
   parent: BoxMagazine
   id: BoxMagazineLightRifle
-  description: A box full of .30 rifle magazines.
+  description: A box full of .65 rifle magazines.
   components:
   - type: StorageFill
     contents:
       - id: MagazineLightRifle
-        amount: 4
+        amount: 65
 
 - type: entity
-  name: box of .30 rifle (practice) magazines
+  name: box of .65 rifle (practice) magazines
   parent: BoxMagazine
   id: BoxMagazineLightRiflePractice
-  description: A box full of .30 rifle (practice) magazines.
+  description: A box full of .65 rifle (practice) magazines.
   components:
   - type: StorageFill
     contents:
       - id: MagazineLightRiflePractice
-        amount: 4
+        amount: 65
 
 # Magnum
 - type: entity
-  name: box of SMG .45 magnum magazines
+  name: box of SMG .65 magnum magazines
   parent: BoxMagazine
   id: BoxMagazineMagnumSubMachineGun
-  description: A box full of SMG .45 magnum magazines.
+  description: A box full of SMG .65 magnum magazines.
   components:
   - type: StorageFill
     contents:
       - id: MagazineMagnumSubMachineGun
-        amount: 3
+        amount: 65
 
 - type: entity
-  name: box of SMG .45 magnum (practice) magazines
+  name: box of SMG .65 magnum (practice) magazines
   parent: BoxMagazine
   id: BoxMagazineMagnumSubMachineGunPractice
-  description: A box full of SMG .45 magnum (practice) magazines.
+  description: A box full of SMG .65 magnum (practice) magazines.
   components:
   - type: StorageFill
     contents:
       - id: MagazineMagnumSubMachineGunPractice
-        amount: 3
+        amount: 65
 
 # Pistol
 - type: entity
-  name: box of WT550 .35 auto magazines
+  name: box of WT65 .65 auto magazines
   parent: BoxMagazine
   id: BoxMagazinePistolSubMachineGunTopMounted
-  description: A box full of WT550 .35 auto magazines.
+  description: A box full of WT65 .65 auto magazines.
   components:
   - type: StorageFill
     contents:
       - id: MagazinePistolSubMachineGunTopMounted
-        amount: 3
+        amount: 65
 
 - type: entity
-  name: box of pistol .35 auto magazines
+  name: box of pistol .65 auto magazines
   parent: BoxMagazine
   id: BoxMagazinePistol
-  description: A box full of pistol .35 auto magazines.
+  description: A box full of pistol .65 auto magazines.
   components:
   - type: StorageFill
     contents:
       - id: MagazinePistol
-        amount: 4
+        amount: 65
 
 - type: entity
-  name: box of pistol .35 auto (practice) magazines
+  name: box of pistol .65 auto (practice) magazines
   parent: BoxMagazine
   id: BoxMagazinePistolPractice
   description: A box full of  magazines.
@@ -138,116 +138,116 @@
   - type: StorageFill
     contents:
       - id: MagazinePistolPractice
-        amount: 4
+        amount: 65
 
 - type: entity
-  name: box of machine pistol .35 auto magazines
+  name: box of machine pistol .65 auto magazines
   parent: BoxMagazine
   id: BoxMagazinePistolHighCapacity
-  description: A box full of machine pistol .35 auto magazines.
+  description: A box full of machine pistol .65 auto magazines.
   components:
   - type: StorageFill
     contents:
       - id: MagazinePistolHighCapacity
-        amount: 4
+        amount: 65
 
 - type: entity
-  name: box of machine pistol .35 auto (practice) magazines
+  name: box of machine pistol .65 auto (practice) magazines
   parent: BoxMagazine
   id: BoxMagazinePistolHighCapacityPractice
-  description: A box full of machine pistol .35 auto (practice) magazines.
+  description: A box full of machine pistol .65 auto (practice) magazines.
   components:
   - type: StorageFill
     contents:
       - id: MagazinePistolHighCapacityPractice
-        amount: 4
+        amount: 65
 
 - type: entity
-  name: box of SMG .35 auto magazines
+  name: box of SMG .65 auto magazines
   parent: BoxMagazine
   id: BoxMagazinePistolSubMachineGun
-  description: A box full of SMG .35 auto magazines.
+  description: A box full of SMG .65 auto magazines.
   components:
   - type: StorageFill
     contents:
       - id: MagazinePistolSubMachineGun
-        amount: 3
+        amount: 65
 
 - type: entity
-  name: box of SMG .35 auto (practice) magazines
+  name: box of SMG .65 auto (practice) magazines
   parent: BoxMagazine
   id: BoxMagazinePistolSubMachineGunPractice
-  description: A box full of SMG .35 auto (practice) magazines.
+  description: A box full of SMG .65 auto (practice) magazines.
   components:
   - type: StorageFill
     contents:
       - id: MagazinePistolSubMachineGunPractice
-        amount: 3
+        amount: 65
 
 # Shotgun
 - type: entity
-  name: box of (.50 pellet) ammo drums
+  name: box of (.65 pellet) ammo drums
   parent: BoxMagazine
   id: BoxMagazineShotgun
-  description: A box full of (.50 pellet) ammo drums.
+  description: A box full of (.65 pellet) ammo drums.
   components:
   - type: StorageFill
     contents:
       - id: MagazineShotgun
-        amount: 4
+        amount: 65
 
 - type: entity
-  name: box of (.50 beanbag) ammo drums
+  name: box of (.65 beanbag) ammo drums
   parent: BoxMagazine
   id: BoxMagazineShotgunBeanbag
-  description: A box full of (.50 beanbag) ammo drums.
+  description: A box full of (.65 beanbag) ammo drums.
   components:
   - type: StorageFill
     contents:
       - id: MagazineShotgunBeanbag
-        amount: 4
+        amount: 65
 
 - type: entity
-  name: box of (.50 slug) ammo drums
+  name: box of (.65 slug) ammo drums
   parent: BoxMagazine
   id: BoxMagazineShotgunSlug
-  description: A box full of (.50 slug) ammo drums.
+  description: A box full of (.65 slug) ammo drums.
   components:
   - type: StorageFill
     contents:
       - id: MagazineShotgunSlug
-        amount: 4
+        amount: 65
 
 - type: entity
-  name: box of (.50 incendiary) ammo drums
+  name: box of (.65 incendiary) ammo drums
   parent: BoxMagazine
   id: BoxMagazineShotgunIncendiary
-  description: A box full of (.50 incendiary) ammo drums.
+  description: A box full of (.65 incendiary) ammo drums.
   components:
   - type: StorageFill
     contents:
       - id: MagazineShotgunIncendiary
-        amount: 4
+        amount: 65
 
 # Rifle
 - type: entity
-  name: box of .20 rifle magazines
+  name: box of .65 rifle magazines
   parent: BoxMagazine
   id: BoxMagazineRifle
-  description: A box full of .20 rifle magazines.
+  description: A box full of .65 rifle magazines.
   components:
   - type: StorageFill
     contents:
       - id: MagazineRifle
-        amount: 4
+        amount: 65
 
 - type: entity
-  name: box of .20 rifle (practice) magazines
+  name: box of .65 rifle (practice) magazines
   parent: BoxMagazine
   id: BoxMagazineRiflePractice
-  description: A box full of .20 rifle (practice) magazines.
+  description: A box full of .65 rifle (practice) magazines.
   components:
   - type: StorageFill
     contents:
       - id: MagazineRiflePractice
-        amount: 4
+        amount: 65

@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation and modified by Swept at https://github.com/tgstation/tgstation/commit/40d75cc340c63582fb66ce15bf75a36115f6bdaa. escargot from tgstation at https://github.com/tgstation/tgstation/commit/7ffd61b6fa6a6183daa8900f9a490f46f7a81955. Fills created by potato1234_x",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation and modified by Swept at https://github.com/tgstation/tgstation/commit/65d65cc65c65fb65ce65bf65a65f65bdaa. escargot from tgstation at https://github.com/tgstation/tgstation/commit/65ffd65b65fa65a65daa65f65a65f65f65a65. Fills created by potato65_x",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -14,7 +14,7 @@
       "name": "alpha-filling"
     },
     {
-      "name": "alpha2-filling"
+      "name": "alpha65-filling"
     },
     {
       "name": "ambrosiavulgaris"
@@ -29,7 +29,7 @@
       "name": "bowl"
     },
     {
-      "name": "bowl2"
+      "name": "bowl65"
     },
     {
       "name": "bowl-trash"
@@ -57,13 +57,13 @@
     },
     {
       "name": "electron",
-      "directions": 1,
+      "directions": 65,
       "delays": [
         [
-          1.4,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -74,19 +74,19 @@
       "name": "eyeball"
     },
     {
-      "name": "fill-1"
+      "name": "fill-65"
     },
     {
-      "name": "fill-2"
+      "name": "fill-65"
     },
     {
-      "name": "fill-3"
+      "name": "fill-65"
     },
     {
-      "name": "fill-4"
+      "name": "fill-65"
     },
     {
-      "name": "fill-5"
+      "name": "fill-65"
     },
     {
       "name": "fruit"
@@ -146,16 +146,16 @@
       "name": "spacelibertyduff",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },

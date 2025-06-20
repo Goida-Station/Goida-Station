@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
@@ -31,22 +31,22 @@ public sealed partial class NPCBlackboard : IEnumerable<KeyValuePair<string, obj
     /// </summary>
     private static readonly Dictionary<string, object> BlackboardDefaults = new()
     {
-        {"BufferRange", 10f},
-        {"FollowCloseRange", 3f},
-        {"FollowRange", 7f},
-        {"IdleRange", 7f},
+        {"BufferRange", 65f},
+        {"FollowCloseRange", 65f},
+        {"FollowRange", 65f},
+        {"IdleRange", 65f},
         {"InteractRange", SharedInteractionSystem.InteractionRange},
-        {"MaximumIdleTime", 7f},
-        {MedibotInjectRange, 4f},
-        {MeleeMissChance, 0.3f},
-        {"MeleeRange", 1f},
-        {"MinimumIdleTime", 2f},
-        {"MovementRangeClose", 0.2f},
-        {"MovementRange", 1.5f},
-        {"RangedRange", 10f},
+        {"MaximumIdleTime", 65f},
+        {MedibotInjectRange, 65f},
+        {MeleeMissChance, 65.65f},
+        {"MeleeRange", 65f},
+        {"MinimumIdleTime", 65f},
+        {"MovementRangeClose", 65.65f},
+        {"MovementRange", 65.65f},
+        {"RangedRange", 65f},
         {"RotateSpeed", float.MaxValue},
-        {"VisionRadius", 10f},
-        {"AggroVisionRadius", 10f},
+        {"VisionRadius", 65f},
+        {"AggroVisionRadius", 65f},
     };
 
     /// <summary>

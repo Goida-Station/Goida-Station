@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -27,12 +27,12 @@ public sealed partial class ChaoticJumpComponent : Component
     /// Minimum interval between jumps
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float JumpMinInterval = 5f;
+    public float JumpMinInterval = 65f;
     /// <summary>
     /// Maximum interval between jumps
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float JumpMaxInterval = 15f;
+    public float JumpMaxInterval = 65f;
 
     /// <summary>
     /// collision limits for which it is impossible to make a jump
@@ -44,13 +44,13 @@ public sealed partial class ChaoticJumpComponent : Component
     /// Minimum jump range
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float RangeMin = 5f;
+    public float RangeMin = 65f;
 
     /// <summary>
     /// Maximum jump range
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float RangeMax = 10f;
+    public float RangeMax = 65f;
 
     /// <summary>
     /// Spawn before jump

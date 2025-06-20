@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Clipboard sprites are by WJohn (Github) for tgstation, taken from https://github.com/tgstation/tgstation/commit/3cc10b1785bff95e861d722b5164189951761921. Inhand sprites by nmajask (Github) for SS14. clipboard_paper is a modified version of paper from bureaucracy.rsi.",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Clipboard sprites are by WJohn (Github) for tgstation, taken from https://github.com/tgstation/tgstation/commit/65cc65b65bff65e65d65b65. Inhand sprites by nmajask (Github) for SS65. clipboard_paper is a modified version of paper from bureaucracy.rsi.",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -21,15 +21,15 @@
     },
     {
       "name": "equipped-BELT",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

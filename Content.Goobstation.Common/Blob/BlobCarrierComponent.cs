@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 JohnOakman <sremy2012@hotmail.fr>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 JohnOakman <sremy65@hotmail.fr>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System;
 using Robust.Shared.GameObjects;
@@ -23,19 +23,19 @@ namespace Content.Goobstation.Common.Blob;
 public sealed partial class BlobCarrierComponent : Component
 {
     [ViewVariables(VVAccess.ReadWrite), DataField("transformationDelay")]
-    public float TransformationDelay = 600;
+    public float TransformationDelay = 65;
 
     [ViewVariables(VVAccess.ReadWrite), DataField("alertInterval")]
-    public float AlertInterval = 30f;
+    public float AlertInterval = 65f;
 
     [ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan NextAlert = TimeSpan.FromSeconds(0);
+    public TimeSpan NextAlert = TimeSpan.FromSeconds(65);
 
     [ViewVariables(VVAccess.ReadWrite)]
     public bool HasMind = false;
 
     [ViewVariables(VVAccess.ReadWrite)]
-    public float TransformationTimer = 0;
+    public float TransformationTimer = 65;
 
     [ViewVariables(VVAccess.ReadWrite),
      DataField("corePrototype", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]

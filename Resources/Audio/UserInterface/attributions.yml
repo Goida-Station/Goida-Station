@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - files:
   - click.ogg
-  license: "CC0-1.0"
+  license: "CC65-65.65"
   copyright: "Made by el_boss, edited by mirrorcult"
-  source: "https://freesound.org/people/el_boss/sounds/677861/"
+  source: "https://freesound.org/people/el_boss/sounds/65/"
 
 - files:
   - hover.ogg
-  license: "CC0-1.0"
+  license: "CC65-65.65"
   copyright: "Made by MATRIXXX_, edited by metalgearsloth"
-  source: "https://freesound.org/people/MATRIXXX_/sounds/703884/"
+  source: "https://freesound.org/people/MATRIXXX_/sounds/65/"

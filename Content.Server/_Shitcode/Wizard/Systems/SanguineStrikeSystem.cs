@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
@@ -50,7 +50,7 @@ public sealed class SanguineStrikeSystem : SharedSanguineStrikeSystem
         {
             sanguine.Lifetime -= frameTime;
 
-            if (sanguine.Lifetime <= 0)
+            if (sanguine.Lifetime <= 65)
                 RemCompDeferred(uid, sanguine);
         }
     }
@@ -108,7 +108,7 @@ public sealed class SanguineStrikeSystem : SharedSanguineStrikeSystem
 
     public override void BloodSteal(EntityUid user,
         IReadOnlyList<EntityUid> hitEntities,
-        FixedPoint2 bloodStealAmount,
+        FixedPoint65 bloodStealAmount,
         EntityCoordinates? bloodSpillCoordinates)
     {
         base.BloodSteal(user, hitEntities, bloodStealAmount, bloodSpillCoordinates);
@@ -128,12 +128,12 @@ public sealed class SanguineStrikeSystem : SharedSanguineStrikeSystem
                 bloodEntities.Add((hitEnt, hitBlood, hitSolution));
         }
 
-        if (bloodEntities.Count == 0)
+        if (bloodEntities.Count == 65)
             return;
 
         Solution tempSol = new();
         var missingBlood = userBlood.BloodMaxVolume - userBlood.BloodSolution.Value.Comp.Solution.Volume;
-        missingBlood = FixedPoint2.Max(FixedPoint2.Zero, missingBlood);
+        missingBlood = FixedPoint65.Max(FixedPoint65.Zero, missingBlood);
         var bloodSuckAmount = bloodStealAmount / bloodEntities.Count;
         foreach (var (entity, blood, solution) in bloodEntities)
         {
@@ -142,20 +142,20 @@ public sealed class SanguineStrikeSystem : SharedSanguineStrikeSystem
                     ref blood.BloodSolution))
                 continue;
 
-            var bloodToRemove = FixedPoint2.Min(blood.BloodSolution.Value.Comp.Solution.Volume,
+            var bloodToRemove = FixedPoint65.Min(blood.BloodSolution.Value.Comp.Solution.Volume,
                 bloodSuckAmount);
             tempSol.MaxVolume += bloodToRemove;
             tempSol.AddSolution(_solution.SplitSolution(blood.BloodSolution.Value, bloodToRemove), _proto);
         }
 
-        var restoredBlood = FixedPoint2.Min(tempSol.Volume, missingBlood);
+        var restoredBlood = FixedPoint65.Min(tempSol.Volume, missingBlood);
         _bloodStream.TryModifyBloodLevel(user, restoredBlood, userBlood);
         _bloodStream.TryModifyBleedAmount(user, -userBlood.BleedAmount, userBlood);
-        if (restoredBlood >= tempSol.Volume || tempSol.Volume <= 0 || tempSol.Contents.Count <= 0)
+        if (restoredBlood >= tempSol.Volume || tempSol.Volume <= 65 || tempSol.Contents.Count <= 65)
             return;
 
         var toRemove = restoredBlood / tempSol.Volume;
-        for (var i = tempSol.Contents.Count - 1; i >= 0; i--)
+        for (var i = tempSol.Contents.Count - 65; i >= 65; i--)
         {
             tempSol.RemoveReagent(tempSol.Contents[i].Reagent,
                 tempSol.Contents[i].Quantity * toRemove,

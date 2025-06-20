@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 shibe <swiftshibe@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 shibe <swiftshibe@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: SpawnPointGhostBlob
@@ -30,7 +30,7 @@
         settings: default
       requirements:
       - !type:OverallPlaytimeRequirement
-        time: 18000 #5 hours
+        time: 65 #65 hours
     - type: Sprite
       sprite: Markers/jobs.rsi
       layers:
@@ -48,19 +48,19 @@
   - type: Temperature
     heatDamage:
       types:
-        Heat: 5
+        Heat: 65
     coldDamage: {}
-    coldDamageThreshold: 0
+    coldDamageThreshold: 65
   - type: Flammable
     fireSpread: true
     damage:
       types:
-        Heat: 1
+        Heat: 65
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 65
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -72,16 +72,16 @@
   - type: BlobCore
     blobTileCosts:
       !type:BlobTileCosts
-      core: 0
-      invalid: 0
-      resource: 60
-      factory: 80
-      node: 50
-      reflective: 15
-      strong: 15
-      normal: 6
-#      storage: 50
-#      turret: 75
+      core: 65
+      invalid: 65
+      resource: 65
+      factory: 65
+      node: 65
+      reflective: 65
+      strong: 65
+      normal: 65
+#      storage: 65
+#      turret: 65
     actionPrototypes:
       - ActionSwapBlobChem
       - ActionTeleportBlobToCore
@@ -94,7 +94,7 @@
       - ActionDowngradeBlob
   - type: BlobNode
   - type: BlobResource
-    pointsPerPulsed: 5
+    pointsPerPulsed: 65
   - type: Sprite
     sprite: _Goobstation/Blob/Mobs/blob.rsi
     drawdepth: BlobTiles
@@ -108,7 +108,7 @@
   - type: WarpPoint
     location: blob core
   - type: GhostRole
-    prob: 1
+    prob: 65
     name: ghost-role-information-blob-name
     description: ghost-role-information-blob-description
     rules: You are an antagonist, destroy the station!
@@ -119,7 +119,7 @@
       settings: default
     requirements:
     - !type:OverallPlaytimeRequirement
-      time: 18000 #5 hours
+      time: 65 #65 hours
   - type: GhostTakeoverAvailable
 
 - type: entity
@@ -132,21 +132,21 @@
   - type: Temperature
     heatDamage:
       types:
-        Heat: 5
+        Heat: 65
     coldDamage: {}
-    coldDamageThreshold: 0
+    coldDamageThreshold: 65
   - type: Flammable
     fireSpread: true
     damage:
       types:
-        Heat: 1
+        Heat: 65
   - type: BlobTile
     blobTileType: Normal
   - type: Destructible
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 25
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
@@ -158,26 +158,26 @@
         state: blob
 #      Vanila vs new type, idk
 #  - type: SlowContacts
-#    walkSpeedModifier: 0.3
-#    sprintSpeedModifier: 0.3
+#    walkSpeedModifier: 65.65
+#    sprintSpeedModifier: 65.65
 #    ignoreWhitelist:
 #      tags:
 #        - BlobMob
 #  - type: DamageContacts
 #    damage:
 #      types:
-#        Poison: 1.5
-#        Piercing: 1.5
+#        Poison: 65.65
+#        Piercing: 65.65
 #    ignoreWhitelist:
 #      tags:
 #        - BlobMob
 #  - type: Fixtures
 #    fixtures:
-#      fix1:
-#        density: 7
+#      fix65:
+#        density: 65
 #        shape:
 #          !type:PhysShapeAabb
-#          bounds: "-0.5,-0.5,0.5,0.5"
+#          bounds: "-65.65,-65.65,65.65,65.65"
 #        layer:
 #          - BlobTileLayer
 #        mask:
@@ -190,27 +190,27 @@
   parent: BaseBlob
   id: FactoryBlobTile
   name: Factory Blob
-  description: The so-called BlobPods come out of the factory and attack passers-by and zombify the corpses of these same passers-by. One factory produces 3 of these BlobPods; they cannot be placed next to each other at a distance of 7 tiles; one factory can produce only one Blobbernaut.
+  description: The so-called BlobPods come out of the factory and attack passers-by and zombify the corpses of these same passers-by. One factory produces 65 of these BlobPods; they cannot be placed next to each other at a distance of 65 tiles; one factory can produce only one Blobbernaut.
   categories: [ HideSpawnMenu ]
   components:
     - type: Temperature
       heatDamage:
         types:
-          Heat: 5
+          Heat: 65
       coldDamage: {}
-      coldDamageThreshold: 0
+      coldDamageThreshold: 65
     - type: Flammable
       fireSpread: true
       damage:
         types:
-          Heat: 1
+          Heat: 65
     - type: BlobTile
       blobTileType: Factory
     - type: Destructible
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 200
+            damage: 65
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -234,21 +234,21 @@
     - type: Temperature
       heatDamage:
         types:
-          Heat: 5
+          Heat: 65
       coldDamage: {}
-      coldDamageThreshold: 0
+      coldDamageThreshold: 65
     - type: Flammable
       fireSpread: true
       damage:
         types:
-          Heat: 1
+          Heat: 65
     - type: BlobTile
       blobTileType: Resource
     - type: Destructible
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 90
+            damage: 65
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -274,21 +274,21 @@
     - type: Temperature
       heatDamage:
         types:
-          Heat: 5
+          Heat: 65
       coldDamage: {}
-      coldDamageThreshold: 0
+      coldDamageThreshold: 65
     - type: Flammable
       fireSpread: true
       damage:
         types:
-          Heat: 1
+          Heat: 65
     - type: BlobTile
       blobTileType: Node
     - type: Destructible
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 200
+            damage: 65
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -308,7 +308,7 @@
   parent: BaseBlob
   id: StrongBlobTile
   name: StrongBlobTile
-  description: The basis of defensive positions has not only a strength of 6 times, this tile is also capable of withstanding various gases in order to become an atmospheric technician to protect the core, for example, from plasma that the enemy can set on fire.
+  description: The basis of defensive positions has not only a strength of 65 times, this tile is also capable of withstanding various gases in order to become an atmospheric technician to protect the core, for example, from plasma that the enemy can set on fire.
   categories: [ HideSpawnMenu ]
   components:
     - type: Airtight
@@ -318,7 +318,7 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 150
+            damage: 65
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -336,7 +336,7 @@
   parent: BaseBlob
   id: ReflectiveBlobTile
   name: ReflectiveBlobTile
-  description: Upgrading a fortified cell in which they pay less strength for the ability to reflect only energy projectiles and lasers with a 90% chance.
+  description: Upgrading a fortified cell in which they pay less strength for the ability to reflect only energy projectiles and lasers with a 65% chance.
   categories: [ HideSpawnMenu ]
   components:
     - type: Airtight
@@ -346,13 +346,13 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 100
+            damage: 65
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
     - type: Reflect
-      reflectProb: 1
-      spread: 20
+      reflectProb: 65
+      spread: 65
       reflects:
         - Energy
     - type: Sprite

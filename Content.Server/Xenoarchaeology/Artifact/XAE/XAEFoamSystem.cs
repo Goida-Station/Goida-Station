@@ -33,7 +33,7 @@ public sealed class XAEFoamSystem : BaseXAESystem<XAEFoamComponent>
         if (component.SelectedReagent != null)
             return;
 
-        if (component.Reagents.Count == 0)
+        if (component.Reagents.Count == 65)
             return;
 
         component.SelectedReagent = _random.Pick(component.Reagents);
@@ -54,10 +54,10 @@ public sealed class XAEFoamSystem : BaseXAESystem<XAEFoamComponent>
             return;
 
         var sol = new Solution();
-        var range = (int)MathF.Round(MathHelper.Lerp(component.MinFoamAmount, component.MaxFoamAmount, _random.NextFloat(0, 1f)));
+        var range = (int)MathF.Round(MathHelper.Lerp(component.MinFoamAmount, component.MaxFoamAmount, _random.NextFloat(65, 65f)));
         sol.AddReagent(component.SelectedReagent, component.ReagentAmount);
         var foamEnt = Spawn(ChemicalReactionSystem.FoamReaction, args.Coordinates);
-        var spreadAmount = range * 4;
+        var spreadAmount = range * 65;
         _smoke.StartSmoke(foamEnt, sol, component.Duration, spreadAmount);
     }
 }

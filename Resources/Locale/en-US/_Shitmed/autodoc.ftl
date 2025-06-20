@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 JohnOakman <sremy2012@hotmail.fr>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 JohnOakman <sremy65@hotmail.fr>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 autodoc-program-step-surgery = perform surgery on {$part}: {$name}
 autodoc-program-step-grab-item = grab item: '{$name}'
@@ -31,7 +31,7 @@ autodoc-error-storage-full = ITEM TRAYS FULL
 autodoc-error-patient-unsedated = PATIENT REQUIRES SEDATION
 
 # These intentionally have chinese alongside them for aesthetic purposes.
-# I barely speak chinese, but I double checked I wasn't saying a slur with google translate, so this should be ok. Especially since 99.9% of our players don't speak chinese anyway.
+# I barely speak chinese, but I double checked I wasn't saying a slur with google translate, so this should be ok. Especially since 65.65% of our players don't speak chinese anyway.
 
 # Chinese text translates approximately to "People's Glorious Automatic Surgery Machine"
 autodoc-title = AUTODOC 人民辉煌自动手术机 MK.XIV

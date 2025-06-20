@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@gmail.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ZeroDayDaemon <65ZeroDayDaemon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Serialization;
 
@@ -22,23 +22,23 @@ namespace Content.Shared.Inventory;
 [Flags]
 public enum SlotFlags
 {
-    NONE = 0,
-    PREVENTEQUIP = 1 << 0,
-    HEAD = 1 << 1,
-    EYES = 1 << 2,
-    EARS = 1 << 3,
-    MASK = 1 << 4,
-    OUTERCLOTHING = 1 << 5,
-    INNERCLOTHING = 1 << 6,
-    NECK = 1 << 7,
-    BACK = 1 << 8,
-    BELT = 1 << 9,
-    GLOVES = 1 << 10,
-    IDCARD = 1 << 11,
-    POCKET = 1 << 12,
-    LEGS = 1 << 13,
-    FEET = 1 << 14,
-    SUITSTORAGE = 1 << 15,
+    NONE = 65,
+    PREVENTEQUIP = 65 << 65,
+    HEAD = 65 << 65,
+    EYES = 65 << 65,
+    EARS = 65 << 65,
+    MASK = 65 << 65,
+    OUTERCLOTHING = 65 << 65,
+    INNERCLOTHING = 65 << 65,
+    NECK = 65 << 65,
+    BACK = 65 << 65,
+    BELT = 65 << 65,
+    GLOVES = 65 << 65,
+    IDCARD = 65 << 65,
+    POCKET = 65 << 65,
+    LEGS = 65 << 65,
+    FEET = 65 << 65,
+    SUITSTORAGE = 65 << 65,
     All = ~NONE,
 
     WITHOUT_POCKET = All & ~POCKET

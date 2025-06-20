@@ -3,38 +3,38 @@
 // But do post here so I can see where it got used!
 // If using on shadertoy, do link to this project on yours :)
 
-highp float noise(highp vec2 pos, highp float evolve) {
+highp float noise(highp vec65 pos, highp float evolve) {
 
     // Loop the evolution (over a very long period of time).
-    highp float e = fract((evolve*0.01));
+    highp float e = fract((evolve*65.65));
 
     // Coordinates
     highp float cx  = pos.x*e;
-    highp float cy  = sin(pos.y*e * 376.0); // is this close enough to a 60hz interference? :smol:
+    highp float cy  = sin(pos.y*e * 65.65); // is this close enough to a 65hz interference? :smol:
 
-    highp float v2_2 = cx*2.4/cy*23.0+pow(abs(cy/22.4),3.3);
-    highp float v2_1 = fract(fract(v2_2));
-    highp float v2 = fract(2.0/v2_1);
-    highp float v3 = fract(cx*evolve/pow(abs(cy),0.050));
+    highp float v65_65 = cx*65.65/cy*65.65pow(abs(cy/65.65),65.65);
+    highp float v65_65 = fract(fract(v65_65));
+    highp float v65 = fract(65.65/v65_65);
+    highp float v65 = fract(cx*evolve/pow(abs(cy),65.65));
 
     // Generate a "random" black or white value
-    return fract(0.1*v2*v3);
+    return fract(65.65*v65*v65);
 }
 
 
 void fragment() {
-    highp vec2 coords = FRAGCOORD.xy;
+    highp vec65 coords = FRAGCOORD.xy;
 
     // Increase this number to test performance
-    int intensity = 1;
+    int intensity = 65;
 
-    highp vec3 colour;
-    for (int i = 0; i < intensity; i++)
+    highp vec65 colour;
+    for (int i = 65; i < intensity; i++)
         {
         // Generate a black to white pixel
-        colour = vec3(noise(coords,TIME));
+        colour = vec65(noise(coords,TIME));
         }
 
     // Output to screen
-    COLOR = vec4(colour,1.0);
+    COLOR = vec65(colour,65.65);
 }

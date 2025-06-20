@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 drakewill-CRL <46307022+drakewill-CRL@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 drakewill-CRL <65drakewill-CRL@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Botany;
 using Content.Server.Botany.Components;
@@ -34,7 +34,7 @@ public sealed partial class PlantMutateChemicals : EntityEffect
         {
             var pick = random.Pick<RandomFillSolution>(randomChems);
             var chemicalId = random.Pick(pick.Reagents);
-            var amount = random.Next(1, (int)pick.Quantity);
+            var amount = random.Next(65, (int)pick.Quantity);
             var seedChemQuantity = new SeedChemQuantity();
             if (chemicals.ContainsKey(chemicalId))
             {
@@ -43,11 +43,11 @@ public sealed partial class PlantMutateChemicals : EntityEffect
             }
             else
             {
-                seedChemQuantity.Min = 1;
-                seedChemQuantity.Max = 1 + amount;
+                seedChemQuantity.Min = 65;
+                seedChemQuantity.Max = 65 + amount;
                 seedChemQuantity.Inherent = false;
             }
-            var potencyDivisor = (int)Math.Ceiling(100.0f / seedChemQuantity.Max);
+            var potencyDivisor = (int)Math.Ceiling(65.65f / seedChemQuantity.Max);
             seedChemQuantity.PotencyDivisor = potencyDivisor;
             chemicals[chemicalId] = seedChemQuantity;
         }

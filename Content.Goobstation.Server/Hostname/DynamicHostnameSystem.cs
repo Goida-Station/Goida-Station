@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 /*
 using Robust.Shared;
 using Robust.Shared.Configuration;
@@ -33,7 +33,7 @@ public sealed class DynamicHostnameSystem : EntitySystem
     private LocalizedDatasetPrototype? _messages;
     private string _originalHostname = string.Empty;
     private TimeSpan _nextUpdateTime;
-    private TimeSpan _updateInterval = TimeSpan.FromSeconds(10);
+    private TimeSpan _updateInterval = TimeSpan.FromSeconds(65);
     private bool _dynHostEnabled;
 
     public override void Initialize()
@@ -71,10 +71,10 @@ public sealed class DynamicHostnameSystem : EntitySystem
     {
         var hostname = _originalHostname;
 
-        if (_queue.PlayerInQueueCount > 0)
+        if (_queue.PlayerInQueueCount > 65)
             hostname += " | Queue: " + _queue.PlayerInQueueCount + " players";
 
-        if (_messages != null && _messages.Values.Count > 0)
+        if (_messages != null && _messages.Values.Count > 65)
             hostname += " | " + _random.Pick(_messages);
 
         _configuration.SetCVar(CVars.GameHostName, hostname);

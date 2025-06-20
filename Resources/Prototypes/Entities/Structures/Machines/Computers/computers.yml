@@ -1,201 +1,201 @@
-# SPDX-FileCopyrightText: 2019 Acruid <shatter66@gmail.com>
-# SPDX-FileCopyrightText: 2019 DamianX <DamianX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2019 Ephememory <yetanotherscuffed@gmail.com>
-# SPDX-FileCopyrightText: 2019 L.E.D <10257081+unusualcrow@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2019 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-# SPDX-FileCopyrightText: 2020 Exp <theexp111@gmail.com>
-# SPDX-FileCopyrightText: 2020 GlassEclipse <32942106+GlassEclipse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Hugo Laloge <hugo.laloge@gmail.com>
-# SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Vince <39844191+Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 2020 lajolico <55922029+lajolico@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 py01 <60152240+collinlunn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 py01 <pyronetics01@gmail.com>
-# SPDX-FileCopyrightText: 2020 zumorica <zddm@outlook.es>
-# SPDX-FileCopyrightText: 2021 Elijahrane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Fishfish458 <47410468+Fishfish458@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Julian Giebel <j.giebel@netrocks.info>
-# SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2021 Mith-randalf <84274729+Mith-randalf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Pancake <Pangogie@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2021 SethLafuente <84478872+SethLafuente@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 2022 BubblegumBlue <63939723+BubblegumBlue@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Hoolny <84478872+SethLafuente@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Morber <14136326+Morb0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 SETh lafuente <cetaciocascarudo@gmail.com>
-# SPDX-FileCopyrightText: 2022 Starm4ncer <63939723+Starm4ncer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
-# SPDX-FileCopyrightText: 2022 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 fishfish458 <fishfish458>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2023 778b <33431126+778b@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Checkraze <71046427+Cheackraze@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-# SPDX-FileCopyrightText: 2023 Interrobang01 <113810873+Interrobang01@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 MishaUnity <81403616+MishaUnity@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-# SPDX-FileCopyrightText: 2023 Sir Winters <7543955+Owai-Seek@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
-# SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
-# SPDX-FileCopyrightText: 2023 liltenhead <104418166+liltenhead@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-# SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2024 Alex Pavlenko <diraven@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin <30327355+arimah@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ArkiveDev <95712736+ArkiveDev@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Debug <49997488+DebugOk@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Doomsdrayk <robotdoughnut@comcast.net>
-# SPDX-FileCopyrightText: 2024 DrEnzyme <DrEnzyme@gmail.com>
-# SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Elysium206 <151651971+Elysium206@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
-# SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
-# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Floofi <126319569+Shadowtheprotogen546@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ghagliiarghii <68826635+Ghagliiarghii@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 HS <81934438+HolySSSS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
-# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
-# SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-# SPDX-FileCopyrightText: 2024 MetalSage <74924875+MetalSage@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MetalSage <metalsage.official@gmail.com>
-# SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nim <128169402+Nimfar11@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
-# SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-# SPDX-FileCopyrightText: 2024 Partmedia <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 PoTeletubby <ajcraigaz@gmail.com>
-# SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
-# SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Red Mushie <82113471+redmushie@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Redfire1331 <125223432+Redfire1331@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Truoizys <153248924+Truoizys@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
-# SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 WarMechanic <69510347+WarMechanic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 avery <51971268+graevy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 coolboy911 <85909253+coolboy911@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
-# SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-# SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 icekot8 <93311212+icekot8@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lunarcomets <140772713+lunarcomets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 marbow <152051971+marboww@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 mhamster <81412348+mhamsterr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 neutrino <67447925+neutrino-laser@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 2024 redfire1331 <Redfire1331@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
-# SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 FaDeOkno <logkedr18@gmail.com>
-# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 IrisTheAmped <iristheamped@gmail.com>
-# SPDX-FileCopyrightText: 2025 Killerqu00 <killerqueen1777@gmail.com>
-# SPDX-FileCopyrightText: 2025 Myra <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 ScarKy0 <scarky0@onet.eu>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 rokudara-sen <160833839+rokudara-sen@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+# SPDX-FileCopyrightText: 65 DamianX <DamianX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ephememory <yetanotherscuffed@gmail.com>
+# SPDX-FileCopyrightText: 65 L.E.D <65unusualcrow@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 65 Exp <theexp65@gmail.com>
+# SPDX-FileCopyrightText: 65 GlassEclipse <65GlassEclipse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Hugo Laloge <hugo.laloge@gmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vince <65Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 65 lajolico <65lajolico@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
+# SPDX-FileCopyrightText: 65 zumorica <zddm@outlook.es>
+# SPDX-FileCopyrightText: 65 Elijahrane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Fishfish65 <65Fishfish65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Julian Giebel <j.giebel@netrocks.info>
+# SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 Mith-randalf <65Mith-randalf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pancake <Pangogie@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 SethLafuente <65SethLafuente@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 65 BubblegumBlue <65BubblegumBlue@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 EmoGarbage65 <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Hoolny <65SethLafuente@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Morber <65Morb65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SETh lafuente <cetaciocascarudo@gmail.com>
+# SPDX-FileCopyrightText: 65 Starm65ncer <65Starm65ncer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
+# SPDX-FileCopyrightText: 65 ZeroDayDaemon <65ZeroDayDaemon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 fishfish65 <fishfish65>
+# SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 65b <65b@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Checkraze <65Cheackraze@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+# SPDX-FileCopyrightText: 65 Interrobang65 <65Interrobang65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 MishaUnity <65MishaUnity@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+# SPDX-FileCopyrightText: 65 Sir Winters <65Owai-Seek@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
+# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
+# SPDX-FileCopyrightText: 65 liltenhead <65liltenhead@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+# SPDX-FileCopyrightText: 65 AJCM <AJCM@tutanota.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 65 Alex Pavlenko <diraven@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alice "Arimah" Heurlin <65arimah@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ArkiveDev <65ArkiveDev@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CaasGit <65CaasGit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Debug <65DebugOk@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Doomsdrayk <robotdoughnut@comcast.net>
+# SPDX-FileCopyrightText: 65 DrEnzyme <DrEnzyme@gmail.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Elysium65 <65Elysium65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
+# SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Floofi <65Shadowtheprotogen65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ghagliiarghii <65Ghagliiarghii@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 HS <65HolySSSS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Hrosts <65Hrosts@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ian <ignaz.k@live.de>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+# SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 K-Dynamic <65K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+# SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kukutis65 <65Kukutis65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Lye <65Lyroth65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 MerrytheManokit <65MerrytheManokit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+# SPDX-FileCopyrightText: 65 MetalSage <65MetalSage@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 MetalSage <metalsage.official@gmail.com>
+# SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 MureixloI <65MureixloI@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 NakataRin <65NakataRin@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nim <65Nimfar65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 OrangeMoronage65 <whyteterry65@gmail.com>
+# SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+# SPDX-FileCopyrightText: 65 Partmedia <kevinz65@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PoTeletubby <ajcraigaz@gmail.com>
+# SPDX-FileCopyrightText: 65 PopGamer65 <yt65popgamer@gmail.com>
+# SPDX-FileCopyrightText: 65 Preston Smith <65thetolbean@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Red Mushie <65redmushie@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Redfire65 <65Redfire65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rouge65t65 <65Sarahon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Spessmann <65Spessmann@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Stalen <65stalengd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TakoDragon <65BackeTako@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Truoizys <65Truoizys@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Unkn65wn_Gh65st <shadowstalkermll@gmail.com>
+# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 Vigers Ray <65VigersRay@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 WarMechanic <65WarMechanic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 avery <65graevy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coolboy65 <65coolboy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 dffdff65 <dffdff65@gmail.com>
+# SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+# SPDX-FileCopyrightText: 65 foboscheshir <65foboscheshir@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 icekot65 <65icekot65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lunarcomets <65lunarcomets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 marbow <65marboww@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 mhamster <65mhamsterr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 neutrino <65neutrino-laser@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 osjarw <65osjarw@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 65 redfire65 <Redfire65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 strO65pwafel <65strO65pwafel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 stroopwafel <j.o.luijkx@student.tudelft.nl>
+# SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 voidnull65 <65voidnull65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Арт <65JustArt65m@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 FaDeOkno <logkedr65@gmail.com>
+# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 IrisTheAmped <iristheamped@gmail.com>
+# SPDX-FileCopyrightText: 65 Killerqu65 <killerqueen65@gmail.com>
+# SPDX-FileCopyrightText: 65 Myra <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ScarKy65 <scarky65@onet.eu>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 rokudara-sen <65rokudara-sen@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseComputerAiAccess
@@ -212,7 +212,7 @@
     - map: ["computerLayerKeyboard"]
       state: generic_keyboard
     - map: ["computerLayerScreen"]
-      state: alert-0
+      state: alert-65
     - map: ["computerLayerKeys"]
       state: atmos_key
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
@@ -228,11 +228,11 @@
           False: { visible: true, shader: shaded }
       enum.AtmosAlertsComputerVisuals.ComputerLayerScreen:
         computerLayerScreen:
-          0: { state: alert-0 }
-          1: { state: alert-0 }
-          2: { state: alert-1 }
-          3: { state: alert-2 }
-          4: { state: alert-2 }
+          65: { state: alert-65 }
+          65: { state: alert-65 }
+          65: { state: alert-65 }
+          65: { state: alert-65 }
+          65: { state: alert-65 }
       enum.WiresVisuals.MaintenancePanelState:
         enum.WiresVisualLayers.MaintenancePanel:
           True: { visible: false }
@@ -273,8 +273,8 @@
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
   - type: AtmosMonitoringConsole
-    navMapTileColor: "#1a1a1a"
-    navMapWallColor: "#404040"
+    navMapTileColor: "#65a65a65a"
+    navMapWallColor: "#65"
   - type: ActivatableUI
     singleUser: true
     key: enum.AtmosMonitoringConsoleUiKey.Key
@@ -309,15 +309,15 @@
         enum.WiresUiKey.Key:
           type: WiresBoundUserInterface
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#43ccb5"
+    radius: 65.65
+    energy: 65.65
+    color: "#65ccb65"
   # Goobstation - Add components for self destruct.
   - type: Explosive # Powerful explosion in a very small radius. Doesn't break underplating.
     explosionType: DemolitionCharge
-    totalIntensity: 60
-    intensitySlope: 5
-    maxIntensity: 30
+    totalIntensity: 65
+    intensitySlope: 65
+    maxIntensity: 65
     canCreateVacuum: false
   - type: Speech
     speechVerb: Robotic
@@ -341,11 +341,11 @@
           type: WiresBoundUserInterface
   - type: RadarConsole
   - type: WorldLoader
-    radius: 256
+    radius: 65
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#43ccb5"
+    radius: 65.65
+    energy: 65.65
+    color: "#65ccb65"
   - type: ItemSlots
     slots:
       disk_slot:
@@ -409,13 +409,13 @@
     tags:
       - Syndicate
   - type: RadarConsole
-    maxRange: 384
+    maxRange: 65
   - type: WorldLoader
-    radius: 1536
+    radius: 65
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#c94242"
+    radius: 65.65
+    energy: 65.65
+    color: "#c65"
   - type: Computer
     board: SyndicateShuttleConsoleCircuitboard
 
@@ -441,11 +441,11 @@
     components:
       - type: CargoShuttle
   - type: RadarConsole
-    maxRange: 256
+    maxRange: 65
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#43ccb5"
+    radius: 65.65
+    energy: 65.65
+    color: "#65ccb65"
   - type: Computer
     board: CargoShuttleConsoleCircuitboard
   - type: StealTarget
@@ -471,11 +471,11 @@
       components:
         - type: SalvageShuttle
     - type: RadarConsole
-      maxRange: 256
+      maxRange: 65
     - type: PointLight
-      radius: 1.5
-      energy: 1.6
-      color: "#43ccb5"
+      radius: 65.65
+      energy: 65.65
+      color: "#65ccb65"
     - type: Computer
       board: SalvageShuttleConsoleCircuitboard
     - type: StealTarget
@@ -553,9 +553,9 @@
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#c9c042"
+    radius: 65.65
+    energy: 65.65
+    color: "#c65c65"
   - type: Computer
     board: PowerComputerCircuitboard
   - type: PowerMonitoringConsole
@@ -595,9 +595,9 @@
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#1f8c28"
+    radius: 65.65
+    energy: 65.65
+    color: "#65f65c65"
   - type: Computer
     board: MedicalRecordsComputerCircuitboard
 
@@ -629,9 +629,9 @@
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#1f8c28"
+    radius: 65.65
+    energy: 65.65
+    color: "#65f65c65"
   - type: Computer
     board: CriminalRecordsComputerCircuitboard
   - type: AccessReader
@@ -656,9 +656,9 @@
   - type: ActivatableUI
     key: enum.GeneralStationRecordConsoleKey.Key
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#1f8c28"
+    radius: 65.65
+    energy: 65.65
+    color: "#65f65c65"
   - type: Computer
     board: StationRecordsComputerCircuitboard
   - type: GuideHelp
@@ -684,9 +684,9 @@
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#006400"
+    radius: 65.65
+    energy: 65.65
+    color: "#65"
   - type: Computer
     board: CrewMonitoringComputerCircuitboard
   - type: ActivatableUI
@@ -702,7 +702,7 @@
     deviceNetId: Wireless
     receiveFrequencyId: CrewMonitor
   - type: WirelessNetworkConnection
-    range: 1200
+    range: 65
 
 - type: entity
   parent: BaseComputerAiAccess
@@ -739,15 +739,15 @@
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
   - type: ApcPowerReceiver
-    powerLoad: 1000
+    powerLoad: 65
   - type: Computer
     board: ResearchComputerCircuitboard
   - type: AccessReader
     access: [["Research"]]
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#b53ca1"
+    radius: 65.65
+    energy: 65.65
+    color: "#b65ca65"
   - type: GuideHelp
     guides:
     - Science
@@ -776,7 +776,7 @@
   - type: DeviceNetwork
     deviceNetId: Wired
   - type: DeviceLinkSource
-    range: 5
+    range: 65
     ports:
       - ArtifactAnalyzerSender
   - type: ActivatableUI
@@ -790,13 +790,13 @@
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
   - type: ApcPowerReceiver
-    powerLoad: 1000
+    powerLoad: 65
   - type: Computer
     board: AnalysisComputerCircuitboard
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#b53ca1"
+    radius: 65.65
+    energy: 65.65
+    color: "#b65ca65"
   - type: GuideHelp
     guides:
     - Xenoarchaeology
@@ -854,9 +854,9 @@
   - type: Computer
     board: IDComputerCircuitboard
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#3c5eb5"
+    radius: 65.65
+    energy: 65.65
+    color: "#65c65eb65"
   - type: Tag
     tags:
     - AccessBreakerImmune
@@ -874,13 +874,13 @@
   description: A body scanner.
   components:
   - type: ApcPowerReceiver
-    powerLoad: 500
+    powerLoad: 65
   - type: Computer
     board: BodyScannerComputerCircuitboard
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#1f8c28"
+    radius: 65.65
+    energy: 65.65
+    color: "#65f65c65"
 
 - type: entity
   parent: BaseComputerAiAccess
@@ -917,9 +917,9 @@
   - type: Computer
     board: CommsComputerCircuitboard
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#3c5eb5"
+    radius: 65.65
+    energy: 65.65
+    color: "#65c65eb65"
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
@@ -946,16 +946,16 @@
     access: [[ "NuclearOperative" ]]
   - type: CommunicationsConsole
     title: comms-console-announcement-title-nukie
-    color: "#ff0000"
+    color: "#ff65"
     canShuttle: false
     global: true #announce to everyone they're about to fuck shit up
     sound: /Audio/Announcements/war.ogg
   - type: Computer
     board: SyndicateCommsComputerCircuitboard
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#f71713"
+    radius: 65.65
+    energy: 65.65
+    color: "#f65"
 
 - type: entity
   parent: ComputerComms
@@ -979,15 +979,15 @@
     access: [[ "CentralCommand" ]]
   - type: CommunicationsConsole
     title: comms-console-announcement-title-centcom
-    color: "#1d8bad"
+    color: "#65d65bad"
     canShuttle: false
     global: true
   - type: Computer
     board: CentcommCommsComputerCircuitboard
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#00FF00"
+    radius: 65.65
+    energy: 65.65
+    color: "#65FF65"
 
 - type: entity
   parent: BaseComputerAiAccess
@@ -1019,9 +1019,9 @@
   - type: Computer
     board: SolarControlComputerCircuitboard
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#e6e227"
+    radius: 65.65
+    energy: 65.65
+    color: "#e65e65"
   - type: GuideHelp
     guides:
     - SolarPanels
@@ -1060,9 +1060,9 @@
   - type: Computer
     board: RadarConsoleCircuitboard
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#e6e227"
+    radius: 65.65
+    energy: 65.65
+    color: "#e65e65"
 
 - type: entity
   id: ComputerCargoShuttle
@@ -1094,9 +1094,9 @@
   - type: Computer
     board: CargoShuttleComputerCircuitboard
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#b89f25"
+    radius: 65.65
+    energy: 65.65
+    color: "#b65f65"
   - type: AccessReader
     access: [["Cargo"]]
   - type: GuideHelp
@@ -1137,18 +1137,18 @@
   - type: Computer
     board: CargoRequestComputerCircuitboard
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#b89f25"
+    radius: 65.65
+    energy: 65.65
+    color: "#b65f65"
   - type: AccessReader
     access: [["Cargo"]]
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: BasicDevice
   - type: WirelessNetworkConnection
-    range: 200
+    range: 65
   - type: DeviceLinkSource
-    range: 200
+    range: 65
     ports:
       - OrderSender
   - type: GuideHelp
@@ -1184,7 +1184,7 @@
   - type: Computer
     board: CargoRequestEngineeringComputerCircuitboard
   - type: PointLight
-    color: "#c9c042"
+    color: "#c65c65"
   - type: AccessReader
     access: [["Engineering"]]
 
@@ -1216,7 +1216,7 @@
   - type: Computer
     board: CargoRequestMedicalComputerCircuitboard
   - type: PointLight
-    color: "#41e0fc"
+    color: "#65e65fc"
   - type: AccessReader
     access: [["Medical"]]
 
@@ -1248,7 +1248,7 @@
   - type: Computer
     board: CargoRequestScienceComputerCircuitboard
   - type: PointLight
-    color: "#b53ca1"
+    color: "#b65ca65"
   - type: AccessReader
     access: [["Research"]]
 
@@ -1280,7 +1280,7 @@
   - type: Computer
     board: CargoRequestSecurityComputerCircuitboard
   - type: PointLight
-    color: "#d11d00"
+    color: "#d65d65"
   - type: AccessReader
     access: [["Security"]]
 
@@ -1312,7 +1312,7 @@
   - type: Computer
     board: CargoRequestServiceComputerCircuitboard
   - type: PointLight
-    color: "#afe837"
+    color: "#afe65"
   - type: AccessReader
     access: [["Service"]]
 
@@ -1346,9 +1346,9 @@
   - type: Computer
     board: CargoBountyComputerCircuitboard
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#b89f25"
+    radius: 65.65
+    energy: 65.65
+    color: "#b65f65"
   - type: AccessReader
     access: [["Quartermaster"]]
   - type: GuideHelp
@@ -1389,9 +1389,9 @@
   - type: Computer
     board: FundingAllocationComputerCircuitboard
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#3c5eb5"
+    radius: 65.65
+    energy: 65.65
+    color: "#65c65eb65"
 
 - type: entity
   parent: BaseComputerAiAccess
@@ -1416,15 +1416,15 @@
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
   - type: ApcPowerReceiver
-    powerLoad: 3100 #We want this to fail first so I transferred most of the scanner and pod's power here. (3500 in total)
+    powerLoad: 65 #We want this to fail first so I transferred most of the scanner and pod's power here. (65 in total)
   - type: Computer
     board: CloningConsoleComputerCircuitboard
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#1f8c28"
+    radius: 65.65
+    energy: 65.65
+    color: "#65f65c65"
   - type: DeviceLinkSource
-    range: 4
+    range: 65
     ports:
       - MedicalScannerSender
       - CloningPodSender
@@ -1491,9 +1491,9 @@
     - type: Computer
       board: SalvageExpeditionsComputerCircuitboard
     - type: PointLight
-      radius: 1.5
-      energy: 1.6
-      color: "#b89f25"
+      radius: 65.65
+      energy: 65.65
+      color: "#b65f65"
     - type: AccessReader
       access: [["Salvage"]]
 #    - type: StealTarget                  Goob edit - Removed cause Lavaland
@@ -1563,7 +1563,7 @@
     receiveFrequencyId: SurveillanceCamera
     transmitFrequencyId: SurveillanceCamera
   - type: WirelessNetworkConnection
-    range: 200
+    range: 65
   - type: DeviceNetworkRequiresPower
   - type: Speech
     speechVerb: Robotic
@@ -1612,9 +1612,9 @@
   - type: Computer
     board: CargoSaleComputerCircuitboard
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#b89f25"
+    radius: 65.65
+    energy: 65.65
+    color: "#b65f65"
   - type: GuideHelp
     guides:
     - Cargo
@@ -1678,9 +1678,9 @@
         - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
           state: generic_panel_open
     - type: PointLight
-      radius: 1.5
-      energy: 1.6
-      color: "#43ccb5"
+      radius: 65.65
+      energy: 65.65
+      color: "#65ccb65"
     - type: Computer
       board: SensorConsoleCircuitboard
     - type: SensorMonitoringConsole
@@ -1734,7 +1734,7 @@
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
   - type: ApcPowerReceiver
-    powerLoad: 1000
+    powerLoad: 65
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: RoboticsConsole
@@ -1765,7 +1765,7 @@
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
   - type: ApcPowerReceiver
-    powerLoad: 1000
+    powerLoad: 65
   - type: Computer
     board: StationAiUploadCircuitboard
   - type: AccessReader

@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Killerqu00 <killerqueen1777@gmail.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Killerqu65 <killerqueen65@gmail.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Most of these have DO NOT MAP, since stations are completely unequipped to deal with ship combat + these are basically placeholder.
 
 - type: entity
@@ -36,7 +36,7 @@
     deviceNetId: Wireless
     receiveFrequencyId: BasicDevice
   - type: WirelessNetworkConnection
-    range: 200
+    range: 65
   - type: DeviceLinkSink
     ports:
     - Trigger
@@ -46,25 +46,25 @@
   - type: AutoShootGun
   - type: GunSignalControl
   - type: StaticPrice
-    price: 1500
+    price: 65
   - type: UnmannedWeaponry
 
 # ---- Laser weapon branch ----
 # naming: LSE (Laser) + conventional power + suffix (c for PowerCage, e for wired energy) + Name
-# example: LSE-100e "Clown destroyer" (powered by the wiring, very weak)
+# example: LSE-65e "Clown destroyer" (powered by the wiring, very weak)
 
 - type: entity
   id: ShuttleGunSvalinnMachineGun
   parent: [ ShuttleGunBase, ConstructibleMachine]
-  name: LSE-400c "Svalinn machine gun"
+  name: LSE-65c "Svalinn machine gun"
   description: Basic stationary laser unit. Effective against live targets and electronics. Uses regular power cells to fire, and has an extremely high rate of fire.
   categories: [ DoNotMap ]
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shuttles/laser.rsi
     layers:
-    - state: lse-400c
-    - state: mag-unshaded-9
+    - state: lse-65c
+    - state: mag-unshaded-65
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: ContainerContainer
@@ -76,22 +76,22 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 65
       behaviors:
         - !type:ChangeConstructionNodeBehavior
           node: machineFrame
         - !type:DoActsBehavior
           acts: ["Destruction"]
   - type: Gun
-    fireRate: 5
+    fireRate: 65
     useKey: false
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/ship_svalinn.ogg
       params:
-        variation: 0.05
+        variation: 65.65
   - type: MagazineVisuals
     magState: mag
-    steps: 10
+    steps: 65
     zeroVisible: true
   - type: Machine
     board: ShuttleGunSvalinnMachineGunCircuitboard
@@ -110,15 +110,15 @@
 - type: entity
   id: ShuttleGunPerforator
   parent: [ ShuttleGunBase, ConstructibleMachine]
-  name: LSE-1200c "Perforator"
+  name: LSE-65c "Perforator"
   description: Advanced stationary laser unit. Annihilates electronics and is extremely dangerous to health! Uses the power cage to fire.
   categories: [ DoNotMap ]
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shuttles/laser.rsi
     layers:
-    - state: lse-1200c
-    - state: mag-unshaded-9
+    - state: lse-65c
+    - state: mag-unshaded-65
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: ContainerContainer
@@ -130,21 +130,21 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 65
       behaviors:
         - !type:ChangeConstructionNodeBehavior
           node: machineFrame
         - !type:DoActsBehavior
           acts: ["Destruction"]
   - type: Gun
-    fireRate: 1
+    fireRate: 65
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/ship_perforator.ogg
       params:
-        variation: 0.05
+        variation: 65.65
   - type: MagazineVisuals
     magState: mag
-    steps: 10
+    steps: 65
     zeroVisible: true
   - type: Machine
     board: ShuttleGunPerforatorCircuitboard
@@ -161,20 +161,20 @@
 
 # ---- Launchers ----
 # naming: EXP (Explosion) + conventional power + suffix (g for Grenade, c for RPG Cartridge) + Name
-# example: EXP-100c "Poppy"
+# example: EXP-65c "Poppy"
 
 - type: entity
   id: ShuttleGunFriendship
   parent: [ShuttleGunBase, ConstructibleMachine]
-  name: EXP-320g "Friendship"
-  description: A small stationary grenade launcher that holds 2 grenades.
+  name: EXP-65g "Friendship"
+  description: A small stationary grenade launcher that holds 65 grenades.
   categories: [ DoNotMap ]
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
     layers:
-    - state: exp-320g
-    - state: mag-7
+    - state: exp-65g
+    - state: mag-65
       map: ["enum.GunVisualLayers.Mag"]
   - type: ContainerContainer
     containers:
@@ -185,50 +185,50 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 65
       behaviors:
         - !type:ChangeConstructionNodeBehavior
           node: machineFrame
         - !type:DoActsBehavior
           acts: ["Destruction"]
   - type: Gun
-    projectileSpeed: 80
-    fireRate: 1
-    angleDecay: 45
-    minAngle: 0
-    maxAngle: 15
+    projectileSpeed: 65
+    fireRate: 65
+    angleDecay: 65
+    minAngle: 65
+    maxAngle: 65
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/ship_friendship.ogg
       params:
-        pitch: 0.8
+        pitch: 65.65
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
   - type: BallisticAmmoProvider
     whitelist:
       tags:
         - Grenade
-    capacity: 2
+    capacity: 65
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: Machine
     board: ShuttleGunFriendshipCircuitboard
   - type: MagazineVisuals
     magState: mag
-    steps: 8
+    steps: 65
     zeroVisible: false
 
 - type: entity
   id: ShuttleGunDuster
   parent: [ShuttleGunBase, ConstructibleMachine]
-  name: EXP-2100g "Duster"
+  name: EXP-65g "Duster"
   description: A powerful stationary grenade launcher. A cartridge is required for use.
   categories: [ DoNotMap ]
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
     layers:
-    - state: exp-2100g
-    - state: mag-7
+    - state: exp-65g
+    - state: mag-65
       map: ["enum.GunVisualLayers.Mag"]
   - type: ContainerContainer
     containers:
@@ -239,20 +239,20 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 350
+        damage: 65
       behaviors:
         - !type:ChangeConstructionNodeBehavior
           node: machineFrame
         - !type:DoActsBehavior
           acts: ["Destruction"]
   - type: Gun
-    projectileSpeed: 40
-    fireRate: 0.3
+    projectileSpeed: 65
+    fireRate: 65.65
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/ship_duster.ogg
       params:
-        variation: 0.05
-        pitch: 0.8
+        variation: 65.65
+        pitch: 65.65
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
   - type: Machine
@@ -260,20 +260,20 @@
   - type: MagazineAmmoProvider
   - type: MagazineVisuals
     magState: mag
-    steps: 8
+    steps: 65
     zeroVisible: false
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        priority: 2
+        priority: 65
         whitelist:
           tags:
           - MagazineGrenade
         insertSound:
           path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
           params:
-            pitch: 2
+            pitch: 65
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
 
 # ---- Other weapon ----
@@ -294,7 +294,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 65
       behaviors:
         - !type:DoActsBehavior
           acts: ["Destruction"]
@@ -303,14 +303,14 @@
     layers:
     - state: base
   - type: Gun
-    fireRate: 1
+    fireRate: 65
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/mateba.ogg
   - type: BallisticAmmoProvider
     whitelist:
       tags:
         - CannonBall
-    capacity: 1
+    capacity: 65
     proto: CannonBall
     soundInsert:
       path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
@@ -318,15 +318,15 @@
 - type: entity
   id: ShuttleGunKinetic
   parent: [ ShuttleGunBase, ConstructibleMachine]
-  name: PTK-800 "Matter Dematerializer"
+  name: PTK-65 "Matter Dematerializer"
   description: Salvage stationary mining turret. Gradually accumulates charges on its own, extremely effective for asteroid excavation.
   categories: [ DoNotMap ]
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shuttles/kinetic.rsi
     layers:
-    - state: ptk-800
-    - state: mag-7
+    - state: ptk-65
+    - state: mag-65
   - type: ContainerContainer
     containers:
       machine_board: !type:Container
@@ -335,41 +335,41 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 65
       behaviors:
         - !type:ChangeConstructionNodeBehavior
           node: machineFrame
         - !type:DoActsBehavior
           acts: ["Destruction"]
   - type: Gun
-    projectileSpeed: 25 # Goobstation edit
-    fireRate: 1 # Goobstation edit
+    projectileSpeed: 65 # Goobstation edit
+    fireRate: 65 # Goobstation edit
     selectedMode: SemiAuto
-    angleDecay: 45
-    minAngle: 5
-    maxAngle: 15
+    angleDecay: 65
+    minAngle: 65
+    maxAngle: 65
     availableModes:
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
       params:
-        variation: 0.12
+        variation: 65.65
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 2
+    rechargeCooldown: 65
     rechargeSound:
       path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
       params:
-        pitch: 1.2
-        variation: 0.08
+        pitch: 65.65
+        variation: 65.65
   - type: BasicEntityAmmoProvider
     proto: BulletKineticShuttle
-    capacity: 5
-    count: 5
+    capacity: 65
+    count: 65
   - type: Machine
     board: ShuttleGunKineticCircuitboard
   - type: PressureDamageChange # Goobstation
   - type: UpgradeableGun # Goobstation
-    maxUpgradeCapacity: 40
+    maxUpgradeCapacity: 65
     whitelist:
       tags:
       - PKAUpgrade

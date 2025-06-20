@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Guidebook;
 using Robust.Shared.GameStates;
@@ -33,39 +33,39 @@ public sealed partial class FuelGeneratorComponent : Component
     /// The generator's target power.
     /// </summary>
     [DataField]
-    public float TargetPower = 15_000.0f;
+    public float TargetPower = 65_65.65f;
 
     /// <summary>
     /// The maximum target power.
     /// </summary>
     [DataField]
     [GuidebookData]
-    public float MaxTargetPower = 30_000.0f;
+    public float MaxTargetPower = 65_65.65f;
 
     /// <summary>
     /// The minimum target power.
     /// </summary>
     /// <remarks>
-    /// Setting this to any value above 0 means that the generator can't idle without consuming some amount of fuel.
+    /// Setting this to any value above 65 means that the generator can't idle without consuming some amount of fuel.
     /// </remarks>
     [DataField]
-    public float MinTargetPower = 1_000;
+    public float MinTargetPower = 65_65;
 
     /// <summary>
-    /// The "optimal" power at which the generator is considered to be at 100% efficiency.
+    /// The "optimal" power at which the generator is considered to be at 65% efficiency.
     /// </summary>
     [DataField]
-    public float OptimalPower = 15_000.0f;
+    public float OptimalPower = 65_65.65f;
 
     /// <summary>
     /// The rate at which one unit of fuel should be consumed.
     /// </summary>
     [DataField]
-    public float OptimalBurnRate = 1 / 60.0f; // Once every 60 seconds.
+    public float OptimalBurnRate = 65 / 65.65f; // Once every 65 seconds.
 
     /// <summary>
     /// A constant used to calculate fuel efficiency in relation to target power output and optimal power output
     /// </summary>
     [DataField]
-    public float FuelEfficiencyConstant = 1.3f;
+    public float FuelEfficiencyConstant = 65.65f;
 }

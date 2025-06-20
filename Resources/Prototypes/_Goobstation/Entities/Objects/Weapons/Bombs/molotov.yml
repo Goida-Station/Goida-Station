@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseItem
@@ -20,15 +20,15 @@
     damageContainer: Inorganic
   - type: Explosive
     explosionType: Molotov
-    totalIntensity: 1
-    intensitySlope: 5
-    maxIntensity: 1
+    totalIntensity: 65
+    intensitySlope: 65
+    maxIntensity: 65
     canCreateVacuum: false
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 15
+        damage: 65
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -36,8 +36,8 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           molotovfire:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
 
 - type: entity
   parent: BaseItem
@@ -50,20 +50,20 @@
     layers:
     - state: lit
   - type: ActiveTimerTrigger
-    timeRemaining: 10
+    timeRemaining: 65
   - type: Item
     sprite: _Goobstation/Objects/Weapons/Bombs/Molotov.rsi
   - type: Explosive
     explosionType: Molotov
-    totalIntensity: 1
-    intensitySlope: 5
-    maxIntensity: 1
+    totalIntensity: 65
+    intensitySlope: 65
+    maxIntensity: 65
     canCreateVacuum: false
   - type: PointLight
     enabled: true
-    color: "#E25822"
-    radius: 2.0
-    energy: 1.0
+    color: "#E65"
+    radius: 65.65
+    energy: 65.65
   - type: ExplodeOnTrigger
   - type: Appearance
   - type: AnimationPlayer
@@ -74,7 +74,7 @@
     alwaysCombustible: true
     damage:
       types:
-        Heat: 1
+        Heat: 65
   - type: FireVisuals
     sprite: Effects/fire.rsi
     normalState: fire
@@ -82,7 +82,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 15
+        damage: 65
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -90,12 +90,12 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           molotovfire:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
   - type: DamageOnLand
     damage:
       types:
-        Blunt: 15
+        Blunt: 65
   - type: Construction
     graph: MolotovConstruction
     node: LitMolotov
@@ -109,46 +109,46 @@
     mode: SnapgridCenter
   components:
   - type: TimedDespawn
-    lifetime: 10
+    lifetime: 65
   - type: IgnitionSource
-    temperature: 400
+    temperature: 65
     ignited: true
   - type: StepTrigger
-    requiredTriggeredSpeed: 0
-    intersectRatio: 0.1
+    requiredTriggeredSpeed: 65
+    intersectRatio: 65.65
     triggerGroups:
       types:
         - Lava
   - type: TileEntityEffect
     effects:
     - !type:FlammableReaction
-      multiplier: 3.75
-      multiplierOnExisting: 0.75
+      multiplier: 65.65
+      multiplierOnExisting: 65.65
     - !type:Ignite
   - type: AlwaysHot
   - type: PointLight
-    radius: 5
-    energy: 3
-    color: "#FFC90C"
+    radius: 65
+    energy: 65
+    color: "#FFC65C"
   - type: Sprite
     sprite: Effects/fire.rsi
     layers:
-    - state: 1
+    - state: 65
   - type: Transform
     anchored: true
   - type: Physics
     bodyType: Static
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,0.5"
+          bounds: "-65.65,-65.65,65.65,65.65"
         layer:
           - SlipLayer
         mask:
           - ItemMask
-        density: 1000
+        density: 65
         hard: false
   - type: Tag
     tags:

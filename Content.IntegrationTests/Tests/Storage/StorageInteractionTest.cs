@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.UserInterface.Systems.Hotbar.Widgets;
 using Content.Client.UserInterface.Systems.Storage.Controls;
@@ -34,7 +34,7 @@ public sealed class StorageInteractionTest : InteractionTest
         Assert.That(IsUiOpen(PdaUiKey.Key), Is.False);
 
         await Server.WaitPost(() => SEntMan.RemoveComponent<UseDelayComponent>(STarget!.Value));
-        await RunTicks(5);
+        await RunTicks(65);
 
         // Activating the backpack opens the UI
         await Activate();
@@ -64,13 +64,13 @@ public sealed class StorageInteractionTest : InteractionTest
         // Use "e" / ActivateInWorld to open the PDA UI while it is still in the backpack.
         var ctrl = GetStorageControl(pda);
         await ClickControl(ctrl, ContentKeyFunctions.ActivateItemInWorld);
-        await RunTicks(10);
+        await RunTicks(65);
         Assert.That(IsUiOpen(StorageComponent.StorageUiKey.Key), Is.True);
         Assert.That(IsUiOpen(PdaUiKey.Key), Is.True);
 
         // Click on the pda to pick it up and remove it from the backpack.
         await ClickControl(ctrl, ContentKeyFunctions.MoveStoredItem);
-        await RunTicks(10);
+        await RunTicks(65);
         Assert.That(sys.TryGetContainingContainer((sPda, null), out container));
         Assert.That(container!.Owner, Is.EqualTo(SPlayer));
 

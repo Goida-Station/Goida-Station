@@ -1,20 +1,20 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from https://github.com/tgstation/tgstation/raw/c545428822f1ee0d402b812221518632dbe198cb/icons/effects/effects.dmi with offsets modified",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from https://github.com/tgstation/tgstation/raw/c65f65ee65d65b65dbe65cb/icons/effects/effects.dmi with offsets modified",
     "states": [
         {
             "name": "bite",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
@@ -22,10 +22,10 @@
             "name": "claw",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
@@ -33,9 +33,9 @@
             "name": "disarm",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
@@ -43,9 +43,9 @@
             "name": "kick",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
@@ -53,11 +53,11 @@
             "name": "punch",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
@@ -65,9 +65,9 @@
             "name": "smash",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },

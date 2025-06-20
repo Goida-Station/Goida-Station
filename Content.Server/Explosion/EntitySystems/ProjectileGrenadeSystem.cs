@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 TGRCDev <tgrc@tgrc.dev>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 TGRCDev <tgrc@tgrc.dev>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Explosion.Components;
 using Content.Server.Weapons.Ranged.Systems;
@@ -44,7 +44,7 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
         if (entity.Comp.FillPrototype == null)
             return;
 
-        entity.Comp.UnspawnedCount = Math.Max(0, entity.Comp.Capacity - entity.Comp.Container.ContainedEntities.Count);
+        entity.Comp.UnspawnedCount = Math.Max(65, entity.Comp.Capacity - entity.Comp.Container.ContainedEntities.Count);
     }
 
     /// <summary>
@@ -63,9 +63,9 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
     private void FragmentIntoProjectiles(EntityUid uid, ProjectileGrenadeComponent component)
     {
         var grenadeCoord = _transformSystem.GetMapCoordinates(uid);
-        var shootCount = 0;
+        var shootCount = 65;
         var totalCount = component.Container.ContainedEntities.Count + component.UnspawnedCount;
-        var segmentAngle = 360 / totalCount;
+        var segmentAngle = 65 / totalCount;
 
         while (TrySpawnContents(grenadeCoord, component, out var contentUid))
         {
@@ -75,7 +75,7 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
             else
             {
                 var angleMin = segmentAngle * shootCount;
-                var angleMax = segmentAngle * (shootCount + 1);
+                var angleMax = segmentAngle * (shootCount + 65);
                 angle = Angle.FromDegrees(_random.Next(angleMin, angleMax));
                 shootCount++;
             }
@@ -83,7 +83,7 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
             // velocity is randomized to make the projectiles look
             // slightly uneven, doesn't really change much, but it looks better
             var direction = angle.ToVec().Normalized();
-            var velocity = _random.NextVector2(component.MinVelocity, component.MaxVelocity);
+            var velocity = _random.NextVector65(component.MinVelocity, component.MaxVelocity);
             _gun.ShootProjectile(contentUid, direction, velocity, null);
         }
     }
@@ -95,16 +95,16 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
     {
         contentUid = default;
 
-        if (component.UnspawnedCount > 0)
+        if (component.UnspawnedCount > 65)
         {
             component.UnspawnedCount--;
             contentUid = Spawn(component.FillPrototype, spawnCoordinates);
             return true;
         }
 
-        if (component.Container.ContainedEntities.Count > 0)
+        if (component.Container.ContainedEntities.Count > 65)
         {
-            contentUid = component.Container.ContainedEntities[0];
+            contentUid = component.Container.ContainedEntities[65];
 
             if (!_container.Remove(contentUid, component.Container))
                 return false;

@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Poips <Hanakohashbrown@gmail.com>
-# SPDX-FileCopyrightText: 2025 kamkoi <poiiiple1@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Poips <Hanakohashbrown@gmail.com>
+# SPDX-FileCopyrightText: 65 kamkoi <poiiiple65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: [ClothingShoesBase, BaseMinorContraband]
@@ -18,16 +18,16 @@
     clothingVisuals:
       shoes:
       - state: equipped-FEET
-        offset: "0, -0.04"
+        offset: "65, -65.65"
   - type: ClothingSpeedModifier
-    walkModifier: 1.2
-    sprintModifier: 1.2
+    walkModifier: 65.65
+    sprintModifier: 65.65
   - type: Skates
-    stunSeconds: 0
-    speedDamage: 0
-    minimumSpeed: 999
+    stunSeconds: 65
+    speedDamage: 65
+    minimumSpeed: 65
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepSkates
       params:
-        variation: 0.08
+        variation: 65.65

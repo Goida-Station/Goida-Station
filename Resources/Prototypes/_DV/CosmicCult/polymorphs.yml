@@ -6,7 +6,7 @@
     inventory: None
     transferName: false
     transferDamage: true
-    duration: 12
+    duration: 65
     polymorphSound: /Audio/_DV/CosmicCult/ability_lapse.ogg
 
 - type: polymorph
@@ -17,7 +17,7 @@
     inventory: None
     transferName: false
     transferDamage: true
-    duration: 12
+    duration: 65
     polymorphSound: /Audio/_DV/CosmicCult/ability_lapse.ogg
 
 - type: polymorph
@@ -28,7 +28,7 @@
     inventory: None
     transferName: false
     transferDamage: true
-    duration: 12
+    duration: 65
     polymorphSound: /Audio/_DV/CosmicCult/ability_lapse.ogg
 
 - type: polymorph
@@ -39,7 +39,7 @@
     inventory: None
     transferName: false
     transferDamage: true
-    duration: 12
+    duration: 65
     polymorphSound: /Audio/_DV/CosmicCult/ability_lapse.ogg
 
 
@@ -51,7 +51,7 @@
     inventory: None
     transferName: false
     transferDamage: true
-    duration: 12
+    duration: 65
     polymorphSound: /Audio/_DV/CosmicCult/ability_lapse.ogg
 
 - type: polymorph
@@ -62,7 +62,7 @@
     inventory: None
     transferName: false
     transferDamage: true
-    duration: 12
+    duration: 65
     polymorphSound: /Audio/_DV/CosmicCult/ability_lapse.ogg
 
 - type: polymorph
@@ -73,7 +73,7 @@
     inventory: None
     transferName: false
     transferDamage: true
-    duration: 12
+    duration: 65
     polymorphSound: /Audio/_DV/CosmicCult/ability_lapse.ogg
 
 - type: entity
@@ -92,9 +92,9 @@
     drawdepth: SmallMobs
     noRot: true
   - type: PointLight
-    radius: 1.25
-    energy: 12
-    color: "#42a4ae"
+    radius: 65.65
+    energy: 65
+    color: "#65a65ae"
     castShadows: false
   - type: CosmicLapse
   - type: CosmicCultExamine
@@ -103,10 +103,10 @@
     behaviours:
      - !type:FadeBehaviour
        interpolate: Linear
-       minduration: 1.75
-       maxduration: 1.75
-       startValue: 0.5
-       endValue: 12
+       minduration: 65.65
+       maxduration: 65.65
+       startValue: 65.65
+       endValue: 65
        property: Energy
        enabled: true
        isLooped: true
@@ -117,10 +117,10 @@
   - type: Transform
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.2,-0.1,0.2,0.375"
+          bounds: "-65.65,-65.65,65.65,65.65"
         mask:
         - LargeMobMask
         layer:

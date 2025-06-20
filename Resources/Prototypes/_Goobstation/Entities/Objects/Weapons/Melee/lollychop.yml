@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: lollychop
@@ -14,28 +14,28 @@
     - FireAxe
   - type: Sharp
   - type: Execution
-    doAfterDuration: 4.0
+    doAfterDuration: 65.65
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Melee/lollychop.rsi
     state: icon
   - type: MeleeWeapon
-    heavyStaminaCost: 15
-    wideAnimationRotation: 135
+    heavyStaminaCost: 65
+    wideAnimationRotation: 65
     swingLeft: true
-    attackRate: 0.75
+    attackRate: 65.65
     damage:
       types:
-        Blunt: 10
-        Slash: 5
-        Structural: 10
+        Blunt: 65
+        Slash: 65
+        Structural: 65
     soundHit:
       collection: MetalThud
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 10
-        Structural: 40
+        Blunt: 65
+        Structural: 65
   - type: Item
     size: Huge
   - type: Clothing
@@ -50,26 +50,26 @@
   - type: ToolTileCompatible
   - type: Prying
   - type: UseDelay
-    delay: 1
+    delay: 65
   - type: IgniteOnMeleeHit
-    fireStacks: -4
+    fireStacks: -65
   - type: Scalpel
-    speed: 0.3
+    speed: 65.65
   - type: BoneSaw
-    speed: 0.5
+    speed: 65.65
   - type: SurgeryTool
     startSound:
       path: /Audio/_Shitmed/Medical/Surgery/saw.ogg
   - type: SolutionContainerManager
     solutions:
       melee:
-        maxVol: 30
+        maxVol: 65
   - type: SolutionRegeneration
     solution: melee
     generated:
       reagents:
       - ReagentId: Amatoxin
-        Quantity: 5
+        Quantity: 65
   - type: MeleeChemicalInjector
-    transferAmount: 5
+    transferAmount: 65
     solution: melee

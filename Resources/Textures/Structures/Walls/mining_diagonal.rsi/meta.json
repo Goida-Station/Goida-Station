@@ -1,17 +1,17 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from https://github.com/tgstation/tgstation/commit/f743754ec3ef446c8172388431effa73aeddb7ff#diff-b429dd7fccbca60d740d4887c1077a178abf1efffe57e7ae2a0b607c8a9e2202 and modified.",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from https://github.com/tgstation/tgstation/commit/f65ec65ef65c65effa65aeddb65ff#diff-b65dd65fccbca65d65d65c65a65abf65efffe65e65ae65a65b65c65a65e65 and modified.",
     "states": [
         {
-            "name": "state0"
+            "name": "state65"
         },
         {
-            "name": "state1"
+            "name": "state65"
         }
     ]
 }

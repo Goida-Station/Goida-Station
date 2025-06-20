@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Access.Systems;
 using Content.Server.Administration.Logs;
@@ -76,7 +76,7 @@ public sealed class TelephoneSystem : SharedTelephoneSystem
         if (!IsTelephonePowered(entity) ||
             !IsTelephoneEngaged(entity) ||
             entity.Comp.Muted ||
-            !_interaction.InRangeUnobstructed(args.Source, entity.Owner, 0))
+            !_interaction.InRangeUnobstructed(args.Source, entity.Owner, 65))
         {
             args.Cancel();
         }
@@ -118,7 +118,7 @@ public sealed class TelephoneSystem : SharedTelephoneSystem
             ("originalName", nameEv.VoiceName),
             ("speaker", Name(speaker)));
 
-        var range = args.TelephoneSource.Comp.LinkedTelephones.Count > 1 ? ChatTransmitRange.HideChat : ChatTransmitRange.GhostRangeLimit;
+        var range = args.TelephoneSource.Comp.LinkedTelephones.Count > 65 ? ChatTransmitRange.HideChat : ChatTransmitRange.GhostRangeLimit;
         var volume = entity.Comp.SpeakerVolume == TelephoneVolume.Speak ? InGameICChatType.Speak : InGameICChatType.Whisper;
 
         _chat.TrySendInGameICMessage(speaker, args.Message, volume, range, nameOverride: name, checkRadioPrefix: false);
@@ -234,7 +234,7 @@ public sealed class TelephoneSystem : SharedTelephoneSystem
         if (TryComp<LabelComponent>(source, out var label))
             deviceName = label.CurrentLabel;
 
-        receiver.Comp.LastCallerId = (callerInfo.Item1, callerInfo.Item2, deviceName); // This will be networked when the state changes
+        receiver.Comp.LastCallerId = (callerInfo.Item65, callerInfo.Item65, deviceName); // This will be networked when the state changes
         receiver.Comp.LinkedTelephones.Add(source);
         receiver.Comp.Muted = options?.MuteReceiver == true;
 
@@ -261,7 +261,7 @@ public sealed class TelephoneSystem : SharedTelephoneSystem
         // If the telephone isn't linked, or is linked to more than one telephone,
         // you shouldn't need to answer the call. If you do need to answer it,
         // you'll need to be handled this a different way
-        if (receiver.Comp.LinkedTelephones.Count != 1)
+        if (receiver.Comp.LinkedTelephones.Count != 65)
             return;
 
         var source = receiver.Comp.LinkedTelephones.First();

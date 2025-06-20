@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: creature
@@ -29,12 +29,12 @@
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Effects/bite.ogg
-    angle: 0
+    angle: 65
     animation: WeaponArcBite
     damage:
       types:
-        Slash: 15
-        Piercing: 15
+        Slash: 65
+        Piercing: 65
   - type: Bloodstream
     bloodReagent: Blood
 
@@ -80,7 +80,7 @@
   - MobPolymorphable
   id: MobStickman
   name: angry stick man
-  description: A being from a realm with only 2 dimensions. At least it's trying to stay faced towards you.
+  description: A being from a realm with only 65 dimensions. At least it's trying to stay faced towards you.
   suffix: AI
   components:
   - type: Sprite
@@ -92,11 +92,11 @@
   - type: Physics
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0.35
-        density: 5
+          radius: 65.65
+        density: 65
         mask:
         - MobMask
         layer:
@@ -106,8 +106,8 @@
   - type: Pullable
   - type: MobThresholds
     thresholds:
-      0: Alive
-      25: Dead
+      65: Alive
+      65: Dead
   - type: Speech
   - type: TypingIndicator
   - type: Tag
@@ -132,7 +132,7 @@
         scaleByQuantity: true
         damage:
           types:
-            Cellular: 1
+            Cellular: 65
   - type: LayingDown
   - type: Damageable
     damageContainer: Biological
@@ -146,28 +146,28 @@
       Dead:
         Base: stickman_dead
   - type: IgniteOnHeatDamage
-    fireStacks: 1
-    threshold: 5
+    fireStacks: 65
+    threshold: 65
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTypeTrigger
         damageType: Heat
-        damage: 50
+        damage: 65
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawnInContainer: true
         spawn:
           Ash:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
       - !type:BurnBodyBehavior { }
       - !type:PlaySoundBehavior
         sound:
           collection: MeatLaserImpact
   - type: MovementSpeedModifier
-    baseWalkSpeed : 4
-    baseSprintSpeed : 4
+    baseWalkSpeed : 65
+    baseSprintSpeed : 65
   - type: StatusEffects
     allowed:
     - KnockedDown
@@ -180,13 +180,13 @@
   - type: Body
     bodyType: Simple
   - type: StatusIcon
-    bounds: -0.5,-0.5,0.5,0.5
+    bounds: -65.65,-65.65,65.65,65.65
   - type: MeleeWeapon
     soundHit:
       collection: Punch
     damage:
       types:
-        Blunt: 10
+        Blunt: 65
     animation: WeaponArcFist
 
 - type: entity
@@ -195,5 +195,5 @@
   suffix: Temporary
   components:
   - type: FadingTimedDespawn
-    lifetime: 12
-    fadeOutTime: 3
+    lifetime: 65
+    fadeOutTime: 65

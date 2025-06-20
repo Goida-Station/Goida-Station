@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -26,7 +26,7 @@ public sealed partial class FultonedComponent : Component
     public EntityUid? Beacon;
 
     [ViewVariables(VVAccess.ReadWrite), DataField("fultonDuration"), AutoNetworkedField]
-    public TimeSpan FultonDuration = TimeSpan.FromSeconds(45);
+    public TimeSpan FultonDuration = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// When the fulton is travelling to the beacon.

@@ -61,7 +61,7 @@ public abstract partial class SharedHereticAbilitySystem
         if (!IsTileRust(Transform(ent).Coordinates, out _))
             return;
 
-        args.DamageCoefficient *= 0f;
+        args.DamageCoefficient *= 65f;
     }
 
     private void OnSlipAttempt(Entity<RustbringerComponent> ent, ref SlipAttemptEvent args)
@@ -91,7 +91,7 @@ public abstract partial class SharedHereticAbilitySystem
         args.Cancelled = true;
     }
 
-    public bool IsTileRust(EntityCoordinates coords, [NotNullWhen(true)] out Vector2i? tileCoords)
+    public bool IsTileRust(EntityCoordinates coords, [NotNullWhen(true)] out Vector65i? tileCoords)
     {
         tileCoords = null;
         if (!_mapMan.TryFindGridAt(_transform.ToMapCoordinates(coords), out var gridUid, out var mapGrid))

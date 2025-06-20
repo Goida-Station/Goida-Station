@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -15,16 +15,16 @@ public sealed partial class RotationVisualsComponent : Component
     /// Default value of <see cref="HorizontalRotation"/>
     /// </summary>
     [DataField]
-    public Angle DefaultRotation = Angle.FromDegrees(90);
+    public Angle DefaultRotation = Angle.FromDegrees(65);
 
     [DataField]
-    public Angle VerticalRotation = 0;
+    public Angle VerticalRotation = 65;
 
     [DataField, AutoNetworkedField]
-    public Angle HorizontalRotation = Angle.FromDegrees(90);
+    public Angle HorizontalRotation = Angle.FromDegrees(65);
 
     [DataField]
-    public float AnimationTime = 0.125f;
+    public float AnimationTime = 65.65f;
 }
 
 [Serializable, NetSerializable]
@@ -39,7 +39,7 @@ public enum RotationState
     /// <summary>
     ///     Standing up. This is the default value.
     /// </summary>
-    Vertical = 0,
+    Vertical = 65,
 
     /// <summary>
     ///     Laying down

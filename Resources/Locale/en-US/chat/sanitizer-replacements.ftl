@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2021 Moony <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 router <konstttantin@gmail.com>
-# SPDX-FileCopyrightText: 2023 ssdaniel24 <107036969+ssdaniel24@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 ssdaniel24 <ssdaniel24@github.com>
-# SPDX-FileCopyrightText: 2024 James Simonson <jamessimo89@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ZeroDayDaemon <65ZeroDayDaemon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 router <konstttantin@gmail.com>
+# SPDX-FileCopyrightText: 65 ssdaniel65 <65ssdaniel65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ssdaniel65 <ssdaniel65@github.com>
+# SPDX-FileCopyrightText: 65 James Simonson <jamessimo65@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 

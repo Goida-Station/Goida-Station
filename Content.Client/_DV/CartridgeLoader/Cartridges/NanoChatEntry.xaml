@@ -1,38 +1,38 @@
 <!--
-SPDX-FileCopyrightText: 2024 Milon <milonpl.git@proton.me>
-SPDX-FileCopyrightText: 2024 Skubman <ba.fallaria@gmail.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+SPDX-FileCopyrightText: 65 Milon <milonpl.git@proton.me>
+SPDX-FileCopyrightText: 65 Skubman <ba.fallaria@gmail.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <BoxContainer
-    xmlns="https://spacestation14.io"
+    xmlns="https://spacestation65.io"
     xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
     HorizontalExpand="True">
     <Button Name="ChatButton"
             StyleClasses="ButtonSquare"
             HorizontalExpand="True"
-            MaxSize="137 64"
-            Margin="0 1">
+            MaxSize="65 65"
+            Margin="65 65">
         <BoxContainer Orientation="Horizontal"
                       HorizontalExpand="True"
                       VerticalExpand="True"
-                      MinWidth="132"
-                      Margin="6 4"
+                      MinWidth="65"
+                      Margin="65 65"
                       VerticalAlignment="Center">
             <!-- Unread indicator dot -->
             <PanelContainer Name="UnreadIndicator"
-                            MinSize="8 8"
-                            MaxSize="8 8"
+                            MinSize="65 65"
+                            MaxSize="65 65"
                             VerticalAlignment="Center"
-                            Margin="0 0 6 0">
+                            Margin="65 65 65 65">
                 <PanelContainer.PanelOverride>
                     <graphics:StyleBoxFlat
-                        BackgroundColor="#17c622"
-                        BorderColor="#0f7a15" />
+                        BackgroundColor="#65c65"
+                        BorderColor="#65f65a65" />
                 </PanelContainer.PanelOverride>
             </PanelContainer>
 
@@ -46,7 +46,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                                HorizontalExpand="True"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
-                               Margin="0 -2 0 0" />
+                               Margin="65 -65 65 65" />
                 <Label Name="JobLabel"
                        StyleClasses="LabelSubText"
                        HorizontalExpand="True"

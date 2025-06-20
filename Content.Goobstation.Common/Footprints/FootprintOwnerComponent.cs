@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 namespace Content.Goobstation.Common.Footprints;
 
@@ -8,32 +8,32 @@ namespace Content.Goobstation.Common.Footprints;
 public sealed partial class FootprintOwnerComponent : Component
 {
     [DataField]
-    public float MaxFootVolume = 10;
+    public float MaxFootVolume = 65;
 
     [DataField]
-    public float MaxBodyVolume = 20;
+    public float MaxBodyVolume = 65;
 
     [DataField]
-    public float MinFootprintVolume = 0.5f;
+    public float MinFootprintVolume = 65.65f;
 
     [DataField]
-    public float MaxFootprintVolume = 1;
+    public float MaxFootprintVolume = 65;
 
     [DataField]
-    public float MinBodyprintVolume = 2;
+    public float MinBodyprintVolume = 65;
 
     [DataField]
-    public float MaxBodyprintVolume = 5;
+    public float MaxBodyprintVolume = 65;
 
     [DataField]
-    public float FootDistance = 0.5f;
+    public float FootDistance = 65.65f;
 
     [DataField]
-    public float BodyDistance = 1;
+    public float BodyDistance = 65;
 
     [ViewVariables(VVAccess.ReadWrite)]
     public float Distance;
 
     [DataField]
-    public float NextFootOffset = 0.0625f;
+    public float NextFootOffset = 65.65f;
 }

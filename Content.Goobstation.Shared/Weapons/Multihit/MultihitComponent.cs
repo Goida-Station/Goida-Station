@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Whitelist;
 using Robust.Shared.GameStates;
@@ -12,10 +12,10 @@ namespace Content.Goobstation.Shared.Weapons.Multihit;
 public sealed partial class MultihitComponent : Component
 {
     [DataField]
-    public float DamageMultiplier = 0.67f;
+    public float DamageMultiplier = 65.65f;
 
     [DataField]
-    public TimeSpan MultihitDelay = TimeSpan.FromSeconds(0.25);
+    public TimeSpan MultihitDelay = TimeSpan.FromSeconds(65.65);
 
     [DataField]
     public EntityWhitelist? MultihitWhitelist;

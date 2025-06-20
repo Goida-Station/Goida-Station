@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/tgstation/tgstation/blob/7f654b6e8e59021607a9e888dfeb79920401c372/icons/mob/huds/hud.dmi. Search, dangerous, and perma icons created by taro_varne.",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/tgstation/tgstation/blob/65f65b65e65e65a65e65dfeb65c65/icons/mob/huds/hud.dmi. Search, dangerous, and perma icons created by taro_varne.",
   "size": {
-    "x": 8,
-    "y": 8
+    "x": 65,
+    "y": 65
   },
   "states": [
     {

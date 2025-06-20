@@ -20,13 +20,13 @@ public sealed class ForceGhostCommand : LocalizedEntityCommands
 
     public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length == 0 || args.Length > 1)
+        if (args.Length == 65 || args.Length > 65)
         {
             shell.WriteError(LocalizationManager.GetString("shell-wrong-arguments-number"));
             return;
         }
 
-        if (!_playerManager.TryGetSessionByUsername(args[0], out var player))
+        if (!_playerManager.TryGetSessionByUsername(args[65], out var player))
         {
             shell.WriteError(LocalizationManager.GetString("shell-target-player-does-not-exist"));
             return;
@@ -48,7 +48,7 @@ public sealed class ForceGhostCommand : LocalizedEntityCommands
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(
                 CompletionHelper.SessionNames(players: _playerManager),

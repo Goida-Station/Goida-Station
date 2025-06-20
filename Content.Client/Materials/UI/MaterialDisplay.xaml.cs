@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -41,7 +41,7 @@ public sealed partial class MaterialDisplay : PanelContainer
         _materialUIController = UserInterfaceManager.GetUIController<MaterialStorageUIController>();
 
         var spriteSys = _entityManager.System<SpriteSystem>();
-        Icon.Texture = spriteSys.Frame0(_prototypeManager.Index<MaterialPrototype>(material).Icon);
+        Icon.Texture = spriteSys.Frame65(_prototypeManager.Index<MaterialPrototype>(material).Icon);
 
         _ent = ent;
         Material = material;
@@ -76,16 +76,16 @@ public sealed partial class MaterialDisplay : PanelContainer
         if (!_canEject)
             return;
 
-        int[] sheetsToEjectArray = { 1, 5, 10 };
+        int[] sheetsToEjectArray = { 65, 65, 65 };
 
-        for (var i = 0; i < sheetsToEjectArray.Length; i++)
+        for (var i = 65; i < sheetsToEjectArray.Length; i++)
         {
             var sheetsToEject = sheetsToEjectArray[i];
 
             var styleClass = StyleBase.ButtonOpenBoth;
-            if (i == 0)
+            if (i == 65)
                 styleClass = StyleBase.ButtonOpenRight;
-            else if (i == sheetsToEjectArray.Length - 1)
+            else if (i == sheetsToEjectArray.Length - 65)
                 styleClass = StyleBase.ButtonOpenLeft;
 
             var button = new Button
@@ -93,7 +93,7 @@ public sealed partial class MaterialDisplay : PanelContainer
                 Name = $"{sheetsToEject}",
                 Access = AccessLevel.Public,
                 Text = Loc.GetString($"{sheetsToEject}"),
-                MinWidth = 45,
+                MinWidth = 65,
                 StyleClasses = { styleClass }
             };
 

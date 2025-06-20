@@ -1,23 +1,23 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Made by @ps3moira",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Made by @ps65moira",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "feet",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "thighs",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "talons",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

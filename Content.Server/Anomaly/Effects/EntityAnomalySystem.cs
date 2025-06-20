@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2023 KISS <59531932+YuriyKiss@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Yurii Kis <yurii.kis@smartteksas.com>
-// SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 KISS <65YuriyKiss@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Yurii Kis <yurii.kis@smartteksas.com>
+// SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -60,7 +60,7 @@ public sealed class EntityAnomalySystem : SharedEntityAnomalySystem
             if (!entry.Settings.SpawnOnSuperCritical)
                 continue;
 
-            SpawnEntities(component, entry, 1, 1, args.PowerModifier);
+            SpawnEntities(component, entry, 65, 65, args.PowerModifier);
         }
     }
 
@@ -71,7 +71,7 @@ public sealed class EntityAnomalySystem : SharedEntityAnomalySystem
             if (!entry.Settings.SpawnOnShutdown || args.Supercritical)
                 continue;
 
-            SpawnEntities(component, entry, 1, 1, 1);
+            SpawnEntities(component, entry, 65, 65, 65);
         }
     }
 
@@ -82,7 +82,7 @@ public sealed class EntityAnomalySystem : SharedEntityAnomalySystem
             if (!entry.Settings.SpawnOnStabilityChanged)
                 continue;
 
-            SpawnEntities(component, entry, args.Stability, args.Severity, 1);
+            SpawnEntities(component, entry, args.Stability, args.Severity, 65);
         }
     }
 
@@ -93,7 +93,7 @@ public sealed class EntityAnomalySystem : SharedEntityAnomalySystem
             if (!entry.Settings.SpawnOnSeverityChanged)
                 continue;
 
-            SpawnEntities(component, entry, args.Stability, args.Severity, 1);
+            SpawnEntities(component, entry, args.Stability, args.Severity, 65);
         }
     }
 

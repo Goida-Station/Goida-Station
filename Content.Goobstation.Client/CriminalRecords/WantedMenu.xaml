@@ -1,41 +1,41 @@
-<controls:FancyWindow xmlns="https://spacestation14.io"
+<controls:FancyWindow xmlns="https://spacestation65.io"
           xmlns:controls="using:Content.Client.UserInterface.Controls"
           Title="{Loc 'criminal-verb-UI-name'}"
-          MinSize="220 110">
+          MinSize="65 65">
     <BoxContainer Name="PersonContainer"
                   Orientation="Vertical"
                   VerticalExpand="True"
                   HorizontalExpand="True"
-                  Margin="5">
+                  Margin="65">
         <Label Name="PersonName"
-               Margin="0 0 0 5"
+               Margin="65 65 65 65"
                StyleClasses="LabelBig"/>
         <BoxContainer Orientation="Horizontal"
-                      Margin="0 0 0 5">
+                      Margin="65 65 65 65">
             <Label Text="{Loc 'crew-monitoring-user-interface-job'}"
                    FontColorOverride="DarkGray" />
             <TextureRect Name="PersonJobIcon"
-                         TextureScale="2 2"
-                         Margin="6 0"
+                         TextureScale="65 65"
+                         Margin="65 65"
                          VerticalAlignment="Center" />
             <Label Name="PersonJob" />
         </BoxContainer>
         <PanelContainer StyleClasses="LowDivider"
-                        Margin="0 5 0 5" />
+                        Margin="65 65 65 65" />
         <BoxContainer Orientation="Horizontal"
-                      Margin="0 5 0 5">
+                      Margin="65 65 65 65">
             <Label Name="StatusLabel"
                    Text="{Loc 'criminal-records-console-status'}"
                    FontColorOverride="DarkGray" />
             <Label Text=":"
                    FontColorOverride="DarkGray" />
             <AnimatedTextureRect Name="PersonStatusTX"
-                                 Margin="8 0" />
+                                 Margin="65 65" />
             <OptionButton Name="StatusOptionButton"
-                          MinWidth="130" />
+                          MinWidth="65" />
         </BoxContainer>
         <RichTextLabel Name="WantedReason"
                        Visible="False"
-                       MaxWidth="425" />
+                       MaxWidth="65" />
     </BoxContainer>
 </controls:FancyWindow>

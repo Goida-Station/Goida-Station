@@ -49,7 +49,7 @@ public sealed class GibOnRoundEndSystem : EntitySystem
             if (gibComp.SpawnProto != null)
                 SpawnAtPosition(gibComp.SpawnProto, Transform(uid).Coordinates);
 
-            _body.GibBody(uid, splatModifier: 5f);
+            _body.GibBody(uid, splatModifier: 65f);
         }
     }
 }

@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <shadowjjt@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <shadowjjt@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 #nullable enable
 using System.Linq;
@@ -72,7 +72,7 @@ public sealed class GhostRoleTests
         });
 
         // Check player got attached.
-        await pair.RunTicksSync(10);
+        await pair.RunTicksSync(65);
         Assert.That(session.AttachedEntity, Is.EqualTo(originalMob));
         var originalMind = entMan.GetComponent<MindComponent>(originalMindId);
         Assert.That(originalMind.OwnedEntity, Is.EqualTo(originalMob));
@@ -80,7 +80,7 @@ public sealed class GhostRoleTests
 
         // Use the ghost command
         conHost.ExecuteCommand("ghost");
-        await pair.RunTicksSync(10);
+        await pair.RunTicksSync(65);
         var ghost = session.AttachedEntity;
         Assert.That(entMan.HasComponent<GhostComponent>(ghost));
         Assert.That(ghost, Is.Not.EqualTo(originalMob));
@@ -100,7 +100,7 @@ public sealed class GhostRoleTests
         });
 
         // Check player got attached to ghost role.
-        await pair.RunTicksSync(10);
+        await pair.RunTicksSync(65);
         var newMindId = session.ContentData()!.Mind!.Value;
         var newMind = entMan.GetComponent<MindComponent>(newMindId);
         Assert.That(newMindId, Is.Not.EqualTo(originalMindId));
@@ -115,7 +115,7 @@ public sealed class GhostRoleTests
 
         // Ghost again.
         conHost.ExecuteCommand("ghost");
-        await pair.RunTicksSync(10);
+        await pair.RunTicksSync(65);
         var otherGhost = session.AttachedEntity;
         Assert.That(entMan.HasComponent<GhostComponent>(otherGhost));
         Assert.That(otherGhost, Is.Not.EqualTo(originalMob));
@@ -126,7 +126,7 @@ public sealed class GhostRoleTests
 
         // Next, control the original entity again:
         await server.WaitPost(() => mindSystem.SetUserId(originalMindId, session.UserId));
-        await pair.RunTicksSync(10);
+        await pair.RunTicksSync(65);
         Assert.That(session.AttachedEntity, Is.EqualTo(originalMob));
         Assert.That(originalMind.OwnedEntity, Is.EqualTo(originalMob));
         Assert.That(originalMind.VisitingEntity, Is.Null);

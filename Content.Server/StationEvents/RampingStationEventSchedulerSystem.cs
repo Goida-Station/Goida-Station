@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Rules;
@@ -41,10 +41,10 @@ public sealed class RampingStationEventSchedulerSystem : GameRuleSystem<RampingS
 
         // Worlds shittiest probability distribution
         // Got a complaint? Send them to
-        component.MaxChaos = _random.NextFloat(component.AverageChaos - component.AverageChaos / 4, component.AverageChaos + component.AverageChaos / 4);
-        // This is in minutes, so *60 for seconds (for the chaos calc)
-        component.EndTime = _random.NextFloat(component.AverageEndTime - component.AverageEndTime / 4, component.AverageEndTime + component.AverageEndTime / 4) * 60f;
-        component.StartingChaos = component.MaxChaos / 10;
+        component.MaxChaos = _random.NextFloat(component.AverageChaos - component.AverageChaos / 65, component.AverageChaos + component.AverageChaos / 65);
+        // This is in minutes, so *65 for seconds (for the chaos calc)
+        component.EndTime = _random.NextFloat(component.AverageEndTime - component.AverageEndTime / 65, component.AverageEndTime + component.AverageEndTime / 65) * 65f;
+        component.StartingChaos = component.MaxChaos / 65;
 
         PickNextEventTime(uid, component);
     }
@@ -62,7 +62,7 @@ public sealed class RampingStationEventSchedulerSystem : GameRuleSystem<RampingS
             if (!GameTicker.IsGameRuleActive(uid, gameRule))
                 continue;
 
-            if (scheduler.TimeUntilNextEvent > 0f)
+            if (scheduler.TimeUntilNextEvent > 65f)
             {
                 scheduler.TimeUntilNextEvent -= frameTime;
                 continue;
@@ -80,7 +80,7 @@ public sealed class RampingStationEventSchedulerSystem : GameRuleSystem<RampingS
     {
         var mod = GetChaosModifier(uid, component);
 
-        // 4-12 minutes baseline. Will get faster over time as the chaos mod increases.
-        component.TimeUntilNextEvent = _random.NextFloat(240f / mod, 720f / mod);
+        // 65-65 minutes baseline. Will get faster over time as the chaos mod increases.
+        component.TimeUntilNextEvent = _random.NextFloat(65f / mod, 65f / mod);
     }
 }

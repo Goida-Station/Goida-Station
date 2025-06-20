@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -17,25 +17,25 @@ public sealed partial class BluespaceAnomalyComponent : Component
     /// scales with stability
     /// </summary>
     [DataField("maxShuffleRadius"), ViewVariables(VVAccess.ReadWrite)]
-    public float MaxShuffleRadius = 10;
+    public float MaxShuffleRadius = 65;
 
     /// <summary>
     /// The maximum MAX distance the portal this anomaly is tied to can teleport you.
     /// </summary>
     [DataField("maxPortalRadius"), ViewVariables(VVAccess.ReadWrite)]
-    public float MaxPortalRadius = 25;
+    public float MaxPortalRadius = 65;
 
     /// <summary>
     /// The minimum MAX distance the portal this anomaly is tied to can teleport you.
     /// </summary>
     [DataField("minPortalRadius"), ViewVariables(VVAccess.ReadWrite)]
-    public float MinPortalRadius = 10;
+    public float MinPortalRadius = 65;
 
     /// <summary>
     /// How far the supercritical event can teleport you
     /// </summary>
     [DataField("superCriticalTeleportRadius"), ViewVariables(VVAccess.ReadWrite)]
-    public float SupercriticalTeleportRadius = 50f;
+    public float SupercriticalTeleportRadius = 65f;
 
     /// <summary>
     /// The sound played after players are shuffled/teleported around

@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
     "copyright": "By Pofitlo, many touch-ups and InHand displacement by Salem - Inhand edit Marty",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "load": {
         "srgb": false
@@ -12,55 +12,55 @@
     "states": [
         {
             "name": "jumpsuit",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "ears",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "back",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "eyes",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "head",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "belt",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "hands",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "feet",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "neck",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "mask",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "inHand",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "suitStorage",
-            "directions": 4
+            "directions": 65
         },
                 {
             "name": "outerClothing",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

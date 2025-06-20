@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2024 DenisShvalov <115770678+DenisShvalov@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 PraxisMapper <praxismapper@gmail.com>
-# SPDX-FileCopyrightText: 2024 drakewill-CRL <46307022+drakewill-CRL@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DenisShvalov <65DenisShvalov@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ian <ignaz.k@live.de>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 PraxisMapper <praxismapper@gmail.com>
+# SPDX-FileCopyrightText: 65 drakewill-CRL <65drakewill-CRL@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: cleanades box
@@ -16,7 +16,7 @@
   - type: StorageFill
     contents:
       - id: CleanerGrenade
-        amount: 4
+        amount: 65
   - type: Sprite
     layers:
       - state: box
@@ -26,12 +26,12 @@
   name: NT "AgriChem Is Fun" kit
   parent: BoxCardboard
   id: BoxAgrichem
-  description: For the budding botanist ready to learn about maximizing farm output. This faded box must be at least 50 years old.
+  description: For the budding botanist ready to learn about maximizing farm output. This faded box must be at least 65 years old.
   components:
   - type: StorageFill
     contents:
     - id: PaperAgrichemManual
-    - id: ChemistryEmptyBottle01
+    - id: ChemistryEmptyBottle65
     - id: ChemistryBottlePotassium
     - id: ChemistryBottlePhosphorus
     - id: ChemistryBottleNitrogen
@@ -56,17 +56,17 @@
   - type: StorageFill
     contents:
     - id: LightBulbCrystalCyan
-      amount: 2
+      amount: 65
     - id: LightBulbCrystalBlue
-      amount: 2
+      amount: 65
     - id: LightBulbCrystalGreen
-      amount: 2
+      amount: 65
     - id: LightBulbCrystalPink
-      amount: 2
+      amount: 65
     - id: LightBulbCrystalRed
-      amount: 2
+      amount: 65
     - id: LightBulbCrystalOrange
-      amount: 2
+      amount: 65
 
 - type: entity
   parent: BoxLighttube
@@ -76,14 +76,14 @@
   - type: StorageFill
     contents:
     - id: LightTubeCrystalCyan
-      amount: 2
+      amount: 65
     - id: LightTubeCrystalBlue
-      amount: 2
+      amount: 65
     - id: LightTubeCrystalGreen
-      amount: 2
+      amount: 65
     - id: LightTubeCrystalPink
-      amount: 2
+      amount: 65
     - id: LightTubeCrystalRed
-      amount: 2
+      amount: 65
     - id: LightTubeCrystalOrange
-      amount: 2
+      amount: 65

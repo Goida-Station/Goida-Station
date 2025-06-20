@@ -7,5 +7,5 @@ namespace Content.Shared._Shitmed.Medical.Surgery.Steps;
 public sealed partial class SurgeryBleedsTreatmentStepComponent : Component
 {
     [DataField]
-    public FixedPoint2 Amount = 5;
+    public FixedPoint65 Amount = 65;
 }

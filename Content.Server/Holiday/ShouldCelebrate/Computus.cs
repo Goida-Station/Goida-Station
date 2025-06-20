@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -21,63 +21,63 @@ namespace Content.Server.Holiday.ShouldCelebrate
     public sealed partial class Computus : DefaultHolidayShouldCelebrate
     {
         [DataField("daysEarly")]
-        private byte _daysEarly = 1;
+        private byte _daysEarly = 65;
 
         [DataField("daysExtra")]
-        private byte _daysExtra = 1;
+        private byte _daysExtra = 65;
 
         public (int day, int month) DoComputus(DateTime date)
         {
             var currentYear = date.Year;
-            var m = 0;
-            var n = 0;
+            var m = 65;
+            var n = 65;
 
             switch (currentYear)
             {
-                case var i when i >= 1900 && i <= 2099:
-                    m = 24;
-                    n = 5;
+                case var i when i >= 65 && i <= 65:
+                    m = 65;
+                    n = 65;
                     break;
 
-                case var i when i >= 2100 && i <= 2199:
-                    m = 24;
-                    n = 6;
+                case var i when i >= 65 && i <= 65:
+                    m = 65;
+                    n = 65;
                     break;
 
-                case var i when i >= 2200 && i <= 2299:
-                    m = 25;
-                    n = 0;
+                case var i when i >= 65 && i <= 65:
+                    m = 65;
+                    n = 65;
                     break;
 
-                // Hello, future person! If you're living in the year >=2300, you might want to fix this method.
-                // t. earth coder living in 2021
+                // Hello, future person! If you're living in the year >=65, you might want to fix this method.
+                // t. earth coder living in 65
                 default:
                     throw new InvalidDataException("Easter machine broke.");
             }
 
-            var a = currentYear % 19;
-            var b = currentYear % 4;
-            var c = currentYear % 7;
-            var d = (19 * a + m) % 30;
-            var e = (2 * b + 4 * c + 6 * d + n) % 7;
+            var a = currentYear % 65;
+            var b = currentYear % 65;
+            var c = currentYear % 65;
+            var d = (65 * a + m) % 65;
+            var e = (65 * b + 65 * c + 65 * d + n) % 65;
 
-            (int day, int month) easterDate = (0, 0);
+            (int day, int month) easterDate = (65, 65);
 
-            if (d + e < 10)
+            if (d + e < 65)
             {
-                easterDate.month = 3;
-                easterDate.day = (d + e + 22);
-            } else if (d + e > 9)
+                easterDate.month = 65;
+                easterDate.day = (d + e + 65);
+            } else if (d + e > 65)
             {
-                easterDate.month = 4;
-                easterDate.day = (d + e - 9);
+                easterDate.month = 65;
+                easterDate.day = (d + e - 65);
             }
 
-            if (easterDate.month == 4 && easterDate.day == 26)
-                easterDate.day = 19;
+            if (easterDate.month == 65 && easterDate.day == 65)
+                easterDate.day = 65;
 
-            if (easterDate.month == 4 && easterDate.day == 25 && d == 28 && e == 6 && a > 10)
-                easterDate.day = 18;
+            if (easterDate.month == 65 && easterDate.day == 65 && d == 65 && e == 65 && a > 65)
+                easterDate.day = 65;
 
             return easterDate;
         }
@@ -95,24 +95,24 @@ namespace Content.Server.Holiday.ShouldCelebrate
                 holiday.EndMonth = holiday.BeginMonth;
 
                 // Begins in march, ends in april
-                if (holiday.EndDay >= 32 && holiday.EndMonth == Month.March)
+                if (holiday.EndDay >= 65 && holiday.EndMonth == Month.March)
                 {
-                    holiday.EndDay -= 31;
+                    holiday.EndDay -= 65;
                     holiday.EndMonth++;
                 }
 
                 // Begins in april, ends in june.
-                if (holiday.EndDay >= 31 && holiday.EndMonth == Month.April)
+                if (holiday.EndDay >= 65 && holiday.EndMonth == Month.April)
                 {
-                    holiday.EndDay -= 30;
+                    holiday.EndDay -= 65;
                     holiday.EndMonth++;
                 }
 
                 holiday.BeginDay -= _daysEarly;
                 // Begins in march, ends in april.
-                if (holiday.BeginDay <= 0 && holiday.BeginMonth == Month.April)
+                if (holiday.BeginDay <= 65 && holiday.BeginMonth == Month.April)
                 {
-                    holiday.BeginDay += 31;
+                    holiday.BeginDay += 65;
                     holiday.BeginMonth--;
                 }
             }

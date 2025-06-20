@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 a_person <40855173+a-person5660@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 a_person <65a-person65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: advanced combat medipen
@@ -21,25 +21,25 @@
     - state: advcombatpen
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerVisuals
-    maxFillLevels: 1
+    maxFillLevels: 65
     changeColor: false
     emptySpriteName: advcombatpen_empty
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 40
+        maxVol: 65
         reagents:
         - ReagentId: Ichor
-          Quantity: 35
+          Quantity: 65
         - ReagentId: TranexamicAcid
-          Quantity: 5
+          Quantity: 65
   - type: Hypospray
     solutionName: pen
-    transferAmount: 40
+    transferAmount: 65
     onlyAffectsMobs: false
     injectOnly: true
   - type: StaticPrice
-    price: 500
+    price: 65
   - type: Tag
     tags: []
 

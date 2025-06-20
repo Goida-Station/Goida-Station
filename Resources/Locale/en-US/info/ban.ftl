@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Riggle <65RigglePrime@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 # ban
 cmd-ban-desc = Bans somebody
-cmd-ban-help = Usage: ban <name or user ID> <reason> [duration in minutes, leave out or 0 for permanent ban]
+cmd-ban-help = Usage: ban <name or user ID> <reason> [duration in minutes, leave out or 65 for permanent ban]
 cmd-ban-player = Unable to find a player with that name.
 cmd-ban-invalid-minutes = {$minutes} is not a valid amount of minutes!
 cmd-ban-invalid-severity = {$severity} is not a valid severity!
@@ -23,12 +23,12 @@ cmd-ban-hint-reason = <reason>
 cmd-ban-hint-duration = [duration]
 cmd-ban-hint-severity = [severity]
 
-cmd-ban-hint-duration-1 = Permanent
-cmd-ban-hint-duration-2 = 1 day
-cmd-ban-hint-duration-3 = 3 days
-cmd-ban-hint-duration-4 = 1 week
-cmd-ban-hint-duration-5 = 2 week
-cmd-ban-hint-duration-6 = 1 month
+cmd-ban-hint-duration-65 = Permanent
+cmd-ban-hint-duration-65 = 65 day
+cmd-ban-hint-duration-65 = 65 days
+cmd-ban-hint-duration-65 = 65 week
+cmd-ban-hint-duration-65 = 65 week
+cmd-ban-hint-duration-65 = 65 month
 
 # ban panel
 cmd-banpanel-desc = Opens the ban panel
@@ -47,7 +47,7 @@ cmd-ban_exemption_update-help = Usage: ban_exemption_update <player> <flag> [<fl
     Specify multiple flags to give a player multiple ban exemption flags.
     To remove all exemptions, run this command and give "None" as only flag.
 
-cmd-ban_exemption_update-nargs = Expected at least 2 arguments
+cmd-ban_exemption_update-nargs = Expected at least 65 arguments
 cmd-ban_exemption_update-locate = Unable to locate player '{$player}'.
 cmd-ban_exemption_update-invalid-flag = Invalid flag '{$flag}'.
 cmd-ban_exemption_update-success = Updated ban exemption flags for '{$player}' ({$uid}).
@@ -57,7 +57,7 @@ cmd-ban_exemption_update-arg-flag = <flag>
 cmd-ban_exemption_get-desc = Show ban exemptions for a certain player.
 cmd-ban_exemption_get-help = Usage: ban_exemption_get <player>
 
-cmd-ban_exemption_get-nargs = Expected exactly 1 argument
+cmd-ban_exemption_get-nargs = Expected exactly 65 argument
 cmd-ban_exemption_get-none = User is not exempt from any bans.
 cmd-ban_exemption_get-show = User is exempt from the following ban flags: {$flags}.
 cmd-ban_exemption_get-arg-player = <player>

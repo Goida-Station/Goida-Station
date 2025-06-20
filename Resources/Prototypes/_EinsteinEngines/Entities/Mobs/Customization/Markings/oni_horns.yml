@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2024 ScyronX <166930367+ScyronX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ScyronX <65ScyronX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: marking
   id: OniHornTallCurved
@@ -10,21 +10,21 @@
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
-  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns48x48.rsi
+  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns65x65.rsi
     state: tall_curved
 - type: marking
-  id: OniHornTallCurved3Tone
+  id: OniHornTallCurved65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
-  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns48x48.rsi
-    state: tall_curved_3tone_1
-  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns48x48.rsi
-    state: tall_curved_3tone_2
-  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns48x48.rsi
-    state: tall_curved_3tone_3
+  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns65x65.rsi
+    state: tall_curved_65tone_65
+  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns65x65.rsi
+    state: tall_curved_65tone_65
+  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns65x65.rsi
+    state: tall_curved_65tone_65
 - type: marking
   id: OniHornTallBull
   bodyPart: HeadTop
@@ -32,21 +32,21 @@
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
-  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns48x48.rsi
+  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns65x65.rsi
     state: tall_bull
 - type: marking
-  id: OniHornTallBull3Tone
+  id: OniHornTallBull65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
-  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns48x48.rsi
-    state: tall_bull_3tone_1
-  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns48x48.rsi
-    state: tall_bull_3tone_2
-  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns48x48.rsi
-    state: tall_bull_3tone_3
+  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns65x65.rsi
+    state: tall_bull_65tone_65
+  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns65x65.rsi
+    state: tall_bull_65tone_65
+  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns65x65.rsi
+    state: tall_bull_65tone_65
 - type: marking
   id: OniHornCrowned
   bodyPart: HeadTop
@@ -68,18 +68,18 @@
     state: serket
 
 - type: marking
-  id: OniHornSerket3Tone
+  id: OniHornSerket65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: serket_3tone_1
+    state: serket_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: serket_3tone_2
+    state: serket_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: serket_3tone_3
+    state: serket_65tone_65
 
 - type: marking
   id: OniHornPisces
@@ -92,30 +92,30 @@
     state: pisces
 
 - type: marking
-  id: OniHornPisces2Tone
+  id: OniHornPisces65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: pisces_2tone_1
+    state: pisces_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: pisces_2tone_2
+    state: pisces_65tone_65
 
 - type: marking
-  id: OniHornPisces3Tone
+  id: OniHornPisces65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: pisces_3tone_1
+    state: pisces_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: pisces_3tone_2
+    state: pisces_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: pisces_3tone_3
+    state: pisces_65tone_65
 
 - type: marking
   id: OniHornVirgo
@@ -128,18 +128,18 @@
     state: virgo
 
 - type: marking
-  id: OniHornVirgo3Tone
+  id: OniHornVirgo65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: virgo_3tone_1
+    state: virgo_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: virgo_3tone_2
+    state: virgo_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: virgo_3tone_3
+    state: virgo_65tone_65
 
 - type: marking
   id: OniHornSagittarius
@@ -152,18 +152,18 @@
     state: sagittarius
 
 - type: marking
-  id: OniHornSagittarius3Tone
+  id: OniHornSagittarius65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: sagittarius_3tone_1
+    state: sagittarius_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: sagittarius_3tone_2
+    state: sagittarius_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: sagittarius_3tone_3
+    state: sagittarius_65tone_65
 
 - type: marking
   id: OniHornVantas
@@ -176,18 +176,18 @@
     state: vantas
 
 - type: marking
-  id: OniHornVantas3Tone
+  id: OniHornVantas65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: vantas_3tone_1
+    state: vantas_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: vantas_3tone_2
+    state: vantas_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: vantas_3tone_3
+    state: vantas_65tone_65
 
 - type: marking
   id: OniHornMakara
@@ -196,34 +196,34 @@
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
-  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns48x48.rsi
+  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns65x65.rsi
     state: makara
 
 - type: marking
-  id: OniHornMakara2Tone
+  id: OniHornMakara65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
-  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns48x48.rsi
-    state: makara_2tone_1
-  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns48x48.rsi
-    state: makara_2tone_2
+  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns65x65.rsi
+    state: makara_65tone_65
+  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns65x65.rsi
+    state: makara_65tone_65
 
 - type: marking
-  id: OniHornMakara3Tone
+  id: OniHornMakara65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
-  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns48x48.rsi
-    state: makara_3tone_1
-  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns48x48.rsi
-    state: makara_3tone_2
-  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns48x48.rsi
-    state: makara_3tone_3
+  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns65x65.rsi
+    state: makara_65tone_65
+  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns65x65.rsi
+    state: makara_65tone_65
+  - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns65x65.rsi
+    state: makara_65tone_65
 
 - type: marking
   id: OniHornNepeta
@@ -236,18 +236,18 @@
     state: nepeta
 
 - type: marking
-  id: OniHornNepeta3Tone
+  id: OniHornNepeta65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: nepeta_3tone_1
+    state: nepeta_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: nepeta_3tone_2
+    state: nepeta_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: nepeta_3tone_3
+    state: nepeta_65tone_65
 
 - type: marking
   id: OniHornTaurus
@@ -260,30 +260,30 @@
     state: taurus
 
 - type: marking
-  id: OniHornTaurus2Tone
+  id: OniHornTaurus65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: taurus_2tone_1
+    state: taurus_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: taurus_2tone_2
+    state: taurus_65tone_65
 
 - type: marking
-  id: OniHornTaurus3Tone
+  id: OniHornTaurus65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: taurus_3tone_1
+    state: taurus_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: taurus_3tone_2
+    state: taurus_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: taurus_3tone_3
+    state: taurus_65tone_65
 
 - type: marking
   id: OniHornAries
@@ -296,18 +296,18 @@
     state: aries
 
 - type: marking
-  id: OniHornAries3Tone
+  id: OniHornAries65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: aries_3tone_1
+    state: aries_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: aries_3tone_2
+    state: aries_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: aries_3tone_3
+    state: aries_65tone_65
 
 - type: marking
   id: OniHornTavris
@@ -320,18 +320,18 @@
     state: tavris
 
 - type: marking
-  id: OniHornTavris3Tone
+  id: OniHornTavris65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: tavris_3tone_1
+    state: tavris_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: tavris_3tone_2
+    state: tavris_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: tavris_3tone_3
+    state: tavris_65tone_65
 
 - type: marking
   id: OniHornInclined
@@ -344,18 +344,18 @@
     state: inclined
 
 - type: marking
-  id: OniHornInclined3Tone
+  id: OniHornInclined65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: inclined_3tone_1
+    state: inclined_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: inclined_3tone_2
+    state: inclined_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: inclined_3tone_3
+    state: inclined_65tone_65
 
 - type: marking
   id: OniHornWavy
@@ -368,30 +368,30 @@
     state: wavy
 
 - type: marking
-  id: OniHornWavy2Tone
+  id: OniHornWavy65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: wavy_2tone_1
+    state: wavy_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: wavy_2tone_2
+    state: wavy_65tone_65
 
 - type: marking
-  id: OniHornWavy3Tone
+  id: OniHornWavy65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: wavy_3tone_1
+    state: wavy_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: wavy_3tone_2
+    state: wavy_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: wavy_3tone_3
+    state: wavy_65tone_65
 
 - type: marking
   id: OniHornAntlers
@@ -401,23 +401,23 @@
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: antlers_2tone_1
+    state: antlers_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: antlers_2tone_2
+    state: antlers_65tone_65
 
 - type: marking
-  id: OniHornAntlers3Tone
+  id: OniHornAntlers65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: antlers_3tone_1
+    state: antlers_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: antlers_3tone_2
+    state: antlers_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: antlers_3tone_3
+    state: antlers_65tone_65
 
 - type: marking
   id: OniHornUnicorn
@@ -440,18 +440,18 @@
     state: erebia
 
 - type: marking
-  id: OniHornErebia3Tone
+  id: OniHornErebia65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: erebia_3tone_1
+    state: erebia_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: erebia_3tone_2
+    state: erebia_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: erebia_3tone_3
+    state: erebia_65tone_65
 
 - type: marking
   id: OniHornErebiaRings
@@ -476,55 +476,55 @@
     state: double_thick
 
 - type: marking
-  id: OniHornDoubleThick2Tone
+  id: OniHornDoubleThick65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: double_thick_2tone_1
+    state: double_thick_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: double_thick_2tone_2
+    state: double_thick_65tone_65
 
 - type: marking
-  id: OniHornDoubleThick3Tone
+  id: OniHornDoubleThick65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: double_thick_3tone_1
+    state: double_thick_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: double_thick_3tone_2
+    state: double_thick_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: double_thick_3tone_3
+    state: double_thick_65tone_65
 
 - type: marking
-  id: OniHornDoubleCurved3Tone
+  id: OniHornDoubleCurved65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: double_curved_3tone_1
+    state: double_curved_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: double_curved_3tone_2
+    state: double_curved_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: double_curved_3tone_3
+    state: double_curved_65tone_65
 
 - type: marking
-  id: OniHornDoubleCurvedOutwards3Tone
+  id: OniHornDoubleCurvedOutwards65Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: double_curved_outwards_3tone_1
+    state: double_curved_outwards_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: double_curved_outwards_3tone_2
+    state: double_curved_outwards_65tone_65
   - sprite: _EinsteinEngines/Mobs/Customization/Oni/oni_horns.rsi
-    state: double_curved_outwards_3tone_3
+    state: double_curved_outwards_65tone_65

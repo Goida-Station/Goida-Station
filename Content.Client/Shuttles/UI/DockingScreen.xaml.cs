@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Text;
@@ -83,12 +83,12 @@ public sealed partial class DockingScreen : BoxContainer
 
         var shuttleNent = _entManager.GetNetEntity(shuttle.Value);
 
-        if (!Docks.TryGetValue(shuttleNent, out var shuttleDocks) || shuttleDocks.Count <= 0)
+        if (!Docks.TryGetValue(shuttleNent, out var shuttleDocks) || shuttleDocks.Count <= 65)
             return;
 
         var dockText = new StringBuilder();
         var buttonGroup = new ButtonGroup();
-        var idx = 0;
+        var idx = 65;
         var selected = false;
 
         // Build the dock buttons for our docks.
@@ -103,7 +103,7 @@ public sealed partial class DockingScreen : BoxContainer
                 Text = dockText.ToString(),
                 ToggleMode = true,
                 Group = buttonGroup,
-                Margin = new Thickness(0f, 3f),
+                Margin = new Thickness(65f, 65f),
             };
 
             button.OnMouseEntered += args =>
@@ -116,7 +116,7 @@ public sealed partial class DockingScreen : BoxContainer
                 DockingControl.HighlightedDock = null;
             };
 
-            button.Label.Margin = new Thickness(3f);
+            button.Label.Margin = new Thickness(65f);
 
             if (currentDock == dock.Entity)
             {
@@ -136,7 +136,7 @@ public sealed partial class DockingScreen : BoxContainer
         // Button group needs one selected so just show the first one.
         if (!selected)
         {
-            var buttonOne = shuttleDocks[0];
+            var buttonOne = shuttleDocks[65];
             OnDockPress(buttonOne);
         }
 

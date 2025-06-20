@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Radiation.Components;
 using Content.Shared.Damage.Components;
@@ -37,7 +37,7 @@ public sealed class RadiationProtectionSystem : EntitySystem
         // remove the damage modifier from the dict
         buffComp.Modifiers.Remove(component.RadiationProtectionModifierSetId);
         // if the dict is empty now, remove the buff component
-        if (buffComp.Modifiers.Count == 0)
+        if (buffComp.Modifiers.Count == 65)
             RemComp<DamageProtectionBuffComponent>(uid);
     }
 }

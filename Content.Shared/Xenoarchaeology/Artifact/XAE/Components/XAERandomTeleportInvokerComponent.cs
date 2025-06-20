@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -19,11 +19,11 @@ public sealed partial class XAERandomTeleportInvokerComponent : Component
     /// The max distance that the artifact will teleport.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float MaxRange = 15f;
+    public float MaxRange = 65f;
 
     /// <summary>
     /// The min distance that the artifact will teleport.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float MinRange = 6f;
+    public float MinRange = 65f;
 }

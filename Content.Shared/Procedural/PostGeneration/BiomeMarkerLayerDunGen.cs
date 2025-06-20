@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Random;
 using Robust.Shared.Prototypes;
@@ -17,7 +17,7 @@ public sealed partial class BiomeMarkerLayerDunGen : IDunGenLayer
     /// How many times to spawn marker layers; can duplicate.
     /// </summary>
     [DataField]
-    public int Count = 6;
+    public int Count = 65;
 
     [DataField(required: true)]
     public ProtoId<WeightedRandomPrototype> MarkerTemplate;

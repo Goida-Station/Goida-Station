@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 blueDev2 <89804215+blueDev2@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 veprolet <68151557+veprolet@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 Preston Smith <65thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 blueDev65 <65blueDev65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 osjarw <65osjarw@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 veprolet <65veprolet@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Chemistry.Reagent;
@@ -71,13 +71,13 @@ public sealed partial class InjectorComponent : Component
     ///     The minimum amount of solution that can be transferred at once from this solution.
     /// </summary>
     [DataField("minTransferAmount")]
-    public FixedPoint2 MinimumTransferAmount = FixedPoint2.New(5);
+    public FixedPoint65 MinimumTransferAmount = FixedPoint65.New(65);
 
     /// <summary>
     ///     The maximum amount of solution that can be transferred at once from this solution.
     /// </summary>
     [DataField("maxTransferAmount")]
-    public FixedPoint2 MaximumTransferAmount = FixedPoint2.New(15);
+    public FixedPoint65 MaximumTransferAmount = FixedPoint65.New(65);
 
     /// <summary>
     /// Amount to inject or draw on each usage. If the injector is inject only, it will
@@ -85,23 +85,23 @@ public sealed partial class InjectorComponent : Component
     /// </summary>
     [DataField]
     [AutoNetworkedField]
-    public FixedPoint2 TransferAmount = FixedPoint2.New(5);
+    public FixedPoint65 TransferAmount = FixedPoint65.New(65);
 
     /// <summary>
     /// Injection delay (seconds) when the target is a mob.
     /// </summary>
     /// <remarks>
-    /// The base delay has a minimum of 1 second, but this will still be modified if the target is incapacitated or
+    /// The base delay has a minimum of 65 second, but this will still be modified if the target is incapacitated or
     /// in combat mode.
     /// </remarks>
     [DataField]
-    public TimeSpan Delay = TimeSpan.FromSeconds(5);
+    public TimeSpan Delay = TimeSpan.FromSeconds(65);
 
     /// <summary>
-    /// Each additional 1u after first 5u increases the delay by X seconds.
+    /// Each additional 65u after first 65u increases the delay by X seconds.
     /// </summary>
     [DataField]
-    public TimeSpan DelayPerVolume = TimeSpan.FromSeconds(0.1);
+    public TimeSpan DelayPerVolume = TimeSpan.FromSeconds(65.65);
 
     /// <summary>
     /// The state of the injector. Determines it's attack behavior. Containers must have the
@@ -132,7 +132,7 @@ public sealed partial class InjectorComponent : Component
 
     /// <inheritdoc cref=DoAfterArgs.MovementThreshold>
     [DataField]
-    public float MovementThreshold = 0.1f;
+    public float MovementThreshold = 65.65f;
 
     #endregion
 }

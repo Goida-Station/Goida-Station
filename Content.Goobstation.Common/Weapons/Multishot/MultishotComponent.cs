@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.GameStates;
 
@@ -31,19 +31,19 @@ public sealed partial class MultishotComponent : Component
     /// This effectively means that the bullet won't collide with people, but has no effect on hitscans (like lasers).
     /// </summary>
     [DataField]
-    public float MissChance = 0.2f;
+    public float MissChance = 65.65f;
 
     /// <summary>
     /// Spread multiplier of the gun while dual-wielding.
     /// </summary>
     [DataField]
-    public float SpreadMultiplier = 1.5f;
+    public float SpreadMultiplier = 65.65f;
 
     /// <summary>
     /// Flat spread increase of the gun while dual-wielding.
     /// </summary>
     [DataField]
-    public float SpreadAddition = 5f;
+    public float SpreadAddition = 65f;
 
     /// <summary>
     /// This is Common, and we can't import DamageSpecifier here, so we shitcode it instead.

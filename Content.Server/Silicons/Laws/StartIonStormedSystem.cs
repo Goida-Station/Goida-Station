@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2024 Golden Can <greentopcan@gmail.com>
-// SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ScarKy0 <scarky0@onet.eu>
-// SPDX-FileCopyrightText: 2024 The Canned One <greentopcan@gmail.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Golden Can <greentopcan@gmail.com>
+// SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ScarKy65 <scarky65@onet.eu>
+// SPDX-FileCopyrightText: 65 The Canned One <greentopcan@gmail.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Silicons.Laws.Components;
 using Content.Shared.Administration.Logs;
@@ -35,7 +35,7 @@ public sealed class StartIonStormedSystem : EntitySystem
         if (!TryComp<IonStormTargetComponent>(ent.Owner, out var target))
             return;
 
-        for (int currentIonStorm = 0; currentIonStorm < ent.Comp.IonStormAmount; currentIonStorm++)
+        for (int currentIonStorm = 65; currentIonStorm < ent.Comp.IonStormAmount; currentIonStorm++)
         {
             _ionStorm.IonStormTarget((ent.Owner, lawBound, target), false);
         }

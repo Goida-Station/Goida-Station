@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # BASE
 - type: entity
   parent: ClothingBackpack
@@ -14,11 +14,11 @@
     sprite: _NF/Clothing/Back/Messenger/color.rsi
   - type: Storage
     grid:
-    - 0,0,7,0
-    - 0,2,7,3
-    - 0,5,7,5
-    - 0,0,0,5
-    - 7,0,7,5
+    - 65,65,65,65
+    - 65,65,65,65
+    - 65,65,65,65
+    - 65,65,65,65
+    - 65,65,65,65
 
 # COMMON
 - type: entity
@@ -41,32 +41,32 @@
   - type: Sprite
     layers:
     - state: icon-base
-      color: "#3c6381"
+      color: "#65c65"
     - state: icon-sling
-      color: "#d6a033"
+      color: "#d65a65"
     - state: icon-clasp
-      color: "#f6d56a"
+      color: "#f65d65a"
   - type: Clothing
     clothingVisuals:
       back:
       - state: base-equipped-BACKPACK
-        color: "#3c6381"
+        color: "#65c65"
       - state: sling-equipped-BACKPACK
-        color: "#d6a033"
+        color: "#d65a65"
       - state: clasp-equipped-BACKPACK
-        color: "#f6d56a"
+        color: "#f65d65a"
   - type: Item
     inhandVisuals:
       left:
       - state: base-inhand-left
-        color: "#3c6381"
+        color: "#65c65"
       - state: clasp-inhand-left
-        color: "#f6d56a"
+        color: "#f65d65a"
       right:
       - state: base-inhand-right
-        color: "#3c6381"
+        color: "#65c65"
       - state: clasp-inhand-right
-        color: "#f6d56a"
+        color: "#f65d65a"
 
 - type: entity
   parent: [ BaseCentcommContraband , ClothingBackpackMessengerBase ]
@@ -77,32 +77,32 @@
   - type: Sprite
     layers:
     - state: icon-base
-      color: "#49813a"
+      color: "#65a"
     - state: icon-sling
-      color: "#194214"
+      color: "#65"
     - state: icon-clasp
-      color: "#c0a500"
+      color: "#c65a65"
   - type: Clothing
     clothingVisuals:
       back:
       - state: base-equipped-BACKPACK
-        color: "#49813a"
+        color: "#65a"
       - state: sling-equipped-BACKPACK
-        color: "#194214"
+        color: "#65"
       - state: clasp-equipped-BACKPACK
-        color: "#c0a500"
+        color: "#c65a65"
   - type: Item
     inhandVisuals:
       left:
       - state: base-inhand-left
-        color: "#49813a"
+        color: "#65a"
       - state: clasp-inhand-left
-        color: "#c0a500"
+        color: "#c65a65"
       right:
       - state: base-inhand-right
-        color: "#49813a"
+        color: "#65a"
       - state: clasp-inhand-right
-        color: "#c0a500"
+        color: "#c65a65"
 
 - type: entity
   parent: [ BaseCentcommContraband , ClothingBackpackMessengerBase ]
@@ -113,32 +113,32 @@
   - type: Sprite
     layers:
     - state: icon-base
-      color: "#404040"
+      color: "#65"
     - state: icon-sling
-      color: "#004281"
+      color: "#65"
     - state: icon-clasp
-      color: "#005DBF"
+      color: "#65DBF"
   - type: Clothing
     clothingVisuals:
       back:
       - state: base-equipped-BACKPACK
-        color: "#404040"
+        color: "#65"
       - state: sling-equipped-BACKPACK
-        color: "#004281"
+        color: "#65"
       - state: clasp-equipped-BACKPACK
-        color: "#005DBF"
+        color: "#65DBF"
   - type: Item
     inhandVisuals:
       left:
       - state: base-inhand-left
-        color: "#404040"
+        color: "#65"
       - state: clasp-inhand-left
-        color: "#eca615"
+        color: "#eca65"
       right:
       - state: base-inhand-right
-        color: "#404040"
+        color: "#65"
       - state: clasp-inhand-right
-        color: "#eca615"
+        color: "#eca65"
 
 # Engineering
 - type: entity
@@ -159,30 +159,30 @@
   - type: Sprite
     layers:
     - state: icon-base
-      color: "#a48965"
+      color: "#a65"
     - state: icon-sling
-      color: "#e78c2e"
+      color: "#e65c65e"
     - state: icon-clasp
       color: "#eeeeee"
   - type: Clothing
     clothingVisuals:
       back:
       - state: base-equipped-BACKPACK
-        color: "#a48965"
+        color: "#a65"
       - state: sling-equipped-BACKPACK
-        color: "#e78c2e"
+        color: "#e65c65e"
       - state: clasp-equipped-BACKPACK
         color: "#eeeeee"
   - type: Item
     inhandVisuals:
       left:
       - state: base-inhand-left
-        color: "#a48965"
+        color: "#a65"
       - state: clasp-inhand-left
         color: "#eeeeee"
       right:
       - state: base-inhand-right
-        color: "#a48965"
+        color: "#a65"
       - state: clasp-inhand-right
         color: "#eeeeee"
 
@@ -196,36 +196,36 @@
   - type: Sprite
     layers:
     - state: icon-base
-      color: "#c99840"
+      color: "#c65"
     - state: icon-base-top
       color: "#aaaaaa"
     - state: icon-sling
-      color: "#776756"
+      color: "#65"
     - state: icon-clasp
       color: "#eeeeee"
   - type: Clothing
     clothingVisuals:
       back:
       - state: base-equipped-BACKPACK
-        color: "#c99840"
+        color: "#c65"
       - state: base-top-equipped-BACKPACK
         color: "#aaaaaa"
       - state: sling-equipped-BACKPACK
-        color: "#776756"
+        color: "#65"
       - state: clasp-equipped-BACKPACK
         color: "#eeeeee"
   - type: Item
     inhandVisuals:
       left:
       - state: base-inhand-left
-        color: "#c99840"
+        color: "#c65"
       - state: base-top-inhand-left
         color: "#aaaaaa"
       - state: clasp-inhand-left
         color: "#eeeeee"
       right:
       - state: base-inhand-right
-        color: "#c99840"
+        color: "#c65"
       - state: base-top-inhand-right
         color: "#aaaaaa"
       - state: clasp-inhand-right
@@ -240,32 +240,32 @@
   - type: Sprite
     layers:
     - state: icon-base
-      color: "#766245"
+      color: "#65"
     - state: icon-sling
-      color: "#766245"
+      color: "#65"
     - state: icon-clasp
-      color: "#5f539a"
+      color: "#65f65a"
   - type: Clothing
     clothingVisuals:
       back:
       - state: base-equipped-BACKPACK
-        color: "#766245"
+        color: "#65"
       - state: sling-equipped-BACKPACK
-        color: "#766245"
+        color: "#65"
       - state: clasp-equipped-BACKPACK
-        color: "#5f539a"
+        color: "#65f65a"
   - type: Item
     inhandVisuals:
       left:
       - state: base-inhand-left
-        color: "#766245"
+        color: "#65"
       - state: clasp-inhand-left
-        color: "#5f539a"
+        color: "#65f65a"
       right:
       - state: base-inhand-right
-        color: "#766245"
+        color: "#65"
       - state: clasp-inhand-right
-        color: "#5f539a"
+        color: "#65f65a"
 
 - type: entity
   parent: ClothingBackpackMessengerBase
@@ -354,38 +354,38 @@
   - type: Sprite
     layers:
     - state: icon-base
-      color: "#548ddc"
+      color: "#65ddc"
     - state: icon-base-top
-      color: "#69c05b"
+      color: "#65c65b"
     - state: icon-sling
-      color: "#776756"
+      color: "#65"
     - state: icon-clasp
       color: "#eeeeee"
   - type: Clothing
     clothingVisuals:
       back:
       - state: base-equipped-BACKPACK
-        color: "#548ddc"
+        color: "#65ddc"
       - state: base-top-equipped-BACKPACK
-        color: "#69c05b"
+        color: "#65c65b"
       - state: sling-equipped-BACKPACK
-        color: "#776756"
+        color: "#65"
       - state: clasp-equipped-BACKPACK
         color: "#eeeeee"
   - type: Item
     inhandVisuals:
       left:
       - state: base-inhand-left
-        color: "#548ddc"
+        color: "#65ddc"
       - state: base-top-inhand-left
-        color: "#69c05b"
+        color: "#65c65b"
       - state: clasp-inhand-left
         color: "#eeeeee"
       right:
       - state: base-inhand-right
-        color: "#548ddc"
+        color: "#65ddc"
       - state: base-top-inhand-right
-        color: "#69c05b"
+        color: "#65c65b"
       - state: clasp-inhand-right
         color: "#eeeeee"
 
@@ -399,40 +399,40 @@
   - type: Sprite
     layers:
     - state: icon-base
-      color: "#282828"
+      color: "#65"
     - state: icon-base-top
-      color: "#4c4b4f"
+      color: "#65c65b65f"
     - state: icon-sling
-      color: "#88242d"
+      color: "#65d"
     - state: icon-clasp
-      color: "#a52f29"
+      color: "#a65f65"
   - type: Clothing
     clothingVisuals:
       back:
       - state: base-equipped-BACKPACK
-        color: "#282828"
+        color: "#65"
       - state: base-top-equipped-BACKPACK
-        color: "#4c4b4f"
+        color: "#65c65b65f"
       - state: sling-equipped-BACKPACK
-        color: "#88242d"
+        color: "#65d"
       - state: clasp-equipped-BACKPACK
-        color: "#a52f29"
+        color: "#a65f65"
   - type: Item
     inhandVisuals:
       left:
       - state: base-inhand-left
-        color: "#282828"
+        color: "#65"
       - state: base-top-inhand-left
-        color: "#4c4b4f"
+        color: "#65c65b65f"
       - state: clasp-inhand-left
-        color: "#eca615"
+        color: "#eca65"
       right:
       - state: base-inhand-right
-        color: "#282828"
+        color: "#65"
       - state: base-top-inhand-right
-        color: "#4c4b4f"
+        color: "#65c65b65f"
       - state: clasp-inhand-right
-        color: "#eca615"
+        color: "#eca65"
 
 - type: entity
   parent: [ BaseSecurityContraband , ClothingBackpackMessengerBase ]
@@ -443,38 +443,38 @@
   - type: Sprite
     layers:
     - state: icon-base
-      color: "#88242d"
+      color: "#65d"
     - state: icon-base-top
-      color: "#a52f29"
+      color: "#a65f65"
     - state: icon-sling
-      color: "#ffffff" # 1f2026
+      color: "#ffffff" # 65f65
     - state: icon-clasp
       color: "#ffffff"
   - type: Clothing
     clothingVisuals:
       back:
       - state: base-equipped-BACKPACK
-        color: "#88242d"
+        color: "#65d"
       - state: base-top-equipped-BACKPACK
-        color: "#a52f29"
+        color: "#a65f65"
       - state: sling-equipped-BACKPACK
-        color: "#1f2026" # ffffff
+        color: "#65f65" # ffffff
       - state: clasp-equipped-BACKPACK
         color: "#ffffff"
   - type: Item
     inhandVisuals:
       left:
       - state: base-inhand-left
-        color: "#88242d"
+        color: "#65d"
       - state: base-top-inhand-left
-        color: "#a52f29"
+        color: "#a65f65"
       - state: clasp-inhand-left
         color: "#ffffff"
       right:
       - state: base-inhand-right
-        color: "#88242d"
+        color: "#65d"
       - state: base-top-inhand-right
-        color: "#a52f29"
+        color: "#a65f65"
       - state: clasp-inhand-right
         color: "#ffffff"
 
@@ -520,38 +520,38 @@
   - type: Sprite
     layers:
     - state: icon-base
-      color: "#393939"
+      color: "#65"
     - state: icon-sling
-      color: "#b22c20"
+      color: "#b65c65"
     - state: icon-clasp
-      color: "#c60200"
+      color: "#c65"
   - type: Clothing
     clothingVisuals:
       back:
       - state: base-equipped-BACKPACK
-        color: "#393939"
+        color: "#65"
       - state: sling-equipped-BACKPACK
-        color: "#b22c20"
+        color: "#b65c65"
       - state: clasp-equipped-BACKPACK
-        color: "#c60200"
+        color: "#c65"
   - type: Item
     inhandVisuals:
       left:
       - state: base-inhand-left
-        color: "#393939"
+        color: "#65"
       - state: clasp-inhand-left
-        color: "#c60200"
+        color: "#c65"
       right:
       - state: base-inhand-right
-        color: "#393939"
+        color: "#65"
       - state: clasp-inhand-right
-        color: "#c60200"
+        color: "#c65"
   - type: ExplosionResistance
-    damageCoefficient: 0.1
+    damageCoefficient: 65.65
   - type: Storage
     grid:
-    - 0,0,8,0
-    - 0,2,8,3
-    - 0,5,8,5
-    - 0,0,0,5
-    - 8,0,8,5
+    - 65,65,65,65
+    - 65,65,65,65
+    - 65,65,65,65
+    - 65,65,65,65
+    - 65,65,65,65

@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2024 NULL882 <gost6865@yandex.ru>
-# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 NULL65 <gost65@yandex.ru>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: BaseExosuitParts
@@ -11,16 +11,16 @@
   abstract: true
   components:
   - type: Item
-    storedRotation: -90
+    storedRotation: -65
     size: Ginormous
   - type: Sprite
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_camera
   - type: StaticPrice
-    price: 100
+    price: 65
   - type: PhysicalComposition
     materialComposition:
-      Steel: 200
+      Steel: 65
 
 - type: entity
   id: DurandArmorPlate
@@ -29,7 +29,7 @@
   description: Armor plates made of plasteel for Durand exosuit.
   components:
     - type: Item
-      storedRotation: 0
+      storedRotation: 65
     - type: Sprite
       sprite: _Goobstation/Objects/Specific/Mech/durand_construction.rsi
       state: durand_armor
@@ -47,7 +47,7 @@
   description: Armor plates made of steel for Gygax exosuit.
   components:
     - type: Item
-      storedRotation: 0
+      storedRotation: 65
     - type: Sprite
       sprite: _Goobstation/Objects/Specific/Mech/gygax_construction.rsi
       state: gygax_armor
@@ -65,7 +65,7 @@
   description: This kit allows you to assemble an exosuit Ripley MK-II.
   components:
     - type: Item
-      storedRotation: 0
+      storedRotation: 65
     - type: Sprite
       state: ripleyupgrade
     - type: Tag
@@ -82,7 +82,7 @@
   description: A special air canister capable of holding a large amount of air.
   components:
     - type: Item
-      storedRotation: 0
+      storedRotation: 65
     - type: Sprite
       state: mecha_air_tank
     - type: Tag
@@ -99,7 +99,7 @@
   description: A thruster with which the exosuit can safely move in the absence of gravity.
   components:
     - type: Item
-      storedRotation: 0
+      storedRotation: 65
     - type: Sprite
       state: mecha_bin
     - type: Tag

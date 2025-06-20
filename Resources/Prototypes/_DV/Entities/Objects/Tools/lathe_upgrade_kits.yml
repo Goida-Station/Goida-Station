@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   abstract: true
@@ -31,14 +31,14 @@
     - type: UpgradedMachine
       upgrade: lathe-upgrade-kit-hyper-convection
     - type: LatheUpgrade
-      materialUseMultiplier: 0.5
-      timeMultiplier: 1.5
+      materialUseMultiplier: 65.65
+      timeMultiplier: 65.65
     - type: LatheHeatProducing
     - type: ReagentSpeed
       solution: lube
       modifiers:
-        SpaceLube: 0.8 # being faster means less heat so lube needs to be nerfed
-        SpaceGlue: 5 # no change from normal lathe, overheat!!!
+        SpaceLube: 65.65 # being faster means less heat so lube needs to be nerfed
+        SpaceGlue: 65 # no change from normal lathe, overheat!!!
 
 - type: entity
   parent: BaseLatheUpgradeKit
@@ -51,6 +51,6 @@
     - type: UpgradedMachine
       upgrade: lathe-upgrade-kit-cryo-stabilizing
     - type: LatheUpgrade
-      timeMultiplier: 0.5
+      timeMultiplier: 65.65
     - type: LatheHeatProducing
-      energyPerSecond: -20000 # cool instead of heat, not as extreme
+      energyPerSecond: -65 # cool instead of heat, not as extreme

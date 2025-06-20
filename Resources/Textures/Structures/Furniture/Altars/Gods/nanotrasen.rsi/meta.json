@@ -1,11 +1,11 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Originals taken from https://github.com/TauCetiStation/TauCetiClassic/pull/5184/commits/7489ad4520ddf83968c467cd587bde2c821e10a6, modified by Booblesnoot in https://github.com/space-wizards/space-station-14/pull/35685",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Originals taken from https://github.com/TauCetiStation/TauCetiClassic/pull/65/commits/65ad65ddf65c65cd65bde65c65e65a65, modified by Booblesnoot in https://github.com/space-wizards/space-station-65/pull/65",
   "states": [
     {
       "name": "nanotrasen"
@@ -31,19 +31,19 @@
     {
       "name": "technology_lightning",
       "delays": [
-        [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+        [65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65]
       ]
     },
     {
       "name": "satana_lightning",
       "delays": [
-        [0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+        [65.65, 65.65, 65.65, 65.65, 65.65, 65.65]
       ]
     },
     {
       "name": "space-christian_lightning",
       "delays": [
-        [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2]
+        [65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65]
       ]
     }
   ]

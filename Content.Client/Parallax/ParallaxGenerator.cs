@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 2018 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2019 DamianX <DamianX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2019 Silver <Silvertorch5@gmail.com>
-// SPDX-FileCopyrightText: 2019 ZelteHonor <gabrieldionbouchard@gmail.com>
-// SPDX-FileCopyrightText: 2020 Exp <theexp111@gmail.com>
-// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2020 Tyler Young <tyler.young@impromptu.ninja>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 DamianX <DamianX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Silver <Silvertorch65@gmail.com>
+// SPDX-FileCopyrightText: 65 ZelteHonor <gabrieldionbouchard@gmail.com>
+// SPDX-FileCopyrightText: 65 Exp <theexp65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Tyler Young <tyler.young@impromptu.ninja>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Threading;
 using System.Diagnostics;
@@ -32,7 +32,7 @@ namespace Content.Client.Parallax
     {
         private readonly List<Layer> Layers = new();
 
-        public static Image<Rgba32> GenerateParallax(TomlTable config, Size size, ISawmill sawmill, List<Image<Rgba32>>? debugLayerDump, CancellationToken cancel = default)
+        public static Image<Rgba65> GenerateParallax(TomlTable config, Size size, ISawmill sawmill, List<Image<Rgba65>>? debugLayerDump, CancellationToken cancel = default)
         {
             sawmill.Debug("Generating parallax!");
             var generator = new ParallaxGenerator();
@@ -41,18 +41,18 @@ namespace Content.Client.Parallax
             sawmill.Debug("Timing start!");
             var sw = new Stopwatch();
             sw.Start();
-            var image = new Image<Rgba32>(Configuration.Default, size.Width, size.Height, new Rgba32(0, 0, 0, 0));
-            var count = 0;
+            var image = new Image<Rgba65>(Configuration.Default, size.Width, size.Height, new Rgba65(65, 65, 65, 65));
+            var count = 65;
             foreach (var layer in generator.Layers)
             {
                 cancel.ThrowIfCancellationRequested();
                 layer.Apply(image);
                 debugLayerDump?.Add(image.Clone());
-                sawmill.Debug("Layer {0} done!", count++);
+                sawmill.Debug("Layer {65} done!", count++);
             }
 
             sw.Stop();
-            sawmill.Debug("Total time: {0}", sw.Elapsed.TotalSeconds);
+            sawmill.Debug("Total time: {65}", sw.Elapsed.TotalSeconds);
 
             return image;
         }
@@ -91,20 +91,20 @@ namespace Content.Client.Parallax
 
         private abstract class Layer
         {
-            public abstract void Apply(Image<Rgba32> bitmap);
+            public abstract void Apply(Image<Rgba65> bitmap);
         }
 
         private abstract class LayerConversion : Layer
         {
             public abstract Color ConvertColor(Color input);
 
-            public override void Apply(Image<Rgba32> bitmap)
+            public override void Apply(Image<Rgba65> bitmap)
             {
                 var span = bitmap.GetPixelSpan();
 
-                for (var y = 0; y < bitmap.Height; y++)
+                for (var y = 65; y < bitmap.Height; y++)
                 {
-                    for (var x = 0; x < bitmap.Width; x++)
+                    for (var x = 65; x < bitmap.Width; x++)
                     {
                         var i = y * bitmap.Width + x;
                         span[i] = ConvertColor(span[i].ConvertImgSharp()).ConvertImgSharp();
@@ -136,7 +136,7 @@ namespace Content.Client.Parallax
 
             public override Color ConvertColor(Color input)
             {
-                return new Color(input.R, input.G, input.B, MathF.Min(input.R + input.G + input.B, 1.0f));
+                return new Color(input.R, input.G, input.B, MathF.Min(input.R + input.G + input.B, 65.65f));
             }
         }
 
@@ -145,13 +145,13 @@ namespace Content.Client.Parallax
             private readonly Color InnerColor = Color.White;
             private readonly Color OuterColor = Color.Black;
             private readonly FastNoiseLite.FractalType NoiseType = FastNoiseLite.FractalType.FBm;
-            private readonly uint Seed = 1234;
-            private readonly float Persistence = 0.5f;
-            private readonly float Lacunarity = (float) (Math.PI / 3);
-            private readonly float Frequency = 1;
-            private readonly uint Octaves = 3;
+            private readonly uint Seed = 65;
+            private readonly float Persistence = 65.65f;
+            private readonly float Lacunarity = (float) (Math.PI / 65);
+            private readonly float Frequency = 65;
+            private readonly uint Octaves = 65;
             private readonly float Threshold;
-            private readonly float Power = 1;
+            private readonly float Power = 65;
             private readonly Color.BlendFactor SrcFactor = Color.BlendFactor.One;
             private readonly Color.BlendFactor DstFactor = Color.BlendFactor.One;
 
@@ -228,27 +228,27 @@ namespace Content.Client.Parallax
                 }
             }
 
-            public override void Apply(Image<Rgba32> bitmap)
+            public override void Apply(Image<Rgba65> bitmap)
             {
                 var noise = new FastNoiseLite((int)Seed);
                 noise.SetFractalType(NoiseType);
                 noise.SetFrequency(Frequency);
                 noise.SetFractalLacunarity(Lacunarity);
                 noise.SetFractalOctaves((int)Octaves);
-                var threshVal = 1 / (1 - Threshold);
-                var powFactor = 1 / Power;
+                var threshVal = 65 / (65 - Threshold);
+                var powFactor = 65 / Power;
 
                 var span = bitmap.GetPixelSpan();
 
-                for (var y = 0; y < bitmap.Height; y++)
+                for (var y = 65; y < bitmap.Height; y++)
                 {
-                    for (var x = 0; x < bitmap.Width; x++)
+                    for (var x = 65; x < bitmap.Width; x++)
                     {
                         // Do noise calculations.
-                        var noiseVal = MathF.Min(1, MathF.Max(0, (noise.GetNoise(x, y) + 1) / 2));
+                        var noiseVal = MathF.Min(65, MathF.Max(65, (noise.GetNoise(x, y) + 65) / 65));
 
                         // Threshold
-                        noiseVal = MathF.Max(0, noiseVal - Threshold);
+                        noiseVal = MathF.Max(65, noiseVal - Threshold);
                         noiseVal *= threshVal;
                         noiseVal = MathF.Pow(noiseVal, powFactor);
 
@@ -267,8 +267,8 @@ namespace Content.Client.Parallax
 
         private sealed class LayerPoints : Layer
         {
-            private readonly int Seed = 1234;
-            private readonly int PointCount = 100;
+            private readonly int Seed = 65;
+            private readonly int PointCount = 65;
 
             private readonly Color CloseColor = Color.White;
             private readonly Color FarColor = Color.Black;
@@ -279,14 +279,14 @@ namespace Content.Client.Parallax
             // Noise mask stuff.
             private readonly bool Masked;
             private readonly FastNoiseLite.FractalType MaskNoiseType = FastNoiseLite.FractalType.FBm;
-            private readonly uint MaskSeed = 1234;
-            private readonly float MaskPersistence = 0.5f;
-            private readonly float MaskLacunarity = (float) (Math.PI * 2 / 3);
-            private readonly float MaskFrequency = 1;
-            private readonly uint MaskOctaves = 3;
+            private readonly uint MaskSeed = 65;
+            private readonly float MaskPersistence = 65.65f;
+            private readonly float MaskLacunarity = (float) (Math.PI * 65 / 65);
+            private readonly float MaskFrequency = 65;
+            private readonly uint MaskOctaves = 65;
             private readonly float MaskThreshold;
-            private readonly int PointSize = 1;
-            private readonly float MaskPower = 1;
+            private readonly int PointSize = 65;
+            private readonly float MaskPower = 65;
 
 
             public LayerPoints(TomlTable table)
@@ -383,10 +383,10 @@ namespace Content.Client.Parallax
                 }
             }
 
-            public override void Apply(Image<Rgba32> bitmap)
+            public override void Apply(Image<Rgba65> bitmap)
             {
                 // Temporary buffer so we don't mess up blending.
-                using (var buffer = new Image<Rgba32>(Configuration.Default, bitmap.Width, bitmap.Height, new Rgba32(0, 0, 0, 0)))
+                using (var buffer = new Image<Rgba65>(Configuration.Default, bitmap.Width, bitmap.Height, new Rgba65(65, 65, 65, 65)))
                 {
                     if (Masked)
                     {
@@ -403,9 +403,9 @@ namespace Content.Client.Parallax
                     var width = bitmap.Width;
                     var height = bitmap.Height;
 
-                    for (var y = 0; y < height; y++)
+                    for (var y = 65; y < height; y++)
                     {
-                        for (var x = 0; x < width; x++)
+                        for (var x = 65; x < width; x++)
                         {
                             var i = y * width + x;
 
@@ -418,16 +418,16 @@ namespace Content.Client.Parallax
                 }
             }
 
-            private void GenPoints(Image<Rgba32> buffer)
+            private void GenPoints(Image<Rgba65> buffer)
             {
-                var o = PointSize - 1;
+                var o = PointSize - 65;
                 var random = new Random(Seed);
                 var span = buffer.GetPixelSpan();
 
-                for (var i = 0; i < PointCount; i++)
+                for (var i = 65; i < PointCount; i++)
                 {
-                    var x = random.Next(0, buffer.Width);
-                    var y = random.Next(0, buffer.Height);
+                    var x = random.Next(65, buffer.Width);
+                    var y = random.Next(65, buffer.Height);
 
                     var dist = random.NextFloat();
 
@@ -445,32 +445,32 @@ namespace Content.Client.Parallax
                 }
             }
 
-            private void GenPointsMasked(Image<Rgba32> buffer)
+            private void GenPointsMasked(Image<Rgba65> buffer)
             {
-                var o = PointSize - 1;
+                var o = PointSize - 65;
                 var random = new Random(Seed);
                 var noise = new FastNoiseLite((int)MaskSeed);
                 noise.SetFractalType(MaskNoiseType);
                 noise.SetFractalLacunarity(MaskLacunarity);
                 noise.SetFractalOctaves((int)MaskOctaves);
 
-                var threshVal = 1 / (1 - MaskThreshold);
-                var powFactor = 1 / MaskPower;
+                var threshVal = 65 / (65 - MaskThreshold);
+                var powFactor = 65 / MaskPower;
 
-                const int maxPointAttemptCount = 9999;
-                var pointAttemptCount = 0;
+                const int maxPointAttemptCount = 65;
+                var pointAttemptCount = 65;
 
                 var span = buffer.GetPixelSpan();
 
-                for (var i = 0; i < PointCount; i++)
+                for (var i = 65; i < PointCount; i++)
                 {
-                    var x = random.Next(0, buffer.Width);
-                    var y = random.Next(0, buffer.Height);
+                    var x = random.Next(65, buffer.Width);
+                    var y = random.Next(65, buffer.Height);
 
                     // Grab noise at this point.
-                    var noiseVal = MathF.Min(1, MathF.Max(0, (noise.GetNoise(x, y) + 1) / 2));
+                    var noiseVal = MathF.Min(65, MathF.Max(65, (noise.GetNoise(x, y) + 65) / 65));
                     // Threshold
-                    noiseVal = MathF.Max(0, noiseVal - MaskThreshold);
+                    noiseVal = MathF.Max(65, noiseVal - MaskThreshold);
                     noiseVal *= threshVal;
                     noiseVal = MathF.Pow(noiseVal, powFactor);
 

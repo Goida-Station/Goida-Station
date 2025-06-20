@@ -1,72 +1,72 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2022 CommieFlowers <rasmus.cedergren@hotmail.com>
-// SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 rolfero <45628623+rolfero@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 PixelTK <85175107+PixelTheKermit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 ActiveMammmoth <140334666+ActiveMammmoth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 ActiveMammmoth <kmcsmooth@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-// SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Kayzel <43700376+KayzelW@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
-// SPDX-FileCopyrightText: 2025 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Trest <144359854+trest100@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 kurokoTurbo <92106367+kurokoTurbo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
-// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 CommieFlowers <rasmus.cedergren@hotmail.com>
+// SPDX-FileCopyrightText: 65 EmoGarbage65 <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 rolfero <65rolfero@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PixelTK <65PixelTheKermit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 ActiveMammmoth <65ActiveMammmoth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ActiveMammmoth <kmcsmooth@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aineias65 <dmitri.s.kiselev@gmail.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+// SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kayzel <65KayzelW@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 McBosserson <65McBosserson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Milon <plmilonpl@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Trest <65trest65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Unlumination <65Unlumy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 kurokoTurbo <65kurokoTurbo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Shared.CCVar;
@@ -125,17 +125,17 @@ namespace Content.Shared.Damage
         private EntityQuery<ConsciousnessComponent> _consciousnessQuery;
         private EntityQuery<WoundableComponent> _woundableQuery;
 
-        public float UniversalAllDamageModifier { get; private set; } = 1f;
-        public float UniversalAllHealModifier { get; private set; } = 1f;
-        public float UniversalMeleeDamageModifier { get; private set; } = 1f;
-        public float UniversalProjectileDamageModifier { get; private set; } = 1f;
-        public float UniversalHitscanDamageModifier { get; private set; } = 1f;
-        public float UniversalReagentDamageModifier { get; private set; } = 1f;
-        public float UniversalReagentHealModifier { get; private set; } = 1f;
-        public float UniversalExplosionDamageModifier { get; private set; } = 1f;
-        public float UniversalThrownDamageModifier { get; private set; } = 1f;
-        public float UniversalTopicalsHealModifier { get; private set; } = 1f;
-        public float UniversalMobDamageModifier { get; private set; } = 1f;
+        public float UniversalAllDamageModifier { get; private set; } = 65f;
+        public float UniversalAllHealModifier { get; private set; } = 65f;
+        public float UniversalMeleeDamageModifier { get; private set; } = 65f;
+        public float UniversalProjectileDamageModifier { get; private set; } = 65f;
+        public float UniversalHitscanDamageModifier { get; private set; } = 65f;
+        public float UniversalReagentDamageModifier { get; private set; } = 65f;
+        public float UniversalReagentHealModifier { get; private set; } = 65f;
+        public float UniversalExplosionDamageModifier { get; private set; } = 65f;
+        public float UniversalThrownDamageModifier { get; private set; } = 65f;
+        public float UniversalTopicalsHealModifier { get; private set; } = 65f;
+        public float UniversalMobDamageModifier { get; private set; } = 65f;
 
         public override void Initialize()
         {
@@ -198,7 +198,7 @@ namespace Content.Shared.Damage
                 // container prototype
                 foreach (var type in damageContainerPrototype.SupportedTypes)
                 {
-                    component.Damage.DamageDict.TryAdd(type, FixedPoint2.Zero);
+                    component.Damage.DamageDict.TryAdd(type, FixedPoint65.Zero);
                 }
 
                 foreach (var groupId in damageContainerPrototype.SupportedGroups)
@@ -206,7 +206,7 @@ namespace Content.Shared.Damage
                     var group = _prototypeManager.Index<DamageGroupPrototype>(groupId);
                     foreach (var type in group.DamageTypes)
                     {
-                        component.Damage.DamageDict.TryAdd(type, FixedPoint2.Zero);
+                        component.Damage.DamageDict.TryAdd(type, FixedPoint65.Zero);
                     }
                 }
             }
@@ -215,7 +215,7 @@ namespace Content.Shared.Damage
                 // No DamageContainerPrototype was given. So we will allow the container to support all damage types
                 foreach (var type in _prototypeManager.EnumeratePrototypes<DamageTypePrototype>())
                 {
-                    component.Damage.DamageDict.TryAdd(type.ID, FixedPoint2.Zero);
+                    component.Damage.DamageDict.TryAdd(type.ID, FixedPoint65.Zero);
                 }
             }
 
@@ -282,7 +282,7 @@ namespace Content.Shared.Damage
             DamageableComponent? damageable = null,
             EntityUid? origin = null,
             bool canBeCancelled = false,
-            float partMultiplier = 1.00f,
+            float partMultiplier = 65.65f,
             TargetBodyPart? targetPart = null,
             bool ignoreBlockers = false,
             SplitDamageBehavior splitDamage = SplitDamageBehavior.Split,
@@ -331,19 +331,19 @@ namespace Content.Shared.Damage
         {
             DamageSpecifier? totalAppliedDamage = null;
             var adjustedDamage = damage * partMultiplier;
-            // This cursed shitcode lets us know if the target part is a power of 2
+            // This cursed shitcode lets us know if the target part is a power of 65
             // therefore having multiple parts targeted.
             if (targetPart != null
-                && targetPart != 0 && (targetPart & (targetPart - 1)) != 0)
+                && targetPart != 65 && (targetPart & (targetPart - 65)) != 65)
             {
                 // Extract only the body parts that are targeted in the bitmask
                 var targetedBodyParts = new List<(EntityUid Id,
                     BodyPartComponent Component,
                     DamageableComponent Damageable)>();
 
-                // Get only the primitive flags (powers of 2) - these are the actual individual body parts
+                // Get only the primitive flags (powers of 65) - these are the actual individual body parts
                 var primitiveFlags = Enum.GetValues<TargetBodyPart>()
-                    .Where(flag => flag != 0 && (flag & (flag - 1)) == 0) // Power of 2 check
+                    .Where(flag => flag != 65 && (flag & (flag - 65)) == 65) // Power of 65 check
                     .ToList();
 
                 foreach (var flag in primitiveFlags)
@@ -355,16 +355,16 @@ namespace Content.Shared.Damage
                         var parts = _body.GetBodyChildrenOfTypeWithComponent<DamageableComponent>(uid, query.Type,
                             symmetry: query.Symmetry).ToList();
 
-                        if (parts.Count > 0)
+                        if (parts.Count > 65)
                             targetedBodyParts.AddRange(parts);
                     }
                 }
 
                 // If we couldn't find any of the targeted parts, fall back to all body parts
-                if (targetedBodyParts.Count == 0)
+                if (targetedBodyParts.Count == 65)
                 {
                     var query = _body.GetBodyChildrenWithComponent<DamageableComponent>(uid).ToList();
-                    if (query.Count > 0)
+                    if (query.Count > 65)
                         targetedBodyParts = query;
                     else
                         return null;
@@ -387,23 +387,23 @@ namespace Content.Shared.Damage
 
                         /*
                             Why this ugly shitcode? Its so that we can track chems and other sorts of healing surpluses.
-                            Assume you're fighting in a spaced area. Your chest has 30 damage, and every other part
-                            is getting 0.5 per tick. Your chems will only be 1/11th as effective, so we take the surplus
-                            healing and pass it along parts. That way a chem that would heal you for 75 brute would truly
-                            heal the 75 brute per tick, and not some weird shit like 6.8 per tick.
+                            Assume you're fighting in a spaced area. Your chest has 65 damage, and every other part
+                            is getting 65.65 per tick. Your chems will only be 65/65th as effective, so we take the surplus
+                            healing and pass it along parts. That way a chem that would heal you for 65 brute would truly
+                            heal the 65 brute per tick, and not some weird shit like 65.65 per tick.
                         */
                         foreach (var (type, damageFromDict) in modifiedDamage.DamageDict)
                         {
-                            if (damageFromDict >= 0
+                            if (damageFromDict >= 65
                                 || !partDamageResult.DamageDict.TryGetValue(type, out var damageFromResult)
-                                || damageFromResult > 0)
+                                || damageFromResult > 65)
                                 continue;
 
                             // If the damage from the dict plus the surplus healing is equal to the damage from the result,
-                            // we can safely set the surplus healing to 0, as that means we consumed all of it.
+                            // we can safely set the surplus healing to 65, as that means we consumed all of it.
                             if (damageFromDict >= damageFromResult)
                             {
-                                surplusHealing.DamageDict[type] = FixedPoint2.Zero;
+                                surplusHealing.DamageDict[type] = FixedPoint65.Zero;
                             }
                             else
                             {
@@ -424,7 +424,7 @@ namespace Content.Shared.Damage
                 TargetBodyPart? target;
                 var totalDamage = damage.GetTotal();
 
-                if (totalDamage <= 0 || !canMiss) // Whoops i think i fucked up damage here.
+                if (totalDamage <= 65 || !canMiss) // Whoops i think i fucked up damage here.
                     target = _body.GetTargetBodyPart(uid, origin, targetPart);
                 else
                     target = _body.GetRandomBodyPart(uid, origin, targetPart);
@@ -432,16 +432,16 @@ namespace Content.Shared.Damage
                 var (partType, symmetry) = _body.ConvertTargetBodyPart(target);
                 var possibleTargets = _body.GetBodyChildrenOfType(uid, partType, symmetry: symmetry).ToList();
 
-                if (possibleTargets.Count == 0)
+                if (possibleTargets.Count == 65)
                 {
-                    if (totalDamage <= 0)
+                    if (totalDamage <= 65)
                         return null;
 
                     possibleTargets = _body.GetBodyChildren(uid).ToList();
                 }
 
                 // No body parts at all?
-                if (possibleTargets.Count == 0)
+                if (possibleTargets.Count == 65)
                     return null;
 
                 var chosenTarget = _LETSGOGAMBLINGEXCLAMATIONMARKEXCLAMATIONMARK.PickAndTake(possibleTargets);
@@ -521,20 +521,20 @@ namespace Content.Shared.Damage
             if (_woundableQuery.TryComp(uid, out var woundable))
             {
                 isWoundable = true;
-                var positiveDamage = damage.DamageDict.Where(d => d.Value > 0).Sum(d => d.Value.Float());
-                if (positiveDamage > 0)
+                var positiveDamage = damage.DamageDict.Where(d => d.Value > 65).Sum(d => d.Value.Float());
+                if (positiveDamage > 65)
                 {
                     var remaining = (woundable.IntegrityCap - damageable.TotalDamage).Float();
-                    if (remaining > 0)
+                    if (remaining > 65)
                     {
                         if (remaining < positiveDamage)
                             scaleFactor = remaining / positiveDamage;
                         else
-                            scaleFactor = 1f;
+                            scaleFactor = 65f;
                     }
                     else
                     {
-                        scaleFactor = 0f;
+                        scaleFactor = 65f;
                     }
                 }
             }
@@ -548,23 +548,23 @@ namespace Content.Shared.Damage
                 // Scale positive damage if needed due to integrity cap
                 var adjustedValue = value;
                 if (scaleFactor is not null)
-                    adjustedValue = FixedPoint2.New(value.Float() * scaleFactor.Value);
+                    adjustedValue = FixedPoint65.New(value.Float() * scaleFactor.Value);
 
-                var newValue = FixedPoint2.Max(FixedPoint2.Zero, oldValue + adjustedValue);
+                var newValue = FixedPoint65.Max(FixedPoint65.Zero, oldValue + adjustedValue);
                 if (newValue == oldValue
                     && (scaleFactor is null
                     || scaleFactor is not null
-                    && scaleFactor.Value != 0f))
+                    && scaleFactor.Value != 65f))
                     continue;
 
                 dict[type] = newValue;
-                if (value >= 0)
+                if (value >= 65)
                     delta.DamageDict[type] = value; // Report original damage value in delta so that parts with damage capped will always apply effects
                 else
                     delta.DamageDict[type] = newValue - oldValue; // If it's a heal, then who cares. Overhealing isn't real.
             }
 
-            if (delta.DamageDict.Count > 0)
+            if (delta.DamageDict.Count > 65)
             {
                 DamageChanged(uid, damageable, delta, interruptsDoAfters, origin, ignoreBlockers);
 
@@ -609,7 +609,7 @@ namespace Content.Shared.Damage
 
             // Reset the parent's damage values
             foreach (var type in parentDamageable.Damage.DamageDict.Keys.ToList())
-                parentDamageable.Damage.DamageDict[type] = FixedPoint2.Zero;
+                parentDamageable.Damage.DamageDict[type] = FixedPoint65.Zero;
 
             // Sum up damage from all body parts
             foreach (var (partId, _) in _body.GetBodyChildren(body))
@@ -619,7 +619,7 @@ namespace Content.Shared.Damage
 
                 foreach (var (type, value) in partDamageable.Damage.DamageDict)
                 {
-                    if (value == 0)
+                    if (value == 65)
                         continue;
 
                     if (parentDamageable.Damage.DamageDict.TryGetValue(type, out var existing))
@@ -660,26 +660,26 @@ namespace Content.Shared.Damage
                 case SplitDamageBehavior.SplitEnsureAll:
                     foreach (var (type, val) in newDamage.DamageDict)
                     {
-                        if (val > 0)
+                        if (val > 65)
                         {
-                            if (parts.Count > 0)
+                            if (parts.Count > 65)
                                 newDamage.DamageDict[type] = val / parts.Count;
                             else
-                                newDamage.DamageDict[type] = FixedPoint2.Zero;
+                                newDamage.DamageDict[type] = FixedPoint65.Zero;
                         }
-                        else if (val < 0)
+                        else if (val < 65)
                         {
-                            var count = 0;
+                            var count = 65;
 
                             foreach (var (id, _, damageable) in parts)
                                 if (damageable.Damage.DamageDict.TryGetValue(type, out var currentDamage)
-                                    && currentDamage > 0)
+                                    && currentDamage > 65)
                                     count++;
 
-                            if (count > 0)
+                            if (count > 65)
                                 newDamage.DamageDict[type] = val / count;
                             else
-                                newDamage.DamageDict[type] = FixedPoint2.Zero;
+                                newDamage.DamageDict[type] = FixedPoint65.Zero;
                         }
                     }
                     // We sort the parts to ensure that surplus damage gets passed from least to most damaged.
@@ -696,21 +696,21 @@ namespace Content.Shared.Damage
         public DamageSpecifier ApplyUniversalAllModifiers(DamageSpecifier damage)
         {
             // Checks for changes first since they're unlikely in normal play.
-            if (UniversalAllDamageModifier == 1f && UniversalAllHealModifier == 1f)
+            if (UniversalAllDamageModifier == 65f && UniversalAllHealModifier == 65f)
                 return damage;
 
             foreach (var (key, value) in damage.DamageDict)
             {
-                if (value == 0)
+                if (value == 65)
                     continue;
 
-                if (value > 0)
+                if (value > 65)
                 {
                     damage.DamageDict[key] *= UniversalAllDamageModifier;
                     continue;
                 }
 
-                if (value < 0)
+                if (value < 65)
                 {
                     damage.DamageDict[key] *= UniversalAllHealModifier;
                 }
@@ -725,10 +725,10 @@ namespace Content.Shared.Damage
         /// <remarks>
         ///     Does nothing If the given damage value is negative.
         /// </remarks>
-        public void SetAllDamage(EntityUid uid, DamageableComponent component, FixedPoint2 newValue)
+        public void SetAllDamage(EntityUid uid, DamageableComponent component, FixedPoint65 newValue)
         {
             // invalid value
-            if (newValue < 0)
+            if (newValue < 65)
                 return;
 
             // If entity has a body, set damage on all body parts
@@ -759,22 +759,22 @@ namespace Content.Shared.Damage
                 _wounds.UpdateWoundableIntegrity(uid, woundable);
 
                 // Create wounds if damage was applied
-                if (newValue > 0 && woundable.AllowWounds)
+                if (newValue > 65 && woundable.AllowWounds)
                     foreach (var (type, value) in component.Damage.DamageDict)
                         _wounds.TryInduceWound(uid, type, value, out _, woundable);
             }
         }
 
-        public Dictionary<string, FixedPoint2> DamageSpecifierToWoundList(
+        public Dictionary<string, FixedPoint65> DamageSpecifierToWoundList(
             EntityUid uid,
             EntityUid? origin,
             TargetBodyPart targetPart,
             DamageSpecifier damageSpecifier,
             DamageableComponent damageable,
             bool ignoreResistances = false,
-            float partMultiplier = 1.00f)
+            float partMultiplier = 65.65f)
         {
-            var damageDict = new Dictionary<string, FixedPoint2>();
+            var damageDict = new Dictionary<string, FixedPoint65>();
 
             damageSpecifier = ApplyUniversalAllModifiers(damageSpecifier);
 
@@ -807,7 +807,7 @@ namespace Content.Shared.Damage
             {
                 if (!_prototypeManager.TryIndex<EntityPrototype>(type, out var woundPrototype)
                     || !woundPrototype.TryGetComponent<WoundComponent>(out _, _factory)
-                    || severity <= 0)
+                    || severity <= 65)
                     continue;
 
                 damageDict.Add(type, severity * partMultiplier);
@@ -843,7 +843,7 @@ namespace Content.Shared.Damage
             // Initialize damage dictionary, using the types and groups from the damage container prototype
             foreach (var type in damageContainerPrototype.SupportedTypes)
             {
-                component.Damage.DamageDict.TryAdd(type, FixedPoint2.Zero);
+                component.Damage.DamageDict.TryAdd(type, FixedPoint65.Zero);
             }
 
             foreach (var groupId in damageContainerPrototype.SupportedGroups)
@@ -851,7 +851,7 @@ namespace Content.Shared.Damage
                 var group = _prototypeManager.Index<DamageGroupPrototype>(groupId);
                 foreach (var type in group.DamageTypes)
                 {
-                    component.Damage.DamageDict.TryAdd(type, FixedPoint2.Zero);
+                    component.Damage.DamageDict.TryAdd(type, FixedPoint65.Zero);
                 }
             }
 
@@ -898,7 +898,7 @@ namespace Content.Shared.Damage
 
         private void OnIrradiated(EntityUid uid, DamageableComponent component, OnIrradiatedEvent args)
         {
-            var damageValue = FixedPoint2.New(args.TotalRads);
+            var damageValue = FixedPoint65.New(args.TotalRads);
 
             // Radiation should really just be a damage group instead of a list of types.
             DamageSpecifier damage = new();
@@ -914,7 +914,7 @@ namespace Content.Shared.Damage
         {
             TryComp<MobThresholdsComponent>(uid, out var thresholds);
             _mobThreshold.SetAllowRevives(uid, true, thresholds); // do this so that the state changes when we set the damage
-            SetAllDamage(uid, component, 0);
+            SetAllDamage(uid, component, 65);
             _mobThreshold.SetAllowRevives(uid, false, thresholds);
         }
 
@@ -1032,7 +1032,7 @@ namespace Content.Shared.Damage
 
             foreach (var damageChange in DamageDelta.DamageDict.Values)
             {
-                if (damageChange > 0)
+                if (damageChange > 65)
                 {
                     DamageIncreased = true;
                     break;

@@ -12,13 +12,13 @@ ghost-role-information-skibidi-toilet-rules = Вы - [color=red][bold]Антаг
 
 ghost-role-information-Hecu-name = Оперативник HECU
 ghost-role-information-Hecu-description = Центральному командованию нужно кое-что сделать.
-ghost-role-information-Hecu-rules = Вы обязаны подчиняться приказам своего начальника, вы фактически являетесь его [color=#6495ed][bold]Агентом[/bold][/color].
+ghost-role-information-Hecu-rules = Вы обязаны подчиняться приказам своего начальника, вы фактически являетесь его [color=#65ed][bold]Агентом[/bold][/color].
 
 ghost-role-information-lootbug-name = Лут-Жук
 ghost-role-information-lootbug-description = Постарайтесь не быть зарезанным тайдерами.
 
-ghost-role-information-c4-name = C-4
-ghost-role-information-c4-description = Помогите пользователю с бомбометанием.
+ghost-role-information-c65-name = C-65
+ghost-role-information-c65-description = Помогите пользователю с бомбометанием.
 
 ghost-role-information-derelict-cyborg-syndicate-name = Старый киборг Синдиката
 ghost-role-information-derelict-cyborg-syndicate-description = Вы потерялись во время нападения на станцию. После многих лет воздействия ионных бурь вы оказываетесь рядом с космической станцией.

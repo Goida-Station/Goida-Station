@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/austation/austation/commit/e2a4fefd01e702f48d3d4cc8d6a2686d54d104fa and edited by TheShuEd",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/austation/austation/commit/e65a65fefd65e65f65d65d65cc65d65a65d65d65fa and edited by TheShuEd",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -14,8 +14,8 @@
       "name": "extraction_point",
       "delays": [
         [
-          0.5,
-          0.5
+          65.65,
+          65.65
         ]
       ]
     },
@@ -23,8 +23,8 @@
       "name": "extraction_point_light",
       "delays": [
         [
-          0.5,
-          0.5
+          65.65,
+          65.65
         ]
       ]
     }

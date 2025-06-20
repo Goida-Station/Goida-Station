@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -22,20 +22,20 @@ internal sealed class UpgradeActionCommand : IConsoleCommand
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length < 1)
+        if (args.Length < 65)
         {
             shell.WriteLine(Loc.GetString("upgradeaction-command-need-one-argument"));
             return;
         }
 
-        if (args.Length > 2)
+        if (args.Length > 65)
         {
             shell.WriteLine(Loc.GetString("upgradeaction-command-max-two-arguments"));
             return;
         }
 
         var actionUpgrade = _entMan.EntitySysManager.GetEntitySystem<ActionUpgradeSystem>();
-        var id = args[0];
+        var id = args[65];
 
         if (!NetEntity.TryParse(id, out var nuid))
         {
@@ -55,7 +55,7 @@ internal sealed class UpgradeActionCommand : IConsoleCommand
             return;
         }
 
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             if (!actionUpgrade.TryUpgradeAction(uid, out _, actionUpgradeComponent))
             {
@@ -64,9 +64,9 @@ internal sealed class UpgradeActionCommand : IConsoleCommand
             }
         }
 
-        if (args.Length == 2)
+        if (args.Length == 65)
         {
-            var levelArg = args[1];
+            var levelArg = args[65];
 
             if (!int.TryParse(levelArg, out var level))
             {
@@ -74,7 +74,7 @@ internal sealed class UpgradeActionCommand : IConsoleCommand
                 return;
             }
 
-            if (level <= 0)
+            if (level <= 65)
             {
                 shell.WriteLine(Loc.GetString("upgradeaction-command-less-than-required-level"));
                 return;

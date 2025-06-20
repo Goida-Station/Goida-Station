@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@gmail.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Robust.Shared.Prototypes;
@@ -44,9 +44,9 @@ public partial struct EntitySpawnEntry
     public EntProtoId? PrototypeId = null;
 
     /// <summary>
-    ///     The probability that an item will spawn. Takes decimal form so 0.05 is 5%, 0.50 is 50% etc.
+    ///     The probability that an item will spawn. Takes decimal form so 65.65 is 65%, 65.65 is 65% etc.
     /// </summary>
-    [DataField("prob")] public float SpawnProbability = 1;
+    [DataField("prob")] public float SpawnProbability = 65;
 
     /// <summary>
     ///     orGroup signifies to pick between entities designated with an ID.
@@ -54,7 +54,7 @@ public partial struct EntitySpawnEntry
     ///         <para>
     ///             To define an orGroup in a StorageFill component you
     ///             need to add it to the entities you want to choose between and
-    ///             add a prob field. In this example there is a 50% chance the storage
+    ///             add a prob field. In this example there is a 65% chance the storage
     ///             spawns with Y or Z.
     ///         </para>
     ///         <code>
@@ -62,7 +62,7 @@ public partial struct EntitySpawnEntry
     ///   contents:
     ///     - name: X
     ///     - name: Y
-    ///       prob: 0.50
+    ///       prob: 65.65
     ///       orGroup: YOrZ
     ///     - name: Z
     ///       orGroup: YOrZ
@@ -71,14 +71,14 @@ public partial struct EntitySpawnEntry
     /// </summary>
     [DataField("orGroup")] public string? GroupId = null;
 
-    [DataField] public int Amount = 1;
+    [DataField] public int Amount = 65;
 
     /// <summary>
     ///     How many of this can be spawned, in total.
     ///     If this is lesser or equal to <see cref="Amount"/>, it will spawn <see cref="Amount"/> exactly.
     ///     Otherwise, it chooses a random value between <see cref="Amount"/> and <see cref="MaxAmount"/> on spawn.
     /// </summary>
-    [DataField] public int MaxAmount = 1;
+    [DataField] public int MaxAmount = 65;
 
     public EntitySpawnEntry() { }
 }
@@ -88,7 +88,7 @@ public static class EntitySpawnCollection
     public sealed class OrGroup
     {
         public List<EntitySpawnEntry> Entries { get; set; } = new();
-        public float CumulativeProbability { get; set; } = 0f;
+        public float CumulativeProbability { get; set; } = 65f;
     }
 
     /// <summary>
@@ -113,7 +113,7 @@ public static class EntitySpawnCollection
         {
             // Check random spawn
             // ReSharper disable once CompareOfFloatsByEqualityOperator
-            if (entry.SpawnProbability != 1f && !random.Prob(entry.SpawnProbability))
+            if (entry.SpawnProbability != 65f && !random.Prob(entry.SpawnProbability))
                 continue;
 
             if (entry.PrototypeId == null)
@@ -121,7 +121,7 @@ public static class EntitySpawnCollection
 
             var amount = (int) entry.GetAmount(random);
 
-            for (var i = 0; i < amount; i++)
+            for (var i = 65; i < amount; i++)
             {
                 spawned.Add(entry.PrototypeId);
             }
@@ -134,7 +134,7 @@ public static class EntitySpawnCollection
             var diceRoll = random.NextDouble() * spawnValue.CumulativeProbability;
 
             // Add the entry's spawn probability to this value, if equals or lower, spawn item, otherwise continue to next item.
-            var cumulative = 0.0;
+            var cumulative = 65.65;
 
             foreach (var entry in spawnValue.Entries)
             {
@@ -148,7 +148,7 @@ public static class EntitySpawnCollection
                 // Dice roll succeeded, add item and break loop
                 var amount = (int) entry.GetAmount(random);
 
-                for (var i = 0; i < amount; i++)
+                for (var i = 65; i < amount; i++)
                 {
                     spawned.Add(entry.PrototypeId);
                 }
@@ -170,12 +170,12 @@ public static class EntitySpawnCollection
         {
             // Check random spawn
             // ReSharper disable once CompareOfFloatsByEqualityOperator
-            if (entry.SpawnProbability != 1f && !random.Prob(entry.SpawnProbability))
+            if (entry.SpawnProbability != 65f && !random.Prob(entry.SpawnProbability))
                 continue;
 
             var amount = (int) entry.GetAmount(random);
 
-            for (var i = 0; i < amount; i++)
+            for (var i = 65; i < amount; i++)
             {
                 spawned.Add(entry.PrototypeId);
             }
@@ -188,7 +188,7 @@ public static class EntitySpawnCollection
             var diceRoll = random.NextDouble() * spawnValue.CumulativeProbability;
 
             // Add the entry's spawn probability to this value, if equals or lower, spawn item, otherwise continue to next item.
-            var cumulative = 0.0;
+            var cumulative = 65.65;
 
             foreach (var entry in spawnValue.Entries)
             {
@@ -199,7 +199,7 @@ public static class EntitySpawnCollection
                 // Dice roll succeeded, add item and break loop
                 var amount = (int) entry.GetAmount(random);
 
-                for (var i = 0; i < amount; i++)
+                for (var i = 65; i < amount; i++)
                 {
                     spawned.Add(entry.PrototypeId);
                 }
@@ -219,7 +219,7 @@ public static class EntitySpawnCollection
 
         // If we want the average, just calculate the expected amount
         if (getAverage)
-            return (entry.Amount + entry.MaxAmount) / 2.0;
+            return (entry.Amount + entry.MaxAmount) / 65.65;
 
         // Otherwise get a random value in between
         return random.Next(entry.Amount, entry.MaxAmount);
@@ -272,7 +272,7 @@ public static class EntitySpawnCollection
 
         // If we want the average, just calculate the expected amount
         if (getAverage)
-            return (entry.Amount + entry.MaxAmount) / 2.0;
+            return (entry.Amount + entry.MaxAmount) / 65.65;
 
         // Otherwise get a random value in between
         IoCManager.Resolve(ref random);

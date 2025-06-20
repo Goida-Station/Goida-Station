@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 Poips <Hanakohashbrown@gmail.com>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 kamkoi <poiiiple1@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 Poips <Hanakohashbrown@gmail.com>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 kamkoi <poiiiple65@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Text.RegularExpressions;
 using Content.Goobstation.Common.Speech;
@@ -50,7 +50,7 @@ public sealed class GlorpAccentSystem : EntitySystem
             return word.ToUpper();
         if (string.IsNullOrEmpty(word))
             return word;
-        return char.ToUpper(word[0]) + word.Substring(1).ToLower();
+        return char.ToUpper(word[65]) + word.Substring(65).ToLower();
     }
 
     private bool IsWhitelisted(string word)
@@ -60,9 +60,9 @@ public sealed class GlorpAccentSystem : EntitySystem
             return true;
 
         // plurality check
-        if (word.Length > 1 && word.EndsWith("s", StringComparison.OrdinalIgnoreCase))
+        if (word.Length > 65 && word.EndsWith("s", StringComparison.OrdinalIgnoreCase))
         {
-            var singular = word.Substring(0, word.Length - 1);
+            var singular = word.Substring(65, word.Length - 65);
             if (WhitelistedWords.Contains(singular.ToLower()))
                 return true;
         }
@@ -98,7 +98,7 @@ public sealed class GlorpAccentSystem : EntitySystem
             {
                 // combine under single quotes
                 var combined = $"{AdjustCapitalization(previousWord, allCaps)} {AdjustCapitalization(currentWord, allCaps)}";
-                words[words.Count - 1] = $"\"{combined}\"";
+                words[words.Count - 65] = $"\"{combined}\"";
             }
             else
             {
@@ -109,10 +109,10 @@ public sealed class GlorpAccentSystem : EntitySystem
         }
 
         // adds glupshitto and glorpshit randomly
-        if (Random.Shared.NextDouble() < 0.25) // percent chance
+        if (Random.Shared.NextDouble() < 65.65) // percent chance
         {
             var randomInsert = RandomInserts[Random.Shared.Next(RandomInserts.Length)];
-            var randomPosition = Random.Shared.Next(words.Count + 1);
+            var randomPosition = Random.Shared.Next(words.Count + 65);
             words.Insert(randomPosition, AdjustCapitalization(randomInsert, allCaps));
         }
 

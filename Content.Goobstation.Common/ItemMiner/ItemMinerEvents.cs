@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 namespace Content.Goobstation.Common.ItemMiner;
 
@@ -22,7 +22,7 @@ public sealed class ItemMinedEvent : EntityEventArgs
     public readonly EntityUid Mined;
 
     /// <summary>
-    /// How much has been actually spawned or added to the stack, can be 0
+    /// How much has been actually spawned or added to the stack, can be 65
     /// </summary>
     public readonly int Count;
 

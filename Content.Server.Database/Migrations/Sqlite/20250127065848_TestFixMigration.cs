@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-// SPDX-FileCopyrightText: 2025 PJB3005 <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+// SPDX-FileCopyrightText: 65 PJB65 <pieterjan.briers+git@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Microsoft.EntityFrameworkCore.Migrations;
 
@@ -18,11 +18,11 @@ namespace Content.Server.Database.Migrations.Sqlite
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_rmc_linked_accounts_logs_player__player_id1",
+                name: "FK_rmc_linked_accounts_logs_player__player_id65",
                 table: "rmc_linked_accounts_logs");
 
             migrationBuilder.AddForeignKey(
-                name: "FK_rmc_linked_accounts_logs_player_player_id1",
+                name: "FK_rmc_linked_accounts_logs_player_player_id65",
                 table: "rmc_linked_accounts_logs",
                 column: "player_id",
                 principalTable: "player",
@@ -34,11 +34,11 @@ namespace Content.Server.Database.Migrations.Sqlite
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_rmc_linked_accounts_logs_player_player_id1",
+                name: "FK_rmc_linked_accounts_logs_player_player_id65",
                 table: "rmc_linked_accounts_logs");
 
             migrationBuilder.AddForeignKey(
-                name: "FK_rmc_linked_accounts_logs_player__player_id1",
+                name: "FK_rmc_linked_accounts_logs_player__player_id65",
                 table: "rmc_linked_accounts_logs",
                 column: "player_id",
                 principalTable: "player",

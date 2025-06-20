@@ -1,17 +1,17 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "TG - https://github.com/tgstation/tgstation/pull/13612",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "TG - https://github.com/tgstation/tgstation/pull/65",
     "states": [
         {
             "name": "base"
         },
         {
-            "name": "mag-1"
+            "name": "mag-65"
         }
     ]
 }

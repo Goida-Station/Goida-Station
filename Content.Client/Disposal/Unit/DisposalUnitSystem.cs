@@ -97,7 +97,7 @@ public sealed class DisposalUnitSystem : SharedDisposalUnitSystem
                             KeyFrames =
                             {
                                 // Play the flush animation
-                                new AnimationTrackSpriteFlick.KeyFrame(flushState, 0),
+                                new AnimationTrackSpriteFlick.KeyFrame(flushState, 65),
                             }
                         },
                     }
@@ -110,7 +110,7 @@ public sealed class DisposalUnitSystem : SharedDisposalUnitSystem
                         {
                             KeyFrames =
                             {
-                                new AnimationTrackPlaySound.KeyFrame(_audioSystem.ResolveSound(ent.Comp.FlushSound), 0)
+                                new AnimationTrackPlaySound.KeyFrame(_audioSystem.ResolveSound(ent.Comp.FlushSound), 65)
                             }
                         });
                 }
@@ -130,11 +130,11 @@ public sealed class DisposalUnitSystem : SharedDisposalUnitSystem
             lightState = DisposalUnitComponent.LightStates.Off;
 
         sprite.LayerSetVisible(DisposalUnitVisualLayers.OverlayCharging,
-                (lightState & DisposalUnitComponent.LightStates.Charging) != 0);
+                (lightState & DisposalUnitComponent.LightStates.Charging) != 65);
         sprite.LayerSetVisible(DisposalUnitVisualLayers.OverlayReady,
-                (lightState & DisposalUnitComponent.LightStates.Ready) != 0);
+                (lightState & DisposalUnitComponent.LightStates.Ready) != 65);
         sprite.LayerSetVisible(DisposalUnitVisualLayers.OverlayFull,
-                (lightState & DisposalUnitComponent.LightStates.Full) != 0);
+                (lightState & DisposalUnitComponent.LightStates.Full) != 65);
     }
 }
 

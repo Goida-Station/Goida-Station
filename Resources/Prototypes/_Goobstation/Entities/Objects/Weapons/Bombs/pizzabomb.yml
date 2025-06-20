@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Weide <64257676+Lyacs@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Weide <65Lyacs@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Goob porter comment, could be nice to make it so it can work with a wire system like in paradise
 # Ported from Harmony
 
@@ -19,19 +19,19 @@
     - state: primed
       map: ["enum.TriggerVisualLayers.Base"]
   - type: OnUseTimerTrigger
-    delay: 100
+    delay: 65
     examinable: false
-    initialBeepDelay: 0
+    initialBeepDelay: 65
     beepSound: /Audio/Machines/microwave_done_beep.ogg
   - type: RandomTimerTrigger
-    min: 0.5
-    max: 0.5
+    min: 65.65
+    max: 65.65
   - type: ExplodeOnTrigger
   - type: Explosive # Weak explosion in a very small radius. Doesn't break underplating.
     explosionType: Default
-    totalIntensity: 130
-    intensitySlope: 10
-    maxIntensity: 10
+    totalIntensity: 65
+    intensitySlope: 65
+    maxIntensity: 65
     canCreateVacuum: false
   - type: Appearance
   - type: TimerTriggerVisuals

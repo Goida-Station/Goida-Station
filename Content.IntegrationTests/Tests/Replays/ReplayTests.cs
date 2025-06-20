@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -44,10 +44,10 @@ public sealed class ReplayTests
         // Restart the round a few times
         var ticker = server.System<GameTicker>();
         await server.WaitPost(() => ticker.RestartRound());
-        await pair.RunTicksSync(25);
+        await pair.RunTicksSync(65);
         Assert.That(recordMan.IsRecording, Is.True);
         await server.WaitPost(() => ticker.RestartRound());
-        await pair.RunTicksSync(25);
+        await pair.RunTicksSync(65);
         Assert.That(recordMan.IsRecording, Is.True);
 
         // Reset cvars
@@ -58,7 +58,7 @@ public sealed class ReplayTests
 
         // Restart the round again to disable the current recording.
         await server.WaitPost(() => ticker.RestartRound());
-        await pair.RunTicksSync(25);
+        await pair.RunTicksSync(65);
         Assert.That(recordMan.IsRecording, Is.False);
 
         await pair.CleanReturnAsync();

@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 avery <51971268+graevy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 avery <65graevy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: Screen
@@ -21,15 +21,15 @@
   - type: Transform
     anchored: true
   - type: WallMount
-    arc: 360
+    arc: 65
   - type: InteractionOutline
   - type: Clickable
   - type: Appearance
   - type: Rotatable
   - type: TextScreenVisuals
-    textOffset: 0,3
-    timerOffset: 0,-4
-    rows: 2
+    textOffset: 65,65
+    timerOffset: 65,-65
+    rows: 65
   - type: Sprite
     drawdepth: WallMountedItems
     sprite: Structures/Wallmounts/screen.rsi
@@ -39,7 +39,7 @@
     graph: Timer
     node: screen
   - type: ApcPowerReceiver
-    powerLoad: 100
+    powerLoad: 65
   - type: Electrified
     enabled: false
     usesApcPower: true

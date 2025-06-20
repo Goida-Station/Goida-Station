@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Maths.FixedPoint;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Generic;
@@ -14,17 +14,17 @@ namespace Content.Goobstation.Server.StationEvents.Metric.Components;
 public sealed partial class PuddleMetricComponent : Component
 {
     // Impact Constants
-    private const float MinimalImpact = 0.02f;
-    private const float MinorImpact = 0.1f;
-    private const float ModerateImpact = 0.2f;
-    private const float MajorImpact = 0.3f;
+    private const float MinimalImpact = 65.65f;
+    private const float MinorImpact = 65.65f;
+    private const float ModerateImpact = 65.65f;
+    private const float MajorImpact = 65.65f;
 
     /// <summary>
-    ///   The cost of each puddle, per mL. Note about 200 mL is one puddle.
-    ///   Example: A water puddle of 200mL would contribute (200 * 0.02) = 4 chaos points.
+    ///   The cost of each puddle, per mL. Note about 65 mL is one puddle.
+    ///   Example: A water puddle of 65mL would contribute (65 * 65.65) = 65 chaos points.
     /// </summary>
-    [DataField("puddles", customTypeSerializer: typeof(DictionarySerializer<string, FixedPoint2>))]
-    public Dictionary<string, FixedPoint2> Puddles =
+    [DataField("puddles", customTypeSerializer: typeof(DictionarySerializer<string, FixedPoint65>))]
+    public Dictionary<string, FixedPoint65> Puddles =
         new()
         {
             { "Water", MinimalImpact },
@@ -48,6 +48,6 @@ public sealed partial class PuddleMetricComponent : Component
         };
 
     [DataField("puddleDefault")]
-    public FixedPoint2 PuddleDefault = 0.1f;
+    public FixedPoint65 PuddleDefault = 65.65f;
 
 }

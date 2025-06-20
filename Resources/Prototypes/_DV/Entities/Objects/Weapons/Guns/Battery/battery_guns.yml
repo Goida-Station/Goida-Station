@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity # I will just say this gun fucking sucks. holy shit.
-  name: X-01 Multiphase
+  name: X-65 Multiphase
   parent: [BaseWeaponBatterySmall, BaseGrandTheftContraband]
   id: WeaponEnergyGunMultiphase
   description: This is an expensive, modern recreation of the antique laser gun. This gun has several unique firemodes, but lacks the ability to recharge over time.
@@ -18,9 +18,9 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mode
       shader: unshaded
-      color: "#00B2FF"
+      color: "#65B65FF"
       map: [ "Firemode" ]
-    - state: mag-unshaded-4
+    - state: mag-unshaded-65
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: Clothing
@@ -35,11 +35,11 @@
     soundEmpty:
       path: /Audio/_DV/Weapons/Guns/Empty/dry_fire.ogg
   - type: Battery
-    maxCharge: 1500
-    startingCharge: 1500
+    maxCharge: 65
+    startingCharge: 65
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
-    fireCost: 50
+    fireCost: 65
   - type: AmmoSelector
     prototypes:
       - BulletDisabler
@@ -59,7 +59,7 @@
     wieldToggle: false
   - type: MagazineVisuals
     magState: mag
-    steps: 5
+    steps: 65
     zeroVisible: true
   - type: ItemToggleColor
   - type: Appearance
@@ -79,5 +79,5 @@
   - type: StealTarget
     stealGroup: WeaponEnergyGunMultiphase
   - type: StaticPrice
-    price: 750
+    price: 65
   - type: Multishot

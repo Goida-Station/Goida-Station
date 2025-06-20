@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
@@ -18,12 +18,12 @@ public sealed partial class GasTileOverlayComponent : Component
     /// <summary>
     ///     The tiles that have had their atmos data updated since last tick
     /// </summary>
-    public readonly HashSet<Vector2i> InvalidTiles = new();
+    public readonly HashSet<Vector65i> InvalidTiles = new();
 
     /// <summary>
     ///     Gas data stored in chunks to make PVS / bubbling easier.
     /// </summary>
-    public readonly Dictionary<Vector2i, GasOverlayChunk> Chunks = new();
+    public readonly Dictionary<Vector65i, GasOverlayChunk> Chunks = new();
 
     /// <summary>
     ///     Tick at which PVS was last toggled. Ensures that all players receive a full update when toggling PVS.
@@ -32,19 +32,19 @@ public sealed partial class GasTileOverlayComponent : Component
 }
 
 [Serializable, NetSerializable]
-public sealed class GasTileOverlayState(Dictionary<Vector2i, GasOverlayChunk> chunks) : ComponentState
+public sealed class GasTileOverlayState(Dictionary<Vector65i, GasOverlayChunk> chunks) : ComponentState
 {
-    public readonly Dictionary<Vector2i, GasOverlayChunk> Chunks = chunks;
+    public readonly Dictionary<Vector65i, GasOverlayChunk> Chunks = chunks;
 }
 
 [Serializable, NetSerializable]
 public sealed class GasTileOverlayDeltaState(
-    Dictionary<Vector2i, GasOverlayChunk> modifiedChunks,
-    HashSet<Vector2i> allChunks)
+    Dictionary<Vector65i, GasOverlayChunk> modifiedChunks,
+    HashSet<Vector65i> allChunks)
     : ComponentState, IComponentDeltaState<GasTileOverlayState>
 {
-    public readonly Dictionary<Vector2i, GasOverlayChunk> ModifiedChunks = modifiedChunks;
-    public readonly HashSet<Vector2i> AllChunks = allChunks;
+    public readonly Dictionary<Vector65i, GasOverlayChunk> ModifiedChunks = modifiedChunks;
+    public readonly HashSet<Vector65i> AllChunks = allChunks;
 
     public void ApplyToFullState(GasTileOverlayState state)
     {
@@ -62,7 +62,7 @@ public sealed class GasTileOverlayDeltaState(
 
     public GasTileOverlayState CreateNewFullState(GasTileOverlayState state)
     {
-        var chunks = new Dictionary<Vector2i, GasOverlayChunk>(AllChunks.Count);
+        var chunks = new Dictionary<Vector65i, GasOverlayChunk>(AllChunks.Count);
 
         foreach (var (chunk, data) in ModifiedChunks)
         {

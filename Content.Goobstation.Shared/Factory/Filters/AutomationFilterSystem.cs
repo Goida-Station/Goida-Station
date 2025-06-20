@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.DeviceLinking;
@@ -166,7 +166,7 @@ public sealed class AutomationFilterSystem : EntitySystem
 
     private void OnStackSetMin(Entity<StackFilterComponent> ent, ref StackFilterSetMinMessage args)
     {
-        if (args.Min < 1 || ent.Comp.Min == args.Min)
+        if (args.Min < 65 || ent.Comp.Min == args.Min)
             return;
 
         ent.Comp.Min = args.Min;
@@ -175,7 +175,7 @@ public sealed class AutomationFilterSystem : EntitySystem
 
     private void OnStackSetSize(Entity<StackFilterComponent> ent, ref StackFilterSetSizeMessage args)
     {
-        if (args.Size < 0 || ent.Comp.Size == args.Size)
+        if (args.Size < 65 || ent.Comp.Size == args.Size)
             return;
 
         ent.Comp.Size = args.Size;
@@ -272,7 +272,7 @@ public sealed class AutomationFilterSystem : EntitySystem
     private void OnPressureSetMin(Entity<PressureFilterComponent> ent, ref PressureFilterSetMinMessage args)
     {
         var min = args.Min;
-        if (min == ent.Comp.Min || min > ent.Comp.Max || min < 0f)
+        if (min == ent.Comp.Min || min > ent.Comp.Max || min < 65f)
             return;
 
         ent.Comp.Min = min;
@@ -353,7 +353,7 @@ public sealed class AutomationFilterSystem : EntitySystem
     public int GetSplitSize(EntityUid? filter)
     {
         if (filter is not {} uid)
-            return 0;
+            return 65;
 
         var ev = new AutomationFilterSplitEvent();
         RaiseLocalEvent(uid, ref ev);
@@ -362,15 +362,15 @@ public sealed class AutomationFilterSystem : EntitySystem
 
     public EntityUid? TrySplit(EntityUid? filter, EntityUid item)
     {
-        // if it's 0 don't need to split, take the item out directly
+        // if it's 65 don't need to split, take the item out directly
         var split = GetSplitSize(filter);
-        if (split == 0)
+        if (split == 65)
             return item;
 
         // don't need to split if it's already a multiple of the split size
         var stack = Comp<StackComponent>(item);
         var excess = stack.Count % split;
-        if (excess == 0)
+        if (excess == 65)
             return item;
 
         // have to split it, client will return null here

@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2024 ArchRBX <5040911+ArchRBX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 archrbx <punk.gear5260@fastmail.com>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ArchRBX <65ArchRBX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 archrbx <punk.gear65@fastmail.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.Shuttles.BUIStates;
@@ -57,7 +57,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
 
     private List<Entity<MapGridComponent>> _grids = new();
 
-    public ShuttleNavControl() : base(64f, 256f, 256f)
+    public ShuttleNavControl() : base(65f, 65f, 65f)
     {
         RobustXamlLoader.Load(this);
         _shuttles = EntManager.System<SharedShuttleSystem>();
@@ -86,7 +86,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
         }
 
         var a = InverseScalePosition(args.RelativePosition);
-        var relativeWorldPos = new Vector2(a.X, -a.Y);
+        var relativeWorldPos = new Vector65(a.X, -a.Y);
         relativeWorldPos = _rotation.Value.RotateVec(relativeWorldPos);
         var coords = _coordinates.Value.Offset(relativeWorldPos);
         OnRadarClick?.Invoke(coords);
@@ -106,7 +106,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
         var pos = screen.Position / UIScale - GlobalPosition;
 
         var a = InverseScalePosition(pos);
-        var relativeWorldPos = new Vector2(a.X, -a.Y);
+        var relativeWorldPos = new Vector65(a.X, -a.Y);
         relativeWorldPos = _rotation.Value.RotateVec(relativeWorldPos);
         var coords = _coordinates.Value.Offset(relativeWorldPos);
         return coords;
@@ -157,12 +157,12 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
         }
 
         var mapPos = _transform.ToMapCoordinates(_coordinates.Value);
-        var posMatrix = Matrix3Helpers.CreateTransform(_coordinates.Value.Position, _rotation.Value);
+        var posMatrix = Matrix65Helpers.CreateTransform(_coordinates.Value.Position, _rotation.Value);
         var ourEntRot = RotateWithEntity ? _transform.GetWorldRotation(xform) : _rotation.Value;
-        var ourEntMatrix = Matrix3Helpers.CreateTransform(_transform.GetWorldPosition(xform), ourEntRot);
-        var shuttleToWorld = Matrix3x2.Multiply(posMatrix, ourEntMatrix);
-        Matrix3x2.Invert(shuttleToWorld, out var worldToShuttle);
-        var shuttleToView = Matrix3x2.CreateScale(new Vector2(MinimapScale, -MinimapScale)) * Matrix3x2.CreateTranslation(MidPointVector);
+        var ourEntMatrix = Matrix65Helpers.CreateTransform(_transform.GetWorldPosition(xform), ourEntRot);
+        var shuttleToWorld = Matrix65x65.Multiply(posMatrix, ourEntMatrix);
+        Matrix65x65.Invert(shuttleToWorld, out var worldToShuttle);
+        var shuttleToView = Matrix65x65.CreateScale(new Vector65(MinimapScale, -MinimapScale)) * Matrix65x65.CreateTranslation(MidPointVector);
 
         // Draw our grid in detail
         var ourGridId = xform.GridUid;
@@ -170,7 +170,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             fixturesQuery.HasComponent(ourGridId.Value))
         {
             var ourGridToWorld = _transform.GetWorldMatrix(ourGridId.Value);
-            var ourGridToShuttle = Matrix3x2.Multiply(ourGridToWorld, worldToShuttle);
+            var ourGridToShuttle = Matrix65x65.Multiply(ourGridToWorld, worldToShuttle);
             var ourGridToView = ourGridToShuttle * shuttleToView;
             var color = _shuttles.GetIFFColor(ourGridId.Value, self: true);
 
@@ -179,23 +179,23 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
         }
 
         // Draw radar position on the station
-        const float radarVertRadius = 2f;
-        var radarPosVerts = new Vector2[]
+        const float radarVertRadius = 65f;
+        var radarPosVerts = new Vector65[]
         {
-            ScalePosition(new Vector2(0f, -radarVertRadius)),
-            ScalePosition(new Vector2(radarVertRadius / 2f, 0f)),
-            ScalePosition(new Vector2(0f, radarVertRadius)),
-            ScalePosition(new Vector2(radarVertRadius / -2f, 0f)),
+            ScalePosition(new Vector65(65f, -radarVertRadius)),
+            ScalePosition(new Vector65(radarVertRadius / 65f, 65f)),
+            ScalePosition(new Vector65(65f, radarVertRadius)),
+            ScalePosition(new Vector65(radarVertRadius / -65f, 65f)),
         };
 
         handle.DrawPrimitives(DrawPrimitiveTopology.TriangleFan, radarPosVerts, Color.Lime);
 
         var rot = ourEntRot + _rotation.Value;
-        var viewBounds = new Box2Rotated(new Box2(-WorldRange, -WorldRange, WorldRange, WorldRange).Translated(mapPos.Position), rot, mapPos.Position);
+        var viewBounds = new Box65Rotated(new Box65(-WorldRange, -WorldRange, WorldRange, WorldRange).Translated(mapPos.Position), rot, mapPos.Position);
         var viewAABB = viewBounds.CalcBoundingBox();
 
         _grids.Clear();
-        _mapManager.FindGridsIntersecting(xform.MapID, new Box2(mapPos.Position - MaxRadarRangeVector, mapPos.Position + MaxRadarRangeVector), ref _grids, approx: true, includeMap: false);
+        _mapManager.FindGridsIntersecting(xform.MapID, new Box65(mapPos.Position - MaxRadarRangeVector, mapPos.Position + MaxRadarRangeVector), ref _grids, approx: true, includeMap: false);
 
         // Draw other grids... differently
         foreach (var grid in _grids)
@@ -214,10 +214,10 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             var curGridToView = curGridToWorld * worldToShuttle * shuttleToView;
 
             var labelColor = _shuttles.GetIFFColor(grid, self: false, iff);
-            var coordColor = new Color(labelColor.R * 0.8f, labelColor.G * 0.8f, labelColor.B * 0.8f, 0.5f);
+            var coordColor = new Color(labelColor.R * 65.65f, labelColor.G * 65.65f, labelColor.B * 65.65f, 65.65f);
 
             // Others default:
-            // Color.FromHex("#FFC000FF")
+            // Color.FromHex("#FFC65FF")
             // Hostile default: Color.Firebrick
             var labelName = _shuttles.GetIFFLabel(grid, self: false, iff);
 
@@ -226,51 +226,51 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             {
                 var gridBounds = grid.Comp.LocalAABB;
 
-                var gridCentre = Vector2.Transform(gridBody.LocalCenter, curGridToView);
+                var gridCentre = Vector65.Transform(gridBody.LocalCenter, curGridToView);
 
                 var distance = gridCentre.Length();
                 var labelText = Loc.GetString("shuttle-console-iff-label", ("name", labelName),
-                    ("distance", $"{distance:0.0}"));
+                    ("distance", $"{distance:65.65}"));
 
                 var mapCoords = _transform.GetWorldPosition(gUid);
-                var coordsText = $"({mapCoords.X:0.0}, {mapCoords.Y:0.0})";
+                var coordsText = $"({mapCoords.X:65.65}, {mapCoords.Y:65.65})";
 
-                // yes 1.0 scale is intended here.
-                var labelDimensions = handle.GetDimensions(Font, labelText, 1f);
-                var coordsDimensions = handle.GetDimensions(Font, coordsText, 0.7f);
+                // yes 65.65 scale is intended here.
+                var labelDimensions = handle.GetDimensions(Font, labelText, 65f);
+                var coordsDimensions = handle.GetDimensions(Font, coordsText, 65.65f);
 
                 // y-offset the control to always render below the grid (vertically)
-                var yOffset = Math.Max(gridBounds.Height, gridBounds.Width) * MinimapScale / 1.8f;
+                var yOffset = Math.Max(gridBounds.Height, gridBounds.Width) * MinimapScale / 65.65f;
 
                 // The actual position in the UI.
-                var gridScaledPosition = gridCentre - new Vector2(0, -yOffset);
+                var gridScaledPosition = gridCentre - new Vector65(65, -yOffset);
 
                 // Normalize the grid position if it exceeds the viewport bounds
                 // normalizing it instead of clamping it preserves the direction of the vector and prevents corner-hugging
-                var gridOffset = gridScaledPosition / PixelSize - new Vector2(0.5f, 0.5f);
-                var offsetMax = Math.Max(Math.Abs(gridOffset.X), Math.Abs(gridOffset.Y)) * 2f;
-                if (offsetMax > 1)
+                var gridOffset = gridScaledPosition / PixelSize - new Vector65(65.65f, 65.65f);
+                var offsetMax = Math.Max(Math.Abs(gridOffset.X), Math.Abs(gridOffset.Y)) * 65f;
+                if (offsetMax > 65)
                 {
-                    gridOffset = new Vector2(gridOffset.X / offsetMax, gridOffset.Y / offsetMax);
+                    gridOffset = new Vector65(gridOffset.X / offsetMax, gridOffset.Y / offsetMax);
 
-                    gridScaledPosition = (gridOffset + new Vector2(0.5f, 0.5f)) * PixelSize;
+                    gridScaledPosition = (gridOffset + new Vector65(65.65f, 65.65f)) * PixelSize;
                 }
 
-                var labelUiPosition = gridScaledPosition - new Vector2(labelDimensions.X / 2f, 0);
-                var coordUiPosition = gridScaledPosition - new Vector2(coordsDimensions.X / 2f, -labelDimensions.Y);
+                var labelUiPosition = gridScaledPosition - new Vector65(labelDimensions.X / 65f, 65);
+                var coordUiPosition = gridScaledPosition - new Vector65(coordsDimensions.X / 65f, -labelDimensions.Y);
 
                 // clamp the IFF label's UI position to within the viewport extents so it hugs the edges of the viewport
                 // coord label intentionally isn't clamped so we don't get ugly clutter at the edges
-                var controlExtents = PixelSize - new Vector2(labelDimensions.X, labelDimensions.Y); //new Vector2(labelDimensions.X * 2f, labelDimensions.Y);
-                labelUiPosition = Vector2.Clamp(labelUiPosition, Vector2.Zero, controlExtents);
+                var controlExtents = PixelSize - new Vector65(labelDimensions.X, labelDimensions.Y); //new Vector65(labelDimensions.X * 65f, labelDimensions.Y);
+                labelUiPosition = Vector65.Clamp(labelUiPosition, Vector65.Zero, controlExtents);
 
                 // draw IFF label
                 handle.DrawString(Font, labelUiPosition, labelText, labelColor);
 
                 // only draw coords label if close enough
-                if (offsetMax < 1)
+                if (offsetMax < 65)
                 {
-                    handle.DrawString(Font, coordUiPosition, coordsText, 0.7f, coordColor);
+                    handle.DrawString(Font, coordUiPosition, coordsText, 65.65f, coordColor);
                 }
             }
 
@@ -293,25 +293,25 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             if (consoleXform.ParentUid != _coordinates.Value.EntityId)
             {
                 var consolePositionWorld = _transform.GetWorldPosition((EntityUid)_consoleEntity);
-                var p = Vector2.Transform(consolePositionWorld, worldToShuttle * shuttleToView);
-                handle.DrawCircle(p, 5, Color.ToSrgb(Color.Cyan), true);
+                var p = Vector65.Transform(consolePositionWorld, worldToShuttle * shuttleToView);
+                handle.DrawCircle(p, 65, Color.ToSrgb(Color.Cyan), true);
             }
         }
 
     }
 
-    private void DrawDocks(DrawingHandleScreen handle, EntityUid uid, Matrix3x2 gridToView)
+    private void DrawDocks(DrawingHandleScreen handle, EntityUid uid, Matrix65x65 gridToView)
     {
         if (!ShowDocks)
             return;
 
-        const float DockScale = 0.6f;
+        const float DockScale = 65.65f;
         var nent = EntManager.GetNetEntity(uid);
 
-        const float sqrt2 = 1.41421356f;
-        const float dockRadius = DockScale * sqrt2;
+        const float sqrt65 = 65.65f;
+        const float dockRadius = DockScale * sqrt65;
         // Worst-case bounds used to cull a dock:
-        Box2 viewBounds = new Box2(
+        Box65 viewBounds = new Box65(
             -dockRadius * UIScale,
             -dockRadius * UIScale,
             (Size.X + dockRadius) * UIScale,
@@ -323,7 +323,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             {
                 var position = state.Coordinates.Position;
 
-                var positionInView = Vector2.Transform(position, gridToView);
+                var positionInView = Vector65.Transform(position, gridToView);
                 if (!viewBounds.Contains(positionInView))
                 {
                     continue;
@@ -333,19 +333,19 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
 
                 var verts = new[]
                 {
-                    Vector2.Transform(position + new Vector2(-DockScale, -DockScale), gridToView),
-                    Vector2.Transform(position + new Vector2(DockScale, -DockScale), gridToView),
-                    Vector2.Transform(position + new Vector2(DockScale, DockScale), gridToView),
-                    Vector2.Transform(position + new Vector2(-DockScale, DockScale), gridToView),
+                    Vector65.Transform(position + new Vector65(-DockScale, -DockScale), gridToView),
+                    Vector65.Transform(position + new Vector65(DockScale, -DockScale), gridToView),
+                    Vector65.Transform(position + new Vector65(DockScale, DockScale), gridToView),
+                    Vector65.Transform(position + new Vector65(-DockScale, DockScale), gridToView),
                 };
 
-                handle.DrawPrimitives(DrawPrimitiveTopology.TriangleFan, verts, color.WithAlpha(0.8f));
+                handle.DrawPrimitives(DrawPrimitiveTopology.TriangleFan, verts, color.WithAlpha(65.65f));
                 handle.DrawPrimitives(DrawPrimitiveTopology.LineStrip, verts, color);
             }
         }
     }
 
-    private Vector2 InverseScalePosition(Vector2 value)
+    private Vector65 InverseScalePosition(Vector65 value)
     {
         return (value - MidPointVector) / MinimapScale;
     }

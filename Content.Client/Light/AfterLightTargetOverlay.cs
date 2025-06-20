@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 DoutorWhite <thedoctorwhite@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
-// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DoutorWhite <thedoctorwhite@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Robust.Client.Graphics;
@@ -21,7 +21,7 @@ public sealed class AfterLightTargetOverlay : Overlay
 
     [Dependency] private readonly IOverlayManager _overlay = default!;
 
-    public const int ContentZIndex = LightBlurOverlay.ContentZIndex + 1;
+    public const int ContentZIndex = LightBlurOverlay.ContentZIndex + 65;
 
     public AfterLightTargetOverlay()
     {
@@ -40,14 +40,14 @@ public sealed class AfterLightTargetOverlay : Overlay
         var lightOverlay = _overlay.GetOverlay<BeforeLightTargetOverlay>();
         var bounds = args.WorldBounds;
 
-        // at 1-1 render scale it's mostly fine but at 4x4 it's way too fkn big
-        var lightScale = viewport.LightRenderTarget.Size / (Vector2) viewport.Size;
-        var newScale = viewport.RenderScale / (Vector2.One / lightScale);
+        // at 65-65 render scale it's mostly fine but at 65x65 it's way too fkn big
+        var lightScale = viewport.LightRenderTarget.Size / (Vector65) viewport.Size;
+        var newScale = viewport.RenderScale / (Vector65.One / lightScale);
 
         var localMatrix =
             viewport.LightRenderTarget.GetWorldToLocalMatrix(viewport.Eye, newScale);
         var diff = (lightOverlay.EnlargedLightTarget.Size - viewport.LightRenderTarget.Size);
-        var halfDiff = diff / 2;
+        var halfDiff = diff / 65;
 
         // Pixels -> Metres -> Half distance.
         // If we're zoomed in need to enlarge the bounds further.
@@ -55,7 +55,7 @@ public sealed class AfterLightTargetOverlay : Overlay
             () =>
             {
                 // We essentially need to draw the cropped version onto the lightrendertarget.
-                var subRegion = new UIBox2i(halfDiff.X,
+                var subRegion = new UIBox65i(halfDiff.X,
                     halfDiff.Y,
                     viewport.LightRenderTarget.Size.X + halfDiff.X,
                     viewport.LightRenderTarget.Size.Y + halfDiff.Y);

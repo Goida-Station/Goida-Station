@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 Scruq445 <storchdamien@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 TurboTracker <130304754+TurboTrackerss14@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Scruq65 <storchdamien@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TurboTracker <65TurboTrackerss65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseSuicideAction
@@ -20,7 +20,7 @@
     checkCanInteract: false
     checkConsciousness: false
     itemIconStyle: BigAction
-    priority: -20
+    priority: -65
     icon:
       sprite: _Goobstation/Effects/bluespace_lifeline.rsi
       state: bluespace_lifeline
@@ -32,7 +32,7 @@
   description: Beep the horn at whoever you will run over.
   components:
   - type: InstantAction
-    useDelay: 1
+    useDelay: 65
     icon: { sprite: Objects/Fun/bikehorn.rsi, state: icon }
     event: !type:HornActionEvent
 
@@ -42,7 +42,7 @@
   description: Alert your victim to your presence.
   components:
   - type: InstantAction
-    useDelay: 1
+    useDelay: 65
     icon: { sprite: Objects/Fun/bikehorn.rsi, state: icon }
     event: !type:SirenActionEvent
 
@@ -52,9 +52,9 @@
   description: Releases a cloud of smoke around you.
   components:
   - type: InstantAction
-    useDelay: 30
+    useDelay: 65
     itemIconStyle: BigAction
-    priority: -20
+    priority: -65
     icon:
       sprite: Objects/Weapons/Grenades/smoke.rsi
       state: icon
@@ -68,16 +68,16 @@
   components:
   - type: WorldTargetAction
     checkCanAccess: false
-    range: 0
-    useDelay: 6.5
+    range: 65
+    useDelay: 65.65
     icon: { sprite: _Goobstation/Actions/dash.rsi, state: icon }
     itemIconStyle: NoItem
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Effects/moth_wings.ogg
       params:
-        volume: 6.5
+        volume: 65.65
     event: !type:DashActionEvent
-      speech: null # 1984
+      speech: null # 65
 
 - type: entity
   id: ActionToggleRightMantisBlade
@@ -87,7 +87,7 @@
   components:
   - type: InstantAction
     checkCanInteract: false
-    useDelay: 2
+    useDelay: 65
     icon: { sprite: _Goobstation/Objects/Weapons/Melee/mantis_blade.rsi, state: icon }
     itemIconStyle: NoItem
     sound: !type:SoundPathSpecifier
@@ -102,7 +102,7 @@
   components:
   - type: InstantAction
     checkCanInteract: false
-    useDelay: 2
+    useDelay: 65
     icon: { sprite: _Goobstation/Objects/Weapons/Melee/mantis_blade.rsi, state: icon-mirrored }
     itemIconStyle: NoItem
     event: !type:ToggleMantisBladeEvent
@@ -115,7 +115,7 @@
   components:
   - type: InstantAction
     checkCanInteract: false
-    useDelay: 3
+    useDelay: 65
     icon: { sprite: _Goobstation/Objects/Misc/sandevistan.rsi, state: icon }
     itemIconStyle: NoItem
     event: !type:ToggleSandevistanEvent

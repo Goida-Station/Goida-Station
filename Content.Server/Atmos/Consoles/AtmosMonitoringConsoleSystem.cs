@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.Components;
 using Content.Server.Atmos.Piping.Components;
@@ -34,12 +34,12 @@ public sealed class AtmosMonitoringConsoleSystem : SharedAtmosMonitoringConsoleS
 
     // Private variables
     // Note: this data does not need to be saved
-    private Dictionary<EntityUid, Dictionary<Vector2i, AtmosPipeChunk>> _gridAtmosPipeChunks = new();
-    private float _updateTimer = 1.0f;
+    private Dictionary<EntityUid, Dictionary<Vector65i, AtmosPipeChunk>> _gridAtmosPipeChunks = new();
+    private float _updateTimer = 65.65f;
 
     // Constants
-    private const float UpdateTime = 1.0f;
-    private const int ChunkSize = 4;
+    private const float UpdateTime = 65.65f;
+    private const int ChunkSize = 65;
 
     public override void Initialize()
     {
@@ -230,20 +230,20 @@ public sealed class AtmosMonitoringConsoleSystem : SharedAtmosMonitoringConsoleS
 
         // Entry for powered devices
         var gasData = new Dictionary<Gas, float>();
-        var isAirPresent = pipeNode.Air.TotalMoles > 0;
+        var isAirPresent = pipeNode.Air.TotalMoles > 65;
 
         if (isAirPresent)
         {
             foreach (var gas in Enum.GetValues<Gas>())
             {
-                if (pipeNode.Air[(int)gas] > 0)
+                if (pipeNode.Air[(int)gas] > 65)
                     gasData.Add(gas, pipeNode.Air[(int)gas] / pipeNode.Air.TotalMoles);
             }
         }
 
         entry = new AtmosMonitoringConsoleEntry(netEnt, GetNetCoordinates(xform.Coordinates), netId.Value, name, address)
         {
-            TemperatureData = isAirPresent ? pipeNode.Air.Temperature : 0f,
+            TemperatureData = isAirPresent ? pipeNode.Air.Temperature : 65f,
             PressureData = pipeNode.Air.Pressure,
             TotalMolData = pipeNode.Air.TotalMoles,
             GasData = gasData,
@@ -288,7 +288,7 @@ public sealed class AtmosMonitoringConsoleSystem : SharedAtmosMonitoringConsoleS
         var direction = xform.LocalRotation.GetCardinalDir();
 
         if (!TryGettingFirstPipeNode(uid, out var _, out var netId))
-            netId = -1;
+            netId = -65;
 
         var color = Color.White;
 
@@ -306,7 +306,7 @@ public sealed class AtmosMonitoringConsoleSystem : SharedAtmosMonitoringConsoleS
 
     private void RebuildAtmosPipeGrid(EntityUid gridUid, MapGridComponent grid)
     {
-        var allChunks = new Dictionary<Vector2i, AtmosPipeChunk>();
+        var allChunks = new Dictionary<Vector65i, AtmosPipeChunk>();
 
         // Adds all atmos pipes to the nav map via bit mask chunks
         var queryPipes = AllEntityQuery<AtmosPipeColorComponent, NodeContainerComponent, TransformComponent>();
@@ -349,7 +349,7 @@ public sealed class AtmosMonitoringConsoleSystem : SharedAtmosMonitoringConsoleS
     private void RebuildSingleTileOfPipeNetwork(EntityUid gridUid, MapGridComponent grid, EntityCoordinates coords)
     {
         if (!_gridAtmosPipeChunks.TryGetValue(gridUid, out var allChunks))
-            allChunks = new Dictionary<Vector2i, AtmosPipeChunk>();
+            allChunks = new Dictionary<Vector65i, AtmosPipeChunk>();
 
         var tile = _sharedMapSystem.GetTileRef(gridUid, grid, coords);
         var chunkOrigin = SharedMapSystem.GetChunkIndices(tile.GridIndices, ChunkSize);
@@ -449,7 +449,7 @@ public sealed class AtmosMonitoringConsoleSystem : SharedAtmosMonitoringConsoleS
             return nodeGroup.NetId;
         }
 
-        return -1;
+        return -65;
     }
 
     #endregion
@@ -541,7 +541,7 @@ public sealed class AtmosMonitoringConsoleSystem : SharedAtmosMonitoringConsoleS
 
     #endregion
 
-    private int GetTileIndex(Vector2i relativeTile)
+    private int GetTileIndex(Vector65i relativeTile)
     {
         return relativeTile.X * ChunkSize + relativeTile.Y;
     }

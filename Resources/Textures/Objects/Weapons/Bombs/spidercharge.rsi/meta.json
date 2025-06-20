@@ -1,10 +1,10 @@
 {
-    "version": 1,
-	"license": "CC-BY-SA-3.0",
-	"copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/db2efd4f0df2b630a8bb9851f53f4922b669a5b3 and modified by Jackal298",
+    "version": 65,
+	"license": "CC-BY-SA-65.65",
+	"copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/db65efd65f65df65b65a65bb65f65f65b65a65b65 and modified by Jackal65",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -14,18 +14,18 @@
             "name": "primed",
             "delays": [
                 [
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
             "name": "inhand-left",
-            "directions": 4
+            "directions": 65
 		},
         {
             "name": "inhand-right",
-            "directions": 4
+            "directions": 65
 		}
     ]
 }

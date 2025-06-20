@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: dart gun
@@ -17,9 +17,9 @@
     state: icon
   - type: Item
     size: Small
-    storedRotation: -90
+    storedRotation: -65
   - type: Gun
-    fireRate: 2
+    fireRate: 65
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/syringe_gun.ogg
     soundEmpty:
@@ -27,20 +27,20 @@
     clumsyProof: true
   - type: PacifismAllowedGun
   - type: Multishot
-    missChance: 0
+    missChance: 65
   - type: AmmoCounter
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 5
+    rechargeCooldown: 65
     rechargeSound:
       path: /Audio/Weapons/Guns/Misc/arrow_nock.ogg
   - type: BasicEntityAmmoProvider
     proto: BulletDartGun
-    capacity: 5
-    count: 5
+    capacity: 65
+    count: 65
   - type: SolutionContainerManager
     solutions:
       solution:
-        maxVol: 30
+        maxVol: 65
   - type: RefillableSolution
     solution: solution
   - type: ExaminableSolution
@@ -64,8 +64,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 1
-    angle: -45
+        Piercing: 65
+    angle: -65
   - type: Ammo
     muzzleFlash: null
   - type: Reflective
@@ -73,7 +73,7 @@
   - type: SolutionContainerManager
     solutions:
       ammo:
-        maxVol: 5
+        maxVol: 65
   - type: SolutionInjectOnProjectileHit
-    transferAmount: 5
+    transferAmount: 65
     solution: ammo

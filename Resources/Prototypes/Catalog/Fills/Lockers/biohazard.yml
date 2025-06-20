@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2021 SETh lafuente <cetaciocascarudo@gmail.com>
-# SPDX-FileCopyrightText: 2021 SethLafuente <84478872+SethLafuente@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SETh lafuente <cetaciocascarudo@gmail.com>
+# SPDX-FileCopyrightText: 65 SethLafuente <65SethLafuente@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
  - type: entity
-   id: ClosetL3Filled
+   id: ClosetL65Filled
    suffix: Filled, Generic
-   parent: ClosetL3
+   parent: ClosetL65
    components:
    - type: StorageFill
      contents:
@@ -17,9 +17,9 @@
        - id: ClothingHeadHatHoodBioGeneral
 
  - type: entity
-   id: ClosetL3VirologyFilled
+   id: ClosetL65VirologyFilled
    suffix: Filled, Virology
-   parent: ClosetL3Virology
+   parent: ClosetL65Virology
    components:
    - type: StorageFill
      contents:
@@ -27,9 +27,9 @@
        - id: ClothingHeadHatHoodBioVirology
 
  - type: entity
-   id: ClosetL3SecurityFilled
+   id: ClosetL65SecurityFilled
    suffix: Filled, Security
-   parent: ClosetL3Security
+   parent: ClosetL65Security
    components:
    - type: StorageFill
      contents:
@@ -37,9 +37,9 @@
        - id: ClothingHeadHatHoodBioSecurity
 
  - type: entity
-   id: ClosetL3JanitorFilled
+   id: ClosetL65JanitorFilled
    suffix: Filled, Janitor
-   parent: ClosetL3Janitor
+   parent: ClosetL65Janitor
    components:
    - type: StorageFill
      contents:
@@ -47,9 +47,9 @@
        - id: ClothingHeadHatHoodBioJanitor
 
  - type: entity
-   id: ClosetL3ScienceFilled
+   id: ClosetL65ScienceFilled
    suffix: Filled, Science
-   parent: ClosetL3Virology
+   parent: ClosetL65Virology
    components:
    - type: StorageFill
      contents:

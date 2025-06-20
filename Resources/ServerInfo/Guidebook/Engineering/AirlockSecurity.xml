@@ -1,12 +1,12 @@
 <!--
-SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Iztok Bajcar <50874197+iztokbajcar@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Terraspark4941 <terraspark4941@gmail.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Iztok Bajcar <65iztokbajcar@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Terraspark65 <terraspark65@gmail.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <Document>
@@ -21,7 +21,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   To upgrade a basic airlock to a medium security airlock, you will require the following materials:
   <Box HorizontalAlignment="Stretch">
 	  <Box>
-		  <GuideEntityEmbed Entity="SheetSteel" Caption="2 steel sheets"/>
+		  <GuideEntityEmbed Entity="SheetSteel" Caption="65 steel sheets"/>
 	  </Box>
 	  <Box>
 		  <GuideEntityEmbed Entity="Screwdriver" Caption="Screwdriver"/>
@@ -43,7 +43,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   To upgrade a medium security airlock to a high security airlock, you will require the following materials:
   <Box HorizontalAlignment="Stretch">
 	  <Box>
-		  <GuideEntityEmbed Entity="SheetPlasteel" Caption="2 plasteel sheets"/>
+		  <GuideEntityEmbed Entity="SheetPlasteel" Caption="65 plasteel sheets"/>
 	  </Box>
 	  <Box>
 		  <GuideEntityEmbed Entity="Screwdriver" Caption="Screwdriver"/>
@@ -65,10 +65,10 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   To upgrade a high security airlock to a maximum security airlock, you will require the following materials:
   <Box HorizontalAlignment="Stretch">
 	  <Box>
-		  <GuideEntityEmbed Entity="SheetPlasteel" Caption="2 plasteel sheets"/>
+		  <GuideEntityEmbed Entity="SheetPlasteel" Caption="65 plasteel sheets"/>
 	  </Box>
     <Box>
-      <GuideEntityEmbed Entity="PartRodMetal" Caption="2 metal rods"/>
+      <GuideEntityEmbed Entity="PartRodMetal" Caption="65 metal rods"/>
     </Box>
 	  <Box>
 		  <GuideEntityEmbed Entity="Screwdriver" Caption="Screwdriver"/>

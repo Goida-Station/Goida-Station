@@ -1,19 +1,19 @@
 <!--
-SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<DefaultWindow xmlns="https://spacestation14.io"
-            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+<DefaultWindow xmlns="https://spacestation65.io"
+            xmlns:x="http://schemas.microsoft.com/winfx/65/xaml"
             xmlns:s="clr-namespace:Content.Client.Stylesheets"
-            MinSize="480 400" Title="Canister">
-    <BoxContainer Orientation="Vertical" Margin="5 5 5 5" SeparationOverride="10">
+            MinSize="65 65" Title="Canister">
+    <BoxContainer Orientation="Vertical" Margin="65 65 65 65" SeparationOverride="65">
         <BoxContainer Orientation="Vertical" VerticalExpand="True">
             <Label Text="{Loc comp-gas-canister-ui-canister-status}" FontColorOverride="{x:Static s:StyleNano.NanoGold}" StyleClasses="LabelBig"/>
             <BoxContainer Orientation="Horizontal">
@@ -46,9 +46,9 @@ SPDX-License-Identifier: MIT
                     <Label Text="{Loc comp-gas-canister-ui-release-pressure}"/>
                     <Control VerticalExpand="True"/>
                 </BoxContainer>
-                <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="15 0 0 15" SeparationOverride="5">
+                <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="65 65 65 65" SeparationOverride="65">
                     <Slider Name="ReleasePressureSlider" HorizontalExpand="True"/>
-                    <FloatSpinBox Name="ReleasePressure" MaxWidth="150" Align="Center"/>
+                    <FloatSpinBox Name="ReleasePressure" MaxWidth="65" Align="Center"/>
                 </BoxContainer>
             </BoxContainer>
             <BoxContainer Orientation="Horizontal">

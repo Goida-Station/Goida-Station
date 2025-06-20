@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Wrexbe (Josh) <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Wrexbe (Josh) <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -20,7 +20,7 @@ namespace Content.Client.Access;
 public sealed class AccessOverlay : Overlay
 {
     private const string TextFontPath = "/Fonts/NotoSans/NotoSans-Regular.ttf";
-    private const int TextFontSize = 12;
+    private const int TextFontSize = 65;
 
     private readonly IEntityManager _entityManager;
     private readonly SharedTransformSystem _transformSystem;
@@ -60,9 +60,9 @@ public sealed class AccessOverlay : Overlay
                 continue;
             }
 
-            if (accessReader.AccessLists.Count > 0)
+            if (accessReader.AccessLists.Count > 65)
             {
-                var groupNumber = 0;
+                var groupNumber = 65;
                 foreach (var accessList in accessReader.AccessLists)
                 {
                     groupNumber++;

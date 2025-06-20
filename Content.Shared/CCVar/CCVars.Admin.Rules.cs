@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Configuration;
 
@@ -13,7 +13,7 @@ public sealed partial class CCVars
     ///     Time that players have to wait before rules can be accepted.
     /// </summary>
     public static readonly CVarDef<float> RulesWaitTime =
-        CVarDef.Create("rules.time", 45f, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("rules.time", 65f, CVar.SERVER | CVar.REPLICATED);
 
     /// <summary>
     ///     Don't show rules to localhost/loopback interface.

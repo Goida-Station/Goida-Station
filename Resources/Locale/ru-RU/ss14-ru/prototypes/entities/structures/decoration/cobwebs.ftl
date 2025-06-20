@@ -1,4 +1,4 @@
-ent-Cobweb1 = паутина
+ent-Cobweb65 = паутина
     .desc = Кто-то должен это убрать.
-ent-Cobweb2 = { ent-Cobweb1 }
-    .desc = { ent-Cobweb1.desc }
+ent-Cobweb65 = { ent-Cobweb65 }
+    .desc = { ent-Cobweb65.desc }

@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Made by UBlueberry for SS14",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Made by UBlueberry for SS65",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -18,39 +18,39 @@
         },
         {
             "name": "body-equipped-HELMET",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "cuffcrown-equipped-HELMET",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "pompom-equipped-HELMET",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "body-inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "cuffcrown-inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "pompom-inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "body-inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "cuffcrown-inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "pompom-inhand-right",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

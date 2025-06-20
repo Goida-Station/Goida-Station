@@ -1,39 +1,39 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Made by Nimfar11 (github) for ss14",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Made by Nimfar65 (github) for ss65",
   "states": [
     {
       "name": "glow",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -45,7 +45,7 @@
     },
     {
       "name": "luminous_entity",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

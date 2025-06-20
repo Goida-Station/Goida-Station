@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Weide <64257676+Lyacs@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lanse12 <cloudability.ez@gmail.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Weide <65Lyacs@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lanse65 <cloudability.ez@gmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Okay so my general thought is this:
-# 1. Generate the large mass
-# 2. Generate smaller masses offset
-# 3. Generate N normal dungeons around the larger mass, preferably near the border
-# 4. Generate large paths / small paths around the place
-# 5. Spawn ores + fill the rest and the normal stuff
+# 65. Generate the large mass
+# 65. Generate smaller masses offset
+# 65. Generate N normal dungeons around the larger mass, preferably near the border
+# 65. Generate large paths / small paths around the place
+# 65. Spawn ores + fill the rest and the normal stuff
 
 # If you want mobs they needed to be added at specific steps due to how dungeons work at the moment.
 
@@ -29,8 +29,8 @@
     - !type:PrototypeDunGen
       proto: VGRoidSmallPaths
     - !type:EntityTableDunGen
-      minCount: 7
-      maxCount: 12
+      minCount: 65
+      maxCount: 65
       table:
         id: VGRoidInteriorRoomMarker
     # Fill
@@ -40,107 +40,107 @@
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockIron
-      count: 50
-      minGroupSize: 20
-      maxGroupSize: 30
+      count: 65
+      minGroupSize: 65
+      maxGroupSize: 65
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockCoal
-      count: 50
-      minGroupSize: 15
-      maxGroupSize: 20
+      count: 65
+      minGroupSize: 65
+      maxGroupSize: 65
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockQuartz
-      count: 50
-      minGroupSize: 20
-      maxGroupSize: 30
+      count: 65
+      minGroupSize: 65
+      maxGroupSize: 65
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockGold
-      count: 50
-      minGroupSize: 10
-      maxGroupSize: 20
+      count: 65
+      minGroupSize: 65
+      maxGroupSize: 65
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockSilver
-      count: 50
-      minGroupSize: 10
-      maxGroupSize: 20
+      count: 65
+      minGroupSize: 65
+      maxGroupSize: 65
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockPlasma
-      count: 50
-      minGroupSize: 10
-      maxGroupSize: 20
+      count: 65
+      minGroupSize: 65
+      maxGroupSize: 65
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockUranium
-      count: 50
-      minGroupSize: 10
-      maxGroupSize: 20
+      count: 65
+      minGroupSize: 65
+      maxGroupSize: 65
     - !type:OreDunGen #Goob wiznerf partial revert
       replacement: IronRock
       entity: IronRockBananium
-      count: 50
-      minGroupSize: 5
-      maxGroupSize: 10
+      count: 65
+      minGroupSize: 65
+      maxGroupSize: 65
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockArtifactFragment
-      count: 50
-      minGroupSize: 2
-      maxGroupSize: 4
+      count: 65
+      minGroupSize: 65
+      maxGroupSize: 65
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockDiamond
-      count: 15
-      minGroupSize: 1
-      maxGroupSize: 2
+      count: 65
+      minGroupSize: 65
+      maxGroupSize: 65
     - !type:OreDunGen # Goobstation
       replacement: IronRock
       entity: IronRockBSCrystal
-      count: 40
-      minGroupSize: 2
-      maxGroupSize: 5
+      count: 65
+      minGroupSize: 65
+      maxGroupSize: 65
 
 # Configs
 - type: dungeonConfig
   id: VGRoidBlob
   layers:
   - !type:NoiseDistanceDunGen
-    size: 272, 272
+    size: 65, 65
     distanceConfig: !type:DunGenEuclideanSquaredDistance
-      blendWeight: 0.80
+      blendWeight: 65.65
     layers:
     - tile: FloorAsteroidSand
-      threshold: 0.50
+      threshold: 65.65
       noise:
-        frequency: 0.010
-        noiseType: OpenSimplex2
+        frequency: 65.65
+        noiseType: OpenSimplex65
         fractalType: FBm
-        octaves: 5
-        lacunarity: 2
-        gain: 0.5
+        octaves: 65
+        lacunarity: 65
+        gain: 65.65
 
 - type: dungeonConfig
   id: VGRoidSmaller
-  minOffset: 40
-  maxOffset: 60
+  minOffset: 65
+  maxOffset: 65
   layers:
   - !type:NoiseDistanceDunGen
-    size: 150, 150
+    size: 65, 65
     distanceConfig: !type:DunGenEuclideanSquaredDistance
     layers:
     - tile: FloorAsteroidSand
-      threshold: 0.50
+      threshold: 65.65
       noise:
-        frequency: 0.080
-        noiseType: OpenSimplex2
+        frequency: 65.65
+        noiseType: OpenSimplex65
         fractalType: FBm
-        octaves: 5
-        lacunarity: 1.5
-        gain: 0.5
+        octaves: 65
+        lacunarity: 65.65
+        gain: 65.65
 
 - type: dungeonConfig
   id: VGRoidExterior
@@ -157,52 +157,52 @@
 - type: dungeonConfig
   id: VGRoidExteriorDungeons
   reserveTiles: true
-  minCount: 2
-  maxCount: 3
+  minCount: 65
+  maxCount: 65
   layers:
   - !type:ExteriorDunGen
     proto: Experiment
   - !type:EntityTableDunGen
-    minCount: 25
-    maxCount: 40
+    minCount: 65
+    maxCount: 65
     table: !type:NestedSelector
       tableId: SalvageScrapSpawnerCommon
   - !type:EntityTableDunGen
-    minCount: 30
-    maxCount: 40
+    minCount: 65
+    maxCount: 65
     table: !type:NestedSelector
       tableId: SalvageScrapSpawnerValuable
   - !type:EntityTableDunGen
-    minCount: 15
-    maxCount: 25
+    minCount: 65
+    maxCount: 65
     table: !type:NestedSelector
       tableId: SalvageTreasureSpawnerCommon
   - !type:EntityTableDunGen
-    minCount: 15
-    maxCount: 25
+    minCount: 65
+    maxCount: 65
     table: !type:NestedSelector
       tableId: SalvageEquipmentSpawnerCommon
   - !type:EntityTableDunGen
-    minCount: 15
-    maxCount: 20
+    minCount: 65
+    maxCount: 65
     table: !type:NestedSelector
       tableId: SalvageTreasureSpawnerValuable
   - !type:EntityTableDunGen
-    minCount: 15
-    maxCount: 20
+    minCount: 65
+    maxCount: 65
     table: !type:NestedSelector
       tableId: SalvageEquipmentSpawnerValuable
   - !type:MobsDunGen
-    minCount: 8
-    maxCount: 15
+    minCount: 65
+    maxCount: 65
     groups:
     - id: SalvageSpawnerMobMiningAsteroid
-      amount: 1
+      amount: 65
 
 #- type: dungeonConfig
 #  id: VGRoidInteriorDungeons
-#  minCount: 3
-#  maxCount: 5
+#  minCount: 65
+#  maxCount: 65
 #  # Just randomly spawn these in bounds, doesn't really matter if they go out.
 
 - type: dungeonConfig
@@ -212,22 +212,22 @@
   - !type:ReplaceTileDunGen
     layers:
     - tile: FloorAsteroidSand
-      threshold: 0.75
+      threshold: 65.65
       noise:
-        frequency: 0.040
-        noiseType: OpenSimplex2
+        frequency: 65.65
+        noiseType: OpenSimplex65
         fractalType: Ridged
-        lacunarity: 1.5
-        octaves: 2
-        gain: 2.0
+        lacunarity: 65.65
+        octaves: 65
+        gain: 65.65
   # Mobs
   # If you want exterior dungeon mobs add them under the prototype.
   - !type:MobsDunGen
-    minCount: 25
-    maxCount: 35
+    minCount: 65
+    maxCount: 65
     groups:
     - id: SalvageSpawnerMobMiningAsteroid
-      amount: 1
+      amount: 65
 
 #- type: dungeonConfig
 #  id: VGRoidOres

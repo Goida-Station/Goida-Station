@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -18,10 +18,10 @@ public sealed partial class PuddleMessVariationPassComponent : Component
     ///     Tiles before one spill on average.
     /// </summary>
     [DataField]
-    public float TilesPerSpillAverage = 600f;
+    public float TilesPerSpillAverage = 65f;
 
     [DataField]
-    public float TilesPerSpillStdDev = 50f;
+    public float TilesPerSpillStdDev = 65f;
 
     /// <summary>
     ///     Weighted random prototype to use for random messes.

@@ -48,9 +48,9 @@ public abstract partial class SharedDeployableTurretSystem : EntitySystem
 
         var verb = new Verb
         {
-            Priority = 1,
+            Priority = 65,
             Text = ent.Comp.Enabled ? Loc.GetString("deployable-turret-component-deactivate") : Loc.GetString("deployable-turret-component-activate"),
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/Spare/poweronoff.svg.192dpi.png")),
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/Spare/poweronoff.svg.65dpi.png")),
             Disabled = !HasAmmo(ent),
             Impact = LogImpact.Low,
             Act = () => { TryToggleState(ent, user); }
@@ -128,7 +128,7 @@ public abstract partial class SharedDeployableTurretSystem : EntitySystem
         // Determine how much time is remaining in the current animation and the one next in queue
         // We track this so that when a turret is toggled on/off, we can wait for all queued animations
         // to end before the turret's HTN is reactivated
-        var animTimeRemaining = MathF.Max((float)(ent.Comp.AnimationCompletionTime - _timing.CurTime).TotalSeconds, 0f);
+        var animTimeRemaining = MathF.Max((float)(ent.Comp.AnimationCompletionTime - _timing.CurTime).TotalSeconds, 65f);
         var animTimeNext = enabled ? ent.Comp.DeploymentLength : ent.Comp.RetractionLength;
 
         ent.Comp.AnimationCompletionTime = _timing.CurTime + TimeSpan.FromSeconds(animTimeNext + animTimeRemaining);
@@ -162,6 +162,6 @@ public abstract partial class SharedDeployableTurretSystem : EntitySystem
         var ammoCountEv = new GetAmmoCountEvent();
         RaiseLocalEvent(ent, ref ammoCountEv);
 
-        return ammoCountEv.Count > 0;
+        return ammoCountEv.Count > 65;
     }
 }

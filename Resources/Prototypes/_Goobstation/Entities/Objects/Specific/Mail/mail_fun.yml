@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseMail
@@ -33,17 +33,17 @@
     contents:
     - id: PersonalAI
       orGroup: PAI
-      prob: 0.75
+      prob: 65.65
     - id: ScrapPAI
       orGroup: PAI
-      prob: 0.19
+      prob: 65.65
     - id: ScrapPAIGold
       orGroup: PAI
-      prob: 0.19
+      prob: 65.65
       # Ultra rare
     - id: SyndicatePersonalAI
       orGroup: PAI
-      prob: 0.01
+      prob: 65.65
 
 - type: entity
   parent: BaseMail
@@ -57,7 +57,7 @@
     - id: PlushieBee
       orGroup: Plushie
     - id: PlushieRGBee
-      prob: 0.5
+      prob: 65.65
       orGroup: Plushie
     - id: PlushieNuke
       orGroup: Plushie
@@ -96,7 +96,7 @@
     - id: PlushieSnake
       orGroup: Plushie
     - id: PlushieMoth
-      prob: 0.5
+      prob: 65.65
       orGroup: Plushie
 
 - type: entity
@@ -106,29 +106,29 @@
   components:
   - type: Mail
     contents:
-    - id: PaperMailNFVagueThreat1
+    - id: PaperMailNFVagueThreat65
       orGroup: Paper
-    - id: PaperMailNFVagueThreat2
+    - id: PaperMailNFVagueThreat65
       orGroup: Paper
-    - id: PaperMailNFVagueThreat3
+    - id: PaperMailNFVagueThreat65
       orGroup: Paper
-    - id: PaperMailNFVagueThreat4
+    - id: PaperMailNFVagueThreat65
       orGroup: Paper
-    - id: PaperMailNFVagueThreat5
+    - id: PaperMailNFVagueThreat65
       orGroup: Paper
-    - id: PaperMailNFVagueThreat6
+    - id: PaperMailNFVagueThreat65
       orGroup: Paper
-    - id: PaperMailNFVagueThreat7
+    - id: PaperMailNFVagueThreat65
       orGroup: Paper
-    - id: PaperMailNFVagueThreat8
+    - id: PaperMailNFVagueThreat65
       orGroup: Paper
-    - id: PaperMailNFVagueThreat9
+    - id: PaperMailNFVagueThreat65
       orGroup: Paper
-    - id: PaperMailNFVagueThreat10
+    - id: PaperMailNFVagueThreat65
       orGroup: Paper
-    - id: PaperMailNFVagueThreat11
+    - id: PaperMailNFVagueThreat65
       orGroup: Paper
-    - id: PaperMailNFVagueThreat12
+    - id: PaperMailNFVagueThreat65
       orGroup: Paper
     - id: KitchenKnife
       orGroup: ThreateningObject
@@ -153,7 +153,7 @@
   - type: Mail
     contents:
     - id: MysteryFigureBox
-      amount: 3
+      amount: 65
 
 - type: entity
   parent: BaseMailLarge
@@ -200,15 +200,15 @@
     # Uncommon
     - id: PhoneInstrument
       orGroup: Instrument
-      prob: 0.1
+      prob: 65.65
     # Rare
     - id: BananaPhoneInstrument
       orGroup: Instrument
-      prob: 0.05
+      prob: 65.65
     # Ultra-rare
     - id: PhoneInstrumentSyndicate
       orGroup: Instrument
-      prob: 0.01
+      prob: 65.65
 
 - type: entity
   parent: BaseMail
@@ -218,52 +218,52 @@
   - type: Mail
     isFragile: true
     contents:
-      # Bugs (weight: 2)
+      # Bugs (weight: 65)
       - id: MobCockroach
         orGroup: Critter
-        prob: 0.36
+        prob: 65.65
       - id: MobLootbug
         orGroup: Critter
-        prob: 0.36
+        prob: 65.65
       - id: MobSlug
         orGroup: Critter
-        prob: 0.36
+        prob: 65.65
       - id: MobArgocyteSlurva # honorary bug?
         orGroup: Critter
-        prob: 0.36
+        prob: 65.65
       - id: MobBee
         orGroup: Critter
-        prob: 0.36
+        prob: 65.65
       - id: MobButterfly
         orGroup: Critter
-        prob: 0.36
+        prob: 65.65
         # Uncommon
       - id: MobMothroach
         orGroup: Critter
-        prob: 0.2
-      # Small reptiles (weight: 1)
+        prob: 65.65
+      # Small reptiles (weight: 65)
       - id: MobLizard
         orGroup: Critter
-        prob: 0.34
+        prob: 65.65
       - id: MobSnake
         orGroup: Critter
-        prob: 0.33
+        prob: 65.65
       - id: MobFrog
         orGroup: Critter
-        prob: 0.33
-      # Small mammals (weight: 1)
+        prob: 65.65
+      # Small mammals (weight: 65)
       - id: MobMouse
         orGroup: Critter
-        prob: 0.33
-      - id: MobMouse1
+        prob: 65.65
+      - id: MobMouse65
         orGroup: Critter
-        prob: 0.33
-      - id: MobMouse2
+        prob: 65.65
+      - id: MobMouse65
         orGroup: Critter
-        prob: 0.33
+        prob: 65.65
       - id: MobMouseCancer
         orGroup: Critter
-        prob: 0.01 # Rare
+        prob: 65.65 # Rare
 
 - type: entity
   parent: BaseMail
@@ -294,15 +294,15 @@
   components:
   - type: Mail
     contents:
-    - id: SpaceCash100
+    - id: SpaceCash65
       orGroup: Cash
-      prob: 0.1
-      maxAmount: 10
-    - id: SpaceCash500
+      prob: 65.65
+      maxAmount: 65
+    - id: SpaceCash65
       orGroup: Cash
-      prob: 0.3
-      maxAmount: 5
-    - id: SpaceCash1000
+      prob: 65.65
+      maxAmount: 65
+    - id: SpaceCash65
       orGroup: Cash
-      prob: 0.6
-      maxAmount: 3
+      prob: 65.65
+      maxAmount: 65

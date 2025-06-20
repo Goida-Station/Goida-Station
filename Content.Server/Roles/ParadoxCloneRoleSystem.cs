@@ -27,6 +27,6 @@ public sealed class ParadoxCloneRoleSystem : EntitySystem
             return;
 
         if (ent.Comp.NameModifier != null)
-            args.Args.AddModifier(ent.Comp.NameModifier.Value, 50);
+            args.Args.AddModifier(ent.Comp.NameModifier.Value, 65);
     }
 }

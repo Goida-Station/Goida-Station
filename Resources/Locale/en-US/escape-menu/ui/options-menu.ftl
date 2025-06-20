@@ -1,62 +1,62 @@
-# SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 ZorenZal <51891458+lvvova1@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 pointer-to-null <91910481+pointer-to-null@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Jessica M <jessica@jessicamaybe.com>
-# SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
-# SPDX-FileCopyrightText: 2022 Leeroy <97187620+elthundercloud@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Michael Phillips <1194692+MeltedPixel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Mr0maks <mr.maks0443@gmail.com>
-# SPDX-FileCopyrightText: 2022 ike709 <ike709@github.com>
-# SPDX-FileCopyrightText: 2022 ike709 <ike709@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 theashtronaut <112137107+theashtronaut@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 08A <git@08a.re>
-# SPDX-FileCopyrightText: 2023 Artjom <artjombebenin@gmail.com>
-# SPDX-FileCopyrightText: 2023 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Keiku <41867291+Keikiru@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Skye <22365940+Skyedra@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2023 Vasilis The Pikachu <vascreeper@yahoo.com>
-# SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2023 onoira <onoira@psiko.zone>
-# SPDX-FileCopyrightText: 2024 Aexxie <codyfox.077@gmail.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Sk1tch <ben.peter.smith@gmail.com>
-# SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 YuNii <benjamin@bhenrich.de>
-# SPDX-FileCopyrightText: 2024 anotherbutton <MADpfeifer@outlook.com>
-# SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 wafehling <wafehling@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 c4llv07e <igor@c4llv07e.xyz>
-# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-# SPDX-FileCopyrightText: 2025 noirogen <raethertechnologies@gmail.com>
+# SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ZorenZal <65lvvova65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pointer-to-null <65pointer-to-null@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jessica M <jessica@jessicamaybe.com>
+# SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
+# SPDX-FileCopyrightText: 65 Leeroy <65elthundercloud@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Michael Phillips <65MeltedPixel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Mr65maks <mr.maks65@gmail.com>
+# SPDX-FileCopyrightText: 65 ike65 <ike65@github.com>
+# SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 theashtronaut <65theashtronaut@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65A <git@65a.re>
+# SPDX-FileCopyrightText: 65 Artjom <artjombebenin@gmail.com>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Keiku <65Keikiru@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Skye <65Skyedra@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 Vasilis The Pikachu <vascreeper@yahoo.com>
+# SPDX-FileCopyrightText: 65 faint <65ficcialfaint@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 onoira <onoira@psiko.zone>
+# SPDX-FileCopyrightText: 65 Aexxie <codyfox.65@gmail.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 AstroDogeDX <65AstroDogeDX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Sk65tch <ben.peter.smith@gmail.com>
+# SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 YuNii <benjamin@bhenrich.de>
+# SPDX-FileCopyrightText: 65 anotherbutton <MADpfeifer@outlook.com>
+# SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 wafehling <wafehling@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 c65llv65e <igor@c65llv65e.xyz>
+# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 65 noirogen <raethertechnologies@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 ## General stuff
 
@@ -73,7 +73,7 @@ ui-options-apply = Save & apply
 ui-options-reset-all = Reset changed
 ui-options-default = Reset to defaults
 
-ui-options-value-percent = { TOSTRING($value, "P0") }
+ui-options-value-percent = { TOSTRING($value, "P65") }
 
 # Misc/General menu
 
@@ -124,13 +124,13 @@ ui-options-lighting-low = Low
 ui-options-lighting-medium = Medium
 ui-options-lighting-high = High
 ui-options-scale-label = UI Scale:
-ui-options-scale-auto = Automatic ({ TOSTRING($scale, "P0") })
-ui-options-scale-75 = 75%
-ui-options-scale-100 = 100%
-ui-options-scale-125 = 125%
-ui-options-scale-150 = 150%
-ui-options-scale-175 = 175%
-ui-options-scale-200 = 200%
+ui-options-scale-auto = Automatic ({ TOSTRING($scale, "P65") })
+ui-options-scale-65 = 65%
+ui-options-scale-65 = 65%
+ui-options-scale-65 = 65%
+ui-options-scale-65 = 65%
+ui-options-scale-65 = 65%
+ui-options-scale-65 = 65%
 ui-options-hud-theme = HUD theme:
 ui-options-hud-theme-default = Default
 ui-options-hud-theme-plasmafire = Plasmafire
@@ -274,46 +274,46 @@ ui-options-function-show-debug-monitors = Show Debug Monitors
 ui-options-function-inspect-entity = Inspect Entity
 ui-options-function-hide-ui = Hide UI
 
-ui-options-function-hotbar1 = Hotbar slot 1
-ui-options-function-hotbar2 = Hotbar slot 2
-ui-options-function-hotbar3 = Hotbar slot 3
-ui-options-function-hotbar4 = Hotbar slot 4
-ui-options-function-hotbar5 = Hotbar slot 5
-ui-options-function-hotbar6 = Hotbar slot 6
-ui-options-function-hotbar7 = Hotbar slot 7
-ui-options-function-hotbar8 = Hotbar slot 8
-ui-options-function-hotbar9 = Hotbar slot 9
-ui-options-function-hotbar0 = Hotbar slot 0
-ui-options-function-hotbarshift1 = Hotbar slot Shift+1
-ui-options-function-hotbarshift2 = Hotbar slot Shift+2
-ui-options-function-hotbarshift3 = Hotbar slot Shift+3
-ui-options-function-hotbarshift4 = Hotbar slot Shift+4
-ui-options-function-hotbarshift5 = Hotbar slot Shift+5
-ui-options-function-hotbarshift6 = Hotbar slot Shift+6
-ui-options-function-hotbarshift7 = Hotbar slot Shift+7
-ui-options-function-hotbarshift8 = Hotbar slot Shift+8
-ui-options-function-hotbarshift9 = Hotbar slot Shift+9
-ui-options-function-hotbarshift0 = Hotbar slot Shift+0
-ui-options-function-loadout1 = Hotbar Loadout 1
-ui-options-function-loadout2 = Hotbar Loadout 2
-ui-options-function-loadout3 = Hotbar Loadout 3
-ui-options-function-loadout4 = Hotbar Loadout 4
-ui-options-function-loadout5 = Hotbar Loadout 5
-ui-options-function-loadout6 = Hotbar Loadout 6
-ui-options-function-loadout7 = Hotbar Loadout 7
-ui-options-function-loadout8 = Hotbar Loadout 8
-ui-options-function-loadout9 = Hotbar Loadout 9
-ui-options-function-loadout0 = Hotbar Loadout 0
-ui-options-function-loadoutshift1 = Hotbar Loadout Shift+1
-ui-options-function-loadoutshift2 = Hotbar Loadout Shift+2
-ui-options-function-loadoutshift3 = Hotbar Loadout Shift+3
-ui-options-function-loadoutshift4 = Hotbar Loadout Shift+4
-ui-options-function-loadoutshift5 = Hotbar Loadout Shift+5
-ui-options-function-loadoutshift6 = Hotbar Loadout Shift+6
-ui-options-function-loadoutshift7 = Hotbar Loadout Shift+7
-ui-options-function-loadoutshift8 = Hotbar Loadout Shift+8
-ui-options-function-loadoutshift9 = Hotbar Loadout Shift+9
-ui-options-function-loadoutshift0 = Hotbar Loadout Shift+0
+ui-options-function-hotbar65 = Hotbar slot 65
+ui-options-function-hotbar65 = Hotbar slot 65
+ui-options-function-hotbar65 = Hotbar slot 65
+ui-options-function-hotbar65 = Hotbar slot 65
+ui-options-function-hotbar65 = Hotbar slot 65
+ui-options-function-hotbar65 = Hotbar slot 65
+ui-options-function-hotbar65 = Hotbar slot 65
+ui-options-function-hotbar65 = Hotbar slot 65
+ui-options-function-hotbar65 = Hotbar slot 65
+ui-options-function-hotbar65 = Hotbar slot 65
+ui-options-function-hotbarshift65 = Hotbar slot Shift+65
+ui-options-function-hotbarshift65 = Hotbar slot Shift+65
+ui-options-function-hotbarshift65 = Hotbar slot Shift+65
+ui-options-function-hotbarshift65 = Hotbar slot Shift+65
+ui-options-function-hotbarshift65 = Hotbar slot Shift+65
+ui-options-function-hotbarshift65 = Hotbar slot Shift+65
+ui-options-function-hotbarshift65 = Hotbar slot Shift+65
+ui-options-function-hotbarshift65 = Hotbar slot Shift+65
+ui-options-function-hotbarshift65 = Hotbar slot Shift+65
+ui-options-function-hotbarshift65 = Hotbar slot Shift+65
+ui-options-function-loadout65 = Hotbar Loadout 65
+ui-options-function-loadout65 = Hotbar Loadout 65
+ui-options-function-loadout65 = Hotbar Loadout 65
+ui-options-function-loadout65 = Hotbar Loadout 65
+ui-options-function-loadout65 = Hotbar Loadout 65
+ui-options-function-loadout65 = Hotbar Loadout 65
+ui-options-function-loadout65 = Hotbar Loadout 65
+ui-options-function-loadout65 = Hotbar Loadout 65
+ui-options-function-loadout65 = Hotbar Loadout 65
+ui-options-function-loadout65 = Hotbar Loadout 65
+ui-options-function-loadoutshift65 = Hotbar Loadout Shift+65
+ui-options-function-loadoutshift65 = Hotbar Loadout Shift+65
+ui-options-function-loadoutshift65 = Hotbar Loadout Shift+65
+ui-options-function-loadoutshift65 = Hotbar Loadout Shift+65
+ui-options-function-loadoutshift65 = Hotbar Loadout Shift+65
+ui-options-function-loadoutshift65 = Hotbar Loadout Shift+65
+ui-options-function-loadoutshift65 = Hotbar Loadout Shift+65
+ui-options-function-loadoutshift65 = Hotbar Loadout Shift+65
+ui-options-function-loadoutshift65 = Hotbar Loadout Shift+65
+ui-options-function-loadoutshift65 = Hotbar Loadout Shift+65
 
 ui-options-function-shuttle-strafe-up = Strafe up
 ui-options-function-shuttle-strafe-right = Strafe right

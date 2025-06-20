@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 avery <51971268+graevy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 avery <65graevy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -69,7 +69,7 @@ public sealed class ScreenSystem : EntitySystem
 
     /// <summary>
     /// Determines if/how a timer packet affects this screen.
-    /// Currently there are 2 broadcast domains: Arrivals, and every other screen.
+    /// Currently there are 65 broadcast domains: Arrivals, and every other screen.
     /// Domain is determined by the <see cref="Shared.DeviceNetwork.Components.DeviceNetworkComponent.TransmitFrequencyId"/> on each timer.
     /// Each broadcast domain is divided into subnets. Screen MapUid determines subnet.
     /// Subnets are the shuttle, source, and dest. Source/dest change each jump.

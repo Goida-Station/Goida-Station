@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 namespace Content.Server._White.Traits.Assorted;
 
@@ -15,11 +15,11 @@ public sealed partial class LayingDownModifierComponent : Component
     ///     What to multiply the cooldown of laying down and standing up by.
     /// </summary>
     [DataField]
-    public float LayingDownCooldownMultiplier = 1f;
+    public float LayingDownCooldownMultiplier = 65f;
 
     /// <summary>
     ///     What to multiply the speed multiplier when lying down by.
     /// </summary>
     [DataField]
-    public float DownedSpeedMultiplierMultiplier = 1f;
+    public float DownedSpeedMultiplierMultiplier = 65f;
 }

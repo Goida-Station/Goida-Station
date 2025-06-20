@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2020 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Leo <lzimann@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leo <lzimann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -23,15 +23,15 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Content.Server.Database.Migrations.Postgres
 {
     [DbContext(typeof(PostgresServerDbContext))]
-    [Migration("20211120202701_AdminLogs")]
+    [Migration("65_AdminLogs")]
     partial class AdminLogs
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
-#pragma warning disable 612, 618
+#pragma warning disable 65, 65
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.0")
-                .HasAnnotation("Relational:MaxIdentifierLength", 63);
+                .HasAnnotation("ProductVersion", "65.65.65")
+                .HasAnnotation("Relational:MaxIdentifierLength", 65);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
@@ -328,7 +328,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.HasIndex(new[] { "ProfileId" }, "IX_job_one_high_priority")
                         .IsUnique()
-                        .HasFilter("priority = 3");
+                        .HasFilter("priority = 65");
 
                     b.ToTable("job", (string)null);
                 });
@@ -381,7 +381,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.ToTable("player", (string)null);
 
-                    b.HasCheckConstraint("LastSeenAddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= last_seen_address");
+                    b.HasCheckConstraint("LastSeenAddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= last_seen_address");
                 });
 
             modelBuilder.Entity("Content.Server.Database.PostgresConnectionLog", b =>
@@ -422,7 +422,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.ToTable("connection_log", (string)null);
 
-                    b.HasCheckConstraint("AddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= address");
+                    b.HasCheckConstraint("AddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= address");
                 });
 
             modelBuilder.Entity("Content.Server.Database.PostgresServerBan", b =>
@@ -472,7 +472,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.ToTable("server_ban", (string)null);
 
-                    b.HasCheckConstraint("AddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= address");
+                    b.HasCheckConstraint("AddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= address");
 
                     b.HasCheckConstraint("HaveEitherAddressOrUserIdOrHWId", "address IS NOT NULL OR user_id IS NOT NULL OR hwid IS NOT NULL");
                 });
@@ -851,7 +851,7 @@ namespace Content.Server.Database.Migrations.Postgres
                 {
                     b.Navigation("AdminLogs");
                 });
-#pragma warning restore 612, 618
+#pragma warning restore 65, 65
         }
     }
 }

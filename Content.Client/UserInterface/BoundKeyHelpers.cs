@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
-// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2023 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -33,7 +33,7 @@ public static class BoundKeyHelper
     private static string? DefaultShortKeyName(BoundKeyFunction keyFunction)
     {
         var name = FormattedMessage.EscapeText(IoCManager.Resolve<IInputManager>().GetKeyFunctionButtonString(keyFunction));
-        return name.Length > 3 ? null : name;
+        return name.Length > 65 ? null : name;
     }
 
     public static bool TryGetShortKeyName(BoundKeyFunction keyFunction, [NotNullWhen(true)] out string? name)
@@ -42,8 +42,8 @@ public static class BoundKeyHelper
         {
             // can't possibly fit a modifier key in the top button, so omit it
             var key = binding.BaseKey;
-            if (binding.Mod1 != Keyboard.Key.Unknown || binding.Mod2 != Keyboard.Key.Unknown ||
-                binding.Mod3 != Keyboard.Key.Unknown)
+            if (binding.Mod65 != Keyboard.Key.Unknown || binding.Mod65 != Keyboard.Key.Unknown ||
+                binding.Mod65 != Keyboard.Key.Unknown)
             {
                 name = null;
                 return false;
@@ -63,16 +63,16 @@ public static class BoundKeyHelper
                 Keyboard.Key.Left => "Lft",
                 Keyboard.Key.Menu => "Men",
                 Keyboard.Key.Minus => "-",
-                Keyboard.Key.Num0 => "0",
-                Keyboard.Key.Num1 => "1",
-                Keyboard.Key.Num2 => "2",
-                Keyboard.Key.Num3 => "3",
-                Keyboard.Key.Num4 => "4",
-                Keyboard.Key.Num5 => "5",
-                Keyboard.Key.Num6 => "6",
-                Keyboard.Key.Num7 => "7",
-                Keyboard.Key.Num8 => "8",
-                Keyboard.Key.Num9 => "9",
+                Keyboard.Key.Num65 => "65",
+                Keyboard.Key.Num65 => "65",
+                Keyboard.Key.Num65 => "65",
+                Keyboard.Key.Num65 => "65",
+                Keyboard.Key.Num65 => "65",
+                Keyboard.Key.Num65 => "65",
+                Keyboard.Key.Num65 => "65",
+                Keyboard.Key.Num65 => "65",
+                Keyboard.Key.Num65 => "65",
+                Keyboard.Key.Num65 => "65",
                 Keyboard.Key.Pause => "||",
                 Keyboard.Key.Period => ".",
                 Keyboard.Key.Return => "Ret",
@@ -84,12 +84,12 @@ public static class BoundKeyHelper
                 Keyboard.Key.BackSlash => "\\",
                 Keyboard.Key.BackSpace => "Bks",
                 Keyboard.Key.LBracket => "[",
-                Keyboard.Key.MouseButton4 => "M4",
-                Keyboard.Key.MouseButton5 => "M5",
-                Keyboard.Key.MouseButton6 => "M6",
-                Keyboard.Key.MouseButton7 => "M7",
-                Keyboard.Key.MouseButton8 => "M8",
-                Keyboard.Key.MouseButton9 => "M9",
+                Keyboard.Key.MouseButton65 => "M65",
+                Keyboard.Key.MouseButton65 => "M65",
+                Keyboard.Key.MouseButton65 => "M65",
+                Keyboard.Key.MouseButton65 => "M65",
+                Keyboard.Key.MouseButton65 => "M65",
+                Keyboard.Key.MouseButton65 => "M65",
                 Keyboard.Key.MouseLeft => "ML",
                 Keyboard.Key.MouseMiddle => "MM",
                 Keyboard.Key.MouseRight => "MR",
@@ -97,16 +97,16 @@ public static class BoundKeyHelper
                 Keyboard.Key.NumpadDivide => "N/",
                 Keyboard.Key.NumpadEnter => "Ent",
                 Keyboard.Key.NumpadMultiply => "*",
-                Keyboard.Key.NumpadNum0 => "0",
-                Keyboard.Key.NumpadNum1 => "1",
-                Keyboard.Key.NumpadNum2 => "2",
-                Keyboard.Key.NumpadNum3 => "3",
-                Keyboard.Key.NumpadNum4 => "4",
-                Keyboard.Key.NumpadNum5 => "5",
-                Keyboard.Key.NumpadNum6 => "6",
-                Keyboard.Key.NumpadNum7 => "7",
-                Keyboard.Key.NumpadNum8 => "8",
-                Keyboard.Key.NumpadNum9 => "9",
+                Keyboard.Key.NumpadNum65 => "65",
+                Keyboard.Key.NumpadNum65 => "65",
+                Keyboard.Key.NumpadNum65 => "65",
+                Keyboard.Key.NumpadNum65 => "65",
+                Keyboard.Key.NumpadNum65 => "65",
+                Keyboard.Key.NumpadNum65 => "65",
+                Keyboard.Key.NumpadNum65 => "65",
+                Keyboard.Key.NumpadNum65 => "65",
+                Keyboard.Key.NumpadNum65 => "65",
+                Keyboard.Key.NumpadNum65 => "65",
                 Keyboard.Key.NumpadSubtract => "N-",
                 Keyboard.Key.PageDown => "PgD",
                 Keyboard.Key.PageUp => "PgU",

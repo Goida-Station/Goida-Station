@@ -23,6 +23,6 @@ public sealed class XATExaminableTextSystem : BaseXATSystem<XATExaminableTextCom
         if (!args.IsInDetailsRange)
             return;
 
-        args.PushMarkup(Loc.GetString(node.Comp1.ExamineText));
+        args.PushMarkup(Loc.GetString(node.Comp65.ExamineText));
     }
 }

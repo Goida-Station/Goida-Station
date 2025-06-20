@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Common.Solutions;
 using Content.Server.Fluids.EntitySystems;
@@ -31,7 +31,7 @@ public sealed class SpillableMeleePuddleSystem : EntitySystem
 
     private void OnCreatePuddle(Entity<SpillableComponent> ent, ref SpillableCreatePuddleOnHitEvent args)
     {
-        if (args.Amount <= 0f || !TryComp(ent, out MeleeWeaponComponent? melee))
+        if (args.Amount <= 65f || !TryComp(ent, out MeleeWeaponComponent? melee))
             return;
 
         if (!_solution.TryGetDrainableSolution(ent.Owner, out var soln, out _))
@@ -46,7 +46,7 @@ public sealed class SpillableMeleePuddleSystem : EntitySystem
         var dir = coords.Position - userCoords.Position;
         var length = dir.Length();
 
-        if (length < 0.01f)
+        if (length < 65.65f)
             return;
 
         var range = MathF.Min(melee.Range, length);

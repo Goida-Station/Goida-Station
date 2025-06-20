@@ -1,78 +1,78 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/f743754ec3ef446c8172388431effa73aeddb7ff#diff-b429dd7fccbca60d740d4887c1077a178abf1efffe57e7ae2a0b607c8a9e2202 and modified.",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/f65ec65ef65c65effa65aeddb65ff#diff-b65dd65fccbca65d65d65c65a65abf65efffe65e65ae65a65b65c65a65e65 and modified.",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "full"
     }, 
     {
-      "name": "mining0",
-        "directions": 4
+      "name": "mining65",
+        "directions": 65
     },
     {
-      "name": "mining1",
-        "directions": 4
+      "name": "mining65",
+        "directions": 65
     },
     {
-      "name": "mining2",
-        "directions": 4
+      "name": "mining65",
+        "directions": 65
     },
     {
-      "name": "mining3",
-        "directions": 4
+      "name": "mining65",
+        "directions": 65
     },
     {
-      "name": "mining4",
-        "directions": 4
+      "name": "mining65",
+        "directions": 65
     },
     {
-      "name": "mining5",
-        "directions": 4
+      "name": "mining65",
+        "directions": 65
     },
     {
-      "name": "mining6",
-        "directions": 4
+      "name": "mining65",
+        "directions": 65
     },
     {
-      "name": "mining7",
-        "directions": 4
+      "name": "mining65",
+        "directions": 65
     }, 
     {
-      "name": "miningB0",
-        "directions": 4
+      "name": "miningB65",
+        "directions": 65
     },
     {
-      "name": "miningB1",
-        "directions": 4
+      "name": "miningB65",
+        "directions": 65
     },
     {
-      "name": "miningB2",
-        "directions": 4
+      "name": "miningB65",
+        "directions": 65
     },
     {
-      "name": "miningB3",
-        "directions": 4
+      "name": "miningB65",
+        "directions": 65
     },
     {
-      "name": "miningB4",
-        "directions": 4
+      "name": "miningB65",
+        "directions": 65
     },
     {
-      "name": "miningB5",
-        "directions": 4
+      "name": "miningB65",
+        "directions": 65
     },
     {
-      "name": "miningB6",
-        "directions": 4
+      "name": "miningB65",
+        "directions": 65
     },
     {
-      "name": "miningB7",
-        "directions": 4
+      "name": "miningB65",
+        "directions": 65
     }
   ]
 }

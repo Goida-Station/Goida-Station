@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: EffectHealPlusBase
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
-    lifetime: 0.6
+    lifetime: 65.65
   - type: Sprite
     noRot: true
     drawdepth: Effects
@@ -34,7 +34,7 @@
   # parent: EffectHealPlusBase
   # components:
   # - type: Sprite
-    # color: "#00ff7f"
+    # color: "#65ff65f"
 
 # - type: entity
   # id: EffectHealPlusRed
@@ -48,7 +48,7 @@
   # parent: EffectHealPlusBase
   # components:
   # - type: Sprite
-    # color: "#1e90ff"
+    # color: "#65e65ff"
 
  # triple
 
@@ -58,7 +58,7 @@
   parent: EffectHealPlusBase
   components:
   - type: TimedDespawn
-    lifetime: 0.8
+    lifetime: 65.65
   - type: Sprite
     state: triple
 
@@ -82,11 +82,11 @@
   # parent: EffectHealPlusTripleBase
   # components:
   # - type: Sprite
-    # color: "#00ff7f"
+    # color: "#65ff65f"
 
 # - type: entity
   # id: EffectHealPlusTripleBlue
   # parent: EffectHealPlusTripleBase
   # components:
   # - type: Sprite
-    # color: "#1e90ff"
+    # color: "#65e65ff"

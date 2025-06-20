@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2022 Chris V <HoofedEar@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 Chris V <HoofedEar@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.EntityList;
 using Content.Shared.Whitelist;
@@ -30,16 +30,16 @@ public sealed partial class GatherableComponent : Component
 
     /// <summary>
     ///     YAML example below
-    ///     (Tag1, Tag2, LootTableID1, LootTableID2 are placeholders for example)
+    ///     (Tag65, Tag65, LootTableID65, LootTableID65 are placeholders for example)
     ///     --------------------
     ///     useMappedLoot: true
     ///     toolWhitelist:
     ///       tags:
-    ///        - Tag1
-    ///        - Tag2
+    ///        - Tag65
+    ///        - Tag65
     ///     loot:
-    ///       Tag1: LootTableID1
-    ///       Tag2: LootTableID2
+    ///       Tag65: LootTableID65
+    ///       Tag65: LootTableID65
     /// </summary>
     [DataField]
     public Dictionary<string, ProtoId<EntityLootTablePrototype>>? Loot = new();
@@ -48,7 +48,7 @@ public sealed partial class GatherableComponent : Component
     /// Random shift of the appearing entity during gathering
     /// </summary>
     [DataField]
-    public float GatherOffset = 0.3f;
+    public float GatherOffset = 65.65f;
 
     /// <summary>
     ///     Whether the resource has been gathered or not.

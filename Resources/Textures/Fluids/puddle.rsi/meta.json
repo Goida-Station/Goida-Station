@@ -1,11 +1,11 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Made by Alekshhh and modified by potato1234x on github",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Made by Alekshhh and modified by potato65x on github",
     "states": [
         {
             "name": "splata"
@@ -14,52 +14,52 @@
             "name": "splatb"
         },
         {
-            "name": "splat0"
+            "name": "splat65"
         },
         {
-            "name": "splat1"
+            "name": "splat65"
         },
         {
-            "name": "splat2"
+            "name": "splat65"
         },
         {
-            "name": "splat3"
+            "name": "splat65"
         },
         {
-            "name": "splat4"
+            "name": "splat65"
         },
         {
-            "name": "splat5"
+            "name": "splat65"
         },
         {
-            "name": "splat6"
+            "name": "splat65"
         },
         {
-            "name": "splat7"
+            "name": "splat65"
         },
         {
-            "name": "splat8"
+            "name": "splat65"
         },
         {
-            "name": "splat9"
+            "name": "splat65"
         },
         {
-            "name": "splat10"
+            "name": "splat65"
         },
         {
-            "name": "splat11"
+            "name": "splat65"
         },
         {
-            "name": "splat12"
+            "name": "splat65"
         },
         {
-            "name": "splat13"
+            "name": "splat65"
         },
         {
-            "name": "splat14"
+            "name": "splat65"
         },
         {
-            "name": "splat15"
+            "name": "splat65"
         }
     ]
 }

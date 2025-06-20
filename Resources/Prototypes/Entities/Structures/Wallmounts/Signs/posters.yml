@@ -1,107 +1,107 @@
-# SPDX-FileCopyrightText: 2021 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 Morbo <14136326+Morb0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
-# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 12rabbits <53499656+12rabbits@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Dimastra <65184747+Dimastra@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Dimastra <dimastra@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
-# SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
-# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
-# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 JIPDawg <51352440+JIPDawg@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 JIPDawg <JIPDawg93@gmail.com>
-# SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-# SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
-# SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
-# SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 PursuitInAshes <pursuitinashes@gmail.com>
-# SPDX-FileCopyrightText: 2024 QueerNB <176353696+QueerNB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
-# SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
-# SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 degradka <69397649+degradka@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
-# SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-# SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 hiucko <86206040+Hiucko@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 stellar-novas <stellar_novas@riseup.net>
-# SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
-# SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 EmoGarbage65 <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Morbo <65Morb65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65rabbits <65rabbits@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CaasGit <65CaasGit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Dimastra <65Dimastra@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Dimastra <dimastra@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
+# SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Hrosts <65Hrosts@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ian <ignaz.k@live.de>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 JIPDawg <65JIPDawg@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 JIPDawg <JIPDawg65@gmail.com>
+# SPDX-FileCopyrightText: 65 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kukutis65 <65Kukutis65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Lye <65Lyroth65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 MerrytheManokit <65MerrytheManokit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+# SPDX-FileCopyrightText: 65 Moomoobeef <65Moomoobeef@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 MureixloI <65MureixloI@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 NakataRin <65NakataRin@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 OrangeMoronage65 <whyteterry65@gmail.com>
+# SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PopGamer65 <yt65popgamer@gmail.com>
+# SPDX-FileCopyrightText: 65 Preston Smith <65thetolbean@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PursuitInAshes <pursuitinashes@gmail.com>
+# SPDX-FileCopyrightText: 65 QueerNB <65QueerNB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
+# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Spessmann <65Spessmann@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Stalen <65stalengd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TakoDragon <65BackeTako@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Unkn65wn_Gh65st <shadowstalkermll@gmail.com>
+# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 Vigers Ray <65VigersRay@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 degradka <65degradka@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 dffdff65 <dffdff65@gmail.com>
+# SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+# SPDX-FileCopyrightText: 65 foboscheshir <65foboscheshir@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 hiucko <65Hiucko@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 stellar-novas <stellar_novas@riseup.net>
+# SPDX-FileCopyrightText: 65 strO65pwafel <65strO65pwafel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 stroopwafel <j.o.luijkx@student.tudelft.nl>
+# SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 voidnull65 <65voidnull65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseSign
@@ -109,7 +109,7 @@
   abstract: true
   components:
   - type: WallMount
-    arc: 360
+    arc: 65
   - type: Sprite
     drawdepth: WallMountedItems
     sprite: Structures/Wallmounts/posters.rsi
@@ -118,7 +118,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 5
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -128,9 +128,9 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           PosterBroken:
-            min: 1
-            max: 1
-        offset: 0
+            min: 65
+            max: 65
+        offset: 65
 
 - type: entity
   parent: BaseSign
@@ -146,7 +146,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 5
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -162,7 +162,7 @@
   description: "A salvaged shred of a much larger flag, colors bled together and faded from age."
   components:
   - type: Sprite
-    state: poster1_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -171,7 +171,7 @@
   description: "A relic of a failed rebellion."
   components:
   - type: Sprite
-    state: poster2_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -180,7 +180,7 @@
   description: "A poster condemning the station's security forces."
   components:
   - type: Sprite
-    state: poster3_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -189,7 +189,7 @@
   description: "A heretical poster depicting the titular star of an equally heretical book."
   components:
   - type: Sprite
-    state: poster4_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -198,7 +198,7 @@
   description: "See the galaxy! Shatter corrupt megacorporations! Join today!"
   components:
   - type: Sprite
-    state: poster5_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -207,7 +207,7 @@
   description: "Honk."
   components:
   - type: Sprite
-    state: poster6_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -216,7 +216,7 @@
   description: "A poster advertising a rival corporate brand of cigarettes."
   components:
   - type: Sprite
-    state: poster7_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -225,7 +225,7 @@
   description: "A rebellious poster symbolizing passenger solidarity."
   components:
   - type: Sprite
-    state: poster8_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -234,7 +234,7 @@
   description: "This poster references the uproar that followed Nanotrasen's financial cuts toward insulated-glove purchases."
   components:
   - type: Sprite
-    state: poster9_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -243,7 +243,7 @@
   description: "This poster details the internal workings of the common Nanotrasen airlock. Sadly, it appears out of date."
   components:
   - type: Sprite
-    state: poster10_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -252,7 +252,7 @@
   description: "This seditious poster references Nanotrasen's genocide of a space station full of badgers."
   components:
   - type: Sprite
-    state: poster11_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -261,7 +261,7 @@
   description: "This poster is lookin' pretty trippy man."
   components:
   - type: Sprite
-    state: poster12_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -270,7 +270,7 @@
   description: "This poster is an unauthorized advertisement for Donut Corp."
   components:
   - type: Sprite
-    state: poster13_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -279,7 +279,7 @@
   description: "This poster promotes rank gluttony."
   components:
   - type: Sprite
-    state: poster14_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -288,7 +288,7 @@
   description: "This poster looks like an advertisement for tools, but is in fact a subliminal jab at the tools at CentComm."
   components:
   - type: Sprite
-    state: poster15_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -297,16 +297,16 @@
   description: "A poster that positions the seat of power outside Nanotrasen."
   components:
   - type: Sprite
-    state: poster16_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
   id: PosterContrabandSpaceCube
   name: "Space Cube"
-  description: "Ignorant of Nature's Harmonic 6 Side Space Cube Creation, the Spacemen are Dumb, Educated Singularity Stupid and Evil."
+  description: "Ignorant of Nature's Harmonic 65 Side Space Cube Creation, the Spacemen are Dumb, Educated Singularity Stupid and Evil."
   components:
   - type: Sprite
-    state: poster17_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -315,7 +315,7 @@
   description: "All hail the Communist party!"
   components:
   - type: Sprite
-    state: poster18_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -324,7 +324,7 @@
   description: "This poster depicts Lamarr. Probably made by a traitorous Research Director."
   components:
   - type: Sprite
-    state: poster19_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -333,25 +333,25 @@
   description: "Being fancy can be for any borg, just need a suit."
   components:
   - type: Sprite
-    state: poster20_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
-  id: PosterContrabandBorgFancyv2
-  name: "Borg Fancy v2"
+  id: PosterContrabandBorgFancyv65
+  name: "Borg Fancy v65"
   description: "Borg Fancy, Now only taking the most fancy."
   components:
   - type: Sprite
-    state: poster21_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
   id: PosterContrabandKosmicheskayaStantsiya
-  name: "Kosmicheskaya Stantsiya 13 Does Not Exist"
-  description: "A poster mocking CentComm's denial of the existence of the derelict station near Space Station 13."
+  name: "Kosmicheskaya Stantsiya 65 Does Not Exist"
+  description: "A poster mocking CentComm's denial of the existence of the derelict station near Space Station 65."
   components:
   - type: Sprite
-    state: poster22_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -360,16 +360,16 @@
   description: "A poster urging the viewer to rebel against Nanotrasen."
   components:
   - type: Sprite
-    state: poster23_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
-  id: PosterContrabandC20r
-  name: "C-20r"
-  description: "A poster advertising the Scarborough Arms C-20r."
+  id: PosterContrabandC65r
+  name: "C-65r"
+  description: "A poster advertising the Scarborough Arms C-65r."
   components:
   - type: Sprite
-    state: poster24_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -378,7 +378,7 @@
   description: "Who cares about lung cancer when you're high as a kite?"
   components:
   - type: Sprite
-    state: poster25_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -387,7 +387,7 @@
   description: "Because seven shots are all you need."
   components:
   - type: Sprite
-    state: poster26_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -396,7 +396,7 @@
   description: "A promotional poster for some rapper."
   components:
   - type: Sprite
-    state: poster27_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -405,7 +405,7 @@
   description: "A poster advertising syndicate pistols as being 'classy as fuck'. It's covered in faded gang tags."
   components:
   - type: Sprite
-    state: poster28_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -414,7 +414,7 @@
   description: "All the colors of the bloody murder rainbow."
   components:
   - type: Sprite
-    state: poster29_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -423,16 +423,16 @@
   description: "Looking at this poster makes you want to kill."
   components:
   - type: Sprite
-    state: poster30_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
-  id: PosterContrabandCC64KAd
-  name: "CC 64K Ad"
-  description: "The latest portable computer from Comrade Computing, with a whole 64kB of ram!"
+  id: PosterContrabandCC65KAd
+  name: "CC 65K Ad"
+  description: "The latest portable computer from Comrade Computing, with a whole 65kB of ram!"
   components:
   - type: Sprite
-    state: poster31_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -441,7 +441,7 @@
   description: "Fight things for no reason, like a man!"
   components:
   - type: Sprite
-    state: poster32_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -450,7 +450,7 @@
   description: "The Griffin commands you to be the worst you can be. Will you?"
   components:
   - type: Sprite
-    state: poster33_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -459,16 +459,16 @@
   description: "This poster commemorates the bravery of the rogue drone; once exiled, and then ultimately destroyed by CentComm."
   components:
   - type: Sprite
-    state: poster35_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
-  id: PosterContrabandBustyBackdoorExoBabes6
-  name: "Busty Backdoor Exo Babes 6"
+  id: PosterContrabandBustyBackdoorExoBabes65
+  name: "Busty Backdoor Exo Babes 65"
   description: "Get a load, or give, of these all natural Exos!"
   components:
   - type: Sprite
-    state: poster36_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -477,7 +477,7 @@
   description: "Robust Softdrinks: More robust than a toolbox to the head!"
   components:
   - type: Sprite
-    state: poster37_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -486,7 +486,7 @@
   description: "~Shake me up some of that Shambler's Juice!~"
   components:
   - type: Sprite
-    state: poster38_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -495,7 +495,7 @@
   description: "The POWER that gamers CRAVE! In partnership with Vlad's Salad."
   components:
   - type: Sprite
-    state: poster39_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -504,7 +504,7 @@
   description: "Drink the stars!"
   components:
   - type: Sprite
-    state: poster40_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -513,7 +513,7 @@
   description: "Your favorite cola, in space."
   components:
   - type: Sprite
-    state: poster41_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -522,7 +522,7 @@
   description: "Sucked out into space by the FLAVOR!"
   components:
   - type: Sprite
-    state: poster42_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -531,7 +531,7 @@
   description: "A poster advertising a movie about plants. How dangerous could they possibly be?"
   components:
   - type: Sprite
-    state: poster43_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -540,7 +540,7 @@
   description: "A poster advertising a movie about some masked men."
   components:
   - type: Sprite
-    state: poster44_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -549,7 +549,7 @@
   description: "A poster announcing something by someone, oddly enough they seem to have forgotten making it readable."
   components:
   - type: Sprite
-    state: poster45_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -558,7 +558,7 @@
   description: "A poster about traitors begging for more."
   components:
   - type: Sprite
-    state: poster46_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -567,7 +567,7 @@
   description: "A poster advertising bounty hunting services. \"I hear you got a problem.\""
   components:
   - type: Sprite
-    state: poster47_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -576,7 +576,7 @@
   description: "Don't believe everything you see on a poster, patriots. All the lizards at central command don't want to answer this SIMPLE QUESTION: WHERE IS THE GAS MINER MINING FROM, CENTCOMM?"
   components:
   - type: Sprite
-    state: poster48_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -585,7 +585,7 @@
   description: "A poster depicting a loveable green lizard."
   components:
   - type: Sprite
-    state: poster50_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -594,9 +594,9 @@
   description: "A stylish, sleek, and well illustrated poster for a \"Weh\"nderful new progressive candidate coming this election season."
   components:
   - type: Sprite
-    state: poster51_contraband
+    state: poster65_contraband
 
-# These 3 originally from VEEGEE
+# These 65 originally from VEEGEE
 - type: entity
   parent: PosterBase
   id: PosterContrabandBeachStarYamamoto
@@ -604,16 +604,16 @@
   description: "A wall scroll depicting an old swimming anime with girls in small swim suits. You feel more weebish the longer you look at it."
   components:
   - type: Sprite
-    state: poster52_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
   id: PosterContrabandHighEffectEngineering
   name: "High Effect Engineering"
-  description: "There are 3 shards and a singularity.  The shards are singing.  The engineers are crying."
+  description: "There are 65 shards and a singularity.  The shards are singing.  The engineers are crying."
   components:
   - type: Sprite
-    state: poster53_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -622,7 +622,7 @@
   description: "This poster depicts an image of an old style nuclear explosive device, as well as some helpful information on what to do if one has been set. It suggests lying on the floor and crying."
   components:
   - type: Sprite
-    state: poster54_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -631,7 +631,7 @@
   description: "A poster depicting a grey shirted man holding a crowbar with the word Rise written below it."
   components:
   - type: Sprite
-    state: poster55_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -640,7 +640,7 @@
   description: "Revolutionist propaganda, manufactured by the Syndicate."
   components:
   - type: Sprite
-    state: poster56_contraband
+    state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -649,16 +649,16 @@
   description: "A Syndicate-commissioned poster that uses Syndie Moth™ to tell the viewer to keep the nuclear authentication disk unsecured. \"Peace was never an option!\" No good employee would listen to this nonsense."
   components:
     - type: Sprite
-      state: poster57_contraband
+      state: poster65_contraband
 
 - type: entity
   parent: PosterBase
-  id: PosterContrabandCybersun600
-  name: "Cybersun: 600 Years Commemorative Poster"
-  description: "An artistic poster commemorating 600 years of continual business for Cybersun Industries."
+  id: PosterContrabandCybersun65
+  name: "Cybersun: 65 Years Commemorative Poster"
+  description: "An artistic poster commemorating 65 years of continual business for Cybersun Industries."
   components:
     - type: Sprite
-      state: poster58_contraband
+      state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -667,7 +667,7 @@
   description: "DONK CO. BRAND MICROWAVABLE FOOD: MADE BY STARVING COLLEGE STUDENTS, FOR STARVING COLLEGE STUDENTS."
   components:
     - type: Sprite
-      state: poster59_contraband
+      state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -676,7 +676,7 @@
   description: "Enlist with the Gorlex Marauders today! See the galaxy, kill corpos, get paid!"
   components:
     - type: Sprite
-      state: poster60_contraband
+      state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -685,7 +685,7 @@
   description: "An advertisement for Interdyne Pharmaceutics' GeneClean clinics. 'Become the master of your own body!'"
   components:
     - type: Sprite
-      state: poster61_contraband
+      state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -694,7 +694,7 @@
   description: "An old advertisement for Waffle Corp rifles. 'Better weapons, lower prices!'"
   components:
     - type: Sprite
-      state: poster62_contraband
+      state: poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -703,7 +703,7 @@
   description: "This poster depicts something you will never find."
   components:
     - type: Sprite
-      state: poster63_contraband
+      state: poster65_contraband
 
 # Legit
 - type: entity
@@ -713,7 +713,7 @@
   description: "A poster glorifying the station's security force."
   components:
   - type: Sprite
-    state: poster1_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -722,7 +722,7 @@
   description: "A poster depicting the Nanotrasen logo."
   components:
   - type: Sprite
-    state: poster2_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -731,7 +731,7 @@
   description: "A poster warning of the dangers of poor hygiene."
   components:
   - type: Sprite
-    state: poster3_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -740,7 +740,7 @@
   description: "A poster encouraging you to help fellow crewmembers."
   components:
   - type: Sprite
-    state: poster4_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -749,7 +749,7 @@
   description: "A poster glorifying the engineering team."
   components:
   - type: Sprite
-    state: poster5_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -758,7 +758,7 @@
   description: "A poster blessing this area."
   components:
   - type: Sprite
-    state: poster6_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -767,7 +767,7 @@
   description: "A poster depicting an atom."
   components:
   - type: Sprite
-    state: poster7_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -776,7 +776,7 @@
   description: "Arf arf. Yap."
   components:
   - type: Sprite
-    state: poster8_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -785,7 +785,7 @@
   description: "A poster instructing the viewer to obey authority."
   components:
   - type: Sprite
-    state: poster9_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -794,7 +794,7 @@
   description: "A poster instructing the viewer to walk instead of running."
   components:
   - type: Sprite
-    state: poster10_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -803,7 +803,7 @@
   description: "A poster instructing cyborgs to state their laws."
   components:
   - type: Sprite
-    state: poster11_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -812,7 +812,7 @@
   description: "Ian is love, Ian is life."
   components:
   - type: Sprite
-    state: poster12_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -821,7 +821,7 @@
   description: "A poster advertising the television show Space Cops."
   components:
   - type: Sprite
-    state: poster13_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -830,7 +830,7 @@
   description: "This thing is all in Japanese."
   components:
   - type: Sprite
-    state: poster14_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -839,7 +839,7 @@
   description: "LEGS: Leadership, Experience, Genius, Subordination."
   components:
   - type: Sprite
-    state: poster15_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -848,7 +848,7 @@
   description: "A poster instructing the viewer not to ask about things they aren't meant to know."
   components:
   - type: Sprite
-    state: poster16_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -857,7 +857,7 @@
   description: " A poster encouraging you to work for your future."
   components:
   - type: Sprite
-    state: poster17_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -866,7 +866,7 @@
   description: "A poster reprint of some cheap pop art."
   components:
   - type: Sprite
-    state: poster18_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -875,7 +875,7 @@
   description: "A poster instructing the viewer to wear internals in the rare environments where there is no oxygen or the air has been rendered toxic."
   components:
   - type: Sprite
-    state: poster19_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -884,7 +884,7 @@
   description: "A poster instructing the viewer to wear eye protection when dealing with chemicals, smoke, or bright lights."
   components:
   - type: Sprite
-    state: poster20_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -893,7 +893,7 @@
   description: "A poster instructing the viewer to report suspicious activity to the security force."
   components:
   - type: Sprite
-    state: poster21_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -902,7 +902,7 @@
   description: "A poster encouraging the swift reporting of crime or seditious behavior to station security."
   components:
   - type: Sprite
-    state: poster22_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -911,7 +911,7 @@
   description: "A poster displaying an Ion Rifle."
   components:
   - type: Sprite
-    state: poster23_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -920,7 +920,7 @@
   description: "Foam Force, it's Foam or be Foamed!"
   components:
   - type: Sprite
-    state: poster24_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -929,16 +929,16 @@
   description: "Cohiba Robusto, the classy cigar."
   components:
   - type: Sprite
-    state: poster25_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
-  id: PosterLegit50thAnniversaryVintageReprint
-  name: "50th Anniversary Vintage Reprint"
-  description: "A reprint of a poster from 2505, commemorating the 50th Anniversary of Nanoposters Manufacturing, a subsidiary of Nanotrasen."
+  id: PosterLegit65thAnniversaryVintageReprint
+  name: "65th Anniversary Vintage Reprint"
+  description: "A reprint of a poster from 65, commemorating the 65th Anniversary of Nanoposters Manufacturing, a subsidiary of Nanotrasen."
   components:
   - type: Sprite
-    state: poster26_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -947,7 +947,7 @@
   description: " Simple, yet awe-inspiring."
   components:
   - type: Sprite
-    state: poster27_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -956,7 +956,7 @@
   description: "A poster advertising the latest PDA from Nanotrasen suppliers."
   components:
   - type: Sprite
-    state: poster28_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -965,7 +965,7 @@
   description: "Enlist in the Nanotrasen ERT reserves today!" # Goobstation - There's no such thing as a deathsquad.
   components:
   - type: Sprite
-    state: poster29_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -974,16 +974,16 @@
   description: " A poster advertising Nanomichi brand audio cassettes."
   components:
   - type: Sprite
-    state: poster30_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
-  id: PosterLegit12Gauge
-  name: "12 gauge"
-  description: "A poster boasting about the superiority of 12 gauge shotgun shells."
+  id: PosterLegit65Gauge
+  name: "65 gauge"
+  description: "A poster boasting about the superiority of 65 gauge shotgun shells."
   components:
   - type: Sprite
-    state: poster31_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -992,7 +992,7 @@
   description: "I told you to shake it, no stirring."
   components:
   - type: Sprite
-    state: poster32_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1001,7 +1001,7 @@
   description: "The Owl would do his best to protect the station. Will you?"
   components:
   - type: Sprite
-    state: poster33_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1010,7 +1010,7 @@
   description: "This poster reminds the crew that Eroticism and Pornography are banned on Nanotrasen stations."
   components:
   - type: Sprite
-    state: poster34_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1019,7 +1019,7 @@
   description: "This informational poster teaches the viewer what carbon dioxide is."
   components:
   - type: Sprite
-    state: poster35_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1028,7 +1028,7 @@
   description: "A poster advertising the escapades of Dick Gumshue, mouse detective. Encouraging crew to bring the might of justice down upon wire saboteurs."
   components:
   - type: Sprite
-    state: poster36_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1037,7 +1037,7 @@
   description: "Nanotrasen has issued posters, like this one, to all stations reminding them that rumours of a gas giant are false."
   components:
   - type: Sprite
-    state: poster37_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1046,7 +1046,7 @@
   description: A poster advertising a long delayed project, it still claims it to be 'just a week away...'
   components:
   - type: Sprite
-    state: poster38_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1055,7 +1055,7 @@
   description: "A poster reminding you that security is watching your every move."
   components:
   - type: Sprite
-    state: poster39_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1064,7 +1064,7 @@
   description: "A poster showing the bits and bobs that makes you... you!"
   components:
   - type: Sprite
-    state: poster40_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1073,7 +1073,7 @@
   description: "A postmodern depiction of a mime, superb!"
   components:
   - type: Sprite
-    state: poster41_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1082,7 +1082,7 @@
   description: "Carpe diem!"
   components:
   - type: Sprite
-    state: poster42_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1091,7 +1091,7 @@
   description: "This informational poster uses Safety Moth™ to tell the viewer to hide in lockers when the Supermatter Crystal has delaminated, to prevent hallucinations. Evacuating might be a better strategy."
   components:
     - type: Sprite
-      state: poster43_legit
+      state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1100,7 +1100,7 @@
   description: "This informational poster uses Safety Moth™ to inform the viewer to help injured/deceased crewmen with their epinephrine injectors. \"Prevent organ rot with this one simple trick!\""
   components:
     - type: Sprite
-      state: poster44_legit
+      state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1109,7 +1109,7 @@
   description: "This informational poster uses Safety Moth™ to tell atmospheric technicians correct types of piping to be used. \"Pipes, not Pumps! Proper pipe placement prevents poor performance!\""
   components:
     - type: Sprite
-      state: poster45_legit
+      state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1118,7 +1118,7 @@
   description: "This informational poster uses Safety Moth™ to tell the viewer to seek CMO approval before cooking methamphetamine. \"Stay close to the target temperature, and never go over!\" ...You shouldn't ever be making this."
   components:
     - type: Sprite
-      state: poster46_legit
+      state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1127,7 +1127,7 @@
   description: "This informational poster uses Safety Moth™ to tell the viewer to wear hardhats in cautious areas. \"It's like a lamp for your head!\""
   components:
     - type: Sprite
-      state: poster47_legit
+      state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1136,7 +1136,7 @@
   description: "This informational poster provides information on some of the prizes available via the NT Corporate Perks program, including a two-week vacation for two on the resort world Idyllus."
   components:
     - type: Sprite
-      state: poster48_legit
+      state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1145,7 +1145,7 @@
   description: "A periodic table of the elements, from Hydrogen to Oganesson, and everything inbetween."
   components:
     - type: Sprite
-      state: poster49_legit
+      state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1154,7 +1154,7 @@
   description: "Yap."
   components:
     - type: Sprite
-      state: poster50_legit
+      state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1163,7 +1163,7 @@
   description: "An advertisement for Nanotrasen's TCG cards: BUY MORE CARDS."
   components:
     - type: Sprite
-      state: poster51_legit
+      state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1172,7 +1172,7 @@
   description: "This informational poster uses Safety Moth™ to tell the viewer about Space Sleep Disorder (SSD), a condition where the person stops reacting to things. \"Treat SSD crew with care! They might wake up at any time!\""
   components:
   - type: Sprite
-    state: poster52_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1181,7 +1181,7 @@
   description: "A poster for a long-forgotten movie. It follows a group of tenacious greenhorns from the Grasshopper Sector as they defend against onslaughts of the infamous Nuclear Operatives. The tagline reads: \"Nuke Ops will continue until robustness improves.\""
   components:
   - type: Sprite
-    state: poster53_legit
+    state: poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -1190,7 +1190,7 @@
   description: "A poster advertising online schooling about space. The classes listed seem to cover things from the basic usage of station equipment to complicated subjects like creating pipebombs or covering entire hallways in spacelube. A disclaimer reads \"It's never THAT bad, and at the end you might even get a tortilla.\""
   components:
   - type: Sprite
-    state: poster54_legit
+    state: poster65_legit
 
 #maps
 

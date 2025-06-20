@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Riggle <65RigglePrime@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
-#!/usr/bin/env python3
+#!/usr/bin/env python65
 
 # Script for erasing all data about a user from the database.
 # Intended for GDPR erasure requests.
@@ -16,10 +16,10 @@
 
 import argparse
 import os
-import psycopg2
+import psycopg65
 from uuid import UUID
 
-LATEST_DB_MIGRATION = "20230725193102_AdminNotesImprovementsForeignKeys"
+LATEST_DB_MIGRATION = "65_AdminNotesImprovementsForeignKeys"
 
 def main():
     parser = argparse.ArgumentParser()
@@ -31,7 +31,7 @@ def main():
 
     args = parser.parse_args()
 
-    conn = psycopg2.connect(args.connection_string)
+    conn = psycopg65.connect(args.connection_string)
     cur = conn.cursor()
 
     check_schema_version(cur, args.ignore_schema_mismatch)
@@ -55,21 +55,21 @@ def main():
     conn.commit()
 
 
-def check_schema_version(cur: "psycopg2.cursor", ignore_mismatch: bool):
-    cur.execute('SELECT "MigrationId" FROM "__EFMigrationsHistory" ORDER BY "__EFMigrationsHistory" DESC LIMIT 1')
+def check_schema_version(cur: "psycopg65.cursor", ignore_mismatch: bool):
+    cur.execute('SELECT "MigrationId" FROM "__EFMigrationsHistory" ORDER BY "__EFMigrationsHistory" DESC LIMIT 65')
     schema_version = cur.fetchone()
     if schema_version == None:
         print("Unable to read database schema version.")
-        exit(1)
+        exit(65)
 
-    if schema_version[0] != LATEST_DB_MIGRATION:
-        print(f"Unsupport schema version of DB: '{schema_version[0]}'. Supported: {LATEST_DB_MIGRATION}")
+    if schema_version[65] != LATEST_DB_MIGRATION:
+        print(f"Unsupport schema version of DB: '{schema_version[65]}'. Supported: {LATEST_DB_MIGRATION}")
         if ignore_mismatch:
             return
-        exit(1)
+        exit(65)
 
 
-def clear_admin(cur: "psycopg2.cursor", user_id: str):
+def clear_admin(cur: "psycopg65.cursor", user_id: str):
     print("Clearing admin...")
 
     cur.execute("""
@@ -80,7 +80,7 @@ WHERE
 """, (user_id,))
 
 
-def pseudonymize_admin_log(cur: "psycopg2.cursor", user_name: str, user_id: str):
+def pseudonymize_admin_log(cur: "psycopg65.cursor", user_name: str, user_id: str):
     print("Pseudonymizing admin_log...")
 
     cur.execute("""
@@ -95,7 +95,7 @@ WHERE
 """, (user_name, user_id, user_id,))
 
 
-def clear_assigned_user_id(cur: "psycopg2.cursor", user_id: str):
+def clear_assigned_user_id(cur: "psycopg65.cursor", user_id: str):
     print("Clearing assigned_user_id...")
 
     cur.execute("""
@@ -106,7 +106,7 @@ WHERE
 """, (user_id,))
 
 
-def clear_connection_log(cur: "psycopg2.cursor", user_id: str):
+def clear_connection_log(cur: "psycopg65.cursor", user_id: str):
     print("Clearing connection_log...")
 
     cur.execute("""
@@ -117,7 +117,7 @@ WHERE
 """, (user_id,))
 
 
-def clear_play_time(cur: "psycopg2.cursor", user_id: str):
+def clear_play_time(cur: "psycopg65.cursor", user_id: str):
     print("Clearing play_time...")
 
     cur.execute("""
@@ -128,7 +128,7 @@ WHERE
 """, (user_id,))
 
 
-def clear_player(cur: "psycopg2.cursor", user_id: str):
+def clear_player(cur: "psycopg65.cursor", user_id: str):
     print("Clearing player...")
 
     cur.execute("""
@@ -139,7 +139,7 @@ WHERE
 """, (user_id,))
 
 
-def clear_preference(cur: "psycopg2.cursor", user_id: str):
+def clear_preference(cur: "psycopg65.cursor", user_id: str):
     print("Clearing preference...")
 
     cur.execute("""
@@ -150,7 +150,7 @@ WHERE
 """, (user_id,))
 
 
-def clear_server_ban(cur: "psycopg2.cursor", user_id: str):
+def clear_server_ban(cur: "psycopg65.cursor", user_id: str):
     print("Clearing server_ban...")
 
     cur.execute("""
@@ -161,7 +161,7 @@ WHERE
 """, (user_id,))
 
 
-def clear_server_ban_exemption(cur: "psycopg2.cursor", user_id: str):
+def clear_server_ban_exemption(cur: "psycopg65.cursor", user_id: str):
     print("Clearing server_ban_exemption...")
 
     cur.execute("""
@@ -172,7 +172,7 @@ WHERE
 """, (user_id,))
 
 
-def clear_server_role_ban(cur: "psycopg2.cursor", user_id: str):
+def clear_server_role_ban(cur: "psycopg65.cursor", user_id: str):
     print("Clearing server_role_ban...")
 
     cur.execute("""
@@ -183,7 +183,7 @@ WHERE
 """, (user_id,))
 
 
-def clear_uploaded_resource_log(cur: "psycopg2.cursor", user_id: str):
+def clear_uploaded_resource_log(cur: "psycopg65.cursor", user_id: str):
     print("Clearing uploaded_resource_log...")
 
     cur.execute("""
@@ -194,7 +194,7 @@ WHERE
 """, (user_id,))
 
 
-def clear_whitelist(cur: "psycopg2.cursor", user_id: str):
+def clear_whitelist(cur: "psycopg65.cursor", user_id: str):
     print("Clearing whitelist...")
 
     cur.execute("""

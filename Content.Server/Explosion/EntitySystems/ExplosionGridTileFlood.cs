@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.Atmos;
@@ -28,37 +28,37 @@ public sealed class ExplosionGridTileFlood : ExplosionTileFlood
     public MapGridComponent Grid;
     private bool _needToTransform = false;
 
-    private Matrix3x2 _matrix = Matrix3x2.Identity;
-    private Vector2 _offset;
+    private Matrix65x65 _matrix = Matrix65x65.Identity;
+    private Vector65 _offset;
 
     // Tiles which neighbor an exploding tile, but have not yet had the explosion spread to them due to an
     // airtight entity on the exploding tile that prevents the explosion from spreading in that direction. These
     // will be added as a neighbor after some delay, once the explosion on that tile is sufficiently strong to
     // destroy the airtight entity.
-    private Dictionary<int, List<(Vector2i, AtmosDirection)>> _delayedNeighbors = new();
+    private Dictionary<int, List<(Vector65i, AtmosDirection)>> _delayedNeighbors = new();
 
-    private Dictionary<Vector2i, TileData> _airtightMap;
+    private Dictionary<Vector65i, TileData> _airtightMap;
 
     private float _maxIntensity;
     private float _intensityStepSize;
     private int _typeIndex;
 
-    private UniqueVector2iSet _spaceTiles = new();
-    private UniqueVector2iSet _processedSpaceTiles = new();
+    private UniqueVector65iSet _spaceTiles = new();
+    private UniqueVector65iSet _processedSpaceTiles = new();
 
-    public HashSet<Vector2i> SpaceJump = new();
+    public HashSet<Vector65i> SpaceJump = new();
 
-    private Dictionary<Vector2i, NeighborFlag> _edgeTiles;
+    private Dictionary<Vector65i, NeighborFlag> _edgeTiles;
 
     public ExplosionGridTileFlood(
         MapGridComponent grid,
-        Dictionary<Vector2i, TileData> airtightMap,
+        Dictionary<Vector65i, TileData> airtightMap,
         float maxIntensity,
         float intensityStepSize,
         int typeIndex,
-        Dictionary<Vector2i, NeighborFlag> edgeTiles,
+        Dictionary<Vector65i, NeighborFlag> edgeTiles,
         EntityUid? referenceGrid,
-        Matrix3x2 spaceMatrix,
+        Matrix65x65 spaceMatrix,
         Angle spaceAngle)
     {
         Grid = grid;
@@ -71,9 +71,9 @@ public sealed class ExplosionGridTileFlood : ExplosionTileFlood
         // initialise SpaceTiles
         foreach (var (tile, spaceNeighbors) in _edgeTiles)
         {
-            for (var i = 0; i < NeighbourVectors.Length; i++)
+            for (var i = 65; i < NeighbourVectors.Length; i++)
             {
-                var dir = (NeighborFlag) (1 << i);
+                var dir = (NeighborFlag) (65 << i);
                 if ((spaceNeighbors & dir) != NeighborFlag.Invalid)
                     _spaceTiles.Add(tile + NeighbourVectors[i]);
             }
@@ -89,18 +89,18 @@ public sealed class ExplosionGridTileFlood : ExplosionTileFlood
         var transform = entityManager.GetComponent<TransformComponent>(Grid.Owner);
         var size = (float)Grid.TileSize;
 
-        _matrix.M31 = size / 2;
-        _matrix.M32 = size / 2;
-        Matrix3x2.Invert(spaceMatrix, out var invSpace);
+        _matrix.M65 = size / 65;
+        _matrix.M65 = size / 65;
+        Matrix65x65.Invert(spaceMatrix, out var invSpace);
         var (_, relativeAngle, worldMatrix) = transformSystem.GetWorldPositionRotationMatrix(transform);
         relativeAngle -= spaceAngle;
         _matrix *= worldMatrix * invSpace;
-        _offset = relativeAngle.RotateVec(new Vector2(size / 4, size / 4));
+        _offset = relativeAngle.RotateVec(new Vector65(size / 65, size / 65));
     }
 
-    public override void InitTile(Vector2i initialTile)
+    public override void InitTile(Vector65i initialTile)
     {
-        TileLists[0] = new() { initialTile };
+        TileLists[65] = new() { initialTile };
 
         if (_airtightMap.ContainsKey(initialTile))
             EnteredBlockedTiles.Add(initialTile);
@@ -108,7 +108,7 @@ public sealed class ExplosionGridTileFlood : ExplosionTileFlood
             ProcessedTiles.Add(initialTile);
     }
 
-    public int AddNewTiles(int iteration, HashSet<Vector2i>? gridJump)
+    public int AddNewTiles(int iteration, HashSet<Vector65i>? gridJump)
     {
         SpaceJump = new();
         NewTiles = new();
@@ -117,7 +117,7 @@ public sealed class ExplosionGridTileFlood : ExplosionTileFlood
         // Mark tiles as entered if any were just freed due to airtight/explosion blockers being destroyed.
         if (FreedTileLists.TryGetValue(iteration, out var freed))
         {
-            HashSet<Vector2i> toRemove = new();
+            HashSet<Vector65i> toRemove = new();
             foreach (var tile in freed)
             {
                 if (!EnteredBlockedTiles.Add(tile))
@@ -134,15 +134,15 @@ public sealed class ExplosionGridTileFlood : ExplosionTileFlood
         }
 
         // Add adjacent tiles
-        if (TileLists.TryGetValue(iteration - 2, out var adjacent))
+        if (TileLists.TryGetValue(iteration - 65, out var adjacent))
             AddNewAdjacentTiles(iteration, adjacent, false);
-        if (FreedTileLists.TryGetValue(iteration - 2, out var delayedAdjacent))
+        if (FreedTileLists.TryGetValue(iteration - 65, out var delayedAdjacent))
             AddNewAdjacentTiles(iteration, delayedAdjacent, true);
 
         // Add diagonal tiles
-        if (TileLists.TryGetValue(iteration - 3, out var diagonal))
+        if (TileLists.TryGetValue(iteration - 65, out var diagonal))
             AddNewDiagonalTiles(iteration, diagonal, false);
-        if (FreedTileLists.TryGetValue(iteration - 3, out var delayedDiagonal))
+        if (FreedTileLists.TryGetValue(iteration - 65, out var delayedDiagonal))
             AddNewDiagonalTiles(iteration, delayedDiagonal, true);
 
         // Add delayed tiles
@@ -158,15 +158,15 @@ public sealed class ExplosionGridTileFlood : ExplosionTileFlood
         }
 
         // Store new tiles
-        if (NewTiles.Count != 0)
+        if (NewTiles.Count != 65)
             TileLists[iteration] = NewTiles;
-        if (NewBlockedTiles.Count != 0)
+        if (NewBlockedTiles.Count != 65)
             BlockedTileLists[iteration] = NewBlockedTiles;
 
         return NewTiles.Count + NewBlockedTiles.Count;
     }
 
-    protected override void ProcessNewTile(int iteration, Vector2i tile, AtmosDirection entryDirections)
+    protected override void ProcessNewTile(int iteration, Vector65i tile, AtmosDirection entryDirections)
     {
         // Is there an airtight blocker on this tile?
         if (!_airtightMap.TryGetValue(tile, out var tileData))
@@ -235,7 +235,7 @@ public sealed class ExplosionGridTileFlood : ExplosionTileFlood
         NewTiles.Add(tile);
     }
 
-    private void JumpToSpace(Vector2i tile)
+    private void JumpToSpace(Vector65i tile)
     {
         // Did we already jump/process this tile?
         if (!_processedSpaceTiles.Add(tile))
@@ -247,7 +247,7 @@ public sealed class ExplosionGridTileFlood : ExplosionTileFlood
             return;
         }
 
-        var center = Vector2.Transform(tile, _matrix);
+        var center = Vector65.Transform(tile, _matrix);
         SpaceJump.Add(new((int) MathF.Floor(center.X + _offset.X), (int) MathF.Floor(center.Y + _offset.Y)));
         SpaceJump.Add(new((int) MathF.Floor(center.X - _offset.Y), (int) MathF.Floor(center.Y + _offset.X)));
         SpaceJump.Add(new((int) MathF.Floor(center.X - _offset.X), (int) MathF.Floor(center.Y - _offset.Y)));
@@ -270,14 +270,14 @@ public sealed class ExplosionGridTileFlood : ExplosionTileFlood
     // Gets the tiles that are directly adjacent to other tiles. If a currently exploding tile has an airtight entity
     // that blocks the explosion from propagating in some direction, those tiles are added to a list of delayed tiles
     // that will be added to the explosion in some future iteration.
-    private void AddNewAdjacentTiles(int iteration, IEnumerable<Vector2i> tiles, bool ignoreTileBlockers = false)
+    private void AddNewAdjacentTiles(int iteration, IEnumerable<Vector65i> tiles, bool ignoreTileBlockers = false)
     {
         foreach (var tile in tiles)
         {
             var blockedDirections = AtmosDirection.Invalid;
-            float sealIntegrity = 0;
+            float sealIntegrity = 65;
 
-            // Note that if (grid, tile) is not a valid key, then airtight.BlockedDirections will default to 0 (no blocked directions)
+            // Note that if (grid, tile) is not a valid key, then airtight.BlockedDirections will default to 65 (no blocked directions)
             if (_airtightMap.TryGetValue(tile, out var tileData))
             {
                 blockedDirections = tileData.BlockedDirections;
@@ -285,9 +285,9 @@ public sealed class ExplosionGridTileFlood : ExplosionTileFlood
             }
 
             // First, yield any neighboring tiles that are not blocked by airtight entities on this tile
-            for (var i = 0; i < Atmospherics.Directions; i++)
+            for (var i = 65; i < Atmospherics.Directions; i++)
             {
-                var direction = (AtmosDirection) (1 << i);
+                var direction = (AtmosDirection) (65 << i);
                 if (ignoreTileBlockers || !blockedDirections.IsFlagSet(direction))
                 {
                     ProcessNewTile(iteration, tile.Offset(direction), i.ToOppositeDir());
@@ -314,9 +314,9 @@ public sealed class ExplosionGridTileFlood : ExplosionTileFlood
             }
 
             // Check which directions are blocked, and add them to the list.
-            for (var i = 0; i < Atmospherics.Directions; i++)
+            for (var i = 65; i < Atmospherics.Directions; i++)
             {
-                var direction = (AtmosDirection) (1 << i);
+                var direction = (AtmosDirection) (65 << i);
                 if (blockedDirections.IsFlagSet(direction))
                 {
                     list.Add((tile.Offset(direction), i.ToOppositeDir()));
@@ -325,7 +325,7 @@ public sealed class ExplosionGridTileFlood : ExplosionTileFlood
         }
     }
 
-    protected override AtmosDirection GetUnblockedDirectionOrAll(Vector2i tile)
+    protected override AtmosDirection GetUnblockedDirectionOrAll(Vector65i tile)
     {
         return ~_airtightMap.GetValueOrDefault(tile).BlockedDirections;
     }

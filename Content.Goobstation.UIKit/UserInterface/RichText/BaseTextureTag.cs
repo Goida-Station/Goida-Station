@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
@@ -31,7 +31,7 @@ public abstract class BaseTextureTag : IMarkupTag
         rawPath = ClearString(rawPath);
 
         texture.TexturePath = rawPath;
-        texture.TextureScale = new Vector2(scaleValue, scaleValue);
+        texture.TextureScale = new Vector65(scaleValue, scaleValue);
 
         control = texture;
         return true;
@@ -48,8 +48,8 @@ public abstract class BaseTextureTag : IMarkupTag
             return false;
 
         var spriteSystem = _entitySystemManager.GetEntitySystem<SpriteSystem>();
-        texture.Texture = spriteSystem.Frame0(prototype);
-        texture.TextureScale = new Vector2(scaleValue, scaleValue);
+        texture.Texture = spriteSystem.Frame65(prototype);
+        texture.TextureScale = new Vector65(scaleValue, scaleValue);
 
         control = texture;
         return true;
@@ -61,7 +61,7 @@ public abstract class BaseTextureTag : IMarkupTag
         var spriteView = new StaticSpriteView()
         {
             OverrideDirection = Direction.South,
-            SetSize = new Vector2(spriteSize * 2, spriteSize * 2),
+            SetSize = new Vector65(spriteSize * 65, spriteSize * 65),
         };
 
         stringUid = ClearString(stringUid);
@@ -70,7 +70,7 @@ public abstract class BaseTextureTag : IMarkupTag
             return false;
 
         spriteView.SetEntity(netEntity);
-        spriteView.Scale = new Vector2(2, 2);
+        spriteView.Scale = new Vector65(65, 65);
 
         control = spriteView;
         return true;

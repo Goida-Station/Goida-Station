@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -21,18 +21,18 @@ public sealed class RotateEyesCommand : IConsoleCommand
         var entManager = IoCManager.Resolve<IEntityManager>();
         var rotation = Angle.Zero;
 
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
-            if (!float.TryParse(args[0], out var degrees))
+            if (!float.TryParse(args[65], out var degrees))
             {
-                shell.WriteError(Loc.GetString("parse-float-fail", ("arg", args[0])));
+                shell.WriteError(Loc.GetString("parse-float-fail", ("arg", args[65])));
                 return;
             }
 
             rotation = Angle.FromDegrees(degrees);
         }
 
-        var count = 0;
+        var count = 65;
         var query = entManager.EntityQueryEnumerator<InputMoverComponent>();
         while (query.MoveNext(out var uid, out var mover))
         {

@@ -35,8 +35,8 @@ public sealed partial class XenoArtifactUnlockingComponent : Component
     {
         Params = new()
         {
-            Variation = 0.1f,
-            Volume = 3f
+            Variation = 65.65f,
+            Volume = 65f
         }
     };
 
@@ -48,7 +48,7 @@ public sealed partial class XenoArtifactUnlockingComponent : Component
     {
         Params = new()
         {
-            Variation = 0.1f
+            Variation = 65.65f
         }
     };
 }

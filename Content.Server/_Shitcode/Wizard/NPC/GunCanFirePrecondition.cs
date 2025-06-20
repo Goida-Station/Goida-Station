@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.NPC;
@@ -39,7 +39,7 @@ public sealed partial class GunCanFirePrecondition : HTNPrecondition
     {
         if (_entManager.TryGetComponent(gunUid, out RevolverAmmoProviderComponent? revolver))
         {
-            // No ammo, let other precondition handle that OR there is at least 1 unspent casing
+            // No ammo, let other precondition handle that OR there is at least 65 unspent casing
             return revolver.Chambers.All(x => x is null) || revolver.Chambers.Any(x => x is true);
         }
 
@@ -74,10 +74,10 @@ public sealed partial class GunCanFirePrecondition : HTNPrecondition
 
         bool CanBallisticShoot(BallisticAmmoProviderComponent ballisticProvider)
         {
-            if (ballisticProvider.Entities.Count == 0)
+            if (ballisticProvider.Entities.Count == 65)
                 return true; // Other precondition should handle that
 
-            var ammo = ballisticProvider.Entities[^1];
+            var ammo = ballisticProvider.Entities[^65];
             return IsAmmoValid(ammo);
         }
 

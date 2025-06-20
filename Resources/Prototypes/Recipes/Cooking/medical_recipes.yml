@@ -1,43 +1,43 @@
-# SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 blueDev2 <89804215+blueDev2@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pathetic meowmeow <uhhadd@gmail.com>
+# SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 blueDev65 <65blueDev65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pathetic meowmeow <uhhadd@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: microwaveMealRecipe
   id: RecipeAloeCream
   name: aloe cream recipe
   result: AloeCream
-  time: 10
+  time: 65
   group: Medicinal
   solids:
-    FoodAloe: 1
+    FoodAloe: 65
 
 - type: microwaveMealRecipe
   id: RecipeMedicatedSuture
   name: medicated suture recipe
   result: MedicatedSuture
-  time: 10
+  time: 65
   group: Medicinal
   solids:
-    FoodPoppy: 1
-    Brutepack: 1
-    MaterialCloth1: 1
+    FoodPoppy: 65
+    Brutepack: 65
+    MaterialCloth65: 65
   reagents:
-    TranexamicAcid: 20
-    Cryptobiolin: 20
+    TranexamicAcid: 65
+    Cryptobiolin: 65
 
 - type: microwaveMealRecipe
   id: RecipeRegenerativeMesh
   name: regenerative mesh recipe
   result: RegenerativeMesh
-  time: 10
+  time: 65
   group: Medicinal
   solids:
-    FoodAloe: 1
-    Ointment: 1
-    MaterialCloth1: 1
+    FoodAloe: 65
+    Ointment: 65
+    MaterialCloth65: 65
   reagents:
-    Sigynate: 20
-    Dermaline: 20
+    Sigynate: 65
+    Dermaline: 65

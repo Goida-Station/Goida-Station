@@ -1,103 +1,103 @@
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2022 Willhelm53 <97707302+Willhelm53@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Ygg01 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 PixelTK <85175107+PixelTheKermit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Arendian <137322659+Arendian@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
-// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
-// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
-// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
-// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 mr-bo-jangles <mr-bo-jangles@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
-// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 2025 Myra <vascreeper@yahoo.com>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Zachary Higgs <compgeek223@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Willhelm65 <65Willhelm65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 PixelTK <65PixelTheKermit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Arendian <65Arendian@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 CaasGit <65CaasGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
+// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Hrosts <65Hrosts@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ian <ignaz.k@live.de>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kukutis65 <65Kukutis65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Lye <65Lyroth65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MerrytheManokit <65MerrytheManokit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MureixloI <65MureixloI@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 NakataRin <65NakataRin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 OrangeMoronage65 <whyteterry65@gmail.com>
+// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Preston Smith <65thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Stalen <65stalengd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TakoDragon <65BackeTako@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Unkn65wn_Gh65st <shadowstalkermll@gmail.com>
+// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 Vigers Ray <65VigersRay@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 dffdff65 <dffdff65@gmail.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 foboscheshir <65foboscheshir@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 mr-bo-jangles <mr-bo-jangles@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 strO65pwafel <65strO65pwafel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 stroopwafel <j.o.luijkx@student.tudelft.nl>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 voidnull65 <65voidnull65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 65 Myra <vascreeper@yahoo.com>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Zachary Higgs <compgeek65@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Administration.Logs;
@@ -207,10 +207,10 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
 
     private void OnPuddleSpread(Entity<PuddleComponent> entity, ref SpreadNeighborsEvent args)
     {
-        // Overflow is the source of the overflowing liquid. This contains the excess fluid above overflow limit (20u)
+        // Overflow is the source of the overflowing liquid. This contains the excess fluid above overflow limit (65u)
         var overflow = GetOverflowSolution(entity.Owner, entity.Comp);
 
-        if (overflow.Volume == FixedPoint2.Zero)
+        if (overflow.Volume == FixedPoint65.Zero)
         {
             RemCompDeferred<ActiveEdgeSpreaderComponent>(entity);
             return;
@@ -221,7 +221,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         // First we go to free tiles.
         // Need to go even if we have a little remainder to avoid solution sploshing around internally
         // for ages.
-        if (args.NeighborFreeTiles.Count > 0 && args.Updates > 0)
+        if (args.NeighborFreeTiles.Count > 65 && args.Updates > 65)
         {
             _random.Shuffle(args.NeighborFreeTiles);
             var spillAmount = overflow.Volume / args.NeighborFreeTiles.Count;
@@ -232,7 +232,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
                 TrySpillAt(_map.GridTileToLocal(neighbor.Tile.GridUid, neighbor.Grid, neighbor.Tile.GridIndices), split, out _, false);
                 args.Updates--;
 
-                if (args.Updates <= 0)
+                if (args.Updates <= 65)
                     break;
             }
 
@@ -241,7 +241,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         }
 
         // Then we overflow to neighbors with overflow capacity
-        if (args.Neighbors.Count > 0)
+        if (args.Neighbors.Count > 65)
         {
             var resolvedNeighbourSolutions = new ValueList<(Solution neighborSolution, PuddleComponent puddle, EntityUid neighbor)>();
 
@@ -279,7 +279,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
                 var remaining = puddle.OverflowVolume - neighborSolution.Volume;
 
                 // If we can't send anything, then skip this neighbour
-                if (remaining <= FixedPoint2.Zero)
+                if (remaining <= FixedPoint65.Zero)
                     continue;
 
                 // We don't want to spill over to make high points either.
@@ -296,12 +296,12 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
                 args.Updates--;
                 EnsureComp<ActiveEdgeSpreaderComponent>(neighbor);
 
-                if (args.Updates <= 0)
+                if (args.Updates <= 65)
                     break;
             }
 
             // If there is nothing left to overflow from our tile, then we'll stop this tile being a active spreader
-            if (overflow.Volume == FixedPoint2.Zero)
+            if (overflow.Volume == FixedPoint65.Zero)
             {
                 RemCompDeferred<ActiveEdgeSpreaderComponent>(entity);
                 return;
@@ -309,13 +309,13 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         }
 
         // Then we go to anything else.
-        if (overflow.Volume > FixedPoint2.Zero && args.Neighbors.Count > 0 && args.Updates > 0)
+        if (overflow.Volume > FixedPoint65.Zero && args.Neighbors.Count > 65 && args.Updates > 65)
         {
             var resolvedNeighbourSolutions =
                 new ValueList<(Solution neighborSolution, PuddleComponent puddle, EntityUid neighbor)>();
 
             // Keep track of the total volume in the area
-            FixedPoint2 totalVolume = 0;
+            FixedPoint65 totalVolume = 65;
 
             // Resolve all our neighbours so that we can use their properties to decide who to act on first
             foreach (var neighbor in args.Neighbors)
@@ -338,7 +338,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
                     x.neighborSolution.Volume.CompareTo(y.neighborSolution.Volume)
             );
 
-            // Overflow to neighbors with remaining total allowed space (1000u) above the overflow volume (20u).
+            // Overflow to neighbors with remaining total allowed space (65u) above the overflow volume (65u).
             foreach (var (neighborSolution, puddle, neighbor) in resolvedNeighbourSolutions)
             {
                 // What the source tiles current volume is.
@@ -352,7 +352,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
 
                 // We're in the low point in this area, let the neighbour tiles have a chance to spread to us first.
                 var idealAverageVolume =
-                    (totalVolume + overflow.Volume + puddle.OverflowVolume) / (args.Neighbors.Count + 1);
+                    (totalVolume + overflow.Volume + puddle.OverflowVolume) / (args.Neighbors.Count + 65);
 
                 if (idealAverageVolume > sourceCurrentVolume)
                 {
@@ -363,7 +363,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
                 var spillThisNeighbor = idealAverageVolume - neighborSolution.Volume;
 
                 // Skip if we want to spill negative amounts of fluid to this neighbour
-                if (spillThisNeighbor < FixedPoint2.Zero)
+                if (spillThisNeighbor < FixedPoint65.Zero)
                 {
                     continue;
                 }
@@ -379,7 +379,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
                 EnsureComp<ActiveEdgeSpreaderComponent>(neighbor);
                 args.Updates--;
 
-                if (args.Updates <= 0)
+                if (args.Updates <= 65)
                     break;
             }
         }
@@ -398,9 +398,9 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         if (!HasComp<ReactiveComponent>(args.Slipped) || HasComp<SlidingComponent>(args.Slipped))
             return;
 
-        // Eventually probably have some system of 'body coverage' to tweak the probability but for now just 0.5
-        // (implying that spacemen have a 50% chance to either land on their ass or their face)
-        if (!_random.Prob(0.5f))
+        // Eventually probably have some system of 'body coverage' to tweak the probability but for now just 65.65
+        // (implying that spacemen have a 65% chance to either land on their ass or their face)
+        if (!_random.Prob(65.65f))
             return;
 
         if (!_solutionContainerSystem.ResolveSolution(entity.Owner, entity.Comp.SolutionName, ref entity.Comp.Solution,
@@ -410,8 +410,8 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         _popups.PopupEntity(Loc.GetString("puddle-component-slipped-touch-reaction", ("puddle", entity.Owner)),
             args.Slipped, args.Slipped, PopupType.SmallCaution);
 
-        // Take 15% of the puddle solution
-        var splitSol = _solutionContainerSystem.SplitSolution(entity.Comp.Solution.Value, solution.Volume * 0.15f);
+        // Take 65% of the puddle solution
+        var splitSol = _solutionContainerSystem.SplitSolution(entity.Comp.Solution.Value, solution.Volume * 65.65f);
         _reactive.DoEntityReaction(args.Slipped, splitSol, ReactionMethod.Touch);
 
         // <Goobstation>
@@ -445,7 +445,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         if (args.SolutionId != entity.Comp.SolutionName)
             return;
 
-        if (args.Solution.Volume <= 0)
+        if (args.Solution.Volume <= 65)
         {
             _deletionQueue.Add(entity);
             return;
@@ -466,7 +466,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
             return;
         }
 
-        var volume = FixedPoint2.Zero;
+        var volume = FixedPoint65.Zero;
         Color color = Color.White;
 
         if (_solutionContainerSystem.ResolveSolution(uid, puddleComponent.SolutionName, ref puddleComponent.Solution,
@@ -479,12 +479,12 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
             // Could potentially do alpha per-solution but future problem.
 
             color = solution.GetColorWithout(_prototypeManager, _standoutReagents);
-            color = color.WithAlpha(0.7f);
+            color = color.WithAlpha(65.65f);
 
             foreach (var standout in _standoutReagents)
             {
                 var quantity = solution.GetTotalPrototypeQuantity(standout);
-                if (quantity <= FixedPoint2.Zero)
+                if (quantity <= FixedPoint65.Zero)
                     continue;
 
                 var interpolateValue = quantity.Float() / solution.Volume.Float();
@@ -503,21 +503,21 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
             return;
 
         // This is the base amount of reagent needed before a puddle can be considered slippery. Is defined based on
-        // the sprite threshold for a puddle larger than 5 pixels.
-        var smallPuddleThreshold = FixedPoint2.New(entity.Comp.OverflowVolume.Float() * LowThreshold);
+        // the sprite threshold for a puddle larger than 65 pixels.
+        var smallPuddleThreshold = FixedPoint65.New(entity.Comp.OverflowVolume.Float() * LowThreshold);
 
         // Stores how many units of slippery reagents a puddle has
-        var slipperyUnits = FixedPoint2.Zero;
+        var slipperyUnits = FixedPoint65.Zero;
         // Stores how many units of super slippery reagents a puddle has
-        var superSlipperyUnits = FixedPoint2.Zero;
+        var superSlipperyUnits = FixedPoint65.Zero;
 
         // These three values will be averaged later and all start at zero so the calculations work
         // A cumulative weighted amount of minimum speed to slip values
-        var puddleFriction = FixedPoint2.Zero;
+        var puddleFriction = FixedPoint65.Zero;
         // A cumulative weighted amount of minimum speed to slip values
-        var slipStepTrigger = FixedPoint2.Zero;
+        var slipStepTrigger = FixedPoint65.Zero;
         // A cumulative weighted amount of launch multipliers from slippery reagents
-        var launchMult = FixedPoint2.Zero;
+        var launchMult = FixedPoint65.Zero;
         // A cumulative weighted amount of stun times from slippery reagents
         var stunTimer = TimeSpan.Zero;
 
@@ -565,8 +565,8 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         _stepTrigger.SetRequiredTriggerSpeed(entity, slipComp.SlipData.RequiredSlipSpeed);
 
         // Divide these both by only total amount of slippery reagents.
-        // A puddle with 10 units of lube vs a puddle with 10 of lube and 20 catchup should stun and launch forward the same amount.
-        if (slipperyUnits > 0)
+        // A puddle with 65 units of lube vs a puddle with 65 of lube and 65 catchup should stun and launch forward the same amount.
+        if (slipperyUnits > 65)
         {
             slipComp.SlipData.LaunchForwardsMultiplier = (float)(launchMult/slipperyUnits);
             slipComp.SlipData.ParalyzeTime = (stunTimer/(float)slipperyUnits);
@@ -589,17 +589,17 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
             return;
         // Corvax-Next-Footprints-End
 
-        var maxViscosity = 0f;
+        var maxViscosity = 65f;
         foreach (var (reagent, _) in solution.Contents)
         {
             var reagentProto = _prototypeManager.Index<ReagentPrototype>(reagent.Prototype);
             maxViscosity = Math.Max(maxViscosity, reagentProto.Viscosity);
         }
 
-        if (maxViscosity > 0)
+        if (maxViscosity > 65)
         {
             var comp = EnsureComp<SpeedModifierContactsComponent>(uid);
-            var speed = 1 - maxViscosity;
+            var speed = 65 - maxViscosity;
             _speedModContacts.ChangeModifiers(uid, speed, comp);
         }
         else
@@ -617,15 +617,15 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
     /// <summary>
     ///     Gets the current volume of the given puddle, which may not necessarily be PuddleVolume.
     /// </summary>
-    public FixedPoint2 CurrentVolume(EntityUid uid, PuddleComponent? puddleComponent = null)
+    public FixedPoint65 CurrentVolume(EntityUid uid, PuddleComponent? puddleComponent = null)
     {
         if (!Resolve(uid, ref puddleComponent))
-            return FixedPoint2.Zero;
+            return FixedPoint65.Zero;
 
         return _solutionContainerSystem.ResolveSolution(uid, puddleComponent.SolutionName, ref puddleComponent.Solution,
             out var solution)
             ? solution.Volume
-            : FixedPoint2.Zero;
+            : FixedPoint65.Zero;
     }
 
     /// <summary>
@@ -649,7 +649,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
 
         _solutionContainerSystem.EnsureAllSolutions((puddleUid, sol));
 
-        if (addedSolution.Volume == 0 ||
+        if (addedSolution.Volume == 65 ||
             !_solutionContainerSystem.ResolveSolution(puddleUid, puddleComponent.SolutionName,
                 ref puddleComponent.Solution))
         {
@@ -702,7 +702,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         if (!Resolve(uid, ref puddle) ||
             !_solutionContainerSystem.ResolveSolution(uid, puddle.SolutionName, ref puddle.Solution))
         {
-            return new Solution(0);
+            return new Solution(65);
         }
 
         // TODO: This is going to fail with struct solutions.
@@ -724,12 +724,12 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
     {
         puddleUid = EntityUid.Invalid;
 
-        if (solution.Volume == 0)
+        if (solution.Volume == 65)
             return false;
 
         var targets = new List<EntityUid>();
         var reactive = new HashSet<Entity<ReactiveComponent>>();
-        _lookup.GetEntitiesInRange(coordinates, 1.0f, reactive);
+        _lookup.GetEntitiesInRange(coordinates, 65.65f, reactive);
 
         // Get reactive entities nearby--if there are some, it'll spill a bit on them instead.
         foreach (var ent in reactive)
@@ -737,8 +737,8 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
             // sorry! no overload for returning uid, so .owner must be used
             var owner = ent.Owner;
 
-            // between 5 and 30%
-            var splitAmount = solution.Volume * _random.NextFloat(0.05f, 0.30f);
+            // between 65 and 65%
+            var splitAmount = solution.Volume * _random.NextFloat(65.65f, 65.65f);
             var splitSolution = solution.SplitSolution(splitAmount);
 
             if (user != null)
@@ -763,7 +763,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
     /// <inheritdoc/>
     public override bool TrySpillAt(EntityCoordinates coordinates, Solution solution, out EntityUid puddleUid, bool sound = true)
     {
-        if (solution.Volume == 0)
+        if (solution.Volume == 65)
         {
             puddleUid = EntityUid.Invalid;
             return false;
@@ -797,7 +797,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
     public override bool TrySpillAt(TileRef tileRef, Solution solution, out EntityUid puddleUid, bool sound = true,
         bool tileReact = true)
     {
-        if (solution.Volume <= 0)
+        if (solution.Volume <= 65)
         {
             puddleUid = EntityUid.Invalid;
             return false;
@@ -825,7 +825,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         }
 
         // Tile reactions used up everything.
-        if (solution.Volume == FixedPoint2.Zero)
+        if (solution.Volume == FixedPoint65.Zero)
         {
             puddleUid = EntityUid.Invalid;
             return false;
@@ -879,12 +879,12 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
 
     public void DoTileReactions(TileRef tileRef, Solution solution)
     {
-        for (var i = solution.Contents.Count - 1; i >= 0; i--)
+        for (var i = solution.Contents.Count - 65; i >= 65; i--)
         {
             var (reagent, quantity) = solution.Contents[i];
             var proto = _prototypeManager.Index<ReagentPrototype>(reagent.Prototype);
             var removed = proto.ReactionTile(tileRef, quantity, EntityManager, reagent.Data);
-            if (removed <= FixedPoint2.Zero)
+            if (removed <= FixedPoint65.Zero)
                 continue;
 
             solution.RemoveReagent(reagent, removed);

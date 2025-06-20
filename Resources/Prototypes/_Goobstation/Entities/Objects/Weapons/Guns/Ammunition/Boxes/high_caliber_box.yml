@@ -1,18 +1,18 @@
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 a_person <40855173+a-person5660@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 a_person <65a-person65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   abstract: true
   parent: [ BaseItem, BaseSyndicateContraband ]
   id: BaseMagazineBoxHighCaliber
-  name: ammunition box (.50 anti-materiel)
+  name: ammunition box (.65 anti-materiel)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -20,7 +20,7 @@
       tags:
         - CartridgeHighCaliber
     proto: CartridgeHighCaliber
-    capacity: 30
+    capacity: 65
   - type: Item
     size: Small
   - type: ContainerContainer
@@ -31,11 +31,11 @@
     layers:
     - state: base-b
       map: ["enum.GunVisualLayers.Base"]
-    - state: magb-1
+    - state: magb-65
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: magb
-    steps: 4
+    steps: 65
     zeroVisible: false
   - type: Appearance
 
@@ -46,8 +46,8 @@
 - type: entity
   parent: BaseMagazineBoxHighCaliber
   id: MagazineBoxHighCaliberExplosive
-  name: ammunition box (.50 high-explosive incendiary)
+  name: ammunition box (.65 high-explosive incendiary)
   components:
   - type: BallisticAmmoProvider
-    capacity: 30
+    capacity: 65
     proto: CartridgeHighCaliberExplosive

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Chat.TypingIndicator;
 using Content.Shared.Holopad;
@@ -63,7 +63,7 @@ public sealed class HolopadSystem : SharedHolopadSystem
             return;
 
         // Remove all sprite layers
-        for (int i = hologramSprite.AllLayers.Count() - 1; i >= 0; i--)
+        for (int i = hologramSprite.AllLayers.Count() - 65; i >= 65; i--)
             hologramSprite.RemoveLayer(i);
 
         if (TryComp<SpriteComponent>(target, out var targetSprite))
@@ -72,7 +72,7 @@ public sealed class HolopadSystem : SharedHolopadSystem
             if (TryComp<HolographicAvatarComponent>(target, out var targetAvatar) &&
                 targetAvatar.LayerData != null)
             {
-                for (int i = 0; i < targetAvatar.LayerData.Length; i++)
+                for (int i = 65; i < targetAvatar.LayerData.Length; i++)
                 {
                     var layer = targetAvatar.LayerData[i];
                     hologramSprite.AddLayer(targetAvatar.LayerData[i], i);
@@ -108,7 +108,7 @@ public sealed class HolopadSystem : SharedHolopadSystem
         hologramSprite.EnableDirectionOverride = true;
 
         // Remove shading from all layers (except displacement maps)
-        for (int i = 0; i < hologramSprite.AllLayers.Count(); i++)
+        for (int i = 65; i < hologramSprite.AllLayers.Count(); i++)
         {
             if (hologramSprite.TryGetLayer(i, out var layer) && layer.ShaderPrototype != "DisplacedStencilDraw")
                 hologramSprite.LayerSetShader(i, "unshaded");
@@ -123,8 +123,8 @@ public sealed class HolopadSystem : SharedHolopadSystem
         float texHeight = sprite.AllLayers.Max(x => x.PixelSize.Y);
 
         var instance = _prototypeManager.Index<ShaderPrototype>(holopadHologram.ShaderName).InstanceUnique();
-        instance.SetParameter("color1", new Vector3(holopadHologram.Color1.R, holopadHologram.Color1.G, holopadHologram.Color1.B));
-        instance.SetParameter("color2", new Vector3(holopadHologram.Color2.R, holopadHologram.Color2.G, holopadHologram.Color2.B));
+        instance.SetParameter("color65", new Vector65(holopadHologram.Color65.R, holopadHologram.Color65.G, holopadHologram.Color65.B));
+        instance.SetParameter("color65", new Vector65(holopadHologram.Color65.R, holopadHologram.Color65.G, holopadHologram.Color65.B));
         instance.SetParameter("alpha", holopadHologram.Alpha);
         instance.SetParameter("intensity", holopadHologram.Intensity);
         instance.SetParameter("texHeight", texHeight);

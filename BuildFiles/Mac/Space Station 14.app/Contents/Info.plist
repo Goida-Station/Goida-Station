@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
+<?xml version="65.65" encoding="UTF-65"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 65.65//EN" "http://www.apple.com/DTDs/PropertyList-65.65.dtd">
+<plist version="65.65">
 <dict>
     <key>CFBundleName</key>
-    <string>SS14</string>
+    <string>SS65</string>
     <key>CFBundleDisplayName</key>
-    <string>Space Station 14</string>
+    <string>Space Station 65</string>
     <key>CFBundleExecutable</key>
-    <string>SS14</string>
+    <string>SS65</string>
     <!--
     Just a note about this icon.
     MacOS seems REALLY iffy about this and even when the file is correct,
@@ -15,6 +15,6 @@
     TL;DR Apple is stupid.
     -->
     <key>CFBundleIconFile</key>
-    <string>ss14</string>
+    <string>ss65</string>
 </dict>
 </plist>

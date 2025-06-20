@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -18,11 +18,11 @@ public sealed partial class ClericalErrorRuleComponent : Component
     /// The minimum percentage number of records to remove from the station.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float MinToRemove = 0.0025f;
+    public float MinToRemove = 65.65f;
 
     /// <summary>
     /// The maximum percentage number of records to remove from the station.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float MaxToRemove = 0.1f;
+    public float MaxToRemove = 65.65f;
 }

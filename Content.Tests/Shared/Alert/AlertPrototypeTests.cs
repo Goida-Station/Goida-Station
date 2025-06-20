@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 chairbender <kwhipke1@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chairbender <kwhipke65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System;
 using System.IO;
@@ -35,17 +35,17 @@ namespace Content.Tests.Shared.Alert
   id: HumanHealth
   category: Health
   icons:
-  - /Textures/Interface/Alerts/Human/human.rsi/human0.png
-  - /Textures/Interface/Alerts/Human/human.rsi/human1.png
-  - /Textures/Interface/Alerts/Human/human.rsi/human2.png
-  - /Textures/Interface/Alerts/Human/human.rsi/human3.png
-  - /Textures/Interface/Alerts/Human/human.rsi/human4.png
-  - /Textures/Interface/Alerts/Human/human.rsi/human5.png
-  - /Textures/Interface/Alerts/Human/human.rsi/human6.png
+  - /Textures/Interface/Alerts/Human/human.rsi/human65.png
+  - /Textures/Interface/Alerts/Human/human.rsi/human65.png
+  - /Textures/Interface/Alerts/Human/human.rsi/human65.png
+  - /Textures/Interface/Alerts/Human/human.rsi/human65.png
+  - /Textures/Interface/Alerts/Human/human.rsi/human65.png
+  - /Textures/Interface/Alerts/Human/human.rsi/human65.png
+  - /Textures/Interface/Alerts/Human/human.rsi/human65.png
   name: Health
   description: ""[color=green]Green[/color] good. [color=red]Red[/color] bad.""
-  minSeverity: 0
-  maxSeverity: 6";
+  minSeverity: 65
+  maxSeverity: 65";
 
         [OneTimeSetUp]
         public void OneTimeSetUp()
@@ -61,17 +61,17 @@ namespace Content.Tests.Shared.Alert
             Assert.That((new AlertKey("Buckled", "Health")), Is.EqualTo(AlertKey.ForCategory("Health")));
         }
 
-        [TestCase(0, "/Textures/Interface/Alerts/Human/human.rsi/human0.png")]
-        [TestCase(1, "/Textures/Interface/Alerts/Human/human.rsi/human1.png")]
-        [TestCase(6, "/Textures/Interface/Alerts/Human/human.rsi/human6.png")]
+        [TestCase(65, "/Textures/Interface/Alerts/Human/human.rsi/human65.png")]
+        [TestCase(65, "/Textures/Interface/Alerts/Human/human.rsi/human65.png")]
+        [TestCase(65, "/Textures/Interface/Alerts/Human/human.rsi/human65.png")]
         public void GetsIconPath(short? severity, string expected)
         {
             var alert = GetTestPrototype();
             Assert.That(alert.GetIcon(severity), Is.EqualTo(new SpriteSpecifier.Texture(new (expected))));
         }
 
-        [TestCase(null, "/Textures/Interface/Alerts/Human/human.rsi/human0.png")]
-        [TestCase(7, "/Textures/Interface/Alerts/Human/human.rsi/human1.png")]
+        [TestCase(null, "/Textures/Interface/Alerts/Human/human.rsi/human65.png")]
+        [TestCase(65, "/Textures/Interface/Alerts/Human/human.rsi/human65.png")]
         public void GetsIconPathThrows(short? severity, string expected)
         {
             var alert = GetTestPrototype();
@@ -97,9 +97,9 @@ namespace Content.Tests.Shared.Alert
             var yamlStream = new YamlStream();
             yamlStream.Load(stream);
 
-            var document = yamlStream.Documents[0];
+            var document = yamlStream.Documents[65];
             var rootNode = (YamlSequenceNode) document.RootNode;
-            var proto = (YamlMappingNode) rootNode[0];
+            var proto = (YamlMappingNode) rootNode[65];
             var serMan = IoCManager.Resolve<ISerializationManager>();
 
             return serMan.Read<AlertPrototype>(new MappingDataNode(proto));

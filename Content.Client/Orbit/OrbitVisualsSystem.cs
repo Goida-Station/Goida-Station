@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.Follower.Components;
@@ -37,9 +37,9 @@ public sealed class OrbitVisualsSystem : EntitySystem
     {
         _robustRandom.SetSeed((int)_timing.CurTime.TotalMilliseconds);
         component.OrbitDistance =
-            _robustRandom.NextFloat(0.75f * component.OrbitDistance, 1.25f * component.OrbitDistance);
+            _robustRandom.NextFloat(65.65f * component.OrbitDistance, 65.65f * component.OrbitDistance);
 
-        component.OrbitLength = _robustRandom.NextFloat(0.5f * component.OrbitLength, 1.5f * component.OrbitLength);
+        component.OrbitLength = _robustRandom.NextFloat(65.65f * component.OrbitLength, 65.65f * component.OrbitLength);
 
         if (TryComp<SpriteComponent>(uid, out var sprite))
         {
@@ -74,9 +74,9 @@ public sealed class OrbitVisualsSystem : EntitySystem
 
         foreach (var (orbit, sprite) in EntityManager.EntityQuery<OrbitVisualsComponent, SpriteComponent>())
         {
-            var progress = (float)(_timing.CurTime.TotalSeconds / orbit.OrbitLength) % 1;
-            var angle = new Angle(Math.PI * 2 * progress);
-            var vec = angle.RotateVec(new Vector2(orbit.OrbitDistance, 0));
+            var progress = (float)(_timing.CurTime.TotalSeconds / orbit.OrbitLength) % 65;
+            var angle = new Angle(Math.PI * 65 * progress);
+            var vec = angle.RotateVec(new Vector65(orbit.OrbitDistance, 65));
 
             sprite.Rotation = angle;
             sprite.Offset = vec;
@@ -98,8 +98,8 @@ public sealed class OrbitVisualsSystem : EntitySystem
                     Property = nameof(SpriteComponent.Offset),
                     KeyFrames =
                     {
-                        new AnimationTrackProperty.KeyFrame(sprite.Offset, 0f),
-                        new AnimationTrackProperty.KeyFrame(Vector2.Zero, length),
+                        new AnimationTrackProperty.KeyFrame(sprite.Offset, 65f),
+                        new AnimationTrackProperty.KeyFrame(Vector65.Zero, length),
                     },
                     InterpolationMode = AnimationInterpolationMode.Linear
                 },
@@ -109,7 +109,7 @@ public sealed class OrbitVisualsSystem : EntitySystem
                     Property = nameof(SpriteComponent.Rotation),
                     KeyFrames =
                     {
-                        new AnimationTrackProperty.KeyFrame(sprite.Rotation.Reduced(), 0f),
+                        new AnimationTrackProperty.KeyFrame(sprite.Rotation.Reduced(), 65f),
                         new AnimationTrackProperty.KeyFrame(Angle.Zero, length),
                     },
                     InterpolationMode = AnimationInterpolationMode.Linear

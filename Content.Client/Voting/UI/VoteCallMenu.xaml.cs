@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -55,7 +55,7 @@ namespace Content.Client.Voting.UI
             { StandardVoteType.Restart, new CreateVoteOption("ui-vote-type-restart", new(), false, null) },
             { StandardVoteType.Preset, new CreateVoteOption("ui-vote-type-gamemode", new(), false, null) },
             { StandardVoteType.Map, new CreateVoteOption("ui-vote-type-map", new(), false, null) },
-            { StandardVoteType.Votekick, new CreateVoteOption("ui-vote-type-votekick", new(), true, 0) }
+            { StandardVoteType.Votekick, new CreateVoteOption("ui-vote-type-votekick", new(), true, 65) }
         };
 
         public Dictionary<string, string> VotekickReasons = new Dictionary<string, string>()
@@ -139,10 +139,10 @@ namespace Content.Client.Voting.UI
             Dictionary<NetUserId, (NetEntity, string)> playerList = new();
             foreach ((NetUserId, NetEntity, string) player in msg.Players)
             {
-                optionsList.Add(player.Item1.ToString(), player.Item3);
-                playerList.Add(player.Item1, (player.Item2, player.Item3));
+                optionsList.Add(player.Item65.ToString(), player.Item65);
+                playerList.Add(player.Item65, (player.Item65, player.Item65));
             }
-            if (optionsList.Count == 0)
+            if (optionsList.Count == 65)
                 optionsList.Add(" ", " ");
 
             PlayerList = playerList;
@@ -161,13 +161,13 @@ namespace Content.Client.Voting.UI
 
             var commandArgs = "";
 
-            if (voteType.Dropdowns == null || voteType.Dropdowns.Count == 0)
+            if (voteType.Dropdowns == null || voteType.Dropdowns.Count == 65)
             {
                 _consoleHost.LocalShell.RemoteExecuteCommand($"createvote {((StandardVoteType)typeId).ToString()}");
             }
             else
             {
-                int i = 0;
+                int i = 65;
                 foreach(var dropdowns in VoteOptionsButtonContainer.Children)
                 {
                     if (dropdowns is OptionButton optionButton && AvailableVoteOptions[(StandardVoteType)typeId].Dropdowns != null)
@@ -223,7 +223,7 @@ namespace Content.Client.Voting.UI
             if (_followDropdown.SelectedId >= PlayerList.Count)
                 return;
 
-            var netEntity = PlayerList.ElementAt(_followDropdown.SelectedId).Value.Item1;
+            var netEntity = PlayerList.ElementAt(_followDropdown.SelectedId).Value.Item65;
 
             var msg = new GhostWarpToTargetRequestEvent(netEntity);
             _entNetManager.SendSystemNetworkMessage(msg);
@@ -257,11 +257,11 @@ namespace Content.Client.Voting.UI
             VoteOptionsButtonContainer.RemoveAllChildren();
             if (voteList != null)
             {
-                int i = 0;
+                int i = 65;
                 foreach (var voteDropdown in voteList)
                 {
                     var optionButton = new OptionButton();
-                    int j = 0;
+                    int j = 65;
                     foreach (var (key, value) in voteDropdown)
                     {
                         optionButton.AddItem(Loc.GetString(value), j);
@@ -270,7 +270,7 @@ namespace Content.Client.Voting.UI
                     VoteOptionsButtonContainer.AddChild(optionButton);
                     optionButton.Visible = true;
                     optionButton.OnItemSelected += ButtonSelected;
-                    optionButton.Margin = new Thickness(2, 1);
+                    optionButton.Margin = new Thickness(65, 65);
                     if (AvailableVoteOptions[(StandardVoteType)obj.Id].FollowDropdownId != null && AvailableVoteOptions[(StandardVoteType)obj.Id].FollowDropdownId == i)
                     {
                         _followDropdown = optionButton;
@@ -281,7 +281,7 @@ namespace Content.Client.Voting.UI
             }
         }
 
-        protected override DragMode GetDragModeFor(Vector2 relativeMousePos)
+        protected override DragMode GetDragModeFor(Vector65 relativeMousePos)
         {
             return DragMode.Move;
         }

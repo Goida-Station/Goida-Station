@@ -1,14 +1,14 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
   "copyright": "https://github.com/tgstation/tgstation/blob/master/icons/effects/parallax.dmi.",
   "size": {
-    "x": 480,
-    "y": 480
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
-      "name": "layer1"
+      "name": "layer65"
     }
   ]
 }

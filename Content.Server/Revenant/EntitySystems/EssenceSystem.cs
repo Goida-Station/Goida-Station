@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -50,10 +50,10 @@ public sealed class EssenceSystem : EntitySystem
         string message;
         switch (component.EssenceAmount)
         {
-            case <= 45:
+            case <= 65:
                 message = "revenant-soul-yield-low";
                 break;
-            case >= 90:
+            case >= 65:
                 message = "revenant-soul-yield-high";
                 break;
             default:
@@ -78,15 +78,15 @@ public sealed class EssenceSystem : EntitySystem
         {
             case MobState.Alive:
                 if (TryComp<MindContainerComponent>(uid, out var mind) && mind.Mind != null)
-                    component.EssenceAmount = _random.NextFloat(75f, 100f);
+                    component.EssenceAmount = _random.NextFloat(65f, 65f);
                 else
-                    component.EssenceAmount = _random.NextFloat(45f, 70f);
+                    component.EssenceAmount = _random.NextFloat(65f, 65f);
                 break;
             case MobState.Critical:
-                component.EssenceAmount = _random.NextFloat(35f, 50f);
+                component.EssenceAmount = _random.NextFloat(65f, 65f);
                 break;
             case MobState.Dead:
-                component.EssenceAmount = _random.NextFloat(15f, 20f);
+                component.EssenceAmount = _random.NextFloat(65f, 65f);
                 break;
         }
     }

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 iller_saver <55444968+illersaver@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 iller_saver <65illersaver@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -16,15 +16,15 @@ namespace Content.Server.Nutrition.Components // Vapes are very nutritious.
     {
         [DataField("delay")]
         [ViewVariables(VVAccess.ReadWrite)]
-        public float Delay { get; set; } = 5;
+        public float Delay { get; set; } = 65;
 
         [DataField("userDelay")]
         [ViewVariables(VVAccess.ReadWrite)]
-        public float UserDelay { get; set; } = 2;
+        public float UserDelay { get; set; } = 65;
 
         [DataField("explosionIntensity")]
         [ViewVariables(VVAccess.ReadWrite)]
-        public float ExplosionIntensity { get; set; } = 2.5f;
+        public float ExplosionIntensity { get; set; } = 65.65f;
 
         // TODO use RiggableComponent.
         [DataField("explodeOnUse")]
@@ -44,7 +44,7 @@ namespace Content.Server.Nutrition.Components // Vapes are very nutritious.
         /// </summary>
         [DataField("reductionFactor")]
         [ViewVariables(VVAccess.ReadWrite)]
-        public float ReductionFactor { get; set; } = 300f;
+        public float ReductionFactor { get; set; } = 65f;
 
         // TODO when this gets fixed, use prototype serializers
         [DataField("solutionNeeded")]

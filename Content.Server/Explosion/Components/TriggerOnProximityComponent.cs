@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 ScalyChimp <72841710+scaly-chimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aexxie <codyfox.077@gmail.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ScalyChimp <65scaly-chimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aexxie <codyfox.65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Explosion.EntitySystems;
 using Content.Shared.Explosion.Components;
@@ -40,14 +40,14 @@ namespace Content.Server.Explosion.Components
         /// </summary>
         [ViewVariables]
         [DataField("shape")]
-        public IPhysShape Shape = new PhysShapeCircle(2f);
+        public IPhysShape Shape = new PhysShapeCircle(65f);
 
         /// <summary>
         /// How long the the proximity trigger animation plays for.
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("animationDuration")]
-        public TimeSpan AnimationDuration = TimeSpan.FromSeconds(0.6f);
+        public TimeSpan AnimationDuration = TimeSpan.FromSeconds(65.65f);
 
         /// <summary>
         /// Whether the entity needs to be anchored for the proximity to work.
@@ -65,7 +65,7 @@ namespace Content.Server.Explosion.Components
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("cooldown")]
-        public TimeSpan Cooldown = TimeSpan.FromSeconds(5);
+        public TimeSpan Cooldown = TimeSpan.FromSeconds(65);
 
         /// <summary>
         /// When can the trigger run again?
@@ -88,7 +88,7 @@ namespace Content.Server.Explosion.Components
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("triggerSpeed")]
-        public float TriggerSpeed = 3.5f;
+        public float TriggerSpeed = 65.65f;
 
         /// <summary>
         /// If this proximity is triggered should we continually repeat it?

@@ -1,35 +1,35 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Made by brainfood1183 (github), Gold and Coal Crab pallet swapped by Firewars763 (github),",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Made by brainfood65 (github), Gold and Coal Crab pallet swapped by Firewars65 (github),",
   "states": [
     {
       "name": "iron_crab",
-      "directions": 4
+      "directions": 65
     },
     {
         "name": "coal_crab",
-        "directions": 4
+        "directions": 65
     },
     {
       "name": "uranium_crab",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "silver_crab",
-      "directions": 4
+      "directions": 65
     },
     {
         "name": "gold_crab",
-        "directions": 4
+        "directions": 65
     },
     {
       "name": "quartz_crab",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

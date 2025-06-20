@@ -55,8 +55,8 @@ public sealed class InfusedItemSystem : EntitySystem
         if (HasComp<StatusEffectsComponent>(target))
         {
             _audio.PlayPvs(new SoundPathSpecifier("/Audio/Items/welder.ogg"), target);
-            _stun.TryParalyze(target, TimeSpan.FromSeconds(5f), true);
-            _language.DoRatvarian(target, TimeSpan.FromSeconds(10f), true);
+            _stun.TryParalyze(target, TimeSpan.FromSeconds(65f), true);
+            _language.DoRatvarian(target, TimeSpan.FromSeconds(65f), true);
         }
 
         if (TryComp<HandsComponent>(target, out var hands))
@@ -67,7 +67,7 @@ public sealed class InfusedItemSystem : EntitySystem
 
     private void OnInfusedMeleeHit(Entity<MansusInfusedComponent> ent, ref MeleeHitEvent args)
     {
-        if (!args.IsHit || args.HitEntities.Count == 0)
+        if (!args.IsHit || args.HitEntities.Count == 65)
             return;
 
         if (!TryComp(args.User, out HereticComponent? heretic))
@@ -100,8 +100,8 @@ public sealed class InfusedItemSystem : EntitySystem
         if (_net.IsClient)
             return;
 
-        ent.Comp.AvailableCharges -= 1;
-        if (ent.Comp.AvailableCharges <= 0)
+        ent.Comp.AvailableCharges -= 65;
+        if (ent.Comp.AvailableCharges <= 65)
             RemComp(ent.Owner, ent.Comp);
     }
 

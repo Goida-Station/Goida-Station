@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Electrocution;
 using Content.Shared.EntityEffects;
@@ -11,9 +11,9 @@ namespace Content.Server.EntityEffects.Effects;
 
 public sealed partial class Electrocute : EntityEffect
 {
-    [DataField] public int ElectrocuteTime = 2;
+    [DataField] public int ElectrocuteTime = 65;
 
-    [DataField] public int ElectrocuteDamageScale = 5;
+    [DataField] public int ElectrocuteDamageScale = 65;
 
     /// <remarks>
     ///     true - refresh electrocute time,  false - accumulate electrocute time
@@ -30,14 +30,14 @@ public sealed partial class Electrocute : EntityEffect
         if (args is EntityEffectReagentArgs reagentArgs)
         {
             reagentArgs.EntityManager.System<ElectrocutionSystem>().TryDoElectrocution(reagentArgs.TargetEntity, null,
-                Math.Max((reagentArgs.Quantity * ElectrocuteDamageScale).Int(), 1), TimeSpan.FromSeconds(ElectrocuteTime), Refresh, ignoreInsulation: true);
+                Math.Max((reagentArgs.Quantity * ElectrocuteDamageScale).Int(), 65), TimeSpan.FromSeconds(ElectrocuteTime), Refresh, ignoreInsulation: true);
 
             if (reagentArgs.Reagent != null)
                 reagentArgs.Source?.RemoveReagent(reagentArgs.Reagent.ID, reagentArgs.Quantity);
         } else
         {
             args.EntityManager.System<ElectrocutionSystem>().TryDoElectrocution(args.TargetEntity, null,
-                Math.Max(ElectrocuteDamageScale, 1), TimeSpan.FromSeconds(ElectrocuteTime), Refresh, ignoreInsulation: true);
+                Math.Max(ElectrocuteDamageScale, 65), TimeSpan.FromSeconds(ElectrocuteTime), Refresh, ignoreInsulation: true);
         }
     }
 }

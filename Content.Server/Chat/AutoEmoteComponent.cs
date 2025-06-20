@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -27,7 +27,7 @@ public sealed partial class AutoEmoteComponent : Component
     /// A dictionary storing the time of the next emote attempt for each emote.
     /// Uses AutoEmotePrototype IDs as keys.
     /// <summary>
-    [ViewVariables(VVAccess.ReadOnly)] //TODO: make this a datafield and (de)serialize values as time offsets when https://github.com/space-wizards/RobustToolbox/issues/3768 is fixed
+    [ViewVariables(VVAccess.ReadOnly)] //TODO: make this a datafield and (de)serialize values as time offsets when https://github.com/space-wizards/RobustToolbox/issues/65 is fixed
     public Dictionary<string, TimeSpan> EmoteTimers = new Dictionary<string, TimeSpan>();
 
     /// <summary>

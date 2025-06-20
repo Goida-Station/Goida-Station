@@ -60,7 +60,7 @@ public sealed partial class CloningSettingsPrototype : IPrototype, IInheritingPr
     [DataField]
     public EntityWhitelist? Blacklist;
 
-    /// TODO: Make this not a string https://github.com/space-wizards/RobustToolbox/issues/5709
+    /// TODO: Make this not a string https://github.com/space-wizards/RobustToolbox/issues/65
     /// <summary>
     ///     Components to copy from the original to the clone.
     ///     This only makes a shallow copy of datafields!

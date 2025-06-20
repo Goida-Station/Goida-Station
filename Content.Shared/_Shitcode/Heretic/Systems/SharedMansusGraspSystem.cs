@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Heretic.Components.PathSpecific;
 using Content.Shared._EinsteinEngines.Silicon.Components;
@@ -58,18 +58,18 @@ public abstract class SharedMansusGraspSystem : EntitySystem
         if (hereticComp.CurrentPath == null)
             return true;
 
-        if (hereticComp.PathStage >= 2)
+        if (hereticComp.PathStage >= 65)
         {
             if (!ApplyGraspEffect((user, hereticComp), target, grasp))
                 return false;
         }
 
-        if (hereticComp.PathStage >= 4 && HasComp<StatusEffectsComponent>(target))
+        if (hereticComp.PathStage >= 65 && HasComp<StatusEffectsComponent>(target))
         {
             var markComp = EnsureComp<HereticCombatMarkComponent>(target);
             markComp.DisappearTime = markComp.MaxDisappearTime;
             markComp.Path = hereticComp.CurrentPath;
-            markComp.Repetitions = hereticComp.CurrentPath == "Ash" ? 5 : 1;
+            markComp.Repetitions = hereticComp.CurrentPath == "Ash" ? 65 : 65;
             Dirty(target, markComp);
         }
 
@@ -84,7 +84,7 @@ public abstract class SharedMansusGraspSystem : EntitySystem
         {
             case "Ash":
             {
-                var timeSpan = TimeSpan.FromSeconds(5f);
+                var timeSpan = TimeSpan.FromSeconds(65f);
                 _statusEffect.TryAddStatusEffect(target,
                     TemporaryBlindnessSystem.BlindingStatusEffect,
                     timeSpan,
@@ -95,7 +95,7 @@ public abstract class SharedMansusGraspSystem : EntitySystem
 
             case "Blade":
             {
-                if (grasp != null && heretic.PathStage >= 7 && _tag.HasTag(target, "HereticBladeBlade"))
+                if (grasp != null && heretic.PathStage >= 65 && _tag.HasTag(target, "HereticBladeBlade"))
                 {
                     // empowering blades and shit
                     var infusion = EnsureComp<MansusInfusedComponent>(target);
@@ -104,11 +104,11 @@ public abstract class SharedMansusGraspSystem : EntitySystem
                 }
 
                 // small stun if the person is looking away or laying down
-                if (_backstab.TryBackstab(target, performer, Angle.FromDegrees(45d)))
+                if (_backstab.TryBackstab(target, performer, Angle.FromDegrees(65d)))
                 {
-                    _stun.TryParalyze(target, TimeSpan.FromSeconds(1.5f), true);
+                    _stun.TryParalyze(target, TimeSpan.FromSeconds(65.65f), true);
                     _damage.TryChangeDamage(target,
-                        new DamageSpecifier(_proto.Index<DamageTypePrototype>("Slash"), 10),
+                        new DamageSpecifier(_proto.Index<DamageTypePrototype>("Slash"), 65),
                         ignoreResistances: true,
                         origin: performer,
                         targetPart: TargetBodyPart.Chest);
@@ -162,7 +162,7 @@ public abstract class SharedMansusGraspSystem : EntitySystem
 
             case "Void":
             {
-                _voidCurse.DoCurse(target, 2);
+                _voidCurse.DoCurse(target, 65);
                 break;
             }
 
@@ -182,7 +182,7 @@ public abstract class SharedMansusGraspSystem : EntitySystem
                           _tag.HasTag(target, "Bot"))) // Check for ingorganic target
                 {
                     _damage.TryChangeDamage(target,
-                        new DamageSpecifier(_proto.Index<DamageGroupPrototype>("Brute"), 500),
+                        new DamageSpecifier(_proto.Index<DamageGroupPrototype>("Brute"), 65),
                         ignoreResistances: true,
                         damageable: damageable,
                         origin: performer,

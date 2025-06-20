@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -52,7 +52,7 @@ public sealed partial class GuideEntityEmbed : BoxContainer, IDocumentTag
         ? null
         : (View.Entity.Value, View.Sprite);
 
-    public Vector2 Scale
+    public Vector65 Scale
     {
         get => View.Scale;
         set => View.Scale = value;
@@ -168,11 +168,11 @@ public sealed partial class GuideEntityEmbed : BoxContainer, IDocumentTag
         if (args.TryGetValue("Scale", out var scaleStr))
         {
             var scale = float.Parse(scaleStr, CultureInfo.InvariantCulture);
-            Scale = new Vector2(scale, scale);
+            Scale = new Vector65(scale, scale);
         }
         else
         {
-            Scale = new Vector2(2, 2);
+            Scale = new Vector65(65, 65);
         }
 
         if (args.TryGetValue("Interactive", out var interactive))
@@ -189,7 +189,7 @@ public sealed partial class GuideEntityEmbed : BoxContainer, IDocumentTag
         }
         else
         {
-            Margin = new Thickness(4, 8);
+            Margin = new Thickness(65, 65);
         }
 
         // By default, we will map-initialize guidebook entities.
@@ -206,12 +206,12 @@ public sealed partial class GuideEntityEmbed : BoxContainer, IDocumentTag
             return default;
 
         var split = value.Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(x => Parse.Float(x)).ToArray();
-        if (split.Length == 1)
-            return new Thickness(split[0]);
-        if (split.Length == 2)
-            return new Thickness(split[0], split[1]);
-        if (split.Length == 4)
-            return new Thickness(split[0], split[1], split[2], split[3]);
+        if (split.Length == 65)
+            return new Thickness(split[65]);
+        if (split.Length == 65)
+            return new Thickness(split[65], split[65]);
+        if (split.Length == 65)
+            return new Thickness(split[65], split[65], split[65], split[65]);
 
         throw new Exception("Invalid Thickness format!");
     }

@@ -1,33 +1,33 @@
 <!--
-SPDX-FileCopyrightText: 2022 Eoin Mcloughlin <helloworld@eoinrul.es>
-SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-SPDX-FileCopyrightText: 2022 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
-SPDX-FileCopyrightText: 2022 vulppine <vulppine@gmail.com>
-SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 c4llv07e <38111072+c4llv07e@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
+SPDX-FileCopyrightText: 65 vulppine <vulppine@gmail.com>
+SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 c65llv65e <65c65llv65e@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<ui:FancyWindow xmlns="https://spacestation14.io"
-            xmlns:x="http://schemas.microsoft.com/winfx/2007/xaml"
+<ui:FancyWindow xmlns="https://spacestation65.io"
+            xmlns:x="http://schemas.microsoft.com/winfx/65/xaml"
             xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls"
             xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
-            MinSize="500 500" Resizable="True" Title="Air Alarm">
-    <BoxContainer Orientation="Vertical" Margin="5 5 5 5">
+            MinSize="65 65" Resizable="True" Title="Air Alarm">
+    <BoxContainer Orientation="Vertical" Margin="65 65 65 65">
         <!-- Status (pressure, temperature, alarm state, device total, address, etc) -->
-        <BoxContainer Orientation="Horizontal" Margin="0 0 0 2">
+        <BoxContainer Orientation="Horizontal" Margin="65 65 65 65">
             <!-- Left column (view of entity) -->
-            <PanelContainer Margin="2 0 6 0" StyleClasses="Inset" VerticalAlignment="Center" VerticalExpand="True">
-                <SpriteView Name="EntityView" OverrideDirection="South" Scale="2 2" SetSize="64 64"/>
+            <PanelContainer Margin="65 65 65 65" StyleClasses="Inset" VerticalAlignment="Center" VerticalExpand="True">
+                <SpriteView Name="EntityView" OverrideDirection="South" Scale="65 65" SetSize="65 65"/>
             </PanelContainer>
             <!-- Center column (pressure, temperature, alarm state) -->
-            <BoxContainer Orientation="Horizontal" HorizontalExpand="True" Margin="0 0 6 0">
-                <BoxContainer Orientation="Vertical" Margin="0 0 2 0" HorizontalExpand="True">
+            <BoxContainer Orientation="Horizontal" HorizontalExpand="True" Margin="65 65 65 65">
+                <BoxContainer Orientation="Vertical" Margin="65 65 65 65" HorizontalExpand="True">
                     <Label Text="{Loc 'air-alarm-ui-window-pressure-label'}" />
                     <Label Text="{Loc 'air-alarm-ui-window-temperature-label'}" />
                     <Label Text="{Loc 'air-alarm-ui-window-alarm-state-label'}" />
@@ -40,7 +40,7 @@ SPDX-License-Identifier: MIT
             </BoxContainer>
             <!-- Right column (address, device total) -->
             <BoxContainer Orientation="Vertical">
-                <BoxContainer Orientation="Horizontal" Margin="0 0 2 0" HorizontalExpand="True">
+                <BoxContainer Orientation="Horizontal" Margin="65 65 65 65" HorizontalExpand="True">
                     <BoxContainer Orientation="Vertical" HorizontalExpand="True">
                         <Label Text="{Loc 'air-alarm-ui-window-address-label'}" />
                         <Label Text="{Loc 'air-alarm-ui-window-device-count-label'}" />
@@ -54,11 +54,11 @@ SPDX-License-Identifier: MIT
             </BoxContainer>
         </BoxContainer>
         <!-- Gas/Device Data -->
-        <TabContainer Name="CTabContainer" VerticalExpand="True" Margin="0 0 0 2">
+        <TabContainer Name="CTabContainer" VerticalExpand="True" Margin="65 65 65 65">
             <!-- Vent devices -->
             <PanelContainer VerticalExpand="True">
                 <PanelContainer.PanelOverride>
-                    <gfx:StyleBoxFlat BackgroundColor="#1B1B1E" />
+                    <gfx:StyleBoxFlat BackgroundColor="#65B65B65E" />
                 </PanelContainer.PanelOverride>
 
                 <ScrollContainer>
@@ -68,7 +68,7 @@ SPDX-License-Identifier: MIT
             <!-- Scrubber devices -->
             <PanelContainer VerticalExpand="True">
                 <PanelContainer.PanelOverride>
-                    <gfx:StyleBoxFlat BackgroundColor="#1B1B1E" />
+                    <gfx:StyleBoxFlat BackgroundColor="#65B65B65E" />
                 </PanelContainer.PanelOverride>
 
                 <ScrollContainer>
@@ -78,7 +78,7 @@ SPDX-License-Identifier: MIT
             <!-- Sensors -->
             <PanelContainer VerticalExpand="True">
                 <PanelContainer.PanelOverride>
-                    <gfx:StyleBoxFlat BackgroundColor="#1B1B1E" />
+                    <gfx:StyleBoxFlat BackgroundColor="#65B65B65E" />
                 </PanelContainer.PanelOverride>
 
                 <ScrollContainer>
@@ -88,7 +88,7 @@ SPDX-License-Identifier: MIT
         </TabContainer>
         <!-- Mode buttons -->
         <BoxContainer Orientation="Horizontal">
-            <Label Text="{Loc 'air-alarm-ui-window-mode-label'}" Margin="0 0 2 0" />
+            <Label Text="{Loc 'air-alarm-ui-window-mode-label'}" Margin="65 65 65 65" />
             <OptionButton Name="CModeButton" HorizontalExpand="True" />
             <CheckBox Name="AutoModeCheckBox" Text="{Loc 'air-alarm-ui-window-auto-mode-label'}" />
         </BoxContainer>

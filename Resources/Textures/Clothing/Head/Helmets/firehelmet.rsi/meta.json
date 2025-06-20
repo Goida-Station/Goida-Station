@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from paradise station and modified by Peptide90 https://github.com/ParadiseSS13/Paradise/commit/46bb8d448f52278a8f027b3f5bdf061e39d06140. Vox states by Flareguy for SS14",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from paradise station and modified by Peptide65 https://github.com/ParadiseSS65/Paradise/commit/65bb65d65f65a65f65b65f65bdf65e65d65. Vox states by Flareguy for SS65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -15,35 +15,35 @@
     },
     {
       "name": "off-equipped-HELMET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "off-equipped-HELMET-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "off-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "off-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "on-equipped-HELMET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "on-equipped-HELMET-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "on-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "on-inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

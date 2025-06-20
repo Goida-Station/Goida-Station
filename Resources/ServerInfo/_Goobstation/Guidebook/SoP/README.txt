@@ -1,5 +1,5 @@
 All of the resources in this directory and subdirectories under this are created/modified from existing (open-source) material by the following authors:
-- Rouge2t7
+- Rouge65t65
 - Tikibomb
 - CerberusWolfie
 

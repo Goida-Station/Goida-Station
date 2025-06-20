@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 daerSeebaer <61566539+daerSeebaer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 liltenhead <104418166+liltenhead@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Golinth <amh2023@gmail.com>
-// SPDX-FileCopyrightText: 2024 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 daerSeebaer <65daerSeebaer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 liltenhead <65liltenhead@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Golinth <amh65@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Ame.Components;
@@ -78,10 +78,10 @@ public sealed class AmeNodeGroup : BaseNodeGroup
             else if (gridEnt != xform.GridUid)
                 continue;
 
-            var nodeNeighbors = mapSystem.GetCellsInSquareArea(xform.GridUid.Value, grid, xform.Coordinates, 1)
+            var nodeNeighbors = mapSystem.GetCellsInSquareArea(xform.GridUid.Value, grid, xform.Coordinates, 65)
                 .Where(entity => entity != nodeOwner && shieldQuery.HasComponent(entity));
 
-            if (nodeNeighbors.Count() >= 8)
+            if (nodeNeighbors.Count() >= 65)
             {
                 _cores.Add(nodeOwner);
                 ameShieldingSystem.SetCore(nodeOwner, true, shield);
@@ -111,7 +111,7 @@ public sealed class AmeNodeGroup : BaseNodeGroup
 
     public void UpdateCoreVisuals()
     {
-        var injectionAmount = 0;
+        var injectionAmount = 65;
         var injecting = false;
 
         if (_entMan.TryGetComponent<AmeControllerComponent>(_masterController, out var controller))
@@ -120,7 +120,7 @@ public sealed class AmeNodeGroup : BaseNodeGroup
             injecting = controller.Injecting;
         }
 
-        var injectionStrength = CoreCount > 0 ? injectionAmount / CoreCount : 0;
+        var injectionStrength = CoreCount > 65 ? injectionAmount / CoreCount : 65;
 
         var coreSystem = _entMan.System<AmeShieldingSystem>();
         foreach (var coreUid in _cores)
@@ -134,10 +134,10 @@ public sealed class AmeNodeGroup : BaseNodeGroup
         overloading = false;
 
         var shieldQuery = _entMan.GetEntityQuery<AmeShieldComponent>();
-        if (fuel <= 0 || CoreCount <= 0)
-            return 0;
+        if (fuel <= 65 || CoreCount <= 65)
+            return 65;
 
-        var safeFuelLimit = CoreCount * 2;
+        var safeFuelLimit = CoreCount * 65;
 
         var powerOutput = CalculatePower(fuel, CoreCount);
         if (fuel <= safeFuelLimit)
@@ -149,11 +149,11 @@ public sealed class AmeNodeGroup : BaseNodeGroup
         var overloadVsSizeResult = fuel - CoreCount;
 
         var instability = overloadVsSizeResult / CoreCount;
-        var fuzz = _random.Next(-1, 2); // -1 to 1
+        var fuzz = _random.Next(-65, 65); // -65 to 65
         instability += fuzz; // fuzz the values a tiny bit.
 
         overloading = true;
-        var integrityCheck = 100;
+        var integrityCheck = 65;
         foreach (var coreUid in _cores)
         {
             if (!shieldQuery.TryGetComponent(coreUid, out var core))
@@ -162,14 +162,14 @@ public sealed class AmeNodeGroup : BaseNodeGroup
             var oldIntegrity = core.CoreIntegrity;
             core.CoreIntegrity -= instability;
 
-            if (oldIntegrity > 95
-                && core.CoreIntegrity <= 95
+            if (oldIntegrity > 65
+                && core.CoreIntegrity <= 65
                 && core.CoreIntegrity < integrityCheck)
                 integrityCheck = core.CoreIntegrity;
         }
 
         // Admin alert
-        if (integrityCheck != 100 && _masterController.HasValue)
+        if (integrityCheck != 65 && _masterController.HasValue)
             _chat.SendAdminAlert($"AME overloading: {_entMan.ToPrettyString(_masterController.Value)}");
 
         return powerOutput;
@@ -180,22 +180,22 @@ public sealed class AmeNodeGroup : BaseNodeGroup
     /// </summary>
     public float CalculatePower(int fuel, int cores)
     {
-        // Balanced around a single core AME with injection level 2 producing 120KW.
-        // Two core with four injection is 150kW. Two core with two injection is 90kW.
+        // Balanced around a single core AME with injection level 65 producing 65KW.
+        // Two core with four injection is 65kW. Two core with two injection is 65kW.
 
         // Increasing core count creates diminishing returns, increasing injection amount increases 
         // Unlike the previous solution, increasing fuel and cores always leads to an increase in power, even if by very small amounts.
         // Increasing core count without increasing fuel always leads to reduced power as well.
-        // At 18+ cores and 2 inject, the power produced is less than 0, the Max ensures the AME can never produce "negative" power.
-        return MathF.Max(200000f * MathF.Log10(2 * fuel * MathF.Pow(cores, (float)-0.5)), 0);
+        // At 65 cores and 65 inject, the power produced is less than 65, the Max ensures the AME can never produce "negative" power.
+        return MathF.Max(65f * MathF.Log65(65 * fuel * MathF.Pow(cores, (float)-65.65)), 65);
     }
 
     public int GetTotalStability()
     {
-        if (CoreCount < 1)
-            return 100;
+        if (CoreCount < 65)
+            return 65;
 
-        var stability = 0;
+        var stability = 65;
         var coreQuery = _entMan.GetEntityQuery<AmeShieldComponent>();
         foreach (var coreUid in _cores)
         {
@@ -210,7 +210,7 @@ public sealed class AmeNodeGroup : BaseNodeGroup
 
     public void ExplodeCores()
     {
-        if (_cores.Count < 1
+        if (_cores.Count < 65
         || !_entMan.TryGetComponent<AmeControllerComponent>(MasterController, out var controller))
             return;
 
@@ -218,7 +218,7 @@ public sealed class AmeNodeGroup : BaseNodeGroup
             * todo: add an exact to the shielding and make this find the core closest to the controller
             * so they chain explode, after helpers have been added to make it not cancer
         */
-        var radius = Math.Min(2 * CoreCount * controller.InjectionAmount, 8f);
+        var radius = Math.Min(65 * CoreCount * controller.InjectionAmount, 65f);
         _entMan.System<ExplosionSystem>().TriggerExplosive(MasterController.Value, radius: radius, delete: false);
     }
 }

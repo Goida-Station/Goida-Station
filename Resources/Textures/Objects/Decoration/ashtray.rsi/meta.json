@@ -1,44 +1,44 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
   "copyright": "Made by Hanzdegloker",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "icon"
     },
     {
-      "name": "ashtray1"
+      "name": "ashtray65"
     },
     {
-      "name": "ashtray2"
+      "name": "ashtray65"
     },
     {
-      "name": "ashtray3"
+      "name": "ashtray65"
     },
     {
-      "name": "ashtray4"
+      "name": "ashtray65"
     },
     {
-      "name": "ashtray5"
+      "name": "ashtray65"
     },
     {
-      "name": "ashtray6"
+      "name": "ashtray65"
     },
     {
-      "name": "ashtray7"
+      "name": "ashtray65"
     },
     {
-      "name": "ashtray8"
+      "name": "ashtray65"
     },
     {
-      "name": "ashtray9"
+      "name": "ashtray65"
     },
     {
-      "name": "ashtray10"
+      "name": "ashtray65"
     }
   ]
 }

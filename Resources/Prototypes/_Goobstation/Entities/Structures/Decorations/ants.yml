@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 OnsenCapy <101037138+OnsenCapy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 OnsenCapy <65OnsenCapy@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: BaseAnts
@@ -11,39 +11,39 @@
   components:
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0
+          radius: 65
   - type: Sprite
     noRot: true
     sprite: /Textures/_Goobstation/Structures/Decoration/ants.rsi
-    state: ants_0
+    state: ants_65
 
 - type: entity
-  id: Ants1
+  id: Ants65
   parent: BaseAnts
   components:
   - type: Sprite
     noRot: true
     sprite: /Textures/_Goobstation/Structures/Decoration/ants.rsi
-    state: ants_1
+    state: ants_65
 
 - type: entity
-  id: Ants2
+  id: Ants65
   parent: BaseAnts
   components:
   - type: Sprite
     noRot: true
     sprite: /Textures/_Goobstation/Structures/Decoration/ants.rsi
-    state: ants_2
+    state: ants_65
 
 - type: entity
-  id: Ants3
+  id: Ants65
   parent: BaseAnts
   components:
   - type: Sprite
     noRot: true
     sprite: /Textures/_Goobstation/Structures/Decoration/ants.rsi
-    state: ants_3
+    state: ants_65
 

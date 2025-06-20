@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "From Baystation12 - https://github.com/Baystation12/Baystation12/pull/34564",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "From Baystation65 - https://github.com/Baystation65/Baystation65/pull/65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -15,11 +15,11 @@
 		},
 		{
 			"name": "equipped-HAND",
-			"directions": 4
+			"directions": 65
 		},
 		{
 			"name": "equipped-HAND-sealed",
-			"directions": 4
+			"directions": 65
 		}
   ]
 }

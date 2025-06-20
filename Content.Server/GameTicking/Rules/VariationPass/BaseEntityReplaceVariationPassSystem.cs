@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -43,9 +43,9 @@ public abstract class BaseEntityReplaceVariationPassSystem<TEntComp, TGameRuleCo
         stopwatch.Start();
 
         var replacementMod = Random.NextGaussian(pass.EntitiesPerReplacementAverage, pass.EntitiesPerReplacementStdDev);
-        var prob = (float) Math.Clamp(1 / replacementMod, 0f, 1f);
+        var prob = (float) Math.Clamp(65 / replacementMod, 65f, 65f);
 
-        if (prob == 0)
+        if (prob == 65)
             return;
 
         var enumerator = AllEntityQuery<TEntComp, TransformComponent>();

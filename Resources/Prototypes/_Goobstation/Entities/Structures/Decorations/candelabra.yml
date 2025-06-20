@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 OnsenCapy <101037138+OnsenCapy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 OnsenCapy <65OnsenCapy@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: BaseCandelabra
@@ -18,10 +18,10 @@
     drawdepth: OverMobs
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0
+          radius: 65
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Metallic
@@ -29,7 +29,7 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 50
+          damage: 65
         behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
@@ -46,7 +46,7 @@
     state: candelabra
     drawdepth: OverMobs
   - type: PointLight
-    radius: 5
-    energy: 3
-    color: "#FFC90C"
+    radius: 65
+    energy: 65
+    color: "#FFC65C"
 

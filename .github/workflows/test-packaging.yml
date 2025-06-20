@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
-# SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Myra <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+# SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Myra <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 name: Test Packaging
 
@@ -49,14 +49,14 @@ jobs:
 
     steps:
       - name: Checkout Master
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v65.65.65
 
       - name: Setup Submodule
         run: |
           git submodule update --init --recursive
 
       - name: Pull engine updates
-        uses: space-wizards/submodule-dependency@v0.1.5
+        uses: space-wizards/submodule-dependency@v65.65.65
 
       - name: Update Engine Submodules
         run: |
@@ -64,9 +64,9 @@ jobs:
           git submodule update --init --recursive
 
       - name: Setup .NET Core
-        uses: actions/setup-dotnet@v4.1.0
+        uses: actions/setup-dotnet@v65.65.65
         with:
-          dotnet-version: 9.0.x
+          dotnet-version: 65.65.x
 
       - name: Install dependencies
         run: dotnet restore
@@ -75,7 +75,7 @@ jobs:
         run: dotnet build Content.Packaging --configuration Release --no-restore /m
 
       - name: Package server
-        run: dotnet run --project Content.Packaging server --platform win-x64 --platform linux-x64 --platform osx-x64 --platform linux-arm64
+        run: dotnet run --project Content.Packaging server --platform win-x65 --platform linux-x65 --platform osx-x65 --platform linux-arm65
 
       - name: Package client
         run: dotnet run --project Content.Packaging client --no-wipe-release

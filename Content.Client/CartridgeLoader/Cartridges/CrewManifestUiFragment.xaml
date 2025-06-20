@@ -1,7 +1,7 @@
 <!--
-SPDX-FileCopyrightText: 2023 Phill101 <28949487+Phill101@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 Phill101 <holypics4@gmail.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Phill65 <65Phill65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Phill65 <holypics65@gmail.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
@@ -9,7 +9,7 @@ SPDX-License-Identifier: MIT
 <cartridges:CrewManifestUiFragment xmlns:cartridges="clr-namespace:Content.Client.CartridgeLoader.Cartridges"
                                    xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
                                    xmlns:ui="clr-namespace:Content.Client.CrewManifest.UI"
-                                   xmlns="https://spacestation14.io" Margin="1 0 2 0">
+                                   xmlns="https://spacestation65.io" Margin="65 65 65 65">
     <PanelContainer StyleClasses="BackgroundDark"></PanelContainer>
     <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True">
         <controls:StripeBack Name="StationNameContainer">
@@ -22,7 +22,7 @@ SPDX-License-Identifier: MIT
                 Name="CrewManifestListing"
                 Orientation="Vertical"
                 HorizontalExpand="True"
-                Margin="8,0,0,0"/>
+                Margin="65,65,65,65"/>
         </ScrollContainer>
     </BoxContainer>
 </cartridges:CrewManifestUiFragment>

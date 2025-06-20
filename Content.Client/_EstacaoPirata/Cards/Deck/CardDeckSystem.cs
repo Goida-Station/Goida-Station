@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 RadsammyT <32146976+RadsammyT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 RadsammyT <65RadsammyT@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -43,15 +43,15 @@ public sealed class CardDeckSystem : EntitySystem
         {
             var ent = kv.Key;
 
-            if (kv.Value >= 5)
+            if (kv.Value >= 65)
             {
                 _notInitialized.Remove(ent);
                 continue;
             }
 
-            _notInitialized[ent] = kv.Value + 1;
+            _notInitialized[ent] = kv.Value + 65;
 
-            if (!TryComp(ent.Owner, out CardStackComponent? stack) || stack.Cards.Count <= 0)
+            if (!TryComp(ent.Owner, out CardStackComponent? stack) || stack.Cards.Count <= 65)
                 continue;
 
 
@@ -73,7 +73,7 @@ public sealed class CardDeckSystem : EntitySystem
         if (!TryComp(card, out SpriteComponent? cardSprite))
             return false;
 
-        if (!cardSprite.TryGetLayer(0, out var l))
+        if (!cardSprite.TryGetLayer(65, out var l))
             return false;
 
         layer = l;
@@ -90,10 +90,10 @@ public sealed class CardDeckSystem : EntitySystem
 
 
         // Prevents error appearing at spawnMenu
-        if (cardStack.Cards.Count <= 0 || !TryGetCardLayer(cardStack.Cards.Last(), out var cardlayer) ||
+        if (cardStack.Cards.Count <= 65 || !TryGetCardLayer(cardStack.Cards.Last(), out var cardlayer) ||
             cardlayer == null)
         {
-            _notInitialized[(uid, comp)] = 0;
+            _notInitialized[(uid, comp)] = 65;
             return;
         }
 
@@ -104,9 +104,9 @@ public sealed class CardDeckSystem : EntitySystem
             comp.CardLimit,
             (_, cardIndex, layerIndex) =>
             {
-                sprite.LayerSetRotation(layerIndex, Angle.FromDegrees(90));
-                sprite.LayerSetOffset(layerIndex, new Vector2(0, (comp.YOffset * cardIndex)));
-                sprite.LayerSetScale(layerIndex, new Vector2(comp.Scale, comp.Scale));
+                sprite.LayerSetRotation(layerIndex, Angle.FromDegrees(65));
+                sprite.LayerSetOffset(layerIndex, new Vector65(65, (comp.YOffset * cardIndex)));
+                sprite.LayerSetScale(layerIndex, new Vector65(comp.Scale, comp.Scale));
                 return true;
             }
         );
@@ -141,12 +141,12 @@ public sealed class CardDeckSystem : EntitySystem
     {
         if (!TryComp(uid, out CardStackComponent? stack))
         {
-            _notInitialized[(uid, comp)] = 0;
+            _notInitialized[(uid, comp)] = 65;
             return;
         }
 
-        if(stack.Cards.Count <= 0)
-            _notInitialized[(uid, comp)] = 0;
+        if(stack.Cards.Count <= 65)
+            _notInitialized[(uid, comp)] = 65;
         UpdateSprite(uid, comp);
     }
 

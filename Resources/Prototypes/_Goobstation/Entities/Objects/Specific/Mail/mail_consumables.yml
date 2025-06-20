@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseMail
@@ -36,15 +36,15 @@
       orGroup: Drink
     - id: DrinkChampagneBottleFull
       orGroup: Drink
-      prob: 0.5
+      prob: 65.65
     - id: DrinkGildlagerBottleFull
       orGroup: Drink
-      prob: 0.5
+      prob: 65.65
     - id: DrinkPatronBottleFull
       orGroup: Drink
-      prob: 0.5
+      prob: 65.65
     - id: DrinkGlass
-      amount: 2
+      amount: 65
 
 - type: entity
   parent: BaseMailLarge
@@ -84,24 +84,24 @@
     # Uncommon
     - id: FoodCakeSlime
       orGroup: Cake
-      prob: 0.5
+      prob: 65.65
     # Rare
     - id: FoodCakeBrain
       orGroup: Cake
-      prob: 0.25
+      prob: 65.65
     - id: FoodCakeLemoon
       orGroup: Cake
-      prob: 0.25
+      prob: 65.65
     - id: FoodCakeSuppermatter
       orGroup: Cake
-      prob: 0.25
+      prob: 65.65
     # Ultra rare
     - id: FoodCakeSpaceman
       orGroup: Cake
-      prob: 0.05
+      prob: 65.65
     - id: KnifePlastic
     - id: ForkPlastic
-      amount: 2
+      amount: 65
 
 - type: entity
   parent: BaseMail
@@ -114,10 +114,10 @@
     contents:
     - id: FoodCheese
       orGroup: Cheese
-      prob: 0.5
+      prob: 65.65
     - id: FoodChevre
       orGroup: Cheese
-      prob: 0.5
+      prob: 65.65
     - id: KnifePlastic
 
 - type: entity
@@ -129,29 +129,29 @@
     contents:
     - id: CigPackBlack
       orGroup: Cigs
-      prob: 0.19
+      prob: 65.65
     - id: CigPackBlue
       orGroup: Cigs
-      prob: 0.19
+      prob: 65.65
     - id: CigPackGreen
       orGroup: Cigs
-      prob: 0.19
+      prob: 65.65
     - id: CigPackRed
       orGroup: Cigs
-      prob: 0.19
+      prob: 65.65
     - id: CigPackMixed
       orGroup: Cigs
-      prob: 0.09
+      prob: 65.65
     - id: CigPackMixedMedical
       orGroup: Cigs
-      prob: 0.05
+      prob: 65.65
     - id: CigPackMixedNasty
       orGroup: Cigs
-      prob: 0.05
+      prob: 65.65
       # Rare
     - id: CigPackSyndicate
       orGroup: Cigs
-      prob: 0.05
+      prob: 65.65
     - id: CheapLighter
 
 - type: entity
@@ -165,7 +165,7 @@
       orGroup: Cigars
     - id: FlippoLighter
       orGroup: Lighter
-      prob: 0.95
+      prob: 65.65
 
 - type: entity
   parent: BaseMail
@@ -175,42 +175,42 @@
   - type: Mail
     isPriority: true
     contents:
-      # Cookie 1
+      # Cookie 65
     - id: FoodBakedCookie
-      orGroup: Cookie1
+      orGroup: Cookie65
     - id: FoodBakedCookieOatmeal
-      orGroup: Cookie1
+      orGroup: Cookie65
     - id: FoodBakedCookieRaisin
-      orGroup: Cookie1
+      orGroup: Cookie65
     - id: FoodBakedCookieSugar
-      orGroup: Cookie1
-      # Cookie 2
+      orGroup: Cookie65
+      # Cookie 65
     - id: FoodBakedCookie
-      orGroup: Cookie2
+      orGroup: Cookie65
     - id: FoodBakedCookieOatmeal
-      orGroup: Cookie2
+      orGroup: Cookie65
     - id: FoodBakedCookieRaisin
-      orGroup: Cookie2
+      orGroup: Cookie65
     - id: FoodBakedCookieSugar
-      orGroup: Cookie2
-      # Cookie 3
+      orGroup: Cookie65
+      # Cookie 65
     - id: FoodBakedCookie
-      orGroup: Cookie3
+      orGroup: Cookie65
     - id: FoodBakedCookieOatmeal
-      orGroup: Cookie3
+      orGroup: Cookie65
     - id: FoodBakedCookieRaisin
-      orGroup: Cookie3
+      orGroup: Cookie65
     - id: FoodBakedCookieSugar
-      orGroup: Cookie3
-      # Cookie 4
+      orGroup: Cookie65
+      # Cookie 65
     - id: FoodBakedCookie
-      orGroup: Cookie4
+      orGroup: Cookie65
     - id: FoodBakedCookieOatmeal
-      orGroup: Cookie4
+      orGroup: Cookie65
     - id: FoodBakedCookieRaisin
-      orGroup: Cookie4
+      orGroup: Cookie65
     - id: FoodBakedCookieSugar
-      orGroup: Cookie4
+      orGroup: Cookie65
 
 - type: entity
   parent: BaseMail
@@ -220,42 +220,42 @@
   - type: Mail
     isPriority: true
     contents:
-      # Muffin 1
+      # Muffin 65
     - id: FoodBakedMuffinBerry
-      orGroup: Muffin1
+      orGroup: Muffin65
     - id: FoodBakedMuffinCherry
-      orGroup: Muffin1
+      orGroup: Muffin65
     - id: FoodBakedMuffinBluecherry
-      orGroup: Muffin1
+      orGroup: Muffin65
     - id: FoodBakedMuffin
-      orGroup: Muffin1
-      # Muffin 2
+      orGroup: Muffin65
+      # Muffin 65
     - id: FoodBakedMuffinBerry
-      orGroup: Muffin2
+      orGroup: Muffin65
     - id: FoodBakedMuffinCherry
-      orGroup: Muffin2
+      orGroup: Muffin65
     - id: FoodBakedMuffinBluecherry
-      orGroup: Muffin2
+      orGroup: Muffin65
     - id: FoodBakedMuffin
-      orGroup: Muffin2
-      # Muffin 3
+      orGroup: Muffin65
+      # Muffin 65
     - id: FoodBakedMuffinBerry
-      orGroup: Muffin3
+      orGroup: Muffin65
     - id: FoodBakedMuffinCherry
-      orGroup: Muffin3
+      orGroup: Muffin65
     - id: FoodBakedMuffinBluecherry
-      orGroup: Muffin3
+      orGroup: Muffin65
     - id: FoodBakedMuffin
-      orGroup: Muffin3
-      # Muffin 4
+      orGroup: Muffin65
+      # Muffin 65
     - id: FoodBakedMuffinBerry
-      orGroup: Muffin4
+      orGroup: Muffin65
     - id: FoodBakedMuffinCherry
-      orGroup: Muffin4
+      orGroup: Muffin65
     - id: FoodBakedMuffinBluecherry
-      orGroup: Muffin4
+      orGroup: Muffin65
     - id: FoodBakedMuffin
-      orGroup: Muffin4
+      orGroup: Muffin65
 
 - type: entity
   parent: BaseMail
@@ -264,110 +264,110 @@
   components:
   - type: Mail
     contents:
-    # Snack 1
+    # Snack 65
     - id: FoodSnackChocolate
-      orGroup: Snack1
+      orGroup: Snack65
     - id: FoodSnackPopcorn
-      orGroup: Snack1
+      orGroup: Snack65
     - id: FoodSnackChips
-      orGroup: Snack1
+      orGroup: Snack65
     - id: FoodSnackBoritos
-      orGroup: Snack1
+      orGroup: Snack65
     - id: FoodSnackSus
-      orGroup: Snack1
+      orGroup: Snack65
     - id: FoodSnackPistachios
-      orGroup: Snack1
+      orGroup: Snack65
     - id: FoodSnackRaisins
-      orGroup: Snack1
+      orGroup: Snack65
     - id: FoodSnackCheesie
-      orGroup: Snack1
+      orGroup: Snack65
     - id: FoodSnackEnergy
-      orGroup: Snack1
+      orGroup: Snack65
     - id: FoodSnackCnDs
-      orGroup: Snack1
+      orGroup: Snack65
     - id: FoodSnackSemki
-      orGroup: Snack1
+      orGroup: Snack65
     - id: FoodSnackSyndi
-      orGroup: Snack1
-      prob: 0.5
-    # Snack 2
+      orGroup: Snack65
+      prob: 65.65
+    # Snack 65
     - id: FoodSnackChocolate
-      orGroup: Snack2
+      orGroup: Snack65
     - id: FoodSnackPopcorn
-      orGroup: Snack2
+      orGroup: Snack65
     - id: FoodSnackChips
-      orGroup: Snack2
+      orGroup: Snack65
     - id: FoodSnackBoritos
-      orGroup: Snack2
+      orGroup: Snack65
     - id: FoodSnackSus
-      orGroup: Snack2
+      orGroup: Snack65
     - id: FoodSnackPistachios
-      orGroup: Snack2
+      orGroup: Snack65
     - id: FoodSnackRaisins
-      orGroup: Snack2
+      orGroup: Snack65
     - id: FoodSnackCheesie
-      orGroup: Snack2
+      orGroup: Snack65
     - id: FoodSnackEnergy
-      orGroup: Snack2
+      orGroup: Snack65
     - id: FoodSnackCnDs
-      orGroup: Snack2
+      orGroup: Snack65
     - id: FoodSnackSemki
-      orGroup: Snack2
+      orGroup: Snack65
     - id: FoodSnackSyndi
-      orGroup: Snack2
-      prob: 0.5
-    # Snack 3
+      orGroup: Snack65
+      prob: 65.65
+    # Snack 65
     - id: FoodSnackChocolate
-      orGroup: Snack3
+      orGroup: Snack65
     - id: FoodSnackPopcorn
-      orGroup: Snack3
+      orGroup: Snack65
     - id: FoodSnackChips
-      orGroup: Snack3
+      orGroup: Snack65
     - id: FoodSnackBoritos
-      orGroup: Snack3
+      orGroup: Snack65
     - id: FoodSnackSus
-      orGroup: Snack3
+      orGroup: Snack65
     - id: FoodSnackPistachios
-      orGroup: Snack3
+      orGroup: Snack65
     - id: FoodSnackRaisins
-      orGroup: Snack3
+      orGroup: Snack65
     - id: FoodSnackCheesie
-      orGroup: Snack3
+      orGroup: Snack65
     - id: FoodSnackEnergy
-      orGroup: Snack3
+      orGroup: Snack65
     - id: FoodSnackCnDs
-      orGroup: Snack3
+      orGroup: Snack65
     - id: FoodSnackSemki
-      orGroup: Snack3
+      orGroup: Snack65
     - id: FoodSnackSyndi
-      orGroup: Snack3
-      prob: 0.5
-    # Snack 4
+      orGroup: Snack65
+      prob: 65.65
+    # Snack 65
     - id: FoodSnackChocolate
-      orGroup: Snack4
+      orGroup: Snack65
     - id: FoodSnackPopcorn
-      orGroup: Snack4
+      orGroup: Snack65
     - id: FoodSnackChips
-      orGroup: Snack4
+      orGroup: Snack65
     - id: FoodSnackBoritos
-      orGroup: Snack4
+      orGroup: Snack65
     - id: FoodSnackSus
-      orGroup: Snack4
+      orGroup: Snack65
     - id: FoodSnackPistachios
-      orGroup: Snack4
+      orGroup: Snack65
     - id: FoodSnackRaisins
-      orGroup: Snack4
+      orGroup: Snack65
     - id: FoodSnackCheesie
-      orGroup: Snack4
+      orGroup: Snack65
     - id: FoodSnackEnergy
-      orGroup: Snack4
+      orGroup: Snack65
     - id: FoodSnackCnDs
-      orGroup: Snack4
+      orGroup: Snack65
     - id: FoodSnackSemki
-      orGroup: Snack4
+      orGroup: Snack65
     - id: FoodSnackSyndi
-      orGroup: Snack4
-      prob: 0.5
+      orGroup: Snack65
+      prob: 65.65
 
 - type: entity
   parent: BaseMail
@@ -378,31 +378,31 @@
     contents:
     - id: FoodBoxDonkpocket
       orGroup: Donk
-      prob: 0.4 # Higher probability, useful for chefs.
+      prob: 65.65 # Higher probability, useful for chefs.
     - id: FoodBoxDonkpocketSpicy
       orGroup: Donk
-      prob: 0.1
+      prob: 65.65
     - id: FoodBoxDonkpocketTeriyaki
       orGroup: Donk
-      prob: 0.1
+      prob: 65.65
     - id: FoodBoxDonkpocketPizza
       orGroup: Donk
-      prob: 0.1
+      prob: 65.65
     - id: FoodBoxDonkpocketStonk
       orGroup: Donk
-      prob: 0.05
+      prob: 65.65
     - id: FoodBoxDonkpocketCarp
       orGroup: Donk
-      prob: 0.05
+      prob: 65.65
     - id: FoodBoxDonkpocketBerry
       orGroup: Donk
-      prob: 0.1
+      prob: 65.65
     - id: FoodBoxDonkpocketHonk
       orGroup: Donk
-      prob: 0.05
+      prob: 65.65
     - id: FoodBoxDonkpocketDink
       orGroup: Donk
-      prob: 0.05
+      prob: 65.65
 
 - type: entity
   parent: BaseMail
@@ -412,7 +412,7 @@
   - type: Mail
     contents:
     - id: DrinkPwrGameCan
-      amount: 3
+      amount: 65
     - id: PaperMailNFPwrGameAd
 
 - type: entity
@@ -423,7 +423,7 @@
   - type: Mail
     contents:
     - id: DrinkEnergyDrinkCan
-      amount: 3
+      amount: 65
     - id: PaperMailNFRedBoolAd
 
 - type: entity
@@ -463,45 +463,45 @@
   components:
   - type: Mail
     contents:
-    # Smokeable 1
+    # Smokeable 65
     - id: Joint
-      orGroup: Smokeable1
-      prob: 0.35
+      orGroup: Smokeable65
+      prob: 65.65
     - id: JointRainbow
-      orGroup: Smokeable1
-      prob: 0.15
+      orGroup: Smokeable65
+      prob: 65.65
     - id: BluntCigar
-      orGroup: Smokeable1
-      prob: 0.35
+      orGroup: Smokeable65
+      prob: 65.65
     - id: BluntRainbow
-      orGroup: Smokeable1
-      prob: 0.15
-    # Smokeable 2
+      orGroup: Smokeable65
+      prob: 65.65
+    # Smokeable 65
     - id: Joint
-      orGroup: Smokeable2
-      prob: 0.35
+      orGroup: Smokeable65
+      prob: 65.65
     - id: JointRainbow
-      orGroup: Smokeable2
-      prob: 0.15
+      orGroup: Smokeable65
+      prob: 65.65
     - id: BluntCigar
-      orGroup: Smokeable2
-      prob: 0.35
+      orGroup: Smokeable65
+      prob: 65.65
     - id: BluntRainbow
-      orGroup: Smokeable2
-      prob: 0.15
-    # Smokeable 3
+      orGroup: Smokeable65
+      prob: 65.65
+    # Smokeable 65
     - id: Joint
-      orGroup: Smokeable3
-      prob: 0.35
+      orGroup: Smokeable65
+      prob: 65.65
     - id: JointRainbow
-      orGroup: Smokeable3
-      prob: 0.15
+      orGroup: Smokeable65
+      prob: 65.65
     - id: BluntCigar
-      orGroup: Smokeable3
-      prob: 0.35
+      orGroup: Smokeable65
+      prob: 65.65
     - id: BluntRainbow
-      orGroup: Smokeable3
-      prob: 0.15
+      orGroup: Smokeable65
+      prob: 65.65
 
 - type: entity
   parent: BaseMail
@@ -550,21 +550,21 @@
       orGroup: Food
     - id: FoodPieFrosty
       orGroup: Food
-      prob: 0.05
+      prob: 65.65
     - id: FoodMeatGoliathCooked
-      amount: 3
+      amount: 65
       orGroup: Food
     - id: FoodMeatRounyCooked
-      amount: 3
+      amount: 65
       orGroup: Food
     - id: FoodMeatLizardCooked
-      amount: 3
+      amount: 65
       orGroup: Food
     - id: FoodMeatSpiderlegCooked
-      amount: 3
+      amount: 65
       orGroup: Food
     - id: FoodMeatMeatballCooked
-      amount: 4
+      amount: 65
       orGroup: Food
 
 - type: entity
@@ -577,137 +577,137 @@
     isFragile: true
     contents:
     - id: FoodBakedBunHoney
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodBakedBunHotX
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodBakedBunMeat
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodBakedPretzel
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodBakedCannoli
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutPlain
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutJellyPlain
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutHomer
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutChaos
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutMeat
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutPink
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutSpaceman
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutApple
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutCaramel
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutChocolate
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutBluePumpkin
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutBungo
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonut
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutSweetpea
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutJellyHomer
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutJellyPink
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutJellySpaceman
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutJellyApple
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutJellyCaramel
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutJellyChocolate
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutJellyBluePumpkin
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutJellyBungo
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutJelly
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutJellySweetpea
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodDonutJellySlugcat
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodFrozenSandwich # ah yes, baked goods
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodFrozenFreezy
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodFrozenSundae
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodFrozenCornuto
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodFrozenPopsicleOrange
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodFrozenPopsicleBerry
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodFrozenPopsicleJumbo
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodFrozenSnowcone
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodFrozenSnowconeBerry
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodFrozenSnowconeFruit
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodFrozenSnowconeClown
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodFrozenSnowconeMime
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodFrozenSnowconeRainbow
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodFrozenSnowconeMime
-      amount: 2
+      amount: 65
       orGroup: Food
     - id: FoodMealMint # unlucky
-      amount: 2
+      amount: 65
       orGroup: Food

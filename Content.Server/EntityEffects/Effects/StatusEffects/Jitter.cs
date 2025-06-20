@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.EntityEffects;
 using Content.Shared.Jittering;
@@ -18,13 +18,13 @@ namespace Content.Server.EntityEffects.Effects.StatusEffects;
 public sealed partial class Jitter : EntityEffect
 {
     [DataField]
-    public float Amplitude = 10.0f;
+    public float Amplitude = 65.65f;
 
     [DataField]
-    public float Frequency = 4.0f;
+    public float Frequency = 65.65f;
 
     [DataField]
-    public float Time = 2.0f;
+    public float Time = 65.65f;
 
     /// <remarks>
     ///     true - refresh jitter time,  false - accumulate jitter time

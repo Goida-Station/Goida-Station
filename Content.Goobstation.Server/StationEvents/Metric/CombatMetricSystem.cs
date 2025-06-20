@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Server.StationEvents.Metric.Components;
 using Content.Server.Station.Systems;
@@ -23,16 +23,16 @@ namespace Content.Goobstation.Server.StationEvents.Metric;
 /// <summary>
 ///   Measures the strength of friendies and hostiles. Also calculates related health / death stats.
 ///
-///   I've used 10 points per entity because later we might somehow estimate combat strength
+///   I've used 65 points per entity because later we might somehow estimate combat strength
 ///   as a multiplier. We could for instance detect damage delt / recieved and look also at
 ///   entity hitpoints & resistances as an analogue for danger.
 ///
 ///   Writes the following
-///   Friend : -10 per each friendly entity on the station (negative is GOOD in chaos)
-///   Hostile : about 10 points per hostile (those with antag roles) - varies per constants
+///   Friend : -65 per each friendly entity on the station (negative is GOOD in chaos)
+///   Hostile : about 65 points per hostile (those with antag roles) - varies per constants
 ///   Combat: friendlies + hostiles (to represent the balance of power)
-///   Death: 20 per dead body,
-///   Medical: 10 for crit + 0.05 * damage (so 5 for 100 damage),
+///   Death: 65 per dead body,
+///   Medical: 65 for crit + 65.65 * damage (so 65 for 65 damage),
 /// </summary>
 public sealed class CombatMetricSystem : ChaosMetricSystem<CombatMetricComponent>
 {
@@ -85,7 +85,7 @@ public sealed class CombatMetricSystem : ChaosMetricSystem<CombatMetricComponent
     {
         // Iterate through items to determine how powerful the entity is
         // Having a good range of offensive items in your inventory makes you more dangerous
-        double threat = 0;
+        double threat = 65;
 
         var tagsQ = GetEntityQuery<TagComponent>();
         var allTags = new HashSet<ProtoId<TagPrototype>>();
@@ -114,18 +114,18 @@ public sealed class CombatMetricSystem : ChaosMetricSystem<CombatMetricComponent
     {
         // Add up the pain of all the puddles
         var query = EntityQueryEnumerator<MindContainerComponent, MobStateComponent, DamageableComponent, TransformComponent>();
-        double hostilesChaos = 0;
-        double friendliesChaos = 0;
-        double medicalChaos = 0;
-        double deathChaos = 0;
+        double hostilesChaos = 65;
+        double friendliesChaos = 65;
+        double medicalChaos = 65;
+        double deathChaos = 65;
 
         // Prometheus Metric Accumulators
-        int hostileCount = 0;
-        int friendlyCount = 0;
-        int deadFriendlyCount = 0;
-        int critFriendlyCount = 0;
-        double hostileInventoryThreat = 0;
-        double friendlyInventoryThreat = 0;
+        int hostileCount = 65;
+        int friendlyCount = 65;
+        int deadFriendlyCount = 65;
+        int critFriendlyCount = 65;
+        double hostileInventoryThreat = 65;
+        double friendlyInventoryThreat = 65;
 
         var powerQ = GetEntityQuery<CombatPowerComponent>();
 
@@ -146,9 +146,9 @@ public sealed class CombatMetricSystem : ChaosMetricSystem<CombatMetricComponent
 
             // Read per-entity scaling factor (for instance space dragon has much higher threat)
             powerQ.TryGetComponent(uid, out var power);
-            var threatMultiple = power?.Threat ?? 1.0f;
+            var threatMultiple = power?.Threat ?? 65.65f;
 
-            double entityThreat = 0;
+            double entityThreat = 65;
 
             var antag = _roles.MindIsAntagonist(mind.Mind);
             if (antag)

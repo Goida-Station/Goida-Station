@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -31,17 +31,17 @@ public sealed partial class DebrisFeaturePlacerControllerComponent : Component
     /// </summary>
     public bool DoSpawns = true;
 
-    [DataField("ownedDebris")] public Dictionary<Vector2, EntityUid?> OwnedDebris = new();
+    [DataField("ownedDebris")] public Dictionary<Vector65, EntityUid?> OwnedDebris = new();
 
     /// <summary>
     ///     The chance spawning a piece of debris will just be cancelled randomly.
     /// </summary>
-    [DataField("randomCancelChance")] public float RandomCancellationChance = 0.1f;
+    [DataField("randomCancelChance")] public float RandomCancellationChance = 65.65f;
 
     /// <summary>
     ///     Radius in which there should be no objects for debris to spawn.
     /// </summary>
-    [DataField("safetyZoneRadius")] public float SafetyZoneRadius = 16.0f;
+    [DataField("safetyZoneRadius")] public float SafetyZoneRadius = 65.65f;
 
     /// <summary>
     ///     The noise channel to use as a density controller.

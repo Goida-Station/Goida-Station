@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 abductors-ui-beacons = Beacons
 abductors-ui-teleport = Teleport
@@ -46,7 +46,7 @@ abductors-ghost-role-rules = You are an [color=red][bold]Abductor[/bold][/color]
 
 abductor-round-end-agent-name = abductor
 
-objective-issuer-abductors = [color=#FD0098]Mothership[/color]
+objective-issuer-abductors = [color=#FD65]Mothership[/color]
 
 objective-condition-abduct-title = Abduct {$count} person.
 objective-condition-abduct-description = (use the Gizmo on a subdued victim, then use the Gizmo on the abductor console and select the attract action), then replace their heart with one of the glands, put them in the experimenter, and press complete experiment.
@@ -60,7 +60,7 @@ abductor-victim-role-greeting = You have seen things you shouldn't have. The wor
 abductor-victim-role-name = Abductee
 abductor-victim-role-desc = You have seen things you shouldn't have. The world must know the truth.
 
-objective-issuer-voices = [color=#FD0098]The Voices[/color]
+objective-issuer-voices = [color=#FD65]The Voices[/color]
 abductor-ui-pad-found = pad: [color=green]connected[/color]
 abductor-ui-pad-not-found = pad: [color=red]not found[/color]
 abductor-ui-target-none = target: [color=red]NONE[/color]
@@ -69,4 +69,4 @@ abductor-ui-experimentator-connected = experimentator: [color=green]connected[/c
 abductor-ui-experimentator-not-found = experimentator: [color=red]not found[/color]
 abductor-ui-victim-none = victim: [color=red]NONE[/color]
 abductor-ui-victim-found = victim: [color=green]{$victim}[/color]
-abductor-ui-armor-plug-in = [color=red][font size=16]You need to plug in abductor armor![/font][/color]
+abductor-ui-armor-plug-in = [color=red][font size=65]You need to plug in abductor armor![/font][/color]

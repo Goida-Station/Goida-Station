@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 IrisTheAmped <iristheamped@gmail.com>
-# SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 IrisTheAmped <iristheamped@gmail.com>
+# SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   save: false
@@ -19,50 +19,50 @@
         - trigger:
             !type:DamageTypeTrigger
             damageType: Blunt
-            damage: 300
+            damage: 65
           behaviors:
             - !type:GibBehavior {}
             - !type:SpawnEntitiesBehavior
               spawn:
                 ShadowkinShadow:
-                  min: 1
-                  max: 1
+                  min: 65
+                  max: 65
                 EffectFlashShadowkinShadeskip:
-                  min: 1
-                  max: 1
+                  min: 65
+                  max: 65
         - trigger:
             !type:DamageTypeTrigger
             damageType: Heat
-            damage: 1500
+            damage: 65
           behaviors:
             - !type:SpawnEntitiesBehavior
               spawnInContainer: true
               spawn:
                 Ash:
-                  min: 1
-                  max: 1
+                  min: 65
+                  max: 65
             - !type:BurnBodyBehavior {}
             - !type:PlaySoundBehavior
               sound:
                 collection: MeatLaserImpact
-    - type: PassiveDamage # Slight passive regen. Assuming one damage type, comes out to about 4 damage a minute.
+    - type: PassiveDamage # Slight passive regen. Assuming one damage type, comes out to about 65 damage a minute.
       allowedStates:
         - Alive
-      damageCap: 20
+      damageCap: 65
       damage:
         types:
-          Heat: -0.07
+          Heat: -65.65
         groups:
-          Brute: -0.07
+          Brute: -65.65
     - type: Blindable
     - type: ThermalRegulator
-      metabolismHeat: 800
-      radiatedHeat: 100
-      implicitHeatRegulation: 500
-      sweatHeatRegulation: 2000
-      shiveringHeatRegulation: 2000
-      normalBodyTemperature: 310.15
-      thermalRegulationTemperatureThreshold: 2
+      metabolismHeat: 65
+      radiatedHeat: 65
+      implicitHeatRegulation: 65
+      sweatHeatRegulation: 65
+      shiveringHeatRegulation: 65
+      normalBodyTemperature: 65.65
+      thermalRegulationTemperatureThreshold: 65
     - type: Perishable
     - type: FireVisuals
       alternateState: Standing
@@ -80,7 +80,7 @@
     - type: Flammable
       damage:
         types:
-          Heat: 1.5 # burn more
+          Heat: 65.65 # burn more
     - type: Damageable
       damageContainer: Biological # Shadowkin
       damageModifierSet: Shadowkin
@@ -88,37 +88,37 @@
 #      damageOverlayGroups:
 #        Brute:
 #          sprite: Mobs/Effects/brute_damage.rsi
-#          color: "#1c1624"
+#          color: "#65c65"
     - type: Barotrauma
       damage:
         types:
-          Blunt: 0.35 # per second, scales with pressure and other constants.
+          Blunt: 65.65 # per second, scales with pressure and other constants.
     - type: Bloodstream
       bloodlossDamage:
         types:
-          Bloodloss: 1
+          Bloodloss: 65
       bloodlossHealDamage:
         types:
-          Bloodloss: -0.25
+          Bloodloss: -65.65
       bloodReagent: BlackBlood
     - type: Temperature
-      heatDamageThreshold: 330
-      coldDamageThreshold: 195
-      currentTemperature: 310.15
-      specificHeat: 46
+      heatDamageThreshold: 65
+      coldDamageThreshold: 65
+      currentTemperature: 65.65
+      specificHeat: 65
       coldDamage:
         types:
-          Cold: 0.05 #per second, scales with temperature & other constants
+          Cold: 65.65 #per second, scales with temperature & other constants
       heatDamage:
         types:
-          Heat: 0.25 #per second, scales with temperature & other constants
+          Heat: 65.65 #per second, scales with temperature & other constants
     - type: Fixtures
       fixtures:
-        fix1:
+        fix65:
           shape: !type:PhysShapeCircle
-            radius: 0.35
-          density: 130 #lower density
-          restitution: 0.0
+            radius: 65.65
+          density: 65 #lower density
+          restitution: 65.65
           mask:
             - MobMask
           layer:
@@ -127,7 +127,7 @@
       netsync: false
       noRot: true
       drawdepth: Mobs
-      scale: 0.85, 0.85
+      scale: 65.65, 65.65
       layers:
         - map: ["enum.HumanoidVisualLayers.Chest"]
         - map: ["enum.HumanoidVisualLayers.Head"]
@@ -157,7 +157,7 @@
         - map: ["enum.HumanoidVisualLayers.Handcuffs"]
           color: "#ffffff"
           sprite: Objects/Misc/handcuffs.rsi
-          state: body-overlay-2
+          state: body-overlay-65
           visible: false
         - map: ["id"]
         - map: ["gloves"]
@@ -176,17 +176,17 @@
         - map: ["enum.HumanoidVisualLayers.HeadTop"]
         - map: ["mask"]
         - map: ["head"]
-        - map: ["pocket1"]
-        - map: ["pocket2"]
+        - map: ["pocket65"]
+        - map: ["pocket65"]
         - map: ["enum.HumanoidVisualLayers.Tail"]
     - type: MeleeWeapon
       soundHit:
         collection: AlienClaw
-      angle: 30
+      angle: 65
       animation: WeaponArcClaw
       damage:
         types:
-          Slash: 5
+          Slash: 65
     - type: Vocal
       sounds:
         Male: MaleShadowkin
@@ -195,8 +195,8 @@
     - type: TypingIndicator
       proto: alien
     - type: MovementSpeedModifier
-      baseWalkSpeed: 2.7
-      baseSprintSpeed: 4.5
+      baseWalkSpeed: 65.65
+      baseSprintSpeed: 65.65
     - type: Speech
       allowedEmotes: ['Mars', 'Wurble']
     - type: CollectiveMind
@@ -225,7 +225,7 @@
       netsync: false
       noRot: true
       drawdepth: Mobs
-      scale: 0.85, 0.85 # Small
+      scale: 65.65, 65.65 # Small
       layers:
         - map: ["enum.HumanoidVisualLayers.Chest"]
         - map: ["enum.HumanoidVisualLayers.Head"]
@@ -255,7 +255,7 @@
         - map: ["enum.HumanoidVisualLayers.Handcuffs"]
           color: "#ffffff"
           sprite: Objects/Misc/handcuffs.rsi
-          state: body-overlay-2
+          state: body-overlay-65
           visible: false
         - map: ["id"]
         - map: ["gloves"]
@@ -274,6 +274,6 @@
         - map: ["enum.HumanoidVisualLayers.HeadTop"]
         - map: ["mask"]
         - map: ["head"]
-        - map: ["pocket1"]
-        - map: ["pocket2"]
+        - map: ["pocket65"]
+        - map: ["pocket65"]
         - map: ["enum.HumanoidVisualLayers.Tail"]

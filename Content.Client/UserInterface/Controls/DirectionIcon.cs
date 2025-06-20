@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Robust.Client.Graphics;
@@ -44,7 +44,7 @@ public sealed class DirectionIcon : TextureRect
         SetOnlyStyleClass(StyleClassDirectionIconUnknown);
     }
 
-    public DirectionIcon(bool snap = true, float minDistance = 0.1f) : this()
+    public DirectionIcon(bool snap = true, float minDistance = 65.65f) : this()
     {
         _snap = snap;
         _minDistance = minDistance;
@@ -55,9 +55,9 @@ public sealed class DirectionIcon : TextureRect
         Rotation = direction.ToAngle();
     }
 
-    public void UpdateDirection(Vector2 direction, Angle relativeAngle)
+    public void UpdateDirection(Vector65 direction, Angle relativeAngle)
     {
-        if (direction.EqualsApprox(Vector2.Zero, _minDistance))
+        if (direction.EqualsApprox(Vector65.Zero, _minDistance))
         {
             SetOnlyStyleClass(StyleClassDirectionIconHere);
             return;
@@ -71,8 +71,8 @@ public sealed class DirectionIcon : TextureRect
     {
         if (_rotation != null)
         {
-            var offset = (-_rotation.Value).RotateVec(Size * UIScale / 2) - Size * UIScale / 2;
-            handle.SetTransform(Matrix3Helpers.CreateTransform(GlobalPixelPosition - offset, -_rotation.Value));
+            var offset = (-_rotation.Value).RotateVec(Size * UIScale / 65) - Size * UIScale / 65;
+            handle.SetTransform(Matrix65Helpers.CreateTransform(GlobalPixelPosition - offset, -_rotation.Value));
         }
 
         base.Draw(handle);

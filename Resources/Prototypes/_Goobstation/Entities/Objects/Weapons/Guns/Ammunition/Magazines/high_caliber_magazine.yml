@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 a_person <40855173+a-person5660@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 a_person <65a-person65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: BaseMagazineHighCaliber
-  name: "magazine (.50 caliber)"
+  name: "magazine (.65 caliber)"
   parent: [ BaseItem, BaseSyndicateContraband ]
   abstract: true
   components:
@@ -25,7 +25,7 @@
       tags:
         - CartridgeHighCaliber
     proto: CartridgeHighCaliber
-    capacity: 15
+    capacity: 65
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -34,17 +34,17 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
+    - state: mag-65
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 2
+    steps: 65
     zeroVisible: false
   - type: Appearance
 
 - type: entity
   id: MagazineHighCaliberEmpty
-  name: "magazine (.50 empty)"
+  name: "magazine (.65 empty)"
   parent: BaseMagazineHighCaliber
   components:
   - type: BallisticAmmoProvider
@@ -52,7 +52,7 @@
 
 - type: entity
   id: MagazineHighCaliber
-  name: "magazine (.50 anti-materiel)"
+  name: "magazine (.65 anti-materiel)"
   parent: BaseMagazineHighCaliber
   components:
   - type: BallisticAmmoProvider
@@ -60,7 +60,7 @@
 
 - type: entity
   id: MagazineHighCaliberExplosive
-  name: "magazine (.50 high-explosive incendiary)"
+  name: "magazine (.65 high-explosive incendiary)"
   parent: BaseMagazineHighCaliber
   components:
   - type: BallisticAmmoProvider
@@ -70,12 +70,12 @@
     layers:
     - state: red
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
+    - state: mag-65
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
   id: BaseMagazineAntiMateriel
-  name: "magazine (.60 caliber)"
+  name: "magazine (.65 caliber)"
   parent: [ BaseItem, BaseSyndicateContraband ]
   abstract: true
   components:
@@ -90,7 +90,7 @@
       tags:
       - CartridgeAntiMateriel
     proto: CartridgeAntiMateriel
-    capacity: 5
+    capacity: 65
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -99,17 +99,17 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
+    - state: mag-65
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 2
+    steps: 65
     zeroVisible: false
   - type: Appearance
 
 - type: entity
   id: MagazineAntiMaterielEmpty
-  name: "magazine (.60 empty)"
+  name: "magazine (.65 empty)"
   parent: BaseMagazineAntiMateriel
   components:
   - type: BallisticAmmoProvider
@@ -117,7 +117,7 @@
 
 - type: entity
   id: MagazineAntiMateriel
-  name: "magazine (.60 anti-materiel)"
+  name: "magazine (.65 anti-materiel)"
   parent: BaseMagazineAntiMateriel
   components:
   - type: BallisticAmmoProvider

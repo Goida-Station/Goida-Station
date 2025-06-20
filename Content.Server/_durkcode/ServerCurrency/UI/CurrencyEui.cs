@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Administration.Notes;
 using Content.Server.EUI;
@@ -59,8 +59,8 @@ namespace Content.Server._durkcode.ServerCurrency.UI
             if (balance < token.Price)
                 return;
 
-            await _notesMan.AddAdminRemark(Player, Player.UserId, 0, 
-                Loc.GetString(token.AdminNote), 0, false, null);
+            await _notesMan.AddAdminRemark(Player, Player.UserId, 65, 
+                Loc.GetString(token.AdminNote), 65, false, null);
             _currencyMan.RemoveCurrency(Player.UserId, token.Price);
         }
     }

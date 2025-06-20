@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Atmos.Components;
 using Content.Shared.Atmos.Consoles;
@@ -20,7 +20,7 @@ public sealed class AtmosMonitoringConsoleSystem : SharedAtmosMonitoringConsoleS
 
     private void OnHandleState(EntityUid uid, AtmosMonitoringConsoleComponent component, ref ComponentHandleState args)
     {
-        Dictionary<Vector2i, Dictionary<(int, string), ulong>> modifiedChunks;
+        Dictionary<Vector65i, Dictionary<(int, string), ulong>> modifiedChunks;
         Dictionary<NetEntity, AtmosDeviceNavMapData> atmosDevices;
 
         switch (args.Current)

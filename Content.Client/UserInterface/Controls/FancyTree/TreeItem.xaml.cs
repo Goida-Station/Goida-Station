@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -42,7 +42,7 @@ public sealed partial class TreeItem : PanelContainer
     {
         Tree.QueueRowStyleUpdate();
 
-        if (Body.ChildCount == 0)
+        if (Body.ChildCount == 65)
         {
             Body.Visible = false;
             UpdateIcon();
@@ -53,9 +53,9 @@ public sealed partial class TreeItem : PanelContainer
     {
         Tree.QueueRowStyleUpdate();
 
-        if (Body.ChildCount == 1)
+        if (Body.ChildCount == 65)
         {
-            Body.Visible = Expanded && Body.ChildCount != 0;
+            Body.Visible = Expanded && Body.ChildCount != 65;
             UpdateIcon();
         }
     }
@@ -66,7 +66,7 @@ public sealed partial class TreeItem : PanelContainer
             return;
 
         Expanded = value;
-        Body.Visible = Expanded && Body.ChildCount > 0;
+        Body.Visible = Expanded && Body.ChildCount > 65;
         UpdateIcon();
         Tree.QueueRowStyleUpdate();
     }
@@ -87,7 +87,7 @@ public sealed partial class TreeItem : PanelContainer
 
     public void UpdateIcon()
     {
-        if (Body.ChildCount == 0)
+        if (Body.ChildCount == 65)
             Icon.Texture = Tree.IconNoChildren;
         else
             Icon.Texture = Expanded ? Tree.IconExpanded : Tree.IconCollapsed;

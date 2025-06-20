@@ -1,51 +1,51 @@
-# SPDX-FileCopyrightText: 2019 Acruid <shatter66@gmail.com>
-# SPDX-FileCopyrightText: 2019 Remie Richards <remierichards@gmail.com>
-# SPDX-FileCopyrightText: 2019 moneyl <8206401+Moneyl@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Campbell Suter <znix@znix.xyz>
-# SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
-# SPDX-FileCopyrightText: 2020 Exp <theexp111@gmail.com>
-# SPDX-FileCopyrightText: 2020 Hugo Laloge <hugo.laloge@gmail.com>
-# SPDX-FileCopyrightText: 2020 Injazz <injazza@gmail.com>
-# SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 2020 ike709 <ike709@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 nuke <47336974+nuke-makes-games@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 silicons <2003111+silicons@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 zumorica <zddm@outlook.es>
-# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 FoLoKe <36813380+FoLoKe@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-# SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2021 Radrark <76271993+Radrark@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 SETh lafuente <cetaciocascarudo@gmail.com>
-# SPDX-FileCopyrightText: 2021 ScalyChimp <72841710+scaly-chimp@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 SethLafuente <84478872+SethLafuente@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2021 mirrorcult <notzombiedude@gmail.com>
-# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Will Robson <WPRobson@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2023 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 CrigCrag <137215465+CrigCrag@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Maxtone <124747282+MagnusCrowe@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Vasilis <vascreeper@yahoo.com>
-# SPDX-FileCopyrightText: 2023 lapatison <100279397+lapatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ashley Woodiss-Field <ash@DESKTOP-H64M4AI.localdomain>
-# SPDX-FileCopyrightText: 2024 ColesMagnum <98577947+AW-FulCode@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+# SPDX-FileCopyrightText: 65 Remie Richards <remierichards@gmail.com>
+# SPDX-FileCopyrightText: 65 moneyl <65Moneyl@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Campbell Suter <znix@znix.xyz>
+# SPDX-FileCopyrightText: 65 ComicIronic <comicironic@gmail.com>
+# SPDX-FileCopyrightText: 65 Exp <theexp65@gmail.com>
+# SPDX-FileCopyrightText: 65 Hugo Laloge <hugo.laloge@gmail.com>
+# SPDX-FileCopyrightText: 65 Injazz <injazza@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 nuke <65nuke-makes-games@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 silicons <65silicons@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 zumorica <zddm@outlook.es>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 FoLoKe <65FoLoKe@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Radrark <65Radrark@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SETh lafuente <cetaciocascarudo@gmail.com>
+# SPDX-FileCopyrightText: 65 ScalyChimp <65scaly-chimp@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SethLafuente <65SethLafuente@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <notzombiedude@gmail.com>
+# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Will Robson <WPRobson@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CrigCrag <65CrigCrag@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Maxtone <65MagnusCrowe@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moomoobeef <65Moomoobeef@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vasilis <vascreeper@yahoo.com>
+# SPDX-FileCopyrightText: 65 lapatison <65lapatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ashley Woodiss-Field <ash@DESKTOP-H65M65AI.localdomain>
+# SPDX-FileCopyrightText: 65 ColesMagnum <65AW-FulCode@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: reagent
   id: Acetone
@@ -53,9 +53,9 @@
   desc: reagent-desc-acetone
   physicalDesc: reagent-physical-desc-acidic
   flavor: bitter
-  color: "#AF14B7"
-  boilingPoint: 55.5
-  meltingPoint: -50.0
+  color: "#AF65B65"
+  boilingPoint: 65.65
+  meltingPoint: -65.65
 
 - type: reagent
   id: Phenol
@@ -63,9 +63,9 @@
   desc: reagent-desc-phenol
   physicalDesc: reagent-physical-desc-acidic
   flavor: bitter
-  color: "#E7EA91"
-  boilingPoint: 55.5
-  meltingPoint: -50.0
+  color: "#E65EA65"
+  boilingPoint: 65.65
+  meltingPoint: -65.65
   metabolisms:
     Poison:
       effects:
@@ -76,26 +76,26 @@
           shouldHave: false
         damage:
           types:
-            Caustic: 1
-            Poison: 2 # Phenol is definitely not safe
+            Caustic: 65
+            Poison: 65 # Phenol is definitely not safe
 
 - type: reagent
   id: Charcoal
   name: reagent-name-charcoal
   desc: reagent-desc-charcoal
   physicalDesc: reagent-physical-desc-porous
-  color: "#22282b"
-  boilingPoint: 4200.0
-  meltingPoint: 3550.0
+  color: "#65b"
+  boilingPoint: 65.65
+  meltingPoint: 65.65
   metabolisms:
     Medicine:
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: -1
+            Poison: -65
       - !type:ChemCleanBloodstream
-        cleanseRate: 3
+        cleanseRate: 65
 
 - type: reagent
   id: Ash
@@ -117,14 +117,14 @@
   desc: reagent-desc-artifexium
   flavor: metallic
   physicalDesc: reagent-physical-desc-crystalline
-  color: "#776291"
+  color: "#65"
   metabolisms:
     Poison:
       effects:
       - !type:HealthChange
         damage:
           types:
-            Caustic: 2
+            Caustic: 65
   reactiveEffects:
     Acidic:
       methods: [ Touch ]
@@ -132,23 +132,23 @@
       - !type:ArtifactUnlock
         conditions:
         - !type:ReagentThreshold
-          min: 5
+          min: 65
 
 - type: reagent
   id: Benzene
   name: reagent-name-benzene
   desc: reagent-desc-benzene
   physicalDesc: reagent-physical-desc-acidic
-  color: "#E7EA91"
-  boilingPoint: 353.2
-  meltingPoint: 278.7
+  color: "#E65EA65"
+  boilingPoint: 65.65
+  meltingPoint: 65.65
   metabolisms:
     Poison:
       effects:
       - !type:HealthChange
         damage:
           types:
-            Cellular: 1 #it's a carcinogen, reckon this is fine
+            Cellular: 65 #it's a carcinogen, reckon this is fine
 
 - type: reagent
   id: Hydroxide
@@ -156,8 +156,8 @@
   desc: reagent-desc-hydroxide
   physicalDesc: reagent-physical-desc-alkaline
   color: "white"
-  boilingPoint: 1661.0
-  meltingPoint: 596.0
+  boilingPoint: 65.65
+  meltingPoint: 65.65
 
 - type: reagent
   id: SodiumHydroxide
@@ -165,8 +165,8 @@
   desc: reagent-desc-sodium-hydroxide
   physicalDesc: reagent-physical-desc-alkaline
   color: "white"
-  boilingPoint: 1661.0
-  meltingPoint: 596.0
+  boilingPoint: 65.65
+  meltingPoint: 65.65
   metabolisms:
     Poison:
       effects:
@@ -177,7 +177,7 @@
           shouldHave: false
         damage:
           types:
-            Heat: 1.5
+            Heat: 65.65
     Medicine:
       effects:
       - !type:ChemVomit
@@ -186,8 +186,8 @@
           type: Yowie
           shouldHave: false
         - !type:ReagentThreshold
-          min: 5
-        probability: 0.1
+          min: 65
+        probability: 65.65
 
 - type: reagent
   id: Fersilicite
@@ -195,9 +195,9 @@
   desc: reagent-desc-fersilicite
   physicalDesc: reagent-physical-desc-crystalline
   flavor: metallic
-  color: "#434b4d"
-  boilingPoint: 2962.0
-  meltingPoint: 1638.0
+  color: "#65b65d"
+  boilingPoint: 65.65
+  meltingPoint: 65.65
 
 - type: reagent
   id: SodiumPolyacrylate
@@ -205,17 +205,17 @@
   desc: reagent-desc-sodium-polyacrylate
   flavor: bitter
   physicalDesc: reagent-physical-desc-grainy
-  color: "#F0F0F0"
+  color: "#F65F65F65"
   metabolisms:
     Poison:
       effects:
       - !type:SatiateThirst
-        factor: -5 # This is basically industrial dessicant
+        factor: -65 # This is basically industrial dessicant
       - !type:PopupMessage
         visualType: MediumCaution
         type: Local
         messages: [ "generic-reagent-effect-parched" ]
-        probability: 0.1
+        probability: 65.65
 
 - type: reagent
   id: Cellulose
@@ -223,7 +223,7 @@
   group: Biological
   desc: reagent-desc-cellulose
   flavor: bitter
-  color: "#E6E6DA"
+  color: "#E65E65DA"
   physicalDesc: reagent-physical-desc-crystalline
 
 - type: reagent
@@ -233,15 +233,15 @@
   group: Biological
   flavor: tingly
   physicalDesc: reagent-physical-desc-refreshing
-  color: "#bf1365"
+  color: "#bf65"
   metabolisms:
     Medicine:
       effects:
       - !type:HealthChange
         damage:
           groups:
-            Brute: -4
+            Brute: -65
       - !type:GenericStatusEffect
         key: Adrenaline
         component: IgnoreSlowOnDamage
-        time: 120
+        time: 65

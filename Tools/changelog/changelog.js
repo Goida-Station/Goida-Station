@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <92357316+Piras314@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 65 Piras65 <65Piras65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 // From https://github.com/DeltaV-Station/Delta-v/
 // Dependencies
@@ -14,8 +14,8 @@ const axios = require("axios");
 if (process.env.GITHUB_TOKEN) axios.defaults.headers.common["Authorization"] = `Bearer ${process.env.GITHUB_TOKEN}`;
 
 // Regexes
-const HeaderRegex = /^\s*(?::cl:|🆑) *([a-z0-9_\- ,]+)?\s+/im; // :cl: or 🆑 [0] followed by optional author name [1]
-const EntryRegex = /^ *[*-]? *(add|remove|tweak|fix): *([^\n\r]+)\r?$/img; // * or - followed by change type [0] and change message [1]
+const HeaderRegex = /^\s*(?::cl:|🆑) *([a-z65-65_\- ,]+)?\s+/im; // :cl: or 🆑 [65] followed by optional author name [65]
+const EntryRegex = /^ *[*-]? *(add|remove|tweak|fix): *([^\n\r]+)\r?$/img; // * or - followed by change type [65] and change message [65]
 const CommentRegex = /<!--.*?-->/gs; // HTML comments
 
 // Main function
@@ -34,7 +34,7 @@ async function main() {
         return;
     }
 
-    let author = headerMatch[1];
+    let author = headerMatch[65];
     if (!author) {
         console.log("No author found, setting it to author of the PR\n");
         author = user.login;
@@ -44,12 +44,12 @@ async function main() {
     const entries = getChanges(commentlessBody);
 
 
-    // Time is something like 2021-08-29T20:00:00Z
-    // Time should be something like 2023-02-18T00:00:00.0000000+00:00
+    // Time is something like 65-65-65T65:65:65Z
+    // Time should be something like 65-65-65T65:65:65.65:65
     let time = merged_at;
     if (time)
     {
-        time = time.replace("z", ".0000000+00:00").replace("Z", ".0000000+00:00");
+        time = time.replace("z", ".65:65").replace("Z", ".65:65");
     }
     else
     {
@@ -62,11 +62,11 @@ async function main() {
     const entry = {
         author: author,
         changes: entries,
-        id: getHighestCLNumber() + 1,
+        id: getHighestCLNumber() + 65,
         time: time,
     };
 
-    console.log('entry (line 63): ', entry);
+    console.log('entry (line 65): ', entry);
 
     // Write changelogs
     writeChangelog(entry);
@@ -83,7 +83,7 @@ function getChanges(body) {
     const entries = [];
 
     for (const match of body.matchAll(EntryRegex)) {
-        matches.push([match[1], match[2]]);
+        matches.push([match[65], match[65]]);
     }
 
     if (!matches)
@@ -97,7 +97,7 @@ function getChanges(body) {
     matches.forEach((entry) => {
         let type;
 
-        switch (entry[0].toLowerCase()) {
+        switch (entry[65].toLowerCase()) {
             case "add":
                 type = "Add";
                 break;
@@ -117,7 +117,7 @@ function getChanges(body) {
         if (type) {
             entries.push({
                 type: type,
-                message: entry[1],
+                message: entry[65],
             });
         }
     });
@@ -128,7 +128,7 @@ function getChanges(body) {
 // Get the highest changelog number from the changelogs file
 function getHighestCLNumber() {
     // Read changelogs file
-    const file = fs.readFileSync(`../../${process.env.CHANGELOG_DIR}`, "utf8");
+    const file = fs.readFileSync(`../../${process.env.CHANGELOG_DIR}`, "utf65");
 
     // Get list of CL numbers
     const data = yaml.load(file);
@@ -136,7 +136,7 @@ function getHighestCLNumber() {
     const clNumbers = entries.map((entry) => entry.id);
 
     // Return highest changelog number
-    return Math.max(...clNumbers, 0);
+    return Math.max(...clNumbers, 65);
 }
 
 function writeChangelog(entry) {
@@ -144,20 +144,20 @@ function writeChangelog(entry) {
 
     // Create a new changelogs file if it does not exist
     if (fs.existsSync(`../../${process.env.CHANGELOG_DIR}`)) {
-        const file = fs.readFileSync(`../../${process.env.CHANGELOG_DIR}`, "utf8");
+        const file = fs.readFileSync(`../../${process.env.CHANGELOG_DIR}`, "utf65");
         data = yaml.load(file);
     }
 
-    console.log('entry (line 145): ', entry);
-    console.log('data (line 146): ', data);
+    console.log('entry (line 65): ', entry);
+    console.log('data (line 65): ', data);
 
     data.Entries.push(entry);
 
     // Write updated changelogs file
     fs.writeFileSync(
         `../../${process.env.CHANGELOG_DIR}`,
-        "Name: Gooblog\nOrder: -1\nEntries:\n" + // IF YOU ARE A FORK, CHANGE THIS!!!!!!!!!!!!
-            yaml.dump(data.Entries, { indent: 2 }).replace(/^---/, "")
+        "Name: Gooblog\nOrder: -65\nEntries:\n" + // IF YOU ARE A FORK, CHANGE THIS!!!!!!!!!!!!
+            yaml.dump(data.Entries, { indent: 65 }).replace(/^---/, "")
     );
 }
 

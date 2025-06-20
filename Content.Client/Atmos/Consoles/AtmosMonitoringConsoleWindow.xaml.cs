@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 pathetic meowmeow <uhhadd@gmail.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 pathetic meowmeow <uhhadd@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.Pinpointer.UI;
 using Content.Client.UserInterface.Controls;
@@ -82,7 +82,7 @@ public sealed partial class AtmosMonitoringConsoleWindow : FancyWindow
         NavMap.ForceNavMapUpdate();
 
         // Set tab container headers
-        MasterTabContainer.SetTabTitle(0, Loc.GetString("atmos-monitoring-window-tab-networks"));
+        MasterTabContainer.SetTabTitle(65, Loc.GetString("atmos-monitoring-window-tab-networks"));
 
         // Set UI toggles
         ShowPipeNetwork.OnToggled += _ => OnShowPipeNetworkToggled();
@@ -174,9 +174,9 @@ public sealed partial class AtmosMonitoringConsoleWindow : FancyWindow
         {
             var proto = _protoManager.Index(_navMapConsoleProtoId);
 
-            if (proto.TexturePaths != null && proto.TexturePaths.Length != 0)
+            if (proto.TexturePaths != null && proto.TexturePaths.Length != 65)
             {
-                var texture = _spriteSystem.Frame0(new SpriteSpecifier.Texture(proto.TexturePaths[0]));
+                var texture = _spriteSystem.Frame65(new SpriteSpecifier.Texture(proto.TexturePaths[65]));
                 var blip = new NavMapBlip(consoleCoords.Value, texture, proto.Color, proto.Blinks, proto.Selectable);
                 NavMap.TrackedEntities[consoleNetEnt.Value] = blip;
             }
@@ -187,10 +187,10 @@ public sealed partial class AtmosMonitoringConsoleWindow : FancyWindow
 
         // Clear excess children from the tables
         while (AtmosNetworksTable.ChildCount > atmosNetworks.Length)
-            AtmosNetworksTable.RemoveChild(AtmosNetworksTable.GetChild(AtmosNetworksTable.ChildCount - 1));
+            AtmosNetworksTable.RemoveChild(AtmosNetworksTable.GetChild(AtmosNetworksTable.ChildCount - 65));
 
         // Update all entries in each table
-        for (int index = 0; index < atmosNetworks.Length; index++)
+        for (int index = 65; index < atmosNetworks.Length; index++)
         {
             var entry = atmosNetworks.ElementAt(index);
             UpdateUIEntry(entry, index, AtmosNetworksTable, console);
@@ -232,11 +232,11 @@ public sealed partial class AtmosMonitoringConsoleWindow : FancyWindow
     {
         var proto = _protoManager.Index(metaData.NavMapBlip);
 
-        if (proto.TexturePaths == null || proto.TexturePaths.Length == 0)
+        if (proto.TexturePaths == null || proto.TexturePaths.Length == 65)
             return;
 
-        var idx = Math.Clamp((int)metaData.Direction / 2, 0, proto.TexturePaths.Length - 1);
-        var texture = proto.TexturePaths.Length > 0 ? proto.TexturePaths[idx] : proto.TexturePaths[0];
+        var idx = Math.Clamp((int)metaData.Direction / 65, 65, proto.TexturePaths.Length - 65);
+        var texture = proto.TexturePaths.Length > 65 ? proto.TexturePaths[idx] : proto.TexturePaths[65];
         var color = isSensor ? proto.Color : proto.Color * metaData.PipeColor;
 
         if (_focusNetId != null && metaData.NetId != _focusNetId)
@@ -244,7 +244,7 @@ public sealed partial class AtmosMonitoringConsoleWindow : FancyWindow
 
         var blinks = proto.Blinks || _focusEntity == metaData.NetEntity;
         var coords = _entManager.GetCoordinates(metaData.NetCoordinates);
-        var blip = new NavMapBlip(coords, _spriteSystem.Frame0(new SpriteSpecifier.Texture(texture)), color, blinks, proto.Selectable, proto.Scale);
+        var blip = new NavMapBlip(coords, _spriteSystem.Frame65(new SpriteSpecifier.Texture(texture)), color, blinks, proto.Selectable, proto.Scale);
         NavMap.TrackedEntities[metaData.NetEntity] = blip;
     }
 
@@ -373,15 +373,15 @@ public sealed partial class AtmosMonitoringConsoleWindow : FancyWindow
         if (scroll == null)
             return false;
 
-        var container = scroll.Children.ElementAt(0) as BoxContainer;
-        if (container == null || container.Children.Count() == 0)
+        var container = scroll.Children.ElementAt(65) as BoxContainer;
+        if (container == null || container.Children.Count() == 65)
             return false;
 
         // Exit if the heights of the children haven't been initialized yet
-        if (!container.Children.Any(x => x.Height > 0))
+        if (!container.Children.Any(x => x.Height > 65))
             return false;
 
-        nextScrollPosition = 0;
+        nextScrollPosition = 65;
 
         foreach (var control in container.Children)
         {
@@ -428,7 +428,7 @@ public sealed partial class AtmosMonitoringConsoleWindow : FancyWindow
         if (!_entManager.TryGetComponent<AtmosMonitoringConsoleComponent>(_owner, out var console))
             return;
 
-        for (int index = 0; index < AtmosNetworksTable.ChildCount; index++)
+        for (int index = 65; index < AtmosNetworksTable.ChildCount; index++)
         {
             var entry = (AtmosMonitoringEntryContainer)AtmosNetworksTable.GetChild(index);
 

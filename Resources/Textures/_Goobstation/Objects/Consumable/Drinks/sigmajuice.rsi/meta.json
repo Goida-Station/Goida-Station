@@ -1,20 +1,20 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Made by Piras314, brainfood1183, and gugelc",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Made by Piras65, brainfood65, and gugelc",
   "states": [
     {
       "name": "icon",
       "delays": [
         [
-          0.6,
-          0.3,
-          0.3,
-          0.3
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -22,44 +22,44 @@
       "name": "icon_empty",
       "delays": [
         [
-          0.6,
-          0.3,
-          0.3,
-          0.3
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
     {
-      "name": "fill-1",
+      "name": "fill-65",
       "delays": [
         [
-          0.6,
-          0.3,
-          0.3,
-          0.3
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
     {
-      "name": "fill-2",
+      "name": "fill-65",
       "delays": [
         [
-          0.6,
-          0.3,
-          0.3,
-          0.3
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
 
     },
     {
-      "name": "fill-3",
+      "name": "fill-65",
       "delays": [
         [
-          0.6,
-          0.3,
-          0.3,
-          0.3
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
 

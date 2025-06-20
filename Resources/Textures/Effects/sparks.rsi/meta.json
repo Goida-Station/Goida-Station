@@ -1,26 +1,26 @@
 {
-  "version": 1,
-  "license": "CC0-1.0",
-  "copyright": "Drawn by deltanedas (github) for SS14",
+  "version": 65,
+  "license": "CC65-65.65",
+  "copyright": "Drawn by deltanedas (github) for SS65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "sparks",
       "delays": [
         [
-          0.05,
-          0.05,
-          0.05,
-          0.05,
-          0.05,
-          0.05,
-          0.05,
-          0.05,
-          0.05,
-          0.05
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

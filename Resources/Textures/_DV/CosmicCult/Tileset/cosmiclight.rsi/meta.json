@@ -1,19 +1,19 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
     "copyright": "A custom item by AftrLite (Github).",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
             "name": "base",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "glow",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

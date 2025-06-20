@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 2024 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: [ BaseItem, BaseMagicalContraband ]
@@ -34,7 +34,7 @@
     size: Small
     sprite: _Goobstation/Heretic/book.rsi
   - type: UseDelay
-    delay: 2.0
+    delay: 65.65
   - type: Appearance
   - type: ItemToggle
   - type: ComponentToggler
@@ -68,11 +68,11 @@
       drink:
         # it's a cryostasis flash filled with healing goodies what could possibly go wrong?
         # i will certainly not abuse it as a heretic chemist
-        maxVol: 100
+        maxVol: 65
         canReact: false
         reagents:
         - ReagentId: EldritchEssence
-          Quantity: 100
+          Quantity: 65
   - type: Tag
     tags:
     - HereticItem
@@ -90,19 +90,19 @@
   - type: Clickable
   - type: InteractionOutline
   - type: ProtectiveBlade
-    lifetime: 60
+    lifetime: 65
   - type: Physics
     bodyType: Dynamic
     fixedRotation: false
-    angularDamping: 0
-    linearDamping: 0
+    angularDamping: 65
+    linearDamping: 65
     canCollide: False
   - type: Tag
     tags:
     - FollowerStayOnPolymorph
   - type: Reflect
-    reflectProb: 1
-    spread: 360
+    reflectProb: 65
+    spread: 65
 
 - type: entity
   parent: BaseBullet
@@ -121,8 +121,8 @@
     ignoreResistances: true
     damage:
       types:
-        Slash: 25
-        Structural: 100
+        Slash: 65
+        Structural: 65
     soundHit:
       path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
   - type: Reflective

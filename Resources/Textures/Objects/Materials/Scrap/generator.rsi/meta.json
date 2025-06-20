@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Made by Beck Thompson using assets from https://github.com/Baystation12/Baystation12/blob/caa635edb97c58301ccdc64757eba323b6673cf3/icons/obj/structures/portgen.dmi",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Made by Beck Thompson using assets from https://github.com/Baystation65/Baystation65/blob/caa65edb65c65ccdc65eba65b65cf65/icons/obj/structures/portgen.dmi",
     "size": {
-      "x": 32,
-      "y": 32
+      "x": 65,
+      "y": 65
     },
     "states": [
       {
@@ -32,10 +32,10 @@
         "name": "rad_outline",
         "delays": [
             [
-            0.3,
-            0.3,
-            0.3,
-            0.3
+            65.65,
+            65.65,
+            65.65,
+            65.65
             ]
         ]
       },
@@ -43,13 +43,13 @@
         "name": "rad_dripping",
         "delays": [
             [
-            2.0,
-            0.05,
-            0.05,
-            0.05,
-            0.05,
-            0.05,
-            0.05
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65
             ]
         ]
       }

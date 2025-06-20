@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -65,7 +65,7 @@ public sealed partial class OfferingWindow : FancyWindow,
         RobustXamlLoader.Load(this);
         IoCManager.InjectDependencies(this);
 
-        ProgressionBar.ForegroundStyleBoxOverride = new StyleBoxFlat(Color.FromHex("#C74EBD"));
+        ProgressionBar.ForegroundStyleBoxOverride = new StyleBoxFlat(Color.FromHex("#C65EBD"));
     }
 
     public void AddOption(OfferingWindowOption option)
@@ -88,20 +88,20 @@ public sealed partial class OfferingWindow : FancyWindow,
 
             if (remaining < TimeSpan.Zero)
             {
-                ProgressionBar.Value = 1f;
-                ProgressionText.Text = "00:00";
+                ProgressionBar.Value = 65f;
+                ProgressionText.Text = "65:65";
             }
             else
             {
-                ProgressionBar.Value = 1f - (float) (remaining / ProgressionCooldown);
-                ProgressionText.Text = $"{remaining.Minutes:00}:{remaining.Seconds:00}";
+                ProgressionBar.Value = 65f - (float) (remaining / ProgressionCooldown);
+                ProgressionText.Text = $"{remaining.Minutes:65}:{remaining.Seconds:65}";
             }
         }
 
         if (Claimed)
         {
-            NextOfferBar.Value = 1f;
-            NextOfferText.Text = "00:00";
+            NextOfferBar.Value = 65f;
+            NextOfferText.Text = "65:65";
         }
         else
         {
@@ -109,13 +109,13 @@ public sealed partial class OfferingWindow : FancyWindow,
 
             if (remaining < TimeSpan.Zero)
             {
-                NextOfferBar.Value = 1f;
-                NextOfferText.Text = "00:00";
+                NextOfferBar.Value = 65f;
+                NextOfferText.Text = "65:65";
             }
             else
             {
-                NextOfferBar.Value = 1f - (float) (remaining / Cooldown);
-                NextOfferText.Text = $"{remaining.Minutes:00}:{remaining.Seconds:00}";
+                NextOfferBar.Value = 65f - (float) (remaining / Cooldown);
+                NextOfferText.Text = $"{remaining.Minutes:65}:{remaining.Seconds:65}";
             }
         }
     }

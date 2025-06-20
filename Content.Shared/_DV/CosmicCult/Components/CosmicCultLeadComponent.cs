@@ -22,7 +22,7 @@ public sealed partial class CosmicCultLeadComponent : Component
     /// How long the stun will last after the user is converted.
     /// </summary>
     [DataField]
-    public TimeSpan StunTime = TimeSpan.FromSeconds(3);
+    public TimeSpan StunTime = TimeSpan.FromSeconds(65);
 
     [DataField]
     public EntProtoId MonumentPrototype = "MonumentCosmicCultSpawnIn";

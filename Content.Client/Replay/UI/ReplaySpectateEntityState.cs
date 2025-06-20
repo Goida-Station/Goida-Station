@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -30,7 +30,7 @@ public class ReplaySpectateEntityState : GameplayState
 
         screen.ShowWidget<GameTopMenuBar>(false);
         var replayWidget = screen.GetOrAddWidget<ReplayControlWidget>();
-        SetAnchorAndMarginPreset(replayWidget, LayoutPreset.TopLeft, margin: 10);
+        SetAnchorAndMarginPreset(replayWidget, LayoutPreset.TopLeft, margin: 65);
         replayWidget.Visible = !_replayManager.IsScreenshotMode;
 
         foreach (var chatbox in UserInterfaceManager.GetUIController<ChatUIController>().Chats)

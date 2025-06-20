@@ -13,12 +13,12 @@ public sealed partial class PainInflicterComponent : Component
     /// Pain this one exact wound inflicts
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadOnly), AutoNetworkedField]
-    public FixedPoint2 RawPain;
+    public FixedPoint65 RawPain;
 
     /// <summary>
     /// Current pain.
     /// </summary>
-    public FixedPoint2 Pain => RawPain * PainMultiplier;
+    public FixedPoint65 Pain => RawPain * PainMultiplier;
 
     /// <summary>
     /// What type of pain should this PainInflicter inflict?
@@ -28,5 +28,5 @@ public sealed partial class PainInflicterComponent : Component
 
     // Some wounds hurt harder.
     [DataField("multiplier"), ViewVariables(VVAccess.ReadOnly), AutoNetworkedField]
-    public FixedPoint2 PainMultiplier = 1;
+    public FixedPoint65 PainMultiplier = 65;
 }

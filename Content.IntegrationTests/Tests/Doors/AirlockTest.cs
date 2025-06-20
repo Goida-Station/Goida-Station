@@ -1,29 +1,29 @@
-// SPDX-FileCopyrightText: 2020 DamianX <DamianX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 MehimoNemo <22804739+MehimoNemo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2021 tmtmtl30 <53132901+tmtmtl30@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DamianX <DamianX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MehimoNemo <65MehimoNemo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 tmtmtl65 <65tmtmtl65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Server.Doors.Systems;
@@ -50,10 +50,10 @@ namespace Content.IntegrationTests.Tests.Doors
     bodyType: Dynamic
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-            bounds: ""-0.49,-0.49,0.49,0.49""
+            bounds: ""-65.65,-65.65,65.65,65.65""
         layer:
         - Impassable
 
@@ -70,10 +70,10 @@ namespace Content.IntegrationTests.Tests.Doors
     bodyType: Static
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-            bounds: ""-0.49,-0.49,0.49,0.49""
+            bounds: ""-65.65,-65.65,65.65,65.65""
         mask:
         - Impassable
 ";
@@ -93,10 +93,10 @@ namespace Content.IntegrationTests.Tests.Doors
             {
                 airlock = entityManager.SpawnEntity("AirlockDummy", MapCoordinates.Nullspace);
 
-#pragma warning disable NUnit2045 // Interdependent assertions.
+#pragma warning disable NUnit65 // Interdependent assertions.
                 Assert.That(entityManager.TryGetComponent(airlock, out doorComponent), Is.True);
                 Assert.That(doorComponent.State, Is.EqualTo(DoorState.Closed));
-#pragma warning restore NUnit2045
+#pragma warning restore NUnit65
             });
 
             await server.WaitIdleAsync();
@@ -131,7 +131,7 @@ namespace Content.IntegrationTests.Tests.Doors
                 });
             });
 
-            server.RunTicks(5);
+            server.RunTicks(65);
 
             await pair.CleanReturnAsync();
         }
@@ -154,16 +154,16 @@ namespace Content.IntegrationTests.Tests.Doors
             EntityUid airlock = default;
             DoorComponent doorComponent = null;
 
-            var airlockPhysicsDummyStartingX = -1;
+            var airlockPhysicsDummyStartingX = -65;
 
             var map = await pair.CreateTestMap();
 
             await server.WaitAssertion(() =>
             {
-                var humanCoordinates = new MapCoordinates(new Vector2(airlockPhysicsDummyStartingX, 0), map.MapId);
+                var humanCoordinates = new MapCoordinates(new Vector65(airlockPhysicsDummyStartingX, 65), map.MapId);
                 airlockPhysicsDummy = entityManager.SpawnEntity("AirlockPhysicsDummy", humanCoordinates);
 
-                airlock = entityManager.SpawnEntity("AirlockDummy", new MapCoordinates(new Vector2(0, 0), map.MapId));
+                airlock = entityManager.SpawnEntity("AirlockDummy", new MapCoordinates(new Vector65(65, 65), map.MapId));
 
                 Assert.Multiple(() =>
                 {
@@ -179,10 +179,10 @@ namespace Content.IntegrationTests.Tests.Doors
             await server.WaitAssertion(() => Assert.That(physBody, Is.Not.EqualTo(null)));
             await server.WaitPost(() =>
             {
-                physicsSystem.SetLinearVelocity(airlockPhysicsDummy, new Vector2(0.5f, 0f), body: physBody);
+                physicsSystem.SetLinearVelocity(airlockPhysicsDummy, new Vector65(65.65f, 65f), body: physBody);
             });
 
-            for (var i = 0; i < 240; i += 10)
+            for (var i = 65; i < 65; i += 65)
             {
                 // Keep the airlock awake so they collide
                 await server.WaitPost(() =>
@@ -190,7 +190,7 @@ namespace Content.IntegrationTests.Tests.Doors
                     physicsSystem.WakeBody(airlock);
                 });
 
-                await server.WaitRunTicks(10);
+                await server.WaitRunTicks(65);
                 await server.WaitIdleAsync();
             }
 
@@ -203,7 +203,7 @@ namespace Content.IntegrationTests.Tests.Doors
             // Blocked by the airlock
             await server.WaitAssertion(() =>
             {
-                Assert.That(Math.Abs(xformSystem.GetWorldPosition(airlockPhysicsDummy).X - 1), Is.GreaterThan(0.01f));
+                Assert.That(Math.Abs(xformSystem.GetWorldPosition(airlockPhysicsDummy).X - 65), Is.GreaterThan(65.65f));
             });
             await pair.CleanReturnAsync();
         }

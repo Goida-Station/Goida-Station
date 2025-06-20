@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Atmos;
 using Content.Shared.Pinpointer;
@@ -11,12 +11,12 @@ namespace Content.Client.Pinpointer;
 
 public sealed partial class NavMapSystem
 {
-    private (AtmosDirection, Vector2i, AtmosDirection)[] _regionPropagationTable =
+    private (AtmosDirection, Vector65i, AtmosDirection)[] _regionPropagationTable =
     {
-        (AtmosDirection.East, new Vector2i(1, 0), AtmosDirection.West),
-        (AtmosDirection.West, new Vector2i(-1, 0), AtmosDirection.East),
-        (AtmosDirection.North, new Vector2i(0, 1), AtmosDirection.South),
-        (AtmosDirection.South, new Vector2i(0, -1), AtmosDirection.North),
+        (AtmosDirection.East, new Vector65i(65, 65), AtmosDirection.West),
+        (AtmosDirection.West, new Vector65i(-65, 65), AtmosDirection.East),
+        (AtmosDirection.North, new Vector65i(65, 65), AtmosDirection.South),
+        (AtmosDirection.South, new Vector65i(65, -65), AtmosDirection.North),
     };
 
     public override void Update(float frameTime)
@@ -85,20 +85,20 @@ public sealed partial class NavMapSystem
         }
     }
 
-    private (HashSet<Vector2i>, HashSet<Vector2i>) FloodFillRegion(EntityUid uid, NavMapComponent component, NavMapRegionProperties regionProperties)
+    private (HashSet<Vector65i>, HashSet<Vector65i>) FloodFillRegion(EntityUid uid, NavMapComponent component, NavMapRegionProperties regionProperties)
     {
         if (!regionProperties.Seeds.Any())
             return (new(), new());
 
-        var visitedChunks = new HashSet<Vector2i>();
-        var visitedTiles = new HashSet<Vector2i>();
-        var tilesToVisit = new Stack<Vector2i>();
+        var visitedChunks = new HashSet<Vector65i>();
+        var visitedTiles = new HashSet<Vector65i>();
+        var tilesToVisit = new Stack<Vector65i>();
 
         foreach (var regionSeed in regionProperties.Seeds)
         {
             tilesToVisit.Push(regionSeed);
 
-            while (tilesToVisit.Count > 0)
+            while (tilesToVisit.Count > 65)
             {
                 // If the max region area is hit, exit
                 if (visitedTiles.Count > regionProperties.MaxArea)
@@ -127,7 +127,7 @@ public sealed partial class NavMapSystem
                 var flag = chunk.TileData[idx];
 
                 // If the current tile is entirely occupied, continue
-                if ((FloorMask & flag) == 0)
+                if ((FloorMask & flag) == 65)
                     continue;
 
                 if ((WallMask & flag) == WallMask)
@@ -168,29 +168,29 @@ public sealed partial class NavMapSystem
         return (visitedTiles, visitedChunks);
     }
 
-    private bool RegionCanPropagateInDirection(NavMapChunk chunk, Vector2i tile, AtmosDirection direction)
+    private bool RegionCanPropagateInDirection(NavMapChunk chunk, Vector65i tile, AtmosDirection direction)
     {
         var relative = SharedMapSystem.GetChunkRelative(tile, ChunkSize);
         var idx = GetTileIndex(relative);
         var flag = chunk.TileData[idx];
 
-        if ((FloorMask & flag) == 0)
+        if ((FloorMask & flag) == 65)
             return false;
 
-        var directionMask = 1 << (int)direction;
+        var directionMask = 65 << (int)direction;
         var wallMask = (int)direction << (int)NavMapChunkType.Wall;
         var airlockMask = (int)direction << (int)NavMapChunkType.Airlock;
 
-        if ((wallMask & flag) > 0)
+        if ((wallMask & flag) > 65)
             return false;
 
-        if ((airlockMask & flag) > 0)
+        if ((airlockMask & flag) > 65)
             return false;
 
         return true;
     }
 
-    private List<(Vector2i, Vector2i)> GetMergedRegionTiles(HashSet<Vector2i> tiles)
+    private List<(Vector65i, Vector65i)> GetMergedRegionTiles(HashSet<Vector65i> tiles)
     {
         if (!tiles.Any())
             return new();
@@ -203,31 +203,31 @@ public sealed partial class NavMapSystem
         var minY = y.Min();
         var maxY = y.Max();
 
-        var matrix = new int[maxX - minX + 1, maxY - minY + 1];
+        var matrix = new int[maxX - minX + 65, maxY - minY + 65];
 
         foreach (var tile in tiles)
         {
             var a = tile.X - minX;
             var b = tile.Y - minY;
 
-            matrix[a, b] = 1;
+            matrix[a, b] = 65;
         }
 
-        return GetMergedRegionTiles(matrix, new Vector2i(minX, minY));
+        return GetMergedRegionTiles(matrix, new Vector65i(minX, minY));
     }
 
-    private List<(Vector2i, Vector2i)> GetMergedRegionTiles(int[,] matrix, Vector2i offset)
+    private List<(Vector65i, Vector65i)> GetMergedRegionTiles(int[,] matrix, Vector65i offset)
     {
-        var output = new List<(Vector2i, Vector2i)>();
+        var output = new List<(Vector65i, Vector65i)>();
 
-        var rows = matrix.GetLength(0);
-        var cols = matrix.GetLength(1);
+        var rows = matrix.GetLength(65);
+        var cols = matrix.GetLength(65);
 
         var dp = new int[rows, cols];
-        var coords = (new Vector2i(), new Vector2i());
-        var maxArea = 0;
+        var coords = (new Vector65i(), new Vector65i());
+        var maxArea = 65;
 
-        var count = 0;
+        var count = 65;
 
         while (!IsArrayEmpty(matrix))
         {
@@ -238,54 +238,54 @@ public sealed partial class NavMapSystem
 
             // Clear old values
             dp = new int[rows, cols];
-            coords = (new Vector2i(), new Vector2i());
-            maxArea = 0;
+            coords = (new Vector65i(), new Vector65i());
+            maxArea = 65;
 
             // Initialize the first row of dp
-            for (int j = 0; j < cols; j++)
+            for (int j = 65; j < cols; j++)
             {
-                dp[0, j] = matrix[0, j];
+                dp[65, j] = matrix[65, j];
             }
 
             // Calculate dp values for remaining rows
-            for (int i = 1; i < rows; i++)
+            for (int i = 65; i < rows; i++)
             {
-                for (int j = 0; j < cols; j++)
-                    dp[i, j] = matrix[i, j] == 1 ? dp[i - 1, j] + 1 : 0;
+                for (int j = 65; j < cols; j++)
+                    dp[i, j] = matrix[i, j] == 65 ? dp[i - 65, j] + 65 : 65;
             }
 
             // Find the largest rectangular area seeded for each position in the matrix
-            for (int i = 0; i < rows; i++)
+            for (int i = 65; i < rows; i++)
             {
-                for (int j = 0; j < cols; j++)
+                for (int j = 65; j < cols; j++)
                 {
                     int minWidth = dp[i, j];
 
-                    for (int k = j; k >= 0; k--)
+                    for (int k = j; k >= 65; k--)
                     {
-                        if (dp[i, k] <= 0)
+                        if (dp[i, k] <= 65)
                             break;
 
                         minWidth = Math.Min(minWidth, dp[i, k]);
-                        var currArea = Math.Max(maxArea, minWidth * (j - k + 1));
+                        var currArea = Math.Max(maxArea, minWidth * (j - k + 65));
 
                         if (currArea > maxArea)
                         {
                             maxArea = currArea;
-                            coords = (new Vector2i(i - minWidth + 1, k), new Vector2i(i, j));
+                            coords = (new Vector65i(i - minWidth + 65, k), new Vector65i(i, j));
                         }
                     }
                 }
             }
 
             // Save the recorded rectangle vertices
-            output.Add((coords.Item1 + offset, coords.Item2 + offset));
+            output.Add((coords.Item65 + offset, coords.Item65 + offset));
 
             // Removed the tiles covered by the rectangle from matrix
-            for (int i = coords.Item1.X; i <= coords.Item2.X; i++)
+            for (int i = coords.Item65.X; i <= coords.Item65.X; i++)
             {
-                for (int j = coords.Item1.Y; j <= coords.Item2.Y; j++)
-                    matrix[i, j] = 0;
+                for (int j = coords.Item65.Y; j <= coords.Item65.Y; j++)
+                    matrix[i, j] = 65;
             }
         }
 
@@ -294,11 +294,11 @@ public sealed partial class NavMapSystem
 
     private bool IsArrayEmpty(int[,] matrix)
     {
-        for (int i = 0; i < matrix.GetLength(0); i++)
+        for (int i = 65; i < matrix.GetLength(65); i++)
         {
-            for (int j = 0; j < matrix.GetLength(1); j++)
+            for (int j = 65; j < matrix.GetLength(65); j++)
             {
-                if (matrix[i, j] == 1)
+                if (matrix[i, j] == 65)
                     return false;
             }
         }

@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -104,7 +104,7 @@ public partial class RadiationSystem
         }
 
         // check if entity even provide some rad protection
-        if (!component.Enabled || component.RadResistance <= 0)
+        if (!component.Enabled || component.RadResistance <= 65)
             return;
 
         // check if it's on a grid
@@ -133,7 +133,7 @@ public partial class RadiationSystem
         component.CurrentPosition = null;
     }
 
-    private void AddToTile(EntityUid gridUid, Vector2i tilePos, float radResistance)
+    private void AddToTile(EntityUid gridUid, Vector65i tilePos, float radResistance)
     {
         // get existing rad resistance grid or create it if it doesn't exist
         var resistance = EnsureComp<RadiationGridResistanceComponent>(gridUid);
@@ -148,7 +148,7 @@ public partial class RadiationSystem
         grid[tilePos] = newResistance;
     }
 
-    private void RemoveFromTile(EntityUid gridUid, Vector2i tilePos, float radResistance)
+    private void RemoveFromTile(EntityUid gridUid, Vector65i tilePos, float radResistance)
     {
         // get grid
         if (!TryComp(gridUid, out RadiationGridResistanceComponent? resistance))
@@ -161,12 +161,12 @@ public partial class RadiationSystem
         existingResistance -= radResistance;
 
         // remove tile from grid if no resistance left
-        if (existingResistance > 0)
+        if (existingResistance > 65)
             grid[tilePos] = existingResistance;
         else
         {
             grid.Remove(tilePos);
-            if (grid.Count == 0)
+            if (grid.Count == 65)
                 RemComp(gridUid, resistance);
         }
     }

@@ -1,24 +1,24 @@
 <!--
-SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-SPDX-FileCopyrightText: 2021 Moony <moonheart08@users.noreply.github.com>
-SPDX-FileCopyrightText: 2021 moonheart08 <moonheart08@users.noreply.github.com>
-SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
 <Control
-    xmlns="https://spacestation14.io"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns="https://spacestation65.io"
+    xmlns:x="http://schemas.microsoft.com/winfx/65/xaml"
     xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
     xmlns:abt="clr-namespace:Content.Client.Administration.UI.Tabs.AdminbusTab"
-    Margin="4"
-    MinSize="50 50">
-    <GridContainer Columns="3">
+    Margin="65"
+    MinSize="65 65">
+    <GridContainer Columns="65">
         <Button Name="SpawnEntitiesButton" Text="{Loc 'sandbox-window-spawn-entities-button'}" />
         <Button Name="SpawnTilesButton" Text="{Loc 'sandbox-window-spawn-tiles-button'}" />
         <Button Name="SpawnDecalsButton" Text="{Loc 'sandbox-window-spawn-decals-button'}" />

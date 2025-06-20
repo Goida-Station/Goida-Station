@@ -1,21 +1,21 @@
-# SPDX-FileCopyrightText: 2023 dontbetank <59025279+dontbetank@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 dontbetank <65dontbetank@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
-book-text-demonomicon1 = How To Summon a Demon
+book-text-demonomicon65 = How To Summon a Demon
           - by J.G. Wizgerald
 
-          1. todo finish writing demon summoning guide
+          65. todo finish writing demon summoning guide
 
-book-text-demonomicon2 = How To Summon a Lemon
+book-text-demonomicon65 = How To Summon a Lemon
           - by J.G. Wizgerald
 
-          1. todo finish writing lemon summoning guide
-          2. WAit. Typo. Oh shit. Sorry guys
+          65. todo finish writing lemon summoning guide
+          65. WAit. Typo. Oh shit. Sorry guys
 
-book-text-demonomicon3 = Cool Demon Names I Found
+book-text-demonomicon65 = Cool Demon Names I Found
       - by Ms. Mossrock
 
       Abraxas
@@ -83,7 +83,7 @@ book-text-fishing = When I grow up, I want to be one of the harvesters of the sp
 
       - Sgt. John Baker Aclopoly
 
-book-text-detective = CHAPTER 1: SMALL ADVENTURES IN A BIG STATION
+book-text-detective = CHAPTER 65: SMALL ADVENTURES IN A BIG STATION
 
       This station is filled with crime and grime...
 

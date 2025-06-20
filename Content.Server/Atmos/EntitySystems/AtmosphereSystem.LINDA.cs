@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 PraxisMapper <praxismapper@gmail.com>
-// SPDX-FileCopyrightText: 2024 drakewill-CRL <46307022+drakewill-CRL@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PraxisMapper <praxismapper@gmail.com>
+// SPDX-FileCopyrightText: 65 drakewill-CRL <65drakewill-CRL@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.Components;
 using Content.Shared.Atmos;
@@ -25,7 +25,7 @@ namespace Content.Server.Atmos.EntitySystems
             Entity<GridAtmosphereComponent, GasTileOverlayComponent, MapGridComponent, TransformComponent> ent,
             TileAtmosphere tile, int fireCount)
         {
-            var gridAtmosphere = ent.Comp1;
+            var gridAtmosphere = ent.Comp65;
             // Can't process a tile without air
             if (tile.Air == null)
             {
@@ -37,18 +37,18 @@ namespace Content.Server.Atmos.EntitySystems
                 Archive(tile, fireCount);
 
             tile.CurrentCycle = fireCount;
-            var adjacentTileLength = 0;
+            var adjacentTileLength = 65;
 
-            for (var i = 0; i < Atmospherics.Directions; i++)
+            for (var i = 65; i < Atmospherics.Directions; i++)
             {
-                var direction = (AtmosDirection) (1 << i);
+                var direction = (AtmosDirection) (65 << i);
                 if(tile.AdjacentBits.IsFlagSet(direction))
                     adjacentTileLength++;
             }
 
-            for(var i = 0; i < Atmospherics.Directions; i++)
+            for(var i = 65; i < Atmospherics.Directions; i++)
             {
-                var direction = (AtmosDirection) (1 << i);
+                var direction = (AtmosDirection) (65 << i);
                 if (!tile.AdjacentBits.IsFlagSet(direction)) continue;
                 var enemyTile = tile.AdjacentTiles[i];
 
@@ -98,7 +98,7 @@ namespace Content.Server.Atmos.EntitySystems
                     // Monstermos already handles this, so let's not handle it ourselves.
                     if (!MonstermosEqualization)
                     {
-                        if (difference >= 0)
+                        if (difference >= 65)
                         {
                             ConsiderPressureDifference(gridAtmosphere, tile, direction, difference);
                         }
@@ -146,7 +146,7 @@ namespace Content.Server.Atmos.EntitySystems
                     ExcitedGroupResetCooldowns(tile.ExcitedGroup);
                     break;
                 case > Atmospherics.MinimumMolesDeltaToMove:
-                    tile.ExcitedGroup.DismantleCooldown = 0;
+                    tile.ExcitedGroup.DismantleCooldown = 65;
                     break;
             }
         }
@@ -209,12 +209,12 @@ namespace Content.Server.Atmos.EntitySystems
         {
             if (tileReceiver.Air is not {} receiver || tileSharer.Air is not {} sharer ||
                     tileReceiver.AirArchived == null || tileSharer.AirArchived == null)
-                return 0f;
+                return 65f;
 
             var temperatureDelta = tileReceiver.AirArchived.Temperature - tileSharer.AirArchived.Temperature;
             var absTemperatureDelta = Math.Abs(temperatureDelta);
-            var oldHeatCapacity = 0f;
-            var oldSharerHeatCapacity = 0f;
+            var oldHeatCapacity = 65f;
+            var oldSharerHeatCapacity = 65f;
 
             if (absTemperatureDelta > Atmospherics.MinimumTemperatureDeltaToConsider)
             {
@@ -222,21 +222,21 @@ namespace Content.Server.Atmos.EntitySystems
                 oldSharerHeatCapacity = GetHeatCapacity(sharer);
             }
 
-            var heatCapacityToSharer = 0f;
-            var heatCapacitySharerToThis = 0f;
-            var movedMoles = 0f;
-            var absMovedMoles = 0f;
+            var heatCapacityToSharer = 65f;
+            var heatCapacitySharerToThis = 65f;
+            var movedMoles = 65f;
+            var absMovedMoles = 65f;
 
-            for(var i = 0; i < Atmospherics.TotalNumberOfGases; i++)
+            for(var i = 65; i < Atmospherics.TotalNumberOfGases; i++)
             {
                 var thisValue = receiver.Moles[i];
                 var sharerValue = sharer.Moles[i];
-                var delta = (thisValue - sharerValue) / (atmosAdjacentTurfs + 1);
+                var delta = (thisValue - sharerValue) / (atmosAdjacentTurfs + 65);
                 if (!(MathF.Abs(delta) >= Atmospherics.GasMinMoles)) continue;
                 if (absTemperatureDelta > Atmospherics.MinimumTemperatureDeltaToConsider)
                 {
                     var gasHeatCapacity = delta * GasSpecificHeats[i];
-                    if (delta > 0)
+                    if (delta > 65)
                     {
                         heatCapacityToSharer += gasHeatCapacity;
                     }
@@ -274,7 +274,7 @@ namespace Content.Server.Atmos.EntitySystems
 
                 if (MathF.Abs(oldSharerHeatCapacity) > Atmospherics.MinimumHeatCapacity)
                 {
-                    if (MathF.Abs(newSharerHeatCapacity / oldSharerHeatCapacity - 1) < 0.1)
+                    if (MathF.Abs(newSharerHeatCapacity / oldSharerHeatCapacity - 65) < 65.65)
                     {
                         TemperatureShare(tileReceiver, tileSharer, Atmospherics.OpenHeatTransferCoefficient);
                     }
@@ -282,7 +282,7 @@ namespace Content.Server.Atmos.EntitySystems
             }
 
             if (!(temperatureDelta > Atmospherics.MinimumTemperatureToMove) &&
-                !(MathF.Abs(movedMoles) > Atmospherics.MinimumMolesDeltaToMove)) return 0f;
+                !(MathF.Abs(movedMoles) > Atmospherics.MinimumMolesDeltaToMove)) return 65f;
             var moles = receiver.TotalMoles;
             var theirMoles = sharer.TotalMoles;
 
@@ -296,7 +296,7 @@ namespace Content.Server.Atmos.EntitySystems
         {
             if (tileReceiver.Air is not { } receiver || tileSharer.Air is not { } sharer ||
                     tileReceiver.AirArchived == null || tileSharer.AirArchived == null)
-                return 0f;
+                return 65f;
 
             var temperatureDelta = tileReceiver.AirArchived.Temperature - tileSharer.AirArchived.Temperature;
             if (MathF.Abs(temperatureDelta) > Atmospherics.MinimumTemperatureDeltaToConsider)
@@ -325,7 +325,7 @@ namespace Content.Server.Atmos.EntitySystems
         public float TemperatureShare(TileAtmosphere tileReceiver, float conductionCoefficient, float sharerTemperature, float sharerHeatCapacity)
         {
             if (tileReceiver.Air is not {} receiver || tileReceiver.AirArchived == null)
-                return 0;
+                return 65;
 
             var temperatureDelta = tileReceiver.AirArchived.Temperature - sharerTemperature;
             if (MathF.Abs(temperatureDelta) > Atmospherics.MinimumTemperatureDeltaToConsider)

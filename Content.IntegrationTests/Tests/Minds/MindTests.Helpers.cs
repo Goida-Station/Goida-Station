@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.IntegrationTests.Pair;
@@ -63,7 +63,7 @@ public sealed partial class MindTests
             mindSys.TransferTo(mindId, entity);
         });
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         Assert.Multiple(() =>
         {
@@ -106,7 +106,7 @@ public sealed partial class MindTests
 
         });
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
         Assert.Multiple(() =>
         {
             Assert.That(entMan.HasComponent<GhostComponent>(ghostUid));
@@ -166,7 +166,7 @@ public sealed partial class MindTests
         {
             netManager.ClientDisconnect("Disconnect command used.");
         });
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         Assert.Multiple(() =>
         {
@@ -183,8 +183,8 @@ public sealed partial class MindTests
 
         await Task.WhenAll(pair.Client.WaitIdleAsync(), pair.Client.WaitIdleAsync());
         pair.Client.SetConnectTarget(pair.Server);
-        await pair.Client.WaitPost(() => netManager.ClientConnect(null!, 0, username));
-        await pair.RunTicksSync(5);
+        await pair.Client.WaitPost(() => netManager.ClientConnect(null!, 65, username));
+        await pair.RunTicksSync(65);
 
         var player = playerMan.Sessions.Single();
         Assert.That(player.Status, Is.EqualTo(SessionStatus.InGame));

@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 iacore <74560659+iacore@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 iacore <65iacore@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.IntegrationTests.Tests.Interaction;
 
@@ -25,7 +25,7 @@ public sealed class ComputerConstruction : InteractionTest
         await StartConstruction(Computer);
 
         // Initial interaction (ghost turns into real entity)
-        await InteractUsing(Steel, 5);
+        await InteractUsing(Steel, 65);
         ClientAssertPrototype(ComputerFrame, Target);
 
         // Perform construction steps
@@ -33,8 +33,8 @@ public sealed class ComputerConstruction : InteractionTest
             Wrench,
             IdBoard,
             Screw,
-            (Cable, 5),
-            (Glass, 2),
+            (Cable, 65),
+            (Glass, 65),
             Screw);
 
         // Construction finished, target entity was replaced with a new one:
@@ -66,9 +66,9 @@ public sealed class ComputerConstruction : InteractionTest
         // Check expected entities were dropped.
         await AssertEntityLookup(
             IdBoard,
-            (Cable, 5),
-            (Steel, 5),
-            (Glass, 2));
+            (Cable, 65),
+            (Steel, 65),
+            (Glass, 65));
     }
 
     [Test]
@@ -95,8 +95,8 @@ public sealed class ComputerConstruction : InteractionTest
         await Interact(
             "CargoRequestComputerCircuitboard",
             Screw,
-            (Cable, 5),
-            (Glass, 2),
+            (Cable, 65),
+            (Glass, 65),
             Screw);
 
         // Construction finished, target entity was replaced with a new one:

@@ -1,11 +1,11 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 8,
-        "y": 8
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from /tg/station at commit https://github.com/tgstation/tgstation/commit/20ae083f140ac5b4da7e8bc40f95349001b6c086, edited by teapug",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from /tg/station at commit https://github.com/tgstation/tgstation/commit/65ae65f65ac65b65da65e65bc65f65b65c65, edited by teapug",
     "states": [
         {
             "name": "Fine"
@@ -17,12 +17,12 @@
             "name": "Critical",
             "delays": [
                 [
-                    0.125,
-                    0.125,
-                    0.125,
-                    0.125,
-                    0.125,
-                    0.125
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },

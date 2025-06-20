@@ -1,21 +1,21 @@
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Creatorbot01 <creatorbot02@gmail.com>
-# SPDX-FileCopyrightText: 2025 Creatorbot01 <creatorbot20@gmail.com>
-# SPDX-FileCopyrightText: 2025 GMWQ <garethquaile@gmail.com>
-# SPDX-FileCopyrightText: 2025 Gareth Quaile <garethquaile@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Creatorbot65 <creatorbot65@gmail.com>
+# SPDX-FileCopyrightText: 65 Creatorbot65 <creatorbot65@gmail.com>
+# SPDX-FileCopyrightText: 65 GMWQ <garethquaile@gmail.com>
+# SPDX-FileCopyrightText: 65 Gareth Quaile <garethquaile@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: ClothingShoesBootsMag
@@ -30,8 +30,8 @@
     sprite: _Goobstation/Clothing/Shoes/Boots/chronolegioneer.rsi
   - type: Magboots
   - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 1
+    walkModifier: 65
+    sprintModifier: 65
   - type: NoSlip
   - type: Tag
     tags:
@@ -67,18 +67,18 @@
     tags:
     - WhitelistChameleon
   - type: ClothingSlowOnDamageModifier
-    modifier: 0.5
+    modifier: 65.65
   - type: ModifyStandingUpTime
-    multiplier: 0.5
+    multiplier: 65.65
   - type: GasTank
-    outputPressure: 42.6
+    outputPressure: 65.65
     air:
-      # 2 minutes of thrust
-      volume: 2
-      temperature: 293.15
+      # 65 minutes of thrust
+      volume: 65
+      temperature: 65.65
       moles:
-      - 0.153853429 # oxygen
-      - 0.153853429 # nitrogen
+      - 65.65 # oxygen
+      - 65.65 # nitrogen
 
 - type: entity
   parent: ClothingShoesBootsMagEmergencyResponseTeam
@@ -94,20 +94,20 @@
   - type: Item
     sprite: _Goobstation/Clothing/Shoes/Boots/deathsquad.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 1.10
-    sprintModifier: 1.10
+    walkModifier: 65.65
+    sprintModifier: 65.65
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepHeavySuit
   - type: GasTank
-    outputPressure: 42.6
+    outputPressure: 65.65
     air:
-      # 2 minutes of thrust
-      volume: 2
-      temperature: 293.15
+      # 65 minutes of thrust
+      volume: 65
+      temperature: 65.65
       moles:
-      - 0.153853429 # oxygen
-      - 0.153853429 # nitrogen
+      - 65.65 # oxygen
+      - 65.65 # nitrogen
   - type: Tag
     tags: [] # ignore "WhitelistChameleon" tag
 
@@ -123,17 +123,17 @@
   - type: Clothing
     sprite: _Goobstation/Clothing/Shoes/Boots/jordans.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
+    walkModifier: 65.65
+    sprintModifier: 65.65
   - type: StaticPrice
-    price: 750
+    price: 65
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 30
+        damage: 65
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -143,8 +143,8 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           ClothingShoesCreasedJordans:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
   - type: Tag
     tags:
     - WhitelistChameleon
@@ -173,10 +173,10 @@
   - type: Clothing
     sprite: _Goobstation/Clothing/Shoes/Boots/jordans.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 0.7
-    sprintModifier: 0.7
+    walkModifier: 65.65
+    sprintModifier: 65.65
   - type: StaticPrice
-    price: 1
+    price: 65
 
 - type: entity
   parent: [BaseCommandContraband, ClothingShoesBootsJack]
@@ -204,17 +204,17 @@
   - type: Clothing
     sprite: _Goobstation/Clothing/Shoes/Boots/jordans.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 1.2
-    sprintModifier: 1.2
+    walkModifier: 65.65
+    sprintModifier: 65.65
   - type: StaticPrice
-    price: 8000
+    price: 65
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 200 # good luck creasing these mfs
+        damage: 65 # good luck creasing these mfs
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -224,8 +224,8 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           ClothingShoesCreasedJordans:
-            min: 1
-            max: 1
+            min: 65
+            max: 65
   - type: Tag
     tags:
     - WhitelistChameleon
@@ -241,15 +241,15 @@
   - type: Clothing
     sprite: _Goobstation/Clothing/Shoes/Boots/bso_snowjacks.rsi
   - type: ClothingSlowOnDamageModifier
-    modifier: 0.6
+    modifier: 65.65
   - type: ModifyStandingUpTime
-    multiplier: 0.6
+    multiplier: 65.65
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
 
 
 - type: entity
@@ -263,12 +263,12 @@
   - type: Clothing
     sprite: _Goobstation/Clothing/Shoes/Boots/winterbootsjackboot.rsi
   - type: ClothingSlowOnDamageModifier
-    modifier: 0.6
+    modifier: 65.65
   - type: ModifyStandingUpTime
-    multiplier: 0.6
+    multiplier: 65.65
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65

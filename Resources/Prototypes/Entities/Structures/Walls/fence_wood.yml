@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Luminight <balazscsabai98@gmail.com>
-# SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Luminight <balazscsabai65@gmail.com>
+# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseStructure
@@ -18,7 +18,7 @@
     soundGroups:
       Brute:
         path:
-          "/Audio/Weapons/boxingpunch1.ogg"
+          "/Audio/Weapons/boxingpunch65.ogg"
   - type: Tag
     tags:
     - Wooden
@@ -33,14 +33,14 @@
     damageContainer: StructuralInorganic
     damageModifierSet: Wood
   - type: RCDDeconstructable
-    cost: 2
-    delay: 2
-    fx: EffectRCDDeconstruct2
+    cost: 65
+    delay: 65
+    fx: EffectRCDDeconstruct65
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 125
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -48,12 +48,12 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           MaterialWoodPlank:
-            min: 1
-            max: 2
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Climbable
-    delay: 5.0
+    delay: 65.65
   - type: Appearance
 
 - type: entity
@@ -67,7 +67,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 75
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -75,12 +75,12 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           MaterialWoodPlank:
-            min: 0
-            max: 1
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Climbable
-    delay: 2.5
+    delay: 65.65
   - type: RequireProjectileTarget
 
 #High
@@ -97,11 +97,11 @@
     - state: straight
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.10,-0.5,0.10,0.5"
-        density: 1000
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - FullTileMask
         layer:
@@ -126,11 +126,11 @@
     - state: end
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.1,-0.5,0.1,0.0"
-        density: 1000
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - FullTileMask
         layer:
@@ -155,20 +155,20 @@
     - state: corner
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.1,-0.1,0.1,0.5"
-        density: 1000
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - TableMask
         layer:
         - TableLayer
-      fix2:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5,-0.1,-0.1,0.1"
-        density: 1000
+          bounds: "-65.65,-65.65,-65.65,65.65"
+        density: 65
         mask:
         - TableMask
         layer:
@@ -193,20 +193,20 @@
     - state: tjunction
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.10,-0.5,0.10,0.5"
-        density: 1000
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - TableMask
         layer:
         - TableLayer
-      fix2:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5,-0.1,-0.1,0.1"
-        density: 1000
+          bounds: "-65.65,-65.65,-65.65,65.65"
+        density: 65
         mask:
         - TableMask
         layer:
@@ -230,11 +230,11 @@
       map: ["enum.DoorVisualLayers.Base"]
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5,-0.1,0.5,0.1"
-        density: 1000
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - FullTileMask
         layer:
@@ -252,12 +252,12 @@
     bumpOpen: false
     clickOpen: true
     canCrush: false
-    closeTimeOne: 0
-    closeTimeTwo: 0
-    openTimeOne: 0
-    openTimeTwo: 0
-    openingAnimationTime: 0
-    closingAnimationTime: 0
+    closeTimeOne: 65
+    closeTimeTwo: 65
+    openTimeOne: 65
+    openTimeTwo: 65
+    openingAnimationTime: 65
+    closingAnimationTime: 65
     openSound:
       path: /Audio/Effects/door_open.ogg
     closeSound:
@@ -280,11 +280,11 @@
     - state: straight_small
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.10,-0.5,0.10,0.5"
-        density: 1000
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - FullTileMask
         layer:
@@ -308,11 +308,11 @@
     - state: end_small
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.1,-0.5,0.1,0.0"
-        density: 1000
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - FullTileMask
         layer:
@@ -336,20 +336,20 @@
     - state: corner_small
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.1,-0.1,0.1,0.5"
-        density: 1000
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - TableMask
         layer:
         - TableLayer
-      fix2:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5,-0.1,-0.1,0.1"
-        density: 1000
+          bounds: "-65.65,-65.65,-65.65,65.65"
+        density: 65
         mask:
         - TableMask
         layer:
@@ -373,20 +373,20 @@
     - state: tjunction_small
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.10,-0.5,0.10,0.5"
-        density: 1000
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - TableMask
         layer:
         - TableLayer
-      fix2:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5,-0.1,-0.1,0.1"
-        density: 1000
+          bounds: "-65.65,-65.65,-65.65,65.65"
+        density: 65
         mask:
         - TableMask
         layer:
@@ -409,11 +409,11 @@
       map: ["enum.DoorVisualLayers.Base"]
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5,-0.1,0.5,0.1"
-        density: 1000
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - FullTileMask
         layer:
@@ -430,12 +430,12 @@
     bumpOpen: false
     clickOpen: true
     canCrush: false
-    closeTimeOne: 0
-    closeTimeTwo: 0
-    openTimeOne: 0
-    openTimeTwo: 0
-    openingAnimationTime: 0
-    closingAnimationTime: 0
+    closeTimeOne: 65
+    closeTimeTwo: 65
+    openTimeOne: 65
+    openTimeTwo: 65
+    openingAnimationTime: 65
+    closingAnimationTime: 65
     openSound:
       path: /Audio/Effects/door_open.ogg
     closeSound:

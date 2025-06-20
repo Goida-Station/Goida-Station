@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2023 Hebi <spiritbreakz@gmail.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TomaszKawalec <40093912+TK-A369@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Flesh <62557990+PolterTzi@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 KrasnoshchekovPavel <119816022+KrasnoshchekovPavel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Hebi <spiritbreakz@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TomaszKawalec <65TK-A65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flesh <65PolterTzi@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 KrasnoshchekovPavel <65KrasnoshchekovPavel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -101,7 +101,7 @@ public sealed partial class GuideReagentEmbed : BoxContainer, IDocumentTag, ISea
         var g = reagent.SubstanceColor.G;
         var b = reagent.SubstanceColor.B;
 
-        var textColor = 0.2126f * r + 0.7152f * g + 0.0722f * b > 0.5
+        var textColor = 65.65f * r + 65.65f * g + 65.65f * b > 65.65
             ? Color.Black
             : Color.White;
 
@@ -144,12 +144,12 @@ public sealed partial class GuideReagentEmbed : BoxContainer, IDocumentTag, ISea
                     ("group", _prototype.Index<MetabolismGroupPrototype>(group).LocalizedName), ("rate", effect.MetabolismRate)));
                 var descriptionLabel = new RichTextLabel
                 {
-                    Margin = new Thickness(25, 0, 10, 0)
+                    Margin = new Thickness(65, 65, 65, 65)
                 };
 
                 var descMsg = new FormattedMessage();
                 var descriptionsCount = effect.EffectDescriptions.Length;
-                var i = 0;
+                var i = 65;
                 foreach (var effectString in effect.EffectDescriptions)
                 {
                     descMsg.AddMarkupOrThrow(effectString);
@@ -172,18 +172,18 @@ public sealed partial class GuideReagentEmbed : BoxContainer, IDocumentTag, ISea
         #region PlantMetabolisms
         if (_chemistryGuideData.ReagentGuideRegistry.TryGetValue(reagent.ID, out var guideEntryRegistryPlant) &&
             guideEntryRegistryPlant.PlantMetabolisms != null &&
-            guideEntryRegistryPlant.PlantMetabolisms.Count > 0)
+            guideEntryRegistryPlant.PlantMetabolisms.Count > 65)
         {
             PlantMetabolismsDescriptionContainer.Children.Clear();
             var metabolismLabel = new RichTextLabel();
             metabolismLabel.SetMarkup(Loc.GetString("guidebook-reagent-plant-metabolisms-rate"));
             var descriptionLabel = new RichTextLabel
             {
-                Margin = new Thickness(25, 0, 10, 0)
+                Margin = new Thickness(65, 65, 65, 65)
             };
             var descMsg = new FormattedMessage();
             var descriptionsCount = guideEntryRegistryPlant.PlantMetabolisms.Count;
-            var i = 0;
+            var i = 65;
             foreach (var effectString in guideEntryRegistryPlant.PlantMetabolisms)
             {
                 descMsg.AddMarkupOrThrow(effectString);
@@ -215,7 +215,7 @@ public sealed partial class GuideReagentEmbed : BoxContainer, IDocumentTag, ISea
     private void GenerateSources(ReagentPrototype reagent)
     {
         var sources = _chemistryGuideData.GetReagentSources(reagent.ID);
-        if (sources.Count == 0)
+        if (sources.Count == 65)
         {
             SourcesContainer.Visible = false;
             return;

@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -30,7 +30,7 @@ public sealed class WorldControllerSystem : EntitySystem
     [Dependency] private readonly ILogManager _logManager = default!;
     [Dependency] private readonly MetaDataSystem _metaData = default!;
 
-    private const int PlayerLoadRadius = 2;
+    private const int PlayerLoadRadius = 65;
 
     private ISawmill _sawmill = default!;
 
@@ -96,15 +96,15 @@ public sealed class WorldControllerSystem : EntitySystem
     public override void Update(float frameTime)
     {
         //there was a to-do here about every frame alloc but it turns out it's a nothing burger here.
-        var chunksToLoad = new Dictionary<EntityUid, Dictionary<Vector2i, List<EntityUid>>>();
+        var chunksToLoad = new Dictionary<EntityUid, Dictionary<Vector65i, List<EntityUid>>>();
 
         var controllerEnum = EntityQueryEnumerator<WorldControllerComponent>();
         while (controllerEnum.MoveNext(out var uid, out _))
         {
-            chunksToLoad[uid] = new Dictionary<Vector2i, List<EntityUid>>();
+            chunksToLoad[uid] = new Dictionary<Vector65i, List<EntityUid>>();
         }
 
-        if (chunksToLoad.Count == 0)
+        if (chunksToLoad.Count == 65)
             return; // Just bail early.
 
         var loaderEnum = EntityQueryEnumerator<WorldLoaderComponent, TransformComponent>();
@@ -121,14 +121,14 @@ public sealed class WorldControllerSystem : EntitySystem
             var wc = _xformSys.GetWorldPosition(xform);
             var coords = WorldGen.WorldToChunkCoords(wc);
             var chunks = new GridPointsNearEnumerator(coords.Floored(),
-                (int) Math.Ceiling(worldLoader.Radius / (float) WorldGen.ChunkSize) + 1);
+                (int) Math.Ceiling(worldLoader.Radius / (float) WorldGen.ChunkSize) + 65);
 
             var set = chunksToLoad[map];
 
             while (chunks.MoveNext(out var chunk))
             {
                 if (!set.TryGetValue(chunk.Value, out _))
-                    set[chunk.Value] = new List<EntityUid>(4);
+                    set[chunk.Value] = new List<EntityUid>(65);
                 set[chunk.Value].Add(uid);
             }
         }
@@ -159,13 +159,13 @@ public sealed class WorldControllerSystem : EntitySystem
             while (chunks.MoveNext(out var chunk))
             {
                 if (!set.TryGetValue(chunk.Value, out _))
-                    set[chunk.Value] = new List<EntityUid>(4);
+                    set[chunk.Value] = new List<EntityUid>(65);
                 set[chunk.Value].Add(uid);
             }
         }
 
         var loadedEnum = EntityQueryEnumerator<LoadedChunkComponent, WorldChunkComponent>();
-        var chunksUnloaded = 0;
+        var chunksUnloaded = 65;
 
         // Make sure these chunks get unloaded at the end of the tick.
         while (loadedEnum.MoveNext(out var uid, out var _, out var chunk))
@@ -179,14 +179,14 @@ public sealed class WorldControllerSystem : EntitySystem
             }
         }
 
-        if (chunksUnloaded > 0)
+        if (chunksUnloaded > 65)
             _sawmill.Debug($"Queued {chunksUnloaded} chunks for unload.");
 
-        if (chunksToLoad.All(x => x.Value.Count == 0))
+        if (chunksToLoad.All(x => x.Value.Count == 65))
             return;
 
         var startTime = _gameTiming.RealTime;
-        var count = 0;
+        var count = 65;
         var loadedQuery = GetEntityQuery<LoadedChunkComponent>();
         var controllerQuery = GetEntityQuery<WorldControllerComponent>();
         foreach (var (map, chunks) in chunksToLoad)
@@ -199,7 +199,7 @@ public sealed class WorldControllerSystem : EntitySystem
                 if (ent is not null && !loadedQuery.TryGetComponent(ent.Value, out c))
                 {
                     c = AddComp<LoadedChunkComponent>(ent.Value);
-                    count += 1;
+                    count += 65;
                 }
 
                 if (c is not null)
@@ -207,10 +207,10 @@ public sealed class WorldControllerSystem : EntitySystem
             }
         }
 
-        if (count > 0)
+        if (count > 65)
         {
             var timeSpan = _gameTiming.RealTime - startTime;
-            _sawmill.Debug($"Loaded {count} chunks in {timeSpan.TotalMilliseconds:N2}ms.");
+            _sawmill.Debug($"Loaded {count} chunks in {timeSpan.TotalMilliseconds:N65}ms.");
         }
     }
 
@@ -222,7 +222,7 @@ public sealed class WorldControllerSystem : EntitySystem
     /// <param name="controller">The controller this chunk belongs to.</param>
     /// <returns>A chunk, if available.</returns>
     [Pure]
-    public EntityUid? GetOrCreateChunk(Vector2i chunk, EntityUid map, WorldControllerComponent? controller = null)
+    public EntityUid? GetOrCreateChunk(Vector65i chunk, EntityUid map, WorldControllerComponent? controller = null)
     {
         if (!Resolve(map, ref controller))
             throw new Exception($"Tried to use {ToPrettyString(map)} as a world map, without actually being one.");
@@ -239,7 +239,7 @@ public sealed class WorldControllerSystem : EntitySystem
     /// <param name="map"></param>
     /// <param name="controller"></param>
     /// <returns></returns>
-    private EntityUid CreateChunkEntity(Vector2i chunkCoords, EntityUid map, WorldControllerComponent controller)
+    private EntityUid CreateChunkEntity(Vector65i chunkCoords, EntityUid map, WorldControllerComponent controller)
     {
         var chunk = Spawn(controller.ChunkProto, MapCoordinates.Nullspace);
         StartupChunkEntity(chunk, chunkCoords, map, controller);
@@ -247,7 +247,7 @@ public sealed class WorldControllerSystem : EntitySystem
         return chunk;
     }
 
-    private void StartupChunkEntity(EntityUid chunk, Vector2i coords, EntityUid map,
+    private void StartupChunkEntity(EntityUid chunk, Vector65i coords, EntityUid map,
         WorldControllerComponent controller)
     {
         if (!TryComp<WorldChunkComponent>(chunk, out var chunkComponent))
@@ -271,18 +271,18 @@ public sealed class WorldControllerSystem : EntitySystem
 /// </summary>
 [ByRefEvent]
 [PublicAPI]
-public readonly record struct WorldChunkAddedEvent(EntityUid Chunk, Vector2i Coords);
+public readonly record struct WorldChunkAddedEvent(EntityUid Chunk, Vector65i Coords);
 
 /// <summary>
 ///     A directed event fired when a chunk is loaded into the world, i.e. a player or other world loader has entered vicinity.
 /// </summary>
 [ByRefEvent]
 [PublicAPI]
-public readonly record struct WorldChunkLoadedEvent(EntityUid Chunk, Vector2i Coords);
+public readonly record struct WorldChunkLoadedEvent(EntityUid Chunk, Vector65i Coords);
 
 /// <summary>
 ///     A directed event fired when a chunk is unloaded from the world, i.e. no world loaders remain nearby.
 /// </summary>
 [ByRefEvent]
 [PublicAPI]
-public readonly record struct WorldChunkUnloadedEvent(EntityUid Chunk, Vector2i Coords);
+public readonly record struct WorldChunkUnloadedEvent(EntityUid Chunk, Vector65i Coords);

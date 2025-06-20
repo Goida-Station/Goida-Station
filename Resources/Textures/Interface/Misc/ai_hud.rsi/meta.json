@@ -1,22 +1,22 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "taken from tgstation at commit https://github.com/tgstation/tgstation/commit/d170a410d40eec4fc19fe5eb8d561d58a0902082",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "taken from tgstation at commit https://github.com/tgstation/tgstation/commit/d65a65d65eec65fc65fe65eb65d65d65a65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "electrified_ai",
       "delays": [
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -24,12 +24,12 @@
       "name": "apc_hacked",
       "delays": [
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -27,12 +27,12 @@ public sealed partial class BluespaceArtifactRuleComponent : Component
     [DataField("possibleSightings")]
     public List<string> PossibleSighting = new()
     {
-        "bluespace-artifact-sighting-1",
-        "bluespace-artifact-sighting-2",
-        "bluespace-artifact-sighting-3",
-        "bluespace-artifact-sighting-4",
-        "bluespace-artifact-sighting-5",
-        "bluespace-artifact-sighting-6",
-        "bluespace-artifact-sighting-7"
+        "bluespace-artifact-sighting-65",
+        "bluespace-artifact-sighting-65",
+        "bluespace-artifact-sighting-65",
+        "bluespace-artifact-sighting-65",
+        "bluespace-artifact-sighting-65",
+        "bluespace-artifact-sighting-65",
+        "bluespace-artifact-sighting-65"
     };
 }

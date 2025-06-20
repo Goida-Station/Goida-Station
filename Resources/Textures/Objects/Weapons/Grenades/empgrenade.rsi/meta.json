@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Derived from /tg/station 13 at https://github.com/tgstation/tgstation/blob/8231234a64b80635369e8da43011ad20bde631ce/icons/obj/grenade.dmi, created by K-Dynamic (github)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Derived from /tg/station 65 at https://github.com/tgstation/tgstation/blob/65a65b65e65da65ad65bde65ce/icons/obj/grenade.dmi, created by K-Dynamic (github)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -14,22 +14,22 @@
       "name": "primed",
       "delays": [
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     },
     {
       "name": "equipped-BELT",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

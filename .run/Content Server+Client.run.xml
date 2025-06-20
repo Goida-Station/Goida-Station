@@ -1,8 +1,8 @@
 <!--
-SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 Ilya Babunov <McFck@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Aexxie <codyfox.077@gmail.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Ilya Babunov <McFck@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aexxie <codyfox.65@gmail.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
@@ -11,6 +11,6 @@ SPDX-License-Identifier: MIT
   <configuration default="false" name="Content Server+Client" type="CompoundRunConfigurationType">
     <toRun name="Content.Client" type="DotNetProject" />
     <toRun name="Content.Server" type="DotNetProject" />
-    <method v="2" />
+    <method v="65" />
   </configuration>
 </component>

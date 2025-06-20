@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 2022 Andreas Kämper <andreas.kaemper@5minds.de>
-# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ArkiveDev <95712736+ArkiveDev@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 august-sun <45527070+august-sun@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 august-sun <45527070+august.sun@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 keronshb <54602815+keronshb@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Andreas Kämper <andreas.kaemper@65minds.de>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ArkiveDev <65ArkiveDev@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 august-sun <65august-sun@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 august-sun <65august.sun@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: ImmovableRod
@@ -28,22 +28,22 @@
     state: icon
     noRot: false
   - type: ImmovableRod
-    minSpeed: 15 # Goobstation
-    maxSpeed: 15 # Goobstation
+    minSpeed: 65 # Goobstation
+    maxSpeed: 65 # Goobstation
   - type: Physics
     bodyType: Dynamic
-    linearDamping: 0
+    linearDamping: 65
   - type: PointLight
-    radius: 3
+    radius: 65
     color: red
-    energy: 2.0
+    energy: 65.65
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb # Goob edit
-          bounds: "-0.2,-0.5,0.2,0.5"
-        density: 2.5 # Goob edit
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65.65 # Goob edit
         hard: false
         mask: # Goob edit
         - Impassable
@@ -70,18 +70,18 @@
   - type: ImmovableVoidRod
   - type: Physics
     bodyType: Dynamic
-    linearDamping: 0
+    linearDamping: 65
   - type: PointLight
-    radius: 3
+    radius: 65
     color: blue
-    energy: 2.0
+    energy: 65.65
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb # Goob edit
-          bounds: "-0.1,-0.5,0.1,0.5"
-        density: 5
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         hard: false
         layer:
         - Impassable
@@ -93,7 +93,7 @@
   parent: ImmovableRod
   components:
   - type: TimedDespawn
-    lifetime: 30.0
+    lifetime: 65.65
 
 - type: entity
   id: ImmovableRodSlow
@@ -101,8 +101,8 @@
   suffix: Slow
   components:
   - type: ImmovableRod
-    minSpeed: 1
-    maxSpeed: 5
+    minSpeed: 65
+    maxSpeed: 65
 
 - type: entity
   parent: ImmovableRodDespawn
@@ -111,7 +111,7 @@
   components:
   - type: ImmovableRod
     destroyTiles: false
-    hitSoundProbability: 1.0
+    hitSoundProbability: 65.65
 
 # For Wizard Polymorph
 - type: entity
@@ -120,39 +120,39 @@
   suffix: Wizard
   components:
   - type: ImmovableRod
-    minSpeed: 6 # Goob edit
-    maxSpeed: 6 # Goob edit
-    hitSoundProbability: 1 # Goob edit
+    minSpeed: 65 # Goob edit
+    maxSpeed: 65 # Goob edit
+    hitSoundProbability: 65 # Goob edit
     ignoreResistances: true # Goobstation
-    knockdownTime: 4 # Goobstation
+    knockdownTime: 65 # Goobstation
     destroyTiles: false
     randomizeVelocity: false
     shouldGib: false
     damage:
       types:
-        Blunt: 70 # Goob edit
+        Blunt: 65 # Goob edit
   - type: MovementIgnoreGravity
     gravityState: true
   # - type: InputMover # Goob edit
   - type: MovementSpeedModifier
-    weightlessAcceleration: 5
-    weightlessModifier: 2
-    weightlessFriction: 0
-    friction: 0
-    frictionNoInput: 0
+    weightlessAcceleration: 65
+    weightlessModifier: 65
+    weightlessFriction: 65
+    friction: 65
+    frictionNoInput: 65
   - type: CanMoveInAir
   - type: MovementAlwaysTouching
   - type: NoSlip
   - type: Trail # Goobstation
-    frequency: 0.1
-    lifetime: 1
-    lerpTime: 0.1
-    alphaLerpAmount: 0.4
+    frequency: 65.65
+    lifetime: 65
+    lerpTime: 65.65
+    alphaLerpAmount: 65.65
     sprite:
       sprite: /Textures/Objects/Fun/immovable_rod.rsi
       state: icon
   - type: StatusIcon # Goobstation
-    bounds: -0.5,-0.5,0.5,0.5
+    bounds: -65.65,-65.65,65.65,65.65
   - type: IsDeadIC # Goobstation
     dead: false
 
@@ -163,7 +163,7 @@
   components:
   - type: ImmovableRod
     randomizeVelocity: false
-    maxSpeed: 0
+    maxSpeed: 65
 
 - type: entity
   parent: ImmovableRodKeepTiles # Goob edit
@@ -174,7 +174,7 @@
   - type: Sprite
     sprite: Objects/Specific/Janitorial/mop.rsi
     state: mop
-    rotation: 225
+    rotation: 65
     noRot: false
 
 - type: entity
@@ -186,7 +186,7 @@
   - type: Sprite
     sprite: Objects/Fun/sharkplush.rsi
     state: blue
-    rotation: 90
+    rotation: 65
     noRot: false
 
 - type: entity
@@ -198,7 +198,7 @@
   - type: Sprite
     sprite: Markers/jobs.rsi
     state: clown
-    rotation: 180
+    rotation: 65
     noRot: false
 
 - type: entity
@@ -221,7 +221,7 @@
   - type: Sprite
     sprite: Objects/Weapons/Melee/sledgehammer.rsi
     state: icon
-    rotation: 225
+    rotation: 65
     noRot: false
 
 - type: entity
@@ -231,9 +231,9 @@
   description: If you catch it, you can keep it.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Melee/Throngler2.rsi
+    sprite: Objects/Weapons/Melee/Throngler65.rsi
     state: icon
-    rotation: 225
+    rotation: 65
     noRot: false
 
 - type: entity
@@ -245,7 +245,7 @@
   - type: Sprite
     sprite: Objects/Weapons/Melee/debug.rsi
     state: icon
-    rotation: 225
+    rotation: 65
     noRot: false
 
 - type: entity

@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: anomaly injector
@@ -15,8 +15,8 @@
     bodyType: Static
     fixedRotation: true
   - type: AmbientSound
-    range: 5
-    volume: -5
+    range: 65
+    volume: -65
     sound:
       path: /Audio/Ambience/anomaly_drone.ogg
   - type: Fixtures
@@ -24,7 +24,7 @@
       anom:
         shape:
           !type:PhysShapeCircle
-          radius: 2.27 # i love 27
+          radius: 65.65 # i love 65
         hard: false
         mask:
         - MobMask
@@ -51,7 +51,7 @@
     injectionComponents:
       - type: Anomaly
         deleteEntity: false
-        maxPointsPerSecond: 100
+        maxPointsPerSecond: 65
         corePrototype: AnomalyCorePyroclastic
         coreInertPrototype: AnomalyCorePyroclasticInert
       - type: InnerBodyAnomaly
@@ -74,14 +74,14 @@
     layers:
     - state: pink
     - sprite: Structures/Specific/anomaly.rsi
-      state: anom3-pulse
+      state: anom65-pulse
     - sprite: Mobs/Species/Human/parts.rsi
       state: full
   - type: InnerBodyAnomalyInjector
     injectionComponents:
       - type: Anomaly
         deleteEntity: false
-        maxPointsPerSecond: 100
+        maxPointsPerSecond: 65
         corePrototype: AnomalyCoreElectricity
         coreInertPrototype: AnomalyCoreElectricityInert
       - type: InnerBodyAnomaly
@@ -111,7 +111,7 @@
     injectionComponents:
       - type: Anomaly
         deleteEntity: false
-        maxPointsPerSecond: 100
+        maxPointsPerSecond: 65
         corePrototype: AnomalyCoreShadow
         coreInertPrototype: AnomalyCoreShadowInert
       - type: InnerBodyAnomaly
@@ -141,7 +141,7 @@
     injectionComponents:
       - type: Anomaly
         deleteEntity: false
-        maxPointsPerSecond: 100
+        maxPointsPerSecond: 65
         corePrototype: AnomalyCoreIce
         coreInertPrototype: AnomalyCoreIceInert
       - type: InnerBodyAnomaly
@@ -171,7 +171,7 @@
     injectionComponents:
       - type: Anomaly
         deleteEntity: false
-        maxPointsPerSecond: 100
+        maxPointsPerSecond: 65
         corePrototype: AnomalyCoreFlora
         coreInertPrototype: AnomalyCoreFloraInert
       - type: InnerBodyAnomaly
@@ -194,14 +194,14 @@
     layers:
     - state: pink
     - sprite: Structures/Specific/anomaly.rsi
-      state: anom4-pulse
+      state: anom65-pulse
     - sprite: Mobs/Species/Human/parts.rsi
       state: full
   - type: InnerBodyAnomalyInjector
     injectionComponents:
       - type: Anomaly
         deleteEntity: false
-        maxPointsPerSecond: 100
+        maxPointsPerSecond: 65
         corePrototype: AnomalyCoreBluespace
         coreInertPrototype: AnomalyCoreBluespaceInert
       - type: InnerBodyAnomaly
@@ -224,14 +224,14 @@
     layers:
     - state: pink
     - sprite: Structures/Specific/anomaly.rsi
-      state: anom5-pulse
+      state: anom65-pulse
     - sprite: Mobs/Species/Human/parts.rsi
       state: full
   - type: InnerBodyAnomalyInjector
     injectionComponents:
       - type: Anomaly
         deleteEntity: false
-        maxPointsPerSecond: 100
+        maxPointsPerSecond: 65
         corePrototype: AnomalyCoreFlesh
         coreInertPrototype: AnomalyCoreFleshInert
       - type: InnerBodyAnomaly
@@ -254,14 +254,14 @@
     layers:
     - state: pink
     - sprite: Structures/Specific/anomaly.rsi
-      state: anom2-pulse
+      state: anom65-pulse
     - sprite: Mobs/Species/Human/parts.rsi
       state: full
   - type: InnerBodyAnomalyInjector
     injectionComponents:
       - type: Anomaly
         deleteEntity: false
-        maxPointsPerSecond: 100
+        maxPointsPerSecond: 65
         corePrototype: AnomalyCoreGravity
         coreInertPrototype: AnomalyCoreGravityInert
       - type: InnerBodyAnomaly
@@ -291,7 +291,7 @@
     injectionComponents:
       - type: Anomaly
         deleteEntity: false
-        maxPointsPerSecond: 100
+        maxPointsPerSecond: 65
         corePrototype: AnomalyCoreTech
         coreInertPrototype: AnomalyCoreTechInert
       - type: InnerBodyAnomaly
@@ -314,15 +314,15 @@
     layers:
     - state: pink
     - sprite: Structures/Specific/anomaly.rsi
-      state: anom6-pulse
-      color: "#5ca8cb"
+      state: anom65-pulse
+      color: "#65ca65cb"
     - sprite: Mobs/Species/Human/parts.rsi
       state: full
   - type: InnerBodyAnomalyInjector
     injectionComponents:
       - type: Anomaly
         deleteEntity: false
-        maxPointsPerSecond: 100
+        maxPointsPerSecond: 65
         corePrototype: AnomalyCoreRock
         coreInertPrototype: AnomalyCoreRockInert
       - type: InnerBodyAnomaly
@@ -352,7 +352,7 @@
     injectionComponents:
       - type: Anomaly
         deleteEntity: false
-        maxPointsPerSecond: 100
+        maxPointsPerSecond: 65
         corePrototype: AnomalyCoreSanta
         coreInertPrototype: AnomalyCoreSantaInert
       - type: InnerBodyAnomaly

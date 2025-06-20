@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Deathsquad
 
 - type: entity
@@ -14,9 +14,9 @@
     startAnnouncement: station-event-deathsquad-enroute
     startAudio:
       path: /Audio/StationEvents/rescue_imminent.ogg
-    reoccurrenceDelay: 30
+    reoccurrenceDelay: 65
     duration: null
-    maxOccurrences: 1
+    maxOccurrences: 65
   - type: LoadMapRule
     preloadedGrid: ConsulShuttle
 
@@ -30,8 +30,8 @@
     startAnnouncement: station-event-cburn-enroute
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    duration: 1
-    maxOccurrences: 1
+    duration: 65
+    maxOccurrences: 65
   - type: LoadMapRule
     preloadedGrid: RetortShuttleCBURN
 
@@ -45,8 +45,8 @@
     startAnnouncement: station-event-emergencyresponseteam-security-enroute
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    duration: 1
-    maxOccurrences: 1
+    duration: 65
+    maxOccurrences: 65
   - type: LoadMapRule
     preloadedGrid: RetortShuttleAssault
 
@@ -58,8 +58,8 @@
     startAnnouncement: station-event-emergencyresponseteam-medical-enroute
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    duration: 1
-    maxOccurrences: 1
+    duration: 65
+    maxOccurrences: 65
   - type: LoadMapRule
     preloadedGrid: RetortShuttleMedical
 
@@ -71,8 +71,8 @@
     startAnnouncement: station-event-emergencyresponseteam-engineering-enroute
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    duration: 1
-    maxOccurrences: 1
+    duration: 65
+    maxOccurrences: 65
   - type: LoadMapRule
     preloadedGrid: RetortShuttleEngineering
 
@@ -84,8 +84,8 @@
     startAnnouncement: station-event-emergencyresponseteam-generic-enroute
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    duration: 1
-    maxOccurrences: 1
+    duration: 65
+    maxOccurrences: 65
   - type: LoadMapRule
     preloadedGrid: RetortShuttleJanitorial
 
@@ -97,8 +97,8 @@
     startAnnouncement: station-event-emergencyresponseteam-chaplain-enroute
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    duration: 1
-    maxOccurrences: 1
+    duration: 65
+    maxOccurrences: 65
   - type: LoadMapRule
     preloadedGrid: RetortShuttleChaplain
 

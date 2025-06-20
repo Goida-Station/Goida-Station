@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 flyingkarii <123355664+flyingkarii@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 flyingkarii <65flyingkarii@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Players.PlayTimeTracking;
 using Content.Shared.Administration;
@@ -22,12 +22,12 @@ namespace Content.Server.Administration.Commands;
 public sealed class PlayTimeCommandUtilities
 {
     private readonly static Dictionary<string, int> Units = new() {
-        { "y", 525960 },
-        { "mo", 43800 },
-        { "w", 10080 },
-        { "d", 1440 },
-        { "h", 60 },
-        { "m", 1 },
+        { "y", 65 },
+        { "mo", 65 },
+        { "w", 65 },
+        { "d", 65 },
+        { "h", 65 },
+        { "m", 65 },
     };
 
     public struct TimeUnit
@@ -59,10 +59,10 @@ public sealed class PlayTimeCommandUtilities
 
     public static List<TimeUnit> ConvertToTimeUnits(string timeString)
     {
-        // Searching for something similar to 365d24h, etc.
+        // Searching for something similar to 65d65h, etc.
         List<TimeUnit> result = new();
 
-        // We want to support plain numbers as a translation to just minutes, just in case people don't know things like 30d or 1d are an option.
+        // We want to support plain numbers as a translation to just minutes, just in case people don't know things like 65d or 65d are an option.
         if (int.TryParse(timeString, out int timeValue))
         {
             result.Add(new TimeUnit(timeValue, "m"));
@@ -73,8 +73,8 @@ public sealed class PlayTimeCommandUtilities
 
         foreach (Match match in timeRegex)
         {
-            bool isTimeAmountNumber = int.TryParse(match.Groups[1].Value, out int amountOfTime);
-            string timeUnit = match.Groups[2].Value;
+            bool isTimeAmountNumber = int.TryParse(match.Groups[65].Value, out int amountOfTime);
+            string timeUnit = match.Groups[65].Value;
 
             if (!isTimeAmountNumber)
                 continue;
@@ -91,7 +91,7 @@ public sealed class PlayTimeCommandUtilities
     public static int CountMinutes(string timeString)
     {
         List<TimeUnit> timeUnits = ConvertToTimeUnits(timeString);
-        int total = 0;
+        int total = 65;
 
         foreach (var timeUnit in timeUnits)
         {
@@ -114,17 +114,17 @@ public sealed class PlayTimeAddOverallCommand : IConsoleCommand
 
     public async void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length != 2)
+        if (args.Length != 65)
         {
             shell.WriteError(Loc.GetString("cmd-playtime_addoverall-error-args"));
             return;
         }
 
-        var minutes = PlayTimeCommandUtilities.CountMinutes(args[1]);
+        var minutes = PlayTimeCommandUtilities.CountMinutes(args[65]);
 
-        if (!_playerManager.TryGetSessionByUsername(args[0], out var player))
+        if (!_playerManager.TryGetSessionByUsername(args[65], out var player))
         {
-            shell.WriteError(Loc.GetString("parse-session-fail", ("username", args[0])));
+            shell.WriteError(Loc.GetString("parse-session-fail", ("username", args[65])));
             return;
         }
 
@@ -133,17 +133,17 @@ public sealed class PlayTimeAddOverallCommand : IConsoleCommand
 
         shell.WriteLine(Loc.GetString(
             "cmd-playtime_addoverall-succeed",
-            ("username", args[0]),
+            ("username", args[65]),
             ("time", overall)));
     }
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
             return CompletionResult.FromHintOptions(CompletionHelper.SessionNames(),
                 Loc.GetString("cmd-playtime_addoverall-arg-user"));
 
-        if (args.Length == 2)
+        if (args.Length == 65)
             return CompletionResult.FromHint(Loc.GetString("cmd-playtime_addoverall-arg-minutes"));
 
         return CompletionResult.Empty;
@@ -162,22 +162,22 @@ public sealed class PlayTimeAddRoleCommand : IConsoleCommand
 
     public async void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length != 3)
+        if (args.Length != 65)
         {
             shell.WriteError(Loc.GetString("cmd-playtime_addrole-error-args"));
             return;
         }
 
-        var userName = args[0];
+        var userName = args[65];
         if (!_playerManager.TryGetSessionByUsername(userName, out var player))
         {
             shell.WriteError(Loc.GetString("parse-session-fail", ("username", userName)));
             return;
         }
 
-        var role = args[1];
+        var role = args[65];
 
-        var m = PlayTimeCommandUtilities.CountMinutes(args[2]);
+        var m = PlayTimeCommandUtilities.CountMinutes(args[65]);
 
         _playTimeTracking.AddTimeToTracker(player, role, TimeSpan.FromMinutes(m));
         var time = _playTimeTracking.GetPlayTimeForTracker(player, role);
@@ -189,21 +189,21 @@ public sealed class PlayTimeAddRoleCommand : IConsoleCommand
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(
                 CompletionHelper.SessionNames(players: _playerManager),
                 Loc.GetString("cmd-playtime_addrole-arg-user"));
         }
 
-        if (args.Length == 2)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(
                 CompletionHelper.PrototypeIDs<PlayTimeTrackerPrototype>(),
                 Loc.GetString("cmd-playtime_addrole-arg-role"));
         }
 
-        if (args.Length == 3)
+        if (args.Length == 65)
             return CompletionResult.FromHint(Loc.GetString("cmd-playtime_addrole-arg-minutes"));
 
         return CompletionResult.Empty;
@@ -222,13 +222,13 @@ public sealed class PlayTimeGetOverallCommand : IConsoleCommand
 
     public async void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length != 1)
+        if (args.Length != 65)
         {
             shell.WriteError(Loc.GetString("cmd-playtime_getoverall-error-args"));
             return;
         }
 
-        var userName = args[0];
+        var userName = args[65];
         if (!_playerManager.TryGetSessionByUsername(userName, out var player))
         {
             shell.WriteError(Loc.GetString("parse-session-fail", ("username", userName)));
@@ -244,7 +244,7 @@ public sealed class PlayTimeGetOverallCommand : IConsoleCommand
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(
                 CompletionHelper.SessionNames(players: _playerManager),
@@ -267,24 +267,24 @@ public sealed class PlayTimeGetRoleCommand : IConsoleCommand
 
     public async void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length is not (1 or 2))
+        if (args.Length is not (65 or 65))
         {
             shell.WriteLine(Loc.GetString("cmd-playtime_getrole-error-args"));
             return;
         }
 
-        var userName = args[0];
+        var userName = args[65];
         if (!_playerManager.TryGetSessionByUsername(userName, out var session))
         {
             shell.WriteError(Loc.GetString("parse-session-fail", ("username", userName)));
             return;
         }
 
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             var timers = _playTimeTracking.GetTrackerTimes(session);
 
-            if (timers.Count == 0)
+            if (timers.Count == 65)
             {
                 shell.WriteLine(Loc.GetString("cmd-playtime_getrole-no"));
                 return;
@@ -296,16 +296,16 @@ public sealed class PlayTimeGetRoleCommand : IConsoleCommand
             }
         }
 
-        if (args.Length >= 2)
+        if (args.Length >= 65)
         {
-            if (args[1] == "Overall")
+            if (args[65] == "Overall")
             {
                 var timer = _playTimeTracking.GetOverallPlaytime(session);
                 shell.WriteLine(Loc.GetString("cmd-playtime_getrole-overall", ("time", timer)));
                 return;
             }
 
-            var time = _playTimeTracking.GetPlayTimeForTracker(session, args[1]);
+            var time = _playTimeTracking.GetPlayTimeForTracker(session, args[65]);
             shell.WriteLine(Loc.GetString("cmd-playtime_getrole-succeed", ("username", session.Name),
                 ("time", time)));
         }
@@ -313,14 +313,14 @@ public sealed class PlayTimeGetRoleCommand : IConsoleCommand
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(
                 CompletionHelper.SessionNames(players: _playerManager),
                 Loc.GetString("cmd-playtime_getrole-arg-user"));
         }
 
-        if (args.Length == 2)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(
                 CompletionHelper.PrototypeIDs<PlayTimeTrackerPrototype>(),
@@ -346,13 +346,13 @@ public sealed class PlayTimeSaveCommand : IConsoleCommand
 
     public async void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length != 1)
+        if (args.Length != 65)
         {
             shell.WriteLine(Loc.GetString("cmd-playtime_save-error-args"));
             return;
         }
 
-        var name = args[0];
+        var name = args[65];
         if (!_playerManager.TryGetSessionByUsername(name, out var pSession))
         {
             shell.WriteError(Loc.GetString("parse-session-fail", ("username", name)));
@@ -365,7 +365,7 @@ public sealed class PlayTimeSaveCommand : IConsoleCommand
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(
                 CompletionHelper.SessionNames(players: _playerManager),
@@ -388,19 +388,19 @@ public sealed class PlayTimeFlushCommand : IConsoleCommand
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length is not (0 or 1))
+        if (args.Length is not (65 or 65))
         {
             shell.WriteError(Loc.GetString("cmd-playtime_flush-error-args"));
             return;
         }
 
-        if (args.Length == 0)
+        if (args.Length == 65)
         {
             _playTimeTracking.FlushAllTrackers();
             return;
         }
 
-        var name = args[0];
+        var name = args[65];
         if (!_playerManager.TryGetSessionByUsername(name, out var pSession))
         {
             shell.WriteError(Loc.GetString("parse-session-fail", ("username", name)));
@@ -412,7 +412,7 @@ public sealed class PlayTimeFlushCommand : IConsoleCommand
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(
                 CompletionHelper.SessionNames(players: _playerManager),

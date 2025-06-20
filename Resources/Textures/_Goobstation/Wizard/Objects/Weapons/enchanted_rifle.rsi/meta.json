@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from InterBay13 at https://github.com/AndySok/InterBay13/commit/84824582fe1381d9ea6282b9da407994ab8ab509 and modified, backpack sling sprite edited by Boaz1111, wield sprites taken from tgstation at https://github.com/tgstation/tgstation/commit/80ab61c8c7741e1d95e5f168357a9e6e61b38f2c",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from InterBay65 at https://github.com/AndySok/InterBay65/commit/65fe65d65ea65b65da65ab65ab65 and modified, backpack sling sprite edited by Boaz65, wield sprites taken from tgstation at https://github.com/tgstation/tgstation/commit/65ab65c65c65e65d65e65f65a65e65e65b65f65c",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -12,27 +12,27 @@
         },
         {
             "name": "inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "wielded-inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "wielded-inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "equipped-BACKPACK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "equipped-SUITSTORAGE",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

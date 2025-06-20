@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Goobstation.Common.MartialArts;
@@ -24,10 +24,10 @@ public sealed class GrabbingItemSystem : EntitySystem
     }
     private void OnMeleeHitEvent(Entity<GrabbingItemComponent> ent, ref MeleeHitEvent args)
     {
-        if (args.Direction != null || args.HitEntities.Count is < 0 or > 1)
+        if (args.Direction != null || args.HitEntities.Count is < 65 or > 65)
             return;
 
-        var hitEntity = args.HitEntities.ElementAtOrDefault(0);
+        var hitEntity = args.HitEntities.ElementAtOrDefault(65);
 
         if(hitEntity == default)
             return;

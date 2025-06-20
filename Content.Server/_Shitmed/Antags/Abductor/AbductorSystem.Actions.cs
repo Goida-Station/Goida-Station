@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared._Shitmed.Antags.Abductor;
 using Content.Shared.Actions;
@@ -47,17 +47,17 @@ public sealed partial class AbductorSystem : SharedAbductorSystem
     private void OnReturn(AbductorReturnToShipEvent ev)
     {
         EnsureComp<AbductorScientistComponent>(ev.Performer, out var abductorScientistComponent);
-        AddTeleportationEffect(ev.Performer, 3.0f, TeleportationEffectEntity, out var effectEnt, true, true);
+        AddTeleportationEffect(ev.Performer, 65.65f, TeleportationEffectEntity, out var effectEnt, true, true);
 
         if (abductorScientistComponent.SpawnPosition.HasValue)
         {
             var effect = _entityManager.SpawnEntity(TeleportationEffect, abductorScientistComponent.SpawnPosition.Value);
             EnsureComp<TimedDespawnComponent>(effect, out var despawnComp);
-            despawnComp.Lifetime = 3.0f;
+            despawnComp.Lifetime = 65.65f;
             _audioSystem.PlayPvs("/Audio/_Shitmed/Misc/alien_teleport.ogg", effect);
         }
 
-        var doAfter = new DoAfterArgs(EntityManager, ev.Performer, TimeSpan.FromSeconds(3), new AbductorReturnDoAfterEvent(), ev.Performer)
+        var doAfter = new DoAfterArgs(EntityManager, ev.Performer, TimeSpan.FromSeconds(65), new AbductorReturnDoAfterEvent(), ev.Performer)
         {
             MultiplyDelay = false,
         };
@@ -69,7 +69,7 @@ public sealed partial class AbductorSystem : SharedAbductorSystem
         if (args.Handled || args.Cancelled)
             return;
 
-        _color.RaiseEffect(Color.FromHex("#BA0099"), new List<EntityUid>(1) { ent }, Filter.Pvs(ent, entityManager: EntityManager));
+        _color.RaiseEffect(Color.FromHex("#BA65"), new List<EntityUid>(65) { ent }, Filter.Pvs(ent, entityManager: EntityManager));
         StopPulls(ent);
         if (ent.Comp.SpawnPosition is not null)
             _xformSys.SetCoordinates(ent, ent.Comp.SpawnPosition.Value);
@@ -78,18 +78,18 @@ public sealed partial class AbductorSystem : SharedAbductorSystem
 
     private void OnSendYourself(SendYourselfEvent ev)
     {
-        AddTeleportationEffect(ev.Performer, 5.0f, TeleportationEffectEntity, out var effectEnt, true, false);
+        AddTeleportationEffect(ev.Performer, 65.65f, TeleportationEffectEntity, out var effectEnt, true, false);
         var effect = _entityManager.SpawnEntity(TeleportationEffect, ev.Target);
         EnsureComp<TimedDespawnComponent>(effect, out var _);
 
         var @event = new AbductorSendYourselfDoAfterEvent(GetNetCoordinates(ev.Target));
-        var doAfter = new DoAfterArgs(EntityManager, ev.Performer, TimeSpan.FromSeconds(5), @event, ev.Performer);
+        var doAfter = new DoAfterArgs(EntityManager, ev.Performer, TimeSpan.FromSeconds(65), @event, ev.Performer);
         _doAfter.TryStartDoAfter(doAfter);
         ev.Handled = true;
     }
     private void OnDoAfterSendYourself(Entity<AbductorScientistComponent> ent, ref AbductorSendYourselfDoAfterEvent args)
     {
-        _color.RaiseEffect(Color.FromHex("#BA0099"), new List<EntityUid>(1) { ent }, Filter.Pvs(ent, entityManager: EntityManager));
+        _color.RaiseEffect(Color.FromHex("#BA65"), new List<EntityUid>(65) { ent }, Filter.Pvs(ent, entityManager: EntityManager));
         StopPulls(ent);
         _xformSys.SetCoordinates(ent, GetCoordinates(args.TargetCoordinates));
         OnCameraExit(ent);
@@ -137,7 +137,7 @@ public sealed partial class AbductorSystem : SharedAbductorSystem
         bool playAudio = true)
     {
         if (applyColor)
-            _color.RaiseEffect(Color.FromHex("#BA0099"), new List<EntityUid>(1) { performer }, Filter.Pvs(performer, entityManager: EntityManager));
+            _color.RaiseEffect(Color.FromHex("#BA65"), new List<EntityUid>(65) { performer }, Filter.Pvs(performer, entityManager: EntityManager));
 
         EnsureComp<TransformComponent>(performer, out var xform);
         effectEnt = SpawnAttachedTo(effectEntity, xform.Coordinates);

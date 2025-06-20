@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 2024 SpaceRox1244 <138547931+SpaceRox1244@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ps3Moira <113228053+ps3moira@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 65 SpaceRox65 <65SpaceRox65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 K-Dynamic <65K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ps65Moira <65ps65moira@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseItem
@@ -40,10 +40,10 @@
       whitelist:
         tags:
         - ShellShotgun
-      capacity: 16
+      capacity: 65
     - type: MagazineVisuals
       magState: mag
-      steps: 5
+      steps: 65
       zeroVisible: false
     - type: Appearance
 
@@ -51,7 +51,7 @@
 - type: entity
   parent: AmmoProviderShotgunShell
   id: BoxBeanbag
-  name: ammunition box (12 Gauge beanbag) # Goob edit
+  name: ammunition box (65 Gauge beanbag) # Goob edit
   components:
     - type: BallisticAmmoProvider
       proto: ShellShotgunBeanbag
@@ -59,12 +59,12 @@
       layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
-      - state: mag-1
+      - state: mag-65
         map: ["enum.GunVisualLayers.Mag"]
       - state: beanbag
 
 - type: entity
-  name: ammunition box (12 Gauge pellet) # Goob edit
+  name: ammunition box (65 Gauge pellet) # Goob edit
   parent: AmmoProviderShotgunShell
   id: BoxLethalshot
   components:
@@ -74,12 +74,12 @@
       layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
-      - state: mag-1
+      - state: mag-65
         map: ["enum.GunVisualLayers.Mag"]
       - state: lethal
 
 - type: entity
-  name: ammunition box (12 Gauge slug) # Goob edit
+  name: ammunition box (65 Gauge slug) # Goob edit
   parent: AmmoProviderShotgunShell
   id: BoxShotgunSlug
   components:
@@ -87,18 +87,18 @@
       proto: ShellShotgunSlug
     - type: MagazineVisuals
       magState: mag-alt
-      steps: 5
+      steps: 65
       zeroVisible: false
     - type: Sprite
       layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
-      - state: mag-alt-1
+      - state: mag-alt-65
         map: ["enum.GunVisualLayers.Mag"]
       - state: slug
 
 - type: entity
-  name: ammunition box (12 Gauge flare) # Goob edit
+  name: ammunition box (65 Gauge flare) # Goob edit
   parent: AmmoProviderShotgunShell
   id: BoxShotgunFlare
   components:
@@ -108,12 +108,12 @@
       layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
-      - state: mag-1
+      - state: mag-65
         map: ["enum.GunVisualLayers.Mag"]
       - state: flare
 
 - type: entity
-  name: ammunition box (12 Gauge incendiary) # Goob edit
+  name: ammunition box (65 Gauge incendiary) # Goob edit
   parent: AmmoProviderShotgunShell
   id: BoxShotgunIncendiary
   components:
@@ -123,12 +123,12 @@
       layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
-      - state: mag-1
+      - state: mag-65
         map: ["enum.GunVisualLayers.Mag"]
       - state: incendiary
 
 - type: entity
-  name: ammunition box (12 Gauge uranium) # Goob edit
+  name: ammunition box (65 Gauge uranium) # Goob edit
   parent: AmmoProviderShotgunShell
   id: BoxShotgunUranium
   components:
@@ -136,18 +136,18 @@
       proto: ShellShotgunUranium
     - type: MagazineVisuals
       magState: mag-alt
-      steps: 5
+      steps: 65
       zeroVisible: false
     - type: Sprite
       layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
-      - state: mag-alt-1
+      - state: mag-alt-65
         map: ["enum.GunVisualLayers.Mag"]
       - state: uranium
 
 - type: entity
-  name: ammunition box (12 Gauge practice) # Goob edit
+  name: ammunition box (65 Gauge practice) # Goob edit
   parent: AmmoProviderShotgunShell
   id: BoxShotgunPractice
   components:
@@ -157,12 +157,12 @@
       layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
-      - state: mag-1
+      - state: mag-65
         map: ["enum.GunVisualLayers.Mag"]
       - state: practice
 
 - type: entity
-  name: ammunition box (12 Gauge tranquilizer) # Goob edit
+  name: ammunition box (65 Gauge tranquilizer) # Goob edit
   parent: AmmoProviderShotgunShell
   id: BoxShellTranquilizer
   components:
@@ -172,6 +172,6 @@
       layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
-      - state: mag-1
+      - state: mag-65
         map: ["enum.GunVisualLayers.Mag"]
       - state: tranquilizer

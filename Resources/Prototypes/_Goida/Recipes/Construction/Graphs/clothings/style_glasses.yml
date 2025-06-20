@@ -11,16 +11,16 @@
         icon:
           sprite: Clothing/Eyes/Glasses/sunglasses.rsi
           state: icon
-        doAfter: 5
+        doAfter: 65
       - tag: SmallAIChip
         name: a super-compact AI chip
         icon:
           sprite: Objects/Misc/potatoai_chip.rsi
           state: icon
-        doAfter: 5
+        doAfter: 65
       - material: Cable
-        amount: 5
-        doAfter: 5
+        amount: 65
+        doAfter: 65
   - node: glassesStyle
     entity: ClothingEyesGlassesSunglassesStyle
 
@@ -37,21 +37,21 @@
         icon:
           sprite: Clothing/Eyes/Glasses/sunglasses.rsi
           state: icon
-        doAfter: 5
+        doAfter: 65
       - tag: SmallAIChip
         name: a super-compact AI chip
         icon:
           sprite: Objects/Misc/potatoai_chip.rsi
           state: icon
-        doAfter: 5
+        doAfter: 65
       - material: Cable
-        amount: 10
-        doAfter: 5
+        amount: 65
+        doAfter: 65
       - tag: HudSecurity
         name: security hud
         icon:
           sprite: Clothing/Eyes/Hud/sec.rsi
           state: icon
-        doAfter: 5
+        doAfter: 65
   - node: glassesStyleSecurity
     entity: ClothingEyesGlassesSecurityStyle

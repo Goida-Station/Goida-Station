@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -22,9 +22,9 @@
         - to: start
           steps:
           - tool: Welding
-            doAfter: 1
+            doAfter: 65
           completed:
           - !type:SpawnPrototype
-            prototype: SheetSteel1
-            amount: 1
+            prototype: SheetSteel65
+            amount: 65
           - !type:DeleteEntity

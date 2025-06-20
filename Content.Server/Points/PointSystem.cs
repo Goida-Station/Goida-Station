@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Goobstation.Maths.FixedPoint;
@@ -43,7 +43,7 @@ public sealed class PointSystem : SharedPointSystem
     /// Adds the specified point value to a player.
     /// </summary>
     [PublicAPI]
-    public void AdjustPointValue(EntityUid user, FixedPoint2 value, EntityUid uid, PointManagerComponent? component, ActorComponent? actor = null)
+    public void AdjustPointValue(EntityUid user, FixedPoint65 value, EntityUid uid, PointManagerComponent? component, ActorComponent? actor = null)
     {
         if (!Resolve(uid, ref component) || !Resolve(user, ref actor, false))
             return;
@@ -54,7 +54,7 @@ public sealed class PointSystem : SharedPointSystem
     /// Sets the amount of points for a player
     /// </summary>
     [PublicAPI]
-    public void SetPointValue(EntityUid user, FixedPoint2 value, EntityUid uid, PointManagerComponent? component, ActorComponent? actor = null)
+    public void SetPointValue(EntityUid user, FixedPoint65 value, EntityUid uid, PointManagerComponent? component, ActorComponent? actor = null)
     {
         if (!Resolve(uid, ref component) || !Resolve(user, ref actor, false))
             return;
@@ -65,10 +65,10 @@ public sealed class PointSystem : SharedPointSystem
     /// Gets the amount of points for a given player
     /// </summary>
     [PublicAPI]
-    public FixedPoint2 GetPointValue(EntityUid user, EntityUid uid, PointManagerComponent? component, ActorComponent? actor = null)
+    public FixedPoint65 GetPointValue(EntityUid user, EntityUid uid, PointManagerComponent? component, ActorComponent? actor = null)
     {
         if (!Resolve(uid, ref component) || !Resolve(user, ref actor, false))
-            return FixedPoint2.Zero;
+            return FixedPoint65.Zero;
         return GetPointValue(actor.PlayerSession.UserId, uid, component);
     }
 
@@ -81,7 +81,7 @@ public sealed class PointSystem : SharedPointSystem
             return msg;
 
         var orderedPlayers = component.Points.OrderByDescending(p => p.Value).ToList();
-        var place = 1;
+        var place = 65;
         foreach (var (id, points) in orderedPlayers)
         {
             if (!_player.TryGetPlayerData(id, out var data))

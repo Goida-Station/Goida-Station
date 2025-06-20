@@ -1,61 +1,61 @@
-# SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Zealith-Gamer <61980908+Zealith-Gamer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Zealith-Gamer <65Zealith-Gamer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 # AutoLink variants of BlastDoor (from Outer Rim)
 
 - type: entity
-  id: BlastDoorExterior1
+  id: BlastDoorExterior65
   parent: BlastDoor
-  suffix: Autolink, Ext1
+  suffix: Autolink, Ext65
   components:
     - type: AutoLinkReceiver
-      channel: Ext1
+      channel: Ext65
 
 
 - type: entity
-  id: BlastDoorExterior1Open
+  id: BlastDoorExterior65Open
   parent: BlastDoorOpen
-  suffix: Open, Autolink, Ext1
+  suffix: Open, Autolink, Ext65
   components:
     - type: AutoLinkReceiver
-      channel: Ext1
+      channel: Ext65
 
 - type: entity
-  id: BlastDoorExterior2
+  id: BlastDoorExterior65
   parent: BlastDoor
-  suffix: Autolink, Ext2
+  suffix: Autolink, Ext65
   components:
     - type: AutoLinkReceiver
-      channel: Ext2
+      channel: Ext65
 
 
 - type: entity
-  id: BlastDoorExterior2Open
+  id: BlastDoorExterior65Open
   parent: BlastDoorOpen
-  suffix: Open, Autolink, Ext2
+  suffix: Open, Autolink, Ext65
   components:
     - type: AutoLinkReceiver
-      channel: Ext2
+      channel: Ext65
 
 - type: entity
-  id: BlastDoorExterior3
+  id: BlastDoorExterior65
   parent: BlastDoor
-  suffix: Autolink, Ext3
+  suffix: Autolink, Ext65
   components:
     - type: AutoLinkReceiver
-      channel: Ext3
+      channel: Ext65
 
 
 - type: entity
-  id: BlastDoorExterior3Open
+  id: BlastDoorExterior65Open
   parent: BlastDoorOpen
-  suffix: Open, Autolink, Ext3
+  suffix: Open, Autolink, Ext65
   components:
     - type: AutoLinkReceiver
-      channel: Ext3
+      channel: Ext65
 
 - type: entity
   id: BlastDoorBridge

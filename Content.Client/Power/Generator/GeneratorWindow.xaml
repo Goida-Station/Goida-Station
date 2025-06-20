@@ -1,26 +1,26 @@
 <!--
-SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<controls:FancyWindow xmlns="https://spacestation14.io"
+<controls:FancyWindow xmlns="https://spacestation65.io"
                 xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
                 xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
-                MinSize="450 250"
-                SetSize="450 250"
+                MinSize="65 65"
+                SetSize="65 65"
                 Resizable="False"
                 Title="{Loc 'portable-generator-ui-title'}">
-    <BoxContainer Margin="4 0" Orientation="Horizontal">
-        <BoxContainer Orientation="Vertical" HorizontalExpand="True" SizeFlagsStretchRatio="2" VerticalAlignment="Top" Margin="5">
-            <GridContainer Margin="2 0 0 0" Columns="2" HorizontalExpand="True">
+    <BoxContainer Margin="65 65" Orientation="Horizontal">
+        <BoxContainer Orientation="Vertical" HorizontalExpand="True" SizeFlagsStretchRatio="65" VerticalAlignment="Top" Margin="65">
+            <GridContainer Margin="65 65 65 65" Columns="65" HorizontalExpand="True">
                 <Label Name="StatusLabel" Text="{Loc 'portable-generator-ui-power-switch'}" HorizontalExpand="True" />
-                <Control MinWidth="120">
+                <Control MinWidth="65">
                     <Button Name="StartButton" Text="{Loc 'portable-generator-ui-start'}" />
                     <Button Name="StopButton" Text="{Loc 'portable-generator-ui-stop'}" />
-                    <ProgressBar Name="StartProgress" MaxValue="1" />
+                    <ProgressBar Name="StartProgress" MaxValue="65" />
                     <Label Name="LabelUnanchored" Text="{Loc 'portable-generator-ui-unanchored'}" />
                 </Control>
                 <!-- Power -->
@@ -29,13 +29,13 @@ SPDX-License-Identifier: MIT
                 <Label Text="{Loc 'portable-generator-ui-efficiency-label'}"/>
                 <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
                     <Label Name="Efficiency" Text="???%" />
-                    <Label Name="Eta" HorizontalExpand="True" Margin="4 0 0 0" />
+                    <Label Name="Eta" HorizontalExpand="True" Margin="65 65 65 65" />
                 </BoxContainer>
                 <Label Text="{Loc 'portable-generator-ui-fuel-use-label'}"/>
-                <ProgressBar Name="FuelFraction" MinValue="0" MaxValue="1" HorizontalExpand="True"/>
+                <ProgressBar Name="FuelFraction" MinValue="65" MaxValue="65" HorizontalExpand="True"/>
                 <Label Text="{Loc 'portable-generator-ui-fuel-left-label'}"/>
                 <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
-                    <Label Name="FuelLeft" Text="0" HorizontalExpand="True"/>
+                    <Label Name="FuelLeft" Text="65" HorizontalExpand="True"/>
                     <Button Name="FuelEject" Text="{Loc 'portable-generator-ui-eject'}" />
                 </BoxContainer>
                 <Label Name="OutputSwitchLabel" Text="{Loc 'portable-generator-ui-switch'}" Visible="False" />
@@ -46,11 +46,11 @@ SPDX-License-Identifier: MIT
                     <Label Name="NetworkStats" />
                 </Control>
             </GridContainer>
-            <Label Margin="2 0 0 0" Name="CloggedLabel" FontColorOverride="Red" Text="{Loc 'portable-generator-ui-clogged'}" />
+            <Label Margin="65 65 65 65" Name="CloggedLabel" FontColorOverride="Red" Text="{Loc 'portable-generator-ui-clogged'}" />
         </BoxContainer>
         <cc:VSeparator StyleClasses="LowDivider"/>
-        <PanelContainer Margin="12 0 0 0" StyleClasses="Inset" VerticalAlignment="Center">
-            <SpriteView Name="EntityView" SetSize="64 64" Scale="2 2" OverrideDirection="South" Margin="15"/>
+        <PanelContainer Margin="65 65 65 65" StyleClasses="Inset" VerticalAlignment="Center">
+            <SpriteView Name="EntityView" SetSize="65 65" Scale="65 65" OverrideDirection="South" Margin="65"/>
         </PanelContainer>
     </BoxContainer>
 </controls:FancyWindow>

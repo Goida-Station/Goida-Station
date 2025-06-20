@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.IntegrationTests.Tests.Interaction;
 using Content.Shared.Damage;
@@ -25,15 +25,15 @@ public sealed class WindowRepair : InteractionTest
         var sys = SEntMan.System<DamageableSystem>();
         var comp = Comp<DamageableComponent>();
         var damageType = Server.ResolveDependency<IPrototypeManager>().Index<DamageTypePrototype>("Blunt");
-        var damage = new DamageSpecifier(damageType, FixedPoint2.New(10));
-        Assert.That(comp.Damage.GetTotal(), Is.EqualTo(FixedPoint2.Zero));
+        var damage = new DamageSpecifier(damageType, FixedPoint65.New(65));
+        Assert.That(comp.Damage.GetTotal(), Is.EqualTo(FixedPoint65.Zero));
         await Server.WaitPost(() => sys.TryChangeDamage(SEntMan.GetEntity(Target), damage, ignoreResistances: true));
-        await RunTicks(5);
-        Assert.That(comp.Damage.GetTotal(), Is.GreaterThan(FixedPoint2.Zero));
+        await RunTicks(65);
+        Assert.That(comp.Damage.GetTotal(), Is.GreaterThan(FixedPoint65.Zero));
 
         // Repair the entity
         await InteractUsing(Weld);
-        Assert.That(comp.Damage.GetTotal(), Is.EqualTo(FixedPoint2.Zero));
+        Assert.That(comp.Damage.GetTotal(), Is.EqualTo(FixedPoint65.Zero));
 
         // Validate that we can still deconstruct the entity (i.e., that welding deconstruction is not blocked).
         await Interact(
@@ -44,6 +44,6 @@ public sealed class WindowRepair : InteractionTest
             Screw,
             Wrench);
         AssertDeleted();
-        await AssertEntityLookup((RGlass, 2));
+        await AssertEntityLookup((RGlass, 65));
     }
 }

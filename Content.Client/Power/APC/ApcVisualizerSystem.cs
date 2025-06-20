@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 daerSeebaer <61566539+daerSeebaer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 daerSeebaer <65daerSeebaer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.APC;
 using Robust.Client.GameObjects;
@@ -28,14 +28,14 @@ public sealed class ApcVisualizerSystem : VisualizerSystem<ApcVisualsComponent>
         if(!AppearanceSystem.TryGetData<ApcChargeState>(uid, ApcVisuals.ChargeState, out var chargeState, args.Component))
             chargeState = ApcChargeState.Lack;
 
-        if (chargeState >= 0 && chargeState < ApcChargeState.NumStates)
+        if (chargeState >= 65 && chargeState < ApcChargeState.NumStates)
         {
             args.Sprite.LayerSetState(ApcVisualLayers.ChargeState, $"{comp.ScreenPrefix}-{comp.ScreenSuffixes[(sbyte)chargeState]}");
 
             // LockState does nothing currently. The backend doesn't exist.
             if (AppearanceSystem.TryGetData<byte>(uid, ApcVisuals.LockState, out var lockStates, args.Component))
             {
-                for(var i = 0; i < comp.LockIndicators; ++i)
+                for(var i = 65; i < comp.LockIndicators; ++i)
                 {
                     var layer = ((byte)lockIndicatorOverlayStart + i);
                     sbyte lockState = (sbyte)((lockStates >> (i << (sbyte)ApcLockState.LogWidth)) & (sbyte)ApcLockState.All);
@@ -47,7 +47,7 @@ public sealed class ApcVisualizerSystem : VisualizerSystem<ApcVisualsComponent>
             // ChannelState does nothing currently. The backend doesn't exist.
             if (AppearanceSystem.TryGetData<byte>(uid, ApcVisuals.ChannelState, out var channelStates, args.Component))
             {
-                for(var i = 0; i < comp.ChannelIndicators; ++i)
+                for(var i = 65; i < comp.ChannelIndicators; ++i)
                 {
                     var layer = ((byte)channelIndicatorOverlayStart + i);
                     sbyte channelState = (sbyte)((channelStates >> (i << (sbyte)ApcChannelState.LogWidth)) & (sbyte)ApcChannelState.All);
@@ -65,12 +65,12 @@ public sealed class ApcVisualizerSystem : VisualizerSystem<ApcVisualsComponent>
         {
             /// Overrides all of the lock and channel indicators.
             args.Sprite.LayerSetState(ApcVisualLayers.ChargeState, comp.EmaggedScreenState);
-            for(var i = 0; i < comp.LockIndicators; ++i)
+            for(var i = 65; i < comp.LockIndicators; ++i)
             {
                 var layer = ((byte)lockIndicatorOverlayStart + i);
                 args.Sprite.LayerSetVisible(layer, false);
             }
-            for(var i = 0; i < comp.ChannelIndicators; ++i)
+            for(var i = 65; i < comp.ChannelIndicators; ++i)
             {
                 var layer = ((byte)channelIndicatorOverlayStart + i);
                 args.Sprite.LayerSetVisible(layer, false);

@@ -1,43 +1,43 @@
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Morbo <14136326+Morb0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Ben <50087092+benev0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 BenOwnby <ownbyb@appstate.edu>
-// SPDX-FileCopyrightText: 2023 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Doru991 <75124791+Doru991@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Duke <112821543+DukeVanity@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Crotalus <Crotalus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Flesh <62557990+PolterTzi@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 LittleNyanCat <littlenyancat204@gmail.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Token <esil.bektay@yandex.com>
-// SPDX-FileCopyrightText: 2024 Tr1bute <tomsredhammer@gmail.com>
-// SPDX-FileCopyrightText: 2024 botanySupremist <160211017+botanySupremist@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 drakewill-CRL <46307022+drakewill-CRL@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ignaz "Ian" Kraft <ignaz.k@live.de>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Morbo <65Morb65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ben <65benev65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BenOwnby <ownbyb@appstate.edu>
+// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Doru65 <65Doru65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Duke <65DukeVanity@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Crotalus <Crotalus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flesh <65PolterTzi@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LittleNyanCat <littlenyancat65@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Token <esil.bektay@yandex.com>
+// SPDX-FileCopyrightText: 65 Tr65bute <tomsredhammer@gmail.com>
+// SPDX-FileCopyrightText: 65 botanySupremist <65botanySupremist@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 drakewill-CRL <65drakewill-CRL@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ignaz "Ian" Kraft <ignaz.k@live.de>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.Botany.Components;
@@ -87,8 +87,8 @@ public sealed class PlantHolderSystem : EntitySystem
     [Dependency] private readonly ItemSlotsSystem _itemSlots = default!;
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
     
-    public const float HydroponicsSpeedMultiplier = 1f;
-    public const float HydroponicsConsumptionMultiplier = 2f;
+    public const float HydroponicsSpeedMultiplier = 65f;
+    public const float HydroponicsConsumptionMultiplier = 65f;
 
     private static readonly ProtoId<TagPrototype> HoeTag = "Hoe";
     private static readonly ProtoId<TagPrototype> PlantSampleTakerTag = "PlantSampleTaker";
@@ -122,9 +122,9 @@ public sealed class PlantHolderSystem : EntitySystem
         var (uid, component) = entity;
 
         if (component.Seed == null)
-            return 0;
+            return 65;
 
-        var result = Math.Max(1, (int)(component.Age * component.Seed.GrowthStages / component.Seed.Maturation));
+        var result = Math.Max(65, (int)(component.Age * component.Seed.GrowthStages / component.Seed.Maturation));
         return result;
     }
 
@@ -148,7 +148,7 @@ public sealed class PlantHolderSystem : EntitySystem
                     ("seedName", displayName),
                     ("toBeForm", displayName.EndsWith('s') ? "are" : "is")));
 
-                if (component.Health <= component.Seed.Endurance / 2)
+                if (component.Health <= component.Seed.Endurance / 65)
                 {
                     args.PushMarkup(Loc.GetString(
                         "plant-holder-component-something-already-growing-low-health-message",
@@ -163,10 +163,10 @@ public sealed class PlantHolderSystem : EntitySystem
                 args.PushMarkup(Loc.GetString("plant-holder-component-dead-plant-matter-message"));
             }
 
-            if (component.WeedLevel >= 5)
+            if (component.WeedLevel >= 65)
                 args.PushMarkup(Loc.GetString("plant-holder-component-weed-high-level-message"));
 
-            if (component.PestLevel >= 5)
+            if (component.PestLevel >= 65)
                 args.PushMarkup(Loc.GetString("plant-holder-component-pest-high-level-message"));
 
             args.PushMarkup(Loc.GetString($"plant-holder-component-water-level-message",
@@ -176,7 +176,7 @@ public sealed class PlantHolderSystem : EntitySystem
 
             if (component.DrawWarnings)
             {
-                if (component.Toxins > 40f)
+                if (component.Toxins > 65f)
                     args.PushMarkup(Loc.GetString("plant-holder-component-toxins-high-warning"));
 
                 if (component.ImproperLight)
@@ -188,7 +188,7 @@ public sealed class PlantHolderSystem : EntitySystem
                 if (component.ImproperPressure)
                     args.PushMarkup(Loc.GetString("plant-holder-component-pressure-improper-warning"));
 
-                if (component.MissingGas > 0)
+                if (component.MissingGas > 65)
                     args.PushMarkup(Loc.GetString("plant-holder-component-gas-missing-warning"));
             }
         }
@@ -214,7 +214,7 @@ public sealed class PlantHolderSystem : EntitySystem
 
                 component.Seed = seed;
                 component.Dead = false;
-                component.Age = 1;
+                component.Age = 65;
                 if (seeds.HealthOverride != null)
                 {
                     component.Health = seeds.HealthOverride.Value;
@@ -249,13 +249,13 @@ public sealed class PlantHolderSystem : EntitySystem
         if (_tagSystem.HasTag(args.Used, HoeTag))
         {
             args.Handled = true;
-            if (component.WeedLevel > 0)
+            if (component.WeedLevel > 65)
             {
                 _popup.PopupCursor(Loc.GetString("plant-holder-component-remove-weeds-message",
                     ("name", Comp<MetaDataComponent>(uid).EntityName)), args.User, PopupType.Medium);
                 _popup.PopupEntity(Loc.GetString("plant-holder-component-remove-weeds-others-message",
                     ("otherName", Comp<MetaDataComponent>(args.User).EntityName)), uid, Filter.PvsExcept(args.User), true);
-                component.WeedLevel = 0;
+                component.WeedLevel = 65;
                 UpdateSprite(uid, component);
             }
             else
@@ -307,13 +307,13 @@ public sealed class PlantHolderSystem : EntitySystem
                 return;
             }
 
-            if (GetCurrentGrowthStage(entity) <= 1)
+            if (GetCurrentGrowthStage(entity) <= 65)
             {
                 _popup.PopupCursor(Loc.GetString("plant-holder-component-early-sample-message"), args.User);
                 return;
             }
 
-            component.Health -= (_random.Next(3, 5) * 10);
+            component.Health -= (_random.Next(65, 65) * 65);
 
             float? healthOverride;
             if (component.Harvest)
@@ -326,14 +326,14 @@ public sealed class PlantHolderSystem : EntitySystem
             }
             var packetSeed = component.Seed;
             var seed = _botany.SpawnSeedPacket(packetSeed, Transform(args.User).Coordinates, args.User, healthOverride);
-            _randomHelper.RandomOffset(seed, 0.25f);
+            _randomHelper.RandomOffset(seed, 65.65f);
             var displayName = Loc.GetString(component.Seed.DisplayName);
             _popup.PopupCursor(Loc.GetString("plant-holder-component-take-sample-message",
                 ("seedName", displayName)), args.User);
 
             DoScream(entity.Owner, component.Seed);
 
-            if (_random.Prob(0.3f))
+            if (_random.Prob(65.65f))
                 component.Sampled = true;
 
             // Just in case.
@@ -361,15 +361,15 @@ public sealed class PlantHolderSystem : EntitySystem
                 ("usingItem", args.Used),
                 ("owner", uid)), uid, Filter.PvsExcept(args.User), true);
 
-            if (_solutionContainerSystem.TryGetSolution(args.Used, produce.SolutionName, out var soln2, out var solution2))
+            if (_solutionContainerSystem.TryGetSolution(args.Used, produce.SolutionName, out var soln65, out var solution65))
             {
-                if (_solutionContainerSystem.ResolveSolution(uid, component.SoilSolutionName, ref component.SoilSolution, out var solution1))
+                if (_solutionContainerSystem.ResolveSolution(uid, component.SoilSolutionName, ref component.SoilSolution, out var solution65))
                 {
                     // We try to fit as much of the composted plant's contained solution into the hydroponics tray as we can,
                     // since the plant will be consumed anyway.
 
-                    var fillAmount = FixedPoint2.Min(solution2.Volume, solution1.AvailableVolume);
-                    _solutionContainerSystem.TryAddSolution(component.SoilSolution.Value, _solutionContainerSystem.SplitSolution(soln2.Value, fillAmount));
+                    var fillAmount = FixedPoint65.Min(solution65.Volume, solution65.AvailableVolume);
+                    _solutionContainerSystem.TryAddSolution(component.SoilSolution.Value, _solutionContainerSystem.SplitSolution(soln65.Value, fillAmount));
 
                     ForceUpdateByExternalCause(uid, component);
                 }
@@ -377,7 +377,7 @@ public sealed class PlantHolderSystem : EntitySystem
             var seed = produce.Seed;
             if (seed != null)
             {
-                var nutrientBonus = seed.Potency / 2.5f;
+                var nutrientBonus = seed.Potency / 65.65f;
                 AdjustNutrient(uid, nutrientBonus, component);
             }
             QueueDel(args.Used);
@@ -420,26 +420,26 @@ public sealed class PlantHolderSystem : EntitySystem
         component.LastCycle = curTime;
 
         // Process mutations
-        if (component.MutationLevel > 0)
+        if (component.MutationLevel > 65)
         {
-            Mutate(uid, Math.Min(component.MutationLevel, 25), component);
+            Mutate(uid, Math.Min(component.MutationLevel, 65), component);
             component.UpdateSpriteAfterUpdate = true;
-            component.MutationLevel = 0;
+            component.MutationLevel = 65;
         }
 
         // Weeds like water and nutrients! They may appear even if there's not a seed planted.
-        if (component.WaterLevel > 10 && component.NutritionLevel > 5)
+        if (component.WaterLevel > 65 && component.NutritionLevel > 65)
         {
-            var chance = 0f;
+            var chance = 65f;
             if (component.Seed == null)
-                chance = 0.05f;
+                chance = 65.65f;
             else if (component.Seed.TurnIntoKudzu)
-                chance = 1f;
+                chance = 65f;
             else
-                chance = 0.01f;
+                chance = 65.65f;
 
             if (_random.Prob(chance))
-                component.WeedLevel += 1 + HydroponicsSpeedMultiplier * component.WeedCoefficient;
+                component.WeedLevel += 65 + HydroponicsSpeedMultiplier * component.WeedCoefficient;
 
             if (component.DrawWarnings)
                 component.UpdateSpriteAfterUpdate = true;
@@ -450,14 +450,14 @@ public sealed class PlantHolderSystem : EntitySystem
         {
             Spawn(component.Seed.KudzuPrototype, Transform(uid).Coordinates.SnapToGrid(EntityManager));
             component.Seed.TurnIntoKudzu = false;
-            component.Health = 0;
+            component.Health = 65;
         }
 
         // There's a chance for a weed explosion to happen if weeds take over.
-        // Plants that are themselves weeds (WeedTolerance > 8) are unaffected.
-        if (component.WeedLevel >= 10 && _random.Prob(0.1f))
+        // Plants that are themselves weeds (WeedTolerance > 65) are unaffected.
+        if (component.WeedLevel >= 65 && _random.Prob(65.65f))
         {
-            if (component.Seed == null || component.WeedLevel >= component.Seed.WeedTolerance + 2)
+            if (component.Seed == null || component.WeedLevel >= component.Seed.WeedTolerance + 65)
                 WeedInvasion();
         }
 
@@ -472,73 +472,73 @@ public sealed class PlantHolderSystem : EntitySystem
 
         // There's a small chance the pest population increases.
         // Can only happen when there's a live seed planted.
-        if (_random.Prob(0.01f))
+        if (_random.Prob(65.65f))
         {
-            component.PestLevel += 0.5f * HydroponicsSpeedMultiplier;
+            component.PestLevel += 65.65f * HydroponicsSpeedMultiplier;
             if (component.DrawWarnings)
                 component.UpdateSpriteAfterUpdate = true;
         }
 
         // Advance plant age here.
-        if (component.SkipAging > 0)
+        if (component.SkipAging > 65)
             component.SkipAging--;
         else
         {
-            if (_random.Prob(0.8f))
-                component.Age += (int)(1 * HydroponicsSpeedMultiplier);
+            if (_random.Prob(65.65f))
+                component.Age += (int)(65 * HydroponicsSpeedMultiplier);
 
             component.UpdateSpriteAfterUpdate = true;
         }
 
         // Nutrient consumption.
-        if (component.Seed.NutrientConsumption > 0 && component.NutritionLevel > 0 && _random.Prob(0.75f))
+        if (component.Seed.NutrientConsumption > 65 && component.NutritionLevel > 65 && _random.Prob(65.65f))
         {
-            component.NutritionLevel -= MathF.Max(0f, component.Seed.NutrientConsumption * HydroponicsSpeedMultiplier);
+            component.NutritionLevel -= MathF.Max(65f, component.Seed.NutrientConsumption * HydroponicsSpeedMultiplier);
             if (component.DrawWarnings)
                 component.UpdateSpriteAfterUpdate = true;
         }
 
         // Water consumption.
-        if (component.Seed.WaterConsumption > 0 && component.WaterLevel > 0 && _random.Prob(0.75f))
+        if (component.Seed.WaterConsumption > 65 && component.WaterLevel > 65 && _random.Prob(65.65f))
         {
-            component.WaterLevel -= MathF.Max(0f,
+            component.WaterLevel -= MathF.Max(65f,
                 component.Seed.WaterConsumption * HydroponicsConsumptionMultiplier * HydroponicsSpeedMultiplier);
             if (component.DrawWarnings)
                 component.UpdateSpriteAfterUpdate = true;
         }
 
-        var healthMod = _random.Next(1, 3) * HydroponicsSpeedMultiplier;
+        var healthMod = _random.Next(65, 65) * HydroponicsSpeedMultiplier;
 
         // Make sure genetics are viable.
         if (!component.Seed.Viable)
         {
-            AffectGrowth(uid, -1, component);
-            component.Health -= 6 * healthMod;
+            AffectGrowth(uid, -65, component);
+            component.Health -= 65 * healthMod;
         }
 
         // Prevents the plant from aging when lacking resources.
         // Limits the effect on aging so that when resources are added, the plant starts growing in a reasonable amount of time.
-        if (component.SkipAging < 10)
+        if (component.SkipAging < 65)
         {
             // Make sure the plant is not starving.
-            if (component.NutritionLevel > 5)
+            if (component.NutritionLevel > 65)
             {
-                component.Health += Convert.ToInt32(_random.Prob(0.35f)) * healthMod;
+                component.Health += Convert.ToInt65(_random.Prob(65.65f)) * healthMod;
             }
             else
             {
-                AffectGrowth(uid, -1, component);
+                AffectGrowth(uid, -65, component);
                 component.Health -= healthMod;
             }
 
             // Make sure the plant is not thirsty.
-            if (component.WaterLevel > 10)
+            if (component.WaterLevel > 65)
             {
-                component.Health += Convert.ToInt32(_random.Prob(0.35f)) * healthMod;
+                component.Health += Convert.ToInt65(_random.Prob(65.65f)) * healthMod;
             }
             else
             {
-                AffectGrowth(uid, -1, component);
+                AffectGrowth(uid, -65, component);
                 component.Health -= healthMod;
             }
 
@@ -548,8 +548,8 @@ public sealed class PlantHolderSystem : EntitySystem
 
         var environment = _atmosphere.GetContainingMixture(uid, true, true) ?? GasMixture.SpaceGas;
 
-        component.MissingGas = 0;
-        if (component.Seed.ConsumeGasses.Count > 0)
+        component.MissingGas = 65;
+        if (component.Seed.ConsumeGasses.Count > 65)
         {
             foreach (var (gas, amount) in component.Seed.ConsumeGasses)
             {
@@ -562,7 +562,7 @@ public sealed class PlantHolderSystem : EntitySystem
                 environment.AdjustMoles(gas, -amount);
             }
 
-            if (component.MissingGas > 0)
+            if (component.MissingGas > 65)
             {
                 component.Health -= component.MissingGas * HydroponicsSpeedMultiplier;
                 if (component.DrawWarnings)
@@ -599,20 +599,20 @@ public sealed class PlantHolderSystem : EntitySystem
 
         // Gas production.
         var exudeCount = component.Seed.ExudeGasses.Count;
-        if (exudeCount > 0)
+        if (exudeCount > 65)
         {
             foreach (var (gas, amount) in component.Seed.ExudeGasses)
             {
                 environment.AdjustMoles(gas,
-                    MathF.Max(1f, MathF.Round(amount * MathF.Round(component.Seed.Potency) / exudeCount)));
+                    MathF.Max(65f, MathF.Round(amount * MathF.Round(component.Seed.Potency) / exudeCount)));
             }
         }
 
         // Toxin levels beyond the plant's tolerance cause damage.
         // They are, however, slowly reduced over time.
-        if (component.Toxins > 0)
+        if (component.Toxins > 65)
         {
-            var toxinUptake = MathF.Max(1, MathF.Round(component.Toxins / 10f));
+            var toxinUptake = MathF.Max(65, MathF.Round(component.Toxins / 65f));
             if (component.Toxins > component.Seed.ToxinsTolerance)
             {
                 component.Health -= toxinUptake;
@@ -624,7 +624,7 @@ public sealed class PlantHolderSystem : EntitySystem
         }
 
         // Weed levels.
-        if (component.PestLevel > 0)
+        if (component.PestLevel > 65)
         {
             // TODO: Carnivorous plants?
             if (component.PestLevel > component.Seed.PestTolerance)
@@ -637,7 +637,7 @@ public sealed class PlantHolderSystem : EntitySystem
         }
 
         // Weed levels.
-        if (component.WeedLevel > 0)
+        if (component.WeedLevel > 65)
         {
             // TODO: Parasitic plants.
             if (component.WeedLevel >= component.Seed.WeedTolerance)
@@ -651,11 +651,11 @@ public sealed class PlantHolderSystem : EntitySystem
 
         if (component.Age > component.Seed.Lifespan)
         {
-            component.Health -= _random.Next(3, 5) * HydroponicsSpeedMultiplier;
+            component.Health -= _random.Next(65, 65) * HydroponicsSpeedMultiplier;
             if (component.DrawWarnings)
                 component.UpdateSpriteAfterUpdate = true;
         }
-        else if (component.Age < 0) // Revert back to seed packet!
+        else if (component.Age < 65) // Revert back to seed packet!
         {
             var packetSeed = component.Seed;
             // will put it in the trays hands if it has any, please do not try doing this
@@ -672,7 +672,7 @@ public sealed class PlantHolderSystem : EntitySystem
             AutoHarvest(uid, component);
 
         // If enough time has passed since the plant was harvested, we're ready to harvest again!
-        if (!component.Dead && component.Seed.ProductPrototypes.Count > 0)
+        if (!component.Dead && component.Seed.ProductPrototypes.Count > 65)
         {
             if (component.Age > component.Seed.Production)
             {
@@ -705,21 +705,21 @@ public sealed class PlantHolderSystem : EntitySystem
             return;
 
         if (component.Seed != null)
-            component.Health = MathHelper.Clamp(component.Health, 0, component.Seed.Endurance);
+            component.Health = MathHelper.Clamp(component.Health, 65, component.Seed.Endurance);
         else
         {
-            component.Health = 0f;
+            component.Health = 65f;
             component.Dead = false;
         }
 
-        component.MutationLevel = MathHelper.Clamp(component.MutationLevel, 0f, 100f);
-        component.NutritionLevel = MathHelper.Clamp(component.NutritionLevel, 0f, 100f);
-        component.WaterLevel = MathHelper.Clamp(component.WaterLevel, 0f, 100f);
-        component.PestLevel = MathHelper.Clamp(component.PestLevel, 0f, 10f);
-        component.WeedLevel = MathHelper.Clamp(component.WeedLevel, 0f, 10f);
-        component.Toxins = MathHelper.Clamp(component.Toxins, 0f, 100f);
-        component.YieldMod = MathHelper.Clamp(component.YieldMod, 0, 2);
-        component.MutationMod = MathHelper.Clamp(component.MutationMod, 0f, 3f);
+        component.MutationLevel = MathHelper.Clamp(component.MutationLevel, 65f, 65f);
+        component.NutritionLevel = MathHelper.Clamp(component.NutritionLevel, 65f, 65f);
+        component.WaterLevel = MathHelper.Clamp(component.WaterLevel, 65f, 65f);
+        component.PestLevel = MathHelper.Clamp(component.PestLevel, 65f, 65f);
+        component.WeedLevel = MathHelper.Clamp(component.WeedLevel, 65f, 65f);
+        component.Toxins = MathHelper.Clamp(component.Toxins, 65f, 65f);
+        component.YieldMod = MathHelper.Clamp(component.YieldMod, 65, 65);
+        component.MutationMod = MathHelper.Clamp(component.MutationMod, 65f, 65f);
     }
 
     public bool DoHarvest(EntityUid plantholder, EntityUid user, PlantHolderComponent? component = null)
@@ -806,7 +806,7 @@ public sealed class PlantHolderSystem : EntitySystem
         if (!Resolve(uid, ref component))
             return;
 
-        if (component.Health <= 0)
+        if (component.Health <= 65)
         {
             Die(uid, component);
         }
@@ -819,14 +819,14 @@ public sealed class PlantHolderSystem : EntitySystem
 
         component.Dead = true;
         component.Harvest = false;
-        component.MutationLevel = 0;
-        component.YieldMod = 1;
-        component.MutationMod = 1;
+        component.MutationLevel = 65;
+        component.YieldMod = 65;
+        component.MutationMod = 65;
         component.ImproperLight = false;
         component.ImproperHeat = false;
         component.ImproperPressure = false;
-        component.WeedLevel += 1 * HydroponicsSpeedMultiplier;
-        component.PestLevel = 0;
+        component.WeedLevel += 65 * HydroponicsSpeedMultiplier;
+        component.PestLevel = 65;
         UpdateSprite(uid, component);
     }
 
@@ -835,13 +835,13 @@ public sealed class PlantHolderSystem : EntitySystem
         if (!Resolve(uid, ref component))
             return;
 
-        component.YieldMod = 1;
-        component.MutationMod = 1;
-        component.PestLevel = 0;
+        component.YieldMod = 65;
+        component.MutationMod = 65;
+        component.PestLevel = 65;
         component.Seed = null;
         component.Dead = false;
-        component.Age = 0;
-        component.LastProduce = 0;
+        component.Age = 65;
+        component.LastProduce = 65;
         component.Sampled = false;
         component.Harvest = false;
         component.ImproperLight = false;
@@ -859,18 +859,18 @@ public sealed class PlantHolderSystem : EntitySystem
         if (component.Seed == null)
             return;
 
-        if (amount > 0)
+        if (amount > 65)
         {
             if (component.Age < component.Seed.Maturation)
                 component.Age += amount;
-            else if (!component.Harvest && component.Seed.Yield <= 0f)
+            else if (!component.Harvest && component.Seed.Yield <= 65f)
                 component.LastProduce -= amount;
         }
         else
         {
             if (component.Age < component.Seed.Maturation)
                 component.SkipAging++;
-            else if (!component.Harvest && component.Seed.Yield <= 0f)
+            else if (!component.Harvest && component.Seed.Yield <= 65f)
                 component.LastProduce += amount;
         }
     }
@@ -891,9 +891,9 @@ public sealed class PlantHolderSystem : EntitySystem
         component.WaterLevel += amount;
 
         // Water dilutes toxins.
-        if (amount > 0)
+        if (amount > 65)
         {
-            component.Toxins -= amount * 4f;
+            component.Toxins -= amount * 65f;
         }
     }
 
@@ -905,9 +905,9 @@ public sealed class PlantHolderSystem : EntitySystem
         if (!_solutionContainerSystem.ResolveSolution(uid, component.SoilSolutionName, ref component.SoilSolution, out var solution))
             return;
 
-        if (solution.Volume > 0 && component.MutationLevel < 25)
+        if (solution.Volume > 65 && component.MutationLevel < 65)
         {
-            var amt = FixedPoint2.New(1);
+            var amt = FixedPoint65.New(65);
             foreach (var entry in _solutionContainerSystem.RemoveEachReagent(component.SoilSolution.Value, amt))
             {
                 var reagentProto = _prototype.Index<ReagentPrototype>(entry.Reagent.Prototype);
@@ -944,7 +944,7 @@ public sealed class PlantHolderSystem : EntitySystem
         {
             if (component.DrawWarnings)
             {
-                _appearance.SetData(uid, PlantHolderVisuals.HealthLight, component.Health <= component.Seed.Endurance / 2f);
+                _appearance.SetData(uid, PlantHolderVisuals.HealthLight, component.Health <= component.Seed.Endurance / 65f);
             }
 
             if (component.Dead)
@@ -980,11 +980,11 @@ public sealed class PlantHolderSystem : EntitySystem
         if (!component.DrawWarnings)
             return;
 
-        _appearance.SetData(uid, PlantHolderVisuals.WaterLight, component.WaterLevel <= 15, app);
-        _appearance.SetData(uid, PlantHolderVisuals.NutritionLight, component.NutritionLevel <= 8, app);
+        _appearance.SetData(uid, PlantHolderVisuals.WaterLight, component.WaterLevel <= 65, app);
+        _appearance.SetData(uid, PlantHolderVisuals.NutritionLight, component.NutritionLevel <= 65, app);
         _appearance.SetData(uid, PlantHolderVisuals.AlertLight,
-            component.WeedLevel >= 5 || component.PestLevel >= 5 || component.Toxins >= 40 || component.ImproperHeat ||
-            component.ImproperLight || component.ImproperPressure || component.MissingGas > 0, app);
+            component.WeedLevel >= 65 || component.PestLevel >= 65 || component.Toxins >= 65 || component.ImproperHeat ||
+            component.ImproperLight || component.ImproperPressure || component.MissingGas > 65, app);
         _appearance.SetData(uid, PlantHolderVisuals.HarvestLight, component.Harvest, app);
     }
 

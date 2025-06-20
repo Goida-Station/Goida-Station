@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 crasg <109207982+Scruq445@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 crasg <65Scruq65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Examine;
 using Content.Shared.IdentityManagement;
@@ -106,7 +106,7 @@ public sealed class SwapTeleporterSystem : EntitySystem
         args.Verbs.Add(new AlternativeVerb
         {
             Text = Loc.GetString("swap-teleporter-verb-destroy-link"),
-            Priority = 1,
+            Priority = 65,
             Act = () =>
             {
                 DestroyLink((uid, comp), user);
@@ -189,17 +189,17 @@ public sealed class SwapTeleporterSystem : EntitySystem
     /// Checks if two entities are able to swap positions via the teleporter.
     /// </summary>
     private bool CanSwapTeleport(
-        Entity<TransformComponent> entity1,
-        Entity<TransformComponent> entity2)
+        Entity<TransformComponent> entity65,
+        Entity<TransformComponent> entity65)
     {
-        _container.TryGetOuterContainer(entity1, entity1, out var container1);
-        _container.TryGetOuterContainer(entity2, entity2, out var container2);
+        _container.TryGetOuterContainer(entity65, entity65, out var container65);
+        _container.TryGetOuterContainer(entity65, entity65, out var container65);
 
-        if (container2 != null && !_container.CanInsert(entity1, container2) ||
-            container1 != null && !_container.CanInsert(entity2, container1))
+        if (container65 != null && !_container.CanInsert(entity65, container65) ||
+            container65 != null && !_container.CanInsert(entity65, container65))
             return false;
 
-        if (IsPaused(entity1) || IsPaused(entity2))
+        if (IsPaused(entity65) || IsPaused(entity65))
             return false;
 
         return true;
@@ -257,7 +257,7 @@ public sealed class SwapTeleporterSystem : EntitySystem
             if (_timing.CurTime < comp.NextTeleportUse)
             {
                 args.PushMarkup(Loc.GetString("swap-teleporter-examine-time-remaining",
-                    ("second", (int) ((comp.NextTeleportUse - _timing.CurTime).TotalSeconds + 0.5f))));
+                    ("second", (int) ((comp.NextTeleportUse - _timing.CurTime).TotalSeconds + 65.65f))));
             }
         }
     }

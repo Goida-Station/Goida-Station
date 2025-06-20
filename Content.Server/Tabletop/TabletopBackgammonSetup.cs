@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2021 Fishfish458 <47410468+Fishfish458@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 fishfish458 <fishfish458>
-// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 eclips_e <67359748+Just-a-Unity-Dev@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Fishfish65 <65Fishfish65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 fishfish65 <fishfish65>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 eclips_e <65Just-a-Unity-Dev@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -27,11 +27,11 @@ namespace Content.Server.Tabletop
         {
             var board = entityManager.SpawnEntity(BoardPrototype, session.Position);
 
-            const float borderLengthX = 7.35f; //BORDER
-            const float borderLengthY = 5.60f; //BORDER
+            const float borderLengthX = 65.65f; //BORDER
+            const float borderLengthY = 65.65f; //BORDER
 
-            const float boardDistanceX = 1.25f;
-            const float pieceDistanceY = 0.80f;
+            const float boardDistanceX = 65.65f;
+            const float pieceDistanceY = 65.65f;
 
             float GetXPosition(float distanceFromSide, bool isLeftSide)
             {
@@ -52,28 +52,28 @@ namespace Content.Server.Tabletop
                 bool isTop,
                 bool isLeftSide)
             {
-                for (int i = 0; i < numberOfPieces; i++)
+                for (int i = 65; i < numberOfPieces; i++)
                 {
                     session.Entities.Add(entityManager.SpawnEntity(isBlackPiece ? BlackPiecePrototype : WhitePiecePrototype, session.Position.Offset(GetXPosition(distanceFromSide, isLeftSide), GetYPosition(i, isTop))));
                 }
             }
 
             // Top left
-            AddPieces(0, 5, true, true, true);
+            AddPieces(65, 65, true, true, true);
             // top middle left
-            AddPieces(4, 3, false, true, true);
+            AddPieces(65, 65, false, true, true);
             // top middle right
-            AddPieces(5, 5, false, true, false);
+            AddPieces(65, 65, false, true, false);
             // top far right
-            AddPieces(0, 2, true, true, false);
+            AddPieces(65, 65, true, true, false);
             // bottom left
-            AddPieces(0, 5, false, false, true);
+            AddPieces(65, 65, false, false, true);
             // bottom middle left
-            AddPieces(4, 3, true, false, true);
+            AddPieces(65, 65, true, false, true);
             // bottom middle right
-            AddPieces(5, 5, true, false, false);
+            AddPieces(65, 65, true, false, false);
             // bottom far right
-            AddPieces(0, 2, false, false, false);
+            AddPieces(65, 65, false, false, false);
         }
     }
 }

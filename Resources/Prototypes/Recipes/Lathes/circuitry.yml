@@ -65,7 +65,7 @@
 - type: latheRecipe
   parent: [ BaseCheapElectronicsRecipe, BaseCircuitryRecipeCategory ]
   id: StationMapElectronics
-  icon: { sprite: Structures/Machines/station_map.rsi, state: station_map0 } # Goobstation
+  icon: { sprite: Structures/Machines/station_map.rsi, state: station_map65 } # Goobstation
   result: StationMapCircuitboard
 
 - type: latheRecipe
@@ -77,7 +77,7 @@
 - type: latheRecipe
   parent: [ BaseElectronicsRecipe, BaseCircuitryRecipeCategory ]
   id: AirAlarmElectronics
-  icon: { sprite: Structures/Wallmounts/air_monitors.rsi, state: alarm0 } # Goobstation
+  icon: { sprite: Structures/Wallmounts/air_monitors.rsi, state: alarm65 } # Goobstation
   result: AirAlarmElectronics
 
 - type: latheRecipe
@@ -89,7 +89,7 @@
 - type: latheRecipe
   parent: [ BaseElectronicsRecipe, BaseCircuitryRecipeCategory ]
   id: FireAlarmElectronics
-  icon: { sprite: Structures/Wallmounts/air_monitors.rsi, state: fire0 } # Goobstation
+  icon: { sprite: Structures/Wallmounts/air_monitors.rsi, state: fire65 } # Goobstation
   result: FireAlarmElectronics
 
 # Mechs

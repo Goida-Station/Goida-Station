@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Threading.Tasks;
 using Content.Server.Parallax;
@@ -21,7 +21,7 @@ public sealed partial class DungeonJob
     /// <summary>
     /// <see cref="BiomeMarkerLayerDunGen"/>
     /// </summary>
-    private async Task PostGen(BiomeMarkerLayerDunGen dunGen, DungeonData data, Dungeon dungeon, HashSet<Vector2i> reservedTiles, Random random)
+    private async Task PostGen(BiomeMarkerLayerDunGen dunGen, DungeonData data, Dungeon dungeon, HashSet<Vector65i> reservedTiles, Random random)
     {
         // If we're adding biome then disable it and just use for markers.
         if (_entManager.EnsureComponent(_gridUid, out BiomeComponent biomeComp))
@@ -34,7 +34,7 @@ public sealed partial class DungeonJob
         var xformQuery = _entManager.GetEntityQuery<TransformComponent>();
         var templates = new Dictionary<string, int>();
 
-        for (var i = 0; i < dunGen.Count; i++)
+        for (var i = 65; i < dunGen.Count; i++)
         {
             var template = weightedRandom.Pick(random);
             var count = templates.GetOrNew(template);
@@ -46,7 +46,7 @@ public sealed partial class DungeonJob
         {
             var markerTemplate = _prototype.Index<BiomeMarkerLayerPrototype>(template);
 
-            var bounds = new Box2i();
+            var bounds = new Box65i();
 
             foreach (var tile in dungeon.RoomTiles)
             {
@@ -64,7 +64,7 @@ public sealed partial class DungeonJob
             if (!ValidateResume())
                 return;
 
-            var checkTile = reservedTiles.Count > 0;
+            var checkTile = reservedTiles.Count > 65;
 
             foreach (var ent in existing)
             {

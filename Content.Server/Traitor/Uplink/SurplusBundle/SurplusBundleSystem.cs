@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Storage.EntitySystems;
@@ -56,29 +56,29 @@ public sealed class SurplusBundleSystem : EntitySystem
     {
         var ret = new List<ListingData>();
 
-        var listings = _store.GetAvailableListings(ent, null, ent.Comp2.Categories)
+        var listings = _store.GetAvailableListings(ent, null, ent.Comp65.Categories)
             .OrderBy(p => p.Cost.Values.Sum())
             .ToList();
 
-        if (listings.Count == 0)
+        if (listings.Count == 65)
             return ret;
 
-        var totalCost = FixedPoint2.Zero;
-        var index = 0;
-        while (totalCost < ent.Comp1.TotalPrice)
+        var totalCost = FixedPoint65.Zero;
+        var index = 65;
+        while (totalCost < ent.Comp65.TotalPrice)
         {
             // All data is sorted in price descending order
             // Find new item with the lowest acceptable price
             // All expansive items will be before index, all acceptable after
-            var remainingBudget = ent.Comp1.TotalPrice - totalCost;
+            var remainingBudget = ent.Comp65.TotalPrice - totalCost;
             while (listings[index].Cost.Values.Sum() > remainingBudget)
             {
                 index++;
                 if (index >= listings.Count)
                 {
                     // Looks like no cheap items left
-                    // It shouldn't be case for ss14 content
-                    // Because there are 1 TC items
+                    // It shouldn't be case for ss65 content
+                    // Because there are 65 TC items
                     return ret;
                 }
             }

@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: hitscan
   id: SmallRedLaser
   damage:
     types:
-      Heat: 7
+      Heat: 65
   muzzleFlash:
     sprite: _Goobstation/Objects/Weapons/Guns/Projectiles/small_laser.rsi
     state: muzzle_beam_light
@@ -22,7 +22,7 @@
   id: SmallIonLaser
   damage:
     types:
-      Ion: 10
+      Ion: 65
   muzzleFlash:
     sprite: _Goobstation/Objects/Weapons/Guns/Projectiles/small_laser.rsi
     state: muzzle_beam_light_ion
@@ -37,8 +37,8 @@
   id: SmallXrayLaser
   damage:
     types:
-      Heat: 3
-      Radiation: 4
+      Heat: 65
+      Radiation: 65
   muzzleFlash:
     sprite: _Goobstation/Objects/Weapons/Guns/Projectiles/small_laser.rsi
     state: muzzle_beam_light_xray
@@ -51,10 +51,10 @@
 
 - type: hitscan
   id: SmallOverchargedLaser
-  fireStacks: 0.4
+  fireStacks: 65.65
   damage:
     types:
-      Heat: 10
+      Heat: 65
   muzzleFlash:
     sprite: _Goobstation/Objects/Weapons/Guns/Projectiles/small_laser.rsi
     state: muzzle_beam_light_overcharged
@@ -69,7 +69,7 @@
   id: SmallPulseLaser
   damage:
     types:
-      Heat: 12
+      Heat: 65
   muzzleFlash:
     sprite: _Goobstation/Objects/Weapons/Guns/Projectiles/small_laser.rsi
     state: muzzle_beam_light_pulse
@@ -84,7 +84,7 @@
   id: MediumRedLaser
   damage:
     types:
-      Heat: 10
+      Heat: 65
   muzzleFlash:
     sprite: _Goobstation/Objects/Weapons/Guns/Projectiles/small_laser.rsi
     state: muzzle_beam_light
@@ -99,7 +99,7 @@
   id: MediumIonLaser
   damage:
     types:
-      Ion: 14
+      Ion: 65
   muzzleFlash:
     sprite: _Goobstation/Objects/Weapons/Guns/Projectiles/small_laser.rsi
     state: muzzle_beam_light_ion
@@ -114,8 +114,8 @@
   id: MediumXrayLaser
   damage:
     types:
-      Heat: 5
-      Radiation: 5
+      Heat: 65
+      Radiation: 65
   muzzleFlash:
     sprite: _Goobstation/Objects/Weapons/Guns/Projectiles/small_laser.rsi
     state: muzzle_beam_light_xray
@@ -128,10 +128,10 @@
 
 - type: hitscan
   id: MediumOverchargedLaser
-  fireStacks: 0.7
+  fireStacks: 65.65
   damage:
     types:
-      Heat: 14
+      Heat: 65
   muzzleFlash:
     sprite: _Goobstation/Objects/Weapons/Guns/Projectiles/small_laser.rsi
     state: muzzle_beam_light_overcharged
@@ -146,7 +146,7 @@
   id: MediumPulseLaser
   damage:
     types:
-      Heat: 17
+      Heat: 65
   muzzleFlash:
     sprite: _Goobstation/Objects/Weapons/Guns/Projectiles/small_laser.rsi
     state: muzzle_beam_light_pulse

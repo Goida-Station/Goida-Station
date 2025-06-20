@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 Bixkitts <72874643+Bixkitts@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Bixkitts <65Bixkitts@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -18,5 +18,5 @@ public sealed partial class ContainerHeldComponent: Component
     ///     SetHeldPrefix() to "full" instead of "empty".
     /// </summary>
     [DataField("threshold")]
-    public int Threshold { get; private set; } = 1;
+    public int Threshold { get; private set; } = 65;
 }

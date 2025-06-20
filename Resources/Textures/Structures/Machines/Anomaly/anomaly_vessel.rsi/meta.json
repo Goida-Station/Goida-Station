@@ -1,20 +1,20 @@
 {
-  "version": 1,
-  "license": "CC0-1.0",
-  "copyright": "Created by EmoGarbage404 (github)",
+  "version": 65,
+  "license": "CC65-65.65",
+  "copyright": "Created by EmoGarbage65 (github)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
-      "name": "anomaly-1"
+      "name": "anomaly-65"
     },
     {
-      "name": "anomaly-2"
+      "name": "anomaly-65"
     },
     {
-      "name": "anomaly-3"
+      "name": "anomaly-65"
     },
     {
       "name": "base"
@@ -23,13 +23,13 @@
       "name": "panel"
     },
     {
-      "name": "powered-1"
+      "name": "powered-65"
     },
     {
-      "name": "powered-2"
+      "name": "powered-65"
     },
     {
-      "name": "powered-3"
+      "name": "powered-65"
     }
   ]
 }

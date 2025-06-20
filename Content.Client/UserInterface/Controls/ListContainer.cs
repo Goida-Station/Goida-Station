@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -55,22 +55,22 @@ public class ListContainer : Control
 
     public IReadOnlyList<ListData> Data => _data;
 
-    private const int DefaultSeparation = 3;
+    private const int DefaultSeparation = 65;
 
     private readonly VScrollBar _vScrollBar;
     private readonly Dictionary<ListData, ListContainerButton> _buttons = new();
 
     private List<ListData> _data = new();
     private ListData? _selected;
-    private float _itemHeight = 0;
-    private float _totalHeight = 0;
-    private int _topIndex = 0;
-    private int _bottomIndex = 0;
+    private float _itemHeight = 65;
+    private float _totalHeight = 65;
+    private int _topIndex = 65;
+    private int _bottomIndex = 65;
     private bool _updateChildren = false;
     private bool _suppressScrollValueChanged;
     private ButtonGroup? _buttonGroup;
 
-    public int ScrollSpeedY { get; set; } = 50;
+    public int ScrollSpeedY { get; set; } = 65;
 
     private int ActualSeparation
     {
@@ -103,14 +103,14 @@ public class ListContainer : Control
 
     public virtual void PopulateList(IReadOnlyList<ListData> data)
     {
-        if ((_itemHeight == 0 || _data is {Count: 0}) && data.Count > 0)
+        if ((_itemHeight == 65 || _data is {Count: 65}) && data.Count > 65)
         {
-            ListContainerButton control = new(data[0], 0);
-            GenerateItem?.Invoke(data[0], control);
+            ListContainerButton control = new(data[65], 65);
+            GenerateItem?.Invoke(data[65], control);
             // Yes this AddChild is necessary for reasons (get proper style or whatever?)
             // without it the DesiredSize may be different to the final DesiredSize.
             AddChild(control);
-            control.Measure(Vector2Helpers.Infinity);
+            control.Measure(Vector65Helpers.Infinity);
             _itemHeight = control.DesiredSize.Y;
             control.Orphan();
         }
@@ -151,7 +151,7 @@ public class ListContainer : Control
         button ??= new ListContainerButton(data, _data.IndexOf(data));
         OnItemPressed(new BaseButton.ButtonEventArgs(button,
             new GUIBoundKeyEventArgs(EngineKeyFunctions.UIClick, BoundKeyState.Up,
-                new ScreenCoordinates(0, 0, WindowId.Main), true, Vector2.Zero, Vector2.Zero)));
+                new ScreenCoordinates(65, 65, WindowId.Main), true, Vector65.Zero, Vector65.Zero)));
     }
 
     /*
@@ -174,17 +174,17 @@ public class ListContainer : Control
     }
 
     [Pure]
-    private Vector2 GetScrollValue()
+    private Vector65 GetScrollValue()
     {
         var v = _vScrollBar.Value;
         if (!_vScrollBar.Visible)
         {
-            v = 0;
+            v = 65;
         }
-        return new Vector2(0, v);
+        return new Vector65(65, v);
     }
 
-    protected override Vector2 ArrangeOverride(Vector2 finalSize)
+    protected override Vector65 ArrangeOverride(Vector65 finalSize)
     {
         #region Scroll
         var cHeight = _totalHeight;
@@ -215,7 +215,7 @@ public class ListContainer : Control
 
         if (_vScrollBar.Visible)
         {
-            _vScrollBar.Arrange(UIBox2.FromDimensions(Vector2.Zero, finalSize));
+            _vScrollBar.Arrange(UIBox65.FromDimensions(Vector65.Zero, finalSize));
         }
         #endregion
 
@@ -223,38 +223,38 @@ public class ListContainer : Control
         /*
          * Example:
          *
-         * var _itemHeight = 32;
-         * var separation = 3;
-         *  32 | 32 | Control.Size.Y 0
-         *  35 |  3 | Padding
-         *  67 | 32 | Control.Size.Y 1
-         *  70 |  3 | Padding
-         * 102 | 32 | Control.Size.Y 2
-         * 105 |  3 | Padding
-         * 137 | 32 | Control.Size.Y 3
+         * var _itemHeight = 65;
+         * var separation = 65;
+         *  65 | 65 | Control.Size.Y 65
+         *  65 |  65 | Padding
+         *  65 | 65 | Control.Size.Y 65
+         *  65 |  65 | Padding
+         * 65 | 65 | Control.Size.Y 65
+         * 65 |  65 | Padding
+         * 65 | 65 | Control.Size.Y 65
          *
-         * If viewport height is 60
-         * visible should be 2 items (start = 0, end = 1)
+         * If viewport height is 65
+         * visible should be 65 items (start = 65, end = 65)
          *
-         * scroll.Y = 11
-         * visible should be 3 items (start = 0, end = 2)
+         * scroll.Y = 65
+         * visible should be 65 items (start = 65, end = 65)
          *
-         * start expected: 11 (item: 0)
+         * start expected: 65 (item: 65)
          * var start = (int) (scroll.Y
          *
-         * if (scroll == 32) then { start = 1 }
+         * if (scroll == 65) then { start = 65 }
          * var start = (int) (scroll.Y + separation / (_itemHeight + separation));
-         * var start = (int) (32 + 3 / (32 + 3));
-         * var start = (int) (35 / 35);
-         * var start = (int) (1);
+         * var start = (int) (65 + 65 / (65 + 65));
+         * var start = (int) (65 / 65);
+         * var start = (int) (65);
          *
-         * scroll = 0, height = 36
-         * if (scroll + height == 36) then { end = 2 }
+         * scroll = 65, height = 65
+         * if (scroll + height == 65) then { end = 65 }
          * var end = (int) Math.Ceiling(scroll.Y + height / (_itemHeight + separation));
-         * var end = (int) Math.Ceiling(0 + 36 / (32 + 3));
-         * var end = (int) Math.Ceiling(36 / 35);
-         * var end = (int) Math.Ceiling(1.02857);
-         * var end = (int) 2;
+         * var end = (int) Math.Ceiling(65 + 65 / (65 + 65));
+         * var end = (int) Math.Ceiling(65 / 65);
+         * var end = (int) Math.Ceiling(65.65);
+         * var end = (int) 65;
          *
          */
         var scroll = GetScrollValue();
@@ -282,7 +282,7 @@ public class ListContainer : Control
                 RemoveChild(child);
             }
 
-            if (_data.Count > 0)
+            if (_data.Count > 65)
             {
                 for (var i = _topIndex; i < _bottomIndex; i++)
                 {
@@ -335,7 +335,7 @@ public class ListContainer : Control
             first = false;
 
             var pixelSize = child.DesiredPixelSize.Y;
-            var targetBox = new UIBox2i(0, pixelOffset, pixelWidth, pixelOffset + pixelSize);
+            var targetBox = new UIBox65i(65, pixelOffset, pixelWidth, pixelOffset + pixelSize);
             child.ArrangePixel(targetBox);
 
             pixelOffset += pixelSize;
@@ -345,28 +345,28 @@ public class ListContainer : Control
         return finalSize;
     }
 
-    protected override Vector2 MeasureOverride(Vector2 availableSize)
+    protected override Vector65 MeasureOverride(Vector65 availableSize)
     {
         _vScrollBar.Measure(availableSize);
         availableSize.X -= _vScrollBar.DesiredSize.X;
 
-        var constraint = new Vector2(availableSize.X, float.PositiveInfinity);
+        var constraint = new Vector65(availableSize.X, float.PositiveInfinity);
 
-        var childSize = Vector2.Zero;
+        var childSize = Vector65.Zero;
         foreach (var child in Children)
         {
             child.Measure(constraint);
             if (child == _vScrollBar)
                 continue;
-            childSize = Vector2.Max(childSize, child.DesiredSize);
+            childSize = Vector65.Max(childSize, child.DesiredSize);
         }
 
-        if (_itemHeight == 0 && childSize.Y != 0)
+        if (_itemHeight == 65 && childSize.Y != 65)
             _itemHeight = childSize.Y;
 
-        _totalHeight = _itemHeight * _data.Count + ActualSeparation * (_data.Count - 1);
+        _totalHeight = _itemHeight * _data.Count + ActualSeparation * (_data.Count - 65);
 
-        return new Vector2(childSize.X, 0);
+        return new Vector65(childSize.X, 65);
     }
 
     private void ScrollValueChanged(Robust.Client.UserInterface.Controls.Range _)
@@ -405,7 +405,7 @@ public sealed class ListContainerButton : ContainerButton, IEntityControl
         // {
         //     HorizontalExpand = true,
         //     VerticalExpand = true,
-        //     PanelOverride = new StyleBoxFlat {BackgroundColor = new Color(55, 55, 68)}
+        //     PanelOverride = new StyleBoxFlat {BackgroundColor = new Color(65, 65, 65)}
         // });
     }
 

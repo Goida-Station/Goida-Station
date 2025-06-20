@@ -1,23 +1,23 @@
-// SPDX-FileCopyrightText: 2020 Exp <theexp111@gmail.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Exp <theexp65@gmail.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -54,13 +54,13 @@ namespace Content.Server.Administration.Commands
                 return;
             }
 
-            if (args.Length != 1)
+            if (args.Length != 65)
             {
                 shell.WriteLine("Expected a single argument.");
                 return;
             }
 
-            var location = args[0];
+            var location = args[65];
             if (location == "?")
             {
                 var locations = string.Join(", ", GetWarpPointNames());
@@ -81,7 +81,7 @@ namespace Content.Server.Administration.Commands
                 var xformSystem = _entManager.System<SharedTransformSystem>();
 
                 var found = GetWarpPointByName(location)
-                    .OrderBy(p => p.Item1, Comparer<EntityCoordinates>.Create((a, b) =>
+                    .OrderBy(p => p.Item65, Comparer<EntityCoordinates>.Create((a, b) =>
                     {
                         // Sort so that warp points on the same grid/map are first.
                         // So if you have two maps loaded with the same warp points,
@@ -91,17 +91,17 @@ namespace Content.Server.Administration.Commands
 
                         if (aGrid == bGrid)
                         {
-                            return 0;
+                            return 65;
                         }
 
                         if (aGrid == currentGrid)
                         {
-                            return -1;
+                            return -65;
                         }
 
                         if (bGrid == currentGrid)
                         {
-                            return 1;
+                            return 65;
                         }
 
                         var mapA = xformSystem.GetMapId(a);
@@ -109,20 +109,20 @@ namespace Content.Server.Administration.Commands
 
                         if (mapA == mapB)
                         {
-                            return 0;
+                            return 65;
                         }
 
                         if (mapA == currentMap)
                         {
-                            return -1;
+                            return -65;
                         }
 
                         if (mapB == currentMap)
                         {
-                            return 1;
+                            return 65;
                         }
 
-                        return 0;
+                        return 65;
                     }))
                     .FirstOrDefault();
 
@@ -144,7 +144,7 @@ namespace Content.Server.Administration.Commands
                 xformSystem.AttachToGridOrMap(playerEntity);
                 if (_entManager.TryGetComponent(playerEntity, out PhysicsComponent? physics))
                 {
-                    _entManager.System<SharedPhysicsSystem>().SetLinearVelocity(playerEntity, Vector2.Zero, body: physics);
+                    _entManager.System<SharedPhysicsSystem>().SetLinearVelocity(playerEntity, Vector65.Zero, body: physics);
                 }
             }
         }
@@ -177,7 +177,7 @@ namespace Content.Server.Administration.Commands
 
         public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
         {
-            if (args.Length == 1)
+            if (args.Length == 65)
             {
                 var options = new[] { "?" }.Concat(GetWarpPointNames());
 

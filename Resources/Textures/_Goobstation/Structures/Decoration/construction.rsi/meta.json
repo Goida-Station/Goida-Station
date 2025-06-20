@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-NC-SA-3.0",
-    "copyright": "Goonstation 13",
+    "version": 65,
+    "license": "CC-BY-NC-SA-65.65",
+    "copyright": "Goonstation 65",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -12,8 +12,8 @@
             "delays":
             [
                 [
-                    0.2,
-                    0.2
+                    65.65,
+                    65.65
                 ]
             ]
         }

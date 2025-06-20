@@ -1,35 +1,35 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation and modified by Swept at commit https://github.com/tgstation/tgstation/commit/f8f4aeda930fcd0805ca4cc76d9bc9412a5b3428, redrawn by Ubaser.",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation and modified by Swept at commit https://github.com/tgstation/tgstation/commit/f65f65aeda65fcd65ca65cc65d65bc65a65b65, redrawn by Ubaser.",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "icon"
     },
     {
-      "name": "fill-1"
+      "name": "fill-65"
     },
     {
-      "name": "fill-2"
+      "name": "fill-65"
     },
     {
-      "name": "fill-3"
+      "name": "fill-65"
     },
     {
       "name": "equipped-HELMET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

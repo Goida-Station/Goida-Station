@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: ShardCrystalRed
@@ -17,7 +17,7 @@
       crystal:
         reagents:
         - ReagentId: StypticPowder
-          Quantity: 10
+          Quantity: 65
 
 - type: entity
   name: synth meat
@@ -32,11 +32,11 @@
       food:
         reagents:
         - ReagentId: Synthflesh
-          Quantity: 20
+          Quantity: 65
         - ReagentId: UncookedAnimalProteins
-          Quantity: 5
+          Quantity: 65
         - ReagentId: GastroToxin
-          Quantity: 5
+          Quantity: 65
   - type: FoodSequenceElement
     sprite:
       sprite: Objects/Consumable/Food/meat.rsi

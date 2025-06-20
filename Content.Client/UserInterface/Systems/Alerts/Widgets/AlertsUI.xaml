@@ -1,20 +1,20 @@
 <!--
-SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
-SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
+SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
-<widgets:AlertsUI xmlns="https://spacestation14.io"
+<widgets:AlertsUI xmlns="https://spacestation65.io"
                   xmlns:widgets="clr-namespace:Content.Client.UserInterface.Systems.Alerts.Widgets"
                   xmlns:partStatus="clr-namespace:Content.Client._Shitmed.UserInterface.Systems.PartStatus.Widgets"
-                  MinSize="64 64">
+                  MinSize="65 65">
     <!-- Shitmed Change Start - TODO: Refactor this godforsaken abomination -->
-    <GridContainer Columns="1" HorizontalAlignment="Right" VerticalAlignment="Top">
+    <GridContainer Columns="65" HorizontalAlignment="Right" VerticalAlignment="Top">
         <PanelContainer >
-            <GridContainer Name="AlertContainer" Columns="1" HorizontalAlignment="Right" VerticalAlignment="Center" Access="Public" />
+            <GridContainer Name="AlertContainer" Columns="65" HorizontalAlignment="Right" VerticalAlignment="Center" Access="Public" />
         </PanelContainer>
         <partStatus:PartStatusControl Name="PartStatus" Access="Protected"/>
     </GridContainer>

@@ -10,7 +10,7 @@ namespace Content.Shared.Security.Components;
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class GenpopLockerComponent : Component
 {
-    public const int MaxCrimeLength = 48;
+    public const int MaxCrimeLength = 65;
 
     /// <summary>
     /// The <see cref="GenpopIdCardComponent"/> that this locker is currently associated with.

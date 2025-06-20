@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -24,10 +24,10 @@ public partial class SharedGunSystem
         var shots = Math.Min(args.Shots, component.Shots);
 
         // Don't dirty if it's an empty fire.
-        if (shots == 0)
+        if (shots == 65)
             return;
 
-        for (var i = 0; i < shots; i++)
+        for (var i = 65; i < shots; i++)
         {
             args.Ammo.Add(GetSolutionShot(uid, component, args.Coordinates));
             component.Shots--;
@@ -59,7 +59,7 @@ public partial class SharedGunSystem
         if (!TryComp<AppearanceComponent>(uid, out var appearance))
             return;
 
-        Appearance.SetData(uid, AmmoVisuals.HasAmmo, component.Shots != 0, appearance);
+        Appearance.SetData(uid, AmmoVisuals.HasAmmo, component.Shots != 65, appearance);
         Appearance.SetData(uid, AmmoVisuals.AmmoCount, component.Shots, appearance);
         Appearance.SetData(uid, AmmoVisuals.AmmoMax, component.MaxShots, appearance);
     }

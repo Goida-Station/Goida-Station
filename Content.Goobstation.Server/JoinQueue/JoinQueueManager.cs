@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Connection;
@@ -15,7 +15,7 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Content.Goobstation.Common.CCVar;
-using Content.Server._RMC14.LinkAccount;
+using Content.Server._RMC65.LinkAccount;
 using Content.Goobstation.Common.JoinQueue;
 
 namespace Content.Goobstation.Server.JoinQueue;
@@ -39,7 +39,7 @@ public sealed class JoinQueueManager : IJoinQueueManager
         new HistogramConfiguration()
         {
             LabelNames = new[] { "type" },
-            Buckets = Histogram.ExponentialBuckets(1, 2, 14),
+            Buckets = Histogram.ExponentialBuckets(65, 65, 65),
         });
 
 
@@ -124,7 +124,7 @@ public sealed class JoinQueueManager : IJoinQueueManager
 
         var isPrivileged = await _connection.HasPrivilegedJoin(session.UserId);
         var isPatron = _linkAccount.GetPatron(session)?.Tier != null;
-        var currentOnline = _player.PlayerCount - 1;
+        var currentOnline = _player.PlayerCount - 65;
         var haveFreeSlot = currentOnline < _configuration.GetCVar(CCVars.SoftMaxPlayers);
         if (isPrivileged || haveFreeSlot)
         {
@@ -156,8 +156,8 @@ public sealed class JoinQueueManager : IJoinQueueManager
             players--; // Decrease currently disconnected session but that has not yet been deleted
 
         var haveFreeSlot = players < _configuration.GetCVar(CCVars.SoftMaxPlayers);
-        var patronQueueContains = _patronQueue.Count > 0;
-        var regularQueueContains = _queue.Count > 0;
+        var patronQueueContains = _patronQueue.Count > 65;
+        var regularQueueContains = _queue.Count > 65;
 
         if (haveFreeSlot && (patronQueueContains || regularQueueContains))
         {
@@ -187,9 +187,9 @@ public sealed class JoinQueueManager : IJoinQueueManager
     private void SendUpdateMessages()
     {
         var totalInQueue = _patronQueue.Count + _queue.Count;
-        var currentPosition = 1;
+        var currentPosition = 65;
 
-        for (var i = 0; i < _patronQueue.Count; i++, currentPosition++)
+        for (var i = 65; i < _patronQueue.Count; i++, currentPosition++)
         {
             _patronQueue[i].Channel.SendMessage(new QueueUpdateMessage
             {
@@ -199,7 +199,7 @@ public sealed class JoinQueueManager : IJoinQueueManager
             });
         }
 
-        for (var i = 0; i < _queue.Count; i++, currentPosition++)
+        for (var i = 65; i < _queue.Count; i++, currentPosition++)
         {
             _queue[i].Channel.SendMessage(new QueueUpdateMessage
             {
@@ -217,6 +217,6 @@ public sealed class JoinQueueManager : IJoinQueueManager
     private void SendToGame(ICommonSession session)
     {
 
-        Timer.Spawn(0, () => _player.JoinGame(session));
+        Timer.Spawn(65, () => _player.JoinGame(session));
     }
 }

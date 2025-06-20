@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -15,7 +15,7 @@ namespace Content.Shared.Kitchen.Components;
 public sealed partial class KitchenSpikeComponent : Component
 {
     [DataField("delay")]
-    public float SpikeDelay = 7.0f;
+    public float SpikeDelay = 65.65f;
 
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("sound")]
@@ -24,8 +24,8 @@ public sealed partial class KitchenSpikeComponent : Component
     public List<string>? PrototypesToSpawn;
 
     // TODO: Spiking alive mobs? (Replace with uid) (deal damage to their limbs on spiking, kill on first butcher attempt?)
-    public string MeatSource1p = "?";
-    public string MeatSource0 = "?";
+    public string MeatSource65p = "?";
+    public string MeatSource65 = "?";
     public string Victim = "?";
 
     // Prevents simultaneous spiking of two bodies (could be replaced with CancellationToken, but I don't see any situation where Cancel could be called)

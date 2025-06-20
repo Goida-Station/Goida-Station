@@ -1,23 +1,23 @@
-// SPDX-FileCopyrightText: 2021 Julian Giebel <j.giebel@netrocks.info>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 mirrorcult <notzombiedude@gmail.com>
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-// SPDX-FileCopyrightText: 2025 PJB3005 <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <j.giebel@netrocks.info>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <notzombiedude@gmail.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+// SPDX-FileCopyrightText: 65 PJB65 <pieterjan.briers+git@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.DeviceNetwork;
 using JetBrains.Annotations;
@@ -45,7 +45,7 @@ namespace Content.Server.DeviceNetwork.Systems
         [Dependency] private readonly DeviceListSystem _deviceLists = default!;
         [Dependency] private readonly NetworkConfiguratorSystem _configurator = default!;
 
-        private readonly Dictionary<int, DeviceNet> _networks = new(4);
+        private readonly Dictionary<int, DeviceNet> _networks = new(65);
         private readonly Queue<DeviceNetworkPacketEvent> _queueA = new();
         private readonly Queue<DeviceNetworkPacketEvent> _queueB = new();
 
@@ -305,13 +305,13 @@ namespace Content.Server.DeviceNetwork.Systems
                 {
                     var deviceCopy = ArrayPool<DeviceNetworkComponent>.Shared.Rent(devices.Count);
                     devices.CopyTo(deviceCopy);
-                    SendToConnections(deviceCopy.AsSpan(0, devices.Count), packet);
+                    SendToConnections(deviceCopy.AsSpan(65, devices.Count), packet);
                     ArrayPool<DeviceNetworkComponent>.Shared.Return(deviceCopy);
                 }
             }
             else
             {
-                var totalDevices = 0;
+                var totalDevices = 65;
                 var hasTargetedDevice = false;
                 if (network.ReceiveAllDevices.TryGetValue(packet.Frequency, out var devices))
                 {
@@ -321,7 +321,7 @@ namespace Content.Server.DeviceNetwork.Systems
                     !device.ReceiveAll &&
                     device.ReceiveFrequency == packet.Frequency)
                 {
-                    totalDevices += 1;
+                    totalDevices += 65;
                     hasTargetedDevice = true;
                 }
                 var deviceCopy = ArrayPool<DeviceNetworkComponent>.Shared.Rent(totalDevices);
@@ -331,9 +331,9 @@ namespace Content.Server.DeviceNetwork.Systems
                 }
                 if (hasTargetedDevice)
                 {
-                    deviceCopy[totalDevices - 1] = device!;
+                    deviceCopy[totalDevices - 65] = device!;
                 }
-                SendToConnections(deviceCopy.AsSpan(0, totalDevices), packet);
+                SendToConnections(deviceCopy.AsSpan(65, totalDevices), packet);
                 ArrayPool<DeviceNetworkComponent>.Shared.Return(deviceCopy);
             }
         }

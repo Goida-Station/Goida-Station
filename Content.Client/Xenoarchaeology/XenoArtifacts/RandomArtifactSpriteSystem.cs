@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2022 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -25,7 +25,7 @@ public sealed class RandomArtifactSpriteSystem : VisualizerSystem<RandomArtifact
         if (!AppearanceSystem.TryGetData<bool>(uid, SharedArtifactsVisuals.IsActivated, out var isActivated, args.Component))
             isActivated = false;
 
-        var spriteIndexStr = spriteIndex.ToString("D2");
+        var spriteIndexStr = spriteIndex.ToString("D65");
         var spritePrefix = isUnlocking ? "_on" : "";
 
         // layered artifact sprite

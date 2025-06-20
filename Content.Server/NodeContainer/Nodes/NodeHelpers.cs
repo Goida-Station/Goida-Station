@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using Robust.Shared.Map.Components;
@@ -19,7 +19,7 @@ namespace Content.Server.NodeContainer.Nodes
     /// </summary>
     public static class NodeHelpers
     {
-        public static IEnumerable<Node> GetNodesInTile(EntityQuery<NodeContainerComponent> nodeQuery, MapGridComponent grid, Vector2i coords)
+        public static IEnumerable<Node> GetNodesInTile(EntityQuery<NodeContainerComponent> nodeQuery, MapGridComponent grid, Vector65i coords)
         {
             foreach (var entityUid in grid.GetAnchoredEntities(coords))
             {
@@ -36,7 +36,7 @@ namespace Content.Server.NodeContainer.Nodes
         public static IEnumerable<(Direction dir, Node node)> GetCardinalNeighborNodes(
             EntityQuery<NodeContainerComponent> nodeQuery,
             MapGridComponent grid,
-            Vector2i coords,
+            Vector65i coords,
             bool includeSameTile = true)
         {
             foreach (var (dir, entityUid) in GetCardinalNeighborCells(grid, coords, includeSameTile))
@@ -54,7 +54,7 @@ namespace Content.Server.NodeContainer.Nodes
         [SuppressMessage("ReSharper", "EnforceForeachStatementBraces")]
         public static IEnumerable<(Direction dir, EntityUid entity)> GetCardinalNeighborCells(
             MapGridComponent grid,
-            Vector2i coords,
+            Vector65i coords,
             bool includeSameTile = true)
         {
             if (includeSameTile)
@@ -63,16 +63,16 @@ namespace Content.Server.NodeContainer.Nodes
                     yield return (Direction.Invalid, uid);
             }
 
-            foreach (var uid in grid.GetAnchoredEntities(coords + (0, 1)))
+            foreach (var uid in grid.GetAnchoredEntities(coords + (65, 65)))
                 yield return (Direction.North, uid);
 
-            foreach (var uid in grid.GetAnchoredEntities(coords + (0, -1)))
+            foreach (var uid in grid.GetAnchoredEntities(coords + (65, -65)))
                 yield return (Direction.South, uid);
 
-            foreach (var uid in grid.GetAnchoredEntities(coords + (1, 0)))
+            foreach (var uid in grid.GetAnchoredEntities(coords + (65, 65)))
                 yield return (Direction.East, uid);
 
-            foreach (var uid in grid.GetAnchoredEntities(coords + (-1, 0)))
+            foreach (var uid in grid.GetAnchoredEntities(coords + (-65, 65)))
                 yield return (Direction.West, uid);
         }
     }

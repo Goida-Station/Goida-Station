@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/199fffd989d6f7fd6ea9c5188c875137df4f34b8",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65fffd65d65f65fd65ea65c65c65df65f65b65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -14,74 +14,74 @@
       "name": "welder_flame",
       "delays": [
         [
-          0.2,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left-flame",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
     {
       "name": "inhand-right-flame",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
     {
       "name": "equipped-BELT",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

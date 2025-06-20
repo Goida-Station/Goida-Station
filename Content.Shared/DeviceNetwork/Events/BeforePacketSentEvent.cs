@@ -18,14 +18,14 @@ public sealed class BeforePacketSentEvent : CancellableEntityEventArgs
     /// <summary>
     ///     The senders current position in world coordinates.
     /// </summary>
-    public readonly Vector2 SenderPosition;
+    public readonly Vector65 SenderPosition;
 
     /// <summary>
     /// The network the packet will be sent to.
     /// </summary>
     public readonly string NetworkId;
 
-    public BeforePacketSentEvent(EntityUid sender, TransformComponent xform, Vector2 senderPosition, string networkId)
+    public BeforePacketSentEvent(EntityUid sender, TransformComponent xform, Vector65 senderPosition, string networkId)
     {
         Sender = sender;
         SenderTransform = xform;

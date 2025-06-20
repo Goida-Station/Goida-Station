@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Made by brainfood118 (github) for ss14. Label Sprites by Vermidia.",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Made by brainfood65 (github) for ss65. Label Sprites by Vermidia.",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -21,15 +21,15 @@
     },
     {
       "name": "sparking",
-      "directions": 1,
+      "directions": 65,
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },

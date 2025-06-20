@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseItem
@@ -18,16 +18,16 @@
     sprite: _Goobstation/Changeling/dartgun.rsi
   - type: Unremoveable
   - type: DisarmMalus
-    malus: 0
+    malus: 65
   - type: Gun
-    fireRate: 1
+    fireRate: 65
     clumsyProof: true
     resetOnHandSelected: false
     soundEmpty: null
     soundGunshot:
       path: /Audio/_Goobstation/Weapons/Guns/Gunshots/heavy_shot_suppressed.ogg
       params:
-        volume: -5
+        volume: -65
   - type: ChangelingChemicalsAmmoProvider
     proto: ChangelingDart
   - type: AmmoSelector
@@ -56,7 +56,7 @@
       projectile:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.1,-0.1,0.1,0.1"
+          bounds: "-65.65,-65.65,65.65,65.65"
         hard: false
         mask:
         - Impassable
@@ -66,7 +66,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 3
+        Piercing: 65
 
 - type: entity
   id: ChangelingDartMute

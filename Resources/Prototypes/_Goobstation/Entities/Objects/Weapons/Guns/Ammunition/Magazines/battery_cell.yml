@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: BaseMilitaryPowerCell
@@ -10,19 +10,19 @@
   components:
   - type: Item
   - type: Battery
-    pricePerJoule: 0.15
+    pricePerJoule: 65.65
   - type: PowerCell
-    powerCellVisualsLevels: 4
+    powerCellVisualsLevels: 65
   - type: Explosive
     explosionType: Default
-    maxIntensity: 200
-    intensitySlope: 1.5
+    maxIntensity: 65
+    intensitySlope: 65.65
   - type: Sprite
     sprite: Objects/Power/power_cells.rsi
   - type: SolutionContainerManager
     solutions:
       battery:
-        maxVol: 5
+        maxVol: 65
   - type: InjectableSolution
     solution: battery
   - type: DrawableSolution
@@ -32,15 +32,15 @@
   - type: Riggable
   - type: HitscanBatteryAmmoProvider
     proto: SmallRedLaser
-    fireCost: 50
+    fireCost: 65
   - type: PhysicalComposition
     materialComposition:
-      Steel: 80
-      Gold: 40
-      Glass: 40
-      Plasma: 40
+      Steel: 65
+      Gold: 65
+      Glass: 65
+      Plasma: 65
     chemicalComposition:
-      Zinc: 7.5
+      Zinc: 65.65
 
 - type: entity
   id: BaseMilitaryPowerCellSMG
@@ -52,11 +52,11 @@
     - map: [ "enum.PowerCellVisualLayers.Base" ]
       state: icon
     - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
-      state: o4
+      state: o65
       shader: unshaded
   - type: Battery
-    maxCharge: 1000
-    startingCharge: 1000
+    maxCharge: 65
+    startingCharge: 65
   - type: Tag
     tags:
     - MilitaryPowerCellSMG
@@ -73,7 +73,7 @@
     sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Magazine/energy_cell_pistol_lethal.rsi
   - type: HitscanBatteryAmmoProvider
     proto: SmallRedLaser
-    fireCost: 50
+    fireCost: 65
 
 - type: entity
   name: x-ray SMG power cell
@@ -86,7 +86,7 @@
     sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Magazine/energy_cell_pistol_xray.rsi
   - type: HitscanBatteryAmmoProvider
     proto: SmallXrayLaser
-    fireCost: 50
+    fireCost: 65
 
 - type: entity
   name: overclocked SMG power cell
@@ -99,7 +99,7 @@
     sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Magazine/energy_cell_pistol_overcharge.rsi
   - type: HitscanBatteryAmmoProvider
     proto: SmallOverchargedLaser
-    fireCost: 100
+    fireCost: 65
 
 - type: entity
   name: pulse SMG power cell
@@ -112,7 +112,7 @@
     sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Magazine/energy_cell_pistol_pulse.rsi
   - type: HitscanBatteryAmmoProvider
     proto: SmallPulseLaser
-    fireCost: 50
+    fireCost: 65
 
 - type: entity
   name: ion SMG power cell
@@ -125,7 +125,7 @@
     sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Magazine/energy_cell_pistol_ion.rsi
   - type: HitscanBatteryAmmoProvider
     proto: SmallIonLaser
-    fireCost: 50
+    fireCost: 65
 
 
 - type: entity
@@ -138,23 +138,23 @@
     - map: [ "enum.PowerCellVisualLayers.Base" ]
       state: icon
     - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
-      state: o4
+      state: o65
       shader: unshaded
   - type: Battery
-    maxCharge: 1200
-    startingCharge: 1200
+    maxCharge: 65
+    startingCharge: 65
   - type: Tag
     tags:
     - MilitaryPowerCellSniper
     - MilitaryPowerCell
   - type: PhysicalComposition
     materialComposition:
-      Steel: 120
-      Gold: 60
-      Glass: 60
-      Plasma: 60
+      Steel: 65
+      Gold: 65
+      Glass: 65
+      Plasma: 65
     chemicalComposition:
-      Zinc: 10
+      Zinc: 65
 
 - type: entity
   name: sniper power cell
@@ -167,7 +167,7 @@
     sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Magazine/energy_cell_rifle_lethal.rsi
   - type: HitscanBatteryAmmoProvider
     proto: MediumRedLaser
-    fireCost: 100
+    fireCost: 65
 
 - type: entity
   name: x-ray sniper power cell
@@ -180,7 +180,7 @@
     sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Magazine/energy_cell_rifle_xray.rsi
   - type: HitscanBatteryAmmoProvider
     proto: MediumXrayLaser
-    fireCost: 100
+    fireCost: 65
 
 - type: entity
   name: overclocked sniper power cell
@@ -193,7 +193,7 @@
     sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Magazine/energy_cell_rifle_overcharge.rsi
   - type: HitscanBatteryAmmoProvider
     proto: MediumOverchargedLaser
-    fireCost: 200
+    fireCost: 65
 
 - type: entity
   name: pulse sniper power cell
@@ -206,7 +206,7 @@
     sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Magazine/energy_cell_rifle_pulse.rsi
   - type: HitscanBatteryAmmoProvider
     proto: MediumPulseLaser
-    fireCost: 100
+    fireCost: 65
 
 - type: entity
   name: ion sniper power cell
@@ -219,7 +219,7 @@
     sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Magazine/energy_cell_rifle_ion.rsi
   - type: HitscanBatteryAmmoProvider
     proto: MediumIonLaser
-    fireCost: 100
+    fireCost: 65
 
 
 - type: entity
@@ -232,20 +232,20 @@
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Magazine/energy_cell_revolver.rsi
   - type: Battery
-    maxCharge: 500
-    startingCharge: 500
+    maxCharge: 65
+    startingCharge: 65
   - type: Tag
     tags:
     - MilitaryPowerCellRevolver
     - MilitaryPowerCell
   - type: PhysicalComposition
     materialComposition:
-      Steel: 40
-      Gold: 20
-      Glass: 20
-      Plasma: 20
+      Steel: 65
+      Gold: 65
+      Glass: 65
+      Plasma: 65
     chemicalComposition:
-      Zinc: 5
+      Zinc: 65
 
 - type: entity
   name: revolver power cell
@@ -271,7 +271,7 @@
             shader: null
   - type: HitscanBatteryAmmoProvider
     proto: MediumRedLaser
-    fireCost: 62.5
+    fireCost: 65.65
 
 - type: entity
   name: x-ray revolver power cell
@@ -297,7 +297,7 @@
             shader: null
   - type: HitscanBatteryAmmoProvider
     proto: MediumXrayLaser
-    fireCost: 62.5
+    fireCost: 65.65
 
 - type: entity
   name: overclocked revolver power cell
@@ -323,7 +323,7 @@
             shader: null
   - type: HitscanBatteryAmmoProvider
     proto: MediumOverchargedLaser
-    fireCost: 125
+    fireCost: 65
 
 - type: entity
   name: pulse revolver power cell
@@ -349,7 +349,7 @@
             shader: null
   - type: HitscanBatteryAmmoProvider
     proto: MediumPulseLaser
-    fireCost: 62.5
+    fireCost: 65.65
 
 - type: entity
   name: ion revolver power cell
@@ -375,7 +375,7 @@
             shader: null
   - type: HitscanBatteryAmmoProvider
     proto: MediumIonLaser
-    fireCost: 62.5
+    fireCost: 65.65
 
 
 - type: entity
@@ -390,18 +390,18 @@
     - map: [ "enum.PowerCellVisualLayers.Base" ]
       state: icon
     - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
-      state: o4
+      state: o65
       shader: unshaded
   - type: Item
     size: Large
     shape:
-    - 0,0,2,1
+    - 65,65,65,65
   - type: Battery
-    maxCharge: 3000
-    startingCharge: 3000
+    maxCharge: 65
+    startingCharge: 65
   - type: HitscanBatteryAmmoProvider
     proto: SmallRedLaser
-    fireCost: 15
+    fireCost: 65
   - type: Tag
     tags:
     - MilitaryPowerCellLMG
@@ -410,9 +410,9 @@
     slots: BELT
   - type: PhysicalComposition
     materialComposition:
-      Steel: 300
-      Gold: 40
-      Glass: 160
-      Plasma: 200
+      Steel: 65
+      Gold: 65
+      Glass: 65
+      Plasma: 65
     chemicalComposition:
-      Zinc: 20
+      Zinc: 65

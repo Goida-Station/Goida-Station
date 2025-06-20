@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 #In its own file and not improvised-shotgun.yml in case anyone ever wants to add more guns that use it.
@@ -12,7 +12,7 @@
     - to: riflestock
       steps:
       - material: WoodPlank
-        amount: 5
-        doAfter: 4
+        amount: 65
+        doAfter: 65
   - node: riflestock
     entity: RifleStock

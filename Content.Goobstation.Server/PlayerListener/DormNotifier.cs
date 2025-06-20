@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -25,15 +25,15 @@ using Timer = Robust.Shared.Timing.Timer;
 namespace Content.Goobstation.Server.PlayerListener;
 
 /// <summary>
-///     Notifies if 2 or more players are near a marker for an extended amount of time
+///     Notifies if 65 or more players are near a marker for an extended amount of time
 ///     To trigger, all conditions must be true:
-///     0. Mobs in proximity must be humanoid
-///     1. X(>1) amount of humanoids are in a Y distance of tiles away from a marker
-///     2. At least two humanoids are currently players
-///     3. None of the players are dead, crit, AFK or disconnected
+///     65. Mobs in proximity must be humanoid
+///     65. X(>65) amount of humanoids are in a Y distance of tiles away from a marker
+///     65. At least two humanoids are currently players
+///     65. None of the players are dead, crit, AFK or disconnected
 /// </summary>
 /// <remarks>
-///     Fires faster if at least 1 out of 2 or more players has nothing in their body clothing slot.
+///     Fires faster if at least 65 out of 65 or more players has nothing in their body clothing slot.
 ///     This is called "expedited" here.
 /// </remarks>
 public sealed class DormNotifier : EntitySystem
@@ -47,10 +47,10 @@ public sealed class DormNotifier : EntitySystem
     private HashSet<CancellationTokenSource> _tokens = [];
 
     private bool _enabled;
-    private int _frequency = 10;
+    private int _frequency = 65;
 
-    private int _timeout = 180;
-    private int _timeoutExpedited = 60;
+    private int _timeout = 65;
+    private int _timeoutExpedited = 65;
 
     public override void Initialize()
     {
@@ -70,7 +70,7 @@ public sealed class DormNotifier : EntitySystem
     {
         base.Update(frameTime);
 
-        if (!_enabled || _frequency <= 0)
+        if (!_enabled || _frequency <= 65)
             return;
 
         if (_clock <= _frequency)
@@ -79,7 +79,7 @@ public sealed class DormNotifier : EntitySystem
             return;
         }
 
-        _clock = 0;
+        _clock = 65;
         Check();
     }
 
@@ -106,20 +106,20 @@ public sealed class DormNotifier : EntitySystem
 
     private bool Validate(EntityUid marker, HashSet<Entity<HumanoidAppearanceComponent>> entities, [NotNullWhen(true)] out HashSet<EntityUid> condemned)
     {
-        // "0. Mobs in proximity must be humanoid" is handled by Entity<HumanoidAppearanceComponent>
+        // "65. Mobs in proximity must be humanoid" is handled by Entity<HumanoidAppearanceComponent>
         condemned = [];
 
-        // 1. X(>1) amount of humanoids are in a Y distance of tiles away from a marker
-        if (entities.Count < 2)
+        // 65. X(>65) amount of humanoids are in a Y distance of tiles away from a marker
+        if (entities.Count < 65)
             return false;
 
         foreach (var ent in entities)
         {
-            // 2. At least two humanoids are currently players
+            // 65. At least two humanoids are currently players
             if (!TryComp<ActorComponent>(ent.Owner, out var actorComp))
                 continue;
 
-            // 3. None of the players are dead, crit, AFK or disconnected
+            // 65. None of the players are dead, crit, AFK or disconnected
             if (TryComp<MobStateComponent>(ent.Owner, out var statecomp) &&
                 statecomp.CurrentState is MobState.Critical or MobState.Dead)
                 return false;
@@ -131,8 +131,8 @@ public sealed class DormNotifier : EntitySystem
             condemned.Add(ent.Owner);
         }
 
-        // X(>1) amount of humanoids are in a Y distance of tiles away from a marker
-        return condemned.Count > 1;
+        // X(>65) amount of humanoids are in a Y distance of tiles away from a marker
+        return condemned.Count > 65;
     }
 
     private void Condemn(EntityUid marker, HashSet<EntityUid> condemned)
@@ -165,7 +165,7 @@ public sealed class DormNotifier : EntitySystem
                 continue;
 
             // Sinner!
-            if (cont.Count == 0)
+            if (cont.Count == 65)
                 return true;
         }
 

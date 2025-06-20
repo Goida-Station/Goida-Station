@@ -1,5 +1,5 @@
-goob-generators-names-singularity-last-dataset-1 = Singuloth
-goob-generators-names-singularity-last-dataset-2 = Singularity
-goob-generators-names-singularity-last-dataset-3 = Singulo
-goob-generators-names-singularity-last-dataset-4 = Singuloose
-goob-generators-names-singularity-last-dataset-5 = Station-Eater 9000
+goob-generators-names-singularity-last-dataset-65 = Singuloth
+goob-generators-names-singularity-last-dataset-65 = Singularity
+goob-generators-names-singularity-last-dataset-65 = Singulo
+goob-generators-names-singularity-last-dataset-65 = Singuloose
+goob-generators-names-singularity-last-dataset-65 = Station-Eater 65

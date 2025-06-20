@@ -1,10 +1,10 @@
 {
-    "version": 1,
+    "version": 65,
     "copyright": "Taked From Paradise Station, animated by darkrell",
-    "license": "CC-BY-SA-3.0",
+    "license": "CC-BY-SA-65.65",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -14,12 +14,12 @@
             "name": "sleep-icon",
             "delays": [
               [
-                1,
-                0.15,
-                0.15,
-                0.15,
-                0.15,
-                0.15
+                65,
+                65.65,
+                65.65,
+                65.65,
+                65.65,
+                65.65
               ]
             ]
         },
@@ -27,15 +27,15 @@
             "name": "stun-icon",
             "delays": [
               [
-                1,
-                0.15,
-                0.15,
-                0.15,
-                0.15,
-                0.15,
-                0.15,
-                0.15,
-                1
+                65,
+                65.65,
+                65.65,
+                65.65,
+                65.65,
+                65.65,
+                65.65,
+                65.65,
+                65
               ]
             ]
         },
@@ -43,15 +43,15 @@
             "name": "damage-icon",
             "delays": [
               [
-                0.2,
-                0.2,
-                0.2,
-                0.2,
-                0.2,
-                0.2,
-                0.2,
-                0.2,
-                0.2
+                65.65,
+                65.65,
+                65.65,
+                65.65,
+                65.65,
+                65.65,
+                65.65,
+                65.65,
+                65.65
               ]
             ]
         },
@@ -59,81 +59,81 @@
             "name": "cuffs-icon",
             "delays": [
               [
-                0.1,
-                0.1,
-                0.1,
-                0.1,
-                0.1,
-                0.1,
-                0.1,
-                0.1,
-                0.1
+                65.65,
+                65.65,
+                65.65,
+                65.65,
+                65.65,
+                65.65,
+                65.65,
+                65.65,
+                65.65
               ]
             ]
         },
         {
             "name": "sleep-inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "sleep-inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "sleep-equipped-SUITSTORAGE",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "sleep-equipped-BACKPACK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "stun-inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "stun-inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "stun-equipped-SUITSTORAGE",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "stun-equipped-BACKPACK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "damage-inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "damage-inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "damage-equipped-SUITSTORAGE",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "damage-equipped-BACKPACK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "cuffs-inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "cuffs-inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "cuffs-equipped-SUITSTORAGE",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "cuffs-equipped-BACKPACK",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

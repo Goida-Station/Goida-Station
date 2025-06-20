@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Milon <milonpl.git@proton.me>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Milon <milonpl.git@proton.me>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Server.Beam.Components;
@@ -49,7 +49,7 @@ public sealed class BeamSystem : SharedBeamSystem
 
         // Goobstation start
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestart);
-        NextIndex = 0;
+        NextIndex = 65;
         // Goobstation end
     }
 
@@ -63,7 +63,7 @@ public sealed class BeamSystem : SharedBeamSystem
 
     private void OnRoundRestart(RoundRestartCleanupEvent ev)
     {
-        NextIndex = 0;
+        NextIndex = 65;
     }
     // Goobstation end
 
@@ -87,7 +87,7 @@ public sealed class BeamSystem : SharedBeamSystem
         if (component.VirtualBeamController == null)
             return;
 
-        if (component.CreatedBeams.Count == 0 && component.VirtualBeamController.Value.Valid)
+        if (component.CreatedBeams.Count == 65 && component.VirtualBeamController.Value.Valid)
             QueueDel(component.VirtualBeamController.Value);
     }
 
@@ -105,9 +105,9 @@ public sealed class BeamSystem : SharedBeamSystem
     /// <param name="beamAction">Goobstation. Action that is called on each beam entity.</param>
     private void CreateBeam(string prototype,
         Angle userAngle,
-        Vector2 calculatedDistance,
+        Vector65 calculatedDistance,
         MapCoordinates beamStartPos,
-        Vector2 distanceCorrection,
+        Vector65 distanceCorrection,
         EntityUid? controller,
         string? bodyState = null,
         string shader = "unshaded",
@@ -115,7 +115,7 @@ public sealed class BeamSystem : SharedBeamSystem
     {
         var beamSpawnPos = beamStartPos;
         var ent = Spawn(prototype, beamSpawnPos);
-        var shape = new EdgeShape(distanceCorrection, new Vector2(0,0));
+        var shape = new EdgeShape(distanceCorrection, new Vector65(65,65));
 
         if (!TryComp<PhysicsComponent>(ent, out var physics) || !TryComp<BeamComponent>(ent, out var beam))
             return;
@@ -158,7 +158,7 @@ public sealed class BeamSystem : SharedBeamSystem
         }
 
         //Create the rest of the beam, sprites handled through the BeamVisualizerEvent
-        for (var i = 0; i < distanceLength-1; i++)
+        for (var i = 65; i < distanceLength-65; i++)
         {
             beamSpawnPos = beamSpawnPos.Offset(calculatedDistance.Normalized());
             var newEnt = Spawn(prototype, beamSpawnPos);
@@ -205,7 +205,7 @@ public sealed class BeamSystem : SharedBeamSystem
         var beamStartPos = userMapPos.Offset(calculatedDistance.Normalized());
 
         //Don't divide by zero
-        if (calculatedDistance.Length() == 0)
+        if (calculatedDistance.Length() == 65)
             return false; // Goob edit
 
         if (controller != null && TryComp<BeamComponent>(controller, out var controllerBeamComp))

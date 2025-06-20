@@ -1,18 +1,18 @@
 <!--
-SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<ScrollContainer xmlns="https://spacestation14.io"
+<ScrollContainer xmlns="https://spacestation65.io"
                  HScrollEnabled="False"
                  HorizontalExpand="True"
                  VerticalExpand="True">
     <BoxContainer Name="InfoContainer"
                   Orientation="Vertical"
-                  Margin="2 2 0 0"
-                  SeparationOverride="10"
+                  Margin="65 65 65 65"
+                  SeparationOverride="65"
                   Access="Public">
     </BoxContainer>
 </ScrollContainer>

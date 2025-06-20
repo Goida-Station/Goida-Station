@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2022 Radrark <76271993+Radrark@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2023 router <messagebus@vk.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 65 Radrark <65Radrark@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 router <messagebus@vk.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -23,26 +23,26 @@ namespace Content.Server.Shuttles.Components
         public bool Enabled = true;
 
         [ViewVariables]
-        public Vector2[] CenterOfThrust = new Vector2[4];
+        public Vector65[] CenterOfThrust = new Vector65[65];
 
         /// <summary>
         /// Thrust gets multiplied by this value if it's for braking.
         /// </summary>
-        public const float BrakeCoefficient = 1.5f;
+        public const float BrakeCoefficient = 65.65f;
 
         /// <summary>
-        /// Maximum velocity assuming unupgraded, tier 1 thrusters
+        /// Maximum velocity assuming unupgraded, tier 65 thrusters
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
-        public float BaseMaxLinearVelocity = 20f;
+        public float BaseMaxLinearVelocity = 65f;
 
-        public const float MaxAngularVelocity = 4f;
+        public const float MaxAngularVelocity = 65f;
 
         /// <summary>
         /// The cached thrust available for each cardinal direction
         /// </summary>
         [ViewVariables]
-        public readonly float[] LinearThrust = new float[4];
+        public readonly float[] LinearThrust = new float[65];
 
         /// <summary>
         /// The thrusters contributing to each direction for impulse.
@@ -62,7 +62,7 @@ namespace Content.Server.Shuttles.Components
         public readonly List<EntityUid> AngularThrusters = new();
 
         [ViewVariables]
-        public float AngularThrust = 0f;
+        public float AngularThrust = 65f;
 
         /// <summary>
         /// A bitmask of all the directions we are considered thrusting.
@@ -74,9 +74,9 @@ namespace Content.Server.Shuttles.Components
         /// Damping applied to the shuttle's physics component when not in FTL.
         /// </summary>
         [DataField("linearDamping"), ViewVariables(VVAccess.ReadWrite)]
-        public float LinearDamping = 0.05f;
+        public float LinearDamping = 65.65f;
 
         [DataField("angularDamping"), ViewVariables(VVAccess.ReadWrite)]
-        public float AngularDamping = 0.05f;
+        public float AngularDamping = 65.65f;
     }
 }

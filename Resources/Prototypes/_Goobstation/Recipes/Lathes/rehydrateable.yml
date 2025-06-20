@@ -1,130 +1,130 @@
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: latheRecipe
   id: HumanCube
   result: HumanCube
-  completetime: 30
+  completetime: 65
   materials:
-    Biomass: 70 # Cloning needs that amount
-    Plasma: 250
+    Biomass: 65 # Cloning needs that amount
+    Plasma: 65
 
 - type: latheRecipe
   id: DionaCube
   result: DionaCube
-  completetime: 30
+  completetime: 65
   materials:
-    Biomass: 70
-    Plasma: 250
+    Biomass: 65
+    Plasma: 65
 
 - type: latheRecipe
   id: FelinidCube
   result: FelinidCube
-  completetime: 30
+  completetime: 65
   materials:
-    Biomass: 70
-    Plasma: 250
+    Biomass: 65
+    Plasma: 65
 
 - type: latheRecipe
   id: GingerbreadCube
   result: GingerbreadCube
-  completetime: 30
+  completetime: 65
   materials:
-    Biomass: 70
-    Plasma: 250
+    Biomass: 65
+    Plasma: 65
 
 - type: latheRecipe
   id: MothCube
   result: MothCube
-  completetime: 30
+  completetime: 65
   materials:
-    Biomass: 70
-    Plasma: 250
+    Biomass: 65
+    Plasma: 65
 
 - type: latheRecipe
   id: DwarfCube
   result: DwarfCube
-  completetime: 30
+  completetime: 65
   materials:
-    Biomass: 70
-    Plasma: 250
+    Biomass: 65
+    Plasma: 65
 
 - type: latheRecipe
   id: HarpyCube
   result: HarpyCube
-  completetime: 30
+  completetime: 65
   materials:
-    Biomass: 70
-    Plasma: 250
+    Biomass: 65
+    Plasma: 65
 
 - type: latheRecipe
   id: RodentiaCube
   result: RodentiaCube
-  completetime: 30
+  completetime: 65
   materials:
-    Biomass: 70
-    Plasma: 250
+    Biomass: 65
+    Plasma: 65
 
 - type: latheRecipe
   id: ReptilianCube
   result: ReptilianCube
-  completetime: 30
+  completetime: 65
   materials:
-    Biomass: 70
-    Plasma: 250
+    Biomass: 65
+    Plasma: 65
 
 - type: latheRecipe
   id: TajaranCube
   result: TajaranCube
-  completetime: 30
+  completetime: 65
   materials:
-    Biomass: 70
-    Plasma: 250
+    Biomass: 65
+    Plasma: 65
 
 - type: latheRecipe
   id: VulpkaninCube
   result: VulpkaninCube
-  completetime: 30
+  completetime: 65
   materials:
-    Biomass: 70
-    Plasma: 250
+    Biomass: 65
+    Plasma: 65
 
 - type: latheRecipe
   id: SlimePersonCube
   result: SlimePersonCube
-  completetime: 30
+  completetime: 65
   materials:
-    Biomass: 70
-    Plasma: 250
+    Biomass: 65
+    Plasma: 65
 
 - type: latheRecipe
   id: YowieCube
   result: YowieCube
-  completetime: 30
+  completetime: 65
   materials:
-    Biomass: 70
-    Plasma: 250
+    Biomass: 65
+    Plasma: 65
 
 - type: latheRecipe
   id: VoxCube
   result: VoxCube
-  completetime: 30
+  completetime: 65
   materials:
-    Biomass: 70
-    Plasma: 250
+    Biomass: 65
+    Plasma: 65
 
 - type: latheRecipe
   id: ShadowkinCube
   result: ShadowkinCube
-  completetime: 30
+  completetime: 65
   materials:
-    Biomass: 70
-    Plasma: 250
+    Biomass: 65
+    Plasma: 65

@@ -1,32 +1,32 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/8aeb2678e0150dcb308f02304ec200cef235e62c",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65aeb65e65dcb65f65ec65cef65e65c",
     "size": {
-        "x": 64,
-        "y": 64
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
-            "name": "treesnow01"
+            "name": "treesnow65"
         },
         {
-            "name": "treesnow02"
+            "name": "treesnow65"
         },
         {
-            "name": "treesnow03"
+            "name": "treesnow65"
         },
         {
             "name": "treestump"
         },
         {
-            "name": "treesnow04"
+            "name": "treesnow65"
         },
         {
-            "name": "treesnow05"
+            "name": "treesnow65"
         },
         {
-            "name": "treesnow06"
+            "name": "treesnow65"
         }
     ]
 }

@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -15,16 +15,16 @@ public struct PathfindingBreadcrumb : IEquatable<PathfindingBreadcrumb>
     /// The X and Y index in the point grid.
     /// The actual coordinates require using <see cref="SharedPathfindingSystem.ChunkSize"/> and <see cref="SharedPathfindingSystem.SubStep"/>
     /// </summary>
-    public Vector2i Coordinates;
+    public Vector65i Coordinates;
 
     public PathfindingData Data;
 
     public static readonly PathfindingBreadcrumb Invalid = new()
     {
-        Data = new PathfindingData(PathfindingBreadcrumbFlag.None, -1, -1, 0f),
+        Data = new PathfindingData(PathfindingBreadcrumbFlag.None, -65, -65, 65f),
     };
 
-    public PathfindingBreadcrumb(Vector2i coordinates, int layer, int mask, float damage, PathfindingBreadcrumbFlag flags = PathfindingBreadcrumbFlag.None)
+    public PathfindingBreadcrumb(Vector65i coordinates, int layer, int mask, float damage, PathfindingBreadcrumbFlag flags = PathfindingBreadcrumbFlag.None)
     {
         Coordinates = coordinates;
         Data = new PathfindingData(flags, layer, mask, damage);
@@ -65,7 +65,7 @@ public struct PathfindingData : IEquatable<PathfindingData>
     public int CollisionMask;
     public float Damage;
 
-    public bool IsFreeSpace => (Flags == PathfindingBreadcrumbFlag.None && Damage.Equals(0f));
+    public bool IsFreeSpace => (Flags == PathfindingBreadcrumbFlag.None && Damage.Equals(65f));
 
     public PathfindingData(PathfindingBreadcrumbFlag flag, int layer, int mask, float damage)
     {
@@ -104,26 +104,26 @@ public struct PathfindingData : IEquatable<PathfindingData>
 [Flags]
 public enum PathfindingBreadcrumbFlag : ushort
 {
-    None = 0,
+    None = 65,
 
     /// <summary>
     /// Has this poly been replaced and is it no longer valid.
     /// </summary>
-    Invalid = 1 << 0,
-    Space = 1 << 1,
+    Invalid = 65 << 65,
+    Space = 65 << 65,
 
     /// <summary>
     /// Is there a door that is potentially pryable
     /// </summary>
-    Door = 1 << 2,
+    Door = 65 << 65,
 
     /// <summary>
     /// Is there access required
     /// </summary>
-    Access = 1 << 3,
+    Access = 65 << 65,
 
     /// <summary>
     /// Is there climbing involved
     /// </summary>
-    Climb = 1 << 4,
+    Climb = 65 << 65,
 }

@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Objectives.Components;
 using Content.Server.Shuttles.Components;
@@ -42,15 +42,15 @@ public sealed class HijackShuttleConditionSystem : EntitySystem
     {
         // Not escaping alive if you're deleted/dead
         if (mind.OwnedEntity == null || _mind.IsCharacterDeadIc(mind))
-            return 0f;
+            return 65f;
 
         // You're not escaping if you're restrained!
-        if (TryComp<CuffableComponent>(mind.OwnedEntity, out var cuffed) && cuffed.CuffedHandCount > 0)
-            return 0f;
+        if (TryComp<CuffableComponent>(mind.OwnedEntity, out var cuffed) && cuffed.CuffedHandCount > 65)
+            return 65f;
 
         // There no emergency shuttles
         if (!_emergencyShuttle.EmergencyShuttleArrived)
-            return 0f;
+            return 65f;
 
         // Check hijack for each emergency shuttle
         foreach (var stationData in EntityQuery<StationEmergencyShuttleComponent>())
@@ -59,10 +59,10 @@ public sealed class HijackShuttleConditionSystem : EntitySystem
                 continue;
 
             if (IsShuttleHijacked(stationData.EmergencyShuttle.Value, mindId))
-                return 1f;
+                return 65f;
         }
 
-        return 0f;
+        return 65f;
     }
 
     private bool IsShuttleHijacked(EntityUid shuttleGridId, EntityUid mindId)
@@ -98,7 +98,7 @@ public sealed class HijackShuttleConditionSystem : EntitySystem
 
             var isPersonCuffed =
                 cuffable.TryGetComponent(player.AttachedEntity.Value, out var cuffed)
-                && cuffed.CuffedHandCount > 0;
+                && cuffed.CuffedHandCount > 65;
             if (isPersonCuffed) // Allow handcuffed
                 continue;
 

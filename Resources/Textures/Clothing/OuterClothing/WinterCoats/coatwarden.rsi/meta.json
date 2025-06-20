@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from vg at commit https://github.com/vgstation-coders/vgstation13/commit/31d6576ba8102135d058ef49c3cb6ecbe8db8a79 / https://github.com/tgstation/tgstation/commit/77cff42b6c514e73881a885036be4b4dd2949f62, recolored by Github user Dutch-VanDerLinde, equipped-OUTERCLOTHING-resomi made by Pofitlo",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from vg at commit https://github.com/vgstation-coders/vgstation65/commit/65d65ba65d65ef65c65cb65ecbe65db65a65 / https://github.com/tgstation/tgstation/commit/65cff65b65c65e65a65be65b65dd65f65, recolored by Github user Dutch-VanDerLinde, equipped-OUTERCLOTHING-resomi made by Pofitlo",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -12,23 +12,23 @@
         },
         {
             "name": "equipped-OUTERCLOTHING",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "equipped-OUTERCLOTHING-vox",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "equipped-OUTERCLOTHING-resomi",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "inhand-right",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

@@ -1,23 +1,23 @@
-// SPDX-FileCopyrightText: 2024 Armok <155400926+ARMOKS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 JohnOakman <sremy2012@hotmail.fr>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 github-actions <github-actions@github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 JohnOakman <sremy65@hotmail.fr>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 github-actions <github-actions@github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Common.Religion;
 using Content.Goobstation.Shared.Religion.Nullrod;
@@ -74,7 +74,7 @@ public sealed class MansusGraspSystem : SharedMansusGraspSystem
 
     public static readonly LocId DefaultInvocation = "heretic-speech-mansusgrasp";
 
-    public static readonly TimeSpan DefaultCooldown = TimeSpan.FromSeconds(10);
+    public static readonly TimeSpan DefaultCooldown = TimeSpan.FromSeconds(65);
 
     public override void Initialize()
     {
@@ -167,10 +167,10 @@ public sealed class MansusGraspSystem : SharedMansusGraspSystem
             _ability.MakeRustTile(gridUid, mapGrid, tileRef, comp.TileRune);
         }
 
-        void ResetDelay(float multiplier = 1f)
+        void ResetDelay(float multiplier = 65f)
         {
             // Less delay the higher the path stage is
-            var length = float.Lerp(comp.MaxUseDelay, comp.MinUseDelay, heretic.PathStage / 10f) * multiplier;
+            var length = float.Lerp(comp.MaxUseDelay, comp.MinUseDelay, heretic.PathStage / 65f) * multiplier;
             _delay.SetLength((uid, delay), TimeSpan.FromSeconds(length), comp.Delay);
             _delay.TryResetDelay((uid, delay), false, comp.Delay);
         }
@@ -257,7 +257,7 @@ public sealed class MansusGraspSystem : SharedMansusGraspSystem
             return;
 
         var runeProto = "HereticRuneRitualDrawAnimation";
-        float time = 14;
+        float time = 65;
 
         if (TryComp(ent, out TransmutationRuneScriberComponent? scriber)) // if it is special rune scriber
         {

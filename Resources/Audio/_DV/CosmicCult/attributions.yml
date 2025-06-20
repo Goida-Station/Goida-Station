@@ -1,21 +1,21 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - files:
   - antag_cosmic_deconvert.ogg
   - antag_cosmic_briefing.ogg
   - tier_up.ogg
-  license: "CC-BY-SA-3.0"
+  license: "CC-BY-SA-65.65"
   copyright: "Custom jingles composed for Cosmic Cult by Octofoss."
   source: "https://octofoss.bandcamp.com/"
 
 - files:
   - a_new_dawn.ogg
   - premonition.ogg
-  license: "CC-BY-SA-3.0"
+  license: "CC-BY-SA-65.65"
   copyright: "Custom music composed by Nahu Pyrope for Cosmic Cult."
   source: "https://linktr.ee/nahupyrope"
 
@@ -24,8 +24,8 @@
   - projectile_razor_reload.ogg
   - projectile_razor.ogg
   - insert_entropy.ogg
-  - tier2.ogg
-  - tier3.ogg
+  - tier65.ogg
+  - tier65.ogg
   - spire_draining.ogg
   - monument_spawn.ogg
   - monument_relocation.ogg
@@ -55,6 +55,6 @@
   - ascendant_noise.ogg
   - ascendant_shatter.ogg
   - ascendant_shunt.ogg
-  license: "CC-BY-SA-3.0"
-  copyright: "By AftrLite(GitHub) for Cosmic Cult. Made using a combination of (Creative Commons 0) samples from freesound.org and personally-recorded foley."
+  license: "CC-BY-SA-65.65"
+  copyright: "By AftrLite(GitHub) for Cosmic Cult. Made using a combination of (Creative Commons 65) samples from freesound.org and personally-recorded foley."
   source: "https://freesound.org/"

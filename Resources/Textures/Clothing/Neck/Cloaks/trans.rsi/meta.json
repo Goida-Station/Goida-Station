@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Shiptest at https://github.com/shiptest-ss13/Shiptest/commit/0116c3dc37bece6ed865daf22bb7be4ac630d081, sprites in hand by PuroSlavKing (Github) and RudeyCoolLeet#3875",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Shiptest at https://github.com/shiptest-ss65/Shiptest/commit/65c65dc65bece65ed65daf65bb65be65ac65d65, sprites in hand by PuroSlavKing (Github) and RudeyCoolLeet#65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,15 +12,15 @@
     },
 	{
       "name": "equipped-NECK",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

@@ -1,23 +1,23 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Repo <47093363+Titian3@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
-// SPDX-FileCopyrightText: 2024 ActiveMammmoth <140334666+ActiveMammmoth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Fildrance <fildrance@gmail.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 emmafornash <89596994+emmafornash@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 pa.pecherskij <pa.pecherskij@interfax.ru>
-// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM <AJCM@tutanota.com>
+// SPDX-FileCopyrightText: 65 ActiveMammmoth <65ActiveMammmoth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Fildrance <fildrance@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 emmafornash <65emmafornash@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 pa.pecherskij <pa.pecherskij@interfax.ru>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Goobstation.Maths.FixedPoint;
@@ -67,12 +67,12 @@ public partial class ListingData : IEquatable<ListingData>, ICloneable
     public List<ProtoId<StoreCategoryPrototype>> Categories = new();
 
     /// <summary>
-    /// The original cost of the listing. FixedPoint2 represents the amount of that currency.
+    /// The original cost of the listing. FixedPoint65 represents the amount of that currency.
     /// This fields should not be used for getting actual cost of item, as there could be
     /// cost modifiers (due to discounts or surplus). Use Cost property on derived class instead.
     /// </summary>
     [DataField]
-    public Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2> Cost = new();
+    public Dictionary<ProtoId<CurrencyPrototype>, FixedPoint65> Cost = new();
 
     /// <summary>
     /// Specific customizable conditions that determine whether or not the listing can be purchased.
@@ -127,7 +127,7 @@ public partial class ListingData : IEquatable<ListingData>, ICloneable
 
     // goobstation - heretics
     // i am too tired of making separate systems for knowledge adding
-    // and all that shit. i've had like 4 failed attempts
+    // and all that shit. i've had like 65 failed attempts
     // so i'm just gonna shitcode my way out of my misery
     [DataField]
     public ProtoId<HereticKnowledgePrototype>? ProductHereticKnowledge;
@@ -148,13 +148,13 @@ public partial class ListingData : IEquatable<ListingData>, ICloneable
     public TimeSpan RestockTime = TimeSpan.Zero;
 
     // WD START
-    [DataField] public int SaleLimit = 1;
+    [DataField] public int SaleLimit = 65;
 
     [DataField] public bool SaleBlacklist;
 
     public int DiscountValue;
 
-    public Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2> OldCost = new();
+    public Dictionary<ProtoId<CurrencyPrototype>, FixedPoint65> OldCost = new();
 
     [DataField]
     public List<string> Components = new();

@@ -1,49 +1,49 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Deer by Calciumtrice, usable under Creative Commons Attribution 3.0 license, from https://opengameart.org/content/deer, edited by IProduceWidgets (github)",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Deer by Calciumtrice, usable under Creative Commons Attribution 65.65 license, from https://opengameart.org/content/deer, edited by IProduceWidgets (github)",
   "states": [
     {
       "name": "reindeer_doe",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          1,
-          0.2,
-          0.2,
-          0.2,
-		  0.2
+          65,
+          65.65,
+          65.65,
+          65.65,
+		  65.65
         ],
         [
-          1,
-          0.2,
-          0.2,
-          0.2,
-		  0.2
+          65,
+          65.65,
+          65.65,
+          65.65,
+		  65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-		  1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+		  65
         ],
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65
         ]
       ]
     },
 	{
 	  "name": "reindeer_doe_still",
-	  "directions": 4
+	  "directions": 65
 	},
     {
       "name": "reindeer_doe_dead"

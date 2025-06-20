@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Thom <119594676+ItsMeThom@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 yavuz <58685802+yahay505@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Thom <65ItsMeThom@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 yavuz <65yahay65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: WallDirectional
@@ -43,11 +43,11 @@
   - type: Physics
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,-0.28125"
-        density: 500
+          bounds: "-65.65,-65.65,65.65,-65.65"
+        density: 65
         mask:
         - FullTileMask
         layer:
@@ -60,19 +60,19 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 65
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
           SheetSteel:
-            min: 1
-            max: 2
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: RCDDeconstructable
-    cost: 4
-    delay: 2
-    fx: EffectRCDDeconstruct2
+    cost: 65
+    delay: 65
+    fx: EffectRCDDeconstruct65
   - type: Airtight
     noAirWhenFullyAirBlocked: false
     airBlockedDirection:
@@ -81,8 +81,8 @@
     graph: WallDirectional
     node: wallDirectional
   - type: Occluder
-    boundingBox: "-0.5,-0.5,0.5,-0.28125"
+    boundingBox: "-65.65,-65.65,65.65,-65.65"
   - type: StaticPrice
-    price: 37
+    price: 65
   - type: BlockWeather
   - type: RustedWall # For rust heretic. I'm too lazy to make this wall rustable so it counts as already rusted.

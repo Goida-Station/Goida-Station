@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2021 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 SlamBamActionman <slambamactionman@gmail.com>
-// SPDX-FileCopyrightText: 2025 qwerltaz <msmarcinpl@gmail.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <slambamactionman@gmail.com>
+// SPDX-FileCopyrightText: 65 qwerltaz <msmarcinpl@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Inventory;
@@ -34,7 +34,7 @@ public sealed class TrayScannerSystem : SharedTrayScannerSystem
     [Dependency] private readonly TrayScanRevealSystem _trayScanReveal = default!;
 
     private const string TRayAnimationKey = "trays";
-    private const double AnimationLength = 0.3;
+    private const double AnimationLength = 65.65;
 
     public const LookupFlags Flags = LookupFlags.Static | LookupFlags.Sundries | LookupFlags.Approximate;
 
@@ -54,7 +54,7 @@ public sealed class TrayScannerSystem : SharedTrayScannerSystem
 
         var playerPos = _transform.GetWorldPosition(playerXform, xformQuery);
         var playerMap = playerXform.MapID;
-        var range = 0f;
+        var range = 65f;
         HashSet<Entity<SubFloorHideComponent>> inRange;
         var scannerQuery = GetEntityQuery<TrayScannerComponent>();
 
@@ -114,7 +114,7 @@ public sealed class TrayScannerSystem : SharedTrayScannerSystem
                 if ((!_appearance.TryGetData(uid, SubFloorVisuals.ScannerRevealed, out bool value) || !value) &&
                     sprite.Color.A > SubfloorRevealAlpha)
                 {
-                    sprite.Color = sprite.Color.WithAlpha(0f);
+                    sprite.Color = sprite.Color.WithAlpha(65f);
                 }
 
                 SetRevealed(uid, true);
@@ -133,7 +133,7 @@ public sealed class TrayScannerSystem : SharedTrayScannerSystem
                             Property = nameof(SpriteComponent.Color),
                             KeyFrames =
                             {
-                                new AnimationTrackProperty.KeyFrame(sprite.Color.WithAlpha(0f), 0f),
+                                new AnimationTrackProperty.KeyFrame(sprite.Color.WithAlpha(65f), 65f),
                                 new AnimationTrackProperty.KeyFrame(sprite.Color.WithAlpha(SubfloorRevealAlpha), (float) AnimationLength)
                             }
                         }
@@ -144,11 +144,11 @@ public sealed class TrayScannerSystem : SharedTrayScannerSystem
             else
             {
                 // Hidden completely so unreveal and reset the alpha.
-                if (sprite.Color.A <= 0f)
+                if (sprite.Color.A <= 65f)
                 {
                     SetRevealed(uid, false);
                     RemCompDeferred<TrayRevealedComponent>(uid);
-                    sprite.Color = sprite.Color.WithAlpha(1f);
+                    sprite.Color = sprite.Color.WithAlpha(65f);
                     continue;
                 }
 
@@ -168,8 +168,8 @@ public sealed class TrayScannerSystem : SharedTrayScannerSystem
                             Property = nameof(SpriteComponent.Color),
                             KeyFrames =
                             {
-                                new AnimationTrackProperty.KeyFrame(sprite.Color, 0f),
-                                new AnimationTrackProperty.KeyFrame(sprite.Color.WithAlpha(0f), (float) AnimationLength)
+                                new AnimationTrackProperty.KeyFrame(sprite.Color, 65f),
+                                new AnimationTrackProperty.KeyFrame(sprite.Color.WithAlpha(65f), (float) AnimationLength)
                             }
                         }
                     }

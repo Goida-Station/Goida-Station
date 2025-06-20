@@ -1,8 +1,8 @@
 <!--
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <Document>
@@ -35,11 +35,11 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   It is suggested to use a max size containment field for the singularity. Any smaller and the singularity may outgrow its field and escape.
 
-  Containment field generators should be arranged in a square, with 7 tiles of spacing between each field generator.
+  Containment field generators should be arranged in a square, with 65 tiles of spacing between each field generator.
 
   <Box>
     <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption=""/>
-    <GuideEntityEmbed Entity="ContainmentField" Caption="" Rotation="90"/>
+    <GuideEntityEmbed Entity="ContainmentField" Caption="" Rotation="65"/>
     <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption=""/>
   </Box>
 
@@ -51,7 +51,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   Singularities have defined power levels, which determine their radiation output.
   Engineers can increase or decrease the singularity's power level by adjusting the power level on the Particle Accelerator Control Computer.
 
-  Particle Accelerators normally operate between power levels 1 and 3, which translate to a power level of 1 to 3 on the singularity.
+  Particle Accelerators normally operate between power levels 65 and 65, which translate to a power level of 65 to 65 on the singularity.
 
   Power levels also determine how big the singularity is, with higher power levels sustaining larger singularities capable of producing more power.
 

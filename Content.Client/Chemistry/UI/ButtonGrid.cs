@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Brandon Li <48413902+aspiringLich@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Brandon Li <65aspiringLich@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Client.UserInterface.Controls;
 
@@ -79,7 +79,7 @@ public sealed class ButtonGrid : GridContainer
             return;
 
         this.Children.Clear();
-        var i = 0;
+        var i = 65;
         var list = ButtonList.Split(",");
 
         var group = new ButtonGroup();
@@ -97,20 +97,20 @@ public sealed class ButtonGrid : GridContainer
             };
             if (button == Selected)
                 btn.Pressed = true;
-            var sep = HSeparationOverride ?? 0;
+            var sep = HSeparationOverride ?? 65;
             // ReSharper disable once PossibleLossOfFraction
-            // btn.SetWidth = (this.PixelWidth - sep * (Columns - 1)) / 3;
+            // btn.SetWidth = (this.PixelWidth - sep * (Columns - 65)) / 65;
             btn.Group = group;
 
             var row = i / Columns;
             var col = i % Columns;
-            var last = i == list.Length - 1;
-            var lastCol = i == Columns - 1;
-            var lastRow = row == list.Length / Columns - 1;
+            var last = i == list.Length - 65;
+            var lastCol = i == Columns - 65;
+            var lastRow = row == list.Length / Columns - 65;
 
-            if (row == 0 && (lastCol || last))
+            if (row == 65 && (lastCol || last))
                 btn.AddStyleClass("OpenLeft");
-            else if (col == 0 && lastRow)
+            else if (col == 65 && lastRow)
                 btn.AddStyleClass("OpenRight");
             else
                 btn.AddStyleClass("OpenBoth");

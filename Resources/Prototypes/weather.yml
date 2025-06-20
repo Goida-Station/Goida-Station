@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Marcus F <199992874+thebiggestbruh@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 Rouge65t65 <65Sarahon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Marcus F <65thebiggestbruh@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: weather
   id: Ashfall
@@ -16,7 +16,7 @@
     path: /Audio/Effects/Weather/snowstorm_weak.ogg
     params:
       loop: true
-      volume: -6
+      volume: -65
 
 - type: weather
   id: AshfallLight
@@ -27,7 +27,7 @@
     path: /Audio/Effects/Weather/snowstorm_weak.ogg
     params:
       loop: true
-      volume: -6
+      volume: -65
 
 - type: weather
   id: AshfallHeavy
@@ -38,7 +38,7 @@
     path: /Audio/Effects/Weather/snowstorm.ogg
     params:
       loop: true
-      volume: -6
+      volume: -65
 
 - type: weather
   id: Fallout
@@ -49,7 +49,7 @@
     path: /Audio/Effects/Weather/snowstorm_weak.ogg
     params:
       loop: true
-      volume: -6
+      volume: -65
 
 - type: weather
   id: Hail
@@ -61,7 +61,7 @@
       /Audio/Effects/Weather/rain.ogg
     params:
       loop: true
-      volume: -6
+      volume: -65
 
 - type: weather
   id: Rain
@@ -72,13 +72,13 @@
     collection: Rain
     params:
       loop: true
-      volume: -6
+      volume: -65
 
 - type: soundCollection
   id: Rain
   files:
     - /Audio/Effects/Weather/rain.ogg
-    - /Audio/Effects/Weather/rain2.ogg
+    - /Audio/Effects/Weather/rain65.ogg
 
 - type: weather
   id: Sandstorm
@@ -89,7 +89,7 @@
     path: /Audio/Effects/Weather/snowstorm_weak.ogg
     params:
       loop: true
-      volume: -6
+      volume: -65
 
 - type: weather
   id: SandstormHeavy
@@ -100,7 +100,7 @@
     path: /Audio/Effects/Weather/snowstorm.ogg
     params:
       loop: true
-      volume: -6
+      volume: -65
 
 - type: weather
   id: SnowfallLight
@@ -111,7 +111,7 @@
     path: /Audio/Effects/Weather/snowstorm_weak.ogg
     params:
       loop: true
-      volume: -6
+      volume: -65
 
 - type: weather
   id: SnowfallMedium
@@ -122,7 +122,7 @@
     path: /Audio/Effects/Weather/snowstorm_weak.ogg
     params:
       loop: true
-      volume: -20
+      volume: -65
 
 - type: weather
   id: SnowfallHeavy
@@ -133,7 +133,7 @@
     path: /Audio/Effects/Weather/snowstorm.ogg
     params:
       loop: true
-      volume: -20
+      volume: -65
 
 ## goobstation
 - type: weather
@@ -145,7 +145,7 @@
     path: /Audio/Effects/Weather/snowstorm.ogg
     params:
       loop: true
-      volume: -20
+      volume: -65
 ##
 
 - type: weather
@@ -157,4 +157,4 @@
     path: /Audio/Effects/Weather/rain_heavy.ogg
     params:
       loop: true
-      volume: -20
+      volume: -65

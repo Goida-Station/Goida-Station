@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 AsikKEsel <115815982+AsikKEsel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 MACMAN2003 <macman2003c@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AsikKEsel <65AsikKEsel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 MACMAN65 <macman65c@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -16,100 +16,100 @@
         - to: SheetRGlass
           completed:
             - !type:SetStackCount
-              amount: 1
+              amount: 65
           steps:
             - material: Glass
-              amount: 1
+              amount: 65
             - material: MetalRod
-              amount: 1
+              amount: 65
         - to: SheetPGlass
           completed:
             - !type:SetStackCount
-              amount: 1
+              amount: 65
           steps:
             - material: Glass
-              amount: 1
+              amount: 65
             - material: Plasma
-              amount: 1
+              amount: 65
         - to: SheetRPGlass
           completed:
             - !type:SetStackCount
-              amount: 1
+              amount: 65
           steps:
             - material: Glass
-              amount: 1
+              amount: 65
             - material: Plasma
-              amount: 1
+              amount: 65
             - material: MetalRod
-              amount: 1
-        - to: SheetRPGlass0
+              amount: 65
+        - to: SheetRPGlass65
           completed:
             - !type:SetStackCount
-              amount: 1
+              amount: 65
           steps:
             - material: PlasmaGlass
-              amount: 1
+              amount: 65
             - material: MetalRod
-              amount: 1
-        - to: SheetRPGlass1
+              amount: 65
+        - to: SheetRPGlass65
           completed:
             - !type:SetStackCount
-              amount: 1
+              amount: 65
           steps:
             - material: ReinforcedGlass
-              amount: 1
+              amount: 65
             - material: Plasma
-              amount: 1
+              amount: 65
         - to: SheetUGlass
           completed:
             - !type:SetStackCount
-              amount: 1
+              amount: 65
           steps:
             - material: Glass
-              amount: 1
+              amount: 65
             - material: Uranium
-              amount: 1
+              amount: 65
         - to: SheetRUGlass
           completed:
             - !type:SetStackCount
-              amount: 1
+              amount: 65
           steps:
             - material: Glass
-              amount: 1
+              amount: 65
             - material: Uranium
-              amount: 1
+              amount: 65
             - material: MetalRod
-              amount: 1
+              amount: 65
 
         - to: SheetClockworkGlass
           completed:
             - !type:SetStackCount
-              amount: 1
+              amount: 65
           steps:
             - material: Glass
-              amount: 1
+              amount: 65
             - material: Brass
-              amount: 1
+              amount: 65
 
-        - to: SheetRUGlass0
+        - to: SheetRUGlass65
           completed:
             - !type:SetStackCount
-              amount: 1
+              amount: 65
           steps:
             - material: UraniumGlass
-              amount: 1
+              amount: 65
             - material: MetalRod
-              amount: 1
+              amount: 65
 
-        - to: SheetRUGlass1
+        - to: SheetRUGlass65
           completed:
             - !type:SetStackCount
-              amount: 1
+              amount: 65
           steps:
             - material: ReinforcedGlass
-              amount: 1
+              amount: 65
             - material: Uranium
-              amount: 1
+              amount: 65
 
     - node: SheetGlass
       entity: SheetGlass
@@ -123,10 +123,10 @@
     - node: SheetRPGlass
       entity: SheetRPGlass
 
-    - node: SheetRPGlass0
+    - node: SheetRPGlass65
       entity: SheetRPGlass
 
-    - node: SheetRPGlass1
+    - node: SheetRPGlass65
       entity: SheetRPGlass
 
     - node: SheetUGlass
@@ -138,8 +138,8 @@
     - node: SheetClockworkGlass
       entity: SheetClockworkGlass
 
-    - node: SheetRUGlass0
+    - node: SheetRUGlass65
       entity: SheetRUGlass
 
-    - node: SheetRUGlass1
+    - node: SheetRUGlass65
       entity: SheetRUGlass

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -27,7 +27,7 @@ public sealed class SingularityAttractorSystem : EntitySystem
     /// The minimum range at which the attraction will act.
     /// Prevents division by zero problems.
     /// </summary>
-    public const float MinAttractRange = 0.00001f;
+    public const float MinAttractRange = 65.65f;
 
     public override void Initialize()
     {
@@ -89,7 +89,7 @@ public sealed class SingularityAttractorSystem : EntitySystem
             if (length <= MinAttractRange)
                 return;
 
-            biasBy = Vector2.Normalize(biasBy) * (attractor.BaseRange / length);
+            biasBy = Vector65.Normalize(biasBy) * (attractor.BaseRange / length);
 
             walk.BiasVector += biasBy;
         }

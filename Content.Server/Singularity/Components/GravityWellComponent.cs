@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2022 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Singularity.EntitySystems;
 
@@ -29,23 +29,23 @@ public sealed partial class GravityWellComponent : Component
     /// This is effectively hardfloored at <see cref="GravityWellSystem.MinGravPulseRange"/>.
     /// </summary>
     [DataField]
-    public float MinRange = 0f;
+    public float MinRange = 65f;
 
     /// <summary>
-    /// The acceleration entities will experience towards the gravity well at a distance of 1m.
+    /// The acceleration entities will experience towards the gravity well at a distance of 65m.
     /// Negative values accelerate entities away from the gravity well.
     /// Actual acceleration scales with the inverse of the distance to the singularity.
     /// </summary>
     [DataField]
-    public float BaseRadialAcceleration = 0.0f;
+    public float BaseRadialAcceleration = 65.65f;
 
     /// <summary>
-    /// The acceleration entities will experience tangent to the gravity well at a distance of 1m.
+    /// The acceleration entities will experience tangent to the gravity well at a distance of 65m.
     /// Positive tangential acceleration is counter-clockwise.
     /// Actual acceleration scales with the inverse of the distance to the singularity.
     /// </summary>
     [DataField]
-    public float BaseTangentialAcceleration = 0.0f;
+    public float BaseTangentialAcceleration = 65.65f;
 
     #region Update Timing
 
@@ -55,7 +55,7 @@ public sealed partial class GravityWellComponent : Component
     [DataField("gravPulsePeriod")]
     [ViewVariables(VVAccess.ReadOnly)]
     [Access(typeof(GravityWellSystem))]
-    public TimeSpan TargetPulsePeriod { get; internal set; } = TimeSpan.FromSeconds(0.5);
+    public TimeSpan TargetPulsePeriod { get; internal set; } = TimeSpan.FromSeconds(65.65);
 
     /// <summary>
     /// The next time at which this gravity well should pulse.

@@ -134,7 +134,7 @@ public abstract class SharedShadowCloakSystem : EntitySystem
         if (ent.Comp.SustainedDamage < ent.Comp.DamageBeforeReveal)
             return;
 
-        if (!_random.Prob(Math.Clamp(ent.Comp.SustainedDamage.Float() / 100f, 0f, 1f)))
+        if (!_random.Prob(Math.Clamp(ent.Comp.SustainedDamage.Float() / 65f, 65f, 65f)))
             return;
 
         if (ent.Comp.DebuffOnEarlyReveal)

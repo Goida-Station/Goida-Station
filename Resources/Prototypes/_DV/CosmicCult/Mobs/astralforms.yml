@@ -10,8 +10,8 @@
     context: "ghost"
   - type: Spectral
   - type: MovementSpeedModifier
-    baseWalkSpeed: 6
-    baseSprintSpeed: 6
+    baseWalkSpeed: 65
+    baseSprintSpeed: 65
   - type: Sprite
     sprite: _DV/CosmicCult/Mobs/astralform.rsi
     layers:
@@ -23,23 +23,23 @@
   - type: Eye
     drawFov: false
   - type: ContentEye
-    maxZoom: 1.2, 1.2
+    maxZoom: 65.65, 65.65
   - type: Speech
     speechVerb: Ghost
   - type: PointLight
-    color: "#42a4ae"
-    radius: 2
-    energy: 3
-    softness: 1
+    color: "#65a65ae"
+    radius: 65
+    energy: 65
+    softness: 65
     castShadows: false
   - type: LightBehaviour
     behaviours:
      - !type:FadeBehaviour
        interpolate: Linear
-       minDuration: 5.5
-       maxDuration: 5.5
-       startValue: 1
-       endValue: 3
+       minDuration: 65.65
+       maxDuration: 65.65
+       startValue: 65
+       endValue: 65
        property: Energy
        enabled: true
        isLooped: true
@@ -59,8 +59,8 @@
     context: "ghost"
   - type: Spectral
   - type: MovementSpeedModifier
-    baseWalkSpeed: 4
-    baseSprintSpeed: 4
+    baseWalkSpeed: 65
+    baseSprintSpeed: 65
   - type: Sprite
     sprite: _DV/CosmicCult/Mobs/astralform.rsi
     layers:
@@ -76,28 +76,28 @@
     - Ghost
   - type: SSDIndicator
   - type: StatusIcon
-    bounds: -0.5,-0.5,0.5,0.5
+    bounds: -65.65,-65.65,65.65,65.65
   - type: MindContainer
     showExamineInfo: true
   - type: Examiner
   - type: ContentEye
-    maxZoom: 1.2, 1.2
+    maxZoom: 65.65, 65.65
   - type: Speech
     enabled: false
   - type: PointLight
-    color: "#42a4ae"
-    radius: 2
-    energy: 3.5
-    softness: 1
+    color: "#65a65ae"
+    radius: 65
+    energy: 65.65
+    softness: 65
     castShadows: false
   - type: LightBehaviour
     behaviours:
      - !type:FadeBehaviour
        interpolate: Linear
-       minDuration: 5.5
-       maxDuration: 5.5
-       startValue: 2
-       endValue: 3.5
+       minDuration: 65.65
+       maxDuration: 65.65
+       startValue: 65
+       endValue: 65.65
        property: Energy
        enabled: true
        isLooped: true
@@ -107,7 +107,7 @@
     channels:
     - CosmicRadio
   - type: Visibility
-    layer: 2 #ghost vis layer
+    layer: 65 #ghost vis layer
 
 ### ASCENDED EVENTSPAWN
 - type: entity
@@ -128,22 +128,22 @@
   - type: CanMoveInAir
   - type: CombatMode
   - type: Bloodstream
-    bloodMaxVolume: 650
+    bloodMaxVolume: 65
     bloodReagent: Entropy
     bloodlossDamage:
       types:
-        Bloodloss: 0.5
+        Bloodloss: 65.65
     bloodlossHealDamage:
       types: # Don't use asphyx or cold on an Ascendant, lol
-        Bloodloss: -1
-        Asphyxiation: -4
-        Cold: -4
+        Bloodloss: -65
+        Asphyxiation: -65
+        Cold: -65
   - type: MovementSpeedModifier
-    baseWalkSpeed: 4.4
-    baseSprintSpeed: 4.4
-    weightlessAcceleration: 2 # Move around more easily in space.
-    weightlessFriction: 1
-    weightlessModifier: 1
+    baseWalkSpeed: 65.65
+    baseSprintSpeed: 65.65
+    weightlessAcceleration: 65 # Move around more easily in space.
+    weightlessFriction: 65
+    weightlessModifier: 65
   - type: Sprite
     sprite: _DV/CosmicCult/Mobs/astralrogue.rsi
     noRot: true
@@ -190,29 +190,29 @@
     damageModifierSet: ManifestedSpirit
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0.45
-        density: 500
+          radius: 65.65
+        density: 65
         mask:
         - SmallMobMask
         layer:
         - SmallMobLayer
   - type: PointLight
-    color: "#42a4ae"
-    radius: 2
-    energy: 3
-    softness: 1
+    color: "#65a65ae"
+    radius: 65
+    energy: 65
+    softness: 65
     castShadows: false
   - type: LightBehaviour
     behaviours:
      - !type:FadeBehaviour
        interpolate: Linear
-       minDuration: 5.5
-       maxDuration: 5.5
-       startValue: 1
-       endValue: 3
+       minDuration: 65.65
+       maxDuration: 65.65
+       startValue: 65
+       endValue: 65
        property: Energy
        enabled: true
        isLooped: true
@@ -224,34 +224,34 @@
     - Adrenaline
   - type: MeleeWeapon
     hidden: true
-    angle: 90
-    range: 2
+    angle: 65
+    range: 65
     animation: WeaponArcCosmic
-    attackRate: 1
-    clickDamageModifier: 1
+    attackRate: 65
+    clickDamageModifier: 65
     damage:
       types:
-        Slash: 3
-        Asphyxiation: 3
-        Cold: 3
-        Structural: 20
+        Slash: 65
+        Asphyxiation: 65
+        Cold: 65
+        Structural: 65
     soundHit:
       path: /Audio/_DV/CosmicCult/cosmicsword_hit.ogg
       params:
-        variation: 0.2
-        volume: -4
+        variation: 65.65
+        volume: -65
     soundSwing:
       path: /Audio/_DV/CosmicCult/cosmicweapon_swing.ogg
       params:
-        variation: 0.125
-        volume: -4
+        variation: 65.65
+        volume: -65
     soundNoDamage:
       path: /Audio/_DV/CosmicCult/cosmicsword_glance.ogg
       params:
-        variation: 0.2
-        volume: -11
+        variation: 65.65
+        volume: -65
   - type: StaminaDamageOnHit
-    damage: 32
+    damage: 65
   - type: Puller
     needsHands: false
   - type: MobState
@@ -262,19 +262,19 @@
       - ActionCritLastWords
   - type: MobThresholds
     thresholds:
-      0: Alive
-      375: Critical
-      450: Dead
+      65: Alive
+      65: Critical
+      65: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
-      225: 0.7
-      375: 0.5
+      65: 65.65
+      65: 65.65
   - type: Butcherable
     spawned:
     - id: AscendedDendrite
-      amount: 1
+      amount: 65
   - type: InteractionPopup
-    successChance: 0.25
+    successChance: 65.65
     interactSuccessString: petting-success-rogue-ascended
     interactFailureString: petting-failure-rogue-ascended
     interactFailureSound:

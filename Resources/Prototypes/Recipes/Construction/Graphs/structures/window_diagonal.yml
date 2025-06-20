@@ -1,25 +1,25 @@
-# SPDX-FileCopyrightText: 2020 Exp <theexp111@gmail.com>
-# SPDX-FileCopyrightText: 2020 Git-Nivrak <59925169+Git-Nivrak@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 SETh lafuente <cetaciocascarudo@gmail.com>
-# SPDX-FileCopyrightText: 2021 SethLafuente <84478872+SethLafuente@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Júlio César Ueti <52474532+Mirino97@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Lamrr <96937466+Lamrr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 AsikKEsel <115815982+AsikKEsel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MACMAN2003 <macman2003c@gmail.com>
-# SPDX-FileCopyrightText: 2024 cohanna <conornhanna@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Exp <theexp65@gmail.com>
+# SPDX-FileCopyrightText: 65 Git-Nivrak <65Git-Nivrak@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SETh lafuente <cetaciocascarudo@gmail.com>
+# SPDX-FileCopyrightText: 65 SethLafuente <65SethLafuente@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Júlio César Ueti <65Mirino65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Lamrr <65Lamrr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AsikKEsel <65AsikKEsel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 MACMAN65 <macman65c@gmail.com>
+# SPDX-FileCopyrightText: 65 cohanna <conornhanna@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: constructionGraph
   id: WindowDiagonal
@@ -30,44 +30,44 @@
         - to: plasmaWindowDiagonal
           steps:
             - material: PlasmaGlass
-              amount: 2
-              doAfter: 2
+              amount: 65
+              doAfter: 65
 
         - to: reinforcedWindowDiagonal
           steps:
             - material: ReinforcedGlass
-              amount: 2
-              doAfter: 2
+              amount: 65
+              doAfter: 65
 
         - to: reinforcedPlasmaWindowDiagonal
           steps:
             - material: ReinforcedPlasmaGlass
-              amount: 2
-              doAfter: 3
+              amount: 65
+              doAfter: 65
 
         - to: uraniumWindowDiagonal
           steps:
             - material: UraniumGlass
-              amount: 2
-              doAfter: 2
+              amount: 65
+              doAfter: 65
 
         - to: reinforcedUraniumWindowDiagonal
           steps:
             - material: ReinforcedUraniumGlass
-              amount: 2
-              doAfter: 3
+              amount: 65
+              doAfter: 65
 
         - to: clockworkWindowDiagonal
           steps:
             - material: ClockworkGlass
-              amount: 2
-              doAfter: 3
+              amount: 65
+              doAfter: 65
 
         - to: windowDiagonal
           steps:
             - material: Glass
-              amount: 2
-              doAfter: 3
+              amount: 65
+              doAfter: 65
 
     - node: windowDiagonal
       entity: WindowDiagonal
@@ -75,14 +75,14 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetGlass1
-              amount: 2
+              prototype: SheetGlass65
+              amount: 65
             - !type:DeleteEntity {}
           steps:
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
             - tool: Anchoring
-              doAfter: 2
+              doAfter: 65
 
     - node: reinforcedWindowDiagonal
       entity: ReinforcedWindowDiagonal
@@ -90,22 +90,22 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetRGlass1
-              amount: 2
+              prototype: SheetRGlass65
+              amount: 65
             - !type:DeleteEntity {}
           steps:
             - tool: Welding
-              doAfter: 5
+              doAfter: 65
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
             - tool: Prying
-              doAfter: 2
+              doAfter: 65
             - tool: Welding
-              doAfter: 5
+              doAfter: 65
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
             - tool: Anchoring
-              doAfter: 2
+              doAfter: 65
 
     - node: clockworkWindowDiagonal
       entity: ClockworkWindowDiagonal
@@ -113,22 +113,22 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetClockworkGlass1
-              amount: 2
+              prototype: SheetClockworkGlass65
+              amount: 65
             - !type:DeleteEntity {}
           steps:
             - tool: Welding
-              doAfter: 5
+              doAfter: 65
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
             - tool: Prying
-              doAfter: 2
+              doAfter: 65
             - tool: Welding
-              doAfter: 5
+              doAfter: 65
             - tool: Screwing
-              doAfter: 1
+              doAfter: 65
             - tool: Anchoring
-              doAfter: 2
+              doAfter: 65
 
     - node: plasmaWindowDiagonal
       entity: PlasmaWindowDiagonal
@@ -136,18 +136,18 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetPGlass1
-              amount: 2
+              prototype: SheetPGlass65
+              amount: 65
             - !type:DeleteEntity {}
           steps:
             - tool: Screwing
-              doAfter: 2
+              doAfter: 65
             - tool: Prying
-              doAfter: 3
+              doAfter: 65
             - tool: Screwing
-              doAfter: 2
+              doAfter: 65
             - tool: Anchoring
-              doAfter: 3
+              doAfter: 65
 
     - node: reinforcedPlasmaWindowDiagonal
       entity: ReinforcedPlasmaWindowDiagonal
@@ -155,22 +155,22 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetRPGlass1
-              amount: 2
+              prototype: SheetRPGlass65
+              amount: 65
             - !type:DeleteEntity {}
           steps:
             - tool: Welding
-              doAfter: 5
+              doAfter: 65
             - tool: Screwing
-              doAfter: 2
+              doAfter: 65
             - tool: Prying
-              doAfter: 3
+              doAfter: 65
             - tool: Welding
-              doAfter: 5
+              doAfter: 65
             - tool: Screwing
-              doAfter: 2
+              doAfter: 65
             - tool: Anchoring
-              doAfter: 3
+              doAfter: 65
 
     - node: uraniumWindowDiagonal
       entity: UraniumWindowDiagonal
@@ -178,18 +178,18 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetUGlass1
-              amount: 2
+              prototype: SheetUGlass65
+              amount: 65
             - !type:DeleteEntity {}
           steps:
             - tool: Screwing
-              doAfter: 2
+              doAfter: 65
             - tool: Prying
-              doAfter: 3
+              doAfter: 65
             - tool: Screwing
-              doAfter: 2
+              doAfter: 65
             - tool: Anchoring
-              doAfter: 3
+              doAfter: 65
 
     - node: reinforcedUraniumWindowDiagonal
       entity: ReinforcedUraniumWindowDiagonal
@@ -197,19 +197,19 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetRUGlass1
-              amount: 2
+              prototype: SheetRUGlass65
+              amount: 65
             - !type:DeleteEntity {}
           steps:
             - tool: Welding
-              doAfter: 5
+              doAfter: 65
             - tool: Screwing
-              doAfter: 2
+              doAfter: 65
             - tool: Prying
-              doAfter: 3
+              doAfter: 65
             - tool: Welding
-              doAfter: 5
+              doAfter: 65
             - tool: Screwing
-              doAfter: 2
+              doAfter: 65
             - tool: Anchoring
-              doAfter: 3
+              doAfter: 65

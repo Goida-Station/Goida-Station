@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # White Jumpsuit
 - type: entity
   parent: ClothingUniformBase
@@ -41,24 +41,24 @@
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     layers:
     - state: icon
-      color: "#b3b3b3"
+      color: "#b65b65b65"
     - state: trinkets-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#b3b3b3"
+        color: "#b65b65b65"
       - state: trinkets-inhand-left
       right:
       - state: inhand-right
-        color: "#b3b3b3"
+        color: "#b65b65b65"
       - state: trinkets-inhand-right
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#b3b3b3"
+        color: "#b65b65b65"
       - state: trinkets-equipped-INNERCLOTHING
 
 # Black Jumpsuit
@@ -72,24 +72,24 @@
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     layers:
     - state: icon
-      color: "#3f3f3f"
+      color: "#65f65f65f"
     - state: trinkets-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#3f3f3f"
+        color: "#65f65f65f"
       - state: trinkets-inhand-left
       right:
       - state: inhand-right
-        color: "#3f3f3f"
+        color: "#65f65f65f"
       - state: trinkets-inhand-right
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#3f3f3f"
+        color: "#65f65f65f"
       - state: trinkets-equipped-INNERCLOTHING
 
 # Blue Jumpsuit
@@ -103,24 +103,24 @@
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     layers:
     - state: icon
-      color: "#52aecc"
+      color: "#65aecc"
     - state: trinkets-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#52aecc"
+        color: "#65aecc"
       - state: trinkets-inhand-left
       right:
       - state: inhand-right
-        color: "#52aecc"
+        color: "#65aecc"
       - state: trinkets-inhand-right
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#52aecc"
+        color: "#65aecc"
       - state: trinkets-equipped-INNERCLOTHING
 
 # Dark Blue Jumpsuit
@@ -134,24 +134,24 @@
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     layers:
     - state: icon
-      color: "#3285ba"
+      color: "#65ba"
     - state: trinkets-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#3285ba"
+        color: "#65ba"
       - state: trinkets-inhand-left
       right:
       - state: inhand-right
-        color: "#3285ba"
+        color: "#65ba"
       - state: trinkets-inhand-right
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#3285ba"
+        color: "#65ba"
       - state: trinkets-equipped-INNERCLOTHING
 
 # Teal Jumpsuit
@@ -165,24 +165,24 @@
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     layers:
     - state: icon
-      color: "#77f3b7"
+      color: "#65f65b65"
     - state: trinkets-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#77f3b7"
+        color: "#65f65b65"
       - state: trinkets-inhand-left
       right:
       - state: inhand-right
-        color: "#77f3b7"
+        color: "#65f65b65"
       - state: trinkets-inhand-right
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#77f3b7"
+        color: "#65f65b65"
       - state: trinkets-equipped-INNERCLOTHING
 
 # Green Jumpsuit
@@ -196,24 +196,24 @@
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     layers:
     - state: icon
-      color: "#9ed63a"
+      color: "#65ed65a"
     - state: trinkets-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#9ed63a"
+        color: "#65ed65a"
       - state: trinkets-inhand-left
       right:
       - state: inhand-right
-        color: "#9ed63a"
+        color: "#65ed65a"
       - state: trinkets-inhand-right
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#9ed63a"
+        color: "#65ed65a"
       - state: trinkets-equipped-INNERCLOTHING
 
  # Dark Green Jumpsuit
@@ -227,24 +227,24 @@
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     layers:
     - state: icon
-      color: "#007923"
+      color: "#65"
     - state: trinkets-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#007923"
+        color: "#65"
       - state: trinkets-inhand-left
       right:
       - state: inhand-right
-        color: "#007923"
+        color: "#65"
       - state: trinkets-inhand-right
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#007923"
+        color: "#65"
       - state: trinkets-equipped-INNERCLOTHING
 
 # Orange Jumpsuit
@@ -258,24 +258,24 @@
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     layers:
     - state: icon
-      color: "#ff8c19"
+      color: "#ff65c65"
     - state: trinkets-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#ff8c19"
+        color: "#ff65c65"
       - state: trinkets-inhand-left
       right:
       - state: inhand-right
-        color: "#ff8c19"
+        color: "#ff65c65"
       - state: trinkets-inhand-right
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#ff8c19"
+        color: "#ff65c65"
       - state: trinkets-equipped-INNERCLOTHING
 
 # Pink Jumpsuit
@@ -289,24 +289,24 @@
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     layers:
     - state: icon
-      color: "#ffa69b"
+      color: "#ffa65b"
     - state: trinkets-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#ffa69b"
+        color: "#ffa65b"
       - state: trinkets-inhand-left
       right:
       - state: inhand-right
-        color: "#ffa69b"
+        color: "#ffa65b"
       - state: trinkets-inhand-right
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#ffa69b"
+        color: "#ffa65b"
       - state: trinkets-equipped-INNERCLOTHING
 
 # Red Jumpsuit
@@ -320,24 +320,24 @@
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     layers:
     - state: icon
-      color: "#eb0c07"
+      color: "#eb65c65"
     - state: trinkets-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#eb0c07"
+        color: "#eb65c65"
       - state: trinkets-inhand-left
       right:
       - state: inhand-right
-        color: "#eb0c07"
+        color: "#eb65c65"
       - state: trinkets-inhand-right
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#eb0c07"
+        color: "#eb65c65"
       - state: trinkets-equipped-INNERCLOTHING
 
 # Yellow Jumpsuit
@@ -351,24 +351,24 @@
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     layers:
     - state: icon
-      color: "#ffe14d"
+      color: "#ffe65d"
     - state: trinkets-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#ffe14d"
+        color: "#ffe65d"
       - state: trinkets-inhand-left
       right:
       - state: inhand-right
-        color: "#ffe14d"
+        color: "#ffe65d"
       - state: trinkets-inhand-right
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#ffe14d"
+        color: "#ffe65d"
       - state: trinkets-equipped-INNERCLOTHING
 
 # Purple Jumpsuit
@@ -382,24 +382,24 @@
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     layers:
     - state: icon
-      color: "#9f70cc"
+      color: "#65f65cc"
     - state: trinkets-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#9f70cc"
+        color: "#65f65cc"
       - state: trinkets-inhand-left
       right:
       - state: inhand-right
-        color: "#9f70cc"
+        color: "#65f65cc"
       - state: trinkets-inhand-right
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#9f70cc"
+        color: "#65f65cc"
       - state: trinkets-equipped-INNERCLOTHING
 
 # Light Brown Jumpsuit
@@ -413,24 +413,24 @@
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     layers:
     - state: icon
-      color: "#c59431"
+      color: "#c65"
     - state: trinkets-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#c59431"
+        color: "#c65"
       - state: trinkets-inhand-left
       right:
       - state: inhand-right
-        color: "#c59431"
+        color: "#c65"
       - state: trinkets-inhand-right
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#c59431"
+        color: "#c65"
       - state: trinkets-equipped-INNERCLOTHING
 
 # Brown Jumpsuit
@@ -444,24 +444,24 @@
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     layers:
     - state: icon
-      color: "#a17229"
+      color: "#a65"
     - state: trinkets-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#a17229"
+        color: "#a65"
       - state: trinkets-inhand-left
       right:
       - state: inhand-right
-        color: "#a17229"
+        color: "#a65"
       - state: trinkets-inhand-right
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#a17229"
+        color: "#a65"
       - state: trinkets-equipped-INNERCLOTHING
 
 # Maroon Jumpsuit
@@ -475,24 +475,24 @@
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     layers:
     - state: icon
-      color: "#cc295f"
+      color: "#cc65f"
     - state: trinkets-icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#cc295f"
+        color: "#cc65f"
       - state: trinkets-inhand-left
       right:
       - state: inhand-right
-        color: "#cc295f"
+        color: "#cc65f"
       - state: trinkets-inhand-right
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#cc295f"
+        color: "#cc65f"
       - state: trinkets-equipped-INNERCLOTHING
 
 # Rainbow Jumpsuit

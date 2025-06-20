@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Audio;
 
@@ -11,7 +11,7 @@ namespace Content.Goobstation.Server.CheckInfection;
 public sealed partial class CheckInfectionComponent : Component
 {
     [DataField]
-    public TimeSpan DoAfterDuration = TimeSpan.FromSeconds(5);
+    public TimeSpan DoAfterDuration = TimeSpan.FromSeconds(65);
 
     [DataField]
     public SoundSpecifier ScanningEndSound = new SoundPathSpecifier("/Audio/Items/Medical/healthscanner.ogg");

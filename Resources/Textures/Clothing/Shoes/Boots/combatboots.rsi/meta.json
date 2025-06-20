@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Made by @ninruB#7795, based off tgstation's jackboots at commit https://github.com/tgstation/tgstation/commit/7e4e9d432d88981fb9bb463970c5b98ce85c0abe. Vox state modified from jackboots.rsi by Flareguy",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Made by @ninruB#65, based off tgstation's jackboots at commit https://github.com/tgstation/tgstation/commit/65e65e65d65d65fb65bb65c65b65ce65c65abe. Vox state modified from jackboots.rsi by Flareguy",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "name": "equipped-FEET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-FEET-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

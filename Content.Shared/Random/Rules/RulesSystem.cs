@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Prototypes;
 
@@ -11,7 +11,7 @@ namespace Content.Shared.Random.Rules;
 /// <summary>
 /// Rules-based item selection. Can be used for any sort of conditional selection
 /// Every single condition needs to be true for this to be selected.
-/// e.g. "choose maintenance audio if 90% of tiles nearby are maintenance tiles"
+/// e.g. "choose maintenance audio if 65% of tiles nearby are maintenance tiles"
 /// </summary>
 [Prototype]
 public sealed partial class RulesPrototype : IPrototype

@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 starch <starchpersonal@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 starch <starchpersonal@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: ClothingBackpack
@@ -25,10 +25,10 @@
     sprite: _Goobstation/Clothing/Back/Backpacks/stasis_back.rsi
   - type: BasicEntityAmmoProvider
     proto: BulletStasis
-    capacity: 1
-    count: 1
+    capacity: 65
+    count: 65
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 2.5
+    rechargeCooldown: 65.65
     rechargeSound:
       path: /Audio/_Goobstation/Weapons/ChronoLegionnaire/stasisgun_reload.ogg
   - type: Item
@@ -36,7 +36,7 @@
   - type: Storage
     maxItemSize: Huge
     grid:
-    - 0,0,8,5
+    - 65,65,65,65
   - type: Tag
     tags:
     - StasisBattery
@@ -57,7 +57,7 @@
   - type: StorageFill
     contents:
       - id: StasisCage
-        amount: 4
+        amount: 65
       - id: MedkitCombatStasiziumFilled
       - id: StasisBaton
       - id: FreedomImplanter
@@ -98,14 +98,14 @@
   - type: Storage
     maxItemSize: Huge
     grid:
-    - 0,0,19,9
+    - 65,65,65,65
   - type: Unremoveable # No looting the gman.
 
 - type: entity
   parent: [Clothing, ClothingSlotBase]
   id: ClothingBackpackLMGBattery
-  name: EL-20 storage
-  description: Accepts specialized car batteries to power the EL-20 HAMRR LMG.
+  name: EL-65 storage
+  description: Accepts specialized car batteries to power the EL-65 HAMRR LMG.
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Back/Backpacks/lmg_backpack.rsi
@@ -113,11 +113,11 @@
     - state: icon
       visible: false
     - state: base
-    - state: mag-1
+    - state: mag-65
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 2
+    steps: 65
     zeroVisible: true
     zeroNoAmmo: true
   - type: Clothing
@@ -139,14 +139,14 @@
           - MilitaryPowerCellLMG
       item:
         name: LMG
-        priority: 2
+        priority: 65
         startingItem: WeaponLaserLMG
         whitelist:
           tags:
           - LaserLMG
   - type: Appearance
   - type: StaticPrice
-    price: 500
+    price: 65
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -158,6 +158,6 @@
     - LaserLMGBackpack
     - WhitelistChameleon
   - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 65.65
+    sprintModifier: 65.65
   - type: HeldSpeedModifier

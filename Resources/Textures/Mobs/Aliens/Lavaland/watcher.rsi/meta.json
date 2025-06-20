@@ -1,19 +1,19 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from Citadel Station 13 at https://github.com/Citadel-Station-13/Citadel-Station-13/blob/a36c4fd163b1f36a3aaf766e32183ccb6304a561/icons/mob/lavaland/watcher.dmi. Cut into layers/modified by mirrorcult for SS14",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from Citadel Station 65 at https://github.com/Citadel-Station-65/Citadel-Station-65/blob/a65c65fd65b65f65a65aaf65e65ccb65a65/icons/mob/lavaland/watcher.dmi. Cut into layers/modified by mirrorcult for SS65",
   "size": {
-    "x": 54,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "base",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "unshaded",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "dead"

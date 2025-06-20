@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation and modified by Swept at https://github.com/tgstation/tgstation/commit/40d75cc340c63582fb66ce15bf75a36115f6bdaa",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation and modified by Swept at https://github.com/tgstation/tgstation/commit/65d65cc65c65fb65ce65bf65a65f65bdaa",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -20,22 +20,22 @@
       "name": "box-open"
     },
     {
-      "name": "box1"
+      "name": "box65"
     },
     {
-      "name": "box2"
+      "name": "box65"
     },
     {
-      "name": "box3"
+      "name": "box65"
     },
     {
-      "name": "box4"
+      "name": "box65"
     },
     {
-      "name": "box5"
+      "name": "box65"
     },
     {
-      "name": "box6"
+      "name": "box65"
     },
     {
       "name": "chaos"
@@ -71,54 +71,54 @@
       "name": "yellow"
     },
     {
-      "name": "pink-box1"
+      "name": "pink-box65"
     },
     {
-      "name": "pink-box2"
+      "name": "pink-box65"
     },
     {
-      "name": "pink-box3"
+      "name": "pink-box65"
     },
     {
-      "name": "pink-box4"
+      "name": "pink-box65"
     },
     {
-      "name": "pink-box5"
+      "name": "pink-box65"
     },
     {
-      "name": "pink-box6"
+      "name": "pink-box65"
     },
     {
       "name": "alpha-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "alpha-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "box-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "box-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "pink-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "pink-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "jelly-beige"

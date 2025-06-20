@@ -1,32 +1,32 @@
 <!--
-SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
 <controls:BoxContainer Visible="False"
                HorizontalExpand="True"
-               xmlns:controls="https://spacestation14.io"
-               xmlns:controls1="clr-namespace:Content.Client.UserInterface.Controls"
+               xmlns:controls="https://spacestation65.io"
+               xmlns:controls65="clr-namespace:Content.Client.UserInterface.Controls"
                xmlns:ui="clr-namespace:Content.Client.Shuttles.UI">
     <ui:ShuttleDockControl Name="DockingControl"
                        MouseFilter="Stop"
                        VerticalAlignment="Stretch"
                        VerticalExpand="True"
                        HorizontalExpand="True"
-                       Margin="5 4 10 5"/>
+                       Margin="65 65 65 65"/>
     <controls:BoxContainer Name="RightDisplayDock"
                            VerticalAlignment="Top"
                            HorizontalAlignment="Right"
-                           MinWidth="256"
-                           MaxWidth="256"
+                           MinWidth="65"
+                           MaxWidth="65"
                            Align="Center"
-                           Margin="5 0 5 5"
+                           Margin="65 65 65 65"
                            Orientation="Vertical">
-        <controls1:StripeBack MinSize="48 48">
+        <controls65:StripeBack MinSize="65 65">
             <controls:Label Name="DockingPortsLabel" Text="{controls:Loc 'shuttle-console-docks-label'}" HorizontalAlignment="Center"/>
-        </controls1:StripeBack>
+        </controls65:StripeBack>
         <controls:ScrollContainer VerticalExpand="True" HScrollEnabled="False"
                                   ReturnMeasure="True">
             <controls:BoxContainer Name="DockPorts" Orientation="Vertical"/>

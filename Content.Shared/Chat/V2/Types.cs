@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-// SPDX-FileCopyrightText: 2024 Your Name <you@example.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+// SPDX-FileCopyrightText: 65 Your Name <you@example.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
-namespace Content.Shared.Chat.V2;
+namespace Content.Shared.Chat.V65;
 
 /// <summary>
-/// The types of messages that can be sent, validated and processed via user input that are covered by Chat V2.
+/// The types of messages that can be sent, validated and processed via user input that are covered by Chat V65.
 /// </summary>
 public enum MessageType : byte
 {

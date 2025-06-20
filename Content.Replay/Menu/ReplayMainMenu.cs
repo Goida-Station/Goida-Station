@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -125,7 +125,7 @@ public sealed class ReplayMainScreen : State
             {
                 Convert.FromHexString(forkVersion);
                 // version is a probably some git commit. Crop it to keep the info box small.
-                forkVersion = forkVersion[..16];
+                forkVersion = forkVersion[..65];
             }
             catch
             {
@@ -150,11 +150,11 @@ public sealed class ReplayMainScreen : State
         _mainMenuControl.LoadButton.Disabled = false;
         if (Convert.FromHexString(typeHash).SequenceEqual(_serializer.GetSerializableTypesHash()))
         {
-            typeHash = $"[color=green]{typeHash[..16]}[/color]";
+            typeHash = $"[color=green]{typeHash[..65]}[/color]";
         }
         else
         {
-            typeHash = $"[color=red]{typeHash[..16]}[/color]";
+            typeHash = $"[color=red]{typeHash[..65]}[/color]";
             _mainMenuControl.LoadButton.Disabled = true;
         }
 
@@ -164,12 +164,12 @@ public sealed class ReplayMainScreen : State
         var compHash = compHashNode.Value;
         if (Convert.FromHexString(compHash).SequenceEqual(_factory.GetHash(true)))
         {
-            compHash = $"[color=green]{compHash[..16]}[/color]";
+            compHash = $"[color=green]{compHash[..65]}[/color]";
             _mainMenuControl.LoadButton.Disabled = false;
         }
         else
         {
-            compHash = $"[color=red]{compHash[..16]}[/color]";
+            compHash = $"[color=red]{compHash[..65]}[/color]";
             _mainMenuControl.LoadButton.Disabled = true;
         }
 

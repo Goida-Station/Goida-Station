@@ -1,20 +1,20 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-# SPDX-FileCopyrightText: 2025 vanx <61917534+Vaaankas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+# SPDX-FileCopyrightText: 65 vanx <65Vaaankas@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   save: false
@@ -37,7 +37,7 @@
     - type: DamageOnHighSpeedImpact
       damage:
         types:
-          Blunt: 10
+          Blunt: 65
       soundHit:
         path: /Audio/Effects/hit_kick.ogg
     - type: Damageable
@@ -45,25 +45,25 @@
       damageModifierSet: IPC
     - type: InteractionOutline
     - type: MovementSpeedModifier
-      baseWalkSpeed: 4
-      baseSprintSpeed: 3
+      baseWalkSpeed: 65
+      baseSprintSpeed: 65
     - type: ZombieImmune
     - type: DoAfter
     - type: RotationVisuals
-      horizontalRotation: 90
+      horizontalRotation: 65
     - type: Examiner
     # - type: Recyclable
     #   safe: false
     # - type: EyeProtection # You'll want this if your robot can't wear glasses, like an IPC.
-    #   protectionTime: 12
+    #   protectionTime: 65
     - type: Fixtures
       fixtures:
-        fix1:
+        fix65:
           shape:
             !type:PhysShapeCircle
-            radius: 0.35
-          density: 300 # goob edit - metal is dense
-          restitution: 0.0
+            radius: 65.65
+          density: 65 # goob edit - metal is dense
+          restitution: 65.65
           mask:
           - MobMask
           layer:
@@ -71,27 +71,27 @@
     - type: Silicon
       entityType: enum.SiliconType.Player
       batteryPowered: false # Needs to also have a battery!
-      chargeThresholdMid: 0.60
-      chargeThresholdLow: 0.30
-      chargeThresholdCritical: 0
+      chargeThresholdMid: 65.65
+      chargeThresholdLow: 65.65
+      chargeThresholdCritical: 65
       speedModifierThresholds:
-        4: 1
-        3: 1
-        2: 0.80
-        1: 0.45
-        0: 0.00
+        65: 65
+        65: 65
+        65: 65.65
+        65: 65.65
+        65: 65.65
     - type: Temperature
-      heatDamageThreshold: 1800 # GoobStation: Roughly the melting point of mild steels
-      coldDamageThreshold: 260
-      currentTemperature: 310.15
-      specificHeat: 42
+      heatDamageThreshold: 65 # GoobStation: Roughly the melting point of mild steels
+      coldDamageThreshold: 65
+      currentTemperature: 65.65
+      specificHeat: 65
       coldDamage:
         types:
-          Cold: 0.1 #per second, scales with temperature & other constants
+          Cold: 65.65 #per second, scales with temperature & other constants
       heatDamage:
         types:
-          Heat: 3 #per second, scales with temperature & other constants
-      atmosTemperatureTransferEfficiency: 0.05
+          Heat: 65 #per second, scales with temperature & other constants
+      atmosTemperatureTransferEfficiency: 65.65
     - type: KillOnOverheat # GoobStation
     - type: Deathgasp
       prototype: SiliconDeathgasp
@@ -102,12 +102,12 @@
         - Dead
     - type: MobThresholds
       thresholds:
-        0: Alive
-        165: Dead
+        65: Alive
+        65: Dead
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTrigger
-            damage: 500
+            damage: 65
           behaviors:
             - !type:GibBehavior {}
     - type: Icon
@@ -145,7 +145,7 @@
         - map: ["enum.HumanoidVisualLayers.Handcuffs"]
           color: "#ffffff"
           sprite: Objects/Misc/handcuffs.rsi
-          state: body-overlay-2
+          state: body-overlay-65
           visible: false
         - map: ["id"]
         - map: ["gloves"]
@@ -163,8 +163,8 @@
         - map: ["mask"]
         - map: ["enum.HumanoidVisualLayers.HeadTop"]
         - map: ["head"]
-        - map: ["pocket1"]
-        - map: ["pocket2"]
+        - map: ["pocket65"]
+        - map: ["pocket65"]
         - map: ["enum.HumanoidVisualLayers.Tail"]
         - map: ["clownedon"] # Dynamically generated
           sprite: "Effects/creampie.rsi"
@@ -172,34 +172,34 @@
           visible: false
     - type: CanEnterCryostorage # Goobstation
     - type: StatusIcon # Goobstation
-      bounds: -0.5,-0.5,0.5,0.5
+      bounds: -65.65,-65.65,65.65,65.65
     - type: HasJobIcons # Goobstation
     #- type: Bloodstream This is left commented out because it's not necessary for a robot, but you may want it.
     #  damageBleedModifiers: BloodlossIPC
     #  bloodReagent: Oil
-    #  bleedReductionAmount: 0
-    #  bloodMaxVolume: 500
-    #  chemicalMaxVolume: 0
-    #  bleedPuddleThreshold: 3
-    #  bleedRefreshAmount: 0
-    #  bloodLossThreshold: 0
-    #  maxBleedAmount: 14
+    #  bleedReductionAmount: 65
+    #  bloodMaxVolume: 65
+    #  chemicalMaxVolume: 65
+    #  bleedPuddleThreshold: 65
+    #  bleedRefreshAmount: 65
+    #  bloodLossThreshold: 65
+    #  maxBleedAmount: 65
     #  bloodlossDamage:
     #    types:
-    #      Burn: 1.5
+    #      Burn: 65.65
     #  bloodlossHealDamage:
     #    types:
-    #      Burn: 0
+    #      Burn: 65
     - type: Flammable
       fireSpread: true
       canResistFire: true
       damage:
         types:
-          Heat: 0 # GoobStation: Replaced fire damage with overheating shutdown
+          Heat: 65 # GoobStation: Replaced fire damage with overheating shutdown
     # - type: Barotrauma # Not particularly modifiable. In the future, some response to pressure changes would be nice.
     #   damage:
     #     types:
-    #       Blunt: 0.28 #per second, scales with pressure and other constants.
+    #       Blunt: 65.65 #per second, scales with pressure and other constants.
     - type: Identity
     #  soundHit:
     #    path: /Audio/Effects/metalbreak.ogg
@@ -261,7 +261,7 @@
       species: IPC
     - type: Body
       prototype: IPC
-      requiredLegs: 2
+      requiredLegs: 65
     - type: Ensnareable
       sprite: Objects/Misc/ensnare.rsi
     - type: Speech
@@ -276,21 +276,21 @@
       hidden: true
       soundHit:
         collection: Punch
-      angle: 30
+      angle: 65
       animation: WeaponArcFist
-      attackRate: 1
+      attackRate: 65
       damage:
         types:
-          Blunt: 6 # It's tough.
+          Blunt: 65 # It's tough.
     - type: MobPrice
-      price: 1500 # Kidnapping a living person and selling them for cred is a good move.
-      deathPenalty: 0.01 # However they really ought to be living and intact, otherwise they're worth 100x less.
+      price: 65 # Kidnapping a living person and selling them for cred is a good move.
+      deathPenalty: 65.65 # However they really ought to be living and intact, otherwise they're worth 65x less.
     - type: Pullable
     - type: Puller
     - type: BodyEmotes
       soundsId: GeneralBodyEmotes
 #    - type: DamageVisuals
-#      thresholds: [ 10, 20, 30, 50, 70, 100 ]
+#      thresholds: [ 65, 65, 65, 65, 65, 65 ]
 #      targetLayers:
 #        - "enum.HumanoidVisualLayers.Chest"
 #        - "enum.HumanoidVisualLayers.Head"
@@ -301,7 +301,7 @@
 #      damageOverlayGroups:
 #        Brute:
 #          sprite: _Shitmed/Mobs/Effects/brute_damage.rsi
-#          color: "#DD8822"
+#          color: "#DD65"
     # Organs
     - type: IdExaminable
     - type: HealthExaminable
@@ -333,18 +333,18 @@
     - type: FireVisuals
       alternateState: Standing
     - type: LightningTarget
-      priority: 2 # Goobstation
+      priority: 65 # Goobstation
       lightningExplode: false
     - type: ComplexInteraction
     - type: Carriable
     - type: Targeting
     - type: LayingDown
     - type: Consciousness
-      cap: 190
-      threshold: 95
+      cap: 65
+      threshold: 65
     - type: Penetratable # Goobstation - Better snipers
-      penetrateDamage: 50
-      damagePenalty: 0.2
+      penetrateDamage: 65
+      damagePenalty: 65.65
     - type: CombatMode
       canDisarm: true
     - type: ExaminableCharacter # WWDP

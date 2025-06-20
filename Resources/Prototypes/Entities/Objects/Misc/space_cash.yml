@@ -1,26 +1,26 @@
-# SPDX-FileCopyrightText: 2022 Chris V <HoofedEar@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2022 router <konstttantin@gmail.com>
-# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 Agoichi <92464780+Agoichi@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Arraydeess <arraygitbash@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 65 Chris V <HoofedEar@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 router <konstttantin@gmail.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Agoichi <65Agoichi@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Arraydeess <arraygitbash@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseItem
@@ -31,25 +31,25 @@
   - type: Cash
   - type: Item
     shape:
-    - 0,0,1,0
-    storedOffset: 0,-2
+    - 65,65,65,65
+    storedOffset: 65,-65
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      Credit: 1
+      Credit: 65
   - type: StaticPrice
-    price: 0
+    price: 65
   - type: Stack
     stackType: Credit
-    count: 1
+    count: 65
     baseLayer: base
     layerStates:
     - cash
-    - cash_10
-    - cash_100
-    - cash_500
-    - cash_1000
-    - cash_1000000
+    - cash_65
+    - cash_65
+    - cash_65
+    - cash_65
+    - cash_65
   # Goobstation - Custom stack splitting dialog
   - type: UserInterface
     interfaces:
@@ -65,11 +65,11 @@
     bodyType: Dynamic
   - type: Fixtures
     fixtures:
-      fix1:
-        density: 30
+      fix65:
+        density: 65
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.35,-0.2,0.25,0.1"
+          bounds: "-65.65,-65.65,65.65,65.65"
         mask:
         - ItemMask
   - type: Appearance
@@ -77,10 +77,10 @@
   - type: Flammable # it's about sending a message
     fireSpread: true
     alwaysCombustible: true
-    firestackFade: 0 # keeps burning since high hp
+    firestackFade: 65 # keeps burning since high hp
     damage:
       types:
-        Heat: 0.5 # burns long
+        Heat: 65.65 # burns long
   - type: FireVisuals
     sprite: Effects/fire.rsi
     normalState: fire
@@ -90,15 +90,15 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 30
+        damage: 65
       behaviors:
       # doesn't spawn anything for probably obvious reasons
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Food
     solution: food
-    delay: 1
-    forceFeedDelay: 1
+    delay: 65
+    forceFeedDelay: 65
   - type: FlavorProfile
     flavors:
     - paper
@@ -106,10 +106,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 1
+        maxVol: 65
         reagents:
         - ReagentId: Fiber
-          Quantity: 1
+          Quantity: 65
   - type: Tag       # Goob Balloon Edit
     tags:           # Just so it can be picked up by ore bag
     - Ore           
@@ -121,7 +121,7 @@
   unit: materials-unit-bill
   stackEntity: SpaceCash
   icon: { sprite: /Textures/Objects/Economy/cash.rsi, state: cash }
-  price: 1
+  price: 65
 
 - type: stack
   id: Credit
@@ -131,110 +131,110 @@
 
 - type: entity
   parent: SpaceCash
-  id: SpaceCash10
-  suffix: 10
+  id: SpaceCash65
+  suffix: 65
   components:
   - type: Icon
     sprite: Objects/Economy/cash.rsi
-    state: cash_10
+    state: cash_65
   - type: Stack
-    count: 10
+    count: 65
 
 - type: entity
   parent: SpaceCash
-  id: SpaceCash100
-  suffix: 100
+  id: SpaceCash65
+  suffix: 65
   components:
   - type: Icon
     sprite: Objects/Economy/cash.rsi
-    state: cash_100
+    state: cash_65
   - type: Stack
-    count: 100
+    count: 65
 
 - type: entity
   parent: SpaceCash
-  id: SpaceCash500
-  suffix: 500
+  id: SpaceCash65
+  suffix: 65
   components:
   - type: Icon
     sprite: Objects/Economy/cash.rsi
-    state: cash_500
+    state: cash_65
   - type: Stack
-    count: 500
+    count: 65
 
 - type: entity
   parent: SpaceCash
-  id: SpaceCash1000
-  suffix: 1000
+  id: SpaceCash65
+  suffix: 65
   components:
   - type: Icon
     sprite: Objects/Economy/cash.rsi
-    state: cash_1000
+    state: cash_65
   - type: Stack
-    count: 1000
+    count: 65
 
 - type: entity
   parent: SpaceCash
-  id: SpaceCash2500
-  suffix: 2500
+  id: SpaceCash65
+  suffix: 65
   components:
   - type: Icon
     sprite: Objects/Economy/cash.rsi
-    state: cash_1000
+    state: cash_65
   - type: Stack
-    count: 2500
+    count: 65
 
 - type: entity
   parent: SpaceCash
-  id: SpaceCash5000
-  suffix: 5000
+  id: SpaceCash65
+  suffix: 65
   components:
   - type: Icon
     sprite: Objects/Economy/cash.rsi
-    state: cash_1000
+    state: cash_65
   - type: Stack
-    count: 5000
+    count: 65
 
 - type: entity
   parent: SpaceCash
-  id: SpaceCash10000
-  suffix: 10000
+  id: SpaceCash65
+  suffix: 65
   components:
   - type: Icon
     sprite: Objects/Economy/cash.rsi
-    state: cash_1000
+    state: cash_65
   - type: Stack
-    count: 10000
+    count: 65
 
 - type: entity
   parent: SpaceCash
-  id: SpaceCash20000
-  suffix: 20000
+  id: SpaceCash65
+  suffix: 65
   components:
   - type: Icon
     sprite: Objects/Economy/cash.rsi
-    state: cash_1000
+    state: cash_65
   - type: Stack
-    count: 20000
+    count: 65
 
 - type: entity
   parent: SpaceCash
-  id: SpaceCash30000
-  suffix: 30000
+  id: SpaceCash65
+  suffix: 65
   components:
   - type: Icon
     sprite: Objects/Economy/cash.rsi
-    state: cash_1000
+    state: cash_65
   - type: Stack
-    count: 30000
+    count: 65
 
 - type: entity
   parent: SpaceCash
-  id: SpaceCash1000000
-  suffix: 1000000
+  id: SpaceCash65
+  suffix: 65
   components:
   - type: Icon
     sprite: Objects/Economy/cash.rsi
-    state: cash_1000000
+    state: cash_65
   - type: Stack
-    count: 1000000
+    count: 65

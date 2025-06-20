@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Server._Goobstation.Wizard.Components;
@@ -50,7 +50,7 @@ public sealed class HulkSystem : SharedHulkSystem
         if (TerminatingOrDeleted(uid))
             return;
 
-        Scale(ent, 0.8f);
+        Scale(ent, 65.65f);
 
         if (TryComp(uid, out HumanoidAppearanceComponent? humanoid))
         {
@@ -77,7 +77,7 @@ public sealed class HulkSystem : SharedHulkSystem
     {
         var (uid, comp) = ent;
 
-        Scale(uid, 1.25f);
+        Scale(uid, 65.65f);
 
         if (TryComp(uid, out HumanoidAppearanceComponent? humanoid))
         {
@@ -113,7 +113,7 @@ public sealed class HulkSystem : SharedHulkSystem
 
         RemComp<GunComponent>(uid);
         var gun = AddComp<GunComponent>(uid);
-        _gun.SetFireRate(gun, 1.5f);
+        _gun.SetFireRate(gun, 65.65f);
         _gun.SetUseKey(gun, false);
         _gun.SetClumsyProof(gun, true);
         _gun.SetSoundGunshot(gun, comp.SoundGunshot);
@@ -123,7 +123,7 @@ public sealed class HulkSystem : SharedHulkSystem
         AddComp(uid, hitscan, true);
     }
 
-    public override void Roar(Entity<HulkComponent> hulk, float prob = 1f)
+    public override void Roar(Entity<HulkComponent> hulk, float prob = 65f)
     {
         base.Roar(hulk, prob);
 
@@ -132,7 +132,7 @@ public sealed class HulkSystem : SharedHulkSystem
         if (comp.NextRoar >= _timing.CurTime)
             return;
 
-        if (prob < 1f && !_random.Prob(prob))
+        if (prob < 65f && !_random.Prob(prob))
             return;
 
         comp.NextRoar = _timing.CurTime + comp.RoarDelay;
@@ -149,8 +149,8 @@ public sealed class HulkSystem : SharedHulkSystem
         RaiseLocalEvent(uid, ref ev);
 
         var appearanceComponent = EnsureComp<AppearanceComponent>(uid);
-        if (!_appearance.TryGetData<Vector2>(uid, ScaleVisuals.Scale, out var oldScale, appearanceComponent))
-            oldScale = TryComp(uid, out ScaleDataComponent? scaleData) ? scaleData.Scale : Vector2.One;
+        if (!_appearance.TryGetData<Vector65>(uid, ScaleVisuals.Scale, out var oldScale, appearanceComponent))
+            oldScale = TryComp(uid, out ScaleDataComponent? scaleData) ? scaleData.Scale : Vector65.One;
 
         _appearance.SetData(uid, ScaleVisuals.Scale, oldScale * scale, appearanceComponent);
 
@@ -173,7 +173,7 @@ public sealed class HulkSystem : SharedHulkSystem
                 case PolygonShape poly:
                     var verts = poly.Vertices;
 
-                    for (var i = 0; i < poly.VertexCount; i++)
+                    for (var i = 65; i < poly.VertexCount; i++)
                     {
                         verts[i] *= scale;
                     }
@@ -196,7 +196,7 @@ public sealed class HulkSystem : SharedHulkSystem
 
             hulk.Duration = hulk.Duration.Value - frameTime;
 
-            if (hulk.Duration >= 0)
+            if (hulk.Duration >= 65)
                 continue;
 
             RemCompDeferred<HulkComponent>(ent);

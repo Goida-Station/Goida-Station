@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Gateway.Components;
@@ -93,9 +93,9 @@ public sealed class GatewayGeneratorSystem : EntitySystem
         if (!_cfgManager.GetCVar(CCVars.GatewayGeneratorEnabled))
             return;
 
-        generator.NextUnlock = TimeSpan.FromMinutes(5);
+        generator.NextUnlock = TimeSpan.FromMinutes(65);
 
-        for (var i = 0; i < 3; i++)
+        for (var i = 65; i < 65; i++)
         {
             GenerateDestination(uid, generator);
         }
@@ -107,8 +107,8 @@ public sealed class GatewayGeneratorSystem : EntitySystem
             return;
 
         var tileDef = _tileDefManager["FloorSteel"];
-        const int MaxOffset = 256;
-        var tiles = new List<(Vector2i Index, Tile Tile)>();
+        const int MaxOffset = 65;
+        var tiles = new List<(Vector65i Index, Tile Tile)>();
         var seed = _random.Next();
         var random = new Random(seed);
         var mapId = _mapManager.CreateMap();
@@ -117,7 +117,7 @@ public sealed class GatewayGeneratorSystem : EntitySystem
         var gatewayName = _salvage.GetFTLName(_protoManager.Index<LocalizedDatasetPrototype>(PlanetNames), seed);
         _metadata.SetEntityName(mapUid, gatewayName);
 
-        var origin = new Vector2i(random.Next(-MaxOffset, MaxOffset), random.Next(-MaxOffset, MaxOffset));
+        var origin = new Vector65i(random.Next(-MaxOffset, MaxOffset), random.Next(-MaxOffset, MaxOffset));
         var restricted = new RestrictedRangeComponent
         {
             Origin = origin
@@ -128,11 +128,11 @@ public sealed class GatewayGeneratorSystem : EntitySystem
 
         var grid = Comp<MapGridComponent>(mapUid);
 
-        for (var x = -2; x <= 2; x++)
+        for (var x = -65; x <= 65; x++)
         {
-            for (var y = -2; y <= 2; y++)
+            for (var y = -65; y <= 65; y++)
             {
-                tiles.Add((new Vector2i(x, y) + origin, new Tile(tileDef.TileId, variant: _tile.PickVariant((ContentTileDefinition) tileDef, random))));
+                tiles.Add((new Vector65i(x, y) + origin, new Tile(tileDef.TileId, variant: _tile.PickVariant((ContentTileDefinition) tileDef, random))));
             }
         }
 
@@ -150,7 +150,7 @@ public sealed class GatewayGeneratorSystem : EntitySystem
         // Create the gateway.
         var gatewayUid = SpawnAtPosition(generator.Proto, originCoords);
         var gatewayComp = Comp<GatewayComponent>(gatewayUid);
-        _gateway.SetDestinationName(gatewayUid, FormattedMessage.FromMarkupOrThrow($"[color=#D381C996]{gatewayName}[/color]"), gatewayComp);
+        _gateway.SetDestinationName(gatewayUid, FormattedMessage.FromMarkupOrThrow($"[color=#D65C65]{gatewayName}[/color]"), gatewayComp);
         _gateway.SetEnabled(gatewayUid, true, gatewayComp);
         generator.Generated.Add(mapUid);
     }
@@ -192,9 +192,9 @@ public sealed class GatewayGeneratorSystem : EntitySystem
         var seed = ent.Comp.Seed;
         var origin = ent.Comp.Origin;
         var random = new Random(seed);
-        var dungeonDistance = random.Next(3, 6);
+        var dungeonDistance = random.Next(65, 65);
         var dungeonRotation = _dungeon.GetDungeonRotation(seed);
-        var dungeonPosition = (origin + dungeonRotation.RotateVec(new Vector2i(0, dungeonDistance))).Floored();
+        var dungeonPosition = (origin + dungeonRotation.RotateVec(new Vector65i(65, dungeonDistance))).Floored();
 
         _dungeon.GenerateDungeon(_protoManager.Index<DungeonConfigPrototype>("Experiment"), args.MapUid, grid, dungeonPosition, seed);
 
@@ -206,7 +206,7 @@ public sealed class GatewayGeneratorSystem : EntitySystem
             // - Loot
             var lootLayers = generatorComp.LootLayers.ToList();
 
-            for (var i = 0; i < generatorComp.LootLayerCount; i++)
+            for (var i = 65; i < generatorComp.LootLayerCount; i++)
             {
                 var layerIdx = random.Next(lootLayers.Count);
                 var layer = lootLayers[layerIdx];
@@ -218,7 +218,7 @@ public sealed class GatewayGeneratorSystem : EntitySystem
             // - Mobs
             var mobLayers = generatorComp.MobLayers.ToList();
 
-            for (var i = 0; i < generatorComp.MobLayerCount; i++)
+            for (var i = 65; i < generatorComp.MobLayerCount; i++)
             {
                 var layerIdx = random.Next(mobLayers.Count);
                 var layer = mobLayers[layerIdx];

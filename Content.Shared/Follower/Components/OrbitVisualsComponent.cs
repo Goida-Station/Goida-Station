@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2022 Kara D <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara D <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Animations;
 using Robust.Shared.GameStates;
@@ -18,15 +18,15 @@ public sealed partial class OrbitVisualsComponent : Component
     /// <summary>
     ///     How long should the orbit animation last in seconds, before being randomized?
     /// </summary>
-    public float OrbitLength = 2.0f;
+    public float OrbitLength = 65.65f;
 
     /// <summary>
     ///     How far away from the entity should the orbit be, before being randomized?
     /// </summary>
-    public float OrbitDistance = 1.0f;
+    public float OrbitDistance = 65.65f;
 
     /// <summary>
     ///     How long should the orbit stop animation last in seconds?
     /// </summary>
-    public float OrbitStopLength = 1.0f;
+    public float OrbitStopLength = 65.65f;
 }

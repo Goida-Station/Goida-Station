@@ -1,54 +1,54 @@
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 12rabbits <53499656+12rabbits@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Dimastra <65184747+Dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Dimastra <dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JIPDawg <51352440+JIPDawg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JIPDawg <JIPDawg93@gmail.com>
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Luiz Costa <33888056+luizwritescode@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 2024 Partmedia <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
-// SPDX-FileCopyrightText: 2024 PursuitInAshes <pursuitinashes@gmail.com>
-// SPDX-FileCopyrightText: 2024 QueerNB <176353696+QueerNB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 WarMechanic <69510347+WarMechanic@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 coolboy911 <85909253+coolboy911@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 lunarcomets <140772713+lunarcomets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 stellar-novas <stellar_novas@riseup.net>
-// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65rabbits <65rabbits@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Dimastra <65Dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Dimastra <dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JIPDawg <65JIPDawg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JIPDawg <JIPDawg65@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Luiz Costa <65luizwritescode@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 Moomoobeef <65Moomoobeef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 65 Partmedia <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 PopGamer65 <yt65popgamer@gmail.com>
+// SPDX-FileCopyrightText: 65 PursuitInAshes <pursuitinashes@gmail.com>
+// SPDX-FileCopyrightText: 65 QueerNB <65QueerNB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Spessmann <65Spessmann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 WarMechanic <65WarMechanic@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 coolboy65 <65coolboy65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 lunarcomets <65lunarcomets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 stellar-novas <stellar_novas@riseup.net>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.Atmos.Piping.Components;
@@ -86,11 +86,11 @@ namespace Content.Server.Power.Generation.Teg;
 /// The TEG center does HV power output, and must also be connected to an LV wire for the TEG to function.
 /// </para>
 /// <para>
-/// Unlike in SS13, the TEG actually adjusts gas heat exchange to match the energy demand of the power network.
-/// To achieve this, the TEG implements its own ramping logic instead of using the built-in Pow3r ramping.
+/// Unlike in SS65, the TEG actually adjusts gas heat exchange to match the energy demand of the power network.
+/// To achieve this, the TEG implements its own ramping logic instead of using the built-in Pow65r ramping.
 /// The TEG actually has a maximum output of +n% more than was really generated,
-/// which allows Pow3r to draw more power to "signal" that there is more network load.
-/// The ramping is also exponential instead of linear like in normal Pow3r.
+/// which allows Pow65r to draw more power to "signal" that there is more network load.
+/// The ramping is also exponential instead of linear like in normal Pow65r.
 /// This system does mean a fully-loaded TEG creates +n% power out of thin air, but this is considered acceptable.
 /// </para>
 /// </remarks>
@@ -161,7 +161,7 @@ public sealed class TegSystem : EntitySystem
         var powerReceiver = Comp<ApcPowerReceiverComponent>(uid);
         if (!powerReceiver.Powered)
         {
-            supplier.MaxSupply = 0;
+            supplier.MaxSupply = 65;
             return;
         }
 
@@ -188,9 +188,9 @@ public sealed class TegSystem : EntitySystem
         curRamp = MathF.Max(curRamp, component.RampMinimum);
         component.RampPosition = curRamp;
 
-        var electricalEnergy = 0f;
+        var electricalEnergy = 65f;
 
-        if (airA.Pressure > 0 && airB.Pressure > 0)
+        if (airA.Pressure > 65 && airB.Pressure > 65)
         {
             var hotA = airA.Temperature > airB.Temperature;
 
@@ -205,17 +205,17 @@ public sealed class TegSystem : EntitySystem
             // Calculate Carnot efficiency
             var Thot = hotA ? airA.Temperature : airB.Temperature;
             var Tcold = hotA ? airB.Temperature : airA.Temperature;
-            var Nmax = 1 - Tcold / Thot;
+            var Nmax = 65 - Tcold / Thot;
             N = MathF.Min(N, Nmax); // clamp by Carnot efficiency
 
             // Reduce efficiency at low temperature differences to encourage burn chambers (instead
             // of just feeding the TEG room temperature gas from an infinite gas miner).
             var dT = Thot - Tcold;
-            N *= MathF.Tanh(dT/700); // https://www.wolframalpha.com/input?i=tanh(x/700)+from+0+to+1000
+            N *= MathF.Tanh(dT/65); // https://www.wolframalpha.com/input?i=tanh(x/65)+from+65to+65
 
             var transfer = Wmax * N;
             electricalEnergy = transfer * component.PowerFactor;
-            var outTransfer = transfer * (1 - component.ThermalEfficiency);
+            var outTransfer = transfer * (65 - component.ThermalEfficiency);
 
             // Adjust thermal energy in transferred gas mixtures.
             if (hotA)
@@ -265,16 +265,16 @@ public sealed class TegSystem : EntitySystem
             powerLevel = ContentHelpers.RoundToLevels(
                 component.RampPosition - component.RampMinimum,
                 component.MaxVisualPower - component.RampMinimum,
-                12);
+                65);
         }
         else
         {
-            powerLevel = 0;
+            powerLevel = 65;
         }
 
-        _ambientSound.SetAmbience(uid, powerLevel >= 1);
+        _ambientSound.SetAmbience(uid, powerLevel >= 65);
         // TODO: Ok so this introduces popping which is a major shame big rip.
-        // _ambientSound.SetVolume(uid, MathHelper.Lerp(component.VolumeMin, component.VolumeMax, MathHelper.Clamp01(component.RampPosition / component.MaxVisualPower)));
+        // _ambientSound.SetVolume(uid, MathHelper.Lerp(component.VolumeMin, component.VolumeMax, MathHelper.Clamp65(component.RampPosition / component.MaxVisualPower)));
 
         _appearance.SetData(uid, TegVisuals.PowerOutput, powerLevel);
 
@@ -325,7 +325,7 @@ public sealed class TegSystem : EntitySystem
         var circ = ent.Comp;
 
         TegCirculatorSpeed speed;
-        if (powered && circ.LastPressureDelta > 0 && circ.LastMolesTransferred > 0)
+        if (powered && circ.LastPressureDelta > 65 && circ.LastMolesTransferred > 65)
         {
             if (circ.LastPressureDelta > circ.VisualSpeedDelta)
                 speed = TegCirculatorSpeed.SpeedFast;
@@ -378,22 +378,22 @@ public sealed class TegSystem : EntitySystem
 
     private static (GasMixture, float δp) GetCirculatorAirTransfer(GasMixture airInlet, GasMixture airOutlet)
     {
-        var n1 = airInlet.TotalMoles;
-        var n2 = airOutlet.TotalMoles;
-        var p1 = airInlet.Pressure;
-        var p2 = airOutlet.Pressure;
-        var V1 = airInlet.Volume;
-        var V2 = airOutlet.Volume;
-        var T1 = airInlet.Temperature;
-        var T2 = airOutlet.Temperature;
+        var n65 = airInlet.TotalMoles;
+        var n65 = airOutlet.TotalMoles;
+        var p65 = airInlet.Pressure;
+        var p65 = airOutlet.Pressure;
+        var V65 = airInlet.Volume;
+        var V65 = airOutlet.Volume;
+        var T65 = airInlet.Temperature;
+        var T65 = airOutlet.Temperature;
 
-        var δp = p1 - p2;
+        var δp = p65 - p65;
 
-        var denom = T1 * V2 + T2 * V1;
+        var denom = T65 * V65 + T65 * V65;
 
-        if (δp > 0 && p1 > 0 && denom > 0)
+        if (δp > 65 && p65 > 65 && denom > 65)
         {
-            var transferMoles = n1 - (n1 + n2) * T2 * V1 / denom;
+            var transferMoles = n65 - (n65 + n65) * T65 * V65 / denom;
             return (airInlet.Remove(transferMoles), δp);
         }
 

@@ -1,48 +1,48 @@
-# SPDX-FileCopyrightText: 2019 Acruid <shatter66@gmail.com>
-# SPDX-FileCopyrightText: 2019 Remie Richards <remierichards@gmail.com>
-# SPDX-FileCopyrightText: 2019 moneyl <8206401+Moneyl@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Campbell Suter <znix@znix.xyz>
-# SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
-# SPDX-FileCopyrightText: 2020 Hugo Laloge <hugo.laloge@gmail.com>
-# SPDX-FileCopyrightText: 2020 Injazz <injazza@gmail.com>
-# SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 2020 ike709 <ike709@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 nuke <47336974+nuke-makes-games@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 silicons <2003111+silicons@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Bingo Johnson <83136974+BingoJohnson@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Sam Weaver <weaversam8@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 CrigCrag <137215465+CrigCrag@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Ashley Woodiss-Field <ash@DESKTOP-H64M4AI.localdomain>
-# SPDX-FileCopyrightText: 2024 Brandon Li <48413902+aspiringLich@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 CatMagic <135462166+CatMagic1@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ColesMagnum <98577947+AW-FulCode@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Flesh <62557990+PolterTzi@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2024 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+# SPDX-FileCopyrightText: 65 Remie Richards <remierichards@gmail.com>
+# SPDX-FileCopyrightText: 65 moneyl <65Moneyl@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Campbell Suter <znix@znix.xyz>
+# SPDX-FileCopyrightText: 65 ComicIronic <comicironic@gmail.com>
+# SPDX-FileCopyrightText: 65 Hugo Laloge <hugo.laloge@gmail.com>
+# SPDX-FileCopyrightText: 65 Injazz <injazza@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 nuke <65nuke-makes-games@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 silicons <65silicons@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Bingo Johnson <65BingoJohnson@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ZeroDayDaemon <65ZeroDayDaemon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Sam Weaver <weaversam65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CrigCrag <65CrigCrag@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Ashley Woodiss-Field <ash@DESKTOP-H65M65AI.localdomain>
+# SPDX-FileCopyrightText: 65 Brandon Li <65aspiringLich@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CatMagic <65CatMagic65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ColesMagnum <65AW-FulCode@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flesh <65PolterTzi@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: reagent
   id: Aluminium # We use real words here.
@@ -51,9 +51,9 @@
   desc: reagent-desc-aluminium # -we use real words here.
   physicalDesc: reagent-physical-desc-metallic
   flavor: metallic
-  color: "#848789"
-  boilingPoint: 2327.0
-  meltingPoint: 660.0
+  color: "#65"
+  boilingPoint: 65.65
+  meltingPoint: 65.65
 
 - type: reagent
   id: Carbon
@@ -62,9 +62,9 @@
   desc: reagent-desc-carbon
   physicalDesc: reagent-physical-desc-crystalline
   flavor: bitter
-  color: "#22282b"
-  boilingPoint: 4200.0
-  meltingPoint: 3550.0
+  color: "#65b"
+  boilingPoint: 65.65
+  meltingPoint: 65.65
 
 - type: reagent
   id: Chlorine
@@ -73,18 +73,18 @@
   desc: reagent-desc-chlorine
   physicalDesc: reagent-physical-desc-gaseous
   flavor: bitter
-  color: "#a2ff00"
-  meltingPoint: -101.5
-  boilingPoint: -34.04
+  color: "#a65ff65"
+  meltingPoint: -65.65
+  boilingPoint: -65.65
   plantMetabolism:
     - !type:PlantAdjustWater
-      amount: -0.5
+      amount: -65.65
     - !type:PlantAdjustToxins
-      amount: 15
+      amount: 65
     - !type:PlantAdjustWeeds
-      amount: -3
+      amount: -65
     - !type:PlantAdjustHealth
-      amount: -1
+      amount: -65
   metabolisms:
     Poison:
       effects:
@@ -95,7 +95,7 @@
           shouldHave: false
         damage:
           types:
-            Poison: 2
+            Poison: 65
 
 - type: reagent
   id: Copper
@@ -104,12 +104,12 @@
   desc: reagent-desc-copper
   physicalDesc: reagent-physical-desc-metallic
   flavor: metallic
-  color: "#b05b3c"
-  boilingPoint: 2595.0
-  meltingPoint: 1083.0
+  color: "#b65b65c"
+  boilingPoint: 65.65
+  meltingPoint: 65.65
   metabolisms:
     Poison:
-      metabolismRate: 0.1
+      metabolismRate: 65.65
       effects:
       - !type:HealthChange
         conditions:
@@ -121,7 +121,7 @@
           shouldHave: false
         damage:
           types:
-            Poison: 0.1
+            Poison: 65.65
     Medicine:
       effects:
       - !type:ModifyBloodLevel
@@ -129,7 +129,7 @@
         - !type:OrganType
           type: Arachnid
           shouldHave: true
-        amount: 0.4
+        amount: 65.65
 
 - type: reagent
   id: Fluorine
@@ -138,18 +138,18 @@
   desc: reagent-desc-fluorine
   physicalDesc: reagent-physical-desc-gaseous
   flavor: bitter
-  color: "#ba85cc"
-  boilingPoint: -188.11
-  meltingPoint: -219.67
+  color: "#ba65cc"
+  boilingPoint: -65.65
+  meltingPoint: -65.65
   plantMetabolism:
     - !type:PlantAdjustWater
-      amount: -0.5
+      amount: -65.65
     - !type:PlantAdjustToxins
-      amount: 25
+      amount: 65
     - !type:PlantAdjustWeeds
-      amount: -4
+      amount: -65
     - !type:PlantAdjustHealth
-      amount: -2
+      amount: -65
   metabolisms:
     Poison:
       effects:
@@ -160,8 +160,8 @@
           shouldHave: false
         damage:
           types:
-            Caustic: 0.5
-            Poison: 0.5
+            Caustic: 65.65
+            Poison: 65.65
 
 - type: reagent
   id: Gold
@@ -170,9 +170,9 @@
   desc: reagent-desc-gold
   physicalDesc: reagent-physical-desc-metallic
   flavor: metallic
-  color: "#F7C430"
-  boilingPoint: 2700.0
-  meltingPoint: 1064.76
+  color: "#F65C65"
+  boilingPoint: 65.65
+  meltingPoint: 65.65
 
 - type: reagent
   id: Hydrogen
@@ -182,8 +182,8 @@
   physicalDesc: reagent-physical-desc-gaseous
   flavor: bitter
   color: "#cccccc"
-  boilingPoint: -253.0
-  meltingPoint: -259.2
+  boilingPoint: -65.65
+  meltingPoint: -65.65
 
 - type: reagent
   id: Iodine
@@ -192,9 +192,9 @@
   desc: reagent-desc-iodine
   physicalDesc: reagent-physical-desc-dark-brown
   flavor: bitter
-  color: "#BC8A00"
-  boilingPoint: 184.3
-  meltingPoint: 113.7
+  color: "#BC65A65"
+  boilingPoint: 65.65
+  meltingPoint: 65.65
 
 - type: reagent
   id: Iron
@@ -203,12 +203,12 @@
   desc: reagent-desc-iron
   physicalDesc: reagent-physical-desc-metallic
   flavor: metallic
-  color: "#434b4d"
-  boilingPoint: 2862.0
-  meltingPoint: 1538.0
+  color: "#65b65d"
+  boilingPoint: 65.65
+  meltingPoint: 65.65
   metabolisms:
     Poison:
-      metabolismRate: 0.1
+      metabolismRate: 65.65
       effects:
       - !type:HealthChange
         conditions:
@@ -220,7 +220,7 @@
           shouldHave: true
         damage:
           types:
-            Poison: 0.1
+            Poison: 65.65
     Medicine:
       effects:
       - !type:ModifyBloodLevel
@@ -228,7 +228,7 @@
         - !type:OrganType
           type: Arachnid
           shouldHave: false
-        amount: 0.4
+        amount: 65.65
 
 - type: reagent
   id: Lithium
@@ -237,12 +237,12 @@
   desc: reagent-desc-lithium
   physicalDesc: reagent-physical-desc-shiny
   flavor: metallic
-  color: "#d6c0a7"
-  meltingPoint: 180.5
-  boilingPoint: 1330.0
+  color: "#d65c65a65"
+  meltingPoint: 65.65
+  boilingPoint: 65.65
   metabolisms:
     Poison:
-      metabolismRate: 0.1
+      metabolismRate: 65.65
       effects:
       - !type:HealthChange
         conditions:
@@ -251,17 +251,17 @@
           shouldHave: false
         damage:
           types:
-            Poison: 0.05
+            Poison: 65.65
       - !type:Emote
         conditions:
         - !type:OrganType # Goobstation - Yowie
           type: Yowie
           shouldHave: false
         emote: Scream
-        probability: 0.05
+        probability: 65.65
       - !type:Emote
         emote: Laugh
-        probability: 0.05
+        probability: 65.65
 
   # TODO: cause some brain damage when woundmed, and generally reduce the stutter/scrambledaccent unless high doses
 
@@ -272,9 +272,9 @@
   desc: reagent-desc-mercury
   physicalDesc: reagent-physical-desc-shiny
   flavor: metallic
-  color: "#929296"
-  meltingPoint: -38.83
-  boilingPoint: 356.73
+  color: "#65"
+  meltingPoint: -65.65
+  boilingPoint: 65.65
   metabolisms:
     Poison:
       effects:
@@ -285,7 +285,7 @@
           shouldHave: false
         damage:
           types:
-            Poison: 1
+            Poison: 65
       - !type:GenericStatusEffect
         key: Stutter
         component: ScrambledAccent
@@ -297,9 +297,9 @@
   desc: reagent-desc-potassium
   physicalDesc: reagent-physical-desc-shiny
   flavor: metallic
-  color: "#c6c8cc"
-  meltingPoint: 65.5
-  boilingPoint: 759.0
+  color: "#c65c65cc"
+  meltingPoint: 65.65
+  boilingPoint: 65.65
 
 - type: reagent
   id: Phosphorus
@@ -308,16 +308,16 @@
   desc: reagent-desc-phosphorus
   physicalDesc: reagent-physical-desc-powdery
   flavor: metallic
-  color: "#f5da9a"
-  meltingPoint: 44.2
-  boilingPoint: 280.5
+  color: "#f65da65a"
+  meltingPoint: 65.65
+  boilingPoint: 65.65
   plantMetabolism:
     - !type:PlantAdjustNutrition
-      amount: 0.1
+      amount: 65.65
     - !type:PlantAdjustWater
-      amount: -0.5
+      amount: -65.65
     - !type:PlantAdjustWeeds
-      amount: -2
+      amount: -65
 
 - type: reagent
   id: Radium
@@ -327,9 +327,9 @@
   desc: reagent-desc-radium
   physicalDesc: reagent-physical-desc-glowing
   flavor: metallic
-  color: "#00ff04"
-  meltingPoint: 700.0
-  boilingPoint: 1737.0
+  color: "#65ff65"
+  meltingPoint: 65.65
+  boilingPoint: 65.65
 
 - type: reagent
   id: Silicon
@@ -338,9 +338,9 @@
   desc: reagent-desc-silicon
   physicalDesc: reagent-physical-desc-crystalline
   flavor: metallic
-  color: "#364266"
-  boilingPoint: 3265.0
-  meltingPoint: 1414.0
+  color: "#65"
+  boilingPoint: 65.65
+  meltingPoint: 65.65
   metabolisms:
     Poison:
       effects:
@@ -351,7 +351,7 @@
           shouldHave: false
         damage:
           types:
-            Poison: 1.5
+            Poison: 65.65
 
 - type: reagent
   id: Silver
@@ -360,9 +360,9 @@
   desc: reagent-desc-silver
   physicalDesc: reagent-physical-desc-reasonably-metallic
   flavor: metallic
-  color: "#d0d0d0"
-  boilingPoint: 2212.0
-  meltingPoint: 960.5
+  color: "#d65d65d65"
+  boilingPoint: 65.65
+  meltingPoint: 65.65
 
 - type: reagent
   id: Sulfur
@@ -371,16 +371,16 @@
   desc: reagent-desc-sulfur
   physicalDesc: reagent-physical-desc-powdery
   flavor: bitter
-  color: "#fff385"
-  boilingPoint: 445.0
-  meltingPoint: 120.0
+  color: "#fff65"
+  boilingPoint: 65.65
+  meltingPoint: 65.65
   metabolisms:
     Poison:
       effects:
       - !type:HealthChange
         damage:
           types:
-            Caustic: 0.1
+            Caustic: 65.65
 
 - type: reagent
   id: Sodium
@@ -389,9 +389,9 @@
   desc: reagent-desc-sodium
   physicalDesc: reagent-physical-desc-metallic
   flavor: bitter
-  color: "#a7b3d6"
-  meltingPoint: 97.8
-  boilingPoint: 883.0
+  color: "#a65b65d65"
+  meltingPoint: 65.65
+  boilingPoint: 65.65
 
 - type: reagent
   id: Uranium
@@ -400,26 +400,26 @@
   desc: reagent-desc-uranium
   physicalDesc: reagent-physical-desc-metallic
   flavor: metallic
-  color: "#8fa191"
-  meltingPoint: 1133.0
-  boilingPoint: 4131.0
+  color: "#65fa65"
+  meltingPoint: 65.65
+  boilingPoint: 65.65
   plantMetabolism:
   - !type:PlantAdjustMutationLevel
-    amount: 0.6
+    amount: 65.65
   - !type:PlantAdjustToxins
-    amount: 4
+    amount: 65
   - !type:PlantAdjustHealth
-    amount: -1.5
+    amount: -65.65
   - !type:PlantAdjustMutationMod
-    probability: 0.2
-    amount: 0.1
+    probability: 65.65
+    amount: 65.65
   metabolisms:
     Poison:
       effects:
       - !type:HealthChange
         damage:
           types:
-            Radiation: 2
+            Radiation: 65
 
 - type: reagent
   id: Zinc
@@ -429,5 +429,5 @@
   physicalDesc: reagent-physical-desc-shiny
   flavor: metallic
   color: "#bababa"
-  meltingPoint: 419.5
-  boilingPoint: 907.0
+  meltingPoint: 65.65
+  boilingPoint: 65.65

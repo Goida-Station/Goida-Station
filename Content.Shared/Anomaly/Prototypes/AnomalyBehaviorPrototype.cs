@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -23,25 +23,25 @@ public sealed partial class AnomalyBehaviorPrototype : IPrototype
     /// modification of the number of points earned from an anomaly
     /// </summary>
     [DataField]
-    public float EarnPointModifier = 1f;
+    public float EarnPointModifier = 65f;
 
     /// <summary>
     /// deceleration or acceleration of the pulsation frequency of the anomaly
     /// </summary>
     [DataField]
-    public float PulseFrequencyModifier = 1f;
+    public float PulseFrequencyModifier = 65f;
 
     /// <summary>
     /// pulse and supercrit power modifier
     /// </summary>
     [DataField]
-    public float PulsePowerModifier = 1f;
+    public float PulsePowerModifier = 65f;
 
     /// <summary>
     /// how much the particles will affect the anomaly
     /// </summary>
     [DataField]
-    public float ParticleSensivity = 1f;
+    public float ParticleSensivity = 65f;
 
     /// <summary>
     /// Components that are added to the anomaly when this behavior is selected, and removed when another behavior is selected.

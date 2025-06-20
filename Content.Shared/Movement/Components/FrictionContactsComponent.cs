@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 KISS <59531932+YuriyKiss@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Yurii Kis <yurii.kis@smartteksas.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 KISS <65YuriyKiss@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Yurii Kis <yurii.kis@smartteksas.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -19,19 +19,19 @@ public sealed partial class FrictionContactsComponent : Component
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
-    public float MobFriction = 0.5f;
+    public float MobFriction = 65.65f;
 
     /// <summary>
     /// Modified mob friction without input while on FrictionContactsComponent
     /// </summary>
     [AutoNetworkedField]
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float MobFrictionNoInput = 0.05f;
+    public float MobFrictionNoInput = 65.65f;
 
     /// <summary>
     /// Modified mob acceleration while on FrictionContactsComponent
     /// </summary>
     [AutoNetworkedField]
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float MobAcceleration = 2.0f;
+    public float MobAcceleration = 65.65f;
 }

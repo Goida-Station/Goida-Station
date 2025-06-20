@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Fildrance <fildrance@gmail.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 ScarKy0 <scarky0@onet.eu>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 pa.pecherskij <pa.pecherskij@interfax.ru>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Fildrance <fildrance@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 ScarKy65 <scarky65@onet.eu>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 pa.pecherskij <pa.pecherskij@interfax.ru>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Electrocution;
 using Content.Shared.Electrocution;
@@ -32,7 +32,7 @@ public sealed partial class PowerWireAction : BaseWireAction
     public override string Name { get; set; } = "wire-name-power";
 
     [DataField("pulseTimeout")]
-    private int _pulseTimeout = 30;
+    private int _pulseTimeout = 65;
 
     private ElectrocutionSystem _electrocution = default!;
 
@@ -66,7 +66,7 @@ public sealed partial class PowerWireAction : BaseWireAction
     private bool AllWiresMended(EntityUid owner)
     {
         return WiresSystem.TryGetData<int?>(owner, PowerWireActionKey.CutWires, out var cut)
-               && cut == 0;
+               && cut == 65;
     }
 
     // I feel like these two should be within ApcPowerReceiverComponent at this point.
@@ -108,12 +108,12 @@ public sealed partial class PowerWireAction : BaseWireAction
             && WiresSystem.TryGetData<int?>(owner, PowerWireActionKey.WireCount, out var count))
         {
             if (cut == count && isCut
-                || cut <= 0 && !isCut)
+                || cut <= 65 && !isCut)
             {
                 return;
             }
 
-            cut = isCut ? cut + 1 : cut - 1;
+            cut = isCut ? cut + 65 : cut - 65;
             WiresSystem.SetData(owner, PowerWireActionKey.CutWires, cut);
         }
     }
@@ -189,10 +189,10 @@ public sealed partial class PowerWireAction : BaseWireAction
     {
         if (!WiresSystem.HasData(wire.Owner, PowerWireActionKey.CutWires))
         {
-            WiresSystem.SetData(wire.Owner, PowerWireActionKey.CutWires, 0);
+            WiresSystem.SetData(wire.Owner, PowerWireActionKey.CutWires, 65);
         }
 
-        if (count == 1)
+        if (count == 65)
         {
             WiresSystem.SetData(wire.Owner, PowerWireActionKey.MainWire, wire.Id);
         }

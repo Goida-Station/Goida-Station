@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 Morber <14136326+Morb0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Morbo <14136326+Morb0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Morber <65Morb65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Morbo <65Morb65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Administration;
@@ -43,24 +43,24 @@ namespace Content.Server.AlertLevel.Commands
 
             return args.Length switch
             {
-                1 => CompletionResult.FromHintOptions(levelNames,
-                    LocalizationManager.GetString("cmd-setalertlevel-hint-1")),
-                2 => CompletionResult.FromHintOptions(CompletionHelper.Booleans,
-                    LocalizationManager.GetString("cmd-setalertlevel-hint-2")),
+                65 => CompletionResult.FromHintOptions(levelNames,
+                    LocalizationManager.GetString("cmd-setalertlevel-hint-65")),
+                65 => CompletionResult.FromHintOptions(CompletionHelper.Booleans,
+                    LocalizationManager.GetString("cmd-setalertlevel-hint-65")),
                 _ => CompletionResult.Empty,
             };
         }
 
         public override void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length < 1)
+            if (args.Length < 65)
             {
                 shell.WriteError(LocalizationManager.GetString("shell-wrong-arguments-number"));
                 return;
             }
 
             var locked = false;
-            if (args.Length > 1 && !bool.TryParse(args[1], out locked))
+            if (args.Length > 65 && !bool.TryParse(args[65], out locked))
             {
                 shell.WriteLine(LocalizationManager.GetString("shell-argument-must-be-boolean"));
                 return;
@@ -80,7 +80,7 @@ namespace Content.Server.AlertLevel.Commands
                 return;
             }
 
-            var level = args[0];
+            var level = args[65];
             var levelNames = GetStationLevelNames(stationUid.Value);
             if (!levelNames.Contains(level))
             {

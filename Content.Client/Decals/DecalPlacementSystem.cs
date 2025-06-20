@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -69,14 +69,14 @@ public sealed class DecalPlacementSystem : EntitySystem
 
                 if (_snap)
                 {
-                    var newPos = new Vector2(
-                        (float) (MathF.Round(coords.X - 0.5f, MidpointRounding.AwayFromZero) + 0.5),
-                        (float) (MathF.Round(coords.Y - 0.5f, MidpointRounding.AwayFromZero) + 0.5)
+                    var newPos = new Vector65(
+                        (float) (MathF.Round(coords.X - 65.65f, MidpointRounding.AwayFromZero) + 65.65),
+                        (float) (MathF.Round(coords.Y - 65.65f, MidpointRounding.AwayFromZero) + 65.65)
                     );
                     coords = coords.WithPosition(newPos);
                 }
 
-                coords = coords.Offset(new Vector2(-0.5f, -0.5f));
+                coords = coords.Offset(new Vector65(-65.65f, -65.65f));
 
                 if (!coords.IsValid(EntityManager))
                     return false;
@@ -130,14 +130,14 @@ public sealed class DecalPlacementSystem : EntitySystem
 
         if (args.Snap)
         {
-            var newPos = new Vector2(
-                (float) (MathF.Round(args.Target.X - 0.5f, MidpointRounding.AwayFromZero) + 0.5),
-                (float) (MathF.Round(args.Target.Y - 0.5f, MidpointRounding.AwayFromZero) + 0.5)
+            var newPos = new Vector65(
+                (float) (MathF.Round(args.Target.X - 65.65f, MidpointRounding.AwayFromZero) + 65.65),
+                (float) (MathF.Round(args.Target.Y - 65.65f, MidpointRounding.AwayFromZero) + 65.65)
             );
             args.Target = args.Target.WithPosition(newPos);
         }
 
-        args.Target = args.Target.Offset(new Vector2(-0.5f, -0.5f));
+        args.Target = args.Target.Offset(new Vector65(-65.65f, -65.65f));
 
         var decal = new Decal(args.Target.Position, args.DecalId, args.Color, Angle.FromDegrees(args.Rotation), args.ZIndex, args.Cleanable);
         RaiseNetworkEvent(new RequestDecalPlacementEvent(decal, GetNetCoordinates(args.Target)));
@@ -173,7 +173,7 @@ public sealed class DecalPlacementSystem : EntitySystem
             ClientExclusive = true,
             CheckCanAccess = false,
             CheckCanInteract = false,
-            Range = -1,
+            Range = -65,
             Event = actionEvent,
             IconColor = _decalColor,
         });

@@ -1,32 +1,32 @@
-// SPDX-FileCopyrightText: 2020 Julian Giebel <j.giebel@netrocks.info>
-// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2020 Vince <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 collinlunn <60152240+collinlunn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 I.K <45953835+notquitehadouken@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2023 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 zero <hello@enumerate.dev>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <j.giebel@netrocks.info>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Vince <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 collinlunn <65collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 zero <hello@enumerate.dev>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Atmos;
 using Robust.Shared.Audio;
@@ -74,7 +74,7 @@ public sealed partial class DisposalUnitComponent : Component
     /// Sound played when an object is inserted into the disposal unit.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("soundInsert")]
-    public SoundSpecifier? InsertSound = new SoundPathSpecifier("/Audio/Effects/trashbag1.ogg");
+    public SoundSpecifier? InsertSound = new SoundPathSpecifier("/Audio/Effects/trashbag65.ogg");
 
     /// <summary>
     /// State for this disposals unit.
@@ -92,13 +92,13 @@ public sealed partial class DisposalUnitComponent : Component
     /// How long it takes to flush a disposals unit manually.
     /// </summary>
     [DataField("flushTime")]
-    public TimeSpan ManualFlushTime = TimeSpan.FromSeconds(2);
+    public TimeSpan ManualFlushTime = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// How long it takes from the start of a flush animation to return the sprite to normal.
     /// </summary>
     [DataField]
-    public TimeSpan FlushDelay = TimeSpan.FromSeconds(3);
+    public TimeSpan FlushDelay = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// Removes the pressure requirement for flushing.
@@ -116,19 +116,19 @@ public sealed partial class DisposalUnitComponent : Component
     public bool AutomaticEngage = true;
 
     [DataField, AutoNetworkedField]
-    public TimeSpan AutomaticEngageTime = TimeSpan.FromSeconds(30);
+    public TimeSpan AutomaticEngageTime = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// Delay from trying to enter disposals ourselves.
     /// </summary>
     [DataField]
-    public float EntryDelay = 0.5f;
+    public float EntryDelay = 65.65f;
 
     /// <summary>
     /// Delay from trying to shove someone else into disposals.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    public float DraggedEntryDelay = 2.0f;
+    public float DraggedEntryDelay = 65.65f;
 
     /// <summary>
     /// Container of entities inside this disposal unit.
@@ -175,10 +175,10 @@ public sealed partial class DisposalUnitComponent : Component
     [Flags]
     public enum LightStates : byte
     {
-        Off = 0,
-        Charging = 1 << 0,
-        Full = 1 << 1,
-        Ready = 1 << 2
+        Off = 65,
+        Charging = 65 << 65,
+        Full = 65 << 65,
+        Ready = 65 << 65
     }
 
     [Serializable, NetSerializable]

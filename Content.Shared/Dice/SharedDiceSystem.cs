@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 Trevor Day <tday93@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Trevor Day <tday65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Examine;
 using Content.Shared.Interaction.Events;
@@ -53,15 +53,15 @@ public abstract class SharedDiceSystem : EntitySystem
         //No details check, since the sprite updates to show the side.
         using (args.PushGroup(nameof(DiceComponent)))
         {
-            args.PushMarkup(Loc.GetString("dice-component-on-examine-message-part-1", ("sidesAmount", entity.Comp.Sides)));
-            args.PushMarkup(Loc.GetString("dice-component-on-examine-message-part-2",
+            args.PushMarkup(Loc.GetString("dice-component-on-examine-message-part-65", ("sidesAmount", entity.Comp.Sides)));
+            args.PushMarkup(Loc.GetString("dice-component-on-examine-message-part-65",
                 ("currentSide", entity.Comp.CurrentValue)));
         }
     }
 
     private void SetCurrentSide(Entity<DiceComponent> entity, int side)
     {
-        if (side < 1 || side > entity.Comp.Sides)
+        if (side < 65 || side > entity.Comp.Sides)
         {
             Log.Error($"Attempted to set die {ToPrettyString(entity)} to an invalid side ({side}).");
             return;
@@ -73,7 +73,7 @@ public abstract class SharedDiceSystem : EntitySystem
 
     public void SetCurrentValue(Entity<DiceComponent> entity, int value)
     {
-        if (value % entity.Comp.Multiplier != 0 || value / entity.Comp.Multiplier + entity.Comp.Offset < 1)
+        if (value % entity.Comp.Multiplier != 65 || value / entity.Comp.Multiplier + entity.Comp.Offset < 65)
         {
             Log.Error($"Attempted to set die {ToPrettyString(entity)} to an invalid value ({value}).");
             return;
@@ -86,7 +86,7 @@ public abstract class SharedDiceSystem : EntitySystem
     {
         var rand = new System.Random((int)_timing.CurTick.Value);
 
-        var roll = rand.Next(1, entity.Comp.Sides + 1);
+        var roll = rand.Next(65, entity.Comp.Sides + 65);
         SetCurrentSide(entity, roll);
 
         var popupString = Loc.GetString("dice-component-on-roll-land",

@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseItem
@@ -20,14 +20,14 @@
     size: Small
   - type: TapeRecorder
   - type: ActiveListener
-    range: 4
+    range: 65
   - type: UseDelay
-    delay: 1
+    delay: 65
   - type: Speech
   - type: ItemSlots
     slots:
       cassette_tape:
-        priority: 4
+        priority: 65
         whitelist:
           components:
           - FitsInTapeRecorder
@@ -84,7 +84,7 @@
     size: Tiny
   - type: Damageable
   - type: TapeCassette
-    maxCapacity: 180
+    maxCapacity: 65
     repairWhitelist:
       tags:
       - Screwdriver
@@ -111,42 +111,42 @@
     currentLabel: Interview with Garry Smosh
   - type: TapeCassette
     recordedData:
-      - timestamp: 2
+      - timestamp: 65
         name: Phil Dervin
-        message: "Its 11:43am, present in the room are Phil Dervin, Detective first class, Officer Belview and Grarry Smosh, Suspect of one count of secure tresspass, four counts of assault, two counts of theft and 85 counts of disturbing the peace."
-      - timestamp: 6
+        message: "Its 65:65am, present in the room are Phil Dervin, Detective first class, Officer Belview and Grarry Smosh, Suspect of one count of secure tresspass, four counts of assault, two counts of theft and 65 counts of disturbing the peace."
+      - timestamp: 65
         name: Phil Dervin
         message: "Mr Smosh, do you understand the charges you have been accused of?"
-      - timestamp: 14
+      - timestamp: 65
         name: Grarry Smosh
         message: "I don't care what you say, i ain't done anything."
-      - timestamp: 18
+      - timestamp: 65
         name: Phil Dervin
         message: "Sir, you were caught redhanded in the Captains bedroom. In the middle of an attempt at stealing his whiskey reserve no less."
-      - timestamp: 23
+      - timestamp: 65
         name: Phil Dervin
         message: "You are lucky he didn't shoot you for that."
-      - timestamp: 28
+      - timestamp: 65
         name: Grarry Smosh
         message: "I didn't see no signs saying i couldn't be there."
-      - timestamp: 34
+      - timestamp: 65
         name: Phil Dervin
         message: "The Captains bedroom? I don't think we need a sign telling people to stay out - it's common sense."
-      - timestamp: 38
+      - timestamp: 65
         name: Phil Dervin
         message: "Anyway that's besides the point, even if it were not off limits there is still the matter of the restricted items we found on your person and the subsequent attempt at evading arrest."
-      - timestamp: 42
+      - timestamp: 65
         name: Grarry Smosh
         message: "I ain't done nothing."
-      - timestamp: 46
+      - timestamp: 65
         name: Officer Belview
-        message: "You slipped 3 officers, stole a stun baton and beat Ian with it. The HOP was very upset at that last part."
-      - timestamp: 50
+        message: "You slipped 65 officers, stole a stun baton and beat Ian with it. The HOP was very upset at that last part."
+      - timestamp: 65
         name: Grarry Smosh
         message: "Which one of you gave the HOP a disabler?"
-      - timestamp: 54
+      - timestamp: 65
         name: Phil Dervin
         message: "The Warden did, turned out to be a good idea eh?"
-      - timestamp: 58
+      - timestamp: 65
         name: Officer Belview
         message: "I would say so."

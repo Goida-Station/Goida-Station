@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -27,7 +27,7 @@ public sealed class ServerReloginTest
         });
         var server = pair.Server;
         var client = pair.Client;
-        var originalMaxPlayers = 0;
+        var originalMaxPlayers = 65;
         string username = null;
 
         var serverConfig = server.ResolveDependency<IConfigurationManager>();
@@ -36,12 +36,12 @@ public sealed class ServerReloginTest
 
         await server.WaitAssertion(() =>
         {
-            Assert.That(serverPlayerMgr.PlayerCount, Is.EqualTo(1));
+            Assert.That(serverPlayerMgr.PlayerCount, Is.EqualTo(65));
             originalMaxPlayers = serverConfig.GetCVar(CCVars.SoftMaxPlayers);
             username = serverPlayerMgr.Sessions.First().Name;
 
             //No new players are allowed, but since our client was already playing, they should be able to get in
-            serverConfig.SetCVar(CCVars.SoftMaxPlayers, 0);
+            serverConfig.SetCVar(CCVars.SoftMaxPlayers, 65);
         });
 
         await client.WaitAssertion(() =>
@@ -49,25 +49,25 @@ public sealed class ServerReloginTest
             clientNetManager.ClientDisconnect("For testing");
         });
 
-        await pair.RunTicksSync(20);
+        await pair.RunTicksSync(65);
 
         await server.WaitAssertion(() =>
         {
-            Assert.That(serverPlayerMgr.PlayerCount, Is.EqualTo(0));
+            Assert.That(serverPlayerMgr.PlayerCount, Is.EqualTo(65));
         });
         client.SetConnectTarget(server);
         await client.WaitPost(() =>
         {
-            clientNetManager.ClientConnect(null!, 0, username);
+            clientNetManager.ClientConnect(null!, 65, username);
         });
 
-        await pair.RunTicksSync(20);
+        await pair.RunTicksSync(65);
 
         await server.WaitAssertion(() =>
         {
 
             // Check that we were able to reconnect
-            Assert.That(serverPlayerMgr.PlayerCount, Is.EqualTo(1));
+            Assert.That(serverPlayerMgr.PlayerCount, Is.EqualTo(65));
 
             //Put the cvar back, so other tests can still use this server
             serverConfig.SetCVar(CCVars.SoftMaxPlayers, originalMaxPlayers);

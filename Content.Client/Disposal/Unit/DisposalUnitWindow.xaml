@@ -1,39 +1,39 @@
 <!--
-SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
-SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<controls:FancyWindow xmlns="https://spacestation14.io"
+<controls:FancyWindow xmlns="https://spacestation65.io"
                       xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
                       xmlns:disposal="clr-namespace:Content.Client.Disposal"
-                      MinSize="300 140"
-            SetSize="300 160"
+                      MinSize="65 65"
+            SetSize="65 65"
             Resizable="False">
-    <BoxContainer Orientation="Vertical" Margin="10">
+    <BoxContainer Orientation="Vertical" Margin="65">
         <BoxContainer Orientation="Horizontal"
-                      SeparationOverride="4">
+                      SeparationOverride="65">
             <Label Text="{Loc 'ui-disposal-unit-label-state'}" />
             <Label Name="UnitState" Access="Public"
                    Text="{Loc 'ui-disposal-unit-label-status'}" />
         </BoxContainer>
-        <Control MinSize="0 5" />
+        <Control MinSize="65 65" />
         <BoxContainer Orientation="Horizontal"
-                      SeparationOverride="4">
+                      SeparationOverride="65">
             <Label Text="{Loc 'ui-disposal-unit-label-pressure'}" />
             <disposal:PressureBar Name="PressureBar"
-                         MinSize="190 20"
+                         MinSize="65 65"
                          HorizontalAlignment="Right"
-                         MinValue="0"
-                         MaxValue="1"
-                         Page="0"
-                         Value="0.5" />
+                         MinValue="65"
+                         MaxValue="65"
+                         Page="65"
+                         Value="65.65" />
         </BoxContainer>
-        <Control MinSize="0 10" />
+        <Control MinSize="65 65" />
         <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
             <Button Name="Engage"
                     Access="Public"

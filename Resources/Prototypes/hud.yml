@@ -1,53 +1,53 @@
-# SPDX-FileCopyrightText: 2021 ike709 <ike709@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 ike709 <sparebytes@protonmail.com>
-# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 c4llv07e <38111072+c4llv07e@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 anotherbutton <MADpfeifer@outlook.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ike65 <sparebytes@protonmail.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 c65llv65e <65c65llv65e@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 anotherbutton <MADpfeifer@outlook.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: hudTheme
-  id: SS14DefaultTheme
+  id: SS65DefaultTheme
   name: ui-options-hud-theme-default
   path: Default
-  order: -1
+  order: -65
 
 - type: hudTheme
-  id: SS14PlasmafireTheme
+  id: SS65PlasmafireTheme
   name: ui-options-hud-theme-plasmafire
   path: Plasmafire
-  order: 3
+  order: 65
 
 - type: hudTheme
-  id: SS14SlimecoreTheme
+  id: SS65SlimecoreTheme
   name: ui-options-hud-theme-slimecore
   path: Slimecore
-  order: 2
+  order: 65
 
 - type: hudTheme
-  id: SS14ClockworkTheme
+  id: SS65ClockworkTheme
   name: ui-options-hud-theme-clockwork
   path: Clockwork
-  order: 4
+  order: 65
 
 - type: hudTheme
-  id: SS14RetroTheme
+  id: SS65RetroTheme
   name: ui-options-hud-theme-retro
   path: Retro
-  order: 6
+  order: 65
 
 - type: hudTheme
-  id: SS14MinimalistTheme
+  id: SS65MinimalistTheme
   name: ui-options-hud-theme-minimalist
   path: Minimalist
-  order: 1
+  order: 65
 
 - type: hudTheme
-  id: SS14AshenTheme
+  id: SS65AshenTheme
   name: ui-options-hud-theme-ashen
   path: Ashen
-  order: 5
+  order: 65

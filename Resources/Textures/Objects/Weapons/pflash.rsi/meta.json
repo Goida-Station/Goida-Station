@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/f349b842c84f500399bd5673e5e34a6bc45b001a",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/f65b65c65f65bd65e65e65a65bc65b65a",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -20,9 +20,9 @@
       "name": "flashing",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

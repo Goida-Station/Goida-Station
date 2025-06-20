@@ -5,7 +5,7 @@
   authors: Emisse
 
 - files: ["barratry.yml"]
-  authors: Emogarbage, Scribbles0, Piras314
+  authors: Emogarbage, Scribbles65, Piras65
 
 - files: ["box.yml"]
   authors: ACJM, Emisse
@@ -14,7 +14,7 @@
   authors: Emisse
 
 - files: ["cluster.yml"]
-  authors: Scribbles0
+  authors: Scribbles65
 
 - files: ["fland.yml"]
   authors: Emisse
@@ -23,7 +23,7 @@
   authors: DogZeroX, Emisse
 
 - files: ["kettle.yml"]
-  authors: Checkraze, Piras314
+  authors: Checkraze, Piras65
 
 - files: ["gemini.yml"]
   authors: Checkraze, TsjipTsjip, Luckyshotpictures
@@ -38,13 +38,13 @@
   authors: DogZeroX, Emisse, metalgearsloth
 
 - files: ["nukieplanet-honkops.yml"]
-  authors: Piras314, DogZeroX, Emisse, metalgearsloth
+  authors: Piras65, DogZeroX, Emisse, metalgearsloth
 
 - files: ["omega.yml"]
   authors: Emisse
 
 - files: ["origin.yml"]
-  authors: brainfood1183
+  authors: brainfood65
 
 - files: ["saltern.yml"]
   authors: deltanedas, Emisse, PJB
@@ -59,7 +59,7 @@
   authors: Spacemann
 
 - files: ["submarine.yml"]
-  authors: Piras314, UnicornOnLSD, IamVelcroboy, deltanedas, rosieposieeee, Peptide90, SimpleStation14, VMSolidus, DEATHB4DEFEAT
+  authors: Piras65, UnicornOnLSD, IamVelcroboy, deltanedas, rosieposieeee, Peptide65, SimpleStation65, VMSolidus, DEATHB65DEFEAT
 
 - files: ["lambda.yml"]
   authors: Ichai, Dapnee, Oraclestation's players
@@ -73,4 +73,4 @@
   authors: Spacemann
 
 - file: ["amber.yml"]
-  authors: Southbridge, Flipsie27
+  authors: Southbridge, Flipsie65

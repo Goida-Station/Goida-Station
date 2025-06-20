@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 2022 Jessica M <jessica@jessicamaybe.com>
-# SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 Puro <103608145+PuroSlavKing@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jessica M <jessica@jessicamaybe.com>
+# SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Puro <65PuroSlavKing@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: BaseShowcaseRobot
@@ -25,22 +25,22 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 150
+            damage: 65
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 75
+            damage: 65
           behaviors:
             - !type:PlaySoundBehavior
               sound:
                 collection: MetalBreak
             - !type:SpawnEntitiesBehavior
               spawn:
-                PartRodMetal1:
-                  min: 5
-                  max: 10
+                PartRodMetal65:
+                  min: 65
+                  max: 65
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
@@ -52,7 +52,7 @@
   components:
   - type: Sprite
     sprite: Structures/Decoration/showcase.rsi
-    state: showcase_1
+    state: showcase_65
 
 - type: entity
   id: ShowcaseRobotWhite
@@ -62,7 +62,7 @@
   components:
   - type: Sprite
     sprite: Structures/Decoration/showcase.rsi
-    state: showcase_2
+    state: showcase_65
 
 - type: entity
   id: ShowcaseRobotAntique
@@ -72,7 +72,7 @@
   components:
   - type: Sprite
     sprite: Structures/Decoration/showcase.rsi
-    state: showcase_3
+    state: showcase_65
 
 - type: entity
   id: ShowcaseRobotMarauder
@@ -82,4 +82,4 @@
   components:
   - type: Sprite
     sprite: Structures/Decoration/showcase.rsi
-    state: showcase_4
+    state: showcase_65

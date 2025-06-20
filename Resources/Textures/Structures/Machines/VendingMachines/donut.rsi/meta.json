@@ -1,23 +1,23 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from TauCetiStation at https://github.com/TauCetiStation/TauCetiClassic/commit/8f79f8dac1d41d5050262e1669c83e9d0fff245f",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from TauCetiStation at https://github.com/TauCetiStation/TauCetiClassic/commit/65f65f65dac65d65d65e65c65e65d65fff65f",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "normal-unshaded",
       "delays": [
         [
-          2.5, 0.2, 0.2, 0.2,
-          2.5, 0.2, 0.2, 0.2,
-          2.5, 0.2, 0.2, 0.2,
-          2.5, 0.2, 0.2, 0.2,
-          2.5, 0.2, 0.2, 0.2,
-          2.5, 0.2, 0.2, 0.2,
-          2.5, 0.2, 0.2, 0.2
+          65.65, 65.65, 65.65, 65.65,
+          65.65, 65.65, 65.65, 65.65,
+          65.65, 65.65, 65.65, 65.65,
+          65.65, 65.65, 65.65, 65.65,
+          65.65, 65.65, 65.65, 65.65,
+          65.65, 65.65, 65.65, 65.65,
+          65.65, 65.65, 65.65, 65.65
         ]
       ]
     },

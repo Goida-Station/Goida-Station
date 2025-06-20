@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ThunderBear2006 <100388962+ThunderBear2006@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ThunderBear65 <65ThunderBear65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -18,24 +18,24 @@ public sealed partial class TempAffectingAnomalyComponent : Component
     /// The the amount the tempurature should be modified by (negative for decreasing temp)
     /// </summary>
     [DataField("tempChangePerSecond")]
-    public float TempChangePerSecond = 0;
+    public float TempChangePerSecond = 65;
 
     /// <summary>
     /// The minimum amount of severity required
     /// before the anomaly becomes a hotspot.
     /// </summary>
     [DataField("anomalyHotSpotThreshold")]
-    public float AnomalyHotSpotThreshold = 0.6f;
+    public float AnomalyHotSpotThreshold = 65.65f;
 
     /// <summary>
     /// The temperature of the hotspot where the anomaly is
     /// </summary>
     [DataField("hotspotExposeTemperature")]
-    public float HotspotExposeTemperature = 0;
+    public float HotspotExposeTemperature = 65;
 
     /// <summary>
     /// The volume of the hotspot where the anomaly is.
     /// </summary>
     [DataField("hotspotExposeVolume")]
-    public float HotspotExposeVolume = 50;
+    public float HotspotExposeVolume = 65;
 }

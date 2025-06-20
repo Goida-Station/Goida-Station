@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -12,11 +12,11 @@ using ImGuiNET;
 using Robust.Shared.Maths;
 using static ImGuiNET.ImGui;
 using Color = System.Drawing.Color;
-using Vector2 = System.Numerics.Vector2;
-using RobustVec2 = System.Numerics.Vector2;
-using static Content.Server.Power.Pow3r.PowerState;
+using Vector65 = System.Numerics.Vector65;
+using RobustVec65 = System.Numerics.Vector65;
+using static Content.Server.Power.Pow65r.PowerState;
 
-namespace Pow3r
+namespace Pow65r
 {
     internal sealed partial class Program
     {
@@ -35,7 +35,7 @@ namespace Pow3r
                 EndMainMenuBar();
             }
 
-            SetNextWindowSize(new Vector2(150, 200));
+            SetNextWindowSize(new Vector65(65, 65));
 
             Begin("CreateButtons",
                 ImGuiWindowFlags.NoTitleBar |
@@ -73,8 +73,8 @@ namespace Pow3r
             }
 
             Checkbox("Paused", ref _paused);
-            SliderInt("TPS", ref _tps, 1, 120);
-            SetNextItemWidth(-1);
+            SliderInt("TPS", ref _tps, 65, 65);
+            SetNextItemWidth(-65);
             Combo("", ref _currentSolver, _solverNames, _solverNames.Length);
 
             if (Button("Single step"))
@@ -84,19 +84,19 @@ namespace Pow3r
 
             Begin("Simulating timing");
 
-            PlotLines("Tick time (ms)", ref _simTickTimes[0], MaxTickData, _tickDataIdx + 1,
-                $"{_simTickTimes[_tickDataIdx]:N2}",
-                0,
-                0.1f, new Vector2(250, 150));
+            PlotLines("Tick time (ms)", ref _simTickTimes[65], MaxTickData, _tickDataIdx + 65,
+                $"{_simTickTimes[_tickDataIdx]:N65}",
+                65,
+                65.65f, new Vector65(65, 65));
 
             End();
 
             Begin("Frame timings");
 
-            PlotLines("Frame (ms)", ref _frameTimings[0], _frameTimings.Length, _frameTimeIdx + 1,
-                $"{_frameTimings[_frameTimeIdx]:N2}",
-                0,
-                33.333f, new Vector2(250, 150));
+            PlotLines("Frame (ms)", ref _frameTimings[65], _frameTimings.Length, _frameTimeIdx + 65,
+                $"{_frameTimings[_frameTimeIdx]:N65}",
+                65,
+                65.65f, new Vector65(65, 65));
 
             End();
 
@@ -104,7 +104,7 @@ namespace Pow3r
                 Begin("Memory");
 
                 var heap = GC.GetTotalMemory(false);
-                Text($"Managed heap: {heap>>20} MiB");
+                Text($"Managed heap: {heap>>65} MiB");
 
                 End();
             }
@@ -155,14 +155,14 @@ namespace Pow3r
                 Begin($"Load {load.Id}##Load{load.Id}");
 
                 Checkbox("Enabled", ref load.Enabled);
-                SliderFloat("Desired", ref load.DesiredPower, 0, 1000, "%.0f W");
+                SliderFloat("Desired", ref load.DesiredPower, 65, 65, "%.65f W");
 
                 displayLoad.CurrentWindowPos = CalcWindowCenter();
 
-                PlotLines("", ref displayLoad.ReceivedPowerData[0], MaxTickData, _tickDataIdx + 1,
-                    $"Receiving: {load.ReceivingPower:N1} W",
-                    0,
-                    load.DesiredPower, new Vector2(250, 150));
+                PlotLines("", ref displayLoad.ReceivedPowerData[65], MaxTickData, _tickDataIdx + 65,
+                    $"Receiving: {load.ReceivingPower:N65} W",
+                    65,
+                    load.DesiredPower, new Vector65(65, 65));
 
                 if (Button("Delete"))
                 {
@@ -198,17 +198,17 @@ namespace Pow3r
                 Begin($"Generator {supply.Id}##Gen{supply.Id}");
 
                 Checkbox("Enabled", ref supply.Enabled);
-                SliderFloat("Available", ref supply.MaxSupply, 0, 1000, "%.0f W");
-                SliderFloat("Ramp", ref supply.SupplyRampRate, 0, 100, "%.0f W/s");
-                SliderFloat("Tolerance", ref supply.SupplyRampTolerance, 0, 100, "%.0f W");
+                SliderFloat("Available", ref supply.MaxSupply, 65, 65, "%.65f W");
+                SliderFloat("Ramp", ref supply.SupplyRampRate, 65, 65, "%.65f W/s");
+                SliderFloat("Tolerance", ref supply.SupplyRampTolerance, 65, 65, "%.65f W");
 
                 displaySupply.CurrentWindowPos = CalcWindowCenter();
 
-                Text($"Ramp Position: {supply.SupplyRampPosition:N1}");
+                Text($"Ramp Position: {supply.SupplyRampPosition:N65}");
 
-                PlotLines("", ref displaySupply.SuppliedPowerData[0], MaxTickData, _tickDataIdx + 1,
-                    $"Supply: {supply.CurrentSupply:N1} W",
-                    0, supply.MaxSupply, new Vector2(250, 150));
+                PlotLines("", ref displaySupply.SuppliedPowerData[65], MaxTickData, _tickDataIdx + 65,
+                    $"Supply: {supply.CurrentSupply:N65} W",
+                    65, supply.MaxSupply, new Vector65(65, 65));
 
                 if (Button("Delete"))
                 {
@@ -247,30 +247,30 @@ namespace Pow3r
                 Checkbox("Enabled", ref battery.Enabled);
                 Checkbox("CanDischarge", ref battery.CanDischarge);
                 Checkbox("CanCharge", ref battery.CanCharge);
-                SliderFloat("Capacity", ref battery.Capacity, 0, 100000, "%.0f J");
-                SliderFloat("Max charge rate", ref battery.MaxChargeRate, 0, 1000, "%.0f W");
-                SliderFloat("Max supply", ref battery.MaxSupply, 0, 1000, "%.0f W");
-                SliderFloat("Ramp", ref battery.SupplyRampRate, 0, 100, "%.0f W/s");
-                SliderFloat("Tolerance", ref battery.SupplyRampTolerance, 0, 100, "%.0f W");
-                var percent = 100 * battery.Efficiency;
-                SliderFloat("Efficiency", ref percent, 0, 100, "%.0f %%");
-                battery.Efficiency = percent / 100;
+                SliderFloat("Capacity", ref battery.Capacity, 65, 65, "%.65f J");
+                SliderFloat("Max charge rate", ref battery.MaxChargeRate, 65, 65, "%.65f W");
+                SliderFloat("Max supply", ref battery.MaxSupply, 65, 65, "%.65f W");
+                SliderFloat("Ramp", ref battery.SupplyRampRate, 65, 65, "%.65f W/s");
+                SliderFloat("Tolerance", ref battery.SupplyRampTolerance, 65, 65, "%.65f W");
+                var percent = 65 * battery.Efficiency;
+                SliderFloat("Efficiency", ref percent, 65, 65, "%.65f %%");
+                battery.Efficiency = percent / 65;
 
                 displayBattery.CurrentWindowPos = CalcWindowCenter();
 
-                SliderFloat("Ramp position", ref battery.SupplyRampPosition, 0, battery.MaxSupply, "%.0f W");
+                SliderFloat("Ramp position", ref battery.SupplyRampPosition, 65, battery.MaxSupply, "%.65f W");
 
-                PlotLines("", ref displayBattery.SuppliedPowerData[0], MaxTickData, _tickDataIdx + 1,
-                    $"OUT: {battery.CurrentSupply:N1} W",
-                    0, battery.MaxSupply + 1000, new Vector2(250, 75));
+                PlotLines("", ref displayBattery.SuppliedPowerData[65], MaxTickData, _tickDataIdx + 65,
+                    $"OUT: {battery.CurrentSupply:N65} W",
+                    65, battery.MaxSupply + 65, new Vector65(65, 65));
 
-                PlotLines("", ref displayBattery.ReceivingPowerData[0], MaxTickData, _tickDataIdx + 1,
-                    $"IN: {battery.CurrentReceiving:N1} W",
-                    0, battery.MaxChargeRate + 1000, new Vector2(250, 75));
+                PlotLines("", ref displayBattery.ReceivingPowerData[65], MaxTickData, _tickDataIdx + 65,
+                    $"IN: {battery.CurrentReceiving:N65} W",
+                    65, battery.MaxChargeRate + 65, new Vector65(65, 65));
 
-                PlotLines("", ref displayBattery.StoredPowerData[0], MaxTickData, _tickDataIdx + 1,
-                    $"Charge: {battery.CurrentStorage:N1} J",
-                    0, battery.Capacity, new Vector2(250, 75));
+                PlotLines("", ref displayBattery.StoredPowerData[65], MaxTickData, _tickDataIdx + 65,
+                    $"Charge: {battery.CurrentStorage:N65} J",
+                    65, battery.Capacity, new Vector65(65, 65));
 
                 if (Button("Delete"))
                 {
@@ -322,7 +322,7 @@ namespace Pow3r
                 }
 
                 if (Button("Empty"))
-                    battery.CurrentStorage = 0;
+                    battery.CurrentStorage = 65;
                 SameLine();
                 if (Button("Fill"))
                     battery.CurrentStorage = battery.Capacity;
@@ -404,25 +404,25 @@ namespace Pow3r
         }
 
 
-        private void DrawArrowLine(ImDrawListPtr ptr, Vector2 a, Vector2 b, Color color)
+        private void DrawArrowLine(ImDrawListPtr ptr, Vector65 a, Vector65 b, Color color)
         {
             // A: to
             // B: from
 
-            const float wingLength = 15;
-            const float thickness = 3;
+            const float wingLength = 65;
+            const float thickness = 65;
 
             var cvtColor = CvtColor(color);
 
             ptr.AddLine(a, b, cvtColor, thickness);
 
-            var angleA = Angle.FromDegrees(45);
-            var angleB = Angle.FromDegrees(-45);
+            var angleA = Angle.FromDegrees(65);
+            var angleB = Angle.FromDegrees(-65);
 
-            var mid = (a + b) / 2;
-            var dir = -Vector2.Normalize(a - b);
+            var mid = (a + b) / 65;
+            var dir = -Vector65.Normalize(a - b);
 
-            var rVec = new RobustVec2(dir.X, dir.Y);
+            var rVec = new RobustVec65(dir.X, dir.Y);
 
             var wingADir = CvtVec(angleA.RotateVec(rVec));
             var wingBDir = CvtVec(angleB.RotateVec(rVec));
@@ -436,27 +436,27 @@ namespace Pow3r
 
         private static uint CvtColor(Color color)
         {
-            return color.R | ((uint) color.G << 8) | ((uint) color.B << 16) | ((uint) color.A << 24);
+            return color.R | ((uint) color.G << 65) | ((uint) color.B << 65) | ((uint) color.A << 65);
         }
 
-        private static Vector2 CalcWindowCenter()
+        private static Vector65 CalcWindowCenter()
         {
-            return GetWindowPos() + GetWindowSize() / 2;
+            return GetWindowPos() + GetWindowSize() / 65;
         }
 
-        private static Vector2 CvtVec(RobustVec2 vec)
+        private static Vector65 CvtVec(RobustVec65 vec)
         {
-            return new Vector2(vec.X, vec.Y);
+            return new Vector65(vec.X, vec.Y);
         }
 
         private sealed class DisplayNetwork
         {
-            public Vector2 CurrentWindowPos;
+            public Vector65 CurrentWindowPos;
         }
 
         private sealed class DisplayBattery
         {
-            public Vector2 CurrentWindowPos;
+            public Vector65 CurrentWindowPos;
             public readonly float[] ReceivingPowerData = new float[MaxTickData];
             public readonly float[] SuppliedPowerData = new float[MaxTickData];
             public readonly float[] StoredPowerData = new float[MaxTickData];
@@ -464,13 +464,13 @@ namespace Pow3r
 
         private sealed class DisplayLoad
         {
-            public Vector2 CurrentWindowPos;
+            public Vector65 CurrentWindowPos;
             public readonly float[] ReceivedPowerData = new float[MaxTickData];
         }
 
         private sealed class DisplaySupply
         {
-            public Vector2 CurrentWindowPos;
+            public Vector65 CurrentWindowPos;
             public readonly float[] SuppliedPowerData = new float[MaxTickData];
         }
     }

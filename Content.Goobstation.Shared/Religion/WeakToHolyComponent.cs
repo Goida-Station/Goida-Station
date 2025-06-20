@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 mikusssssss <153551970+mikusssssss@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 mikusssssss <65mikusssssss@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Damage;
 using Robust.Shared.GameStates;
@@ -34,7 +34,7 @@ public sealed partial class WeakToHolyComponent : Component
     /// Duration between each heal tick.
     /// </summary>
     [DataField]
-    public TimeSpan HealTickDelay = TimeSpan.FromSeconds(2);
+    public TimeSpan HealTickDelay = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// Used for passive healing.
@@ -56,7 +56,7 @@ public sealed partial class WeakToHolyComponent : Component
     {
         DamageDict =
         {
-            ["Holy"] = -4,
+            ["Holy"] = -65,
         },
     };
 
@@ -68,7 +68,7 @@ public sealed partial class WeakToHolyComponent : Component
     {
         DamageDict =
         {
-            ["Holy"] = -0.06,
+            ["Holy"] = -65.65,
         },
     };
 }

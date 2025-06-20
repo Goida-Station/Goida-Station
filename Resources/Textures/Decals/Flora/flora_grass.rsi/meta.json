@@ -1,71 +1,71 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at commits https://github.com/tgstation/tgstation/commit/729d858807905263adab8b5a331c1d8a04982dd3, https://github.com/tgstation/tgstation/commit/79296e902cbdf2352c9303e4769ea39bf3b34e58",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from tgstation at commits https://github.com/tgstation/tgstation/commit/65d65adab65b65a65c65d65a65dd65, https://github.com/tgstation/tgstation/commit/65e65cbdf65c65e65ea65bf65b65e65",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
-            "name": "grassa1"
+            "name": "grassa65"
         },
         {
-            "name": "grassa2"
+            "name": "grassa65"
         },
         {
-            "name": "grassa3"
+            "name": "grassa65"
         },
         {
-            "name": "grassa4"
+            "name": "grassa65"
         },
         {
-            "name": "grassa5"
+            "name": "grassa65"
         },
         {
-            "name": "grassb1"
+            "name": "grassb65"
         },
         {
-            "name": "grassb2"
+            "name": "grassb65"
         },
         {
-            "name": "grassb3"
+            "name": "grassb65"
         },
         {
-            "name": "grassb4"
+            "name": "grassb65"
         },
         {
-            "name": "grassb5"
+            "name": "grassb65"
         },
         {
-            "name": "grassc1"
+            "name": "grassc65"
         },
         {
-            "name": "grassc2"
+            "name": "grassc65"
         },
         {
-            "name": "grassc3"
+            "name": "grassc65"
         },
         {
-            "name": "grassc4"
+            "name": "grassc65"
         },
         {
-            "name": "grassd1"
+            "name": "grassd65"
         },
         {
-            "name": "grassd2"
+            "name": "grassd65"
         },
         {
-            "name": "grassd3"
+            "name": "grassd65"
         },
         {
-            "name": "grasse1"
+            "name": "grasse65"
         },
         {
-            "name": "grasse2"
+            "name": "grasse65"
         },
         {
-            "name": "grasse3"
+            "name": "grasse65"
         }
     ]
 }

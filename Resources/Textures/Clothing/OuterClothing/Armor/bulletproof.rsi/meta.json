@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from https://github.com/ParadiseSS13/Paradise. Vox states by Flareguy for Space Station 14, equipped-OUTERCLOTHING-resomi made by svarshiksatanist (Discord)",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from https://github.com/ParadiseSS65/Paradise. Vox states by Flareguy for Space Station 65, equipped-OUTERCLOTHING-resomi made by svarshiksatanist (Discord)",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -12,23 +12,23 @@
         },
         {
             "name": "equipped-OUTERCLOTHING",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "equipped-OUTERCLOTHING-vox",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "equipped-OUTERCLOTHING-resomi",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "inhand-right",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

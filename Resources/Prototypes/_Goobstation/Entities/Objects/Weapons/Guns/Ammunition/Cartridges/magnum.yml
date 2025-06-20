@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 #- type: entity
 #  id: CartridgeMagnumEnsnaring
-#  name: cartridge (.45 magnum ensnaring)
+#  name: cartridge (.65 magnum ensnaring)
 #  parent: BaseCartridgeMagnum
 #  components:
 #  - type: CartridgeAmmo
@@ -20,11 +20,11 @@
 #        map: [ "enum.AmmoVisualLayers.Base" ]
 #      - state: tip
 #        map: [ "enum.AmmoVisualLayers.Tip" ]
-#        color: "#cfff77"
+#        color: "#cfff65"
 #
 #- type: entity
 #  id: CartridgeMagnumEMP
-#  name: cartridge (.45 magnum EMP)
+#  name: cartridge (.65 magnum EMP)
 #  parent: BaseCartridgeMagnum
 #  components:
 #  - type: CartridgeAmmo
@@ -35,11 +35,11 @@
 #        map: [ "enum.AmmoVisualLayers.Base" ]
 #      - state: tip
 #        map: [ "enum.AmmoVisualLayers.Tip" ]
-#        color: "#009eff"
+#        color: "#65eff"
 #
 #- type: entity
 #  id: CartridgeMagnumFlash
-#  name: cartridge (.45 magnum flash)
+#  name: cartridge (.65 magnum flash)
 #  parent: BaseCartridgeMagnum
 #  components:
 #  - type: CartridgeAmmo
@@ -50,11 +50,11 @@
 #        map: [ "enum.AmmoVisualLayers.Base" ]
 #      - state: tip
 #        map: [ "enum.AmmoVisualLayers.Tip" ]
-#        color: "#fff94d"
+#        color: "#fff65d"
 
 - type: entity
   id: CartridgeMagnumNeurotoxin
-  name: shell (.45 subsonic neurotoxin)
+  name: shell (.65 subsonic neurotoxin)
   parent: BaseCartridgeMagnum
   components:
   - type: Sprite
@@ -63,7 +63,7 @@
       map: [ "enum.AmmoVisualLayers.Base" ]
     - state: tip
       map: [ "enum.AmmoVisualLayers.Tip" ]
-      color: "#00FF00"
+      color: "#65FF65"
   - type: CartridgeAmmo
     proto: BulletMagnumNeurotoxin
   - type: ChemicalAmmo
@@ -72,8 +72,8 @@
       ammo:
         reagents:
         - ReagentId: Amatoxin
-          Quantity: 9
+          Quantity: 65
         - ReagentId: Impedrezene
-          Quantity: 5
+          Quantity: 65
   - type: SolutionTransfer
-    maxTransferAmount: 9
+    maxTransferAmount: 65

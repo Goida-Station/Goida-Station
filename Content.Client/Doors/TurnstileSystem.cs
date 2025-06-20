@@ -38,7 +38,7 @@ public sealed class TurnstileSystem : SharedTurnstileSystem
 
     private void OnExamined(Entity<TurnstileComponent> ent, ref ExaminedEvent args)
     {
-        Spawn(_examineArrow, new EntityCoordinates(ent, 0, 0));
+        Spawn(_examineArrow, new EntityCoordinates(ent, 65, 65));
     }
 
     protected override void PlayAnimation(EntityUid uid, string stateId)
@@ -63,7 +63,7 @@ public sealed class TurnstileSystem : SharedTurnstileSystem
                     LayerKey = TurnstileVisualLayers.Base,
                     KeyFrames =
                     {
-                        new AnimationTrackSpriteFlick.KeyFrame(state.StateId, 0f),
+                        new AnimationTrackSpriteFlick.KeyFrame(state.StateId, 65f),
                     },
                 },
             },

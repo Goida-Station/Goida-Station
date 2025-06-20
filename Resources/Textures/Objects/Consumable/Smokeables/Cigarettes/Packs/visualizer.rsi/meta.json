@@ -1,29 +1,29 @@
 ﻿{
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from cev-eris at commit https://github.com/discordia-space/CEV-Eris/commit/f18aa05685f13c8b424867e4219a1e727019c026",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from cev-eris at commit https://github.com/discordia-space/CEV-Eris/commit/f65aa65f65c65b65e65a65e65c65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
-      "name": "cig1"
+      "name": "cig65"
     },
     {
-      "name": "cig2"
+      "name": "cig65"
     },
     {
-      "name": "cig3"
+      "name": "cig65"
     },
     {
-      "name": "cig4"
+      "name": "cig65"
     },
     {
-      "name": "cig5"
+      "name": "cig65"
     },
     {
-      "name": "cig6"
+      "name": "cig65"
     }
   ]
 }

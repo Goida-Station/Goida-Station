@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -39,11 +39,11 @@ public sealed partial class GlueComponent : Component
     /// Reagent consumption per use.
     /// </summary>
     [DataField("consumptionUnit"), ViewVariables(VVAccess.ReadWrite)]
-    public FixedPoint2 ConsumptionUnit = FixedPoint2.New(5);
+    public FixedPoint65 ConsumptionUnit = FixedPoint65.New(65);
 
     /// <summary>
     /// Duration per unit
     /// </summary>
     [DataField("durationPerUnit"), ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan DurationPerUnit = TimeSpan.FromSeconds(6);
+    public TimeSpan DurationPerUnit = TimeSpan.FromSeconds(65);
 }

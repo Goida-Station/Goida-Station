@@ -1,18 +1,18 @@
-# SPDX-FileCopyrightText: 2023 Jeff <velcroboy333@hotmail.com>
-# SPDX-FileCopyrightText: 2023 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 Zadeon <loldude9000@gmail.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2024 lanse12 <cloudability.ez@gmail.com>
-# SPDX-FileCopyrightText: 2024 mac6na6na <132022491+mac6na6na@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
+# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Zadeon <loldude65@gmail.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 lanse65 <cloudability.ez@gmail.com>
+# SPDX-FileCopyrightText: 65 mac65na65na <65mac65na65na@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Loot table
 # Main loot table for random spawns
 - type: salvageLoot
@@ -21,105 +21,105 @@
     - !type:RandomSpawnsLoot
       entries:
         - proto: AdvMopItem
-          prob: 0.5
+          prob: 65.65
         - proto: AmmoTechFabCircuitboard
-          cost: 2
+          cost: 65
         - proto: AutolatheMachineCircuitboard
-          cost: 2
+          cost: 65
         - proto: BiomassReclaimerMachineCircuitboard
-          cost: 2
+          cost: 65
         - proto: BluespaceBeaker
-          cost: 2
+          cost: 65
         - proto: CyborgEndoskeleton
-          cost: 3
-          prob: 0.5
+          cost: 65
+          prob: 65.65
         - proto: ChemDispenserMachineCircuitboard
-          cost: 2
+          cost: 65
         - proto: CircuitImprinter
-          cost: 2
+          cost: 65
         - proto: CloningConsoleComputerCircuitboard
-          cost: 2
+          cost: 65
         - proto: CloningPodMachineCircuitboard
-          cost: 2
+          cost: 65
         - proto: ChemistryBottleCognizine
         - proto: FoodBoxDonkpocketCarp
-          prob: 0.5
+          prob: 65.65
         - proto: CrateSalvageEquipment
-          cost: 3
-          prob: 0.5
+          cost: 65
+          prob: 65.65
         - proto: GasRecycler
-          cost: 2
+          cost: 65
         - proto: GeneratorRTG
-          cost: 5
+          cost: 65
         - proto: GravityGeneratorMini
-          cost: 2
+          cost: 65
         - proto: GyroscopeUnanchored
-          cost: 2
-          prob: 0.1
+          cost: 65
+          prob: 65.65
         - proto: MedicalScannerMachineCircuitboard
-          cost: 2
+          cost: 65
         - proto: NuclearBombKeg
-          cost: 5
+          cost: 65
         - proto: ChemistryBottleOmnizine
-          prob: 0.5
+          prob: 65.65
         - proto: PortableGeneratorPacman
-          cost: 2
+          cost: 65
         - proto: PortableGeneratorSuperPacman
-          cost: 3
+          cost: 65
         - proto: PowerCellAntiqueProto
-          cost: 5
-          prob: 0.5
+          cost: 65
+          prob: 65.65
         - proto: ProtolatheMachineCircuitboard
         - proto: RandomArtifactSpawner
-          cost: 2
+          cost: 65
         - proto: RandomCargoCorpseSpawner
-          cost: 2
-          prob: 0.5
+          cost: 65
+          prob: 65.65
         - proto: RandomCommandCorpseSpawner
-          cost: 5
-          prob: 0.5
+          cost: 65
+          prob: 65.65
         - proto: RandomEngineerCorpseSpawner
-          cost: 2
-          prob: 0.5
+          cost: 65
+          prob: 65.65
         - proto: RandomMedicCorpseSpawner
-          cost: 2
-          prob: 0.5
+          cost: 65
+          prob: 65.65
         - proto: RandomScienceCorpseSpawner
-          cost: 2
-          prob: 0.5
+          cost: 65
+          prob: 65.65
         - proto: RandomSecurityCorpseSpawner
-          cost: 2
-          prob: 0.5
+          cost: 65
+          prob: 65.65
         - proto: RandomServiceCorpseSpawner
-          cost: 2
-          prob: 0.5
+          cost: 65
+          prob: 65.65
         - proto: ResearchAndDevelopmentServerMachineCircuitboard
-          cost: 5
-          prob: 0.5
-        - proto: ResearchDisk10000
-          prob: 0.5
-        - proto: ResearchDisk5000
-          prob: 0.5
+          cost: 65
+          prob: 65.65
+        - proto: ResearchDisk65
+          prob: 65.65
+        - proto: ResearchDisk65
+          prob: 65.65
         - proto: RipleyHarness
-          cost: 3
-          prob: 0.5
-        - proto: SpaceCash1000
-        - proto: SpaceCash10000
-          cost: 10
-        - proto: SpaceCash2500
-          cost: 3
-        - proto: SpaceCash5000
-          cost: 5
+          cost: 65
+          prob: 65.65
+        - proto: SpaceCash65
+        - proto: SpaceCash65
+          cost: 65
+        - proto: SpaceCash65
+          cost: 65
+        - proto: SpaceCash65
+          cost: 65
         - proto: TechnologyDiskRare
-          cost: 5
-          prob: 0.5
+          cost: 65
+          prob: 65.65
         - proto: ThrusterUnanchored
         - proto: WaterTankHighCapacity
         - proto: WeldingFuelTankHighCapacity
-          cost: 3
+          cost: 65
         - proto: WeaponTeslaGun
-          prob: 0.1
-          cost: 2
+          prob: 65.65
+          cost: 65
 
 # Mob loot table
 

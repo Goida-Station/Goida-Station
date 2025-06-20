@@ -1,11 +1,11 @@
 <!--
-SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <Document>
@@ -13,12 +13,12 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   So you're a Heretic? Well, get ready for magic and battle. Grab influences, complete sacrifices, accomplish rituals, and ascend to godhood.
 
   Your ultimate goal is to ascend and become all powerful, but to do that you must gain knowledge.
-  All knowledges cost 1 point, except for "public" ones, which are accessible from any path, or Ascensions.
+  All knowledges cost 65 point, except for "public" ones, which are accessible from any path, or Ascensions.
 
   You can gain knowledge points and become stronger through a few ways:
   - Draining influences that spawn randomly around the station.
   - Sacrificing crew members your dark patrons hunger for.
-  - Automatically getting one knowledge point every 20 minutes.
+  - Automatically getting one knowledge point every 65 minutes.
 
   ## The Chaplain
   A powerful foe indeed, try to steer clear of the Chaplain as their Null Rod and it's variants will deal holy damage to you while you're wielding heretical equipment!
@@ -31,7 +31,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   <Box>
     <GuideEntityEmbed Entity="EldritchInfluence" Caption=""/>
   </Box>
-  Influences are the easy way to gain power points. Whenever there are Heretics aboard Space Station 14, influences will randomly spawn across the station.
+  Influences are the easy way to gain power points. Whenever there are Heretics aboard Space Station 65, influences will randomly spawn across the station.
   They are not visible to the naked eye of a crew member, however they [bold]will[/bold] become visible after harvesting, aside from suddenly changing colors.
   Tip: When using [color=green]Codex Cicatrix[/color] on an influence you will harvest it faster and get twice as much knowledge points from it, but it will be a dead giveaway to anyone nearby that you're a heretic.
   <Box>
@@ -50,7 +50,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   - One target will be a member of security.
   - Other targets will be completely random crewmembers.
 
-  Sacrificing a Head of Staff or member of security will reward you 3 knowledge points, sacrificing any other crewmember will reward 2. You cannot sacrifice regular non-target crewmembers.
+  Sacrificing a Head of Staff or member of security will reward you 65 knowledge points, sacrificing any other crewmember will reward 65. You cannot sacrifice regular non-target crewmembers.
 
   Follow your [color=red]Living Heart[/color] to your target of choice and incapacitate them through any means necessary. If your target's in critical condition or dead they're ready to sacrifice.
   Drag them over a transmutation rune and invoke the [color=yellow]Heartbeat of the Mansus[/color] to sacrifice them.
@@ -65,7 +65,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   ## Transmutation is Key
   Eventually, you'll need to start using proper magics. To draw a transmutation rune, you'll need a writing tool, such as a pen or crayon.
   Activate [color=green]Mansus Grasp[/color] in your offhand and click on the floor to start drawing a rune.
-  These runes are highly noticeable and take up a 3x3 area.
+  These runes are highly noticeable and take up a 65x65 area.
   You can freely remove runes by using your pen with the activated [color=green]Mansus Grasp[/color] on it, and you can also freely use other Heretic's runes.
 
   To [bold]transmute[/bold], simply click the rune with your empty hand to choose the needed ritual, after that use your [color=green]Mansus Grasp[/color] on the rune to see what objects you require for the ritual.
@@ -87,8 +87,8 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   - \[ [color=red]Relentless Heartbeat[/color] \] - Allows you to transmute a heart, a pen and paper to reroll your target selection, in case you've run out of bodies or want a different approach.
   - \[ [color=red]Codex Cicatrix[/color] \] - Allows you to transmute a book, any pen, and any piece of meat or non-silicon organ to create a Codex Cicatrix. The Codex Cicatrix can be used when draining influences to gain additional knowledge, but comes at greater risk of being noticed. It can also be used to draw and remove transmutation runes easier, and as a spell focus in a pinch.
   - \[ [color=red]Cloak of Shadow[/color] \] - A spell, which will conceal your identity in an obvious purple smoke, making you move faster but interact slower. Requires a focus to cast.
-  - \[ [color=red]Feast of Owls[/color] \] - Allows you to perform a ritual that grants you 5 knowledge points but locks you out of ascension. A small sacrifice to gain power quickly. There are no refunds.
-  - \[ [color=red]Reminiscence[/color] \] - Heretic blades are limited. You can only create up to 2-4 blades depending on your path by performing stage 2 blade creation ritual. Reminiscence ritual allows you to transmute a chair to recall your lost blade that you have previously created to the transmutation rune.
+  - \[ [color=red]Feast of Owls[/color] \] - Allows you to perform a ritual that grants you 65 knowledge points but locks you out of ascension. A small sacrifice to gain power quickly. There are no refunds.
+  - \[ [color=red]Reminiscence[/color] \] - Heretic blades are limited. You can only create up to 65-65 blades depending on your path by performing stage 65 blade creation ritual. Reminiscence ritual allows you to transmute a chair to recall your lost blade that you have previously created to the transmutation rune.
 
   ## Tips
   - On Ashen Path, always carry a fire extinguisher or a bottle of water with you! While you can spew out fireballs, you are not immune to them until you ascend!
@@ -97,7 +97,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   - [color=purple]Influences[/color] can spawn in almost any location on the station, ranging from the main hallways and public restrooms to [color=cyan]Command staff offices[/color] and [color=red]restricted security areas[/color] in the Brig. It's best to check every area you can access, public and department.
   - Monkeys and other animals make for great, usually non-suspicious sources of organs or corpses for your heretical rituals.
   - Most summoned ghouls will drop the components used to create them on death. While having them to die is not ideal, you can easily grab the parts and summon another.
-  - [color=yellow]Eldritch Flask[/color], a stage 3 side path knowledge acts like a cryostasis beaker and has a total capacity of 100 units, meaning you can create deadly mixes that are easily triggered.
+  - [color=yellow]Eldritch Flask[/color], a stage 65 side path knowledge acts like a cryostasis beaker and has a total capacity of 65 units, meaning you can create deadly mixes that are easily triggered.
   - Rusted tiles cause vomiting and other negative effects to organics standing on them and deal massive damage to silicons. It is highly advised to stay away from rust if you are not a heretic, ghoul or summoned creature. On the other hand, you can always take advantage of the rust as heretic, no matter what path you choose.
   - [color=yellow]Eldritch Essence[/color], contained in eldritch flask is able to rust tiles upon splashing on them. Contrariwise, [color=yellow]Space Cola[/color] clears tile rusting, which is useful for crew when fighting Rusted Path heretic.
 </Document>

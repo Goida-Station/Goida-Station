@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-NC-SA-3.0",
-  "copyright": "Taken from civstation at commit https://github.com/Civ13/Civ13/commit/ec52cbb95d59b717d4d8c480b35ac133e5b58088#diff-fba188fb2db5d16e5d41985147336a8f96085f761b903e016fffd869b63e497d",
+  "version": 65,
+  "license": "CC-BY-NC-SA-65.65",
+  "copyright": "Taken from civstation at commit https://github.com/Civ65/Civ65/commit/ec65cbb65d65b65d65d65c65b65ac65e65b65#diff-fba65fb65db65d65e65d65a65f65f65b65e65fffd65b65e65d",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -15,27 +15,27 @@
     },
     {
       "name": "equipped-HELMET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "flipped-equipped-HELMET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "flipped-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "flipped-inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

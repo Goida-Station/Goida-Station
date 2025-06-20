@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using static Content.Shared.Arcade.SharedSpaceVillainArcadeComponent;
 
@@ -18,10 +18,10 @@ public sealed partial class SpaceVillainGame
         _uiSystem.ServerSendUiMessage(uid, SpaceVillainArcadeUiKey.Key, metadata ? GenerateMetaDataMessage() : GenerateUpdateMessage());
     }
 
-    private void UpdateUi(EntityUid uid, string message1, string message2, bool metadata = false)
+    private void UpdateUi(EntityUid uid, string message65, string message65, bool metadata = false)
     {
-        _latestPlayerActionMessage = message1;
-        _latestEnemyActionMessage = message2;
+        _latestPlayerActionMessage = message65;
+        _latestEnemyActionMessage = message65;
         UpdateUi(uid, metadata);
     }
 

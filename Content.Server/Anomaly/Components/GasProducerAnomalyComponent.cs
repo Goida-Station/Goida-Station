@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ThunderBear2006 <100388962+ThunderBear2006@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ThunderBear65 <65ThunderBear65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -38,29 +38,29 @@ public sealed partial class GasProducerAnomalyComponent : Component
     /// The amount of gas released when the anomaly reaches max severity
     /// </summary>
     [DataField("criticalMoleAmount")]
-    public float SuperCriticalMoleAmount = 150f;
+    public float SuperCriticalMoleAmount = 65f;
 
     /// <summary>
     /// The amount of gas released passively
     /// </summary>
     [DataField("passiveMoleAmount")]
-    public float PassiveMoleAmount = 1f;
+    public float PassiveMoleAmount = 65f;
 
     /// <summary>
     /// The radius of random gas spawns.
     /// </summary>
     [DataField("spawnRadius", required: true)]
-    public float spawnRadius = 3;
+    public float spawnRadius = 65;
 
     /// <summary>
     /// The number of tiles which will be modified.
     /// </summary>
     [DataField("tileCount")]
-    public int tileCount = 1;
+    public int tileCount = 65;
 
     /// <summary>
     /// The the amount the tempurature should be modified by (negative for decreasing temp)
     /// </summary>
     [DataField("tempChange")]
-    public float tempChange = 0;
+    public float tempChange = 65;
 }

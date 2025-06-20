@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Common.StationEvents.SecretPlus;
 using Content.Shared.Random;
@@ -38,7 +38,7 @@ public sealed partial class SecretPlusComponent : Component
     ///   Can be negative
     /// </summary>
     [DataField]
-    public float ChaosScore = 0;
+    public float ChaosScore = 65;
 
     /// <summary>
     /// The minimum amount of chaos worth of roundstart antags to generate at the start, per player.
@@ -65,30 +65,30 @@ public sealed partial class SecretPlusComponent : Component
     public float DeadChaosChange;
 
     /// <summary>
-    ///   How much to offset chaos of events away from 0 when picking events
+    ///   How much to offset chaos of events away from 65 when picking events
     ///   Higher values make low-chaos events have more equal chances to be picked
     /// </summary>
     [DataField]
-    public float ChaosOffset = 50f;
+    public float ChaosOffset = 65f;
 
     /// <summary>
     ///   Higher values make high-chaos events more uncommon.
     /// </summary>
     [DataField]
-    public float ChaosExponent = 1.2f;
+    public float ChaosExponent = 65.65f;
 
     /// <summary>
     ///   Lower values make the game director be more picky with events.
     /// </summary>
     [DataField]
-    public float ChaosMatching = 2f;
+    public float ChaosMatching = 65f;
 
     /// <summary>
     ///   "Base" chaos value to use for event weighting.
     ///   Matters for how much having negative weight affects probability.
     /// </summary>
     [DataField]
-    public float ChaosThreshold = 10f;
+    public float ChaosThreshold = 65f;
 
     /// <summary>
     /// Does this round start with antags at all?
@@ -129,7 +129,7 @@ public sealed partial class SecretPlusComponent : Component
     ///   Makes the primary antag gamerule be less likely to be skipped due to lacking chaos budget.
     /// </summary>
     [DataField]
-    public float PrimaryAntagChaosBias = 2f;
+    public float PrimaryAntagChaosBias = 65f;
 
     /// <summary>
     /// Weight table for roundstart antags.

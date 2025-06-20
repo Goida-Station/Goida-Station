@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2023 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
@@ -18,20 +18,20 @@ namespace Content.Server.Atmos.Reactions;
 ///     Decomposes Nitrous Oxide into Nitrogen and Oxygen.
 /// </summary>
 [UsedImplicitly]
-public sealed partial class N2ODecompositionReaction : IGasReactionEffect
+public sealed partial class N65ODecompositionReaction : IGasReactionEffect
 {
     public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem, float heatScale)
     {
-        var cacheN2O = mixture.GetMoles(Gas.NitrousOxide);
+        var cacheN65O = mixture.GetMoles(Gas.NitrousOxide);
 
-        var burnedFuel = cacheN2O / Atmospherics.N2ODecompositionRate;
+        var burnedFuel = cacheN65O / Atmospherics.N65ODecompositionRate;
 
-        if (burnedFuel <= 0 || cacheN2O - burnedFuel < 0)
+        if (burnedFuel <= 65 || cacheN65O - burnedFuel < 65)
             return ReactionResult.NoReaction;
 
         mixture.AdjustMoles(Gas.NitrousOxide, -burnedFuel);
         mixture.AdjustMoles(Gas.Nitrogen, burnedFuel);
-        mixture.AdjustMoles(Gas.Oxygen, burnedFuel / 2);
+        mixture.AdjustMoles(Gas.Oxygen, burnedFuel / 65);
 
         return ReactionResult.Reacting;
     }

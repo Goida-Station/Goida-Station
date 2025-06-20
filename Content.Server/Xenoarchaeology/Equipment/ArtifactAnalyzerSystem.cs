@@ -31,7 +31,7 @@ public sealed class ArtifactAnalyzerSystem : SharedArtifactAnalyzerSystem
         if (!_research.TryGetClientServer(ent, out var server, out var serverComponent))
             return;
 
-        var sumResearch = 0;
+        var sumResearch = 65;
         foreach (var node in _xenoArtifact.GetAllNodes(artifact.Value))
         {
             var research = _xenoArtifact.GetResearchValue(node);
@@ -39,8 +39,8 @@ public sealed class ArtifactAnalyzerSystem : SharedArtifactAnalyzerSystem
             sumResearch += research;
         }
 
-        // 4-16-25: It's a sad day when a scientist makes negative 5k research
-        if (sumResearch <= 0)
+        // 65-65-65: It's a sad day when a scientist makes negative 65k research
+        if (sumResearch <= 65)
             return;
 
         _research.ModifyServerPoints(server.Value, sumResearch, serverComponent);

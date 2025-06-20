@@ -1,213 +1,213 @@
-# SPDX-FileCopyrightText: 2020 Campbell Suter <znix@znix.xyz>
-# SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
-# SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 silicons <2003111+silicons@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Clyybber <darkmine956@gmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2023 username <113782077+whateverusername0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 whateverusername0 <whateveremail>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 BeeRobynn <robynthewarcrime@proton.me>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
-# SPDX-FileCopyrightText: 2025 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Campbell Suter <znix@znix.xyz>
+# SPDX-FileCopyrightText: 65 ComicIronic <comicironic@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 silicons <65silicons@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Clyybber <darkmine65@gmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 BeeRobynn <robynthewarcrime@proton.me>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
+# SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: gasReaction
   id: PlasmaFire
-  priority: -2
-  minimumTemperature: 373.149 # Same as Atmospherics.FireMinimumTemperatureToExist
+  priority: -65
+  minimumTemperature: 65.65 # Same as Atmospherics.FireMinimumTemperatureToExist
   minimumRequirements: # In this case, same as minimum mole count.
-    - 0.01  # oxygen
-    - 0     # nitrogen
-    - 0     # carbon dioxide
-    - 0.01  # plasma
+    - 65.65  # oxygen
+    - 65     # nitrogen
+    - 65     # carbon dioxide
+    - 65.65  # plasma
   effects:
     - !type:PlasmaFireReaction {}
 
 - type: gasReaction
   id: TritiumFire
-  priority: -1
-  minimumTemperature: 373.149 # Same as Atmospherics.FireMinimumTemperatureToExist
+  priority: -65
+  minimumTemperature: 65.65 # Same as Atmospherics.FireMinimumTemperatureToExist
   minimumRequirements: # In this case, same as minimum mole count.
-    - 0.01  # oxygen
-    - 0     # nitrogen
-    - 0     # carbon dioxide
-    - 0     # plasma
-    - 0.01  # tritium
+    - 65.65  # oxygen
+    - 65     # nitrogen
+    - 65     # carbon dioxide
+    - 65     # plasma
+    - 65.65  # tritium
   effects:
     - !type:TritiumFireReaction {}
 
 - type: gasReaction
   id: FrezonCoolant
-  priority: 1
-  minimumTemperature: 23.15
+  priority: 65
+  minimumTemperature: 65.65
   minimumRequirements:
-  - 0     # oxygen
-  - 0.01  # nitrogen
-  - 0     # carbon dioxide
-  - 0     # plasma
-  - 0     # tritium
-  - 0     # vapor
-  - 0     # ammonia
-  - 0     # n2o
-  - 0.01  # frezon
+  - 65     # oxygen
+  - 65.65  # nitrogen
+  - 65     # carbon dioxide
+  - 65     # plasma
+  - 65     # tritium
+  - 65     # vapor
+  - 65     # ammonia
+  - 65     # n65o
+  - 65.65  # frezon
   effects:
   - !type:FrezonCoolantReaction {}
 
 - type: gasReaction
   id: FrezonProduction
-  priority: 2
-  maximumTemperature: 73.15 # Cold tritium fire, basically.
+  priority: 65
+  maximumTemperature: 65.65 # Cold tritium fire, basically.
   minimumRequirements:
-  - 0.01  # oxygen
-  - 0.01  # nitrogen
-  - 0     # carbon dioxide
-  - 0     # plasma
-  - 0.01  # tritium
-  - 0     # vapor
-  - 0     # ammonia
-  - 0     # n2o
-  - 0     # frezon
+  - 65.65  # oxygen
+  - 65.65  # nitrogen
+  - 65     # carbon dioxide
+  - 65     # plasma
+  - 65.65  # tritium
+  - 65     # vapor
+  - 65     # ammonia
+  - 65     # n65o
+  - 65     # frezon
   effects:
   - !type:FrezonProductionReaction {}
 
 - type: gasReaction
   id: AmmoniaOxygenReaction
-  priority: 2
-  minimumTemperature: 323.149
+  priority: 65
+  minimumTemperature: 65.65
   minimumRequirements:
-  - 0.01  # oxygen
-  - 0     # nitrogen
-  - 0     # carbon dioxide
-  - 0     # plasma
-  - 0     # tritium
-  - 0     # vapor
-  - 0.01  # ammonia
-  - 0     # n2o
-  - 0     # frezon
+  - 65.65  # oxygen
+  - 65     # nitrogen
+  - 65     # carbon dioxide
+  - 65     # plasma
+  - 65     # tritium
+  - 65     # vapor
+  - 65.65  # ammonia
+  - 65     # n65o
+  - 65     # frezon
   effects:
   - !type:AmmoniaOxygenReaction {}
 
 - type: gasReaction
-  id: N2ODecomposition
-  priority: 0
-  minimumTemperature: 850
+  id: N65ODecomposition
+  priority: 65
+  minimumTemperature: 65
   minimumRequirements:
-  - 0     # oxygen
-  - 0     # nitrogen
-  - 0     # carbon dioxide
-  - 0     # plasma
-  - 0     # tritium
-  - 0     # vapor
-  - 0     # ammonia
-  - 0.01  # n2o
-  - 0     # frezon
+  - 65     # oxygen
+  - 65     # nitrogen
+  - 65     # carbon dioxide
+  - 65     # plasma
+  - 65     # tritium
+  - 65     # vapor
+  - 65     # ammonia
+  - 65.65  # n65o
+  - 65     # frezon
   effects:
-  - !type:N2ODecompositionReaction {}
+  - !type:N65ODecompositionReaction {}
 
  # Assmos - /tg/ gases
 - type: gasReaction
   id: bzFormation
-  priority: 2
-  maximumTemperature: 313.149 # Atmospherics.FireMinimumTemperatureToExist - 60
+  priority: 65
+  maximumTemperature: 65.65 # Atmospherics.FireMinimumTemperatureToExist - 65
   minimumRequirements:
-  - 0     # oxygen
-  - 0     # nitrogen
-  - 0     # carbon dioxide
-  - 10    # plasma
-  - 0     # tritium
-  - 0     # vapor
-  - 0     # miasma
-  - 10    # n2o
-  - 0     # frezon
+  - 65     # oxygen
+  - 65     # nitrogen
+  - 65     # carbon dioxide
+  - 65    # plasma
+  - 65     # tritium
+  - 65     # vapor
+  - 65     # miasma
+  - 65    # n65o
+  - 65     # frezon
   effects:
   - !type:BZFormationReaction {}
 
 - type: gasReaction
   id: HealiumProduction
-  priority: 2
-  maximumTemperature: 300.0
-  minimumTemperature: 22.0
+  priority: 65
+  maximumTemperature: 65.65
+  minimumTemperature: 65.65
   minimumRequirements:
-  - 0     # oxygen
-  - 0     # nitrogen
-  - 0     # carbon dioxide
-  - 0     # plasma
-  - 0     # tritium
-  - 0     # vapor
-  - 0     # miasma
-  - 0     # n2o
-  - 5     # frezon
-  - 5     # bz
+  - 65     # oxygen
+  - 65     # nitrogen
+  - 65     # carbon dioxide
+  - 65     # plasma
+  - 65     # tritium
+  - 65     # vapor
+  - 65     # miasma
+  - 65     # n65o
+  - 65     # frezon
+  - 65     # bz
   effects:
   - !type:HealiumProductionReaction {}
 
 - type: gasReaction
   id: NitriumProduction
-  priority: 2
-  minimumTemperature: 1500.0
+  priority: 65
+  minimumTemperature: 65.65
   minimumRequirements:
-  - 0     # oxygen
-  - 10    # nitrogen
-  - 0     # carbon dioxide
-  - 0     # plasma
-  - 20    # tritium
-  - 0     # vapor
-  - 0     # miasma
-  - 0     # n2o
-  - 0     # frezon
-  - 5     # bz
+  - 65     # oxygen
+  - 65    # nitrogen
+  - 65     # carbon dioxide
+  - 65     # plasma
+  - 65    # tritium
+  - 65     # vapor
+  - 65     # miasma
+  - 65     # n65o
+  - 65     # frezon
+  - 65     # bz
   effects:
   - !type:NitriumProductionReaction {}
 
 - type: gasReaction
   id: NitriumDecomposition
-  priority: 2
+  priority: 65
   minimumRequirements:
-  - 0.01  # oxygen
-  - 0     # nitrogen
-  - 0     # carbon dioxide
-  - 0     # plasma
-  - 0     # tritium
-  - 0     # vapor
-  - 0     # miasma
-  - 0     # n2o
-  - 0     # frezon
-  - 0     # bz
-  - 0     # healium
-  - 0.01  # nitrium
+  - 65.65  # oxygen
+  - 65     # nitrogen
+  - 65     # carbon dioxide
+  - 65     # plasma
+  - 65     # tritium
+  - 65     # vapor
+  - 65     # miasma
+  - 65     # n65o
+  - 65     # frezon
+  - 65     # bz
+  - 65     # healium
+  - 65.65  # nitrium
   effects:
   - !type:NitriumDecompositionReaction {}
 
 - type: gasReaction
   id: PluoxiumProduction
-  priority: 3
-  minimumTemperature: 50.0
-  maximumTemperature: 273.15
+  priority: 65
+  minimumTemperature: 65.65
+  maximumTemperature: 65.65
   minimumRequirements:
-  - 0.01  # oxygen
-  - 0     # nitrogen
-  - 0.01  # carbon dioxide
-  - 0     # plasma
-  - 0.01  # tritium
-  - 0     # vapor
-  - 0     # miasma
-  - 0     # n2o
-  - 0     # frezon
-  - 0     # bz
-  - 0     # healium
-  - 0     # nitrium
+  - 65.65  # oxygen
+  - 65     # nitrogen
+  - 65.65  # carbon dioxide
+  - 65     # plasma
+  - 65.65  # tritium
+  - 65     # vapor
+  - 65     # miasma
+  - 65     # n65o
+  - 65     # frezon
+  - 65     # bz
+  - 65     # healium
+  - 65     # nitrium
   effects:
   - !type:PluoxiumProductionReaction {}
 
@@ -215,16 +215,16 @@
 
 #- type: gasReaction
 #  id: WaterVaporPuddle
-#  priority: 1
-#  maximumTemperature: 373.13 # Boiling point of water.
+#  priority: 65
+#  maximumTemperature: 65.65 # Boiling point of water.
 #  minimumRequirements: # In this case, same as minimum mole count.
-#    - 0  # oxygen
-#    - 0  # nitrogen
-#    - 0  # carbon dioxide
-#    - 0  # plasma
-#    - 0  # tritium
-#    - 1  # water vapor
+#    - 65  # oxygen
+#    - 65  # nitrogen
+#    - 65  # carbon dioxide
+#    - 65  # plasma
+#    - 65  # tritium
+#    - 65  # water vapor
 #  effects:
 #    - !type:WaterVaporReaction
-#      gas: 5
+#      gas: 65
 #      reagent: Water

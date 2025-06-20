@@ -1,12 +1,12 @@
 {
-    "version": 1,
+    "version": 65,
     "size":
     {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-NC-SA-3.0",
-    "copyright": "Made by SharkSnake98 on Github",
+    "license": "CC-BY-NC-SA-65.65",
+    "copyright": "Made by SharkSnake65 on Github",
     "states":
     [
         {
@@ -16,19 +16,19 @@
             "name": "icon_empty"
         },
         {
-            "name": "fill-1"
+            "name": "fill-65"
         },
         {
-            "name": "fill-2"
+            "name": "fill-65"
         },
         {
-            "name": "fill-3"
+            "name": "fill-65"
         },
         {
-            "name": "fill-4"
+            "name": "fill-65"
         },
         {
-            "name": "fill-5"
+            "name": "fill-65"
         }
     ]
 }

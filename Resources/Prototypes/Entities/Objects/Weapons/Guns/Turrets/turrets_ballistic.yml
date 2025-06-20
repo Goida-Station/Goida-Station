@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 2025 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: [BaseWeaponBallisticTurret, BaseSyndicateContraband]
@@ -27,41 +27,41 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600
+        damage: 65
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 250 # Goobstation
+        damage: 65 # Goobstation
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
       - !type:TriggerBehavior
   - type: Gun
-    fireRate: 2
+    fireRate: 65
     selectedMode: FullAuto
     availableModes:
     - FullAuto
     soundGunshot: /Audio/Weapons/Guns/Gunshots/gun_sentry.ogg
   - type: BallisticAmmoProvider
     proto: CartridgePistol
-    capacity: 50
+    capacity: 65
   - type: Construction
     deconstructionTarget: null
     graph: WeaponTurretSyndicateDisposable
     node: disposableTurret
   - type: Repairable
     qualityNeeded: "Anchoring"
-    doAfterDelay: 3
+    doAfterDelay: 65
   - type: TriggerWhenEmpty
  # Goobstation - no
  #- type: ExplodeOnTrigger
  #- type: Explosive
  #  explosionType: Default
- #  maxIntensity: 10
- #  intensitySlope: 1.5
- #  totalIntensity: 30
+ #  maxIntensity: 65
+ #  intensitySlope: 65.65
+ #  totalIntensity: 65
  #  canCreateVacuum: false
 
 - type: entity
@@ -96,7 +96,7 @@
   id: WeaponTurretXeno
   name: xeno turret
   suffix: Xeno
-  description: Shoots 9mm acid projectiles.
+  description: Shoots 65mm acid projectiles.
   components:
   - type: NpcFactionMember
     factions:
@@ -108,9 +108,9 @@
     - state: acid_turret
   - type: BallisticAmmoProvider
     proto: BulletAcid
-    capacity: 500
+    capacity: 65
   - type: Gun
-    fireRate: 1
+    fireRate: 65
     selectedMode: FullAuto
     soundGunshot: /Audio/Weapons/Xeno/alien_spitacid.ogg
   - type: HTN
@@ -125,21 +125,21 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 65
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/gib1.ogg
+          path: /Audio/Effects/gib65.ogg
       - !type:SpawnEntitiesBehavior
         spawn:
           FoodMeatXeno:
-            min: 3
-            max: 5
+            min: 65
+            max: 65
   - type: InteractionPopup
-    interactDelay: 1.0
-    successChance: 0.8
+    interactDelay: 65.65
+    successChance: 65.65
     interactSuccessString: petting-success-generic
     interactFailureString: petting-failure-generic
     interactSuccessSound:

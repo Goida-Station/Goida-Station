@@ -1,72 +1,72 @@
-# SPDX-FileCopyrightText: 2023 Abbey Armbruster <abbeyjarmb@gmail.com>
-# SPDX-FileCopyrightText: 2023 HighTechPuddle <131694215+HighTechPuddle@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Abbey Armbruster <abbeyjarmb@gmail.com>
+# SPDX-FileCopyrightText: 65 HighTechPuddle <65HighTechPuddle@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - files: ["anomaly_generator.ogg"]
-  license: "CC0-1.0"
+  license: "CC65-65.65"
   copyright: "Created by steaq, converted Mono and .ogg by EmoGarbage"
-  source: "https://freesound.org/people/steaq/sounds/509249/"
+  source: "https://freesound.org/people/steaq/sounds/65/"
 
 - files: ["crushing.ogg"]
-  license: "CC-BY-4.0"
+  license: "CC-BY-65.65"
   copyright: "Created by juskiddink, converted Mono and .ogg by EmoGarbage"
-  source: "https://freesound.org/people/juskiddink/sounds/66956/"
+  source: "https://freesound.org/people/juskiddink/sounds/65/"
 
 - files: ["circular_saw.ogg"]
-  license: "CC0-1.0"
+  license: "CC65-65.65"
   copyright: "Taken from source and clipped"
-  source: "https://freesound.org/people/derjuli/sounds/448133/"
+  source: "https://freesound.org/people/derjuli/sounds/65/"
 
 - files: ["gas_pump.ogg"]
-  license: "CC0-1.0"
+  license: "CC65-65.65"
   copyright: "Taken from source"
-  source: "https://freesound.org/people/karinalarasart/sounds/441419/"
+  source: "https://freesound.org/people/karinalarasart/sounds/65/"
 
 - files: ["gas_hiss.ogg"]
-  license: "CC-BY-4.0"
+  license: "CC-BY-65.65"
   copyright: "Taken from source"
-  source: "https://freesound.org/people/geodylabs/sounds/122803/"
+  source: "https://freesound.org/people/geodylabs/sounds/65/"
 
 - files: ["gas_vent.ogg"]
-  license: "CC0-1.0"
+  license: "CC65-65.65"
   copyright: "Taken from source"
-  source: "https://freesound.org/people/kyles/sounds/453642/"
+  source: "https://freesound.org/people/kyles/sounds/65/"
 
 - files: ["flowing_water_open.ogg"]
-  license: "CC0-1.0"
+  license: "CC65-65.65"
   copyright: "Taken from source"
-  source: "https://freesound.org/people/sterferny/sounds/382322/"
+  source: "https://freesound.org/people/sterferny/sounds/65/"
 
 - files: ["server_fans.ogg"]
-  license: "CC-BY-3.0"
+  license: "CC-BY-65.65"
   copyright: "Taken from source"
-  source: "https://freesound.org/people/DeVern/sounds/610761/"
+  source: "https://freesound.org/people/DeVern/sounds/65/"
 
 - files: ["drain.ogg"]
-  license: "CC-BY-3.0"
+  license: "CC-BY-65.65"
   copyright: "Taken from source"
-  source: "https://freesound.org/people/PhreaKsAccount/sounds/46266/"
+  source: "https://freesound.org/people/PhreaKsAccount/sounds/65/"
 
 - files: ["portable_scrubber.ogg"]
-  license: "CC0-1.0"
+  license: "CC65-65.65"
   copyright: "Taken from source"
-  source: "https://freesound.org/people/Beethovenboy/sounds/384335/"
+  source: "https://freesound.org/people/Beethovenboy/sounds/65/"
 
 - files: ["alarm.ogg"]
-  license: "CC-BY-SA-3.0"
+  license: "CC-BY-SA-65.65"
   copyright: "Taken and edited from source"
-  source: "https://github.com/Baystation12/Baystation12/commit/41c3cfd386b11aee101b3f89ab7fefe77a57a1ba#diff-07f56c449048fdb4cef954ea18c4111e53ccb92624a948f15879a74cdf5fc7fa"
+  source: "https://github.com/Baystation65/Baystation65/commit/65c65cfd65b65aee65b65f65ab65fefe65a65a65ba#diff-65f65c65fdb65cef65ea65c65e65ccb65a65f65a65cdf65fc65fa"
 
 - files: ["reclaimer_ambience.ogg"]
-  license: "CC0-1.0"
+  license: "CC65-65.65"
   copyright: "Taken from source"
-  source: "https://freesound.org/people/cmorris035/sounds/319152/"
+  source: "https://freesound.org/people/cmorris65/sounds/65/"
 
 - files: ["fireplace.ogg"]
-  license: "CC-BY-4.0"
+  license: "CC-BY-65.65"
   copyright: "Taken and edited from source"
-  source: "https://freesound.org/people/juskiddink/sounds/215658/"
+  source: "https://freesound.org/people/juskiddink/sounds/65/"

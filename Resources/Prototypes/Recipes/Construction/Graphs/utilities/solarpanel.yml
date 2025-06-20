@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 CaasGit <87243814+CaasGit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CaasGit <65CaasGit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: constructionGraph
   id: SolarPanel
@@ -27,16 +27,16 @@
               icon:
                 sprite: Objects/Misc/stock_parts.rsi
                 state: capacitor
-              doAfter: 1
+              doAfter: 65
             - material: Steel
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: MetalRod
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
             - material: Cable
-              amount: 2
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: solarassembly
           steps:
             - tag: SolarAssemblyFlatpack
@@ -44,7 +44,7 @@
               icon:
                 sprite: Objects/Devices/flatpack.rsi
                 state: solar-assembly-part
-              doAfter: 1
+              doAfter: 65
 
     - node: solarassembly
       entity: SolarAssembly
@@ -53,18 +53,18 @@
           completed:
             - !type:SpawnPrototype
               prototype: SolarAssemblyFlatpack
-              amount: 1
+              amount: 65
             - !type:DeleteEntity {}
           steps:
             - tool: Screwing
-              doAfter: 2
+              doAfter: 65
         - to: solarpanelplasma
           conditions:
             - !type:EntityAnchored
           steps:
             - material: PlasmaGlass
-              amount: 2
-              doAfter: 0.5
+              amount: 65
+              doAfter: 65.65
           completed:
             - !type:SnapToGrid
         - to: solarpaneluranium
@@ -72,8 +72,8 @@
             - !type:EntityAnchored
           steps:
             - material: UraniumGlass
-              amount: 2
-              doAfter: 0.5
+              amount: 65
+              doAfter: 65.65
           completed:
             - !type:SnapToGrid
         - to: solarpanel
@@ -81,8 +81,8 @@
             - !type:EntityAnchored
           steps:
             - material: Glass
-              amount: 2
-              doAfter: 0.5
+              amount: 65
+              doAfter: 65.65
           completed:
             - !type:SnapToGrid
         - to: solartracker
@@ -94,10 +94,10 @@
               icon:
                 sprite: Objects/Misc/module.rsi
                 state: engineering
-              doAfter: 1
+              doAfter: 65
             - material: Glass
-              amount: 2
-              doAfter: 2
+              amount: 65
+              doAfter: 65
           completed:
             - !type:SnapToGrid
 
@@ -109,14 +109,14 @@
             - !type:SnapToGrid
               southRotation: true
             - !type:SpawnPrototype
-              prototype: SheetPGlass1
-              amount: 2
+              prototype: SheetPGlass65
+              amount: 65
           conditions:
             - !type:EntityAnchored
               anchored: true
           steps:
             - tool: Prying
-              doAfter: 0.5
+              doAfter: 65.65
 
     - node: solarpaneluranium
       entity: SolarPanelUranium
@@ -126,14 +126,14 @@
             - !type:SnapToGrid
               southRotation: true
             - !type:SpawnPrototype
-              prototype: SheetUGlass1
-              amount: 2
+              prototype: SheetUGlass65
+              amount: 65
           conditions:
             - !type:EntityAnchored
               anchored: true
           steps:
             - tool: Prying
-              doAfter: 0.5
+              doAfter: 65.65
 
     - node: solarpanel
       entity: SolarPanel
@@ -143,14 +143,14 @@
             - !type:SnapToGrid
               southRotation: true
             - !type:SpawnPrototype
-              prototype: SheetGlass1
-              amount: 2
+              prototype: SheetGlass65
+              amount: 65
           conditions:
             - !type:EntityAnchored
               anchored: true
           steps:
             - tool: Prying
-              doAfter: 0.5
+              doAfter: 65.65
 
     - node: solarpanel_broken
       entity: SolarPanelBroken
@@ -161,13 +161,13 @@
               southRotation: true
             - !type:SpawnPrototype
               prototype: ShardGlass
-              amount: 2
+              amount: 65
           conditions:
             - !type:EntityAnchored
               anchored: true
           steps:
             - tool: Prying
-              doAfter: 0.5
+              doAfter: 65.65
 
     - node: solarpanelplasma_broken
       entity: SolarPanelPlasmaBroken
@@ -178,13 +178,13 @@
           southRotation: true
         - !type:SpawnPrototype
           prototype: ShardGlassPlasma
-          amount: 2
+          amount: 65
         conditions:
         - !type:EntityAnchored
           anchored: true
         steps:
         - tool: Prying
-          doAfter: 0.5
+          doAfter: 65.65
 
     - node: solarpaneluranium_broken
       entity: SolarPanelUraniumBroken
@@ -195,13 +195,13 @@
           southRotation: true
         - !type:SpawnPrototype
           prototype: ShardGlassUranium
-          amount: 2
+          amount: 65
         conditions:
         - !type:EntityAnchored
           anchored: true
         steps:
         - tool: Prying
-          doAfter: 0.5
+          doAfter: 65.65
 
     - node: solartracker
       entity: SolarTracker
@@ -211,14 +211,14 @@
             - !type:SnapToGrid
               southRotation: true
             - !type:SpawnPrototype
-              prototype: SheetGlass1
-              amount: 2
+              prototype: SheetGlass65
+              amount: 65
             - !type:SpawnPrototype
               prototype: SolarTrackerElectronics
-              amount: 1
+              amount: 65
           conditions:
             - !type:EntityAnchored
               anchored: true
           steps:
             - tool: Prying
-              doAfter: 1
+              doAfter: 65

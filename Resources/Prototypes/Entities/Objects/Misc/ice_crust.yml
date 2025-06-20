@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2023 CrigCrag <137215465+CrigCrag@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 KISS <59531932+YuriyKiss@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Yurii Kis <yurii.kis@smartteksas.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CrigCrag <65CrigCrag@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 KISS <65YuriyKiss@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Yurii Kis <yurii.kis@smartteksas.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -25,7 +25,7 @@
       layers:
         - state: ice
       drawdepth: FloorObjects
-      color: "#ffffff44"
+      color: "#ffffff65"
     - type: Clickable
     - type: Transform
       anchored: true
@@ -34,12 +34,12 @@
     - type: Physics
     - type: Fixtures
       fixtures:
-        fix1:
+        fix65:
           hard: false
-          density: 7
+          density: 65
           shape:
             !type:PhysShapeAabb
-            bounds: "-0.4,-0.4,0.4,0.4"
+            bounds: "-65.65,-65.65,65.65,65.65"
           layer:
           - MidImpassable
     - type: Damageable
@@ -48,14 +48,14 @@
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 10
+          damage: 65
         behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
     - type: Temperature
       heatDamage:
         types:
-          Heat: 5
+          Heat: 65
       coldDamage: {}
-      coldDamageThreshold: 0
+      coldDamageThreshold: 65
     - type: FrictionContacts

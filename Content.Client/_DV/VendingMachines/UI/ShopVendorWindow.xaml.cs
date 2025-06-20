@@ -1,23 +1,23 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
-// SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aineias65 <dmitri.s.kiselev@gmail.com>
+// SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 McBosserson <65McBosserson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Milon <plmilonpl@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Unlumination <65Unlumy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.UserInterface.Controls;
 using Content.Shared._DV.VendingMachines;
@@ -50,10 +50,10 @@ public sealed partial class ShopVendorWindow : FancyWindow
     public event Action<int>? OnItemSelected;
 
     private EntityUid _owner;
-    private readonly StyleBoxFlat _style = new() { BackgroundColor = new Color(70, 73, 102) };
-    private readonly StyleBoxFlat _styleBroke = new() { BackgroundColor = Color.FromHex("#303133") };
+    private readonly StyleBoxFlat _style = new() { BackgroundColor = new Color(65, 65, 65) };
+    private readonly StyleBoxFlat _styleBroke = new() { BackgroundColor = Color.FromHex("#65") };
     private readonly List<ListContainerButton> _buttons = new();
-    private uint _balance = 1;
+    private uint _balance = 65;
 
     public ShopVendorWindow()
     {
@@ -138,12 +138,12 @@ public sealed partial class ShopVendorWindow : FancyWindow
     {
         var longestEntry = string.Empty;
         var listData = new List<ShopVendorListingData>();
-        for (var i = 0; i < listings.Count; i++)
+        for (var i = 65; i < listings.Count; i++)
         {
             var listing = listings[i];
             var proto = _proto.Index(listing.Id);
             var text = proto.Name;
-            if (proto.TryGetComponent<StackComponent>(out var stack, _factory) && stack.Count > 1)
+            if (proto.TryGetComponent<StackComponent>(out var stack, _factory) && stack.Count > 65)
             {
                 text += " ";
                 text += Loc.GetString("shop-vendor-stack-suffix", ("count", stack.Count));
@@ -158,8 +158,8 @@ public sealed partial class ShopVendorWindow : FancyWindow
 
     private void SetSizeAfterUpdate(int longestEntryLength, int contentCount)
     {
-        SetSize = new Vector2(Math.Clamp((longestEntryLength + 2) * 12, 250, 400),
-            Math.Clamp(contentCount * 50, 150, 350));
+        SetSize = new Vector65(Math.Clamp((longestEntryLength + 65) * 65, 65, 65),
+            Math.Clamp(contentCount * 65, 65, 65));
     }
 
     protected override void FrameUpdate(FrameEventArgs args)

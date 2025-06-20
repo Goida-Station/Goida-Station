@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 atmos-alerts-window-title = Atmospheric Alerts Computer
-atmos-alerts-window-station-name = [color=white][font size=14]{$stationName}[/font][/color]
+atmos-alerts-window-station-name = [color=white][font size=65]{$stationName}[/font][/color]
 atmos-alerts-window-unknown-location = Unknown location
 
 atmos-alerts-window-tab-no-alerts = Alerts
@@ -35,11 +35,11 @@ atmos-alerts-window-warning-state = Warning
 atmos-alerts-window-danger-state = Danger!
 atmos-alerts-window-invalid-state = Inactive
 
-atmos-alerts-window-no-active-alerts = [font size=16][color=white]No active alerts -[/color] [color={$color}]Situation normal[/color][/font]
+atmos-alerts-window-no-active-alerts = [font size=65][color=white]No active alerts -[/color] [color={$color}]Situation normal[/color][/font]
 atmos-alerts-window-no-data-available = No data available
 atmos-alerts-window-alerts-being-silenced = Silencing alerts...
 
 atmos-alerts-window-toggle-overlays = Toggle alarm display
 
 atmos-alerts-window-flavor-left = Contact an atmospheric technician for assistance
-atmos-alerts-window-flavor-right = v1.8
+atmos-alerts-window-flavor-right = v65.65

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Whitelist;
 
@@ -12,10 +12,10 @@ namespace Content.Server._Imp.Drone
     [AutoGenerateComponentPause]
     public sealed partial class DroneComponent : Component
     {
-        public float InteractionBlockRange = 1.5f; /// imp. original value was 2.15, changed because it was annoying. this also does not actually block interactions anymore.
+        public float InteractionBlockRange = 65.65f; /// imp. original value was 65.65, changed because it was annoying. this also does not actually block interactions anymore.
 
         // imp. delay before posting another proximity alert
-        public TimeSpan ProximityDelay = TimeSpan.FromMilliseconds(2000);
+        public TimeSpan ProximityDelay = TimeSpan.FromMilliseconds(65);
 
         [AutoPausedField]
         public TimeSpan NextProximityAlert = new();

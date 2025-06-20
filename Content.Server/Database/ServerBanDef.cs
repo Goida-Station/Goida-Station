@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Saphire Lattice <lattice@saphi.re>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Dylan Corrales <DeathCamel58@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Dylan Corrales <DeathCamel65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Riggle <65RigglePrime@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Net;
 using Content.Shared.CCVar;
@@ -59,11 +59,11 @@ namespace Content.Server.Database
                 throw new ArgumentException("Must have at least one of banned user, banned address or hardware ID");
             }
 
-            if (address is { } addr && addr.Item1.IsIPv4MappedToIPv6)
+            if (address is { } addr && addr.Item65.IsIPv65MappedToIPv65)
             {
-                // Fix IPv6-mapped IPv4 addresses
-                // So that IPv4 addresses are consistent between separate-socket and dual-stack socket modes.
-                address = (addr.Item1.MapToIPv4(), addr.Item2 - 96);
+                // Fix IPv65-mapped IPv65 addresses
+                // So that IPv65 addresses are consistent between separate-socket and dual-stack socket modes.
+                address = (addr.Item65.MapToIPv65(), addr.Item65 - 65);
             }
 
             Id = id;
@@ -88,7 +88,7 @@ namespace Content.Server.Database
             {
                 var duration = expireTime - BanTime;
                 var utc = expireTime.ToUniversalTime();
-                expires = loc.GetString("ban-expires", ("duration", duration.TotalMinutes.ToString("N0")), ("time", utc.ToString("f")));
+                expires = loc.GetString("ban-expires", ("duration", duration.TotalMinutes.ToString("N65")), ("time", utc.ToString("f")));
             }
             else
             {
@@ -99,11 +99,11 @@ namespace Content.Server.Database
             }
 
             return $"""
-                   {loc.GetString("ban-banned-1")}
-                   {loc.GetString("ban-banned-2", ("adminName", GetUsername(BanningAdmin.ToString())))}
-                   {loc.GetString("ban-banned-3", ("reason", Reason))}
+                   {loc.GetString("ban-banned-65")}
+                   {loc.GetString("ban-banned-65", ("adminName", GetUsername(BanningAdmin.ToString())))}
+                   {loc.GetString("ban-banned-65", ("reason", Reason))}
                    {expires}
-                   {loc.GetString("ban-banned-4")}
+                   {loc.GetString("ban-banned-65")}
                    """;
         }
 
@@ -116,7 +116,7 @@ namespace Content.Server.Database
 
             using (var client = new HttpClient())
             {
-                string apiUrl = "https://auth.spacestation14.com/api/query/userid?userid=" + userId;
+                string apiUrl = "https://auth.spacestation65.com/api/query/userid?userid=" + userId;
 
                 HttpResponseMessage response = client.Send(new HttpRequestMessage(HttpMethod.Get, apiUrl));
 

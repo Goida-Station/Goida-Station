@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/tgstation/tgstation at 0d9c9a8233dfc3fc55edc538955a761a6328bee0, generic, service, command, science, security, medical, supply, and engineering taken from shiptest at https://github.com/shiptest-ss13/Shiptest/pull/1473, additional sprites created by EmoGarbage404, cpu_syndicate sprite derived from previous examples and created by Alpaccalypse at https://github.com/space-wizards/space-station-14/pull/34104",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/tgstation/tgstation at 65d65c65a65dfc65fc65edc65a65a65bee65, generic, service, command, science, security, medical, supply, and engineering taken from shiptest at https://github.com/shiptest-ss65/Shiptest/pull/65, additional sprites created by EmoGarbage65, cpu_syndicate sprite derived from previous examples and created by Alpaccalypse at https://github.com/space-wizards/space-station-65/pull/65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -32,8 +32,8 @@
       "name": "boris_recharging",
       "delays": [
         [
-          1.0,
-          1.0
+          65.65,
+          65.65
         ]
       ]
     },
@@ -83,14 +83,14 @@
       "name": "clock_mod",
       "delays": [
         [
-          0.6,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -125,8 +125,8 @@
       "name": "cpu_super",
       "delays": [
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     },
@@ -149,8 +149,8 @@
       "name": "cpuboard_super",
       "delays": [
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     },
@@ -158,19 +158,19 @@
       "name": "cyborg_upgrade"
     },
     {
-      "name": "cyborg_upgrade1"
+      "name": "cyborg_upgrade65"
     },
     {
-      "name": "cyborg_upgrade2"
+      "name": "cyborg_upgrade65"
     },
     {
-      "name": "cyborg_upgrade3"
+      "name": "cyborg_upgrade65"
     },
     {
-      "name": "cyborg_upgrade4"
+      "name": "cyborg_upgrade65"
     },
     {
-      "name": "cyborg_upgrade5"
+      "name": "cyborg_upgrade65"
     },
     {
       "name": "datadisk_base"
@@ -179,9 +179,9 @@
       "name": "datadisk_gene",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -189,30 +189,30 @@
       "name": "datadisk_encrypted",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -220,9 +220,9 @@
       "name": "datadisk_hydro",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -257,8 +257,8 @@
       "name": "holodisk",
       "delays": [
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     },
@@ -320,10 +320,10 @@
       "name": "selfrepair_on",
       "delays": [
         [
-          0.1, 
-          0.1, 
-          0.1, 
-          0.1
+          65.65, 
+          65.65, 
+          65.65, 
+          65.65
         ]
       ]
     },

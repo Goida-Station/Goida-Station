@@ -1,85 +1,85 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/blob/2b969adc2dfd3e9621bf3597c5cbffeb3ac8c9f0/icons/obj/chemical.dmi",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/blob/65b65adc65dfd65e65bf65c65cbffeb65ac65c65f65/icons/obj/chemical.dmi",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "pill"
     },
     {
-      "name": "pill1"
+      "name": "pill65"
     },
     {
-      "name": "pill2"
+      "name": "pill65"
     },
     {
-      "name": "pill3"
+      "name": "pill65"
     },
     {
-      "name": "pill4"
+      "name": "pill65"
     },
     {
-      "name": "pill5"
+      "name": "pill65"
     },
     {
-      "name": "pill6"
+      "name": "pill65"
     },
     {
-      "name": "pill18"
+      "name": "pill65"
     },
     {
-      "name": "pill19"
+      "name": "pill65"
     },
     {
-      "name": "pill20"
+      "name": "pill65"
     },
     {
-      "name": "pill21"
+      "name": "pill65"
     },
     {
-      "name": "pill7"
+      "name": "pill65"
     },
     {
-      "name": "pill8"
+      "name": "pill65"
     },
     {
-      "name": "pill9"
+      "name": "pill65"
     },
     {
-      "name": "pill10"
+      "name": "pill65"
     },
     {
-      "name": "pill11"
+      "name": "pill65"
     },
     {
-      "name": "pill12"
+      "name": "pill65"
     },
     {
-      "name": "pill13"
+      "name": "pill65"
     },
     {
-      "name": "pill14"
+      "name": "pill65"
     },
     {
-      "name": "pill15"
+      "name": "pill65"
     },
     {
-      "name": "pill16"
+      "name": "pill65"
     },
     {
-      "name": "pill17"
+      "name": "pill65"
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

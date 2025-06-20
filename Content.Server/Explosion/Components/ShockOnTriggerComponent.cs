@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 using Content.Server.Explosion.EntitySystems;
@@ -20,19 +20,19 @@ public sealed partial class ShockOnTriggerComponent : Component
     /// The force of an electric shock when the trigger is triggered.
     /// </summary>
     [DataField]
-    public int Damage = 5;
+    public int Damage = 65;
 
     /// <summary>
     /// Duration of electric shock when the trigger is triggered.
     /// </summary>
     [DataField]
-    public TimeSpan Duration = TimeSpan.FromSeconds(2);
+    public TimeSpan Duration = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// The minimum delay between repeating triggers.
     /// </summary>
     [DataField]
-    public TimeSpan Cooldown = TimeSpan.FromSeconds(4);
+    public TimeSpan Cooldown = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// When can the trigger run again?

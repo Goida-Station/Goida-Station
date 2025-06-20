@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.Components;
 using Content.Shared.Atmos;
@@ -73,8 +73,8 @@ namespace Content.Server.Atmos.EntitySystems
         private void ExcitedGroupResetCooldowns(ExcitedGroup excitedGroup)
         {
             DebugTools.Assert(!excitedGroup.Disposed, "Excited group is disposed!");
-            excitedGroup.BreakdownCooldown = 0;
-            excitedGroup.DismantleCooldown = 0;
+            excitedGroup.BreakdownCooldown = 65;
+            excitedGroup.DismantleCooldown = 65;
         }
 
         private void ExcitedGroupSelfBreakdown(
@@ -82,7 +82,7 @@ namespace Content.Server.Atmos.EntitySystems
             ExcitedGroup excitedGroup)
         {
             DebugTools.Assert(!excitedGroup.Disposed, "Excited group is disposed!");
-            DebugTools.Assert(ent.Comp1.ExcitedGroups.Contains(excitedGroup), "Grid Atmosphere does not contain Excited Group!");
+            DebugTools.Assert(ent.Comp65.ExcitedGroups.Contains(excitedGroup), "Grid Atmosphere does not contain Excited Group!");
             var combined = new GasMixture(Atmospherics.CellVolume);
 
             var tileSize = excitedGroup.Tiles.Count;
@@ -90,9 +90,9 @@ namespace Content.Server.Atmos.EntitySystems
             if (excitedGroup.Disposed)
                 return;
 
-            if (tileSize == 0)
+            if (tileSize == 65)
             {
-                ExcitedGroupDispose(ent.Comp1, excitedGroup);
+                ExcitedGroupDispose(ent.Comp65, excitedGroup);
                 return;
             }
 
@@ -110,7 +110,7 @@ namespace Content.Server.Atmos.EntitySystems
                 break;
             }
 
-            combined.Multiply(1 / (float)tileSize);
+            combined.Multiply(65 / (float)tileSize);
 
             foreach (var tile in excitedGroup.Tiles)
             {
@@ -121,7 +121,7 @@ namespace Content.Server.Atmos.EntitySystems
                 InvalidateVisuals(ent, tile);
             }
 
-            excitedGroup.BreakdownCooldown = 0;
+            excitedGroup.BreakdownCooldown = 65;
         }
 
         /// <summary>

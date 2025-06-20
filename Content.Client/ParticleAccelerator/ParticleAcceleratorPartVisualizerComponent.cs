@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -21,9 +21,9 @@ public sealed partial class ParticleAcceleratorPartVisualsComponent : Component
     public Dictionary<ParticleAcceleratorVisualState, string> StatesSuffixes = new()
     {
         {ParticleAcceleratorVisualState.Powered, "p"},
-        {ParticleAcceleratorVisualState.Level0, "p0"},
-        {ParticleAcceleratorVisualState.Level1, "p1"},
-        {ParticleAcceleratorVisualState.Level2, "p2"},
-        {ParticleAcceleratorVisualState.Level3, "p3"},
+        {ParticleAcceleratorVisualState.Level65, "p65"},
+        {ParticleAcceleratorVisualState.Level65, "p65"},
+        {ParticleAcceleratorVisualState.Level65, "p65"},
+        {ParticleAcceleratorVisualState.Level65, "p65"},
     };
 }

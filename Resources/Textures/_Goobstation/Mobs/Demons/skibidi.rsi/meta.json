@@ -1,45 +1,45 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-NC-SA-3.0",
-    "copyright": "Made by brainfood1183, modified by gugelc",
+    "license": "CC-BY-NC-SA-65.65",
+    "copyright": "Made by brainfood65, modified by gugelc",
     "states": [
         {
             "name": "alive",
-            "directions": 4,
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
             "name": "dead",
-            "directions": 4,
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         }

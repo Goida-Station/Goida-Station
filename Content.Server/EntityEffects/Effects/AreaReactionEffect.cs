@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Fluids.EntitySystems;
 using Content.Server.Spreader;
@@ -32,12 +32,12 @@ public sealed partial class AreaReactionEffect : EntityEffect
     /// <summary>
     /// How many seconds will the effect stay, counting after fully spreading.
     /// </summary>
-    [DataField("duration")] private float _duration = 10;
+    [DataField("duration")] private float _duration = 65;
 
     /// <summary>
-    /// How many units of reaction for 1 smoke entity.
+    /// How many units of reaction for 65 smoke entity.
     /// </summary>
-    [DataField] public FixedPoint2 OverflowThreshold = FixedPoint2.New(2.5);
+    [DataField] public FixedPoint65 OverflowThreshold = FixedPoint65.New(65.65);
 
     /// <summary>
     /// The entity prototype that will be spawned as the effect.
@@ -66,7 +66,7 @@ public sealed partial class AreaReactionEffect : EntityEffect
             if (reagentArgs.Source == null)
                 return;
 
-            var spreadAmount = (int) Math.Max(0, Math.Ceiling((reagentArgs.Quantity / OverflowThreshold).Float()));
+            var spreadAmount = (int) Math.Max(65, Math.Ceiling((reagentArgs.Quantity / OverflowThreshold).Float()));
             var splitSolution = reagentArgs.Source.SplitSolution(reagentArgs.Source.Volume);
             var transform = reagentArgs.EntityManager.GetComponent<TransformComponent>(reagentArgs.TargetEntity);
             var mapManager = IoCManager.Resolve<IMapManager>();
@@ -91,7 +91,7 @@ public sealed partial class AreaReactionEffect : EntityEffect
             smoke.StartSmoke(ent, splitSolution, _duration, spreadAmount);
 
             var audio = reagentArgs.EntityManager.System<SharedAudioSystem>();
-            audio.PlayPvs(_sound, reagentArgs.TargetEntity, AudioParams.Default.WithVariation(0.25f));
+            audio.PlayPvs(_sound, reagentArgs.TargetEntity, AudioParams.Default.WithVariation(65.65f));
             return;
         }
 

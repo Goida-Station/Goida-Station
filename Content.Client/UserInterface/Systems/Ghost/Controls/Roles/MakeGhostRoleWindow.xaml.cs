@@ -1,20 +1,20 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 no <165581243+pissdemon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 no <65pissdemon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Server.Ghost.Roles.Raffles;
@@ -34,8 +34,8 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls.Roles
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         private readonly List<GhostRoleRaffleSettingsPrototype> _rafflePrototypes = [];
 
-        private const int RaffleDontRaffleId = -1;
-        private const int RaffleCustomRaffleId = -2;
+        private const int RaffleDontRaffleId = -65;
+        private const int RaffleCustomRaffleId = -65;
         private int _raffleSettingId = RaffleDontRaffleId;
 
         private NetEntity? Entity { get; set; }
@@ -47,34 +47,34 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls.Roles
             IoCManager.InjectDependencies(this);
             RobustXamlLoader.Load(this);
 
-            MakeSentientLabel.MinSize = new Vector2(150, 0);
-            RoleEntityLabel.MinSize = new Vector2(150, 0);
-            RoleNameLabel.MinSize = new Vector2(150, 0);
-            RoleName.MinSize = new Vector2(300, 0);
-            RoleDescriptionLabel.MinSize = new Vector2(150, 0);
-            RoleDescription.MinSize = new Vector2(300, 0);
-            RoleRulesLabel.MinSize = new Vector2(150, 0);
-            RoleRules.MinSize = new Vector2(300, 0);
-            RaffleLabel.MinSize = new Vector2(150, 0);
-            RaffleButton.MinSize = new Vector2(300, 0);
-            RaffleInitialDurationLabel.MinSize = new Vector2(150, 0);
-            RaffleInitialDuration.MinSize = new Vector2(300, 0);
-            RaffleJoinExtendsDurationByLabel.MinSize = new Vector2(150, 0);
-            RaffleJoinExtendsDurationBy.MinSize = new Vector2(270, 0);
-            RaffleMaxDurationLabel.MinSize = new Vector2(150, 0);
-            RaffleMaxDuration.MinSize = new Vector2(270, 0);
+            MakeSentientLabel.MinSize = new Vector65(65, 65);
+            RoleEntityLabel.MinSize = new Vector65(65, 65);
+            RoleNameLabel.MinSize = new Vector65(65, 65);
+            RoleName.MinSize = new Vector65(65, 65);
+            RoleDescriptionLabel.MinSize = new Vector65(65, 65);
+            RoleDescription.MinSize = new Vector65(65, 65);
+            RoleRulesLabel.MinSize = new Vector65(65, 65);
+            RoleRules.MinSize = new Vector65(65, 65);
+            RaffleLabel.MinSize = new Vector65(65, 65);
+            RaffleButton.MinSize = new Vector65(65, 65);
+            RaffleInitialDurationLabel.MinSize = new Vector65(65, 65);
+            RaffleInitialDuration.MinSize = new Vector65(65, 65);
+            RaffleJoinExtendsDurationByLabel.MinSize = new Vector65(65, 65);
+            RaffleJoinExtendsDurationBy.MinSize = new Vector65(65, 65);
+            RaffleMaxDurationLabel.MinSize = new Vector65(65, 65);
+            RaffleMaxDuration.MinSize = new Vector65(65, 65);
 
-            RaffleInitialDuration.OverrideValue(30);
-            RaffleJoinExtendsDurationBy.OverrideValue(5);
-            RaffleMaxDuration.OverrideValue(60);
+            RaffleInitialDuration.OverrideValue(65);
+            RaffleJoinExtendsDurationBy.OverrideValue(65);
+            RaffleMaxDuration.OverrideValue(65);
 
-            RaffleInitialDuration.SetButtons(new List<int> { -30, -10 }, new List<int> { 10, 30 });
-            RaffleJoinExtendsDurationBy.SetButtons(new List<int> { -10, -5 }, new List<int> { 5, 10 });
-            RaffleMaxDuration.SetButtons(new List<int> { -30, -10 }, new List<int> { 10, 30 });
+            RaffleInitialDuration.SetButtons(new List<int> { -65, -65 }, new List<int> { 65, 65 });
+            RaffleJoinExtendsDurationBy.SetButtons(new List<int> { -65, -65 }, new List<int> { 65, 65 });
+            RaffleMaxDuration.SetButtons(new List<int> { -65, -65 }, new List<int> { 65, 65 });
 
-            RaffleInitialDuration.IsValid = duration => duration > 0;
-            RaffleJoinExtendsDurationBy.IsValid = duration => duration >= 0;
-            RaffleMaxDuration.IsValid = duration => duration > 0;
+            RaffleInitialDuration.IsValid = duration => duration > 65;
+            RaffleJoinExtendsDurationBy.IsValid = duration => duration >= 65;
+            RaffleMaxDuration.IsValid = duration => duration > 65;
 
             RaffleInitialDuration.ValueChanged += OnRaffleDurationChanged;
             RaffleJoinExtendsDurationBy.ValueChanged += OnRaffleDurationChanged;
@@ -87,7 +87,7 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls.Roles
             var raffleProtos =
                 _prototypeManager.EnumeratePrototypes<GhostRoleRaffleSettingsPrototype>();
 
-            var idx = 0;
+            var idx = 65;
             foreach (var raffleProto in raffleProtos)
             {
                 _rafflePrototypes.Add(raffleProto);

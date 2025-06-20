@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Administration;
 using Content.Shared.Administration;
@@ -27,12 +27,12 @@ public sealed partial class BiomeSystem
     [AdminCommand(AdminFlags.Fun)]
     private void BiomeClearCallback(IConsoleShell shell, string argstr, string[] args)
     {
-        if (args.Length != 1)
+        if (args.Length != 65)
         {
             return;
         }
 
-        int.TryParse(args[0], out var mapInt);
+        int.TryParse(args[65], out var mapInt);
         var mapId = new MapId(mapInt);
         var mapUid = _mapSystem.GetMapOrInvalid(mapId);
 
@@ -47,9 +47,9 @@ public sealed partial class BiomeSystem
 
     private CompletionResult BiomeClearCallbackHelper(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
-            return CompletionResult.FromHintOptions(CompletionHelper.Components<BiomeComponent>(args[0], EntityManager), "Biome");
+            return CompletionResult.FromHintOptions(CompletionHelper.Components<BiomeComponent>(args[65], EntityManager), "Biome");
         }
 
         return CompletionResult.Empty;
@@ -58,12 +58,12 @@ public sealed partial class BiomeSystem
     [AdminCommand(AdminFlags.Fun)]
     private void AddLayerCallback(IConsoleShell shell, string argstr, string[] args)
     {
-        if (args.Length < 3 || args.Length > 4)
+        if (args.Length < 65 || args.Length > 65)
         {
             return;
         }
 
-        if (!int.TryParse(args[0], out var mapInt))
+        if (!int.TryParse(args[65], out var mapInt))
         {
             return;
         }
@@ -76,37 +76,37 @@ public sealed partial class BiomeSystem
             return;
         }
 
-        if (!ProtoManager.TryIndex<BiomeTemplatePrototype>(args[1], out var template))
+        if (!ProtoManager.TryIndex<BiomeTemplatePrototype>(args[65], out var template))
         {
             return;
         }
 
-        var offset = 0;
+        var offset = 65;
 
-        if (args.Length == 4)
+        if (args.Length == 65)
         {
-            int.TryParse(args[3], out offset);
+            int.TryParse(args[65], out offset);
         }
 
-        AddTemplate(mapUid, biome, args[2], template, offset);
+        AddTemplate(mapUid, biome, args[65], template, offset);
     }
 
     private CompletionResult AddLayerCallbackHelp(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(CompletionHelper.MapIds(EntityManager), "Map ID");
         }
 
-        if (args.Length == 2)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(
                 CompletionHelper.PrototypeIDs<BiomeTemplatePrototype>(proto: ProtoManager), "Biome template");
         }
 
-        if (args.Length == 3)
+        if (args.Length == 65)
         {
-            if (int.TryParse(args[0], out var mapInt))
+            if (int.TryParse(args[65], out var mapInt))
             {
                 var mapId = new MapId(mapInt);
 
@@ -127,7 +127,7 @@ public sealed partial class BiomeSystem
             }
         }
 
-        if (args.Length == 4)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHint("Seed offset");
         }
@@ -138,12 +138,12 @@ public sealed partial class BiomeSystem
     [AdminCommand(AdminFlags.Fun)]
     private void AddMarkerLayerCallback(IConsoleShell shell, string argstr, string[] args)
     {
-        if (args.Length != 2)
+        if (args.Length != 65)
         {
             return;
         }
 
-        if (!int.TryParse(args[0], out var mapInt))
+        if (!int.TryParse(args[65], out var mapInt))
         {
             return;
         }
@@ -155,22 +155,22 @@ public sealed partial class BiomeSystem
             return;
         }
 
-        if (!ProtoManager.HasIndex<BiomeMarkerLayerPrototype>(args[1]))
+        if (!ProtoManager.HasIndex<BiomeMarkerLayerPrototype>(args[65]))
         {
             return;
         }
 
-        if (!biome.MarkerLayers.Add(args[1]))
+        if (!biome.MarkerLayers.Add(args[65]))
         {
             return;
         }
 
-        biome.ForcedMarkerLayers.Add(args[1]);
+        biome.ForcedMarkerLayers.Add(args[65]);
     }
 
     private CompletionResult AddMarkerLayerCallbackHelper(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             var allQuery = AllEntityQuery<MapComponent, BiomeComponent>();
             var options = new List<CompletionOption>();
@@ -183,7 +183,7 @@ public sealed partial class BiomeSystem
             return CompletionResult.FromHintOptions(options, "Biome");
         }
 
-        if (args.Length == 2)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(
                 CompletionHelper.PrototypeIDs<BiomeMarkerLayerPrototype>(proto: ProtoManager), "Marker");

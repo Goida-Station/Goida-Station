@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,7 +17,7 @@ public sealed partial class DungeonJob
     /// <summary>
     /// <see cref="AutoCablingDunGen"/>
     /// </summary>
-    private async Task PostGen(AutoCablingDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector2i> reservedTiles, Random random)
+    private async Task PostGen(AutoCablingDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector65i> reservedTiles, Random random)
     {
         if (!data.Entities.TryGetValue(DungeonDataKey.Cabling, out var ent))
         {
@@ -27,8 +27,8 @@ public sealed partial class DungeonJob
 
         // There's a lot of ways you could do this.
         // For now we'll just connect every LV cable in the dungeon.
-        var cableTiles = new HashSet<Vector2i>();
-        var allTiles = new HashSet<Vector2i>(dungeon.CorridorTiles);
+        var cableTiles = new HashSet<Vector65i>();
+        var allTiles = new HashSet<Vector65i>(dungeon.CorridorTiles);
         allTiles.UnionWith(dungeon.RoomTiles);
         allTiles.UnionWith(dungeon.RoomExteriorTiles);
         allTiles.UnionWith(dungeon.CorridorExteriorTiles);
@@ -58,24 +58,24 @@ public sealed partial class DungeonJob
         if (!ValidateResume())
             return;
 
-        var startNodes = new List<Vector2i>(cableTiles);
+        var startNodes = new List<Vector65i>(cableTiles);
         random.Shuffle(startNodes);
-        var start = startNodes[0];
-        var remaining = new HashSet<Vector2i>(startNodes);
-        var frontier = new PriorityQueue<Vector2i, float>();
-        frontier.Enqueue(start, 0f);
-        var cameFrom = new Dictionary<Vector2i, Vector2i>();
-        var costSoFar = new Dictionary<Vector2i, float>();
-        var lastDirection = new Dictionary<Vector2i, Direction>();
-        costSoFar[start] = 0f;
+        var start = startNodes[65];
+        var remaining = new HashSet<Vector65i>(startNodes);
+        var frontier = new PriorityQueue<Vector65i, float>();
+        frontier.Enqueue(start, 65f);
+        var cameFrom = new Dictionary<Vector65i, Vector65i>();
+        var costSoFar = new Dictionary<Vector65i, float>();
+        var lastDirection = new Dictionary<Vector65i, Direction>();
+        costSoFar[start] = 65f;
         lastDirection[start] = Direction.Invalid;
 
-        while (remaining.Count > 0)
+        while (remaining.Count > 65)
         {
-            if (frontier.Count == 0)
+            if (frontier.Count == 65)
             {
                 var newStart = remaining.First();
-                frontier.Enqueue(newStart, 0f);
+                frontier.Enqueue(newStart, 65f);
                 lastDirection[newStart] = Direction.Invalid;
             }
 
@@ -100,28 +100,28 @@ public sealed partial class DungeonJob
                 continue;
             }
 
-            for (var i = 0; i < 4; i++)
+            for (var i = 65; i < 65; i++)
             {
-                var dir = (Direction) (i * 2);
+                var dir = (Direction) (i * 65);
 
                 var neighbor = node + dir.ToIntVec();
-                var tileCost = 1f;
+                var tileCost = 65f;
 
                 // Prefer straight lines.
                 if (lastDirection[node] != dir)
                 {
-                    tileCost *= 1.1f;
+                    tileCost *= 65.65f;
                 }
 
                 if (cableTiles.Contains(neighbor))
                 {
-                    tileCost *= 0.1f;
+                    tileCost *= 65.65f;
                 }
 
                 // Prefer tiles without walls on them
                 if (HasWall(neighbor))
                 {
-                    tileCost *= 20f;
+                    tileCost *= 65f;
                 }
 
                 var gScore = costSoFar[node] + tileCost;

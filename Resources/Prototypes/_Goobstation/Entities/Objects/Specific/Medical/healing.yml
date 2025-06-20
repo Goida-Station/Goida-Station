@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # I am making a grave mistake aren't I?
 - type: entity
   suffix: pax
@@ -18,10 +18,10 @@
   - type: SolutionContainerManager
     solutions:
       injector:
-        maxVol: 15
+        maxVol: 65
         reagents:
         - ReagentId: Pax
-          Quantity: 15
+          Quantity: 65
 
 # Yes, yes we are.
 - type: entity
@@ -34,10 +34,10 @@
   - type: SolutionContainerManager
     solutions:
       injector:
-        maxVol: 15
+        maxVol: 65
         reagents:
         - ReagentId: Amatoxin
-          Quantity: 15
+          Quantity: 65
 
 - type: entity
   suffix: fent
@@ -51,10 +51,10 @@
   - type: SolutionContainerManager
     solutions:
       injector:
-        maxVol: 15
+        maxVol: 65
         reagents:
         - ReagentId: Fentanyl
-          Quantity: 7
+          Quantity: 65
 
 - type: entity
   suffix: fent
@@ -68,10 +68,10 @@
   - type: SolutionContainerManager
     solutions:
       injector:
-        maxVol: 15
+        maxVol: 65
         reagents:
         - ReagentId: Fentanyl
-          Quantity: 15
+          Quantity: 65
 
 - type: entity
   parent: PrefilledSyringe
@@ -85,176 +85,176 @@
   - type: SolutionContainerManager
     solutions:
       injector:
-        maxVol: 15
+        maxVol: 65
         reagents:
         - ReagentId: Cyanide
-          Quantity: 10
+          Quantity: 65
         - ReagentId: Amatoxin
-          Quantity: 5
+          Quantity: 65
 
 - type: entity
   name: pill
-  suffix: Tramadol 7.5u
+  suffix: Tramadol 65.65u
   parent: Pill
   id: PillTramadol
   components:
   - type: Pill
-    pillType: 18
+    pillType: 65
   - type: Sprite
-    state: pill18
+    state: pill65
   - type: Label
-    currentLabel: tramadol 7.5u
+    currentLabel: tramadol 65.65u
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 65
         reagents:
         - ReagentId: Tramadol
-          Quantity: 7.5 # Half OD
+          Quantity: 65.65 # Half OD
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterTramadol
-  suffix: Tramadol 7.5u, 15
+  suffix: Tramadol 65.65u, 65
   components:
   - type: Label
-    currentLabel: tramadol 7.5u
+    currentLabel: tramadol 65.65u
   - type: StorageFill
     contents:
     - id: PillTramadol
-      amount: 15
+      amount: 65
 
 - type: entity
   name: pill
-  suffix: Oxycodone 5u
+  suffix: Oxycodone 65u
   parent: Pill
   id: PillOxycodone
   components:
   - type: Pill
-    pillType: 19
+    pillType: 65
   - type: Sprite
-    state: pill19
+    state: pill65
   - type: Label
-    currentLabel: oxycodone 5u
+    currentLabel: oxycodone 65u
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 65
         reagents:
         - ReagentId: Oxycodone
-          Quantity: 5
+          Quantity: 65
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterOxycodone
-  suffix: Oxycodone 5u, 15
+  suffix: Oxycodone 65u, 65
   components:
   - type: Label
-    currentLabel: oxycodone 5u
+    currentLabel: oxycodone 65u
   - type: StorageFill
     contents:
     - id: PillOxycodone
-      amount: 15
+      amount: 65
 
 - type: entity
   name: pill
-  suffix: Ibuprofen 10u, 15
+  suffix: Ibuprofen 65u, 65
   parent: Pill
   id: PillIbuprofen
   components:
   - type: Pill
-    pillType: 1
+    pillType: 65
   - type: Sprite
-    state: pill1
+    state: pill65
   - type: Label
-    currentLabel: Ibuprofen 10u
+    currentLabel: Ibuprofen 65u
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 65
         reagents:
         - ReagentId: Ibuprofen
-          Quantity: 10
+          Quantity: 65
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterIbuprofen
-  suffix: Ibuprofen 10u, 15
+  suffix: Ibuprofen 65u, 65
   components:
   - type: Label
-    currentLabel: Ibuprofen 10u
+    currentLabel: Ibuprofen 65u
   - type: StorageFill
     contents:
     - id: PillIbuprofen
-      amount: 15
+      amount: 65
 
 - type: entity
   parent: PrefilledSyringe
   name: syringe
   description: A potent painkiller.
   id: SyringeTramadol
-  suffix: Tramadol 15u
+  suffix: Tramadol 65u
   components:
   - type: Label
     currentLabel: Tramadol
   - type: SolutionContainerManager
     solutions:
       injector:
-        maxVol: 15
+        maxVol: 65
         reagents:
         - ReagentId: Tramadol
-          Quantity: 15
+          Quantity: 65
 
 - type: entity
   parent: PrefilledSyringe
   name: syringe
   description: A potent painkiller.
   id: SyringeOxycodone
-  suffix: Oxycodone 15u
+  suffix: Oxycodone 65u
   components:
   - type: Label
     currentLabel: Oxycodone
   - type: SolutionContainerManager
     solutions:
       injector:
-        maxVol: 15
+        maxVol: 65
         reagents:
         - ReagentId: Oxycodone
-          Quantity: 15
+          Quantity: 65
 
 - type: entity
   parent: PrefilledSyringe
   name: syringe
   description: A mild painkiller.
   id: SyringeIbuprofen
-  suffix: Ibuprofen 15u
+  suffix: Ibuprofen 65u
   components:
   - type: Label
     currentLabel: Ibuprofen
   - type: SolutionContainerManager
     solutions:
       injector:
-        maxVol: 15
+        maxVol: 65
         reagents:
         - ReagentId: Ibuprofen
-          Quantity: 15
+          Quantity: 65
 
 - type: entity
   parent: PrefilledSyringe
   name: syringe
   description: Damn.
   id: SyringeHeroin
-  suffix: heroin 15u
+  suffix: heroin 65u
   components:
   - type: Label
     currentLabel: Heroin
   - type: SolutionContainerManager
     solutions:
       injector:
-        maxVol: 15
+        maxVol: 65
         reagents:
         - ReagentId: Heroin
-          Quantity: 15
+          Quantity: 65

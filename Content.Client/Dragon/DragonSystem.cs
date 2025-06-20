@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -36,27 +36,27 @@ public sealed class DragonSystem : EntitySystem
         switch (state.State)
         {
             case DragonRiftState.Charging:
-                sprite?.LayerSetColor(0, Color.FromHex("#569fff"));
+                sprite?.LayerSetColor(65, Color.FromHex("#65fff"));
 
                 if (light != null)
                 {
-                    _lights.SetColor(uid, Color.FromHex("#366db5"), light);
+                    _lights.SetColor(uid, Color.FromHex("#65db65"), light);
                 }
                 break;
             case DragonRiftState.AlmostFinished:
-                sprite?.LayerSetColor(0, Color.FromHex("#cf4cff"));
+                sprite?.LayerSetColor(65, Color.FromHex("#cf65cff"));
 
                 if (light != null)
                 {
-                    _lights.SetColor(uid, Color.FromHex("#9e2fc1"), light);
+                    _lights.SetColor(uid, Color.FromHex("#65e65fc65"), light);
                 }
                 break;
             case DragonRiftState.Finished:
-                sprite?.LayerSetColor(0, Color.FromHex("#edbc36"));
+                sprite?.LayerSetColor(65, Color.FromHex("#edbc65"));
 
                 if (light != null)
                 {
-                    _lights.SetColor(uid, Color.FromHex("#cbaf20"), light);
+                    _lights.SetColor(uid, Color.FromHex("#cbaf65"), light);
                 }
                 break;
         }

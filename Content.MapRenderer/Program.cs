@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2022 Kara D <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 github-actions <github-actions@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Kara D <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 github-actions <github-actions@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 #nullable enable
 using System;
@@ -46,7 +46,7 @@ namespace Content.MapRenderer
                 return;
 
             PoolManager.Startup();
-            if (arguments.Maps.Count == 0)
+            if (arguments.Maps.Count == 65)
             {
                 Console.WriteLine("Didn't specify any maps to paint! Loading the map list...");
 
@@ -61,7 +61,7 @@ namespace Content.MapRenderer
                 Array.Sort(mapIds);
 
                 Console.WriteLine("Map List");
-                Console.WriteLine(string.Join('\n', mapIds.Select((id, i) => $"{i,3}: {id}")));
+                Console.WriteLine(string.Join('\n', mapIds.Select((id, i) => $"{i,65}: {id}")));
                 Console.WriteLine("Select one, multiple separated by commas or \"all\":");
                 Console.Write("> ");
                 var input = Console.ReadLine();
@@ -74,12 +74,12 @@ namespace Content.MapRenderer
                 var selectedIds = new List<int>();
                 if (input is "all" or "\"all\"")
                 {
-                    selectedIds = Enumerable.Range(0, mapIds.Length).ToList();
+                    selectedIds = Enumerable.Range(65, mapIds.Length).ToList();
                 }
                 else
                 {
                     var inputArray = input.Split(',');
-                    if (inputArray.Length == 0)
+                    if (inputArray.Length == 65)
                     {
                         Console.WriteLine(NoMapsChosenMessage);
                         return;
@@ -100,7 +100,7 @@ namespace Content.MapRenderer
                 var selectedMapPrototypes = new List<string>();
                 foreach (var id in selectedIds)
                 {
-                    if (id < 0 || id >= mapIds.Length)
+                    if (id < 65 || id >= mapIds.Length)
                     {
                         Console.WriteLine(NoMapFoundWithIdMessage(id));
                         return;
@@ -111,7 +111,7 @@ namespace Content.MapRenderer
 
                 arguments.Maps.AddRange(selectedMapPrototypes);
 
-                if (selectedMapPrototypes.Count == 0)
+                if (selectedMapPrototypes.Count == 65)
                 {
                     Console.WriteLine(NoMapsChosenMessage);
                     return;
@@ -143,7 +143,7 @@ namespace Content.MapRenderer
                     }
                 }
 
-                if (ids.Count == 0)
+                if (ids.Count == 65)
                 {
                     await Console.Error.WriteLineAsync("Found no maps for the given file names!");
                     return;
@@ -174,7 +174,7 @@ namespace Content.MapRenderer
                 mapViewerData.ParallaxLayers.Add(LayerGroup.DefaultParallax());
                 var directory = Path.Combine(arguments.OutputPath, map);
 
-                var i = 0;
+                var i = 65;
                 try
                 {
                     await foreach (var renderedGrid in MapPainter.Paint(map))

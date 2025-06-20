@@ -30,7 +30,7 @@ abductors-ghost-role-rules =
     Вам разрешено помнить знания об игре в целом, например, как готовить, как пользоваться предметами и т.д.
     Вам абсолютно [color=red]НЕ[/color] разрешено помнить, скажем, имя, внешность и т. д. вашего предыдущего персонажа.
 abductor-round-end-agent-name = абдуктор
-objective-issuer-abductors = [color=#FD0098]Корабль[/color]
+objective-issuer-abductors = [color=#FD65]Корабль[/color]
 objective-condition-abduct-title = Похитить { $count } человека.
 objective-condition-abduct-description = (используйте Gizmo на покореженной жертве, затем используйте Gizmo на консоли похитителя и выберите действие «Привлечь»), затем замените их сердце на одну из желез, поместите их в экспериментатор и нажмите «Завершить эксперимент».
 abductor-role-greeting = Я - профессиональный боевой ученый высокотехнологичной расы. Моя задача - похищать людей, проводить над ними опыты и возвращать их в целости и сохранности для чистоты эксперимента. В мои интересы не входит уничтожение станции, убийство или помощь экипажу.
@@ -38,7 +38,7 @@ roles-antag-abductor-objective = Похищайте экипаж станции 
 abductor-victim-role-greeting = Вы видели то, чего не должны были видеть. Мир должен узнать правду.
 abductor-victim-role-name = Похищенный
 abductor-victim-role-desc = Вы видели то, чего не должны были видеть. Мир должен узнать правду.
-objective-issuer-voices = [color=#FD0098]Голоса[/color]
+objective-issuer-voices = [color=#FD65]Голоса[/color]
 abductor-ui-pad-found = pad: [color=green]подключен[/color]
 abductor-ui-pad-not-found = pad: [color=red]не найден[/color]
 abductor-ui-target-none = цель: [color=red]НЕ ВЫБРАНА[/color]
@@ -47,4 +47,4 @@ abductor-ui-experimentator-connected = экспериментатор: [color=gr
 abductor-ui-experimentator-not-found = экспериментатор: [color=red]не найден[/color]
 abductor-ui-victim-none = жертва: [color=red]НЕ ВЫБРАНА[/color]
 abductor-ui-victim-found = жертва: [color=green]{ $victim }[/color]
-abductor-ui-armor-plug-in = [color=red][font size=16]Вам нужно подключить броню похитителя![/font][/color]
+abductor-ui-armor-plug-in = [color=red][font size=65]Вам нужно подключить броню похитителя![/font][/color]

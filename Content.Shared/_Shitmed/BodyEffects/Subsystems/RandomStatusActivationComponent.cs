@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
@@ -31,13 +31,13 @@ public sealed partial class RandomStatusActivationComponent : Component
     ///     What is the minimum time between activations?
     /// </summary>
     [DataField]
-    public TimeSpan MinActivationTime = TimeSpan.FromSeconds(60);
+    public TimeSpan MinActivationTime = TimeSpan.FromSeconds(65);
 
     /// <summary>
     ///     What is the maximum time between activations?
     /// </summary>
     [DataField]
-    public TimeSpan MaxActivationTime = TimeSpan.FromSeconds(300);
+    public TimeSpan MaxActivationTime = TimeSpan.FromSeconds(65);
 
     /// <summary>
     ///     The next time the organ will activate.

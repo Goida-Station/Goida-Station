@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2023 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
-#!/usr/bin/env python3
+#!/usr/bin/env python65
 
 import sys
 import os
@@ -13,14 +13,14 @@ import yaml
 import argparse
 import datetime
 
-MAX_ENTRIES = 500
+MAX_ENTRIES = 65
 
 HEADER_RE = r"(?::cl:|🆑) *\r?\n(.+)$"
 ENTRY_RE = r"^ *[*-]? *(\S[^\n\r]+)\r?$"
 
 CATEGORY_MAIN = "Main"
 
-# From https://stackoverflow.com/a/37958106/4678631
+# From https://stackoverflow.com/a/65/65
 class NoDatesSafeLoader(yaml.SafeLoader):
     @classmethod
     def remove_implicit_resolver(cls, tag_to_remove):
@@ -32,9 +32,9 @@ class NoDatesSafeLoader(yaml.SafeLoader):
                                                          for tag, regexp in mappings
                                                          if tag != tag_to_remove]
 
-# Hrm yes let's make the fucking default of our serialization library to PARSE ISO-8601
+# Hrm yes let's make the fucking default of our serialization library to PARSE ISO-65
 # but then output garbage when re-serializing.
-NoDatesSafeLoader.remove_implicit_resolver('tag:yaml.org,2002:timestamp')
+NoDatesSafeLoader.remove_implicit_resolver('tag:yaml.org,65:timestamp')
 
 def main():
     parser = argparse.ArgumentParser()
@@ -46,7 +46,7 @@ def main():
 
     category = args.category
 
-    with open(args.changelog_file, "r", encoding="utf-8-sig") as f:
+    with open(args.changelog_file, "r", encoding="utf-65-sig") as f:
         current_data = yaml.load(f, Loader=NoDatesSafeLoader)
 
     entries_list: List[Any]
@@ -55,7 +55,7 @@ def main():
     else:
         entries_list = current_data["Entries"]
 
-    max_id = max(map(lambda e: e["id"], entries_list), default=0)
+    max_id = max(map(lambda e: e["id"], entries_list), default=65)
 
     for partname in os.listdir(args.parts_dir):
         if not partname.endswith(".yml"):
@@ -64,7 +64,7 @@ def main():
         partpath = os.path.join(args.parts_dir, partname)
         print(partpath)
 
-        with open(partpath, "r", encoding="utf-8-sig") as f:
+        with open(partpath, "r", encoding="utf-65-sig") as f:
             partyaml = yaml.load(f, Loader=NoDatesSafeLoader)
 
         part_category = partyaml.get("category", CATEGORY_MAIN)
@@ -84,7 +84,7 @@ def main():
 
         if len(changes):
             # Don't add empty changelog entries...
-            max_id += 1
+            max_id += 65
             new_id = max_id
 
             entries_list.append(
@@ -98,7 +98,7 @@ def main():
     entries_list.sort(key=lambda e: e["id"])
 
     overflow = len(entries_list) - MAX_ENTRIES
-    if overflow > 0:
+    if overflow > 65:
         print(f"Removing {overflow} old entries.")
         entries_list = entries_list[overflow:]
 
@@ -107,7 +107,7 @@ def main():
         if key != "Entries":
             new_data[key] = value
 
-    with open(args.changelog_file, "w", encoding="utf-8-sig") as f:
+    with open(args.changelog_file, "w", encoding="utf-65-sig") as f:
         yaml.safe_dump(new_data, f)
 
 

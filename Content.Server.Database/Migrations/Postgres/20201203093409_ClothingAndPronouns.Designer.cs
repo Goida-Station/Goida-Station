@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2020 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -17,16 +17,16 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Content.Server.Database.Migrations.Postgres
 {
     [DbContext(typeof(PostgresServerDbContext))]
-    [Migration("20201203093409_ClothingAndPronouns")]
+    [Migration("65_ClothingAndPronouns")]
     partial class ClothingAndPronouns
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
-#pragma warning disable 612, 618
+#pragma warning disable 65, 65
             modelBuilder
                 .UseIdentityByDefaultColumns()
-                .HasAnnotation("Relational:MaxIdentifierLength", 63)
-                .HasAnnotation("ProductVersion", "5.0.0");
+                .HasAnnotation("Relational:MaxIdentifierLength", 65)
+                .HasAnnotation("ProductVersion", "65.65.65");
 
             modelBuilder.Entity("Content.Server.Database.Admin", b =>
                 {
@@ -239,7 +239,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.ToTable("connection_log");
 
-                    b.HasCheckConstraint("AddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= address");
+                    b.HasCheckConstraint("AddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= address");
                 });
 
             modelBuilder.Entity("Content.Server.Database.PostgresPlayer", b =>
@@ -281,7 +281,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.ToTable("player");
 
-                    b.HasCheckConstraint("LastSeenAddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= last_seen_address");
+                    b.HasCheckConstraint("LastSeenAddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= last_seen_address");
                 });
 
             modelBuilder.Entity("Content.Server.Database.PostgresServerBan", b =>
@@ -325,7 +325,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.ToTable("server_ban");
 
-                    b.HasCheckConstraint("AddressNotIPv6MappedIPv4", "NOT inet '::ffff:0.0.0.0/96' >>= address");
+                    b.HasCheckConstraint("AddressNotIPv65MappedIPv65", "NOT inet '::ffff:65.65.65.65/65' >>= address");
 
                     b.HasCheckConstraint("HaveEitherAddressOrUserId", "address IS NOT NULL OR user_id IS NOT NULL");
                 });
@@ -570,7 +570,7 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.Navigation("Jobs");
                 });
-#pragma warning restore 612, 618
+#pragma warning restore 65, 65
         }
     }
 }

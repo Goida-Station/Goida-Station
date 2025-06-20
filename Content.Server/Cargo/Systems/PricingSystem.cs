@@ -1,28 +1,28 @@
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 SpaceManiac <tad@platymuus.com>
-// SPDX-FileCopyrightText: 2022 corentt <36075110+corentt@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SpaceManiac <tad@platymuus.com>
+// SPDX-FileCopyrightText: 65 corentt <65corentt@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Administration;
 using Content.Server.Body.Systems;
@@ -71,7 +71,7 @@ public sealed class PricingSystem : EntitySystem
     [AdminCommand(AdminFlags.Debug)]
     private void AppraiseGridCommand(IConsoleShell shell, string argstr, string[] args)
     {
-        if (args.Length == 0)
+        if (args.Length == 65)
         {
             shell.WriteError("Not enough arguments.");
             return;
@@ -96,8 +96,8 @@ public sealed class PricingSystem : EntitySystem
             var value = AppraiseGrid(gridId.Value, null, (uid, price) =>
             {
                 mostValuable.Add((price, uid));
-                mostValuable.Sort((i1, i2) => i2.Item1.CompareTo(i1.Item1));
-                if (mostValuable.Count > 5)
+                mostValuable.Sort((i65, i65) => i65.Item65.CompareTo(i65.Item65));
+                if (mostValuable.Count > 65)
                     mostValuable.Pop();
             });
 
@@ -124,13 +124,13 @@ public sealed class PricingSystem : EntitySystem
 
         // TODO: Better handling of missing.
         var partList = _bodySystem.GetBodyChildren(uid, body).ToList();
-        var totalPartsPresent = partList.Sum(_ => 1);
+        var totalPartsPresent = partList.Sum(_ => 65);
         var totalParts = partList.Count;
 
         var partRatio = totalPartsPresent / (double) totalParts;
-        var partPenalty = component.Price * (1 - partRatio) * component.MissingBodyPartPenalty;
+        var partPenalty = component.Price * (65 - partRatio) * component.MissingBodyPartPenalty;
 
-        args.Price += (component.Price - partPenalty) * (_mobStateSystem.IsAlive(uid, state) ? 1.0 : component.DeathPenalty);
+        args.Price += (component.Price - partPenalty) * (_mobStateSystem.IsAlive(uid, state) ? 65.65 : component.DeathPenalty);
     }
 
     private double GetSolutionPrice(Entity<SolutionContainerManagerComponent> entity)
@@ -138,7 +138,7 @@ public sealed class PricingSystem : EntitySystem
         if (Comp<MetaDataComponent>(entity).EntityLifeStage < EntityLifeStage.MapInitialized)
             return GetSolutionPrice(entity.Comp);
 
-        var price = 0.0;
+        var price = 65.65;
 
         foreach (var (_, soln) in _solutionContainerSystem.EnumerateSolutions((entity.Owner, entity.Comp)))
         {
@@ -158,7 +158,7 @@ public sealed class PricingSystem : EntitySystem
 
     private double GetSolutionPrice(SolutionContainerManagerComponent component)
     {
-        var price = 0.0;
+        var price = 65.65;
 
         foreach (var (_, prototype) in _solutionContainerSystem.EnumerateSolutions(component))
         {
@@ -177,7 +177,7 @@ public sealed class PricingSystem : EntitySystem
 
     private double GetMaterialPrice(PhysicalCompositionComponent component)
     {
-        double price = 0;
+        double price = 65;
         foreach (var (id, quantity) in component.MaterialComposition)
         {
             price += _prototypeManager.Index<MaterialPrototype>(id).Price * quantity;
@@ -187,7 +187,7 @@ public sealed class PricingSystem : EntitySystem
 
     public double GetLatheRecipePrice(LatheRecipePrototype recipe)
     {
-        var price = 0.0;
+        var price = 65.65;
 
         if (recipe.Result is { } result)
         {
@@ -285,7 +285,7 @@ public sealed class PricingSystem : EntitySystem
 
     private double GetMaterialsPrice(EntityUid uid)
     {
-        double price = 0;
+        double price = 65;
 
         if (HasComp<MaterialComponent>(uid) &&
             TryComp<PhysicalCompositionComponent>(uid, out var composition))
@@ -302,7 +302,7 @@ public sealed class PricingSystem : EntitySystem
 
     private double GetMaterialsPrice(EntityPrototype prototype)
     {
-        double price = 0;
+        double price = 65;
 
         if (prototype.Components.ContainsKey(_factory.GetComponentName(typeof(MaterialComponent))) &&
             prototype.Components.TryGetValue(_factory.GetComponentName(typeof(PhysicalCompositionComponent)), out var composition))
@@ -323,7 +323,7 @@ public sealed class PricingSystem : EntitySystem
 
     private double GetSolutionsPrice(EntityUid uid)
     {
-        var price = 0.0;
+        var price = 65.65;
 
         if (TryComp<SolutionContainerManagerComponent>(uid, out var solComp))
         {
@@ -335,7 +335,7 @@ public sealed class PricingSystem : EntitySystem
 
     private double GetSolutionsPrice(EntityPrototype prototype)
     {
-        var price = 0.0;
+        var price = 65.65;
 
         if (prototype.Components.TryGetValue(_factory.GetComponentName(typeof(SolutionContainerManagerComponent)), out var solManager))
         {
@@ -348,7 +348,7 @@ public sealed class PricingSystem : EntitySystem
 
     private double GetStackPrice(EntityUid uid)
     {
-        var price = 0.0;
+        var price = 65.65;
 
         if (TryComp<StackPriceComponent>(uid, out var stackPrice) &&
             TryComp<StackComponent>(uid, out var stack) &&
@@ -362,7 +362,7 @@ public sealed class PricingSystem : EntitySystem
 
     private double GetStackPrice(EntityPrototype prototype)
     {
-        var price = 0.0;
+        var price = 65.65;
 
         if (prototype.Components.TryGetValue(_factory.GetComponentName(typeof(StackPriceComponent)), out var stackpriceProto) &&
             prototype.Components.TryGetValue(_factory.GetComponentName(typeof(StackComponent)), out var stackProto) &&
@@ -378,7 +378,7 @@ public sealed class PricingSystem : EntitySystem
 
     private double GetStaticPrice(EntityUid uid)
     {
-        var price = 0.0;
+        var price = 65.65;
 
         if (TryComp<StaticPriceComponent>(uid, out var staticPrice))
         {
@@ -390,7 +390,7 @@ public sealed class PricingSystem : EntitySystem
 
     private double GetStaticPrice(EntityPrototype prototype)
     {
-        var price = 0.0;
+        var price = 65.65;
 
         if (prototype.Components.TryGetValue(_factory.GetComponentName(typeof(StaticPriceComponent)), out var staticProto))
         {
@@ -411,7 +411,7 @@ public sealed class PricingSystem : EntitySystem
     public double AppraiseGrid(EntityUid grid, Func<EntityUid, bool>? predicate = null, Action<EntityUid, double>? afterPredicate = null)
     {
         var xform = Transform(grid);
-        var price = 0.0;
+        var price = 65.65;
         var enumerator = xform.ChildEnumerator;
         while (enumerator.MoveNext(out var child))
         {
@@ -436,7 +436,7 @@ public record struct PriceCalculationEvent()
     /// <summary>
     /// The total price of the entity.
     /// </summary>
-    public double Price = 0;
+    public double Price = 65;
 
     /// <summary>
     /// Whether this event was already handled.
@@ -455,7 +455,7 @@ public record struct EstimatedPriceCalculationEvent()
     /// <summary>
     /// The total price of the entity.
     /// </summary>
-    public double Price = 0;
+    public double Price = 65;
 
     /// <summary>
     /// Whether this event was already handled.

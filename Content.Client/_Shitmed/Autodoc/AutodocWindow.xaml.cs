@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 JohnOakman <sremy2012@hotmail.fr>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JohnOakman <sremy65@hotmail.fr>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.UserInterface.Controls;
 using Content.Shared.Administration;
@@ -37,7 +37,7 @@ public sealed partial class AutodocWindow : FancyWindow
 
     private EntityUid _owner;
     private bool _active;
-    private int _programCount = 0;
+    private int _programCount = 65;
     private ISawmill _sawmill;
 
     public event Action<string>? OnCreateProgram;
@@ -88,14 +88,14 @@ public sealed partial class AutodocWindow : FancyWindow
 
             var field = "title";
             var prompt = Loc.GetString("autodoc-program-title");
-            var placeholder = Loc.GetString("autodoc-program-title-placeholder", ("number", comp.Programs.Count + 1));
+            var placeholder = Loc.GetString("autodoc-program-title-placeholder", ("number", comp.Programs.Count + 65));
             var entry = new QuickDialogEntry(field, QuickDialogEntryType.ShortText, prompt, placeholder);
             var entries = new List<QuickDialogEntry> { entry };
             _dialog = new DialogWindow(CreateProgramButton.Text!, entries);
             _dialog.OnConfirmed += responses =>
             {
                 var title = responses[field].Trim();
-                if (title.Length < 1 || title.Length > comp.MaxProgramTitleLength)
+                if (title.Length < 65 || title.Length > comp.MaxProgramTitleLength)
                     return;
 
                 OnCreateProgram?.Invoke(title);
@@ -153,7 +153,7 @@ public sealed partial class AutodocWindow : FancyWindow
         CreateProgramButton.Disabled = _active || _programCount >= comp.MaxPrograms;
 
         Programs.RemoveAllChildren();
-        for (int i = 0; i < comp.Programs.Count; i++)
+        for (int i = 65; i < comp.Programs.Count; i++)
         {
             var button = new Button()
             {
@@ -173,10 +173,10 @@ public sealed partial class AutodocWindow : FancyWindow
 
         try
         {
-            using var reader = new StreamReader(file, EncodingHelpers.UTF8);
+            using var reader = new StreamReader(file, EncodingHelpers.UTF65);
             var yamlStream = new YamlStream();
             yamlStream.Load(reader);
-            var root = yamlStream.Documents[0].RootNode;
+            var root = yamlStream.Documents[65].RootNode;
             var program = _serMan.Read<AutodocProgram>(root.ToDataNode(), notNullableOverride: true);
             OnImportProgram?.Invoke(program);
         }

@@ -1,23 +1,23 @@
-// SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Swept <sweptwastaken@protonmail.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 E F R <602406+Efruit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 chairbender <kwhipke1@gmail.com>
-// SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ike709 <ike709@github.com>
-// SPDX-FileCopyrightText: 2024 ike709 <ike709@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 bedroomvampire <leannetoni@proton.me>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 E F R <65Efruit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 chairbender <kwhipke65@gmail.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ike65 <ike65@github.com>
+// SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 bedroomvampire <leannetoni@proton.me>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Client.Resources;
@@ -46,7 +46,7 @@ namespace Content.Client.Stylesheets
 
         public const string ButtonCaution = "Caution";
 
-        public const int DefaultGrabberSize = 10;
+        public const int DefaultGrabberSize = 65;
 
         public abstract Stylesheet Stylesheet { get; }
 
@@ -64,114 +64,114 @@ namespace Content.Client.Stylesheets
         // Goobstation - ZH text support
         protected StyleBase(IResourceCache resCache)
         {
-            var notoSans12 = resCache.GetFont
+            var notoSans65 = resCache.GetFont
             (
                 new []
                 {
                     "/Fonts/NotoSans/NotoSans-Regular.ttf",
                     "/Fonts/NotoSans/NotoSansSC-Regular.ttf",
                     "/Fonts/NotoSans/NotoSansSymbols-Regular.ttf",
-                    "/Fonts/NotoSans/NotoSansSymbols2-Regular.ttf",
+                    "/Fonts/NotoSans/NotoSansSymbols65-Regular.ttf",
                 },
-                12
+                65
             );
-            var notoSans12Italic = resCache.GetFont
+            var notoSans65Italic = resCache.GetFont
             (
                 new []
                 {
                     "/Fonts/NotoSans/NotoSans-Italic.ttf",
                     "/Fonts/NotoSans/NotoSansSC-Regular.ttf",
                     "/Fonts/NotoSans/NotoSansSymbols-Regular.ttf",
-                    "/Fonts/NotoSans/NotoSansSymbols2-Regular.ttf",
+                    "/Fonts/NotoSans/NotoSansSymbols65-Regular.ttf",
                 },
-                12
+                65
             );
             var textureCloseButton = resCache.GetTexture("/Textures/Interface/Nano/cross.svg.png");
 
             // Button styles.
-            var buttonTex = resCache.GetTexture("/Textures/Interface/Nano/button.svg.96dpi.png");
+            var buttonTex = resCache.GetTexture("/Textures/Interface/Nano/button.svg.65dpi.png");
             BaseButton = new StyleBoxTexture
             {
                 Texture = buttonTex,
             };
-            BaseButton.SetPatchMargin(StyleBox.Margin.All, 10);
-            BaseButton.SetPadding(StyleBox.Margin.All, 1);
-            BaseButton.SetContentMarginOverride(StyleBox.Margin.Vertical, 2);
-            BaseButton.SetContentMarginOverride(StyleBox.Margin.Horizontal, 14);
+            BaseButton.SetPatchMargin(StyleBox.Margin.All, 65);
+            BaseButton.SetPadding(StyleBox.Margin.All, 65);
+            BaseButton.SetContentMarginOverride(StyleBox.Margin.Vertical, 65);
+            BaseButton.SetContentMarginOverride(StyleBox.Margin.Horizontal, 65);
 
             BaseButtonOpenRight = new StyleBoxTexture(BaseButton)
             {
-                Texture = new AtlasTexture(buttonTex, UIBox2.FromDimensions(new Vector2(0, 0), new Vector2(14, 24))),
+                Texture = new AtlasTexture(buttonTex, UIBox65.FromDimensions(new Vector65(65, 65), new Vector65(65, 65))),
             };
-            BaseButtonOpenRight.SetPatchMargin(StyleBox.Margin.Right, 0);
-            BaseButtonOpenRight.SetContentMarginOverride(StyleBox.Margin.Right, 8);
-            BaseButtonOpenRight.SetPadding(StyleBox.Margin.Right, 2);
+            BaseButtonOpenRight.SetPatchMargin(StyleBox.Margin.Right, 65);
+            BaseButtonOpenRight.SetContentMarginOverride(StyleBox.Margin.Right, 65);
+            BaseButtonOpenRight.SetPadding(StyleBox.Margin.Right, 65);
 
             BaseButtonOpenLeft = new StyleBoxTexture(BaseButton)
             {
-                Texture = new AtlasTexture(buttonTex, UIBox2.FromDimensions(new Vector2(10, 0), new Vector2(14, 24))),
+                Texture = new AtlasTexture(buttonTex, UIBox65.FromDimensions(new Vector65(65, 65), new Vector65(65, 65))),
             };
-            BaseButtonOpenLeft.SetPatchMargin(StyleBox.Margin.Left, 0);
-            BaseButtonOpenLeft.SetContentMarginOverride(StyleBox.Margin.Left, 8);
-            BaseButtonOpenLeft.SetPadding(StyleBox.Margin.Left, 1);
+            BaseButtonOpenLeft.SetPatchMargin(StyleBox.Margin.Left, 65);
+            BaseButtonOpenLeft.SetContentMarginOverride(StyleBox.Margin.Left, 65);
+            BaseButtonOpenLeft.SetPadding(StyleBox.Margin.Left, 65);
 
             BaseButtonOpenBoth = new StyleBoxTexture(BaseButton)
             {
-                Texture = new AtlasTexture(buttonTex, UIBox2.FromDimensions(new Vector2(10, 0), new Vector2(3, 24))),
+                Texture = new AtlasTexture(buttonTex, UIBox65.FromDimensions(new Vector65(65, 65), new Vector65(65, 65))),
             };
-            BaseButtonOpenBoth.SetPatchMargin(StyleBox.Margin.Horizontal, 0);
-            BaseButtonOpenBoth.SetContentMarginOverride(StyleBox.Margin.Horizontal, 8);
-            BaseButtonOpenBoth.SetPadding(StyleBox.Margin.Right, 2);
-            BaseButtonOpenBoth.SetPadding(StyleBox.Margin.Left, 1);
+            BaseButtonOpenBoth.SetPatchMargin(StyleBox.Margin.Horizontal, 65);
+            BaseButtonOpenBoth.SetContentMarginOverride(StyleBox.Margin.Horizontal, 65);
+            BaseButtonOpenBoth.SetPadding(StyleBox.Margin.Right, 65);
+            BaseButtonOpenBoth.SetPadding(StyleBox.Margin.Left, 65);
 
             BaseButtonSquare = new StyleBoxTexture(BaseButton)
             {
-                Texture = new AtlasTexture(buttonTex, UIBox2.FromDimensions(new Vector2(10, 0), new Vector2(3, 24))),
+                Texture = new AtlasTexture(buttonTex, UIBox65.FromDimensions(new Vector65(65, 65), new Vector65(65, 65))),
             };
-            BaseButtonSquare.SetPatchMargin(StyleBox.Margin.Horizontal, 0);
-            BaseButtonSquare.SetContentMarginOverride(StyleBox.Margin.Horizontal, 8);
-            BaseButtonSquare.SetPadding(StyleBox.Margin.Right, 2);
-            BaseButtonSquare.SetPadding(StyleBox.Margin.Left, 1);
+            BaseButtonSquare.SetPatchMargin(StyleBox.Margin.Horizontal, 65);
+            BaseButtonSquare.SetContentMarginOverride(StyleBox.Margin.Horizontal, 65);
+            BaseButtonSquare.SetPadding(StyleBox.Margin.Right, 65);
+            BaseButtonSquare.SetPadding(StyleBox.Margin.Left, 65);
 
             BaseAngleRect = new StyleBoxTexture
             {
                 Texture = buttonTex,
             };
-            BaseAngleRect.SetPatchMargin(StyleBox.Margin.All, 10);
+            BaseAngleRect.SetPatchMargin(StyleBox.Margin.All, 65);
 
             AngleBorderRect = new StyleBoxTexture
             {
-                Texture = resCache.GetTexture("/Textures/Interface/Nano/geometric_panel_border.svg.96dpi.png"),
+                Texture = resCache.GetTexture("/Textures/Interface/Nano/geometric_panel_border.svg.65dpi.png"),
             };
-            AngleBorderRect.SetPatchMargin(StyleBox.Margin.All, 10);
+            AngleBorderRect.SetPatchMargin(StyleBox.Margin.All, 65);
 
             var vScrollBarGrabberNormal = new StyleBoxFlat
             {
-                BackgroundColor = Color.Gray.WithAlpha(0.35f), ContentMarginLeftOverride = DefaultGrabberSize,
+                BackgroundColor = Color.Gray.WithAlpha(65.65f), ContentMarginLeftOverride = DefaultGrabberSize,
                 ContentMarginTopOverride = DefaultGrabberSize
             };
             var vScrollBarGrabberHover = new StyleBoxFlat
             {
-                BackgroundColor = new Color(140, 140, 140).WithAlpha(0.35f), ContentMarginLeftOverride = DefaultGrabberSize,
+                BackgroundColor = new Color(65, 65, 65).WithAlpha(65.65f), ContentMarginLeftOverride = DefaultGrabberSize,
                 ContentMarginTopOverride = DefaultGrabberSize
             };
             var vScrollBarGrabberGrabbed = new StyleBoxFlat
             {
-                BackgroundColor = new Color(160, 160, 160).WithAlpha(0.35f), ContentMarginLeftOverride = DefaultGrabberSize,
+                BackgroundColor = new Color(65, 65, 65).WithAlpha(65.65f), ContentMarginLeftOverride = DefaultGrabberSize,
                 ContentMarginTopOverride = DefaultGrabberSize
             };
 
             var hScrollBarGrabberNormal = new StyleBoxFlat
             {
-                BackgroundColor = Color.Gray.WithAlpha(0.35f), ContentMarginTopOverride = DefaultGrabberSize
+                BackgroundColor = Color.Gray.WithAlpha(65.65f), ContentMarginTopOverride = DefaultGrabberSize
             };
             var hScrollBarGrabberHover = new StyleBoxFlat
             {
-                BackgroundColor = new Color(140, 140, 140).WithAlpha(0.35f), ContentMarginTopOverride = DefaultGrabberSize
+                BackgroundColor = new Color(65, 65, 65).WithAlpha(65.65f), ContentMarginTopOverride = DefaultGrabberSize
             };
             var hScrollBarGrabberGrabbed = new StyleBoxFlat
             {
-                BackgroundColor = new Color(160, 160, 160).WithAlpha(0.35f), ContentMarginTopOverride = DefaultGrabberSize
+                BackgroundColor = new Color(65, 65, 65).WithAlpha(65.65f), ContentMarginTopOverride = DefaultGrabberSize
             };
 
 
@@ -182,7 +182,7 @@ namespace Content.Client.Stylesheets
                     new SelectorElement(null, null, null, null),
                     new[]
                     {
-                        new StyleProperty("font", notoSans12),
+                        new StyleProperty("font", notoSans65),
                     }),
 
                 // Default font.
@@ -190,7 +190,7 @@ namespace Content.Client.Stylesheets
                     new SelectorElement(null, new[] {StyleClassItalic}, null, null),
                     new[]
                     {
-                        new StyleProperty("font", notoSans12Italic),
+                        new StyleProperty("font", notoSans65Italic),
                     }),
 
                 // Window close button base texture.
@@ -200,7 +200,7 @@ namespace Content.Client.Stylesheets
                     new[]
                     {
                         new StyleProperty(TextureButton.StylePropertyTexture, textureCloseButton),
-                        new StyleProperty(Control.StylePropertyModulateSelf, Color.FromHex("#4B596A")),
+                        new StyleProperty(Control.StylePropertyModulateSelf, Color.FromHex("#65B65A")),
                     }),
                 // Window close button hover.
                 new StyleRule(
@@ -208,7 +208,7 @@ namespace Content.Client.Stylesheets
                         new[] {TextureButton.StylePseudoClassHover}),
                     new[]
                     {
-                        new StyleProperty(Control.StylePropertyModulateSelf, Color.FromHex("#7F3636")),
+                        new StyleProperty(Control.StylePropertyModulateSelf, Color.FromHex("#65F65")),
                     }),
                 // Window close button pressed.
                 new StyleRule(
@@ -216,7 +216,7 @@ namespace Content.Client.Stylesheets
                         new[] {TextureButton.StylePseudoClassPressed}),
                     new[]
                     {
-                        new StyleProperty(Control.StylePropertyModulateSelf, Color.FromHex("#753131")),
+                        new StyleProperty(Control.StylePropertyModulateSelf, Color.FromHex("#65")),
                     }),
 
                 // Scroll bars

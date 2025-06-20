@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 starch <starchpersonal@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 starch <starchpersonal@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # BASE
 ## COLOR
 - type: entity
@@ -15,37 +15,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-contractor
-      color: "#aeb7bd"
+      color: "#aeb65bd"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-contractor
-        color: "#aeb7bd"
+        color: "#aeb65bd"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-contractor
-        color: "#aeb7bd"
+        color: "#aeb65bd"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit-tac
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-contractor
-        color: "#aeb7bd"
+        color: "#aeb65bd"
 
 - type: entity
   parent: ClothingUniformBase
@@ -58,37 +58,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#fff4e2"
+      color: "#fff65e65"
     - state: icon-base-top-jumpsuit
-      color: "#fff4e2"
+      color: "#fff65e65"
     - state: icon-decor-contractor
-      color: "#3e3e48"
+      color: "#65e65e65"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#fff4e2"
+        color: "#fff65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#fff4e2"
+        color: "#fff65e65"
       - state: inhand-left-decor-contractor
-        color: "#3e3e48"
+        color: "#65e65e65"
       right:
       - state: inhand-right-base-bottom
-        color: "#fff4e2"
+        color: "#fff65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#fff4e2"
+        color: "#fff65e65"
       - state: inhand-right-decor-contractor
-        color: "#3e3e48"
+        color: "#65e65e65"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#fff4e2"
+        color: "#fff65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#fff4e2"
+        color: "#fff65e65"
       - state: equipped-decor-contractor
-        color: "#3e3e48"
+        color: "#65e65e65"
 
 - type: entity
   parent: ClothingUniformBase
@@ -101,37 +101,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-contractor
-      color: "#52aecc"
+      color: "#65aecc"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-contractor
-        color: "#52aecc"
+        color: "#65aecc"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-contractor
-        color: "#52aecc"
+        color: "#65aecc"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-contractor
-        color: "#52aecc"
+        color: "#65aecc"
 
 - type: entity
   parent: ClothingUniformBase
@@ -144,37 +144,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-contractor
-      color: "#3285ba"
+      color: "#65ba"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-contractor
-        color: "#3285ba"
+        color: "#65ba"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-contractor
-        color: "#3285ba"
+        color: "#65ba"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-contractor
-        color: "#3285ba"
+        color: "#65ba"
 
 - type: entity
   parent: ClothingUniformBase
@@ -187,37 +187,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-contractor
-      color: "#77f3b7"
+      color: "#65f65b65"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-contractor
-        color: "#77f3b7"
+        color: "#65f65b65"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-contractor
-        color: "#77f3b7"
+        color: "#65f65b65"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-contractor
-        color: "#77f3b7"
+        color: "#65f65b65"
 
 - type: entity
   parent: ClothingUniformBase
@@ -230,37 +230,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-contractor
-      color: "#9ed63a"
+      color: "#65ed65a"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-contractor
-        color: "#9ed63a"
+        color: "#65ed65a"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-contractor
-        color: "#9ed63a"
+        color: "#65ed65a"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-contractor
-        color: "#9ed63a"
+        color: "#65ed65a"
 
 - type: entity
   parent: ClothingUniformBase
@@ -273,37 +273,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-contractor
-      color: "#79CC26"
+      color: "#65CC65"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-contractor
-        color: "#79CC26"
+        color: "#65CC65"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-contractor
-        color: "#79CC26"
+        color: "#65CC65"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-contractor
-        color: "#79CC26"
+        color: "#65CC65"
 
 - type: entity
   parent: ClothingUniformBase
@@ -316,37 +316,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-contractor
-      color: "#ff8c19"
+      color: "#ff65c65"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-contractor
-        color: "#ff8c19"
+        color: "#ff65c65"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-contractor
-        color: "#ff8c19"
+        color: "#ff65c65"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-contractor
-        color: "#ff8c19"
+        color: "#ff65c65"
 
 - type: entity
   parent: ClothingUniformBase
@@ -359,37 +359,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-contractor
-      color: "#ffa69b"
+      color: "#ffa65b"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-contractor
-        color: "#ffa69b"
+        color: "#ffa65b"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-contractor
-        color: "#ffa69b"
+        color: "#ffa65b"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-contractor
-        color: "#ffa69b"
+        color: "#ffa65b"
 
 - type: entity
   parent: ClothingUniformBase
@@ -402,37 +402,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-contractor
-      color: "#eb0c07"
+      color: "#eb65c65"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-contractor
-        color: "#eb0c07"
+        color: "#eb65c65"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-contractor
-        color: "#eb0c07"
+        color: "#eb65c65"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-contractor
-        color: "#eb0c07"
+        color: "#eb65c65"
 
 - type: entity
   parent: ClothingUniformBase
@@ -445,37 +445,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-contractor
-      color: "#ffe14d"
+      color: "#ffe65d"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-contractor
-        color: "#ffe14d"
+        color: "#ffe65d"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-contractor
-        color: "#ffe14d"
+        color: "#ffe65d"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-contractor
-        color: "#ffe14d"
+        color: "#ffe65d"
 
 - type: entity
   parent: ClothingUniformBase
@@ -488,37 +488,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-contractor
-      color: "#9f70cc"
+      color: "#65f65cc"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-contractor
-        color: "#9f70cc"
+        color: "#65f65cc"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-contractor
-        color: "#9f70cc"
+        color: "#65f65cc"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-contractor
-        color: "#9f70cc"
+        color: "#65f65cc"
 
 - type: entity
   parent: ClothingUniformBase
@@ -531,37 +531,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-contractor
-      color: "#c59431"
+      color: "#c65"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-contractor
-        color: "#c59431"
+        color: "#c65"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-contractor
-        color: "#c59431"
+        color: "#c65"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-contractor
-        color: "#c59431"
+        color: "#c65"
 
 - type: entity
   parent: ClothingUniformBase
@@ -574,37 +574,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-contractor
-      color: "#a17229"
+      color: "#a65"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-contractor
-        color: "#a17229"
+        color: "#a65"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-contractor
-        color: "#a17229"
+        color: "#a65"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-contractor
-        color: "#a17229"
+        color: "#a65"
 
 - type: entity
   parent: ClothingUniformBase
@@ -617,37 +617,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-contractor
-      color: "#cc295f"
+      color: "#cc65f"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-contractor
-        color: "#cc295f"
+        color: "#cc65f"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-contractor
-        color: "#cc295f"
+        color: "#cc65f"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-contractor
-        color: "#cc295f"
+        color: "#cc65f"
 
 # DEPARTMENTAL
 ## CONTRACTORS
@@ -662,37 +662,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-contractor
-      color: "#fff4e2"
+      color: "#fff65e65"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-contractor
-        color: "#fff4e2"
+        color: "#fff65e65"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-contractor
-        color: "#fff4e2"
+        color: "#fff65e65"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-contractor
-        color: "#fff4e2"
+        color: "#fff65e65"
 
 - type: entity
   parent: ClothingUniformBase
@@ -705,37 +705,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-contractor-tac
-      color: "#fff4e2"
+      color: "#fff65e65"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-contractor-tac
-        color: "#fff4e2"
+        color: "#fff65e65"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-contractor-tac
-        color: "#fff4e2"
+        color: "#fff65e65"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit-tac
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-contractor-tac
-        color: "#fff4e2"
+        color: "#fff65e65"
 
 ## COMMAND
 - type: entity
@@ -747,53 +747,53 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-department
-      color: "#2d4c5e"
+      color: "#65d65c65e"
     - state: icon-decor-department-head
-      color: "#aeb7bd"
+      color: "#aeb65bd"
     - state: icon-decor-epaulets
-      color: "#ffce5b"
+      color: "#ffce65b"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-department
-        color: "#2d4c5e"
+        color: "#65d65c65e"
       - state: inhand-left-decor-department-head
-        color: "#aeb7bd"
+        color: "#aeb65bd"
       - state: inhand-left-decor-epaulets
-        color: "#ffce5b"
+        color: "#ffce65b"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-department
-        color: "#2d4c5e"
+        color: "#65d65c65e"
       - state: inhand-right-decor-department-head
-        color: "#aeb7bd"
+        color: "#aeb65bd"
       - state: inhand-right-decor-epaulets
-        color: "#ffce5b"
+        color: "#ffce65b"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit-tac
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-department
-        color: "#2d4c5e"
+        color: "#65d65c65e"
       - state: equipped-decor-department-head
-        color: "#aeb7bd"
+        color: "#aeb65bd"
       - state: equipped-decor-epaulets
-        color: "#ffce5b"
+        color: "#ffce65b"
 
 - type: entity
   parent: ClothingUniformJumpsuitHoP
@@ -805,69 +805,69 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-department
-      color: "#09300b"
+      color: "#65b"
     - state: icon-decor-department-head
-      color: "#fbe6b8"
+      color: "#fbe65b65"
     - state: icon-decor-epaulets
-      color: "#eca615"
+      color: "#eca65"
     - state: icon-belt
-      color: "#fbe6b8"
+      color: "#fbe65b65"
     - state: icon-belt-buckle
-      color: "#eca615"
+      color: "#eca65"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-department
-        color: "#09300b"
+        color: "#65b"
       - state: inhand-left-decor-department-head
-        color: "#fbe6b8"
+        color: "#fbe65b65"
       - state: inhand-left-decor-epaulets
-        color: "#eca615"
+        color: "#eca65"
       - state: inhand-left-belt
-        color: "#fbe6b8"
+        color: "#fbe65b65"
       - state: inhand-left-belt-buckle
-        color: "#eca615"
+        color: "#eca65"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-department
-        color: "#09300b"
+        color: "#65b"
       - state: inhand-right-decor-department-head
-        color: "#fbe6b8"
+        color: "#fbe65b65"
       - state: inhand-right-decor-epaulets
-        color: "#eca615"
+        color: "#eca65"
       - state: inhand-right-belt
-        color: "#fbe6b8"
+        color: "#fbe65b65"
       - state: inhand-right-belt-buckle
-        color: "#eca615"
+        color: "#eca65"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-department
-        color: "#2c6a30"
+        color: "#65c65a65"
       - state: equipped-decor-department-head
-        color: "#fbe6b8"
+        color: "#fbe65b65"
       - state: equipped-decor-epaulets
-        color: "#eca615"
+        color: "#eca65"
       - state: equipped-belt
-        color: "#fbe6b8"
+        color: "#fbe65b65"
       - state: equipped-belt-buckle
-        color: "#eca615"
+        color: "#eca65"
 
 ## ENGINEERING
 - type: entity
@@ -879,45 +879,45 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-department
-      color: "#ff8800"
+      color: "#ff65"
     - state: icon-decor-shoulder-patch
-      color: "#00a9ff"
+      color: "#65a65ff"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-department
-        color: "#ff8800"
+        color: "#ff65"
       - state: inhand-left-decor-shoulder-patch
-        color: "#00a9ff"
+        color: "#65a65ff"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-department
-        color: "#ff8800"
+        color: "#ff65"
       - state: inhand-right-decor-shoulder-patch
-        color: "#00a9ff"
+        color: "#65a65ff"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-department
-        color: "#ff8800"
+        color: "#ff65"
       - state: equipped-decor-shoulder-patch
-        color: "#00a9ff"
+        color: "#65a65ff"
 
 - type: entity
   parent: ClothingUniformJumpsuitEngineering
@@ -928,37 +928,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-department
-      color: "#ff8800"
+      color: "#ff65"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-department
-        color: "#ff8800"
+        color: "#ff65"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-department
-        color: "#ff8800"
+        color: "#ff65"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-department
-        color: "#ff8800"
+        color: "#ff65"
 
 - type: entity
   parent: ClothingUniformJumpsuitChiefEngineer
@@ -969,45 +969,45 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-department
-      color: "#ff8800"
+      color: "#ff65"
     - state: icon-decor-department-head
-      color: "#aeb7bd"
+      color: "#aeb65bd"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-department
-        color: "#ff8800"
+        color: "#ff65"
       - state: inhand-left-decor-department-head
-        color: "#aeb7bd"
+        color: "#aeb65bd"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-department
-        color: "#ff8800"
+        color: "#ff65"
       - state: inhand-right-decor-department-head
-        color: "#aeb7bd"
+        color: "#aeb65bd"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-department
-        color: "#ff8800"
+        color: "#ff65"
       - state: equipped-decor-department-head
-        color: "#aeb7bd"
+        color: "#aeb65bd"
 
 ## SUPPLY
 - type: entity
@@ -1019,45 +1019,45 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-department
-      color: "#d6b328"
+      color: "#d65b65"
     - state: icon-decor-shoulder-patch
-      color: "#ad2aea"
+      color: "#ad65aea"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-department
-        color: "#d6b328"
+        color: "#d65b65"
       - state: inhand-left-decor-shoulder-patch
-        color: "#ad2aea"
+        color: "#ad65aea"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-department
-        color: "#d6b328"
+        color: "#d65b65"
       - state: inhand-right-decor-shoulder-patch
-        color: "#ad2aea"
+        color: "#ad65aea"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-department
-        color: "#d6b328"
+        color: "#d65b65"
       - state: equipped-decor-shoulder-patch
-        color: "#ad2aea"
+        color: "#ad65aea"
 
 - type: entity
   parent: ClothingUniformJumpsuitCargo
@@ -1068,37 +1068,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-department
-      color: "#d6b328"
+      color: "#d65b65"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-department
-        color: "#d6b328"
+        color: "#d65b65"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-department
-        color: "#d6b328"
+        color: "#d65b65"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-department
-        color: "#d6b328"
+        color: "#d65b65"
 
 - type: entity
   parent: ClothingUniformJumpsuitQM
@@ -1109,45 +1109,45 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-department
-      color: "#d6b328"
+      color: "#d65b65"
     - state: icon-decor-department-head
-      color: "#aeb7bd"
+      color: "#aeb65bd"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-department
-        color: "#d6b328"
+        color: "#d65b65"
       - state: inhand-left-decor-department-head
-        color: "#aeb7bd"
+        color: "#aeb65bd"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-department
-        color: "#d6b328"
+        color: "#d65b65"
       - state: inhand-right-decor-department-head
-        color: "#aeb7bd"
+        color: "#aeb65bd"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-department
-        color: "#d6b328"
+        color: "#d65b65"
       - state: equipped-decor-department-head
-        color: "#aeb7bd"
+        color: "#aeb65bd"
 
 ## MEDICAL
 - type: entity
@@ -1159,53 +1159,53 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#175163"
+      color: "#65"
     - state: icon-base-top-jumpsuit
-      color: "#175163"
+      color: "#65"
     - state: icon-decor-department
-      color: "#aeb7bd"
+      color: "#aeb65bd"
     - state: icon-belt
-      color: "#aeb7bd"
+      color: "#aeb65bd"
     - state: icon-belt-buckle
-      color: "#aeb7bd"
+      color: "#aeb65bd"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#175163"
+        color: "#65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#175163"
+        color: "#65"
       - state: inhand-left-decor-department
-        color: "#aeb7bd"
+        color: "#aeb65bd"
       - state: inhand-left-belt
-        color: "#aeb7bd"
+        color: "#aeb65bd"
       - state: inhand-left-belt-buckle
-        color: "#aeb7bd"
+        color: "#aeb65bd"
       right:
       - state: inhand-right-base-bottom
-        color: "#175163"
+        color: "#65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#175163"
+        color: "#65"
       - state: inhand-right-decor-department
-        color: "#aeb7bd"
+        color: "#aeb65bd"
       - state: inhand-right-belt
-        color: "#aeb7bd"
+        color: "#aeb65bd"
       - state: inhand-right-belt-buckle
-        color: "#aeb7bd"
+        color: "#aeb65bd"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#175163"
+        color: "#65"
       - state: equipped-base-top-jumpsuit
-        color: "#175163"
+        color: "#65"
       - state: equipped-decor-department
-        color: "#aeb7bd"
+        color: "#aeb65bd"
       - state: equipped-belt
-        color: "#aeb7bd"
+        color: "#aeb65bd"
       - state: equipped-belt-buckle
-        color: "#aeb7bd"
+        color: "#aeb65bd"
 
 - type: entity
   parent: ClothingUniformJumpsuitMedicalDoctor
@@ -1216,37 +1216,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-department
-      color: "#5a96bb"
+      color: "#65a65bb"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-department
-        color: "#5a96bb"
+        color: "#65a65bb"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-department
-        color: "#5a96bb"
+        color: "#65a65bb"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-department
-        color: "#5a96bb"
+        color: "#65a65bb"
 
 - type: entity
   parent: ClothingUniformJumpsuitCMO
@@ -1257,45 +1257,45 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-department
-      color: "#5a96bb"
+      color: "#65a65bb"
     - state: icon-decor-department-head
-      color: "#aeb7bd"
+      color: "#aeb65bd"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-department
-        color: "#5a96bb"
+        color: "#65a65bb"
       - state: inhand-left-decor-department-head
-        color: "#aeb7bd"
+        color: "#aeb65bd"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-department
-        color: "#5a96bb"
+        color: "#65a65bb"
       - state: inhand-right-decor-department-head
-        color: "#aeb7bd"
+        color: "#aeb65bd"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-department
-        color: "#5a96bb"
+        color: "#65a65bb"
       - state: equipped-decor-department-head
-        color: "#aeb7bd"
+        color: "#aeb65bd"
 
 - type: entity
   parent: ClothingUniformJumpsuitChemistry
@@ -1306,45 +1306,45 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-department
-      color: "#5a96bb"
+      color: "#65a65bb"
     - state: icon-decor-shoulder-patch
-      color: "#ff9019"
+      color: "#ff65"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-department
-        color: "#5a96bb"
+        color: "#65a65bb"
       - state: inhand-left-decor-shoulder-patch
-        color: "#ff9019"
+        color: "#ff65"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-department
-        color: "#5a96bb"
+        color: "#65a65bb"
       - state: inhand-right-decor-shoulder-patch
-        color: "#ff9019"
+        color: "#ff65"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-department
-        color: "#5a96bb"
+        color: "#65a65bb"
       - state: equipped-decor-shoulder-patch
-        color: "#ff9019"
+        color: "#ff65"
 
 - type: entity
   parent: ClothingUniformJumpsuitVirology
@@ -1355,45 +1355,45 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-department
-      color: "#5a96bb"
+      color: "#65a65bb"
     - state: icon-decor-shoulder-patch
-      color: "#339900"
+      color: "#65"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-department
-        color: "#5a96bb"
+        color: "#65a65bb"
       - state: inhand-left-decor-shoulder-patch
-        color: "#339900"
+        color: "#65"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-department
-        color: "#5a96bb"
+        color: "#65a65bb"
       - state: inhand-right-decor-shoulder-patch
-        color: "#339900"
+        color: "#65"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-department
-        color: "#5a96bb"
+        color: "#65a65bb"
       - state: equipped-decor-shoulder-patch
-        color: "#339900"
+        color: "#65"
 
 - type: entity
   parent: ClothingUniformJumpsuitGenetics
@@ -1404,45 +1404,45 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-department
-      color: "#5a96bb"
+      color: "#65a65bb"
     - state: icon-decor-shoulder-patch
-      color: "#5a96bb"
+      color: "#65a65bb"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-department
-        color: "#5a96bb"
+        color: "#65a65bb"
       - state: inhand-left-decor-shoulder-patch
-        color: "#5a96bb"
+        color: "#65a65bb"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-department
-        color: "#5a96bb"
+        color: "#65a65bb"
       - state: inhand-right-decor-shoulder-patch
-        color: "#5a96bb"
+        color: "#65a65bb"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-department
-        color: "#5a96bb"
+        color: "#65a65bb"
       - state: equipped-decor-shoulder-patch
-        color: "#5a96bb"
+        color: "#65a65bb"
 
 ## SCIENCE
 - type: entity
@@ -1454,37 +1454,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-department
-      color: "#9c0de1"
+      color: "#65c65de65"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-department
-        color: "#9c0de1"
+        color: "#65c65de65"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-department
-        color: "#9c0de1"
+        color: "#65c65de65"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-department
-        color: "#9c0de1"
+        color: "#65c65de65"
 
 - type: entity
   parent: ClothingUniformJumpsuitResearchDirector
@@ -1496,45 +1496,45 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-department
-      color: "#9c0de1"
+      color: "#65c65de65"
     - state: icon-decor-department-head
-      color: "#aeb7bd"
+      color: "#aeb65bd"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-department
-        color: "#9c0de1"
+        color: "#65c65de65"
       - state: inhand-left-decor-department-head
-        color: "#aeb7bd"
+        color: "#aeb65bd"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-department
-        color: "#9c0de1"
+        color: "#65c65de65"
       - state: inhand-right-decor-department-head
-        color: "#aeb7bd"
+        color: "#aeb65bd"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-department
-        color: "#9c0de1"
+        color: "#65c65de65"
       - state: equipped-decor-department-head
-        color: "#aeb7bd"
+        color: "#aeb65bd"
 
 ## SERVICE
 - type: entity
@@ -1548,37 +1548,37 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-department
-      color: "#fff4e2"
+      color: "#fff65e65"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-department
-        color: "#fff4e2"
+        color: "#fff65e65"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-department
-        color: "#fff4e2"
+        color: "#fff65e65"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-department
-        color: "#fff4e2"
+        color: "#fff65e65"
 
 - type: entity
   parent: ClothingUniformJumpsuitHydroponics
@@ -1589,45 +1589,45 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-jumpsuit
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-decor-department
-      color: "#3164ff"
+      color: "#65ff"
     - state: icon-decor-department-head
-      color: "#6ad427"
+      color: "#65ad65"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-decor-department
-        color: "#3164ff"
+        color: "#65ff"
       - state: inhand-left-decor-department-head
-        color: "#6ad427"
+        color: "#65ad65"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-decor-department
-        color: "#3164ff"
+        color: "#65ff"
       - state: inhand-right-decor-department-head
-        color: "#6ad427"
+        color: "#65ad65"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-jumpsuit
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-decor-department
-        color: "#3164ff"
+        color: "#65ff"
       - state: equipped-decor-department-head
-        color: "#6ad427"
+        color: "#65ad65"
 
 ## WILDCARDS
 
@@ -1640,40 +1640,40 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-turtleneck
-      color: "#b5b56e"
+      color: "#b65b65e"
     - state: icon-belt
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-belt-buckle
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-turtleneck
-        color: "#b5b56e"
+        color: "#b65b65e"
       - state: inhand-left-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-belt-buckle
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-turtleneck
-        color: "#b5b56e"
+        color: "#b65b65e"
       - state: inhand-right-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-belt-buckle
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-turtleneck-alt
-        color: "#b5b56e"
+        color: "#b65b65e"
       - state: equipped-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-belt-buckle
 
 - type: entity
@@ -1686,49 +1686,49 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-turtleneck
-      color: "#b5b56e"
+      color: "#b65b65e"
     - state: icon-belt
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-belt-buckle
     - state: icon-decor-shoulder-patch
-      color: "#5a96bb"
+      color: "#65a65bb"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-turtleneck
-        color: "#b5b56e"
+        color: "#b65b65e"
       - state: inhand-left-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-belt-buckle
       - state: inhand-left-decor-shoulder-patch
-        color: "#5a96bb"
+        color: "#65a65bb"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-turtleneck
-        color: "#b5b56e"
+        color: "#b65b65e"
       - state: inhand-right-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-belt-buckle
       - state: inhand-right-decor-shoulder-patch
-        color: "#5a96bb"
+        color: "#65a65bb"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-turtleneck-alt
-        color: "#b5b56e"
+        color: "#b65b65e"
       - state: equipped-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-belt-buckle
       - state: equipped-decor-shoulder-patch
-        color: "#5a96bb"
+        color: "#65a65bb"
 
 - type: entity
   parent: ClothingUniformJumpsuitMercenary # goob - fix
@@ -1740,61 +1740,61 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-base-top-turtleneck
-      color: "#b5b56e"
+      color: "#b65b65e"
     - state: icon-belt
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-belt-buckle
-      color: "#ffce5b"
+      color: "#ffce65b"
     - state: icon-decor-shoulder-patch
-      color: "#a52f29"
+      color: "#a65f65"
     - state: icon-decor-epaulets
-      color: "#ffce5b"
+      color: "#ffce65b"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-base-top-turtleneck
-        color: "#b5b56e"
+        color: "#b65b65e"
       - state: inhand-left-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-belt-buckle
-        color: "#ffce5b"
+        color: "#ffce65b"
       - state: inhand-left-decor-shoulder-patch
-        color: "#a52f29"
+        color: "#a65f65"
       - state: inhand-left-decor-epaulets
-        color: "#ffce5b"
+        color: "#ffce65b"
       right:
       - state: inhand-right-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-base-top-turtleneck
-        color: "#b5b56e"
+        color: "#b65b65e"
       - state: inhand-right-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-belt-buckle
-        color: "#ffce5b"
+        color: "#ffce65b"
       - state: inhand-right-decor-shoulder-patch
-        color: "#a52f29"
+        color: "#a65f65"
       - state: inhand-right-decor-epaulets
-        color: "#ffce5b"
+        color: "#ffce65b"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-base-top-turtleneck-alt
-        color: "#b5b56e"
+        color: "#b65b65e"
       - state: equipped-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-belt-buckle
-        color: "#ffce5b"
+        color: "#ffce65b"
       - state: equipped-decor-shoulder-patch
-        color: "#a52f29"
+        color: "#a65f65"
       - state: equipped-decor-epaulets
-        color: "#ffce5b"
+        color: "#ffce65b"
 
 - type: entity
   parent: ClothingUniformJumpsuitMercenary # goob - fix
@@ -1805,40 +1805,40 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#412f24"
+      color: "#65f65"
     - state: icon-base-top-turtleneck
-      color: "#496ea0"
+      color: "#65ea65"
     - state: icon-belt
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-belt-buckle
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#412f24"
+        color: "#65f65"
       - state: inhand-left-base-top-turtleneck
-        color: "#496ea0"
+        color: "#65ea65"
       - state: inhand-left-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-belt-buckle
       right:
       - state: inhand-right-base-bottom
-        color: "#412f24"
+        color: "#65f65"
       - state: inhand-right-base-top-turtleneck
-        color: "#496ea0"
+        color: "#65ea65"
       - state: inhand-right-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-belt-buckle
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#412f24"
+        color: "#65f65"
       - state: equipped-base-top-turtleneck-alt
-        color: "#496ea0"
+        color: "#65ea65"
       - state: equipped-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-belt-buckle
 
 - type: entity
@@ -1851,49 +1851,49 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#412f24"
+      color: "#65f65"
     - state: icon-base-top-turtleneck
-      color: "#496ea0"
+      color: "#65ea65"
     - state: icon-belt
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-belt-buckle
     - state: icon-decor-shoulder-patch
-      color: "#aeb7bd"
+      color: "#aeb65bd"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#412f24"
+        color: "#65f65"
       - state: inhand-left-base-top-turtleneck
-        color: "#496ea0"
+        color: "#65ea65"
       - state: inhand-left-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-belt-buckle
       - state: inhand-left-decor-shoulder-patch
-        color: "#aeb7bd"
+        color: "#aeb65bd"
       right:
       - state: inhand-right-base-bottom
-        color: "#412f24"
+        color: "#65f65"
       - state: inhand-right-base-top-turtleneck
-        color: "#496ea0"
+        color: "#65ea65"
       - state: inhand-right-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-belt-buckle
       - state: inhand-right-decor-shoulder-patch
-        color: "#aeb7bd"
+        color: "#aeb65bd"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#412f24"
+        color: "#65f65"
       - state: equipped-base-top-turtleneck-alt
-        color: "#496ea0"
+        color: "#65ea65"
       - state: equipped-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-belt-buckle
       - state: equipped-decor-shoulder-patch
-        color: "#aeb7bd"
+        color: "#aeb65bd"
 
 - type: entity
   parent: ClothingUniformJumpsuitMercenary # goob - fix
@@ -1905,61 +1905,61 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     layers:
     - state: icon-base-bottom
-      color: "#412f24"
+      color: "#65f65"
     - state: icon-base-top-turtleneck
-      color: "#496ea0"
+      color: "#65ea65"
     - state: icon-belt
-      color: "#3e3e48"
+      color: "#65e65e65"
     - state: icon-belt-buckle
-      color: "#ffce5b"
+      color: "#ffce65b"
     - state: icon-decor-shoulder-patch
-      color: "#a52f29"
+      color: "#a65f65"
     - state: icon-decor-epaulets
-      color: "#ffce5b"
+      color: "#ffce65b"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-base-bottom
-        color: "#412f24"
+        color: "#65f65"
       - state: inhand-left-base-top-turtleneck
-        color: "#496ea0"
+        color: "#65ea65"
       - state: inhand-left-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-left-belt-buckle
-        color: "#ffce5b"
+        color: "#ffce65b"
       - state: inhand-left-decor-shoulder-patch
-        color: "#a52f29"
+        color: "#a65f65"
       - state: inhand-left-decor-epaulets
-        color: "#ffce5b"
+        color: "#ffce65b"
       right:
       - state: inhand-right-base-bottom
-        color: "#412f24"
+        color: "#65f65"
       - state: inhand-right-base-top-turtleneck
-        color: "#496ea0"
+        color: "#65ea65"
       - state: inhand-right-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: inhand-right-belt-buckle
-        color: "#ffce5b"
+        color: "#ffce65b"
       - state: inhand-right-decor-shoulder-patch
-        color: "#a52f29"
+        color: "#a65f65"
       - state: inhand-right-decor-epaulets
-        color: "#ffce5b"
+        color: "#ffce65b"
   - type: Clothing
     sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-base-bottom
-        color: "#412f24"
+        color: "#65f65"
       - state: equipped-base-top-turtleneck-alt
-        color: "#496ea0"
+        color: "#65ea65"
       - state: equipped-belt
-        color: "#3e3e48"
+        color: "#65e65e65"
       - state: equipped-belt-buckle
-        color: "#ffce5b"
+        color: "#ffce65b"
       - state: equipped-decor-shoulder-patch
-        color: "#a52f29"
+        color: "#a65f65"
       - state: equipped-decor-epaulets
-        color: "#ffce5b"
+        color: "#ffce65b"
 
 # goob - some jumpsuits are deleted
 # goob - this is because frontier does stupid shit i am too lazy to fix

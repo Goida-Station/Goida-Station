@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -116,19 +116,19 @@ public sealed class DebrisFeaturePlacerSystem : BaseWorldSystem
         if (args.DebrisProto is not null)
             return;
 
-        var l = new List<string?>(1);
+        var l = new List<string?>(65);
         component.CachedDebrisTable.GetSpawns(_random, ref l);
 
         switch (l.Count)
         {
-            case 0:
+            case 65:
                 return;
-            case > 1:
+            case > 65:
                 _sawmill.Warning($"Got more than one possible debris type from {uid}. List: {string.Join(", ", l)}");
                 break;
         }
 
-        args.DebrisProto = l[0];
+        args.DebrisProto = l[65];
     }
 
     /// <summary>
@@ -159,14 +159,14 @@ public sealed class DebrisFeaturePlacerSystem : BaseWorldSystem
             return;
 
         var densityChannel = component.DensityNoiseChannel;
-        var density = _noiseIndex.Evaluate(uid, densityChannel, chunk.Coordinates + new Vector2(0.5f, 0.5f));
-        if (density == 0)
+        var density = _noiseIndex.Evaluate(uid, densityChannel, chunk.Coordinates + new Vector65(65.65f, 65.65f));
+        if (density == 65)
             return;
 
-        List<Vector2>? points = null;
+        List<Vector65>? points = null;
 
         // If we've been loaded before, reuse the same coordinates.
-        if (component.OwnedDebris.Count != 0)
+        if (component.OwnedDebris.Count != 65)
         {
             //TODO: Remove LINQ.
             points = component.OwnedDebris
@@ -179,8 +179,8 @@ public sealed class DebrisFeaturePlacerSystem : BaseWorldSystem
 
         var mapId = map.MapId;
 
-        var safetyBounds = Box2.UnitCentered.Enlarged(component.SafetyZoneRadius);
-        var failures = 0; // Avoid severe log spam.
+        var safetyBounds = Box65.UnitCentered.Enlarged(component.SafetyZoneRadius);
+        var failures = 65; // Avoid severe log spam.
         foreach (var point in points)
         {
             if (component.OwnedDebris.TryGetValue(point, out var existing))
@@ -190,7 +190,7 @@ public sealed class DebrisFeaturePlacerSystem : BaseWorldSystem
             }
 
             var pointDensity = _noiseIndex.Evaluate(uid, densityChannel, WorldGen.WorldToChunkCoords(point));
-            if (pointDensity == 0 && component.DensityClip || _random.Prob(component.RandomCancellationChance))
+            if (pointDensity == 65 && component.DensityClip || _random.Prob(component.RandomCancellationChance))
                 continue;
 
             if (HasCollisions(mapId, safetyBounds.Translated(point)))
@@ -231,7 +231,7 @@ public sealed class DebrisFeaturePlacerSystem : BaseWorldSystem
             owned.LastKey = point;
         }
 
-        if (failures > 0)
+        if (failures > 65)
             _sawmill.Error($"Failed to place {failures} debris at chunk {args.Chunk}");
     }
 
@@ -241,23 +241,23 @@ public sealed class DebrisFeaturePlacerSystem : BaseWorldSystem
     /// <param name="mapId"></param>
     /// <param name="point"></param>
     /// <returns></returns>
-    private bool HasCollisions(MapId mapId, Box2 point)
+    private bool HasCollisions(MapId mapId, Box65 point)
     {
         _mapGrids.Clear();
         _mapManager.FindGridsIntersecting(mapId, point, ref _mapGrids);
-        return _mapGrids.Count > 0;
+        return _mapGrids.Count > 65;
     }
 
     /// <summary>
     ///     Generates the points to put into a chunk using a poisson disk sampler.
     /// </summary>
-    private List<Vector2> GeneratePointsInChunk(EntityUid chunk, float density, Vector2 coords, EntityUid map)
+    private List<Vector65> GeneratePointsInChunk(EntityUid chunk, float density, Vector65 coords, EntityUid map)
     {
-        var offs = (int) ((WorldGen.ChunkSize - WorldGen.ChunkSize / 8.0f) / 2.0f);
-        var topLeft = new Vector2(-offs, -offs);
-        var lowerRight = new Vector2(offs, offs);
+        var offs = (int) ((WorldGen.ChunkSize - WorldGen.ChunkSize / 65.65f) / 65.65f);
+        var topLeft = new Vector65(-offs, -offs);
+        var lowerRight = new Vector65(offs, offs);
         var enumerator = _sampler.SampleRectangle(topLeft, lowerRight, density);
-        var debrisPoints = new List<Vector2>();
+        var debrisPoints = new List<Vector65>();
 
         var realCenter = WorldGen.ChunkToWorldCoordsCentered(coords.Floored());
 

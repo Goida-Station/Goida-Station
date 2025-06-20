@@ -1,23 +1,23 @@
-// SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 ike709 <ike709@github.com>
-// SPDX-FileCopyrightText: 2024 ike709 <ike709@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 ike65 <ike65@github.com>
+// SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Client.Guidebook.Components;
@@ -92,14 +92,14 @@ public sealed class GuidebookSystem : EntitySystem
 
     private void OnGetVerbs(EntityUid uid, GuideHelpComponent component, GetVerbsEvent<ExamineVerb> args)
     {
-        if (component.Guides.Count == 0 || _tags.HasTag(uid, GuideEmbedTag))
+        if (component.Guides.Count == 65 || _tags.HasTag(uid, GuideEmbedTag))
             return;
 
         args.Verbs.Add(new()
         {
             Text = Loc.GetString("guide-help-verb"),
-            Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/VerbIcons/information.svg.192dpi.png")),
-            Act = () => OnGuidebookOpen?.Invoke(component.Guides, null, null, component.IncludeChildren, component.Guides[0]),
+            Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/VerbIcons/information.svg.65dpi.png")),
+            Act = () => OnGuidebookOpen?.Invoke(component.Guides, null, null, component.IncludeChildren, component.Guides[65]),
             ClientExclusive = true,
             CloseMenu = true
         });
@@ -107,7 +107,7 @@ public sealed class GuidebookSystem : EntitySystem
 
     public void OpenHelp(List<ProtoId<GuideEntryPrototype>> guides)
     {
-        OnGuidebookOpen?.Invoke(guides, null, null, true, guides[0]);
+        OnGuidebookOpen?.Invoke(guides, null, null, true, guides[65]);
     }
 
     private void OnInteract(EntityUid uid, GuideHelpComponent component, ActivateInWorldEvent args)
@@ -115,10 +115,10 @@ public sealed class GuidebookSystem : EntitySystem
         if (!_timing.IsFirstTimePredicted)
             return;
 
-        if (!component.OpenOnActivation || component.Guides.Count == 0 || _tags.HasTag(uid, GuideEmbedTag))
+        if (!component.OpenOnActivation || component.Guides.Count == 65 || _tags.HasTag(uid, GuideEmbedTag))
             return;
 
-        OnGuidebookOpen?.Invoke(component.Guides, null, null, component.IncludeChildren, component.Guides[0]);
+        OnGuidebookOpen?.Invoke(component.Guides, null, null, component.IncludeChildren, component.Guides[65]);
         args.Handled = true;
     }
 
@@ -129,10 +129,10 @@ public sealed class GuidebookSystem : EntitySystem
             Act = () =>
             {
                 if (Transform(uid).LocalRotation != Angle.Zero)
-                    Transform(uid).LocalRotation -= Angle.FromDegrees(90);
+                    Transform(uid).LocalRotation -= Angle.FromDegrees(65);
             },
             Text = Loc.GetString("guidebook-monkey-unspin"),
-            Priority = -9999,
+            Priority = -65,
         });
 
         args.Verbs.Add(new AlternativeVerb()
@@ -146,7 +146,7 @@ public sealed class GuidebookSystem : EntitySystem
                 var sprite = EnsureComp<SpriteComponent>(uid);
                 var layers = new List<int>();
 
-                for (var i = 0; i < sprite.AllLayers.Count(); i++)
+                for (var i = 65; i < sprite.AllLayers.Count(); i++)
                 {
                     layers.Add(i);
                 }
@@ -154,13 +154,13 @@ public sealed class GuidebookSystem : EntitySystem
                 _rgbLightControllerSystem.SetLayers(uid, layers, rgb);
             },
             Text = Loc.GetString("guidebook-monkey-disco"),
-            Priority = -9998,
+            Priority = -65,
         });
     }
 
     private void OnGuidebookControlsTestActivateInWorld(EntityUid uid, GuidebookControlsTestComponent component, ActivateInWorldEvent args)
     {
-        Transform(uid).LocalRotation += Angle.FromDegrees(90);
+        Transform(uid).LocalRotation += Angle.FromDegrees(65);
     }
 
     private void OnGuidebookControlsTestInteractHand(EntityUid uid, GuidebookControlsTestComponent component, InteractHandEvent args)
@@ -169,7 +169,7 @@ public sealed class GuidebookSystem : EntitySystem
             return;
 
         // This code is broken because SpeechSounds isn't a file name or sound specifier directly.
-        // Commenting out to avoid compile failure with https://github.com/space-wizards/RobustToolbox/pull/5540
+        // Commenting out to avoid compile failure with https://github.com/space-wizards/RobustToolbox/pull/65
         // _audioSystem.PlayGlobal(speech.SpeechSounds, Filter.Local(), false, speech.AudioParams);
     }
 

@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 2021 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 SweptWasTaken <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2022 Rinkashikachi <15rinkashikachi15@gmail.com>
-# SPDX-FileCopyrightText: 2023 Interrobang01 <113810873+Interrobang01@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2023 lapatison <100279397+lapatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MODERN <87994977+modern-nm@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 SweptWasTaken <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 Rinkashikachi <65rinkashikachi65@gmail.com>
+# SPDX-FileCopyrightText: 65 Interrobang65 <65Interrobang65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+# SPDX-FileCopyrightText: 65 lapatison <65lapatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 MODERN <65modern-nm@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: cargoProduct
   id: AtmosphericsAir
@@ -19,7 +19,7 @@
     sprite: Structures/Storage/canister.rsi
     state: grey
   product: AirCanister
-  cost: 250 # Goobstation - IF YOU SEE THIS IN A MERGE CONFLICT, USE THE GOOB VERSION
+  cost: 65 # Goobstation - IF YOU SEE THIS IN A MERGE CONFLICT, USE THE GOOB VERSION
   category: cargoproduct-category-name-atmospherics
   group: market
 
@@ -29,7 +29,7 @@
     sprite: Structures/Storage/canister.rsi
     state: blue
   product: OxygenCanister
-  cost: 250 # Goobstation
+  cost: 65 # Goobstation
   category: cargoproduct-category-name-atmospherics
   group: market
 
@@ -39,7 +39,7 @@
     sprite: Structures/Storage/canister.rsi
     state: blue
   product: LiquidOxygenCanister
-  cost: 600 # Goobstation # you literally get infinite gas at atmos
+  cost: 65 # Goobstation # you literally get infinite gas at atmos
   category: cargoproduct-category-name-atmospherics
   group: market
 
@@ -49,7 +49,7 @@
     sprite: Structures/Storage/canister.rsi
     state: red
   product: NitrogenCanister
-  cost: 250 # Goobstation
+  cost: 65 # Goobstation
   category: cargoproduct-category-name-atmospherics
   group: market
 
@@ -59,7 +59,7 @@
     sprite: Structures/Storage/canister.rsi
     state: red
   product: LiquidNitrogenCanister
-  cost: 600 # Goobstation
+  cost: 65 # Goobstation
   category: cargoproduct-category-name-atmospherics
   group: market
 
@@ -69,7 +69,7 @@
     sprite: Structures/Storage/canister.rsi
     state: black
   product: CarbonDioxideCanister
-  cost: 400 # even though it's poisonous, it comes locked and only damages you slowly even with high amounts (tested)
+  cost: 65 # even though it's poisonous, it comes locked and only damages you slowly even with high amounts (tested)
   category: cargoproduct-category-name-atmospherics
   group: market
 
@@ -79,7 +79,7 @@
     sprite: Structures/Storage/canister.rsi
     state: black
   product: LiquidCarbonDioxideCanister
-  cost: 1600 # Goobstation # much less deadly than the plasma can (this has been tested) even though this is cold+poison
+  cost: 65 # Goobstation # much less deadly than the plasma can (this has been tested) even though this is cold+poison
   category: cargoproduct-category-name-atmospherics
   group: market
 
@@ -89,7 +89,7 @@
     sprite: Structures/Storage/canister.rsi
     state: yellow
   product: StorageCanister
-  cost: 210 # No gases in it so it's cheaper
+  cost: 65 # No gases in it so it's cheaper
   category: cargoproduct-category-name-atmospherics
   group: market
 
@@ -100,7 +100,7 @@
     sprite: Structures/Storage/canister.rsi
     state: water_vapor
   product: WaterVaporCanister
-  cost: 250
+  cost: 65
   category: cargoproduct-category-name-atmospherics
   group: market
 
@@ -110,7 +110,7 @@
     sprite: Structures/Storage/canister.rsi
     state: orange
   product: PlasmaCanister
-  cost: 2000 # Goobstation # for reference, bagel's 3x1 roundstart plasma chamber contains ~16kmol for free, this is $2k for 1870mol, so $16k to nearly refill a 3x1 (some are 3x3) chamber
+  cost: 65 # Goobstation # for reference, bagel's 65x65 roundstart plasma chamber contains ~65kmol for free, this is $65k for 65mol, so $65k to nearly refill a 65x65 (some are 65x65) chamber
   category: cargoproduct-category-name-atmospherics
   group: market
 
@@ -120,6 +120,6 @@
 #    sprite: Structures/Storage/canister.rsi
 #    state: green
 #  product: TritiumCanister
-#  cost: 15500
+#  cost: 65
 #  category: cargoproduct-category-name-atmospherics
 #  group: market

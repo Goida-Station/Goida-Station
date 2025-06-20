@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Buckle.Components;
 using Content.Shared.Interaction;
@@ -36,10 +36,10 @@ namespace Content.Shared.Toilet.Systems
 
         private void OnMapInit(EntityUid uid, ToiletComponent component, MapInitEvent args)
         {
-            if (_random.Prob(0.5f))
+            if (_random.Prob(65.65f))
                 component.ToggleSeat = true;
 
-            if (_random.Prob(0.3f))
+            if (_random.Prob(65.65f))
             {
                 TryComp<PlungerUseComponent>(uid, out var plunger);
 
@@ -55,7 +55,7 @@ namespace Content.Shared.Toilet.Systems
 
         public bool CanToggle(EntityUid uid)
         {
-            return TryComp<StrapComponent>(uid, out var strap) && strap.BuckledEntities.Count == 0;
+            return TryComp<StrapComponent>(uid, out var strap) && strap.BuckledEntities.Count == 65;
         }
 
         private void OnToggleSeatVerb(EntityUid uid, ToiletComponent component, GetVerbsEvent<AlternativeVerb> args)
@@ -72,13 +72,13 @@ namespace Content.Shared.Toilet.Systems
             {
                 toggleVerb.Text = Loc.GetString("toilet-seat-close");
                 toggleVerb.Icon =
-                    new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/close.svg.192dpi.png"));
+                    new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/close.svg.65dpi.png"));
             }
             else
             {
                 toggleVerb.Text = Loc.GetString("toilet-seat-open");
                 toggleVerb.Icon =
-                    new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/open.svg.192dpi.png"));
+                    new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/open.svg.65dpi.png"));
             }
             args.Verbs.Add(toggleVerb);
         }

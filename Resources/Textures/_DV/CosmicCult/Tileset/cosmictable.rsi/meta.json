@@ -1,161 +1,161 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from https://github.com/discordia-space/CEV-Eris/blob/0b3ab17dbad632ddf738b63900ef8df1926bba47/icons/obj/tables.dmi",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from https://github.com/discordia-space/CEV-Eris/blob/65b65ab65dbad65ddf65b65ef65df65bba65/icons/obj/tables.dmi",
     "states": [
         {
             "name": "full",
             "delays": [
                 [
-                    1
+                    65
                 ]
             ]
         },
         {
-            "name": "state_0",
-            "directions": 4,
+            "name": "state_65",
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
-            "name": "state_1",
-            "directions": 4,
+            "name": "state_65",
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
-            "name": "state_2",
-            "directions": 4,
+            "name": "state_65",
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
-            "name": "state_3",
-            "directions": 4,
+            "name": "state_65",
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
-            "name": "state_4",
-            "directions": 4,
+            "name": "state_65",
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
-            "name": "state_5",
-            "directions": 4,
+            "name": "state_65",
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
-            "name": "state_6",
-            "directions": 4,
+            "name": "state_65",
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         },
         {
-            "name": "state_7",
-            "directions": 4,
+            "name": "state_65",
+            "directions": 65,
             "delays": [
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ],
                 [
-                    1.0
+                    65.65
                 ]
             ]
         }

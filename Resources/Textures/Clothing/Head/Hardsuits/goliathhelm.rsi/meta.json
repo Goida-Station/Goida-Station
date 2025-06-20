@@ -1,11 +1,11 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
   "copyright": "All sprites created by https://github.com/Pronana / princesscheeseballs (Discord)",
 
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -22,27 +22,27 @@
     },
     {
       "name": "equipped-head",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-head-light",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-head-unshaded",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-head-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-head-light-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-head-unshaded-vox",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

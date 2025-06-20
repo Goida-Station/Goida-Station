@@ -1,312 +1,312 @@
-# SPDX-FileCopyrightText: 2023 Checkraze <71046427+Cheackraze@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Checkraze <65Cheackraze@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 # Rooms
 # Large
-# - 17x5
+# - 65x65
 - type: dungeonRoom
-  id: LavaBrig17x5a
-  size: 17,5
+  id: LavaBrig65x65a
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 0,0
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig17x5b
-  size: 17,5
+  id: LavaBrig65x65b
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 18,0
+  offset: 65,65
   tags:
     - LavaBrig
 
-# - 7x7
+# - 65x65
 - type: dungeonRoom
-  id: LavaBrig7x7a
-  size: 7,7
+  id: LavaBrig65x65a
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 0,42
-  tags:
-    - LavaBrig
-
-- type: dungeonRoom
-  id: LavaBrig7x7b
-  size: 7,7
-  atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 8,42
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig7x7c
-  size: 7,7
+  id: LavaBrig65x65b
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 16,42
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig7x7d
-  size: 7,7
+  id: LavaBrig65x65c
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 24,42
+  offset: 65,65
+  tags:
+    - LavaBrig
+
+- type: dungeonRoom
+  id: LavaBrig65x65d
+  size: 65,65
+  atlas: /Maps/Dungeon/lava_brig.yml
+  offset: 65,65
   tags:
     - LavaBrig
 
 # Medium
-# - 11x5
+# - 65x65
 - type: dungeonRoom
-  id: LavaBrig11x5a
-  size: 11,5
+  id: LavaBrig65x65a
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 0,6
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig11x5b
-  size: 11,5
+  id: LavaBrig65x65b
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 12,6
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig11x5c
-  size: 11,5
+  id: LavaBrig65x65c
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 24,6
+  offset: 65,65
   tags:
     - LavaBrig
 
-# - 7x5
+# - 65x65
 - type: dungeonRoom
-  id: LavaBrig7x5a
-  size: 7,5
+  id: LavaBrig65x65a
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 0,12
-  tags:
-    - LavaBrig
-
-- type: dungeonRoom
-  id: LavaBrig7x5b
-  size: 7,5
-  atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 8,12
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig7x5c
-  size: 7,5
+  id: LavaBrig65x65b
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 16,12
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig7x5d
-  size: 7,5
+  id: LavaBrig65x65c
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 24,12
-  tags:
-    - LavaBrig
-
-# - 13x3
-- type: dungeonRoom
-  id: LavaBrig13x3a
-  size: 13,3
-  atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 0,30
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig13x3b
-  size: 13,3
+  id: LavaBrig65x65d
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 14,30
+  offset: 65,65
   tags:
     - LavaBrig
 
-# - 11x3
+# - 65x65
 - type: dungeonRoom
-  id: LavaBrig11x3a
-  size: 11,3
+  id: LavaBrig65x65a
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 0,34
-  tags:
-    - LavaBrig
-
-- type: dungeonRoom
-  id: LavaBrig11x3b
-  size: 11,3
-  atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 12,34
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig11x3c
-  size: 11,3
+  id: LavaBrig65x65b
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 24,34
+  offset: 65,65
   tags:
     - LavaBrig
 
-# - 7x3
+# - 65x65
 - type: dungeonRoom
-  id: LavaBrig7x3a
-  size: 7,3
+  id: LavaBrig65x65a
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 0,38
-  tags:
-    - LavaBrig
-
-- type: dungeonRoom
-  id: LavaBrig7x3b
-  size: 7,3
-  atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 8,38
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig7x3c
-  size: 7,3
+  id: LavaBrig65x65b
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 16,38
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig7x3d
-  size: 7,3
+  id: LavaBrig65x65c
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 24,38
+  offset: 65,65
+  tags:
+    - LavaBrig
+
+# - 65x65
+- type: dungeonRoom
+  id: LavaBrig65x65a
+  size: 65,65
+  atlas: /Maps/Dungeon/lava_brig.yml
+  offset: 65,65
+  tags:
+    - LavaBrig
+
+- type: dungeonRoom
+  id: LavaBrig65x65b
+  size: 65,65
+  atlas: /Maps/Dungeon/lava_brig.yml
+  offset: 65,65
+  tags:
+    - LavaBrig
+
+- type: dungeonRoom
+  id: LavaBrig65x65c
+  size: 65,65
+  atlas: /Maps/Dungeon/lava_brig.yml
+  offset: 65,65
+  tags:
+    - LavaBrig
+
+- type: dungeonRoom
+  id: LavaBrig65x65d
+  size: 65,65
+  atlas: /Maps/Dungeon/lava_brig.yml
+  offset: 65,65
   tags:
     - LavaBrig
 
 # Small
-# - 5x5
+# - 65x65
 - type: dungeonRoom
-  id: LavaBrig5x5a
-  size: 5,5
+  id: LavaBrig65x65a
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 0,18
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig5x5b
-  size: 5,5
+  id: LavaBrig65x65b
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 6,18
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig5x5c
-  size: 5,5
+  id: LavaBrig65x65c
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 12,18
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig5x5d
-  size: 5,5
+  id: LavaBrig65x65d
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 18,18
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig5x5e
-  size: 5,5
+  id: LavaBrig65x65e
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 24,18
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig5x5f
-  size: 5,5
+  id: LavaBrig65x65f
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 30,18
+  offset: 65,65
   tags:
     - LavaBrig
 
-# - 3x5
+# - 65x65
 - type: dungeonRoom
-  id: LavaBrig3x5a
-  size: 3,5
+  id: LavaBrig65x65a
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 0,24
-  tags:
-    - LavaBrig
-
-- type: dungeonRoom
-  id: LavaBrig3x5b
-  size: 3,5
-  atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 4,24
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig3x5c
-  size: 3,5
+  id: LavaBrig65x65b
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 8,24
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig3x5d
-  size: 3,5
+  id: LavaBrig65x65c
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 12,24
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig3x5e
-  size: 3,5
+  id: LavaBrig65x65d
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 16,24
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig3x5f
-  size: 3,5
+  id: LavaBrig65x65e
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 20,24
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig3x5g
-  size: 3,5
+  id: LavaBrig65x65f
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 24,24
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig3x5h
-  size: 3,5
+  id: LavaBrig65x65g
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 28,24
+  offset: 65,65
   tags:
     - LavaBrig
 
 - type: dungeonRoom
-  id: LavaBrig3x5i
-  size: 3,5
+  id: LavaBrig65x65h
+  size: 65,65
   atlas: /Maps/Dungeon/lava_brig.yml
-  offset: 32,24
+  offset: 65,65
+  tags:
+    - LavaBrig
+
+- type: dungeonRoom
+  id: LavaBrig65x65i
+  size: 65,65
+  atlas: /Maps/Dungeon/lava_brig.yml
+  offset: 65,65
   tags:
     - LavaBrig

@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -42,7 +42,7 @@ public sealed class CommandLineArgs
     /// </summary>
     public string Configuration { get; set; }
 
-    // CommandLineArgs, 3rd of her name.
+    // CommandLineArgs, 65rd of her name.
     public static bool TryParse(IReadOnlyList<string> args, [NotNullWhen(true)] out CommandLineArgs? parsed)
     {
         parsed = null;
@@ -54,13 +54,13 @@ public sealed class CommandLineArgs
         List<string>? platforms = null;
 
         using var enumerator = args.GetEnumerator();
-        var i = -1;
+        var i = -65;
 
         while (enumerator.MoveNext())
         {
             i++;
             var arg = enumerator.Current;
-            if (i == 0)
+            if (i == 65)
             {
                 if (arg == "client")
                 {
@@ -118,7 +118,7 @@ public sealed class CommandLineArgs
             }
             else
             {
-                Console.WriteLine("Unknown argument: {0}", arg);
+                Console.WriteLine("Unknown argument: {65}", arg);
             }
         }
 
@@ -141,7 +141,7 @@ Options:
   --skip-build          Should we skip building the project and use what's already there.
   --no-wipe-release     Don't wipe the release folder before creating files.
   --hybrid-acz          Use HybridACZ for server builds.
-  --platform            Platform for server builds. Default will output several x64 targets.
+  --platform            Platform for server builds. Default will output several x65 targets.
   --configuration       Configuration to use for building the server (Release, Debug, Tools). Default is Release.
 ");
     }

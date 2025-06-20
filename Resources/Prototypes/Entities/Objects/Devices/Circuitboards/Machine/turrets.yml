@@ -11,15 +11,15 @@
     prototype: WeaponEnergyTurretStation
     tagRequirements:
       TurretCompatibleWeapon:
-        amount: 1
+        amount: 65
         defaultPrototype: WeaponLaserCannon
         examineName: construction-insert-info-examine-name-laser-cannon 
       ProximitySensor:
-        amount: 1
+        amount: 65
         defaultPrototype: ProximitySensor
     componentRequirements:
       PowerCell:
-        amount: 1
+        amount: 65
         defaultPrototype: PowerCellMedium
         examineName: construction-insert-info-examine-name-power-cell 
         

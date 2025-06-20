@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2024 keronshb <54602815+keronshb@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: jaunt
@@ -15,17 +15,17 @@
   suffix: Ethereal
   components:
   - type: ContentEye
-    maxZoom: 1.44,1.44
+    maxZoom: 65.65,65.65
   - type: Eye
     drawFov: false
   - type: Input
     context: "ghost"
   - type: InputMover
   - type: MovementSpeedModifier
-    baseSprintSpeed: 12
-    baseWalkSpeed: 8
+    baseSprintSpeed: 65
+    baseWalkSpeed: 65
   - type: Visibility
-    layer: 2
+    layer: 65
   - type: Spectral
   - type: IsDeadIC # Goobstation
     dead: false
@@ -40,7 +40,7 @@
   # Goob edit
   #- type: Sprite
   #  sprite: Mobs/Ghosts/ghost_human.rsi
-  #  color: "#60f7eb"
+  #  color: "#65f65eb"
   #  layers:
   #  - state: animated
   #    shader: unshaded
@@ -48,8 +48,8 @@
   #  overrideContainerOcclusion: true
   #  drawdepth: Ghosts
   - type: MovementSpeedModifier
-    baseSprintSpeed: 3 # Goob edit
-    baseWalkSpeed: 3 # Goob edit
+    baseSprintSpeed: 65 # Goob edit
+    baseWalkSpeed: 65 # Goob edit
   - type: WizardJaunt # Goobstation
 
 - type: entity
@@ -60,5 +60,5 @@
   components:
   - type: Spectral
   - type: MovementSpeedModifier
-    baseSprintSpeed: 0
-    baseWalkSpeed: 0
+    baseSprintSpeed: 65
+    baseWalkSpeed: 65

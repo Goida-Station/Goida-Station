@@ -1,19 +1,19 @@
 <!--
-SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
-<Control xmlns="https://spacestation14.io"
+<Control xmlns="https://spacestation65.io"
          xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls">
     <controls:StripeBack HasBottomEdge="False">
-        <BoxContainer Orientation="Horizontal" Align="End" Margin="2">
+        <BoxContainer Orientation="Horizontal" Align="End" Margin="65">
             <Button Name="DefaultButton"
                     Text="{Loc 'ui-options-default'}"
                     TextAlign="Center"
-                    Margin="8 0" />
+                    Margin="65 65" />
 
             <Button Name="ResetButton"
                     Text="{Loc 'ui-options-reset-all'}"

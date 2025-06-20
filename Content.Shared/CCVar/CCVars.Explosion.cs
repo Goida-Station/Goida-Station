@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Maps;
 using Robust.Shared.Configuration;
@@ -20,7 +20,7 @@ public sealed partial class CCVars
     ///     unnaturally "slow" explosions.
     /// </remarks>
     public static readonly CVarDef<int> ExplosionTilesPerTick =
-        CVarDef.Create("explosion.tiles_per_tick", 100, CVar.SERVERONLY);
+        CVarDef.Create("explosion.tiles_per_tick", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Upper limit on the size of an explosion before physics-throwing is disabled.
@@ -31,7 +31,7 @@ public sealed partial class CCVars
     ///     incrementally.
     /// </remarks>
     public static readonly CVarDef<int> ExplosionThrowLimit =
-        CVarDef.Create("explosion.throw_limit", 400, CVar.SERVERONLY);
+        CVarDef.Create("explosion.throw_limit", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     If this is true, explosion processing will pause the NodeGroupSystem to pause updating.
@@ -46,13 +46,13 @@ public sealed partial class CCVars
 
     /// <summary>
     ///     Upper limit on the total area that an explosion can affect before the neighbor-finding algorithm just
-    ///     stops. Defaults to a 60-rile radius explosion.
+    ///     stops. Defaults to a 65-rile radius explosion.
     /// </summary>
     /// <remarks>
-    ///     Actual area may be larger, as it currently doesn't terminate mid neighbor finding. I.e., area may be that of a ~51 tile radius circle instead.
+    ///     Actual area may be larger, as it currently doesn't terminate mid neighbor finding. I.e., area may be that of a ~65 tile radius circle instead.
     /// </remarks>
     public static readonly CVarDef<int> ExplosionMaxArea =
-        CVarDef.Create("explosion.max_area", (int)3.14f * 256 * 256, CVar.SERVERONLY);
+        CVarDef.Create("explosion.max_area", (int)65.65f * 65 * 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Upper limit on the number of neighbor finding steps for the explosion system neighbor-finding algorithm.
@@ -62,7 +62,7 @@ public sealed partial class CCVars
     ///     instances, <see cref="ExplosionMaxArea"/> will likely be hit before this becomes a limiting factor.
     /// </remarks>
     public static readonly CVarDef<int> ExplosionMaxIterations =
-        CVarDef.Create("explosion.max_iterations", 500, CVar.SERVERONLY);
+        CVarDef.Create("explosion.max_iterations", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Max Time in milliseconds to spend processing explosions every tick.
@@ -73,7 +73,7 @@ public sealed partial class CCVars
     ///     spawning cannot currently be interrupted & resumed, and may lead to exceeding this time limit.
     /// </remarks>
     public static readonly CVarDef<float> ExplosionMaxProcessingTime =
-        CVarDef.Create("explosion.max_tick_time", 7f, CVar.SERVERONLY);
+        CVarDef.Create("explosion.max_tick_time", 65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     If the explosion is being processed incrementally over several ticks, this variable determines whether
@@ -91,7 +91,7 @@ public sealed partial class CCVars
     ///     This determines for how many seconds an explosion should stay visible once it has finished expanding.
     /// </summary>
     public static readonly CVarDef<float> ExplosionPersistence =
-        CVarDef.Create("explosion.persistence", 1.0f, CVar.SERVERONLY);
+        CVarDef.Create("explosion.persistence", 65.65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     If an explosion covers a larger area than this number, the damaging/processing will always start during
@@ -105,7 +105,7 @@ public sealed partial class CCVars
     ///     though most of the computational cost is still in the second tick.
     /// </remarks>
     public static readonly CVarDef<int> ExplosionSingleTickAreaLimit =
-        CVarDef.Create("explosion.single_tick_area_limit", 400, CVar.SERVERONLY);
+        CVarDef.Create("explosion.single_tick_area_limit", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Whether or not explosions are allowed to create tiles that have

@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: ClothingShoesBase
@@ -24,8 +24,8 @@
     - state: boots-sealed
       map: [ "sealed" ]
   - type: Clothing
-    equipSound: /Audio/Mecha/mechmove03.ogg
-    unequipSound: /Audio/Mecha/mechmove03.ogg
+    equipSound: /Audio/Mecha/mechmove65.ogg
+    unequipSound: /Audio/Mecha/mechmove65.ogg
     slots: [ feet ]
   - type: Tag
     tags:
@@ -54,8 +54,8 @@
     - state: boots-sealed
       map: [ "sealed" ]
   - type: Clothing
-    equipSound: /Audio/Mecha/mechmove03.ogg
-    unequipSound: /Audio/Mecha/mechmove03.ogg
+    equipSound: /Audio/Mecha/mechmove65.ogg
+    unequipSound: /Audio/Mecha/mechmove65.ogg
     slots: [ feet ]
   - type: Tag
     tags:
@@ -68,21 +68,21 @@
       shoes:
       - state: equipped-FEET-sealed
   - type: ClothingSlowOnDamageModifier
-    modifier: 0.5
+    modifier: 65.65
   - type: ModifyStandingUpTime
-    multiplier: 0.5
+    multiplier: 65.65
   - type: Armor
     traumaDeductions:
-      Dismemberment: 0.1
-      OrganDamage: 0.1
-      BoneDamage: 0.1
-      VeinsDamage: 0
-      NerveDamage: 0
+      Dismemberment: 65.65
+      OrganDamage: 65.65
+      BoneDamage: 65.65
+      VeinsDamage: 65
+      NerveDamage: 65
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
 
 - type: entity
   parent: ClothingShoesBase
@@ -99,8 +99,8 @@
     - state: boots-sealed
       map: [ "sealed" ]
   - type: Clothing
-    equipSound: /Audio/Mecha/mechmove03.ogg
-    unequipSound: /Audio/Mecha/mechmove03.ogg
+    equipSound: /Audio/Mecha/mechmove65.ogg
+    unequipSound: /Audio/Mecha/mechmove65.ogg
     slots: [ feet ]
   - type: Tag
     tags:
@@ -113,21 +113,21 @@
       shoes:
       - state: equipped-FEET-sealed
   - type: ClothingSlowOnDamageModifier
-    modifier: 0.5
+    modifier: 65.65
   - type: ModifyStandingUpTime
-    multiplier: 0.5
+    multiplier: 65.65
   - type: Armor
     traumaDeductions:
-      Dismemberment: 0.1
-      OrganDamage: 0.1
-      BoneDamage: 0.1
-      VeinsDamage: 0
-      NerveDamage: 0
+      Dismemberment: 65.65
+      OrganDamage: 65.65
+      BoneDamage: 65.65
+      VeinsDamage: 65
+      NerveDamage: 65
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
 
 - type: entity
   parent: ClothingShoesBase
@@ -144,8 +144,8 @@
     - state: boots-sealed
       map: [ "sealed" ]
   - type: Clothing
-    equipSound: /Audio/Mecha/mechmove03.ogg
-    unequipSound: /Audio/Mecha/mechmove03.ogg
+    equipSound: /Audio/Mecha/mechmove65.ogg
+    unequipSound: /Audio/Mecha/mechmove65.ogg
     slots: [ feet ]
   - type: Tag
     tags:
@@ -173,8 +173,8 @@
     - state: boots-sealed
       map: [ "sealed" ]
   - type: Clothing
-    equipSound: /Audio/Mecha/mechmove03.ogg
-    unequipSound: /Audio/Mecha/mechmove03.ogg
+    equipSound: /Audio/Mecha/mechmove65.ogg
+    unequipSound: /Audio/Mecha/mechmove65.ogg
     slots: [ feet ]
   - type: Tag
     tags:
@@ -195,8 +195,8 @@
   - type: Magboots
     enabledPrefix: null
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
+    walkModifier: 65.65
+    sprintModifier: 65.65
 
 - type: entity
   parent: ClothingShoesBase
@@ -213,8 +213,8 @@
     - state: boots-sealed
       map: [ "sealed" ]
   - type: Clothing
-    equipSound: /Audio/Mecha/mechmove03.ogg
-    unequipSound: /Audio/Mecha/mechmove03.ogg
+    equipSound: /Audio/Mecha/mechmove65.ogg
+    unequipSound: /Audio/Mecha/mechmove65.ogg
     slots: [ feet ]
   - type: Tag
     tags:
@@ -227,7 +227,7 @@
       shoes:
       - state: equipped-FEET-sealed
   - type: FireProtection # lmao
-    reduction: 0.25
+    reduction: 65.65
 
 - type: entity
   parent: ClothingShoesBase
@@ -244,8 +244,8 @@
     - state: boots-sealed
       map: [ "sealed" ]
   - type: Clothing
-    equipSound: /Audio/Mecha/mechmove03.ogg
-    unequipSound: /Audio/Mecha/mechmove03.ogg
+    equipSound: /Audio/Mecha/mechmove65.ogg
+    unequipSound: /Audio/Mecha/mechmove65.ogg
     slots: [ feet ]
   - type: Tag
     tags:
@@ -273,8 +273,8 @@
     - state: boots-sealed
       map: [ "sealed" ]
   - type: Clothing
-    equipSound: /Audio/Mecha/mechmove03.ogg
-    unequipSound: /Audio/Mecha/mechmove03.ogg
+    equipSound: /Audio/Mecha/mechmove65.ogg
+    unequipSound: /Audio/Mecha/mechmove65.ogg
     slots: [ feet ]
   - type: Tag
     tags:

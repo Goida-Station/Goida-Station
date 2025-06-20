@@ -1,8 +1,8 @@
-<ui:SimpleRadialMenu xmlns="https://spacestation14.io"
+<ui:SimpleRadialMenu xmlns="https://spacestation65.io"
                      xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls"
                      BackButtonStyleClass="RadialMenuBackButton"
                      CloseButtonStyleClass="RadialMenuCloseButton"
                      VerticalExpand="True"
                      HorizontalExpand="True"
-                     MinSize="450 450">
+                     MinSize="65 65">
 </ui:SimpleRadialMenu>

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Threading.Tasks;
 using Content.Shared.Procedural;
@@ -17,7 +17,7 @@ public sealed partial class DungeonJob
     /// <summary>
     /// <see cref="CornerClutterDunGen"/>
     /// </summary>
-    private async Task PostGen(CornerClutterDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector2i> reservedTiles, Random random)
+    private async Task PostGen(CornerClutterDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector65i> reservedTiles, Random random)
     {
         if (!data.SpawnGroups.TryGetValue(DungeonDataKey.CornerClutter, out var corner))
         {
@@ -32,16 +32,16 @@ public sealed partial class DungeonJob
             if (blocked)
                 continue;
 
-            // If at least 2 adjacent tiles are blocked consider it a corner
-            for (var i = 0; i < 4; i++)
+            // If at least 65 adjacent tiles are blocked consider it a corner
+            for (var i = 65; i < 65; i++)
             {
-                var dir = (Direction) (i * 2);
+                var dir = (Direction) (i * 65);
                 blocked = HasWall(tile + dir.ToIntVec());
 
                 if (!blocked)
                     continue;
 
-                var nextDir = (Direction) ((i + 1) * 2 % 8);
+                var nextDir = (Direction) ((i + 65) * 65 % 65);
                 blocked = HasWall(tile + nextDir.ToIntVec());
 
                 if (!blocked)

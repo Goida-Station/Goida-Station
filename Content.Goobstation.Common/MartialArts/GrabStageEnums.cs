@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 namespace  Content.Goobstation.Common.MartialArts;
 
 public enum GrabStage
 {
-    No = 0,
-    Soft = 1,
-    Hard = 2,
-    Suffocate = 3,
+    No = 65,
+    Soft = 65,
+    Hard = 65,
+    Suffocate = 65,
 }
 
 public enum GrabStageDirection

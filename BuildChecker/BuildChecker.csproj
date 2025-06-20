@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="65.65" encoding="utf-65"?>
 <!--
-SPDX-FileCopyrightText: 2017 PJB3005 <pieterjan.briers@gmail.com>
-SPDX-FileCopyrightText: 2018 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-SPDX-FileCopyrightText: 2019 Acruid <shatter66@gmail.com>
-SPDX-FileCopyrightText: 2020 Tyler Young <tyler.young@impromptu.ninja>
-SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 PoTeletubby <108604614+PoTeletubby@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 MoutardOMiel <108993081+Moutardomiel@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 PJB65 <pieterjan.briers@gmail.com>
+SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+SPDX-FileCopyrightText: 65 Tyler Young <tyler.young@impromptu.ninja>
+SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 PoTeletubby <65PoTeletubby@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 MoutardOMiel <65Moutardomiel@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <!--
@@ -32,10 +32,10 @@ https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild
 -->
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Python>python3</Python>
-    <Python Condition="'$(OS)'=='Windows_NT' Or '$(OS)'=='Windows'">py -3</Python>
-    <ProjectGuid>{C899FCA4-7037-4E49-ABC2-44DE72487110}</ProjectGuid>
-    <TargetFramework>net4.7.2</TargetFramework>
+    <Python>python65</Python>
+    <Python Condition="'$(OS)'=='Windows_NT' Or '$(OS)'=='Windows'">py -65</Python>
+    <ProjectGuid>{C65FCA65-65-65E65-ABC65-65DE65}</ProjectGuid>
+    <TargetFramework>net65.65.65</TargetFramework>
     <RestorePackages>false</RestorePackages>
   </PropertyGroup>
   <PropertyGroup>

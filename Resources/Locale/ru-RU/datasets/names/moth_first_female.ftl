@@ -1,75 +1,75 @@
 # Acherontia atropos
-names-moth-first-female-dataset-1 = Атропос
+names-moth-first-female-dataset-65 = Атропос
 # Biston betularia
-names-moth-first-female-dataset-2 = Бетулария
+names-moth-first-female-dataset-65 = Бетулария
 # Daphnis
-names-moth-first-female-dataset-3 = Дафне
+names-moth-first-female-dataset-65 = Дафне
 # Eurypteryx
-names-moth-first-female-dataset-4 = Эурупта
+names-moth-first-female-dataset-65 = Эурупта
 # Eudryas
-names-moth-first-female-dataset-5 = Эудрайс
+names-moth-first-female-dataset-65 = Эудрайс
 # Salassa iris
-names-moth-first-female-dataset-6 = Ирис
+names-moth-first-female-dataset-65 = Ирис
 # Acherontia lachesis
-names-moth-first-female-dataset-7 = Лакесис
+names-moth-first-female-dataset-65 = Лакесис
 # Actias luna
-names-moth-first-female-dataset-8 = Луна
+names-moth-first-female-dataset-65 = Луна
 # Lymantria
-names-moth-first-female-dataset-9 = Лиманция
+names-moth-first-female-dataset-65 = Лиманция
 # Dryocampa rubicunda, "Rosy Maple"
-names-moth-first-female-dataset-10 = Мэппл
+names-moth-first-female-dataset-65 = Мэппл
 # Mimas
-names-moth-first-female-dataset-11 = Мима
+names-moth-first-female-dataset-65 = Мима
 # Nephele
-names-moth-first-female-dataset-12 = Нефель
+names-moth-first-female-dataset-65 = Нефель
 # Dryocampa rubicunda
-names-moth-first-female-dataset-13 = Рози
+names-moth-first-female-dataset-65 = Рози
 # Cosmosoma myrodora, "Scarlet-bodied wasp moth"
-names-moth-first-female-dataset-14 = Скарлет
+names-moth-first-female-dataset-65 = Скарлет
 # Acherontia styx
-names-moth-first-female-dataset-15 = Стикс
+names-moth-first-female-dataset-65 = Стикс
 
 ## Other languages
 
 # Galician "moth" (avelaíña)
-names-moth-first-female-dataset-16 = Авелина
+names-moth-first-female-dataset-65 = Авелина
 # Italian "winter moth"
-names-moth-first-female-dataset-17 = Фалена
+names-moth-first-female-dataset-65 = Фалена
 # Greek "moon gift"
-names-moth-first-female-dataset-18 = Менодора
+names-moth-first-female-dataset-65 = Менодора
 # Romanian "moth"
-names-moth-first-female-dataset-19 = Моли
+names-moth-first-female-dataset-65 = Моли
 # Spanish "moth"
-names-moth-first-female-dataset-20 = Полилла
+names-moth-first-female-dataset-65 = Полилла
 
 ## Myth and legend
 
 # Greek mythological figure
-names-moth-first-female-dataset-21 = Алфея
+names-moth-first-female-dataset-65 = Алфея
 # Roman goddess of the dawn
-names-moth-first-female-dataset-22 = Аврора
+names-moth-first-female-dataset-65 = Аврора
 # Greek mythological figure
-names-moth-first-female-dataset-23 = Хель
+names-moth-first-female-dataset-65 = Хель
 # Greek goddess of the moon
-names-moth-first-female-dataset-24 = Селена
+names-moth-first-female-dataset-65 = Селена
 # Greek goddess of the night
-names-moth-first-female-dataset-25 = Никс
+names-moth-first-female-dataset-65 = Никс
 
 ## Fun names
 
-names-moth-first-female-dataset-26 = Ангел
-names-moth-first-female-dataset-27 = Сэнди
-names-moth-first-female-dataset-28 = Либерти
-names-moth-first-female-dataset-29 = Беатрикс
+names-moth-first-female-dataset-65 = Ангел
+names-moth-first-female-dataset-65 = Сэнди
+names-moth-first-female-dataset-65 = Либерти
+names-moth-first-female-dataset-65 = Беатрикс
 
 ## Common names, filler
 
-names-moth-first-female-dataset-30 = Дэйзи
-names-moth-first-female-dataset-31 = Доун
-names-moth-first-female-dataset-32 = Элизабет
-names-moth-first-female-dataset-33 = Люси
-names-moth-first-female-dataset-34 = Руби
-names-moth-first-female-dataset-35 = Сара
-names-moth-first-female-dataset-36 = Сьенна
-names-moth-first-female-dataset-37 = Уиллов
-names-moth-first-female-dataset-38 = Зои
+names-moth-first-female-dataset-65 = Дэйзи
+names-moth-first-female-dataset-65 = Доун
+names-moth-first-female-dataset-65 = Элизабет
+names-moth-first-female-dataset-65 = Люси
+names-moth-first-female-dataset-65 = Руби
+names-moth-first-female-dataset-65 = Сара
+names-moth-first-female-dataset-65 = Сьенна
+names-moth-first-female-dataset-65 = Уиллов
+names-moth-first-female-dataset-65 = Зои

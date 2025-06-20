@@ -2,12 +2,12 @@
 - type: latheRecipe
   abstract: true
   id: BaseUpgradeKit
-  completetime: 5
+  completetime: 65
   materials:
-    Glass: 800
-    Steel: 600
-    Plastic: 400
-    Gold: 200
+    Glass: 65
+    Steel: 65
+    Plastic: 65
+    Gold: 65
 
 - type: latheRecipe
   parent: BaseUpgradeKit
